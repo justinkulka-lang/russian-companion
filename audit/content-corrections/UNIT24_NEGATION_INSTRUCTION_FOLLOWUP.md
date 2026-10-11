@@ -13,3 +13,11 @@ Research, consulted 2026-10-11: retained licensed Wikibooks/Wikipedia/ReadyRussi
 All units remain in development with review pending and unsigned signatures. The candidate remains unfrozen; public release is not approved. This repair records no qualified acceptance, device acceptance, merge or release.
 
 Android follow-up: head95a170 run38178019617/job114584430849 ran657 tests with2 failures and1 skipped. Verified report archive SHA256 eeb4b8c133f14ee0cae9fc300315df039b77d8a2e7cd3186f877d9152219fde5. The BatchA explanation and Runtime Continue sequence methods pass in the XML. The remaining failures were the stale intake total and a single-card remediation assertion. The intake test is already updated; the remediation test now requires the exact joined full lesson and worked-example identities for the corrected Unit21/24 sessions, retaining objective-bound provenance checks. The old method fails on the current complete remediation and the corrected method is rerun. Full CI at the new published head remains separate.
+
+Implementation ancestor: `0dec17ab14ed49b7bfc311389db15589d187ba95`. All 30 packets bind this ancestor; only Unit 24 instructional digest changes; all mapping digests are preserved. Review-package digest expectations are refreshed because the implementation commit is a package input.
+
+Repository-source digest: `9151205f0be2f08f0925be52e22cb4704ec2141222e3c704f7d92713ec4e6c31`. Pack content-review digest: `0aaffcd83960764c388d4310ee07e589a8fe09e6de69f28ba6cfe6994c011a7b`.
+
+Repository-source digest: `9151205f0be2f08f0925be52e22cb4704ec2141222e3c704f7d92713ec4e6c31`. Pack content-review digest: `0aaffcd83960764c388d4310ee07e589a8fe09e6de69f28ba6cfe6994c011a7b`.
+
+Final verification:74 distinct host methods pass (45 focused,28 binding/governance and the corrected exact full-remediation method), verified from XML. Six new checks pass; three reject the preceding corpus. Source-text pooling alone preserves the exact document/typed model and every semantic digest. Production validation reports zero issues. Full Android CI remains separate at the final head.

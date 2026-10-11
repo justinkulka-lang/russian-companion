@@ -11,12 +11,12 @@ Unit 24 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 9cbfd11d62d6121e620f6052f3e5ef1142bdf6a0
-- Unit content-review SHA-256: a324a03af783fb573ea017fe1e0f3e472e83212857831d0b7aa2f28232366194
+- Curriculum source commit: 0dec17ab14ed49b7bfc311389db15589d187ba95
+- Unit content-review SHA-256: 6c5760946172cd7567ed5abf909772a9a5e43009b5bf2b1c90717b7a98bff486
 - Mapping-package SHA-256: dc6f9ac41a8520dc647df90313e05e547245bfa31fe3b2e883821f3591a24248
-- Pack content-review SHA-256: 23f2a06632ce1c618a54eff75f7675163a2c11207c7174771c5d95227200b5b7
-- Review-package SHA-256: ffd94bcbdf38619bd99408448af7aa1527c4897c8703b4eb85f2d2427dff7a65
-- Repository source SHA-256: a7bcaeffef330d87beab31580381882f154689f7815f098b5988b9c8a8fa477c
+- Pack content-review SHA-256: 0aaffcd83960764c388d4310ee07e589a8fe09e6de69f28ba6cfe6994c011a7b
+- Review-package SHA-256: b99c9c935116c050b816a53c51477c5e949ce5a0d4ca4db42ad9485a479a0c6f
+- Repository source SHA-256: 9151205f0be2f08f0925be52e22cb4704ec2141222e3c704f7d92713ec4e6c31
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -113,9 +113,9 @@ tutorOptional=true
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 51a93229dcb1abbc1885fa4382176f6a55ba63611076dcfdb8d2085e842e12f9
+- Content hash: 064b84c42bc55062624484d7935eb948b2c80da554f94527232e8b7e0d3813b0
 
-title=Choose the admitted negation example
+title=Distinguish a negative verb from a negative noun predicate
 kind=RECOGNITION
 unitNumber=24
 instruction=u24-st-orient,u24-st-teach-verbal-ne-1,u24-st-teach-verbal-ne-2,u24-st-teach-verbal-ne-3,u24-st-teach-verbal-ne-4
@@ -132,9 +132,9 @@ remediation=u24-st-rem-verbal-ne
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d1cda5ece5cf30cb6889863430c1142a1ff8f5ed32112374c36aa1fdedde9334
+- Content hash: fd99b2f46ee43bbc67d2d8f013703040f6234bb312d5ce6754c393a99e32d3ff
 
-title=Choose the admitted replacement for the exists word
+title=Distinguish existence, absence and the negative particle
 kind=RECOGNITION
 unitNumber=24
 instruction=u24-st-orient,u24-st-teach-absence-1,u24-st-teach-absence-2,u24-st-teach-absence-3
@@ -151,9 +151,9 @@ remediation=u24-st-rem-absence
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3746af747e447ff98247472b88b22ecf6fc712e41eb0d86546bcc26631162b1a
+- Content hash: b6b97182e5fbb791836bff496f3ef69cb74f6dcb9fb76af935f6e3b30eb64a6b
 
-title=Choose the admitted gloss written for the shown negated line
+title=Keep noun number and case distinct under negation
 kind=RECOGNITION
 unitNumber=24
 instruction=u24-st-orient,u24-st-teach-alternation-1,u24-st-teach-alternation-2
@@ -170,9 +170,9 @@ remediation=u24-st-rem-alternation
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 52b020cf13cab421e624b274549c758b76536554b567e0b044c7b5bc2c57891e
+- Content hash: 377c71a1c9e88e8979e1d52990a2a3e3dbb9ae3f613ddf06c881145b3e305628
 
-title=Choose the negative-pronoun form built from the shown word
+title=Distinguish negative pronouns from absence and indefinite forms
 kind=RECOGNITION
 unitNumber=24
 instruction=u24-st-orient,u24-st-teach-stand-ins-1,u24-st-teach-stand-ins-2,u24-st-teach-stand-ins-3
@@ -189,9 +189,9 @@ remediation=u24-st-rem-stand-ins
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 7e1dbdab7d912f5e2c73d295c89a1ea2b19743791300615271de00f16a3c171b
+- Content hash: 222be65497b37c5e1fc3adc8a5fbf77a051c8701df7642a180315639ad3ea5e0
 
-title=Choose the predicate particle required by negative concord
+title=Combine negative pronouns with the predicate particle
 kind=RECOGNITION
 unitNumber=24
 instruction=u24-st-orient,u24-st-teach-concord-1,u24-st-teach-concord-2
@@ -208,9 +208,9 @@ remediation=u24-st-rem-concord
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 998452d106e8b7814aa284bcd65594b77f36aed9656639760fa2941dc34f4375
+- Content hash: 8fef267a7165d769731d0d90b246c48c9b9be75005579d47c2a13b5bfb069255
 
-title=Choose the admitted meaning for the shown sentence
+title=Interpret the supplied persuasion readings in context
 kind=RECOGNITION
 unitNumber=24
 instruction=u24-st-orient,u24-st-teach-word-order-contrast-1,u24-st-teach-word-order-contrast-2
@@ -227,9 +227,9 @@ remediation=u24-st-rem-word-order-contrast
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 035c53e339b40a80eb88e86b95ac9de5f811f35cdb96960178d9dbb545b20dea
+- Content hash: 8d936964e34fee831c94774fea797d44e13bd76d2f7c12bc0128ddd039d9c559
 
-title=Choose the admitted meaning for the shown placement
+title=Distinguish negating the state from negating its experiencer
 kind=RECOGNITION
 unitNumber=24
 instruction=u24-st-orient,u24-st-teach-placement-1,u24-st-teach-placement-2
@@ -302,12 +302,12 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 980b4227e5bfa98b59ca86a60f563e74b7505ae39589d70228ee3211c43230d3
+- Content hash: 53f44dd4d33daa009419fec00deaac7650f15000acc3e528d66681fe1605248d
 
-title=Choose the admitted negation example
+title=Distinguish a negative verb from a negative noun predicate
 estimatedMinutes=12
 objectives=obj-u24-verbal-ne
-steps=u24-st-teach-verbal-ne-1,u24-st-guided-verbal-ne-1,u24-st-teach-verbal-ne-2,u24-st-teach-verbal-ne-3,u24-st-teach-verbal-ne-4,u24-st-rem-verbal-ne,u24-st-check-verbal-ne
+steps=u24-st-teach-verbal-ne-1,u24-st-teach-verbal-ne-2,u24-st-teach-verbal-ne-3,u24-st-teach-verbal-ne-4,u24-st-guided-verbal-ne-1,u24-st-rem-verbal-ne,u24-st-check-verbal-ne
 
 ### STEP `u24-st-teach-verbal-ne-1`
 
@@ -317,11 +317,11 @@ steps=u24-st-teach-verbal-ne-1,u24-st-guided-verbal-ne-1,u24-st-teach-verbal-ne-
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5d426974558dfc21eb9ded49a8393c3612fdb617dd04fb87778823ce6318c05c
+- Content hash: cb19917926e7d226893f67279ce60f4a8ba76ee5a6d837ff25906d675b22ebd8
 
 kind=TEACH
-title=Admitted lines
-body=Да, говорю́ — Yes, I'm speaking. Нет, не говорю́ — No, I'm not speaking. 
+title=A speaking reply and its negative
+body=Да, говорю́ — Yes, I'm speaking. Нет, не говорю́ — No, I'm not speaking. The first word of each reply answers yes or no. The separate negative particle before the speaking verb negates that predicate; it is not merely the initial no reply. The guided choice keeps the speaking action and changes it to a negative reply.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -331,28 +331,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u24-st-guided-verbal-ne-1`
-
-- Objectives: obj-u24-verbal-ne
-- Sessions: u24-s-verbal-ne
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: cf316d650964abbe013b34d47876a79f4348dfc5719392f7d8675e8e9868e24d
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u24-g-verbal-ne-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u24-st-rem-verbal-ne
-
 ### STEP `u24-st-teach-verbal-ne-2`
 
 - Objectives: obj-u24-verbal-ne
@@ -361,11 +339,11 @@ remediationStepId=u24-st-rem-verbal-ne
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f23f9e61fa33f76d9e2bb5372ccfc67b87921ea2125efe10b0abb7a307bdf845
+- Content hash: 626f375745e8f4dc53dab3c5453db32a194978afaa12c78fefe41bcce008873c
 
 kind=TEACH
-title=Admitted instruction
-body=To negate a verb, simply add не (nye) before the verb:
+title=A verb and a zero present copula
+body=To negate a verb, simply add не (nye) before the verb: the shown examples illustrate this ordinary predicate-negation pattern. In a present-tense noun predicate, the verb corresponding to is is normally omitted. The negative particle can then stand before the noun predicate itself. That is a different structure from a speaking verb with a negative particle.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -383,11 +361,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a1f8bb591a19ac93e33c0efe57856ec63846e76a7296a1e2ab16ca3b23fa9ae9
+- Content hash: 5617fd679a1058cd326313e46ab46953e724fc8ce398ce05ec4cd29aa503f4e1
 
 kind=TEACH
-title=Admitted lines
-body=Вы говори́те? — Are you speaking? Он не студент — He's not a student. 
+title=The question and the student statement
+body=Вы говори́те? — Are you speaking? Он не студент — He's not a student. The speaking question is not itself negated. The student statement has a noun predicate and no overt present-tense is. The check asks for that negative nominal sentence, not another speaking reply.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -405,11 +383,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: aa19764d82347e70fe9add64edf05587776e0bd8d1e88fbefa4016e311b81c66
+- Content hash: 26a5f7538217a0c01940538a3fe810e6c52e5959a2642e393632df72fb3ffaa8
 
 kind=TEACH
-title=Admitted lines
-body=Борис не приходит — Boris isn't coming. 
+title=A complete negative coming sentence
+body=Борис не приходит — Boris isn't coming. The negative particle precedes the coming verb. This complete sentence identifies Boris as the subject and coming as the action. The options не студент and не говорю́ are shorter fragments about being a student or speaking; they do not express the complete Boris-coming sentence. These choices recognize supplied structures rather than independently constructing every negative predicate.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -419,6 +397,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u24-st-guided-verbal-ne-1`
+
+- Objectives: obj-u24-verbal-ne
+- Sessions: u24-s-verbal-ne
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 89e00b35e301bbd45364e1353e6ae825194015630fec930377ea524c2f5fdb6a
+
+kind=GUIDED
+title=Guided practice
+body=Read the requested negative meaning, structure or stated context. Use the complete explanation above. A missed check returns to that full explanation.
+dominantAction=Continue
+references=
+items=u24-g-verbal-ne-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u24-st-rem-verbal-ne
+
 ### STEP `u24-st-rem-verbal-ne`
 
 - Objectives: obj-u24-verbal-ne
@@ -427,15 +427,21 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 6c08399145433f4ea97fe03b4100691c1fe9f6cfa53afacd2ba7e7fb31e2576f
+- Content hash: b7ff85876fabf708233e43326c6bc5314e53710d43e480ff98a88ff8660f3a14
 
 kind=REMEDIATE
-title=Remediation
-body=To negate a verb, simply add не (nye) before the verb:
+title=Review the complete negation contrast
+body=Да, говорю́ — Yes, I'm speaking. Нет, не говорю́ — No, I'm not speaking. The first word of each reply answers yes or no. The separate negative particle before the speaking verb negates that predicate; it is not merely the initial no reply. The guided choice keeps the speaking action and changes it to a negative reply.
+
+To negate a verb, simply add не (nye) before the verb: the shown examples illustrate this ordinary predicate-negation pattern. In a present-tense noun predicate, the verb corresponding to is is normally omitted. The negative particle can then stand before the noun predicate itself. That is a different structure from a speaking verb with a negative particle.
+
+Вы говори́те? — Are you speaking? Он не студент — He's not a student. The speaking question is not itself negated. The student statement has a noun predicate and no overt present-tense is. The check asks for that negative nominal sentence, not another speaking reply.
+
+Борис не приходит — Boris isn't coming. The negative particle precedes the coming verb. This complete sentence identifies Boris as the subject and coming as the action. The options не студент and не говорю́ are shorter fragments about being a student or speaking; they do not express the complete Boris-coming sentence. These choices recognize supplied structures rather than independently constructing every negative predicate.
 dominantAction=Continue
 references=
 items=
-examples=ex-u24-verbal-ne-0,ex-u24-verbal-ne-1
+examples=ex-u24-verbal-ne-0,ex-u24-verbal-ne-1,ex-u24-verbal-ne-2,ex-u24-verbal-ne-3,ex-u24-verbal-ne-4
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -449,11 +455,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8928e55982e532e9f6b7d230f8bc4ce1c2ee61fb901d664a715f1878fad5e0cf
+- Content hash: 9eba431714e401aee38df7508c3f4de14e3ab504ef26b89c7ac80a37d7a74538
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Read the requested negative meaning, structure or stated context. Use the complete explanation above. A missed check returns to that full explanation.
 dominantAction=Continue
 references=
 items=u24-i-verbal-ne-1,u24-i-verbal-ne-2
@@ -471,12 +477,12 @@ remediationStepId=u24-st-rem-verbal-ne
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 6d11adea05a974dbd4fd6df204886a36ef13f8d755106e9f78c25a188ce2f053
+- Content hash: eb76683658ba7347b38420fafd5a499d621a555b2d22b51cdb3e51ebd9eadb53
 
-title=Choose the admitted replacement for the exists word
+title=Distinguish existence, absence and the negative particle
 estimatedMinutes=12
 objectives=obj-u24-absence
-steps=u24-st-teach-absence-1,u24-st-guided-absence-1,u24-st-teach-absence-2,u24-st-teach-absence-3,u24-st-rem-absence,u24-st-check-absence
+steps=u24-st-teach-absence-1,u24-st-teach-absence-2,u24-st-teach-absence-3,u24-st-guided-absence-1,u24-st-rem-absence,u24-st-check-absence
 
 ### STEP `u24-st-teach-absence-1`
 
@@ -486,11 +492,11 @@ steps=u24-st-teach-absence-1,u24-st-guided-absence-1,u24-st-teach-absence-2,u24-
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 238f56d7c3ac8fcd28d46bb157001363bac73aaf57b8e2e05856e1552a5ad19e
+- Content hash: c2f4655d9d3c07a2d97aa5958aa04aa3503b0e02f7135149377fa64a32d8710d
 
 kind=TEACH
-title=Admitted lines
-body=есть — exists. нет — no. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+title=Existence and absence are not yes and no replies
+body=есть means exists in the supplied existence pattern. нет expresses absence in its negative counterpart. The same word can also be a no reply, but that conversational use is different from the absence construction. Да is a yes reply. The separate particle не negates a predicate; it is not the standalone replacement for existence in this pattern.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -500,28 +506,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u24-st-guided-absence-1`
-
-- Objectives: obj-u24-absence
-- Sessions: u24-s-absence
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a36cb96aaad88d4dac05b02879972912a3bb20018a372bdae317255ee805f4f8
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u24-g-absence-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u24-st-rem-absence
-
 ### STEP `u24-st-teach-absence-2`
 
 - Objectives: obj-u24-absence
@@ -530,11 +514,11 @@ remediationStepId=u24-st-rem-absence
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 4789026323819fa010a0a4e7b16f9ac223914b2a618d11d18174f2d1b45a805f
+- Content hash: 7c497f98c083d01db34f222f470aed977d98905ac177bea2a1deeef70ca8b153
 
 kind=TEACH
-title=Admitted instruction
-body=If it isn't there, we use нет followed by the genitive.
+title=The noun after the absence construction
+body=If it isn't there, we use нет followed by the genitive. In this construction the person or thing whose existence or possession is denied is expressed in the genitive. Do not replace the existence word with the separate particle and leave the construction unchanged. The checks identify the supplied existence/absence forms, not independently produce a genitive noun phrase.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -552,11 +536,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 86adc50b073f9d42f76c4b16825ef8285788815a56f93752cefd142b40bf5681
+- Content hash: c80f352210c6714d4fd8b86ce17344fe1a49c7db6d851b9767ee1b52cc627d7a
 
 kind=TEACH
-title=Admitted lines
-body=не — nye. 
+title=A pronunciation label is not a translation
+body=не — nye in the retained example is a pronunciation/transliteration label, not an English meaning. This particle is different from нет expressing absence and from есть asserting existence. A reference cue can be shown while the question asks for a contrasting form; read whether the question asks for existence, absence or ordinary predicate negation.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -566,6 +550,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u24-st-guided-absence-1`
+
+- Objectives: obj-u24-absence
+- Sessions: u24-s-absence
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 8e3cf9c1fe7f7ac7faa3811116dafa3452b6ec63dcbf8922ce12ec5555773ec2
+
+kind=GUIDED
+title=Guided practice
+body=Read the requested negative meaning, structure or stated context. Use the complete explanation above. A missed check returns to that full explanation.
+dominantAction=Continue
+references=
+items=u24-g-absence-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u24-st-rem-absence
+
 ### STEP `u24-st-rem-absence`
 
 - Objectives: obj-u24-absence
@@ -574,15 +580,19 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 6a5ad0b166231d08450f5575529c54c5d114b4831b7336a79c7dd510e77b5006
+- Content hash: ab548787d3fb37bb9ee21ccb6be7fe810982419712e421368c9203a18ba8883e
 
 kind=REMEDIATE
-title=Remediation
-body=If it isn't there, we use нет followed by the genitive.
+title=Review the complete negation contrast
+body=есть means exists in the supplied existence pattern. нет expresses absence in its negative counterpart. The same word can also be a no reply, but that conversational use is different from the absence construction. Да is a yes reply. The separate particle не negates a predicate; it is not the standalone replacement for existence in this pattern.
+
+If it isn't there, we use нет followed by the genitive. In this construction the person or thing whose existence or possession is denied is expressed in the genitive. Do not replace the existence word with the separate particle and leave the construction unchanged. The checks identify the supplied existence/absence forms, not independently produce a genitive noun phrase.
+
+не — nye in the retained example is a pronunciation/transliteration label, not an English meaning. This particle is different from нет expressing absence and from есть asserting existence. A reference cue can be shown while the question asks for a contrasting form; read whether the question asks for existence, absence or ordinary predicate negation.
 dominantAction=Continue
 references=
 items=
-examples=ex-u24-absence-0,ex-u24-absence-1
+examples=ex-u24-absence-0,ex-u24-absence-1,ex-u24-absence-2
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -596,11 +606,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5c4a611fa95123814f52454bdbc6bf19598c45a92f7e223ef5122f77c00efa84
+- Content hash: 784d5d596d648a38956b2a3fe526433266470a416d038a17a47de47c899315c6
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Read the requested negative meaning, structure or stated context. Use the complete explanation above. A missed check returns to that full explanation.
 dominantAction=Continue
 references=
 items=u24-i-absence-1,u24-i-absence-2
@@ -618,12 +628,12 @@ remediationStepId=u24-st-rem-absence
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d9d94eb810e70a17372c7508284ac5c08625a70604bfec54099d35059d1c1b65
+- Content hash: e6d01b6a702e1cd139b3eda6fcd2754fbb49136024f529c0ee28cad717e8f274
 
-title=Choose the admitted gloss written for the shown negated line
+title=Keep noun number and case distinct under negation
 estimatedMinutes=12
 objectives=obj-u24-alternation
-steps=u24-st-teach-alternation-1,u24-st-guided-alternation-1,u24-st-teach-alternation-2,u24-st-rem-alternation,u24-st-check-alternation
+steps=u24-st-teach-alternation-1,u24-st-teach-alternation-2,u24-st-guided-alternation-1,u24-st-rem-alternation,u24-st-check-alternation
 
 ### STEP `u24-st-teach-alternation-1`
 
@@ -633,15 +643,37 @@ steps=u24-st-teach-alternation-1,u24-st-guided-alternation-1,u24-st-teach-altern
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 93c277d4d4de3508e72d141959edb1eb785059c26626fee518bbc1b4a9d06037
+- Content hash: 1f18db28cc2e79448f89404907f98bd63608f1354f3e4ac580a9a3e1b4f9e21e
 
 kind=TEACH
-title=Admitted lines
-body=Я не ви́жу кни́ги — I don't see any books. Я не ви́жу кни́гу — I don't see the book. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+title=The singular and plural examples used by the checks
+body=Я не ви́жу э́ту кни́гу. — I don't see this book, singular. Я не ви́жу кни́гу — I don't see the book. Я не ви́жу книг. — I don't see any books. The first two show a singular accusative object; the last shows a genitive plural object. Negation remains in every sentence. Changing noun form does not turn the statement into a positive one.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
 examples=ex-u24-alternation-0,ex-u24-alternation-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u24-st-teach-alternation-2`
+
+- Objectives: obj-u24-alternation
+- Sessions: u24-s-alternation
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 3bb554dc1d4bc8af51c310b23663e15228c5ede17d8c6d1a3939c39c9c41bfd9
+
+kind=TEACH
+title=Genitive is not simply a plural marker
+body=A negated direct object can be genitive or accusative depending on meaning, context and usage. Indefinite reference often favors genitive, but this is not a mechanical rule that every negative sentence must use it. The older book ending in the retained source can also be genitive singular or accusative plural; it is not unambiguous genitive plural. The worked example now uses the same explicit plural-genitive phrase as the repaired check. I don't see the one book is still a singular description. I see this book and I see the books are positive descriptions and therefore do not match the negated cues. These choices distinguish supplied meanings and number, not independently choose every case under negation.
+dominantAction=Continue
+references=ref-u2125-attribution
+items=
+examples=
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -655,11 +687,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 15053fcbf90d6b104db5df74f46749af61b9bcbd1fb7d61ad9117aaeda8ffee8
+- Content hash: db68487f8adcebf5fd2e62eb095a419c67d6c52466f6314da65d3ffa54ae3735
 
 kind=GUIDED
 title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
+body=Read the requested negative meaning, structure or stated context. Use the complete explanation above. A missed check returns to that full explanation.
 dominantAction=Continue
 references=
 items=u24-g-alternation-0
@@ -669,28 +701,6 @@ bookDirection=
 companionDirection=
 remediationStepId=u24-st-rem-alternation
 
-### STEP `u24-st-teach-alternation-2`
-
-- Objectives: obj-u24-alternation
-- Sessions: u24-s-alternation
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 68cebbdb7a98dd8673dce5e39d6df6c8358babf25518d4320d12921ab639c9d3
-
-kind=TEACH
-title=Admitted instruction
-body=the noun is indefinite
-dominantAction=Continue
-references=ref-u2125-attribution
-items=
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
 ### STEP `u24-st-rem-alternation`
 
 - Objectives: obj-u24-alternation
@@ -699,11 +709,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a26e8d5ffe8f7b3d34c4a54bc19775db463bdc706964c8bb304ae61295b3f88a
+- Content hash: 63d9ee7021d3594c5a1074bac70c4b1eb65f3d9cb5a6627b09057f1bdc544a7a
 
 kind=REMEDIATE
-title=Remediation
-body=the noun is indefinite
+title=Review the complete negation contrast
+body=Я не ви́жу э́ту кни́гу. — I don't see this book, singular. Я не ви́жу кни́гу — I don't see the book. Я не ви́жу книг. — I don't see any books. The first two show a singular accusative object; the last shows a genitive plural object. Negation remains in every sentence. Changing noun form does not turn the statement into a positive one.
+
+A negated direct object can be genitive or accusative depending on meaning, context and usage. Indefinite reference often favors genitive, but this is not a mechanical rule that every negative sentence must use it. The older book ending in the retained source can also be genitive singular or accusative plural; it is not unambiguous genitive plural. The worked example now uses the same explicit plural-genitive phrase as the repaired check. I don't see the one book is still a singular description. I see this book and I see the books are positive descriptions and therefore do not match the negated cues. These choices distinguish supplied meanings and number, not independently choose every case under negation.
 dominantAction=Continue
 references=
 items=
@@ -721,11 +733,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e8fc136949c28eca16e29e53cde02e5d9dea8e6b3318c48db843193234d6ebd7
+- Content hash: eebf1645303f9f4a590100026a989706130f5de0355119be32c119497d703690
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Read the requested negative meaning, structure or stated context. Use the complete explanation above. A missed check returns to that full explanation.
 dominantAction=Continue
 references=
 items=u24-i-alternation-1,u24-i-alternation-2
@@ -743,9 +755,9 @@ remediationStepId=u24-st-rem-alternation
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 6b615db6a1e16daad05f23c7f0778dc35e162490ac55fb0452b40993accb5b23
+- Content hash: 6c0964c03f4e4322af93155fa4e75853667e3d276f82eb4816524737c2fa3cc3
 
-title=Choose the negative-pronoun form built from the shown word
+title=Distinguish negative pronouns from absence and indefinite forms
 estimatedMinutes=12
 objectives=obj-u24-stand-ins
 steps=u24-st-teach-stand-ins-1,u24-st-teach-stand-ins-2,u24-st-teach-stand-ins-3,u24-st-guided-stand-ins-1,u24-st-rem-stand-ins,u24-st-check-stand-ins
@@ -758,11 +770,11 @@ steps=u24-st-teach-stand-ins-1,u24-st-teach-stand-ins-2,u24-st-teach-stand-ins-3
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 4ed370e7aadd212779a0257ccb55e2dd101d6b4f4a6537b0b63203413bb5eaf6
+- Content hash: de459eee758701bc19ff568473762d6ec2c8b3001b175cb83407be8a3769d0dc
 
 kind=TEACH
-title=Admitted lines
-body=кто — никто́. что — ничто́. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+title=Nobody and nothing refer to different categories
+body=кто — никто́. что — ничто́. The first pair concerns a person and nobody; the second concerns a thing and nothing. The indefinite options не́кто and не́что refer to an unspecified person or thing, not the corresponding nobody/nothing form. Do not treat a similar-looking prefix as proof of the same meaning.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -780,11 +792,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 55c4d1d961ed9f79ac991671e99bc6f6c9a7e3937ef9b21a253e4f97a177624e
+- Content hash: 47bc61a0813b62a3df70e250bc929242161da9088e2e86054389f4dd81873be8
 
 kind=TEACH
-title=Admitted instruction
-body=Negative predicative constructions express the absence of a person or thing for an action. The construction selects a case form; it has no nominative form. Compare the indefinite pronoun separately.
+title=No person available for an action
+body=Negative predicative constructions express the absence of a person or thing for an action. The construction selects a case form; it has no nominative form. Compare the indefinite pronoun separately. не́кого спросить — there is nobody to ask. This is absence of a person available for the infinitive action; it differs from an unspecified person and from there is nothing to ask.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -802,11 +814,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d1da86b348ac0d33cf8f43948f1ebe23edac824b8d5212ce346f5bc06cbdcdfa
+- Content hash: 978f724a4b403778cec7529694f25face06ae112e629d5df795dd13a8e613b7b
 
 kind=TEACH
-title=Admitted lines
-body=не́кто is an indefinite pronoun, a person whose identity is not specified. It is not the predicative negative of кто. Absence of a person uses a case form: не́кого has the same form in the genitive and accusative, while не́кому is dative and не́кем instrumental. The sentence determines the case; absence meaning alone does not. There is no nominative form in this negative paradigm.
+title=The case comes from the construction
+body=не́кто is an indefinite pronoun, a person whose identity is not specified. It is not the predicative negative of кто. Absence of a person uses a case form: не́кого has the same form in the genitive and accusative, while не́кому is dative and не́кем instrumental. The sentence determines the case; absence meaning alone does not. There is no nominative form in this negative paradigm. The current checks recognize the absence meaning; they do not uniquely identify genitive from the shared genitive/accusative form.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -824,11 +836,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 414dc34905704e933be823d75649530b838e49ebaf5456788bfe9884ea0c3503
+- Content hash: 70d21eda94be12a8e7848110ae009312b6090cb243ad0593b46afd5fcca898c7
 
 kind=GUIDED
 title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
+body=Read the requested negative meaning, structure or stated context. Use the complete explanation above. A missed check returns to that full explanation.
 dominantAction=Continue
 references=
 items=u24-g-stand-ins-0
@@ -846,11 +858,15 @@ remediationStepId=u24-st-rem-stand-ins
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 61ec5d55a03e20d5f5ac8baecaecc08f58a5a2e325eb4f209bedb601de47a91d
+- Content hash: 7551f561d3da26056ee8bca77c7837d86d28fc3cfb75755426eedb26b3fe0c48
 
 kind=REMEDIATE
-title=Remediation
-body=не́кто is an indefinite pronoun, a person whose identity is not specified. It is not the predicative negative of кто. Absence of a person uses a case form: не́кого has the same form in the genitive and accusative, while не́кому is dative and не́кем instrumental. The sentence determines the case; absence meaning alone does not. There is no nominative form in this negative paradigm.
+title=Review the complete negation contrast
+body=кто — никто́. что — ничто́. The first pair concerns a person and nobody; the second concerns a thing and nothing. The indefinite options не́кто and не́что refer to an unspecified person or thing, not the corresponding nobody/nothing form. Do not treat a similar-looking prefix as proof of the same meaning.
+
+Negative predicative constructions express the absence of a person or thing for an action. The construction selects a case form; it has no nominative form. Compare the indefinite pronoun separately. не́кого спросить — there is nobody to ask. This is absence of a person available for the infinitive action; it differs from an unspecified person and from there is nothing to ask.
+
+не́кто is an indefinite pronoun, a person whose identity is not specified. It is not the predicative negative of кто. Absence of a person uses a case form: не́кого has the same form in the genitive and accusative, while не́кому is dative and не́кем instrumental. The sentence determines the case; absence meaning alone does not. There is no nominative form in this negative paradigm. The current checks recognize the absence meaning; they do not uniquely identify genitive from the shared genitive/accusative form.
 dominantAction=Continue
 references=
 items=
@@ -868,11 +884,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 19be19f77d7cfef25dcb37660ead2a5f7c404afcc10aa25ed2c7f9b9bfccf25d
+- Content hash: b418ebbcee539cd6613655b9fe6ccabcea1fa2058e0c630833cd27f373e961e0
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Read the requested negative meaning, structure or stated context. Use the complete explanation above. A missed check returns to that full explanation.
 dominantAction=Continue
 references=
 items=u24-i-stand-ins-1,u24-i-stand-ins-2
@@ -890,12 +906,12 @@ remediationStepId=u24-st-rem-stand-ins
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 50c5efd2bad101d7ca4ad70a2668fd5b5af82645207bf5ce0e7ab5d3022b06cd
+- Content hash: fdc29815945e461abf8a271d559d35bcf5679dae3be85c8bb94b441e7619c6a9
 
-title=Choose the predicate particle required by negative concord
+title=Combine negative pronouns with the predicate particle
 estimatedMinutes=12
 objectives=obj-u24-concord
-steps=u24-st-teach-concord-1,u24-st-guided-concord-1,u24-st-teach-concord-2,u24-st-rem-concord,u24-st-check-concord
+steps=u24-st-teach-concord-1,u24-st-teach-concord-2,u24-st-guided-concord-1,u24-st-rem-concord,u24-st-check-concord
 
 ### STEP `u24-st-teach-concord-1`
 
@@ -905,15 +921,37 @@ steps=u24-st-teach-concord-1,u24-st-guided-concord-1,u24-st-teach-concord-2,u24-
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 7bd6928c455523276be01de44687e567fd91ffe9faada48a346afd2d98fde821
+- Content hash: 442900d8e2eb52244605bce076142fef6b90e0ec3913c59a61326cf5e81fef6d
 
 kind=TEACH
-title=Admitted lines
-body=никто́ — не. ничто́ — не. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+title=One negative meaning across pronoun and predicate
+body=никто́ — не. ничто́ — не. In the supplied negative-concord pattern, the negative pronoun requires the separate negative particle in the predicate. They work together to express one overall negative statement. Do not remove the predicate particle by applying the English idea that two negatives must cancel.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
 examples=ex-u24-concord-0,ex-u24-concord-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u24-st-teach-concord-2`
+
+- Objectives: obj-u24-concord
+- Sessions: u24-s-concord
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: eb3191a1c890e286cef9e9fd8557fa3d4a9c2751c92b6c3842a185c63a5f9097
+
+kind=TEACH
+title=A prefix and a whole pronoun are not the predicate particle
+body=The option ни- is a pronoun prefix, not the separate predicate particle. никому is a declined pronoun referring to nobody in the dative; it is not that particle either. The answer не is the required predicate particle in the illustrated pattern. The choices recognize this supplied concord rule; they do not test producing every negative pronoun case or all exceptional constructions.
+dominantAction=Continue
+references=ref-u2125-attribution
+items=
+examples=
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -927,11 +965,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: de0bdd825c839d02f1bd8bdbe104b2a48da54f7cc287658c0f50b2869617ee3d
+- Content hash: cbf3e8f8b136cb80f0e83115b0c2d454dee6010f3c99fc0f47be4e79594e49f0
 
 kind=GUIDED
 title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
+body=Read the requested negative meaning, structure or stated context. Use the complete explanation above. A missed check returns to that full explanation.
 dominantAction=Continue
 references=
 items=u24-g-concord-0
@@ -941,28 +979,6 @@ bookDirection=
 companionDirection=
 remediationStepId=u24-st-rem-concord
 
-### STEP `u24-st-teach-concord-2`
-
-- Objectives: obj-u24-concord
-- Sessions: u24-s-concord
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d1a5f23b05c778ae4f4489bf5823329110fdac99a16a07f07cb4485bbd9925d4
-
-kind=TEACH
-title=Admitted instruction
-body=отрицательной частицы не
-dominantAction=Continue
-references=ref-u2125-attribution
-items=
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
 ### STEP `u24-st-rem-concord`
 
 - Objectives: obj-u24-concord
@@ -971,11 +987,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: fb190595ee5cea620a67f551ed923a0c927fe162aaf25016a8c4edcbbe95c559
+- Content hash: 3298fd36231430876bba5031035ba494722619b2f01d5828b05f2e64511f51ad
 
 kind=REMEDIATE
-title=Remediation
-body=отрицательной частицы не
+title=Review the complete negation contrast
+body=никто́ — не. ничто́ — не. In the supplied negative-concord pattern, the negative pronoun requires the separate negative particle in the predicate. They work together to express one overall negative statement. Do not remove the predicate particle by applying the English idea that two negatives must cancel.
+
+The option ни- is a pronoun prefix, not the separate predicate particle. никому is a declined pronoun referring to nobody in the dative; it is not that particle either. The answer не is the required predicate particle in the illustrated pattern. The choices recognize this supplied concord rule; they do not test producing every negative pronoun case or all exceptional constructions.
 dominantAction=Continue
 references=
 items=
@@ -993,11 +1011,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 003ff65b5516925ffc291f862f6df80401dfb05e115c5cca15ba3581ebd28fcd
+- Content hash: c2ed22d9f9298e5713712a1bb9c2656156735f026bbe33c1ddd0927dde637bcb
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Read the requested negative meaning, structure or stated context. Use the complete explanation above. A missed check returns to that full explanation.
 dominantAction=Continue
 references=
 items=u24-i-concord-1,u24-i-concord-2
@@ -1015,12 +1033,12 @@ remediationStepId=u24-st-rem-concord
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 981ddd90bd3dc9a25d60dbe0d5865e63159429a19156f83737d86b537d04c794
+- Content hash: d24f2a7fa028957b49d7639f416e8384f110c2a34c1f9d2f4ebe8de250ba50c4
 
-title=Choose the admitted meaning for the shown sentence
+title=Interpret the supplied persuasion readings in context
 estimatedMinutes=12
 objectives=obj-u24-word-order-contrast
-steps=u24-st-teach-word-order-contrast-1,u24-st-guided-word-order-contrast-1,u24-st-teach-word-order-contrast-2,u24-st-rem-word-order-contrast,u24-st-check-word-order-contrast
+steps=u24-st-teach-word-order-contrast-1,u24-st-teach-word-order-contrast-2,u24-st-guided-word-order-contrast-1,u24-st-rem-word-order-contrast,u24-st-check-word-order-contrast
 
 ### STEP `u24-st-teach-word-order-contrast-1`
 
@@ -1030,15 +1048,37 @@ steps=u24-st-teach-word-order-contrast-1,u24-st-guided-word-order-contrast-1,u24
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a7aacaddc5bb5c8399277a82a54f30dcff8fafcbde4e9ce8ea62ffb21bc8ccfc
+- Content hash: b7fb9284a0ff3a495c4a2e7abe7185d81d00b8d054562f1e69874b6ecdd656b4
 
 kind=TEACH
-title=Admitted lines
-body=Не надо меня уговаривать. — One should not persuade me. Меня не надо уговаривать. — There is no need to persuade me. 
+title=Two supplied readings with their stated contexts
+body=Не надо меня уговаривать. — One should not persuade me in the supplied context where the speaker would never agree. Меня не надо уговаривать. — There is no need to persuade me in the supplied context where the speaker will do it anyway. The questions provide these contexts rather than asking you to infer one unique interpretation from word order alone.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
 examples=ex-u24-word-order-contrast-0,ex-u24-word-order-contrast-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u24-st-teach-word-order-contrast-2`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-word-order-contrast
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 8ec3fa731a09a5d9f0d3c4682e572cd512383fcf199421f3b4c8aa93a174bc2a
+
+kind=TEACH
+title=Word order is not a universal meaning switch
+body=Word order can change what is in focus or in the scope of a particle. It does not by itself assign one unique meaning to every sentence. Intonation and discourse context matter as well. The current source illustrates these two contextual readings; a speaker could use a sentence with a different intended emphasis in another context. The checks recognize the supplied reading, not a universal rule that moving the subject always changes prohibition into lack of necessity.
+dominantAction=Continue
+references=ref-u2125-attribution
+items=
+examples=
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1052,11 +1092,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 82e03918ffe873c3aa4cfcdb593aa6bd40ff8b139474b14202c10d695734d59e
+- Content hash: 5f409b17ff0dd8d36169f21444c135ac06b3c69102f86ea22ee11678c6303533
 
 kind=GUIDED
 title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
+body=Read the requested negative meaning, structure or stated context. Use the complete explanation above. A missed check returns to that full explanation.
 dominantAction=Continue
 references=
 items=u24-g-word-order-contrast-0
@@ -1066,28 +1106,6 @@ bookDirection=
 companionDirection=
 remediationStepId=u24-st-rem-word-order-contrast
 
-### STEP `u24-st-teach-word-order-contrast-2`
-
-- Objectives: obj-u24-word-order-contrast
-- Sessions: u24-s-word-order-contrast
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 04d1a6ae5c3d7dcd02a5e5f53771ef3b6aab033f80ff2e9acc712e03df922575
-
-kind=TEACH
-title=Admitted instruction
-body=Word order can change what is in focus or in the scope of a particle. It does not by itself assign one unique meaning to every sentence.
-dominantAction=Continue
-references=ref-u2125-attribution
-items=
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
 ### STEP `u24-st-rem-word-order-contrast`
 
 - Objectives: obj-u24-word-order-contrast
@@ -1096,11 +1114,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ba248b484f9bbbb6a5e53c1f6463dd45eb571461c8a3e9102502ac44691938d9
+- Content hash: 313e84791d20897169471731db20808da40b662ca7a2c8d09251a86bb4856684
 
 kind=REMEDIATE
-title=Remediation
-body=Word order can change what is in focus or in the scope of a particle. It does not by itself assign one unique meaning to every sentence.
+title=Review the complete negation contrast
+body=Не надо меня уговаривать. — One should not persuade me in the supplied context where the speaker would never agree. Меня не надо уговаривать. — There is no need to persuade me in the supplied context where the speaker will do it anyway. The questions provide these contexts rather than asking you to infer one unique interpretation from word order alone.
+
+Word order can change what is in focus or in the scope of a particle. It does not by itself assign one unique meaning to every sentence. Intonation and discourse context matter as well. The current source illustrates these two contextual readings; a speaker could use a sentence with a different intended emphasis in another context. The checks recognize the supplied reading, not a universal rule that moving the subject always changes prohibition into lack of necessity.
 dominantAction=Continue
 references=
 items=
@@ -1118,11 +1138,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ae6f0ca8c63cf624830bd65d9583e16c5752930de26144592a71ff7d9162cb0e
+- Content hash: 314dd15e3866b5c55b64a20798286bae01761d1a9add5dd2745f82d3e7bd9bc1
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Read the requested negative meaning, structure or stated context. Use the complete explanation above. A missed check returns to that full explanation.
 dominantAction=Continue
 references=
 items=u24-i-word-order-contrast-1,u24-i-word-order-contrast-2
@@ -1140,12 +1160,12 @@ remediationStepId=u24-st-rem-word-order-contrast
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: fd7128fd31d752fccd4f5833709393107f7f623d180157c7a3ce4d5dc261fd0d
+- Content hash: 0a581306aeaffcf3044f2bc1ed91967f948c81db38d6bf5c87d0337957efe980
 
-title=Choose the admitted meaning for the shown placement
+title=Distinguish negating the state from negating its experiencer
 estimatedMinutes=12
 objectives=obj-u24-placement
-steps=u24-st-teach-placement-1,u24-st-guided-placement-1,u24-st-teach-placement-2,u24-st-rem-placement,u24-st-check-placement
+steps=u24-st-teach-placement-1,u24-st-teach-placement-2,u24-st-guided-placement-1,u24-st-rem-placement,u24-st-check-placement
 
 ### STEP `u24-st-teach-placement-1`
 
@@ -1155,15 +1175,37 @@ steps=u24-st-teach-placement-1,u24-st-guided-placement-1,u24-st-teach-placement-
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 39c833bc098e9010d7ef066124c93402bdfd133a036a227b8174a447a4b63957
+- Content hash: 4535bc6dbba93e7247c2deaffcd1931e307026fd8e29dc1ab7f39fdaa8f1d336
 
 kind=TEACH
-title=Admitted lines
-body=Мне не холодно. — To me it is not cold. Не мне холодно. — It is not to me that it is cold. 
+title=Not cold and not me are different scopes
+body=Мне не холодно. — To me it is not cold. This can also be expressed in English as I am not cold. Не мне холодно. — It is not to me that it is cold. The first negates the cold state for the experiencer; the second contrasts the experiencer, so the person who is cold is not me. The second does not by itself identify that other person.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
 examples=ex-u24-placement-0,ex-u24-placement-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u24-st-teach-placement-2`
+
+- Objectives: obj-u24-placement
+- Sessions: u24-s-placement
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 958b0b293a9ce296dba0bd582044b9b50b967a8a2d17270e518528b1ea224f2e
+
+kind=TEACH
+title=Use the demonstrated contrast with its limits
+body=Note that the modifier не negates the word which comes right after it. In this supplied pair, its position helps distinguish the state from the experiencer. Wider sentences also depend on construction, emphasis and context; do not apply adjacency as an automatic complete interpretation of every Russian sentence. The check asks for the scope shown in this pair, not free production of every negative-focus construction.
+dominantAction=Continue
+references=ref-u2125-attribution
+items=
+examples=
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1177,11 +1219,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 30747dcd9f748c721313a5ad30105ab7adcff55762ac699d3534f3a72e09de1c
+- Content hash: 70ce93c0fe3ba04ecbe86db49cee0477689a1fb554175ea42ffc200156cdc634
 
 kind=GUIDED
 title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
+body=Read the requested negative meaning, structure or stated context. Use the complete explanation above. A missed check returns to that full explanation.
 dominantAction=Continue
 references=
 items=u24-g-placement-0
@@ -1191,28 +1233,6 @@ bookDirection=
 companionDirection=
 remediationStepId=u24-st-rem-placement
 
-### STEP `u24-st-teach-placement-2`
-
-- Objectives: obj-u24-placement
-- Sessions: u24-s-placement
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b31e570d59f67635c320ad9960410bccb2c12f99dd8fa01e432f620f6a909c5a
-
-kind=TEACH
-title=Admitted instruction
-body=Note that the modifier не negates the word which comes right after it.
-dominantAction=Continue
-references=ref-u2125-attribution
-items=
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
 ### STEP `u24-st-rem-placement`
 
 - Objectives: obj-u24-placement
@@ -1221,11 +1241,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 2ecc8f072697fe565d367529f61b68717fa26671ec0c90f027dd5c9abeb0b21b
+- Content hash: f8612ccf7153baf37acdad804c13d04622b4cb0f29c3013348753efffe44b777
 
 kind=REMEDIATE
-title=Remediation
-body=Note that the modifier не negates the word which comes right after it.
+title=Review the complete negation contrast
+body=Мне не холодно. — To me it is not cold. This can also be expressed in English as I am not cold. Не мне холодно. — It is not to me that it is cold. The first negates the cold state for the experiencer; the second contrasts the experiencer, so the person who is cold is not me. The second does not by itself identify that other person.
+
+Note that the modifier не negates the word which comes right after it. In this supplied pair, its position helps distinguish the state from the experiencer. Wider sentences also depend on construction, emphasis and context; do not apply adjacency as an automatic complete interpretation of every Russian sentence. The check asks for the scope shown in this pair, not free production of every negative-focus construction.
 dominantAction=Continue
 references=
 items=
@@ -1243,11 +1265,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 60d9d13638155242d191f710b008306d34122837688a7bc9c7ae04a53f39634d
+- Content hash: cfd94a93463d7545ad8fe660ac7c970db6c000e4fa084b73821425faa9a51088
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Read the requested negative meaning, structure or stated context. Use the complete explanation above. A missed check returns to that full explanation.
 dominantAction=Continue
 references=
 items=u24-i-placement-1,u24-i-placement-2
@@ -1544,15 +1566,15 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 - Objectives: obj-u24-alternation
 - Sessions: u24-s-alternation
-- Source: src-wikipedia-russian-grammar-1369617627
-- Rights: rights-wikipedia-russian-grammar-1369617627
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: aa15e8b362578c82743d9f98c144ffc9b474daac440ad865287ff85cd66e4530
+- Content hash: 499c44857086132016c80efcf6b067229e254ef1509fedb0899d1f344df45c95
 
 kind=LEXICAL
 letterId=
-display=Я не ви́жу кни́ги
+display=Я не ви́жу книг.
 note=I don't see any books
 objectiveId=obj-u24-alternation
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
@@ -1735,19 +1757,20 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 17ebbb4253dde368d5c8662311c7b6f38a65ccede2c1ea1ebc8c25e8cfcb9c8d
+- Content hash: 1ded03725009902821ecf9dbd37c2f968fafa275954d8ca95d77a872f1be9264
 
 kind=FORM_SELECTION
 language=en
-prompt=The frozen examples move from the speaking reply to the line with the particle before that word. Which admitted line is that result?
+prompt=Which complete reply negates the speaking action in the shown affirmative reply?
 promptLetter=Да, говорю́
 options=Нет, не говорю́ | Он не студент | Вы говори́те?
 answer=Нет, не говорю́
-feedback=The frozen example No, I'm not speaking adds the particle before the speaking reply. Нет, не говорю́.
+feedback=The frozen example No, I'm not speaking adds the particle before the speaking reply.
+Да, говорю́ is the reference cue; Нет, не говорю́ matches the requested meaning or structure. a negative first-person speaking reply.
 objectiveId=obj-u24-verbal-ne
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen example He's not a student is omitted in the present form, so the particle stands on its own. | The frozen example Are you speaking? is the question before the reply.
+distractorRationales= | Он не студент: a negative noun predicate with an omitted present copula. This differs from the meaning or structure requested in this context. The frozen example He's not a student is omitted in the present form, so the particle stands on its own. | Вы говори́те?: a speaking question without negation. This differs from the meaning or structure requested in this context. The frozen example Are you speaking? is the question before the reply.
 testedFeature=PARTICLE_BEFORE_SHOWN
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u24-verbal-ne-0
@@ -1755,8 +1778,9 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u24-verbal-ne-1-ru
 distractorSourceIds= | prov-ex-u24-verbal-ne-3-ru | prov-ex-u24-verbal-ne-2-ru
-distractorDifference= | This example omits the present form instead of adding the particle before the speaking reply. | This example is the question, not the reply with the particle added.
+distractorDifference= | Он не студент: a negative noun predicate with an omitted present copula. This differs from the meaning or structure requested in this context. The frozen example He's not a student is omitted in the present form, so the particle stands on its own. | Вы говори́те?: a speaking question without negation. This differs from the meaning or structure requested in this context. The frozen example Are you speaking? is the question before the reply.
 whyAnswerDemonstratesObjective=The frozen example No, I'm not speaking adds the particle before the speaking reply.
+Да, говорю́ is the reference cue; Нет, не говорю́ matches the requested meaning or structure. a negative first-person speaking reply.
 contrastMembers=Нет, не говорю́ | Он не студент | Вы говори́те?
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u24-verbal-ne-0-ru | prov-ex-u24-verbal-ne-1-ru | prov-ex-u24-verbal-ne-3-ru | prov-ex-u24-verbal-ne-2-ru
@@ -1770,19 +1794,20 @@ responseKind=RUSSIAN_CLAUSE
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: a5e55ba4186ff613ed75ad72a4b6ae4a1aed0b4351ccd3039493e080beab4f3b
+- Content hash: cfdaec5386c95ea2bce5a22bac412bf00c5f916d57024794436c5720032ab7c4
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=The frozen note replaces the exists word when negating the have-phrase. Which admitted form is the replacement?
+prompt=Which form expresses absence instead of the shown positive expression?
 promptLetter=есть
 options=нет | не | Да
 answer=нет
-feedback=The frozen note says this form has a different meaning from the reply that means no, and it replaces the exists word. нет.
+feedback=The frozen note says this form has a different meaning from the reply that means no, and it replaces the exists word.
+есть is the reference cue; нет matches the requested meaning or structure. absence in the existence pattern.
 objectiveId=obj-u24-absence
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen note adds this particle before a word. It is not the replacement for the exists word. | The frozen example uses this as the agreeing reply Yes, I'm speaking, not as the replacement.
+distractorRationales= | не: the separate predicate-negation particle. This differs from the meaning or structure requested in this context. The frozen note adds this particle before a word. It is not the replacement for the exists word. | Да: a yes reply. This differs from the meaning or structure requested in this context. The frozen example uses this as the agreeing reply Yes, I'm speaking, not as the replacement.
 testedFeature=EXISTS_REPLACEMENT
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u24-absence-0
@@ -1790,8 +1815,9 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u24-absence-1-ru
 distractorSourceIds= | prov-ex-u24-absence-2-ru | prov-u24-absence-x-0
-distractorDifference= | This particle is placed before a word, not used as the replacement. | This token is the agreeing reply, not the replacement.
+distractorDifference= | не: the separate predicate-negation particle. This differs from the meaning or structure requested in this context. The frozen note adds this particle before a word. It is not the replacement for the exists word. | Да: a yes reply. This differs from the meaning or structure requested in this context. The frozen example uses this as the agreeing reply Yes, I'm speaking, not as the replacement.
 whyAnswerDemonstratesObjective=The frozen note says this form has a different meaning from the reply that means no, and it replaces the exists word.
+есть is the reference cue; нет matches the requested meaning or structure. absence in the existence pattern.
 contrastMembers=нет | не | Да
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u24-absence-0-ru | prov-ex-u24-absence-1-ru | prov-ex-u24-absence-2-ru | prov-u24-absence-x-0
@@ -1805,7 +1831,7 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: ab3140e351416700be583c2e09fec268669546fe18d1717f511178c1b6d24a93
+- Content hash: 5afa5c97e964b9c7c3609ba7675f81892e6d5bff42a9c491693aaaa9c2396209
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1814,10 +1840,11 @@ promptLetter=Я не ви́жу э́ту кни́гу.
 options=I don't see this book, singular | I don't see any books | I see this book
 answer=I don't see this book, singular
 feedback=Я не ви́жу э́ту кни́гу. means I don't see this book, singular. э́ту кни́гу specifies one book and не supplies the negation.
+Я не ви́жу э́ту кни́гу. is the reference cue; I don't see this book, singular matches the requested meaning or structure. negation with one specified accusative object.
 objectiveId=obj-u24-alternation
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | I don't see any books would be a plural or bare genitive reading, not э́ту кни́гу. | I see this book drops the negation.
+distractorRationales= | I don't see any books: the explicit genitive-plural reading. This differs from the meaning or structure requested in this context. I don't see any books would be a plural or bare genitive reading, not э́ту кни́гу. | I see this book: a positive singular-object statement. This differs from the meaning or structure requested in this context. I see this book drops the negation.
 testedFeature=SINGULAR_NEGATED_OBJECT
 evidenceMode=STATED_APPLICATION
 contrastSetId=u24-alternation-0
@@ -1825,8 +1852,9 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ca-repair-24-10816
 distractorSourceIds= | prov-ca-repair-24-10819 | prov-ca-repair-24-10820
-distractorDifference= | I don't see any books would be a plural or bare genitive reading, not э́ту кни́гу. | I see this book drops the negation.
+distractorDifference= | I don't see any books: the explicit genitive-plural reading. This differs from the meaning or structure requested in this context. I don't see any books would be a plural or bare genitive reading, not э́ту кни́гу. | I see this book: a positive singular-object statement. This differs from the meaning or structure requested in this context. I see this book drops the negation.
 whyAnswerDemonstratesObjective=Я не ви́жу э́ту кни́гу. means I don't see this book, singular. э́ту кни́гу specifies one book and не supplies the negation.
+Я не ви́жу э́ту кни́гу. is the reference cue; I don't see this book, singular matches the requested meaning or structure. negation with one specified accusative object.
 contrastMembers=I don't see this book, singular | I don't see any books | I see this book
 relationKind=STATED_APPLICATION
 relationParticipantIds=prov-ca-repair-24-10815 | prov-ca-repair-24-10816 | prov-ca-repair-24-10819 | prov-ca-repair-24-10820
@@ -1840,7 +1868,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 1970d35b161a13155acb31a3ac3ae099f1fbecf2aafd48918d8a9d229a356c97
+- Content hash: 864300a0c5c761879a2a2c469f43fe4f88e49db785488114a44143cfa005bf49
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1849,10 +1877,11 @@ promptLetter=кто
 options=никто́ | ничто́ | не́кто
 answer=никто́
 feedback=The frozen source pairs the shown form "кто" with the admitted gloss "никто́" ("Отрицательные местоимения").
+кто is the reference cue; никто́ matches the requested meaning or structure. a negative pronoun referring to nobody.
 objectiveId=obj-u24-stand-ins
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "что" with the admitted gloss "ничто́" ("Отрицательные местоимения"). | The frozen source pairs the shown form "кто" with the admitted gloss "не́кто" ("называются предикативными").
+distractorRationales= | ничто́: a negative pronoun referring to nothing. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "что" with the admitted gloss "ничто́" ("Отрицательные местоимения"). | не́кто: an indefinite pronoun referring to an unspecified person. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "кто" with the admitted gloss "не́кто" ("называются предикативными").
 testedFeature=PRONOUN_NIKTO
 evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u24-stand-ins-0
@@ -1860,8 +1889,9 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u24-stand-ins-0-en
 distractorSourceIds= | prov-ex-u24-stand-ins-1-en | prov-ex-u24-stand-ins-2-en
-distractorDifference= | The frozen source pairs the shown form "что" with the admitted gloss "ничто́" ("Отрицательные местоимения"). | The frozen source pairs the shown form "кто" with the admitted gloss "не́кто" ("называются предикативными").
+distractorDifference= | ничто́: a negative pronoun referring to nothing. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "что" with the admitted gloss "ничто́" ("Отрицательные местоимения"). | не́кто: an indefinite pronoun referring to an unspecified person. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "кто" with the admitted gloss "не́кто" ("называются предикативными").
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "кто" with the admitted gloss "никто́" ("Отрицательные местоимения").
+кто is the reference cue; никто́ matches the requested meaning or structure. a negative pronoun referring to nobody.
 contrastMembers=никто́ | ничто́ | не́кто
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u24-stand-ins-0-ru | prov-ex-u24-stand-ins-0-en | prov-ex-u24-stand-ins-1-en | prov-ex-u24-stand-ins-2-en
@@ -1875,7 +1905,7 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 060b592ebacb710696425cb1841b6757ed4f04f97c0beae8c13b7d6f21944d90
+- Content hash: 14ed297dbfc511764249176c842a1027f14489ab275cb24ac217eeddfc9c09f0
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1884,10 +1914,11 @@ promptLetter=никто́
 options=не | ни- | никому
 answer=не
 feedback=The frozen source pairs the shown form "никто́" with the admitted gloss "не" ("отрицательной частицы не").
+никто́ is the reference cue; не matches the requested meaning or structure. the separate predicate-negation particle.
 objectiveId=obj-u24-concord
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "никто́" with the admitted gloss "ни-" ("Основным правилом"). | The frozen source pairs the shown form "никто́" with the admitted gloss "никому" ("Основным правилом").
+distractorRationales= | ни-: a negative-pronoun prefix. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "никто́" with the admitted gloss "ни-" ("Основным правилом"). | никому: a declined negative pronoun in the dative. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "никто́" with the admitted gloss "никому" ("Основным правилом").
 testedFeature=CONCORD_PARTICLE
 evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u24-concord-0
@@ -1895,8 +1926,9 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u24-concord-0-en
 distractorSourceIds= | prov-u24-concord-x-0 | prov-u24-concord-x-1
-distractorDifference= | The frozen source pairs the shown form "никто́" with the admitted gloss "ни-" ("Основным правилом"). | The frozen source pairs the shown form "никто́" with the admitted gloss "никому" ("Основным правилом").
+distractorDifference= | ни-: a negative-pronoun prefix. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "никто́" with the admitted gloss "ни-" ("Основным правилом"). | никому: a declined negative pronoun in the dative. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "никто́" with the admitted gloss "никому" ("Основным правилом").
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "никто́" with the admitted gloss "не" ("отрицательной частицы не").
+никто́ is the reference cue; не matches the requested meaning or structure. the separate predicate-negation particle.
 contrastMembers=не | ни- | никому
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u24-concord-0-ru | prov-ex-u24-concord-0-en | prov-u24-concord-x-0 | prov-u24-concord-x-1
@@ -1910,19 +1942,20 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 74eb8e6385b51b00e367d8dc437cfd2fa11a47468795b365c3e56b294ca43ca9
+- Content hash: 1031d21ba325597176be53675e5b89df63ca5dcd1a8624f1b9f08f9e62ca0a79
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which English meaning matches the shown sentence?
+prompt=The speaker would never agree. Which supplied English interpretation fits the sentence in that context?
 promptLetter=Не надо меня уговаривать.
 options=One should not persuade me | There is no need to persuade me
 answer=One should not persuade me
 feedback=The frozen source pairs the shown form "Не надо меня уговаривать." with the admitted gloss "One should not persuade me" ("as I would never agree to do something").
+Не надо меня уговаривать. is the reference cue; One should not persuade me matches the requested meaning or structure. the supplied interpretation where the speaker would never agree.
 objectiveId=obj-u24-word-order-contrast
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "Меня не надо уговаривать." with the admitted gloss "There is no need to persuade me" ("as I will do it anyway").
+distractorRationales= | There is no need to persuade me: the supplied interpretation where the speaker will do it anyway. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "Меня не надо уговаривать." with the admitted gloss "There is no need to persuade me" ("as I will do it anyway").
 testedFeature=WORD_ORDER_NEVER
 evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u24-word-order-contrast-0
@@ -1930,8 +1963,9 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u24-word-order-contrast-0-en
 distractorSourceIds= | prov-ex-u24-word-order-contrast-1-en
-distractorDifference= | The frozen source pairs the shown form "Меня не надо уговаривать." with the admitted gloss "There is no need to persuade me" ("as I will do it anyway").
+distractorDifference= | There is no need to persuade me: the supplied interpretation where the speaker will do it anyway. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "Меня не надо уговаривать." with the admitted gloss "There is no need to persuade me" ("as I will do it anyway").
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Не надо меня уговаривать." with the admitted gloss "One should not persuade me" ("as I would never agree to do something").
+Не надо меня уговаривать. is the reference cue; One should not persuade me matches the requested meaning or structure. the supplied interpretation where the speaker would never agree.
 contrastMembers=One should not persuade me | There is no need to persuade me
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u24-word-order-contrast-0-ru | prov-ex-u24-word-order-contrast-0-en | prov-ex-u24-word-order-contrast-1-en
@@ -1945,7 +1979,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-readyrussian-langgen3
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 141b1422d7f72094185130dd5ba4dc8fb5d5e24773df84267c4458e10437a475
+- Content hash: c395559e115dad3efe5c15a4c37340dfe60d71fe839b0983e7fdf3cab5c1e9a6
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1954,10 +1988,11 @@ promptLetter=Мне не холодно.
 options=To me it is not cold. | It is not to me that it is cold.
 answer=To me it is not cold.
 feedback=The frozen source pairs the shown form "Мне не холодно." with the admitted gloss "To me it is not cold.".
+Мне не холодно. is the reference cue; To me it is not cold. matches the requested meaning or structure. negation of the cold state for the experiencer.
 objectiveId=obj-u24-placement
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "Не мне холодно." with the admitted gloss "It is not to me that it is cold.". Moving the modifier in front of a different word produces that meaning.
+distractorRationales= | It is not to me that it is cold.: contrastive negation of the experiencer. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "Не мне холодно." with the admitted gloss "It is not to me that it is cold.". Moving the modifier in front of a different word produces that meaning.
 testedFeature=NEGATION_FOLLOWING_WORD
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u24-placement-0
@@ -1965,8 +2000,9 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u24-placement-0-en
 distractorSourceIds= | prov-ex-u24-placement-1-en
-distractorDifference= | The frozen source pairs the shown form "Не мне холодно." with the admitted gloss "It is not to me that it is cold.". Moving the modifier in front of a different word produces that meaning.
+distractorDifference= | It is not to me that it is cold.: contrastive negation of the experiencer. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "Не мне холодно." with the admitted gloss "It is not to me that it is cold.". Moving the modifier in front of a different word produces that meaning.
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Мне не холодно." with the admitted gloss "To me it is not cold.".
+Мне не холодно. is the reference cue; To me it is not cold. matches the requested meaning or structure. negation of the cold state for the experiencer.
 contrastMembers=To me it is not cold. | It is not to me that it is cold.
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u24-placement-0-ru | prov-ex-u24-placement-0-en | prov-ex-u24-placement-1-en
@@ -1980,19 +2016,20 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 16a1ba534a4954efa575ebfe1a4a50e0c78934840f496e3304d06dde5497cf34
+- Content hash: d00b60f0fc8aa199a6786d3138dd35bb9209425f22bc4645f00bd10ffaedc821
 
 kind=FORM_SELECTION
 language=en
-prompt=The frozen note says one example is omitted in the present form and uses the particle on its own. Which admitted line is that example?
+prompt=Which supplied sentence negates a noun predicate with the usual omitted present-tense copula?
 promptLetter=Вы говори́те?
 options=Он не студент | Нет, не говорю́ | Да, говорю́
 answer=Он не студент
-feedback=The frozen example He's not a student is the one omitted in the present form, with the particle on its own. Он не студент.
+feedback=The frozen example He's not a student is the one omitted in the present form, with the particle on its own.
+Вы говори́те? is the reference cue; Он не студент matches the requested meaning or structure. a negative noun predicate with an omitted present copula.
 objectiveId=obj-u24-verbal-ne
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen example No, I'm not speaking adds the particle before the speaking word. | The frozen example Yes, I'm speaking is the agreeing reply, without the particle.
+distractorRationales= | Нет, не говорю́: a negative first-person speaking reply. This differs from the meaning or structure requested in this context. The frozen example No, I'm not speaking adds the particle before the speaking word. | Да, говорю́: an affirmative speaking reply. This differs from the meaning or structure requested in this context. The frozen example Yes, I'm speaking is the agreeing reply, without the particle.
 testedFeature=PARTICLE_ALONE
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u24-verbal-ne-1
@@ -2000,8 +2037,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u24-verbal-ne-3-ru
 distractorSourceIds= | prov-ex-u24-verbal-ne-1-ru | prov-ex-u24-verbal-ne-0-ru
-distractorDifference= | This example adds the particle before the speaking word. | This example is the agreeing reply, without the particle.
+distractorDifference= | Нет, не говорю́: a negative first-person speaking reply. This differs from the meaning or structure requested in this context. The frozen example No, I'm not speaking adds the particle before the speaking word. | Да, говорю́: an affirmative speaking reply. This differs from the meaning or structure requested in this context. The frozen example Yes, I'm speaking is the agreeing reply, without the particle.
 whyAnswerDemonstratesObjective=The frozen example He's not a student is the one omitted in the present form, with the particle on its own.
+Вы говори́те? is the reference cue; Он не студент matches the requested meaning or structure. a negative noun predicate with an omitted present copula.
 contrastMembers=Он не студент | Нет, не говорю́ | Да, говорю́
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u24-verbal-ne-2-ru | prov-ex-u24-verbal-ne-3-ru | prov-ex-u24-verbal-ne-1-ru | prov-ex-u24-verbal-ne-0-ru
@@ -2015,19 +2053,20 @@ responseKind=RUSSIAN_CLAUSE
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: dbc787c6318360f6cd416f9b6c1c94db00d268591269a367316f286fd5194678
+- Content hash: d56ef9d98e5f98bba15a98348c8af41d94a362c2cfd677b28cc358f700a51317
 
 kind=FORM_SELECTION
 language=en
-prompt=The frozen example Boris isn't coming places the particle before the coming word. Which admitted line is that example?
+prompt=Which complete sentence negates Boris's coming?
 promptLetter=Нет, не говорю́
 options=Борис не приходит | не студент | не говорю́
 answer=Борис не приходит
-feedback=The frozen example Boris isn't coming places the particle before the coming word. Борис не приходит.
+feedback=The frozen example Boris isn't coming places the particle before the coming word.
+Нет, не говорю́ is the reference cue; Борис не приходит matches the requested meaning or structure. a complete negative sentence about Boris coming.
 objectiveId=obj-u24-verbal-ne
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen example He's not a student uses the particle on its own because the present form is omitted. | The frozen example No, I'm not speaking places the particle before the speaking word, not the coming word.
+distractorRationales= | не студент: a negative student-predicate fragment. This differs from the meaning or structure requested in this context. The frozen example He's not a student uses the particle on its own because the present form is omitted. | не говорю́: a negative first-person speaking fragment. This differs from the meaning or structure requested in this context. The frozen example No, I'm not speaking places the particle before the speaking word, not the coming word.
 testedFeature=PARTICLE_BEFORE_COMING
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u24-verbal-ne-2
@@ -2035,8 +2074,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u24-verbal-ne-4-ru
 distractorSourceIds= | prov-u24-verbal-ne-x-0 | prov-ex-u24-verbal-ne-1-ru-r1
-distractorDifference= | This short line uses the particle on its own with the student word. | This short line places the particle before the speaking word.
+distractorDifference= | не студент: a negative student-predicate fragment. This differs from the meaning or structure requested in this context. The frozen example He's not a student uses the particle on its own because the present form is omitted. | не говорю́: a negative first-person speaking fragment. This differs from the meaning or structure requested in this context. The frozen example No, I'm not speaking places the particle before the speaking word, not the coming word.
 whyAnswerDemonstratesObjective=The frozen example Boris isn't coming places the particle before the coming word.
+Нет, не говорю́ is the reference cue; Борис не приходит matches the requested meaning or structure. a complete negative sentence about Boris coming.
 contrastMembers=Борис не приходит | не студент | не говорю́
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u24-verbal-ne-1-ru | prov-ex-u24-verbal-ne-4-ru | prov-u24-verbal-ne-x-0 | prov-ex-u24-verbal-ne-1-ru-r1
@@ -2050,19 +2090,20 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 1121ffdde76512a61ef493fc42e9b360c242c7f23fdcf2d10cec56e82252aefa
+- Content hash: 9186fd4608876d2f3459f4d0a49834e9e51d76e194ae2e6aff28e76c8a7e5770
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=The frozen have-phrase uses one form before it is replaced. Which admitted form is the one that means exists?
+prompt=Which form asserts existence instead of the shown negative expression?
 promptLetter=нет
 options=есть | не | Да
 answer=есть
-feedback=The frozen note uses this form to mean 'exists' in the have-phrase, before the replacement. есть.
+feedback=The frozen note uses this form to mean 'exists' in the have-phrase, before the replacement.
+нет is the reference cue; есть matches the requested meaning or structure. existence in the positive pattern.
 objectiveId=obj-u24-absence
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen note adds this particle before a word. It is not the form that means exists. | The frozen example Yes, I'm speaking uses this as the agreeing reply.
+distractorRationales= | не: the separate predicate-negation particle. This differs from the meaning or structure requested in this context. The frozen note adds this particle before a word. It is not the form that means exists. | Да: a yes reply. This differs from the meaning or structure requested in this context. The frozen example Yes, I'm speaking uses this as the agreeing reply.
 testedFeature=EXISTS_WORD
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u24-absence-1
@@ -2070,8 +2111,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u24-absence-0-ru
 distractorSourceIds= | prov-ex-u24-absence-2-ru | prov-u24-absence-x-0
-distractorDifference= | This particle is not the form that means exists. | This token is the agreeing reply, not the exists word.
+distractorDifference= | не: the separate predicate-negation particle. This differs from the meaning or structure requested in this context. The frozen note adds this particle before a word. It is not the form that means exists. | Да: a yes reply. This differs from the meaning or structure requested in this context. The frozen example Yes, I'm speaking uses this as the agreeing reply.
 whyAnswerDemonstratesObjective=The frozen note uses this form to mean 'exists' in the have-phrase, before the replacement.
+нет is the reference cue; есть matches the requested meaning or structure. existence in the positive pattern.
 contrastMembers=есть | не | Да
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u24-absence-1-ru | prov-ex-u24-absence-0-ru | prov-ex-u24-absence-2-ru | prov-u24-absence-x-0
@@ -2085,19 +2127,20 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: a7954b6876d4579a0128ef1712f9697f6eb11ebcb90566c05625db4b818af0f4
+- Content hash: 70a279d051ebcc8572728aa8c9fd298094aefbe74d087365e2ef359ef3a40607
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=The frozen note keeps the particle apart from the have-phrase replacement. Which admitted form replaces the exists word?
+prompt=Which form expresses absence rather than merely negating the next predicate?
 promptLetter=не
 options=нет | есть | Да
 answer=нет
-feedback=The frozen note says this replacement has a different meaning from the reply that means no. нет.
+feedback=The frozen note says this replacement has a different meaning from the reply that means no.
+не is the reference cue; нет matches the requested meaning or structure. absence in the existence pattern.
 objectiveId=obj-u24-absence
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen note uses this form to mean 'exists' before replacing it. | The frozen example Yes, I'm speaking uses this as the agreeing reply.
+distractorRationales= | есть: existence in the positive pattern. This differs from the meaning or structure requested in this context. The frozen note uses this form to mean 'exists' before replacing it. | Да: a yes reply. This differs from the meaning or structure requested in this context. The frozen example Yes, I'm speaking uses this as the agreeing reply.
 testedFeature=EXISTS_REPLACEMENT
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u24-absence-2
@@ -2105,8 +2148,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u24-absence-1-ru
 distractorSourceIds= | prov-ex-u24-absence-0-ru | prov-u24-absence-x-0
-distractorDifference= | This form means exists, so it is the form being replaced. | This token is the agreeing reply, not the replacement.
+distractorDifference= | есть: existence in the positive pattern. This differs from the meaning or structure requested in this context. The frozen note uses this form to mean 'exists' before replacing it. | Да: a yes reply. This differs from the meaning or structure requested in this context. The frozen example Yes, I'm speaking uses this as the agreeing reply.
 whyAnswerDemonstratesObjective=The frozen note says this replacement has a different meaning from the reply that means no.
+не is the reference cue; нет matches the requested meaning or structure. absence in the existence pattern.
 contrastMembers=нет | есть | Да
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u24-absence-2-ru | prov-ex-u24-absence-1-ru | prov-ex-u24-absence-0-ru | prov-u24-absence-x-0
@@ -2120,7 +2164,7 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 7bb7c698eb40e73bd2c6712de93cf6ed85dd9e8f122448d3c7af56808be5f339
+- Content hash: f0a81fb16b3ec61c7e014bcf4f49730b5f812f4979f9a1b74bac94aa1e504320
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2129,10 +2173,11 @@ promptLetter=Я не ви́жу кни́гу
 options=I don't see the book | I don't see any books
 answer=I don't see the book
 feedback=The frozen source pairs the shown form "Я не ви́жу кни́гу" with the admitted gloss "I don't see the book" ("I don't see the book").
+Я не ви́жу кни́гу is the reference cue; I don't see the book matches the requested meaning or structure. the supplied singular accusative reading.
 objectiveId=obj-u24-alternation
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "Я не ви́жу кни́ги" with the admitted gloss "I don't see any books" ("I don't see any books").
+distractorRationales= | I don't see any books is the supplied plural reading, illustrated here by Я не ви́жу книг. It differs from the singular-object reading requested by this cue.
 testedFeature=NEGATION_THE
 evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u24-alternation-1
@@ -2140,8 +2185,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u24-alternation-1-en
 distractorSourceIds= | prov-ex-u24-alternation-0-en
-distractorDifference= | The frozen source pairs the shown form "Я не ви́жу кни́ги" with the admitted gloss "I don't see any books" ("I don't see any books").
+distractorDifference= | I don't see any books is the supplied plural reading, illustrated here by Я не ви́жу книг. It differs from the singular-object reading requested by this cue.
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Я не ви́жу кни́гу" with the admitted gloss "I don't see the book" ("I don't see the book").
+Я не ви́жу кни́гу is the reference cue; I don't see the book matches the requested meaning or structure. the supplied singular accusative reading.
 contrastMembers=I don't see the book | I don't see any books
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u24-alternation-1-ru | prov-ex-u24-alternation-1-en | prov-ex-u24-alternation-0-en
@@ -2155,7 +2201,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 2e4a337fc9dca63106f3b56219a559fe1ebb6b7114fcf7e812730e63ca703a7c
+- Content hash: 8377b759088b38aa2567cdfa091b63321330e6fe98eb3ec3475588fc596cd6d8
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2164,10 +2210,11 @@ promptLetter=Я не ви́жу книг.
 options=I don't see any books | I don't see the one book | I see the books
 answer=I don't see any books
 feedback=Я не ви́жу книг. means I don't see any books. книг is genitive plural, and не supplies the negation.
+Я не ви́жу книг. is the reference cue; I don't see any books matches the requested meaning or structure. the explicit genitive-plural reading.
 objectiveId=obj-u24-alternation
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | I don't see the one book would need a singular object such as э́ту кни́гу. | I see the books drops the negation.
+distractorRationales= | I don't see the one book: a singular-object reading. This differs from the meaning or structure requested in this context. I don't see the one book would need a singular object such as э́ту кни́гу. | I see the books: a positive plural-object statement. This differs from the meaning or structure requested in this context. I see the books drops the negation.
 testedFeature=PLURAL_NEGATED_GENITIVE
 evidenceMode=STATED_APPLICATION
 contrastSetId=u24-alternation-2
@@ -2175,8 +2222,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ca-repair-24-10828
 distractorSourceIds= | prov-ca-repair-24-10831 | prov-ca-repair-24-10832
-distractorDifference= | I don't see the one book would need a singular object such as э́ту кни́гу. | I see the books drops the negation.
+distractorDifference= | I don't see the one book: a singular-object reading. This differs from the meaning or structure requested in this context. I don't see the one book would need a singular object such as э́ту кни́гу. | I see the books: a positive plural-object statement. This differs from the meaning or structure requested in this context. I see the books drops the negation.
 whyAnswerDemonstratesObjective=Я не ви́жу книг. means I don't see any books. книг is genitive plural, and не supplies the negation.
+Я не ви́жу книг. is the reference cue; I don't see any books matches the requested meaning or structure. the explicit genitive-plural reading.
 contrastMembers=I don't see any books | I don't see the one book | I see the books
 relationKind=STATED_APPLICATION
 relationParticipantIds=prov-ca-repair-24-10827 | prov-ca-repair-24-10828 | prov-ca-repair-24-10831 | prov-ca-repair-24-10832
@@ -2190,7 +2238,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: fa5ccaebd719ff4911e68c56068aa0d149d31704b0e84323ff860ef9521f6789
+- Content hash: fcc02e5279c189beb3b628483cbac1cf3631ac42f01c8d9de122a0a5b67a3c2f
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2199,10 +2247,11 @@ promptLetter=что
 options=ничто́ | не́что | никто́
 answer=ничто́
 feedback=The frozen source pairs the shown form "что" with the admitted gloss "ничто́" ("Отрицательные местоимения").
+что is the reference cue; ничто́ matches the requested meaning or structure. a negative pronoun referring to nothing.
 objectiveId=obj-u24-stand-ins
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "что" with the admitted gloss "не́что" ("называются предикативными"). | The frozen source pairs the shown form "кто" with the admitted gloss "никто́" ("Отрицательные местоимения").
+distractorRationales= | не́что: an indefinite pronoun referring to an unspecified thing. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "что" with the admitted gloss "не́что" ("называются предикативными"). | никто́: a negative pronoun referring to nobody. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "кто" with the admitted gloss "никто́" ("Отрицательные местоимения").
 testedFeature=PRONOUN_NICHTO
 evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u24-stand-ins-1
@@ -2210,8 +2259,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u24-stand-ins-1-en
 distractorSourceIds= | prov-u24-stand-ins-x-1 | prov-ex-u24-stand-ins-0-en
-distractorDifference= | The frozen source pairs the shown form "что" with the admitted gloss "не́что" ("называются предикативными"). | The frozen source pairs the shown form "кто" with the admitted gloss "никто́" ("Отрицательные местоимения").
+distractorDifference= | не́что: an indefinite pronoun referring to an unspecified thing. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "что" with the admitted gloss "не́что" ("называются предикативными"). | никто́: a negative pronoun referring to nobody. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "кто" with the admitted gloss "никто́" ("Отрицательные местоимения").
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "что" with the admitted gloss "ничто́" ("Отрицательные местоимения").
+что is the reference cue; ничто́ matches the requested meaning or structure. a negative pronoun referring to nothing.
 contrastMembers=ничто́ | не́что | никто́
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u24-stand-ins-1-ru | prov-ex-u24-stand-ins-1-en | prov-u24-stand-ins-x-1 | prov-ex-u24-stand-ins-0-en
@@ -2225,7 +2275,7 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 10e93f8aae0790d7cf499d01edcf6e0597785cf05e97e420cbc110bbce6970a6
+- Content hash: 394655156e4322033ddbd71182ee5a84b99e7254554d211953aed03f077857a9
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2234,10 +2284,11 @@ promptLetter=не́кого спросить
 options=there is nobody to ask | an unspecified person | there is nothing to ask
 answer=there is nobody to ask
 feedback=не́кого спросить means there is nobody to ask. не́кого expresses absence of a person available for the infinitive action.
+не́кого спросить is the reference cue; there is nobody to ask matches the requested meaning or structure. absence of a person available for the infinitive action.
 objectiveId=obj-u24-stand-ins
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | an unspecified person is the reading of не́кто, not of не́кого. | there is nothing to ask would be a нечего construction, not не́кого.
+distractorRationales= | an unspecified person: indefinite reference to a person. This differs from the meaning or structure requested in this context. an unspecified person is the reading of не́кто, not of не́кого. | there is nothing to ask: absence of a thing for the action. This differs from the meaning or structure requested in this context. there is nothing to ask would be a нечего construction, not не́кого.
 testedFeature=NEGATIVE_ABSENCE_NEKOGO
 evidenceMode=STATED_APPLICATION
 contrastSetId=u24-stand-ins-2
@@ -2245,8 +2296,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ca-u24-absence-participant-1
 distractorSourceIds= | prov-ca-u24-absence-participant-2 | prov-ca-u24-absence-participant-3
-distractorDifference= | an unspecified person is the reading of не́кто, not of не́кого. | there is nothing to ask would be a нечего construction, not не́кого.
+distractorDifference= | an unspecified person: indefinite reference to a person. This differs from the meaning or structure requested in this context. an unspecified person is the reading of не́кто, not of не́кого. | there is nothing to ask: absence of a thing for the action. This differs from the meaning or structure requested in this context. there is nothing to ask would be a нечего construction, not не́кого.
 whyAnswerDemonstratesObjective=не́кого спросить means there is nobody to ask. не́кого expresses absence of a person available for the infinitive action.
+не́кого спросить is the reference cue; there is nobody to ask matches the requested meaning or structure. absence of a person available for the infinitive action.
 contrastMembers=there is nobody to ask | an unspecified person | there is nothing to ask
 relationKind=STATED_APPLICATION
 relationParticipantIds=prov-ca-u24-absence-participant-0 | prov-ca-u24-absence-participant-1 | prov-ca-u24-absence-participant-2 | prov-ca-u24-absence-participant-3
@@ -2260,7 +2312,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 5399d026e2d357d5462a2bcf7b6b4e46e5542ce9101528ee6de88f0ae777a472
+- Content hash: c9725c126ba344709bad3ba9a0d6cac3a66b16d7efe4d5c5bd755e00674d484f
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2269,10 +2321,11 @@ promptLetter=ничто́
 options=не | ни- | никому
 answer=не
 feedback=The frozen source pairs the shown form "ничто́" with the admitted gloss "не" ("отрицательной частицы не").
+ничто́ is the reference cue; не matches the requested meaning or structure. the separate predicate-negation particle.
 objectiveId=obj-u24-concord
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "никто́" with the admitted gloss "ни-" ("Основным правилом"). | The frozen source pairs the shown form "никто́" with the admitted gloss "никому" ("Основным правилом").
+distractorRationales= | ни-: a negative-pronoun prefix. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "никто́" with the admitted gloss "ни-" ("Основным правилом"). | никому: a declined negative pronoun in the dative. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "никто́" with the admitted gloss "никому" ("Основным правилом").
 testedFeature=CONCORD_NICHTO
 evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u24-concord-1
@@ -2280,8 +2333,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u24-concord-0-en
 distractorSourceIds= | prov-u24-concord-x-0 | prov-u24-concord-x-1
-distractorDifference= | The frozen source pairs the shown form "никто́" with the admitted gloss "ни-" ("Основным правилом"). | The frozen source pairs the shown form "никто́" with the admitted gloss "никому" ("Основным правилом").
+distractorDifference= | ни-: a negative-pronoun prefix. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "никто́" with the admitted gloss "ни-" ("Основным правилом"). | никому: a declined negative pronoun in the dative. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "никто́" with the admitted gloss "никому" ("Основным правилом").
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "ничто́" with the admitted gloss "не" ("отрицательной частицы не").
+ничто́ is the reference cue; не matches the requested meaning or structure. the separate predicate-negation particle.
 contrastMembers=не | ни- | никому
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u24-concord-1-ru | prov-ex-u24-concord-0-en | prov-u24-concord-x-0 | prov-u24-concord-x-1
@@ -2295,7 +2349,7 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-ruwiki-otritsatelnye-141256493
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 572c2990b391d00d2f727e297c7a4f1e50bef9ddb64d24d3903d73e0d96d07e3
+- Content hash: ef0108274c5077f2a50fb23386da62980a654a99ab20b319c2a20154b52b3951
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2304,10 +2358,11 @@ promptLetter=никто́
 options=не | никому | ни-
 answer=не
 feedback=The frozen source pairs the shown form "никто́" with the admitted gloss "не" ("отрицательной частицы не").
+никто́ is the reference cue; не matches the requested meaning or structure. the separate predicate-negation particle.
 objectiveId=obj-u24-concord
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "никто́" with the admitted gloss "никому" ("Основным правилом"). | The frozen source pairs the shown form "никто́" with the admitted gloss "ни-" ("Основным правилом").
+distractorRationales= | никому: a declined negative pronoun in the dative. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "никто́" with the admitted gloss "никому" ("Основным правилом"). | ни-: a negative-pronoun prefix. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "никто́" with the admitted gloss "ни-" ("Основным правилом").
 testedFeature=CONCORD_AGAIN
 evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u24-concord-2
@@ -2315,8 +2370,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u24-concord-0-en
 distractorSourceIds= | prov-u24-concord-x-1 | prov-u24-concord-x-0
-distractorDifference= | The frozen source pairs the shown form "никто́" with the admitted gloss "никому" ("Основным правилом"). | The frozen source pairs the shown form "никто́" with the admitted gloss "ни-" ("Основным правилом").
+distractorDifference= | никому: a declined negative pronoun in the dative. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "никто́" with the admitted gloss "никому" ("Основным правилом"). | ни-: a negative-pronoun prefix. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "никто́" with the admitted gloss "ни-" ("Основным правилом").
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "никто́" with the admitted gloss "не" ("отрицательной частицы не").
+никто́ is the reference cue; не matches the requested meaning or structure. the separate predicate-negation particle.
 contrastMembers=не | никому | ни-
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u24-concord-0-ru | prov-ex-u24-concord-0-en | prov-u24-concord-x-1 | prov-u24-concord-x-0
@@ -2330,19 +2386,20 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: fb95c5ae1e9a61c51663f03730182a88aa5537b694f9f9aa279c421f6997e19b
+- Content hash: ef42728568289b532eb98c53081d9f324c0d3caea2b8b88af1330775104867aa
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which English meaning matches the shown sentence?
+prompt=The speaker will do it anyway. Which supplied English interpretation fits the sentence in that context?
 promptLetter=Меня не надо уговаривать.
 options=There is no need to persuade me | One should not persuade me
 answer=There is no need to persuade me
 feedback=The frozen source pairs the shown form "Меня не надо уговаривать." with the admitted gloss "There is no need to persuade me" ("as I will do it anyway").
+Меня не надо уговаривать. is the reference cue; There is no need to persuade me matches the requested meaning or structure. the supplied interpretation where the speaker will do it anyway.
 objectiveId=obj-u24-word-order-contrast
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "Не надо меня уговаривать." with the admitted gloss "One should not persuade me" ("as I would never agree to do something").
+distractorRationales= | One should not persuade me: the supplied interpretation where the speaker would never agree. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "Не надо меня уговаривать." with the admitted gloss "One should not persuade me" ("as I would never agree to do something").
 testedFeature=WORD_ORDER_ANYWAY
 evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u24-word-order-contrast-1
@@ -2350,8 +2407,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u24-word-order-contrast-1-en
 distractorSourceIds= | prov-ex-u24-word-order-contrast-0-en
-distractorDifference= | The frozen source pairs the shown form "Не надо меня уговаривать." with the admitted gloss "One should not persuade me" ("as I would never agree to do something").
+distractorDifference= | One should not persuade me: the supplied interpretation where the speaker would never agree. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "Не надо меня уговаривать." with the admitted gloss "One should not persuade me" ("as I would never agree to do something").
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Меня не надо уговаривать." with the admitted gloss "There is no need to persuade me" ("as I will do it anyway").
+Меня не надо уговаривать. is the reference cue; There is no need to persuade me matches the requested meaning or structure. the supplied interpretation where the speaker will do it anyway.
 contrastMembers=There is no need to persuade me | One should not persuade me
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u24-word-order-contrast-1-ru | prov-ex-u24-word-order-contrast-1-en | prov-ex-u24-word-order-contrast-0-en
@@ -2365,19 +2423,20 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: f59d1d189c03c765b6a4786bb912a202f6585adaa46f46c78d40ab63e871bc96
+- Content hash: 9d7ad0ce831daa53e208ec2a4ed76c07153d31c4cb9cb48d91d8205e6565e8e2
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which English meaning matches the shown sentence?
+prompt=The speaker would never agree. Which supplied English interpretation fits the sentence in that context?
 promptLetter=Не надо меня уговаривать.
 options=One should not persuade me | There is no need to persuade me
 answer=One should not persuade me
 feedback=The frozen source pairs the shown form "Не надо меня уговаривать." with the admitted gloss "One should not persuade me" ("as I would never agree to do something").
+Не надо меня уговаривать. is the reference cue; One should not persuade me matches the requested meaning or structure. the supplied interpretation where the speaker would never agree.
 objectiveId=obj-u24-word-order-contrast
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "Меня не надо уговаривать." with the admitted gloss "There is no need to persuade me" ("as I will do it anyway").
+distractorRationales= | There is no need to persuade me: the supplied interpretation where the speaker will do it anyway. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "Меня не надо уговаривать." with the admitted gloss "There is no need to persuade me" ("as I will do it anyway").
 testedFeature=WORD_ORDER_NEVER_AGAIN
 evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u24-word-order-contrast-2
@@ -2385,8 +2444,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u24-word-order-contrast-0-en
 distractorSourceIds= | prov-ex-u24-word-order-contrast-1-en
-distractorDifference= | The frozen source pairs the shown form "Меня не надо уговаривать." with the admitted gloss "There is no need to persuade me" ("as I will do it anyway").
+distractorDifference= | There is no need to persuade me: the supplied interpretation where the speaker will do it anyway. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "Меня не надо уговаривать." with the admitted gloss "There is no need to persuade me" ("as I will do it anyway").
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Не надо меня уговаривать." with the admitted gloss "One should not persuade me" ("as I would never agree to do something").
+Не надо меня уговаривать. is the reference cue; One should not persuade me matches the requested meaning or structure. the supplied interpretation where the speaker would never agree.
 contrastMembers=One should not persuade me | There is no need to persuade me
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u24-word-order-contrast-0-ru | prov-ex-u24-word-order-contrast-0-en | prov-ex-u24-word-order-contrast-1-en
@@ -2400,7 +2460,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-readyrussian-langgen3
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 3d329e4ba4900ae992efd4170622e8e59a7ba430ee8a0356d9ab2093200a0d92
+- Content hash: a320369242c400ab3781d240ffdf48e41368af36b26a6e6827bef4c8223b9ec6
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2409,10 +2469,11 @@ promptLetter=Не мне холодно.
 options=It is not to me that it is cold. | To me it is not cold.
 answer=It is not to me that it is cold.
 feedback=The frozen source pairs the shown form "Не мне холодно." with the admitted gloss "It is not to me that it is cold.".
+Не мне холодно. is the reference cue; It is not to me that it is cold. matches the requested meaning or structure. contrastive negation of the experiencer.
 objectiveId=obj-u24-placement
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "Мне не холодно." with the admitted gloss "To me it is not cold.". That placement negates the following word.
+distractorRationales= | To me it is not cold.: negation of the cold state for the experiencer. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "Мне не холодно." with the admitted gloss "To me it is not cold.". That placement negates the following word.
 testedFeature=NEGATION_SCOPE_CONTRAST
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u24-placement-1
@@ -2420,8 +2481,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u24-placement-1-en
 distractorSourceIds= | prov-ex-u24-placement-0-en
-distractorDifference= | The frozen source pairs the shown form "Мне не холодно." with the admitted gloss "To me it is not cold.". That placement negates the following word.
+distractorDifference= | To me it is not cold.: negation of the cold state for the experiencer. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "Мне не холодно." with the admitted gloss "To me it is not cold.". That placement negates the following word.
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Не мне холодно." with the admitted gloss "It is not to me that it is cold.".
+Не мне холодно. is the reference cue; It is not to me that it is cold. matches the requested meaning or structure. contrastive negation of the experiencer.
 contrastMembers=It is not to me that it is cold. | To me it is not cold.
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u24-placement-1-ru | prov-ex-u24-placement-1-en | prov-ex-u24-placement-0-en
@@ -2435,7 +2497,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-readyrussian-langgen3
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 7c393ff94fa042f33a88ce464350120e6b923bcb45e8275b9d6253fc7bdba015
+- Content hash: 03991fd8bd3d1e4d42981a158978ad9cd3776aa5821a13c3834287341713b2cc
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2444,10 +2506,11 @@ promptLetter=Не мне холодно.
 options=It is not to me that it is cold. | I am not cold.
 answer=It is not to me that it is cold.
 feedback=The frozen source pairs the shown form "Не мне холодно." with the admitted gloss "It is not to me that it is cold.".
+Не мне холодно. is the reference cue; It is not to me that it is cold. matches the requested meaning or structure. contrastive negation of the experiencer.
 objectiveId=obj-u24-placement
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "Мне не холодно." with the admitted gloss "I am not cold.". That parenthetical belongs to the other placement.
+distractorRationales= | I am not cold.: negation of the cold state for the speaker. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "Мне не холодно." with the admitted gloss "I am not cold.". That parenthetical belongs to the other placement.
 testedFeature=NEGATION_SCOPE_NOT_COLD
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u24-placement-2
@@ -2455,8 +2518,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u24-placement-1-en
 distractorSourceIds= | prov-u24-placement-x-1
-distractorDifference= | The frozen source pairs the shown form "Мне не холодно." with the admitted gloss "I am not cold.". That parenthetical belongs to the other placement.
+distractorDifference= | I am not cold.: negation of the cold state for the speaker. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "Мне не холодно." with the admitted gloss "I am not cold.". That parenthetical belongs to the other placement.
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Не мне холодно." with the admitted gloss "It is not to me that it is cold.".
+Не мне холодно. is the reference cue; It is not to me that it is cold. matches the requested meaning or structure. contrastive negation of the experiencer.
 contrastMembers=It is not to me that it is cold. | I am not cold.
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u24-placement-1-ru | prov-ex-u24-placement-1-en | prov-u24-placement-x-1
@@ -6706,6 +6770,3656 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-ca-u24-instruction-absence-guided`
+
+- Objectives: obj-u24-absence
+- Sessions: u24-s-orient, u24-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 63b18210a42d0203e0a11933ba9ee0cbbbbb9cee272f76b2f027253c0ab80ee3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-absence:absence-guided
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Read the requested negative meaning, structure or stated context. Use the complete explanation above. A missed check returns to that full explanation.
+shippedText=Read the requested negative meaning, structure or stated context. Use the complete explanation above. A missed check returns to that full explanation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ce5285ecad4836c6ce916ebdc54c8f7a80f50ad2da9eb2ca10c99137702fc0fc
+contentHash=d18b41b8bcd4746482d4c3057e87471550a3ffbc4c2730a4ae698288efd025d6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-absence-objective`
+
+- Objectives: obj-u24-absence
+- Sessions: u24-s-orient, u24-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0c851fa615d553591671e0914926dab160ce75f2ce58c55809e432b06286b4ae
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-absence:absence-objective
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Distinguish existence, absence and the negative particle
+shippedText=Distinguish existence, absence and the negative particle
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b0ec1ac4fbff8ce859ced09d87e25c8a97bcdd1fbd9842e5a2e1c1641d43096c
+contentHash=19480bf3680d0bba372e37afec142394965165a29fdb61d2dbce87f3b545d09e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-absence-rem-body`
+
+- Objectives: obj-u24-absence
+- Sessions: u24-s-orient, u24-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 738019f1c1dbb26fd71820e7bde9c6a3d0061ce511a53affd72588546d3d8d53
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-absence:absence-rem-body
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+есть means exists in the supplied existence pattern. нет expresses absence in its negative counterpart. The same word can also be a no reply, but that conversational use is different from the absence construction. Да is a yes reply. The separate particle не negates a predicate; it is not the standalone replacement for existence in this pattern.
+
+If it isn't there, we use нет followed by the genitive. In this construction the person or thing whose existence or possession is denied is expressed in the genitive. Do not replace the existence word with the separate particle and leave the construction unchanged. The checks identify the supplied existence/absence forms, not independently produce a genitive noun phrase.
+
+не — nye in the retained example is a pronunciation/transliteration label, not an English meaning. This particle is different from нет expressing absence and from есть asserting existence. A reference cue can be shown while the question asks for a contrasting form; read whether the question asks for existence, absence or ordinary predicate negation.
+shippedText=есть means exists in the supplied existence pattern. нет expresses absence in its negative counterpart. The same word can also be a no reply, but that conversational use is different from the absence construction. Да is a yes reply. The separate particle не negates a predicate; it is not the standalone replacement for existence in this pattern.
+
+If it isn't there, we use нет followed by the genitive. In this construction the person or thing whose existence or possession is denied is expressed in the genitive. Do not replace the existence word with the separate particle and leave the construction unchanged. The checks identify the supplied existence/absence forms, not independently produce a genitive noun phrase.
+
+не — nye in the retained example is a pronunciation/transliteration label, not an English meaning. This particle is different from нет expressing absence and from есть asserting existence. A reference cue can be shown while the question asks for a contrasting form; read whether the question asks for existence, absence or ordinary predicate negation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=67d65f3e152e8937b6149e841d2854b6bc4f23df2f80c4f97cbcb583175fe298
+contentHash=bd0b1289ccbad4ff65682c0ad0787bc846f27c728c7428cec08ce83c2c403397
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-absence-rem-title`
+
+- Objectives: obj-u24-absence
+- Sessions: u24-s-orient, u24-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9e309824c3e6e47b3875deb9e9c802155cfaac32075cddea884ebe913bdb0b8e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-absence:absence-rem-title
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Review the complete negation contrast
+shippedText=Review the complete negation contrast
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b76c6eec21fd119289c9533234cd5984570b1d65c2abadba255f1b892acafd69
+contentHash=6c2dc9ac99f37fbca90657378c73311c9526571a054fa4928e9c8eeaf25a7a16
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-absence-teach-1-body`
+
+- Objectives: obj-u24-absence
+- Sessions: u24-s-orient, u24-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 52f42b74cf9e0cd7290bfb9afa1248411d1d49ce1ee546827ca493d3b81ebfd3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-absence:absence-teach-1-body
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+есть means exists in the supplied existence pattern. нет expresses absence in its negative counterpart. The same word can also be a no reply, but that conversational use is different from the absence construction. Да is a yes reply. The separate particle не negates a predicate; it is not the standalone replacement for existence in this pattern.
+shippedText=есть means exists in the supplied existence pattern. нет expresses absence in its negative counterpart. The same word can also be a no reply, but that conversational use is different from the absence construction. Да is a yes reply. The separate particle не negates a predicate; it is not the standalone replacement for existence in this pattern.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c3c6cbea62c1db1c0010520e6a5e527e1ce4ebca431fcee85710fdbe3ff2a62c
+contentHash=1aa855ca2b1d9e958057e4680fc517d9d11bd482853158f1158c3e8ab8a8fbf7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-absence-teach-1-title`
+
+- Objectives: obj-u24-absence
+- Sessions: u24-s-orient, u24-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4bbae824f50ba6e608dc608328e08df8be5c34fdf534f038d872d0897746252e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-absence:absence-teach-1-title
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Existence and absence are not yes and no replies
+shippedText=Existence and absence are not yes and no replies
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ef9ae51aadf73a60c04f3cdc598e139e1ed247d9d936da313d4179893685ea13
+contentHash=f6c1ac9469971de8c3843336d80016123a3698fb3061cdac2d277a71a48469dc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-absence-teach-2-body`
+
+- Objectives: obj-u24-absence
+- Sessions: u24-s-orient, u24-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b8d04e488a9542d8505c00aa4fde6233e12a09f4c002026eb795b112dd1113b6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-absence:absence-teach-2-body
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+If it isn't there, we use нет followed by the genitive. In this construction the person or thing whose existence or possession is denied is expressed in the genitive. Do not replace the existence word with the separate particle and leave the construction unchanged. The checks identify the supplied existence/absence forms, not independently produce a genitive noun phrase.
+shippedText=If it isn't there, we use нет followed by the genitive. In this construction the person or thing whose existence or possession is denied is expressed in the genitive. Do not replace the existence word with the separate particle and leave the construction unchanged. The checks identify the supplied existence/absence forms, not independently produce a genitive noun phrase.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=36666065725dcc11944538be12fb9329f1817e0f881cbd3f5ef05165f28f9c5f
+contentHash=acb9ee194756e661362dbf2e233881b37b59cdb8ad1af4a1f43b705d39964c6f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-absence-teach-2-title`
+
+- Objectives: obj-u24-absence
+- Sessions: u24-s-orient, u24-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b0cd97b139611b9e28715323f31807c39ce67ac8fda9fbbd58a092e39f6b7870
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-absence:absence-teach-2-title
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+The noun after the absence construction
+shippedText=The noun after the absence construction
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a5e3309a9d9e7cda5fbfba83b53d933d1ff26ed88785a66b3161d4a313bce18c
+contentHash=fa4dcc86d622e2fee749d4701680503c44436b338c2a4f3df1844f1b1fa535f4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-absence-teach-3-body`
+
+- Objectives: obj-u24-absence
+- Sessions: u24-s-orient, u24-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cb166c561a830ce99899fa630b8711354d1da3aec977499d1bfd3105ee2edf12
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-absence:absence-teach-3-body
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+не — nye in the retained example is a pronunciation/transliteration label, not an English meaning. This particle is different from нет expressing absence and from есть asserting existence. A reference cue can be shown while the question asks for a contrasting form; read whether the question asks for existence, absence or ordinary predicate negation.
+shippedText=не — nye in the retained example is a pronunciation/transliteration label, not an English meaning. This particle is different from нет expressing absence and from есть asserting existence. A reference cue can be shown while the question asks for a contrasting form; read whether the question asks for existence, absence or ordinary predicate negation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e49c284ad0b6c0196639b0b9f73c9c787103261786da1de46a4be14db1a04cf8
+contentHash=fa3e89b20a97ff91acc0e6a7968529d6c9a3d0aa28a176a5b53ba0f606507483
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-absence-teach-3-title`
+
+- Objectives: obj-u24-absence
+- Sessions: u24-s-orient, u24-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 361e14fc8695a0ad7a18d5bb95ba9ad28cd5a9306bc7d7113b10a5a24161fd80
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-absence:absence-teach-3-title
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+A pronunciation label is not a translation
+shippedText=A pronunciation label is not a translation
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3c0686ee1a7a44347a0b4ea9e2ee47d683f90c17676baf5e0f9d54f4248e76b3
+contentHash=7dc0568d221a26ed3230a6b281f0d469776e722d57720981a9bc4962f16fae55
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-alternation-guided`
+
+- Objectives: obj-u24-alternation
+- Sessions: u24-s-orient, u24-s-alternation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a9d2e34090ed4a97f95d339e1aaef3115f3ef48f460483cea97a8e1c611d5edc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-alternation:alternation-guided
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Read the requested negative meaning, structure or stated context. Use the complete explanation above. A missed check returns to that full explanation.
+shippedText=Read the requested negative meaning, structure or stated context. Use the complete explanation above. A missed check returns to that full explanation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ce5285ecad4836c6ce916ebdc54c8f7a80f50ad2da9eb2ca10c99137702fc0fc
+contentHash=d18b41b8bcd4746482d4c3057e87471550a3ffbc4c2730a4ae698288efd025d6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-alternation-objective`
+
+- Objectives: obj-u24-alternation
+- Sessions: u24-s-orient, u24-s-alternation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7b9cc9cccf492565e96b162c1d86e27b11ca43a728df6445751f6f306f7a195a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-alternation:alternation-objective
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Keep noun number and case distinct under negation
+shippedText=Keep noun number and case distinct under negation
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c5b401755186c0247353e81f5e29fe5af54d127e8cb86173db5b6deed02a4b02
+contentHash=3174b68af9ee00edb01f7d682fae43173b0103cd0d27c5fb055767e77ea2a01b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-alternation-rem-body`
+
+- Objectives: obj-u24-alternation
+- Sessions: u24-s-orient, u24-s-alternation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2c8b4e20d5f6a22f04ff2918a7a4572925b9c5e4607d139e610757eea36050c8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-alternation:alternation-rem-body
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Я не ви́жу э́ту кни́гу. — I don't see this book, singular. Я не ви́жу кни́гу — I don't see the book. Я не ви́жу книг. — I don't see any books. The first two show a singular accusative object; the last shows a genitive plural object. Negation remains in every sentence. Changing noun form does not turn the statement into a positive one.
+
+A negated direct object can be genitive or accusative depending on meaning, context and usage. Indefinite reference often favors genitive, but this is not a mechanical rule that every negative sentence must use it. The older book ending in the retained source can also be genitive singular or accusative plural; it is not unambiguous genitive plural. The worked example now uses the same explicit plural-genitive phrase as the repaired check. I don't see the one book is still a singular description. I see this book and I see the books are positive descriptions and therefore do not match the negated cues. These choices distinguish supplied meanings and number, not independently choose every case under negation.
+shippedText=Я не ви́жу э́ту кни́гу. — I don't see this book, singular. Я не ви́жу кни́гу — I don't see the book. Я не ви́жу книг. — I don't see any books. The first two show a singular accusative object; the last shows a genitive plural object. Negation remains in every sentence. Changing noun form does not turn the statement into a positive one.
+
+A negated direct object can be genitive or accusative depending on meaning, context and usage. Indefinite reference often favors genitive, but this is not a mechanical rule that every negative sentence must use it. The older book ending in the retained source can also be genitive singular or accusative plural; it is not unambiguous genitive plural. The worked example now uses the same explicit plural-genitive phrase as the repaired check. I don't see the one book is still a singular description. I see this book and I see the books are positive descriptions and therefore do not match the negated cues. These choices distinguish supplied meanings and number, not independently choose every case under negation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f976ed0a69403bf26361212494bf7cbe671d99c7d787468329ffe2be5f8910f6
+contentHash=91cad92a8ec977cc7e702f4f547df781ebeb65da0dba23983a7a762ff408b906
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-alternation-rem-title`
+
+- Objectives: obj-u24-alternation
+- Sessions: u24-s-orient, u24-s-alternation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4117e02c08b0b5fd3b60f421acee7224bc93dee47ca478321d8bd6e30030d172
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-alternation:alternation-rem-title
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Review the complete negation contrast
+shippedText=Review the complete negation contrast
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b76c6eec21fd119289c9533234cd5984570b1d65c2abadba255f1b892acafd69
+contentHash=6c2dc9ac99f37fbca90657378c73311c9526571a054fa4928e9c8eeaf25a7a16
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-alternation-teach-1-body`
+
+- Objectives: obj-u24-alternation
+- Sessions: u24-s-orient, u24-s-alternation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 38a80926f6fbcd849d75f67e8d381fcdf3dde98cab3806f0a4576357bb6ac003
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-alternation:alternation-teach-1-body
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Я не ви́жу э́ту кни́гу. — I don't see this book, singular. Я не ви́жу кни́гу — I don't see the book. Я не ви́жу книг. — I don't see any books. The first two show a singular accusative object; the last shows a genitive plural object. Negation remains in every sentence. Changing noun form does not turn the statement into a positive one.
+shippedText=Я не ви́жу э́ту кни́гу. — I don't see this book, singular. Я не ви́жу кни́гу — I don't see the book. Я не ви́жу книг. — I don't see any books. The first two show a singular accusative object; the last shows a genitive plural object. Negation remains in every sentence. Changing noun form does not turn the statement into a positive one.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cbe8d1e886cde5b6d977008e9439e6c493064c599481f53e39dbfe690e117e25
+contentHash=cecefec058eacdf8bc090a029e66bd96b900c6c5517f0ab47a0ebd077a77d7e2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-alternation-teach-1-title`
+
+- Objectives: obj-u24-alternation
+- Sessions: u24-s-orient, u24-s-alternation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e55bdaf0da5643a94e9dbfca806c256c0c646e1654733afaa74617fce1d4c4bd
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-alternation:alternation-teach-1-title
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+The singular and plural examples used by the checks
+shippedText=The singular and plural examples used by the checks
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b0d5b671576bd6ee8919dd2a138be188280d2c53fad1e02847c3556285fb5ccf
+contentHash=d0acfa2cb5328b83b3afc7c6103783dcd8d226647829787dbc6c93aaee57bdd2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-alternation-teach-2-body`
+
+- Objectives: obj-u24-alternation
+- Sessions: u24-s-orient, u24-s-alternation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: da7a7742b591cff787d0a6b548fca7d5f1fd0276be219637147234d8c53734cd
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-alternation:alternation-teach-2-body
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+A negated direct object can be genitive or accusative depending on meaning, context and usage. Indefinite reference often favors genitive, but this is not a mechanical rule that every negative sentence must use it. The older book ending in the retained source can also be genitive singular or accusative plural; it is not unambiguous genitive plural. The worked example now uses the same explicit plural-genitive phrase as the repaired check. I don't see the one book is still a singular description. I see this book and I see the books are positive descriptions and therefore do not match the negated cues. These choices distinguish supplied meanings and number, not independently choose every case under negation.
+shippedText=A negated direct object can be genitive or accusative depending on meaning, context and usage. Indefinite reference often favors genitive, but this is not a mechanical rule that every negative sentence must use it. The older book ending in the retained source can also be genitive singular or accusative plural; it is not unambiguous genitive plural. The worked example now uses the same explicit plural-genitive phrase as the repaired check. I don't see the one book is still a singular description. I see this book and I see the books are positive descriptions and therefore do not match the negated cues. These choices distinguish supplied meanings and number, not independently choose every case under negation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2b9e24a292e87b6470f4c4c06f4ee245187b9e245f142a5caa5ba8a5cdecf749
+contentHash=c4efd63e24919c33dcde941420c75e4de74ba7b60f4cb9cbc6c251805e8b8dca
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-alternation-teach-2-title`
+
+- Objectives: obj-u24-alternation
+- Sessions: u24-s-orient, u24-s-alternation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6f71b8cd82ebf9c058d75d544f04189b0813805b240fc93459fc4b0f5f579960
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-alternation:alternation-teach-2-title
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Genitive is not simply a plural marker
+shippedText=Genitive is not simply a plural marker
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=062e71f424bb288ea52138d040177bd3e8d125a7758269ac3613b66229b2ddb3
+contentHash=6b9b4f0ab279d5f3e02bde5ba2f972ead0cc2669d96a5971d172c8ccbb98bfbf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-concord-guided`
+
+- Objectives: obj-u24-concord
+- Sessions: u24-s-orient, u24-s-concord
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b7fac1f1d77b0b23a2b3b0bb757684da3c5f11079725bb0c4b9f8dc20d35f086
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-concord:concord-guided
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Read the requested negative meaning, structure or stated context. Use the complete explanation above. A missed check returns to that full explanation.
+shippedText=Read the requested negative meaning, structure or stated context. Use the complete explanation above. A missed check returns to that full explanation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ce5285ecad4836c6ce916ebdc54c8f7a80f50ad2da9eb2ca10c99137702fc0fc
+contentHash=d18b41b8bcd4746482d4c3057e87471550a3ffbc4c2730a4ae698288efd025d6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-concord-objective`
+
+- Objectives: obj-u24-concord
+- Sessions: u24-s-orient, u24-s-concord
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: de4ae8be228331acc6ebb428d3593bde9b1269812c964c8a695e81bf6e13e35d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-concord:concord-objective
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Combine negative pronouns with the predicate particle
+shippedText=Combine negative pronouns with the predicate particle
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f6bd3a0c0ad7ac10ba417c21d25f99a0f5a5cde1c3a14c1d06afe522ecd40dd3
+contentHash=bc895a92ef9b777a4b472a23d225126bdf57161667b25fda5d840f6b87cde95e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-concord-rem-body`
+
+- Objectives: obj-u24-concord
+- Sessions: u24-s-orient, u24-s-concord
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ea26c9f449fd06f8497f8c3d84cbb41140685be6dab3879a4da470174e92d9af
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-concord:concord-rem-body
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+никто́ — не. ничто́ — не. In the supplied negative-concord pattern, the negative pronoun requires the separate negative particle in the predicate. They work together to express one overall negative statement. Do not remove the predicate particle by applying the English idea that two negatives must cancel.
+
+The option ни- is a pronoun prefix, not the separate predicate particle. никому is a declined pronoun referring to nobody in the dative; it is not that particle either. The answer не is the required predicate particle in the illustrated pattern. The choices recognize this supplied concord rule; they do not test producing every negative pronoun case or all exceptional constructions.
+shippedText=никто́ — не. ничто́ — не. In the supplied negative-concord pattern, the negative pronoun requires the separate negative particle in the predicate. They work together to express one overall negative statement. Do not remove the predicate particle by applying the English idea that two negatives must cancel.
+
+The option ни- is a pronoun prefix, not the separate predicate particle. никому is a declined pronoun referring to nobody in the dative; it is not that particle either. The answer не is the required predicate particle in the illustrated pattern. The choices recognize this supplied concord rule; they do not test producing every negative pronoun case or all exceptional constructions.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=205f1498d04d7fa46400add2ad641131bb7cdb834c3f1a72a7f6dabfbbdb0228
+contentHash=edd0a98331400a7645fe15f91658923eab385b8e9eff6154166e51fd549fb2cf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-concord-rem-title`
+
+- Objectives: obj-u24-concord
+- Sessions: u24-s-orient, u24-s-concord
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a4276a79ccb99f29ab21cbaa8041d0390446584dd351d2178eed50dd657bd3af
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-concord:concord-rem-title
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Review the complete negation contrast
+shippedText=Review the complete negation contrast
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b76c6eec21fd119289c9533234cd5984570b1d65c2abadba255f1b892acafd69
+contentHash=6c2dc9ac99f37fbca90657378c73311c9526571a054fa4928e9c8eeaf25a7a16
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-concord-teach-1-body`
+
+- Objectives: obj-u24-concord
+- Sessions: u24-s-orient, u24-s-concord
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 17aabf875a910208ba025f032f95f19de5b083493e5d473c0b9b6aef72c2f58c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-concord:concord-teach-1-body
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+никто́ — не. ничто́ — не. In the supplied negative-concord pattern, the negative pronoun requires the separate negative particle in the predicate. They work together to express one overall negative statement. Do not remove the predicate particle by applying the English idea that two negatives must cancel.
+shippedText=никто́ — не. ничто́ — не. In the supplied negative-concord pattern, the negative pronoun requires the separate negative particle in the predicate. They work together to express one overall negative statement. Do not remove the predicate particle by applying the English idea that two negatives must cancel.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a1202e2a762d2622ccc722f2464cb92d7ec60e617bd180d3cf152e53227af994
+contentHash=945a385c365957885f4839b83e685fb305dac1eada12ef09a4f1a513c1366ce6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-concord-teach-1-title`
+
+- Objectives: obj-u24-concord
+- Sessions: u24-s-orient, u24-s-concord
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f248e2760f14288a75d554332223fa73ffc4462489c6e5c46834ff20294f00f9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-concord:concord-teach-1-title
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+One negative meaning across pronoun and predicate
+shippedText=One negative meaning across pronoun and predicate
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0b318a889c6e3cefe722ca66251f5d21800f0fde97dcada822a6d29b5ee5ad74
+contentHash=45f8d10065427321c3eaf39639985fc18d4c6f726fe5767e039f7fefcf10ce58
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-concord-teach-2-body`
+
+- Objectives: obj-u24-concord
+- Sessions: u24-s-orient, u24-s-concord
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6d3bcbf34c03ae489b6e6258fdf14ad4edbce3232a3baed655eec7fd34c51817
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-concord:concord-teach-2-body
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+The option ни- is a pronoun prefix, not the separate predicate particle. никому is a declined pronoun referring to nobody in the dative; it is not that particle either. The answer не is the required predicate particle in the illustrated pattern. The choices recognize this supplied concord rule; they do not test producing every negative pronoun case or all exceptional constructions.
+shippedText=The option ни- is a pronoun prefix, not the separate predicate particle. никому is a declined pronoun referring to nobody in the dative; it is not that particle either. The answer не is the required predicate particle in the illustrated pattern. The choices recognize this supplied concord rule; they do not test producing every negative pronoun case or all exceptional constructions.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ab11229cad98b524f5af9eafb5119ac476247e41222dd2e79e61991f891b4291
+contentHash=72ed04d0241d5d178379a677b9d2d2f16b5de1c78e57bfaf6973831949bfdfe3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-concord-teach-2-title`
+
+- Objectives: obj-u24-concord
+- Sessions: u24-s-orient, u24-s-concord
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6f64d36eaf736d678f4bb22f396ac439982a8c9671042902f7c7dc72f8934152
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-concord:concord-teach-2-title
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+A prefix and a whole pronoun are not the predicate particle
+shippedText=A prefix and a whole pronoun are not the predicate particle
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a1d03481ff2ca8fd5b4b08146aedd98f167550a7580bf8ad8dbc54121b591821
+contentHash=03bd9b5c43319160e677ea6dbf97f988fc88e51b60a09010d1cd82b483f4bff1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-placement-guided`
+
+- Objectives: obj-u24-placement
+- Sessions: u24-s-orient, u24-s-placement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 293c30f48f7f5e045239dc0fc6ef77c88cf0cd0cca2849644c05621fc2b14eed
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-placement:placement-guided
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Read the requested negative meaning, structure or stated context. Use the complete explanation above. A missed check returns to that full explanation.
+shippedText=Read the requested negative meaning, structure or stated context. Use the complete explanation above. A missed check returns to that full explanation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ce5285ecad4836c6ce916ebdc54c8f7a80f50ad2da9eb2ca10c99137702fc0fc
+contentHash=d18b41b8bcd4746482d4c3057e87471550a3ffbc4c2730a4ae698288efd025d6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-placement-objective`
+
+- Objectives: obj-u24-placement
+- Sessions: u24-s-orient, u24-s-placement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 04afe6a914e8e4d644dfd88c2a80da2950394595b1949207f5a99d603323a2e7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-placement:placement-objective
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Distinguish negating the state from negating its experiencer
+shippedText=Distinguish negating the state from negating its experiencer
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=edd1ee99f409e88494c9f1dcc500d1c0aa2cd4e905e4fd56415e21d45314dbfe
+contentHash=388d043780ba1fbfe775d17a0376e5a4428c12b4bd791ef098f890cece0ca9a4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-placement-rem-body`
+
+- Objectives: obj-u24-placement
+- Sessions: u24-s-orient, u24-s-placement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8042e58587392252577e9f5be645c798cc527135cdfe015f05d61d28deebd2d3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-placement:placement-rem-body
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Мне не холодно. — To me it is not cold. This can also be expressed in English as I am not cold. Не мне холодно. — It is not to me that it is cold. The first negates the cold state for the experiencer; the second contrasts the experiencer, so the person who is cold is not me. The second does not by itself identify that other person.
+
+Note that the modifier не negates the word which comes right after it. In this supplied pair, its position helps distinguish the state from the experiencer. Wider sentences also depend on construction, emphasis and context; do not apply adjacency as an automatic complete interpretation of every Russian sentence. The check asks for the scope shown in this pair, not free production of every negative-focus construction.
+shippedText=Мне не холодно. — To me it is not cold. This can also be expressed in English as I am not cold. Не мне холодно. — It is not to me that it is cold. The first negates the cold state for the experiencer; the second contrasts the experiencer, so the person who is cold is not me. The second does not by itself identify that other person.
+
+Note that the modifier не negates the word which comes right after it. In this supplied pair, its position helps distinguish the state from the experiencer. Wider sentences also depend on construction, emphasis and context; do not apply adjacency as an automatic complete interpretation of every Russian sentence. The check asks for the scope shown in this pair, not free production of every negative-focus construction.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b9d5684036406190aed80d4433baddbe70fb5debbed3bc572b3725ca0f2ac338
+contentHash=3612e6c20f97b1d9f676105a867f9abf3dc7e0219611d071913612b012262dea
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-placement-rem-title`
+
+- Objectives: obj-u24-placement
+- Sessions: u24-s-orient, u24-s-placement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 410883984df3aea34eaf74a1f43d6c4451bfcf3df51128ac5072674c8c780fb4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-placement:placement-rem-title
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Review the complete negation contrast
+shippedText=Review the complete negation contrast
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b76c6eec21fd119289c9533234cd5984570b1d65c2abadba255f1b892acafd69
+contentHash=6c2dc9ac99f37fbca90657378c73311c9526571a054fa4928e9c8eeaf25a7a16
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-placement-teach-1-body`
+
+- Objectives: obj-u24-placement
+- Sessions: u24-s-orient, u24-s-placement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 22936c840ba2544940d0712b28b54f41ea88f329d97f84ec6bc2279f9d48f66e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-placement:placement-teach-1-body
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Мне не холодно. — To me it is not cold. This can also be expressed in English as I am not cold. Не мне холодно. — It is not to me that it is cold. The first negates the cold state for the experiencer; the second contrasts the experiencer, so the person who is cold is not me. The second does not by itself identify that other person.
+shippedText=Мне не холодно. — To me it is not cold. This can also be expressed in English as I am not cold. Не мне холодно. — It is not to me that it is cold. The first negates the cold state for the experiencer; the second contrasts the experiencer, so the person who is cold is not me. The second does not by itself identify that other person.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fdcbc90f85927f637008953beacc1b75084dec949b81890d1ebaf5a4ef4b4f78
+contentHash=2cf18d2545aaa1b496f2c5dc8f85876f57497773c1fc09f0b8a9dccf6acd6432
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-placement-teach-1-title`
+
+- Objectives: obj-u24-placement
+- Sessions: u24-s-orient, u24-s-placement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c103732539e2c84201cfd7752abfeda6be80185c06d50709d02acbe85b1e5ab3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-placement:placement-teach-1-title
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Not cold and not me are different scopes
+shippedText=Not cold and not me are different scopes
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=459cebe2d10c193068995d0807a767f5e7100110a248fe62bc16b64f25ada098
+contentHash=7086c3cecc23d618c66720ead901758b4ad481b3024fd4331dc8028da62c6764
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-placement-teach-2-body`
+
+- Objectives: obj-u24-placement
+- Sessions: u24-s-orient, u24-s-placement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 75ced66c34dc5c21874166126d00886ff062c64b8a9aa4d3a728fd8c1af0715e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-placement:placement-teach-2-body
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Note that the modifier не negates the word which comes right after it. In this supplied pair, its position helps distinguish the state from the experiencer. Wider sentences also depend on construction, emphasis and context; do not apply adjacency as an automatic complete interpretation of every Russian sentence. The check asks for the scope shown in this pair, not free production of every negative-focus construction.
+shippedText=Note that the modifier не negates the word which comes right after it. In this supplied pair, its position helps distinguish the state from the experiencer. Wider sentences also depend on construction, emphasis and context; do not apply adjacency as an automatic complete interpretation of every Russian sentence. The check asks for the scope shown in this pair, not free production of every negative-focus construction.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e439fa6d1e7cabc6bdd5dcb05fd4ff5e6c45278492d1c03a2e88e3ca14ae1a5d
+contentHash=c044a7b2405020b9cc75c5ae3cffc7f9e9df9d42168b7184ef4a70c39707fd08
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-placement-teach-2-title`
+
+- Objectives: obj-u24-placement
+- Sessions: u24-s-orient, u24-s-placement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 52dc3d4bc9d2e53731041f01a316bec81665d13ea0d2651021c1adde87f6c4f1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-placement:placement-teach-2-title
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Use the demonstrated contrast with its limits
+shippedText=Use the demonstrated contrast with its limits
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=47063b62b0290c3098f759ee6119349d4e7b07b09a30fcb470c62af23b051cb4
+contentHash=60b93bdc9c6711a9c81e05818adf7d42bf09c4cfab62c954fd46acee95c997bc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-stand-ins-guided`
+
+- Objectives: obj-u24-stand-ins
+- Sessions: u24-s-orient, u24-s-stand-ins
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 43e271196e66b84c408e5c9f33db48e8a57feef3168f352c48b261baaf739d2b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-stand-ins:stand-ins-guided
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Read the requested negative meaning, structure or stated context. Use the complete explanation above. A missed check returns to that full explanation.
+shippedText=Read the requested negative meaning, structure or stated context. Use the complete explanation above. A missed check returns to that full explanation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ce5285ecad4836c6ce916ebdc54c8f7a80f50ad2da9eb2ca10c99137702fc0fc
+contentHash=d18b41b8bcd4746482d4c3057e87471550a3ffbc4c2730a4ae698288efd025d6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-stand-ins-objective`
+
+- Objectives: obj-u24-stand-ins
+- Sessions: u24-s-orient, u24-s-stand-ins
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 41d434a18dc7a7715275b52209ffed447e3fdcd28090d3114d648f114a7eaf6a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-stand-ins:stand-ins-objective
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Distinguish negative pronouns from absence and indefinite forms
+shippedText=Distinguish negative pronouns from absence and indefinite forms
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0f133c5abdac1face3c54e52841755d51d71c7fff98abf1a8c7e199e3bf57b6f
+contentHash=c6328057e75e6069d7f637b41d0f0c0a420ab2ef583c4b897af718063a3c2888
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-stand-ins-rem-body`
+
+- Objectives: obj-u24-stand-ins
+- Sessions: u24-s-orient, u24-s-stand-ins
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 85344683cc46bdd0fecb6d1dcf7f8ef73d1f6e800f1f6a019b7af7fa134fc898
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-stand-ins:stand-ins-rem-body
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+кто — никто́. что — ничто́. The first pair concerns a person and nobody; the second concerns a thing and nothing. The indefinite options не́кто and не́что refer to an unspecified person or thing, not the corresponding nobody/nothing form. Do not treat a similar-looking prefix as proof of the same meaning.
+
+Negative predicative constructions express the absence of a person or thing for an action. The construction selects a case form; it has no nominative form. Compare the indefinite pronoun separately. не́кого спросить — there is nobody to ask. This is absence of a person available for the infinitive action; it differs from an unspecified person and from there is nothing to ask.
+
+не́кто is an indefinite pronoun, a person whose identity is not specified. It is not the predicative negative of кто. Absence of a person uses a case form: не́кого has the same form in the genitive and accusative, while не́кому is dative and не́кем instrumental. The sentence determines the case; absence meaning alone does not. There is no nominative form in this negative paradigm. The current checks recognize the absence meaning; they do not uniquely identify genitive from the shared genitive/accusative form.
+shippedText=кто — никто́. что — ничто́. The first pair concerns a person and nobody; the second concerns a thing and nothing. The indefinite options не́кто and не́что refer to an unspecified person or thing, not the corresponding nobody/nothing form. Do not treat a similar-looking prefix as proof of the same meaning.
+
+Negative predicative constructions express the absence of a person or thing for an action. The construction selects a case form; it has no nominative form. Compare the indefinite pronoun separately. не́кого спросить — there is nobody to ask. This is absence of a person available for the infinitive action; it differs from an unspecified person and from there is nothing to ask.
+
+не́кто is an indefinite pronoun, a person whose identity is not specified. It is not the predicative negative of кто. Absence of a person uses a case form: не́кого has the same form in the genitive and accusative, while не́кому is dative and не́кем instrumental. The sentence determines the case; absence meaning alone does not. There is no nominative form in this negative paradigm. The current checks recognize the absence meaning; they do not uniquely identify genitive from the shared genitive/accusative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a256c0df5de65d5e2d0110de387d51db3a2e565ef0c6650e0d7d9bdeb22147f7
+contentHash=019580119635c9f412b3ae4fc50d14a29476f2892d2ada1b96741b9a1ac34772
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-stand-ins-rem-title`
+
+- Objectives: obj-u24-stand-ins
+- Sessions: u24-s-orient, u24-s-stand-ins
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ec7ce315f798fed0255db9cf4b4b36aff2797e5dd5ed54fa5d548789e99b679f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-stand-ins:stand-ins-rem-title
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Review the complete negation contrast
+shippedText=Review the complete negation contrast
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b76c6eec21fd119289c9533234cd5984570b1d65c2abadba255f1b892acafd69
+contentHash=6c2dc9ac99f37fbca90657378c73311c9526571a054fa4928e9c8eeaf25a7a16
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-stand-ins-teach-1-body`
+
+- Objectives: obj-u24-stand-ins
+- Sessions: u24-s-orient, u24-s-stand-ins
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4435f136f38e1dac042490e3255d9876f9d70bfaa2a4e68c18ba6d7f8d6e6fab
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-stand-ins:stand-ins-teach-1-body
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+кто — никто́. что — ничто́. The first pair concerns a person and nobody; the second concerns a thing and nothing. The indefinite options не́кто and не́что refer to an unspecified person or thing, not the corresponding nobody/nothing form. Do not treat a similar-looking prefix as proof of the same meaning.
+shippedText=кто — никто́. что — ничто́. The first pair concerns a person and nobody; the second concerns a thing and nothing. The indefinite options не́кто and не́что refer to an unspecified person or thing, not the corresponding nobody/nothing form. Do not treat a similar-looking prefix as proof of the same meaning.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=09d39d38317d1a690a9e1f441ca8fca2a532f198a50cda51b7f70b8e34553466
+contentHash=c2df5243ceba5275e5537ea57fbd3c2d5c94718442d9a9f5cf4fadd210019484
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-stand-ins-teach-1-title`
+
+- Objectives: obj-u24-stand-ins
+- Sessions: u24-s-orient, u24-s-stand-ins
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 828c475ff54ead0ddc177f89cfd0b999223f0e7804af48dc704a4faebf5ebe09
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-stand-ins:stand-ins-teach-1-title
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Nobody and nothing refer to different categories
+shippedText=Nobody and nothing refer to different categories
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=939bdf63a2df9f84f2324fbc2e517d5272959a4b96714409ac5f224aadca655f
+contentHash=6fc91ee85790c991beecc2210c76be66684556039c9fbfc6ccf21e8c7307df92
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-stand-ins-teach-2-body`
+
+- Objectives: obj-u24-stand-ins
+- Sessions: u24-s-orient, u24-s-stand-ins
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2acf4d37716e6169d4d753012af47f727e9918334d41809a243330476c096620
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-stand-ins:stand-ins-teach-2-body
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Negative predicative constructions express the absence of a person or thing for an action. The construction selects a case form; it has no nominative form. Compare the indefinite pronoun separately. не́кого спросить — there is nobody to ask. This is absence of a person available for the infinitive action; it differs from an unspecified person and from there is nothing to ask.
+shippedText=Negative predicative constructions express the absence of a person or thing for an action. The construction selects a case form; it has no nominative form. Compare the indefinite pronoun separately. не́кого спросить — there is nobody to ask. This is absence of a person available for the infinitive action; it differs from an unspecified person and from there is nothing to ask.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f3e721d5fae7aa3c641ce30eb43ce69f9fe97c6ce3dfd65e4b9d608540242098
+contentHash=2c6651b71f8d524356e4ae65302ea663ab971ee61d85ed860a7e0c2b91c3b616
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-stand-ins-teach-2-title`
+
+- Objectives: obj-u24-stand-ins
+- Sessions: u24-s-orient, u24-s-stand-ins
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5d0ccd673b738eee0faf3ef3720662a08480fe28326785d3dec9eb472d2d0fb3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-stand-ins:stand-ins-teach-2-title
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+No person available for an action
+shippedText=No person available for an action
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8c85c77aa3290fb555452a4d852ca220ac18c029543e40019ca66479e33ec04c
+contentHash=f3005d73c03c85bdd9d3fc310ae7edbf7ae9e4b815e528e379890199875f0e83
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-stand-ins-teach-3-body`
+
+- Objectives: obj-u24-stand-ins
+- Sessions: u24-s-orient, u24-s-stand-ins
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 16e9f7ac7aa62c2fb1211f0116ebdfa3a228fc7e5aac46ab355078962994b67d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-stand-ins:stand-ins-teach-3-body
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+не́кто is an indefinite pronoun, a person whose identity is not specified. It is not the predicative negative of кто. Absence of a person uses a case form: не́кого has the same form in the genitive and accusative, while не́кому is dative and не́кем instrumental. The sentence determines the case; absence meaning alone does not. There is no nominative form in this negative paradigm. The current checks recognize the absence meaning; they do not uniquely identify genitive from the shared genitive/accusative form.
+shippedText=не́кто is an indefinite pronoun, a person whose identity is not specified. It is not the predicative negative of кто. Absence of a person uses a case form: не́кого has the same form in the genitive and accusative, while не́кому is dative and не́кем instrumental. The sentence determines the case; absence meaning alone does not. There is no nominative form in this negative paradigm. The current checks recognize the absence meaning; they do not uniquely identify genitive from the shared genitive/accusative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b23e87ac940f61a919a4a499cbc05fc12f1fe57213aee1691a9f3c1f49a77c93
+contentHash=a23ddcfe6ac077bc492725e345973c675f05197f3c8beaf31293e7a10ef82183
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-stand-ins-teach-3-title`
+
+- Objectives: obj-u24-stand-ins
+- Sessions: u24-s-orient, u24-s-stand-ins
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4e673940e7d72773cb5e6792afbc510e10de0c31dda2b0963bf6fe808ffdbcc3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-stand-ins:stand-ins-teach-3-title
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+The case comes from the construction
+shippedText=The case comes from the construction
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=50873e25d8fbdadda22e62a961ac7fa12c2ffacd3f0b2ea8ddbc6742797a2852
+contentHash=0f50ecad9d0e082e524a9ffecfb43e443752c36b5cc8db86e8964220a0d3afc4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-g-absence-0-feedback`
+
+- Objectives: obj-u24-absence
+- Sessions: u24-s-orient, u24-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3dafd87d350c2f6118dfb42d304eadddf9a4577dcb7deb580e91e9b9c36dd6cb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-absence:u24-g-absence-0-feedback
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+The frozen note says this form has a different meaning from the reply that means no, and it replaces the exists word.
+есть is the reference cue; нет matches the requested meaning or structure. absence in the existence pattern.
+shippedText=The frozen note says this form has a different meaning from the reply that means no, and it replaces the exists word.
+есть is the reference cue; нет matches the requested meaning or structure. absence in the existence pattern.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b0300ddad8727fc1a93d122420c4484780a55fec5cc57552fa29180d80b3d03c
+contentHash=4d436f060b13129e262ab54a5c3176d74563d715cd5f0e661d4f95d8e3444a62
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-g-absence-0-prompt`
+
+- Objectives: obj-u24-absence
+- Sessions: u24-s-orient, u24-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8b9d1bee29cc0422564386346014de68d2bbd20f27caec3bef8194a36edd6199
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-absence:u24-g-absence-0-prompt
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Which form expresses absence instead of the shown positive expression?
+shippedText=Which form expresses absence instead of the shown positive expression?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7efbca33c511737ccb3b6796fe04f7fb1b9ff06d7ba03b6b836ef3871507751b
+contentHash=cc0b522c54a74ae9129063786e443b69e43563f52e8f875309b9940bc693f2eb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-g-absence-0-wrong-0`
+
+- Objectives: obj-u24-absence
+- Sessions: u24-s-orient, u24-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0cff4eacbf2b2d050976181d9ad76b79d9322d9d9590cbb28607e192e8705af3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-absence:u24-g-absence-0-wrong-0
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+не: the separate predicate-negation particle. This differs from the meaning or structure requested in this context. The frozen note adds this particle before a word. It is not the replacement for the exists word.
+shippedText=не: the separate predicate-negation particle. This differs from the meaning or structure requested in this context. The frozen note adds this particle before a word. It is not the replacement for the exists word.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=99eec3876a53adbdacebca164ae84e361ff14aa2b332d6d6194b1ddda22cc64c
+contentHash=dd987122b46aea73fed87a8be96bb3aa11fa976e6dc3af7d28f2ab52149300fd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-g-absence-0-wrong-1`
+
+- Objectives: obj-u24-absence
+- Sessions: u24-s-orient, u24-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 24353167c78aa78e4118a04bc10367a51d696f4bd418d4e86212ce58ce076914
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-absence:u24-g-absence-0-wrong-1
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Да: a yes reply. This differs from the meaning or structure requested in this context. The frozen example uses this as the agreeing reply Yes, I'm speaking, not as the replacement.
+shippedText=Да: a yes reply. This differs from the meaning or structure requested in this context. The frozen example uses this as the agreeing reply Yes, I'm speaking, not as the replacement.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b919f246a460b84b115f389d87b2fed7ff7ffb5ef05591e6f6172243f8c9634c
+contentHash=9a47435dd4d71d1edd1b9cebd20855e36107ea05f2e0f130f7b0052ccd960754
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-g-alternation-0-feedback`
+
+- Objectives: obj-u24-alternation
+- Sessions: u24-s-orient, u24-s-alternation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bfd1fc1c89271a9c977a00bb4c24372424cf7f60051050e7e37d775b44f09bcf
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-alternation:u24-g-alternation-0-feedback
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Я не ви́жу э́ту кни́гу. means I don't see this book, singular. э́ту кни́гу specifies one book and не supplies the negation.
+Я не ви́жу э́ту кни́гу. is the reference cue; I don't see this book, singular matches the requested meaning or structure. negation with one specified accusative object.
+shippedText=Я не ви́жу э́ту кни́гу. means I don't see this book, singular. э́ту кни́гу specifies one book and не supplies the negation.
+Я не ви́жу э́ту кни́гу. is the reference cue; I don't see this book, singular matches the requested meaning or structure. negation with one specified accusative object.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=17019ff88295a88a4ac31759c80b869df0d225e1ded47d46600f975a924c3c1e
+contentHash=b682d69b6267ebd16f59e2a8ac9e0c3e80dfeff706f270e309581718cc5626da
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-g-alternation-0-wrong-0`
+
+- Objectives: obj-u24-alternation
+- Sessions: u24-s-orient, u24-s-alternation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 68e980157e1137e95ba970f32b2e5291fd22de0fbadb5d97e503b7b6f5aeb847
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-alternation:u24-g-alternation-0-wrong-0
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+I don't see any books: the explicit genitive-plural reading. This differs from the meaning or structure requested in this context. I don't see any books would be a plural or bare genitive reading, not э́ту кни́гу.
+shippedText=I don't see any books: the explicit genitive-plural reading. This differs from the meaning or structure requested in this context. I don't see any books would be a plural or bare genitive reading, not э́ту кни́гу.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=dba16d806acc46459526687d16713b7d77bfec5b1cba04056c6e9dbcd77d2408
+contentHash=b2ee87b0b15ac7635998eb031755af68715b7ec1296b7455370d7e5f394bf11f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-g-alternation-0-wrong-1`
+
+- Objectives: obj-u24-alternation
+- Sessions: u24-s-orient, u24-s-alternation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9999295658832c68f6c8547aad3b05aa0205805a31638cf8200386691fcbc51c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-alternation:u24-g-alternation-0-wrong-1
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+I see this book: a positive singular-object statement. This differs from the meaning or structure requested in this context. I see this book drops the negation.
+shippedText=I see this book: a positive singular-object statement. This differs from the meaning or structure requested in this context. I see this book drops the negation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4f193b4a5bb62e87325087bbf2efe24c4534630254dc7ff515cbc406dc387394
+contentHash=27acdedd13a399b7883220c9702a56fb36eed1f29050b50794721247dfba719d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-g-concord-0-feedback`
+
+- Objectives: obj-u24-concord
+- Sessions: u24-s-orient, u24-s-concord
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0fe50e4176e1cd99a2e20f49eb69653598ba1372ac96484360b0bc952e4c5805
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-concord:u24-g-concord-0-feedback
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+The frozen source pairs the shown form "никто́" with the admitted gloss "не" ("отрицательной частицы не").
+никто́ is the reference cue; не matches the requested meaning or structure. the separate predicate-negation particle.
+shippedText=The frozen source pairs the shown form "никто́" with the admitted gloss "не" ("отрицательной частицы не").
+никто́ is the reference cue; не matches the requested meaning or structure. the separate predicate-negation particle.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=40727058f5fb50b95242344202f2457bdfc673368dc5e4ad6e6d958b15f5eea3
+contentHash=a9555049565d0a9352e8c12a4646a17d31da29750a80d542c0e8d4410e324675
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-g-concord-0-wrong-0`
+
+- Objectives: obj-u24-concord
+- Sessions: u24-s-orient, u24-s-concord
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d138f5e54ad33a27d353d748d19747a27d57e6bcea7246b42e8fca13a437d899
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-concord:u24-g-concord-0-wrong-0
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+ни-: a negative-pronoun prefix. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "никто́" with the admitted gloss "ни-" ("Основным правилом").
+shippedText=ни-: a negative-pronoun prefix. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "никто́" with the admitted gloss "ни-" ("Основным правилом").
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=620c7aa43b11cbb6f2d87faf30736ca9cdc1f185c299138ba1841cb046ee691d
+contentHash=28d04831f1f85e04ea87395b4a40935a84a67fff0ab04061a0b738e05aac5b31
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-g-concord-0-wrong-1`
+
+- Objectives: obj-u24-concord
+- Sessions: u24-s-orient, u24-s-concord
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c0817a52fe9524933ca99ee78b4581299e67e82002a50ded0420baefc0a5fc71
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-concord:u24-g-concord-0-wrong-1
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+никому: a declined negative pronoun in the dative. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "никто́" with the admitted gloss "никому" ("Основным правилом").
+shippedText=никому: a declined negative pronoun in the dative. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "никто́" with the admitted gloss "никому" ("Основным правилом").
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=718b2a815cd0d454da86c92e0bc44b6bad367fb761164161c2267157085b3758
+contentHash=ccbc186517ed56761c73dfec6e61a53755231a1d80fffd44f4d74d7528580698
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-g-placement-0-feedback`
+
+- Objectives: obj-u24-placement
+- Sessions: u24-s-orient, u24-s-placement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e393f20222d3e5e9331e2c1a6f283668276d83b4d27b916f7f3e3b781a5d0c36
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-placement:u24-g-placement-0-feedback
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+The frozen source pairs the shown form "Мне не холодно." with the admitted gloss "To me it is not cold.".
+Мне не холодно. is the reference cue; To me it is not cold. matches the requested meaning or structure. negation of the cold state for the experiencer.
+shippedText=The frozen source pairs the shown form "Мне не холодно." with the admitted gloss "To me it is not cold.".
+Мне не холодно. is the reference cue; To me it is not cold. matches the requested meaning or structure. negation of the cold state for the experiencer.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=248a41eaeb55eb0bc27303960bea7f14e29b86e6e8daa74fe56eba9acd4f1a08
+contentHash=fbd988ecf689842edd0f72deeabb9e35cf7b22747027c00abbd6dc71a3d761eb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-g-placement-0-wrong-0`
+
+- Objectives: obj-u24-placement
+- Sessions: u24-s-orient, u24-s-placement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7ad734163e1370fd88ca63fb08167ff337675963435fe395b8187f7ad874f9b2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-placement:u24-g-placement-0-wrong-0
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+It is not to me that it is cold.: contrastive negation of the experiencer. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "Не мне холодно." with the admitted gloss "It is not to me that it is cold.". Moving the modifier in front of a different word produces that meaning.
+shippedText=It is not to me that it is cold.: contrastive negation of the experiencer. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "Не мне холодно." with the admitted gloss "It is not to me that it is cold.". Moving the modifier in front of a different word produces that meaning.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ca897a3c84738fad655972da92ec88c2311e14eb87510a334910c0ee264f1f04
+contentHash=dc8404385892ca49b82c09c3ffb286625ec9603a4e89c76d17b2e67607f7d5fd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-g-stand-ins-0-feedback`
+
+- Objectives: obj-u24-stand-ins
+- Sessions: u24-s-orient, u24-s-stand-ins
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 707defde8ab0fb4174d88e142fcfcf6589c9dcb8525d10858810b87957e9dd70
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-stand-ins:u24-g-stand-ins-0-feedback
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+The frozen source pairs the shown form "кто" with the admitted gloss "никто́" ("Отрицательные местоимения").
+кто is the reference cue; никто́ matches the requested meaning or structure. a negative pronoun referring to nobody.
+shippedText=The frozen source pairs the shown form "кто" with the admitted gloss "никто́" ("Отрицательные местоимения").
+кто is the reference cue; никто́ matches the requested meaning or structure. a negative pronoun referring to nobody.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b81b870b6581e1cb4727000660f308062a6cb812393595a49e1a2cd63c853a1c
+contentHash=4889b0db0a9437849b901562573bef1d888af39bdb84a427a72993f58d3f6e40
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-g-stand-ins-0-wrong-0`
+
+- Objectives: obj-u24-stand-ins
+- Sessions: u24-s-orient, u24-s-stand-ins
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 296fef4c141f44a8a4bb3bdca558b7bd919f620f0c7c66e914facc617320dcd6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-stand-ins:u24-g-stand-ins-0-wrong-0
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+ничто́: a negative pronoun referring to nothing. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "что" with the admitted gloss "ничто́" ("Отрицательные местоимения").
+shippedText=ничто́: a negative pronoun referring to nothing. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "что" with the admitted gloss "ничто́" ("Отрицательные местоимения").
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=80304437c173e4c4dae844f8ab51f2ab8afde4f98a0b9507b08c1c6d68aed4d4
+contentHash=96b64962f9daf15b7b84122444698bfeacd1eb4b8b32892472e1cf31f0f6c887
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-g-stand-ins-0-wrong-1`
+
+- Objectives: obj-u24-stand-ins
+- Sessions: u24-s-orient, u24-s-stand-ins
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dde47e4ca07ef6957da75da6bb0f3b00e766d19514484c54169e0bbabcd4f7e9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-stand-ins:u24-g-stand-ins-0-wrong-1
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+не́кто: an indefinite pronoun referring to an unspecified person. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "кто" with the admitted gloss "не́кто" ("называются предикативными").
+shippedText=не́кто: an indefinite pronoun referring to an unspecified person. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "кто" with the admitted gloss "не́кто" ("называются предикативными").
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=afbccadd8ad357f8ef1eba980f24441075da25b8af9a2b3660c3c98217d2e225
+contentHash=fb66b58d1b641d66a63dd90cf496a8e86c6a2be441e47bcd8ffa4b4fae642e8b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-g-verbal-ne-0-feedback`
+
+- Objectives: obj-u24-verbal-ne
+- Sessions: u24-s-orient, u24-s-verbal-ne
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 21f7fa07e0c43c136308c93dcc344134b96b7376d6493af8ef4c651a2347a3eb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-verbal-ne:u24-g-verbal-ne-0-feedback
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+The frozen example No, I'm not speaking adds the particle before the speaking reply.
+Да, говорю́ is the reference cue; Нет, не говорю́ matches the requested meaning or structure. a negative first-person speaking reply.
+shippedText=The frozen example No, I'm not speaking adds the particle before the speaking reply.
+Да, говорю́ is the reference cue; Нет, не говорю́ matches the requested meaning or structure. a negative first-person speaking reply.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9c11785f6c58442dea5361f2d7b36cdabb6c26649f0ee36540c3907b73cbdc03
+contentHash=47f52f31c5229e88aa816a629d2067df9beade63b9d4f9e47a9770ce3fa2f1f1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-g-verbal-ne-0-prompt`
+
+- Objectives: obj-u24-verbal-ne
+- Sessions: u24-s-orient, u24-s-verbal-ne
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: abc4fc665f26bbe58f9cf377998cc400ca6d9c7d01ca21df61adcd4beaac06b8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-verbal-ne:u24-g-verbal-ne-0-prompt
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Which complete reply negates the speaking action in the shown affirmative reply?
+shippedText=Which complete reply negates the speaking action in the shown affirmative reply?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3e5790ac65e9e365a3de232d55cab23a632390c80a6c8b40db05d308f074447b
+contentHash=ec264283a3e99baf9a42a940800dbc8dafce3c335f7c6a0918ad6e98bfc7c574
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-g-verbal-ne-0-wrong-0`
+
+- Objectives: obj-u24-verbal-ne
+- Sessions: u24-s-orient, u24-s-verbal-ne
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2684e5b729d4eeffce2c18a9624a7083b7540a546302ba4c1e4062a119aa4457
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-verbal-ne:u24-g-verbal-ne-0-wrong-0
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Он не студент: a negative noun predicate with an omitted present copula. This differs from the meaning or structure requested in this context. The frozen example He's not a student is omitted in the present form, so the particle stands on its own.
+shippedText=Он не студент: a negative noun predicate with an omitted present copula. This differs from the meaning or structure requested in this context. The frozen example He's not a student is omitted in the present form, so the particle stands on its own.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ea3647e8d8c2eb3247145d63f7fc17c62376ebc9a36bbd6136c0647f5626dbad
+contentHash=632d5c542b8dfa557a011c197f9c65d23c24b39174d33d272bc30cfae1477dff
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-g-verbal-ne-0-wrong-1`
+
+- Objectives: obj-u24-verbal-ne
+- Sessions: u24-s-orient, u24-s-verbal-ne
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 89bda79ebe709035d271b23e60266ddde454bedc0247ac8c97f102eaaf7778e9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-verbal-ne:u24-g-verbal-ne-0-wrong-1
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Вы говори́те?: a speaking question without negation. This differs from the meaning or structure requested in this context. The frozen example Are you speaking? is the question before the reply.
+shippedText=Вы говори́те?: a speaking question without negation. This differs from the meaning or structure requested in this context. The frozen example Are you speaking? is the question before the reply.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8251a6fee7eb2e600aba797398b647d358c062fe61e45034a50b1c4dfe81e4e5
+contentHash=aec0ba1e2e9be0fde04eca02c213954ea8c5336a229ce38a2fec8aae45773519
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-g-word-order-contrast-0-feedback`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-orient, u24-s-word-order-contrast
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7bd2ba600b22a19ff0563eb240b808d0ac6d7a315e8012f7018346dc4c5ae2ce
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-word-order-contrast:u24-g-word-order-contrast-0-feedback
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+The frozen source pairs the shown form "Не надо меня уговаривать." with the admitted gloss "One should not persuade me" ("as I would never agree to do something").
+Не надо меня уговаривать. is the reference cue; One should not persuade me matches the requested meaning or structure. the supplied interpretation where the speaker would never agree.
+shippedText=The frozen source pairs the shown form "Не надо меня уговаривать." with the admitted gloss "One should not persuade me" ("as I would never agree to do something").
+Не надо меня уговаривать. is the reference cue; One should not persuade me matches the requested meaning or structure. the supplied interpretation where the speaker would never agree.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=11d57d6b3b8a7a16097978b2add76aaeaac3d66dffe17b68957e9a2c9a6007af
+contentHash=b3cb3be431df027b81980edc37c6a664820960317a880543dd1676ff508150d8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-g-word-order-contrast-0-prompt`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-orient, u24-s-word-order-contrast
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9e0ca8baac949b9b7670909b874bcd5d61ea20e3ae10764a602d5f92cef5bf07
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-word-order-contrast:u24-g-word-order-contrast-0-prompt
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+The speaker would never agree. Which supplied English interpretation fits the sentence in that context?
+shippedText=The speaker would never agree. Which supplied English interpretation fits the sentence in that context?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7d5c3c57054512e8270299f0fbaa8c0ca3c53baf30244d7cdc5b579f1d2c23af
+contentHash=a4e84fea3281ee68e42c33546d737a3b20eb0e075b57d22241cd74d85274e6cb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-g-word-order-contrast-0-wrong-0`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-orient, u24-s-word-order-contrast
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fdece73e70773cfa60913ad7561f6133b414fbc0c59df3ab4bec2b71e88876c2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-word-order-contrast:u24-g-word-order-contrast-0-wrong-0
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+There is no need to persuade me: the supplied interpretation where the speaker will do it anyway. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "Меня не надо уговаривать." with the admitted gloss "There is no need to persuade me" ("as I will do it anyway").
+shippedText=There is no need to persuade me: the supplied interpretation where the speaker will do it anyway. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "Меня не надо уговаривать." with the admitted gloss "There is no need to persuade me" ("as I will do it anyway").
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=35185a4af67e391eaef5ad0f5f7bfc524bd43c8c0ccc1cdc96289e09c8053f73
+contentHash=2aa451439a8e4fe132cfaf1a086fbd0859b5fab0a5a3442904c2574c8bc922c5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-i-absence-1-feedback`
+
+- Objectives: obj-u24-absence
+- Sessions: u24-s-orient, u24-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 76d8e01d8231dc1bfb394c94c3db7c201ca714b6fa818a96c2e216407b8628c2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-absence:u24-i-absence-1-feedback
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+The frozen note uses this form to mean 'exists' in the have-phrase, before the replacement.
+нет is the reference cue; есть matches the requested meaning or structure. existence in the positive pattern.
+shippedText=The frozen note uses this form to mean 'exists' in the have-phrase, before the replacement.
+нет is the reference cue; есть matches the requested meaning or structure. existence in the positive pattern.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5500fbca49cbfc4e1725a92347145cb43d0d11ed8c5bfa7a6c12d759b972d350
+contentHash=d6706a2ef67690766f8e6416ce2c0dd9e028962029ab2cbc37497e426fcce460
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-i-absence-1-prompt`
+
+- Objectives: obj-u24-absence
+- Sessions: u24-s-orient, u24-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 487f8306119e2fc0c996a668fa0fd835788c5b85e1a263c153a0af31e9ba6ea2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-absence:u24-i-absence-1-prompt
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Which form asserts existence instead of the shown negative expression?
+shippedText=Which form asserts existence instead of the shown negative expression?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bb56e06f132f0d5379e947b79c136d66ac9eb1e1c07d50fab093a7cef980eead
+contentHash=ffd0e88747005962db108a3e89543dea182ab9b26072d8b01429b8adae393c9e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-i-absence-1-wrong-0`
+
+- Objectives: obj-u24-absence
+- Sessions: u24-s-orient, u24-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d6b08493bbeeb0a2bc396f61ca15940990f80fd37b2528b545018a986c0df65e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-absence:u24-i-absence-1-wrong-0
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+не: the separate predicate-negation particle. This differs from the meaning or structure requested in this context. The frozen note adds this particle before a word. It is not the form that means exists.
+shippedText=не: the separate predicate-negation particle. This differs from the meaning or structure requested in this context. The frozen note adds this particle before a word. It is not the form that means exists.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5733119e9b67a3dce8e51e98d2ffeff170732654491e5e7dd967d32d9abc845e
+contentHash=ae4b5843189d9ebb6e42400f462979a4feedf95345606476f8e548b56c79f839
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-i-absence-1-wrong-1`
+
+- Objectives: obj-u24-absence
+- Sessions: u24-s-orient, u24-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ccce213badbe8834e5aaabfc0ad0f7894b70a891ed80a616e72e954aa67342b0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-absence:u24-i-absence-1-wrong-1
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Да: a yes reply. This differs from the meaning or structure requested in this context. The frozen example Yes, I'm speaking uses this as the agreeing reply.
+shippedText=Да: a yes reply. This differs from the meaning or structure requested in this context. The frozen example Yes, I'm speaking uses this as the agreeing reply.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3752619ccf9c27e0203e358592eb0a8a1cc1961ca4f20a864e34c3a6645a64ca
+contentHash=80cb76f2dbab37da343b37ca5c1126d032055a86cc7b6c22c75330aa7faa2196
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-i-absence-2-feedback`
+
+- Objectives: obj-u24-absence
+- Sessions: u24-s-orient, u24-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 672d23f296cde07f7b64f606970b20cf6aca49836bb1e0ed8e8b232fa48957f3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-absence:u24-i-absence-2-feedback
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+The frozen note says this replacement has a different meaning from the reply that means no.
+не is the reference cue; нет matches the requested meaning or structure. absence in the existence pattern.
+shippedText=The frozen note says this replacement has a different meaning from the reply that means no.
+не is the reference cue; нет matches the requested meaning or structure. absence in the existence pattern.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=33d5d7581b280784fc5ea6f4dcd505cbf7877757882022d88b8c3bc75c254a7c
+contentHash=ebf14f070ff76c64238616fb8b5599d8f3310bcc7a65a5ee211dd257731f920a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-i-absence-2-prompt`
+
+- Objectives: obj-u24-absence
+- Sessions: u24-s-orient, u24-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 393531b4e3a369fec94fb2dfd33aeca368e9088dae4a3e108a48afb589b8223e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-absence:u24-i-absence-2-prompt
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Which form expresses absence rather than merely negating the next predicate?
+shippedText=Which form expresses absence rather than merely negating the next predicate?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b8db1b65d5038d9119522c2dd95fd7eddcb88f827e82b6456542659768808218
+contentHash=050a657da6ec752bc0d641367de443a175335cfed16a315fe3249249c6cc25fa
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-i-absence-2-wrong-0`
+
+- Objectives: obj-u24-absence
+- Sessions: u24-s-orient, u24-s-absence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a565e840b9f17c39ab8e42430d4bd02617cbf2fc9da2c4fa309261f857bb403e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-absence:u24-i-absence-2-wrong-0
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+есть: existence in the positive pattern. This differs from the meaning or structure requested in this context. The frozen note uses this form to mean 'exists' before replacing it.
+shippedText=есть: existence in the positive pattern. This differs from the meaning or structure requested in this context. The frozen note uses this form to mean 'exists' before replacing it.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a38e7496f99d54e24678b162b23f17cdf81f32b900aa77aa771ff18c592fce0b
+contentHash=cea8af681ad0bbe7f07762996572df8e7c2197c11b6b538e837f1f06d6e96ae9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-i-alternation-1-feedback`
+
+- Objectives: obj-u24-alternation
+- Sessions: u24-s-orient, u24-s-alternation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9dc3624cd52aae623f458d8aa45df9040cf0e8bc04a39168799393a40334a865
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-alternation:u24-i-alternation-1-feedback
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+The frozen source pairs the shown form "Я не ви́жу кни́гу" with the admitted gloss "I don't see the book" ("I don't see the book").
+Я не ви́жу кни́гу is the reference cue; I don't see the book matches the requested meaning or structure. the supplied singular accusative reading.
+shippedText=The frozen source pairs the shown form "Я не ви́жу кни́гу" with the admitted gloss "I don't see the book" ("I don't see the book").
+Я не ви́жу кни́гу is the reference cue; I don't see the book matches the requested meaning or structure. the supplied singular accusative reading.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=055758ea79611eb83c4274094faa2c4bc9f8a37c4bae7dd05f3427690b78fdc3
+contentHash=25f8cbf33596c452c76486a56ba1d9c418d53598a3377765c5828e2733782ecc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-i-alternation-1-wrong-0`
+
+- Objectives: obj-u24-alternation
+- Sessions: u24-s-orient, u24-s-alternation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 03f82c53ddcdf5a8e5fce830f9131a93d45c42d3fe0153f34548692626e7c376
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-alternation:u24-i-alternation-1-wrong-0
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+I don't see any books is the supplied plural reading, illustrated here by Я не ви́жу книг. It differs from the singular-object reading requested by this cue.
+shippedText=I don't see any books is the supplied plural reading, illustrated here by Я не ви́жу книг. It differs from the singular-object reading requested by this cue.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cb1bf2883b4890bb7a92345bf3a217b25cb9e3a06f123f95692b0e7fcf5c61a2
+contentHash=207d2f1f6ed1073195331b91fe2bd7c4d10e2b26bc1af5e591e3fa101538596f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-i-alternation-2-feedback`
+
+- Objectives: obj-u24-alternation
+- Sessions: u24-s-orient, u24-s-alternation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 81d6283472f92b8c0216b279c7d46cb368cf8c5cb75375401128015f2a359a68
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-alternation:u24-i-alternation-2-feedback
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Я не ви́жу книг. means I don't see any books. книг is genitive plural, and не supplies the negation.
+Я не ви́жу книг. is the reference cue; I don't see any books matches the requested meaning or structure. the explicit genitive-plural reading.
+shippedText=Я не ви́жу книг. means I don't see any books. книг is genitive plural, and не supplies the negation.
+Я не ви́жу книг. is the reference cue; I don't see any books matches the requested meaning or structure. the explicit genitive-plural reading.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c45adc78755552a217f363f5fff60baf02835c12e43699f4bd797006b1bde462
+contentHash=a5794864ab9b05d10b410146e5b7efe6e1561cdfbeead829a8554487f02eb5eb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-i-alternation-2-wrong-0`
+
+- Objectives: obj-u24-alternation
+- Sessions: u24-s-orient, u24-s-alternation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4ad8c5427d2bfd1495075bbfa30e4ed4c354f313c7ab266d2a3e53e58ef3fa78
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-alternation:u24-i-alternation-2-wrong-0
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+I don't see the one book: a singular-object reading. This differs from the meaning or structure requested in this context. I don't see the one book would need a singular object such as э́ту кни́гу.
+shippedText=I don't see the one book: a singular-object reading. This differs from the meaning or structure requested in this context. I don't see the one book would need a singular object such as э́ту кни́гу.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=01bd302c35d9fb3d339e32da9027b3ecf1fcb88b5f2b88de05455aa6f5fd8f86
+contentHash=f14704beef82743c339223e5d319bae1d559dfe83c3212d88499cef4abf7b6d6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-i-alternation-2-wrong-1`
+
+- Objectives: obj-u24-alternation
+- Sessions: u24-s-orient, u24-s-alternation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5b85eec86c7a8633b8969e7b75c0b8d5ac53d62b4c2771a8cd415bfe5cb759fd
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-alternation:u24-i-alternation-2-wrong-1
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+I see the books: a positive plural-object statement. This differs from the meaning or structure requested in this context. I see the books drops the negation.
+shippedText=I see the books: a positive plural-object statement. This differs from the meaning or structure requested in this context. I see the books drops the negation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6dde1123a609fa0d9cbf7f688c7691bc0b15a4c953669e8bbd7d356a52fda6af
+contentHash=f5a7027e36c93f33fbea38cf8a9c1d866ec7f8beaadbb99be11cee53a187a34e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-i-concord-1-feedback`
+
+- Objectives: obj-u24-concord
+- Sessions: u24-s-orient, u24-s-concord
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b1736c23716679d19598f7864cbf8136cef872cfef815fed4ede44aa853e6e6f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-concord:u24-i-concord-1-feedback
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+The frozen source pairs the shown form "ничто́" with the admitted gloss "не" ("отрицательной частицы не").
+ничто́ is the reference cue; не matches the requested meaning or structure. the separate predicate-negation particle.
+shippedText=The frozen source pairs the shown form "ничто́" with the admitted gloss "не" ("отрицательной частицы не").
+ничто́ is the reference cue; не matches the requested meaning or structure. the separate predicate-negation particle.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=59373166c507b1c91bc01412ef3f6c3ab3264513e61be4576d1779adec4d46e4
+contentHash=04d40ce4c3aa48246122d687e28039b3f77093e0ff9141e3e31eea36db29a1f3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-i-placement-1-feedback`
+
+- Objectives: obj-u24-placement
+- Sessions: u24-s-orient, u24-s-placement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6f69d1f7b6f4beda8e56f23cfe53a5f1270033ef86febe7580bca057428a9b02
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-placement:u24-i-placement-1-feedback
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+The frozen source pairs the shown form "Не мне холодно." with the admitted gloss "It is not to me that it is cold.".
+Не мне холодно. is the reference cue; It is not to me that it is cold. matches the requested meaning or structure. contrastive negation of the experiencer.
+shippedText=The frozen source pairs the shown form "Не мне холодно." with the admitted gloss "It is not to me that it is cold.".
+Не мне холодно. is the reference cue; It is not to me that it is cold. matches the requested meaning or structure. contrastive negation of the experiencer.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bd826152f2de51b7452551a5c0052290ccebe594d700f4e3545387d00ddc930b
+contentHash=7994448a468a9fb8bb5f3fe6ded40a502fd2d85e4931ed9e5488c6046983f994
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-i-placement-1-wrong-0`
+
+- Objectives: obj-u24-placement
+- Sessions: u24-s-orient, u24-s-placement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e043dcadf06f16bd7ff519fa697794b3e2300c834e42ba3bf61a67def143a0b9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-placement:u24-i-placement-1-wrong-0
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+To me it is not cold.: negation of the cold state for the experiencer. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "Мне не холодно." with the admitted gloss "To me it is not cold.". That placement negates the following word.
+shippedText=To me it is not cold.: negation of the cold state for the experiencer. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "Мне не холодно." with the admitted gloss "To me it is not cold.". That placement negates the following word.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=83dd5ad29ee870ad4a74887824e638e4550ef18f1a31455cc4cf25778337fae8
+contentHash=3455fb226512ad8e9d9ff68bb8d358d0219cd7183ca08bfea64282bdf9c6130f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-i-placement-2-wrong-0`
+
+- Objectives: obj-u24-placement
+- Sessions: u24-s-orient, u24-s-placement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ed6a555a7084a8486903d6c6f6a1108b9695a0e679acc8b6809994d6e628624b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-placement:u24-i-placement-2-wrong-0
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+I am not cold.: negation of the cold state for the speaker. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "Мне не холодно." with the admitted gloss "I am not cold.". That parenthetical belongs to the other placement.
+shippedText=I am not cold.: negation of the cold state for the speaker. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "Мне не холодно." with the admitted gloss "I am not cold.". That parenthetical belongs to the other placement.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0532851c5fbb8fa86ab6e5caed731576fda9014f356556d50249ae3f021470af
+contentHash=ab7cc2c7798aa8a51031bcbe3cb008aa86636b392739fff367f824a3584b346b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-i-stand-ins-1-feedback`
+
+- Objectives: obj-u24-stand-ins
+- Sessions: u24-s-orient, u24-s-stand-ins
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ca3f3f0eee0c6c4bc15a7cfe9d2947e820299ef2d03785cedf8016611ed509a4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-stand-ins:u24-i-stand-ins-1-feedback
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+The frozen source pairs the shown form "что" with the admitted gloss "ничто́" ("Отрицательные местоимения").
+что is the reference cue; ничто́ matches the requested meaning or structure. a negative pronoun referring to nothing.
+shippedText=The frozen source pairs the shown form "что" with the admitted gloss "ничто́" ("Отрицательные местоимения").
+что is the reference cue; ничто́ matches the requested meaning or structure. a negative pronoun referring to nothing.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=06e1f39f218145ac43b4fecf48269fe9d083cfb69f4b1c7b961e0ff45d0eeee4
+contentHash=45d03d2f74f6132f43ad43878daabcbf6a5f047a322be31c6c40ea9345a213a9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-i-stand-ins-1-wrong-0`
+
+- Objectives: obj-u24-stand-ins
+- Sessions: u24-s-orient, u24-s-stand-ins
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1666df14b378a3e76aa9702b3338f3e28276b888a15951f2ac0bce968f6076af
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-stand-ins:u24-i-stand-ins-1-wrong-0
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+не́что: an indefinite pronoun referring to an unspecified thing. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "что" with the admitted gloss "не́что" ("называются предикативными").
+shippedText=не́что: an indefinite pronoun referring to an unspecified thing. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "что" with the admitted gloss "не́что" ("называются предикативными").
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3a9e7df82592f611576abc9851e0b3c14169633728ef2ae85c11880222fb7d29
+contentHash=15f2bb9379c405f61915ee52d901512c6b296f60e739812f2c0d0b9458a17c5b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-i-stand-ins-1-wrong-1`
+
+- Objectives: obj-u24-stand-ins
+- Sessions: u24-s-orient, u24-s-stand-ins
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 95f2fbfd3aef11b39e9ffe07d8d7a23ba2af9e916613547c9876a9fe0616ce32
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-stand-ins:u24-i-stand-ins-1-wrong-1
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+никто́: a negative pronoun referring to nobody. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "кто" with the admitted gloss "никто́" ("Отрицательные местоимения").
+shippedText=никто́: a negative pronoun referring to nobody. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "кто" with the admitted gloss "никто́" ("Отрицательные местоимения").
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=db813e7318ce79eca215596013b38e556c89cd28bd181fddd845ed3aa91359f8
+contentHash=0a60ddab3c1d0675f898f3b13ec6c77297c7f9d1a845fdd56890ee9dc95aa1e1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-i-stand-ins-2-feedback`
+
+- Objectives: obj-u24-stand-ins
+- Sessions: u24-s-orient, u24-s-stand-ins
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a011953d2d39165e773c6174225ca6a3d80d4783c61058f6ca35b02d71c76883
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-stand-ins:u24-i-stand-ins-2-feedback
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+не́кого спросить means there is nobody to ask. не́кого expresses absence of a person available for the infinitive action.
+не́кого спросить is the reference cue; there is nobody to ask matches the requested meaning or structure. absence of a person available for the infinitive action.
+shippedText=не́кого спросить means there is nobody to ask. не́кого expresses absence of a person available for the infinitive action.
+не́кого спросить is the reference cue; there is nobody to ask matches the requested meaning or structure. absence of a person available for the infinitive action.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3a04e6e1a2fbeb9f6ec8cdd4b478abecf6c993b63746cde6e6d6853d41e7c26b
+contentHash=5e05c9eb187df078efff2c86caea1900a4c20328e6f54d07e11950b8a395078e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-i-stand-ins-2-wrong-0`
+
+- Objectives: obj-u24-stand-ins
+- Sessions: u24-s-orient, u24-s-stand-ins
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 75576938207d9a272fc32c3de8aa6ee68ae5a075278379b1be8a19b4dbbba624
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-stand-ins:u24-i-stand-ins-2-wrong-0
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+an unspecified person: indefinite reference to a person. This differs from the meaning or structure requested in this context. an unspecified person is the reading of не́кто, not of не́кого.
+shippedText=an unspecified person: indefinite reference to a person. This differs from the meaning or structure requested in this context. an unspecified person is the reading of не́кто, not of не́кого.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0f03704449ce956cf5aa0050ff9c9559e47516c8ecb21c18afae890c52b2135f
+contentHash=7c54a0c9b588e84bccfd6bc85fd9b0fa19f52f5f205163628666135862204f93
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-i-stand-ins-2-wrong-1`
+
+- Objectives: obj-u24-stand-ins
+- Sessions: u24-s-orient, u24-s-stand-ins
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4c6d37895f0d5d51553785a6437daeca2a306bd4c013d523aa80f8f78a8ba155
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-stand-ins:u24-i-stand-ins-2-wrong-1
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+there is nothing to ask: absence of a thing for the action. This differs from the meaning or structure requested in this context. there is nothing to ask would be a нечего construction, not не́кого.
+shippedText=there is nothing to ask: absence of a thing for the action. This differs from the meaning or structure requested in this context. there is nothing to ask would be a нечего construction, not не́кого.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=150686e94609cef20ea7814e3185c470434607e81a994c1d7c78ad3ce27e973a
+contentHash=fda248a5f715283c1cbc95bc0c20d39460c94216dc82afada0a82bc38657aca9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-i-verbal-ne-1-feedback`
+
+- Objectives: obj-u24-verbal-ne
+- Sessions: u24-s-orient, u24-s-verbal-ne
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 54fdda96496d262f729ec4e36c5596fb3380ce56994211e20c634ea945f25b80
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-verbal-ne:u24-i-verbal-ne-1-feedback
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+The frozen example He's not a student is the one omitted in the present form, with the particle on its own.
+Вы говори́те? is the reference cue; Он не студент matches the requested meaning or structure. a negative noun predicate with an omitted present copula.
+shippedText=The frozen example He's not a student is the one omitted in the present form, with the particle on its own.
+Вы говори́те? is the reference cue; Он не студент matches the requested meaning or structure. a negative noun predicate with an omitted present copula.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=35241e20d1f59fcd9015439cf68d1d5ddde043a8bb8d7c3422a5d2d6ae46cad2
+contentHash=0aac255b0dfdcd513b47ba4e2602ef31b5fe3d1707ace29c25af864cb927ab95
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-i-verbal-ne-1-prompt`
+
+- Objectives: obj-u24-verbal-ne
+- Sessions: u24-s-orient, u24-s-verbal-ne
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f748b5cc5549562679e5c3a0336b0992f0592b7c76be4de158f95e762ae95b75
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-verbal-ne:u24-i-verbal-ne-1-prompt
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Which supplied sentence negates a noun predicate with the usual omitted present-tense copula?
+shippedText=Which supplied sentence negates a noun predicate with the usual omitted present-tense copula?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9a62a91a21654bd93b8f9fbd3f9f9495ec5fb4952f060ea9238f213d033f7833
+contentHash=9379b2fddcfab97ee4ed04fc323104680e381535efff177ea62744c830fac091
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-i-verbal-ne-1-wrong-0`
+
+- Objectives: obj-u24-verbal-ne
+- Sessions: u24-s-orient, u24-s-verbal-ne
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5840996ed405e882190e5995810ce0cfec30c70edf4d52f787eb42421fb6cd1b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-verbal-ne:u24-i-verbal-ne-1-wrong-0
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Нет, не говорю́: a negative first-person speaking reply. This differs from the meaning or structure requested in this context. The frozen example No, I'm not speaking adds the particle before the speaking word.
+shippedText=Нет, не говорю́: a negative first-person speaking reply. This differs from the meaning or structure requested in this context. The frozen example No, I'm not speaking adds the particle before the speaking word.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=937786ab6cc65191f3e3b30373be5759ca0c3c0a69aeb037074abedebc6266e0
+contentHash=2fd52a27efdec5b3c76a2603762d4c13e1f1b5771bb2cb282a0cc704e88049d8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-i-verbal-ne-1-wrong-1`
+
+- Objectives: obj-u24-verbal-ne
+- Sessions: u24-s-orient, u24-s-verbal-ne
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 302b77adde1e6d53d6763a964eb3ed3784b1871476b47c2c8ac3a688e071cd92
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-verbal-ne:u24-i-verbal-ne-1-wrong-1
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Да, говорю́: an affirmative speaking reply. This differs from the meaning or structure requested in this context. The frozen example Yes, I'm speaking is the agreeing reply, without the particle.
+shippedText=Да, говорю́: an affirmative speaking reply. This differs from the meaning or structure requested in this context. The frozen example Yes, I'm speaking is the agreeing reply, without the particle.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=afbcffe53d68b5b3d5d532e07653e7b6f50697a0091fea851b9c6443d16d0b8a
+contentHash=a99e2d679cb34f9e4d5da8fdd3a991901babb50cb4e0d685d387113fedd9c4ba
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-i-verbal-ne-2-feedback`
+
+- Objectives: obj-u24-verbal-ne
+- Sessions: u24-s-orient, u24-s-verbal-ne
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5261b03881aab9cab247524532757a66dcb8c87ebae41dda932e1e1a0ac14c2c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-verbal-ne:u24-i-verbal-ne-2-feedback
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+The frozen example Boris isn't coming places the particle before the coming word.
+Нет, не говорю́ is the reference cue; Борис не приходит matches the requested meaning or structure. a complete negative sentence about Boris coming.
+shippedText=The frozen example Boris isn't coming places the particle before the coming word.
+Нет, не говорю́ is the reference cue; Борис не приходит matches the requested meaning or structure. a complete negative sentence about Boris coming.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=66a8db80258f83453cf58cebded82de7d63fc74b552a6307a8e413d6c2096227
+contentHash=f405af60d5194ddc7ae7dab0da09d1d685899a73ad8305f03dd5bc685edbbadd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-i-verbal-ne-2-prompt`
+
+- Objectives: obj-u24-verbal-ne
+- Sessions: u24-s-orient, u24-s-verbal-ne
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9249b0d55107fae9faedc1ef92d4ca04073e6f48b69d1275480bbea62eaf2186
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-verbal-ne:u24-i-verbal-ne-2-prompt
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Which complete sentence negates Boris's coming?
+shippedText=Which complete sentence negates Boris's coming?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=807ef7d716b781b64d143839f4cd4f8a044d2f27c4710611a5d34703046c2227
+contentHash=f2c86b4ffdeac39b415c5a74f82bc6433832b1131652debb20ff0c9567aee0a0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-i-verbal-ne-2-wrong-0`
+
+- Objectives: obj-u24-verbal-ne
+- Sessions: u24-s-orient, u24-s-verbal-ne
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4b328a3713010571e9b69e12aa6c4d0c47381f5effff3ab7e778d0333f3923be
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-verbal-ne:u24-i-verbal-ne-2-wrong-0
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+не студент: a negative student-predicate fragment. This differs from the meaning or structure requested in this context. The frozen example He's not a student uses the particle on its own because the present form is omitted.
+shippedText=не студент: a negative student-predicate fragment. This differs from the meaning or structure requested in this context. The frozen example He's not a student uses the particle on its own because the present form is omitted.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=92533faed9a07ddca7f2fb168c385cfeca858c9e26966bcc667ee9e882c10896
+contentHash=c9e7ef11a0e46cf6e742d71f2a88175fc0777d33f3e6056a5b814cbb9ea2094b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-i-verbal-ne-2-wrong-1`
+
+- Objectives: obj-u24-verbal-ne
+- Sessions: u24-s-orient, u24-s-verbal-ne
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4333c4bb1e2ad4f2d982a84684c0faf49c992d868fb20b4692d04c5f580a86f6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-verbal-ne:u24-i-verbal-ne-2-wrong-1
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+не говорю́: a negative first-person speaking fragment. This differs from the meaning or structure requested in this context. The frozen example No, I'm not speaking places the particle before the speaking word, not the coming word.
+shippedText=не говорю́: a negative first-person speaking fragment. This differs from the meaning or structure requested in this context. The frozen example No, I'm not speaking places the particle before the speaking word, not the coming word.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4ce574aff441287f88fcefb6f4bb32a6c2eb86a2252c7823811792527d345519
+contentHash=3bed3fb207af5e827f38b386c9634fd2eec6f8bbfb7bcc4e72d7240f08e50e22
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-i-word-order-contrast-1-feedback`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-orient, u24-s-word-order-contrast
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e66ada2c489a8c55f303bb1384d5d265fe8d4e49edc195f8a2c6e6ae3eecf459
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-word-order-contrast:u24-i-word-order-contrast-1-feedback
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+The frozen source pairs the shown form "Меня не надо уговаривать." with the admitted gloss "There is no need to persuade me" ("as I will do it anyway").
+Меня не надо уговаривать. is the reference cue; There is no need to persuade me matches the requested meaning or structure. the supplied interpretation where the speaker will do it anyway.
+shippedText=The frozen source pairs the shown form "Меня не надо уговаривать." with the admitted gloss "There is no need to persuade me" ("as I will do it anyway").
+Меня не надо уговаривать. is the reference cue; There is no need to persuade me matches the requested meaning or structure. the supplied interpretation where the speaker will do it anyway.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=92c7177508fca1c8e0da674d09bd3b31935075e2c7c07aff032d5b534ad431a3
+contentHash=ca0c637f557a76d80684c6a0e0dd0babcac4d0113d32e7c5d7acc82523e26a99
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-i-word-order-contrast-1-prompt`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-orient, u24-s-word-order-contrast
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8dde4e728f387fe3bbf600a7c4539a5e30404868a2c55d4b46e405e9c9d86f68
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-word-order-contrast:u24-i-word-order-contrast-1-prompt
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+The speaker will do it anyway. Which supplied English interpretation fits the sentence in that context?
+shippedText=The speaker will do it anyway. Which supplied English interpretation fits the sentence in that context?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=dc2915a09a2882923653c68f13c468eaeb5ca9e27ea88b9c410302006f1be62e
+contentHash=9e12e9f39c7c0efd336e45e06f256542b8aa3193c541e5ddd26763380657bf0c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-u24-i-word-order-contrast-1-wrong-0`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-orient, u24-s-word-order-contrast
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4b6702a2b796ba65c22c6302cfa8955e585bbcf74262a1a629af059b5a1cbe9d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-word-order-contrast:u24-i-word-order-contrast-1-wrong-0
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+One should not persuade me: the supplied interpretation where the speaker would never agree. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "Не надо меня уговаривать." with the admitted gloss "One should not persuade me" ("as I would never agree to do something").
+shippedText=One should not persuade me: the supplied interpretation where the speaker would never agree. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "Не надо меня уговаривать." with the admitted gloss "One should not persuade me" ("as I would never agree to do something").
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=01ef4d2b5d306f509d516afcb657e0c0c27b6a1680b97f20d51f2e1313743bd8
+contentHash=611ffa8d392a2a826de177f40b17fb54b4dbb38963bb82cf7d6118d6b19922a2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-verbal-ne-guided`
+
+- Objectives: obj-u24-verbal-ne
+- Sessions: u24-s-orient, u24-s-verbal-ne
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5e2a9448cec3ce0ce1ba32192fb69eebb2b813c4c2df3be94d4f9f7353373232
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-verbal-ne:verbal-ne-guided
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Read the requested negative meaning, structure or stated context. Use the complete explanation above. A missed check returns to that full explanation.
+shippedText=Read the requested negative meaning, structure or stated context. Use the complete explanation above. A missed check returns to that full explanation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ce5285ecad4836c6ce916ebdc54c8f7a80f50ad2da9eb2ca10c99137702fc0fc
+contentHash=d18b41b8bcd4746482d4c3057e87471550a3ffbc4c2730a4ae698288efd025d6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-verbal-ne-objective`
+
+- Objectives: obj-u24-verbal-ne
+- Sessions: u24-s-orient, u24-s-verbal-ne
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 36060302b970d540f365ff24d1eb1f70798f904d27f4b83c90aa7446370825f9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-verbal-ne:verbal-ne-objective
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Distinguish a negative verb from a negative noun predicate
+shippedText=Distinguish a negative verb from a negative noun predicate
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2c8e57b8ad29d3ae39ec7a25f2d519267a3f5cbf18a9fee9e68131da38a546c7
+contentHash=df84c72bff1f1e1faa910393ac74084ac590af7967d2962cf4dab7460e4f3afa
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-verbal-ne-rem-body`
+
+- Objectives: obj-u24-verbal-ne
+- Sessions: u24-s-orient, u24-s-verbal-ne
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5eac99da1d2992f1750bbcf6727aee3807b5e3bc7baa55bc59fffa7aee5bc610
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-verbal-ne:verbal-ne-rem-body
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Да, говорю́ — Yes, I'm speaking. Нет, не говорю́ — No, I'm not speaking. The first word of each reply answers yes or no. The separate negative particle before the speaking verb negates that predicate; it is not merely the initial no reply. The guided choice keeps the speaking action and changes it to a negative reply.
+
+To negate a verb, simply add не (nye) before the verb: the shown examples illustrate this ordinary predicate-negation pattern. In a present-tense noun predicate, the verb corresponding to is is normally omitted. The negative particle can then stand before the noun predicate itself. That is a different structure from a speaking verb with a negative particle.
+
+Вы говори́те? — Are you speaking? Он не студент — He's not a student. The speaking question is not itself negated. The student statement has a noun predicate and no overt present-tense is. The check asks for that negative nominal sentence, not another speaking reply.
+
+Борис не приходит — Boris isn't coming. The negative particle precedes the coming verb. This complete sentence identifies Boris as the subject and coming as the action. The options не студент and не говорю́ are shorter fragments about being a student or speaking; they do not express the complete Boris-coming sentence. These choices recognize supplied structures rather than independently constructing every negative predicate.
+shippedText=Да, говорю́ — Yes, I'm speaking. Нет, не говорю́ — No, I'm not speaking. The first word of each reply answers yes or no. The separate negative particle before the speaking verb negates that predicate; it is not merely the initial no reply. The guided choice keeps the speaking action and changes it to a negative reply.
+
+To negate a verb, simply add не (nye) before the verb: the shown examples illustrate this ordinary predicate-negation pattern. In a present-tense noun predicate, the verb corresponding to is is normally omitted. The negative particle can then stand before the noun predicate itself. That is a different structure from a speaking verb with a negative particle.
+
+Вы говори́те? — Are you speaking? Он не студент — He's not a student. The speaking question is not itself negated. The student statement has a noun predicate and no overt present-tense is. The check asks for that negative nominal sentence, not another speaking reply.
+
+Борис не приходит — Boris isn't coming. The negative particle precedes the coming verb. This complete sentence identifies Boris as the subject and coming as the action. The options не студент and не говорю́ are shorter fragments about being a student or speaking; they do not express the complete Boris-coming sentence. These choices recognize supplied structures rather than independently constructing every negative predicate.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=12cc17042239d0f4f85fdacd671955711c6a3d556436fadfd2bf96ef1c26ed89
+contentHash=c2ab1a0eea0f81eaae9faf7da2bec934160f866b36f1cf362ad559ce5e362983
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-verbal-ne-rem-title`
+
+- Objectives: obj-u24-verbal-ne
+- Sessions: u24-s-orient, u24-s-verbal-ne
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 87598c330df923468e25d129659ae440f93d4af799fda5e774426a1607f8621f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-verbal-ne:verbal-ne-rem-title
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Review the complete negation contrast
+shippedText=Review the complete negation contrast
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b76c6eec21fd119289c9533234cd5984570b1d65c2abadba255f1b892acafd69
+contentHash=6c2dc9ac99f37fbca90657378c73311c9526571a054fa4928e9c8eeaf25a7a16
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-verbal-ne-teach-1-body`
+
+- Objectives: obj-u24-verbal-ne
+- Sessions: u24-s-orient, u24-s-verbal-ne
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4ed0034eada6ca79b8d1b04e2f161d7c598a70e156b55fe7383a2d0441606f1a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-verbal-ne:verbal-ne-teach-1-body
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Да, говорю́ — Yes, I'm speaking. Нет, не говорю́ — No, I'm not speaking. The first word of each reply answers yes or no. The separate negative particle before the speaking verb negates that predicate; it is not merely the initial no reply. The guided choice keeps the speaking action and changes it to a negative reply.
+shippedText=Да, говорю́ — Yes, I'm speaking. Нет, не говорю́ — No, I'm not speaking. The first word of each reply answers yes or no. The separate negative particle before the speaking verb negates that predicate; it is not merely the initial no reply. The guided choice keeps the speaking action and changes it to a negative reply.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2a2ecc8fe9fb0c89493c7c9348356dd3fd352bccaa0e1ad1ba2ac92139d5c964
+contentHash=865b807c349ee3202be0c11be1d8bdc3e71c259e4ed62850e762c69e7edc55cb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-verbal-ne-teach-1-title`
+
+- Objectives: obj-u24-verbal-ne
+- Sessions: u24-s-orient, u24-s-verbal-ne
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: da3bc42dc6a73259d5a788c4f4349b8b1d10bc879213c18531111b2da9133ea3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-verbal-ne:verbal-ne-teach-1-title
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+A speaking reply and its negative
+shippedText=A speaking reply and its negative
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=eb6e316f3caa6ef7cf30ef5aa4912fc3db14748fb3ca27d1098eb3f687aff4d4
+contentHash=33e48e36729d37244596aa6f2fd4333d1954e962ed063d9b70af7f8a594815fb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-verbal-ne-teach-2-body`
+
+- Objectives: obj-u24-verbal-ne
+- Sessions: u24-s-orient, u24-s-verbal-ne
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6a3f87faf387a11e49c8730735cd7b85451aac31f18faee2bc9e25f363f78a63
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-verbal-ne:verbal-ne-teach-2-body
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+To negate a verb, simply add не (nye) before the verb: the shown examples illustrate this ordinary predicate-negation pattern. In a present-tense noun predicate, the verb corresponding to is is normally omitted. The negative particle can then stand before the noun predicate itself. That is a different structure from a speaking verb with a negative particle.
+shippedText=To negate a verb, simply add не (nye) before the verb: the shown examples illustrate this ordinary predicate-negation pattern. In a present-tense noun predicate, the verb corresponding to is is normally omitted. The negative particle can then stand before the noun predicate itself. That is a different structure from a speaking verb with a negative particle.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=49bb1b2b1ccf19c77bba58b24026554d50a1fe47fad11038b8240d20770e8be5
+contentHash=4373de9b71f8fa7cbaf9dd2cea96cf4b8dee864d387d581145ced6ccf5119fd5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-verbal-ne-teach-2-title`
+
+- Objectives: obj-u24-verbal-ne
+- Sessions: u24-s-orient, u24-s-verbal-ne
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e351bccfa41a0e97a5182e8531b1952a0464a7766b8a70e34f07d29c0986ffbd
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-verbal-ne:verbal-ne-teach-2-title
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+A verb and a zero present copula
+shippedText=A verb and a zero present copula
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=74f89dc126a8e09c0650a5e6a5e9f751fe856802927313d89b48d34315b35405
+contentHash=d3e077ff381df1322d2feefe79fbeecd967528a289f47ae420850a141dc1f9be
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-verbal-ne-teach-3-body`
+
+- Objectives: obj-u24-verbal-ne
+- Sessions: u24-s-orient, u24-s-verbal-ne
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f2d493403e38edb8f48f92cba2a5cc8992dc728f9739a5fec64a6cae8db4b44b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-verbal-ne:verbal-ne-teach-3-body
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Вы говори́те? — Are you speaking? Он не студент — He's not a student. The speaking question is not itself negated. The student statement has a noun predicate and no overt present-tense is. The check asks for that negative nominal sentence, not another speaking reply.
+shippedText=Вы говори́те? — Are you speaking? Он не студент — He's not a student. The speaking question is not itself negated. The student statement has a noun predicate and no overt present-tense is. The check asks for that negative nominal sentence, not another speaking reply.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9bb4f696cab460a83c8c06c1440bb6ee8e6e2df5a483abe56278b3a33501effd
+contentHash=c25a2cdb45c248b103df8e519d8d51fec106478e7c50918847824714cf3451f3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-verbal-ne-teach-3-title`
+
+- Objectives: obj-u24-verbal-ne
+- Sessions: u24-s-orient, u24-s-verbal-ne
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9d353a999ded69df96ec34d3354345039a30608b8ae8bde5896334cf92508a63
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-verbal-ne:verbal-ne-teach-3-title
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+The question and the student statement
+shippedText=The question and the student statement
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fead0fc22034fbae6130c391355f41e2f3b340851c00a56b6a1d91a970232116
+contentHash=941c9eedcda73e253b8dcf0a1ac92d3403139b876074d29ce71b04484bd57ce2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-verbal-ne-teach-4-body`
+
+- Objectives: obj-u24-verbal-ne
+- Sessions: u24-s-orient, u24-s-verbal-ne
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8f1098d8e8980520d84292e4a4b6d9b09828cb29f359a1ded16df23159c66b54
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-verbal-ne:verbal-ne-teach-4-body
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Борис не приходит — Boris isn't coming. The negative particle precedes the coming verb. This complete sentence identifies Boris as the subject and coming as the action. The options не студент and не говорю́ are shorter fragments about being a student or speaking; they do not express the complete Boris-coming sentence. These choices recognize supplied structures rather than independently constructing every negative predicate.
+shippedText=Борис не приходит — Boris isn't coming. The negative particle precedes the coming verb. This complete sentence identifies Boris as the subject and coming as the action. The options не студент and не говорю́ are shorter fragments about being a student or speaking; they do not express the complete Boris-coming sentence. These choices recognize supplied structures rather than independently constructing every negative predicate.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ec09ed07272c87bac76eb838e9e5807970cf5bea9fad72d7cdca2c4800f429d3
+contentHash=00d54fa9ab0b4edb94780fc1f18ebe4b24c1854678949506dac1b9c0729312f5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-verbal-ne-teach-4-title`
+
+- Objectives: obj-u24-verbal-ne
+- Sessions: u24-s-orient, u24-s-verbal-ne
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0307e7721c4172b1d22494ad6a6f0a8eda5195960b3a552a0b5226f2929d5745
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-verbal-ne:verbal-ne-teach-4-title
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+A complete negative coming sentence
+shippedText=A complete negative coming sentence
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d9f527d09410c64b9c296a33c15c89e9de3e3434150ea36c3ac6f76db315d016
+contentHash=36391f031f4bfc01e93dacc7b6d65bd8a96d448eaeadda36dde52efb653da1f3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-word-order-contrast-guided`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-orient, u24-s-word-order-contrast
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 27854e5fbae115c63c2f256d17d3217b17094bde3c9246041d53b06f489cd3d5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-word-order-contrast:word-order-contrast-guided
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Read the requested negative meaning, structure or stated context. Use the complete explanation above. A missed check returns to that full explanation.
+shippedText=Read the requested negative meaning, structure or stated context. Use the complete explanation above. A missed check returns to that full explanation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ce5285ecad4836c6ce916ebdc54c8f7a80f50ad2da9eb2ca10c99137702fc0fc
+contentHash=d18b41b8bcd4746482d4c3057e87471550a3ffbc4c2730a4ae698288efd025d6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-word-order-contrast-objective`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-orient, u24-s-word-order-contrast
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4a64b4c243ae4b944ce7dc603580607cbef550a316c873bb8cd3c09880851c04
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-word-order-contrast:word-order-contrast-objective
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Interpret the supplied persuasion readings in context
+shippedText=Interpret the supplied persuasion readings in context
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d3974b1190402a7fb2833d1a8553449790ad7cfcf84f750f5e7588f6ab58dbe3
+contentHash=519050d5de3a7d046bfa860e9c2bc3500c021916312d8c8585503ef78a72c259
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-word-order-contrast-rem-body`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-orient, u24-s-word-order-contrast
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cbf36566152e2b9451e84b23d595fea0622b3d797b286980aa8f47f1141653ba
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-word-order-contrast:word-order-contrast-rem-body
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Не надо меня уговаривать. — One should not persuade me in the supplied context where the speaker would never agree. Меня не надо уговаривать. — There is no need to persuade me in the supplied context where the speaker will do it anyway. The questions provide these contexts rather than asking you to infer one unique interpretation from word order alone.
+
+Word order can change what is in focus or in the scope of a particle. It does not by itself assign one unique meaning to every sentence. Intonation and discourse context matter as well. The current source illustrates these two contextual readings; a speaker could use a sentence with a different intended emphasis in another context. The checks recognize the supplied reading, not a universal rule that moving the subject always changes prohibition into lack of necessity.
+shippedText=Не надо меня уговаривать. — One should not persuade me in the supplied context where the speaker would never agree. Меня не надо уговаривать. — There is no need to persuade me in the supplied context where the speaker will do it anyway. The questions provide these contexts rather than asking you to infer one unique interpretation from word order alone.
+
+Word order can change what is in focus or in the scope of a particle. It does not by itself assign one unique meaning to every sentence. Intonation and discourse context matter as well. The current source illustrates these two contextual readings; a speaker could use a sentence with a different intended emphasis in another context. The checks recognize the supplied reading, not a universal rule that moving the subject always changes prohibition into lack of necessity.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=34d8a6af3c42bfa818983cfff5050ec74989d4aeca3ce51fdd8b3db52bab4b0a
+contentHash=227b57c66742bb0fabe88d2e5e034d7c2404d121eb003f93aa7ded244efaff13
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-word-order-contrast-rem-title`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-orient, u24-s-word-order-contrast
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ca999d96d3f17bdb2fd34f6a7916ceefdf180b5cb47c4dba1eb1a1e97e2c0181
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-word-order-contrast:word-order-contrast-rem-title
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Review the complete negation contrast
+shippedText=Review the complete negation contrast
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b76c6eec21fd119289c9533234cd5984570b1d65c2abadba255f1b892acafd69
+contentHash=6c2dc9ac99f37fbca90657378c73311c9526571a054fa4928e9c8eeaf25a7a16
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-word-order-contrast-teach-1-body`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-orient, u24-s-word-order-contrast
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 23f3ce076e3a47d77add2bc96b488d77d2e2b061b588f04f74eb463a428136ec
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-word-order-contrast:word-order-contrast-teach-1-body
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Не надо меня уговаривать. — One should not persuade me in the supplied context where the speaker would never agree. Меня не надо уговаривать. — There is no need to persuade me in the supplied context where the speaker will do it anyway. The questions provide these contexts rather than asking you to infer one unique interpretation from word order alone.
+shippedText=Не надо меня уговаривать. — One should not persuade me in the supplied context where the speaker would never agree. Меня не надо уговаривать. — There is no need to persuade me in the supplied context where the speaker will do it anyway. The questions provide these contexts rather than asking you to infer one unique interpretation from word order alone.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ae4a30cfea173e9c7b5f9e53179baceded80affe1bff44996581e4b59435109d
+contentHash=b8174181643994e43e4e187e15df260ac3e6e151b8ebf1d160de67b21ac485a1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-word-order-contrast-teach-1-title`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-orient, u24-s-word-order-contrast
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d25ef89e7dd4e75a63606a21757f9368e3392ba0f3bf2e7b08cb30ea1e886dac
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-word-order-contrast:word-order-contrast-teach-1-title
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Two supplied readings with their stated contexts
+shippedText=Two supplied readings with their stated contexts
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8bf3f50dc30f7d1702637c06337b91fb73692a10d37140f167411530d7cf1efa
+contentHash=acdfd6ae1409253614e6e6ad5624ffbaa2c680b1afe30a3ab29fbaf4d7c5cc88
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-word-order-contrast-teach-2-body`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-orient, u24-s-word-order-contrast
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2f7132f5dd31024463585beabdd7766d5700ec12a2f96a1dafdc723de6feb5c3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-word-order-contrast:word-order-contrast-teach-2-body
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Word order can change what is in focus or in the scope of a particle. It does not by itself assign one unique meaning to every sentence. Intonation and discourse context matter as well. The current source illustrates these two contextual readings; a speaker could use a sentence with a different intended emphasis in another context. The checks recognize the supplied reading, not a universal rule that moving the subject always changes prohibition into lack of necessity.
+shippedText=Word order can change what is in focus or in the scope of a particle. It does not by itself assign one unique meaning to every sentence. Intonation and discourse context matter as well. The current source illustrates these two contextual readings; a speaker could use a sentence with a different intended emphasis in another context. The checks recognize the supplied reading, not a universal rule that moving the subject always changes prohibition into lack of necessity.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a4fae18c281ec40c36cb572b8830dc33fd7e88d58c799eaf97e611cca18b23e2
+contentHash=7d229110709d69d6ba675aa933417094da3b9191cd4c60ef0c6f1723f905fb3d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-instruction-word-order-contrast-teach-2-title`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-orient, u24-s-word-order-contrast
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0cf10e07376cf15918cd76be360c100a2359ba9c721a0a700a3bf710185d4eaf
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-word-order-contrast:word-order-contrast-teach-2-title
+originalSourceText=Retained licensed negation spans and pending absence corrections; Cornell grammar le71_78_i.htm; Gramota negative-pronoun/NE-NI guidance. Consulted 2026-10-11; independently authored English; review pending.
+Word order is not a universal meaning switch
+shippedText=Word order is not a universal meaning switch
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=78a65805a5399c04b99f942faa0ef00a5ce64eff546590c7fa4ffe50ea7b8ae8
+contentHash=584262bc56903f5994d2c39cf9f56b4602931dc4f5ec15d8b7f1dbc22d17b460
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-ex-u24-absence-0-en`
 
 - Objectives: obj-u24-absence
@@ -10629,6 +14343,21 @@ CC BY-SA 4.0
 Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
 Selected excerpts. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
+### SOURCE `src-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 4bb7355bcdaed471645229162f908afe75e5dc0978ea6ffc5617fbb237190d97
+
+Content-audit research notes
+Original app text
+Russian Companion content-audit research synthesis, content-audit-2026-10-08. Bibliography is on each note. No owned-book prose is included.
+Original research synthesis for registered content corrections. Not a quotation.
+
 ### SOURCE `src-wikipedia-russian-grammar-1369617627`
 
 - Objectives: none
@@ -10674,21 +14403,6 @@ CC BY-SA 4.0
 ReadyRussian.org, CC BY-SA 4.0. Material marked CC BY-SA is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Retained Language Generator 3 HTML sha256 27c28efba83399060a6d7145da619d250b3428cb8c91dc6c0bb66f885af8a46c retrieved 2026-09-28T16:43:13Z. This ReadyRussian license route is not a Wikipedia, Wiktionary, Wikibooks, or Wikisource license. Linked audio and web-application behavior are not admitted.
 Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
-### SOURCE `src-content-audit-research`
-
-- Objectives: none
-- Sessions: none
-- Source: src-content-audit-research
-- Rights: rights-content-audit-research
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 4bb7355bcdaed471645229162f908afe75e5dc0978ea6ffc5617fbb237190d97
-
-Content-audit research notes
-Original app text
-Russian Companion content-audit research synthesis, content-audit-2026-10-08. Bibliography is on each note. No owned-book prose is included.
-Original research synthesis for registered content corrections. Not a quotation.
-
 ### SOURCE `src-app-english-v2`
 
 - Objectives: none
@@ -10716,6 +14430,20 @@ Original
 
 src-wikibooks-russian-cc-by-sa
 CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6e474fed734ce50e827ffb29f9c8eced5c10aa037e992e43e76435b822864375
+
+src-content-audit-research
+Original app text
 permitsAppUse=true
 
 ### RIGHTS `rights-wikipedia-russian-grammar-1369617627`
@@ -10758,20 +14486,6 @@ permitsAppUse=true
 
 src-readyrussian-langgen3
 CC BY-SA 4.0
-permitsAppUse=true
-
-### RIGHTS `rights-content-audit-research`
-
-- Objectives: none
-- Sessions: none
-- Source: src-content-audit-research
-- Rights: rights-content-audit-research
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 6e474fed734ce50e827ffb29f9c8eced5c10aa037e992e43e76435b822864375
-
-src-content-audit-research
-Original app text
 permitsAppUse=true
 
 ### RIGHTS `rights-app-english-v2`
@@ -10877,16 +14591,19 @@ permitsAppUse=true
 - `u24-st-teach-verbal-ne-1` EXAMPLE `ex-u24-verbal-ne-0`
 - `u24-st-teach-verbal-ne-1` EXAMPLE `ex-u24-verbal-ne-1`
 - `u24-st-teach-verbal-ne-1` REFERENCE `ref-u2125-attribution`
-- `u24-st-guided-verbal-ne-1` REMEDIATION `u24-st-rem-verbal-ne`
-- `u24-st-guided-verbal-ne-1` ITEM `u24-g-verbal-ne-0`
 - `u24-st-teach-verbal-ne-2` REFERENCE `ref-u2125-attribution`
 - `u24-st-teach-verbal-ne-3` EXAMPLE `ex-u24-verbal-ne-2`
 - `u24-st-teach-verbal-ne-3` EXAMPLE `ex-u24-verbal-ne-3`
 - `u24-st-teach-verbal-ne-3` REFERENCE `ref-u2125-attribution`
 - `u24-st-teach-verbal-ne-4` EXAMPLE `ex-u24-verbal-ne-4`
 - `u24-st-teach-verbal-ne-4` REFERENCE `ref-u2125-attribution`
+- `u24-st-guided-verbal-ne-1` REMEDIATION `u24-st-rem-verbal-ne`
+- `u24-st-guided-verbal-ne-1` ITEM `u24-g-verbal-ne-0`
 - `u24-st-rem-verbal-ne` EXAMPLE `ex-u24-verbal-ne-0`
 - `u24-st-rem-verbal-ne` EXAMPLE `ex-u24-verbal-ne-1`
+- `u24-st-rem-verbal-ne` EXAMPLE `ex-u24-verbal-ne-2`
+- `u24-st-rem-verbal-ne` EXAMPLE `ex-u24-verbal-ne-3`
+- `u24-st-rem-verbal-ne` EXAMPLE `ex-u24-verbal-ne-4`
 - `u24-st-check-verbal-ne` REMEDIATION `u24-st-rem-verbal-ne`
 - `u24-st-check-verbal-ne` ITEM `u24-i-verbal-ne-1`
 - `u24-st-check-verbal-ne` ITEM `u24-i-verbal-ne-2`
@@ -10894,13 +14611,14 @@ permitsAppUse=true
 - `u24-st-teach-absence-1` EXAMPLE `ex-u24-absence-0`
 - `u24-st-teach-absence-1` EXAMPLE `ex-u24-absence-1`
 - `u24-st-teach-absence-1` REFERENCE `ref-u2125-attribution`
-- `u24-st-guided-absence-1` REMEDIATION `u24-st-rem-absence`
-- `u24-st-guided-absence-1` ITEM `u24-g-absence-0`
 - `u24-st-teach-absence-2` REFERENCE `ref-u2125-attribution`
 - `u24-st-teach-absence-3` EXAMPLE `ex-u24-absence-2`
 - `u24-st-teach-absence-3` REFERENCE `ref-u2125-attribution`
+- `u24-st-guided-absence-1` REMEDIATION `u24-st-rem-absence`
+- `u24-st-guided-absence-1` ITEM `u24-g-absence-0`
 - `u24-st-rem-absence` EXAMPLE `ex-u24-absence-0`
 - `u24-st-rem-absence` EXAMPLE `ex-u24-absence-1`
+- `u24-st-rem-absence` EXAMPLE `ex-u24-absence-2`
 - `u24-st-check-absence` REMEDIATION `u24-st-rem-absence`
 - `u24-st-check-absence` ITEM `u24-i-absence-1`
 - `u24-st-check-absence` ITEM `u24-i-absence-2`
@@ -10908,9 +14626,9 @@ permitsAppUse=true
 - `u24-st-teach-alternation-1` EXAMPLE `ex-u24-alternation-0`
 - `u24-st-teach-alternation-1` EXAMPLE `ex-u24-alternation-1`
 - `u24-st-teach-alternation-1` REFERENCE `ref-u2125-attribution`
+- `u24-st-teach-alternation-2` REFERENCE `ref-u2125-attribution`
 - `u24-st-guided-alternation-1` REMEDIATION `u24-st-rem-alternation`
 - `u24-st-guided-alternation-1` ITEM `u24-g-alternation-0`
-- `u24-st-teach-alternation-2` REFERENCE `ref-u2125-attribution`
 - `u24-st-rem-alternation` EXAMPLE `ex-u24-alternation-0`
 - `u24-st-rem-alternation` EXAMPLE `ex-u24-alternation-1`
 - `u24-st-check-alternation` REMEDIATION `u24-st-rem-alternation`
@@ -10935,9 +14653,9 @@ permitsAppUse=true
 - `u24-st-teach-concord-1` EXAMPLE `ex-u24-concord-0`
 - `u24-st-teach-concord-1` EXAMPLE `ex-u24-concord-1`
 - `u24-st-teach-concord-1` REFERENCE `ref-u2125-attribution`
+- `u24-st-teach-concord-2` REFERENCE `ref-u2125-attribution`
 - `u24-st-guided-concord-1` REMEDIATION `u24-st-rem-concord`
 - `u24-st-guided-concord-1` ITEM `u24-g-concord-0`
-- `u24-st-teach-concord-2` REFERENCE `ref-u2125-attribution`
 - `u24-st-rem-concord` EXAMPLE `ex-u24-concord-0`
 - `u24-st-rem-concord` EXAMPLE `ex-u24-concord-1`
 - `u24-st-check-concord` REMEDIATION `u24-st-rem-concord`
@@ -10947,9 +14665,9 @@ permitsAppUse=true
 - `u24-st-teach-word-order-contrast-1` EXAMPLE `ex-u24-word-order-contrast-0`
 - `u24-st-teach-word-order-contrast-1` EXAMPLE `ex-u24-word-order-contrast-1`
 - `u24-st-teach-word-order-contrast-1` REFERENCE `ref-u2125-attribution`
+- `u24-st-teach-word-order-contrast-2` REFERENCE `ref-u2125-attribution`
 - `u24-st-guided-word-order-contrast-1` REMEDIATION `u24-st-rem-word-order-contrast`
 - `u24-st-guided-word-order-contrast-1` ITEM `u24-g-word-order-contrast-0`
-- `u24-st-teach-word-order-contrast-2` REFERENCE `ref-u2125-attribution`
 - `u24-st-rem-word-order-contrast` EXAMPLE `ex-u24-word-order-contrast-0`
 - `u24-st-rem-word-order-contrast` EXAMPLE `ex-u24-word-order-contrast-1`
 - `u24-st-check-word-order-contrast` REMEDIATION `u24-st-rem-word-order-contrast`
@@ -10959,9 +14677,9 @@ permitsAppUse=true
 - `u24-st-teach-placement-1` EXAMPLE `ex-u24-placement-0`
 - `u24-st-teach-placement-1` EXAMPLE `ex-u24-placement-1`
 - `u24-st-teach-placement-1` REFERENCE `ref-u2125-attribution`
+- `u24-st-teach-placement-2` REFERENCE `ref-u2125-attribution`
 - `u24-st-guided-placement-1` REMEDIATION `u24-st-rem-placement`
 - `u24-st-guided-placement-1` ITEM `u24-g-placement-0`
-- `u24-st-teach-placement-2` REFERENCE `ref-u2125-attribution`
 - `u24-st-rem-placement` EXAMPLE `ex-u24-placement-0`
 - `u24-st-rem-placement` EXAMPLE `ex-u24-placement-1`
 - `u24-st-check-placement` REMEDIATION `u24-st-rem-placement`
@@ -11079,6 +14797,125 @@ permitsAppUse=true
 - `obj-u24-stand-ins` PROVENANCE `prov-ca-u24-absence-participant-2`
 - `obj-u24-stand-ins` PROVENANCE `prov-ca-u24-absence-participant-3`
 - `obj-u24-stand-ins` PROVENANCE `prov-ca-u24-absence-prompt`
+- `obj-u24-absence` PROVENANCE `prov-ca-u24-instruction-absence-guided`
+- `obj-u24-absence` PROVENANCE `prov-ca-u24-instruction-absence-objective`
+- `obj-u24-absence` PROVENANCE `prov-ca-u24-instruction-absence-rem-body`
+- `obj-u24-absence` PROVENANCE `prov-ca-u24-instruction-absence-rem-title`
+- `obj-u24-absence` PROVENANCE `prov-ca-u24-instruction-absence-teach-1-body`
+- `obj-u24-absence` PROVENANCE `prov-ca-u24-instruction-absence-teach-1-title`
+- `obj-u24-absence` PROVENANCE `prov-ca-u24-instruction-absence-teach-2-body`
+- `obj-u24-absence` PROVENANCE `prov-ca-u24-instruction-absence-teach-2-title`
+- `obj-u24-absence` PROVENANCE `prov-ca-u24-instruction-absence-teach-3-body`
+- `obj-u24-absence` PROVENANCE `prov-ca-u24-instruction-absence-teach-3-title`
+- `obj-u24-alternation` PROVENANCE `prov-ca-u24-instruction-alternation-guided`
+- `obj-u24-alternation` PROVENANCE `prov-ca-u24-instruction-alternation-objective`
+- `obj-u24-alternation` PROVENANCE `prov-ca-u24-instruction-alternation-rem-body`
+- `obj-u24-alternation` PROVENANCE `prov-ca-u24-instruction-alternation-rem-title`
+- `obj-u24-alternation` PROVENANCE `prov-ca-u24-instruction-alternation-teach-1-body`
+- `obj-u24-alternation` PROVENANCE `prov-ca-u24-instruction-alternation-teach-1-title`
+- `obj-u24-alternation` PROVENANCE `prov-ca-u24-instruction-alternation-teach-2-body`
+- `obj-u24-alternation` PROVENANCE `prov-ca-u24-instruction-alternation-teach-2-title`
+- `obj-u24-concord` PROVENANCE `prov-ca-u24-instruction-concord-guided`
+- `obj-u24-concord` PROVENANCE `prov-ca-u24-instruction-concord-objective`
+- `obj-u24-concord` PROVENANCE `prov-ca-u24-instruction-concord-rem-body`
+- `obj-u24-concord` PROVENANCE `prov-ca-u24-instruction-concord-rem-title`
+- `obj-u24-concord` PROVENANCE `prov-ca-u24-instruction-concord-teach-1-body`
+- `obj-u24-concord` PROVENANCE `prov-ca-u24-instruction-concord-teach-1-title`
+- `obj-u24-concord` PROVENANCE `prov-ca-u24-instruction-concord-teach-2-body`
+- `obj-u24-concord` PROVENANCE `prov-ca-u24-instruction-concord-teach-2-title`
+- `obj-u24-placement` PROVENANCE `prov-ca-u24-instruction-placement-guided`
+- `obj-u24-placement` PROVENANCE `prov-ca-u24-instruction-placement-objective`
+- `obj-u24-placement` PROVENANCE `prov-ca-u24-instruction-placement-rem-body`
+- `obj-u24-placement` PROVENANCE `prov-ca-u24-instruction-placement-rem-title`
+- `obj-u24-placement` PROVENANCE `prov-ca-u24-instruction-placement-teach-1-body`
+- `obj-u24-placement` PROVENANCE `prov-ca-u24-instruction-placement-teach-1-title`
+- `obj-u24-placement` PROVENANCE `prov-ca-u24-instruction-placement-teach-2-body`
+- `obj-u24-placement` PROVENANCE `prov-ca-u24-instruction-placement-teach-2-title`
+- `obj-u24-stand-ins` PROVENANCE `prov-ca-u24-instruction-stand-ins-guided`
+- `obj-u24-stand-ins` PROVENANCE `prov-ca-u24-instruction-stand-ins-objective`
+- `obj-u24-stand-ins` PROVENANCE `prov-ca-u24-instruction-stand-ins-rem-body`
+- `obj-u24-stand-ins` PROVENANCE `prov-ca-u24-instruction-stand-ins-rem-title`
+- `obj-u24-stand-ins` PROVENANCE `prov-ca-u24-instruction-stand-ins-teach-1-body`
+- `obj-u24-stand-ins` PROVENANCE `prov-ca-u24-instruction-stand-ins-teach-1-title`
+- `obj-u24-stand-ins` PROVENANCE `prov-ca-u24-instruction-stand-ins-teach-2-body`
+- `obj-u24-stand-ins` PROVENANCE `prov-ca-u24-instruction-stand-ins-teach-2-title`
+- `obj-u24-stand-ins` PROVENANCE `prov-ca-u24-instruction-stand-ins-teach-3-body`
+- `obj-u24-stand-ins` PROVENANCE `prov-ca-u24-instruction-stand-ins-teach-3-title`
+- `obj-u24-absence` PROVENANCE `prov-ca-u24-instruction-u24-g-absence-0-feedback`
+- `obj-u24-absence` PROVENANCE `prov-ca-u24-instruction-u24-g-absence-0-prompt`
+- `obj-u24-absence` PROVENANCE `prov-ca-u24-instruction-u24-g-absence-0-wrong-0`
+- `obj-u24-absence` PROVENANCE `prov-ca-u24-instruction-u24-g-absence-0-wrong-1`
+- `obj-u24-alternation` PROVENANCE `prov-ca-u24-instruction-u24-g-alternation-0-feedback`
+- `obj-u24-alternation` PROVENANCE `prov-ca-u24-instruction-u24-g-alternation-0-wrong-0`
+- `obj-u24-alternation` PROVENANCE `prov-ca-u24-instruction-u24-g-alternation-0-wrong-1`
+- `obj-u24-concord` PROVENANCE `prov-ca-u24-instruction-u24-g-concord-0-feedback`
+- `obj-u24-concord` PROVENANCE `prov-ca-u24-instruction-u24-g-concord-0-wrong-0`
+- `obj-u24-concord` PROVENANCE `prov-ca-u24-instruction-u24-g-concord-0-wrong-1`
+- `obj-u24-placement` PROVENANCE `prov-ca-u24-instruction-u24-g-placement-0-feedback`
+- `obj-u24-placement` PROVENANCE `prov-ca-u24-instruction-u24-g-placement-0-wrong-0`
+- `obj-u24-stand-ins` PROVENANCE `prov-ca-u24-instruction-u24-g-stand-ins-0-feedback`
+- `obj-u24-stand-ins` PROVENANCE `prov-ca-u24-instruction-u24-g-stand-ins-0-wrong-0`
+- `obj-u24-stand-ins` PROVENANCE `prov-ca-u24-instruction-u24-g-stand-ins-0-wrong-1`
+- `obj-u24-verbal-ne` PROVENANCE `prov-ca-u24-instruction-u24-g-verbal-ne-0-feedback`
+- `obj-u24-verbal-ne` PROVENANCE `prov-ca-u24-instruction-u24-g-verbal-ne-0-prompt`
+- `obj-u24-verbal-ne` PROVENANCE `prov-ca-u24-instruction-u24-g-verbal-ne-0-wrong-0`
+- `obj-u24-verbal-ne` PROVENANCE `prov-ca-u24-instruction-u24-g-verbal-ne-0-wrong-1`
+- `obj-u24-word-order-contrast` PROVENANCE `prov-ca-u24-instruction-u24-g-word-order-contrast-0-feedback`
+- `obj-u24-word-order-contrast` PROVENANCE `prov-ca-u24-instruction-u24-g-word-order-contrast-0-prompt`
+- `obj-u24-word-order-contrast` PROVENANCE `prov-ca-u24-instruction-u24-g-word-order-contrast-0-wrong-0`
+- `obj-u24-absence` PROVENANCE `prov-ca-u24-instruction-u24-i-absence-1-feedback`
+- `obj-u24-absence` PROVENANCE `prov-ca-u24-instruction-u24-i-absence-1-prompt`
+- `obj-u24-absence` PROVENANCE `prov-ca-u24-instruction-u24-i-absence-1-wrong-0`
+- `obj-u24-absence` PROVENANCE `prov-ca-u24-instruction-u24-i-absence-1-wrong-1`
+- `obj-u24-absence` PROVENANCE `prov-ca-u24-instruction-u24-i-absence-2-feedback`
+- `obj-u24-absence` PROVENANCE `prov-ca-u24-instruction-u24-i-absence-2-prompt`
+- `obj-u24-absence` PROVENANCE `prov-ca-u24-instruction-u24-i-absence-2-wrong-0`
+- `obj-u24-alternation` PROVENANCE `prov-ca-u24-instruction-u24-i-alternation-1-feedback`
+- `obj-u24-alternation` PROVENANCE `prov-ca-u24-instruction-u24-i-alternation-1-wrong-0`
+- `obj-u24-alternation` PROVENANCE `prov-ca-u24-instruction-u24-i-alternation-2-feedback`
+- `obj-u24-alternation` PROVENANCE `prov-ca-u24-instruction-u24-i-alternation-2-wrong-0`
+- `obj-u24-alternation` PROVENANCE `prov-ca-u24-instruction-u24-i-alternation-2-wrong-1`
+- `obj-u24-concord` PROVENANCE `prov-ca-u24-instruction-u24-i-concord-1-feedback`
+- `obj-u24-placement` PROVENANCE `prov-ca-u24-instruction-u24-i-placement-1-feedback`
+- `obj-u24-placement` PROVENANCE `prov-ca-u24-instruction-u24-i-placement-1-wrong-0`
+- `obj-u24-placement` PROVENANCE `prov-ca-u24-instruction-u24-i-placement-2-wrong-0`
+- `obj-u24-stand-ins` PROVENANCE `prov-ca-u24-instruction-u24-i-stand-ins-1-feedback`
+- `obj-u24-stand-ins` PROVENANCE `prov-ca-u24-instruction-u24-i-stand-ins-1-wrong-0`
+- `obj-u24-stand-ins` PROVENANCE `prov-ca-u24-instruction-u24-i-stand-ins-1-wrong-1`
+- `obj-u24-stand-ins` PROVENANCE `prov-ca-u24-instruction-u24-i-stand-ins-2-feedback`
+- `obj-u24-stand-ins` PROVENANCE `prov-ca-u24-instruction-u24-i-stand-ins-2-wrong-0`
+- `obj-u24-stand-ins` PROVENANCE `prov-ca-u24-instruction-u24-i-stand-ins-2-wrong-1`
+- `obj-u24-verbal-ne` PROVENANCE `prov-ca-u24-instruction-u24-i-verbal-ne-1-feedback`
+- `obj-u24-verbal-ne` PROVENANCE `prov-ca-u24-instruction-u24-i-verbal-ne-1-prompt`
+- `obj-u24-verbal-ne` PROVENANCE `prov-ca-u24-instruction-u24-i-verbal-ne-1-wrong-0`
+- `obj-u24-verbal-ne` PROVENANCE `prov-ca-u24-instruction-u24-i-verbal-ne-1-wrong-1`
+- `obj-u24-verbal-ne` PROVENANCE `prov-ca-u24-instruction-u24-i-verbal-ne-2-feedback`
+- `obj-u24-verbal-ne` PROVENANCE `prov-ca-u24-instruction-u24-i-verbal-ne-2-prompt`
+- `obj-u24-verbal-ne` PROVENANCE `prov-ca-u24-instruction-u24-i-verbal-ne-2-wrong-0`
+- `obj-u24-verbal-ne` PROVENANCE `prov-ca-u24-instruction-u24-i-verbal-ne-2-wrong-1`
+- `obj-u24-word-order-contrast` PROVENANCE `prov-ca-u24-instruction-u24-i-word-order-contrast-1-feedback`
+- `obj-u24-word-order-contrast` PROVENANCE `prov-ca-u24-instruction-u24-i-word-order-contrast-1-prompt`
+- `obj-u24-word-order-contrast` PROVENANCE `prov-ca-u24-instruction-u24-i-word-order-contrast-1-wrong-0`
+- `obj-u24-verbal-ne` PROVENANCE `prov-ca-u24-instruction-verbal-ne-guided`
+- `obj-u24-verbal-ne` PROVENANCE `prov-ca-u24-instruction-verbal-ne-objective`
+- `obj-u24-verbal-ne` PROVENANCE `prov-ca-u24-instruction-verbal-ne-rem-body`
+- `obj-u24-verbal-ne` PROVENANCE `prov-ca-u24-instruction-verbal-ne-rem-title`
+- `obj-u24-verbal-ne` PROVENANCE `prov-ca-u24-instruction-verbal-ne-teach-1-body`
+- `obj-u24-verbal-ne` PROVENANCE `prov-ca-u24-instruction-verbal-ne-teach-1-title`
+- `obj-u24-verbal-ne` PROVENANCE `prov-ca-u24-instruction-verbal-ne-teach-2-body`
+- `obj-u24-verbal-ne` PROVENANCE `prov-ca-u24-instruction-verbal-ne-teach-2-title`
+- `obj-u24-verbal-ne` PROVENANCE `prov-ca-u24-instruction-verbal-ne-teach-3-body`
+- `obj-u24-verbal-ne` PROVENANCE `prov-ca-u24-instruction-verbal-ne-teach-3-title`
+- `obj-u24-verbal-ne` PROVENANCE `prov-ca-u24-instruction-verbal-ne-teach-4-body`
+- `obj-u24-verbal-ne` PROVENANCE `prov-ca-u24-instruction-verbal-ne-teach-4-title`
+- `obj-u24-word-order-contrast` PROVENANCE `prov-ca-u24-instruction-word-order-contrast-guided`
+- `obj-u24-word-order-contrast` PROVENANCE `prov-ca-u24-instruction-word-order-contrast-objective`
+- `obj-u24-word-order-contrast` PROVENANCE `prov-ca-u24-instruction-word-order-contrast-rem-body`
+- `obj-u24-word-order-contrast` PROVENANCE `prov-ca-u24-instruction-word-order-contrast-rem-title`
+- `obj-u24-word-order-contrast` PROVENANCE `prov-ca-u24-instruction-word-order-contrast-teach-1-body`
+- `obj-u24-word-order-contrast` PROVENANCE `prov-ca-u24-instruction-word-order-contrast-teach-1-title`
+- `obj-u24-word-order-contrast` PROVENANCE `prov-ca-u24-instruction-word-order-contrast-teach-2-body`
+- `obj-u24-word-order-contrast` PROVENANCE `prov-ca-u24-instruction-word-order-contrast-teach-2-title`
 - `obj-u24-absence` PROVENANCE `prov-ex-u24-absence-0-en`
 - `obj-u24-absence` PROVENANCE `prov-ex-u24-absence-0-ru`
 - `obj-u24-absence` PROVENANCE `prov-ex-u24-absence-1-en`
