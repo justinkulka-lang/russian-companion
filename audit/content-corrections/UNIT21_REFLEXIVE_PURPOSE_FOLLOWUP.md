@@ -1,0 +1,13 @@
+# Unit 21 reflexive ownership, object reference and conjunctions
+
+Implemented pending final audit on 2026-10-11. Nine teaching cards in three sessions precede guided practice, and complete remediation repeats every explanation and retains every worked-example identity. Ownership follows the subject while possessive agreement follows the possessed noun; matched movie, book and jeans examples explain what changes when the subject changes. The object-reference lesson distinguishes loving oneself from loving a wife. The live remediation no longer equates the wife noun with the verb phrase I love.
+
+The source citation constant now uses the full retained wife sentence and its full translation. Requiring the full citation is stronger than the old fragment. Isolation and cross-sentence citation rejection remain active, with an additional negative check rejecting the former fragment. Original licensed source text and provenance records remain retained.
+
+The causal conjunction question retains because as its key and replaces synonymous causal since with the already-admitted although option. The source relationship remains EXPLICIT_SOURCE_PAIR and its participants identify the licensed concession row. Purpose, condition, reason, concession and temporal meanings are explained before practice. The conjunction lesson describes same-subject infinitive purpose but does not claim that the existing selection checks assess sentence production.
+
+75 new authored English synthesis records remain unsigned. Explicit empty final-audit objects equal to Kotlin schema defaults are omitted from provenance JSON; typed pack equality and semantic digest equality verify the representation change. No review identity or acceptance evidence is removed.
+
+Android CI on the preceding4c823 head completed647tests with2failures and1skip. BatchA's explanation test still required old verbatim scaffolds after source-backed explanations were expanded. The corrected test checks admitted pending explanation records and retained source citations while preserving every key-swap, explanation-swap, trailing-substring and source/relationship assertion. Unit1's runtime test clicked Continue immediately after asynchronous answer persistence; it now waits for the button's enabled semantics before advancing. This runtime timing diagnosis is an inference from the failure and asynchronous write code. Its Android verification remains pending; host tests do not exercise Compose or persistence.
+
+All30 units remain development and review pending. Linguistic and mapping signatures remain unsigned. Candidate remains unfrozen with no recorded artifact or public release approval. PR64 remains draft.

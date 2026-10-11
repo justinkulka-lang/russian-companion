@@ -3,15 +3,18 @@ package dev.russiancompanion.v2
 import android.content.Context
 import android.os.Looper
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.semantics.SemanticsProperties
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.semantics.testTag
 import androidx.compose.material3.Text
+import androidx.compose.ui.test.assertIsEnabled
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.assertIsNotEnabled
 import androidx.compose.ui.test.assertIsNotSelected
 import androidx.compose.ui.test.assertIsSelected
 import androidx.compose.ui.test.junit4.StateRestorationTester
 import androidx.compose.ui.test.junit4.v2.createComposeRule
+import androidx.compose.ui.test.onAllNodesWithTag
 import androidx.compose.ui.test.onAllNodesWithText
 import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.onNodeWithText
@@ -224,11 +227,13 @@ class RuntimeCorrectionTest {
         iotated.exampleIds.forEach { id ->
             compose.onNodeWithTag("v2-example-$id").performScrollTo().assertIsDisplayed()
         }
+        awaitEnabled("v2-session-continue")
         compose.onNodeWithTag("v2-session-continue").performClick()
         val intervening = pack.session("u1-s-iotated")!!.steps.drop(1).dropLast(1)
         intervening.forEach { guided ->
             awaitText(guided.title)
             guided.itemIds.forEach { id -> choose(pack.item(id)!!, wrong = false) }
+            awaitEnabled("v2-session-continue")
             compose.onNodeWithTag("v2-session-continue").performClick()
         }
         awaitText(check.title)
@@ -254,6 +259,7 @@ class RuntimeCorrectionTest {
             choose(other, wrong = true)
             awaitTag("v2-item-feedback-$id")
         }
+        awaitEnabled("v2-session-continue")
         compose.onNodeWithTag("v2-session-continue").performClick()
         awaitText("Review advancement")
         compose.onNodeWithText("Review advancement").assertIsDisplayed()
@@ -860,6 +866,14 @@ class RuntimeCorrectionTest {
             Thread.sleep(20)
         }
         compose.onNodeWithText(text).assertIsDisplayed()
+    }
+
+    private fun awaitEnabled(tag: String) {
+        compose.waitUntil(timeoutMillis = 5_000) {
+            compose.onAllNodesWithTag(tag).fetchSemanticsNodes().singleOrNull()
+                ?.config?.contains(SemanticsProperties.Disabled) == false
+        }
+        compose.onNodeWithTag(tag).assertIsEnabled()
     }
 
     private fun awaitText(text: String) {

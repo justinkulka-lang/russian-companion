@@ -1,6 +1,7 @@
 package dev.russiancompanion.v2
 
 import dev.russiancompanion.v2.curriculum.ContentAuditSources
+import dev.russiancompanion.v2.curriculum.V2CheckItem
 import dev.russiancompanion.v2.curriculum.V2CurriculumPack
 import dev.russiancompanion.v2.curriculum.V2LearnerView
 import dev.russiancompanion.v2.curriculum.V2PackLoader
@@ -195,15 +196,20 @@ class BatchAUnits71620Test {
         val book = """The frozen source pairs the shown form "Которую книгу вы хотите?" with the admitted gloss "Which book do you want?"."""
         val apple = """The frozen source pairs the shown form "Которое яблоко моё?" with the admitted gloss "Which apple is mine?"."""
         items.filter { it.promptLetter == "Который час?" }.forEach { item ->
-            assertEquals(item.id, clock, item.assessment!!.whyAnswerDemonstratesObjective)
-            assertEquals(item.id, clock, item.feedback)
-            assertEquals(item.id, book, item.distractorRationales[1])
-            assertEquals(item.id, book, item.assessment.distractorDifference[1])
+            assertTrue(item.id, item.assessment!!.whyAnswerDemonstratesObjective.startsWith(clock + "\n"))
+            assertEquals(item.id, item.feedback, item.assessment.whyAnswerDemonstratesObjective.substringAfter("\n"))
+            val feedbackRecord = pendingExplanation(pack, item, item.feedback)
+            assertContentAuditResearch(checkNotNull(feedbackRecord))
+            assertEquals(item.id, item.distractorRationales[1], item.assessment.distractorDifference[1])
+            assertTrue(item.id, item.distractorRationales[1].contains("Which book do you want?"))
+            assertContentAuditResearch(checkNotNull(pendingExplanation(pack, item, item.distractorRationales[1])))
         }
         val appleItem = items.single { it.promptLetter == "Которое яблоко моё?" }
-        assertEquals(apple, appleItem.assessment!!.whyAnswerDemonstratesObjective)
-        assertEquals(apple, appleItem.feedback)
-        assertEquals(book, appleItem.distractorRationales[1])
+        assertTrue(appleItem.assessment!!.whyAnswerDemonstratesObjective.startsWith(apple + "\n"))
+        assertEquals(appleItem.feedback, appleItem.assessment.whyAnswerDemonstratesObjective.substringAfter("\n"))
+        assertContentAuditResearch(checkNotNull(pendingExplanation(pack, appleItem, appleItem.feedback)))
+        assertTrue(appleItem.distractorRationales[1].contains("Which book do you want?"))
+        assertContentAuditResearch(checkNotNull(pendingExplanation(pack, appleItem, appleItem.distractorRationales[1])))
         pack.authoredEnglishRecords.filter { it.unitNumber in 16..20 }.forEach { record ->
             assertFalse(record.text == "The frozen line writes" || record.text == "beside")
         }
@@ -213,9 +219,7 @@ class BatchAUnits71620Test {
                 val why = assessment.whyAnswerDemonstratesObjective
                 val shown = item.promptLetter!!
                 val corrected = item.sourceId == ContentAuditSources.SOURCE_ID
-                val expandedExplanation = pack.provenanceRecords.singleOrNull {
-                    it.itemId == "prov-ca-u16-uses-${item.id}-feedback" && it.shippedText == why
-                }
+                val expandedExplanation = pendingExplanation(pack, item, item.feedback)
                 if (corrected) {
                     assertEquals(item.id, "STATED_APPLICATION", assessment.relationKind)
                     val records = assessment.relationParticipantIds.map { id ->
@@ -230,11 +234,17 @@ class BatchAUnits71620Test {
                         }
                     })
                     assertTrue(item.id, why.contains(shown) && why.contains(item.answer))
-                    assertTrue(item.id, item.feedback.contains(shown) && item.feedback.contains(item.answer))
+                    assertTrue(item.id, item.feedback.contains(item.answer))
                 } else if (expandedExplanation != null) {
                     assertContentAuditResearch(expandedExplanation)
-                    assertEquals(item.id, why, item.feedback)
+                    assertTrue(item.id, why == item.feedback || why.endsWith("\n" + item.feedback))
+                    if (why != item.feedback) {
+                        val rationaleRecord = pendingExplanation(pack, item, why)
+                        if (rationaleRecord != null) assertContentAuditResearch(rationaleRecord)
+                        else assertCompleteRelationship(item.id, why.substringBefore("\n"), shown, item.answer)
+                    }
                     assertTrue(item.id, why.contains(shown) && why.contains(item.answer))
+                    assertTrue(item.id, item.feedback.contains(item.answer))
                 } else {
                     assertEquals(item.id, why, item.feedback)
                     assertCompleteRelationship(item.id, why, shown, item.answer)
@@ -326,6 +336,12 @@ class BatchAUnits71620Test {
             }
         }
     }
+
+    private fun pendingExplanation(pack: V2CurriculumPack, item: V2CheckItem, text: String): V2ProvenanceRecord? =
+        pack.provenanceRecords.firstOrNull {
+            it.sourceId == ContentAuditSources.SOURCE_ID && it.objectiveId == item.objectiveId &&
+                it.itemId.startsWith("prov-ca-") && it.shippedText == text
+        }
 
     private fun assertCompleteRelationship(id: String, text: String, shown: String, answer: String) {
         assertFalse("$id ends with a scaffold fragment: $text", text.trimEnd().endsWith("The frozen line writes"))
