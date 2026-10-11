@@ -1,0 +1,15 @@
+# Unit 18 comparison and relative instruction
+
+PR64 remains draft. Both existing instructional sessions now present all six teaching cards before guided practice. Remediation includes all teaching explanations and all four source examples in each session. The previously untaught two-word kinder cue is explained before its check. Six items receive readable English prompts, feedback and distinct distractor explanations; original source citations remain in assessment rationales.
+
+Comparison instruction distinguishes unchanging short comparatives from full adjective forms, agreement in the two-word construction, and comparative versus superlative meanings. The existing better gloss for the full adjective is retained and explicitly scoped: the form can mean best in context. This batch does not resolve that contextual source-gloss audit question or change the key. The relative session distinguishes direct which questions from clauses describing a noun. It explains neuter nominative and feminine accusative question examples, agreement with the antecedent, case determined inside the relative clause, and instrumental after with. Recognition is explicitly distinguished from independent form or clause production.
+
+All original Russian forms, example objects, options, keys, source relationships, tested features, advancement rules, unit state and book mappings are preserved. All other units and original source/rights/provenance records are unchanged. The 52 new English synthesis records remain unsigned IMPLEMENTED_PENDING_FINAL_AUDIT. Qualified linguistic and mapping review remain pending. Primary Cornell comparison and relative grammar were consulted 2026-10-11; retained licensed Wikipedia and Wikibooks records supply every existing Russian form and gloss. No owned-book prose is copied.
+
+Exact scope verification, deterministic reproduction and idempotence pass. Focused host, baseline rejection and binding evidence are retained in pr64-unit18-verification-2026-10-11/. Initial admission failures exposed an inconsistent synthesis date, an English response-prompt marker and keyed-answer wording in distractor explanations. The text and metadata were corrected; the production validator was not weakened. Host verification uses Kotlin 2.0.21, serialization 1.7.3 and explicit Android/Room stubs; it does not execute Android UI, persistence, APKs or physical devices. Full Android CI remains a separate check.
+
+Single-guided sequence-review candidates decrease from 114 to 112; Unit 18 has no remaining flag under that scan. The scan is a review inventory, not proof that all remaining candidates are defective. All 75 historical semantic targets and the 19-finding audit remain open. All 30 units remain development and review-pending. Candidate remains unfrozen, sourceCommit null, artifact NOT_RECORDED and publicRelease NOT_APPROVED. Nothing is merged or released.
+
+Focused host run: all 20 checks pass, including four new Unit 18 regression checks and unchanged Unit 17/source-intake coverage.
+
+All four new regression checks reject the exact preceding curriculum.

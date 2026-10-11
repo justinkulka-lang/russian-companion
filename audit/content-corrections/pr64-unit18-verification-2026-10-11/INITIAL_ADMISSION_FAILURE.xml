@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="JUnit Vintage" tests="20" skipped="0" failures="8" errors="0" time="18.986" hostname="f823a5d75e4b" timestamp="2026-10-11T21:46:42">
+<properties>
+<property name="file.encoding" value="UTF-8"/>
+<property name="file.separator" value="/"/>
+<property name="java.class.path" value="/workspace/scratch/80cc9aca57ee/audit_work/tools/junit-platform-console-standalone-1.11.4.jar"/>
+<property name="java.class.version" value="61.0"/>
+<property name="java.home" value="/usr/lib/jvm/java-17-openjdk-amd64"/>
+<property name="java.io.tmpdir" value="/tmp"/>
+<property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+<property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+<property name="java.runtime.version" value="17.0.20+8-1-24.04-Ubuntu"/>
+<property name="java.specification.maintenance.version" value="1"/>
+<property name="java.specification.name" value="Java Platform API Specification"/>
+<property name="java.specification.vendor" value="Oracle Corporation"/>
+<property name="java.specification.version" value="17"/>
+<property name="java.vendor" value="Ubuntu"/>
+<property name="java.vendor.url" value="https://ubuntu.com/"/>
+<property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-17"/>
+<property name="java.version" value="17.0.20"/>
+<property name="java.version.date" value="2026-07-21"/>
+<property name="java.vm.compressedOopsMode" value="Zero based"/>
+<property name="java.vm.info" value="mixed mode, sharing"/>
+<property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+<property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+<property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+<property name="java.vm.specification.version" value="17"/>
+<property name="java.vm.vendor" value="Ubuntu"/>
+<property name="java.vm.version" value="17.0.20+8-1-24.04-Ubuntu"/>
+<property name="jdk.debug" value="release"/>
+<property name="junit.docs.version" value="1.11.4"/>
+<property name="line.separator" value="&#10;"/>
+<property name="native.encoding" value="UTF-8"/>
+<property name="os.arch" value="amd64"/>
+<property name="os.name" value="Linux"/>
+<property name="os.version" value="6.18.44"/>
+<property name="path.separator" value=":"/>
+<property name="sun.arch.data.model" value="64"/>
+<property name="sun.boot.library.path" value="/usr/lib/jvm/java-17-openjdk-amd64/lib"/>
+<property name="sun.cpu.endian" value="little"/>
+<property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+<property name="sun.java.command" value="/workspace/scratch/80cc9aca57ee/audit_work/tools/junit-platform-console-standalone-1.11.4.jar execute --class-path /workspace/scratch/af145931b52c/current-ci/current.jar:/workspace/scratch/af145931b52c/host-verification/current-tests.jar:/workspace/scratch/af145931b52c/host-verification/tests.jar:/workspace/scratch/80cc9aca57ee/audit_work/tools/kotlin-daemon-embeddable-2.0.21.jar:/workspace/scratch/80cc9aca57ee/audit_work/tools/junit-platform-console-standalone-1.11.4.jar:/workspace/scratch/80cc9aca57ee/audit_work/tools/trove4j-1.0.20200330.jar:/workspace/scratch/80cc9aca57ee/audit_work/tools/kotlin-reflect-1.6.10.jar:/workspace/scratch/80cc9aca57ee/audit_work/tools/kotlin-stdlib-2.0.21.jar:/workspace/scratch/80cc9aca57ee/audit_work/tools/annotations-13.0.jar:/workspace/scratch/80cc9aca57ee/audit_work/tools/kotlin-script-runtime-2.0.21.jar:/workspace/scratch/80cc9aca57ee/audit_work/tools/kotlin-test-junit5-2.0.21.jar:/workspace/scratch/80cc9aca57ee/audit_work/tools/kotlinx-coroutines-core-jvm-1.6.4.jar:/workspace/scratch/80cc9aca57ee/audit_work/tools/kotlin-test-2.0.21.jar:/workspace/scratch/80cc9aca57ee/audit_work/tools/kotlin-compiler-embeddable-2.0.21.jar:/workspace/scratch/af145931b52c/host-tools/kotlinx-serialization-core-jvm-1.7.3.jar:/workspace/scratch/af145931b52c/host-tools/kotlin-serialization-compiler-plugin-embeddable-2.0.21.jar:/workspace/scratch/af145931b52c/host-tools/kotlinx-serialization-json-jvm-1.7.3.jar --details summary --reports-dir /workspace/scratch/af145931b52c/current-ci/u18-focused-reports --select-class dev.russiancompanion.v2.Unit18ComparisonRelativeInstructionTest --select-class dev.russiancompanion.v2.Unit17AgeCalendarInstructionTest --select-class dev.russiancompanion.v2.Unit17NumberInstructionTest --select-class dev.russiancompanion.v2.Units1620SourceIntakeTest"/>
+<property name="sun.java.launcher" value="SUN_STANDARD"/>
+<property name="sun.jnu.encoding" value="UTF-8"/>
+<property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+<property name="user.dir" value="/workspace/scratch/af145931b52c/current-ci/repo"/>
+<property name="user.home" value="/root"/>
+<property name="user.language" value="en"/>
+<property name="user.name" value="root"/>
+<property name="user.timezone" value="Europe/Vienna"/>
+</properties>
+<testcase name="choicesReceiveSpecificMeaningFeedback" classname="dev.russiancompanion.v2.Unit17NumberInstructionTest" time="0.076">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.Unit17NumberInstructionTest]/[test:choicesReceiveSpecificMeaningFeedback(dev.russiancompanion.v2.Unit17NumberInstructionTest)]
+display-name: choicesReceiveSpecificMeaningFeedback
+]]></system-out>
+</testcase>
+<testcase name="unitEighteenCannotBecomeContentCompleteWithoutComparisonAndRelativeSources" classname="dev.russiancompanion.v2.Units1620SourceIntakeTest" time="2.545">
+<failure message="Provenance prov-ca-u18-instruction-comparison-objective content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-1-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-1-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-2-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-2-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-3-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-3-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-rem-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-rem-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-guided content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-check content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-objective content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-1-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-1-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-2-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-2-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-3-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-3-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-rem-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-rem-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-guided content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-check content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-comparison-0-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-comparison-0-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-comparison-0-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-comparison-0-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-comparison-0-distractor-2 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-1-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-1-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-1-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-1-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-1-distractor-2 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-2-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-2-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-2-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-2-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-2-distractor-2 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-relative-0-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-relative-0-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-relative-0-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-relative-0-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-relative-0-distractor-2 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-1-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-1-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-1-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-1-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-1-distractor-2 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-2-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-2-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-2-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-2-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-2-distractor-2 content-audit date does not match&#10;Source capability cap-u18-comparison has no reviewable instruction and check chain&#10;Source capability cap-u18-relative-kotoryy has no reviewable instruction and check chain&#10;Unit 18 objective obj-u18-comparison has no independent feature-valid check&#10;Unit 18 objective obj-u18-relative has no independent feature-valid check&#10;Unit 18 is not content-complete without comparison and relative-clause sources as required source capabilities&#10;Item u18-g-comparison-0 response type&#10;Item u18-i-comparison-1 distractor rationale names the keyed answer&#10;Item u18-i-comparison-1 distractor rationale names the keyed answer&#10;Item u18-i-comparison-1 distractor rationale names the keyed answer&#10;Item u18-i-comparison-1 distractor rationale names the keyed answer&#10;Item u18-i-comparison-1 response type&#10;Item u18-i-comparison-2 response type&#10;Item u18-g-relative-0 response type&#10;Item u18-i-relative-1 response type&#10;Item u18-i-relative-2 response type" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Provenance prov-ca-u18-instruction-comparison-objective content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-1-title content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-1-body content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-2-title content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-2-body content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-3-title content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-3-body content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-rem-title content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-rem-body content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-guided content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-check content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-objective content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-1-title content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-1-body content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-2-title content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-2-body content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-3-title content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-3-body content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-rem-title content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-rem-body content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-guided content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-check content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-comparison-0-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-comparison-0-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-comparison-0-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-comparison-0-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-comparison-0-distractor-2 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-1-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-1-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-1-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-1-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-1-distractor-2 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-2-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-2-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-2-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-2-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-2-distractor-2 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-relative-0-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-relative-0-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-relative-0-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-relative-0-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-relative-0-distractor-2 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-1-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-1-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-1-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-1-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-1-distractor-2 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-2-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-2-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-2-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-2-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-2-distractor-2 content-audit date does not match
+Source capability cap-u18-comparison has no reviewable instruction and check chain
+Source capability cap-u18-relative-kotoryy has no reviewable instruction and check chain
+Unit 18 objective obj-u18-comparison has no independent feature-valid check
+Unit 18 objective obj-u18-relative has no independent feature-valid check
+Unit 18 is not content-complete without comparison and relative-clause sources as required source capabilities
+Item u18-g-comparison-0 response type
+Item u18-i-comparison-1 distractor rationale names the keyed answer
+Item u18-i-comparison-1 distractor rationale names the keyed answer
+Item u18-i-comparison-1 distractor rationale names the keyed answer
+Item u18-i-comparison-1 distractor rationale names the keyed answer
+Item u18-i-comparison-1 response type
+Item u18-i-comparison-2 response type
+Item u18-g-relative-0 response type
+Item u18-i-relative-1 response type
+Item u18-i-relative-2 response type
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at dev.russiancompanion.v2.Units1620SourceIntakeTest.unitEighteenCannotBecomeContentCompleteWithoutComparisonAndRelativeSources(Units1620SourceIntakeTest.kt:218)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+]]></failure>
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.Units1620SourceIntakeTest]/[test:unitEighteenCannotBecomeContentCompleteWithoutComparisonAndRelativeSources(dev.russiancompanion.v2.Units1620SourceIntakeTest)]
+display-name: unitEighteenCannotBecomeContentCompleteWithoutComparisonAndRelativeSources
+]]></system-out>
+</testcase>
+<testcase name="frozenSourceBytesAndRevisionsStayImmutable" classname="dev.russiancompanion.v2.Units1620SourceIntakeTest" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.Units1620SourceIntakeTest]/[test:frozenSourceBytesAndRevisionsStayImmutable(dev.russiancompanion.v2.Units1620SourceIntakeTest)]
+display-name: frozenSourceBytesAndRevisionsStayImmutable
+]]></system-out>
+</testcase>
+<testcase name="newCoverageStaysPendingAndSourceRelationshipsValidate" classname="dev.russiancompanion.v2.Unit18ComparisonRelativeInstructionTest" time="3.16">
+<failure message="Provenance prov-ca-u18-instruction-comparison-objective content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-1-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-1-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-2-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-2-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-3-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-3-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-rem-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-rem-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-guided content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-check content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-objective content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-1-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-1-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-2-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-2-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-3-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-3-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-rem-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-rem-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-guided content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-check content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-comparison-0-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-comparison-0-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-comparison-0-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-comparison-0-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-comparison-0-distractor-2 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-1-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-1-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-1-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-1-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-1-distractor-2 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-2-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-2-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-2-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-2-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-2-distractor-2 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-relative-0-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-relative-0-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-relative-0-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-relative-0-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-relative-0-distractor-2 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-1-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-1-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-1-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-1-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-1-distractor-2 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-2-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-2-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-2-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-2-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-2-distractor-2 content-audit date does not match&#10;Source capability cap-u18-comparison has no reviewable instruction and check chain&#10;Source capability cap-u18-relative-kotoryy has no reviewable instruction and check chain&#10;Unit 18 objective obj-u18-comparison has no independent feature-valid check&#10;Unit 18 objective obj-u18-relative has no independent feature-valid check&#10;Unit 18 is not content-complete without comparison and relative-clause sources as required source capabilities&#10;Item u18-g-comparison-0 response type&#10;Item u18-i-comparison-1 distractor rationale names the keyed answer&#10;Item u18-i-comparison-1 distractor rationale names the keyed answer&#10;Item u18-i-comparison-1 distractor rationale names the keyed answer&#10;Item u18-i-comparison-1 distractor rationale names the keyed answer&#10;Item u18-i-comparison-1 response type&#10;Item u18-i-comparison-2 response type&#10;Item u18-g-relative-0 response type&#10;Item u18-i-relative-1 response type&#10;Item u18-i-relative-2 response type" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Provenance prov-ca-u18-instruction-comparison-objective content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-1-title content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-1-body content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-2-title content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-2-body content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-3-title content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-3-body content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-rem-title content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-rem-body content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-guided content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-check content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-objective content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-1-title content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-1-body content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-2-title content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-2-body content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-3-title content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-3-body content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-rem-title content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-rem-body content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-guided content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-check content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-comparison-0-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-comparison-0-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-comparison-0-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-comparison-0-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-comparison-0-distractor-2 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-1-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-1-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-1-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-1-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-1-distractor-2 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-2-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-2-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-2-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-2-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-2-distractor-2 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-relative-0-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-relative-0-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-relative-0-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-relative-0-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-relative-0-distractor-2 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-1-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-1-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-1-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-1-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-1-distractor-2 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-2-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-2-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-2-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-2-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-2-distractor-2 content-audit date does not match
+Source capability cap-u18-comparison has no reviewable instruction and check chain
+Source capability cap-u18-relative-kotoryy has no reviewable instruction and check chain
+Unit 18 objective obj-u18-comparison has no independent feature-valid check
+Unit 18 objective obj-u18-relative has no independent feature-valid check
+Unit 18 is not content-complete without comparison and relative-clause sources as required source capabilities
+Item u18-g-comparison-0 response type
+Item u18-i-comparison-1 distractor rationale names the keyed answer
+Item u18-i-comparison-1 distractor rationale names the keyed answer
+Item u18-i-comparison-1 distractor rationale names the keyed answer
+Item u18-i-comparison-1 distractor rationale names the keyed answer
+Item u18-i-comparison-1 response type
+Item u18-i-comparison-2 response type
+Item u18-g-relative-0 response type
+Item u18-i-relative-1 response type
+Item u18-i-relative-2 response type
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at dev.russiancompanion.v2.Unit18ComparisonRelativeInstructionTest.newCoverageStaysPendingAndSourceRelationshipsValidate(Unit18ComparisonRelativeInstructionTest.kt:57)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+]]></failure>
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.Unit18ComparisonRelativeInstructionTest]/[test:newCoverageStaysPendingAndSourceRelationshipsValidate(dev.russiancompanion.v2.Unit18ComparisonRelativeInstructionTest)]
+display-name: newCoverageStaysPendingAndSourceRelationshipsValidate
+]]></system-out>
+</testcase>
+<testcase name="feedbackExplainsTheRequestedMeaningAndPreservesCitation" classname="dev.russiancompanion.v2.Unit18ComparisonRelativeInstructionTest" time="0.083">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.Unit18ComparisonRelativeInstructionTest]/[test:feedbackExplainsTheRequestedMeaningAndPreservesCitation(dev.russiancompanion.v2.Unit18ComparisonRelativeInstructionTest)]
+display-name: feedbackExplainsTheRequestedMeaningAndPreservesCitation
+]]></system-out>
+</testcase>
+<testcase name="newCoverageIsPendingAndSourceRelationshipsStillValidate" classname="dev.russiancompanion.v2.Unit17AgeCalendarInstructionTest" time="1.785">
+<failure message="Provenance prov-ca-u18-instruction-comparison-objective content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-1-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-1-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-2-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-2-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-3-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-3-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-rem-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-rem-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-guided content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-check content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-objective content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-1-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-1-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-2-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-2-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-3-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-3-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-rem-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-rem-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-guided content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-check content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-comparison-0-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-comparison-0-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-comparison-0-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-comparison-0-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-comparison-0-distractor-2 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-1-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-1-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-1-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-1-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-1-distractor-2 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-2-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-2-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-2-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-2-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-2-distractor-2 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-relative-0-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-relative-0-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-relative-0-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-relative-0-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-relative-0-distractor-2 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-1-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-1-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-1-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-1-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-1-distractor-2 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-2-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-2-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-2-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-2-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-2-distractor-2 content-audit date does not match&#10;Source capability cap-u18-comparison has no reviewable instruction and check chain&#10;Source capability cap-u18-relative-kotoryy has no reviewable instruction and check chain&#10;Unit 18 objective obj-u18-comparison has no independent feature-valid check&#10;Unit 18 objective obj-u18-relative has no independent feature-valid check&#10;Unit 18 is not content-complete without comparison and relative-clause sources as required source capabilities&#10;Item u18-g-comparison-0 response type&#10;Item u18-i-comparison-1 distractor rationale names the keyed answer&#10;Item u18-i-comparison-1 distractor rationale names the keyed answer&#10;Item u18-i-comparison-1 distractor rationale names the keyed answer&#10;Item u18-i-comparison-1 distractor rationale names the keyed answer&#10;Item u18-i-comparison-1 response type&#10;Item u18-i-comparison-2 response type&#10;Item u18-g-relative-0 response type&#10;Item u18-i-relative-1 response type&#10;Item u18-i-relative-2 response type" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Provenance prov-ca-u18-instruction-comparison-objective content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-1-title content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-1-body content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-2-title content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-2-body content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-3-title content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-3-body content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-rem-title content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-rem-body content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-guided content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-check content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-objective content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-1-title content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-1-body content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-2-title content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-2-body content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-3-title content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-3-body content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-rem-title content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-rem-body content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-guided content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-check content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-comparison-0-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-comparison-0-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-comparison-0-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-comparison-0-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-comparison-0-distractor-2 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-1-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-1-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-1-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-1-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-1-distractor-2 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-2-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-2-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-2-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-2-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-2-distractor-2 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-relative-0-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-relative-0-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-relative-0-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-relative-0-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-relative-0-distractor-2 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-1-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-1-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-1-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-1-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-1-distractor-2 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-2-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-2-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-2-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-2-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-2-distractor-2 content-audit date does not match
+Source capability cap-u18-comparison has no reviewable instruction and check chain
+Source capability cap-u18-relative-kotoryy has no reviewable instruction and check chain
+Unit 18 objective obj-u18-comparison has no independent feature-valid check
+Unit 18 objective obj-u18-relative has no independent feature-valid check
+Unit 18 is not content-complete without comparison and relative-clause sources as required source capabilities
+Item u18-g-comparison-0 response type
+Item u18-i-comparison-1 distractor rationale names the keyed answer
+Item u18-i-comparison-1 distractor rationale names the keyed answer
+Item u18-i-comparison-1 distractor rationale names the keyed answer
+Item u18-i-comparison-1 distractor rationale names the keyed answer
+Item u18-i-comparison-1 response type
+Item u18-i-comparison-2 response type
+Item u18-g-relative-0 response type
+Item u18-i-relative-1 response type
+Item u18-i-relative-2 response type
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at dev.russiancompanion.v2.Unit17AgeCalendarInstructionTest.newCoverageIsPendingAndSourceRelationshipsStillValidate(Unit17AgeCalendarInstructionTest.kt:48)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+]]></failure>
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.Unit17AgeCalendarInstructionTest]/[test:newCoverageIsPendingAndSourceRelationshipsStillValidate(dev.russiancompanion.v2.Unit17AgeCalendarInstructionTest)]
+display-name: newCoverageIsPendingAndSourceRelationshipsStillValidate
+]]></system-out>
+</testcase>
+<testcase name="structuralMappingsMatchTheOwnedEditionObservations" classname="dev.russiancompanion.v2.Units1620SourceIntakeTest" time="2.354">
+<failure message="Provenance prov-ca-u18-instruction-comparison-objective content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-1-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-1-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-2-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-2-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-3-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-3-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-rem-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-rem-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-guided content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-check content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-objective content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-1-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-1-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-2-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-2-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-3-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-3-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-rem-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-rem-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-guided content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-check content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-comparison-0-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-comparison-0-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-comparison-0-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-comparison-0-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-comparison-0-distractor-2 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-1-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-1-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-1-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-1-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-1-distractor-2 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-2-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-2-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-2-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-2-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-2-distractor-2 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-relative-0-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-relative-0-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-relative-0-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-relative-0-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-relative-0-distractor-2 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-1-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-1-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-1-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-1-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-1-distractor-2 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-2-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-2-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-2-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-2-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-2-distractor-2 content-audit date does not match&#10;Source capability cap-u18-comparison has no reviewable instruction and check chain&#10;Source capability cap-u18-relative-kotoryy has no reviewable instruction and check chain&#10;Unit 18 objective obj-u18-comparison has no independent feature-valid check&#10;Unit 18 objective obj-u18-relative has no independent feature-valid check&#10;Unit 18 is not content-complete without comparison and relative-clause sources as required source capabilities&#10;Item u18-g-comparison-0 response type&#10;Item u18-i-comparison-1 distractor rationale names the keyed answer&#10;Item u18-i-comparison-1 distractor rationale names the keyed answer&#10;Item u18-i-comparison-1 distractor rationale names the keyed answer&#10;Item u18-i-comparison-1 distractor rationale names the keyed answer&#10;Item u18-i-comparison-1 response type&#10;Item u18-i-comparison-2 response type&#10;Item u18-g-relative-0 response type&#10;Item u18-i-relative-1 response type&#10;Item u18-i-relative-2 response type" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Provenance prov-ca-u18-instruction-comparison-objective content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-1-title content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-1-body content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-2-title content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-2-body content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-3-title content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-3-body content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-rem-title content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-rem-body content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-guided content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-check content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-objective content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-1-title content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-1-body content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-2-title content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-2-body content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-3-title content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-3-body content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-rem-title content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-rem-body content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-guided content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-check content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-comparison-0-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-comparison-0-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-comparison-0-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-comparison-0-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-comparison-0-distractor-2 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-1-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-1-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-1-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-1-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-1-distractor-2 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-2-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-2-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-2-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-2-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-2-distractor-2 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-relative-0-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-relative-0-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-relative-0-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-relative-0-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-relative-0-distractor-2 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-1-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-1-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-1-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-1-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-1-distractor-2 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-2-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-2-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-2-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-2-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-2-distractor-2 content-audit date does not match
+Source capability cap-u18-comparison has no reviewable instruction and check chain
+Source capability cap-u18-relative-kotoryy has no reviewable instruction and check chain
+Unit 18 objective obj-u18-comparison has no independent feature-valid check
+Unit 18 objective obj-u18-relative has no independent feature-valid check
+Unit 18 is not content-complete without comparison and relative-clause sources as required source capabilities
+Item u18-g-comparison-0 response type
+Item u18-i-comparison-1 distractor rationale names the keyed answer
+Item u18-i-comparison-1 distractor rationale names the keyed answer
+Item u18-i-comparison-1 distractor rationale names the keyed answer
+Item u18-i-comparison-1 distractor rationale names the keyed answer
+Item u18-i-comparison-1 response type
+Item u18-i-comparison-2 response type
+Item u18-g-relative-0 response type
+Item u18-i-relative-1 response type
+Item u18-i-relative-2 response type
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at dev.russiancompanion.v2.Units1620SourceIntakeTest.structuralMappingsMatchTheOwnedEditionObservations(Units1620SourceIntakeTest.kt:46)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+]]></failure>
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.Units1620SourceIntakeTest]/[test:structuralMappingsMatchTheOwnedEditionObservations(dev.russiancompanion.v2.Units1620SourceIntakeTest)]
+display-name: structuralMappingsMatchTheOwnedEditionObservations
+]]></system-out>
+</testcase>
+<testcase name="allCheckedFormsAreTaughtBeforeGuidedPracticeAndRemediated" classname="dev.russiancompanion.v2.Unit18ComparisonRelativeInstructionTest" time="0.081">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.Unit18ComparisonRelativeInstructionTest]/[test:allCheckedFormsAreTaughtBeforeGuidedPracticeAndRemediated(dev.russiancompanion.v2.Unit18ComparisonRelativeInstructionTest)]
+display-name: allCheckedFormsAreTaughtBeforeGuidedPracticeAndRemediated
+]]></system-out>
+</testcase>
+<testcase name="instructionDistinguishesConstructionAndScope" classname="dev.russiancompanion.v2.Unit18ComparisonRelativeInstructionTest" time="0.082">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.Unit18ComparisonRelativeInstructionTest]/[test:instructionDistinguishesConstructionAndScope(dev.russiancompanion.v2.Unit18ComparisonRelativeInstructionTest)]
+display-name: instructionDistinguishesConstructionAndScope
+]]></system-out>
+</testcase>
+<testcase name="coverageIsOriginalPendingAndCorpusValid" classname="dev.russiancompanion.v2.Unit17NumberInstructionTest" time="1.626">
+<failure message="Provenance prov-ca-u18-instruction-comparison-objective content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-1-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-1-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-2-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-2-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-3-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-3-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-rem-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-rem-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-guided content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-check content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-objective content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-1-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-1-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-2-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-2-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-3-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-3-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-rem-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-rem-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-guided content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-check content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-comparison-0-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-comparison-0-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-comparison-0-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-comparison-0-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-comparison-0-distractor-2 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-1-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-1-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-1-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-1-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-1-distractor-2 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-2-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-2-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-2-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-2-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-2-distractor-2 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-relative-0-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-relative-0-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-relative-0-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-relative-0-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-relative-0-distractor-2 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-1-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-1-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-1-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-1-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-1-distractor-2 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-2-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-2-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-2-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-2-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-2-distractor-2 content-audit date does not match&#10;Source capability cap-u18-comparison has no reviewable instruction and check chain&#10;Source capability cap-u18-relative-kotoryy has no reviewable instruction and check chain&#10;Unit 18 objective obj-u18-comparison has no independent feature-valid check&#10;Unit 18 objective obj-u18-relative has no independent feature-valid check&#10;Unit 18 is not content-complete without comparison and relative-clause sources as required source capabilities&#10;Item u18-g-comparison-0 response type&#10;Item u18-i-comparison-1 distractor rationale names the keyed answer&#10;Item u18-i-comparison-1 distractor rationale names the keyed answer&#10;Item u18-i-comparison-1 distractor rationale names the keyed answer&#10;Item u18-i-comparison-1 distractor rationale names the keyed answer&#10;Item u18-i-comparison-1 response type&#10;Item u18-i-comparison-2 response type&#10;Item u18-g-relative-0 response type&#10;Item u18-i-relative-1 response type&#10;Item u18-i-relative-2 response type" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Provenance prov-ca-u18-instruction-comparison-objective content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-1-title content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-1-body content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-2-title content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-2-body content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-3-title content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-3-body content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-rem-title content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-rem-body content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-guided content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-check content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-objective content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-1-title content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-1-body content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-2-title content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-2-body content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-3-title content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-3-body content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-rem-title content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-rem-body content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-guided content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-check content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-comparison-0-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-comparison-0-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-comparison-0-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-comparison-0-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-comparison-0-distractor-2 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-1-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-1-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-1-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-1-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-1-distractor-2 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-2-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-2-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-2-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-2-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-2-distractor-2 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-relative-0-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-relative-0-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-relative-0-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-relative-0-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-relative-0-distractor-2 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-1-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-1-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-1-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-1-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-1-distractor-2 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-2-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-2-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-2-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-2-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-2-distractor-2 content-audit date does not match
+Source capability cap-u18-comparison has no reviewable instruction and check chain
+Source capability cap-u18-relative-kotoryy has no reviewable instruction and check chain
+Unit 18 objective obj-u18-comparison has no independent feature-valid check
+Unit 18 objective obj-u18-relative has no independent feature-valid check
+Unit 18 is not content-complete without comparison and relative-clause sources as required source capabilities
+Item u18-g-comparison-0 response type
+Item u18-i-comparison-1 distractor rationale names the keyed answer
+Item u18-i-comparison-1 distractor rationale names the keyed answer
+Item u18-i-comparison-1 distractor rationale names the keyed answer
+Item u18-i-comparison-1 distractor rationale names the keyed answer
+Item u18-i-comparison-1 response type
+Item u18-i-comparison-2 response type
+Item u18-g-relative-0 response type
+Item u18-i-relative-1 response type
+Item u18-i-relative-2 response type
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at dev.russiancompanion.v2.Unit17NumberInstructionTest.coverageIsOriginalPendingAndCorpusValid(Unit17NumberInstructionTest.kt:50)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+]]></failure>
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.Unit17NumberInstructionTest]/[test:coverageIsOriginalPendingAndCorpusValid(dev.russiancompanion.v2.Unit17NumberInstructionTest)]
+display-name: coverageIsOriginalPendingAndCorpusValid
+]]></system-out>
+</testcase>
+<testcase name="clockAndDateTargetsHaveCompletePriorInstruction" classname="dev.russiancompanion.v2.Unit17AgeCalendarInstructionTest" time="0.081">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.Unit17AgeCalendarInstructionTest]/[test:clockAndDateTargetsHaveCompletePriorInstruction(dev.russiancompanion.v2.Unit17AgeCalendarInstructionTest)]
+display-name: clockAndDateTargetsHaveCompletePriorInstruction
+]]></system-out>
+</testcase>
+<testcase name="meaningsRulesAndLimitsPrecedePractice" classname="dev.russiancompanion.v2.Unit17NumberInstructionTest" time="0.08">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.Unit17NumberInstructionTest]/[test:meaningsRulesAndLimitsPrecedePractice(dev.russiancompanion.v2.Unit17NumberInstructionTest)]
+display-name: meaningsRulesAndLimitsPrecedePractice
+]]></system-out>
+</testcase>
+<testcase name="everyRussianSpanOccursInItsRecordedSource" classname="dev.russiancompanion.v2.Units1620SourceIntakeTest" time="0.184">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.Units1620SourceIntakeTest]/[test:everyRussianSpanOccursInItsRecordedSource(dev.russiancompanion.v2.Units1620SourceIntakeTest)]
+display-name: everyRussianSpanOccursInItsRecordedSource
+]]></system-out>
+</testcase>
+<testcase name="unsupportedSubtopicsStayUnavailableAndUnitsCannotAdvance" classname="dev.russiancompanion.v2.Units1620SourceIntakeTest" time="0.137">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.Units1620SourceIntakeTest]/[test:unsupportedSubtopicsStayUnavailableAndUnitsCannotAdvance(dev.russiancompanion.v2.Units1620SourceIntakeTest)]
+display-name: unsupportedSubtopicsStayUnavailableAndUnitsCannotAdvance
+]]></system-out>
+</testcase>
+<testcase name="noPenguinContentOrPrivatePdfEnteredGit" classname="dev.russiancompanion.v2.Units1620SourceIntakeTest" time="0.052">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.Units1620SourceIntakeTest]/[test:noPenguinContentOrPrivatePdfEnteredGit(dev.russiancompanion.v2.Units1620SourceIntakeTest)]
+display-name: noPenguinContentOrPrivatePdfEnteredGit
+]]></system-out>
+</testcase>
+<testcase name="unitTwentyCannotBecomeContentCompleteFromARedLinkVerbPageOrDictionaryRows" classname="dev.russiancompanion.v2.Units1620SourceIntakeTest" time="2.709">
+<failure message="Provenance prov-ca-u18-instruction-comparison-objective content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-1-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-1-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-2-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-2-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-3-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-3-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-rem-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-rem-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-guided content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-check content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-objective content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-1-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-1-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-2-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-2-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-3-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-3-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-rem-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-rem-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-guided content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-check content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-comparison-0-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-comparison-0-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-comparison-0-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-comparison-0-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-comparison-0-distractor-2 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-1-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-1-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-1-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-1-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-1-distractor-2 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-2-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-2-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-2-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-2-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-2-distractor-2 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-relative-0-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-relative-0-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-relative-0-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-relative-0-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-relative-0-distractor-2 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-1-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-1-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-1-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-1-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-1-distractor-2 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-2-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-2-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-2-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-2-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-2-distractor-2 content-audit date does not match&#10;Source capability cap-u18-comparison has no reviewable instruction and check chain&#10;Source capability cap-u18-relative-kotoryy has no reviewable instruction and check chain&#10;Unit 18 objective obj-u18-comparison has no independent feature-valid check&#10;Unit 18 objective obj-u18-relative has no independent feature-valid check&#10;Unit 18 is not content-complete without comparison and relative-clause sources as required source capabilities&#10;Item u18-g-comparison-0 response type&#10;Item u18-i-comparison-1 distractor rationale names the keyed answer&#10;Item u18-i-comparison-1 distractor rationale names the keyed answer&#10;Item u18-i-comparison-1 distractor rationale names the keyed answer&#10;Item u18-i-comparison-1 distractor rationale names the keyed answer&#10;Item u18-i-comparison-1 response type&#10;Item u18-i-comparison-2 response type&#10;Item u18-g-relative-0 response type&#10;Item u18-i-relative-1 response type&#10;Item u18-i-relative-2 response type" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Provenance prov-ca-u18-instruction-comparison-objective content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-1-title content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-1-body content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-2-title content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-2-body content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-3-title content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-3-body content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-rem-title content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-rem-body content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-guided content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-check content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-objective content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-1-title content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-1-body content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-2-title content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-2-body content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-3-title content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-3-body content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-rem-title content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-rem-body content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-guided content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-check content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-comparison-0-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-comparison-0-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-comparison-0-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-comparison-0-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-comparison-0-distractor-2 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-1-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-1-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-1-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-1-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-1-distractor-2 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-2-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-2-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-2-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-2-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-2-distractor-2 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-relative-0-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-relative-0-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-relative-0-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-relative-0-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-relative-0-distractor-2 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-1-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-1-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-1-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-1-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-1-distractor-2 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-2-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-2-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-2-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-2-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-2-distractor-2 content-audit date does not match
+Source capability cap-u18-comparison has no reviewable instruction and check chain
+Source capability cap-u18-relative-kotoryy has no reviewable instruction and check chain
+Unit 18 objective obj-u18-comparison has no independent feature-valid check
+Unit 18 objective obj-u18-relative has no independent feature-valid check
+Unit 18 is not content-complete without comparison and relative-clause sources as required source capabilities
+Item u18-g-comparison-0 response type
+Item u18-i-comparison-1 distractor rationale names the keyed answer
+Item u18-i-comparison-1 distractor rationale names the keyed answer
+Item u18-i-comparison-1 distractor rationale names the keyed answer
+Item u18-i-comparison-1 distractor rationale names the keyed answer
+Item u18-i-comparison-1 response type
+Item u18-i-comparison-2 response type
+Item u18-g-relative-0 response type
+Item u18-i-relative-1 response type
+Item u18-i-relative-2 response type
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at dev.russiancompanion.v2.Units1620SourceIntakeTest.unitTwentyCannotBecomeContentCompleteFromARedLinkVerbPageOrDictionaryRows(Units1620SourceIntakeTest.kt:276)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+]]></failure>
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.Units1620SourceIntakeTest]/[test:unitTwentyCannotBecomeContentCompleteFromARedLinkVerbPageOrDictionaryRows(dev.russiancompanion.v2.Units1620SourceIntakeTest)]
+display-name: unitTwentyCannotBecomeContentCompleteFromARedLinkVerbPageOrDictionaryRows
+]]></system-out>
+</testcase>
+<testcase name="checkedNamesAndAgeStructureAreTaughtBeforePractice" classname="dev.russiancompanion.v2.Unit17AgeCalendarInstructionTest" time="0.083">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.Unit17AgeCalendarInstructionTest]/[test:checkedNamesAndAgeStructureAreTaughtBeforePractice(dev.russiancompanion.v2.Unit17AgeCalendarInstructionTest)]
+display-name: checkedNamesAndAgeStructureAreTaughtBeforePractice
+]]></system-out>
+</testcase>
+<testcase name="unitNineteenCannotBecomeContentCompleteWithoutConditionalAndObligationSources" classname="dev.russiancompanion.v2.Units1620SourceIntakeTest" time="1.26">
+<failure message="Provenance prov-ca-u18-instruction-comparison-objective content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-1-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-1-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-2-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-2-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-3-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-3-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-rem-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-rem-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-guided content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-check content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-objective content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-1-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-1-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-2-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-2-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-3-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-3-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-rem-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-rem-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-guided content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-check content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-comparison-0-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-comparison-0-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-comparison-0-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-comparison-0-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-comparison-0-distractor-2 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-1-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-1-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-1-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-1-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-1-distractor-2 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-2-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-2-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-2-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-2-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-2-distractor-2 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-relative-0-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-relative-0-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-relative-0-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-relative-0-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-relative-0-distractor-2 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-1-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-1-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-1-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-1-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-1-distractor-2 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-2-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-2-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-2-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-2-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-2-distractor-2 content-audit date does not match&#10;Source capability cap-u18-comparison has no reviewable instruction and check chain&#10;Source capability cap-u18-relative-kotoryy has no reviewable instruction and check chain&#10;Unit 18 objective obj-u18-comparison has no independent feature-valid check&#10;Unit 18 objective obj-u18-relative has no independent feature-valid check&#10;Unit 18 is not content-complete without comparison and relative-clause sources as required source capabilities&#10;Item u18-g-comparison-0 response type&#10;Item u18-i-comparison-1 distractor rationale names the keyed answer&#10;Item u18-i-comparison-1 distractor rationale names the keyed answer&#10;Item u18-i-comparison-1 distractor rationale names the keyed answer&#10;Item u18-i-comparison-1 distractor rationale names the keyed answer&#10;Item u18-i-comparison-1 response type&#10;Item u18-i-comparison-2 response type&#10;Item u18-g-relative-0 response type&#10;Item u18-i-relative-1 response type&#10;Item u18-i-relative-2 response type" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Provenance prov-ca-u18-instruction-comparison-objective content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-1-title content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-1-body content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-2-title content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-2-body content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-3-title content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-3-body content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-rem-title content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-rem-body content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-guided content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-check content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-objective content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-1-title content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-1-body content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-2-title content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-2-body content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-3-title content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-3-body content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-rem-title content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-rem-body content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-guided content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-check content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-comparison-0-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-comparison-0-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-comparison-0-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-comparison-0-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-comparison-0-distractor-2 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-1-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-1-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-1-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-1-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-1-distractor-2 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-2-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-2-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-2-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-2-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-2-distractor-2 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-relative-0-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-relative-0-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-relative-0-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-relative-0-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-relative-0-distractor-2 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-1-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-1-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-1-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-1-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-1-distractor-2 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-2-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-2-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-2-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-2-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-2-distractor-2 content-audit date does not match
+Source capability cap-u18-comparison has no reviewable instruction and check chain
+Source capability cap-u18-relative-kotoryy has no reviewable instruction and check chain
+Unit 18 objective obj-u18-comparison has no independent feature-valid check
+Unit 18 objective obj-u18-relative has no independent feature-valid check
+Unit 18 is not content-complete without comparison and relative-clause sources as required source capabilities
+Item u18-g-comparison-0 response type
+Item u18-i-comparison-1 distractor rationale names the keyed answer
+Item u18-i-comparison-1 distractor rationale names the keyed answer
+Item u18-i-comparison-1 distractor rationale names the keyed answer
+Item u18-i-comparison-1 distractor rationale names the keyed answer
+Item u18-i-comparison-1 response type
+Item u18-i-comparison-2 response type
+Item u18-g-relative-0 response type
+Item u18-i-relative-1 response type
+Item u18-i-relative-2 response type
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at dev.russiancompanion.v2.Units1620SourceIntakeTest.unitNineteenCannotBecomeContentCompleteWithoutConditionalAndObligationSources(Units1620SourceIntakeTest.kt:247)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+]]></failure>
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.Units1620SourceIntakeTest]/[test:unitNineteenCannotBecomeContentCompleteWithoutConditionalAndObligationSources(dev.russiancompanion.v2.Units1620SourceIntakeTest)]
+display-name: unitNineteenCannotBecomeContentCompleteWithoutConditionalAndObligationSources
+]]></system-out>
+</testcase>
+<testcase name="learnerFeedbackExplainsMeaningsAndRetainsSourceCitation" classname="dev.russiancompanion.v2.Unit17AgeCalendarInstructionTest" time="0.083">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.Unit17AgeCalendarInstructionTest]/[test:learnerFeedbackExplainsMeaningsAndRetainsSourceCitation(dev.russiancompanion.v2.Unit17AgeCalendarInstructionTest)]
+display-name: learnerFeedbackExplainsMeaningsAndRetainsSourceCitation
+]]></system-out>
+</testcase>
+<testcase name="learnerFacingTextDropsWikibooksEmphasisAndKeepsTheFrozenSource" classname="dev.russiancompanion.v2.Units1620SourceIntakeTest" time="2.501">
+<failure message="Provenance prov-ca-u18-instruction-comparison-objective content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-1-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-1-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-2-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-2-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-3-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-teach-3-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-rem-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-rem-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-guided content-audit date does not match&#10;Provenance prov-ca-u18-instruction-comparison-check content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-objective content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-1-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-1-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-2-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-2-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-3-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-teach-3-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-rem-title content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-rem-body content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-guided content-audit date does not match&#10;Provenance prov-ca-u18-instruction-relative-check content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-comparison-0-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-comparison-0-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-comparison-0-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-comparison-0-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-comparison-0-distractor-2 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-1-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-1-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-1-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-1-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-1-distractor-2 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-2-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-2-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-2-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-2-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-comparison-2-distractor-2 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-relative-0-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-relative-0-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-relative-0-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-relative-0-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-g-relative-0-distractor-2 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-1-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-1-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-1-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-1-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-1-distractor-2 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-2-prompt content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-2-feedback content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-2-rationale content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-2-distractor-1 content-audit date does not match&#10;Provenance prov-ca-u18-instruction-u18-i-relative-2-distractor-2 content-audit date does not match&#10;Source capability cap-u18-comparison has no reviewable instruction and check chain&#10;Source capability cap-u18-relative-kotoryy has no reviewable instruction and check chain&#10;Unit 18 objective obj-u18-comparison has no independent feature-valid check&#10;Unit 18 objective obj-u18-relative has no independent feature-valid check&#10;Unit 18 is not content-complete without comparison and relative-clause sources as required source capabilities&#10;Item u18-g-comparison-0 response type&#10;Item u18-i-comparison-1 distractor rationale names the keyed answer&#10;Item u18-i-comparison-1 distractor rationale names the keyed answer&#10;Item u18-i-comparison-1 distractor rationale names the keyed answer&#10;Item u18-i-comparison-1 distractor rationale names the keyed answer&#10;Item u18-i-comparison-1 response type&#10;Item u18-i-comparison-2 response type&#10;Item u18-g-relative-0 response type&#10;Item u18-i-relative-1 response type&#10;Item u18-i-relative-2 response type" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Provenance prov-ca-u18-instruction-comparison-objective content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-1-title content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-1-body content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-2-title content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-2-body content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-3-title content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-teach-3-body content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-rem-title content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-rem-body content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-guided content-audit date does not match
+Provenance prov-ca-u18-instruction-comparison-check content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-objective content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-1-title content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-1-body content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-2-title content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-2-body content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-3-title content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-teach-3-body content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-rem-title content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-rem-body content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-guided content-audit date does not match
+Provenance prov-ca-u18-instruction-relative-check content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-comparison-0-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-comparison-0-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-comparison-0-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-comparison-0-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-comparison-0-distractor-2 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-1-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-1-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-1-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-1-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-1-distractor-2 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-2-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-2-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-2-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-2-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-comparison-2-distractor-2 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-relative-0-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-relative-0-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-relative-0-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-relative-0-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-g-relative-0-distractor-2 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-1-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-1-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-1-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-1-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-1-distractor-2 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-2-prompt content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-2-feedback content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-2-rationale content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-2-distractor-1 content-audit date does not match
+Provenance prov-ca-u18-instruction-u18-i-relative-2-distractor-2 content-audit date does not match
+Source capability cap-u18-comparison has no reviewable instruction and check chain
+Source capability cap-u18-relative-kotoryy has no reviewable instruction and check chain
+Unit 18 objective obj-u18-comparison has no independent feature-valid check
+Unit 18 objective obj-u18-relative has no independent feature-valid check
+Unit 18 is not content-complete without comparison and relative-clause sources as required source capabilities
+Item u18-g-comparison-0 response type
+Item u18-i-comparison-1 distractor rationale names the keyed answer
+Item u18-i-comparison-1 distractor rationale names the keyed answer
+Item u18-i-comparison-1 distractor rationale names the keyed answer
+Item u18-i-comparison-1 distractor rationale names the keyed answer
+Item u18-i-comparison-1 response type
+Item u18-i-comparison-2 response type
+Item u18-g-relative-0 response type
+Item u18-i-relative-1 response type
+Item u18-i-relative-2 response type
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at dev.russiancompanion.v2.Units1620SourceIntakeTest.learnerFacingTextDropsWikibooksEmphasisAndKeepsTheFrozenSource(Units1620SourceIntakeTest.kt:298)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+]]></failure>
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.Units1620SourceIntakeTest]/[test:learnerFacingTextDropsWikibooksEmphasisAndKeepsTheFrozenSource(dev.russiancompanion.v2.Units1620SourceIntakeTest)]
+display-name: learnerFacingTextDropsWikibooksEmphasisAndKeepsTheFrozenSource
+]]></system-out>
+</testcase>
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]
+display-name: JUnit Vintage
+]]></system-out>
+</testsuite>

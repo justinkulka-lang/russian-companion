@@ -1,0 +1,53 @@
+
+Thanks for using JUnit! Support its development at https://junit.org/sponsoring
+
+
+Failures (4):
+  JUnit Vintage:Unit18ComparisonRelativeInstructionTest:newCoverageStaysPendingAndSourceRelationshipsValidate
+    MethodSource [className = 'dev.russiancompanion.v2.Unit18ComparisonRelativeInstructionTest', methodName = 'newCoverageStaysPendingAndSourceRelationshipsValidate', methodParameterTypes = '']
+    => java.lang.AssertionError: expected:<52> but was:<0>
+       org.junit.Assert.fail(Assert.java:89)
+       org.junit.Assert.failNotEquals(Assert.java:835)
+       org.junit.Assert.assertEquals(Assert.java:120)
+       org.junit.Assert.assertEquals(Assert.java:146)
+       dev.russiancompanion.v2.Unit18ComparisonRelativeInstructionTest.newCoverageStaysPendingAndSourceRelationshipsValidate(Unit18ComparisonRelativeInstructionTest.kt:54)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+  JUnit Vintage:Unit18ComparisonRelativeInstructionTest:instructionDistinguishesConstructionAndScope
+    MethodSource [className = 'dev.russiancompanion.v2.Unit18ComparisonRelativeInstructionTest', methodName = 'instructionDistinguishesConstructionAndScope', methodParameterTypes = '']
+    => java.lang.AssertionError
+       org.junit.Assert.fail(Assert.java:87)
+       org.junit.Assert.assertTrue(Assert.java:42)
+       org.junit.Assert.assertTrue(Assert.java:53)
+       dev.russiancompanion.v2.Unit18ComparisonRelativeInstructionTest.instructionDistinguishesConstructionAndScope(Unit18ComparisonRelativeInstructionTest.kt:28)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+  JUnit Vintage:Unit18ComparisonRelativeInstructionTest:feedbackExplainsTheRequestedMeaningAndPreservesCitation
+    MethodSource [className = 'dev.russiancompanion.v2.Unit18ComparisonRelativeInstructionTest', methodName = 'feedbackExplainsTheRequestedMeaningAndPreservesCitation', methodParameterTypes = '']
+    => org.junit.ComparisonFailure: expected:<Which [English meaning matches] the shown form?> but was:<Which [admitted English gloss is written beside] the shown form?>
+       org.junit.Assert.assertEquals(Assert.java:117)
+       org.junit.Assert.assertEquals(Assert.java:146)
+       dev.russiancompanion.v2.Unit18ComparisonRelativeInstructionTest.feedbackExplainsTheRequestedMeaningAndPreservesCitation(Unit18ComparisonRelativeInstructionTest.kt:43)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+  JUnit Vintage:Unit18ComparisonRelativeInstructionTest:allCheckedFormsAreTaughtBeforeGuidedPracticeAndRemediated
+    MethodSource [className = 'dev.russiancompanion.v2.Unit18ComparisonRelativeInstructionTest', methodName = 'allCheckedFormsAreTaughtBeforeGuidedPracticeAndRemediated', methodParameterTypes = '']
+    => java.lang.AssertionError: expected:<3> but was:<1>
+       org.junit.Assert.fail(Assert.java:89)
+       org.junit.Assert.failNotEquals(Assert.java:835)
+       org.junit.Assert.assertEquals(Assert.java:120)
+       org.junit.Assert.assertEquals(Assert.java:146)
+       dev.russiancompanion.v2.Unit18ComparisonRelativeInstructionTest.allCheckedFormsAreTaughtBeforeGuidedPracticeAndRemediated(Unit18ComparisonRelativeInstructionTest.kt:14)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+
+Test run finished after 712 ms
+[         4 containers found      ]
+[         0 containers skipped    ]
+[         4 containers started    ]
+[         0 containers aborted    ]
+[         4 containers successful ]
+[         0 containers failed     ]
+[         4 tests found           ]
+[         0 tests skipped         ]
+[         4 tests started         ]
+[         0 tests aborted         ]
+[         0 tests successful      ]
+[         4 tests failed          ]
+
