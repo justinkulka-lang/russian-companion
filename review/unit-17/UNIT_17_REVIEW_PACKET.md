@@ -11,12 +11,12 @@ Unit 17 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 7c2e94d62ffdfff853e1951c0205e6ce7d10d6c8
-- Unit content-review SHA-256: 9723c8b390ccfa95f468a337f8926133acbc155623fa8523c56e0bda2e619a6b
+- Curriculum source commit: 32e10f0d97b4490b8886d2db9b7d92d228f2db9f
+- Unit content-review SHA-256: a16117a72a39d336971d7880281a97d5d9d81b3f37a1ad52cc52005967db02b3
 - Mapping-package SHA-256: 724a3220ec28b620687871fbca1639cc8e64b58fed7fcfe8ba1a29bdf39d6328
-- Pack content-review SHA-256: dc35c660a31a95c00d9378fbd16f82c2557890d613a20760f554f69104790c6e
-- Review-package SHA-256: dd082a827b29e3d094b63f9905cf7b502cf10129a4dbcc696adc3751b62efc7d
-- Repository source SHA-256: 402ec4c0244647ecdb7c5fc5997a3fe43afc915dc9e87d4786d807ef3cc804ae
+- Pack content-review SHA-256: 087606b3931d56e5b1e8e062178f80c77ff22bbc9df8ecd3dd973c53af2c5a3c
+- Review-package SHA-256: fad1bce0ff91d1135859ca7e7b94fdaee2feb01f6fd72d25d04f6c0465ec034e
+- Repository source SHA-256: a8dbbcbd61351a230dc4ce19d5945049061896a859ceef412ded2babdce7b880
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -113,9 +113,9 @@ tutorOptional=true
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 74f336b1bfb7fb8d218740a4d45a8b48eb7798b43d18ff66dc5fd280310a390e
+- Content hash: a8b5fa4cfdd36630c77bcd1ff4862539fc7d7df9d919270d1f479bbc5dbbeccf
 
-title=Choose the admitted ordinal line
+title=Recognize ordinal positions and agreement
 kind=RECOGNITION
 unitNumber=17
 instruction=u17-st-orient,u17-st-teach-ordinals-1,u17-st-teach-ordinals-2,u17-st-teach-ordinals-3
@@ -132,9 +132,9 @@ remediation=u17-st-rem-ordinals
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3c480cd39ecb44499f4cddfeffb232709af5e91dcd850dc6255316185c041f07
+- Content hash: 47d59f4f22ba9d9f7ac837f9ebf15f889373ad1afe9c22a0e184df9a5d8ffe4b
 
-title=Choose the admitted hour row
+title=Recognize hour counts and noun forms
 kind=RECOGNITION
 unitNumber=17
 instruction=u17-st-orient,u17-st-teach-hours-1,u17-st-teach-hours-2,u17-st-teach-hours-3
@@ -151,9 +151,9 @@ remediation=u17-st-rem-hours
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8a6e8f4b34878656f273c4155a2e7a6845fa0ddbb1d552a3513c891b2963df0f
+- Content hash: 508cd786d8c1faef1ddd1aa10c138caa46c28d4929eba7774106a610a11ad9bf
 
-title=Choose the admitted year row
+title=Recognize year counts and noun forms
 kind=RECOGNITION
 unitNumber=17
 instruction=u17-st-orient,u17-st-teach-years-1,u17-st-teach-years-2,u17-st-teach-years-3
@@ -170,9 +170,9 @@ remediation=u17-st-rem-years
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 6d28fb66f226075ffc15de5c35a7bade8180f5bc9379b9ea1b109b21f4c7409a
+- Content hash: 9439e572751aa705c4fc7b973972a381e71bc0c1593d594cb247108ccdb0f40e
 
-title=Choose the admitted minute row
+title=Recognize minute counts and feminine numerals
 kind=RECOGNITION
 unitNumber=17
 instruction=u17-st-orient,u17-st-teach-minutes-1,u17-st-teach-minutes-2,u17-st-teach-minutes-3
@@ -397,12 +397,12 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ed0296b3e6d6ce110b0f5c8eb0f9b74b2dff10eb989b7c2a84aee8163aacab44
+- Content hash: adb286a4db7a4fd6335a53540a16dc485a5cb7cee3aff5824d85d0c01141d89a
 
-title=Choose the admitted ordinal line
+title=Recognize ordinal positions and agreement
 estimatedMinutes=12
 objectives=obj-u17-ordinals
-steps=u17-st-teach-ordinals-1,u17-st-guided-ordinals-1,u17-st-teach-ordinals-2,u17-st-teach-ordinals-3,u17-st-rem-ordinals,u17-st-check-ordinals
+steps=u17-st-teach-ordinals-1,u17-st-teach-ordinals-2,u17-st-teach-ordinals-3,u17-st-guided-ordinals-1,u17-st-rem-ordinals,u17-st-check-ordinals
 
 ### STEP `u17-st-teach-ordinals-1`
 
@@ -412,11 +412,11 @@ steps=u17-st-teach-ordinals-1,u17-st-guided-ordinals-1,u17-st-teach-ordinals-2,u
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f477e781df059878981bd6e32081419ae76cced5473165bd6dedb4f9febd13fb
+- Content hash: db5ff5c79bbacea8dabd228df22d57f0360e76122bf20c359b925acbc7d89d46
 
 kind=TEACH
-title=Admitted lines
-body=пе́рвый — Ordinal numbers. второ́й — Ordinal numbers. 
+title=Position rather than quantity
+body=пе́рвый — first. второ́й — second. тре́тий — third. четвёртый — fourth. An ordinal identifies position in an ordered sequence; a cardinal tells how many. These isolated ordinal forms are masculine nominative singular. Learn the position expressed by each form before choosing it.
 dominantAction=Continue
 references=ref-u17-attribution
 items=
@@ -426,28 +426,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u17-st-guided-ordinals-1`
-
-- Objectives: obj-u17-ordinals
-- Sessions: u17-s-ordinals
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5ff9b7559bf5d1850620b1f49e61251f5497c63f84f04d5f2f8e11c8f4dff033
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u17-g-ordinals-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u17-st-rem-ordinals
-
 ### STEP `u17-st-teach-ordinals-2`
 
 - Objectives: obj-u17-ordinals
@@ -456,11 +434,11 @@ remediationStepId=u17-st-rem-ordinals
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 82ff52747797efe4e0b3bcf1761831f58479d2214e6e53530aaa6e813c489e21
+- Content hash: ff86246e2599ca8fef9c40d5a828c9e53d3e72d7b9ad818a1ffad396aa0281c3
 
 kind=TEACH
-title=Admitted instruction
-body=Ordinal numbers
+title=Ordinals agree like adjectives
+body=Ordinals agree with their noun in gender, number and case, like adjectives. восемнадцатую девушку means the eighteenth girl as a feminine accusative noun phrase. The retained example comes from a sentence about photographing her; this displayed fragment alone does not mean She just photographed. The ordinal ending follows the noun phrase, rather than staying in the masculine dictionary form. These recognition checks do not assess producing agreement in a sentence.
 dominantAction=Continue
 references=ref-u17-attribution
 items=
@@ -478,11 +456,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d0a1ad0f50dc34a0a1e345b67c757180ffde0573785fed4b7918af47854134b7
+- Content hash: 4d541f28dc04a31c8f650b06708be46ee1437ecb754d0b19bcc86a255c1fa705
 
 kind=TEACH
-title=Admitted lines
-body=тре́тий — Ordinal numbers. восемнадцатую девушку — She just photographed the eighteenth girl. 
+title=Work the requested position
+body=For the first ordinal, choose пе́рвый; for the second ordinal, choose второ́й; for the third ordinal, choose тре́тий. четвёртый expresses fourth, so it fails each of those requests. Read the English request: the separately shown Russian cue may name a different position and is not the target to copy.
 dominantAction=Continue
 references=ref-u17-attribution
 items=
@@ -492,6 +470,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u17-st-guided-ordinals-1`
+
+- Objectives: obj-u17-ordinals
+- Sessions: u17-s-ordinals
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 0056e7cc12b070b1d4d285c30be69af37ddeb3c889649ab9157d73d9367bf574
+
+kind=GUIDED
+title=Guided practice
+body=Read the requested position or quantity and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+dominantAction=Continue
+references=
+items=u17-g-ordinals-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u17-st-rem-ordinals
+
 ### STEP `u17-st-rem-ordinals`
 
 - Objectives: obj-u17-ordinals
@@ -500,15 +500,19 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1e30da9543765f6e5d4f978425d427315aa5fc1ffede0f64246808d00ad23e57
+- Content hash: cbff916516e144db8d8b8ab10efb03ec61b821fd071cfc8cc8c294b0066f0c48
 
 kind=REMEDIATE
-title=Remediation
-body=Ordinal numbers
+title=Review positions and counts
+body=пе́рвый — first. второ́й — second. тре́тий — third. четвёртый — fourth. An ordinal identifies position in an ordered sequence; a cardinal tells how many. These isolated ordinal forms are masculine nominative singular. Learn the position expressed by each form before choosing it.
+
+Ordinals agree with their noun in gender, number and case, like adjectives. восемнадцатую девушку means the eighteenth girl as a feminine accusative noun phrase. The retained example comes from a sentence about photographing her; this displayed fragment alone does not mean She just photographed. The ordinal ending follows the noun phrase, rather than staying in the masculine dictionary form. These recognition checks do not assess producing agreement in a sentence.
+
+For the first ordinal, choose пе́рвый; for the second ordinal, choose второ́й; for the third ordinal, choose тре́тий. четвёртый expresses fourth, so it fails each of those requests. Read the English request: the separately shown Russian cue may name a different position and is not the target to copy.
 dominantAction=Continue
 references=
 items=
-examples=ex-u17-ordinals-0,ex-u17-ordinals-1
+examples=ex-u17-ordinals-0,ex-u17-ordinals-1,ex-u17-ordinals-2,ex-u17-ordinals-3
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -522,11 +526,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 087d006773f0be25fc3cb1c52360aca5540ee1ab1c36b3858000452017c6b618
+- Content hash: e4a448420c21eb29ff2339cb58c8369024b47593e1ea23c641134e3fa2d40978
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Read the requested position or quantity and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
 dominantAction=Continue
 references=
 items=u17-i-ordinals-1,u17-i-ordinals-2
@@ -544,12 +548,12 @@ remediationStepId=u17-st-rem-ordinals
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3540377e414df155fb575d51efd77c5ab4f68549982d83e7e1f8acd0ff95b9d4
+- Content hash: 947fdf18ef1524b6f267f1aec3e7cf5fbed493b686e1c3f9c02fe67d0cc98019
 
-title=Choose the admitted hour row
+title=Recognize hour counts and noun forms
 estimatedMinutes=12
 objectives=obj-u17-hours
-steps=u17-st-teach-hours-1,u17-st-guided-hours-1,u17-st-teach-hours-2,u17-st-teach-hours-3,u17-st-rem-hours,u17-st-check-hours
+steps=u17-st-teach-hours-1,u17-st-teach-hours-2,u17-st-teach-hours-3,u17-st-guided-hours-1,u17-st-rem-hours,u17-st-check-hours
 
 ### STEP `u17-st-teach-hours-1`
 
@@ -559,11 +563,11 @@ steps=u17-st-teach-hours-1,u17-st-guided-hours-1,u17-st-teach-hours-2,u17-st-tea
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 38c2c0a78320397c2e861660e7518cf0c6a41e03b3b2b6dbecee5b9c94aaa3d7
+- Content hash: 32acbf7fa2283e779712295d8622606020b416a9c740af44c10e16bb3de6f3ca
 
 kind=TEACH
-title=Admitted lines
-body=один час — один час. два часа — два часа. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+title=One, two and five hours
+body=один час — one hour. два часа — two hours. пять часов — five hours. The noun changes with the count: nominative singular after one, genitive singular after two, and genitive plural after five. English uses hours for both two and five, but Russian uses different forms.
 dominantAction=Continue
 references=ref-u17-attribution
 items=
@@ -573,28 +577,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u17-st-guided-hours-1`
-
-- Objectives: obj-u17-hours
-- Sessions: u17-s-hours
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ae741371c3bfcd5ebe6615fe8b7c89263b7521a7ef3e008931ffc599a44a5823
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u17-g-hours-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u17-st-rem-hours
-
 ### STEP `u17-st-teach-hours-2`
 
 - Objectives: obj-u17-hours
@@ -603,11 +585,11 @@ remediationStepId=u17-st-rem-hours
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 86936f5320c97bde593152324c8185215636ccf673f9e7e4cfca8cbaa419a135
+- Content hash: b563e9c8f6ac4205c6cd1da4b078cca35db4cc5236c4576a63c998fda3e3c2b4
 
 kind=TEACH
-title=Admitted instruction
-body=* один час
+title=Bound the counting rule
+body=For basic counts in nominative or inanimate accusative constructions, use the one pattern for numbers ending in 1, the two pattern for endings 2, 3 or 4, and the five pattern for endings 0, 5, 6, 7, 8 or 9. Numbers ending in 11, 12, 13 or 14 take the five pattern instead. Other case constructions require additional changes to the numeral and noun; this is not a rule for every sentence position.
 dominantAction=Continue
 references=ref-u17-attribution
 items=
@@ -625,11 +607,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 7a2f0e92c5b9b97aba1b62a62db8938b0ca4dd96c27bdf52eb701c7ce8117334
+- Content hash: 9c39a354eeba613044b149bbbc7568b022db021b089f8c5c1d5b53696618e4be
 
 kind=TEACH
-title=Admitted lines
-body=пять часов — пять часов. 
+title=Work an hour choice
+body=For a two-hour row, choose два часа. один час names one hour and пять часов names five hours. For a five-hour row, choose пять часов, even when the separately shown cue is the one-hour phrase. Read the requested quantity rather than copying the cue. Recognizing these hour counts does not demonstrate telling the time on a clock.
 dominantAction=Continue
 references=ref-u17-attribution
 items=
@@ -639,6 +621,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u17-st-guided-hours-1`
+
+- Objectives: obj-u17-hours
+- Sessions: u17-s-hours
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: b4e9006b41a9d15e8bf6bac3bbecc1ea70a1e0c11b4774e6f42ec1a3736dba6c
+
+kind=GUIDED
+title=Guided practice
+body=Read the requested position or quantity and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+dominantAction=Continue
+references=
+items=u17-g-hours-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u17-st-rem-hours
+
 ### STEP `u17-st-rem-hours`
 
 - Objectives: obj-u17-hours
@@ -647,15 +651,19 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 9c8e2838dcd7b02585a757fbeaa0fe6eda1741c4412c1dc1fd295746c23bef88
+- Content hash: 1868b1b7a9861f3c2af2b8b98bd783e384487f62a6f4e749bf584c45c77a1654
 
 kind=REMEDIATE
-title=Remediation
-body=* один час
+title=Review positions and counts
+body=один час — one hour. два часа — two hours. пять часов — five hours. The noun changes with the count: nominative singular after one, genitive singular after two, and genitive plural after five. English uses hours for both two and five, but Russian uses different forms.
+
+For basic counts in nominative or inanimate accusative constructions, use the one pattern for numbers ending in 1, the two pattern for endings 2, 3 or 4, and the five pattern for endings 0, 5, 6, 7, 8 or 9. Numbers ending in 11, 12, 13 or 14 take the five pattern instead. Other case constructions require additional changes to the numeral and noun; this is not a rule for every sentence position.
+
+For a two-hour row, choose два часа. один час names one hour and пять часов names five hours. For a five-hour row, choose пять часов, even when the separately shown cue is the one-hour phrase. Read the requested quantity rather than copying the cue. Recognizing these hour counts does not demonstrate telling the time on a clock.
 dominantAction=Continue
 references=
 items=
-examples=ex-u17-hours-0,ex-u17-hours-1
+examples=ex-u17-hours-0,ex-u17-hours-1,ex-u17-hours-2
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -669,11 +677,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 2323a9b019963e61b211a0daf126c8e800ceee6a2ba6c0c0c5db8b0a7795b9b4
+- Content hash: e6dd82745485b087e47ac49672c53d7177692a55ce00b964c8469dcadadb96d9
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Read the requested position or quantity and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
 dominantAction=Continue
 references=
 items=u17-i-hours-1,u17-i-hours-2
@@ -691,12 +699,12 @@ remediationStepId=u17-st-rem-hours
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 03d8c0cb3d9dd4c4415ee4cc14b16b0703c0ac67599b6dbc5d4eb88d3fc41738
+- Content hash: 01e3c827fc6ca387d4231adecfb04e5a6950ab532126d8468cef635633e2da00
 
-title=Choose the admitted year row
+title=Recognize year counts and noun forms
 estimatedMinutes=12
 objectives=obj-u17-years
-steps=u17-st-teach-years-1,u17-st-guided-years-1,u17-st-teach-years-2,u17-st-teach-years-3,u17-st-rem-years,u17-st-check-years
+steps=u17-st-teach-years-1,u17-st-teach-years-2,u17-st-teach-years-3,u17-st-guided-years-1,u17-st-rem-years,u17-st-check-years
 
 ### STEP `u17-st-teach-years-1`
 
@@ -706,11 +714,11 @@ steps=u17-st-teach-years-1,u17-st-guided-years-1,u17-st-teach-years-2,u17-st-tea
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 391c3ceca80e3aa2512dcc759574ffdd2058041a8edf53ef0f52f6eff1b7c44b
+- Content hash: 1767a426898f7cb0d59a933c4d6abad148b39893f630a8ecd1df18e131412a25
 
 kind=TEACH
-title=Admitted lines
-body=один год — один год. два года — два года. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+title=One, two and five years
+body=один год — one year. два года — two years. пять лет — five years. The basic counting forms are nominative singular after one, genitive singular after two, and genitive plural after five. The plural counting form for years uses a different stem: learn пять лет as the complete five-year phrase.
 dominantAction=Continue
 references=ref-u17-attribution
 items=
@@ -720,28 +728,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u17-st-guided-years-1`
-
-- Objectives: obj-u17-years
-- Sessions: u17-s-years
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 958dd5ea4b8eb03a5f39791b27b18f28fa870bb3cf7b901c98f1728e3ee8d16a
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u17-g-years-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u17-st-rem-years
-
 ### STEP `u17-st-teach-years-2`
 
 - Objectives: obj-u17-years
@@ -750,11 +736,11 @@ remediationStepId=u17-st-rem-years
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 76168acc66d055ffb54e156da5a5dee6f7b82350b3606bd36fb04c26bdbdcdf5
+- Content hash: 0b2773328f8daf6b393d8cd3e3e7cc1d8eb326f32622d4f96adcf632a4a71de5
 
 kind=TEACH
-title=Admitted instruction
-body=* один год
+title=Compound counts and the teen exception
+body=сорок один год — forty-one years. The compound ends in 1, so its noun follows the one pattern. In basic nominative or inanimate accusative counts, endings 2, 3 or 4 follow the two pattern; endings 0 and 5 through 9 follow the five pattern. Endings 11 through 14 are exceptions to the final-digit rule and take the five pattern. Other grammatical cases need additional changes.
 dominantAction=Continue
 references=ref-u17-attribution
 items=
@@ -772,11 +758,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5f4184a051d8c6e9788dd28068d72952f31ee9f29073c424426506618688fa4e
+- Content hash: ff7cfb1e047ff848073b2b771260578984c070383c4ff1d4d36a3504e4f56a2d
 
 kind=TEACH
-title=Admitted lines
-body=пять лет — пять лет. сорок один год — forty-one years. 
+title=Work a year choice
+body=For a five-year row, choose пять лет, rather than два года, which names two years. For a one-year row, choose один год; for a two-year row, choose два года. The separately shown cue can have a different count. These checks recognize quantities of years, not ordinal calendar-year dates or a complete age sentence.
 dominantAction=Continue
 references=ref-u17-attribution
 items=
@@ -786,6 +772,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u17-st-guided-years-1`
+
+- Objectives: obj-u17-years
+- Sessions: u17-s-years
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 3d401154314c69b2f25cf0a14480cc38d1de90de7601967635c086d36b4f26c1
+
+kind=GUIDED
+title=Guided practice
+body=Read the requested position or quantity and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+dominantAction=Continue
+references=
+items=u17-g-years-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u17-st-rem-years
+
 ### STEP `u17-st-rem-years`
 
 - Objectives: obj-u17-years
@@ -794,15 +802,19 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: bad57110b6a3128d57a79f0dbc735f3a6fbd0af13acff7d140852a8192ecd6c0
+- Content hash: 8dfe1c62bd09c065929a87f7790d672fc5f98140dcb7fad97bb800242972fd11
 
 kind=REMEDIATE
-title=Remediation
-body=* один год
+title=Review positions and counts
+body=один год — one year. два года — two years. пять лет — five years. The basic counting forms are nominative singular after one, genitive singular after two, and genitive plural after five. The plural counting form for years uses a different stem: learn пять лет as the complete five-year phrase.
+
+сорок один год — forty-one years. The compound ends in 1, so its noun follows the one pattern. In basic nominative or inanimate accusative counts, endings 2, 3 or 4 follow the two pattern; endings 0 and 5 through 9 follow the five pattern. Endings 11 through 14 are exceptions to the final-digit rule and take the five pattern. Other grammatical cases need additional changes.
+
+For a five-year row, choose пять лет, rather than два года, which names two years. For a one-year row, choose один год; for a two-year row, choose два года. The separately shown cue can have a different count. These checks recognize quantities of years, not ordinal calendar-year dates or a complete age sentence.
 dominantAction=Continue
 references=
 items=
-examples=ex-u17-years-0,ex-u17-years-1
+examples=ex-u17-years-0,ex-u17-years-1,ex-u17-years-2,ex-u17-years-3
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -816,11 +828,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 99ba68b4cc4cbbcbbbafa05757f40e8ff71e72bdfb8a88c4b32cbe853fdba40e
+- Content hash: e07604c6c59e8ff2187140e5518d8db72bd5169e37d8af52805edb0f1334b53c
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Read the requested position or quantity and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
 dominantAction=Continue
 references=
 items=u17-i-years-1,u17-i-years-2
@@ -838,12 +850,12 @@ remediationStepId=u17-st-rem-years
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c55f608a91455fadb70f8295b66ef614acb7eb879728ed95d3b494eff07bc67b
+- Content hash: 6b2d6a887070c034f9ea03efc53a3458c35242814ffa1b6d3a720d4f46587d82
 
-title=Choose the admitted minute row
+title=Recognize minute counts and feminine numerals
 estimatedMinutes=12
 objectives=obj-u17-minutes
-steps=u17-st-teach-minutes-1,u17-st-guided-minutes-1,u17-st-teach-minutes-2,u17-st-teach-minutes-3,u17-st-rem-minutes,u17-st-check-minutes
+steps=u17-st-teach-minutes-1,u17-st-teach-minutes-2,u17-st-teach-minutes-3,u17-st-guided-minutes-1,u17-st-rem-minutes,u17-st-check-minutes
 
 ### STEP `u17-st-teach-minutes-1`
 
@@ -853,11 +865,11 @@ steps=u17-st-teach-minutes-1,u17-st-guided-minutes-1,u17-st-teach-minutes-2,u17-
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 7885a24588f0b2098d618763eede3aadf1db4b3cc2cc4a180b05d5d326d22c25
+- Content hash: 97b0be72d8624ee72fbcc863247697e2de999667f2639f89d0496322e07af559
 
 kind=TEACH
-title=Admitted lines
-body=одна минута — одна минута. две минуты — две минуты. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+title=Minutes use feminine one and two
+body=одна минута — one minute. две минуты — two minutes. пять минут — five minutes. The noun for minute is feminine, so one and two use feminine forms here. Compare the masculine hour and year phrases. The noun is nominative singular after one, genitive singular after two, and genitive plural after five.
 dominantAction=Continue
 references=ref-u17-attribution
 items=
@@ -867,28 +879,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u17-st-guided-minutes-1`
-
-- Objectives: obj-u17-minutes
-- Sessions: u17-s-minutes
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 2213496754afac7afe21ecedaf4af4b19e14db06adf9e000a6af0d9803837774
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u17-g-minutes-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u17-st-rem-minutes
-
 ### STEP `u17-st-teach-minutes-2`
 
 - Objectives: obj-u17-minutes
@@ -897,11 +887,11 @@ remediationStepId=u17-st-rem-minutes
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 84ce263667dc9e52896ffd331456bfadeb4f5dc89711b4a174006eb0e3dfa654
+- Content hash: 1d9601ec708fca2e96e9b77068299336692e374e140aff2185ad1a36510a39df
 
 kind=TEACH
-title=Admitted instruction
-body=* одна минута
+title=Use the bounded count pattern
+body=For basic nominative or inanimate accusative counts, an ending of 1 follows the one-minute pattern, endings 2, 3 or 4 follow the two-minute pattern, and endings 0 or 5 through 9 follow the five-minute pattern. Endings 11 through 14 take the five-minute pattern instead of following the final digit alone. Different case constructions require additional numeral and noun changes.
 dominantAction=Continue
 references=ref-u17-attribution
 items=
@@ -919,11 +909,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ec5ad5cceb661e5a990ab6faa9e089428ec588484cfe16cbed904612846174e1
+- Content hash: d92a01265fb0660a931de8e08a157025b6e34eca506f6ad49c20ceb8dfd029e5
 
 kind=TEACH
-title=Admitted lines
-body=пять минут — пять минут. 
+title=Work a minute choice
+body=For a one-minute row, choose одна минута. For a two-minute row, choose две минуты. For a five-minute row, choose пять минут. Each other phrase names a different quantity. Read the English request even if the separately shown cue has a different count. These quantity choices do not assess expressing minutes past an hour on a clock.
 dominantAction=Continue
 references=ref-u17-attribution
 items=
@@ -933,6 +923,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u17-st-guided-minutes-1`
+
+- Objectives: obj-u17-minutes
+- Sessions: u17-s-minutes
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: e4db3887699d7d987280bb69a578e6e99dd1f56bc93b124e77039b4553208c8a
+
+kind=GUIDED
+title=Guided practice
+body=Read the requested position or quantity and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+dominantAction=Continue
+references=
+items=u17-g-minutes-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u17-st-rem-minutes
+
 ### STEP `u17-st-rem-minutes`
 
 - Objectives: obj-u17-minutes
@@ -941,15 +953,19 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 901c90aec17fdfa6dc811163865c289f43b04bffdca170bb9d8e2d1b7a918020
+- Content hash: 096ac9d515acaa32d4f01347219e51b0d0a88aee504d2b2b25860c6aae21287d
 
 kind=REMEDIATE
-title=Remediation
-body=* одна минута
+title=Review positions and counts
+body=одна минута — one minute. две минуты — two minutes. пять минут — five minutes. The noun for minute is feminine, so one and two use feminine forms here. Compare the masculine hour and year phrases. The noun is nominative singular after one, genitive singular after two, and genitive plural after five.
+
+For basic nominative or inanimate accusative counts, an ending of 1 follows the one-minute pattern, endings 2, 3 or 4 follow the two-minute pattern, and endings 0 or 5 through 9 follow the five-minute pattern. Endings 11 through 14 take the five-minute pattern instead of following the final digit alone. Different case constructions require additional numeral and noun changes.
+
+For a one-minute row, choose одна минута. For a two-minute row, choose две минуты. For a five-minute row, choose пять минут. Each other phrase names a different quantity. Read the English request even if the separately shown cue has a different count. These quantity choices do not assess expressing minutes past an hour on a clock.
 dominantAction=Continue
 references=
 items=
-examples=ex-u17-minutes-0,ex-u17-minutes-1
+examples=ex-u17-minutes-0,ex-u17-minutes-1,ex-u17-minutes-2
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -963,11 +979,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1c8be3ee507a52b05f7b68c28547d913c2ef84a050a9cca5a03d177fd277b391
+- Content hash: cacd883842ca7c2e59dff7c95bd18628b374c19590ec11f861ca444104d135f0
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Read the requested position or quantity and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
 dominantAction=Continue
 references=
 items=u17-i-minutes-1,u17-i-minutes-2
@@ -3004,7 +3020,7 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 0ce4830121723ac3bbb49108aa765909b9b8a042ec99a3d04a595205ea2443c1
+- Content hash: d70611f84e51a57043d6ca64e4bf431573620f9b9791953c0033f2708cfb7540
 
 kind=FORM_SELECTION
 language=en
@@ -3012,11 +3028,11 @@ prompt=Which admitted line is the first ordinal?
 promptLetter=второ́й
 options=пе́рвый | тре́тий | четвёртый
 answer=пе́рвый
-feedback=Does this answer show the first ordinal? пе́рвый.
+feedback=пе́рвый means first. This is the first ordinal. Choose this phrase for the requested position, even when the shown cue differs.
 objectiveId=obj-u17-ordinals
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the first ordinal? | Does this row fail the first ordinal?
+distractorRationales= | тре́тий means third, rather than the requested first. | четвёртый means fourth, rather than the requested first.
 testedFeature=FIRST_ORDINAL
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u17-ordinals-0
@@ -3024,8 +3040,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u17-ordinals-0-ru
 distractorSourceIds= | prov-ex-u17-ordinals-2-ru | prov-u17-ordinals-x-0
-distractorDifference= | Does this row fail the first ordinal? | Does this row fail the first ordinal?
-whyAnswerDemonstratesObjective=Does this answer show the first ordinal?
+distractorDifference= | тре́тий means third, rather than the requested first. | четвёртый means fourth, rather than the requested first.
+whyAnswerDemonstratesObjective=пе́рвый means first. This is the first ordinal. Choose this phrase for the requested position, even when the shown cue differs.
 contrastMembers=пе́рвый | тре́тий | четвёртый
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u17-ordinals-1-ru | prov-ex-u17-ordinals-0-ru | prov-ex-u17-ordinals-2-ru | prov-u17-ordinals-x-0
@@ -3039,7 +3055,7 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 62922956f9a2d120bcee29750f9131e65594ad0c6919ac54f435326c34182e2b
+- Content hash: 4fecf8fe36373680c076633ebb14bba4af5c7650f960bec39b80b58bdbc7345c
 
 kind=FORM_SELECTION
 language=en
@@ -3047,11 +3063,11 @@ prompt=Which admitted line is the one-hour row?
 promptLetter=два часа
 options=один час | пять часов
 answer=один час
-feedback=Does this answer show the one-hour row? один час.
+feedback=один час means one hour. This is the one-hour row. Choose this phrase for the requested quantity, even when the shown cue differs.
 objectiveId=obj-u17-hours
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the one-hour row?
+distractorRationales= | пять часов means five hours, rather than the requested one hour.
 testedFeature=ONE_HOUR_ROW
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u17-hours-0
@@ -3059,8 +3075,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u17-hours-0-ru
 distractorSourceIds= | prov-ex-u17-hours-2-ru
-distractorDifference= | Does this row fail the one-hour row?
-whyAnswerDemonstratesObjective=Does this answer show the one-hour row?
+distractorDifference= | пять часов means five hours, rather than the requested one hour.
+whyAnswerDemonstratesObjective=один час means one hour. This is the one-hour row. Choose this phrase for the requested quantity, even when the shown cue differs.
 contrastMembers=один час | пять часов
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u17-hours-1-ru | prov-ex-u17-hours-0-ru | prov-ex-u17-hours-2-ru
@@ -3074,7 +3090,7 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 3d59bfab88d6a987019e00e743e9aa93c68b6251aa450db590be965f3ba5ce06
+- Content hash: e69b340bdca6bb16ff3eccdc2027fa1c644f9c3db0ddd8a7c0130d701d3e2e93
 
 kind=FORM_SELECTION
 language=en
@@ -3082,11 +3098,11 @@ prompt=Which admitted line is the one-year row?
 promptLetter=два года
 options=один год | пять лет
 answer=один год
-feedback=Does this answer show the one-year row? один год.
+feedback=один год means one year. This is the one-year row. Choose this phrase for the requested quantity, even when the shown cue differs.
 objectiveId=obj-u17-years
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the one-year row?
+distractorRationales= | пять лет means five years, rather than the requested one year.
 testedFeature=ONE_YEAR_ROW
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u17-years-0
@@ -3094,8 +3110,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u17-years-0-ru
 distractorSourceIds= | prov-ex-u17-years-2-ru
-distractorDifference= | Does this row fail the one-year row?
-whyAnswerDemonstratesObjective=Does this answer show the one-year row?
+distractorDifference= | пять лет means five years, rather than the requested one year.
+whyAnswerDemonstratesObjective=один год means one year. This is the one-year row. Choose this phrase for the requested quantity, even when the shown cue differs.
 contrastMembers=один год | пять лет
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u17-years-1-ru | prov-ex-u17-years-0-ru | prov-ex-u17-years-2-ru
@@ -3109,7 +3125,7 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 271bdb52ba6ac8b45b3af384eed52ade18a9aa350a047e75208fc87164b7c739
+- Content hash: 7ee06493b61398f849f4147f02464d9fc4207444975e879d61d887a123d09b8a
 
 kind=FORM_SELECTION
 language=en
@@ -3117,11 +3133,11 @@ prompt=Which admitted line is the one-minute row?
 promptLetter=две минуты
 options=одна минута | пять минут
 answer=одна минута
-feedback=Does this answer show the one-minute row? одна минута.
+feedback=одна минута means one minute. This is the one-minute row. Choose this phrase for the requested quantity, even when the shown cue differs.
 objectiveId=obj-u17-minutes
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the one-minute row?
+distractorRationales= | пять минут means five minutes, rather than the requested one minute.
 testedFeature=ONE_MINUTE_ROW
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u17-minutes-0
@@ -3129,8 +3145,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u17-minutes-0-ru
 distractorSourceIds= | prov-ex-u17-minutes-2-ru
-distractorDifference= | Does this row fail the one-minute row?
-whyAnswerDemonstratesObjective=Does this answer show the one-minute row?
+distractorDifference= | пять минут means five minutes, rather than the requested one minute.
+whyAnswerDemonstratesObjective=одна минута means one minute. This is the one-minute row. Choose this phrase for the requested quantity, even when the shown cue differs.
 contrastMembers=одна минута | пять минут
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u17-minutes-1-ru | prov-ex-u17-minutes-0-ru | prov-ex-u17-minutes-2-ru
@@ -3424,7 +3440,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 5bb3142fb384171bd1cb108d232fa86089bd5b666d4c2d4bf855b5c2ad534c98
+- Content hash: fd22e5e14bb4b69c9f064d1d8cc41ad10ebdecbcd7f8bb7688f8ce020a85b2f5
 
 kind=FORM_SELECTION
 language=en
@@ -3432,11 +3448,11 @@ prompt=Which admitted line is the second ordinal?
 promptLetter=пе́рвый
 options=второ́й | тре́тий | четвёртый
 answer=второ́й
-feedback=Does this answer show the second ordinal? второ́й.
+feedback=второ́й means second. This is the second ordinal. Choose this phrase for the requested position, even when the shown cue differs.
 objectiveId=obj-u17-ordinals
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the second ordinal? | Does this row fail the second ordinal?
+distractorRationales= | тре́тий means third, rather than the requested second. | четвёртый means fourth, rather than the requested second.
 testedFeature=SECOND_ORDINAL
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u17-ordinals-1
@@ -3444,8 +3460,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u17-ordinals-1-ru
 distractorSourceIds= | prov-ex-u17-ordinals-2-ru | prov-u17-ordinals-x-0
-distractorDifference= | Does this row fail the second ordinal? | Does this row fail the second ordinal?
-whyAnswerDemonstratesObjective=Does this answer show the second ordinal?
+distractorDifference= | тре́тий means third, rather than the requested second. | четвёртый means fourth, rather than the requested second.
+whyAnswerDemonstratesObjective=второ́й means second. This is the second ordinal. Choose this phrase for the requested position, even when the shown cue differs.
 contrastMembers=второ́й | тре́тий | четвёртый
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u17-ordinals-0-ru | prov-ex-u17-ordinals-1-ru | prov-ex-u17-ordinals-2-ru | prov-u17-ordinals-x-0
@@ -3459,7 +3475,7 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 7b2c9a364463cc6461349d23a79d6b662d8d4a714ba98a5a88535ebe576cdbd6
+- Content hash: fd14171fd0221753fb422a09d953e75aff80d24aa83d70420c7a8594f19872b1
 
 kind=FORM_SELECTION
 language=en
@@ -3467,11 +3483,11 @@ prompt=Which admitted line is the third ordinal?
 promptLetter=пе́рвый
 options=тре́тий | второ́й | четвёртый
 answer=тре́тий
-feedback=Does this answer show the third ordinal? тре́тий.
+feedback=тре́тий means third. This is the third ordinal. Choose this phrase for the requested position, even when the shown cue differs.
 objectiveId=obj-u17-ordinals
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the third ordinal? | Does this row fail the third ordinal?
+distractorRationales= | второ́й means second, rather than the requested third. | четвёртый means fourth, rather than the requested third.
 testedFeature=THIRD_ORDINAL
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u17-ordinals-2
@@ -3479,8 +3495,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u17-ordinals-2-ru
 distractorSourceIds= | prov-ex-u17-ordinals-1-ru | prov-u17-ordinals-x-0
-distractorDifference= | Does this row fail the third ordinal? | Does this row fail the third ordinal?
-whyAnswerDemonstratesObjective=Does this answer show the third ordinal?
+distractorDifference= | второ́й means second, rather than the requested third. | четвёртый means fourth, rather than the requested third.
+whyAnswerDemonstratesObjective=тре́тий means third. This is the third ordinal. Choose this phrase for the requested position, even when the shown cue differs.
 contrastMembers=тре́тий | второ́й | четвёртый
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u17-ordinals-0-ru | prov-ex-u17-ordinals-2-ru | prov-ex-u17-ordinals-1-ru | prov-u17-ordinals-x-0
@@ -3494,7 +3510,7 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 2bc4c67b5154eb156abfdfa2074f39674d14877d42998869528a8b2045dfa7af
+- Content hash: d23c7f143f8d369005dc1e2649a11f7c2ca7f33e3edc416b9a465cc38d2923a8
 
 kind=FORM_SELECTION
 language=en
@@ -3502,11 +3518,11 @@ prompt=Which admitted line is the two-hour row?
 promptLetter=один час
 options=два часа | пять часов
 answer=два часа
-feedback=Does this answer show the two-hour row? два часа.
+feedback=два часа means two hours. This is the two-hour row. Choose this phrase for the requested quantity, even when the shown cue differs.
 objectiveId=obj-u17-hours
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the two-hour row?
+distractorRationales= | пять часов means five hours, rather than the requested two hours.
 testedFeature=TWO_HOUR_ROW
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u17-hours-1
@@ -3514,8 +3530,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u17-hours-1-ru
 distractorSourceIds= | prov-ex-u17-hours-2-ru
-distractorDifference= | Does this row fail the two-hour row?
-whyAnswerDemonstratesObjective=Does this answer show the two-hour row?
+distractorDifference= | пять часов means five hours, rather than the requested two hours.
+whyAnswerDemonstratesObjective=два часа means two hours. This is the two-hour row. Choose this phrase for the requested quantity, even when the shown cue differs.
 contrastMembers=два часа | пять часов
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u17-hours-0-ru | prov-ex-u17-hours-1-ru | prov-ex-u17-hours-2-ru
@@ -3529,7 +3545,7 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 757b9a1ca80bda17b5fb26ba43f854cc416b0bc538b0b00e329073b9bd837eed
+- Content hash: 6f36d509dca707a14743c725c95dc176b0199a3d5d4158bd2ab354de33a280a2
 
 kind=FORM_SELECTION
 language=en
@@ -3537,11 +3553,11 @@ prompt=Which admitted line is the five-hour row?
 promptLetter=один час
 options=пять часов | два часа
 answer=пять часов
-feedback=Does this answer show the five-hour row? пять часов.
+feedback=пять часов means five hours. This is the five-hour row. Choose this phrase for the requested quantity, even when the shown cue differs.
 objectiveId=obj-u17-hours
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the five-hour row?
+distractorRationales= | два часа means two hours, rather than the requested five hours.
 testedFeature=FIVE_HOUR_ROW
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u17-hours-2
@@ -3549,8 +3565,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u17-hours-2-ru
 distractorSourceIds= | prov-ex-u17-hours-1-ru
-distractorDifference= | Does this row fail the five-hour row?
-whyAnswerDemonstratesObjective=Does this answer show the five-hour row?
+distractorDifference= | два часа means two hours, rather than the requested five hours.
+whyAnswerDemonstratesObjective=пять часов means five hours. This is the five-hour row. Choose this phrase for the requested quantity, even when the shown cue differs.
 contrastMembers=пять часов | два часа
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u17-hours-0-ru | prov-ex-u17-hours-2-ru | prov-ex-u17-hours-1-ru
@@ -3564,7 +3580,7 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 2435b5912ca146e7d4ff4792040ee77f4efe7a09ddd6e73ac047ce074a6b8359
+- Content hash: f59e0c689c68e1d7361798e7454ba27fc54a1259819bc0e7b3fb80bda1f8b1e6
 
 kind=FORM_SELECTION
 language=en
@@ -3572,11 +3588,11 @@ prompt=Which admitted line is the two-year row?
 promptLetter=один год
 options=два года | пять лет
 answer=два года
-feedback=Does this answer show the two-year row? два года.
+feedback=два года means two years. This is the two-year row. Choose this phrase for the requested quantity, even when the shown cue differs.
 objectiveId=obj-u17-years
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the two-year row?
+distractorRationales= | пять лет means five years, rather than the requested two years.
 testedFeature=TWO_YEAR_ROW
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u17-years-1
@@ -3584,8 +3600,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u17-years-1-ru
 distractorSourceIds= | prov-ex-u17-years-2-ru
-distractorDifference= | Does this row fail the two-year row?
-whyAnswerDemonstratesObjective=Does this answer show the two-year row?
+distractorDifference= | пять лет means five years, rather than the requested two years.
+whyAnswerDemonstratesObjective=два года means two years. This is the two-year row. Choose this phrase for the requested quantity, even when the shown cue differs.
 contrastMembers=два года | пять лет
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u17-years-0-ru | prov-ex-u17-years-1-ru | prov-ex-u17-years-2-ru
@@ -3599,7 +3615,7 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: b97bffcca5c078a32fc4a588a3df587f4c966e960f5f6a6bd615f16bb582b511
+- Content hash: 3972e470681dc2058039d329802fa60edf5b8d539a9f8354d4f03a8bdac1e333
 
 kind=FORM_SELECTION
 language=en
@@ -3607,11 +3623,11 @@ prompt=Which admitted line is the five-year row?
 promptLetter=один год
 options=пять лет | два года
 answer=пять лет
-feedback=Does this answer show the five-year row? пять лет.
+feedback=пять лет means five years. This is the five-year row. Choose this phrase for the requested quantity, even when the shown cue differs.
 objectiveId=obj-u17-years
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the five-year row?
+distractorRationales= | два года means two years, rather than the requested five years.
 testedFeature=FIVE_YEAR_ROW
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u17-years-2
@@ -3619,8 +3635,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u17-years-2-ru
 distractorSourceIds= | prov-ex-u17-years-1-ru
-distractorDifference= | Does this row fail the five-year row?
-whyAnswerDemonstratesObjective=Does this answer show the five-year row?
+distractorDifference= | два года means two years, rather than the requested five years.
+whyAnswerDemonstratesObjective=пять лет means five years. This is the five-year row. Choose this phrase for the requested quantity, even when the shown cue differs.
 contrastMembers=пять лет | два года
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u17-years-0-ru | prov-ex-u17-years-2-ru | prov-ex-u17-years-1-ru
@@ -3634,7 +3650,7 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 590db7d7fedb0a22b941b9d711d7f2b3759e651ecc64aadb466a37ea9a3b80ec
+- Content hash: 316e68c233c30182d87974ab26276cc891cce275a2aab13327c823db9bfdd0b6
 
 kind=FORM_SELECTION
 language=en
@@ -3642,11 +3658,11 @@ prompt=Which admitted line is the two-minute row?
 promptLetter=одна минута
 options=две минуты | пять минут
 answer=две минуты
-feedback=Does this answer show the two-minute row? две минуты.
+feedback=две минуты means two minutes. This is the two-minute row. Choose this phrase for the requested quantity, even when the shown cue differs.
 objectiveId=obj-u17-minutes
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the two-minute row?
+distractorRationales= | пять минут means five minutes, rather than the requested two minutes.
 testedFeature=TWO_MINUTE_ROW
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u17-minutes-1
@@ -3654,8 +3670,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u17-minutes-1-ru
 distractorSourceIds= | prov-ex-u17-minutes-2-ru
-distractorDifference= | Does this row fail the two-minute row?
-whyAnswerDemonstratesObjective=Does this answer show the two-minute row?
+distractorDifference= | пять минут means five minutes, rather than the requested two minutes.
+whyAnswerDemonstratesObjective=две минуты means two minutes. This is the two-minute row. Choose this phrase for the requested quantity, even when the shown cue differs.
 contrastMembers=две минуты | пять минут
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u17-minutes-0-ru | prov-ex-u17-minutes-1-ru | prov-ex-u17-minutes-2-ru
@@ -3669,7 +3685,7 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: c5cb656df43a216e61ae65165183eb428fa7beaa64476029fea15a66c6eee4cf
+- Content hash: b97667f8484ece03403cb02ef0eca89324494748b78539d1c7ea2154ba4a266a
 
 kind=FORM_SELECTION
 language=en
@@ -3677,11 +3693,11 @@ prompt=Which admitted line is the five-minute row?
 promptLetter=одна минута
 options=пять минут | две минуты
 answer=пять минут
-feedback=Does this answer show the five-minute row? пять минут.
+feedback=пять минут means five minutes. This is the five-minute row. Choose this phrase for the requested quantity, even when the shown cue differs.
 objectiveId=obj-u17-minutes
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the five-minute row?
+distractorRationales= | две минуты means two minutes, rather than the requested five minutes.
 testedFeature=FIVE_MINUTE_ROW
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u17-minutes-2
@@ -3689,8 +3705,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u17-minutes-2-ru
 distractorSourceIds= | prov-ex-u17-minutes-1-ru
-distractorDifference= | Does this row fail the five-minute row?
-whyAnswerDemonstratesObjective=Does this answer show the five-minute row?
+distractorDifference= | две минуты means two minutes, rather than the requested five minutes.
+whyAnswerDemonstratesObjective=пять минут means five minutes. This is the five-minute row. Choose this phrase for the requested quantity, even when the shown cue differs.
 contrastMembers=пять минут | две минуты
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u17-minutes-0-ru | prov-ex-u17-minutes-2-ru | prov-ex-u17-minutes-1-ru
@@ -6789,6 +6805,2528 @@ attribution=Russian Companion content-audit research synthesis, content-audit-20
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
 sourceHash=ff717248e7febefa54e474a1ffa59f18433dd9de7e4f1b4e59480bb5bf7cd9c2
 contentHash=19afffbc518f50bfd9fc5419bf7513dd5c4a777302d161c8411b16530d404731
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-hours-check-body`
+
+- Objectives: obj-u17-hours
+- Sessions: u17-s-orient, u17-s-hours
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 72d2929f7d208d02ee097f0645b15d5b120a99a04b93196a59f1d092a6c162eb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-hours:numbers:hours-check-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Read the requested position or quantity and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+shippedText=Read the requested position or quantity and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b851caeaef021e5e0c7a9083bf82a8738872dec444442f9f143cc24cfbbdcc22
+contentHash=23e5d776b67bb57432897fd6bed8c78d492d37f16535ac279de8273f71ca665c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-hours-guided-body`
+
+- Objectives: obj-u17-hours
+- Sessions: u17-s-orient, u17-s-hours
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 11ee8e93cdb0c13222bd128e9fa889c78280fd83894bc3f525c2bbbab8969fb1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-hours:numbers:hours-guided-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Read the requested position or quantity and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+shippedText=Read the requested position or quantity and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b851caeaef021e5e0c7a9083bf82a8738872dec444442f9f143cc24cfbbdcc22
+contentHash=23e5d776b67bb57432897fd6bed8c78d492d37f16535ac279de8273f71ca665c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-hours-objective-title`
+
+- Objectives: obj-u17-hours
+- Sessions: u17-s-orient, u17-s-hours
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a4c324e4f1a5fe08f1398f9621bedead379f1765caf249ca9cb85df6db537ecc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-hours:numbers:hours-objective-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Recognize hour counts and noun forms
+shippedText=Recognize hour counts and noun forms
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=13b4bea52c6f0a74d29fa97b3a3b2e6a4c5ea216aa7d5309e1850be4b4a5301d
+contentHash=f4022aca21359b4a8374f9d6e9b6f266e4f5762ecbe31611a6f91ce003082d82
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-hours-rem-body`
+
+- Objectives: obj-u17-hours
+- Sessions: u17-s-orient, u17-s-hours
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d507a50300fcf3d82ec11d8e197fb040e140286fa2c59fb8a35a8d438705e741
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-hours:numbers:hours-rem-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+один час — one hour. два часа — two hours. пять часов — five hours. The noun changes with the count: nominative singular after one, genitive singular after two, and genitive plural after five. English uses hours for both two and five, but Russian uses different forms.
+
+For basic counts in nominative or inanimate accusative constructions, use the one pattern for numbers ending in 1, the two pattern for endings 2, 3 or 4, and the five pattern for endings 0, 5, 6, 7, 8 or 9. Numbers ending in 11, 12, 13 or 14 take the five pattern instead. Other case constructions require additional changes to the numeral and noun; this is not a rule for every sentence position.
+
+For a two-hour row, choose два часа. один час names one hour and пять часов names five hours. For a five-hour row, choose пять часов, even when the separately shown cue is the one-hour phrase. Read the requested quantity rather than copying the cue. Recognizing these hour counts does not demonstrate telling the time on a clock.
+shippedText=один час — one hour. два часа — two hours. пять часов — five hours. The noun changes with the count: nominative singular after one, genitive singular after two, and genitive plural after five. English uses hours for both two and five, but Russian uses different forms.
+
+For basic counts in nominative or inanimate accusative constructions, use the one pattern for numbers ending in 1, the two pattern for endings 2, 3 or 4, and the five pattern for endings 0, 5, 6, 7, 8 or 9. Numbers ending in 11, 12, 13 or 14 take the five pattern instead. Other case constructions require additional changes to the numeral and noun; this is not a rule for every sentence position.
+
+For a two-hour row, choose два часа. один час names one hour and пять часов names five hours. For a five-hour row, choose пять часов, even when the separately shown cue is the one-hour phrase. Read the requested quantity rather than copying the cue. Recognizing these hour counts does not demonstrate telling the time on a clock.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=30217ccfb3a4fc8be3c0f74f5f8c51e7499edac2a1d7f3b5b74e9dc8b03969d1
+contentHash=8336a67d8c86525a1662ae5aa4e62f9c94424993cc6fda3e42068174e616f90c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-hours-rem-title`
+
+- Objectives: obj-u17-hours
+- Sessions: u17-s-orient, u17-s-hours
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 83c2aaea54d7727d046f6786ea5cfa54c9bfa7749c95b26c2b6427f58f984a73
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-hours:numbers:hours-rem-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Review positions and counts
+shippedText=Review positions and counts
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0a36a11ffcc915641926b87c875b9d4523cb32f35ab3bbb33473383235a44a21
+contentHash=5de2e1021292de416a1df29bfe83c257bdcb1caf660133b7ac669a55e89551f9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-hours-teach-1-body`
+
+- Objectives: obj-u17-hours
+- Sessions: u17-s-orient, u17-s-hours
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c67e40d3cfe7e218ed074b5450a0d62305eaf1418381a59aa5dc938027cab52e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-hours:numbers:hours-teach-1-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+один час — one hour. два часа — two hours. пять часов — five hours. The noun changes with the count: nominative singular after one, genitive singular after two, and genitive plural after five. English uses hours for both two and five, but Russian uses different forms.
+shippedText=один час — one hour. два часа — two hours. пять часов — five hours. The noun changes with the count: nominative singular after one, genitive singular after two, and genitive plural after five. English uses hours for both two and five, but Russian uses different forms.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3c8fde8aabba36e4a20a6b34ddfc9c20845fa2ee501c7eb427c950d83f384a04
+contentHash=30097a5018d8571c69212beea2ae78403ba11e3847b67a4fa5f8b7870e8b9952
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-hours-teach-1-title`
+
+- Objectives: obj-u17-hours
+- Sessions: u17-s-orient, u17-s-hours
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2593dc25b092aa01365eb3011fe2fa7d36abeb8290bf62f8c23abcd16ed21767
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-hours:numbers:hours-teach-1-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+One, two and five hours
+shippedText=One, two and five hours
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=99274b22be96801e3f255614260b00bc49309c53d51a9bd92e51c2611ea70af1
+contentHash=c01844e14cde9a7b9caaefa71ab3eb7679afb0a2a8b2c87e57d35e62330416de
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-hours-teach-2-body`
+
+- Objectives: obj-u17-hours
+- Sessions: u17-s-orient, u17-s-hours
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dc423f61ddcad787eb385ba3b79fc3bf804f602def63a3e6e6b335826bebf3c0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-hours:numbers:hours-teach-2-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+For basic counts in nominative or inanimate accusative constructions, use the one pattern for numbers ending in 1, the two pattern for endings 2, 3 or 4, and the five pattern for endings 0, 5, 6, 7, 8 or 9. Numbers ending in 11, 12, 13 or 14 take the five pattern instead. Other case constructions require additional changes to the numeral and noun; this is not a rule for every sentence position.
+shippedText=For basic counts in nominative or inanimate accusative constructions, use the one pattern for numbers ending in 1, the two pattern for endings 2, 3 or 4, and the five pattern for endings 0, 5, 6, 7, 8 or 9. Numbers ending in 11, 12, 13 or 14 take the five pattern instead. Other case constructions require additional changes to the numeral and noun; this is not a rule for every sentence position.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=31012ec7a1f641a29f18dd9fe538d465d1e5781cbef6068a411514c1679c4519
+contentHash=3863c1595ae9aad90c91619ab5ec2bdc337d7678f07299a3b3080fae1b84f88d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-hours-teach-2-title`
+
+- Objectives: obj-u17-hours
+- Sessions: u17-s-orient, u17-s-hours
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cbb8d35609084f18d5a0dabf75af735aa1d7d40b3e3f11712eebc3ab07abf013
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-hours:numbers:hours-teach-2-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Bound the counting rule
+shippedText=Bound the counting rule
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e471c349c8f317a7cbfa695609057c844ea84ce2665be349c061f4b6ee5a3210
+contentHash=e428b29864f55fbba829410597def68f144494eba2d861b0d739d431cb22e1a8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-hours-teach-3-body`
+
+- Objectives: obj-u17-hours
+- Sessions: u17-s-orient, u17-s-hours
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ca1916591f95bc58e0264ba74fbd8445bf8c820a0c1319a65500dee72e7f42b1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-hours:numbers:hours-teach-3-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+For a two-hour row, choose два часа. один час names one hour and пять часов names five hours. For a five-hour row, choose пять часов, even when the separately shown cue is the one-hour phrase. Read the requested quantity rather than copying the cue. Recognizing these hour counts does not demonstrate telling the time on a clock.
+shippedText=For a two-hour row, choose два часа. один час names one hour and пять часов names five hours. For a five-hour row, choose пять часов, even when the separately shown cue is the one-hour phrase. Read the requested quantity rather than copying the cue. Recognizing these hour counts does not demonstrate telling the time on a clock.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=230b1e3d49a5da6baf35cd755482a5f0923b7a4a0105da449545f18649d6456b
+contentHash=995e1c0937e57f8b89c0369b08ff0b2908b4125ee4fa797945bfbd68c3905381
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-hours-teach-3-title`
+
+- Objectives: obj-u17-hours
+- Sessions: u17-s-orient, u17-s-hours
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b4937567336c9e3743a4f5635bd48fdd191d56ac9df23c663f877d60e0115d59
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-hours:numbers:hours-teach-3-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Work an hour choice
+shippedText=Work an hour choice
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3b27fc867c73b34ef53cb665cb3d783c6c3cdce1f151b212265738da4981f3c6
+contentHash=78767c600c266e6244d04699d5967fe7cb5d4586c2e0c8a7e22f345c847f465f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-minutes-check-body`
+
+- Objectives: obj-u17-minutes
+- Sessions: u17-s-orient, u17-s-minutes
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 90c4f63d24ff10a91c684c8d4301f2282f10461913b4ef2cc4a8aa789c266586
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-minutes:numbers:minutes-check-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Read the requested position or quantity and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+shippedText=Read the requested position or quantity and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b851caeaef021e5e0c7a9083bf82a8738872dec444442f9f143cc24cfbbdcc22
+contentHash=23e5d776b67bb57432897fd6bed8c78d492d37f16535ac279de8273f71ca665c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-minutes-guided-body`
+
+- Objectives: obj-u17-minutes
+- Sessions: u17-s-orient, u17-s-minutes
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0bbeff4d4a845ef503ac4351596622e8a550d597ce0ca003ef058d60ddaf1ee7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-minutes:numbers:minutes-guided-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Read the requested position or quantity and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+shippedText=Read the requested position or quantity and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b851caeaef021e5e0c7a9083bf82a8738872dec444442f9f143cc24cfbbdcc22
+contentHash=23e5d776b67bb57432897fd6bed8c78d492d37f16535ac279de8273f71ca665c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-minutes-objective-title`
+
+- Objectives: obj-u17-minutes
+- Sessions: u17-s-orient, u17-s-minutes
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: da129bbaf8b2d7ec00c7eeebf9df7cc4e3349d4aaeb96aa15acae36d298ab6b8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-minutes:numbers:minutes-objective-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Recognize minute counts and feminine numerals
+shippedText=Recognize minute counts and feminine numerals
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=59256c30f2712ffba1a1837f93b5ff6e68d56cbe713fc4add78830f5473b86f1
+contentHash=fbfde59369534bde742841e52780362daa2656318562a45adf7d52d56ac9e910
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-minutes-rem-body`
+
+- Objectives: obj-u17-minutes
+- Sessions: u17-s-orient, u17-s-minutes
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0fdd3b1240ecb4f58a3c6f0540805839aad6b26c12d1f4a378f1269d76430d36
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-minutes:numbers:minutes-rem-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+одна минута — one minute. две минуты — two minutes. пять минут — five minutes. The noun for minute is feminine, so one and two use feminine forms here. Compare the masculine hour and year phrases. The noun is nominative singular after one, genitive singular after two, and genitive plural after five.
+
+For basic nominative or inanimate accusative counts, an ending of 1 follows the one-minute pattern, endings 2, 3 or 4 follow the two-minute pattern, and endings 0 or 5 through 9 follow the five-minute pattern. Endings 11 through 14 take the five-minute pattern instead of following the final digit alone. Different case constructions require additional numeral and noun changes.
+
+For a one-minute row, choose одна минута. For a two-minute row, choose две минуты. For a five-minute row, choose пять минут. Each other phrase names a different quantity. Read the English request even if the separately shown cue has a different count. These quantity choices do not assess expressing minutes past an hour on a clock.
+shippedText=одна минута — one minute. две минуты — two minutes. пять минут — five minutes. The noun for minute is feminine, so one and two use feminine forms here. Compare the masculine hour and year phrases. The noun is nominative singular after one, genitive singular after two, and genitive plural after five.
+
+For basic nominative or inanimate accusative counts, an ending of 1 follows the one-minute pattern, endings 2, 3 or 4 follow the two-minute pattern, and endings 0 or 5 through 9 follow the five-minute pattern. Endings 11 through 14 take the five-minute pattern instead of following the final digit alone. Different case constructions require additional numeral and noun changes.
+
+For a one-minute row, choose одна минута. For a two-minute row, choose две минуты. For a five-minute row, choose пять минут. Each other phrase names a different quantity. Read the English request even if the separately shown cue has a different count. These quantity choices do not assess expressing minutes past an hour on a clock.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1b714a80f80ed4c32c9f4136693daf40ac4a09707d1ef3c4f428efb5dbe52098
+contentHash=1ad74955c5453354b4ae12bfb52182d2ad5944a0ac9e62628cb4eeab51aa6c88
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-minutes-rem-title`
+
+- Objectives: obj-u17-minutes
+- Sessions: u17-s-orient, u17-s-minutes
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4ccf52dfca379a1e88f43628a9c1a32104e8431427492cfb963f5e22a1fb1b8b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-minutes:numbers:minutes-rem-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Review positions and counts
+shippedText=Review positions and counts
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0a36a11ffcc915641926b87c875b9d4523cb32f35ab3bbb33473383235a44a21
+contentHash=5de2e1021292de416a1df29bfe83c257bdcb1caf660133b7ac669a55e89551f9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-minutes-teach-1-body`
+
+- Objectives: obj-u17-minutes
+- Sessions: u17-s-orient, u17-s-minutes
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ecbab059073398c14444ea36d7d63466539f7f3fb9bcec25413da6fbff9b54eb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-minutes:numbers:minutes-teach-1-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+одна минута — one minute. две минуты — two minutes. пять минут — five minutes. The noun for minute is feminine, so one and two use feminine forms here. Compare the masculine hour and year phrases. The noun is nominative singular after one, genitive singular after two, and genitive plural after five.
+shippedText=одна минута — one minute. две минуты — two minutes. пять минут — five minutes. The noun for minute is feminine, so one and two use feminine forms here. Compare the masculine hour and year phrases. The noun is nominative singular after one, genitive singular after two, and genitive plural after five.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a578e15b1ee7a3d26c6ff1103e275e25fe90965db0746d094505fec80a8f0882
+contentHash=60aa21b0dbf64f5237d0a1cc9b1d54969645d8aaa71d725efd0a9c6ed93aa9b1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-minutes-teach-1-title`
+
+- Objectives: obj-u17-minutes
+- Sessions: u17-s-orient, u17-s-minutes
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b69bb2f1a085352bad239419145faf380cc6b62daa3aa4f09ba775883b836cc7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-minutes:numbers:minutes-teach-1-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Minutes use feminine one and two
+shippedText=Minutes use feminine one and two
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7cc335983815806b339ed19f5fd3b3dbde6bdc1f83e7501d0354fcf3a95e0a9f
+contentHash=7573cfd45961144b3652247cecc8e651cf4b975d750d8471977332a5f127d963
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-minutes-teach-2-body`
+
+- Objectives: obj-u17-minutes
+- Sessions: u17-s-orient, u17-s-minutes
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3bec28cf93821182567224dd4edf90eae730121e0bd40f27d3d90a8cdbfbbc49
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-minutes:numbers:minutes-teach-2-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+For basic nominative or inanimate accusative counts, an ending of 1 follows the one-minute pattern, endings 2, 3 or 4 follow the two-minute pattern, and endings 0 or 5 through 9 follow the five-minute pattern. Endings 11 through 14 take the five-minute pattern instead of following the final digit alone. Different case constructions require additional numeral and noun changes.
+shippedText=For basic nominative or inanimate accusative counts, an ending of 1 follows the one-minute pattern, endings 2, 3 or 4 follow the two-minute pattern, and endings 0 or 5 through 9 follow the five-minute pattern. Endings 11 through 14 take the five-minute pattern instead of following the final digit alone. Different case constructions require additional numeral and noun changes.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e2676525f92f39b92fa2c5c44fc6d5bbb295e46d3a5cd98f356206a045ed107a
+contentHash=ab5bdb1a60569e388bff56d32b50e66c3d8e318f806cf2957b4e76412ec3667c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-minutes-teach-2-title`
+
+- Objectives: obj-u17-minutes
+- Sessions: u17-s-orient, u17-s-minutes
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f53c88b337849dc017909abdce49dd028313f7d543138769836591188c251c7c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-minutes:numbers:minutes-teach-2-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Use the bounded count pattern
+shippedText=Use the bounded count pattern
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=23d34637f0c5d0219d9047fb29517a383de8631f27cc3d3fb80b4b4c4fbac19c
+contentHash=972c5f78c9894ba760dbe81976f7328ef2cb8b93a6bb24285c6077e9f22f9670
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-minutes-teach-3-body`
+
+- Objectives: obj-u17-minutes
+- Sessions: u17-s-orient, u17-s-minutes
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1074a958f526ed90ea4b5062c9630446a223c9cbf36038b7c075d03bb23441bc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-minutes:numbers:minutes-teach-3-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+For a one-minute row, choose одна минута. For a two-minute row, choose две минуты. For a five-minute row, choose пять минут. Each other phrase names a different quantity. Read the English request even if the separately shown cue has a different count. These quantity choices do not assess expressing minutes past an hour on a clock.
+shippedText=For a one-minute row, choose одна минута. For a two-minute row, choose две минуты. For a five-minute row, choose пять минут. Each other phrase names a different quantity. Read the English request even if the separately shown cue has a different count. These quantity choices do not assess expressing minutes past an hour on a clock.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a4d9a15857279b5182bd6818b88d58c05e2ffb7382ba967d3c4047c670955bfa
+contentHash=a65fb639c1f2de1dfa1ab1acdb867d17bf02c52deb91aff218874e147c55f77f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-minutes-teach-3-title`
+
+- Objectives: obj-u17-minutes
+- Sessions: u17-s-orient, u17-s-minutes
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cd4fd8b588db387b55ec5aaaee9e0e3049a6ecf196242eb50a13e47e98a2de0d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-minutes:numbers:minutes-teach-3-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Work a minute choice
+shippedText=Work a minute choice
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1caba5fd0b5c31fc2de68cd9049c6743043a7e38d27dffcada8a21f19f718c61
+contentHash=8f72c05a8e56983ef7e6e7b00365fddb1cf10b4b819f6cdf7066efaf81fa98d7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-ordinals-check-body`
+
+- Objectives: obj-u17-ordinals
+- Sessions: u17-s-orient, u17-s-ordinals
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6e580c4a68417d11ee2b8940ef463d7d3d997262c4f1e5c2e6d559d5ddb0e239
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-ordinals:numbers:ordinals-check-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Read the requested position or quantity and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+shippedText=Read the requested position or quantity and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b851caeaef021e5e0c7a9083bf82a8738872dec444442f9f143cc24cfbbdcc22
+contentHash=23e5d776b67bb57432897fd6bed8c78d492d37f16535ac279de8273f71ca665c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-ordinals-guided-body`
+
+- Objectives: obj-u17-ordinals
+- Sessions: u17-s-orient, u17-s-ordinals
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fc6820ff91046861d4b606c73ece182ced0e65fc9c5acabea7dcae7deeff228e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-ordinals:numbers:ordinals-guided-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Read the requested position or quantity and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+shippedText=Read the requested position or quantity and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b851caeaef021e5e0c7a9083bf82a8738872dec444442f9f143cc24cfbbdcc22
+contentHash=23e5d776b67bb57432897fd6bed8c78d492d37f16535ac279de8273f71ca665c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-ordinals-objective-title`
+
+- Objectives: obj-u17-ordinals
+- Sessions: u17-s-orient, u17-s-ordinals
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ac2b05af9b2746eb05ebd93123639832210dc0115fd82af423294ec460879a41
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-ordinals:numbers:ordinals-objective-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Recognize ordinal positions and agreement
+shippedText=Recognize ordinal positions and agreement
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=dc2ba721beeb21a6abd77ea580ce150cb34a9dff196e90ece300b589ed86efa8
+contentHash=ae6c75bff627a7a3fc57506dcae1591615fe1ab0819dc4fa71b2926d0e5cf187
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-ordinals-rem-body`
+
+- Objectives: obj-u17-ordinals
+- Sessions: u17-s-orient, u17-s-ordinals
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8f911b2108ec8f25e88080bb9148703fdd368acc669c4aa680d97c45f10bd4e8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-ordinals:numbers:ordinals-rem-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+пе́рвый — first. второ́й — second. тре́тий — third. четвёртый — fourth. An ordinal identifies position in an ordered sequence; a cardinal tells how many. These isolated ordinal forms are masculine nominative singular. Learn the position expressed by each form before choosing it.
+
+Ordinals agree with their noun in gender, number and case, like adjectives. восемнадцатую девушку means the eighteenth girl as a feminine accusative noun phrase. The retained example comes from a sentence about photographing her; this displayed fragment alone does not mean She just photographed. The ordinal ending follows the noun phrase, rather than staying in the masculine dictionary form. These recognition checks do not assess producing agreement in a sentence.
+
+For the first ordinal, choose пе́рвый; for the second ordinal, choose второ́й; for the third ordinal, choose тре́тий. четвёртый expresses fourth, so it fails each of those requests. Read the English request: the separately shown Russian cue may name a different position and is not the target to copy.
+shippedText=пе́рвый — first. второ́й — second. тре́тий — third. четвёртый — fourth. An ordinal identifies position in an ordered sequence; a cardinal tells how many. These isolated ordinal forms are masculine nominative singular. Learn the position expressed by each form before choosing it.
+
+Ordinals agree with their noun in gender, number and case, like adjectives. восемнадцатую девушку means the eighteenth girl as a feminine accusative noun phrase. The retained example comes from a sentence about photographing her; this displayed fragment alone does not mean She just photographed. The ordinal ending follows the noun phrase, rather than staying in the masculine dictionary form. These recognition checks do not assess producing agreement in a sentence.
+
+For the first ordinal, choose пе́рвый; for the second ordinal, choose второ́й; for the third ordinal, choose тре́тий. четвёртый expresses fourth, so it fails each of those requests. Read the English request: the separately shown Russian cue may name a different position and is not the target to copy.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8da9a862373c026fbc49f2f4b237474b7777c82ffdf42e52f7e1a08a9035d252
+contentHash=f13d007bfc1dfc68a630f42e6c35ce622bd7f29fcaa114929e592d3c0f822246
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-ordinals-rem-title`
+
+- Objectives: obj-u17-ordinals
+- Sessions: u17-s-orient, u17-s-ordinals
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 235e0994210c30c14cd8a75df3da089a6af8a7db9fd0e6c89df9e641a5704429
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-ordinals:numbers:ordinals-rem-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Review positions and counts
+shippedText=Review positions and counts
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0a36a11ffcc915641926b87c875b9d4523cb32f35ab3bbb33473383235a44a21
+contentHash=5de2e1021292de416a1df29bfe83c257bdcb1caf660133b7ac669a55e89551f9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-ordinals-teach-1-body`
+
+- Objectives: obj-u17-ordinals
+- Sessions: u17-s-orient, u17-s-ordinals
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4b53faaca51424ffc1dc1dd40f22c7db668322871aaa7e90a63676338dc7d211
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-ordinals:numbers:ordinals-teach-1-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+пе́рвый — first. второ́й — second. тре́тий — third. четвёртый — fourth. An ordinal identifies position in an ordered sequence; a cardinal tells how many. These isolated ordinal forms are masculine nominative singular. Learn the position expressed by each form before choosing it.
+shippedText=пе́рвый — first. второ́й — second. тре́тий — third. четвёртый — fourth. An ordinal identifies position in an ordered sequence; a cardinal tells how many. These isolated ordinal forms are masculine nominative singular. Learn the position expressed by each form before choosing it.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a87f91a52a8c8aa88d8c3c12de2b0e37ddec0ac8a55f8df071a337c31bb55963
+contentHash=8691e72fccbc280145a0f13fd680729e671936b1c5b8dafe89d06b9a58953ac4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-ordinals-teach-1-title`
+
+- Objectives: obj-u17-ordinals
+- Sessions: u17-s-orient, u17-s-ordinals
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8c634d565c5b11f159a237d4c3fd56a0d0f5e6ead1c0eae0211858ca8b7a6af1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-ordinals:numbers:ordinals-teach-1-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Position rather than quantity
+shippedText=Position rather than quantity
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5ece7fe1453892a06d567b0796ed85fe5ea44eac543b7c12a35b0587c2a9b30b
+contentHash=33b539a540d4d2090bdb5bc5a2ba7fa4f36ae7559f639e1f3c4abc9565f8d8ae
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-ordinals-teach-2-body`
+
+- Objectives: obj-u17-ordinals
+- Sessions: u17-s-orient, u17-s-ordinals
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c44aa4aceecad2528430d90cf9a4208044111e9f8980903bdc8e0804e8a16d61
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-ordinals:numbers:ordinals-teach-2-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Ordinals agree with their noun in gender, number and case, like adjectives. восемнадцатую девушку means the eighteenth girl as a feminine accusative noun phrase. The retained example comes from a sentence about photographing her; this displayed fragment alone does not mean She just photographed. The ordinal ending follows the noun phrase, rather than staying in the masculine dictionary form. These recognition checks do not assess producing agreement in a sentence.
+shippedText=Ordinals agree with their noun in gender, number and case, like adjectives. восемнадцатую девушку means the eighteenth girl as a feminine accusative noun phrase. The retained example comes from a sentence about photographing her; this displayed fragment alone does not mean She just photographed. The ordinal ending follows the noun phrase, rather than staying in the masculine dictionary form. These recognition checks do not assess producing agreement in a sentence.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=83a1a635edd83b3a31ac2aa649392b06f3ec414c6ed4522b4990219954dd6c6e
+contentHash=4fd58b51c1d31dfe8ad64bedde679a7ffff3b7ac4433cbee3a353d95ec98c579
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-ordinals-teach-2-title`
+
+- Objectives: obj-u17-ordinals
+- Sessions: u17-s-orient, u17-s-ordinals
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6ad212a50f5543b6e5e7d68846cf362fa09289eca2898e5e01087966331a540d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-ordinals:numbers:ordinals-teach-2-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Ordinals agree like adjectives
+shippedText=Ordinals agree like adjectives
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f9e7457e1030cc3daf4fcb9a62e5587bc42a08962c91f929a00c0ba8e41cd42a
+contentHash=ae8cfc430d8a9c4e2859e15506a0895e7061d839f848f0d2529056d34d720abc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-ordinals-teach-3-body`
+
+- Objectives: obj-u17-ordinals
+- Sessions: u17-s-orient, u17-s-ordinals
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d0a142fd0785bb7bc6deda9bd33296bb5c7298cb1ab0b51da9e335d95e913610
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-ordinals:numbers:ordinals-teach-3-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+For the first ordinal, choose пе́рвый; for the second ordinal, choose второ́й; for the third ordinal, choose тре́тий. четвёртый expresses fourth, so it fails each of those requests. Read the English request: the separately shown Russian cue may name a different position and is not the target to copy.
+shippedText=For the first ordinal, choose пе́рвый; for the second ordinal, choose второ́й; for the third ordinal, choose тре́тий. четвёртый expresses fourth, so it fails each of those requests. Read the English request: the separately shown Russian cue may name a different position and is not the target to copy.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a6a515115d8d3327134c3c03f1d635c950fb14cebddc187158ef8f72f8b10de4
+contentHash=f22cecd0e1590b2a9d84809fdbff2554c93ad66c624bb70e4cd89d9782f7e81c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-ordinals-teach-3-title`
+
+- Objectives: obj-u17-ordinals
+- Sessions: u17-s-orient, u17-s-ordinals
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ddf78c929bdffa4cab8c8af8215ae31bad388b2e09c219577e7a8c698df5d5c1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-ordinals:numbers:ordinals-teach-3-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Work the requested position
+shippedText=Work the requested position
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b9ff8d3e8755e36b6f0058e98b4bb0f6c95c420649693751a6330f0307cf18a7
+contentHash=267d32b2f53fdae68382c5597a36d3b74a93521d900502c484e7adc6704fa83e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-u17-g-hours-0-distractor-1`
+
+- Objectives: obj-u17-hours
+- Sessions: u17-s-orient, u17-s-hours
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 82787e5f76840c478dd1567ebeb7a89d6b53691c4c7b1362d2fa47c9b71419ac
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-hours:numbers:u17-g-hours-0-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+пять часов means five hours, rather than the requested one hour.
+shippedText=пять часов means five hours, rather than the requested one hour.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fa8d27d264397b70bddb59f1e218497f48191ae9ce0ad82422ec0fdafd780e9a
+contentHash=d218a482465803947598ec467b598c1310355418b5a726cdd47b9f5c87eec959
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-u17-g-hours-0-feedback`
+
+- Objectives: obj-u17-hours
+- Sessions: u17-s-orient, u17-s-hours
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fa582af902a503f47ccb1e9040a37b8b836c0e5ed631e85f761d24b6d53fc8a0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-hours:numbers:u17-g-hours-0-feedback
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+один час means one hour. This is the one-hour row. Choose this phrase for the requested quantity, even when the shown cue differs.
+shippedText=один час means one hour. This is the one-hour row. Choose this phrase for the requested quantity, even when the shown cue differs.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a65ba995ebb08eb9ae184451a34704225d511beca1e3f15c78cebe3797808a7f
+contentHash=44f7ed2766fc3f61f72d36a17e98acf01ee183c725fe55e65788e0e27720e9ac
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-u17-g-hours-0-prompt`
+
+- Objectives: obj-u17-hours
+- Sessions: u17-s-orient, u17-s-hours
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2c64833323d781f7ede07adea81b60cc1d544557498fb3644360ccb3cf95a74f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-hours:numbers:u17-g-hours-0-prompt
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Which admitted line is the one-hour row?
+shippedText=Which admitted line is the one-hour row?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2fc1457f990396f710eb762dbb77bae6d5e426e06e5d69e7c1cad933d380f392
+contentHash=1e050c96bb838fcae7c1a7b3fdc012b9f8759b55f70fe8a2f49b2a748f8eeaa0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-u17-g-minutes-0-distractor-1`
+
+- Objectives: obj-u17-minutes
+- Sessions: u17-s-orient, u17-s-minutes
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 85cdeb5c49736ec20bc9d861bce57fd0d498632f37b05b8b6b35062a5a148bed
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-minutes:numbers:u17-g-minutes-0-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+пять минут means five minutes, rather than the requested one minute.
+shippedText=пять минут means five minutes, rather than the requested one minute.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=408bb58f9e8609cc9a4b0e558faecadaa89895485ad0f76ee9d3d19900ff86b4
+contentHash=a4cd6111dea64af09fcd3edadd696d5b89420e1cf594a7f2d574ae1bc9e93c34
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-u17-g-minutes-0-feedback`
+
+- Objectives: obj-u17-minutes
+- Sessions: u17-s-orient, u17-s-minutes
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 07e842898224c2afcd7cf5fd27c9c87394432c32e6d22876b69a192938d56cbe
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-minutes:numbers:u17-g-minutes-0-feedback
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+одна минута means one minute. This is the one-minute row. Choose this phrase for the requested quantity, even when the shown cue differs.
+shippedText=одна минута means one minute. This is the one-minute row. Choose this phrase for the requested quantity, even when the shown cue differs.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0ff02409bc743b7cbf316e567bfae2cd103e1c7bb784166f11a7db229bf2b156
+contentHash=66cda43e2113283429d93dcbf8252ff6cefc6decf3f146e5633321ba98f7619c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-u17-g-minutes-0-prompt`
+
+- Objectives: obj-u17-minutes
+- Sessions: u17-s-orient, u17-s-minutes
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8eebb3edc20eb25c64335fdb4344bc3e76b045795886eb20f3e6cbe2d352dc85
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-minutes:numbers:u17-g-minutes-0-prompt
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Which admitted line is the one-minute row?
+shippedText=Which admitted line is the one-minute row?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=85236b925ec0c887c51f265adee66ff74182d6dc93869443cb5ec1153cb3e87e
+contentHash=37a1b463a4ca8c86d299d9c88d0e7a5f45117822c96c4423c864971ed876da85
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-u17-g-ordinals-0-distractor-1`
+
+- Objectives: obj-u17-ordinals
+- Sessions: u17-s-orient, u17-s-ordinals
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 536f5cee11658fb3d0ca4286297ff647d48aebae3c9260e7de30f0be2bfd984e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-ordinals:numbers:u17-g-ordinals-0-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+тре́тий means third, rather than the requested first.
+shippedText=тре́тий means third, rather than the requested first.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=554356e66d9a4e9b1d467946dcf200c6d4f2bde99035767735790e03e165c172
+contentHash=e3e7cc6c979c26f55848433dbf4621bef04401b8bb5570b6da28bb4c949fe19d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-u17-g-ordinals-0-distractor-2`
+
+- Objectives: obj-u17-ordinals
+- Sessions: u17-s-orient, u17-s-ordinals
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7bd816ad64cee309acab7ff0a2c3fb63fc1f63fa405e1dc0a03a7ccad05b1898
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-ordinals:numbers:u17-g-ordinals-0-distractor-2
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+четвёртый means fourth, rather than the requested first.
+shippedText=четвёртый means fourth, rather than the requested first.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6b083464e3110fc13199a4659f71333720f02d3bf997ba63747310a09ff60789
+contentHash=a0837e891de9ed46269f8e88fa67d2e0cfa21a2c4049a0fd2f3c26c92302a73d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-u17-g-ordinals-0-feedback`
+
+- Objectives: obj-u17-ordinals
+- Sessions: u17-s-orient, u17-s-ordinals
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 697cc093ecfcf2eeb450b7023600c13ef9b8f15f218fc1ae9a966751c5dcaaf4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-ordinals:numbers:u17-g-ordinals-0-feedback
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+пе́рвый means first. This is the first ordinal. Choose this phrase for the requested position, even when the shown cue differs.
+shippedText=пе́рвый means first. This is the first ordinal. Choose this phrase for the requested position, even when the shown cue differs.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1c03d16773bb78264a1d2bb048ef6e5dd59d9a9ee787595bc6b24bb8ad30aabf
+contentHash=c5e3f1b068c045fc157d8f8cfb03396e9d567c7c695d5be5961fb36eab2ae918
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-u17-g-ordinals-0-prompt`
+
+- Objectives: obj-u17-ordinals
+- Sessions: u17-s-orient, u17-s-ordinals
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5a80849c1d58607e74b140379cadfea9481ffe3fc28ff23dc5542f1d11a68580
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-ordinals:numbers:u17-g-ordinals-0-prompt
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Which admitted line is the first ordinal?
+shippedText=Which admitted line is the first ordinal?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=88c7d3ecc8d888dd7a48c98355e013469cb5175ea7985beff22031c4d6aefce4
+contentHash=46920607bc553cf0717c57e33ed6acf1387803f5b52662fbf0876602f3cce6a5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-u17-g-years-0-distractor-1`
+
+- Objectives: obj-u17-years
+- Sessions: u17-s-orient, u17-s-years
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c55097f50ed032514f741641947d26e3731bce37bdc8b070026a3a84fb4027b5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-years:numbers:u17-g-years-0-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+пять лет means five years, rather than the requested one year.
+shippedText=пять лет means five years, rather than the requested one year.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=293812bd26b322a321d4f85b5d9ae8e8776bf0054727d123a18cb9310c4e997f
+contentHash=729a39d42b5b80027286575ecb746697b302b705931cbcdf0d40afdb629205c5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-u17-g-years-0-feedback`
+
+- Objectives: obj-u17-years
+- Sessions: u17-s-orient, u17-s-years
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2ff9ad52676c5b89ba1d21af03c3dcd49a6042fddbc1938f97a6f2dcd810aacc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-years:numbers:u17-g-years-0-feedback
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+один год means one year. This is the one-year row. Choose this phrase for the requested quantity, even when the shown cue differs.
+shippedText=один год means one year. This is the one-year row. Choose this phrase for the requested quantity, even when the shown cue differs.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f356553016b7f317b13afdddbdbcf5667b42ebde8408fb0544558633c20427a
+contentHash=c284f3e750cc5f528fe1fdc641982621cd210a5131b5da91ae1144cd52c8f9e6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-u17-g-years-0-prompt`
+
+- Objectives: obj-u17-years
+- Sessions: u17-s-orient, u17-s-years
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b8fa98daae650f4317c08841331f7336807ec1eed4ee3693fdedf39300df2aec
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-years:numbers:u17-g-years-0-prompt
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Which admitted line is the one-year row?
+shippedText=Which admitted line is the one-year row?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4e95161739b240912f62c58d2fbcebbf8cbd1844b911ee262a311a7a10df63b0
+contentHash=256548fd8a92f5db5a52eba83243d6e29c518363d3ac1c44f96c64ea9a2291f5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-u17-i-hours-1-distractor-1`
+
+- Objectives: obj-u17-hours
+- Sessions: u17-s-orient, u17-s-hours
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cb1275a70098becc20739d4532eae4627dd11af6d489094b7fd101bccdfcd5d4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-hours:numbers:u17-i-hours-1-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+пять часов means five hours, rather than the requested two hours.
+shippedText=пять часов means five hours, rather than the requested two hours.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a53537e6c6812bfbdf01ba654d560961c0fb2419130c75d9d41c7729cc8a823f
+contentHash=c03041176bf78ce06272dcf6c000dc2e479a392c39572d357865d16a983cfcbe
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-u17-i-hours-1-feedback`
+
+- Objectives: obj-u17-hours
+- Sessions: u17-s-orient, u17-s-hours
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7fc55f8c5104abfcd14081353b094f932d1dbaf8cf06afab3a15fda31ac50d2f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-hours:numbers:u17-i-hours-1-feedback
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+два часа means two hours. This is the two-hour row. Choose this phrase for the requested quantity, even when the shown cue differs.
+shippedText=два часа means two hours. This is the two-hour row. Choose this phrase for the requested quantity, even when the shown cue differs.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ba7708599bc3744b248b39e94fbf0f748847792b39f37d826363558dec754c52
+contentHash=3958426b9c9d9ebad2b7ad19a8b9549a69b0c478fc3e65369a871ae32d1e49bc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-u17-i-hours-1-prompt`
+
+- Objectives: obj-u17-hours
+- Sessions: u17-s-orient, u17-s-hours
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d586b1da508604787f8a30914a3bf66b34ce2b670a4d8ffef8d100982f6c5ecf
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-hours:numbers:u17-i-hours-1-prompt
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Which admitted line is the two-hour row?
+shippedText=Which admitted line is the two-hour row?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2e3483a07e287817ac80369b3c5447db5258359d8d6b7747c06b94282666fa99
+contentHash=1ebb303b74846d9a16713d5a9abf5ffc317a64f6e71b21af22602df26d454282
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-u17-i-hours-2-distractor-1`
+
+- Objectives: obj-u17-hours
+- Sessions: u17-s-orient, u17-s-hours
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d64eeae86d4fee0c50761c0884c9cc2c290b326d68398c99703aa69f6d087a89
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-hours:numbers:u17-i-hours-2-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+два часа means two hours, rather than the requested five hours.
+shippedText=два часа means two hours, rather than the requested five hours.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6de9f91d04fa3e60622df985e450e142f58e53acdf028d1533cf21d5c5f93f85
+contentHash=47dd0e555dde35f4c406f58a7dfc78a23fd4772d520d3a9b941ce11301be7025
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-u17-i-hours-2-feedback`
+
+- Objectives: obj-u17-hours
+- Sessions: u17-s-orient, u17-s-hours
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1c96aebb3beb790d520fd2feff2886b7505d947af3086f38b0d1f53f6e10935d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-hours:numbers:u17-i-hours-2-feedback
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+пять часов means five hours. This is the five-hour row. Choose this phrase for the requested quantity, even when the shown cue differs.
+shippedText=пять часов means five hours. This is the five-hour row. Choose this phrase for the requested quantity, even when the shown cue differs.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=985ec2b64ed70fc705b3620e8e4bf4be04bcbc424d942b3a66efc397b7b62e54
+contentHash=cab40e8e79600fba77dcf52004a280eb4ef96feccc8e86fe37021e0da369027c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-u17-i-hours-2-prompt`
+
+- Objectives: obj-u17-hours
+- Sessions: u17-s-orient, u17-s-hours
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3d39a365707996f02ae5a9b5c986ac964f09004407aa3cbe1b6d71b0bd88283b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-hours:numbers:u17-i-hours-2-prompt
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Which admitted line is the five-hour row?
+shippedText=Which admitted line is the five-hour row?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=472443bc5b97be4fdfce7091478dc977ca59847e3a15bd5d5324081ad92b6106
+contentHash=3c5241f24ea4a2c7c643a9839e3b35d0ce4909b889acd2ae6d21c6ad710187fc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-u17-i-minutes-1-distractor-1`
+
+- Objectives: obj-u17-minutes
+- Sessions: u17-s-orient, u17-s-minutes
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 079c8bab811445104f55582d80d16b01a5592596b493c910d1f36bb696de8587
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-minutes:numbers:u17-i-minutes-1-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+пять минут means five minutes, rather than the requested two minutes.
+shippedText=пять минут means five minutes, rather than the requested two minutes.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7707152b09d4957b94bc4e0c3cce432b07f1cae721c2dc5a7ae3b4118851937b
+contentHash=c01b39fa1b0aa71085b539ea298c17106a9b6bc9912e4fe83cd59fce6e9d60a5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-u17-i-minutes-1-feedback`
+
+- Objectives: obj-u17-minutes
+- Sessions: u17-s-orient, u17-s-minutes
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1b31dd463750edb76126f69ccd8f18112683d1ac2e900c29a3638685c64dd603
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-minutes:numbers:u17-i-minutes-1-feedback
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+две минуты means two minutes. This is the two-minute row. Choose this phrase for the requested quantity, even when the shown cue differs.
+shippedText=две минуты means two minutes. This is the two-minute row. Choose this phrase for the requested quantity, even when the shown cue differs.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2b9acced160b654faf3e2c9912f3046369f4d7bdff6aca5d8bf7fe814e52b83c
+contentHash=a81209bf06d4149ea2430fb009a2345f8df9b6663138eb9230821b8282a62ef1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-u17-i-minutes-1-prompt`
+
+- Objectives: obj-u17-minutes
+- Sessions: u17-s-orient, u17-s-minutes
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0d28c8cc86ba77b7d8da906821c040c2ff6e00529a1f49e7f34024158acb975b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-minutes:numbers:u17-i-minutes-1-prompt
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Which admitted line is the two-minute row?
+shippedText=Which admitted line is the two-minute row?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=19f1de7f617bbea4af0d4236cb13d6b86fde1e8c9cae0e5271937c11c9bc81e0
+contentHash=32808f8d3a8a13655e958faee544bf504180dece0fad412133710136e8c6f44d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-u17-i-minutes-2-distractor-1`
+
+- Objectives: obj-u17-minutes
+- Sessions: u17-s-orient, u17-s-minutes
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1be39bc5713cd40f021749db7aa49578a38fed650e8deb6184c0c8156175f7e4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-minutes:numbers:u17-i-minutes-2-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+две минуты means two minutes, rather than the requested five minutes.
+shippedText=две минуты means two minutes, rather than the requested five minutes.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=19f8ed189ec71bf9b1cc51b38f166038641e6e013926dad558cbabc5bb60c49e
+contentHash=fd131f2ea15732091759f7d3be8fe114dc650f50a252d97cd860570c76645a8e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-u17-i-minutes-2-feedback`
+
+- Objectives: obj-u17-minutes
+- Sessions: u17-s-orient, u17-s-minutes
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a85ff77ff8e2a562f6542c536c630285bc8fc5a00da0adcfd7bcff0081fa14f6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-minutes:numbers:u17-i-minutes-2-feedback
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+пять минут means five minutes. This is the five-minute row. Choose this phrase for the requested quantity, even when the shown cue differs.
+shippedText=пять минут means five minutes. This is the five-minute row. Choose this phrase for the requested quantity, even when the shown cue differs.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9b7f7e8826609e3376b9900d2615194a204fcfa31378461a8425bc1e6326d06d
+contentHash=c293ba063f3bcde54551a0af2338d7984fc299d11dc5586518880dbbbff231b5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-u17-i-minutes-2-prompt`
+
+- Objectives: obj-u17-minutes
+- Sessions: u17-s-orient, u17-s-minutes
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0954adaf7a38c5883ca333a5a7148f5226bce311336bac20966770fd81c14cb7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-minutes:numbers:u17-i-minutes-2-prompt
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Which admitted line is the five-minute row?
+shippedText=Which admitted line is the five-minute row?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=af094e35f5a10b22212c1a8be75566b4fd8dc0c46be1a2123d9890c258792665
+contentHash=2e4a8fe9834e56c5cebe4f01001e563956178498d2f6765cc18b7846e9a1b5db
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-u17-i-ordinals-1-distractor-1`
+
+- Objectives: obj-u17-ordinals
+- Sessions: u17-s-orient, u17-s-ordinals
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8d24bc96157c12a6e9d935c39391b87a68fd528448880a51aa3098ea303bc828
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-ordinals:numbers:u17-i-ordinals-1-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+тре́тий means third, rather than the requested second.
+shippedText=тре́тий means third, rather than the requested second.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9b081a68c167217592d730773d98b0952bb63174d2824eb46ea94acf74b0c3d2
+contentHash=22ecacec7d801a7f625928ec5c573fa1cea3ac52b283e194b9293be3d8ad8df3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-u17-i-ordinals-1-distractor-2`
+
+- Objectives: obj-u17-ordinals
+- Sessions: u17-s-orient, u17-s-ordinals
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 205e6080fb437c0e3d763f329dabb3213e1c982fb35b18b081d75969e80251b2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-ordinals:numbers:u17-i-ordinals-1-distractor-2
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+четвёртый means fourth, rather than the requested second.
+shippedText=четвёртый means fourth, rather than the requested second.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=49da987b52b3ece6e3a78d52f8b1d865cfda1d78c26d1e18a4ddec23a0ee554e
+contentHash=1f847e47d8b98909888c68b3eba46655c605301bd499104512c2ad7b6f5b2bb7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-u17-i-ordinals-1-feedback`
+
+- Objectives: obj-u17-ordinals
+- Sessions: u17-s-orient, u17-s-ordinals
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 55642d9356273b67c8066292a027e4d19dec36393e6519ae2a13cccb341b24e2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-ordinals:numbers:u17-i-ordinals-1-feedback
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+второ́й means second. This is the second ordinal. Choose this phrase for the requested position, even when the shown cue differs.
+shippedText=второ́й means second. This is the second ordinal. Choose this phrase for the requested position, even when the shown cue differs.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cc589e2a2fac91aac9124040dd49963db5a5e4fc5df77a6b338a9dfadd09268b
+contentHash=272ffcaa8e2317c42673b5f668b9665e83338795578840584de1ff8412499c06
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-u17-i-ordinals-1-prompt`
+
+- Objectives: obj-u17-ordinals
+- Sessions: u17-s-orient, u17-s-ordinals
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ad00eb05a22249e365f53534e765c5a5639f8c44dd67c881f8aaab21d6af9354
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-ordinals:numbers:u17-i-ordinals-1-prompt
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Which admitted line is the second ordinal?
+shippedText=Which admitted line is the second ordinal?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4913e182f2eea15de85ba54dfaf3668465d6dea52e46e3e597603495059dbea5
+contentHash=9cbab54a0fec21f9b158c6f9c5a0dddaa23017192854c0feedbfaa8c67477f28
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-u17-i-ordinals-2-distractor-1`
+
+- Objectives: obj-u17-ordinals
+- Sessions: u17-s-orient, u17-s-ordinals
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 85705a709f97a097a40ce9f9aea560ac37ba0b335db6be61fb21ade404ecc25e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-ordinals:numbers:u17-i-ordinals-2-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+второ́й means second, rather than the requested third.
+shippedText=второ́й means second, rather than the requested third.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e86baefa54b5178073df9d43b2c90b3105abf6968a1f59f6d3154f9bcee45f73
+contentHash=870b82c2a9f037b7b7f49d719c306be85f9be7c196d95dc60a4306f3f998d3f4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-u17-i-ordinals-2-distractor-2`
+
+- Objectives: obj-u17-ordinals
+- Sessions: u17-s-orient, u17-s-ordinals
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2831225d1f1b973768dab7617826b5863441127242e98bc358cc70d3baa56ee8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-ordinals:numbers:u17-i-ordinals-2-distractor-2
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+четвёртый means fourth, rather than the requested third.
+shippedText=четвёртый means fourth, rather than the requested third.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=54dfdb09c3dc359b46ca10a07d23a040f68a8fec57e30d5fd6f57a80f93d7095
+contentHash=d17e1414cdc16bf7e46e1751d0f452f8a060dac044002fc744a7337903e2e821
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-u17-i-ordinals-2-feedback`
+
+- Objectives: obj-u17-ordinals
+- Sessions: u17-s-orient, u17-s-ordinals
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8e277ac5825431c619982f7b21381b4ad84071b30d297a35104ddac9db04cd9e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-ordinals:numbers:u17-i-ordinals-2-feedback
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+тре́тий means third. This is the third ordinal. Choose this phrase for the requested position, even when the shown cue differs.
+shippedText=тре́тий means third. This is the third ordinal. Choose this phrase for the requested position, even when the shown cue differs.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f4c8903881ca1937527725e306735cba64f0da212ca4f38f796191852e014c8f
+contentHash=63ed706c0da430225df37258c1f985828bfe180eaea64f3bae1b1db95783ec35
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-u17-i-ordinals-2-prompt`
+
+- Objectives: obj-u17-ordinals
+- Sessions: u17-s-orient, u17-s-ordinals
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b6b19307c3f6a508da19c0aa5e16dba00e5c331168ad67eba88806ee96f2014a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-ordinals:numbers:u17-i-ordinals-2-prompt
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Which admitted line is the third ordinal?
+shippedText=Which admitted line is the third ordinal?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=01b36f000c97232fe934509ddc611bbedddbd70e469d614a03084ffb4402641a
+contentHash=c4e28739e32aa8d2e676762d59c9529f821e93d33a5ad49d37f318dc693587e0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-u17-i-years-1-distractor-1`
+
+- Objectives: obj-u17-years
+- Sessions: u17-s-orient, u17-s-years
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7d540fa842de47eab15825d7db064f8e0660c4fe95236a3f9513963421afd483
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-years:numbers:u17-i-years-1-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+пять лет means five years, rather than the requested two years.
+shippedText=пять лет means five years, rather than the requested two years.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=89eea82f88d46011ce76f41a1348de06de9db1911d825b1573b7b8fa7842e7ce
+contentHash=074d452f8f3cfa28414dc4e62de0e3aae2d5be0a7f5ca5f8295cc87c90f20140
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-u17-i-years-1-feedback`
+
+- Objectives: obj-u17-years
+- Sessions: u17-s-orient, u17-s-years
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 87f3883f43dea2d06bce2ac161b148f717fc1e997b0b3152cbdf9c60dceddaa6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-years:numbers:u17-i-years-1-feedback
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+два года means two years. This is the two-year row. Choose this phrase for the requested quantity, even when the shown cue differs.
+shippedText=два года means two years. This is the two-year row. Choose this phrase for the requested quantity, even when the shown cue differs.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=94d2869e0081eab6451be5a62928c8a90f3b34ecb2ec2072d3fe695544ac7698
+contentHash=0a187976dcb17ec7d15bdfc7ce324e2f65b814af8d550e134f7fd68eeeccf3ce
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-u17-i-years-1-prompt`
+
+- Objectives: obj-u17-years
+- Sessions: u17-s-orient, u17-s-years
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 93e2cfe6ebfd429d6aeda4a9f8cefc2e527103b002121d48489a8078c9e4fbe2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-years:numbers:u17-i-years-1-prompt
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Which admitted line is the two-year row?
+shippedText=Which admitted line is the two-year row?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=16cb17ef84ea439bf438b0a3b46f56fec4bf80796bb83b4356cfe7cb6fabb792
+contentHash=691b85294ef3b0527a3ddad7c055fa468e1f5d8055119574befd3f82f75947fc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-u17-i-years-2-distractor-1`
+
+- Objectives: obj-u17-years
+- Sessions: u17-s-orient, u17-s-years
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 22d883cd20212dcfd3c72226d53b886404a46c2f59ac909513ee5b9ac2de44ad
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-years:numbers:u17-i-years-2-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+два года means two years, rather than the requested five years.
+shippedText=два года means two years, rather than the requested five years.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a861d22bf155854b38c94d002e30d3ff5dbfd146309aa2bb9e6072b2a209f3fe
+contentHash=e8f4a8709f4cd9d607ca38ce9e43af1571e7c41013a915ac03f8f081be5b6147
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-u17-i-years-2-feedback`
+
+- Objectives: obj-u17-years
+- Sessions: u17-s-orient, u17-s-years
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c1288968e2e140c412b87fc174474de45659822b0afbf383a22a1dd6d985f931
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-years:numbers:u17-i-years-2-feedback
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+пять лет means five years. This is the five-year row. Choose this phrase for the requested quantity, even when the shown cue differs.
+shippedText=пять лет means five years. This is the five-year row. Choose this phrase for the requested quantity, even when the shown cue differs.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1ca938ebc0455768cb69e28cd965dcdb0e006395c2fb77fa04a2481e5a7344fb
+contentHash=005c9b2188a6d685fbde0dbfe78b88506fec109730362631f6d0cb49ceb26e3c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-u17-i-years-2-prompt`
+
+- Objectives: obj-u17-years
+- Sessions: u17-s-orient, u17-s-years
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d1da1fd0ebdf23c4df86bb48f020ba8f1ba828155b068aaec50bfe95692371f7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-years:numbers:u17-i-years-2-prompt
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Which admitted line is the five-year row?
+shippedText=Which admitted line is the five-year row?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4c1c7dc32546a77c8e3d352961b40006944456d79aad603c001bef62bf694927
+contentHash=b2f9b4a56b84504cd249d8b19bd0f8d929a43ebb387f03c2c565503f562387d8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-years-check-body`
+
+- Objectives: obj-u17-years
+- Sessions: u17-s-orient, u17-s-years
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0757db7bea5baddb0ed159ba62bc66072b9431d30c6e8a10c8f3e4dda2e416b5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-years:numbers:years-check-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Read the requested position or quantity and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+shippedText=Read the requested position or quantity and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b851caeaef021e5e0c7a9083bf82a8738872dec444442f9f143cc24cfbbdcc22
+contentHash=23e5d776b67bb57432897fd6bed8c78d492d37f16535ac279de8273f71ca665c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-years-guided-body`
+
+- Objectives: obj-u17-years
+- Sessions: u17-s-orient, u17-s-years
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f2fd2b44c9573a366d84e30c09578a4da4c62a39f205a16cb3a4af911a417c8b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-years:numbers:years-guided-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Read the requested position or quantity and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+shippedText=Read the requested position or quantity and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b851caeaef021e5e0c7a9083bf82a8738872dec444442f9f143cc24cfbbdcc22
+contentHash=23e5d776b67bb57432897fd6bed8c78d492d37f16535ac279de8273f71ca665c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-years-objective-title`
+
+- Objectives: obj-u17-years
+- Sessions: u17-s-orient, u17-s-years
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 192e92c07a3f905420d4c956e79e1413718bb7351e080986b8527c38b204ba94
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-years:numbers:years-objective-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Recognize year counts and noun forms
+shippedText=Recognize year counts and noun forms
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f2dd2236db3b68859e7e1628e718e3bba7993906dc47ffa3ff3ca2e7d4dd8484
+contentHash=29c03f069ef9acdb651976418a7650d95dab08d4944861132b6c4b30dc0d48e7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-years-rem-body`
+
+- Objectives: obj-u17-years
+- Sessions: u17-s-orient, u17-s-years
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ca7397b500d14a275a7478467d9e878620247f3c5ded646d1848e763bfe0e0eb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-years:numbers:years-rem-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+один год — one year. два года — two years. пять лет — five years. The basic counting forms are nominative singular after one, genitive singular after two, and genitive plural after five. The plural counting form for years uses a different stem: learn пять лет as the complete five-year phrase.
+
+сорок один год — forty-one years. The compound ends in 1, so its noun follows the one pattern. In basic nominative or inanimate accusative counts, endings 2, 3 or 4 follow the two pattern; endings 0 and 5 through 9 follow the five pattern. Endings 11 through 14 are exceptions to the final-digit rule and take the five pattern. Other grammatical cases need additional changes.
+
+For a five-year row, choose пять лет, rather than два года, which names two years. For a one-year row, choose один год; for a two-year row, choose два года. The separately shown cue can have a different count. These checks recognize quantities of years, not ordinal calendar-year dates or a complete age sentence.
+shippedText=один год — one year. два года — two years. пять лет — five years. The basic counting forms are nominative singular after one, genitive singular after two, and genitive plural after five. The plural counting form for years uses a different stem: learn пять лет as the complete five-year phrase.
+
+сорок один год — forty-one years. The compound ends in 1, so its noun follows the one pattern. In basic nominative or inanimate accusative counts, endings 2, 3 or 4 follow the two pattern; endings 0 and 5 through 9 follow the five pattern. Endings 11 through 14 are exceptions to the final-digit rule and take the five pattern. Other grammatical cases need additional changes.
+
+For a five-year row, choose пять лет, rather than два года, which names two years. For a one-year row, choose один год; for a two-year row, choose два года. The separately shown cue can have a different count. These checks recognize quantities of years, not ordinal calendar-year dates or a complete age sentence.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e46eb95bf6dd42bd6ca715ba30ff6baefb85037a74d7d170da2db598ae633d14
+contentHash=99888a7ac2364390e2bce0e90799aa60756361bf39bfdb67abe4ffa97cafd015
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-years-rem-title`
+
+- Objectives: obj-u17-years
+- Sessions: u17-s-orient, u17-s-years
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7941c5275119d95344a500e9c366e6fda2121255b734f0aa9e2774ff665b308e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-years:numbers:years-rem-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Review positions and counts
+shippedText=Review positions and counts
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0a36a11ffcc915641926b87c875b9d4523cb32f35ab3bbb33473383235a44a21
+contentHash=5de2e1021292de416a1df29bfe83c257bdcb1caf660133b7ac669a55e89551f9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-years-teach-1-body`
+
+- Objectives: obj-u17-years
+- Sessions: u17-s-orient, u17-s-years
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d94e26fdebcd8ae828b9e14bf2b94e479a42c6e15eca796dc4fc6421b99d83c0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-years:numbers:years-teach-1-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+один год — one year. два года — two years. пять лет — five years. The basic counting forms are nominative singular after one, genitive singular after two, and genitive plural after five. The plural counting form for years uses a different stem: learn пять лет as the complete five-year phrase.
+shippedText=один год — one year. два года — two years. пять лет — five years. The basic counting forms are nominative singular after one, genitive singular after two, and genitive plural after five. The plural counting form for years uses a different stem: learn пять лет as the complete five-year phrase.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d505010cd9beb5bfeed4fc8d7ab99a1e7fdac75367ae7ff70d13c8aa83852d46
+contentHash=ee8a19df5de2e08d8f692f886ab2509c570166822da4e1f63973cee0f6012329
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-years-teach-1-title`
+
+- Objectives: obj-u17-years
+- Sessions: u17-s-orient, u17-s-years
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5e60c5d011cf28cbf37ee529522c936910ee9559a412ed96f4d3ab9d431ff27e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-years:numbers:years-teach-1-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+One, two and five years
+shippedText=One, two and five years
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5913871b4e325099a39c018b30543d8e04aa4d34387a7a6784ae3fda0f6c87eb
+contentHash=04d41e03e2c267c197b8ed0a0404be659b8b44e6ff44294b12e5092f501961a5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-years-teach-2-body`
+
+- Objectives: obj-u17-years
+- Sessions: u17-s-orient, u17-s-years
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1f9abad891c00ce343d89abb0267a322d28426e04705139ecc03a2c1812c62f0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-years:numbers:years-teach-2-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+сорок один год — forty-one years. The compound ends in 1, so its noun follows the one pattern. In basic nominative or inanimate accusative counts, endings 2, 3 or 4 follow the two pattern; endings 0 and 5 through 9 follow the five pattern. Endings 11 through 14 are exceptions to the final-digit rule and take the five pattern. Other grammatical cases need additional changes.
+shippedText=сорок один год — forty-one years. The compound ends in 1, so its noun follows the one pattern. In basic nominative or inanimate accusative counts, endings 2, 3 or 4 follow the two pattern; endings 0 and 5 through 9 follow the five pattern. Endings 11 through 14 are exceptions to the final-digit rule and take the five pattern. Other grammatical cases need additional changes.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=de1d879c0cf8a7c9329177f7a73ca8f7a2028f19fb831df4804464f2eb613fad
+contentHash=db6a5668926498a233ec8d5ec3542afdaf205d5721f2e3ff79adb03bfda9de6e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-years-teach-2-title`
+
+- Objectives: obj-u17-years
+- Sessions: u17-s-orient, u17-s-years
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 29e9f59e106434b7374aa0506118503379ec430fdd3d9d82f085b5a8aad0c0f5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-years:numbers:years-teach-2-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Compound counts and the teen exception
+shippedText=Compound counts and the teen exception
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=31d0a8fc6fc2df4bd31bb1ecc5da3f5ce285ad7413df7da322d7026c6d7f792d
+contentHash=59ab3487deecbaec683ecd9fd552d934c5acfc417f1fb88094b12dcc9204c50c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-years-teach-3-body`
+
+- Objectives: obj-u17-years
+- Sessions: u17-s-orient, u17-s-years
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 76f3d4f6fdd7cc9a375ca8592d872e709242622bc911c8002406536d4ac2b30d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-years:numbers:years-teach-3-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+For a five-year row, choose пять лет, rather than два года, which names two years. For a one-year row, choose один год; for a two-year row, choose два года. The separately shown cue can have a different count. These checks recognize quantities of years, not ordinal calendar-year dates or a complete age sentence.
+shippedText=For a five-year row, choose пять лет, rather than два года, which names two years. For a one-year row, choose один год; for a two-year row, choose два года. The separately shown cue can have a different count. These checks recognize quantities of years, not ordinal calendar-year dates or a complete age sentence.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=def8a55f94b5d83cb4e0402b574f6cd1dab60054768c1e85bd8a94a7144b8fe6
+contentHash=aead7ed1fba5ee33960b1ed829fe74db6d58088fce4c940c4a50521254bf6c88
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-numbers-years-teach-3-title`
+
+- Objectives: obj-u17-years
+- Sessions: u17-s-orient, u17-s-years
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 069311e96245f7cf1446119c4a876273ef917be6e67420f8e13376effc6b7c8a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-years:numbers:years-teach-3-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Numbers oldid 4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt: ordinal adjective agreement, numeral gender, count noun cases, compound counts and teen exceptions. Primary learning grammar https://russky.info/grammar/numerals?hl=en, consulted 2026-10-11 UTC: ordinal positions and adjective agreement; counting constructions. Application inference: explain existing Unit 17 forms and the requested positions or quantities; distinguish the retained ordinal noun phrase from the full source sentence gloss. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Work a year choice
+shippedText=Work a year choice
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b64fd1d8b076044b010baa7583863f6a592446fd6f52538e31c3b8f70f4bbbde
+contentHash=1edf41c0e7421effc290f57449c9a7d4fafc3af85a82b8285e29b749fe5a8854
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -16992,14 +19530,16 @@ permitsAppUse=true
 - `u17-st-teach-ordinals-1` EXAMPLE `ex-u17-ordinals-0`
 - `u17-st-teach-ordinals-1` EXAMPLE `ex-u17-ordinals-1`
 - `u17-st-teach-ordinals-1` REFERENCE `ref-u17-attribution`
-- `u17-st-guided-ordinals-1` REMEDIATION `u17-st-rem-ordinals`
-- `u17-st-guided-ordinals-1` ITEM `u17-g-ordinals-0`
 - `u17-st-teach-ordinals-2` REFERENCE `ref-u17-attribution`
 - `u17-st-teach-ordinals-3` EXAMPLE `ex-u17-ordinals-2`
 - `u17-st-teach-ordinals-3` EXAMPLE `ex-u17-ordinals-3`
 - `u17-st-teach-ordinals-3` REFERENCE `ref-u17-attribution`
+- `u17-st-guided-ordinals-1` REMEDIATION `u17-st-rem-ordinals`
+- `u17-st-guided-ordinals-1` ITEM `u17-g-ordinals-0`
 - `u17-st-rem-ordinals` EXAMPLE `ex-u17-ordinals-0`
 - `u17-st-rem-ordinals` EXAMPLE `ex-u17-ordinals-1`
+- `u17-st-rem-ordinals` EXAMPLE `ex-u17-ordinals-2`
+- `u17-st-rem-ordinals` EXAMPLE `ex-u17-ordinals-3`
 - `u17-st-check-ordinals` REMEDIATION `u17-st-rem-ordinals`
 - `u17-st-check-ordinals` ITEM `u17-i-ordinals-1`
 - `u17-st-check-ordinals` ITEM `u17-i-ordinals-2`
@@ -17007,13 +19547,14 @@ permitsAppUse=true
 - `u17-st-teach-hours-1` EXAMPLE `ex-u17-hours-0`
 - `u17-st-teach-hours-1` EXAMPLE `ex-u17-hours-1`
 - `u17-st-teach-hours-1` REFERENCE `ref-u17-attribution`
-- `u17-st-guided-hours-1` REMEDIATION `u17-st-rem-hours`
-- `u17-st-guided-hours-1` ITEM `u17-g-hours-0`
 - `u17-st-teach-hours-2` REFERENCE `ref-u17-attribution`
 - `u17-st-teach-hours-3` EXAMPLE `ex-u17-hours-2`
 - `u17-st-teach-hours-3` REFERENCE `ref-u17-attribution`
+- `u17-st-guided-hours-1` REMEDIATION `u17-st-rem-hours`
+- `u17-st-guided-hours-1` ITEM `u17-g-hours-0`
 - `u17-st-rem-hours` EXAMPLE `ex-u17-hours-0`
 - `u17-st-rem-hours` EXAMPLE `ex-u17-hours-1`
+- `u17-st-rem-hours` EXAMPLE `ex-u17-hours-2`
 - `u17-st-check-hours` REMEDIATION `u17-st-rem-hours`
 - `u17-st-check-hours` ITEM `u17-i-hours-1`
 - `u17-st-check-hours` ITEM `u17-i-hours-2`
@@ -17021,14 +19562,16 @@ permitsAppUse=true
 - `u17-st-teach-years-1` EXAMPLE `ex-u17-years-0`
 - `u17-st-teach-years-1` EXAMPLE `ex-u17-years-1`
 - `u17-st-teach-years-1` REFERENCE `ref-u17-attribution`
-- `u17-st-guided-years-1` REMEDIATION `u17-st-rem-years`
-- `u17-st-guided-years-1` ITEM `u17-g-years-0`
 - `u17-st-teach-years-2` REFERENCE `ref-u17-attribution`
 - `u17-st-teach-years-3` EXAMPLE `ex-u17-years-2`
 - `u17-st-teach-years-3` EXAMPLE `ex-u17-years-3`
 - `u17-st-teach-years-3` REFERENCE `ref-u17-attribution`
+- `u17-st-guided-years-1` REMEDIATION `u17-st-rem-years`
+- `u17-st-guided-years-1` ITEM `u17-g-years-0`
 - `u17-st-rem-years` EXAMPLE `ex-u17-years-0`
 - `u17-st-rem-years` EXAMPLE `ex-u17-years-1`
+- `u17-st-rem-years` EXAMPLE `ex-u17-years-2`
+- `u17-st-rem-years` EXAMPLE `ex-u17-years-3`
 - `u17-st-check-years` REMEDIATION `u17-st-rem-years`
 - `u17-st-check-years` ITEM `u17-i-years-1`
 - `u17-st-check-years` ITEM `u17-i-years-2`
@@ -17036,13 +19579,14 @@ permitsAppUse=true
 - `u17-st-teach-minutes-1` EXAMPLE `ex-u17-minutes-0`
 - `u17-st-teach-minutes-1` EXAMPLE `ex-u17-minutes-1`
 - `u17-st-teach-minutes-1` REFERENCE `ref-u17-attribution`
-- `u17-st-guided-minutes-1` REMEDIATION `u17-st-rem-minutes`
-- `u17-st-guided-minutes-1` ITEM `u17-g-minutes-0`
 - `u17-st-teach-minutes-2` REFERENCE `ref-u17-attribution`
 - `u17-st-teach-minutes-3` EXAMPLE `ex-u17-minutes-2`
 - `u17-st-teach-minutes-3` REFERENCE `ref-u17-attribution`
+- `u17-st-guided-minutes-1` REMEDIATION `u17-st-rem-minutes`
+- `u17-st-guided-minutes-1` ITEM `u17-g-minutes-0`
 - `u17-st-rem-minutes` EXAMPLE `ex-u17-minutes-0`
 - `u17-st-rem-minutes` EXAMPLE `ex-u17-minutes-1`
+- `u17-st-rem-minutes` EXAMPLE `ex-u17-minutes-2`
 - `u17-st-check-minutes` REMEDIATION `u17-st-rem-minutes`
 - `u17-st-check-minutes` ITEM `u17-i-minutes-1`
 - `u17-st-check-minutes` ITEM `u17-i-minutes-2`
@@ -17229,6 +19773,89 @@ permitsAppUse=true
 - `obj-u17-calendar-date` PROVENANCE `prov-ca-repair-17-10771`
 - `obj-u17-calendar-date` PROVENANCE `prov-ca-repair-17-11110`
 - `obj-u17-calendar-date` PROVENANCE `prov-ca-repair-17-11111`
+- `obj-u17-hours` PROVENANCE `prov-ca-u17-numbers-hours-check-body`
+- `obj-u17-hours` PROVENANCE `prov-ca-u17-numbers-hours-guided-body`
+- `obj-u17-hours` PROVENANCE `prov-ca-u17-numbers-hours-objective-title`
+- `obj-u17-hours` PROVENANCE `prov-ca-u17-numbers-hours-rem-body`
+- `obj-u17-hours` PROVENANCE `prov-ca-u17-numbers-hours-rem-title`
+- `obj-u17-hours` PROVENANCE `prov-ca-u17-numbers-hours-teach-1-body`
+- `obj-u17-hours` PROVENANCE `prov-ca-u17-numbers-hours-teach-1-title`
+- `obj-u17-hours` PROVENANCE `prov-ca-u17-numbers-hours-teach-2-body`
+- `obj-u17-hours` PROVENANCE `prov-ca-u17-numbers-hours-teach-2-title`
+- `obj-u17-hours` PROVENANCE `prov-ca-u17-numbers-hours-teach-3-body`
+- `obj-u17-hours` PROVENANCE `prov-ca-u17-numbers-hours-teach-3-title`
+- `obj-u17-minutes` PROVENANCE `prov-ca-u17-numbers-minutes-check-body`
+- `obj-u17-minutes` PROVENANCE `prov-ca-u17-numbers-minutes-guided-body`
+- `obj-u17-minutes` PROVENANCE `prov-ca-u17-numbers-minutes-objective-title`
+- `obj-u17-minutes` PROVENANCE `prov-ca-u17-numbers-minutes-rem-body`
+- `obj-u17-minutes` PROVENANCE `prov-ca-u17-numbers-minutes-rem-title`
+- `obj-u17-minutes` PROVENANCE `prov-ca-u17-numbers-minutes-teach-1-body`
+- `obj-u17-minutes` PROVENANCE `prov-ca-u17-numbers-minutes-teach-1-title`
+- `obj-u17-minutes` PROVENANCE `prov-ca-u17-numbers-minutes-teach-2-body`
+- `obj-u17-minutes` PROVENANCE `prov-ca-u17-numbers-minutes-teach-2-title`
+- `obj-u17-minutes` PROVENANCE `prov-ca-u17-numbers-minutes-teach-3-body`
+- `obj-u17-minutes` PROVENANCE `prov-ca-u17-numbers-minutes-teach-3-title`
+- `obj-u17-ordinals` PROVENANCE `prov-ca-u17-numbers-ordinals-check-body`
+- `obj-u17-ordinals` PROVENANCE `prov-ca-u17-numbers-ordinals-guided-body`
+- `obj-u17-ordinals` PROVENANCE `prov-ca-u17-numbers-ordinals-objective-title`
+- `obj-u17-ordinals` PROVENANCE `prov-ca-u17-numbers-ordinals-rem-body`
+- `obj-u17-ordinals` PROVENANCE `prov-ca-u17-numbers-ordinals-rem-title`
+- `obj-u17-ordinals` PROVENANCE `prov-ca-u17-numbers-ordinals-teach-1-body`
+- `obj-u17-ordinals` PROVENANCE `prov-ca-u17-numbers-ordinals-teach-1-title`
+- `obj-u17-ordinals` PROVENANCE `prov-ca-u17-numbers-ordinals-teach-2-body`
+- `obj-u17-ordinals` PROVENANCE `prov-ca-u17-numbers-ordinals-teach-2-title`
+- `obj-u17-ordinals` PROVENANCE `prov-ca-u17-numbers-ordinals-teach-3-body`
+- `obj-u17-ordinals` PROVENANCE `prov-ca-u17-numbers-ordinals-teach-3-title`
+- `obj-u17-hours` PROVENANCE `prov-ca-u17-numbers-u17-g-hours-0-distractor-1`
+- `obj-u17-hours` PROVENANCE `prov-ca-u17-numbers-u17-g-hours-0-feedback`
+- `obj-u17-hours` PROVENANCE `prov-ca-u17-numbers-u17-g-hours-0-prompt`
+- `obj-u17-minutes` PROVENANCE `prov-ca-u17-numbers-u17-g-minutes-0-distractor-1`
+- `obj-u17-minutes` PROVENANCE `prov-ca-u17-numbers-u17-g-minutes-0-feedback`
+- `obj-u17-minutes` PROVENANCE `prov-ca-u17-numbers-u17-g-minutes-0-prompt`
+- `obj-u17-ordinals` PROVENANCE `prov-ca-u17-numbers-u17-g-ordinals-0-distractor-1`
+- `obj-u17-ordinals` PROVENANCE `prov-ca-u17-numbers-u17-g-ordinals-0-distractor-2`
+- `obj-u17-ordinals` PROVENANCE `prov-ca-u17-numbers-u17-g-ordinals-0-feedback`
+- `obj-u17-ordinals` PROVENANCE `prov-ca-u17-numbers-u17-g-ordinals-0-prompt`
+- `obj-u17-years` PROVENANCE `prov-ca-u17-numbers-u17-g-years-0-distractor-1`
+- `obj-u17-years` PROVENANCE `prov-ca-u17-numbers-u17-g-years-0-feedback`
+- `obj-u17-years` PROVENANCE `prov-ca-u17-numbers-u17-g-years-0-prompt`
+- `obj-u17-hours` PROVENANCE `prov-ca-u17-numbers-u17-i-hours-1-distractor-1`
+- `obj-u17-hours` PROVENANCE `prov-ca-u17-numbers-u17-i-hours-1-feedback`
+- `obj-u17-hours` PROVENANCE `prov-ca-u17-numbers-u17-i-hours-1-prompt`
+- `obj-u17-hours` PROVENANCE `prov-ca-u17-numbers-u17-i-hours-2-distractor-1`
+- `obj-u17-hours` PROVENANCE `prov-ca-u17-numbers-u17-i-hours-2-feedback`
+- `obj-u17-hours` PROVENANCE `prov-ca-u17-numbers-u17-i-hours-2-prompt`
+- `obj-u17-minutes` PROVENANCE `prov-ca-u17-numbers-u17-i-minutes-1-distractor-1`
+- `obj-u17-minutes` PROVENANCE `prov-ca-u17-numbers-u17-i-minutes-1-feedback`
+- `obj-u17-minutes` PROVENANCE `prov-ca-u17-numbers-u17-i-minutes-1-prompt`
+- `obj-u17-minutes` PROVENANCE `prov-ca-u17-numbers-u17-i-minutes-2-distractor-1`
+- `obj-u17-minutes` PROVENANCE `prov-ca-u17-numbers-u17-i-minutes-2-feedback`
+- `obj-u17-minutes` PROVENANCE `prov-ca-u17-numbers-u17-i-minutes-2-prompt`
+- `obj-u17-ordinals` PROVENANCE `prov-ca-u17-numbers-u17-i-ordinals-1-distractor-1`
+- `obj-u17-ordinals` PROVENANCE `prov-ca-u17-numbers-u17-i-ordinals-1-distractor-2`
+- `obj-u17-ordinals` PROVENANCE `prov-ca-u17-numbers-u17-i-ordinals-1-feedback`
+- `obj-u17-ordinals` PROVENANCE `prov-ca-u17-numbers-u17-i-ordinals-1-prompt`
+- `obj-u17-ordinals` PROVENANCE `prov-ca-u17-numbers-u17-i-ordinals-2-distractor-1`
+- `obj-u17-ordinals` PROVENANCE `prov-ca-u17-numbers-u17-i-ordinals-2-distractor-2`
+- `obj-u17-ordinals` PROVENANCE `prov-ca-u17-numbers-u17-i-ordinals-2-feedback`
+- `obj-u17-ordinals` PROVENANCE `prov-ca-u17-numbers-u17-i-ordinals-2-prompt`
+- `obj-u17-years` PROVENANCE `prov-ca-u17-numbers-u17-i-years-1-distractor-1`
+- `obj-u17-years` PROVENANCE `prov-ca-u17-numbers-u17-i-years-1-feedback`
+- `obj-u17-years` PROVENANCE `prov-ca-u17-numbers-u17-i-years-1-prompt`
+- `obj-u17-years` PROVENANCE `prov-ca-u17-numbers-u17-i-years-2-distractor-1`
+- `obj-u17-years` PROVENANCE `prov-ca-u17-numbers-u17-i-years-2-feedback`
+- `obj-u17-years` PROVENANCE `prov-ca-u17-numbers-u17-i-years-2-prompt`
+- `obj-u17-years` PROVENANCE `prov-ca-u17-numbers-years-check-body`
+- `obj-u17-years` PROVENANCE `prov-ca-u17-numbers-years-guided-body`
+- `obj-u17-years` PROVENANCE `prov-ca-u17-numbers-years-objective-title`
+- `obj-u17-years` PROVENANCE `prov-ca-u17-numbers-years-rem-body`
+- `obj-u17-years` PROVENANCE `prov-ca-u17-numbers-years-rem-title`
+- `obj-u17-years` PROVENANCE `prov-ca-u17-numbers-years-teach-1-body`
+- `obj-u17-years` PROVENANCE `prov-ca-u17-numbers-years-teach-1-title`
+- `obj-u17-years` PROVENANCE `prov-ca-u17-numbers-years-teach-2-body`
+- `obj-u17-years` PROVENANCE `prov-ca-u17-numbers-years-teach-2-title`
+- `obj-u17-years` PROVENANCE `prov-ca-u17-numbers-years-teach-3-body`
+- `obj-u17-years` PROVENANCE `prov-ca-u17-numbers-years-teach-3-title`
 - `obj-u17-age` PROVENANCE `prov-ex-u17-age-0-en`
 - `obj-u17-age` PROVENANCE `prov-ex-u17-age-0-ru`
 - `obj-u17-age` PROVENANCE `prov-ex-u17-age-1-en`

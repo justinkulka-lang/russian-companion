@@ -2,14 +2,14 @@
 
 Schema version: 3
 Application: dev.russiancompanion 2.0.0-dev (5)
-Curriculum source commit: 7c2e94d62ffdfff853e1951c0205e6ce7d10d6c8
+Curriculum source commit: 32e10f0d97b4490b8886d2db9b7d92d228f2db9f
 Unit content-review digest: 4f6aa3777c7e6b3c8b57932d77a4ce6073b8523a00922e1e28bbd286d2bed669
 Mapping-package digest: 239e966c5d5b4f00ea70616e8ec949d583bb9406407438ab7f04df9fc363bf31
-Pack content-review digest: dc35c660a31a95c00d9378fbd16f82c2557890d613a20760f554f69104790c6e
-Review-package digest: 66966711449c59e57c907c6b48a321d5d787da0cdd872e186e3bd6032a36608d
-Repository source digest: 402ec4c0244647ecdb7c5fc5997a3fe43afc915dc9e87d4786d807ef3cc804ae
+Pack content-review digest: 087606b3931d56e5b1e8e062178f80c77ff22bbc9df8ecd3dd973c53af2c5a3c
+Review-package digest: 79f17c13de18595a65b5324c33f8af2d3cb7eb8952da43b999187d17450ab101
+Repository source digest: a8dbbcbd61351a230dc4ce19d5945049061896a859ceef412ded2babdce7b880
 
-This packet was generated from the packaged curriculum at curriculum source commit 7c2e94d62ffdfff853e1951c0205e6ce7d10d6c8. That commit contains this unit's reviewed records. A later commit that changes only other units does not change this digest. This packet commit records that identity and does not perform review.
+This packet was generated from the packaged curriculum at curriculum source commit 32e10f0d97b4490b8886d2db9b7d92d228f2db9f. That commit contains this unit's reviewed records. A later commit that changes only other units does not change this digest. This packet commit records that identity and does not perform review.
 
 ## Digests
 
@@ -37,7 +37,7 @@ The package marker scan detects only a fixed list of known prohibited mapping-in
 
 ## What approval means
 
-A later OWNER_ACCEPTED disposition applies only to version 2.0.0-dev, unit content-review digest 4f6aa3777c7e6b3c8b57932d77a4ce6073b8523a00922e1e28bbd286d2bed669, and mapping-package digest 239e966c5d5b4f00ea70616e8ec949d583bb9406407438ab7f04df9fc363bf31, and only after RESEARCH_VERIFIED, IMPLEMENTED_PENDING_FINAL_AUDIT, FINAL_CURRICULUM_AUDIT_PASSED, and INDEPENDENT_AUDIT_VERIFIED are recorded for that same digest. Confirm review-package digest 66966711449c59e57c907c6b48a321d5d787da0cdd872e186e3bd6032a36608d and curriculum source commit 7c2e94d62ffdfff853e1951c0205e6ce7d10d6c8 before relying on this packet. Any later substantive instructional change reachable from Unit 25 invalidates downstream audit states. Any later change to the proposed edition facts invalidates the mapping-package digest. Leave correction comment, reviewer identity, reviewer qualification, review date, and reviewed digest blank. The mapping disposition in this packet remains PENDING_CURRICULUM_REVIEWER. CI does not approve that mapping.
+A later OWNER_ACCEPTED disposition applies only to version 2.0.0-dev, unit content-review digest 4f6aa3777c7e6b3c8b57932d77a4ce6073b8523a00922e1e28bbd286d2bed669, and mapping-package digest 239e966c5d5b4f00ea70616e8ec949d583bb9406407438ab7f04df9fc363bf31, and only after RESEARCH_VERIFIED, IMPLEMENTED_PENDING_FINAL_AUDIT, FINAL_CURRICULUM_AUDIT_PASSED, and INDEPENDENT_AUDIT_VERIFIED are recorded for that same digest. Confirm review-package digest 79f17c13de18595a65b5324c33f8af2d3cb7eb8952da43b999187d17450ab101 and curriculum source commit 32e10f0d97b4490b8886d2db9b7d92d228f2db9f before relying on this packet. Any later substantive instructional change reachable from Unit 25 invalidates downstream audit states. Any later change to the proposed edition facts invalidates the mapping-package digest. Leave correction comment, reviewer identity, reviewer qualification, review date, and reviewed digest blank. The mapping disposition in this packet remains PENDING_CURRICULUM_REVIEWER. CI does not approve that mapping.
 
 Unresolved findings, corrections, or a missing owned-edition comparison prevent APPROVED, MAPPING_APPROVED, INSTALLABLE, and INSTALLED. This packet must not be used to mark Unit 25 reviewed, installable, installed, or as an approved edition alignment. A packet for one unit cannot approve another unit.
 
