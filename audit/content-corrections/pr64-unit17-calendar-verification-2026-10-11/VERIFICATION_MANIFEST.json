@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "baselineCommit": "a355cb3a77cee83fd7b364f995cba5ad057116b0",
+  "implementationCommit": "12de4c54be8dc22119549390d08e2da3ff01ea3a",
+  "sourceDigest": "45dd1d65f0fbf712054b27ed191a34d4e9b02c8550612e2826523e67dc9fa4b2",
+  "packDigest": "429fd4b0b5bce79b3a59d61bc1143da36bba65496d84d5e560cc584b5ff13bb7",
+  "unit17Digest": "6172c2a9be50c4b3c79b962dc5f9b055f8d2d267d3a6a8627a3e9805e4fc8cca",
+  "pinFiles": [
+    "app/src/test/java/dev/russiancompanion/v2/Units2125SourceIntakeTest.kt",
+    "app/src/test/java/dev/russiancompanion/v2/Units610SourceIntakeTest.kt",
+    "app/src/test/java/dev/russiancompanion/v2/V2RebuildTest.kt",
+    "app/src/test/java/dev/russiancompanion/v2/Units2630SourceIntakeTest.kt",
+    "app/src/test/java/dev/russiancompanion/v2/BatchECapabilityResearchTest.kt",
+    "app/src/test/java/dev/russiancompanion/v2/audit/OwnerGovernanceDecisionTest.kt"
+  ],
+  "rawCurriculumSha256": "f8d5f1c3a2c7878db261807f1c08bcba912fc935956c5e6a140befe5897a331c",
+  "expandedFocusedRun": {
+    "tests": 16,
+    "failures": 0
+  },
+  "negativeBaselineRun": {
+    "tests": 4,
+    "expectedFailures": 4
+  },
+  "bindingRuns": {
+    "u17-calendar-bindings": {
+      "tests": 27,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "u17-calendar-later-digests": {
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "productionValidationErrors": 0,
+  "scope": "Eight remaining Unit 17 instructional sessions, objective titles, complete remediation and ordering; 25 existing items English explanations; 203 appended pending original synthesis records. No new Russian form; all other units, original sources/rights/provenance, example objects, prompts, keys, options, source relations and advancement preserved.",
+  "reviewManifests": 30,
+  "changedInstructionalDigestUnits": [
+    17
+  ],
+  "mappingDigestsPreserved": true,
+  "repairReproducesExactly": true,
+  "repairIdempotent": true,
+  "auditFindingsOpen": 19,
+  "semanticTargetsPending": 75,
+  "sequenceReviewCandidates": 114,
+  "candidateFrozen": false,
+  "publicRelease": "NOT_APPROVED",
+  "hostTools": "Kotlin 2.0.21, serialization 1.7.3, JUnit Platform 1.11.4; Android asset and Room annotation stubs; no Compose, Android persistence, APK or physical device execution",
+  "files": {
+    "INITIAL_PUNCTUATION_ADMISSION_FAILURE.txt": "89aa2a1b88daefc88ad762c4f7ee8574548cb39a7be33c1d8644e8a4ec3d5491",
+    "LATER_UNIT_DIGEST_1_PASS.xml": "de740d0dc7195aafab6f16b76fe93fc2bc66ec398089baa383461e8bef6e3f5a",
+    "INITIAL_THREE_SESSION_PASS.xml": "1a5501c15638e5f5ada81ddcc0dff24f5b5067d40c7076531faa38f41b7e4fd8",
+    "SOURCE_REVIEW_BINDING_27_PASS.xml": "da13510194f05df09b6b3886a4cabba626ad3dbbafdbd0a7f25652fb8abb9ce7",
+    "EXPANDED_FOCUSED_PASS.txt": "2dd7a6f55980747e34ffa9aafa013f8508fe07475714a90cc6328e9dae6a5496",
+    "SOURCE_REVIEW_BINDING_27_PASS.txt": "c6f97511dd3a38c456d75b96e9df25e28d94a136ee4a082511df45b41b14e876",
+    "BASELINE_4_EXPECTED_FAILURES.xml": "970db94b894a652cc7c777bc58ba9ec74bfdd3418da46562a41c748674a35e47",
+    "EXPANDED_FOCUSED_PASS.xml": "0f30197c49a9b4ec2ee19514d36fe191e2eb869d0bf1a434cd7f3d8598199b48",
+    "BASELINE_4_EXPECTED_FAILURES.txt": "5c07796d5dd5becba6e9ff807a72aa5f7ba4f1a83289a35f749a6e80ee932d59",
+    "INITIAL_PUNCTUATION_ADMISSION_FAILURE.xml": "8c47ce088df42a432d0463cf680ae24b563c7b2618ac97d0c213e46e3e7e1db9",
+    "INITIAL_THREE_SESSION_PASS.txt": "a1cf2a32dbbe17c04ad0f958400783d47660a2f339b114b4600a0fdc8b32ce51",
+    "LATER_UNIT_DIGEST_1_PASS.txt": "ebc556e6e9cb5dc3931a6f3cf6bc000e93587188809575c96a2e6bce38f7b312",
+    "SCOPE_AND_REPRODUCIBILITY.txt": "757e6029c0d69ac227ca3950356a0dc0c447ee06caeca0031bf8658171ae4e7d"
+  }
+}

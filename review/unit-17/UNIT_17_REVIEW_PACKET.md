@@ -11,12 +11,12 @@ Unit 17 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 32e10f0d97b4490b8886d2db9b7d92d228f2db9f
-- Unit content-review SHA-256: a16117a72a39d336971d7880281a97d5d9d81b3f37a1ad52cc52005967db02b3
+- Curriculum source commit: 12de4c54be8dc22119549390d08e2da3ff01ea3a
+- Unit content-review SHA-256: 6172c2a9be50c4b3c79b962dc5f9b055f8d2d267d3a6a8627a3e9805e4fc8cca
 - Mapping-package SHA-256: 724a3220ec28b620687871fbca1639cc8e64b58fed7fcfe8ba1a29bdf39d6328
-- Pack content-review SHA-256: 087606b3931d56e5b1e8e062178f80c77ff22bbc9df8ecd3dd973c53af2c5a3c
-- Review-package SHA-256: fad1bce0ff91d1135859ca7e7b94fdaee2feb01f6fd72d25d04f6c0465ec034e
-- Repository source SHA-256: a8dbbcbd61351a230dc4ce19d5945049061896a859ceef412ded2babdce7b880
+- Pack content-review SHA-256: 429fd4b0b5bce79b3a59d61bc1143da36bba65496d84d5e560cc584b5ff13bb7
+- Review-package SHA-256: 613f25c8f61c5bca3761a1128e3e6266d22d90b93e5cb600a033fe69be464101
+- Repository source SHA-256: 45dd1d65f0fbf712054b27ed191a34d4e9b02c8550612e2826523e67dc9fa4b2
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -189,9 +189,9 @@ remediation=u17-st-rem-minutes
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5ca66d762c1a959075e6ccb655b080cc2c421477e99dc55d58d97f6c3ad0635e
+- Content hash: 2777055db8363aaac7b48f5d4ffc902b55d8ed34c22148a1f48b971718b6623e
 
-title=Choose the admitted gloss beside the shown age line
+title=Understand the shown age construction
 kind=RECOGNITION
 unitNumber=17
 instruction=u17-st-orient,u17-st-teach-age-1,u17-st-teach-age-2
@@ -208,9 +208,9 @@ remediation=u17-st-rem-age
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 94545218dd818e063a3e408440de5f5a265dcc4e07f26b3b886c9f6d09f52174
+- Content hash: ccbd41b333354d03e433b0ee057fe96fe3978dde62c23e479d6bf21cff172222
 
-title=Choose the admitted gloss beside the shown weekday
+title=Recognize the retained weekday names
 kind=RECOGNITION
 unitNumber=17
 instruction=u17-st-orient,u17-st-teach-weekdays-1,u17-st-teach-weekdays-2,u17-st-teach-weekdays-3
@@ -227,9 +227,9 @@ remediation=u17-st-rem-weekdays
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1200c03e867b146c2db5d4085e37536bf6ff6081d4e04ebc0d055eb3c05337fe
+- Content hash: 4e64f8238630b9663fc835f9c0d4225ca4bc72ff3d6c7fd561bb4018e0eca6cc
 
-title=Choose the admitted gloss beside the shown month
+title=Recognize selected month names
 kind=RECOGNITION
 unitNumber=17
 instruction=u17-st-orient,u17-st-teach-months-1,u17-st-teach-months-2,u17-st-teach-months-3
@@ -246,9 +246,9 @@ remediation=u17-st-rem-months
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 7396b09953c242a4bea5a5fc9410b4e872985b1a9a9da588689c78921fcd3f3f
+- Content hash: 4406eb4ce061d74627e4a10048daff582e08e1caed66bab0b5bc2287f578e851
 
-title=Choose the admitted gloss beside the shown clock question
+title=Recognize the clock-time question
 kind=RECOGNITION
 unitNumber=17
 instruction=u17-st-orient,u17-st-teach-clock-1,u17-st-teach-clock-2
@@ -265,9 +265,9 @@ remediation=u17-st-rem-clock
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5d858aa31221e10e279950be5b1292c76ec3f8786212445dc24c0389e7b6e64f
+- Content hash: fc88829811ad5001fee7e228c47ead86e51d394e91f51529fd32185eb5deb59f
 
-title=Choose the admitted time beside the shown form
+title=Interpret quarter, half and time remaining
 kind=RECOGNITION
 unitNumber=17
 instruction=u17-st-orient,u17-st-teach-clock-answers-1,u17-st-teach-clock-answers-2,u17-st-teach-clock-answers-3
@@ -284,9 +284,9 @@ remediation=u17-st-rem-clock-answers
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f7ae40e3ad6624b19a89ca7406318a780b00eb9f3ff53485cb757f3250bb4eff
+- Content hash: 8db3cc88b37c23be443e91bfad7eaa3b155e165130108195a5857424485fe03f
 
-title=Admitted quarter-hour at-what-time lines
+title=Interpret retained at-what-time examples
 kind=RECOGNITION
 unitNumber=17
 instruction=u17-st-orient,u17-st-teach-quarter-hour-1,u17-st-teach-quarter-hour-2,u17-st-teach-quarter-hour-3,u17-st-teach-quarter-hour-4,u17-st-teach-quarter-hour-5
@@ -303,9 +303,9 @@ remediation=u17-st-rem-quarter-hour
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 66b8bf46a1860f75f77ce2d25417a7909c32840ce0431fc331c4d5922620da96
+- Content hash: d70c9ddaaa6dc45dee5c211f142cd492aa0f3a6856f6a479de85cdde2a4b24e1
 
-title=Apply the admitted clock construction
+title=Recognize three retained clock constructions
 kind=RECOGNITION
 unitNumber=17
 instruction=u17-st-orient,u17-st-teach-clock-productive-1,u17-st-teach-clock-productive-2,u17-st-teach-clock-productive-3
@@ -322,9 +322,9 @@ remediation=u17-st-rem-clock-productive
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 48846583b59bb8cd6261ada29dbf63831d4e8e56b88ab3ce500aedbc6d2bd9bd
+- Content hash: 54ebd0f5ef89997ea2970d9016116fa7c6532d446985c3a714984742ce40ffab
 
-title=Choose the admitted date relation beside the shown form
+title=Interpret retained dates and year abbreviation
 kind=RECOGNITION
 unitNumber=17
 instruction=u17-st-orient,u17-st-teach-calendar-date-1,u17-st-teach-calendar-date-2
@@ -1001,12 +1001,12 @@ remediationStepId=u17-st-rem-minutes
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f225f6fd4fe1c49bce9f04cdae2f5feaa40330e9cee10caa6699956112db62f2
+- Content hash: e343ba6758a0e9996a959cc2a955a65124d432cd831f00cf06e52beeb4c97c38
 
-title=Choose the admitted gloss beside the shown age line
+title=Understand the shown age construction
 estimatedMinutes=12
 objectives=obj-u17-age
-steps=u17-st-teach-age-1,u17-st-guided-age-1,u17-st-teach-age-2,u17-st-rem-age,u17-st-check-age
+steps=u17-st-teach-age-1,u17-st-teach-age-2,u17-st-guided-age-1,u17-st-rem-age,u17-st-check-age
 
 ### STEP `u17-st-teach-age-1`
 
@@ -1016,15 +1016,37 @@ steps=u17-st-teach-age-1,u17-st-guided-age-1,u17-st-teach-age-2,u17-st-rem-age,u
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 44029285990fafff1d1d97ce69df854564dc659e8b654f61215b059fb87dbf7b
+- Content hash: 88fe58b2bcd8ff762e1a6b26e345d042e68b8583d8e75c691350dd7ffeb60081
 
 kind=TEACH
-title=Admitted lines
-body=мне двадцать лет — I am 20 (years old). двадцать лет — 20 years. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+title=A person in the dative
+body=мне двадцать лет — I am 20 years old. The person whose age is stated is in the dative case: the first word means to me in a literal description. The remaining phrase counts twenty years. The present-time Russian construction has no expressed verb, whereas natural English uses am. This is an age statement, not a statement of ownership.
 dominantAction=Continue
 references=ref-u17-attribution
 items=
 examples=ex-u17-age-0,ex-u17-age-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u17-st-teach-age-2`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-age
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 722c6348717e54c0bc22e8e000354ec580bc051aee954204abc637998f34385f
+
+kind=TEACH
+title=Work the whole phrase and the quantity
+body=Compare мне двадцать лет with двадцать лет. The full age statement is I am 20 (years old); the shorter quantity phrase is 20 years and does not by itself identify whose age is meant. The section label age statements names the topic; it is not a translation of either phrase. For a natural-English choice, select I am 20 years old. Ownership of summers and a group of people asking a question would describe different events. These choices recognize this construction; they do not demonstrate independently forming ages for other people or numbers.
+dominantAction=Continue
+references=ref-u17-attribution
+items=
+examples=
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1038,11 +1060,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1385c7b7bae67d8f27f0aa225cdff7def5c178b55823d8fa23c820aa1115f72e
+- Content hash: c031ee4d1d711e94636ec555c25cbb209d3e1db9602628af195f99faac60d7ee
 
 kind=GUIDED
 title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
+body=Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
 dominantAction=Continue
 references=
 items=u17-g-age-0
@@ -1052,28 +1074,6 @@ bookDirection=
 companionDirection=
 remediationStepId=u17-st-rem-age
 
-### STEP `u17-st-teach-age-2`
-
-- Objectives: obj-u17-age
-- Sessions: u17-s-age
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1ee8bcd33cdd3a7a2f01f515a8bdff489f7fb65ed68728f21d6aae09b6f4da3f
-
-kind=TEACH
-title=Admitted instruction
-body=I am 20 (years old)
-dominantAction=Continue
-references=ref-u17-attribution
-items=
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
 ### STEP `u17-st-rem-age`
 
 - Objectives: obj-u17-age
@@ -1082,11 +1082,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 55f7dfc3d3ce346c519af45b07a5857ef2e9f2541620cc6a0d6398be66f1033f
+- Content hash: 2a37b525522f8300e1909597136015b53749450aceff59e8b3ce067ce5e9f799
 
 kind=REMEDIATE
-title=Remediation
-body=I am 20 (years old)
+title=Review ages and calendar names
+body=мне двадцать лет — I am 20 years old. The person whose age is stated is in the dative case: the first word means to me in a literal description. The remaining phrase counts twenty years. The present-time Russian construction has no expressed verb, whereas natural English uses am. This is an age statement, not a statement of ownership.
+
+Compare мне двадцать лет with двадцать лет. The full age statement is I am 20 (years old); the shorter quantity phrase is 20 years and does not by itself identify whose age is meant. The section label age statements names the topic; it is not a translation of either phrase. For a natural-English choice, select I am 20 years old. Ownership of summers and a group of people asking a question would describe different events. These choices recognize this construction; they do not demonstrate independently forming ages for other people or numbers.
 dominantAction=Continue
 references=
 items=
@@ -1104,11 +1106,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 6c044a04e440a37e51bc5046e1252a17d10a2871643b4cccd6c013ebc9a7b1eb
+- Content hash: 27cd5c2a7b3267ee957b7a566728477b4a58eb0ba18722e1ae37ee54ef3df936
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
 dominantAction=Continue
 references=
 items=u17-i-age-1,u17-i-age-2
@@ -1126,12 +1128,12 @@ remediationStepId=u17-st-rem-age
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a7c0d20cb430ae9df315f5e9dcffac04953d83d1de99a6f67b8b8e90764d48e1
+- Content hash: 8cbcb4b7e071e76290dcc36184151f4af881df81bb6ae712a8e27aa10eefc05d
 
-title=Choose the admitted gloss beside the shown weekday
+title=Recognize the retained weekday names
 estimatedMinutes=12
 objectives=obj-u17-weekdays
-steps=u17-st-teach-weekdays-1,u17-st-guided-weekdays-1,u17-st-teach-weekdays-2,u17-st-teach-weekdays-3,u17-st-rem-weekdays,u17-st-check-weekdays
+steps=u17-st-teach-weekdays-1,u17-st-teach-weekdays-2,u17-st-teach-weekdays-3,u17-st-guided-weekdays-1,u17-st-rem-weekdays,u17-st-check-weekdays
 
 ### STEP `u17-st-teach-weekdays-1`
 
@@ -1141,11 +1143,11 @@ steps=u17-st-teach-weekdays-1,u17-st-guided-weekdays-1,u17-st-teach-weekdays-2,u
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e09cea53d2a0c354bf670797d5e12436f1ddb03e31137a48fa0b7a5eaf69aa92
+- Content hash: 46c659fdf5631af394c9b058d12a727be2ba840cf3d07b018ae19ed5cf1edd04
 
 kind=TEACH
-title=Admitted lines
-body=понедельник — Monday. вторник — Tuesday. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+title=The first four weekday names
+body=понедельник — Monday. вторник — Tuesday. среда — Wednesday. четверг — Thursday. Each word names a day of the week. Match the shown word to its English meaning rather than selecting a neighboring day.
 dominantAction=Continue
 references=ref-u17-attribution
 items=
@@ -1155,28 +1157,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u17-st-guided-weekdays-1`
-
-- Objectives: obj-u17-weekdays
-- Sessions: u17-s-weekdays
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 46a7c5bb929b3f5ffc2d744174071f3824ec330cd2fd8ff34aa7a71cf2a8602b
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u17-g-weekdays-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u17-st-rem-weekdays
-
 ### STEP `u17-st-teach-weekdays-2`
 
 - Objectives: obj-u17-weekdays
@@ -1185,11 +1165,11 @@ remediationStepId=u17-st-rem-weekdays
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 843c8500d979352f0318b309f08ca64eca57ed9d3ab9b623476dbcb3599b5ae0
+- Content hash: c0191e9d00c6aefe2bccdc040efc947b11fdd815ccb6dfe42236e65439853757
 
 kind=TEACH
-title=Admitted instruction
-body=Russians don't capitalize days of the week.
+title=Complete the weekday contrast
+body=пятница — Friday. суббота — Saturday. воскресенье — Sunday. Together with the previous four names, these make the seven-day set. In the Thursday check, Friday and Saturday are competing day names. In the Sunday check, Monday and Saturday name different days. Learn the Sunday form here before meeting it in an independent check.
 dominantAction=Continue
 references=ref-u17-attribution
 items=
@@ -1207,11 +1187,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 06b04225141847947c57218533e13dcd0aa6ba019942a31b6f03f1fddc47944b
+- Content hash: a28ac68ddddcb1dd4a4ecba8e9619d144724cb9b4bd79b227d2e56a28214322e
 
 kind=TEACH
-title=Admitted lines
-body=среда — Wednesday. четверг — Thursday. 
+title=Capitalization and a worked choice
+body=Weekday names normally stay lowercase within a Russian sentence; the first word of a sentence still begins with a capital. For the shown четверг, select Thursday. For the shown воскресенье, select Sunday. Recognizing an isolated name is different from saying on a particular weekday: that use needs its own preposition and case construction, which these checks do not assess.
 dominantAction=Continue
 references=ref-u17-attribution
 items=
@@ -1221,6 +1201,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u17-st-guided-weekdays-1`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-weekdays
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 50738679d44360c23e903c0c45864b1782236c3fac3b1fa1f69347b57fbab8bc
+
+kind=GUIDED
+title=Guided practice
+body=Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+dominantAction=Continue
+references=
+items=u17-g-weekdays-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u17-st-rem-weekdays
+
 ### STEP `u17-st-rem-weekdays`
 
 - Objectives: obj-u17-weekdays
@@ -1229,15 +1231,19 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 458617b82e598cef49a277a944eb461314475ded840a1c3a3f39ccfeafa9e4f8
+- Content hash: 86b2270ed18e3718653efd82e3113c2d367895cf192fb24c18f5b022beaa1243
 
 kind=REMEDIATE
-title=Remediation
-body=Russians don't capitalize days of the week.
+title=Review ages and calendar names
+body=понедельник — Monday. вторник — Tuesday. среда — Wednesday. четверг — Thursday. Each word names a day of the week. Match the shown word to its English meaning rather than selecting a neighboring day.
+
+пятница — Friday. суббота — Saturday. воскресенье — Sunday. Together with the previous four names, these make the seven-day set. In the Thursday check, Friday and Saturday are competing day names. In the Sunday check, Monday and Saturday name different days. Learn the Sunday form here before meeting it in an independent check.
+
+Weekday names normally stay lowercase within a Russian sentence; the first word of a sentence still begins with a capital. For the shown четверг, select Thursday. For the shown воскресенье, select Sunday. Recognizing an isolated name is different from saying on a particular weekday: that use needs its own preposition and case construction, which these checks do not assess.
 dominantAction=Continue
 references=
 items=
-examples=ex-u17-weekdays-0,ex-u17-weekdays-1
+examples=ex-u17-weekdays-0,ex-u17-weekdays-1,ex-u17-weekdays-2,ex-u17-weekdays-3
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1251,11 +1257,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 189a2e184b75f178b3ae05f057c7eafc5f86b4b344613a1b9e4ed97c93e96867
+- Content hash: d9bbddc99de619f1538bd544bf94aaf2b975f6fa93b397852fb4e27bdd2c7e69
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
 dominantAction=Continue
 references=
 items=u17-i-weekdays-1,u17-i-weekdays-2
@@ -1273,12 +1279,12 @@ remediationStepId=u17-st-rem-weekdays
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 7ebcfc1c107a93b44d2a4e7d50a76caee87ab373a3168872438ef273ee57255e
+- Content hash: 8eaaf7ab12fa5efabbc76a7865bce2143fba31ba5edfe290cded1d6176a821e6
 
-title=Choose the admitted gloss beside the shown month
+title=Recognize selected month names
 estimatedMinutes=12
 objectives=obj-u17-months
-steps=u17-st-teach-months-1,u17-st-guided-months-1,u17-st-teach-months-2,u17-st-teach-months-3,u17-st-rem-months,u17-st-check-months
+steps=u17-st-teach-months-1,u17-st-teach-months-2,u17-st-teach-months-3,u17-st-guided-months-1,u17-st-rem-months,u17-st-check-months
 
 ### STEP `u17-st-teach-months-1`
 
@@ -1288,11 +1294,11 @@ steps=u17-st-teach-months-1,u17-st-guided-months-1,u17-st-teach-months-2,u17-st-
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 821676fb23fb33efa837a99708308fd7ebdfdf277c0fada9ceb5f31067812adb
+- Content hash: a2e20f06574a9f74841ad3f2334f53cb08e37d3e275ce078e9f8ee77f568e1c8
 
 kind=TEACH
-title=Admitted lines
-body=Январь — January. Февраль — February. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+title=The first four retained month names
+body=Январь — January. Февраль — February. Март — March. Апрель — April. These vocabulary labels name months, not complete dates. Read the shown Russian word and select its matching English month.
 dominantAction=Continue
 references=ref-u17-attribution
 items=
@@ -1302,28 +1308,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u17-st-guided-months-1`
-
-- Objectives: obj-u17-months
-- Sessions: u17-s-months
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 824da8b7641d552349d93da7805605aa25171f3670909681c9c7a312ff84637d
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u17-g-months-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u17-st-rem-months
-
 ### STEP `u17-st-teach-months-2`
 
 - Objectives: obj-u17-months
@@ -1332,11 +1316,11 @@ remediationStepId=u17-st-rem-months
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1d06d8b840b2ade6177bfd9b01297c3f1a73917aa761a0f6429a5a8bf119fd1a
+- Content hash: b038d6e4316f15446ea4aca5ed668425aa8bc89686f450cbe15c7c6051850a58
 
 kind=TEACH
-title=Admitted instruction
-body=Months of the year
+title=Teach the later checked months and alternatives
+body=Июнь — June. Июль — July. Август — August. Декабрь — December. June and July have similar Russian spellings but differ in the consonant before the final soft sign. December names the final month of the year. These retained forms include the later check targets and their competing alternatives; this selected set is not a complete twelve-month production lesson.
 dominantAction=Continue
 references=ref-u17-attribution
 items=
@@ -1354,11 +1338,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5779154752a2ce4beefc8a790d2f7451588681382ae2d141ae9628740cbea1f7
+- Content hash: 8c2232209ecffcb74a1ed9d47fbe0a273a3903aa65e0b372b126dcee3c4cd5ed
 
 kind=TEACH
-title=Admitted lines
-body=Март — March. Апрель — April. 
+title=Capitalization and a worked choice
+body=Month names normally use lowercase within a Russian sentence. These retained vocabulary labels begin with capitals; that presentation is not a rule to capitalize every month name. For Июнь select June, and for Декабрь select December. Knowing the standalone name does not demonstrate forming a full date: a month in a date can have a different case form. Learn those constructions separately.
 dominantAction=Continue
 references=ref-u17-attribution
 items=
@@ -1368,6 +1352,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u17-st-guided-months-1`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-months
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 35d2899d01f5588c270131394984ccffee9d10c0d29a9ceb92ee2163b9ba8e96
+
+kind=GUIDED
+title=Guided practice
+body=Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+dominantAction=Continue
+references=
+items=u17-g-months-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u17-st-rem-months
+
 ### STEP `u17-st-rem-months`
 
 - Objectives: obj-u17-months
@@ -1376,15 +1382,19 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 9dde5edb6797af425291e84746363ddcfb0be15a5717dc643355d37c92b724b3
+- Content hash: fa6ee0c7ad83eef9dbc0cb366a1f1028441fb72b5ddf8b278a5386cfff273d83
 
 kind=REMEDIATE
-title=Remediation
-body=Months of the year
+title=Review ages and calendar names
+body=Январь — January. Февраль — February. Март — March. Апрель — April. These vocabulary labels name months, not complete dates. Read the shown Russian word and select its matching English month.
+
+Июнь — June. Июль — July. Август — August. Декабрь — December. June and July have similar Russian spellings but differ in the consonant before the final soft sign. December names the final month of the year. These retained forms include the later check targets and their competing alternatives; this selected set is not a complete twelve-month production lesson.
+
+Month names normally use lowercase within a Russian sentence. These retained vocabulary labels begin with capitals; that presentation is not a rule to capitalize every month name. For Июнь select June, and for Декабрь select December. Knowing the standalone name does not demonstrate forming a full date: a month in a date can have a different case form. Learn those constructions separately.
 dominantAction=Continue
 references=
 items=
-examples=ex-u17-months-0,ex-u17-months-1
+examples=ex-u17-months-0,ex-u17-months-1,ex-u17-months-2,ex-u17-months-3
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1398,11 +1408,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 4211ebf2adf0a23c3a0adbe92158848f0d87f2b4aa72c83887aa6ca1efb5e7f8
+- Content hash: f18ad600e5eef23e7e9d29065aee49f34dcda8e285ce7460dac75b7ff617a350
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
 dominantAction=Continue
 references=
 items=u17-i-months-1,u17-i-months-2
@@ -1420,12 +1430,12 @@ remediationStepId=u17-st-rem-months
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 054a00dee1d37c5e0de76966506032eb82b21bd0baa2f053b9f2dfe1aeefdb66
+- Content hash: e97d375046d49d393ac5b9b1121169c4bc99b766f564c2a1014de37e5ef36393
 
-title=Choose the admitted gloss beside the shown clock question
+title=Recognize the clock-time question
 estimatedMinutes=12
 objectives=obj-u17-clock
-steps=u17-st-teach-clock-1,u17-st-guided-clock-1,u17-st-teach-clock-2,u17-st-rem-clock,u17-st-check-clock
+steps=u17-st-teach-clock-1,u17-st-teach-clock-2,u17-st-guided-clock-1,u17-st-rem-clock,u17-st-check-clock
 
 ### STEP `u17-st-teach-clock-1`
 
@@ -1435,15 +1445,37 @@ steps=u17-st-teach-clock-1,u17-st-guided-clock-1,u17-st-teach-clock-2,u17-st-rem
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f8da3a3b0daab4dcbd64aec9458d02f3eb9f982fd508ade158795447ba849930
+- Content hash: 3701e57f06996e96aa3928af27dc014eb54afa0a9c85f588a53bfee57fe74952
 
 kind=TEACH
-title=Admitted lines
-body=Который час? — What time is it? час — time. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+title=Understand the whole question
+body=Который час? — What time is it? This fixed question asks for the current clock time. The noun час normally means hour; its retained example label time reflects this question context rather than a universal translation of the isolated noun. Learn the complete question as a unit.
 dominantAction=Continue
 references=ref-u17-attribution
 items=
 examples=ex-u17-clock-0,ex-u17-clock-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u17-st-teach-clock-2`
+
+- Objectives: obj-u17-clock
+- Sessions: u17-s-clock
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: a017e6d748eb9ae47cf91e7ca6ed21888d0fe3dfff393fc54fde4dca966b566b
+
+kind=TEACH
+title=Work the meaning choice
+body=For the complete clock question, choose What time is it? A question about which book someone wants would request a different kind of information. Repeated recognition of this one question is not independent practice in giving a time, asking when an event occurs, or forming other questions.
+dominantAction=Continue
+references=ref-u17-attribution
+items=
+examples=
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1457,11 +1489,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 73028d81c19c18a16fbb3d47c7ab0a9f8044fe578dc6f6f85b0625ec35521005
+- Content hash: c13885c3841e91ccae12cf1b79cc5400bd9b56835236748e322516d7a56a2dac
 
 kind=GUIDED
 title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
+body=Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
 dominantAction=Continue
 references=
 items=u17-g-clock-0
@@ -1471,28 +1503,6 @@ bookDirection=
 companionDirection=
 remediationStepId=u17-st-rem-clock
 
-### STEP `u17-st-teach-clock-2`
-
-- Objectives: obj-u17-clock
-- Sessions: u17-s-clock
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8c0af52fda024e86e03c1dec9a7a68768895a4552510594cb1a3e22aabb8d0b5
-
-kind=TEACH
-title=Admitted instruction
-body=What time is it?
-dominantAction=Continue
-references=ref-u17-attribution
-items=
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
 ### STEP `u17-st-rem-clock`
 
 - Objectives: obj-u17-clock
@@ -1501,11 +1511,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 01c19047dcdb6119a015489664813cea87759fbe59991fe8c81959c64efe4aba
+- Content hash: 25d8bfedd65e9430b7cd3426de9c6b671cad87d64d830af362a6038063f2759b
 
 kind=REMEDIATE
-title=Remediation
-body=What time is it?
+title=Review ages and calendar names
+body=Который час? — What time is it? This fixed question asks for the current clock time. The noun час normally means hour; its retained example label time reflects this question context rather than a universal translation of the isolated noun. Learn the complete question as a unit.
+
+For the complete clock question, choose What time is it? A question about which book someone wants would request a different kind of information. Repeated recognition of this one question is not independent practice in giving a time, asking when an event occurs, or forming other questions.
 dominantAction=Continue
 references=
 items=
@@ -1523,11 +1535,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c708f1dfd21d262fc03c2beae48770523277156c1b824a4a5fd0bf7670e0232f
+- Content hash: 813864be3b1238cfe6c9bb4004db4c35cd0fbbcc23c7c75f273085c16d66deab
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
 dominantAction=Continue
 references=
 items=u17-i-clock-1,u17-i-clock-2
@@ -1545,12 +1557,12 @@ remediationStepId=u17-st-rem-clock
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ad346d5c25e5d745598c132ea9aba1ae80035fa8fa48ceb279963e2502663070
+- Content hash: d1197fa3ab2a1bfbf6a8539eed9c70baf9117e85f47500c44a47de472b23b5ab
 
-title=Choose the admitted time beside the shown form
+title=Interpret quarter, half and time remaining
 estimatedMinutes=12
 objectives=obj-u17-clock-answers
-steps=u17-st-teach-clock-answers-1,u17-st-guided-clock-answers-1,u17-st-teach-clock-answers-2,u17-st-teach-clock-answers-3,u17-st-rem-clock-answers,u17-st-check-clock-answers
+steps=u17-st-teach-clock-answers-1,u17-st-teach-clock-answers-2,u17-st-teach-clock-answers-3,u17-st-guided-clock-answers-1,u17-st-rem-clock-answers,u17-st-check-clock-answers
 
 ### STEP `u17-st-teach-clock-answers-1`
 
@@ -1560,11 +1572,11 @@ steps=u17-st-teach-clock-answers-1,u17-st-guided-clock-answers-1,u17-st-teach-cl
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 96fa88b72a0fdc2737370dcd53f512f4b44900d6ae4887618d91daa1f5534083
+- Content hash: 0696b1ab75cd528b9e898322897a32608d351085cddbaa06fda4361184b2ab16
 
 kind=TEACH
-title=Admitted lines
-body=четверть восьмого — 7:15. полвосьмого — 7:30. 
+title=A quarter into the next named hour
+body=четверть восьмого — 7:15. The eighth hour is the period leading up to eight, not the period starting at eight. A quarter of that hour has elapsed after seven. The ordinal names the next hour and appears in genitive form.
 dominantAction=Continue
 references=ref-u17-attribution
 items=
@@ -1574,28 +1586,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u17-st-guided-clock-answers-1`
-
-- Objectives: obj-u17-clock-answers
-- Sessions: u17-s-clock-answers
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 61df185c152accaba8249a6b5018d84de9f0133917dd4d61a9d05d8975021342
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u17-g-clock-answers-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u17-st-rem-clock-answers
-
 ### STEP `u17-st-teach-clock-answers-2`
 
 - Objectives: obj-u17-clock-answers
@@ -1604,11 +1594,11 @@ remediationStepId=u17-st-rem-clock-answers
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 32f178734157571eca73ad1dde08f2a320cca8085761ce651b019755a8d1c2b0
+- Content hash: 68946b77b6470de6b423bc8f0ec1ec9548f63c7dc0ac19d73a2fe515a7bb8d41
 
 kind=TEACH
-title=Admitted instruction
-body=uses the same convention: четверть восьмого ("quarter of the eighth hour"), полвосьмого ("half of eight"), без четверти восемь ("eight without a quarter") meaning 7:15, 7:30, 7:45 respectively
+title=Half of the hour in progress
+body=полвосьмого — 7:30. Half of the eighth hour has passed, so the clock shows half past seven. The compact half-hour expression is written as one word in this retained form. Match the construction to the clock reading, rather than treating the named eighth hour as the elapsed whole hour.
 dominantAction=Continue
 references=ref-u17-attribution
 items=
@@ -1626,11 +1616,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a1f5cb62911c40788ecfa811c6b896b182db20acdb28081bf9265eb7c780810b
+- Content hash: 0427d1d76b2932a01cd646b6450b6ed538d75c39a1e1b20ee7e2d1f08c3f7d89
 
 kind=TEACH
-title=Admitted lines
-body=без четверти восемь — 7:45. 
+title=A quarter remaining before eight
+body=без четверти восемь — 7:45. This construction counts a quarter hour remaining until eight: subtract fifteen minutes from the named upcoming hour. The without construction differs from counting a quarter or a half already elapsed. These choices interpret existing forms; context is still needed to distinguish morning from evening.
 dominantAction=Continue
 references=ref-u17-attribution
 items=
@@ -1640,6 +1630,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u17-st-guided-clock-answers-1`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-clock-answers
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 8b87b49c32529d03318194925ac3df564d1c0f37a8e54c1f20833824270d3bf5
+
+kind=GUIDED
+title=Guided practice
+body=Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+dominantAction=Continue
+references=
+items=u17-g-clock-answers-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u17-st-rem-clock-answers
+
 ### STEP `u17-st-rem-clock-answers`
 
 - Objectives: obj-u17-clock-answers
@@ -1648,15 +1660,19 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 19640e95955f929ab115facb2e6ee81528587b552dcc1cab201f062c08710b62
+- Content hash: 1bd3620861a9648126f130b8388f0027d72b536bc99b715560f582cbe4c4604a
 
 kind=REMEDIATE
-title=Remediation
-body=uses the same convention: четверть восьмого ("quarter of the eighth hour"), полвосьмого ("half of eight"), без четверти восемь ("eight without a quarter") meaning 7:15, 7:30, 7:45 respectively
+title=Review ages and calendar names
+body=четверть восьмого — 7:15. The eighth hour is the period leading up to eight, not the period starting at eight. A quarter of that hour has elapsed after seven. The ordinal names the next hour and appears in genitive form.
+
+полвосьмого — 7:30. Half of the eighth hour has passed, so the clock shows half past seven. The compact half-hour expression is written as one word in this retained form. Match the construction to the clock reading, rather than treating the named eighth hour as the elapsed whole hour.
+
+без четверти восемь — 7:45. This construction counts a quarter hour remaining until eight: subtract fifteen minutes from the named upcoming hour. The without construction differs from counting a quarter or a half already elapsed. These choices interpret existing forms; context is still needed to distinguish morning from evening.
 dominantAction=Continue
 references=
 items=
-examples=ex-u17-clock-answers-0,ex-u17-clock-answers-1
+examples=ex-u17-clock-answers-0,ex-u17-clock-answers-1,ex-u17-clock-answers-2
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1670,11 +1686,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e5715c6c8ac420b2df7b08224ebc0ade12f598c95c2406944dfffb68405e2f89
+- Content hash: 8eb541d5658a5a443ea55e1cf3838dca76d004a9e14ae8d59b5115cfcccbdb6a
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
 dominantAction=Continue
 references=
 items=u17-i-clock-answers-1,u17-i-clock-answers-2
@@ -1692,12 +1708,12 @@ remediationStepId=u17-st-rem-clock-answers
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c7eb2766e7e7cd2499b8dd313ff7f907dd890ddc464dbdf36303cbfc907b3195
+- Content hash: 3972074b1fb6e6212ba1d5ad39c0fe23d5a197228bdc3f18655e8668de9b8871
 
-title=Admitted quarter-hour at-what-time lines
+title=Interpret retained at-what-time examples
 estimatedMinutes=12
 objectives=obj-u17-quarter-hour
-steps=u17-st-teach-quarter-hour-1,u17-st-guided-quarter-hour-1,u17-st-teach-quarter-hour-2,u17-st-teach-quarter-hour-3,u17-st-teach-quarter-hour-4,u17-st-teach-quarter-hour-5,u17-st-rem-quarter-hour,u17-st-check-quarter-hour
+steps=u17-st-teach-quarter-hour-1,u17-st-teach-quarter-hour-2,u17-st-teach-quarter-hour-3,u17-st-teach-quarter-hour-4,u17-st-teach-quarter-hour-5,u17-st-guided-quarter-hour-1,u17-st-rem-quarter-hour,u17-st-check-quarter-hour
 
 ### STEP `u17-st-teach-quarter-hour-1`
 
@@ -1707,11 +1723,11 @@ steps=u17-st-teach-quarter-hour-1,u17-st-guided-quarter-hour-1,u17-st-teach-quar
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 0cd591e42d1b7fc41ce037301824031fc0571ed435ac322e77c15efc4c8be97e
+- Content hash: 97adfaa61e828e7467f7b70843c352d959402cbcf8d7deda60e5b9695bd3024e
 
 kind=TEACH
-title=Admitted lines
-body=Концерт начинается в шесть часов. — 18.00. Я приду в четверть восьмого. — 7.15 – quarter of the eighth hour. 
+title=Clock readings and event times
+body=A current-time question and the time when an event happens are different requests. The retained event sentences use at-time expressions. A preposition introduces several of them, while the without construction expresses minutes remaining until the upcoming hour. Study the complete source examples before selecting their readings.
 dominantAction=Continue
 references=ref-u17-pressbooks-attribution
 items=
@@ -1721,28 +1737,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u17-st-guided-quarter-hour-1`
-
-- Objectives: obj-u17-quarter-hour
-- Sessions: u17-s-quarter-hour
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3ad538a6460a23bd336ff17c27f130a8357afb6b3f4f6edb3b8d553492e332b6
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u17-g-quarter-hour-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u17-st-rem-quarter-hour
-
 ### STEP `u17-st-teach-quarter-hour-2`
 
 - Objectives: obj-u17-quarter-hour
@@ -1751,11 +1745,11 @@ remediationStepId=u17-st-rem-quarter-hour
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 2f802d37f6d0f0f076abbfaa81ddfb059c5c590c21bb01cf113d7cb95de7ba01
+- Content hash: 8387536f48b4fd33659a065e6b6adc0ca32f3b652f74c6db1f21b144b6b1c698
 
 kind=TEACH
-title=Admitted instruction
-body=At what time on the hour (0.00)
+title=On the hour and contextual AM or PM
+body=Концерт начинается в шесть часов. — 18.00. Она была дома в час. — 13.00. These are the readings assigned by the retained source. The bare six-hour and one-hour expressions do not themselves distinguish evening from morning; the source readings depend on context. Do not infer that every occurrence of six means eighteen.
 dominantAction=Continue
 references=ref-u17-pressbooks-attribution
 items=
@@ -1773,11 +1767,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 238e4dd3f0109b6a1c3862406ba175288d35fc238fffa9094453493d7d9160b8
+- Content hash: f6f204653ae694c20804e677bb6b394543ea957a53ec5e0fbdaa2416036488f6
 
 kind=TEACH
-title=Admitted lines
-body=Наш рейс уезжает в половине пятого. — 4.30 – half of the fifth hour. Передача начинается без четверти три. — 2.45 – 3 without a quarter. 
+title=Quarter past and the next ordinal
+body=Я приду в четверть восьмого. — 7.15 – quarter of the eighth hour. Он нам позвонил в пятнадцать минут десятого. — 9.15 – 15 minutes of the tenth hour. A quarter or fifteen minutes has elapsed in the hour leading to the named next hour. The ordinal is genitive; the event-time phrase also has its introductory preposition.
 dominantAction=Continue
 references=ref-u17-pressbooks-attribution
 items=
@@ -1795,11 +1789,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8160a756a87c75ac1234cd703dd322bfdac51915780758d8189d5829e2058e5e
+- Content hash: f49d699345a9c7b3f023ee7ede7c075f32b2be8a0110c2394ea7ff881204ddf6
 
 kind=TEACH
-title=Admitted lines
-body=Она была дома в час. — 13.00. Он нам позвонил в пятнадцать минут десятого. — 9.15 – 15 minutes of the tenth hour. 
+title=Half past in two retained constructions
+body=Наш рейс уезжает в половине пятого. — 4.30 – half of the fifth hour. Мы будем свободны в полвторого. — 1.30 – half of the second hour. Both name a half elapsed in the next ordinal hour. Their retained preposition and noun forms differ; recognize each complete construction rather than exchanging endings mechanically.
 dominantAction=Continue
 references=ref-u17-pressbooks-attribution
 items=
@@ -1817,11 +1811,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f52a886dc1652580f8d05ffabff5f6fb8a3e0359b2d1b3b9f023e6b8bdea489d
+- Content hash: ca0699a6ce2d172a9e80757775dd7d29a35a3f52d5f4e21ff0f5ec5ebafdf80d
 
 kind=TEACH
-title=Admitted lines
-body=Мы будем свободны в полвторого. — 1.30 – half of the second hour. Она обычно приходит на работу без пятнадцати девять. — 8.45 – 9 without 15 minutes. 
+title=A quarter before the upcoming hour
+body=Передача начинается без четверти три. — 2.45 – 3 without a quarter. Она обычно приходит на работу без пятнадцати девять. — 8.45 – 9 without 15 minutes. Subtract the stated remaining minutes from the upcoming hour. The preposition meaning without governs the remaining quantity in genitive form. These existing choices do not assess independently building a new event-time sentence.
 dominantAction=Continue
 references=ref-u17-pressbooks-attribution
 items=
@@ -1831,6 +1825,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u17-st-guided-quarter-hour-1`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-quarter-hour
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: f7d21c16dea5c42a156872efd8e9f49282cf7698b26e96d903912fe4582c5e4f
+
+kind=GUIDED
+title=Guided practice
+body=Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+dominantAction=Continue
+references=
+items=u17-g-quarter-hour-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u17-st-rem-quarter-hour
+
 ### STEP `u17-st-rem-quarter-hour`
 
 - Objectives: obj-u17-quarter-hour
@@ -1839,15 +1855,23 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 221cb738ed2a2c74a29e69a7f21bb8c870dc072a387d498d8a4a4d89496a2f75
+- Content hash: 0a68fc44dabe7b6fea418705ef3c999bc658c55e15978a7bed1d72ecd7c9c8d7
 
 kind=REMEDIATE
-title=Remediation
-body=At what time on the hour (0.00)
+title=Review ages and calendar names
+body=A current-time question and the time when an event happens are different requests. The retained event sentences use at-time expressions. A preposition introduces several of them, while the without construction expresses minutes remaining until the upcoming hour. Study the complete source examples before selecting their readings.
+
+Концерт начинается в шесть часов. — 18.00. Она была дома в час. — 13.00. These are the readings assigned by the retained source. The bare six-hour and one-hour expressions do not themselves distinguish evening from morning; the source readings depend on context. Do not infer that every occurrence of six means eighteen.
+
+Я приду в четверть восьмого. — 7.15 – quarter of the eighth hour. Он нам позвонил в пятнадцать минут десятого. — 9.15 – 15 minutes of the tenth hour. A quarter or fifteen minutes has elapsed in the hour leading to the named next hour. The ordinal is genitive; the event-time phrase also has its introductory preposition.
+
+Наш рейс уезжает в половине пятого. — 4.30 – half of the fifth hour. Мы будем свободны в полвторого. — 1.30 – half of the second hour. Both name a half elapsed in the next ordinal hour. Their retained preposition and noun forms differ; recognize each complete construction rather than exchanging endings mechanically.
+
+Передача начинается без четверти три. — 2.45 – 3 without a quarter. Она обычно приходит на работу без пятнадцати девять. — 8.45 – 9 without 15 minutes. Subtract the stated remaining minutes from the upcoming hour. The preposition meaning without governs the remaining quantity in genitive form. These existing choices do not assess independently building a new event-time sentence.
 dominantAction=Continue
 references=
 items=
-examples=ex-u17-quarter-hour-0,ex-u17-quarter-hour-1
+examples=ex-u17-quarter-hour-0,ex-u17-quarter-hour-1,ex-u17-quarter-hour-2,ex-u17-quarter-hour-3,ex-u17-quarter-hour-4,ex-u17-quarter-hour-5,ex-u17-quarter-hour-6,ex-u17-quarter-hour-7
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1861,11 +1885,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 52661dbd91afe7df837bd996667667fd08cf4c167b955b29e0c9dfa021e506b6
+- Content hash: c28b8a6f94c343532b88b79d2d206b60d05afe99a241fff0a321bc659a598ede
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
 dominantAction=Continue
 references=
 items=u17-i-quarter-hour-1,u17-i-quarter-hour-2,u17-i-quarter-hour-3
@@ -1883,12 +1907,12 @@ remediationStepId=u17-st-rem-quarter-hour
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 685d944c8fa14e57f66374aaf9bb80d29d3e4d8705e5e2672052bc89e7b40509
+- Content hash: d28e6ea4592a15e2ed277b4ebbfea266ad53a61c4cb281073d8f8aa9d6d5b343
 
-title=Apply the admitted clock construction
+title=Recognize three retained clock constructions
 estimatedMinutes=12
 objectives=obj-u17-clock-productive
-steps=u17-st-teach-clock-productive-1,u17-st-guided-clock-productive-1,u17-st-teach-clock-productive-2,u17-st-teach-clock-productive-3,u17-st-rem-clock-productive,u17-st-check-clock-productive
+steps=u17-st-teach-clock-productive-1,u17-st-teach-clock-productive-2,u17-st-teach-clock-productive-3,u17-st-guided-clock-productive-1,u17-st-rem-clock-productive,u17-st-check-clock-productive
 
 ### STEP `u17-st-teach-clock-productive-1`
 
@@ -1898,11 +1922,11 @@ steps=u17-st-teach-clock-productive-1,u17-st-guided-clock-productive-1,u17-st-te
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d9f56cb3ff504bc829efcfe937e735f7baa9a580562d741c1a4a021f0322a472
+- Content hash: eec7bd2d5dcd137c4ae8f01c1b19c378ae6229eb685c5ef8842837c8a23d48c4
 
 kind=TEACH
-title=Admitted lines
-body=в пятнадцать минут второго — at the fifteenth minute of the second [hour]. без двадцати пяти два — lacking twenty five minutes to the two. 
+title=Minutes in the hour in progress
+body=в пятнадцать минут второго — at 1:15. The second hour runs from one up to two, so fifteen minutes into it is quarter past one. Match this expression to the request for minutes into the hour in progress. The next-hour ordinal is genitive. This convention is used up to the half hour.
 dominantAction=Continue
 references=ref-u17-attribution
 items=
@@ -1912,28 +1936,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u17-st-guided-clock-productive-1`
-
-- Objectives: obj-u17-clock-productive
-- Sessions: u17-s-clock-productive
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d0a964c03e6cbfe480f3c7c95ce71ed8e9de1cfa986be1658f97793602d80c67
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u17-g-clock-productive-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u17-st-rem-clock-productive
-
 ### STEP `u17-st-teach-clock-productive-2`
 
 - Objectives: obj-u17-clock-productive
@@ -1942,11 +1944,11 @@ remediationStepId=u17-st-rem-clock-productive
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 229a2a22f360f9943644feb6bf1de36d7cc061e6b419a635040f6150ae284d15
+- Content hash: f62ce3feb01c4151009c1c6f4e2bec2a5964eebe881a4da82bc9b723ad7a3447
 
 kind=TEACH
-title=Admitted instruction
-body=In Russian we can state the number of minutes into the hour which is in progress.
+title=Minutes remaining after the half hour
+body=без двадцати пяти два — at 1:35. Twenty-five minutes remain before two. Subtract the remaining quantity from the upcoming hour. The without construction uses genitive forms for the remaining minutes and differs from counting elapsed minutes.
 dominantAction=Continue
 references=ref-u17-attribution
 items=
@@ -1964,11 +1966,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8d520b86cefb15f6196780cf5cf72982503cbb3123e28139a0e5dbb1153eea8b
+- Content hash: cd685c7b45b33e017905db5cd68eb9d14231ee5b4b353b405fb6fc26cbe80f41
 
 kind=TEACH
-title=Admitted lines
-body=в двенадцать часов десять минут — at twelve hours ten minutes. 
+title=Read the dial numbers
+body=в двенадцать часов десять минут — at 12:10. This construction states elapsed whole hours and then minutes, instead of naming an ordinal hour in progress. Reading the dial is always available; context or a 24-hour reading can distinguish AM and PM. These selections identify existing construction types and do not demonstrate independently producing a new clock expression.
 dominantAction=Continue
 references=ref-u17-attribution
 items=
@@ -1978,6 +1980,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u17-st-guided-clock-productive-1`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-clock-productive
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 64d058ef8e9921f62fe15bf19bbcfcecd9281d5501d75b56be42fa67e799f8b3
+
+kind=GUIDED
+title=Guided practice
+body=Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+dominantAction=Continue
+references=
+items=u17-g-clock-productive-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u17-st-rem-clock-productive
+
 ### STEP `u17-st-rem-clock-productive`
 
 - Objectives: obj-u17-clock-productive
@@ -1986,15 +2010,19 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b9af0bb25e617daa8999bc45217ed9b5969f4254a5d8574a83651fc7e8a8e08b
+- Content hash: 3d1ee6022d5f677b7bbe57f6768d642880fc3f538daf85555aa4b679d6365804
 
 kind=REMEDIATE
-title=Remediation
-body=In Russian we can state the number of minutes into the hour which is in progress.
+title=Review ages and calendar names
+body=в пятнадцать минут второго — at 1:15. The second hour runs from one up to two, so fifteen minutes into it is quarter past one. Match this expression to the request for minutes into the hour in progress. The next-hour ordinal is genitive. This convention is used up to the half hour.
+
+без двадцати пяти два — at 1:35. Twenty-five minutes remain before two. Subtract the remaining quantity from the upcoming hour. The without construction uses genitive forms for the remaining minutes and differs from counting elapsed minutes.
+
+в двенадцать часов десять минут — at 12:10. This construction states elapsed whole hours and then minutes, instead of naming an ordinal hour in progress. Reading the dial is always available; context or a 24-hour reading can distinguish AM and PM. These selections identify existing construction types and do not demonstrate independently producing a new clock expression.
 dominantAction=Continue
 references=
 items=
-examples=ex-u17-clock-productive-0,ex-u17-clock-productive-1
+examples=ex-u17-clock-productive-0,ex-u17-clock-productive-1,ex-u17-clock-productive-2
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -2008,11 +2036,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 9661e4d77dfda7359f88d814f088d23851f04bd328c15832943d7fe1f500d231
+- Content hash: d3ec989aaa66bfb2fb581e6367208eb5d07bcad35df44a2bbf32c3c235e82c0f
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
 dominantAction=Continue
 references=
 items=u17-i-clock-productive-1,u17-i-clock-productive-2
@@ -2030,12 +2058,12 @@ remediationStepId=u17-st-rem-clock-productive
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 88df9662af8fa3b30d1bb30ec0debd9d963fb195d6e3d59c9c137155619af170
+- Content hash: e64d1e55fc1de247327118a704b6864f7289e90f0eaa2796eb34752015090e24
 
-title=Choose the admitted date relation beside the shown form
+title=Interpret retained dates and year abbreviation
 estimatedMinutes=12
 objectives=obj-u17-calendar-date
-steps=u17-st-teach-calendar-date-1,u17-st-guided-calendar-date-1,u17-st-teach-calendar-date-2,u17-st-rem-calendar-date,u17-st-check-calendar-date
+steps=u17-st-teach-calendar-date-1,u17-st-teach-calendar-date-2,u17-st-guided-calendar-date-1,u17-st-rem-calendar-date,u17-st-check-calendar-date
 
 ### STEP `u17-st-teach-calendar-date-1`
 
@@ -2045,15 +2073,37 @@ steps=u17-st-teach-calendar-date-1,u17-st-guided-calendar-date-1,u17-st-teach-ca
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3f81974b1bfe5b743d7fccab1437f6dbbc91bc30bde011bbcf32092568c40fbe
+- Content hash: 7253a58fee043cc3ec4575087ed6c7a922dad12335ba85738437c6b92a9d60c7
 
 kind=TEACH
-title=Admitted lines
-body=Двадцать восьмое августа — the month in genitive case. 28 августа 2017 г. — day month year. 
+title=Read every part of the date
+body=28 августа 2017 г. gives day month year: 28 August 2017. The abbreviation г. marks the year after its number. 15 мая 1996 г. means 15 May 1996. To translate the whole date, include the day, month and year; identifying only the month or abbreviation leaves part of the meaning out.
 dominantAction=Continue
 references=ref-u17-attribution
 items=
 examples=ex-u17-calendar-date-0,ex-u17-calendar-date-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u17-st-teach-calendar-date-2`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-calendar-date
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 0b22becc2ae57a8b437265b757c7872329f28bcec3c52b73c1a7c05ee91281eb
+
+kind=TEACH
+title=Month case and date naming
+body=Двадцать восьмое августа names the twenty-eighth of August. This standalone date naming uses a neuter ordinal for the day and a genitive month name. A sentence saying when something happens can require a different ordinal case; these checks do not assess that change. The month form in a date differs from its dictionary form. Numeric day-month-year order and the year abbreviation are separate from speaking a complete year in words.
+dominantAction=Continue
+references=ref-u17-attribution
+items=
+examples=
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -2067,11 +2117,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 87473b220889417afb25ebfc938e8eb49fe2d580e1dccf325309f3b0f1277cab
+- Content hash: 1d4ba4a1a093f30d3e0a394408d664aa7c93d0891e61a399e9646786ffddf4a7
 
 kind=GUIDED
 title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
+body=Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
 dominantAction=Continue
 references=
 items=u17-g-calendar-date-0
@@ -2081,30 +2131,6 @@ bookDirection=
 companionDirection=
 remediationStepId=u17-st-rem-calendar-date
 
-### STEP `u17-st-teach-calendar-date-2`
-
-- Objectives: obj-u17-calendar-date
-- Sessions: u17-s-calendar-date
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d74b8efed2fc0cbb8d130389f856f2a8bb728fac5262d2c331c5fc659791a685
-
-kind=TEACH
-title=Admitted instruction
-body=In Russia, dates are usually written in "day month year" (DMY) order. This order is used in both the all-numeric date (for example "28.08.17") and the expanded form (for example "28 августа 2017 г."); the trailing "г" is short for "года" (goda, "of the year"). Coincidentally, in Polish the word for year is "rok", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example "28.08.2017") is more usual.
-
-When saying the date, it is usually pronounced using the ordinal number of the day first (in neutral grammatical gender), then the month in genitive case (for example "Двадцать восьмое августа").
-dominantAction=Continue
-references=ref-u17-attribution
-items=
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
 ### STEP `u17-st-rem-calendar-date`
 
 - Objectives: obj-u17-calendar-date
@@ -2113,13 +2139,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f79f14bcd37d928f52220d8ffc971fcfa28dde4eebc31d7f610ecebbd4928f4f
+- Content hash: 5c05b206f46cf352dad77034212a69ddc238c39a95cc264555ab8341e9f766ca
 
 kind=REMEDIATE
-title=Remediation
-body=In Russia, dates are usually written in "day month year" (DMY) order. This order is used in both the all-numeric date (for example "28.08.17") and the expanded form (for example "28 августа 2017 г."); the trailing "г" is short for "года" (goda, "of the year"). Coincidentally, in Polish the word for year is "rok", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example "28.08.2017") is more usual.
+title=Review ages and calendar names
+body=28 августа 2017 г. gives day month year: 28 August 2017. The abbreviation г. marks the year after its number. 15 мая 1996 г. means 15 May 1996. To translate the whole date, include the day, month and year; identifying only the month or abbreviation leaves part of the meaning out.
 
-When saying the date, it is usually pronounced using the ordinal number of the day first (in neutral grammatical gender), then the month in genitive case (for example "Двадцать восьмое августа").
+Двадцать восьмое августа names the twenty-eighth of August. This standalone date naming uses a neuter ordinal for the day and a genitive month name. A sentence saying when something happens can require a different ordinal case; these checks do not assess that change. The month form in a date differs from its dictionary form. Numeric day-month-year order and the year abbreviation are separate from speaking a complete year in words.
 dominantAction=Continue
 references=
 items=
@@ -2137,11 +2163,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 20e390a98ca9ab413e20da7745be21b5ab456607ee9c66582cec7ce4ceee1663
+- Content hash: e026662ecd110c5ac12f41ac46b287b15eb76b3c59e4d1d44f55327c0f840856
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
 dominantAction=Continue
 references=
 items=u17-i-calendar-date-1,u17-i-calendar-date-2
@@ -3160,7 +3186,7 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 7d313658efd41a598405b2034e37a8aa31ed3ab1a495499054a8c98544a74920
+- Content hash: 31086dc1b263ae52fa2a0a2cbbed1480c2024d9ab0131cf5a1d1885e020023c9
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3168,11 +3194,11 @@ prompt=Which natural English states the age in the shown phrase?
 promptLetter=мне двадцать лет
 options=I am 20 years old | I own 20 summers | 20 people asked me
 answer=I am 20 years old
-feedback=мне двадцать лет means I am 20 years old. A labeled literal gloss is a different question.
+feedback=мне двадцать лет states I am 20 years old. The person whose age is given is in the dative case; the present-time Russian construction has no expressed verb.
 objectiveId=obj-u17-age
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | I own 20 summers invents possession that the age construction does not state. | 20 people asked me invents a different predicate.
+distractorRationales= | I own 20 summers invents ownership; the shown construction gives an age. | 20 people asked me invents people performing an action; the shown construction gives an age.
 testedFeature=AGE_NATURAL_ENGLISH
 evidenceMode=STATED_APPLICATION
 contrastSetId=u17-age-0
@@ -3180,8 +3206,9 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ca-17-503
 distractorSourceIds= | prov-ca-17-507 | prov-ca-17-508
-distractorDifference= | I own 20 summers invents possession that the age construction does not state. | 20 people asked me invents a different predicate.
+distractorDifference= | I own 20 summers invents ownership; the shown construction gives an age. | 20 people asked me invents people performing an action; the shown construction gives an age.
 whyAnswerDemonstratesObjective=The age construction мне двадцать лет is natural English I am 20 years old.
+мне двадцать лет states I am 20 years old. The person whose age is given is in the dative case; the present-time Russian construction has no expressed verb.
 contrastMembers=I am 20 years old | I own 20 summers | 20 people asked me
 relationKind=STATED_APPLICATION
 relationParticipantIds=prov-ca-17-502 | prov-ca-17-503 | prov-ca-17-507 | prov-ca-17-508
@@ -3195,7 +3222,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: be892a890a82c95d6a42422ace9c9478975e1d5c156f054f49511eb1054bb86a
+- Content hash: 6e5dbc9f295db4232fdd1abbb1db17faf4ef86794e6a8ae997aee7b974bcfba7
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3203,11 +3230,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=понедельник
 options=Monday | Tuesday | Wednesday
 answer=Monday
-feedback=понедельник || noun || Monday
+feedback=понедельник means Monday. This names a day of the week; choose the matching English name.
 objectiveId=obj-u17-weekdays
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | вторник || noun || Tuesday | среда || noun || Wednesday
+distractorRationales= | Tuesday names a different day of the week and does not match the shown word. | Wednesday names a different day of the week and does not match the shown word.
 testedFeature=WEEKDAY_MONDAY
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u17-weekdays-0
@@ -3215,8 +3242,9 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u17-weekdays-0-en
 distractorSourceIds= | prov-ex-u17-weekdays-1-en | prov-ex-u17-weekdays-2-en
-distractorDifference= | вторник || noun || Tuesday | среда || noun || Wednesday
+distractorDifference= | Tuesday names a different day of the week and does not match the shown word. | Wednesday names a different day of the week and does not match the shown word.
 whyAnswerDemonstratesObjective=понедельник || noun || Monday
+понедельник means Monday. This names a day of the week; choose the matching English name.
 contrastMembers=Monday | Tuesday | Wednesday
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u17-weekdays-0-ru | prov-ex-u17-weekdays-0-en | prov-ex-u17-weekdays-1-en | prov-ex-u17-weekdays-2-en
@@ -3230,7 +3258,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 7004eedf2c06546b6b89f4d5314aa39a0b29de39b062bf232872b842479204a5
+- Content hash: 622817519cd0d4e3ee21bf34696d9dca84dc1bae3aebe04a0105f532fa8aef2e
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3238,11 +3266,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=Январь
 options=January | February | March
 answer=January
-feedback=Январь || January
+feedback=Январь means January. This names a month; choose the matching English name.
 objectiveId=obj-u17-months
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Февраль || February | Март || March
+distractorRationales= | February names a different month and does not match the shown word. | March names a different month and does not match the shown word.
 testedFeature=MONTH_JANUARY
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u17-months-0
@@ -3250,8 +3278,9 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u17-months-0-en
 distractorSourceIds= | prov-ex-u17-months-1-en | prov-ex-u17-months-2-en
-distractorDifference= | Февраль || February | Март || March
+distractorDifference= | February names a different month and does not match the shown word. | March names a different month and does not match the shown word.
 whyAnswerDemonstratesObjective=Январь || January
+Январь means January. This names a month; choose the matching English name.
 contrastMembers=January | February | March
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u17-months-0-ru | prov-ex-u17-months-0-en | prov-ex-u17-months-1-en | prov-ex-u17-months-2-en
@@ -3265,7 +3294,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: ba863649740b9f7ad1402903ecdb4feacd89b2f93028022ac6cc6e121c996773
+- Content hash: ef04040d1cb42a6daa446c6c82bf1b429c26baadeb0e8f3498f7ce49b3d3cb13
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3273,11 +3302,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=Который час?
 options=What time is it? | Which book do you want?
 answer=What time is it?
-feedback=The frozen source pairs the shown form "Который час?" with the admitted gloss "What time is it?".
+feedback=Который час? corresponds to What time is it?. The complete question asks for the current clock time.
 objectiveId=obj-u17-clock
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "Которую книгу вы хотите?" with the admitted gloss "Which book do you want?".
+distractorRationales= | Which book do you want? is a different meaning or construction and does not match the requested reading of the shown form.
 testedFeature=CLOCK_QUESTION
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u17-clock-0
@@ -3285,8 +3314,9 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u17-clock-0-en
 distractorSourceIds= | prov-u17-clock-x-0
-distractorDifference= | The frozen source pairs the shown form "Которую книгу вы хотите?" with the admitted gloss "Which book do you want?".
+distractorDifference= | Which book do you want? is a different meaning or construction and does not match the requested reading of the shown form.
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Который час?" with the admitted gloss "What time is it?".
+Который час? corresponds to What time is it?. The complete question asks for the current clock time.
 contrastMembers=What time is it? | Which book do you want?
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u17-clock-0-ru | prov-ex-u17-clock-0-en | prov-u17-clock-x-0
@@ -3300,7 +3330,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-date-time-country-1366690592
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 910318daea071082ffc2cffbf9d76635ffc7c497a23a6084eb42e5e1071b9117
+- Content hash: dc29510e522eb32345aee4e5013d0967c62d9d02b8cb5fac6e4ea26e9a097239
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3308,11 +3338,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=четверть восьмого
 options=7:15 | 7:30 | 7:45
 answer=7:15
-feedback=The frozen source pairs the shown form "четверть восьмого" with the admitted gloss "7:15" ("quarter of the eighth hour").
+feedback=четверть восьмого corresponds to 7:15. Interpret the whole expression as elapsed or remaining parts of the next hour, rather than copying its hour numeral.
 objectiveId=obj-u17-clock-answers
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "полвосьмого" with the admitted gloss "7:30" ("half of eight"). | The frozen source pairs the shown form "без четверти восемь" with the admitted gloss "7:45" ("eight without a quarter").
+distractorRationales= | 7:30 is a different meaning or construction and does not match the requested reading of the shown form. | 7:45 is a different meaning or construction and does not match the requested reading of the shown form.
 testedFeature=CLOCK_QUARTER
 evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u17-clock-answers-0
@@ -3320,8 +3350,9 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u17-clock-answers-0-en
 distractorSourceIds= | prov-ex-u17-clock-answers-1-en | prov-ex-u17-clock-answers-2-en
-distractorDifference= | The frozen source pairs the shown form "полвосьмого" with the admitted gloss "7:30" ("half of eight"). | The frozen source pairs the shown form "без четверти восемь" with the admitted gloss "7:45" ("eight without a quarter").
+distractorDifference= | 7:30 is a different meaning or construction and does not match the requested reading of the shown form. | 7:45 is a different meaning or construction and does not match the requested reading of the shown form.
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "четверть восьмого" with the admitted gloss "7:15" ("quarter of the eighth hour").
+четверть восьмого corresponds to 7:15. Interpret the whole expression as elapsed or remaining parts of the next hour, rather than copying its hour numeral.
 contrastMembers=7:15 | 7:30 | 7:45
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u17-clock-answers-0-ru | prov-ex-u17-clock-answers-0-en | prov-ex-u17-clock-answers-1-en | prov-ex-u17-clock-answers-2-en
@@ -3335,7 +3366,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-pressbooks-diverse-russian-traditions-grammar
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: a33425d67d8fa8976b1b876f028d32b2b7dfdee6a13a50ff715e732b11d2edd3
+- Content hash: eb87e2cc970e50ba9b8f78830e42f3a112342055a5fe3265cda8379dcb880711
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3343,11 +3374,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=Концерт начинается в шесть часов.
 options=18.00 | 7.15 – quarter of the eighth hour | 4.30 – half of the fifth hour
 answer=18.00
-feedback=The frozen source pairs the shown form "Концерт начинается в шесть часов." with the admitted gloss "18.00".
+feedback=Концерт начинается в шесть часов. corresponds to 18.00. Interpret the complete event-time expression using the retained source reading; a bare hour alone does not specify AM or PM.
 objectiveId=obj-u17-quarter-hour
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "Я приду в четверть восьмого." with the admitted gloss "7.15 – quarter of the eighth hour". | The frozen source pairs the shown form "Наш рейс уезжает в половине пятого." with the admitted gloss "4.30 – half of the fifth hour".
+distractorRationales= | 7.15 – quarter of the eighth hour is a different meaning or construction and does not match the requested reading of the shown form. | 4.30 – half of the fifth hour is a different meaning or construction and does not match the requested reading of the shown form.
 testedFeature=QUARTER_00
 evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u17-quarter-hour-0
@@ -3355,8 +3386,9 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u17-quarter-hour-0-en
 distractorSourceIds= | prov-ex-u17-quarter-hour-1-en | prov-ex-u17-quarter-hour-2-en
-distractorDifference= | The frozen source pairs the shown form "Я приду в четверть восьмого." with the admitted gloss "7.15 – quarter of the eighth hour". | The frozen source pairs the shown form "Наш рейс уезжает в половине пятого." with the admitted gloss "4.30 – half of the fifth hour".
+distractorDifference= | 7.15 – quarter of the eighth hour is a different meaning or construction and does not match the requested reading of the shown form. | 4.30 – half of the fifth hour is a different meaning or construction and does not match the requested reading of the shown form.
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Концерт начинается в шесть часов." with the admitted gloss "18.00".
+Концерт начинается в шесть часов. corresponds to 18.00. Interpret the complete event-time expression using the retained source reading; a bare hour alone does not specify AM or PM.
 contrastMembers=18.00 | 7.15 – quarter of the eighth hour | 4.30 – half of the fifth hour
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u17-quarter-hour-0-ru | prov-ex-u17-quarter-hour-0-en | prov-ex-u17-quarter-hour-1-en | prov-ex-u17-quarter-hour-2-en
@@ -3370,7 +3402,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-readyrussian-grammar20
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 477b92737f9936f112fb96abf105cd0b88ec1a6f778521ed67dd816efd84ccae
+- Content hash: d9580323f607ffe3140d29333132e98731d0a012134385b28bbef0722b3173ee
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3378,11 +3410,11 @@ prompt=Which admitted expression states the minutes into the hour in progress?
 promptLetter=In Russian we can state the number of minutes into the hour which is in progress.
 options=в пятнадцать минут второго | в час пятнадцать минут
 answer=в пятнадцать минут второго
-feedback=The frozen source pairs the shown form "в пятнадцать минут второго" with the admitted gloss "at the fifteenth minute of the second [hour]". The shown rule is "In Russian we can state the number of minutes into the hour which is in progress." That states the minutes into the hour in progress.
+feedback=In Russian we can state the number of minutes into the hour which is in progress. corresponds to в пятнадцать минут второго. Select the requested construction type: elapsed minutes in the hour in progress, minutes remaining, or reading the dial numbers.
 objectiveId=obj-u17-clock-productive
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "в час пятнадцать минут" with the admitted gloss "at [one] hour fifteen minutes". That reads the numbers off the dial.
+distractorRationales= | в час пятнадцать минут is a different meaning or construction and does not match the requested reading of the shown form.
 testedFeature=CLOCK_MINUTES_INTO_HOUR
 evidenceMode=STATED_APPLICATION
 contrastSetId=u17-clock-productive-0
@@ -3390,8 +3422,9 @@ cueLanguage=rule
 independent=false
 answerSourceIds=prov-ex-u17-clock-productive-0-ru
 distractorSourceIds= | prov-u17-clock-productive-x-3
-distractorDifference= | The frozen source pairs the shown form "в час пятнадцать минут" with the admitted gloss "at [one] hour fifteen minutes". That reads the numbers off the dial.
+distractorDifference= | в час пятнадцать минут is a different meaning or construction and does not match the requested reading of the shown form.
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "в пятнадцать минут второго" with the admitted gloss "at the fifteenth minute of the second [hour]". The shown rule is "In Russian we can state the number of minutes into the hour which is in progress." That states the minutes into the hour in progress.
+In Russian we can state the number of minutes into the hour which is in progress. corresponds to в пятнадцать минут второго. Select the requested construction type: elapsed minutes in the hour in progress, minutes remaining, or reading the dial numbers.
 contrastMembers=в пятнадцать минут второго | в час пятнадцать минут
 relationKind=STATED_APPLICATION
 relationParticipantIds=prov-u17-clock-productive-rem | prov-ex-u17-clock-productive-0-ru | prov-u17-clock-productive-x-3
@@ -3405,7 +3438,7 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 98378a8e788efc480dd58f28fd3397feb370626761cf23db4b66f095c5cb6590
+- Content hash: 265f4a9d2564d0ced7ce06f1d19b8e79f119be3d4d6efb7893edd1cd122b3f34
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3413,11 +3446,11 @@ prompt=Choose the English description. What does the abbreviation г. contribute
 promptLetter=г.
 options=year, the abbreviation | the month name | the day number
 answer=year, the abbreviation
-feedback=г. is year, the abbreviation used after the year number in a date.
+feedback=г. corresponds to year, the abbreviation. Read the relevant date components and distinguish the whole date from an individual component.
 objectiveId=obj-u17-calendar-date
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | the month name is a separate word in the date, not the abbreviation г. | the day number is a separate part of the date, not the abbreviation г.
+distractorRationales= | the month name is a different meaning or construction and does not match the requested reading of the shown form. | the day number is a different meaning or construction and does not match the requested reading of the shown form.
 testedFeature=DATE_YEAR_ABBREVIATION
 evidenceMode=STATED_APPLICATION
 contrastSetId=u17-calendar-date-0
@@ -3425,8 +3458,9 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ca-repair-17-10753
 distractorSourceIds= | prov-ca-repair-17-10756 | prov-ca-repair-17-10757
-distractorDifference= | the month name is a separate word in the date, not the abbreviation г. | the day number is a separate part of the date, not the abbreviation г.
+distractorDifference= | the month name is a different meaning or construction and does not match the requested reading of the shown form. | the day number is a different meaning or construction and does not match the requested reading of the shown form.
 whyAnswerDemonstratesObjective=г. is year, the abbreviation used after the year number in a date.
+г. corresponds to year, the abbreviation. Read the relevant date components and distinguish the whole date from an individual component.
 contrastMembers=year, the abbreviation | the month name | the day number
 relationKind=STATED_APPLICATION
 relationParticipantIds=prov-ca-repair-17-10752 | prov-ca-repair-17-10753 | prov-ca-repair-17-10756 | prov-ca-repair-17-10757
@@ -3720,7 +3754,7 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 05d70f8bfb1c9a12e78aa3da3d08974a0957e9e91036b2d771571b6a494e8315
+- Content hash: b5848f6b8230e227e00df4cb8b0e5810eca603ab8d13895cd94d6cc76ea96b7d
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3728,11 +3762,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=мне двадцать лет
 options=I am 20 (years old) | age statements
 answer=I am 20 (years old)
-feedback=The frozen source pairs the shown form "мне двадцать лет" with the admitted gloss "I am 20 (years old)".
+feedback=мне двадцать лет means I am 20 (years old). The dative person and the number of years together state the age.
 objectiveId=obj-u17-age
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The heading "age statements" labels the section. It is not the gloss of the shown form.
+distractorRationales= | age statements is a section label rather than the meaning of this phrase.
 testedFeature=AGE_HEADING
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u17-age-1
@@ -3740,8 +3774,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u17-age-0-en
 distractorSourceIds= | prov-u17-age-x-1
-distractorDifference= | The heading "age statements" labels the section. It is not the gloss of the shown form.
+distractorDifference= | age statements is a section label rather than the meaning of this phrase.
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "мне двадцать лет" with the admitted gloss "I am 20 (years old)".
+мне двадцать лет means I am 20 (years old). The dative person and the number of years together state the age.
 contrastMembers=I am 20 (years old) | age statements
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u17-age-0-ru | prov-ex-u17-age-0-en | prov-u17-age-x-1
@@ -3755,7 +3790,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 2926b304188b366be94a776efeba179e38b9b973b0ad8dd4151869264d7f4c2f
+- Content hash: 11ac93d43bbc3a97116048d23a5495e163a73a8945e420406635d0c2af5f48ee
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3763,11 +3798,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=двадцать лет
 options=20 years | age statements
 answer=20 years
-feedback=The frozen source pairs the shown form "двадцать лет" with the admitted gloss "20 years".
+feedback=двадцать лет means 20 years. This quantity phrase does not by itself identify whose age is meant.
 objectiveId=obj-u17-age
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The heading "age statements" labels the section. It is not the gloss of the shown form.
+distractorRationales= | age statements is a section label rather than the meaning of this phrase.
 testedFeature=AGE_YEARS
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u17-age-2
@@ -3775,8 +3810,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u17-age-1-en
 distractorSourceIds= | prov-u17-age-x-1
-distractorDifference= | The heading "age statements" labels the section. It is not the gloss of the shown form.
+distractorDifference= | age statements is a section label rather than the meaning of this phrase.
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "двадцать лет" with the admitted gloss "20 years".
+двадцать лет means 20 years. This quantity phrase does not by itself identify whose age is meant.
 contrastMembers=20 years | age statements
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u17-age-1-ru | prov-ex-u17-age-1-en | prov-u17-age-x-1
@@ -3790,7 +3826,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: bfca5cc89c457b95b2b116f4cf847800a234c986ee26d83510d3ac58a8c5562c
+- Content hash: 80924752e058e51441c28697f3b46594741fc320159815b7edfbb33598815dc1
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3798,11 +3834,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=четверг
 options=Thursday | Friday | Saturday
 answer=Thursday
-feedback=четверг || noun || Thursday
+feedback=четверг means Thursday. This names a day of the week; choose the matching English name.
 objectiveId=obj-u17-weekdays
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | пятница || noun || Friday | суббота || noun || Saturday
+distractorRationales= | Friday names a different day of the week and does not match the shown word. | Saturday names a different day of the week and does not match the shown word.
 testedFeature=WEEKDAY_THURSDAY
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u17-weekdays-1
@@ -3810,8 +3846,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u17-weekdays-3-en
 distractorSourceIds= | prov-u17-weekdays-x-3 | prov-u17-weekdays-x-4
-distractorDifference= | пятница || noun || Friday | суббота || noun || Saturday
+distractorDifference= | Friday names a different day of the week and does not match the shown word. | Saturday names a different day of the week and does not match the shown word.
 whyAnswerDemonstratesObjective=четверг || noun || Thursday
+четверг means Thursday. This names a day of the week; choose the matching English name.
 contrastMembers=Thursday | Friday | Saturday
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u17-weekdays-3-ru | prov-ex-u17-weekdays-3-en | prov-u17-weekdays-x-3 | prov-u17-weekdays-x-4
@@ -3825,7 +3862,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 8fec033b4fa1c3b8d03999b43e7d033ebb6dd1197f14d2d6e6a3eed347ea03db
+- Content hash: 637a0e8fc70d77eae606084d626b151287df2e00cd9fe80fa3b079e0b8389d39
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3833,11 +3870,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=воскресенье
 options=Sunday | Monday | Saturday
 answer=Sunday
-feedback=воскресенье || noun || Sunday
+feedback=воскресенье means Sunday. This names a day of the week; choose the matching English name.
 objectiveId=obj-u17-weekdays
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | понедельник || noun || Monday | суббота || noun || Saturday
+distractorRationales= | Monday names a different day of the week and does not match the shown word. | Saturday names a different day of the week and does not match the shown word.
 testedFeature=WEEKDAY_SUNDAY
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u17-weekdays-2
@@ -3845,8 +3882,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-u17-weekdays-x-5
 distractorSourceIds= | prov-ex-u17-weekdays-0-en | prov-u17-weekdays-x-4
-distractorDifference= | понедельник || noun || Monday | суббота || noun || Saturday
+distractorDifference= | Monday names a different day of the week and does not match the shown word. | Saturday names a different day of the week and does not match the shown word.
 whyAnswerDemonstratesObjective=воскресенье || noun || Sunday
+воскресенье means Sunday. This names a day of the week; choose the matching English name.
 contrastMembers=Sunday | Monday | Saturday
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-u17-weekdays-x-2 | prov-u17-weekdays-x-5 | prov-ex-u17-weekdays-0-en | prov-u17-weekdays-x-4
@@ -3860,7 +3898,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 55cd00493b30c9ed6bbb73a6cc39e50c4439bbbb92fa920be79f635325ce8d57
+- Content hash: d6a6e54d2123c044fb21ac369a3d9b478ba92dc9d6390861209dfe966b5b2a0e
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3868,11 +3906,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=Июнь
 options=June | July | August
 answer=June
-feedback=Июнь || June
+feedback=Июнь means June. This names a month; choose the matching English name.
 objectiveId=obj-u17-months
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Июль || July | Август || August
+distractorRationales= | July names a different month and does not match the shown word. | August names a different month and does not match the shown word.
 testedFeature=MONTH_JUNE
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u17-months-1
@@ -3880,8 +3918,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-u17-months-x-4
 distractorSourceIds= | prov-u17-months-x-5 | prov-u17-months-x-6
-distractorDifference= | Июль || July | Август || August
+distractorDifference= | July names a different month and does not match the shown word. | August names a different month and does not match the shown word.
 whyAnswerDemonstratesObjective=Июнь || June
+Июнь means June. This names a month; choose the matching English name.
 contrastMembers=June | July | August
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-u17-months-x-0 | prov-u17-months-x-4 | prov-u17-months-x-5 | prov-u17-months-x-6
@@ -3895,7 +3934,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 003c81e359a5335e7578f569de738482fdd25e7fad78f469acb0ad476e969a6b
+- Content hash: 85c64d6057cd4a2ce328e0df1b6154bcd2d33301359d94d35d49c9eaf9dc4319
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3903,11 +3942,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=Декабрь
 options=December | January | April
 answer=December
-feedback=Декабрь || December
+feedback=Декабрь means December. This names a month; choose the matching English name.
 objectiveId=obj-u17-months
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Январь || January | Апрель || April
+distractorRationales= | January names a different month and does not match the shown word. | April names a different month and does not match the shown word.
 testedFeature=MONTH_DECEMBER
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u17-months-2
@@ -3915,8 +3954,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-u17-months-x-7
 distractorSourceIds= | prov-ex-u17-months-0-en | prov-ex-u17-months-3-en
-distractorDifference= | Январь || January | Апрель || April
+distractorDifference= | January names a different month and does not match the shown word. | April names a different month and does not match the shown word.
 whyAnswerDemonstratesObjective=Декабрь || December
+Декабрь means December. This names a month; choose the matching English name.
 contrastMembers=December | January | April
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-u17-months-x-3 | prov-u17-months-x-7 | prov-ex-u17-months-0-en | prov-ex-u17-months-3-en
@@ -3930,7 +3970,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: b8b7b10fa6232d836b8a2dd158335bc1145a3e54185f2457c59abace5b883b6e
+- Content hash: 51f1cc99c6175bbd321032672306c8cc179eff17d85561ba6f316042883b9f59
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3938,11 +3978,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=Который час?
 options=What time is it? | Which book do you want?
 answer=What time is it?
-feedback=The frozen source pairs the shown form "Который час?" with the admitted gloss "What time is it?".
+feedback=Который час? corresponds to What time is it?. The complete question asks for the current clock time.
 objectiveId=obj-u17-clock
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "Которую книгу вы хотите?" with the admitted gloss "Which book do you want?".
+distractorRationales= | Which book do you want? is a different meaning or construction and does not match the requested reading of the shown form.
 testedFeature=CLOCK_QUESTION_AGAIN
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u17-clock-1
@@ -3950,8 +3990,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u17-clock-0-en
 distractorSourceIds= | prov-u17-clock-x-0
-distractorDifference= | The frozen source pairs the shown form "Которую книгу вы хотите?" with the admitted gloss "Which book do you want?".
+distractorDifference= | Which book do you want? is a different meaning or construction and does not match the requested reading of the shown form.
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Который час?" with the admitted gloss "What time is it?".
+Который час? corresponds to What time is it?. The complete question asks for the current clock time.
 contrastMembers=What time is it? | Which book do you want?
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u17-clock-0-ru | prov-ex-u17-clock-0-en | prov-u17-clock-x-0
@@ -3965,7 +4006,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 1c5f5649ae036b23589fa3e5de82940305210b28ffb4f7e2ac725864fb048e27
+- Content hash: 686f9827a1fbe144cd7fbd191fcf4c1f12daf6f4485de4c308229994a7371206
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3973,11 +4014,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=Который час?
 options=What time is it? | Which book do you want?
 answer=What time is it?
-feedback=The frozen source pairs the shown form "Который час?" with the admitted gloss "What time is it?".
+feedback=Который час? corresponds to What time is it?. The complete question asks for the current clock time.
 objectiveId=obj-u17-clock
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "Которую книгу вы хотите?" with the admitted gloss "Which book do you want?".
+distractorRationales= | Which book do you want? is a different meaning or construction and does not match the requested reading of the shown form.
 testedFeature=CLOCK_QUESTION_CHECK
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u17-clock-2
@@ -3985,8 +4026,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u17-clock-0-en
 distractorSourceIds= | prov-u17-clock-x-0
-distractorDifference= | The frozen source pairs the shown form "Которую книгу вы хотите?" with the admitted gloss "Which book do you want?".
+distractorDifference= | Which book do you want? is a different meaning or construction and does not match the requested reading of the shown form.
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Который час?" with the admitted gloss "What time is it?".
+Который час? corresponds to What time is it?. The complete question asks for the current clock time.
 contrastMembers=What time is it? | Which book do you want?
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u17-clock-0-ru | prov-ex-u17-clock-0-en | prov-u17-clock-x-0
@@ -4000,7 +4042,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-date-time-country-1366690592
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 8583ca3f9d1b25c58ff5d1b4b2b7da8f880e4e667a1e024e77c5754ff5d103c7
+- Content hash: fb14b44601da244f94ae9381a2d1694f5fb980a77b10c947bbe98d9a46601349
 
 kind=CONTRAST_SELECTION
 language=en
@@ -4008,11 +4050,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=полвосьмого
 options=7:30 | 7:15 | 7:45
 answer=7:30
-feedback=The frozen source pairs the shown form "полвосьмого" with the admitted gloss "7:30" ("half of eight").
+feedback=полвосьмого corresponds to 7:30. Interpret the whole expression as elapsed or remaining parts of the next hour, rather than copying its hour numeral.
 objectiveId=obj-u17-clock-answers
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "четверть восьмого" with the admitted gloss "7:15" ("quarter of the eighth hour"). | The frozen source pairs the shown form "без четверти восемь" with the admitted gloss "7:45" ("eight without a quarter").
+distractorRationales= | 7:15 is a different meaning or construction and does not match the requested reading of the shown form. | 7:45 is a different meaning or construction and does not match the requested reading of the shown form.
 testedFeature=CLOCK_HALF
 evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u17-clock-answers-1
@@ -4020,8 +4062,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u17-clock-answers-1-en
 distractorSourceIds= | prov-ex-u17-clock-answers-0-en | prov-ex-u17-clock-answers-2-en
-distractorDifference= | The frozen source pairs the shown form "четверть восьмого" with the admitted gloss "7:15" ("quarter of the eighth hour"). | The frozen source pairs the shown form "без четверти восемь" with the admitted gloss "7:45" ("eight without a quarter").
+distractorDifference= | 7:15 is a different meaning or construction and does not match the requested reading of the shown form. | 7:45 is a different meaning or construction and does not match the requested reading of the shown form.
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "полвосьмого" with the admitted gloss "7:30" ("half of eight").
+полвосьмого corresponds to 7:30. Interpret the whole expression as elapsed or remaining parts of the next hour, rather than copying its hour numeral.
 contrastMembers=7:30 | 7:15 | 7:45
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u17-clock-answers-1-ru | prov-ex-u17-clock-answers-1-en | prov-ex-u17-clock-answers-0-en | prov-ex-u17-clock-answers-2-en
@@ -4035,7 +4078,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-date-time-country-1366690592
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 81e0d5b6482e43d87a206796f6a72e49d564953e8d9da483a193c44c0980c0e9
+- Content hash: cd18e6b380cba2acf6f227ee0a06aabb5f4287e4bf0089bbb73fccc426d9f7f2
 
 kind=CONTRAST_SELECTION
 language=en
@@ -4043,11 +4086,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=без четверти восемь
 options=7:45 | 7:15 | 7:30
 answer=7:45
-feedback=The frozen source pairs the shown form "без четверти восемь" with the admitted gloss "7:45" ("eight without a quarter").
+feedback=без четверти восемь corresponds to 7:45. Interpret the whole expression as elapsed or remaining parts of the next hour, rather than copying its hour numeral.
 objectiveId=obj-u17-clock-answers
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "четверть восьмого" with the admitted gloss "7:15" ("quarter of the eighth hour"). | The frozen source pairs the shown form "полвосьмого" with the admitted gloss "7:30" ("half of eight").
+distractorRationales= | 7:15 is a different meaning or construction and does not match the requested reading of the shown form. | 7:30 is a different meaning or construction and does not match the requested reading of the shown form.
 testedFeature=CLOCK_WITHOUT
 evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u17-clock-answers-2
@@ -4055,8 +4098,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u17-clock-answers-2-en
 distractorSourceIds= | prov-ex-u17-clock-answers-0-en | prov-ex-u17-clock-answers-1-en
-distractorDifference= | The frozen source pairs the shown form "четверть восьмого" with the admitted gloss "7:15" ("quarter of the eighth hour"). | The frozen source pairs the shown form "полвосьмого" with the admitted gloss "7:30" ("half of eight").
+distractorDifference= | 7:15 is a different meaning or construction and does not match the requested reading of the shown form. | 7:30 is a different meaning or construction and does not match the requested reading of the shown form.
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "без четверти восемь" with the admitted gloss "7:45" ("eight without a quarter").
+без четверти восемь corresponds to 7:45. Interpret the whole expression as elapsed or remaining parts of the next hour, rather than copying its hour numeral.
 contrastMembers=7:45 | 7:15 | 7:30
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u17-clock-answers-2-ru | prov-ex-u17-clock-answers-2-en | prov-ex-u17-clock-answers-0-en | prov-ex-u17-clock-answers-1-en
@@ -4070,7 +4114,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-pressbooks-diverse-russian-traditions-grammar
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: b2366081bec028bc40edad04b42fd481964febcc8010daee7ee329b36df30fb2
+- Content hash: caab82296ec32fa9b19501bc8e27c834457e5da19e09e1da07c42060e2121b8d
 
 kind=CONTRAST_SELECTION
 language=en
@@ -4078,11 +4122,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=Я приду в четверть восьмого.
 options=7.15 – quarter of the eighth hour | 18.00 | 4.30 – half of the fifth hour
 answer=7.15 – quarter of the eighth hour
-feedback=The frozen source pairs the shown form "Я приду в четверть восьмого." with the admitted gloss "7.15 – quarter of the eighth hour".
+feedback=Я приду в четверть восьмого. corresponds to 7.15 – quarter of the eighth hour. Interpret the complete event-time expression using the retained source reading; a bare hour alone does not specify AM or PM.
 objectiveId=obj-u17-quarter-hour
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "Концерт начинается в шесть часов." with the admitted gloss "18.00". | The frozen source pairs the shown form "Наш рейс уезжает в половине пятого." with the admitted gloss "4.30 – half of the fifth hour".
+distractorRationales= | 18.00 is a different meaning or construction and does not match the requested reading of the shown form. | 4.30 – half of the fifth hour is a different meaning or construction and does not match the requested reading of the shown form.
 testedFeature=QUARTER_15
 evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u17-quarter-hour-1
@@ -4090,8 +4134,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u17-quarter-hour-1-en
 distractorSourceIds= | prov-ex-u17-quarter-hour-0-en | prov-ex-u17-quarter-hour-2-en
-distractorDifference= | The frozen source pairs the shown form "Концерт начинается в шесть часов." with the admitted gloss "18.00". | The frozen source pairs the shown form "Наш рейс уезжает в половине пятого." with the admitted gloss "4.30 – half of the fifth hour".
+distractorDifference= | 18.00 is a different meaning or construction and does not match the requested reading of the shown form. | 4.30 – half of the fifth hour is a different meaning or construction and does not match the requested reading of the shown form.
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Я приду в четверть восьмого." with the admitted gloss "7.15 – quarter of the eighth hour".
+Я приду в четверть восьмого. corresponds to 7.15 – quarter of the eighth hour. Interpret the complete event-time expression using the retained source reading; a bare hour alone does not specify AM or PM.
 contrastMembers=7.15 – quarter of the eighth hour | 18.00 | 4.30 – half of the fifth hour
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u17-quarter-hour-1-ru | prov-ex-u17-quarter-hour-1-en | prov-ex-u17-quarter-hour-0-en | prov-ex-u17-quarter-hour-2-en
@@ -4105,7 +4150,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-pressbooks-diverse-russian-traditions-grammar
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: f5e02d9eaeddee6f5f7812acfa573fd1c39e77819c4a0e010eb754cb0dda23ee
+- Content hash: d40bbf12c8565fa8a98e750ae5111bf7769de20db83bf48693e53543b82cd31f
 
 kind=CONTRAST_SELECTION
 language=en
@@ -4113,11 +4158,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=Наш рейс уезжает в половине пятого.
 options=4.30 – half of the fifth hour | 18.00 | 7.15 – quarter of the eighth hour
 answer=4.30 – half of the fifth hour
-feedback=The frozen source pairs the shown form "Наш рейс уезжает в половине пятого." with the admitted gloss "4.30 – half of the fifth hour".
+feedback=Наш рейс уезжает в половине пятого. corresponds to 4.30 – half of the fifth hour. Interpret the complete event-time expression using the retained source reading; a bare hour alone does not specify AM or PM.
 objectiveId=obj-u17-quarter-hour
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "Концерт начинается в шесть часов." with the admitted gloss "18.00". | The frozen source pairs the shown form "Я приду в четверть восьмого." with the admitted gloss "7.15 – quarter of the eighth hour".
+distractorRationales= | 18.00 is a different meaning or construction and does not match the requested reading of the shown form. | 7.15 – quarter of the eighth hour is a different meaning or construction and does not match the requested reading of the shown form.
 testedFeature=QUARTER_30
 evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u17-quarter-hour-2
@@ -4125,8 +4170,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u17-quarter-hour-2-en
 distractorSourceIds= | prov-ex-u17-quarter-hour-0-en | prov-ex-u17-quarter-hour-1-en
-distractorDifference= | The frozen source pairs the shown form "Концерт начинается в шесть часов." with the admitted gloss "18.00". | The frozen source pairs the shown form "Я приду в четверть восьмого." with the admitted gloss "7.15 – quarter of the eighth hour".
+distractorDifference= | 18.00 is a different meaning or construction and does not match the requested reading of the shown form. | 7.15 – quarter of the eighth hour is a different meaning or construction and does not match the requested reading of the shown form.
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Наш рейс уезжает в половине пятого." with the admitted gloss "4.30 – half of the fifth hour".
+Наш рейс уезжает в половине пятого. corresponds to 4.30 – half of the fifth hour. Interpret the complete event-time expression using the retained source reading; a bare hour alone does not specify AM or PM.
 contrastMembers=4.30 – half of the fifth hour | 18.00 | 7.15 – quarter of the eighth hour
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u17-quarter-hour-2-ru | prov-ex-u17-quarter-hour-2-en | prov-ex-u17-quarter-hour-0-en | prov-ex-u17-quarter-hour-1-en
@@ -4140,7 +4186,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-pressbooks-diverse-russian-traditions-grammar
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 97b6bb9dbaf4b93b32f17d3f1caadda07b6dab9c4eb06ec7ad7e7943c868549f
+- Content hash: 648d84c8d7d27856e853dfaa74d06a48efb9e9525b4ea6e7617a777e1dcef7c6
 
 kind=CONTRAST_SELECTION
 language=en
@@ -4148,11 +4194,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=Передача начинается без четверти три.
 options=2.45 – 3 without a quarter | 18.00 | 7.15 – quarter of the eighth hour
 answer=2.45 – 3 without a quarter
-feedback=The frozen source pairs the shown form "Передача начинается без четверти три." with the admitted gloss "2.45 – 3 without a quarter".
+feedback=Передача начинается без четверти три. corresponds to 2.45 – 3 without a quarter. Interpret the complete event-time expression using the retained source reading; a bare hour alone does not specify AM or PM.
 objectiveId=obj-u17-quarter-hour
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "Концерт начинается в шесть часов." with the admitted gloss "18.00". | The frozen source pairs the shown form "Я приду в четверть восьмого." with the admitted gloss "7.15 – quarter of the eighth hour".
+distractorRationales= | 18.00 is a different meaning or construction and does not match the requested reading of the shown form. | 7.15 – quarter of the eighth hour is a different meaning or construction and does not match the requested reading of the shown form.
 testedFeature=QUARTER_45
 evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u17-quarter-hour-3
@@ -4160,8 +4206,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u17-quarter-hour-3-en
 distractorSourceIds= | prov-ex-u17-quarter-hour-0-en | prov-ex-u17-quarter-hour-1-en
-distractorDifference= | The frozen source pairs the shown form "Концерт начинается в шесть часов." with the admitted gloss "18.00". | The frozen source pairs the shown form "Я приду в четверть восьмого." with the admitted gloss "7.15 – quarter of the eighth hour".
+distractorDifference= | 18.00 is a different meaning or construction and does not match the requested reading of the shown form. | 7.15 – quarter of the eighth hour is a different meaning or construction and does not match the requested reading of the shown form.
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Передача начинается без четверти три." with the admitted gloss "2.45 – 3 without a quarter".
+Передача начинается без четверти три. corresponds to 2.45 – 3 without a quarter. Interpret the complete event-time expression using the retained source reading; a bare hour alone does not specify AM or PM.
 contrastMembers=2.45 – 3 without a quarter | 18.00 | 7.15 – quarter of the eighth hour
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u17-quarter-hour-3-ru | prov-ex-u17-quarter-hour-3-en | prov-ex-u17-quarter-hour-0-en | prov-ex-u17-quarter-hour-1-en
@@ -4175,7 +4222,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-readyrussian-grammar20
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 44456e1f6d31ddd33a2f209909884592d7138dd93279794c4fd434aa739906df
+- Content hash: eefa9a38844b8d5edf5d0f92fba3042e40b4ffdc1db714f0a9ab7b4a5424f21a
 
 kind=CONTRAST_SELECTION
 language=en
@@ -4183,11 +4230,11 @@ prompt=Which admitted expression states the minutes that remain after the half h
 promptLetter=This is used after the half hour.
 options=без двадцати пяти два | в час тридцать пять минут
 answer=без двадцати пяти два
-feedback=The frozen source pairs the shown form "без двадцати пяти два" with the admitted gloss "lacking twenty five minutes to the two". The shown rule is "This is used after the half hour." That says how many minutes remain after the half hour.
+feedback=This is used after the half hour. corresponds to без двадцати пяти два. Select the requested construction type: elapsed minutes in the hour in progress, minutes remaining, or reading the dial numbers.
 objectiveId=obj-u17-clock-productive
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "в час тридцать пять минут" with the admitted gloss "at [one] hour thirty five minutes". That reads the numbers off the dial.
+distractorRationales= | в час тридцать пять минут is a different meaning or construction and does not match the requested reading of the shown form.
 testedFeature=CLOCK_MINUTES_REMAINING
 evidenceMode=STATED_APPLICATION
 contrastSetId=u17-clock-productive-1
@@ -4195,8 +4242,9 @@ cueLanguage=rule
 independent=true
 answerSourceIds=prov-ex-u17-clock-productive-1-ru
 distractorSourceIds= | prov-u17-clock-productive-x-5
-distractorDifference= | The frozen source pairs the shown form "в час тридцать пять минут" with the admitted gloss "at [one] hour thirty five minutes". That reads the numbers off the dial.
+distractorDifference= | в час тридцать пять минут is a different meaning or construction and does not match the requested reading of the shown form.
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "без двадцати пяти два" with the admitted gloss "lacking twenty five minutes to the two". The shown rule is "This is used after the half hour." That says how many minutes remain after the half hour.
+This is used after the half hour. corresponds to без двадцати пяти два. Select the requested construction type: elapsed minutes in the hour in progress, minutes remaining, or reading the dial numbers.
 contrastMembers=без двадцати пяти два | в час тридцать пять минут
 relationKind=STATED_APPLICATION
 relationParticipantIds=prov-u17-clock-productive-x-1 | prov-ex-u17-clock-productive-1-ru | prov-u17-clock-productive-x-5
@@ -4210,7 +4258,7 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-readyrussian-grammar20
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 5440ebd6b6e4dbcc15107e8eb35f9dfce8ee6d161bd806b72be905c7d7ec2011
+- Content hash: d58455bf867f8c610c300ab1c253cc3f604788569ea80126b69e7da5932f6208
 
 kind=CONTRAST_SELECTION
 language=en
@@ -4218,11 +4266,11 @@ prompt=Which admitted expression reads the numbers off the dial?
 promptLetter=This option is always available.
 options=в двенадцать часов десять минут | в десять минут первого
 answer=в двенадцать часов десять минут
-feedback=The frozen source pairs the shown form "в двенадцать часов десять минут" with the admitted gloss "at twelve hours ten minutes". The shown rule is "This option is always available." That reads the numbers off the dial.
+feedback=This option is always available. corresponds to в двенадцать часов десять минут. Select the requested construction type: elapsed minutes in the hour in progress, minutes remaining, or reading the dial numbers.
 objectiveId=obj-u17-clock-productive
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "в десять минут первого" with the admitted gloss "at ten minutes of the first". That states the minutes into the hour in progress.
+distractorRationales= | в десять минут первого is a different meaning or construction and does not match the requested reading of the shown form.
 testedFeature=CLOCK_DIRECT_READING
 evidenceMode=STATED_APPLICATION
 contrastSetId=u17-clock-productive-2
@@ -4230,8 +4278,9 @@ cueLanguage=rule
 independent=true
 answerSourceIds=prov-ex-u17-clock-productive-2-ru
 distractorSourceIds= | prov-u17-clock-productive-x-7
-distractorDifference= | The frozen source pairs the shown form "в десять минут первого" with the admitted gloss "at ten minutes of the first". That states the minutes into the hour in progress.
+distractorDifference= | в десять минут первого is a different meaning or construction and does not match the requested reading of the shown form.
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "в двенадцать часов десять минут" with the admitted gloss "at twelve hours ten minutes". The shown rule is "This option is always available." That reads the numbers off the dial.
+This option is always available. corresponds to в двенадцать часов десять минут. Select the requested construction type: elapsed minutes in the hour in progress, minutes remaining, or reading the dial numbers.
 contrastMembers=в двенадцать часов десять минут | в десять минут первого
 relationKind=STATED_APPLICATION
 relationParticipantIds=prov-u17-clock-productive-x-2 | prov-ex-u17-clock-productive-2-ru | prov-u17-clock-productive-x-7
@@ -4245,7 +4294,7 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-wikipedia-date-notation-russia-1357134172
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 40f2a70cdbb7b5d050cede70421a113e0bd218e74c9b1c339aa80d2ef6f75a9a
+- Content hash: ba7636e29bb30b5fb0576481bad8a426384a03608f0fc7f09ab56bfa4c078166
 
 kind=CONTRAST_SELECTION
 language=en
@@ -4253,11 +4302,11 @@ prompt=Which admitted English gloss is written beside the shown form?
 promptLetter=28 августа 2017 г.
 options=day month year | the month in genitive case | 28.08.17
 answer=day month year
-feedback=The frozen source pairs the shown form "28 августа 2017 г." with the admitted gloss "day month year" ("dates are usually written").
+feedback=28 августа 2017 г. corresponds to day month year. Read the relevant date components and distinguish the whole date from an individual component.
 objectiveId=obj-u17-calendar-date
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "Двадцать восьмое августа" with the admitted gloss "the month in genitive case" ("the ordinal number of the day first"). | The frozen source pairs the shown form "28.08.17" with the admitted gloss "the all-numeric date".
+distractorRationales= | the month in genitive case is a different meaning or construction and does not match the requested reading of the shown form. | 28.08.17 is a different meaning or construction and does not match the requested reading of the shown form.
 testedFeature=DATE_ORDER
 evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u17-calendar-date-1
@@ -4265,8 +4314,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u17-calendar-date-1-en
 distractorSourceIds= | prov-ex-u17-calendar-date-0-en | prov-u17-calendar-date-x-1
-distractorDifference= | The frozen source pairs the shown form "Двадцать восьмое августа" with the admitted gloss "the month in genitive case" ("the ordinal number of the day first"). | The frozen source pairs the shown form "28.08.17" with the admitted gloss "the all-numeric date".
+distractorDifference= | the month in genitive case is a different meaning or construction and does not match the requested reading of the shown form. | 28.08.17 is a different meaning or construction and does not match the requested reading of the shown form.
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "28 августа 2017 г." with the admitted gloss "day month year" ("dates are usually written").
+28 августа 2017 г. corresponds to day month year. Read the relevant date components and distinguish the whole date from an individual component.
 contrastMembers=day month year | the month in genitive case | 28.08.17
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u17-calendar-date-1-ru | prov-ex-u17-calendar-date-1-en | prov-ex-u17-calendar-date-0-en | prov-u17-calendar-date-x-1
@@ -4280,7 +4330,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: fdd01cc07791d8b21717b28e0e9b625d95b3697573d21266f4a1573f550437c4
+- Content hash: b654f34c4cfac97244f6e816840255834b9adb6bc36effc5698ed20e44235040
 
 kind=CONTRAST_SELECTION
 language=en
@@ -4288,11 +4338,11 @@ prompt=Choose the English description. Which reading translates the whole shown 
 promptLetter=15 мая 1996 г.
 options=15 May 1996 | the month alone | the year abbreviation alone
 answer=15 May 1996
-feedback=15 мая 1996 г. is 15 May 1996: the complete date gives the day, month and year.
+feedback=15 мая 1996 г. corresponds to 15 May 1996. Read the relevant date components and distinguish the whole date from an individual component.
 objectiveId=obj-u17-calendar-date
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | the month alone drops the day and the year. | the year abbreviation alone drops the day and the month.
+distractorRationales= | the month alone is a different meaning or construction and does not match the requested reading of the shown form. | the year abbreviation alone is a different meaning or construction and does not match the requested reading of the shown form.
 testedFeature=WHOLE_DATE
 evidenceMode=STATED_APPLICATION
 contrastSetId=u17-calendar-date-2
@@ -4300,8 +4350,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ca-repair-17-10762
 distractorSourceIds= | prov-ca-repair-17-10765 | prov-ca-repair-17-10766
-distractorDifference= | the month alone drops the day and the year. | the year abbreviation alone drops the day and the month.
+distractorDifference= | the month alone is a different meaning or construction and does not match the requested reading of the shown form. | the year abbreviation alone is a different meaning or construction and does not match the requested reading of the shown form.
 whyAnswerDemonstratesObjective=15 мая 1996 г. is 15 May 1996: the complete date gives the day, month and year.
+15 мая 1996 г. corresponds to 15 May 1996. Read the relevant date components and distinguish the whole date from an individual component.
 contrastMembers=15 May 1996 | the month alone | the year abbreviation alone
 relationKind=STATED_APPLICATION
 relationParticipantIds=prov-ca-repair-17-10761 | prov-ca-repair-17-10762 | prov-ca-repair-17-10765 | prov-ca-repair-17-10766
@@ -6805,6 +6856,6206 @@ attribution=Russian Companion content-audit research synthesis, content-audit-20
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
 sourceHash=ff717248e7febefa54e474a1ffa59f18433dd9de7e4f1b4e59480bb5bf7cd9c2
 contentHash=19afffbc518f50bfd9fc5419bf7513dd5c4a777302d161c8411b16530d404731
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-age-check-body`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-orient, u17-s-age
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 723daa8dbcd65a23a9138fa29ca9e07c5acaca8150bbd2cf66c6714c6ed2c77a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-age:calendar:age-check-body
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+shippedText=Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=635425ec04341c7df235f298eaaff5999e2af01dbc323e05d246cf327947f112
+contentHash=ce5598805e7c95f042af82270240e9c48dae4fd930edd8666834116a6828f9b9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-age-guided-body`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-orient, u17-s-age
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dfcf898a95eee9b9c8183e316a2a864eef350b5bea5ee612fc3aa933620d09ba
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-age:calendar:age-guided-body
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+shippedText=Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=635425ec04341c7df235f298eaaff5999e2af01dbc323e05d246cf327947f112
+contentHash=ce5598805e7c95f042af82270240e9c48dae4fd930edd8666834116a6828f9b9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-age-objective-title`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-orient, u17-s-age
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f1fbfcd9af5fe0d2d458c4b07198661a9d963e6627553bbb78a20873cdb4bda9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-age:calendar:age-objective-title
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Understand the shown age construction
+shippedText=Understand the shown age construction
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0270e7c816593e32ba1f7a8cf20d79b2f501ad41acfca1ddda300bf847fb30aa
+contentHash=f978b4fccbedf7aa69b395b79caae03988bffdbd697be8ac31f19e97c2454b09
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-age-rem-body`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-orient, u17-s-age
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4f90e5f96c9f6196de98712cd1fcf1a362c25e394413e90f43b002549f20f9d4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-age:calendar:age-rem-body
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+мне двадцать лет — I am 20 years old. The person whose age is stated is in the dative case: the first word means to me in a literal description. The remaining phrase counts twenty years. The present-time Russian construction has no expressed verb, whereas natural English uses am. This is an age statement, not a statement of ownership.
+
+Compare мне двадцать лет with двадцать лет. The full age statement is I am 20 (years old); the shorter quantity phrase is 20 years and does not by itself identify whose age is meant. The section label age statements names the topic; it is not a translation of either phrase. For a natural-English choice, select I am 20 years old. Ownership of summers and a group of people asking a question would describe different events. These choices recognize this construction; they do not demonstrate independently forming ages for other people or numbers.
+shippedText=мне двадцать лет — I am 20 years old. The person whose age is stated is in the dative case: the first word means to me in a literal description. The remaining phrase counts twenty years. The present-time Russian construction has no expressed verb, whereas natural English uses am. This is an age statement, not a statement of ownership.
+
+Compare мне двадцать лет with двадцать лет. The full age statement is I am 20 (years old); the shorter quantity phrase is 20 years and does not by itself identify whose age is meant. The section label age statements names the topic; it is not a translation of either phrase. For a natural-English choice, select I am 20 years old. Ownership of summers and a group of people asking a question would describe different events. These choices recognize this construction; they do not demonstrate independently forming ages for other people or numbers.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4c0ba1c72a417a960880c50a8c2c7f3f0baab1e4eb000c7effc05162bee44cac
+contentHash=af7183dc5f61a8e422cd24ff73a3476942c7f611c19b105c651acf3e55e24023
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-age-rem-title`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-orient, u17-s-age
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5de862cbcc7fd031d59e585b9e5add78f689a9110efcf91e1e81132c726438a9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-age:calendar:age-rem-title
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Review ages and calendar names
+shippedText=Review ages and calendar names
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=253bd4e1cfb457c57461c62504e61e77c03fb0ad3c68994e6de03313298d9209
+contentHash=0c651aff86d8614f73fd0775dd568bf773902e64f161e5a293585079daacab5e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-age-teach-1-body`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-orient, u17-s-age
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0147c1b2a296a40039c67b6951090c2c19f1d001d1ba549a0372c7e369da72a2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-age:calendar:age-teach-1-body
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+мне двадцать лет — I am 20 years old. The person whose age is stated is in the dative case: the first word means to me in a literal description. The remaining phrase counts twenty years. The present-time Russian construction has no expressed verb, whereas natural English uses am. This is an age statement, not a statement of ownership.
+shippedText=мне двадцать лет — I am 20 years old. The person whose age is stated is in the dative case: the first word means to me in a literal description. The remaining phrase counts twenty years. The present-time Russian construction has no expressed verb, whereas natural English uses am. This is an age statement, not a statement of ownership.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=74ccf2ecc06939265725323fdc77ff1a82bf583a8e0c85e7f1f008249260feec
+contentHash=e6a3e0ddac8a40aa4a981a53700522114d8ec151bf1c5ae869055c8211ccdaee
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-age-teach-1-title`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-orient, u17-s-age
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a38d9ea340709fe0b3206707dea3d499fd98ca8b585794a3ca158229c8dbfadf
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-age:calendar:age-teach-1-title
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+A person in the dative
+shippedText=A person in the dative
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b60ebebe4e8fea9cc5fd47da3c1230932f4ee8fe45f6bef6d9a28eaa3f75ad73
+contentHash=a73acb93b0be84bbd1977f256efb018e7afb623f7260ec03459e6077df9e6dbc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-age-teach-2-body`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-orient, u17-s-age
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1aa1216407c9d7ae7a9ad77c256054e56da87b9dfc1aa09f9fdb8d2d37ed2a12
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-age:calendar:age-teach-2-body
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Compare мне двадцать лет with двадцать лет. The full age statement is I am 20 (years old); the shorter quantity phrase is 20 years and does not by itself identify whose age is meant. The section label age statements names the topic; it is not a translation of either phrase. For a natural-English choice, select I am 20 years old. Ownership of summers and a group of people asking a question would describe different events. These choices recognize this construction; they do not demonstrate independently forming ages for other people or numbers.
+shippedText=Compare мне двадцать лет with двадцать лет. The full age statement is I am 20 (years old); the shorter quantity phrase is 20 years and does not by itself identify whose age is meant. The section label age statements names the topic; it is not a translation of either phrase. For a natural-English choice, select I am 20 years old. Ownership of summers and a group of people asking a question would describe different events. These choices recognize this construction; they do not demonstrate independently forming ages for other people or numbers.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=89b36fbf8f7cffb416cec2d17d0dfb287bb7c28c88ebeb420be492f6712c70a7
+contentHash=07504ff29668389b6ac2a429ecf3dac0a9c2cbb2cd25a2d1b53a5e43f278b4a7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-age-teach-2-title`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-orient, u17-s-age
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a0370160e46661a2cc69695ff603b6498f166c4822aa55a881a46ceba3ae111f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-age:calendar:age-teach-2-title
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Work the whole phrase and the quantity
+shippedText=Work the whole phrase and the quantity
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4195c57509cf77e5cb73c873c85101d2433cfff9be62c627469edf607f6395c6
+contentHash=27b16379704fa528008578233c32469e22c457757c4b6168ec97757304447e23
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-calendar-date-check-body`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b52945201113229f064f8f5a09556d38c7b9c440786c70904860f8681e51bddc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-calendar-date:calendar:calendar-date-check-body
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+shippedText=Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=635425ec04341c7df235f298eaaff5999e2af01dbc323e05d246cf327947f112
+contentHash=ce5598805e7c95f042af82270240e9c48dae4fd930edd8666834116a6828f9b9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-calendar-date-guided-body`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2ff6602c1ca4556f2fc6bc8c56d5a8c0f90f2a96fc3abca683c00969e17411fd
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-calendar-date:calendar:calendar-date-guided-body
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+shippedText=Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=635425ec04341c7df235f298eaaff5999e2af01dbc323e05d246cf327947f112
+contentHash=ce5598805e7c95f042af82270240e9c48dae4fd930edd8666834116a6828f9b9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-calendar-date-objective-title`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c3d370318771eae62feb5775e28e3cfea4265499b344d56af4dfdff88d7de877
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-calendar-date:calendar:calendar-date-objective-title
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Interpret retained dates and year abbreviation
+shippedText=Interpret retained dates and year abbreviation
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=055fdeea3cb68683005a2b8b80e506d82ac1eb3485e937743b08c97651bb20ce
+contentHash=699a1d84ef2049e7e1473b7e768dea492206952a939471cb0a39402ea0b204a4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-calendar-date-rem-body`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c118de9134adb43ad476fd35dc58047311f1bcc1a11c7cda941878933d5b2509
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-calendar-date:calendar:calendar-date-rem-body
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+28 августа 2017 г. gives day month year: 28 August 2017. The abbreviation г. marks the year after its number. 15 мая 1996 г. means 15 May 1996. To translate the whole date, include the day, month and year; identifying only the month or abbreviation leaves part of the meaning out.
+
+Двадцать восьмое августа names the twenty-eighth of August. This standalone date naming uses a neuter ordinal for the day and a genitive month name. A sentence saying when something happens can require a different ordinal case; these checks do not assess that change. The month form in a date differs from its dictionary form. Numeric day-month-year order and the year abbreviation are separate from speaking a complete year in words.
+shippedText=28 августа 2017 г. gives day month year: 28 August 2017. The abbreviation г. marks the year after its number. 15 мая 1996 г. means 15 May 1996. To translate the whole date, include the day, month and year; identifying only the month or abbreviation leaves part of the meaning out.
+
+Двадцать восьмое августа names the twenty-eighth of August. This standalone date naming uses a neuter ordinal for the day and a genitive month name. A sentence saying when something happens can require a different ordinal case; these checks do not assess that change. The month form in a date differs from its dictionary form. Numeric day-month-year order and the year abbreviation are separate from speaking a complete year in words.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ed4e5b4186364bd5ba03a2e798066192d2281fcb22cb390f3c99518ecf66222d
+contentHash=d539944d993da82814ad7f3ec4c840748d49f742104008bd8e49d19404dd7507
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-calendar-date-rem-title`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c4bc68f0f5892f9bf7f4a5666bdba95a6da0435442219ee926ba35eebed3efac
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-calendar-date:calendar:calendar-date-rem-title
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Review ages and calendar names
+shippedText=Review ages and calendar names
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=253bd4e1cfb457c57461c62504e61e77c03fb0ad3c68994e6de03313298d9209
+contentHash=0c651aff86d8614f73fd0775dd568bf773902e64f161e5a293585079daacab5e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-calendar-date-teach-1-body`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 54eb38611b2474b5ee7437cf58bd920468b43aae8c6cbf68dc4ae6c964de4781
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-calendar-date:calendar:calendar-date-teach-1-body
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+28 августа 2017 г. gives day month year: 28 August 2017. The abbreviation г. marks the year after its number. 15 мая 1996 г. means 15 May 1996. To translate the whole date, include the day, month and year; identifying only the month or abbreviation leaves part of the meaning out.
+shippedText=28 августа 2017 г. gives day month year: 28 August 2017. The abbreviation г. marks the year after its number. 15 мая 1996 г. means 15 May 1996. To translate the whole date, include the day, month and year; identifying only the month or abbreviation leaves part of the meaning out.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cfb131b22b7ca7ce1016e50923e3b100834e9ec17ef299fdfa38a0d9935d11b5
+contentHash=20734d9a0b95e68c454932d5611205bab31f5e6f42fb0ac20bb8136601627239
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-calendar-date-teach-1-title`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4981f294c57998c69cdf0684b6f666c569c72c4544b3b255f8941116b6f89578
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-calendar-date:calendar:calendar-date-teach-1-title
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Read every part of the date
+shippedText=Read every part of the date
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d0605f546c2d503e306e1c0c84b314065ca8934811edf482f257d1ea6785abaf
+contentHash=284b1be9c6d225faff2e6267a8d6a5882b0a03b56e3083a98e4a7fb7cda2b696
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-calendar-date-teach-2-body`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f6e5c2c2df52b8d4255d5caf019e725354699f53ff5548eb4861e02a036a521e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-calendar-date:calendar:calendar-date-teach-2-body
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Двадцать восьмое августа names the twenty-eighth of August. This standalone date naming uses a neuter ordinal for the day and a genitive month name. A sentence saying when something happens can require a different ordinal case; these checks do not assess that change. The month form in a date differs from its dictionary form. Numeric day-month-year order and the year abbreviation are separate from speaking a complete year in words.
+shippedText=Двадцать восьмое августа names the twenty-eighth of August. This standalone date naming uses a neuter ordinal for the day and a genitive month name. A sentence saying when something happens can require a different ordinal case; these checks do not assess that change. The month form in a date differs from its dictionary form. Numeric day-month-year order and the year abbreviation are separate from speaking a complete year in words.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ec030bbcdfa311d252fc481e96eb17cb4c3b737df5cc2e1239eaba503c758fa9
+contentHash=cb20ef465e1ebe24ba20b77e2eb443ec9e28d278ab6c2ea51cfa595da4507273
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-calendar-date-teach-2-title`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a76822ce8c387354481e6b7b839938cd7b5c93f8df2c7e919574931078403d4d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-calendar-date:calendar:calendar-date-teach-2-title
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Month case and date naming
+shippedText=Month case and date naming
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=974f1e821b37bdf6f2ee4f5455881539002593795aead5947f254f160ce3a366
+contentHash=e9666ab3f3bec41ad14936382cde5b9824892f7ccb17112f6c80a7f955038505
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-clock-answers-check-body`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-orient, u17-s-clock-answers
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2f2847922de452c1f3e8bb7d902fe76bb6d030f68d4381702e5f4213aafeb86c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-answers:calendar:clock-answers-check-body
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+shippedText=Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=635425ec04341c7df235f298eaaff5999e2af01dbc323e05d246cf327947f112
+contentHash=ce5598805e7c95f042af82270240e9c48dae4fd930edd8666834116a6828f9b9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-clock-answers-guided-body`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-orient, u17-s-clock-answers
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 17eb177b6ba72905ca29506deed4708825ca8939b7c8108c6d1d9c1fbc76ad5d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-answers:calendar:clock-answers-guided-body
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+shippedText=Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=635425ec04341c7df235f298eaaff5999e2af01dbc323e05d246cf327947f112
+contentHash=ce5598805e7c95f042af82270240e9c48dae4fd930edd8666834116a6828f9b9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-clock-answers-objective-title`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-orient, u17-s-clock-answers
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 74bcb17e7aeb7591e966b72f22a01ddfc0cf037c35d68859bb6cb82b987e1394
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-answers:calendar:clock-answers-objective-title
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Interpret quarter, half and time remaining
+shippedText=Interpret quarter, half and time remaining
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b3eb3bcdc49c13211c980f329c04f31a895897382a125228a338509f86de3492
+contentHash=f002dabab55885338d35fbc9d956be3c90c07cdadff62095747bc18a381dba81
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-clock-answers-rem-body`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-orient, u17-s-clock-answers
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 47622a97f8eb6c73a7d45e11f8066f35b353c8088636054b7f57633bee0e0b89
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-answers:calendar:clock-answers-rem-body
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+четверть восьмого — 7:15. The eighth hour is the period leading up to eight, not the period starting at eight. A quarter of that hour has elapsed after seven. The ordinal names the next hour and appears in genitive form.
+
+полвосьмого — 7:30. Half of the eighth hour has passed, so the clock shows half past seven. The compact half-hour expression is written as one word in this retained form. Match the construction to the clock reading, rather than treating the named eighth hour as the elapsed whole hour.
+
+без четверти восемь — 7:45. This construction counts a quarter hour remaining until eight: subtract fifteen minutes from the named upcoming hour. The without construction differs from counting a quarter or a half already elapsed. These choices interpret existing forms; context is still needed to distinguish morning from evening.
+shippedText=четверть восьмого — 7:15. The eighth hour is the period leading up to eight, not the period starting at eight. A quarter of that hour has elapsed after seven. The ordinal names the next hour and appears in genitive form.
+
+полвосьмого — 7:30. Half of the eighth hour has passed, so the clock shows half past seven. The compact half-hour expression is written as one word in this retained form. Match the construction to the clock reading, rather than treating the named eighth hour as the elapsed whole hour.
+
+без четверти восемь — 7:45. This construction counts a quarter hour remaining until eight: subtract fifteen minutes from the named upcoming hour. The without construction differs from counting a quarter or a half already elapsed. These choices interpret existing forms; context is still needed to distinguish morning from evening.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9d6aaf841d3bfe44256e8c3404fc983beeacd7581ae3dad2427c43e8554221bd
+contentHash=2950169a31f3fc277f2156757e837726611aa914c9931f168ca276ac322c94e8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-clock-answers-rem-title`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-orient, u17-s-clock-answers
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3ff951edc321c13948d1bd3e75336525efe15562be0181165c78ba137fab5397
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-answers:calendar:clock-answers-rem-title
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Review ages and calendar names
+shippedText=Review ages and calendar names
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=253bd4e1cfb457c57461c62504e61e77c03fb0ad3c68994e6de03313298d9209
+contentHash=0c651aff86d8614f73fd0775dd568bf773902e64f161e5a293585079daacab5e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-clock-answers-teach-1-body`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-orient, u17-s-clock-answers
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9f7a55194089ee23393d53112e6c7be281858f9ceb0fb11922810dbea5b32f5f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-answers:calendar:clock-answers-teach-1-body
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+четверть восьмого — 7:15. The eighth hour is the period leading up to eight, not the period starting at eight. A quarter of that hour has elapsed after seven. The ordinal names the next hour and appears in genitive form.
+shippedText=четверть восьмого — 7:15. The eighth hour is the period leading up to eight, not the period starting at eight. A quarter of that hour has elapsed after seven. The ordinal names the next hour and appears in genitive form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=eae1fb3d4047f05a26c01535abbfcbaf5246d2743dd3fad6bde3d5938f70933d
+contentHash=5e3219935dbb598146dc6988fdfa718394a6e5b98eee457e88786d5808a88f23
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-clock-answers-teach-1-title`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-orient, u17-s-clock-answers
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: efe7880cd98bf4dab49c387f99e9c7ece994698b215695e73a68f38f82041c76
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-answers:calendar:clock-answers-teach-1-title
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+A quarter into the next named hour
+shippedText=A quarter into the next named hour
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=969b76148a4874478c86d9bd0c3cc1c930926eba2fe4e45deec7fe60bef9b3ca
+contentHash=6af600673268cc8fac82c8b0c233cbda7eb6773195f395cc49b6b3954e484417
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-clock-answers-teach-2-body`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-orient, u17-s-clock-answers
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5dbe1c7826216e7cce4e76faf7db45b1ec2be16e944d931981679080614ea3f2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-answers:calendar:clock-answers-teach-2-body
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+полвосьмого — 7:30. Half of the eighth hour has passed, so the clock shows half past seven. The compact half-hour expression is written as one word in this retained form. Match the construction to the clock reading, rather than treating the named eighth hour as the elapsed whole hour.
+shippedText=полвосьмого — 7:30. Half of the eighth hour has passed, so the clock shows half past seven. The compact half-hour expression is written as one word in this retained form. Match the construction to the clock reading, rather than treating the named eighth hour as the elapsed whole hour.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ab060a04c5a37ebb342ac703b54673293d3aef199f1fab002ce2657522702c2
+contentHash=202bad721db5e710d8ce678fe0278336093d4629cc557c58bc703fb1f9bf770e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-clock-answers-teach-2-title`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-orient, u17-s-clock-answers
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8615e7a6e8c61bd83bf133fe86a08281146b6c7354cf926fbc32512f3fe84552
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-answers:calendar:clock-answers-teach-2-title
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Half of the hour in progress
+shippedText=Half of the hour in progress
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=646cbc0e7834f781c022b93948babf0fd6e696bc5e5d5d3898a9a31e67da1c99
+contentHash=cf634a9f916c28c3db8bacb7f85915e36dfe3fa9b28634fdb3f788258e784ccd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-clock-answers-teach-3-body`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-orient, u17-s-clock-answers
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d618d32bbae13fa861a83dd47d89c67bd086a1fe0cd1f60284294b709b7823d2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-answers:calendar:clock-answers-teach-3-body
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+без четверти восемь — 7:45. This construction counts a quarter hour remaining until eight: subtract fifteen minutes from the named upcoming hour. The without construction differs from counting a quarter or a half already elapsed. These choices interpret existing forms; context is still needed to distinguish morning from evening.
+shippedText=без четверти восемь — 7:45. This construction counts a quarter hour remaining until eight: subtract fifteen minutes from the named upcoming hour. The without construction differs from counting a quarter or a half already elapsed. These choices interpret existing forms; context is still needed to distinguish morning from evening.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=740c08bec3861615e896d929565c86ce957837577dd1eb1bf84cb43c69bc16aa
+contentHash=59f0f9d15095e44ad32c84d9c7649722e2b3a83fe852a2f8d1e1e780839cccf0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-clock-answers-teach-3-title`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-orient, u17-s-clock-answers
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fb61a31a7e5d67dfc97c003af9e7802aab626291001afa34a89304d0bcd0fbea
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-answers:calendar:clock-answers-teach-3-title
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+A quarter remaining before eight
+shippedText=A quarter remaining before eight
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2509f155351d0a20631c46811cafab9347f3ddee7900ead16dff3ea666ef0aca
+contentHash=8e9ed6bad7092e6f00a0800853e05c3fdfdc3e8b25698e43ed6395145cc6ddbb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-clock-check-body`
+
+- Objectives: obj-u17-clock
+- Sessions: u17-s-orient, u17-s-clock
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d4f346c4eb0d5f1ccf61245edf243e56e414dbff26f2131af673aaa989b72e3a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock:calendar:clock-check-body
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+shippedText=Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=635425ec04341c7df235f298eaaff5999e2af01dbc323e05d246cf327947f112
+contentHash=ce5598805e7c95f042af82270240e9c48dae4fd930edd8666834116a6828f9b9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-clock-guided-body`
+
+- Objectives: obj-u17-clock
+- Sessions: u17-s-orient, u17-s-clock
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f5ffbbabe7531ef40f1f89d35312cb719f606c90a4f3866ca4a4d9192f2eb28c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock:calendar:clock-guided-body
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+shippedText=Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=635425ec04341c7df235f298eaaff5999e2af01dbc323e05d246cf327947f112
+contentHash=ce5598805e7c95f042af82270240e9c48dae4fd930edd8666834116a6828f9b9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-clock-objective-title`
+
+- Objectives: obj-u17-clock
+- Sessions: u17-s-orient, u17-s-clock
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5bdd2e9a9b6ceb0a6c98782a9ec459f31e92810cb4ef34a8c8abf8402823c568
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock:calendar:clock-objective-title
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Recognize the clock-time question
+shippedText=Recognize the clock-time question
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3c2b88fee4e0f4f28c034f66e9b28df6b566f814fbe9835720e3d51ccf36da0a
+contentHash=242d7e7692c187a4d3995d9be9703560ddc5e1092affd992f5171918a69ca216
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-clock-productive-check-body`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-orient, u17-s-clock-productive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0298042aed8764a2f61a2b68a25094f6d32b94718ee180295e415a9f62615c76
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-productive:calendar:clock-productive-check-body
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+shippedText=Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=635425ec04341c7df235f298eaaff5999e2af01dbc323e05d246cf327947f112
+contentHash=ce5598805e7c95f042af82270240e9c48dae4fd930edd8666834116a6828f9b9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-clock-productive-guided-body`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-orient, u17-s-clock-productive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: be40fc257a4a7a40b7d6f340b0a8b763d4b448cde1c789abde1c845f04ef1659
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-productive:calendar:clock-productive-guided-body
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+shippedText=Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=635425ec04341c7df235f298eaaff5999e2af01dbc323e05d246cf327947f112
+contentHash=ce5598805e7c95f042af82270240e9c48dae4fd930edd8666834116a6828f9b9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-clock-productive-objective-title`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-orient, u17-s-clock-productive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 00867432a7219f139d448d3205752d3f15ef704524ef886bfcde7462528aa497
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-productive:calendar:clock-productive-objective-title
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Recognize three retained clock constructions
+shippedText=Recognize three retained clock constructions
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f549a508666ad6e1d6ebd742b94a0654dbfc45d0ccd9f14f4c0783afaec7b2ba
+contentHash=8c7780c32ddc896d2c62572d6cd224b8bf19f7e80549dd5cce5af19e79a39d6f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-clock-productive-rem-body`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-orient, u17-s-clock-productive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 36b12ab056063a5d3ee249cc8d27925e4a5c11845aaec0b700b93269fc55f72d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-productive:calendar:clock-productive-rem-body
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+в пятнадцать минут второго — at 1:15. The second hour runs from one up to two, so fifteen minutes into it is quarter past one. Match this expression to the request for minutes into the hour in progress. The next-hour ordinal is genitive. This convention is used up to the half hour.
+
+без двадцати пяти два — at 1:35. Twenty-five minutes remain before two. Subtract the remaining quantity from the upcoming hour. The without construction uses genitive forms for the remaining minutes and differs from counting elapsed minutes.
+
+в двенадцать часов десять минут — at 12:10. This construction states elapsed whole hours and then minutes, instead of naming an ordinal hour in progress. Reading the dial is always available; context or a 24-hour reading can distinguish AM and PM. These selections identify existing construction types and do not demonstrate independently producing a new clock expression.
+shippedText=в пятнадцать минут второго — at 1:15. The second hour runs from one up to two, so fifteen minutes into it is quarter past one. Match this expression to the request for minutes into the hour in progress. The next-hour ordinal is genitive. This convention is used up to the half hour.
+
+без двадцати пяти два — at 1:35. Twenty-five minutes remain before two. Subtract the remaining quantity from the upcoming hour. The without construction uses genitive forms for the remaining minutes and differs from counting elapsed minutes.
+
+в двенадцать часов десять минут — at 12:10. This construction states elapsed whole hours and then minutes, instead of naming an ordinal hour in progress. Reading the dial is always available; context or a 24-hour reading can distinguish AM and PM. These selections identify existing construction types and do not demonstrate independently producing a new clock expression.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=192a0b39dff0cf3801dbe256c063ecf5347770810c7926aee0839d36995d0bbf
+contentHash=e233702099a2204fd0fa4610cb1a749bffc32ab3e78da42d363f8cf67730d65a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-clock-productive-rem-title`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-orient, u17-s-clock-productive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b56a2844c33f4e3d4a60cff9cb3b4c97bef3f3d236e6d2de4bdfbdad65001558
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-productive:calendar:clock-productive-rem-title
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Review ages and calendar names
+shippedText=Review ages and calendar names
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=253bd4e1cfb457c57461c62504e61e77c03fb0ad3c68994e6de03313298d9209
+contentHash=0c651aff86d8614f73fd0775dd568bf773902e64f161e5a293585079daacab5e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-clock-productive-teach-1-body`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-orient, u17-s-clock-productive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1312495658801b8dd8ec72ae277dbb996c4a6ad986c1932ce25bff304a77ddec
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-productive:calendar:clock-productive-teach-1-body
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+в пятнадцать минут второго — at 1:15. The second hour runs from one up to two, so fifteen minutes into it is quarter past one. Match this expression to the request for minutes into the hour in progress. The next-hour ordinal is genitive. This convention is used up to the half hour.
+shippedText=в пятнадцать минут второго — at 1:15. The second hour runs from one up to two, so fifteen minutes into it is quarter past one. Match this expression to the request for minutes into the hour in progress. The next-hour ordinal is genitive. This convention is used up to the half hour.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3f759f8f8f09ef2c4cc05810a161309bdf04dcce5e792b422802dc4c18a33e54
+contentHash=b2492633e6f5678516219e139811deafb26023ba92918d66b0b91e49f2b02d4f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-clock-productive-teach-1-title`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-orient, u17-s-clock-productive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9ed8dda60051c2df4a998c9ef7df384a8e65d96d8fcb8d048be695e536c913d3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-productive:calendar:clock-productive-teach-1-title
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Minutes in the hour in progress
+shippedText=Minutes in the hour in progress
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=922512a71a1cbe15ff1d81385e43de9bcb91317f1e88af456b2faf14d01634c7
+contentHash=bcd2c8bed13af5f73ee6367a70d1014e929b4f6e1e234690bd87160e69b34d90
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-clock-productive-teach-2-body`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-orient, u17-s-clock-productive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 44d54b9c102bd4e047dcff8563cea32dd75050fe423d58fc2f6102b103b8834f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-productive:calendar:clock-productive-teach-2-body
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+без двадцати пяти два — at 1:35. Twenty-five minutes remain before two. Subtract the remaining quantity from the upcoming hour. The without construction uses genitive forms for the remaining minutes and differs from counting elapsed minutes.
+shippedText=без двадцати пяти два — at 1:35. Twenty-five minutes remain before two. Subtract the remaining quantity from the upcoming hour. The without construction uses genitive forms for the remaining minutes and differs from counting elapsed minutes.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fe07ce6a0a189f6658258b3ad874eb74bb41c5dd5fa4003184641ed692433cf7
+contentHash=e8664d20b4334f5c06c5d4f0ae59170125779b9df1edf4e06f25691c4d733eaf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-clock-productive-teach-2-title`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-orient, u17-s-clock-productive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2145bf55f9a3ca5f5a851d1c1e454f46119049345d10643eeb9a74859747876b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-productive:calendar:clock-productive-teach-2-title
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Minutes remaining after the half hour
+shippedText=Minutes remaining after the half hour
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=60745b52a49fdf0b4a1e85fbfeb83de80b421c0da6e304a1a0ce848aa5c0fcef
+contentHash=88e982d068bc63f705f45364a63fcc5930363ec4ef4252657ce8b26c17a6fee9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-clock-productive-teach-3-body`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-orient, u17-s-clock-productive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 36847d8f50d7482c9eacf4426a2c7ba458887dfc5c3cbad29ab47a4d1130d6d8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-productive:calendar:clock-productive-teach-3-body
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+в двенадцать часов десять минут — at 12:10. This construction states elapsed whole hours and then minutes, instead of naming an ordinal hour in progress. Reading the dial is always available; context or a 24-hour reading can distinguish AM and PM. These selections identify existing construction types and do not demonstrate independently producing a new clock expression.
+shippedText=в двенадцать часов десять минут — at 12:10. This construction states elapsed whole hours and then minutes, instead of naming an ordinal hour in progress. Reading the dial is always available; context or a 24-hour reading can distinguish AM and PM. These selections identify existing construction types and do not demonstrate independently producing a new clock expression.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=067f599544204f24787666fafd9672348b94782a201a4e9161b62a8f04099861
+contentHash=2cd38179814d1325da2eac04183d27f5182bf45908d16a4a0675dde45639b460
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-clock-productive-teach-3-title`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-orient, u17-s-clock-productive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9bec0b66735569192394dab0607005be13eaa84dd6342eab07fc4618f73f803a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-productive:calendar:clock-productive-teach-3-title
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Read the dial numbers
+shippedText=Read the dial numbers
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=42374e8c70d28e979b76cbfbc466549a792e07cb74575c345a94f4440f9b9aed
+contentHash=3fd9194e4b6638e68825babd0f517732c54ea588ef9e2ee3002d680e99b407fc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-clock-rem-body`
+
+- Objectives: obj-u17-clock
+- Sessions: u17-s-orient, u17-s-clock
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2491ea7112fb240ce2e3fecb30c10a916f34b3eb3e6bea817683308499ce66c4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock:calendar:clock-rem-body
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Который час? — What time is it? This fixed question asks for the current clock time. The noun час normally means hour; its retained example label time reflects this question context rather than a universal translation of the isolated noun. Learn the complete question as a unit.
+
+For the complete clock question, choose What time is it? A question about which book someone wants would request a different kind of information. Repeated recognition of this one question is not independent practice in giving a time, asking when an event occurs, or forming other questions.
+shippedText=Который час? — What time is it? This fixed question asks for the current clock time. The noun час normally means hour; its retained example label time reflects this question context rather than a universal translation of the isolated noun. Learn the complete question as a unit.
+
+For the complete clock question, choose What time is it? A question about which book someone wants would request a different kind of information. Repeated recognition of this one question is not independent practice in giving a time, asking when an event occurs, or forming other questions.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a511b1cca4db392c2f84441a652115ba66967660c229c127de413b157e31aa27
+contentHash=82bd00953832cdaaa6c204c6dabd14fe866af63205f2b85e1c7c3f0fc43b902e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-clock-rem-title`
+
+- Objectives: obj-u17-clock
+- Sessions: u17-s-orient, u17-s-clock
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ab2d727e01689780752417149c290647dc376b5b06d98d08a5ffec4442052abf
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock:calendar:clock-rem-title
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Review ages and calendar names
+shippedText=Review ages and calendar names
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=253bd4e1cfb457c57461c62504e61e77c03fb0ad3c68994e6de03313298d9209
+contentHash=0c651aff86d8614f73fd0775dd568bf773902e64f161e5a293585079daacab5e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-clock-teach-1-body`
+
+- Objectives: obj-u17-clock
+- Sessions: u17-s-orient, u17-s-clock
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fa6b735244bc75362f95be118a85d98aff19682a315a31080c8a1d2e1db1ade3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock:calendar:clock-teach-1-body
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Который час? — What time is it? This fixed question asks for the current clock time. The noun час normally means hour; its retained example label time reflects this question context rather than a universal translation of the isolated noun. Learn the complete question as a unit.
+shippedText=Который час? — What time is it? This fixed question asks for the current clock time. The noun час normally means hour; its retained example label time reflects this question context rather than a universal translation of the isolated noun. Learn the complete question as a unit.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=20f81655d4b89afdca980f57502821a7b8317cca9f0fde673807b38eb06f8da0
+contentHash=7ab27418db6e4fb2ff151596b7a6e660c69de38514beacdb093e2387f80400c5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-clock-teach-1-title`
+
+- Objectives: obj-u17-clock
+- Sessions: u17-s-orient, u17-s-clock
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2366ef5e323e3e2e29e10d0797c1c44c186cc4c0f9711cdf0750436e90e5922a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock:calendar:clock-teach-1-title
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Understand the whole question
+shippedText=Understand the whole question
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2042428e721d44dda1f8b0bc913d84cdcff50b6e96170dc1fd3cf1649ed77f71
+contentHash=cfdabd281bd4b6937886f2fb432fe2c88d6538604dada8106b9fed7450a309be
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-clock-teach-2-body`
+
+- Objectives: obj-u17-clock
+- Sessions: u17-s-orient, u17-s-clock
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9a2bf9153a8688ca808d30644be84519096f07cc31fe6a3173c83806352cea9f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock:calendar:clock-teach-2-body
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+For the complete clock question, choose What time is it? A question about which book someone wants would request a different kind of information. Repeated recognition of this one question is not independent practice in giving a time, asking when an event occurs, or forming other questions.
+shippedText=For the complete clock question, choose What time is it? A question about which book someone wants would request a different kind of information. Repeated recognition of this one question is not independent practice in giving a time, asking when an event occurs, or forming other questions.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f014edcb0d545002e1ede8bd2c6420ebfc1a2d04b5083d501ca2e74d75047426
+contentHash=7fcc0f91b6dab221732635b5fc7e79ef5c556fb950fd354c76ecbfaf61ff6dcc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-clock-teach-2-title`
+
+- Objectives: obj-u17-clock
+- Sessions: u17-s-orient, u17-s-clock
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 73da89a95dc597422a208e7f9bb6f0bde9fe2f667e18d3367f579e107c4cee50
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock:calendar:clock-teach-2-title
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Work the meaning choice
+shippedText=Work the meaning choice
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2dc8a49998ca74c50de748cb96f9900ba98ad342dbc286e124b90da17ef1f96e
+contentHash=49220e8bd3700cf994f07634adc8a25c983b9f03d3d60dacb59b1e76bf4488b1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-months-check-body`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-orient, u17-s-months
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b88cccff490417ac2d3aa229aa3369f62d41f868d9cca2ec66a977115aaaa58b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-months:calendar:months-check-body
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+shippedText=Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=635425ec04341c7df235f298eaaff5999e2af01dbc323e05d246cf327947f112
+contentHash=ce5598805e7c95f042af82270240e9c48dae4fd930edd8666834116a6828f9b9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-months-guided-body`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-orient, u17-s-months
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 54f4736e5c2b45a9b4526c5c8838d77ee166c0aa597beb097ab455eca1443009
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-months:calendar:months-guided-body
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+shippedText=Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=635425ec04341c7df235f298eaaff5999e2af01dbc323e05d246cf327947f112
+contentHash=ce5598805e7c95f042af82270240e9c48dae4fd930edd8666834116a6828f9b9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-months-objective-title`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-orient, u17-s-months
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a8ca4be7ec068e113e6746359fe6c91378cc697d381c95f87c9c488a884bab2e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-months:calendar:months-objective-title
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Recognize selected month names
+shippedText=Recognize selected month names
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=026184522e811651cfe12a6af87a33c8e9be9d4451750a573c7766ca2e8304d2
+contentHash=b29bb2bae4e49ab19be138acdf3f2157ca08ff6582f6695c1c810284bbe01729
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-months-rem-body`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-orient, u17-s-months
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ace4a0a8b80eeb4d3c1cf06db5179621f83cbe65aa8aa95c44ff5ac31778f880
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-months:calendar:months-rem-body
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Январь — January. Февраль — February. Март — March. Апрель — April. These vocabulary labels name months, not complete dates. Read the shown Russian word and select its matching English month.
+
+Июнь — June. Июль — July. Август — August. Декабрь — December. June and July have similar Russian spellings but differ in the consonant before the final soft sign. December names the final month of the year. These retained forms include the later check targets and their competing alternatives; this selected set is not a complete twelve-month production lesson.
+
+Month names normally use lowercase within a Russian sentence. These retained vocabulary labels begin with capitals; that presentation is not a rule to capitalize every month name. For Июнь select June, and for Декабрь select December. Knowing the standalone name does not demonstrate forming a full date: a month in a date can have a different case form. Learn those constructions separately.
+shippedText=Январь — January. Февраль — February. Март — March. Апрель — April. These vocabulary labels name months, not complete dates. Read the shown Russian word and select its matching English month.
+
+Июнь — June. Июль — July. Август — August. Декабрь — December. June and July have similar Russian spellings but differ in the consonant before the final soft sign. December names the final month of the year. These retained forms include the later check targets and their competing alternatives; this selected set is not a complete twelve-month production lesson.
+
+Month names normally use lowercase within a Russian sentence. These retained vocabulary labels begin with capitals; that presentation is not a rule to capitalize every month name. For Июнь select June, and for Декабрь select December. Knowing the standalone name does not demonstrate forming a full date: a month in a date can have a different case form. Learn those constructions separately.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=00333ae1a968491b7cf79f00a31ff50ab440d5ce1c8c49535a6d640083094ea6
+contentHash=d22ffc5ea0fe12b1ce2e9afa8c06b4be9df293636dfe3716525cb154bd0fb006
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-months-rem-title`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-orient, u17-s-months
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e6e4c619fbc3b344e2e8bfa10fd35fb08d8c07919ea82177e28686967e9c83b7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-months:calendar:months-rem-title
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Review ages and calendar names
+shippedText=Review ages and calendar names
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=253bd4e1cfb457c57461c62504e61e77c03fb0ad3c68994e6de03313298d9209
+contentHash=0c651aff86d8614f73fd0775dd568bf773902e64f161e5a293585079daacab5e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-months-teach-1-body`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-orient, u17-s-months
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ab76396fbb053ef54d6c717aa59001b905430f2fc11756cc6f106feb45e67363
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-months:calendar:months-teach-1-body
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Январь — January. Февраль — February. Март — March. Апрель — April. These vocabulary labels name months, not complete dates. Read the shown Russian word and select its matching English month.
+shippedText=Январь — January. Февраль — February. Март — March. Апрель — April. These vocabulary labels name months, not complete dates. Read the shown Russian word and select its matching English month.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=199247cc4d65c94de52f82df2d4043e891d87be8b1bed8464034496278847c3e
+contentHash=ac7408e4a51d707d2195a88d8be2406233b1ae8a210c5a355213f3724afafad5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-months-teach-1-title`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-orient, u17-s-months
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6abe1ef2f1a2305ed1b0fc3a37f5a18a4822596258e85389185dd3c30d3ad053
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-months:calendar:months-teach-1-title
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+The first four retained month names
+shippedText=The first four retained month names
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9045fa3b4940af1e2f8dfd193e4e47bf72e37219ac9ddf5c26d9921872621894
+contentHash=3ffa5e922deaa03c4e16ea79d1333cc50b109997b1fab488f1de99a5d68f2271
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-months-teach-2-body`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-orient, u17-s-months
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3cc6b39f93b27500e0cc1eeb9814f78d2d996f8a736d1c8839e59240aabe2197
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-months:calendar:months-teach-2-body
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Июнь — June. Июль — July. Август — August. Декабрь — December. June and July have similar Russian spellings but differ in the consonant before the final soft sign. December names the final month of the year. These retained forms include the later check targets and their competing alternatives; this selected set is not a complete twelve-month production lesson.
+shippedText=Июнь — June. Июль — July. Август — August. Декабрь — December. June and July have similar Russian spellings but differ in the consonant before the final soft sign. December names the final month of the year. These retained forms include the later check targets and their competing alternatives; this selected set is not a complete twelve-month production lesson.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=33c0e23e16d0672538565673a37f4795b06d5293ef6ce7b85a62a44ec3d2eeaa
+contentHash=29f070c97d6a7766406b55bb309f8fc5ca9cd06f8c03d20f89e9bbe28be6bc8b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-months-teach-2-title`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-orient, u17-s-months
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9d9772cd4bc486926c343f6cc15100cf61126caf3c00f7deca4b7dfe3603f79f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-months:calendar:months-teach-2-title
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Teach the later checked months and alternatives
+shippedText=Teach the later checked months and alternatives
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bb2d17f47f10c5bd3fb60ab0851f37b22d75e34af9a207e4284d19c6b3bcedd8
+contentHash=1cdbd7d04e36059612ecaf1cea820e946b00770b0178b6d28be109a286e34e5a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-months-teach-3-body`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-orient, u17-s-months
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 740e6f56587bb7cdc4da405ddb790cc1d7cfc3b8b7a733c95dba5d693114bcd2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-months:calendar:months-teach-3-body
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Month names normally use lowercase within a Russian sentence. These retained vocabulary labels begin with capitals; that presentation is not a rule to capitalize every month name. For Июнь select June, and for Декабрь select December. Knowing the standalone name does not demonstrate forming a full date: a month in a date can have a different case form. Learn those constructions separately.
+shippedText=Month names normally use lowercase within a Russian sentence. These retained vocabulary labels begin with capitals; that presentation is not a rule to capitalize every month name. For Июнь select June, and for Декабрь select December. Knowing the standalone name does not demonstrate forming a full date: a month in a date can have a different case form. Learn those constructions separately.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a500ec4ffb45960160554c2f97b42ddf73c58c3a10dc0e7b82ffed403dfcbac7
+contentHash=602d6f8043cb68458ef0d9cf18f95d5a720283d34f728ed1671a0c888e39833c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-months-teach-3-title`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-orient, u17-s-months
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8481ec0d736cb4411a71264da4080574e4d72df969a9ea51cd4d52d3101c5156
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-months:calendar:months-teach-3-title
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Capitalization and a worked choice
+shippedText=Capitalization and a worked choice
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=87e002058d069e2f8a57e4ac0b9192c6b901c5a05099425291c9eb86e679718e
+contentHash=4215a06e40691f2e6636e9e76428b649cb4d9bb3361d53e0f50e81e449fb717b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-quarter-hour-check-body`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9cdfd463ccc3d16bc643163d78cc5b63fe7b858ba598f77d216df715c30101cb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-quarter-hour:calendar:quarter-hour-check-body
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+shippedText=Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=635425ec04341c7df235f298eaaff5999e2af01dbc323e05d246cf327947f112
+contentHash=ce5598805e7c95f042af82270240e9c48dae4fd930edd8666834116a6828f9b9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-quarter-hour-guided-body`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 92921c3168cc3a1b7338a7f037f7542f30ad15f30f7f4451f88b3e920a040177
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-quarter-hour:calendar:quarter-hour-guided-body
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+shippedText=Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=635425ec04341c7df235f298eaaff5999e2af01dbc323e05d246cf327947f112
+contentHash=ce5598805e7c95f042af82270240e9c48dae4fd930edd8666834116a6828f9b9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-quarter-hour-objective-title`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e55f6f6b52978cff5e64323beb6a0c8dd0462f331618ecc52a3469fa03cb091d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-quarter-hour:calendar:quarter-hour-objective-title
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Interpret retained at-what-time examples
+shippedText=Interpret retained at-what-time examples
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=78bb75b8b95dfbe1304c7585bdf10e590037946c53ae147862e3b03653e0df58
+contentHash=677de6e17b705c0a03f977dc5978312c308985203ff59b3b239d970b5bfa70b3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-quarter-hour-rem-body`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 95ec93efa94d3d3384103d3153ba143e86dc41bb7d7a2ab02eaa83e7f8b65fb5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-quarter-hour:calendar:quarter-hour-rem-body
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+A current-time question and the time when an event happens are different requests. The retained event sentences use at-time expressions. A preposition introduces several of them, while the without construction expresses minutes remaining until the upcoming hour. Study the complete source examples before selecting their readings.
+
+Концерт начинается в шесть часов. — 18.00. Она была дома в час. — 13.00. These are the readings assigned by the retained source. The bare six-hour and one-hour expressions do not themselves distinguish evening from morning; the source readings depend on context. Do not infer that every occurrence of six means eighteen.
+
+Я приду в четверть восьмого. — 7.15 – quarter of the eighth hour. Он нам позвонил в пятнадцать минут десятого. — 9.15 – 15 minutes of the tenth hour. A quarter or fifteen minutes has elapsed in the hour leading to the named next hour. The ordinal is genitive; the event-time phrase also has its introductory preposition.
+
+Наш рейс уезжает в половине пятого. — 4.30 – half of the fifth hour. Мы будем свободны в полвторого. — 1.30 – half of the second hour. Both name a half elapsed in the next ordinal hour. Their retained preposition and noun forms differ; recognize each complete construction rather than exchanging endings mechanically.
+
+Передача начинается без четверти три. — 2.45 – 3 without a quarter. Она обычно приходит на работу без пятнадцати девять. — 8.45 – 9 without 15 minutes. Subtract the stated remaining minutes from the upcoming hour. The preposition meaning without governs the remaining quantity in genitive form. These existing choices do not assess independently building a new event-time sentence.
+shippedText=A current-time question and the time when an event happens are different requests. The retained event sentences use at-time expressions. A preposition introduces several of them, while the without construction expresses minutes remaining until the upcoming hour. Study the complete source examples before selecting their readings.
+
+Концерт начинается в шесть часов. — 18.00. Она была дома в час. — 13.00. These are the readings assigned by the retained source. The bare six-hour and one-hour expressions do not themselves distinguish evening from morning; the source readings depend on context. Do not infer that every occurrence of six means eighteen.
+
+Я приду в четверть восьмого. — 7.15 – quarter of the eighth hour. Он нам позвонил в пятнадцать минут десятого. — 9.15 – 15 minutes of the tenth hour. A quarter or fifteen minutes has elapsed in the hour leading to the named next hour. The ordinal is genitive; the event-time phrase also has its introductory preposition.
+
+Наш рейс уезжает в половине пятого. — 4.30 – half of the fifth hour. Мы будем свободны в полвторого. — 1.30 – half of the second hour. Both name a half elapsed in the next ordinal hour. Their retained preposition and noun forms differ; recognize each complete construction rather than exchanging endings mechanically.
+
+Передача начинается без четверти три. — 2.45 – 3 without a quarter. Она обычно приходит на работу без пятнадцати девять. — 8.45 – 9 without 15 minutes. Subtract the stated remaining minutes from the upcoming hour. The preposition meaning without governs the remaining quantity in genitive form. These existing choices do not assess independently building a new event-time sentence.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0841ba209acf9a551291eb2f34e3c41f9ee1d0a81a243c8c52f1627c283b8784
+contentHash=cf7981f927ef33810d8a7b9af6e31e296aafa52220aec873da8fe95d160ccbbe
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-quarter-hour-rem-title`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e7831e2b206bde5db1f5384bbec2e3c6dab80d04db4cf8051ba41f883239a67a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-quarter-hour:calendar:quarter-hour-rem-title
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Review ages and calendar names
+shippedText=Review ages and calendar names
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=253bd4e1cfb457c57461c62504e61e77c03fb0ad3c68994e6de03313298d9209
+contentHash=0c651aff86d8614f73fd0775dd568bf773902e64f161e5a293585079daacab5e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-quarter-hour-teach-1-body`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 486e99693dbd1fed4dee7b8a47f918e868b073c8f5ec9321c84a5fc7a07b2821
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-quarter-hour:calendar:quarter-hour-teach-1-body
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+A current-time question and the time when an event happens are different requests. The retained event sentences use at-time expressions. A preposition introduces several of them, while the without construction expresses minutes remaining until the upcoming hour. Study the complete source examples before selecting their readings.
+shippedText=A current-time question and the time when an event happens are different requests. The retained event sentences use at-time expressions. A preposition introduces several of them, while the without construction expresses minutes remaining until the upcoming hour. Study the complete source examples before selecting their readings.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=025bd52f6ecd28ab14c10c23be0539ddfcd2189dbfe54add467c543242bf89c1
+contentHash=31ca87fd51801690b9837687f6f6cd0ac5740f70423abe7f6b321a80a353a441
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-quarter-hour-teach-1-title`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c378a275a84c46389e6018e2fd1e3a69fcb8137dca6bff07e36f55717bcd6cd7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-quarter-hour:calendar:quarter-hour-teach-1-title
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Clock readings and event times
+shippedText=Clock readings and event times
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fec2f2644204c8b618170dcb438009539976219d72c9fc22a1bd9f3d4c1549c4
+contentHash=73d5d62c8f9633f00282acc1efbe1e99d000a7511563951a58b2e42c9eee388a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-quarter-hour-teach-2-body`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a1e7cbc880b0ed51079a66be9b1f4cfb60dc63dc76af3d11a8eac4e500269468
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-quarter-hour:calendar:quarter-hour-teach-2-body
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Концерт начинается в шесть часов. — 18.00. Она была дома в час. — 13.00. These are the readings assigned by the retained source. The bare six-hour and one-hour expressions do not themselves distinguish evening from morning; the source readings depend on context. Do not infer that every occurrence of six means eighteen.
+shippedText=Концерт начинается в шесть часов. — 18.00. Она была дома в час. — 13.00. These are the readings assigned by the retained source. The bare six-hour and one-hour expressions do not themselves distinguish evening from morning; the source readings depend on context. Do not infer that every occurrence of six means eighteen.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=549839881b3209849eb9d1acbab4972de5cee4a60213fcffc30adeb64c411139
+contentHash=8eaf2eaa0e7a1a9be2b16d26416c3879e6e8c37d19aea41136df833666fc307d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-quarter-hour-teach-2-title`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9e7ff4e8062298b0d0cb9892629137f88d0d9402acba67c73f07c14b7ab2237b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-quarter-hour:calendar:quarter-hour-teach-2-title
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+On the hour and contextual AM or PM
+shippedText=On the hour and contextual AM or PM
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6ceba442ded5bc7e028afc58637f79c8211292a017c92bf027659f9de36d8994
+contentHash=e1a08cb47de90109cd0bee328ad00fbcfef9531bd2b3f3a70cf2f0143a3396c0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-quarter-hour-teach-3-body`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4177e6f40dbb7e16262a04f3325f043b07305e7b2bf0f1d8dc42d03ab164091c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-quarter-hour:calendar:quarter-hour-teach-3-body
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Я приду в четверть восьмого. — 7.15 – quarter of the eighth hour. Он нам позвонил в пятнадцать минут десятого. — 9.15 – 15 minutes of the tenth hour. A quarter or fifteen minutes has elapsed in the hour leading to the named next hour. The ordinal is genitive; the event-time phrase also has its introductory preposition.
+shippedText=Я приду в четверть восьмого. — 7.15 – quarter of the eighth hour. Он нам позвонил в пятнадцать минут десятого. — 9.15 – 15 minutes of the tenth hour. A quarter or fifteen minutes has elapsed in the hour leading to the named next hour. The ordinal is genitive; the event-time phrase also has its introductory preposition.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=000289e4ecb46b4a2705de28189d5d72427aaf4bad163d40eb07f9d9f422b80f
+contentHash=da2fd5b6082a6bce28631398d4eb137b8bcae662a7f223857fd450726fa842ec
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-quarter-hour-teach-3-title`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a61ddeb5f19debeb966d901d147163ae01cf5b13092032e4e3ecf563072b68ae
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-quarter-hour:calendar:quarter-hour-teach-3-title
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Quarter past and the next ordinal
+shippedText=Quarter past and the next ordinal
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4c93c0b63a88b952b4d657c1abfd8d30691634a3be1067283d8f53b78de73f85
+contentHash=da3eda188ad19055a4e0ca8af32b0910b59fb21a191d3d538cad2dde38187105
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-quarter-hour-teach-4-body`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ac0df30280fe0d944155cc51154e8129d1181941ddd947903152ae78359306e8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-quarter-hour:calendar:quarter-hour-teach-4-body
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Наш рейс уезжает в половине пятого. — 4.30 – half of the fifth hour. Мы будем свободны в полвторого. — 1.30 – half of the second hour. Both name a half elapsed in the next ordinal hour. Their retained preposition and noun forms differ; recognize each complete construction rather than exchanging endings mechanically.
+shippedText=Наш рейс уезжает в половине пятого. — 4.30 – half of the fifth hour. Мы будем свободны в полвторого. — 1.30 – half of the second hour. Both name a half elapsed in the next ordinal hour. Their retained preposition and noun forms differ; recognize each complete construction rather than exchanging endings mechanically.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bcf6e02c94edfbbeabaf6bbc27f9da1d54fec6d73af9b6532893bed4b31c4668
+contentHash=4526d712764cce2439fe6f528bf6f0706141221932edbb70caec89e6d8783098
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-quarter-hour-teach-4-title`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3888437f61f964042c2cfd2aee3fa86706806167084cccbe0e4fd6c426fc12c7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-quarter-hour:calendar:quarter-hour-teach-4-title
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Half past in two retained constructions
+shippedText=Half past in two retained constructions
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=113417b9a98bc277c1249d540b999de301c924a5d6ee5b47011d0688289e9a6e
+contentHash=026f52545870dce4200d745c26bedc5c7f1a94120e08f7edd26b1e95f89499e0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-quarter-hour-teach-5-body`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1922635e892e96753ca0b512d4b7d0a39823d318a7428242ee00809597c0564d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-quarter-hour:calendar:quarter-hour-teach-5-body
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Передача начинается без четверти три. — 2.45 – 3 without a quarter. Она обычно приходит на работу без пятнадцати девять. — 8.45 – 9 without 15 minutes. Subtract the stated remaining minutes from the upcoming hour. The preposition meaning without governs the remaining quantity in genitive form. These existing choices do not assess independently building a new event-time sentence.
+shippedText=Передача начинается без четверти три. — 2.45 – 3 without a quarter. Она обычно приходит на работу без пятнадцати девять. — 8.45 – 9 without 15 minutes. Subtract the stated remaining minutes from the upcoming hour. The preposition meaning without governs the remaining quantity in genitive form. These existing choices do not assess independently building a new event-time sentence.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7c35e9c6e6708ae69e62c839274a2ed906f48ea66bf5ce8992b24c93d17a5a5a
+contentHash=3d5cfcde781341af2d883d2acf2392b57dd47d3809f4749404add4da8747eea4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-quarter-hour-teach-5-title`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 77aa654cd6f27d2a43be512dc110c9fdf21622961439b6e0b7b4746dc5081034
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-quarter-hour:calendar:quarter-hour-teach-5-title
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+A quarter before the upcoming hour
+shippedText=A quarter before the upcoming hour
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=388271c54395bc6271ec3d5184d3b64dcaa3f44c9ab408109cdabf89205a79d2
+contentHash=16db69d6434b2083b030f32d12aac0efb71bd4f386f92a6ddd7d9444dc83ace6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-g-age-0-distractor-1`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-orient, u17-s-age
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 196dd913698ef83a899060533ae5196bbb0a82e282eb821ed979701403693c2a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-age:calendar:u17-g-age-0-distractor-1
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+I own 20 summers invents ownership; the shown construction gives an age.
+shippedText=I own 20 summers invents ownership; the shown construction gives an age.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=74fdcc871779c27c7f2e52675a49759b68edcab0093f52c1f5a6f21b2ad26256
+contentHash=d324c3348d2b5bb8dae19bf38a3865a96429186ca415c5235751eabab9a77c50
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-g-age-0-distractor-2`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-orient, u17-s-age
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7f6c91de4cbe801873c7f4ed3d0e80751fdc82593d1050d94696bf41d14de176
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-age:calendar:u17-g-age-0-distractor-2
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+20 people asked me invents people performing an action; the shown construction gives an age.
+shippedText=20 people asked me invents people performing an action; the shown construction gives an age.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=61ffa1ad7a8b5bf5d60bd8616f124c625f6fd4973bbf08441a44d611d17cb2d8
+contentHash=17e2fbbdda0d12fbfbf3460ec9ca4fb3820b1997d03621e6afc3a2f94fa4f118
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-g-age-0-feedback`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-orient, u17-s-age
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 03c552167040574d321a1b891d2bc0245db22099fcd0fd2e1b895477772d35d7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-age:calendar:u17-g-age-0-feedback
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+мне двадцать лет states I am 20 years old. The person whose age is given is in the dative case; the present-time Russian construction has no expressed verb.
+shippedText=мне двадцать лет states I am 20 years old. The person whose age is given is in the dative case; the present-time Russian construction has no expressed verb.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=46c5def93407e17a9e61565d9ff97f195625e95da97c45c5a601fbb016ddf895
+contentHash=9f49da3d9eedf91e2f49c34d369a506710364f0bceb54f65df63adc44a7e20f2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-g-age-0-prompt`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-orient, u17-s-age
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fb6f3f9bfbf5abe411b40b8d2e76bbdca8ce92e12462520a590caf4ffc137cc9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-age:calendar:u17-g-age-0-prompt
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Which natural English states the age in the shown phrase?
+shippedText=Which natural English states the age in the shown phrase?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3d694c2f6fb6df8453c3c0f4236de913ebf5d9f0321616bacf985baf2fd9000b
+contentHash=31e2652d9eed047083475d148984f123852c557f4839193f34fa77eb6c91111c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-g-age-0-rationale`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-orient, u17-s-age
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9cac7a4b0c881ec54a25089fa6792e5b2a05e13cca2ea16ae3671bb31daa4883
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-age:calendar:u17-g-age-0-rationale
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+The age construction мне двадцать лет is natural English I am 20 years old.
+мне двадцать лет states I am 20 years old. The person whose age is given is in the dative case; the present-time Russian construction has no expressed verb.
+shippedText=The age construction мне двадцать лет is natural English I am 20 years old.
+мне двадцать лет states I am 20 years old. The person whose age is given is in the dative case; the present-time Russian construction has no expressed verb.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e48c634c70f0d88113eb25cacb3918a360c8d21945d2e26b56bd1c02307c0890
+contentHash=bd7b82c72cc4d5f3ec3d2158b9aaac5a7ada341483deff656e2fc0a4e3234b44
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-g-calendar-date-0-distractor-1`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 099b75ad0a231039238fd53e77f280f81a363c28502a73db6a68a0d9b16fc188
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-calendar-date:calendar:u17-g-calendar-date-0-distractor-1
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+the month name is a different meaning or construction and does not match the requested reading of the shown form.
+shippedText=the month name is a different meaning or construction and does not match the requested reading of the shown form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e3f841a30917836ea08e619e1e7cf84a519ef8f030d778484861c45a120fd405
+contentHash=3f5547b9147c083a3aaa3fe5adb570f17125d73497c85520bb4a9527e4077862
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-g-calendar-date-0-distractor-2`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0ed802084a818c7205ba21b828ca61c907355cafe523e6e9f3daedcf492a1cf7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-calendar-date:calendar:u17-g-calendar-date-0-distractor-2
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+the day number is a different meaning or construction and does not match the requested reading of the shown form.
+shippedText=the day number is a different meaning or construction and does not match the requested reading of the shown form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=358814f50e37c82955aafa223b8e9387c8cb92a2334541b8ce83aa71c6fec2d8
+contentHash=aa93bb9a4bac65a2eb658430145dd60613c83048fc5b35d0e13f7bf3735f1710
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-g-calendar-date-0-feedback`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c8521dc7dde0e461711ac186a7a9762d4fba9e6e88fcb72133a38ea963627ec9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-calendar-date:calendar:u17-g-calendar-date-0-feedback
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+г. corresponds to year, the abbreviation. Read the relevant date components and distinguish the whole date from an individual component.
+shippedText=г. corresponds to year, the abbreviation. Read the relevant date components and distinguish the whole date from an individual component.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fc3457360e8539818fab4d6b30b800fc935edbf32c36f1d647dd214ca4f1ac76
+contentHash=281d967731819cbbf3cbfc2e3427b4355f2b2f820f6c1a96ffa42a9cf136c112
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-g-calendar-date-0-prompt`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 42859a45cdbdd73a13cfc7982d0823b1235099cb31117cf53fd0cc5e42bd2425
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-calendar-date:calendar:u17-g-calendar-date-0-prompt
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Choose the English description. What does the abbreviation г. contribute in a date?
+shippedText=Choose the English description. What does the abbreviation г. contribute in a date?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bef4ba15af4d5a727cea7016f14529976303057fc0cca239af0f656557ee23d1
+contentHash=a021f6d5570833d25004a0e77f1637fe75cb765f0c4da81d8d69bcb593ee9c97
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-g-calendar-date-0-rationale`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3b4666303eabbf170789218787b5228a70fefd4f62968618381813385c9f0e2f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-calendar-date:calendar:u17-g-calendar-date-0-rationale
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+г. is year, the abbreviation used after the year number in a date.
+г. corresponds to year, the abbreviation. Read the relevant date components and distinguish the whole date from an individual component.
+shippedText=г. is year, the abbreviation used after the year number in a date.
+г. corresponds to year, the abbreviation. Read the relevant date components and distinguish the whole date from an individual component.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c8ad147b937270bd094ed29b086bd9686353e1833ab81beb9d8144b678d564e0
+contentHash=3d535543d7ce687dba0123a7fcf50cc7d6ee70a333ded3e5955c88bfadbc7375
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-g-clock-0-distractor-1`
+
+- Objectives: obj-u17-clock
+- Sessions: u17-s-orient, u17-s-clock
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cac7a0c1d60c8b2b09970451263c3e2a13696921ca8e2ff69179d11c2170f277
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock:calendar:u17-g-clock-0-distractor-1
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Which book do you want? is a different meaning or construction and does not match the requested reading of the shown form.
+shippedText=Which book do you want? is a different meaning or construction and does not match the requested reading of the shown form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=77818efa5fd26858fd7ca880ac74d80c898220111e883fe20c82c584b783869b
+contentHash=90a323cfa6272cf7b920dc6918f7c669838f67db80c0501f2f7c4950760297da
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-g-clock-0-feedback`
+
+- Objectives: obj-u17-clock
+- Sessions: u17-s-orient, u17-s-clock
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 87e8f6ddaddd53759099aae91f7e3422bb82b7a350ff2080d1f1b49deb7ab116
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock:calendar:u17-g-clock-0-feedback
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Который час? corresponds to What time is it?. The complete question asks for the current clock time.
+shippedText=Который час? corresponds to What time is it?. The complete question asks for the current clock time.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cfd3ecc252727abd3af3a6db67589c15623212979ec14bd00a74c8ac37c11083
+contentHash=a0f8482a806137890fa1cb4057196aa893cb773baaa26f300a5299986c4229ad
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-g-clock-0-prompt`
+
+- Objectives: obj-u17-clock
+- Sessions: u17-s-orient, u17-s-clock
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0592c4baf73b5eb1f8266416a8d867b03d073e78e8cdc88cf2dc03da81c68091
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock:calendar:u17-g-clock-0-prompt
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Which admitted English gloss is written beside the shown form?
+shippedText=Which admitted English gloss is written beside the shown form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b11379637f4e5b8fad0493cc41e996c1780cee5d12d611a2d2836d3ef06d635a
+contentHash=36286f0b4367f601ced335b44ab09c077e15795872b1c51a6b22165b4d2cdd1b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-g-clock-0-rationale`
+
+- Objectives: obj-u17-clock
+- Sessions: u17-s-orient, u17-s-clock
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: deaa623a8bafc061d9888cbb23107b63bec1ffa07b18a6dc52b3a07428d165f0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock:calendar:u17-g-clock-0-rationale
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+The frozen source pairs the shown form "Который час?" with the admitted gloss "What time is it?".
+Который час? corresponds to What time is it?. The complete question asks for the current clock time.
+shippedText=The frozen source pairs the shown form "Который час?" with the admitted gloss "What time is it?".
+Который час? corresponds to What time is it?. The complete question asks for the current clock time.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=79b1f4ab1b1665fb3bf3fc775714205352f3f1f99520f736628d082fb1e493a3
+contentHash=cc2ea4e38142d44ce51393484041d649088fb025145e6e9d7795b5b5efd41012
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-g-clock-answers-0-distractor-1`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-orient, u17-s-clock-answers
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c8f11607498fc54ad86a31aa9a3886dcb04a8fea472cc64fbc9c682c1e039176
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-answers:calendar:u17-g-clock-answers-0-distractor-1
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+7:30 is a different meaning or construction and does not match the requested reading of the shown form.
+shippedText=7:30 is a different meaning or construction and does not match the requested reading of the shown form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5cc083f3abfabcd515a34b7cde2a1026e9260e302f8ef9b787aa6903def50d6c
+contentHash=d09b7013450abfd4231e7ea4adaa1a9a7cad3950afb82d3c371dac1c1bfbe168
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-g-clock-answers-0-distractor-2`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-orient, u17-s-clock-answers
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 244ff1030b99577afd951ac23efe6337a39a6834ee1c1ea523c00a96ba8e2a88
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-answers:calendar:u17-g-clock-answers-0-distractor-2
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+7:45 is a different meaning or construction and does not match the requested reading of the shown form.
+shippedText=7:45 is a different meaning or construction and does not match the requested reading of the shown form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2645b010826602b13a87f6dae563885a08eb477fa46ed3653dc4588b2176b966
+contentHash=701e4bdfb084f46c0f508043cc61d8008969c99631f77449657764f039fafcae
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-g-clock-answers-0-feedback`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-orient, u17-s-clock-answers
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9e8b2b4b3bfe2851bc28de7d6f06b5a9ca4f7966d5d4acfdf32a72101e698e69
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-answers:calendar:u17-g-clock-answers-0-feedback
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+четверть восьмого corresponds to 7:15. Interpret the whole expression as elapsed or remaining parts of the next hour, rather than copying its hour numeral.
+shippedText=четверть восьмого corresponds to 7:15. Interpret the whole expression as elapsed or remaining parts of the next hour, rather than copying its hour numeral.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=981e04a510816de3fd4c62feb1adb9c2115f90acaa00a45e1660196c85ea5b87
+contentHash=1d202a1e3be0f23eff3be50ee905237b4281ed3d41d4db44a32e0b965e4d662e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-g-clock-answers-0-prompt`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-orient, u17-s-clock-answers
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 438d989f3bdb47f9719f40750ef4745d9e2c84401d467e19d16e58dae32495cb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-answers:calendar:u17-g-clock-answers-0-prompt
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Which admitted English gloss is written beside the shown form?
+shippedText=Which admitted English gloss is written beside the shown form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b11379637f4e5b8fad0493cc41e996c1780cee5d12d611a2d2836d3ef06d635a
+contentHash=36286f0b4367f601ced335b44ab09c077e15795872b1c51a6b22165b4d2cdd1b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-g-clock-answers-0-rationale`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-orient, u17-s-clock-answers
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b36673f0ec2ea5e751c112e7286b5c17f0d314e1400e85d21864f29e864efb3e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-answers:calendar:u17-g-clock-answers-0-rationale
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+The frozen source pairs the shown form "четверть восьмого" with the admitted gloss "7:15" ("quarter of the eighth hour").
+четверть восьмого corresponds to 7:15. Interpret the whole expression as elapsed or remaining parts of the next hour, rather than copying its hour numeral.
+shippedText=The frozen source pairs the shown form "четверть восьмого" with the admitted gloss "7:15" ("quarter of the eighth hour").
+четверть восьмого corresponds to 7:15. Interpret the whole expression as elapsed or remaining parts of the next hour, rather than copying its hour numeral.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=77e7cb922c7b5a9d9a6a52be5fcef1d22a8cac9bc583ba8060062f1983be531a
+contentHash=9806e517335b0706baf670c875a9437c6e705328f996da9334c2f8b528a1c5e2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-g-clock-productive-0-distractor-1`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-orient, u17-s-clock-productive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 797b35002a1d43ff2398b1d893bcafb9e28d8996d54b66428b56e3d61d186f16
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-productive:calendar:u17-g-clock-productive-0-distractor-1
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+в час пятнадцать минут is a different meaning or construction and does not match the requested reading of the shown form.
+shippedText=в час пятнадцать минут is a different meaning or construction and does not match the requested reading of the shown form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5159959f983905f262248648d1bfd0e1bef30f7bffe35860c548c513d9f5575a
+contentHash=021b8a48caa62808cf436991bf6f3b70575417b7f55466a3369be38f143050df
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-g-clock-productive-0-feedback`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-orient, u17-s-clock-productive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: df45cd77229c9de2d41d7e06a5824e306d02bc12564ed3882fe96c44779ec855
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-productive:calendar:u17-g-clock-productive-0-feedback
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+In Russian we can state the number of minutes into the hour which is in progress. corresponds to в пятнадцать минут второго. Select the requested construction type: elapsed minutes in the hour in progress, minutes remaining, or reading the dial numbers.
+shippedText=In Russian we can state the number of minutes into the hour which is in progress. corresponds to в пятнадцать минут второго. Select the requested construction type: elapsed minutes in the hour in progress, minutes remaining, or reading the dial numbers.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2a1d4f321f78de662db999852ddd10da72920971e4ef7beaf798e7c3c20f81a0
+contentHash=3424ff0af3f46e455f9adfdb1e74fce658943998d891abc07a2159b32010ddb3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-g-clock-productive-0-prompt`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-orient, u17-s-clock-productive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b5d2ba7783aab03cd10eb250a4803b70f7703cdc40057f7124a88c21ac3b3548
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-productive:calendar:u17-g-clock-productive-0-prompt
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Which admitted expression states the minutes into the hour in progress?
+shippedText=Which admitted expression states the minutes into the hour in progress?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=14b588aff711ea1d1bc7d883fa5d625c032eaee219b79a5c543e41f59686208e
+contentHash=634b54ce505d606789eacb8ece233c3badc7487d2e69e94e72a2cffb5980a0d6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-g-clock-productive-0-rationale`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-orient, u17-s-clock-productive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d215eb896e50e738309f6226dc01990bb9010a736ed09590abc782c7edea01ea
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-productive:calendar:u17-g-clock-productive-0-rationale
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+The frozen source pairs the shown form "в пятнадцать минут второго" with the admitted gloss "at the fifteenth minute of the second [hour]". The shown rule is "In Russian we can state the number of minutes into the hour which is in progress." That states the minutes into the hour in progress.
+In Russian we can state the number of minutes into the hour which is in progress. corresponds to в пятнадцать минут второго. Select the requested construction type: elapsed minutes in the hour in progress, minutes remaining, or reading the dial numbers.
+shippedText=The frozen source pairs the shown form "в пятнадцать минут второго" with the admitted gloss "at the fifteenth minute of the second [hour]". The shown rule is "In Russian we can state the number of minutes into the hour which is in progress." That states the minutes into the hour in progress.
+In Russian we can state the number of minutes into the hour which is in progress. corresponds to в пятнадцать минут второго. Select the requested construction type: elapsed minutes in the hour in progress, minutes remaining, or reading the dial numbers.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3a84ca91b8eea8af503cd5bd6122db18b6d7ecdf6b121ee040ff87c722ab354c
+contentHash=43f1af89d94251c118d26861735def8596a8d87d8ac73c92b014f464d31ced3f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-g-months-0-distractor-1`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-orient, u17-s-months
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3d943010348a7d5e81710c5ce6aacfab5f135cf47777f39bc9daae6588a2c00d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-months:calendar:u17-g-months-0-distractor-1
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+February names a different month and does not match the shown word.
+shippedText=February names a different month and does not match the shown word.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cc5480db3c6b10c862f32e81f7849f759f2450e707ef30253641a1a625ce028b
+contentHash=b6ca07defa5090d3a462f4521f9823a8319be66d47d7b5aba40cfcdeec5a0020
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-g-months-0-distractor-2`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-orient, u17-s-months
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b891f8f8b59f1196eb559ffa292c31c2151167049536f4e7d67e94943b63f409
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-months:calendar:u17-g-months-0-distractor-2
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+March names a different month and does not match the shown word.
+shippedText=March names a different month and does not match the shown word.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b385e60ae802e1ee17493d39002c19880ae5c735a7adfdfd167dfacfad4296d5
+contentHash=9f8182dea84c7e34311b44fc6d11f1226f429b25a13114506d87bc70848b91b0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-g-months-0-feedback`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-orient, u17-s-months
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5988bd344c6230f31aba182cea43f8df8bedae94d96e01516c6bbda0ca86212f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-months:calendar:u17-g-months-0-feedback
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Январь means January. This names a month; choose the matching English name.
+shippedText=Январь means January. This names a month; choose the matching English name.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b7133f19f378c76a0bffe8b6d417f8f52428b9ee5a67c3aa24d9e3f598957179
+contentHash=415530bd0f1233d5693b02b2d02e4d77bf966f1851ee311a2746ac0f65c0eab9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-g-months-0-prompt`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-orient, u17-s-months
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c8daecc02df31786d1a75db820936a42ccaa7589b3a5c6544d50381cc2c5c785
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-months:calendar:u17-g-months-0-prompt
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Which admitted English gloss is written beside the shown form?
+shippedText=Which admitted English gloss is written beside the shown form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b11379637f4e5b8fad0493cc41e996c1780cee5d12d611a2d2836d3ef06d635a
+contentHash=36286f0b4367f601ced335b44ab09c077e15795872b1c51a6b22165b4d2cdd1b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-g-months-0-rationale`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-orient, u17-s-months
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: eba7dba6fe4323b3a5f830deb4ed3059cc6095fc2b72f0fe7d135d1d25f4f8d1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-months:calendar:u17-g-months-0-rationale
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Январь || January
+Январь means January. This names a month; choose the matching English name.
+shippedText=Январь || January
+Январь means January. This names a month; choose the matching English name.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b4dc85f2a1bbeff442e318f576f85a84107f664c5626074b8d61c7d525793c70
+contentHash=6a89efc10eecf7aaf9f0cb431664d85a3650437b0e84f9f55191b5eaf5284e12
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-g-quarter-hour-0-distractor-1`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 742f5bef03798de66c7be115cc95df6b856e4f8bad2005b41766454a3535fa69
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-quarter-hour:calendar:u17-g-quarter-hour-0-distractor-1
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+7.15 – quarter of the eighth hour is a different meaning or construction and does not match the requested reading of the shown form.
+shippedText=7.15 – quarter of the eighth hour is a different meaning or construction and does not match the requested reading of the shown form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=525c8d9224545ff0057036b7a676bc72db08659c7c4db08557e2d229df075fe2
+contentHash=7ed4d3590deda2a4229d77d3be9a97190ccb0e69a9353c5678f885599a1d98f8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-g-quarter-hour-0-distractor-2`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 54e91c8c14512d61948638f34ea62180fa1fc20d542d6dcd4ad57957565df39d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-quarter-hour:calendar:u17-g-quarter-hour-0-distractor-2
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+4.30 – half of the fifth hour is a different meaning or construction and does not match the requested reading of the shown form.
+shippedText=4.30 – half of the fifth hour is a different meaning or construction and does not match the requested reading of the shown form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=37c5c0a65e19e645acd923fb2e07356d1602839c37a0bf337fade2e323b0544b
+contentHash=220def037d7b664fb70ef4af7abc9a13224bd73859e743880d875a3ac2b7ba42
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-g-quarter-hour-0-feedback`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 64bd883eaf4421804d825ebba2516a887d8e21a718079314da96d52805de37f9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-quarter-hour:calendar:u17-g-quarter-hour-0-feedback
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Концерт начинается в шесть часов. corresponds to 18.00. Interpret the complete event-time expression using the retained source reading; a bare hour alone does not specify AM or PM.
+shippedText=Концерт начинается в шесть часов. corresponds to 18.00. Interpret the complete event-time expression using the retained source reading; a bare hour alone does not specify AM or PM.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=73798d54b1e19f794b1b77fede2202b7714b831025df99e53af11b32ab339e9e
+contentHash=c735b707cb7d509156975a823d48cb5e9a7d6e3b5a12d8ebdc43459016b0c554
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-g-quarter-hour-0-prompt`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0dcdc2486c668edb4701c0c72e69cadc408d642678ad7fc16cd9f714757fd1e6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-quarter-hour:calendar:u17-g-quarter-hour-0-prompt
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Which admitted English gloss is written beside the shown form?
+shippedText=Which admitted English gloss is written beside the shown form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b11379637f4e5b8fad0493cc41e996c1780cee5d12d611a2d2836d3ef06d635a
+contentHash=36286f0b4367f601ced335b44ab09c077e15795872b1c51a6b22165b4d2cdd1b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-g-quarter-hour-0-rationale`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6cea3cfd1c608f113cc89f0e1b0f71befdcf7687ddbd36f1140a76acba900fd3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-quarter-hour:calendar:u17-g-quarter-hour-0-rationale
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+The frozen source pairs the shown form "Концерт начинается в шесть часов." with the admitted gloss "18.00".
+Концерт начинается в шесть часов. corresponds to 18.00. Interpret the complete event-time expression using the retained source reading; a bare hour alone does not specify AM or PM.
+shippedText=The frozen source pairs the shown form "Концерт начинается в шесть часов." with the admitted gloss "18.00".
+Концерт начинается в шесть часов. corresponds to 18.00. Interpret the complete event-time expression using the retained source reading; a bare hour alone does not specify AM or PM.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8b0baefb9773499ccf4cd191ccfa522093c971e672226993fede546c583d90dc
+contentHash=64458ea853d8403a5e4adfa3c7195be607ad81f5ad0dc7867b4ae041e4b17f45
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-g-weekdays-0-distractor-1`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f729a929eefd83b948a307032a10157d70462394bb916a7af3dd42d7160071c7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-weekdays:calendar:u17-g-weekdays-0-distractor-1
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Tuesday names a different day of the week and does not match the shown word.
+shippedText=Tuesday names a different day of the week and does not match the shown word.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=766db5d008610e91d956a23797ec35ebfdc316e24816c9090957d333c35d1c1a
+contentHash=755f9a9b775593244e6a4a7e3258d90b3c5a53632a9d8140748ee69f4ff9f0a5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-g-weekdays-0-distractor-2`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 81d7cd8eb77fe5893457f9d443fb2d769bebd64025b30ec251f586a7ca9f185f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-weekdays:calendar:u17-g-weekdays-0-distractor-2
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Wednesday names a different day of the week and does not match the shown word.
+shippedText=Wednesday names a different day of the week and does not match the shown word.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ef05b473d4560997d8c25edafe3c75d45de2a659a0404c08700491295b4a1023
+contentHash=032bfe4b486dcfa2fdcec87a60a4dbef1d1b95224140c160f2250bdf5c11ad9f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-g-weekdays-0-feedback`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 053f995fc71bb5020037199bff2280d6c3278d8a46cb0c9b6f652eaf06c5a779
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-weekdays:calendar:u17-g-weekdays-0-feedback
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+понедельник means Monday. This names a day of the week; choose the matching English name.
+shippedText=понедельник means Monday. This names a day of the week; choose the matching English name.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=491af3ac9df45bd57b0114c1527e81925945f5eecc64cabc33da97e996dc2a61
+contentHash=59ebd8c5151977b4cfe20967a1a07143ad430cc40b795ed5ca8f715ca207f493
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-g-weekdays-0-prompt`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 449b0b498078d71cf5622fa90b6559fa278c8eade5c6138ce5ab4a1a45e99d89
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-weekdays:calendar:u17-g-weekdays-0-prompt
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Which admitted English gloss is written beside the shown form?
+shippedText=Which admitted English gloss is written beside the shown form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b11379637f4e5b8fad0493cc41e996c1780cee5d12d611a2d2836d3ef06d635a
+contentHash=36286f0b4367f601ced335b44ab09c077e15795872b1c51a6b22165b4d2cdd1b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-g-weekdays-0-rationale`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cb06d6628ef276dd6812694a870451e76a24ff4a1bd8a3af5c6fc889dafc07b9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-weekdays:calendar:u17-g-weekdays-0-rationale
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+понедельник || noun || Monday
+понедельник means Monday. This names a day of the week; choose the matching English name.
+shippedText=понедельник || noun || Monday
+понедельник means Monday. This names a day of the week; choose the matching English name.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0df5892ac22cdb645da03dbe218123712a55c84d402e90584bcfdb4daf07ce91
+contentHash=bc4236c1a31b308a352b0dbd23925d0ed0f581dd646943e29740dabb1f0b854c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-age-1-distractor-1`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-orient, u17-s-age
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e262318a764f75e397c13429e50715d5db731effcec1d2b04e3acb7eaa204408
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-age:calendar:u17-i-age-1-distractor-1
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+age statements is a section label rather than the meaning of this phrase.
+shippedText=age statements is a section label rather than the meaning of this phrase.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b7d69f2b718662449c1006094c287552eb96b4936c01c06dcf6df64ff829d257
+contentHash=2eb211a7a471ac84354e39b9eba39249c6afc889d06b98f26a6b82e58004d7af
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-age-1-feedback`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-orient, u17-s-age
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 787d31ab563b8fa964cfc5d828424729d59c940e5e6df9457c54479f21439c62
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-age:calendar:u17-i-age-1-feedback
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+мне двадцать лет means I am 20 (years old). The dative person and the number of years together state the age.
+shippedText=мне двадцать лет means I am 20 (years old). The dative person and the number of years together state the age.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=82c2d26e3eab547317f16249153bd3d3109c9213dd25a876f0f529916b6b02ab
+contentHash=c189701d5d7bc7449ef580ab2c855680416d3cbb0fdc963a5560190fd91090fb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-age-1-prompt`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-orient, u17-s-age
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 55b382b3fb7926f08d2264078e88c4cce4aa1a68ee6c0c7a17b9ffd22d275ec7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-age:calendar:u17-i-age-1-prompt
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Which admitted English gloss is written beside the shown form?
+shippedText=Which admitted English gloss is written beside the shown form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b11379637f4e5b8fad0493cc41e996c1780cee5d12d611a2d2836d3ef06d635a
+contentHash=36286f0b4367f601ced335b44ab09c077e15795872b1c51a6b22165b4d2cdd1b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-age-1-rationale`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-orient, u17-s-age
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f278b0470d652dd47ae5b8b1df907f99000b8057dc7811cfaa23600dc192183d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-age:calendar:u17-i-age-1-rationale
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+The frozen source pairs the shown form "мне двадцать лет" with the admitted gloss "I am 20 (years old)".
+мне двадцать лет means I am 20 (years old). The dative person and the number of years together state the age.
+shippedText=The frozen source pairs the shown form "мне двадцать лет" with the admitted gloss "I am 20 (years old)".
+мне двадцать лет means I am 20 (years old). The dative person and the number of years together state the age.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cac58fdf66c86c7dcc7ecd88b61bfa0ee6043016f59764e2a4dcff8232d9d558
+contentHash=5f0add21672377f9ced81f63a5d84132195337612b7e4e9331552f2bbefdccd2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-age-2-distractor-1`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-orient, u17-s-age
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: eedea573a3bbad266210e9bf2ec56da55195029dcc4edc12d1939a98e5f7e92b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-age:calendar:u17-i-age-2-distractor-1
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+age statements is a section label rather than the meaning of this phrase.
+shippedText=age statements is a section label rather than the meaning of this phrase.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b7d69f2b718662449c1006094c287552eb96b4936c01c06dcf6df64ff829d257
+contentHash=2eb211a7a471ac84354e39b9eba39249c6afc889d06b98f26a6b82e58004d7af
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-age-2-feedback`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-orient, u17-s-age
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f92f7c396f2470426afdc7804ec8a24207c373ae9a7c6e3011846e58580052ba
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-age:calendar:u17-i-age-2-feedback
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+двадцать лет means 20 years. This quantity phrase does not by itself identify whose age is meant.
+shippedText=двадцать лет means 20 years. This quantity phrase does not by itself identify whose age is meant.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=177cd8bf54fc080a1b1362581de0d74e51881b2a0af90e5745ef1154e521530a
+contentHash=d350392a45eadd9bd516c941d8e445ab355a7822baa86800a3d42a38e9f15957
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-age-2-prompt`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-orient, u17-s-age
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: aa7944b5b2e5cdfc6843df9f49c4ec48cc9b5d2e6455a17b2840596de149bf96
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-age:calendar:u17-i-age-2-prompt
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Which admitted English gloss is written beside the shown form?
+shippedText=Which admitted English gloss is written beside the shown form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b11379637f4e5b8fad0493cc41e996c1780cee5d12d611a2d2836d3ef06d635a
+contentHash=36286f0b4367f601ced335b44ab09c077e15795872b1c51a6b22165b4d2cdd1b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-age-2-rationale`
+
+- Objectives: obj-u17-age
+- Sessions: u17-s-orient, u17-s-age
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a4079cdef5f01ce3814d65f18018692859c3679b4256fca2f86bdfd502b1bab7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-age:calendar:u17-i-age-2-rationale
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+The frozen source pairs the shown form "двадцать лет" with the admitted gloss "20 years".
+двадцать лет means 20 years. This quantity phrase does not by itself identify whose age is meant.
+shippedText=The frozen source pairs the shown form "двадцать лет" with the admitted gloss "20 years".
+двадцать лет means 20 years. This quantity phrase does not by itself identify whose age is meant.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=98c2b13568b14860f3e06a7690d51e8da980bcdffe3abad8542790ea33a450d6
+contentHash=d2636b21d712b12f7756b72da5596bde343e3810761aea33fcc5b9ce86e79c77
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-calendar-date-1-distractor-1`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8371a8fa7171b97ec3b3c6182e5dbd18efe4802d2af98df49f3982541ef633ca
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-calendar-date:calendar:u17-i-calendar-date-1-distractor-1
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+the month in genitive case is a different meaning or construction and does not match the requested reading of the shown form.
+shippedText=the month in genitive case is a different meaning or construction and does not match the requested reading of the shown form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=053d00a61fa99c963be953024366678f5f3db3c4d901978ce4ae21b743638122
+contentHash=fedd6ddb495ea584d627e73f11356e70ea74a2515ce6d70547bd3e078f278121
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-calendar-date-1-distractor-2`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1d8543f2096744409398eee6822451f2708dc52a02d2e2d8a1dd03edf16ec079
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-calendar-date:calendar:u17-i-calendar-date-1-distractor-2
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+28.08.17 is a different meaning or construction and does not match the requested reading of the shown form.
+shippedText=28.08.17 is a different meaning or construction and does not match the requested reading of the shown form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3de865cb4f083b6b50d2c8290eadb6877fe7dc9ef3362ffe650ced81be15a958
+contentHash=e128471002bdf64494932853aaa06d23321807e6694b099a78d7de97429aaf53
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-calendar-date-1-feedback`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e0b8c1803421896b8ee4c53018156cc3e94fcd26b85ff444883f396f4f0ffead
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-calendar-date:calendar:u17-i-calendar-date-1-feedback
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+28 августа 2017 г. corresponds to day month year. Read the relevant date components and distinguish the whole date from an individual component.
+shippedText=28 августа 2017 г. corresponds to day month year. Read the relevant date components and distinguish the whole date from an individual component.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1dcc3b3aeeae5b49046c5c9b90edaadeea376ffc25c622f023672294c539c213
+contentHash=dace404a447aed2eb19ccd59969ee286f6fc2c1989ad57e60a15dce557e0eb92
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-calendar-date-1-prompt`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 65f711f358a3ce13c6fd691422b6e4f3498fc7bf7c385ab6bc83ddeebe5059ab
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-calendar-date:calendar:u17-i-calendar-date-1-prompt
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Which admitted English gloss is written beside the shown form?
+shippedText=Which admitted English gloss is written beside the shown form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b11379637f4e5b8fad0493cc41e996c1780cee5d12d611a2d2836d3ef06d635a
+contentHash=36286f0b4367f601ced335b44ab09c077e15795872b1c51a6b22165b4d2cdd1b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-calendar-date-1-rationale`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4f00140a00e5a6da9ca681aaf463451d683c6f3b27c4b1168805de789e36fda9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-calendar-date:calendar:u17-i-calendar-date-1-rationale
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+The frozen source pairs the shown form "28 августа 2017 г." with the admitted gloss "day month year" ("dates are usually written").
+28 августа 2017 г. corresponds to day month year. Read the relevant date components and distinguish the whole date from an individual component.
+shippedText=The frozen source pairs the shown form "28 августа 2017 г." with the admitted gloss "day month year" ("dates are usually written").
+28 августа 2017 г. corresponds to day month year. Read the relevant date components and distinguish the whole date from an individual component.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=dbe7af9c134dbad90182d30072236eea8d4ea8796348773f7c73d0b3891c44c5
+contentHash=43a61f3a7c97935990df2991e43904501359beec8e760df66f11941acc2ca47c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-calendar-date-2-distractor-1`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dce050a20d648b15681decaad1be7a7a7e6a06aecf1770f1ad2cbee04b6e396b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-calendar-date:calendar:u17-i-calendar-date-2-distractor-1
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+the month alone is a different meaning or construction and does not match the requested reading of the shown form.
+shippedText=the month alone is a different meaning or construction and does not match the requested reading of the shown form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=483c3ff2c19e57bd9f425a129f0be1502ba3a1549c6b436e44cb0c68bc9e89d5
+contentHash=0b800c8ad24300405908f7b1fbe4d08c992d42bb104f006d748dd80ecd0ecfae
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-calendar-date-2-distractor-2`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bf563fe826fc6d1c9118ca5e53e28cce1e93dc9f555ab2231163eb9b583cbf6d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-calendar-date:calendar:u17-i-calendar-date-2-distractor-2
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+the year abbreviation alone is a different meaning or construction and does not match the requested reading of the shown form.
+shippedText=the year abbreviation alone is a different meaning or construction and does not match the requested reading of the shown form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=35d9dc64caeedb9e27fa24c377d87dba45fd77a2f1a0d3e95f6ecfbfd338f6d5
+contentHash=132564255cd870a2aae732b120655350765476c332373cd25116c21472b779b7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-calendar-date-2-feedback`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f91795619d6de71de4f249584ef5e81db41f9acb04085870f9e83f4fd80ab0b9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-calendar-date:calendar:u17-i-calendar-date-2-feedback
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+15 мая 1996 г. corresponds to 15 May 1996. Read the relevant date components and distinguish the whole date from an individual component.
+shippedText=15 мая 1996 г. corresponds to 15 May 1996. Read the relevant date components and distinguish the whole date from an individual component.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bf6029d3e011df70dc77c110493296dc4efb684d1d1614391da3129ad0c437b2
+contentHash=a79da0cc8db62c04be28adc65bab1b4f727ff19bd871f59400509ee1c6aae377
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-calendar-date-2-prompt`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e6a2103860315edf436ec198cbb02621c593494fe054b4024acbed1ec1d3e3b6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-calendar-date:calendar:u17-i-calendar-date-2-prompt
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Choose the English description. Which reading translates the whole shown date?
+shippedText=Choose the English description. Which reading translates the whole shown date?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7c041f586752090678f644d1a4a76b075d2c1dec315bad3dfdc1ad26dae453aa
+contentHash=19afffbc518f50bfd9fc5419bf7513dd5c4a777302d161c8411b16530d404731
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-calendar-date-2-rationale`
+
+- Objectives: obj-u17-calendar-date
+- Sessions: u17-s-orient, u17-s-calendar-date
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1cbf3d2610d567b9243e383b6affa548354238d8ef59fb9b7e7d2111deab8433
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-calendar-date:calendar:u17-i-calendar-date-2-rationale
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+15 мая 1996 г. is 15 May 1996: the complete date gives the day, month and year.
+15 мая 1996 г. corresponds to 15 May 1996. Read the relevant date components and distinguish the whole date from an individual component.
+shippedText=15 мая 1996 г. is 15 May 1996: the complete date gives the day, month and year.
+15 мая 1996 г. corresponds to 15 May 1996. Read the relevant date components and distinguish the whole date from an individual component.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6e8b6573cc3cf0cdea127ae9408947de0fe687b892f2606d3da0e0ef7183a092
+contentHash=a247b73edf11b24f2e6b7aa95774311d7534970797da587446eebc0a37524200
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-clock-1-distractor-1`
+
+- Objectives: obj-u17-clock
+- Sessions: u17-s-orient, u17-s-clock
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4d326d96ccefd17580d4c6959d3b0068a92b923a643121337212f5fed0f250be
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock:calendar:u17-i-clock-1-distractor-1
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Which book do you want? is a different meaning or construction and does not match the requested reading of the shown form.
+shippedText=Which book do you want? is a different meaning or construction and does not match the requested reading of the shown form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=77818efa5fd26858fd7ca880ac74d80c898220111e883fe20c82c584b783869b
+contentHash=90a323cfa6272cf7b920dc6918f7c669838f67db80c0501f2f7c4950760297da
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-clock-1-feedback`
+
+- Objectives: obj-u17-clock
+- Sessions: u17-s-orient, u17-s-clock
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 618ae364afc00f47438a5e7763859fe5197f95758aa48cb0cdbe959eaacdbfaa
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock:calendar:u17-i-clock-1-feedback
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Который час? corresponds to What time is it?. The complete question asks for the current clock time.
+shippedText=Который час? corresponds to What time is it?. The complete question asks for the current clock time.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cfd3ecc252727abd3af3a6db67589c15623212979ec14bd00a74c8ac37c11083
+contentHash=a0f8482a806137890fa1cb4057196aa893cb773baaa26f300a5299986c4229ad
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-clock-1-prompt`
+
+- Objectives: obj-u17-clock
+- Sessions: u17-s-orient, u17-s-clock
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d0ec67e00ecf73ab4d1d00197ed49a03f3107e4e52a55a5a95c7eec0765616f8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock:calendar:u17-i-clock-1-prompt
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Which admitted English gloss is written beside the shown form?
+shippedText=Which admitted English gloss is written beside the shown form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b11379637f4e5b8fad0493cc41e996c1780cee5d12d611a2d2836d3ef06d635a
+contentHash=36286f0b4367f601ced335b44ab09c077e15795872b1c51a6b22165b4d2cdd1b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-clock-1-rationale`
+
+- Objectives: obj-u17-clock
+- Sessions: u17-s-orient, u17-s-clock
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 88236765b60e983ab9529b5ae7e5f5bcfc4287e5ed64ca86befc626eba97778d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock:calendar:u17-i-clock-1-rationale
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+The frozen source pairs the shown form "Который час?" with the admitted gloss "What time is it?".
+Который час? corresponds to What time is it?. The complete question asks for the current clock time.
+shippedText=The frozen source pairs the shown form "Который час?" with the admitted gloss "What time is it?".
+Который час? corresponds to What time is it?. The complete question asks for the current clock time.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=79b1f4ab1b1665fb3bf3fc775714205352f3f1f99520f736628d082fb1e493a3
+contentHash=cc2ea4e38142d44ce51393484041d649088fb025145e6e9d7795b5b5efd41012
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-clock-2-distractor-1`
+
+- Objectives: obj-u17-clock
+- Sessions: u17-s-orient, u17-s-clock
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4ca71e2f9458bcb56d694b67a5cbb6bb908c575fbe898df38c03ac1fd3f076d1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock:calendar:u17-i-clock-2-distractor-1
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Which book do you want? is a different meaning or construction and does not match the requested reading of the shown form.
+shippedText=Which book do you want? is a different meaning or construction and does not match the requested reading of the shown form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=77818efa5fd26858fd7ca880ac74d80c898220111e883fe20c82c584b783869b
+contentHash=90a323cfa6272cf7b920dc6918f7c669838f67db80c0501f2f7c4950760297da
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-clock-2-feedback`
+
+- Objectives: obj-u17-clock
+- Sessions: u17-s-orient, u17-s-clock
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4d6210c79a59c1a3ce1e04494f5f27cfa7143de0868c7f6c57c9ba2836fc696b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock:calendar:u17-i-clock-2-feedback
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Который час? corresponds to What time is it?. The complete question asks for the current clock time.
+shippedText=Который час? corresponds to What time is it?. The complete question asks for the current clock time.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cfd3ecc252727abd3af3a6db67589c15623212979ec14bd00a74c8ac37c11083
+contentHash=a0f8482a806137890fa1cb4057196aa893cb773baaa26f300a5299986c4229ad
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-clock-2-prompt`
+
+- Objectives: obj-u17-clock
+- Sessions: u17-s-orient, u17-s-clock
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 82f567f2ad00edfb8e6f9ccd77fffa82f62fbc6dda124d67bfe09736865493bf
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock:calendar:u17-i-clock-2-prompt
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Which admitted English gloss is written beside the shown form?
+shippedText=Which admitted English gloss is written beside the shown form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b11379637f4e5b8fad0493cc41e996c1780cee5d12d611a2d2836d3ef06d635a
+contentHash=36286f0b4367f601ced335b44ab09c077e15795872b1c51a6b22165b4d2cdd1b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-clock-2-rationale`
+
+- Objectives: obj-u17-clock
+- Sessions: u17-s-orient, u17-s-clock
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e7b9fc2040db7576569ea5a2facde0a8d1518eaae6e93829ccc48dad56b2cceb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock:calendar:u17-i-clock-2-rationale
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+The frozen source pairs the shown form "Который час?" with the admitted gloss "What time is it?".
+Который час? corresponds to What time is it?. The complete question asks for the current clock time.
+shippedText=The frozen source pairs the shown form "Который час?" with the admitted gloss "What time is it?".
+Который час? corresponds to What time is it?. The complete question asks for the current clock time.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=79b1f4ab1b1665fb3bf3fc775714205352f3f1f99520f736628d082fb1e493a3
+contentHash=cc2ea4e38142d44ce51393484041d649088fb025145e6e9d7795b5b5efd41012
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-clock-answers-1-distractor-1`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-orient, u17-s-clock-answers
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bc5e37abf02835afff912010abac97acc06c9398c29994dcd02d1b81fceb53bb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-answers:calendar:u17-i-clock-answers-1-distractor-1
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+7:15 is a different meaning or construction and does not match the requested reading of the shown form.
+shippedText=7:15 is a different meaning or construction and does not match the requested reading of the shown form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5e0abcd8a1fe4cb4838da6e170c1139d47e5f314c5d744933b229768a1380ae8
+contentHash=5070e2b8976d44e3b99d0cc18dcd9f48157f756795b4b5d20dc1b9b78967460b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-clock-answers-1-distractor-2`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-orient, u17-s-clock-answers
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 22b50fea90f28d0a4712e15c166258b047bf54ff18cbb77a70979339da6bd9fd
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-answers:calendar:u17-i-clock-answers-1-distractor-2
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+7:45 is a different meaning or construction and does not match the requested reading of the shown form.
+shippedText=7:45 is a different meaning or construction and does not match the requested reading of the shown form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2645b010826602b13a87f6dae563885a08eb477fa46ed3653dc4588b2176b966
+contentHash=701e4bdfb084f46c0f508043cc61d8008969c99631f77449657764f039fafcae
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-clock-answers-1-feedback`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-orient, u17-s-clock-answers
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 985f30804cc741f3b73171b9dfea4a7ffbc696090db816fb7b9f571ed3faff95
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-answers:calendar:u17-i-clock-answers-1-feedback
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+полвосьмого corresponds to 7:30. Interpret the whole expression as elapsed or remaining parts of the next hour, rather than copying its hour numeral.
+shippedText=полвосьмого corresponds to 7:30. Interpret the whole expression as elapsed or remaining parts of the next hour, rather than copying its hour numeral.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e50fb069ab9a6ddc6f8ad1170059ba9f5934919d8f2df0b447fbb0ff66e960cc
+contentHash=d47569f7d73ea8f2efee30aa11511054de37526e714aec9e3bb59b0f2f819fdd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-clock-answers-1-prompt`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-orient, u17-s-clock-answers
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2e9d20dc6228cb9cbfda1146d3e68f43297c5e9bb6fd2e2ba38fdd26c43ab7ed
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-answers:calendar:u17-i-clock-answers-1-prompt
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Which admitted English gloss is written beside the shown form?
+shippedText=Which admitted English gloss is written beside the shown form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b11379637f4e5b8fad0493cc41e996c1780cee5d12d611a2d2836d3ef06d635a
+contentHash=36286f0b4367f601ced335b44ab09c077e15795872b1c51a6b22165b4d2cdd1b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-clock-answers-1-rationale`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-orient, u17-s-clock-answers
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0e92ee085541089ac438d4adba561637e602c26d3e8ea10134101c2b66df88d6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-answers:calendar:u17-i-clock-answers-1-rationale
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+The frozen source pairs the shown form "полвосьмого" with the admitted gloss "7:30" ("half of eight").
+полвосьмого corresponds to 7:30. Interpret the whole expression as elapsed or remaining parts of the next hour, rather than copying its hour numeral.
+shippedText=The frozen source pairs the shown form "полвосьмого" with the admitted gloss "7:30" ("half of eight").
+полвосьмого corresponds to 7:30. Interpret the whole expression as elapsed or remaining parts of the next hour, rather than copying its hour numeral.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=53cbff895ae2fc0b18e0d7927d0b59bc852f76140e60792c0f8e48672f41291e
+contentHash=659e2f403a7110042359cc327b8828ea1984509944de91e33bba5fbcccfc78c4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-clock-answers-2-distractor-1`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-orient, u17-s-clock-answers
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6304d2047514fb5e38e5b45453f556c98b05c80c7e1eb85a4dde229689a6ed27
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-answers:calendar:u17-i-clock-answers-2-distractor-1
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+7:15 is a different meaning or construction and does not match the requested reading of the shown form.
+shippedText=7:15 is a different meaning or construction and does not match the requested reading of the shown form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5e0abcd8a1fe4cb4838da6e170c1139d47e5f314c5d744933b229768a1380ae8
+contentHash=5070e2b8976d44e3b99d0cc18dcd9f48157f756795b4b5d20dc1b9b78967460b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-clock-answers-2-distractor-2`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-orient, u17-s-clock-answers
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: adefd886d44aaee54a9fb223e408a6902b1d39d8cea24830607709060c70eeb3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-answers:calendar:u17-i-clock-answers-2-distractor-2
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+7:30 is a different meaning or construction and does not match the requested reading of the shown form.
+shippedText=7:30 is a different meaning or construction and does not match the requested reading of the shown form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5cc083f3abfabcd515a34b7cde2a1026e9260e302f8ef9b787aa6903def50d6c
+contentHash=d09b7013450abfd4231e7ea4adaa1a9a7cad3950afb82d3c371dac1c1bfbe168
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-clock-answers-2-feedback`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-orient, u17-s-clock-answers
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4870c290f0b02f49090c1984ac5237b5ae7ffd839e4352decc054f4ad9b1f12d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-answers:calendar:u17-i-clock-answers-2-feedback
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+без четверти восемь corresponds to 7:45. Interpret the whole expression as elapsed or remaining parts of the next hour, rather than copying its hour numeral.
+shippedText=без четверти восемь corresponds to 7:45. Interpret the whole expression as elapsed or remaining parts of the next hour, rather than copying its hour numeral.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b6da300d3e67e2f93289ef8b5ee91389e3ce7ffca281d86bd58a40245a6916ec
+contentHash=570712387f084b2f17163f2ef62d5f88299019f545d623dc53542f22b210343c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-clock-answers-2-prompt`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-orient, u17-s-clock-answers
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 580086451192255c999120e365683acc22732184cd9c61f76b357e4b3ae9d757
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-answers:calendar:u17-i-clock-answers-2-prompt
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Which admitted English gloss is written beside the shown form?
+shippedText=Which admitted English gloss is written beside the shown form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b11379637f4e5b8fad0493cc41e996c1780cee5d12d611a2d2836d3ef06d635a
+contentHash=36286f0b4367f601ced335b44ab09c077e15795872b1c51a6b22165b4d2cdd1b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-clock-answers-2-rationale`
+
+- Objectives: obj-u17-clock-answers
+- Sessions: u17-s-orient, u17-s-clock-answers
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e61baf4ab6b4211a1937def75a10cb79881a563102577c6ab94ab03b38bd3e91
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-answers:calendar:u17-i-clock-answers-2-rationale
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+The frozen source pairs the shown form "без четверти восемь" with the admitted gloss "7:45" ("eight without a quarter").
+без четверти восемь corresponds to 7:45. Interpret the whole expression as elapsed or remaining parts of the next hour, rather than copying its hour numeral.
+shippedText=The frozen source pairs the shown form "без четверти восемь" with the admitted gloss "7:45" ("eight without a quarter").
+без четверти восемь corresponds to 7:45. Interpret the whole expression as elapsed or remaining parts of the next hour, rather than copying its hour numeral.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=50dfaf1d3cc5e515904d21d10fc3f1a28cb0fc3658e23ba974ce132aec531032
+contentHash=2bd655b6812b2d874412eb49bbab10feb0e3695bbf6e0a5ff3af187d6ca7f317
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-clock-productive-1-distractor-1`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-orient, u17-s-clock-productive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 50923c99f6120257c0f14f95e7c4bcb3206baecbf5defca0501e43d9306b15ad
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-productive:calendar:u17-i-clock-productive-1-distractor-1
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+в час тридцать пять минут is a different meaning or construction and does not match the requested reading of the shown form.
+shippedText=в час тридцать пять минут is a different meaning or construction and does not match the requested reading of the shown form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=06d2ab471fd1d2bab9f429a928a55bc78ee7ed0a6f4cf8cf1e3fbacc3c5b49e4
+contentHash=7734ac8d473439160ddd24bf40f62789d1a095abd5cf943ba32820bf62b7230f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-clock-productive-1-feedback`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-orient, u17-s-clock-productive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cbf613c2d9ce3f22279fce2710f71fb64fc770cd5b06f73c817c04707555a3f6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-productive:calendar:u17-i-clock-productive-1-feedback
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+This is used after the half hour. corresponds to без двадцати пяти два. Select the requested construction type: elapsed minutes in the hour in progress, minutes remaining, or reading the dial numbers.
+shippedText=This is used after the half hour. corresponds to без двадцати пяти два. Select the requested construction type: elapsed minutes in the hour in progress, minutes remaining, or reading the dial numbers.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c83c0d7ff6cecd97f06ba19b4a3d631d28db913c694e12131a544b6d2bfa322d
+contentHash=8030de1bb91248d221b6183ad22ea4f94a7cbf69e014e6c914224ccfe5faf0c3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-clock-productive-1-prompt`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-orient, u17-s-clock-productive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 56d3070f9027d49c62a5298a1cb3342cca03640e4128ea99c807eccb89eb7809
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-productive:calendar:u17-i-clock-productive-1-prompt
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Which admitted expression states the minutes that remain after the half hour?
+shippedText=Which admitted expression states the minutes that remain after the half hour?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6063a402df1356b3311bf3d4d37570bf127a70cdf7b0da0c997633ce9255a36b
+contentHash=7e93322af6d1dc0b6a927df1edb34038920df4d45ed2809346dd3dfe8134db93
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-clock-productive-1-rationale`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-orient, u17-s-clock-productive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 718141e958cbb2d5832eb01d57471ecb4b9068182a1bb884fac57b42922962f2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-productive:calendar:u17-i-clock-productive-1-rationale
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+The frozen source pairs the shown form "без двадцати пяти два" with the admitted gloss "lacking twenty five minutes to the two". The shown rule is "This is used after the half hour." That says how many minutes remain after the half hour.
+This is used after the half hour. corresponds to без двадцати пяти два. Select the requested construction type: elapsed minutes in the hour in progress, minutes remaining, or reading the dial numbers.
+shippedText=The frozen source pairs the shown form "без двадцати пяти два" with the admitted gloss "lacking twenty five minutes to the two". The shown rule is "This is used after the half hour." That says how many minutes remain after the half hour.
+This is used after the half hour. corresponds to без двадцати пяти два. Select the requested construction type: elapsed minutes in the hour in progress, minutes remaining, or reading the dial numbers.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=59ccc6872bf1d10b417a555c42aa6da2ff5c5069a8f7f700aa2c75a12eb036b3
+contentHash=dd1f893339784fd49e8bbc35d45d468c4f9a51992a78446af584af59cb6a46ec
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-clock-productive-2-distractor-1`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-orient, u17-s-clock-productive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 65f6f10de42f6527f29394a8e123139b9e346fd61f5f62ae8365d2780fbada23
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-productive:calendar:u17-i-clock-productive-2-distractor-1
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+в десять минут первого is a different meaning or construction and does not match the requested reading of the shown form.
+shippedText=в десять минут первого is a different meaning or construction and does not match the requested reading of the shown form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2889cddb4b03b80f13cafedff72cecd978dc27cf618bd8051d72b6534f3f9287
+contentHash=f10835374aaf69b5b006da6c31a2b96a71e89a3be57e930b6745f03291e76619
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-clock-productive-2-feedback`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-orient, u17-s-clock-productive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 26a1be929a0d93eb152ab9e532b37a07877fd32763db17183045e5abf859d946
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-productive:calendar:u17-i-clock-productive-2-feedback
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+This option is always available. corresponds to в двенадцать часов десять минут. Select the requested construction type: elapsed minutes in the hour in progress, minutes remaining, or reading the dial numbers.
+shippedText=This option is always available. corresponds to в двенадцать часов десять минут. Select the requested construction type: elapsed minutes in the hour in progress, minutes remaining, or reading the dial numbers.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0d6700c272e09169028edba88a9d6392efb0e6c82fc8781495476c946a96f79c
+contentHash=b0149395be47808afd65a50889be814f16f08ad2d8bf139a3f6811ee7438a40c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-clock-productive-2-prompt`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-orient, u17-s-clock-productive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0435b10e20d50cb6630886580e20dce3acd11b897ec69670dbb5754591def001
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-productive:calendar:u17-i-clock-productive-2-prompt
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Which admitted expression reads the numbers off the dial?
+shippedText=Which admitted expression reads the numbers off the dial?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=729eca47a3d4b0bce305b53ae29b2f49ea279f7357807eddaf2090a5a6d4e76b
+contentHash=fdfb348e091c930380a261f7ca10a41eb1825cb87f9089177dc8f0b172420d05
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-clock-productive-2-rationale`
+
+- Objectives: obj-u17-clock-productive
+- Sessions: u17-s-orient, u17-s-clock-productive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: af8d839f28c855c2a64b08bb97ec76d6505da4cd3ca5f456c9976010ef8687cc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-clock-productive:calendar:u17-i-clock-productive-2-rationale
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+The frozen source pairs the shown form "в двенадцать часов десять минут" with the admitted gloss "at twelve hours ten minutes". The shown rule is "This option is always available." That reads the numbers off the dial.
+This option is always available. corresponds to в двенадцать часов десять минут. Select the requested construction type: elapsed minutes in the hour in progress, minutes remaining, or reading the dial numbers.
+shippedText=The frozen source pairs the shown form "в двенадцать часов десять минут" with the admitted gloss "at twelve hours ten minutes". The shown rule is "This option is always available." That reads the numbers off the dial.
+This option is always available. corresponds to в двенадцать часов десять минут. Select the requested construction type: elapsed minutes in the hour in progress, minutes remaining, or reading the dial numbers.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d1d442927ad48cf6d091619e4796798ed4b01e408a7aec9e71a600e422d47942
+contentHash=45649b9417428172a8f9a5ff4029f8c390b467fff3669dd1dd51a338fa07473c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-months-1-distractor-1`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-orient, u17-s-months
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 45c34114312673dc8756339b7967b35d2d62e0021f8a952a5111525c4ea352c1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-months:calendar:u17-i-months-1-distractor-1
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+July names a different month and does not match the shown word.
+shippedText=July names a different month and does not match the shown word.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c4b9ae32c89cf7d1def87de9bf499a3bc79d844ac3a9e044f03c02b64f43f108
+contentHash=3ce7a6f313c62ac2ede19eee365a7d3f32170e96a72b5788d725e41dd8697941
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-months-1-distractor-2`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-orient, u17-s-months
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 983dbbb65190807550d8eb3b0260c77f397d872dc9618c771873caf319fa3f2f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-months:calendar:u17-i-months-1-distractor-2
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+August names a different month and does not match the shown word.
+shippedText=August names a different month and does not match the shown word.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=17eda3b4c8a4d2efe49f0cea24daa41b16ce685adb41b2b60f6460fe5f556538
+contentHash=67e05e967fbda0d8563cd433cc1a2ad8f9ad1c77380cb4fe0c3e436088ac88c8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-months-1-feedback`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-orient, u17-s-months
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5443e0f08db8d80459242ae9f866e1fd4fb98a4e81199b92c76ce41ac9914238
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-months:calendar:u17-i-months-1-feedback
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Июнь means June. This names a month; choose the matching English name.
+shippedText=Июнь means June. This names a month; choose the matching English name.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2ac5051d151c5e93df813c9c4662eb19033e6ebb9bfb4f0b12ac317962a245a0
+contentHash=c5da008e986a167e81721f4a41e25bfc955e28d94b5650da97544d6930ea27b3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-months-1-prompt`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-orient, u17-s-months
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: edde9fcc2fc09f609f0c9c36ba4e4643cc646b3ac6d14e3ecf3df0dcea65f96f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-months:calendar:u17-i-months-1-prompt
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Which admitted English gloss is written beside the shown form?
+shippedText=Which admitted English gloss is written beside the shown form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b11379637f4e5b8fad0493cc41e996c1780cee5d12d611a2d2836d3ef06d635a
+contentHash=36286f0b4367f601ced335b44ab09c077e15795872b1c51a6b22165b4d2cdd1b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-months-1-rationale`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-orient, u17-s-months
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 90e73aea011b78ceccbbb92d4334b0a5f75ea2cbbba66604383b691fbb2447ca
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-months:calendar:u17-i-months-1-rationale
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Июнь || June
+Июнь means June. This names a month; choose the matching English name.
+shippedText=Июнь || June
+Июнь means June. This names a month; choose the matching English name.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f13d201cc807afbf32e5821a170211893c505741ff7098f6344ad7d6eb74a2a6
+contentHash=7dfdb3ac37841d7af2b3410dfa476e11080aa12a15702ad02bde6cb5d5cc0ff1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-months-2-distractor-1`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-orient, u17-s-months
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0fdc78b0d76d888755a4ce8423b99db3e371d15a817b8af23a3e9923df2f70dc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-months:calendar:u17-i-months-2-distractor-1
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+January names a different month and does not match the shown word.
+shippedText=January names a different month and does not match the shown word.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=748764d10fa78da35086e34785b8b4cf1de9735db054df6eec7656578cdfa9f2
+contentHash=b1d05e9f70bbc6245469463b8176e806921da9e28510484ab8dd858e9c1f2dca
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-months-2-distractor-2`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-orient, u17-s-months
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: af408044f0d9212f3db0d2d2f97b3a0e412ac4ad93147bba4a3d28bfe0ca5908
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-months:calendar:u17-i-months-2-distractor-2
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+April names a different month and does not match the shown word.
+shippedText=April names a different month and does not match the shown word.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6a13df4762fe02f5605446c216d3c4c7c57b541c04e7cca990d96a1b6fde2cda
+contentHash=f1ebf0c51db1e92c8a5169de536ee8b24042106610ac3c453e3fc80468a8af21
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-months-2-feedback`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-orient, u17-s-months
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 39f65a7539e1c313b33c04899160f2f85f1c44e49138118da73c9ccbfb5f2fa2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-months:calendar:u17-i-months-2-feedback
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Декабрь means December. This names a month; choose the matching English name.
+shippedText=Декабрь means December. This names a month; choose the matching English name.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8ba111ed71ed955ea85c8ebb822cd0cf5580723a49e0882f650a078ed5f5b8f3
+contentHash=084a5591b0dedd18ff83ce59e0fa52450be5f214861ffd9eca280c2da2f53bca
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-months-2-prompt`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-orient, u17-s-months
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 34232e2cceb2db67b030ffae247f8e486efb5164af0cc3603bd43d4eadac2c73
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-months:calendar:u17-i-months-2-prompt
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Which admitted English gloss is written beside the shown form?
+shippedText=Which admitted English gloss is written beside the shown form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b11379637f4e5b8fad0493cc41e996c1780cee5d12d611a2d2836d3ef06d635a
+contentHash=36286f0b4367f601ced335b44ab09c077e15795872b1c51a6b22165b4d2cdd1b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-months-2-rationale`
+
+- Objectives: obj-u17-months
+- Sessions: u17-s-orient, u17-s-months
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 92017e320df4d43e0e4455badbd327c240eb5722ad5e130fbd9a01956a130f76
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-months:calendar:u17-i-months-2-rationale
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Декабрь || December
+Декабрь means December. This names a month; choose the matching English name.
+shippedText=Декабрь || December
+Декабрь means December. This names a month; choose the matching English name.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7338cce007709255d1eb416af452142dd81b95329055dd50bad86c0170d99d78
+contentHash=ac6be2b22635ac01642f6d132fd2d1d262fa158c36332d7f8a51ee5ad60aa43c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-quarter-hour-1-distractor-1`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c2d6de10f7ce7d2dab48dcb320523dede06330690726bb5923bae95db84979ea
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-quarter-hour:calendar:u17-i-quarter-hour-1-distractor-1
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+18.00 is a different meaning or construction and does not match the requested reading of the shown form.
+shippedText=18.00 is a different meaning or construction and does not match the requested reading of the shown form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=17d0df60024b3144f3347c5adce9881dfa1e5ac10773a4762faea7b0e2960fe9
+contentHash=bc1423203a757c408810e1dfa35f6a3b3f771bf5c3b400c5d2b4c1a5b0f5f0d4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-quarter-hour-1-distractor-2`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5fff62fdb58cd84e432d2c26750fa8a3d2f304b6dd042155fd7783687dc0b2d4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-quarter-hour:calendar:u17-i-quarter-hour-1-distractor-2
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+4.30 – half of the fifth hour is a different meaning or construction and does not match the requested reading of the shown form.
+shippedText=4.30 – half of the fifth hour is a different meaning or construction and does not match the requested reading of the shown form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=37c5c0a65e19e645acd923fb2e07356d1602839c37a0bf337fade2e323b0544b
+contentHash=220def037d7b664fb70ef4af7abc9a13224bd73859e743880d875a3ac2b7ba42
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-quarter-hour-1-feedback`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c5db9366a93122dec2bd3d49fcb829716fe079c59b09aafc64e666a501d3860e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-quarter-hour:calendar:u17-i-quarter-hour-1-feedback
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Я приду в четверть восьмого. corresponds to 7.15 – quarter of the eighth hour. Interpret the complete event-time expression using the retained source reading; a bare hour alone does not specify AM or PM.
+shippedText=Я приду в четверть восьмого. corresponds to 7.15 – quarter of the eighth hour. Interpret the complete event-time expression using the retained source reading; a bare hour alone does not specify AM or PM.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=48438b0a16cba3f733cc9ddc9915af5b0d38c98bc590f49e7932fe6f7eeeeed8
+contentHash=68be785b4b9befb44207449cd6a203ea68ea85424cd5666ec4647ee0efae2af0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-quarter-hour-1-prompt`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 092b04965ff959a2c9048777ad20f585a6251264137fe61436ccdaaaaca571ec
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-quarter-hour:calendar:u17-i-quarter-hour-1-prompt
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Which admitted English gloss is written beside the shown form?
+shippedText=Which admitted English gloss is written beside the shown form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b11379637f4e5b8fad0493cc41e996c1780cee5d12d611a2d2836d3ef06d635a
+contentHash=36286f0b4367f601ced335b44ab09c077e15795872b1c51a6b22165b4d2cdd1b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-quarter-hour-1-rationale`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c6d4414651c24397e566570f067d6b87d266127a483f8e717b664b4aa66bf241
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-quarter-hour:calendar:u17-i-quarter-hour-1-rationale
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+The frozen source pairs the shown form "Я приду в четверть восьмого." with the admitted gloss "7.15 – quarter of the eighth hour".
+Я приду в четверть восьмого. corresponds to 7.15 – quarter of the eighth hour. Interpret the complete event-time expression using the retained source reading; a bare hour alone does not specify AM or PM.
+shippedText=The frozen source pairs the shown form "Я приду в четверть восьмого." with the admitted gloss "7.15 – quarter of the eighth hour".
+Я приду в четверть восьмого. corresponds to 7.15 – quarter of the eighth hour. Interpret the complete event-time expression using the retained source reading; a bare hour alone does not specify AM or PM.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2557ae20da1481ed0c9456c400caedc422d7b3abe67246d9f2029d3a447be179
+contentHash=449663e70f7ca89f48a50480ce64647b5b6688f919adcaadf5d0eb1cf8dc391d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-quarter-hour-2-distractor-1`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 71a25bf073b69d402d42dd3862bd35db219c7a33ebad4f931b1df170067f038c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-quarter-hour:calendar:u17-i-quarter-hour-2-distractor-1
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+18.00 is a different meaning or construction and does not match the requested reading of the shown form.
+shippedText=18.00 is a different meaning or construction and does not match the requested reading of the shown form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=17d0df60024b3144f3347c5adce9881dfa1e5ac10773a4762faea7b0e2960fe9
+contentHash=bc1423203a757c408810e1dfa35f6a3b3f771bf5c3b400c5d2b4c1a5b0f5f0d4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-quarter-hour-2-distractor-2`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6ab1aeb85c2a308f1d9d6dd07ab62ebb2d1f115257171d0d3787a4e59b6f6fb6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-quarter-hour:calendar:u17-i-quarter-hour-2-distractor-2
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+7.15 – quarter of the eighth hour is a different meaning or construction and does not match the requested reading of the shown form.
+shippedText=7.15 – quarter of the eighth hour is a different meaning or construction and does not match the requested reading of the shown form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=525c8d9224545ff0057036b7a676bc72db08659c7c4db08557e2d229df075fe2
+contentHash=7ed4d3590deda2a4229d77d3be9a97190ccb0e69a9353c5678f885599a1d98f8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-quarter-hour-2-feedback`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 19c41f4d7c0b668536ef55b1d8ad167c7b8ca5b168244ab38ef4e12d34f916b0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-quarter-hour:calendar:u17-i-quarter-hour-2-feedback
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Наш рейс уезжает в половине пятого. corresponds to 4.30 – half of the fifth hour. Interpret the complete event-time expression using the retained source reading; a bare hour alone does not specify AM or PM.
+shippedText=Наш рейс уезжает в половине пятого. corresponds to 4.30 – half of the fifth hour. Interpret the complete event-time expression using the retained source reading; a bare hour alone does not specify AM or PM.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d0ede6a696e52d0f301af9693c20f9920c0a48a6b97f61cd8d7196c0963d9f09
+contentHash=1300876fe6769429cb0c898c8ff44a6161df664cc9a4f3eefa604827cc389a91
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-quarter-hour-2-prompt`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fde24fc495b240d07333df3a293343651ecdbca2d388ed44795cec6db52283d2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-quarter-hour:calendar:u17-i-quarter-hour-2-prompt
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Which admitted English gloss is written beside the shown form?
+shippedText=Which admitted English gloss is written beside the shown form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b11379637f4e5b8fad0493cc41e996c1780cee5d12d611a2d2836d3ef06d635a
+contentHash=36286f0b4367f601ced335b44ab09c077e15795872b1c51a6b22165b4d2cdd1b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-quarter-hour-2-rationale`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 951be20531bfab90dfa6ce8015a21c13c673d529e2ae2c7d1704edf1d8a8b5b2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-quarter-hour:calendar:u17-i-quarter-hour-2-rationale
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+The frozen source pairs the shown form "Наш рейс уезжает в половине пятого." with the admitted gloss "4.30 – half of the fifth hour".
+Наш рейс уезжает в половине пятого. corresponds to 4.30 – half of the fifth hour. Interpret the complete event-time expression using the retained source reading; a bare hour alone does not specify AM or PM.
+shippedText=The frozen source pairs the shown form "Наш рейс уезжает в половине пятого." with the admitted gloss "4.30 – half of the fifth hour".
+Наш рейс уезжает в половине пятого. corresponds to 4.30 – half of the fifth hour. Interpret the complete event-time expression using the retained source reading; a bare hour alone does not specify AM or PM.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7ce08639a10599cdcc61e4602c48414ff5109d1b5302f20decc120092c9d381b
+contentHash=7261c3eb1cb904817c784c57197a2704375bc45863d635753e5946832e05929a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-quarter-hour-3-distractor-1`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0f66c67b02b0e581773d203bf351d46f90606b07a82e84d53d7ae697ea8af861
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-quarter-hour:calendar:u17-i-quarter-hour-3-distractor-1
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+18.00 is a different meaning or construction and does not match the requested reading of the shown form.
+shippedText=18.00 is a different meaning or construction and does not match the requested reading of the shown form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=17d0df60024b3144f3347c5adce9881dfa1e5ac10773a4762faea7b0e2960fe9
+contentHash=bc1423203a757c408810e1dfa35f6a3b3f771bf5c3b400c5d2b4c1a5b0f5f0d4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-quarter-hour-3-distractor-2`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9cda94dbce2a7f4b8dc0d704c171a8dea2cf05dac4b54ed15572ec8f1cd2f019
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-quarter-hour:calendar:u17-i-quarter-hour-3-distractor-2
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+7.15 – quarter of the eighth hour is a different meaning or construction and does not match the requested reading of the shown form.
+shippedText=7.15 – quarter of the eighth hour is a different meaning or construction and does not match the requested reading of the shown form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=525c8d9224545ff0057036b7a676bc72db08659c7c4db08557e2d229df075fe2
+contentHash=7ed4d3590deda2a4229d77d3be9a97190ccb0e69a9353c5678f885599a1d98f8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-quarter-hour-3-feedback`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8c3b70e6f84e02fb83d4025e65cd6126133710e4bc0a20437001da9088835cc7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-quarter-hour:calendar:u17-i-quarter-hour-3-feedback
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Передача начинается без четверти три. corresponds to 2.45 – 3 without a quarter. Interpret the complete event-time expression using the retained source reading; a bare hour alone does not specify AM or PM.
+shippedText=Передача начинается без четверти три. corresponds to 2.45 – 3 without a quarter. Interpret the complete event-time expression using the retained source reading; a bare hour alone does not specify AM or PM.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fa7a6b8ef1fbf1fd66e3d02c637e5119a4627fc0ad94d4579b43178f69b462bb
+contentHash=e99d3f2ade784bb91785903cc04ee92430f1d2009fca3cd1ab910b4f619d4107
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-quarter-hour-3-prompt`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5f88b40a98f285148590cc3957da73c6b7adfbcebf2b010765ac88489cf19cfb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-quarter-hour:calendar:u17-i-quarter-hour-3-prompt
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Which admitted English gloss is written beside the shown form?
+shippedText=Which admitted English gloss is written beside the shown form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b11379637f4e5b8fad0493cc41e996c1780cee5d12d611a2d2836d3ef06d635a
+contentHash=36286f0b4367f601ced335b44ab09c077e15795872b1c51a6b22165b4d2cdd1b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-quarter-hour-3-rationale`
+
+- Objectives: obj-u17-quarter-hour
+- Sessions: u17-s-orient, u17-s-quarter-hour
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ee507f215a1c5614158d799be0162b2841e05dc111c7edaf4783ff22be20968f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-quarter-hour:calendar:u17-i-quarter-hour-3-rationale
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+The frozen source pairs the shown form "Передача начинается без четверти три." with the admitted gloss "2.45 – 3 without a quarter".
+Передача начинается без четверти три. corresponds to 2.45 – 3 without a quarter. Interpret the complete event-time expression using the retained source reading; a bare hour alone does not specify AM or PM.
+shippedText=The frozen source pairs the shown form "Передача начинается без четверти три." with the admitted gloss "2.45 – 3 without a quarter".
+Передача начинается без четверти три. corresponds to 2.45 – 3 without a quarter. Interpret the complete event-time expression using the retained source reading; a bare hour alone does not specify AM or PM.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=660e9814cec6118f43803a3dfb360f4397ecee212b3180d44ca234143d7cfb77
+contentHash=7a4e64aa9f9e4abb3690e42ab338af227ad3fd341ecaa083e93ebc87b7479865
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-weekdays-1-distractor-1`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d8435c455dad1684523e4799ac4ec9d9ce621885b5b391756e2f5c8d1e3819bf
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-weekdays:calendar:u17-i-weekdays-1-distractor-1
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Friday names a different day of the week and does not match the shown word.
+shippedText=Friday names a different day of the week and does not match the shown word.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=73ae41ba55633b74a29aa592f356c514e894b06a47f20b991bf71375e3373a8b
+contentHash=a0ea03b4f04a5944b38847aa00938a6ef2511a4d4757336f713fcf5d3957505e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-weekdays-1-distractor-2`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9feee2ddb5cd164db4245de0ac64712bfb02fc87cc270059dffef242b761d92f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-weekdays:calendar:u17-i-weekdays-1-distractor-2
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Saturday names a different day of the week and does not match the shown word.
+shippedText=Saturday names a different day of the week and does not match the shown word.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=780f98fc9f5b704d8f69819c254202ea8e3ee46e3bedb08257a6af4f84e2e29e
+contentHash=67c81fdecf0f482785042549353fac26c1ce0f25b0bb1e8251e66dcb8e55111f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-weekdays-1-feedback`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: de6777bd29774b43f0a11033d57bb4f83f8e0442a746368e4910da086e7974df
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-weekdays:calendar:u17-i-weekdays-1-feedback
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+четверг means Thursday. This names a day of the week; choose the matching English name.
+shippedText=четверг means Thursday. This names a day of the week; choose the matching English name.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0544f38e47a6d8d2bb865e1b50108b99b2ecdc9dde88c69c82e13ebcc38aa0d8
+contentHash=c94b6ce4733ce50b82a0554142b5066cddcdf78adff84d8f01d49917b5111209
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-weekdays-1-prompt`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1c3a97f2faa197879ebe3e28d7ca2ca1fa6fb79f6ab8c5de94bdbf3a5f51c398
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-weekdays:calendar:u17-i-weekdays-1-prompt
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Which admitted English gloss is written beside the shown form?
+shippedText=Which admitted English gloss is written beside the shown form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b11379637f4e5b8fad0493cc41e996c1780cee5d12d611a2d2836d3ef06d635a
+contentHash=36286f0b4367f601ced335b44ab09c077e15795872b1c51a6b22165b4d2cdd1b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-weekdays-1-rationale`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0d0be818a6f885dc0c36cac46757f8e8c89d7540f18d16327dd89ac7d2057aa6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-weekdays:calendar:u17-i-weekdays-1-rationale
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+четверг || noun || Thursday
+четверг means Thursday. This names a day of the week; choose the matching English name.
+shippedText=четверг || noun || Thursday
+четверг means Thursday. This names a day of the week; choose the matching English name.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bd092276ba9073360a2fbc5853a9fe8ffd3cc458cf415f16bdbe0c780153f92c
+contentHash=287cb86c9e6c12111fa409db1f3227b4b49e04df1b1143d4f1c3497e2622edff
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-weekdays-2-distractor-1`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 92ed67dfff7e24c37edf6ab9230adbe3cdb7b45a6038fc38a4b5efe482d93119
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-weekdays:calendar:u17-i-weekdays-2-distractor-1
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Monday names a different day of the week and does not match the shown word.
+shippedText=Monday names a different day of the week and does not match the shown word.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5c630f85f58a0180165e3193cf3feb3ceaea22b74589c0d2ea452bdee8341588
+contentHash=3f8aa0227c8d5c2e0764b24f758ff945804be4b574191afa8a0ec6e0f36e62e6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-weekdays-2-distractor-2`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e17a890f2520dfadcc350f347e473c2e28b2a0c5ba38789852a00d138b8600f4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-weekdays:calendar:u17-i-weekdays-2-distractor-2
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Saturday names a different day of the week and does not match the shown word.
+shippedText=Saturday names a different day of the week and does not match the shown word.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=780f98fc9f5b704d8f69819c254202ea8e3ee46e3bedb08257a6af4f84e2e29e
+contentHash=67c81fdecf0f482785042549353fac26c1ce0f25b0bb1e8251e66dcb8e55111f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-weekdays-2-feedback`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ebc97b9a6b176586f341686d2de39fa1be8fac29b8707fc4ce5eba35a94975e8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-weekdays:calendar:u17-i-weekdays-2-feedback
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+воскресенье means Sunday. This names a day of the week; choose the matching English name.
+shippedText=воскресенье means Sunday. This names a day of the week; choose the matching English name.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=033a59501cb44891a997b24b37046a9dcb49fe2cf0d303e34b10f216e635aba0
+contentHash=96f816492078d9b5e52292142696486b50bbbfb3ee6bdb96576003240ca633a4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-weekdays-2-prompt`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b949d4b4fcb2c659b805032194f78c733d24bd3a9094d192eee16c436c40b34e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-weekdays:calendar:u17-i-weekdays-2-prompt
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Which admitted English gloss is written beside the shown form?
+shippedText=Which admitted English gloss is written beside the shown form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b11379637f4e5b8fad0493cc41e996c1780cee5d12d611a2d2836d3ef06d635a
+contentHash=36286f0b4367f601ced335b44ab09c077e15795872b1c51a6b22165b4d2cdd1b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-u17-i-weekdays-2-rationale`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bbb8a3530573fc5e97f11e1abb966f9c4a7e644b1de740fd178815e3164b3e32
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-weekdays:calendar:u17-i-weekdays-2-rationale
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+воскресенье || noun || Sunday
+воскресенье means Sunday. This names a day of the week; choose the matching English name.
+shippedText=воскресенье || noun || Sunday
+воскресенье means Sunday. This names a day of the week; choose the matching English name.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=095f83e300a7e1136b146922121b4bbab683a959bcd1ae1105be1977d84f016f
+contentHash=6b147509a98a5e20d0a64c14e8e01a84a335b09902e2075080426adeb7524cf2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-weekdays-check-body`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 83f77737d7282bf79a6bb380b4ec310d88ef2a0141304f1b4192b0f661e4a10a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-weekdays:calendar:weekdays-check-body
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+shippedText=Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=635425ec04341c7df235f298eaaff5999e2af01dbc323e05d246cf327947f112
+contentHash=ce5598805e7c95f042af82270240e9c48dae4fd930edd8666834116a6828f9b9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-weekdays-guided-body`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ae0349a45dffbaa6c27bc746a62b2f3dbb8642e7b7b43a29cb7ca899a700554e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-weekdays:calendar:weekdays-guided-body
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+shippedText=Read the shown phrase or calendar name and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=635425ec04341c7df235f298eaaff5999e2af01dbc323e05d246cf327947f112
+contentHash=ce5598805e7c95f042af82270240e9c48dae4fd930edd8666834116a6828f9b9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-weekdays-objective-title`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5a8f6fb6fe478e75af6dbe22e1f06beb6d273cb9f31a3556b592f5c660b1a4b4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-weekdays:calendar:weekdays-objective-title
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Recognize the retained weekday names
+shippedText=Recognize the retained weekday names
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=23b85ac8448cdd694eff8f4cdeaab604bc7f4291360539de71e9c0f9a390d149
+contentHash=777087d3e523c5a9f56152210190406f9521304a796873efa3c7911fcc8577df
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-weekdays-rem-body`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4a01ce80b4398aaeb17cba8588dcabe931c090c0eede68e22adf3eeaefbcaa25
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-weekdays:calendar:weekdays-rem-body
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+понедельник — Monday. вторник — Tuesday. среда — Wednesday. четверг — Thursday. Each word names a day of the week. Match the shown word to its English meaning rather than selecting a neighboring day.
+
+пятница — Friday. суббота — Saturday. воскресенье — Sunday. Together with the previous four names, these make the seven-day set. In the Thursday check, Friday and Saturday are competing day names. In the Sunday check, Monday and Saturday name different days. Learn the Sunday form here before meeting it in an independent check.
+
+Weekday names normally stay lowercase within a Russian sentence; the first word of a sentence still begins with a capital. For the shown четверг, select Thursday. For the shown воскресенье, select Sunday. Recognizing an isolated name is different from saying on a particular weekday: that use needs its own preposition and case construction, which these checks do not assess.
+shippedText=понедельник — Monday. вторник — Tuesday. среда — Wednesday. четверг — Thursday. Each word names a day of the week. Match the shown word to its English meaning rather than selecting a neighboring day.
+
+пятница — Friday. суббота — Saturday. воскресенье — Sunday. Together with the previous four names, these make the seven-day set. In the Thursday check, Friday and Saturday are competing day names. In the Sunday check, Monday and Saturday name different days. Learn the Sunday form here before meeting it in an independent check.
+
+Weekday names normally stay lowercase within a Russian sentence; the first word of a sentence still begins with a capital. For the shown четверг, select Thursday. For the shown воскресенье, select Sunday. Recognizing an isolated name is different from saying on a particular weekday: that use needs its own preposition and case construction, which these checks do not assess.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ba6efdb6150f027463e31158a1ceb51cb3e9ad084b3013e63836592460ba9f7b
+contentHash=4c6f94df34bb752f590757ee425120e98504c641598081aa1ed2b4c96df14fe4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-weekdays-rem-title`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2bc003e7045136e55fa3f7097a8902501f3116545702cc0f284942dfeeb7a003
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-weekdays:calendar:weekdays-rem-title
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Review ages and calendar names
+shippedText=Review ages and calendar names
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=253bd4e1cfb457c57461c62504e61e77c03fb0ad3c68994e6de03313298d9209
+contentHash=0c651aff86d8614f73fd0775dd568bf773902e64f161e5a293585079daacab5e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-weekdays-teach-1-body`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6cb45a417959975a9e36ecac24c4a8a5ca810edf1d80e5185f205d0d2845b482
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-weekdays:calendar:weekdays-teach-1-body
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+понедельник — Monday. вторник — Tuesday. среда — Wednesday. четверг — Thursday. Each word names a day of the week. Match the shown word to its English meaning rather than selecting a neighboring day.
+shippedText=понедельник — Monday. вторник — Tuesday. среда — Wednesday. четверг — Thursday. Each word names a day of the week. Match the shown word to its English meaning rather than selecting a neighboring day.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d1807511ae9b352f0fb54ddaf84f6e7b8e7a5bda6a6f935203e9fca3c415de57
+contentHash=e755978c51bec6f303b960d69af46c10bd0f15ee89299f2bffd92b7b712e73f4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-weekdays-teach-1-title`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 78a12f45516a8234759d25a5ac6f504970ff137af8d6cdaf22edb7157bc42378
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-weekdays:calendar:weekdays-teach-1-title
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+The first four weekday names
+shippedText=The first four weekday names
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9411b6d02fb12d49091809c4595cbf17c6ca6c6482ebb7e9457a55497ab415fd
+contentHash=4dc8af0f10855435e53a8672cfd0ddb15dbddf0aa48ed698f88d6c89bd1b86b3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-weekdays-teach-2-body`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 510d9325a4ea8ffe92a9b3542f802d3fd6ca31d726382a2c722243acb0d2750d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-weekdays:calendar:weekdays-teach-2-body
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+пятница — Friday. суббота — Saturday. воскресенье — Sunday. Together with the previous four names, these make the seven-day set. In the Thursday check, Friday and Saturday are competing day names. In the Sunday check, Monday and Saturday name different days. Learn the Sunday form here before meeting it in an independent check.
+shippedText=пятница — Friday. суббота — Saturday. воскресенье — Sunday. Together with the previous four names, these make the seven-day set. In the Thursday check, Friday and Saturday are competing day names. In the Sunday check, Monday and Saturday name different days. Learn the Sunday form here before meeting it in an independent check.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=dd62636f465023924e3e16ba82da9b6027f51e3c2672d7402852cf8399cb4297
+contentHash=62540f126371bc412feba2ff44cc65359ede1402830c2ecb8ba07668aedde015
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-weekdays-teach-2-title`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b4866d494c51bb9ff907c56173ab53f48698025b88615726c32eb64c78a4653c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-weekdays:calendar:weekdays-teach-2-title
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Complete the weekday contrast
+shippedText=Complete the weekday contrast
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c3ca49e0800b66319b1ea33f428f6fe9c3b84a84bfd7ee40a4aceb60d5220a46
+contentHash=7a54b29d68dd42d2cd776a8608e89121abe2d06d39c2ab7c0c1af7f0fa4005d9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-weekdays-teach-3-body`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ab0f8f3b002980211995aa81ca1f3a3c3f7d1361a0755b7fb3bf517e7d6e5e02
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-weekdays:calendar:weekdays-teach-3-body
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Weekday names normally stay lowercase within a Russian sentence; the first word of a sentence still begins with a capital. For the shown четверг, select Thursday. For the shown воскресенье, select Sunday. Recognizing an isolated name is different from saying on a particular weekday: that use needs its own preposition and case construction, which these checks do not assess.
+shippedText=Weekday names normally stay lowercase within a Russian sentence; the first word of a sentence still begins with a capital. For the shown четверг, select Thursday. For the shown воскресенье, select Sunday. Recognizing an isolated name is different from saying on a particular weekday: that use needs its own preposition and case construction, which these checks do not assess.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0fccd67cf37d63c7311fc96b377e1b34067a51fab4717150737166cc524e3a24
+contentHash=d0b2f62aa47c08c0b6bf6720acdfc17d9e1664f8feba6a170f76553a74d5d89d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u17-calendar-weekdays-teach-3-title`
+
+- Objectives: obj-u17-weekdays
+- Sessions: u17-s-orient, u17-s-weekdays
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c93eeaa02e7220b76c80200dbcbbd25f0e8e27fdd060d317acedf7078216692c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u17-weekdays:calendar:weekdays-teach-3-title
+originalSourceText=Retained Wikibooks days oldid 3594124 and months oldid 4376719, catalog/sources/units-16-20/wikibooks/: exact weekday and month names. Retained Wikipedia Russian grammar oldid 1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: age construction. Primary grammar https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-10-11 UTC: dative for age. Primary ReadyRussian Grammar 24 https://www.readyrussian.org/Handouts/Grammar%2024--Capitalization.html, consulted 2026-10-11 UTC: common weekday/month names and sentence-initial capitals. Retained Pressbooks Diverse Russian traditions grammar chapter sha256 ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3: at-what-time examples, catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html. Retained ReadyRussian grammar20.html and Wikipedia Russia date notation oldid 1357134172 supply the existing clock and date constructions. Primary Cornell https://russian.cornell.edu/grammar/html/le79_86_b_b.htm and ReadyRussian https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html consulted 2026-10-11 UTC: hour in progress, minutes remaining, dial reading and AM/PM context. Application inference: teach the existing checked names and complete age phrase before practice. Independently authored English 2026-10-11 UTC; final linguistic audit pending.
+Capitalization and a worked choice
+shippedText=Capitalization and a worked choice
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=87e002058d069e2f8a57e4ac0b9192c6b901c5a05099425291c9eb86e679718e
+contentHash=4215a06e40691f2e6636e9e76428b649cb4d9bb3361d53e0f50e81e449fb717b
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -19594,9 +25845,9 @@ permitsAppUse=true
 - `u17-st-teach-age-1` EXAMPLE `ex-u17-age-0`
 - `u17-st-teach-age-1` EXAMPLE `ex-u17-age-1`
 - `u17-st-teach-age-1` REFERENCE `ref-u17-attribution`
+- `u17-st-teach-age-2` REFERENCE `ref-u17-attribution`
 - `u17-st-guided-age-1` REMEDIATION `u17-st-rem-age`
 - `u17-st-guided-age-1` ITEM `u17-g-age-0`
-- `u17-st-teach-age-2` REFERENCE `ref-u17-attribution`
 - `u17-st-rem-age` EXAMPLE `ex-u17-age-0`
 - `u17-st-rem-age` EXAMPLE `ex-u17-age-1`
 - `u17-st-check-age` REMEDIATION `u17-st-rem-age`
@@ -19606,14 +25857,16 @@ permitsAppUse=true
 - `u17-st-teach-weekdays-1` EXAMPLE `ex-u17-weekdays-0`
 - `u17-st-teach-weekdays-1` EXAMPLE `ex-u17-weekdays-1`
 - `u17-st-teach-weekdays-1` REFERENCE `ref-u17-attribution`
-- `u17-st-guided-weekdays-1` REMEDIATION `u17-st-rem-weekdays`
-- `u17-st-guided-weekdays-1` ITEM `u17-g-weekdays-0`
 - `u17-st-teach-weekdays-2` REFERENCE `ref-u17-attribution`
 - `u17-st-teach-weekdays-3` EXAMPLE `ex-u17-weekdays-2`
 - `u17-st-teach-weekdays-3` EXAMPLE `ex-u17-weekdays-3`
 - `u17-st-teach-weekdays-3` REFERENCE `ref-u17-attribution`
+- `u17-st-guided-weekdays-1` REMEDIATION `u17-st-rem-weekdays`
+- `u17-st-guided-weekdays-1` ITEM `u17-g-weekdays-0`
 - `u17-st-rem-weekdays` EXAMPLE `ex-u17-weekdays-0`
 - `u17-st-rem-weekdays` EXAMPLE `ex-u17-weekdays-1`
+- `u17-st-rem-weekdays` EXAMPLE `ex-u17-weekdays-2`
+- `u17-st-rem-weekdays` EXAMPLE `ex-u17-weekdays-3`
 - `u17-st-check-weekdays` REMEDIATION `u17-st-rem-weekdays`
 - `u17-st-check-weekdays` ITEM `u17-i-weekdays-1`
 - `u17-st-check-weekdays` ITEM `u17-i-weekdays-2`
@@ -19621,14 +25874,16 @@ permitsAppUse=true
 - `u17-st-teach-months-1` EXAMPLE `ex-u17-months-0`
 - `u17-st-teach-months-1` EXAMPLE `ex-u17-months-1`
 - `u17-st-teach-months-1` REFERENCE `ref-u17-attribution`
-- `u17-st-guided-months-1` REMEDIATION `u17-st-rem-months`
-- `u17-st-guided-months-1` ITEM `u17-g-months-0`
 - `u17-st-teach-months-2` REFERENCE `ref-u17-attribution`
 - `u17-st-teach-months-3` EXAMPLE `ex-u17-months-2`
 - `u17-st-teach-months-3` EXAMPLE `ex-u17-months-3`
 - `u17-st-teach-months-3` REFERENCE `ref-u17-attribution`
+- `u17-st-guided-months-1` REMEDIATION `u17-st-rem-months`
+- `u17-st-guided-months-1` ITEM `u17-g-months-0`
 - `u17-st-rem-months` EXAMPLE `ex-u17-months-0`
 - `u17-st-rem-months` EXAMPLE `ex-u17-months-1`
+- `u17-st-rem-months` EXAMPLE `ex-u17-months-2`
+- `u17-st-rem-months` EXAMPLE `ex-u17-months-3`
 - `u17-st-check-months` REMEDIATION `u17-st-rem-months`
 - `u17-st-check-months` ITEM `u17-i-months-1`
 - `u17-st-check-months` ITEM `u17-i-months-2`
@@ -19636,9 +25891,9 @@ permitsAppUse=true
 - `u17-st-teach-clock-1` EXAMPLE `ex-u17-clock-0`
 - `u17-st-teach-clock-1` EXAMPLE `ex-u17-clock-1`
 - `u17-st-teach-clock-1` REFERENCE `ref-u17-attribution`
+- `u17-st-teach-clock-2` REFERENCE `ref-u17-attribution`
 - `u17-st-guided-clock-1` REMEDIATION `u17-st-rem-clock`
 - `u17-st-guided-clock-1` ITEM `u17-g-clock-0`
-- `u17-st-teach-clock-2` REFERENCE `ref-u17-attribution`
 - `u17-st-rem-clock` EXAMPLE `ex-u17-clock-0`
 - `u17-st-rem-clock` EXAMPLE `ex-u17-clock-1`
 - `u17-st-check-clock` REMEDIATION `u17-st-rem-clock`
@@ -19648,13 +25903,14 @@ permitsAppUse=true
 - `u17-st-teach-clock-answers-1` EXAMPLE `ex-u17-clock-answers-0`
 - `u17-st-teach-clock-answers-1` EXAMPLE `ex-u17-clock-answers-1`
 - `u17-st-teach-clock-answers-1` REFERENCE `ref-u17-attribution`
-- `u17-st-guided-clock-answers-1` REMEDIATION `u17-st-rem-clock-answers`
-- `u17-st-guided-clock-answers-1` ITEM `u17-g-clock-answers-0`
 - `u17-st-teach-clock-answers-2` REFERENCE `ref-u17-attribution`
 - `u17-st-teach-clock-answers-3` EXAMPLE `ex-u17-clock-answers-2`
 - `u17-st-teach-clock-answers-3` REFERENCE `ref-u17-attribution`
+- `u17-st-guided-clock-answers-1` REMEDIATION `u17-st-rem-clock-answers`
+- `u17-st-guided-clock-answers-1` ITEM `u17-g-clock-answers-0`
 - `u17-st-rem-clock-answers` EXAMPLE `ex-u17-clock-answers-0`
 - `u17-st-rem-clock-answers` EXAMPLE `ex-u17-clock-answers-1`
+- `u17-st-rem-clock-answers` EXAMPLE `ex-u17-clock-answers-2`
 - `u17-st-check-clock-answers` REMEDIATION `u17-st-rem-clock-answers`
 - `u17-st-check-clock-answers` ITEM `u17-i-clock-answers-1`
 - `u17-st-check-clock-answers` ITEM `u17-i-clock-answers-2`
@@ -19662,8 +25918,6 @@ permitsAppUse=true
 - `u17-st-teach-quarter-hour-1` EXAMPLE `ex-u17-quarter-hour-0`
 - `u17-st-teach-quarter-hour-1` EXAMPLE `ex-u17-quarter-hour-1`
 - `u17-st-teach-quarter-hour-1` REFERENCE `ref-u17-pressbooks-attribution`
-- `u17-st-guided-quarter-hour-1` REMEDIATION `u17-st-rem-quarter-hour`
-- `u17-st-guided-quarter-hour-1` ITEM `u17-g-quarter-hour-0`
 - `u17-st-teach-quarter-hour-2` REFERENCE `ref-u17-pressbooks-attribution`
 - `u17-st-teach-quarter-hour-3` EXAMPLE `ex-u17-quarter-hour-2`
 - `u17-st-teach-quarter-hour-3` EXAMPLE `ex-u17-quarter-hour-3`
@@ -19674,8 +25928,16 @@ permitsAppUse=true
 - `u17-st-teach-quarter-hour-5` EXAMPLE `ex-u17-quarter-hour-6`
 - `u17-st-teach-quarter-hour-5` EXAMPLE `ex-u17-quarter-hour-7`
 - `u17-st-teach-quarter-hour-5` REFERENCE `ref-u17-pressbooks-attribution`
+- `u17-st-guided-quarter-hour-1` REMEDIATION `u17-st-rem-quarter-hour`
+- `u17-st-guided-quarter-hour-1` ITEM `u17-g-quarter-hour-0`
 - `u17-st-rem-quarter-hour` EXAMPLE `ex-u17-quarter-hour-0`
 - `u17-st-rem-quarter-hour` EXAMPLE `ex-u17-quarter-hour-1`
+- `u17-st-rem-quarter-hour` EXAMPLE `ex-u17-quarter-hour-2`
+- `u17-st-rem-quarter-hour` EXAMPLE `ex-u17-quarter-hour-3`
+- `u17-st-rem-quarter-hour` EXAMPLE `ex-u17-quarter-hour-4`
+- `u17-st-rem-quarter-hour` EXAMPLE `ex-u17-quarter-hour-5`
+- `u17-st-rem-quarter-hour` EXAMPLE `ex-u17-quarter-hour-6`
+- `u17-st-rem-quarter-hour` EXAMPLE `ex-u17-quarter-hour-7`
 - `u17-st-check-quarter-hour` REMEDIATION `u17-st-rem-quarter-hour`
 - `u17-st-check-quarter-hour` ITEM `u17-i-quarter-hour-1`
 - `u17-st-check-quarter-hour` ITEM `u17-i-quarter-hour-2`
@@ -19684,13 +25946,14 @@ permitsAppUse=true
 - `u17-st-teach-clock-productive-1` EXAMPLE `ex-u17-clock-productive-0`
 - `u17-st-teach-clock-productive-1` EXAMPLE `ex-u17-clock-productive-1`
 - `u17-st-teach-clock-productive-1` REFERENCE `ref-u17-attribution`
-- `u17-st-guided-clock-productive-1` REMEDIATION `u17-st-rem-clock-productive`
-- `u17-st-guided-clock-productive-1` ITEM `u17-g-clock-productive-0`
 - `u17-st-teach-clock-productive-2` REFERENCE `ref-u17-attribution`
 - `u17-st-teach-clock-productive-3` EXAMPLE `ex-u17-clock-productive-2`
 - `u17-st-teach-clock-productive-3` REFERENCE `ref-u17-attribution`
+- `u17-st-guided-clock-productive-1` REMEDIATION `u17-st-rem-clock-productive`
+- `u17-st-guided-clock-productive-1` ITEM `u17-g-clock-productive-0`
 - `u17-st-rem-clock-productive` EXAMPLE `ex-u17-clock-productive-0`
 - `u17-st-rem-clock-productive` EXAMPLE `ex-u17-clock-productive-1`
+- `u17-st-rem-clock-productive` EXAMPLE `ex-u17-clock-productive-2`
 - `u17-st-check-clock-productive` REMEDIATION `u17-st-rem-clock-productive`
 - `u17-st-check-clock-productive` ITEM `u17-i-clock-productive-1`
 - `u17-st-check-clock-productive` ITEM `u17-i-clock-productive-2`
@@ -19698,9 +25961,9 @@ permitsAppUse=true
 - `u17-st-teach-calendar-date-1` EXAMPLE `ex-u17-calendar-date-0`
 - `u17-st-teach-calendar-date-1` EXAMPLE `ex-u17-calendar-date-1`
 - `u17-st-teach-calendar-date-1` REFERENCE `ref-u17-attribution`
+- `u17-st-teach-calendar-date-2` REFERENCE `ref-u17-attribution`
 - `u17-st-guided-calendar-date-1` REMEDIATION `u17-st-rem-calendar-date`
 - `u17-st-guided-calendar-date-1` ITEM `u17-g-calendar-date-0`
-- `u17-st-teach-calendar-date-2` REFERENCE `ref-u17-attribution`
 - `u17-st-rem-calendar-date` EXAMPLE `ex-u17-calendar-date-0`
 - `u17-st-rem-calendar-date` EXAMPLE `ex-u17-calendar-date-1`
 - `u17-st-check-calendar-date` REMEDIATION `u17-st-rem-calendar-date`
@@ -19773,6 +26036,209 @@ permitsAppUse=true
 - `obj-u17-calendar-date` PROVENANCE `prov-ca-repair-17-10771`
 - `obj-u17-calendar-date` PROVENANCE `prov-ca-repair-17-11110`
 - `obj-u17-calendar-date` PROVENANCE `prov-ca-repair-17-11111`
+- `obj-u17-age` PROVENANCE `prov-ca-u17-calendar-age-check-body`
+- `obj-u17-age` PROVENANCE `prov-ca-u17-calendar-age-guided-body`
+- `obj-u17-age` PROVENANCE `prov-ca-u17-calendar-age-objective-title`
+- `obj-u17-age` PROVENANCE `prov-ca-u17-calendar-age-rem-body`
+- `obj-u17-age` PROVENANCE `prov-ca-u17-calendar-age-rem-title`
+- `obj-u17-age` PROVENANCE `prov-ca-u17-calendar-age-teach-1-body`
+- `obj-u17-age` PROVENANCE `prov-ca-u17-calendar-age-teach-1-title`
+- `obj-u17-age` PROVENANCE `prov-ca-u17-calendar-age-teach-2-body`
+- `obj-u17-age` PROVENANCE `prov-ca-u17-calendar-age-teach-2-title`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-u17-calendar-calendar-date-check-body`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-u17-calendar-calendar-date-guided-body`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-u17-calendar-calendar-date-objective-title`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-u17-calendar-calendar-date-rem-body`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-u17-calendar-calendar-date-rem-title`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-u17-calendar-calendar-date-teach-1-body`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-u17-calendar-calendar-date-teach-1-title`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-u17-calendar-calendar-date-teach-2-body`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-u17-calendar-calendar-date-teach-2-title`
+- `obj-u17-clock-answers` PROVENANCE `prov-ca-u17-calendar-clock-answers-check-body`
+- `obj-u17-clock-answers` PROVENANCE `prov-ca-u17-calendar-clock-answers-guided-body`
+- `obj-u17-clock-answers` PROVENANCE `prov-ca-u17-calendar-clock-answers-objective-title`
+- `obj-u17-clock-answers` PROVENANCE `prov-ca-u17-calendar-clock-answers-rem-body`
+- `obj-u17-clock-answers` PROVENANCE `prov-ca-u17-calendar-clock-answers-rem-title`
+- `obj-u17-clock-answers` PROVENANCE `prov-ca-u17-calendar-clock-answers-teach-1-body`
+- `obj-u17-clock-answers` PROVENANCE `prov-ca-u17-calendar-clock-answers-teach-1-title`
+- `obj-u17-clock-answers` PROVENANCE `prov-ca-u17-calendar-clock-answers-teach-2-body`
+- `obj-u17-clock-answers` PROVENANCE `prov-ca-u17-calendar-clock-answers-teach-2-title`
+- `obj-u17-clock-answers` PROVENANCE `prov-ca-u17-calendar-clock-answers-teach-3-body`
+- `obj-u17-clock-answers` PROVENANCE `prov-ca-u17-calendar-clock-answers-teach-3-title`
+- `obj-u17-clock` PROVENANCE `prov-ca-u17-calendar-clock-check-body`
+- `obj-u17-clock` PROVENANCE `prov-ca-u17-calendar-clock-guided-body`
+- `obj-u17-clock` PROVENANCE `prov-ca-u17-calendar-clock-objective-title`
+- `obj-u17-clock-productive` PROVENANCE `prov-ca-u17-calendar-clock-productive-check-body`
+- `obj-u17-clock-productive` PROVENANCE `prov-ca-u17-calendar-clock-productive-guided-body`
+- `obj-u17-clock-productive` PROVENANCE `prov-ca-u17-calendar-clock-productive-objective-title`
+- `obj-u17-clock-productive` PROVENANCE `prov-ca-u17-calendar-clock-productive-rem-body`
+- `obj-u17-clock-productive` PROVENANCE `prov-ca-u17-calendar-clock-productive-rem-title`
+- `obj-u17-clock-productive` PROVENANCE `prov-ca-u17-calendar-clock-productive-teach-1-body`
+- `obj-u17-clock-productive` PROVENANCE `prov-ca-u17-calendar-clock-productive-teach-1-title`
+- `obj-u17-clock-productive` PROVENANCE `prov-ca-u17-calendar-clock-productive-teach-2-body`
+- `obj-u17-clock-productive` PROVENANCE `prov-ca-u17-calendar-clock-productive-teach-2-title`
+- `obj-u17-clock-productive` PROVENANCE `prov-ca-u17-calendar-clock-productive-teach-3-body`
+- `obj-u17-clock-productive` PROVENANCE `prov-ca-u17-calendar-clock-productive-teach-3-title`
+- `obj-u17-clock` PROVENANCE `prov-ca-u17-calendar-clock-rem-body`
+- `obj-u17-clock` PROVENANCE `prov-ca-u17-calendar-clock-rem-title`
+- `obj-u17-clock` PROVENANCE `prov-ca-u17-calendar-clock-teach-1-body`
+- `obj-u17-clock` PROVENANCE `prov-ca-u17-calendar-clock-teach-1-title`
+- `obj-u17-clock` PROVENANCE `prov-ca-u17-calendar-clock-teach-2-body`
+- `obj-u17-clock` PROVENANCE `prov-ca-u17-calendar-clock-teach-2-title`
+- `obj-u17-months` PROVENANCE `prov-ca-u17-calendar-months-check-body`
+- `obj-u17-months` PROVENANCE `prov-ca-u17-calendar-months-guided-body`
+- `obj-u17-months` PROVENANCE `prov-ca-u17-calendar-months-objective-title`
+- `obj-u17-months` PROVENANCE `prov-ca-u17-calendar-months-rem-body`
+- `obj-u17-months` PROVENANCE `prov-ca-u17-calendar-months-rem-title`
+- `obj-u17-months` PROVENANCE `prov-ca-u17-calendar-months-teach-1-body`
+- `obj-u17-months` PROVENANCE `prov-ca-u17-calendar-months-teach-1-title`
+- `obj-u17-months` PROVENANCE `prov-ca-u17-calendar-months-teach-2-body`
+- `obj-u17-months` PROVENANCE `prov-ca-u17-calendar-months-teach-2-title`
+- `obj-u17-months` PROVENANCE `prov-ca-u17-calendar-months-teach-3-body`
+- `obj-u17-months` PROVENANCE `prov-ca-u17-calendar-months-teach-3-title`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ca-u17-calendar-quarter-hour-check-body`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ca-u17-calendar-quarter-hour-guided-body`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ca-u17-calendar-quarter-hour-objective-title`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ca-u17-calendar-quarter-hour-rem-body`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ca-u17-calendar-quarter-hour-rem-title`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ca-u17-calendar-quarter-hour-teach-1-body`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ca-u17-calendar-quarter-hour-teach-1-title`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ca-u17-calendar-quarter-hour-teach-2-body`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ca-u17-calendar-quarter-hour-teach-2-title`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ca-u17-calendar-quarter-hour-teach-3-body`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ca-u17-calendar-quarter-hour-teach-3-title`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ca-u17-calendar-quarter-hour-teach-4-body`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ca-u17-calendar-quarter-hour-teach-4-title`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ca-u17-calendar-quarter-hour-teach-5-body`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ca-u17-calendar-quarter-hour-teach-5-title`
+- `obj-u17-age` PROVENANCE `prov-ca-u17-calendar-u17-g-age-0-distractor-1`
+- `obj-u17-age` PROVENANCE `prov-ca-u17-calendar-u17-g-age-0-distractor-2`
+- `obj-u17-age` PROVENANCE `prov-ca-u17-calendar-u17-g-age-0-feedback`
+- `obj-u17-age` PROVENANCE `prov-ca-u17-calendar-u17-g-age-0-prompt`
+- `obj-u17-age` PROVENANCE `prov-ca-u17-calendar-u17-g-age-0-rationale`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-u17-calendar-u17-g-calendar-date-0-distractor-1`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-u17-calendar-u17-g-calendar-date-0-distractor-2`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-u17-calendar-u17-g-calendar-date-0-feedback`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-u17-calendar-u17-g-calendar-date-0-prompt`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-u17-calendar-u17-g-calendar-date-0-rationale`
+- `obj-u17-clock` PROVENANCE `prov-ca-u17-calendar-u17-g-clock-0-distractor-1`
+- `obj-u17-clock` PROVENANCE `prov-ca-u17-calendar-u17-g-clock-0-feedback`
+- `obj-u17-clock` PROVENANCE `prov-ca-u17-calendar-u17-g-clock-0-prompt`
+- `obj-u17-clock` PROVENANCE `prov-ca-u17-calendar-u17-g-clock-0-rationale`
+- `obj-u17-clock-answers` PROVENANCE `prov-ca-u17-calendar-u17-g-clock-answers-0-distractor-1`
+- `obj-u17-clock-answers` PROVENANCE `prov-ca-u17-calendar-u17-g-clock-answers-0-distractor-2`
+- `obj-u17-clock-answers` PROVENANCE `prov-ca-u17-calendar-u17-g-clock-answers-0-feedback`
+- `obj-u17-clock-answers` PROVENANCE `prov-ca-u17-calendar-u17-g-clock-answers-0-prompt`
+- `obj-u17-clock-answers` PROVENANCE `prov-ca-u17-calendar-u17-g-clock-answers-0-rationale`
+- `obj-u17-clock-productive` PROVENANCE `prov-ca-u17-calendar-u17-g-clock-productive-0-distractor-1`
+- `obj-u17-clock-productive` PROVENANCE `prov-ca-u17-calendar-u17-g-clock-productive-0-feedback`
+- `obj-u17-clock-productive` PROVENANCE `prov-ca-u17-calendar-u17-g-clock-productive-0-prompt`
+- `obj-u17-clock-productive` PROVENANCE `prov-ca-u17-calendar-u17-g-clock-productive-0-rationale`
+- `obj-u17-months` PROVENANCE `prov-ca-u17-calendar-u17-g-months-0-distractor-1`
+- `obj-u17-months` PROVENANCE `prov-ca-u17-calendar-u17-g-months-0-distractor-2`
+- `obj-u17-months` PROVENANCE `prov-ca-u17-calendar-u17-g-months-0-feedback`
+- `obj-u17-months` PROVENANCE `prov-ca-u17-calendar-u17-g-months-0-prompt`
+- `obj-u17-months` PROVENANCE `prov-ca-u17-calendar-u17-g-months-0-rationale`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ca-u17-calendar-u17-g-quarter-hour-0-distractor-1`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ca-u17-calendar-u17-g-quarter-hour-0-distractor-2`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ca-u17-calendar-u17-g-quarter-hour-0-feedback`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ca-u17-calendar-u17-g-quarter-hour-0-prompt`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ca-u17-calendar-u17-g-quarter-hour-0-rationale`
+- `obj-u17-weekdays` PROVENANCE `prov-ca-u17-calendar-u17-g-weekdays-0-distractor-1`
+- `obj-u17-weekdays` PROVENANCE `prov-ca-u17-calendar-u17-g-weekdays-0-distractor-2`
+- `obj-u17-weekdays` PROVENANCE `prov-ca-u17-calendar-u17-g-weekdays-0-feedback`
+- `obj-u17-weekdays` PROVENANCE `prov-ca-u17-calendar-u17-g-weekdays-0-prompt`
+- `obj-u17-weekdays` PROVENANCE `prov-ca-u17-calendar-u17-g-weekdays-0-rationale`
+- `obj-u17-age` PROVENANCE `prov-ca-u17-calendar-u17-i-age-1-distractor-1`
+- `obj-u17-age` PROVENANCE `prov-ca-u17-calendar-u17-i-age-1-feedback`
+- `obj-u17-age` PROVENANCE `prov-ca-u17-calendar-u17-i-age-1-prompt`
+- `obj-u17-age` PROVENANCE `prov-ca-u17-calendar-u17-i-age-1-rationale`
+- `obj-u17-age` PROVENANCE `prov-ca-u17-calendar-u17-i-age-2-distractor-1`
+- `obj-u17-age` PROVENANCE `prov-ca-u17-calendar-u17-i-age-2-feedback`
+- `obj-u17-age` PROVENANCE `prov-ca-u17-calendar-u17-i-age-2-prompt`
+- `obj-u17-age` PROVENANCE `prov-ca-u17-calendar-u17-i-age-2-rationale`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-u17-calendar-u17-i-calendar-date-1-distractor-1`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-u17-calendar-u17-i-calendar-date-1-distractor-2`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-u17-calendar-u17-i-calendar-date-1-feedback`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-u17-calendar-u17-i-calendar-date-1-prompt`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-u17-calendar-u17-i-calendar-date-1-rationale`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-u17-calendar-u17-i-calendar-date-2-distractor-1`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-u17-calendar-u17-i-calendar-date-2-distractor-2`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-u17-calendar-u17-i-calendar-date-2-feedback`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-u17-calendar-u17-i-calendar-date-2-prompt`
+- `obj-u17-calendar-date` PROVENANCE `prov-ca-u17-calendar-u17-i-calendar-date-2-rationale`
+- `obj-u17-clock` PROVENANCE `prov-ca-u17-calendar-u17-i-clock-1-distractor-1`
+- `obj-u17-clock` PROVENANCE `prov-ca-u17-calendar-u17-i-clock-1-feedback`
+- `obj-u17-clock` PROVENANCE `prov-ca-u17-calendar-u17-i-clock-1-prompt`
+- `obj-u17-clock` PROVENANCE `prov-ca-u17-calendar-u17-i-clock-1-rationale`
+- `obj-u17-clock` PROVENANCE `prov-ca-u17-calendar-u17-i-clock-2-distractor-1`
+- `obj-u17-clock` PROVENANCE `prov-ca-u17-calendar-u17-i-clock-2-feedback`
+- `obj-u17-clock` PROVENANCE `prov-ca-u17-calendar-u17-i-clock-2-prompt`
+- `obj-u17-clock` PROVENANCE `prov-ca-u17-calendar-u17-i-clock-2-rationale`
+- `obj-u17-clock-answers` PROVENANCE `prov-ca-u17-calendar-u17-i-clock-answers-1-distractor-1`
+- `obj-u17-clock-answers` PROVENANCE `prov-ca-u17-calendar-u17-i-clock-answers-1-distractor-2`
+- `obj-u17-clock-answers` PROVENANCE `prov-ca-u17-calendar-u17-i-clock-answers-1-feedback`
+- `obj-u17-clock-answers` PROVENANCE `prov-ca-u17-calendar-u17-i-clock-answers-1-prompt`
+- `obj-u17-clock-answers` PROVENANCE `prov-ca-u17-calendar-u17-i-clock-answers-1-rationale`
+- `obj-u17-clock-answers` PROVENANCE `prov-ca-u17-calendar-u17-i-clock-answers-2-distractor-1`
+- `obj-u17-clock-answers` PROVENANCE `prov-ca-u17-calendar-u17-i-clock-answers-2-distractor-2`
+- `obj-u17-clock-answers` PROVENANCE `prov-ca-u17-calendar-u17-i-clock-answers-2-feedback`
+- `obj-u17-clock-answers` PROVENANCE `prov-ca-u17-calendar-u17-i-clock-answers-2-prompt`
+- `obj-u17-clock-answers` PROVENANCE `prov-ca-u17-calendar-u17-i-clock-answers-2-rationale`
+- `obj-u17-clock-productive` PROVENANCE `prov-ca-u17-calendar-u17-i-clock-productive-1-distractor-1`
+- `obj-u17-clock-productive` PROVENANCE `prov-ca-u17-calendar-u17-i-clock-productive-1-feedback`
+- `obj-u17-clock-productive` PROVENANCE `prov-ca-u17-calendar-u17-i-clock-productive-1-prompt`
+- `obj-u17-clock-productive` PROVENANCE `prov-ca-u17-calendar-u17-i-clock-productive-1-rationale`
+- `obj-u17-clock-productive` PROVENANCE `prov-ca-u17-calendar-u17-i-clock-productive-2-distractor-1`
+- `obj-u17-clock-productive` PROVENANCE `prov-ca-u17-calendar-u17-i-clock-productive-2-feedback`
+- `obj-u17-clock-productive` PROVENANCE `prov-ca-u17-calendar-u17-i-clock-productive-2-prompt`
+- `obj-u17-clock-productive` PROVENANCE `prov-ca-u17-calendar-u17-i-clock-productive-2-rationale`
+- `obj-u17-months` PROVENANCE `prov-ca-u17-calendar-u17-i-months-1-distractor-1`
+- `obj-u17-months` PROVENANCE `prov-ca-u17-calendar-u17-i-months-1-distractor-2`
+- `obj-u17-months` PROVENANCE `prov-ca-u17-calendar-u17-i-months-1-feedback`
+- `obj-u17-months` PROVENANCE `prov-ca-u17-calendar-u17-i-months-1-prompt`
+- `obj-u17-months` PROVENANCE `prov-ca-u17-calendar-u17-i-months-1-rationale`
+- `obj-u17-months` PROVENANCE `prov-ca-u17-calendar-u17-i-months-2-distractor-1`
+- `obj-u17-months` PROVENANCE `prov-ca-u17-calendar-u17-i-months-2-distractor-2`
+- `obj-u17-months` PROVENANCE `prov-ca-u17-calendar-u17-i-months-2-feedback`
+- `obj-u17-months` PROVENANCE `prov-ca-u17-calendar-u17-i-months-2-prompt`
+- `obj-u17-months` PROVENANCE `prov-ca-u17-calendar-u17-i-months-2-rationale`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ca-u17-calendar-u17-i-quarter-hour-1-distractor-1`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ca-u17-calendar-u17-i-quarter-hour-1-distractor-2`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ca-u17-calendar-u17-i-quarter-hour-1-feedback`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ca-u17-calendar-u17-i-quarter-hour-1-prompt`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ca-u17-calendar-u17-i-quarter-hour-1-rationale`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ca-u17-calendar-u17-i-quarter-hour-2-distractor-1`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ca-u17-calendar-u17-i-quarter-hour-2-distractor-2`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ca-u17-calendar-u17-i-quarter-hour-2-feedback`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ca-u17-calendar-u17-i-quarter-hour-2-prompt`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ca-u17-calendar-u17-i-quarter-hour-2-rationale`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ca-u17-calendar-u17-i-quarter-hour-3-distractor-1`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ca-u17-calendar-u17-i-quarter-hour-3-distractor-2`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ca-u17-calendar-u17-i-quarter-hour-3-feedback`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ca-u17-calendar-u17-i-quarter-hour-3-prompt`
+- `obj-u17-quarter-hour` PROVENANCE `prov-ca-u17-calendar-u17-i-quarter-hour-3-rationale`
+- `obj-u17-weekdays` PROVENANCE `prov-ca-u17-calendar-u17-i-weekdays-1-distractor-1`
+- `obj-u17-weekdays` PROVENANCE `prov-ca-u17-calendar-u17-i-weekdays-1-distractor-2`
+- `obj-u17-weekdays` PROVENANCE `prov-ca-u17-calendar-u17-i-weekdays-1-feedback`
+- `obj-u17-weekdays` PROVENANCE `prov-ca-u17-calendar-u17-i-weekdays-1-prompt`
+- `obj-u17-weekdays` PROVENANCE `prov-ca-u17-calendar-u17-i-weekdays-1-rationale`
+- `obj-u17-weekdays` PROVENANCE `prov-ca-u17-calendar-u17-i-weekdays-2-distractor-1`
+- `obj-u17-weekdays` PROVENANCE `prov-ca-u17-calendar-u17-i-weekdays-2-distractor-2`
+- `obj-u17-weekdays` PROVENANCE `prov-ca-u17-calendar-u17-i-weekdays-2-feedback`
+- `obj-u17-weekdays` PROVENANCE `prov-ca-u17-calendar-u17-i-weekdays-2-prompt`
+- `obj-u17-weekdays` PROVENANCE `prov-ca-u17-calendar-u17-i-weekdays-2-rationale`
+- `obj-u17-weekdays` PROVENANCE `prov-ca-u17-calendar-weekdays-check-body`
+- `obj-u17-weekdays` PROVENANCE `prov-ca-u17-calendar-weekdays-guided-body`
+- `obj-u17-weekdays` PROVENANCE `prov-ca-u17-calendar-weekdays-objective-title`
+- `obj-u17-weekdays` PROVENANCE `prov-ca-u17-calendar-weekdays-rem-body`
+- `obj-u17-weekdays` PROVENANCE `prov-ca-u17-calendar-weekdays-rem-title`
+- `obj-u17-weekdays` PROVENANCE `prov-ca-u17-calendar-weekdays-teach-1-body`
+- `obj-u17-weekdays` PROVENANCE `prov-ca-u17-calendar-weekdays-teach-1-title`
+- `obj-u17-weekdays` PROVENANCE `prov-ca-u17-calendar-weekdays-teach-2-body`
+- `obj-u17-weekdays` PROVENANCE `prov-ca-u17-calendar-weekdays-teach-2-title`
+- `obj-u17-weekdays` PROVENANCE `prov-ca-u17-calendar-weekdays-teach-3-body`
+- `obj-u17-weekdays` PROVENANCE `prov-ca-u17-calendar-weekdays-teach-3-title`
 - `obj-u17-hours` PROVENANCE `prov-ca-u17-numbers-hours-check-body`
 - `obj-u17-hours` PROVENANCE `prov-ca-u17-numbers-hours-guided-body`
 - `obj-u17-hours` PROVENANCE `prov-ca-u17-numbers-hours-objective-title`

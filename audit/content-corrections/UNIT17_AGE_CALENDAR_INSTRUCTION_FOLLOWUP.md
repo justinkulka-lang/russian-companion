@@ -13,3 +13,9 @@ Verification evidence is retained in pr64-unit17-calendar-verification-2026-10-1
 Sequencing candidates decrease from 122 to 114; Unit 17 has no remaining single-guided ordering flag. All 75 audit targets remain pending semantic acceptance: 17 changed, 54 unchanged, four absent from the historical snapshot. The 19-finding audit remains open. All 30 units remain development and review-pending. Candidate remains unfrozen, sourceCommit null, artifact NOT_RECORDED and publicRelease NOT_APPROVED. Nothing is merged or released. Full semantic review, remaining curriculum foundations, cumulative practice, mappings, licensed media and owner/device acceptance remain outstanding.
 
 Initial expanded admission failed because a comma attached to the retained clock question was parsed as an unadmitted Russian phrase. The teaching wording was corrected without changing the source question or validator; the expanded rerun passes. Initial failed evidence is retained.
+
+Implementation ancestor: `12de4c54be8dc22119549390d08e2da3ff01ea3a`. All 30 packets bind this ancestor; only Unit 17 instructional digest changes; all mapping digests are preserved. Review-package digest expectations are refreshed because the implementation commit is a package input.
+
+Repository-source digest: `45dd1d65f0fbf712054b27ed191a34d4e9b02c8550612e2826523e67dc9fa4b2`. Pack content-review digest: `429fd4b0b5bce79b3a59d61bc1143da36bba65496d84d5e560cc584b5ff13bb7`.
+
+The source/review binding run passes all 27 selected tests, including real Git ancestry and curriculum-at-commit validation, generated packets, isolation/mutation rejection, current candidate identity, readiness and preparation bindings, and pending review/release safeguards. A separate later-unit digest guard passes. Together with the 16 focused checks, 44 host checks succeed across the runs; this is not a full Android suite. Android CI remains a separate current-head result.
