@@ -15,3 +15,9 @@ Research references, consulted 2026-10-11:
 - Cornell Beginning Russian Grammar, duration: https://russian.cornell.edu/grammar/html/le103_110_f.htm ; forward interval: https://russian.cornell.edu/grammar/html/gr10_d_c.htm ; ago: https://russian.cornell.edu/grammar/html/le71_78_l.htm . These support the grammatical contrasts; explanations here are independently authored.
 
 All units remain in development with review pending. Signatures remain unsigned. The candidate remains unfrozen and release is not approved. This repair does not record qualified acceptance, device acceptance, merge or release.
+
+Implementation ancestor: `9cbfd11d62d6121e620f6052f3e5ef1142bdf6a0`. All 30 packets bind this ancestor; only Unit 23 instructional digest changes; all mapping digests are preserved. Review-package digest expectations are refreshed because the implementation commit is a package input.
+
+Repository-source digest: `a7bcaeffef330d87beab31580381882f154689f7815f098b5988b9c8a8fa477c`. Pack content-review digest: `23f2a06632ce1c618a54eff75f7675163a2c11207c7174771c5d95227200b5b7`.
+
+Final verification: 40 focused and 28 binding/governance checks pass (68 distinct methods, verified from XML). Three new checks reject the exact preceding corpus; all four new checks pass on the repaired corpus. Production validation reports zero issues. Full Android CI remains separate.

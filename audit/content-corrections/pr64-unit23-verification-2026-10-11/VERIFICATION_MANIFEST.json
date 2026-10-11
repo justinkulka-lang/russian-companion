@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "previousHead": "9fa857fb7514d56efcee97f0e270390a54f3e8c2",
+  "implementationCommit": "9cbfd11d62d6121e620f6052f3e5ef1142bdf6a0",
+  "sourceDigest": "a7bcaeffef330d87beab31580381882f154689f7815f098b5988b9c8a8fa477c",
+  "packDigest": "23f2a06632ce1c618a54eff75f7675163a2c11207c7174771c5d95227200b5b7",
+  "unit23Digest": "bf0f8f30cb9ba46bf6b651e9fa266ef5c0e95fe7fb1636c0d2c28183fe4da60d",
+  "verification": "68 distinct host methods pass: 40 focused and 28 binding/governance. Three new checks reject the exact preceding corpus, and all four new checks pass on the repaired corpus. Production validation reports zero issues. Exact scope, baseline replay, idempotence and Kotlin typed/default-omission equality pass. Only Unit23 content digest changes; all30 mapping digests remain unchanged.",
+  "fullAndroidCI": "Preceding Unit22 and Unit21 Android runs were still in progress at the last read. Full Android CI must be checked at the final published Unit23 head; host verification does not establish an Android UI pass.",
+  "review": "All30 units remain in development with review pending and unsigned signatures. Candidate unfrozen; sourceCommit null; artifact NOT_RECORDED; publicRelease NOT_APPROVED. No qualified audit acceptance, device acceptance, merge or release."
+}
