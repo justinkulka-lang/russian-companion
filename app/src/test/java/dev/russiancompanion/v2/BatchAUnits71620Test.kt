@@ -235,6 +235,8 @@ class BatchAUnits71620Test {
                     })
                     assertTrue(item.id, why.contains(shown) && why.contains(item.answer))
                     assertTrue(item.id, item.feedback.contains(item.answer))
+                    if (expandedExplanation != null) assertContentAuditResearch(expandedExplanation)
+                    else assertTrue(item.id, item.feedback.contains(shown))
                 } else if (expandedExplanation != null) {
                     assertContentAuditResearch(expandedExplanation)
                     assertTrue(item.id, why == item.feedback || why.endsWith("\n" + item.feedback))

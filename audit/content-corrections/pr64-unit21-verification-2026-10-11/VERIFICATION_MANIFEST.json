@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "previousHead": "6ec0453169d9a9be087c15bd4b3006589a92e242",
+  "implementationCommit": "46b72d5b17701c2fe6fd19e115792e90bda5f1ae",
+  "sourceDigest": "d492f6b506e2d801d6831f13af1dda215e22f5c5a245fb034f83c7975390832e",
+  "packDigest": "6c3217ebe1ccdb35f3edd121a7a8cd677834353c13e9c11c9364c79b7b335c70",
+  "unit21Digest": "582d2688ba0d928a4fa1d24930198b451b8a54337bae666ac9765b1f131e2dd5",
+  "verification": "37 focused and 28 binding checks pass. The exact BatchA method passes again with the original Russian-cue requirement retained unless a matching pending English provenance record validates. 65 distinct host checks pass across the final runs. Three new regressions reject the preceding corpus. The old exact BatchA method reproduces the comparison failure. Production validation reports zero issues. Exact reproduction, idempotence, change scope, and typed default-omission equality pass.",
+  "fullAndroidCI": "Preceding head 4c823: 647 tests, 2 failures, 1 skipped. Head 6ec045: run 38173263369, job 114570170062, 653 tests, 2 failures, 1 skipped. Both fail the BatchA explanation and RuntimeCorrection sequence methods. Full Android CI at the new published head must verify the Runtime/Compose synchronization change; host verification excludes Android UI and persistence.",
+  "review": "All 30 units remain in development with review pending and unsigned signatures. The candidate remains unfrozen; sourceCommit is null; artifact is NOT_RECORDED; publicRelease is NOT_APPROVED. No final acceptance, merge, or release."
+}

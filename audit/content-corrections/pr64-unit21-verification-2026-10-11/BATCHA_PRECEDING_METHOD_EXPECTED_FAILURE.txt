@@ -1,0 +1,27 @@
+
+Thanks for using JUnit! Support its development at https://junit.org/sponsoring
+
+
+Failures (1):
+  JUnit Vintage:BatchAExplanationBeforeHostTest:batchAExplanationsNameTheKeyedRelationshipAndRejectASwap
+    MethodSource [className = 'dev.russiancompanion.v2.BatchAExplanationBeforeHostTest', methodName = 'batchAExplanationsNameTheKeyedRelationshipAndRejectASwap', methodParameterTypes = '']
+    => org.junit.ComparisonFailure: u17-g-clock-0 expected:<... "What time is it?".[]> but was:<... "What time is it?".[
+Который час? corresponds to What time is it?. The complete question asks for the current clock time.]>
+       org.junit.Assert.assertEquals(Assert.java:117)
+       dev.russiancompanion.v2.BatchAExplanationBeforeHostTest.batchAExplanationsNameTheKeyedRelationshipAndRejectASwap(BatchAExplanationBeforeHostTest.kt:198)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+
+Test run finished after 3124 ms
+[         4 containers found      ]
+[         0 containers skipped    ]
+[         4 containers started    ]
+[         0 containers aborted    ]
+[         4 containers successful ]
+[         0 containers failed     ]
+[         1 tests found           ]
+[         0 tests skipped         ]
+[         1 tests started         ]
+[         0 tests aborted         ]
+[         0 tests successful      ]
+[         1 tests failed          ]
+

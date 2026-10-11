@@ -1,0 +1,46 @@
+
+Thanks for using JUnit! Support its development at https://junit.org/sponsoring
+
+
+Failures (3):
+  JUnit Vintage:Unit21ReflexivePurposeInstructionTest:possessionTracksSubjectButAgreementTracksThePossessedNoun
+    MethodSource [className = 'dev.russiancompanion.v2.Unit21ReflexivePurposeInstructionTest', methodName = 'possessionTracksSubjectButAgreementTracksThePossessedNoun', methodParameterTypes = '']
+    => java.lang.AssertionError
+       org.junit.Assert.fail(Assert.java:87)
+       org.junit.Assert.assertTrue(Assert.java:42)
+       org.junit.Assert.assertTrue(Assert.java:53)
+       dev.russiancompanion.v2.Unit21ReflexivePurposeInstructionTest.possessionTracksSubjectButAgreementTracksThePossessedNoun(Unit21ReflexivePurposeInstructionTest.kt:30)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+  JUnit Vintage:Unit21ReflexivePurposeInstructionTest:completeInstructionAndRemediationCoverEveryCheckedCueBeforePractice
+    MethodSource [className = 'dev.russiancompanion.v2.Unit21ReflexivePurposeInstructionTest', methodName = 'completeInstructionAndRemediationCoverEveryCheckedCueBeforePractice', methodParameterTypes = '']
+    => java.lang.AssertionError: expected:<4> but was:<1>
+       org.junit.Assert.fail(Assert.java:89)
+       org.junit.Assert.failNotEquals(Assert.java:835)
+       org.junit.Assert.assertEquals(Assert.java:120)
+       org.junit.Assert.assertEquals(Assert.java:146)
+       dev.russiancompanion.v2.Unit21ReflexivePurposeInstructionTest.completeInstructionAndRemediationCoverEveryCheckedCueBeforePractice(Unit21ReflexivePurposeInstructionTest.kt:15)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+  JUnit Vintage:Unit21ReflexivePurposeInstructionTest:causalCheckHasNoSynonymousSinceDistractorAndAdmittedBindingsStayValid
+    MethodSource [className = 'dev.russiancompanion.v2.Unit21ReflexivePurposeInstructionTest', methodName = 'causalCheckHasNoSynonymousSinceDistractorAndAdmittedBindingsStayValid', methodParameterTypes = '']
+    => java.lang.AssertionError: expected:<[because, although, after]> but was:<[because, since, after]>
+       org.junit.Assert.fail(Assert.java:89)
+       org.junit.Assert.failNotEquals(Assert.java:835)
+       org.junit.Assert.assertEquals(Assert.java:120)
+       org.junit.Assert.assertEquals(Assert.java:146)
+       dev.russiancompanion.v2.Unit21ReflexivePurposeInstructionTest.causalCheckHasNoSynonymousSinceDistractorAndAdmittedBindingsStayValid(Unit21ReflexivePurposeInstructionTest.kt:45)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+
+Test run finished after 620 ms
+[         4 containers found      ]
+[         0 containers skipped    ]
+[         4 containers started    ]
+[         0 containers aborted    ]
+[         4 containers successful ]
+[         0 containers failed     ]
+[         3 tests found           ]
+[         0 tests skipped         ]
+[         3 tests started         ]
+[         0 tests aborted         ]
+[         0 tests successful      ]
+[         3 tests failed          ]
+

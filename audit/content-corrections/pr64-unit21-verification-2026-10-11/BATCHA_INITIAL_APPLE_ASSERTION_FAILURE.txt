@@ -1,0 +1,28 @@
+
+Thanks for using JUnit! Support its development at https://junit.org/sponsoring
+
+
+Failures (1):
+  JUnit Vintage:BatchAUnits71620Test:batchAExplanationsNameTheKeyedRelationshipAndRejectASwap
+    MethodSource [className = 'dev.russiancompanion.v2.BatchAUnits71620Test', methodName = 'batchAExplanationsNameTheKeyedRelationshipAndRejectASwap', methodParameterTypes = '']
+    => org.junit.ComparisonFailure: expected:<...ich apple is mine?".[]> but was:<...ich apple is mine?".[
+Которое яблоко моё? means Which apple is mine?. This direct question selects an apple and asks about ownership.]>
+       org.junit.Assert.assertEquals(Assert.java:117)
+       org.junit.Assert.assertEquals(Assert.java:146)
+       dev.russiancompanion.v2.BatchAUnits71620Test.batchAExplanationsNameTheKeyedRelationshipAndRejectASwap(BatchAUnits71620Test.kt:208)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+
+Test run finished after 2875 ms
+[         4 containers found      ]
+[         0 containers skipped    ]
+[         4 containers started    ]
+[         0 containers aborted    ]
+[         4 containers successful ]
+[         0 containers failed     ]
+[         1 tests found           ]
+[         0 tests skipped         ]
+[         1 tests started         ]
+[         0 tests aborted         ]
+[         0 tests successful      ]
+[         1 tests failed          ]
+

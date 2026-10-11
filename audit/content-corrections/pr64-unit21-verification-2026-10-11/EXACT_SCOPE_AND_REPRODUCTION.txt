@@ -1,0 +1,7 @@
+PASS: exact6ec045 baseline replay generates byte-identical curriculum; second application is idempotent.
+PASS: all old provenance records, source text, rights and hashes retained modulo typed blank/null metadata and empty final-audit defaults.
+PASS: only Unit21 content digest changes; all30 mapping digests remain unchanged.
+PASS: source-backed although replaces synonymous since in the because item; every key/Russian form and other unit/item remains unchanged.
+PASS: Kotlin typed pack and aggregate-digest equality after explicit empty final-audit expansion.
+Curriculum SHA256:f5d5940b99b1892c8835c8b73462a535e85612759edfb89f71a367e339944884
+The old BatchA method is copied with class-name change only; expected comparison failure matches Android CI. Initial host trials retained. One host trial lost its classpath during concurrent compilation and is excluded from evidence claims. Final37-check run uses an isolated jar snapshot and passes. Runtime/Compose not executed by host checks.

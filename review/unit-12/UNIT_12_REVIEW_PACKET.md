@@ -11,12 +11,12 @@ Unit 12 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 22f3746d28fe42997c6a8fc3926360444ddba016
+- Curriculum source commit: 46b72d5b17701c2fe6fd19e115792e90bda5f1ae
 - Unit content-review SHA-256: 5d36c3dea6b2217a568c338cf1a8d2d05a67132d1b21c9652cd1356ad34458f5
 - Mapping-package SHA-256: 0747489371acaab80787db42f08f6d4f5479e6186a2c9415052df484324e37d3
-- Pack content-review SHA-256: f36fab94cfc970f15b4543fc806188ad3eea7b47302faa4b4490c5441a68d132
-- Review-package SHA-256: 888ce7c51459f54f7142e68e7c14f419fc81d2c517e5e2f47dd11c3f44cd18f9
-- Repository source SHA-256: 09bccb7533f9d314fd179b2de642564b19fd3baa6c8e0647447497430bbf2b05
+- Pack content-review SHA-256: 6c3217ebe1ccdb35f3edd121a7a8cd677834353c13e9c11c9364c79b7b335c70
+- Review-package SHA-256: dff0a9d4ed50fba4c82a71b904c4e46c5644e253ff665cdc64f70a1d0ab5acc1
+- Repository source SHA-256: d492f6b506e2d801d6831f13af1dda215e22f5c5a245fb034f83c7975390832e
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
