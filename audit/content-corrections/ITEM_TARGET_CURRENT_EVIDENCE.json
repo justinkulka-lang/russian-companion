@@ -3,7 +3,7 @@
   "purpose": "Current evidence for the retained preliminary audit targets; no semantic closure or approval",
   "inputs": {
     "curriculumPath": "app/src/main/assets/content/v2-curriculum.json",
-    "curriculumFileSha256": "8646565555a80bd593713826006e06f9dc1262b990e89a9fd438959b6bb7e26b",
+    "curriculumFileSha256": "f33d9a9806d28949e234180d5b056ccae7ac4c561735402ce9f80f264d922449",
     "targetSnapshotPath": "audit/content-corrections/ITEM_TARGET_RECONCILIATION_PENDING.csv",
     "targetSnapshotFileSha256": "ba574c8a201baf52614b4cbdc35f9b3981e7a3de727df77e5c5f8ec827dce12f"
   },
@@ -2749,7 +2749,7 @@
         {
           "id": "obj-u17-ordinals",
           "unitNumber": 17,
-          "title": "Choose the admitted ordinal line",
+          "title": "Recognize ordinal positions and agreement",
           "kind": "RECOGNITION",
           "instructionStepIds": [
             "u17-st-orient",
@@ -2800,8 +2800,8 @@
           "step": {
             "id": "u17-st-teach-ordinals-1",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "пе́рвый — Ordinal numbers. второ́й — Ordinal numbers. ",
+            "title": "Position rather than quantity",
+            "body": "пе́рвый — first. второ́й — second. тре́тий — third. четвёртый — fourth. An ordinal identifies position in an ordered sequence; a cardinal tells how many. These isolated ordinal forms are masculine nominative singular. Learn the position expressed by each form before choosing it.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u17-attribution"
@@ -2820,29 +2820,10 @@
         {
           "sessionId": "u17-s-ordinals",
           "step": {
-            "id": "u17-st-guided-ordinals-1",
-            "kind": "GUIDED",
-            "title": "Guided practice",
-            "body": "Choose the admitted record. The feedback states the frozen field.",
-            "dominantAction": "Continue",
-            "referenceIds": [],
-            "itemIds": [
-              "u17-g-ordinals-0"
-            ],
-            "exampleIds": [],
-            "unavailableReason": null,
-            "bookDirection": null,
-            "companionDirection": null,
-            "remediationStepId": "u17-st-rem-ordinals"
-          }
-        },
-        {
-          "sessionId": "u17-s-ordinals",
-          "step": {
             "id": "u17-st-teach-ordinals-2",
             "kind": "TEACH",
-            "title": "Admitted instruction",
-            "body": "Ordinal numbers",
+            "title": "Ordinals agree like adjectives",
+            "body": "Ordinals agree with their noun in gender, number and case, like adjectives. восемнадцатую девушку means the eighteenth girl as a feminine accusative noun phrase. The retained example comes from a sentence about photographing her; this displayed fragment alone does not mean She just photographed. The ordinal ending follows the noun phrase, rather than staying in the masculine dictionary form. These recognition checks do not assess producing agreement in a sentence.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u17-attribution"
@@ -2860,8 +2841,8 @@
           "step": {
             "id": "u17-st-teach-ordinals-3",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "тре́тий — Ordinal numbers. восемнадцатую девушку — She just photographed the eighteenth girl. ",
+            "title": "Work the requested position",
+            "body": "For the first ordinal, choose пе́рвый; for the second ordinal, choose второ́й; for the third ordinal, choose тре́тий. четвёртый expresses fourth, so it fails each of those requests. Read the English request: the separately shown Russian cue may name a different position and is not the target to copy.",
             "dominantAction": "Continue",
             "referenceIds": [
               "ref-u17-attribution"
@@ -2880,16 +2861,37 @@
         {
           "sessionId": "u17-s-ordinals",
           "step": {
+            "id": "u17-st-guided-ordinals-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Read the requested position or quantity and compare the forms explained above, then choose from the displayed alternatives. A missed check returns to all explanations and examples.",
+            "dominantAction": "Continue",
+            "referenceIds": [],
+            "itemIds": [
+              "u17-g-ordinals-0"
+            ],
+            "exampleIds": [],
+            "unavailableReason": null,
+            "bookDirection": null,
+            "companionDirection": null,
+            "remediationStepId": "u17-st-rem-ordinals"
+          }
+        },
+        {
+          "sessionId": "u17-s-ordinals",
+          "step": {
             "id": "u17-st-rem-ordinals",
             "kind": "REMEDIATE",
-            "title": "Remediation",
-            "body": "Ordinal numbers",
+            "title": "Review positions and counts",
+            "body": "пе́рвый — first. второ́й — second. тре́тий — third. четвёртый — fourth. An ordinal identifies position in an ordered sequence; a cardinal tells how many. These isolated ordinal forms are masculine nominative singular. Learn the position expressed by each form before choosing it.\n\nOrdinals agree with their noun in gender, number and case, like adjectives. восемнадцатую девушку means the eighteenth girl as a feminine accusative noun phrase. The retained example comes from a sentence about photographing her; this displayed fragment alone does not mean She just photographed. The ordinal ending follows the noun phrase, rather than staying in the masculine dictionary form. These recognition checks do not assess producing agreement in a sentence.\n\nFor the first ordinal, choose пе́рвый; for the second ordinal, choose второ́й; for the third ordinal, choose тре́тий. четвёртый expresses fourth, so it fails each of those requests. Read the English request: the separately shown Russian cue may name a different position and is not the target to copy.",
             "dominantAction": "Continue",
             "referenceIds": [],
             "itemIds": [],
             "exampleIds": [
               "ex-u17-ordinals-0",
-              "ex-u17-ordinals-1"
+              "ex-u17-ordinals-1",
+              "ex-u17-ordinals-2",
+              "ex-u17-ordinals-3"
             ],
             "unavailableReason": null,
             "bookDirection": null,

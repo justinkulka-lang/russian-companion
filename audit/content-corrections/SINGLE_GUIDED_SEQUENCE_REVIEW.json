@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "curriculumFileSha256": "8646565555a80bd593713826006e06f9dc1262b990e89a9fd438959b6bb7e26b",
-  "candidateCount": 126,
+  "curriculumFileSha256": "f33d9a9806d28949e234180d5b056ccae7ac4c561735402ce9f80f264d922449",
+  "candidateCount": 122,
   "affectedUnits": [
     3,
     4,
@@ -851,58 +851,6 @@
       "laterTeachingStepIds": [
         "u15-st-teach-aspect-consolidate-2",
         "u15-st-teach-aspect-consolidate-3"
-      ],
-      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
-    },
-    {
-      "unitNumber": 17,
-      "sessionId": "u17-s-ordinals",
-      "guidedStepId": "u17-st-guided-ordinals-1",
-      "guidedItemIds": [
-        "u17-g-ordinals-0"
-      ],
-      "laterTeachingStepIds": [
-        "u17-st-teach-ordinals-2",
-        "u17-st-teach-ordinals-3"
-      ],
-      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
-    },
-    {
-      "unitNumber": 17,
-      "sessionId": "u17-s-hours",
-      "guidedStepId": "u17-st-guided-hours-1",
-      "guidedItemIds": [
-        "u17-g-hours-0"
-      ],
-      "laterTeachingStepIds": [
-        "u17-st-teach-hours-2",
-        "u17-st-teach-hours-3"
-      ],
-      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
-    },
-    {
-      "unitNumber": 17,
-      "sessionId": "u17-s-years",
-      "guidedStepId": "u17-st-guided-years-1",
-      "guidedItemIds": [
-        "u17-g-years-0"
-      ],
-      "laterTeachingStepIds": [
-        "u17-st-teach-years-2",
-        "u17-st-teach-years-3"
-      ],
-      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
-    },
-    {
-      "unitNumber": 17,
-      "sessionId": "u17-s-minutes",
-      "guidedStepId": "u17-st-guided-minutes-1",
-      "guidedItemIds": [
-        "u17-g-minutes-0"
-      ],
-      "laterTeachingStepIds": [
-        "u17-st-teach-minutes-2",
-        "u17-st-teach-minutes-3"
       ],
       "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
     },

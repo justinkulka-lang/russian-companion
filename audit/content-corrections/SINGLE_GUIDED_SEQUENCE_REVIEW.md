@@ -1,8 +1,8 @@
 # Single-guided session sequence-review candidates
 
-Curriculum file SHA-256: `8646565555a80bd593713826006e06f9dc1262b990e89a9fd438959b6bb7e26b`.
+Curriculum file SHA-256: `f33d9a9806d28949e234180d5b056ccae7ac4c561735402ce9f80f264d922449`.
 
-**126 sessions require cue-level sequence review.** The scan finds teaching after the single guided-practice step. It does not establish that every flagged session is defective: each cue, answer and distractor must be checked against the teaching available before that step. Multiple guided-step sessions are outside this scan.
+**122 sessions require cue-level sequence review.** The scan finds teaching after the single guided-practice step. It does not establish that every flagged session is defective: each cue, answer and distractor must be checked against the teaching available before that step. Multiple guided-step sessions are outside this scan.
 
 The Unit 24 absence session and Unit 25 courtesy session no longer have this ordering flag. Their implemented corrections remain pending final semantic audit. This inventory does not close CA009/CA010 or approve any other session.
 
@@ -64,10 +64,6 @@ The Unit 24 absence session and Unit 25 courtesy session no longer have this ord
 | 15 | `u15-s-imperative` | `u15-st-guided-imperative-1` | `u15-st-teach-imperative-2`, `u15-st-teach-imperative-3` |
 | 15 | `u15-s-say-request` | `u15-st-guided-say-request-1` | `u15-st-teach-say-request-2`, `u15-st-teach-say-request-3`, `u15-st-teach-say-request-4` |
 | 15 | `u15-s-aspect-consolidate` | `u15-st-guided-aspect-consolidate-1` | `u15-st-teach-aspect-consolidate-2`, `u15-st-teach-aspect-consolidate-3` |
-| 17 | `u17-s-ordinals` | `u17-st-guided-ordinals-1` | `u17-st-teach-ordinals-2`, `u17-st-teach-ordinals-3` |
-| 17 | `u17-s-hours` | `u17-st-guided-hours-1` | `u17-st-teach-hours-2`, `u17-st-teach-hours-3` |
-| 17 | `u17-s-years` | `u17-st-guided-years-1` | `u17-st-teach-years-2`, `u17-st-teach-years-3` |
-| 17 | `u17-s-minutes` | `u17-st-guided-minutes-1` | `u17-st-teach-minutes-2`, `u17-st-teach-minutes-3` |
 | 17 | `u17-s-age` | `u17-st-guided-age-1` | `u17-st-teach-age-2` |
 | 17 | `u17-s-weekdays` | `u17-st-guided-weekdays-1` | `u17-st-teach-weekdays-2`, `u17-st-teach-weekdays-3` |
 | 17 | `u17-s-months` | `u17-st-guided-months-1` | `u17-st-teach-months-2`, `u17-st-teach-months-3` |
