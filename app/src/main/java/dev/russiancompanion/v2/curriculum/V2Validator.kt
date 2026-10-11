@@ -4273,7 +4273,10 @@ internal object V2Validator {
             val prepositionMeaningTarget = item.objectiveId == "obj-u16-inst-prep" &&
                 feature in setOf("OVER_LABEL", "UNDER_LABEL", "BEFORE_LABEL") &&
                 item.prompt == "Which English spatial meaning fits the shown preposition?"
-            if (feature.isBlank() || phrase == null || (!item.prompt.contains(phrase) && !prepositionMeaningTarget)) {
+            val prefixMeaningTarget = item.objectiveId == "obj-u19-prefix-caution" &&
+                feature in setOf("DISSUADE_MEANING", "AGREE_MEANING") &&
+                item.prompt == "Which English meaning matches the shown Russian verb?"
+            if (feature.isBlank() || phrase == null || (!item.prompt.contains(phrase) && !prepositionMeaningTarget && !prefixMeaningTarget)) {
                 errors += "Item ${item.id} has no explicit target"
             }
             if (item.objectiveId == "obj-u16-inst-prep" && item.prompt.contains(item.answer, ignoreCase = true)) {

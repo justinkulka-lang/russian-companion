@@ -31,7 +31,8 @@ class Unit19ConditionalObligationInstructionTest {
         assertTrue(body("obligation").contains("not literal translations"))
         assertTrue(body("obligation").contains("subject is nominative"))
         assertTrue(body("probability").contains("not a duty imposed on the eclipse"))
-        assertTrue(body("probability").contains("currently repeat this same eclipse sentence"))
+        assertTrue(body("probability").contains("other classifies the employee obligation"))
+        assertNotEquals(p.item("u19-i-probability-1")!!.promptLetter, p.item("u19-i-probability-2")!!.promptLetter)
     }
     @Test fun feedbackAndPromptsAskForTheActualRetainedAnswerType() {
         val p = pack()
