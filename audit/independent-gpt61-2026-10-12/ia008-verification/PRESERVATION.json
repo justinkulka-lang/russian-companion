@@ -1,0 +1,38 @@
+{
+  "baselineCommit": "3fc46829970055f25394d910d6884ee9acc08e41",
+  "beforeSha256": "48f68eac2aff40ef8c1abb2e873dca930bd5e21e76289322cfeacb8eadc59403",
+  "afterSha256": "1b5238058fd96caaf664e56141f3bd942f3ea4879dd23426049d3c866fe6b239",
+  "priorProvenancePreserved": 5712,
+  "addedPendingProvenance": 120,
+  "changedItemIds": [
+    "u8-g-availability-0",
+    "u8-i-availability-1",
+    "u8-i-availability-2",
+    "u8-i-availability-3",
+    "u10-g-have-0",
+    "u10-i-have-1",
+    "u10-i-have-2",
+    "u10-i-have-3",
+    "u10-i-have-4",
+    "u10-g-absence-0",
+    "u10-i-absence-1",
+    "u10-i-absence-2",
+    "u10-i-absence-3",
+    "u10-i-absence-4"
+  ],
+  "kindReclassification": [
+    "u10-g-have-0",
+    "u10-i-have-1",
+    "u10-i-have-2",
+    "u10-i-have-3",
+    "u10-i-have-4"
+  ],
+  "allRussianItemCuesUnchanged": true,
+  "other28UnitsUnchanged": true,
+  "examplesSourcesRightsReferencesCapabilitiesMappingsUnchanged": true,
+  "deterministicBaselineReplay": true,
+  "byteIdempotence": true,
+  "frozenPublicSource": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+  "frozenPublicSourceSha256": "2bd8751faf3bae6d407445523671ffcf4827750f25318ae5fc0d40e482001591",
+  "semanticAcceptance": false
+}

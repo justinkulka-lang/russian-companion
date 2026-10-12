@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.CompletionEvidenceCorrectionTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-12T21:57:33.951Z" hostname="d0fbcd1608d3" time="19.664">
+  <properties/>
+  <testcase name="hashCorrectRestoredUnsupportedCompletionIsHistoricalAndCannotUnlock" classname="dev.russiancompanion.v2.CompletionEvidenceCorrectionTest" time="0.68"/>
+  <testcase name="unboundLegacyViewCannotTurnClaimedCompletionIntoCurrentEvidence" classname="dev.russiancompanion.v2.CompletionEvidenceCorrectionTest" time="4.971"/>
+  <testcase name="changedEvidenceIsRecomputedAndLaterPlacementDoesNotUnlockFutureUnits" classname="dev.russiancompanion.v2.CompletionEvidenceCorrectionTest" time="6.844"/>
+  <testcase name="changedContentCannotKeepAnOldCompletionOrUnlockItsSuccessor" classname="dev.russiancompanion.v2.CompletionEvidenceCorrectionTest" time="7.137"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+]]></system-err>
+</testsuite>

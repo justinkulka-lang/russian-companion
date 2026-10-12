@@ -3192,6 +3192,7 @@ internal object V2Validator {
         if (applications.isEmpty()) return ""
         val group = listOf(cue, answer) + distractors
         val distractorTexts = distractors.map { it.shippedText }.toSet()
+        if (!group.all { CompleteRuleContextPins.matchesIfPinned(it) }) return ""
         val spec = applications.firstOrNull {
             it.cue == cue.shippedText && it.answer == answer.shippedText &&
                 it.distractors.toSet() == distractorTexts
@@ -4568,6 +4569,9 @@ internal object V2Validator {
     }
 
     private fun validateItem(pack: V2CurriculumPack, item: V2CheckItem, errors: MutableList<String>) {
+        if (CompleteRuleContextPins.required(item.id) && !CompleteRuleContextPins.itemMatches(pack, item)) {
+            errors += "Item ${item.id} complete rule context does not match its frozen application"
+        }
         validateIndeclinabilityBinding(pack, item, errors)
         if (item.promptLetterRole !in setOf("CUE", "ANSWER_REFERENCE") ||
             (item.promptLetterRole == "ANSWER_REFERENCE" &&
@@ -5170,6 +5174,9 @@ internal object V2Validator {
      */
     private fun contentAuditProvenanceErrors(record: V2ProvenanceRecord): List<String> {
         val errors = mutableListOf<String>()
+        if (!CompleteRuleContextPins.matchesIfPinned(record)) {
+            errors += "Provenance ${record.itemId} complete rule context does not match its frozen application"
+        }
         if (record.sourceId != ContentAuditSources.SOURCE_ID ||
             record.transformation != ContentAuditSources.TRANSFORMATION ||
             record.sourceRevision != ContentAuditSources.REVISION ||
