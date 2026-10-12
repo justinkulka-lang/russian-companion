@@ -400,8 +400,14 @@ class Units2630SourceIntakeTest {
 
     @Test
     fun forgedMutableWrongAndExcludedSourcesStayClosed() {
-        val pack = pack()
-        val host = pack.sourceCapabilities.single { it.id == "cap-obj-u26-word-order" }
+        val live = pack()
+        // Preserve the original frozen-source mutation coverage after the live claim moves to pending contextual synthesis.
+        val historical = live.provenanceRecords.first { it.sourceHash == "30e7e08a32bd5ca619593ff841bc22fff849a3ce2fc516d1f0cf67ea0c8e5bb6" }
+        val host = live.sourceCapabilities.single { it.id == "cap-obj-u26-word-order" }.copy(
+            sourceId=historical.sourceId,sourceRevision=historical.sourceRevision,sourceRecordId=historical.sourceRecordId,
+            sourceHash=historical.sourceHash,exactSpan=historical.originalSourceText,
+        )
+        val pack = live.copy(sourceCapabilities=live.sourceCapabilities.map { if(it.id==host.id)host else it })
         val provenance = pack.provenanceRecords.first {
             it.sourceRecordId == host.sourceRecordId && it.originalSourceText == host.exactSpan
         }

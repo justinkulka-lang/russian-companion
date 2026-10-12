@@ -1174,6 +1174,9 @@ internal object V2Validator {
         if (capability.supportedClaim == "letter-writing" && capability.exactSpan == RemainingSources.LETTER_SPAN) {
             errors += "Source capability ${capability.id} retired universal letter-writing intake requires the exact pending correction"
         }
+        if (capability.supportedClaim == "word-order" && capability.sourceHash == "30e7e08a32bd5ca619593ff841bc22fff849a3ce2fc516d1f0cf67ea0c8e5bb6") {
+            errors += "Source capability ${capability.id} historical word-order labels require contextual application correction"
+        }
         val binding = REQUIRED_SOURCE_CAPABILITIES[capability.unitNumber].orEmpty().firstOrNull {
             it.objectiveId == capability.objectiveId && it.claim == capability.supportedClaim
         }
@@ -3656,6 +3659,7 @@ internal object V2Validator {
         "obj-u25-nickname-rule",
         "obj-u25-productive-formation",
         "obj-u26-indefinite",
+        "obj-u26-word-order",
         "obj-u26-letter-writing",
         "obj-u26-correspondence",
         "obj-u27-stress",

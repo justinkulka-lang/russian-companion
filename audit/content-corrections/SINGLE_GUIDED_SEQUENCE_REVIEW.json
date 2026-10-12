@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "curriculumFileSha256": "5ee9c17c7516645a8e8fec4acb89a8e6ca620ec699bf6553d110cc450d8a7f8f",
-  "candidateCount": 80,
+  "curriculumFileSha256": "40f129363ecabaf3710a0c7134c4d7ab362d36c1fa3ce565473ecad69c4c1685",
+  "candidateCount": 78,
   "affectedUnits": [
     3,
     4,
@@ -847,20 +847,6 @@
     },
     {
       "unitNumber": 26,
-      "sessionId": "u26-s-word-order",
-      "guidedStepId": "u26-st-guided-word-order-1",
-      "guidedItemIds": [
-        "u26-g-word-order-0"
-      ],
-      "laterTeachingStepIds": [
-        "u26-st-teach-word-order-2",
-        "u26-st-teach-word-order-3",
-        "u26-st-teach-word-order-4"
-      ],
-      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
-    },
-    {
-      "unitNumber": 26,
       "sessionId": "u26-s-vy-capital",
       "guidedStepId": "u26-st-guided-vy-capital-1",
       "guidedItemIds": [
@@ -882,19 +868,6 @@
       "laterTeachingStepIds": [
         "u26-st-teach-address-notation-2",
         "u26-st-teach-address-notation-3"
-      ],
-      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
-    },
-    {
-      "unitNumber": 26,
-      "sessionId": "u26-s-indefinite",
-      "guidedStepId": "u26-st-guided-indefinite-1",
-      "guidedItemIds": [
-        "u26-g-indefinite-0"
-      ],
-      "laterTeachingStepIds": [
-        "u26-st-teach-indefinite-2",
-        "u26-st-teach-indefinite-3"
       ],
       "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
     },

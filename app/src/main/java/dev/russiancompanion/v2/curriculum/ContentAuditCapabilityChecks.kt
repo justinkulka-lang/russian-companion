@@ -78,6 +78,15 @@ internal fun correctedCapabilityDefects(pack: V2CurriculumPack, cap: V2SourceCap
         }
     }
 
+    if (pin.unit == 26 && pin.claim == "word-order") {
+        val guided = practiced.mapNotNull(pack::item)
+        val checks = guided + independent
+        if (guided.size != 1 || independent.size != 2 || checks.any { item ->
+            item.assessment?.testedFeature != "WORD_ORDER" || item.assessment.relationKind != "STATED_APPLICATION" ||
+                item.assessment.relationParticipantIds.isEmpty() || item.assessment.relationParticipantIds.any { it !in hostIds } ||
+                item.prompt.isBlank() || item.prompt !in cap.exactSpan
+        }) fail("is missing its exact guided and independent contextual word-order applications")
+    }
     (objective.instructionStepIds + objective.remediationStepIds).forEach { id ->
         val step = pack.step(id)?.second
         if (step == null || step.body.isBlank() || step.body !in cap.exactSpan) fail("has an unbound teaching or remediation step $id")

@@ -3,7 +3,7 @@
   "purpose": "Current evidence for the retained preliminary audit targets; no semantic closure or approval",
   "inputs": {
     "curriculumPath": "app/src/main/assets/content/v2-curriculum.json",
-    "curriculumFileSha256": "5ee9c17c7516645a8e8fec4acb89a8e6ca620ec699bf6553d110cc450d8a7f8f",
+    "curriculumFileSha256": "40f129363ecabaf3710a0c7134c4d7ab362d36c1fa3ce565473ecad69c4c1685",
     "targetSnapshotPath": "audit/content-corrections/ITEM_TARGET_RECONCILIATION_PENDING.csv",
     "targetSnapshotFileSha256": "ba574c8a201baf52614b4cbdc35f9b3981e7a3de727df77e5c5f8ec827dce12f"
   },
@@ -13080,7 +13080,7 @@
         {
           "id": "obj-u26-word-order",
           "unitNumber": 26,
-          "title": "Choose the admitted label for the shown arrangement",
+          "title": "Interpret supplied word order in context",
           "kind": "RECOGNITION",
           "instructionStepIds": [
             "u26-st-orient",
@@ -13164,7 +13164,7 @@
         {
           "id": "obj-u26-indefinite",
           "unitNumber": 26,
-          "title": "Classify the shown form by its admitted series meaning",
+          "title": "Distinguish specific unknown, open and speaker-known reference",
           "kind": "RECOGNITION",
           "instructionStepIds": [
             "u26-st-orient",
@@ -13258,8 +13258,8 @@
           "step": {
             "id": "u26-st-teach-word-order-1",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "Read the admitted examples on this card.",
+            "title": "Separate the event from the focus",
+            "body": "В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.",
             "referenceIds": [
               "ref-u2630-attribution"
             ],
@@ -13272,23 +13272,10 @@
         {
           "sessionId": "u26-s-word-order",
           "step": {
-            "id": "u26-st-guided-word-order-1",
-            "kind": "GUIDED",
-            "title": "Guided practice",
-            "body": "Choose the admitted record. The feedback states the frozen field.",
-            "itemIds": [
-              "u26-g-word-order-0"
-            ],
-            "remediationStepId": "u26-st-rem-word-order"
-          }
-        },
-        {
-          "sessionId": "u26-s-word-order",
-          "step": {
             "id": "u26-st-teach-word-order-2",
             "kind": "TEACH",
-            "title": "Admitted instruction",
-            "body": "Word order can express logical stress, and degree of definiteness.",
+            "title": "Read a story opening in its stated context",
+            "body": "Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.",
             "referenceIds": [
               "ref-u2630-attribution"
             ]
@@ -13299,8 +13286,8 @@
           "step": {
             "id": "u26-st-teach-word-order-3",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "Read the admitted examples on this card.",
+            "title": "Recognize a neutral report without inventing a contrast",
+            "body": "Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.",
             "referenceIds": [
               "ref-u2630-attribution"
             ],
@@ -13315,8 +13302,8 @@
           "step": {
             "id": "u26-st-teach-word-order-4",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "Read the admitted examples on this card.",
+            "title": "New and known information require context",
+            "body": "В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.",
             "referenceIds": [
               "ref-u2630-attribution"
             ],
@@ -13328,13 +13315,29 @@
         {
           "sessionId": "u26-s-word-order",
           "step": {
+            "id": "u26-st-guided-word-order-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.",
+            "itemIds": [
+              "u26-g-word-order-0"
+            ],
+            "remediationStepId": "u26-st-rem-word-order"
+          }
+        },
+        {
+          "sessionId": "u26-s-word-order",
+          "step": {
             "id": "u26-st-rem-word-order",
             "kind": "REMEDIATE",
-            "title": "Remediation",
-            "body": "Word order can express logical stress, and degree of definiteness.",
+            "title": "Review the full contextual distinction",
+            "body": "В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.\n\nПошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.\n\nЯ пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.\n\nВ ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.",
             "exampleIds": [
               "ex-u26-word-order-0",
-              "ex-u26-word-order-1"
+              "ex-u26-word-order-1",
+              "ex-u26-word-order-2",
+              "ex-u26-word-order-3",
+              "ex-u26-word-order-4"
             ]
           }
         },
@@ -13481,8 +13484,8 @@
           "step": {
             "id": "u26-st-teach-indefinite-1",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "Read the admitted examples on this card. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+            "title": "A specific person whose identity is unknown",
+            "body": "В доме действительно кто-то был means that someone really was in the house. The label референтность и неизвестность говорящему describes reference to a particular person whose identity is unknown to the speaker in this supplied use. It does not mean nobody was there. Referential concerns whether a particular entity is intended; it is different from whether the speaker knows that entity's identity.",
             "referenceIds": [
               "ref-u2630-attribution"
             ],
@@ -13495,23 +13498,10 @@
         {
           "sessionId": "u26-s-indefinite",
           "step": {
-            "id": "u26-st-guided-indefinite-1",
-            "kind": "GUIDED",
-            "title": "Guided practice",
-            "body": "Choose the admitted record. The feedback states the frozen field.",
-            "itemIds": [
-              "u26-g-indefinite-0"
-            ],
-            "remediationStepId": "u26-st-rem-indefinite"
-          }
-        },
-        {
-          "sessionId": "u26-s-indefinite",
-          "step": {
             "id": "u26-st-teach-indefinite-2",
             "kind": "TEACH",
-            "title": "Admitted instruction",
-            "body": "Местоимение на -то может употребляться также и в значении местоимения на -нибудь",
+            "title": "An unspecified alternative is not absence",
+            "body": "куда-нибудь is the supplied example of an open, unspecified destination. The label являются нереферентными means non-referential in this classification: no particular fixed destination is selected. An alternative is considered against other possible destinations, as in a future plan, desire or conditional context. This is not the label референтность и неизвестность говорящему for a particular unknown entity, nor референтный денотативный статус слабой определённости for a specific entity known to the speaker. The classification concerns this supplied series/use, not a universal translation of every indefinite form.",
             "referenceIds": [
               "ref-u2630-attribution"
             ]
@@ -13522,8 +13512,8 @@
           "step": {
             "id": "u26-st-teach-indefinite-3",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "Read the admitted examples on this card.",
+            "title": "A specific choice known to the speaker, with overlap limits",
+            "body": "кое-какие is classified as референтный денотативный статус слабой определённости: weakly definite reference to particular things known to the speaker but not assumed known to the listener. It differs from a particular unknown entity and from an open alternative with no fixed referent. The retained rule Местоимение на -то может употребляться также и в значении местоимения на -нибудь says the first series can also be used with the meaning of the second in some contexts. Do not infer a rigid one-suffix/one-meaning division. These checks classify the supplied forms; broader production and selection need the sentence and discourse context.",
             "referenceIds": [
               "ref-u2630-attribution"
             ],
@@ -13535,13 +13525,27 @@
         {
           "sessionId": "u26-s-indefinite",
           "step": {
+            "id": "u26-st-guided-indefinite-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.",
+            "itemIds": [
+              "u26-g-indefinite-0"
+            ],
+            "remediationStepId": "u26-st-rem-indefinite"
+          }
+        },
+        {
+          "sessionId": "u26-s-indefinite",
+          "step": {
             "id": "u26-st-rem-indefinite",
             "kind": "REMEDIATE",
-            "title": "Remediation",
-            "body": "Местоимение на -то может употребляться также и в значении местоимения на -нибудь",
+            "title": "Review the full contextual distinction",
+            "body": "В доме действительно кто-то был means that someone really was in the house. The label референтность и неизвестность говорящему describes reference to a particular person whose identity is unknown to the speaker in this supplied use. It does not mean nobody was there. Referential concerns whether a particular entity is intended; it is different from whether the speaker knows that entity's identity.\n\nкуда-нибудь is the supplied example of an open, unspecified destination. The label являются нереферентными means non-referential in this classification: no particular fixed destination is selected. An alternative is considered against other possible destinations, as in a future plan, desire or conditional context. This is not the label референтность и неизвестность говорящему for a particular unknown entity, nor референтный денотативный статус слабой определённости for a specific entity known to the speaker. The classification concerns this supplied series/use, not a universal translation of every indefinite form.\n\nкое-какие is classified as референтный денотативный статус слабой определённости: weakly definite reference to particular things known to the speaker but not assumed known to the listener. It differs from a particular unknown entity and from an open alternative with no fixed referent. The retained rule Местоимение на -то может употребляться также и в значении местоимения на -нибудь says the first series can also be used with the meaning of the second in some contexts. Do not infer a rigid one-suffix/one-meaning division. These checks classify the supplied forms; broader production and selection need the sentence and discourse context.",
             "exampleIds": [
               "ex-u26-indefinite-0",
-              "ex-u26-indefinite-1"
+              "ex-u26-indefinite-1",
+              "ex-u26-indefinite-2"
             ]
           }
         },

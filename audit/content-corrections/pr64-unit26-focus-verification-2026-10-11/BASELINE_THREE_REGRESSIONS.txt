@@ -1,0 +1,43 @@
+
+Thanks for using JUnit! Support its development at https://junit.org/sponsoring
+
+
+Failures (3):
+  JUnit Vintage:Unit26FocusInstructionTest:exactContextualAdmissionAndReferenceKeysRejectForgedOrUnboundEvidence
+    MethodSource [className = 'dev.russiancompanion.v2.Unit26FocusInstructionTest', methodName = 'exactContextualAdmissionAndReferenceKeysRejectForgedOrUnboundEvidence', methodParameterTypes = '']
+    => org.junit.ComparisonFailure: expected:<src-[content-audit-research]> but was:<src-[wikipedia-russian-grammar-1369617627]>
+       org.junit.Assert.assertEquals(Assert.java:117)
+       org.junit.Assert.assertEquals(Assert.java:146)
+       dev.russiancompanion.v2.Unit26FocusInstructionTest.exactContextualAdmissionAndReferenceKeysRejectForgedOrUnboundEvidence(Unit26FocusInstructionTest.kt:25)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+  JUnit Vintage:Unit26FocusInstructionTest:contextualMeaningReplacesLiteralWordOrderLabels
+    MethodSource [className = 'dev.russiancompanion.v2.Unit26FocusInstructionTest', methodName = 'contextualMeaningReplacesLiteralWordOrderLabels', methodParameterTypes = '']
+    => org.junit.ComparisonFailure: expected:<[It was me who went to the shop.]> but was:<[To the shop went I]>
+       org.junit.Assert.assertEquals(Assert.java:117)
+       org.junit.Assert.assertEquals(Assert.java:146)
+       dev.russiancompanion.v2.Unit26FocusInstructionTest.contextualMeaningReplacesLiteralWordOrderLabels(Unit26FocusInstructionTest.kt:9)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+  JUnit Vintage:Unit26FocusInstructionTest:completeContextAndReferenceDistinctionsPrecedePracticeAndReturnAfterAMiss
+    MethodSource [className = 'dev.russiancompanion.v2.Unit26FocusInstructionTest', methodName = 'completeContextAndReferenceDistinctionsPrecedePracticeAndReturnAfterAMiss', methodParameterTypes = '']
+    => java.lang.AssertionError: expected:<4> but was:<1>
+       org.junit.Assert.fail(Assert.java:89)
+       org.junit.Assert.failNotEquals(Assert.java:835)
+       org.junit.Assert.assertEquals(Assert.java:120)
+       org.junit.Assert.assertEquals(Assert.java:146)
+       dev.russiancompanion.v2.Unit26FocusInstructionTest.completeContextAndReferenceDistinctionsPrecedePracticeAndReturnAfterAMiss(Unit26FocusInstructionTest.kt:17)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+
+Test run finished after 1399 ms
+[         4 containers found      ]
+[         0 containers skipped    ]
+[         4 containers started    ]
+[         0 containers aborted    ]
+[         4 containers successful ]
+[         0 containers failed     ]
+[         3 tests found           ]
+[         0 tests skipped         ]
+[         3 tests started         ]
+[         0 tests aborted         ]
+[         0 tests successful      ]
+[         3 tests failed          ]
+

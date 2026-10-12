@@ -5,6 +5,7 @@ internal object ContentAuditCapabilityPins {
     data class Pin(val id: String, val recordId: String, val hash: String, val unit: Int,
         val objective: String, val claim: String, val features: Set<String>)
     val all = listOf(
+        Pin("cap-obj-u26-word-order", "ca-corrected-capability:cap-obj-u26-word-order", "763d91eb12ba1c8ef6553d9c700f800fb8ccfb93bdf41ff5a6ae83a19d1fd94b", 26, "obj-u26-word-order", "word-order", setOf("WORD_ORDER")),
         Pin("cap-obj-u26-letter-writing", "ca-corrected-capability:cap-obj-u26-letter-writing", "9eb8191a1f3f63e03e646fb305215ba8401e5a1c31ae1f6d2aa79f670ed6af3c", 26, "obj-u26-letter-writing", "letter-writing", setOf("LETTER_ADDRESS_LIMIT", "LETTER_STRUCTURE")),
         Pin("cap-u20-motion-po-setting-out", "ca-corrected-capability:cap-u20-motion-po-setting-out", "3dad37f220e468c450c6500ebb4db6c92fe4c7bd0a51adae5b47a76f7730df0e", 20, "obj-u20-motion", "motion-po-setting-out", setOf("MOTION_SETTING_OUT")),
         Pin("cap-u20-motion-prefixed-path", "ca-corrected-capability:cap-u20-motion-prefixed-path", "971f537a658a6102d6f9906a7e8bc70a6cf51bd69e5c9db73c7026b8c36e2a52", 20, "obj-u20-motion", "motion-prefixed-path", setOf("MOTION_NO_ADDED_CLAUSE")),
