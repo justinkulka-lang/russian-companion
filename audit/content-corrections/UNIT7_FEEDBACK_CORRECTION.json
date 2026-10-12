@@ -1,0 +1,232 @@
+{
+  "baselineCommit": "f9e861d252b69a788c45be18ca4e2683ed0dd42f",
+  "beforeSha256": "c637c61a318bc040e80f1f3c2f109e2e1092e14049f141381f3ef6e851c5e03f",
+  "afterSha256": "11ecb568c7096aefb7444953e3bd4359f7c81e9577963fd0ec2ec5d402a26c6a",
+  "addedProvenanceIds": [
+    "prov-ca-u7-feedback-u7-i-endings-4",
+    "prov-ca-u7-feedback-u7-i-endings-4-distractor-1",
+    "prov-ca-u7-feedback-u7-i-endings-4-distractor-2",
+    "prov-ca-u7-feedback-u7-g-demonstrative-0",
+    "prov-ca-u7-feedback-u7-g-demonstrative-0-distractor-1"
+  ],
+  "changes": [
+    {
+      "before": {
+        "id": "u7-i-endings-4",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form agrees with the shown word?",
+        "promptLetter": "машина",
+        "options": [
+          "но́вая",
+          "но́вый",
+          "но́вые"
+        ],
+        "answer": "но́вая",
+        "feedback": "Does the admitted record show the governed contrast? но́вая.",
+        "objectiveId": "obj-u7-endings",
+        "sourceId": "src-openrussian-50e210c4",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This form is the other row of the same word, not the row of the shown word.",
+          "This form is the plural row of the same word, not the row of the shown word."
+        ],
+        "assessment": {
+          "testedFeature": "ADJECTIVE_AGREEMENT",
+          "evidenceMode": "SAME_CONSTRUCTION_DIFFERENT_FORM",
+          "contrastSetId": "u7-endings-4",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-or-u7-endings-8"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-or-u7-endings-7",
+            "prov-ex-or-u7-endings-10"
+          ],
+          "distractorDifference": [
+            "",
+            "This form is the other row of the same word, not the row of the shown word.",
+            "This form is the plural row of the same word, not the row of the shown word."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "но́вая",
+            "но́вый",
+            "но́вые"
+          ],
+          "relationKind": "SAME_CONSTRUCTION_DIFFERENT_FORM",
+          "relationParticipantIds": [
+            "prov-u7-endings-x-1",
+            "prov-ex-or-u7-endings-8",
+            "prov-ex-or-u7-endings-7",
+            "prov-ex-or-u7-endings-10"
+          ]
+        }
+      },
+      "after": {
+        "id": "u7-i-endings-4",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form agrees with the shown word?",
+        "promptLetter": "машина",
+        "options": [
+          "но́вая",
+          "но́вый",
+          "но́вые"
+        ],
+        "answer": "но́вая",
+        "feedback": "но́вая agrees with the shown feminine singular noun in the nominative, as in the retained new car phrase. но́вый is masculine singular and но́вые is plural. Choose the form that matches the noun in this phrase, rather than the dictionary form or a plural form.",
+        "objectiveId": "obj-u7-endings",
+        "sourceId": "src-openrussian-50e210c4",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "но́вый is nominative masculine singular instead of the feminine singular agreement required here.",
+          "но́вые is nominative plural instead of the singular agreement required here."
+        ],
+        "assessment": {
+          "testedFeature": "ADJECTIVE_AGREEMENT",
+          "evidenceMode": "SAME_CONSTRUCTION_DIFFERENT_FORM",
+          "contrastSetId": "u7-endings-4",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-or-u7-endings-8"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-or-u7-endings-7",
+            "prov-ex-or-u7-endings-10"
+          ],
+          "distractorDifference": [
+            "",
+            "но́вый is nominative masculine singular instead of the feminine singular agreement required here.",
+            "но́вые is nominative plural instead of the singular agreement required here."
+          ],
+          "whyAnswerDemonstratesObjective": "но́вая agrees with the shown feminine singular noun in the nominative, as in the retained new car phrase. но́вый is masculine singular and но́вые is plural. Choose the form that matches the noun in this phrase, rather than the dictionary form or a plural form.",
+          "contrastMembers": [
+            "но́вая",
+            "но́вый",
+            "но́вые"
+          ],
+          "relationKind": "SAME_CONSTRUCTION_DIFFERENT_FORM",
+          "relationParticipantIds": [
+            "prov-u7-endings-x-1",
+            "prov-ex-or-u7-endings-8",
+            "prov-ex-or-u7-endings-7",
+            "prov-ex-or-u7-endings-10"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u7-g-demonstrative-0",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form does the shown line use?",
+        "promptLetter": "эти хорошие новые студенты",
+        "options": [
+          "э́ти",
+          "э́та"
+        ],
+        "answer": "э́ти",
+        "feedback": "Does the admitted record show the governed contrast? э́ти.",
+        "objectiveId": "obj-u7-demonstrative",
+        "sourceId": "src-openrussian-50e210c4",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This form is the other row of the same word, and the shown line uses another row."
+        ],
+        "assessment": {
+          "testedFeature": "DEMONSTRATIVE_AGREEMENT",
+          "evidenceMode": "SAME_CONSTRUCTION_DIFFERENT_FORM",
+          "contrastSetId": "u7-demonstrative-0",
+          "cueLanguage": "ru",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ex-or-u7-demonstrative-3"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-or-u7-demonstrative-1"
+          ],
+          "distractorDifference": [
+            "",
+            "This form is the other row of the same word, and the shown line uses another row."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "э́ти",
+            "э́та"
+          ],
+          "relationKind": "SAME_CONSTRUCTION_DIFFERENT_FORM",
+          "relationParticipantIds": [
+            "prov-ex-u7-demonstrative-0-ru",
+            "prov-ex-or-u7-demonstrative-3",
+            "prov-ex-or-u7-demonstrative-1"
+          ]
+        }
+      },
+      "after": {
+        "id": "u7-g-demonstrative-0",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form does the shown line use?",
+        "promptLetter": "эти хорошие новые студенты",
+        "options": [
+          "э́ти",
+          "э́та"
+        ],
+        "answer": "э́ти",
+        "feedback": "The shown line means these good new students and refers to more than one student. э́ти is the nominative plural form of this demonstrative, so it matches the plural phrase. э́та is feminine singular and does not match this phrase.",
+        "objectiveId": "obj-u7-demonstrative",
+        "sourceId": "src-openrussian-50e210c4",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "э́та is nominative feminine singular instead of the plural agreement used in the shown phrase."
+        ],
+        "assessment": {
+          "testedFeature": "DEMONSTRATIVE_AGREEMENT",
+          "evidenceMode": "SAME_CONSTRUCTION_DIFFERENT_FORM",
+          "contrastSetId": "u7-demonstrative-0",
+          "cueLanguage": "ru",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ex-or-u7-demonstrative-3"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-or-u7-demonstrative-1"
+          ],
+          "distractorDifference": [
+            "",
+            "э́та is nominative feminine singular instead of the plural agreement used in the shown phrase."
+          ],
+          "whyAnswerDemonstratesObjective": "The shown line means these good new students and refers to more than one student. э́ти is the nominative plural form of this demonstrative, so it matches the plural phrase. э́та is feminine singular and does not match this phrase.",
+          "contrastMembers": [
+            "э́ти",
+            "э́та"
+          ],
+          "relationKind": "SAME_CONSTRUCTION_DIFFERENT_FORM",
+          "relationParticipantIds": [
+            "prov-ex-u7-demonstrative-0-ru",
+            "prov-ex-or-u7-demonstrative-3",
+            "prov-ex-or-u7-demonstrative-1"
+          ]
+        }
+      }
+    }
+  ],
+  "bibliography": "Retained Wikibooks Russian/Grammar/Adjectives oldid4292379, catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt, CC BY-SA 4.0: complete opening agreement definition and Nominative adjectives / Hard endings numbered examples new car and these good new students. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: adjectives.csv новый decl_f_nom/decl_m_nom/decl_pl_nom, этот decl_pl_nom/decl_f_nom; nouns.csv машина gender=f and sg_nom. Original Russian options, noun cue and complete plural phrase remain unchanged; no ending-only gender inference or new Russian form is taught. Bounded recognition of these nominative examples, not a productive paradigm or a claim that every source rule is correct. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.",
+  "semanticAcceptance": false
+}

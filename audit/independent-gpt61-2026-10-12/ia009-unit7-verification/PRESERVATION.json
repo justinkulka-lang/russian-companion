@@ -1,0 +1,15 @@
+{
+  "baselineCommit": "f9e861d252b69a788c45be18ca4e2683ed0dd42f",
+  "rawCurriculumSha256": "11ecb568c7096aefb7444953e3bd4359f7c81e9577963fd0ec2ec5d402a26c6a",
+  "all5865PriorProvenanceRecordsUnchanged": true,
+  "allOtherTopLevelDataUnchanged": true,
+  "allScoredTuplesAndParticipantRelationshipsUnchanged": true,
+  "changedItems": [
+    "u7-i-endings-4",
+    "u7-g-demonstrative-0"
+  ],
+  "addedPendingCoverageRecords": 5,
+  "deterministicBaselineReplay": true,
+  "byteIdempotent": true,
+  "semanticAcceptance": false
+}
