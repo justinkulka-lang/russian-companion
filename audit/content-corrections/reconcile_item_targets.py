@@ -5,11 +5,15 @@ import argparse
 import csv
 import hashlib
 import json
+import sys
 from collections import Counter, defaultdict
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
+sys.path.insert(0, str(ROOT / 'catalog'))
+from curriculum_storage import loads
+
 PACK = ROOT / "app/src/main/assets/content/v2-curriculum.json"
 TARGETS = HERE / "ITEM_TARGET_RECONCILIATION_PENDING.csv"
 OUTPUT = HERE / "ITEM_TARGET_CURRENT_EVIDENCE.json"
@@ -26,7 +30,7 @@ def main():
     args = parser.parse_args()
     pack_bytes = PACK.read_bytes()
     targets_bytes = TARGETS.read_bytes()
-    pack = json.loads(pack_bytes)
+    pack = loads(pack_bytes)
     index = defaultdict(list)
     units = {unit["number"]: unit for unit in pack["units"]}
 

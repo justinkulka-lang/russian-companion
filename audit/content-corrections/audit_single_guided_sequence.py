@@ -4,7 +4,9 @@ import hashlib,json,sys
 from pathlib import Path
 HERE=Path(__file__).resolve().parent
 ROOT=HERE.parents[1]
-raw=(ROOT/'app/src/main/assets/content/v2-curriculum.json').read_bytes();pack=json.loads(raw)
+sys.path.insert(0,str(ROOT/'catalog'))
+from curriculum_storage import loads
+raw=(ROOT/'app/src/main/assets/content/v2-curriculum.json').read_bytes();pack=loads(raw)
 rows=[]
 for unit in pack['units']:
     for session in unit['sessions']:
@@ -22,7 +24,7 @@ text=json.dumps(evidence,ensure_ascii=False,indent=2)+'\n'
 md='# Single-guided session sequence-review candidates\n\n'
 md+=f'Curriculum file SHA-256: `{evidence["curriculumFileSha256"]}`.\n\n'
 md+=f'**{len(rows)} sessions require cue-level sequence review.** The scan finds teaching after the single guided-practice step. It does not establish that every flagged session is defective: each cue, answer and distractor must be checked against the teaching available before that step. Multiple guided-step sessions are outside this scan.\n\n'
-md+='The Unit 24 absence session and Unit 25 courtesy session no longer have this ordering flag. Their implemented corrections remain pending final semantic audit. This inventory does not close CA009/CA010 or approve any other session.\n\n'
+md+='The inventories reflect the live curriculum. Recent corrected sessions no longer carry their old ordering flags. Their implemented corrections remain pending final semantic audit. This inventory does not close CA009/CA010 or approve any other session.\n\n'
 md+='| Unit | Session | Guided step | Later teaching steps |\n|---|---|---|---|\n'
 for row in rows:md+=f'| {row["unitNumber"]} | `{row["sessionId"]}` | `{row["guidedStepId"]}` | '+', '.join('`'+x+'`' for x in row['laterTeachingStepIds'])+' |\n'
 outputs={'SINGLE_GUIDED_SEQUENCE_REVIEW.json':text,'SINGLE_GUIDED_SEQUENCE_REVIEW.md':md}

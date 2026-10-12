@@ -1,10 +1,10 @@
 # Single-guided session sequence-review candidates
 
-Curriculum file SHA-256: `1c76b1add7e9a893ead6c6aba0053552ccb8af06aaefc8e8239bb285d186411b`.
+Curriculum file SHA-256: `859aa696c1547d58e94b94a00a2f0725f6b192852e69b6c10b24746e3365d8f5`.
 
-**109 sessions require cue-level sequence review.** The scan finds teaching after the single guided-practice step. It does not establish that every flagged session is defective: each cue, answer and distractor must be checked against the teaching available before that step. Multiple guided-step sessions are outside this scan.
+**81 sessions require cue-level sequence review.** The scan finds teaching after the single guided-practice step. It does not establish that every flagged session is defective: each cue, answer and distractor must be checked against the teaching available before that step. Multiple guided-step sessions are outside this scan.
 
-The Unit 24 absence session and Unit 25 courtesy session no longer have this ordering flag. Their implemented corrections remain pending final semantic audit. This inventory does not close CA009/CA010 or approve any other session.
+The inventories reflect the live curriculum. Recent corrected sessions no longer carry their old ordering flags. Their implemented corrections remain pending final semantic audit. This inventory does not close CA009/CA010 or approve any other session.
 
 | Unit | Session | Guided step | Later teaching steps |
 |---|---|---|---|
@@ -64,34 +64,6 @@ The Unit 24 absence session and Unit 25 courtesy session no longer have this ord
 | 15 | `u15-s-imperative` | `u15-st-guided-imperative-1` | `u15-st-teach-imperative-2`, `u15-st-teach-imperative-3` |
 | 15 | `u15-s-say-request` | `u15-st-guided-say-request-1` | `u15-st-teach-say-request-2`, `u15-st-teach-say-request-3`, `u15-st-teach-say-request-4` |
 | 15 | `u15-s-aspect-consolidate` | `u15-st-guided-aspect-consolidate-1` | `u15-st-teach-aspect-consolidate-2`, `u15-st-teach-aspect-consolidate-3` |
-| 19 | `u19-s-prefix-caution` | `u19-st-guided-prefix-caution-1` | `u19-st-teach-prefix-caution-2`, `u19-st-teach-prefix-caution-3` |
-| 20 | `u20-s-motion` | `u20-st-guided-motion-1` | `u20-st-teach-motion-2`, `u20-st-teach-motion-3`, `u20-st-teach-motion-4`, `u20-st-teach-motion-5` |
-| 21 | `u21-s-svoy` | `u21-st-guided-svoy-1` | `u21-st-teach-svoy-2`, `u21-st-teach-svoy-3`, `u21-st-teach-svoy-4` |
-| 21 | `u21-s-object-reference` | `u21-st-guided-object-reference-1` | `u21-st-teach-object-reference-2` |
-| 22 | `u22-s-noun-forms` | `u22-st-guided-noun-forms-1` | `u22-st-teach-noun-forms-2`, `u22-st-teach-noun-forms-3`, `u22-st-teach-noun-forms-4` |
-| 22 | `u22-s-compounds` | `u22-st-guided-compounds-1` | `u22-st-teach-compounds-2`, `u22-st-teach-compounds-3` |
-| 22 | `u22-s-declension` | `u22-st-guided-declension-1` | `u22-st-teach-declension-2`, `u22-st-teach-declension-3` |
-| 22 | `u22-s-both-forms` | `u22-st-guided-both-forms-1` | `u22-st-teach-both-forms-2`, `u22-st-teach-both-forms-3` |
-| 22 | `u22-s-half-forms` | `u22-st-guided-half-forms-1` | `u22-st-teach-half-forms-2`, `u22-st-teach-half-forms-3` |
-| 22 | `u22-s-collective` | `u22-st-guided-collective-1` | `u22-st-teach-collective-2`, `u22-st-teach-collective-3` |
-| 23 | `u23-s-ranges` | `u23-st-guided-ranges-1` | `u23-st-teach-ranges-2` |
-| 23 | `u23-s-beginning` | `u23-st-guided-beginning-1` | `u23-st-teach-beginning-2`, `u23-st-teach-beginning-3` |
-| 23 | `u23-s-during-event` | `u23-st-guided-during-event-1` | `u23-st-teach-during-event-2` |
-| 23 | `u23-s-duration` | `u23-st-guided-duration-1` | `u23-st-teach-duration-2` |
-| 23 | `u23-s-elapsed` | `u23-st-guided-elapsed-1` | `u23-st-teach-elapsed-2`, `u23-st-teach-elapsed-3` |
-| 23 | `u23-s-gap-completion` | `u23-st-guided-completion-1` | `u23-st-teach-completion-2` |
-| 24 | `u24-s-verbal-ne` | `u24-st-guided-verbal-ne-1` | `u24-st-teach-verbal-ne-2`, `u24-st-teach-verbal-ne-3`, `u24-st-teach-verbal-ne-4` |
-| 24 | `u24-s-absence` | `u24-st-guided-absence-1` | `u24-st-teach-absence-2`, `u24-st-teach-absence-3` |
-| 24 | `u24-s-alternation` | `u24-st-guided-alternation-1` | `u24-st-teach-alternation-2` |
-| 24 | `u24-s-concord` | `u24-st-guided-concord-1` | `u24-st-teach-concord-2` |
-| 24 | `u24-s-word-order-contrast` | `u24-st-guided-word-order-contrast-1` | `u24-st-teach-word-order-contrast-2` |
-| 24 | `u24-s-placement` | `u24-st-guided-placement-1` | `u24-st-teach-placement-2` |
-| 25 | `u25-s-name-structure` | `u25-st-guided-name-structure-1` | `u25-st-teach-name-structure-2`, `u25-st-teach-name-structure-3` |
-| 25 | `u25-s-diminutives` | `u25-st-guided-diminutives-1` | `u25-st-teach-diminutives-2`, `u25-st-teach-diminutives-3` |
-| 25 | `u25-s-name-question` | `u25-st-guided-name-question-1` | `u25-st-teach-name-question-2`, `u25-st-teach-name-question-3` |
-| 25 | `u25-s-nickname-rule` | `u25-st-guided-nickname-rule-1` | `u25-st-teach-nickname-rule-2`, `u25-st-teach-nickname-rule-3` |
-| 25 | `u25-s-address` | `u25-st-guided-address-1` | `u25-st-teach-address-2`, `u25-st-teach-address-3` |
-| 25 | `u25-s-documented-name-form` | `u25-st-guided-name-form-1` | `u25-st-teach-name-form-2`, `u25-st-teach-name-form-3` |
 | 26 | `u26-s-word-order` | `u26-st-guided-word-order-1` | `u26-st-teach-word-order-2`, `u26-st-teach-word-order-3`, `u26-st-teach-word-order-4` |
 | 26 | `u26-s-vy-capital` | `u26-st-guided-vy-capital-1` | `u26-st-teach-vy-capital-2`, `u26-st-teach-vy-capital-3` |
 | 26 | `u26-s-address-notation` | `u26-st-guided-address-notation-1` | `u26-st-teach-address-notation-2`, `u26-st-teach-address-notation-3` |
