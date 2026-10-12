@@ -11,12 +11,12 @@ Unit 29 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 69ebebf39db417c525211089d99f86f0fe094597
-- Unit content-review SHA-256: 25dd10b1454f8b4fd77ed15a19ff8fa44e2a82115e5cb658d29a3a1b708a8575
+- Curriculum source commit: 0136eb4000641f6b1edd020ed9caa29f59cdc35c
+- Unit content-review SHA-256: 2dd31d5f6f969a1d8c95113f2d29eeaa3b8b70d8439e52aa4df2bf88b29bd56d
 - Mapping-package SHA-256: a7ebe370698a0dffe4f0311ccfbfff6f217171ffab7dda232447d4b62e2b4071
-- Pack content-review SHA-256: 073f2103021d9e7b493623e1c2816ed7fd6d9095eb124a04dce53923620548a2
-- Review-package SHA-256: 3830fb0e2a19ded74f8a0d50d93c5c763bfd3b68261d70152bc2184ce5c28e06
-- Repository source SHA-256: d869d527202253bd46369e6361c5c794b1795ecc1aee7ac86427f4fbf68d196c
+- Pack content-review SHA-256: ec1debe60310f19952a7d4bf676fe18ff6e25b1dfb848c60761d7cd9d40d7ff1
+- Review-package SHA-256: 3abdfe16cbe218689c7cd18c3a24fd7053c4c2012483311794d61ccb4a6cd8f3
+- Repository source SHA-256: 9bf60851690b6f1c880a25f39c0afece1b5bf87130b45e9a2fc3411c69191467
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -283,12 +283,12 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f896a5eb575fed35441c0c700aec4e08d687d938d431826b606b0c865ea67d4d
+- Content hash: b059f8838fbc6736896cd69cd004edce3627e63f4c27a133ad9b6aa5b16b0870
 
 title=Choose the admitted time label for the shown active form
 estimatedMinutes=12
 objectives=obj-u29-active
-steps=u29-st-teach-active-1,u29-st-guided-active-1,u29-st-teach-active-2,u29-st-teach-active-3,u29-st-rem-active,u29-st-check-active
+steps=u29-st-teach-active-1,u29-st-teach-active-2,u29-st-teach-active-3,u29-st-guided-active-1,u29-st-rem-active,u29-st-check-active
 
 ### STEP `u29-st-teach-active-1`
 
@@ -298,11 +298,11 @@ steps=u29-st-teach-active-1,u29-st-guided-active-1,u29-st-teach-active-2,u29-st-
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 22829df9fcc87628b7363c570109441436c2b986af0c408c783340ff954f3e2b
+- Content hash: eec48276964c0bd9b08c967e409b80faa22cd894f28118b7e31c0b2a4a7b0cd6
 
 kind=TEACH
-title=Admitted lines
-body=Read the admitted examples on this card.
+title=Distinguish active past and present descriptions
+body=An active participle describes an entity performing the action. The retained чита́вшая is the past reading form; чита́ющая is the present reading form. The labels in the past and in the present distinguish these supplied forms. They do not identify a passive entity being read. An English description of reading can express the action without itself specifying this past/present contrast.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -312,28 +312,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u29-st-guided-active-1`
-
-- Objectives: obj-u29-active
-- Sessions: u29-s-active
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8c1acce0e0917d8d972c09aa2014d46d8a44f401369614cee0ff815e4123b837
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u29-g-active-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u29-st-rem-active
-
 ### STEP `u29-st-teach-active-2`
 
 - Objectives: obj-u29-active
@@ -342,11 +320,11 @@ remediationStepId=u29-st-rem-active
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 55c80fb5b8c0096dd39ad8fd016213d9e00cbda844c59e053035b684ce9e56c1
+- Content hash: 9f16b536dd93aa75cbe8f4fa47bbaa6a3d9cee8ac84d79476bff0fb9aaf64e9d
 
 kind=TEACH
-title=Admitted instruction
-body=The active past participle is used in order to indicate actions that happened in the past:
+title=Read the question as well as the form
+body=For чита́ющая, select in the present when asked for its time label. For чита́вшая, select in the past for its own time label. One retained contrast check instead asks for the other time: there the answer is in the present. That reversed question does not turn the displayed past form into a present form. The gloss that read names an action; it is not the requested contrasting time label.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -364,11 +342,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 9b2513fb57596bf40ef12996f69cc3e8085475f4439beeac03bd935a684e8c9f
+- Content hash: 855fbea1550e7eee735cc6428b96143822e505bb1b8ac56b171f50174131f57f
 
 kind=TEACH
-title=Admitted lines
-body=Read the admitted examples on this card.
+title=Recognize the separate living example
+body=The retained живу́щие has the meaning living and illustrates an active description. This is recognition of the admitted example, not a general algorithm for generating participles of unfamiliar verbs. Interpreting an isolated form does not establish the complete tense or actor of a sentence that has not been supplied.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -378,6 +356,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u29-st-guided-active-1`
+
+- Objectives: obj-u29-active
+- Sessions: u29-s-active
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: fed505423757d12c4f5dd1e1d8ebd4d17667b52665ddef8e1992dd344a6d4fe4
+
+kind=GUIDED
+title=Guided practice
+body=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
+dominantAction=Continue
+references=
+items=u29-g-active-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u29-st-rem-active
+
 ### STEP `u29-st-rem-active`
 
 - Objectives: obj-u29-active
@@ -386,15 +386,19 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: caf3c09b13c53781aefdbd3a31d9996881b1cfdb90b070292a10c9941f626e83
+- Content hash: 43718f682bbfa256a6b7a3c7050857721ac36f4187684c4afb4f582d8bb1bc5e
 
 kind=REMEDIATE
-title=Remediation
-body=The active past participle is used in order to indicate actions that happened in the past:
+title=Review the complete retained-example contrast
+body=An active participle describes an entity performing the action. The retained чита́вшая is the past reading form; чита́ющая is the present reading form. The labels in the past and in the present distinguish these supplied forms. They do not identify a passive entity being read. An English description of reading can express the action without itself specifying this past/present contrast.
+
+For чита́ющая, select in the present when asked for its time label. For чита́вшая, select in the past for its own time label. One retained contrast check instead asks for the other time: there the answer is in the present. That reversed question does not turn the displayed past form into a present form. The gloss that read names an action; it is not the requested contrasting time label.
+
+The retained живу́щие has the meaning living and illustrates an active description. This is recognition of the admitted example, not a general algorithm for generating participles of unfamiliar verbs. Interpreting an isolated form does not establish the complete tense or actor of a sentence that has not been supplied.
 dominantAction=Continue
 references=
 items=
-examples=ex-u29-active-0,ex-u29-active-1
+examples=ex-u29-active-0,ex-u29-active-1,ex-u29-active-2
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -408,11 +412,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: cb2776f1702c2b225f90cbfc40291f12595f95f15fc9b048e89c9174b3efef95
+- Content hash: cb379cafd3da5cf3cbcc9b58891bc8a429890bc6e44400a2c68bde4bc97c9951
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
 dominantAction=Continue
 references=
 items=u29-i-active-1,u29-i-active-2
@@ -430,12 +434,12 @@ remediationStepId=u29-st-rem-active
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f943f222dcee4642a645ef4b3e267ab1376292635a1a8cd3dd25d632f101cea4
+- Content hash: 1645bf26149c514c568d18e193c4c2ac63c6e3daff7ab17b1f089cf677d971d9
 
 title=Choose the admitted gloss for the shown short form
 estimatedMinutes=12
 objectives=obj-u29-short-adjective
-steps=u29-st-teach-short-adjective-1,u29-st-guided-short-adjective-1,u29-st-teach-short-adjective-2,u29-st-teach-short-adjective-3,u29-st-rem-short-adjective,u29-st-check-short-adjective
+steps=u29-st-teach-short-adjective-1,u29-st-teach-short-adjective-2,u29-st-teach-short-adjective-3,u29-st-guided-short-adjective-1,u29-st-rem-short-adjective,u29-st-check-short-adjective
 
 ### STEP `u29-st-teach-short-adjective-1`
 
@@ -445,11 +449,11 @@ steps=u29-st-teach-short-adjective-1,u29-st-guided-short-adjective-1,u29-st-teac
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ab893ba32c2a8cec16944c31d9e62e11f8dcdba4f2fec7b84dfe64870e8d5790
+- Content hash: 000b867265a3e9ac4ad4f0cc48ea3e2c4fe0290c5f0974650af311e98a969024
 
 kind=TEACH
-title=Admitted lines
-body=Read the admitted examples on this card.
+title=Recognize the long and short forms
+body=The retained но́вый and нов both mean new. The first is the long form and the second is the short form. Their shared meaning distinguishes them from the colour meanings beige and khaki-colored. Choosing the English gloss alone does not demonstrate selecting the appropriate adjective form in a complete sentence.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -459,28 +463,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u29-st-guided-short-adjective-1`
-
-- Objectives: obj-u29-short-adjective
-- Sessions: u29-s-short-adjective
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 77786649b09ee68e6952f5bb1819ef3d434b11bf8df4f347faeacc6e921e2f80
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u29-g-short-adjective-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u29-st-rem-short-adjective
-
 ### STEP `u29-st-teach-short-adjective-2`
 
 - Objectives: obj-u29-short-adjective
@@ -489,11 +471,11 @@ remediationStepId=u29-st-rem-short-adjective
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1cb54ba30c4f884585642e5e1153de690fb122bd9beb3ae1ee3cdf847d84a484
+- Content hash: 1b7b71f420514cf83dac68c3d4730e9c6783106b6a25acb18483cbba70776b03
 
 kind=TEACH
-title=Admitted instruction
-body=A short adjective is often predicative, and the long form is often attributive, but the choice depends on the sentence. Short forms are not limited to a single position rule.
+title=Distinguish a predicate from a noun description
+body=A short adjective often supplies the predicate describing its subject; a long adjective often describes a noun attributively. The choice depends on the sentence, not a universal rule about one fixed word position. The retained isolated pair does not provide a complete context for deciding every long-versus-short choice. Do not treat the common predicate/attribute contrast as an exceptionless rule.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -511,11 +493,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 60bb4c49fd39b00c3179fd8a7e525496a039d69b2db62b6c3d8020512ed07b5a
+- Content hash: 54f7c6b0fd8764b6161c5b14480f890c4e6fc20b6b737bc9f8be836562a3ff09
 
 kind=TEACH
-title=Admitted lines
-body=Read the admitted examples on this card.
+title=A short-looking word need not be a short adjective
+body=The retained беж means beige and is an invariant colour form. Its short appearance does not make it the short counterpart of но́вый. Keep meaning, inflection and adjective function separate. This set checks supplied gloss recognition and explains the contrast; it does not demonstrate productive adjective agreement or sentence-level form selection.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -525,6 +507,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u29-st-guided-short-adjective-1`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-short-adjective
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 0758c2bec4e337957e1e454560d7629d2a83c5731b41075768e7483cf267200b
+
+kind=GUIDED
+title=Guided practice
+body=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
+dominantAction=Continue
+references=
+items=u29-g-short-adjective-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u29-st-rem-short-adjective
+
 ### STEP `u29-st-rem-short-adjective`
 
 - Objectives: obj-u29-short-adjective
@@ -533,15 +537,19 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 29d38529baf3298e66a116322227a08d4946783a3257dc68c0a715314e8a3f60
+- Content hash: da04731b3a0c57f5e57cbdc9472350d9f1dfb7fd193f31cb4b18755b13599d4f
 
 kind=REMEDIATE
-title=Remediation
-body=the short form appears only in the nominative
+title=Review the complete retained-example contrast
+body=The retained но́вый and нов both mean new. The first is the long form and the second is the short form. Their shared meaning distinguishes them from the colour meanings beige and khaki-colored. Choosing the English gloss alone does not demonstrate selecting the appropriate adjective form in a complete sentence.
+
+A short adjective often supplies the predicate describing its subject; a long adjective often describes a noun attributively. The choice depends on the sentence, not a universal rule about one fixed word position. The retained isolated pair does not provide a complete context for deciding every long-versus-short choice. Do not treat the common predicate/attribute contrast as an exceptionless rule.
+
+The retained беж means beige and is an invariant colour form. Its short appearance does not make it the short counterpart of но́вый. Keep meaning, inflection and adjective function separate. This set checks supplied gloss recognition and explains the contrast; it does not demonstrate productive adjective agreement or sentence-level form selection.
 dominantAction=Continue
 references=
 items=
-examples=ex-u29-short-adjective-0,ex-u29-short-adjective-1
+examples=ex-u29-short-adjective-0,ex-u29-short-adjective-1,ex-u29-short-adjective-2
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -555,11 +563,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c1341ec90e5f5b1d7c829d1d7ba1881cbbb8f0cd3babb5e737e1ea54c2ce884b
+- Content hash: ec343feb4d7d5d3f02797aeee9ddbf9a588cb4781f80370b0c45c02791acb249
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
 dominantAction=Continue
 references=
 items=u29-i-short-adjective-1,u29-i-short-adjective-2
@@ -577,12 +585,12 @@ remediationStepId=u29-st-rem-short-adjective
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ed4422cb878f3507eb15fd546c0d174e09932eb781388d79e153d8af026a5fa3
+- Content hash: 7e7362e069e0555e8dc524e685b08d3b6b5c58170fdbdee22389ba9a0cc402f5
 
 title=Choose the admitted label for the shown adverbial line
 estimatedMinutes=12
 objectives=obj-u29-bookish-note
-steps=u29-st-teach-bookish-note-1,u29-st-guided-bookish-note-1,u29-st-teach-bookish-note-2,u29-st-rem-bookish-note,u29-st-check-bookish-note
+steps=u29-st-teach-bookish-note-1,u29-st-teach-bookish-note-2,u29-st-guided-bookish-note-1,u29-st-rem-bookish-note,u29-st-check-bookish-note
 
 ### STEP `u29-st-teach-bookish-note-1`
 
@@ -592,15 +600,37 @@ steps=u29-st-teach-bookish-note-1,u29-st-guided-bookish-note-1,u29-st-teach-book
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 2f0aa6f42ff79df545432d471f2769cf37a75e420308b7fed3f9872f52830b79
+- Content hash: 60f8839fd5e1949236932ac0480f44865c0369bc495e699655faee7ca7da8059
 
 kind=TEACH
-title=Admitted lines
-body=Read the admitted examples on this card.
+title=Compare two ways of expressing the same sequence
+body=The supplied Пообедав, я пошёл гулять means Having eaten, I went for a walk. The opening verbal adverb presents eating before the walking action. The supplied Я пообедал и пошёл гулять gives the sequence with finite verbs joined together. Both describe the same person eating and then going for a walk; they differ in expression.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
 examples=ex-u29-bookish-note-0,ex-u29-bookish-note-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u29-st-teach-bookish-note-2`
+
+- Objectives: obj-u29-bookish-note
+- Sessions: u29-s-bookish-note
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 9260d17744f95441f665758fead0c9b39903a2bafbdadc04a49a82550b269e08
+
+kind=TEACH
+title=Separate register labels from event meaning
+body=In this retained source comparison the verbal-adverb version is labelled bookish speech and the finite-verb version colloquial language. Those labels describe the contrasted register; Having eaten, I went for a walk is the event meaning rather than a register label. A sentence appearing on paper is not automatically bookish, and this pair does not license labelling every verbal adverb in every context as bookish.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -614,11 +644,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 0370209eabc460b693366b5f0b462cf3f23a5f2533d0b609e34b0fba2cd8b76a
+- Content hash: fdd01b059fd3c963627227b251895a8a620a49f47f780c70877c05d86df21a1e
 
 kind=GUIDED
 title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
+body=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
 dominantAction=Continue
 references=
 items=u29-g-bookish-note-0
@@ -628,28 +658,6 @@ bookDirection=
 companionDirection=
 remediationStepId=u29-st-rem-bookish-note
 
-### STEP `u29-st-teach-bookish-note-2`
-
-- Objectives: obj-u29-bookish-note
-- Sessions: u29-s-bookish-note
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 2c153284f0526b555009dd9287d808a5ee7358393fbd1129a3b54e3e1c032474
-
-kind=TEACH
-title=Admitted instruction
-body=adverbial participles are considered a feature of bookish speech
-dominantAction=Continue
-references=ref-u2630-attribution
-items=
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
 ### STEP `u29-st-rem-bookish-note`
 
 - Objectives: obj-u29-bookish-note
@@ -658,11 +666,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 72e8fb670d28cf137916aae6a3e24ae64689fc8b54f316830e18166120b5e68b
+- Content hash: a9cf8d42916a95b3267a0ed319c87b37fae08e5c636ef252a7fcaa90274c9178
 
 kind=REMEDIATE
-title=Remediation
-body=adverbial participles are considered a feature of bookish speech
+title=Review the complete retained-example contrast
+body=The supplied Пообедав, я пошёл гулять means Having eaten, I went for a walk. The opening verbal adverb presents eating before the walking action. The supplied Я пообедал и пошёл гулять gives the sequence with finite verbs joined together. Both describe the same person eating and then going for a walk; they differ in expression.
+
+In this retained source comparison the verbal-adverb version is labelled bookish speech and the finite-verb version colloquial language. Those labels describe the contrasted register; Having eaten, I went for a walk is the event meaning rather than a register label. A sentence appearing on paper is not automatically bookish, and this pair does not license labelling every verbal adverb in every context as bookish.
 dominantAction=Continue
 references=
 items=
@@ -680,11 +690,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a0fb43a78cd96ce90109fd190c029a877b314967ba895a09ec3de6f3f545daf3
+- Content hash: fa5b00595673f7096db217b3aa710b4650e78072382b3242092c9ba2475bff7e
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
 dominantAction=Continue
 references=
 items=u29-i-bookish-note-1,u29-i-bookish-note-2
@@ -702,12 +712,12 @@ remediationStepId=u29-st-rem-bookish-note
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 98101a08b01fbc8d4276aa1322b24078ff173d5c80e24cb1803f3a47ff2f0f23
+- Content hash: eefa7f098cf419848c40815ea9154c62ca9cacec2bb8914280e6ac27624f9a5b
 
 title=Classify the shown phrase by the admitted punctuation rule
 estimatedMinutes=12
 objectives=obj-u29-punctuation
-steps=u29-st-teach-punctuation-1,u29-st-guided-punctuation-1,u29-st-teach-punctuation-2,u29-st-teach-punctuation-3,u29-st-rem-punctuation,u29-st-check-punctuation
+steps=u29-st-teach-punctuation-1,u29-st-teach-punctuation-2,u29-st-teach-punctuation-3,u29-st-guided-punctuation-1,u29-st-rem-punctuation,u29-st-check-punctuation
 
 ### STEP `u29-st-teach-punctuation-1`
 
@@ -717,11 +727,11 @@ steps=u29-st-teach-punctuation-1,u29-st-guided-punctuation-1,u29-st-teach-punctu
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3accf7c18ec6aa0bbc5759751882977029b71c59f769fa650e6a5641ad54b422
+- Content hash: 812c105dca2ed27ee1d798844a88d8bde6829f9e0d99849db57d317e3b528e44
 
 kind=TEACH
-title=Admitted lines
-body=Read the admitted examples on this card. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+title=A following descriptive phrase is set off on both sides
+body=In Программа, написанная в спешке, выполнила недопустимую операцию. The phrase describing the program follows its noun and is set off by commas on both sides. The retained label выделяется запятыми с двух сторон names that treatment. A single comma before the phrase would omit its closing boundary in this supplied sentence.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -731,28 +741,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u29-st-guided-punctuation-1`
-
-- Objectives: obj-u29-punctuation
-- Sessions: u29-s-punctuation
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e69744044a735f95accf19e6af868748e3333e19f4b7dfe4ab3d87cfeecff189
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u29-g-punctuation-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u29-st-rem-punctuation
-
 ### STEP `u29-st-teach-punctuation-2`
 
 - Objectives: obj-u29-punctuation
@@ -761,11 +749,11 @@ remediationStepId=u29-st-rem-punctuation
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c87ac1935b71c723f76012f7a8cc5f8edbf2b18e9cfbdd5e9f801867fc78ae63
+- Content hash: 49742c43954caf0e83bf65b2a6f8d7954dc379fec5408dc3f8559bbdbcb7580c
 
 kind=TEACH
-title=Admitted instruction
-body=Когда причастный оборот стоит перед определяемым словом, запятые не ставятся, кроме тех случаев, когда определяемое слово выражено личным местоимением или причастный оборот обозначает причину.
+title=Compare the phrase placed before its noun
+body=In Написанная в спешке программа выполнила недопустимую операцию. The same descriptive phrase precedes the noun. The supplied example has no separating commas: запятые не ставятся is its label. Phrase position helps distinguish these two examples; this does not mean commas are never used before a described noun.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -783,11 +771,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b91a939cb11e918ce2eef1f1b004e747d76dacf579b1c7dc881ece0c70850877
+- Content hash: 0e236886aded861c96e38b4ca83348fd5b175cf1d55452017bc00fcaff846d8e
 
 kind=TEACH
-title=Admitted lines
-body=Read the admitted examples on this card.
+title=Keep the stated exceptions to the preceding-phrase rule
+body=The retained rule identifies exceptions when the described entity is a personal pronoun or the participial phrase expresses a cause. The displayed личным местоимением names the personal-pronoun case; кроме тех случаев indicates the exception boundary, not the default no-comma treatment. Recognize that exception label here; this small set does not demonstrate punctuation of every unfamiliar participial sentence.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -797,6 +785,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u29-st-guided-punctuation-1`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-punctuation
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 0f2f34f673fd848c9ce0b0cab1daa4aa1fa114528529d41f72b443504fa95c23
+
+kind=GUIDED
+title=Guided practice
+body=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
+dominantAction=Continue
+references=
+items=u29-g-punctuation-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u29-st-rem-punctuation
+
 ### STEP `u29-st-rem-punctuation`
 
 - Objectives: obj-u29-punctuation
@@ -805,15 +815,19 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: edd9aab77be69af84c3868ed4bc94ef189d86c09665360bc9c8e3246f3c60410
+- Content hash: 7d144393c91d4ed6955ad2e773dd12adcec9f983ee32373e775e4fe70ca46b5c
 
 kind=REMEDIATE
-title=Remediation
-body=Когда причастный оборот стоит перед определяемым словом, запятые не ставятся, кроме тех случаев, когда определяемое слово выражено личным местоимением или причастный оборот обозначает причину.
+title=Review the complete retained-example contrast
+body=In Программа, написанная в спешке, выполнила недопустимую операцию. The phrase describing the program follows its noun and is set off by commas on both sides. The retained label выделяется запятыми с двух сторон names that treatment. A single comma before the phrase would omit its closing boundary in this supplied sentence.
+
+In Написанная в спешке программа выполнила недопустимую операцию. The same descriptive phrase precedes the noun. The supplied example has no separating commas: запятые не ставятся is its label. Phrase position helps distinguish these two examples; this does not mean commas are never used before a described noun.
+
+The retained rule identifies exceptions when the described entity is a personal pronoun or the participial phrase expresses a cause. The displayed личным местоимением names the personal-pronoun case; кроме тех случаев indicates the exception boundary, not the default no-comma treatment. Recognize that exception label here; this small set does not demonstrate punctuation of every unfamiliar participial sentence.
 dominantAction=Continue
 references=
 items=
-examples=ex-u29-punctuation-0,ex-u29-punctuation-1
+examples=ex-u29-punctuation-0,ex-u29-punctuation-1,ex-u29-punctuation-2
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -827,11 +841,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c215fdc04c9e36267c87f09baf1d38ea0835afa432746b3d731ce6b14c0f7a23
+- Content hash: fa22f9b4755d6d04c249b446899b99d5fddee7a6c1dba2c3efec5fbedc713d43
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
 dominantAction=Continue
 references=
 items=u29-i-punctuation-1,u29-i-punctuation-2
@@ -908,12 +922,12 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 91028cc58f1fa0178e8686911b39d7c237043382e31501836735bd55b5cd31f9
+- Content hash: 996d738141e06c17aedecff6a3bce050a45edf05214e1edf999b1ae5ffbe7d6d
 
 title=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
 estimatedMinutes=10
 objectives=obj-u29-register
-steps=u29-register-teach-1,u29-register-guided,u29-register-teach-2,u29-register-remediate,u29-register-check
+steps=u29-register-teach-1,u29-register-teach-2,u29-register-guided,u29-register-remediate,u29-register-check
 
 ### STEP `u29-register-teach-1`
 
@@ -923,15 +937,37 @@ steps=u29-register-teach-1,u29-register-guided,u29-register-teach-2,u29-register
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ea8091a54a76135d0b502fd215fa32e9bd7104d46134c0368c2d794d39cfcaff
+- Content hash: 6808114c5997c3c65497b2e8e8210f524320ea07cb05364b1ab6d8293d374f9a
 
 kind=TEACH
-title=Admitted instruction
-body=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
+title=Contrast the adverbial opening with finite coordination
+body=In Закончив письмо, Анна пошла на почту., finishing the letter is expressed by the opening verbal adverb. In Анна закончила письмо и пошла на почту., the actions are expressed by coordinated finite verbs. The adverbial opening is the bookish option and the finite coordination the ordinary option in this admitted pair. Both describe finishing before going to the post office; the register choice does not reverse those events.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
 examples=ex-u29-register-1,ex-u29-register-2
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u29-register-teach-2`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 296aa4c4a7f84e7a6f3b58092e9cd470a65cd257465f90d7d4e9f761b2b608c1
+
+kind=TEACH
+title=Keep the register claim inside this particular pair
+body=The supplied Написанное письмо лежит на столе. contains a passive description and is outside this adverbial-versus-finite pair. Mere appearance in writing also does not establish this bookish classification. A verbal adverb in a different sentence needs its own contextual evidence: this pair does not license every adverbial as bookish. Recognizing the opening word is different from interpreting the whole sentence or judging an unfamiliar style.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -945,11 +981,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c1138404fa424ddc066d78f34e1a8c2f9b0717b5a9e5772cf17aeac05666d764
+- Content hash: 16d2a814ea56fa977bdfae1d44d4256b83afbdfe0567cec7bdb11c4a2de5db68
 
 kind=GUIDED
 title=Guided practice
-body=A passive participle, text that is merely on paper, or a different sentence does not extend this pair.
+body=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=u29-g-register-1
@@ -959,28 +995,6 @@ bookDirection=
 companionDirection=
 remediationStepId=u29-register-remediate
 
-### STEP `u29-register-teach-2`
-
-- Objectives: obj-u29-register
-- Sessions: u29-s-gap-register
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 05636965c4746afcbea8c17499413a8253f35828a0424312439ba6d5bc77243a
-
-kind=TEACH
-title=Admitted instruction
-body=This pair is not a universal stylistic rule.
-dominantAction=Continue
-references=ref-u2630-attribution
-items=
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
 ### STEP `u29-register-remediate`
 
 - Objectives: obj-u29-register
@@ -989,15 +1003,17 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 81e2205867d4eabcbd5bf5d5a9a0ea023f8901dcdead9dcf1ee23ba855ca0ce3
+- Content hash: a8d1ce7ef8fee004ce30c8339526a2cb5880d37bf7372c4e1e5743cad722c9db
 
 kind=REMEDIATE
-title=Remediation
-body=Return to the adverbial opening versus the finite coordination in this pair.
+title=Review the complete retained-example contrast
+body=In Закончив письмо, Анна пошла на почту., finishing the letter is expressed by the opening verbal adverb. In Анна закончила письмо и пошла на почту., the actions are expressed by coordinated finite verbs. The adverbial opening is the bookish option and the finite coordination the ordinary option in this admitted pair. Both describe finishing before going to the post office; the register choice does not reverse those events.
+
+The supplied Написанное письмо лежит на столе. contains a passive description and is outside this adverbial-versus-finite pair. Mere appearance in writing also does not establish this bookish classification. A verbal adverb in a different sentence needs its own contextual evidence: this pair does not license every adverbial as bookish. Recognizing the opening word is different from interpreting the whole sentence or judging an unfamiliar style.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
-examples=
+examples=ex-u29-register-1,ex-u29-register-2
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1011,11 +1027,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b9daf4371e2fa0bbcda0a9bf5a082adc1cffccab92f0c94c5b57dc41ba62ba3a
+- Content hash: 585c52f72bb7af1925e9b195d0482d892ed894face4db9d59c51b1381f706495
 
 kind=CHECK
 title=Independent checks
-body=In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.
+body=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=u29-i-register-1,u29-i-register-2,u29-i-register-3,u29-i-register-4,u29-i-register-5
@@ -1033,12 +1049,12 @@ remediationStepId=u29-register-remediate
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 585717216ace6da8e097ac9d2fbb4cbed62deb7d8119cc65da08d56bde507fd4
+- Content hash: 00347e56dab5af50ce8aa56b890e62cd2afc43f085897d6ddec70ffd4f91445a
 
 title=Read the passage for the actions, not for whether the style is bookish.
 estimatedMinutes=10
 objectives=obj-u29-reading,obj-u29-book
-steps=u29-reading-teach-1,u29-reading-guided,u29-reading-teach-2,u29-reading-remediate,u29-reading-check,u29-st-anki-direction,u29-st-binder-direction,u29-st-tutor-direction,u29-st-cumulative-direction
+steps=u29-reading-teach-1,u29-reading-teach-2,u29-reading-guided,u29-reading-remediate,u29-reading-check,u29-st-anki-direction,u29-st-binder-direction,u29-st-tutor-direction,u29-st-cumulative-direction
 
 ### STEP `u29-reading-teach-1`
 
@@ -1048,15 +1064,37 @@ steps=u29-reading-teach-1,u29-reading-guided,u29-reading-teach-2,u29-reading-rem
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 288f56bd75092fefc835a41b6f5bd68e67d69796e609bed4f95f05a7fd4d8512
+- Content hash: dc57a29ca6476d1fb180ed963a926862ad68e16f8f267d5287399779c7edda44
 
 kind=TEACH
-title=Admitted instruction
-body=Read the passage for the actions, not for whether the style is bookish.
+title=Follow the actor and the order of actions
+body=In Закончив письмо, Анна пошла на почту и отправила его., Anna finishes the letter before going to the post office and sending it. Anna performs the actions; the letter does not travel alone and the post office does not write it. The finishing phrase belongs before the departure, not after the sending. Read the entire supplied passage when a check shows only a fragment.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
 examples=ex-u29-reading-1,ex-u29-reading-2
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u29-reading-teach-2`
+
+- Objectives: obj-u29-reading, obj-u29-book
+- Sessions: u29-s-gap-reading
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 18821a6665553a24f269ed2b4c38fcf9948ce809dab16668b70047a5d94051ca
+
+kind=TEACH
+title=Resolve the final action without substituting a register answer
+body=The supplied отправила его means she sent it, with the letter as the object in this passage. The passage places the sending after Anna goes to the post office. It does not say that she stayed at the table, finished at the market, left the letter at home or received a letter at home. Those alternatives replace a stated event or location. Bookish register classification is a separate objective and cannot answer who acted, where she went or what she did with the letter.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1070,11 +1108,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c9990294f401d4e3dcc8129e2c7bcd72bd4b9cd6b4aa906739d377b51712473a
+- Content hash: ff3d784387fdf39caab695a46cd41d3a1c6a65abc6f0f835539ddf162daec94b
 
 kind=GUIDED
 title=Guided practice
-body=Register classification is a different objective and does not answer these readings.
+body=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=u29-g-reading-1
@@ -1084,28 +1122,6 @@ bookDirection=
 companionDirection=
 remediationStepId=u29-reading-remediate
 
-### STEP `u29-reading-teach-2`
-
-- Objectives: obj-u29-reading, obj-u29-book
-- Sessions: u29-s-gap-reading
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 51c4934a377640dbba0ec8e49f40a48644140132f45e3543a346b91d69fd0fab
-
-kind=TEACH
-title=Admitted instruction
-body=Register classification is a different objective and does not answer these readings.
-dominantAction=Continue
-references=ref-u2630-attribution
-items=
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
 ### STEP `u29-reading-remediate`
 
 - Objectives: obj-u29-reading, obj-u29-book
@@ -1114,15 +1130,17 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: dad7fdb18b2580913474bc48457f2f734f84e4bd9c9c1602f58d8dcdc504f93f
+- Content hash: 479d829c8d11f0212f701d4a216de17105de13ce97a829d1c69cbda8fc998b6e
 
 kind=REMEDIATE
-title=Remediation
-body=Return to what Anna finished, where she went, and what she sent.
+title=Review the complete retained-example contrast
+body=In Закончив письмо, Анна пошла на почту и отправила его., Anna finishes the letter before going to the post office and sending it. Anna performs the actions; the letter does not travel alone and the post office does not write it. The finishing phrase belongs before the departure, not after the sending. Read the entire supplied passage when a check shows only a fragment.
+
+The supplied отправила его means she sent it, with the letter as the object in this passage. The passage places the sending after Anna goes to the post office. It does not say that she stayed at the table, finished at the market, left the letter at home or received a letter at home. Those alternatives replace a stated event or location. Bookish register classification is a separate objective and cannot answer who acted, where she went or what she did with the letter.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
-examples=
+examples=ex-u29-reading-1,ex-u29-reading-2
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1136,11 +1154,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b544b130650b7101e0c1faa80754692d5ab64e5bfb9a0ece99ef9ca3f9215a11
+- Content hash: e8b457fb13a49353033d227d07456084b901645c44f36b570f6f5aee0536ac60
 
 kind=CHECK
 title=Independent checks
-body=Read the passage for the actions, not for whether the style is bookish.
+body=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=u29-i-reading-1,u29-i-reading-2,u29-i-reading-3
@@ -2395,6 +2413,1992 @@ attribution=Russian Companion content-audit research synthesis, content-audit-20
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
 sourceHash=8cbdd45e7fb070fbf5e42c5458556da7ac5fbb37454d9213aa932d0125d6186c
 contentHash=0afff52ca49d9adc7b3fb39de24b16290d6908faa0a72a4209008f32c863dbbf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-active-0`
+
+- Objectives: obj-u29-active
+- Sessions: u29-s-orient, u29-s-active
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cecbb10ddcf02837525b0d7a03908665b27bc86001b807a1f32319698e41256f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-active:u29-s-active-0
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+Distinguish active past and present descriptions
+shippedText=Distinguish active past and present descriptions
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d797f227326a2d19cf04a30d75aa86a64c642f1956765facff4ff00fa4741acf
+contentHash=bc8012e7a4aef84b7cce3c2699261e7a4c9a1b3b119c2ec0416b4a77bddf72ef
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-active-1`
+
+- Objectives: obj-u29-active
+- Sessions: u29-s-orient, u29-s-active
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 82ca818a4ee23b98f808e272b69940011832f70fb34b3456e8c450468d16ea42
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-active:u29-s-active-1
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+An active participle describes an entity performing the action. The retained чита́вшая is the past reading form; чита́ющая is the present reading form. The labels in the past and in the present distinguish these supplied forms. They do not identify a passive entity being read. An English description of reading can express the action without itself specifying this past/present contrast.
+shippedText=An active participle describes an entity performing the action. The retained чита́вшая is the past reading form; чита́ющая is the present reading form. The labels in the past and in the present distinguish these supplied forms. They do not identify a passive entity being read. An English description of reading can express the action without itself specifying this past/present contrast.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0a81bcc7a54afddd1c099060988a43f800d392b13a010a80bcaab22c3610b06b
+contentHash=8549ffc8df568c3edd79a72a41d73de8467367c8e583f2ba5ee35e646349b6a8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-active-10`
+
+- Objectives: obj-u29-active
+- Sessions: u29-s-orient, u29-s-active
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6598520feb62113679bb3523b4b5591f676390411e20f04c0b697f58c84e8c84
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-active:u29-s-active-10
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+Independent checks
+shippedText=Independent checks
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c2109f82d75ba5277ed95db2e04d23ab3429030f149c3ad87e8f8b605242f6a4
+contentHash=012ab8f74509f135e510ad3d930ff2e1b92c944e2d060f0b35ddeee63616b486
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-active-2`
+
+- Objectives: obj-u29-active
+- Sessions: u29-s-orient, u29-s-active
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b18a22fac6bc46f6e69ac1b3a6bf31ce3b716f0341767bc18be0f98655d97b63
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-active:u29-s-active-2
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+Read the question as well as the form
+shippedText=Read the question as well as the form
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=897e7e06d6baa8947a90dadf359d8aa9fe1daadee9fb5827bdaa47928feb0d98
+contentHash=b8d8a1197b51e49f14f536c00cc2d7be79fafea76f1f3daa8c6db8d9de8bd3f6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-active-3`
+
+- Objectives: obj-u29-active
+- Sessions: u29-s-orient, u29-s-active
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5bd44294360c776a8e08ca0832dc2bb632ea6c62480d16761a4b5220fd580f4c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-active:u29-s-active-3
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+For чита́ющая, select in the present when asked for its time label. For чита́вшая, select in the past for its own time label. One retained contrast check instead asks for the other time: there the answer is in the present. That reversed question does not turn the displayed past form into a present form. The gloss that read names an action; it is not the requested contrasting time label.
+shippedText=For чита́ющая, select in the present when asked for its time label. For чита́вшая, select in the past for its own time label. One retained contrast check instead asks for the other time: there the answer is in the present. That reversed question does not turn the displayed past form into a present form. The gloss that read names an action; it is not the requested contrasting time label.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d663fcbfa8156d2ef03b5351538acb97cc7fbc00a2ac6fbb36a38c17e111f6a2
+contentHash=e50ffad0d45c6f196b4f425260fc3eb7169cb71131d7f4b94f68c681731a8aff
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-active-4`
+
+- Objectives: obj-u29-active
+- Sessions: u29-s-orient, u29-s-active
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 23daf9d34bef6c01995974445f37fca489c0a02ef7eabdd79441ae1c0a5b29e4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-active:u29-s-active-4
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+Recognize the separate living example
+shippedText=Recognize the separate living example
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e7c8b50c22eebf07d6414445988c7aa66e3bc10267ae5dfb500377ea85b8b3b1
+contentHash=6b2eb6c73c4193a487c66107f235b10aa4bfb2b4c6d7286545e165d314dcd0d7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-active-5`
+
+- Objectives: obj-u29-active
+- Sessions: u29-s-orient, u29-s-active
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 78e5bbb6b69ee87860ce903431d5afb1b1fa17c000cecd9eacf7ed769ac0ab71
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-active:u29-s-active-5
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+The retained живу́щие has the meaning living and illustrates an active description. This is recognition of the admitted example, not a general algorithm for generating participles of unfamiliar verbs. Interpreting an isolated form does not establish the complete tense or actor of a sentence that has not been supplied.
+shippedText=The retained живу́щие has the meaning living and illustrates an active description. This is recognition of the admitted example, not a general algorithm for generating participles of unfamiliar verbs. Interpreting an isolated form does not establish the complete tense or actor of a sentence that has not been supplied.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=98a8c5e60549674b438553f4c3e4537f4e83291f407d751dbfe4d7a83bb6b3c2
+contentHash=e97b14b83145c5a0830044aac1b77fa1baf8cfa9aecb9d1a02db9fc174927cd9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-active-6`
+
+- Objectives: obj-u29-active
+- Sessions: u29-s-orient, u29-s-active
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ba41c0749539b3f280c66c0d91d7de8b485585b63642c639c894ddbbb868c0c4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-active:u29-s-active-6
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+Guided practice
+shippedText=Guided practice
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ab9c70c502a5420edbcc00331f2c3de62a210150d78d39edd2f6e2303eb53623
+contentHash=cb1d4a3d9d5db425da3797c7a997db3588ec122a60c4d645ea31cd849f76ab3c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-active-7`
+
+- Objectives: obj-u29-active
+- Sessions: u29-s-orient, u29-s-active
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1847d52779db953089960fa02b1f7dc24bf37953ea0651b79004ded3a1be4340
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-active:u29-s-active-7
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
+shippedText=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=79a655e365d73f1b6cbdc6308ebec4d26839529b88dec3b1b715bfac58ac7ae0
+contentHash=7e831781418e211c98b1c0f63a387cb5d621e366dba903e0c33492a919b4c8c1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-active-8`
+
+- Objectives: obj-u29-active
+- Sessions: u29-s-orient, u29-s-active
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cbdea362014b4e026ef969672b7c83a2d8b463fd6c9457ea83c3055e10bffd88
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-active:u29-s-active-8
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+Review the complete retained-example contrast
+shippedText=Review the complete retained-example contrast
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b2007a765328f06a5e9aa14253f39f77355edf6d24df30cd963e753d2649af54
+contentHash=ffc1d4634ce62d9bfa012f510fdd024d80750001611aeef52e4301f1706fc80b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-active-9`
+
+- Objectives: obj-u29-active
+- Sessions: u29-s-orient, u29-s-active
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 118243ec77226d5f3f417cc7763325094872f8394a05f30c8ab77694b37f322c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-active:u29-s-active-9
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+An active participle describes an entity performing the action. The retained чита́вшая is the past reading form; чита́ющая is the present reading form. The labels in the past and in the present distinguish these supplied forms. They do not identify a passive entity being read. An English description of reading can express the action without itself specifying this past/present contrast.
+
+For чита́ющая, select in the present when asked for its time label. For чита́вшая, select in the past for its own time label. One retained contrast check instead asks for the other time: there the answer is in the present. That reversed question does not turn the displayed past form into a present form. The gloss that read names an action; it is not the requested contrasting time label.
+
+The retained живу́щие has the meaning living and illustrates an active description. This is recognition of the admitted example, not a general algorithm for generating participles of unfamiliar verbs. Interpreting an isolated form does not establish the complete tense or actor of a sentence that has not been supplied.
+shippedText=An active participle describes an entity performing the action. The retained чита́вшая is the past reading form; чита́ющая is the present reading form. The labels in the past and in the present distinguish these supplied forms. They do not identify a passive entity being read. An English description of reading can express the action without itself specifying this past/present contrast.
+
+For чита́ющая, select in the present when asked for its time label. For чита́вшая, select in the past for its own time label. One retained contrast check instead asks for the other time: there the answer is in the present. That reversed question does not turn the displayed past form into a present form. The gloss that read names an action; it is not the requested contrasting time label.
+
+The retained живу́щие has the meaning living and illustrates an active description. This is recognition of the admitted example, not a general algorithm for generating participles of unfamiliar verbs. Interpreting an isolated form does not establish the complete tense or actor of a sentence that has not been supplied.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8f807a600d07dee687d9305f3876f973cec3cbfe7c2584b183c7203b43f90667
+contentHash=b6b590906538ecbf391d97c5344ffe95e6cb05bd5f9b4fd5614f7439b02e72e5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-bookish-note-0`
+
+- Objectives: obj-u29-bookish-note
+- Sessions: u29-s-orient, u29-s-bookish-note
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 076194fe6bce95529f17e97a6e9bf5fd2bf0eef653b958e7c0d8261432db45a2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-bookish-note:u29-s-bookish-note-0
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+Compare two ways of expressing the same sequence
+shippedText=Compare two ways of expressing the same sequence
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2d8c7b5e8b0fa7cd333ed160ad4ea506583d1994e502bac79dbe66e4f9ac83d6
+contentHash=9fbb198127e724ee2f8d69175f62b7ce2150ed2e9945ff5301a336b67d7ab923
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-bookish-note-1`
+
+- Objectives: obj-u29-bookish-note
+- Sessions: u29-s-orient, u29-s-bookish-note
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1c966e1669eaf4db2bbfb1fa79f270812e44b54ecd53d59fbe4909bce6419b2e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-bookish-note:u29-s-bookish-note-1
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+The supplied Пообедав, я пошёл гулять means Having eaten, I went for a walk. The opening verbal adverb presents eating before the walking action. The supplied Я пообедал и пошёл гулять gives the sequence with finite verbs joined together. Both describe the same person eating and then going for a walk; they differ in expression.
+shippedText=The supplied Пообедав, я пошёл гулять means Having eaten, I went for a walk. The opening verbal adverb presents eating before the walking action. The supplied Я пообедал и пошёл гулять gives the sequence with finite verbs joined together. Both describe the same person eating and then going for a walk; they differ in expression.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=29e37db7091439dd4afdc53791e2f5aa95cd83a321a9dffe995f61214d3dba15
+contentHash=a3d24494690e7bea2fadd30990cd3b194c9d14628be0fdc81aa84f3a159a234d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-bookish-note-2`
+
+- Objectives: obj-u29-bookish-note
+- Sessions: u29-s-orient, u29-s-bookish-note
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fe05c66f934e981d75b2530d60e6d48de17b7c2d1501d2416bc4a586a2b178cd
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-bookish-note:u29-s-bookish-note-2
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+Separate register labels from event meaning
+shippedText=Separate register labels from event meaning
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bf7d873ca91c7abbd107cea439de8b16403ea3fde010f3d288584343c5f72eb4
+contentHash=7265ad1122cda6cd26185be1887e5a8c70642a68e1f8c4863e746411363179d7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-bookish-note-3`
+
+- Objectives: obj-u29-bookish-note
+- Sessions: u29-s-orient, u29-s-bookish-note
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ba2ee7b16521d98e0cd40011a7b6f96f6d063aec8fd3ceea1ca0582af3313c63
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-bookish-note:u29-s-bookish-note-3
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+In this retained source comparison the verbal-adverb version is labelled bookish speech and the finite-verb version colloquial language. Those labels describe the contrasted register; Having eaten, I went for a walk is the event meaning rather than a register label. A sentence appearing on paper is not automatically bookish, and this pair does not license labelling every verbal adverb in every context as bookish.
+shippedText=In this retained source comparison the verbal-adverb version is labelled bookish speech and the finite-verb version colloquial language. Those labels describe the contrasted register; Having eaten, I went for a walk is the event meaning rather than a register label. A sentence appearing on paper is not automatically bookish, and this pair does not license labelling every verbal adverb in every context as bookish.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=75a6026fcbec6ece40c096ddff11cc827890f1f3872314476c7413025b0be5bb
+contentHash=a2198091987ec5412d5f1d05f073a63a835a8d959f157c8661d9f69f748a6a2c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-bookish-note-4`
+
+- Objectives: obj-u29-bookish-note
+- Sessions: u29-s-orient, u29-s-bookish-note
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 511b4963ace3f8de381a2e9cd971bcc37ad8c9bfaee1f828b6a3c77091314bbc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-bookish-note:u29-s-bookish-note-4
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+Guided practice
+shippedText=Guided practice
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ab9c70c502a5420edbcc00331f2c3de62a210150d78d39edd2f6e2303eb53623
+contentHash=cb1d4a3d9d5db425da3797c7a997db3588ec122a60c4d645ea31cd849f76ab3c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-bookish-note-5`
+
+- Objectives: obj-u29-bookish-note
+- Sessions: u29-s-orient, u29-s-bookish-note
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7412bc20ea49fd75d39f7732bd5e00efeff685936c116c989336e021b3078885
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-bookish-note:u29-s-bookish-note-5
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
+shippedText=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=79a655e365d73f1b6cbdc6308ebec4d26839529b88dec3b1b715bfac58ac7ae0
+contentHash=7e831781418e211c98b1c0f63a387cb5d621e366dba903e0c33492a919b4c8c1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-bookish-note-6`
+
+- Objectives: obj-u29-bookish-note
+- Sessions: u29-s-orient, u29-s-bookish-note
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2c1066ed213c811672c0597c167aeb5ce9a988ffdd31de0238cb1361cffc6ed2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-bookish-note:u29-s-bookish-note-6
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+Review the complete retained-example contrast
+shippedText=Review the complete retained-example contrast
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b2007a765328f06a5e9aa14253f39f77355edf6d24df30cd963e753d2649af54
+contentHash=ffc1d4634ce62d9bfa012f510fdd024d80750001611aeef52e4301f1706fc80b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-bookish-note-7`
+
+- Objectives: obj-u29-bookish-note
+- Sessions: u29-s-orient, u29-s-bookish-note
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7a69dbd7c532c1ed39eb2768e2dd8e9623341f450ad27d2fae26fe9a347c17a6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-bookish-note:u29-s-bookish-note-7
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+The supplied Пообедав, я пошёл гулять means Having eaten, I went for a walk. The opening verbal adverb presents eating before the walking action. The supplied Я пообедал и пошёл гулять gives the sequence with finite verbs joined together. Both describe the same person eating and then going for a walk; they differ in expression.
+
+In this retained source comparison the verbal-adverb version is labelled bookish speech and the finite-verb version colloquial language. Those labels describe the contrasted register; Having eaten, I went for a walk is the event meaning rather than a register label. A sentence appearing on paper is not automatically bookish, and this pair does not license labelling every verbal adverb in every context as bookish.
+shippedText=The supplied Пообедав, я пошёл гулять means Having eaten, I went for a walk. The opening verbal adverb presents eating before the walking action. The supplied Я пообедал и пошёл гулять gives the sequence with finite verbs joined together. Both describe the same person eating and then going for a walk; they differ in expression.
+
+In this retained source comparison the verbal-adverb version is labelled bookish speech and the finite-verb version colloquial language. Those labels describe the contrasted register; Having eaten, I went for a walk is the event meaning rather than a register label. A sentence appearing on paper is not automatically bookish, and this pair does not license labelling every verbal adverb in every context as bookish.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ec7d25dcf67bff1c20489b45cc48f4d34c1772f1d46e9be87c9e8cd828ae4a9c
+contentHash=d81be5cabfd0b98b361fc31df110790d080b82392a9abb7c57b01ae35b0c72f5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-bookish-note-8`
+
+- Objectives: obj-u29-bookish-note
+- Sessions: u29-s-orient, u29-s-bookish-note
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5a18661ec33a9513f7f8e5c3f3e7211e5f121bc03723c6d8b40b2ea5982ac3cf
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-bookish-note:u29-s-bookish-note-8
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+Independent checks
+shippedText=Independent checks
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c2109f82d75ba5277ed95db2e04d23ab3429030f149c3ad87e8f8b605242f6a4
+contentHash=012ab8f74509f135e510ad3d930ff2e1b92c944e2d060f0b35ddeee63616b486
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-gap-reading-0`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6efdffef21819b25d9e6c48b4ee3913c0a82de6e60c10f05b4ab9fa3a5c63de9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-reading:u29-s-gap-reading-0
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+Follow the actor and the order of actions
+shippedText=Follow the actor and the order of actions
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a8afe5e5e25e3faaa3f417b5ea0b7acfd591dc970d0ec7b1457094e961ab08d3
+contentHash=412bee358fbbe60b027f2153c3cd7d1c4505cb4932c36aeda16872552d347d43
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-gap-reading-1`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7369a5a4cf7a995739159c3ec8c0c887102f76f13cd2093b4aaf5ddc980dfacc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-reading:u29-s-gap-reading-1
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+In Закончив письмо, Анна пошла на почту и отправила его., Anna finishes the letter before going to the post office and sending it. Anna performs the actions; the letter does not travel alone and the post office does not write it. The finishing phrase belongs before the departure, not after the sending. Read the entire supplied passage when a check shows only a fragment.
+shippedText=In Закончив письмо, Анна пошла на почту и отправила его., Anna finishes the letter before going to the post office and sending it. Anna performs the actions; the letter does not travel alone and the post office does not write it. The finishing phrase belongs before the departure, not after the sending. Read the entire supplied passage when a check shows only a fragment.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=18597953115a82bab5071934f389635c1578c529bdd8a8191041c0ceab1660fa
+contentHash=fcde561595e42aaf7b9f355745aec4a73211c1ce6f0be972f95a091fa17d862b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-gap-reading-10`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1b651cb68448b200691a4ff30896989fc23feb4c4fbec5eb9ec8ac75cfe39ab3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-reading:u29-s-gap-reading-10
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+Unit 29 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+shippedText=Unit 29 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5f6f0863d70dc56db7db7fcecf4c3c29a470cde200699394094b943ca7aa00b0
+contentHash=ae572e03af261c1a32b4c4a7b122fd8326a2d12d442c896c3b639e9f2b107368
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-gap-reading-11`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7714f45504f5899d00370cb105e025db6cd91c3ef1a5fbbe1f88335c1a345ce7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-reading:u29-s-gap-reading-11
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+Unit 29 binder prompt
+shippedText=Unit 29 binder prompt
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=841cfc059cde18edf49a048428d5a11a4e607e9f5786925416d02a34ba75611c
+contentHash=89761f5cf543db2527ceefdd87c9b1b35969767f11a5153b27c242ef5e683f79
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-gap-reading-12`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 428d112b6a05b8771902a5f81fa573afc23cabc9ea547d91d138da069320ad3b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-reading:u29-s-gap-reading-12
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+Unit 29 optional tutor
+shippedText=Unit 29 optional tutor
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3296fe3946215cce816f5365f3d3c299051450a77ef5ae4864fa2575e27052d2
+contentHash=17d19f40395a9da2d68c384f9e79e7539c353c680e5eb7550293edb17090cd32
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-gap-reading-13`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5a03a5927f1b94ae89de12621c84fc8cb872afc0a7e6354168ec62b7e9f49b40
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-reading:u29-s-gap-reading-13
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+Unit 29 cumulative review
+shippedText=Unit 29 cumulative review
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1edb6d4637c51b454d8d1b8b75f7ae203972d714b13ed3ee63a36556f5a8b4d8
+contentHash=abc88836855bd945857eab9b4cd471024a1021045f353ddf6a1c85722b6afb64
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-gap-reading-2`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 63f1d4cf5e816c4336a41c1d9302198c5a218f506078a942b921f8a1fbf05e71
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-reading:u29-s-gap-reading-2
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+Resolve the final action without substituting a register answer
+shippedText=Resolve the final action without substituting a register answer
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7cdefd7b719569977d2596c29f66314fcd73940c8992e91b617e43e89df276ab
+contentHash=fceb24bc3ae8ce6e35a7d9341588e2be3ea3610e1db0925a1af29a5f6ccb2136
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-gap-reading-3`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 01cc47b996073f3b186c877fcb510834200e1c63670126f05ffd909a65e4c4d9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-reading:u29-s-gap-reading-3
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+The supplied отправила его means she sent it, with the letter as the object in this passage. The passage places the sending after Anna goes to the post office. It does not say that she stayed at the table, finished at the market, left the letter at home or received a letter at home. Those alternatives replace a stated event or location. Bookish register classification is a separate objective and cannot answer who acted, where she went or what she did with the letter.
+shippedText=The supplied отправила его means she sent it, with the letter as the object in this passage. The passage places the sending after Anna goes to the post office. It does not say that she stayed at the table, finished at the market, left the letter at home or received a letter at home. Those alternatives replace a stated event or location. Bookish register classification is a separate objective and cannot answer who acted, where she went or what she did with the letter.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e17b0c8f81ac3fe5ff2784d12314a176860f9aab6fc036972508c3fba6dce467
+contentHash=4dc542365f830656597d08fc9d01a068196c402d4076b2786ecda0add647dded
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-gap-reading-4`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 181539a23e6ef57e3ea923840aed3b92e1dc88f3e2cf6b0bcc10623ff3206e5a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-reading:u29-s-gap-reading-4
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+Guided practice
+shippedText=Guided practice
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ab9c70c502a5420edbcc00331f2c3de62a210150d78d39edd2f6e2303eb53623
+contentHash=cb1d4a3d9d5db425da3797c7a997db3588ec122a60c4d645ea31cd849f76ab3c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-gap-reading-5`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f9923e0359825ef32284e384b12db5967f0b9da95edaf061d3cb00e4596f7e84
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-reading:u29-s-gap-reading-5
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
+shippedText=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=79a655e365d73f1b6cbdc6308ebec4d26839529b88dec3b1b715bfac58ac7ae0
+contentHash=7e831781418e211c98b1c0f63a387cb5d621e366dba903e0c33492a919b4c8c1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-gap-reading-6`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2e1f32b42504f00011d5fe1d9cea3c17e38c9626add655acb83ac1da629b6d98
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-reading:u29-s-gap-reading-6
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+Review the complete retained-example contrast
+shippedText=Review the complete retained-example contrast
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b2007a765328f06a5e9aa14253f39f77355edf6d24df30cd963e753d2649af54
+contentHash=ffc1d4634ce62d9bfa012f510fdd024d80750001611aeef52e4301f1706fc80b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-gap-reading-7`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8a2610227780f55a71d55592868d0103490a0771149e70d6d830a032ae0791b6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-reading:u29-s-gap-reading-7
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+In Закончив письмо, Анна пошла на почту и отправила его., Anna finishes the letter before going to the post office and sending it. Anna performs the actions; the letter does not travel alone and the post office does not write it. The finishing phrase belongs before the departure, not after the sending. Read the entire supplied passage when a check shows only a fragment.
+
+The supplied отправила его means she sent it, with the letter as the object in this passage. The passage places the sending after Anna goes to the post office. It does not say that she stayed at the table, finished at the market, left the letter at home or received a letter at home. Those alternatives replace a stated event or location. Bookish register classification is a separate objective and cannot answer who acted, where she went or what she did with the letter.
+shippedText=In Закончив письмо, Анна пошла на почту и отправила его., Anna finishes the letter before going to the post office and sending it. Anna performs the actions; the letter does not travel alone and the post office does not write it. The finishing phrase belongs before the departure, not after the sending. Read the entire supplied passage when a check shows only a fragment.
+
+The supplied отправила его means she sent it, with the letter as the object in this passage. The passage places the sending after Anna goes to the post office. It does not say that she stayed at the table, finished at the market, left the letter at home or received a letter at home. Those alternatives replace a stated event or location. Bookish register classification is a separate objective and cannot answer who acted, where she went or what she did with the letter.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7e815eb2c97dea85f7b71e0f933068cf2fbfddf066157f642aa1e1f9f78f4f39
+contentHash=93358115c12531e8695094f6380f32b3f00a159f1dca90e4c04db0ab177e52b1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-gap-reading-8`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 50eeeccf2a130d3da246a5eb5393265c18f10018c9ce246a3b4fb9e29e698035
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-reading:u29-s-gap-reading-8
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+Independent checks
+shippedText=Independent checks
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c2109f82d75ba5277ed95db2e04d23ab3429030f149c3ad87e8f8b605242f6a4
+contentHash=012ab8f74509f135e510ad3d930ff2e1b92c944e2d060f0b35ddeee63616b486
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-gap-reading-9`
+
+- Objectives: obj-u29-reading
+- Sessions: u29-s-gap-reading
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e0dc37affdaecf2c3498d1596fbc31008be53582653bf949a9da6929cb23b985
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-reading:u29-s-gap-reading-9
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+Unit 29 AnkiDroid direction
+shippedText=Unit 29 AnkiDroid direction
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a7d61e8bcce708106945e0df589636c11aa2f58bd546a8a25a357e7e542dc712
+contentHash=4bdb25bae94de6ab555158580a3e5169755ea68679aa34aa773193f9ece39497
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-gap-register-0`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5a70bbc33d31c03d4fc1f3be49da6aa3b56ba5c500eae6a5904bd615ff21eaad
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-register:u29-s-gap-register-0
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+Contrast the adverbial opening with finite coordination
+shippedText=Contrast the adverbial opening with finite coordination
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=658625406f534bb58907e6dfc9fb377df231c6f2046ef8bef3b8e91354154a45
+contentHash=4ae85ca6b9f7c75c844914ba2b984d646e406d14c4f14382829dbddb4fa2a36a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-gap-register-1`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0d19f3d2c9e36d29ba30d59870d0b0805d633cd99f92fd649a32b3eadadd9e8d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-register:u29-s-gap-register-1
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+In Закончив письмо, Анна пошла на почту., finishing the letter is expressed by the opening verbal adverb. In Анна закончила письмо и пошла на почту., the actions are expressed by coordinated finite verbs. The adverbial opening is the bookish option and the finite coordination the ordinary option in this admitted pair. Both describe finishing before going to the post office; the register choice does not reverse those events.
+shippedText=In Закончив письмо, Анна пошла на почту., finishing the letter is expressed by the opening verbal adverb. In Анна закончила письмо и пошла на почту., the actions are expressed by coordinated finite verbs. The adverbial opening is the bookish option and the finite coordination the ordinary option in this admitted pair. Both describe finishing before going to the post office; the register choice does not reverse those events.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=26808b8ae3ba05476984c240b3437b64da4573a67c31446034d89945eafdcf7e
+contentHash=8d5dc5f4d80186efc74fc4e3cc5864ceff19d1e6728b221dbea87f588bf56240
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-gap-register-2`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 99659ef605728829c44b4daecf9b2813ff53c20511bd024ab8cb93eabdd4a9c6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-register:u29-s-gap-register-2
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+Keep the register claim inside this particular pair
+shippedText=Keep the register claim inside this particular pair
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6442d1966a9a5ae82a0adcc1aaa77e38cff3a6803c8b7e9ad0e4a8cdb6b0fa5b
+contentHash=c821e3f7d54c3911cde8f2fc2c7502bf384d9f26a04b4d284013806720a4b22c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-gap-register-3`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 65b0c060552ef62390bc2d250b45d8aad5efbe4181f8e38229689369752b3161
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-register:u29-s-gap-register-3
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+The supplied Написанное письмо лежит на столе. contains a passive description and is outside this adverbial-versus-finite pair. Mere appearance in writing also does not establish this bookish classification. A verbal adverb in a different sentence needs its own contextual evidence: this pair does not license every adverbial as bookish. Recognizing the opening word is different from interpreting the whole sentence or judging an unfamiliar style.
+shippedText=The supplied Написанное письмо лежит на столе. contains a passive description and is outside this adverbial-versus-finite pair. Mere appearance in writing also does not establish this bookish classification. A verbal adverb in a different sentence needs its own contextual evidence: this pair does not license every adverbial as bookish. Recognizing the opening word is different from interpreting the whole sentence or judging an unfamiliar style.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5e16d39ec9103604f1cd55e9567ee34f0bf439f0c86c2cb35629bb91fde3a4f7
+contentHash=8d42fdaf14f11272a9e20a6a0b185eaee6ea40fa1d9486d659f4bcaa24e1d2ea
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-gap-register-4`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dee0218aea231cd30a5fd67cffd5137c7f6020410d64c14b6033bdda2507a3a7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-register:u29-s-gap-register-4
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+Guided practice
+shippedText=Guided practice
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ab9c70c502a5420edbcc00331f2c3de62a210150d78d39edd2f6e2303eb53623
+contentHash=cb1d4a3d9d5db425da3797c7a997db3588ec122a60c4d645ea31cd849f76ab3c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-gap-register-5`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 50997e5a0af215c691e1f7f2074a41416e5df510310237c9a31fbed904ae4250
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-register:u29-s-gap-register-5
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
+shippedText=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=79a655e365d73f1b6cbdc6308ebec4d26839529b88dec3b1b715bfac58ac7ae0
+contentHash=7e831781418e211c98b1c0f63a387cb5d621e366dba903e0c33492a919b4c8c1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-gap-register-6`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9064cd177d4a5b4cd5a1e025cf9b300101b8e16a8da7c9f6640e161f29a62427
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-register:u29-s-gap-register-6
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+Review the complete retained-example contrast
+shippedText=Review the complete retained-example contrast
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b2007a765328f06a5e9aa14253f39f77355edf6d24df30cd963e753d2649af54
+contentHash=ffc1d4634ce62d9bfa012f510fdd024d80750001611aeef52e4301f1706fc80b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-gap-register-7`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 52e5c9bb989063ee674bdf4bfa49da3abad913ec5021d9ebbe3173e4253b871f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-register:u29-s-gap-register-7
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+In Закончив письмо, Анна пошла на почту., finishing the letter is expressed by the opening verbal adverb. In Анна закончила письмо и пошла на почту., the actions are expressed by coordinated finite verbs. The adverbial opening is the bookish option and the finite coordination the ordinary option in this admitted pair. Both describe finishing before going to the post office; the register choice does not reverse those events.
+
+The supplied Написанное письмо лежит на столе. contains a passive description and is outside this adverbial-versus-finite pair. Mere appearance in writing also does not establish this bookish classification. A verbal adverb in a different sentence needs its own contextual evidence: this pair does not license every adverbial as bookish. Recognizing the opening word is different from interpreting the whole sentence or judging an unfamiliar style.
+shippedText=In Закончив письмо, Анна пошла на почту., finishing the letter is expressed by the opening verbal adverb. In Анна закончила письмо и пошла на почту., the actions are expressed by coordinated finite verbs. The adverbial opening is the bookish option and the finite coordination the ordinary option in this admitted pair. Both describe finishing before going to the post office; the register choice does not reverse those events.
+
+The supplied Написанное письмо лежит на столе. contains a passive description and is outside this adverbial-versus-finite pair. Mere appearance in writing also does not establish this bookish classification. A verbal adverb in a different sentence needs its own contextual evidence: this pair does not license every adverbial as bookish. Recognizing the opening word is different from interpreting the whole sentence or judging an unfamiliar style.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9e98fae04545c81d595fd273c18df65bfa77c0d4e7585031bccd72f5e6300002
+contentHash=85f0fd4261276b2d6ae055da5e695be953c4fd39b93130b06634c500e57be90c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-gap-register-8`
+
+- Objectives: obj-u29-register
+- Sessions: u29-s-gap-register
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1a760b6bf636e635851ef869a586aefb2a03ac84731d0d4ee9a8a8b07240daf0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-register:u29-s-gap-register-8
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+Independent checks
+shippedText=Independent checks
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c2109f82d75ba5277ed95db2e04d23ab3429030f149c3ad87e8f8b605242f6a4
+contentHash=012ab8f74509f135e510ad3d930ff2e1b92c944e2d060f0b35ddeee63616b486
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-punctuation-0`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 012fa14e29ec902d9aefbca4dfddc1d3bdda5f3f9057b794ff95b60c9f2c35fd
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-punctuation:u29-s-punctuation-0
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+A following descriptive phrase is set off on both sides
+shippedText=A following descriptive phrase is set off on both sides
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c8da58219641a60ce193db409d052e6564ac276b98a90460ff3d47b20bfbda7f
+contentHash=adab9cb4c8404568dc9f514ac8d0ffed85a2592eb81d03dfab5653269ed45974
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-punctuation-1`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 445d192b2c21258d0eccf6112d75a7b4cda2f8930d15c03293d6672f3ecb615c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-punctuation:u29-s-punctuation-1
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+In Программа, написанная в спешке, выполнила недопустимую операцию. The phrase describing the program follows its noun and is set off by commas on both sides. The retained label выделяется запятыми с двух сторон names that treatment. A single comma before the phrase would omit its closing boundary in this supplied sentence.
+shippedText=In Программа, написанная в спешке, выполнила недопустимую операцию. The phrase describing the program follows its noun and is set off by commas on both sides. The retained label выделяется запятыми с двух сторон names that treatment. A single comma before the phrase would omit its closing boundary in this supplied sentence.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=409d209433526ac05395369f1b40020d59cc7b9662c65e4c39c1c56f13e011b6
+contentHash=eae4eab4e4a9a8dc24f364a1687b41616d82d02d02c68e434da990b4baa51f98
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-punctuation-10`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e40d725e65f49dfd62f773c35847403620916a0e461de98358ca798c36192073
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-punctuation:u29-s-punctuation-10
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+Independent checks
+shippedText=Independent checks
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c2109f82d75ba5277ed95db2e04d23ab3429030f149c3ad87e8f8b605242f6a4
+contentHash=012ab8f74509f135e510ad3d930ff2e1b92c944e2d060f0b35ddeee63616b486
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-punctuation-2`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c917f53e57f13922617ceb0ce85c244484577117f932bb0dbd91864221fd5874
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-punctuation:u29-s-punctuation-2
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+Compare the phrase placed before its noun
+shippedText=Compare the phrase placed before its noun
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0bce77bddf36e9430e7e0521984a5b53c189407c06fdab2df4be137195f51a17
+contentHash=7108f56ae3916749afe86f008388aa60a1fabc4ce42892716ed51152dfa7e63b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-punctuation-3`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c1f6385e759d4693594644f53c9aed9277e2671d9174ac811b168937bda65d58
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-punctuation:u29-s-punctuation-3
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+In Написанная в спешке программа выполнила недопустимую операцию. The same descriptive phrase precedes the noun. The supplied example has no separating commas: запятые не ставятся is its label. Phrase position helps distinguish these two examples; this does not mean commas are never used before a described noun.
+shippedText=In Написанная в спешке программа выполнила недопустимую операцию. The same descriptive phrase precedes the noun. The supplied example has no separating commas: запятые не ставятся is its label. Phrase position helps distinguish these two examples; this does not mean commas are never used before a described noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=271db89e64b7fa21b95cb1e2bc184f17c211d68476e62b080598aaeab3d8f5e5
+contentHash=fe99807e7879bed327aa9101b3e799459b28ccc036e2d4d765ff0582fb8a3eba
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-punctuation-4`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 178d7db93873d80e6cfc21431ee8ac4c04d5de094bcda3ac97c131b2f843403a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-punctuation:u29-s-punctuation-4
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+Keep the stated exceptions to the preceding-phrase rule
+shippedText=Keep the stated exceptions to the preceding-phrase rule
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f79ae4716d428a2aeece339dae4c86ff60463e5717089e8b12bf5ee646389af3
+contentHash=4063529f46470b0b874c7cf112d31e42d8208acff500deedd1f2f009b9d2e357
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-punctuation-5`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: afedab15f408e0cc276ceb3eb717be151746d5576e360a5c97cade948a9e55f7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-punctuation:u29-s-punctuation-5
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+The retained rule identifies exceptions when the described entity is a personal pronoun or the participial phrase expresses a cause. The displayed личным местоимением names the personal-pronoun case; кроме тех случаев indicates the exception boundary, not the default no-comma treatment. Recognize that exception label here; this small set does not demonstrate punctuation of every unfamiliar participial sentence.
+shippedText=The retained rule identifies exceptions when the described entity is a personal pronoun or the participial phrase expresses a cause. The displayed личным местоимением names the personal-pronoun case; кроме тех случаев indicates the exception boundary, not the default no-comma treatment. Recognize that exception label here; this small set does not demonstrate punctuation of every unfamiliar participial sentence.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9bae3ce365a09a8c403768e40bbb26aed15e6e2d1247ba0b30f4277146336be5
+contentHash=9f79e4bf232436595f3035da5c1280a7dc101d08e86cc428bc3f316d5efc0c4a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-punctuation-6`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 70b3d76938292bf7c6e8e95df6345f83405b4f9277143c2e50bfa86a7cfffdcb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-punctuation:u29-s-punctuation-6
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+Guided practice
+shippedText=Guided practice
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ab9c70c502a5420edbcc00331f2c3de62a210150d78d39edd2f6e2303eb53623
+contentHash=cb1d4a3d9d5db425da3797c7a997db3588ec122a60c4d645ea31cd849f76ab3c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-punctuation-7`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 379a576a57c9e87cf64394da50873472310ca41a9703698872183c5079d44f89
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-punctuation:u29-s-punctuation-7
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
+shippedText=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=79a655e365d73f1b6cbdc6308ebec4d26839529b88dec3b1b715bfac58ac7ae0
+contentHash=7e831781418e211c98b1c0f63a387cb5d621e366dba903e0c33492a919b4c8c1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-punctuation-8`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 84daa5fb98c895f7f3a10835d70582022987e02834b3dc1609efda84acdb22bc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-punctuation:u29-s-punctuation-8
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+Review the complete retained-example contrast
+shippedText=Review the complete retained-example contrast
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b2007a765328f06a5e9aa14253f39f77355edf6d24df30cd963e753d2649af54
+contentHash=ffc1d4634ce62d9bfa012f510fdd024d80750001611aeef52e4301f1706fc80b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-punctuation-9`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 578ff90a9f2819e39e33fadbdbe9570fe7c06866200fdff34ad66232f8a40db8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-punctuation:u29-s-punctuation-9
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+In Программа, написанная в спешке, выполнила недопустимую операцию. The phrase describing the program follows its noun and is set off by commas on both sides. The retained label выделяется запятыми с двух сторон names that treatment. A single comma before the phrase would omit its closing boundary in this supplied sentence.
+
+In Написанная в спешке программа выполнила недопустимую операцию. The same descriptive phrase precedes the noun. The supplied example has no separating commas: запятые не ставятся is its label. Phrase position helps distinguish these two examples; this does not mean commas are never used before a described noun.
+
+The retained rule identifies exceptions when the described entity is a personal pronoun or the participial phrase expresses a cause. The displayed личным местоимением names the personal-pronoun case; кроме тех случаев indicates the exception boundary, not the default no-comma treatment. Recognize that exception label here; this small set does not demonstrate punctuation of every unfamiliar participial sentence.
+shippedText=In Программа, написанная в спешке, выполнила недопустимую операцию. The phrase describing the program follows its noun and is set off by commas on both sides. The retained label выделяется запятыми с двух сторон names that treatment. A single comma before the phrase would omit its closing boundary in this supplied sentence.
+
+In Написанная в спешке программа выполнила недопустимую операцию. The same descriptive phrase precedes the noun. The supplied example has no separating commas: запятые не ставятся is its label. Phrase position helps distinguish these two examples; this does not mean commas are never used before a described noun.
+
+The retained rule identifies exceptions when the described entity is a personal pronoun or the participial phrase expresses a cause. The displayed личным местоимением names the personal-pronoun case; кроме тех случаев indicates the exception boundary, not the default no-comma treatment. Recognize that exception label here; this small set does not demonstrate punctuation of every unfamiliar participial sentence.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=290fce8594964aa72ad3248de7347a67d2238daa419e326c2c9e5ff13397fca8
+contentHash=25ec867c8aafe08d165fbf15cba8a80a83cf6993b18e265c9d054d12a11e0555
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-short-adjective-0`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: eefebfd7b9442f6bf91c44a12941dfb6f668a5478547ea552b806d292fdfdce9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:u29-s-short-adjective-0
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+Recognize the long and short forms
+shippedText=Recognize the long and short forms
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ef0936561a955444abec8f042d12fd09ce04b65c1c1cd7a14b91deed83ba5424
+contentHash=b2fec56385720eaee8c04cb5d8ee21105d129489d014c9413c93e9904f97e676
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-short-adjective-1`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 933b5862d3adfa8d767bbb108b530485f3304cfb585b2753e014810acffb0906
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:u29-s-short-adjective-1
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+The retained но́вый and нов both mean new. The first is the long form and the second is the short form. Their shared meaning distinguishes them from the colour meanings beige and khaki-colored. Choosing the English gloss alone does not demonstrate selecting the appropriate adjective form in a complete sentence.
+shippedText=The retained но́вый and нов both mean new. The first is the long form and the second is the short form. Their shared meaning distinguishes them from the colour meanings beige and khaki-colored. Choosing the English gloss alone does not demonstrate selecting the appropriate adjective form in a complete sentence.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=81b2e23ab84cdcdd2c2e17a4281c40d95fa014c3c37e4201a744d04f3d715d69
+contentHash=a7235c781f8bfb9e074d8a8cb72c04d5694faf5c3ccb1f3be8be20e510230457
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-short-adjective-10`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 13f4c24e80e417271870622178ef2e6b3f4ea8c2a58358e9e200dbe8d9e32e8d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:u29-s-short-adjective-10
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+Independent checks
+shippedText=Independent checks
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c2109f82d75ba5277ed95db2e04d23ab3429030f149c3ad87e8f8b605242f6a4
+contentHash=012ab8f74509f135e510ad3d930ff2e1b92c944e2d060f0b35ddeee63616b486
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-short-adjective-2`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f3927cd85dfdd294d8a57b5093fd2d72026b4c311dad7f5d70fc5441d514cdf5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:u29-s-short-adjective-2
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+Distinguish a predicate from a noun description
+shippedText=Distinguish a predicate from a noun description
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ccd5eda235f9659e9d60dde6724df0060872580c69371dbe739181823d1f1706
+contentHash=cc992a580e1737152090a9edcadefbe755e27c942878948af87fc2e455b69f64
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-short-adjective-3`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 955857c74251cc1425f2da92981da5473cc84876f54b879b26996e94431d2faf
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:u29-s-short-adjective-3
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+A short adjective often supplies the predicate describing its subject; a long adjective often describes a noun attributively. The choice depends on the sentence, not a universal rule about one fixed word position. The retained isolated pair does not provide a complete context for deciding every long-versus-short choice. Do not treat the common predicate/attribute contrast as an exceptionless rule.
+shippedText=A short adjective often supplies the predicate describing its subject; a long adjective often describes a noun attributively. The choice depends on the sentence, not a universal rule about one fixed word position. The retained isolated pair does not provide a complete context for deciding every long-versus-short choice. Do not treat the common predicate/attribute contrast as an exceptionless rule.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=708811638070efbb1c97f736ba2a98d83e0378cb4a8bd30084704688de0b11b6
+contentHash=745a4ce0851d9bc80be979e81c5859dcf8c6591cc2ac68af1b0151f743b87394
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-short-adjective-4`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 38391b0a90e75f296332049dd812c184cc64c0ff6c36d24a11003d4e7114e54f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:u29-s-short-adjective-4
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+A short-looking word need not be a short adjective
+shippedText=A short-looking word need not be a short adjective
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=12cabb3840e38cbc477f8d9b3d37b67f19e9b131ca329b7f7a7820576f974498
+contentHash=88a74228a48cb4455a8754f8c532c47d904aa0fafe3943f3bb663ba276f9049c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-short-adjective-5`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c92b47cbd6c656729d65e749758d194f2e494845419b2bd2ac9a4ab74aa0403d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:u29-s-short-adjective-5
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+The retained беж means beige and is an invariant colour form. Its short appearance does not make it the short counterpart of но́вый. Keep meaning, inflection and adjective function separate. This set checks supplied gloss recognition and explains the contrast; it does not demonstrate productive adjective agreement or sentence-level form selection.
+shippedText=The retained беж means beige and is an invariant colour form. Its short appearance does not make it the short counterpart of но́вый. Keep meaning, inflection and adjective function separate. This set checks supplied gloss recognition and explains the contrast; it does not demonstrate productive adjective agreement or sentence-level form selection.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c72d734143b495978efe9293c874b7d2f0c360adafda4cae6777e7af5dd51971
+contentHash=ab7bbea8b9b9d32e96736b43dcf81cfe390ac754ef1b8ed54115f551680c2660
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-short-adjective-6`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9a8c3924d2c104831ada0d67f8e4c28f144691d0cbed56afca31173405ccc2ac
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:u29-s-short-adjective-6
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+Guided practice
+shippedText=Guided practice
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ab9c70c502a5420edbcc00331f2c3de62a210150d78d39edd2f6e2303eb53623
+contentHash=cb1d4a3d9d5db425da3797c7a997db3588ec122a60c4d645ea31cd849f76ab3c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-short-adjective-7`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3d73879bbcfab1646ecdb00470aa6ffe242812e3832cd897c1b14fca44d0b40e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:u29-s-short-adjective-7
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
+shippedText=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=79a655e365d73f1b6cbdc6308ebec4d26839529b88dec3b1b715bfac58ac7ae0
+contentHash=7e831781418e211c98b1c0f63a387cb5d621e366dba903e0c33492a919b4c8c1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-short-adjective-8`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0fdfe613530f3c87b4c65d71ad4e0714ba1b74fe9a240dedb8e8e7264eff109d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:u29-s-short-adjective-8
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+Review the complete retained-example contrast
+shippedText=Review the complete retained-example contrast
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b2007a765328f06a5e9aa14253f39f77355edf6d24df30cd963e753d2649af54
+contentHash=ffc1d4634ce62d9bfa012f510fdd024d80750001611aeef52e4301f1706fc80b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-instruction-u29-s-short-adjective-9`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c7f2e457f9d9ed13f217295f872aa47f6a291386411545a24e11492e881e00a2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:u29-s-short-adjective-9
+originalSourceText=Retained Russian grammar revision 1369617627, retained participle punctuation revision 153078996, and existing hash-bound Unit29 research register/reading spans. Independently authored English instruction, 2026-10-12. No private book expression, new Russian or universal productive rule. Pending final linguistic audit.
+The retained но́вый and нов both mean new. The first is the long form and the second is the short form. Their shared meaning distinguishes them from the colour meanings beige and khaki-colored. Choosing the English gloss alone does not demonstrate selecting the appropriate adjective form in a complete sentence.
+
+A short adjective often supplies the predicate describing its subject; a long adjective often describes a noun attributively. The choice depends on the sentence, not a universal rule about one fixed word position. The retained isolated pair does not provide a complete context for deciding every long-versus-short choice. Do not treat the common predicate/attribute contrast as an exceptionless rule.
+
+The retained беж means beige and is an invariant colour form. Its short appearance does not make it the short counterpart of но́вый. Keep meaning, inflection and adjective function separate. This set checks supplied gloss recognition and explains the contrast; it does not demonstrate productive adjective agreement or sentence-level form selection.
+shippedText=The retained но́вый and нов both mean new. The first is the long form and the second is the short form. Their shared meaning distinguishes them from the colour meanings beige and khaki-colored. Choosing the English gloss alone does not demonstrate selecting the appropriate adjective form in a complete sentence.
+
+A short adjective often supplies the predicate describing its subject; a long adjective often describes a noun attributively. The choice depends on the sentence, not a universal rule about one fixed word position. The retained isolated pair does not provide a complete context for deciding every long-versus-short choice. Do not treat the common predicate/attribute contrast as an exceptionless rule.
+
+The retained беж means beige and is an invariant colour form. Its short appearance does not make it the short counterpart of но́вый. Keep meaning, inflection and adjective function separate. This set checks supplied gloss recognition and explains the contrast; it does not demonstrate productive adjective agreement or sentence-level form selection.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0b5543c863fe3f4b84eecdbf7bac775a64a149b23f12b38d139a7a2126edcb89
+contentHash=55eb2ae0657a1ef9f8be30941f9ded2c7374a6095ad3d9f575bb5dde393b5b05
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -10700,13 +12704,14 @@ permitsAppUse=true
 - `u29-st-teach-active-1` EXAMPLE `ex-u29-active-0`
 - `u29-st-teach-active-1` EXAMPLE `ex-u29-active-1`
 - `u29-st-teach-active-1` REFERENCE `ref-u2630-attribution`
-- `u29-st-guided-active-1` REMEDIATION `u29-st-rem-active`
-- `u29-st-guided-active-1` ITEM `u29-g-active-0`
 - `u29-st-teach-active-2` REFERENCE `ref-u2630-attribution`
 - `u29-st-teach-active-3` EXAMPLE `ex-u29-active-2`
 - `u29-st-teach-active-3` REFERENCE `ref-u2630-attribution`
+- `u29-st-guided-active-1` REMEDIATION `u29-st-rem-active`
+- `u29-st-guided-active-1` ITEM `u29-g-active-0`
 - `u29-st-rem-active` EXAMPLE `ex-u29-active-0`
 - `u29-st-rem-active` EXAMPLE `ex-u29-active-1`
+- `u29-st-rem-active` EXAMPLE `ex-u29-active-2`
 - `u29-st-check-active` REMEDIATION `u29-st-rem-active`
 - `u29-st-check-active` ITEM `u29-i-active-1`
 - `u29-st-check-active` ITEM `u29-i-active-2`
@@ -10714,13 +12719,14 @@ permitsAppUse=true
 - `u29-st-teach-short-adjective-1` EXAMPLE `ex-u29-short-adjective-0`
 - `u29-st-teach-short-adjective-1` EXAMPLE `ex-u29-short-adjective-1`
 - `u29-st-teach-short-adjective-1` REFERENCE `ref-u2630-attribution`
-- `u29-st-guided-short-adjective-1` REMEDIATION `u29-st-rem-short-adjective`
-- `u29-st-guided-short-adjective-1` ITEM `u29-g-short-adjective-0`
 - `u29-st-teach-short-adjective-2` REFERENCE `ref-u2630-attribution`
 - `u29-st-teach-short-adjective-3` EXAMPLE `ex-u29-short-adjective-2`
 - `u29-st-teach-short-adjective-3` REFERENCE `ref-u2630-attribution`
+- `u29-st-guided-short-adjective-1` REMEDIATION `u29-st-rem-short-adjective`
+- `u29-st-guided-short-adjective-1` ITEM `u29-g-short-adjective-0`
 - `u29-st-rem-short-adjective` EXAMPLE `ex-u29-short-adjective-0`
 - `u29-st-rem-short-adjective` EXAMPLE `ex-u29-short-adjective-1`
+- `u29-st-rem-short-adjective` EXAMPLE `ex-u29-short-adjective-2`
 - `u29-st-check-short-adjective` REMEDIATION `u29-st-rem-short-adjective`
 - `u29-st-check-short-adjective` ITEM `u29-i-short-adjective-1`
 - `u29-st-check-short-adjective` ITEM `u29-i-short-adjective-2`
@@ -10728,9 +12734,9 @@ permitsAppUse=true
 - `u29-st-teach-bookish-note-1` EXAMPLE `ex-u29-bookish-note-0`
 - `u29-st-teach-bookish-note-1` EXAMPLE `ex-u29-bookish-note-1`
 - `u29-st-teach-bookish-note-1` REFERENCE `ref-u2630-attribution`
+- `u29-st-teach-bookish-note-2` REFERENCE `ref-u2630-attribution`
 - `u29-st-guided-bookish-note-1` REMEDIATION `u29-st-rem-bookish-note`
 - `u29-st-guided-bookish-note-1` ITEM `u29-g-bookish-note-0`
-- `u29-st-teach-bookish-note-2` REFERENCE `ref-u2630-attribution`
 - `u29-st-rem-bookish-note` EXAMPLE `ex-u29-bookish-note-0`
 - `u29-st-rem-bookish-note` EXAMPLE `ex-u29-bookish-note-1`
 - `u29-st-check-bookish-note` REMEDIATION `u29-st-rem-bookish-note`
@@ -10740,13 +12746,14 @@ permitsAppUse=true
 - `u29-st-teach-punctuation-1` EXAMPLE `ex-u29-punctuation-0`
 - `u29-st-teach-punctuation-1` EXAMPLE `ex-u29-punctuation-1`
 - `u29-st-teach-punctuation-1` REFERENCE `ref-u2630-attribution`
-- `u29-st-guided-punctuation-1` REMEDIATION `u29-st-rem-punctuation`
-- `u29-st-guided-punctuation-1` ITEM `u29-g-punctuation-0`
 - `u29-st-teach-punctuation-2` REFERENCE `ref-u2630-attribution`
 - `u29-st-teach-punctuation-3` EXAMPLE `ex-u29-punctuation-2`
 - `u29-st-teach-punctuation-3` REFERENCE `ref-u2630-attribution`
+- `u29-st-guided-punctuation-1` REMEDIATION `u29-st-rem-punctuation`
+- `u29-st-guided-punctuation-1` ITEM `u29-g-punctuation-0`
 - `u29-st-rem-punctuation` EXAMPLE `ex-u29-punctuation-0`
 - `u29-st-rem-punctuation` EXAMPLE `ex-u29-punctuation-1`
+- `u29-st-rem-punctuation` EXAMPLE `ex-u29-punctuation-2`
 - `u29-st-check-punctuation` REMEDIATION `u29-st-rem-punctuation`
 - `u29-st-check-punctuation` ITEM `u29-i-punctuation-1`
 - `u29-st-check-punctuation` ITEM `u29-i-punctuation-2`
@@ -10756,10 +12763,12 @@ permitsAppUse=true
 - `u29-register-teach-1` EXAMPLE `ex-u29-register-1`
 - `u29-register-teach-1` EXAMPLE `ex-u29-register-2`
 - `u29-register-teach-1` REFERENCE `ref-u2630-attribution`
+- `u29-register-teach-2` REFERENCE `ref-u2630-attribution`
 - `u29-register-guided` REMEDIATION `u29-register-remediate`
 - `u29-register-guided` ITEM `u29-g-register-1`
 - `u29-register-guided` REFERENCE `ref-u2630-attribution`
-- `u29-register-teach-2` REFERENCE `ref-u2630-attribution`
+- `u29-register-remediate` EXAMPLE `ex-u29-register-1`
+- `u29-register-remediate` EXAMPLE `ex-u29-register-2`
 - `u29-register-remediate` REFERENCE `ref-u2630-attribution`
 - `u29-register-check` REMEDIATION `u29-register-remediate`
 - `u29-register-check` ITEM `u29-i-register-1`
@@ -10773,10 +12782,12 @@ permitsAppUse=true
 - `u29-reading-teach-1` EXAMPLE `ex-u29-reading-1`
 - `u29-reading-teach-1` EXAMPLE `ex-u29-reading-2`
 - `u29-reading-teach-1` REFERENCE `ref-u2630-attribution`
+- `u29-reading-teach-2` REFERENCE `ref-u2630-attribution`
 - `u29-reading-guided` REMEDIATION `u29-reading-remediate`
 - `u29-reading-guided` ITEM `u29-g-reading-1`
 - `u29-reading-guided` REFERENCE `ref-u2630-attribution`
-- `u29-reading-teach-2` REFERENCE `ref-u2630-attribution`
+- `u29-reading-remediate` EXAMPLE `ex-u29-reading-1`
+- `u29-reading-remediate` EXAMPLE `ex-u29-reading-2`
 - `u29-reading-remediate` REFERENCE `ref-u2630-attribution`
 - `u29-reading-check` REMEDIATION `u29-reading-remediate`
 - `u29-reading-check` ITEM `u29-i-reading-1`
@@ -10787,6 +12798,71 @@ permitsAppUse=true
 - `obj-u29-short-adjective` PROVENANCE `prov-ca-29-378`
 - `obj-u29-active` PROVENANCE `prov-ca-29-625`
 - `obj-u29-active` PROVENANCE `prov-ca-29-626`
+- `obj-u29-active` PROVENANCE `prov-ca-u29-instruction-u29-s-active-0`
+- `obj-u29-active` PROVENANCE `prov-ca-u29-instruction-u29-s-active-1`
+- `obj-u29-active` PROVENANCE `prov-ca-u29-instruction-u29-s-active-10`
+- `obj-u29-active` PROVENANCE `prov-ca-u29-instruction-u29-s-active-2`
+- `obj-u29-active` PROVENANCE `prov-ca-u29-instruction-u29-s-active-3`
+- `obj-u29-active` PROVENANCE `prov-ca-u29-instruction-u29-s-active-4`
+- `obj-u29-active` PROVENANCE `prov-ca-u29-instruction-u29-s-active-5`
+- `obj-u29-active` PROVENANCE `prov-ca-u29-instruction-u29-s-active-6`
+- `obj-u29-active` PROVENANCE `prov-ca-u29-instruction-u29-s-active-7`
+- `obj-u29-active` PROVENANCE `prov-ca-u29-instruction-u29-s-active-8`
+- `obj-u29-active` PROVENANCE `prov-ca-u29-instruction-u29-s-active-9`
+- `obj-u29-bookish-note` PROVENANCE `prov-ca-u29-instruction-u29-s-bookish-note-0`
+- `obj-u29-bookish-note` PROVENANCE `prov-ca-u29-instruction-u29-s-bookish-note-1`
+- `obj-u29-bookish-note` PROVENANCE `prov-ca-u29-instruction-u29-s-bookish-note-2`
+- `obj-u29-bookish-note` PROVENANCE `prov-ca-u29-instruction-u29-s-bookish-note-3`
+- `obj-u29-bookish-note` PROVENANCE `prov-ca-u29-instruction-u29-s-bookish-note-4`
+- `obj-u29-bookish-note` PROVENANCE `prov-ca-u29-instruction-u29-s-bookish-note-5`
+- `obj-u29-bookish-note` PROVENANCE `prov-ca-u29-instruction-u29-s-bookish-note-6`
+- `obj-u29-bookish-note` PROVENANCE `prov-ca-u29-instruction-u29-s-bookish-note-7`
+- `obj-u29-bookish-note` PROVENANCE `prov-ca-u29-instruction-u29-s-bookish-note-8`
+- `obj-u29-reading` PROVENANCE `prov-ca-u29-instruction-u29-s-gap-reading-0`
+- `obj-u29-reading` PROVENANCE `prov-ca-u29-instruction-u29-s-gap-reading-1`
+- `obj-u29-reading` PROVENANCE `prov-ca-u29-instruction-u29-s-gap-reading-10`
+- `obj-u29-reading` PROVENANCE `prov-ca-u29-instruction-u29-s-gap-reading-11`
+- `obj-u29-reading` PROVENANCE `prov-ca-u29-instruction-u29-s-gap-reading-12`
+- `obj-u29-reading` PROVENANCE `prov-ca-u29-instruction-u29-s-gap-reading-13`
+- `obj-u29-reading` PROVENANCE `prov-ca-u29-instruction-u29-s-gap-reading-2`
+- `obj-u29-reading` PROVENANCE `prov-ca-u29-instruction-u29-s-gap-reading-3`
+- `obj-u29-reading` PROVENANCE `prov-ca-u29-instruction-u29-s-gap-reading-4`
+- `obj-u29-reading` PROVENANCE `prov-ca-u29-instruction-u29-s-gap-reading-5`
+- `obj-u29-reading` PROVENANCE `prov-ca-u29-instruction-u29-s-gap-reading-6`
+- `obj-u29-reading` PROVENANCE `prov-ca-u29-instruction-u29-s-gap-reading-7`
+- `obj-u29-reading` PROVENANCE `prov-ca-u29-instruction-u29-s-gap-reading-8`
+- `obj-u29-reading` PROVENANCE `prov-ca-u29-instruction-u29-s-gap-reading-9`
+- `obj-u29-register` PROVENANCE `prov-ca-u29-instruction-u29-s-gap-register-0`
+- `obj-u29-register` PROVENANCE `prov-ca-u29-instruction-u29-s-gap-register-1`
+- `obj-u29-register` PROVENANCE `prov-ca-u29-instruction-u29-s-gap-register-2`
+- `obj-u29-register` PROVENANCE `prov-ca-u29-instruction-u29-s-gap-register-3`
+- `obj-u29-register` PROVENANCE `prov-ca-u29-instruction-u29-s-gap-register-4`
+- `obj-u29-register` PROVENANCE `prov-ca-u29-instruction-u29-s-gap-register-5`
+- `obj-u29-register` PROVENANCE `prov-ca-u29-instruction-u29-s-gap-register-6`
+- `obj-u29-register` PROVENANCE `prov-ca-u29-instruction-u29-s-gap-register-7`
+- `obj-u29-register` PROVENANCE `prov-ca-u29-instruction-u29-s-gap-register-8`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-instruction-u29-s-punctuation-0`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-instruction-u29-s-punctuation-1`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-instruction-u29-s-punctuation-10`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-instruction-u29-s-punctuation-2`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-instruction-u29-s-punctuation-3`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-instruction-u29-s-punctuation-4`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-instruction-u29-s-punctuation-5`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-instruction-u29-s-punctuation-6`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-instruction-u29-s-punctuation-7`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-instruction-u29-s-punctuation-8`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-instruction-u29-s-punctuation-9`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-instruction-u29-s-short-adjective-0`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-instruction-u29-s-short-adjective-1`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-instruction-u29-s-short-adjective-10`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-instruction-u29-s-short-adjective-2`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-instruction-u29-s-short-adjective-3`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-instruction-u29-s-short-adjective-4`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-instruction-u29-s-short-adjective-5`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-instruction-u29-s-short-adjective-6`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-instruction-u29-s-short-adjective-7`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-instruction-u29-s-short-adjective-8`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-instruction-u29-s-short-adjective-9`
 - `obj-u29-active` PROVENANCE `prov-ex-u29-active-0-en`
 - `obj-u29-active` PROVENANCE `prov-ex-u29-active-0-ru`
 - `obj-u29-active` PROVENANCE `prov-ex-u29-active-1-en`

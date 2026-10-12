@@ -11,12 +11,12 @@ Unit 30 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 69ebebf39db417c525211089d99f86f0fe094597
-- Unit content-review SHA-256: 2aa34719cf7930c67935e92c75becc40fa30c20ece6555a2ce1bd556be493688
+- Curriculum source commit: 0136eb4000641f6b1edd020ed9caa29f59cdc35c
+- Unit content-review SHA-256: 00fedc373da84e486f06af11b3f9378d2be28ee826fb2a6810a5c49ad466f8f9
 - Mapping-package SHA-256: 97f4c8beeb1d0e6827b94bedc1e379381c763c2c3522013890b75802630440a2
-- Pack content-review SHA-256: 073f2103021d9e7b493623e1c2816ed7fd6d9095eb124a04dce53923620548a2
-- Review-package SHA-256: 00b1518063f7184d35a707cc8361e2185364fee8bfb080e07481d04f8f981315
-- Repository source SHA-256: d869d527202253bd46369e6361c5c794b1795ecc1aee7ac86427f4fbf68d196c
+- Pack content-review SHA-256: ec1debe60310f19952a7d4bf676fe18ff6e25b1dfb848c60761d7cd9d40d7ff1
+- Review-package SHA-256: 4348f2cf3c2fe4a08fd8ab67f5ad2c8ae8a15eae84d903e10048de211fd44162
+- Repository source SHA-256: 9bf60851690b6f1c880a25f39c0afece1b5bf87130b45e9a2fc3411c69191467
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -302,12 +302,12 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 78f40275d5808fb143238f54f8c7c818b1db739c15f23b283611496dfc76bfc0
+- Content hash: 3a7dc1e0d704601a17b0b1a878d9943439a1166c13669e5a69cbb9368d39183b
 
 title=Review the admitted table name
 estimatedMinutes=12
 objectives=obj-u30-letter-names
-steps=u30-st-teach-letter-names-1,u30-st-guided-letter-names-1,u30-st-teach-letter-names-2,u30-st-rem-letter-names,u30-st-check-letter-names
+steps=u30-st-teach-letter-names-1,u30-st-teach-letter-names-2,u30-st-guided-letter-names-1,u30-st-rem-letter-names,u30-st-check-letter-names
 
 ### STEP `u30-st-teach-letter-names-1`
 
@@ -317,15 +317,37 @@ steps=u30-st-teach-letter-names-1,u30-st-guided-letter-names-1,u30-st-teach-lett
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 2aaa2e47991742296fe1a838e64b08050ac1208867552fe5dfaa860090afa43c
+- Content hash: b8e7be5d2f3f61582bcacaf4ebdf7e2d158511fb5cdb21105ea96fcbe49ee734
 
 kind=TEACH
-title=Admitted lines
-body=Read the admitted examples on this card. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+title=Separate a letter name from an approximate sound cue
+body=The retained а has the English name respelling ah. The retained бэ has be/beh. These respellings guide recognition of the supplied letter names; they are not words naming an object or an English translation of a Russian sentence.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
 examples=ex-u30-letter-names-0,ex-u30-letter-names-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u30-st-teach-letter-names-2`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-letter-names
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 39d7d3635de2fdcfcfbf8041f4ea2b889a5915ed7c499a057dc35d1c1a71eec6
+
+kind=TEACH
+title=A comparison word is not the name respelling
+body=The retained alphabet row uses father as an approximate English sound comparison for а. Choose father when asked for that comparison word, but ah when asked for the name respelling. The alternatives bad and both are different comparison words, and be/beh belongs to the other supplied name. English comparisons depend on accent and are approximate; these text checks do not demonstrate listening or pronunciation.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -339,11 +361,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5a50ac3b34c91f6ccb6412558a01f3da018a0ceae4fabae1ccf6b233a859d689
+- Content hash: 7049ffae26b90c7bea48540b711d1f0448c23b6f3a9b80a80bfee7d03f291c65
 
 kind=GUIDED
 title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
+body=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
 dominantAction=Continue
 references=
 items=u30-g-letter-names-0
@@ -353,28 +375,6 @@ bookDirection=
 companionDirection=
 remediationStepId=u30-st-rem-letter-names
 
-### STEP `u30-st-teach-letter-names-2`
-
-- Objectives: obj-u30-letter-names
-- Sessions: u30-s-letter-names
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 043567abef2711035275020f37d3def4b2985f4e783f32dd56ed231e7b4293ac
-
-kind=TEACH
-title=Admitted instruction
-body=Approximate English equivalent
-dominantAction=Continue
-references=ref-u2630-attribution
-items=
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
 ### STEP `u30-st-rem-letter-names`
 
 - Objectives: obj-u30-letter-names
@@ -383,11 +383,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 9badcc558b4d56075456efcedd7a5260a5f8e92fcafe7622d93345ebb5a437b3
+- Content hash: d7f43cbdbc918cff45b7497208e3e8a099331a89e657ae5dc781ec802783de59
 
 kind=REMEDIATE
-title=Remediation
-body=Approximate English equivalent
+title=Review the complete retained-example contrast
+body=The retained а has the English name respelling ah. The retained бэ has be/beh. These respellings guide recognition of the supplied letter names; they are not words naming an object or an English translation of a Russian sentence.
+
+The retained alphabet row uses father as an approximate English sound comparison for а. Choose father when asked for that comparison word, but ah when asked for the name respelling. The alternatives bad and both are different comparison words, and be/beh belongs to the other supplied name. English comparisons depend on accent and are approximate; these text checks do not demonstrate listening or pronunciation.
 dominantAction=Continue
 references=
 items=
@@ -405,11 +407,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 6f3674ba76ed991319841e84f47ee327da0ff2e63d60f68792b0fc585bafb927
+- Content hash: 61c8b4a8e75e51020145f5be20d8f439f4619db59abf2d6883cd81a997915ebe
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
 dominantAction=Continue
 references=
 items=u30-i-letter-names-1,u30-i-letter-names-2
@@ -427,12 +429,12 @@ remediationStepId=u30-st-rem-letter-names
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b9760a3082381208f405159224ebc9ce461cbf63afeb66ad679046066d2426e1
+- Content hash: 44597c9c14d84515dae9494cdb5a1631e16d99a4a2f5ba648f0b9dc16d6b27dc
 
 title=Choose the admitted gloss for the shown abbreviation example
 estimatedMinutes=12
 objectives=obj-u30-abbrev-examples
-steps=u30-st-teach-abbrev-examples-1,u30-st-guided-abbrev-examples-1,u30-st-teach-abbrev-examples-2,u30-st-rem-abbrev-examples,u30-st-check-abbrev-examples
+steps=u30-st-teach-abbrev-examples-1,u30-st-teach-abbrev-examples-2,u30-st-guided-abbrev-examples-1,u30-st-rem-abbrev-examples,u30-st-check-abbrev-examples
 
 ### STEP `u30-st-teach-abbrev-examples-1`
 
@@ -442,15 +444,37 @@ steps=u30-st-teach-abbrev-examples-1,u30-st-guided-abbrev-examples-1,u30-st-teac
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1467633ffc3d145cf0ec279cf25e2d05e93dcbe0de78d868d02bf8683e8ecebf
+- Content hash: 88a6c9c99b4ef7764bbcdf8465d3cb0719b347aa23104fce71f1291cd4314243
 
 kind=TEACH
-title=Admitted lines
-body=Read the admitted examples on this card. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+title=Recognize the two supplied country abbreviations
+body=The retained СССР corresponds to USSR and США to USA. Choose the English country abbreviation matching the Russian form. These are two admitted examples, not a complete list or a productive rule for pronouncing every Russian abbreviation.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
 examples=ex-u30-abbrev-examples-0,ex-u30-abbrev-examples-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u30-st-teach-abbrev-examples-2`
+
+- Objectives: obj-u30-abbrev-examples
+- Sessions: u30-s-abbrev-examples
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: aa0add45374e638a68619cf2c819788b18c58a3c15f21d03f0b13a41836b5666
+
+kind=TEACH
+title=A heading describes the group rather than one country
+body=Abbreviations is the category heading for the supplied examples, not the English gloss of СССР or США. One retained check asks specifically for that heading; its answer is Abbreviations rather than USSR or USA. Distinguish a question about category from a question about the meaning of an individual example.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -464,11 +488,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c38e39a9b3f07e907427fb5ffcb414eff98092bfab0163a4867581f2f5eb1db5
+- Content hash: 79d9f024d6c94cc046fa98bfee7285b00b0fa59405a2c985ab00e76ee844ad9a
 
 kind=GUIDED
 title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
+body=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
 dominantAction=Continue
 references=
 items=u30-g-abbrev-examples-0
@@ -478,28 +502,6 @@ bookDirection=
 companionDirection=
 remediationStepId=u30-st-rem-abbrev-examples
 
-### STEP `u30-st-teach-abbrev-examples-2`
-
-- Objectives: obj-u30-abbrev-examples
-- Sessions: u30-s-abbrev-examples
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ec85dae98f5c5201f49a17c4cd87764c08ed9c0dfc7aa266f9825d8c4ff9acd2
-
-kind=TEACH
-title=Admitted instruction
-body=* Abbreviations:
-dominantAction=Continue
-references=ref-u2630-attribution
-items=
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
 ### STEP `u30-st-rem-abbrev-examples`
 
 - Objectives: obj-u30-abbrev-examples
@@ -508,11 +510,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 070ec5555b5f6e1d5f7d475685abae3a31071548a5eee7ca05c6b1840374f5e6
+- Content hash: cc7ee9eb44707ea2e2e2adf78c0c7ece640e9d63192f2d90952d62a73c4df920
 
 kind=REMEDIATE
-title=Remediation
-body=* Abbreviations:
+title=Review the complete retained-example contrast
+body=The retained СССР corresponds to USSR and США to USA. Choose the English country abbreviation matching the Russian form. These are two admitted examples, not a complete list or a productive rule for pronouncing every Russian abbreviation.
+
+Abbreviations is the category heading for the supplied examples, not the English gloss of СССР or США. One retained check asks specifically for that heading; its answer is Abbreviations rather than USSR or USA. Distinguish a question about category from a question about the meaning of an individual example.
 dominantAction=Continue
 references=
 items=
@@ -530,11 +534,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 47ae5522d8a36d12ca30bf4f37f235f9c39c5b82b1627054979e3d181693d43a
+- Content hash: d9f84cb930874c507815091659de3495620468f39775686a21ae359dc27b0071
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
 dominantAction=Continue
 references=
 items=u30-i-abbrev-examples-1,u30-i-abbrev-examples-2
@@ -552,12 +556,12 @@ remediationStepId=u30-st-rem-abbrev-examples
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b6ac974767bd5a72e096a13d01e9c7445d4fa2760829c9728bee44bf7fc56bc9
+- Content hash: 9fadf8cd0fcc7b6ca21282e4b5f7831418fa0c7dc47f5aafb3761b5e63c7b6e5
 
 title=Review the admitted address marks
 estimatedMinutes=12
 objectives=obj-u30-address-marks
-steps=u30-st-teach-address-marks-1,u30-st-guided-address-marks-1,u30-st-teach-address-marks-2,u30-st-teach-address-marks-3,u30-st-rem-address-marks,u30-st-check-address-marks
+steps=u30-st-teach-address-marks-1,u30-st-teach-address-marks-2,u30-st-teach-address-marks-3,u30-st-guided-address-marks-1,u30-st-rem-address-marks,u30-st-check-address-marks
 
 ### STEP `u30-st-teach-address-marks-1`
 
@@ -567,11 +571,11 @@ steps=u30-st-teach-address-marks-1,u30-st-guided-address-marks-1,u30-st-teach-ad
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 92e2e4e733d9f82713391bb56bb32e27e3d0985c7232f246d1390747b0eb4198
+- Content hash: db1ef0ee3f8573b6699ccd50c34292cfe4a8463e61f301d1b07fe02e2accfb8e
 
 kind=TEACH
-title=Admitted lines
-body=Read the admitted examples on this card.
+title=Identify the city mark in its line
+body=In the supplied 115114 г. Москва, the mark identifies the city. The digits are the postal code and the following name the city; the city mark does not name the street or building. Interpret the mark within the address line rather than treating every number as a building number.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -581,28 +585,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u30-st-guided-address-marks-1`
-
-- Objectives: obj-u30-address-marks
-- Sessions: u30-s-address-marks
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8cf0d87e19343be4bf8ef600c0080543b5b06d7af76cde2f40737d29e5ab6dc8
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u30-g-address-marks-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u30-st-rem-address-marks
-
 ### STEP `u30-st-teach-address-marks-2`
 
 - Objectives: obj-u30-address-marks
@@ -611,11 +593,11 @@ remediationStepId=u30-st-rem-address-marks
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: bc124553f7a50c62c208de1fbc5e8f75116ff24901bce317b373eb9eaaa2b915
+- Content hash: 37fe276aaff7da56b54917c036679a5879110d74be7698f272b1ae776d1c9d7c
 
 kind=TEACH
-title=Admitted instruction
-body=The lines are marked with abbreviations:
+title=Read the first mark without ignoring the later marks
+body=In ул. Петрова, д. 14, кв. 15, the first mark identifies the street. The line then gives a building and an apartment. A question about the first mark therefore selects street rather than city or apartment. The individual address fields have different roles even when they share one printed line.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -633,11 +615,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 0a0cc809e481a2ca5b6ab764b11cffa0e15bb1014daedac35a414e2c3dc074c7
+- Content hash: f1201bdd90ea8d07d0382d231e8a4d991844a15159d83b8a811d7d73cebb0af0
 
 kind=TEACH
-title=Admitted lines
-body=Read the admitted examples on this card.
+title=Distinguish building from the other address fields
+body=The retained д. is glossed building. In the longer supplied line it precedes 14; the apartment field is separate. Choose building for this supplied mark rather than city or street. This small set checks recognition of retained marks, not the production of a complete unfamiliar postal address or acceptance of an owned-edition mapping.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -647,6 +629,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u30-st-guided-address-marks-1`
+
+- Objectives: obj-u30-address-marks
+- Sessions: u30-s-address-marks
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 55e7433cb8dc5a8988e5b4b8341bd940a6bda00ead8ef594996dc1f23241b220
+
+kind=GUIDED
+title=Guided practice
+body=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
+dominantAction=Continue
+references=
+items=u30-g-address-marks-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u30-st-rem-address-marks
+
 ### STEP `u30-st-rem-address-marks`
 
 - Objectives: obj-u30-address-marks
@@ -655,15 +659,19 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 51c754ad66216a164a071014bb3386b7906c44d7982f3db11efd4344481a5df4
+- Content hash: cf9e0762a63ca05cf3eff7b78a3d9060c7bee0e6b5b9dd647795350a56fce80d
 
 kind=REMEDIATE
-title=Remediation
-body=The lines are marked with abbreviations:
+title=Review the complete retained-example contrast
+body=In the supplied 115114 г. Москва, the mark identifies the city. The digits are the postal code and the following name the city; the city mark does not name the street or building. Interpret the mark within the address line rather than treating every number as a building number.
+
+In ул. Петрова, д. 14, кв. 15, the first mark identifies the street. The line then gives a building and an apartment. A question about the first mark therefore selects street rather than city or apartment. The individual address fields have different roles even when they share one printed line.
+
+The retained д. is glossed building. In the longer supplied line it precedes 14; the apartment field is separate. Choose building for this supplied mark rather than city or street. This small set checks recognition of retained marks, not the production of a complete unfamiliar postal address or acceptance of an owned-edition mapping.
 dominantAction=Continue
 references=
 items=
-examples=ex-u30-address-marks-0,ex-u30-address-marks-1
+examples=ex-u30-address-marks-0,ex-u30-address-marks-1,ex-u30-address-marks-2
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -677,11 +685,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f1595b8bff3c35eca0837e089a1de26f6769a0af9039af28dae3e4de86248eab
+- Content hash: 5765c4aa6311458b534a19ffe9a2588f169d89135f1cdbc44abfb5eac3101d3e
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
 dominantAction=Continue
 references=
 items=u30-i-address-marks-1,u30-i-address-marks-2
@@ -699,12 +707,12 @@ remediationStepId=u30-st-rem-address-marks
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 44808764c52795adb5749194592bb0b7507d23fd71cb1c66234adebf13ae8dfc
+- Content hash: 23d52ffdaf21ec784ec10d70f23b64ffede797c8c9d927964570c1d7cd80eec7
 
 title=Classify the shown form by its admitted category
 estimatedMinutes=12
 objectives=obj-u30-abbreviation
-steps=u30-st-teach-abbreviation-1,u30-st-guided-abbreviation-1,u30-st-teach-abbreviation-2,u30-st-teach-abbreviation-3,u30-st-teach-abbreviation-4,u30-st-rem-abbreviation,u30-st-check-abbreviation
+steps=u30-st-teach-abbreviation-1,u30-st-teach-abbreviation-2,u30-st-teach-abbreviation-3,u30-st-teach-abbreviation-4,u30-st-guided-abbreviation-1,u30-st-rem-abbreviation,u30-st-check-abbreviation
 
 ### STEP `u30-st-teach-abbreviation-1`
 
@@ -714,11 +722,11 @@ steps=u30-st-teach-abbreviation-1,u30-st-guided-abbreviation-1,u30-st-teach-abbr
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 7080bf12e58a040d1f9fb76450328b4d9139e86435a0fee8e2266f1641cd5be7
+- Content hash: aac1e85629c7df124b1cf4f51578f0512e77ab4ac2c1e5b94989600f69a088bf
 
 kind=TEACH
-title=Admitted lines
-body=Read the admitted examples on this card.
+title=Read the retained category as a source grouping
+body=The source groups letter-name abbreviations and sound abbreviations ending in a vowel together under буквенные аббревиатуры и звуковые аббревиатуры на гласную. Its examples include СНГ and ЭВМ. This combined label does not say that every member is pronounced as a single word. The passage discusses their treatment as indeclinable forms.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -728,28 +736,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u30-st-guided-abbreviation-1`
-
-- Objectives: obj-u30-abbreviation
-- Sessions: u30-s-abbreviation
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ce43900c080db18a9f6415258d08511f4886d7baa5455bef06fb5c4a61769096
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u30-g-abbreviation-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u30-st-rem-abbreviation
-
 ### STEP `u30-st-teach-abbreviation-2`
 
 - Objectives: obj-u30-abbreviation
@@ -758,11 +744,11 @@ remediationStepId=u30-st-rem-abbreviation
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 804e9091cdcc0442436f5c4ddd40013cc4be607ee9a6448c442900961825dc87
+- Content hash: 915779f4a3c40685bc698132848b431ae03fa7255ec2dea380efbf08f472fa5d
 
 kind=TEACH
-title=Admitted instruction
-body=буквенные аббревиатуры и звуковые аббревиатуры на гласную
+title=Keep the supplied vowel-ending examples in that group
+body=The retained ГАИ and гороно are also included under the combined label in this passage. Select that supplied grouping when asked about гороно here. The separate phrase сложносокращённые слова names another group in the passage; do not replace the retained source grouping simply because a form is shortened. These examples do not establish an exhaustive taxonomy of all shortened words.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -780,11 +766,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 2d208a12492710a69ef3811766ca4a511014e5dcbad1facf0c71b28066004124
+- Content hash: f14801339e81965931ca75dadd5125e743357e4bbefcd173230f3cdabb8af3cf
 
 kind=TEACH
-title=Admitted lines
-body=Read the admitted examples on this card.
+title=Compare the consonant-ending abbreviation and its two uses
+body=The supplied в МИД and в МИДе illustrate the source group звуковые аббревиатуры на согласную, sound abbreviations ending in a consonant. One retains the abbreviation unchanged and the other has a case ending. The source permits declined and undeclined use here. Its category contrasts with the combined letter-name/vowel-ending grouping.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -802,11 +788,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e7b67e4f3407177d489917e53c46d910fb23dc38bd055b52736b44381c5905a3
+- Content hash: 3cb0a0ab5072ad3620ab6b6108fdfc5d826d63198de3c608138b7cc4492cd0d8
 
 kind=TEACH
-title=Admitted lines
-body=Read the admitted examples on this card.
+title=Do not infer a universal ending rule from this list
+body=The category названия населённых пунктов refers to place names and is separate from the abbreviation groups in this exercise. These checks classify retained examples and the source explicitly allows both treatments for the consonant-ending example. They do not justify declining every consonant-ending abbreviation or predicting an unlisted abbreviation from spelling alone.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -816,6 +802,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u30-st-guided-abbreviation-1`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: u30-s-abbreviation
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 0cde6a43c240ead499d483a2b36ff603f9f06745695d493f39740c497830593f
+
+kind=GUIDED
+title=Guided practice
+body=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
+dominantAction=Continue
+references=
+items=u30-g-abbreviation-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u30-st-rem-abbreviation
+
 ### STEP `u30-st-rem-abbreviation`
 
 - Objectives: obj-u30-abbreviation
@@ -824,15 +832,21 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a3e2dedf337ffeb077aae0f5f2ee76c1bf0a5b7a2808e269931def647b5daf9e
+- Content hash: f27574ef25609fa8b70959e4f71d99f229d0a4bef32d88a882dd01e013bd267b
 
 kind=REMEDIATE
-title=Remediation
-body=буквенные аббревиатуры и звуковые аббревиатуры на гласную
+title=Review the complete retained-example contrast
+body=The source groups letter-name abbreviations and sound abbreviations ending in a vowel together under буквенные аббревиатуры и звуковые аббревиатуры на гласную. Its examples include СНГ and ЭВМ. This combined label does not say that every member is pronounced as a single word. The passage discusses their treatment as indeclinable forms.
+
+The retained ГАИ and гороно are also included under the combined label in this passage. Select that supplied grouping when asked about гороно here. The separate phrase сложносокращённые слова names another group in the passage; do not replace the retained source grouping simply because a form is shortened. These examples do not establish an exhaustive taxonomy of all shortened words.
+
+The supplied в МИД and в МИДе illustrate the source group звуковые аббревиатуры на согласную, sound abbreviations ending in a consonant. One retains the abbreviation unchanged and the other has a case ending. The source permits declined and undeclined use here. Its category contrasts with the combined letter-name/vowel-ending grouping.
+
+The category названия населённых пунктов refers to place names and is separate from the abbreviation groups in this exercise. These checks classify retained examples and the source explicitly allows both treatments for the consonant-ending example. They do not justify declining every consonant-ending abbreviation or predicting an unlisted abbreviation from spelling alone.
 dominantAction=Continue
 references=
 items=
-examples=ex-u30-abbreviation-0,ex-u30-abbreviation-1
+examples=ex-u30-abbreviation-0,ex-u30-abbreviation-1,ex-u30-abbreviation-2,ex-u30-abbreviation-3,ex-u30-abbreviation-4,ex-u30-abbreviation-5
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -846,11 +860,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 70db1fb4f47b5cba25340e33d05c4fe075ab239b1d16949a0a27d9fb9dad5e5d
+- Content hash: 5133f7f7b54fae4091d6a23d5fd05bf8f3de7f94b456cf6c9139e29214941121
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
 dominantAction=Continue
 references=
 items=u30-i-abbreviation-1,u30-i-abbreviation-2
@@ -868,12 +882,12 @@ remediationStepId=u30-st-rem-abbreviation
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 39b1f9ad88fb0786aa3f3c5c3ec296194375ab7929a35d9f13bdb9a724916e13
+- Content hash: 1d6d1a4766fabc50d8dd51958b60b7451460b720ca5836527ba85cec5aef0f1b
 
 title=Classify the shown line by its admitted use
 estimatedMinutes=12
 objectives=obj-u30-particle
-steps=u30-st-teach-particle-1,u30-st-guided-particle-1,u30-st-teach-particle-2,u30-st-teach-particle-3,u30-st-rem-particle,u30-st-check-particle
+steps=u30-st-teach-particle-1,u30-st-teach-particle-2,u30-st-teach-particle-3,u30-st-guided-particle-1,u30-st-rem-particle,u30-st-check-particle
 
 ### STEP `u30-st-teach-particle-1`
 
@@ -883,11 +897,11 @@ steps=u30-st-teach-particle-1,u30-st-guided-particle-1,u30-st-teach-particle-2,u
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e1d1cb57c165b2669f1a9719d1a39db9c2b992c3539cd79140c4abcaed46fc02
+- Content hash: c45aa1dd74634a87580a14631b19af8b34aec3936f6491cd83c89076bebb44b0
 
 kind=TEACH
-title=Admitted lines
-body=Read the admitted examples on this card. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+title=Recognize a request or wish rather than reported past action
+body=The supplied Пусть он читает expresses let him read, and Да будет мир! expresses let there be peace. The source classifies these as Повелительное наклонение, imperative mood, using particles. These examples express a request or wish rather than reporting that the action has already happened.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -897,28 +911,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u30-st-guided-particle-1`
-
-- Objectives: obj-u30-particle
-- Sessions: u30-s-particle
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 72e7466a152ba6c9ab8c20040dbed97dd3e5bf4fde2014c11139ffc9faae366a
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u30-g-particle-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u30-st-rem-particle
-
 ### STEP `u30-st-teach-particle-2`
 
 - Objectives: obj-u30-particle
@@ -927,11 +919,11 @@ remediationStepId=u30-st-rem-particle
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 06b55cc4c3be65d4569723c2317b816b40d00d5d88ba1800bf8957bdfb21715c
+- Content hash: 00b4c9ea0d4374232de5f40058276048b7b40bf9eed9b143a34899901d9c4ddc
 
 kind=TEACH
-title=Admitted instruction
-body=предположительность или возможность действия
+title=Read the possibility meaning of the supplied conditional forms
+body=The retained читал бы and читали бы are grouped under предположительность или возможность, supposition or possibility. The particle combines with the supplied verb form to present a conditional or hypothetical meaning; the past-shaped form alone should not make this a report of an actual completed reading event. An English translation using would depends on context.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -949,11 +941,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: fec9cf98785e14bf792aeb553352e8c6c27107e8486de4c1107c3a3423415cdf
+- Content hash: c248b931eeb1f0e592bc2d7c95ad73d9363e5e4b880cd7ff118034ca9cfee5a0
 
 kind=TEACH
-title=Admitted lines
-body=Read the admitted examples on this card.
+title=Keep the two functions separate
+body=Choose the imperative label for the two let examples and the supposition/possibility label for the supplied conditional example. This is recognition of the retained constructions. It does not demonstrate forming every imperative, deciding every use of a particle, or assigning one universal meaning to that particle outside these examples.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -963,6 +955,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u30-st-guided-particle-1`
+
+- Objectives: obj-u30-particle
+- Sessions: u30-s-particle
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 7c7d0d0d4c849e84fe8685e9947ad9e496ea5dd3814d9fff3f10a3270fd312f4
+
+kind=GUIDED
+title=Guided practice
+body=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
+dominantAction=Continue
+references=
+items=u30-g-particle-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u30-st-rem-particle
+
 ### STEP `u30-st-rem-particle`
 
 - Objectives: obj-u30-particle
@@ -971,15 +985,19 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 80d31e39d706790736f5d28372b523934b53ca4b71d76b1a1015e87585d5ced7
+- Content hash: 3a4cbe14153417aeeb1a01c0a7264b2dca42974389a9beefbfde79bcb81090da
 
 kind=REMEDIATE
-title=Remediation
-body=предположительность или возможность действия
+title=Review the complete retained-example contrast
+body=The supplied Пусть он читает expresses let him read, and Да будет мир! expresses let there be peace. The source classifies these as Повелительное наклонение, imperative mood, using particles. These examples express a request or wish rather than reporting that the action has already happened.
+
+The retained читал бы and читали бы are grouped under предположительность или возможность, supposition or possibility. The particle combines with the supplied verb form to present a conditional or hypothetical meaning; the past-shaped form alone should not make this a report of an actual completed reading event. An English translation using would depends on context.
+
+Choose the imperative label for the two let examples and the supposition/possibility label for the supplied conditional example. This is recognition of the retained constructions. It does not demonstrate forming every imperative, deciding every use of a particle, or assigning one universal meaning to that particle outside these examples.
 dominantAction=Continue
 references=
 items=
-examples=ex-u30-particle-0,ex-u30-particle-1
+examples=ex-u30-particle-0,ex-u30-particle-1,ex-u30-particle-2,ex-u30-particle-3
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -993,11 +1011,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: db2f50d5655281e95bce22a163db0c4851d580aa7410cbf7b042d15b59dd2e5e
+- Content hash: 2702fd0e1231ea8c44ee29611ddd416d13312bca5c9b915398fc9bfd1c9e0837
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
 dominantAction=Continue
 references=
 items=u30-i-particle-1,u30-i-particle-2
@@ -1015,12 +1033,12 @@ remediationStepId=u30-st-rem-particle
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5a6aec5e14dc9353fa37ed866889ac9f83d216a26effb9cd0e6a2395805a26ad
+- Content hash: 5cd8fc91ed4fc26c52e0c7d905e701045fc42c0e3d4f5f06f85edaf895b0b075
 
 title=Answer from the admitted capstone story
 estimatedMinutes=12
 objectives=obj-u30-capstone
-steps=u30-st-teach-capstone-1,u30-st-guided-capstone-1,u30-st-teach-capstone-2,u30-st-rem-capstone,u30-st-check-capstone
+steps=u30-st-teach-capstone-1,u30-st-teach-capstone-2,u30-st-guided-capstone-1,u30-st-rem-capstone,u30-st-check-capstone
 
 ### STEP `u30-st-teach-capstone-1`
 
@@ -1030,15 +1048,37 @@ steps=u30-st-teach-capstone-1,u30-st-guided-capstone-1,u30-st-teach-capstone-2,u
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 7140e570b9fcb8bb1ee8157c7eb4986e4fbd252e0ba6543eef6b6237d34820a1
+- Content hash: 759e9cd7a4ff6a054cedcbec0e48a1e7045557ee71d5b0a58b0639836e34fc9e
 
 kind=TEACH
-title=Admitted lines
-body=Read the admitted examples on this card. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+title=Follow the rescue before the second return
+body=In the retained story a woman reports that a two-year-old girl remains in the burning house. Bob, the dog sent by the firefighters, returns carrying the girl. The supplied нёс де́вочку belongs to that rescue, before the later discovery involving a doll. The mother is glad her daughter is alive; the passage does not describe the rescue itself as the comic discovery.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
 examples=ex-u30-capstone-0,ex-u30-capstone-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u30-st-teach-capstone-2`
+
+- Objectives: obj-u30-capstone
+- Sessions: u30-s-capstone
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: eed26ce7a2709050fb97e32e4bfb46df7a298be3de934b296e8d0496bf84b272
+
+kind=TEACH
+title=Connect the laughter to what the dog carries next
+body=After the rescue Bob goes back into the house and returns carrying a large doll, expressed by несла́ большу́ю ку́клу. When the people recognize it, все расхохота́лись describes their laughter. The female grammatical form refers to the dog in that part of the narration, not the rescued girl carrying the doll. Match the reaction to the doll discovery and keep the earlier rescue separate. These checks interpret the supplied story, not an unfamiliar passage.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1052,11 +1092,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 41cb3a96ebbfef81c071848ff7793d7b61959c0a1388de34d5eea3ef3131fd27
+- Content hash: e6be221e13f67840fa247d8653e428abaf090c80669fa7c3f8eeb667fa2adf97
 
 kind=GUIDED
 title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
+body=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
 dominantAction=Continue
 references=
 items=u30-g-capstone-0
@@ -1066,28 +1106,6 @@ bookDirection=
 companionDirection=
 remediationStepId=u30-st-rem-capstone
 
-### STEP `u30-st-teach-capstone-2`
-
-- Objectives: obj-u30-capstone
-- Sessions: u30-s-capstone
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: bb0164a6594d34cc8da02c156ebbf013c35acf7673374d706770699904cd48b7
-
-kind=TEACH
-title=Admitted instruction
-body=Че́рез пять мину́т он вы́бежал из до́ма и в зуба́х за рубашо́нку нёс де́вочку.
-dominantAction=Continue
-references=ref-u2630-attribution
-items=
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
 ### STEP `u30-st-rem-capstone`
 
 - Objectives: obj-u30-capstone
@@ -1096,11 +1114,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e4471fb6a67fa6f2d6e55bd3bb6efd5e5f08fd94262d6841d22ac7938bc8e3ea
+- Content hash: 209c63da4fc7554769367103440bdc650c2c0789d97fe5b715a68853c12641e1
 
 kind=REMEDIATE
-title=Remediation
-body=Че́рез пять мину́т он вы́бежал из до́ма и в зуба́х за рубашо́нку нёс де́вочку.
+title=Review the complete retained-example contrast
+body=In the retained story a woman reports that a two-year-old girl remains in the burning house. Bob, the dog sent by the firefighters, returns carrying the girl. The supplied нёс де́вочку belongs to that rescue, before the later discovery involving a doll. The mother is glad her daughter is alive; the passage does not describe the rescue itself as the comic discovery.
+
+After the rescue Bob goes back into the house and returns carrying a large doll, expressed by несла́ большу́ю ку́клу. When the people recognize it, все расхохота́лись describes their laughter. The female grammatical form refers to the dog in that part of the narration, not the rescued girl carrying the doll. Match the reaction to the doll discovery and keep the earlier rescue separate. These checks interpret the supplied story, not an unfamiliar passage.
 dominantAction=Continue
 references=
 items=
@@ -1118,11 +1138,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 821b7fff626d53aefd89ac7308d637a06e80633adb4f1689f9c051882c50dcfe
+- Content hash: bb98d81bdf67627d39d360850f84436af6972124090f05dd94b7f2a3bdadc18c
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
 dominantAction=Continue
 references=
 items=u30-i-capstone-1,u30-i-capstone-2
@@ -1199,12 +1219,12 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ae93accd9e756fcfb1a2a34dd7db927f7f215907ce3b371f55d9904f9f1fe926
+- Content hash: f9b83afceaaaed8b98355cddcc1a96d829dd41bb10d052c4635634f4d49fef09
 
 title=Use the governed dictionary entry
 estimatedMinutes=10
 objectives=obj-u30-dictionary,obj-u30-book
-steps=u30-dictionary-teach-1,u30-dictionary-guided,u30-dictionary-teach-2,u30-dictionary-remediate,u30-dictionary-check,u30-st-anki-direction,u30-st-binder-direction,u30-st-tutor-direction,u30-st-cumulative-direction
+steps=u30-dictionary-teach-1,u30-dictionary-teach-2,u30-dictionary-guided,u30-dictionary-remediate,u30-dictionary-check,u30-st-anki-direction,u30-st-binder-direction,u30-st-tutor-direction,u30-st-cumulative-direction
 
 ### STEP `u30-dictionary-teach-1`
 
@@ -1214,19 +1234,37 @@ steps=u30-dictionary-teach-1,u30-dictionary-guided,u30-dictionary-teach-2,u30-di
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 6a3390987104ebb0497d594b4debef2ad9e1367d459e23fc5708276a900e1366
+- Content hash: 8a2ce696a3c22e871214413c45a993f6f4f8de420f53b092802c53b71169ba94
 
 kind=TEACH
-title=Admitted instruction
-body=Headword стол
-Part of speech noun
-Forms стол, стола, столу, столом, столе
-Sense a piece of furniture with a flat top
-Example Книга лежит на столе.
+title=Use headword forms and sense together
+body=The retained entry for стол identifies a noun, gives стол, стола, столу, столом, столе as forms and states the sense a piece of furniture with a flat top. Thus столом and the noun form in на столе belong to the furniture entry. Книга лежит на столе. uses that furniture sense in its example. The form row helps locate the entry; it does not by itself state the sense without the sense field.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
 examples=ex-u30-dictionary-1,ex-u30-dictionary-2
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u30-dictionary-teach-2`
+
+- Objectives: obj-u30-dictionary, obj-u30-book
+- Sessions: u30-s-dictionary
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 0fdc79ee337a464ba32c34800b0cab353fa864f97eb82bba805dd9fefc301a86
+
+kind=TEACH
+title=A grammatical label alone cannot supply the sense
+body=The retained стоять entry is a verb with стоять, стою, стоит, стоял and the sense remaining upright on a base. Ваза стоит на столе. illustrates that standing action. Use the sense field to distinguish стоит from the furniture noun. The label сущ. identifies a part of speech; it does not state the furniture sense. When a check shows only a label or a row of forms, select the stated information limit rather than guessing that it contains a definition. These checks use two supplied entries, not an unrestricted external dictionary or a claim of completed book work.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1240,11 +1278,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 4d1c59b8c6e0c5cfe5e214fc7a0871863e5d6b23050190bfef000bc35cc0c290
+- Content hash: 22c57ef1b1246e20fe651151b06d6615090ab49b30c2eb7c17d22b32dc7ff9d7
 
 kind=GUIDED
 title=Guided practice
-body=Read the governed entry. Match an inflected form or an example to the sense in that same entry.
+body=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=u30-g-dictionary-1
@@ -1254,32 +1292,6 @@ bookDirection=
 companionDirection=
 remediationStepId=u30-dictionary-remediate
 
-### STEP `u30-dictionary-teach-2`
-
-- Objectives: obj-u30-dictionary, obj-u30-book
-- Sessions: u30-s-dictionary
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 59e4255a3563ccd721a3aac355a2d0c0c373269845d781f816a6e60550ef148d
-
-kind=TEACH
-title=Admitted instruction
-body=Headword стоять
-Part of speech verb
-Forms стоять, стою, стоит, стоял
-Sense remaining upright on a base
-Example Ваза стоит на столе.
-dominantAction=Continue
-references=ref-u2630-attribution
-items=
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
 ### STEP `u30-dictionary-remediate`
 
 - Objectives: obj-u30-dictionary, obj-u30-book
@@ -1288,15 +1300,17 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: aeb7f9aa5d5021664ef7956411701b785e40e2e0aa7eff822d2bd116015ea857
+- Content hash: 2b98a400dcaedc7459013103e24b7a8f9fc97e1f5c8f7b637e1b0d2371fcccb3
 
 kind=REMEDIATE
-title=Remediation
-body=Return to the sense that the same entry gives for the inflected form.
+title=Review the complete retained-example contrast
+body=The retained entry for стол identifies a noun, gives стол, стола, столу, столом, столе as forms and states the sense a piece of furniture with a flat top. Thus столом and the noun form in на столе belong to the furniture entry. Книга лежит на столе. uses that furniture sense in its example. The form row helps locate the entry; it does not by itself state the sense without the sense field.
+
+The retained стоять entry is a verb with стоять, стою, стоит, стоял and the sense remaining upright on a base. Ваза стоит на столе. illustrates that standing action. Use the sense field to distinguish стоит from the furniture noun. The label сущ. identifies a part of speech; it does not state the furniture sense. When a check shows only a label or a row of forms, select the stated information limit rather than guessing that it contains a definition. These checks use two supplied entries, not an unrestricted external dictionary or a claim of completed book work.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
-examples=
+examples=ex-u30-dictionary-1,ex-u30-dictionary-2
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1310,11 +1324,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 22062ce88c560befdc87a87e7c40600d6a544d2fbce04caf80d74ca9950e10ec
+- Content hash: 4c2522a211a08bf55fba86fc892c20721fe431f07e618f169ddf03702e549a5e
 
 kind=CHECK
 title=Independent checks
-body=The cue alone does not state the sense. A part-of-speech label or a row of forms does not state it either.
+body=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=u30-i-dictionary-1,u30-i-dictionary-2,u30-i-dictionary-3,u30-i-dictionary-4,u30-i-dictionary-5
@@ -2839,6 +2853,2330 @@ attribution=Russian Companion content-audit research synthesis, content-audit-20
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
 sourceHash=8cbdd45e7fb070fbf5e42c5458556da7ac5fbb37454d9213aa932d0125d6186c
 contentHash=0afff52ca49d9adc7b3fb39de24b16290d6908faa0a72a4209008f32c863dbbf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-abbrev-examples-0`
+
+- Objectives: obj-u30-abbrev-examples
+- Sessions: u30-s-orient, u30-s-abbrev-examples
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7dfc05f4e13356dbfec1fd6efbe3ef165157a761def50cbd852f7321897486f0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-abbrev-examples:u30-s-abbrev-examples-0
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Recognize the two supplied country abbreviations
+shippedText=Recognize the two supplied country abbreviations
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ae7a7fce8d7d234e75ed1eedffefa5cc1f85f699291f0f8c005c47367bb7788e
+contentHash=10321334db629b50197e590ae4a6bf29fa96226352a46b197b4dec0fccabd292
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-abbrev-examples-1`
+
+- Objectives: obj-u30-abbrev-examples
+- Sessions: u30-s-orient, u30-s-abbrev-examples
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fe2203f1ec2d3182ea1b1203e062e553da76df985cc3114343985c9650d5d1bf
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-abbrev-examples:u30-s-abbrev-examples-1
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+The retained СССР corresponds to USSR and США to USA. Choose the English country abbreviation matching the Russian form. These are two admitted examples, not a complete list or a productive rule for pronouncing every Russian abbreviation.
+shippedText=The retained СССР corresponds to USSR and США to USA. Choose the English country abbreviation matching the Russian form. These are two admitted examples, not a complete list or a productive rule for pronouncing every Russian abbreviation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=15e4c1954b15c7f3df7f1623136e90d91d07765673aff53dc5ccc3f79f5330f8
+contentHash=3ae011883109cfccbf8277e16acbd75fef46113ac3048a908d7d6c451c2ca5fa
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-abbrev-examples-2`
+
+- Objectives: obj-u30-abbrev-examples
+- Sessions: u30-s-orient, u30-s-abbrev-examples
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ae2060c7387663b244202e0e2b50bc3e3a9801ed0a5582b0d48214313d90fa9e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-abbrev-examples:u30-s-abbrev-examples-2
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+A heading describes the group rather than one country
+shippedText=A heading describes the group rather than one country
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5c84560ed50a15e2f4f8ae981f62d3e8033b41964fab1ee7688f99f47eaeabb5
+contentHash=1de594c577096daed9e743754265da61e6366f7851bb87512fcc377d4b6bd8b2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-abbrev-examples-3`
+
+- Objectives: obj-u30-abbrev-examples
+- Sessions: u30-s-orient, u30-s-abbrev-examples
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 74ee469d96099966cc08332fd5b6ef14c1cc33e89e60d1ca5f0c9180f3c7d473
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-abbrev-examples:u30-s-abbrev-examples-3
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Abbreviations is the category heading for the supplied examples, not the English gloss of СССР or США. One retained check asks specifically for that heading; its answer is Abbreviations rather than USSR or USA. Distinguish a question about category from a question about the meaning of an individual example.
+shippedText=Abbreviations is the category heading for the supplied examples, not the English gloss of СССР or США. One retained check asks specifically for that heading; its answer is Abbreviations rather than USSR or USA. Distinguish a question about category from a question about the meaning of an individual example.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6fd8745349717c9edf43ce60ab566e03a9e98e7786d6e5e2bdeea5006a7ac93a
+contentHash=017951f48f92325821a1ef04e9b2b20f97c9fa5814724debfc19c506f4f96d11
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-abbrev-examples-4`
+
+- Objectives: obj-u30-abbrev-examples
+- Sessions: u30-s-orient, u30-s-abbrev-examples
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9426aa5846295525e7aaa1981bfcaab0f02e14d14fab25df67e72f4eb22f963d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-abbrev-examples:u30-s-abbrev-examples-4
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Guided practice
+shippedText=Guided practice
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4160ea87516a83a760df100743acce53719ddbcb5cc4a48d9e68e2aea50b63c2
+contentHash=cb1d4a3d9d5db425da3797c7a997db3588ec122a60c4d645ea31cd849f76ab3c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-abbrev-examples-5`
+
+- Objectives: obj-u30-abbrev-examples
+- Sessions: u30-s-orient, u30-s-abbrev-examples
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7e1cbd50e097e09e175675050c83d08ffcc0008b85e162d9727ac3a97e2f2aa2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-abbrev-examples:u30-s-abbrev-examples-5
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
+shippedText=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=21671565b10a63c166202301facca02ed7700622484d684402111750f6b4d54b
+contentHash=7e831781418e211c98b1c0f63a387cb5d621e366dba903e0c33492a919b4c8c1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-abbrev-examples-6`
+
+- Objectives: obj-u30-abbrev-examples
+- Sessions: u30-s-orient, u30-s-abbrev-examples
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f35dd93684bdd9a8848ebe135ccac10344bcda9c8cef238d51bad9b2a6f9766a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-abbrev-examples:u30-s-abbrev-examples-6
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Review the complete retained-example contrast
+shippedText=Review the complete retained-example contrast
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=eea2804365c0017824673de24130c31cae967fd2997171b57ca6cf485adc2a0b
+contentHash=ffc1d4634ce62d9bfa012f510fdd024d80750001611aeef52e4301f1706fc80b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-abbrev-examples-7`
+
+- Objectives: obj-u30-abbrev-examples
+- Sessions: u30-s-orient, u30-s-abbrev-examples
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 12b5575630aeffba4894d37abc1d995182ecdd8461ab4473818de6f7fc33a4d6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-abbrev-examples:u30-s-abbrev-examples-7
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+The retained СССР corresponds to USSR and США to USA. Choose the English country abbreviation matching the Russian form. These are two admitted examples, not a complete list or a productive rule for pronouncing every Russian abbreviation.
+
+Abbreviations is the category heading for the supplied examples, not the English gloss of СССР or США. One retained check asks specifically for that heading; its answer is Abbreviations rather than USSR or USA. Distinguish a question about category from a question about the meaning of an individual example.
+shippedText=The retained СССР corresponds to USSR and США to USA. Choose the English country abbreviation matching the Russian form. These are two admitted examples, not a complete list or a productive rule for pronouncing every Russian abbreviation.
+
+Abbreviations is the category heading for the supplied examples, not the English gloss of СССР or США. One retained check asks specifically for that heading; its answer is Abbreviations rather than USSR or USA. Distinguish a question about category from a question about the meaning of an individual example.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c70f40ca97d354da0728caabc2ffc3689cd8722831261ed190369f3bb283393c
+contentHash=86679c57f560204d9d091e09af85cd1ddc3ecd9732673db12c958bc2bbb82225
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-abbrev-examples-8`
+
+- Objectives: obj-u30-abbrev-examples
+- Sessions: u30-s-orient, u30-s-abbrev-examples
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5e54445ac2c4f18de59e832122599d3dff88b8da68650783b2ac76bad8ed8b4d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-abbrev-examples:u30-s-abbrev-examples-8
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Independent checks
+shippedText=Independent checks
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=423279656881ce3bf77596511f15da61c970fa23e3e5b2263c8ee890e1037df5
+contentHash=012ab8f74509f135e510ad3d930ff2e1b92c944e2d060f0b35ddeee63616b486
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-abbreviation-0`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: u30-s-orient, u30-s-abbreviation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 24734de86d0fd4a4850728cc9b532b9dde3d8b6e866bb9e495337af92aedfad6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-abbreviation:u30-s-abbreviation-0
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Read the retained category as a source grouping
+shippedText=Read the retained category as a source grouping
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d3b92635866fd74f8ba8a34a648ac9194cda986c837f60d4c180abd8952614a9
+contentHash=a75761f9758a12c93f419f3f7d335b87a14673a7a1c9b6e6c0404b5edfc8e8bc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-abbreviation-1`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: u30-s-orient, u30-s-abbreviation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ea2e05a18936e9cbc55fb99d7f4768e6a9b3516fbea33ae1355835ecd2f6805d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-abbreviation:u30-s-abbreviation-1
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+The source groups letter-name abbreviations and sound abbreviations ending in a vowel together under буквенные аббревиатуры и звуковые аббревиатуры на гласную. Its examples include СНГ and ЭВМ. This combined label does not say that every member is pronounced as a single word. The passage discusses their treatment as indeclinable forms.
+shippedText=The source groups letter-name abbreviations and sound abbreviations ending in a vowel together under буквенные аббревиатуры и звуковые аббревиатуры на гласную. Its examples include СНГ and ЭВМ. This combined label does not say that every member is pronounced as a single word. The passage discusses their treatment as indeclinable forms.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=88bbf242b3603f4c3a9045b0020b3f35d581a9f70d84b853c24544489e08adca
+contentHash=16ab103e675c13bf57ede4aee7e667b9c5713c5c91b6f0d6dd17bb94a062ee11
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-abbreviation-10`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: u30-s-orient, u30-s-abbreviation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a14e7f5266fffa8a9044e0039e5bb835eb2c6f3dfa457d7fed541cabd6fd5b66
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-abbreviation:u30-s-abbreviation-10
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Review the complete retained-example contrast
+shippedText=Review the complete retained-example contrast
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=eea2804365c0017824673de24130c31cae967fd2997171b57ca6cf485adc2a0b
+contentHash=ffc1d4634ce62d9bfa012f510fdd024d80750001611aeef52e4301f1706fc80b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-abbreviation-11`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: u30-s-orient, u30-s-abbreviation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e38f17346c6e9604add6e2d2b9fb7d14902884c72f11dd714f204bebe0119d3b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-abbreviation:u30-s-abbreviation-11
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+The source groups letter-name abbreviations and sound abbreviations ending in a vowel together under буквенные аббревиатуры и звуковые аббревиатуры на гласную. Its examples include СНГ and ЭВМ. This combined label does not say that every member is pronounced as a single word. The passage discusses their treatment as indeclinable forms.
+
+The retained ГАИ and гороно are also included under the combined label in this passage. Select that supplied grouping when asked about гороно here. The separate phrase сложносокращённые слова names another group in the passage; do not replace the retained source grouping simply because a form is shortened. These examples do not establish an exhaustive taxonomy of all shortened words.
+
+The supplied в МИД and в МИДе illustrate the source group звуковые аббревиатуры на согласную, sound abbreviations ending in a consonant. One retains the abbreviation unchanged and the other has a case ending. The source permits declined and undeclined use here. Its category contrasts with the combined letter-name/vowel-ending grouping.
+
+The category названия населённых пунктов refers to place names and is separate from the abbreviation groups in this exercise. These checks classify retained examples and the source explicitly allows both treatments for the consonant-ending example. They do not justify declining every consonant-ending abbreviation or predicting an unlisted abbreviation from spelling alone.
+shippedText=The source groups letter-name abbreviations and sound abbreviations ending in a vowel together under буквенные аббревиатуры и звуковые аббревиатуры на гласную. Its examples include СНГ and ЭВМ. This combined label does not say that every member is pronounced as a single word. The passage discusses their treatment as indeclinable forms.
+
+The retained ГАИ and гороно are also included under the combined label in this passage. Select that supplied grouping when asked about гороно here. The separate phrase сложносокращённые слова names another group in the passage; do not replace the retained source grouping simply because a form is shortened. These examples do not establish an exhaustive taxonomy of all shortened words.
+
+The supplied в МИД and в МИДе illustrate the source group звуковые аббревиатуры на согласную, sound abbreviations ending in a consonant. One retains the abbreviation unchanged and the other has a case ending. The source permits declined and undeclined use here. Its category contrasts with the combined letter-name/vowel-ending grouping.
+
+The category названия населённых пунктов refers to place names and is separate from the abbreviation groups in this exercise. These checks classify retained examples and the source explicitly allows both treatments for the consonant-ending example. They do not justify declining every consonant-ending abbreviation or predicting an unlisted abbreviation from spelling alone.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=754cbffe14f1df357c697926593f8b7c57e3d932941daa546485e05961fbb774
+contentHash=40ec5ebfa06cc6bb290eace795717d73cc0e489804ccc14fdc6ad2a9ac448676
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-abbreviation-12`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: u30-s-orient, u30-s-abbreviation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fa0da8346a5381ab84ede35146146dd5254b7917e030a73fefcbee8a05e13fb4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-abbreviation:u30-s-abbreviation-12
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Independent checks
+shippedText=Independent checks
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=423279656881ce3bf77596511f15da61c970fa23e3e5b2263c8ee890e1037df5
+contentHash=012ab8f74509f135e510ad3d930ff2e1b92c944e2d060f0b35ddeee63616b486
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-abbreviation-2`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: u30-s-orient, u30-s-abbreviation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f074586d2c0721c21cbfb8d9b2b1fee99ded0ac1d3efd3e44354c836c614cdeb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-abbreviation:u30-s-abbreviation-2
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Keep the supplied vowel-ending examples in that group
+shippedText=Keep the supplied vowel-ending examples in that group
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9d775dbe941656ac84d0672308f929de198d557535117bd0289d8b3bb795a892
+contentHash=1fd56e09bf532b2049d046c9941f88e5824e239734b9d375d90b660726d6014f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-abbreviation-3`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: u30-s-orient, u30-s-abbreviation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f5866749c2772eb8c080cd71f368be3feb0c4f481e891987f139228ad47a9b1f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-abbreviation:u30-s-abbreviation-3
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+The retained ГАИ and гороно are also included under the combined label in this passage. Select that supplied grouping when asked about гороно here. The separate phrase сложносокращённые слова names another group in the passage; do not replace the retained source grouping simply because a form is shortened. These examples do not establish an exhaustive taxonomy of all shortened words.
+shippedText=The retained ГАИ and гороно are also included under the combined label in this passage. Select that supplied grouping when asked about гороно here. The separate phrase сложносокращённые слова names another group in the passage; do not replace the retained source grouping simply because a form is shortened. These examples do not establish an exhaustive taxonomy of all shortened words.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=88f5a158f963bc62542561e0f39ac7f27e741c5cde067e22bde1370f26d90fe7
+contentHash=c9913bf977db5fbd79b091553f89732b1f9c58247ecc058be2771000019606e7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-abbreviation-4`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: u30-s-orient, u30-s-abbreviation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c459e9b54cf4f7eb35b8df48c13c6658a398e01a9e5dcefcc7c656d09da15e05
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-abbreviation:u30-s-abbreviation-4
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Compare the consonant-ending abbreviation and its two uses
+shippedText=Compare the consonant-ending abbreviation and its two uses
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3795521d451590fc9419eb57d84c8bb6503cf8ead653025662a126e6035d5419
+contentHash=7caa9432d92939a5c2fb300919d628b7504ed15405809b28045b1eb1157d1036
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-abbreviation-5`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: u30-s-orient, u30-s-abbreviation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 760816eca04a20ec017d695ba7e9e4ec5db099f35713e3bba93e62a25d065dff
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-abbreviation:u30-s-abbreviation-5
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+The supplied в МИД and в МИДе illustrate the source group звуковые аббревиатуры на согласную, sound abbreviations ending in a consonant. One retains the abbreviation unchanged and the other has a case ending. The source permits declined and undeclined use here. Its category contrasts with the combined letter-name/vowel-ending grouping.
+shippedText=The supplied в МИД and в МИДе illustrate the source group звуковые аббревиатуры на согласную, sound abbreviations ending in a consonant. One retains the abbreviation unchanged and the other has a case ending. The source permits declined and undeclined use here. Its category contrasts with the combined letter-name/vowel-ending grouping.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=62ed8d2f9acc6c08f8a54be719a9f8e115112cbe30c2952030c1553e25aad456
+contentHash=b86d60b7af51a5829e68baca68ab29f2801c062dc218f23338f55d34653aa2d4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-abbreviation-6`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: u30-s-orient, u30-s-abbreviation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: feb316bcacdc1ba4dbc25172fb1dc0b98c0e8271abb23b1a3b63bd80d1787d98
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-abbreviation:u30-s-abbreviation-6
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Do not infer a universal ending rule from this list
+shippedText=Do not infer a universal ending rule from this list
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6839e620da3bb932d3e690bf338c87d1ad50a32a143ca00900c60e8a27f15c00
+contentHash=fbcbe72819d24ab4522050be49f237ee40aecd9f7659c4ad831f343a938b2a14
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-abbreviation-7`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: u30-s-orient, u30-s-abbreviation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ff132852bcc888dda3f418facab39c132699b90fefe0008a04bd7bd8a66cec46
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-abbreviation:u30-s-abbreviation-7
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+The category названия населённых пунктов refers to place names and is separate from the abbreviation groups in this exercise. These checks classify retained examples and the source explicitly allows both treatments for the consonant-ending example. They do not justify declining every consonant-ending abbreviation or predicting an unlisted abbreviation from spelling alone.
+shippedText=The category названия населённых пунктов refers to place names and is separate from the abbreviation groups in this exercise. These checks classify retained examples and the source explicitly allows both treatments for the consonant-ending example. They do not justify declining every consonant-ending abbreviation or predicting an unlisted abbreviation from spelling alone.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8c527856b0986d118e4ad4a3fc66265b7ad796755de68157d4e97da835819e6f
+contentHash=9b2cc751c5459c7e2de0599ee2bd759ea87f881d1d9015aa170f5bab0c12f648
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-abbreviation-8`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: u30-s-orient, u30-s-abbreviation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 278d4a29c95435c6a19f8a0dcab8ffaa989411d244250da27a5fe0f1e04befa3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-abbreviation:u30-s-abbreviation-8
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Guided practice
+shippedText=Guided practice
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4160ea87516a83a760df100743acce53719ddbcb5cc4a48d9e68e2aea50b63c2
+contentHash=cb1d4a3d9d5db425da3797c7a997db3588ec122a60c4d645ea31cd849f76ab3c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-abbreviation-9`
+
+- Objectives: obj-u30-abbreviation
+- Sessions: u30-s-orient, u30-s-abbreviation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2d60942be88823bc3aa296f6fe80a80b272c00a7552e2ec7a8096eed54e6e942
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-abbreviation:u30-s-abbreviation-9
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
+shippedText=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=21671565b10a63c166202301facca02ed7700622484d684402111750f6b4d54b
+contentHash=7e831781418e211c98b1c0f63a387cb5d621e366dba903e0c33492a919b4c8c1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-address-marks-0`
+
+- Objectives: obj-u30-address-marks
+- Sessions: u30-s-orient, u30-s-address-marks
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dc0e47d355e2fdd7d59f18cd4d6c1b91dcd38005158079d50967034062a09021
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-address-marks:u30-s-address-marks-0
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Identify the city mark in its line
+shippedText=Identify the city mark in its line
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2f5574c9efdb91bb7d2cdf0f44e0fdbaae7f7877954ef4610553421b19f8d915
+contentHash=2020f2d61f48e418fa9485d48f5614e370e8ff80f282471be4e0b1902f0e897f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-address-marks-1`
+
+- Objectives: obj-u30-address-marks
+- Sessions: u30-s-orient, u30-s-address-marks
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 12e938f4d9323eb5266989e124c2b12ed202d1283d098b662b8cd457c4362866
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-address-marks:u30-s-address-marks-1
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+In the supplied 115114 г. Москва, the mark identifies the city. The digits are the postal code and the following name the city; the city mark does not name the street or building. Interpret the mark within the address line rather than treating every number as a building number.
+shippedText=In the supplied 115114 г. Москва, the mark identifies the city. The digits are the postal code and the following name the city; the city mark does not name the street or building. Interpret the mark within the address line rather than treating every number as a building number.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5d06d8fc25a1c326c0a010d2d01748c356e7ff8c15eb51889abbbf00dddf9da8
+contentHash=2d516176b2f3bf2f9efd4ca5e18d88fae515d40948954b304cef784efe220ad6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-address-marks-10`
+
+- Objectives: obj-u30-address-marks
+- Sessions: u30-s-orient, u30-s-address-marks
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d823b7c4efc1ae80b9d51bb74e8e884fd24ee241394201e1f15256bb237a86ef
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-address-marks:u30-s-address-marks-10
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Independent checks
+shippedText=Independent checks
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=423279656881ce3bf77596511f15da61c970fa23e3e5b2263c8ee890e1037df5
+contentHash=012ab8f74509f135e510ad3d930ff2e1b92c944e2d060f0b35ddeee63616b486
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-address-marks-2`
+
+- Objectives: obj-u30-address-marks
+- Sessions: u30-s-orient, u30-s-address-marks
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 44c55fa54e401b10a3f9181a7a93c20fc56081813ba25d5ace879c51edeeace2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-address-marks:u30-s-address-marks-2
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Read the first mark without ignoring the later marks
+shippedText=Read the first mark without ignoring the later marks
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=17f3bd25cc4d97137c6c8e16760c52d0cfb5f53a8b1e12bb7e2c5723ce3dc103
+contentHash=750624e05783384f78a6ed3b9ea5a11de0b6385b6d8c3862ced37e47afaecd90
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-address-marks-3`
+
+- Objectives: obj-u30-address-marks
+- Sessions: u30-s-orient, u30-s-address-marks
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 16c567eba47d4e237d148edd6b05433d83350e1a34293ead067a3cad38957026
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-address-marks:u30-s-address-marks-3
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+In ул. Петрова, д. 14, кв. 15, the first mark identifies the street. The line then gives a building and an apartment. A question about the first mark therefore selects street rather than city or apartment. The individual address fields have different roles even when they share one printed line.
+shippedText=In ул. Петрова, д. 14, кв. 15, the first mark identifies the street. The line then gives a building and an apartment. A question about the first mark therefore selects street rather than city or apartment. The individual address fields have different roles even when they share one printed line.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7be1c86dddd30fa0e9e7d9ff5cc50b9395de77d8bf5cb2db333422c0621a3a39
+contentHash=356e895c22cfe934d8fcead8748feff94e6a78369a19661c0e0046a65652ff47
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-address-marks-4`
+
+- Objectives: obj-u30-address-marks
+- Sessions: u30-s-orient, u30-s-address-marks
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 15316072003770141d3fedb0ad2d81cee7c28f5adb05e2b9df43d905bbb80f8e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-address-marks:u30-s-address-marks-4
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Distinguish building from the other address fields
+shippedText=Distinguish building from the other address fields
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4bb77984fe8b3e70c2e575446197b5897c0e44468ae4086485a1d2bc15e16e87
+contentHash=ca54de63f7f84d8cbfe3b81e5a67aa9330d63cc9a80967890a7ac5dfcfaed6a3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-address-marks-5`
+
+- Objectives: obj-u30-address-marks
+- Sessions: u30-s-orient, u30-s-address-marks
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: da840a96455c18947876a1f7ce8d3856cf64632d71a9762ef2f0412002823ce5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-address-marks:u30-s-address-marks-5
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+The retained д. is glossed building. In the longer supplied line it precedes 14; the apartment field is separate. Choose building for this supplied mark rather than city or street. This small set checks recognition of retained marks, not the production of a complete unfamiliar postal address or acceptance of an owned-edition mapping.
+shippedText=The retained д. is glossed building. In the longer supplied line it precedes 14; the apartment field is separate. Choose building for this supplied mark rather than city or street. This small set checks recognition of retained marks, not the production of a complete unfamiliar postal address or acceptance of an owned-edition mapping.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=faabec5ba8b161adc3577f410bde7975ac786962bd37cb55acadb8fd1e01cae3
+contentHash=fae02b64be959cf67e9b6b3071f493a21e4dffeb5a079e16e3907d45e6dc02ce
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-address-marks-6`
+
+- Objectives: obj-u30-address-marks
+- Sessions: u30-s-orient, u30-s-address-marks
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 87eb5f07e2432629cb2b36300f8dafc243cfcae53ff9f1d59ff6a23c226fb452
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-address-marks:u30-s-address-marks-6
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Guided practice
+shippedText=Guided practice
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4160ea87516a83a760df100743acce53719ddbcb5cc4a48d9e68e2aea50b63c2
+contentHash=cb1d4a3d9d5db425da3797c7a997db3588ec122a60c4d645ea31cd849f76ab3c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-address-marks-7`
+
+- Objectives: obj-u30-address-marks
+- Sessions: u30-s-orient, u30-s-address-marks
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 924a783fbb7efcc396e249d6c97cc6c4494a50631885443b4cbba6d70e006058
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-address-marks:u30-s-address-marks-7
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
+shippedText=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=21671565b10a63c166202301facca02ed7700622484d684402111750f6b4d54b
+contentHash=7e831781418e211c98b1c0f63a387cb5d621e366dba903e0c33492a919b4c8c1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-address-marks-8`
+
+- Objectives: obj-u30-address-marks
+- Sessions: u30-s-orient, u30-s-address-marks
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 915b91c516f7d3048abbf030ecc6db4fd67bffedae2ae68251c6a938316bc183
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-address-marks:u30-s-address-marks-8
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Review the complete retained-example contrast
+shippedText=Review the complete retained-example contrast
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=eea2804365c0017824673de24130c31cae967fd2997171b57ca6cf485adc2a0b
+contentHash=ffc1d4634ce62d9bfa012f510fdd024d80750001611aeef52e4301f1706fc80b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-address-marks-9`
+
+- Objectives: obj-u30-address-marks
+- Sessions: u30-s-orient, u30-s-address-marks
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9a9e1f95bb91b501fd69a494f929a83ce6117cced6964cffa6feaba30077d706
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-address-marks:u30-s-address-marks-9
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+In the supplied 115114 г. Москва, the mark identifies the city. The digits are the postal code and the following name the city; the city mark does not name the street or building. Interpret the mark within the address line rather than treating every number as a building number.
+
+In ул. Петрова, д. 14, кв. 15, the first mark identifies the street. The line then gives a building and an apartment. A question about the first mark therefore selects street rather than city or apartment. The individual address fields have different roles even when they share one printed line.
+
+The retained д. is glossed building. In the longer supplied line it precedes 14; the apartment field is separate. Choose building for this supplied mark rather than city or street. This small set checks recognition of retained marks, not the production of a complete unfamiliar postal address or acceptance of an owned-edition mapping.
+shippedText=In the supplied 115114 г. Москва, the mark identifies the city. The digits are the postal code and the following name the city; the city mark does not name the street or building. Interpret the mark within the address line rather than treating every number as a building number.
+
+In ул. Петрова, д. 14, кв. 15, the first mark identifies the street. The line then gives a building and an apartment. A question about the first mark therefore selects street rather than city or apartment. The individual address fields have different roles even when they share one printed line.
+
+The retained д. is glossed building. In the longer supplied line it precedes 14; the apartment field is separate. Choose building for this supplied mark rather than city or street. This small set checks recognition of retained marks, not the production of a complete unfamiliar postal address or acceptance of an owned-edition mapping.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3c32ef9b8b44ec487773e825ce8a2ff20b66f56570a4ed387e65f6ce326d24ae
+contentHash=b72ef8a1b88aa60075147392f3101f2f8806d080ad6a6a3dd3dcf12632135ee9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-capstone-0`
+
+- Objectives: obj-u30-capstone
+- Sessions: u30-s-orient, u30-s-capstone
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5e34492224f11d53109b4b3919386cdec99c415a41318878b8f03416068eb5a0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-capstone:u30-s-capstone-0
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Follow the rescue before the second return
+shippedText=Follow the rescue before the second return
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2f41d050b977ee93df05f3f33815235bf7569ab53b8859398d27f7b5fe0a6b03
+contentHash=efec762856b6269dd18752739f3c56c03bf6981da61b476f6dce1363f11cb755
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-capstone-1`
+
+- Objectives: obj-u30-capstone
+- Sessions: u30-s-orient, u30-s-capstone
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0ad54efd790ba388b33157e2fb5bdc741ca9a59e86d32d6eef17f7e2f5259474
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-capstone:u30-s-capstone-1
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+In the retained story a woman reports that a two-year-old girl remains in the burning house. Bob, the dog sent by the firefighters, returns carrying the girl. The supplied нёс де́вочку belongs to that rescue, before the later discovery involving a doll. The mother is glad her daughter is alive; the passage does not describe the rescue itself as the comic discovery.
+shippedText=In the retained story a woman reports that a two-year-old girl remains in the burning house. Bob, the dog sent by the firefighters, returns carrying the girl. The supplied нёс де́вочку belongs to that rescue, before the later discovery involving a doll. The mother is glad her daughter is alive; the passage does not describe the rescue itself as the comic discovery.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7f96375c06f200d99888637816f19dfe78b34d958bcfb4dd867d51d0dfcd78a8
+contentHash=8c5468b0c507e29029463ccb9c441ee3156fb54f64f7f751f7b122c8bb1479e1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-capstone-2`
+
+- Objectives: obj-u30-capstone
+- Sessions: u30-s-orient, u30-s-capstone
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5a42a6b88e152b367ae71ed8289f0280ec634e8a8e8dd9144cd564dd2b9ebb3b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-capstone:u30-s-capstone-2
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Connect the laughter to what the dog carries next
+shippedText=Connect the laughter to what the dog carries next
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0b12ef231ae1df7257805f52293ed51be530d0666e16c41f5f1691ecf4b04716
+contentHash=bf0e38d934d7ee4d624675ce9243718972976aee1c423fc7dd0a415ee3f6f07c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-capstone-3`
+
+- Objectives: obj-u30-capstone
+- Sessions: u30-s-orient, u30-s-capstone
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5f4b94e48cb2f1b82590c5f8aa20deee5c3da92374cf75d93e9b60b29e146fa1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-capstone:u30-s-capstone-3
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+After the rescue Bob goes back into the house and returns carrying a large doll, expressed by несла́ большу́ю ку́клу. When the people recognize it, все расхохота́лись describes their laughter. The female grammatical form refers to the dog in that part of the narration, not the rescued girl carrying the doll. Match the reaction to the doll discovery and keep the earlier rescue separate. These checks interpret the supplied story, not an unfamiliar passage.
+shippedText=After the rescue Bob goes back into the house and returns carrying a large doll, expressed by несла́ большу́ю ку́клу. When the people recognize it, все расхохота́лись describes their laughter. The female grammatical form refers to the dog in that part of the narration, not the rescued girl carrying the doll. Match the reaction to the doll discovery and keep the earlier rescue separate. These checks interpret the supplied story, not an unfamiliar passage.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f39678870dbaec5501b31d1c4096bda12c073ef88ba1fe2fab12458564cd2c9e
+contentHash=465ebbe1597b447558a3d088bd0332de767af3164ff2351a5084264455f46f96
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-capstone-4`
+
+- Objectives: obj-u30-capstone
+- Sessions: u30-s-orient, u30-s-capstone
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 60f97b40d1e078378ceffe42c1a4bd962d2c6eafb7b201a24878ee080780181f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-capstone:u30-s-capstone-4
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Guided practice
+shippedText=Guided practice
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4160ea87516a83a760df100743acce53719ddbcb5cc4a48d9e68e2aea50b63c2
+contentHash=cb1d4a3d9d5db425da3797c7a997db3588ec122a60c4d645ea31cd849f76ab3c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-capstone-5`
+
+- Objectives: obj-u30-capstone
+- Sessions: u30-s-orient, u30-s-capstone
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cb10a9c2452f1a2ac906d04b9c5135f3d87354fe731f2405ddd4d118e36590ed
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-capstone:u30-s-capstone-5
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
+shippedText=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=21671565b10a63c166202301facca02ed7700622484d684402111750f6b4d54b
+contentHash=7e831781418e211c98b1c0f63a387cb5d621e366dba903e0c33492a919b4c8c1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-capstone-6`
+
+- Objectives: obj-u30-capstone
+- Sessions: u30-s-orient, u30-s-capstone
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6985e95e72180dd708ab795c63bfe5a9c64719141a5c44723fc261b93fec9c6b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-capstone:u30-s-capstone-6
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Review the complete retained-example contrast
+shippedText=Review the complete retained-example contrast
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=eea2804365c0017824673de24130c31cae967fd2997171b57ca6cf485adc2a0b
+contentHash=ffc1d4634ce62d9bfa012f510fdd024d80750001611aeef52e4301f1706fc80b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-capstone-7`
+
+- Objectives: obj-u30-capstone
+- Sessions: u30-s-orient, u30-s-capstone
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 83444a8053117a075e67936408cc6051a749f8e70a11174cf94fdf4343d9409b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-capstone:u30-s-capstone-7
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+In the retained story a woman reports that a two-year-old girl remains in the burning house. Bob, the dog sent by the firefighters, returns carrying the girl. The supplied нёс де́вочку belongs to that rescue, before the later discovery involving a doll. The mother is glad her daughter is alive; the passage does not describe the rescue itself as the comic discovery.
+
+After the rescue Bob goes back into the house and returns carrying a large doll, expressed by несла́ большу́ю ку́клу. When the people recognize it, все расхохота́лись describes their laughter. The female grammatical form refers to the dog in that part of the narration, not the rescued girl carrying the doll. Match the reaction to the doll discovery and keep the earlier rescue separate. These checks interpret the supplied story, not an unfamiliar passage.
+shippedText=In the retained story a woman reports that a two-year-old girl remains in the burning house. Bob, the dog sent by the firefighters, returns carrying the girl. The supplied нёс де́вочку belongs to that rescue, before the later discovery involving a doll. The mother is glad her daughter is alive; the passage does not describe the rescue itself as the comic discovery.
+
+After the rescue Bob goes back into the house and returns carrying a large doll, expressed by несла́ большу́ю ку́клу. When the people recognize it, все расхохота́лись describes their laughter. The female grammatical form refers to the dog in that part of the narration, not the rescued girl carrying the doll. Match the reaction to the doll discovery and keep the earlier rescue separate. These checks interpret the supplied story, not an unfamiliar passage.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f7d21bd32b4c76ccff6cc278192b939b130e4fc961dff0950e4c073733e7ab67
+contentHash=dcefe74f48f7edf37a822f0c26fe460590229edee020237c963ecc6fdc654585
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-capstone-8`
+
+- Objectives: obj-u30-capstone
+- Sessions: u30-s-orient, u30-s-capstone
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2b10995fdfb8e4562d691a8cfbf05a9aa5349763ba4b58d89214af1e3cdfddc6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-capstone:u30-s-capstone-8
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Independent checks
+shippedText=Independent checks
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=423279656881ce3bf77596511f15da61c970fa23e3e5b2263c8ee890e1037df5
+contentHash=012ab8f74509f135e510ad3d930ff2e1b92c944e2d060f0b35ddeee63616b486
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-dictionary-0`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 73947ae16a4ecd9b50859a10b937ddd891c23b37e948047169480e6ac5b062ad
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-dictionary:u30-s-dictionary-0
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Use headword forms and sense together
+shippedText=Use headword forms and sense together
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ef72562a80fe5c8145d2b96264fbccb489d72c85a08a9a05493ad771bf2b3342
+contentHash=61d43e61d2be008be770bd82c1368c2cfdfd061092735fdac1d8706e9ced0a2a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-dictionary-1`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9ed38aa5a47d8b76c9548d4d1b94a580949c2424967ab95c335143d0701660d9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-dictionary:u30-s-dictionary-1
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+The retained entry for стол identifies a noun, gives стол, стола, столу, столом, столе as forms and states the sense a piece of furniture with a flat top. Thus столом and the noun form in на столе belong to the furniture entry. Книга лежит на столе. uses that furniture sense in its example. The form row helps locate the entry; it does not by itself state the sense without the sense field.
+shippedText=The retained entry for стол identifies a noun, gives стол, стола, столу, столом, столе as forms and states the sense a piece of furniture with a flat top. Thus столом and the noun form in на столе belong to the furniture entry. Книга лежит на столе. uses that furniture sense in its example. The form row helps locate the entry; it does not by itself state the sense without the sense field.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bad7c1a43ad22ccb82b8238c6e946e7f9dcc0be143ce78a649afa7000f54c35e
+contentHash=39d0377145ad1f2fd35b1da6514273479ff6911e4b62bb236674381074184cbd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-dictionary-10`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 504293a19d08ab406a861ae42f3a5fdef1a06ace633d84e760df70109c9d2859
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-dictionary:u30-s-dictionary-10
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Unit 30 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+shippedText=Unit 30 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=efd608b60c010b4306437b1b98bd858555ea87f5111feb5785ad8b8ae20581aa
+contentHash=8118088bdbd76fad2c4c0090917e7fa1da9ef0791675f838ff0f7e186ec9abff
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-dictionary-11`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 890b9b50b487f7709e86d8253f2c7676455477617b652e4a4aa95ab9a0a05426
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-dictionary:u30-s-dictionary-11
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Unit 30 binder prompt
+shippedText=Unit 30 binder prompt
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=19747db810b4ad0279a6abcb01b05ce2a2ee621d719222feed33c9d2a4347ffe
+contentHash=f35d688b379e9d092af6715e3ee3c8bbaff0276792589c039b8f0b56b9ba60f5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-dictionary-12`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2331465a576364a45312d0d7497064be42d7367c2cdae7625336002907900428
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-dictionary:u30-s-dictionary-12
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Unit 30 optional tutor
+shippedText=Unit 30 optional tutor
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bb916cc4a7b03a8d7edae70d908aada3487607589371443b42f34e83dbd762ce
+contentHash=49ea14dbd2482b74a5ec522c18bacef1e3f33c17be9670b8e8e232e1aea1ae83
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-dictionary-13`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d463573457e096c186a33bd461ee0d249cb75fea531762797e3e79d514224dc4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-dictionary:u30-s-dictionary-13
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Unit 30 cumulative review
+shippedText=Unit 30 cumulative review
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a0b3c565c2ecfb577d9c07bff4a63cee521dfa32216d84e38fc7e2a050b799a3
+contentHash=c877180bd4c7ab79c1fee3d0fb35f7ce5c7105aba60dd3088c7671dc508a3186
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-dictionary-2`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1457f11428267ce683bb002893e2f0059f58ff581b89a2d60ac3f70b460ea4de
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-dictionary:u30-s-dictionary-2
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+A grammatical label alone cannot supply the sense
+shippedText=A grammatical label alone cannot supply the sense
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a7477cc76fbbf6f169b8eb2bc7de0213daa05fd46d817a4878e293e74fe6231d
+contentHash=5fb4ccb5c9ae52219760c5c7cd87ea9988909acc26912464b9331afaf61816e7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-dictionary-3`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e66ac9f8033615c938f15e338bd19cc77f902166ce123802839cfc65b89be56c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-dictionary:u30-s-dictionary-3
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+The retained стоять entry is a verb with стоять, стою, стоит, стоял and the sense remaining upright on a base. Ваза стоит на столе. illustrates that standing action. Use the sense field to distinguish стоит from the furniture noun. The label сущ. identifies a part of speech; it does not state the furniture sense. When a check shows only a label or a row of forms, select the stated information limit rather than guessing that it contains a definition. These checks use two supplied entries, not an unrestricted external dictionary or a claim of completed book work.
+shippedText=The retained стоять entry is a verb with стоять, стою, стоит, стоял and the sense remaining upright on a base. Ваза стоит на столе. illustrates that standing action. Use the sense field to distinguish стоит from the furniture noun. The label сущ. identifies a part of speech; it does not state the furniture sense. When a check shows only a label or a row of forms, select the stated information limit rather than guessing that it contains a definition. These checks use two supplied entries, not an unrestricted external dictionary or a claim of completed book work.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d908b3ba45e8a783a455c46081c00d6679c12f9db105c2841a577b9d960dae2e
+contentHash=9fad48865915ce448830d007069c38902af6ced4ee1917692a28dac56f3f45c4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-dictionary-4`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f4fc2e962d78355bda4cecd979b97e0f1ee43cc0e2d2445372190bfe7770a46c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-dictionary:u30-s-dictionary-4
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Guided practice
+shippedText=Guided practice
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4160ea87516a83a760df100743acce53719ddbcb5cc4a48d9e68e2aea50b63c2
+contentHash=cb1d4a3d9d5db425da3797c7a997db3588ec122a60c4d645ea31cd849f76ab3c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-dictionary-5`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fa4ede56d64f62157ebc52ada0f080ade44be329d735ba97097a2e1f0c1a395c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-dictionary:u30-s-dictionary-5
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
+shippedText=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=21671565b10a63c166202301facca02ed7700622484d684402111750f6b4d54b
+contentHash=7e831781418e211c98b1c0f63a387cb5d621e366dba903e0c33492a919b4c8c1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-dictionary-6`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ac8a26af3a19f8a081f60076f93fc7d6f976a6de03f59ff93dc483674df615db
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-dictionary:u30-s-dictionary-6
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Review the complete retained-example contrast
+shippedText=Review the complete retained-example contrast
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=eea2804365c0017824673de24130c31cae967fd2997171b57ca6cf485adc2a0b
+contentHash=ffc1d4634ce62d9bfa012f510fdd024d80750001611aeef52e4301f1706fc80b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-dictionary-7`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5d8f4494704977f976ab5a9c269adfcefc8b44dea2bf8e800cb79bc579286156
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-dictionary:u30-s-dictionary-7
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+The retained entry for стол identifies a noun, gives стол, стола, столу, столом, столе as forms and states the sense a piece of furniture with a flat top. Thus столом and the noun form in на столе belong to the furniture entry. Книга лежит на столе. uses that furniture sense in its example. The form row helps locate the entry; it does not by itself state the sense without the sense field.
+
+The retained стоять entry is a verb with стоять, стою, стоит, стоял and the sense remaining upright on a base. Ваза стоит на столе. illustrates that standing action. Use the sense field to distinguish стоит from the furniture noun. The label сущ. identifies a part of speech; it does not state the furniture sense. When a check shows only a label or a row of forms, select the stated information limit rather than guessing that it contains a definition. These checks use two supplied entries, not an unrestricted external dictionary or a claim of completed book work.
+shippedText=The retained entry for стол identifies a noun, gives стол, стола, столу, столом, столе as forms and states the sense a piece of furniture with a flat top. Thus столом and the noun form in на столе belong to the furniture entry. Книга лежит на столе. uses that furniture sense in its example. The form row helps locate the entry; it does not by itself state the sense without the sense field.
+
+The retained стоять entry is a verb with стоять, стою, стоит, стоял and the sense remaining upright on a base. Ваза стоит на столе. illustrates that standing action. Use the sense field to distinguish стоит from the furniture noun. The label сущ. identifies a part of speech; it does not state the furniture sense. When a check shows only a label or a row of forms, select the stated information limit rather than guessing that it contains a definition. These checks use two supplied entries, not an unrestricted external dictionary or a claim of completed book work.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=85a45964f03bbe6a4601a191b259450d8a485217ac3c19ddb1712225857cc1b4
+contentHash=fa4ac53e85f792809e7ceb01f81b22ec465e18d0c54de78d585e0842ce6b7757
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-dictionary-8`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fee99200e8fbc02e60f4a7a2b252e6cbc27cd3970cd717f6426b1c42859eab61
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-dictionary:u30-s-dictionary-8
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Independent checks
+shippedText=Independent checks
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=423279656881ce3bf77596511f15da61c970fa23e3e5b2263c8ee890e1037df5
+contentHash=012ab8f74509f135e510ad3d930ff2e1b92c944e2d060f0b35ddeee63616b486
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-dictionary-9`
+
+- Objectives: obj-u30-dictionary
+- Sessions: u30-s-dictionary
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a9410cc3e41b31d8b4ecbcc1dbebfbba922ef508e44c3e438c5be172e352960f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-dictionary:u30-s-dictionary-9
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Unit 30 AnkiDroid direction
+shippedText=Unit 30 AnkiDroid direction
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0e380aa776b24f365a6fe90c4aeef89d3bca54ca4d97fffd75cdf2f8202f3e72
+contentHash=95f98e071ae20ef7a43b21e022465f56aa32f73a85d137536fbd4a7798771131
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-letter-names-0`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d135b33fea66bc819342864485cbd2755185953b51ace05903dda805f70bcbb3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-letter-names:u30-s-letter-names-0
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Separate a letter name from an approximate sound cue
+shippedText=Separate a letter name from an approximate sound cue
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7baa5139da15dd67994d94f1788d6a2288e741a7a2938bf726abee61ee81133a
+contentHash=107d5c4968da96d0773f2166066b59fe3ae2f2e230eee4608cf8e529c2ccbaf0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-letter-names-1`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1b7fd699b5176477c6c338f7575a20142b7d5a1c02ad012282073c6433788a53
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-letter-names:u30-s-letter-names-1
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+The retained а has the English name respelling ah. The retained бэ has be/beh. These respellings guide recognition of the supplied letter names; they are not words naming an object or an English translation of a Russian sentence.
+shippedText=The retained а has the English name respelling ah. The retained бэ has be/beh. These respellings guide recognition of the supplied letter names; they are not words naming an object or an English translation of a Russian sentence.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6afceed34692aa10d493d936d845bfcbd4ce8dcb4772fd0f1a216344a70f896a
+contentHash=265edccf067a45f27e8c570e6115da066cd9102e87b0dc4bb29dd6e9582b6846
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-letter-names-2`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 40b1ebbfde33e9bdc848ae4fbbb0b470755b9aee288db29b4b562b72342b7d60
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-letter-names:u30-s-letter-names-2
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+A comparison word is not the name respelling
+shippedText=A comparison word is not the name respelling
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f68764c21f26188d57b3a15bc8f1c9ebfd9ecd3153e27e2c6860f45a2f800fa4
+contentHash=43d8dea7d54f33103f59aa3f428a308b7c42d928b7e723a69c66c4ee26f93582
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-letter-names-3`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a652d6647e5149aa9d64a80de739864c28c87d396b99199bc6a8bbe1eb44c24f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-letter-names:u30-s-letter-names-3
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+The retained alphabet row uses father as an approximate English sound comparison for а. Choose father when asked for that comparison word, but ah when asked for the name respelling. The alternatives bad and both are different comparison words, and be/beh belongs to the other supplied name. English comparisons depend on accent and are approximate; these text checks do not demonstrate listening or pronunciation.
+shippedText=The retained alphabet row uses father as an approximate English sound comparison for а. Choose father when asked for that comparison word, but ah when asked for the name respelling. The alternatives bad and both are different comparison words, and be/beh belongs to the other supplied name. English comparisons depend on accent and are approximate; these text checks do not demonstrate listening or pronunciation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=aa636d678f72fc9ed4d0ecd7325bd6345227c43546547cbb2f435025c4149b14
+contentHash=856348d0dc5cfd2e96a0dd58e518384578b5069941e91152ddd599ccdddb53df
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-letter-names-4`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d79c3b8e859fe82aad153bca5c99a1d847dfef1a04e177bebb1fc9e7b5b5af60
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-letter-names:u30-s-letter-names-4
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Guided practice
+shippedText=Guided practice
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4160ea87516a83a760df100743acce53719ddbcb5cc4a48d9e68e2aea50b63c2
+contentHash=cb1d4a3d9d5db425da3797c7a997db3588ec122a60c4d645ea31cd849f76ab3c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-letter-names-5`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e76052ee0fdfe0e88bd8ed13940fd83f772662c653ffbd5d22421a8b90174fb6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-letter-names:u30-s-letter-names-5
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
+shippedText=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=21671565b10a63c166202301facca02ed7700622484d684402111750f6b4d54b
+contentHash=7e831781418e211c98b1c0f63a387cb5d621e366dba903e0c33492a919b4c8c1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-letter-names-6`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fb964cac82c5690c0ac31a18d3c2288a17402959573095ad4c2679f1f0d6d7f2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-letter-names:u30-s-letter-names-6
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Review the complete retained-example contrast
+shippedText=Review the complete retained-example contrast
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=eea2804365c0017824673de24130c31cae967fd2997171b57ca6cf485adc2a0b
+contentHash=ffc1d4634ce62d9bfa012f510fdd024d80750001611aeef52e4301f1706fc80b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-letter-names-7`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f1f5bea605eac5acc47b11f5bcc863f75bf0c27ccea02b5e17263c06496bdb19
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-letter-names:u30-s-letter-names-7
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+The retained а has the English name respelling ah. The retained бэ has be/beh. These respellings guide recognition of the supplied letter names; they are not words naming an object or an English translation of a Russian sentence.
+
+The retained alphabet row uses father as an approximate English sound comparison for а. Choose father when asked for that comparison word, but ah when asked for the name respelling. The alternatives bad and both are different comparison words, and be/beh belongs to the other supplied name. English comparisons depend on accent and are approximate; these text checks do not demonstrate listening or pronunciation.
+shippedText=The retained а has the English name respelling ah. The retained бэ has be/beh. These respellings guide recognition of the supplied letter names; they are not words naming an object or an English translation of a Russian sentence.
+
+The retained alphabet row uses father as an approximate English sound comparison for а. Choose father when asked for that comparison word, but ah when asked for the name respelling. The alternatives bad and both are different comparison words, and be/beh belongs to the other supplied name. English comparisons depend on accent and are approximate; these text checks do not demonstrate listening or pronunciation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f0f29c0e4bf97c00b30a24052c728498eb6fc35ddea13a9b9b8aefcb6e3f042
+contentHash=b7628c66adc24c8cbb36f9b3e419b4925b35832a374e159b2545507fe362d885
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-letter-names-8`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 349147fa7552874f0b937a2a90d24de2c55df44adc2b34592a3421f2ae8c961f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-letter-names:u30-s-letter-names-8
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Independent checks
+shippedText=Independent checks
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=423279656881ce3bf77596511f15da61c970fa23e3e5b2263c8ee890e1037df5
+contentHash=012ab8f74509f135e510ad3d930ff2e1b92c944e2d060f0b35ddeee63616b486
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-particle-0`
+
+- Objectives: obj-u30-particle
+- Sessions: u30-s-orient, u30-s-particle
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: af2bbd01500f17b9ca0e85cf56915f8479ed1d02453be34c7ceca7a55b61e80e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-particle:u30-s-particle-0
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Recognize a request or wish rather than reported past action
+shippedText=Recognize a request or wish rather than reported past action
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ff9656c1aac086822dd82296498f31060dc379e0f03ce2c372917f89130b1327
+contentHash=47858defac8afc39bb9033b6379b99de5ebf957c0cb2b5bc58f1f996f49641fc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-particle-1`
+
+- Objectives: obj-u30-particle
+- Sessions: u30-s-orient, u30-s-particle
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 855f7265ba714460711002f75910502a6d12b6b94441bb12d6d05b8289a1773e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-particle:u30-s-particle-1
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+The supplied Пусть он читает expresses let him read, and Да будет мир! expresses let there be peace. The source classifies these as Повелительное наклонение, imperative mood, using particles. These examples express a request or wish rather than reporting that the action has already happened.
+shippedText=The supplied Пусть он читает expresses let him read, and Да будет мир! expresses let there be peace. The source classifies these as Повелительное наклонение, imperative mood, using particles. These examples express a request or wish rather than reporting that the action has already happened.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6ec4642ee60a0ab4fc0809068dbdac7ed4718ad48f61672c1169ecb08f9e75dc
+contentHash=10d311bd1ea731f6d6d1773831c5c515b4e5bbe5c45c9e95cb1d6d785633b095
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-particle-10`
+
+- Objectives: obj-u30-particle
+- Sessions: u30-s-orient, u30-s-particle
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7e0aaf631b49c793af0c4e50ca2baaa481da013785db77000d1a7d46f347dde4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-particle:u30-s-particle-10
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Independent checks
+shippedText=Independent checks
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=423279656881ce3bf77596511f15da61c970fa23e3e5b2263c8ee890e1037df5
+contentHash=012ab8f74509f135e510ad3d930ff2e1b92c944e2d060f0b35ddeee63616b486
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-particle-2`
+
+- Objectives: obj-u30-particle
+- Sessions: u30-s-orient, u30-s-particle
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f27b64470ff839217e65b7f883d6f3bb1fc90e969f04f82c682b59a34f08a652
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-particle:u30-s-particle-2
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Read the possibility meaning of the supplied conditional forms
+shippedText=Read the possibility meaning of the supplied conditional forms
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5e8296b7da4ff688d6fc2904ab417af7067728ba99866a24e17b325b915d6dcf
+contentHash=2fef88f01e6fb7b7940fa300091a1b83634b475d17ae5110c3ce0166d0de62ce
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-particle-3`
+
+- Objectives: obj-u30-particle
+- Sessions: u30-s-orient, u30-s-particle
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e17dc92f88b82152c8f31dd150ccbadb4c1e44100c1a1259e74e1727a452dea0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-particle:u30-s-particle-3
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+The retained читал бы and читали бы are grouped under предположительность или возможность, supposition or possibility. The particle combines with the supplied verb form to present a conditional or hypothetical meaning; the past-shaped form alone should not make this a report of an actual completed reading event. An English translation using would depends on context.
+shippedText=The retained читал бы and читали бы are grouped under предположительность или возможность, supposition or possibility. The particle combines with the supplied verb form to present a conditional or hypothetical meaning; the past-shaped form alone should not make this a report of an actual completed reading event. An English translation using would depends on context.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b9c6c7676854b00cd1cffbbdae932029edd6264847556f353cff564c46b03e18
+contentHash=5347089fd949e946e4c3bd02587e13f9165525fd6d048d4ea7369a9eb290a580
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-particle-4`
+
+- Objectives: obj-u30-particle
+- Sessions: u30-s-orient, u30-s-particle
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 12512c3124e2ff866a59a95e4e523b7ad376aef43be91fd8779667eaf5ccb72d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-particle:u30-s-particle-4
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Keep the two functions separate
+shippedText=Keep the two functions separate
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e1db0c8ec134b64c8f153fb0d9352c2e71798b64c2b8699c5e678f96c524007b
+contentHash=0fdf88d092f8e663ec774f39f68fd5dde9ee29428f4e1910d02deb3e4b40679a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-particle-5`
+
+- Objectives: obj-u30-particle
+- Sessions: u30-s-orient, u30-s-particle
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 59c851027e31734f03b86b7174a3e7f344bf8ab42f7fb303a36596389f573c4f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-particle:u30-s-particle-5
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Choose the imperative label for the two let examples and the supposition/possibility label for the supplied conditional example. This is recognition of the retained constructions. It does not demonstrate forming every imperative, deciding every use of a particle, or assigning one universal meaning to that particle outside these examples.
+shippedText=Choose the imperative label for the two let examples and the supposition/possibility label for the supplied conditional example. This is recognition of the retained constructions. It does not demonstrate forming every imperative, deciding every use of a particle, or assigning one universal meaning to that particle outside these examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=30e0d3f19ea2bbd88db6da7306b2fefec25c990b001de0a327dbd44c9dae564d
+contentHash=2a81de637ef7a493225225ca290dc410ab163f6da971f5cacd41cc59ca17535f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-particle-6`
+
+- Objectives: obj-u30-particle
+- Sessions: u30-s-orient, u30-s-particle
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f165f09e5f48911c454270617ac446d018420fe9513d71d3a53c082061d926da
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-particle:u30-s-particle-6
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Guided practice
+shippedText=Guided practice
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4160ea87516a83a760df100743acce53719ddbcb5cc4a48d9e68e2aea50b63c2
+contentHash=cb1d4a3d9d5db425da3797c7a997db3588ec122a60c4d645ea31cd849f76ab3c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-particle-7`
+
+- Objectives: obj-u30-particle
+- Sessions: u30-s-orient, u30-s-particle
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b3fe6084e1079ede29fbdeacda58ab8c3cf5f56858ee8512cf58f4c4d50d84be
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-particle:u30-s-particle-7
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
+shippedText=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=21671565b10a63c166202301facca02ed7700622484d684402111750f6b4d54b
+contentHash=7e831781418e211c98b1c0f63a387cb5d621e366dba903e0c33492a919b4c8c1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-particle-8`
+
+- Objectives: obj-u30-particle
+- Sessions: u30-s-orient, u30-s-particle
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 32c5aa929d1b1f98c0262d64b72bb579901acd009fecb037eab79c8ddb5d0847
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-particle:u30-s-particle-8
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+Review the complete retained-example contrast
+shippedText=Review the complete retained-example contrast
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=eea2804365c0017824673de24130c31cae967fd2997171b57ca6cf485adc2a0b
+contentHash=ffc1d4634ce62d9bfa012f510fdd024d80750001611aeef52e4301f1706fc80b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-instruction-u30-s-particle-9`
+
+- Objectives: obj-u30-particle
+- Sessions: u30-s-orient, u30-s-particle
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e0e93e448ca8b73cb34205fdf5cef5945f59d1c9fae0422d67bc06059da9ea71
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-particle:u30-s-particle-9
+originalSourceText=Retained Russian alphabet revision 1371795481, Russian grammar revision 1369617627, Wikibooks revision 3353858, morphology revision 148939075, licensed ReadyRussian reading5 and existing hash-bound Unit30 dictionary research corpus. Independently authored English instruction, 2026-10-12. No private book prose, new Russian or universal productive algorithm. Pending final linguistic audit.
+The supplied Пусть он читает expresses let him read, and Да будет мир! expresses let there be peace. The source classifies these as Повелительное наклонение, imperative mood, using particles. These examples express a request or wish rather than reporting that the action has already happened.
+
+The retained читал бы and читали бы are grouped under предположительность или возможность, supposition or possibility. The particle combines with the supplied verb form to present a conditional or hypothetical meaning; the past-shaped form alone should not make this a report of an actual completed reading event. An English translation using would depends on context.
+
+Choose the imperative label for the two let examples and the supposition/possibility label for the supplied conditional example. This is recognition of the retained constructions. It does not demonstrate forming every imperative, deciding every use of a particle, or assigning one universal meaning to that particle outside these examples.
+shippedText=The supplied Пусть он читает expresses let him read, and Да будет мир! expresses let there be peace. The source classifies these as Повелительное наклонение, imperative mood, using particles. These examples express a request or wish rather than reporting that the action has already happened.
+
+The retained читал бы and читали бы are grouped under предположительность или возможность, supposition or possibility. The particle combines with the supplied verb form to present a conditional or hypothetical meaning; the past-shaped form alone should not make this a report of an actual completed reading event. An English translation using would depends on context.
+
+Choose the imperative label for the two let examples and the supposition/possibility label for the supplied conditional example. This is recognition of the retained constructions. It does not demonstrate forming every imperative, deciding every use of a particle, or assigning one universal meaning to that particle outside these examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English explanation, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e9d2514e2c5ce1fbc930b5e1f2cdf8df7c0053099c257ec436e52660a4445929
+contentHash=30b222f79daf241f9f6dced70b4c76f9e2c1194a295068db730f1af47fd15198
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -11952,9 +14290,9 @@ permitsAppUse=true
 - `u30-st-teach-letter-names-1` EXAMPLE `ex-u30-letter-names-0`
 - `u30-st-teach-letter-names-1` EXAMPLE `ex-u30-letter-names-1`
 - `u30-st-teach-letter-names-1` REFERENCE `ref-u2630-attribution`
+- `u30-st-teach-letter-names-2` REFERENCE `ref-u2630-attribution`
 - `u30-st-guided-letter-names-1` REMEDIATION `u30-st-rem-letter-names`
 - `u30-st-guided-letter-names-1` ITEM `u30-g-letter-names-0`
-- `u30-st-teach-letter-names-2` REFERENCE `ref-u2630-attribution`
 - `u30-st-rem-letter-names` EXAMPLE `ex-u30-letter-names-0`
 - `u30-st-rem-letter-names` EXAMPLE `ex-u30-letter-names-1`
 - `u30-st-check-letter-names` REMEDIATION `u30-st-rem-letter-names`
@@ -11964,9 +14302,9 @@ permitsAppUse=true
 - `u30-st-teach-abbrev-examples-1` EXAMPLE `ex-u30-abbrev-examples-0`
 - `u30-st-teach-abbrev-examples-1` EXAMPLE `ex-u30-abbrev-examples-1`
 - `u30-st-teach-abbrev-examples-1` REFERENCE `ref-u2630-attribution`
+- `u30-st-teach-abbrev-examples-2` REFERENCE `ref-u2630-attribution`
 - `u30-st-guided-abbrev-examples-1` REMEDIATION `u30-st-rem-abbrev-examples`
 - `u30-st-guided-abbrev-examples-1` ITEM `u30-g-abbrev-examples-0`
-- `u30-st-teach-abbrev-examples-2` REFERENCE `ref-u2630-attribution`
 - `u30-st-rem-abbrev-examples` EXAMPLE `ex-u30-abbrev-examples-0`
 - `u30-st-rem-abbrev-examples` EXAMPLE `ex-u30-abbrev-examples-1`
 - `u30-st-check-abbrev-examples` REMEDIATION `u30-st-rem-abbrev-examples`
@@ -11976,13 +14314,14 @@ permitsAppUse=true
 - `u30-st-teach-address-marks-1` EXAMPLE `ex-u30-address-marks-0`
 - `u30-st-teach-address-marks-1` EXAMPLE `ex-u30-address-marks-1`
 - `u30-st-teach-address-marks-1` REFERENCE `ref-u2630-attribution`
-- `u30-st-guided-address-marks-1` REMEDIATION `u30-st-rem-address-marks`
-- `u30-st-guided-address-marks-1` ITEM `u30-g-address-marks-0`
 - `u30-st-teach-address-marks-2` REFERENCE `ref-u2630-attribution`
 - `u30-st-teach-address-marks-3` EXAMPLE `ex-u30-address-marks-2`
 - `u30-st-teach-address-marks-3` REFERENCE `ref-u2630-attribution`
+- `u30-st-guided-address-marks-1` REMEDIATION `u30-st-rem-address-marks`
+- `u30-st-guided-address-marks-1` ITEM `u30-g-address-marks-0`
 - `u30-st-rem-address-marks` EXAMPLE `ex-u30-address-marks-0`
 - `u30-st-rem-address-marks` EXAMPLE `ex-u30-address-marks-1`
+- `u30-st-rem-address-marks` EXAMPLE `ex-u30-address-marks-2`
 - `u30-st-check-address-marks` REMEDIATION `u30-st-rem-address-marks`
 - `u30-st-check-address-marks` ITEM `u30-i-address-marks-1`
 - `u30-st-check-address-marks` ITEM `u30-i-address-marks-2`
@@ -11990,8 +14329,6 @@ permitsAppUse=true
 - `u30-st-teach-abbreviation-1` EXAMPLE `ex-u30-abbreviation-0`
 - `u30-st-teach-abbreviation-1` EXAMPLE `ex-u30-abbreviation-1`
 - `u30-st-teach-abbreviation-1` REFERENCE `ref-u2630-attribution`
-- `u30-st-guided-abbreviation-1` REMEDIATION `u30-st-rem-abbreviation`
-- `u30-st-guided-abbreviation-1` ITEM `u30-g-abbreviation-0`
 - `u30-st-teach-abbreviation-2` REFERENCE `ref-u2630-attribution`
 - `u30-st-teach-abbreviation-3` EXAMPLE `ex-u30-abbreviation-2`
 - `u30-st-teach-abbreviation-3` EXAMPLE `ex-u30-abbreviation-3`
@@ -11999,8 +14336,14 @@ permitsAppUse=true
 - `u30-st-teach-abbreviation-4` EXAMPLE `ex-u30-abbreviation-4`
 - `u30-st-teach-abbreviation-4` EXAMPLE `ex-u30-abbreviation-5`
 - `u30-st-teach-abbreviation-4` REFERENCE `ref-u2630-attribution`
+- `u30-st-guided-abbreviation-1` REMEDIATION `u30-st-rem-abbreviation`
+- `u30-st-guided-abbreviation-1` ITEM `u30-g-abbreviation-0`
 - `u30-st-rem-abbreviation` EXAMPLE `ex-u30-abbreviation-0`
 - `u30-st-rem-abbreviation` EXAMPLE `ex-u30-abbreviation-1`
+- `u30-st-rem-abbreviation` EXAMPLE `ex-u30-abbreviation-2`
+- `u30-st-rem-abbreviation` EXAMPLE `ex-u30-abbreviation-3`
+- `u30-st-rem-abbreviation` EXAMPLE `ex-u30-abbreviation-4`
+- `u30-st-rem-abbreviation` EXAMPLE `ex-u30-abbreviation-5`
 - `u30-st-check-abbreviation` REMEDIATION `u30-st-rem-abbreviation`
 - `u30-st-check-abbreviation` ITEM `u30-i-abbreviation-1`
 - `u30-st-check-abbreviation` ITEM `u30-i-abbreviation-2`
@@ -12008,14 +14351,16 @@ permitsAppUse=true
 - `u30-st-teach-particle-1` EXAMPLE `ex-u30-particle-0`
 - `u30-st-teach-particle-1` EXAMPLE `ex-u30-particle-1`
 - `u30-st-teach-particle-1` REFERENCE `ref-u2630-attribution`
-- `u30-st-guided-particle-1` REMEDIATION `u30-st-rem-particle`
-- `u30-st-guided-particle-1` ITEM `u30-g-particle-0`
 - `u30-st-teach-particle-2` REFERENCE `ref-u2630-attribution`
 - `u30-st-teach-particle-3` EXAMPLE `ex-u30-particle-2`
 - `u30-st-teach-particle-3` EXAMPLE `ex-u30-particle-3`
 - `u30-st-teach-particle-3` REFERENCE `ref-u2630-attribution`
+- `u30-st-guided-particle-1` REMEDIATION `u30-st-rem-particle`
+- `u30-st-guided-particle-1` ITEM `u30-g-particle-0`
 - `u30-st-rem-particle` EXAMPLE `ex-u30-particle-0`
 - `u30-st-rem-particle` EXAMPLE `ex-u30-particle-1`
+- `u30-st-rem-particle` EXAMPLE `ex-u30-particle-2`
+- `u30-st-rem-particle` EXAMPLE `ex-u30-particle-3`
 - `u30-st-check-particle` REMEDIATION `u30-st-rem-particle`
 - `u30-st-check-particle` ITEM `u30-i-particle-1`
 - `u30-st-check-particle` ITEM `u30-i-particle-2`
@@ -12023,9 +14368,9 @@ permitsAppUse=true
 - `u30-st-teach-capstone-1` EXAMPLE `ex-u30-capstone-0`
 - `u30-st-teach-capstone-1` EXAMPLE `ex-u30-capstone-1`
 - `u30-st-teach-capstone-1` REFERENCE `ref-u2630-attribution`
+- `u30-st-teach-capstone-2` REFERENCE `ref-u2630-attribution`
 - `u30-st-guided-capstone-1` REMEDIATION `u30-st-rem-capstone`
 - `u30-st-guided-capstone-1` ITEM `u30-g-capstone-0`
-- `u30-st-teach-capstone-2` REFERENCE `ref-u2630-attribution`
 - `u30-st-rem-capstone` EXAMPLE `ex-u30-capstone-0`
 - `u30-st-rem-capstone` EXAMPLE `ex-u30-capstone-1`
 - `u30-st-check-capstone` REMEDIATION `u30-st-rem-capstone`
@@ -12038,10 +14383,12 @@ permitsAppUse=true
 - `u30-dictionary-teach-1` EXAMPLE `ex-u30-dictionary-1`
 - `u30-dictionary-teach-1` EXAMPLE `ex-u30-dictionary-2`
 - `u30-dictionary-teach-1` REFERENCE `ref-u2630-attribution`
+- `u30-dictionary-teach-2` REFERENCE `ref-u2630-attribution`
 - `u30-dictionary-guided` REMEDIATION `u30-dictionary-remediate`
 - `u30-dictionary-guided` ITEM `u30-g-dictionary-1`
 - `u30-dictionary-guided` REFERENCE `ref-u2630-attribution`
-- `u30-dictionary-teach-2` REFERENCE `ref-u2630-attribution`
+- `u30-dictionary-remediate` EXAMPLE `ex-u30-dictionary-1`
+- `u30-dictionary-remediate` EXAMPLE `ex-u30-dictionary-2`
 - `u30-dictionary-remediate` REFERENCE `ref-u2630-attribution`
 - `u30-dictionary-check` REMEDIATION `u30-dictionary-remediate`
 - `u30-dictionary-check` ITEM `u30-i-dictionary-1`
@@ -12057,6 +14404,82 @@ permitsAppUse=true
 - `obj-u30-letter-names` PROVENANCE `prov-ca-30-608`
 - `obj-u30-letter-names` PROVENANCE `prov-ca-30-627`
 - `obj-u30-letter-names` PROVENANCE `prov-ca-30-628`
+- `obj-u30-abbrev-examples` PROVENANCE `prov-ca-u30-instruction-u30-s-abbrev-examples-0`
+- `obj-u30-abbrev-examples` PROVENANCE `prov-ca-u30-instruction-u30-s-abbrev-examples-1`
+- `obj-u30-abbrev-examples` PROVENANCE `prov-ca-u30-instruction-u30-s-abbrev-examples-2`
+- `obj-u30-abbrev-examples` PROVENANCE `prov-ca-u30-instruction-u30-s-abbrev-examples-3`
+- `obj-u30-abbrev-examples` PROVENANCE `prov-ca-u30-instruction-u30-s-abbrev-examples-4`
+- `obj-u30-abbrev-examples` PROVENANCE `prov-ca-u30-instruction-u30-s-abbrev-examples-5`
+- `obj-u30-abbrev-examples` PROVENANCE `prov-ca-u30-instruction-u30-s-abbrev-examples-6`
+- `obj-u30-abbrev-examples` PROVENANCE `prov-ca-u30-instruction-u30-s-abbrev-examples-7`
+- `obj-u30-abbrev-examples` PROVENANCE `prov-ca-u30-instruction-u30-s-abbrev-examples-8`
+- `obj-u30-abbreviation` PROVENANCE `prov-ca-u30-instruction-u30-s-abbreviation-0`
+- `obj-u30-abbreviation` PROVENANCE `prov-ca-u30-instruction-u30-s-abbreviation-1`
+- `obj-u30-abbreviation` PROVENANCE `prov-ca-u30-instruction-u30-s-abbreviation-10`
+- `obj-u30-abbreviation` PROVENANCE `prov-ca-u30-instruction-u30-s-abbreviation-11`
+- `obj-u30-abbreviation` PROVENANCE `prov-ca-u30-instruction-u30-s-abbreviation-12`
+- `obj-u30-abbreviation` PROVENANCE `prov-ca-u30-instruction-u30-s-abbreviation-2`
+- `obj-u30-abbreviation` PROVENANCE `prov-ca-u30-instruction-u30-s-abbreviation-3`
+- `obj-u30-abbreviation` PROVENANCE `prov-ca-u30-instruction-u30-s-abbreviation-4`
+- `obj-u30-abbreviation` PROVENANCE `prov-ca-u30-instruction-u30-s-abbreviation-5`
+- `obj-u30-abbreviation` PROVENANCE `prov-ca-u30-instruction-u30-s-abbreviation-6`
+- `obj-u30-abbreviation` PROVENANCE `prov-ca-u30-instruction-u30-s-abbreviation-7`
+- `obj-u30-abbreviation` PROVENANCE `prov-ca-u30-instruction-u30-s-abbreviation-8`
+- `obj-u30-abbreviation` PROVENANCE `prov-ca-u30-instruction-u30-s-abbreviation-9`
+- `obj-u30-address-marks` PROVENANCE `prov-ca-u30-instruction-u30-s-address-marks-0`
+- `obj-u30-address-marks` PROVENANCE `prov-ca-u30-instruction-u30-s-address-marks-1`
+- `obj-u30-address-marks` PROVENANCE `prov-ca-u30-instruction-u30-s-address-marks-10`
+- `obj-u30-address-marks` PROVENANCE `prov-ca-u30-instruction-u30-s-address-marks-2`
+- `obj-u30-address-marks` PROVENANCE `prov-ca-u30-instruction-u30-s-address-marks-3`
+- `obj-u30-address-marks` PROVENANCE `prov-ca-u30-instruction-u30-s-address-marks-4`
+- `obj-u30-address-marks` PROVENANCE `prov-ca-u30-instruction-u30-s-address-marks-5`
+- `obj-u30-address-marks` PROVENANCE `prov-ca-u30-instruction-u30-s-address-marks-6`
+- `obj-u30-address-marks` PROVENANCE `prov-ca-u30-instruction-u30-s-address-marks-7`
+- `obj-u30-address-marks` PROVENANCE `prov-ca-u30-instruction-u30-s-address-marks-8`
+- `obj-u30-address-marks` PROVENANCE `prov-ca-u30-instruction-u30-s-address-marks-9`
+- `obj-u30-capstone` PROVENANCE `prov-ca-u30-instruction-u30-s-capstone-0`
+- `obj-u30-capstone` PROVENANCE `prov-ca-u30-instruction-u30-s-capstone-1`
+- `obj-u30-capstone` PROVENANCE `prov-ca-u30-instruction-u30-s-capstone-2`
+- `obj-u30-capstone` PROVENANCE `prov-ca-u30-instruction-u30-s-capstone-3`
+- `obj-u30-capstone` PROVENANCE `prov-ca-u30-instruction-u30-s-capstone-4`
+- `obj-u30-capstone` PROVENANCE `prov-ca-u30-instruction-u30-s-capstone-5`
+- `obj-u30-capstone` PROVENANCE `prov-ca-u30-instruction-u30-s-capstone-6`
+- `obj-u30-capstone` PROVENANCE `prov-ca-u30-instruction-u30-s-capstone-7`
+- `obj-u30-capstone` PROVENANCE `prov-ca-u30-instruction-u30-s-capstone-8`
+- `obj-u30-dictionary` PROVENANCE `prov-ca-u30-instruction-u30-s-dictionary-0`
+- `obj-u30-dictionary` PROVENANCE `prov-ca-u30-instruction-u30-s-dictionary-1`
+- `obj-u30-dictionary` PROVENANCE `prov-ca-u30-instruction-u30-s-dictionary-10`
+- `obj-u30-dictionary` PROVENANCE `prov-ca-u30-instruction-u30-s-dictionary-11`
+- `obj-u30-dictionary` PROVENANCE `prov-ca-u30-instruction-u30-s-dictionary-12`
+- `obj-u30-dictionary` PROVENANCE `prov-ca-u30-instruction-u30-s-dictionary-13`
+- `obj-u30-dictionary` PROVENANCE `prov-ca-u30-instruction-u30-s-dictionary-2`
+- `obj-u30-dictionary` PROVENANCE `prov-ca-u30-instruction-u30-s-dictionary-3`
+- `obj-u30-dictionary` PROVENANCE `prov-ca-u30-instruction-u30-s-dictionary-4`
+- `obj-u30-dictionary` PROVENANCE `prov-ca-u30-instruction-u30-s-dictionary-5`
+- `obj-u30-dictionary` PROVENANCE `prov-ca-u30-instruction-u30-s-dictionary-6`
+- `obj-u30-dictionary` PROVENANCE `prov-ca-u30-instruction-u30-s-dictionary-7`
+- `obj-u30-dictionary` PROVENANCE `prov-ca-u30-instruction-u30-s-dictionary-8`
+- `obj-u30-dictionary` PROVENANCE `prov-ca-u30-instruction-u30-s-dictionary-9`
+- `obj-u30-letter-names` PROVENANCE `prov-ca-u30-instruction-u30-s-letter-names-0`
+- `obj-u30-letter-names` PROVENANCE `prov-ca-u30-instruction-u30-s-letter-names-1`
+- `obj-u30-letter-names` PROVENANCE `prov-ca-u30-instruction-u30-s-letter-names-2`
+- `obj-u30-letter-names` PROVENANCE `prov-ca-u30-instruction-u30-s-letter-names-3`
+- `obj-u30-letter-names` PROVENANCE `prov-ca-u30-instruction-u30-s-letter-names-4`
+- `obj-u30-letter-names` PROVENANCE `prov-ca-u30-instruction-u30-s-letter-names-5`
+- `obj-u30-letter-names` PROVENANCE `prov-ca-u30-instruction-u30-s-letter-names-6`
+- `obj-u30-letter-names` PROVENANCE `prov-ca-u30-instruction-u30-s-letter-names-7`
+- `obj-u30-letter-names` PROVENANCE `prov-ca-u30-instruction-u30-s-letter-names-8`
+- `obj-u30-particle` PROVENANCE `prov-ca-u30-instruction-u30-s-particle-0`
+- `obj-u30-particle` PROVENANCE `prov-ca-u30-instruction-u30-s-particle-1`
+- `obj-u30-particle` PROVENANCE `prov-ca-u30-instruction-u30-s-particle-10`
+- `obj-u30-particle` PROVENANCE `prov-ca-u30-instruction-u30-s-particle-2`
+- `obj-u30-particle` PROVENANCE `prov-ca-u30-instruction-u30-s-particle-3`
+- `obj-u30-particle` PROVENANCE `prov-ca-u30-instruction-u30-s-particle-4`
+- `obj-u30-particle` PROVENANCE `prov-ca-u30-instruction-u30-s-particle-5`
+- `obj-u30-particle` PROVENANCE `prov-ca-u30-instruction-u30-s-particle-6`
+- `obj-u30-particle` PROVENANCE `prov-ca-u30-instruction-u30-s-particle-7`
+- `obj-u30-particle` PROVENANCE `prov-ca-u30-instruction-u30-s-particle-8`
+- `obj-u30-particle` PROVENANCE `prov-ca-u30-instruction-u30-s-particle-9`
 - `obj-u30-abbrev-examples` PROVENANCE `prov-ex-u30-abbrev-examples-0-en`
 - `obj-u30-abbrev-examples` PROVENANCE `prov-ex-u30-abbrev-examples-0-ru`
 - `obj-u30-abbrev-examples` PROVENANCE `prov-ex-u30-abbrev-examples-1-en`

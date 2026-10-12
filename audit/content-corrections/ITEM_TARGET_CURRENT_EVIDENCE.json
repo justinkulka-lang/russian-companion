@@ -3,7 +3,7 @@
   "purpose": "Current evidence for the retained preliminary audit targets; no semantic closure or approval",
   "inputs": {
     "curriculumPath": "app/src/main/assets/content/v2-curriculum.json",
-    "curriculumFileSha256": "4bd42e3a268e3115db605e230582e3533eec50163a1fd67ad580f72674f6cb50",
+    "curriculumFileSha256": "36d6c4b8fc55e0f8ca1d002536a0466006bd908befd57d609c609539ee42210e",
     "targetSnapshotPath": "audit/content-corrections/ITEM_TARGET_RECONCILIATION_PENDING.csv",
     "targetSnapshotFileSha256": "ba574c8a201baf52614b4cbdc35f9b3981e7a3de727df77e5c5f8ec827dce12f"
   },
@@ -14170,8 +14170,8 @@
           "step": {
             "id": "u30-st-teach-letter-names-1",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "Read the admitted examples on this card. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+            "title": "Separate a letter name from an approximate sound cue",
+            "body": "The retained а has the English name respelling ah. The retained бэ has be/beh. These respellings guide recognition of the supplied letter names; they are not words naming an object or an English translation of a Russian sentence.",
             "referenceIds": [
               "ref-u2630-attribution"
             ],
@@ -14184,10 +14184,22 @@
         {
           "sessionId": "u30-s-letter-names",
           "step": {
+            "id": "u30-st-teach-letter-names-2",
+            "kind": "TEACH",
+            "title": "A comparison word is not the name respelling",
+            "body": "The retained alphabet row uses father as an approximate English sound comparison for а. Choose father when asked for that comparison word, but ah when asked for the name respelling. The alternatives bad and both are different comparison words, and be/beh belongs to the other supplied name. English comparisons depend on accent and are approximate; these text checks do not demonstrate listening or pronunciation.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ]
+          }
+        },
+        {
+          "sessionId": "u30-s-letter-names",
+          "step": {
             "id": "u30-st-guided-letter-names-1",
             "kind": "GUIDED",
             "title": "Guided practice",
-            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "body": "Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.",
             "itemIds": [
               "u30-g-letter-names-0"
             ],
@@ -14197,22 +14209,10 @@
         {
           "sessionId": "u30-s-letter-names",
           "step": {
-            "id": "u30-st-teach-letter-names-2",
-            "kind": "TEACH",
-            "title": "Admitted instruction",
-            "body": "Approximate English equivalent",
-            "referenceIds": [
-              "ref-u2630-attribution"
-            ]
-          }
-        },
-        {
-          "sessionId": "u30-s-letter-names",
-          "step": {
             "id": "u30-st-rem-letter-names",
             "kind": "REMEDIATE",
-            "title": "Remediation",
-            "body": "Approximate English equivalent",
+            "title": "Review the complete retained-example contrast",
+            "body": "The retained а has the English name respelling ah. The retained бэ has be/beh. These respellings guide recognition of the supplied letter names; they are not words naming an object or an English translation of a Russian sentence.\n\nThe retained alphabet row uses father as an approximate English sound comparison for а. Choose father when asked for that comparison word, but ah when asked for the name respelling. The alternatives bad and both are different comparison words, and be/beh belongs to the other supplied name. English comparisons depend on accent and are approximate; these text checks do not demonstrate listening or pronunciation.",
             "exampleIds": [
               "ex-u30-letter-names-0",
               "ex-u30-letter-names-1"
@@ -14224,8 +14224,8 @@
           "step": {
             "id": "u30-st-teach-abbrev-examples-1",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "Read the admitted examples on this card. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+            "title": "Recognize the two supplied country abbreviations",
+            "body": "The retained СССР corresponds to USSR and США to USA. Choose the English country abbreviation matching the Russian form. These are two admitted examples, not a complete list or a productive rule for pronouncing every Russian abbreviation.",
             "referenceIds": [
               "ref-u2630-attribution"
             ],
@@ -14238,10 +14238,22 @@
         {
           "sessionId": "u30-s-abbrev-examples",
           "step": {
+            "id": "u30-st-teach-abbrev-examples-2",
+            "kind": "TEACH",
+            "title": "A heading describes the group rather than one country",
+            "body": "Abbreviations is the category heading for the supplied examples, not the English gloss of СССР or США. One retained check asks specifically for that heading; its answer is Abbreviations rather than USSR or USA. Distinguish a question about category from a question about the meaning of an individual example.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ]
+          }
+        },
+        {
+          "sessionId": "u30-s-abbrev-examples",
+          "step": {
             "id": "u30-st-guided-abbrev-examples-1",
             "kind": "GUIDED",
             "title": "Guided practice",
-            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "body": "Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.",
             "itemIds": [
               "u30-g-abbrev-examples-0"
             ],
@@ -14251,22 +14263,10 @@
         {
           "sessionId": "u30-s-abbrev-examples",
           "step": {
-            "id": "u30-st-teach-abbrev-examples-2",
-            "kind": "TEACH",
-            "title": "Admitted instruction",
-            "body": "* Abbreviations:",
-            "referenceIds": [
-              "ref-u2630-attribution"
-            ]
-          }
-        },
-        {
-          "sessionId": "u30-s-abbrev-examples",
-          "step": {
             "id": "u30-st-rem-abbrev-examples",
             "kind": "REMEDIATE",
-            "title": "Remediation",
-            "body": "* Abbreviations:",
+            "title": "Review the complete retained-example contrast",
+            "body": "The retained СССР corresponds to USSR and США to USA. Choose the English country abbreviation matching the Russian form. These are two admitted examples, not a complete list or a productive rule for pronouncing every Russian abbreviation.\n\nAbbreviations is the category heading for the supplied examples, not the English gloss of СССР or США. One retained check asks specifically for that heading; its answer is Abbreviations rather than USSR or USA. Distinguish a question about category from a question about the meaning of an individual example.",
             "exampleIds": [
               "ex-u30-abbrev-examples-0",
               "ex-u30-abbrev-examples-1"
@@ -14278,8 +14278,8 @@
           "step": {
             "id": "u30-st-teach-address-marks-1",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "Read the admitted examples on this card.",
+            "title": "Identify the city mark in its line",
+            "body": "In the supplied 115114 г. Москва, the mark identifies the city. The digits are the postal code and the following name the city; the city mark does not name the street or building. Interpret the mark within the address line rather than treating every number as a building number.",
             "referenceIds": [
               "ref-u2630-attribution"
             ],
@@ -14292,23 +14292,10 @@
         {
           "sessionId": "u30-s-address-marks",
           "step": {
-            "id": "u30-st-guided-address-marks-1",
-            "kind": "GUIDED",
-            "title": "Guided practice",
-            "body": "Choose the admitted record. The feedback states the frozen field.",
-            "itemIds": [
-              "u30-g-address-marks-0"
-            ],
-            "remediationStepId": "u30-st-rem-address-marks"
-          }
-        },
-        {
-          "sessionId": "u30-s-address-marks",
-          "step": {
             "id": "u30-st-teach-address-marks-2",
             "kind": "TEACH",
-            "title": "Admitted instruction",
-            "body": "The lines are marked with abbreviations:",
+            "title": "Read the first mark without ignoring the later marks",
+            "body": "In ул. Петрова, д. 14, кв. 15, the first mark identifies the street. The line then gives a building and an apartment. A question about the first mark therefore selects street rather than city or apartment. The individual address fields have different roles even when they share one printed line.",
             "referenceIds": [
               "ref-u2630-attribution"
             ]
@@ -14319,8 +14306,8 @@
           "step": {
             "id": "u30-st-teach-address-marks-3",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "Read the admitted examples on this card.",
+            "title": "Distinguish building from the other address fields",
+            "body": "The retained д. is glossed building. In the longer supplied line it precedes 14; the apartment field is separate. Choose building for this supplied mark rather than city or street. This small set checks recognition of retained marks, not the production of a complete unfamiliar postal address or acceptance of an owned-edition mapping.",
             "referenceIds": [
               "ref-u2630-attribution"
             ],
@@ -14332,13 +14319,27 @@
         {
           "sessionId": "u30-s-address-marks",
           "step": {
+            "id": "u30-st-guided-address-marks-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.",
+            "itemIds": [
+              "u30-g-address-marks-0"
+            ],
+            "remediationStepId": "u30-st-rem-address-marks"
+          }
+        },
+        {
+          "sessionId": "u30-s-address-marks",
+          "step": {
             "id": "u30-st-rem-address-marks",
             "kind": "REMEDIATE",
-            "title": "Remediation",
-            "body": "The lines are marked with abbreviations:",
+            "title": "Review the complete retained-example contrast",
+            "body": "In the supplied 115114 г. Москва, the mark identifies the city. The digits are the postal code and the following name the city; the city mark does not name the street or building. Interpret the mark within the address line rather than treating every number as a building number.\n\nIn ул. Петрова, д. 14, кв. 15, the first mark identifies the street. The line then gives a building and an apartment. A question about the first mark therefore selects street rather than city or apartment. The individual address fields have different roles even when they share one printed line.\n\nThe retained д. is glossed building. In the longer supplied line it precedes 14; the apartment field is separate. Choose building for this supplied mark rather than city or street. This small set checks recognition of retained marks, not the production of a complete unfamiliar postal address or acceptance of an owned-edition mapping.",
             "exampleIds": [
               "ex-u30-address-marks-0",
-              "ex-u30-address-marks-1"
+              "ex-u30-address-marks-1",
+              "ex-u30-address-marks-2"
             ]
           }
         },
@@ -14347,8 +14348,8 @@
           "step": {
             "id": "u30-st-teach-abbreviation-1",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "Read the admitted examples on this card.",
+            "title": "Read the retained category as a source grouping",
+            "body": "The source groups letter-name abbreviations and sound abbreviations ending in a vowel together under буквенные аббревиатуры и звуковые аббревиатуры на гласную. Its examples include СНГ and ЭВМ. This combined label does not say that every member is pronounced as a single word. The passage discusses their treatment as indeclinable forms.",
             "referenceIds": [
               "ref-u2630-attribution"
             ],
@@ -14361,23 +14362,10 @@
         {
           "sessionId": "u30-s-abbreviation",
           "step": {
-            "id": "u30-st-guided-abbreviation-1",
-            "kind": "GUIDED",
-            "title": "Guided practice",
-            "body": "Choose the admitted record. The feedback states the frozen field.",
-            "itemIds": [
-              "u30-g-abbreviation-0"
-            ],
-            "remediationStepId": "u30-st-rem-abbreviation"
-          }
-        },
-        {
-          "sessionId": "u30-s-abbreviation",
-          "step": {
             "id": "u30-st-teach-abbreviation-2",
             "kind": "TEACH",
-            "title": "Admitted instruction",
-            "body": "буквенные аббревиатуры и звуковые аббревиатуры на гласную",
+            "title": "Keep the supplied vowel-ending examples in that group",
+            "body": "The retained ГАИ and гороно are also included under the combined label in this passage. Select that supplied grouping when asked about гороно here. The separate phrase сложносокращённые слова names another group in the passage; do not replace the retained source grouping simply because a form is shortened. These examples do not establish an exhaustive taxonomy of all shortened words.",
             "referenceIds": [
               "ref-u2630-attribution"
             ]
@@ -14388,8 +14376,8 @@
           "step": {
             "id": "u30-st-teach-abbreviation-3",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "Read the admitted examples on this card.",
+            "title": "Compare the consonant-ending abbreviation and its two uses",
+            "body": "The supplied в МИД and в МИДе illustrate the source group звуковые аббревиатуры на согласную, sound abbreviations ending in a consonant. One retains the abbreviation unchanged and the other has a case ending. The source permits declined and undeclined use here. Its category contrasts with the combined letter-name/vowel-ending grouping.",
             "referenceIds": [
               "ref-u2630-attribution"
             ],
@@ -14404,8 +14392,8 @@
           "step": {
             "id": "u30-st-teach-abbreviation-4",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "Read the admitted examples on this card.",
+            "title": "Do not infer a universal ending rule from this list",
+            "body": "The category названия населённых пунктов refers to place names and is separate from the abbreviation groups in this exercise. These checks classify retained examples and the source explicitly allows both treatments for the consonant-ending example. They do not justify declining every consonant-ending abbreviation or predicting an unlisted abbreviation from spelling alone.",
             "referenceIds": [
               "ref-u2630-attribution"
             ],
@@ -14418,13 +14406,30 @@
         {
           "sessionId": "u30-s-abbreviation",
           "step": {
+            "id": "u30-st-guided-abbreviation-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.",
+            "itemIds": [
+              "u30-g-abbreviation-0"
+            ],
+            "remediationStepId": "u30-st-rem-abbreviation"
+          }
+        },
+        {
+          "sessionId": "u30-s-abbreviation",
+          "step": {
             "id": "u30-st-rem-abbreviation",
             "kind": "REMEDIATE",
-            "title": "Remediation",
-            "body": "буквенные аббревиатуры и звуковые аббревиатуры на гласную",
+            "title": "Review the complete retained-example contrast",
+            "body": "The source groups letter-name abbreviations and sound abbreviations ending in a vowel together under буквенные аббревиатуры и звуковые аббревиатуры на гласную. Its examples include СНГ and ЭВМ. This combined label does not say that every member is pronounced as a single word. The passage discusses their treatment as indeclinable forms.\n\nThe retained ГАИ and гороно are also included under the combined label in this passage. Select that supplied grouping when asked about гороно here. The separate phrase сложносокращённые слова names another group in the passage; do not replace the retained source grouping simply because a form is shortened. These examples do not establish an exhaustive taxonomy of all shortened words.\n\nThe supplied в МИД and в МИДе illustrate the source group звуковые аббревиатуры на согласную, sound abbreviations ending in a consonant. One retains the abbreviation unchanged and the other has a case ending. The source permits declined and undeclined use here. Its category contrasts with the combined letter-name/vowel-ending grouping.\n\nThe category названия населённых пунктов refers to place names and is separate from the abbreviation groups in this exercise. These checks classify retained examples and the source explicitly allows both treatments for the consonant-ending example. They do not justify declining every consonant-ending abbreviation or predicting an unlisted abbreviation from spelling alone.",
             "exampleIds": [
               "ex-u30-abbreviation-0",
-              "ex-u30-abbreviation-1"
+              "ex-u30-abbreviation-1",
+              "ex-u30-abbreviation-2",
+              "ex-u30-abbreviation-3",
+              "ex-u30-abbreviation-4",
+              "ex-u30-abbreviation-5"
             ]
           }
         },
@@ -14433,8 +14438,8 @@
           "step": {
             "id": "u30-st-teach-particle-1",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "Read the admitted examples on this card. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+            "title": "Recognize a request or wish rather than reported past action",
+            "body": "The supplied Пусть он читает expresses let him read, and Да будет мир! expresses let there be peace. The source classifies these as Повелительное наклонение, imperative mood, using particles. These examples express a request or wish rather than reporting that the action has already happened.",
             "referenceIds": [
               "ref-u2630-attribution"
             ],
@@ -14447,23 +14452,10 @@
         {
           "sessionId": "u30-s-particle",
           "step": {
-            "id": "u30-st-guided-particle-1",
-            "kind": "GUIDED",
-            "title": "Guided practice",
-            "body": "Choose the admitted record. The feedback states the frozen field.",
-            "itemIds": [
-              "u30-g-particle-0"
-            ],
-            "remediationStepId": "u30-st-rem-particle"
-          }
-        },
-        {
-          "sessionId": "u30-s-particle",
-          "step": {
             "id": "u30-st-teach-particle-2",
             "kind": "TEACH",
-            "title": "Admitted instruction",
-            "body": "предположительность или возможность действия",
+            "title": "Read the possibility meaning of the supplied conditional forms",
+            "body": "The retained читал бы and читали бы are grouped under предположительность или возможность, supposition or possibility. The particle combines with the supplied verb form to present a conditional or hypothetical meaning; the past-shaped form alone should not make this a report of an actual completed reading event. An English translation using would depends on context.",
             "referenceIds": [
               "ref-u2630-attribution"
             ]
@@ -14474,8 +14466,8 @@
           "step": {
             "id": "u30-st-teach-particle-3",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "Read the admitted examples on this card.",
+            "title": "Keep the two functions separate",
+            "body": "Choose the imperative label for the two let examples and the supposition/possibility label for the supplied conditional example. This is recognition of the retained constructions. It does not demonstrate forming every imperative, deciding every use of a particle, or assigning one universal meaning to that particle outside these examples.",
             "referenceIds": [
               "ref-u2630-attribution"
             ],
@@ -14488,13 +14480,28 @@
         {
           "sessionId": "u30-s-particle",
           "step": {
+            "id": "u30-st-guided-particle-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.",
+            "itemIds": [
+              "u30-g-particle-0"
+            ],
+            "remediationStepId": "u30-st-rem-particle"
+          }
+        },
+        {
+          "sessionId": "u30-s-particle",
+          "step": {
             "id": "u30-st-rem-particle",
             "kind": "REMEDIATE",
-            "title": "Remediation",
-            "body": "предположительность или возможность действия",
+            "title": "Review the complete retained-example contrast",
+            "body": "The supplied Пусть он читает expresses let him read, and Да будет мир! expresses let there be peace. The source classifies these as Повелительное наклонение, imperative mood, using particles. These examples express a request or wish rather than reporting that the action has already happened.\n\nThe retained читал бы and читали бы are grouped under предположительность или возможность, supposition or possibility. The particle combines with the supplied verb form to present a conditional or hypothetical meaning; the past-shaped form alone should not make this a report of an actual completed reading event. An English translation using would depends on context.\n\nChoose the imperative label for the two let examples and the supposition/possibility label for the supplied conditional example. This is recognition of the retained constructions. It does not demonstrate forming every imperative, deciding every use of a particle, or assigning one universal meaning to that particle outside these examples.",
             "exampleIds": [
               "ex-u30-particle-0",
-              "ex-u30-particle-1"
+              "ex-u30-particle-1",
+              "ex-u30-particle-2",
+              "ex-u30-particle-3"
             ]
           }
         },
@@ -14503,8 +14510,8 @@
           "step": {
             "id": "u30-st-teach-capstone-1",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "Read the admitted examples on this card. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+            "title": "Follow the rescue before the second return",
+            "body": "In the retained story a woman reports that a two-year-old girl remains in the burning house. Bob, the dog sent by the firefighters, returns carrying the girl. The supplied нёс де́вочку belongs to that rescue, before the later discovery involving a doll. The mother is glad her daughter is alive; the passage does not describe the rescue itself as the comic discovery.",
             "referenceIds": [
               "ref-u2630-attribution"
             ],
@@ -14517,10 +14524,22 @@
         {
           "sessionId": "u30-s-capstone",
           "step": {
+            "id": "u30-st-teach-capstone-2",
+            "kind": "TEACH",
+            "title": "Connect the laughter to what the dog carries next",
+            "body": "After the rescue Bob goes back into the house and returns carrying a large doll, expressed by несла́ большу́ю ку́клу. When the people recognize it, все расхохота́лись describes their laughter. The female grammatical form refers to the dog in that part of the narration, not the rescued girl carrying the doll. Match the reaction to the doll discovery and keep the earlier rescue separate. These checks interpret the supplied story, not an unfamiliar passage.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ]
+          }
+        },
+        {
+          "sessionId": "u30-s-capstone",
+          "step": {
             "id": "u30-st-guided-capstone-1",
             "kind": "GUIDED",
             "title": "Guided practice",
-            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "body": "Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.",
             "itemIds": [
               "u30-g-capstone-0"
             ],
@@ -14530,22 +14549,10 @@
         {
           "sessionId": "u30-s-capstone",
           "step": {
-            "id": "u30-st-teach-capstone-2",
-            "kind": "TEACH",
-            "title": "Admitted instruction",
-            "body": "Че́рез пять мину́т он вы́бежал из до́ма и в зуба́х за рубашо́нку нёс де́вочку.",
-            "referenceIds": [
-              "ref-u2630-attribution"
-            ]
-          }
-        },
-        {
-          "sessionId": "u30-s-capstone",
-          "step": {
             "id": "u30-st-rem-capstone",
             "kind": "REMEDIATE",
-            "title": "Remediation",
-            "body": "Че́рез пять мину́т он вы́бежал из до́ма и в зуба́х за рубашо́нку нёс де́вочку.",
+            "title": "Review the complete retained-example contrast",
+            "body": "In the retained story a woman reports that a two-year-old girl remains in the burning house. Bob, the dog sent by the firefighters, returns carrying the girl. The supplied нёс де́вочку belongs to that rescue, before the later discovery involving a doll. The mother is glad her daughter is alive; the passage does not describe the rescue itself as the comic discovery.\n\nAfter the rescue Bob goes back into the house and returns carrying a large doll, expressed by несла́ большу́ю ку́клу. When the people recognize it, все расхохота́лись describes their laughter. The female grammatical form refers to the dog in that part of the narration, not the rescued girl carrying the doll. Match the reaction to the doll discovery and keep the earlier rescue separate. These checks interpret the supplied story, not an unfamiliar passage.",
             "exampleIds": [
               "ex-u30-capstone-0",
               "ex-u30-capstone-1"
