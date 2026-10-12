@@ -1,8 +1,8 @@
 # Single-guided session sequence-review candidates
 
-Curriculum file SHA-256: `40f129363ecabaf3710a0c7134c4d7ab362d36c1fa3ce565473ecad69c4c1685`.
+Curriculum file SHA-256: `59d08619b95590bfed15a188719b01efc64be87fe47eb1ee916933709485e6fd`.
 
-**78 sessions require cue-level sequence review.** The scan finds teaching after the single guided-practice step. It does not establish that every flagged session is defective: each cue, answer and distractor must be checked against the teaching available before that step. Multiple guided-step sessions are outside this scan.
+**75 sessions require cue-level sequence review.** The scan finds teaching after the single guided-practice step. It does not establish that every flagged session is defective: each cue, answer and distractor must be checked against the teaching available before that step. Multiple guided-step sessions are outside this scan.
 
 The inventories reflect the live curriculum. Recent corrected sessions no longer carry their old ordering flags. Their implemented corrections remain pending final semantic audit. This inventory does not close CA009/CA010 or approve any other session.
 
@@ -64,9 +64,6 @@ The inventories reflect the live curriculum. Recent corrected sessions no longer
 | 15 | `u15-s-imperative` | `u15-st-guided-imperative-1` | `u15-st-teach-imperative-2`, `u15-st-teach-imperative-3` |
 | 15 | `u15-s-say-request` | `u15-st-guided-say-request-1` | `u15-st-teach-say-request-2`, `u15-st-teach-say-request-3`, `u15-st-teach-say-request-4` |
 | 15 | `u15-s-aspect-consolidate` | `u15-st-guided-aspect-consolidate-1` | `u15-st-teach-aspect-consolidate-2`, `u15-st-teach-aspect-consolidate-3` |
-| 26 | `u26-s-vy-capital` | `u26-st-guided-vy-capital-1` | `u26-st-teach-vy-capital-2`, `u26-st-teach-vy-capital-3` |
-| 26 | `u26-s-address-notation` | `u26-st-guided-address-notation-1` | `u26-st-teach-address-notation-2`, `u26-st-teach-address-notation-3` |
-| 26 | `u26-s-correspondence` | `u26-st-guided-correspondence-1` | `u26-st-teach-correspondence-2` |
 | 26 | `u26-s-gap-postal-address` | `u26-postal-guided` | `u26-postal-teach-2` |
 | 27 | `u27-s-passive` | `u27-st-guided-passive-1` | `u27-st-teach-passive-2`, `u27-st-teach-passive-3`, `u27-st-teach-passive-4` |
 | 27 | `u27-s-present-passive` | `u27-st-guided-present-passive-1` | `u27-st-teach-present-passive-2` |

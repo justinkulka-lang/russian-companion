@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "curriculumFileSha256": "40f129363ecabaf3710a0c7134c4d7ab362d36c1fa3ce565473ecad69c4c1685",
-  "candidateCount": 78,
+  "curriculumFileSha256": "59d08619b95590bfed15a188719b01efc64be87fe47eb1ee916933709485e6fd",
+  "candidateCount": 75,
   "affectedUnits": [
     3,
     4,
@@ -842,44 +842,6 @@
       "laterTeachingStepIds": [
         "u15-st-teach-aspect-consolidate-2",
         "u15-st-teach-aspect-consolidate-3"
-      ],
-      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
-    },
-    {
-      "unitNumber": 26,
-      "sessionId": "u26-s-vy-capital",
-      "guidedStepId": "u26-st-guided-vy-capital-1",
-      "guidedItemIds": [
-        "u26-g-vy-capital-0"
-      ],
-      "laterTeachingStepIds": [
-        "u26-st-teach-vy-capital-2",
-        "u26-st-teach-vy-capital-3"
-      ],
-      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
-    },
-    {
-      "unitNumber": 26,
-      "sessionId": "u26-s-address-notation",
-      "guidedStepId": "u26-st-guided-address-notation-1",
-      "guidedItemIds": [
-        "u26-g-address-notation-0"
-      ],
-      "laterTeachingStepIds": [
-        "u26-st-teach-address-notation-2",
-        "u26-st-teach-address-notation-3"
-      ],
-      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
-    },
-    {
-      "unitNumber": 26,
-      "sessionId": "u26-s-correspondence",
-      "guidedStepId": "u26-st-guided-correspondence-1",
-      "guidedItemIds": [
-        "u26-g-correspondence-0"
-      ],
-      "laterTeachingStepIds": [
-        "u26-st-teach-correspondence-2"
       ],
       "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
     },

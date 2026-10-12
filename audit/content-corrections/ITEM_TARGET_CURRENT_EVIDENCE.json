@@ -3,7 +3,7 @@
   "purpose": "Current evidence for the retained preliminary audit targets; no semantic closure or approval",
   "inputs": {
     "curriculumPath": "app/src/main/assets/content/v2-curriculum.json",
-    "curriculumFileSha256": "40f129363ecabaf3710a0c7134c4d7ab362d36c1fa3ce565473ecad69c4c1685",
+    "curriculumFileSha256": "59d08619b95590bfed15a188719b01efc64be87fe47eb1ee916933709485e6fd",
     "targetSnapshotPath": "audit/content-corrections/ITEM_TARGET_RECONCILIATION_PENDING.csv",
     "targetSnapshotFileSha256": "ba574c8a201baf52614b4cbdc35f9b3981e7a3de727df77e5c5f8ec827dce12f"
   },
@@ -13110,7 +13110,7 @@
         {
           "id": "obj-u26-vy-capital",
           "unitNumber": 26,
-          "title": "Choose the admitted label for the written capital form",
+          "title": "Recognize written letter case and its address limits",
           "kind": "RECOGNITION",
           "instructionStepIds": [
             "u26-st-orient",
@@ -13137,7 +13137,7 @@
         {
           "id": "obj-u26-address-notation",
           "unitNumber": 26,
-          "title": "Choose the admitted gloss for the shown address mark",
+          "title": "Distinguish locality, street, building and apartment marks",
           "kind": "RECOGNITION",
           "instructionStepIds": [
             "u26-st-orient",
@@ -13216,7 +13216,7 @@
         {
           "id": "obj-u26-correspondence",
           "unitNumber": 26,
-          "title": "Choose the admitted neutral correspondence fragment",
+          "title": "Distinguish enclosure and closing fragments",
           "kind": "RECOGNITION",
           "instructionStepIds": [
             "u26-st-orient",
@@ -13346,8 +13346,8 @@
           "step": {
             "id": "u26-st-teach-vy-capital-1",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "Read the admitted examples on this card.",
+            "title": "Recognize the initial letter before interpreting the addressee",
+            "body": "The supplied forms Вы, Вас and Вам each begin with a capital letter. The answer capital letter describes that visible initial. Minuscule means a lowercase letter; the option minuscule does not describe these displayed initials. The option plural form describes grammatical shape, not letter case. These are recognition checks, not a test of how many people a sentence addresses.",
             "referenceIds": [
               "ref-u2630-attribution"
             ],
@@ -13360,23 +13360,10 @@
         {
           "sessionId": "u26-s-vy-capital",
           "step": {
-            "id": "u26-st-guided-vy-capital-1",
-            "kind": "GUIDED",
-            "title": "Guided practice",
-            "body": "Choose the admitted record. The feedback states the frozen field.",
-            "itemIds": [
-              "u26-g-vy-capital-0"
-            ],
-            "remediationStepId": "u26-st-rem-vy-capital"
-          }
-        },
-        {
-          "sessionId": "u26-s-vy-capital",
-          "step": {
             "id": "u26-st-teach-vy-capital-2",
             "kind": "TEACH",
-            "title": "Admitted instruction",
-            "body": "It begins with a capital letter",
+            "title": "Distinguish polite singular address from grammatical plural shape",
+            "body": "The retained grammar note describes polite address to one person using forms shared with the plural. In personal letters and official papers, a capital initial can mark respectful address to one recipient. This written convention is different from plural meaning. The same grammatical forms can address several people, so a capital initial alone does not establish the number of addressees. Identify the recipient from context, not from the English label plural form.",
             "referenceIds": [
               "ref-u2630-attribution"
             ]
@@ -13387,8 +13374,8 @@
           "step": {
             "id": "u26-st-teach-vy-capital-3",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "Read the admitted examples on this card.",
+            "title": "Keep capitalization tied to written context",
+            "body": "In the supplied respectful written-address convention, Вы, Вас and Вам have capital initials. Current Gramota guidance distinguishes respectful address to one recipient from address to several people or a general audience, where lowercase is used. A sentence-initial capital is also ordinary sentence capitalization and need not mark respectful singular address. Lowercase outside this convention is not automatically rude. Capitalization cannot be heard in speech. These checks recognize the shown letter case; choosing forms for a new letter requires recipient and genre context.",
             "referenceIds": [
               "ref-u2630-attribution"
             ],
@@ -13400,13 +13387,27 @@
         {
           "sessionId": "u26-s-vy-capital",
           "step": {
+            "id": "u26-st-guided-vy-capital-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Read the displayed form or fragment and choose the supplied meaning. A miss returns to all teaching cards and worked examples.",
+            "itemIds": [
+              "u26-g-vy-capital-0"
+            ],
+            "remediationStepId": "u26-st-rem-vy-capital"
+          }
+        },
+        {
+          "sessionId": "u26-s-vy-capital",
+          "step": {
             "id": "u26-st-rem-vy-capital",
             "kind": "REMEDIATE",
-            "title": "Remediation",
-            "body": "It begins with a capital letter",
+            "title": "Review the complete written-form distinction",
+            "body": "The supplied forms Вы, Вас and Вам each begin with a capital letter. The answer capital letter describes that visible initial. Minuscule means a lowercase letter; the option minuscule does not describe these displayed initials. The option plural form describes grammatical shape, not letter case. These are recognition checks, not a test of how many people a sentence addresses.\n\nThe retained grammar note describes polite address to one person using forms shared with the plural. In personal letters and official papers, a capital initial can mark respectful address to one recipient. This written convention is different from plural meaning. The same grammatical forms can address several people, so a capital initial alone does not establish the number of addressees. Identify the recipient from context, not from the English label plural form.\n\nIn the supplied respectful written-address convention, Вы, Вас and Вам have capital initials. Current Gramota guidance distinguishes respectful address to one recipient from address to several people or a general audience, where lowercase is used. A sentence-initial capital is also ordinary sentence capitalization and need not mark respectful singular address. Lowercase outside this convention is not automatically rude. Capitalization cannot be heard in speech. These checks recognize the shown letter case; choosing forms for a new letter requires recipient and genre context.",
             "exampleIds": [
               "ex-u26-vy-capital-0",
-              "ex-u26-vy-capital-1"
+              "ex-u26-vy-capital-1",
+              "ex-u26-vy-capital-2"
             ]
           }
         },
@@ -13415,8 +13416,8 @@
           "step": {
             "id": "u26-st-teach-address-notation-1",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "Read the admitted examples on this card.",
+            "title": "Recognize the locality mark",
+            "body": "In 115114 г. Москва, г. marks the city or locality; the supplied English gloss is city. The number is a postcode, not the abbreviation being tested. The options street and building refer to different components. Read the requested abbreviation rather than treating every number or place name as the same part of an address.",
             "referenceIds": [
               "ref-u2630-attribution"
             ],
@@ -13429,23 +13430,10 @@
         {
           "sessionId": "u26-s-address-notation",
           "step": {
-            "id": "u26-st-guided-address-notation-1",
-            "kind": "GUIDED",
-            "title": "Guided practice",
-            "body": "Choose the admitted record. The feedback states the frozen field.",
-            "itemIds": [
-              "u26-g-address-notation-0"
-            ],
-            "remediationStepId": "u26-st-rem-address-notation"
-          }
-        },
-        {
-          "sessionId": "u26-s-address-notation",
-          "step": {
             "id": "u26-st-teach-address-notation-2",
             "kind": "TEACH",
-            "title": "Admitted instruction",
-            "body": "The lines are marked with abbreviations:",
+            "title": "Distinguish street, building and apartment",
+            "body": "In ул. Петрова, д. 14, кв. 15, the first mark ул. identifies the street. The later д. identifies the building, and кв. identifies the apartment. The supplied line thus separates street name, building number and apartment number. The answer street matches the first mark; city belongs to the locality mark and apartment belongs to the later mark. Abbreviations label address components; their positions and associated numbers help distinguish them.",
             "referenceIds": [
               "ref-u2630-attribution"
             ]
@@ -13456,8 +13444,8 @@
           "step": {
             "id": "u26-st-teach-address-notation-3",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "Read the admitted examples on this card.",
+            "title": "Identify a building mark without inventing delivery details",
+            "body": "The separate supplied mark д. has the English gloss building. It does not name the city or street. The line with building and apartment numbers shows why those two numbers must not be confused. These checks recognize marks in retained example lines. They do not prove that a sample address is current or deliverable, prescribe a universal postal order, or require an apartment number where none exists.",
             "referenceIds": [
               "ref-u2630-attribution"
             ],
@@ -13469,13 +13457,27 @@
         {
           "sessionId": "u26-s-address-notation",
           "step": {
+            "id": "u26-st-guided-address-notation-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Read the displayed form or fragment and choose the supplied meaning. A miss returns to all teaching cards and worked examples.",
+            "itemIds": [
+              "u26-g-address-notation-0"
+            ],
+            "remediationStepId": "u26-st-rem-address-notation"
+          }
+        },
+        {
+          "sessionId": "u26-s-address-notation",
+          "step": {
             "id": "u26-st-rem-address-notation",
             "kind": "REMEDIATE",
-            "title": "Remediation",
-            "body": "The lines are marked with abbreviations:",
+            "title": "Review the complete written-form distinction",
+            "body": "In 115114 г. Москва, г. marks the city or locality; the supplied English gloss is city. The number is a postcode, not the abbreviation being tested. The options street and building refer to different components. Read the requested abbreviation rather than treating every number or place name as the same part of an address.\n\nIn ул. Петрова, д. 14, кв. 15, the first mark ул. identifies the street. The later д. identifies the building, and кв. identifies the apartment. The supplied line thus separates street name, building number and apartment number. The answer street matches the first mark; city belongs to the locality mark and apartment belongs to the later mark. Abbreviations label address components; their positions and associated numbers help distinguish them.\n\nThe separate supplied mark д. has the English gloss building. It does not name the city or street. The line with building and apartment numbers shows why those two numbers must not be confused. These checks recognize marks in retained example lines. They do not prove that a sample address is current or deliverable, prescribe a universal postal order, or require an apartment number where none exists.",
             "exampleIds": [
               "ex-u26-address-notation-0",
-              "ex-u26-address-notation-1"
+              "ex-u26-address-notation-1",
+              "ex-u26-address-notation-2"
             ]
           }
         },
@@ -13608,8 +13610,8 @@
           "step": {
             "id": "u26-st-teach-correspondence-1",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "Read the admitted examples on this card. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+            "title": "Separate an enclosure from a closing",
+            "body": "The retained pair к настоящему письму прилагается — enclosed please find introduces something supplied with the letter. The English gloss is a conventional correspondence expression, not a complete list of possible translations. It has an enclosure function. С уважением — Respectfully is a closing formula before the signature. An enclosure statement and a closing do different jobs: enclosed please find does not close the letter, and Respectfully does not say that a document is enclosed.",
             "referenceIds": [
               "ref-u2630-attribution"
             ],
@@ -13622,10 +13624,22 @@
         {
           "sessionId": "u26-s-correspondence",
           "step": {
+            "id": "u26-st-teach-correspondence-2",
+            "kind": "TEACH",
+            "title": "Choose the fragment by its correspondence function",
+            "body": "When the cue is к настоящему письму прилагается, choose enclosed please find. When the cue is С уважением, choose Respectfully. When the English cue is enclosed please find, the retained Russian match is к настоящему письму прилагается rather than С уважением. These two source-supplied pairs support recognition of enclosure versus closing, not universal formulas for every recipient or mastery of composing a complete letter. Use the retained example fragments; no new Russian sentence is required here.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ]
+          }
+        },
+        {
+          "sessionId": "u26-s-correspondence",
+          "step": {
             "id": "u26-st-guided-correspondence-1",
             "kind": "GUIDED",
             "title": "Guided practice",
-            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "body": "Read the displayed form or fragment and choose the supplied meaning. A miss returns to all teaching cards and worked examples.",
             "itemIds": [
               "u26-g-correspondence-0"
             ],
@@ -13635,22 +13649,10 @@
         {
           "sessionId": "u26-s-correspondence",
           "step": {
-            "id": "u26-st-teach-correspondence-2",
-            "kind": "TEACH",
-            "title": "Admitted instruction",
-            "body": "к настоящему письму прилагается—enclosed please find",
-            "referenceIds": [
-              "ref-u2630-attribution"
-            ]
-          }
-        },
-        {
-          "sessionId": "u26-s-correspondence",
-          "step": {
             "id": "u26-st-rem-correspondence",
             "kind": "REMEDIATE",
-            "title": "Remediation",
-            "body": "к настоящему письму прилагается—enclosed please find",
+            "title": "Review the complete written-form distinction",
+            "body": "The retained pair к настоящему письму прилагается — enclosed please find introduces something supplied with the letter. The English gloss is a conventional correspondence expression, not a complete list of possible translations. It has an enclosure function. С уважением — Respectfully is a closing formula before the signature. An enclosure statement and a closing do different jobs: enclosed please find does not close the letter, and Respectfully does not say that a document is enclosed.\n\nWhen the cue is к настоящему письму прилагается, choose enclosed please find. When the cue is С уважением, choose Respectfully. When the English cue is enclosed please find, the retained Russian match is к настоящему письму прилагается rather than С уважением. These two source-supplied pairs support recognition of enclosure versus closing, not universal formulas for every recipient or mastery of composing a complete letter. Use the retained example fragments; no new Russian sentence is required here.",
             "exampleIds": [
               "ex-u26-correspondence-0",
               "ex-u26-correspondence-1"
