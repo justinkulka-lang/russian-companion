@@ -1,0 +1,25 @@
+{
+  "baselineCommit": "e33612c3073a8ca59913d484c46404095a6bb01e",
+  "beforeSha256": "7040cc03c426fca7b819073ba1c611bb79f82c43c063cfa8c4f0e9b898c202b6",
+  "afterSha256": "48f68eac2aff40ef8c1abb2e873dca930bd5e21e76289322cfeacb8eadc59403",
+  "priorProvenancePreserved": 5689,
+  "addedPendingProvenance": 23,
+  "changedItemIds": [
+    "u5-i-indecl-\u0440\u0430\u0434\u0438\u043e",
+    "u5-i-indecl-\u0442\u0430\u043a\u0441\u0438",
+    "u5-i-indecl-\u043c\u0435\u0442\u0440\u043e",
+    "u5-i-indecl-\u043a\u0438\u043d\u043e",
+    "u5-i-decl-\u043a\u043d\u0438\u0433\u0430",
+    "u5-i-decl-\u043e\u043a\u043d\u043e"
+  ],
+  "other29UnitsUnchanged": true,
+  "allRussianItemCuesUnchanged": true,
+  "examplesSourcesRightsReferencesCapabilitiesMappingsUnchanged": true,
+  "semanticAcceptance": false,
+  "deterministicBaselineReplay": true,
+  "byteIdempotence": true,
+  "frozenResearchFiles": {
+    "catalog/sources/units-3-5/openrussian/nouns.csv": "c388f9e6dde51932832be8d7e9afdbe9f0acee72fcf70677f0fe25ea61293c84",
+    "catalog/sources/units-3-5/wikibooks/nominative-4213267.txt": "c00d0dbe20bde2abd3aae63d08bf6a3f5a291f5cbfcd0cea5c853af04a6e1c84"
+  }
+}

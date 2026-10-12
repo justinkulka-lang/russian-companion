@@ -4533,7 +4533,42 @@ internal object V2Validator {
         }
     }
 
+    /** Curated interpretation of the retained lexical field; mutable synthesis cannot reverse it. */
+    private fun validateIndeclinabilityBinding(pack: V2CurriculumPack, item: V2CheckItem, errors: MutableList<String>) {
+        val cues = mapOf(
+            "u5-i-indecl-радио" to "ра́дио", "u5-i-indecl-такси" to "такси́",
+            "u5-i-indecl-метро" to "метро́", "u5-i-indecl-кино" to "кино́",
+            "u5-i-decl-книга" to "кни́га", "u5-i-decl-окно" to "окно́",
+        )
+        val cue = cues[item.id]
+        if (cue == null) {
+            if (item.kind == "SOURCE_INDECLINABLE") errors += "Item ${item.id} has no curated indeclinability binding"
+            return
+        }
+        val unchanged = "Indeclinable: unchanged for case or number"
+        val changeable = "Declinable: can change for case"
+        val flag = if (item.id.startsWith("u5-i-indecl-")) "1" else "0"
+        val lemma = item.id.substringAfterLast('-')
+        fun admittedCell(field: String, original: String, shown: String) = pack.provenanceRecords.any {
+            it.sourceId == OPENRUSSIAN_SOURCE && it.sourceRevision == "50e210c4803237779cb562bc1abcea529066031c" &&
+                it.unitNumber == 5 && it.objectiveId == "obj-u5-indeclinable" &&
+                it.sourceRecordId == "nouns.csv:$lemma#$field" && it.originalSourceText == original &&
+                it.shippedText == shown && verifiedFrozen(it)
+        }
+        val definitionBound = pack.provenanceRecords.any {
+            it.itemId == "prov-u5-indecl-rule" && it.sourceRevision == "4213267" &&
+                it.sourceId == "src-wikibooks-russian-cc-by-sa" &&
+                it.sourceHash == "6bec55fd46db6aa454810912d195369f920b099dcfa87cd2b1992b0ed7ec95d6" && verifiedFrozen(it)
+        }
+        if (item.kind != "SOURCE_INDECLINABLE" || item.objectiveId != "obj-u5-indeclinable" ||
+            item.sourceId != OPENRUSSIAN_SOURCE || item.promptLetter != cue ||
+            item.options != listOf(unchanged, changeable) || item.answer != (if (flag == "1") unchanged else changeable) ||
+            !admittedCell("indeclinable", flag, flag) || !admittedCell("accented", cue.replace("́", "'"), cue) || !definitionBound
+        ) errors += "Item ${item.id} indeclinability binding does not match the frozen noun and definition"
+    }
+
     private fun validateItem(pack: V2CurriculumPack, item: V2CheckItem, errors: MutableList<String>) {
+        validateIndeclinabilityBinding(pack, item, errors)
         if (item.promptLetterRole !in setOf("CUE", "ANSWER_REFERENCE") ||
             (item.promptLetterRole == "ANSWER_REFERENCE" &&
                 (item.kind != "SOURCE_QUESTION" || item.promptLetter != item.answer))) {
