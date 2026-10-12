@@ -11,12 +11,12 @@ Unit 5 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 4f5cb8024d3f68a37052fdf85b5755bffa2a0904
-- Unit content-review SHA-256: af8ff069a8d1bbb7213c9883f1e43d82e15b811b6c1d8552524606316f4e2387
+- Curriculum source commit: 7873c4794c65d06dacf8f80bcb8fcbf110f975b3
+- Unit content-review SHA-256: 2d0bd5ce23de6a68c10be5a349554b768f551faaf0a90c3432bd5d6e00d1cd73
 - Mapping-package SHA-256: 2a08c3d25c46aa6820a3798cafb90e415a873dbaa13bb003c42f330d15fe40ec
-- Pack content-review SHA-256: 7fec0b001b0ba946f54f873264e9e4d39a6e582334b5cafe7b689e40797e3f6b
-- Review-package SHA-256: df0d359baee32f388c8f496106e3cabec00044fde80e0200d6577763f86ca468
-- Repository source SHA-256: 7e5628d06ace81b382bfbcb094c64a01e2f9c0d03326a30112a29b27ff7c1d40
+- Pack content-review SHA-256: cb67d5e9fbe81a4673a33e8b7728216dd618df3b1b9b0c9d629b34c7d8108e45
+- Review-package SHA-256: 33524ffeef0069e16031da2a590c2a4bfed01738ec9e9eb154ebcb38b901b3a9
+- Repository source SHA-256: 601c8cc8197ca64051ad3eb77d9243c906ee99cc4fc3eccb74dba77311831ddf
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -151,12 +151,12 @@ remediation=u5-st-rem-prepositional
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ab5d57a2a81dd881c02f24ca0580281305dbe3f6d68ccee77f225c2ca372a695
+- Content hash: 569dd3570b908d8dab32db4aff98e32861a763c5cf6421f2e58e5b9dc3859bf3
 
 title=Recognize admitted indeclinable nouns
 kind=RECOGNITION
 unitNumber=5
-instruction=u5-st-orient,u5-st-teach-indeclinable-1,u5-st-teach-indeclinable-2,u5-st-teach-indeclinable-3
+instruction=u5-st-orient,u5-st-teach-indeclinable-1,u5-st-teach-indeclinable-2,u5-st-teach-indeclinable-3,u5-st-teach-indeclinable-4
 examples=ex-u5-indecl-радио,ex-u5-indecl-такси,ex-u5-indecl-метро,ex-u5-indecl-кино,ex-u5-indecl-пальто,ex-u5-indecl-кофе,ex-u5-indecl-кафе,ex-u5-indecl-меню
 practice=u5-st-guided-indeclinable-1
 checks=u5-i-indecl-такси,u5-i-indecl-метро,u5-i-indecl-кино,u5-i-decl-книга,u5-i-decl-окно
@@ -674,12 +674,12 @@ remediationStepId=u5-st-rem-prepositional
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f0edc3e893da3c516ccd6e1ab8df3baf2cfc66da04fae21894c35c718c1359a5
+- Content hash: b88e1c62677536876d3c88d72f23705f813431e23c39748c12fbcd6225cfcbb1
 
 title=Recognize admitted indeclinable nouns
 estimatedMinutes=12
 objectives=obj-u5-indeclinable
-steps=u5-st-teach-indeclinable-1,u5-st-guided-indeclinable-1,u5-st-teach-indeclinable-2,u5-st-teach-indeclinable-3,u5-st-rem-indeclinable,u5-st-check-indeclinable
+steps=u5-st-teach-indeclinable-1,u5-st-guided-indeclinable-1,u5-st-teach-indeclinable-2,u5-st-teach-indeclinable-3,u5-st-rem-indeclinable,u5-st-teach-indeclinable-4,u5-st-check-indeclinable
 
 ### STEP `u5-st-teach-indeclinable-1`
 
@@ -689,11 +689,11 @@ steps=u5-st-teach-indeclinable-1,u5-st-guided-indeclinable-1,u5-st-teach-indecli
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a662eeda9fad34bb51d00162c056b222f864184ba4c5a317f282dbfdd3babcef
+- Content hash: 088b665a604a06565e49f6f29bab2c63ad5962378c0e92b4bb6cccfcf3936ead
 
 kind=TEACH
-title=What the frozen page says about words that do not change
-body=The frozen page says these have irregular genders, and are indeclinable (that is, they don't change according to case or number). ра́дио — radio. такси́ — taxi. 
+title=Nouns that keep their form
+body=An indeclinable noun keeps the same form for case or number. In these examples, ра́дио and такси́ are indeclinable. Recognize the behavior of the shown noun.
 dominantAction=Continue
 references=ref-u35-attribution
 items=
@@ -711,11 +711,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1008551bd9f0ac0c79b28eed66b3c5e2e79fa640869c90a3043d670a5255bd7d
+- Content hash: d12f92be5812c5d5d83a6f64e987d4cd06928732d6cdcff8758f86b2f56cb212
 
 kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
+title=Guided noun classification
+body=Choose how the shown noun behaves. Read the explanation after choosing.
 dominantAction=Continue
 references=
 items=u5-i-indecl-радио
@@ -733,11 +733,11 @@ remediationStepId=u5-st-rem-indeclinable
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: faf0390f24a62293617b2972734c7ef33f728ce1c7dc5b56b4cfad04f2958093
+- Content hash: 43699131cb55b96ba7ff69f369d343770ffd9c078e3840afff4cea4653e0ab21
 
 kind=TEACH
-title=Four admitted rows with the flag set
-body=The admitted rows below have the flag set. That flag is the record used here. метро́ — metro. кино́ — cinema. пальто́ — coat. ко́фе — coffee. 
+title=Four more unchanged nouns
+body=The nouns метро́, кино́, пальто́ and ко́фе are also indeclinable. Their forms stay unchanged for case or number. Learn the noun with this behavior; do not infer that every noun with a similar ending behaves the same way.
 dominantAction=Continue
 references=ref-u35-attribution
 items=
@@ -755,11 +755,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8e36e5e5dae2addd6759d635248df0d91523eaff5ee51df963f9b164b0cc10bd
+- Content hash: 52189e7bd6a1d1e12882270f5486ac7b6b3701ab9e2011b3ec6b2f48a62701e1
 
 kind=TEACH
-title=Two more admitted rows with the flag set
-body=The admitted rows below have the flag set. кафе́ — café. меню́ — menu. 
+title=Recognize the behavior
+body=кафе́ and меню́ are two more indeclinable nouns. An unchanged word form does not mean that a sentence has no case relationships. These checks classify the shown noun; they do not test production of a sentence or a complete paradigm.
 dominantAction=Continue
 references=ref-u35-attribution
 items=
@@ -777,15 +777,43 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e928698bca3cde4a1c4020f04193b54e791accb3290897180cffa29ee2bfcebf
+- Content hash: f16b4404e4c7349195315dccf867b712742059de53c0a5d7c7c8b9612cdc95df
 
 kind=REMEDIATE
-title=Remediation
-body=Return to the explanation. Compare the shown form with the admitted record. Do not invent a form that is absent from the record.
+title=Review noun behavior
+body=An indeclinable noun keeps the same form for case or number. In these examples, ра́дио and такси́ are indeclinable. Recognize the behavior of the shown noun.
+
+The nouns метро́, кино́, пальто́ and ко́фе are also indeclinable. Their forms stay unchanged for case or number. Learn the noun with this behavior; do not infer that every noun with a similar ending behaves the same way.
+
+кафе́ and меню́ are two more indeclinable nouns. An unchanged word form does not mean that a sentence has no case relationships. These checks classify the shown noun; they do not test production of a sentence or a complete paradigm.
+
+Contrast кни́га and окно́: these nouns are declinable, so they can change for case. Their nominative and genitive forms differ. Choose the behavior of the shown noun: unchanged for case or number, or able to change for case. No new form needs to be invented.
 dominantAction=Continue
 references=
 items=
-examples=ex-u5-indecl-радио,ex-u5-indecl-такси
+examples=ex-u5-indecl-радио,ex-u5-indecl-такси,ex-u5-indecl-метро,ex-u5-indecl-кино,ex-u5-indecl-пальто,ex-u5-indecl-кофе,ex-u5-indecl-кафе,ex-u5-indecl-меню
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u5-st-teach-indeclinable-4`
+
+- Objectives: obj-u5-indeclinable
+- Sessions: u5-s-indeclinable
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: eee4243e6e83a9271351b0074b18c8f6c5f71f71e46933506eb002d911b887ba
+
+kind=TEACH
+title=Contrast nouns that can change
+body=Contrast кни́га and окно́: these nouns are declinable, so they can change for case. Their nominative and genitive forms differ. Choose the behavior of the shown noun: unchanged for case or number, or able to change for case. No new form needs to be invented.
+dominantAction=Continue
+references=ref-u35-attribution
+items=
+examples=
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -799,11 +827,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f06b3744dbc5bf2e4c2d4329ec693832f6c8c0a4b9061f2352721ba9f2355e5d
+- Content hash: 23575e07fed630152eae99239d79aba80dfb16c306e36bf81a4905180615b422
 
 kind=CHECK
-title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+title=Independent noun classification
+body=Classify the shown noun by its case behavior. A miss returns to all four explanations and the retained examples.
 dominantAction=Continue
 references=
 items=u5-i-indecl-такси,u5-i-indecl-метро,u5-i-indecl-кино,u5-i-decl-книга,u5-i-decl-окно
@@ -1625,15 +1653,15 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 55b4d3fc164e850e4a1e6e785f2a6ec54a5b931ffa27f16e655b2b0b154e7dfb
+- Content hash: 41033429885e3c5a8c414175e74befa743a26f95a67f97789fea251324e54788
 
 kind=SOURCE_INDECLINABLE
 language=en
-prompt=Which flag does the admitted row record?
+prompt=Which behavior applies to the shown noun?
 promptLetter=ра́дио
-options=1 | 0
-answer=1
-feedback=The frozen row sets the flag to 1.
+options=Indeclinable: unchanged for case or number | Declinable: can change for case
+answer=Indeclinable: unchanged for case or number
+feedback=ра́дио is indeclinable: its form stays unchanged for case or number. Choose the unchanged behavior, rather than the behavior of a declinable noun.
 objectiveId=obj-u5-indeclinable
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
@@ -1835,15 +1863,15 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 8e59d2fe49a44bdd60c65a53b7fdc6f1115953e98cb37a8f567579b39167270d
+- Content hash: 3346f078c2a342304c5a4febc9c81de543c2567dd12870e924997720d77d021f
 
 kind=SOURCE_INDECLINABLE
 language=en
-prompt=Which flag does the admitted row record?
+prompt=Which behavior applies to the shown noun?
 promptLetter=такси́
-options=1 | 0
-answer=1
-feedback=The frozen row sets the flag to 1.
+options=Indeclinable: unchanged for case or number | Declinable: can change for case
+answer=Indeclinable: unchanged for case or number
+feedback=такси́ is indeclinable: its form stays unchanged for case or number. Choose the unchanged behavior, rather than the behavior of a declinable noun.
 objectiveId=obj-u5-indeclinable
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
@@ -1856,15 +1884,15 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 4a6e54ecdf644e8d7ae8f2ed91e7eada856d2a080ec278383d178e74688307b1
+- Content hash: 5f8abc00525010d352876a80a0834f6a87301a76f2a94118361d752259bb491b
 
 kind=SOURCE_INDECLINABLE
 language=en
-prompt=Which flag does the admitted row record?
+prompt=Which behavior applies to the shown noun?
 promptLetter=метро́
-options=1 | 0
-answer=1
-feedback=The frozen row sets the flag to 1.
+options=Indeclinable: unchanged for case or number | Declinable: can change for case
+answer=Indeclinable: unchanged for case or number
+feedback=метро́ is indeclinable: its form stays unchanged for case or number. Choose the unchanged behavior, rather than the behavior of a declinable noun.
 objectiveId=obj-u5-indeclinable
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
@@ -1877,15 +1905,15 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: f40952e331ca9c707658950b20b99e52e6c95d6af1c24d6c6aa573787177f559
+- Content hash: c9bb6c783bafa4c22097957d40394ccddd63693efcd32a1cef814421fd4ff55e
 
 kind=SOURCE_INDECLINABLE
 language=en
-prompt=Which flag does the admitted row record?
+prompt=Which behavior applies to the shown noun?
 promptLetter=кино́
-options=1 | 0
-answer=1
-feedback=The frozen row sets the flag to 1.
+options=Indeclinable: unchanged for case or number | Declinable: can change for case
+answer=Indeclinable: unchanged for case or number
+feedback=кино́ is indeclinable: its form stays unchanged for case or number. Choose the unchanged behavior, rather than the behavior of a declinable noun.
 objectiveId=obj-u5-indeclinable
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
@@ -1898,15 +1926,15 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 6afb00565a7e3188a57799b3420d5fdd993fea509cecc987296f0b00badb726f
+- Content hash: e658a871614c0fc994cbd1a5b02a9a5695e16694f0c4a99bf4f0e6115e0ffdd8
 
 kind=SOURCE_INDECLINABLE
 language=en
-prompt=Which flag does the admitted row record?
+prompt=Which behavior applies to the shown noun?
 promptLetter=кни́га
-options=1 | 0
-answer=0
-feedback=The frozen row sets the flag to 0.
+options=Indeclinable: unchanged for case or number | Declinable: can change for case
+answer=Declinable: can change for case
+feedback=кни́га is declinable: it can change for case. Its nominative and genitive forms differ, so the unchanged behavior does not describe this noun.
 objectiveId=obj-u5-indeclinable
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
@@ -1919,15 +1947,15 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: b7f9d9248a4727fe3d41a7df8427e3c990f9a741f00ea64039162e28ccb3347e
+- Content hash: bcf1f0dab68ef39d5c6194ce626d6e7f76830f558e30e35dbaf2ce617d7137b4
 
 kind=SOURCE_INDECLINABLE
 language=en
-prompt=Which flag does the admitted row record?
+prompt=Which behavior applies to the shown noun?
 promptLetter=окно́
-options=1 | 0
-answer=0
-feedback=The frozen row sets the flag to 0.
+options=Indeclinable: unchanged for case or number | Declinable: can change for case
+answer=Declinable: can change for case
+feedback=окно́ is declinable: it can change for case. Its nominative and genitive forms differ, so the unchanged behavior does not describe this noun.
 objectiveId=obj-u5-indeclinable
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
@@ -1967,6 +1995,708 @@ classification=OPERATIONAL_GUIDANCE
 introducedInUnit=3
 searchTerms=where lesson bodies are packaged
 reviewStatus=NOT_REQUIRED
+
+### PROVENANCE `prov-ca-u5-behavior-changeable-choice`
+
+- Objectives: obj-u5-indeclinable
+- Sessions: u5-s-orient, u5-s-indeclinable
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8d430b42229229bae929244542e9553183a5e381e94a8c465a983925fb20207b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u5-indeclinable:behavior:changeable-choice
+originalSourceText=Retained Wikibooks Russian/Grammar/Nominative oldid4213267, prov-u5-indecl-rule: indeclinable means no change according to case or number. Retained OpenRussian nouns.csv at commit50e210c4803237779cb562bc1abcea529066031c: indeclinable=1 for радио,такси,метро,кино,пальто,кофе,кафе,меню; indeclinable=0 for книга,окно. The latter rows have different sg_nom and sg_gen forms. Existing Russian display/flag provenance is retained byte-for-byte. Bounded application inference: classify these already admitted nouns by their recorded behavior, without producing new Russian forms or teaching a general ending-based guess. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no primary prose or owned-book text copied; final semantic audit pending.
+Declinable: can change for case
+shippedText=Declinable: can change for case
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=aea5887bdc8c7b10654b12f0b24569b51f1f34479b18ff9eb6c77bad3cf708fb
+contentHash=bfeae062f05e0cf0c42e73a9740680f67aff9c46e2a528e6098646d462102d53
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u5-behavior-prompt`
+
+- Objectives: obj-u5-indeclinable
+- Sessions: u5-s-orient, u5-s-indeclinable
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 28b309f8b1403b6d4ae5f37be1f5a98f285085436c10413cd39be3c5243b18d4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u5-indeclinable:behavior:prompt
+originalSourceText=Retained Wikibooks Russian/Grammar/Nominative oldid4213267, prov-u5-indecl-rule: indeclinable means no change according to case or number. Retained OpenRussian nouns.csv at commit50e210c4803237779cb562bc1abcea529066031c: indeclinable=1 for радио,такси,метро,кино,пальто,кофе,кафе,меню; indeclinable=0 for книга,окно. The latter rows have different sg_nom and sg_gen forms. Existing Russian display/flag provenance is retained byte-for-byte. Bounded application inference: classify these already admitted nouns by their recorded behavior, without producing new Russian forms or teaching a general ending-based guess. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no primary prose or owned-book text copied; final semantic audit pending.
+Which behavior applies to the shown noun?
+shippedText=Which behavior applies to the shown noun?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ccf20c3c96b1a45d2d866831d50b4f3a7f1757324a15a49fa1397c887b138e17
+contentHash=67df1cb1c1e73526a86b9e04ea6cbb3b5eea2b6ad19955cc90f59c724fa93986
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u5-behavior-rem-body`
+
+- Objectives: obj-u5-indeclinable
+- Sessions: u5-s-orient, u5-s-indeclinable
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3b0a149cba53728c331e57e7f7921fec84c59fd223586b9c8269adc7d5d7898a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u5-indeclinable:behavior:rem-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Nominative oldid4213267, prov-u5-indecl-rule: indeclinable means no change according to case or number. Retained OpenRussian nouns.csv at commit50e210c4803237779cb562bc1abcea529066031c: indeclinable=1 for радио,такси,метро,кино,пальто,кофе,кафе,меню; indeclinable=0 for книга,окно. The latter rows have different sg_nom and sg_gen forms. Existing Russian display/flag provenance is retained byte-for-byte. Bounded application inference: classify these already admitted nouns by their recorded behavior, without producing new Russian forms or teaching a general ending-based guess. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no primary prose or owned-book text copied; final semantic audit pending.
+An indeclinable noun keeps the same form for case or number. In these examples, ра́дио and такси́ are indeclinable. Recognize the behavior of the shown noun.
+
+The nouns метро́, кино́, пальто́ and ко́фе are also indeclinable. Their forms stay unchanged for case or number. Learn the noun with this behavior; do not infer that every noun with a similar ending behaves the same way.
+
+кафе́ and меню́ are two more indeclinable nouns. An unchanged word form does not mean that a sentence has no case relationships. These checks classify the shown noun; they do not test production of a sentence or a complete paradigm.
+
+Contrast кни́га and окно́: these nouns are declinable, so they can change for case. Their nominative and genitive forms differ. Choose the behavior of the shown noun: unchanged for case or number, or able to change for case. No new form needs to be invented.
+shippedText=An indeclinable noun keeps the same form for case or number. In these examples, ра́дио and такси́ are indeclinable. Recognize the behavior of the shown noun.
+
+The nouns метро́, кино́, пальто́ and ко́фе are also indeclinable. Their forms stay unchanged for case or number. Learn the noun with this behavior; do not infer that every noun with a similar ending behaves the same way.
+
+кафе́ and меню́ are two more indeclinable nouns. An unchanged word form does not mean that a sentence has no case relationships. These checks classify the shown noun; they do not test production of a sentence or a complete paradigm.
+
+Contrast кни́га and окно́: these nouns are declinable, so they can change for case. Their nominative and genitive forms differ. Choose the behavior of the shown noun: unchanged for case or number, or able to change for case. No new form needs to be invented.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6e3c58690842f9185e758457e54765c9050cdd223598509d45d26aa5b2b750a7
+contentHash=fed63a2d64fd3e887bbc88fa4a9376799a6e1c4671a7d5821929556658700956
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u5-behavior-rem-title`
+
+- Objectives: obj-u5-indeclinable
+- Sessions: u5-s-orient, u5-s-indeclinable
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 32b98cad6717786af1973266061c5c18a577fa859a39310f45f9fc79d53a25be
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u5-indeclinable:behavior:rem-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Nominative oldid4213267, prov-u5-indecl-rule: indeclinable means no change according to case or number. Retained OpenRussian nouns.csv at commit50e210c4803237779cb562bc1abcea529066031c: indeclinable=1 for радио,такси,метро,кино,пальто,кофе,кафе,меню; indeclinable=0 for книга,окно. The latter rows have different sg_nom and sg_gen forms. Existing Russian display/flag provenance is retained byte-for-byte. Bounded application inference: classify these already admitted nouns by their recorded behavior, without producing new Russian forms or teaching a general ending-based guess. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no primary prose or owned-book text copied; final semantic audit pending.
+Review noun behavior
+shippedText=Review noun behavior
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c7817066d147336fc748d594a8cd5a4ce486112f6f1db7b8aa150e3653cd3608
+contentHash=998e80e475cb8b3e9f4cf15c27f44f19969973cc9ab9ebbdf357933a5dc4261e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u5-behavior-teach-1-body`
+
+- Objectives: obj-u5-indeclinable
+- Sessions: u5-s-orient, u5-s-indeclinable
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0f7a35a6b6c168bfd91f7620e71a424bf92af73a1b40f3d94fd119d14d775114
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u5-indeclinable:behavior:teach-1-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Nominative oldid4213267, prov-u5-indecl-rule: indeclinable means no change according to case or number. Retained OpenRussian nouns.csv at commit50e210c4803237779cb562bc1abcea529066031c: indeclinable=1 for радио,такси,метро,кино,пальто,кофе,кафе,меню; indeclinable=0 for книга,окно. The latter rows have different sg_nom and sg_gen forms. Existing Russian display/flag provenance is retained byte-for-byte. Bounded application inference: classify these already admitted nouns by their recorded behavior, without producing new Russian forms or teaching a general ending-based guess. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no primary prose or owned-book text copied; final semantic audit pending.
+An indeclinable noun keeps the same form for case or number. In these examples, ра́дио and такси́ are indeclinable. Recognize the behavior of the shown noun.
+shippedText=An indeclinable noun keeps the same form for case or number. In these examples, ра́дио and такси́ are indeclinable. Recognize the behavior of the shown noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c5e327f8dfaa4f2304cceb80e5077515a4220f7dc48eb0febb1bfa82ba137bc9
+contentHash=2012e1e5998f40d13a53909eac1d744d3115b04095fe58f9ac3e188c60b7c657
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u5-behavior-teach-1-title`
+
+- Objectives: obj-u5-indeclinable
+- Sessions: u5-s-orient, u5-s-indeclinable
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9cfd79faf1c0d938d55dcc0c10b9635baffe648adcd8b35e38c875280ae25a6f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u5-indeclinable:behavior:teach-1-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Nominative oldid4213267, prov-u5-indecl-rule: indeclinable means no change according to case or number. Retained OpenRussian nouns.csv at commit50e210c4803237779cb562bc1abcea529066031c: indeclinable=1 for радио,такси,метро,кино,пальто,кофе,кафе,меню; indeclinable=0 for книга,окно. The latter rows have different sg_nom and sg_gen forms. Existing Russian display/flag provenance is retained byte-for-byte. Bounded application inference: classify these already admitted nouns by their recorded behavior, without producing new Russian forms or teaching a general ending-based guess. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no primary prose or owned-book text copied; final semantic audit pending.
+Nouns that keep their form
+shippedText=Nouns that keep their form
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f7e1057f4a9b92c87db80200ca62781b154c692a7c892b8d8236ffb0a262c071
+contentHash=d3db9a7b18926b4bb6ffb940254c157253bab58074fd3d74bea9dd1cc8c160eb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u5-behavior-teach-2-body`
+
+- Objectives: obj-u5-indeclinable
+- Sessions: u5-s-orient, u5-s-indeclinable
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2072e0f0beff1af6d0c997f13df658e3b155b4536420767c81976d82473a8a2e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u5-indeclinable:behavior:teach-2-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Nominative oldid4213267, prov-u5-indecl-rule: indeclinable means no change according to case or number. Retained OpenRussian nouns.csv at commit50e210c4803237779cb562bc1abcea529066031c: indeclinable=1 for радио,такси,метро,кино,пальто,кофе,кафе,меню; indeclinable=0 for книга,окно. The latter rows have different sg_nom and sg_gen forms. Existing Russian display/flag provenance is retained byte-for-byte. Bounded application inference: classify these already admitted nouns by their recorded behavior, without producing new Russian forms or teaching a general ending-based guess. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no primary prose or owned-book text copied; final semantic audit pending.
+The nouns метро́, кино́, пальто́ and ко́фе are also indeclinable. Their forms stay unchanged for case or number. Learn the noun with this behavior; do not infer that every noun with a similar ending behaves the same way.
+shippedText=The nouns метро́, кино́, пальто́ and ко́фе are also indeclinable. Their forms stay unchanged for case or number. Learn the noun with this behavior; do not infer that every noun with a similar ending behaves the same way.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3701181b534f7f6724b4dfd2dc86d221174861190da4a75e6be91d3f8bab010d
+contentHash=c3096faf6e20105ec96f390fe1a9a0c8ec6d9fd21eb67bc21be91e1dacc44a7e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u5-behavior-teach-2-title`
+
+- Objectives: obj-u5-indeclinable
+- Sessions: u5-s-orient, u5-s-indeclinable
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 010469a7af5807ec71af453bf691cbc8f3aa6bfc96ab64155a2c1fb54d722b5c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u5-indeclinable:behavior:teach-2-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Nominative oldid4213267, prov-u5-indecl-rule: indeclinable means no change according to case or number. Retained OpenRussian nouns.csv at commit50e210c4803237779cb562bc1abcea529066031c: indeclinable=1 for радио,такси,метро,кино,пальто,кофе,кафе,меню; indeclinable=0 for книга,окно. The latter rows have different sg_nom and sg_gen forms. Existing Russian display/flag provenance is retained byte-for-byte. Bounded application inference: classify these already admitted nouns by their recorded behavior, without producing new Russian forms or teaching a general ending-based guess. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no primary prose or owned-book text copied; final semantic audit pending.
+Four more unchanged nouns
+shippedText=Four more unchanged nouns
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=eb44d04a760d742d1698103ea87a4a395b008adf893d07a938f29ab1cdc79753
+contentHash=3fe610783477f309e59c134248dbba09edb95bdc26ef979d74bac9d358fa3105
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u5-behavior-teach-3-body`
+
+- Objectives: obj-u5-indeclinable
+- Sessions: u5-s-orient, u5-s-indeclinable
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 45734c8cf5040742acaf6a4d317c9c5e2b08969d71ec71821a509ed07f4cad60
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u5-indeclinable:behavior:teach-3-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Nominative oldid4213267, prov-u5-indecl-rule: indeclinable means no change according to case or number. Retained OpenRussian nouns.csv at commit50e210c4803237779cb562bc1abcea529066031c: indeclinable=1 for радио,такси,метро,кино,пальто,кофе,кафе,меню; indeclinable=0 for книга,окно. The latter rows have different sg_nom and sg_gen forms. Existing Russian display/flag provenance is retained byte-for-byte. Bounded application inference: classify these already admitted nouns by their recorded behavior, without producing new Russian forms or teaching a general ending-based guess. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no primary prose or owned-book text copied; final semantic audit pending.
+кафе́ and меню́ are two more indeclinable nouns. An unchanged word form does not mean that a sentence has no case relationships. These checks classify the shown noun; they do not test production of a sentence or a complete paradigm.
+shippedText=кафе́ and меню́ are two more indeclinable nouns. An unchanged word form does not mean that a sentence has no case relationships. These checks classify the shown noun; they do not test production of a sentence or a complete paradigm.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8a7778edbd63d33eb73a1414a930bac4364bc2a34f1d6861633ebe8af26805aa
+contentHash=975f5c7918d66d00de2bd610b5012d63e4f1712a04e82f0e550f311cc69d594c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u5-behavior-teach-3-title`
+
+- Objectives: obj-u5-indeclinable
+- Sessions: u5-s-orient, u5-s-indeclinable
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 381951e95eae82a2817f7fe84e4c21e2d8bd636816e356ec9c6991497b2c15b4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u5-indeclinable:behavior:teach-3-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Nominative oldid4213267, prov-u5-indecl-rule: indeclinable means no change according to case or number. Retained OpenRussian nouns.csv at commit50e210c4803237779cb562bc1abcea529066031c: indeclinable=1 for радио,такси,метро,кино,пальто,кофе,кафе,меню; indeclinable=0 for книга,окно. The latter rows have different sg_nom and sg_gen forms. Existing Russian display/flag provenance is retained byte-for-byte. Bounded application inference: classify these already admitted nouns by their recorded behavior, without producing new Russian forms or teaching a general ending-based guess. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no primary prose or owned-book text copied; final semantic audit pending.
+Recognize the behavior
+shippedText=Recognize the behavior
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=602cbb0d2b67ab9bad2e7f63b3a829e43441032d9d699fab45291d1698f0a0cb
+contentHash=b7104c04e2c0d2868f16df61ca040bfda17fa0dfb5e15626454390213e523303
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u5-behavior-teach-4-body`
+
+- Objectives: obj-u5-indeclinable
+- Sessions: u5-s-orient, u5-s-indeclinable
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 840a1813a78ecd9c980e245d1f5ec682aa590d5b74f205b52f8170a7a6987ca8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u5-indeclinable:behavior:teach-4-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Nominative oldid4213267, prov-u5-indecl-rule: indeclinable means no change according to case or number. Retained OpenRussian nouns.csv at commit50e210c4803237779cb562bc1abcea529066031c: indeclinable=1 for радио,такси,метро,кино,пальто,кофе,кафе,меню; indeclinable=0 for книга,окно. The latter rows have different sg_nom and sg_gen forms. Existing Russian display/flag provenance is retained byte-for-byte. Bounded application inference: classify these already admitted nouns by their recorded behavior, without producing new Russian forms or teaching a general ending-based guess. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no primary prose or owned-book text copied; final semantic audit pending.
+Contrast кни́га and окно́: these nouns are declinable, so they can change for case. Their nominative and genitive forms differ. Choose the behavior of the shown noun: unchanged for case or number, or able to change for case. No new form needs to be invented.
+shippedText=Contrast кни́га and окно́: these nouns are declinable, so they can change for case. Their nominative and genitive forms differ. Choose the behavior of the shown noun: unchanged for case or number, or able to change for case. No new form needs to be invented.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=71b1826d9ba8d8973203d1b5ba3e33b0d6a40a5e4c45d569587218dab62b058d
+contentHash=92f90ea31543d60c4b3f123429eed606e5e0eb19d2bc93c2abe2395e1e88ae0b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u5-behavior-teach-4-title`
+
+- Objectives: obj-u5-indeclinable
+- Sessions: u5-s-orient, u5-s-indeclinable
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f74b5b3eae32cc03d5071f71e66c9c81d76942f40b4ea675a1537068c6eba0a0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u5-indeclinable:behavior:teach-4-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Nominative oldid4213267, prov-u5-indecl-rule: indeclinable means no change according to case or number. Retained OpenRussian nouns.csv at commit50e210c4803237779cb562bc1abcea529066031c: indeclinable=1 for радио,такси,метро,кино,пальто,кофе,кафе,меню; indeclinable=0 for книга,окно. The latter rows have different sg_nom and sg_gen forms. Existing Russian display/flag provenance is retained byte-for-byte. Bounded application inference: classify these already admitted nouns by their recorded behavior, without producing new Russian forms or teaching a general ending-based guess. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no primary prose or owned-book text copied; final semantic audit pending.
+Contrast nouns that can change
+shippedText=Contrast nouns that can change
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9273a0cb078753bc250ce595cf0dcd021f76ee5800c5d1245cc8e226a8c2a2c5
+contentHash=5797dea7b46b2c0911007726b56701557e9f7d3ea2388f588e1d23a336005482
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u5-behavior-u5-i-decl-книга-feedback`
+
+- Objectives: obj-u5-indeclinable
+- Sessions: u5-s-orient, u5-s-indeclinable
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ec64116668e8768d0e6306fc6fcba78425dacb6f8c56766de9ad3beffb484998
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u5-indeclinable:behavior:u5-i-decl-книга-feedback
+originalSourceText=Retained Wikibooks Russian/Grammar/Nominative oldid4213267, prov-u5-indecl-rule: indeclinable means no change according to case or number. Retained OpenRussian nouns.csv at commit50e210c4803237779cb562bc1abcea529066031c: indeclinable=1 for радио,такси,метро,кино,пальто,кофе,кафе,меню; indeclinable=0 for книга,окно. The latter rows have different sg_nom and sg_gen forms. Existing Russian display/flag provenance is retained byte-for-byte. Bounded application inference: classify these already admitted nouns by their recorded behavior, without producing new Russian forms or teaching a general ending-based guess. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no primary prose or owned-book text copied; final semantic audit pending.
+кни́га is declinable: it can change for case. Its nominative and genitive forms differ, so the unchanged behavior does not describe this noun.
+shippedText=кни́га is declinable: it can change for case. Its nominative and genitive forms differ, so the unchanged behavior does not describe this noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=01b7cb1640a38726e35177bd40d03a6ae16490718576b00905d0d9905f7f7f28
+contentHash=a9701a214ce6d2dea0f305c2d3c5f6ea9fc063c74c5113a6940a638bfe7856a9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u5-behavior-u5-i-decl-окно-feedback`
+
+- Objectives: obj-u5-indeclinable
+- Sessions: u5-s-orient, u5-s-indeclinable
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 71239cc4ba287833c416492023bcfe0000276b208107ca4ff7116ecde02e5113
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u5-indeclinable:behavior:u5-i-decl-окно-feedback
+originalSourceText=Retained Wikibooks Russian/Grammar/Nominative oldid4213267, prov-u5-indecl-rule: indeclinable means no change according to case or number. Retained OpenRussian nouns.csv at commit50e210c4803237779cb562bc1abcea529066031c: indeclinable=1 for радио,такси,метро,кино,пальто,кофе,кафе,меню; indeclinable=0 for книга,окно. The latter rows have different sg_nom and sg_gen forms. Existing Russian display/flag provenance is retained byte-for-byte. Bounded application inference: classify these already admitted nouns by their recorded behavior, without producing new Russian forms or teaching a general ending-based guess. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no primary prose or owned-book text copied; final semantic audit pending.
+окно́ is declinable: it can change for case. Its nominative and genitive forms differ, so the unchanged behavior does not describe this noun.
+shippedText=окно́ is declinable: it can change for case. Its nominative and genitive forms differ, so the unchanged behavior does not describe this noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=815fd98bfdaca1e8d64c075073ba1bdef75def448dbaef80c698af5256761ce9
+contentHash=06809529845d4946a5199ad061e5de02aa6afc02e5b9795ddd4456b0a390d319
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u5-behavior-u5-i-indecl-кино-feedback`
+
+- Objectives: obj-u5-indeclinable
+- Sessions: u5-s-orient, u5-s-indeclinable
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9d0ae4233b60933d5ef03861f646527bbf4eab254bda2e18ecc2ee003a2a2562
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u5-indeclinable:behavior:u5-i-indecl-кино-feedback
+originalSourceText=Retained Wikibooks Russian/Grammar/Nominative oldid4213267, prov-u5-indecl-rule: indeclinable means no change according to case or number. Retained OpenRussian nouns.csv at commit50e210c4803237779cb562bc1abcea529066031c: indeclinable=1 for радио,такси,метро,кино,пальто,кофе,кафе,меню; indeclinable=0 for книга,окно. The latter rows have different sg_nom and sg_gen forms. Existing Russian display/flag provenance is retained byte-for-byte. Bounded application inference: classify these already admitted nouns by their recorded behavior, without producing new Russian forms or teaching a general ending-based guess. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no primary prose or owned-book text copied; final semantic audit pending.
+кино́ is indeclinable: its form stays unchanged for case or number. Choose the unchanged behavior, rather than the behavior of a declinable noun.
+shippedText=кино́ is indeclinable: its form stays unchanged for case or number. Choose the unchanged behavior, rather than the behavior of a declinable noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b0018f5d295c555a5b741a6f4a18857ab681a48bbcde18f88d0c06c3737adfc7
+contentHash=84aede3c7883962318fd0701830a8bc9d256e634fd19a6fa6ee6e92271d3b652
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u5-behavior-u5-i-indecl-метро-feedback`
+
+- Objectives: obj-u5-indeclinable
+- Sessions: u5-s-orient, u5-s-indeclinable
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f4cd1fd973a1ca98c53bc53ef2cabf5e0d268d4170cb38640020d0a9a0528f0b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u5-indeclinable:behavior:u5-i-indecl-метро-feedback
+originalSourceText=Retained Wikibooks Russian/Grammar/Nominative oldid4213267, prov-u5-indecl-rule: indeclinable means no change according to case or number. Retained OpenRussian nouns.csv at commit50e210c4803237779cb562bc1abcea529066031c: indeclinable=1 for радио,такси,метро,кино,пальто,кофе,кафе,меню; indeclinable=0 for книга,окно. The latter rows have different sg_nom and sg_gen forms. Existing Russian display/flag provenance is retained byte-for-byte. Bounded application inference: classify these already admitted nouns by their recorded behavior, without producing new Russian forms or teaching a general ending-based guess. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no primary prose or owned-book text copied; final semantic audit pending.
+метро́ is indeclinable: its form stays unchanged for case or number. Choose the unchanged behavior, rather than the behavior of a declinable noun.
+shippedText=метро́ is indeclinable: its form stays unchanged for case or number. Choose the unchanged behavior, rather than the behavior of a declinable noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=da67d98291efc686640e2e0b88162e322e576618a9421f6e63f7131b5d305bd4
+contentHash=e8ba94db74bcb042f744ea27d70bf030eeae929255692920016e3e83cc012408
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u5-behavior-u5-i-indecl-радио-feedback`
+
+- Objectives: obj-u5-indeclinable
+- Sessions: u5-s-orient, u5-s-indeclinable
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1fa795549ca96f30bf0327e7b6834ad3443385d10265e879e5773bc40b9a1c58
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u5-indeclinable:behavior:u5-i-indecl-радио-feedback
+originalSourceText=Retained Wikibooks Russian/Grammar/Nominative oldid4213267, prov-u5-indecl-rule: indeclinable means no change according to case or number. Retained OpenRussian nouns.csv at commit50e210c4803237779cb562bc1abcea529066031c: indeclinable=1 for радио,такси,метро,кино,пальто,кофе,кафе,меню; indeclinable=0 for книга,окно. The latter rows have different sg_nom and sg_gen forms. Existing Russian display/flag provenance is retained byte-for-byte. Bounded application inference: classify these already admitted nouns by their recorded behavior, without producing new Russian forms or teaching a general ending-based guess. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no primary prose or owned-book text copied; final semantic audit pending.
+ра́дио is indeclinable: its form stays unchanged for case or number. Choose the unchanged behavior, rather than the behavior of a declinable noun.
+shippedText=ра́дио is indeclinable: its form stays unchanged for case or number. Choose the unchanged behavior, rather than the behavior of a declinable noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2df31a39f4bb67a8cd8670c5a55a7d1e14a6850f96f4de42d860cc22d96f4053
+contentHash=7231fe6b730cb5c92d05a16c33b3936457b2c30f56bddd11d317fbd9a2088034
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u5-behavior-u5-i-indecl-такси-feedback`
+
+- Objectives: obj-u5-indeclinable
+- Sessions: u5-s-orient, u5-s-indeclinable
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d14917b2b496ac9077ab94a2507b46bf97f892ddd8dc0018aa8f5477290fb913
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u5-indeclinable:behavior:u5-i-indecl-такси-feedback
+originalSourceText=Retained Wikibooks Russian/Grammar/Nominative oldid4213267, prov-u5-indecl-rule: indeclinable means no change according to case or number. Retained OpenRussian nouns.csv at commit50e210c4803237779cb562bc1abcea529066031c: indeclinable=1 for радио,такси,метро,кино,пальто,кофе,кафе,меню; indeclinable=0 for книга,окно. The latter rows have different sg_nom and sg_gen forms. Existing Russian display/flag provenance is retained byte-for-byte. Bounded application inference: classify these already admitted nouns by their recorded behavior, without producing new Russian forms or teaching a general ending-based guess. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no primary prose or owned-book text copied; final semantic audit pending.
+такси́ is indeclinable: its form stays unchanged for case or number. Choose the unchanged behavior, rather than the behavior of a declinable noun.
+shippedText=такси́ is indeclinable: its form stays unchanged for case or number. Choose the unchanged behavior, rather than the behavior of a declinable noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=67784717ba5c84860c6ccfa2018651b64796d1e64d04a8c5fe46bd7b833809f3
+contentHash=84ba90f3fd5a1a603556754a283096e3ed3b353c6abee8c290a5579dabbcbc59
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u5-behavior-u5-st-check-indeclinable-body`
+
+- Objectives: obj-u5-indeclinable
+- Sessions: u5-s-orient, u5-s-indeclinable
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 81e678c356806ed87b0586dec2350afea5f0a317e02cfbef522c42581ff820ef
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u5-indeclinable:behavior:u5-st-check-indeclinable-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Nominative oldid4213267, prov-u5-indecl-rule: indeclinable means no change according to case or number. Retained OpenRussian nouns.csv at commit50e210c4803237779cb562bc1abcea529066031c: indeclinable=1 for радио,такси,метро,кино,пальто,кофе,кафе,меню; indeclinable=0 for книга,окно. The latter rows have different sg_nom and sg_gen forms. Existing Russian display/flag provenance is retained byte-for-byte. Bounded application inference: classify these already admitted nouns by their recorded behavior, without producing new Russian forms or teaching a general ending-based guess. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no primary prose or owned-book text copied; final semantic audit pending.
+Classify the shown noun by its case behavior. A miss returns to all four explanations and the retained examples.
+shippedText=Classify the shown noun by its case behavior. A miss returns to all four explanations and the retained examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=822e3dd7fd3063b2d60fac88575218138a99c4684a69691ec2528533fc28de88
+contentHash=de04f91536547185f524814dafd7a144038bdcc3e245dbc4e273c1a673a028cf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u5-behavior-u5-st-check-indeclinable-title`
+
+- Objectives: obj-u5-indeclinable
+- Sessions: u5-s-orient, u5-s-indeclinable
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9db756a542313620be0bea7f97f59f3087c68d795548cf4de8f785535e23785f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u5-indeclinable:behavior:u5-st-check-indeclinable-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Nominative oldid4213267, prov-u5-indecl-rule: indeclinable means no change according to case or number. Retained OpenRussian nouns.csv at commit50e210c4803237779cb562bc1abcea529066031c: indeclinable=1 for радио,такси,метро,кино,пальто,кофе,кафе,меню; indeclinable=0 for книга,окно. The latter rows have different sg_nom and sg_gen forms. Existing Russian display/flag provenance is retained byte-for-byte. Bounded application inference: classify these already admitted nouns by their recorded behavior, without producing new Russian forms or teaching a general ending-based guess. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no primary prose or owned-book text copied; final semantic audit pending.
+Independent noun classification
+shippedText=Independent noun classification
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=76f5a3287bb03ed8695616b965c50d8d2a40083da298786cbcd31128aabb7457
+contentHash=09a37283baeb2a13959dbcf927fdc90e13838017bc6b05a4eb77efa05f0809ed
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u5-behavior-u5-st-guided-indeclinable-1-body`
+
+- Objectives: obj-u5-indeclinable
+- Sessions: u5-s-orient, u5-s-indeclinable
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5bb7429cc28308cf05db1ff5a02f82a97b3b48f67fbb4cc4f39bf56683f24162
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u5-indeclinable:behavior:u5-st-guided-indeclinable-1-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Nominative oldid4213267, prov-u5-indecl-rule: indeclinable means no change according to case or number. Retained OpenRussian nouns.csv at commit50e210c4803237779cb562bc1abcea529066031c: indeclinable=1 for радио,такси,метро,кино,пальто,кофе,кафе,меню; indeclinable=0 for книга,окно. The latter rows have different sg_nom and sg_gen forms. Existing Russian display/flag provenance is retained byte-for-byte. Bounded application inference: classify these already admitted nouns by their recorded behavior, without producing new Russian forms or teaching a general ending-based guess. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no primary prose or owned-book text copied; final semantic audit pending.
+Choose how the shown noun behaves. Read the explanation after choosing.
+shippedText=Choose how the shown noun behaves. Read the explanation after choosing.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1951e30ed9316bc50f0b94f5ab319eac6c2d7e7c4fc38e7839ad2e42aad59b3f
+contentHash=fbc101e3d5ef398cee71888ead7bfcda0539feaf6e4089a836153deceb15e61a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u5-behavior-u5-st-guided-indeclinable-1-title`
+
+- Objectives: obj-u5-indeclinable
+- Sessions: u5-s-orient, u5-s-indeclinable
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 32b2d22fb1b209d6d8c0fddafcb596c2075197f26a1f9bd33130bdddc917df46
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u5-indeclinable:behavior:u5-st-guided-indeclinable-1-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Nominative oldid4213267, prov-u5-indecl-rule: indeclinable means no change according to case or number. Retained OpenRussian nouns.csv at commit50e210c4803237779cb562bc1abcea529066031c: indeclinable=1 for радио,такси,метро,кино,пальто,кофе,кафе,меню; indeclinable=0 for книга,окно. The latter rows have different sg_nom and sg_gen forms. Existing Russian display/flag provenance is retained byte-for-byte. Bounded application inference: classify these already admitted nouns by their recorded behavior, without producing new Russian forms or teaching a general ending-based guess. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no primary prose or owned-book text copied; final semantic audit pending.
+Guided noun classification
+shippedText=Guided noun classification
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a30674867b8df713c4d5ff87b61edaded37bd6dec4453b41c5d4226ad56c63b8
+contentHash=786866c3e6689bfca57afc9a9f524e31bc3935f32268d109a756b1def986c2e8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u5-behavior-unchanged-choice`
+
+- Objectives: obj-u5-indeclinable
+- Sessions: u5-s-orient, u5-s-indeclinable
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e6fb0f0da2e47d060bbec27a1b0a6cb2ab47f58fc210818ed978aa0dc5a9d891
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u5-indeclinable:behavior:unchanged-choice
+originalSourceText=Retained Wikibooks Russian/Grammar/Nominative oldid4213267, prov-u5-indecl-rule: indeclinable means no change according to case or number. Retained OpenRussian nouns.csv at commit50e210c4803237779cb562bc1abcea529066031c: indeclinable=1 for радио,такси,метро,кино,пальто,кофе,кафе,меню; indeclinable=0 for книга,окно. The latter rows have different sg_nom and sg_gen forms. Existing Russian display/flag provenance is retained byte-for-byte. Bounded application inference: classify these already admitted nouns by their recorded behavior, without producing new Russian forms or teaching a general ending-based guess. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no primary prose or owned-book text copied; final semantic audit pending.
+Indeclinable: unchanged for case or number
+shippedText=Indeclinable: unchanged for case or number
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1906583af4e058ec00ce9eeabc8566c69f5213001340c5addca35857a844d88d
+contentHash=82dacfa055789278c7de8ec0724ae165e14bc8acbbcb7a59960f05e3aa20f1df
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
 
 ### PROVENANCE `prov-u5-contrast-flag-книга`
 
@@ -5532,6 +6262,21 @@ Original app text
 Russian Companion project
 Original
 
+### SOURCE `src-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 4bb7355bcdaed471645229162f908afe75e5dc0978ea6ffc5617fbb237190d97
+
+Content-audit research notes
+Original app text
+Russian Companion content-audit research synthesis, content-audit-2026-10-08. Bibliography is on each note. No owned-book prose is included.
+Original research synthesis for registered content corrections. Not a quotation.
+
 ### RIGHTS `rights-wikibooks-russian-cc-by-sa`
 
 - Objectives: none
@@ -5571,6 +6316,20 @@ permitsAppUse=true
 - Content hash: cc164e7d614d14b84cbae9494b688d1f417a9bec507481d9ce113448fc8598bc
 
 src-app-english-v2
+Original app text
+permitsAppUse=true
+
+### RIGHTS `rights-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6e474fed734ce50e827ffb29f9c8eced5c10aa037e992e43e76435b822864375
+
+src-content-audit-research
 Original app text
 permitsAppUse=true
 
@@ -5630,6 +6389,7 @@ permitsAppUse=true
 - `obj-u5-indeclinable` INSTRUCTION `u5-st-teach-indeclinable-1`
 - `obj-u5-indeclinable` INSTRUCTION `u5-st-teach-indeclinable-2`
 - `obj-u5-indeclinable` INSTRUCTION `u5-st-teach-indeclinable-3`
+- `obj-u5-indeclinable` INSTRUCTION `u5-st-teach-indeclinable-4`
 - `obj-u5-indeclinable` EXAMPLE `ex-u5-indecl-радио`
 - `obj-u5-indeclinable` EXAMPLE `ex-u5-indecl-такси`
 - `obj-u5-indeclinable` EXAMPLE `ex-u5-indecl-метро`
@@ -5729,6 +6489,13 @@ permitsAppUse=true
 - `u5-st-teach-indeclinable-3` REFERENCE `ref-u35-attribution`
 - `u5-st-rem-indeclinable` EXAMPLE `ex-u5-indecl-радио`
 - `u5-st-rem-indeclinable` EXAMPLE `ex-u5-indecl-такси`
+- `u5-st-rem-indeclinable` EXAMPLE `ex-u5-indecl-метро`
+- `u5-st-rem-indeclinable` EXAMPLE `ex-u5-indecl-кино`
+- `u5-st-rem-indeclinable` EXAMPLE `ex-u5-indecl-пальто`
+- `u5-st-rem-indeclinable` EXAMPLE `ex-u5-indecl-кофе`
+- `u5-st-rem-indeclinable` EXAMPLE `ex-u5-indecl-кафе`
+- `u5-st-rem-indeclinable` EXAMPLE `ex-u5-indecl-меню`
+- `u5-st-teach-indeclinable-4` REFERENCE `ref-u35-attribution`
 - `u5-st-check-indeclinable` REMEDIATION `u5-st-rem-indeclinable`
 - `u5-st-check-indeclinable` ITEM `u5-i-indecl-такси`
 - `u5-st-check-indeclinable` ITEM `u5-i-indecl-метро`
@@ -5738,6 +6505,29 @@ permitsAppUse=true
 - `u5-s-book` OBJECTIVE `obj-u5-book`
 - `u5-st-book-work` REFERENCE `ref-book-topics`
 - `u5-st-book-work` REFERENCE `ref-u35-attribution`
+- `obj-u5-indeclinable` PROVENANCE `prov-ca-u5-behavior-changeable-choice`
+- `obj-u5-indeclinable` PROVENANCE `prov-ca-u5-behavior-prompt`
+- `obj-u5-indeclinable` PROVENANCE `prov-ca-u5-behavior-rem-body`
+- `obj-u5-indeclinable` PROVENANCE `prov-ca-u5-behavior-rem-title`
+- `obj-u5-indeclinable` PROVENANCE `prov-ca-u5-behavior-teach-1-body`
+- `obj-u5-indeclinable` PROVENANCE `prov-ca-u5-behavior-teach-1-title`
+- `obj-u5-indeclinable` PROVENANCE `prov-ca-u5-behavior-teach-2-body`
+- `obj-u5-indeclinable` PROVENANCE `prov-ca-u5-behavior-teach-2-title`
+- `obj-u5-indeclinable` PROVENANCE `prov-ca-u5-behavior-teach-3-body`
+- `obj-u5-indeclinable` PROVENANCE `prov-ca-u5-behavior-teach-3-title`
+- `obj-u5-indeclinable` PROVENANCE `prov-ca-u5-behavior-teach-4-body`
+- `obj-u5-indeclinable` PROVENANCE `prov-ca-u5-behavior-teach-4-title`
+- `obj-u5-indeclinable` PROVENANCE `prov-ca-u5-behavior-u5-i-decl-книга-feedback`
+- `obj-u5-indeclinable` PROVENANCE `prov-ca-u5-behavior-u5-i-decl-окно-feedback`
+- `obj-u5-indeclinable` PROVENANCE `prov-ca-u5-behavior-u5-i-indecl-кино-feedback`
+- `obj-u5-indeclinable` PROVENANCE `prov-ca-u5-behavior-u5-i-indecl-метро-feedback`
+- `obj-u5-indeclinable` PROVENANCE `prov-ca-u5-behavior-u5-i-indecl-радио-feedback`
+- `obj-u5-indeclinable` PROVENANCE `prov-ca-u5-behavior-u5-i-indecl-такси-feedback`
+- `obj-u5-indeclinable` PROVENANCE `prov-ca-u5-behavior-u5-st-check-indeclinable-body`
+- `obj-u5-indeclinable` PROVENANCE `prov-ca-u5-behavior-u5-st-check-indeclinable-title`
+- `obj-u5-indeclinable` PROVENANCE `prov-ca-u5-behavior-u5-st-guided-indeclinable-1-body`
+- `obj-u5-indeclinable` PROVENANCE `prov-ca-u5-behavior-u5-st-guided-indeclinable-1-title`
+- `obj-u5-indeclinable` PROVENANCE `prov-ca-u5-behavior-unchanged-choice`
 - `obj-u5-indeclinable` PROVENANCE `prov-u5-contrast-flag-книга`
 - `obj-u5-indeclinable` PROVENANCE `prov-u5-contrast-flag-окно`
 - `obj-u5-indeclinable` PROVENANCE `prov-u5-contrast-книга`

@@ -8,7 +8,7 @@
   "applicationId": "dev.russiancompanion",
   "versionName": "2.0.0-dev",
   "versionCode": 5,
-  "sourceDigest": "7e5628d06ace81b382bfbcb094c64a01e2f9c0d03326a30112a29b27ff7c1d40",
+  "sourceDigest": "601c8cc8197ca64051ad3eb77d9243c906ee99cc4fc3eccb74dba77311831ddf",
   "doNotRebuildForHashMatch": false,
   "artifact": {
     "status": "NOT_RECORDED"

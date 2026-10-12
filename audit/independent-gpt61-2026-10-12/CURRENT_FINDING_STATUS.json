@@ -50,8 +50,9 @@
       "findingId": "IA007",
       "producerSeverity": "MEDIUM",
       "producerStatus": "OPEN",
-      "engineeringDisposition": "OPEN",
-      "formalAcceptance": false
+      "engineeringDisposition": "ENGINEERING_FIX_PENDING_INDEPENDENT_VERIFICATION",
+      "formalAcceptance": false,
+      "implementationCommit": "7873c4794c65d06dacf8f80bcb8fcbf110f975b3"
     },
     {
       "findingId": "IA008",
