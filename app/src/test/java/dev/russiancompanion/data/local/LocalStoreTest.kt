@@ -2,6 +2,7 @@ package dev.russiancompanion.data.local
 
 import android.content.Context
 import androidx.test.core.app.ApplicationProvider
+import dev.russiancompanion.RussianCompanionApplication
 import dev.russiancompanion.data.local.seed.PlanDefinitionSeed
 import dev.russiancompanion.data.local.seed.SeedApplyStatus
 import dev.russiancompanion.data.local.seed.SeedJson
@@ -20,6 +21,7 @@ class LocalStoreTest {
     @Test
     fun shippedSeedOpensANewLearnerAfterShareAlikeConfirmation() {
         val context = ApplicationProvider.getApplicationContext<Context>()
+        (context.applicationContext as RussianCompanionApplication).closeStartupStoreForTests()
         LocalStore.open(context).use { store ->
             val outcome = store.applySeed(shippedSeed())
             assertEquals(SeedApplyStatus.APPLIED, outcome.status)
@@ -83,6 +85,7 @@ class LocalStoreTest {
     @Test
     fun fileDatabaseKeepsActivityAfterTheStoreIsClosed() {
         val context = ApplicationProvider.getApplicationContext<Context>()
+        (context.applicationContext as RussianCompanionApplication).closeStartupStoreForTests()
         val created = LocalStore.open(context).use { store ->
             store.recordActivity(
                 category = ActivityCategory.READING,
