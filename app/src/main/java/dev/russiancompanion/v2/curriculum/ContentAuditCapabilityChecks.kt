@@ -6,13 +6,19 @@ import java.security.MessageDigest
 internal fun correctedCapabilityDefects(pack: V2CurriculumPack, cap: V2SourceCapability): List<String> {
     val errors = mutableListOf<String>()
     fun fail(reason: String) { errors += "Source capability ${cap.id} corrected intake $reason" }
+    val frozenPin = ContentAuditCapabilityPins.all.firstOrNull {
+        it.recordId == cap.sourceRecordId && it.hash == cap.sourceHash && cap.sourceRevision == ContentAuditSources.REVISION
+    }
+    if (frozenPin?.claim == "letter-writing" && cap.supportedClaim == "postal-address") {
+        fail("letter-writing evidence does not clear postal-address")
+    }
     val pin = ContentAuditCapabilityPins.all.firstOrNull { it.id == cap.id }
-        ?: return listOf("Source capability ${cap.id} corrected intake is not admitted")
+        ?: return errors + "Source capability ${cap.id} corrected intake is not admitted"
     if (cap.sourceRevision != ContentAuditSources.REVISION || cap.sourceRecordId != pin.recordId ||
         cap.sourceHash != pin.hash || cap.unitNumber != pin.unit || cap.objectiveId != pin.objective ||
         cap.supportedClaim != pin.claim || MessageDigest.getInstance("SHA-256")
             .digest(cap.exactSpan.toByteArray(Charsets.UTF_8)).joinToString("") { "%02x".format(it) } != pin.hash) {
-        return listOf("Source capability ${cap.id} corrected intake identity does not match")
+        return errors + "Source capability ${cap.id} corrected intake identity does not match"
     }
     val hosts = pack.provenanceRecords.filter {
         it.sourceId == ContentAuditSources.SOURCE_ID && it.sourceRevision == cap.sourceRevision &&
@@ -60,6 +66,18 @@ internal fun correctedCapabilityDefects(pack: V2CurriculumPack, cap: V2SourceCap
     }
     val practiced = objective.practiceStepIds.flatMap { pack.step(it)?.second?.itemIds.orEmpty() }
     if (practiced.isEmpty()) fail("has no guided practice")
+    if (pin.unit == 26 && pin.claim == "letter-writing") {
+        val guided = practiced.mapNotNull(pack::item)
+        if (guided.size != 1 || guided.singleOrNull()?.assessment?.testedFeature != "LETTER_ORGANIZATION" ||
+            guided.any { item -> item.assessment?.relationKind != "STATED_APPLICATION" ||
+                item.assessment.relationParticipantIds.isEmpty() || item.assessment.relationParticipantIds.any { it !in hostIds } }) {
+            fail("is missing its bound guided letter organization application")
+        }
+        if (independent.size != 2 || independent.mapNotNull { it.assessment?.testedFeature }.toSet() != pin.features) {
+            fail("greeting recognition does not clear letter-writing; distinct greeting-inference and layout applications are required")
+        }
+    }
+
     (objective.instructionStepIds + objective.remediationStepIds).forEach { id ->
         val step = pack.step(id)?.second
         if (step == null || step.body.isBlank() || step.body !in cap.exactSpan) fail("has an unbound teaching or remediation step $id")

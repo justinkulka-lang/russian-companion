@@ -1171,6 +1171,9 @@ internal object V2Validator {
             return correctedCapabilityDefects(pack, capability)
         }
         val errors = mutableListOf<String>()
+        if (capability.supportedClaim == "letter-writing" && capability.exactSpan == RemainingSources.LETTER_SPAN) {
+            errors += "Source capability ${capability.id} retired universal letter-writing intake requires the exact pending correction"
+        }
         val binding = REQUIRED_SOURCE_CAPABILITIES[capability.unitNumber].orEmpty().firstOrNull {
             it.objectiveId == capability.objectiveId && it.claim == capability.supportedClaim
         }

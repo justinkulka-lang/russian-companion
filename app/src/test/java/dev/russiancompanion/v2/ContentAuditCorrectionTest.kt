@@ -509,7 +509,8 @@ class ContentAuditCorrectionTest {
                 teach.id in it.instructionStepIds && remediation.id in it.remediationStepIds
             }
             if ((number == 21 && topic == "purpose") ||
-                (number == 24 && topic in listOf("stand-ins", "word-order-contrast"))) {
+                (number == 24 && topic in listOf("stand-ins", "word-order-contrast")) ||
+                (number == 26 && topic == "letter-writing")) {
                 val session = pack.unit(number)!!.sessions.single { it.steps.any { step -> step.id == teach.id } }
                 val teaching = session.steps.filter { it.kind == "TEACH" }
                 assertEquals(remediation.id, teaching.joinToString("\n\n") { it.body }, remediation.body)

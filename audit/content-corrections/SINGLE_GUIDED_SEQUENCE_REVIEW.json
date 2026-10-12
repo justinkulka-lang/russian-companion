@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "curriculumFileSha256": "859aa696c1547d58e94b94a00a2f0725f6b192852e69b6c10b24746e3365d8f5",
-  "candidateCount": 81,
+  "curriculumFileSha256": "5ee9c17c7516645a8e8fec4acb89a8e6ca620ec699bf6553d110cc450d8a7f8f",
+  "candidateCount": 80,
   "affectedUnits": [
     3,
     4,
@@ -895,18 +895,6 @@
       "laterTeachingStepIds": [
         "u26-st-teach-indefinite-2",
         "u26-st-teach-indefinite-3"
-      ],
-      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
-    },
-    {
-      "unitNumber": 26,
-      "sessionId": "u26-s-letter-writing",
-      "guidedStepId": "u26-st-guided-letter-writing-1",
-      "guidedItemIds": [
-        "u26-g-letter-writing-0"
-      ],
-      "laterTeachingStepIds": [
-        "u26-st-teach-letter-writing-2"
       ],
       "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
     },
