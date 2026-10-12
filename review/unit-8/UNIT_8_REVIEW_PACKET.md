@@ -11,12 +11,12 @@ Unit 8 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 4f5cb8024d3f68a37052fdf85b5755bffa2a0904
-- Unit content-review SHA-256: 1becf268113474664067b55e5e98f7bcd8e7566e7910f6562f09ddb23f032f0a
+- Curriculum source commit: 1ab25bc6813963cbb3f41da92f2c4ffe8383a1ae
+- Unit content-review SHA-256: cd04cb2a10f58b72f853bf5070f7e436d65ce601b979ab8337eb1e4f0c1329c7
 - Mapping-package SHA-256: 3e6c6b7d1ed5142212fe254e14d7d6ebb9ecdf862b9dce921a415ba8e45411f1
-- Pack content-review SHA-256: cb67d5e9fbe81a4673a33e8b7728216dd618df3b1b9b0c9d629b34c7d8108e45
-- Review-package SHA-256: 44104e4a0485bcb4125870f77987953f16e116d7c583382049f5f8482160a5e5
-- Repository source SHA-256: 601c8cc8197ca64051ad3eb77d9243c906ee99cc4fc3eccb74dba77311831ddf
+- Pack content-review SHA-256: 18fae603c917271684268337d091a75ce30162bf36ad54c18beca81c3a0bcf44
+- Review-package SHA-256: 1a3261e81764c9be8c770c2afa9ccea9b2f81ae0ba9215449e5f2c32e7a804d5
+- Repository source SHA-256: e71fb167541249f9870a3e93f03ccb6b3f14e75bbcd71bb56f77b02bb114b6fd
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -1124,12 +1124,12 @@ remediationStepId=u8-st-rem-agreement
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f7a7ad81db983fa5612489dfa5cdc2794c8860f47dcf30955b76533655a6b2da
+- Content hash: e7465435670aef5fe9093d6e135893a5a867dab46807218bf66ed4e35afc48b8
 
 title=Choose between the admitted existence and absence lines
 estimatedMinutes=12
 objectives=obj-u8-availability
-steps=u8-st-teach-availability-1,u8-st-guided-availability-1,u8-st-teach-availability-2,u8-st-teach-availability-3,u8-st-rem-availability,u8-st-check-availability
+steps=u8-st-teach-availability-1,u8-st-teach-availability-2,u8-st-teach-availability-3,u8-st-guided-availability-1,u8-st-rem-availability,u8-st-check-availability
 
 ### STEP `u8-st-teach-availability-1`
 
@@ -1139,11 +1139,11 @@ steps=u8-st-teach-availability-1,u8-st-guided-availability-1,u8-st-teach-availab
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 887f240ae8964790cea593b7ca2fde9f8198e1082d39eddb7099cc1671093e62
+- Content hash: 6934acf7760320c7763900e5781db8fea376a63e71808e2392905a82b4c27ee4
 
 kind=TEACH
-title=Admitted lines
-body=На э́той у́лице есть францу́зы — There are Frenchmen on this street. В Москве́ есть ста́рые зда́ния — There are old buildings in Moscow. 
+title=Presence and the nominative
+body=Use the presence construction when the line says that something exists. In these supplied examples, the noun naming what exists is nominative. Read the Russian line and identify whether it states presence. На э́той у́лице есть францу́зы — There are Frenchmen on this street. В Москве́ есть ста́рые зда́ния — There are old buildings in Moscow. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1153,28 +1153,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u8-st-guided-availability-1`
-
-- Objectives: obj-u8-availability
-- Sessions: u8-s-availability
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e80253a58d77dfd9c4f70655661b5252fa3290cda939f01906a9f409ec25f618
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u8-g-availability-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u8-st-rem-availability
-
 ### STEP `u8-st-teach-availability-2`
 
 - Objectives: obj-u8-availability
@@ -1183,11 +1161,11 @@ remediationStepId=u8-st-rem-availability
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a3bf9ca13286a8f7dcc0845295a5a89c3ce504efd643cd4bc0f86e0db7ea5e96
+- Content hash: 89d55dc8feda5252f424191aeea36b9fc4cc164f101e91f19ad2b66721b264c4
 
 kind=TEACH
-title=Admitted instruction
-body=Conversely, to say 'There isn't...', 'There aren't...', we use the word
+title=Absence and the genitive
+body=Use the absence construction when the line says that something does not exist. In these supplied examples, the absence word is followed by a genitive noun. Presence and absence require different case explanations.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1205,11 +1183,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 9655c7a486a9314c3c5f8f76c773444a4a39af4170efaa9437de64dcacd072c7
+- Content hash: 73d0d72aa86906e84bbc9eddc8c3d4861f28cc39d9240993e2180c41703ca8bf
 
 kind=TEACH
-title=Admitted lines
-body=Нет рестора́нов — There are no restaurants. В Москве́ нет ста́рых зда́ний — There are no old buildings in Moscow. 
+title=Compare the complete examples
+body=Compare the positive and negative lines below. For a positive line choose the nominative presence explanation; for a negative line choose the genitive absence explanation. Нет рестора́нов — There are no restaurants. В Москве́ нет ста́рых зда́ний — There are no old buildings in Moscow. 
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1219,6 +1197,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u8-st-guided-availability-1`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-availability
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 300f5e2c501011813696fb7c370a37b6b2ce6ab56d8f511176b857e1f6aa6bc2
+
+kind=GUIDED
+title=Guided practice
+body=Read the whole shown line, then choose the complete case explanation. A missed check returns to all teaching and examples.
+dominantAction=Continue
+references=
+items=u8-g-availability-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u8-st-rem-availability
+
 ### STEP `u8-st-rem-availability`
 
 - Objectives: obj-u8-availability
@@ -1227,15 +1227,19 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b4a11016bffec565e63d46d8adfe267b1a700c47c9872fbb4bed382fc386cb8a
+- Content hash: 54a78b4712e98bbc756781ceb7fd17aa015c25159bd201400e98199ebe8c3105
 
 kind=REMEDIATE
-title=Remediation
-body=Conversely, to say 'There isn't...', 'There aren't...', we use the word
+title=Review the complete constructions
+body=Use the presence construction when the line says that something exists. In these supplied examples, the noun naming what exists is nominative. Read the Russian line and identify whether it states presence. На э́той у́лице есть францу́зы — There are Frenchmen on this street. В Москве́ есть ста́рые зда́ния — There are old buildings in Moscow. 
+
+Use the absence construction when the line says that something does not exist. In these supplied examples, the absence word is followed by a genitive noun. Presence and absence require different case explanations.
+
+Compare the positive and negative lines below. For a positive line choose the nominative presence explanation; for a negative line choose the genitive absence explanation. Нет рестора́нов — There are no restaurants. В Москве́ нет ста́рых зда́ний — There are no old buildings in Moscow. 
 dominantAction=Continue
 references=
 items=
-examples=ex-u8-availability-0,ex-u8-availability-1
+examples=ex-u8-availability-0,ex-u8-availability-1,ex-u8-availability-2,ex-u8-availability-3
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1249,11 +1253,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f4c9fe183734544297047ba54432f49f3817ee9d2a5ebfef9f59925f0a8c27db
+- Content hash: e3db7d0897d04a152b547d1724a6a1d2f6800163be3a52e5c52334f05d5ec0d8
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Read the whole shown line, then choose the complete case explanation. A missed check returns to all teaching and examples.
 dominantAction=Continue
 references=
 items=u8-i-availability-1,u8-i-availability-2,u8-i-availability-3
@@ -2264,35 +2268,35 @@ relationParticipantIds=prov-ex-or-u8-agreement-4 | prov-ex-or-u8-agreement-5 | p
 
 - Objectives: obj-u8-availability
 - Sessions: u8-s-availability
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 54a487de20ca1d1b3a2a479581df5046e277d9e415062f41de7870b03c2c9f7e
+- Content hash: 8fc288eaea95aedf85a88559669bd40aee1bf40ea77d071c71c5b88beaa7f1fb
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted rule classifies the shown line?
+prompt=Which explanation accounts for the noun cases in the shown line?
 promptLetter=На э́той у́лице есть францу́зы
-options=It is followed by the nominative case | Conversely, to say 'There isn't...', 'There aren't...', we use the word
-answer=It is followed by the nominative case
-feedback=Does the admitted record show the governed contrast? It is followed by the nominative case.
+options=In this line, the thing that exists is in the nominative case. | In this line, the absent thing is in the genitive case.
+answer=In this line, the thing that exists is in the nominative case.
+feedback=На э́той у́лице есть францу́зы expresses presence. The noun naming what exists is nominative. The genitive absence explanation would describe absence, which this line does not assert.
 objectiveId=obj-u8-availability
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted rule is the other construction in the same frozen span.
+distractorRationales= | The other explanation describes absence rather than the presence or simple possession shown here.
 testedFeature=EXISTENCE_ABSENCE
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+evidenceMode=STATED_APPLICATION
 contrastSetId=u8-availability-0
 cueLanguage=ru
 independent=false
-answerSourceIds=prov-u8-availability-x-0
-distractorSourceIds= | prov-u8-availability-rem
-distractorDifference= | This admitted rule is the other construction in the same frozen span.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=It is followed by the nominative case | Conversely, to say 'There isn't...', 'There aren't...', we use the word
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u8-availability-0-ru | prov-u8-availability-x-0 | prov-u8-availability-rem
+answerSourceIds=prov-ca-rule-u8-g-availability-0-1
+distractorSourceIds= | prov-ca-rule-u8-g-availability-0-2
+distractorDifference= | The other explanation describes absence rather than the presence or simple possession shown here.
+whyAnswerDemonstratesObjective=На э́той у́лице есть францу́зы expresses presence. The noun naming what exists is nominative. The genitive absence explanation would describe absence, which this line does not assert.
+contrastMembers=In this line, the thing that exists is in the nominative case. | In this line, the absent thing is in the genitive case.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-rule-u8-g-availability-0-0 | prov-ca-rule-u8-g-availability-0-1 | prov-ca-rule-u8-g-availability-0-2
 
 ### INDEPENDENT_CHECK `u8-i-plural-1`
 
@@ -2842,103 +2846,103 @@ relationParticipantIds=prov-ex-or-u8-agreement-4 | prov-ex-or-u8-agreement-5 | p
 
 - Objectives: obj-u8-availability
 - Sessions: u8-s-availability
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 64494aee814d38cce7576c67e6433cc0554752ccd507819a1b0fff601a02ba48
+- Content hash: 779a32968c2a8980c3633e9213f4cef47c28dc5eb1b4b850e78ce1e4643ff4f7
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted rule classifies the shown line?
+prompt=Which explanation accounts for the noun cases in the shown line?
 promptLetter=В Москве́ нет ста́рых зда́ний
-options=Conversely, to say 'There isn't...', 'There aren't...', we use the word | It is followed by the nominative case
-answer=Conversely, to say 'There isn't...', 'There aren't...', we use the word
-feedback=Does the admitted record show the governed contrast? Conversely, to say 'There isn't...', 'There aren't...', we use the word.
+options=In this line, the thing that exists is in the nominative case. | In this line, the absent thing is in the genitive case.
+answer=In this line, the absent thing is in the genitive case.
+feedback=В Москве́ нет ста́рых зда́ний expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
 objectiveId=obj-u8-availability
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted rule is the other construction in the same frozen span.
+distractorRationales=The other explanation asserts presence or simple possession rather than the absence shown here. | 
 testedFeature=EXISTENCE_ABSENCE
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+evidenceMode=STATED_APPLICATION
 contrastSetId=u8-availability-1
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-u8-availability-rem
-distractorSourceIds= | prov-u8-availability-x-0
-distractorDifference= | This admitted rule is the other construction in the same frozen span.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=Conversely, to say 'There isn't...', 'There aren't...', we use the word | It is followed by the nominative case
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u8-availability-3-ru | prov-u8-availability-rem | prov-u8-availability-x-0
+answerSourceIds=prov-ca-rule-u8-i-availability-1-1
+distractorSourceIds=prov-ca-rule-u8-i-availability-1-2 | 
+distractorDifference=The other explanation asserts presence or simple possession rather than the absence shown here. | 
+whyAnswerDemonstratesObjective=В Москве́ нет ста́рых зда́ний expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+contrastMembers=In this line, the thing that exists is in the nominative case. | In this line, the absent thing is in the genitive case.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-rule-u8-i-availability-1-0 | prov-ca-rule-u8-i-availability-1-1 | prov-ca-rule-u8-i-availability-1-2
 
 ### INDEPENDENT_CHECK `u8-i-availability-2`
 
 - Objectives: obj-u8-availability
 - Sessions: u8-s-availability
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 7760f0e01ff277ebebac30dc62abf0b7e0d8e22a737a5abb87f8ce6c355cb957
+- Content hash: 876fe6adf4683dcb875b76f6a722c5a63f97df4e25c31791d35d39c4471fc6da
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted rule classifies the shown line?
+prompt=Which explanation accounts for the noun cases in the shown line?
 promptLetter=Нет рестора́нов
-options=Conversely, to say 'There isn't...', 'There aren't...', we use the word | It is followed by the nominative case
-answer=Conversely, to say 'There isn't...', 'There aren't...', we use the word
-feedback=Does the admitted record show the governed contrast? Conversely, to say 'There isn't...', 'There aren't...', we use the word.
+options=In this line, the thing that exists is in the nominative case. | In this line, the absent thing is in the genitive case.
+answer=In this line, the absent thing is in the genitive case.
+feedback=Нет рестора́нов expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
 objectiveId=obj-u8-availability
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted rule is the other construction in the same frozen span.
+distractorRationales=The other explanation asserts presence or simple possession rather than the absence shown here. | 
 testedFeature=EXISTENCE_ABSENCE
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+evidenceMode=STATED_APPLICATION
 contrastSetId=u8-availability-2
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-u8-availability-rem
-distractorSourceIds= | prov-u8-availability-x-0
-distractorDifference= | This admitted rule is the other construction in the same frozen span.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=Conversely, to say 'There isn't...', 'There aren't...', we use the word | It is followed by the nominative case
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u8-availability-2-ru | prov-u8-availability-rem | prov-u8-availability-x-0
+answerSourceIds=prov-ca-rule-u8-i-availability-2-1
+distractorSourceIds=prov-ca-rule-u8-i-availability-2-2 | 
+distractorDifference=The other explanation asserts presence or simple possession rather than the absence shown here. | 
+whyAnswerDemonstratesObjective=Нет рестора́нов expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+contrastMembers=In this line, the thing that exists is in the nominative case. | In this line, the absent thing is in the genitive case.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-rule-u8-i-availability-2-0 | prov-ca-rule-u8-i-availability-2-1 | prov-ca-rule-u8-i-availability-2-2
 
 ### INDEPENDENT_CHECK `u8-i-availability-3`
 
 - Objectives: obj-u8-availability
 - Sessions: u8-s-availability
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 2d07601369c67cea4fecdf3fb41a787a7302b6b037636698828d4dcc0dff6031
+- Content hash: a6c39bc7880ac7b67ad11ce45c04329ed307030ab3f8d8780324447bcbd05d4e
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted rule classifies the shown line?
+prompt=Which explanation accounts for the noun cases in the shown line?
 promptLetter=В Москве́ есть ста́рые зда́ния
-options=It is followed by the nominative case | Conversely, to say 'There isn't...', 'There aren't...', we use the word
-answer=It is followed by the nominative case
-feedback=Does the admitted record show the governed contrast? It is followed by the nominative case.
+options=In this line, the thing that exists is in the nominative case. | In this line, the absent thing is in the genitive case.
+answer=In this line, the thing that exists is in the nominative case.
+feedback=В Москве́ есть ста́рые зда́ния expresses presence. The noun naming what exists is nominative. The genitive absence explanation would describe absence, which this line does not assert.
 objectiveId=obj-u8-availability
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted rule is the other construction in the same frozen span.
+distractorRationales= | The other explanation describes absence rather than the presence or simple possession shown here.
 testedFeature=EXISTENCE_ABSENCE
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+evidenceMode=STATED_APPLICATION
 contrastSetId=u8-availability-3
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-u8-availability-x-0
-distractorSourceIds= | prov-u8-availability-rem
-distractorDifference= | This admitted rule is the other construction in the same frozen span.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
-contrastMembers=It is followed by the nominative case | Conversely, to say 'There isn't...', 'There aren't...', we use the word
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u8-availability-1-ru | prov-u8-availability-x-0 | prov-u8-availability-rem
+answerSourceIds=prov-ca-rule-u8-i-availability-3-1
+distractorSourceIds= | prov-ca-rule-u8-i-availability-3-2
+distractorDifference= | The other explanation describes absence rather than the presence or simple possession shown here.
+whyAnswerDemonstratesObjective=В Москве́ есть ста́рые зда́ния expresses presence. The noun naming what exists is nominative. The genitive absence explanation would describe absence, which this line does not assert.
+contrastMembers=In this line, the thing that exists is in the nominative case. | In this line, the absent thing is in the genitive case.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-rule-u8-i-availability-3-0 | prov-ca-rule-u8-i-availability-3-1 | prov-ca-rule-u8-i-availability-3-2
 
 ### REFERENCE `ref-u610-attribution`
 
@@ -4752,6 +4756,1058 @@ attribution=Russian Companion content-audit research synthesis, content-audit-20
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
 sourceHash=2359c20c6ef86fb2404e96b2e1c5c6de27cd108a072d6472039740fe2ca7369e
 contentHash=34edd732b8317165d3ca0a0e7a44f87572460756491e6bfcabcc599684922056
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-g-availability-0-0`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 63a2ebe8c4a36d620eb10edd4e27bf9dd7c747c09df12de2be52adad19dbe428
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-g-availability-0
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+На э́той у́лице есть францу́зы expresses presence. The noun naming what exists is nominative. The genitive absence explanation would describe absence, which this line does not assert.
+Tuple-v1:tuple-v1:1;56:На э́той у́лице есть францу́зы62:In this line, the thing that exists is in the nominative case.1;55:In this line, the absent thing is in the genitive case.
+shippedText=На э́той у́лице есть францу́зы
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fa53f98f2d74dc44f211c909b07e3ee46e9ce5b0b529f0f56cc0beb268970261
+contentHash=4ae3c622c2207d1f59d99e080540421c9e7b456ddbcf945f48be5fb0d6f3b8a1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-g-availability-0-1`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: faf4998f0bf392162c9c80a9322fb698eeaa575e6c77ba25ac0c181f04b60123
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-g-availability-0
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+На э́той у́лице есть францу́зы expresses presence. The noun naming what exists is nominative. The genitive absence explanation would describe absence, which this line does not assert.
+Tuple-v1:tuple-v1:1;56:На э́той у́лице есть францу́зы62:In this line, the thing that exists is in the nominative case.1;55:In this line, the absent thing is in the genitive case.
+shippedText=In this line, the thing that exists is in the nominative case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fa53f98f2d74dc44f211c909b07e3ee46e9ce5b0b529f0f56cc0beb268970261
+contentHash=7db4955b4f44b5a33ed45a0d0c712c7cd3696a2c92fe4d8d3de9b268c464c43c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-g-availability-0-2`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 170b156dabc1eeb55c12c993218e917a98e120f287efc85bbc77c1227fbd8a5a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-g-availability-0
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+На э́той у́лице есть францу́зы expresses presence. The noun naming what exists is nominative. The genitive absence explanation would describe absence, which this line does not assert.
+Tuple-v1:tuple-v1:1;56:На э́той у́лице есть францу́зы62:In this line, the thing that exists is in the nominative case.1;55:In this line, the absent thing is in the genitive case.
+shippedText=In this line, the absent thing is in the genitive case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fa53f98f2d74dc44f211c909b07e3ee46e9ce5b0b529f0f56cc0beb268970261
+contentHash=0d075de2ad09497c4d6794bc7a9fe6bbaec4ed77037a667ab3a4000bf29fdb46
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-g-availability-0-feedback`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9834e8adf5813ac185dbccee08bc7b62e863c1fc9c23e597885487e06f9ad32c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:complete-rule:u8-g-availability-0-feedback
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+На э́той у́лице есть францу́зы expresses presence. The noun naming what exists is nominative. The genitive absence explanation would describe absence, which this line does not assert.
+shippedText=На э́той у́лице есть францу́зы expresses presence. The noun naming what exists is nominative. The genitive absence explanation would describe absence, which this line does not assert.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a0ecf23e8e1b5be5dd4906a9145b5fa7548ad9bf01bdad169b919934e412694a
+contentHash=2999da4e60d0983f194da03f280f2963f1dc583c8b07af7c8725f6f8443434b7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-g-availability-0-prompt`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7ab20eac5b67ab2d344c174dc26394e000f8403e4ba218e7dcb78c49d6486238
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:complete-rule:u8-g-availability-0-prompt
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Which explanation accounts for the noun cases in the shown line?
+shippedText=Which explanation accounts for the noun cases in the shown line?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=58ecb293e2dce13fb63b3810d0a2181d7aa407f4f6d5be4f1ac2c753d23dc51f
+contentHash=e6f36b64455106cf65a70c1c7ffefb56ac3d6e99cf2edf51fcb18bb327483e47
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-g-availability-0-rationale`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4753fef48225c17e174469a675f84d34dc60bd22f5083a4d84e18857ce782f1b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:complete-rule:u8-g-availability-0-rationale
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+The other explanation describes absence rather than the presence or simple possession shown here.
+shippedText=The other explanation describes absence rather than the presence or simple possession shown here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=adb6b0c59cb348ef16b6c824784fd6466e3ab2ca6da7ad850dfe5bfbf933cd33
+contentHash=b4600d802d7db3baff3ab7f4cb71aef97260fb953275ada54921983aa191e7ef
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-i-availability-1-0`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3ccb033a1d46a3a3fc148dba534d370a318ba68c816ed347aebe84ee7b5e5bc8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-i-availability-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+В Москве́ нет ста́рых зда́ний expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+Tuple-v1:tuple-v1:1;54:В Москве́ нет ста́рых зда́ний55:In this line, the absent thing is in the genitive case.1;62:In this line, the thing that exists is in the nominative case.
+shippedText=В Москве́ нет ста́рых зда́ний
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3cb45ff87a2adfe6f189d6c615bd3158668075ed3af88bbd698163fed13dbe3f
+contentHash=71cfe1f3e16ccd19bb427a345fd4afd17d51554c2e2f7cdf6d5fe80cd9214b4f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-i-availability-1-1`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e1abddc5da7d180300faa9a36fa43ac4c022cd2eb883f3f6a08db9bd89701387
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-i-availability-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+В Москве́ нет ста́рых зда́ний expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+Tuple-v1:tuple-v1:1;54:В Москве́ нет ста́рых зда́ний55:In this line, the absent thing is in the genitive case.1;62:In this line, the thing that exists is in the nominative case.
+shippedText=In this line, the absent thing is in the genitive case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3cb45ff87a2adfe6f189d6c615bd3158668075ed3af88bbd698163fed13dbe3f
+contentHash=0d075de2ad09497c4d6794bc7a9fe6bbaec4ed77037a667ab3a4000bf29fdb46
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-i-availability-1-2`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3d2c3836c3be551f5af35d83f8e082d4da8401edbc8e4d6256798a1693f9f8f4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-i-availability-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+В Москве́ нет ста́рых зда́ний expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+Tuple-v1:tuple-v1:1;54:В Москве́ нет ста́рых зда́ний55:In this line, the absent thing is in the genitive case.1;62:In this line, the thing that exists is in the nominative case.
+shippedText=In this line, the thing that exists is in the nominative case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3cb45ff87a2adfe6f189d6c615bd3158668075ed3af88bbd698163fed13dbe3f
+contentHash=7db4955b4f44b5a33ed45a0d0c712c7cd3696a2c92fe4d8d3de9b268c464c43c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-i-availability-1-feedback`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: aff315f0cefe6ad30c6cca7ce85cbd92a67cd30ff065956f448af1d7c08b29d4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:complete-rule:u8-i-availability-1-feedback
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+В Москве́ нет ста́рых зда́ний expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+shippedText=В Москве́ нет ста́рых зда́ний expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1f796652272a4b6dfac092ee8c4b549dd387f158c1d0bbeefb2023c745b03146
+contentHash=b55c3a6b7d90d224f2e7c47aec9b3cb00841868a9fc71ba60b83167d98fba4e8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-i-availability-1-prompt`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 14e27ee557dd02153ad995b5265be85b894b29582a0e308e9b974fd33a251bea
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:complete-rule:u8-i-availability-1-prompt
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Which explanation accounts for the noun cases in the shown line?
+shippedText=Which explanation accounts for the noun cases in the shown line?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=58ecb293e2dce13fb63b3810d0a2181d7aa407f4f6d5be4f1ac2c753d23dc51f
+contentHash=e6f36b64455106cf65a70c1c7ffefb56ac3d6e99cf2edf51fcb18bb327483e47
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-i-availability-1-rationale`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5f9fa8082b4ffd2df5c1e6e138c79f518534ce4e9c32678c0048de3af2a7cdb0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:complete-rule:u8-i-availability-1-rationale
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+The other explanation asserts presence or simple possession rather than the absence shown here.
+shippedText=The other explanation asserts presence or simple possession rather than the absence shown here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4d5c295d718c2b5ab4829c532093cf1e86abeae5a69bcb196f89eb062368f595
+contentHash=937e7014c6001cedb4050483baa44bf31c472952d4cd41b6e9d4e7f21176cb36
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-i-availability-2-0`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d9ceb6fcd70696184dd9ec84db081e2ec56bf5ea992f9d63468c7bf29e6ea4d1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-i-availability-2
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+Нет рестора́нов expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+Tuple-v1:tuple-v1:1;29:Нет рестора́нов55:In this line, the absent thing is in the genitive case.1;62:In this line, the thing that exists is in the nominative case.
+shippedText=Нет рестора́нов
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ff28331b1cc3029985fc4fb8e7ca84360912721429255ec9928c8b3b0473f2ad
+contentHash=a297a66555ed1f3f1734bc4d6eb6dcc52e6b910186adf5c42f4d21b4358b1b05
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-i-availability-2-1`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5a9a883a7201c411866aef85afe65a385b752d616779932a19cd7234d7683cb7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-i-availability-2
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+Нет рестора́нов expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+Tuple-v1:tuple-v1:1;29:Нет рестора́нов55:In this line, the absent thing is in the genitive case.1;62:In this line, the thing that exists is in the nominative case.
+shippedText=In this line, the absent thing is in the genitive case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ff28331b1cc3029985fc4fb8e7ca84360912721429255ec9928c8b3b0473f2ad
+contentHash=0d075de2ad09497c4d6794bc7a9fe6bbaec4ed77037a667ab3a4000bf29fdb46
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-i-availability-2-2`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 99545d7d6cf1f7e93e424f52c1ff0eeec5937ccb00e63940b19891baacd8daaf
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-i-availability-2
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+Нет рестора́нов expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+Tuple-v1:tuple-v1:1;29:Нет рестора́нов55:In this line, the absent thing is in the genitive case.1;62:In this line, the thing that exists is in the nominative case.
+shippedText=In this line, the thing that exists is in the nominative case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ff28331b1cc3029985fc4fb8e7ca84360912721429255ec9928c8b3b0473f2ad
+contentHash=7db4955b4f44b5a33ed45a0d0c712c7cd3696a2c92fe4d8d3de9b268c464c43c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-i-availability-2-feedback`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7c8e0971ffe51d8d14f2fc1a12bef244656582efbfacd2d2faee39329194df08
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:complete-rule:u8-i-availability-2-feedback
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Нет рестора́нов expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+shippedText=Нет рестора́нов expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f802030e6ac299975c131b59cbd3564b5cc353f2ed8c435530f9bf9df997f769
+contentHash=a1f961eed3056584b688faaead231dfcc272becf164d63a2de1963c4d8be7d4c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-i-availability-2-prompt`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b720f374e3d8dae70f9a1c8abde167c0d41268d1399a4cffbba474ca92c240a3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:complete-rule:u8-i-availability-2-prompt
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Which explanation accounts for the noun cases in the shown line?
+shippedText=Which explanation accounts for the noun cases in the shown line?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=58ecb293e2dce13fb63b3810d0a2181d7aa407f4f6d5be4f1ac2c753d23dc51f
+contentHash=e6f36b64455106cf65a70c1c7ffefb56ac3d6e99cf2edf51fcb18bb327483e47
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-i-availability-2-rationale`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4271b15e4a40cfcbd86c339203f654562a24a84274a1ae91a6ff462cae6e448d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:complete-rule:u8-i-availability-2-rationale
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+The other explanation asserts presence or simple possession rather than the absence shown here.
+shippedText=The other explanation asserts presence or simple possession rather than the absence shown here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4d5c295d718c2b5ab4829c532093cf1e86abeae5a69bcb196f89eb062368f595
+contentHash=937e7014c6001cedb4050483baa44bf31c472952d4cd41b6e9d4e7f21176cb36
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-i-availability-3-0`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 11a0d7e0b7a1595ed7b2e31bb7fe604488838668beaa1d16744e650318eab152
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-i-availability-3
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+В Москве́ есть ста́рые зда́ния expresses presence. The noun naming what exists is nominative. The genitive absence explanation would describe absence, which this line does not assert.
+Tuple-v1:tuple-v1:1;56:В Москве́ есть ста́рые зда́ния62:In this line, the thing that exists is in the nominative case.1;55:In this line, the absent thing is in the genitive case.
+shippedText=В Москве́ есть ста́рые зда́ния
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a5b879fea6188ac65b04a9c9eaf1c982679ac5487e60ea64bbd50d02cf3b2774
+contentHash=9e41adcaeeb7f98bcb13bae6043f4a318fa45445d2eda87b0a519521468140bf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-i-availability-3-1`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f89dfc2cbc4632cb45d6cd20037da4f140ed676bedb3f3b380c349a5945e49e3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-i-availability-3
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+В Москве́ есть ста́рые зда́ния expresses presence. The noun naming what exists is nominative. The genitive absence explanation would describe absence, which this line does not assert.
+Tuple-v1:tuple-v1:1;56:В Москве́ есть ста́рые зда́ния62:In this line, the thing that exists is in the nominative case.1;55:In this line, the absent thing is in the genitive case.
+shippedText=In this line, the thing that exists is in the nominative case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a5b879fea6188ac65b04a9c9eaf1c982679ac5487e60ea64bbd50d02cf3b2774
+contentHash=7db4955b4f44b5a33ed45a0d0c712c7cd3696a2c92fe4d8d3de9b268c464c43c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-i-availability-3-2`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 517c1d64cdb6e3467e7fae2b55422b9fedf9325f50152b70fbe5513be5152049
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-i-availability-3
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Context explanation:
+В Москве́ есть ста́рые зда́ния expresses presence. The noun naming what exists is nominative. The genitive absence explanation would describe absence, which this line does not assert.
+Tuple-v1:tuple-v1:1;56:В Москве́ есть ста́рые зда́ния62:In this line, the thing that exists is in the nominative case.1;55:In this line, the absent thing is in the genitive case.
+shippedText=In this line, the absent thing is in the genitive case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a5b879fea6188ac65b04a9c9eaf1c982679ac5487e60ea64bbd50d02cf3b2774
+contentHash=0d075de2ad09497c4d6794bc7a9fe6bbaec4ed77037a667ab3a4000bf29fdb46
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-i-availability-3-feedback`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b5caa8555471deb04ce8f59e643965c349647fe71c09b914c4eb7d93f46b5517
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:complete-rule:u8-i-availability-3-feedback
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+В Москве́ есть ста́рые зда́ния expresses presence. The noun naming what exists is nominative. The genitive absence explanation would describe absence, which this line does not assert.
+shippedText=В Москве́ есть ста́рые зда́ния expresses presence. The noun naming what exists is nominative. The genitive absence explanation would describe absence, which this line does not assert.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cc446b2c58a62105eba84bd3e278eddf1e4ad38a63dbb9917a2dfa2149240f39
+contentHash=db843013ba53130472fa03c2e195972ad3e54b3ac9d79feab56f2966cfea7609
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-i-availability-3-prompt`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1525fe447b40362e75961e66e902699f0e749f663996c81b5c234a826598cac2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:complete-rule:u8-i-availability-3-prompt
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Which explanation accounts for the noun cases in the shown line?
+shippedText=Which explanation accounts for the noun cases in the shown line?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=58ecb293e2dce13fb63b3810d0a2181d7aa407f4f6d5be4f1ac2c753d23dc51f
+contentHash=e6f36b64455106cf65a70c1c7ffefb56ac3d6e99cf2edf51fcb18bb327483e47
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-i-availability-3-rationale`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9067d8b35529bdece70467859663f60c218296e9285d3b8cd7e03a4761816fa5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:complete-rule:u8-i-availability-3-rationale
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+The other explanation describes absence rather than the presence or simple possession shown here.
+shippedText=The other explanation describes absence rather than the presence or simple possession shown here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=adb6b0c59cb348ef16b6c824784fd6466e3ab2ca6da7ad850dfe5bfbf933cd33
+contentHash=b4600d802d7db3baff3ab7f4cb71aef97260fb953275ada54921983aa191e7ef
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-st-check-availability-body`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c9cdb22f8bdb740f9e5577bc21a68308bf77c35b194628abc9a4c732e6fc2b56
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:complete-rule:u8-st-check-availability-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Read the whole shown line, then choose the complete case explanation. A missed check returns to all teaching and examples.
+shippedText=Read the whole shown line, then choose the complete case explanation. A missed check returns to all teaching and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ddf83b522615db9cf05d1c623bbc794d82a6138c3d337e6930368f4914f74678
+contentHash=2bba2029e4a3147972af9e245713669fe4179403756c71eb6df57373dc52d90f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-st-guided-availability-1-body`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5d43cf0ef98eedfd22bf6ffb7495afa09981e1fef59e8582261b3f68d1a3ce7f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:complete-rule:u8-st-guided-availability-1-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Read the whole shown line, then choose the complete case explanation. A missed check returns to all teaching and examples.
+shippedText=Read the whole shown line, then choose the complete case explanation. A missed check returns to all teaching and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ddf83b522615db9cf05d1c623bbc794d82a6138c3d337e6930368f4914f74678
+contentHash=2bba2029e4a3147972af9e245713669fe4179403756c71eb6df57373dc52d90f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-st-rem-availability-body`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7bdf948d66aa8dee1fd8ae4464b88bfa66899fe87567474d034e24a65bd5cc75
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:complete-rule:u8-st-rem-availability-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Use the presence construction when the line says that something exists. In these supplied examples, the noun naming what exists is nominative. Read the Russian line and identify whether it states presence. На э́той у́лице есть францу́зы — There are Frenchmen on this street. В Москве́ есть ста́рые зда́ния — There are old buildings in Moscow. 
+
+Use the absence construction when the line says that something does not exist. In these supplied examples, the absence word is followed by a genitive noun. Presence and absence require different case explanations.
+
+Compare the positive and negative lines below. For a positive line choose the nominative presence explanation; for a negative line choose the genitive absence explanation. Нет рестора́нов — There are no restaurants. В Москве́ нет ста́рых зда́ний — There are no old buildings in Moscow. 
+shippedText=Use the presence construction when the line says that something exists. In these supplied examples, the noun naming what exists is nominative. Read the Russian line and identify whether it states presence. На э́той у́лице есть францу́зы — There are Frenchmen on this street. В Москве́ есть ста́рые зда́ния — There are old buildings in Moscow. 
+
+Use the absence construction when the line says that something does not exist. In these supplied examples, the absence word is followed by a genitive noun. Presence and absence require different case explanations.
+
+Compare the positive and negative lines below. For a positive line choose the nominative presence explanation; for a negative line choose the genitive absence explanation. Нет рестора́нов — There are no restaurants. В Москве́ нет ста́рых зда́ний — There are no old buildings in Moscow. 
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=82e018d07056c378489823d7986bc11f375e3c55e23646c14769741a8c99b911
+contentHash=2fc5f33cc3638018f8cea59478539a150ccaaf83584a2499e392dd373c0ee1d0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-st-rem-availability-title`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 650028d914c7ae09674bf5bd42ebed71e4f227e5423b2121323fc5ac63ad8977
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:complete-rule:u8-st-rem-availability-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Review the complete constructions
+shippedText=Review the complete constructions
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c212269f5208a8021d652c5ea4e710d39e0d888a4620364fa004ab10c5ab3310
+contentHash=cf811602a5863fec429443187e9a3d3e873e8f8096dd38d76471ca7edb6c3db5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-st-teach-availability-1-body`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5735c2ef734f3295172b3266392b19d0638f62a185cc358a5ad6dbd6bd2394c3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:complete-rule:u8-st-teach-availability-1-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Use the presence construction when the line says that something exists. In these supplied examples, the noun naming what exists is nominative. Read the Russian line and identify whether it states presence. На э́той у́лице есть францу́зы — There are Frenchmen on this street. В Москве́ есть ста́рые зда́ния — There are old buildings in Moscow. 
+shippedText=Use the presence construction when the line says that something exists. In these supplied examples, the noun naming what exists is nominative. Read the Russian line and identify whether it states presence. На э́той у́лице есть францу́зы — There are Frenchmen on this street. В Москве́ есть ста́рые зда́ния — There are old buildings in Moscow. 
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=12e52910156030b3a8a791c032ef57dfcc4f05afc31df719a4d886c00db25701
+contentHash=788faf74399394dfe7efb7795be6f52d72fe946f4e10e520dc92a7bda072d1ea
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-st-teach-availability-1-title`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a829c03acfadf2ebe773b4825bc945a96ed96512f61e513ddf0c1be6919aa74d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:complete-rule:u8-st-teach-availability-1-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Presence and the nominative
+shippedText=Presence and the nominative
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cb6ab5b20f06b2e6ef586eefbf94a3a60fd523476c4d2e75ebe79fbb57ad1607
+contentHash=887ac2b4d922ac4c1f3b928970a4f6f0018d286ea41c00d58b77b9e5d1349928
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-st-teach-availability-2-body`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 20107be47ace247a0f3f18666022985a1b0dcc00802f7ec879a686f9fb38a265
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:complete-rule:u8-st-teach-availability-2-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Use the absence construction when the line says that something does not exist. In these supplied examples, the absence word is followed by a genitive noun. Presence and absence require different case explanations.
+shippedText=Use the absence construction when the line says that something does not exist. In these supplied examples, the absence word is followed by a genitive noun. Presence and absence require different case explanations.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c44cd7f56f27843bf2cb6702e4af5c8a7712ba6d9f2965988ea875337090ed0d
+contentHash=5f13e7468572dfe366aace8d1d6bc13e2d737cd07cec4a4fd9e68720bb497470
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-st-teach-availability-2-title`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: daa38ad42533ebac7e9276fbabbab346b426b0b77dc24b7da79877eb033f05ab
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:complete-rule:u8-st-teach-availability-2-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Absence and the genitive
+shippedText=Absence and the genitive
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bc95cb7f5f5a8ad6d17c52512a44c7f14e529e8709edff036c4154c03567b1bb
+contentHash=f1af3bf9772ae3e07ab0d91e60e732aabaa7211b4e60fea96874ecdc8ea819d3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-st-teach-availability-3-body`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7b53d3bfe2ca94a501a9c6cb383fcdf6c778bce0f908c8aa8175f2d89e36c1a8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:complete-rule:u8-st-teach-availability-3-body
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Compare the positive and negative lines below. For a positive line choose the nominative presence explanation; for a negative line choose the genitive absence explanation. Нет рестора́нов — There are no restaurants. В Москве́ нет ста́рых зда́ний — There are no old buildings in Moscow. 
+shippedText=Compare the positive and negative lines below. For a positive line choose the nominative presence explanation; for a negative line choose the genitive absence explanation. Нет рестора́нов — There are no restaurants. В Москве́ нет ста́рых зда́ний — There are no old buildings in Moscow. 
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2da651c91679e1afe56e8f2e076f2d5908cdf4657edaecbe2a0b0c835d6d2d97
+contentHash=3442cc11d67bc83cdba9afe2abb1634304d0b9ea3596937ad9373b3cdd36f116
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-rule-u8-st-teach-availability-3-title`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 67bea9e606ecf431b95d09aeb4512a99acff59ce33ca4f63ae12e337ded427b4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:complete-rule:u8-st-teach-availability-3-title
+originalSourceText=Retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, Possession and Negation section: у calls the genitive for the possessor, the possessed thing in the simple у + genitive + есть + nominative pattern is nominative; есть for existence is followed by nominative; нет for absence is followed by genitive. The retained full source supplies the word and referents missing from earlier excerpts. Apply only these bounded rules to previously admitted Russian cues. Quantity phrases are not generalized as simple nominative objects. Independent English synthesis on2026-10-12 within content-audit-2026-10-08; no source prose or private Penguin prose copied; qualified semantic audit pending.
+Compare the complete examples
+shippedText=Compare the complete examples
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7b6a01d3a60fbd4e910d4e073326f03e136a739a1bc6e03224b891d72662cfae
+contentHash=bbcc7b48eff209d61c0835f7ae1e847071f1350521315f037dece3717cdb5135
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -9175,14 +10231,16 @@ permitsAppUse=true
 - `u8-st-teach-availability-1` EXAMPLE `ex-u8-availability-0`
 - `u8-st-teach-availability-1` EXAMPLE `ex-u8-availability-1`
 - `u8-st-teach-availability-1` REFERENCE `ref-u610-attribution`
-- `u8-st-guided-availability-1` REMEDIATION `u8-st-rem-availability`
-- `u8-st-guided-availability-1` ITEM `u8-g-availability-0`
 - `u8-st-teach-availability-2` REFERENCE `ref-u610-attribution`
 - `u8-st-teach-availability-3` EXAMPLE `ex-u8-availability-2`
 - `u8-st-teach-availability-3` EXAMPLE `ex-u8-availability-3`
 - `u8-st-teach-availability-3` REFERENCE `ref-u610-attribution`
+- `u8-st-guided-availability-1` REMEDIATION `u8-st-rem-availability`
+- `u8-st-guided-availability-1` ITEM `u8-g-availability-0`
 - `u8-st-rem-availability` EXAMPLE `ex-u8-availability-0`
 - `u8-st-rem-availability` EXAMPLE `ex-u8-availability-1`
+- `u8-st-rem-availability` EXAMPLE `ex-u8-availability-2`
+- `u8-st-rem-availability` EXAMPLE `ex-u8-availability-3`
 - `u8-st-check-availability` REMEDIATION `u8-st-rem-availability`
 - `u8-st-check-availability` ITEM `u8-i-availability-1`
 - `u8-st-check-availability` ITEM `u8-i-availability-2`
@@ -9249,6 +10307,40 @@ permitsAppUse=true
 - `obj-u8-spelling` PROVENANCE `prov-ca-declension-u8-i-spelling-4-0`
 - `obj-u8-spelling` PROVENANCE `prov-ca-declension-u8-i-spelling-4-1`
 - `obj-u8-spelling` PROVENANCE `prov-ca-declension-u8-i-spelling-4-3`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-g-availability-0-0`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-g-availability-0-1`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-g-availability-0-2`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-g-availability-0-feedback`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-g-availability-0-prompt`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-g-availability-0-rationale`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-i-availability-1-0`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-i-availability-1-1`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-i-availability-1-2`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-i-availability-1-feedback`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-i-availability-1-prompt`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-i-availability-1-rationale`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-i-availability-2-0`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-i-availability-2-1`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-i-availability-2-2`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-i-availability-2-feedback`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-i-availability-2-prompt`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-i-availability-2-rationale`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-i-availability-3-0`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-i-availability-3-1`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-i-availability-3-2`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-i-availability-3-feedback`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-i-availability-3-prompt`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-i-availability-3-rationale`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-st-check-availability-body`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-st-guided-availability-1-body`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-st-rem-availability-body`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-st-rem-availability-title`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-st-teach-availability-1-body`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-st-teach-availability-1-title`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-st-teach-availability-2-body`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-st-teach-availability-2-title`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-st-teach-availability-3-body`
+- `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-st-teach-availability-3-title`
 - `obj-u8-spelling` PROVENANCE `prov-ca-u8-worked-adjective-feature`
 - `obj-u8-spelling` PROVENANCE `prov-ca-u8-worked-check-body`
 - `obj-u8-spelling` PROVENANCE `prov-ca-u8-worked-guided-body`

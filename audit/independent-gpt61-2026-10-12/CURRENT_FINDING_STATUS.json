@@ -56,8 +56,9 @@
       "findingId": "IA008",
       "producerSeverity": "MEDIUM",
       "producerStatus": "OPEN",
-      "engineeringDisposition": "OPEN",
-      "formalAcceptance": false
+      "engineeringDisposition": "ENGINEERING_FIX_PENDING_INDEPENDENT_VERIFICATION",
+      "formalAcceptance": false,
+      "implementationCommit": "1ab25bc6813963cbb3f41da92f2c4ffe8383a1ae"
     },
     {
       "findingId": "IA009",
@@ -134,7 +135,7 @@
   "semanticAcceptancePromoted": false,
   "physicalDeviceAcceptance": "OUTSTANDING",
   "release": "NOT_APPROVED",
-  "latestValidatorImplementationCommit": "7873c4794c65d06dacf8f80bcb8fcbf110f975b3",
+  "latestValidatorImplementationCommit": "1ab25bc6813963cbb3f41da92f2c4ffe8383a1ae",
   "latestSourceBindingCheckpoint": "25378fedd85c7c973ecf3decf1e9396078f63e2f",
   "remainingSourceReviewPointers": [
     "IA007_SOURCE_REVIEW_PENDING.md",
@@ -142,5 +143,5 @@
   ],
   "firstBatchImplementationCommit": "4f5cb8024d3f68a37052fdf85b5755bffa2a0904",
   "firstBatchPacketCheckpoint": "49af91a0f5578c63a3b9b98bbe975f40d2758fcc",
-  "latestCurriculumImplementationCommit": "7873c4794c65d06dacf8f80bcb8fcbf110f975b3"
+  "latestCurriculumImplementationCommit": "1ab25bc6813963cbb3f41da92f2c4ffe8383a1ae"
 }
