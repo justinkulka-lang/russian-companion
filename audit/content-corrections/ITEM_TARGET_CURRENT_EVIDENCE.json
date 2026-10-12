@@ -3,7 +3,7 @@
   "purpose": "Current evidence for the retained preliminary audit targets; no semantic closure or approval",
   "inputs": {
     "curriculumPath": "app/src/main/assets/content/v2-curriculum.json",
-    "curriculumFileSha256": "3c917c1153caa4b1a5d57b4413b3766acf91e7499327e20be7fa39c7f4683cf9",
+    "curriculumFileSha256": "1ff9c8a1bdcd99468c7c0fafdedb5d90ce75762c981fc250107237a47084348a",
     "targetSnapshotPath": "audit/content-corrections/ITEM_TARGET_RECONCILIATION_PENDING.csv",
     "targetSnapshotFileSha256": "ba574c8a201baf52614b4cbdc35f9b3981e7a3de727df77e5c5f8ec827dce12f"
   },
@@ -3256,7 +3256,7 @@
         {
           "id": "obj-u27-comprehension",
           "unitNumber": 27,
-          "title": "Read the participial construction",
+          "title": "Read the described letter, writer and separate main action",
           "kind": "RECOGNITION",
           "instructionStepIds": [
             "u27-comp-teach-1",
@@ -3286,8 +3286,8 @@
           "step": {
             "id": "u27-comp-teach-1",
             "kind": "TEACH",
-            "title": "Admitted instruction",
-            "body": "Read the participial phrase for who did the action and what the result is.",
+            "title": "Separate the letter description from the sentence action",
+            "body": "Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.",
             "referenceIds": [
               "ref-u2630-attribution"
             ],
@@ -3300,10 +3300,22 @@
         {
           "sessionId": "u27-s-gap-comprehension",
           "step": {
+            "id": "u27-comp-teach-2",
+            "kind": "TEACH",
+            "title": "Do not transfer the main-action subject to an unnamed participle agent",
+            "body": "Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ]
+          }
+        },
+        {
+          "sessionId": "u27-s-gap-comprehension",
+          "step": {
             "id": "u27-comp-guided",
             "kind": "GUIDED",
             "title": "Guided practice",
-            "body": "Stress placement is a different objective and does not answer these readings.",
+            "body": "Use the explained meaning and the supplied form or sentence. A missed choice returns to both teaching cards and every worked example. Optional present-passive study does not gate Unit 27.",
             "referenceIds": [
               "ref-u2630-attribution"
             ],
@@ -3316,25 +3328,17 @@
         {
           "sessionId": "u27-s-gap-comprehension",
           "step": {
-            "id": "u27-comp-teach-2",
-            "kind": "TEACH",
-            "title": "Admitted instruction",
-            "body": "Stress placement is a different objective and does not answer these readings.",
-            "referenceIds": [
-              "ref-u2630-attribution"
-            ]
-          }
-        },
-        {
-          "sessionId": "u27-s-gap-comprehension",
-          "step": {
             "id": "u27-comp-remediate",
             "kind": "REMEDIATE",
-            "title": "Remediation",
-            "body": "Read the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.",
+            "title": "Review the complete supplied-form reading",
+            "body": "Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.\n\nАнна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.",
             "referenceIds": [
               "ref-u2630-attribution",
               "ref-ca-participles"
+            ],
+            "exampleIds": [
+              "ex-u27-comp-1",
+              "ex-u27-comp-2"
             ]
           }
         }
@@ -3358,8 +3362,11 @@
       "contentKind": "items",
       "reportedIssue": "Passive participle does not identify Anna as the reader.",
       "proposedCorrection": "Anna put away the letter that had been read. Keep reader identity unspecified.",
-      "snapshotComparison": "UNCHANGED",
-      "changedFields": [],
+      "snapshotComparison": "CHANGED",
+      "changedFields": [
+        "assessment",
+        "feedback"
+      ],
       "currentObject": {
         "id": "u27-i-comp-2",
         "kind": "CONTRAST_SELECTION",
@@ -3372,7 +3379,7 @@
           "the letter put Anna away"
         ],
         "answer": "Anna put away the letter that had been read.",
-        "feedback": "Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.",
+        "feedback": "Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.\nAnna performs the putting-away action. The passive description leaves the reader unspecified; naming the main-action subject does not identify that reader.",
         "objectiveId": "obj-u27-comprehension",
         "sourceId": "src-content-audit-research",
         "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
@@ -3389,19 +3396,19 @@
           "cueLanguage": "ru",
           "independent": true,
           "answerSourceIds": [
-            "prov-ca-repair-27-11086"
+            "prov-ca-u27-remaining-comprehension-host-6"
           ],
           "distractorSourceIds": [
             "",
-            "prov-ca-repair-27-11097",
-            "prov-ca-repair-27-11098"
+            "prov-ca-u27-remaining-comprehension-host-17",
+            "prov-ca-u27-remaining-comprehension-host-18"
           ],
           "distractorDifference": [
             "",
             "Anna wrote the letter on the table invents a different verb.",
             "the letter put Anna away reverses who did the action."
           ],
-          "whyAnswerDemonstratesObjective": "Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.",
+          "whyAnswerDemonstratesObjective": "Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.\nAnna performs the putting-away action. The passive description leaves the reader unspecified; naming the main-action subject does not identify that reader.",
           "contrastMembers": [
             "Anna put away the letter that had been read.",
             "Anna wrote the letter on the table",
@@ -3409,10 +3416,10 @@
           ],
           "relationKind": "STATED_APPLICATION",
           "relationParticipantIds": [
-            "prov-ca-repair-27-11085",
-            "prov-ca-repair-27-11086",
-            "prov-ca-repair-27-11097",
-            "prov-ca-repair-27-11098"
+            "prov-ca-u27-remaining-comprehension-host-5",
+            "prov-ca-u27-remaining-comprehension-host-6",
+            "prov-ca-u27-remaining-comprehension-host-17",
+            "prov-ca-u27-remaining-comprehension-host-18"
           ],
           "responseKind": "ENGLISH_CLASSIFICATION"
         }
@@ -3421,7 +3428,7 @@
         {
           "id": "obj-u27-comprehension",
           "unitNumber": 27,
-          "title": "Read the participial construction",
+          "title": "Read the described letter, writer and separate main action",
           "kind": "RECOGNITION",
           "instructionStepIds": [
             "u27-comp-teach-1",
@@ -3451,8 +3458,8 @@
           "step": {
             "id": "u27-comp-teach-1",
             "kind": "TEACH",
-            "title": "Admitted instruction",
-            "body": "Read the participial phrase for who did the action and what the result is.",
+            "title": "Separate the letter description from the sentence action",
+            "body": "Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.",
             "referenceIds": [
               "ref-u2630-attribution"
             ],
@@ -3465,10 +3472,22 @@
         {
           "sessionId": "u27-s-gap-comprehension",
           "step": {
+            "id": "u27-comp-teach-2",
+            "kind": "TEACH",
+            "title": "Do not transfer the main-action subject to an unnamed participle agent",
+            "body": "Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ]
+          }
+        },
+        {
+          "sessionId": "u27-s-gap-comprehension",
+          "step": {
             "id": "u27-comp-guided",
             "kind": "GUIDED",
             "title": "Guided practice",
-            "body": "Stress placement is a different objective and does not answer these readings.",
+            "body": "Use the explained meaning and the supplied form or sentence. A missed choice returns to both teaching cards and every worked example. Optional present-passive study does not gate Unit 27.",
             "referenceIds": [
               "ref-u2630-attribution"
             ],
@@ -3481,25 +3500,17 @@
         {
           "sessionId": "u27-s-gap-comprehension",
           "step": {
-            "id": "u27-comp-teach-2",
-            "kind": "TEACH",
-            "title": "Admitted instruction",
-            "body": "Stress placement is a different objective and does not answer these readings.",
-            "referenceIds": [
-              "ref-u2630-attribution"
-            ]
-          }
-        },
-        {
-          "sessionId": "u27-s-gap-comprehension",
-          "step": {
             "id": "u27-comp-remediate",
             "kind": "REMEDIATE",
-            "title": "Remediation",
-            "body": "Read the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.",
+            "title": "Review the complete supplied-form reading",
+            "body": "Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.\n\nАнна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.",
             "referenceIds": [
               "ref-u2630-attribution",
               "ref-ca-participles"
+            ],
+            "exampleIds": [
+              "ex-u27-comp-1",
+              "ex-u27-comp-2"
             ]
           }
         },
@@ -3509,7 +3520,7 @@
             "id": "u27-comp-check",
             "kind": "CHECK",
             "title": "Independent checks",
-            "body": "Read the participial phrase for who did the action and what the result is.",
+            "body": "Use the explained meaning and the supplied form or sentence. A missed choice returns to both teaching cards and every worked example. Optional present-passive study does not gate Unit 27.",
             "referenceIds": [
               "ref-u2630-attribution"
             ],
@@ -10945,7 +10956,7 @@
       "currentObject": {
         "id": "obj-u27-present-passive",
         "unitNumber": 27,
-        "title": "Optional present passive lines",
+        "title": "Optional: distinguish a present passive form from its supporting verb forms",
         "kind": "RECOGNITION",
         "instructionStepIds": [
           "u27-st-orient",
@@ -10973,7 +10984,7 @@
         {
           "id": "obj-u27-present-passive",
           "unitNumber": 27,
-          "title": "Optional present passive lines",
+          "title": "Optional: distinguish a present passive form from its supporting verb forms",
           "kind": "RECOGNITION",
           "instructionStepIds": [
             "u27-st-orient",
@@ -11017,8 +11028,8 @@
           "step": {
             "id": "u27-st-teach-present-passive-1",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "Read the admitted examples on this card. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+            "title": "Meaning differs between a passive description, a finite verb and an infinitive",
+            "body": "The supplied обсужда́емый has the meaning being discussed. It describes something affected by discussion, rather than naming the person doing the discussing. The source also permits an able-to-be-discussed reading; the checked English option here is being discussed. The supporting verb form оставля́ем means we leave: it is a first-person plural present-tense form, with we performing the action, not a passive description. The infinitive оставля́ть means to leave and does not by itself name a we subject. Choose we leave for the finite form and to leave for the infinitive. The option to discuss is an infinitive meaning rather than the checked passive description. Different action meanings and grammatical functions must not be exchanged simply because forms share a stem.",
             "referenceIds": [
               "ref-u2630-attribution"
             ],
@@ -11031,10 +11042,22 @@
         {
           "sessionId": "u27-s-present-passive",
           "step": {
+            "id": "u27-st-teach-present-passive-2",
+            "kind": "TEACH",
+            "title": "Recognize only the retained formation and accent placements",
+            "body": "The retained source illustrates the relation between the infinitive оставля́ть, the finite form оставля́ем and the present passive оставля́емый with its adjective ending. The finite we leave form is a supporting example, not itself a participle. This small set does not establish which other verbs permit a present passive or a complete formation algorithm for every verb. In the supplied leave contrast, оставля́емый is retained and оставляемы́й is rejected. In the supplied discuss contrast, обсужда́емый is retained and обсуждаемы́й is rejected. The retained accents are on the third syllable; the alternatives move them to the final syllable. Compare the accented vowel in each particular form; do not predict an unlisted form or its stress from this set. This entire session is optional and non-gating. Its present-passive stress choices belong to the optional objective, not to the required past-passive stress gate. Active-participle instruction belongs to Unit 29, not this session.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ]
+          }
+        },
+        {
+          "sessionId": "u27-s-present-passive",
+          "step": {
             "id": "u27-st-guided-present-passive-1",
             "kind": "GUIDED",
             "title": "Guided practice",
-            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "body": "Use the explained meaning and the supplied form or sentence. A missed choice returns to both teaching cards and every worked example. Optional present-passive study does not gate Unit 27.",
             "itemIds": [
               "u27-g-present-passive-0",
               "u27-g-stress-1"
@@ -11045,22 +11068,10 @@
         {
           "sessionId": "u27-s-present-passive",
           "step": {
-            "id": "u27-st-teach-present-passive-2",
-            "kind": "TEACH",
-            "title": "Admitted instruction",
-            "body": "In order to form the passive present participle",
-            "referenceIds": [
-              "ref-u2630-attribution"
-            ]
-          }
-        },
-        {
-          "sessionId": "u27-s-present-passive",
-          "step": {
             "id": "u27-st-rem-present-passive",
             "kind": "REMEDIATE",
-            "title": "Remediation",
-            "body": "In order to form the passive present participle",
+            "title": "Review the complete supplied-form reading",
+            "body": "The supplied обсужда́емый has the meaning being discussed. It describes something affected by discussion, rather than naming the person doing the discussing. The source also permits an able-to-be-discussed reading; the checked English option here is being discussed. The supporting verb form оставля́ем means we leave: it is a first-person plural present-tense form, with we performing the action, not a passive description. The infinitive оставля́ть means to leave and does not by itself name a we subject. Choose we leave for the finite form and to leave for the infinitive. The option to discuss is an infinitive meaning rather than the checked passive description. Different action meanings and grammatical functions must not be exchanged simply because forms share a stem.\n\nThe retained source illustrates the relation between the infinitive оставля́ть, the finite form оставля́ем and the present passive оставля́емый with its adjective ending. The finite we leave form is a supporting example, not itself a participle. This small set does not establish which other verbs permit a present passive or a complete formation algorithm for every verb. In the supplied leave contrast, оставля́емый is retained and оставляемы́й is rejected. In the supplied discuss contrast, обсужда́емый is retained and обсуждаемы́й is rejected. The retained accents are on the third syllable; the alternatives move them to the final syllable. Compare the accented vowel in each particular form; do not predict an unlisted form or its stress from this set. This entire session is optional and non-gating. Its present-passive stress choices belong to the optional objective, not to the required past-passive stress gate. Active-participle instruction belongs to Unit 29, not this session.",
             "referenceIds": [
               "ref-ca-participles"
             ],
@@ -11285,7 +11296,7 @@
         {
           "id": "obj-u27-present-passive",
           "unitNumber": 27,
-          "title": "Optional present passive lines",
+          "title": "Optional: distinguish a present passive form from its supporting verb forms",
           "kind": "RECOGNITION",
           "instructionStepIds": [
             "u27-st-orient",
@@ -11329,8 +11340,8 @@
           "step": {
             "id": "u27-st-teach-present-passive-1",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "Read the admitted examples on this card. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+            "title": "Meaning differs between a passive description, a finite verb and an infinitive",
+            "body": "The supplied обсужда́емый has the meaning being discussed. It describes something affected by discussion, rather than naming the person doing the discussing. The source also permits an able-to-be-discussed reading; the checked English option here is being discussed. The supporting verb form оставля́ем means we leave: it is a first-person plural present-tense form, with we performing the action, not a passive description. The infinitive оставля́ть means to leave and does not by itself name a we subject. Choose we leave for the finite form and to leave for the infinitive. The option to discuss is an infinitive meaning rather than the checked passive description. Different action meanings and grammatical functions must not be exchanged simply because forms share a stem.",
             "referenceIds": [
               "ref-u2630-attribution"
             ],
@@ -11343,10 +11354,22 @@
         {
           "sessionId": "u27-s-present-passive",
           "step": {
+            "id": "u27-st-teach-present-passive-2",
+            "kind": "TEACH",
+            "title": "Recognize only the retained formation and accent placements",
+            "body": "The retained source illustrates the relation between the infinitive оставля́ть, the finite form оставля́ем and the present passive оставля́емый with its adjective ending. The finite we leave form is a supporting example, not itself a participle. This small set does not establish which other verbs permit a present passive or a complete formation algorithm for every verb. In the supplied leave contrast, оставля́емый is retained and оставляемы́й is rejected. In the supplied discuss contrast, обсужда́емый is retained and обсуждаемы́й is rejected. The retained accents are on the third syllable; the alternatives move them to the final syllable. Compare the accented vowel in each particular form; do not predict an unlisted form or its stress from this set. This entire session is optional and non-gating. Its present-passive stress choices belong to the optional objective, not to the required past-passive stress gate. Active-participle instruction belongs to Unit 29, not this session.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ]
+          }
+        },
+        {
+          "sessionId": "u27-s-present-passive",
+          "step": {
             "id": "u27-st-guided-present-passive-1",
             "kind": "GUIDED",
             "title": "Guided practice",
-            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "body": "Use the explained meaning and the supplied form or sentence. A missed choice returns to both teaching cards and every worked example. Optional present-passive study does not gate Unit 27.",
             "itemIds": [
               "u27-g-present-passive-0",
               "u27-g-stress-1"
@@ -11357,22 +11380,10 @@
         {
           "sessionId": "u27-s-present-passive",
           "step": {
-            "id": "u27-st-teach-present-passive-2",
-            "kind": "TEACH",
-            "title": "Admitted instruction",
-            "body": "In order to form the passive present participle",
-            "referenceIds": [
-              "ref-u2630-attribution"
-            ]
-          }
-        },
-        {
-          "sessionId": "u27-s-present-passive",
-          "step": {
             "id": "u27-st-rem-present-passive",
             "kind": "REMEDIATE",
-            "title": "Remediation",
-            "body": "In order to form the passive present participle",
+            "title": "Review the complete supplied-form reading",
+            "body": "The supplied обсужда́емый has the meaning being discussed. It describes something affected by discussion, rather than naming the person doing the discussing. The source also permits an able-to-be-discussed reading; the checked English option here is being discussed. The supporting verb form оставля́ем means we leave: it is a first-person plural present-tense form, with we performing the action, not a passive description. The infinitive оставля́ть means to leave and does not by itself name a we subject. Choose we leave for the finite form and to leave for the infinitive. The option to discuss is an infinitive meaning rather than the checked passive description. Different action meanings and grammatical functions must not be exchanged simply because forms share a stem.\n\nThe retained source illustrates the relation between the infinitive оставля́ть, the finite form оставля́ем and the present passive оставля́емый with its adjective ending. The finite we leave form is a supporting example, not itself a participle. This small set does not establish which other verbs permit a present passive or a complete formation algorithm for every verb. In the supplied leave contrast, оставля́емый is retained and оставляемы́й is rejected. In the supplied discuss contrast, обсужда́емый is retained and обсуждаемы́й is rejected. The retained accents are on the third syllable; the alternatives move them to the final syllable. Compare the accented vowel in each particular form; do not predict an unlisted form or its stress from this set. This entire session is optional and non-gating. Its present-passive stress choices belong to the optional objective, not to the required past-passive stress gate. Active-participle instruction belongs to Unit 29, not this session.",
             "referenceIds": [
               "ref-ca-participles"
             ],
@@ -11459,7 +11470,7 @@
         {
           "id": "obj-u27-present-passive",
           "unitNumber": 27,
-          "title": "Optional present passive lines",
+          "title": "Optional: distinguish a present passive form from its supporting verb forms",
           "kind": "RECOGNITION",
           "instructionStepIds": [
             "u27-st-orient",
@@ -11503,8 +11514,8 @@
           "step": {
             "id": "u27-st-teach-present-passive-1",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "Read the admitted examples on this card. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+            "title": "Meaning differs between a passive description, a finite verb and an infinitive",
+            "body": "The supplied обсужда́емый has the meaning being discussed. It describes something affected by discussion, rather than naming the person doing the discussing. The source also permits an able-to-be-discussed reading; the checked English option here is being discussed. The supporting verb form оставля́ем means we leave: it is a first-person plural present-tense form, with we performing the action, not a passive description. The infinitive оставля́ть means to leave and does not by itself name a we subject. Choose we leave for the finite form and to leave for the infinitive. The option to discuss is an infinitive meaning rather than the checked passive description. Different action meanings and grammatical functions must not be exchanged simply because forms share a stem.",
             "referenceIds": [
               "ref-u2630-attribution"
             ],
@@ -11517,10 +11528,22 @@
         {
           "sessionId": "u27-s-present-passive",
           "step": {
+            "id": "u27-st-teach-present-passive-2",
+            "kind": "TEACH",
+            "title": "Recognize only the retained formation and accent placements",
+            "body": "The retained source illustrates the relation between the infinitive оставля́ть, the finite form оставля́ем and the present passive оставля́емый with its adjective ending. The finite we leave form is a supporting example, not itself a participle. This small set does not establish which other verbs permit a present passive or a complete formation algorithm for every verb. In the supplied leave contrast, оставля́емый is retained and оставляемы́й is rejected. In the supplied discuss contrast, обсужда́емый is retained and обсуждаемы́й is rejected. The retained accents are on the third syllable; the alternatives move them to the final syllable. Compare the accented vowel in each particular form; do not predict an unlisted form or its stress from this set. This entire session is optional and non-gating. Its present-passive stress choices belong to the optional objective, not to the required past-passive stress gate. Active-participle instruction belongs to Unit 29, not this session.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ]
+          }
+        },
+        {
+          "sessionId": "u27-s-present-passive",
+          "step": {
             "id": "u27-st-guided-present-passive-1",
             "kind": "GUIDED",
             "title": "Guided practice",
-            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "body": "Use the explained meaning and the supplied form or sentence. A missed choice returns to both teaching cards and every worked example. Optional present-passive study does not gate Unit 27.",
             "itemIds": [
               "u27-g-present-passive-0",
               "u27-g-stress-1"
@@ -11531,22 +11554,10 @@
         {
           "sessionId": "u27-s-present-passive",
           "step": {
-            "id": "u27-st-teach-present-passive-2",
-            "kind": "TEACH",
-            "title": "Admitted instruction",
-            "body": "In order to form the passive present participle",
-            "referenceIds": [
-              "ref-u2630-attribution"
-            ]
-          }
-        },
-        {
-          "sessionId": "u27-s-present-passive",
-          "step": {
             "id": "u27-st-rem-present-passive",
             "kind": "REMEDIATE",
-            "title": "Remediation",
-            "body": "In order to form the passive present participle",
+            "title": "Review the complete supplied-form reading",
+            "body": "The supplied обсужда́емый has the meaning being discussed. It describes something affected by discussion, rather than naming the person doing the discussing. The source also permits an able-to-be-discussed reading; the checked English option here is being discussed. The supporting verb form оставля́ем means we leave: it is a first-person plural present-tense form, with we performing the action, not a passive description. The infinitive оставля́ть means to leave and does not by itself name a we subject. Choose we leave for the finite form and to leave for the infinitive. The option to discuss is an infinitive meaning rather than the checked passive description. Different action meanings and grammatical functions must not be exchanged simply because forms share a stem.\n\nThe retained source illustrates the relation between the infinitive оставля́ть, the finite form оставля́ем and the present passive оставля́емый with its adjective ending. The finite we leave form is a supporting example, not itself a participle. This small set does not establish which other verbs permit a present passive or a complete formation algorithm for every verb. In the supplied leave contrast, оставля́емый is retained and оставляемы́й is rejected. In the supplied discuss contrast, обсужда́емый is retained and обсуждаемы́й is rejected. The retained accents are on the third syllable; the alternatives move them to the final syllable. Compare the accented vowel in each particular form; do not predict an unlisted form or its stress from this set. This entire session is optional and non-gating. Its present-passive stress choices belong to the optional objective, not to the required past-passive stress gate. Active-participle instruction belongs to Unit 29, not this session.",
             "referenceIds": [
               "ref-ca-participles"
             ],
@@ -11562,7 +11573,7 @@
             "id": "u27-st-check-present-passive",
             "kind": "CHECK",
             "title": "Independent checks",
-            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "body": "Use the explained meaning and the supplied form or sentence. A missed choice returns to both teaching cards and every worked example. Optional present-passive study does not gate Unit 27.",
             "itemIds": [
               "u27-i-present-passive-1",
               "u27-i-present-passive-2",
@@ -13737,7 +13748,7 @@
         {
           "id": "obj-u27-present-passive",
           "unitNumber": 27,
-          "title": "Optional present passive lines",
+          "title": "Optional: distinguish a present passive form from its supporting verb forms",
           "kind": "RECOGNITION",
           "instructionStepIds": [
             "u27-st-orient",
@@ -13872,8 +13883,8 @@
           "step": {
             "id": "u27-st-teach-present-passive-1",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "Read the admitted examples on this card. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+            "title": "Meaning differs between a passive description, a finite verb and an infinitive",
+            "body": "The supplied обсужда́емый has the meaning being discussed. It describes something affected by discussion, rather than naming the person doing the discussing. The source also permits an able-to-be-discussed reading; the checked English option here is being discussed. The supporting verb form оставля́ем means we leave: it is a first-person plural present-tense form, with we performing the action, not a passive description. The infinitive оставля́ть means to leave and does not by itself name a we subject. Choose we leave for the finite form and to leave for the infinitive. The option to discuss is an infinitive meaning rather than the checked passive description. Different action meanings and grammatical functions must not be exchanged simply because forms share a stem.",
             "referenceIds": [
               "ref-u2630-attribution"
             ],
@@ -13886,10 +13897,22 @@
         {
           "sessionId": "u27-s-present-passive",
           "step": {
+            "id": "u27-st-teach-present-passive-2",
+            "kind": "TEACH",
+            "title": "Recognize only the retained formation and accent placements",
+            "body": "The retained source illustrates the relation between the infinitive оставля́ть, the finite form оставля́ем and the present passive оставля́емый with its adjective ending. The finite we leave form is a supporting example, not itself a participle. This small set does not establish which other verbs permit a present passive or a complete formation algorithm for every verb. In the supplied leave contrast, оставля́емый is retained and оставляемы́й is rejected. In the supplied discuss contrast, обсужда́емый is retained and обсуждаемы́й is rejected. The retained accents are on the third syllable; the alternatives move them to the final syllable. Compare the accented vowel in each particular form; do not predict an unlisted form or its stress from this set. This entire session is optional and non-gating. Its present-passive stress choices belong to the optional objective, not to the required past-passive stress gate. Active-participle instruction belongs to Unit 29, not this session.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ]
+          }
+        },
+        {
+          "sessionId": "u27-s-present-passive",
+          "step": {
             "id": "u27-st-guided-present-passive-1",
             "kind": "GUIDED",
             "title": "Guided practice",
-            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "body": "Use the explained meaning and the supplied form or sentence. A missed choice returns to both teaching cards and every worked example. Optional present-passive study does not gate Unit 27.",
             "itemIds": [
               "u27-g-present-passive-0",
               "u27-g-stress-1"
@@ -13900,22 +13923,10 @@
         {
           "sessionId": "u27-s-present-passive",
           "step": {
-            "id": "u27-st-teach-present-passive-2",
-            "kind": "TEACH",
-            "title": "Admitted instruction",
-            "body": "In order to form the passive present participle",
-            "referenceIds": [
-              "ref-u2630-attribution"
-            ]
-          }
-        },
-        {
-          "sessionId": "u27-s-present-passive",
-          "step": {
             "id": "u27-st-rem-present-passive",
             "kind": "REMEDIATE",
-            "title": "Remediation",
-            "body": "In order to form the passive present participle",
+            "title": "Review the complete supplied-form reading",
+            "body": "The supplied обсужда́емый has the meaning being discussed. It describes something affected by discussion, rather than naming the person doing the discussing. The source also permits an able-to-be-discussed reading; the checked English option here is being discussed. The supporting verb form оставля́ем means we leave: it is a first-person plural present-tense form, with we performing the action, not a passive description. The infinitive оставля́ть means to leave and does not by itself name a we subject. Choose we leave for the finite form and to leave for the infinitive. The option to discuss is an infinitive meaning rather than the checked passive description. Different action meanings and grammatical functions must not be exchanged simply because forms share a stem.\n\nThe retained source illustrates the relation between the infinitive оставля́ть, the finite form оставля́ем and the present passive оставля́емый with its adjective ending. The finite we leave form is a supporting example, not itself a participle. This small set does not establish which other verbs permit a present passive or a complete formation algorithm for every verb. In the supplied leave contrast, оставля́емый is retained and оставляемы́й is rejected. In the supplied discuss contrast, обсужда́емый is retained and обсуждаемы́й is rejected. The retained accents are on the third syllable; the alternatives move them to the final syllable. Compare the accented vowel in each particular form; do not predict an unlisted form or its stress from this set. This entire session is optional and non-gating. Its present-passive stress choices belong to the optional objective, not to the required past-passive stress gate. Active-participle instruction belongs to Unit 29, not this session.",
             "referenceIds": [
               "ref-ca-participles"
             ],

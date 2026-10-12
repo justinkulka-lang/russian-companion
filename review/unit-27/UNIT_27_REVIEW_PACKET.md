@@ -11,12 +11,12 @@ Unit 27 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 95e2a7503f38f20d0230c856505db2f1c8b38050
-- Unit content-review SHA-256: 1bd78da2162eb76909d1b537663e9647cee2d08eff83e7d473e06b05588ed065
+- Curriculum source commit: a1155d8b9cbaeef3e86507fe3f2eebf30819c9df
+- Unit content-review SHA-256: 538761e9f566746de6fb4195dfd99039b072e51df18a1cc195444c3282a46e8d
 - Mapping-package SHA-256: 3924f3a8ac211579b4db3e387cb48632d27e9b41925e227b63b004bf652a3bc0
-- Pack content-review SHA-256: 5ce97447a6e7a040116b871f0cbd9020d5721246fb2d9f37229bdf4031867516
-- Review-package SHA-256: 56fa225caa51bf4d96204724487b8c6e73a81983fe1a0efc42db5927bb564570
-- Repository source SHA-256: f603cb9e6c0d34ae0da6e1f2882cdbe4945eebd67b557325dd5a738dc72b30e9
+- Pack content-review SHA-256: df84823434634a50ac479483344290be97f52142b98629d223d295e7b51a60d1
+- Review-package SHA-256: dde3c146e8c32814bdb4017ee4148bdf9b58bc6c2b499d3693caa3e87285235b
+- Repository source SHA-256: 7d7b3d3c77a3621c695c4c09f1f6948b4de3a1f10db67236e3157557bbcc1432
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -132,9 +132,9 @@ remediation=u27-st-rem-passive
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a7c7da23c63e9223159908f10aeac85010941e99a16eda57681b3a2bf2e2b591
+- Content hash: fa7a9feadf92248491452bd4278297b014e92ba5bfc0faa41fa0e786bf5e664d
 
-title=Optional present passive lines
+title=Optional: distinguish a present passive form from its supporting verb forms
 kind=RECOGNITION
 unitNumber=27
 instruction=u27-st-orient,u27-st-teach-present-passive-1,u27-st-teach-present-passive-2
@@ -170,9 +170,9 @@ remediation=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ab63ff025a27021ace54047155f2ffda9d551415f36f86df432647f7e7b680b9
+- Content hash: a0001910144417bf7dbd90879ce3bf402bb8681ded0517aaa6b4fbfc62ae1723
 
-title=Read the participial construction
+title=Read the described letter, writer and separate main action
 kind=RECOGNITION
 unitNumber=27
 instruction=u27-comp-teach-1,u27-comp-teach-2
@@ -439,12 +439,12 @@ remediationStepId=u27-st-rem-passive
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b88a2c4aee78c00bde50c7a71fc42e4dcbff917f818302b54474f55686606204
+- Content hash: 113f54471e8c4422f92999d6e6a54a9ba3cad47de9c58f6baa6dcea09133a1af
 
-title=Optional present passive lines
+title=Optional: distinguish a present passive form from its supporting verb forms
 estimatedMinutes=12
 objectives=obj-u27-present-passive
-steps=u27-st-teach-present-passive-1,u27-st-guided-present-passive-1,u27-st-teach-present-passive-2,u27-st-rem-present-passive,u27-st-check-present-passive
+steps=u27-st-teach-present-passive-1,u27-st-teach-present-passive-2,u27-st-guided-present-passive-1,u27-st-rem-present-passive,u27-st-check-present-passive
 
 ### STEP `u27-st-teach-present-passive-1`
 
@@ -454,15 +454,37 @@ steps=u27-st-teach-present-passive-1,u27-st-guided-present-passive-1,u27-st-teac
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 9386f0f813b4ec27ff52bee1a457616c6095ad1c6546d66446cb07707c49c15c
+- Content hash: 9fde0121c5a967a1ef6c83a780a86146a01601084b50b4947caa8b6b8d280019
 
 kind=TEACH
-title=Admitted lines
-body=Read the admitted examples on this card. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+title=Meaning differs between a passive description, a finite verb and an infinitive
+body=The supplied обсужда́емый has the meaning being discussed. It describes something affected by discussion, rather than naming the person doing the discussing. The source also permits an able-to-be-discussed reading; the checked English option here is being discussed. The supporting verb form оставля́ем means we leave: it is a first-person plural present-tense form, with we performing the action, not a passive description. The infinitive оставля́ть means to leave and does not by itself name a we subject. Choose we leave for the finite form and to leave for the infinitive. The option to discuss is an infinitive meaning rather than the checked passive description. Different action meanings and grammatical functions must not be exchanged simply because forms share a stem.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
 examples=ex-u27-present-passive-0,ex-u27-present-passive-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u27-st-teach-present-passive-2`
+
+- Objectives: obj-u27-present-passive
+- Sessions: u27-s-present-passive
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 2c30082d960ec23d9511795575111ab8e7730d37559caf99fcae602debfd2ac9
+
+kind=TEACH
+title=Recognize only the retained formation and accent placements
+body=The retained source illustrates the relation between the infinitive оставля́ть, the finite form оставля́ем and the present passive оставля́емый with its adjective ending. The finite we leave form is a supporting example, not itself a participle. This small set does not establish which other verbs permit a present passive or a complete formation algorithm for every verb. In the supplied leave contrast, оставля́емый is retained and оставляемы́й is rejected. In the supplied discuss contrast, обсужда́емый is retained and обсуждаемы́й is rejected. The retained accents are on the third syllable; the alternatives move them to the final syllable. Compare the accented vowel in each particular form; do not predict an unlisted form or its stress from this set. This entire session is optional and non-gating. Its present-passive stress choices belong to the optional objective, not to the required past-passive stress gate. Active-participle instruction belongs to Unit 29, not this session.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -476,11 +498,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 4319eb1a7f87d9283cb96d1dbb7fe20a9b340f70966dd2acedb16f17da6061d9
+- Content hash: 560890442ed95b4d9d9723766402ee7a8341543a6d9df88906d749fd51fd7881
 
 kind=GUIDED
 title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
+body=Use the explained meaning and the supplied form or sentence. A missed choice returns to both teaching cards and every worked example. Optional present-passive study does not gate Unit 27.
 dominantAction=Continue
 references=
 items=u27-g-present-passive-0,u27-g-stress-1
@@ -490,28 +512,6 @@ bookDirection=
 companionDirection=
 remediationStepId=u27-st-rem-present-passive
 
-### STEP `u27-st-teach-present-passive-2`
-
-- Objectives: obj-u27-present-passive
-- Sessions: u27-s-present-passive
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: bd15035a9be4db6eb49b9f9b53bca56ebc4c075b6be5a61ab0a58ac5b2944481
-
-kind=TEACH
-title=Admitted instruction
-body=In order to form the passive present participle
-dominantAction=Continue
-references=ref-u2630-attribution
-items=
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
 ### STEP `u27-st-rem-present-passive`
 
 - Objectives: obj-u27-present-passive
@@ -520,11 +520,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 28f87252cf7fb3dad66c9f2a03829ae42954972034e04c33fd586ab6d21dcd70
+- Content hash: efb9f2a769cb4a50865de7f068c8d86895af243cc16ec1cdf7ee8cb4b64c085c
 
 kind=REMEDIATE
-title=Remediation
-body=In order to form the passive present participle
+title=Review the complete supplied-form reading
+body=The supplied обсужда́емый has the meaning being discussed. It describes something affected by discussion, rather than naming the person doing the discussing. The source also permits an able-to-be-discussed reading; the checked English option here is being discussed. The supporting verb form оставля́ем means we leave: it is a first-person plural present-tense form, with we performing the action, not a passive description. The infinitive оставля́ть means to leave and does not by itself name a we subject. Choose we leave for the finite form and to leave for the infinitive. The option to discuss is an infinitive meaning rather than the checked passive description. Different action meanings and grammatical functions must not be exchanged simply because forms share a stem.
+
+The retained source illustrates the relation between the infinitive оставля́ть, the finite form оставля́ем and the present passive оставля́емый with its adjective ending. The finite we leave form is a supporting example, not itself a participle. This small set does not establish which other verbs permit a present passive or a complete formation algorithm for every verb. In the supplied leave contrast, оставля́емый is retained and оставляемы́й is rejected. In the supplied discuss contrast, обсужда́емый is retained and обсуждаемы́й is rejected. The retained accents are on the third syllable; the alternatives move them to the final syllable. Compare the accented vowel in each particular form; do not predict an unlisted form or its stress from this set. This entire session is optional and non-gating. Its present-passive stress choices belong to the optional objective, not to the required past-passive stress gate. Active-participle instruction belongs to Unit 29, not this session.
 dominantAction=Continue
 references=ref-ca-participles
 items=
@@ -542,11 +544,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 89196615324643bef531cd5c812dc2c3b9a8b045819b41326df65411858abadd
+- Content hash: 5d4d0296533e2b66bd1a24af047b2698c35dbe60fa84232bf97566d7c35e08f6
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Use the explained meaning and the supplied form or sentence. A missed choice returns to both teaching cards and every worked example. Optional present-passive study does not gate Unit 27.
 dominantAction=Continue
 references=
 items=u27-i-present-passive-1,u27-i-present-passive-2,u27-i-stress-1
@@ -623,12 +625,12 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 2962183279a252912446c132d5a0d5b1e88cf8cde7bbece52567c3fe1206f580
+- Content hash: 7f57eda9bde8a95fead3095fd72aef617469c26f75c67bffd153879d7548adf8
 
-title=Read the participial phrase for who did the action and what the result is.
+title=Read the described letter, writer and separate main action
 estimatedMinutes=10
 objectives=obj-u27-comprehension
-steps=u27-comp-teach-1,u27-comp-guided,u27-comp-teach-2,u27-comp-remediate,u27-comp-check
+steps=u27-comp-teach-1,u27-comp-teach-2,u27-comp-guided,u27-comp-remediate,u27-comp-check
 
 ### STEP `u27-comp-teach-1`
 
@@ -638,15 +640,37 @@ steps=u27-comp-teach-1,u27-comp-guided,u27-comp-teach-2,u27-comp-remediate,u27-c
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 92bb2b1ab9d1a873b99ec69fb9e56fe83f6e5617a8eaf74c32bbf8afff01f615
+- Content hash: 0f10e3c317c6aa8d0e66bb62ba16b53b762711460a09a9a0d66c86dc3a0213fe
 
 kind=TEACH
-title=Admitted instruction
-body=Read the participial phrase for who did the action and what the result is.
+title=Separate the letter description from the sentence action
+body=Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
 examples=ex-u27-comp-1,ex-u27-comp-2
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u27-comp-teach-2`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: ddec3c0a70fb6362cbcda6fd06a7e0fe83990431603e462d8c4a3b2e432e6957
+
+kind=TEACH
+title=Do not transfer the main-action subject to an unnamed participle agent
+body=Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -660,11 +684,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 990ccc46f35eeab9bd1156f2903ab1f7eb5b291d9fe810afeaaaab9c84800dff
+- Content hash: e1a09855fdd33a338a273523f6b994967af39ba601cf563f184b0edb63c152be
 
 kind=GUIDED
 title=Guided practice
-body=Stress placement is a different objective and does not answer these readings.
+body=Use the explained meaning and the supplied form or sentence. A missed choice returns to both teaching cards and every worked example. Optional present-passive study does not gate Unit 27.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=u27-g-comp-1
@@ -674,28 +698,6 @@ bookDirection=
 companionDirection=
 remediationStepId=u27-comp-remediate
 
-### STEP `u27-comp-teach-2`
-
-- Objectives: obj-u27-comprehension
-- Sessions: u27-s-gap-comprehension
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e5039c8974d8c90557bd52188f07ec3635cee5761abcd0693fc8d8b2914fca2d
-
-kind=TEACH
-title=Admitted instruction
-body=Stress placement is a different objective and does not answer these readings.
-dominantAction=Continue
-references=ref-u2630-attribution
-items=
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
 ### STEP `u27-comp-remediate`
 
 - Objectives: obj-u27-comprehension
@@ -704,15 +706,17 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 553557d54a8287fa88ac09fa18e97952490e7b42958fc29ef78e3b2569b02e92
+- Content hash: 1d1922f26be2f9c24d89640730f6214c82d55bb8280956668828dac1b9ed3d9f
 
 kind=REMEDIATE
-title=Remediation
-body=Read the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.
+title=Review the complete supplied-form reading
+body=Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
 dominantAction=Continue
 references=ref-u2630-attribution,ref-ca-participles
 items=
-examples=
+examples=ex-u27-comp-1,ex-u27-comp-2
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -726,11 +730,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e0aac0b840dc2322ccdb40afc4f15938a8c649df51f9fb56aaea1177c640a0bd
+- Content hash: 91927ca3af4d7a2574676fa0253c9a6879c040d84c9dc71b675954a1eacedb1b
 
 kind=CHECK
 title=Independent checks
-body=Read the participial phrase for who did the action and what the result is.
+body=Use the explained meaning and the supplied form or sentence. A missed choice returns to both teaching cards and every worked example. Optional present-passive study does not gate Unit 27.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=u27-i-comp-1,u27-i-comp-2,u27-i-comp-3
@@ -1290,19 +1294,20 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 33d732b40c980d33134c17062aa8d9762b248cc61583607b19694653a1aeeefa
+- Content hash: c6ce0c573ad22780909eb6475acdb823fd485946dd4f1360329ba73b4719006e
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English gloss follows the listed forms for the shown form?
+prompt=Which English meaning fits this supplied form?
 promptLetter=обсужда́емый
 options=being discussed | we leave | to discuss
 answer=being discussed
-feedback=The frozen line says being discussed or able to be discussed after the listed forms. This label is that gloss. being discussed.
+feedback=The frozen line says being discussed or able to be discussed after the listed forms. This label is that gloss.
+being discussed identifies a passive description of something affected by discussion.
 objectiveId=obj-u27-present-passive
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen parenthetical we leave belongs to the plural form in the same note. | The frozen line writes to discuss on the base, not as this gloss.
+distractorRationales= | we leave identifies a finite first-person plural action with a we subject, a different action or grammatical function. | to discuss identifies an infinitive meaning rather than a passive description, a different action or grammatical function.
 testedFeature=PRESENT_PASSIVE
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u27-present-passive-0
@@ -1310,8 +1315,9 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u27-present-passive-0-en
 distractorSourceIds= | prov-ex-u27-present-passive-1-en | prov-u27-present-passive-x-0
-distractorDifference= | This parenthetical belongs to the plural form (we leave). | This label is the base gloss (to discuss).
+distractorDifference= | we leave identifies a finite first-person plural action with a we subject, a different action or grammatical function. | to discuss identifies an infinitive meaning rather than a passive description, a different action or grammatical function.
 whyAnswerDemonstratesObjective=The frozen line says being discussed or able to be discussed after the listed forms. This label is that gloss.
+being discussed identifies a passive description of something affected by discussion.
 contrastMembers=being discussed | we leave | to discuss
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u27-present-passive-0-ru | prov-ex-u27-present-passive-0-en | prov-ex-u27-present-passive-1-en | prov-u27-present-passive-x-0
@@ -1360,7 +1366,7 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 739b927b253503e83edc1d51ed124782846d5026034cf3160632c48e7ade0c33
+- Content hash: 70573d9620abc27cd121782a3ae74600287f162f4e0193363b7c4df772477acb
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1369,6 +1375,7 @@ promptLetter=Письмо, написанное Анной, лежит на ст
 options=the letter Anna wrote is on the table | Anna put the letter away | the table wrote the letter
 answer=the letter Anna wrote is on the table
 feedback=Admitted reading: the letter Anna wrote is on the table
+The letter is on the table; Anna is the writer named in its passive description. Putting it away is a different action, and the table is not a writer.
 objectiveId=obj-u27-comprehension
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
@@ -1382,6 +1389,7 @@ answerSourceIds=prov-obj-u27-comprehension-4
 distractorSourceIds= | prov-obj-u27-comprehension-9 | prov-obj-u27-comprehension-10
 distractorDifference= | Rejected reading: Anna put the letter away | Rejected reading: the table wrote the letter
 whyAnswerDemonstratesObjective=Admitted reading: the letter Anna wrote is on the table
+The letter is on the table; Anna is the writer named in its passive description. Putting it away is a different action, and the table is not a writer.
 contrastMembers=the letter Anna wrote is on the table | Anna put the letter away | the table wrote the letter
 relationKind=STATED_APPLICATION
 relationParticipantIds=prov-obj-u27-comprehension-3 | prov-obj-u27-comprehension-4 | prov-obj-u27-comprehension-9 | prov-obj-u27-comprehension-10
@@ -1500,19 +1508,20 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 0140388ebe9c41381221f4a002a0106adacaddae90bb30aba130890694c8928c
+- Content hash: e21a25433141def6bf007773747d65b57d42a043a2b27aa5323c4443ff53a42a
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English parenthetical follows the shown form?
+prompt=Which English meaning fits this supplied form?
 promptLetter=оставля́ем
 options=we leave | being discussed | to leave
 answer=we leave
-feedback=The frozen line writes (we leave) after the shown form. This label is that parenthetical. we leave.
+feedback=The frozen line writes (we leave) after the shown form. This label is that parenthetical.
+we leave identifies a finite first-person plural action with a we subject.
 objectiveId=obj-u27-present-passive
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen line gives being discussed to the discuss forms, not this parenthetical. | The frozen parenthetical to leave belongs to the other form in the same row.
+distractorRationales= | being discussed identifies a passive description of something affected by discussion, a different action or grammatical function. | to leave identifies an infinitive meaning without a stated we subject, a different action or grammatical function.
 testedFeature=PRESENT_PASSIVE
 evidenceMode=EXPLICIT_PARENTHETICAL_GLOSS
 contrastSetId=u27-present-passive-1
@@ -1520,8 +1529,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u27-present-passive-1-en
 distractorSourceIds= | prov-ex-u27-present-passive-0-en | prov-u27-present-passive-x-2
-distractorDifference= | This gloss belongs to the discuss forms (being discussed). | This parenthetical belongs to the other form (to leave).
+distractorDifference= | being discussed identifies a passive description of something affected by discussion, a different action or grammatical function. | to leave identifies an infinitive meaning without a stated we subject, a different action or grammatical function.
 whyAnswerDemonstratesObjective=The frozen line writes (we leave) after the shown form. This label is that parenthetical.
+we leave identifies a finite first-person plural action with a we subject.
 contrastMembers=we leave | being discussed | to leave
 relationKind=EXPLICIT_PARENTHETICAL_GLOSS
 relationParticipantIds=prov-ex-u27-present-passive-1-ru | prov-ex-u27-present-passive-1-en | prov-ex-u27-present-passive-0-en | prov-u27-present-passive-x-2
@@ -1535,19 +1545,20 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: d9cdad1860b79d4757148e98919d53d911196ebddf02eee70494d212270edca5
+- Content hash: a3de35423d08af781e3a82a03479e5e6f2c588489454b4a251048d1db3a8247f
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English parenthetical follows this shown form?
+prompt=Which English meaning fits this supplied form?
 promptLetter=оставля́ть
 options=to leave | we leave | being discussed
 answer=to leave
-feedback=The frozen line writes (to leave) after the shown form. This label is that parenthetical. to leave.
+feedback=The frozen line writes (to leave) after the shown form. This label is that parenthetical.
+to leave identifies an infinitive meaning without a stated we subject.
 objectiveId=obj-u27-present-passive
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen parenthetical we leave belongs to the plural form, not this form. | The frozen line gives being discussed to the discuss forms, not this parenthetical.
+distractorRationales= | we leave identifies a finite first-person plural action with a we subject, a different action or grammatical function. | being discussed identifies a passive description of something affected by discussion, a different action or grammatical function.
 testedFeature=PRESENT_PASSIVE
 evidenceMode=EXPLICIT_PARENTHETICAL_GLOSS
 contrastSetId=u27-present-passive-2
@@ -1555,8 +1566,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-u27-present-passive-x-2
 distractorSourceIds= | prov-ex-u27-present-passive-1-en | prov-ex-u27-present-passive-0-en
-distractorDifference= | This parenthetical belongs to the plural form (we leave). | This gloss belongs to the discuss forms (being discussed).
+distractorDifference= | we leave identifies a finite first-person plural action with a we subject, a different action or grammatical function. | being discussed identifies a passive description of something affected by discussion, a different action or grammatical function.
 whyAnswerDemonstratesObjective=The frozen line writes (to leave) after the shown form. This label is that parenthetical.
+to leave identifies an infinitive meaning without a stated we subject.
 contrastMembers=to leave | we leave | being discussed
 relationKind=EXPLICIT_PARENTHETICAL_GLOSS
 relationParticipantIds=prov-u27-present-passive-x-1 | prov-u27-present-passive-x-2 | prov-ex-u27-present-passive-1-en | prov-ex-u27-present-passive-0-en
@@ -1605,7 +1617,7 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: c37cb39f8d641c8b9fcd591b18a5148a4e6c54bb4a43a4dc1c084c094b63c659
+- Content hash: 784f2d17dd0a3f148451fcb080fa86a9e035ebd57c3b6b2980ae23f3c85b385f
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1614,6 +1626,7 @@ promptLetter=написанное Анной
 options=Anna is the writer of the letter | Anna is the reader of the letter | the letter wrote Anna
 answer=Anna is the writer of the letter
 feedback=Admitted reading: Anna is the writer of the letter
+The description identifies Anna as the writer, not as the reader. The letter is the affected entity, not an agent acting on Anna.
 objectiveId=obj-u27-comprehension
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
@@ -1623,13 +1636,14 @@ evidenceMode=STATED_APPLICATION
 contrastSetId=u27-i-comp-1
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ca-repair-27-11088
-distractorSourceIds= | prov-ca-repair-27-11091 | prov-ca-repair-27-11092
+answerSourceIds=prov-ca-u27-remaining-comprehension-host-8
+distractorSourceIds= | prov-ca-u27-remaining-comprehension-host-11 | prov-ca-u27-remaining-comprehension-host-12
 distractorDifference= | Rejected reading: Anna is the reader of the letter | Rejected reading: the letter wrote Anna
 whyAnswerDemonstratesObjective=Admitted reading: Anna is the writer of the letter
+The description identifies Anna as the writer, not as the reader. The letter is the affected entity, not an agent acting on Anna.
 contrastMembers=Anna is the writer of the letter | Anna is the reader of the letter | the letter wrote Anna
 relationKind=STATED_APPLICATION
-relationParticipantIds=prov-ca-repair-27-11087 | prov-ca-repair-27-11088 | prov-ca-repair-27-11091 | prov-ca-repair-27-11092
+relationParticipantIds=prov-ca-u27-remaining-comprehension-host-7 | prov-ca-u27-remaining-comprehension-host-8 | prov-ca-u27-remaining-comprehension-host-11 | prov-ca-u27-remaining-comprehension-host-12
 responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u27-i-comp-2`
@@ -1640,7 +1654,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: c670d3dddfdf743c3b445e8e12bf1c31f4cc78ad58c2a46a72ce181dd1933697
+- Content hash: 7dc7e5d57579da7be0a1f233fa40bc084e32d7fa43fc31c436fd0d2986bb536f
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1649,6 +1663,7 @@ promptLetter=Анна убрала прочитанное письмо.
 options=Anna put away the letter that had been read. | Anna wrote the letter on the table | the letter put Anna away
 answer=Anna put away the letter that had been read.
 feedback=Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.
+Anna performs the putting-away action. The passive description leaves the reader unspecified; naming the main-action subject does not identify that reader.
 objectiveId=obj-u27-comprehension
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
@@ -1658,13 +1673,14 @@ evidenceMode=STATED_APPLICATION
 contrastSetId=u27-i-comp-2
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ca-repair-27-11086
-distractorSourceIds= | prov-ca-repair-27-11097 | prov-ca-repair-27-11098
+answerSourceIds=prov-ca-u27-remaining-comprehension-host-6
+distractorSourceIds= | prov-ca-u27-remaining-comprehension-host-17 | prov-ca-u27-remaining-comprehension-host-18
 distractorDifference= | Anna wrote the letter on the table invents a different verb. | the letter put Anna away reverses who did the action.
 whyAnswerDemonstratesObjective=Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.
+Anna performs the putting-away action. The passive description leaves the reader unspecified; naming the main-action subject does not identify that reader.
 contrastMembers=Anna put away the letter that had been read. | Anna wrote the letter on the table | the letter put Anna away
 relationKind=STATED_APPLICATION
-relationParticipantIds=prov-ca-repair-27-11085 | prov-ca-repair-27-11086 | prov-ca-repair-27-11097 | prov-ca-repair-27-11098
+relationParticipantIds=prov-ca-u27-remaining-comprehension-host-5 | prov-ca-u27-remaining-comprehension-host-6 | prov-ca-u27-remaining-comprehension-host-17 | prov-ca-u27-remaining-comprehension-host-18
 responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u27-i-comp-3`
@@ -1675,7 +1691,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: a73978c26e3ac7e370ba8f790ca228a99a37c33edd8c6d6d42c7b3964b2fdd59
+- Content hash: 7175c30bbeb0ec1e3b02f31f434f90bac58525a5c1aba1fa6163231b9aba1e14
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1684,6 +1700,7 @@ promptLetter=прочитанное письмо
 options=the letter had already been read | the letter had just been written | Anna is still reading aloud
 answer=the letter had already been read
 feedback=Admitted reading: the letter had already been read
+Already read describes the completed reading of the letter. Just written substitutes a different action, and still reading aloud invents an ongoing action and its agent.
 objectiveId=obj-u27-comprehension
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
@@ -1693,13 +1710,14 @@ evidenceMode=STATED_APPLICATION
 contrastSetId=u27-i-comp-3
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ca-repair-27-11102
-distractorSourceIds= | prov-ca-repair-27-11105 | prov-ca-repair-27-11106
+answerSourceIds=prov-ca-u27-remaining-comprehension-host-22
+distractorSourceIds= | prov-ca-u27-remaining-comprehension-host-25 | prov-ca-u27-remaining-comprehension-host-26
 distractorDifference= | Rejected reading: the letter had just been written | Rejected reading: Anna is still reading aloud
 whyAnswerDemonstratesObjective=Admitted reading: the letter had already been read
+Already read describes the completed reading of the letter. Just written substitutes a different action, and still reading aloud invents an ongoing action and its agent.
 contrastMembers=the letter had already been read | the letter had just been written | Anna is still reading aloud
 relationKind=STATED_APPLICATION
-relationParticipantIds=prov-ca-repair-27-11101 | prov-ca-repair-27-11102 | prov-ca-repair-27-11105 | prov-ca-repair-27-11106
+relationParticipantIds=prov-ca-u27-remaining-comprehension-host-21 | prov-ca-u27-remaining-comprehension-host-22 | prov-ca-u27-remaining-comprehension-host-25 | prov-ca-u27-remaining-comprehension-host-26
 responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u27-i-stress-2`
@@ -7621,6 +7639,3320 @@ attribution=Russian Companion independently authored English past-passive explan
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
 sourceHash=6df4d36d649b680a8273f1dc647d0c547b7f8ffc985ddf21228bd96d151e79f6
 contentHash=012ab8f74509f135e510ad3d930ff2e1b92c944e2d060f0b35ddeee63616b486
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-comprehension-host-0`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9153b329d9575c35b9369bff11017cfdd074b0ba39826ad7efb411e3d61b2b9f
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u27-comprehension
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Read the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter that had been read.
+написанное Анной
+Anna is the writer of the letter
+Which English reading matches the person who produced the letter?
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which reading keeps the reader of the letter unspecified?
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.
+Anna wrote the letter on the table
+the letter put Anna away
+Anna wrote the letter on the table invents a different verb.
+the letter put Anna away reverses who did the action.
+прочитанное письмо
+the letter had already been read
+Which English reading matches the state of the letter Anna put away?
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+[{"cue": "написанное Анной", "answer": "Anna is the writer of the letter", "distractors": ["Anna is the reader of the letter", "the letter wrote Anna"]}, {"cue": "Анна убрала прочитанное письмо.", "answer": "Anna put away the letter that had been read.", "distractors": ["Anna wrote the letter on the table", "the letter put Anna away"]}, {"cue": "прочитанное письмо", "answer": "the letter had already been read", "distractors": ["the letter had just been written", "Anna is still reading aloud"]}]
+shippedText=Read the participial phrase for who did the action and what the result is.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=74f96df33d743da02fde83beabed4e1b27e654b0af43185ffb803817a5b10a3e
+contentHash=b01b39caa41ff76e2b1ce7517d7d6a234697ccf4a9caa4b1733c9c8a5c6890a1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-comprehension-host-1`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 456a9d5c5c5e9546e34473d1a020da4c5a125e37bda5e92b3c66c258b5bf1221
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u27-comprehension
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Read the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter that had been read.
+написанное Анной
+Anna is the writer of the letter
+Which English reading matches the person who produced the letter?
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which reading keeps the reader of the letter unspecified?
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.
+Anna wrote the letter on the table
+the letter put Anna away
+Anna wrote the letter on the table invents a different verb.
+the letter put Anna away reverses who did the action.
+прочитанное письмо
+the letter had already been read
+Which English reading matches the state of the letter Anna put away?
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+[{"cue": "написанное Анной", "answer": "Anna is the writer of the letter", "distractors": ["Anna is the reader of the letter", "the letter wrote Anna"]}, {"cue": "Анна убрала прочитанное письмо.", "answer": "Anna put away the letter that had been read.", "distractors": ["Anna wrote the letter on the table", "the letter put Anna away"]}, {"cue": "прочитанное письмо", "answer": "the letter had already been read", "distractors": ["the letter had just been written", "Anna is still reading aloud"]}]
+shippedText=Stress placement is a different objective and does not answer these readings.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=74f96df33d743da02fde83beabed4e1b27e654b0af43185ffb803817a5b10a3e
+contentHash=b5067ccd1370d9d184c492a0348a68e968bf813e3daa3ce531d5af4c4ae753eb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-comprehension-host-10`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7267eb1fe1ad43defd0b4b97861a6e7747c44ce1bc645b5f8e74c4832d7268a4
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u27-comprehension
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Read the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter that had been read.
+написанное Анной
+Anna is the writer of the letter
+Which English reading matches the person who produced the letter?
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which reading keeps the reader of the letter unspecified?
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.
+Anna wrote the letter on the table
+the letter put Anna away
+Anna wrote the letter on the table invents a different verb.
+the letter put Anna away reverses who did the action.
+прочитанное письмо
+the letter had already been read
+Which English reading matches the state of the letter Anna put away?
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+[{"cue": "написанное Анной", "answer": "Anna is the writer of the letter", "distractors": ["Anna is the reader of the letter", "the letter wrote Anna"]}, {"cue": "Анна убрала прочитанное письмо.", "answer": "Anna put away the letter that had been read.", "distractors": ["Anna wrote the letter on the table", "the letter put Anna away"]}, {"cue": "прочитанное письмо", "answer": "the letter had already been read", "distractors": ["the letter had just been written", "Anna is still reading aloud"]}]
+shippedText=Admitted reading: Anna is the writer of the letter
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=74f96df33d743da02fde83beabed4e1b27e654b0af43185ffb803817a5b10a3e
+contentHash=815f7835ec5f090e7dfbc8ec8fffcdb4486036b5c7f69e28c625a353dd1845a9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-comprehension-host-11`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 55bf77b3989b791f81f5ad2394429f8c23a99eec466420050826d93653c0dbd6
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u27-comprehension
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Read the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter that had been read.
+написанное Анной
+Anna is the writer of the letter
+Which English reading matches the person who produced the letter?
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which reading keeps the reader of the letter unspecified?
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.
+Anna wrote the letter on the table
+the letter put Anna away
+Anna wrote the letter on the table invents a different verb.
+the letter put Anna away reverses who did the action.
+прочитанное письмо
+the letter had already been read
+Which English reading matches the state of the letter Anna put away?
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+[{"cue": "написанное Анной", "answer": "Anna is the writer of the letter", "distractors": ["Anna is the reader of the letter", "the letter wrote Anna"]}, {"cue": "Анна убрала прочитанное письмо.", "answer": "Anna put away the letter that had been read.", "distractors": ["Anna wrote the letter on the table", "the letter put Anna away"]}, {"cue": "прочитанное письмо", "answer": "the letter had already been read", "distractors": ["the letter had just been written", "Anna is still reading aloud"]}]
+shippedText=Anna is the reader of the letter
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=74f96df33d743da02fde83beabed4e1b27e654b0af43185ffb803817a5b10a3e
+contentHash=044edefacface03b67ec611e3dfd1eb8527783834b88680a10ab4b32feaf8e44
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-comprehension-host-12`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 934a6cb55f2a1aca9ca1719638d75ebcc8a885f8d122b89e2119ba3706d730e0
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u27-comprehension
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Read the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter that had been read.
+написанное Анной
+Anna is the writer of the letter
+Which English reading matches the person who produced the letter?
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which reading keeps the reader of the letter unspecified?
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.
+Anna wrote the letter on the table
+the letter put Anna away
+Anna wrote the letter on the table invents a different verb.
+the letter put Anna away reverses who did the action.
+прочитанное письмо
+the letter had already been read
+Which English reading matches the state of the letter Anna put away?
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+[{"cue": "написанное Анной", "answer": "Anna is the writer of the letter", "distractors": ["Anna is the reader of the letter", "the letter wrote Anna"]}, {"cue": "Анна убрала прочитанное письмо.", "answer": "Anna put away the letter that had been read.", "distractors": ["Anna wrote the letter on the table", "the letter put Anna away"]}, {"cue": "прочитанное письмо", "answer": "the letter had already been read", "distractors": ["the letter had just been written", "Anna is still reading aloud"]}]
+shippedText=the letter wrote Anna
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=74f96df33d743da02fde83beabed4e1b27e654b0af43185ffb803817a5b10a3e
+contentHash=5a4e58aec4b066987472c791cd0298329185db15ce5fa8b309a1daeaaf308ffb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-comprehension-host-13`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 84ac595afed3cb75c5d0ee819d53a38e5193539a6442789c58530e76359ca6a3
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u27-comprehension
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Read the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter that had been read.
+написанное Анной
+Anna is the writer of the letter
+Which English reading matches the person who produced the letter?
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which reading keeps the reader of the letter unspecified?
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.
+Anna wrote the letter on the table
+the letter put Anna away
+Anna wrote the letter on the table invents a different verb.
+the letter put Anna away reverses who did the action.
+прочитанное письмо
+the letter had already been read
+Which English reading matches the state of the letter Anna put away?
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+[{"cue": "написанное Анной", "answer": "Anna is the writer of the letter", "distractors": ["Anna is the reader of the letter", "the letter wrote Anna"]}, {"cue": "Анна убрала прочитанное письмо.", "answer": "Anna put away the letter that had been read.", "distractors": ["Anna wrote the letter on the table", "the letter put Anna away"]}, {"cue": "прочитанное письмо", "answer": "the letter had already been read", "distractors": ["the letter had just been written", "Anna is still reading aloud"]}]
+shippedText=Rejected reading: Anna is the reader of the letter
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=74f96df33d743da02fde83beabed4e1b27e654b0af43185ffb803817a5b10a3e
+contentHash=3192014fe017f68a5f7423126aad8aff08a3f3ef9430804542ef1cb4f5179c3a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-comprehension-host-14`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 77b1a72d03096e162c99530c8ad4b006a798b2c55f856511ccf9d871bcd93d3d
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u27-comprehension
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Read the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter that had been read.
+написанное Анной
+Anna is the writer of the letter
+Which English reading matches the person who produced the letter?
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which reading keeps the reader of the letter unspecified?
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.
+Anna wrote the letter on the table
+the letter put Anna away
+Anna wrote the letter on the table invents a different verb.
+the letter put Anna away reverses who did the action.
+прочитанное письмо
+the letter had already been read
+Which English reading matches the state of the letter Anna put away?
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+[{"cue": "написанное Анной", "answer": "Anna is the writer of the letter", "distractors": ["Anna is the reader of the letter", "the letter wrote Anna"]}, {"cue": "Анна убрала прочитанное письмо.", "answer": "Anna put away the letter that had been read.", "distractors": ["Anna wrote the letter on the table", "the letter put Anna away"]}, {"cue": "прочитанное письмо", "answer": "the letter had already been read", "distractors": ["the letter had just been written", "Anna is still reading aloud"]}]
+shippedText=Rejected reading: the letter wrote Anna
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=74f96df33d743da02fde83beabed4e1b27e654b0af43185ffb803817a5b10a3e
+contentHash=85736a5ca2e807feff64749e8dcf639473b39f435c0a5268a8d85f5259917959
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-comprehension-host-15`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 908738b354f8a10dfccc00814001b59010fa54333a634d61290c1277ced72639
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u27-comprehension
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Read the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter that had been read.
+написанное Анной
+Anna is the writer of the letter
+Which English reading matches the person who produced the letter?
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which reading keeps the reader of the letter unspecified?
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.
+Anna wrote the letter on the table
+the letter put Anna away
+Anna wrote the letter on the table invents a different verb.
+the letter put Anna away reverses who did the action.
+прочитанное письмо
+the letter had already been read
+Which English reading matches the state of the letter Anna put away?
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+[{"cue": "написанное Анной", "answer": "Anna is the writer of the letter", "distractors": ["Anna is the reader of the letter", "the letter wrote Anna"]}, {"cue": "Анна убрала прочитанное письмо.", "answer": "Anna put away the letter that had been read.", "distractors": ["Anna wrote the letter on the table", "the letter put Anna away"]}, {"cue": "прочитанное письмо", "answer": "the letter had already been read", "distractors": ["the letter had just been written", "Anna is still reading aloud"]}]
+shippedText=Which reading keeps the reader of the letter unspecified?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=74f96df33d743da02fde83beabed4e1b27e654b0af43185ffb803817a5b10a3e
+contentHash=2d2dabb13a66dc0d17b7a0ae3e58d2169701a027e903c4930d06595ceb5afd8e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-comprehension-host-16`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cf88e74250766b2c09c77bba34065ded9cf26836f1091e5e42479928b3f1baa4
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u27-comprehension
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Read the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter that had been read.
+написанное Анной
+Anna is the writer of the letter
+Which English reading matches the person who produced the letter?
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which reading keeps the reader of the letter unspecified?
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.
+Anna wrote the letter on the table
+the letter put Anna away
+Anna wrote the letter on the table invents a different verb.
+the letter put Anna away reverses who did the action.
+прочитанное письмо
+the letter had already been read
+Which English reading matches the state of the letter Anna put away?
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+[{"cue": "написанное Анной", "answer": "Anna is the writer of the letter", "distractors": ["Anna is the reader of the letter", "the letter wrote Anna"]}, {"cue": "Анна убрала прочитанное письмо.", "answer": "Anna put away the letter that had been read.", "distractors": ["Anna wrote the letter on the table", "the letter put Anna away"]}, {"cue": "прочитанное письмо", "answer": "the letter had already been read", "distractors": ["the letter had just been written", "Anna is still reading aloud"]}]
+shippedText=Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=74f96df33d743da02fde83beabed4e1b27e654b0af43185ffb803817a5b10a3e
+contentHash=6ec4dce4a773af4048c53261962ac4701457b636759775e3e3e7befe448f356b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-comprehension-host-17`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 758a8f6073225c7b4bb4601b1714aea4e8655812ff5019b4b1eb2f6686c08bbf
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u27-comprehension
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Read the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter that had been read.
+написанное Анной
+Anna is the writer of the letter
+Which English reading matches the person who produced the letter?
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which reading keeps the reader of the letter unspecified?
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.
+Anna wrote the letter on the table
+the letter put Anna away
+Anna wrote the letter on the table invents a different verb.
+the letter put Anna away reverses who did the action.
+прочитанное письмо
+the letter had already been read
+Which English reading matches the state of the letter Anna put away?
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+[{"cue": "написанное Анной", "answer": "Anna is the writer of the letter", "distractors": ["Anna is the reader of the letter", "the letter wrote Anna"]}, {"cue": "Анна убрала прочитанное письмо.", "answer": "Anna put away the letter that had been read.", "distractors": ["Anna wrote the letter on the table", "the letter put Anna away"]}, {"cue": "прочитанное письмо", "answer": "the letter had already been read", "distractors": ["the letter had just been written", "Anna is still reading aloud"]}]
+shippedText=Anna wrote the letter on the table
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=74f96df33d743da02fde83beabed4e1b27e654b0af43185ffb803817a5b10a3e
+contentHash=7271bf248bc314780b610017273780efba406458273176328ee596ef8e2e94c6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-comprehension-host-18`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 53fcac92bd970421c70ac0a04625c943f30c3cf7707d1d27dd51a29dd045de4f
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u27-comprehension
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Read the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter that had been read.
+написанное Анной
+Anna is the writer of the letter
+Which English reading matches the person who produced the letter?
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which reading keeps the reader of the letter unspecified?
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.
+Anna wrote the letter on the table
+the letter put Anna away
+Anna wrote the letter on the table invents a different verb.
+the letter put Anna away reverses who did the action.
+прочитанное письмо
+the letter had already been read
+Which English reading matches the state of the letter Anna put away?
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+[{"cue": "написанное Анной", "answer": "Anna is the writer of the letter", "distractors": ["Anna is the reader of the letter", "the letter wrote Anna"]}, {"cue": "Анна убрала прочитанное письмо.", "answer": "Anna put away the letter that had been read.", "distractors": ["Anna wrote the letter on the table", "the letter put Anna away"]}, {"cue": "прочитанное письмо", "answer": "the letter had already been read", "distractors": ["the letter had just been written", "Anna is still reading aloud"]}]
+shippedText=the letter put Anna away
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=74f96df33d743da02fde83beabed4e1b27e654b0af43185ffb803817a5b10a3e
+contentHash=4b1cb56c3976e0cedf26cc700f74778b5ddaf82aee137e4a38fa1edf4e74274f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-comprehension-host-19`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7d3416c2b0ed7ad26a07e1b7a19891df2794cfbc502f749490a1253d7129efa1
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u27-comprehension
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Read the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter that had been read.
+написанное Анной
+Anna is the writer of the letter
+Which English reading matches the person who produced the letter?
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which reading keeps the reader of the letter unspecified?
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.
+Anna wrote the letter on the table
+the letter put Anna away
+Anna wrote the letter on the table invents a different verb.
+the letter put Anna away reverses who did the action.
+прочитанное письмо
+the letter had already been read
+Which English reading matches the state of the letter Anna put away?
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+[{"cue": "написанное Анной", "answer": "Anna is the writer of the letter", "distractors": ["Anna is the reader of the letter", "the letter wrote Anna"]}, {"cue": "Анна убрала прочитанное письмо.", "answer": "Anna put away the letter that had been read.", "distractors": ["Anna wrote the letter on the table", "the letter put Anna away"]}, {"cue": "прочитанное письмо", "answer": "the letter had already been read", "distractors": ["the letter had just been written", "Anna is still reading aloud"]}]
+shippedText=Anna wrote the letter on the table invents a different verb.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=74f96df33d743da02fde83beabed4e1b27e654b0af43185ffb803817a5b10a3e
+contentHash=1106958c0f0613e946f2c9a0a20319dec7d2711ee783d46e713e79f735caedc2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-comprehension-host-2`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a52fc3eb268dbcfbec3e791f771c937d5e405381018d186a5a75a655658b5dae
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u27-comprehension
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Read the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter that had been read.
+написанное Анной
+Anna is the writer of the letter
+Which English reading matches the person who produced the letter?
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which reading keeps the reader of the letter unspecified?
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.
+Anna wrote the letter on the table
+the letter put Anna away
+Anna wrote the letter on the table invents a different verb.
+the letter put Anna away reverses who did the action.
+прочитанное письмо
+the letter had already been read
+Which English reading matches the state of the letter Anna put away?
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+[{"cue": "написанное Анной", "answer": "Anna is the writer of the letter", "distractors": ["Anna is the reader of the letter", "the letter wrote Anna"]}, {"cue": "Анна убрала прочитанное письмо.", "answer": "Anna put away the letter that had been read.", "distractors": ["Anna wrote the letter on the table", "the letter put Anna away"]}, {"cue": "прочитанное письмо", "answer": "the letter had already been read", "distractors": ["the letter had just been written", "Anna is still reading aloud"]}]
+shippedText=Read the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=74f96df33d743da02fde83beabed4e1b27e654b0af43185ffb803817a5b10a3e
+contentHash=74688fecbc1dd89c712b0ef68f39efd16c2b19e20b53894464bc877f727dd10c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-comprehension-host-20`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0f488b77ca4dc0cb07b9df3928e8c7a889c2ebe2e3b97d2752dc9c430e66898b
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u27-comprehension
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Read the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter that had been read.
+написанное Анной
+Anna is the writer of the letter
+Which English reading matches the person who produced the letter?
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which reading keeps the reader of the letter unspecified?
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.
+Anna wrote the letter on the table
+the letter put Anna away
+Anna wrote the letter on the table invents a different verb.
+the letter put Anna away reverses who did the action.
+прочитанное письмо
+the letter had already been read
+Which English reading matches the state of the letter Anna put away?
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+[{"cue": "написанное Анной", "answer": "Anna is the writer of the letter", "distractors": ["Anna is the reader of the letter", "the letter wrote Anna"]}, {"cue": "Анна убрала прочитанное письмо.", "answer": "Anna put away the letter that had been read.", "distractors": ["Anna wrote the letter on the table", "the letter put Anna away"]}, {"cue": "прочитанное письмо", "answer": "the letter had already been read", "distractors": ["the letter had just been written", "Anna is still reading aloud"]}]
+shippedText=the letter put Anna away reverses who did the action.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=74f96df33d743da02fde83beabed4e1b27e654b0af43185ffb803817a5b10a3e
+contentHash=ee915131b4ee8afdfc3765b88372883ee5cb967cc98efc79ff98e8f971756ed3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-comprehension-host-21`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 579b109b918d929fa56c1a50ad4bbfa8e399c96524235541fa88dec1f2143589
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u27-comprehension
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Read the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter that had been read.
+написанное Анной
+Anna is the writer of the letter
+Which English reading matches the person who produced the letter?
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which reading keeps the reader of the letter unspecified?
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.
+Anna wrote the letter on the table
+the letter put Anna away
+Anna wrote the letter on the table invents a different verb.
+the letter put Anna away reverses who did the action.
+прочитанное письмо
+the letter had already been read
+Which English reading matches the state of the letter Anna put away?
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+[{"cue": "написанное Анной", "answer": "Anna is the writer of the letter", "distractors": ["Anna is the reader of the letter", "the letter wrote Anna"]}, {"cue": "Анна убрала прочитанное письмо.", "answer": "Anna put away the letter that had been read.", "distractors": ["Anna wrote the letter on the table", "the letter put Anna away"]}, {"cue": "прочитанное письмо", "answer": "the letter had already been read", "distractors": ["the letter had just been written", "Anna is still reading aloud"]}]
+shippedText=прочитанное письмо
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=74f96df33d743da02fde83beabed4e1b27e654b0af43185ffb803817a5b10a3e
+contentHash=96e15bf2c1bdceccd11444bfbf7dffcbef1b129b3bba70901950e0267ac21a26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-comprehension-host-22`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f26844f96cf8d86129e65121d96d16880af0e86ac2e9fce234cad1348dbac47a
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u27-comprehension
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Read the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter that had been read.
+написанное Анной
+Anna is the writer of the letter
+Which English reading matches the person who produced the letter?
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which reading keeps the reader of the letter unspecified?
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.
+Anna wrote the letter on the table
+the letter put Anna away
+Anna wrote the letter on the table invents a different verb.
+the letter put Anna away reverses who did the action.
+прочитанное письмо
+the letter had already been read
+Which English reading matches the state of the letter Anna put away?
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+[{"cue": "написанное Анной", "answer": "Anna is the writer of the letter", "distractors": ["Anna is the reader of the letter", "the letter wrote Anna"]}, {"cue": "Анна убрала прочитанное письмо.", "answer": "Anna put away the letter that had been read.", "distractors": ["Anna wrote the letter on the table", "the letter put Anna away"]}, {"cue": "прочитанное письмо", "answer": "the letter had already been read", "distractors": ["the letter had just been written", "Anna is still reading aloud"]}]
+shippedText=the letter had already been read
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=74f96df33d743da02fde83beabed4e1b27e654b0af43185ffb803817a5b10a3e
+contentHash=22d53dfce3f9b18986d7e05343171aa06a0af06dabe689a23bbb957310d6a06d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-comprehension-host-23`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c7cf6fe51df717c9a432bd50d3f0768cc38afafc9eb7cd887644462a526795a7
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u27-comprehension
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Read the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter that had been read.
+написанное Анной
+Anna is the writer of the letter
+Which English reading matches the person who produced the letter?
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which reading keeps the reader of the letter unspecified?
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.
+Anna wrote the letter on the table
+the letter put Anna away
+Anna wrote the letter on the table invents a different verb.
+the letter put Anna away reverses who did the action.
+прочитанное письмо
+the letter had already been read
+Which English reading matches the state of the letter Anna put away?
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+[{"cue": "написанное Анной", "answer": "Anna is the writer of the letter", "distractors": ["Anna is the reader of the letter", "the letter wrote Anna"]}, {"cue": "Анна убрала прочитанное письмо.", "answer": "Anna put away the letter that had been read.", "distractors": ["Anna wrote the letter on the table", "the letter put Anna away"]}, {"cue": "прочитанное письмо", "answer": "the letter had already been read", "distractors": ["the letter had just been written", "Anna is still reading aloud"]}]
+shippedText=Which English reading matches the state of the letter Anna put away?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=74f96df33d743da02fde83beabed4e1b27e654b0af43185ffb803817a5b10a3e
+contentHash=5a74556865098992cbc18c0fffff647fb911c799669e3c3dac71981d7cb944e0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-comprehension-host-24`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d0b69bf1eb88c0e91021cc99145bfc5a0b9fad25741be5759ed9fa7ec94aa97e
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u27-comprehension
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Read the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter that had been read.
+написанное Анной
+Anna is the writer of the letter
+Which English reading matches the person who produced the letter?
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which reading keeps the reader of the letter unspecified?
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.
+Anna wrote the letter on the table
+the letter put Anna away
+Anna wrote the letter on the table invents a different verb.
+the letter put Anna away reverses who did the action.
+прочитанное письмо
+the letter had already been read
+Which English reading matches the state of the letter Anna put away?
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+[{"cue": "написанное Анной", "answer": "Anna is the writer of the letter", "distractors": ["Anna is the reader of the letter", "the letter wrote Anna"]}, {"cue": "Анна убрала прочитанное письмо.", "answer": "Anna put away the letter that had been read.", "distractors": ["Anna wrote the letter on the table", "the letter put Anna away"]}, {"cue": "прочитанное письмо", "answer": "the letter had already been read", "distractors": ["the letter had just been written", "Anna is still reading aloud"]}]
+shippedText=Admitted reading: the letter had already been read
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=74f96df33d743da02fde83beabed4e1b27e654b0af43185ffb803817a5b10a3e
+contentHash=e7b9627f823bb12ef443bfb4034b4043eb10d95d7315f4d8273067272002c5ef
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-comprehension-host-25`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3dff506e1fe49c578e7db47c2bb3530f8567ea8569dd65bf0720ffaef0d7a4b7
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u27-comprehension
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Read the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter that had been read.
+написанное Анной
+Anna is the writer of the letter
+Which English reading matches the person who produced the letter?
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which reading keeps the reader of the letter unspecified?
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.
+Anna wrote the letter on the table
+the letter put Anna away
+Anna wrote the letter on the table invents a different verb.
+the letter put Anna away reverses who did the action.
+прочитанное письмо
+the letter had already been read
+Which English reading matches the state of the letter Anna put away?
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+[{"cue": "написанное Анной", "answer": "Anna is the writer of the letter", "distractors": ["Anna is the reader of the letter", "the letter wrote Anna"]}, {"cue": "Анна убрала прочитанное письмо.", "answer": "Anna put away the letter that had been read.", "distractors": ["Anna wrote the letter on the table", "the letter put Anna away"]}, {"cue": "прочитанное письмо", "answer": "the letter had already been read", "distractors": ["the letter had just been written", "Anna is still reading aloud"]}]
+shippedText=the letter had just been written
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=74f96df33d743da02fde83beabed4e1b27e654b0af43185ffb803817a5b10a3e
+contentHash=8311c8a65d4be2240bdaca3d3077c63cc8e26e7a03b68a5193a126fe2e8d7353
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-comprehension-host-26`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dbde14165e002a66a2c2cd4a11a78703ac1aa4a50fddc99936c632b964a1e32f
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u27-comprehension
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Read the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter that had been read.
+написанное Анной
+Anna is the writer of the letter
+Which English reading matches the person who produced the letter?
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which reading keeps the reader of the letter unspecified?
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.
+Anna wrote the letter on the table
+the letter put Anna away
+Anna wrote the letter on the table invents a different verb.
+the letter put Anna away reverses who did the action.
+прочитанное письмо
+the letter had already been read
+Which English reading matches the state of the letter Anna put away?
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+[{"cue": "написанное Анной", "answer": "Anna is the writer of the letter", "distractors": ["Anna is the reader of the letter", "the letter wrote Anna"]}, {"cue": "Анна убрала прочитанное письмо.", "answer": "Anna put away the letter that had been read.", "distractors": ["Anna wrote the letter on the table", "the letter put Anna away"]}, {"cue": "прочитанное письмо", "answer": "the letter had already been read", "distractors": ["the letter had just been written", "Anna is still reading aloud"]}]
+shippedText=Anna is still reading aloud
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=74f96df33d743da02fde83beabed4e1b27e654b0af43185ffb803817a5b10a3e
+contentHash=d0666d9c4034ea8c12e7330fd1c267df50de19862eede4d1bc57e816929630d9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-comprehension-host-27`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0da8ff433c44ce3ccb23b46d1ee4309624f19252d878470731ea44eacb1cc9f3
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u27-comprehension
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Read the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter that had been read.
+написанное Анной
+Anna is the writer of the letter
+Which English reading matches the person who produced the letter?
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which reading keeps the reader of the letter unspecified?
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.
+Anna wrote the letter on the table
+the letter put Anna away
+Anna wrote the letter on the table invents a different verb.
+the letter put Anna away reverses who did the action.
+прочитанное письмо
+the letter had already been read
+Which English reading matches the state of the letter Anna put away?
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+[{"cue": "написанное Анной", "answer": "Anna is the writer of the letter", "distractors": ["Anna is the reader of the letter", "the letter wrote Anna"]}, {"cue": "Анна убрала прочитанное письмо.", "answer": "Anna put away the letter that had been read.", "distractors": ["Anna wrote the letter on the table", "the letter put Anna away"]}, {"cue": "прочитанное письмо", "answer": "the letter had already been read", "distractors": ["the letter had just been written", "Anna is still reading aloud"]}]
+shippedText=Rejected reading: the letter had just been written
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=74f96df33d743da02fde83beabed4e1b27e654b0af43185ffb803817a5b10a3e
+contentHash=fe21e666a2c572f193f2b7ebbf6f525d4a25f2f8f8ebc144f3950a1a83d5b1bb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-comprehension-host-28`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f0a1c94ffcd95b876ec77b75ea987df9ef003cc7f4a94eecd9861fbaa8637a67
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u27-comprehension
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Read the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter that had been read.
+написанное Анной
+Anna is the writer of the letter
+Which English reading matches the person who produced the letter?
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which reading keeps the reader of the letter unspecified?
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.
+Anna wrote the letter on the table
+the letter put Anna away
+Anna wrote the letter on the table invents a different verb.
+the letter put Anna away reverses who did the action.
+прочитанное письмо
+the letter had already been read
+Which English reading matches the state of the letter Anna put away?
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+[{"cue": "написанное Анной", "answer": "Anna is the writer of the letter", "distractors": ["Anna is the reader of the letter", "the letter wrote Anna"]}, {"cue": "Анна убрала прочитанное письмо.", "answer": "Anna put away the letter that had been read.", "distractors": ["Anna wrote the letter on the table", "the letter put Anna away"]}, {"cue": "прочитанное письмо", "answer": "the letter had already been read", "distractors": ["the letter had just been written", "Anna is still reading aloud"]}]
+shippedText=Rejected reading: Anna is still reading aloud
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=74f96df33d743da02fde83beabed4e1b27e654b0af43185ffb803817a5b10a3e
+contentHash=eb3b9accd6e20ef86b37df35d225662a7a157fec43e69d73eb6e9a18ce3ce6e3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-comprehension-host-3`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dd5ddc0395f9e4941f70d3510c24f1b23db052f92cb8fc676e0b9c2b8328378c
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u27-comprehension
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Read the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter that had been read.
+написанное Анной
+Anna is the writer of the letter
+Which English reading matches the person who produced the letter?
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which reading keeps the reader of the letter unspecified?
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.
+Anna wrote the letter on the table
+the letter put Anna away
+Anna wrote the letter on the table invents a different verb.
+the letter put Anna away reverses who did the action.
+прочитанное письмо
+the letter had already been read
+Which English reading matches the state of the letter Anna put away?
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+[{"cue": "написанное Анной", "answer": "Anna is the writer of the letter", "distractors": ["Anna is the reader of the letter", "the letter wrote Anna"]}, {"cue": "Анна убрала прочитанное письмо.", "answer": "Anna put away the letter that had been read.", "distractors": ["Anna wrote the letter on the table", "the letter put Anna away"]}, {"cue": "прочитанное письмо", "answer": "the letter had already been read", "distractors": ["the letter had just been written", "Anna is still reading aloud"]}]
+shippedText=Письмо, написанное Анной, лежит на столе.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=74f96df33d743da02fde83beabed4e1b27e654b0af43185ffb803817a5b10a3e
+contentHash=8e7f6e498e17b1e8b5d09a319e2330de197d08775436c7c03e0dfbf4e9788c1a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-comprehension-host-4`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bb980a3f66cde2f0b2ef8a3d09067966cd252dad8109f05bdbdfc8092ef1c94b
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u27-comprehension
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Read the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter that had been read.
+написанное Анной
+Anna is the writer of the letter
+Which English reading matches the person who produced the letter?
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which reading keeps the reader of the letter unspecified?
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.
+Anna wrote the letter on the table
+the letter put Anna away
+Anna wrote the letter on the table invents a different verb.
+the letter put Anna away reverses who did the action.
+прочитанное письмо
+the letter had already been read
+Which English reading matches the state of the letter Anna put away?
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+[{"cue": "написанное Анной", "answer": "Anna is the writer of the letter", "distractors": ["Anna is the reader of the letter", "the letter wrote Anna"]}, {"cue": "Анна убрала прочитанное письмо.", "answer": "Anna put away the letter that had been read.", "distractors": ["Anna wrote the letter on the table", "the letter put Anna away"]}, {"cue": "прочитанное письмо", "answer": "the letter had already been read", "distractors": ["the letter had just been written", "Anna is still reading aloud"]}]
+shippedText=the letter Anna wrote is on the table
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=74f96df33d743da02fde83beabed4e1b27e654b0af43185ffb803817a5b10a3e
+contentHash=d8f1d40a01c01c954f5502c2c438deff549a53cf9150ea8f8d6ed61a00c75535
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-comprehension-host-5`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4dc225710eaf16599239afaf27e7faf157be6252d70206256d98496204d87d91
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u27-comprehension
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Read the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter that had been read.
+написанное Анной
+Anna is the writer of the letter
+Which English reading matches the person who produced the letter?
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which reading keeps the reader of the letter unspecified?
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.
+Anna wrote the letter on the table
+the letter put Anna away
+Anna wrote the letter on the table invents a different verb.
+the letter put Anna away reverses who did the action.
+прочитанное письмо
+the letter had already been read
+Which English reading matches the state of the letter Anna put away?
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+[{"cue": "написанное Анной", "answer": "Anna is the writer of the letter", "distractors": ["Anna is the reader of the letter", "the letter wrote Anna"]}, {"cue": "Анна убрала прочитанное письмо.", "answer": "Anna put away the letter that had been read.", "distractors": ["Anna wrote the letter on the table", "the letter put Anna away"]}, {"cue": "прочитанное письмо", "answer": "the letter had already been read", "distractors": ["the letter had just been written", "Anna is still reading aloud"]}]
+shippedText=Анна убрала прочитанное письмо.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=74f96df33d743da02fde83beabed4e1b27e654b0af43185ffb803817a5b10a3e
+contentHash=ff8f86153960e1a7dab221da85cb0f3d3d0632a2cf41f200fc1784b9046b37b5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-comprehension-host-6`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d905c397a880cd47b8ecbf2e1394b82b439820f110baa1835ba10c2cc3ddb33c
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u27-comprehension
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Read the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter that had been read.
+написанное Анной
+Anna is the writer of the letter
+Which English reading matches the person who produced the letter?
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which reading keeps the reader of the letter unspecified?
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.
+Anna wrote the letter on the table
+the letter put Anna away
+Anna wrote the letter on the table invents a different verb.
+the letter put Anna away reverses who did the action.
+прочитанное письмо
+the letter had already been read
+Which English reading matches the state of the letter Anna put away?
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+[{"cue": "написанное Анной", "answer": "Anna is the writer of the letter", "distractors": ["Anna is the reader of the letter", "the letter wrote Anna"]}, {"cue": "Анна убрала прочитанное письмо.", "answer": "Anna put away the letter that had been read.", "distractors": ["Anna wrote the letter on the table", "the letter put Anna away"]}, {"cue": "прочитанное письмо", "answer": "the letter had already been read", "distractors": ["the letter had just been written", "Anna is still reading aloud"]}]
+shippedText=Anna put away the letter that had been read.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=74f96df33d743da02fde83beabed4e1b27e654b0af43185ffb803817a5b10a3e
+contentHash=8d5f0245e28cb98396110fa7277112490e4549324fbcc85a5f6c09de436e8cd8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-comprehension-host-7`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c4541843c72c1a214de9b0a0208bd8a9168ea0e4dd313ed41418aa1dd4ef35fa
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u27-comprehension
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Read the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter that had been read.
+написанное Анной
+Anna is the writer of the letter
+Which English reading matches the person who produced the letter?
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which reading keeps the reader of the letter unspecified?
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.
+Anna wrote the letter on the table
+the letter put Anna away
+Anna wrote the letter on the table invents a different verb.
+the letter put Anna away reverses who did the action.
+прочитанное письмо
+the letter had already been read
+Which English reading matches the state of the letter Anna put away?
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+[{"cue": "написанное Анной", "answer": "Anna is the writer of the letter", "distractors": ["Anna is the reader of the letter", "the letter wrote Anna"]}, {"cue": "Анна убрала прочитанное письмо.", "answer": "Anna put away the letter that had been read.", "distractors": ["Anna wrote the letter on the table", "the letter put Anna away"]}, {"cue": "прочитанное письмо", "answer": "the letter had already been read", "distractors": ["the letter had just been written", "Anna is still reading aloud"]}]
+shippedText=написанное Анной
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=74f96df33d743da02fde83beabed4e1b27e654b0af43185ffb803817a5b10a3e
+contentHash=aa6c7d97f54fc49299567faf25cbbb73c2c3fa40d8104c63893d8ec3bb4961db
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-comprehension-host-8`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9cb736a31535d08853f3399995665232f22f551f2f8ce93ae1c3cd756a29625f
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u27-comprehension
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Read the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter that had been read.
+написанное Анной
+Anna is the writer of the letter
+Which English reading matches the person who produced the letter?
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which reading keeps the reader of the letter unspecified?
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.
+Anna wrote the letter on the table
+the letter put Anna away
+Anna wrote the letter on the table invents a different verb.
+the letter put Anna away reverses who did the action.
+прочитанное письмо
+the letter had already been read
+Which English reading matches the state of the letter Anna put away?
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+[{"cue": "написанное Анной", "answer": "Anna is the writer of the letter", "distractors": ["Anna is the reader of the letter", "the letter wrote Anna"]}, {"cue": "Анна убрала прочитанное письмо.", "answer": "Anna put away the letter that had been read.", "distractors": ["Anna wrote the letter on the table", "the letter put Anna away"]}, {"cue": "прочитанное письмо", "answer": "the letter had already been read", "distractors": ["the letter had just been written", "Anna is still reading aloud"]}]
+shippedText=Anna is the writer of the letter
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=74f96df33d743da02fde83beabed4e1b27e654b0af43185ffb803817a5b10a3e
+contentHash=6bdd2ba7b8b83d490e469fc404f721080608e47260e217c67cedc26adcb3c61b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-comprehension-host-9`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8694e71bc9a9f7cf642f991a58c18d1ef91f823d194434aa6e40569b6ce7e196
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u27-comprehension
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Read the participial phrase for who did the action and what the result is.
+Stress placement is a different objective and does not answer these readings.
+Read the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.
+Письмо, написанное Анной, лежит на столе.
+the letter Anna wrote is on the table
+Анна убрала прочитанное письмо.
+Anna put away the letter that had been read.
+написанное Анной
+Anna is the writer of the letter
+Which English reading matches the person who produced the letter?
+Admitted reading: Anna is the writer of the letter
+Anna is the reader of the letter
+the letter wrote Anna
+Rejected reading: Anna is the reader of the letter
+Rejected reading: the letter wrote Anna
+Which reading keeps the reader of the letter unspecified?
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.
+Anna wrote the letter on the table
+the letter put Anna away
+Anna wrote the letter on the table invents a different verb.
+the letter put Anna away reverses who did the action.
+прочитанное письмо
+the letter had already been read
+Which English reading matches the state of the letter Anna put away?
+Admitted reading: the letter had already been read
+the letter had just been written
+Anna is still reading aloud
+Rejected reading: the letter had just been written
+Rejected reading: Anna is still reading aloud
+Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+[{"cue": "написанное Анной", "answer": "Anna is the writer of the letter", "distractors": ["Anna is the reader of the letter", "the letter wrote Anna"]}, {"cue": "Анна убрала прочитанное письмо.", "answer": "Anna put away the letter that had been read.", "distractors": ["Anna wrote the letter on the table", "the letter put Anna away"]}, {"cue": "прочитанное письмо", "answer": "the letter had already been read", "distractors": ["the letter had just been written", "Anna is still reading aloud"]}]
+shippedText=Which English reading matches the person who produced the letter?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=74f96df33d743da02fde83beabed4e1b27e654b0af43185ffb803817a5b10a3e
+contentHash=ad80f0e8e596b0caeb6a90ffaf896755cefa31a522e3f54fd6b4adf116a9bef5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-obj-u27-comprehension-lesson-0`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a5f698a6708a087e09c514bace91b32ea125653f5797907a433a0f86e6e27693
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-comprehension:obj-u27-comprehension-lesson-0
+originalSourceText=Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Read the described letter, writer and separate main action
+shippedText=Read the described letter, writer and separate main action
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English instruction, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c6cde4fc5e625256288ef60ccd217b852aea1690e75ab29dacd7ae497f0b8349
+contentHash=fc1f4da268247ce5d11df1f4e559fbd1cdc488c9eb98d9c696833185c9daa939
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-obj-u27-comprehension-lesson-1`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 73d0b56bccfe75c5ce50df420a8b1e7135e576094547a962b62dab07540628f1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-comprehension:obj-u27-comprehension-lesson-1
+originalSourceText=Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Separate the letter description from the sentence action
+shippedText=Separate the letter description from the sentence action
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English instruction, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ddd2256be692f9612003aac41a1dc7b33696b3726825eb26b5c3d67b4519978d
+contentHash=150398b791bb84e0ca2936a7e0fdff48bc47325d0f37d0b6854725106566c1c6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-obj-u27-comprehension-lesson-2`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 732ba4783cd56fe5e973700d8edd27592fbd12eeb5d6752305d68a54ffd113aa
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-comprehension:obj-u27-comprehension-lesson-2
+originalSourceText=Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+shippedText=Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English instruction, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=937bc3de1f759681da9ad525f03cae33fae7f3f4d4608af5acad682e35d8ade3
+contentHash=c2a53509dbd5dd29e253a9c959f352b29df6bae0f60dd8e7bf4cee9157818994
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-obj-u27-comprehension-lesson-3`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 01ac886c504610ecf5b30e2b19ef523553a14ad19765dcca0cb65a9f5671e95c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-comprehension:obj-u27-comprehension-lesson-3
+originalSourceText=Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Do not transfer the main-action subject to an unnamed participle agent
+shippedText=Do not transfer the main-action subject to an unnamed participle agent
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English instruction, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e2e166771340533431cd7d3c7dce8e4cdd41d80eb5892a33e379db604f7467ee
+contentHash=9c0e0f669631e8aace03588b4e2f366f4495f76093932e5792f8c6785955d8a7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-obj-u27-comprehension-lesson-4`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7d94cbdcf3feedc551e7f96e5bb21237f8d0e3713c65923979b9619a31ada43e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-comprehension:obj-u27-comprehension-lesson-4
+originalSourceText=Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+shippedText=Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English instruction, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=049183bad407ddcb5586eba26dd3b6cafeb22beea4d611eb037a1addeeaf8225
+contentHash=3e1a074a1cb98c5b1d0324251d81afb1b4e37908f9252997369f598c1951c273
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-obj-u27-comprehension-lesson-5`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0cfe60a8271a26c9ccf58aafb7c16b04cf1d93152a910e70edd6f24336294b9f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-comprehension:obj-u27-comprehension-lesson-5
+originalSourceText=Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Guided practice
+shippedText=Guided practice
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English instruction, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c49152c2ded444ab9a466c8f8f53654a7371ebbb35a7b17aaa651d5c55a4ce97
+contentHash=cb1d4a3d9d5db425da3797c7a997db3588ec122a60c4d645ea31cd849f76ab3c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-obj-u27-comprehension-lesson-6`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0ea08ed124f904c7868ca3de2cca82f198e2536150aafb84f4d4e742dbc33988
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-comprehension:obj-u27-comprehension-lesson-6
+originalSourceText=Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Use the explained meaning and the supplied form or sentence. A missed choice returns to both teaching cards and every worked example. Optional present-passive study does not gate Unit 27.
+shippedText=Use the explained meaning and the supplied form or sentence. A missed choice returns to both teaching cards and every worked example. Optional present-passive study does not gate Unit 27.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English instruction, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e2aeef8d205436dd6e51a41d80fca78d52e7e76d283a2d029865635ee5bf6554
+contentHash=ce64c134fbdf99bdd1cec384cab248d295eec4870002504c5257aab991558135
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-obj-u27-comprehension-lesson-7`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5a597a2a715233bed51bfeac09d8497c61aebe3f2f1d480c5f3c8436704e196b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-comprehension:obj-u27-comprehension-lesson-7
+originalSourceText=Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Review the complete supplied-form reading
+shippedText=Review the complete supplied-form reading
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English instruction, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5a684cf7074de353b7c1cd0db26f6aebe237fc1747284c4bce6b49f9f0103b3b
+contentHash=76d4b4b7bc547d9b517837c5ca5f7aa5f80c190785f993bdf9455e3e8cbc328a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-obj-u27-comprehension-lesson-8`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a3e4323db0f9ea9cb21a1648fc2bfd5114083bee38fd5f08c3da2ae2cc1c0cc9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-comprehension:obj-u27-comprehension-lesson-8
+originalSourceText=Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+shippedText=Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English instruction, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=11ff3935cad61afc52507d4a8d6295aabcac970d4d0b208d9f56964644812141
+contentHash=95db3038186e85138bf884f299964c7743d2f103b57bd9c50323612c0a0a932f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-obj-u27-comprehension-lesson-9`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6dcad9826392bc561a512fa051cef39a0c576bf08a49f98d171fbbbcb72bc337
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-comprehension:obj-u27-comprehension-lesson-9
+originalSourceText=Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Independent checks
+shippedText=Independent checks
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English instruction, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b1e9c8a9b1acf513f04be40e748ed92b8bed5989276e9047751686b0ad74b59a
+contentHash=012ab8f74509f135e510ad3d930ff2e1b92c944e2d060f0b35ddeee63616b486
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-obj-u27-present-passive-lesson-0`
+
+- Objectives: obj-u27-present-passive
+- Sessions: u27-s-orient, u27-s-present-passive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c3be520ab5b42ba218684e25a028b8ef4acc88062f71e60824ef664427e831dc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-present-passive:obj-u27-present-passive-lesson-0
+originalSourceText=Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Optional: distinguish a present passive form from its supporting verb forms
+shippedText=Optional: distinguish a present passive form from its supporting verb forms
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English instruction, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7e8df2877ba11eac583d346e78983f698dc51a7551e915b05365bb872dc32b48
+contentHash=fa83139b92515356d5838715aadcf1e609099aa8d5cc7fb3dd9123a5c1da4a7c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-obj-u27-present-passive-lesson-1`
+
+- Objectives: obj-u27-present-passive
+- Sessions: u27-s-orient, u27-s-present-passive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5e92bcdab0fbd391b4f84ce0391794d1c274ac1a83a7ebc2cdc484fc6990288e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-present-passive:obj-u27-present-passive-lesson-1
+originalSourceText=Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Meaning differs between a passive description, a finite verb and an infinitive
+shippedText=Meaning differs between a passive description, a finite verb and an infinitive
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English instruction, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0fe2d4bc96c1659cd445bc6a6b772864272f3493c2b01f833d199eab367bb2c6
+contentHash=6aaf1256a37d2fde460b7b11a32416ffc311c1a891aa3da1f905b07f99dc33d6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-obj-u27-present-passive-lesson-2`
+
+- Objectives: obj-u27-present-passive
+- Sessions: u27-s-orient, u27-s-present-passive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f1adbbe266a5bd53a5c458065d13e883b4141e57f6c057dc3b1d73e01d2f6723
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-present-passive:obj-u27-present-passive-lesson-2
+originalSourceText=Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+The supplied обсужда́емый has the meaning being discussed. It describes something affected by discussion, rather than naming the person doing the discussing. The source also permits an able-to-be-discussed reading; the checked English option here is being discussed. The supporting verb form оставля́ем means we leave: it is a first-person plural present-tense form, with we performing the action, not a passive description. The infinitive оставля́ть means to leave and does not by itself name a we subject. Choose we leave for the finite form and to leave for the infinitive. The option to discuss is an infinitive meaning rather than the checked passive description. Different action meanings and grammatical functions must not be exchanged simply because forms share a stem.
+shippedText=The supplied обсужда́емый has the meaning being discussed. It describes something affected by discussion, rather than naming the person doing the discussing. The source also permits an able-to-be-discussed reading; the checked English option here is being discussed. The supporting verb form оставля́ем means we leave: it is a first-person plural present-tense form, with we performing the action, not a passive description. The infinitive оставля́ть means to leave and does not by itself name a we subject. Choose we leave for the finite form and to leave for the infinitive. The option to discuss is an infinitive meaning rather than the checked passive description. Different action meanings and grammatical functions must not be exchanged simply because forms share a stem.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English instruction, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=54bef26e499611ae0f427702a4d8f75c894811abdf918b0544186635a5fc583e
+contentHash=210bddbedf1b7b5836d6cd8fd27e5a2813928dc2e75e906c6416500fe2b4a8da
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-obj-u27-present-passive-lesson-3`
+
+- Objectives: obj-u27-present-passive
+- Sessions: u27-s-orient, u27-s-present-passive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3f0685af5d75df85107e8b2a09c24a5f5a83f67984c5b9d89cd26cf70a1ebc70
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-present-passive:obj-u27-present-passive-lesson-3
+originalSourceText=Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Recognize only the retained formation and accent placements
+shippedText=Recognize only the retained formation and accent placements
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English instruction, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a448d8009b8d83589a445165e132d874538762875f46fc2938d9392945065dc6
+contentHash=455bbd526acc9728d4ebb8ed10a5284492d74dc58fdc512e34fad149ad5e22dc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-obj-u27-present-passive-lesson-4`
+
+- Objectives: obj-u27-present-passive
+- Sessions: u27-s-orient, u27-s-present-passive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 421225916f33b8f7875fb0e19b20750b573dbde5583bbf0ecff61916fac02679
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-present-passive:obj-u27-present-passive-lesson-4
+originalSourceText=Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+The retained source illustrates the relation between the infinitive оставля́ть, the finite form оставля́ем and the present passive оставля́емый with its adjective ending. The finite we leave form is a supporting example, not itself a participle. This small set does not establish which other verbs permit a present passive or a complete formation algorithm for every verb. In the supplied leave contrast, оставля́емый is retained and оставляемы́й is rejected. In the supplied discuss contrast, обсужда́емый is retained and обсуждаемы́й is rejected. The retained accents are on the third syllable; the alternatives move them to the final syllable. Compare the accented vowel in each particular form; do not predict an unlisted form or its stress from this set. This entire session is optional and non-gating. Its present-passive stress choices belong to the optional objective, not to the required past-passive stress gate. Active-participle instruction belongs to Unit 29, not this session.
+shippedText=The retained source illustrates the relation between the infinitive оставля́ть, the finite form оставля́ем and the present passive оставля́емый with its adjective ending. The finite we leave form is a supporting example, not itself a participle. This small set does not establish which other verbs permit a present passive or a complete formation algorithm for every verb. In the supplied leave contrast, оставля́емый is retained and оставляемы́й is rejected. In the supplied discuss contrast, обсужда́емый is retained and обсуждаемы́й is rejected. The retained accents are on the third syllable; the alternatives move them to the final syllable. Compare the accented vowel in each particular form; do not predict an unlisted form or its stress from this set. This entire session is optional and non-gating. Its present-passive stress choices belong to the optional objective, not to the required past-passive stress gate. Active-participle instruction belongs to Unit 29, not this session.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English instruction, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fb373a45e1a8347eeb1fab745463343254099a499b43c53469bcaeb210cab30b
+contentHash=76ead338645ea544ab4c138268b7acc241b47cf4e22ff550f90d22579e0d5fc3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-obj-u27-present-passive-lesson-5`
+
+- Objectives: obj-u27-present-passive
+- Sessions: u27-s-orient, u27-s-present-passive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b5f06b9192acd815ed7eaee4896fea18b7767a84309a2ccd40f0bea68d0f1e07
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-present-passive:obj-u27-present-passive-lesson-5
+originalSourceText=Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Guided practice
+shippedText=Guided practice
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English instruction, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c49152c2ded444ab9a466c8f8f53654a7371ebbb35a7b17aaa651d5c55a4ce97
+contentHash=cb1d4a3d9d5db425da3797c7a997db3588ec122a60c4d645ea31cd849f76ab3c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-obj-u27-present-passive-lesson-6`
+
+- Objectives: obj-u27-present-passive
+- Sessions: u27-s-orient, u27-s-present-passive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8d3a94f0948cc528fa7c6e46545632e4b4504e9631bfcca8b604dde154da5a17
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-present-passive:obj-u27-present-passive-lesson-6
+originalSourceText=Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Use the explained meaning and the supplied form or sentence. A missed choice returns to both teaching cards and every worked example. Optional present-passive study does not gate Unit 27.
+shippedText=Use the explained meaning and the supplied form or sentence. A missed choice returns to both teaching cards and every worked example. Optional present-passive study does not gate Unit 27.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English instruction, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e2aeef8d205436dd6e51a41d80fca78d52e7e76d283a2d029865635ee5bf6554
+contentHash=ce64c134fbdf99bdd1cec384cab248d295eec4870002504c5257aab991558135
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-obj-u27-present-passive-lesson-7`
+
+- Objectives: obj-u27-present-passive
+- Sessions: u27-s-orient, u27-s-present-passive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ea130f1e762ec40b75ac01777df1eda5bd807938c603a7a40e6a4f2f248976d4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-present-passive:obj-u27-present-passive-lesson-7
+originalSourceText=Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Review the complete supplied-form reading
+shippedText=Review the complete supplied-form reading
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English instruction, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5a684cf7074de353b7c1cd0db26f6aebe237fc1747284c4bce6b49f9f0103b3b
+contentHash=76d4b4b7bc547d9b517837c5ca5f7aa5f80c190785f993bdf9455e3e8cbc328a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-obj-u27-present-passive-lesson-8`
+
+- Objectives: obj-u27-present-passive
+- Sessions: u27-s-orient, u27-s-present-passive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f360807e477265fca62d75af03e49bf6d5fff1265ad7d4206a0c3f9f1d87bf64
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-present-passive:obj-u27-present-passive-lesson-8
+originalSourceText=Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+The supplied обсужда́емый has the meaning being discussed. It describes something affected by discussion, rather than naming the person doing the discussing. The source also permits an able-to-be-discussed reading; the checked English option here is being discussed. The supporting verb form оставля́ем means we leave: it is a first-person plural present-tense form, with we performing the action, not a passive description. The infinitive оставля́ть means to leave and does not by itself name a we subject. Choose we leave for the finite form and to leave for the infinitive. The option to discuss is an infinitive meaning rather than the checked passive description. Different action meanings and grammatical functions must not be exchanged simply because forms share a stem.
+
+The retained source illustrates the relation between the infinitive оставля́ть, the finite form оставля́ем and the present passive оставля́емый with its adjective ending. The finite we leave form is a supporting example, not itself a participle. This small set does not establish which other verbs permit a present passive or a complete formation algorithm for every verb. In the supplied leave contrast, оставля́емый is retained and оставляемы́й is rejected. In the supplied discuss contrast, обсужда́емый is retained and обсуждаемы́й is rejected. The retained accents are on the third syllable; the alternatives move them to the final syllable. Compare the accented vowel in each particular form; do not predict an unlisted form or its stress from this set. This entire session is optional and non-gating. Its present-passive stress choices belong to the optional objective, not to the required past-passive stress gate. Active-participle instruction belongs to Unit 29, not this session.
+shippedText=The supplied обсужда́емый has the meaning being discussed. It describes something affected by discussion, rather than naming the person doing the discussing. The source also permits an able-to-be-discussed reading; the checked English option here is being discussed. The supporting verb form оставля́ем means we leave: it is a first-person plural present-tense form, with we performing the action, not a passive description. The infinitive оставля́ть means to leave and does not by itself name a we subject. Choose we leave for the finite form and to leave for the infinitive. The option to discuss is an infinitive meaning rather than the checked passive description. Different action meanings and grammatical functions must not be exchanged simply because forms share a stem.
+
+The retained source illustrates the relation between the infinitive оставля́ть, the finite form оставля́ем and the present passive оставля́емый with its adjective ending. The finite we leave form is a supporting example, not itself a participle. This small set does not establish which other verbs permit a present passive or a complete formation algorithm for every verb. In the supplied leave contrast, оставля́емый is retained and оставляемы́й is rejected. In the supplied discuss contrast, обсужда́емый is retained and обсуждаемы́й is rejected. The retained accents are on the third syllable; the alternatives move them to the final syllable. Compare the accented vowel in each particular form; do not predict an unlisted form or its stress from this set. This entire session is optional and non-gating. Its present-passive stress choices belong to the optional objective, not to the required past-passive stress gate. Active-participle instruction belongs to Unit 29, not this session.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English instruction, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ba6808374a8bb77c1307c8de6196022df4b395abba7f08f567662304750201ea
+contentHash=e3cea9b5c06f9bec5fcbb2f0ea039e94aa11cd2b20125d05587d1566bf57fb92
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-obj-u27-present-passive-lesson-9`
+
+- Objectives: obj-u27-present-passive
+- Sessions: u27-s-orient, u27-s-present-passive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9e7777315ba3068c589f0cc21abafc0a3c172052493cd16abd86516d097499ba
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-present-passive:obj-u27-present-passive-lesson-9
+originalSourceText=Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Independent checks
+shippedText=Independent checks
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English instruction, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b1e9c8a9b1acf513f04be40e748ed92b8bed5989276e9047751686b0ad74b59a
+contentHash=012ab8f74509f135e510ad3d930ff2e1b92c944e2d060f0b35ddeee63616b486
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-u27-g-comp-1-text-0`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f68454cc01aff461e1542356d829c30af3b291cbd89ad09095b051f5e15b641b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-comprehension:u27-g-comp-1-text-0
+originalSourceText=Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Which English reading matches the letter that is on the table?
+shippedText=Which English reading matches the letter that is on the table?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English instruction, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5e76eb6af2096075211240730f02c33a1fb8f8a3a273c324a66b8ed88ef4baae
+contentHash=32ac8c8396b594e077124e36ec932c9f4e37c48a341d95ec090d95fecd0dba51
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-u27-g-comp-1-text-1`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 52f6fec88a1d0a645989e66efa390862c7d8b57f36e182b8a2ad274363cb5994
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-comprehension:u27-g-comp-1-text-1
+originalSourceText=Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Admitted reading: the letter Anna wrote is on the table
+The letter is on the table; Anna is the writer named in its passive description. Putting it away is a different action, and the table is not a writer.
+shippedText=Admitted reading: the letter Anna wrote is on the table
+The letter is on the table; Anna is the writer named in its passive description. Putting it away is a different action, and the table is not a writer.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English instruction, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ad74cde736c0b5d7204e51dface2584b6da6d2f3e1a7ad1f5d31eb922753d2ed
+contentHash=82242f7d9509d2c61f79d7260c7d123d45e84014762a24657d841581df55093d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-u27-g-comp-1-text-2`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 021e6eea29b315034562ff0214af143d78573dce83369d27a407959f2609826d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-comprehension:u27-g-comp-1-text-2
+originalSourceText=Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Rejected reading: Anna put the letter away
+shippedText=Rejected reading: Anna put the letter away
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English instruction, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7e26f426c946cea5fb2f058a5ac4c77de04e6fb5029aaa777e7d4465b0535075
+contentHash=4a7483c70ff839c543a430f23d6603d98290afece98d4e25ada5f75ed0a7dacb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-u27-g-comp-1-text-3`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9bbb3537ab262042ef432b79685e9447add2ad43415831eb3f60de4bcc8e567b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-comprehension:u27-g-comp-1-text-3
+originalSourceText=Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Rejected reading: the table wrote the letter
+shippedText=Rejected reading: the table wrote the letter
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English instruction, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c5204e589441efaa71a563a6ae95321a8e0161be66e8be9c668210efc31fd29e
+contentHash=2c9be170612400e00de78060d7fc10b7a5f84745cd9ea9087e0ae228542f2363
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-u27-g-present-passive-0-text-0`
+
+- Objectives: obj-u27-present-passive
+- Sessions: u27-s-orient, u27-s-present-passive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4cba2bc9d096e72b96651b9eced2b093dbb8ca626d6b46d97f63dad7377384be
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-present-passive:u27-g-present-passive-0-text-0
+originalSourceText=Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Which English meaning fits this supplied form?
+shippedText=Which English meaning fits this supplied form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English instruction, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bda10f8337e9bcf11abab4fec70e9de0de576a1d1f70aa10aa541ebe6894de8e
+contentHash=78387ed20a07cebeed8fa53b8b149892a8fce6fac7808f1ad9ab6c2558aaa734
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-u27-g-present-passive-0-text-1`
+
+- Objectives: obj-u27-present-passive
+- Sessions: u27-s-orient, u27-s-present-passive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4a74d9799f99cceabfd20b249efd4b4f4585c7173be85c33512066cecf2f6c4e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-present-passive:u27-g-present-passive-0-text-1
+originalSourceText=Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+The frozen line says being discussed or able to be discussed after the listed forms. This label is that gloss.
+being discussed identifies a passive description of something affected by discussion.
+shippedText=The frozen line says being discussed or able to be discussed after the listed forms. This label is that gloss.
+being discussed identifies a passive description of something affected by discussion.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English instruction, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=58dd41007463ce3e7ad45513d270139ad925616e2753737848fafca6f7c07160
+contentHash=ad6e42d37da5135c3028c3877713a4d13a8245a711d3aeba58cddc617c1fd970
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-u27-g-present-passive-0-text-2`
+
+- Objectives: obj-u27-present-passive
+- Sessions: u27-s-orient, u27-s-present-passive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7a8148f05728cf6d12f441cd06f0e86917c62de498f9d5c13fc2df7793d05bcf
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-present-passive:u27-g-present-passive-0-text-2
+originalSourceText=Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+we leave identifies a finite first-person plural action with a we subject, a different action or grammatical function.
+shippedText=we leave identifies a finite first-person plural action with a we subject, a different action or grammatical function.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English instruction, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ba3dd99fb1a4da5fe526b0cc88df3ca2a4d31f51d0e64777b8871567ab7b191b
+contentHash=702d297732cef819f52de4721116d2da3706f1bda2bd31aad3ee88c9a3eca726
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-u27-g-present-passive-0-text-3`
+
+- Objectives: obj-u27-present-passive
+- Sessions: u27-s-orient, u27-s-present-passive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d210e624e107bb32dd420d2201a7fbf49283e132082e7ab34d1349ab9dfe1955
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-present-passive:u27-g-present-passive-0-text-3
+originalSourceText=Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+to discuss identifies an infinitive meaning rather than a passive description, a different action or grammatical function.
+shippedText=to discuss identifies an infinitive meaning rather than a passive description, a different action or grammatical function.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English instruction, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=15c4806aae7bec3a40ee8f774cf0143b4c4898f4f4e1ecea100a73570d19afd0
+contentHash=6f409d9a83118b1427b21c1da5532e53040f36a3b07e9efa78da2cb43b6added
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-u27-i-comp-1-text-0`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 809355e589aee6653efeaef09b60657ceadc0e29bfb81f9c90ee04428af8f118
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-comprehension:u27-i-comp-1-text-0
+originalSourceText=Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Which English reading matches the person who produced the letter?
+shippedText=Which English reading matches the person who produced the letter?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English instruction, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2e3f48ab44d1060498489cb13f21520ce7dfc3c3fca43503f5eeca2540448dd1
+contentHash=ad80f0e8e596b0caeb6a90ffaf896755cefa31a522e3f54fd6b4adf116a9bef5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-u27-i-comp-1-text-1`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8885d078e3016731e6238a4cbba17a081bb36ffa2a848b9cdd7158df1166fd2d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-comprehension:u27-i-comp-1-text-1
+originalSourceText=Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Admitted reading: Anna is the writer of the letter
+The description identifies Anna as the writer, not as the reader. The letter is the affected entity, not an agent acting on Anna.
+shippedText=Admitted reading: Anna is the writer of the letter
+The description identifies Anna as the writer, not as the reader. The letter is the affected entity, not an agent acting on Anna.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English instruction, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=11d0ac8cced0d4da569ba4130c1d40ab0d8ac9b84c0e0477fc2e59359dea6e2e
+contentHash=890eaa9225a7dc103ae52c9a11c55a81d22cc67291316f6667df3be656d39828
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-u27-i-comp-1-text-2`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bbc62f0a985090bfd2de39feaba20c798c1f2339cf8d1658bad3e4122e7a5ba0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-comprehension:u27-i-comp-1-text-2
+originalSourceText=Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Rejected reading: Anna is the reader of the letter
+shippedText=Rejected reading: Anna is the reader of the letter
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English instruction, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a4d7b459ddb4821225694d9395011ca2743ba9df94143ee5e4f9b3dc03ccfa21
+contentHash=3192014fe017f68a5f7423126aad8aff08a3f3ef9430804542ef1cb4f5179c3a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-u27-i-comp-1-text-3`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5c4bac8d78f48c1af9a8f9e3b8c169719948178ddf1b8efe48a58ec37164fdea
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-comprehension:u27-i-comp-1-text-3
+originalSourceText=Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Rejected reading: the letter wrote Anna
+shippedText=Rejected reading: the letter wrote Anna
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English instruction, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b5b3b8d4b8655c784a965e140d8c7c2a8ccc4960fecf5566c0467be003bc1ea2
+contentHash=85736a5ca2e807feff64749e8dcf639473b39f435c0a5268a8d85f5259917959
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-u27-i-comp-2-text-0`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cb3378363e17d03284edc1e5059d600067f7d401e3bb5c3ab2886d694187cce7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-comprehension:u27-i-comp-2-text-0
+originalSourceText=Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Choose the English description. Which reading keeps the reader of the letter unspecified?
+shippedText=Choose the English description. Which reading keeps the reader of the letter unspecified?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English instruction, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=938c235f3d67038631c8c20382115d1c2d4853a4f823a2656203b671b7a4b2a3
+contentHash=8c1e2eb4138a0b95175ed6af990021d2b793c7182a81c918f13dcf0c0e057814
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-u27-i-comp-2-text-1`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 27cf7314b8ce195c49a2b470f0918fae0497bb0f4fc79ca6f483d2869d843a23
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-comprehension:u27-i-comp-2-text-1
+originalSourceText=Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.
+Anna performs the putting-away action. The passive description leaves the reader unspecified; naming the main-action subject does not identify that reader.
+shippedText=Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.
+Anna performs the putting-away action. The passive description leaves the reader unspecified; naming the main-action subject does not identify that reader.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English instruction, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c8b07d590fb7cb1fcf8473f5134123f39bed2f7abe639a68fe4214d3930d142a
+contentHash=fb77b0eed4a07aef16da90e1e08422529ce38d4a250189249f1ab82d7c175921
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-u27-i-comp-2-text-2`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 937c2319d00411d3205e0a1e48d7305f11708c31f58e00e878328b810b00066c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-comprehension:u27-i-comp-2-text-2
+originalSourceText=Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Anna wrote the letter on the table invents a different verb.
+shippedText=Anna wrote the letter on the table invents a different verb.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English instruction, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=893aab0f7fbccedee57b02113e64ec5b102f915ba9ebbec18cf1ff0a5d55bd5d
+contentHash=1106958c0f0613e946f2c9a0a20319dec7d2711ee783d46e713e79f735caedc2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-u27-i-comp-2-text-3`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ca8bb01b5ed7eb8086676ad74b1d232c674dc690ab82771f70354376b590885b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-comprehension:u27-i-comp-2-text-3
+originalSourceText=Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+the letter put Anna away reverses who did the action.
+shippedText=the letter put Anna away reverses who did the action.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English instruction, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f61b7ded1c037d29854bd2ccc83c961ff8439e3d15c83b127ffd9fd3533ca177
+contentHash=ee915131b4ee8afdfc3765b88372883ee5cb967cc98efc79ff98e8f971756ed3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-u27-i-comp-3-text-0`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 64228ddeedda46f8aa416b11938018e3ba7c86fd08eb912f65e140d4554585e5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-comprehension:u27-i-comp-3-text-0
+originalSourceText=Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Which English reading matches the state of the letter Anna put away?
+shippedText=Which English reading matches the state of the letter Anna put away?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English instruction, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2f38cbe1de2c238fdc873e9c8d1b5d17bc8bcd913b0f71097beb1363e44b8bec
+contentHash=5a74556865098992cbc18c0fffff647fb911c799669e3c3dac71981d7cb944e0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-u27-i-comp-3-text-1`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1e1d6802c04f5cf40b768d2ba692520767ef1302950fcc0472eee5612a26f41d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-comprehension:u27-i-comp-3-text-1
+originalSourceText=Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Admitted reading: the letter had already been read
+Already read describes the completed reading of the letter. Just written substitutes a different action, and still reading aloud invents an ongoing action and its agent.
+shippedText=Admitted reading: the letter had already been read
+Already read describes the completed reading of the letter. Just written substitutes a different action, and still reading aloud invents an ongoing action and its agent.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English instruction, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ef361dedf1aafe7e0bf6c69395f48745fd2c9a8451806ea7e14eede3d0881bcc
+contentHash=b988e9e7d6dea7898d62451aad0c75f9e0cb81472c741b2abff9781a032844c6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-u27-i-comp-3-text-2`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7ab4658757d4b16595cdfd9738570f2011962b2816009423a902a9ce3fd5fbfa
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-comprehension:u27-i-comp-3-text-2
+originalSourceText=Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Rejected reading: the letter had just been written
+shippedText=Rejected reading: the letter had just been written
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English instruction, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0a787b9e62da7a91cafc0d8a7dddd1a28687fe858d847541ec54deb84759d6e2
+contentHash=fe21e666a2c572f193f2b7ebbf6f525d4a25f2f8f8ebc144f3950a1a83d5b1bb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-u27-i-comp-3-text-3`
+
+- Objectives: obj-u27-comprehension
+- Sessions: u27-s-gap-comprehension
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 07f8d6d1fc76e855e3c2ef96a1b2296af4668be331f71d75afae7b4f99d10441
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-comprehension:u27-i-comp-3-text-3
+originalSourceText=Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Rejected reading: Anna is still reading aloud
+shippedText=Rejected reading: Anna is still reading aloud
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English instruction, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f4e6ff4973d65e3816f98ed1ec792446195d82ffb6ae8f883aabc2f671ef4dec
+contentHash=eb3b9accd6e20ef86b37df35d225662a7a157fec43e69d73eb6e9a18ce3ce6e3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-u27-i-present-passive-1-text-1`
+
+- Objectives: obj-u27-present-passive
+- Sessions: u27-s-orient, u27-s-present-passive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b2245f8077fbafe6ea4d21f89cc32107f58730c8b3141d7a26f3b1acda209b04
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-present-passive:u27-i-present-passive-1-text-1
+originalSourceText=Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+The frozen line writes (we leave) after the shown form. This label is that parenthetical.
+we leave identifies a finite first-person plural action with a we subject.
+shippedText=The frozen line writes (we leave) after the shown form. This label is that parenthetical.
+we leave identifies a finite first-person plural action with a we subject.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English instruction, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7d19fd66235048ac677926d70dcfb4e015785ca09311eb44952b0c20288a504d
+contentHash=06c38d0cf2b058fea1b217f97366dd1f3441653a97d59721d189c09380b5f53f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-u27-i-present-passive-1-text-2`
+
+- Objectives: obj-u27-present-passive
+- Sessions: u27-s-orient, u27-s-present-passive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a55c35e9e033be41dfc424463c3438b710fad503155321a9e3492eb30e1fe543
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-present-passive:u27-i-present-passive-1-text-2
+originalSourceText=Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+being discussed identifies a passive description of something affected by discussion, a different action or grammatical function.
+shippedText=being discussed identifies a passive description of something affected by discussion, a different action or grammatical function.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English instruction, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f248baf205b1980b3d0d9afbac599d143ccd00ded50226d4c54282278eef2009
+contentHash=5e1bbf2f67777d3e2c6f9e232c8e24ad78a11c229406951064b4c3b6ee681c7b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-u27-i-present-passive-1-text-3`
+
+- Objectives: obj-u27-present-passive
+- Sessions: u27-s-orient, u27-s-present-passive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0f9f3216c9e239cacc2c9e9d34c3ed61f18ad47fc638f19c92ff4f626809c3b3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-present-passive:u27-i-present-passive-1-text-3
+originalSourceText=Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+to leave identifies an infinitive meaning without a stated we subject, a different action or grammatical function.
+shippedText=to leave identifies an infinitive meaning without a stated we subject, a different action or grammatical function.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English instruction, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8f632098228d0dafe502e3f6cbd600c6f0af0cef8de2fe10d1e811f4bf5bd46b
+contentHash=92c51723c7ee923d65f89605c70678788455c545f931559f04ce6b3b458a7fb4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-remaining-u27-i-present-passive-2-text-1`
+
+- Objectives: obj-u27-present-passive
+- Sessions: u27-s-orient, u27-s-present-passive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 70e4b54f594d680f0653ff195a428dcac584ff753821865febfa8b00e22ae7cb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-present-passive:u27-i-present-passive-2-text-1
+originalSourceText=Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+The frozen line writes (to leave) after the shown form. This label is that parenthetical.
+to leave identifies an infinitive meaning without a stated we subject.
+shippedText=The frozen line writes (to leave) after the shown form. This label is that parenthetical.
+to leave identifies an infinitive meaning without a stated we subject.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English instruction, 2026-10-12; retained examples; no book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=715336bd3f1c9105ac8dc0a04fa5b86ae8359b702c7dc9fb0c8e3f2c3d4b8976
+contentHash=cf3d0b8dad9dea8b1e09be9a0ee404f186a21e0c7bf4f714aac75fba5f10758c
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -14962,12 +18294,12 @@ text=Four admitted stressed headwords stay on this card. Choosing a headword ins
 - Rights: rights-content-audit-research
 - Classification: SOURCE_CAPABILITY
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 76d5137e1c1c92d794bde024e4136b2afc1769dc9a3d0f78d3520cc7c03e404e
+- Content hash: 2404a9cb81d6a48afb204263283b19c363dd179e98a9d2b2efde785f450b98fc
 
 sourceId=src-content-audit-research
 sourceRevision=content-audit-2026-10-08
 sourceRecordId=ca-corrected-capability:cap-obj-u27-comprehension
-sourceHash=30e63fa8b8357c075e51ec64285936905a62e8acc627099b340f4d16f38da202
+sourceHash=74f96df33d743da02fde83beabed4e1b27e654b0af43185ffb803817a5b10a3e
 supportedClaim=participle-comprehension
 exactSpan=Pending corrected research applications. No linguistic or owner approval is recorded.
 References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
@@ -15002,6 +18334,13 @@ the letter had just been written
 Anna is still reading aloud
 Rejected reading: the letter had just been written
 Rejected reading: Anna is still reading aloud
+Retained licensed Russian grammar revision 1369617627 passive-present section, retained Wiktionary present-passive stress records including revision 74231596, and the existing hash-bound obj-u27-comprehension research corpus and applications. Independent English explanation of the retained forms and readings, 2026-10-12. Fresh Cornell passive-page retrieval returned HTTP 403; no fresh primary retrieval is claimed. No new Russian, copied book prose, source asset or general productive rule is supplied. Implementation remains pending final curriculum audit and owner acceptance.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+Письмо, написанное Анной, лежит на столе. means the letter Anna wrote is on the table. The participial phrase написанное Анной describes the letter: written is the action affecting it, and Anna is the named writer. The main statement locates the letter on the table. Being written and being on the table are separate parts of the reading. Neither the table nor the letter is the writer. The sentence does not say that Anna put the letter away, and the writer is not identified as its reader. A passive participle describes the affected entity; an agent phrase can name the person responsible for that particular action.
+
+Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Anna performs the putting-away action; the description прочитанное письмо says that the letter had already been read. The sentence does not name the reader. Anna might or might not have read it; neither reading can be asserted from this sentence alone. Already read is different from just written or still reading aloud. The supplied passive description expresses the completed reading of the letter, not an ongoing action by Anna. Recognize the main verb, the affected letter and any explicitly named agent separately. These checks interpret the supplied readings; accent placement alone cannot answer who wrote or read the letter, and recognizing these examples does not demonstrate production of an unfamiliar participial sentence.
+[{"cue": "написанное Анной", "answer": "Anna is the writer of the letter", "distractors": ["Anna is the reader of the letter", "the letter wrote Anna"]}, {"cue": "Анна убрала прочитанное письмо.", "answer": "Anna put away the letter that had been read.", "distractors": ["Anna wrote the letter on the table", "the letter put Anna away"]}, {"cue": "прочитанное письмо", "answer": "the letter had already been read", "distractors": ["the letter had just been written", "Anna is still reading aloud"]}]
 
 ### SOURCE_CAPABILITY `cap-obj-u27-passive`
 
@@ -15400,10 +18739,10 @@ permitsAppUse=true
 - `u27-st-teach-present-passive-1` EXAMPLE `ex-u27-present-passive-0`
 - `u27-st-teach-present-passive-1` EXAMPLE `ex-u27-present-passive-1`
 - `u27-st-teach-present-passive-1` REFERENCE `ref-u2630-attribution`
+- `u27-st-teach-present-passive-2` REFERENCE `ref-u2630-attribution`
 - `u27-st-guided-present-passive-1` REMEDIATION `u27-st-rem-present-passive`
 - `u27-st-guided-present-passive-1` ITEM `u27-g-present-passive-0`
 - `u27-st-guided-present-passive-1` ITEM `u27-g-stress-1`
-- `u27-st-teach-present-passive-2` REFERENCE `ref-u2630-attribution`
 - `u27-st-rem-present-passive` EXAMPLE `ex-u27-present-passive-0`
 - `u27-st-rem-present-passive` EXAMPLE `ex-u27-present-passive-1`
 - `u27-st-rem-present-passive` REFERENCE `ref-ca-participles`
@@ -15417,10 +18756,12 @@ permitsAppUse=true
 - `u27-comp-teach-1` EXAMPLE `ex-u27-comp-1`
 - `u27-comp-teach-1` EXAMPLE `ex-u27-comp-2`
 - `u27-comp-teach-1` REFERENCE `ref-u2630-attribution`
+- `u27-comp-teach-2` REFERENCE `ref-u2630-attribution`
 - `u27-comp-guided` REMEDIATION `u27-comp-remediate`
 - `u27-comp-guided` ITEM `u27-g-comp-1`
 - `u27-comp-guided` REFERENCE `ref-u2630-attribution`
-- `u27-comp-teach-2` REFERENCE `ref-u2630-attribution`
+- `u27-comp-remediate` EXAMPLE `ex-u27-comp-1`
+- `u27-comp-remediate` EXAMPLE `ex-u27-comp-2`
 - `u27-comp-remediate` REFERENCE `ref-u2630-attribution`
 - `u27-comp-remediate` REFERENCE `ref-ca-participles`
 - `u27-comp-check` REMEDIATION `u27-comp-remediate`
@@ -15589,6 +18930,79 @@ permitsAppUse=true
 - `obj-u27-stress` PROVENANCE `prov-ca-u27-past-stress-7`
 - `obj-u27-stress` PROVENANCE `prov-ca-u27-past-stress-8`
 - `obj-u27-stress` PROVENANCE `prov-ca-u27-past-stress-9`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-comprehension-host-0`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-comprehension-host-1`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-comprehension-host-10`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-comprehension-host-11`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-comprehension-host-12`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-comprehension-host-13`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-comprehension-host-14`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-comprehension-host-15`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-comprehension-host-16`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-comprehension-host-17`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-comprehension-host-18`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-comprehension-host-19`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-comprehension-host-2`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-comprehension-host-20`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-comprehension-host-21`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-comprehension-host-22`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-comprehension-host-23`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-comprehension-host-24`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-comprehension-host-25`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-comprehension-host-26`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-comprehension-host-27`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-comprehension-host-28`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-comprehension-host-3`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-comprehension-host-4`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-comprehension-host-5`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-comprehension-host-6`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-comprehension-host-7`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-comprehension-host-8`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-comprehension-host-9`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-obj-u27-comprehension-lesson-0`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-obj-u27-comprehension-lesson-1`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-obj-u27-comprehension-lesson-2`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-obj-u27-comprehension-lesson-3`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-obj-u27-comprehension-lesson-4`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-obj-u27-comprehension-lesson-5`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-obj-u27-comprehension-lesson-6`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-obj-u27-comprehension-lesson-7`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-obj-u27-comprehension-lesson-8`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-obj-u27-comprehension-lesson-9`
+- `obj-u27-present-passive` PROVENANCE `prov-ca-u27-remaining-obj-u27-present-passive-lesson-0`
+- `obj-u27-present-passive` PROVENANCE `prov-ca-u27-remaining-obj-u27-present-passive-lesson-1`
+- `obj-u27-present-passive` PROVENANCE `prov-ca-u27-remaining-obj-u27-present-passive-lesson-2`
+- `obj-u27-present-passive` PROVENANCE `prov-ca-u27-remaining-obj-u27-present-passive-lesson-3`
+- `obj-u27-present-passive` PROVENANCE `prov-ca-u27-remaining-obj-u27-present-passive-lesson-4`
+- `obj-u27-present-passive` PROVENANCE `prov-ca-u27-remaining-obj-u27-present-passive-lesson-5`
+- `obj-u27-present-passive` PROVENANCE `prov-ca-u27-remaining-obj-u27-present-passive-lesson-6`
+- `obj-u27-present-passive` PROVENANCE `prov-ca-u27-remaining-obj-u27-present-passive-lesson-7`
+- `obj-u27-present-passive` PROVENANCE `prov-ca-u27-remaining-obj-u27-present-passive-lesson-8`
+- `obj-u27-present-passive` PROVENANCE `prov-ca-u27-remaining-obj-u27-present-passive-lesson-9`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-u27-g-comp-1-text-0`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-u27-g-comp-1-text-1`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-u27-g-comp-1-text-2`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-u27-g-comp-1-text-3`
+- `obj-u27-present-passive` PROVENANCE `prov-ca-u27-remaining-u27-g-present-passive-0-text-0`
+- `obj-u27-present-passive` PROVENANCE `prov-ca-u27-remaining-u27-g-present-passive-0-text-1`
+- `obj-u27-present-passive` PROVENANCE `prov-ca-u27-remaining-u27-g-present-passive-0-text-2`
+- `obj-u27-present-passive` PROVENANCE `prov-ca-u27-remaining-u27-g-present-passive-0-text-3`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-u27-i-comp-1-text-0`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-u27-i-comp-1-text-1`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-u27-i-comp-1-text-2`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-u27-i-comp-1-text-3`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-u27-i-comp-2-text-0`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-u27-i-comp-2-text-1`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-u27-i-comp-2-text-2`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-u27-i-comp-2-text-3`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-u27-i-comp-3-text-0`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-u27-i-comp-3-text-1`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-u27-i-comp-3-text-2`
+- `obj-u27-comprehension` PROVENANCE `prov-ca-u27-remaining-u27-i-comp-3-text-3`
+- `obj-u27-present-passive` PROVENANCE `prov-ca-u27-remaining-u27-i-present-passive-1-text-1`
+- `obj-u27-present-passive` PROVENANCE `prov-ca-u27-remaining-u27-i-present-passive-1-text-2`
+- `obj-u27-present-passive` PROVENANCE `prov-ca-u27-remaining-u27-i-present-passive-1-text-3`
+- `obj-u27-present-passive` PROVENANCE `prov-ca-u27-remaining-u27-i-present-passive-2-text-1`
 - `obj-u27-passive` PROVENANCE `prov-ex-u27-passive-0-en`
 - `obj-u27-passive` PROVENANCE `prov-ex-u27-passive-0-ru`
 - `obj-u27-passive` PROVENANCE `prov-ex-u27-passive-1-en`
@@ -15724,7 +19138,7 @@ Guidance objectives stay unsupported until an admitted frozen capability exists:
 
 ## Optional non-gating register
 
-- `obj-u27-present-passive` Optional present passive lines
+- `obj-u27-present-passive` Optional: distinguish a present passive form from its supporting verb forms
 - `obj-u27-stress-reference` Stressed participle headwords stay reference
 
 ## Unavailable experiences
