@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.LabCueCorrectionTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-12T22:40:11.704Z" hostname="d0fbcd1608d3" time="79.266">
+  <properties/>
+  <testcase name="vocabularyShowsTheGovernedWordCue" classname="dev.russiancompanion.v2.LabCueCorrectionTest" time="58.392"/>
+  <testcase name="readingShowsTheGovernedStressCue" classname="dev.russiancompanion.v2.LabCueCorrectionTest" time="8.77"/>
+  <testcase name="unsupportedCompletionIsVisibleAsHistoryWithoutCurrentCredit" classname="dev.russiancompanion.v2.LabCueCorrectionTest" time="4.0"/>
+  <testcase name="grammarShowsTheCompleteSentenceCue" classname="dev.russiancompanion.v2.LabCueCorrectionTest" time="3.173"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

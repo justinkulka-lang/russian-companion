@@ -137,7 +137,7 @@
   "physicalDeviceAcceptance": "OUTSTANDING",
   "release": "NOT_APPROVED",
   "latestValidatorImplementationCommit": "1ab25bc6813963cbb3f41da92f2c4ffe8383a1ae",
-  "latestSourceBindingCheckpoint": "18091c5931c735e62cffc2b7c9d9b035f283748a",
+  "latestSourceBindingCheckpoint": "e741604e6d85bcbbbb26f127e72b24f14141b71b",
   "remainingSourceReviewPointers": [
     "IA007_SOURCE_REVIEW_PENDING.md",
     "IA008_SOURCE_REVIEW_PENDING.md"
