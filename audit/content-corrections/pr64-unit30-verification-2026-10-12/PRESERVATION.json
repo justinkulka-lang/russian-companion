@@ -1,0 +1,9 @@
+{
+  "baseline": "dce9b28a6259e12eea33a5258859cd530775db10",
+  "oldProvenancePreserved": 5613,
+  "newPendingRecords": 76,
+  "otherUnitsIdentical": 29,
+  "allAssessmentsExamplesSourcesCapabilitiesMappingsUnchanged": true,
+  "deterministicReplay": true,
+  "byteIdempotent": true
+}
