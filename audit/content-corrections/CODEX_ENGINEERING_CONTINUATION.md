@@ -60,3 +60,7 @@ Read `../independent-gpt61-2026-10-12/RESULTS_RECONCILIATION.md` and its origina
 ## Current diagnostic correction continuation
 
 IA001/IA002/IA006/IA007/IA008/IA017/IA018 now have engineering corrections pending independent verification; IA015 is partial. Use CURRENT_FINDING_STATUS.json and the latest checkpoint, rather than restarting the initial priority list. The next bounded work is `../independent-gpt61-2026-10-12/IA009_FEEDBACK_REMEDIATION_PENDING.md`:121 remaining literal “Does” feedback rows and missing optional-lab teaching/remediation links. This inventory does not supply semantic acceptance or a full-suite pass. Continue with one agent, current source/rights/provenance preservation and review-pending synthesis; keep physical-device acceptance and release approval outstanding.
+
+## User-directed final acceptance order — 2026-10-12
+
+Finish the final independent comprehensive audit before physical-device acceptance. Physical-device acceptance is last, with actual Galaxy S26 Ultra airplane-mode/reboot evidence bound to the tested artifact. Keep this acceptance outstanding; do not request it prematurely during engineering corrections. Preserve the governing named audit/verification stages and all existing acceptance requirements. This ordering does not authorize merge, freeze, signing or release approval.
