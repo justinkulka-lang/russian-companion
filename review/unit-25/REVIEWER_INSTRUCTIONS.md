@@ -7,7 +7,7 @@ Unit content-review digest: 317881a1a5a77489ce03b939b567642725274c10c534e14be680
 Mapping-package digest: 239e966c5d5b4f00ea70616e8ec949d583bb9406407438ab7f04df9fc363bf31
 Pack content-review digest: 7fec0b001b0ba946f54f873264e9e4d39a6e582334b5cafe7b689e40797e3f6b
 Review-package digest: d09669e2175455dba996fed8df9d84a04651b3d09477a7834dd765a9b31fae59
-Repository source digest: 812af42f767414264ea2ab6d673bd7b653c4b1c0c2807e614cc2150179022444
+Repository source digest: 7e5628d06ace81b382bfbcb094c64a01e2f9c0d03326a30112a29b27ff7c1d40
 
 This packet was generated from the packaged curriculum at curriculum source commit 4f5cb8024d3f68a37052fdf85b5755bffa2a0904. That commit contains this unit's reviewed records. A later commit that changes only other units does not change this digest. This packet commit records that identity and does not perform review.
 

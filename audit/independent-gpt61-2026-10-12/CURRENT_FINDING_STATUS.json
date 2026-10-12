@@ -106,7 +106,7 @@
       "findingId": "IA015",
       "producerSeverity": "HIGH",
       "producerStatus": "NEEDS_EVIDENCE",
-      "engineeringDisposition": "PARTIAL_READING_PATH_FIX_OTHER_CORPORA_OPEN",
+      "engineeringDisposition": "PARTIAL_READING_AND_DICTIONARY_FIX_NAME_FORGERY_REJECTED_OTHER_CORPORA_OPEN",
       "formalAcceptance": false
     },
     {
@@ -134,5 +134,6 @@
   "originalDeliverablesUnchanged": true,
   "semanticAcceptancePromoted": false,
   "physicalDeviceAcceptance": "OUTSTANDING",
-  "release": "NOT_APPROVED"
+  "release": "NOT_APPROVED",
+  "latestValidatorImplementationCommit": "2912ef51c1d38ba4aafea28fe86d24ad891a9058"
 }
