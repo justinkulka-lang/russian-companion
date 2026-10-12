@@ -135,5 +135,10 @@
   "semanticAcceptancePromoted": false,
   "physicalDeviceAcceptance": "OUTSTANDING",
   "release": "NOT_APPROVED",
-  "latestValidatorImplementationCommit": "2912ef51c1d38ba4aafea28fe86d24ad891a9058"
+  "latestValidatorImplementationCommit": "2912ef51c1d38ba4aafea28fe86d24ad891a9058",
+  "latestSourceBindingCheckpoint": "44c5bda241e430deb5969738f947be6cf880da11",
+  "remainingSourceReviewPointers": [
+    "IA007_SOURCE_REVIEW_PENDING.md",
+    "IA008_SOURCE_REVIEW_PENDING.md"
+  ]
 }
