@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit28InstructionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-12T20:45:47.563Z" hostname="03aee042dd55" time="2.604">
+  <properties/>
+  <testcase name="mutableMetadataCannotDropTheMainClauseFromAContextualCue" classname="dev.russiancompanion.v2.Unit28InstructionTest" time="2.563"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -5,10 +5,19 @@ import org.junit.Test
 import java.io.File
 class FullSynthesisTupleCorrectionTest {
     @Test fun fullValidatorRejectsSwappedReadingAnswersEvenWhenAllMutableApplicationsAgree() {
+        rejectsMutableTupleRebinding("u29-i-reading-1", "u29-i-reading-3")
+    }
+    @Test fun fullValidatorRejectsSwappedNameAnswersEvenWhenAllMutableApplicationsAgree() {
+        rejectsMutableTupleRebinding("u25-i-name-form-1", "u25-i-name-form-2", "conflicting governed descriptions")
+    }
+    @Test fun fullValidatorRejectsSwappedDictionaryAnswersEvenWhenAllMutableApplicationsAgree() {
+        rejectsMutableTupleRebinding("u30-i-dictionary-1", "u30-i-dictionary-2")
+    }
+    private fun rejectsMutableTupleRebinding(firstId:String,lastId:String, expectedGuard:String="application tuple") {
         val p=pack()
         assertTrue(V2Validator.validate(p).ok)
-        val first=p.item("u29-i-reading-1")!!
-        val last=p.item("u29-i-reading-3")!!
+        val first=p.item(firstId)!!
+        val last=p.item(lastId)!!
         val cap=p.sourceCapabilities.single { it.objectiveId==first.objectiveId }
         val forgedItems=p.items.map { item ->
             val donor=when(item.id) { first.id->last;last.id->first;else->null }
@@ -35,8 +44,8 @@ class FullSynthesisTupleCorrectionTest {
         assertEquals(cap,forged.sourceCapabilities.single { it.id==cap.id })
         assertTrue(records.zip(p.provenanceRecords).all { (a,b)->a.originalSourceText==b.originalSourceText && a.sourceHash==b.sourceHash && a.shippedText==b.shippedText && a.contentHash==b.contentHash })
         val result=V2Validator.validate(forged)
-        assertTrue("The frozen reading tuples must be the reason for rejection",result.errors.any { it.contains("application tuple") })
-        assertFalse("The before-leaving cue must not be keyed as sending, or the sending cue as finishing: ${result.errors}",result.ok)
+        assertFalse("Keys for $firstId and $lastId must stay bound to their frozen cues: ${result.errors}",result.ok)
+        assertTrue("The frozen application tuples must be the reason for rejection: ${result.errors}",result.errors.any { it.contains(expectedGuard) })
     }
     private fun pack()=V2PackLoader.parse(File(if(File("app").isDirectory) "." else "..","app/src/main/assets/content/v2-curriculum.json").readText())
 }

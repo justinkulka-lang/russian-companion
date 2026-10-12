@@ -6,10 +6,16 @@ import java.security.MessageDigest
 internal object OriginalApplicationTuplePins {
     private const val READING_APPLICATIONS = "065d267c4a94d93576e4152ea262cda300ab0b862fe078a977e1b81ae2d582ab"
 
+    private const val DICTIONARY_APPLICATIONS = "94c3b6da1505f6c48d832fd39d2b477b5f9e0175991db7e1e3c73f4a6043aa29"
+
     /** Other synthesis paths retain their existing checks pending separate negative regressions. */
     fun matchesIfPinned(record: V2ProvenanceRecord): Boolean {
-        if (record.sourceRecordId != Phase3Sources.READING.recordId) return true
-        if (record.sourceHash != Phase3Sources.READING.sourceHash) return false
+        val (sourceHash, tupleHash) = when(record.sourceRecordId) {
+            Phase3Sources.READING.recordId -> Phase3Sources.READING.sourceHash to READING_APPLICATIONS
+            Phase3Sources.DICTIONARY.recordId -> Phase3Sources.DICTIONARY.sourceHash to DICTIONARY_APPLICATIONS
+            else -> return true
+        }
+        if (record.sourceHash != sourceHash) return false
         val applications = record.synthesis?.applications ?: return false
         val canonical = buildString {
             append("tuple-v1:").append(applications.size).append(';')
@@ -25,6 +31,6 @@ internal object OriginalApplicationTuplePins {
         }
         val hash = MessageDigest.getInstance("SHA-256").digest(canonical.toByteArray(Charsets.UTF_8))
             .joinToString("") { "%02x".format(it.toInt() and 255) }
-        return hash == READING_APPLICATIONS
+        return hash == tupleHash
     }
 }
