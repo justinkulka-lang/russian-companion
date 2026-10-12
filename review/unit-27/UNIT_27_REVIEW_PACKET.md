@@ -11,12 +11,12 @@ Unit 27 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 0136eb4000641f6b1edd020ed9caa29f59cdc35c
-- Unit content-review SHA-256: 538761e9f566746de6fb4195dfd99039b072e51df18a1cc195444c3282a46e8d
+- Curriculum source commit: 4f5cb8024d3f68a37052fdf85b5755bffa2a0904
+- Unit content-review SHA-256: fb8a23246226a841df660cae2517b139cba2ff51ef5939792268d2c6cb50bc2e
 - Mapping-package SHA-256: 3924f3a8ac211579b4db3e387cb48632d27e9b41925e227b63b004bf652a3bc0
-- Pack content-review SHA-256: ec1debe60310f19952a7d4bf676fe18ff6e25b1dfb848c60761d7cd9d40d7ff1
-- Review-package SHA-256: 534120cb2cfed8248440dd01e6bd0bee7ad997cb64407bc0d29fa6515ab931fa
-- Repository source SHA-256: 9bf60851690b6f1c880a25f39c0afece1b5bf87130b45e9a2fc3411c69191467
+- Pack content-review SHA-256: 7fec0b001b0ba946f54f873264e9e4d39a6e582334b5cafe7b689e40797e3f6b
+- Review-package SHA-256: e1607fe23cb8f2e8bbc35c9a76a49b3895992b109075052c61b8daeab4e0e941
+- Repository source SHA-256: 812af42f767414264ea2ab6d673bd7b653c4b1c0c2807e614cc2150179022444
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -1833,11 +1833,11 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: LICENSE_OR_ATTRIBUTION
 - Current review status: NOT_REQUIRED
-- Content hash: 0843644ad1935615164d6a1d8b3aa98ada4d8087965ca2e2551f83c51705a88a
+- Content hash: 8594c0cc104d2b60ff08b9ff124f4baa6460d18945c638ecf295ff5c831ff956
 
 title=Units 26–30 source notice
 summary=Proposed Units 26–30 adapt admitted CC BY-SA 4.0 spans. Unsupported topics stay in the copy you own. Bounded postal, stress, and dictionary tasks are review-pending.
-detail=Wikipedia article text is frozen by oldid under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. The Wikibooks address note is frozen by oldid under the separate CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The packaged CC BY-SA 4.0 legal code is cc-by-sa-4.0.txt. The adapted selection and arrangement are share-alike. Application code, user data, user recordings, and separately licensed audio are outside that statement. No audio is included. Linked media, Phonos, and pronunciation files are not admitted. Anecdotal postal advice is not shipped. Russian Wikipedia morphology oldid 148939075 is admitted only for the abbreviation declension contrast and the command-versus-supposition particle contrast, under the Russian Wikipedia copyrights oldid 154562152. Russian Wikipedia indefinite-pronoun page oldid 149963314 is admitted for the series meanings under that same Russian Wikipedia copyrights route. Russian Wikipedia participle page oldid 153078996 is admitted for the participial-phrase punctuation rule, including its exceptions, under that same route. Complete postal practice, participle stress, a general bookish-register claim, and dictionary use are not prepared. ReadyRussian letter conventions cover structure, the Russian and English organizational difference, and the stranger address limit. The abbreviation contrast and the particle contrast do not activate an authority variance. Review is pending. Bounded postal practice, past-passive stress, and a two-entry dictionary task are implemented and review-pending. They are not complete postal mastery, a general stress rule, or broad dictionary proficiency. Present-passive exploration does not gate Unit 27.
+detail=Wikipedia article text is frozen by oldid under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. The Wikibooks address note is frozen by oldid under the separate CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The packaged CC BY-SA 4.0 legal code is cc-by-sa-4.0.txt. The adapted selection and arrangement are share-alike. Application code, user data, user recordings, and separately licensed audio are outside that statement. No audio is included. Linked media, Phonos, and pronunciation files are not admitted. Anecdotal postal advice is not shipped. Russian Wikipedia morphology oldid 148939075 is admitted only for the abbreviation declension contrast and the command-versus-supposition particle contrast, under the Russian Wikipedia copyrights oldid 154562152. Russian Wikipedia indefinite-pronoun page oldid 149963314 is admitted for the series meanings under that same Russian Wikipedia copyrights route. Russian Wikipedia participle page oldid 153078996 is admitted for the participial-phrase punctuation rule, including its exceptions, under that same route. Complete postal mastery, general participle-stress rules, universal register judgments, and broad dictionary proficiency are not supplied by these bounded tasks. ReadyRussian letter conventions cover structure, the Russian and English organizational difference, and the stranger address limit. The abbreviation contrast and the particle contrast do not activate an authority variance. Review is pending. Bounded postal practice, past-passive stress, and a two-entry dictionary task are implemented and review-pending. They are not complete postal mastery, a general stress rule, or broad dictionary proficiency. Present-passive exploration does not gate Unit 27.
 classification=LICENSE_OR_ATTRIBUTION
 introducedInUnit=26
 searchTerms=units 26-30 source notice,cc by-sa
