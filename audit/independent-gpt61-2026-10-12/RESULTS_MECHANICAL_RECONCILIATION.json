@@ -1,0 +1,21 @@
+{
+  "rawCurriculumSha256": "36d6c4b8fc55e0f8ca1d002536a0466006bd908befd57d609c609539ee42210e",
+  "allCapabilitySpanHashesMatch": true,
+  "inspected21CapabilityFieldsMatch": true,
+  "capabilityObjectsAvailable": 58,
+  "dueReviewUnits": [
+    2
+  ],
+  "sourceQuestionCueEqualsAnswer": [
+    "u5-i-q-kto",
+    "u5-i-q-chto",
+    "u5-i-q-kogda",
+    "u5-i-q-pochemu",
+    "u5-i-q-kak",
+    "u5-i-q-gde"
+  ],
+  "feedbackStartsDoesCount": 135,
+  "reportedGuidedIndependentDuplicateGroupsReproduced": 11,
+  "inspection": "Receipt/raw-content predicates only; semantic interpretation, runtime and full forgery/restore/export regressions not certified",
+  "newTestExecution": false
+}

@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "receivedDate": "2026-10-12",
+  "origin": "User-uploaded Sediment attachment file_00000000eb0881f9be8da28501aaf15e",
+  "originalFilename": "GPT61_INDEPENDENT_AUDIT_RESULTS.zip",
+  "originalZipSha256": "ae6607d2ef6189187476613ea675fbf50784e1d28eb15bfcb34c8408dff12ca9",
+  "originalZipBytes": 77367,
+  "crc": "PASS",
+  "originalMembersPreservedByteForByte": true,
+  "files": [
+    {
+      "path": "received-results/AUDIT_SCOPE_AND_EVIDENCE.json",
+      "bytes": 64713,
+      "sha256": "ede9d04c1df26f2612f0210dfe0916a17dbe687ac9612f6858ee9c5025f20563"
+    },
+    {
+      "path": "received-results/CODEX_RETURN_HANDOFF.md",
+      "bytes": 6635,
+      "sha256": "a52afc6e6db45b10bceaca78034ba5697328e8b534f225de90fbb9c7b0b29fd0"
+    },
+    {
+      "path": "received-results/FINDINGS.csv",
+      "bytes": 20729,
+      "sha256": "f8e6a593545a24f5f02702d59ac7d63ef3b7f796ec71dc0a06063fa491d21ace"
+    },
+    {
+      "path": "received-results/INDEPENDENT_AUDIT_REPORT.md",
+      "bytes": 31981,
+      "sha256": "fd9ad913e312e1f6b332cd5a21ab90a783a809c8443f11c486c99ab9f0b4ad40"
+    },
+    {
+      "path": "received-results/ITEM_ASSESSMENT_AUDIT.csv",
+      "bytes": 372802,
+      "sha256": "2637ecf4f205610710dfa42ff9878ba592f0284a2f3fd46fbd6d297d32c37ddd"
+    },
+    {
+      "path": "received-results/REQUIREMENTS_MATRIX.csv",
+      "bytes": 81719,
+      "sha256": "3f0770ad922a99da67ea533b7e799a0a3951f91abaf528d70b0a9b1a1db52c1e"
+    },
+    {
+      "path": "received-results/SOURCE_AND_BINDING_REVIEW.json",
+      "bytes": 32046,
+      "sha256": "59d00b0b7163c741adff98ea884bc10972eabe258d4ebdc18d8e7aa22a6c3ad0"
+    },
+    {
+      "path": "received-results/TARGET_75_DISPOSITIONS.csv",
+      "bytes": 32672,
+      "sha256": "76fa43dd958a3e9b6459601b0bd22c113b4b1b376af6cc8f6d772e18ef8a126d"
+    },
+    {
+      "path": "received-results/UNIT_COVERAGE.csv",
+      "bytes": 27754,
+      "sha256": "794828fc9d6de4c5c5cc85df40630ba0bd4b136d98b107b795887999a04440bd"
+    }
+  ],
+  "auditTarget": "ebd71fd0d1226a5ce3ec9a310bb3638c3bc34fb9",
+  "instructionsCommit": "80731e6f17d7ee8b72bd4a25593e0ffc3f0418f0",
+  "producerModelIdentity": "UNVERIFIED; user-selected/requested label GPT-6.1",
+  "producerDisposition": "DIAGNOSTIC_ONLY",
+  "producerOutcome": "INCOMPLETE_DIAGNOSTIC_WITH_FINDINGS",
+  "findings": {
+    "total": 18,
+    "bySeverity": {
+      "HIGH": 11,
+      "MEDIUM": 7
+    },
+    "needsEvidence": [
+      "IA015",
+      "IA018"
+    ]
+  },
+  "receiptChecks": {
+    "auditedCommit": "ebd71fd0d1226a5ce3ec9a310bb3638c3bc34fb9",
+    "rawCurriculumSha256": "36d6c4b8fc55e0f8ca1d002536a0466006bd908befd57d609c609539ee42210e",
+    "retrievedFilesMatched": 185,
+    "retrievedFileMismatches": [],
+    "assessmentIdsReconciled": 586,
+    "retainedTargetIdsPreserved": 75,
+    "currentCapabilityObjectsAvailable": 58,
+    "receiptChecksAreNotSemanticAcceptance": true
+  },
+  "diagnosticTargetDispositionCounts": {
+    "RESOLVED_DIAGNOSTIC": 72,
+    "NOT_VERIFIED": 1,
+    "UNRESOLVED": 2
+  },
+  "semanticAcceptanceChanged": false,
+  "formalStageRecorded": false,
+  "privatePdfIncluded": false,
+  "appImplementationModified": false,
+  "newAndroidTestExecution": false
+}
