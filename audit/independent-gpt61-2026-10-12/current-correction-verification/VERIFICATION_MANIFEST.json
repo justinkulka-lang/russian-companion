@@ -1,0 +1,301 @@
+{
+  "verifiedRepositoryCommit": "49af91a0f5578c63a3b9b98bbe975f40d2758fcc",
+  "implementationAncestor": "4f5cb8024d3f68a37052fdf85b5755bffa2a0904",
+  "command": "source /workspace/setup/android-env.sh; ./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*CompletionEvidenceCorrectionTest' --tests '*LabCueCorrectionTest' --tests '*PracticeRetrievalDigestTest' --tests '*BackupSnapshotCorrectionTest' --tests '*FullSynthesisTupleCorrectionTest' --tests '*QuestionWordCueCorrectionTest' --tests '*ReferenceNoticeCorrectionTest' --tests '*RuntimeCorrectionTest.failedAdvancementLeavesTheReviewInPlace' --tests '*V2RebuildTest.unitsThreeToFiveStayDevelopmentAndLaterUnitsStayClosed' --tests '*V2RebuildTest.unitOneProgressesInOrderAndRestoresAfterRestart' --tests '*V2RebuildTest.unitTwoRequiresUnitOneAndCannotUseUnrelatedCatalogAudio' --tests '*BackupLicenseTest.backupRoundTripRestoresGovernedRecordsWithoutChangingTheLiveCopy' --tests '*BackupLicenseTest.cancelledBackupAndDeclinedRestoreLeaveLiveDataUnchanged' --tests '*BackupLicenseTest.recordingBytesRoundTripAndBackupDoesNotClaimAFailedWrite' --tests '*Unit27RemainingInstructionTest.mutableApplicationMetadataCannotRebindTheAlreadyReadCheckToTheWritingCue' --tests '*Unit28InstructionTest.mutableMetadataCannotDropTheMainClauseFromAContextualCue' --tests '*UnitReviewPipelineTest.committedUnitPackagesMatchTheGenerator' --tests '*CurriculumReadinessReconciliationTest.committedReportsMatchTheGeneratorAndStayByteIdentical' --tests '*OwnerGovernanceDecisionTest.preparationManifestBindsFactsAndDoesNotPassAFinalAudit' --tests '*GapClosureDossierTest.dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease' --tests '*ReleaseSourceDigestTest.committedCandidateRecordsTheCurrentSourceDigestAndIdentity' --tests '*BatchECapabilityResearchTest.digestsGovernanceAndLaterUnitsStayUnchanged' --tests '*Units610SourceIntakeTest.earlierUnitDigestsStayPutAndLaterUnitsStayIsolated' compileDebugSources lintDebug verifyReleaseGateAttachment --max-workers=4 --console=plain",
+  "workingDirectory": "/workspace/russian-companion",
+  "exitCode": 0,
+  "scope": "FOCUSED_NOT_COMPLETE_SUITE",
+  "classes": [
+    {
+      "className": "dev.russiancompanion.release.ReleaseSourceDigestTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "committedCandidateRecordsTheCurrentSourceDigestAndIdentity"
+      ],
+      "sha256": "1a920d46981fc38ddd2e697580c02b0bf20e82f0f66b8a266272e652914e8292",
+      "timestamp": "2026-10-12T20:34:42.107Z"
+    },
+    {
+      "className": "dev.russiancompanion.v2.BackupLicenseTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "backupRoundTripRestoresGovernedRecordsWithoutChangingTheLiveCopy",
+        "recordingBytesRoundTripAndBackupDoesNotClaimAFailedWrite",
+        "cancelledBackupAndDeclinedRestoreLeaveLiveDataUnchanged"
+      ],
+      "sha256": "c887c87fdb88afe28df0b064cf074fb4bb3099441db6e8b5b7cb87f7bd3b1fe8",
+      "timestamp": "2026-10-12T20:35:05.137Z"
+    },
+    {
+      "className": "dev.russiancompanion.v2.BackupSnapshotCorrectionTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "concurrentLearnerWritesCannotBeClaimedAsPartOfTheWrittenArchive"
+      ],
+      "sha256": "8ebc3233639f290b54b738ce18a89b829816c6c3d8f0faf8d92f7c91bf66deb0",
+      "timestamp": "2026-10-12T20:34:42.401Z"
+    },
+    {
+      "className": "dev.russiancompanion.v2.BatchECapabilityResearchTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "digestsGovernanceAndLaterUnitsStayUnchanged"
+      ],
+      "sha256": "fc1034d68702909d7ac1ab9a39b403d87fdd376a061d501a4b94e7d204859bdd",
+      "timestamp": "2026-10-12T20:34:56.681Z"
+    },
+    {
+      "className": "dev.russiancompanion.v2.CompletionEvidenceCorrectionTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "hashCorrectRestoredUnsupportedCompletionIsHistoricalAndCannotUnlock",
+        "unboundLegacyViewCannotTurnClaimedCompletionIntoCurrentEvidence",
+        "changedEvidenceIsRecomputedAndLaterPlacementDoesNotUnlockFutureUnits",
+        "changedContentCannotKeepAnOldCompletionOrUnlockItsSuccessor"
+      ],
+      "sha256": "e746fb0ecb556b0ee3fb0424eee2b7c01b31b523c75f8b8a31612aaceb798890",
+      "timestamp": "2026-10-12T20:34:42.340Z"
+    },
+    {
+      "className": "dev.russiancompanion.v2.FullSynthesisTupleCorrectionTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "fullValidatorRejectsSwappedReadingAnswersEvenWhenAllMutableApplicationsAgree"
+      ],
+      "sha256": "15c49648591995600f80227bbe2c27c8a394d51cf0b3fdea34c7db2a186a1319",
+      "timestamp": "2026-10-12T20:35:38.228Z"
+    },
+    {
+      "className": "dev.russiancompanion.v2.LabCueCorrectionTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "vocabularyShowsTheGovernedWordCue",
+        "readingShowsTheGovernedStressCue",
+        "unsupportedCompletionIsVisibleAsHistoryWithoutCurrentCredit",
+        "grammarShowsTheCompleteSentenceCue"
+      ],
+      "sha256": "5093ae98748449eafe9c244a6971b1f9f2d9754649efbccb7b846702aebb0df9",
+      "timestamp": "2026-10-12T20:34:41.426Z"
+    },
+    {
+      "className": "dev.russiancompanion.v2.PracticeRetrievalDigestTest",
+      "tests": 18,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "mismatchedDigestAttemptLeavesContinueDisabledAndCreatesNoCompletedStep",
+        "prescribedCheckScoresRemediationAndCompletesOnce",
+        "unansweredPracticeAndBlockedLabsDoNotRecordCompletion",
+        "unverifiedAttemptsStayExcludedAfterReload",
+        "checkStepDoesNotCompleteUntilItIsAnswered",
+        "governedAnswerEnablesContinueAfterAFreshLoadAndSurvivesRefresh",
+        "alphabetPracticeScoresFeedbackWithoutPrescribedCreditOrDuplicateRows",
+        "legacyAttemptLeavesContinueDisabledAndCreatesNoCompletedStep",
+        "readingVocabularyGrammarAndMixedStayOptionalAndPrerequisiteFiltered",
+        "savedWorkResumesABookmarkWithoutANewAttemptAndHidesCompletedChecks",
+        "twoGovernedAnswersOnOneStepBothRemainAfterTheSecondWrite",
+        "mismatchedResumeDigestStaysClosed",
+        "emptyAndUnverifiedSavedPositionsStayClosed",
+        "practiceAndSavedWorkStayReachableAtLargeFontInLandscape",
+        "otherStepAttemptLeavesContinueDisabledAndCreatesNoCompletedStep",
+        "legacyAndMismatchedAttemptsDoNotGrantCreditAndBackupKeepsTheOriginalDigest",
+        "optionalPracticeAcceptsALaterAnswerAndSuppressesTheSameSelection",
+        "migrationMarksExistingAttemptIdentityUnrecoverable"
+      ],
+      "sha256": "9e1da4d59ab83e7a3a841b77f742feed298cd4bd3933d18fea595610bd7c6732",
+      "timestamp": "2026-10-12T20:35:17.913Z"
+    },
+    {
+      "className": "dev.russiancompanion.v2.QuestionWordCueCorrectionTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "answerExposingHistoricalAttemptsAndStepCompletionDoNotSupplyCurrentCredit",
+        "displayRoleIsDigestBoundAndCannotBeUsedToHideARequiredCue",
+        "questionWordLessonAsksFromEnglishPurposeWithoutPrintingTheAnswerAsACue"
+      ],
+      "sha256": "020774a0330a84f34d645bc554b87bf091c5d3689622815c989bd85949227598",
+      "timestamp": "2026-10-12T20:35:59.715Z"
+    },
+    {
+      "className": "dev.russiancompanion.v2.ReferenceNoticeCorrectionTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "currentBoundedAvailabilityDoesNotContradictItsOwnSourceNotice"
+      ],
+      "sha256": "9f0b1b4f0d908f588a935ca48b81575a9e941abbe08c282671387192782f3a41",
+      "timestamp": "2026-10-12T20:35:30.436Z"
+    },
+    {
+      "className": "dev.russiancompanion.v2.RuntimeCorrectionTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "failedAdvancementLeavesTheReviewInPlace"
+      ],
+      "sha256": "bdd03d54caffb7d00644b4890d76c20965655ae0d6f005f4d71f0ec35078e1e8",
+      "timestamp": "2026-10-12T20:35:59.345Z"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit27RemainingInstructionTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "mutableApplicationMetadataCannotRebindTheAlreadyReadCheckToTheWritingCue"
+      ],
+      "sha256": "64e163edb2773c163fae38c5ca66c0757552e47efcb6f892bc20dc0d62d2e594",
+      "timestamp": "2026-10-12T20:36:51.064Z"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit28InstructionTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "mutableMetadataCannotDropTheMainClauseFromAContextualCue"
+      ],
+      "sha256": "1b08c3a45c8023b52e60b5a5434946b8d02b145bc90e9b967c349e142a821fb3",
+      "timestamp": "2026-10-12T20:36:16.421Z"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Units610SourceIntakeTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "earlierUnitDigestsStayPutAndLaterUnitsStayIsolated"
+      ],
+      "sha256": "724852fe2277fdcfd52837272c61014ff1f07a3d0c8266b584746f75e18b5734",
+      "timestamp": "2026-10-12T20:36:51.364Z"
+    },
+    {
+      "className": "dev.russiancompanion.v2.V2RebuildTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "unitsThreeToFiveStayDevelopmentAndLaterUnitsStayClosed",
+        "unitOneProgressesInOrderAndRestoresAfterRestart",
+        "unitTwoRequiresUnitOneAndCannotUseUnrelatedCatalogAudio"
+      ],
+      "sha256": "77ffd95aa6fddee3e89bd2ef2ffd5018f5a8ff59ac8b39a7759f86684b4701f2",
+      "timestamp": "2026-10-12T20:36:16.916Z"
+    },
+    {
+      "className": "dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "committedReportsMatchTheGeneratorAndStayByteIdentical"
+      ],
+      "sha256": "13d2319dba629e31480d9ebd27066b0d9c10aea2738ef54b5b7d9c847a83416b",
+      "timestamp": "2026-10-12T20:35:35.567Z"
+    },
+    {
+      "className": "dev.russiancompanion.v2.audit.GapClosureDossierTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease"
+      ],
+      "sha256": "50c0ea665b84b72f9cf3ab8ce77942a1b530325175a582c271ef501e3ff719f5",
+      "timestamp": "2026-10-12T20:36:04.372Z"
+    },
+    {
+      "className": "dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "preparationManifestBindsFactsAndDoesNotPassAFinalAudit"
+      ],
+      "sha256": "d158de5f8ea6fd0a647569fe91c189b5d49806488ed9334d558f7f442d9c7f37",
+      "timestamp": "2026-10-12T20:37:05.257Z"
+    },
+    {
+      "className": "dev.russiancompanion.v2.review.UnitReviewPipelineTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "committedUnitPackagesMatchTheGenerator"
+      ],
+      "sha256": "5ba076eb8a8ae7de58150e67ad7f5dc032e74079c2c549832a46c4a6980b99a8",
+      "timestamp": "2026-10-12T20:36:20.809Z"
+    }
+  ],
+  "totals": {
+    "tests": 48,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 48
+  },
+  "lint": {
+    "status": "PASSED",
+    "severities": {
+      "Warning": 20,
+      "Hint": 1
+    },
+    "sha256": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6"
+  },
+  "compilation": "compileDebugSources UP-TO-DATE; previously compiled current production/test sources reused",
+  "releaseGateAttachment": "EXECUTED_PASSED",
+  "excludedExporters": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  },
+  "apk": {
+    "status": "NOT_ASSEMBLED_OR_SIGNED",
+    "currentIdentity": "NOT_RECORDED",
+    "currentSignature": "NOT_RECORDED",
+    "historicalEvidence": "audit/content-corrections/cloud-environment-2026-10-12/MAIN_HISTORICAL_VERIFICATION.json",
+    "historicalArtifactIsCurrentCandidate": false
+  },
+  "historicalScope": "Main ff539220: 563 reported, 562 passed, one skipped, 16 exporters excluded. PR64 baseline 420f41ff has 691 source annotations (+112); its claimed execution is unverified. Current 48 selected tests do not prove complete-suite execution.",
+  "physicalDeviceAcceptance": "OUTSTANDING",
+  "semanticAcceptancePromoted": false,
+  "publicRelease": "NOT_APPROVED"
+}

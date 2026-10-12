@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "originalAuditTarget": "ebd71fd0d1226a5ce3ec9a310bb3638c3bc34fb9",
+  "implementationCommit": "4f5cb8024d3f68a37052fdf85b5755bffa2a0904",
+  "packetCheckpoint": "49af91a0f5578c63a3b9b98bbe975f40d2758fcc",
+  "findings": [
+    {
+      "findingId": "IA001",
+      "producerSeverity": "HIGH",
+      "producerStatus": "OPEN",
+      "engineeringDisposition": "ENGINEERING_FIX_PENDING_INDEPENDENT_VERIFICATION",
+      "formalAcceptance": false
+    },
+    {
+      "findingId": "IA002",
+      "producerSeverity": "HIGH",
+      "producerStatus": "OPEN",
+      "engineeringDisposition": "ENGINEERING_FIX_PENDING_INDEPENDENT_VERIFICATION",
+      "formalAcceptance": false
+    },
+    {
+      "findingId": "IA003",
+      "producerSeverity": "HIGH",
+      "producerStatus": "OPEN",
+      "engineeringDisposition": "OPEN",
+      "formalAcceptance": false
+    },
+    {
+      "findingId": "IA004",
+      "producerSeverity": "HIGH",
+      "producerStatus": "OPEN",
+      "engineeringDisposition": "OPEN",
+      "formalAcceptance": false
+    },
+    {
+      "findingId": "IA005",
+      "producerSeverity": "HIGH",
+      "producerStatus": "OPEN",
+      "engineeringDisposition": "OPEN",
+      "formalAcceptance": false
+    },
+    {
+      "findingId": "IA006",
+      "producerSeverity": "HIGH",
+      "producerStatus": "OPEN",
+      "engineeringDisposition": "ENGINEERING_FIX_PENDING_INDEPENDENT_VERIFICATION",
+      "formalAcceptance": false
+    },
+    {
+      "findingId": "IA007",
+      "producerSeverity": "MEDIUM",
+      "producerStatus": "OPEN",
+      "engineeringDisposition": "OPEN",
+      "formalAcceptance": false
+    },
+    {
+      "findingId": "IA008",
+      "producerSeverity": "MEDIUM",
+      "producerStatus": "OPEN",
+      "engineeringDisposition": "OPEN",
+      "formalAcceptance": false
+    },
+    {
+      "findingId": "IA009",
+      "producerSeverity": "MEDIUM",
+      "producerStatus": "OPEN",
+      "engineeringDisposition": "OPEN",
+      "formalAcceptance": false
+    },
+    {
+      "findingId": "IA010",
+      "producerSeverity": "MEDIUM",
+      "producerStatus": "OPEN",
+      "engineeringDisposition": "OPEN",
+      "formalAcceptance": false
+    },
+    {
+      "findingId": "IA011",
+      "producerSeverity": "HIGH",
+      "producerStatus": "OPEN",
+      "engineeringDisposition": "OPEN",
+      "formalAcceptance": false
+    },
+    {
+      "findingId": "IA012",
+      "producerSeverity": "HIGH",
+      "producerStatus": "OPEN",
+      "engineeringDisposition": "OPEN",
+      "formalAcceptance": false
+    },
+    {
+      "findingId": "IA013",
+      "producerSeverity": "HIGH",
+      "producerStatus": "OPEN",
+      "engineeringDisposition": "OPEN",
+      "formalAcceptance": false
+    },
+    {
+      "findingId": "IA014",
+      "producerSeverity": "HIGH",
+      "producerStatus": "OPEN",
+      "engineeringDisposition": "OPEN",
+      "formalAcceptance": false
+    },
+    {
+      "findingId": "IA015",
+      "producerSeverity": "HIGH",
+      "producerStatus": "NEEDS_EVIDENCE",
+      "engineeringDisposition": "PARTIAL_READING_PATH_FIX_OTHER_CORPORA_OPEN",
+      "formalAcceptance": false
+    },
+    {
+      "findingId": "IA016",
+      "producerSeverity": "MEDIUM",
+      "producerStatus": "OPEN",
+      "engineeringDisposition": "OPEN",
+      "formalAcceptance": false
+    },
+    {
+      "findingId": "IA017",
+      "producerSeverity": "MEDIUM",
+      "producerStatus": "OPEN",
+      "engineeringDisposition": "ENGINEERING_FIX_PENDING_INDEPENDENT_VERIFICATION",
+      "formalAcceptance": false
+    },
+    {
+      "findingId": "IA018",
+      "producerSeverity": "MEDIUM",
+      "producerStatus": "NEEDS_EVIDENCE",
+      "engineeringDisposition": "ENGINEERING_FIX_PENDING_INDEPENDENT_VERIFICATION",
+      "formalAcceptance": false
+    }
+  ],
+  "originalDeliverablesUnchanged": true,
+  "semanticAcceptancePromoted": false,
+  "physicalDeviceAcceptance": "OUTSTANDING",
+  "release": "NOT_APPROVED"
+}

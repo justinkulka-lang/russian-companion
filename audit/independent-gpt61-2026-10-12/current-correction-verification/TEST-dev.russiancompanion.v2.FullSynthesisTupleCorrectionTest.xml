@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.FullSynthesisTupleCorrectionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-12T20:35:38.228Z" hostname="03aee042dd55" time="21.007">
+  <properties/>
+  <testcase name="fullValidatorRejectsSwappedReadingAnswersEvenWhenAllMutableApplicationsAgree" classname="dev.russiancompanion.v2.FullSynthesisTupleCorrectionTest" time="20.996"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
