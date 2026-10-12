@@ -1,0 +1,33 @@
+{
+  "handoff": {
+    "filename": "Russian_Companion_Codex_Handoff_2026-10-12.zip",
+    "status": "NOT_AVAILABLE",
+    "sha256": null,
+    "completeResumePromptRead": false,
+    "originalAuditAndFourHistoricalCsvImport": "BLOCKED_PENDING_ARCHIVE_AND_DEDUPLICATION"
+  },
+  "privateReference": {
+    "filename": "Private_Penguin_Reference.pdf",
+    "status": "NOT_AVAILABLE",
+    "expectedSha256": null,
+    "expectedHashSource": "must be recovered from supplied handoff or independently supplied owner metadata",
+    "obtainAs": "separate private attachment each session",
+    "privateWorkingLocation": "/tmp/private-russian-companion/",
+    "mustNotEnter": [
+      "GitHub",
+      "app assets",
+      "APK",
+      "public logs",
+      "review packets",
+      "screenshots"
+    ]
+  },
+  "existingEvidence": {
+    "path": "audit/content-corrections/ITEM_TARGET_RECONCILIATION_PENDING.csv",
+    "sha256": "ba574c8a201baf52614b4cbdc35f9b3981e7a3de727df77e5c5f8ec827dce12f",
+    "equivalenceToMissingOriginalCsv": "UNVERIFIED",
+    "action": "preserve; do not duplicate"
+  },
+  "environmentPublication": "NOT_PERFORMED_NO_SUPPORTED_PUBLISH_TOOL",
+  "githubApi": "PROXY_CONNECT_HTTP_403; api.github.com addition saved to draft, runtime still denied"
+}

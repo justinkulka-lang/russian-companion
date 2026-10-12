@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Aud57CorrectionTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2026-10-12T15:28:15.829Z" hostname="03aee042dd55" time="52.439">
+  <properties/>
+  <testcase name="formsRowAloneCannotClearDictionaryUse" classname="dev.russiancompanion.v2.Aud57CorrectionTest" time="7.032"/>
+  <testcase name="deletingTheDisplayedEntryLeavesDictionaryUseUnresolved" classname="dev.russiancompanion.v2.Aud57CorrectionTest" time="2.261"/>
+  <testcase name="capstoneReadingCannotClearDictionaryUse" classname="dev.russiancompanion.v2.Aud57CorrectionTest" time="1.722"/>
+  <testcase name="letterWritingCorrespondenceGreetingAndSampleLineCannotClearPostalAddress" classname="dev.russiancompanion.v2.Aud57CorrectionTest" time="13.046"/>
+  <testcase name="swappingSenseHeadwordOrApplicationAnswerFailsClosed" classname="dev.russiancompanion.v2.Aud57CorrectionTest" time="9.542"/>
+  <testcase name="componentRecognitionAndWrongOrderCannotClearPostalAddress" classname="dev.russiancompanion.v2.Aud57CorrectionTest" time="7.947"/>
+  <testcase name="governedEntryAndCompleteAddressResolve" classname="dev.russiancompanion.v2.Aud57CorrectionTest" time="3.478"/>
+  <testcase name="partOfSpeechLabelAloneCannotClearDictionaryUse" classname="dev.russiancompanion.v2.Aud57CorrectionTest" time="1.894"/>
+  <testcase name="isolatedHeadwordTranslationAndLookupPrefixCannotClearDictionaryUse" classname="dev.russiancompanion.v2.Aud57CorrectionTest" time="1.773"/>
+  <testcase name="incompleteAddressCannotMasqueradeAsTheGovernedFormat" classname="dev.russiancompanion.v2.Aud57CorrectionTest" time="1.878"/>
+  <testcase name="optionalComponentsAreNotUniversallyMandatory" classname="dev.russiancompanion.v2.Aud57CorrectionTest" time="1.855"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

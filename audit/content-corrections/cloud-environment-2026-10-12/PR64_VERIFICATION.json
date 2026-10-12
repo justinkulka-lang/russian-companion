@@ -1,0 +1,212 @@
+{
+  "sourceCommit": "420f41ff6c2a4417cd829fdee0179b6a3b797eff",
+  "repository": "justinkulka-lang/russian-companion",
+  "branch": "cursor/content-audit-corrections-964f",
+  "draftPullRequest": 64,
+  "workingDirectory": "/workspace/russian-companion",
+  "invocation": "bash audit/content-corrections/cloud-environment-2026-10-12/install.sh",
+  "gradleCommand": "./gradlew -I /workspace/setup/cloud-validation.gradle compileDebugSources lintDebug verifyReleaseGateAttachment testDebugUnitTest --tests '*Unit27PastInstructionTest' --tests '*Unit26PostalInstructionTest' --tests '*RequiredPathProgressTest' --tests '*LearnerReloadRecoveryTest' --tests '*HostActivityRecreationTest' --tests '*Aud57CorrectionTest' --tests '*ContentAuditCheckpointRepairTest' --tests '*ContentAuditCorrectionTest' --max-workers=4 --console=plain",
+  "result": "exit 0; BUILD SUCCESSFUL in 2m 5s",
+  "scope": "Focused eight-class PR64 regression/lifecycle selection, with four screenshot exporters excluded. NOT a complete-suite run.",
+  "counts": {
+    "tests": 67,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "passed": 67,
+  "classes": [
+    {
+      "class": "dev.russiancompanion.v2.Aud57CorrectionTest",
+      "tests": 11,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "formsRowAloneCannotClearDictionaryUse",
+        "deletingTheDisplayedEntryLeavesDictionaryUseUnresolved",
+        "capstoneReadingCannotClearDictionaryUse",
+        "letterWritingCorrespondenceGreetingAndSampleLineCannotClearPostalAddress",
+        "swappingSenseHeadwordOrApplicationAnswerFailsClosed",
+        "componentRecognitionAndWrongOrderCannotClearPostalAddress",
+        "governedEntryAndCompleteAddressResolve",
+        "partOfSpeechLabelAloneCannotClearDictionaryUse",
+        "isolatedHeadwordTranslationAndLookupPrefixCannotClearDictionaryUse",
+        "incompleteAddressCannotMasqueradeAsTheGovernedFormat",
+        "optionalComponentsAreNotUniversallyMandatory"
+      ],
+      "reportSha256": "046a4a7412039f92455b4e1fd94dc855f6154e9b90c31d8680243ef415ea6b79"
+    },
+    {
+      "class": "dev.russiancompanion.v2.ContentAuditCheckpointRepairTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "optionalStressHasItsOwnProvenanceAndActualResponseShape",
+        "imperfectiveChecksAssessTheirOwnAspectAndASeparateSubjectContrast",
+        "correctedAdmissionRejectsHashScopeMissingFeatureAndClonedCheck",
+        "researchAdmissionCannotOmitItsSynthesisEvidence"
+      ],
+      "reportSha256": "9c2ec2de1980fd7d65f19f33d07d5554468d673a47bac9ac9ed26f120929ec4a"
+    },
+    {
+      "class": "dev.russiancompanion.v2.ContentAuditCorrectionTest",
+      "tests": 31,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "spellingExplanationRecordsResolveRetainedFormsAndStayPending",
+        "possessiveInstructionLabelsFormsAndWorksTheRetainedFeminineCaseChange",
+        "instrumentalAdjectiveExplanationPrecedesTheCaseChoice",
+        "possessiveFeedbackAndRemediationExplainTheSameGenderNumberAndCaseRule",
+        "unitEightTeachingWorksTheNounPluralAndSeparatesOtherPatterns",
+        "purposeRegisterExplanationPrecedesTheOrdinaryPurposeChoice",
+        "spellingQuestionsNameTheActualFormEvidenceAndRemediationRetainsAllTeaching",
+        "negativeAbsenceCheckDoesNotInferGenitiveFromTheMeaningOrSurfaceForm",
+        "adjectivePluralFormPrecedesTheSpellingChoice",
+        "instrumentalNounExplanationPrecedesTheCaseChoice",
+        "unitEightExplanationCoverageStaysPendingAndRejectsTamperedHashes",
+        "unit27AdvancesWithoutOptionalPresentPassive",
+        "aspectCounterpartExplanationPrecedesThePartnerChoice",
+        "auditedCaseContrastsExplainAnimacyAndPreserveFeminineAgreement",
+        "spellingInstructionExplainsFormsBeforePracticeAndWorksTheAccusative",
+        "packValidatesAndRejectsTheAuditedFalseKeys",
+        "unitEightChecksAssessNominativeFormsAndRetainCompleteRemediation",
+        "unitTwelveAspectFeedbackExplainsBothOptionsAndRemediationRetainsThePairs",
+        "imperfectiveRelativeTimeExplanationPrecedesTheSentenceChoice",
+        "possessiveFormsAreAvailableBeforeTheGuidedAgreementChoice",
+        "unitElevenChecksPastAgreementBeforeAspectIntroductionWithoutLoweringItsGate",
+        "possessiveWorkedExplanationRecordsStayPendingAndRejectAChangedHash",
+        "gatingChangeInvalidatesUnitAndPackIdentitiesOnly",
+        "courtesyRegisterCorrectionIsTaughtBeforePracticeAndSurvivesRemediation",
+        "reorderedSessionsRejectResumeIdentityBoundToThePreviousPosition",
+        "nounPluralFormAndSevenLetterRulePrecedeTheChoice",
+        "accusativeDeclensionExplanationPrecedesTheNounChoice",
+        "unitTwelveAspectTeachingLabelsPairsAndAvoidsAnUnfinishedActionRule",
+        "wrongAnswerRoutesRetainTheCorrectedObjectiveExplanation",
+        "unitTwelveAspectCoverageResolvesOriginalPairsAndRejectsTamperedHashes",
+        "perfectiveRelativeTimeExplanationPrecedesTheFutureSentenceChoice"
+      ],
+      "reportSha256": "9f118465aa68b91be5dd58b57f9a93d643abad53e6408e2135b194bfacca29b8"
+    },
+    {
+      "class": "dev.russiancompanion.v2.HostActivityRecreationTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "recreatedActivityKeepsTheDraftAnswerAndResumePosition",
+        "retryDropsAFailedReadFromTheReplacedStore",
+        "recreatedActivityDuringADelayedWriteKeepsOneOutcome"
+      ],
+      "reportSha256": "fa9cef933ea645d3ab5bc72a9251fb573a9a223ba65b8812ab477e3ed4c219c1"
+    },
+    {
+      "class": "dev.russiancompanion.v2.LearnerReloadRecoveryTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "failedLearnerReadRetriesThenPersistsAnAnswerOnTheReopenedStore"
+      ],
+      "reportSha256": "874c5f226be07988f6398f92f508a18c6d04f5eb5adf06aef6a363c68d184ff4"
+    },
+    {
+      "class": "dev.russiancompanion.v2.RequiredPathProgressTest",
+      "tests": 10,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "sharedAndUnknownSessionOwnershipRemainRequired",
+        "requiredCompletionReachesAdvancementWithOptionalWorkUntouched",
+        "explicitlyOpenedOptionalSessionStillRequiresItsOwnAnswers",
+        "optionalCorrectAnswersCannotSatisfyTheRequiredMinimum",
+        "continueAndTodaySkipOptionalSessionsBeforeRequiredWork",
+        "allRequiredSessionsStillRunInOrder",
+        "mixedStepRequiresOnlyRequiredAnswersAndKeepsTheirIdentityChecks",
+        "unitWithoutRequiredSessionsHasAnAdvancementTarget",
+        "optionalResumeStillRejectsAnUnverifiedContentIdentity",
+        "optionalSessionRemainsAvailableForExplicitVerifiedResume"
+      ],
+      "reportSha256": "6655c6e25be6591e7010ac592573b1c1b724134c6a6b0aa9eead7687a9036046"
+    },
+    {
+      "class": "dev.russiancompanion.v2.Unit26PostalInstructionTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "completeComponentAndFormatTeachingPrecedesPracticeAndReturnsAfterAMiss",
+        "hashedApplicationPairsRejectReuseOfAllowedWords",
+        "exactPostalIntakeRejectsHistoricalUniversalityAndUnboundApplications",
+        "sampleComparisonAndOrderingKeysAreBoundToTheirDisplayedModel"
+      ],
+      "reportSha256": "7286a3c8a310e94fb40431ed44c5b7b2aff999854661a2b5d54d51dd437af14e"
+    },
+    {
+      "class": "dev.russiancompanion.v2.Unit27PastInstructionTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "requiredStressTeachingDistinguishesTheAccentedVowelAndCorrectsTheCompetingLabel",
+        "meaningChecksRejectSourcePositionRecallAndOptionalPresentFormsStayOutsideGating",
+        "completePastPassiveMeaningAndFormTeachingPrecedesPracticeAndRestoresEveryExample"
+      ],
+      "reportSha256": "95a0ddcefe3b956489cd41f3e0bf8be9c9d6084d0aa3bd0ad646e2e5e4d9420b"
+    }
+  ],
+  "sourceTestAnnotationInventory": 691,
+  "sourceTestAnnotationsNotSelected": 624,
+  "exporterExclusions": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  },
+  "compilation": {
+    "target": "compileDebugSources",
+    "result": "passed",
+    "finalInvocation": "UP-TO-DATE after fresh current-baseline compilation in preceding validation"
+  },
+  "lint": {
+    "target": "lintDebug",
+    "result": "passed",
+    "severities": {
+      "Warning": 20,
+      "Hint": 1
+    },
+    "finalInvocation": "analysis/report cached from preceding current-baseline validation",
+    "reportSha256": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6"
+  },
+  "releaseGateAttachment": {
+    "target": "verifyReleaseGateAttachment",
+    "result": "passed; executed in final invocation"
+  },
+  "precedingValidation": {
+    "result": "exit 0; BUILD SUCCESSFUL in 3m 34s",
+    "tests": 63,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "lifecycleSelection": "initial HostActivityLifecycleTest filter matched no class; final selection corrected to LearnerReloadRecoveryTest and HostActivityRecreationTest"
+  },
+  "apk": {
+    "newArtifactAssembled": false,
+    "signingInvoked": false,
+    "existingMainArtifactRecord": "MAIN_HISTORICAL_VERIFICATION.json",
+    "currentPr64ArtifactIdentity": "NOT_ESTABLISHED"
+  },
+  "physicalDeviceAcceptance": "OUTSTANDING; no Galaxy S26 Ultra airplane-mode/reboot evidence",
+  "publication": "NOT_PERFORMED; supported tools expose draft saves only",
+  "privateReferenceExpectedSha256": null,
+  "privateReferenceStatus": "MISSING_ATTACHMENT_AND_EXPECTED_HASH"
+}
