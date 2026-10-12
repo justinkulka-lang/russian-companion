@@ -3,7 +3,7 @@
   "purpose": "Current evidence for the retained preliminary audit targets; no semantic closure or approval",
   "inputs": {
     "curriculumPath": "app/src/main/assets/content/v2-curriculum.json",
-    "curriculumFileSha256": "1ff9c8a1bdcd99468c7c0fafdedb5d90ce75762c981fc250107237a47084348a",
+    "curriculumFileSha256": "4bd42e3a268e3115db605e230582e3533eec50163a1fd67ad580f72674f6cb50",
     "targetSnapshotPath": "audit/content-corrections/ITEM_TARGET_RECONCILIATION_PENDING.csv",
     "targetSnapshotFileSha256": "ba574c8a201baf52614b4cbdc35f9b3981e7a3de727df77e5c5f8ec827dce12f"
   },
@@ -6122,15 +6122,17 @@
       "proposedCorrection": "Teach/test the relation to the main predicate in reviewed contexts, including past and future matrix predicates.",
       "snapshotComparison": "CHANGED",
       "changedFields": [
+        "body",
         "dominantAction",
         "exampleIds",
-        "itemIds"
+        "itemIds",
+        "title"
       ],
       "currentObject": {
         "id": "u28-st-teach-imperfective-adverb-2",
         "kind": "TEACH",
-        "title": "Admitted instruction",
-        "body": "An imperfective verbal adverb is simultaneous with the main predicate. It has no independent tense, so it is not usually present as an absolute label. The subject is the same as the main verb.",
+        "title": "Keep the two actions with the same person",
+        "body": "In читая письмо, он улыбался, The pronoun he is the explicit main-clause subject. The reader and the person smiling are the same person. The verbal adverb supplies an accompanying action by that subject, not an action by a second unrelated person. Identify the main verb and its subject before deciding who performs the accompanying action. These checks recognize timing and shared subject in the supplied construction; they do not demonstrate forming an unfamiliar verbal adverb or judging every possible literary use.",
         "referenceIds": [
           "ref-u2630-attribution"
         ]
@@ -6181,8 +6183,8 @@
           "step": {
             "id": "u28-st-teach-imperfective-adverb-1",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "Read the admitted examples on this card.",
+            "title": "Read two actions happening together",
+            "body": "An imperfective verbal adverb describes an accompanying action. In the supplied читая письмо, он улыбался, he was reading the letter while he smiled. Reading and smiling overlap: simultaneous means during the same interval as the main predicate. The main verb places this example in the past; читая does not independently mean absolute present time. The retained examples думая and учась illustrate imperfective verbal-adverb forms. An isolated form cannot establish the tense of an absent main verb.",
             "referenceIds": [
               "ref-u2630-attribution"
             ],
@@ -6197,8 +6199,8 @@
           "step": {
             "id": "u28-st-teach-imperfective-adverb-2",
             "kind": "TEACH",
-            "title": "Admitted instruction",
-            "body": "An imperfective verbal adverb is simultaneous with the main predicate. It has no independent tense, so it is not usually present as an absolute label. The subject is the same as the main verb.",
+            "title": "Keep the two actions with the same person",
+            "body": "In читая письмо, он улыбался, The pronoun he is the explicit main-clause subject. The reader and the person smiling are the same person. The verbal adverb supplies an accompanying action by that subject, not an action by a second unrelated person. Identify the main verb and its subject before deciding who performs the accompanying action. These checks recognize timing and shared subject in the supplied construction; they do not demonstrate forming an unfamiliar verbal adverb or judging every possible literary use.",
             "referenceIds": [
               "ref-u2630-attribution"
             ]
@@ -6210,7 +6212,7 @@
             "id": "u28-st-guided-imperfective-adverb-1",
             "kind": "GUIDED",
             "title": "Guided practice",
-            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "body": "Interpret the supplied sentence or passage. A missed choice returns to every teaching card and worked example.",
             "itemIds": [
               "u28-g-imperfective-adverb-0"
             ],
@@ -6222,8 +6224,8 @@
           "step": {
             "id": "u28-st-rem-imperfective-adverb",
             "kind": "REMEDIATE",
-            "title": "Remediation",
-            "body": "An imperfective verbal adverb is simultaneous with the main predicate. It has no independent tense, so it is not usually present as an absolute label. The subject is the same as the main verb.",
+            "title": "Review the complete timing and reading contrast",
+            "body": "An imperfective verbal adverb describes an accompanying action. In the supplied читая письмо, он улыбался, he was reading the letter while he smiled. Reading and smiling overlap: simultaneous means during the same interval as the main predicate. The main verb places this example in the past; читая does not independently mean absolute present time. The retained examples думая and учась illustrate imperfective verbal-adverb forms. An isolated form cannot establish the tense of an absent main verb.\n\nIn читая письмо, он улыбался, The pronoun he is the explicit main-clause subject. The reader and the person smiling are the same person. The verbal adverb supplies an accompanying action by that subject, not an action by a second unrelated person. Identify the main verb and its subject before deciding who performs the accompanying action. These checks recognize timing and shared subject in the supplied construction; they do not demonstrate forming an unfamiliar verbal adverb or judging every possible literary use.",
             "referenceIds": [
               "ref-ca-verbal-adverb"
             ],
@@ -6255,15 +6257,17 @@
       "proposedCorrection": "Teach/test the relation to the main predicate in reviewed contexts, including past and future matrix predicates.",
       "snapshotComparison": "CHANGED",
       "changedFields": [
+        "body",
         "dominantAction",
         "exampleIds",
-        "itemIds"
+        "itemIds",
+        "title"
       ],
       "currentObject": {
         "id": "u28-st-teach-perfective-adverb-2",
         "kind": "TEACH",
-        "title": "Admitted instruction",
-        "body": "A perfective verbal adverb is anterior to the main predicate. It can precede a past or a future main action. It is not limited to an absolute past.",
+        "title": "Earlier does not necessarily mean past",
+        "body": "In написав письмо, она отправит его завтра, she will send the letter tomorrow after writing it. The writing precedes the future sending: anterior to a future main action is the matching description. The sentence does not require the writing to have happened before the present moment. The pronoun she names the main subject, and the writer and sender are the same person. An absolute present label loses the relative timing; assigning a different subject loses the supplied construction.",
         "referenceIds": [
           "ref-u2630-attribution"
         ]
@@ -6316,8 +6320,8 @@
           "step": {
             "id": "u28-st-teach-perfective-adverb-1",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "Read the admitted examples on this card.",
+            "title": "Read the completed action before the main action",
+            "body": "A perfective verbal adverb normally presents an action completed before the main action in this taught construction. Anterior means earlier relative to that action. The retained сказав and научившись illustrate these forms; their labels alone do not fix an absolute past tense. Read the accompanying main predicate to establish the sentence time.",
             "referenceIds": [
               "ref-u2630-attribution"
             ],
@@ -6332,8 +6336,8 @@
           "step": {
             "id": "u28-st-teach-perfective-adverb-2",
             "kind": "TEACH",
-            "title": "Admitted instruction",
-            "body": "A perfective verbal adverb is anterior to the main predicate. It can precede a past or a future main action. It is not limited to an absolute past.",
+            "title": "Earlier does not necessarily mean past",
+            "body": "In написав письмо, она отправит его завтра, she will send the letter tomorrow after writing it. The writing precedes the future sending: anterior to a future main action is the matching description. The sentence does not require the writing to have happened before the present moment. The pronoun she names the main subject, and the writer and sender are the same person. An absolute present label loses the relative timing; assigning a different subject loses the supplied construction.",
             "referenceIds": [
               "ref-u2630-attribution"
             ]
@@ -6344,8 +6348,8 @@
           "step": {
             "id": "u28-st-teach-perfective-adverb-3",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "Read the admitted examples on this card.",
+            "title": "Recognize the retained form without inventing a formation rule",
+            "body": "The retained войдя illustrates another perfective verbal-adverb form with an action normally anterior to its main predicate. It does not by itself identify a main subject or an absolute sentence tense. Compare the supplied forms and read their complete contexts when available. This small example set supplies recognition practice, not a complete productive algorithm for unlisted verbs.",
             "referenceIds": [
               "ref-u2630-attribution"
             ],
@@ -6360,7 +6364,7 @@
             "id": "u28-st-guided-perfective-adverb-1",
             "kind": "GUIDED",
             "title": "Guided practice",
-            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "body": "Interpret the supplied sentence or passage. A missed choice returns to every teaching card and worked example.",
             "itemIds": [
               "u28-g-perfective-adverb-0"
             ],
@@ -6372,14 +6376,15 @@
           "step": {
             "id": "u28-st-rem-perfective-adverb",
             "kind": "REMEDIATE",
-            "title": "Remediation",
-            "body": "A perfective verbal adverb is anterior to the main predicate. It can precede a past or a future main action. It is not limited to an absolute past.",
+            "title": "Review the complete timing and reading contrast",
+            "body": "A perfective verbal adverb normally presents an action completed before the main action in this taught construction. Anterior means earlier relative to that action. The retained сказав and научившись illustrate these forms; their labels alone do not fix an absolute past tense. Read the accompanying main predicate to establish the sentence time.\n\nIn написав письмо, она отправит его завтра, she will send the letter tomorrow after writing it. The writing precedes the future sending: anterior to a future main action is the matching description. The sentence does not require the writing to have happened before the present moment. The pronoun she names the main subject, and the writer and sender are the same person. An absolute present label loses the relative timing; assigning a different subject loses the supplied construction.\n\nThe retained войдя illustrates another perfective verbal-adverb form with an action normally anterior to its main predicate. It does not by itself identify a main subject or an absolute sentence tense. Compare the supplied forms and read their complete contexts when available. This small example set supplies recognition practice, not a complete productive algorithm for unlisted verbs.",
             "referenceIds": [
               "ref-ca-verbal-adverb"
             ],
             "exampleIds": [
               "ex-u28-perfective-adverb-0",
-              "ex-u28-perfective-adverb-1"
+              "ex-u28-perfective-adverb-1",
+              "ex-u28-perfective-adverb-2"
             ]
           }
         }
@@ -6508,8 +6513,8 @@
           "step": {
             "id": "u28-st-teach-imperfective-adverb-1",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "Read the admitted examples on this card.",
+            "title": "Read two actions happening together",
+            "body": "An imperfective verbal adverb describes an accompanying action. In the supplied читая письмо, он улыбался, he was reading the letter while he smiled. Reading and smiling overlap: simultaneous means during the same interval as the main predicate. The main verb places this example in the past; читая does not independently mean absolute present time. The retained examples думая and учась illustrate imperfective verbal-adverb forms. An isolated form cannot establish the tense of an absent main verb.",
             "referenceIds": [
               "ref-u2630-attribution"
             ],
@@ -6524,8 +6529,8 @@
           "step": {
             "id": "u28-st-teach-imperfective-adverb-2",
             "kind": "TEACH",
-            "title": "Admitted instruction",
-            "body": "An imperfective verbal adverb is simultaneous with the main predicate. It has no independent tense, so it is not usually present as an absolute label. The subject is the same as the main verb.",
+            "title": "Keep the two actions with the same person",
+            "body": "In читая письмо, он улыбался, The pronoun he is the explicit main-clause subject. The reader and the person smiling are the same person. The verbal adverb supplies an accompanying action by that subject, not an action by a second unrelated person. Identify the main verb and its subject before deciding who performs the accompanying action. These checks recognize timing and shared subject in the supplied construction; they do not demonstrate forming an unfamiliar verbal adverb or judging every possible literary use.",
             "referenceIds": [
               "ref-u2630-attribution"
             ]
@@ -6537,7 +6542,7 @@
             "id": "u28-st-guided-imperfective-adverb-1",
             "kind": "GUIDED",
             "title": "Guided practice",
-            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "body": "Interpret the supplied sentence or passage. A missed choice returns to every teaching card and worked example.",
             "itemIds": [
               "u28-g-imperfective-adverb-0"
             ],
@@ -6549,8 +6554,8 @@
           "step": {
             "id": "u28-st-rem-imperfective-adverb",
             "kind": "REMEDIATE",
-            "title": "Remediation",
-            "body": "An imperfective verbal adverb is simultaneous with the main predicate. It has no independent tense, so it is not usually present as an absolute label. The subject is the same as the main verb.",
+            "title": "Review the complete timing and reading contrast",
+            "body": "An imperfective verbal adverb describes an accompanying action. In the supplied читая письмо, он улыбался, he was reading the letter while he smiled. Reading and smiling overlap: simultaneous means during the same interval as the main predicate. The main verb places this example in the past; читая does not independently mean absolute present time. The retained examples думая and учась illustrate imperfective verbal-adverb forms. An isolated form cannot establish the tense of an absent main verb.\n\nIn читая письмо, он улыбался, The pronoun he is the explicit main-clause subject. The reader and the person smiling are the same person. The verbal adverb supplies an accompanying action by that subject, not an action by a second unrelated person. Identify the main verb and its subject before deciding who performs the accompanying action. These checks recognize timing and shared subject in the supplied construction; they do not demonstrate forming an unfamiliar verbal adverb or judging every possible literary use.",
             "referenceIds": [
               "ref-ca-verbal-adverb"
             ],
@@ -6580,8 +6585,10 @@
       "contentKind": "items",
       "reportedIssue": "Absolute tense label substitutes for relative verbal-adverb interpretation.",
       "proposedCorrection": "Teach/test the relation to the main predicate in reviewed contexts, including past and future matrix predicates.",
-      "snapshotComparison": "UNCHANGED",
-      "changedFields": [],
+      "snapshotComparison": "CHANGED",
+      "changedFields": [
+        "assessment"
+      ],
       "currentObject": {
         "id": "u28-i-imperfective-adverb-1",
         "kind": "CONTRAST_SELECTION",
@@ -6611,12 +6618,12 @@
           "cueLanguage": "ru",
           "independent": true,
           "answerSourceIds": [
-            "prov-ca-repair-28-11005"
+            "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-8"
           ],
           "distractorSourceIds": [
             "",
-            "prov-ca-repair-28-11009",
-            "prov-ca-repair-28-11010"
+            "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-12",
+            "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-13"
           ],
           "distractorDifference": [
             "",
@@ -6631,10 +6638,10 @@
           ],
           "relationKind": "STATED_APPLICATION",
           "relationParticipantIds": [
-            "prov-ca-repair-28-11004",
-            "prov-ca-repair-28-11005",
-            "prov-ca-repair-28-11009",
-            "prov-ca-repair-28-11010"
+            "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-7",
+            "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-8",
+            "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-12",
+            "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-13"
           ],
           "responseKind": "ENGLISH_CLASSIFICATION"
         }
@@ -6685,8 +6692,8 @@
           "step": {
             "id": "u28-st-teach-imperfective-adverb-1",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "Read the admitted examples on this card.",
+            "title": "Read two actions happening together",
+            "body": "An imperfective verbal adverb describes an accompanying action. In the supplied читая письмо, он улыбался, he was reading the letter while he smiled. Reading and smiling overlap: simultaneous means during the same interval as the main predicate. The main verb places this example in the past; читая does not independently mean absolute present time. The retained examples думая and учась illustrate imperfective verbal-adverb forms. An isolated form cannot establish the tense of an absent main verb.",
             "referenceIds": [
               "ref-u2630-attribution"
             ],
@@ -6701,8 +6708,8 @@
           "step": {
             "id": "u28-st-teach-imperfective-adverb-2",
             "kind": "TEACH",
-            "title": "Admitted instruction",
-            "body": "An imperfective verbal adverb is simultaneous with the main predicate. It has no independent tense, so it is not usually present as an absolute label. The subject is the same as the main verb.",
+            "title": "Keep the two actions with the same person",
+            "body": "In читая письмо, он улыбался, The pronoun he is the explicit main-clause subject. The reader and the person smiling are the same person. The verbal adverb supplies an accompanying action by that subject, not an action by a second unrelated person. Identify the main verb and its subject before deciding who performs the accompanying action. These checks recognize timing and shared subject in the supplied construction; they do not demonstrate forming an unfamiliar verbal adverb or judging every possible literary use.",
             "referenceIds": [
               "ref-u2630-attribution"
             ]
@@ -6714,7 +6721,7 @@
             "id": "u28-st-guided-imperfective-adverb-1",
             "kind": "GUIDED",
             "title": "Guided practice",
-            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "body": "Interpret the supplied sentence or passage. A missed choice returns to every teaching card and worked example.",
             "itemIds": [
               "u28-g-imperfective-adverb-0"
             ],
@@ -6726,8 +6733,8 @@
           "step": {
             "id": "u28-st-rem-imperfective-adverb",
             "kind": "REMEDIATE",
-            "title": "Remediation",
-            "body": "An imperfective verbal adverb is simultaneous with the main predicate. It has no independent tense, so it is not usually present as an absolute label. The subject is the same as the main verb.",
+            "title": "Review the complete timing and reading contrast",
+            "body": "An imperfective verbal adverb describes an accompanying action. In the supplied читая письмо, он улыбался, he was reading the letter while he smiled. Reading and smiling overlap: simultaneous means during the same interval as the main predicate. The main verb places this example in the past; читая does not independently mean absolute present time. The retained examples думая and учась illustrate imperfective verbal-adverb forms. An isolated form cannot establish the tense of an absent main verb.\n\nIn читая письмо, он улыбался, The pronoun he is the explicit main-clause subject. The reader and the person smiling are the same person. The verbal adverb supplies an accompanying action by that subject, not an action by a second unrelated person. Identify the main verb and its subject before deciding who performs the accompanying action. These checks recognize timing and shared subject in the supplied construction; they do not demonstrate forming an unfamiliar verbal adverb or judging every possible literary use.",
             "referenceIds": [
               "ref-ca-verbal-adverb"
             ],
@@ -6743,7 +6750,7 @@
             "id": "u28-st-check-imperfective-adverb",
             "kind": "CHECK",
             "title": "Independent checks",
-            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "body": "Interpret the supplied sentence or passage. A missed choice returns to every teaching card and worked example.",
             "itemIds": [
               "u28-i-imperfective-adverb-1",
               "u28-i-imperfective-adverb-2"
@@ -6771,8 +6778,10 @@
       "contentKind": "items",
       "reportedIssue": "Absolute tense label substitutes for relative verbal-adverb interpretation.",
       "proposedCorrection": "Teach/test the relation to the main predicate in reviewed contexts, including past and future matrix predicates.",
-      "snapshotComparison": "UNCHANGED",
-      "changedFields": [],
+      "snapshotComparison": "CHANGED",
+      "changedFields": [
+        "assessment"
+      ],
       "currentObject": {
         "id": "u28-i-imperfective-adverb-2",
         "kind": "CONTRAST_SELECTION",
@@ -6802,12 +6811,12 @@
           "cueLanguage": "ru",
           "independent": true,
           "answerSourceIds": [
-            "prov-ca-repair-28-11013"
+            "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-16"
           ],
           "distractorSourceIds": [
             "",
-            "prov-ca-repair-28-11016",
-            "prov-ca-repair-28-11017"
+            "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-19",
+            "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-20"
           ],
           "distractorDifference": [
             "",
@@ -6822,10 +6831,10 @@
           ],
           "relationKind": "STATED_APPLICATION",
           "relationParticipantIds": [
-            "prov-ca-repair-28-11004",
-            "prov-ca-repair-28-11013",
-            "prov-ca-repair-28-11016",
-            "prov-ca-repair-28-11017"
+            "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-7",
+            "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-16",
+            "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-19",
+            "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-20"
           ],
           "responseKind": "ENGLISH_CLASSIFICATION"
         }
@@ -6876,8 +6885,8 @@
           "step": {
             "id": "u28-st-teach-imperfective-adverb-1",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "Read the admitted examples on this card.",
+            "title": "Read two actions happening together",
+            "body": "An imperfective verbal adverb describes an accompanying action. In the supplied читая письмо, он улыбался, he was reading the letter while he smiled. Reading and smiling overlap: simultaneous means during the same interval as the main predicate. The main verb places this example in the past; читая does not independently mean absolute present time. The retained examples думая and учась illustrate imperfective verbal-adverb forms. An isolated form cannot establish the tense of an absent main verb.",
             "referenceIds": [
               "ref-u2630-attribution"
             ],
@@ -6892,8 +6901,8 @@
           "step": {
             "id": "u28-st-teach-imperfective-adverb-2",
             "kind": "TEACH",
-            "title": "Admitted instruction",
-            "body": "An imperfective verbal adverb is simultaneous with the main predicate. It has no independent tense, so it is not usually present as an absolute label. The subject is the same as the main verb.",
+            "title": "Keep the two actions with the same person",
+            "body": "In читая письмо, он улыбался, The pronoun he is the explicit main-clause subject. The reader and the person smiling are the same person. The verbal adverb supplies an accompanying action by that subject, not an action by a second unrelated person. Identify the main verb and its subject before deciding who performs the accompanying action. These checks recognize timing and shared subject in the supplied construction; they do not demonstrate forming an unfamiliar verbal adverb or judging every possible literary use.",
             "referenceIds": [
               "ref-u2630-attribution"
             ]
@@ -6905,7 +6914,7 @@
             "id": "u28-st-guided-imperfective-adverb-1",
             "kind": "GUIDED",
             "title": "Guided practice",
-            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "body": "Interpret the supplied sentence or passage. A missed choice returns to every teaching card and worked example.",
             "itemIds": [
               "u28-g-imperfective-adverb-0"
             ],
@@ -6917,8 +6926,8 @@
           "step": {
             "id": "u28-st-rem-imperfective-adverb",
             "kind": "REMEDIATE",
-            "title": "Remediation",
-            "body": "An imperfective verbal adverb is simultaneous with the main predicate. It has no independent tense, so it is not usually present as an absolute label. The subject is the same as the main verb.",
+            "title": "Review the complete timing and reading contrast",
+            "body": "An imperfective verbal adverb describes an accompanying action. In the supplied читая письмо, он улыбался, he was reading the letter while he smiled. Reading and smiling overlap: simultaneous means during the same interval as the main predicate. The main verb places this example in the past; читая does not independently mean absolute present time. The retained examples думая and учась illustrate imperfective verbal-adverb forms. An isolated form cannot establish the tense of an absent main verb.\n\nIn читая письмо, он улыбался, The pronoun he is the explicit main-clause subject. The reader and the person smiling are the same person. The verbal adverb supplies an accompanying action by that subject, not an action by a second unrelated person. Identify the main verb and its subject before deciding who performs the accompanying action. These checks recognize timing and shared subject in the supplied construction; they do not demonstrate forming an unfamiliar verbal adverb or judging every possible literary use.",
             "referenceIds": [
               "ref-ca-verbal-adverb"
             ],
@@ -6934,7 +6943,7 @@
             "id": "u28-st-check-imperfective-adverb",
             "kind": "CHECK",
             "title": "Independent checks",
-            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "body": "Interpret the supplied sentence or passage. A missed choice returns to every teaching card and worked example.",
             "itemIds": [
               "u28-i-imperfective-adverb-1",
               "u28-i-imperfective-adverb-2"
@@ -7069,8 +7078,8 @@
           "step": {
             "id": "u28-st-teach-perfective-adverb-1",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "Read the admitted examples on this card.",
+            "title": "Read the completed action before the main action",
+            "body": "A perfective verbal adverb normally presents an action completed before the main action in this taught construction. Anterior means earlier relative to that action. The retained сказав and научившись illustrate these forms; their labels alone do not fix an absolute past tense. Read the accompanying main predicate to establish the sentence time.",
             "referenceIds": [
               "ref-u2630-attribution"
             ],
@@ -7085,8 +7094,8 @@
           "step": {
             "id": "u28-st-teach-perfective-adverb-2",
             "kind": "TEACH",
-            "title": "Admitted instruction",
-            "body": "A perfective verbal adverb is anterior to the main predicate. It can precede a past or a future main action. It is not limited to an absolute past.",
+            "title": "Earlier does not necessarily mean past",
+            "body": "In написав письмо, она отправит его завтра, she will send the letter tomorrow after writing it. The writing precedes the future sending: anterior to a future main action is the matching description. The sentence does not require the writing to have happened before the present moment. The pronoun she names the main subject, and the writer and sender are the same person. An absolute present label loses the relative timing; assigning a different subject loses the supplied construction.",
             "referenceIds": [
               "ref-u2630-attribution"
             ]
@@ -7097,8 +7106,8 @@
           "step": {
             "id": "u28-st-teach-perfective-adverb-3",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "Read the admitted examples on this card.",
+            "title": "Recognize the retained form without inventing a formation rule",
+            "body": "The retained войдя illustrates another perfective verbal-adverb form with an action normally anterior to its main predicate. It does not by itself identify a main subject or an absolute sentence tense. Compare the supplied forms and read their complete contexts when available. This small example set supplies recognition practice, not a complete productive algorithm for unlisted verbs.",
             "referenceIds": [
               "ref-u2630-attribution"
             ],
@@ -7113,7 +7122,7 @@
             "id": "u28-st-guided-perfective-adverb-1",
             "kind": "GUIDED",
             "title": "Guided practice",
-            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "body": "Interpret the supplied sentence or passage. A missed choice returns to every teaching card and worked example.",
             "itemIds": [
               "u28-g-perfective-adverb-0"
             ],
@@ -7125,14 +7134,15 @@
           "step": {
             "id": "u28-st-rem-perfective-adverb",
             "kind": "REMEDIATE",
-            "title": "Remediation",
-            "body": "A perfective verbal adverb is anterior to the main predicate. It can precede a past or a future main action. It is not limited to an absolute past.",
+            "title": "Review the complete timing and reading contrast",
+            "body": "A perfective verbal adverb normally presents an action completed before the main action in this taught construction. Anterior means earlier relative to that action. The retained сказав and научившись illustrate these forms; their labels alone do not fix an absolute past tense. Read the accompanying main predicate to establish the sentence time.\n\nIn написав письмо, она отправит его завтра, she will send the letter tomorrow after writing it. The writing precedes the future sending: anterior to a future main action is the matching description. The sentence does not require the writing to have happened before the present moment. The pronoun she names the main subject, and the writer and sender are the same person. An absolute present label loses the relative timing; assigning a different subject loses the supplied construction.\n\nThe retained войдя illustrates another perfective verbal-adverb form with an action normally anterior to its main predicate. It does not by itself identify a main subject or an absolute sentence tense. Compare the supplied forms and read their complete contexts when available. This small example set supplies recognition practice, not a complete productive algorithm for unlisted verbs.",
             "referenceIds": [
               "ref-ca-verbal-adverb"
             ],
             "exampleIds": [
               "ex-u28-perfective-adverb-0",
-              "ex-u28-perfective-adverb-1"
+              "ex-u28-perfective-adverb-1",
+              "ex-u28-perfective-adverb-2"
             ]
           }
         }
@@ -7156,8 +7166,10 @@
       "contentKind": "items",
       "reportedIssue": "Absolute tense label substitutes for relative verbal-adverb interpretation.",
       "proposedCorrection": "Teach/test the relation to the main predicate in reviewed contexts, including past and future matrix predicates.",
-      "snapshotComparison": "UNCHANGED",
-      "changedFields": [],
+      "snapshotComparison": "CHANGED",
+      "changedFields": [
+        "assessment"
+      ],
       "currentObject": {
         "id": "u28-i-perfective-adverb-1",
         "kind": "CONTRAST_SELECTION",
@@ -7187,12 +7199,12 @@
           "cueLanguage": "ru",
           "independent": true,
           "answerSourceIds": [
-            "prov-ca-repair-28-11029"
+            "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-9"
           ],
           "distractorSourceIds": [
             "",
-            "prov-ca-repair-28-11032",
-            "prov-ca-repair-28-11033"
+            "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-12",
+            "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-13"
           ],
           "distractorDifference": [
             "",
@@ -7207,10 +7219,10 @@
           ],
           "relationKind": "STATED_APPLICATION",
           "relationParticipantIds": [
-            "prov-ca-repair-28-11028",
-            "prov-ca-repair-28-11029",
-            "prov-ca-repair-28-11032",
-            "prov-ca-repair-28-11033"
+            "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-8",
+            "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-9",
+            "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-12",
+            "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-13"
           ],
           "responseKind": "ENGLISH_CLASSIFICATION"
         }
@@ -7263,8 +7275,8 @@
           "step": {
             "id": "u28-st-teach-perfective-adverb-1",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "Read the admitted examples on this card.",
+            "title": "Read the completed action before the main action",
+            "body": "A perfective verbal adverb normally presents an action completed before the main action in this taught construction. Anterior means earlier relative to that action. The retained сказав and научившись illustrate these forms; their labels alone do not fix an absolute past tense. Read the accompanying main predicate to establish the sentence time.",
             "referenceIds": [
               "ref-u2630-attribution"
             ],
@@ -7279,8 +7291,8 @@
           "step": {
             "id": "u28-st-teach-perfective-adverb-2",
             "kind": "TEACH",
-            "title": "Admitted instruction",
-            "body": "A perfective verbal adverb is anterior to the main predicate. It can precede a past or a future main action. It is not limited to an absolute past.",
+            "title": "Earlier does not necessarily mean past",
+            "body": "In написав письмо, она отправит его завтра, she will send the letter tomorrow after writing it. The writing precedes the future sending: anterior to a future main action is the matching description. The sentence does not require the writing to have happened before the present moment. The pronoun she names the main subject, and the writer and sender are the same person. An absolute present label loses the relative timing; assigning a different subject loses the supplied construction.",
             "referenceIds": [
               "ref-u2630-attribution"
             ]
@@ -7291,8 +7303,8 @@
           "step": {
             "id": "u28-st-teach-perfective-adverb-3",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "Read the admitted examples on this card.",
+            "title": "Recognize the retained form without inventing a formation rule",
+            "body": "The retained войдя illustrates another perfective verbal-adverb form with an action normally anterior to its main predicate. It does not by itself identify a main subject or an absolute sentence tense. Compare the supplied forms and read their complete contexts when available. This small example set supplies recognition practice, not a complete productive algorithm for unlisted verbs.",
             "referenceIds": [
               "ref-u2630-attribution"
             ],
@@ -7307,7 +7319,7 @@
             "id": "u28-st-guided-perfective-adverb-1",
             "kind": "GUIDED",
             "title": "Guided practice",
-            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "body": "Interpret the supplied sentence or passage. A missed choice returns to every teaching card and worked example.",
             "itemIds": [
               "u28-g-perfective-adverb-0"
             ],
@@ -7319,14 +7331,15 @@
           "step": {
             "id": "u28-st-rem-perfective-adverb",
             "kind": "REMEDIATE",
-            "title": "Remediation",
-            "body": "A perfective verbal adverb is anterior to the main predicate. It can precede a past or a future main action. It is not limited to an absolute past.",
+            "title": "Review the complete timing and reading contrast",
+            "body": "A perfective verbal adverb normally presents an action completed before the main action in this taught construction. Anterior means earlier relative to that action. The retained сказав and научившись illustrate these forms; their labels alone do not fix an absolute past tense. Read the accompanying main predicate to establish the sentence time.\n\nIn написав письмо, она отправит его завтра, she will send the letter tomorrow after writing it. The writing precedes the future sending: anterior to a future main action is the matching description. The sentence does not require the writing to have happened before the present moment. The pronoun she names the main subject, and the writer and sender are the same person. An absolute present label loses the relative timing; assigning a different subject loses the supplied construction.\n\nThe retained войдя illustrates another perfective verbal-adverb form with an action normally anterior to its main predicate. It does not by itself identify a main subject or an absolute sentence tense. Compare the supplied forms and read their complete contexts when available. This small example set supplies recognition practice, not a complete productive algorithm for unlisted verbs.",
             "referenceIds": [
               "ref-ca-verbal-adverb"
             ],
             "exampleIds": [
               "ex-u28-perfective-adverb-0",
-              "ex-u28-perfective-adverb-1"
+              "ex-u28-perfective-adverb-1",
+              "ex-u28-perfective-adverb-2"
             ]
           }
         },
@@ -7336,7 +7349,7 @@
             "id": "u28-st-check-perfective-adverb",
             "kind": "CHECK",
             "title": "Independent checks",
-            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "body": "Interpret the supplied sentence or passage. A missed choice returns to every teaching card and worked example.",
             "itemIds": [
               "u28-i-perfective-adverb-1",
               "u28-i-perfective-adverb-2"
@@ -7364,8 +7377,10 @@
       "contentKind": "items",
       "reportedIssue": "Absolute tense label substitutes for relative verbal-adverb interpretation.",
       "proposedCorrection": "Teach/test the relation to the main predicate in reviewed contexts, including past and future matrix predicates.",
-      "snapshotComparison": "UNCHANGED",
-      "changedFields": [],
+      "snapshotComparison": "CHANGED",
+      "changedFields": [
+        "assessment"
+      ],
       "currentObject": {
         "id": "u28-i-perfective-adverb-2",
         "kind": "CONTRAST_SELECTION",
@@ -7395,12 +7410,12 @@
           "cueLanguage": "ru",
           "independent": true,
           "answerSourceIds": [
-            "prov-ca-repair-28-11036"
+            "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-16"
           ],
           "distractorSourceIds": [
             "",
-            "prov-ca-repair-28-11039",
-            "prov-ca-repair-28-11040"
+            "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-19",
+            "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-20"
           ],
           "distractorDifference": [
             "",
@@ -7415,10 +7430,10 @@
           ],
           "relationKind": "STATED_APPLICATION",
           "relationParticipantIds": [
-            "prov-ca-repair-28-11028",
-            "prov-ca-repair-28-11036",
-            "prov-ca-repair-28-11039",
-            "prov-ca-repair-28-11040"
+            "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-8",
+            "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-16",
+            "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-19",
+            "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-20"
           ],
           "responseKind": "ENGLISH_CLASSIFICATION"
         }
@@ -7471,8 +7486,8 @@
           "step": {
             "id": "u28-st-teach-perfective-adverb-1",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "Read the admitted examples on this card.",
+            "title": "Read the completed action before the main action",
+            "body": "A perfective verbal adverb normally presents an action completed before the main action in this taught construction. Anterior means earlier relative to that action. The retained сказав and научившись illustrate these forms; their labels alone do not fix an absolute past tense. Read the accompanying main predicate to establish the sentence time.",
             "referenceIds": [
               "ref-u2630-attribution"
             ],
@@ -7487,8 +7502,8 @@
           "step": {
             "id": "u28-st-teach-perfective-adverb-2",
             "kind": "TEACH",
-            "title": "Admitted instruction",
-            "body": "A perfective verbal adverb is anterior to the main predicate. It can precede a past or a future main action. It is not limited to an absolute past.",
+            "title": "Earlier does not necessarily mean past",
+            "body": "In написав письмо, она отправит его завтра, she will send the letter tomorrow after writing it. The writing precedes the future sending: anterior to a future main action is the matching description. The sentence does not require the writing to have happened before the present moment. The pronoun she names the main subject, and the writer and sender are the same person. An absolute present label loses the relative timing; assigning a different subject loses the supplied construction.",
             "referenceIds": [
               "ref-u2630-attribution"
             ]
@@ -7499,8 +7514,8 @@
           "step": {
             "id": "u28-st-teach-perfective-adverb-3",
             "kind": "TEACH",
-            "title": "Admitted lines",
-            "body": "Read the admitted examples on this card.",
+            "title": "Recognize the retained form without inventing a formation rule",
+            "body": "The retained войдя illustrates another perfective verbal-adverb form with an action normally anterior to its main predicate. It does not by itself identify a main subject or an absolute sentence tense. Compare the supplied forms and read their complete contexts when available. This small example set supplies recognition practice, not a complete productive algorithm for unlisted verbs.",
             "referenceIds": [
               "ref-u2630-attribution"
             ],
@@ -7515,7 +7530,7 @@
             "id": "u28-st-guided-perfective-adverb-1",
             "kind": "GUIDED",
             "title": "Guided practice",
-            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "body": "Interpret the supplied sentence or passage. A missed choice returns to every teaching card and worked example.",
             "itemIds": [
               "u28-g-perfective-adverb-0"
             ],
@@ -7527,14 +7542,15 @@
           "step": {
             "id": "u28-st-rem-perfective-adverb",
             "kind": "REMEDIATE",
-            "title": "Remediation",
-            "body": "A perfective verbal adverb is anterior to the main predicate. It can precede a past or a future main action. It is not limited to an absolute past.",
+            "title": "Review the complete timing and reading contrast",
+            "body": "A perfective verbal adverb normally presents an action completed before the main action in this taught construction. Anterior means earlier relative to that action. The retained сказав and научившись illustrate these forms; their labels alone do not fix an absolute past tense. Read the accompanying main predicate to establish the sentence time.\n\nIn написав письмо, она отправит его завтра, she will send the letter tomorrow after writing it. The writing precedes the future sending: anterior to a future main action is the matching description. The sentence does not require the writing to have happened before the present moment. The pronoun she names the main subject, and the writer and sender are the same person. An absolute present label loses the relative timing; assigning a different subject loses the supplied construction.\n\nThe retained войдя illustrates another perfective verbal-adverb form with an action normally anterior to its main predicate. It does not by itself identify a main subject or an absolute sentence tense. Compare the supplied forms and read their complete contexts when available. This small example set supplies recognition practice, not a complete productive algorithm for unlisted verbs.",
             "referenceIds": [
               "ref-ca-verbal-adverb"
             ],
             "exampleIds": [
               "ex-u28-perfective-adverb-0",
-              "ex-u28-perfective-adverb-1"
+              "ex-u28-perfective-adverb-1",
+              "ex-u28-perfective-adverb-2"
             ]
           }
         },
@@ -7544,7 +7560,7 @@
             "id": "u28-st-check-perfective-adverb",
             "kind": "CHECK",
             "title": "Independent checks",
-            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "body": "Interpret the supplied sentence or passage. A missed choice returns to every teaching card and worked example.",
             "itemIds": [
               "u28-i-perfective-adverb-1",
               "u28-i-perfective-adverb-2"

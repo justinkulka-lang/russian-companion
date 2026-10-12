@@ -1,8 +1,8 @@
 # Single-guided session sequence-review candidates
 
-Curriculum file SHA-256: `1ff9c8a1bdcd99468c7c0fafdedb5d90ce75762c981fc250107237a47084348a`.
+Curriculum file SHA-256: `4bd42e3a268e3115db605e230582e3533eec50163a1fd67ad580f72674f6cb50`.
 
-**70 sessions require cue-level sequence review.** The scan finds teaching after the single guided-practice step. It does not establish that every flagged session is defective: each cue, answer and distractor must be checked against the teaching available before that step. Multiple guided-step sessions are outside this scan.
+**69 sessions require cue-level sequence review.** The scan finds teaching after the single guided-practice step. It does not establish that every flagged session is defective: each cue, answer and distractor must be checked against the teaching available before that step. Multiple guided-step sessions are outside this scan.
 
 The inventories reflect the live curriculum. Recent corrected sessions no longer carry their old ordering flags. Their implemented corrections remain pending final semantic audit. This inventory does not close CA009/CA010 or approve any other session.
 
@@ -64,7 +64,6 @@ The inventories reflect the live curriculum. Recent corrected sessions no longer
 | 15 | `u15-s-imperative` | `u15-st-guided-imperative-1` | `u15-st-teach-imperative-2`, `u15-st-teach-imperative-3` |
 | 15 | `u15-s-say-request` | `u15-st-guided-say-request-1` | `u15-st-teach-say-request-2`, `u15-st-teach-say-request-3`, `u15-st-teach-say-request-4` |
 | 15 | `u15-s-aspect-consolidate` | `u15-st-guided-aspect-consolidate-1` | `u15-st-teach-aspect-consolidate-2`, `u15-st-teach-aspect-consolidate-3` |
-| 28 | `u28-s-readings` | `u28-st-guided-readings-1` | `u28-st-teach-readings-2` |
 | 29 | `u29-s-active` | `u29-st-guided-active-1` | `u29-st-teach-active-2`, `u29-st-teach-active-3` |
 | 29 | `u29-s-short-adjective` | `u29-st-guided-short-adjective-1` | `u29-st-teach-short-adjective-2`, `u29-st-teach-short-adjective-3` |
 | 29 | `u29-s-bookish-note` | `u29-st-guided-bookish-note-1` | `u29-st-teach-bookish-note-2` |
