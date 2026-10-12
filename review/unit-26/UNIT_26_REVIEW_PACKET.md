@@ -11,12 +11,12 @@ Unit 26 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 7b3574acc58335510def5d8a6c70a26cfdf6ba75
-- Unit content-review SHA-256: f20defdb7d081b696ec378eeb62c4b1ec124203e5c70d49ce2955f492b351ad4
+- Curriculum source commit: 1c6d6cca475d956b15cb7f43c78bfccc8c0b6592
+- Unit content-review SHA-256: b03810be20873e05e953205f1ca32a2c361a6c59aef8cdcdb87dc7ae12a824c4
 - Mapping-package SHA-256: c15db22cc82dcfa6c49d6d0e50beea0f90b16dfc4db90777623e99d540790489
-- Pack content-review SHA-256: ae8635ec33aa598c57e35d84b9b4811c8a08e22e282b99b024bc63f0720c981b
-- Review-package SHA-256: 209887e11419326fb8068f8ec1238f7475d5aee9d91c85e031706ff3f2709756
-- Repository source SHA-256: c62c5e2c90872387c4dc0d7368c46a63de9bc535f566fa6c096fd25af27147fa
+- Pack content-review SHA-256: 1e91dc575c48ce9679fcd8b9ba94e6f15aacdcec01af2ffe83ff3651638f0003
+- Review-package SHA-256: 72687fdcc64cae8166e0e8e1bfbb75e558acb68f2edfc0b812b252c69ade5e13
+- Repository source SHA-256: 49f912a07581fc56df14df234615f11f4ec4f7b2da85cc41fe408f18d67f674e
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -132,9 +132,9 @@ remediation=u26-st-rem-word-order
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8ae2bbba4fc283f4ae6a61d65763425aaa3ede5c22040207061dece0e53265c2
+- Content hash: 87e5dc9c2009601575ecbe55dc7e22b37a4c3b5ac716a446b53b6eee8068be62
 
-title=Choose the admitted label for the written capital form
+title=Recognize written letter case and its address limits
 kind=RECOGNITION
 unitNumber=26
 instruction=u26-st-orient,u26-st-teach-vy-capital-1,u26-st-teach-vy-capital-2,u26-st-teach-vy-capital-3
@@ -151,9 +151,9 @@ remediation=u26-st-rem-vy-capital
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b2289fcc873499f4bb850ccf2e569bc326fd011bdeaffcc124d58ae93d83d612
+- Content hash: 1686d8ab6002bc8450a9d2206dfccf1e2cfbf6bcbb880f7ff04dcb6377541dfe
 
-title=Choose the admitted gloss for the shown address mark
+title=Distinguish locality, street, building and apartment marks
 kind=RECOGNITION
 unitNumber=26
 instruction=u26-st-orient,u26-st-teach-address-notation-1,u26-st-teach-address-notation-2,u26-st-teach-address-notation-3
@@ -208,9 +208,9 @@ remediation=u26-st-rem-letter-writing
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 960414effa5366460dd8fdf0c21107fe577b50ebe7b430f2c8a24c83c041f7fb
+- Content hash: 231ec53699a562df4b312ee3b96e7fefc043db77bdb071d8d8c697734c6f452c
 
-title=Choose the admitted neutral correspondence fragment
+title=Distinguish enclosure and closing fragments
 kind=RECOGNITION
 unitNumber=26
 instruction=u26-st-orient,u26-st-teach-correspondence-1,u26-st-teach-correspondence-2
@@ -477,12 +477,12 @@ remediationStepId=u26-st-rem-word-order
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: dfe13d164e6f26ff6d103609c549952f951efe38643bf53c34bc128e16e892f7
+- Content hash: dd199efb90dd9810b16df6bafa28e5211b824735875b762a3c943a32d968a7a5
 
-title=Choose the admitted label for the written capital form
+title=Recognize written letter case and its address limits
 estimatedMinutes=12
 objectives=obj-u26-vy-capital
-steps=u26-st-teach-vy-capital-1,u26-st-guided-vy-capital-1,u26-st-teach-vy-capital-2,u26-st-teach-vy-capital-3,u26-st-rem-vy-capital,u26-st-check-vy-capital
+steps=u26-st-teach-vy-capital-1,u26-st-teach-vy-capital-2,u26-st-teach-vy-capital-3,u26-st-guided-vy-capital-1,u26-st-rem-vy-capital,u26-st-check-vy-capital
 
 ### STEP `u26-st-teach-vy-capital-1`
 
@@ -492,11 +492,11 @@ steps=u26-st-teach-vy-capital-1,u26-st-guided-vy-capital-1,u26-st-teach-vy-capit
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ba99a697f2084359145f4d3ce130841ba83eb4f454c85597744c4767a53e6f7d
+- Content hash: 94b4802f0ea888e838470cdd6eb5556bc6bae4db8cf1b7986c7e894e2e9099cd
 
 kind=TEACH
-title=Admitted lines
-body=Read the admitted examples on this card.
+title=Recognize the initial letter before interpreting the addressee
+body=The supplied forms Вы, Вас and Вам each begin with a capital letter. The answer capital letter describes that visible initial. Minuscule means a lowercase letter; the option minuscule does not describe these displayed initials. The option plural form describes grammatical shape, not letter case. These are recognition checks, not a test of how many people a sentence addresses.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -506,28 +506,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u26-st-guided-vy-capital-1`
-
-- Objectives: obj-u26-vy-capital
-- Sessions: u26-s-vy-capital
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3ac6b404321b0357efdafe73295df7df093e1020ba39e8a4e05c45fa16608f0c
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u26-g-vy-capital-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u26-st-rem-vy-capital
-
 ### STEP `u26-st-teach-vy-capital-2`
 
 - Objectives: obj-u26-vy-capital
@@ -536,11 +514,11 @@ remediationStepId=u26-st-rem-vy-capital
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e63ea3837986774b1299ff67b5b17a4b6506e1e974c75c756784b6c321f0bd95
+- Content hash: 997e6a9f6901ee5f9f92b03af2303588d53518ac5d42738b5df039399a3b9e52
 
 kind=TEACH
-title=Admitted instruction
-body=It begins with a capital letter
+title=Distinguish polite singular address from grammatical plural shape
+body=The retained grammar note describes polite address to one person using forms shared with the plural. In personal letters and official papers, a capital initial can mark respectful address to one recipient. This written convention is different from plural meaning. The same grammatical forms can address several people, so a capital initial alone does not establish the number of addressees. Identify the recipient from context, not from the English label plural form.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -558,11 +536,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c8b7465538c80ac9d800e1a616b5766a43b75501bbfb8dbd33e8a499e961ede2
+- Content hash: 1949de778ffaaf7ca2701f3642c4d5cdf79688d6277d3ffdf3c043f8165d2475
 
 kind=TEACH
-title=Admitted lines
-body=Read the admitted examples on this card.
+title=Keep capitalization tied to written context
+body=In the supplied respectful written-address convention, Вы, Вас and Вам have capital initials. Current Gramota guidance distinguishes respectful address to one recipient from address to several people or a general audience, where lowercase is used. A sentence-initial capital is also ordinary sentence capitalization and need not mark respectful singular address. Lowercase outside this convention is not automatically rude. Capitalization cannot be heard in speech. These checks recognize the shown letter case; choosing forms for a new letter requires recipient and genre context.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -572,6 +550,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u26-st-guided-vy-capital-1`
+
+- Objectives: obj-u26-vy-capital
+- Sessions: u26-s-vy-capital
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 22fcb5bceb8aa3ecbbd3fad93313726976a26a6bbcf2b3dca0be4cf5da492ea2
+
+kind=GUIDED
+title=Guided practice
+body=Read the displayed form or fragment and choose the supplied meaning. A miss returns to all teaching cards and worked examples.
+dominantAction=Continue
+references=
+items=u26-g-vy-capital-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u26-st-rem-vy-capital
+
 ### STEP `u26-st-rem-vy-capital`
 
 - Objectives: obj-u26-vy-capital
@@ -580,15 +580,19 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e6e9d1fc23ef4698489479ec0f9f879453b634ebd39ae8b467c6c80e0cd82be3
+- Content hash: ea7dbb661b0522b6fce0ee891d7a305689fa81e05b458065df5f42f13fdfb7ea
 
 kind=REMEDIATE
-title=Remediation
-body=It begins with a capital letter
+title=Review the complete written-form distinction
+body=The supplied forms Вы, Вас and Вам each begin with a capital letter. The answer capital letter describes that visible initial. Minuscule means a lowercase letter; the option minuscule does not describe these displayed initials. The option plural form describes grammatical shape, not letter case. These are recognition checks, not a test of how many people a sentence addresses.
+
+The retained grammar note describes polite address to one person using forms shared with the plural. In personal letters and official papers, a capital initial can mark respectful address to one recipient. This written convention is different from plural meaning. The same grammatical forms can address several people, so a capital initial alone does not establish the number of addressees. Identify the recipient from context, not from the English label plural form.
+
+In the supplied respectful written-address convention, Вы, Вас and Вам have capital initials. Current Gramota guidance distinguishes respectful address to one recipient from address to several people or a general audience, where lowercase is used. A sentence-initial capital is also ordinary sentence capitalization and need not mark respectful singular address. Lowercase outside this convention is not automatically rude. Capitalization cannot be heard in speech. These checks recognize the shown letter case; choosing forms for a new letter requires recipient and genre context.
 dominantAction=Continue
 references=
 items=
-examples=ex-u26-vy-capital-0,ex-u26-vy-capital-1
+examples=ex-u26-vy-capital-0,ex-u26-vy-capital-1,ex-u26-vy-capital-2
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -602,11 +606,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 2b5281535826fba9db79c30df0f2a5044d2fbb9b829469b3147caa0debc50744
+- Content hash: 602002ef7118be5017716e127a2b7d53db8471b812c10cd7357d99104accee0a
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=These checks recognize the retained written forms and meanings. They do not demonstrate complete letter composition or address production.
 dominantAction=Continue
 references=
 items=u26-i-vy-capital-1,u26-i-vy-capital-2
@@ -624,12 +628,12 @@ remediationStepId=u26-st-rem-vy-capital
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 682d52f287b751b9663c6ef2b4942da5761d1ece042826efaca8c5a2345cb29d
+- Content hash: 96571ea39620901a00581be5389c9c29c410e058b6165697b627cc5c4c18395c
 
-title=Choose the admitted gloss for the shown address mark
+title=Distinguish locality, street, building and apartment marks
 estimatedMinutes=12
 objectives=obj-u26-address-notation
-steps=u26-st-teach-address-notation-1,u26-st-guided-address-notation-1,u26-st-teach-address-notation-2,u26-st-teach-address-notation-3,u26-st-rem-address-notation,u26-st-check-address-notation
+steps=u26-st-teach-address-notation-1,u26-st-teach-address-notation-2,u26-st-teach-address-notation-3,u26-st-guided-address-notation-1,u26-st-rem-address-notation,u26-st-check-address-notation
 
 ### STEP `u26-st-teach-address-notation-1`
 
@@ -639,11 +643,11 @@ steps=u26-st-teach-address-notation-1,u26-st-guided-address-notation-1,u26-st-te
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 0a947794239972ee26459a28b51dcec56dec56fc966a3bcdaa6be799a2793671
+- Content hash: 807ba9caf6df3115db7916b4f0cb07519d954220a2fdfeaf7b2524b59497a689
 
 kind=TEACH
-title=Admitted lines
-body=Read the admitted examples on this card.
+title=Recognize the locality mark
+body=In 115114 г. Москва, г. marks the city or locality; the supplied English gloss is city. The number is a postcode, not the abbreviation being tested. The options street and building refer to different components. Read the requested abbreviation rather than treating every number or place name as the same part of an address.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -653,28 +657,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u26-st-guided-address-notation-1`
-
-- Objectives: obj-u26-address-notation
-- Sessions: u26-s-address-notation
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a6e443a597b0eceba90a6b2e9ff659d236c1537f68e0b024aff1d31a4488101c
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u26-g-address-notation-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u26-st-rem-address-notation
-
 ### STEP `u26-st-teach-address-notation-2`
 
 - Objectives: obj-u26-address-notation
@@ -683,11 +665,11 @@ remediationStepId=u26-st-rem-address-notation
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5a246ecec5dc07e2aa2699c9489f69c5d44329e2dd8c2a877c7df31cd36f79c4
+- Content hash: 42b4e7340ff28306ee3ed1bc307df03439a45e0cf07991985ae718513507822a
 
 kind=TEACH
-title=Admitted instruction
-body=The lines are marked with abbreviations:
+title=Distinguish street, building and apartment
+body=In ул. Петрова, д. 14, кв. 15, the first mark ул. identifies the street. The later д. identifies the building, and кв. identifies the apartment. The supplied line thus separates street name, building number and apartment number. The answer street matches the first mark; city belongs to the locality mark and apartment belongs to the later mark. Abbreviations label address components; their positions and associated numbers help distinguish them.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -705,11 +687,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f95834f822324f926b9bb677a9194325f12e885f28cf1c790bf133e1fb15e4e4
+- Content hash: 41305962b63fd11c7ca10a57f1fa53aa29ebb6399c43943f69c2f0e7d112f28d
 
 kind=TEACH
-title=Admitted lines
-body=Read the admitted examples on this card.
+title=Identify a building mark without inventing delivery details
+body=The separate supplied mark д. has the English gloss building. It does not name the city or street. The line with building and apartment numbers shows why those two numbers must not be confused. These checks recognize marks in retained example lines. They do not prove that a sample address is current or deliverable, prescribe a universal postal order, or require an apartment number where none exists.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -719,6 +701,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u26-st-guided-address-notation-1`
+
+- Objectives: obj-u26-address-notation
+- Sessions: u26-s-address-notation
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: b44ad35c7ed72b1405631dfbdea7e8f9e5b4f9da0bb247b628d76cbbc0dc111f
+
+kind=GUIDED
+title=Guided practice
+body=Read the displayed form or fragment and choose the supplied meaning. A miss returns to all teaching cards and worked examples.
+dominantAction=Continue
+references=
+items=u26-g-address-notation-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u26-st-rem-address-notation
+
 ### STEP `u26-st-rem-address-notation`
 
 - Objectives: obj-u26-address-notation
@@ -727,15 +731,19 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d4d74495d586e79958f04bcd376a6c6b7c380468d8a650f3ed0dd7a1ca8885ef
+- Content hash: 18e9634edce30b25fffcddfb0a38ab9dfdd505bd2d028856a45c430dc45f11c1
 
 kind=REMEDIATE
-title=Remediation
-body=The lines are marked with abbreviations:
+title=Review the complete written-form distinction
+body=In 115114 г. Москва, г. marks the city or locality; the supplied English gloss is city. The number is a postcode, not the abbreviation being tested. The options street and building refer to different components. Read the requested abbreviation rather than treating every number or place name as the same part of an address.
+
+In ул. Петрова, д. 14, кв. 15, the first mark ул. identifies the street. The later д. identifies the building, and кв. identifies the apartment. The supplied line thus separates street name, building number and apartment number. The answer street matches the first mark; city belongs to the locality mark and apartment belongs to the later mark. Abbreviations label address components; their positions and associated numbers help distinguish them.
+
+The separate supplied mark д. has the English gloss building. It does not name the city or street. The line with building and apartment numbers shows why those two numbers must not be confused. These checks recognize marks in retained example lines. They do not prove that a sample address is current or deliverable, prescribe a universal postal order, or require an apartment number where none exists.
 dominantAction=Continue
 references=
 items=
-examples=ex-u26-address-notation-0,ex-u26-address-notation-1
+examples=ex-u26-address-notation-0,ex-u26-address-notation-1,ex-u26-address-notation-2
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -749,11 +757,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a84deed1d8775831ca70fb8d4b71138ec1638d1a707f30d672c5f4145900886c
+- Content hash: 18d8ce7f55778aff9f51fa39ffcb53cc52d08634b2260f46a0bec93e981d769a
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=These checks recognize the retained written forms and meanings. They do not demonstrate complete letter composition or address production.
 dominantAction=Continue
 references=
 items=u26-i-address-notation-1,u26-i-address-notation-2
@@ -1049,12 +1057,12 @@ remediationStepId=u26-st-rem-letter-writing
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1707d726b8685e8b553f4f48abe77a68c535a78a046dd08cd8adfe2a8511f836
+- Content hash: 36731d0b38e5692bd03d0b5409b1e844b71ecf7c988b9c9b874128cf10391dbd
 
-title=Choose the admitted neutral correspondence fragment
+title=Distinguish enclosure and closing fragments
 estimatedMinutes=12
 objectives=obj-u26-correspondence
-steps=u26-st-teach-correspondence-1,u26-st-guided-correspondence-1,u26-st-teach-correspondence-2,u26-st-rem-correspondence,u26-st-check-correspondence
+steps=u26-st-teach-correspondence-1,u26-st-teach-correspondence-2,u26-st-guided-correspondence-1,u26-st-rem-correspondence,u26-st-check-correspondence
 
 ### STEP `u26-st-teach-correspondence-1`
 
@@ -1064,15 +1072,37 @@ steps=u26-st-teach-correspondence-1,u26-st-guided-correspondence-1,u26-st-teach-
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ecb2f69c86a76e30100c45ba82ddeff92d9b647667e4dcd1797cb0418b4ded39
+- Content hash: 7b6a9e9fc0cf5bf6f589c663a6c0e329a58bbc703a6f64d7382ce1a6e930f3b4
 
 kind=TEACH
-title=Admitted lines
-body=Read the admitted examples on this card. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+title=Separate an enclosure from a closing
+body=The retained pair к настоящему письму прилагается — enclosed please find introduces something supplied with the letter. The English gloss is a conventional correspondence expression, not a complete list of possible translations. It has an enclosure function. С уважением — Respectfully is a closing formula before the signature. An enclosure statement and a closing do different jobs: enclosed please find does not close the letter, and Respectfully does not say that a document is enclosed.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
 examples=ex-u26-correspondence-0,ex-u26-correspondence-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u26-st-teach-correspondence-2`
+
+- Objectives: obj-u26-correspondence
+- Sessions: u26-s-correspondence
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 364a93fde8d87bc41cb07d5c965bff5b9dc19a7a8ddb42c03d4391a3b508f4b0
+
+kind=TEACH
+title=Choose the fragment by its correspondence function
+body=When the cue is к настоящему письму прилагается, choose enclosed please find. When the cue is С уважением, choose Respectfully. When the English cue is enclosed please find, the retained Russian match is к настоящему письму прилагается rather than С уважением. These two source-supplied pairs support recognition of enclosure versus closing, not universal formulas for every recipient or mastery of composing a complete letter. Use the retained example fragments; no new Russian sentence is required here.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1086,11 +1116,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 6e79bfc172cb7400c25ab1749666ed163f05dd57236cedbcd7cf6838b3473880
+- Content hash: 26358130087a0553dde4d3335d50ce2bc2bb8eee38fdfe0c390f03c1f334ee2d
 
 kind=GUIDED
 title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
+body=Read the displayed form or fragment and choose the supplied meaning. A miss returns to all teaching cards and worked examples.
 dominantAction=Continue
 references=
 items=u26-g-correspondence-0
@@ -1100,28 +1130,6 @@ bookDirection=
 companionDirection=
 remediationStepId=u26-st-rem-correspondence
 
-### STEP `u26-st-teach-correspondence-2`
-
-- Objectives: obj-u26-correspondence
-- Sessions: u26-s-correspondence
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 80ae326250fc01d26c017584f273dbebcc3ff6bfd8cce7d0378756902abcd375
-
-kind=TEACH
-title=Admitted instruction
-body=к настоящему письму прилагается—enclosed please find
-dominantAction=Continue
-references=ref-u2630-attribution
-items=
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
 ### STEP `u26-st-rem-correspondence`
 
 - Objectives: obj-u26-correspondence
@@ -1130,11 +1138,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e668f5716e3390211a2ca129dcb68b8e853ef1cb19b564f5941a6316f6fa2834
+- Content hash: 365f72862228cffe5d864d50f325e2bdba3692a02a5552cee0d00a877640c6e0
 
 kind=REMEDIATE
-title=Remediation
-body=к настоящему письму прилагается—enclosed please find
+title=Review the complete written-form distinction
+body=The retained pair к настоящему письму прилагается — enclosed please find introduces something supplied with the letter. The English gloss is a conventional correspondence expression, not a complete list of possible translations. It has an enclosure function. С уважением — Respectfully is a closing formula before the signature. An enclosure statement and a closing do different jobs: enclosed please find does not close the letter, and Respectfully does not say that a document is enclosed.
+
+When the cue is к настоящему письму прилагается, choose enclosed please find. When the cue is С уважением, choose Respectfully. When the English cue is enclosed please find, the retained Russian match is к настоящему письму прилагается rather than С уважением. These two source-supplied pairs support recognition of enclosure versus closing, not universal formulas for every recipient or mastery of composing a complete letter. Use the retained example fragments; no new Russian sentence is required here.
 dominantAction=Continue
 references=
 items=
@@ -1152,11 +1162,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d236cd2fb61e4e4fb3fcbbac30fee0761705dbafb36be2ac4d0b5b6e5ac019b4
+- Content hash: 8edb57b794c66766ea44541f8784653a5a856e6f87083abdf7df030a3d60f5b6
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=These checks recognize the retained written forms and meanings. They do not demonstrate complete letter composition or address production.
 dominantAction=Continue
 references=
 items=u26-i-correspondence-1,u26-i-correspondence-2
@@ -8611,6 +8621,1136 @@ attribution=Independently authored Russian Companion pending letter correction,2
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
 sourceHash=9eb8191a1f3f63e03e646fb305215ba8401e5a1c31ae1f6d2aa79f670ed6af3c
 contentHash=012ab8f74509f135e510ad3d930ff2e1b92c944e2d060f0b35ddeee63616b486
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-written-address-notation-0`
+
+- Objectives: obj-u26-address-notation
+- Sessions: u26-s-orient, u26-s-address-notation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d2d3261ab38da8976ad2148915ca5defa5463cdbcc5520ee0aca6a6982301655
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-address-notation:written-0
+originalSourceText=Retained licensed Russian grammar revision1369617627, Wikibooks Various stuff revision3353858 address examples and ReadyRussian frozen enclosure/closing pairs. Gramota primary indexed guidance consulted2026-10-11: https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-pisat-vy-i-vash-s-propisnoy-ili-so-strochnoy-bukvy and https://gramota.ru/biblioteka/spravochniki/spravochnik-po-punktuatsii/s-uvazheniem . Full pages returned403; complete fresh retrieval not claimed. Independent English explanation; no copied book prose or new Russian generation; qualified review pending.
+Distinguish locality, street, building and apartment marks
+shippedText=Distinguish locality, street, building and apartment marks
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independent English explanation,2026-10-11; retained licensed Russian fragments; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=374a0adde15d9e8a7d62eb13ecf332eb06c03c3337a5433f7383de34bfda8464
+contentHash=6f24a016d8e0ed83c6347be9d1fa4bcdf1da190c03f238db26befb5220de12ed
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-written-address-notation-1`
+
+- Objectives: obj-u26-address-notation
+- Sessions: u26-s-orient, u26-s-address-notation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a4003d39ee80b77c3941f56dbc1e634c33848f33736e715e734a5cb41865c7ef
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-address-notation:written-1
+originalSourceText=Retained licensed Russian grammar revision1369617627, Wikibooks Various stuff revision3353858 address examples and ReadyRussian frozen enclosure/closing pairs. Gramota primary indexed guidance consulted2026-10-11: https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-pisat-vy-i-vash-s-propisnoy-ili-so-strochnoy-bukvy and https://gramota.ru/biblioteka/spravochniki/spravochnik-po-punktuatsii/s-uvazheniem . Full pages returned403; complete fresh retrieval not claimed. Independent English explanation; no copied book prose or new Russian generation; qualified review pending.
+Recognize the locality mark
+shippedText=Recognize the locality mark
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independent English explanation,2026-10-11; retained licensed Russian fragments; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6eab714f00f1f906dfcebf67f78c3b6006d3d0e86132101e08c1d756847de55a
+contentHash=d029732b57eca48ea81b906b15a3305d0f2baa016586cceefd6f0e592d78d84e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-written-address-notation-10`
+
+- Objectives: obj-u26-address-notation
+- Sessions: u26-s-orient, u26-s-address-notation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8877862cd5c2f15523a0beeda4e8d9dfecfec70ecab2e946e7b532156e50c0ce
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-address-notation:written-10
+originalSourceText=Retained licensed Russian grammar revision1369617627, Wikibooks Various stuff revision3353858 address examples and ReadyRussian frozen enclosure/closing pairs. Gramota primary indexed guidance consulted2026-10-11: https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-pisat-vy-i-vash-s-propisnoy-ili-so-strochnoy-bukvy and https://gramota.ru/biblioteka/spravochniki/spravochnik-po-punktuatsii/s-uvazheniem . Full pages returned403; complete fresh retrieval not claimed. Independent English explanation; no copied book prose or new Russian generation; qualified review pending.
+In 115114 г. Москва, г. marks the city or locality; the supplied English gloss is city. The number is a postcode, not the abbreviation being tested. The options street and building refer to different components. Read the requested abbreviation rather than treating every number or place name as the same part of an address.
+
+In ул. Петрова, д. 14, кв. 15, the first mark ул. identifies the street. The later д. identifies the building, and кв. identifies the apartment. The supplied line thus separates street name, building number and apartment number. The answer street matches the first mark; city belongs to the locality mark and apartment belongs to the later mark. Abbreviations label address components; their positions and associated numbers help distinguish them.
+
+The separate supplied mark д. has the English gloss building. It does not name the city or street. The line with building and apartment numbers shows why those two numbers must not be confused. These checks recognize marks in retained example lines. They do not prove that a sample address is current or deliverable, prescribe a universal postal order, or require an apartment number where none exists.
+shippedText=In 115114 г. Москва, г. marks the city or locality; the supplied English gloss is city. The number is a postcode, not the abbreviation being tested. The options street and building refer to different components. Read the requested abbreviation rather than treating every number or place name as the same part of an address.
+
+In ул. Петрова, д. 14, кв. 15, the first mark ул. identifies the street. The later д. identifies the building, and кв. identifies the apartment. The supplied line thus separates street name, building number and apartment number. The answer street matches the first mark; city belongs to the locality mark and apartment belongs to the later mark. Abbreviations label address components; their positions and associated numbers help distinguish them.
+
+The separate supplied mark д. has the English gloss building. It does not name the city or street. The line with building and apartment numbers shows why those two numbers must not be confused. These checks recognize marks in retained example lines. They do not prove that a sample address is current or deliverable, prescribe a universal postal order, or require an apartment number where none exists.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independent English explanation,2026-10-11; retained licensed Russian fragments; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=95f2926e851352ebb24e01950437302d1603d082c967e4f5c61b9fb649d95bc7
+contentHash=9df565bfe8bcbbcb89d6ec2a2800ef5c276a81fa83e923c54cfba5dc1223bcaa
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-written-address-notation-11`
+
+- Objectives: obj-u26-address-notation
+- Sessions: u26-s-orient, u26-s-address-notation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 39ec417d2f7b5f99e7723b941c3f1d59ff1c801ba04295f7405101488773146a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-address-notation:written-11
+originalSourceText=Retained licensed Russian grammar revision1369617627, Wikibooks Various stuff revision3353858 address examples and ReadyRussian frozen enclosure/closing pairs. Gramota primary indexed guidance consulted2026-10-11: https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-pisat-vy-i-vash-s-propisnoy-ili-so-strochnoy-bukvy and https://gramota.ru/biblioteka/spravochniki/spravochnik-po-punktuatsii/s-uvazheniem . Full pages returned403; complete fresh retrieval not claimed. Independent English explanation; no copied book prose or new Russian generation; qualified review pending.
+Independent checks
+shippedText=Independent checks
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independent English explanation,2026-10-11; retained licensed Russian fragments; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7051de492b43b86c783499cba67f4076f082c26e8f57481d2d65776a0d7eaecb
+contentHash=012ab8f74509f135e510ad3d930ff2e1b92c944e2d060f0b35ddeee63616b486
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-written-address-notation-12`
+
+- Objectives: obj-u26-address-notation
+- Sessions: u26-s-orient, u26-s-address-notation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 98adb7e6dd04b811c609cea0065f616176bd4ed373fa17f1c564f05b124ba99f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-address-notation:written-12
+originalSourceText=Retained licensed Russian grammar revision1369617627, Wikibooks Various stuff revision3353858 address examples and ReadyRussian frozen enclosure/closing pairs. Gramota primary indexed guidance consulted2026-10-11: https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-pisat-vy-i-vash-s-propisnoy-ili-so-strochnoy-bukvy and https://gramota.ru/biblioteka/spravochniki/spravochnik-po-punktuatsii/s-uvazheniem . Full pages returned403; complete fresh retrieval not claimed. Independent English explanation; no copied book prose or new Russian generation; qualified review pending.
+These checks recognize the retained written forms and meanings. They do not demonstrate complete letter composition or address production.
+shippedText=These checks recognize the retained written forms and meanings. They do not demonstrate complete letter composition or address production.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independent English explanation,2026-10-11; retained licensed Russian fragments; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bb38d59c1a981c58d04d3435ecad2d519e8e88ec680b747a4920554ac18e37e8
+contentHash=3199c3b787bf7a431a09ca718ddd8321c300c42b25ad0be120acefd8270f11df
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-written-address-notation-2`
+
+- Objectives: obj-u26-address-notation
+- Sessions: u26-s-orient, u26-s-address-notation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 38311ceb7e2810b8095278eae872be2f9cbd24fc4dfc06095209804dfb758bd6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-address-notation:written-2
+originalSourceText=Retained licensed Russian grammar revision1369617627, Wikibooks Various stuff revision3353858 address examples and ReadyRussian frozen enclosure/closing pairs. Gramota primary indexed guidance consulted2026-10-11: https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-pisat-vy-i-vash-s-propisnoy-ili-so-strochnoy-bukvy and https://gramota.ru/biblioteka/spravochniki/spravochnik-po-punktuatsii/s-uvazheniem . Full pages returned403; complete fresh retrieval not claimed. Independent English explanation; no copied book prose or new Russian generation; qualified review pending.
+In 115114 г. Москва, г. marks the city or locality; the supplied English gloss is city. The number is a postcode, not the abbreviation being tested. The options street and building refer to different components. Read the requested abbreviation rather than treating every number or place name as the same part of an address.
+shippedText=In 115114 г. Москва, г. marks the city or locality; the supplied English gloss is city. The number is a postcode, not the abbreviation being tested. The options street and building refer to different components. Read the requested abbreviation rather than treating every number or place name as the same part of an address.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independent English explanation,2026-10-11; retained licensed Russian fragments; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ef4e24646e67c3b346b99caa23de5402ea75df814cd8b553cdb3d5bf451e5ed7
+contentHash=31511a1031c2b0e7fb715d988a6d4440321b668d25d37b82086aaf521843d4e7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-written-address-notation-3`
+
+- Objectives: obj-u26-address-notation
+- Sessions: u26-s-orient, u26-s-address-notation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 448cbda30d5d4c6ff7624242d6d3737d172b175fd35e3e23e5b27fc5d47bfaf3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-address-notation:written-3
+originalSourceText=Retained licensed Russian grammar revision1369617627, Wikibooks Various stuff revision3353858 address examples and ReadyRussian frozen enclosure/closing pairs. Gramota primary indexed guidance consulted2026-10-11: https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-pisat-vy-i-vash-s-propisnoy-ili-so-strochnoy-bukvy and https://gramota.ru/biblioteka/spravochniki/spravochnik-po-punktuatsii/s-uvazheniem . Full pages returned403; complete fresh retrieval not claimed. Independent English explanation; no copied book prose or new Russian generation; qualified review pending.
+Distinguish street, building and apartment
+shippedText=Distinguish street, building and apartment
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independent English explanation,2026-10-11; retained licensed Russian fragments; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=90af460becfee93a0a9f792e92e8fd84234ed0feeda09956a0a6b03a4f0f9fca
+contentHash=9d3ff2620b581012c508eb0a7cf59e33d4487bb5aaeca30df84efd4d0f3f3a35
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-written-address-notation-4`
+
+- Objectives: obj-u26-address-notation
+- Sessions: u26-s-orient, u26-s-address-notation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fcc5cabf71357d21b5135159d7e6b6a0925622a9e43a98d3731fb9cdfbab4d4b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-address-notation:written-4
+originalSourceText=Retained licensed Russian grammar revision1369617627, Wikibooks Various stuff revision3353858 address examples and ReadyRussian frozen enclosure/closing pairs. Gramota primary indexed guidance consulted2026-10-11: https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-pisat-vy-i-vash-s-propisnoy-ili-so-strochnoy-bukvy and https://gramota.ru/biblioteka/spravochniki/spravochnik-po-punktuatsii/s-uvazheniem . Full pages returned403; complete fresh retrieval not claimed. Independent English explanation; no copied book prose or new Russian generation; qualified review pending.
+In ул. Петрова, д. 14, кв. 15, the first mark ул. identifies the street. The later д. identifies the building, and кв. identifies the apartment. The supplied line thus separates street name, building number and apartment number. The answer street matches the first mark; city belongs to the locality mark and apartment belongs to the later mark. Abbreviations label address components; their positions and associated numbers help distinguish them.
+shippedText=In ул. Петрова, д. 14, кв. 15, the first mark ул. identifies the street. The later д. identifies the building, and кв. identifies the apartment. The supplied line thus separates street name, building number and apartment number. The answer street matches the first mark; city belongs to the locality mark and apartment belongs to the later mark. Abbreviations label address components; their positions and associated numbers help distinguish them.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independent English explanation,2026-10-11; retained licensed Russian fragments; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=32ca3eff03b93091679abc865bda7eaf9a88836046671e6663e9ab9d2d760159
+contentHash=846f6a88704895522bef40ca47fe0f8a21ea3314c72e70d0a148e7bb2beade97
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-written-address-notation-5`
+
+- Objectives: obj-u26-address-notation
+- Sessions: u26-s-orient, u26-s-address-notation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 965e19f1d7514911f5853c0d4bfb77425f2b2af1327e14885a20835debc3db51
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-address-notation:written-5
+originalSourceText=Retained licensed Russian grammar revision1369617627, Wikibooks Various stuff revision3353858 address examples and ReadyRussian frozen enclosure/closing pairs. Gramota primary indexed guidance consulted2026-10-11: https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-pisat-vy-i-vash-s-propisnoy-ili-so-strochnoy-bukvy and https://gramota.ru/biblioteka/spravochniki/spravochnik-po-punktuatsii/s-uvazheniem . Full pages returned403; complete fresh retrieval not claimed. Independent English explanation; no copied book prose or new Russian generation; qualified review pending.
+Identify a building mark without inventing delivery details
+shippedText=Identify a building mark without inventing delivery details
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independent English explanation,2026-10-11; retained licensed Russian fragments; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c9c548c20132ada481c558375895df7b0570205d63f5c6c6e77f2b1f19849490
+contentHash=43dbb33066e3ed0fa2f809b952dbfcab1aa65d5e6bf4e8368df7bbfb988accad
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-written-address-notation-6`
+
+- Objectives: obj-u26-address-notation
+- Sessions: u26-s-orient, u26-s-address-notation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 42150c4a9cad9f82bc324561e575a1e3662af33ff997c6d5674032275992e0e6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-address-notation:written-6
+originalSourceText=Retained licensed Russian grammar revision1369617627, Wikibooks Various stuff revision3353858 address examples and ReadyRussian frozen enclosure/closing pairs. Gramota primary indexed guidance consulted2026-10-11: https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-pisat-vy-i-vash-s-propisnoy-ili-so-strochnoy-bukvy and https://gramota.ru/biblioteka/spravochniki/spravochnik-po-punktuatsii/s-uvazheniem . Full pages returned403; complete fresh retrieval not claimed. Independent English explanation; no copied book prose or new Russian generation; qualified review pending.
+The separate supplied mark д. has the English gloss building. It does not name the city or street. The line with building and apartment numbers shows why those two numbers must not be confused. These checks recognize marks in retained example lines. They do not prove that a sample address is current or deliverable, prescribe a universal postal order, or require an apartment number where none exists.
+shippedText=The separate supplied mark д. has the English gloss building. It does not name the city or street. The line with building and apartment numbers shows why those two numbers must not be confused. These checks recognize marks in retained example lines. They do not prove that a sample address is current or deliverable, prescribe a universal postal order, or require an apartment number where none exists.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independent English explanation,2026-10-11; retained licensed Russian fragments; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1376734034493f3a97e9bca0916a17ccfcecff5daaca6c4d97e83d1a3f1d47ab
+contentHash=bd937ab4991414de891726c2acf4205dadc5e444a07142322e6f29453e548308
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-written-address-notation-7`
+
+- Objectives: obj-u26-address-notation
+- Sessions: u26-s-orient, u26-s-address-notation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 376728f8fb0f99c1a72462a25e721f5b87b53e53aef18f229c6bba6ea97996ae
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-address-notation:written-7
+originalSourceText=Retained licensed Russian grammar revision1369617627, Wikibooks Various stuff revision3353858 address examples and ReadyRussian frozen enclosure/closing pairs. Gramota primary indexed guidance consulted2026-10-11: https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-pisat-vy-i-vash-s-propisnoy-ili-so-strochnoy-bukvy and https://gramota.ru/biblioteka/spravochniki/spravochnik-po-punktuatsii/s-uvazheniem . Full pages returned403; complete fresh retrieval not claimed. Independent English explanation; no copied book prose or new Russian generation; qualified review pending.
+Guided practice
+shippedText=Guided practice
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independent English explanation,2026-10-11; retained licensed Russian fragments; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=dc83601b6d8f248e0dd15c44b3a4be74640cbdddd8a5ba701cb6fa49f5a682c0
+contentHash=cb1d4a3d9d5db425da3797c7a997db3588ec122a60c4d645ea31cd849f76ab3c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-written-address-notation-8`
+
+- Objectives: obj-u26-address-notation
+- Sessions: u26-s-orient, u26-s-address-notation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c6717545c76b716bcd496c412970721bdc97a8f7c664eee86252c32b7fe5ffbf
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-address-notation:written-8
+originalSourceText=Retained licensed Russian grammar revision1369617627, Wikibooks Various stuff revision3353858 address examples and ReadyRussian frozen enclosure/closing pairs. Gramota primary indexed guidance consulted2026-10-11: https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-pisat-vy-i-vash-s-propisnoy-ili-so-strochnoy-bukvy and https://gramota.ru/biblioteka/spravochniki/spravochnik-po-punktuatsii/s-uvazheniem . Full pages returned403; complete fresh retrieval not claimed. Independent English explanation; no copied book prose or new Russian generation; qualified review pending.
+Read the displayed form or fragment and choose the supplied meaning. A miss returns to all teaching cards and worked examples.
+shippedText=Read the displayed form or fragment and choose the supplied meaning. A miss returns to all teaching cards and worked examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independent English explanation,2026-10-11; retained licensed Russian fragments; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fa2eaccab18e50bae36b929df732810f39de385f05d7e3de875233ff5d2a33a1
+contentHash=4faca46e2040495387d28a30f248b3d0fe758d575e54079c8173320b1b0507f5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-written-address-notation-9`
+
+- Objectives: obj-u26-address-notation
+- Sessions: u26-s-orient, u26-s-address-notation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f797ac8c36870d1d2586e7755085f5c7e4d43d80e1466f7db5f2b9eabfc12d03
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-address-notation:written-9
+originalSourceText=Retained licensed Russian grammar revision1369617627, Wikibooks Various stuff revision3353858 address examples and ReadyRussian frozen enclosure/closing pairs. Gramota primary indexed guidance consulted2026-10-11: https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-pisat-vy-i-vash-s-propisnoy-ili-so-strochnoy-bukvy and https://gramota.ru/biblioteka/spravochniki/spravochnik-po-punktuatsii/s-uvazheniem . Full pages returned403; complete fresh retrieval not claimed. Independent English explanation; no copied book prose or new Russian generation; qualified review pending.
+Review the complete written-form distinction
+shippedText=Review the complete written-form distinction
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independent English explanation,2026-10-11; retained licensed Russian fragments; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bb77d85fd57c749479ac51031cfedb2721e0d8158dbb43680beba0d3c22d7133
+contentHash=9a5bc3aad33ad8aaec7b68cd51641687d68486a25c7f3cfc151ea4d559bc3283
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-written-correspondence-0`
+
+- Objectives: obj-u26-correspondence
+- Sessions: u26-s-orient, u26-s-correspondence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 978ec9c3c825c3cd7afc54e367d5bc2ccceba761e0acca5034532954adcd571f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-correspondence:written-0
+originalSourceText=Retained licensed Russian grammar revision1369617627, Wikibooks Various stuff revision3353858 address examples and ReadyRussian frozen enclosure/closing pairs. Gramota primary indexed guidance consulted2026-10-11: https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-pisat-vy-i-vash-s-propisnoy-ili-so-strochnoy-bukvy and https://gramota.ru/biblioteka/spravochniki/spravochnik-po-punktuatsii/s-uvazheniem . Full pages returned403; complete fresh retrieval not claimed. Independent English explanation; no copied book prose or new Russian generation; qualified review pending.
+Distinguish enclosure and closing fragments
+shippedText=Distinguish enclosure and closing fragments
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independent English explanation,2026-10-11; retained licensed Russian fragments; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d5a8dd997a196dd523d0e1993306512b7ede4e2e6a8253eb3f154b29036385dd
+contentHash=983c5f2c97824e0bbc15fc3918ee6ab2fd097643c073be24f858c3807ebb1de8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-written-correspondence-1`
+
+- Objectives: obj-u26-correspondence
+- Sessions: u26-s-orient, u26-s-correspondence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9586ccc8d21ca8f86b75b67b20e2733669fdd351fad984b68804e8be3cd285e5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-correspondence:written-1
+originalSourceText=Retained licensed Russian grammar revision1369617627, Wikibooks Various stuff revision3353858 address examples and ReadyRussian frozen enclosure/closing pairs. Gramota primary indexed guidance consulted2026-10-11: https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-pisat-vy-i-vash-s-propisnoy-ili-so-strochnoy-bukvy and https://gramota.ru/biblioteka/spravochniki/spravochnik-po-punktuatsii/s-uvazheniem . Full pages returned403; complete fresh retrieval not claimed. Independent English explanation; no copied book prose or new Russian generation; qualified review pending.
+Separate an enclosure from a closing
+shippedText=Separate an enclosure from a closing
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independent English explanation,2026-10-11; retained licensed Russian fragments; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8310385d5474201acbaa0fe23320962d7e91e2d3f96b4a6b314f962f42cdc514
+contentHash=108095f7cd0900b14fd7b1d36ca1ce04b917de84d5e9b9c773310043d0746fd8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-written-correspondence-10`
+
+- Objectives: obj-u26-correspondence
+- Sessions: u26-s-orient, u26-s-correspondence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: aaa22598daa05f65a43971318bb7374477e15c1cd9222bf26ce69dc370297056
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-correspondence:written-10
+originalSourceText=Retained licensed Russian grammar revision1369617627, Wikibooks Various stuff revision3353858 address examples and ReadyRussian frozen enclosure/closing pairs. Gramota primary indexed guidance consulted2026-10-11: https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-pisat-vy-i-vash-s-propisnoy-ili-so-strochnoy-bukvy and https://gramota.ru/biblioteka/spravochniki/spravochnik-po-punktuatsii/s-uvazheniem . Full pages returned403; complete fresh retrieval not claimed. Independent English explanation; no copied book prose or new Russian generation; qualified review pending.
+These checks recognize the retained written forms and meanings. They do not demonstrate complete letter composition or address production.
+shippedText=These checks recognize the retained written forms and meanings. They do not demonstrate complete letter composition or address production.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independent English explanation,2026-10-11; retained licensed Russian fragments; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bb38d59c1a981c58d04d3435ecad2d519e8e88ec680b747a4920554ac18e37e8
+contentHash=3199c3b787bf7a431a09ca718ddd8321c300c42b25ad0be120acefd8270f11df
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-written-correspondence-2`
+
+- Objectives: obj-u26-correspondence
+- Sessions: u26-s-orient, u26-s-correspondence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 45d0e6ee78240e51754bc196d98aad763ab413c4a9e6bf2029a2680fe7cacb06
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-correspondence:written-2
+originalSourceText=Retained licensed Russian grammar revision1369617627, Wikibooks Various stuff revision3353858 address examples and ReadyRussian frozen enclosure/closing pairs. Gramota primary indexed guidance consulted2026-10-11: https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-pisat-vy-i-vash-s-propisnoy-ili-so-strochnoy-bukvy and https://gramota.ru/biblioteka/spravochniki/spravochnik-po-punktuatsii/s-uvazheniem . Full pages returned403; complete fresh retrieval not claimed. Independent English explanation; no copied book prose or new Russian generation; qualified review pending.
+The retained pair к настоящему письму прилагается — enclosed please find introduces something supplied with the letter. The English gloss is a conventional correspondence expression, not a complete list of possible translations. It has an enclosure function. С уважением — Respectfully is a closing formula before the signature. An enclosure statement and a closing do different jobs: enclosed please find does not close the letter, and Respectfully does not say that a document is enclosed.
+shippedText=The retained pair к настоящему письму прилагается — enclosed please find introduces something supplied with the letter. The English gloss is a conventional correspondence expression, not a complete list of possible translations. It has an enclosure function. С уважением — Respectfully is a closing formula before the signature. An enclosure statement and a closing do different jobs: enclosed please find does not close the letter, and Respectfully does not say that a document is enclosed.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independent English explanation,2026-10-11; retained licensed Russian fragments; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fe1d1536523e668858de8123e0eaee4948246c8e83e94aef4fc178b90df2ea42
+contentHash=043c6c84c37cdaedf65f790a57eed7d487e9ccdfccd5af3cdd8fb4236974bf4a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-written-correspondence-3`
+
+- Objectives: obj-u26-correspondence
+- Sessions: u26-s-orient, u26-s-correspondence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 28dcf5a4d3896b0e9b5e4ca376a652072645565e320248176c2171e0876be421
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-correspondence:written-3
+originalSourceText=Retained licensed Russian grammar revision1369617627, Wikibooks Various stuff revision3353858 address examples and ReadyRussian frozen enclosure/closing pairs. Gramota primary indexed guidance consulted2026-10-11: https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-pisat-vy-i-vash-s-propisnoy-ili-so-strochnoy-bukvy and https://gramota.ru/biblioteka/spravochniki/spravochnik-po-punktuatsii/s-uvazheniem . Full pages returned403; complete fresh retrieval not claimed. Independent English explanation; no copied book prose or new Russian generation; qualified review pending.
+Choose the fragment by its correspondence function
+shippedText=Choose the fragment by its correspondence function
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independent English explanation,2026-10-11; retained licensed Russian fragments; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2851b974ab9feca785f14988615a68c635ca81058ff11a7fd4b0f0698e9e78d6
+contentHash=0de332a1f113f224a5ac224baf46d83b802c8582581c04e86f0364e5dfedbbb9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-written-correspondence-4`
+
+- Objectives: obj-u26-correspondence
+- Sessions: u26-s-orient, u26-s-correspondence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 322c5b6eac66b55d13e5ca3a5381941f3c5eff2e2adfeb15de6dcdf938be1a56
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-correspondence:written-4
+originalSourceText=Retained licensed Russian grammar revision1369617627, Wikibooks Various stuff revision3353858 address examples and ReadyRussian frozen enclosure/closing pairs. Gramota primary indexed guidance consulted2026-10-11: https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-pisat-vy-i-vash-s-propisnoy-ili-so-strochnoy-bukvy and https://gramota.ru/biblioteka/spravochniki/spravochnik-po-punktuatsii/s-uvazheniem . Full pages returned403; complete fresh retrieval not claimed. Independent English explanation; no copied book prose or new Russian generation; qualified review pending.
+When the cue is к настоящему письму прилагается, choose enclosed please find. When the cue is С уважением, choose Respectfully. When the English cue is enclosed please find, the retained Russian match is к настоящему письму прилагается rather than С уважением. These two source-supplied pairs support recognition of enclosure versus closing, not universal formulas for every recipient or mastery of composing a complete letter. Use the retained example fragments; no new Russian sentence is required here.
+shippedText=When the cue is к настоящему письму прилагается, choose enclosed please find. When the cue is С уважением, choose Respectfully. When the English cue is enclosed please find, the retained Russian match is к настоящему письму прилагается rather than С уважением. These two source-supplied pairs support recognition of enclosure versus closing, not universal formulas for every recipient or mastery of composing a complete letter. Use the retained example fragments; no new Russian sentence is required here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independent English explanation,2026-10-11; retained licensed Russian fragments; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=aeb30802bfa2f8dde5b71d57930350666dc01515cc4f6a530c9e2327c193bbca
+contentHash=e1d264ddb214a3abefa7b0baa7eeab26075e10369147c91514ce5e9865d53302
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-written-correspondence-5`
+
+- Objectives: obj-u26-correspondence
+- Sessions: u26-s-orient, u26-s-correspondence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 73b27cbf71611078edc10f64e8fae180c353b9201057c1c8aa1ab9a0cdb0435e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-correspondence:written-5
+originalSourceText=Retained licensed Russian grammar revision1369617627, Wikibooks Various stuff revision3353858 address examples and ReadyRussian frozen enclosure/closing pairs. Gramota primary indexed guidance consulted2026-10-11: https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-pisat-vy-i-vash-s-propisnoy-ili-so-strochnoy-bukvy and https://gramota.ru/biblioteka/spravochniki/spravochnik-po-punktuatsii/s-uvazheniem . Full pages returned403; complete fresh retrieval not claimed. Independent English explanation; no copied book prose or new Russian generation; qualified review pending.
+Guided practice
+shippedText=Guided practice
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independent English explanation,2026-10-11; retained licensed Russian fragments; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=dc83601b6d8f248e0dd15c44b3a4be74640cbdddd8a5ba701cb6fa49f5a682c0
+contentHash=cb1d4a3d9d5db425da3797c7a997db3588ec122a60c4d645ea31cd849f76ab3c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-written-correspondence-6`
+
+- Objectives: obj-u26-correspondence
+- Sessions: u26-s-orient, u26-s-correspondence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 220b8010114b0d39ca4e8366c50b4c1bfa1c8d1cee7b406ad6b5a793a20ae5ab
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-correspondence:written-6
+originalSourceText=Retained licensed Russian grammar revision1369617627, Wikibooks Various stuff revision3353858 address examples and ReadyRussian frozen enclosure/closing pairs. Gramota primary indexed guidance consulted2026-10-11: https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-pisat-vy-i-vash-s-propisnoy-ili-so-strochnoy-bukvy and https://gramota.ru/biblioteka/spravochniki/spravochnik-po-punktuatsii/s-uvazheniem . Full pages returned403; complete fresh retrieval not claimed. Independent English explanation; no copied book prose or new Russian generation; qualified review pending.
+Read the displayed form or fragment and choose the supplied meaning. A miss returns to all teaching cards and worked examples.
+shippedText=Read the displayed form or fragment and choose the supplied meaning. A miss returns to all teaching cards and worked examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independent English explanation,2026-10-11; retained licensed Russian fragments; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fa2eaccab18e50bae36b929df732810f39de385f05d7e3de875233ff5d2a33a1
+contentHash=4faca46e2040495387d28a30f248b3d0fe758d575e54079c8173320b1b0507f5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-written-correspondence-7`
+
+- Objectives: obj-u26-correspondence
+- Sessions: u26-s-orient, u26-s-correspondence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6bea6ca16ea17a35387dbb9483daaa53680113d49a57ad8cc3af1598b8226bab
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-correspondence:written-7
+originalSourceText=Retained licensed Russian grammar revision1369617627, Wikibooks Various stuff revision3353858 address examples and ReadyRussian frozen enclosure/closing pairs. Gramota primary indexed guidance consulted2026-10-11: https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-pisat-vy-i-vash-s-propisnoy-ili-so-strochnoy-bukvy and https://gramota.ru/biblioteka/spravochniki/spravochnik-po-punktuatsii/s-uvazheniem . Full pages returned403; complete fresh retrieval not claimed. Independent English explanation; no copied book prose or new Russian generation; qualified review pending.
+Review the complete written-form distinction
+shippedText=Review the complete written-form distinction
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independent English explanation,2026-10-11; retained licensed Russian fragments; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bb77d85fd57c749479ac51031cfedb2721e0d8158dbb43680beba0d3c22d7133
+contentHash=9a5bc3aad33ad8aaec7b68cd51641687d68486a25c7f3cfc151ea4d559bc3283
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-written-correspondence-8`
+
+- Objectives: obj-u26-correspondence
+- Sessions: u26-s-orient, u26-s-correspondence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6f8d8c5bc0458739b6e2ffbbb94302dde0bf6a3deecc53254a92667ac738b28f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-correspondence:written-8
+originalSourceText=Retained licensed Russian grammar revision1369617627, Wikibooks Various stuff revision3353858 address examples and ReadyRussian frozen enclosure/closing pairs. Gramota primary indexed guidance consulted2026-10-11: https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-pisat-vy-i-vash-s-propisnoy-ili-so-strochnoy-bukvy and https://gramota.ru/biblioteka/spravochniki/spravochnik-po-punktuatsii/s-uvazheniem . Full pages returned403; complete fresh retrieval not claimed. Independent English explanation; no copied book prose or new Russian generation; qualified review pending.
+The retained pair к настоящему письму прилагается — enclosed please find introduces something supplied with the letter. The English gloss is a conventional correspondence expression, not a complete list of possible translations. It has an enclosure function. С уважением — Respectfully is a closing formula before the signature. An enclosure statement and a closing do different jobs: enclosed please find does not close the letter, and Respectfully does not say that a document is enclosed.
+
+When the cue is к настоящему письму прилагается, choose enclosed please find. When the cue is С уважением, choose Respectfully. When the English cue is enclosed please find, the retained Russian match is к настоящему письму прилагается rather than С уважением. These two source-supplied pairs support recognition of enclosure versus closing, not universal formulas for every recipient or mastery of composing a complete letter. Use the retained example fragments; no new Russian sentence is required here.
+shippedText=The retained pair к настоящему письму прилагается — enclosed please find introduces something supplied with the letter. The English gloss is a conventional correspondence expression, not a complete list of possible translations. It has an enclosure function. С уважением — Respectfully is a closing formula before the signature. An enclosure statement and a closing do different jobs: enclosed please find does not close the letter, and Respectfully does not say that a document is enclosed.
+
+When the cue is к настоящему письму прилагается, choose enclosed please find. When the cue is С уважением, choose Respectfully. When the English cue is enclosed please find, the retained Russian match is к настоящему письму прилагается rather than С уважением. These two source-supplied pairs support recognition of enclosure versus closing, not universal formulas for every recipient or mastery of composing a complete letter. Use the retained example fragments; no new Russian sentence is required here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independent English explanation,2026-10-11; retained licensed Russian fragments; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7e3b2656b0d4071a11cc5cb0250d153d36813f8768953877d1128b8e79ce6bfa
+contentHash=bf9061c3e07c3f763a87ea8b637fd036258c10246e066d5f20e4449c6f42b8fc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-written-correspondence-9`
+
+- Objectives: obj-u26-correspondence
+- Sessions: u26-s-orient, u26-s-correspondence
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c76562cf3ccccf4b207562996cdba0c138ea84dce646d6f2d415870fc5397669
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-correspondence:written-9
+originalSourceText=Retained licensed Russian grammar revision1369617627, Wikibooks Various stuff revision3353858 address examples and ReadyRussian frozen enclosure/closing pairs. Gramota primary indexed guidance consulted2026-10-11: https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-pisat-vy-i-vash-s-propisnoy-ili-so-strochnoy-bukvy and https://gramota.ru/biblioteka/spravochniki/spravochnik-po-punktuatsii/s-uvazheniem . Full pages returned403; complete fresh retrieval not claimed. Independent English explanation; no copied book prose or new Russian generation; qualified review pending.
+Independent checks
+shippedText=Independent checks
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independent English explanation,2026-10-11; retained licensed Russian fragments; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7051de492b43b86c783499cba67f4076f082c26e8f57481d2d65776a0d7eaecb
+contentHash=012ab8f74509f135e510ad3d930ff2e1b92c944e2d060f0b35ddeee63616b486
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-written-vy-capital-0`
+
+- Objectives: obj-u26-vy-capital
+- Sessions: u26-s-orient, u26-s-vy-capital
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: af2369dcebd507c700c13f077d47a9ea21d8f8bd91dd3da691ec5c64e91dabe4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-vy-capital:written-0
+originalSourceText=Retained licensed Russian grammar revision1369617627, Wikibooks Various stuff revision3353858 address examples and ReadyRussian frozen enclosure/closing pairs. Gramota primary indexed guidance consulted2026-10-11: https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-pisat-vy-i-vash-s-propisnoy-ili-so-strochnoy-bukvy and https://gramota.ru/biblioteka/spravochniki/spravochnik-po-punktuatsii/s-uvazheniem . Full pages returned403; complete fresh retrieval not claimed. Independent English explanation; no copied book prose or new Russian generation; qualified review pending.
+Recognize written letter case and its address limits
+shippedText=Recognize written letter case and its address limits
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independent English explanation,2026-10-11; retained licensed Russian fragments; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6690373724231eab7a642d9fbea4a7e8067c6f720307955ef4dd14e0cea60b76
+contentHash=1aedfde35e1d102f8239559432ec0e81dee6f29f69e0db280f2da170feb604a4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-written-vy-capital-1`
+
+- Objectives: obj-u26-vy-capital
+- Sessions: u26-s-orient, u26-s-vy-capital
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1540f7876920c199b89e3bdecfd9a5ae78b716065eb920f6e67652bae04b2708
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-vy-capital:written-1
+originalSourceText=Retained licensed Russian grammar revision1369617627, Wikibooks Various stuff revision3353858 address examples and ReadyRussian frozen enclosure/closing pairs. Gramota primary indexed guidance consulted2026-10-11: https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-pisat-vy-i-vash-s-propisnoy-ili-so-strochnoy-bukvy and https://gramota.ru/biblioteka/spravochniki/spravochnik-po-punktuatsii/s-uvazheniem . Full pages returned403; complete fresh retrieval not claimed. Independent English explanation; no copied book prose or new Russian generation; qualified review pending.
+Recognize the initial letter before interpreting the addressee
+shippedText=Recognize the initial letter before interpreting the addressee
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independent English explanation,2026-10-11; retained licensed Russian fragments; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e628099bcb86722cc2c59bdbddb716c6b5f476941546032ad9fce9fcb609dc01
+contentHash=c8aa353c3835af10029b78a3a26f74bb8b7b19ebd3c9337eda703cab52295af8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-written-vy-capital-10`
+
+- Objectives: obj-u26-vy-capital
+- Sessions: u26-s-orient, u26-s-vy-capital
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b14f8039a67a39b414c153d4a4c5802666a5ac1d013893f7d7624f5e3b0f8d4f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-vy-capital:written-10
+originalSourceText=Retained licensed Russian grammar revision1369617627, Wikibooks Various stuff revision3353858 address examples and ReadyRussian frozen enclosure/closing pairs. Gramota primary indexed guidance consulted2026-10-11: https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-pisat-vy-i-vash-s-propisnoy-ili-so-strochnoy-bukvy and https://gramota.ru/biblioteka/spravochniki/spravochnik-po-punktuatsii/s-uvazheniem . Full pages returned403; complete fresh retrieval not claimed. Independent English explanation; no copied book prose or new Russian generation; qualified review pending.
+The supplied forms Вы, Вас and Вам each begin with a capital letter. The answer capital letter describes that visible initial. Minuscule means a lowercase letter; the option minuscule does not describe these displayed initials. The option plural form describes grammatical shape, not letter case. These are recognition checks, not a test of how many people a sentence addresses.
+
+The retained grammar note describes polite address to one person using forms shared with the plural. In personal letters and official papers, a capital initial can mark respectful address to one recipient. This written convention is different from plural meaning. The same grammatical forms can address several people, so a capital initial alone does not establish the number of addressees. Identify the recipient from context, not from the English label plural form.
+
+In the supplied respectful written-address convention, Вы, Вас and Вам have capital initials. Current Gramota guidance distinguishes respectful address to one recipient from address to several people or a general audience, where lowercase is used. A sentence-initial capital is also ordinary sentence capitalization and need not mark respectful singular address. Lowercase outside this convention is not automatically rude. Capitalization cannot be heard in speech. These checks recognize the shown letter case; choosing forms for a new letter requires recipient and genre context.
+shippedText=The supplied forms Вы, Вас and Вам each begin with a capital letter. The answer capital letter describes that visible initial. Minuscule means a lowercase letter; the option minuscule does not describe these displayed initials. The option plural form describes grammatical shape, not letter case. These are recognition checks, not a test of how many people a sentence addresses.
+
+The retained grammar note describes polite address to one person using forms shared with the plural. In personal letters and official papers, a capital initial can mark respectful address to one recipient. This written convention is different from plural meaning. The same grammatical forms can address several people, so a capital initial alone does not establish the number of addressees. Identify the recipient from context, not from the English label plural form.
+
+In the supplied respectful written-address convention, Вы, Вас and Вам have capital initials. Current Gramota guidance distinguishes respectful address to one recipient from address to several people or a general audience, where lowercase is used. A sentence-initial capital is also ordinary sentence capitalization and need not mark respectful singular address. Lowercase outside this convention is not automatically rude. Capitalization cannot be heard in speech. These checks recognize the shown letter case; choosing forms for a new letter requires recipient and genre context.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independent English explanation,2026-10-11; retained licensed Russian fragments; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=18092087bce6296ce474c597bf77ef9df8dac5e9b50003769221fabb0b1b70c4
+contentHash=bfd5b6884686d2c517e19fdcdbe598e209cc05bdcf32ee4e6b1a2c5d509978ff
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-written-vy-capital-11`
+
+- Objectives: obj-u26-vy-capital
+- Sessions: u26-s-orient, u26-s-vy-capital
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0a515619a8b864ebdebd3e750e4dbf1156ccd9710088dfb9be0c67396305d82e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-vy-capital:written-11
+originalSourceText=Retained licensed Russian grammar revision1369617627, Wikibooks Various stuff revision3353858 address examples and ReadyRussian frozen enclosure/closing pairs. Gramota primary indexed guidance consulted2026-10-11: https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-pisat-vy-i-vash-s-propisnoy-ili-so-strochnoy-bukvy and https://gramota.ru/biblioteka/spravochniki/spravochnik-po-punktuatsii/s-uvazheniem . Full pages returned403; complete fresh retrieval not claimed. Independent English explanation; no copied book prose or new Russian generation; qualified review pending.
+Independent checks
+shippedText=Independent checks
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independent English explanation,2026-10-11; retained licensed Russian fragments; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7051de492b43b86c783499cba67f4076f082c26e8f57481d2d65776a0d7eaecb
+contentHash=012ab8f74509f135e510ad3d930ff2e1b92c944e2d060f0b35ddeee63616b486
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-written-vy-capital-12`
+
+- Objectives: obj-u26-vy-capital
+- Sessions: u26-s-orient, u26-s-vy-capital
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e82dcd7d71d8209bafae59776bd74632b876e5dc531cd6fde43e85ac5a867db7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-vy-capital:written-12
+originalSourceText=Retained licensed Russian grammar revision1369617627, Wikibooks Various stuff revision3353858 address examples and ReadyRussian frozen enclosure/closing pairs. Gramota primary indexed guidance consulted2026-10-11: https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-pisat-vy-i-vash-s-propisnoy-ili-so-strochnoy-bukvy and https://gramota.ru/biblioteka/spravochniki/spravochnik-po-punktuatsii/s-uvazheniem . Full pages returned403; complete fresh retrieval not claimed. Independent English explanation; no copied book prose or new Russian generation; qualified review pending.
+These checks recognize the retained written forms and meanings. They do not demonstrate complete letter composition or address production.
+shippedText=These checks recognize the retained written forms and meanings. They do not demonstrate complete letter composition or address production.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independent English explanation,2026-10-11; retained licensed Russian fragments; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bb38d59c1a981c58d04d3435ecad2d519e8e88ec680b747a4920554ac18e37e8
+contentHash=3199c3b787bf7a431a09ca718ddd8321c300c42b25ad0be120acefd8270f11df
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-written-vy-capital-2`
+
+- Objectives: obj-u26-vy-capital
+- Sessions: u26-s-orient, u26-s-vy-capital
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: baf841ad5a47651b09f1ba09dc986e270d54d195d72c344f2da12c58a15728b1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-vy-capital:written-2
+originalSourceText=Retained licensed Russian grammar revision1369617627, Wikibooks Various stuff revision3353858 address examples and ReadyRussian frozen enclosure/closing pairs. Gramota primary indexed guidance consulted2026-10-11: https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-pisat-vy-i-vash-s-propisnoy-ili-so-strochnoy-bukvy and https://gramota.ru/biblioteka/spravochniki/spravochnik-po-punktuatsii/s-uvazheniem . Full pages returned403; complete fresh retrieval not claimed. Independent English explanation; no copied book prose or new Russian generation; qualified review pending.
+The supplied forms Вы, Вас and Вам each begin with a capital letter. The answer capital letter describes that visible initial. Minuscule means a lowercase letter; the option minuscule does not describe these displayed initials. The option plural form describes grammatical shape, not letter case. These are recognition checks, not a test of how many people a sentence addresses.
+shippedText=The supplied forms Вы, Вас and Вам each begin with a capital letter. The answer capital letter describes that visible initial. Minuscule means a lowercase letter; the option minuscule does not describe these displayed initials. The option plural form describes grammatical shape, not letter case. These are recognition checks, not a test of how many people a sentence addresses.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independent English explanation,2026-10-11; retained licensed Russian fragments; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9e4e16c7c3cefcdaf5cc4063bd57ed8b2d7310d1f1d2130b33dbc35ba0c12a6d
+contentHash=0387b4c9736c32637e99b30a081a467f089349cc705a4d7a95392540da0a5c51
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-written-vy-capital-3`
+
+- Objectives: obj-u26-vy-capital
+- Sessions: u26-s-orient, u26-s-vy-capital
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 411a46a3244a79591f50b7afa8b317a51360bc9729eb3180a8f5e090cb761aba
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-vy-capital:written-3
+originalSourceText=Retained licensed Russian grammar revision1369617627, Wikibooks Various stuff revision3353858 address examples and ReadyRussian frozen enclosure/closing pairs. Gramota primary indexed guidance consulted2026-10-11: https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-pisat-vy-i-vash-s-propisnoy-ili-so-strochnoy-bukvy and https://gramota.ru/biblioteka/spravochniki/spravochnik-po-punktuatsii/s-uvazheniem . Full pages returned403; complete fresh retrieval not claimed. Independent English explanation; no copied book prose or new Russian generation; qualified review pending.
+Distinguish polite singular address from grammatical plural shape
+shippedText=Distinguish polite singular address from grammatical plural shape
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independent English explanation,2026-10-11; retained licensed Russian fragments; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=baa4150a6bc7f68dd158cac64ea3d4ef0023d2262679685b6d99d2ddabdbf6d7
+contentHash=1b4a1c284ab750adc01047053885d7941ae5471503281d869ffa231bd42e8f18
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-written-vy-capital-4`
+
+- Objectives: obj-u26-vy-capital
+- Sessions: u26-s-orient, u26-s-vy-capital
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2512bbfe16da5fa20c81081955748b5f49de00ee57d7874e429e80107a9918aa
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-vy-capital:written-4
+originalSourceText=Retained licensed Russian grammar revision1369617627, Wikibooks Various stuff revision3353858 address examples and ReadyRussian frozen enclosure/closing pairs. Gramota primary indexed guidance consulted2026-10-11: https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-pisat-vy-i-vash-s-propisnoy-ili-so-strochnoy-bukvy and https://gramota.ru/biblioteka/spravochniki/spravochnik-po-punktuatsii/s-uvazheniem . Full pages returned403; complete fresh retrieval not claimed. Independent English explanation; no copied book prose or new Russian generation; qualified review pending.
+The retained grammar note describes polite address to one person using forms shared with the plural. In personal letters and official papers, a capital initial can mark respectful address to one recipient. This written convention is different from plural meaning. The same grammatical forms can address several people, so a capital initial alone does not establish the number of addressees. Identify the recipient from context, not from the English label plural form.
+shippedText=The retained grammar note describes polite address to one person using forms shared with the plural. In personal letters and official papers, a capital initial can mark respectful address to one recipient. This written convention is different from plural meaning. The same grammatical forms can address several people, so a capital initial alone does not establish the number of addressees. Identify the recipient from context, not from the English label plural form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independent English explanation,2026-10-11; retained licensed Russian fragments; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=50cb46bc92b12d5a5a111f54a803b2dafee0efc2b9ad12733b98b2d1e0b71224
+contentHash=0e604dad1e0d09c8714d59148b09305b948d9e62ecec3af37f0d50ff81f1e3fc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-written-vy-capital-5`
+
+- Objectives: obj-u26-vy-capital
+- Sessions: u26-s-orient, u26-s-vy-capital
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fe1b0d5c53abb0b29d5083c51383e72239ea2950e2404c26fe847cf988f16a41
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-vy-capital:written-5
+originalSourceText=Retained licensed Russian grammar revision1369617627, Wikibooks Various stuff revision3353858 address examples and ReadyRussian frozen enclosure/closing pairs. Gramota primary indexed guidance consulted2026-10-11: https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-pisat-vy-i-vash-s-propisnoy-ili-so-strochnoy-bukvy and https://gramota.ru/biblioteka/spravochniki/spravochnik-po-punktuatsii/s-uvazheniem . Full pages returned403; complete fresh retrieval not claimed. Independent English explanation; no copied book prose or new Russian generation; qualified review pending.
+Keep capitalization tied to written context
+shippedText=Keep capitalization tied to written context
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independent English explanation,2026-10-11; retained licensed Russian fragments; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=15cfccf6aaedca100eedb6670f7bc3e58b055eac0aba7199c0898eccd1a8aae8
+contentHash=f121542d855521fe9d6630389a53e839c173df582465f1a574d9cb4e8712b781
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-written-vy-capital-6`
+
+- Objectives: obj-u26-vy-capital
+- Sessions: u26-s-orient, u26-s-vy-capital
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 78163bee3eda4c516d2dc468491c4ed3871043405636be06114e00c4e4f83545
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-vy-capital:written-6
+originalSourceText=Retained licensed Russian grammar revision1369617627, Wikibooks Various stuff revision3353858 address examples and ReadyRussian frozen enclosure/closing pairs. Gramota primary indexed guidance consulted2026-10-11: https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-pisat-vy-i-vash-s-propisnoy-ili-so-strochnoy-bukvy and https://gramota.ru/biblioteka/spravochniki/spravochnik-po-punktuatsii/s-uvazheniem . Full pages returned403; complete fresh retrieval not claimed. Independent English explanation; no copied book prose or new Russian generation; qualified review pending.
+In the supplied respectful written-address convention, Вы, Вас and Вам have capital initials. Current Gramota guidance distinguishes respectful address to one recipient from address to several people or a general audience, where lowercase is used. A sentence-initial capital is also ordinary sentence capitalization and need not mark respectful singular address. Lowercase outside this convention is not automatically rude. Capitalization cannot be heard in speech. These checks recognize the shown letter case; choosing forms for a new letter requires recipient and genre context.
+shippedText=In the supplied respectful written-address convention, Вы, Вас and Вам have capital initials. Current Gramota guidance distinguishes respectful address to one recipient from address to several people or a general audience, where lowercase is used. A sentence-initial capital is also ordinary sentence capitalization and need not mark respectful singular address. Lowercase outside this convention is not automatically rude. Capitalization cannot be heard in speech. These checks recognize the shown letter case; choosing forms for a new letter requires recipient and genre context.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independent English explanation,2026-10-11; retained licensed Russian fragments; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=19ee3e7622ca875e20d84f369a2583cebeaed43d14595a2568c474103641c774
+contentHash=003cec7c65c509dacd38bd9dfd44fb9281102666ee701c7c29e5762de9011564
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-written-vy-capital-7`
+
+- Objectives: obj-u26-vy-capital
+- Sessions: u26-s-orient, u26-s-vy-capital
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 563100577e0dd8090ccae54fdedcd27e97d5ef0d58929535655fb6bcab8402f6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-vy-capital:written-7
+originalSourceText=Retained licensed Russian grammar revision1369617627, Wikibooks Various stuff revision3353858 address examples and ReadyRussian frozen enclosure/closing pairs. Gramota primary indexed guidance consulted2026-10-11: https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-pisat-vy-i-vash-s-propisnoy-ili-so-strochnoy-bukvy and https://gramota.ru/biblioteka/spravochniki/spravochnik-po-punktuatsii/s-uvazheniem . Full pages returned403; complete fresh retrieval not claimed. Independent English explanation; no copied book prose or new Russian generation; qualified review pending.
+Guided practice
+shippedText=Guided practice
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independent English explanation,2026-10-11; retained licensed Russian fragments; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=dc83601b6d8f248e0dd15c44b3a4be74640cbdddd8a5ba701cb6fa49f5a682c0
+contentHash=cb1d4a3d9d5db425da3797c7a997db3588ec122a60c4d645ea31cd849f76ab3c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-written-vy-capital-8`
+
+- Objectives: obj-u26-vy-capital
+- Sessions: u26-s-orient, u26-s-vy-capital
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d63b7230eb92521ee96518f85611c043951b0aa4b80676794551b57c854fc6f8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-vy-capital:written-8
+originalSourceText=Retained licensed Russian grammar revision1369617627, Wikibooks Various stuff revision3353858 address examples and ReadyRussian frozen enclosure/closing pairs. Gramota primary indexed guidance consulted2026-10-11: https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-pisat-vy-i-vash-s-propisnoy-ili-so-strochnoy-bukvy and https://gramota.ru/biblioteka/spravochniki/spravochnik-po-punktuatsii/s-uvazheniem . Full pages returned403; complete fresh retrieval not claimed. Independent English explanation; no copied book prose or new Russian generation; qualified review pending.
+Read the displayed form or fragment and choose the supplied meaning. A miss returns to all teaching cards and worked examples.
+shippedText=Read the displayed form or fragment and choose the supplied meaning. A miss returns to all teaching cards and worked examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independent English explanation,2026-10-11; retained licensed Russian fragments; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fa2eaccab18e50bae36b929df732810f39de385f05d7e3de875233ff5d2a33a1
+contentHash=4faca46e2040495387d28a30f248b3d0fe758d575e54079c8173320b1b0507f5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-written-vy-capital-9`
+
+- Objectives: obj-u26-vy-capital
+- Sessions: u26-s-orient, u26-s-vy-capital
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: deb7f13157cfac67f8e1540b5505545e20debcc9c9796ecba9d7d9fdf3c58aef
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-vy-capital:written-9
+originalSourceText=Retained licensed Russian grammar revision1369617627, Wikibooks Various stuff revision3353858 address examples and ReadyRussian frozen enclosure/closing pairs. Gramota primary indexed guidance consulted2026-10-11: https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-pisat-vy-i-vash-s-propisnoy-ili-so-strochnoy-bukvy and https://gramota.ru/biblioteka/spravochniki/spravochnik-po-punktuatsii/s-uvazheniem . Full pages returned403; complete fresh retrieval not claimed. Independent English explanation; no copied book prose or new Russian generation; qualified review pending.
+Review the complete written-form distinction
+shippedText=Review the complete written-form distinction
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independent English explanation,2026-10-11; retained licensed Russian fragments; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bb77d85fd57c749479ac51031cfedb2721e0d8158dbb43680beba0d3c22d7133
+contentHash=9a5bc3aad33ad8aaec7b68cd51641687d68486a25c7f3cfc151ea4d559bc3283
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -25555,13 +26695,14 @@ permitsAppUse=true
 - `u26-st-teach-vy-capital-1` EXAMPLE `ex-u26-vy-capital-0`
 - `u26-st-teach-vy-capital-1` EXAMPLE `ex-u26-vy-capital-1`
 - `u26-st-teach-vy-capital-1` REFERENCE `ref-u2630-attribution`
-- `u26-st-guided-vy-capital-1` REMEDIATION `u26-st-rem-vy-capital`
-- `u26-st-guided-vy-capital-1` ITEM `u26-g-vy-capital-0`
 - `u26-st-teach-vy-capital-2` REFERENCE `ref-u2630-attribution`
 - `u26-st-teach-vy-capital-3` EXAMPLE `ex-u26-vy-capital-2`
 - `u26-st-teach-vy-capital-3` REFERENCE `ref-u2630-attribution`
+- `u26-st-guided-vy-capital-1` REMEDIATION `u26-st-rem-vy-capital`
+- `u26-st-guided-vy-capital-1` ITEM `u26-g-vy-capital-0`
 - `u26-st-rem-vy-capital` EXAMPLE `ex-u26-vy-capital-0`
 - `u26-st-rem-vy-capital` EXAMPLE `ex-u26-vy-capital-1`
+- `u26-st-rem-vy-capital` EXAMPLE `ex-u26-vy-capital-2`
 - `u26-st-check-vy-capital` REMEDIATION `u26-st-rem-vy-capital`
 - `u26-st-check-vy-capital` ITEM `u26-i-vy-capital-1`
 - `u26-st-check-vy-capital` ITEM `u26-i-vy-capital-2`
@@ -25569,13 +26710,14 @@ permitsAppUse=true
 - `u26-st-teach-address-notation-1` EXAMPLE `ex-u26-address-notation-0`
 - `u26-st-teach-address-notation-1` EXAMPLE `ex-u26-address-notation-1`
 - `u26-st-teach-address-notation-1` REFERENCE `ref-u2630-attribution`
-- `u26-st-guided-address-notation-1` REMEDIATION `u26-st-rem-address-notation`
-- `u26-st-guided-address-notation-1` ITEM `u26-g-address-notation-0`
 - `u26-st-teach-address-notation-2` REFERENCE `ref-u2630-attribution`
 - `u26-st-teach-address-notation-3` EXAMPLE `ex-u26-address-notation-2`
 - `u26-st-teach-address-notation-3` REFERENCE `ref-u2630-attribution`
+- `u26-st-guided-address-notation-1` REMEDIATION `u26-st-rem-address-notation`
+- `u26-st-guided-address-notation-1` ITEM `u26-g-address-notation-0`
 - `u26-st-rem-address-notation` EXAMPLE `ex-u26-address-notation-0`
 - `u26-st-rem-address-notation` EXAMPLE `ex-u26-address-notation-1`
+- `u26-st-rem-address-notation` EXAMPLE `ex-u26-address-notation-2`
 - `u26-st-check-address-notation` REMEDIATION `u26-st-rem-address-notation`
 - `u26-st-check-address-notation` ITEM `u26-i-address-notation-1`
 - `u26-st-check-address-notation` ITEM `u26-i-address-notation-2`
@@ -25610,9 +26752,9 @@ permitsAppUse=true
 - `u26-st-teach-correspondence-1` EXAMPLE `ex-u26-correspondence-0`
 - `u26-st-teach-correspondence-1` EXAMPLE `ex-u26-correspondence-1`
 - `u26-st-teach-correspondence-1` REFERENCE `ref-u2630-attribution`
+- `u26-st-teach-correspondence-2` REFERENCE `ref-u2630-attribution`
 - `u26-st-guided-correspondence-1` REMEDIATION `u26-st-rem-correspondence`
 - `u26-st-guided-correspondence-1` ITEM `u26-g-correspondence-0`
-- `u26-st-teach-correspondence-2` REFERENCE `ref-u2630-attribution`
 - `u26-st-rem-correspondence` EXAMPLE `ex-u26-correspondence-0`
 - `u26-st-rem-correspondence` EXAMPLE `ex-u26-correspondence-1`
 - `u26-st-check-correspondence` REMEDIATION `u26-st-rem-correspondence`
@@ -25739,6 +26881,43 @@ permitsAppUse=true
 - `obj-u26-letter-writing` PROVENANCE `prov-ca-u26-letter-label-7`
 - `obj-u26-letter-writing` PROVENANCE `prov-ca-u26-letter-label-8`
 - `obj-u26-letter-writing` PROVENANCE `prov-ca-u26-letter-label-9`
+- `obj-u26-address-notation` PROVENANCE `prov-ca-u26-written-address-notation-0`
+- `obj-u26-address-notation` PROVENANCE `prov-ca-u26-written-address-notation-1`
+- `obj-u26-address-notation` PROVENANCE `prov-ca-u26-written-address-notation-10`
+- `obj-u26-address-notation` PROVENANCE `prov-ca-u26-written-address-notation-11`
+- `obj-u26-address-notation` PROVENANCE `prov-ca-u26-written-address-notation-12`
+- `obj-u26-address-notation` PROVENANCE `prov-ca-u26-written-address-notation-2`
+- `obj-u26-address-notation` PROVENANCE `prov-ca-u26-written-address-notation-3`
+- `obj-u26-address-notation` PROVENANCE `prov-ca-u26-written-address-notation-4`
+- `obj-u26-address-notation` PROVENANCE `prov-ca-u26-written-address-notation-5`
+- `obj-u26-address-notation` PROVENANCE `prov-ca-u26-written-address-notation-6`
+- `obj-u26-address-notation` PROVENANCE `prov-ca-u26-written-address-notation-7`
+- `obj-u26-address-notation` PROVENANCE `prov-ca-u26-written-address-notation-8`
+- `obj-u26-address-notation` PROVENANCE `prov-ca-u26-written-address-notation-9`
+- `obj-u26-correspondence` PROVENANCE `prov-ca-u26-written-correspondence-0`
+- `obj-u26-correspondence` PROVENANCE `prov-ca-u26-written-correspondence-1`
+- `obj-u26-correspondence` PROVENANCE `prov-ca-u26-written-correspondence-10`
+- `obj-u26-correspondence` PROVENANCE `prov-ca-u26-written-correspondence-2`
+- `obj-u26-correspondence` PROVENANCE `prov-ca-u26-written-correspondence-3`
+- `obj-u26-correspondence` PROVENANCE `prov-ca-u26-written-correspondence-4`
+- `obj-u26-correspondence` PROVENANCE `prov-ca-u26-written-correspondence-5`
+- `obj-u26-correspondence` PROVENANCE `prov-ca-u26-written-correspondence-6`
+- `obj-u26-correspondence` PROVENANCE `prov-ca-u26-written-correspondence-7`
+- `obj-u26-correspondence` PROVENANCE `prov-ca-u26-written-correspondence-8`
+- `obj-u26-correspondence` PROVENANCE `prov-ca-u26-written-correspondence-9`
+- `obj-u26-vy-capital` PROVENANCE `prov-ca-u26-written-vy-capital-0`
+- `obj-u26-vy-capital` PROVENANCE `prov-ca-u26-written-vy-capital-1`
+- `obj-u26-vy-capital` PROVENANCE `prov-ca-u26-written-vy-capital-10`
+- `obj-u26-vy-capital` PROVENANCE `prov-ca-u26-written-vy-capital-11`
+- `obj-u26-vy-capital` PROVENANCE `prov-ca-u26-written-vy-capital-12`
+- `obj-u26-vy-capital` PROVENANCE `prov-ca-u26-written-vy-capital-2`
+- `obj-u26-vy-capital` PROVENANCE `prov-ca-u26-written-vy-capital-3`
+- `obj-u26-vy-capital` PROVENANCE `prov-ca-u26-written-vy-capital-4`
+- `obj-u26-vy-capital` PROVENANCE `prov-ca-u26-written-vy-capital-5`
+- `obj-u26-vy-capital` PROVENANCE `prov-ca-u26-written-vy-capital-6`
+- `obj-u26-vy-capital` PROVENANCE `prov-ca-u26-written-vy-capital-7`
+- `obj-u26-vy-capital` PROVENANCE `prov-ca-u26-written-vy-capital-8`
+- `obj-u26-vy-capital` PROVENANCE `prov-ca-u26-written-vy-capital-9`
 - `obj-u26-address-notation` PROVENANCE `prov-ex-u26-address-notation-0-en`
 - `obj-u26-address-notation` PROVENANCE `prov-ex-u26-address-notation-0-ru`
 - `obj-u26-address-notation` PROVENANCE `prov-ex-u26-address-notation-0-ru-r0`
