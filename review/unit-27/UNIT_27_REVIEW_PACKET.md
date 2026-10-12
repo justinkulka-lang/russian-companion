@@ -11,12 +11,12 @@ Unit 27 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 0c0c22e5866aad80a1601b5e5c416e2742e17f5f
-- Unit content-review SHA-256: 7f9490a90ed32877a1a8f67fd081dbadc6ee2b7a78eda523aac4764248530d0e
+- Curriculum source commit: 95e2a7503f38f20d0230c856505db2f1c8b38050
+- Unit content-review SHA-256: 1bd78da2162eb76909d1b537663e9647cee2d08eff83e7d473e06b05588ed065
 - Mapping-package SHA-256: 3924f3a8ac211579b4db3e387cb48632d27e9b41925e227b63b004bf652a3bc0
-- Pack content-review SHA-256: d9ab2b4d8640659353504b925c96673c52e5958e2181ebd96bb515a6cbc6fb64
-- Review-package SHA-256: 4c3b6a50dbdfe04fb298a6fc94a60b7f3ccbba4f905058936e879108a2b35e38
-- Repository source SHA-256: 870d003681580104601e42a08625249dca8c2161e99f8c6c6619edc0cc01fed2
+- Pack content-review SHA-256: 5ce97447a6e7a040116b871f0cbd9020d5721246fb2d9f37229bdf4031867516
+- Review-package SHA-256: 56fa225caa51bf4d96204724487b8c6e73a81983fe1a0efc42db5927bb564570
+- Repository source SHA-256: f603cb9e6c0d34ae0da6e1f2882cdbe4945eebd67b557325dd5a738dc72b30e9
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -113,9 +113,9 @@ tutorOptional=true
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: cce03586806a071ec20a1961a4bf21caa336fc4078b03bccdac879fe81c8dd9b
+- Content hash: ce8fd2376f40154b0238e068aaa4fa083fdf100f0e5c4d4fa666201359c79d26
 
-title=Choose the admitted gloss for the shown past passive form
+title=Interpret supplied past passive forms
 kind=RECOGNITION
 unitNumber=27
 instruction=u27-st-orient,u27-st-teach-passive-1,u27-st-teach-passive-2,u27-st-teach-passive-3,u27-st-teach-passive-4
@@ -208,9 +208,9 @@ remediation=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 7d8e15db6ea8c5b90b4890470de29dc724d386db54ae24fdaddf2a07e1992e85
+- Content hash: ae3500e7591310520a02d1000ce52c1ecfff18cced4d88652257c080740a0f37
 
-title=Choose the admitted stress placement
+title=Locate stress in the two required past passive forms
 kind=RECOGNITION
 unitNumber=27
 instruction=u27-stress-teach-1,u27-stress-teach-2
@@ -264,12 +264,12 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 0c8d2f8c4fb630b5fc1005fdc4324179a59fd34a3f9ecef140a2163664287728
+- Content hash: 19ffaabeace1db3892a0e462aeaae874d38e8119d35f8b01a87a3057ada115f1
 
-title=Choose the admitted gloss for the shown past passive form
+title=Interpret supplied past passive forms
 estimatedMinutes=12
 objectives=obj-u27-passive
-steps=u27-st-teach-passive-1,u27-st-guided-passive-1,u27-st-teach-passive-2,u27-st-teach-passive-3,u27-st-teach-passive-4,u27-st-rem-passive,u27-st-check-passive
+steps=u27-st-teach-passive-1,u27-st-teach-passive-2,u27-st-teach-passive-3,u27-st-teach-passive-4,u27-st-guided-passive-1,u27-st-rem-passive,u27-st-check-passive
 
 ### STEP `u27-st-teach-passive-1`
 
@@ -279,11 +279,11 @@ steps=u27-st-teach-passive-1,u27-st-guided-passive-1,u27-st-teach-passive-2,u27-
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 14b1dbb50b2ab88089eac46d5c5868ce6540fa1451a41fb5d43799e4f2056055
+- Content hash: 8c236b48a5eaac91c899d1b1396fdba2f7def12b5225dc5352aade57bdb6d65a
 
 kind=TEACH
-title=Admitted lines
-body=Read the admitted examples on this card.
+title=Read what happened to the described entity
+body=A past passive participle describes an entity affected by an action. The supplied form сде́ланный has the meaning done/made. The form напи́санный means written, and уби́тый means killed. These words describe what was done to the entity; they do not identify it as the person doing the action. The three supplied meanings differ by the underlying action. Choosing written for сде́ланный would replace doing or making with writing; choosing killed would replace it with killing.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -293,28 +293,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u27-st-guided-passive-1`
-
-- Objectives: obj-u27-passive
-- Sessions: u27-s-passive
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b6e650ad9c4a3d4d6d9bd7971bd79e38b05e049c84436a9f4b51d6b1d7d76745
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u27-g-passive-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u27-st-rem-passive
-
 ### STEP `u27-st-teach-passive-2`
 
 - Objectives: obj-u27-passive
@@ -323,11 +301,11 @@ remediationStepId=u27-st-rem-passive
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 7a20b7fab999c904f40764d42c6210fcc7ce2851cc1d7f086f33a96858da0ab2
+- Content hash: dd12cfc02af97f9db35abe0f3a2dcf8628306fc73187ccd31eb2c43ac247b364
 
 kind=TEACH
-title=Admitted instruction
-body=Passive past participles are formed by means of the suffixes
+title=Recognize the supplied long forms without inventing a universal algorithm
+body=The retained examples are long past passive forms with adjective-type endings. In the shown сде́ланный and напи́санный forms, the formation contains double n; уби́тый has t. The retained source shows these forms from perfective verbs. This lesson recognizes the supplied forms; these endings alone are not a complete productive formation rule for every verb. Broader formation includes other suffix patterns and lexical restrictions, so do not manufacture an unlisted form from this small set. An imperfective past passive can exist; the supplied perfective examples are not a universal claim that every past passive must come from a perfective verb.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -345,11 +323,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 27ddaa219970b12a5a5a1a54d410787603ac00a6dfdd69f3342dacf685bf0997
+- Content hash: b5d8b6deb49bec8028b7968ecbfb68b6b8bed0f43cdf7c416eb3e9772cdacf86
 
 kind=TEACH
-title=Admitted lines
-body=Read the admitted examples on this card.
+title=Distinguish the action meaning from long versus short form
+body=The meaning written belongs to напи́санный, not to the doing/making form сде́ланный or the killing form уби́тый. The meaning killed belongs to уби́тый, not to the other two actions. The retained short form напи́сан has a single n and lacks the long adjective ending shown in напи́санный. Long versus short form is different from the action meaning: both writing forms concern writing. These checks select the action meaning of a supplied form; they do not test production of all short-form gender and number endings.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -367,11 +345,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 309250333e4883bf2809dc80736cbadd0c5feb9de358429e23256025c25d4e82
+- Content hash: 941ac17cf25f3d4521379be9428a67df96056750cf3fb6e546b83de4913de181
 
 kind=TEACH
-title=Admitted lines
-body=Read the admitted examples on this card.
+title=Identify the writer in the retained passive sentence
+body=письмо написано Иваном — the letter was written by Ivan. The letter is the entity affected by the writing; Ivan is the writer identified in the retained sentence. The passive form describes the letter’s state or result, rather than saying that the letter writes somebody. The short passive form in the sentence differs from the long headword напи́санный. A longer sentence supplies context that a headword lacks; do not infer a writer, reader or exact time from a bare participle alone. Active participles are outside this required Unit27 lesson.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -381,6 +359,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u27-st-guided-passive-1`
+
+- Objectives: obj-u27-passive
+- Sessions: u27-s-passive
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: d894b825842d63a6cc50925edf416b297abd010d7f57ec457e4f12c3315faacb
+
+kind=GUIDED
+title=Guided practice
+body=Use the supplied action meaning or accent placement. A miss restores every explanation and worked example.
+dominantAction=Continue
+references=
+items=u27-g-passive-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u27-st-rem-passive
+
 ### STEP `u27-st-rem-passive`
 
 - Objectives: obj-u27-passive
@@ -389,15 +389,21 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d8820a491c1c61d757abfcabf0c367420961dbfaea2023744521a1a373223888
+- Content hash: c9efef77dff4c22c70a292a0a2565d0edc69eb77445b7744461b99e4f76901ce
 
 kind=REMEDIATE
-title=Remediation
-body=Passive past participles are formed by means of the suffixes
+title=Review the complete past-passive distinction
+body=A past passive participle describes an entity affected by an action. The supplied form сде́ланный has the meaning done/made. The form напи́санный means written, and уби́тый means killed. These words describe what was done to the entity; they do not identify it as the person doing the action. The three supplied meanings differ by the underlying action. Choosing written for сде́ланный would replace doing or making with writing; choosing killed would replace it with killing.
+
+The retained examples are long past passive forms with adjective-type endings. In the shown сде́ланный and напи́санный forms, the formation contains double n; уби́тый has t. The retained source shows these forms from perfective verbs. This lesson recognizes the supplied forms; these endings alone are not a complete productive formation rule for every verb. Broader formation includes other suffix patterns and lexical restrictions, so do not manufacture an unlisted form from this small set. An imperfective past passive can exist; the supplied perfective examples are not a universal claim that every past passive must come from a perfective verb.
+
+The meaning written belongs to напи́санный, not to the doing/making form сде́ланный or the killing form уби́тый. The meaning killed belongs to уби́тый, not to the other two actions. The retained short form напи́сан has a single n and lacks the long adjective ending shown in напи́санный. Long versus short form is different from the action meaning: both writing forms concern writing. These checks select the action meaning of a supplied form; they do not test production of all short-form gender and number endings.
+
+письмо написано Иваном — the letter was written by Ivan. The letter is the entity affected by the writing; Ivan is the writer identified in the retained sentence. The passive form describes the letter’s state or result, rather than saying that the letter writes somebody. The short passive form in the sentence differs from the long headword напи́санный. A longer sentence supplies context that a headword lacks; do not infer a writer, reader or exact time from a bare participle alone. Active participles are outside this required Unit27 lesson.
 dominantAction=Continue
 references=ref-ca-participles
 items=
-examples=ex-u27-passive-0,ex-u27-passive-1
+examples=ex-u27-passive-0,ex-u27-passive-1,ex-u27-passive-2,ex-u27-passive-3,ex-u27-passive-4
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -411,11 +417,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c27e3ed7404f72649aee0cdb866fa315271e7040d48b8459159a618969d5e6e7
+- Content hash: 3f44695671630c65c35dd109e5a293384493d66855c905ad13476f8a568c3d58
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Recognize the supplied past-passive meanings or accent placement. Optional present-passive material does not gate this unit; broader productive formation remains outside these checks.
 dominantAction=Continue
 references=
 items=u27-i-passive-1,u27-i-passive-2
@@ -779,12 +785,12 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 6fa1c18929d70bf3c0c841fe0648e37f3e51d820d55ee5b9a0e7b0367b6b50a6
+- Content hash: cdc8657144a132bba29f2ac57cb31a668d7560778faa056b6b0e3df6662944aa
 
-title=Past-passive stress in the supplied examples; broader patterns remain pending review.
+title=Locate stress in the two required past passive forms
 estimatedMinutes=10
 objectives=obj-u27-stress,obj-u27-book
-steps=u27-stress-teach-1,u27-stress-guided,u27-stress-teach-2,u27-stress-remediate,u27-stress-check,u27-st-anki-direction,u27-st-binder-direction,u27-st-tutor-direction,u27-st-cumulative-direction
+steps=u27-stress-teach-1,u27-stress-teach-2,u27-stress-guided,u27-stress-remediate,u27-stress-check,u27-st-anki-direction,u27-st-binder-direction,u27-st-tutor-direction,u27-st-cumulative-direction
 
 ### STEP `u27-stress-teach-1`
 
@@ -794,15 +800,37 @@ steps=u27-stress-teach-1,u27-stress-guided,u27-stress-teach-2,u27-stress-remedia
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 92cb7cc43e736574193fa69f0993e07383c2cc1770952070e03321f998663e71
+- Content hash: 9f4cc229d620be750cb14cae473e9660fd61baf7202765982b4ef219252fc83c
 
 kind=TEACH
-title=Admitted instruction
-body=Only these four accent placements are admitted, and a different accent on the same letters is rejected. Required stress checks use only the past passive forms напи́санный and прочи́танный. Present passive headwords stay on the optional card and do not gate this unit.
+title=Place the accent on the supplied vowel
+body=The required past passive forms are напи́санный and прочи́танный. Each displayed accent is on the second syllable. For the guided write form, stem stress напи́санный is the supplied option; later-vowel stress написа́нный moves the accent to the vowel in the third syllable and is rejected for this supplied form. It is not an accent on the final adjective ending. For the independent write contrast, напи́санный is retained and написа́нный is rejected. For the read contrast, прочи́танный is retained and прочита́нный is rejected. Compare the accented vowel in the same letters rather than simply noticing that both options have an accent mark.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
 examples=ex-u27-stress-1,ex-u27-stress-2
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u27-stress-teach-2`
+
+- Objectives: obj-u27-stress, obj-u27-book
+- Sessions: u27-s-stress
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: c43bd5630909d512d84adc27d1bf34be0294cf8579d5b69f4e7c4754c70dbd0e
+
+kind=TEACH
+title=Keep required past-passive stress separate from optional reference and general production
+body=The supplied limit is no stress rule is admitted beyond these four. The competing statement these four placements generate every other participle wrongly turns four retained reference placements into a productive rule for an unlisted participle. Two of the four belong to optional present-passive reference, while the required checks here use only the two displayed past-passive forms. Optional present-passive checks do not gate Unit27 advancement. The fact that these two past forms share second-syllable stress does not predict stress for every other participle or its short forms. Use verified lexical evidence for an unlisted form. Meaning recognition and accent placement are separate tasks.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -816,11 +844,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 12ba204d3b6d547bb6f4a65b71fa7524690bc7a042450faea3e7e1dec7f73c87
+- Content hash: 9a862ba6012b8e1e44747e841110ae335fea84e50acc0e6d28a2f6ef1ea6bf78
 
 kind=GUIDED
 title=Guided practice
-body=Seeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.
+body=Use the supplied action meaning or accent placement. A miss restores every explanation and worked example.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=u27-g-stress-past
@@ -830,28 +858,6 @@ bookDirection=
 companionDirection=
 remediationStepId=u27-stress-remediate
 
-### STEP `u27-stress-teach-2`
-
-- Objectives: obj-u27-stress, obj-u27-book
-- Sessions: u27-s-stress
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 2785afed0ae2c4c9bb5be6533c1085d5ca093f143a842eeac270eaf57d0f4656
-
-kind=TEACH
-title=Admitted instruction
-body=These four placements do not generate stress for an unlisted participle.
-dominantAction=Continue
-references=ref-u2630-attribution
-items=
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
 ### STEP `u27-stress-remediate`
 
 - Objectives: obj-u27-stress, obj-u27-book
@@ -860,15 +866,17 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: cb69f144ba53aefe2be568aab4ae24962a7abd3f4447c74d592725c1a6341042
+- Content hash: bdd66584ca1d7f89061ce0e823e5d5247e24ddd1bd240d0d0a8cbe1d2c9a49b3
 
 kind=REMEDIATE
-title=Remediation
-body=Compare the admitted accent with the rejected accent on the same letters.
+title=Review the complete past-passive distinction
+body=The required past passive forms are напи́санный and прочи́танный. Each displayed accent is on the second syllable. For the guided write form, stem stress напи́санный is the supplied option; later-vowel stress написа́нный moves the accent to the vowel in the third syllable and is rejected for this supplied form. It is not an accent on the final adjective ending. For the independent write contrast, напи́санный is retained and написа́нный is rejected. For the read contrast, прочи́танный is retained and прочита́нный is rejected. Compare the accented vowel in the same letters rather than simply noticing that both options have an accent mark.
+
+The supplied limit is no stress rule is admitted beyond these four. The competing statement these four placements generate every other participle wrongly turns four retained reference placements into a productive rule for an unlisted participle. Two of the four belong to optional present-passive reference, while the required checks here use only the two displayed past-passive forms. Optional present-passive checks do not gate Unit27 advancement. The fact that these two past forms share second-syllable stress does not predict stress for every other participle or its short forms. Use verified lexical evidence for an unlisted form. Meaning recognition and accent placement are separate tasks.
 dominantAction=Continue
 references=ref-u2630-attribution,ref-ca-participles
 items=
-examples=
+examples=ex-u27-stress-1,ex-u27-stress-2
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -882,11 +890,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 72c09999d52916b64cd9880cf5ba0c8041e358ff846e5d2e6f2861a20e78050b
+- Content hash: e22e0136b374c679be5764ea89ec6bb60536fa1160abd9399f1c7d47ef62d6e3
 
 kind=CHECK
 title=Independent checks
-body=Only these four accent placements are admitted, and a different accent on the same letters is rejected.
+body=Recognize the supplied past-passive meanings or accent placement. Optional present-passive material does not gate this unit; broader productive formation remains outside these checks.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=u27-i-stress-2,u27-i-stress-3,u27-i-stress-4
@@ -1247,19 +1255,19 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 698f01930351b07c905469c35974358d4df175d133c3b1d0e5e12b2081778dc2
+- Content hash: c4e978c37fb39f3f2585ef5ae8d99adecbd691d138118e881f9c985ef165c047
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English label is written beside the shown form?
+prompt=Which English action meaning fits the shown past passive form?
 promptLetter=сде́ланный
 options=done/made | written | killed
 answer=done/made
-feedback=The frozen line says these forms are formed by means of the listed suffixes. This label is written beside the shown form. done/made.
+feedback=Passive past participles: сде́ланный has the supplied meaning done/made. It describes the entity affected by doing or making, not an entity performing that action.
 objectiveId=obj-u27-passive
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen line writes this label beside a different form for written. | The frozen line writes this label beside a different form for killed.
+distractorRationales= | written describes writing, a different action from doing or making. | killed describes killing, a different action from doing or making.
 testedFeature=PAST_PASSIVE
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u27-passive-0
@@ -1267,8 +1275,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u27-passive-0-en
 distractorSourceIds= | prov-ex-u27-passive-1-en | prov-ex-u27-passive-2-en
-distractorDifference= | This label is paired with the writing form (written). | This label is paired with the other listed form (killed).
-whyAnswerDemonstratesObjective=The frozen line says these forms are formed by means of the listed suffixes. This label is written beside the shown form.
+distractorDifference= | written describes writing, a different action from doing or making. | killed describes killing, a different action from doing or making.
+whyAnswerDemonstratesObjective=Passive past participles: сде́ланный has the supplied meaning done/made. It describes the entity affected by doing or making, not an entity performing that action.
 contrastMembers=done/made | written | killed
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u27-passive-0-ru | prov-ex-u27-passive-0-en | prov-ex-u27-passive-1-en | prov-ex-u27-passive-2-en
@@ -1387,31 +1395,31 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 4607723ae37807b557b19ef45f54f934984d11aeddd6c20e454e0258b49c70d2
+- Content hash: 267f4256fb2c096ac0dc8cc794bab7bf2f8481daaee158206e1e54c51a992fa2
 
 kind=CONTRAST_SELECTION
 language=en
 prompt=Which past-passive stress is admitted for this guided write form?
 promptLetter=guided past passive of написать
-options=stem stress напи́санный | ending stress написа́нный
+options=stem stress напи́санный | later-vowel stress написа́нный
 answer=stem stress напи́санный
-feedback=The admitted past-passive stress is stem stress напи́санный.
+feedback=The supplied accent is stem stress напи́санный, on the second syllable. The competing accent is later-vowel stress написа́нный, on the third syllable rather than the final adjective ending.
 objectiveId=obj-u27-stress
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | ending stress написа́нный is the rejected accent for this guided past-passive form.
+distractorRationales= | later-vowel stress написа́нный moves the accent from the second to the third syllable and is rejected for the supplied write form.
 testedFeature=STRESS_NAPISANNY_GUIDED
 evidenceMode=STATED_APPLICATION
 contrastSetId=u27-g-stress-past
 cueLanguage=ru
 independent=false
-answerSourceIds=prov-ca-27-150
-distractorSourceIds= | prov-ca-27-154
-distractorDifference= | ending stress написа́нный is the rejected accent for this guided past-passive form.
-whyAnswerDemonstratesObjective=The guided write form keeps stem stress напи́санный and rejects ending stress написа́нный.
-contrastMembers=stem stress напи́санный | ending stress написа́нный
+answerSourceIds=prov-ca-u27-past-guided-participant-1
+distractorSourceIds= | prov-ca-u27-past-guided-participant-2
+distractorDifference= | later-vowel stress написа́нный moves the accent from the second to the third syllable and is rejected for the supplied write form.
+whyAnswerDemonstratesObjective=The supplied accent is stem stress напи́санный, on the second syllable. The competing accent is later-vowel stress написа́нный, on the third syllable rather than the final adjective ending.
+contrastMembers=stem stress напи́санный | later-vowel stress написа́нный
 relationKind=STATED_APPLICATION
-relationParticipantIds=prov-ca-27-149 | prov-ca-27-150 | prov-ca-27-154
+relationParticipantIds=prov-ca-u27-past-guided-participant-0 | prov-ca-u27-past-guided-participant-1 | prov-ca-u27-past-guided-participant-2
 responseKind=RUSSIAN_PHRASE
 
 ### INDEPENDENT_CHECK `u27-i-passive-1`
@@ -1422,19 +1430,19 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: de6b6386de99dfc3fa3935f9be8c25c3fe40d6d5398933c1e947b6bc829a6979
+- Content hash: 7d302a9386e09025ffafd468757a462093ab062cb65191725f7362645385bc18
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English label is written beside this shown form?
+prompt=Which English action meaning fits the shown past passive form?
 promptLetter=напи́санный
 options=written | done/made | killed
 answer=written
-feedback=The frozen line says these forms are formed by means of the listed suffixes. This label is written beside the shown form. written.
+feedback=Passive past participles: напи́санный has the supplied meaning written. It describes the entity affected by writing, not an entity performing that action.
 objectiveId=obj-u27-passive
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen line writes this label beside a different form for done/made. | The frozen line writes this label beside a different form for killed.
+distractorRationales= | done/made describes doing or making, a different action from writing. | killed describes killing, a different action from writing.
 testedFeature=PAST_PASSIVE
 evidenceMode=EXPLICIT_PARENTHETICAL_GLOSS
 contrastSetId=u27-passive-1
@@ -1442,8 +1450,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u27-passive-1-en
 distractorSourceIds= | prov-ex-u27-passive-0-en | prov-ex-u27-passive-2-en
-distractorDifference= | This label is paired with the making form (done/made). | This label is paired with the other listed form (killed).
-whyAnswerDemonstratesObjective=The frozen line says these forms are formed by means of the listed suffixes. This label is written beside the shown form.
+distractorDifference= | done/made describes doing or making, a different action from writing. | killed describes killing, a different action from writing.
+whyAnswerDemonstratesObjective=Passive past participles: напи́санный has the supplied meaning written. It describes the entity affected by writing, not an entity performing that action.
 contrastMembers=written | done/made | killed
 relationKind=EXPLICIT_PARENTHETICAL_GLOSS
 relationParticipantIds=prov-ex-u27-passive-1-ru | prov-ex-u27-passive-1-en | prov-ex-u27-passive-0-en | prov-ex-u27-passive-2-en
@@ -1457,19 +1465,19 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikipedia-russian-grammar-1369617627
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 5641d2a3b4b2befed580e673584acb8c62c9cf95ca5ec3121d74212e2337b01e
+- Content hash: 889be2cdf5d7cd18e2dc7dffeaa634d557d1d6ba97e7d6fe3d6704f49f5caef0
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English label is written beside the remaining shown form?
+prompt=Which English action meaning fits the shown past passive form?
 promptLetter=уби́тый
 options=killed | written | done/made
 answer=killed
-feedback=The frozen line says these forms are formed by means of the listed suffixes. This label is written beside the shown form. killed.
+feedback=Passive past participles: уби́тый has the supplied meaning killed. It describes the entity affected by killing, not an entity performing that action.
 objectiveId=obj-u27-passive
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen line writes this label beside the writing form for written. | The frozen line writes this label beside the making form for done/made.
+distractorRationales= | written describes writing, a different action from killing. | done/made describes doing or making, a different action from killing.
 testedFeature=PAST_PASSIVE
 evidenceMode=EXPLICIT_PARENTHETICAL_GLOSS
 contrastSetId=u27-passive-2
@@ -1477,8 +1485,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u27-passive-2-en
 distractorSourceIds= | prov-ex-u27-passive-1-en | prov-ex-u27-passive-0-en
-distractorDifference= | This label is paired with a different form (written). | This label is paired with a different form (done/made).
-whyAnswerDemonstratesObjective=The frozen line says these forms are formed by means of the listed suffixes. This label is written beside the shown form.
+distractorDifference= | written describes writing, a different action from killing. | done/made describes doing or making, a different action from killing.
+whyAnswerDemonstratesObjective=Passive past participles: уби́тый has the supplied meaning killed. It describes the entity affected by killing, not an entity performing that action.
 contrastMembers=killed | written | done/made
 relationKind=EXPLICIT_PARENTHETICAL_GLOSS
 relationParticipantIds=prov-ex-u27-passive-2-ru | prov-ex-u27-passive-2-en | prov-ex-u27-passive-1-en | prov-ex-u27-passive-0-en
@@ -6016,6 +6024,1603 @@ attribution=Russian Companion content-audit research synthesis, content-audit-20
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
 sourceHash=f0ffea80044435d0cb74a092bdf1548b65a456bc29e43431eaee56af395e46a0
 contentHash=8c1e2eb4138a0b95175ed6af990021d2b793c7182a81c918f13dcf0c0e057814
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-past-guided-participant-0`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bd072a7a0f6d5b9f2dc56e0efcf75a236cfa9d372312b2c5857cea39abce85ed
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-u27-past-stress
+originalSourceText=Retained licensed Russian grammar revision1369617627 passive forms and frozen Phase3 stress applications; existing content-audit guided past-stress records. Primary Cornell https://russian.cornell.edu/grammar/html/le95_102_h.htm and le103_110_b.htm fully retrieved2026-10-11; Gramota transitivity/aspect guidance indexed, full page403. Independent English explanation from retained Russian examples; no new Russian generation, copied source/book prose or new source asset; review pending.
+Locate stress in the two required past passive forms
+Place the accent on the supplied vowel
+The required past passive forms are напи́санный and прочи́танный. Each displayed accent is on the second syllable. For the guided write form, stem stress напи́санный is the supplied option; later-vowel stress написа́нный moves the accent to the vowel in the third syllable and is rejected for this supplied form. It is not an accent on the final adjective ending. For the independent write contrast, напи́санный is retained and написа́нный is rejected. For the read contrast, прочи́танный is retained and прочита́нный is rejected. Compare the accented vowel in the same letters rather than simply noticing that both options have an accent mark.
+Keep required past-passive stress separate from optional reference and general production
+The supplied limit is no stress rule is admitted beyond these four. The competing statement these four placements generate every other participle wrongly turns four retained reference placements into a productive rule for an unlisted participle. Two of the four belong to optional present-passive reference, while the required checks here use only the two displayed past-passive forms. Optional present-passive checks do not gate Unit27 advancement. The fact that these two past forms share second-syllable stress does not predict stress for every other participle or its short forms. Use verified lexical evidence for an unlisted form. Meaning recognition and accent placement are separate tasks.
+Guided practice
+Use the supplied action meaning or accent placement. A miss restores every explanation and worked example.
+Review the complete past-passive distinction
+The required past passive forms are напи́санный and прочи́танный. Each displayed accent is on the second syllable. For the guided write form, stem stress напи́санный is the supplied option; later-vowel stress написа́нный moves the accent to the vowel in the third syllable and is rejected for this supplied form. It is not an accent on the final adjective ending. For the independent write contrast, напи́санный is retained and написа́нный is rejected. For the read contrast, прочи́танный is retained and прочита́нный is rejected. Compare the accented vowel in the same letters rather than simply noticing that both options have an accent mark.
+
+The supplied limit is no stress rule is admitted beyond these four. The competing statement these four placements generate every other participle wrongly turns four retained reference placements into a productive rule for an unlisted participle. Two of the four belong to optional present-passive reference, while the required checks here use only the two displayed past-passive forms. Optional present-passive checks do not gate Unit27 advancement. The fact that these two past forms share second-syllable stress does not predict stress for every other participle or its short forms. Use verified lexical evidence for an unlisted form. Meaning recognition and accent placement are separate tasks.
+Independent checks
+Recognize the supplied past-passive meanings or accent placement. Optional present-passive material does not gate this unit; broader productive formation remains outside these checks.
+Which past-passive stress is admitted for this guided write form?
+guided past passive of написать
+The supplied accent is stem stress напи́санный, on the second syllable. The competing accent is later-vowel stress написа́нный, on the third syllable rather than the final adjective ending.
+stem stress напи́санный
+later-vowel stress написа́нный
+later-vowel stress написа́нный moves the accent from the second to the third syllable and is rejected for the supplied write form.
+[{"cue": "guided past passive of написать", "answer": "stem stress напи́санный", "distractors": ["later-vowel stress написа́нный"]}]
+shippedText=guided past passive of написать
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English past-passive explanation,2026-10-11; retained Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6df4d36d649b680a8273f1dc647d0c547b7f8ffc985ddf21228bd96d151e79f6
+contentHash=cafdf13f8c366c19965e85419c0b848ea404ea3a6617c0c263e0b71353d14357
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-past-guided-participant-1`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8c18d993ecc0f276bb12ca882d333e072291334d0c0ce0f089c91c3ceb4a6478
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-u27-past-stress
+originalSourceText=Retained licensed Russian grammar revision1369617627 passive forms and frozen Phase3 stress applications; existing content-audit guided past-stress records. Primary Cornell https://russian.cornell.edu/grammar/html/le95_102_h.htm and le103_110_b.htm fully retrieved2026-10-11; Gramota transitivity/aspect guidance indexed, full page403. Independent English explanation from retained Russian examples; no new Russian generation, copied source/book prose or new source asset; review pending.
+Locate stress in the two required past passive forms
+Place the accent on the supplied vowel
+The required past passive forms are напи́санный and прочи́танный. Each displayed accent is on the second syllable. For the guided write form, stem stress напи́санный is the supplied option; later-vowel stress написа́нный moves the accent to the vowel in the third syllable and is rejected for this supplied form. It is not an accent on the final adjective ending. For the independent write contrast, напи́санный is retained and написа́нный is rejected. For the read contrast, прочи́танный is retained and прочита́нный is rejected. Compare the accented vowel in the same letters rather than simply noticing that both options have an accent mark.
+Keep required past-passive stress separate from optional reference and general production
+The supplied limit is no stress rule is admitted beyond these four. The competing statement these four placements generate every other participle wrongly turns four retained reference placements into a productive rule for an unlisted participle. Two of the four belong to optional present-passive reference, while the required checks here use only the two displayed past-passive forms. Optional present-passive checks do not gate Unit27 advancement. The fact that these two past forms share second-syllable stress does not predict stress for every other participle or its short forms. Use verified lexical evidence for an unlisted form. Meaning recognition and accent placement are separate tasks.
+Guided practice
+Use the supplied action meaning or accent placement. A miss restores every explanation and worked example.
+Review the complete past-passive distinction
+The required past passive forms are напи́санный and прочи́танный. Each displayed accent is on the second syllable. For the guided write form, stem stress напи́санный is the supplied option; later-vowel stress написа́нный moves the accent to the vowel in the third syllable and is rejected for this supplied form. It is not an accent on the final adjective ending. For the independent write contrast, напи́санный is retained and написа́нный is rejected. For the read contrast, прочи́танный is retained and прочита́нный is rejected. Compare the accented vowel in the same letters rather than simply noticing that both options have an accent mark.
+
+The supplied limit is no stress rule is admitted beyond these four. The competing statement these four placements generate every other participle wrongly turns four retained reference placements into a productive rule for an unlisted participle. Two of the four belong to optional present-passive reference, while the required checks here use only the two displayed past-passive forms. Optional present-passive checks do not gate Unit27 advancement. The fact that these two past forms share second-syllable stress does not predict stress for every other participle or its short forms. Use verified lexical evidence for an unlisted form. Meaning recognition and accent placement are separate tasks.
+Independent checks
+Recognize the supplied past-passive meanings or accent placement. Optional present-passive material does not gate this unit; broader productive formation remains outside these checks.
+Which past-passive stress is admitted for this guided write form?
+guided past passive of написать
+The supplied accent is stem stress напи́санный, on the second syllable. The competing accent is later-vowel stress написа́нный, on the third syllable rather than the final adjective ending.
+stem stress напи́санный
+later-vowel stress написа́нный
+later-vowel stress написа́нный moves the accent from the second to the third syllable and is rejected for the supplied write form.
+[{"cue": "guided past passive of написать", "answer": "stem stress напи́санный", "distractors": ["later-vowel stress написа́нный"]}]
+shippedText=stem stress напи́санный
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English past-passive explanation,2026-10-11; retained Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6df4d36d649b680a8273f1dc647d0c547b7f8ffc985ddf21228bd96d151e79f6
+contentHash=7b2858af644b3eb59a9c8f6c3e67aa722ea806b8da8c851cb97378f5449d7888
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-past-guided-participant-2`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5dfd828e38d74ea8e609e23c0744d054c11a0f2845d2e5fe1763d3295ee3aeff
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-u27-past-stress
+originalSourceText=Retained licensed Russian grammar revision1369617627 passive forms and frozen Phase3 stress applications; existing content-audit guided past-stress records. Primary Cornell https://russian.cornell.edu/grammar/html/le95_102_h.htm and le103_110_b.htm fully retrieved2026-10-11; Gramota transitivity/aspect guidance indexed, full page403. Independent English explanation from retained Russian examples; no new Russian generation, copied source/book prose or new source asset; review pending.
+Locate stress in the two required past passive forms
+Place the accent on the supplied vowel
+The required past passive forms are напи́санный and прочи́танный. Each displayed accent is on the second syllable. For the guided write form, stem stress напи́санный is the supplied option; later-vowel stress написа́нный moves the accent to the vowel in the third syllable and is rejected for this supplied form. It is not an accent on the final adjective ending. For the independent write contrast, напи́санный is retained and написа́нный is rejected. For the read contrast, прочи́танный is retained and прочита́нный is rejected. Compare the accented vowel in the same letters rather than simply noticing that both options have an accent mark.
+Keep required past-passive stress separate from optional reference and general production
+The supplied limit is no stress rule is admitted beyond these four. The competing statement these four placements generate every other participle wrongly turns four retained reference placements into a productive rule for an unlisted participle. Two of the four belong to optional present-passive reference, while the required checks here use only the two displayed past-passive forms. Optional present-passive checks do not gate Unit27 advancement. The fact that these two past forms share second-syllable stress does not predict stress for every other participle or its short forms. Use verified lexical evidence for an unlisted form. Meaning recognition and accent placement are separate tasks.
+Guided practice
+Use the supplied action meaning or accent placement. A miss restores every explanation and worked example.
+Review the complete past-passive distinction
+The required past passive forms are напи́санный and прочи́танный. Each displayed accent is on the second syllable. For the guided write form, stem stress напи́санный is the supplied option; later-vowel stress написа́нный moves the accent to the vowel in the third syllable and is rejected for this supplied form. It is not an accent on the final adjective ending. For the independent write contrast, напи́санный is retained and написа́нный is rejected. For the read contrast, прочи́танный is retained and прочита́нный is rejected. Compare the accented vowel in the same letters rather than simply noticing that both options have an accent mark.
+
+The supplied limit is no stress rule is admitted beyond these four. The competing statement these four placements generate every other participle wrongly turns four retained reference placements into a productive rule for an unlisted participle. Two of the four belong to optional present-passive reference, while the required checks here use only the two displayed past-passive forms. Optional present-passive checks do not gate Unit27 advancement. The fact that these two past forms share second-syllable stress does not predict stress for every other participle or its short forms. Use verified lexical evidence for an unlisted form. Meaning recognition and accent placement are separate tasks.
+Independent checks
+Recognize the supplied past-passive meanings or accent placement. Optional present-passive material does not gate this unit; broader productive formation remains outside these checks.
+Which past-passive stress is admitted for this guided write form?
+guided past passive of написать
+The supplied accent is stem stress напи́санный, on the second syllable. The competing accent is later-vowel stress написа́нный, on the third syllable rather than the final adjective ending.
+stem stress напи́санный
+later-vowel stress написа́нный
+later-vowel stress написа́нный moves the accent from the second to the third syllable and is rejected for the supplied write form.
+[{"cue": "guided past passive of написать", "answer": "stem stress напи́санный", "distractors": ["later-vowel stress написа́нный"]}]
+shippedText=later-vowel stress написа́нный
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English past-passive explanation,2026-10-11; retained Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6df4d36d649b680a8273f1dc647d0c547b7f8ffc985ddf21228bd96d151e79f6
+contentHash=65c4077886e556ead5ee62cce737fe90cefb96d31f189e510e0c40987bec6891
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-past-passive-0`
+
+- Objectives: obj-u27-passive
+- Sessions: u27-s-orient, u27-s-passive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 11b987a200faa808b367065e5501446264f4ca3c88fbff49c43bfce16ec8dad3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-passive:passive-0
+originalSourceText=Retained licensed Russian grammar revision1369617627 passive forms and frozen Phase3 stress applications; existing content-audit guided past-stress records. Primary Cornell https://russian.cornell.edu/grammar/html/le95_102_h.htm and le103_110_b.htm fully retrieved2026-10-11; Gramota transitivity/aspect guidance indexed, full page403. Independent English explanation from retained Russian examples; no new Russian generation, copied source/book prose or new source asset; review pending.
+Interpret supplied past passive forms
+shippedText=Interpret supplied past passive forms
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English past-passive explanation,2026-10-11; retained Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f379c36e51c7d364b12666e1fe3b529ae7560f3763116314a5cea51fda30c9cd
+contentHash=27e06e4a40d11a2cd339cec6a01cbc51a0ec5c89812f649323077c2a2c51bf62
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-past-passive-1`
+
+- Objectives: obj-u27-passive
+- Sessions: u27-s-orient, u27-s-passive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9cd19cb6c2e61c2d7787af49c7ed412bb12b3562c16ffab6246c57bdb09c9f9e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-passive:passive-1
+originalSourceText=Retained licensed Russian grammar revision1369617627 passive forms and frozen Phase3 stress applications; existing content-audit guided past-stress records. Primary Cornell https://russian.cornell.edu/grammar/html/le95_102_h.htm and le103_110_b.htm fully retrieved2026-10-11; Gramota transitivity/aspect guidance indexed, full page403. Independent English explanation from retained Russian examples; no new Russian generation, copied source/book prose or new source asset; review pending.
+Read what happened to the described entity
+shippedText=Read what happened to the described entity
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English past-passive explanation,2026-10-11; retained Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cf32e8993b3d306eed8ac7cd7ee49920e6bec6810d67b3685106b0710b6fbfa4
+contentHash=44ba2db587ae319b7241fdb67c85e38f0e46a545e2cd2567846560a42a056e80
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-past-passive-10`
+
+- Objectives: obj-u27-passive
+- Sessions: u27-s-orient, u27-s-passive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 63a5326b9cf03ad5a724f3fdf69933becbd956a2e601c9fcb999404d6aa4f5b1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-passive:passive-10
+originalSourceText=Retained licensed Russian grammar revision1369617627 passive forms and frozen Phase3 stress applications; existing content-audit guided past-stress records. Primary Cornell https://russian.cornell.edu/grammar/html/le95_102_h.htm and le103_110_b.htm fully retrieved2026-10-11; Gramota transitivity/aspect guidance indexed, full page403. Independent English explanation from retained Russian examples; no new Russian generation, copied source/book prose or new source asset; review pending.
+Use the supplied action meaning or accent placement. A miss restores every explanation and worked example.
+shippedText=Use the supplied action meaning or accent placement. A miss restores every explanation and worked example.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English past-passive explanation,2026-10-11; retained Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fbe128d91f5bf8fdc141fec194d22af3d1f98b62df9165749216fc805809adea
+contentHash=c148a001073cd1c426eac1dfc5bf9fce266529aeafe1dee35e29b2b261cc80ba
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-past-passive-11`
+
+- Objectives: obj-u27-passive
+- Sessions: u27-s-orient, u27-s-passive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 763231e365f1ff828aaee45e2f659dd2fcd185cca72d8fda35913eca83fd1063
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-passive:passive-11
+originalSourceText=Retained licensed Russian grammar revision1369617627 passive forms and frozen Phase3 stress applications; existing content-audit guided past-stress records. Primary Cornell https://russian.cornell.edu/grammar/html/le95_102_h.htm and le103_110_b.htm fully retrieved2026-10-11; Gramota transitivity/aspect guidance indexed, full page403. Independent English explanation from retained Russian examples; no new Russian generation, copied source/book prose or new source asset; review pending.
+Review the complete past-passive distinction
+shippedText=Review the complete past-passive distinction
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English past-passive explanation,2026-10-11; retained Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=97de31be8893e48ccaabbde98c925d12fc64919269ee95b6903f5eab65812711
+contentHash=a46cab7e87ad080946913977fb63d5515de4d73f2f9c9aed64a01f131c9591ab
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-past-passive-12`
+
+- Objectives: obj-u27-passive
+- Sessions: u27-s-orient, u27-s-passive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c8161e0299d13c06971e2211035419e22cc259a1b1ea53911d000c2fd529b81e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-passive:passive-12
+originalSourceText=Retained licensed Russian grammar revision1369617627 passive forms and frozen Phase3 stress applications; existing content-audit guided past-stress records. Primary Cornell https://russian.cornell.edu/grammar/html/le95_102_h.htm and le103_110_b.htm fully retrieved2026-10-11; Gramota transitivity/aspect guidance indexed, full page403. Independent English explanation from retained Russian examples; no new Russian generation, copied source/book prose or new source asset; review pending.
+A past passive participle describes an entity affected by an action. The supplied form сде́ланный has the meaning done/made. The form напи́санный means written, and уби́тый means killed. These words describe what was done to the entity; they do not identify it as the person doing the action. The three supplied meanings differ by the underlying action. Choosing written for сде́ланный would replace doing or making with writing; choosing killed would replace it with killing.
+
+The retained examples are long past passive forms with adjective-type endings. In the shown сде́ланный and напи́санный forms, the formation contains double n; уби́тый has t. The retained source shows these forms from perfective verbs. This lesson recognizes the supplied forms; these endings alone are not a complete productive formation rule for every verb. Broader formation includes other suffix patterns and lexical restrictions, so do not manufacture an unlisted form from this small set. An imperfective past passive can exist; the supplied perfective examples are not a universal claim that every past passive must come from a perfective verb.
+
+The meaning written belongs to напи́санный, not to the doing/making form сде́ланный or the killing form уби́тый. The meaning killed belongs to уби́тый, not to the other two actions. The retained short form напи́сан has a single n and lacks the long adjective ending shown in напи́санный. Long versus short form is different from the action meaning: both writing forms concern writing. These checks select the action meaning of a supplied form; they do not test production of all short-form gender and number endings.
+
+письмо написано Иваном — the letter was written by Ivan. The letter is the entity affected by the writing; Ivan is the writer identified in the retained sentence. The passive form describes the letter’s state or result, rather than saying that the letter writes somebody. The short passive form in the sentence differs from the long headword напи́санный. A longer sentence supplies context that a headword lacks; do not infer a writer, reader or exact time from a bare participle alone. Active participles are outside this required Unit27 lesson.
+shippedText=A past passive participle describes an entity affected by an action. The supplied form сде́ланный has the meaning done/made. The form напи́санный means written, and уби́тый means killed. These words describe what was done to the entity; they do not identify it as the person doing the action. The three supplied meanings differ by the underlying action. Choosing written for сде́ланный would replace doing or making with writing; choosing killed would replace it with killing.
+
+The retained examples are long past passive forms with adjective-type endings. In the shown сде́ланный and напи́санный forms, the formation contains double n; уби́тый has t. The retained source shows these forms from perfective verbs. This lesson recognizes the supplied forms; these endings alone are not a complete productive formation rule for every verb. Broader formation includes other suffix patterns and lexical restrictions, so do not manufacture an unlisted form from this small set. An imperfective past passive can exist; the supplied perfective examples are not a universal claim that every past passive must come from a perfective verb.
+
+The meaning written belongs to напи́санный, not to the doing/making form сде́ланный or the killing form уби́тый. The meaning killed belongs to уби́тый, not to the other two actions. The retained short form напи́сан has a single n and lacks the long adjective ending shown in напи́санный. Long versus short form is different from the action meaning: both writing forms concern writing. These checks select the action meaning of a supplied form; they do not test production of all short-form gender and number endings.
+
+письмо написано Иваном — the letter was written by Ivan. The letter is the entity affected by the writing; Ivan is the writer identified in the retained sentence. The passive form describes the letter’s state or result, rather than saying that the letter writes somebody. The short passive form in the sentence differs from the long headword напи́санный. A longer sentence supplies context that a headword lacks; do not infer a writer, reader or exact time from a bare participle alone. Active participles are outside this required Unit27 lesson.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English past-passive explanation,2026-10-11; retained Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7af2c6d0e82342899ac9a6bdbce2771aec955be43f2efae363d7695650f43d84
+contentHash=64387dda823c84278c0ff5a1fa42ba2385ecc2ae8199818039c08a2f06cf7170
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-past-passive-13`
+
+- Objectives: obj-u27-passive
+- Sessions: u27-s-orient, u27-s-passive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7b65e356b25c258313a86116d45294004fc4ad6826df6afb21a36f9749eaf610
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-passive:passive-13
+originalSourceText=Retained licensed Russian grammar revision1369617627 passive forms and frozen Phase3 stress applications; existing content-audit guided past-stress records. Primary Cornell https://russian.cornell.edu/grammar/html/le95_102_h.htm and le103_110_b.htm fully retrieved2026-10-11; Gramota transitivity/aspect guidance indexed, full page403. Independent English explanation from retained Russian examples; no new Russian generation, copied source/book prose or new source asset; review pending.
+Independent checks
+shippedText=Independent checks
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English past-passive explanation,2026-10-11; retained Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ebf1270bdbf968c865aa6217311f0c4182ae195d0b53f79dfb2985f38ca3a33a
+contentHash=012ab8f74509f135e510ad3d930ff2e1b92c944e2d060f0b35ddeee63616b486
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-past-passive-14`
+
+- Objectives: obj-u27-passive
+- Sessions: u27-s-orient, u27-s-passive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fbf875371d5f4452dbeb497c223814766d0d7d8aa12d09795edd897c3660332e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-passive:passive-14
+originalSourceText=Retained licensed Russian grammar revision1369617627 passive forms and frozen Phase3 stress applications; existing content-audit guided past-stress records. Primary Cornell https://russian.cornell.edu/grammar/html/le95_102_h.htm and le103_110_b.htm fully retrieved2026-10-11; Gramota transitivity/aspect guidance indexed, full page403. Independent English explanation from retained Russian examples; no new Russian generation, copied source/book prose or new source asset; review pending.
+Recognize the supplied past-passive meanings or accent placement. Optional present-passive material does not gate this unit; broader productive formation remains outside these checks.
+shippedText=Recognize the supplied past-passive meanings or accent placement. Optional present-passive material does not gate this unit; broader productive formation remains outside these checks.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English past-passive explanation,2026-10-11; retained Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=00ee5f88a3b71bad814a082209c8b81a02ee25b262aa9fbb68ffd3037218a3db
+contentHash=2b5a2f3c7a0872f905c0feb2cbcfb5465715ef510278d2b589b7e09ec2c39c37
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-past-passive-15`
+
+- Objectives: obj-u27-passive
+- Sessions: u27-s-orient, u27-s-passive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: af630c138aa78fccecc2050185dcde4ab606b9674cefa2192c38138adfcb636a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-passive:passive-15
+originalSourceText=Retained licensed Russian grammar revision1369617627 passive forms and frozen Phase3 stress applications; existing content-audit guided past-stress records. Primary Cornell https://russian.cornell.edu/grammar/html/le95_102_h.htm and le103_110_b.htm fully retrieved2026-10-11; Gramota transitivity/aspect guidance indexed, full page403. Independent English explanation from retained Russian examples; no new Russian generation, copied source/book prose or new source asset; review pending.
+Which English action meaning fits the shown past passive form?
+shippedText=Which English action meaning fits the shown past passive form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English past-passive explanation,2026-10-11; retained Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=121442ae50297b05b3664300cab56dbf210ef4f166180802f3fd64360d1c7154
+contentHash=74a92c2caf13f7c873ea2001fd8827ac93b2bf3b071e92ec36c7114f662d03dd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-past-passive-16`
+
+- Objectives: obj-u27-passive
+- Sessions: u27-s-orient, u27-s-passive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fe3cad1e7064f46325cd03569053817786fe2adbcc36b8cce1c118389d901d72
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-passive:passive-16
+originalSourceText=Retained licensed Russian grammar revision1369617627 passive forms and frozen Phase3 stress applications; existing content-audit guided past-stress records. Primary Cornell https://russian.cornell.edu/grammar/html/le95_102_h.htm and le103_110_b.htm fully retrieved2026-10-11; Gramota transitivity/aspect guidance indexed, full page403. Independent English explanation from retained Russian examples; no new Russian generation, copied source/book prose or new source asset; review pending.
+Passive past participles: сде́ланный has the supplied meaning done/made. It describes the entity affected by doing or making, not an entity performing that action.
+shippedText=Passive past participles: сде́ланный has the supplied meaning done/made. It describes the entity affected by doing or making, not an entity performing that action.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English past-passive explanation,2026-10-11; retained Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3be9c88819f9d5452e9c4c3848a196cfbd622eb10b6f7e6e2c361163bbd51c00
+contentHash=fe5ba79fc6664568cdc9f5a9e8b259dc8b0e7fee062028306e8e3554d476920a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-past-passive-17`
+
+- Objectives: obj-u27-passive
+- Sessions: u27-s-orient, u27-s-passive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 07fe6f07cd2a8762bf902ee0e8059bdf2ce4001088b053f717ef28b74bb1c338
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-passive:passive-17
+originalSourceText=Retained licensed Russian grammar revision1369617627 passive forms and frozen Phase3 stress applications; existing content-audit guided past-stress records. Primary Cornell https://russian.cornell.edu/grammar/html/le95_102_h.htm and le103_110_b.htm fully retrieved2026-10-11; Gramota transitivity/aspect guidance indexed, full page403. Independent English explanation from retained Russian examples; no new Russian generation, copied source/book prose or new source asset; review pending.
+written describes writing, a different action from doing or making.
+shippedText=written describes writing, a different action from doing or making.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English past-passive explanation,2026-10-11; retained Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2a581347d8ccd28c921d703b972cd365af4bb29a2689cc41b29702f3c17f1c0f
+contentHash=828dec5b30b54a6b74e8a371aa3809e81ab7f30a2aa480ef9dde14afb338c0fd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-past-passive-18`
+
+- Objectives: obj-u27-passive
+- Sessions: u27-s-orient, u27-s-passive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f8038da8cc672140ebe6d1cd701bee2be52d156c0e9efe06da6d38f9161994b3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-passive:passive-18
+originalSourceText=Retained licensed Russian grammar revision1369617627 passive forms and frozen Phase3 stress applications; existing content-audit guided past-stress records. Primary Cornell https://russian.cornell.edu/grammar/html/le95_102_h.htm and le103_110_b.htm fully retrieved2026-10-11; Gramota transitivity/aspect guidance indexed, full page403. Independent English explanation from retained Russian examples; no new Russian generation, copied source/book prose or new source asset; review pending.
+killed describes killing, a different action from doing or making.
+shippedText=killed describes killing, a different action from doing or making.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English past-passive explanation,2026-10-11; retained Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=aaf8343767471a128015fd179132c6e983e5d70754d841aa2014a3c2da308f04
+contentHash=591eea8be00df8722817c133a97754280fe688764517ed0111aa16547be96eae
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-past-passive-19`
+
+- Objectives: obj-u27-passive
+- Sessions: u27-s-orient, u27-s-passive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 38778e78935f61c51ead53a3e6b62d9f800a38da369f00ec46bca2f895aa3274
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-passive:passive-19
+originalSourceText=Retained licensed Russian grammar revision1369617627 passive forms and frozen Phase3 stress applications; existing content-audit guided past-stress records. Primary Cornell https://russian.cornell.edu/grammar/html/le95_102_h.htm and le103_110_b.htm fully retrieved2026-10-11; Gramota transitivity/aspect guidance indexed, full page403. Independent English explanation from retained Russian examples; no new Russian generation, copied source/book prose or new source asset; review pending.
+Passive past participles: напи́санный has the supplied meaning written. It describes the entity affected by writing, not an entity performing that action.
+shippedText=Passive past participles: напи́санный has the supplied meaning written. It describes the entity affected by writing, not an entity performing that action.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English past-passive explanation,2026-10-11; retained Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=112716eb9a99f96449683b3b39301965119dbe4d6f03f91ffe838941b0016c16
+contentHash=5ff1b21f24eacb90f8636c71371a234b3f2c1d790629d096303af4dadb05f276
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-past-passive-2`
+
+- Objectives: obj-u27-passive
+- Sessions: u27-s-orient, u27-s-passive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c8c1fcb03b94229f79ba9bb7240fff486ceaa5f43375f103c38702a911b059b0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-passive:passive-2
+originalSourceText=Retained licensed Russian grammar revision1369617627 passive forms and frozen Phase3 stress applications; existing content-audit guided past-stress records. Primary Cornell https://russian.cornell.edu/grammar/html/le95_102_h.htm and le103_110_b.htm fully retrieved2026-10-11; Gramota transitivity/aspect guidance indexed, full page403. Independent English explanation from retained Russian examples; no new Russian generation, copied source/book prose or new source asset; review pending.
+A past passive participle describes an entity affected by an action. The supplied form сде́ланный has the meaning done/made. The form напи́санный means written, and уби́тый means killed. These words describe what was done to the entity; they do not identify it as the person doing the action. The three supplied meanings differ by the underlying action. Choosing written for сде́ланный would replace doing or making with writing; choosing killed would replace it with killing.
+shippedText=A past passive participle describes an entity affected by an action. The supplied form сде́ланный has the meaning done/made. The form напи́санный means written, and уби́тый means killed. These words describe what was done to the entity; they do not identify it as the person doing the action. The three supplied meanings differ by the underlying action. Choosing written for сде́ланный would replace doing or making with writing; choosing killed would replace it with killing.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English past-passive explanation,2026-10-11; retained Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=904c5bc065a089b58541ed948829776da905e525e98c210fadaaa75d5cd7d551
+contentHash=8c0d2c72dca1463a50889a1a6cdedda7e21be73f52593d7a89f1f6432057083a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-past-passive-20`
+
+- Objectives: obj-u27-passive
+- Sessions: u27-s-orient, u27-s-passive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c87472fbffb5eeab481a32e2861b0e8624bffb71505bd92939dc75dca3340837
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-passive:passive-20
+originalSourceText=Retained licensed Russian grammar revision1369617627 passive forms and frozen Phase3 stress applications; existing content-audit guided past-stress records. Primary Cornell https://russian.cornell.edu/grammar/html/le95_102_h.htm and le103_110_b.htm fully retrieved2026-10-11; Gramota transitivity/aspect guidance indexed, full page403. Independent English explanation from retained Russian examples; no new Russian generation, copied source/book prose or new source asset; review pending.
+done/made describes doing or making, a different action from writing.
+shippedText=done/made describes doing or making, a different action from writing.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English past-passive explanation,2026-10-11; retained Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cc25da99949099214b87526cb8a40d176bcc8ca557c63bcbc9d43053f39a908c
+contentHash=18577114f2ed0f9cb4f46322bbe758d0613d6e456c322d94c5599b9d94c5d307
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-past-passive-21`
+
+- Objectives: obj-u27-passive
+- Sessions: u27-s-orient, u27-s-passive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5c4131d1779485b7d8ac332bb14e9d542a96cf5f5daa9d9776ef89cc09395b36
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-passive:passive-21
+originalSourceText=Retained licensed Russian grammar revision1369617627 passive forms and frozen Phase3 stress applications; existing content-audit guided past-stress records. Primary Cornell https://russian.cornell.edu/grammar/html/le95_102_h.htm and le103_110_b.htm fully retrieved2026-10-11; Gramota transitivity/aspect guidance indexed, full page403. Independent English explanation from retained Russian examples; no new Russian generation, copied source/book prose or new source asset; review pending.
+killed describes killing, a different action from writing.
+shippedText=killed describes killing, a different action from writing.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English past-passive explanation,2026-10-11; retained Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c460b8757bf537c3d7e1cf83600cfc3636d5ca661838148d84da626372d8bc0b
+contentHash=c2ccf6805c5fe3c75962b8a5dd7409de378d857bdb03cd5f1927a05c5ab9d8d6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-past-passive-22`
+
+- Objectives: obj-u27-passive
+- Sessions: u27-s-orient, u27-s-passive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ed47018e781075bfd3c545d1de3642bfa99dd27a187e1ff9b37879fc3802d49c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-passive:passive-22
+originalSourceText=Retained licensed Russian grammar revision1369617627 passive forms and frozen Phase3 stress applications; existing content-audit guided past-stress records. Primary Cornell https://russian.cornell.edu/grammar/html/le95_102_h.htm and le103_110_b.htm fully retrieved2026-10-11; Gramota transitivity/aspect guidance indexed, full page403. Independent English explanation from retained Russian examples; no new Russian generation, copied source/book prose or new source asset; review pending.
+Passive past participles: уби́тый has the supplied meaning killed. It describes the entity affected by killing, not an entity performing that action.
+shippedText=Passive past participles: уби́тый has the supplied meaning killed. It describes the entity affected by killing, not an entity performing that action.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English past-passive explanation,2026-10-11; retained Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f04cee36b58543a90a6b0616a25a9c32d4f52a69d1bc896dd76188c7b45301d1
+contentHash=35de3039c57b2baede6837ea01b5ce9a04128219252941d66ad358438a7a6aa6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-past-passive-23`
+
+- Objectives: obj-u27-passive
+- Sessions: u27-s-orient, u27-s-passive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ad8922406933a1b77161ddbce2e8af11738535582a74bf0cf03fd8fac2a8e258
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-passive:passive-23
+originalSourceText=Retained licensed Russian grammar revision1369617627 passive forms and frozen Phase3 stress applications; existing content-audit guided past-stress records. Primary Cornell https://russian.cornell.edu/grammar/html/le95_102_h.htm and le103_110_b.htm fully retrieved2026-10-11; Gramota transitivity/aspect guidance indexed, full page403. Independent English explanation from retained Russian examples; no new Russian generation, copied source/book prose or new source asset; review pending.
+written describes writing, a different action from killing.
+shippedText=written describes writing, a different action from killing.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English past-passive explanation,2026-10-11; retained Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=43c66f5cf1048b48ccfd86ffa18655729083bd2b1dcff7e9366f58340d910fd6
+contentHash=6ec18bbbe25be2ab8f7907ba38476b38a9f0b1fcd9949cdab38482bdca4ebfc9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-past-passive-24`
+
+- Objectives: obj-u27-passive
+- Sessions: u27-s-orient, u27-s-passive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7623ac8d703afcd6400af971afb5c42ed82fa4e7f7d044eb78ee63b546f504d0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-passive:passive-24
+originalSourceText=Retained licensed Russian grammar revision1369617627 passive forms and frozen Phase3 stress applications; existing content-audit guided past-stress records. Primary Cornell https://russian.cornell.edu/grammar/html/le95_102_h.htm and le103_110_b.htm fully retrieved2026-10-11; Gramota transitivity/aspect guidance indexed, full page403. Independent English explanation from retained Russian examples; no new Russian generation, copied source/book prose or new source asset; review pending.
+done/made describes doing or making, a different action from killing.
+shippedText=done/made describes doing or making, a different action from killing.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English past-passive explanation,2026-10-11; retained Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6d910e20dadb02da969d13fa1c96169adf6115f0cd591cc4a5de79225f5fbf53
+contentHash=bc141e726dae5fd458c77e9017c441184e80c5f7bb6cb399935f14248e36c2e9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-past-passive-3`
+
+- Objectives: obj-u27-passive
+- Sessions: u27-s-orient, u27-s-passive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c544b7e9d791207b6066676023c7b28598ad8d4b769ea60a7e0612d8c7fb0494
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-passive:passive-3
+originalSourceText=Retained licensed Russian grammar revision1369617627 passive forms and frozen Phase3 stress applications; existing content-audit guided past-stress records. Primary Cornell https://russian.cornell.edu/grammar/html/le95_102_h.htm and le103_110_b.htm fully retrieved2026-10-11; Gramota transitivity/aspect guidance indexed, full page403. Independent English explanation from retained Russian examples; no new Russian generation, copied source/book prose or new source asset; review pending.
+Recognize the supplied long forms without inventing a universal algorithm
+shippedText=Recognize the supplied long forms without inventing a universal algorithm
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English past-passive explanation,2026-10-11; retained Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3dbb88d2edce9744f3cb2c038c575ac37bc28d6a140a7b355d622e2c1205c2f2
+contentHash=6ad75153999586331f9c3770c4fe29aca53c18dd40f5d41cca74af237d0fb675
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-past-passive-4`
+
+- Objectives: obj-u27-passive
+- Sessions: u27-s-orient, u27-s-passive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e719adfd88ff31ef18fc27fb636ab5682df77a4e75f5cd081768294cd6d0dbe8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-passive:passive-4
+originalSourceText=Retained licensed Russian grammar revision1369617627 passive forms and frozen Phase3 stress applications; existing content-audit guided past-stress records. Primary Cornell https://russian.cornell.edu/grammar/html/le95_102_h.htm and le103_110_b.htm fully retrieved2026-10-11; Gramota transitivity/aspect guidance indexed, full page403. Independent English explanation from retained Russian examples; no new Russian generation, copied source/book prose or new source asset; review pending.
+The retained examples are long past passive forms with adjective-type endings. In the shown сде́ланный and напи́санный forms, the formation contains double n; уби́тый has t. The retained source shows these forms from perfective verbs. This lesson recognizes the supplied forms; these endings alone are not a complete productive formation rule for every verb. Broader formation includes other suffix patterns and lexical restrictions, so do not manufacture an unlisted form from this small set. An imperfective past passive can exist; the supplied perfective examples are not a universal claim that every past passive must come from a perfective verb.
+shippedText=The retained examples are long past passive forms with adjective-type endings. In the shown сде́ланный and напи́санный forms, the formation contains double n; уби́тый has t. The retained source shows these forms from perfective verbs. This lesson recognizes the supplied forms; these endings alone are not a complete productive formation rule for every verb. Broader formation includes other suffix patterns and lexical restrictions, so do not manufacture an unlisted form from this small set. An imperfective past passive can exist; the supplied perfective examples are not a universal claim that every past passive must come from a perfective verb.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English past-passive explanation,2026-10-11; retained Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=543e376aac13ef355cd9e8cc43a41d93db98228250a8bdc024d69153c3c76bae
+contentHash=156f5264d33df678be3a1101e70721c82a76f85197154fa37b636afa560014fb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-past-passive-5`
+
+- Objectives: obj-u27-passive
+- Sessions: u27-s-orient, u27-s-passive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ce3843397fedbe4334391ff3a037890ed1c866814cc5bf47b01d70b6cd4a2529
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-passive:passive-5
+originalSourceText=Retained licensed Russian grammar revision1369617627 passive forms and frozen Phase3 stress applications; existing content-audit guided past-stress records. Primary Cornell https://russian.cornell.edu/grammar/html/le95_102_h.htm and le103_110_b.htm fully retrieved2026-10-11; Gramota transitivity/aspect guidance indexed, full page403. Independent English explanation from retained Russian examples; no new Russian generation, copied source/book prose or new source asset; review pending.
+Distinguish the action meaning from long versus short form
+shippedText=Distinguish the action meaning from long versus short form
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English past-passive explanation,2026-10-11; retained Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=041f5bbca11ae5421708056d6c6df088740a21e4d557b787a2cbae93fb0d707d
+contentHash=cc20824cc7a2c14b8d970093a96b359175974b85c3e737853aead86d7aea78b5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-past-passive-6`
+
+- Objectives: obj-u27-passive
+- Sessions: u27-s-orient, u27-s-passive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0e2e3fe7e7041f59c7cbfb48cc39ebb56446ace6c7910b5dc6149727592af6b1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-passive:passive-6
+originalSourceText=Retained licensed Russian grammar revision1369617627 passive forms and frozen Phase3 stress applications; existing content-audit guided past-stress records. Primary Cornell https://russian.cornell.edu/grammar/html/le95_102_h.htm and le103_110_b.htm fully retrieved2026-10-11; Gramota transitivity/aspect guidance indexed, full page403. Independent English explanation from retained Russian examples; no new Russian generation, copied source/book prose or new source asset; review pending.
+The meaning written belongs to напи́санный, not to the doing/making form сде́ланный or the killing form уби́тый. The meaning killed belongs to уби́тый, not to the other two actions. The retained short form напи́сан has a single n and lacks the long adjective ending shown in напи́санный. Long versus short form is different from the action meaning: both writing forms concern writing. These checks select the action meaning of a supplied form; they do not test production of all short-form gender and number endings.
+shippedText=The meaning written belongs to напи́санный, not to the doing/making form сде́ланный or the killing form уби́тый. The meaning killed belongs to уби́тый, not to the other two actions. The retained short form напи́сан has a single n and lacks the long adjective ending shown in напи́санный. Long versus short form is different from the action meaning: both writing forms concern writing. These checks select the action meaning of a supplied form; they do not test production of all short-form gender and number endings.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English past-passive explanation,2026-10-11; retained Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=aac69c2ac45c6611b33dfbbf758aad89f0fb39f3e0684a352bbad3946be58940
+contentHash=f09bd7e9416238ce3e9afa1d32069c1e861da241fc20b4f3e78db46d71c7f172
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-past-passive-7`
+
+- Objectives: obj-u27-passive
+- Sessions: u27-s-orient, u27-s-passive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f72e49d243dddbc669d2bac6d08286f32db9ff9029eb0188303ae4ea629a5c77
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-passive:passive-7
+originalSourceText=Retained licensed Russian grammar revision1369617627 passive forms and frozen Phase3 stress applications; existing content-audit guided past-stress records. Primary Cornell https://russian.cornell.edu/grammar/html/le95_102_h.htm and le103_110_b.htm fully retrieved2026-10-11; Gramota transitivity/aspect guidance indexed, full page403. Independent English explanation from retained Russian examples; no new Russian generation, copied source/book prose or new source asset; review pending.
+Identify the writer in the retained passive sentence
+shippedText=Identify the writer in the retained passive sentence
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English past-passive explanation,2026-10-11; retained Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=72aee5b59c1276383bf1994c1f02c74a66aa288a0de7a16bebf8142ee904de64
+contentHash=64675c7aee5794f8dd81d9c4a9051765367531f7568b6a392ba67cdafacbb1a7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-past-passive-8`
+
+- Objectives: obj-u27-passive
+- Sessions: u27-s-orient, u27-s-passive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d81e483f6454993230d90c0f0f3659ccf201c038b27f31066f42cc929fd4279a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-passive:passive-8
+originalSourceText=Retained licensed Russian grammar revision1369617627 passive forms and frozen Phase3 stress applications; existing content-audit guided past-stress records. Primary Cornell https://russian.cornell.edu/grammar/html/le95_102_h.htm and le103_110_b.htm fully retrieved2026-10-11; Gramota transitivity/aspect guidance indexed, full page403. Independent English explanation from retained Russian examples; no new Russian generation, copied source/book prose or new source asset; review pending.
+письмо написано Иваном — the letter was written by Ivan. The letter is the entity affected by the writing; Ivan is the writer identified in the retained sentence. The passive form describes the letter’s state or result, rather than saying that the letter writes somebody. The short passive form in the sentence differs from the long headword напи́санный. A longer sentence supplies context that a headword lacks; do not infer a writer, reader or exact time from a bare participle alone. Active participles are outside this required Unit27 lesson.
+shippedText=письмо написано Иваном — the letter was written by Ivan. The letter is the entity affected by the writing; Ivan is the writer identified in the retained sentence. The passive form describes the letter’s state or result, rather than saying that the letter writes somebody. The short passive form in the sentence differs from the long headword напи́санный. A longer sentence supplies context that a headword lacks; do not infer a writer, reader or exact time from a bare participle alone. Active participles are outside this required Unit27 lesson.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English past-passive explanation,2026-10-11; retained Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1eeb836de4a9d3b6951ad8feeb3433b1f0bc8c6210e7e3c9d6cfa26419b89005
+contentHash=06420a949693833bf695f3aafc2cf02ca43e85053302415d5ed314c792d76011
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-past-passive-9`
+
+- Objectives: obj-u27-passive
+- Sessions: u27-s-orient, u27-s-passive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5dd958bf4d895b9729480b63b8e3de6009cb5831695a836009b952f14468b360
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u27-passive:passive-9
+originalSourceText=Retained licensed Russian grammar revision1369617627 passive forms and frozen Phase3 stress applications; existing content-audit guided past-stress records. Primary Cornell https://russian.cornell.edu/grammar/html/le95_102_h.htm and le103_110_b.htm fully retrieved2026-10-11; Gramota transitivity/aspect guidance indexed, full page403. Independent English explanation from retained Russian examples; no new Russian generation, copied source/book prose or new source asset; review pending.
+Guided practice
+shippedText=Guided practice
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English past-passive explanation,2026-10-11; retained Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b4867bd6df8158b7f8b546780220ee4faaae2c8a5242ed9dd5d037278dc2059c
+contentHash=cb1d4a3d9d5db425da3797c7a997db3588ec122a60c4d645ea31cd849f76ab3c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-past-stress-0`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2966ad8e6ce9c0e8225b31ff1592fe333ec59a17c0e21d911f9adaffc8450764
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-u27-past-stress
+originalSourceText=Retained licensed Russian grammar revision1369617627 passive forms and frozen Phase3 stress applications; existing content-audit guided past-stress records. Primary Cornell https://russian.cornell.edu/grammar/html/le95_102_h.htm and le103_110_b.htm fully retrieved2026-10-11; Gramota transitivity/aspect guidance indexed, full page403. Independent English explanation from retained Russian examples; no new Russian generation, copied source/book prose or new source asset; review pending.
+Locate stress in the two required past passive forms
+Place the accent on the supplied vowel
+The required past passive forms are напи́санный and прочи́танный. Each displayed accent is on the second syllable. For the guided write form, stem stress напи́санный is the supplied option; later-vowel stress написа́нный moves the accent to the vowel in the third syllable and is rejected for this supplied form. It is not an accent on the final adjective ending. For the independent write contrast, напи́санный is retained and написа́нный is rejected. For the read contrast, прочи́танный is retained and прочита́нный is rejected. Compare the accented vowel in the same letters rather than simply noticing that both options have an accent mark.
+Keep required past-passive stress separate from optional reference and general production
+The supplied limit is no stress rule is admitted beyond these four. The competing statement these four placements generate every other participle wrongly turns four retained reference placements into a productive rule for an unlisted participle. Two of the four belong to optional present-passive reference, while the required checks here use only the two displayed past-passive forms. Optional present-passive checks do not gate Unit27 advancement. The fact that these two past forms share second-syllable stress does not predict stress for every other participle or its short forms. Use verified lexical evidence for an unlisted form. Meaning recognition and accent placement are separate tasks.
+Guided practice
+Use the supplied action meaning or accent placement. A miss restores every explanation and worked example.
+Review the complete past-passive distinction
+The required past passive forms are напи́санный and прочи́танный. Each displayed accent is on the second syllable. For the guided write form, stem stress напи́санный is the supplied option; later-vowel stress написа́нный moves the accent to the vowel in the third syllable and is rejected for this supplied form. It is not an accent on the final adjective ending. For the independent write contrast, напи́санный is retained and написа́нный is rejected. For the read contrast, прочи́танный is retained and прочита́нный is rejected. Compare the accented vowel in the same letters rather than simply noticing that both options have an accent mark.
+
+The supplied limit is no stress rule is admitted beyond these four. The competing statement these four placements generate every other participle wrongly turns four retained reference placements into a productive rule for an unlisted participle. Two of the four belong to optional present-passive reference, while the required checks here use only the two displayed past-passive forms. Optional present-passive checks do not gate Unit27 advancement. The fact that these two past forms share second-syllable stress does not predict stress for every other participle or its short forms. Use verified lexical evidence for an unlisted form. Meaning recognition and accent placement are separate tasks.
+Independent checks
+Recognize the supplied past-passive meanings or accent placement. Optional present-passive material does not gate this unit; broader productive formation remains outside these checks.
+Which past-passive stress is admitted for this guided write form?
+guided past passive of написать
+The supplied accent is stem stress напи́санный, on the second syllable. The competing accent is later-vowel stress написа́нный, on the third syllable rather than the final adjective ending.
+stem stress напи́санный
+later-vowel stress написа́нный
+later-vowel stress написа́нный moves the accent from the second to the third syllable and is rejected for the supplied write form.
+[{"cue": "guided past passive of написать", "answer": "stem stress напи́санный", "distractors": ["later-vowel stress написа́нный"]}]
+shippedText=Locate stress in the two required past passive forms
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English past-passive explanation,2026-10-11; retained Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6df4d36d649b680a8273f1dc647d0c547b7f8ffc985ddf21228bd96d151e79f6
+contentHash=a024b9c917ead780cedec40aa0f2ad09f469703b8638fc24594f437ad3779844
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-past-stress-1`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1b40785818910102b59b16641e178bdfd4692df3017216914c401cc228f5b4f9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-u27-past-stress
+originalSourceText=Retained licensed Russian grammar revision1369617627 passive forms and frozen Phase3 stress applications; existing content-audit guided past-stress records. Primary Cornell https://russian.cornell.edu/grammar/html/le95_102_h.htm and le103_110_b.htm fully retrieved2026-10-11; Gramota transitivity/aspect guidance indexed, full page403. Independent English explanation from retained Russian examples; no new Russian generation, copied source/book prose or new source asset; review pending.
+Locate stress in the two required past passive forms
+Place the accent on the supplied vowel
+The required past passive forms are напи́санный and прочи́танный. Each displayed accent is on the second syllable. For the guided write form, stem stress напи́санный is the supplied option; later-vowel stress написа́нный moves the accent to the vowel in the third syllable and is rejected for this supplied form. It is not an accent on the final adjective ending. For the independent write contrast, напи́санный is retained and написа́нный is rejected. For the read contrast, прочи́танный is retained and прочита́нный is rejected. Compare the accented vowel in the same letters rather than simply noticing that both options have an accent mark.
+Keep required past-passive stress separate from optional reference and general production
+The supplied limit is no stress rule is admitted beyond these four. The competing statement these four placements generate every other participle wrongly turns four retained reference placements into a productive rule for an unlisted participle. Two of the four belong to optional present-passive reference, while the required checks here use only the two displayed past-passive forms. Optional present-passive checks do not gate Unit27 advancement. The fact that these two past forms share second-syllable stress does not predict stress for every other participle or its short forms. Use verified lexical evidence for an unlisted form. Meaning recognition and accent placement are separate tasks.
+Guided practice
+Use the supplied action meaning or accent placement. A miss restores every explanation and worked example.
+Review the complete past-passive distinction
+The required past passive forms are напи́санный and прочи́танный. Each displayed accent is on the second syllable. For the guided write form, stem stress напи́санный is the supplied option; later-vowel stress написа́нный moves the accent to the vowel in the third syllable and is rejected for this supplied form. It is not an accent on the final adjective ending. For the independent write contrast, напи́санный is retained and написа́нный is rejected. For the read contrast, прочи́танный is retained and прочита́нный is rejected. Compare the accented vowel in the same letters rather than simply noticing that both options have an accent mark.
+
+The supplied limit is no stress rule is admitted beyond these four. The competing statement these four placements generate every other participle wrongly turns four retained reference placements into a productive rule for an unlisted participle. Two of the four belong to optional present-passive reference, while the required checks here use only the two displayed past-passive forms. Optional present-passive checks do not gate Unit27 advancement. The fact that these two past forms share second-syllable stress does not predict stress for every other participle or its short forms. Use verified lexical evidence for an unlisted form. Meaning recognition and accent placement are separate tasks.
+Independent checks
+Recognize the supplied past-passive meanings or accent placement. Optional present-passive material does not gate this unit; broader productive formation remains outside these checks.
+Which past-passive stress is admitted for this guided write form?
+guided past passive of написать
+The supplied accent is stem stress напи́санный, on the second syllable. The competing accent is later-vowel stress написа́нный, on the third syllable rather than the final adjective ending.
+stem stress напи́санный
+later-vowel stress написа́нный
+later-vowel stress написа́нный moves the accent from the second to the third syllable and is rejected for the supplied write form.
+[{"cue": "guided past passive of написать", "answer": "stem stress напи́санный", "distractors": ["later-vowel stress написа́нный"]}]
+shippedText=Place the accent on the supplied vowel
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English past-passive explanation,2026-10-11; retained Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6df4d36d649b680a8273f1dc647d0c547b7f8ffc985ddf21228bd96d151e79f6
+contentHash=959f842e6272ebbe1318589eb1831d547908a47c7cfb3d0fbed7b12570fcea16
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-past-stress-10`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 50521626e76ef9f7bf9ac36155210aecfd751bbe46fa08cabf7c49dd9bed0993
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-u27-past-stress
+originalSourceText=Retained licensed Russian grammar revision1369617627 passive forms and frozen Phase3 stress applications; existing content-audit guided past-stress records. Primary Cornell https://russian.cornell.edu/grammar/html/le95_102_h.htm and le103_110_b.htm fully retrieved2026-10-11; Gramota transitivity/aspect guidance indexed, full page403. Independent English explanation from retained Russian examples; no new Russian generation, copied source/book prose or new source asset; review pending.
+Locate stress in the two required past passive forms
+Place the accent on the supplied vowel
+The required past passive forms are напи́санный and прочи́танный. Each displayed accent is on the second syllable. For the guided write form, stem stress напи́санный is the supplied option; later-vowel stress написа́нный moves the accent to the vowel in the third syllable and is rejected for this supplied form. It is not an accent on the final adjective ending. For the independent write contrast, напи́санный is retained and написа́нный is rejected. For the read contrast, прочи́танный is retained and прочита́нный is rejected. Compare the accented vowel in the same letters rather than simply noticing that both options have an accent mark.
+Keep required past-passive stress separate from optional reference and general production
+The supplied limit is no stress rule is admitted beyond these four. The competing statement these four placements generate every other participle wrongly turns four retained reference placements into a productive rule for an unlisted participle. Two of the four belong to optional present-passive reference, while the required checks here use only the two displayed past-passive forms. Optional present-passive checks do not gate Unit27 advancement. The fact that these two past forms share second-syllable stress does not predict stress for every other participle or its short forms. Use verified lexical evidence for an unlisted form. Meaning recognition and accent placement are separate tasks.
+Guided practice
+Use the supplied action meaning or accent placement. A miss restores every explanation and worked example.
+Review the complete past-passive distinction
+The required past passive forms are напи́санный and прочи́танный. Each displayed accent is on the second syllable. For the guided write form, stem stress напи́санный is the supplied option; later-vowel stress написа́нный moves the accent to the vowel in the third syllable and is rejected for this supplied form. It is not an accent on the final adjective ending. For the independent write contrast, напи́санный is retained and написа́нный is rejected. For the read contrast, прочи́танный is retained and прочита́нный is rejected. Compare the accented vowel in the same letters rather than simply noticing that both options have an accent mark.
+
+The supplied limit is no stress rule is admitted beyond these four. The competing statement these four placements generate every other participle wrongly turns four retained reference placements into a productive rule for an unlisted participle. Two of the four belong to optional present-passive reference, while the required checks here use only the two displayed past-passive forms. Optional present-passive checks do not gate Unit27 advancement. The fact that these two past forms share second-syllable stress does not predict stress for every other participle or its short forms. Use verified lexical evidence for an unlisted form. Meaning recognition and accent placement are separate tasks.
+Independent checks
+Recognize the supplied past-passive meanings or accent placement. Optional present-passive material does not gate this unit; broader productive formation remains outside these checks.
+Which past-passive stress is admitted for this guided write form?
+guided past passive of написать
+The supplied accent is stem stress напи́санный, on the second syllable. The competing accent is later-vowel stress написа́нный, on the third syllable rather than the final adjective ending.
+stem stress напи́санный
+later-vowel stress написа́нный
+later-vowel stress написа́нный moves the accent from the second to the third syllable and is rejected for the supplied write form.
+[{"cue": "guided past passive of написать", "answer": "stem stress напи́санный", "distractors": ["later-vowel stress написа́нный"]}]
+shippedText=Recognize the supplied past-passive meanings or accent placement. Optional present-passive material does not gate this unit; broader productive formation remains outside these checks.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English past-passive explanation,2026-10-11; retained Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6df4d36d649b680a8273f1dc647d0c547b7f8ffc985ddf21228bd96d151e79f6
+contentHash=2b5a2f3c7a0872f905c0feb2cbcfb5465715ef510278d2b589b7e09ec2c39c37
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-past-stress-11`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cc6fb17edb98d86dfaa88fefc834fc228c3d97bbed6da21f3c677d887943285d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-u27-past-stress
+originalSourceText=Retained licensed Russian grammar revision1369617627 passive forms and frozen Phase3 stress applications; existing content-audit guided past-stress records. Primary Cornell https://russian.cornell.edu/grammar/html/le95_102_h.htm and le103_110_b.htm fully retrieved2026-10-11; Gramota transitivity/aspect guidance indexed, full page403. Independent English explanation from retained Russian examples; no new Russian generation, copied source/book prose or new source asset; review pending.
+Locate stress in the two required past passive forms
+Place the accent on the supplied vowel
+The required past passive forms are напи́санный and прочи́танный. Each displayed accent is on the second syllable. For the guided write form, stem stress напи́санный is the supplied option; later-vowel stress написа́нный moves the accent to the vowel in the third syllable and is rejected for this supplied form. It is not an accent on the final adjective ending. For the independent write contrast, напи́санный is retained and написа́нный is rejected. For the read contrast, прочи́танный is retained and прочита́нный is rejected. Compare the accented vowel in the same letters rather than simply noticing that both options have an accent mark.
+Keep required past-passive stress separate from optional reference and general production
+The supplied limit is no stress rule is admitted beyond these four. The competing statement these four placements generate every other participle wrongly turns four retained reference placements into a productive rule for an unlisted participle. Two of the four belong to optional present-passive reference, while the required checks here use only the two displayed past-passive forms. Optional present-passive checks do not gate Unit27 advancement. The fact that these two past forms share second-syllable stress does not predict stress for every other participle or its short forms. Use verified lexical evidence for an unlisted form. Meaning recognition and accent placement are separate tasks.
+Guided practice
+Use the supplied action meaning or accent placement. A miss restores every explanation and worked example.
+Review the complete past-passive distinction
+The required past passive forms are напи́санный and прочи́танный. Each displayed accent is on the second syllable. For the guided write form, stem stress напи́санный is the supplied option; later-vowel stress написа́нный moves the accent to the vowel in the third syllable and is rejected for this supplied form. It is not an accent on the final adjective ending. For the independent write contrast, напи́санный is retained and написа́нный is rejected. For the read contrast, прочи́танный is retained and прочита́нный is rejected. Compare the accented vowel in the same letters rather than simply noticing that both options have an accent mark.
+
+The supplied limit is no stress rule is admitted beyond these four. The competing statement these four placements generate every other participle wrongly turns four retained reference placements into a productive rule for an unlisted participle. Two of the four belong to optional present-passive reference, while the required checks here use only the two displayed past-passive forms. Optional present-passive checks do not gate Unit27 advancement. The fact that these two past forms share second-syllable stress does not predict stress for every other participle or its short forms. Use verified lexical evidence for an unlisted form. Meaning recognition and accent placement are separate tasks.
+Independent checks
+Recognize the supplied past-passive meanings or accent placement. Optional present-passive material does not gate this unit; broader productive formation remains outside these checks.
+Which past-passive stress is admitted for this guided write form?
+guided past passive of написать
+The supplied accent is stem stress напи́санный, on the second syllable. The competing accent is later-vowel stress написа́нный, on the third syllable rather than the final adjective ending.
+stem stress напи́санный
+later-vowel stress написа́нный
+later-vowel stress написа́нный moves the accent from the second to the third syllable and is rejected for the supplied write form.
+[{"cue": "guided past passive of написать", "answer": "stem stress напи́санный", "distractors": ["later-vowel stress написа́нный"]}]
+shippedText=Which past-passive stress is admitted for this guided write form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English past-passive explanation,2026-10-11; retained Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6df4d36d649b680a8273f1dc647d0c547b7f8ffc985ddf21228bd96d151e79f6
+contentHash=69cdceff83aa43321e8084c7f36797a304d3fcac169e6d9971abaf38263de236
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-past-stress-12`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d691ab192be3d986eae768c1a55bfe0fbc5f8200e2020f335a9121a87501bc19
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-u27-past-stress
+originalSourceText=Retained licensed Russian grammar revision1369617627 passive forms and frozen Phase3 stress applications; existing content-audit guided past-stress records. Primary Cornell https://russian.cornell.edu/grammar/html/le95_102_h.htm and le103_110_b.htm fully retrieved2026-10-11; Gramota transitivity/aspect guidance indexed, full page403. Independent English explanation from retained Russian examples; no new Russian generation, copied source/book prose or new source asset; review pending.
+Locate stress in the two required past passive forms
+Place the accent on the supplied vowel
+The required past passive forms are напи́санный and прочи́танный. Each displayed accent is on the second syllable. For the guided write form, stem stress напи́санный is the supplied option; later-vowel stress написа́нный moves the accent to the vowel in the third syllable and is rejected for this supplied form. It is not an accent on the final adjective ending. For the independent write contrast, напи́санный is retained and написа́нный is rejected. For the read contrast, прочи́танный is retained and прочита́нный is rejected. Compare the accented vowel in the same letters rather than simply noticing that both options have an accent mark.
+Keep required past-passive stress separate from optional reference and general production
+The supplied limit is no stress rule is admitted beyond these four. The competing statement these four placements generate every other participle wrongly turns four retained reference placements into a productive rule for an unlisted participle. Two of the four belong to optional present-passive reference, while the required checks here use only the two displayed past-passive forms. Optional present-passive checks do not gate Unit27 advancement. The fact that these two past forms share second-syllable stress does not predict stress for every other participle or its short forms. Use verified lexical evidence for an unlisted form. Meaning recognition and accent placement are separate tasks.
+Guided practice
+Use the supplied action meaning or accent placement. A miss restores every explanation and worked example.
+Review the complete past-passive distinction
+The required past passive forms are напи́санный and прочи́танный. Each displayed accent is on the second syllable. For the guided write form, stem stress напи́санный is the supplied option; later-vowel stress написа́нный moves the accent to the vowel in the third syllable and is rejected for this supplied form. It is not an accent on the final adjective ending. For the independent write contrast, напи́санный is retained and написа́нный is rejected. For the read contrast, прочи́танный is retained and прочита́нный is rejected. Compare the accented vowel in the same letters rather than simply noticing that both options have an accent mark.
+
+The supplied limit is no stress rule is admitted beyond these four. The competing statement these four placements generate every other participle wrongly turns four retained reference placements into a productive rule for an unlisted participle. Two of the four belong to optional present-passive reference, while the required checks here use only the two displayed past-passive forms. Optional present-passive checks do not gate Unit27 advancement. The fact that these two past forms share second-syllable stress does not predict stress for every other participle or its short forms. Use verified lexical evidence for an unlisted form. Meaning recognition and accent placement are separate tasks.
+Independent checks
+Recognize the supplied past-passive meanings or accent placement. Optional present-passive material does not gate this unit; broader productive formation remains outside these checks.
+Which past-passive stress is admitted for this guided write form?
+guided past passive of написать
+The supplied accent is stem stress напи́санный, on the second syllable. The competing accent is later-vowel stress написа́нный, on the third syllable rather than the final adjective ending.
+stem stress напи́санный
+later-vowel stress написа́нный
+later-vowel stress написа́нный moves the accent from the second to the third syllable and is rejected for the supplied write form.
+[{"cue": "guided past passive of написать", "answer": "stem stress напи́санный", "distractors": ["later-vowel stress написа́нный"]}]
+shippedText=The supplied accent is stem stress напи́санный, on the second syllable. The competing accent is later-vowel stress написа́нный, on the third syllable rather than the final adjective ending.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English past-passive explanation,2026-10-11; retained Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6df4d36d649b680a8273f1dc647d0c547b7f8ffc985ddf21228bd96d151e79f6
+contentHash=165e2e26469f12d7e2cac47f2e12fdc6238305598cab9065d025e474360c8db4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-past-stress-13`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f2f34e5e5d5199552ad0c202f4bc4ba33d8d0542b17e1aba931667b9c15e25d8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-u27-past-stress
+originalSourceText=Retained licensed Russian grammar revision1369617627 passive forms and frozen Phase3 stress applications; existing content-audit guided past-stress records. Primary Cornell https://russian.cornell.edu/grammar/html/le95_102_h.htm and le103_110_b.htm fully retrieved2026-10-11; Gramota transitivity/aspect guidance indexed, full page403. Independent English explanation from retained Russian examples; no new Russian generation, copied source/book prose or new source asset; review pending.
+Locate stress in the two required past passive forms
+Place the accent on the supplied vowel
+The required past passive forms are напи́санный and прочи́танный. Each displayed accent is on the second syllable. For the guided write form, stem stress напи́санный is the supplied option; later-vowel stress написа́нный moves the accent to the vowel in the third syllable and is rejected for this supplied form. It is not an accent on the final adjective ending. For the independent write contrast, напи́санный is retained and написа́нный is rejected. For the read contrast, прочи́танный is retained and прочита́нный is rejected. Compare the accented vowel in the same letters rather than simply noticing that both options have an accent mark.
+Keep required past-passive stress separate from optional reference and general production
+The supplied limit is no stress rule is admitted beyond these four. The competing statement these four placements generate every other participle wrongly turns four retained reference placements into a productive rule for an unlisted participle. Two of the four belong to optional present-passive reference, while the required checks here use only the two displayed past-passive forms. Optional present-passive checks do not gate Unit27 advancement. The fact that these two past forms share second-syllable stress does not predict stress for every other participle or its short forms. Use verified lexical evidence for an unlisted form. Meaning recognition and accent placement are separate tasks.
+Guided practice
+Use the supplied action meaning or accent placement. A miss restores every explanation and worked example.
+Review the complete past-passive distinction
+The required past passive forms are напи́санный and прочи́танный. Each displayed accent is on the second syllable. For the guided write form, stem stress напи́санный is the supplied option; later-vowel stress написа́нный moves the accent to the vowel in the third syllable and is rejected for this supplied form. It is not an accent on the final adjective ending. For the independent write contrast, напи́санный is retained and написа́нный is rejected. For the read contrast, прочи́танный is retained and прочита́нный is rejected. Compare the accented vowel in the same letters rather than simply noticing that both options have an accent mark.
+
+The supplied limit is no stress rule is admitted beyond these four. The competing statement these four placements generate every other participle wrongly turns four retained reference placements into a productive rule for an unlisted participle. Two of the four belong to optional present-passive reference, while the required checks here use only the two displayed past-passive forms. Optional present-passive checks do not gate Unit27 advancement. The fact that these two past forms share second-syllable stress does not predict stress for every other participle or its short forms. Use verified lexical evidence for an unlisted form. Meaning recognition and accent placement are separate tasks.
+Independent checks
+Recognize the supplied past-passive meanings or accent placement. Optional present-passive material does not gate this unit; broader productive formation remains outside these checks.
+Which past-passive stress is admitted for this guided write form?
+guided past passive of написать
+The supplied accent is stem stress напи́санный, on the second syllable. The competing accent is later-vowel stress написа́нный, on the third syllable rather than the final adjective ending.
+stem stress напи́санный
+later-vowel stress написа́нный
+later-vowel stress написа́нный moves the accent from the second to the third syllable and is rejected for the supplied write form.
+[{"cue": "guided past passive of написать", "answer": "stem stress напи́санный", "distractors": ["later-vowel stress написа́нный"]}]
+shippedText=later-vowel stress написа́нный moves the accent from the second to the third syllable and is rejected for the supplied write form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English past-passive explanation,2026-10-11; retained Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6df4d36d649b680a8273f1dc647d0c547b7f8ffc985ddf21228bd96d151e79f6
+contentHash=264a09d2485c325a760721f83f3a94610b3a350943c93702ea3de63d9c3e94eb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-past-stress-2`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e5ce1f251dcd0d6b79a1f12db4facbb2427926ed9ae6ce6bb05cd236935aac40
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-u27-past-stress
+originalSourceText=Retained licensed Russian grammar revision1369617627 passive forms and frozen Phase3 stress applications; existing content-audit guided past-stress records. Primary Cornell https://russian.cornell.edu/grammar/html/le95_102_h.htm and le103_110_b.htm fully retrieved2026-10-11; Gramota transitivity/aspect guidance indexed, full page403. Independent English explanation from retained Russian examples; no new Russian generation, copied source/book prose or new source asset; review pending.
+Locate stress in the two required past passive forms
+Place the accent on the supplied vowel
+The required past passive forms are напи́санный and прочи́танный. Each displayed accent is on the second syllable. For the guided write form, stem stress напи́санный is the supplied option; later-vowel stress написа́нный moves the accent to the vowel in the third syllable and is rejected for this supplied form. It is not an accent on the final adjective ending. For the independent write contrast, напи́санный is retained and написа́нный is rejected. For the read contrast, прочи́танный is retained and прочита́нный is rejected. Compare the accented vowel in the same letters rather than simply noticing that both options have an accent mark.
+Keep required past-passive stress separate from optional reference and general production
+The supplied limit is no stress rule is admitted beyond these four. The competing statement these four placements generate every other participle wrongly turns four retained reference placements into a productive rule for an unlisted participle. Two of the four belong to optional present-passive reference, while the required checks here use only the two displayed past-passive forms. Optional present-passive checks do not gate Unit27 advancement. The fact that these two past forms share second-syllable stress does not predict stress for every other participle or its short forms. Use verified lexical evidence for an unlisted form. Meaning recognition and accent placement are separate tasks.
+Guided practice
+Use the supplied action meaning or accent placement. A miss restores every explanation and worked example.
+Review the complete past-passive distinction
+The required past passive forms are напи́санный and прочи́танный. Each displayed accent is on the second syllable. For the guided write form, stem stress напи́санный is the supplied option; later-vowel stress написа́нный moves the accent to the vowel in the third syllable and is rejected for this supplied form. It is not an accent on the final adjective ending. For the independent write contrast, напи́санный is retained and написа́нный is rejected. For the read contrast, прочи́танный is retained and прочита́нный is rejected. Compare the accented vowel in the same letters rather than simply noticing that both options have an accent mark.
+
+The supplied limit is no stress rule is admitted beyond these four. The competing statement these four placements generate every other participle wrongly turns four retained reference placements into a productive rule for an unlisted participle. Two of the four belong to optional present-passive reference, while the required checks here use only the two displayed past-passive forms. Optional present-passive checks do not gate Unit27 advancement. The fact that these two past forms share second-syllable stress does not predict stress for every other participle or its short forms. Use verified lexical evidence for an unlisted form. Meaning recognition and accent placement are separate tasks.
+Independent checks
+Recognize the supplied past-passive meanings or accent placement. Optional present-passive material does not gate this unit; broader productive formation remains outside these checks.
+Which past-passive stress is admitted for this guided write form?
+guided past passive of написать
+The supplied accent is stem stress напи́санный, on the second syllable. The competing accent is later-vowel stress написа́нный, on the third syllable rather than the final adjective ending.
+stem stress напи́санный
+later-vowel stress написа́нный
+later-vowel stress написа́нный moves the accent from the second to the third syllable and is rejected for the supplied write form.
+[{"cue": "guided past passive of написать", "answer": "stem stress напи́санный", "distractors": ["later-vowel stress написа́нный"]}]
+shippedText=The required past passive forms are напи́санный and прочи́танный. Each displayed accent is on the second syllable. For the guided write form, stem stress напи́санный is the supplied option; later-vowel stress написа́нный moves the accent to the vowel in the third syllable and is rejected for this supplied form. It is not an accent on the final adjective ending. For the independent write contrast, напи́санный is retained and написа́нный is rejected. For the read contrast, прочи́танный is retained and прочита́нный is rejected. Compare the accented vowel in the same letters rather than simply noticing that both options have an accent mark.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English past-passive explanation,2026-10-11; retained Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6df4d36d649b680a8273f1dc647d0c547b7f8ffc985ddf21228bd96d151e79f6
+contentHash=292e61521fa407822399aded084896df0acc4cf47cadd6f8e819d20c9ab7d86b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-past-stress-3`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1fef471ed5e3d105f4f182e224955d0c465e4ea2f9a0d270b1bd4d209d7e3824
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-u27-past-stress
+originalSourceText=Retained licensed Russian grammar revision1369617627 passive forms and frozen Phase3 stress applications; existing content-audit guided past-stress records. Primary Cornell https://russian.cornell.edu/grammar/html/le95_102_h.htm and le103_110_b.htm fully retrieved2026-10-11; Gramota transitivity/aspect guidance indexed, full page403. Independent English explanation from retained Russian examples; no new Russian generation, copied source/book prose or new source asset; review pending.
+Locate stress in the two required past passive forms
+Place the accent on the supplied vowel
+The required past passive forms are напи́санный and прочи́танный. Each displayed accent is on the second syllable. For the guided write form, stem stress напи́санный is the supplied option; later-vowel stress написа́нный moves the accent to the vowel in the third syllable and is rejected for this supplied form. It is not an accent on the final adjective ending. For the independent write contrast, напи́санный is retained and написа́нный is rejected. For the read contrast, прочи́танный is retained and прочита́нный is rejected. Compare the accented vowel in the same letters rather than simply noticing that both options have an accent mark.
+Keep required past-passive stress separate from optional reference and general production
+The supplied limit is no stress rule is admitted beyond these four. The competing statement these four placements generate every other participle wrongly turns four retained reference placements into a productive rule for an unlisted participle. Two of the four belong to optional present-passive reference, while the required checks here use only the two displayed past-passive forms. Optional present-passive checks do not gate Unit27 advancement. The fact that these two past forms share second-syllable stress does not predict stress for every other participle or its short forms. Use verified lexical evidence for an unlisted form. Meaning recognition and accent placement are separate tasks.
+Guided practice
+Use the supplied action meaning or accent placement. A miss restores every explanation and worked example.
+Review the complete past-passive distinction
+The required past passive forms are напи́санный and прочи́танный. Each displayed accent is on the second syllable. For the guided write form, stem stress напи́санный is the supplied option; later-vowel stress написа́нный moves the accent to the vowel in the third syllable and is rejected for this supplied form. It is not an accent on the final adjective ending. For the independent write contrast, напи́санный is retained and написа́нный is rejected. For the read contrast, прочи́танный is retained and прочита́нный is rejected. Compare the accented vowel in the same letters rather than simply noticing that both options have an accent mark.
+
+The supplied limit is no stress rule is admitted beyond these four. The competing statement these four placements generate every other participle wrongly turns four retained reference placements into a productive rule for an unlisted participle. Two of the four belong to optional present-passive reference, while the required checks here use only the two displayed past-passive forms. Optional present-passive checks do not gate Unit27 advancement. The fact that these two past forms share second-syllable stress does not predict stress for every other participle or its short forms. Use verified lexical evidence for an unlisted form. Meaning recognition and accent placement are separate tasks.
+Independent checks
+Recognize the supplied past-passive meanings or accent placement. Optional present-passive material does not gate this unit; broader productive formation remains outside these checks.
+Which past-passive stress is admitted for this guided write form?
+guided past passive of написать
+The supplied accent is stem stress напи́санный, on the second syllable. The competing accent is later-vowel stress написа́нный, on the third syllable rather than the final adjective ending.
+stem stress напи́санный
+later-vowel stress написа́нный
+later-vowel stress написа́нный moves the accent from the second to the third syllable and is rejected for the supplied write form.
+[{"cue": "guided past passive of написать", "answer": "stem stress напи́санный", "distractors": ["later-vowel stress написа́нный"]}]
+shippedText=Keep required past-passive stress separate from optional reference and general production
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English past-passive explanation,2026-10-11; retained Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6df4d36d649b680a8273f1dc647d0c547b7f8ffc985ddf21228bd96d151e79f6
+contentHash=f6271c4b0810645659030ea06ffe6946a44edb6d45a595d27558325d89192272
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-past-stress-4`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 80bc4747bd38e64428a136e580b575f579732f6c8cd8016825ddfa587e537003
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-u27-past-stress
+originalSourceText=Retained licensed Russian grammar revision1369617627 passive forms and frozen Phase3 stress applications; existing content-audit guided past-stress records. Primary Cornell https://russian.cornell.edu/grammar/html/le95_102_h.htm and le103_110_b.htm fully retrieved2026-10-11; Gramota transitivity/aspect guidance indexed, full page403. Independent English explanation from retained Russian examples; no new Russian generation, copied source/book prose or new source asset; review pending.
+Locate stress in the two required past passive forms
+Place the accent on the supplied vowel
+The required past passive forms are напи́санный and прочи́танный. Each displayed accent is on the second syllable. For the guided write form, stem stress напи́санный is the supplied option; later-vowel stress написа́нный moves the accent to the vowel in the third syllable and is rejected for this supplied form. It is not an accent on the final adjective ending. For the independent write contrast, напи́санный is retained and написа́нный is rejected. For the read contrast, прочи́танный is retained and прочита́нный is rejected. Compare the accented vowel in the same letters rather than simply noticing that both options have an accent mark.
+Keep required past-passive stress separate from optional reference and general production
+The supplied limit is no stress rule is admitted beyond these four. The competing statement these four placements generate every other participle wrongly turns four retained reference placements into a productive rule for an unlisted participle. Two of the four belong to optional present-passive reference, while the required checks here use only the two displayed past-passive forms. Optional present-passive checks do not gate Unit27 advancement. The fact that these two past forms share second-syllable stress does not predict stress for every other participle or its short forms. Use verified lexical evidence for an unlisted form. Meaning recognition and accent placement are separate tasks.
+Guided practice
+Use the supplied action meaning or accent placement. A miss restores every explanation and worked example.
+Review the complete past-passive distinction
+The required past passive forms are напи́санный and прочи́танный. Each displayed accent is on the second syllable. For the guided write form, stem stress напи́санный is the supplied option; later-vowel stress написа́нный moves the accent to the vowel in the third syllable and is rejected for this supplied form. It is not an accent on the final adjective ending. For the independent write contrast, напи́санный is retained and написа́нный is rejected. For the read contrast, прочи́танный is retained and прочита́нный is rejected. Compare the accented vowel in the same letters rather than simply noticing that both options have an accent mark.
+
+The supplied limit is no stress rule is admitted beyond these four. The competing statement these four placements generate every other participle wrongly turns four retained reference placements into a productive rule for an unlisted participle. Two of the four belong to optional present-passive reference, while the required checks here use only the two displayed past-passive forms. Optional present-passive checks do not gate Unit27 advancement. The fact that these two past forms share second-syllable stress does not predict stress for every other participle or its short forms. Use verified lexical evidence for an unlisted form. Meaning recognition and accent placement are separate tasks.
+Independent checks
+Recognize the supplied past-passive meanings or accent placement. Optional present-passive material does not gate this unit; broader productive formation remains outside these checks.
+Which past-passive stress is admitted for this guided write form?
+guided past passive of написать
+The supplied accent is stem stress напи́санный, on the second syllable. The competing accent is later-vowel stress написа́нный, on the third syllable rather than the final adjective ending.
+stem stress напи́санный
+later-vowel stress написа́нный
+later-vowel stress написа́нный moves the accent from the second to the third syllable and is rejected for the supplied write form.
+[{"cue": "guided past passive of написать", "answer": "stem stress напи́санный", "distractors": ["later-vowel stress написа́нный"]}]
+shippedText=The supplied limit is no stress rule is admitted beyond these four. The competing statement these four placements generate every other participle wrongly turns four retained reference placements into a productive rule for an unlisted participle. Two of the four belong to optional present-passive reference, while the required checks here use only the two displayed past-passive forms. Optional present-passive checks do not gate Unit27 advancement. The fact that these two past forms share second-syllable stress does not predict stress for every other participle or its short forms. Use verified lexical evidence for an unlisted form. Meaning recognition and accent placement are separate tasks.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English past-passive explanation,2026-10-11; retained Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6df4d36d649b680a8273f1dc647d0c547b7f8ffc985ddf21228bd96d151e79f6
+contentHash=df8fc5ace21fbeed889903cea7e88827e4ad66fc8dc3a0ec02641468a83fc363
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-past-stress-5`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3940878a3a845d22b104ded7ac1fd77929fa6ee645b15776947355d1caddcfc4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-u27-past-stress
+originalSourceText=Retained licensed Russian grammar revision1369617627 passive forms and frozen Phase3 stress applications; existing content-audit guided past-stress records. Primary Cornell https://russian.cornell.edu/grammar/html/le95_102_h.htm and le103_110_b.htm fully retrieved2026-10-11; Gramota transitivity/aspect guidance indexed, full page403. Independent English explanation from retained Russian examples; no new Russian generation, copied source/book prose or new source asset; review pending.
+Locate stress in the two required past passive forms
+Place the accent on the supplied vowel
+The required past passive forms are напи́санный and прочи́танный. Each displayed accent is on the second syllable. For the guided write form, stem stress напи́санный is the supplied option; later-vowel stress написа́нный moves the accent to the vowel in the third syllable and is rejected for this supplied form. It is not an accent on the final adjective ending. For the independent write contrast, напи́санный is retained and написа́нный is rejected. For the read contrast, прочи́танный is retained and прочита́нный is rejected. Compare the accented vowel in the same letters rather than simply noticing that both options have an accent mark.
+Keep required past-passive stress separate from optional reference and general production
+The supplied limit is no stress rule is admitted beyond these four. The competing statement these four placements generate every other participle wrongly turns four retained reference placements into a productive rule for an unlisted participle. Two of the four belong to optional present-passive reference, while the required checks here use only the two displayed past-passive forms. Optional present-passive checks do not gate Unit27 advancement. The fact that these two past forms share second-syllable stress does not predict stress for every other participle or its short forms. Use verified lexical evidence for an unlisted form. Meaning recognition and accent placement are separate tasks.
+Guided practice
+Use the supplied action meaning or accent placement. A miss restores every explanation and worked example.
+Review the complete past-passive distinction
+The required past passive forms are напи́санный and прочи́танный. Each displayed accent is on the second syllable. For the guided write form, stem stress напи́санный is the supplied option; later-vowel stress написа́нный moves the accent to the vowel in the third syllable and is rejected for this supplied form. It is not an accent on the final adjective ending. For the independent write contrast, напи́санный is retained and написа́нный is rejected. For the read contrast, прочи́танный is retained and прочита́нный is rejected. Compare the accented vowel in the same letters rather than simply noticing that both options have an accent mark.
+
+The supplied limit is no stress rule is admitted beyond these four. The competing statement these four placements generate every other participle wrongly turns four retained reference placements into a productive rule for an unlisted participle. Two of the four belong to optional present-passive reference, while the required checks here use only the two displayed past-passive forms. Optional present-passive checks do not gate Unit27 advancement. The fact that these two past forms share second-syllable stress does not predict stress for every other participle or its short forms. Use verified lexical evidence for an unlisted form. Meaning recognition and accent placement are separate tasks.
+Independent checks
+Recognize the supplied past-passive meanings or accent placement. Optional present-passive material does not gate this unit; broader productive formation remains outside these checks.
+Which past-passive stress is admitted for this guided write form?
+guided past passive of написать
+The supplied accent is stem stress напи́санный, on the second syllable. The competing accent is later-vowel stress написа́нный, on the third syllable rather than the final adjective ending.
+stem stress напи́санный
+later-vowel stress написа́нный
+later-vowel stress написа́нный moves the accent from the second to the third syllable and is rejected for the supplied write form.
+[{"cue": "guided past passive of написать", "answer": "stem stress напи́санный", "distractors": ["later-vowel stress написа́нный"]}]
+shippedText=Guided practice
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English past-passive explanation,2026-10-11; retained Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6df4d36d649b680a8273f1dc647d0c547b7f8ffc985ddf21228bd96d151e79f6
+contentHash=cb1d4a3d9d5db425da3797c7a997db3588ec122a60c4d645ea31cd849f76ab3c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-past-stress-6`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9aa7fb09c58483e47197522317523219e9dac3ac554d494e1962244398a9757b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-u27-past-stress
+originalSourceText=Retained licensed Russian grammar revision1369617627 passive forms and frozen Phase3 stress applications; existing content-audit guided past-stress records. Primary Cornell https://russian.cornell.edu/grammar/html/le95_102_h.htm and le103_110_b.htm fully retrieved2026-10-11; Gramota transitivity/aspect guidance indexed, full page403. Independent English explanation from retained Russian examples; no new Russian generation, copied source/book prose or new source asset; review pending.
+Locate stress in the two required past passive forms
+Place the accent on the supplied vowel
+The required past passive forms are напи́санный and прочи́танный. Each displayed accent is on the second syllable. For the guided write form, stem stress напи́санный is the supplied option; later-vowel stress написа́нный moves the accent to the vowel in the third syllable and is rejected for this supplied form. It is not an accent on the final adjective ending. For the independent write contrast, напи́санный is retained and написа́нный is rejected. For the read contrast, прочи́танный is retained and прочита́нный is rejected. Compare the accented vowel in the same letters rather than simply noticing that both options have an accent mark.
+Keep required past-passive stress separate from optional reference and general production
+The supplied limit is no stress rule is admitted beyond these four. The competing statement these four placements generate every other participle wrongly turns four retained reference placements into a productive rule for an unlisted participle. Two of the four belong to optional present-passive reference, while the required checks here use only the two displayed past-passive forms. Optional present-passive checks do not gate Unit27 advancement. The fact that these two past forms share second-syllable stress does not predict stress for every other participle or its short forms. Use verified lexical evidence for an unlisted form. Meaning recognition and accent placement are separate tasks.
+Guided practice
+Use the supplied action meaning or accent placement. A miss restores every explanation and worked example.
+Review the complete past-passive distinction
+The required past passive forms are напи́санный and прочи́танный. Each displayed accent is on the second syllable. For the guided write form, stem stress напи́санный is the supplied option; later-vowel stress написа́нный moves the accent to the vowel in the third syllable and is rejected for this supplied form. It is not an accent on the final adjective ending. For the independent write contrast, напи́санный is retained and написа́нный is rejected. For the read contrast, прочи́танный is retained and прочита́нный is rejected. Compare the accented vowel in the same letters rather than simply noticing that both options have an accent mark.
+
+The supplied limit is no stress rule is admitted beyond these four. The competing statement these four placements generate every other participle wrongly turns four retained reference placements into a productive rule for an unlisted participle. Two of the four belong to optional present-passive reference, while the required checks here use only the two displayed past-passive forms. Optional present-passive checks do not gate Unit27 advancement. The fact that these two past forms share second-syllable stress does not predict stress for every other participle or its short forms. Use verified lexical evidence for an unlisted form. Meaning recognition and accent placement are separate tasks.
+Independent checks
+Recognize the supplied past-passive meanings or accent placement. Optional present-passive material does not gate this unit; broader productive formation remains outside these checks.
+Which past-passive stress is admitted for this guided write form?
+guided past passive of написать
+The supplied accent is stem stress напи́санный, on the second syllable. The competing accent is later-vowel stress написа́нный, on the third syllable rather than the final adjective ending.
+stem stress напи́санный
+later-vowel stress написа́нный
+later-vowel stress написа́нный moves the accent from the second to the third syllable and is rejected for the supplied write form.
+[{"cue": "guided past passive of написать", "answer": "stem stress напи́санный", "distractors": ["later-vowel stress написа́нный"]}]
+shippedText=Use the supplied action meaning or accent placement. A miss restores every explanation and worked example.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English past-passive explanation,2026-10-11; retained Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6df4d36d649b680a8273f1dc647d0c547b7f8ffc985ddf21228bd96d151e79f6
+contentHash=c148a001073cd1c426eac1dfc5bf9fce266529aeafe1dee35e29b2b261cc80ba
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-past-stress-7`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f6da87d69eec3c3209db03706842014c277df75a68f5dd8118c8b0ee51b73d7e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-u27-past-stress
+originalSourceText=Retained licensed Russian grammar revision1369617627 passive forms and frozen Phase3 stress applications; existing content-audit guided past-stress records. Primary Cornell https://russian.cornell.edu/grammar/html/le95_102_h.htm and le103_110_b.htm fully retrieved2026-10-11; Gramota transitivity/aspect guidance indexed, full page403. Independent English explanation from retained Russian examples; no new Russian generation, copied source/book prose or new source asset; review pending.
+Locate stress in the two required past passive forms
+Place the accent on the supplied vowel
+The required past passive forms are напи́санный and прочи́танный. Each displayed accent is on the second syllable. For the guided write form, stem stress напи́санный is the supplied option; later-vowel stress написа́нный moves the accent to the vowel in the third syllable and is rejected for this supplied form. It is not an accent on the final adjective ending. For the independent write contrast, напи́санный is retained and написа́нный is rejected. For the read contrast, прочи́танный is retained and прочита́нный is rejected. Compare the accented vowel in the same letters rather than simply noticing that both options have an accent mark.
+Keep required past-passive stress separate from optional reference and general production
+The supplied limit is no stress rule is admitted beyond these four. The competing statement these four placements generate every other participle wrongly turns four retained reference placements into a productive rule for an unlisted participle. Two of the four belong to optional present-passive reference, while the required checks here use only the two displayed past-passive forms. Optional present-passive checks do not gate Unit27 advancement. The fact that these two past forms share second-syllable stress does not predict stress for every other participle or its short forms. Use verified lexical evidence for an unlisted form. Meaning recognition and accent placement are separate tasks.
+Guided practice
+Use the supplied action meaning or accent placement. A miss restores every explanation and worked example.
+Review the complete past-passive distinction
+The required past passive forms are напи́санный and прочи́танный. Each displayed accent is on the second syllable. For the guided write form, stem stress напи́санный is the supplied option; later-vowel stress написа́нный moves the accent to the vowel in the third syllable and is rejected for this supplied form. It is not an accent on the final adjective ending. For the independent write contrast, напи́санный is retained and написа́нный is rejected. For the read contrast, прочи́танный is retained and прочита́нный is rejected. Compare the accented vowel in the same letters rather than simply noticing that both options have an accent mark.
+
+The supplied limit is no stress rule is admitted beyond these four. The competing statement these four placements generate every other participle wrongly turns four retained reference placements into a productive rule for an unlisted participle. Two of the four belong to optional present-passive reference, while the required checks here use only the two displayed past-passive forms. Optional present-passive checks do not gate Unit27 advancement. The fact that these two past forms share second-syllable stress does not predict stress for every other participle or its short forms. Use verified lexical evidence for an unlisted form. Meaning recognition and accent placement are separate tasks.
+Independent checks
+Recognize the supplied past-passive meanings or accent placement. Optional present-passive material does not gate this unit; broader productive formation remains outside these checks.
+Which past-passive stress is admitted for this guided write form?
+guided past passive of написать
+The supplied accent is stem stress напи́санный, on the second syllable. The competing accent is later-vowel stress написа́нный, on the third syllable rather than the final adjective ending.
+stem stress напи́санный
+later-vowel stress написа́нный
+later-vowel stress написа́нный moves the accent from the second to the third syllable and is rejected for the supplied write form.
+[{"cue": "guided past passive of написать", "answer": "stem stress напи́санный", "distractors": ["later-vowel stress написа́нный"]}]
+shippedText=Review the complete past-passive distinction
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English past-passive explanation,2026-10-11; retained Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6df4d36d649b680a8273f1dc647d0c547b7f8ffc985ddf21228bd96d151e79f6
+contentHash=a46cab7e87ad080946913977fb63d5515de4d73f2f9c9aed64a01f131c9591ab
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-past-stress-8`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 904ac68f7b8d26a00f93681079ac0c8d16f70f5bd9fc99b70514ccbe10767cca
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-u27-past-stress
+originalSourceText=Retained licensed Russian grammar revision1369617627 passive forms and frozen Phase3 stress applications; existing content-audit guided past-stress records. Primary Cornell https://russian.cornell.edu/grammar/html/le95_102_h.htm and le103_110_b.htm fully retrieved2026-10-11; Gramota transitivity/aspect guidance indexed, full page403. Independent English explanation from retained Russian examples; no new Russian generation, copied source/book prose or new source asset; review pending.
+Locate stress in the two required past passive forms
+Place the accent on the supplied vowel
+The required past passive forms are напи́санный and прочи́танный. Each displayed accent is on the second syllable. For the guided write form, stem stress напи́санный is the supplied option; later-vowel stress написа́нный moves the accent to the vowel in the third syllable and is rejected for this supplied form. It is not an accent on the final adjective ending. For the independent write contrast, напи́санный is retained and написа́нный is rejected. For the read contrast, прочи́танный is retained and прочита́нный is rejected. Compare the accented vowel in the same letters rather than simply noticing that both options have an accent mark.
+Keep required past-passive stress separate from optional reference and general production
+The supplied limit is no stress rule is admitted beyond these four. The competing statement these four placements generate every other participle wrongly turns four retained reference placements into a productive rule for an unlisted participle. Two of the four belong to optional present-passive reference, while the required checks here use only the two displayed past-passive forms. Optional present-passive checks do not gate Unit27 advancement. The fact that these two past forms share second-syllable stress does not predict stress for every other participle or its short forms. Use verified lexical evidence for an unlisted form. Meaning recognition and accent placement are separate tasks.
+Guided practice
+Use the supplied action meaning or accent placement. A miss restores every explanation and worked example.
+Review the complete past-passive distinction
+The required past passive forms are напи́санный and прочи́танный. Each displayed accent is on the second syllable. For the guided write form, stem stress напи́санный is the supplied option; later-vowel stress написа́нный moves the accent to the vowel in the third syllable and is rejected for this supplied form. It is not an accent on the final adjective ending. For the independent write contrast, напи́санный is retained and написа́нный is rejected. For the read contrast, прочи́танный is retained and прочита́нный is rejected. Compare the accented vowel in the same letters rather than simply noticing that both options have an accent mark.
+
+The supplied limit is no stress rule is admitted beyond these four. The competing statement these four placements generate every other participle wrongly turns four retained reference placements into a productive rule for an unlisted participle. Two of the four belong to optional present-passive reference, while the required checks here use only the two displayed past-passive forms. Optional present-passive checks do not gate Unit27 advancement. The fact that these two past forms share second-syllable stress does not predict stress for every other participle or its short forms. Use verified lexical evidence for an unlisted form. Meaning recognition and accent placement are separate tasks.
+Independent checks
+Recognize the supplied past-passive meanings or accent placement. Optional present-passive material does not gate this unit; broader productive formation remains outside these checks.
+Which past-passive stress is admitted for this guided write form?
+guided past passive of написать
+The supplied accent is stem stress напи́санный, on the second syllable. The competing accent is later-vowel stress написа́нный, on the third syllable rather than the final adjective ending.
+stem stress напи́санный
+later-vowel stress написа́нный
+later-vowel stress написа́нный moves the accent from the second to the third syllable and is rejected for the supplied write form.
+[{"cue": "guided past passive of написать", "answer": "stem stress напи́санный", "distractors": ["later-vowel stress написа́нный"]}]
+shippedText=The required past passive forms are напи́санный and прочи́танный. Each displayed accent is on the second syllable. For the guided write form, stem stress напи́санный is the supplied option; later-vowel stress написа́нный moves the accent to the vowel in the third syllable and is rejected for this supplied form. It is not an accent on the final adjective ending. For the independent write contrast, напи́санный is retained and написа́нный is rejected. For the read contrast, прочи́танный is retained and прочита́нный is rejected. Compare the accented vowel in the same letters rather than simply noticing that both options have an accent mark.
+
+The supplied limit is no stress rule is admitted beyond these four. The competing statement these four placements generate every other participle wrongly turns four retained reference placements into a productive rule for an unlisted participle. Two of the four belong to optional present-passive reference, while the required checks here use only the two displayed past-passive forms. Optional present-passive checks do not gate Unit27 advancement. The fact that these two past forms share second-syllable stress does not predict stress for every other participle or its short forms. Use verified lexical evidence for an unlisted form. Meaning recognition and accent placement are separate tasks.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English past-passive explanation,2026-10-11; retained Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6df4d36d649b680a8273f1dc647d0c547b7f8ffc985ddf21228bd96d151e79f6
+contentHash=028315cdbf87c0b29ef95796093e28f9557ab894b13ebc879b4a690256fcdc74
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u27-past-stress-9`
+
+- Objectives: obj-u27-stress
+- Sessions: u27-s-stress
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b253750014ada49185f131e23b612eeb01ee47332395b287431828be8836e7cc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-u27-past-stress
+originalSourceText=Retained licensed Russian grammar revision1369617627 passive forms and frozen Phase3 stress applications; existing content-audit guided past-stress records. Primary Cornell https://russian.cornell.edu/grammar/html/le95_102_h.htm and le103_110_b.htm fully retrieved2026-10-11; Gramota transitivity/aspect guidance indexed, full page403. Independent English explanation from retained Russian examples; no new Russian generation, copied source/book prose or new source asset; review pending.
+Locate stress in the two required past passive forms
+Place the accent on the supplied vowel
+The required past passive forms are напи́санный and прочи́танный. Each displayed accent is on the second syllable. For the guided write form, stem stress напи́санный is the supplied option; later-vowel stress написа́нный moves the accent to the vowel in the third syllable and is rejected for this supplied form. It is not an accent on the final adjective ending. For the independent write contrast, напи́санный is retained and написа́нный is rejected. For the read contrast, прочи́танный is retained and прочита́нный is rejected. Compare the accented vowel in the same letters rather than simply noticing that both options have an accent mark.
+Keep required past-passive stress separate from optional reference and general production
+The supplied limit is no stress rule is admitted beyond these four. The competing statement these four placements generate every other participle wrongly turns four retained reference placements into a productive rule for an unlisted participle. Two of the four belong to optional present-passive reference, while the required checks here use only the two displayed past-passive forms. Optional present-passive checks do not gate Unit27 advancement. The fact that these two past forms share second-syllable stress does not predict stress for every other participle or its short forms. Use verified lexical evidence for an unlisted form. Meaning recognition and accent placement are separate tasks.
+Guided practice
+Use the supplied action meaning or accent placement. A miss restores every explanation and worked example.
+Review the complete past-passive distinction
+The required past passive forms are напи́санный and прочи́танный. Each displayed accent is on the second syllable. For the guided write form, stem stress напи́санный is the supplied option; later-vowel stress написа́нный moves the accent to the vowel in the third syllable and is rejected for this supplied form. It is not an accent on the final adjective ending. For the independent write contrast, напи́санный is retained and написа́нный is rejected. For the read contrast, прочи́танный is retained and прочита́нный is rejected. Compare the accented vowel in the same letters rather than simply noticing that both options have an accent mark.
+
+The supplied limit is no stress rule is admitted beyond these four. The competing statement these four placements generate every other participle wrongly turns four retained reference placements into a productive rule for an unlisted participle. Two of the four belong to optional present-passive reference, while the required checks here use only the two displayed past-passive forms. Optional present-passive checks do not gate Unit27 advancement. The fact that these two past forms share second-syllable stress does not predict stress for every other participle or its short forms. Use verified lexical evidence for an unlisted form. Meaning recognition and accent placement are separate tasks.
+Independent checks
+Recognize the supplied past-passive meanings or accent placement. Optional present-passive material does not gate this unit; broader productive formation remains outside these checks.
+Which past-passive stress is admitted for this guided write form?
+guided past passive of написать
+The supplied accent is stem stress напи́санный, on the second syllable. The competing accent is later-vowel stress написа́нный, on the third syllable rather than the final adjective ending.
+stem stress напи́санный
+later-vowel stress написа́нный
+later-vowel stress написа́нный moves the accent from the second to the third syllable and is rejected for the supplied write form.
+[{"cue": "guided past passive of написать", "answer": "stem stress напи́санный", "distractors": ["later-vowel stress написа́нный"]}]
+shippedText=Independent checks
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English past-passive explanation,2026-10-11; retained Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6df4d36d649b680a8273f1dc647d0c547b7f8ffc985ddf21228bd96d151e79f6
+contentHash=012ab8f74509f135e510ad3d930ff2e1b92c944e2d060f0b35ddeee63616b486
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -13774,16 +15379,19 @@ permitsAppUse=true
 - `u27-st-teach-passive-1` EXAMPLE `ex-u27-passive-0`
 - `u27-st-teach-passive-1` EXAMPLE `ex-u27-passive-1`
 - `u27-st-teach-passive-1` REFERENCE `ref-u2630-attribution`
-- `u27-st-guided-passive-1` REMEDIATION `u27-st-rem-passive`
-- `u27-st-guided-passive-1` ITEM `u27-g-passive-0`
 - `u27-st-teach-passive-2` REFERENCE `ref-u2630-attribution`
 - `u27-st-teach-passive-3` EXAMPLE `ex-u27-passive-2`
 - `u27-st-teach-passive-3` EXAMPLE `ex-u27-passive-3`
 - `u27-st-teach-passive-3` REFERENCE `ref-u2630-attribution`
 - `u27-st-teach-passive-4` EXAMPLE `ex-u27-passive-4`
 - `u27-st-teach-passive-4` REFERENCE `ref-u2630-attribution`
+- `u27-st-guided-passive-1` REMEDIATION `u27-st-rem-passive`
+- `u27-st-guided-passive-1` ITEM `u27-g-passive-0`
 - `u27-st-rem-passive` EXAMPLE `ex-u27-passive-0`
 - `u27-st-rem-passive` EXAMPLE `ex-u27-passive-1`
+- `u27-st-rem-passive` EXAMPLE `ex-u27-passive-2`
+- `u27-st-rem-passive` EXAMPLE `ex-u27-passive-3`
+- `u27-st-rem-passive` EXAMPLE `ex-u27-passive-4`
 - `u27-st-rem-passive` REFERENCE `ref-ca-participles`
 - `u27-st-check-passive` REMEDIATION `u27-st-rem-passive`
 - `u27-st-check-passive` ITEM `u27-i-passive-1`
@@ -13831,10 +15439,12 @@ permitsAppUse=true
 - `u27-stress-teach-1` EXAMPLE `ex-u27-stress-1`
 - `u27-stress-teach-1` EXAMPLE `ex-u27-stress-2`
 - `u27-stress-teach-1` REFERENCE `ref-u2630-attribution`
+- `u27-stress-teach-2` REFERENCE `ref-u2630-attribution`
 - `u27-stress-guided` REMEDIATION `u27-stress-remediate`
 - `u27-stress-guided` ITEM `u27-g-stress-past`
 - `u27-stress-guided` REFERENCE `ref-u2630-attribution`
-- `u27-stress-teach-2` REFERENCE `ref-u2630-attribution`
+- `u27-stress-remediate` EXAMPLE `ex-u27-stress-1`
+- `u27-stress-remediate` EXAMPLE `ex-u27-stress-2`
 - `u27-stress-remediate` REFERENCE `ref-u2630-attribution`
 - `u27-stress-remediate` REFERENCE `ref-ca-participles`
 - `u27-stress-check` REMEDIATION `u27-stress-remediate`
@@ -13937,6 +15547,48 @@ permitsAppUse=true
 - `obj-u27-comprehension` PROVENANCE `prov-ca-repair-27-11107`
 - `obj-u27-comprehension` PROVENANCE `prov-ca-repair-27-11108`
 - `obj-u27-comprehension` PROVENANCE `prov-ca-repair-27-11123`
+- `obj-u27-stress` PROVENANCE `prov-ca-u27-past-guided-participant-0`
+- `obj-u27-stress` PROVENANCE `prov-ca-u27-past-guided-participant-1`
+- `obj-u27-stress` PROVENANCE `prov-ca-u27-past-guided-participant-2`
+- `obj-u27-passive` PROVENANCE `prov-ca-u27-past-passive-0`
+- `obj-u27-passive` PROVENANCE `prov-ca-u27-past-passive-1`
+- `obj-u27-passive` PROVENANCE `prov-ca-u27-past-passive-10`
+- `obj-u27-passive` PROVENANCE `prov-ca-u27-past-passive-11`
+- `obj-u27-passive` PROVENANCE `prov-ca-u27-past-passive-12`
+- `obj-u27-passive` PROVENANCE `prov-ca-u27-past-passive-13`
+- `obj-u27-passive` PROVENANCE `prov-ca-u27-past-passive-14`
+- `obj-u27-passive` PROVENANCE `prov-ca-u27-past-passive-15`
+- `obj-u27-passive` PROVENANCE `prov-ca-u27-past-passive-16`
+- `obj-u27-passive` PROVENANCE `prov-ca-u27-past-passive-17`
+- `obj-u27-passive` PROVENANCE `prov-ca-u27-past-passive-18`
+- `obj-u27-passive` PROVENANCE `prov-ca-u27-past-passive-19`
+- `obj-u27-passive` PROVENANCE `prov-ca-u27-past-passive-2`
+- `obj-u27-passive` PROVENANCE `prov-ca-u27-past-passive-20`
+- `obj-u27-passive` PROVENANCE `prov-ca-u27-past-passive-21`
+- `obj-u27-passive` PROVENANCE `prov-ca-u27-past-passive-22`
+- `obj-u27-passive` PROVENANCE `prov-ca-u27-past-passive-23`
+- `obj-u27-passive` PROVENANCE `prov-ca-u27-past-passive-24`
+- `obj-u27-passive` PROVENANCE `prov-ca-u27-past-passive-3`
+- `obj-u27-passive` PROVENANCE `prov-ca-u27-past-passive-4`
+- `obj-u27-passive` PROVENANCE `prov-ca-u27-past-passive-5`
+- `obj-u27-passive` PROVENANCE `prov-ca-u27-past-passive-6`
+- `obj-u27-passive` PROVENANCE `prov-ca-u27-past-passive-7`
+- `obj-u27-passive` PROVENANCE `prov-ca-u27-past-passive-8`
+- `obj-u27-passive` PROVENANCE `prov-ca-u27-past-passive-9`
+- `obj-u27-stress` PROVENANCE `prov-ca-u27-past-stress-0`
+- `obj-u27-stress` PROVENANCE `prov-ca-u27-past-stress-1`
+- `obj-u27-stress` PROVENANCE `prov-ca-u27-past-stress-10`
+- `obj-u27-stress` PROVENANCE `prov-ca-u27-past-stress-11`
+- `obj-u27-stress` PROVENANCE `prov-ca-u27-past-stress-12`
+- `obj-u27-stress` PROVENANCE `prov-ca-u27-past-stress-13`
+- `obj-u27-stress` PROVENANCE `prov-ca-u27-past-stress-2`
+- `obj-u27-stress` PROVENANCE `prov-ca-u27-past-stress-3`
+- `obj-u27-stress` PROVENANCE `prov-ca-u27-past-stress-4`
+- `obj-u27-stress` PROVENANCE `prov-ca-u27-past-stress-5`
+- `obj-u27-stress` PROVENANCE `prov-ca-u27-past-stress-6`
+- `obj-u27-stress` PROVENANCE `prov-ca-u27-past-stress-7`
+- `obj-u27-stress` PROVENANCE `prov-ca-u27-past-stress-8`
+- `obj-u27-stress` PROVENANCE `prov-ca-u27-past-stress-9`
 - `obj-u27-passive` PROVENANCE `prov-ex-u27-passive-0-en`
 - `obj-u27-passive` PROVENANCE `prov-ex-u27-passive-0-ru`
 - `obj-u27-passive` PROVENANCE `prov-ex-u27-passive-1-en`

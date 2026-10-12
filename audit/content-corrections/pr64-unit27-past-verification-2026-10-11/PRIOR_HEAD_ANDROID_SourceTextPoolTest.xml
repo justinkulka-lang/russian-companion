@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.SourceTextPoolTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-12T03:30:59.989Z" hostname="runnervmmprz5" time="15.207">
+  <properties/>
+  <testcase name="pythonAndKotlinExpansionRestoreTheSameRecordsAndTypedPack" classname="dev.russiancompanion.v2.SourceTextPoolTest" time="4.587"/>
+  <testcase name="poolingDoesNotLoosenStrictModelDecodingOrApproveRelease" classname="dev.russiancompanion.v2.SourceTextPoolTest" time="8.17"/>
+  <testcase name="corruptMissingConflictingAndUnboundPoolEvidenceIsRejected" classname="dev.russiancompanion.v2.SourceTextPoolTest" time="2.45"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
