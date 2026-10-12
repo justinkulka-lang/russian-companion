@@ -64,3 +64,7 @@ IA001/IA002/IA006/IA007/IA008/IA017/IA018 now have engineering corrections pendi
 ## User-directed final acceptance order — 2026-10-12
 
 Finish the final independent comprehensive audit before physical-device acceptance. Physical-device acceptance is last, with actual Galaxy S26 Ultra airplane-mode/reboot evidence bound to the tested artifact. Keep this acceptance outstanding; do not request it prematurely during engineering corrections. Preserve the governing named audit/verification stages and all existing acceptance requirements. This ordering does not authorize merge, freeze, signing or release approval.
+
+## Unit6 feedback continuation
+
+IA009 also has15 source-bound Unit6 feedback/rationale corrections at implementation4e5e7adc8b9cfa96024e6b8c9c9db18d260a9634. The old121-row inventory is historical;106 literal “Does” rows remain. Read IA009_FEEDBACK_REMEDIATION_PENDING.md and ia009-unit6-verification/ under the independent diagnostic directory. Next bounded batch is the two Unit7 rows after complete-source inspection, followed by the remaining groups and other findings. Preserve scored/source tuples, old provenance, review-pending synthesis and genuine Unit6-only ancestry; no semantic acceptance is inferred.

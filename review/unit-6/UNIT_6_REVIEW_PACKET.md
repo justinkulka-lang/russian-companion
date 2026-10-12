@@ -11,12 +11,12 @@ Unit 6 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 4f5cb8024d3f68a37052fdf85b5755bffa2a0904
-- Unit content-review SHA-256: eec14a80567c2d2902442ea1a8abb8c40407602d191963e475efcb8747046f47
+- Curriculum source commit: 4e5e7adc8b9cfa96024e6b8c9c9db18d260a9634
+- Unit content-review SHA-256: ca4ad8b37d632b7d9c9008c387a1efe57938026c96275995e22b5c3e24a843a5
 - Mapping-package SHA-256: f95e0c2f351ec7cba23cdb09b87274bb97f2e392dd783ad59c2978ed58f63b15
-- Pack content-review SHA-256: 18fae603c917271684268337d091a75ce30162bf36ad54c18beca81c3a0bcf44
-- Review-package SHA-256: ba04b756558ed0fa4ec65b2923e725914aa2d4de2c257bb21ccb54d98aca1f35
-- Repository source SHA-256: 34c401ca58918c0e1549d1edd012de770cccc5bdde5ae4896cb57808e5cc34f2
+- Pack content-review SHA-256: 1b9b4165f6fd32307de0f8b3d9c262d71512fa8cad3e4b0396f3a3c1a6dffa12
+- Review-package SHA-256: 80a7580749317ad949a7a64933579af747a4813c010558fd0a7bf976fd2928f2
+- Repository source SHA-256: 74145307b4a6df18e6a808aa4763aa72949aeece2b70286e7ab175c6a9148c46
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -2546,7 +2546,7 @@ relationParticipantIds=prov-u6-possessive-x-0 | prov-ex-or-u6-possessive-5 | pro
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 562d80ac0b78d5cf92efcc2800a8edbfe6a9d365dbf5352fac0098268659e97c
+- Content hash: 65fdd4787989bd1f6a7cc6541355d94a86c020fccf60510fb1187e38b2c45030
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2554,11 +2554,11 @@ prompt=Which admitted form matches the shown category?
 promptLetter=masculine and neuter possessive pronouns
 options=его | её | их
 answer=его
-feedback=Does the admitted record show the governed contrast? его.
+feedback=его means his or its: the category refers to a masculine or neuter singular possessor. её refers to a feminine singular possessor, and их to plural possessors. These third-person possessive forms do not change with the gender or number of the possessed noun.
 objectiveId=obj-u6-third
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is another admitted form in the same frozen sentence. | This form is another admitted form in the same frozen sentence.
+distractorRationales= | её identifies her, a feminine singular possessor instead of the shown possessor category. | их identifies their, plural possessors instead of the shown possessor category.
 testedFeature=THIRD_PERSON_FORM
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u6-third-0
@@ -2566,8 +2566,8 @@ cueLanguage=rule
 independent=false
 answerSourceIds=prov-ex-u6-third-0-ru
 distractorSourceIds= | prov-ex-u6-third-1-ru | prov-ex-u6-third-2-ru
-distractorDifference= | This form is another admitted form in the same frozen sentence. | This form is another admitted form in the same frozen sentence.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | её identifies her, a feminine singular possessor instead of the shown possessor category. | их identifies their, plural possessors instead of the shown possessor category.
+whyAnswerDemonstratesObjective=его means his or its: the category refers to a masculine or neuter singular possessor. её refers to a feminine singular possessor, and их to plural possessors. These third-person possessive forms do not change with the gender or number of the possessed noun.
 contrastMembers=его | её | их
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-u6-third-x-0 | prov-ex-u6-third-0-ru | prov-ex-u6-third-1-ru | prov-ex-u6-third-2-ru
@@ -2580,7 +2580,7 @@ relationParticipantIds=prov-u6-third-x-0 | prov-ex-u6-third-0-ru | prov-ex-u6-th
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 8132a2f0e3c71f64bc0ae84d52a905f295b591d2d2bf177fcaa2d737654d5ea4
+- Content hash: 4d4ff9adb2da353178303b3dfd7f4cb64e25da5a37bc1854bfbc11411fc657ca
 
 kind=FORM_SELECTION
 language=en
@@ -2588,11 +2588,11 @@ prompt=Which admitted line is the other order of the shown line?
 promptLetter=Я люблю тебя
 options=Я тебя люблю | Я люблю тебя
 answer=Я тебя люблю
-feedback=Does the admitted record show the governed contrast? Я тебя люблю.
+feedback=Я тебя люблю places the object before the verb. Я люблю тебя places it after the verb. Both have the same meaning, I love you: the subject and object keep their roles and forms. The other option repeats the shown order.
 objectiveId=obj-u6-object
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This line repeats the shown line, not the other order of the same words.
+distractorRationales= | This option repeats the shown order instead of moving the object before or after the verb.
 testedFeature=OBJECT_ORDER
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u6-object-0
@@ -2600,8 +2600,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u6-object-1-ru
 distractorSourceIds= | prov-ex-u6-object-2-ru
-distractorDifference= | This line repeats the shown line, not the other order of the same words.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | This option repeats the shown order instead of moving the object before or after the verb.
+whyAnswerDemonstratesObjective=Я тебя люблю places the object before the verb. Я люблю тебя places it after the verb. Both have the same meaning, I love you: the subject and object keep their roles and forms. The other option repeats the shown order.
 contrastMembers=Я тебя люблю | Я люблю тебя
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u6-object-2-ru | prov-ex-u6-object-1-ru | prov-ex-u6-object-2-ru
@@ -2682,7 +2682,7 @@ relationParticipantIds=prov-ex-or-u6-animacy-4 | prov-ex-or-u6-animacy-5 | prov-
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 9c050be074154321105c153b22cf6a37166acd4450db132780f254faf3254343
+- Content hash: 0404a1aa1bde86590bd805a474d62ee5af03e94b4697e3c137f6718228e8404a
 
 kind=FORM_SELECTION
 language=en
@@ -2690,11 +2690,11 @@ prompt=Which admitted form is the object row of the shown form?
 promptLetter=Я
 options=Меня | Нас
 answer=Меня
-feedback=Does the admitted record show the governed contrast? Меня.
+feedback=Меня is the accusative object form for Я, I/me: first person singular. Нас is the form for we/us instead, first person plural. Match the same person and number across the nominative and accusative table columns.
 objectiveId=obj-u6-pronoun
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is not the object row of the shown line.
+distractorRationales= | Нас identifies we/us, first person plural instead of the person, number or gender in the shown nominative form.
 testedFeature=PERSONAL_OBJECT_CASE
 evidenceMode=SAME_CONSTRUCTION_DIFFERENT_FORM
 contrastSetId=u6-pronoun-0
@@ -2702,8 +2702,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u6-pronoun-0-ru
 distractorSourceIds= | prov-ex-u6-pronoun-1-ru
-distractorDifference= | This form is not the object row of the shown line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Нас identifies we/us, first person plural instead of the person, number or gender in the shown nominative form.
+whyAnswerDemonstratesObjective=Меня is the accusative object form for Я, I/me: first person singular. Нас is the form for we/us instead, first person plural. Match the same person and number across the nominative and accusative table columns.
 contrastMembers=Меня | Нас
 relationKind=SAME_CONSTRUCTION_DIFFERENT_FORM
 relationParticipantIds=prov-u6-pronoun-rem-r0 | prov-ex-u6-pronoun-0-ru | prov-ex-u6-pronoun-1-ru
@@ -2716,7 +2716,7 @@ relationParticipantIds=prov-u6-pronoun-rem-r0 | prov-ex-u6-pronoun-0-ru | prov-e
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: ac1869d21060926a73747e65fd6c5835c2a6bfbce0005047e547aa624ad15c09
+- Content hash: a054da8a2de1e55becd1c35b8ec0bbc44e7a024a375cacf62353c3cca8c5c7fa
 
 kind=CASE_RECOGNITION
 language=en
@@ -2724,11 +2724,11 @@ prompt=Which admitted function does the shown line use?
 promptLetter=Я шёл в дом
 options=direction | location
 answer=direction
-feedback=Does the admitted record show the governed contrast? direction.
+feedback=Я шёл в дом describes walking into the house, a destination. Here the preposition takes the accusative, so the function is direction. Location instead describes being at a place; The same preposition with the prepositional case can express that different function.
 objectiveId=obj-u6-direction
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This label names the other admitted function.
+distractorRationales= | Location describes being at a place instead of moving toward a destination in this example.
 testedFeature=DIRECTION_LOCATION
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u6-direction-0
@@ -2736,8 +2736,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-u6-direction-x-0
 distractorSourceIds= | prov-u6-direction-x-1
-distractorDifference= | This label names the other admitted function.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Location describes being at a place instead of moving toward a destination in this example.
+whyAnswerDemonstratesObjective=Я шёл в дом describes walking into the house, a destination. Here the preposition takes the accusative, so the function is direction. Location instead describes being at a place; The same preposition with the prepositional case can express that different function.
 contrastMembers=direction | location
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u6-direction-0-ru | prov-u6-direction-x-0 | prov-u6-direction-x-1
@@ -2853,7 +2853,7 @@ relationParticipantIds=prov-ex-or-u6-possessive-8 | prov-ex-or-u6-possessive-9 |
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: f8451f4659ce0b5145bbb2815967f6c23adccfd24f66c0ac72fa040d57abd970
+- Content hash: 93e2ef5b82bd09bdda40644d0d11ae837b871021f43858854ae06e3307be85ec
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2861,11 +2861,11 @@ prompt=Which admitted form matches the shown category?
 promptLetter=The feminine
 options=её | его | их
 answer=её
-feedback=Does the admitted record show the governed contrast? её.
+feedback=её means her: the category refers to a feminine singular possessor. его means his or its, and их means their. These third-person possessive forms do not change with the gender or number of the possessed noun.
 objectiveId=obj-u6-third
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is another admitted form in the same frozen sentence. | This form is another admitted form in the same frozen sentence.
+distractorRationales= | его identifies his or its, a masculine or neuter singular possessor instead of the shown possessor category. | их identifies their, plural possessors instead of the shown possessor category.
 testedFeature=THIRD_PERSON_FORM
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u6-third-1
@@ -2873,8 +2873,8 @@ cueLanguage=rule
 independent=true
 answerSourceIds=prov-ex-u6-third-1-ru
 distractorSourceIds= | prov-ex-u6-third-0-ru | prov-ex-u6-third-2-ru
-distractorDifference= | This form is another admitted form in the same frozen sentence. | This form is another admitted form in the same frozen sentence.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | его identifies his or its, a masculine or neuter singular possessor instead of the shown possessor category. | их identifies their, plural possessors instead of the shown possessor category.
+whyAnswerDemonstratesObjective=её means her: the category refers to a feminine singular possessor. его means his or its, and их means their. These third-person possessive forms do not change with the gender or number of the possessed noun.
 contrastMembers=её | его | их
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-u6-third-x-1 | prov-ex-u6-third-1-ru | prov-ex-u6-third-0-ru | prov-ex-u6-third-2-ru
@@ -2887,7 +2887,7 @@ relationParticipantIds=prov-u6-third-x-1 | prov-ex-u6-third-1-ru | prov-ex-u6-th
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 22022694d1d4e09725c588de7eeb4a5465c8a89a24bd2d4d08d2efd34e738fac
+- Content hash: 0f66beb889b53c239afb39edea185df60771ae80832a8596142f15863a362701
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2895,11 +2895,11 @@ prompt=Which admitted form matches the shown category?
 promptLetter=third-person plural
 options=их | его | её
 answer=их
-feedback=Does the admitted record show the governed contrast? их.
+feedback=их means their: the category refers to plural possessors. его and её refer to singular possessors. These third-person possessive forms do not change with the gender or number of the possessed noun.
 objectiveId=obj-u6-third
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is another admitted form in the same frozen sentence. | This form is another admitted form in the same frozen sentence.
+distractorRationales= | его identifies his or its, a masculine or neuter singular possessor instead of the shown possessor category. | её identifies her, a feminine singular possessor instead of the shown possessor category.
 testedFeature=THIRD_PERSON_FORM
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u6-third-2
@@ -2907,8 +2907,8 @@ cueLanguage=rule
 independent=true
 answerSourceIds=prov-ex-u6-third-2-ru
 distractorSourceIds= | prov-ex-u6-third-0-ru | prov-ex-u6-third-1-ru
-distractorDifference= | This form is another admitted form in the same frozen sentence. | This form is another admitted form in the same frozen sentence.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | его identifies his or its, a masculine or neuter singular possessor instead of the shown possessor category. | её identifies her, a feminine singular possessor instead of the shown possessor category.
+whyAnswerDemonstratesObjective=их means their: the category refers to plural possessors. его and её refer to singular possessors. These third-person possessive forms do not change with the gender or number of the possessed noun.
 contrastMembers=их | его | её
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-u6-third-x-2 | prov-ex-u6-third-2-ru | prov-ex-u6-third-0-ru | prov-ex-u6-third-1-ru
@@ -2921,7 +2921,7 @@ relationParticipantIds=prov-u6-third-x-2 | prov-ex-u6-third-2-ru | prov-ex-u6-th
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 9111a5df4472a2e6faec196773d3a8d687b128284016f04c6497342c3e690eaf
+- Content hash: ad24c750436437ec200dd19fe0f1597548f2f3cd52f67817753db25955825cf0
 
 kind=FORM_SELECTION
 language=en
@@ -2929,11 +2929,11 @@ prompt=Which admitted line is the other order of the shown line?
 promptLetter=Я тебя люблю
 options=Я люблю тебя | Я тебя люблю
 answer=Я люблю тебя
-feedback=Does the admitted record show the governed contrast? Я люблю тебя.
+feedback=Я люблю тебя places the object after the verb. Я тебя люблю places it before the verb. Both have the same meaning, I love you: the subject and object keep their roles and forms. The other option repeats the shown order.
 objectiveId=obj-u6-object
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This line repeats the shown line, not the other order of the same words.
+distractorRationales= | This option repeats the shown order instead of moving the object before or after the verb.
 testedFeature=OBJECT_ORDER
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u6-object-1
@@ -2941,8 +2941,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u6-object-2-ru
 distractorSourceIds= | prov-ex-u6-object-1-ru
-distractorDifference= | This line repeats the shown line, not the other order of the same words.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | This option repeats the shown order instead of moving the object before or after the verb.
+whyAnswerDemonstratesObjective=Я люблю тебя places the object after the verb. Я тебя люблю places it before the verb. Both have the same meaning, I love you: the subject and object keep their roles and forms. The other option repeats the shown order.
 contrastMembers=Я люблю тебя | Я тебя люблю
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u6-object-1-ru | prov-ex-u6-object-2-ru | prov-ex-u6-object-1-ru
@@ -2955,7 +2955,7 @@ relationParticipantIds=prov-ex-u6-object-1-ru | prov-ex-u6-object-2-ru | prov-ex
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: f1506ea5efd308aaa0c20bd673c3e53f5d4b7b1d7c3a9726f23c1f962d9ad0e8
+- Content hash: 10866ebfd51a63da77aa6bf9c6025d07205d47bd7251df13331757638f3fefe5
 
 kind=FORM_SELECTION
 language=en
@@ -2963,11 +2963,11 @@ prompt=Which admitted line reverses the object of the shown line?
 promptLetter=Собаки ненавидят котов.
 options=Коты ненавидят собак. | Собаки ненавидят котов.
 answer=Коты ненавидят собак.
-feedback=Does the admitted record show the governed contrast? Коты ненавидят собак.
+feedback=Коты ненавидят собак. means cats hate dogs. The cats are the subject and the dogs the accusative object. Compared with the shown dogs hate cats line, both roles are reversed; this is not merely a change of word order. The other option repeats dogs hate cats.
 objectiveId=obj-u6-object
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This line repeats the shown line, not the reversed object pair.
+distractorRationales= | This option repeats the shown subject and object roles instead of reversing who hates whom.
 testedFeature=ACCUSATIVE_OBJECT
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u6-object-2
@@ -2975,8 +2975,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u6-object-4-ru
 distractorSourceIds= | prov-ex-u6-object-3-ru
-distractorDifference= | This line repeats the shown line, not the reversed object pair.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | This option repeats the shown subject and object roles instead of reversing who hates whom.
+whyAnswerDemonstratesObjective=Коты ненавидят собак. means cats hate dogs. The cats are the subject and the dogs the accusative object. Compared with the shown dogs hate cats line, both roles are reversed; this is not merely a change of word order. The other option repeats dogs hate cats.
 contrastMembers=Коты ненавидят собак. | Собаки ненавидят котов.
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u6-object-3-ru | prov-ex-u6-object-4-ru | prov-ex-u6-object-3-ru
@@ -2989,7 +2989,7 @@ relationParticipantIds=prov-ex-u6-object-3-ru | prov-ex-u6-object-4-ru | prov-ex
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 33ffec290ee8be8eb8b1e005c56198f4d8c74bc19d2104bc7d231190fd169b3a
+- Content hash: 91cbf97ed0ae0e3720cdf7e6dc18a7c5a5dc4505066724928131648d3cfe6eb5
 
 kind=FORM_SELECTION
 language=en
@@ -2997,11 +2997,11 @@ prompt=Which admitted line reverses the object of the shown line?
 promptLetter=Коты ненавидят собак.
 options=Собаки ненавидят котов. | Коты ненавидят собак.
 answer=Собаки ненавидят котов.
-feedback=Does the admitted record show the governed contrast? Собаки ненавидят котов.
+feedback=Собаки ненавидят котов. means dogs hate cats. The dogs are the subject and the cats the accusative object. Compared with the shown cats hate dogs line, both roles are reversed; this is not merely a change of word order. The other option repeats cats hate dogs.
 objectiveId=obj-u6-object
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This line repeats the shown line, not the reversed object pair.
+distractorRationales= | This option repeats the shown subject and object roles instead of reversing who hates whom.
 testedFeature=ACCUSATIVE_OBJECT
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u6-object-3
@@ -3009,8 +3009,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u6-object-3-ru
 distractorSourceIds= | prov-ex-u6-object-4-ru
-distractorDifference= | This line repeats the shown line, not the reversed object pair.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | This option repeats the shown subject and object roles instead of reversing who hates whom.
+whyAnswerDemonstratesObjective=Собаки ненавидят котов. means dogs hate cats. The dogs are the subject and the cats the accusative object. Compared with the shown cats hate dogs line, both roles are reversed; this is not merely a change of word order. The other option repeats cats hate dogs.
 contrastMembers=Собаки ненавидят котов. | Коты ненавидят собак.
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u6-object-4-ru | prov-ex-u6-object-3-ru | prov-ex-u6-object-4-ru
@@ -3193,7 +3193,7 @@ relationParticipantIds=prov-ex-or-u6-animacy-6 | prov-ex-or-u6-animacy-7 | prov-
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: e27ade000b7665cffd9ed25e678711f1fb5742e66d53a8f7584678af4d20bbc1
+- Content hash: 5d77773fb03a6333798c8c0b07fe519ea64debea2a98ed58aee1adcbe5da29b6
 
 kind=FORM_SELECTION
 language=en
@@ -3201,11 +3201,11 @@ prompt=Which admitted form is the object row of the shown form?
 promptLetter=Мы
 options=Нас | Меня
 answer=Нас
-feedback=Does the admitted record show the governed contrast? Нас.
+feedback=Нас is the accusative object form for Мы, we/us: first person plural. Меня is the form for I/me instead, first person singular. Match the same person and number across the nominative and accusative table columns.
 objectiveId=obj-u6-pronoun
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is not the object row of the shown line.
+distractorRationales= | Меня identifies I/me, first person singular instead of the person, number or gender in the shown nominative form.
 testedFeature=PERSONAL_OBJECT_CASE
 evidenceMode=SAME_CONSTRUCTION_DIFFERENT_FORM
 contrastSetId=u6-pronoun-1
@@ -3213,8 +3213,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u6-pronoun-1-ru
 distractorSourceIds= | prov-ex-u6-pronoun-0-ru
-distractorDifference= | This form is not the object row of the shown line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Меня identifies I/me, first person singular instead of the person, number or gender in the shown nominative form.
+whyAnswerDemonstratesObjective=Нас is the accusative object form for Мы, we/us: first person plural. Меня is the form for I/me instead, first person singular. Match the same person and number across the nominative and accusative table columns.
 contrastMembers=Нас | Меня
 relationKind=SAME_CONSTRUCTION_DIFFERENT_FORM
 relationParticipantIds=prov-u6-pronoun-x-1 | prov-ex-u6-pronoun-1-ru | prov-ex-u6-pronoun-0-ru
@@ -3227,7 +3227,7 @@ relationParticipantIds=prov-u6-pronoun-x-1 | prov-ex-u6-pronoun-1-ru | prov-ex-u
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 057006e7ae2e970192ad598e6ec36e24455bd49c3ed4dfdbc2c4da368b13e0d5
+- Content hash: 59d57c559f6b00385b3781fe745b20669e20f241d84c5de02ceddb5e2fa99cd0
 
 kind=FORM_SELECTION
 language=en
@@ -3235,11 +3235,11 @@ prompt=Which admitted form is the object row of the shown form?
 promptLetter=Она
 options=Её | Его
 answer=Её
-feedback=Does the admitted record show the governed contrast? Её.
+feedback=Её is the accusative object form for Она, she/her: third person singular feminine. Его is the form for he/him or it instead. Match the same person, number and gender across the nominative and accusative table columns.
 objectiveId=obj-u6-pronoun
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is not the object row of the shown line.
+distractorRationales= | Его identifies he/him or it, third person singular masculine or neuter instead of the person, number or gender in the shown nominative form.
 testedFeature=PERSONAL_OBJECT_CASE
 evidenceMode=SAME_CONSTRUCTION_DIFFERENT_FORM
 contrastSetId=u6-pronoun-2
@@ -3247,8 +3247,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u6-pronoun-5-ru
 distractorSourceIds= | prov-ex-u6-pronoun-4-ru
-distractorDifference= | This form is not the object row of the shown line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Его identifies he/him or it, third person singular masculine or neuter instead of the person, number or gender in the shown nominative form.
+whyAnswerDemonstratesObjective=Её is the accusative object form for Она, she/her: third person singular feminine. Его is the form for he/him or it instead. Match the same person, number and gender across the nominative and accusative table columns.
 contrastMembers=Её | Его
 relationKind=SAME_CONSTRUCTION_DIFFERENT_FORM
 relationParticipantIds=prov-u6-pronoun-x-2 | prov-ex-u6-pronoun-5-ru | prov-ex-u6-pronoun-4-ru
@@ -3261,7 +3261,7 @@ relationParticipantIds=prov-u6-pronoun-x-2 | prov-ex-u6-pronoun-5-ru | prov-ex-u
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 812e4a3739931c1d36ecbc69a1dc2ef611dcbd2e0b9ccff9c85c3740479829de
+- Content hash: ad9389f0b0d9eada40fdc4f31c6101634c0866f265bb411b85eae3f10d2de2a1
 
 kind=FORM_SELECTION
 language=en
@@ -3269,11 +3269,11 @@ prompt=Which admitted form is the object row of the shown form?
 promptLetter=Они
 options=Их | Вас
 answer=Их
-feedback=Does the admitted record show the governed contrast? Их.
+feedback=Их is the accusative object form for Они, they/them: third person plural. Вас is the form for plural or polite you instead, second person. Match the same person and number across the nominative and accusative table columns.
 objectiveId=obj-u6-pronoun
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is not the object row of the shown line.
+distractorRationales= | Вас identifies plural or polite you, second person instead of the person, number or gender in the shown nominative form.
 testedFeature=PERSONAL_OBJECT_CASE
 evidenceMode=SAME_CONSTRUCTION_DIFFERENT_FORM
 contrastSetId=u6-pronoun-3
@@ -3281,8 +3281,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u6-pronoun-6-ru
 distractorSourceIds= | prov-ex-u6-pronoun-3-ru
-distractorDifference= | This form is not the object row of the shown line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Вас identifies plural or polite you, second person instead of the person, number or gender in the shown nominative form.
+whyAnswerDemonstratesObjective=Их is the accusative object form for Они, they/them: third person plural. Вас is the form for plural or polite you instead, second person. Match the same person and number across the nominative and accusative table columns.
 contrastMembers=Их | Вас
 relationKind=SAME_CONSTRUCTION_DIFFERENT_FORM
 relationParticipantIds=prov-u6-pronoun-x-3 | prov-ex-u6-pronoun-6-ru | prov-ex-u6-pronoun-3-ru
@@ -3295,7 +3295,7 @@ relationParticipantIds=prov-u6-pronoun-x-3 | prov-ex-u6-pronoun-6-ru | prov-ex-u
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: b6ad28c3311dae19018e8e3dd77df11f905c32ba8576d702bcd172b4d404c8bc
+- Content hash: da20dd02585d3b87669efbcbd744e67d483c96208f7c722610e2eb9b12712eae
 
 kind=CASE_RECOGNITION
 language=en
@@ -3303,11 +3303,11 @@ prompt=Which admitted function does the shown line use?
 promptLetter=Я жил в Лондоне
 options=location | direction
 answer=location
-feedback=Does the admitted record show the governed contrast? location.
+feedback=Я жил в Лондоне describes living in London, a location. Here the preposition takes the prepositional case. Direction instead describes a destination; The same preposition with the accusative can express that different function.
 objectiveId=obj-u6-direction
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This label names the other admitted function.
+distractorRationales= | Direction describes moving toward a destination instead of being at a place in this example.
 testedFeature=DIRECTION_LOCATION
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u6-direction-1
@@ -3315,8 +3315,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-u6-direction-x-1
 distractorSourceIds= | prov-u6-direction-x-0
-distractorDifference= | This label names the other admitted function.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Direction describes moving toward a destination instead of being at a place in this example.
+whyAnswerDemonstratesObjective=Я жил в Лондоне describes living in London, a location. Here the preposition takes the prepositional case. Direction instead describes a destination; The same preposition with the accusative can express that different function.
 contrastMembers=location | direction
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u6-direction-1-ru | prov-u6-direction-x-1 | prov-u6-direction-x-0
@@ -3329,7 +3329,7 @@ relationParticipantIds=prov-ex-u6-direction-1-ru | prov-u6-direction-x-1 | prov-
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: acef00bf6a6ed49c8e6d5f51f667a3204db1df9b82f80f88d15a8b3e2c315992
+- Content hash: df10f0cc72159e3726a497e4dc6e2489395cb78188d980383abb46bc052dee5b
 
 kind=CASE_RECOGNITION
 language=en
@@ -3337,11 +3337,11 @@ prompt=Which admitted function does the shown line use?
 promptLetter=Я шёл на улицу
 options=direction | location
 answer=direction
-feedback=Does the admitted record show the governed contrast? direction.
+feedback=Я шёл на улицу describes walking onto the street, a destination. Here the preposition takes the accusative, so the function is direction. Location instead describes being at a place; The same preposition with the prepositional case can express that different function.
 objectiveId=obj-u6-direction
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This label names the other admitted function.
+distractorRationales= | Location describes being at a place instead of moving toward a destination in this example.
 testedFeature=DIRECTION_LOCATION
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u6-direction-2
@@ -3349,8 +3349,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-u6-direction-x-0
 distractorSourceIds= | prov-u6-direction-x-1
-distractorDifference= | This label names the other admitted function.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Location describes being at a place instead of moving toward a destination in this example.
+whyAnswerDemonstratesObjective=Я шёл на улицу describes walking onto the street, a destination. Here the preposition takes the accusative, so the function is direction. Location instead describes being at a place; The same preposition with the prepositional case can express that different function.
 contrastMembers=direction | location
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u6-direction-2-ru | prov-u6-direction-x-0 | prov-u6-direction-x-1
@@ -3363,7 +3363,7 @@ relationParticipantIds=prov-ex-u6-direction-2-ru | prov-u6-direction-x-0 | prov-
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: e65f71f440595dc76ee104b8f5742124f35b1844edf5648236185b4d747a1b57
+- Content hash: c964446677cd2905b39ee40ab995ba2bfbc96874886da3af24db85bc5aae1c6b
 
 kind=CASE_RECOGNITION
 language=en
@@ -3371,11 +3371,11 @@ prompt=Which admitted function does the shown line use?
 promptLetter=Оно на столе
 options=location | direction
 answer=location
-feedback=Does the admitted record show the governed contrast? location.
+feedback=Оно на столе describes being on the table, a location. Here the preposition takes the prepositional case. Direction instead describes a destination; The same preposition with the accusative can express that different function.
 objectiveId=obj-u6-direction
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This label names the other admitted function.
+distractorRationales= | Direction describes moving toward a destination instead of being at a place in this example.
 testedFeature=DIRECTION_LOCATION
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u6-direction-3
@@ -3383,8 +3383,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-u6-direction-x-1
 distractorSourceIds= | prov-u6-direction-x-0
-distractorDifference= | This label names the other admitted function.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Direction describes moving toward a destination instead of being at a place in this example.
+whyAnswerDemonstratesObjective=Оно на столе describes being on the table, a location. Here the preposition takes the prepositional case. Direction instead describes a destination; The same preposition with the accusative can express that different function.
 contrastMembers=location | direction
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u6-direction-3-ru | prov-u6-direction-x-1 | prov-u6-direction-x-0
@@ -4829,6 +4829,996 @@ attribution=Russian Companion content-audit research synthesis, content-audit-20
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
 sourceHash=fa129a14220bca02e6275ec53cf52eceb11456f354426f259b83c12f70a8837c
 contentHash=bb0bfc4784cc98146560ce28f1cae39155903bca94367dca64c8f348956d8ef2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-g-direction-0`
+
+- Objectives: obj-u6-direction
+- Sessions: u6-s-orient, u6-s-direction
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1713cea6a8c7d7015302b2b337c472321e50753dd873fb5de98c6a9a7ce3fd93
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-direction:feedback:u6-g-direction-0
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+Я шёл в дом describes walking into the house, a destination. Here the preposition takes the accusative, so the function is direction. Location instead describes being at a place; The same preposition with the prepositional case can express that different function.
+shippedText=Я шёл в дом describes walking into the house, a destination. Here the preposition takes the accusative, so the function is direction. Location instead describes being at a place; The same preposition with the prepositional case can express that different function.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a9b9bce6fb97ec68f25e0390bc05ee18a98cd23ac866e1d4f605901078fe5ca5
+contentHash=bf623fb8faebcaa176c4e70527f7355c6df24974b4f91184c8d6a57b8692d905
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-g-direction-0-distractor-1`
+
+- Objectives: obj-u6-direction
+- Sessions: u6-s-orient, u6-s-direction
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a328bdf070411eda2060a4ca69ef3aa7683625a10fe29992957d0ec25a007b0b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-direction:feedback:u6-g-direction-0-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+Location describes being at a place instead of moving toward a destination in this example.
+shippedText=Location describes being at a place instead of moving toward a destination in this example.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0a6a38869f63cf62cdca9c78a4f238a97a30e5eedea96dbf4aa2d63937f38bb0
+contentHash=4b3f6b99af156f1e995b48fb87e7abef3404dc6f8c879576edbe10eced76cf48
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-g-object-0`
+
+- Objectives: obj-u6-object
+- Sessions: u6-s-orient, u6-s-object
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dbcb2a8e17804cc49993352ddd295c14bc0487cdd6dc868d28b6502fa056c369
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-object:feedback:u6-g-object-0
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+Я тебя люблю places the object before the verb. Я люблю тебя places it after the verb. Both have the same meaning, I love you: the subject and object keep their roles and forms. The other option repeats the shown order.
+shippedText=Я тебя люблю places the object before the verb. Я люблю тебя places it after the verb. Both have the same meaning, I love you: the subject and object keep their roles and forms. The other option repeats the shown order.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4aa26d80c55cefeeadec8deef38aaf7a1002d0202f6ecbfa87e0fd1b728a2d29
+contentHash=8e5de2aac4ee8cbe9d67da1150014faf24fe2b6bf0061a6630abb420a7eac7bc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-g-object-0-distractor-1`
+
+- Objectives: obj-u6-object
+- Sessions: u6-s-orient, u6-s-object
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e14b5f3ccce125375c0daaee819d9c78053c28886ad767664ce9bbe5e8d0dfb3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-object:feedback:u6-g-object-0-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+This option repeats the shown order instead of moving the object before or after the verb.
+shippedText=This option repeats the shown order instead of moving the object before or after the verb.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2d1193089b66110b6f55e1b71cde06596bddd273bd2918bfcb1b49fea5f809a1
+contentHash=3aea1ee5055ca611eab9dcdc9f48d62f77e31047d065ad634ec599ae2bc03b7c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-g-pronoun-0`
+
+- Objectives: obj-u6-pronoun
+- Sessions: u6-s-orient, u6-s-pronoun
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 151837f245a2f43676ecaf6f323958606632ffb559f3942db6ddf6382110d31e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-pronoun:feedback:u6-g-pronoun-0
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+Меня is the accusative object form for Я, I/me: first person singular. Нас is the form for we/us instead, first person plural. Match the same person and number across the nominative and accusative table columns.
+shippedText=Меня is the accusative object form for Я, I/me: first person singular. Нас is the form for we/us instead, first person plural. Match the same person and number across the nominative and accusative table columns.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9ca796bdfae1eacfc763644ac07d325b80f6927b0655a4b77915614a561573c4
+contentHash=1f609f3f6128b557e09daaf8181fb1e5e4203c1acbd092e1d58c65d6d67d8777
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-g-pronoun-0-distractor-1`
+
+- Objectives: obj-u6-pronoun
+- Sessions: u6-s-orient, u6-s-pronoun
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c72587f05ffc0432c3844a2530c9630f56c2c307a036f7ae3e044864b32ce056
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-pronoun:feedback:u6-g-pronoun-0-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+Нас identifies we/us, first person plural instead of the person, number or gender in the shown nominative form.
+shippedText=Нас identifies we/us, first person plural instead of the person, number or gender in the shown nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=622158ca677827056087511b67d5c454400b278e398e2c1a1ea1cfad8054be3b
+contentHash=2be6739cdebcf79e36698ca6bb35e0002219639904f9ca3e9421420d812c5349
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-g-third-0`
+
+- Objectives: obj-u6-third
+- Sessions: u6-s-orient, u6-s-third
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 220e6a2d0c9624dfb2f1291ebd47de8ce946f33b878551ca5b94e2b8993d8339
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-third:feedback:u6-g-third-0
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+его means his or its: the category refers to a masculine or neuter singular possessor. её refers to a feminine singular possessor, and их to plural possessors. These third-person possessive forms do not change with the gender or number of the possessed noun.
+shippedText=его means his or its: the category refers to a masculine or neuter singular possessor. её refers to a feminine singular possessor, and их to plural possessors. These third-person possessive forms do not change with the gender or number of the possessed noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4383e710598ac6ec20b446899fe4f41d875fb98ba34ce30419fdf939189bf961
+contentHash=c33567a200bad3801e08026beae80dab4af6180d626951d5d38de3a45071077b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-g-third-0-distractor-1`
+
+- Objectives: obj-u6-third
+- Sessions: u6-s-orient, u6-s-third
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8909e0919f265fac0502573f49ca1e66b4f5304c2669c5eb4a45d92145f3c5a6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-third:feedback:u6-g-third-0-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+её identifies her, a feminine singular possessor instead of the shown possessor category.
+shippedText=её identifies her, a feminine singular possessor instead of the shown possessor category.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=724649ddaa0e9b543b736a31cff3992189ef4b50ac81915ed58b65062d649e10
+contentHash=452799d4db4d8bf3a6441a7f6b5da037567e4bf300ee22a18a4205f474fe00e2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-g-third-0-distractor-2`
+
+- Objectives: obj-u6-third
+- Sessions: u6-s-orient, u6-s-third
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f76983f60a5676c489c890f5180311b6ff87a15ee87219fa4644eeda1b903da6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-third:feedback:u6-g-third-0-distractor-2
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+их identifies their, plural possessors instead of the shown possessor category.
+shippedText=их identifies their, plural possessors instead of the shown possessor category.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=49e842fea79eb8a4ac1d1ed59267dd7bc8a4ebe9b3324794c949b88cde3de870
+contentHash=11833d2e01ea92a67cd322938a1a9fbcf464ab9784ab0620c85213206e36fb80
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-direction-1`
+
+- Objectives: obj-u6-direction
+- Sessions: u6-s-orient, u6-s-direction
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a467651545819a21f85871dcc0df9c763aca6b970d8f52f88f6869f3dd502317
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-direction:feedback:u6-i-direction-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+Я жил в Лондоне describes living in London, a location. Here the preposition takes the prepositional case. Direction instead describes a destination; The same preposition with the accusative can express that different function.
+shippedText=Я жил в Лондоне describes living in London, a location. Here the preposition takes the prepositional case. Direction instead describes a destination; The same preposition with the accusative can express that different function.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fcae600d8da60f956e02a204bdfad6dd2d861b65a50d939f9d309bd2daf6a492
+contentHash=b037256e44c139b85996e53f71e76a17299d2d0826ba10ea91bc43796b54ef6f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-direction-1-distractor-1`
+
+- Objectives: obj-u6-direction
+- Sessions: u6-s-orient, u6-s-direction
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 284c66c25218c4d66f7e260592a00a1959ea58b416bc8539f9182165aca198dc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-direction:feedback:u6-i-direction-1-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+Direction describes moving toward a destination instead of being at a place in this example.
+shippedText=Direction describes moving toward a destination instead of being at a place in this example.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=560001a1d3c001e42d3112cc04488387f67feac9df46ba6526e4b74b0edfa325
+contentHash=54fcd07721b4316e9d5a54308a30f907624178f453b18ff7f2c0b066195f16cf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-direction-2`
+
+- Objectives: obj-u6-direction
+- Sessions: u6-s-orient, u6-s-direction
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0c4a3e8966623ecaa9824712c73d2016d8b7f4e23af486217a4be7264ef2d8ab
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-direction:feedback:u6-i-direction-2
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+Я шёл на улицу describes walking onto the street, a destination. Here the preposition takes the accusative, so the function is direction. Location instead describes being at a place; The same preposition with the prepositional case can express that different function.
+shippedText=Я шёл на улицу describes walking onto the street, a destination. Here the preposition takes the accusative, so the function is direction. Location instead describes being at a place; The same preposition with the prepositional case can express that different function.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=954a8f7886b00b6d6a1242257ff2b3a36b153fa7403b54ec3a4aa1f3666c19d6
+contentHash=24012f8d613f6e9106cd6b807ba6c4731be47330962539ba7cd02a73f3a351a2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-direction-2-distractor-1`
+
+- Objectives: obj-u6-direction
+- Sessions: u6-s-orient, u6-s-direction
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f2abd94d2dca1dbae3a26ae9fc391b4ee1090a4b2785f82481ff220c88408f3d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-direction:feedback:u6-i-direction-2-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+Location describes being at a place instead of moving toward a destination in this example.
+shippedText=Location describes being at a place instead of moving toward a destination in this example.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0a6a38869f63cf62cdca9c78a4f238a97a30e5eedea96dbf4aa2d63937f38bb0
+contentHash=4b3f6b99af156f1e995b48fb87e7abef3404dc6f8c879576edbe10eced76cf48
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-direction-3`
+
+- Objectives: obj-u6-direction
+- Sessions: u6-s-orient, u6-s-direction
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cf3ef699bc5c7eae89bf06a3ec03b03f253f945bf7c697176d412feaadfb739e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-direction:feedback:u6-i-direction-3
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+Оно на столе describes being on the table, a location. Here the preposition takes the prepositional case. Direction instead describes a destination; The same preposition with the accusative can express that different function.
+shippedText=Оно на столе describes being on the table, a location. Here the preposition takes the prepositional case. Direction instead describes a destination; The same preposition with the accusative can express that different function.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a84bf0d85ae754ad1c4f92d5d70c56a00c5709be74c5ba521af6bfba31220e72
+contentHash=777f48c86a5f7f920e714b27debfc6d2a7e1a5ec7d6efe54a82ad55cb5fa7a34
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-direction-3-distractor-1`
+
+- Objectives: obj-u6-direction
+- Sessions: u6-s-orient, u6-s-direction
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6f175e08c1c331454316419286b228aa12b4ff5c45022d2cf2211c950fdba7d8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-direction:feedback:u6-i-direction-3-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+Direction describes moving toward a destination instead of being at a place in this example.
+shippedText=Direction describes moving toward a destination instead of being at a place in this example.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=560001a1d3c001e42d3112cc04488387f67feac9df46ba6526e4b74b0edfa325
+contentHash=54fcd07721b4316e9d5a54308a30f907624178f453b18ff7f2c0b066195f16cf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-object-1`
+
+- Objectives: obj-u6-object
+- Sessions: u6-s-orient, u6-s-object
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7d24e8aeac79b042273a25fb4d9f1ff5876a739111d023cf7ee5b9b3aaac59fc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-object:feedback:u6-i-object-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+Я люблю тебя places the object after the verb. Я тебя люблю places it before the verb. Both have the same meaning, I love you: the subject and object keep their roles and forms. The other option repeats the shown order.
+shippedText=Я люблю тебя places the object after the verb. Я тебя люблю places it before the verb. Both have the same meaning, I love you: the subject and object keep their roles and forms. The other option repeats the shown order.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c1e2c5be89365046787339a661ede32fbf9df29a927d9881f93f5520cd962f32
+contentHash=3e925a4a40056c571ad8a9a94b925d0aaf3f428de01f58556f9e5c8a8aa30372
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-object-1-distractor-1`
+
+- Objectives: obj-u6-object
+- Sessions: u6-s-orient, u6-s-object
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 67870cac506416004e15a2e3c5f7f42096f2b08c2331f5c0c15eb6d99bfc9188
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-object:feedback:u6-i-object-1-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+This option repeats the shown order instead of moving the object before or after the verb.
+shippedText=This option repeats the shown order instead of moving the object before or after the verb.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2d1193089b66110b6f55e1b71cde06596bddd273bd2918bfcb1b49fea5f809a1
+contentHash=3aea1ee5055ca611eab9dcdc9f48d62f77e31047d065ad634ec599ae2bc03b7c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-object-2`
+
+- Objectives: obj-u6-object
+- Sessions: u6-s-orient, u6-s-object
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2566a5e9adf8c7960b37af93095cf0885b2610fd2b2c18111a3739967c655177
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-object:feedback:u6-i-object-2
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+Коты ненавидят собак. means cats hate dogs. The cats are the subject and the dogs the accusative object. Compared with the shown dogs hate cats line, both roles are reversed; this is not merely a change of word order. The other option repeats dogs hate cats.
+shippedText=Коты ненавидят собак. means cats hate dogs. The cats are the subject and the dogs the accusative object. Compared with the shown dogs hate cats line, both roles are reversed; this is not merely a change of word order. The other option repeats dogs hate cats.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b4ba073b45029c47e4915d09d663a4b26c80ecbec3b0f07d2021ec808fba1259
+contentHash=77e8e0c2f8a7bacd9c6fdeab6a23f9a0d04fde55c25bcecd825a32cc6a5540c2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-object-2-distractor-1`
+
+- Objectives: obj-u6-object
+- Sessions: u6-s-orient, u6-s-object
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 34f3f0d20f9563e38de3a381303b1a9e7d399e871d905eeedf73ade8487330fd
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-object:feedback:u6-i-object-2-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+This option repeats the shown subject and object roles instead of reversing who hates whom.
+shippedText=This option repeats the shown subject and object roles instead of reversing who hates whom.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6a2671fc628c73ece722387742d75351d5de9750a24798f0bcdf3d61049ec8cc
+contentHash=8dd19c1340c6d0713eb808c8043a7b34c2ed8a53d113a57ec7bef7c7374ce7c6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-object-3`
+
+- Objectives: obj-u6-object
+- Sessions: u6-s-orient, u6-s-object
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7a8f0b06ffcad2ce7f84b94646e6ed465a8cb1ef0e105e16cc358e1b6ac8b432
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-object:feedback:u6-i-object-3
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+Собаки ненавидят котов. means dogs hate cats. The dogs are the subject and the cats the accusative object. Compared with the shown cats hate dogs line, both roles are reversed; this is not merely a change of word order. The other option repeats cats hate dogs.
+shippedText=Собаки ненавидят котов. means dogs hate cats. The dogs are the subject and the cats the accusative object. Compared with the shown cats hate dogs line, both roles are reversed; this is not merely a change of word order. The other option repeats cats hate dogs.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=632e20aefc0592ebfe8990ff3bb9efe6b9301b12cc7212dcd0e19ade6e620972
+contentHash=faf4cc9fed9db025a11a2b04bcda14b564bcdbcc643f294f814d9946b339af9c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-object-3-distractor-1`
+
+- Objectives: obj-u6-object
+- Sessions: u6-s-orient, u6-s-object
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 794eccfad440665916e616c6dbc08a838bf0162832ca3a90510d0e0b320156ec
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-object:feedback:u6-i-object-3-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+This option repeats the shown subject and object roles instead of reversing who hates whom.
+shippedText=This option repeats the shown subject and object roles instead of reversing who hates whom.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6a2671fc628c73ece722387742d75351d5de9750a24798f0bcdf3d61049ec8cc
+contentHash=8dd19c1340c6d0713eb808c8043a7b34c2ed8a53d113a57ec7bef7c7374ce7c6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-pronoun-1`
+
+- Objectives: obj-u6-pronoun
+- Sessions: u6-s-orient, u6-s-pronoun
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d1cb846b86156768ce72f4e7f3af1813f740a9689f559426a50f605fbb430c04
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-pronoun:feedback:u6-i-pronoun-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+Нас is the accusative object form for Мы, we/us: first person plural. Меня is the form for I/me instead, first person singular. Match the same person and number across the nominative and accusative table columns.
+shippedText=Нас is the accusative object form for Мы, we/us: first person plural. Меня is the form for I/me instead, first person singular. Match the same person and number across the nominative and accusative table columns.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=77d0a9f2f2e4987af92b342e2e9d0828421c05c127f0d609269136bc523f1836
+contentHash=3883eea17fe62d656ca7c2624a700f21ee6fda50852a6271c17df720b59c9829
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-pronoun-1-distractor-1`
+
+- Objectives: obj-u6-pronoun
+- Sessions: u6-s-orient, u6-s-pronoun
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3badfaef0989ef571b8f7b00ddf70e77c0611deffb05dc19346ab6015c76cbd0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-pronoun:feedback:u6-i-pronoun-1-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+Меня identifies I/me, first person singular instead of the person, number or gender in the shown nominative form.
+shippedText=Меня identifies I/me, first person singular instead of the person, number or gender in the shown nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b84a1942c732a810222c7acc800ae7f727b386b4d070635f315c2a1837acb04b
+contentHash=279f027ca81db6accd47814dba6444b6f328e3052d988ba242aa933c066fd061
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-pronoun-2`
+
+- Objectives: obj-u6-pronoun
+- Sessions: u6-s-orient, u6-s-pronoun
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ea0a82cda41926806681023db30a495382885cc3671f9c73742c3f9690c5d3ef
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-pronoun:feedback:u6-i-pronoun-2
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+Её is the accusative object form for Она, she/her: third person singular feminine. Его is the form for he/him or it instead. Match the same person, number and gender across the nominative and accusative table columns.
+shippedText=Её is the accusative object form for Она, she/her: third person singular feminine. Его is the form for he/him or it instead. Match the same person, number and gender across the nominative and accusative table columns.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=dd20c75c930009b68fcffc97a3e3c31fc88e199e881f6db9ca1d626ed11b8d42
+contentHash=b5fd06c8e51bb3225d24617570c52696b918691420a19eb1bb161240a835d067
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-pronoun-2-distractor-1`
+
+- Objectives: obj-u6-pronoun
+- Sessions: u6-s-orient, u6-s-pronoun
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 069a982a8c7ba59109a047c4ec41ac493255318d6f895d4a5a0956e212c986c2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-pronoun:feedback:u6-i-pronoun-2-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+Его identifies he/him or it, third person singular masculine or neuter instead of the person, number or gender in the shown nominative form.
+shippedText=Его identifies he/him or it, third person singular masculine or neuter instead of the person, number or gender in the shown nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5a07617aaef5224620ed1192d7c6dbf5b387cdcd776107ab4965a5adce430992
+contentHash=50d8d92a17971ecfadf2c047c9a2fe609c331afb41b26e35b443ffb3dd93aabf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-pronoun-3`
+
+- Objectives: obj-u6-pronoun
+- Sessions: u6-s-orient, u6-s-pronoun
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ed3ea93d13205ae9ad4d713d668be1cbbb98c1f700adcf7a4fedd1a79bfe2a8d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-pronoun:feedback:u6-i-pronoun-3
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+Их is the accusative object form for Они, they/them: third person plural. Вас is the form for plural or polite you instead, second person. Match the same person and number across the nominative and accusative table columns.
+shippedText=Их is the accusative object form for Они, they/them: third person plural. Вас is the form for plural or polite you instead, second person. Match the same person and number across the nominative and accusative table columns.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bdcc05dbbcd40d57e3846cdd45442a2caf981878a034c831ce2dd18ac8a69d1a
+contentHash=aaa79237b40bb2b459d396ac6e3cc1c9b94c82d69f2d0cb505a932f32a374ed6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-pronoun-3-distractor-1`
+
+- Objectives: obj-u6-pronoun
+- Sessions: u6-s-orient, u6-s-pronoun
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6ac7f1e560619c7c99697173e5c05f6ff9452f171e5deeffdb9e56fc4c3a6b05
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-pronoun:feedback:u6-i-pronoun-3-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+Вас identifies plural or polite you, second person instead of the person, number or gender in the shown nominative form.
+shippedText=Вас identifies plural or polite you, second person instead of the person, number or gender in the shown nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=afa60d7e4dbdab8f6b67f06f4a379f27cfe1d0beb3ee9556feeb6d9cbf8e2084
+contentHash=f30b8759307fe0da325efce57b02820d37cd1ca8938cec202d67bfe13e75b210
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-third-1`
+
+- Objectives: obj-u6-third
+- Sessions: u6-s-orient, u6-s-third
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 713b0abff47f5cb31e88aceb69152431cd5c7853bb11be0e219f90325edcaccc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-third:feedback:u6-i-third-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+её means her: the category refers to a feminine singular possessor. его means his or its, and их means their. These third-person possessive forms do not change with the gender or number of the possessed noun.
+shippedText=её means her: the category refers to a feminine singular possessor. его means his or its, and их means their. These third-person possessive forms do not change with the gender or number of the possessed noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5ec76e10bd8e8cb1580d8e9c75c237292e8ba1bcc171b5954d250dc3eb10d331
+contentHash=4de3a321d42e97424fd138af98200357195a563297d9c25b7ad13652f2b10ed3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-third-1-distractor-1`
+
+- Objectives: obj-u6-third
+- Sessions: u6-s-orient, u6-s-third
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bee9887e8d912b6783df9f9ab59e9d0c4fdc97b30ee9c5283fddb80dee787255
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-third:feedback:u6-i-third-1-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+его identifies his or its, a masculine or neuter singular possessor instead of the shown possessor category.
+shippedText=его identifies his or its, a masculine or neuter singular possessor instead of the shown possessor category.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e53226e53cb36865e9b353e706fd99b65e09407800ab51dfa95d5e155ee71b95
+contentHash=2f67ca1a932b3f3320facf0e804e16f0b8e871550f1f861142661065e0bbbc6b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-third-1-distractor-2`
+
+- Objectives: obj-u6-third
+- Sessions: u6-s-orient, u6-s-third
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cb161344717ced9c66dc3b5c9ff9f09e154d4191ab8c8290c253aee9aae49e76
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-third:feedback:u6-i-third-1-distractor-2
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+их identifies their, plural possessors instead of the shown possessor category.
+shippedText=их identifies their, plural possessors instead of the shown possessor category.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=49e842fea79eb8a4ac1d1ed59267dd7bc8a4ebe9b3324794c949b88cde3de870
+contentHash=11833d2e01ea92a67cd322938a1a9fbcf464ab9784ab0620c85213206e36fb80
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-third-2`
+
+- Objectives: obj-u6-third
+- Sessions: u6-s-orient, u6-s-third
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5de001fa524784d3f8e71ceeb064ef7d720b2721f21eb2b5ba299233503df7aa
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-third:feedback:u6-i-third-2
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+их means their: the category refers to plural possessors. его and её refer to singular possessors. These third-person possessive forms do not change with the gender or number of the possessed noun.
+shippedText=их means their: the category refers to plural possessors. его and её refer to singular possessors. These third-person possessive forms do not change with the gender or number of the possessed noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7cb8f50c11b8cdfb05954bd2466a19965c6042026c5ee5196c6f7c34d4b7b455
+contentHash=199374945c78a3cfa198166dbfcd05170f4adcfec8cea46769b26c6167f57baf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-third-2-distractor-1`
+
+- Objectives: obj-u6-third
+- Sessions: u6-s-orient, u6-s-third
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: af59ffe9964744e622da5e5493fcd7300b07c0bcb00a918357096034bbce6590
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-third:feedback:u6-i-third-2-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+его identifies his or its, a masculine or neuter singular possessor instead of the shown possessor category.
+shippedText=его identifies his or its, a masculine or neuter singular possessor instead of the shown possessor category.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e53226e53cb36865e9b353e706fd99b65e09407800ab51dfa95d5e155ee71b95
+contentHash=2f67ca1a932b3f3320facf0e804e16f0b8e871550f1f861142661065e0bbbc6b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-feedback-u6-i-third-2-distractor-2`
+
+- Objectives: obj-u6-third
+- Sessions: u6-s-orient, u6-s-third
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cb0263939c90115fb0f7b54f318c6e656bbc0eee06af4cc98c2395557de86830
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-third:feedback:u6-i-third-2-distractor-2
+originalSourceText=Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.
+её identifies her, a feminine singular possessor instead of the shown possessor category.
+shippedText=её identifies her, a feminine singular possessor instead of the shown possessor category.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=724649ddaa0e9b543b736a31cff3992189ef4b50ac81915ed58b65062d649e10
+contentHash=452799d4db4d8bf3a6441a7f6b5da037567e4bf300ee22a18a4205f474fe00e2
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -10020,6 +11010,39 @@ permitsAppUse=true
 - `obj-u6-possessive` PROVENANCE `prov-ca-declension-u6-i-possessive-3-0`
 - `obj-u6-possessive` PROVENANCE `prov-ca-declension-u6-i-possessive-3-1`
 - `obj-u6-possessive` PROVENANCE `prov-ca-declension-u6-i-possessive-3-3`
+- `obj-u6-direction` PROVENANCE `prov-ca-u6-feedback-u6-g-direction-0`
+- `obj-u6-direction` PROVENANCE `prov-ca-u6-feedback-u6-g-direction-0-distractor-1`
+- `obj-u6-object` PROVENANCE `prov-ca-u6-feedback-u6-g-object-0`
+- `obj-u6-object` PROVENANCE `prov-ca-u6-feedback-u6-g-object-0-distractor-1`
+- `obj-u6-pronoun` PROVENANCE `prov-ca-u6-feedback-u6-g-pronoun-0`
+- `obj-u6-pronoun` PROVENANCE `prov-ca-u6-feedback-u6-g-pronoun-0-distractor-1`
+- `obj-u6-third` PROVENANCE `prov-ca-u6-feedback-u6-g-third-0`
+- `obj-u6-third` PROVENANCE `prov-ca-u6-feedback-u6-g-third-0-distractor-1`
+- `obj-u6-third` PROVENANCE `prov-ca-u6-feedback-u6-g-third-0-distractor-2`
+- `obj-u6-direction` PROVENANCE `prov-ca-u6-feedback-u6-i-direction-1`
+- `obj-u6-direction` PROVENANCE `prov-ca-u6-feedback-u6-i-direction-1-distractor-1`
+- `obj-u6-direction` PROVENANCE `prov-ca-u6-feedback-u6-i-direction-2`
+- `obj-u6-direction` PROVENANCE `prov-ca-u6-feedback-u6-i-direction-2-distractor-1`
+- `obj-u6-direction` PROVENANCE `prov-ca-u6-feedback-u6-i-direction-3`
+- `obj-u6-direction` PROVENANCE `prov-ca-u6-feedback-u6-i-direction-3-distractor-1`
+- `obj-u6-object` PROVENANCE `prov-ca-u6-feedback-u6-i-object-1`
+- `obj-u6-object` PROVENANCE `prov-ca-u6-feedback-u6-i-object-1-distractor-1`
+- `obj-u6-object` PROVENANCE `prov-ca-u6-feedback-u6-i-object-2`
+- `obj-u6-object` PROVENANCE `prov-ca-u6-feedback-u6-i-object-2-distractor-1`
+- `obj-u6-object` PROVENANCE `prov-ca-u6-feedback-u6-i-object-3`
+- `obj-u6-object` PROVENANCE `prov-ca-u6-feedback-u6-i-object-3-distractor-1`
+- `obj-u6-pronoun` PROVENANCE `prov-ca-u6-feedback-u6-i-pronoun-1`
+- `obj-u6-pronoun` PROVENANCE `prov-ca-u6-feedback-u6-i-pronoun-1-distractor-1`
+- `obj-u6-pronoun` PROVENANCE `prov-ca-u6-feedback-u6-i-pronoun-2`
+- `obj-u6-pronoun` PROVENANCE `prov-ca-u6-feedback-u6-i-pronoun-2-distractor-1`
+- `obj-u6-pronoun` PROVENANCE `prov-ca-u6-feedback-u6-i-pronoun-3`
+- `obj-u6-pronoun` PROVENANCE `prov-ca-u6-feedback-u6-i-pronoun-3-distractor-1`
+- `obj-u6-third` PROVENANCE `prov-ca-u6-feedback-u6-i-third-1`
+- `obj-u6-third` PROVENANCE `prov-ca-u6-feedback-u6-i-third-1-distractor-1`
+- `obj-u6-third` PROVENANCE `prov-ca-u6-feedback-u6-i-third-1-distractor-2`
+- `obj-u6-third` PROVENANCE `prov-ca-u6-feedback-u6-i-third-2`
+- `obj-u6-third` PROVENANCE `prov-ca-u6-feedback-u6-i-third-2-distractor-1`
+- `obj-u6-third` PROVENANCE `prov-ca-u6-feedback-u6-i-third-2-distractor-2`
 - `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-check-1-distractor-1`
 - `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-check-1-feedback`
 - `obj-u6-possessive` PROVENANCE `prov-ca-u6-worked-check-1-prompt`

@@ -24,5 +24,12 @@
   "addedPendingCoverageRecords": 33,
   "deterministicBaselineReplay": true,
   "byteIdempotent": true,
-  "semanticAcceptance": false
+  "semanticAcceptance": false,
+  "all30MappingsUnchanged": true,
+  "other29UnitContentReviewAndAncestorIdentitiesUnchanged": true,
+  "changedUnitContentAndReviewIdentities": [
+    6
+  ],
+  "pack": "1b9b4165f6fd32307de0f8b3d9c262d71512fa8cad3e4b0396f3a3c1a6dffa12",
+  "source": "74145307b4a6df18e6a808aa4763aa72949aeece2b70286e7ab175c6a9148c46"
 }

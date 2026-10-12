@@ -23,3 +23,9 @@ Qualified semantic/source/rights review, other audit findings, original historic
 ## Lab route implemented, feedback still open
 
 The read-only Review explanation route is implemented and tested for actual lab UI, learner-data invariance and rejecting cross-unit pointers. See ia009-lab-verification/FINAL_VERIFICATION_MANIFEST.json. This addresses the missing lab route only; all121 listed feedback rows remain open for sourced correction. Next bounded batch is Unit6’s15 rows across third-person possessives, object forms, pronoun use and direction. Physical-device acceptance is last, after the final independent comprehensive audit, as directed by the user.
+
+## Unit6 feedback engineering correction
+
+Implementation4e5e7adc8b9cfa96024e6b8c9c9db18d260a9634 explains all15 Unit6 rows and each distractor using retained Accusative_case oldid4330404. Keys, cues, options and participant relationships remain unchanged. Thirty-three English coverage records are review-pending. Remaining literal “Does” inventory:106 rows (52 generic admitted-record questions and54 feature-specific questions); counts:u7=2,u9=43,u10=7,u11=9,u12=15,u13=12,u14=9,u15=9. This supersedes the current-count claim above while preserving the historical121-row inventory. It is not a semantic or test-suite count. IA009 remains partial pending remaining corrections and independent verification.
+
+Next bounded feedback batch:Unit7’s two rows, after reading their complete retained contexts; then the remaining groups and other open findings. Final independent comprehensive audit precedes physical-device acceptance, which remains outstanding.
