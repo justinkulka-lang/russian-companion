@@ -1,0 +1,84 @@
+{
+  "repositoryCommit": "45de81c51c0176798d122facbfe5bb69c450e0bc",
+  "command": "bash audit/independent-gpt61-2026-10-12/ia009-unit7-verification/verify.sh",
+  "exitCode": 1,
+  "totals": {
+    "tests": 13,
+    "failures": 1,
+    "errors": 0,
+    "skipped": 0
+  },
+  "passed": 12,
+  "classes": [
+    {
+      "name": "dev.russiancompanion.release.ReleaseSourceDigestTest",
+      "methods": [
+        "committedCandidateRecordsTheCurrentSourceDigestAndIdentity"
+      ],
+      "sha256": "c45d6a1a08d5bf792e4c075b93a1fe3d691af1da6d59c9201cd56bae20de76e2"
+    },
+    {
+      "name": "dev.russiancompanion.v2.BatchECapabilityResearchTest",
+      "methods": [
+        "digestsGovernanceAndLaterUnitsStayUnchanged"
+      ],
+      "sha256": "5db822c4fba9cf01e4323181f8e48693675cc9761be788d65dbb756fdc59f3ef"
+    },
+    {
+      "name": "dev.russiancompanion.v2.Units610SourceIntakeTest",
+      "methods": [
+        "unitsSixThroughTenStayReviewPendingAndSourceBound",
+        "retainedSourceBytesMatchImmutableRevisions",
+        "earlierUnitDigestsStayPutAndLaterUnitsStayIsolated"
+      ],
+      "sha256": "724cef69cb88875e25afb2cb3951a0bc49e3e99eee982569f853a0f440be56fd"
+    },
+    {
+      "name": "dev.russiancompanion.v2.V2RebuildTest",
+      "methods": [
+        "structuralMappingSafeguardsRejectIncompleteOrInventedRecords"
+      ],
+      "sha256": "b9d1b30fd22daf3f30a0a99421cedde93c56ffe444b102ad5414af83fb92ca90"
+    },
+    {
+      "name": "dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest",
+      "methods": [
+        "committedReportsMatchTheGeneratorAndStayByteIdentical"
+      ],
+      "sha256": "4327e6d302a7f93a2bc1ee2c3bb1c083476f707c8eff7246b3a1c253894c832a"
+    },
+    {
+      "name": "dev.russiancompanion.v2.audit.GapClosureDossierTest",
+      "methods": [
+        "dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease"
+      ],
+      "sha256": "84467ff3e6b3df8b5c1d4b85162aa47b543900bf706d2894116599dea03922b9"
+    },
+    {
+      "name": "dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest",
+      "methods": [
+        "preparationManifestBindsFactsAndDoesNotPassAFinalAudit"
+      ],
+      "sha256": "bb782fc1b48b68a4beec724cc932e531af3a0c5cbf1ab4586f50441e1f0b52b3"
+    },
+    {
+      "name": "dev.russiancompanion.v2.review.UnitReviewPipelineTest",
+      "methods": [
+        "committedUnitPackagesMatchTheGenerator"
+      ],
+      "sha256": "113d4c5cdb94ab08b96957722b72bd7919e60c64caad0951c795c7a2ad3ae759"
+    },
+    {
+      "name": "dev.russiancompanion.v2.Unit7FeedbackCorrectionTest",
+      "methods": [
+        "feedbackExplainsGenderNumberAndNominativeAgreement",
+        "historicalGenericFeedbackCreditIsRetainedButStale",
+        "wrongAdjectiveSelectionDisplaysTheAgreementExplanation"
+      ],
+      "sha256": "f1ae5134610b1f37536557a301a839cb541061ace57d804952b23eab98fb2a23"
+    }
+  ],
+  "failure": "BatchECapabilityResearchTest.digestsGovernanceAndLaterUnitsStayUnchanged: old Unit7 content digest snapshot; review package snapshot also needs the same authorized update.",
+  "lintAndGate": "NOT_REACHED_IN_FAILED_COMMAND",
+  "scope": "FOCUSED_NOT_COMPLETE_SUITE"
+}

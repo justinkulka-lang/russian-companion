@@ -335,7 +335,7 @@ class BatchECapabilityResearchTest {
             assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", model.units.single { it.unitNumber == number }.readiness)
         }
         val content = mapOf(
-            7 to "46332a8e69325d3f187746e3e0d68b010a3662a980257bde7de05fd0636757fb",
+            7 to "0a4df65c918a87854c5088faf14ad2f6b9338d0b395452429ce6fd2a4caa1a6d",
             17 to "6172c2a9be50c4b3c79b962dc5f9b055f8d2d267d3a6a8627a3e9805e4fc8cca",
             23 to "42a67675479cb835e6c429ffc76c0120c00ea389baed9e7e0cbc91f593b564e4",
             24 to "6e7a66f3c4f2f4457aa772a64e931a228933d6516cdd96986760692581d8cbc6",
@@ -359,7 +359,7 @@ class BatchECapabilityResearchTest {
             30 to "97f4c8beeb1d0e6827b94bedc1e379381c763c2c3522013890b75802630440a2",
         )
         val reviewPackages = mapOf(
-            7 to "9872ce412b515a6633811a7fb20a857c508ae61b8297577c715630291f0e52ef",
+            7 to "444e13e9aa62b4b120928c6f1381898565a9ff47cc2a8bf1c0edc6fc2a001a65",
             17 to "5f6ba37d5f872c8afc895c5b402d142240977157dff5f7b27c38a7104fbab6c3",
             23 to "3132b83999674df89783745ad1ec1b9b15709c9659062b0cccf858f50eae438e",
             24 to "1513078e0309750e56a94be06f9da994060afb7ddd1cea9159fe758a1c68d6f5",
