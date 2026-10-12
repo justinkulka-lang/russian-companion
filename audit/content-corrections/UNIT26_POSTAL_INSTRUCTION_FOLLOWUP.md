@@ -15,3 +15,11 @@ All work remains IMPLEMENTED_PENDING_FINAL_AUDIT. No qualified acceptance, mappi
 The initial new-regression trial exposed a cue-in-answer defect in the independently written short-sample key. The key was rephrased while retaining the validator and test requirements; the exact corpus and trusted pin were replayed from the baseline. Trial evidence is retained.
 
 The next validation trial also required an explicit English-response prompt. The prompt was corrected without weakening response-shape checks. The asset-exclusion test now recognizes the exact primary UPU PDF URL solely as provenance research metadata for the new postal records; it retains the shipped-text PDF exclusion and all bundled-asset checks. This is a reference exception, not permission to bundle a PDF. Intermediate failures remain retained.
+
+Implementation ancestor: `0c0c22e5866aad80a1601b5e5c416e2742e17f5f`. All 30 packets bind this ancestor; only Unit 26 instructional digest changes; all mapping digests are preserved. Review-package digest expectations are refreshed because the implementation commit is a package input.
+
+Repository-source digest: `870d003681580104601e42a08625249dca8c2161e99f8c6c6619edc0cc01fed2`. Pack content-review digest: `d9ab2b4d8640659353504b925c96673c52e5958e2181ebd96bb515a6cbc6fb64`.
+
+Final verification:46 distinct XML-verified host methods pass:19 focused and28 binding/governance methods with one shared asset-policy method deduplicated. Three new postal regressions reject the preceding curriculum. Production validation reports zero issues. Independent baseline replay matches exact asset and trusted-pin bytes; idempotence, all original provenance, all30 mapping digests, generated files and genuine source ancestry are verified. Both live inventories match their current inputs:75 targets (44changed/27unchanged/4retained snapshots absent), zero semantic acceptance,74 single-guided candidates. Verification evidence is retained in `pr64-unit26-postal-verification-2026-10-11/`.
+
+The preceding head7d8197e Android runs38196883935/38196880217 remained in progress at the latest read. Host verification is not a current-head Android pass. No release or final curriculum acceptance is recorded.
