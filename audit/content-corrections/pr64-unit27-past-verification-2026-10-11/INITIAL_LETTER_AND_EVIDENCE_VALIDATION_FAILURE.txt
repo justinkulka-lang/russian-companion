@@ -1,0 +1,27 @@
+Exception in thread "main" java.lang.IllegalStateException: Russian text has no admitted source record: и
+Russian text has no admitted source record: а
+Russian text has no admitted source record: и
+Russian text has no admitted source record: а
+Russian text has no admitted source record: и
+Russian text has no admitted source record: а
+Russian text has no admitted source record: и
+Russian text has no admitted source record: а
+Russian text has no admitted source record: и
+Russian text has no admitted source record: а
+Russian text has no admitted source record: и
+Russian text has no admitted source record: а
+Unit 27 Russian text has no resolved provenance record
+Unit 27 Russian text has no resolved provenance record
+Unit 27 Russian text has no resolved provenance record
+Unit 27 Russian text has no resolved provenance record
+Unit 27 Russian text has no resolved provenance record
+Unit 27 Russian text has no resolved provenance record
+Unit 27 Russian text has no resolved provenance record
+Unit 27 Russian text has no resolved provenance record
+Unit 27 Russian text has no resolved provenance record
+Unit 27 Russian text has no resolved provenance record
+Unit 27 Russian text has no resolved provenance record
+Unit 27 Russian text has no resolved provenance record
+Item u27-g-passive-0 answer rationale does not cite the frozen evidence
+Item u27-i-passive-2 answer rationale does not cite the frozen evidence
+	at dev.russiancompanion.v2.review.RegenerateAllKt.main(RegenerateAll.kt:11)

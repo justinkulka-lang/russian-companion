@@ -1,0 +1,47 @@
+
+Thanks for using JUnit! Support its development at https://junit.org/sponsoring
+
+
+Failures (3):
+  JUnit Vintage:Unit27PastInstructionTest:requiredStressTeachingDistinguishesTheAccentedVowelAndCorrectsTheCompetingLabel
+    MethodSource [className = 'dev.russiancompanion.v2.Unit27PastInstructionTest', methodName = 'requiredStressTeachingDistinguishesTheAccentedVowelAndCorrectsTheCompetingLabel', methodParameterTypes = '']
+    => java.lang.AssertionError: expected:<2> but was:<1>
+       org.junit.Assert.fail(Assert.java:89)
+       org.junit.Assert.failNotEquals(Assert.java:835)
+       org.junit.Assert.assertEquals(Assert.java:120)
+       org.junit.Assert.assertEquals(Assert.java:146)
+       dev.russiancompanion.v2.Unit27PastInstructionTest.completeLesson(Unit27PastInstructionTest.kt:22)
+       dev.russiancompanion.v2.Unit27PastInstructionTest.requiredStressTeachingDistinguishesTheAccentedVowelAndCorrectsTheCompetingLabel(Unit27PastInstructionTest.kt:12)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+  JUnit Vintage:Unit27PastInstructionTest:meaningChecksRejectSourcePositionRecallAndOptionalPresentFormsStayOutsideGating
+    MethodSource [className = 'dev.russiancompanion.v2.Unit27PastInstructionTest', methodName = 'meaningChecksRejectSourcePositionRecallAndOptionalPresentFormsStayOutsideGating', methodParameterTypes = '']
+    => org.junit.ComparisonFailure: expected:<Which [English action meaning fits the shown past passive] form?> but was:<Which [admitted English label is written beside the shown] form?>
+       org.junit.Assert.assertEquals(Assert.java:117)
+       org.junit.Assert.assertEquals(Assert.java:146)
+       dev.russiancompanion.v2.Unit27PastInstructionTest.meaningChecksRejectSourcePositionRecallAndOptionalPresentFormsStayOutsideGating(Unit27PastInstructionTest.kt:16)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+  JUnit Vintage:Unit27PastInstructionTest:completePastPassiveMeaningAndFormTeachingPrecedesPracticeAndRestoresEveryExample
+    MethodSource [className = 'dev.russiancompanion.v2.Unit27PastInstructionTest', methodName = 'completePastPassiveMeaningAndFormTeachingPrecedesPracticeAndRestoresEveryExample', methodParameterTypes = '']
+    => java.lang.AssertionError: expected:<4> but was:<1>
+       org.junit.Assert.fail(Assert.java:89)
+       org.junit.Assert.failNotEquals(Assert.java:835)
+       org.junit.Assert.assertEquals(Assert.java:120)
+       org.junit.Assert.assertEquals(Assert.java:146)
+       dev.russiancompanion.v2.Unit27PastInstructionTest.completeLesson(Unit27PastInstructionTest.kt:22)
+       dev.russiancompanion.v2.Unit27PastInstructionTest.completePastPassiveMeaningAndFormTeachingPrecedesPracticeAndRestoresEveryExample(Unit27PastInstructionTest.kt:8)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+
+Test run finished after 1409 ms
+[         4 containers found      ]
+[         0 containers skipped    ]
+[         4 containers started    ]
+[         0 containers aborted    ]
+[         4 containers successful ]
+[         0 containers failed     ]
+[         3 tests found           ]
+[         0 tests skipped         ]
+[         3 tests started         ]
+[         0 tests aborted         ]
+[         0 tests successful      ]
+[         3 tests failed          ]
+

@@ -3665,6 +3665,7 @@ internal object V2Validator {
         "obj-u26-word-order",
         "obj-u26-letter-writing",
         "obj-u26-correspondence",
+        "obj-u27-passive",
         "obj-u27-stress",
         "obj-u29-punctuation",
         "obj-u28-imperfective-adverb",

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "curriculumFileSha256": "3a3434192dd7cedf9f2faf6f82b6330a1effd2a005d5d65cf8d5ac220c03ac5f",
-  "candidateCount": 74,
+  "curriculumFileSha256": "3c917c1153caa4b1a5d57b4413b3766acf91e7499327e20be7fa39c7f4683cf9",
+  "candidateCount": 72,
   "affectedUnits": [
     3,
     4,
@@ -846,20 +846,6 @@
     },
     {
       "unitNumber": 27,
-      "sessionId": "u27-s-passive",
-      "guidedStepId": "u27-st-guided-passive-1",
-      "guidedItemIds": [
-        "u27-g-passive-0"
-      ],
-      "laterTeachingStepIds": [
-        "u27-st-teach-passive-2",
-        "u27-st-teach-passive-3",
-        "u27-st-teach-passive-4"
-      ],
-      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
-    },
-    {
-      "unitNumber": 27,
       "sessionId": "u27-s-present-passive",
       "guidedStepId": "u27-st-guided-present-passive-1",
       "guidedItemIds": [
@@ -880,18 +866,6 @@
       ],
       "laterTeachingStepIds": [
         "u27-comp-teach-2"
-      ],
-      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
-    },
-    {
-      "unitNumber": 27,
-      "sessionId": "u27-s-stress",
-      "guidedStepId": "u27-stress-guided",
-      "guidedItemIds": [
-        "u27-g-stress-past"
-      ],
-      "laterTeachingStepIds": [
-        "u27-stress-teach-2"
       ],
       "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
     },

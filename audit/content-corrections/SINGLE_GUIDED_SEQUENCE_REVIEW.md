@@ -1,8 +1,8 @@
 # Single-guided session sequence-review candidates
 
-Curriculum file SHA-256: `3a3434192dd7cedf9f2faf6f82b6330a1effd2a005d5d65cf8d5ac220c03ac5f`.
+Curriculum file SHA-256: `3c917c1153caa4b1a5d57b4413b3766acf91e7499327e20be7fa39c7f4683cf9`.
 
-**74 sessions require cue-level sequence review.** The scan finds teaching after the single guided-practice step. It does not establish that every flagged session is defective: each cue, answer and distractor must be checked against the teaching available before that step. Multiple guided-step sessions are outside this scan.
+**72 sessions require cue-level sequence review.** The scan finds teaching after the single guided-practice step. It does not establish that every flagged session is defective: each cue, answer and distractor must be checked against the teaching available before that step. Multiple guided-step sessions are outside this scan.
 
 The inventories reflect the live curriculum. Recent corrected sessions no longer carry their old ordering flags. Their implemented corrections remain pending final semantic audit. This inventory does not close CA009/CA010 or approve any other session.
 
@@ -64,10 +64,8 @@ The inventories reflect the live curriculum. Recent corrected sessions no longer
 | 15 | `u15-s-imperative` | `u15-st-guided-imperative-1` | `u15-st-teach-imperative-2`, `u15-st-teach-imperative-3` |
 | 15 | `u15-s-say-request` | `u15-st-guided-say-request-1` | `u15-st-teach-say-request-2`, `u15-st-teach-say-request-3`, `u15-st-teach-say-request-4` |
 | 15 | `u15-s-aspect-consolidate` | `u15-st-guided-aspect-consolidate-1` | `u15-st-teach-aspect-consolidate-2`, `u15-st-teach-aspect-consolidate-3` |
-| 27 | `u27-s-passive` | `u27-st-guided-passive-1` | `u27-st-teach-passive-2`, `u27-st-teach-passive-3`, `u27-st-teach-passive-4` |
 | 27 | `u27-s-present-passive` | `u27-st-guided-present-passive-1` | `u27-st-teach-present-passive-2` |
 | 27 | `u27-s-gap-comprehension` | `u27-comp-guided` | `u27-comp-teach-2` |
-| 27 | `u27-s-stress` | `u27-stress-guided` | `u27-stress-teach-2` |
 | 28 | `u28-s-readings` | `u28-st-guided-readings-1` | `u28-st-teach-readings-2` |
 | 29 | `u29-s-active` | `u29-st-guided-active-1` | `u29-st-teach-active-2`, `u29-st-teach-active-3` |
 | 29 | `u29-s-short-adjective` | `u29-st-guided-short-adjective-1` | `u29-st-teach-short-adjective-2`, `u29-st-teach-short-adjective-3` |

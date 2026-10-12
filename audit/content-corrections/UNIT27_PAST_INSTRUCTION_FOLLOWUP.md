@@ -1,0 +1,15 @@
+# Unit27 past-passive meaning and stress instruction
+
+Six complete teaching cards precede guided practice across the required past-passive and stress sessions. Remediation restores every explanation and all five passive-form examples plus both required stress examples.
+
+Past-passive teaching explains the affected entity, done/made versus written versus killed, the retained long/short forms, and the writer in the supplied Ivan sentence. Three questions now ask for the action meaning instead of a label’s source position. Feedback explains competing actions. Source-layout recall for this objective now fails the existing concept-check validator. The retained perfective examples are not a universal rule excluding imperfective past passives; this is supplied-form recognition, not a productive algorithm for every verb.
+
+Stress teaching identifies the accented vowel in the two required past forms and compares the retained rejected accents. The guided competing English label changes from ending stress to later-vowel stress: the rejected accent on а is not the final adjective ending. The Russian forms, accepted answer and accent placements are unchanged. The corrected guided application has new exact pending participant bindings. Required past passive, optional non-gating present passive, and Unit29 active-participle boundaries remain unchanged.
+
+Every source capability, original provenance record/hash/license/attribution, Russian cue/example/option and answer key is retained.42 independently authored pending records bind English instruction and the corrected guided stress application. Only two Unit27 sessions and four items change; comprehension and optional present-passive lessons remain for separate work. All30 mapping digests are preserved. No source capability is replaced or newly admitted.
+
+Research uses retained licensed grammar1369617627 and frozen stress applications. Cornell short-form and long-form grammar pages le95_102_h.htm and le103_110_b.htm were fully retrieved2026-10-11. The short-form reading supports passive predication and instrumental agent identification; long forms explain adjective-type interpretation. Gramota transitivity/aspect primary indexed evidence was consulted; its full page returned403. No new Russian, copied source/book prose, audio or source document is packaged.
+
+All work remains IMPLEMENTED_PENDING_FINAL_AUDIT. Supplied form meanings and stress placement do not prove general participle production. No qualified audit acceptance, owner or mapping signature, candidate freeze, merge or release is recorded.
+
+Initial production validation caught unbound standalone vowel letters and two rationales lacking a frozen-evidence citation. The explanations now use second/third-syllable positions and explicitly reference the retained past-passive evidence. Validators and assertions are unchanged. Three new regressions reject the preceding corpus; initial validation evidence is retained. Independent baseline replay produces exact asset bytes and a second application is byte-idempotent.
