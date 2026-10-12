@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit28InstructionTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-12T18:08:11.083Z" hostname="03aee042dd55" time="3.748">
+  <properties/>
+  <testcase name="timingIsRelativeAndTheExplicitMainSubjectPerformsBothActions" classname="dev.russiancompanion.v2.Unit28InstructionTest" time="0.474"/>
+  <testcase name="mutableMetadataCannotDropTheMainClauseFromAContextualCue" classname="dev.russiancompanion.v2.Unit28InstructionTest" time="0.281"/>
+  <testcase name="passageInstructionPrecedesPracticeAndDistinguishesEpisodes" classname="dev.russiancompanion.v2.Unit28InstructionTest" time="0.192"/>
+  <testcase name="newPendingProvenanceAndFullProductionValidationRemainValid" classname="dev.russiancompanion.v2.Unit28InstructionTest" time="2.661"/>
+  <testcase name="remediationRestoresAllCardsAndThePreviouslyOmittedThirdExample" classname="dev.russiancompanion.v2.Unit28InstructionTest" time="0.111"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

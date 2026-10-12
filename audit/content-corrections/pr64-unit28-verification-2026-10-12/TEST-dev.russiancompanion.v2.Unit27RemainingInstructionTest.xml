@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit27RemainingInstructionTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-12T18:08:14.835Z" hostname="03aee042dd55" time="2.184">
+  <properties/>
+  <testcase name="remediationRestoresEveryCardAndExampleWithoutMakingOptionalStudyRequired" classname="dev.russiancompanion.v2.Unit27RemainingInstructionTest" time="0.131"/>
+  <testcase name="pendingInstructionHasBoundProvenanceAndTheProductionValidatorAcceptsIt" classname="dev.russiancompanion.v2.Unit27RemainingInstructionTest" time="1.782"/>
+  <testcase name="comprehensionSeparatesTheWriterFromAnUnspecifiedReaderBeforePractice" classname="dev.russiancompanion.v2.Unit27RemainingInstructionTest" time="0.082"/>
+  <testcase name="optionalPresentTeachingDistinguishesFiniteInfinitiveAndPassiveMeanings" classname="dev.russiancompanion.v2.Unit27RemainingInstructionTest" time="0.085"/>
+  <testcase name="mutableApplicationMetadataCannotRebindTheAlreadyReadCheckToTheWritingCue" classname="dev.russiancompanion.v2.Unit27RemainingInstructionTest" time="0.102"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

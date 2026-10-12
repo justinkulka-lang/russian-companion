@@ -1,0 +1,9 @@
+# Unit28 bounded instruction checkpoint
+
+Independently authored English teaching explains overlapping imperfective actions, normally anterior perfective actions relative to a future main action, and the same-subject condition in the supplied sentences. The public-domain reading explains tiredness from writing, lying down/resting while reading, and the separate standing-with-folded-arms fragment. All seven teaching cards precede practice; remediation restores every card and example, including the third perfective example previously omitted.
+
+Russian examples, cues, options, keys, mappings and all previous provenance remain unchanged. Eighty-one new pending records include 46 revised contextual corpus hosts. The two research corpus spans include new instruction and their original explicit applications; scope, rights, revision and features remain unchanged. The licensed reading capability itself is unchanged. The repair is independently replayable and byte-idempotent.
+
+A negative regression demonstrates that the preceding guard accepted mutable metadata dropping the main clause from a contextual cue without changing the hashed corpus. The exact frozen-array guard now also applies to the two Unit28 contextual capabilities. Five Unit28 and five Unit27 tests pass, including full production validation and rejection of the forged cue. This focused scope is not a complete suite. Four screenshot exporters remain excluded: VisualReviewCaptureTest, Units35ChunkCaptureTest, Units610ChunkCaptureTest, Units1115GapCaptureTest (16 methods).
+
+Review packets and readiness must bind the genuine implementation ancestor, then be verified separately. Units29–30 and other historical application-pair boundaries remain next work. No final linguistic acceptance or original-audit closure is claimed. Galaxy S26 Ultra airplane-mode/reboot acceptance remains outstanding. No merge, freeze, signing or release approval.

@@ -116,8 +116,9 @@ internal fun correctedCapabilityDefects(pack: V2CurriculumPack, cap: V2SourceCap
             fail("duplicate assessment checks do not clear postal-address")
         }
     }
-    if (pin.unit == 27 && pin.claim == "participle-comprehension") {
-        // A known writing cue must not acquire a reading answer through mutable metadata.
+    if ((pin.unit == 27 && pin.claim == "participle-comprehension") ||
+        (pin.unit == 28 && pin.claim in setOf("imperfective-verbal-adverb", "perfective-verbal-adverb"))) {
+        // Contextual cues and answers must stay paired in the hashed corpus, not mutable metadata.
         val frozenApplications = runCatching {
             Json.decodeFromString<List<V2SynthesisApplication>>(cap.exactSpan.substringAfterLast('\n'))
         }.getOrNull()
@@ -127,7 +128,7 @@ internal fun correctedCapabilityDefects(pack: V2CurriculumPack, cap: V2SourceCap
                 application.cue == item.promptLetter && application.answer == item.answer &&
                     application.distractors == item.options.filter { it != item.answer }
             } != 1 }) {
-            fail("is missing its exact independent participial-reading applications")
+            fail("is missing its exact independent contextual applications")
         }
     }
     (objective.instructionStepIds + objective.remediationStepIds).forEach { id ->
