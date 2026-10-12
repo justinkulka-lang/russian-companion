@@ -21,5 +21,6 @@
   "frozenResearchFiles": {
     "catalog/sources/units-3-5/openrussian/nouns.csv": "c388f9e6dde51932832be8d7e9afdbe9f0acee72fcf70677f0fe25ea61293c84",
     "catalog/sources/units-3-5/wikibooks/nominative-4213267.txt": "c00d0dbe20bde2abd3aae63d08bf6a3f5a291f5cbfcd0cea5c853af04a6e1c84"
-  }
+  },
+  "definitionPresentInRetainedPublicRevision": true
 }

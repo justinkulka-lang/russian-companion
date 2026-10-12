@@ -1,8 +1,6 @@
 {
   "schemaVersion": 1,
   "originalAuditTarget": "ebd71fd0d1226a5ce3ec9a310bb3638c3bc34fb9",
-  "implementationCommit": "4f5cb8024d3f68a37052fdf85b5755bffa2a0904",
-  "packetCheckpoint": "49af91a0f5578c63a3b9b98bbe975f40d2758fcc",
   "findings": [
     {
       "findingId": "IA001",
@@ -136,10 +134,13 @@
   "semanticAcceptancePromoted": false,
   "physicalDeviceAcceptance": "OUTSTANDING",
   "release": "NOT_APPROVED",
-  "latestValidatorImplementationCommit": "2912ef51c1d38ba4aafea28fe86d24ad891a9058",
-  "latestSourceBindingCheckpoint": "44c5bda241e430deb5969738f947be6cf880da11",
+  "latestValidatorImplementationCommit": "7873c4794c65d06dacf8f80bcb8fcbf110f975b3",
+  "latestSourceBindingCheckpoint": "25378fedd85c7c973ecf3decf1e9396078f63e2f",
   "remainingSourceReviewPointers": [
     "IA007_SOURCE_REVIEW_PENDING.md",
     "IA008_SOURCE_REVIEW_PENDING.md"
-  ]
+  ],
+  "firstBatchImplementationCommit": "4f5cb8024d3f68a37052fdf85b5755bffa2a0904",
+  "firstBatchPacketCheckpoint": "49af91a0f5578c63a3b9b98bbe975f40d2758fcc",
+  "latestCurriculumImplementationCommit": "7873c4794c65d06dacf8f80bcb8fcbf110f975b3"
 }
