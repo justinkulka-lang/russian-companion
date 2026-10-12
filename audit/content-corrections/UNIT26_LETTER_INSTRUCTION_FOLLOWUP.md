@@ -11,3 +11,9 @@ Three new regressions pass and reject the exact preceding corpus. Production val
 All units remain in development, review and mappings unsigned, candidate unfrozen and public release unapproved. No qualified audit/merge/freeze/device acceptance/release is recorded. Android CI is separate from host checks.
 
 The historical universal letter span is now explicitly retired as a capability while retained as provenance. Restoring it cannot clear the letter-writing requirement. Exact pending correction admission preserves greeting-only and postal cross-claim rejection diagnostics and all original identity/span guards.
+
+Implementation ancestor: `8641d0e4f07bb8b0d393fca8e088959db43698cf`. All 30 packets bind this ancestor; only Unit 26 instructional digest changes; all mapping digests are preserved. Review-package digest expectations are refreshed because the implementation commit is a package input.
+
+Repository-source digest: `c57dde2820eeaf9ec14f3325b749dcd08d98bbb48d67d8bdd5f0ddd3c12e9d19`. Pack content-review digest: `8e734423a87e4ddf7ba4d71c376a97750bb8014b3a72d0ff516ea58e167af51f`.
+
+Final verification:50 distinct passing host methods from XML,22 focused plus28 binding/governance. This includes exact pending admission and retired-source/identity/key/greeting-only/postal cross-claim rejection, complete remediation, production generator byte equality and genuine source-commit ancestry. Three new regressions reject the exact preceding corpus. Only Unit26 content changes; every original record and all30 mapping digests remain intact. Live inventories resolve75 targets with0 semantic acceptance and80 single-guided candidates. Full Android CI remains separate at the published head.

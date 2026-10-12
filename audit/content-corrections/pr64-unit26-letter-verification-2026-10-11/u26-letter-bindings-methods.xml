@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="JUnit Vintage" tests="28" skipped="0" failures="0" errors="0" time="109.032" hostname="f4961bf23936" timestamp="2026-10-12T11:02:11">
+<properties>
+<property name="file.encoding" value="UTF-8"/>
+<property name="file.separator" value="/"/>
+<property name="java.class.path" value="/workspace/scratch/80cc9aca57ee/audit_work/tools/junit-platform-console-standalone-1.11.4.jar"/>
+<property name="java.class.version" value="61.0"/>
+<property name="java.home" value="/usr/lib/jvm/java-17-openjdk-amd64"/>
+<property name="java.io.tmpdir" value="/tmp"/>
+<property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+<property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+<property name="java.runtime.version" value="17.0.20+8-1-24.04-Ubuntu"/>
+<property name="java.specification.maintenance.version" value="1"/>
+<property name="java.specification.name" value="Java Platform API Specification"/>
+<property name="java.specification.vendor" value="Oracle Corporation"/>
+<property name="java.specification.version" value="17"/>
+<property name="java.vendor" value="Ubuntu"/>
+<property name="java.vendor.url" value="https://ubuntu.com/"/>
+<property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-17"/>
+<property name="java.version" value="17.0.20"/>
+<property name="java.version.date" value="2026-07-21"/>
+<property name="java.vm.compressedOopsMode" value="Zero based"/>
+<property name="java.vm.info" value="mixed mode, sharing"/>
+<property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+<property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+<property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+<property name="java.vm.specification.version" value="17"/>
+<property name="java.vm.vendor" value="Ubuntu"/>
+<property name="java.vm.version" value="17.0.20+8-1-24.04-Ubuntu"/>
+<property name="jdk.debug" value="release"/>
+<property name="junit.docs.version" value="1.11.4"/>
+<property name="line.separator" value="&#10;"/>
+<property name="native.encoding" value="UTF-8"/>
+<property name="os.arch" value="amd64"/>
+<property name="os.name" value="Linux"/>
+<property name="os.version" value="6.18.44"/>
+<property name="path.separator" value=":"/>
+<property name="sun.arch.data.model" value="64"/>
+<property name="sun.boot.library.path" value="/usr/lib/jvm/java-17-openjdk-amd64/lib"/>
+<property name="sun.cpu.endian" value="little"/>
+<property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+<property name="sun.java.command" value="/workspace/scratch/80cc9aca57ee/audit_work/tools/junit-platform-console-standalone-1.11.4.jar execute --class-path /workspace/scratch/af145931b52c/current-ci/u26-letter-bindings-host-tests.jar:/workspace/scratch/af145931b52c/host-verification/current-tests.jar:/workspace/scratch/af145931b52c/host-verification/tests.jar:/workspace/scratch/80cc9aca57ee/audit_work/tools/trove4j-1.0.20200330.jar:/workspace/scratch/80cc9aca57ee/audit_work/tools/kotlin-compiler-embeddable-2.0.21.jar:/workspace/scratch/80cc9aca57ee/audit_work/tools/kotlin-test-2.0.21.jar:/workspace/scratch/80cc9aca57ee/audit_work/tools/kotlin-reflect-1.6.10.jar:/workspace/scratch/80cc9aca57ee/audit_work/tools/kotlinx-coroutines-core-jvm-1.6.4.jar:/workspace/scratch/80cc9aca57ee/audit_work/tools/kotlin-daemon-embeddable-2.0.21.jar:/workspace/scratch/80cc9aca57ee/audit_work/tools/junit-platform-console-standalone-1.11.4.jar:/workspace/scratch/80cc9aca57ee/audit_work/tools/kotlin-stdlib-2.0.21.jar:/workspace/scratch/80cc9aca57ee/audit_work/tools/annotations-13.0.jar:/workspace/scratch/80cc9aca57ee/audit_work/tools/kotlin-test-junit5-2.0.21.jar:/workspace/scratch/80cc9aca57ee/audit_work/tools/kotlin-script-runtime-2.0.21.jar:/workspace/scratch/af145931b52c/host-tools/kotlinx-serialization-core-jvm-1.7.3.jar:/workspace/scratch/af145931b52c/host-tools/kotlin-serialization-compiler-plugin-embeddable-2.0.21.jar:/workspace/scratch/af145931b52c/host-tools/kotlinx-serialization-json-jvm-1.7.3.jar --details summary --reports-dir /workspace/scratch/af145931b52c/current-ci/u26-letter-bindings-reports --select-method dev.russiancompanion.v2.Units610SourceIntakeTest#earlierUnitDigestsStayPutAndLaterUnitsStayIsolated --select-method dev.russiancompanion.v2.Units2125SourceIntakeTest#structuralMappingsAreDigestBoundAndStayUnsigned --select-method dev.russiancompanion.v2.Units2630SourceIntakeTest#generatedRussianPenguinAudioAndReleaseStayClosed --select-method dev.russiancompanion.v2.BatchECapabilityResearchTest#digestsGovernanceAndLaterUnitsStayUnchanged --select-method dev.russiancompanion.v2.review.UnitReviewPipelineTest#committedUnitPackagesMatchTheGenerator --select-method dev.russiancompanion.v2.review.UnitReviewPipelineTest#curriculumSourceCommitMustContainTheGovernedCurriculum --select-method dev.russiancompanion.v2.review.UnitReviewPipelineTest#unitOneAndUnitTwoPackagesStayIsolated --select-method dev.russiancompanion.v2.review.UnitReviewPipelineTest#aLaterUnitMutationDoesNotApproveOrInvalidateAnEarlierUnit --select-method dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest#committedReportsMatchTheGeneratorAndStayByteIdentical --select-class dev.russiancompanion.v2.audit.GapClosureDossierTest --select-method dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest#preparationManifestBindsFactsAndDoesNotPassAFinalAudit --select-method dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest#unresolvedSourceCapabilitiesStayEmptyAndVarianceUnitsStayUnprepared --select-method dev.russiancompanion.v2.audit.PostPr53ReadinessReconciliationTest#reportMatrixMatchesTheLiveCurriculum --select-method dev.russiancompanion.acceptance.DeviceAcceptancePackageTest#physicalDevicePackageStaysUnexecutedAndDoesNotApproveRelease --select-class dev.russiancompanion.release.ReleaseSourceDigestTest"/>
+<property name="sun.java.launcher" value="SUN_STANDARD"/>
+<property name="sun.jnu.encoding" value="UTF-8"/>
+<property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+<property name="user.dir" value="/workspace/scratch/af145931b52c/current-ci/repo"/>
+<property name="user.home" value="/root"/>
+<property name="user.language" value="en"/>
+<property name="user.name" value="root"/>
+<property name="user.timezone" value="Australia/Brisbane"/>
+</properties>
+<testcase name="dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease" classname="dev.russiancompanion.v2.audit.GapClosureDossierTest" time="11.63">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.audit.GapClosureDossierTest]/[test:dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease(dev.russiancompanion.v2.audit.GapClosureDossierTest)]
+display-name: dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease
+]]></system-out>
+</testcase>
+<testcase name="aLaterUnitMutationDoesNotApproveOrInvalidateAnEarlierUnit" classname="dev.russiancompanion.v2.review.UnitReviewPipelineTest" time="0.734">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.review.UnitReviewPipelineTest]/[test:aLaterUnitMutationDoesNotApproveOrInvalidateAnEarlierUnit(dev.russiancompanion.v2.review.UnitReviewPipelineTest)]
+display-name: aLaterUnitMutationDoesNotApproveOrInvalidateAnEarlierUnit
+]]></system-out>
+</testcase>
+<testcase name="unresolvedSourceCapabilitiesStayEmptyAndVarianceUnitsStayUnprepared" classname="dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest" time="4.059">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest]/[test:unresolvedSourceCapabilitiesStayEmptyAndVarianceUnitsStayUnprepared(dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest)]
+display-name: unresolvedSourceCapabilitiesStayEmptyAndVarianceUnitsStayUnprepared
+]]></system-out>
+</testcase>
+<testcase name="retainedEvidenceIsRejectedAfterAVersionIdentityChange" classname="dev.russiancompanion.release.ReleaseSourceDigestTest" time="0.067">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.release.ReleaseSourceDigestTest]/[test:retainedEvidenceIsRejectedAfterAVersionIdentityChange(dev.russiancompanion.release.ReleaseSourceDigestTest)]
+display-name: retainedEvidenceIsRejectedAfterAVersionIdentityChange
+]]></system-out>
+</testcase>
+<testcase name="generatedRussianPenguinAudioAndReleaseStayClosed" classname="dev.russiancompanion.v2.Units2630SourceIntakeTest" time="4.565">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.Units2630SourceIntakeTest]/[test:generatedRussianPenguinAudioAndReleaseStayClosed(dev.russiancompanion.v2.Units2630SourceIntakeTest)]
+display-name: generatedRussianPenguinAudioAndReleaseStayClosed
+]]></system-out>
+</testcase>
+<testcase name="changingAnAcceptanceProcedureInvalidatesPriorEvidence" classname="dev.russiancompanion.release.ReleaseSourceDigestTest" time="0.054">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.release.ReleaseSourceDigestTest]/[test:changingAnAcceptanceProcedureInvalidatesPriorEvidence(dev.russiancompanion.release.ReleaseSourceDigestTest)]
+display-name: changingAnAcceptanceProcedureInvalidatesPriorEvidence
+]]></system-out>
+</testcase>
+<testcase name="curriculumSourceCommitMustContainTheGovernedCurriculum" classname="dev.russiancompanion.v2.review.UnitReviewPipelineTest" time="6.083">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.review.UnitReviewPipelineTest]/[test:curriculumSourceCommitMustContainTheGovernedCurriculum(dev.russiancompanion.v2.review.UnitReviewPipelineTest)]
+display-name: curriculumSourceCommitMustContainTheGovernedCurriculum
+]]></system-out>
+</testcase>
+<testcase name="aNullArtifactIdentityCannotApproveRelease" classname="dev.russiancompanion.release.ReleaseSourceDigestTest" time="0.036">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.release.ReleaseSourceDigestTest]/[test:aNullArtifactIdentityCannotApproveRelease(dev.russiancompanion.release.ReleaseSourceDigestTest)]
+display-name: aNullArtifactIdentityCannotApproveRelease
+]]></system-out>
+</testcase>
+<testcase name="committedUnitPackagesMatchTheGenerator" classname="dev.russiancompanion.v2.review.UnitReviewPipelineTest" time="28.962">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.review.UnitReviewPipelineTest]/[test:committedUnitPackagesMatchTheGenerator(dev.russiancompanion.v2.review.UnitReviewPipelineTest)]
+display-name: committedUnitPackagesMatchTheGenerator
+]]></system-out>
+</testcase>
+<testcase name="retainedEvidenceIsRejectedAfterAGradleChange" classname="dev.russiancompanion.release.ReleaseSourceDigestTest" time="0.064">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.release.ReleaseSourceDigestTest]/[test:retainedEvidenceIsRejectedAfterAGradleChange(dev.russiancompanion.release.ReleaseSourceDigestTest)]
+display-name: retainedEvidenceIsRejectedAfterAGradleChange
+]]></system-out>
+</testcase>
+<testcase name="failedFrozenV110CandidateCannotAuthorizeV111" classname="dev.russiancompanion.release.ReleaseSourceDigestTest" time="0.036">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.release.ReleaseSourceDigestTest]/[test:failedFrozenV110CandidateCannotAuthorizeV111(dev.russiancompanion.release.ReleaseSourceDigestTest)]
+display-name: failedFrozenV110CandidateCannotAuthorizeV111
+]]></system-out>
+</testcase>
+<testcase name="retainedEvidenceIsRejectedAfterAResourceChange" classname="dev.russiancompanion.release.ReleaseSourceDigestTest" time="0.059">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.release.ReleaseSourceDigestTest]/[test:retainedEvidenceIsRejectedAfterAResourceChange(dev.russiancompanion.release.ReleaseSourceDigestTest)]
+display-name: retainedEvidenceIsRejectedAfterAResourceChange
+]]></system-out>
+</testcase>
+<testcase name="committedCandidateRecordsTheCurrentSourceDigestAndIdentity" classname="dev.russiancompanion.release.ReleaseSourceDigestTest" time="3.562">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.release.ReleaseSourceDigestTest]/[test:committedCandidateRecordsTheCurrentSourceDigestAndIdentity(dev.russiancompanion.release.ReleaseSourceDigestTest)]
+display-name: committedCandidateRecordsTheCurrentSourceDigestAndIdentity
+]]></system-out>
+</testcase>
+<testcase name="physicalDevicePackageStaysUnexecutedAndDoesNotApproveRelease" classname="dev.russiancompanion.acceptance.DeviceAcceptancePackageTest" time="1.519">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.acceptance.DeviceAcceptancePackageTest]/[test:physicalDevicePackageStaysUnexecutedAndDoesNotApproveRelease(dev.russiancompanion.acceptance.DeviceAcceptancePackageTest)]
+display-name: physicalDevicePackageStaysUnexecutedAndDoesNotApproveRelease
+]]></system-out>
+</testcase>
+<testcase name="mismatchedApkHashRejectsRetainedEvidence" classname="dev.russiancompanion.release.ReleaseSourceDigestTest" time="0.153">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.release.ReleaseSourceDigestTest]/[test:mismatchedApkHashRejectsRetainedEvidence(dev.russiancompanion.release.ReleaseSourceDigestTest)]
+display-name: mismatchedApkHashRejectsRetainedEvidence
+]]></system-out>
+</testcase>
+<testcase name="retainedEvidenceIsRejectedAfterACatalogChange" classname="dev.russiancompanion.release.ReleaseSourceDigestTest" time="0.094">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.release.ReleaseSourceDigestTest]/[test:retainedEvidenceIsRejectedAfterACatalogChange(dev.russiancompanion.release.ReleaseSourceDigestTest)]
+display-name: retainedEvidenceIsRejectedAfterACatalogChange
+]]></system-out>
+</testcase>
+<testcase name="unitOneAndUnitTwoPackagesStayIsolated" classname="dev.russiancompanion.v2.review.UnitReviewPipelineTest" time="6.968">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.review.UnitReviewPipelineTest]/[test:unitOneAndUnitTwoPackagesStayIsolated(dev.russiancompanion.v2.review.UnitReviewPipelineTest)]
+display-name: unitOneAndUnitTwoPackagesStayIsolated
+]]></system-out>
+</testcase>
+<testcase name="digestsGovernanceAndLaterUnitsStayUnchanged" classname="dev.russiancompanion.v2.BatchECapabilityResearchTest" time="8.771">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.BatchECapabilityResearchTest]/[test:digestsGovernanceAndLaterUnitsStayUnchanged(dev.russiancompanion.v2.BatchECapabilityResearchTest)]
+display-name: digestsGovernanceAndLaterUnitsStayUnchanged
+]]></system-out>
+</testcase>
+<testcase name="retainedEvidenceIsRejectedAfterAnAudioChange" classname="dev.russiancompanion.release.ReleaseSourceDigestTest" time="0.063">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.release.ReleaseSourceDigestTest]/[test:retainedEvidenceIsRejectedAfterAnAudioChange(dev.russiancompanion.release.ReleaseSourceDigestTest)]
+display-name: retainedEvidenceIsRejectedAfterAnAudioChange
+]]></system-out>
+</testcase>
+<testcase name="changingReleaseInputsChangesTheDigestAndLeavesEvidenceExcluded" classname="dev.russiancompanion.release.ReleaseSourceDigestTest" time="0.817">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.release.ReleaseSourceDigestTest]/[test:changingReleaseInputsChangesTheDigestAndLeavesEvidenceExcluded(dev.russiancompanion.release.ReleaseSourceDigestTest)]
+display-name: changingReleaseInputsChangesTheDigestAndLeavesEvidenceExcluded
+]]></system-out>
+</testcase>
+<testcase name="reportMatrixMatchesTheLiveCurriculum" classname="dev.russiancompanion.v2.audit.PostPr53ReadinessReconciliationTest" time="8.498">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.audit.PostPr53ReadinessReconciliationTest]/[test:reportMatrixMatchesTheLiveCurriculum(dev.russiancompanion.v2.audit.PostPr53ReadinessReconciliationTest)]
+display-name: reportMatrixMatchesTheLiveCurriculum
+]]></system-out>
+</testcase>
+<testcase name="anUnfrozenCandidateCannotApproveRelease" classname="dev.russiancompanion.release.ReleaseSourceDigestTest" time="0.037">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.release.ReleaseSourceDigestTest]/[test:anUnfrozenCandidateCannotApproveRelease(dev.russiancompanion.release.ReleaseSourceDigestTest)]
+display-name: anUnfrozenCandidateCannotApproveRelease
+]]></system-out>
+</testcase>
+<testcase name="committedReportsMatchTheGeneratorAndStayByteIdentical" classname="dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest" time="8.685">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest]/[test:committedReportsMatchTheGeneratorAndStayByteIdentical(dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest)]
+display-name: committedReportsMatchTheGeneratorAndStayByteIdentical
+]]></system-out>
+</testcase>
+<testcase name="structuralMappingsAreDigestBoundAndStayUnsigned" classname="dev.russiancompanion.v2.Units2125SourceIntakeTest" time="5.415">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.Units2125SourceIntakeTest]/[test:structuralMappingsAreDigestBoundAndStayUnsigned(dev.russiancompanion.v2.Units2125SourceIntakeTest)]
+display-name: structuralMappingsAreDigestBoundAndStayUnsigned
+]]></system-out>
+</testcase>
+<testcase name="retainedEvidenceIsRejectedAfterAKotlinChange" classname="dev.russiancompanion.release.ReleaseSourceDigestTest" time="0.064">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.release.ReleaseSourceDigestTest]/[test:retainedEvidenceIsRejectedAfterAKotlinChange(dev.russiancompanion.release.ReleaseSourceDigestTest)]
+display-name: retainedEvidenceIsRejectedAfterAKotlinChange
+]]></system-out>
+</testcase>
+<testcase name="earlierUnitDigestsStayPutAndLaterUnitsStayIsolated" classname="dev.russiancompanion.v2.Units610SourceIntakeTest" time="7.187">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.Units610SourceIntakeTest]/[test:earlierUnitDigestsStayPutAndLaterUnitsStayIsolated(dev.russiancompanion.v2.Units610SourceIntakeTest)]
+display-name: earlierUnitDigestsStayPutAndLaterUnitsStayIsolated
+]]></system-out>
+</testcase>
+<testcase name="preparationManifestBindsFactsAndDoesNotPassAFinalAudit" classname="dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest" time="0.726">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest]/[test:preparationManifestBindsFactsAndDoesNotPassAFinalAudit(dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest)]
+display-name: preparationManifestBindsFactsAndDoesNotPassAFinalAudit
+]]></system-out>
+</testcase>
+<testcase name="mismatchedCandidateCommitRejectsRetainedEvidence" classname="dev.russiancompanion.release.ReleaseSourceDigestTest" time="0.093">
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]/[runner:dev.russiancompanion.release.ReleaseSourceDigestTest]/[test:mismatchedCandidateCommitRejectsRetainedEvidence(dev.russiancompanion.release.ReleaseSourceDigestTest)]
+display-name: mismatchedCandidateCommitRejectsRetainedEvidence
+]]></system-out>
+</testcase>
+<system-out><![CDATA[
+unique-id: [engine:junit-vintage]
+display-name: JUnit Vintage
+]]></system-out>
+</testsuite>

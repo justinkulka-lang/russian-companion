@@ -11,12 +11,12 @@ Unit 26 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: a66de8c4f768d96dbb2436c598adf1d7290910d5
-- Unit content-review SHA-256: 64812803d45e4bad57dca03ad3622e809001a8a84435a218a85c0be58bdc642c
+- Curriculum source commit: 8641d0e4f07bb8b0d393fca8e088959db43698cf
+- Unit content-review SHA-256: 2f489cf9a83d3697f87a8500cd2446ba5f88ffcd3e77707f81bf4f4122fe1906
 - Mapping-package SHA-256: c15db22cc82dcfa6c49d6d0e50beea0f90b16dfc4db90777623e99d540790489
-- Pack content-review SHA-256: ba8b4c83a9216302a8c193bbffefaee67f228cb37572ed9c3dce154dc2fcbca8
-- Review-package SHA-256: 9fad6f9a9251d56ba02da67e89b212c00c2fd1a3781743e9288aa737fac27cd6
-- Repository source SHA-256: 05f4c3dad0f9c593f9223e7af65bba7757b9f4c28228b49e578fb1fe4c580cd8
+- Pack content-review SHA-256: 8e734423a87e4ddf7ba4d71c376a97750bb8014b3a72d0ff516ea58e167af51f
+- Review-package SHA-256: 17b868d7ffa538c6e80c1a8900fe04d13b5f8359ff4b42be99fd92a0e72b72b1
+- Repository source SHA-256: c57dde2820eeaf9ec14f3325b749dcd08d98bbb48d67d8bdd5f0ddd3c12e9d19
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -189,9 +189,9 @@ remediation=u26-st-rem-indefinite
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 21255c5977ade66e5cbf6f1770e0ec41be036b242890cf724faecfa5f59b08ae
+- Content hash: 147418b90ab1b08b1a5ab66e80acc0e386e8d69fef472f9576831149042d2ad0
 
-title=Apply the admitted letter convention
+title=Apply a supplied letter framework without universal style rules
 kind=RECOGNITION
 unitNumber=26
 instruction=u26-st-orient,u26-st-teach-letter-writing-1,u26-st-teach-letter-writing-2
@@ -912,12 +912,12 @@ remediationStepId=u26-st-rem-indefinite
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f523ae2383edea7b54fcbdf15b26d40da5705a973b99a47db026b342aff7a76a
+- Content hash: 167da4950eb508709927da10d6cd8440d70d438ff08b0676fa4de0c4f9545aa6
 
-title=Apply the admitted letter convention
+title=Apply a supplied letter framework without universal style rules
 estimatedMinutes=12
 objectives=obj-u26-letter-writing
-steps=u26-st-teach-letter-writing-1,u26-st-guided-letter-writing-1,u26-st-teach-letter-writing-2,u26-st-rem-letter-writing,u26-st-check-letter-writing
+steps=u26-st-teach-letter-writing-1,u26-st-teach-letter-writing-2,u26-st-guided-letter-writing-1,u26-st-rem-letter-writing,u26-st-check-letter-writing
 
 ### STEP `u26-st-teach-letter-writing-1`
 
@@ -927,15 +927,37 @@ steps=u26-st-teach-letter-writing-1,u26-st-guided-letter-writing-1,u26-st-teach-
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 60a9f3c505bbd456d562838e0bf6010cf4aef70aa50b1e8db08e6fb9360e98d1
+- Content hash: dee8f0f7d6fa98f2c45793857c0ad2d0333fec80bd4ce771f85da9f4e83c3b3e
 
 kind=TEACH
-title=Admitted lines
-body=Read the admitted examples on this card.
+title=Organize the supplied problem-and-request letter
+body=In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
 examples=ex-u26-letter-writing-0,ex-u26-letter-writing-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u26-st-teach-letter-writing-2`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-letter-writing
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: e5439997f9140d8e7779e69c8a6ea35504c22dca94e07e69711f1e5d74827cb6
+
+kind=TEACH
+title=Distinguish the greeting, body and closing
+body=Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -949,11 +971,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: fc9d6d14f6afe2600bbd10fe597576e2547deb261037a45c15753944639a3133
+- Content hash: 5576e97105ba64c7d3128b669cf3b930f4547b03532b885faf08c2aee2b45679
 
 kind=GUIDED
 title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
+body=Use the supplied framework and the conversational function of each letter part. A miss returns to the complete explanation.
 dominantAction=Continue
 references=
 items=u26-g-letter-writing-0
@@ -963,28 +985,6 @@ bookDirection=
 companionDirection=
 remediationStepId=u26-st-rem-letter-writing
 
-### STEP `u26-st-teach-letter-writing-2`
-
-- Objectives: obj-u26-letter-writing
-- Sessions: u26-s-letter-writing
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 41a9bf32cc6483f83aa8c75b18dd8a0b3f4fd95f57193899f9cbb5a21377df02
-
-kind=TEACH
-title=Admitted instruction
-body=One reviewed letter genre can open with the sender address and date, then a greeting, a body, and a closing. That order is not a universal rule for every Russian letter, and a ban on dear is not universal.
-dominantAction=Continue
-references=ref-u2630-attribution
-items=
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
 ### STEP `u26-st-rem-letter-writing`
 
 - Objectives: obj-u26-letter-writing
@@ -993,11 +993,13 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 374fbf8b7cae90aaa9073c9a3ffcb4b9361746599f359b61de29f8f91c07ee0d
+- Content hash: 035986137a2a29c7298acbb63290dd9757086f6e467f74fc97d0c21f7b7b74b1
 
 kind=REMEDIATE
-title=Remediation
-body=One reviewed letter genre can open with the sender address and date, then a greeting, a body, and a closing. That order is not a universal rule for every Russian letter, and a ban on dear is not universal.
+title=Review the full letter framework and greeting distinction
+body=In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
 dominantAction=Continue
 references=
 items=
@@ -1015,11 +1017,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 9ee5499f064014e6a4812bf1722b366fda2ad263b63af075ca71c0a6418b6630
+- Content hash: e4455defce2c5639ec3aea1a3f6f2272c0751c0563381becf6962dec00f82957
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Use the supplied framework and the conversational function of each letter part. A miss returns to the complete explanation.
 dominantAction=Continue
 references=
 items=u26-i-letter-writing-1,u26-i-letter-writing-2
@@ -1910,35 +1912,35 @@ responseKind=RUSSIAN_PHRASE
 
 - Objectives: obj-u26-letter-writing
 - Sessions: u26-s-letter-writing
-- Source: src-readyrussian-letter
-- Rights: rights-readyrussian-letter
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 45fa1a005d5702e596ca4c11c47497ad7587a6828d0a74885caba6ab59f33d6a
+- Content hash: 171db4d70d25d6e39b42beb97df0dda5979c47629a09a64c75fc3ec501cb8cdb
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English statement is the Russian organizational difference?
-promptLetter=In English we begin with a topic sentence and then follow with supporting facts.
-options=In Russian the facts come first with the topic sentence as the conclusion. | Strangers and people who are not closed friends should never be addressed as “dear”.
-answer=In Russian the facts come first with the topic sentence as the conclusion.
-feedback=The source states In English we begin with a topic sentence and then follow with supporting facts. In Russian the facts come first with the topic sentence as the conclusion.
+prompt=Which English plan fits the supplied problem-and-request framework?
+promptLetter=a letter explaining a problem and requesting action
+options=state the reason, explain relevant facts, then make the request | every Russian letter must put its main point last
+answer=state the reason, explain relevant facts, then make the request
+feedback=The cue is a letter explaining a problem and requesting action. In the supplied framework, state the reason, explain relevant facts, then make the request. That organization supports this particular purpose; it is not a universal national word-order rule.
 objectiveId=obj-u26-letter-writing
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The source states Strangers and people who are not closed friends should never be addressed as “dear”. That is the address limit, not the organizational difference.
+distractorRationales= | every Russian letter must put its main point last overgeneralizes from one framework to all letters and purposes.
 testedFeature=LETTER_ORGANIZATION
 evidenceMode=STATED_APPLICATION
 contrastSetId=u26-letter-writing-0
 cueLanguage=rule
 independent=false
-answerSourceIds=prov-u26-letter-writing-x-1
-distractorSourceIds= | prov-u26-letter-writing-x-2
-distractorDifference= | The source states Strangers and people who are not closed friends should never be addressed as “dear”. That is the address limit, not the organizational difference.
-whyAnswerDemonstratesObjective=The source states In English we begin with a topic sentence and then follow with supporting facts. In Russian the facts come first with the topic sentence as the conclusion.
-contrastMembers=In Russian the facts come first with the topic sentence as the conclusion. | Strangers and people who are not closed friends should never be addressed as “dear”.
+answerSourceIds=prov-ca-u26-letter-label-14
+distractorSourceIds= | prov-ca-u26-letter-label-15
+distractorDifference= | every Russian letter must put its main point last overgeneralizes from one framework to all letters and purposes.
+whyAnswerDemonstratesObjective=The cue is a letter explaining a problem and requesting action. In the supplied framework, state the reason, explain relevant facts, then make the request. That organization supports this particular purpose; it is not a universal national word-order rule.
+contrastMembers=state the reason, explain relevant facts, then make the request | every Russian letter must put its main point last
 relationKind=STATED_APPLICATION
-relationParticipantIds=prov-u26-letter-writing-x-0 | prov-u26-letter-writing-x-1 | prov-u26-letter-writing-x-2
+relationParticipantIds=prov-ca-u26-letter-label-12 | prov-ca-u26-letter-label-14 | prov-ca-u26-letter-label-15
 responseKind=ENGLISH_CLASSIFICATION
 
 ### GUIDED_PRACTICE `u26-g-correspondence-0`
@@ -2295,70 +2297,70 @@ responseKind=RUSSIAN_PHRASE
 
 - Objectives: obj-u26-letter-writing
 - Sessions: u26-s-letter-writing
-- Source: src-readyrussian-letter
-- Rights: rights-readyrussian-letter
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: f6a575a1973836288426e5c8c9fe9ce663d033fb5dc374410a9c5875d7453900
+- Content hash: 3579859473de133d61f67c336a704a6e6001619dfdedf35cc7c9ea715ba30139
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English limit applies to the shown neutral greeting?
+prompt=Which English inference is supported by the shown neutral greeting?
 promptLetter=Здравствуйте!
-options=Strangers and people who are not closed friends should never be addressed as “dear”. | In Russian the facts come first with the topic sentence as the conclusion.
-answer=Strangers and people who are not closed friends should never be addressed as “dear”.
-feedback=The source states Strangers and people who are not closed friends should never be addressed as “dear”. The shown greeting is Здравствуйте!
+options=a greeting, not a rule about how close the recipient is | every unfamiliar recipient forbids any greeting translated as dear
+answer=a greeting, not a rule about how close the recipient is
+feedback=Здравствуйте! supports a greeting, not a rule about how close the recipient is. Its greeting function does not establish an absolute prohibition based on an English salutation translation.
 objectiveId=obj-u26-letter-writing
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The source states In Russian the facts come first with the topic sentence as the conclusion. That is the organizational difference, not the address limit.
+distractorRationales= | every unfamiliar recipient forbids any greeting translated as dear is not established by the meaning of Здравствуйте!; a greeting does not determine every relationship or register.
 testedFeature=LETTER_ADDRESS_LIMIT
 evidenceMode=STATED_APPLICATION
 contrastSetId=u26-letter-writing-1
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-u26-letter-writing-x-2
-distractorSourceIds= | prov-u26-letter-writing-x-1
-distractorDifference= | The source states In Russian the facts come first with the topic sentence as the conclusion. That is the organizational difference, not the address limit.
-whyAnswerDemonstratesObjective=The source states Strangers and people who are not closed friends should never be addressed as “dear”. The shown greeting is Здравствуйте!
-contrastMembers=Strangers and people who are not closed friends should never be addressed as “dear”. | In Russian the facts come first with the topic sentence as the conclusion.
+answerSourceIds=prov-ca-u26-letter-label-20
+distractorSourceIds= | prov-ca-u26-letter-label-21
+distractorDifference= | every unfamiliar recipient forbids any greeting translated as dear is not established by the meaning of Здравствуйте!; a greeting does not determine every relationship or register.
+whyAnswerDemonstratesObjective=Здравствуйте! supports a greeting, not a rule about how close the recipient is. Its greeting function does not establish an absolute prohibition based on an English salutation translation.
+contrastMembers=a greeting, not a rule about how close the recipient is | every unfamiliar recipient forbids any greeting translated as dear
 relationKind=STATED_APPLICATION
-relationParticipantIds=prov-ex-u26-letter-writing-0-ru | prov-u26-letter-writing-x-2 | prov-u26-letter-writing-x-1
+relationParticipantIds=prov-ca-u26-letter-label-18 | prov-ca-u26-letter-label-20 | prov-ca-u26-letter-label-21
 responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u26-i-letter-writing-2`
 
 - Objectives: obj-u26-letter-writing
 - Sessions: u26-s-letter-writing
-- Source: src-readyrussian-letter
-- Rights: rights-readyrussian-letter
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 620d5918b64b2cb0e64f612a6e34f4f51dcf9712dff324c4359aeed75d109bf9
+- Content hash: 4c7cd7dc7830da28d84fec97ab7dbfbfd6528d1ba2b64c519d40287fa0acab0e
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English element follows the body?
+prompt=In the supplied letter layout, which English element follows the body?
 promptLetter=Body
 options=Closing and signature | Greeting | Sender’s address and date
 answer=Closing and signature
-feedback=The source names Body. The source names Closing and signature. They have the same basic elements:
+feedback=In the supplied layout, Body is followed by Closing and signature. This identifies the next part of the demonstrated framework rather than prescribing every possible letter format.
 objectiveId=obj-u26-letter-writing
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The source names Greeting. That element does not follow the body. | The source names Sender’s address and date. That element does not follow the body.
+distractorRationales= | Greeting introduces the reader-facing salutation before the body in this supplied layout. | Sender’s address and date identifies the sender and date before the greeting and body in this supplied layout.
 testedFeature=LETTER_STRUCTURE
 evidenceMode=STATED_APPLICATION
 contrastSetId=u26-letter-writing-2
 cueLanguage=rule
 independent=true
-answerSourceIds=prov-u26-letter-writing-x-4
-distractorSourceIds= | prov-u26-letter-writing-x-5 | prov-u26-letter-writing-x-6
-distractorDifference= | The source names Greeting. That element does not follow the body. | The source names Sender’s address and date. That element does not follow the body.
-whyAnswerDemonstratesObjective=The source names Body. The source names Closing and signature. They have the same basic elements:
+answerSourceIds=prov-ca-u26-letter-label-26
+distractorSourceIds= | prov-ca-u26-letter-label-27 | prov-ca-u26-letter-label-28
+distractorDifference= | Greeting introduces the reader-facing salutation before the body in this supplied layout. | Sender’s address and date identifies the sender and date before the greeting and body in this supplied layout.
+whyAnswerDemonstratesObjective=In the supplied layout, Body is followed by Closing and signature. This identifies the next part of the demonstrated framework rather than prescribing every possible letter format.
 contrastMembers=Closing and signature | Greeting | Sender’s address and date
 relationKind=STATED_APPLICATION
-relationParticipantIds=prov-u26-letter-writing-x-3 | prov-u26-letter-writing-x-4 | prov-u26-letter-writing-x-5 | prov-u26-letter-writing-x-6
+relationParticipantIds=prov-ca-u26-letter-label-24 | prov-ca-u26-letter-label-26 | prov-ca-u26-letter-label-27 | prov-ca-u26-letter-label-28
 responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u26-i-correspondence-1`
@@ -3008,6 +3010,1961 @@ attribution=Russian Companion content-audit research synthesis, content-audit-20
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
 sourceHash=8cbdd45e7fb070fbf5e42c5458556da7ac5fbb37454d9213aa932d0125d6186c
 contentHash=0afff52ca49d9adc7b3fb39de24b16290d6908faa0a72a4209008f32c863dbbf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-letter-capability`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-orient, u26-s-letter-writing
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9fa9abf3bf352fb23f3822983546d649d5638c05c2500f9f55c1e2568eda8c7e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-letter-writing
+originalSourceText=Retained licensed ReadyRussian letter span/examples and existing pending letter-limit correction; Gramota Pismovnik https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-sostavit-pismo and kakimi-byvayut-delovye-pisma: official indexed search evidence consulted 2026-10-11, full pages returned403. Independently authored supplied English framework and scope-inference applications; not universal genre or register acceptance.
+Apply a supplied letter framework without universal style rules
+Organize the supplied problem-and-request letter
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+Distinguish the greeting, body and closing
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Guided practice
+Use the supplied framework and the conversational function of each letter part. A miss returns to the complete explanation.
+Review the full letter framework and greeting distinction
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Which English plan fits the supplied problem-and-request framework?
+a letter explaining a problem and requesting action
+The cue is a letter explaining a problem and requesting action. In the supplied framework, state the reason, explain relevant facts, then make the request. That organization supports this particular purpose; it is not a universal national word-order rule.
+state the reason, explain relevant facts, then make the request
+every Russian letter must put its main point last
+every Russian letter must put its main point last overgeneralizes from one framework to all letters and purposes.
+Which English inference is supported by the shown neutral greeting?
+Здравствуйте!
+Здравствуйте! supports a greeting, not a rule about how close the recipient is. Its greeting function does not establish an absolute prohibition based on an English salutation translation.
+a greeting, not a rule about how close the recipient is
+every unfamiliar recipient forbids any greeting translated as dear
+every unfamiliar recipient forbids any greeting translated as dear is not established by the meaning of Здравствуйте!; a greeting does not determine every relationship or register.
+In the supplied letter layout, which English element follows the body?
+Body
+In the supplied layout, Body is followed by Closing and signature. This identifies the next part of the demonstrated framework rather than prescribing every possible letter format.
+Closing and signature
+Greeting
+Sender’s address and date
+Greeting introduces the reader-facing salutation before the body in this supplied layout.
+Sender’s address and date identifies the sender and date before the greeting and body in this supplied layout.
+[{"cue": "a letter explaining a problem and requesting action", "answer": "state the reason, explain relevant facts, then make the request", "distractors": ["every Russian letter must put its main point last"]}, {"cue": "Здравствуйте!", "answer": "a greeting, not a rule about how close the recipient is", "distractors": ["every unfamiliar recipient forbids any greeting translated as dear"]}, {"cue": "Body", "answer": "Closing and signature", "distractors": ["Greeting", "Sender’s address and date"]}]
+shippedText=Apply a supplied letter framework without universal style rules
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Independently authored Russian Companion pending letter correction,2026-10-11; retained Russian examples; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9eb8191a1f3f63e03e646fb305215ba8401e5a1c31ae1f6d2aa79f670ed6af3c
+contentHash=7b7d8114944f7748c6dafa63fa3cce9f8ce8656f46c4421297df6791fe70526c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-letter-label-1`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-orient, u26-s-letter-writing
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 335b56583a4f0475baa61635b1e317ff14a3860abd96e914ec2983c4e2b13c6b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-letter-writing
+originalSourceText=Retained licensed ReadyRussian letter span/examples and existing pending letter-limit correction; Gramota Pismovnik https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-sostavit-pismo and kakimi-byvayut-delovye-pisma: official indexed search evidence consulted 2026-10-11, full pages returned403. Independently authored supplied English framework and scope-inference applications; not universal genre or register acceptance.
+Apply a supplied letter framework without universal style rules
+Organize the supplied problem-and-request letter
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+Distinguish the greeting, body and closing
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Guided practice
+Use the supplied framework and the conversational function of each letter part. A miss returns to the complete explanation.
+Review the full letter framework and greeting distinction
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Which English plan fits the supplied problem-and-request framework?
+a letter explaining a problem and requesting action
+The cue is a letter explaining a problem and requesting action. In the supplied framework, state the reason, explain relevant facts, then make the request. That organization supports this particular purpose; it is not a universal national word-order rule.
+state the reason, explain relevant facts, then make the request
+every Russian letter must put its main point last
+every Russian letter must put its main point last overgeneralizes from one framework to all letters and purposes.
+Which English inference is supported by the shown neutral greeting?
+Здравствуйте!
+Здравствуйте! supports a greeting, not a rule about how close the recipient is. Its greeting function does not establish an absolute prohibition based on an English salutation translation.
+a greeting, not a rule about how close the recipient is
+every unfamiliar recipient forbids any greeting translated as dear
+every unfamiliar recipient forbids any greeting translated as dear is not established by the meaning of Здравствуйте!; a greeting does not determine every relationship or register.
+In the supplied letter layout, which English element follows the body?
+Body
+In the supplied layout, Body is followed by Closing and signature. This identifies the next part of the demonstrated framework rather than prescribing every possible letter format.
+Closing and signature
+Greeting
+Sender’s address and date
+Greeting introduces the reader-facing salutation before the body in this supplied layout.
+Sender’s address and date identifies the sender and date before the greeting and body in this supplied layout.
+[{"cue": "a letter explaining a problem and requesting action", "answer": "state the reason, explain relevant facts, then make the request", "distractors": ["every Russian letter must put its main point last"]}, {"cue": "Здравствуйте!", "answer": "a greeting, not a rule about how close the recipient is", "distractors": ["every unfamiliar recipient forbids any greeting translated as dear"]}, {"cue": "Body", "answer": "Closing and signature", "distractors": ["Greeting", "Sender’s address and date"]}]
+shippedText=Organize the supplied problem-and-request letter
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Independently authored Russian Companion pending letter correction,2026-10-11; retained Russian examples; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9eb8191a1f3f63e03e646fb305215ba8401e5a1c31ae1f6d2aa79f670ed6af3c
+contentHash=e4af5f3d8bf76431604675ef0b096fa6daa1ba61a37c2923aac3c3bb5b138926
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-letter-label-10`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-orient, u26-s-letter-writing
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b64575d96057b5b61f2c999c5b9de6efb82876fd41ef3f8cd0bf6c84700bc76e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-letter-writing
+originalSourceText=Retained licensed ReadyRussian letter span/examples and existing pending letter-limit correction; Gramota Pismovnik https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-sostavit-pismo and kakimi-byvayut-delovye-pisma: official indexed search evidence consulted 2026-10-11, full pages returned403. Independently authored supplied English framework and scope-inference applications; not universal genre or register acceptance.
+Apply a supplied letter framework without universal style rules
+Organize the supplied problem-and-request letter
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+Distinguish the greeting, body and closing
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Guided practice
+Use the supplied framework and the conversational function of each letter part. A miss returns to the complete explanation.
+Review the full letter framework and greeting distinction
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Which English plan fits the supplied problem-and-request framework?
+a letter explaining a problem and requesting action
+The cue is a letter explaining a problem and requesting action. In the supplied framework, state the reason, explain relevant facts, then make the request. That organization supports this particular purpose; it is not a universal national word-order rule.
+state the reason, explain relevant facts, then make the request
+every Russian letter must put its main point last
+every Russian letter must put its main point last overgeneralizes from one framework to all letters and purposes.
+Which English inference is supported by the shown neutral greeting?
+Здравствуйте!
+Здравствуйте! supports a greeting, not a rule about how close the recipient is. Its greeting function does not establish an absolute prohibition based on an English salutation translation.
+a greeting, not a rule about how close the recipient is
+every unfamiliar recipient forbids any greeting translated as dear
+every unfamiliar recipient forbids any greeting translated as dear is not established by the meaning of Здравствуйте!; a greeting does not determine every relationship or register.
+In the supplied letter layout, which English element follows the body?
+Body
+In the supplied layout, Body is followed by Closing and signature. This identifies the next part of the demonstrated framework rather than prescribing every possible letter format.
+Closing and signature
+Greeting
+Sender’s address and date
+Greeting introduces the reader-facing salutation before the body in this supplied layout.
+Sender’s address and date identifies the sender and date before the greeting and body in this supplied layout.
+[{"cue": "a letter explaining a problem and requesting action", "answer": "state the reason, explain relevant facts, then make the request", "distractors": ["every Russian letter must put its main point last"]}, {"cue": "Здравствуйте!", "answer": "a greeting, not a rule about how close the recipient is", "distractors": ["every unfamiliar recipient forbids any greeting translated as dear"]}, {"cue": "Body", "answer": "Closing and signature", "distractors": ["Greeting", "Sender’s address and date"]}]
+shippedText=Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Independently authored Russian Companion pending letter correction,2026-10-11; retained Russian examples; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9eb8191a1f3f63e03e646fb305215ba8401e5a1c31ae1f6d2aa79f670ed6af3c
+contentHash=d8d884fbe3c6647954658c8df12e40df8eedd8faeca5477215def44b05c8ef7e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-letter-label-11`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-orient, u26-s-letter-writing
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 08376cddeda9f232fb4d3d69ceca9071840876ff7152ba1b1fddc3ffc2816984
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-letter-writing
+originalSourceText=Retained licensed ReadyRussian letter span/examples and existing pending letter-limit correction; Gramota Pismovnik https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-sostavit-pismo and kakimi-byvayut-delovye-pisma: official indexed search evidence consulted 2026-10-11, full pages returned403. Independently authored supplied English framework and scope-inference applications; not universal genre or register acceptance.
+Apply a supplied letter framework without universal style rules
+Organize the supplied problem-and-request letter
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+Distinguish the greeting, body and closing
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Guided practice
+Use the supplied framework and the conversational function of each letter part. A miss returns to the complete explanation.
+Review the full letter framework and greeting distinction
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Which English plan fits the supplied problem-and-request framework?
+a letter explaining a problem and requesting action
+The cue is a letter explaining a problem and requesting action. In the supplied framework, state the reason, explain relevant facts, then make the request. That organization supports this particular purpose; it is not a universal national word-order rule.
+state the reason, explain relevant facts, then make the request
+every Russian letter must put its main point last
+every Russian letter must put its main point last overgeneralizes from one framework to all letters and purposes.
+Which English inference is supported by the shown neutral greeting?
+Здравствуйте!
+Здравствуйте! supports a greeting, not a rule about how close the recipient is. Its greeting function does not establish an absolute prohibition based on an English salutation translation.
+a greeting, not a rule about how close the recipient is
+every unfamiliar recipient forbids any greeting translated as dear
+every unfamiliar recipient forbids any greeting translated as dear is not established by the meaning of Здравствуйте!; a greeting does not determine every relationship or register.
+In the supplied letter layout, which English element follows the body?
+Body
+In the supplied layout, Body is followed by Closing and signature. This identifies the next part of the demonstrated framework rather than prescribing every possible letter format.
+Closing and signature
+Greeting
+Sender’s address and date
+Greeting introduces the reader-facing salutation before the body in this supplied layout.
+Sender’s address and date identifies the sender and date before the greeting and body in this supplied layout.
+[{"cue": "a letter explaining a problem and requesting action", "answer": "state the reason, explain relevant facts, then make the request", "distractors": ["every Russian letter must put its main point last"]}, {"cue": "Здравствуйте!", "answer": "a greeting, not a rule about how close the recipient is", "distractors": ["every unfamiliar recipient forbids any greeting translated as dear"]}, {"cue": "Body", "answer": "Closing and signature", "distractors": ["Greeting", "Sender’s address and date"]}]
+shippedText=Which English plan fits the supplied problem-and-request framework?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Independently authored Russian Companion pending letter correction,2026-10-11; retained Russian examples; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9eb8191a1f3f63e03e646fb305215ba8401e5a1c31ae1f6d2aa79f670ed6af3c
+contentHash=1f8bbb64d750d31f525b8da0863164f5f07d2d9547d9caf69a16376935928278
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-letter-label-12`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-orient, u26-s-letter-writing
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1025232df2337a15f37191c990f1b10d37314d46760252a6a70daa0d1492cc51
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-letter-writing
+originalSourceText=Retained licensed ReadyRussian letter span/examples and existing pending letter-limit correction; Gramota Pismovnik https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-sostavit-pismo and kakimi-byvayut-delovye-pisma: official indexed search evidence consulted 2026-10-11, full pages returned403. Independently authored supplied English framework and scope-inference applications; not universal genre or register acceptance.
+Apply a supplied letter framework without universal style rules
+Organize the supplied problem-and-request letter
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+Distinguish the greeting, body and closing
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Guided practice
+Use the supplied framework and the conversational function of each letter part. A miss returns to the complete explanation.
+Review the full letter framework and greeting distinction
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Which English plan fits the supplied problem-and-request framework?
+a letter explaining a problem and requesting action
+The cue is a letter explaining a problem and requesting action. In the supplied framework, state the reason, explain relevant facts, then make the request. That organization supports this particular purpose; it is not a universal national word-order rule.
+state the reason, explain relevant facts, then make the request
+every Russian letter must put its main point last
+every Russian letter must put its main point last overgeneralizes from one framework to all letters and purposes.
+Which English inference is supported by the shown neutral greeting?
+Здравствуйте!
+Здравствуйте! supports a greeting, not a rule about how close the recipient is. Its greeting function does not establish an absolute prohibition based on an English salutation translation.
+a greeting, not a rule about how close the recipient is
+every unfamiliar recipient forbids any greeting translated as dear
+every unfamiliar recipient forbids any greeting translated as dear is not established by the meaning of Здравствуйте!; a greeting does not determine every relationship or register.
+In the supplied letter layout, which English element follows the body?
+Body
+In the supplied layout, Body is followed by Closing and signature. This identifies the next part of the demonstrated framework rather than prescribing every possible letter format.
+Closing and signature
+Greeting
+Sender’s address and date
+Greeting introduces the reader-facing salutation before the body in this supplied layout.
+Sender’s address and date identifies the sender and date before the greeting and body in this supplied layout.
+[{"cue": "a letter explaining a problem and requesting action", "answer": "state the reason, explain relevant facts, then make the request", "distractors": ["every Russian letter must put its main point last"]}, {"cue": "Здравствуйте!", "answer": "a greeting, not a rule about how close the recipient is", "distractors": ["every unfamiliar recipient forbids any greeting translated as dear"]}, {"cue": "Body", "answer": "Closing and signature", "distractors": ["Greeting", "Sender’s address and date"]}]
+shippedText=a letter explaining a problem and requesting action
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Independently authored Russian Companion pending letter correction,2026-10-11; retained Russian examples; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9eb8191a1f3f63e03e646fb305215ba8401e5a1c31ae1f6d2aa79f670ed6af3c
+contentHash=a50d7d3a90bbda4b1090b8d45b2e774a503aafde17a814f71a2bd58fa3e8b9e2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-letter-label-13`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-orient, u26-s-letter-writing
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c79c714c84ffb3645f85f9fb0b79f1c66b6e4ddf4c23d3c602c75821701c6756
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-letter-writing
+originalSourceText=Retained licensed ReadyRussian letter span/examples and existing pending letter-limit correction; Gramota Pismovnik https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-sostavit-pismo and kakimi-byvayut-delovye-pisma: official indexed search evidence consulted 2026-10-11, full pages returned403. Independently authored supplied English framework and scope-inference applications; not universal genre or register acceptance.
+Apply a supplied letter framework without universal style rules
+Organize the supplied problem-and-request letter
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+Distinguish the greeting, body and closing
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Guided practice
+Use the supplied framework and the conversational function of each letter part. A miss returns to the complete explanation.
+Review the full letter framework and greeting distinction
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Which English plan fits the supplied problem-and-request framework?
+a letter explaining a problem and requesting action
+The cue is a letter explaining a problem and requesting action. In the supplied framework, state the reason, explain relevant facts, then make the request. That organization supports this particular purpose; it is not a universal national word-order rule.
+state the reason, explain relevant facts, then make the request
+every Russian letter must put its main point last
+every Russian letter must put its main point last overgeneralizes from one framework to all letters and purposes.
+Which English inference is supported by the shown neutral greeting?
+Здравствуйте!
+Здравствуйте! supports a greeting, not a rule about how close the recipient is. Its greeting function does not establish an absolute prohibition based on an English salutation translation.
+a greeting, not a rule about how close the recipient is
+every unfamiliar recipient forbids any greeting translated as dear
+every unfamiliar recipient forbids any greeting translated as dear is not established by the meaning of Здравствуйте!; a greeting does not determine every relationship or register.
+In the supplied letter layout, which English element follows the body?
+Body
+In the supplied layout, Body is followed by Closing and signature. This identifies the next part of the demonstrated framework rather than prescribing every possible letter format.
+Closing and signature
+Greeting
+Sender’s address and date
+Greeting introduces the reader-facing salutation before the body in this supplied layout.
+Sender’s address and date identifies the sender and date before the greeting and body in this supplied layout.
+[{"cue": "a letter explaining a problem and requesting action", "answer": "state the reason, explain relevant facts, then make the request", "distractors": ["every Russian letter must put its main point last"]}, {"cue": "Здравствуйте!", "answer": "a greeting, not a rule about how close the recipient is", "distractors": ["every unfamiliar recipient forbids any greeting translated as dear"]}, {"cue": "Body", "answer": "Closing and signature", "distractors": ["Greeting", "Sender’s address and date"]}]
+shippedText=The cue is a letter explaining a problem and requesting action. In the supplied framework, state the reason, explain relevant facts, then make the request. That organization supports this particular purpose; it is not a universal national word-order rule.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Independently authored Russian Companion pending letter correction,2026-10-11; retained Russian examples; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9eb8191a1f3f63e03e646fb305215ba8401e5a1c31ae1f6d2aa79f670ed6af3c
+contentHash=57f28cd7329b5da7ba40b84d42886cc5fdf20411a264add4b9a745b7fc7cc721
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-letter-label-14`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-orient, u26-s-letter-writing
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7fedbfc6a5c1bc1df0a80d5475b5155aea949fe35605fd7f915a6cdfee3575eb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-letter-writing
+originalSourceText=Retained licensed ReadyRussian letter span/examples and existing pending letter-limit correction; Gramota Pismovnik https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-sostavit-pismo and kakimi-byvayut-delovye-pisma: official indexed search evidence consulted 2026-10-11, full pages returned403. Independently authored supplied English framework and scope-inference applications; not universal genre or register acceptance.
+Apply a supplied letter framework without universal style rules
+Organize the supplied problem-and-request letter
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+Distinguish the greeting, body and closing
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Guided practice
+Use the supplied framework and the conversational function of each letter part. A miss returns to the complete explanation.
+Review the full letter framework and greeting distinction
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Which English plan fits the supplied problem-and-request framework?
+a letter explaining a problem and requesting action
+The cue is a letter explaining a problem and requesting action. In the supplied framework, state the reason, explain relevant facts, then make the request. That organization supports this particular purpose; it is not a universal national word-order rule.
+state the reason, explain relevant facts, then make the request
+every Russian letter must put its main point last
+every Russian letter must put its main point last overgeneralizes from one framework to all letters and purposes.
+Which English inference is supported by the shown neutral greeting?
+Здравствуйте!
+Здравствуйте! supports a greeting, not a rule about how close the recipient is. Its greeting function does not establish an absolute prohibition based on an English salutation translation.
+a greeting, not a rule about how close the recipient is
+every unfamiliar recipient forbids any greeting translated as dear
+every unfamiliar recipient forbids any greeting translated as dear is not established by the meaning of Здравствуйте!; a greeting does not determine every relationship or register.
+In the supplied letter layout, which English element follows the body?
+Body
+In the supplied layout, Body is followed by Closing and signature. This identifies the next part of the demonstrated framework rather than prescribing every possible letter format.
+Closing and signature
+Greeting
+Sender’s address and date
+Greeting introduces the reader-facing salutation before the body in this supplied layout.
+Sender’s address and date identifies the sender and date before the greeting and body in this supplied layout.
+[{"cue": "a letter explaining a problem and requesting action", "answer": "state the reason, explain relevant facts, then make the request", "distractors": ["every Russian letter must put its main point last"]}, {"cue": "Здравствуйте!", "answer": "a greeting, not a rule about how close the recipient is", "distractors": ["every unfamiliar recipient forbids any greeting translated as dear"]}, {"cue": "Body", "answer": "Closing and signature", "distractors": ["Greeting", "Sender’s address and date"]}]
+shippedText=state the reason, explain relevant facts, then make the request
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Independently authored Russian Companion pending letter correction,2026-10-11; retained Russian examples; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9eb8191a1f3f63e03e646fb305215ba8401e5a1c31ae1f6d2aa79f670ed6af3c
+contentHash=0c5ce520e969b482246456b2e4dbb47261a1ad56e8fc52375f62797a06c6bd5f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-letter-label-15`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-orient, u26-s-letter-writing
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 99c49211cc18b4ca369ee63d221343b847d5ce4b649bee8dafbc93803a4a934a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-letter-writing
+originalSourceText=Retained licensed ReadyRussian letter span/examples and existing pending letter-limit correction; Gramota Pismovnik https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-sostavit-pismo and kakimi-byvayut-delovye-pisma: official indexed search evidence consulted 2026-10-11, full pages returned403. Independently authored supplied English framework and scope-inference applications; not universal genre or register acceptance.
+Apply a supplied letter framework without universal style rules
+Organize the supplied problem-and-request letter
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+Distinguish the greeting, body and closing
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Guided practice
+Use the supplied framework and the conversational function of each letter part. A miss returns to the complete explanation.
+Review the full letter framework and greeting distinction
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Which English plan fits the supplied problem-and-request framework?
+a letter explaining a problem and requesting action
+The cue is a letter explaining a problem and requesting action. In the supplied framework, state the reason, explain relevant facts, then make the request. That organization supports this particular purpose; it is not a universal national word-order rule.
+state the reason, explain relevant facts, then make the request
+every Russian letter must put its main point last
+every Russian letter must put its main point last overgeneralizes from one framework to all letters and purposes.
+Which English inference is supported by the shown neutral greeting?
+Здравствуйте!
+Здравствуйте! supports a greeting, not a rule about how close the recipient is. Its greeting function does not establish an absolute prohibition based on an English salutation translation.
+a greeting, not a rule about how close the recipient is
+every unfamiliar recipient forbids any greeting translated as dear
+every unfamiliar recipient forbids any greeting translated as dear is not established by the meaning of Здравствуйте!; a greeting does not determine every relationship or register.
+In the supplied letter layout, which English element follows the body?
+Body
+In the supplied layout, Body is followed by Closing and signature. This identifies the next part of the demonstrated framework rather than prescribing every possible letter format.
+Closing and signature
+Greeting
+Sender’s address and date
+Greeting introduces the reader-facing salutation before the body in this supplied layout.
+Sender’s address and date identifies the sender and date before the greeting and body in this supplied layout.
+[{"cue": "a letter explaining a problem and requesting action", "answer": "state the reason, explain relevant facts, then make the request", "distractors": ["every Russian letter must put its main point last"]}, {"cue": "Здравствуйте!", "answer": "a greeting, not a rule about how close the recipient is", "distractors": ["every unfamiliar recipient forbids any greeting translated as dear"]}, {"cue": "Body", "answer": "Closing and signature", "distractors": ["Greeting", "Sender’s address and date"]}]
+shippedText=every Russian letter must put its main point last
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Independently authored Russian Companion pending letter correction,2026-10-11; retained Russian examples; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9eb8191a1f3f63e03e646fb305215ba8401e5a1c31ae1f6d2aa79f670ed6af3c
+contentHash=8c44f760f97c2351ca7530c3c9d2b6aa3d228529c62939b3e43aa360d5db3877
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-letter-label-16`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-orient, u26-s-letter-writing
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7f1e2047f81984cbd89a6076f86f66093d5e0e9c54004069d62a294ea338e185
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-letter-writing
+originalSourceText=Retained licensed ReadyRussian letter span/examples and existing pending letter-limit correction; Gramota Pismovnik https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-sostavit-pismo and kakimi-byvayut-delovye-pisma: official indexed search evidence consulted 2026-10-11, full pages returned403. Independently authored supplied English framework and scope-inference applications; not universal genre or register acceptance.
+Apply a supplied letter framework without universal style rules
+Organize the supplied problem-and-request letter
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+Distinguish the greeting, body and closing
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Guided practice
+Use the supplied framework and the conversational function of each letter part. A miss returns to the complete explanation.
+Review the full letter framework and greeting distinction
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Which English plan fits the supplied problem-and-request framework?
+a letter explaining a problem and requesting action
+The cue is a letter explaining a problem and requesting action. In the supplied framework, state the reason, explain relevant facts, then make the request. That organization supports this particular purpose; it is not a universal national word-order rule.
+state the reason, explain relevant facts, then make the request
+every Russian letter must put its main point last
+every Russian letter must put its main point last overgeneralizes from one framework to all letters and purposes.
+Which English inference is supported by the shown neutral greeting?
+Здравствуйте!
+Здравствуйте! supports a greeting, not a rule about how close the recipient is. Its greeting function does not establish an absolute prohibition based on an English salutation translation.
+a greeting, not a rule about how close the recipient is
+every unfamiliar recipient forbids any greeting translated as dear
+every unfamiliar recipient forbids any greeting translated as dear is not established by the meaning of Здравствуйте!; a greeting does not determine every relationship or register.
+In the supplied letter layout, which English element follows the body?
+Body
+In the supplied layout, Body is followed by Closing and signature. This identifies the next part of the demonstrated framework rather than prescribing every possible letter format.
+Closing and signature
+Greeting
+Sender’s address and date
+Greeting introduces the reader-facing salutation before the body in this supplied layout.
+Sender’s address and date identifies the sender and date before the greeting and body in this supplied layout.
+[{"cue": "a letter explaining a problem and requesting action", "answer": "state the reason, explain relevant facts, then make the request", "distractors": ["every Russian letter must put its main point last"]}, {"cue": "Здравствуйте!", "answer": "a greeting, not a rule about how close the recipient is", "distractors": ["every unfamiliar recipient forbids any greeting translated as dear"]}, {"cue": "Body", "answer": "Closing and signature", "distractors": ["Greeting", "Sender’s address and date"]}]
+shippedText=every Russian letter must put its main point last overgeneralizes from one framework to all letters and purposes.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Independently authored Russian Companion pending letter correction,2026-10-11; retained Russian examples; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9eb8191a1f3f63e03e646fb305215ba8401e5a1c31ae1f6d2aa79f670ed6af3c
+contentHash=bb9dda9722ca0866a80993e0fe6503a47fdbfb94bcd47aaa7a3165a39a82c68e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-letter-label-17`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-orient, u26-s-letter-writing
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3235e7a23fd8370a4964b35928153f3ff4971153833b73e4aca0acb4ea3b6e0d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-letter-writing
+originalSourceText=Retained licensed ReadyRussian letter span/examples and existing pending letter-limit correction; Gramota Pismovnik https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-sostavit-pismo and kakimi-byvayut-delovye-pisma: official indexed search evidence consulted 2026-10-11, full pages returned403. Independently authored supplied English framework and scope-inference applications; not universal genre or register acceptance.
+Apply a supplied letter framework without universal style rules
+Organize the supplied problem-and-request letter
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+Distinguish the greeting, body and closing
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Guided practice
+Use the supplied framework and the conversational function of each letter part. A miss returns to the complete explanation.
+Review the full letter framework and greeting distinction
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Which English plan fits the supplied problem-and-request framework?
+a letter explaining a problem and requesting action
+The cue is a letter explaining a problem and requesting action. In the supplied framework, state the reason, explain relevant facts, then make the request. That organization supports this particular purpose; it is not a universal national word-order rule.
+state the reason, explain relevant facts, then make the request
+every Russian letter must put its main point last
+every Russian letter must put its main point last overgeneralizes from one framework to all letters and purposes.
+Which English inference is supported by the shown neutral greeting?
+Здравствуйте!
+Здравствуйте! supports a greeting, not a rule about how close the recipient is. Its greeting function does not establish an absolute prohibition based on an English salutation translation.
+a greeting, not a rule about how close the recipient is
+every unfamiliar recipient forbids any greeting translated as dear
+every unfamiliar recipient forbids any greeting translated as dear is not established by the meaning of Здравствуйте!; a greeting does not determine every relationship or register.
+In the supplied letter layout, which English element follows the body?
+Body
+In the supplied layout, Body is followed by Closing and signature. This identifies the next part of the demonstrated framework rather than prescribing every possible letter format.
+Closing and signature
+Greeting
+Sender’s address and date
+Greeting introduces the reader-facing salutation before the body in this supplied layout.
+Sender’s address and date identifies the sender and date before the greeting and body in this supplied layout.
+[{"cue": "a letter explaining a problem and requesting action", "answer": "state the reason, explain relevant facts, then make the request", "distractors": ["every Russian letter must put its main point last"]}, {"cue": "Здравствуйте!", "answer": "a greeting, not a rule about how close the recipient is", "distractors": ["every unfamiliar recipient forbids any greeting translated as dear"]}, {"cue": "Body", "answer": "Closing and signature", "distractors": ["Greeting", "Sender’s address and date"]}]
+shippedText=Which English inference is supported by the shown neutral greeting?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Independently authored Russian Companion pending letter correction,2026-10-11; retained Russian examples; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9eb8191a1f3f63e03e646fb305215ba8401e5a1c31ae1f6d2aa79f670ed6af3c
+contentHash=46539b6ec8cefed6af718e895f3861158ee9a595c68608734f711e9cafd96502
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-letter-label-18`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-orient, u26-s-letter-writing
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 95cb0ebd6188ce1f8b11c9dc8392d47f1250be454fc1f325d9bdca416ec62a1b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-letter-writing
+originalSourceText=Retained licensed ReadyRussian letter span/examples and existing pending letter-limit correction; Gramota Pismovnik https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-sostavit-pismo and kakimi-byvayut-delovye-pisma: official indexed search evidence consulted 2026-10-11, full pages returned403. Independently authored supplied English framework and scope-inference applications; not universal genre or register acceptance.
+Apply a supplied letter framework without universal style rules
+Organize the supplied problem-and-request letter
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+Distinguish the greeting, body and closing
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Guided practice
+Use the supplied framework and the conversational function of each letter part. A miss returns to the complete explanation.
+Review the full letter framework and greeting distinction
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Which English plan fits the supplied problem-and-request framework?
+a letter explaining a problem and requesting action
+The cue is a letter explaining a problem and requesting action. In the supplied framework, state the reason, explain relevant facts, then make the request. That organization supports this particular purpose; it is not a universal national word-order rule.
+state the reason, explain relevant facts, then make the request
+every Russian letter must put its main point last
+every Russian letter must put its main point last overgeneralizes from one framework to all letters and purposes.
+Which English inference is supported by the shown neutral greeting?
+Здравствуйте!
+Здравствуйте! supports a greeting, not a rule about how close the recipient is. Its greeting function does not establish an absolute prohibition based on an English salutation translation.
+a greeting, not a rule about how close the recipient is
+every unfamiliar recipient forbids any greeting translated as dear
+every unfamiliar recipient forbids any greeting translated as dear is not established by the meaning of Здравствуйте!; a greeting does not determine every relationship or register.
+In the supplied letter layout, which English element follows the body?
+Body
+In the supplied layout, Body is followed by Closing and signature. This identifies the next part of the demonstrated framework rather than prescribing every possible letter format.
+Closing and signature
+Greeting
+Sender’s address and date
+Greeting introduces the reader-facing salutation before the body in this supplied layout.
+Sender’s address and date identifies the sender and date before the greeting and body in this supplied layout.
+[{"cue": "a letter explaining a problem and requesting action", "answer": "state the reason, explain relevant facts, then make the request", "distractors": ["every Russian letter must put its main point last"]}, {"cue": "Здравствуйте!", "answer": "a greeting, not a rule about how close the recipient is", "distractors": ["every unfamiliar recipient forbids any greeting translated as dear"]}, {"cue": "Body", "answer": "Closing and signature", "distractors": ["Greeting", "Sender’s address and date"]}]
+shippedText=Здравствуйте!
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Independently authored Russian Companion pending letter correction,2026-10-11; retained Russian examples; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9eb8191a1f3f63e03e646fb305215ba8401e5a1c31ae1f6d2aa79f670ed6af3c
+contentHash=92d6a4ecc0932cf01546d2935fe13ce8b839badfd28336e54b9072186c2241b5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-letter-label-19`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-orient, u26-s-letter-writing
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 26ec048f0a523d9d30e44f611303a5bdb2c8b5783681fe6ffa40853059f2a769
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-letter-writing
+originalSourceText=Retained licensed ReadyRussian letter span/examples and existing pending letter-limit correction; Gramota Pismovnik https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-sostavit-pismo and kakimi-byvayut-delovye-pisma: official indexed search evidence consulted 2026-10-11, full pages returned403. Independently authored supplied English framework and scope-inference applications; not universal genre or register acceptance.
+Apply a supplied letter framework without universal style rules
+Organize the supplied problem-and-request letter
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+Distinguish the greeting, body and closing
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Guided practice
+Use the supplied framework and the conversational function of each letter part. A miss returns to the complete explanation.
+Review the full letter framework and greeting distinction
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Which English plan fits the supplied problem-and-request framework?
+a letter explaining a problem and requesting action
+The cue is a letter explaining a problem and requesting action. In the supplied framework, state the reason, explain relevant facts, then make the request. That organization supports this particular purpose; it is not a universal national word-order rule.
+state the reason, explain relevant facts, then make the request
+every Russian letter must put its main point last
+every Russian letter must put its main point last overgeneralizes from one framework to all letters and purposes.
+Which English inference is supported by the shown neutral greeting?
+Здравствуйте!
+Здравствуйте! supports a greeting, not a rule about how close the recipient is. Its greeting function does not establish an absolute prohibition based on an English salutation translation.
+a greeting, not a rule about how close the recipient is
+every unfamiliar recipient forbids any greeting translated as dear
+every unfamiliar recipient forbids any greeting translated as dear is not established by the meaning of Здравствуйте!; a greeting does not determine every relationship or register.
+In the supplied letter layout, which English element follows the body?
+Body
+In the supplied layout, Body is followed by Closing and signature. This identifies the next part of the demonstrated framework rather than prescribing every possible letter format.
+Closing and signature
+Greeting
+Sender’s address and date
+Greeting introduces the reader-facing salutation before the body in this supplied layout.
+Sender’s address and date identifies the sender and date before the greeting and body in this supplied layout.
+[{"cue": "a letter explaining a problem and requesting action", "answer": "state the reason, explain relevant facts, then make the request", "distractors": ["every Russian letter must put its main point last"]}, {"cue": "Здравствуйте!", "answer": "a greeting, not a rule about how close the recipient is", "distractors": ["every unfamiliar recipient forbids any greeting translated as dear"]}, {"cue": "Body", "answer": "Closing and signature", "distractors": ["Greeting", "Sender’s address and date"]}]
+shippedText=Здравствуйте! supports a greeting, not a rule about how close the recipient is. Its greeting function does not establish an absolute prohibition based on an English salutation translation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Independently authored Russian Companion pending letter correction,2026-10-11; retained Russian examples; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9eb8191a1f3f63e03e646fb305215ba8401e5a1c31ae1f6d2aa79f670ed6af3c
+contentHash=dee51fc6cf0bd8960b6d3f87b901ef7903e4c0c34f55b3ffaaafe49afbc428d1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-letter-label-2`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-orient, u26-s-letter-writing
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2eaee3c1ee09fde23c865e5e50b20fbd66807bc6b2a8655e9952ad35b81c9550
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-letter-writing
+originalSourceText=Retained licensed ReadyRussian letter span/examples and existing pending letter-limit correction; Gramota Pismovnik https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-sostavit-pismo and kakimi-byvayut-delovye-pisma: official indexed search evidence consulted 2026-10-11, full pages returned403. Independently authored supplied English framework and scope-inference applications; not universal genre or register acceptance.
+Apply a supplied letter framework without universal style rules
+Organize the supplied problem-and-request letter
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+Distinguish the greeting, body and closing
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Guided practice
+Use the supplied framework and the conversational function of each letter part. A miss returns to the complete explanation.
+Review the full letter framework and greeting distinction
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Which English plan fits the supplied problem-and-request framework?
+a letter explaining a problem and requesting action
+The cue is a letter explaining a problem and requesting action. In the supplied framework, state the reason, explain relevant facts, then make the request. That organization supports this particular purpose; it is not a universal national word-order rule.
+state the reason, explain relevant facts, then make the request
+every Russian letter must put its main point last
+every Russian letter must put its main point last overgeneralizes from one framework to all letters and purposes.
+Which English inference is supported by the shown neutral greeting?
+Здравствуйте!
+Здравствуйте! supports a greeting, not a rule about how close the recipient is. Its greeting function does not establish an absolute prohibition based on an English salutation translation.
+a greeting, not a rule about how close the recipient is
+every unfamiliar recipient forbids any greeting translated as dear
+every unfamiliar recipient forbids any greeting translated as dear is not established by the meaning of Здравствуйте!; a greeting does not determine every relationship or register.
+In the supplied letter layout, which English element follows the body?
+Body
+In the supplied layout, Body is followed by Closing and signature. This identifies the next part of the demonstrated framework rather than prescribing every possible letter format.
+Closing and signature
+Greeting
+Sender’s address and date
+Greeting introduces the reader-facing salutation before the body in this supplied layout.
+Sender’s address and date identifies the sender and date before the greeting and body in this supplied layout.
+[{"cue": "a letter explaining a problem and requesting action", "answer": "state the reason, explain relevant facts, then make the request", "distractors": ["every Russian letter must put its main point last"]}, {"cue": "Здравствуйте!", "answer": "a greeting, not a rule about how close the recipient is", "distractors": ["every unfamiliar recipient forbids any greeting translated as dear"]}, {"cue": "Body", "answer": "Closing and signature", "distractors": ["Greeting", "Sender’s address and date"]}]
+shippedText=In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Independently authored Russian Companion pending letter correction,2026-10-11; retained Russian examples; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9eb8191a1f3f63e03e646fb305215ba8401e5a1c31ae1f6d2aa79f670ed6af3c
+contentHash=d2645ebd74d3e83229e9574a8544301248da87543d2d68cc4fc62639490c55bd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-letter-label-20`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-orient, u26-s-letter-writing
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 264d971d7fbf3a172433f3522eb993c4f1055e08821ee81feae41ad1c2ecfd54
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-letter-writing
+originalSourceText=Retained licensed ReadyRussian letter span/examples and existing pending letter-limit correction; Gramota Pismovnik https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-sostavit-pismo and kakimi-byvayut-delovye-pisma: official indexed search evidence consulted 2026-10-11, full pages returned403. Independently authored supplied English framework and scope-inference applications; not universal genre or register acceptance.
+Apply a supplied letter framework without universal style rules
+Organize the supplied problem-and-request letter
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+Distinguish the greeting, body and closing
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Guided practice
+Use the supplied framework and the conversational function of each letter part. A miss returns to the complete explanation.
+Review the full letter framework and greeting distinction
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Which English plan fits the supplied problem-and-request framework?
+a letter explaining a problem and requesting action
+The cue is a letter explaining a problem and requesting action. In the supplied framework, state the reason, explain relevant facts, then make the request. That organization supports this particular purpose; it is not a universal national word-order rule.
+state the reason, explain relevant facts, then make the request
+every Russian letter must put its main point last
+every Russian letter must put its main point last overgeneralizes from one framework to all letters and purposes.
+Which English inference is supported by the shown neutral greeting?
+Здравствуйте!
+Здравствуйте! supports a greeting, not a rule about how close the recipient is. Its greeting function does not establish an absolute prohibition based on an English salutation translation.
+a greeting, not a rule about how close the recipient is
+every unfamiliar recipient forbids any greeting translated as dear
+every unfamiliar recipient forbids any greeting translated as dear is not established by the meaning of Здравствуйте!; a greeting does not determine every relationship or register.
+In the supplied letter layout, which English element follows the body?
+Body
+In the supplied layout, Body is followed by Closing and signature. This identifies the next part of the demonstrated framework rather than prescribing every possible letter format.
+Closing and signature
+Greeting
+Sender’s address and date
+Greeting introduces the reader-facing salutation before the body in this supplied layout.
+Sender’s address and date identifies the sender and date before the greeting and body in this supplied layout.
+[{"cue": "a letter explaining a problem and requesting action", "answer": "state the reason, explain relevant facts, then make the request", "distractors": ["every Russian letter must put its main point last"]}, {"cue": "Здравствуйте!", "answer": "a greeting, not a rule about how close the recipient is", "distractors": ["every unfamiliar recipient forbids any greeting translated as dear"]}, {"cue": "Body", "answer": "Closing and signature", "distractors": ["Greeting", "Sender’s address and date"]}]
+shippedText=a greeting, not a rule about how close the recipient is
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Independently authored Russian Companion pending letter correction,2026-10-11; retained Russian examples; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9eb8191a1f3f63e03e646fb305215ba8401e5a1c31ae1f6d2aa79f670ed6af3c
+contentHash=9f89b0f32ee1c34a25d80ea6f2b2047ac39e77cdc0728aa9f2d3d1f4960ac66a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-letter-label-21`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-orient, u26-s-letter-writing
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fbf271608a25f18374279c71f9b71ef0c9d30acffe4c3c635c0162787b2976c3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-letter-writing
+originalSourceText=Retained licensed ReadyRussian letter span/examples and existing pending letter-limit correction; Gramota Pismovnik https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-sostavit-pismo and kakimi-byvayut-delovye-pisma: official indexed search evidence consulted 2026-10-11, full pages returned403. Independently authored supplied English framework and scope-inference applications; not universal genre or register acceptance.
+Apply a supplied letter framework without universal style rules
+Organize the supplied problem-and-request letter
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+Distinguish the greeting, body and closing
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Guided practice
+Use the supplied framework and the conversational function of each letter part. A miss returns to the complete explanation.
+Review the full letter framework and greeting distinction
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Which English plan fits the supplied problem-and-request framework?
+a letter explaining a problem and requesting action
+The cue is a letter explaining a problem and requesting action. In the supplied framework, state the reason, explain relevant facts, then make the request. That organization supports this particular purpose; it is not a universal national word-order rule.
+state the reason, explain relevant facts, then make the request
+every Russian letter must put its main point last
+every Russian letter must put its main point last overgeneralizes from one framework to all letters and purposes.
+Which English inference is supported by the shown neutral greeting?
+Здравствуйте!
+Здравствуйте! supports a greeting, not a rule about how close the recipient is. Its greeting function does not establish an absolute prohibition based on an English salutation translation.
+a greeting, not a rule about how close the recipient is
+every unfamiliar recipient forbids any greeting translated as dear
+every unfamiliar recipient forbids any greeting translated as dear is not established by the meaning of Здравствуйте!; a greeting does not determine every relationship or register.
+In the supplied letter layout, which English element follows the body?
+Body
+In the supplied layout, Body is followed by Closing and signature. This identifies the next part of the demonstrated framework rather than prescribing every possible letter format.
+Closing and signature
+Greeting
+Sender’s address and date
+Greeting introduces the reader-facing salutation before the body in this supplied layout.
+Sender’s address and date identifies the sender and date before the greeting and body in this supplied layout.
+[{"cue": "a letter explaining a problem and requesting action", "answer": "state the reason, explain relevant facts, then make the request", "distractors": ["every Russian letter must put its main point last"]}, {"cue": "Здравствуйте!", "answer": "a greeting, not a rule about how close the recipient is", "distractors": ["every unfamiliar recipient forbids any greeting translated as dear"]}, {"cue": "Body", "answer": "Closing and signature", "distractors": ["Greeting", "Sender’s address and date"]}]
+shippedText=every unfamiliar recipient forbids any greeting translated as dear
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Independently authored Russian Companion pending letter correction,2026-10-11; retained Russian examples; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9eb8191a1f3f63e03e646fb305215ba8401e5a1c31ae1f6d2aa79f670ed6af3c
+contentHash=ca19aa408627c29d1df42cf33cc530bf99103599f35d41c423dfd3fead38fae9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-letter-label-22`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-orient, u26-s-letter-writing
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d309e4689451090f422709524fb724d5890b709943fee618c9791235536d69fe
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-letter-writing
+originalSourceText=Retained licensed ReadyRussian letter span/examples and existing pending letter-limit correction; Gramota Pismovnik https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-sostavit-pismo and kakimi-byvayut-delovye-pisma: official indexed search evidence consulted 2026-10-11, full pages returned403. Independently authored supplied English framework and scope-inference applications; not universal genre or register acceptance.
+Apply a supplied letter framework without universal style rules
+Organize the supplied problem-and-request letter
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+Distinguish the greeting, body and closing
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Guided practice
+Use the supplied framework and the conversational function of each letter part. A miss returns to the complete explanation.
+Review the full letter framework and greeting distinction
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Which English plan fits the supplied problem-and-request framework?
+a letter explaining a problem and requesting action
+The cue is a letter explaining a problem and requesting action. In the supplied framework, state the reason, explain relevant facts, then make the request. That organization supports this particular purpose; it is not a universal national word-order rule.
+state the reason, explain relevant facts, then make the request
+every Russian letter must put its main point last
+every Russian letter must put its main point last overgeneralizes from one framework to all letters and purposes.
+Which English inference is supported by the shown neutral greeting?
+Здравствуйте!
+Здравствуйте! supports a greeting, not a rule about how close the recipient is. Its greeting function does not establish an absolute prohibition based on an English salutation translation.
+a greeting, not a rule about how close the recipient is
+every unfamiliar recipient forbids any greeting translated as dear
+every unfamiliar recipient forbids any greeting translated as dear is not established by the meaning of Здравствуйте!; a greeting does not determine every relationship or register.
+In the supplied letter layout, which English element follows the body?
+Body
+In the supplied layout, Body is followed by Closing and signature. This identifies the next part of the demonstrated framework rather than prescribing every possible letter format.
+Closing and signature
+Greeting
+Sender’s address and date
+Greeting introduces the reader-facing salutation before the body in this supplied layout.
+Sender’s address and date identifies the sender and date before the greeting and body in this supplied layout.
+[{"cue": "a letter explaining a problem and requesting action", "answer": "state the reason, explain relevant facts, then make the request", "distractors": ["every Russian letter must put its main point last"]}, {"cue": "Здравствуйте!", "answer": "a greeting, not a rule about how close the recipient is", "distractors": ["every unfamiliar recipient forbids any greeting translated as dear"]}, {"cue": "Body", "answer": "Closing and signature", "distractors": ["Greeting", "Sender’s address and date"]}]
+shippedText=every unfamiliar recipient forbids any greeting translated as dear is not established by the meaning of Здравствуйте!; a greeting does not determine every relationship or register.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Independently authored Russian Companion pending letter correction,2026-10-11; retained Russian examples; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9eb8191a1f3f63e03e646fb305215ba8401e5a1c31ae1f6d2aa79f670ed6af3c
+contentHash=ce6a3c486e43d0c1eb10e0e3fafc0abaee46d1601acb36763ac61b8ee71006b8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-letter-label-23`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-orient, u26-s-letter-writing
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4bdd14877f090f32a1a19766a8def53ebf8100db27230e11853e1d31782446bc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-letter-writing
+originalSourceText=Retained licensed ReadyRussian letter span/examples and existing pending letter-limit correction; Gramota Pismovnik https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-sostavit-pismo and kakimi-byvayut-delovye-pisma: official indexed search evidence consulted 2026-10-11, full pages returned403. Independently authored supplied English framework and scope-inference applications; not universal genre or register acceptance.
+Apply a supplied letter framework without universal style rules
+Organize the supplied problem-and-request letter
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+Distinguish the greeting, body and closing
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Guided practice
+Use the supplied framework and the conversational function of each letter part. A miss returns to the complete explanation.
+Review the full letter framework and greeting distinction
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Which English plan fits the supplied problem-and-request framework?
+a letter explaining a problem and requesting action
+The cue is a letter explaining a problem and requesting action. In the supplied framework, state the reason, explain relevant facts, then make the request. That organization supports this particular purpose; it is not a universal national word-order rule.
+state the reason, explain relevant facts, then make the request
+every Russian letter must put its main point last
+every Russian letter must put its main point last overgeneralizes from one framework to all letters and purposes.
+Which English inference is supported by the shown neutral greeting?
+Здравствуйте!
+Здравствуйте! supports a greeting, not a rule about how close the recipient is. Its greeting function does not establish an absolute prohibition based on an English salutation translation.
+a greeting, not a rule about how close the recipient is
+every unfamiliar recipient forbids any greeting translated as dear
+every unfamiliar recipient forbids any greeting translated as dear is not established by the meaning of Здравствуйте!; a greeting does not determine every relationship or register.
+In the supplied letter layout, which English element follows the body?
+Body
+In the supplied layout, Body is followed by Closing and signature. This identifies the next part of the demonstrated framework rather than prescribing every possible letter format.
+Closing and signature
+Greeting
+Sender’s address and date
+Greeting introduces the reader-facing salutation before the body in this supplied layout.
+Sender’s address and date identifies the sender and date before the greeting and body in this supplied layout.
+[{"cue": "a letter explaining a problem and requesting action", "answer": "state the reason, explain relevant facts, then make the request", "distractors": ["every Russian letter must put its main point last"]}, {"cue": "Здравствуйте!", "answer": "a greeting, not a rule about how close the recipient is", "distractors": ["every unfamiliar recipient forbids any greeting translated as dear"]}, {"cue": "Body", "answer": "Closing and signature", "distractors": ["Greeting", "Sender’s address and date"]}]
+shippedText=In the supplied letter layout, which English element follows the body?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Independently authored Russian Companion pending letter correction,2026-10-11; retained Russian examples; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9eb8191a1f3f63e03e646fb305215ba8401e5a1c31ae1f6d2aa79f670ed6af3c
+contentHash=227362de51cecf1666593ceaac40583e18abd52cc4d6b495a6e01509965c3be5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-letter-label-24`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-orient, u26-s-letter-writing
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b23dd01e50cc057f4831a984948f150e25eda369b90b5ba29804f0381aaaac53
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-letter-writing
+originalSourceText=Retained licensed ReadyRussian letter span/examples and existing pending letter-limit correction; Gramota Pismovnik https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-sostavit-pismo and kakimi-byvayut-delovye-pisma: official indexed search evidence consulted 2026-10-11, full pages returned403. Independently authored supplied English framework and scope-inference applications; not universal genre or register acceptance.
+Apply a supplied letter framework without universal style rules
+Organize the supplied problem-and-request letter
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+Distinguish the greeting, body and closing
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Guided practice
+Use the supplied framework and the conversational function of each letter part. A miss returns to the complete explanation.
+Review the full letter framework and greeting distinction
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Which English plan fits the supplied problem-and-request framework?
+a letter explaining a problem and requesting action
+The cue is a letter explaining a problem and requesting action. In the supplied framework, state the reason, explain relevant facts, then make the request. That organization supports this particular purpose; it is not a universal national word-order rule.
+state the reason, explain relevant facts, then make the request
+every Russian letter must put its main point last
+every Russian letter must put its main point last overgeneralizes from one framework to all letters and purposes.
+Which English inference is supported by the shown neutral greeting?
+Здравствуйте!
+Здравствуйте! supports a greeting, not a rule about how close the recipient is. Its greeting function does not establish an absolute prohibition based on an English salutation translation.
+a greeting, not a rule about how close the recipient is
+every unfamiliar recipient forbids any greeting translated as dear
+every unfamiliar recipient forbids any greeting translated as dear is not established by the meaning of Здравствуйте!; a greeting does not determine every relationship or register.
+In the supplied letter layout, which English element follows the body?
+Body
+In the supplied layout, Body is followed by Closing and signature. This identifies the next part of the demonstrated framework rather than prescribing every possible letter format.
+Closing and signature
+Greeting
+Sender’s address and date
+Greeting introduces the reader-facing salutation before the body in this supplied layout.
+Sender’s address and date identifies the sender and date before the greeting and body in this supplied layout.
+[{"cue": "a letter explaining a problem and requesting action", "answer": "state the reason, explain relevant facts, then make the request", "distractors": ["every Russian letter must put its main point last"]}, {"cue": "Здравствуйте!", "answer": "a greeting, not a rule about how close the recipient is", "distractors": ["every unfamiliar recipient forbids any greeting translated as dear"]}, {"cue": "Body", "answer": "Closing and signature", "distractors": ["Greeting", "Sender’s address and date"]}]
+shippedText=Body
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Independently authored Russian Companion pending letter correction,2026-10-11; retained Russian examples; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9eb8191a1f3f63e03e646fb305215ba8401e5a1c31ae1f6d2aa79f670ed6af3c
+contentHash=6ccaa6415b5ee449e3c5c716f57b4608ebe3b780f5aa6b077bc5d8eee5d961f9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-letter-label-25`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-orient, u26-s-letter-writing
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 663d77875d1ac95e342167dfe623c32c4ee8e40568d76c9f8335f4dac3752bfc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-letter-writing
+originalSourceText=Retained licensed ReadyRussian letter span/examples and existing pending letter-limit correction; Gramota Pismovnik https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-sostavit-pismo and kakimi-byvayut-delovye-pisma: official indexed search evidence consulted 2026-10-11, full pages returned403. Independently authored supplied English framework and scope-inference applications; not universal genre or register acceptance.
+Apply a supplied letter framework without universal style rules
+Organize the supplied problem-and-request letter
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+Distinguish the greeting, body and closing
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Guided practice
+Use the supplied framework and the conversational function of each letter part. A miss returns to the complete explanation.
+Review the full letter framework and greeting distinction
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Which English plan fits the supplied problem-and-request framework?
+a letter explaining a problem and requesting action
+The cue is a letter explaining a problem and requesting action. In the supplied framework, state the reason, explain relevant facts, then make the request. That organization supports this particular purpose; it is not a universal national word-order rule.
+state the reason, explain relevant facts, then make the request
+every Russian letter must put its main point last
+every Russian letter must put its main point last overgeneralizes from one framework to all letters and purposes.
+Which English inference is supported by the shown neutral greeting?
+Здравствуйте!
+Здравствуйте! supports a greeting, not a rule about how close the recipient is. Its greeting function does not establish an absolute prohibition based on an English salutation translation.
+a greeting, not a rule about how close the recipient is
+every unfamiliar recipient forbids any greeting translated as dear
+every unfamiliar recipient forbids any greeting translated as dear is not established by the meaning of Здравствуйте!; a greeting does not determine every relationship or register.
+In the supplied letter layout, which English element follows the body?
+Body
+In the supplied layout, Body is followed by Closing and signature. This identifies the next part of the demonstrated framework rather than prescribing every possible letter format.
+Closing and signature
+Greeting
+Sender’s address and date
+Greeting introduces the reader-facing salutation before the body in this supplied layout.
+Sender’s address and date identifies the sender and date before the greeting and body in this supplied layout.
+[{"cue": "a letter explaining a problem and requesting action", "answer": "state the reason, explain relevant facts, then make the request", "distractors": ["every Russian letter must put its main point last"]}, {"cue": "Здравствуйте!", "answer": "a greeting, not a rule about how close the recipient is", "distractors": ["every unfamiliar recipient forbids any greeting translated as dear"]}, {"cue": "Body", "answer": "Closing and signature", "distractors": ["Greeting", "Sender’s address and date"]}]
+shippedText=In the supplied layout, Body is followed by Closing and signature. This identifies the next part of the demonstrated framework rather than prescribing every possible letter format.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Independently authored Russian Companion pending letter correction,2026-10-11; retained Russian examples; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9eb8191a1f3f63e03e646fb305215ba8401e5a1c31ae1f6d2aa79f670ed6af3c
+contentHash=6706c6f453b97fc92932abbf387c28f984314abb461fbf1aa9dd13a66fe5210f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-letter-label-26`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-orient, u26-s-letter-writing
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b5718ca078d580cc562060bf6b0a14253aaf47b2e6a3f72d2925dfd87eaccda9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-letter-writing
+originalSourceText=Retained licensed ReadyRussian letter span/examples and existing pending letter-limit correction; Gramota Pismovnik https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-sostavit-pismo and kakimi-byvayut-delovye-pisma: official indexed search evidence consulted 2026-10-11, full pages returned403. Independently authored supplied English framework and scope-inference applications; not universal genre or register acceptance.
+Apply a supplied letter framework without universal style rules
+Organize the supplied problem-and-request letter
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+Distinguish the greeting, body and closing
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Guided practice
+Use the supplied framework and the conversational function of each letter part. A miss returns to the complete explanation.
+Review the full letter framework and greeting distinction
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Which English plan fits the supplied problem-and-request framework?
+a letter explaining a problem and requesting action
+The cue is a letter explaining a problem and requesting action. In the supplied framework, state the reason, explain relevant facts, then make the request. That organization supports this particular purpose; it is not a universal national word-order rule.
+state the reason, explain relevant facts, then make the request
+every Russian letter must put its main point last
+every Russian letter must put its main point last overgeneralizes from one framework to all letters and purposes.
+Which English inference is supported by the shown neutral greeting?
+Здравствуйте!
+Здравствуйте! supports a greeting, not a rule about how close the recipient is. Its greeting function does not establish an absolute prohibition based on an English salutation translation.
+a greeting, not a rule about how close the recipient is
+every unfamiliar recipient forbids any greeting translated as dear
+every unfamiliar recipient forbids any greeting translated as dear is not established by the meaning of Здравствуйте!; a greeting does not determine every relationship or register.
+In the supplied letter layout, which English element follows the body?
+Body
+In the supplied layout, Body is followed by Closing and signature. This identifies the next part of the demonstrated framework rather than prescribing every possible letter format.
+Closing and signature
+Greeting
+Sender’s address and date
+Greeting introduces the reader-facing salutation before the body in this supplied layout.
+Sender’s address and date identifies the sender and date before the greeting and body in this supplied layout.
+[{"cue": "a letter explaining a problem and requesting action", "answer": "state the reason, explain relevant facts, then make the request", "distractors": ["every Russian letter must put its main point last"]}, {"cue": "Здравствуйте!", "answer": "a greeting, not a rule about how close the recipient is", "distractors": ["every unfamiliar recipient forbids any greeting translated as dear"]}, {"cue": "Body", "answer": "Closing and signature", "distractors": ["Greeting", "Sender’s address and date"]}]
+shippedText=Closing and signature
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Independently authored Russian Companion pending letter correction,2026-10-11; retained Russian examples; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9eb8191a1f3f63e03e646fb305215ba8401e5a1c31ae1f6d2aa79f670ed6af3c
+contentHash=4689e0d661a2dfc5675b26496a1c32cfb89f5dfff382601c0627f486192c2e78
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-letter-label-27`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-orient, u26-s-letter-writing
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 08cbf42e5b045b037c61961c806790a7027a035214de2bcf4d8e7865ca315fc1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-letter-writing
+originalSourceText=Retained licensed ReadyRussian letter span/examples and existing pending letter-limit correction; Gramota Pismovnik https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-sostavit-pismo and kakimi-byvayut-delovye-pisma: official indexed search evidence consulted 2026-10-11, full pages returned403. Independently authored supplied English framework and scope-inference applications; not universal genre or register acceptance.
+Apply a supplied letter framework without universal style rules
+Organize the supplied problem-and-request letter
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+Distinguish the greeting, body and closing
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Guided practice
+Use the supplied framework and the conversational function of each letter part. A miss returns to the complete explanation.
+Review the full letter framework and greeting distinction
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Which English plan fits the supplied problem-and-request framework?
+a letter explaining a problem and requesting action
+The cue is a letter explaining a problem and requesting action. In the supplied framework, state the reason, explain relevant facts, then make the request. That organization supports this particular purpose; it is not a universal national word-order rule.
+state the reason, explain relevant facts, then make the request
+every Russian letter must put its main point last
+every Russian letter must put its main point last overgeneralizes from one framework to all letters and purposes.
+Which English inference is supported by the shown neutral greeting?
+Здравствуйте!
+Здравствуйте! supports a greeting, not a rule about how close the recipient is. Its greeting function does not establish an absolute prohibition based on an English salutation translation.
+a greeting, not a rule about how close the recipient is
+every unfamiliar recipient forbids any greeting translated as dear
+every unfamiliar recipient forbids any greeting translated as dear is not established by the meaning of Здравствуйте!; a greeting does not determine every relationship or register.
+In the supplied letter layout, which English element follows the body?
+Body
+In the supplied layout, Body is followed by Closing and signature. This identifies the next part of the demonstrated framework rather than prescribing every possible letter format.
+Closing and signature
+Greeting
+Sender’s address and date
+Greeting introduces the reader-facing salutation before the body in this supplied layout.
+Sender’s address and date identifies the sender and date before the greeting and body in this supplied layout.
+[{"cue": "a letter explaining a problem and requesting action", "answer": "state the reason, explain relevant facts, then make the request", "distractors": ["every Russian letter must put its main point last"]}, {"cue": "Здравствуйте!", "answer": "a greeting, not a rule about how close the recipient is", "distractors": ["every unfamiliar recipient forbids any greeting translated as dear"]}, {"cue": "Body", "answer": "Closing and signature", "distractors": ["Greeting", "Sender’s address and date"]}]
+shippedText=Greeting
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Independently authored Russian Companion pending letter correction,2026-10-11; retained Russian examples; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9eb8191a1f3f63e03e646fb305215ba8401e5a1c31ae1f6d2aa79f670ed6af3c
+contentHash=2f35055d7f7e67b9560f58dfb588996dbdebbb568d14f488ce3870089405289a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-letter-label-28`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-orient, u26-s-letter-writing
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d0571abcbfe3ca381fdf0ce69d702c41163bcd0de05c36061dd46776d65e2614
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-letter-writing
+originalSourceText=Retained licensed ReadyRussian letter span/examples and existing pending letter-limit correction; Gramota Pismovnik https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-sostavit-pismo and kakimi-byvayut-delovye-pisma: official indexed search evidence consulted 2026-10-11, full pages returned403. Independently authored supplied English framework and scope-inference applications; not universal genre or register acceptance.
+Apply a supplied letter framework without universal style rules
+Organize the supplied problem-and-request letter
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+Distinguish the greeting, body and closing
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Guided practice
+Use the supplied framework and the conversational function of each letter part. A miss returns to the complete explanation.
+Review the full letter framework and greeting distinction
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Which English plan fits the supplied problem-and-request framework?
+a letter explaining a problem and requesting action
+The cue is a letter explaining a problem and requesting action. In the supplied framework, state the reason, explain relevant facts, then make the request. That organization supports this particular purpose; it is not a universal national word-order rule.
+state the reason, explain relevant facts, then make the request
+every Russian letter must put its main point last
+every Russian letter must put its main point last overgeneralizes from one framework to all letters and purposes.
+Which English inference is supported by the shown neutral greeting?
+Здравствуйте!
+Здравствуйте! supports a greeting, not a rule about how close the recipient is. Its greeting function does not establish an absolute prohibition based on an English salutation translation.
+a greeting, not a rule about how close the recipient is
+every unfamiliar recipient forbids any greeting translated as dear
+every unfamiliar recipient forbids any greeting translated as dear is not established by the meaning of Здравствуйте!; a greeting does not determine every relationship or register.
+In the supplied letter layout, which English element follows the body?
+Body
+In the supplied layout, Body is followed by Closing and signature. This identifies the next part of the demonstrated framework rather than prescribing every possible letter format.
+Closing and signature
+Greeting
+Sender’s address and date
+Greeting introduces the reader-facing salutation before the body in this supplied layout.
+Sender’s address and date identifies the sender and date before the greeting and body in this supplied layout.
+[{"cue": "a letter explaining a problem and requesting action", "answer": "state the reason, explain relevant facts, then make the request", "distractors": ["every Russian letter must put its main point last"]}, {"cue": "Здравствуйте!", "answer": "a greeting, not a rule about how close the recipient is", "distractors": ["every unfamiliar recipient forbids any greeting translated as dear"]}, {"cue": "Body", "answer": "Closing and signature", "distractors": ["Greeting", "Sender’s address and date"]}]
+shippedText=Sender’s address and date
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Independently authored Russian Companion pending letter correction,2026-10-11; retained Russian examples; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9eb8191a1f3f63e03e646fb305215ba8401e5a1c31ae1f6d2aa79f670ed6af3c
+contentHash=6f07886fb3afd91f6c7d9e587d9013056b55f42e4340cc6f88a4b250fc026fa4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-letter-label-29`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-orient, u26-s-letter-writing
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 88169dd14696af54692a3a1f83d7a573e2c8d505f64f92d1a3b1e881e678285c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-letter-writing
+originalSourceText=Retained licensed ReadyRussian letter span/examples and existing pending letter-limit correction; Gramota Pismovnik https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-sostavit-pismo and kakimi-byvayut-delovye-pisma: official indexed search evidence consulted 2026-10-11, full pages returned403. Independently authored supplied English framework and scope-inference applications; not universal genre or register acceptance.
+Apply a supplied letter framework without universal style rules
+Organize the supplied problem-and-request letter
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+Distinguish the greeting, body and closing
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Guided practice
+Use the supplied framework and the conversational function of each letter part. A miss returns to the complete explanation.
+Review the full letter framework and greeting distinction
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Which English plan fits the supplied problem-and-request framework?
+a letter explaining a problem and requesting action
+The cue is a letter explaining a problem and requesting action. In the supplied framework, state the reason, explain relevant facts, then make the request. That organization supports this particular purpose; it is not a universal national word-order rule.
+state the reason, explain relevant facts, then make the request
+every Russian letter must put its main point last
+every Russian letter must put its main point last overgeneralizes from one framework to all letters and purposes.
+Which English inference is supported by the shown neutral greeting?
+Здравствуйте!
+Здравствуйте! supports a greeting, not a rule about how close the recipient is. Its greeting function does not establish an absolute prohibition based on an English salutation translation.
+a greeting, not a rule about how close the recipient is
+every unfamiliar recipient forbids any greeting translated as dear
+every unfamiliar recipient forbids any greeting translated as dear is not established by the meaning of Здравствуйте!; a greeting does not determine every relationship or register.
+In the supplied letter layout, which English element follows the body?
+Body
+In the supplied layout, Body is followed by Closing and signature. This identifies the next part of the demonstrated framework rather than prescribing every possible letter format.
+Closing and signature
+Greeting
+Sender’s address and date
+Greeting introduces the reader-facing salutation before the body in this supplied layout.
+Sender’s address and date identifies the sender and date before the greeting and body in this supplied layout.
+[{"cue": "a letter explaining a problem and requesting action", "answer": "state the reason, explain relevant facts, then make the request", "distractors": ["every Russian letter must put its main point last"]}, {"cue": "Здравствуйте!", "answer": "a greeting, not a rule about how close the recipient is", "distractors": ["every unfamiliar recipient forbids any greeting translated as dear"]}, {"cue": "Body", "answer": "Closing and signature", "distractors": ["Greeting", "Sender’s address and date"]}]
+shippedText=Greeting introduces the reader-facing salutation before the body in this supplied layout.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Independently authored Russian Companion pending letter correction,2026-10-11; retained Russian examples; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9eb8191a1f3f63e03e646fb305215ba8401e5a1c31ae1f6d2aa79f670ed6af3c
+contentHash=6e7fa4bc1bfb4651e322a5166ea4283a9c53988766dfbca6f42774a4f1c613e2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-letter-label-3`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-orient, u26-s-letter-writing
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d3e8315e0c75ed3f7fade461ed721c8ce688c4831294a112e7638f7d081c31f3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-letter-writing
+originalSourceText=Retained licensed ReadyRussian letter span/examples and existing pending letter-limit correction; Gramota Pismovnik https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-sostavit-pismo and kakimi-byvayut-delovye-pisma: official indexed search evidence consulted 2026-10-11, full pages returned403. Independently authored supplied English framework and scope-inference applications; not universal genre or register acceptance.
+Apply a supplied letter framework without universal style rules
+Organize the supplied problem-and-request letter
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+Distinguish the greeting, body and closing
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Guided practice
+Use the supplied framework and the conversational function of each letter part. A miss returns to the complete explanation.
+Review the full letter framework and greeting distinction
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Which English plan fits the supplied problem-and-request framework?
+a letter explaining a problem and requesting action
+The cue is a letter explaining a problem and requesting action. In the supplied framework, state the reason, explain relevant facts, then make the request. That organization supports this particular purpose; it is not a universal national word-order rule.
+state the reason, explain relevant facts, then make the request
+every Russian letter must put its main point last
+every Russian letter must put its main point last overgeneralizes from one framework to all letters and purposes.
+Which English inference is supported by the shown neutral greeting?
+Здравствуйте!
+Здравствуйте! supports a greeting, not a rule about how close the recipient is. Its greeting function does not establish an absolute prohibition based on an English salutation translation.
+a greeting, not a rule about how close the recipient is
+every unfamiliar recipient forbids any greeting translated as dear
+every unfamiliar recipient forbids any greeting translated as dear is not established by the meaning of Здравствуйте!; a greeting does not determine every relationship or register.
+In the supplied letter layout, which English element follows the body?
+Body
+In the supplied layout, Body is followed by Closing and signature. This identifies the next part of the demonstrated framework rather than prescribing every possible letter format.
+Closing and signature
+Greeting
+Sender’s address and date
+Greeting introduces the reader-facing salutation before the body in this supplied layout.
+Sender’s address and date identifies the sender and date before the greeting and body in this supplied layout.
+[{"cue": "a letter explaining a problem and requesting action", "answer": "state the reason, explain relevant facts, then make the request", "distractors": ["every Russian letter must put its main point last"]}, {"cue": "Здравствуйте!", "answer": "a greeting, not a rule about how close the recipient is", "distractors": ["every unfamiliar recipient forbids any greeting translated as dear"]}, {"cue": "Body", "answer": "Closing and signature", "distractors": ["Greeting", "Sender’s address and date"]}]
+shippedText=Distinguish the greeting, body and closing
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Independently authored Russian Companion pending letter correction,2026-10-11; retained Russian examples; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9eb8191a1f3f63e03e646fb305215ba8401e5a1c31ae1f6d2aa79f670ed6af3c
+contentHash=096d77f13341013670af542fd2f3a6fb8f66956907280d4e7d9e4287d142a0cb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-letter-label-30`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-orient, u26-s-letter-writing
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: df73c0be26723a41e6af94a2e6dc868c13876839c9a32d8cdd67b8676133c647
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-letter-writing
+originalSourceText=Retained licensed ReadyRussian letter span/examples and existing pending letter-limit correction; Gramota Pismovnik https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-sostavit-pismo and kakimi-byvayut-delovye-pisma: official indexed search evidence consulted 2026-10-11, full pages returned403. Independently authored supplied English framework and scope-inference applications; not universal genre or register acceptance.
+Apply a supplied letter framework without universal style rules
+Organize the supplied problem-and-request letter
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+Distinguish the greeting, body and closing
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Guided practice
+Use the supplied framework and the conversational function of each letter part. A miss returns to the complete explanation.
+Review the full letter framework and greeting distinction
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Which English plan fits the supplied problem-and-request framework?
+a letter explaining a problem and requesting action
+The cue is a letter explaining a problem and requesting action. In the supplied framework, state the reason, explain relevant facts, then make the request. That organization supports this particular purpose; it is not a universal national word-order rule.
+state the reason, explain relevant facts, then make the request
+every Russian letter must put its main point last
+every Russian letter must put its main point last overgeneralizes from one framework to all letters and purposes.
+Which English inference is supported by the shown neutral greeting?
+Здравствуйте!
+Здравствуйте! supports a greeting, not a rule about how close the recipient is. Its greeting function does not establish an absolute prohibition based on an English salutation translation.
+a greeting, not a rule about how close the recipient is
+every unfamiliar recipient forbids any greeting translated as dear
+every unfamiliar recipient forbids any greeting translated as dear is not established by the meaning of Здравствуйте!; a greeting does not determine every relationship or register.
+In the supplied letter layout, which English element follows the body?
+Body
+In the supplied layout, Body is followed by Closing and signature. This identifies the next part of the demonstrated framework rather than prescribing every possible letter format.
+Closing and signature
+Greeting
+Sender’s address and date
+Greeting introduces the reader-facing salutation before the body in this supplied layout.
+Sender’s address and date identifies the sender and date before the greeting and body in this supplied layout.
+[{"cue": "a letter explaining a problem and requesting action", "answer": "state the reason, explain relevant facts, then make the request", "distractors": ["every Russian letter must put its main point last"]}, {"cue": "Здравствуйте!", "answer": "a greeting, not a rule about how close the recipient is", "distractors": ["every unfamiliar recipient forbids any greeting translated as dear"]}, {"cue": "Body", "answer": "Closing and signature", "distractors": ["Greeting", "Sender’s address and date"]}]
+shippedText=Sender’s address and date identifies the sender and date before the greeting and body in this supplied layout.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Independently authored Russian Companion pending letter correction,2026-10-11; retained Russian examples; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9eb8191a1f3f63e03e646fb305215ba8401e5a1c31ae1f6d2aa79f670ed6af3c
+contentHash=c4307bdd126ae1263bcb95cd736af725e4e5333e9fe93ea1c5c20ad6e720f454
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-letter-label-4`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-orient, u26-s-letter-writing
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cee8af44c2767ce6d90a281939b521c8576b2cb5078b2fcce4987509fcb7afcb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-letter-writing
+originalSourceText=Retained licensed ReadyRussian letter span/examples and existing pending letter-limit correction; Gramota Pismovnik https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-sostavit-pismo and kakimi-byvayut-delovye-pisma: official indexed search evidence consulted 2026-10-11, full pages returned403. Independently authored supplied English framework and scope-inference applications; not universal genre or register acceptance.
+Apply a supplied letter framework without universal style rules
+Organize the supplied problem-and-request letter
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+Distinguish the greeting, body and closing
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Guided practice
+Use the supplied framework and the conversational function of each letter part. A miss returns to the complete explanation.
+Review the full letter framework and greeting distinction
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Which English plan fits the supplied problem-and-request framework?
+a letter explaining a problem and requesting action
+The cue is a letter explaining a problem and requesting action. In the supplied framework, state the reason, explain relevant facts, then make the request. That organization supports this particular purpose; it is not a universal national word-order rule.
+state the reason, explain relevant facts, then make the request
+every Russian letter must put its main point last
+every Russian letter must put its main point last overgeneralizes from one framework to all letters and purposes.
+Which English inference is supported by the shown neutral greeting?
+Здравствуйте!
+Здравствуйте! supports a greeting, not a rule about how close the recipient is. Its greeting function does not establish an absolute prohibition based on an English salutation translation.
+a greeting, not a rule about how close the recipient is
+every unfamiliar recipient forbids any greeting translated as dear
+every unfamiliar recipient forbids any greeting translated as dear is not established by the meaning of Здравствуйте!; a greeting does not determine every relationship or register.
+In the supplied letter layout, which English element follows the body?
+Body
+In the supplied layout, Body is followed by Closing and signature. This identifies the next part of the demonstrated framework rather than prescribing every possible letter format.
+Closing and signature
+Greeting
+Sender’s address and date
+Greeting introduces the reader-facing salutation before the body in this supplied layout.
+Sender’s address and date identifies the sender and date before the greeting and body in this supplied layout.
+[{"cue": "a letter explaining a problem and requesting action", "answer": "state the reason, explain relevant facts, then make the request", "distractors": ["every Russian letter must put its main point last"]}, {"cue": "Здравствуйте!", "answer": "a greeting, not a rule about how close the recipient is", "distractors": ["every unfamiliar recipient forbids any greeting translated as dear"]}, {"cue": "Body", "answer": "Closing and signature", "distractors": ["Greeting", "Sender’s address and date"]}]
+shippedText=Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Independently authored Russian Companion pending letter correction,2026-10-11; retained Russian examples; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9eb8191a1f3f63e03e646fb305215ba8401e5a1c31ae1f6d2aa79f670ed6af3c
+contentHash=3c19a863747a8c37c763af210fa60c71ed4540111a570f9bb5a5c0d9b843b99c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-letter-label-5`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-orient, u26-s-letter-writing
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: efdc65ba3073a5a1aed694dd4f88f1ad56154420a43e47221fd9646a1975d8e2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-letter-writing
+originalSourceText=Retained licensed ReadyRussian letter span/examples and existing pending letter-limit correction; Gramota Pismovnik https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-sostavit-pismo and kakimi-byvayut-delovye-pisma: official indexed search evidence consulted 2026-10-11, full pages returned403. Independently authored supplied English framework and scope-inference applications; not universal genre or register acceptance.
+Apply a supplied letter framework without universal style rules
+Organize the supplied problem-and-request letter
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+Distinguish the greeting, body and closing
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Guided practice
+Use the supplied framework and the conversational function of each letter part. A miss returns to the complete explanation.
+Review the full letter framework and greeting distinction
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Which English plan fits the supplied problem-and-request framework?
+a letter explaining a problem and requesting action
+The cue is a letter explaining a problem and requesting action. In the supplied framework, state the reason, explain relevant facts, then make the request. That organization supports this particular purpose; it is not a universal national word-order rule.
+state the reason, explain relevant facts, then make the request
+every Russian letter must put its main point last
+every Russian letter must put its main point last overgeneralizes from one framework to all letters and purposes.
+Which English inference is supported by the shown neutral greeting?
+Здравствуйте!
+Здравствуйте! supports a greeting, not a rule about how close the recipient is. Its greeting function does not establish an absolute prohibition based on an English salutation translation.
+a greeting, not a rule about how close the recipient is
+every unfamiliar recipient forbids any greeting translated as dear
+every unfamiliar recipient forbids any greeting translated as dear is not established by the meaning of Здравствуйте!; a greeting does not determine every relationship or register.
+In the supplied letter layout, which English element follows the body?
+Body
+In the supplied layout, Body is followed by Closing and signature. This identifies the next part of the demonstrated framework rather than prescribing every possible letter format.
+Closing and signature
+Greeting
+Sender’s address and date
+Greeting introduces the reader-facing salutation before the body in this supplied layout.
+Sender’s address and date identifies the sender and date before the greeting and body in this supplied layout.
+[{"cue": "a letter explaining a problem and requesting action", "answer": "state the reason, explain relevant facts, then make the request", "distractors": ["every Russian letter must put its main point last"]}, {"cue": "Здравствуйте!", "answer": "a greeting, not a rule about how close the recipient is", "distractors": ["every unfamiliar recipient forbids any greeting translated as dear"]}, {"cue": "Body", "answer": "Closing and signature", "distractors": ["Greeting", "Sender’s address and date"]}]
+shippedText=Guided practice
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Independently authored Russian Companion pending letter correction,2026-10-11; retained Russian examples; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9eb8191a1f3f63e03e646fb305215ba8401e5a1c31ae1f6d2aa79f670ed6af3c
+contentHash=cb1d4a3d9d5db425da3797c7a997db3588ec122a60c4d645ea31cd849f76ab3c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-letter-label-6`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-orient, u26-s-letter-writing
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1ae409e36fbdd206a5b25bec540bab76cae2cbb51e937f53fe7d5db5eb88c686
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-letter-writing
+originalSourceText=Retained licensed ReadyRussian letter span/examples and existing pending letter-limit correction; Gramota Pismovnik https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-sostavit-pismo and kakimi-byvayut-delovye-pisma: official indexed search evidence consulted 2026-10-11, full pages returned403. Independently authored supplied English framework and scope-inference applications; not universal genre or register acceptance.
+Apply a supplied letter framework without universal style rules
+Organize the supplied problem-and-request letter
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+Distinguish the greeting, body and closing
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Guided practice
+Use the supplied framework and the conversational function of each letter part. A miss returns to the complete explanation.
+Review the full letter framework and greeting distinction
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Which English plan fits the supplied problem-and-request framework?
+a letter explaining a problem and requesting action
+The cue is a letter explaining a problem and requesting action. In the supplied framework, state the reason, explain relevant facts, then make the request. That organization supports this particular purpose; it is not a universal national word-order rule.
+state the reason, explain relevant facts, then make the request
+every Russian letter must put its main point last
+every Russian letter must put its main point last overgeneralizes from one framework to all letters and purposes.
+Which English inference is supported by the shown neutral greeting?
+Здравствуйте!
+Здравствуйте! supports a greeting, not a rule about how close the recipient is. Its greeting function does not establish an absolute prohibition based on an English salutation translation.
+a greeting, not a rule about how close the recipient is
+every unfamiliar recipient forbids any greeting translated as dear
+every unfamiliar recipient forbids any greeting translated as dear is not established by the meaning of Здравствуйте!; a greeting does not determine every relationship or register.
+In the supplied letter layout, which English element follows the body?
+Body
+In the supplied layout, Body is followed by Closing and signature. This identifies the next part of the demonstrated framework rather than prescribing every possible letter format.
+Closing and signature
+Greeting
+Sender’s address and date
+Greeting introduces the reader-facing salutation before the body in this supplied layout.
+Sender’s address and date identifies the sender and date before the greeting and body in this supplied layout.
+[{"cue": "a letter explaining a problem and requesting action", "answer": "state the reason, explain relevant facts, then make the request", "distractors": ["every Russian letter must put its main point last"]}, {"cue": "Здравствуйте!", "answer": "a greeting, not a rule about how close the recipient is", "distractors": ["every unfamiliar recipient forbids any greeting translated as dear"]}, {"cue": "Body", "answer": "Closing and signature", "distractors": ["Greeting", "Sender’s address and date"]}]
+shippedText=Use the supplied framework and the conversational function of each letter part. A miss returns to the complete explanation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Independently authored Russian Companion pending letter correction,2026-10-11; retained Russian examples; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9eb8191a1f3f63e03e646fb305215ba8401e5a1c31ae1f6d2aa79f670ed6af3c
+contentHash=22a5e0dbebf22748d327d3abaccaf53f9b79d549707a2efb9bf91890bcd9dd83
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-letter-label-7`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-orient, u26-s-letter-writing
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2c955d97e61842b1f2116f05f1286fbdf1646e0dd154078f9c39ed3f4b4642bc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-letter-writing
+originalSourceText=Retained licensed ReadyRussian letter span/examples and existing pending letter-limit correction; Gramota Pismovnik https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-sostavit-pismo and kakimi-byvayut-delovye-pisma: official indexed search evidence consulted 2026-10-11, full pages returned403. Independently authored supplied English framework and scope-inference applications; not universal genre or register acceptance.
+Apply a supplied letter framework without universal style rules
+Organize the supplied problem-and-request letter
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+Distinguish the greeting, body and closing
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Guided practice
+Use the supplied framework and the conversational function of each letter part. A miss returns to the complete explanation.
+Review the full letter framework and greeting distinction
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Which English plan fits the supplied problem-and-request framework?
+a letter explaining a problem and requesting action
+The cue is a letter explaining a problem and requesting action. In the supplied framework, state the reason, explain relevant facts, then make the request. That organization supports this particular purpose; it is not a universal national word-order rule.
+state the reason, explain relevant facts, then make the request
+every Russian letter must put its main point last
+every Russian letter must put its main point last overgeneralizes from one framework to all letters and purposes.
+Which English inference is supported by the shown neutral greeting?
+Здравствуйте!
+Здравствуйте! supports a greeting, not a rule about how close the recipient is. Its greeting function does not establish an absolute prohibition based on an English salutation translation.
+a greeting, not a rule about how close the recipient is
+every unfamiliar recipient forbids any greeting translated as dear
+every unfamiliar recipient forbids any greeting translated as dear is not established by the meaning of Здравствуйте!; a greeting does not determine every relationship or register.
+In the supplied letter layout, which English element follows the body?
+Body
+In the supplied layout, Body is followed by Closing and signature. This identifies the next part of the demonstrated framework rather than prescribing every possible letter format.
+Closing and signature
+Greeting
+Sender’s address and date
+Greeting introduces the reader-facing salutation before the body in this supplied layout.
+Sender’s address and date identifies the sender and date before the greeting and body in this supplied layout.
+[{"cue": "a letter explaining a problem and requesting action", "answer": "state the reason, explain relevant facts, then make the request", "distractors": ["every Russian letter must put its main point last"]}, {"cue": "Здравствуйте!", "answer": "a greeting, not a rule about how close the recipient is", "distractors": ["every unfamiliar recipient forbids any greeting translated as dear"]}, {"cue": "Body", "answer": "Closing and signature", "distractors": ["Greeting", "Sender’s address and date"]}]
+shippedText=Review the full letter framework and greeting distinction
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Independently authored Russian Companion pending letter correction,2026-10-11; retained Russian examples; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9eb8191a1f3f63e03e646fb305215ba8401e5a1c31ae1f6d2aa79f670ed6af3c
+contentHash=f2d7e3b64dab5c4dad7064838e44793d2d93a995360fe4186747afbab5c71bf2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-letter-label-8`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-orient, u26-s-letter-writing
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9ba7ab24ea266b01faa4fa86d22aad4a89d43fb8b5b15f745179df84e25cab4e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-letter-writing
+originalSourceText=Retained licensed ReadyRussian letter span/examples and existing pending letter-limit correction; Gramota Pismovnik https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-sostavit-pismo and kakimi-byvayut-delovye-pisma: official indexed search evidence consulted 2026-10-11, full pages returned403. Independently authored supplied English framework and scope-inference applications; not universal genre or register acceptance.
+Apply a supplied letter framework without universal style rules
+Organize the supplied problem-and-request letter
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+Distinguish the greeting, body and closing
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Guided practice
+Use the supplied framework and the conversational function of each letter part. A miss returns to the complete explanation.
+Review the full letter framework and greeting distinction
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Which English plan fits the supplied problem-and-request framework?
+a letter explaining a problem and requesting action
+The cue is a letter explaining a problem and requesting action. In the supplied framework, state the reason, explain relevant facts, then make the request. That organization supports this particular purpose; it is not a universal national word-order rule.
+state the reason, explain relevant facts, then make the request
+every Russian letter must put its main point last
+every Russian letter must put its main point last overgeneralizes from one framework to all letters and purposes.
+Which English inference is supported by the shown neutral greeting?
+Здравствуйте!
+Здравствуйте! supports a greeting, not a rule about how close the recipient is. Its greeting function does not establish an absolute prohibition based on an English salutation translation.
+a greeting, not a rule about how close the recipient is
+every unfamiliar recipient forbids any greeting translated as dear
+every unfamiliar recipient forbids any greeting translated as dear is not established by the meaning of Здравствуйте!; a greeting does not determine every relationship or register.
+In the supplied letter layout, which English element follows the body?
+Body
+In the supplied layout, Body is followed by Closing and signature. This identifies the next part of the demonstrated framework rather than prescribing every possible letter format.
+Closing and signature
+Greeting
+Sender’s address and date
+Greeting introduces the reader-facing salutation before the body in this supplied layout.
+Sender’s address and date identifies the sender and date before the greeting and body in this supplied layout.
+[{"cue": "a letter explaining a problem and requesting action", "answer": "state the reason, explain relevant facts, then make the request", "distractors": ["every Russian letter must put its main point last"]}, {"cue": "Здравствуйте!", "answer": "a greeting, not a rule about how close the recipient is", "distractors": ["every unfamiliar recipient forbids any greeting translated as dear"]}, {"cue": "Body", "answer": "Closing and signature", "distractors": ["Greeting", "Sender’s address and date"]}]
+shippedText=In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Independently authored Russian Companion pending letter correction,2026-10-11; retained Russian examples; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9eb8191a1f3f63e03e646fb305215ba8401e5a1c31ae1f6d2aa79f670ed6af3c
+contentHash=c2cc65537a4cac6d5ac7c6dcd1e141b4353de22e76793772eff707efc51fdc10
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-letter-label-9`
+
+- Objectives: obj-u26-letter-writing
+- Sessions: u26-s-orient, u26-s-letter-writing
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e2b05d272dad3aa0f7390367c74ce162b73d7cd37cc0db047f9157b5bda2bbbb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-letter-writing
+originalSourceText=Retained licensed ReadyRussian letter span/examples and existing pending letter-limit correction; Gramota Pismovnik https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-sostavit-pismo and kakimi-byvayut-delovye-pisma: official indexed search evidence consulted 2026-10-11, full pages returned403. Independently authored supplied English framework and scope-inference applications; not universal genre or register acceptance.
+Apply a supplied letter framework without universal style rules
+Organize the supplied problem-and-request letter
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+Distinguish the greeting, body and closing
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Guided practice
+Use the supplied framework and the conversational function of each letter part. A miss returns to the complete explanation.
+Review the full letter framework and greeting distinction
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Which English plan fits the supplied problem-and-request framework?
+a letter explaining a problem and requesting action
+The cue is a letter explaining a problem and requesting action. In the supplied framework, state the reason, explain relevant facts, then make the request. That organization supports this particular purpose; it is not a universal national word-order rule.
+state the reason, explain relevant facts, then make the request
+every Russian letter must put its main point last
+every Russian letter must put its main point last overgeneralizes from one framework to all letters and purposes.
+Which English inference is supported by the shown neutral greeting?
+Здравствуйте!
+Здравствуйте! supports a greeting, not a rule about how close the recipient is. Its greeting function does not establish an absolute prohibition based on an English salutation translation.
+a greeting, not a rule about how close the recipient is
+every unfamiliar recipient forbids any greeting translated as dear
+every unfamiliar recipient forbids any greeting translated as dear is not established by the meaning of Здравствуйте!; a greeting does not determine every relationship or register.
+In the supplied letter layout, which English element follows the body?
+Body
+In the supplied layout, Body is followed by Closing and signature. This identifies the next part of the demonstrated framework rather than prescribing every possible letter format.
+Closing and signature
+Greeting
+Sender’s address and date
+Greeting introduces the reader-facing salutation before the body in this supplied layout.
+Sender’s address and date identifies the sender and date before the greeting and body in this supplied layout.
+[{"cue": "a letter explaining a problem and requesting action", "answer": "state the reason, explain relevant facts, then make the request", "distractors": ["every Russian letter must put its main point last"]}, {"cue": "Здравствуйте!", "answer": "a greeting, not a rule about how close the recipient is", "distractors": ["every unfamiliar recipient forbids any greeting translated as dear"]}, {"cue": "Body", "answer": "Closing and signature", "distractors": ["Greeting", "Sender’s address and date"]}]
+shippedText=Independent checks
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Independently authored Russian Companion pending letter correction,2026-10-11; retained Russian examples; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9eb8191a1f3f63e03e646fb305215ba8401e5a1c31ae1f6d2aa79f670ed6af3c
+contentHash=012ab8f74509f135e510ad3d930ff2e1b92c944e2d060f0b35ddeee63616b486
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -19406,34 +21363,52 @@ exactSpan===== Серия на ''-то'' ====
 
 - Objectives: obj-u26-letter-writing
 - Sessions: none
-- Source: src-readyrussian-letter
-- Rights: rights-readyrussian-letter
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: SOURCE_CAPABILITY
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 73e9003ee6e0be5fe434f934cabc72cb44ea615124e07df57c9ac5d8f77d37b0
+- Content hash: 23de6c239d79587aebd541409fd3ef1784649d0bde419dd98914e25fd90f8e89
 
-sourceId=src-readyrussian-letter
-sourceRevision=aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218
-sourceRecordId=letter:They have the same basic elements:</p>
-<ol class="L1">
-<li class="P14" lang="en"
-sourceHash=f6ba97d4c567d78420c3a01ee846558ea09c75a3f5729867a750abbaea36b4e2
+sourceId=src-content-audit-research
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-letter-writing
+sourceHash=9eb8191a1f3f63e03e646fb305215ba8401e5a1c31ae1f6d2aa79f670ed6af3c
 supportedClaim=letter-writing
-exactSpan=They have the same basic elements:</p>
-<ol class="L1">
-<li class="P14" lang="en">Sender’s address <span class="T12">and date</span></li>
-<li class="P15" lang="en">Greeting</li>
-<li class="P15" lang="en">Body</li>
-<li class="P15" lang="en">Closing and signature</li>
-</ol>
-<p class="P11" lang="en">But there are two important differences:</p>
-<ol class="L2">
-<li class="P16" lang="en">Strangers and people who are not closed friends should never be addressed as “dear”.</li>
-<li class="P16" lang="en">In English we begin with a topic sentence and then follow with supporting facts. In Russian the facts come first with the topic sentence as the conclusion.</li>
-</ol>
-<h2 class="Heading_20_2" lang="en">Greeting</h2>
-<p class="RuDefinition" lang="en"><span class="T8" lang="ru">Здр</span><span class="T9" lang="ru">а</span><span class="T8" lang="ru">вствуйте!</span>—Greetings</p>
-<p class="RuDefinition" lang="en"><span class="T10" lang="ru">Уважаемый</span><span class="T8" lang="ru"> Иван Иван</span><span class="T10" lang="ru">ов</span><span class="T8" lang="ru">ич</span>—Respected Ivan Ivanovich
+exactSpan=Retained licensed ReadyRussian letter span/examples and existing pending letter-limit correction; Gramota Pismovnik https://gramota.ru/biblioteka/spravochniki/pismovnik/kak-sostavit-pismo and kakimi-byvayut-delovye-pisma: official indexed search evidence consulted 2026-10-11, full pages returned403. Independently authored supplied English framework and scope-inference applications; not universal genre or register acceptance.
+Apply a supplied letter framework without universal style rules
+Organize the supplied problem-and-request letter
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+Distinguish the greeting, body and closing
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Guided practice
+Use the supplied framework and the conversational function of each letter part. A miss returns to the complete explanation.
+Review the full letter framework and greeting distinction
+In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.
+
+Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Which English plan fits the supplied problem-and-request framework?
+a letter explaining a problem and requesting action
+The cue is a letter explaining a problem and requesting action. In the supplied framework, state the reason, explain relevant facts, then make the request. That organization supports this particular purpose; it is not a universal national word-order rule.
+state the reason, explain relevant facts, then make the request
+every Russian letter must put its main point last
+every Russian letter must put its main point last overgeneralizes from one framework to all letters and purposes.
+Which English inference is supported by the shown neutral greeting?
+Здравствуйте!
+Здравствуйте! supports a greeting, not a rule about how close the recipient is. Its greeting function does not establish an absolute prohibition based on an English salutation translation.
+a greeting, not a rule about how close the recipient is
+every unfamiliar recipient forbids any greeting translated as dear
+every unfamiliar recipient forbids any greeting translated as dear is not established by the meaning of Здравствуйте!; a greeting does not determine every relationship or register.
+In the supplied letter layout, which English element follows the body?
+Body
+In the supplied layout, Body is followed by Closing and signature. This identifies the next part of the demonstrated framework rather than prescribing every possible letter format.
+Closing and signature
+Greeting
+Sender’s address and date
+Greeting introduces the reader-facing salutation before the body in this supplied layout.
+Sender’s address and date identifies the sender and date before the greeting and body in this supplied layout.
+[{"cue": "a letter explaining a problem and requesting action", "answer": "state the reason, explain relevant facts, then make the request", "distractors": ["every Russian letter must put its main point last"]}, {"cue": "Здравствуйте!", "answer": "a greeting, not a rule about how close the recipient is", "distractors": ["every unfamiliar recipient forbids any greeting translated as dear"]}, {"cue": "Body", "answer": "Closing and signature", "distractors": ["Greeting", "Sender’s address and date"]}]
 
 ### SOURCE_CAPABILITY `cap-obj-u26-postal-address`
 
@@ -19935,9 +21910,9 @@ permitsAppUse=true
 - `u26-st-teach-letter-writing-1` EXAMPLE `ex-u26-letter-writing-0`
 - `u26-st-teach-letter-writing-1` EXAMPLE `ex-u26-letter-writing-1`
 - `u26-st-teach-letter-writing-1` REFERENCE `ref-u2630-attribution`
+- `u26-st-teach-letter-writing-2` REFERENCE `ref-u2630-attribution`
 - `u26-st-guided-letter-writing-1` REMEDIATION `u26-st-rem-letter-writing`
 - `u26-st-guided-letter-writing-1` ITEM `u26-g-letter-writing-0`
-- `u26-st-teach-letter-writing-2` REFERENCE `ref-u2630-attribution`
 - `u26-st-rem-letter-writing` EXAMPLE `ex-u26-letter-writing-0`
 - `u26-st-rem-letter-writing` EXAMPLE `ex-u26-letter-writing-1`
 - `u26-st-check-letter-writing` REMEDIATION `u26-st-rem-letter-writing`
@@ -19986,6 +21961,37 @@ permitsAppUse=true
 - `obj-u26-word-order` PROVENANCE `prov-ca-26-606`
 - `obj-u26-word-order` PROVENANCE `prov-ca-26-619`
 - `obj-u26-word-order` PROVENANCE `prov-ca-26-620`
+- `obj-u26-letter-writing` PROVENANCE `prov-ca-u26-letter-capability`
+- `obj-u26-letter-writing` PROVENANCE `prov-ca-u26-letter-label-1`
+- `obj-u26-letter-writing` PROVENANCE `prov-ca-u26-letter-label-10`
+- `obj-u26-letter-writing` PROVENANCE `prov-ca-u26-letter-label-11`
+- `obj-u26-letter-writing` PROVENANCE `prov-ca-u26-letter-label-12`
+- `obj-u26-letter-writing` PROVENANCE `prov-ca-u26-letter-label-13`
+- `obj-u26-letter-writing` PROVENANCE `prov-ca-u26-letter-label-14`
+- `obj-u26-letter-writing` PROVENANCE `prov-ca-u26-letter-label-15`
+- `obj-u26-letter-writing` PROVENANCE `prov-ca-u26-letter-label-16`
+- `obj-u26-letter-writing` PROVENANCE `prov-ca-u26-letter-label-17`
+- `obj-u26-letter-writing` PROVENANCE `prov-ca-u26-letter-label-18`
+- `obj-u26-letter-writing` PROVENANCE `prov-ca-u26-letter-label-19`
+- `obj-u26-letter-writing` PROVENANCE `prov-ca-u26-letter-label-2`
+- `obj-u26-letter-writing` PROVENANCE `prov-ca-u26-letter-label-20`
+- `obj-u26-letter-writing` PROVENANCE `prov-ca-u26-letter-label-21`
+- `obj-u26-letter-writing` PROVENANCE `prov-ca-u26-letter-label-22`
+- `obj-u26-letter-writing` PROVENANCE `prov-ca-u26-letter-label-23`
+- `obj-u26-letter-writing` PROVENANCE `prov-ca-u26-letter-label-24`
+- `obj-u26-letter-writing` PROVENANCE `prov-ca-u26-letter-label-25`
+- `obj-u26-letter-writing` PROVENANCE `prov-ca-u26-letter-label-26`
+- `obj-u26-letter-writing` PROVENANCE `prov-ca-u26-letter-label-27`
+- `obj-u26-letter-writing` PROVENANCE `prov-ca-u26-letter-label-28`
+- `obj-u26-letter-writing` PROVENANCE `prov-ca-u26-letter-label-29`
+- `obj-u26-letter-writing` PROVENANCE `prov-ca-u26-letter-label-3`
+- `obj-u26-letter-writing` PROVENANCE `prov-ca-u26-letter-label-30`
+- `obj-u26-letter-writing` PROVENANCE `prov-ca-u26-letter-label-4`
+- `obj-u26-letter-writing` PROVENANCE `prov-ca-u26-letter-label-5`
+- `obj-u26-letter-writing` PROVENANCE `prov-ca-u26-letter-label-6`
+- `obj-u26-letter-writing` PROVENANCE `prov-ca-u26-letter-label-7`
+- `obj-u26-letter-writing` PROVENANCE `prov-ca-u26-letter-label-8`
+- `obj-u26-letter-writing` PROVENANCE `prov-ca-u26-letter-label-9`
 - `obj-u26-address-notation` PROVENANCE `prov-ex-u26-address-notation-0-en`
 - `obj-u26-address-notation` PROVENANCE `prov-ex-u26-address-notation-0-ru`
 - `obj-u26-address-notation` PROVENANCE `prov-ex-u26-address-notation-0-ru-r0`
