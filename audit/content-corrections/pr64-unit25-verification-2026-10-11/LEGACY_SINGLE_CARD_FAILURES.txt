@@ -1,0 +1,37 @@
+
+Thanks for using JUnit! Support its development at https://junit.org/sponsoring
+
+
+Failures (2):
+  JUnit Vintage:ContentAuditCorrectionTest:negativeAbsenceCheckDoesNotInferGenitiveFromTheMeaningOrSurfaceForm
+    MethodSource [className = 'dev.russiancompanion.v2.ContentAuditCorrectionTest', methodName = 'negativeAbsenceCheckDoesNotInferGenitiveFromTheMeaningOrSurfaceForm', methodParameterTypes = '']
+    => org.junit.ComparisonFailure: expected:<[]не́кто is an indefin...> but was:<[кто — никто́. что — ничто́. The first pair concerns a person and nobody; the second concerns a thing and nothing. The indefinite options не́кто and не́что refer to an unspecified person or thing, not the corresponding nobody/nothing form. Do not treat a similar-looking prefix as proof of the same meaning.
+
+Negative predicative constructions express the absence of a person or thing for an action. The construction selects a case form; it has no nominative form. Compare the indefinite pronoun separately. не́кого спросить — there is nobody to ask. This is absence of a person available for the infinitive action; it differs from an unspecified person and from there is nothing to ask.
+
+]не́кто is an indefin...>
+       org.junit.Assert.assertEquals(Assert.java:117)
+       org.junit.Assert.assertEquals(Assert.java:146)
+       dev.russiancompanion.v2.ContentAuditCorrectionTest.negativeAbsenceCheckDoesNotInferGenitiveFromTheMeaningOrSurfaceForm(ContentAuditCorrectionTest.kt:412)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+  JUnit Vintage:ContentAuditCorrectionTest:courtesyRegisterCorrectionIsTaughtBeforePracticeAndSurvivesRemediation
+    MethodSource [className = 'dev.russiancompanion.v2.ContentAuditCorrectionTest', methodName = 'courtesyRegisterCorrectionIsTaughtBeforePracticeAndSurvivesRemediation', methodParameterTypes = '']
+    => org.junit.ComparisonFailure: expected:<[Извини́те is the polite or plural form. The familiar singular is Извини́].> but was:<[The ending in Извини́те permits polite address to one person or address to more than one person. It does not mean that every use has several listeners. The checked contrast identifies the supplied form, not a rule that a familiar apology is suitable for every relationship. The pronunciation label Pozhalusta in the older source is not another English meaning of please].>
+       org.junit.Assert.assertEquals(Assert.java:117)
+       org.junit.Assert.assertEquals(Assert.java:146)
+       dev.russiancompanion.v2.ContentAuditCorrectionTest.courtesyRegisterCorrectionIsTaughtBeforePracticeAndSurvivesRemediation(ContentAuditCorrectionTest.kt:431)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+
+Test run finished after 873 ms
+[         4 containers found      ]
+[         0 containers skipped    ]
+[         4 containers started    ]
+[         0 containers aborted    ]
+[         4 containers successful ]
+[         0 containers failed     ]
+[         2 tests found           ]
+[         0 tests skipped         ]
+[         2 tests started         ]
+[         0 tests aborted         ]
+[         0 tests successful      ]
+[         2 tests failed          ]

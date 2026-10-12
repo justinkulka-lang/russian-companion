@@ -11,12 +11,12 @@ Unit 25 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 0dec17ab14ed49b7bfc311389db15589d187ba95
-- Unit content-review SHA-256: 4f6aa3777c7e6b3c8b57932d77a4ce6073b8523a00922e1e28bbd286d2bed669
+- Curriculum source commit: a66de8c4f768d96dbb2436c598adf1d7290910d5
+- Unit content-review SHA-256: 0135b723110314ccf313b5f0a267a4c1354a12bc02f977dbb0ef0237c107f1f9
 - Mapping-package SHA-256: 239e966c5d5b4f00ea70616e8ec949d583bb9406407438ab7f04df9fc363bf31
-- Pack content-review SHA-256: 0aaffcd83960764c388d4310ee07e589a8fe09e6de69f28ba6cfe6994c011a7b
-- Review-package SHA-256: e517adbfd86dc4912021aa79303afabef4ba159f640d0c29cfac888a9ed1271d
-- Repository source SHA-256: 9151205f0be2f08f0925be52e22cb4704ec2141222e3c704f7d92713ec4e6c31
+- Pack content-review SHA-256: ba8b4c83a9216302a8c193bbffefaee67f228cb37572ed9c3dce154dc2fcbca8
+- Review-package SHA-256: 75bf81817dde0a025fe3bd8e10201b7b897f986ed352d9e306cd353d56508d60
+- Repository source SHA-256: 05f4c3dad0f9c593f9223e7af65bba7757b9f4c28228b49e578fb1fe4c580cd8
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -113,9 +113,9 @@ tutorOptional=true
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5298c7b6f3b2dd0c98bde90222664740db744fa66c66402ff8c52861556bb955
+- Content hash: d7122e92a11fcf7a2432c26a637a77840e1485bed1cc9f6415cc559883d3c6c0
 
-title=Choose the admitted form paired with the shown name words
+title=Distinguish the parts of a Russian personal name
 kind=RECOGNITION
 unitNumber=25
 instruction=u25-st-orient,u25-st-teach-name-structure-1,u25-st-teach-name-structure-2,u25-st-teach-name-structure-3
@@ -132,9 +132,9 @@ remediation=u25-st-rem-name-structure
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: bbb6b2931bf4b2b2573898f3062c4c49bac3cd1392a087adc1a52f6d8b868668
+- Content hash: c0c20dee3d35bf9e6dc23ae5797e3f62398dd56207cd7fa5d8a4c674a9561ebd
 
-title=Choose the admitted short form paired with the shown name
+title=Recognize conventional short forms of the supplied names
 kind=RECOGNITION
 unitNumber=25
 instruction=u25-st-orient,u25-st-teach-diminutives-1,u25-st-teach-diminutives-2,u25-st-teach-diminutives-3
@@ -151,9 +151,9 @@ remediation=u25-st-rem-diminutives
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 53a626e616f80c4be7178b5bcddd121d0077bd18f62d908e8fc02faa0c872966
+- Content hash: 4b9b35d8bb902dba11b4ff67824769721509435e355a0b0b7037e2be11405e84
 
-title=Choose the admitted form paired with the shown courtesy word
+title=Distinguish a request, thanks and an apology
 kind=RECOGNITION
 unitNumber=25
 instruction=u25-st-orient,u25-st-teach-courtesy-1,u25-st-teach-courtesy-2,u25-st-teach-courtesy-3
@@ -170,9 +170,9 @@ remediation=u25-st-rem-courtesy
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 4c2f71c9406feaf0061a1737fb6858c16109b0e917ead36458a3ab5c0594ea6a
+- Content hash: 0a5028e19ab5c75001859165abf5fdaf90d13f2fc8fb48becf090faffbf11052
 
-title=Choose the admitted form paired with the shown name question or reply
+title=Recognize a name question and the start of its reply
 kind=RECOGNITION
 unitNumber=25
 instruction=u25-st-orient,u25-st-teach-name-question-1,u25-st-teach-name-question-2,u25-st-teach-name-question-3
@@ -189,9 +189,9 @@ remediation=u25-st-rem-name-question
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 6506cdf1eec0e8131cf32f6886dc9b3f676c226e488894b5be12d2d55427c87a
+- Content hash: 90503a0e2aac0011743ee7d8e351c8d68aaacb4520dd1945628ce4b7976bdc0d
 
-title=Classify the shown name form by its admitted base or shade
+title=Classify the documented name forms and their stated coloring
 kind=RECOGNITION
 unitNumber=25
 instruction=u25-st-orient,u25-st-teach-nickname-rule-1,u25-st-teach-nickname-rule-2,u25-st-teach-nickname-rule-3
@@ -208,9 +208,9 @@ remediation=u25-st-rem-nickname-rule
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5a491761c2c7f39f8b00f631139f56b0baed86918818dbad491860c640c07c71
+- Content hash: 1639cbfce40c022e84c3890523857f36aba4a5b29e529d3f299782a37987b2fc
 
-title=Choose the admitted list or setting written for the shown form
+title=Distinguish name-form categories and the illustrated register
 kind=RECOGNITION
 unitNumber=25
 instruction=u25-st-orient,u25-st-teach-address-1,u25-st-teach-address-2,u25-st-teach-address-3
@@ -227,9 +227,9 @@ remediation=u25-st-rem-address
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d6f07298274b0c19d108ca93dd67fe1bd5f0f6bce03bfeb5193c326792e83206
+- Content hash: a9f2b09ae49ec0de5c18ca6862f6317fb299a34b2c4ae23ddb74732d451c3323
 
-title=Documented personal-name forms
+title=Recognize documented name forms without inventing new ones
 kind=RECOGNITION
 unitNumber=25
 instruction=u25-st-teach-name-form-1,u25-st-teach-name-form-2,u25-st-teach-name-form-3
@@ -302,12 +302,12 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 0597959254af3c2e9a2c2f99a0cabe6a048ba080b0c6fadebd136066c0053586
+- Content hash: e4dad6ecdf9bc4c104562a3e936c985eed53ef27a3eb040bb5766246f03d7e63
 
-title=Choose the admitted form paired with the shown name words
+title=Distinguish the parts of a Russian personal name
 estimatedMinutes=12
 objectives=obj-u25-name-structure
-steps=u25-st-teach-name-structure-1,u25-st-guided-name-structure-1,u25-st-teach-name-structure-2,u25-st-teach-name-structure-3,u25-st-rem-name-structure,u25-st-check-name-structure
+steps=u25-st-teach-name-structure-1,u25-st-teach-name-structure-2,u25-st-teach-name-structure-3,u25-st-guided-name-structure-1,u25-st-rem-name-structure,u25-st-check-name-structure
 
 ### STEP `u25-st-teach-name-structure-1`
 
@@ -317,11 +317,11 @@ steps=u25-st-teach-name-structure-1,u25-st-guided-name-structure-1,u25-st-teach-
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5ebc2d759fb342d63588539fa98acc5cb37299fa58e67b47da3fbc633e1b5264
+- Content hash: e1ef96d1f6b274e9e1361f86cffc9fa7a35773993a019534cb03fb5c666aa446
 
 kind=TEACH
-title=Admitted lines
-body=имя — first name. отчество — patronymic name. 
+title=First name, patronymic and family name
+body=имя means first name. отчество means patronymic name. фамилия means family name. A patronymic identifies the father-derived part of a name; it is not the family name. These labels identify three name components rather than three alternative words for the same component.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -331,28 +331,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u25-st-guided-name-structure-1`
-
-- Objectives: obj-u25-name-structure
-- Sessions: u25-s-name-structure
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ac93685faf169847a15c9a4db2275b32337f0854808759f6373e72d8b481ab9d
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u25-g-name-structure-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u25-st-rem-name-structure
-
 ### STEP `u25-st-teach-name-structure-2`
 
 - Objectives: obj-u25-name-structure
@@ -361,11 +339,11 @@ remediationStepId=u25-st-rem-name-structure
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 57ee87c6e70a4c696aa258fc553eac5837298135195e82acb48cf79b75ddfa8c
+- Content hash: 1f9d4f8ccb8a361244dc85427c469b038b7ca2c62e9ae7015c517b052681fa3b
 
 kind=TEACH
-title=Admitted instruction
-body=Russians use three names: first name, or имя; middle or patronymic name, or отчество, which is their father's first name plus a suffix meaning "son of" (ович) or "daughter of" (овна); and the last name or family name, or фамилия.
+title=A suffix is not a whole name category
+body=The retained introductory pattern describes a father's first name with ович, meaning son of, or овна, meaning daughter of. These are suffix labels, not whole words meaning first name, patronymic name or family name. They illustrate common patronymic patterns; they are not an exhaustive formation rule for every name.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -383,11 +361,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5288e9e43d9fdeb13eb7e28fd79fff4f8653f16299d836983b7e1bb587d53de0
+- Content hash: 91a09b805dc8c41c4e1a7498d198ebbe4ddf1f2e41223907ff33ff5397d52c94
 
 kind=TEACH
-title=Admitted lines
-body=фамилия — family name. Василий Иванович — For instance. 
+title=Read the two-part worked example
+body=Василий Иванович shows a first name followed by a patronymic. The surname is not shown. The older note For instance is a source fragment, not a translation of the name. A complete three-component name also has a family name. The choices recognize these components and do not ask you to construct a new patronymic.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -397,6 +375,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u25-st-guided-name-structure-1`
+
+- Objectives: obj-u25-name-structure
+- Sessions: u25-s-name-structure
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: eda7b64561c0f840c6b3803306a7a9bf22ae86783f8da81a9ab6a2a3e3f8f0d5
+
+kind=GUIDED
+title=Guided practice
+body=Use the explanation and the supplied example to identify the requested name form, meaning or register. A missed check returns to the full explanation.
+dominantAction=Continue
+references=
+items=u25-g-name-structure-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u25-st-rem-name-structure
+
 ### STEP `u25-st-rem-name-structure`
 
 - Objectives: obj-u25-name-structure
@@ -405,15 +405,19 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 00c4f9db0f8313754084e72f3cd02e7ecfba000cff9a3b3845f04283f95edf91
+- Content hash: d53e9b6c42d75f4f654fbb3b93174851fc57fa63c94247983c10bed4bf2609f8
 
 kind=REMEDIATE
-title=Remediation
-body=Russians use three names: first name, or имя; middle or patronymic name, or отчество, which is their father's first name plus a suffix meaning "son of" (ович) or "daughter of" (овна); and the last name or family name, or фамилия.
+title=Review the complete name or courtesy distinction
+body=имя means first name. отчество means patronymic name. фамилия means family name. A patronymic identifies the father-derived part of a name; it is not the family name. These labels identify three name components rather than three alternative words for the same component.
+
+The retained introductory pattern describes a father's first name with ович, meaning son of, or овна, meaning daughter of. These are suffix labels, not whole words meaning first name, patronymic name or family name. They illustrate common patronymic patterns; they are not an exhaustive formation rule for every name.
+
+Василий Иванович shows a first name followed by a patronymic. The surname is not shown. The older note For instance is a source fragment, not a translation of the name. A complete three-component name also has a family name. The choices recognize these components and do not ask you to construct a new patronymic.
 dominantAction=Continue
 references=
 items=
-examples=ex-u25-name-structure-0,ex-u25-name-structure-1
+examples=ex-u25-name-structure-0,ex-u25-name-structure-1,ex-u25-name-structure-2,ex-u25-name-structure-3
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -427,11 +431,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f3d7d549a31d0dbad04ec5c886ed6c21fcf6a33c757b29faf67fa3e89f7c6e16
+- Content hash: ad4dac18aadf2859ce57cbfcb62bcbc1c08a8e137e48276efd9c989c1e1058bd
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Use the explanation and the supplied example to identify the requested name form, meaning or register. A missed check returns to the full explanation.
 dominantAction=Continue
 references=
 items=u25-i-name-structure-1,u25-i-name-structure-2
@@ -449,12 +453,12 @@ remediationStepId=u25-st-rem-name-structure
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ff67b755cf26dde838156c03ab13acc61178a6f927944b7ecfa2349d4e1d5d73
+- Content hash: c38c33ca89e5c87b08c218d5897f642d7b3cb7e3c5c987471ec0c1c7bc894077
 
-title=Choose the admitted short form paired with the shown name
+title=Recognize conventional short forms of the supplied names
 estimatedMinutes=12
 objectives=obj-u25-diminutives
-steps=u25-st-teach-diminutives-1,u25-st-guided-diminutives-1,u25-st-teach-diminutives-2,u25-st-teach-diminutives-3,u25-st-rem-diminutives,u25-st-check-diminutives
+steps=u25-st-teach-diminutives-1,u25-st-teach-diminutives-2,u25-st-teach-diminutives-3,u25-st-guided-diminutives-1,u25-st-rem-diminutives,u25-st-check-diminutives
 
 ### STEP `u25-st-teach-diminutives-1`
 
@@ -464,11 +468,11 @@ steps=u25-st-teach-diminutives-1,u25-st-guided-diminutives-1,u25-st-teach-diminu
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 4c3f604018f6f5d97bb16098b7756004b9666f0d35fe25ffe064b0972b13b7a9
+- Content hash: 0ec3ca21f41067ac1b4aa79e0190f7325a30cf4bfa202b93ea1a3eb93fef250e
 
 kind=TEACH
-title=Admitted lines
-body=Александр — Alexander. Алексей — Alexei. 
+title=Full names and the names used in the checks
+body=Александр is Alexander; Алексей is Alexei; Дмитрий is Dmitri. The checked conventional pairs are Alexander with Sasha, Alexei with Alyosha and Dmitri with Dima. A short form is a conventional personal-name form; it is not obtained by simply translating the full name into English.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -478,28 +482,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u25-st-guided-diminutives-1`
-
-- Objectives: obj-u25-diminutives
-- Sessions: u25-s-diminutives
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ed7da4e110d0352e60683c60e39ae3ee357beca439023a1e0c3d617b062a597f
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u25-g-diminutives-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u25-st-rem-diminutives
-
 ### STEP `u25-st-teach-diminutives-2`
 
 - Objectives: obj-u25-diminutives
@@ -508,11 +490,11 @@ remediationStepId=u25-st-rem-diminutives
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a8935282c59a845f52899e27ecc2e6d665b4a6ed5ec2cf987e0a7766f8e5fafd
+- Content hash: 4623016f41fcb4d5e0b0d0912f25c00e0e25397b13f526b72a45c983493089f6
 
 kind=TEACH
-title=Admitted instruction
-body=Some of the most common examples include Sasha for Alexander, Alyosha for Alexei, Misha for Mikhail, Dima for Dmitri, Lena for Elena, Olya for Olga, Natasha for Natalya and Katya for Ekaterina.
+title=Use the right conventional pair
+body=Sasha belongs to the supplied Alexander pair, Alyosha to the Alexei pair and Dima to the Dmitri pair. The other checked short forms belong to different full names in these examples. The retained list also gives Misha for Mikhail, Lena for Elena, Olya for Olga, Natasha for Natalya and Katya for Ekaterina. One name can have several documented forms.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -530,11 +512,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 911d7b2dd9949f05a6b1857f0255d420c8e35eae74a86fab249478cf3771099c
+- Content hash: ad5846945bfb52f5bcac288adbca37dffcae98314b0cbbd41f6897778ea12c66
 
 kind=TEACH
-title=Admitted lines
-body=Дмитрий — Dmitri. 
+title=Recognition is not automatic name formation
+body=These checks use English transliterations of documented pairs. They do not test inventing a Russian spelling or adding a suffix to an unfamiliar name. Short and affectionate names can carry social meaning. Use a documented form and consider how the person wishes to be addressed rather than assuming every familiar form suits every situation.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -544,6 +526,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u25-st-guided-diminutives-1`
+
+- Objectives: obj-u25-diminutives
+- Sessions: u25-s-diminutives
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 3ba410faa185e518f4f3d34dc7c3660123267b92963f774831ec683418758344
+
+kind=GUIDED
+title=Guided practice
+body=Use the explanation and the supplied example to identify the requested name form, meaning or register. A missed check returns to the full explanation.
+dominantAction=Continue
+references=
+items=u25-g-diminutives-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u25-st-rem-diminutives
+
 ### STEP `u25-st-rem-diminutives`
 
 - Objectives: obj-u25-diminutives
@@ -552,15 +556,19 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d77bf477ec9b544bc5f297069f3f5cd8aad1286b1665e9702d7d08de8b2a1410
+- Content hash: 2c09141e84db4e74773bf8edbb633ffdcc4215ab8fa6810357042ba21efba94c
 
 kind=REMEDIATE
-title=Remediation
-body=Some of the most common examples include Sasha for Alexander, Alyosha for Alexei, Misha for Mikhail, Dima for Dmitri, Lena for Elena, Olya for Olga, Natasha for Natalya and Katya for Ekaterina.
+title=Review the complete name or courtesy distinction
+body=Александр is Alexander; Алексей is Alexei; Дмитрий is Dmitri. The checked conventional pairs are Alexander with Sasha, Alexei with Alyosha and Dmitri with Dima. A short form is a conventional personal-name form; it is not obtained by simply translating the full name into English.
+
+Sasha belongs to the supplied Alexander pair, Alyosha to the Alexei pair and Dima to the Dmitri pair. The other checked short forms belong to different full names in these examples. The retained list also gives Misha for Mikhail, Lena for Elena, Olya for Olga, Natasha for Natalya and Katya for Ekaterina. One name can have several documented forms.
+
+These checks use English transliterations of documented pairs. They do not test inventing a Russian spelling or adding a suffix to an unfamiliar name. Short and affectionate names can carry social meaning. Use a documented form and consider how the person wishes to be addressed rather than assuming every familiar form suits every situation.
 dominantAction=Continue
 references=
 items=
-examples=ex-u25-diminutives-0,ex-u25-diminutives-1
+examples=ex-u25-diminutives-0,ex-u25-diminutives-1,ex-u25-diminutives-2
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -574,11 +582,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 23e19c9ede22e8a1b0c879a2b408166bbcbb25d5fdc4231982a093a0de180d9f
+- Content hash: d3d1fc508946031b06bb080d35927516997e6f4ebc468c6071fd60c591ccfbbe
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Use the explanation and the supplied example to identify the requested name form, meaning or register. A missed check returns to the full explanation.
 dominantAction=Continue
 references=
 items=u25-i-diminutives-1,u25-i-diminutives-2
@@ -596,9 +604,9 @@ remediationStepId=u25-st-rem-diminutives
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8ecd78e7c7333ce77cd62e186f9f6ec078b3117510609b280aee3ad43c31233f
+- Content hash: 26ca5776bc79481a639637312e35eb2921768ce5a95473bf9c156253292e75aa
 
-title=Choose the admitted form paired with the shown courtesy word
+title=Distinguish a request, thanks and an apology
 estimatedMinutes=12
 objectives=obj-u25-courtesy
 steps=u25-st-teach-courtesy-1,u25-st-teach-courtesy-2,u25-st-teach-courtesy-3,u25-st-guided-courtesy-1,u25-st-rem-courtesy,u25-st-check-courtesy
@@ -611,11 +619,11 @@ steps=u25-st-teach-courtesy-1,u25-st-teach-courtesy-2,u25-st-teach-courtesy-3,u2
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: db55e9b876666a11a973db9b18afd605fa3607ad9e1f40106196a17c8e22f503
+- Content hash: de9092ea18f91f1d075139d17e7bacf20096680585751dc22110ae57297c7454
 
 kind=TEACH
-title=Admitted lines
-body=Пожа́луйста — please. Спаси́бо — thanks. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+title=Request and thanks have different functions
+body=Пожа́луйста means please in the supplied request use. Спаси́бо means thanks or thank you. A request asks for something; thanks responds with gratitude. The checks use these functions rather than treating all courtesy words as interchangeable.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -633,11 +641,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 0cd7684ee915254f9ba2e1d9b5dc40a35b698098588f42e5f566929d1d455cf8
+- Content hash: 7429d4cafe618e520096bcd9b4f5dfc7037ae231240bf198355311c9c59a51a9
 
 kind=TEACH
-title=Admitted instruction
-body=;Пожа́луйста (Pozhalusta) :please
+title=An apology is not thanks
+body=Извини́те means excuse me with polite or plural address. Извини́ is the familiar singular form. In the checked descriptions, excuse me, polite or plural identifies the first form; excuse me, familiar singular identifies the second. Neither is the thank you response.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -655,11 +663,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 4cf121f3cdf3bea9de11ec6097dbceeea7f041c524a4532637d12676f1baae42
+- Content hash: 1694bb21a413275853da2559ae65a335c7760cf66678f6ab18a5125d0e561877
 
 kind=TEACH
-title=Admitted lines
-body=Извини́те is the polite or plural form. The familiar singular is Извини́.
+title=Read the address distinction
+body=The ending in Извини́те permits polite address to one person or address to more than one person. It does not mean that every use has several listeners. The checked contrast identifies the supplied form, not a rule that a familiar apology is suitable for every relationship. The pronunciation label Pozhalusta in the older source is not another English meaning of please.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -677,11 +685,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f83e11702f7324d84233039e4676405926b5a6bec47b2c544619656722cfaf1e
+- Content hash: 82d7a5776f81f552014686bc013f5fb5d655c64bf4423ed67b5b3fd33b3a8b9e
 
 kind=GUIDED
 title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
+body=Use the explanation and the supplied example to identify the requested name form, meaning or register. A missed check returns to the full explanation.
 dominantAction=Continue
 references=
 items=u25-g-courtesy-0
@@ -699,11 +707,15 @@ remediationStepId=u25-st-rem-courtesy
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1b9d2ffe11b72f415f865feae7ca9842b0f5d312b914711f8dd997cc359c1932
+- Content hash: 32f046926521783d76a955b64ab24666b41f94439ebc141314d3592984ceb207
 
 kind=REMEDIATE
-title=Remediation
-body=Извини́те is the polite or plural form. The familiar singular is Извини́.
+title=Review the complete name or courtesy distinction
+body=Пожа́луйста means please in the supplied request use. Спаси́бо means thanks or thank you. A request asks for something; thanks responds with gratitude. The checks use these functions rather than treating all courtesy words as interchangeable.
+
+Извини́те means excuse me with polite or plural address. Извини́ is the familiar singular form. In the checked descriptions, excuse me, polite or plural identifies the first form; excuse me, familiar singular identifies the second. Neither is the thank you response.
+
+The ending in Извини́те permits polite address to one person or address to more than one person. It does not mean that every use has several listeners. The checked contrast identifies the supplied form, not a rule that a familiar apology is suitable for every relationship. The pronunciation label Pozhalusta in the older source is not another English meaning of please.
 dominantAction=Continue
 references=
 items=
@@ -721,11 +733,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8b78e8a142e8b1e24c6338f62e2dcc03a15c4814e925e6c5459df5bd6cfb81da
+- Content hash: e92458b7274c1aa927ce77b40e8821717051f6a05d3956763954b4bc97d8a737
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Use the explanation and the supplied example to identify the requested name form, meaning or register. A missed check returns to the full explanation.
 dominantAction=Continue
 references=
 items=u25-i-courtesy-1,u25-i-courtesy-2
@@ -743,12 +755,12 @@ remediationStepId=u25-st-rem-courtesy
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e80f4af7c482f6aa61572717aed52d9855eecf4fa4eb11a2514dc54b73d4ede6
+- Content hash: 7b6dbb18e70a786eb261ed265d5d882584ebb6619e762aae8b890a56bb31c489
 
-title=Choose the admitted form paired with the shown name question or reply
+title=Recognize a name question and the start of its reply
 estimatedMinutes=12
 objectives=obj-u25-name-question
-steps=u25-st-teach-name-question-1,u25-st-guided-name-question-1,u25-st-teach-name-question-2,u25-st-teach-name-question-3,u25-st-rem-name-question,u25-st-check-name-question
+steps=u25-st-teach-name-question-1,u25-st-teach-name-question-2,u25-st-teach-name-question-3,u25-st-guided-name-question-1,u25-st-rem-name-question,u25-st-check-name-question
 
 ### STEP `u25-st-teach-name-question-1`
 
@@ -758,11 +770,11 @@ steps=u25-st-teach-name-question-1,u25-st-guided-name-question-1,u25-st-teach-na
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c65c9d939d4d67d840eb04eb8f9ebf17b5f1651dab8d7ff56024f9bcb5d82f31
+- Content hash: 46df7b885d9a0ed0c13db5146d1177608e3a59052f676bb9353d17c10b344784
 
 kind=TEACH
-title=Admitted lines
-body=Как Вас зову́т? — What is your name? Меня́ зову́т — My name is... Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+title=Ask for a name
+body=Как Вас зову́т? means What is your name? This supplied formula uses polite or plural address. The capital letter is a written courtesy convention; it does not create a different spoken pronoun. The question asks for a name rather than for an apology or a general report of how someone is doing.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -772,28 +784,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u25-st-guided-name-question-1`
-
-- Objectives: obj-u25-name-question
-- Sessions: u25-s-name-question
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 0a648eb05d9cd325312439857da2e7d7b16ac52805e8ab523e4708ed06cd7ced
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u25-g-name-question-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u25-st-rem-name-question
-
 ### STEP `u25-st-teach-name-question-2`
 
 - Objectives: obj-u25-name-question
@@ -802,11 +792,11 @@ remediationStepId=u25-st-rem-name-question
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 2aa6d6839ad70706b3d35c1076ba2997641b10bdb567ea0ee8d4627871d3ee21
+- Content hash: 2ee3bdd488a6b094625deeea2a22f9cc5cf2ffa3cf029e0422b7745162dde73f
 
 kind=TEACH
-title=Admitted instruction
-body=;Как Вас зову́т? (Kak Vas zovut?) :What is your name?
+title=Begin the reply and then give the name
+body=Меня́ зову́т means My name is... It starts the name reply and must be followed by a name to give the requested information. The check recognizes that reply opening; it does not treat the fragment alone as a completed personal introduction.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -824,11 +814,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 43752853fedc726426d59b61429fe9a305d5bdf281cd30c2eb2e9e86ccd3f793
+- Content hash: 74595c087936eacf32c54397d84c33184096abcd7d0da3fa3d977f74cd9f7fec
 
 kind=TEACH
-title=Admitted lines
-body=Прошу́ проще́ния — I'm sorry / excuse me (formal). Как дела́? — How are you? 
+title=Distinguish the other conversational functions
+body=Прошу́ проще́ния means I'm sorry / excuse me (formal), an apology. Как дела́? means How are you?, another question. Neither supplies the name requested by Как Вас зову́т? The matching reply opening is Меня́ зову́т. Use the conversational function of each formula rather than choosing another question.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -838,6 +828,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u25-st-guided-name-question-1`
+
+- Objectives: obj-u25-name-question
+- Sessions: u25-s-name-question
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 12dd63b1af5ecbfd5f7cbd888fd2dbd9b886710b0aac6451a02bed886045decb
+
+kind=GUIDED
+title=Guided practice
+body=Use the explanation and the supplied example to identify the requested name form, meaning or register. A missed check returns to the full explanation.
+dominantAction=Continue
+references=
+items=u25-g-name-question-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u25-st-rem-name-question
+
 ### STEP `u25-st-rem-name-question`
 
 - Objectives: obj-u25-name-question
@@ -846,15 +858,19 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 9327d3f6ed682430e4b4dd666406b83bbaa3e00d350ae018b48537c4b52219ba
+- Content hash: 8cd78ab6c6d3c5932a598eda0f6a08f3f9304c9d97ac96e62214b774c24217a2
 
 kind=REMEDIATE
-title=Remediation
-body=;Как Вас зову́т? (Kak Vas zovut?) :What is your name?
+title=Review the complete name or courtesy distinction
+body=Как Вас зову́т? means What is your name? This supplied formula uses polite or plural address. The capital letter is a written courtesy convention; it does not create a different spoken pronoun. The question asks for a name rather than for an apology or a general report of how someone is doing.
+
+Меня́ зову́т means My name is... It starts the name reply and must be followed by a name to give the requested information. The check recognizes that reply opening; it does not treat the fragment alone as a completed personal introduction.
+
+Прошу́ проще́ния means I'm sorry / excuse me (formal), an apology. Как дела́? means How are you?, another question. Neither supplies the name requested by Как Вас зову́т? The matching reply opening is Меня́ зову́т. Use the conversational function of each formula rather than choosing another question.
 dominantAction=Continue
 references=
 items=
-examples=ex-u25-name-question-0,ex-u25-name-question-1
+examples=ex-u25-name-question-0,ex-u25-name-question-1,ex-u25-name-question-2,ex-u25-name-question-3
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -868,11 +884,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5bb1c83c88e79c25a5bdae79ea6d19c00f5f8e99847368af37db1a958e6d579e
+- Content hash: 1941743a502d19eac9338c70e324550b09974bdc64c6ddf3af74e1d923704064
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Use the explanation and the supplied example to identify the requested name form, meaning or register. A missed check returns to the full explanation.
 dominantAction=Continue
 references=
 items=u25-i-name-question-1,u25-i-name-question-2
@@ -890,12 +906,12 @@ remediationStepId=u25-st-rem-name-question
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: fc05d82c2136b968ca50c42413ffd66ee404f9209cfd5c12f68057099e149889
+- Content hash: 72067f34b61b07d73cd146c346a5257b83bc7ca82a924c78cf8cb69ddf701a3d
 
-title=Classify the shown name form by its admitted base or shade
+title=Classify the documented name forms and their stated coloring
 estimatedMinutes=12
 objectives=obj-u25-nickname-rule
-steps=u25-st-teach-nickname-rule-1,u25-st-guided-nickname-rule-1,u25-st-teach-nickname-rule-2,u25-st-teach-nickname-rule-3,u25-st-rem-nickname-rule,u25-st-check-nickname-rule
+steps=u25-st-teach-nickname-rule-1,u25-st-teach-nickname-rule-2,u25-st-teach-nickname-rule-3,u25-st-guided-nickname-rule-1,u25-st-rem-nickname-rule,u25-st-check-nickname-rule
 
 ### STEP `u25-st-teach-nickname-rule-1`
 
@@ -905,11 +921,11 @@ steps=u25-st-teach-nickname-rule-1,u25-st-guided-nickname-rule-1,u25-st-teach-ni
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 605e2d08875d48b3c198860c8f983293570633a8dae3f9ae1d0d1e087f563107
+- Content hash: 1d2fcac64e8e7430ca1475602e31187fb91cb5e70920da926af5e8fc291c0f51
 
 kind=TEACH
-title=Admitted lines
-body=Марюня — от полной формы имени. Машенька — от краткой формы. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+title=Explain the Russian classification labels
+body=Марюня is classified here as от полной формы имени, meaning from the full form of the name. Машенька is classified as от краткой формы, meaning from the short form. The retained examples relate these to Мария and Маша respectively. These are documented examples, not a rule for generating a derivative from any full or short name.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -919,28 +935,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u25-st-guided-nickname-rule-1`
-
-- Objectives: obj-u25-nickname-rule
-- Sessions: u25-s-nickname-rule
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e9b68a2fbdc2061a2801441a344359cce7b28f28b3078d325375759fa2a9b97e
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u25-g-nickname-rule-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u25-st-rem-nickname-rule
-
 ### STEP `u25-st-teach-nickname-rule-2`
 
 - Objectives: obj-u25-nickname-rule
@@ -949,11 +943,11 @@ remediationStepId=u25-st-rem-nickname-rule
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 664ecdfa507aaaaf9d2800484f700887d40f1712de038bb8b6f4801ae71eff9e
+- Content hash: 8056b041a72ba1482b3d134577e8b63d402c34895a081109f47c2b8d88fe7f52
 
 kind=TEACH
-title=Admitted instruction
-body=Уменьшительные имена, образованные при помощи суффикса -к-, несут в себе оттенок пренебрежения
+title=Distinguish derivation from social coloring
+body=Сашка is classified in this material as оттенок пренебрежения, meaning a shade of dismissiveness. That label describes social coloring; the two labels about full and short forms describe derivational bases. A form can have a base and social coloring at the same time. The question asks for the classification documented for this example, not mutually exclusive properties of every name.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -971,11 +965,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 69ff84e8e4bcd099f9496a4e224d63e2ab9a1c9a54eec7f701b7adc4e71eaa74
+- Content hash: 72f6410c8379ed80152d675ea4d4bb3bc342590338602be4155f4fb1041e3662
 
 kind=TEACH
-title=Admitted lines
-body=Сашка — оттенок пренебрежения. 
+title=Keep the coloring claim within its context
+body=The retained text associates diminutive forms with the suffix -к- with dismissive coloring. Treat this as the source's classification of its examples, not proof that every use of every such name is insulting. Relationship, tone and setting affect interpretation. A documented label does not authorize inventing a new personal-name form or addressing someone that way without regard to their preference.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -985,6 +979,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u25-st-guided-nickname-rule-1`
+
+- Objectives: obj-u25-nickname-rule
+- Sessions: u25-s-nickname-rule
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: b4d936340db44c6fc622210c7faee0722f40125fe8724a2c6ac0f53b048d493b
+
+kind=GUIDED
+title=Guided practice
+body=Use the explanation and the supplied example to identify the requested name form, meaning or register. A missed check returns to the full explanation.
+dominantAction=Continue
+references=
+items=u25-g-nickname-rule-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u25-st-rem-nickname-rule
+
 ### STEP `u25-st-rem-nickname-rule`
 
 - Objectives: obj-u25-nickname-rule
@@ -993,15 +1009,19 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ca370e954be5baf638686707227e87f4fca33ef467618360e059340a65cd1842
+- Content hash: 806bcbac68ca8635f59ae1038894e7e43f1b2d7aa395848735a367e50152b7b1
 
 kind=REMEDIATE
-title=Remediation
-body=Уменьшительные имена, образованные при помощи суффикса -к-, несут в себе оттенок пренебрежения
+title=Review the complete name or courtesy distinction
+body=Марюня is classified here as от полной формы имени, meaning from the full form of the name. Машенька is classified as от краткой формы, meaning from the short form. The retained examples relate these to Мария and Маша respectively. These are documented examples, not a rule for generating a derivative from any full or short name.
+
+Сашка is classified in this material as оттенок пренебрежения, meaning a shade of dismissiveness. That label describes social coloring; the two labels about full and short forms describe derivational bases. A form can have a base and social coloring at the same time. The question asks for the classification documented for this example, not mutually exclusive properties of every name.
+
+The retained text associates diminutive forms with the suffix -к- with dismissive coloring. Treat this as the source's classification of its examples, not proof that every use of every such name is insulting. Relationship, tone and setting affect interpretation. A documented label does not authorize inventing a new personal-name form or addressing someone that way without regard to their preference.
 dominantAction=Continue
 references=
 items=
-examples=ex-u25-nickname-rule-0,ex-u25-nickname-rule-1
+examples=ex-u25-nickname-rule-0,ex-u25-nickname-rule-1,ex-u25-nickname-rule-2
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1015,11 +1035,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1cf3a83a7c79ba4879a6fa2bc1b8a71d50db8b0b4dd3827b793be5f62e103912
+- Content hash: 50ebd6b7506194e30a9df391a566c42ee0eaa15d51dbeb1d2607ab45fc923f3b
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Use the explanation and the supplied example to identify the requested name form, meaning or register. A missed check returns to the full explanation.
 dominantAction=Continue
 references=
 items=u25-i-nickname-rule-1,u25-i-nickname-rule-2
@@ -1037,12 +1057,12 @@ remediationStepId=u25-st-rem-nickname-rule
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f1ae95f498995e1e89bd40a342ecf77ddaca1e6dbd3386fc6e17d3234b0f7374
+- Content hash: 4ec322ba1d944fe1c5d1a32ab0bf91c0aa7adc78995375aea22a294f4bd4174d
 
-title=Choose the admitted list or setting written for the shown form
+title=Distinguish name-form categories and the illustrated register
 estimatedMinutes=12
 objectives=obj-u25-address
-steps=u25-st-teach-address-1,u25-st-guided-address-1,u25-st-teach-address-2,u25-st-teach-address-3,u25-st-rem-address,u25-st-check-address
+steps=u25-st-teach-address-1,u25-st-teach-address-2,u25-st-teach-address-3,u25-st-guided-address-1,u25-st-rem-address,u25-st-check-address
 
 ### STEP `u25-st-teach-address-1`
 
@@ -1052,11 +1072,11 @@ steps=u25-st-teach-address-1,u25-st-guided-address-1,u25-st-teach-address-2,u25-
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 2d57fbd483dd846ca628412761a115db87df1db4e68c78d3d78177aea366d5b7
+- Content hash: cf7e5d1e20b8114075d1a6d99f6ea2a2c91800fc7fc0b50676a15f0c10b0dab1
 
 kind=TEACH
-title=Admitted lines
-body=Ирина — полные имена. Ира — краткие имена. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+title=Full and short forms
+body=Ирина is classified as полные имена, meaning full names. Ира is classified as краткие имена, meaning short names. These are forms of the supplied personal name, not different family names. A category identifies the form; it does not by itself settle what is courteous in every conversation.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -1066,28 +1086,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u25-st-guided-address-1`
-
-- Objectives: obj-u25-address
-- Sessions: u25-s-address
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 7e28f4f9eb33a0b4a575cff5bbebb7b2eba68c8f508fac93615736760a5c05f7
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u25-g-address-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u25-st-rem-address
-
 ### STEP `u25-st-teach-address-2`
 
 - Objectives: obj-u25-address
@@ -1096,11 +1094,11 @@ remediationStepId=u25-st-rem-address
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ed1bb656b15d862fa9ff4a12bc8b62c043c69254c7a174ca89a398d55cebd3da
+- Content hash: 61dd6bc6741b6fe7262e49bc8e53a05f5a1a57d5e1ac31cff5dbe58e27b064dc
 
 kind=TEACH
-title=Admitted instruction
-body=отстранённо-официального регистра
+title=An affectionate form is another category
+body=Ирочка is classified as уменьшительно-ласкательные, meaning diminutive or affectionate forms. The full-name category полные имена and the short-name category краткие имена differ from this affectionate category. The examples recognize conventional forms; they do not license mechanical suffix formation for an unfamiliar name.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -1118,11 +1116,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f644c8c637a388aaebffa9f195316c1cccab75b0a66ff70a6916f0a544de30b3
+- Content hash: d451cad9a43730fe2cf4c4ea86484e0a0ddfe5b2aa58ad6ee24f83faf9395d85
 
 kind=TEACH
-title=Admitted lines
-body=Ирочка — уменьшительно-ласкательные. полному имени — отстранённо-официального регистра. 
+title=Read the supplied register example without overgeneralizing
+body=For address by полному имени, meaning the full name, the source describes отстранённо-официального регистра, a detached formal register. It also discusses use in an official or полуофициальной обстановке, a semi-official setting; short forms are described in дружески-неофициальном общении, friendly informal communication. The check asks for the stated register, not every possible setting where a full name occurs. This example does not mean full first names are always formal, or that they always replace a patronymic in formal address. Relationship, setting and the person's preference matter.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -1132,6 +1130,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u25-st-guided-address-1`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-address
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: acab36b7786802903bd096089cd29ece0c0777d07f17c561ddf3612976adf068
+
+kind=GUIDED
+title=Guided practice
+body=Use the explanation and the supplied example to identify the requested name form, meaning or register. A missed check returns to the full explanation.
+dominantAction=Continue
+references=
+items=u25-g-address-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u25-st-rem-address
+
 ### STEP `u25-st-rem-address`
 
 - Objectives: obj-u25-address
@@ -1140,15 +1160,19 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 871ec90e0cc1e3fc7933455e2da301d4f2a83350f1b4831f9bcd96c53429c228
+- Content hash: 0d677555e7be2bd0bf455ac173173a86026b763bb44d8c446076b5e47c8afa0c
 
 kind=REMEDIATE
-title=Remediation
-body=отстранённо-официального регистра
+title=Review the complete name or courtesy distinction
+body=Ирина is classified as полные имена, meaning full names. Ира is classified as краткие имена, meaning short names. These are forms of the supplied personal name, not different family names. A category identifies the form; it does not by itself settle what is courteous in every conversation.
+
+Ирочка is classified as уменьшительно-ласкательные, meaning diminutive or affectionate forms. The full-name category полные имена and the short-name category краткие имена differ from this affectionate category. The examples recognize conventional forms; they do not license mechanical suffix formation for an unfamiliar name.
+
+For address by полному имени, meaning the full name, the source describes отстранённо-официального регистра, a detached formal register. It also discusses use in an official or полуофициальной обстановке, a semi-official setting; short forms are described in дружески-неофициальном общении, friendly informal communication. The check asks for the stated register, not every possible setting where a full name occurs. This example does not mean full first names are always formal, or that they always replace a patronymic in formal address. Relationship, setting and the person's preference matter.
 dominantAction=Continue
 references=
 items=
-examples=ex-u25-address-0,ex-u25-address-1
+examples=ex-u25-address-0,ex-u25-address-1,ex-u25-address-2,ex-u25-address-3
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1162,11 +1186,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: dc8691cc50fcd1fb28507b86a250fd08486ae010598e121d069c41dd3f702bf1
+- Content hash: 563dbd711c7bca6cdf1bc762cc24f3b0e016c6bfe70d982890a7e333673bb6d4
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Use the explanation and the supplied example to identify the requested name form, meaning or register. A missed check returns to the full explanation.
 dominantAction=Continue
 references=
 items=u25-i-address-1,u25-i-address-2,u25-i-address-3
@@ -1184,12 +1208,12 @@ remediationStepId=u25-st-rem-address
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3b48b585039abf6aba16017b1e712eacaab41749658079b0948675897f3b6cfd
+- Content hash: fc4f82a036f28b1e8f398b7b429373aad0396489e00ef9fbfed22df469be8549
 
-title=Documented personal-name forms
+title=Recognize documented name forms without inventing new ones
 estimatedMinutes=12
 objectives=obj-u25-documented-name-form
-steps=u25-st-teach-name-form-1,u25-st-guided-name-form-1,u25-st-teach-name-form-2,u25-st-teach-name-form-3,u25-st-rem-name-form,u25-st-check-name-form
+steps=u25-st-teach-name-form-1,u25-st-teach-name-form-2,u25-st-teach-name-form-3,u25-st-guided-name-form-1,u25-st-rem-name-form,u25-st-check-name-form
 
 ### STEP `u25-st-teach-name-form-1`
 
@@ -1199,11 +1223,11 @@ steps=u25-st-teach-name-form-1,u25-st-guided-name-form-1,u25-st-teach-name-form-
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f6fb2e926ca8a8c33a169d4b75b31886dd67bfb82ccb86f5c4d7ef043184421e
+- Content hash: bb3eefeeb1aee2fcd76408f00a33678e62db4bc1d8450810d192c8c555d7276c
 
 kind=TEACH
-title=Admitted instruction
-body=Familiar, short, affectionate, and diminutive personal-name forms are conventional and socially marked.
+title=Conventional forms have documented bases
+body=Familiar, short, affectionate, and diminutive personal-name forms are conventional and socially marked. Марюня is the supplied documented derivative of the full name; Машенька is the supplied documented derivative of the short form. These English descriptions classify the examples already studied. They are not instructions to create an unfamiliar name.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -1213,28 +1237,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u25-st-guided-name-form-1`
-
-- Objectives: obj-u25-documented-name-form
-- Sessions: u25-s-documented-name-form
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 6966f59fd088322625518a1aa95b5a1d65800292a0984bbdf7367a457b3134f7
-
-kind=GUIDED
-title=Guided practice
-body=Марюня is a documented derivative of the full name in this admitted material.
-dominantAction=Continue
-references=
-items=u25-g-name-form-1
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u25-st-rem-name-form
-
 ### STEP `u25-st-teach-name-form-2`
 
 - Objectives: obj-u25-documented-name-form
@@ -1243,11 +1245,11 @@ remediationStepId=u25-st-rem-name-form
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d0ff5fac574524fceb0f35c0b488c9a569afd490221faf328c5e80dd3b237d28
+- Content hash: b2656e19044023bc8cfe91363500d7c69c7fc672667d04b154e7b39d05cafbb4
 
 kind=TEACH
-title=Admitted instruction
-body=One personal name may have several documented forms.
+title=Several forms and a stated coloring
+body=One personal name may have several documented forms. Сашка carries documented dismissive coloring in the supplied material. That description concerns social coloring, while documented derivative of the full name and documented derivative of the short form concern derivational bases. Tone and relationship can affect actual use; the classification does not prove every utterance is dismissive.
 dominantAction=Continue
 references=
 items=
@@ -1265,11 +1267,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 7c262ccd53c5afaf80803a78af92186559959156929dea9f1bf411c038a3b192
+- Content hash: b7fe96765f831b2e5a87fb69753895962ede95a0a98b25922cdb0cff55420b73
 
 kind=TEACH
-title=Admitted instruction
-body=A suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name.
+title=Verify a form before treating it as acceptable
+body=A suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name. For an unstudied personal name, the checked answer is unsupported until a names dictionary documents that form. The alternative the suffix mechanically generates an acceptable name overclaims what a suffix rule establishes. These checks recognize documented classifications and the verification limit; they do not assess free productive name formation.
 dominantAction=Continue
 references=
 items=
@@ -1279,6 +1281,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u25-st-guided-name-form-1`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: edf41036745a1866c12f58385fc4567dbb853eb740436dae3e68c66748013217
+
+kind=GUIDED
+title=Guided practice
+body=Use the explanation and the supplied example to identify the requested name form, meaning or register. A missed check returns to the full explanation.
+dominantAction=Continue
+references=
+items=u25-g-name-form-1
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u25-st-rem-name-form
+
 ### STEP `u25-st-rem-name-form`
 
 - Objectives: obj-u25-documented-name-form
@@ -1287,11 +1311,15 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 2a76b45afb9902e184a5d73b7cdfd8fba2e68a696478d5a05db347ace8fe40dd
+- Content hash: b905f2727a2fe1498af27f702afd27272d13af3b7c352f699d2e6dc78fdd4eb9
 
 kind=REMEDIATE
-title=Remediation
-body=A suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name.
+title=Review the complete name or courtesy distinction
+body=Familiar, short, affectionate, and diminutive personal-name forms are conventional and socially marked. Марюня is the supplied documented derivative of the full name; Машенька is the supplied documented derivative of the short form. These English descriptions classify the examples already studied. They are not instructions to create an unfamiliar name.
+
+One personal name may have several documented forms. Сашка carries documented dismissive coloring in the supplied material. That description concerns social coloring, while documented derivative of the full name and documented derivative of the short form concern derivational bases. Tone and relationship can affect actual use; the classification does not prove every utterance is dismissive.
+
+A suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name. For an unstudied personal name, the checked answer is unsupported until a names dictionary documents that form. The alternative the suffix mechanically generates an acceptable name overclaims what a suffix rule establishes. These checks recognize documented classifications and the verification limit; they do not assess free productive name formation.
 dominantAction=Continue
 references=
 items=
@@ -1309,11 +1337,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 83693d87b4c51e5f5b2b5cd59776c25b3a2d2518ab5297fbe59e393934ce79ba
+- Content hash: a37c847b7d751e684e86c29018b2bdf00762d31c01ade090601cfcc51973c31f
 
 kind=CHECK
 title=Independent checks
-body=An unfamiliar form must be verified in a names dictionary.
+body=Use the explanation and the supplied example to identify the requested name form, meaning or register. A missed check returns to the full explanation.
 dominantAction=Continue
 references=
 items=u25-i-name-form-1,u25-i-name-form-2,u25-i-name-form-3
@@ -1869,19 +1897,20 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 6bb21d592e42919ea07431c8aac45b6272a0534c7b1280296410f6b89cb61fe6
+- Content hash: 6b4e254670a61423da80404a6051e99d998f2c948a4d54560f1319a368e15a8f
 
 kind=FORM_SELECTION
 language=en
-prompt=The frozen sentence pairs the shown words with one form. Which admitted form is that pair?
+prompt=Which Russian label names the component described by the cue?
 promptLetter=first name
 options=имя | отчество | фамилия | ович
 answer=имя
-feedback=The frozen sentence says Russians use three names and pairs the shown words with this form. имя.
+feedback=The frozen sentence says Russians use three names and pairs the shown words with this form.
+first name is the cue; имя matches the requested function or classification: the first-name label.
 objectiveId=obj-u25-name-structure
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen sentence pairs this form with patronymic name, not with the shown words. | The frozen sentence pairs this form with family name, not with the shown words. | The frozen sentence gives this ending for son of, not as the pair for the shown words.
+distractorRationales= | отчество: the patronymic-name label. This differs from the classification or conversational function requested here. The frozen sentence pairs this form with patronymic name, not with the shown words. | фамилия: the family-name label. This differs from the classification or conversational function requested here. The frozen sentence pairs this form with family name, not with the shown words. | ович: the retained son-of suffix label. This differs from the classification or conversational function requested here. The frozen sentence gives this ending for son of, not as the pair for the shown words.
 testedFeature=NAME_PAIR
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u25-name-structure-0
@@ -1889,8 +1918,9 @@ cueLanguage=rule
 independent=false
 answerSourceIds=prov-ex-u25-name-structure-0-ru
 distractorSourceIds= | prov-ex-u25-name-structure-1-ru | prov-ex-u25-name-structure-2-ru | prov-u25-name-structure-rem-r2
-distractorDifference= | This form is paired with patronymic name. | This form is paired with family name. | This ending means son of, rather than the paired form.
+distractorDifference= | отчество: the patronymic-name label. This differs from the classification or conversational function requested here. The frozen sentence pairs this form with patronymic name, not with the shown words. | фамилия: the family-name label. This differs from the classification or conversational function requested here. The frozen sentence pairs this form with family name, not with the shown words. | ович: the retained son-of suffix label. This differs from the classification or conversational function requested here. The frozen sentence gives this ending for son of, not as the pair for the shown words.
 whyAnswerDemonstratesObjective=The frozen sentence says Russians use three names and pairs the shown words with this form.
+first name is the cue; имя matches the requested function or classification: the first-name label.
 contrastMembers=имя | отчество | фамилия | ович
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u25-name-structure-0-en | prov-ex-u25-name-structure-0-ru | prov-ex-u25-name-structure-1-ru | prov-ex-u25-name-structure-2-ru | prov-u25-name-structure-rem-r2
@@ -1904,19 +1934,20 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: f12e2db861c8716c5619a4616a3893cad79632c3f2dfdfe992ba035c5247bc1b
+- Content hash: c3507d4979886ce91a8207f18c5f6198b4025b48a93f2ad30e28281136595457
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=The frozen English list pairs one short form with the shown name. Which admitted short form is that pair?
+prompt=Which English short form corresponds to the full name in the cue?
 promptLetter=Alexander
 options=Sasha | Alyosha | Dima
 answer=Sasha
-feedback=The frozen list includes Sasha for Alexander as the pair for the shown name. Sasha.
+feedback=The frozen list includes Sasha for Alexander as the pair for the shown name.
+Alexander is the cue; Sasha matches the requested function or classification: the supplied short form for Alexander.
 objectiveId=obj-u25-diminutives
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen list pairs Alyosha for Alexei with a different name. | The frozen list pairs Dima for Dmitri with a different name.
+distractorRationales= | Alyosha: the supplied short form for Alexei. This differs from the classification or conversational function requested here. The frozen list pairs Alyosha for Alexei with a different name. | Dima: the supplied short form for Dmitri. This differs from the classification or conversational function requested here. The frozen list pairs Dima for Dmitri with a different name.
 testedFeature=SHORT_FORM_PAIR
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u25-diminutives-0
@@ -1924,8 +1955,9 @@ cueLanguage=rule
 independent=false
 answerSourceIds=prov-u25-diminutives-x-0
 distractorSourceIds= | prov-u25-diminutives-x-1 | prov-u25-diminutives-x-2
-distractorDifference= | Alyosha is paired with Alexei, not with the shown name. | Dima is paired with Dmitri, not with the shown name.
+distractorDifference= | Alyosha: the supplied short form for Alexei. This differs from the classification or conversational function requested here. The frozen list pairs Alyosha for Alexei with a different name. | Dima: the supplied short form for Dmitri. This differs from the classification or conversational function requested here. The frozen list pairs Dima for Dmitri with a different name.
 whyAnswerDemonstratesObjective=The frozen list includes Sasha for Alexander as the pair for the shown name.
+Alexander is the cue; Sasha matches the requested function or classification: the supplied short form for Alexander.
 contrastMembers=Sasha | Alyosha | Dima
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u25-diminutives-0-en | prov-u25-diminutives-x-0 | prov-u25-diminutives-x-1 | prov-u25-diminutives-x-2
@@ -1939,19 +1971,20 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: bdd440ded3146d85d418aa86d1c414bfad117c147dc209a7d1ff9cf41bcb27ea
+- Content hash: b83247065f866e3702fa7222108c11fda8f30cde4f24bb94a5812254b4506996
 
 kind=FORM_SELECTION
 language=en
-prompt=The frozen list pairs the shown request word with one form. Which admitted form is that pair?
+prompt=Which expression performs the courtesy function in the cue?
 promptLetter=please
 options=Пожа́луйста | Спаси́бо | Извини́те
 answer=Пожа́луйста
-feedback=The frozen list says please; also used for a request and pairs that word with this form. Пожа́луйста.
+feedback=The frozen list says please; also used for a request and pairs that word with this form.
+please is the cue; Пожа́луйста matches the requested function or classification: please in the supplied request use.
 objectiveId=obj-u25-courtesy
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen list pairs thanks with a different form. | Извини́те is the polite or plural form. The familiar singular is Извини́.
+distractorRationales= | Спаси́бо: thanks or thank you. This differs from the classification or conversational function requested here. The frozen list pairs thanks with a different form. | Извини́те: excuse me with polite or plural address. This differs from the classification or conversational function requested here. Извини́те is the polite or plural form. The familiar singular is Извини́.
 testedFeature=COURTESY_PAIR
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u25-courtesy-0
@@ -1959,8 +1992,9 @@ cueLanguage=rule
 independent=false
 answerSourceIds=prov-ex-u25-courtesy-0-ru
 distractorSourceIds= | prov-ex-u25-courtesy-1-ru | prov-ex-u25-courtesy-2-ru
-distractorDifference= | Thanks is a different courtesy word. | Извини́те is the polite or plural form. The familiar singular is Извини́.
+distractorDifference= | Спаси́бо: thanks or thank you. This differs from the classification or conversational function requested here. The frozen list pairs thanks with a different form. | Извини́те: excuse me with polite or plural address. This differs from the classification or conversational function requested here. Извини́те is the polite or plural form. The familiar singular is Извини́.
 whyAnswerDemonstratesObjective=The frozen list says please; also used for a request and pairs that word with this form.
+please is the cue; Пожа́луйста matches the requested function or classification: please in the supplied request use.
 contrastMembers=Пожа́луйста | Спаси́бо | Извини́те
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u25-courtesy-0-en | prov-ex-u25-courtesy-0-ru | prov-ex-u25-courtesy-1-ru | prov-ex-u25-courtesy-2-ru
@@ -1974,19 +2008,20 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: ccea6839c22e24cdefc6dc01a52bd12f76abc584a6f0c0439100060ba885ca40
+- Content hash: a33cbee97b4128c387ac3afe4bc13e150716bb73c483954f8c8d7ea2cfac4a1c
 
 kind=FORM_SELECTION
 language=en
-prompt=The frozen list pairs the shown question with one form. Which admitted form is that pair?
+prompt=Which Russian formula performs the conversational function in the cue?
 promptLetter=What is your name?
 options=Как Вас зову́т? | Меня́ зову́т | Прошу́ проще́ния
 answer=Как Вас зову́т?
-feedback=The frozen list pairs What is your name? with this form and My name is... with the reply. Как Вас зову́т?
+feedback=The frozen list pairs What is your name? with this form and My name is... with the reply.
+What is your name? is the cue; Как Вас зову́т? matches the requested function or classification: the name question.
 objectiveId=obj-u25-name-question
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen list pairs My name is... with the reply, not with the shown question. | The frozen list pairs I'm sorry / excuse me (formal) with a different form.
+distractorRationales= | Меня́ зову́т: the reply opening followed by a name. This differs from the classification or conversational function requested here. The frozen list pairs My name is... with the reply, not with the shown question. | Прошу́ проще́ния: a formal apology. This differs from the classification or conversational function requested here. The frozen list pairs I'm sorry / excuse me (formal) with a different form.
 testedFeature=NAME_QUESTION_PAIR
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u25-name-question-0
@@ -1994,8 +2029,9 @@ cueLanguage=rule
 independent=false
 answerSourceIds=prov-ex-u25-name-question-0-ru
 distractorSourceIds= | prov-ex-u25-name-question-1-ru | prov-ex-u25-name-question-2-ru
-distractorDifference= | This form is the reply, not the question. | This form is the formal apology, not the question.
+distractorDifference= | Меня́ зову́т: the reply opening followed by a name. This differs from the classification or conversational function requested here. The frozen list pairs My name is... with the reply, not with the shown question. | Прошу́ проще́ния: a formal apology. This differs from the classification or conversational function requested here. The frozen list pairs I'm sorry / excuse me (formal) with a different form.
 whyAnswerDemonstratesObjective=The frozen list pairs What is your name? with this form and My name is... with the reply.
+What is your name? is the cue; Как Вас зову́т? matches the requested function or classification: the name question.
 contrastMembers=Как Вас зову́т? | Меня́ зову́т | Прошу́ проще́ния
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u25-name-question-0-en | prov-ex-u25-name-question-0-ru | prov-ex-u25-name-question-1-ru | prov-ex-u25-name-question-2-ru
@@ -2009,19 +2045,20 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-ruwiki-lichnoe-imya-154915954
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: a1aa60b6b93ff3c5e6adb1235a0e67f261cd33af6227814cce3b338f2ece0a6c
+- Content hash: eeff7160a72b0e6740943afe8d664646692e28fb6db40f9b80837426bb95ea19
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted phrase classifies the shown form?
+prompt=Which classification describes this documented example?
 promptLetter=Марюня
 options=от полной формы имени | от краткой формы | оттенок пренебрежения
 answer=от полной формы имени
-feedback=The source says от полной формы имени and gives Марюня. The keyed phrase is от полной формы имени. от полной формы имени.
+feedback=The source says от полной формы имени and gives Марюня. The keyed phrase is от полной формы имени.
+Марюня is the cue; от полной формы имени matches the requested function or classification: derivation from the full form of the name.
 objectiveId=obj-u25-nickname-rule
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The source assigns от краткой формы to Машенька. | The source assigns оттенок пренебрежения to Сашка.
+distractorRationales= | от краткой формы: derivation from the short form. This differs from the classification or conversational function requested here. The source assigns от краткой формы to Машенька. | оттенок пренебрежения: a shade of dismissiveness in the supplied classification. This differs from the classification or conversational function requested here. The source assigns оттенок пренебрежения to Сашка.
 testedFeature=DIMINUTIVE_FORM_CLASSIFICATION
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u25-nickname-rule-0
@@ -2029,8 +2066,9 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u25-nickname-rule-0-en
 distractorSourceIds= | prov-ex-u25-nickname-rule-1-en | prov-ex-u25-nickname-rule-2-en
-distractorDifference= | от краткой формы does not classify the shown form. | оттенок пренебрежения does not classify the shown form.
+distractorDifference= | от краткой формы: derivation from the short form. This differs from the classification or conversational function requested here. The source assigns от краткой формы to Машенька. | оттенок пренебрежения: a shade of dismissiveness in the supplied classification. This differs from the classification or conversational function requested here. The source assigns оттенок пренебрежения to Сашка.
 whyAnswerDemonstratesObjective=The source says от полной формы имени and gives Марюня. The keyed phrase is от полной формы имени.
+Марюня is the cue; от полной формы имени matches the requested function or classification: derivation from the full form of the name.
 contrastMembers=от полной формы имени | от краткой формы | оттенок пренебрежения
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u25-nickname-rule-0-ru | prov-ex-u25-nickname-rule-0-en | prov-ex-u25-nickname-rule-1-en | prov-ex-u25-nickname-rule-2-en
@@ -2044,19 +2082,20 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-ruwiki-obraschenie-153012874
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: d462859684f55fa1cafab9b43899daef9286cbd2a1982f1731ee1eb86880ba8a
+- Content hash: 3f5bc7ffbc678772a002eb734265a5ace36ad3d8191254d6ce6d1b2a4f8c6c7f
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted list name is written for the shown form?
+prompt=Which name-form category describes this example?
 promptLetter=Ирина
 options=полные имена | краткие имена | уменьшительно-ласкательные
 answer=полные имена
 feedback=The frozen source pairs the shown form "Ирина" with the admitted gloss "полные имена" ("полные имена — Ирина").
+Ирина is the cue; полные имена matches the requested function or classification: the full-name category.
 objectiveId=obj-u25-address
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "Ира" with the admitted gloss "краткие имена" ("краткие имена — Ира"). | The frozen source pairs the shown form "Ирочка" with the admitted gloss "уменьшительно-ласкательные" ("уменьшительно-ласкательные — Ирочка").
+distractorRationales= | краткие имена: the short-name category. This differs from the classification or conversational function requested here. The frozen source pairs the shown form "Ира" with the admitted gloss "краткие имена" ("краткие имена — Ира"). | уменьшительно-ласкательные: the diminutive or affectionate category. This differs from the classification or conversational function requested here. The frozen source pairs the shown form "Ирочка" with the admitted gloss "уменьшительно-ласкательные" ("уменьшительно-ласкательные — Ирочка").
 testedFeature=REGISTER_FULL
 evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u25-address-0
@@ -2064,8 +2103,9 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u25-address-0-en
 distractorSourceIds= | prov-ex-u25-address-1-en | prov-ex-u25-address-2-en
-distractorDifference= | The frozen source pairs the shown form "Ира" with the admitted gloss "краткие имена" ("краткие имена — Ира"). | The frozen source pairs the shown form "Ирочка" with the admitted gloss "уменьшительно-ласкательные" ("уменьшительно-ласкательные — Ирочка").
+distractorDifference= | краткие имена: the short-name category. This differs from the classification or conversational function requested here. The frozen source pairs the shown form "Ира" with the admitted gloss "краткие имена" ("краткие имена — Ира"). | уменьшительно-ласкательные: the diminutive or affectionate category. This differs from the classification or conversational function requested here. The frozen source pairs the shown form "Ирочка" with the admitted gloss "уменьшительно-ласкательные" ("уменьшительно-ласкательные — Ирочка").
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Ирина" with the admitted gloss "полные имена" ("полные имена — Ирина").
+Ирина is the cue; полные имена matches the requested function or classification: the full-name category.
 contrastMembers=полные имена | краткие имена | уменьшительно-ласкательные
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u25-address-0-ru | prov-ex-u25-address-0-en | prov-ex-u25-address-1-en | prov-ex-u25-address-2-en
@@ -2079,19 +2119,20 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: a56a793c6506aacca72cc95f2cd4a4c289e789785697aa66122aece64165b7c7
+- Content hash: e4f72795ae9139ab1e7a9b4bd1eeda028cbdcf599b2e5457ff093ce8ffb2362a
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which English description matches the shown name derived in the admitted full-form pattern?
+prompt=Which English classification describes the shown documented name form?
 promptLetter=Марюня
 options=documented derivative of the full name | documented derivative of the short form | documented dismissive coloring
 answer=documented derivative of the full name
 feedback=Марюня is a documented derivative of the full name in this admitted material.
+Марюня is the cue; documented derivative of the full name matches the requested function or classification: a documented full-name derivational base.
 objectiveId=obj-u25-documented-name-form
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Машенька is a documented derivative of the short form in this admitted material. | Сашка carries documented dismissive coloring in this admitted material.
+distractorRationales= | documented derivative of the short form: a documented short-form derivational base. This differs from the classification or conversational function requested here. Машенька is a documented derivative of the short form in this admitted material. | documented dismissive coloring: the social coloring documented for the supplied example. This differs from the classification or conversational function requested here. Сашка carries documented dismissive coloring in this admitted material.
 testedFeature=DOCUMENTED_FULL_FORM_DERIVATIVE
 evidenceMode=STATED_APPLICATION
 contrastSetId=u25-g-name-form-1
@@ -2099,8 +2140,9 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-u25-name-form-11
 distractorSourceIds= | prov-u25-name-form-12 | prov-u25-name-form-13
-distractorDifference= | Машенька is a documented derivative of the short form in this admitted material. | Сашка carries documented dismissive coloring in this admitted material.
+distractorDifference= | documented derivative of the short form: a documented short-form derivational base. This differs from the classification or conversational function requested here. Машенька is a documented derivative of the short form in this admitted material. | documented dismissive coloring: the social coloring documented for the supplied example. This differs from the classification or conversational function requested here. Сашка carries documented dismissive coloring in this admitted material.
 whyAnswerDemonstratesObjective=Марюня is a documented derivative of the full name in this admitted material.
+Марюня is the cue; documented derivative of the full name matches the requested function or classification: a documented full-name derivational base.
 contrastMembers=documented derivative of the full name | documented derivative of the short form | documented dismissive coloring
 relationKind=STATED_APPLICATION
 relationParticipantIds=prov-u25-name-form-10 | prov-u25-name-form-11 | prov-u25-name-form-12 | prov-u25-name-form-13
@@ -2114,19 +2156,20 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: ccfc755de84d66067bf19d5b0c1e5720efcaa49623af00cf9f328e7002375aa6
+- Content hash: e691cfa18c4921d38a41642cdfea253a48b77164755a0a79558157ea42286fcc
 
 kind=FORM_SELECTION
 language=en
-prompt=The frozen sentence pairs the shown patronymic words with one form. Which admitted form is that pair?
+prompt=Which Russian label names the component described by the cue?
 promptLetter=patronymic name
 options=отчество | имя | фамилия | овна
 answer=отчество
-feedback=The frozen sentence says Russians use three names and pairs patronymic name with this form. отчество.
+feedback=The frozen sentence says Russians use three names and pairs patronymic name with this form.
+patronymic name is the cue; отчество matches the requested function or classification: the patronymic-name label.
 objectiveId=obj-u25-name-structure
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen sentence pairs this form with first name, not with the shown words. | The frozen sentence pairs this form with family name, not with the shown words. | The frozen sentence gives this ending for daughter of, not as the pair for the shown words.
+distractorRationales= | имя: the first-name label. This differs from the classification or conversational function requested here. The frozen sentence pairs this form with first name, not with the shown words. | фамилия: the family-name label. This differs from the classification or conversational function requested here. The frozen sentence pairs this form with family name, not with the shown words. | овна: the retained daughter-of suffix label. This differs from the classification or conversational function requested here. The frozen sentence gives this ending for daughter of, not as the pair for the shown words.
 testedFeature=NAME_PAIR
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u25-name-structure-1
@@ -2134,8 +2177,9 @@ cueLanguage=rule
 independent=true
 answerSourceIds=prov-ex-u25-name-structure-1-ru
 distractorSourceIds= | prov-ex-u25-name-structure-0-ru | prov-ex-u25-name-structure-2-ru | prov-u25-name-structure-rem-r3
-distractorDifference= | This form is paired with first name. | This form is paired with family name. | This ending means daughter of, rather than the paired form.
+distractorDifference= | имя: the first-name label. This differs from the classification or conversational function requested here. The frozen sentence pairs this form with first name, not with the shown words. | фамилия: the family-name label. This differs from the classification or conversational function requested here. The frozen sentence pairs this form with family name, not with the shown words. | овна: the retained daughter-of suffix label. This differs from the classification or conversational function requested here. The frozen sentence gives this ending for daughter of, not as the pair for the shown words.
 whyAnswerDemonstratesObjective=The frozen sentence says Russians use three names and pairs patronymic name with this form.
+patronymic name is the cue; отчество matches the requested function or classification: the patronymic-name label.
 contrastMembers=отчество | имя | фамилия | овна
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u25-name-structure-1-en | prov-ex-u25-name-structure-1-ru | prov-ex-u25-name-structure-0-ru | prov-ex-u25-name-structure-2-ru | prov-u25-name-structure-rem-r3
@@ -2149,19 +2193,20 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: db476d68e149c3369f006fc730ba236f51e826bf2f620b2f37dcebc104335351
+- Content hash: b719b2ab627dc7c713b6092ca63818e93fa28caa631197c34d590d0826f6e275
 
 kind=FORM_SELECTION
 language=en
-prompt=The frozen sentence pairs the shown family words with one form. Which admitted form is that pair?
+prompt=Which Russian label names the component described by the cue?
 promptLetter=family name
 options=фамилия | имя | отчество | ович
 answer=фамилия
-feedback=The frozen sentence says Russians use three names and pairs family name with this form. фамилия.
+feedback=The frozen sentence says Russians use three names and pairs family name with this form.
+family name is the cue; фамилия matches the requested function or classification: the family-name label.
 objectiveId=obj-u25-name-structure
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen sentence pairs this form with first name, not with the shown words. | The frozen sentence pairs this form with patronymic name, not with the shown words. | The frozen sentence gives this ending for son of, not as the pair for the shown words.
+distractorRationales= | имя: the first-name label. This differs from the classification or conversational function requested here. The frozen sentence pairs this form with first name, not with the shown words. | отчество: the patronymic-name label. This differs from the classification or conversational function requested here. The frozen sentence pairs this form with patronymic name, not with the shown words. | ович: the retained son-of suffix label. This differs from the classification or conversational function requested here. The frozen sentence gives this ending for son of, not as the pair for the shown words.
 testedFeature=NAME_PAIR
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u25-name-structure-2
@@ -2169,8 +2214,9 @@ cueLanguage=rule
 independent=true
 answerSourceIds=prov-ex-u25-name-structure-2-ru
 distractorSourceIds= | prov-ex-u25-name-structure-0-ru | prov-ex-u25-name-structure-1-ru | prov-u25-name-structure-rem-r2
-distractorDifference= | This form is paired with first name. | This form is paired with patronymic name. | This ending means son of, rather than the paired form.
+distractorDifference= | имя: the first-name label. This differs from the classification or conversational function requested here. The frozen sentence pairs this form with first name, not with the shown words. | отчество: the patronymic-name label. This differs from the classification or conversational function requested here. The frozen sentence pairs this form with patronymic name, not with the shown words. | ович: the retained son-of suffix label. This differs from the classification or conversational function requested here. The frozen sentence gives this ending for son of, not as the pair for the shown words.
 whyAnswerDemonstratesObjective=The frozen sentence says Russians use three names and pairs family name with this form.
+family name is the cue; фамилия matches the requested function or classification: the family-name label.
 contrastMembers=фамилия | имя | отчество | ович
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u25-name-structure-2-en | prov-ex-u25-name-structure-2-ru | prov-ex-u25-name-structure-0-ru | prov-ex-u25-name-structure-1-ru | prov-u25-name-structure-rem-r2
@@ -2184,19 +2230,20 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: e204f8a0398e5f5fee70321682415927d6450d514b5929537a8ddab2e2c2f477
+- Content hash: ea1ffcf95dd6738beca7f2571ad8eac38d68684fe277d48ce07cfb4c19699a8c
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=The frozen English list pairs one short form with the shown name. Which admitted short form is that pair?
+prompt=Which English short form corresponds to the full name in the cue?
 promptLetter=Alexei
 options=Alyosha | Sasha | Dima
 answer=Alyosha
-feedback=The frozen list includes Alyosha for Alexei as the pair for the shown name. Alyosha.
+feedback=The frozen list includes Alyosha for Alexei as the pair for the shown name.
+Alexei is the cue; Alyosha matches the requested function or classification: the supplied short form for Alexei.
 objectiveId=obj-u25-diminutives
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen list pairs Sasha for Alexander with a different name. | The frozen list pairs Dima for Dmitri with a different name.
+distractorRationales= | Sasha: the supplied short form for Alexander. This differs from the classification or conversational function requested here. The frozen list pairs Sasha for Alexander with a different name. | Dima: the supplied short form for Dmitri. This differs from the classification or conversational function requested here. The frozen list pairs Dima for Dmitri with a different name.
 testedFeature=SHORT_FORM_PAIR
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u25-diminutives-1
@@ -2204,8 +2251,9 @@ cueLanguage=rule
 independent=true
 answerSourceIds=prov-u25-diminutives-x-1
 distractorSourceIds= | prov-u25-diminutives-x-0 | prov-u25-diminutives-x-2
-distractorDifference= | Sasha is paired with Alexander, not with the shown name. | Dima is paired with Dmitri, not with the shown name.
+distractorDifference= | Sasha: the supplied short form for Alexander. This differs from the classification or conversational function requested here. The frozen list pairs Sasha for Alexander with a different name. | Dima: the supplied short form for Dmitri. This differs from the classification or conversational function requested here. The frozen list pairs Dima for Dmitri with a different name.
 whyAnswerDemonstratesObjective=The frozen list includes Alyosha for Alexei as the pair for the shown name.
+Alexei is the cue; Alyosha matches the requested function or classification: the supplied short form for Alexei.
 contrastMembers=Alyosha | Sasha | Dima
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u25-diminutives-1-en | prov-u25-diminutives-x-1 | prov-u25-diminutives-x-0 | prov-u25-diminutives-x-2
@@ -2219,19 +2267,20 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: a0b03d9aac2121bd5ed871e296442c29c8c08631c5ef9c746a60d9ff17319f12
+- Content hash: c247ad2e71d4099566374bfc45645d01eb2abaa32937426b14d8e499ea1a8c3f
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=The frozen English list pairs one short form with the shown name. Which admitted short form is that pair?
+prompt=Which English short form corresponds to the full name in the cue?
 promptLetter=Dmitri
 options=Dima | Sasha | Alyosha
 answer=Dima
-feedback=The frozen list includes Dima for Dmitri as the pair for the shown name. Dima.
+feedback=The frozen list includes Dima for Dmitri as the pair for the shown name.
+Dmitri is the cue; Dima matches the requested function or classification: the supplied short form for Dmitri.
 objectiveId=obj-u25-diminutives
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen list pairs Sasha for Alexander with a different name. | The frozen list pairs Alyosha for Alexei with a different name.
+distractorRationales= | Sasha: the supplied short form for Alexander. This differs from the classification or conversational function requested here. The frozen list pairs Sasha for Alexander with a different name. | Alyosha: the supplied short form for Alexei. This differs from the classification or conversational function requested here. The frozen list pairs Alyosha for Alexei with a different name.
 testedFeature=SHORT_FORM_PAIR
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u25-diminutives-2
@@ -2239,8 +2288,9 @@ cueLanguage=rule
 independent=true
 answerSourceIds=prov-u25-diminutives-x-2
 distractorSourceIds= | prov-u25-diminutives-x-0 | prov-u25-diminutives-x-1
-distractorDifference= | Sasha is paired with Alexander, not with the shown name. | Alyosha is paired with Alexei, not with the shown name.
+distractorDifference= | Sasha: the supplied short form for Alexander. This differs from the classification or conversational function requested here. The frozen list pairs Sasha for Alexander with a different name. | Alyosha: the supplied short form for Alexei. This differs from the classification or conversational function requested here. The frozen list pairs Alyosha for Alexei with a different name.
 whyAnswerDemonstratesObjective=The frozen list includes Dima for Dmitri as the pair for the shown name.
+Dmitri is the cue; Dima matches the requested function or classification: the supplied short form for Dmitri.
 contrastMembers=Dima | Sasha | Alyosha
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u25-diminutives-2-en | prov-u25-diminutives-x-2 | prov-u25-diminutives-x-0 | prov-u25-diminutives-x-1
@@ -2254,19 +2304,20 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 2f404b72bb70d71fa44a57bc433e53b016f86f854c214167c3e03f2b925111b2
+- Content hash: 5f8fe017660933de4e7d92d4c7578454d28acd18a2978a659397a4440b2c414e
 
 kind=FORM_SELECTION
 language=en
-prompt=The frozen list pairs the shown thanks word with one form. Which admitted form is that pair?
+prompt=Which expression performs the courtesy function in the cue?
 promptLetter=thanks
 options=Спаси́бо | Пожа́луйста | Извини́те
 answer=Спаси́бо
-feedback=The frozen list pairs thanks with this form and I'm sorry / excuse me (informal) with a different form. Спаси́бо.
+feedback=The frozen list pairs thanks with this form and I'm sorry / excuse me (informal) with a different form.
+thanks is the cue; Спаси́бо matches the requested function or classification: thanks or thank you.
 objectiveId=obj-u25-courtesy
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen list says please; also used for a request, not for thanks. | The frozen list pairs I'm sorry / excuse me (informal) with a different form.
+distractorRationales= | Пожа́луйста: please in the supplied request use. This differs from the classification or conversational function requested here. The frozen list says please; also used for a request, not for thanks. | Извини́те: excuse me with polite or plural address. This differs from the classification or conversational function requested here. The frozen list pairs I'm sorry / excuse me (informal) with a different form.
 testedFeature=COURTESY_PAIR
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u25-courtesy-1
@@ -2274,8 +2325,9 @@ cueLanguage=rule
 independent=true
 answerSourceIds=prov-ex-u25-courtesy-1-ru
 distractorSourceIds= | prov-ex-u25-courtesy-0-ru | prov-ex-u25-courtesy-2-ru
-distractorDifference= | Please is the request word, not the thanks word. | The informal apology is not the thanks word.
+distractorDifference= | Пожа́луйста: please in the supplied request use. This differs from the classification or conversational function requested here. The frozen list says please; also used for a request, not for thanks. | Извини́те: excuse me with polite or plural address. This differs from the classification or conversational function requested here. The frozen list pairs I'm sorry / excuse me (informal) with a different form.
 whyAnswerDemonstratesObjective=The frozen list pairs thanks with this form and I'm sorry / excuse me (informal) with a different form.
+thanks is the cue; Спаси́бо matches the requested function or classification: thanks or thank you.
 contrastMembers=Спаси́бо | Пожа́луйста | Извини́те
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u25-courtesy-1-en | prov-ex-u25-courtesy-1-ru | prov-ex-u25-courtesy-0-ru | prov-ex-u25-courtesy-2-ru
@@ -2289,7 +2341,7 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: d8a52d795e53b2afb825dba6c48991f59f55faf87e5541ce210edd26a16b9745
+- Content hash: 8b37ffa198a18893abc3587b02f91a0b5c178fa4639ba833402fb6562a5dec89
 
 kind=FORM_SELECTION
 language=en
@@ -2297,11 +2349,12 @@ prompt=Choose the English description. Which address does Извини́те mar
 promptLetter=Извини́те
 options=excuse me, polite or plural | excuse me, familiar singular | thank you
 answer=excuse me, polite or plural
-feedback=Извини́те is polite or plural. The familiar singular is Извини́.
+feedback=The -те form marks polite or plural address.
+Извини́те is the cue; excuse me, polite or plural matches the requested function or classification: the polite-or-plural apology description.
 objectiveId=obj-u25-courtesy
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | excuse me, familiar singular is Извини́, without -те. | thank you is a different courtesy formula.
+distractorRationales= | excuse me, familiar singular: the familiar-singular apology description. This differs from the classification or conversational function requested here. excuse me, familiar singular is Извини́, without -те. | thank you: gratitude rather than an apology. This differs from the classification or conversational function requested here. thank you is a different courtesy formula.
 testedFeature=POLITE_IZVINITE
 evidenceMode=STATED_APPLICATION
 contrastSetId=u25-courtesy-2
@@ -2309,8 +2362,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ca-25-582
 distractorSourceIds= | prov-ca-25-586 | prov-ca-25-587
-distractorDifference= | excuse me, familiar singular is Извини́, without -те. | thank you is a different courtesy formula.
+distractorDifference= | excuse me, familiar singular: the familiar-singular apology description. This differs from the classification or conversational function requested here. excuse me, familiar singular is Извини́, without -те. | thank you: gratitude rather than an apology. This differs from the classification or conversational function requested here. thank you is a different courtesy formula.
 whyAnswerDemonstratesObjective=The -те form marks polite or plural address.
+Извини́те is the cue; excuse me, polite or plural matches the requested function or classification: the polite-or-plural apology description.
 contrastMembers=excuse me, polite or plural | excuse me, familiar singular | thank you
 relationKind=STATED_APPLICATION
 relationParticipantIds=prov-ca-25-581 | prov-ca-25-582 | prov-ca-25-586 | prov-ca-25-587
@@ -2324,19 +2378,20 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: f48a5d5ea5b68b0a55c21b50e3900478446345a8653a4da8013a53d9c1b3c511
+- Content hash: e47bf5b0d7297df2fd1b9d13a7616dfe2f702408f5e07b1557fcdfcfae8c7d53
 
 kind=FORM_SELECTION
 language=en
-prompt=The frozen list pairs the shown reply with one form. Which admitted form is that pair?
+prompt=Which Russian formula performs the conversational function in the cue?
 promptLetter=My name is...
 options=Меня́ зову́т | Как Вас зову́т? | Прошу́ проще́ния
 answer=Меня́ зову́т
-feedback=The frozen list pairs My name is... with this reply and What is your name? with the question. Меня́ зову́т.
+feedback=The frozen list pairs My name is... with this reply and What is your name? with the question.
+My name is... is the cue; Меня́ зову́т matches the requested function or classification: the reply opening followed by a name.
 objectiveId=obj-u25-name-question
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen list pairs What is your name? with the question, not with the shown reply. | The frozen list pairs I'm sorry / excuse me (formal) with a different form.
+distractorRationales= | Как Вас зову́т?: the name question. This differs from the classification or conversational function requested here. The frozen list pairs What is your name? with the question, not with the shown reply. | Прошу́ проще́ния: a formal apology. This differs from the classification or conversational function requested here. The frozen list pairs I'm sorry / excuse me (formal) with a different form.
 testedFeature=NAME_ANSWER_PAIR
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u25-name-question-1
@@ -2344,8 +2399,9 @@ cueLanguage=rule
 independent=true
 answerSourceIds=prov-ex-u25-name-question-1-ru
 distractorSourceIds= | prov-ex-u25-name-question-0-ru | prov-ex-u25-name-question-2-ru
-distractorDifference= | This form is the question, not the reply. | This form is the formal apology, not the reply.
+distractorDifference= | Как Вас зову́т?: the name question. This differs from the classification or conversational function requested here. The frozen list pairs What is your name? with the question, not with the shown reply. | Прошу́ проще́ния: a formal apology. This differs from the classification or conversational function requested here. The frozen list pairs I'm sorry / excuse me (formal) with a different form.
 whyAnswerDemonstratesObjective=The frozen list pairs My name is... with this reply and What is your name? with the question.
+My name is... is the cue; Меня́ зову́т matches the requested function or classification: the reply opening followed by a name.
 contrastMembers=Меня́ зову́т | Как Вас зову́т? | Прошу́ проще́ния
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u25-name-question-1-en | prov-ex-u25-name-question-1-ru | prov-ex-u25-name-question-0-ru | prov-ex-u25-name-question-2-ru
@@ -2359,19 +2415,20 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 833f40ff6b98c2cb8a35b7b50935a5b4921657fb6cfc9c66fd6e70123ca013c8
+- Content hash: ddc1470ef473e17526d0906e6a73a69eac2d3e504e61fe3d74ac517707193182
 
 kind=FORM_SELECTION
 language=en
-prompt=The frozen list gives the shown question and a separate reply. Which admitted form is the reply rather than another question?
+prompt=Which formula begins an answer to this name question?
 promptLetter=Как Вас зову́т?
 options=Меня́ зову́т | Прошу́ проще́ния | Как дела́?
 answer=Меня́ зову́т
-feedback=The frozen list pairs My name is... with this reply and What is your name? with the shown question. Меня́ зову́т.
+feedback=The frozen list pairs My name is... with this reply and What is your name? with the shown question.
+Как Вас зову́т? is the cue; Меня́ зову́т matches the requested function or classification: the reply opening followed by a name.
 objectiveId=obj-u25-name-question
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen list pairs I'm sorry / excuse me (formal) with this form, not with the name reply. | The frozen list pairs How are you? with this form, not with the name reply.
+distractorRationales= | Прошу́ проще́ния: a formal apology. This differs from the classification or conversational function requested here. The frozen list pairs I'm sorry / excuse me (formal) with this form, not with the name reply. | Как дела́?: a question asking how someone is doing. This differs from the classification or conversational function requested here. The frozen list pairs How are you? with this form, not with the name reply.
 testedFeature=NAME_ANSWER_PAIR
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u25-name-question-2
@@ -2379,8 +2436,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u25-name-question-1-ru
 distractorSourceIds= | prov-ex-u25-name-question-2-ru | prov-ex-u25-name-question-3-ru
-distractorDifference= | This form is the formal apology, not the name reply. | This form asks how someone is, rather than giving the name reply.
+distractorDifference= | Прошу́ проще́ния: a formal apology. This differs from the classification or conversational function requested here. The frozen list pairs I'm sorry / excuse me (formal) with this form, not with the name reply. | Как дела́?: a question asking how someone is doing. This differs from the classification or conversational function requested here. The frozen list pairs How are you? with this form, not with the name reply.
 whyAnswerDemonstratesObjective=The frozen list pairs My name is... with this reply and What is your name? with the shown question.
+Как Вас зову́т? is the cue; Меня́ зову́т matches the requested function or classification: the reply opening followed by a name.
 contrastMembers=Меня́ зову́т | Прошу́ проще́ния | Как дела́?
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u25-name-question-0-ru | prov-ex-u25-name-question-1-ru | prov-ex-u25-name-question-2-ru | prov-ex-u25-name-question-3-ru
@@ -2394,19 +2452,20 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-ruwiki-lichnoe-imya-154915954
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 8ab6c8df54f2a42b240ee99825d42e98a804da5fc931a8ce232638cfa7b8790b
+- Content hash: 78a7fb0dd8c80ed6da1b69235d9b0d2393bdaff4086d3c7bf6fbdbfb40af82a8
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted phrase classifies the shown form?
+prompt=Which classification describes this documented example?
 promptLetter=Машенька
 options=от краткой формы | от полной формы имени | оттенок пренебрежения
 answer=от краткой формы
-feedback=The source says от краткой формы and gives Машенька. The keyed phrase is от краткой формы. от краткой формы.
+feedback=The source says от краткой формы and gives Машенька. The keyed phrase is от краткой формы.
+Машенька is the cue; от краткой формы matches the requested function or classification: derivation from the short form.
 objectiveId=obj-u25-nickname-rule
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The source assigns от полной формы имени to Марюня. | The source assigns оттенок пренебрежения to Сашка.
+distractorRationales= | от полной формы имени: derivation from the full form of the name. This differs from the classification or conversational function requested here. The source assigns от полной формы имени to Марюня. | оттенок пренебрежения: a shade of dismissiveness in the supplied classification. This differs from the classification or conversational function requested here. The source assigns оттенок пренебрежения to Сашка.
 testedFeature=DIMINUTIVE_FORM_CLASSIFICATION
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u25-nickname-rule-1
@@ -2414,8 +2473,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u25-nickname-rule-1-en
 distractorSourceIds= | prov-ex-u25-nickname-rule-0-en | prov-ex-u25-nickname-rule-2-en
-distractorDifference= | от полной формы имени does not classify the shown form. | оттенок пренебрежения does not classify this shown form.
+distractorDifference= | от полной формы имени: derivation from the full form of the name. This differs from the classification or conversational function requested here. The source assigns от полной формы имени to Марюня. | оттенок пренебрежения: a shade of dismissiveness in the supplied classification. This differs from the classification or conversational function requested here. The source assigns оттенок пренебрежения to Сашка.
 whyAnswerDemonstratesObjective=The source says от краткой формы and gives Машенька. The keyed phrase is от краткой формы.
+Машенька is the cue; от краткой формы matches the requested function or classification: derivation from the short form.
 contrastMembers=от краткой формы | от полной формы имени | оттенок пренебрежения
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u25-nickname-rule-1-ru | prov-ex-u25-nickname-rule-1-en | prov-ex-u25-nickname-rule-0-en | prov-ex-u25-nickname-rule-2-en
@@ -2429,19 +2489,20 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-ruwiki-lichnoe-imya-154915954
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 1aa72ef2c2d0036fad62e44de18d3ff31fbb0088dd75a011dcc7dfdca04560de
+- Content hash: bda2bf7ecfb0a959b6e62a2b732c1a3d21b661cadbdaa3a4828d89b94556f664
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted phrase classifies the shown form?
+prompt=Which classification describes this documented example?
 promptLetter=Сашка
 options=оттенок пренебрежения | от полной формы имени | от краткой формы
 answer=оттенок пренебрежения
-feedback=The source says these forms carry оттенок пренебрежения and gives Сашка. The keyed phrase is оттенок пренебрежения. оттенок пренебрежения.
+feedback=The source says these forms carry оттенок пренебрежения and gives Сашка. The keyed phrase is оттенок пренебрежения.
+Сашка is the cue; оттенок пренебрежения matches the requested function or classification: a shade of dismissiveness in the supplied classification.
 objectiveId=obj-u25-nickname-rule
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The source assigns от полной формы имени to Марюня. | The source assigns от краткой формы to Машенька.
+distractorRationales= | от полной формы имени: derivation from the full form of the name. This differs from the classification or conversational function requested here. The source assigns от полной формы имени to Марюня. | от краткой формы: derivation from the short form. This differs from the classification or conversational function requested here. The source assigns от краткой формы to Машенька.
 testedFeature=DIMINUTIVE_FORM_CLASSIFICATION
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u25-nickname-rule-2
@@ -2449,8 +2510,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u25-nickname-rule-2-en
 distractorSourceIds= | prov-ex-u25-nickname-rule-0-en | prov-ex-u25-nickname-rule-1-en
-distractorDifference= | от полной формы имени does not classify the shown form. | от краткой формы does not classify the shown form.
+distractorDifference= | от полной формы имени: derivation from the full form of the name. This differs from the classification or conversational function requested here. The source assigns от полной формы имени to Марюня. | от краткой формы: derivation from the short form. This differs from the classification or conversational function requested here. The source assigns от краткой формы to Машенька.
 whyAnswerDemonstratesObjective=The source says these forms carry оттенок пренебрежения and gives Сашка. The keyed phrase is оттенок пренебрежения.
+Сашка is the cue; оттенок пренебрежения matches the requested function or classification: a shade of dismissiveness in the supplied classification.
 contrastMembers=оттенок пренебрежения | от полной формы имени | от краткой формы
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u25-nickname-rule-2-ru | prov-ex-u25-nickname-rule-2-en | prov-ex-u25-nickname-rule-0-en | prov-ex-u25-nickname-rule-1-en
@@ -2464,19 +2526,20 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-ruwiki-obraschenie-153012874
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: dd8d992d7661f28d0339e93cc6c8ecf5fe8abc04bdffec28bbcf16049a00b7d7
+- Content hash: c78d00793ce7cefcd7b07d938ad4e5bad124f3517b7def79b0792530a7e5d022
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted list name is written for the shown form?
+prompt=Which name-form category describes this example?
 promptLetter=Ира
 options=краткие имена | полные имена | уменьшительно-ласкательные
 answer=краткие имена
 feedback=The frozen source pairs the shown form "Ира" with the admitted gloss "краткие имена" ("краткие имена — Ира").
+Ира is the cue; краткие имена matches the requested function or classification: the short-name category.
 objectiveId=obj-u25-address
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "Ирина" with the admitted gloss "полные имена" ("полные имена — Ирина"). | The frozen source pairs the shown form "Ирочка" with the admitted gloss "уменьшительно-ласкательные" ("уменьшительно-ласкательные — Ирочка").
+distractorRationales= | полные имена: the full-name category. This differs from the classification or conversational function requested here. The frozen source pairs the shown form "Ирина" with the admitted gloss "полные имена" ("полные имена — Ирина"). | уменьшительно-ласкательные: the diminutive or affectionate category. This differs from the classification or conversational function requested here. The frozen source pairs the shown form "Ирочка" with the admitted gloss "уменьшительно-ласкательные" ("уменьшительно-ласкательные — Ирочка").
 testedFeature=REGISTER_SHORT
 evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u25-address-1
@@ -2484,8 +2547,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u25-address-1-en
 distractorSourceIds= | prov-ex-u25-address-0-en | prov-ex-u25-address-2-en
-distractorDifference= | The frozen source pairs the shown form "Ирина" with the admitted gloss "полные имена" ("полные имена — Ирина"). | The frozen source pairs the shown form "Ирочка" with the admitted gloss "уменьшительно-ласкательные" ("уменьшительно-ласкательные — Ирочка").
+distractorDifference= | полные имена: the full-name category. This differs from the classification or conversational function requested here. The frozen source pairs the shown form "Ирина" with the admitted gloss "полные имена" ("полные имена — Ирина"). | уменьшительно-ласкательные: the diminutive or affectionate category. This differs from the classification or conversational function requested here. The frozen source pairs the shown form "Ирочка" with the admitted gloss "уменьшительно-ласкательные" ("уменьшительно-ласкательные — Ирочка").
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Ира" with the admitted gloss "краткие имена" ("краткие имена — Ира").
+Ира is the cue; краткие имена matches the requested function or classification: the short-name category.
 contrastMembers=краткие имена | полные имена | уменьшительно-ласкательные
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u25-address-1-ru | prov-ex-u25-address-1-en | prov-ex-u25-address-0-en | prov-ex-u25-address-2-en
@@ -2499,19 +2563,20 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-ruwiki-obraschenie-153012874
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 00707ca1433425bcee78e712fa42a45e6a113be27612d75266c065ffb8370121
+- Content hash: e512373f70a7a3faae405f0dd9627cc56f141f96023ee3bd38d38161ef0315ed
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted list name is written for the shown form?
+prompt=Which name-form category describes this example?
 promptLetter=Ирочка
 options=уменьшительно-ласкательные | полные имена | краткие имена
 answer=уменьшительно-ласкательные
 feedback=The frozen source pairs the shown form "Ирочка" with the admitted gloss "уменьшительно-ласкательные" ("уменьшительно-ласкательные — Ирочка").
+Ирочка is the cue; уменьшительно-ласкательные matches the requested function or classification: the diminutive or affectionate category.
 objectiveId=obj-u25-address
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "Ирина" with the admitted gloss "полные имена" ("полные имена — Ирина"). | The frozen source pairs the shown form "Ира" with the admitted gloss "краткие имена" ("краткие имена — Ира").
+distractorRationales= | полные имена: the full-name category. This differs from the classification or conversational function requested here. The frozen source pairs the shown form "Ирина" with the admitted gloss "полные имена" ("полные имена — Ирина"). | краткие имена: the short-name category. This differs from the classification or conversational function requested here. The frozen source pairs the shown form "Ира" with the admitted gloss "краткие имена" ("краткие имена — Ира").
 testedFeature=REGISTER_DIMINUTIVE
 evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u25-address-2
@@ -2519,8 +2584,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u25-address-2-en
 distractorSourceIds= | prov-ex-u25-address-0-en | prov-ex-u25-address-1-en
-distractorDifference= | The frozen source pairs the shown form "Ирина" with the admitted gloss "полные имена" ("полные имена — Ирина"). | The frozen source pairs the shown form "Ира" with the admitted gloss "краткие имена" ("краткие имена — Ира").
+distractorDifference= | полные имена: the full-name category. This differs from the classification or conversational function requested here. The frozen source pairs the shown form "Ирина" with the admitted gloss "полные имена" ("полные имена — Ирина"). | краткие имена: the short-name category. This differs from the classification or conversational function requested here. The frozen source pairs the shown form "Ира" with the admitted gloss "краткие имена" ("краткие имена — Ира").
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Ирочка" with the admitted gloss "уменьшительно-ласкательные" ("уменьшительно-ласкательные — Ирочка").
+Ирочка is the cue; уменьшительно-ласкательные matches the requested function or classification: the diminutive or affectionate category.
 contrastMembers=уменьшительно-ласкательные | полные имена | краткие имена
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u25-address-2-ru | prov-ex-u25-address-2-en | prov-ex-u25-address-0-en | prov-ex-u25-address-1-en
@@ -2534,19 +2600,20 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-ruwiki-obraschenie-153012874
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 83e5ab311a63be6c95a4dd20b63b75c08acdf604fb7cf4a145cf3298f7da1444
+- Content hash: 988e5a6411b114ee45c3d411771c9a2b3ffb49f7bd928a6a41441972889aae84
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted setting is written for the shown address form?
+prompt=Which register does the supplied full-name address example illustrate?
 promptLetter=полному имени
 options=отстранённо-официального регистра | дружески-неофициальном общении | полуофициальной обстановке
 answer=отстранённо-официального регистра
 feedback=The frozen source pairs the shown form "полному имени" with the admitted gloss "отстранённо-официального регистра" ("отстранённо-официального регистра").
+полному имени is the cue; отстранённо-официального регистра matches the requested function or classification: the stated detached formal register.
 objectiveId=obj-u25-address
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen source pairs the shown form "полному имени" with the admitted gloss "дружески-неофициальном общении" ("дружески-неофициальном общении"). | The frozen source pairs the shown form "полному имени" with the admitted gloss "полуофициальной обстановке" ("полуофициальной обстановке").
+distractorRationales= | дружески-неофициальном общении: friendly informal communication. This differs from the classification or conversational function requested here. The frozen source pairs the shown form "полному имени" with the admitted gloss "дружески-неофициальном общении" ("дружески-неофициальном общении"). | полуофициальной обстановке: a semi-official setting rather than the requested register label. This differs from the classification or conversational function requested here. The frozen source pairs the shown form "полному имени" with the admitted gloss "полуофициальной обстановке" ("полуофициальной обстановке").
 testedFeature=REGISTER_OFFICIAL
 evidenceMode=EXPLICIT_SOURCE_PAIR
 contrastSetId=u25-address-3
@@ -2554,8 +2621,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u25-address-3-en
 distractorSourceIds= | prov-u25-address-x-4 | prov-u25-address-x-5
-distractorDifference= | The frozen source pairs the shown form "полному имени" with the admitted gloss "дружески-неофициальном общении" ("дружески-неофициальном общении"). | The frozen source pairs the shown form "полному имени" with the admitted gloss "полуофициальной обстановке" ("полуофициальной обстановке").
+distractorDifference= | дружески-неофициальном общении: friendly informal communication. This differs from the classification or conversational function requested here. The frozen source pairs the shown form "полному имени" with the admitted gloss "дружески-неофициальном общении" ("дружески-неофициальном общении"). | полуофициальной обстановке: a semi-official setting rather than the requested register label. This differs from the classification or conversational function requested here. The frozen source pairs the shown form "полному имени" with the admitted gloss "полуофициальной обстановке" ("полуофициальной обстановке").
 whyAnswerDemonstratesObjective=The frozen source pairs the shown form "полному имени" with the admitted gloss "отстранённо-официального регистра" ("отстранённо-официального регистра").
+полному имени is the cue; отстранённо-официального регистра matches the requested function or classification: the stated detached formal register.
 contrastMembers=отстранённо-официального регистра | дружески-неофициальном общении | полуофициальной обстановке
 relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u25-address-3-ru | prov-ex-u25-address-3-en | prov-u25-address-x-4 | prov-u25-address-x-5
@@ -2569,19 +2637,20 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: b9b1f689ac36fd8f8cfca6baf5f3a159d6758a1bfab90b79927658bb3a2cbe31
+- Content hash: 269550672e674e62ac2da1d7a8dab2051059c8269c49b2958e1741572fee0212
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which English description matches the shown name derived in the admitted short-form pattern?
+prompt=Which English description classifies this documented personal-name example?
 promptLetter=Машенька
 options=documented derivative of the short form | documented derivative of the full name | documented dismissive coloring
 answer=documented derivative of the short form
 feedback=Машенька is a documented derivative of the short form in this admitted material.
+Машенька is the cue; documented derivative of the short form matches the requested function or classification: a documented short-form derivational base.
 objectiveId=obj-u25-documented-name-form
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Марюня is a documented derivative of the full name in this admitted material. | Сашка carries documented dismissive coloring in this admitted material.
+distractorRationales= | documented derivative of the full name: a documented full-name derivational base. This differs from the classification or conversational function requested here. Марюня is a documented derivative of the full name in this admitted material. | documented dismissive coloring: the social coloring documented for the supplied example. This differs from the classification or conversational function requested here. Сашка carries documented dismissive coloring in this admitted material.
 testedFeature=DOCUMENTED_SHORT_FORM_DERIVATIVE
 evidenceMode=STATED_APPLICATION
 contrastSetId=u25-i-name-form-1
@@ -2589,8 +2658,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-u25-name-form-12
 distractorSourceIds= | prov-u25-name-form-11 | prov-u25-name-form-13
-distractorDifference= | Марюня is a documented derivative of the full name in this admitted material. | Сашка carries documented dismissive coloring in this admitted material.
+distractorDifference= | documented derivative of the full name: a documented full-name derivational base. This differs from the classification or conversational function requested here. Марюня is a documented derivative of the full name in this admitted material. | documented dismissive coloring: the social coloring documented for the supplied example. This differs from the classification or conversational function requested here. Сашка carries documented dismissive coloring in this admitted material.
 whyAnswerDemonstratesObjective=Машенька is a documented derivative of the short form in this admitted material.
+Машенька is the cue; documented derivative of the short form matches the requested function or classification: a documented short-form derivational base.
 contrastMembers=documented derivative of the short form | documented derivative of the full name | documented dismissive coloring
 relationKind=STATED_APPLICATION
 relationParticipantIds=prov-u25-name-form-8 | prov-u25-name-form-12 | prov-u25-name-form-11 | prov-u25-name-form-13
@@ -2604,19 +2674,20 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 9191dfbdf42e0cbd8043b388abf5ed167774b4df7287ee2f27a4fee996740e11
+- Content hash: 6da4ab05f449eca33d1a723684c63cbe4037b77a370aa932411cada92fd83b7c
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which English description matches the shown name that this admitted material treats as disparaging?
+prompt=Which English classification matches this supplied personal-name example?
 promptLetter=Сашка
 options=documented dismissive coloring | documented derivative of the full name | documented derivative of the short form
 answer=documented dismissive coloring
 feedback=Сашка carries documented dismissive coloring in this admitted material.
+Сашка is the cue; documented dismissive coloring matches the requested function or classification: the social coloring documented for the supplied example.
 objectiveId=obj-u25-documented-name-form
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Марюня is a documented derivative of the full name in this admitted material. | Машенька is a documented derivative of the short form in this admitted material.
+distractorRationales= | documented derivative of the full name: a documented full-name derivational base. This differs from the classification or conversational function requested here. Марюня is a documented derivative of the full name in this admitted material. | documented derivative of the short form: a documented short-form derivational base. This differs from the classification or conversational function requested here. Машенька is a documented derivative of the short form in this admitted material.
 testedFeature=DOCUMENTED_DISMISSIVE_COLORING
 evidenceMode=STATED_APPLICATION
 contrastSetId=u25-i-name-form-2
@@ -2624,8 +2695,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-u25-name-form-13
 distractorSourceIds= | prov-u25-name-form-11 | prov-u25-name-form-12
-distractorDifference= | Марюня is a documented derivative of the full name in this admitted material. | Машенька is a documented derivative of the short form in this admitted material.
+distractorDifference= | documented derivative of the full name: a documented full-name derivational base. This differs from the classification or conversational function requested here. Марюня is a documented derivative of the full name in this admitted material. | documented derivative of the short form: a documented short-form derivational base. This differs from the classification or conversational function requested here. Машенька is a documented derivative of the short form in this admitted material.
 whyAnswerDemonstratesObjective=Сашка carries documented dismissive coloring in this admitted material.
+Сашка is the cue; documented dismissive coloring matches the requested function or classification: the social coloring documented for the supplied example.
 contrastMembers=documented dismissive coloring | documented derivative of the full name | documented derivative of the short form
 relationKind=STATED_APPLICATION
 relationParticipantIds=prov-u25-name-form-9 | prov-u25-name-form-13 | prov-u25-name-form-11 | prov-u25-name-form-12
@@ -2639,7 +2711,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-original-research-synthesis
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: bb092e116c2876f1e3049aba1c0c18ca051b16e977bd50bdc581aad5946def90
+- Content hash: c49608d4209583787389f47792dbc5d0bf8f86dd43e3db6c2f44a5eb6a9674fb
 
 kind=CONTRAST_SELECTION
 language=en
@@ -2648,10 +2720,11 @@ promptLetter=an unstudied personal name
 options=unsupported until a names dictionary documents that form | the suffix mechanically generates an acceptable name
 answer=unsupported until a names dictionary documents that form
 feedback=An unfamiliar form must be verified in a names dictionary.
+an unstudied personal name is the cue; unsupported until a names dictionary documents that form matches the requested function or classification: the required documentation limit for an unfamiliar form.
 objectiveId=obj-u25-documented-name-form
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | A suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name.
+distractorRationales= | the suffix mechanically generates an acceptable name: an unsupported claim of automatic acceptable formation. This differs from the classification or conversational function requested here. A suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name.
 testedFeature=REJECTED_ARBITRARY_NAME
 evidenceMode=STATED_APPLICATION
 contrastSetId=u25-i-name-form-3
@@ -2659,8 +2732,9 @@ cueLanguage=rule
 independent=true
 answerSourceIds=prov-u25-name-form-14
 distractorSourceIds= | prov-u25-name-form-15
-distractorDifference= | A suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name.
+distractorDifference= | the suffix mechanically generates an acceptable name: an unsupported claim of automatic acceptable formation. This differs from the classification or conversational function requested here. A suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name.
 whyAnswerDemonstratesObjective=An unfamiliar form must be verified in a names dictionary.
+an unstudied personal name is the cue; unsupported until a names dictionary documents that form matches the requested function or classification: the required documentation limit for an unfamiliar form.
 contrastMembers=unsupported until a names dictionary documents that form | the suffix mechanically generates an acceptable name
 relationKind=STATED_APPLICATION
 relationParticipantIds=prov-u25-name-form-20 | prov-u25-name-form-14 | prov-u25-name-form-15
@@ -3640,6 +3714,4158 @@ attribution=Russian Companion content-audit research synthesis, content-audit-20
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
 sourceHash=ce59b61bd06e3e560b64fa1c3cd6ce1eb9a05235b58a9ba3e66dfd429f02f018
 contentHash=b213e9b9897981e2ddb063e72eb2321a36001c5557ad87762ad0cb9008308c1d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-address-guided`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 812c9499232bcc83aa2d42d09b2a2b948529530e5010068f4da464b1e7657d6c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-address:address-guided
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Use the explanation and the supplied example to identify the requested name form, meaning or register. A missed check returns to the full explanation.
+shippedText=Use the explanation and the supplied example to identify the requested name form, meaning or register. A missed check returns to the full explanation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7c82e3d3bc64885490e0b9f1b20c7910cd7115e8bcbf5e86a5799e270cb92c8a
+contentHash=4bb459e4304a8f4eeba04746004e045ccf8f547694aeb7992b02b5e085f963ff
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-address-objective`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 913d7bf74eb44c36565c14724079ebb426e1cb02c9cb8e763113720cbbb3939e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-address:address-objective
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Distinguish name-form categories and the illustrated register
+shippedText=Distinguish name-form categories and the illustrated register
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0c6a8626898c7e0fef7d82bc5b2e21afb701b35aa94e49df32dcdfe25975b2ff
+contentHash=ac2fc6159e8215f096279e97fa80a0df70a6be3c1eb71bf4829eaafc137adb11
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-address-rem-body`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a0f6217d00b2a1c5bb7a653cf1a08b7838421da8eee5490edf6012e6ca563424
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-address:address-rem-body
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Ирина is classified as полные имена, meaning full names. Ира is classified as краткие имена, meaning short names. These are forms of the supplied personal name, not different family names. A category identifies the form; it does not by itself settle what is courteous in every conversation.
+
+Ирочка is classified as уменьшительно-ласкательные, meaning diminutive or affectionate forms. The full-name category полные имена and the short-name category краткие имена differ from this affectionate category. The examples recognize conventional forms; they do not license mechanical suffix formation for an unfamiliar name.
+
+For address by полному имени, meaning the full name, the source describes отстранённо-официального регистра, a detached formal register. It also discusses use in an official or полуофициальной обстановке, a semi-official setting; short forms are described in дружески-неофициальном общении, friendly informal communication. The check asks for the stated register, not every possible setting where a full name occurs. This example does not mean full first names are always formal, or that they always replace a patronymic in formal address. Relationship, setting and the person's preference matter.
+shippedText=Ирина is classified as полные имена, meaning full names. Ира is classified as краткие имена, meaning short names. These are forms of the supplied personal name, not different family names. A category identifies the form; it does not by itself settle what is courteous in every conversation.
+
+Ирочка is classified as уменьшительно-ласкательные, meaning diminutive or affectionate forms. The full-name category полные имена and the short-name category краткие имена differ from this affectionate category. The examples recognize conventional forms; they do not license mechanical suffix formation for an unfamiliar name.
+
+For address by полному имени, meaning the full name, the source describes отстранённо-официального регистра, a detached formal register. It also discusses use in an official or полуофициальной обстановке, a semi-official setting; short forms are described in дружески-неофициальном общении, friendly informal communication. The check asks for the stated register, not every possible setting where a full name occurs. This example does not mean full first names are always formal, or that they always replace a patronymic in formal address. Relationship, setting and the person's preference matter.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=82254c95d7dedab2da03fde09d1b06ec1a3856b28a66f1d0a2bf990685f89b65
+contentHash=e6ad821365d392c986505634ad4873de7bc01386e017c943d5da7c2ccf3fccc1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-address-rem-title`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1c2ddb76cb5ab9d5fe60c5d435c2965eb121fe4d7453dae9ba9e83cbbb5f9e91
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-address:address-rem-title
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Review the complete name or courtesy distinction
+shippedText=Review the complete name or courtesy distinction
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bb45746a245308c03beb1618607188cde2c417b17818cd8c4d549b1bcd1724cc
+contentHash=08ccea00a52be2c1ee944c159cc1aa99674887fc8e408d9cc61c96517e3bf2b5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-address-teach-1-body`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4873995ae6fec5799ff8aa8b572727c3226524486af26337801be5da5fb9a471
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-address:address-teach-1-body
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Ирина is classified as полные имена, meaning full names. Ира is classified as краткие имена, meaning short names. These are forms of the supplied personal name, not different family names. A category identifies the form; it does not by itself settle what is courteous in every conversation.
+shippedText=Ирина is classified as полные имена, meaning full names. Ира is classified as краткие имена, meaning short names. These are forms of the supplied personal name, not different family names. A category identifies the form; it does not by itself settle what is courteous in every conversation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=523f5d4983f10e1600b427a3a12965d22cb5cecd63fbd2f59d27cb30b324901d
+contentHash=4bbd37db94dd0422c4c9240f28ab5ff04f2fe796a7549889b1c90299e658fe6c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-address-teach-1-title`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dd805bd051c40a0ba2e3f628252f279fa74a23ada963275342dd2eef172461e8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-address:address-teach-1-title
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Full and short forms
+shippedText=Full and short forms
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c4c8f68b7ba12639be50be7a0eb8b0e0dd3f95f990ba8d0653d3959a4929f91b
+contentHash=48f3853c9c15cac87397ea8f0c0ef6ea9aea8b1cc46cdde9d9df0d8f31cd4941
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-address-teach-2-body`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b477c9fdd898c0d213b73b4b371550919bd382267f11f236c57743fa2d905927
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-address:address-teach-2-body
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Ирочка is classified as уменьшительно-ласкательные, meaning diminutive or affectionate forms. The full-name category полные имена and the short-name category краткие имена differ from this affectionate category. The examples recognize conventional forms; they do not license mechanical suffix formation for an unfamiliar name.
+shippedText=Ирочка is classified as уменьшительно-ласкательные, meaning diminutive or affectionate forms. The full-name category полные имена and the short-name category краткие имена differ from this affectionate category. The examples recognize conventional forms; they do not license mechanical suffix formation for an unfamiliar name.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4f5ad45b5d0a8364b97a64ca330dd4a7c45a03e87899dc341353dad82f88b05d
+contentHash=a84c79d8d339a853d59d6d932d21b2d2283bb6249a05ad7538ba4c1f600b2f22
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-address-teach-2-title`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0f50435d665cd8b71aac8d77f676f03882dbc8328d7f2146254a743669c8f6a9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-address:address-teach-2-title
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+An affectionate form is another category
+shippedText=An affectionate form is another category
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f13ba679f58f8ff4091bb34051e092adb79890c6ef795afba87330c71a81f8f3
+contentHash=99c60862dad2b25cd2426bd6a9a5ec92a7a90da8aa1ecc6601b2bc979a248e0c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-address-teach-3-body`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2a3f2e81228182d41244a3b087205573305a2b954bdde14a0be664d6815857cd
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-address:address-teach-3-body
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+For address by полному имени, meaning the full name, the source describes отстранённо-официального регистра, a detached formal register. It also discusses use in an official or полуофициальной обстановке, a semi-official setting; short forms are described in дружески-неофициальном общении, friendly informal communication. The check asks for the stated register, not every possible setting where a full name occurs. This example does not mean full first names are always formal, or that they always replace a patronymic in formal address. Relationship, setting and the person's preference matter.
+shippedText=For address by полному имени, meaning the full name, the source describes отстранённо-официального регистра, a detached formal register. It also discusses use in an official or полуофициальной обстановке, a semi-official setting; short forms are described in дружески-неофициальном общении, friendly informal communication. The check asks for the stated register, not every possible setting where a full name occurs. This example does not mean full first names are always formal, or that they always replace a patronymic in formal address. Relationship, setting and the person's preference matter.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7b340052d6b65598279474deebd15c0b4c58c868ffae5aa4b7c1ec1d5706584e
+contentHash=66545b1be87d699782aad75aacedae5253f203c98bb9fc28edde0819a7e0091f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-address-teach-3-title`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 40562705e2b8a1e88ed57f4c7c8551c7df890a3bf38531a3f22020b7d52fd675
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-address:address-teach-3-title
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Read the supplied register example without overgeneralizing
+shippedText=Read the supplied register example without overgeneralizing
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4e7d65adb064f8fb9f184861c63e4054a716b390c5949dd73f1e2e083be6d78b
+contentHash=d2a4915d9a3fc6fabf7b9746c7dd6600fcca0d1eff0f55633d6103d52e296512
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-courtesy-guided`
+
+- Objectives: obj-u25-courtesy
+- Sessions: u25-s-orient, u25-s-courtesy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1ffce8bb1442cda5a21c2f0707c0529cfc6c196373f82790c6f340c3b6238448
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-courtesy:courtesy-guided
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Use the explanation and the supplied example to identify the requested name form, meaning or register. A missed check returns to the full explanation.
+shippedText=Use the explanation and the supplied example to identify the requested name form, meaning or register. A missed check returns to the full explanation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7c82e3d3bc64885490e0b9f1b20c7910cd7115e8bcbf5e86a5799e270cb92c8a
+contentHash=4bb459e4304a8f4eeba04746004e045ccf8f547694aeb7992b02b5e085f963ff
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-courtesy-objective`
+
+- Objectives: obj-u25-courtesy
+- Sessions: u25-s-orient, u25-s-courtesy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b1cc3eab9c6ea46bd8f19c5193516bc626083080a2eab6ec8b7ed427b114e0b7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-courtesy:courtesy-objective
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Distinguish a request, thanks and an apology
+shippedText=Distinguish a request, thanks and an apology
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3884570b1473321d02cdb76cd59f6f864e7cd2e52bd5bba3cb7f1c316b07ba6d
+contentHash=816261b8949c57a6da81bd1b06707c2532e6ef5c3463df00c34a2f519fe9ebef
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-courtesy-rem-body`
+
+- Objectives: obj-u25-courtesy
+- Sessions: u25-s-orient, u25-s-courtesy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fe448bf2d995e4c39d2ad09048f68633fe3efb8f6c7d335c479c9dcb702233bf
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-courtesy:courtesy-rem-body
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Пожа́луйста means please in the supplied request use. Спаси́бо means thanks or thank you. A request asks for something; thanks responds with gratitude. The checks use these functions rather than treating all courtesy words as interchangeable.
+
+Извини́те means excuse me with polite or plural address. Извини́ is the familiar singular form. In the checked descriptions, excuse me, polite or plural identifies the first form; excuse me, familiar singular identifies the second. Neither is the thank you response.
+
+The ending in Извини́те permits polite address to one person or address to more than one person. It does not mean that every use has several listeners. The checked contrast identifies the supplied form, not a rule that a familiar apology is suitable for every relationship. The pronunciation label Pozhalusta in the older source is not another English meaning of please.
+shippedText=Пожа́луйста means please in the supplied request use. Спаси́бо means thanks or thank you. A request asks for something; thanks responds with gratitude. The checks use these functions rather than treating all courtesy words as interchangeable.
+
+Извини́те means excuse me with polite or plural address. Извини́ is the familiar singular form. In the checked descriptions, excuse me, polite or plural identifies the first form; excuse me, familiar singular identifies the second. Neither is the thank you response.
+
+The ending in Извини́те permits polite address to one person or address to more than one person. It does not mean that every use has several listeners. The checked contrast identifies the supplied form, not a rule that a familiar apology is suitable for every relationship. The pronunciation label Pozhalusta in the older source is not another English meaning of please.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fdb4652e546add8fcc3dddf776b0bf8229458434a3a8cb90e4bdb4f94c88a127
+contentHash=330e757ec0f984231c65370e61996735f134f79c4f1c53d715da64aa08498aa6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-courtesy-rem-title`
+
+- Objectives: obj-u25-courtesy
+- Sessions: u25-s-orient, u25-s-courtesy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fade682ecab7af301aff818b99bd4d5f7b5fe98c6798ccb8001cf58af675b55f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-courtesy:courtesy-rem-title
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Review the complete name or courtesy distinction
+shippedText=Review the complete name or courtesy distinction
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bb45746a245308c03beb1618607188cde2c417b17818cd8c4d549b1bcd1724cc
+contentHash=08ccea00a52be2c1ee944c159cc1aa99674887fc8e408d9cc61c96517e3bf2b5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-courtesy-teach-1-body`
+
+- Objectives: obj-u25-courtesy
+- Sessions: u25-s-orient, u25-s-courtesy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 899aca92fc251828ee6e9d06bfac10320f344e6ac493ea1af0dba13cbb6d49f3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-courtesy:courtesy-teach-1-body
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Пожа́луйста means please in the supplied request use. Спаси́бо means thanks or thank you. A request asks for something; thanks responds with gratitude. The checks use these functions rather than treating all courtesy words as interchangeable.
+shippedText=Пожа́луйста means please in the supplied request use. Спаси́бо means thanks or thank you. A request asks for something; thanks responds with gratitude. The checks use these functions rather than treating all courtesy words as interchangeable.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d006ce7edcded52c947a44729b2816e0b4670b1aff546b26f44685210f468cfc
+contentHash=64204cd09b96c065acce89ed4cac75f61d812237e1faf2cf0417f3d78aaa0866
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-courtesy-teach-1-title`
+
+- Objectives: obj-u25-courtesy
+- Sessions: u25-s-orient, u25-s-courtesy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b284d37fc136f4eb0cd7db5975bb98b2c5368982ff377835bf4df629416dcaae
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-courtesy:courtesy-teach-1-title
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Request and thanks have different functions
+shippedText=Request and thanks have different functions
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=724a2b966b1ff1aa21347eef8e8bbf7d23b749c1ea86e98692bdd2680b866a0b
+contentHash=e9e517d186976ac96422ebf55b911455607a6d5456cd134c7f3f531668215146
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-courtesy-teach-2-body`
+
+- Objectives: obj-u25-courtesy
+- Sessions: u25-s-orient, u25-s-courtesy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 055dd8c142be8c5e1d11faaa70ca13764209ad8d9e036f8c8627f7153368676a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-courtesy:courtesy-teach-2-body
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Извини́те means excuse me with polite or plural address. Извини́ is the familiar singular form. In the checked descriptions, excuse me, polite or plural identifies the first form; excuse me, familiar singular identifies the second. Neither is the thank you response.
+shippedText=Извини́те means excuse me with polite or plural address. Извини́ is the familiar singular form. In the checked descriptions, excuse me, polite or plural identifies the first form; excuse me, familiar singular identifies the second. Neither is the thank you response.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5252396ea59f433112b777425f5c19e05ba17e819996baec716a155be0992dab
+contentHash=8b646ee6fec1febe3bf00052fb9fb846714aaa69012add0dc1aad224f2806023
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-courtesy-teach-2-title`
+
+- Objectives: obj-u25-courtesy
+- Sessions: u25-s-orient, u25-s-courtesy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a1507270a0fe05cf040b94e17924d276fb7eeff478deef2b2ac45390117ea440
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-courtesy:courtesy-teach-2-title
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+An apology is not thanks
+shippedText=An apology is not thanks
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c548751c1ef10c09e709b223e0e7627767c492d4ec754ec877e82e1a4d48a67f
+contentHash=a8a4f83fa39affe14ffa8668db7572364180b09934a17dec01027004585d212e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-courtesy-teach-3-body`
+
+- Objectives: obj-u25-courtesy
+- Sessions: u25-s-orient, u25-s-courtesy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 33e562f50f030bb95074392e6b17ccf4692bb780b43d8ca878d3b2d6b17b1ffe
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-courtesy:courtesy-teach-3-body
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+The ending in Извини́те permits polite address to one person or address to more than one person. It does not mean that every use has several listeners. The checked contrast identifies the supplied form, not a rule that a familiar apology is suitable for every relationship. The pronunciation label Pozhalusta in the older source is not another English meaning of please.
+shippedText=The ending in Извини́те permits polite address to one person or address to more than one person. It does not mean that every use has several listeners. The checked contrast identifies the supplied form, not a rule that a familiar apology is suitable for every relationship. The pronunciation label Pozhalusta in the older source is not another English meaning of please.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c57884361f074a1e592d85595f1a0f4e0ef65d066f0a6abc680865904219db2d
+contentHash=b750e32bbb2af387c46dbb323659d25ede3dc5455032e071db9eee2a482fd3db
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-courtesy-teach-3-title`
+
+- Objectives: obj-u25-courtesy
+- Sessions: u25-s-orient, u25-s-courtesy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1729744ae2a6d3966616f8b1c850ddf9362695cc6078ae89082817ec53e86cd2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-courtesy:courtesy-teach-3-title
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Read the address distinction
+shippedText=Read the address distinction
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ca7e30ac4693f90287324787f00d18eab5dffdb2c233c20bc52ce60ca1afc241
+contentHash=d5d0d01ffd31ddb4c6bc4fe5ecf08b393c8f64465477fa3d74421ba5e647b125
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-diminutives-guided`
+
+- Objectives: obj-u25-diminutives
+- Sessions: u25-s-orient, u25-s-diminutives
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 59398e6645c2cc5080b497720fad0a620d096c395186d4d6c9bb61450d3b51c4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-diminutives:diminutives-guided
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Use the explanation and the supplied example to identify the requested name form, meaning or register. A missed check returns to the full explanation.
+shippedText=Use the explanation and the supplied example to identify the requested name form, meaning or register. A missed check returns to the full explanation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7c82e3d3bc64885490e0b9f1b20c7910cd7115e8bcbf5e86a5799e270cb92c8a
+contentHash=4bb459e4304a8f4eeba04746004e045ccf8f547694aeb7992b02b5e085f963ff
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-diminutives-objective`
+
+- Objectives: obj-u25-diminutives
+- Sessions: u25-s-orient, u25-s-diminutives
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 04266e01dec2736edef61bf94e2c9d5cdc75d754e81e42aae93067e944f58293
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-diminutives:diminutives-objective
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Recognize conventional short forms of the supplied names
+shippedText=Recognize conventional short forms of the supplied names
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=899af6c1ab9825f3e9497182858e5e3634c7b2f9bf451121042febe8bd890abc
+contentHash=e346f2b48aaaeacde7cd73fa2c8ba3d97b9958d12f3a3ac4d7d05d436efdb332
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-diminutives-rem-body`
+
+- Objectives: obj-u25-diminutives
+- Sessions: u25-s-orient, u25-s-diminutives
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 09ea4df5c94a0d412d1b5e81ef30bc483131af0af292e6b8be3f733af6b12d5f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-diminutives:diminutives-rem-body
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Александр is Alexander; Алексей is Alexei; Дмитрий is Dmitri. The checked conventional pairs are Alexander with Sasha, Alexei with Alyosha and Dmitri with Dima. A short form is a conventional personal-name form; it is not obtained by simply translating the full name into English.
+
+Sasha belongs to the supplied Alexander pair, Alyosha to the Alexei pair and Dima to the Dmitri pair. The other checked short forms belong to different full names in these examples. The retained list also gives Misha for Mikhail, Lena for Elena, Olya for Olga, Natasha for Natalya and Katya for Ekaterina. One name can have several documented forms.
+
+These checks use English transliterations of documented pairs. They do not test inventing a Russian spelling or adding a suffix to an unfamiliar name. Short and affectionate names can carry social meaning. Use a documented form and consider how the person wishes to be addressed rather than assuming every familiar form suits every situation.
+shippedText=Александр is Alexander; Алексей is Alexei; Дмитрий is Dmitri. The checked conventional pairs are Alexander with Sasha, Alexei with Alyosha and Dmitri with Dima. A short form is a conventional personal-name form; it is not obtained by simply translating the full name into English.
+
+Sasha belongs to the supplied Alexander pair, Alyosha to the Alexei pair and Dima to the Dmitri pair. The other checked short forms belong to different full names in these examples. The retained list also gives Misha for Mikhail, Lena for Elena, Olya for Olga, Natasha for Natalya and Katya for Ekaterina. One name can have several documented forms.
+
+These checks use English transliterations of documented pairs. They do not test inventing a Russian spelling or adding a suffix to an unfamiliar name. Short and affectionate names can carry social meaning. Use a documented form and consider how the person wishes to be addressed rather than assuming every familiar form suits every situation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=792aa42cfcd4555585f8537df68575891fefd3961f823ceec501e4ea17cf9a40
+contentHash=b1f7b24ee61c35050f8de2845d85e203cdb104cf497e8d0deebe2aade93ae883
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-diminutives-rem-title`
+
+- Objectives: obj-u25-diminutives
+- Sessions: u25-s-orient, u25-s-diminutives
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 59941012cbd414feea39a40e26e5977cbcc540af2c260a57c980d9effc27a4ee
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-diminutives:diminutives-rem-title
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Review the complete name or courtesy distinction
+shippedText=Review the complete name or courtesy distinction
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bb45746a245308c03beb1618607188cde2c417b17818cd8c4d549b1bcd1724cc
+contentHash=08ccea00a52be2c1ee944c159cc1aa99674887fc8e408d9cc61c96517e3bf2b5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-diminutives-teach-1-body`
+
+- Objectives: obj-u25-diminutives
+- Sessions: u25-s-orient, u25-s-diminutives
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dc3ce392b1fb7b6c8f9209c13062645fbee1d9281015aad2c6dc3c07b7f244e1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-diminutives:diminutives-teach-1-body
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Александр is Alexander; Алексей is Alexei; Дмитрий is Dmitri. The checked conventional pairs are Alexander with Sasha, Alexei with Alyosha and Dmitri with Dima. A short form is a conventional personal-name form; it is not obtained by simply translating the full name into English.
+shippedText=Александр is Alexander; Алексей is Alexei; Дмитрий is Dmitri. The checked conventional pairs are Alexander with Sasha, Alexei with Alyosha and Dmitri with Dima. A short form is a conventional personal-name form; it is not obtained by simply translating the full name into English.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=589af4a63878e7373ad044b228c8bae5b5d6d78c6974e0858b48dbb2ede89e52
+contentHash=e724a18a98e45aac3a8e7cd8c655568a84787518d8457982a69a604cb2be2f3e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-diminutives-teach-1-title`
+
+- Objectives: obj-u25-diminutives
+- Sessions: u25-s-orient, u25-s-diminutives
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d479931d440cd7fe866d03640b98744c5e95598c167e612d8c7cc14d5215f47f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-diminutives:diminutives-teach-1-title
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Full names and the names used in the checks
+shippedText=Full names and the names used in the checks
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=74d0df7111609674fca8d89af2fcc545f6547e9b429703f31a7469956e91cda6
+contentHash=8ec314b8ed3c4c7b87ab70b4513789450323a0ca4e2243a263ef39127f76ff3f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-diminutives-teach-2-body`
+
+- Objectives: obj-u25-diminutives
+- Sessions: u25-s-orient, u25-s-diminutives
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 477099e06b897e3dc77924c9721408fab5e93cbd98c7b079e71dff8fb86652af
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-diminutives:diminutives-teach-2-body
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Sasha belongs to the supplied Alexander pair, Alyosha to the Alexei pair and Dima to the Dmitri pair. The other checked short forms belong to different full names in these examples. The retained list also gives Misha for Mikhail, Lena for Elena, Olya for Olga, Natasha for Natalya and Katya for Ekaterina. One name can have several documented forms.
+shippedText=Sasha belongs to the supplied Alexander pair, Alyosha to the Alexei pair and Dima to the Dmitri pair. The other checked short forms belong to different full names in these examples. The retained list also gives Misha for Mikhail, Lena for Elena, Olya for Olga, Natasha for Natalya and Katya for Ekaterina. One name can have several documented forms.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7795e66ec94d960ba380fb3caddfefc8b364019d1e513422f76ec3c951c966fb
+contentHash=38b0ded7854fbec71c3f404c8997a39512320ca7cfb0b254eecaf46006d52550
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-diminutives-teach-2-title`
+
+- Objectives: obj-u25-diminutives
+- Sessions: u25-s-orient, u25-s-diminutives
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 05d6644f21a5f9b5613bdc8de2f7305d8fa3f196ed7a670b35945f803bb49e76
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-diminutives:diminutives-teach-2-title
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Use the right conventional pair
+shippedText=Use the right conventional pair
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=759e51606851b9af9f70413d6fdc3d413efae4bad49ca740fe97367328340d4e
+contentHash=f673a5136d32a78f7115fa2030c0b924dd9259197e90677d2d40fb4d52afed77
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-diminutives-teach-3-body`
+
+- Objectives: obj-u25-diminutives
+- Sessions: u25-s-orient, u25-s-diminutives
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a324510d528c858002d19cb7f8748c3baa80978d9d6e1ea2329fb5aed0a15986
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-diminutives:diminutives-teach-3-body
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+These checks use English transliterations of documented pairs. They do not test inventing a Russian spelling or adding a suffix to an unfamiliar name. Short and affectionate names can carry social meaning. Use a documented form and consider how the person wishes to be addressed rather than assuming every familiar form suits every situation.
+shippedText=These checks use English transliterations of documented pairs. They do not test inventing a Russian spelling or adding a suffix to an unfamiliar name. Short and affectionate names can carry social meaning. Use a documented form and consider how the person wishes to be addressed rather than assuming every familiar form suits every situation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=06fb5797defaa0f9380df0798b58e3559f7821c48d5e293943d5d101489cbfd2
+contentHash=34c498c5a7bb88982cff4a93498614126558616024f7dd0a0fdaa6019905fbb6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-diminutives-teach-3-title`
+
+- Objectives: obj-u25-diminutives
+- Sessions: u25-s-orient, u25-s-diminutives
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e90bb1fb864afa3e6f1f4ce847f7aa1586c021f23ed75ce5cb7865fdaa368620
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-diminutives:diminutives-teach-3-title
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Recognition is not automatic name formation
+shippedText=Recognition is not automatic name formation
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b49489ad27ef4d55ab84c13ed1b84c59d981e17479fc0c8aae989badfa3b62e6
+contentHash=247012752e363d1fcc51d162a74d23778aa74f0516094ad10684005a5024d452
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-documented-name-form-guided`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5f6d41dea89d5b7831431e515445769e70ee41784b3a2dfee5eaa8282f3b9833
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-documented-name-form:documented-name-form-guided
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Use the explanation and the supplied example to identify the requested name form, meaning or register. A missed check returns to the full explanation.
+shippedText=Use the explanation and the supplied example to identify the requested name form, meaning or register. A missed check returns to the full explanation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7c82e3d3bc64885490e0b9f1b20c7910cd7115e8bcbf5e86a5799e270cb92c8a
+contentHash=4bb459e4304a8f4eeba04746004e045ccf8f547694aeb7992b02b5e085f963ff
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-documented-name-form-objective`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 73c49f825ff60c5867da96028dfe435cc2093c2b8a64225e3a536c14a22e8286
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-documented-name-form:documented-name-form-objective
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Recognize documented name forms without inventing new ones
+shippedText=Recognize documented name forms without inventing new ones
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=01d1b5e7daa4f52c561ebd83c768194f4b937d0024e83797cd11c7cc192a5486
+contentHash=8744f3b20f482c4e9c6d4f79656a7dc795a79f3b369a64b895ba824b9d2aad46
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-documented-name-form-rem-body`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7715466b7f8a1de02ae8e83c7bdc94588ecaf1483b8a3b8dc8ade66b2518468e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-documented-name-form:documented-name-form-rem-body
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Familiar, short, affectionate, and diminutive personal-name forms are conventional and socially marked. Марюня is the supplied documented derivative of the full name; Машенька is the supplied documented derivative of the short form. These English descriptions classify the examples already studied. They are not instructions to create an unfamiliar name.
+
+One personal name may have several documented forms. Сашка carries documented dismissive coloring in the supplied material. That description concerns social coloring, while documented derivative of the full name and documented derivative of the short form concern derivational bases. Tone and relationship can affect actual use; the classification does not prove every utterance is dismissive.
+
+A suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name. For an unstudied personal name, the checked answer is unsupported until a names dictionary documents that form. The alternative the suffix mechanically generates an acceptable name overclaims what a suffix rule establishes. These checks recognize documented classifications and the verification limit; they do not assess free productive name formation.
+shippedText=Familiar, short, affectionate, and diminutive personal-name forms are conventional and socially marked. Марюня is the supplied documented derivative of the full name; Машенька is the supplied documented derivative of the short form. These English descriptions classify the examples already studied. They are not instructions to create an unfamiliar name.
+
+One personal name may have several documented forms. Сашка carries documented dismissive coloring in the supplied material. That description concerns social coloring, while documented derivative of the full name and documented derivative of the short form concern derivational bases. Tone and relationship can affect actual use; the classification does not prove every utterance is dismissive.
+
+A suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name. For an unstudied personal name, the checked answer is unsupported until a names dictionary documents that form. The alternative the suffix mechanically generates an acceptable name overclaims what a suffix rule establishes. These checks recognize documented classifications and the verification limit; they do not assess free productive name formation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=25c7f2be3c0a998752cad45d08e2265f1efaf6380c4dec5216eec8aee85b696c
+contentHash=571804da306e50e033f72d9568f2a9b5c9c1b150a85410535c55e6bf75f1e83a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-documented-name-form-rem-title`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 17087df87265e7a33108b49e6b6dd82ac48b10a3b433f3f3659ac73141daa652
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-documented-name-form:documented-name-form-rem-title
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Review the complete name or courtesy distinction
+shippedText=Review the complete name or courtesy distinction
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bb45746a245308c03beb1618607188cde2c417b17818cd8c4d549b1bcd1724cc
+contentHash=08ccea00a52be2c1ee944c159cc1aa99674887fc8e408d9cc61c96517e3bf2b5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-documented-name-form-teach-1-body`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c6ab89285d68ff7f8ebd96024fe0c6ea6c72360e1ec7742de042d2ea6ae078f9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-documented-name-form:documented-name-form-teach-1-body
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Familiar, short, affectionate, and diminutive personal-name forms are conventional and socially marked. Марюня is the supplied documented derivative of the full name; Машенька is the supplied documented derivative of the short form. These English descriptions classify the examples already studied. They are not instructions to create an unfamiliar name.
+shippedText=Familiar, short, affectionate, and diminutive personal-name forms are conventional and socially marked. Марюня is the supplied documented derivative of the full name; Машенька is the supplied documented derivative of the short form. These English descriptions classify the examples already studied. They are not instructions to create an unfamiliar name.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c613f51849c17e7653907d2e3bf591aa62c594dc2eb18ce0b405f3c71b6198fa
+contentHash=34824dff6b5971a928715b714aa62a7b5e98724565faa920b2cb9acde288f27b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-documented-name-form-teach-1-title`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3d7cda9f3853b7fcb58cbcb2e9eae0620d75ccd3046fd52afb5b55ffea99b851
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-documented-name-form:documented-name-form-teach-1-title
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Conventional forms have documented bases
+shippedText=Conventional forms have documented bases
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a3accebc57ec96f51f49d733512fdadce6eb87f2371d238621375ffb47008d28
+contentHash=47535ff72e42ebca277743015161d4200cec6b6212bddb90c03bf904410a166d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-documented-name-form-teach-2-body`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c5d3cfce7c6996021b480930ea2aeac82df9c6025e5a45db948fef13d261a645
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-documented-name-form:documented-name-form-teach-2-body
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+One personal name may have several documented forms. Сашка carries documented dismissive coloring in the supplied material. That description concerns social coloring, while documented derivative of the full name and documented derivative of the short form concern derivational bases. Tone and relationship can affect actual use; the classification does not prove every utterance is dismissive.
+shippedText=One personal name may have several documented forms. Сашка carries documented dismissive coloring in the supplied material. That description concerns social coloring, while documented derivative of the full name and documented derivative of the short form concern derivational bases. Tone and relationship can affect actual use; the classification does not prove every utterance is dismissive.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=aed99b500bcba4b7ddc39998533376f7b764bda46b739779d7c26d6c701e8b25
+contentHash=b014273a23c617330ba902ac0901ef2fa42fb338bad0b5ee55c46d0587a6d331
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-documented-name-form-teach-2-title`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9b9a6156eac5a38a7c9c1282108cb5976f86464c764430f8aa148c3cc275ed59
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-documented-name-form:documented-name-form-teach-2-title
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Several forms and a stated coloring
+shippedText=Several forms and a stated coloring
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=48384a3333a2b698805ad89528f454c1ea175ab36bd0e743eaf8f3f662802fdf
+contentHash=23ff4bebedd982bb34c09f4cb55a2a80ae04c71f13bff050a24f36e297e408e6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-documented-name-form-teach-3-body`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 28cb1589f5f5544bec70a18cc4cfdd1ac806134f4f91cd9a1e153cb09bb860d9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-documented-name-form:documented-name-form-teach-3-body
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+A suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name. For an unstudied personal name, the checked answer is unsupported until a names dictionary documents that form. The alternative the suffix mechanically generates an acceptable name overclaims what a suffix rule establishes. These checks recognize documented classifications and the verification limit; they do not assess free productive name formation.
+shippedText=A suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name. For an unstudied personal name, the checked answer is unsupported until a names dictionary documents that form. The alternative the suffix mechanically generates an acceptable name overclaims what a suffix rule establishes. These checks recognize documented classifications and the verification limit; they do not assess free productive name formation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=09a331f1e8513f27b17071480e4b1b32598fe5bba18e083128a734d8f07a4455
+contentHash=194edb7aa0629e0c5a9fd0c1f07477bb54ee539a1281b54ccaff6ad0dec743d0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-documented-name-form-teach-3-title`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a8b781ed91161a8d237008ea77bd5e9f3c640a401138fa51c93b3a5ef45e8320
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-documented-name-form:documented-name-form-teach-3-title
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Verify a form before treating it as acceptable
+shippedText=Verify a form before treating it as acceptable
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3e26fc9cf3eb571f4069500849d34dc36481dec66992c102f66da421b1aecb16
+contentHash=af8e52f1d4ae7de2d775db7bd3a9c3442c72f626ff30ff4dcba26585c26544ac
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-name-question-guided`
+
+- Objectives: obj-u25-name-question
+- Sessions: u25-s-orient, u25-s-name-question
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5e8090ff9463dbfcefb930adf28a6cb48ba7a423e2d05e06a77ddc5ec4f96b09
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-name-question:name-question-guided
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Use the explanation and the supplied example to identify the requested name form, meaning or register. A missed check returns to the full explanation.
+shippedText=Use the explanation and the supplied example to identify the requested name form, meaning or register. A missed check returns to the full explanation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7c82e3d3bc64885490e0b9f1b20c7910cd7115e8bcbf5e86a5799e270cb92c8a
+contentHash=4bb459e4304a8f4eeba04746004e045ccf8f547694aeb7992b02b5e085f963ff
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-name-question-objective`
+
+- Objectives: obj-u25-name-question
+- Sessions: u25-s-orient, u25-s-name-question
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9caa7003477f480290289cea0df7c2df6fc7343b338e88cf6e1561caffbbff9b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-name-question:name-question-objective
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Recognize a name question and the start of its reply
+shippedText=Recognize a name question and the start of its reply
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4d78cf195313eb60d55e4c8840a31dc10b7f4be1b0c878fceb57aafcfedd16e2
+contentHash=3ca0037c8f5f7006c0cb72013133ea539e214f41c191bcf8fa1c08d2db11dff2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-name-question-rem-body`
+
+- Objectives: obj-u25-name-question
+- Sessions: u25-s-orient, u25-s-name-question
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3ee0ccb66962e6e81899058344db98d2d535861ccb263139cbe728a175ba6887
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-name-question:name-question-rem-body
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Как Вас зову́т? means What is your name? This supplied formula uses polite or plural address. The capital letter is a written courtesy convention; it does not create a different spoken pronoun. The question asks for a name rather than for an apology or a general report of how someone is doing.
+
+Меня́ зову́т means My name is... It starts the name reply and must be followed by a name to give the requested information. The check recognizes that reply opening; it does not treat the fragment alone as a completed personal introduction.
+
+Прошу́ проще́ния means I'm sorry / excuse me (formal), an apology. Как дела́? means How are you?, another question. Neither supplies the name requested by Как Вас зову́т? The matching reply opening is Меня́ зову́т. Use the conversational function of each formula rather than choosing another question.
+shippedText=Как Вас зову́т? means What is your name? This supplied formula uses polite or plural address. The capital letter is a written courtesy convention; it does not create a different spoken pronoun. The question asks for a name rather than for an apology or a general report of how someone is doing.
+
+Меня́ зову́т means My name is... It starts the name reply and must be followed by a name to give the requested information. The check recognizes that reply opening; it does not treat the fragment alone as a completed personal introduction.
+
+Прошу́ проще́ния means I'm sorry / excuse me (formal), an apology. Как дела́? means How are you?, another question. Neither supplies the name requested by Как Вас зову́т? The matching reply opening is Меня́ зову́т. Use the conversational function of each formula rather than choosing another question.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=687d27904764c91d75e09aec40e52149b51dcf4b0fbfbfd5521a040a94e678c5
+contentHash=98048732a6b9bf6f0dc04914f92c02dcdec0cb4677de92066da61d70d1af2214
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-name-question-rem-title`
+
+- Objectives: obj-u25-name-question
+- Sessions: u25-s-orient, u25-s-name-question
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 35cb8995a46431484240730fb0e0304fc71e73ca33ef65ce3bace162b90ab353
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-name-question:name-question-rem-title
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Review the complete name or courtesy distinction
+shippedText=Review the complete name or courtesy distinction
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bb45746a245308c03beb1618607188cde2c417b17818cd8c4d549b1bcd1724cc
+contentHash=08ccea00a52be2c1ee944c159cc1aa99674887fc8e408d9cc61c96517e3bf2b5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-name-question-teach-1-body`
+
+- Objectives: obj-u25-name-question
+- Sessions: u25-s-orient, u25-s-name-question
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7330bcbbe75771c015dd7c4d13ee5f44af5363e8d9a91bb0631bdbd77f35b7ec
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-name-question:name-question-teach-1-body
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Как Вас зову́т? means What is your name? This supplied formula uses polite or plural address. The capital letter is a written courtesy convention; it does not create a different spoken pronoun. The question asks for a name rather than for an apology or a general report of how someone is doing.
+shippedText=Как Вас зову́т? means What is your name? This supplied formula uses polite or plural address. The capital letter is a written courtesy convention; it does not create a different spoken pronoun. The question asks for a name rather than for an apology or a general report of how someone is doing.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d43801d0d984be4e0f81e18168addbfa0e4a765b8e3f1871a495dc1f066b5727
+contentHash=54e3ca03d51cdd8bf25e89aeb660d59704cb6eb3245a70c4cf417682598acf1a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-name-question-teach-1-title`
+
+- Objectives: obj-u25-name-question
+- Sessions: u25-s-orient, u25-s-name-question
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 042078f30c506cf88afaa93a7d4624e3c617a232b40288d030919e9ee00a0e94
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-name-question:name-question-teach-1-title
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Ask for a name
+shippedText=Ask for a name
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1963a5592c58081eaf38bbe642d7f1a180f5be150804e9386ef40479515c049c
+contentHash=17a4edf0c66697a01f7e6374723a2b9eeed7490ac125ebf58767f892915c5144
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-name-question-teach-2-body`
+
+- Objectives: obj-u25-name-question
+- Sessions: u25-s-orient, u25-s-name-question
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f963475844fb8dd953893c2d1a410d7197be1c1867b1736e494c2af3f031b97b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-name-question:name-question-teach-2-body
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Меня́ зову́т means My name is... It starts the name reply and must be followed by a name to give the requested information. The check recognizes that reply opening; it does not treat the fragment alone as a completed personal introduction.
+shippedText=Меня́ зову́т means My name is... It starts the name reply and must be followed by a name to give the requested information. The check recognizes that reply opening; it does not treat the fragment alone as a completed personal introduction.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=898f2c4fe8baec31b9fd347bc052b59d809cb56af7257acb8c850bf969026ee2
+contentHash=61b19f1fe34b78b67b73da0080e3b99fa264b17966e2a22810c6195d22d9c5f7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-name-question-teach-2-title`
+
+- Objectives: obj-u25-name-question
+- Sessions: u25-s-orient, u25-s-name-question
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3eb7315529d977398bdc2b489a7a56b3f5b8057d5abddf89d8a5d86ddd4870c8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-name-question:name-question-teach-2-title
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Begin the reply and then give the name
+shippedText=Begin the reply and then give the name
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=584b94735d2899ecd3be0f31b27c9a7cfd179a805b0c1731ea5b6f2095a7065b
+contentHash=0b3b89aba868a5add14e7a7310cc6538338a292ac06941edf802e5395f966ff2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-name-question-teach-3-body`
+
+- Objectives: obj-u25-name-question
+- Sessions: u25-s-orient, u25-s-name-question
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 166a1c131d4a8c6003f6db2c9fdba658deb96421a5be548a6a898c59bb2daa77
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-name-question:name-question-teach-3-body
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Прошу́ проще́ния means I'm sorry / excuse me (formal), an apology. Как дела́? means How are you?, another question. Neither supplies the name requested by Как Вас зову́т? The matching reply opening is Меня́ зову́т. Use the conversational function of each formula rather than choosing another question.
+shippedText=Прошу́ проще́ния means I'm sorry / excuse me (formal), an apology. Как дела́? means How are you?, another question. Neither supplies the name requested by Как Вас зову́т? The matching reply opening is Меня́ зову́т. Use the conversational function of each formula rather than choosing another question.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b448c5fc39ac0f2ff5a41d7947f24ae4eb1b498c785ef042d644fc34f1ef74b9
+contentHash=c24f99aba6b5bec9a0501349557547c4c2b7f1db61497a5b662408ad0021ac02
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-name-question-teach-3-title`
+
+- Objectives: obj-u25-name-question
+- Sessions: u25-s-orient, u25-s-name-question
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 70be778db2f3c6c3288705c22af1206d734fca8a91d809ebb4f33c73bcdebf1a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-name-question:name-question-teach-3-title
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Distinguish the other conversational functions
+shippedText=Distinguish the other conversational functions
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=27c9d72c92889a976d80bcde24bb375d1c3b6edc442ffbd4e15b0b7fdd605351
+contentHash=2a679bc9d51d9d1e6353ab653f78cc9a2863c3a9366c77fecbd1c21311b41c9c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-name-structure-guided`
+
+- Objectives: obj-u25-name-structure
+- Sessions: u25-s-orient, u25-s-name-structure
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 435af9a6472276e23715a7e5275f38abc231a9de22ec2ed53555192873953a2f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-name-structure:name-structure-guided
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Use the explanation and the supplied example to identify the requested name form, meaning or register. A missed check returns to the full explanation.
+shippedText=Use the explanation and the supplied example to identify the requested name form, meaning or register. A missed check returns to the full explanation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7c82e3d3bc64885490e0b9f1b20c7910cd7115e8bcbf5e86a5799e270cb92c8a
+contentHash=4bb459e4304a8f4eeba04746004e045ccf8f547694aeb7992b02b5e085f963ff
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-name-structure-objective`
+
+- Objectives: obj-u25-name-structure
+- Sessions: u25-s-orient, u25-s-name-structure
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9d6988f13fdc7af6dd2aa1886e5208ed187af4131d82e106cd9ad435a29a8393
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-name-structure:name-structure-objective
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Distinguish the parts of a Russian personal name
+shippedText=Distinguish the parts of a Russian personal name
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=44af476b497628e109a2a83363bce6692a8e0ac2051b5fbaf3ff40eb2bbd47f7
+contentHash=3e9a31c5efd4a51f8aec0af1fa72dc03cda5aa8ddd8d068c8ba2b0ac1654d316
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-name-structure-rem-body`
+
+- Objectives: obj-u25-name-structure
+- Sessions: u25-s-orient, u25-s-name-structure
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 111947f62290c5bbb58ec0125e162128df4b93ba2abeabb1e808bde9730da36d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-name-structure:name-structure-rem-body
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+имя means first name. отчество means patronymic name. фамилия means family name. A patronymic identifies the father-derived part of a name; it is not the family name. These labels identify three name components rather than three alternative words for the same component.
+
+The retained introductory pattern describes a father's first name with ович, meaning son of, or овна, meaning daughter of. These are suffix labels, not whole words meaning first name, patronymic name or family name. They illustrate common patronymic patterns; they are not an exhaustive formation rule for every name.
+
+Василий Иванович shows a first name followed by a patronymic. The surname is not shown. The older note For instance is a source fragment, not a translation of the name. A complete three-component name also has a family name. The choices recognize these components and do not ask you to construct a new patronymic.
+shippedText=имя means first name. отчество means patronymic name. фамилия means family name. A patronymic identifies the father-derived part of a name; it is not the family name. These labels identify three name components rather than three alternative words for the same component.
+
+The retained introductory pattern describes a father's first name with ович, meaning son of, or овна, meaning daughter of. These are suffix labels, not whole words meaning first name, patronymic name or family name. They illustrate common patronymic patterns; they are not an exhaustive formation rule for every name.
+
+Василий Иванович shows a first name followed by a patronymic. The surname is not shown. The older note For instance is a source fragment, not a translation of the name. A complete three-component name also has a family name. The choices recognize these components and do not ask you to construct a new patronymic.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=203be5696e135b464a89f1f61299d3a1b35d1d4e0a325d16d7c76df8af3f6a30
+contentHash=be955437e8cf87eabdcf4662a84442fa96cb33058d05acd367c4a00051cec5f5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-name-structure-rem-title`
+
+- Objectives: obj-u25-name-structure
+- Sessions: u25-s-orient, u25-s-name-structure
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 08fc8acf7dd7d88b14f92f770681a3eb7c5ee8286d115b1304d22c60aeacd5d4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-name-structure:name-structure-rem-title
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Review the complete name or courtesy distinction
+shippedText=Review the complete name or courtesy distinction
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bb45746a245308c03beb1618607188cde2c417b17818cd8c4d549b1bcd1724cc
+contentHash=08ccea00a52be2c1ee944c159cc1aa99674887fc8e408d9cc61c96517e3bf2b5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-name-structure-teach-1-body`
+
+- Objectives: obj-u25-name-structure
+- Sessions: u25-s-orient, u25-s-name-structure
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5a5e64b8a79e552c211c205088bd04be02046df813afd71bf62f779c524bc87d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-name-structure:name-structure-teach-1-body
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+имя means first name. отчество means patronymic name. фамилия means family name. A patronymic identifies the father-derived part of a name; it is not the family name. These labels identify three name components rather than three alternative words for the same component.
+shippedText=имя means first name. отчество means patronymic name. фамилия means family name. A patronymic identifies the father-derived part of a name; it is not the family name. These labels identify three name components rather than three alternative words for the same component.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=26aa26953801a0dc353bb4b148d2ed13efeec81616c16939e1b18214e01af2fd
+contentHash=55f3007aebea2b66737c4cac4c3b79e00ba7940a48347e8de6dfd3f9f7cd97fd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-name-structure-teach-1-title`
+
+- Objectives: obj-u25-name-structure
+- Sessions: u25-s-orient, u25-s-name-structure
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 826ba14c28f740e765b7dd9cd1e3c72bec75a61172b059511b6f5b6819f24e57
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-name-structure:name-structure-teach-1-title
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+First name, patronymic and family name
+shippedText=First name, patronymic and family name
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bb18453bc9cd46d7244d63ceff3fa61047a971e6fea0a35fb1222e3a45eb2434
+contentHash=a9aad3d7e7362d42b4deeccb16efd6e9bb74c7f062ecd99c82e8b9b05fb29ac6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-name-structure-teach-2-body`
+
+- Objectives: obj-u25-name-structure
+- Sessions: u25-s-orient, u25-s-name-structure
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4d8ee67b4d98c9deeb2c2ff5d26e20d888dc51ea1b02fba466e8a91a32f96fa5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-name-structure:name-structure-teach-2-body
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+The retained introductory pattern describes a father's first name with ович, meaning son of, or овна, meaning daughter of. These are suffix labels, not whole words meaning first name, patronymic name or family name. They illustrate common patronymic patterns; they are not an exhaustive formation rule for every name.
+shippedText=The retained introductory pattern describes a father's first name with ович, meaning son of, or овна, meaning daughter of. These are suffix labels, not whole words meaning first name, patronymic name or family name. They illustrate common patronymic patterns; they are not an exhaustive formation rule for every name.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bb20ed25f88af96af943baad8f60118e9e31534d96488a792ec9659938d475d5
+contentHash=3326bdddbe09fc8605cee1aab2ea755f2f4f7697da456d3ba8d4f279a3610f03
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-name-structure-teach-2-title`
+
+- Objectives: obj-u25-name-structure
+- Sessions: u25-s-orient, u25-s-name-structure
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a5aa684b274c8e871aba7763deca91cef8e7ad29a766d28e9ba7b7ecef0c8343
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-name-structure:name-structure-teach-2-title
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+A suffix is not a whole name category
+shippedText=A suffix is not a whole name category
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4477d1f0d0d44f0e5f95b822daeeb81d0f24950ffa75b8b3301f7fb293f597ec
+contentHash=4da796684044d1c4048a9ac44e22e33e2bb3955075f4d7e37f9c52d928b26736
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-name-structure-teach-3-body`
+
+- Objectives: obj-u25-name-structure
+- Sessions: u25-s-orient, u25-s-name-structure
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 504d745ca242e37d2944db4027aab51c16c7b34bf707c4bb6b0e0227a7316bb4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-name-structure:name-structure-teach-3-body
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Василий Иванович shows a first name followed by a patronymic. The surname is not shown. The older note For instance is a source fragment, not a translation of the name. A complete three-component name also has a family name. The choices recognize these components and do not ask you to construct a new patronymic.
+shippedText=Василий Иванович shows a first name followed by a patronymic. The surname is not shown. The older note For instance is a source fragment, not a translation of the name. A complete three-component name also has a family name. The choices recognize these components and do not ask you to construct a new patronymic.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9fb54377f0ebf1f0848791f147587af27317637e3525ccb29690175fce865836
+contentHash=e5879aa181242aecbccde9bc5bed91ade735846423de2511cd4b1bea617e60d4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-name-structure-teach-3-title`
+
+- Objectives: obj-u25-name-structure
+- Sessions: u25-s-orient, u25-s-name-structure
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 664e0ec0dffdfd291064446c7e021e09a5059da449caa6af1f95185aa3a54823
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-name-structure:name-structure-teach-3-title
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Read the two-part worked example
+shippedText=Read the two-part worked example
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8dc7c84cec7b023d436b60a9715e20d4e6eee0d519e721d51f7a109c421c88e7
+contentHash=56bbd2187e8048c20bbcecadbad24a82e16d7f7a91ec1e102c79f4aa69982fe0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-nickname-rule-guided`
+
+- Objectives: obj-u25-nickname-rule
+- Sessions: u25-s-orient, u25-s-nickname-rule
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f345d0cbc9d4e31ee81c94c6041399ac5e05d5fb24a1c8afdb06b208f6463cc7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-nickname-rule:nickname-rule-guided
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Use the explanation and the supplied example to identify the requested name form, meaning or register. A missed check returns to the full explanation.
+shippedText=Use the explanation and the supplied example to identify the requested name form, meaning or register. A missed check returns to the full explanation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7c82e3d3bc64885490e0b9f1b20c7910cd7115e8bcbf5e86a5799e270cb92c8a
+contentHash=4bb459e4304a8f4eeba04746004e045ccf8f547694aeb7992b02b5e085f963ff
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-nickname-rule-objective`
+
+- Objectives: obj-u25-nickname-rule
+- Sessions: u25-s-orient, u25-s-nickname-rule
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0744e1b9d4b0ef79f0a1e034e9e1ad04b6aa2df9837d2bc24766aac004445cd2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-nickname-rule:nickname-rule-objective
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Classify the documented name forms and their stated coloring
+shippedText=Classify the documented name forms and their stated coloring
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5f87e3a28c0103a58b4e3b7922fb4df2058ae63d1fd6f35687145afd364f343d
+contentHash=d0ba424da6e9225895f40c200982407e90b6b5d8fc290f4ff016488016eb2aa9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-nickname-rule-rem-body`
+
+- Objectives: obj-u25-nickname-rule
+- Sessions: u25-s-orient, u25-s-nickname-rule
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1756de629bcc90ddb99569f83e36d4adcae92814676c7697bbbca8a79d33bd89
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-nickname-rule:nickname-rule-rem-body
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Марюня is classified here as от полной формы имени, meaning from the full form of the name. Машенька is classified as от краткой формы, meaning from the short form. The retained examples relate these to Мария and Маша respectively. These are documented examples, not a rule for generating a derivative from any full or short name.
+
+Сашка is classified in this material as оттенок пренебрежения, meaning a shade of dismissiveness. That label describes social coloring; the two labels about full and short forms describe derivational bases. A form can have a base and social coloring at the same time. The question asks for the classification documented for this example, not mutually exclusive properties of every name.
+
+The retained text associates diminutive forms with the suffix -к- with dismissive coloring. Treat this as the source's classification of its examples, not proof that every use of every such name is insulting. Relationship, tone and setting affect interpretation. A documented label does not authorize inventing a new personal-name form or addressing someone that way without regard to their preference.
+shippedText=Марюня is classified here as от полной формы имени, meaning from the full form of the name. Машенька is classified as от краткой формы, meaning from the short form. The retained examples relate these to Мария and Маша respectively. These are documented examples, not a rule for generating a derivative from any full or short name.
+
+Сашка is classified in this material as оттенок пренебрежения, meaning a shade of dismissiveness. That label describes social coloring; the two labels about full and short forms describe derivational bases. A form can have a base and social coloring at the same time. The question asks for the classification documented for this example, not mutually exclusive properties of every name.
+
+The retained text associates diminutive forms with the suffix -к- with dismissive coloring. Treat this as the source's classification of its examples, not proof that every use of every such name is insulting. Relationship, tone and setting affect interpretation. A documented label does not authorize inventing a new personal-name form or addressing someone that way without regard to their preference.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fe0600c63cbbb9a968fba86284542974d7b27f62c7ed81c16b74edee99078fc9
+contentHash=43c37a3eee939de36d9c1e868826c29e0160f98fa129e8ac3213f60ce6e69a95
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-nickname-rule-rem-title`
+
+- Objectives: obj-u25-nickname-rule
+- Sessions: u25-s-orient, u25-s-nickname-rule
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d18402860c5cfc4828a0a55170a9c220eb492b6758af09c09ed4af269bf88728
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-nickname-rule:nickname-rule-rem-title
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Review the complete name or courtesy distinction
+shippedText=Review the complete name or courtesy distinction
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bb45746a245308c03beb1618607188cde2c417b17818cd8c4d549b1bcd1724cc
+contentHash=08ccea00a52be2c1ee944c159cc1aa99674887fc8e408d9cc61c96517e3bf2b5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-nickname-rule-teach-1-body`
+
+- Objectives: obj-u25-nickname-rule
+- Sessions: u25-s-orient, u25-s-nickname-rule
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 98aae029da48cce407e1cf56a721baf514991670f91a59cccedf008c7d90f0f1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-nickname-rule:nickname-rule-teach-1-body
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Марюня is classified here as от полной формы имени, meaning from the full form of the name. Машенька is classified as от краткой формы, meaning from the short form. The retained examples relate these to Мария and Маша respectively. These are documented examples, not a rule for generating a derivative from any full or short name.
+shippedText=Марюня is classified here as от полной формы имени, meaning from the full form of the name. Машенька is classified as от краткой формы, meaning from the short form. The retained examples relate these to Мария and Маша respectively. These are documented examples, not a rule for generating a derivative from any full or short name.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c2933f4b75b4912d66c775c30c2b077e6c246552e473eb48319f8b868ae58507
+contentHash=6d4c0f27dd7ea2df0ed5ff73050279b93e1edf9e5eb726076a411ef7b64e5d30
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-nickname-rule-teach-1-title`
+
+- Objectives: obj-u25-nickname-rule
+- Sessions: u25-s-orient, u25-s-nickname-rule
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 53738ab8f39a863fe4fc860d7ef527d1aa54765dbd90779b98d6775865f35235
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-nickname-rule:nickname-rule-teach-1-title
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Explain the Russian classification labels
+shippedText=Explain the Russian classification labels
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ed335c72d84e0692bd2d3771ae27945f78b222ee0c2a391604ca6d2f99f85e94
+contentHash=3d12a9b69230610da36870a5df2e12ad47d3bedb54d562b8ea9bec1243a38d6d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-nickname-rule-teach-2-body`
+
+- Objectives: obj-u25-nickname-rule
+- Sessions: u25-s-orient, u25-s-nickname-rule
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9c89bc5aadc90b9c35d09625070f3eba5fea59132c3ad68f04d13f170a0c5e96
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-nickname-rule:nickname-rule-teach-2-body
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Сашка is classified in this material as оттенок пренебрежения, meaning a shade of dismissiveness. That label describes social coloring; the two labels about full and short forms describe derivational bases. A form can have a base and social coloring at the same time. The question asks for the classification documented for this example, not mutually exclusive properties of every name.
+shippedText=Сашка is classified in this material as оттенок пренебрежения, meaning a shade of dismissiveness. That label describes social coloring; the two labels about full and short forms describe derivational bases. A form can have a base and social coloring at the same time. The question asks for the classification documented for this example, not mutually exclusive properties of every name.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f41502f0afdcb0930d44808e00e651d19789dd0addfe67be9f92fec15f65a075
+contentHash=5ae48f5db92adc52e86b7f6882cea0f4ebf5ba2fa13134a2fc35d1f3ec6b852c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-nickname-rule-teach-2-title`
+
+- Objectives: obj-u25-nickname-rule
+- Sessions: u25-s-orient, u25-s-nickname-rule
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a482460220cfb4162a6d1d3c2043aec934254876f2a77b7432b314daee49ff3d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-nickname-rule:nickname-rule-teach-2-title
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Distinguish derivation from social coloring
+shippedText=Distinguish derivation from social coloring
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5f887d8417dbb1123325d8a9d7bfb9592d460dc4b00bc3b5ea51f563f512edb3
+contentHash=33f199c7eee94b3d9aa72753293e211a644e4342cf1c632e739f7b9495274e6f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-nickname-rule-teach-3-body`
+
+- Objectives: obj-u25-nickname-rule
+- Sessions: u25-s-orient, u25-s-nickname-rule
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0d3b7d802c59f02ea0c9e45e62903dc7518cd7a0d39549e1ddbf6daaefdf9c58
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-nickname-rule:nickname-rule-teach-3-body
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+The retained text associates diminutive forms with the suffix -к- with dismissive coloring. Treat this as the source's classification of its examples, not proof that every use of every such name is insulting. Relationship, tone and setting affect interpretation. A documented label does not authorize inventing a new personal-name form or addressing someone that way without regard to their preference.
+shippedText=The retained text associates diminutive forms with the suffix -к- with dismissive coloring. Treat this as the source's classification of its examples, not proof that every use of every such name is insulting. Relationship, tone and setting affect interpretation. A documented label does not authorize inventing a new personal-name form or addressing someone that way without regard to their preference.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1f2316ae14a6bcb5d1cf78c19a926491d828f346c094be4c03964b42495bacb1
+contentHash=95a569a555b388df41ccea3a57f8aaadd09069e97272cb585f8312066ddffbba
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-nickname-rule-teach-3-title`
+
+- Objectives: obj-u25-nickname-rule
+- Sessions: u25-s-orient, u25-s-nickname-rule
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 58de5cc3180aed1705eef66ed525bcaf42edf6d8529539648a587133d4c859f8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-nickname-rule:nickname-rule-teach-3-title
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Keep the coloring claim within its context
+shippedText=Keep the coloring claim within its context
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5bca9e2783b9d73111aaf2a85f4445c626096d025d8d77e2e7aeff1e408d6ac2
+contentHash=a6e5d0a55b01974a25668570e310aacea692cf18f5ec4a3f8bbf2dc0a0789835
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-g-address-0-feedback`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d26ed7da309f3a92d8d4b1152fea918205ff402d364512d1e62a79f049e58784
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-address:u25-g-address-0-feedback
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+The frozen source pairs the shown form "Ирина" with the admitted gloss "полные имена" ("полные имена — Ирина").
+Ирина is the cue; полные имена matches the requested function or classification: the full-name category.
+shippedText=The frozen source pairs the shown form "Ирина" with the admitted gloss "полные имена" ("полные имена — Ирина").
+Ирина is the cue; полные имена matches the requested function or classification: the full-name category.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=285cb3be068eca5edf306556722dea462abb259a2d7eeaae15e84d44bbc94621
+contentHash=ebdfba9f0ad5793dd3fd4c76498c171fad24355e806f3a5440393dd42586a056
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-g-address-0-prompt`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1da85b2502166ae61c02326554bcabe3e239e5c4fb815e846e80bcdaf2d43df2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-address:u25-g-address-0-prompt
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Which name-form category describes this example?
+shippedText=Which name-form category describes this example?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c240ee6f4eb4b1fc7d516af5decd1b4cde934380092271d63dbed591a2228456
+contentHash=7d9d93c1fbfba117755e9b4416960be3e3c8edff9ad662542cf33f4de4e73f98
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-g-address-0-wrong-0`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fea272340aa5fe5bafa56474155340efc89b9b0aa223df90ab43a4450ed9dec6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-address:u25-g-address-0-wrong-0
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+краткие имена: the short-name category. This differs from the classification or conversational function requested here. The frozen source pairs the shown form "Ира" with the admitted gloss "краткие имена" ("краткие имена — Ира").
+shippedText=краткие имена: the short-name category. This differs from the classification or conversational function requested here. The frozen source pairs the shown form "Ира" with the admitted gloss "краткие имена" ("краткие имена — Ира").
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4cc500544baa41b56e384782dea3ac54654756571785c255bcce43fa5479dfde
+contentHash=1682d987af2ec4750f1f42126d3c35440eb14dc94c451d6d47e2d0175c0620da
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-g-address-0-wrong-1`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4e112a610b5d50dd29651c9f30826a2a738673bca3b8fb2d05a38f927bc6085f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-address:u25-g-address-0-wrong-1
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+уменьшительно-ласкательные: the diminutive or affectionate category. This differs from the classification or conversational function requested here. The frozen source pairs the shown form "Ирочка" with the admitted gloss "уменьшительно-ласкательные" ("уменьшительно-ласкательные — Ирочка").
+shippedText=уменьшительно-ласкательные: the diminutive or affectionate category. This differs from the classification or conversational function requested here. The frozen source pairs the shown form "Ирочка" with the admitted gloss "уменьшительно-ласкательные" ("уменьшительно-ласкательные — Ирочка").
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=881c265fd907ab6f9780d7206b341deea795113a78c407067c0fe90001287775
+contentHash=bfb08f8c61ffeb29fb7665b826787369e45a4ac85f75d76d7f4624d04492644f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-g-courtesy-0-feedback`
+
+- Objectives: obj-u25-courtesy
+- Sessions: u25-s-orient, u25-s-courtesy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e1f03ca31101a08883827b5f2daf46f8704c1ee98e286aa1c49efccaa77f4f3c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-courtesy:u25-g-courtesy-0-feedback
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+The frozen list says please; also used for a request and pairs that word with this form.
+please is the cue; Пожа́луйста matches the requested function or classification: please in the supplied request use.
+shippedText=The frozen list says please; also used for a request and pairs that word with this form.
+please is the cue; Пожа́луйста matches the requested function or classification: please in the supplied request use.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7ac5e9e222a16610eb942b79f20931867d6a8e35adb7fc36fdf34a75b2e4ca35
+contentHash=ffcaa71c0819128789cfb050eedfe46d3a0581d727c5a4880ae47118914fd50c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-g-courtesy-0-prompt`
+
+- Objectives: obj-u25-courtesy
+- Sessions: u25-s-orient, u25-s-courtesy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 54236211e0412694be9f0933f855bef7176066dafa41198750db0f5f49e54469
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-courtesy:u25-g-courtesy-0-prompt
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Which expression performs the courtesy function in the cue?
+shippedText=Which expression performs the courtesy function in the cue?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=54eaf2514aa217592374c9a4c7b0055e99f90737100c88517649fcdbdc6b2ab4
+contentHash=62175e7ce2e5eee025ed63014119a98010a165523fc856075a98f5ca3f95616c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-g-courtesy-0-wrong-0`
+
+- Objectives: obj-u25-courtesy
+- Sessions: u25-s-orient, u25-s-courtesy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c0582ecdf6bb6974fe38d94fb697d181f15ae118585aac9b46d991bec3c2fc26
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-courtesy:u25-g-courtesy-0-wrong-0
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Спаси́бо: thanks or thank you. This differs from the classification or conversational function requested here. The frozen list pairs thanks with a different form.
+shippedText=Спаси́бо: thanks or thank you. This differs from the classification or conversational function requested here. The frozen list pairs thanks with a different form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=55d1e660bec81c04e86d97feca76a606b9d34cafaf8caace1aee8ac5e80544a4
+contentHash=3cef0af0bbe50a01379ad68ac5d57eb8ba5d92e56b150f83c32d0918640f3676
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-g-courtesy-0-wrong-1`
+
+- Objectives: obj-u25-courtesy
+- Sessions: u25-s-orient, u25-s-courtesy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 64f0878ad016b4f5ec65f7254826d1337c5325f75a1c706b744515febe5d5529
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-courtesy:u25-g-courtesy-0-wrong-1
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Извини́те: excuse me with polite or plural address. This differs from the classification or conversational function requested here. Извини́те is the polite or plural form. The familiar singular is Извини́.
+shippedText=Извини́те: excuse me with polite or plural address. This differs from the classification or conversational function requested here. Извини́те is the polite or plural form. The familiar singular is Извини́.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=eef3b3fabb71d890ffd2f9068a5ffbab0bc5627234557f9ebe60b064fa09e106
+contentHash=a4cfcf06a46103bb4e9b909262c19b913ae51e3d4d389ae9f6bb8ebb8380562b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-g-diminutives-0-feedback`
+
+- Objectives: obj-u25-diminutives
+- Sessions: u25-s-orient, u25-s-diminutives
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dca31d0c58351f059f7ab3c6657232b436def73d944a6a306b980bed1ef819fa
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-diminutives:u25-g-diminutives-0-feedback
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+The frozen list includes Sasha for Alexander as the pair for the shown name.
+Alexander is the cue; Sasha matches the requested function or classification: the supplied short form for Alexander.
+shippedText=The frozen list includes Sasha for Alexander as the pair for the shown name.
+Alexander is the cue; Sasha matches the requested function or classification: the supplied short form for Alexander.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ae83e9951e660bde5cc107ef07ba274f6bb2a492c1f41cf506b37c8a39d6fe10
+contentHash=13a0b8a7cea6c23dad26f994b07bcb826478ce29d58eaf95bad6a131fe579ea2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-g-diminutives-0-prompt`
+
+- Objectives: obj-u25-diminutives
+- Sessions: u25-s-orient, u25-s-diminutives
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d4136c964fd995e4c4f049686c3a8c3dd46f8f4c1d476140745ea4390d925038
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-diminutives:u25-g-diminutives-0-prompt
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Which English short form corresponds to the full name in the cue?
+shippedText=Which English short form corresponds to the full name in the cue?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=feabebe20c476cda6613d011cde3d398da4e73debe82dbb7cc1e5965f344a845
+contentHash=088a63572281502e2399d5e4634174860e4acd25f274a1d800c2c2685825b598
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-g-diminutives-0-wrong-0`
+
+- Objectives: obj-u25-diminutives
+- Sessions: u25-s-orient, u25-s-diminutives
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ed7b5d874a73048333f36c91b6b7d8d254229743a5efc6a5f9f04e111f09eacf
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-diminutives:u25-g-diminutives-0-wrong-0
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Alyosha: the supplied short form for Alexei. This differs from the classification or conversational function requested here. The frozen list pairs Alyosha for Alexei with a different name.
+shippedText=Alyosha: the supplied short form for Alexei. This differs from the classification or conversational function requested here. The frozen list pairs Alyosha for Alexei with a different name.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=42c631cbc27508f545fdb8e1874e2dca8792d438c10330fbd1fcf481ebcffd1e
+contentHash=561c54d16675fe39f183f1ea4b6db8d83606914a768cbb01831b2b83f72f5107
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-g-diminutives-0-wrong-1`
+
+- Objectives: obj-u25-diminutives
+- Sessions: u25-s-orient, u25-s-diminutives
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c87755a787c2e0e038e10afbafbfe4cfea3beadaa5b83fe50d95915a001b0c44
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-diminutives:u25-g-diminutives-0-wrong-1
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Dima: the supplied short form for Dmitri. This differs from the classification or conversational function requested here. The frozen list pairs Dima for Dmitri with a different name.
+shippedText=Dima: the supplied short form for Dmitri. This differs from the classification or conversational function requested here. The frozen list pairs Dima for Dmitri with a different name.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e2adcd323157470fb25793602cf6d15e273605c0b3c71b94efb3e9d7ad481ef9
+contentHash=15d53aecab25750754af5328b93aab2e2ea3da84870d287dd6cdd2a1c320580b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-g-name-form-1-feedback`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8014441e49da53ea3904605bdb6fdfd0e0d724abefd042131128649e6fcc4199
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-documented-name-form:u25-g-name-form-1-feedback
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Марюня is a documented derivative of the full name in this admitted material.
+Марюня is the cue; documented derivative of the full name matches the requested function or classification: a documented full-name derivational base.
+shippedText=Марюня is a documented derivative of the full name in this admitted material.
+Марюня is the cue; documented derivative of the full name matches the requested function or classification: a documented full-name derivational base.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fafe3c64e7a00e70c37c6b867f6d2e2d80cc039673cd90d9fb02130337620208
+contentHash=c10efa9c7e177f23a10b1c97a296026cf3ef9ad7f1a14375ca4af63f474df92d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-g-name-form-1-prompt`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6782d18c88b7d5889725f58baa59874de259a4b6b61f3083ed7a79a6fdd106e3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-documented-name-form:u25-g-name-form-1-prompt
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Which English classification describes the shown documented name form?
+shippedText=Which English classification describes the shown documented name form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=df84b1de9636916b4da4e43359e65217eb9912be37f4242b47940d9de4129e16
+contentHash=82bfb8ac94d38add927ff3d7ca9cea5e890cdc35a937308471cac604ef9e9d33
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-g-name-form-1-wrong-0`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6bcf567c4351c58cc82d11bd783236f7e183ad3bdab3355ffb63483e36aadfc0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-documented-name-form:u25-g-name-form-1-wrong-0
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+documented derivative of the short form: a documented short-form derivational base. This differs from the classification or conversational function requested here. Машенька is a documented derivative of the short form in this admitted material.
+shippedText=documented derivative of the short form: a documented short-form derivational base. This differs from the classification or conversational function requested here. Машенька is a documented derivative of the short form in this admitted material.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c716f7197318981b6927e6efdc05e437732e509b6d74f56b3f4c2d62f7863a5e
+contentHash=43981f06af5466b43323a850130e549ea021d09934ccd848fad1b390783fbdf8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-g-name-form-1-wrong-1`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0af3a89cdf1d80fc80a7dc8325bffe876f69150a6b8979753cf5e703a152ebe9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-documented-name-form:u25-g-name-form-1-wrong-1
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+documented dismissive coloring: the social coloring documented for the supplied example. This differs from the classification or conversational function requested here. Сашка carries documented dismissive coloring in this admitted material.
+shippedText=documented dismissive coloring: the social coloring documented for the supplied example. This differs from the classification or conversational function requested here. Сашка carries documented dismissive coloring in this admitted material.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=311b14cb85c005389e8e8450d0b276b17e8980aec85c99b6641e7ce008bc6174
+contentHash=aec52b2cec78552e04281d20815f1ae63f806ae41e4b0d1c79916d2dc67b7cb4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-g-name-question-0-feedback`
+
+- Objectives: obj-u25-name-question
+- Sessions: u25-s-orient, u25-s-name-question
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5913fea3b3a0aa89396525494271c204673deec2d7d5d203c725b95ffeebd2ce
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-name-question:u25-g-name-question-0-feedback
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+The frozen list pairs What is your name? with this form and My name is... with the reply.
+What is your name? is the cue; Как Вас зову́т? matches the requested function or classification: the name question.
+shippedText=The frozen list pairs What is your name? with this form and My name is... with the reply.
+What is your name? is the cue; Как Вас зову́т? matches the requested function or classification: the name question.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=350df5b4ffb2c396a452857eb1149233ef48c03a7abcf28042adf4e9495fe623
+contentHash=47ffc4dcc57e1bcd7fa8010df924a862c5780e08009d9c0573760be409b6b4f0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-g-name-question-0-prompt`
+
+- Objectives: obj-u25-name-question
+- Sessions: u25-s-orient, u25-s-name-question
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 96be48ef65925535182d6db90d82b04c140d808828a7295f7cffe27c88be6738
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-name-question:u25-g-name-question-0-prompt
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Which Russian formula performs the conversational function in the cue?
+shippedText=Which Russian formula performs the conversational function in the cue?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a832bfd9b039d38ccb1ca249d102624359e51baaed18996e34b56a9e55df5d1c
+contentHash=ccc448eb477cfa728525422890078460e10e614362824b7072ddc7d45864e83a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-g-name-question-0-wrong-0`
+
+- Objectives: obj-u25-name-question
+- Sessions: u25-s-orient, u25-s-name-question
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 68af8d1766f7f8bc93b171191b536b35909810f7b4a9b8d975b058f369a98b8b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-name-question:u25-g-name-question-0-wrong-0
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Меня́ зову́т: the reply opening followed by a name. This differs from the classification or conversational function requested here. The frozen list pairs My name is... with the reply, not with the shown question.
+shippedText=Меня́ зову́т: the reply opening followed by a name. This differs from the classification or conversational function requested here. The frozen list pairs My name is... with the reply, not with the shown question.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6b2efb7c7bbc47df275962f5afa1f72d84694941ebb302f129a7ef933a66db28
+contentHash=41215f3c901c1349770b24def2f55fed0ecfa9b8bc42a9466bd2ed50b9922e35
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-g-name-question-0-wrong-1`
+
+- Objectives: obj-u25-name-question
+- Sessions: u25-s-orient, u25-s-name-question
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f08e6655fb57cd396869fad0cd4d8d9b82e2b0cc0ee47a0245e0ed2ba028f217
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-name-question:u25-g-name-question-0-wrong-1
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Прошу́ проще́ния: a formal apology. This differs from the classification or conversational function requested here. The frozen list pairs I'm sorry / excuse me (formal) with a different form.
+shippedText=Прошу́ проще́ния: a formal apology. This differs from the classification or conversational function requested here. The frozen list pairs I'm sorry / excuse me (formal) with a different form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c5e62a329b7fa7faa24f54b6eafafdeca80f81a863121ec0f2e875db75823da7
+contentHash=e28266f81a53d72e7ef55092103bc1bfd4339ce9f876187947a5199a95723cbc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-g-name-structure-0-feedback`
+
+- Objectives: obj-u25-name-structure
+- Sessions: u25-s-orient, u25-s-name-structure
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 892431ed584e992a007a96aebfcbaf40ac69c8e0aee5cb5eab3e9fc427c3e46a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-name-structure:u25-g-name-structure-0-feedback
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+The frozen sentence says Russians use three names and pairs the shown words with this form.
+first name is the cue; имя matches the requested function or classification: the first-name label.
+shippedText=The frozen sentence says Russians use three names and pairs the shown words with this form.
+first name is the cue; имя matches the requested function or classification: the first-name label.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5ae65145372a1015c8a59987dec91f0cc04eec2958be7eea7c0d4699373ccbc7
+contentHash=76d7b138189c10315a2a59229641e3065cbd949ad4befb2d08345f87ba369273
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-g-name-structure-0-prompt`
+
+- Objectives: obj-u25-name-structure
+- Sessions: u25-s-orient, u25-s-name-structure
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fc485e1cdccce9bdf4dca1373aad70c4c198da2a44116156cc6f9753fe81c89c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-name-structure:u25-g-name-structure-0-prompt
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Which Russian label names the component described by the cue?
+shippedText=Which Russian label names the component described by the cue?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ce102c4b281aaabff85d48d286a7935b2579b6b0e799ae851030a92c00013a94
+contentHash=86001cae0744db58423dd8bf7d274693b3344a17f70d16122f917d4280b6bf41
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-g-name-structure-0-wrong-0`
+
+- Objectives: obj-u25-name-structure
+- Sessions: u25-s-orient, u25-s-name-structure
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9b458ce476b5d912c8080220e889f89dc7b80e27b6b35fb19c01b7a25de49724
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-name-structure:u25-g-name-structure-0-wrong-0
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+отчество: the patronymic-name label. This differs from the classification or conversational function requested here. The frozen sentence pairs this form with patronymic name, not with the shown words.
+shippedText=отчество: the patronymic-name label. This differs from the classification or conversational function requested here. The frozen sentence pairs this form with patronymic name, not with the shown words.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ab5ef57020d7db0a196311af5b371106386597c4655d06e5a2370dee0c82349d
+contentHash=9981c9dfb8478547bab6178f9355a8d059d265c0d8d6fbbc3c2f8fa978c23ffe
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-g-name-structure-0-wrong-1`
+
+- Objectives: obj-u25-name-structure
+- Sessions: u25-s-orient, u25-s-name-structure
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0570d457f409103f96fd95ded5273b3ae39f85afe5267719497c0cdaeeed5c57
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-name-structure:u25-g-name-structure-0-wrong-1
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+фамилия: the family-name label. This differs from the classification or conversational function requested here. The frozen sentence pairs this form with family name, not with the shown words.
+shippedText=фамилия: the family-name label. This differs from the classification or conversational function requested here. The frozen sentence pairs this form with family name, not with the shown words.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1c66b912f95953ae5bab19d7266fbacefa621672c8cd01ac23cff5c9cf616e04
+contentHash=ba97640ab7a1236e8fc0edc3f5568f09fdedda9ec6557923dbae26618c7c8a97
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-g-name-structure-0-wrong-2`
+
+- Objectives: obj-u25-name-structure
+- Sessions: u25-s-orient, u25-s-name-structure
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e2663cbf1651583998465772fdb368699c2f64abe4741c94e9c52f3033b35d37
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-name-structure:u25-g-name-structure-0-wrong-2
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+ович: the retained son-of suffix label. This differs from the classification or conversational function requested here. The frozen sentence gives this ending for son of, not as the pair for the shown words.
+shippedText=ович: the retained son-of suffix label. This differs from the classification or conversational function requested here. The frozen sentence gives this ending for son of, not as the pair for the shown words.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4536f63b602a25a006b9785b1bd9fed7b3cc879248b3c237429c299ced7de29e
+contentHash=5a920c7f4ee9d6148753b5cba950b5d74f9b54d1b49e7664c4d1ee65829ff488
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-g-nickname-rule-0-feedback`
+
+- Objectives: obj-u25-nickname-rule
+- Sessions: u25-s-orient, u25-s-nickname-rule
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 607ac983af8ae7e9fc4153199cce0def95950b236e7a64ab26e45c2518063389
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-nickname-rule:u25-g-nickname-rule-0-feedback
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+The source says от полной формы имени and gives Марюня. The keyed phrase is от полной формы имени.
+Марюня is the cue; от полной формы имени matches the requested function or classification: derivation from the full form of the name.
+shippedText=The source says от полной формы имени and gives Марюня. The keyed phrase is от полной формы имени.
+Марюня is the cue; от полной формы имени matches the requested function or classification: derivation from the full form of the name.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2b72132b56ed28389b52948040ff8e7899ad6ba0b99873ab4a135fdb1e60a44b
+contentHash=365ef209f34740e4f89ef6450037ba9daaf81927b68fa5361dfef290432302d1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-g-nickname-rule-0-prompt`
+
+- Objectives: obj-u25-nickname-rule
+- Sessions: u25-s-orient, u25-s-nickname-rule
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9d24ede5b2c67aacd094c5f85d31f59f9e7a38a4f96649012618236f8d27f7ae
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-nickname-rule:u25-g-nickname-rule-0-prompt
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Which classification describes this documented example?
+shippedText=Which classification describes this documented example?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=539dd3498dae71e35ce33cb257d04055929605f7504d7e52ca063f39492d1073
+contentHash=e0f9c1ac84120f4103b74bd067db2863d7a45af7c784c966ece9879c8c6cae94
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-g-nickname-rule-0-wrong-0`
+
+- Objectives: obj-u25-nickname-rule
+- Sessions: u25-s-orient, u25-s-nickname-rule
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cfaadfae3e46c8a5ea34bb8aed82268ec0977fb315a6ed800aec1e1576eaeb60
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-nickname-rule:u25-g-nickname-rule-0-wrong-0
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+от краткой формы: derivation from the short form. This differs from the classification or conversational function requested here. The source assigns от краткой формы to Машенька.
+shippedText=от краткой формы: derivation from the short form. This differs from the classification or conversational function requested here. The source assigns от краткой формы to Машенька.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9a586a15c61d8f5c53989c340c58b5df69216b661d0a7cb7a690069cf34149c4
+contentHash=7711a6c2fbc9907aeb57ba105fe651f59138ce1d9369d75e1f32ab5009f45cea
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-g-nickname-rule-0-wrong-1`
+
+- Objectives: obj-u25-nickname-rule
+- Sessions: u25-s-orient, u25-s-nickname-rule
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: da7a447f8329192ba8e0f4d0665a4d7a9969d9ca6af9711275abe336b459c192
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-nickname-rule:u25-g-nickname-rule-0-wrong-1
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+оттенок пренебрежения: a shade of dismissiveness in the supplied classification. This differs from the classification or conversational function requested here. The source assigns оттенок пренебрежения to Сашка.
+shippedText=оттенок пренебрежения: a shade of dismissiveness in the supplied classification. This differs from the classification or conversational function requested here. The source assigns оттенок пренебрежения to Сашка.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2051872794aca773158ae80a3cd30d06eeb2da0ae4b57ff57faddc815808303a
+contentHash=2e788fd1808492720bbfff0628f9f64d0161ee4b780bc099282900ee28dd72b2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-i-address-1-feedback`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dcd8950d13642f8c5a05209eb46052c630350f58441e41287fe927dad0893275
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-address:u25-i-address-1-feedback
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+The frozen source pairs the shown form "Ира" with the admitted gloss "краткие имена" ("краткие имена — Ира").
+Ира is the cue; краткие имена matches the requested function or classification: the short-name category.
+shippedText=The frozen source pairs the shown form "Ира" with the admitted gloss "краткие имена" ("краткие имена — Ира").
+Ира is the cue; краткие имена matches the requested function or classification: the short-name category.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=364e3f8e573006fff76d1cc141f42cba0ed65246a623d72851347c64605ef9bd
+contentHash=af64ea213b3e41f1eb5a41f73011ae03c9413878dde1b663474e8694c1869861
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-i-address-1-wrong-0`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 36153d3ddddbb09b32fc89665c5b98aa63480e42697cdcb71106d0433319f991
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-address:u25-i-address-1-wrong-0
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+полные имена: the full-name category. This differs from the classification or conversational function requested here. The frozen source pairs the shown form "Ирина" with the admitted gloss "полные имена" ("полные имена — Ирина").
+shippedText=полные имена: the full-name category. This differs from the classification or conversational function requested here. The frozen source pairs the shown form "Ирина" with the admitted gloss "полные имена" ("полные имена — Ирина").
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d2c74d99c2fec0545e23d1256a39c0adb5a8d779d726bd9b185d27e7f80c956b
+contentHash=27b7ad4a7dbe1dc653edfb6ed04fe3de42fe9b17bcffb022f0211bffd06bf599
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-i-address-2-feedback`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 873bbf0c95d5c79facaea7b0261b05d0c171467cdb7826223a310de297dfea1b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-address:u25-i-address-2-feedback
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+The frozen source pairs the shown form "Ирочка" with the admitted gloss "уменьшительно-ласкательные" ("уменьшительно-ласкательные — Ирочка").
+Ирочка is the cue; уменьшительно-ласкательные matches the requested function or classification: the diminutive or affectionate category.
+shippedText=The frozen source pairs the shown form "Ирочка" with the admitted gloss "уменьшительно-ласкательные" ("уменьшительно-ласкательные — Ирочка").
+Ирочка is the cue; уменьшительно-ласкательные matches the requested function or classification: the diminutive or affectionate category.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d94fccdafde1bae4b584eafebaf931e7437bd313e7b62e4f510ea3621d8e6f75
+contentHash=9a04fd0d18515193aafdae62eecb5d60a73793ad525231406e95e49ad0439d1f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-i-address-3-feedback`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: db3718dc41eab572e8c49cad96faeeb9d9117466e7301cba8be29d1291071b6e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-address:u25-i-address-3-feedback
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+The frozen source pairs the shown form "полному имени" with the admitted gloss "отстранённо-официального регистра" ("отстранённо-официального регистра").
+полному имени is the cue; отстранённо-официального регистра matches the requested function or classification: the stated detached formal register.
+shippedText=The frozen source pairs the shown form "полному имени" with the admitted gloss "отстранённо-официального регистра" ("отстранённо-официального регистра").
+полному имени is the cue; отстранённо-официального регистра matches the requested function or classification: the stated detached formal register.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f788c6f3d957f20a6605e9842fec3734c3682edf915ccdb6c36b44d5b5d66002
+contentHash=7ee7e8f3996e7720f1672b3cca1280455fdd1b9a2b8aef77b4d4768365f3945c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-i-address-3-prompt`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: af4aa658e0e83e8456b0900e68f0abc0aa864bed63fc6a051ab66c7deed2f1c6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-address:u25-i-address-3-prompt
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Which register does the supplied full-name address example illustrate?
+shippedText=Which register does the supplied full-name address example illustrate?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3b933b345389cdac59d3a317db274313b101ac22e4be86f34b5bb3f68b05ccf2
+contentHash=b33d5c5752be9b9d2252aa65af4cc18539d325a39db1d16a9b8fc9ea0920988d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-i-address-3-wrong-0`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 155255e56a12cf6f1387564a392749909b1e3c6c29c238b999616b73c0f48968
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-address:u25-i-address-3-wrong-0
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+дружески-неофициальном общении: friendly informal communication. This differs from the classification or conversational function requested here. The frozen source pairs the shown form "полному имени" with the admitted gloss "дружески-неофициальном общении" ("дружески-неофициальном общении").
+shippedText=дружески-неофициальном общении: friendly informal communication. This differs from the classification or conversational function requested here. The frozen source pairs the shown form "полному имени" with the admitted gloss "дружески-неофициальном общении" ("дружески-неофициальном общении").
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=79cc5865b62e14900c07efeac752da218036807faf2c7976bc01103da700af9d
+contentHash=5cc9381db9f41f5276433c34746a2863570e39abd36d4115c685c798f8cea656
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-i-address-3-wrong-1`
+
+- Objectives: obj-u25-address
+- Sessions: u25-s-orient, u25-s-address
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 914ad190e1168b65531d44b6740c8ab8521fd5ce8bf817f9cecc0f1e1bb1085d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-address:u25-i-address-3-wrong-1
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+полуофициальной обстановке: a semi-official setting rather than the requested register label. This differs from the classification or conversational function requested here. The frozen source pairs the shown form "полному имени" with the admitted gloss "полуофициальной обстановке" ("полуофициальной обстановке").
+shippedText=полуофициальной обстановке: a semi-official setting rather than the requested register label. This differs from the classification or conversational function requested here. The frozen source pairs the shown form "полному имени" with the admitted gloss "полуофициальной обстановке" ("полуофициальной обстановке").
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e73d376623a31d88d52b54cf423ef8b6464f75614d13f7a9bd87068b56d1f659
+contentHash=a4f58ff38597d6df20dabc47e72c52d7fe4bd9ec90a652fc274e3aa96d140e3e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-i-courtesy-1-feedback`
+
+- Objectives: obj-u25-courtesy
+- Sessions: u25-s-orient, u25-s-courtesy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 25d109f89496791843abe0e0da67ebb36172abfe72cb86bfac1b3d4e83b73932
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-courtesy:u25-i-courtesy-1-feedback
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+The frozen list pairs thanks with this form and I'm sorry / excuse me (informal) with a different form.
+thanks is the cue; Спаси́бо matches the requested function or classification: thanks or thank you.
+shippedText=The frozen list pairs thanks with this form and I'm sorry / excuse me (informal) with a different form.
+thanks is the cue; Спаси́бо matches the requested function or classification: thanks or thank you.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e294cbf34838a61207c8c5812764f8df80fa9a4fec7c66d5e6411671f25d05c4
+contentHash=37302fb601f00b9b784c238b4860c9d714704307e1c7bd3844b0cf462bc1762b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-i-courtesy-1-wrong-0`
+
+- Objectives: obj-u25-courtesy
+- Sessions: u25-s-orient, u25-s-courtesy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 083e549737944ebbd07aa3c53b7d0a8bd77eac58d6c336bb768a6f568664c4cb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-courtesy:u25-i-courtesy-1-wrong-0
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Пожа́луйста: please in the supplied request use. This differs from the classification or conversational function requested here. The frozen list says please; also used for a request, not for thanks.
+shippedText=Пожа́луйста: please in the supplied request use. This differs from the classification or conversational function requested here. The frozen list says please; also used for a request, not for thanks.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4c16a7f7a8861c448244bd77b84de4f286971ae007d14b0f0b1453b693a8d6c7
+contentHash=d980d1674ccf11f68ad61a09dd05e8a97cacec1c951826cd67a31847717d17d9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-i-courtesy-1-wrong-1`
+
+- Objectives: obj-u25-courtesy
+- Sessions: u25-s-orient, u25-s-courtesy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cca4b30472f40526aa0e3274936f3422213da2f26b6b61adaad645bf2c61ccec
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-courtesy:u25-i-courtesy-1-wrong-1
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Извини́те: excuse me with polite or plural address. This differs from the classification or conversational function requested here. The frozen list pairs I'm sorry / excuse me (informal) with a different form.
+shippedText=Извини́те: excuse me with polite or plural address. This differs from the classification or conversational function requested here. The frozen list pairs I'm sorry / excuse me (informal) with a different form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8ad279eb4f2acfe9cf58dfc46c4e719d2c5f342e13ea7d526114728df84367e4
+contentHash=756ef45cc6e4d555208249496ed892484bd19e18dcebccdde6f4649e86fcdc7a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-i-courtesy-2-feedback`
+
+- Objectives: obj-u25-courtesy
+- Sessions: u25-s-orient, u25-s-courtesy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 316fb88f3ad4587599f8016d294fc2ed04de0fed5317fdd27bce46dfb9559e48
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-courtesy:u25-i-courtesy-2-feedback
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+The -те form marks polite or plural address.
+Извини́те is the cue; excuse me, polite or plural matches the requested function or classification: the polite-or-plural apology description.
+shippedText=The -те form marks polite or plural address.
+Извини́те is the cue; excuse me, polite or plural matches the requested function or classification: the polite-or-plural apology description.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=68cde20f443eb5cd7b137b6be32740e6131fbe08b57bd5056be74f4aa8bbdcaf
+contentHash=75d330846ed439f7377bc45a64323200c09e9d3cf7ead268f1ea3f822b0a41be
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-i-courtesy-2-wrong-0`
+
+- Objectives: obj-u25-courtesy
+- Sessions: u25-s-orient, u25-s-courtesy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 77c5f9a6132259407007ffea7081999b63280f44a066d0a0a3e5c227831ee432
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-courtesy:u25-i-courtesy-2-wrong-0
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+excuse me, familiar singular: the familiar-singular apology description. This differs from the classification or conversational function requested here. excuse me, familiar singular is Извини́, without -те.
+shippedText=excuse me, familiar singular: the familiar-singular apology description. This differs from the classification or conversational function requested here. excuse me, familiar singular is Извини́, without -те.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=65dc4d24b5b691f4753eb20063fcb5acc2ac4a17b4cdd9cee956ae56132f19bc
+contentHash=b433437e997134cad8ddab4dfbf69aa9cc26afd0cb0e93889123b8b02cdf26b9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-i-courtesy-2-wrong-1`
+
+- Objectives: obj-u25-courtesy
+- Sessions: u25-s-orient, u25-s-courtesy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3de48d48b239df8be72f3a0cab641f3f60e162f0e2b5e7d21eb46ab2a8d79d2c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-courtesy:u25-i-courtesy-2-wrong-1
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+thank you: gratitude rather than an apology. This differs from the classification or conversational function requested here. thank you is a different courtesy formula.
+shippedText=thank you: gratitude rather than an apology. This differs from the classification or conversational function requested here. thank you is a different courtesy formula.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ab03292f06c86bd259a8a9efbc8b8b3e994f8558a3322593ca20b8bd3e1878aa
+contentHash=06b689be310fa27e991dbc6e447e1d707a7e8dc28f4f1b771f04103d7b502f16
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-i-diminutives-1-feedback`
+
+- Objectives: obj-u25-diminutives
+- Sessions: u25-s-orient, u25-s-diminutives
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 61f5b39a52b3a6dc1789b4853e391ba717c1ba54bc6159cdfe6d1560ce9520fe
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-diminutives:u25-i-diminutives-1-feedback
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+The frozen list includes Alyosha for Alexei as the pair for the shown name.
+Alexei is the cue; Alyosha matches the requested function or classification: the supplied short form for Alexei.
+shippedText=The frozen list includes Alyosha for Alexei as the pair for the shown name.
+Alexei is the cue; Alyosha matches the requested function or classification: the supplied short form for Alexei.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9bfe5c61cae186f8678854215bc5db1e1a91314f0846eaf7ba6c13810599c519
+contentHash=1348fc52cde83e1421724995532e75a692fa2c6c2524aeff13937cf8b8b12ce0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-i-diminutives-1-wrong-0`
+
+- Objectives: obj-u25-diminutives
+- Sessions: u25-s-orient, u25-s-diminutives
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9a00ad5a8bc6b60ebdac9fc15ac19aae52c0de0503d8c135d40c94ef13467d1f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-diminutives:u25-i-diminutives-1-wrong-0
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Sasha: the supplied short form for Alexander. This differs from the classification or conversational function requested here. The frozen list pairs Sasha for Alexander with a different name.
+shippedText=Sasha: the supplied short form for Alexander. This differs from the classification or conversational function requested here. The frozen list pairs Sasha for Alexander with a different name.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fbc3c22e7a7f7346d061471d65235fc2700a030fe9b487273d85603771277c39
+contentHash=9661102b522c2e7485cd4ceee98440a7e5240266201631d6143d2217eb68944c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-i-diminutives-2-feedback`
+
+- Objectives: obj-u25-diminutives
+- Sessions: u25-s-orient, u25-s-diminutives
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c4b4fb1d2522522d1ae1427e6e5cb7cb4a0586d0176a868b205efd7dd8d38a5b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-diminutives:u25-i-diminutives-2-feedback
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+The frozen list includes Dima for Dmitri as the pair for the shown name.
+Dmitri is the cue; Dima matches the requested function or classification: the supplied short form for Dmitri.
+shippedText=The frozen list includes Dima for Dmitri as the pair for the shown name.
+Dmitri is the cue; Dima matches the requested function or classification: the supplied short form for Dmitri.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=80a1e26f671e30156e0f6837b91e9be3f3263582843aafef926608cc8514cedc
+contentHash=603fd43721fe5f631554966b74a216a5b29c0a8d8ac16d23e113efb20d91fba6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-i-name-form-1-feedback`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ea2f03a8e94ee02f09a8bf0407e76f03771d27fd13d4dc913dba576f35dd18ad
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-documented-name-form:u25-i-name-form-1-feedback
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Машенька is a documented derivative of the short form in this admitted material.
+Машенька is the cue; documented derivative of the short form matches the requested function or classification: a documented short-form derivational base.
+shippedText=Машенька is a documented derivative of the short form in this admitted material.
+Машенька is the cue; documented derivative of the short form matches the requested function or classification: a documented short-form derivational base.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a63bbcdef08ca03ec2bb098dff127927f871adba463ecad4718190c91aed2b58
+contentHash=c7d68220cdb69bea262cf3846e6a4318136cfefa06565146fa019c0a59326f60
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-i-name-form-1-prompt`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5e511549e70f7cd8b6296fd2011f80d80574f69c849dc8bd0391b0581604c7e7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-documented-name-form:u25-i-name-form-1-prompt
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Which English description classifies this documented personal-name example?
+shippedText=Which English description classifies this documented personal-name example?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3676ed2304a5854ad786be0de489e7d0aa4ef1234717b9017c456bb2e2ce0b27
+contentHash=76d9cecfc2fd7b07fd44b957392c56a63b16d95450932331f14852db7f44cf7c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-i-name-form-1-wrong-0`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a3d116a4598a67a3c039d25776ea8d57aba0af1426abd626b5ffdd1760096bc0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-documented-name-form:u25-i-name-form-1-wrong-0
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+documented derivative of the full name: a documented full-name derivational base. This differs from the classification or conversational function requested here. Марюня is a documented derivative of the full name in this admitted material.
+shippedText=documented derivative of the full name: a documented full-name derivational base. This differs from the classification or conversational function requested here. Марюня is a documented derivative of the full name in this admitted material.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=db3948b74cf8547ab9aa59755e0d0ccccee204bb47b59491b253b046b8fb3c0f
+contentHash=e4cda7b6edd431db5532c1496ceb872b33d11d33c6ab4708d48eb70f47a9c189
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-i-name-form-2-feedback`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d9ea3c8ce5d12cc168b3f101f40c6569103b2d166e9a9be03b49d2571c8b9cd0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-documented-name-form:u25-i-name-form-2-feedback
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Сашка carries documented dismissive coloring in this admitted material.
+Сашка is the cue; documented dismissive coloring matches the requested function or classification: the social coloring documented for the supplied example.
+shippedText=Сашка carries documented dismissive coloring in this admitted material.
+Сашка is the cue; documented dismissive coloring matches the requested function or classification: the social coloring documented for the supplied example.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=98716b2d8688d41b8901e079e7d621e24d8b002c5e770ee0814d9623940b8e86
+contentHash=cae43291ac3cf62b10e817a891b0f37a1277c03348b55e813200942d4945aa40
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-i-name-form-2-prompt`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8bd33f20b2e30910320a731c84f8682d6ae059d628759c9162e919796d5e8b61
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-documented-name-form:u25-i-name-form-2-prompt
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Which English classification matches this supplied personal-name example?
+shippedText=Which English classification matches this supplied personal-name example?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d2e2821456dc6921bdd480d5f1c8302d2bdd851f1ddff484ab690034e687e3b3
+contentHash=a5beb1eb924bde1758fc03e7e0d5d729dec80c87bcd3eaec9bb133dea82f4843
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-i-name-form-3-feedback`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dec7924951d4d01c45ed09896842b295d4657c605808bb51e24519e6f9e4310e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-documented-name-form:u25-i-name-form-3-feedback
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+An unfamiliar form must be verified in a names dictionary.
+an unstudied personal name is the cue; unsupported until a names dictionary documents that form matches the requested function or classification: the required documentation limit for an unfamiliar form.
+shippedText=An unfamiliar form must be verified in a names dictionary.
+an unstudied personal name is the cue; unsupported until a names dictionary documents that form matches the requested function or classification: the required documentation limit for an unfamiliar form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6ece2a05b6285478821a9bb36ef5109d2f007c85be4c61eba0b0ff74fd606c43
+contentHash=a7511e455866c0df07492944d1cbe25e6e427e35f785e7a2d3c3b2348f15d667
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-i-name-form-3-wrong-0`
+
+- Objectives: obj-u25-documented-name-form
+- Sessions: u25-s-documented-name-form
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 95a644da1d2a4ccb5c7276972dfc2f07cfade19013e7154b923cb341bf5a6370
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-documented-name-form:u25-i-name-form-3-wrong-0
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+the suffix mechanically generates an acceptable name: an unsupported claim of automatic acceptable formation. This differs from the classification or conversational function requested here. A suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name.
+shippedText=the suffix mechanically generates an acceptable name: an unsupported claim of automatic acceptable formation. This differs from the classification or conversational function requested here. A suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=be99943c8ddb7b0de3af8f849146b528abb9555781d2d76b0cae9019bcc407f1
+contentHash=fa42a88c05eb645fcdec883520cb39f9c570e94d6c047956d6f6327f4deeb67d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-i-name-question-1-feedback`
+
+- Objectives: obj-u25-name-question
+- Sessions: u25-s-orient, u25-s-name-question
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 42e92a2c18d27b6da3879206acc17b4a98b1cc421f5483802cf7b61f1e8b364f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-name-question:u25-i-name-question-1-feedback
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+The frozen list pairs My name is... with this reply and What is your name? with the question.
+My name is... is the cue; Меня́ зову́т matches the requested function or classification: the reply opening followed by a name.
+shippedText=The frozen list pairs My name is... with this reply and What is your name? with the question.
+My name is... is the cue; Меня́ зову́т matches the requested function or classification: the reply opening followed by a name.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8d468c4309e8f54b57263e3e9c992cfff30e384b825a40818c3d7afd540d1e5e
+contentHash=6df7325532093abaa5622d5bdec13aac20bbc89cd0d497b6b42b97c5864b3827
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-i-name-question-1-wrong-0`
+
+- Objectives: obj-u25-name-question
+- Sessions: u25-s-orient, u25-s-name-question
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d6d22e3053e495d83d5e7c471aab18628d05ff4493d216b5242e5347b53928cc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-name-question:u25-i-name-question-1-wrong-0
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Как Вас зову́т?: the name question. This differs from the classification or conversational function requested here. The frozen list pairs What is your name? with the question, not with the shown reply.
+shippedText=Как Вас зову́т?: the name question. This differs from the classification or conversational function requested here. The frozen list pairs What is your name? with the question, not with the shown reply.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c1781fd2807b0d0b537984b3f54e9987f60296fc6c9152b537f3034372832640
+contentHash=6fa3ebf762c7ac5636a8ffafc5237e0370c9afb535b328cb9629bf438dd3e9b6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-i-name-question-2-feedback`
+
+- Objectives: obj-u25-name-question
+- Sessions: u25-s-orient, u25-s-name-question
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c801410b089d1fac15b47130d32332d83c60be55e2aa9c96031697f09b5e3dfd
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-name-question:u25-i-name-question-2-feedback
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+The frozen list pairs My name is... with this reply and What is your name? with the shown question.
+Как Вас зову́т? is the cue; Меня́ зову́т matches the requested function or classification: the reply opening followed by a name.
+shippedText=The frozen list pairs My name is... with this reply and What is your name? with the shown question.
+Как Вас зову́т? is the cue; Меня́ зову́т matches the requested function or classification: the reply opening followed by a name.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=343051f4c60bbd2b9f80ff895b550b6514201251254f5a30d851cc9dfffa6c86
+contentHash=86e3662a3bc7931dbc61d1339d7c90b9449710586a984307d2e784befcf79772
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-i-name-question-2-prompt`
+
+- Objectives: obj-u25-name-question
+- Sessions: u25-s-orient, u25-s-name-question
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b4e3c9cce906ef7758d9e84c272726752940d31107154203668b8fcd74af0c33
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-name-question:u25-i-name-question-2-prompt
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Which formula begins an answer to this name question?
+shippedText=Which formula begins an answer to this name question?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e4ceeec62e39c4dd62d40a3ebccad9bec5cb192264483ff496d13b9647318421
+contentHash=962c206a58ca0bf57860908755f33ef4696c858dc2c412f7447d993e896403fd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-i-name-question-2-wrong-0`
+
+- Objectives: obj-u25-name-question
+- Sessions: u25-s-orient, u25-s-name-question
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 84c46e988076e945848447e8428fd06a3bcf650e6a104ed297a999d2c3a2a4f8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-name-question:u25-i-name-question-2-wrong-0
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Прошу́ проще́ния: a formal apology. This differs from the classification or conversational function requested here. The frozen list pairs I'm sorry / excuse me (formal) with this form, not with the name reply.
+shippedText=Прошу́ проще́ния: a formal apology. This differs from the classification or conversational function requested here. The frozen list pairs I'm sorry / excuse me (formal) with this form, not with the name reply.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2d08875e871ba8a70cf441eacbe90e6372382361d4c574362562c36ec936c6aa
+contentHash=93f099b7d0f1303b557ee9696a8d39e86f4963de05fd9e9b4b5253a55ec6a6a3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-i-name-question-2-wrong-1`
+
+- Objectives: obj-u25-name-question
+- Sessions: u25-s-orient, u25-s-name-question
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 56b5b5348d5db929503460f897b455f4b5418bc79c469987c2c19ea602c316e1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-name-question:u25-i-name-question-2-wrong-1
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+Как дела́?: a question asking how someone is doing. This differs from the classification or conversational function requested here. The frozen list pairs How are you? with this form, not with the name reply.
+shippedText=Как дела́?: a question asking how someone is doing. This differs from the classification or conversational function requested here. The frozen list pairs How are you? with this form, not with the name reply.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e4a2c82ff01b650ff86624709f867859872905938e88101243396dc8551cc0cd
+contentHash=7fe5c2af51fd611550c8533d012e0266e5b6b07db89dc12066c49e46f8957ae8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-i-name-structure-1-feedback`
+
+- Objectives: obj-u25-name-structure
+- Sessions: u25-s-orient, u25-s-name-structure
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3648f5ad4e9295f722fad339ef5d21f0c13e5d088d645116924cd8ef0e41074a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-name-structure:u25-i-name-structure-1-feedback
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+The frozen sentence says Russians use three names and pairs patronymic name with this form.
+patronymic name is the cue; отчество matches the requested function or classification: the patronymic-name label.
+shippedText=The frozen sentence says Russians use three names and pairs patronymic name with this form.
+patronymic name is the cue; отчество matches the requested function or classification: the patronymic-name label.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2886ab45f6ab102b1b80a29283feff2f43b11d5cf4d7fe7b7e1daf7b16798d40
+contentHash=5de2135d8e92f93b7214b5804ee9d21fd039517b3c082836609f4ca243c4cc91
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-i-name-structure-1-wrong-0`
+
+- Objectives: obj-u25-name-structure
+- Sessions: u25-s-orient, u25-s-name-structure
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d10f8cc404183e5700bfc87811b889ec473c75fb869803c4eaecfda2c6e6e3ed
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-name-structure:u25-i-name-structure-1-wrong-0
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+имя: the first-name label. This differs from the classification or conversational function requested here. The frozen sentence pairs this form with first name, not with the shown words.
+shippedText=имя: the first-name label. This differs from the classification or conversational function requested here. The frozen sentence pairs this form with first name, not with the shown words.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=77b5a3c5211f15f711cd78ade9af6b2531a5be37e28bc1c1e1872c3932323615
+contentHash=0a1208a004f8dd17eae849d1bb538dab5820854e5b8a424a6c840dab4aed615a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-i-name-structure-1-wrong-2`
+
+- Objectives: obj-u25-name-structure
+- Sessions: u25-s-orient, u25-s-name-structure
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: eb3281dd08e52b114ab78fb604722759aab9a22eb41e1bde8b60702157373e3f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-name-structure:u25-i-name-structure-1-wrong-2
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+овна: the retained daughter-of suffix label. This differs from the classification or conversational function requested here. The frozen sentence gives this ending for daughter of, not as the pair for the shown words.
+shippedText=овна: the retained daughter-of suffix label. This differs from the classification or conversational function requested here. The frozen sentence gives this ending for daughter of, not as the pair for the shown words.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7fb9420505b8f17379755ea7f4a22faa8ada0a7792f0fdcc6aae34b5baaa5867
+contentHash=b1fe9cfc9ecc88155a93db2953a0c4ed70fd1d591ef6b012a7aef1756d9354f2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-i-name-structure-2-feedback`
+
+- Objectives: obj-u25-name-structure
+- Sessions: u25-s-orient, u25-s-name-structure
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e61de62fbb5f96873ac211953aa6d6dd0fa9c11daae519bbe46b40c58cc59312
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-name-structure:u25-i-name-structure-2-feedback
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+The frozen sentence says Russians use three names and pairs family name with this form.
+family name is the cue; фамилия matches the requested function or classification: the family-name label.
+shippedText=The frozen sentence says Russians use three names and pairs family name with this form.
+family name is the cue; фамилия matches the requested function or classification: the family-name label.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f8c1d5756871f9521c9825aaf5fb16f0d078356109269f1da3d07b0f60007d76
+contentHash=8cebe8de56d79b12a0a4bcc896de1ef792519bc6f8c457126f527be3ea2888d4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-i-nickname-rule-1-feedback`
+
+- Objectives: obj-u25-nickname-rule
+- Sessions: u25-s-orient, u25-s-nickname-rule
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0f6c86e84b0d45539964f09b33d7dbc01f2e4bc4da916b05883b48164359b05d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-nickname-rule:u25-i-nickname-rule-1-feedback
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+The source says от краткой формы and gives Машенька. The keyed phrase is от краткой формы.
+Машенька is the cue; от краткой формы matches the requested function or classification: derivation from the short form.
+shippedText=The source says от краткой формы and gives Машенька. The keyed phrase is от краткой формы.
+Машенька is the cue; от краткой формы matches the requested function or classification: derivation from the short form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=aaff93a75b94cec405997e8612965bab2d7aba6e0bf28cca2b62b11f928447a5
+contentHash=7e2e84cff993b5785ffd24cf66a95b141e81385a3e1a1b5787950ca55b853c9a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-i-nickname-rule-1-wrong-0`
+
+- Objectives: obj-u25-nickname-rule
+- Sessions: u25-s-orient, u25-s-nickname-rule
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f9eb989ba67172184f18d908475fee6ba6e60957e78b92db0b0166daf1afed2a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-nickname-rule:u25-i-nickname-rule-1-wrong-0
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+от полной формы имени: derivation from the full form of the name. This differs from the classification or conversational function requested here. The source assigns от полной формы имени to Марюня.
+shippedText=от полной формы имени: derivation from the full form of the name. This differs from the classification or conversational function requested here. The source assigns от полной формы имени to Марюня.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b8cc10c0dee26714ea8f04d8bdff71ff76cf942e9ae7d16a18e5da304e2663be
+contentHash=b001172d3c477697ff971844be288417e4d8d5bac17de8efe5fde0c187040d68
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u25-instruction-u25-i-nickname-rule-2-feedback`
+
+- Objectives: obj-u25-nickname-rule
+- Sessions: u25-s-orient, u25-s-nickname-rule
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: edf5a8058dd647af92c7ce381d95bfd5f4f550ee35f74771b2c6f93194662ade
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u25-nickname-rule:u25-i-nickname-rule-2-feedback
+originalSourceText=Retained licensed name and courtesy spans; frozen personal-name and address revisions; existing Gramota names-dictionary research synthesis consulted 2026-09-29. Independently authored English 2026-10-11; review pending. Current Gramota pages returned 403; no fresh-source verification claimed.
+The source says these forms carry оттенок пренебрежения and gives Сашка. The keyed phrase is оттенок пренебрежения.
+Сашка is the cue; оттенок пренебрежения matches the requested function or classification: a shade of dismissiveness in the supplied classification.
+shippedText=The source says these forms carry оттенок пренебрежения and gives Сашка. The keyed phrase is оттенок пренебрежения.
+Сашка is the cue; оттенок пренебрежения matches the requested function or classification: a shade of dismissiveness in the supplied classification.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored content-audit synthesis, 2026-10-11. No owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bdb8de18715ea3f20412ea68389dc7b5700adc632bdcae0f1acf1b969bad37f7
+contentHash=54a5637a98dfb8b8ea28f11e149b0a4a3cc2128c28f0098a9b3a82321d8ff290
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -9667,14 +13893,16 @@ permitsAppUse=true
 - `u25-st-teach-name-structure-1` EXAMPLE `ex-u25-name-structure-0`
 - `u25-st-teach-name-structure-1` EXAMPLE `ex-u25-name-structure-1`
 - `u25-st-teach-name-structure-1` REFERENCE `ref-u2125-attribution`
-- `u25-st-guided-name-structure-1` REMEDIATION `u25-st-rem-name-structure`
-- `u25-st-guided-name-structure-1` ITEM `u25-g-name-structure-0`
 - `u25-st-teach-name-structure-2` REFERENCE `ref-u2125-attribution`
 - `u25-st-teach-name-structure-3` EXAMPLE `ex-u25-name-structure-2`
 - `u25-st-teach-name-structure-3` EXAMPLE `ex-u25-name-structure-3`
 - `u25-st-teach-name-structure-3` REFERENCE `ref-u2125-attribution`
+- `u25-st-guided-name-structure-1` REMEDIATION `u25-st-rem-name-structure`
+- `u25-st-guided-name-structure-1` ITEM `u25-g-name-structure-0`
 - `u25-st-rem-name-structure` EXAMPLE `ex-u25-name-structure-0`
 - `u25-st-rem-name-structure` EXAMPLE `ex-u25-name-structure-1`
+- `u25-st-rem-name-structure` EXAMPLE `ex-u25-name-structure-2`
+- `u25-st-rem-name-structure` EXAMPLE `ex-u25-name-structure-3`
 - `u25-st-check-name-structure` REMEDIATION `u25-st-rem-name-structure`
 - `u25-st-check-name-structure` ITEM `u25-i-name-structure-1`
 - `u25-st-check-name-structure` ITEM `u25-i-name-structure-2`
@@ -9682,13 +13910,14 @@ permitsAppUse=true
 - `u25-st-teach-diminutives-1` EXAMPLE `ex-u25-diminutives-0`
 - `u25-st-teach-diminutives-1` EXAMPLE `ex-u25-diminutives-1`
 - `u25-st-teach-diminutives-1` REFERENCE `ref-u2125-attribution`
-- `u25-st-guided-diminutives-1` REMEDIATION `u25-st-rem-diminutives`
-- `u25-st-guided-diminutives-1` ITEM `u25-g-diminutives-0`
 - `u25-st-teach-diminutives-2` REFERENCE `ref-u2125-attribution`
 - `u25-st-teach-diminutives-3` EXAMPLE `ex-u25-diminutives-2`
 - `u25-st-teach-diminutives-3` REFERENCE `ref-u2125-attribution`
+- `u25-st-guided-diminutives-1` REMEDIATION `u25-st-rem-diminutives`
+- `u25-st-guided-diminutives-1` ITEM `u25-g-diminutives-0`
 - `u25-st-rem-diminutives` EXAMPLE `ex-u25-diminutives-0`
 - `u25-st-rem-diminutives` EXAMPLE `ex-u25-diminutives-1`
+- `u25-st-rem-diminutives` EXAMPLE `ex-u25-diminutives-2`
 - `u25-st-check-diminutives` REMEDIATION `u25-st-rem-diminutives`
 - `u25-st-check-diminutives` ITEM `u25-i-diminutives-1`
 - `u25-st-check-diminutives` ITEM `u25-i-diminutives-2`
@@ -9711,14 +13940,16 @@ permitsAppUse=true
 - `u25-st-teach-name-question-1` EXAMPLE `ex-u25-name-question-0`
 - `u25-st-teach-name-question-1` EXAMPLE `ex-u25-name-question-1`
 - `u25-st-teach-name-question-1` REFERENCE `ref-u2125-attribution`
-- `u25-st-guided-name-question-1` REMEDIATION `u25-st-rem-name-question`
-- `u25-st-guided-name-question-1` ITEM `u25-g-name-question-0`
 - `u25-st-teach-name-question-2` REFERENCE `ref-u2125-attribution`
 - `u25-st-teach-name-question-3` EXAMPLE `ex-u25-name-question-2`
 - `u25-st-teach-name-question-3` EXAMPLE `ex-u25-name-question-3`
 - `u25-st-teach-name-question-3` REFERENCE `ref-u2125-attribution`
+- `u25-st-guided-name-question-1` REMEDIATION `u25-st-rem-name-question`
+- `u25-st-guided-name-question-1` ITEM `u25-g-name-question-0`
 - `u25-st-rem-name-question` EXAMPLE `ex-u25-name-question-0`
 - `u25-st-rem-name-question` EXAMPLE `ex-u25-name-question-1`
+- `u25-st-rem-name-question` EXAMPLE `ex-u25-name-question-2`
+- `u25-st-rem-name-question` EXAMPLE `ex-u25-name-question-3`
 - `u25-st-check-name-question` REMEDIATION `u25-st-rem-name-question`
 - `u25-st-check-name-question` ITEM `u25-i-name-question-1`
 - `u25-st-check-name-question` ITEM `u25-i-name-question-2`
@@ -9726,13 +13957,14 @@ permitsAppUse=true
 - `u25-st-teach-nickname-rule-1` EXAMPLE `ex-u25-nickname-rule-0`
 - `u25-st-teach-nickname-rule-1` EXAMPLE `ex-u25-nickname-rule-1`
 - `u25-st-teach-nickname-rule-1` REFERENCE `ref-u2125-attribution`
-- `u25-st-guided-nickname-rule-1` REMEDIATION `u25-st-rem-nickname-rule`
-- `u25-st-guided-nickname-rule-1` ITEM `u25-g-nickname-rule-0`
 - `u25-st-teach-nickname-rule-2` REFERENCE `ref-u2125-attribution`
 - `u25-st-teach-nickname-rule-3` EXAMPLE `ex-u25-nickname-rule-2`
 - `u25-st-teach-nickname-rule-3` REFERENCE `ref-u2125-attribution`
+- `u25-st-guided-nickname-rule-1` REMEDIATION `u25-st-rem-nickname-rule`
+- `u25-st-guided-nickname-rule-1` ITEM `u25-g-nickname-rule-0`
 - `u25-st-rem-nickname-rule` EXAMPLE `ex-u25-nickname-rule-0`
 - `u25-st-rem-nickname-rule` EXAMPLE `ex-u25-nickname-rule-1`
+- `u25-st-rem-nickname-rule` EXAMPLE `ex-u25-nickname-rule-2`
 - `u25-st-check-nickname-rule` REMEDIATION `u25-st-rem-nickname-rule`
 - `u25-st-check-nickname-rule` ITEM `u25-i-nickname-rule-1`
 - `u25-st-check-nickname-rule` ITEM `u25-i-nickname-rule-2`
@@ -9740,14 +13972,16 @@ permitsAppUse=true
 - `u25-st-teach-address-1` EXAMPLE `ex-u25-address-0`
 - `u25-st-teach-address-1` EXAMPLE `ex-u25-address-1`
 - `u25-st-teach-address-1` REFERENCE `ref-u2125-attribution`
-- `u25-st-guided-address-1` REMEDIATION `u25-st-rem-address`
-- `u25-st-guided-address-1` ITEM `u25-g-address-0`
 - `u25-st-teach-address-2` REFERENCE `ref-u2125-attribution`
 - `u25-st-teach-address-3` EXAMPLE `ex-u25-address-2`
 - `u25-st-teach-address-3` EXAMPLE `ex-u25-address-3`
 - `u25-st-teach-address-3` REFERENCE `ref-u2125-attribution`
+- `u25-st-guided-address-1` REMEDIATION `u25-st-rem-address`
+- `u25-st-guided-address-1` ITEM `u25-g-address-0`
 - `u25-st-rem-address` EXAMPLE `ex-u25-address-0`
 - `u25-st-rem-address` EXAMPLE `ex-u25-address-1`
+- `u25-st-rem-address` EXAMPLE `ex-u25-address-2`
+- `u25-st-rem-address` EXAMPLE `ex-u25-address-3`
 - `u25-st-check-address` REMEDIATION `u25-st-rem-address`
 - `u25-st-check-address` ITEM `u25-i-address-1`
 - `u25-st-check-address` ITEM `u25-i-address-2`
@@ -9792,6 +14026,141 @@ permitsAppUse=true
 - `obj-u25-book` PROVENANCE `prov-ca-25-617`
 - `obj-u25-name-structure` PROVENANCE `prov-ca-25-618`
 - `obj-u25-courtesy` PROVENANCE `prov-ca-repair-25-11120`
+- `obj-u25-address` PROVENANCE `prov-ca-u25-instruction-address-guided`
+- `obj-u25-address` PROVENANCE `prov-ca-u25-instruction-address-objective`
+- `obj-u25-address` PROVENANCE `prov-ca-u25-instruction-address-rem-body`
+- `obj-u25-address` PROVENANCE `prov-ca-u25-instruction-address-rem-title`
+- `obj-u25-address` PROVENANCE `prov-ca-u25-instruction-address-teach-1-body`
+- `obj-u25-address` PROVENANCE `prov-ca-u25-instruction-address-teach-1-title`
+- `obj-u25-address` PROVENANCE `prov-ca-u25-instruction-address-teach-2-body`
+- `obj-u25-address` PROVENANCE `prov-ca-u25-instruction-address-teach-2-title`
+- `obj-u25-address` PROVENANCE `prov-ca-u25-instruction-address-teach-3-body`
+- `obj-u25-address` PROVENANCE `prov-ca-u25-instruction-address-teach-3-title`
+- `obj-u25-courtesy` PROVENANCE `prov-ca-u25-instruction-courtesy-guided`
+- `obj-u25-courtesy` PROVENANCE `prov-ca-u25-instruction-courtesy-objective`
+- `obj-u25-courtesy` PROVENANCE `prov-ca-u25-instruction-courtesy-rem-body`
+- `obj-u25-courtesy` PROVENANCE `prov-ca-u25-instruction-courtesy-rem-title`
+- `obj-u25-courtesy` PROVENANCE `prov-ca-u25-instruction-courtesy-teach-1-body`
+- `obj-u25-courtesy` PROVENANCE `prov-ca-u25-instruction-courtesy-teach-1-title`
+- `obj-u25-courtesy` PROVENANCE `prov-ca-u25-instruction-courtesy-teach-2-body`
+- `obj-u25-courtesy` PROVENANCE `prov-ca-u25-instruction-courtesy-teach-2-title`
+- `obj-u25-courtesy` PROVENANCE `prov-ca-u25-instruction-courtesy-teach-3-body`
+- `obj-u25-courtesy` PROVENANCE `prov-ca-u25-instruction-courtesy-teach-3-title`
+- `obj-u25-diminutives` PROVENANCE `prov-ca-u25-instruction-diminutives-guided`
+- `obj-u25-diminutives` PROVENANCE `prov-ca-u25-instruction-diminutives-objective`
+- `obj-u25-diminutives` PROVENANCE `prov-ca-u25-instruction-diminutives-rem-body`
+- `obj-u25-diminutives` PROVENANCE `prov-ca-u25-instruction-diminutives-rem-title`
+- `obj-u25-diminutives` PROVENANCE `prov-ca-u25-instruction-diminutives-teach-1-body`
+- `obj-u25-diminutives` PROVENANCE `prov-ca-u25-instruction-diminutives-teach-1-title`
+- `obj-u25-diminutives` PROVENANCE `prov-ca-u25-instruction-diminutives-teach-2-body`
+- `obj-u25-diminutives` PROVENANCE `prov-ca-u25-instruction-diminutives-teach-2-title`
+- `obj-u25-diminutives` PROVENANCE `prov-ca-u25-instruction-diminutives-teach-3-body`
+- `obj-u25-diminutives` PROVENANCE `prov-ca-u25-instruction-diminutives-teach-3-title`
+- `obj-u25-documented-name-form` PROVENANCE `prov-ca-u25-instruction-documented-name-form-guided`
+- `obj-u25-documented-name-form` PROVENANCE `prov-ca-u25-instruction-documented-name-form-objective`
+- `obj-u25-documented-name-form` PROVENANCE `prov-ca-u25-instruction-documented-name-form-rem-body`
+- `obj-u25-documented-name-form` PROVENANCE `prov-ca-u25-instruction-documented-name-form-rem-title`
+- `obj-u25-documented-name-form` PROVENANCE `prov-ca-u25-instruction-documented-name-form-teach-1-body`
+- `obj-u25-documented-name-form` PROVENANCE `prov-ca-u25-instruction-documented-name-form-teach-1-title`
+- `obj-u25-documented-name-form` PROVENANCE `prov-ca-u25-instruction-documented-name-form-teach-2-body`
+- `obj-u25-documented-name-form` PROVENANCE `prov-ca-u25-instruction-documented-name-form-teach-2-title`
+- `obj-u25-documented-name-form` PROVENANCE `prov-ca-u25-instruction-documented-name-form-teach-3-body`
+- `obj-u25-documented-name-form` PROVENANCE `prov-ca-u25-instruction-documented-name-form-teach-3-title`
+- `obj-u25-name-question` PROVENANCE `prov-ca-u25-instruction-name-question-guided`
+- `obj-u25-name-question` PROVENANCE `prov-ca-u25-instruction-name-question-objective`
+- `obj-u25-name-question` PROVENANCE `prov-ca-u25-instruction-name-question-rem-body`
+- `obj-u25-name-question` PROVENANCE `prov-ca-u25-instruction-name-question-rem-title`
+- `obj-u25-name-question` PROVENANCE `prov-ca-u25-instruction-name-question-teach-1-body`
+- `obj-u25-name-question` PROVENANCE `prov-ca-u25-instruction-name-question-teach-1-title`
+- `obj-u25-name-question` PROVENANCE `prov-ca-u25-instruction-name-question-teach-2-body`
+- `obj-u25-name-question` PROVENANCE `prov-ca-u25-instruction-name-question-teach-2-title`
+- `obj-u25-name-question` PROVENANCE `prov-ca-u25-instruction-name-question-teach-3-body`
+- `obj-u25-name-question` PROVENANCE `prov-ca-u25-instruction-name-question-teach-3-title`
+- `obj-u25-name-structure` PROVENANCE `prov-ca-u25-instruction-name-structure-guided`
+- `obj-u25-name-structure` PROVENANCE `prov-ca-u25-instruction-name-structure-objective`
+- `obj-u25-name-structure` PROVENANCE `prov-ca-u25-instruction-name-structure-rem-body`
+- `obj-u25-name-structure` PROVENANCE `prov-ca-u25-instruction-name-structure-rem-title`
+- `obj-u25-name-structure` PROVENANCE `prov-ca-u25-instruction-name-structure-teach-1-body`
+- `obj-u25-name-structure` PROVENANCE `prov-ca-u25-instruction-name-structure-teach-1-title`
+- `obj-u25-name-structure` PROVENANCE `prov-ca-u25-instruction-name-structure-teach-2-body`
+- `obj-u25-name-structure` PROVENANCE `prov-ca-u25-instruction-name-structure-teach-2-title`
+- `obj-u25-name-structure` PROVENANCE `prov-ca-u25-instruction-name-structure-teach-3-body`
+- `obj-u25-name-structure` PROVENANCE `prov-ca-u25-instruction-name-structure-teach-3-title`
+- `obj-u25-nickname-rule` PROVENANCE `prov-ca-u25-instruction-nickname-rule-guided`
+- `obj-u25-nickname-rule` PROVENANCE `prov-ca-u25-instruction-nickname-rule-objective`
+- `obj-u25-nickname-rule` PROVENANCE `prov-ca-u25-instruction-nickname-rule-rem-body`
+- `obj-u25-nickname-rule` PROVENANCE `prov-ca-u25-instruction-nickname-rule-rem-title`
+- `obj-u25-nickname-rule` PROVENANCE `prov-ca-u25-instruction-nickname-rule-teach-1-body`
+- `obj-u25-nickname-rule` PROVENANCE `prov-ca-u25-instruction-nickname-rule-teach-1-title`
+- `obj-u25-nickname-rule` PROVENANCE `prov-ca-u25-instruction-nickname-rule-teach-2-body`
+- `obj-u25-nickname-rule` PROVENANCE `prov-ca-u25-instruction-nickname-rule-teach-2-title`
+- `obj-u25-nickname-rule` PROVENANCE `prov-ca-u25-instruction-nickname-rule-teach-3-body`
+- `obj-u25-nickname-rule` PROVENANCE `prov-ca-u25-instruction-nickname-rule-teach-3-title`
+- `obj-u25-address` PROVENANCE `prov-ca-u25-instruction-u25-g-address-0-feedback`
+- `obj-u25-address` PROVENANCE `prov-ca-u25-instruction-u25-g-address-0-prompt`
+- `obj-u25-address` PROVENANCE `prov-ca-u25-instruction-u25-g-address-0-wrong-0`
+- `obj-u25-address` PROVENANCE `prov-ca-u25-instruction-u25-g-address-0-wrong-1`
+- `obj-u25-courtesy` PROVENANCE `prov-ca-u25-instruction-u25-g-courtesy-0-feedback`
+- `obj-u25-courtesy` PROVENANCE `prov-ca-u25-instruction-u25-g-courtesy-0-prompt`
+- `obj-u25-courtesy` PROVENANCE `prov-ca-u25-instruction-u25-g-courtesy-0-wrong-0`
+- `obj-u25-courtesy` PROVENANCE `prov-ca-u25-instruction-u25-g-courtesy-0-wrong-1`
+- `obj-u25-diminutives` PROVENANCE `prov-ca-u25-instruction-u25-g-diminutives-0-feedback`
+- `obj-u25-diminutives` PROVENANCE `prov-ca-u25-instruction-u25-g-diminutives-0-prompt`
+- `obj-u25-diminutives` PROVENANCE `prov-ca-u25-instruction-u25-g-diminutives-0-wrong-0`
+- `obj-u25-diminutives` PROVENANCE `prov-ca-u25-instruction-u25-g-diminutives-0-wrong-1`
+- `obj-u25-documented-name-form` PROVENANCE `prov-ca-u25-instruction-u25-g-name-form-1-feedback`
+- `obj-u25-documented-name-form` PROVENANCE `prov-ca-u25-instruction-u25-g-name-form-1-prompt`
+- `obj-u25-documented-name-form` PROVENANCE `prov-ca-u25-instruction-u25-g-name-form-1-wrong-0`
+- `obj-u25-documented-name-form` PROVENANCE `prov-ca-u25-instruction-u25-g-name-form-1-wrong-1`
+- `obj-u25-name-question` PROVENANCE `prov-ca-u25-instruction-u25-g-name-question-0-feedback`
+- `obj-u25-name-question` PROVENANCE `prov-ca-u25-instruction-u25-g-name-question-0-prompt`
+- `obj-u25-name-question` PROVENANCE `prov-ca-u25-instruction-u25-g-name-question-0-wrong-0`
+- `obj-u25-name-question` PROVENANCE `prov-ca-u25-instruction-u25-g-name-question-0-wrong-1`
+- `obj-u25-name-structure` PROVENANCE `prov-ca-u25-instruction-u25-g-name-structure-0-feedback`
+- `obj-u25-name-structure` PROVENANCE `prov-ca-u25-instruction-u25-g-name-structure-0-prompt`
+- `obj-u25-name-structure` PROVENANCE `prov-ca-u25-instruction-u25-g-name-structure-0-wrong-0`
+- `obj-u25-name-structure` PROVENANCE `prov-ca-u25-instruction-u25-g-name-structure-0-wrong-1`
+- `obj-u25-name-structure` PROVENANCE `prov-ca-u25-instruction-u25-g-name-structure-0-wrong-2`
+- `obj-u25-nickname-rule` PROVENANCE `prov-ca-u25-instruction-u25-g-nickname-rule-0-feedback`
+- `obj-u25-nickname-rule` PROVENANCE `prov-ca-u25-instruction-u25-g-nickname-rule-0-prompt`
+- `obj-u25-nickname-rule` PROVENANCE `prov-ca-u25-instruction-u25-g-nickname-rule-0-wrong-0`
+- `obj-u25-nickname-rule` PROVENANCE `prov-ca-u25-instruction-u25-g-nickname-rule-0-wrong-1`
+- `obj-u25-address` PROVENANCE `prov-ca-u25-instruction-u25-i-address-1-feedback`
+- `obj-u25-address` PROVENANCE `prov-ca-u25-instruction-u25-i-address-1-wrong-0`
+- `obj-u25-address` PROVENANCE `prov-ca-u25-instruction-u25-i-address-2-feedback`
+- `obj-u25-address` PROVENANCE `prov-ca-u25-instruction-u25-i-address-3-feedback`
+- `obj-u25-address` PROVENANCE `prov-ca-u25-instruction-u25-i-address-3-prompt`
+- `obj-u25-address` PROVENANCE `prov-ca-u25-instruction-u25-i-address-3-wrong-0`
+- `obj-u25-address` PROVENANCE `prov-ca-u25-instruction-u25-i-address-3-wrong-1`
+- `obj-u25-courtesy` PROVENANCE `prov-ca-u25-instruction-u25-i-courtesy-1-feedback`
+- `obj-u25-courtesy` PROVENANCE `prov-ca-u25-instruction-u25-i-courtesy-1-wrong-0`
+- `obj-u25-courtesy` PROVENANCE `prov-ca-u25-instruction-u25-i-courtesy-1-wrong-1`
+- `obj-u25-courtesy` PROVENANCE `prov-ca-u25-instruction-u25-i-courtesy-2-feedback`
+- `obj-u25-courtesy` PROVENANCE `prov-ca-u25-instruction-u25-i-courtesy-2-wrong-0`
+- `obj-u25-courtesy` PROVENANCE `prov-ca-u25-instruction-u25-i-courtesy-2-wrong-1`
+- `obj-u25-diminutives` PROVENANCE `prov-ca-u25-instruction-u25-i-diminutives-1-feedback`
+- `obj-u25-diminutives` PROVENANCE `prov-ca-u25-instruction-u25-i-diminutives-1-wrong-0`
+- `obj-u25-diminutives` PROVENANCE `prov-ca-u25-instruction-u25-i-diminutives-2-feedback`
+- `obj-u25-documented-name-form` PROVENANCE `prov-ca-u25-instruction-u25-i-name-form-1-feedback`
+- `obj-u25-documented-name-form` PROVENANCE `prov-ca-u25-instruction-u25-i-name-form-1-prompt`
+- `obj-u25-documented-name-form` PROVENANCE `prov-ca-u25-instruction-u25-i-name-form-1-wrong-0`
+- `obj-u25-documented-name-form` PROVENANCE `prov-ca-u25-instruction-u25-i-name-form-2-feedback`
+- `obj-u25-documented-name-form` PROVENANCE `prov-ca-u25-instruction-u25-i-name-form-2-prompt`
+- `obj-u25-documented-name-form` PROVENANCE `prov-ca-u25-instruction-u25-i-name-form-3-feedback`
+- `obj-u25-documented-name-form` PROVENANCE `prov-ca-u25-instruction-u25-i-name-form-3-wrong-0`
+- `obj-u25-name-question` PROVENANCE `prov-ca-u25-instruction-u25-i-name-question-1-feedback`
+- `obj-u25-name-question` PROVENANCE `prov-ca-u25-instruction-u25-i-name-question-1-wrong-0`
+- `obj-u25-name-question` PROVENANCE `prov-ca-u25-instruction-u25-i-name-question-2-feedback`
+- `obj-u25-name-question` PROVENANCE `prov-ca-u25-instruction-u25-i-name-question-2-prompt`
+- `obj-u25-name-question` PROVENANCE `prov-ca-u25-instruction-u25-i-name-question-2-wrong-0`
+- `obj-u25-name-question` PROVENANCE `prov-ca-u25-instruction-u25-i-name-question-2-wrong-1`
+- `obj-u25-name-structure` PROVENANCE `prov-ca-u25-instruction-u25-i-name-structure-1-feedback`
+- `obj-u25-name-structure` PROVENANCE `prov-ca-u25-instruction-u25-i-name-structure-1-wrong-0`
+- `obj-u25-name-structure` PROVENANCE `prov-ca-u25-instruction-u25-i-name-structure-1-wrong-2`
+- `obj-u25-name-structure` PROVENANCE `prov-ca-u25-instruction-u25-i-name-structure-2-feedback`
+- `obj-u25-nickname-rule` PROVENANCE `prov-ca-u25-instruction-u25-i-nickname-rule-1-feedback`
+- `obj-u25-nickname-rule` PROVENANCE `prov-ca-u25-instruction-u25-i-nickname-rule-1-wrong-0`
+- `obj-u25-nickname-rule` PROVENANCE `prov-ca-u25-instruction-u25-i-nickname-rule-2-feedback`
 - `obj-u25-address` PROVENANCE `prov-ex-u25-address-0-en`
 - `obj-u25-address` PROVENANCE `prov-ex-u25-address-0-ru`
 - `obj-u25-address` PROVENANCE `prov-ex-u25-address-1-en`

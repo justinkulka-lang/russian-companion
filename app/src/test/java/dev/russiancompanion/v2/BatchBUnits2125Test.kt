@@ -773,7 +773,7 @@ class BatchBUnits2125Test {
         assertEquals(2, checks.count { it.assessment?.independent == true })
         assertTrue(checks.all { it.assessment!!.testedFeature == "DIMINUTIVE_FORM_CLASSIFICATION" })
         assertTrue(checks.all { BatchBSources.diminutiveClassificationLabel(it.answer) })
-        assertTrue(checks.all { it.prompt.contains("classifies") })
+        assertTrue(checks.all { Regex("(?i)\\bclassif(?:ies|ication)\\b").containsMatchIn(it.prompt) })
         assertTrue(pack.sourceCapabilities.none { it.supportedClaim == "productive-diminutive" })
         assertFalse(V2Validator.unresolvedRequiredSourceCapabilities(pack, 25).any { it.claim == "productive-diminutive" || it.claim == "documented-name-form" })
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(25)!!.readiness)

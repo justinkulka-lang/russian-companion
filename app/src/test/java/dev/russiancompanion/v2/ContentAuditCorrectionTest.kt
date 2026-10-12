@@ -409,7 +409,9 @@ class ContentAuditCorrectionTest {
         assertTrue(explanation.contains("same form in the genitive and accusative"))
         assertTrue(explanation.contains("sentence determines the case"))
         val remediation = session.steps.single { it.id == "u24-st-rem-stand-ins" }
-        assertEquals(explanation, remediation.body)
+        val teaching = session.steps.filter { it.kind == "TEACH" }
+        assertEquals(teaching.joinToString("\n\n") { it.body }, remediation.body)
+        assertEquals(teaching.flatMap { it.exampleIds }.distinct(), remediation.exampleIds)
         assertTrue(remediation.exampleIds.contains(example.id))
         val guidedIndex = session.steps.indexOfFirst { it.kind == "GUIDED" }
         assertTrue(session.steps.take(guidedIndex).count { it.kind == "TEACH" } == 3)
@@ -423,19 +425,23 @@ class ContentAuditCorrectionTest {
         val pack = pack()
         val unit = pack.unit(25)!!
         val session = unit.sessions.single { it.id == "u25-s-courtesy" }
-        val worked = session.steps.single { it.id == "u25-st-teach-courtesy-3" }
+        val teaching = session.steps.filter { it.kind == "TEACH" }
+        val worked = session.steps.single { it.id == "u25-st-teach-courtesy-2" }
         val guidedIndex = session.steps.indexOfFirst { it.kind == "GUIDED" }
         assertTrue(session.steps.indexOf(worked) < guidedIndex)
         assertTrue(session.steps.drop(guidedIndex).none { it.kind == "TEACH" })
         val corrected = "Извини́те is the polite or plural form. The familiar singular is Извини́."
-        assertEquals(corrected, worked.body)
+        assertTrue(worked.body.contains("Извини́те means excuse me with polite or plural address"))
+        assertTrue(worked.body.contains("Извини́ is the familiar singular form"))
         val remediation = pack.step("u25-st-rem-courtesy")!!.second
-        assertEquals(corrected, remediation.body)
+        assertEquals(teaching.joinToString("\n\n") { it.body }, remediation.body)
+        assertEquals(teaching.flatMap { it.exampleIds }.distinct(), remediation.exampleIds)
         assertEquals(setOf("ex-u25-courtesy-0", "ex-u25-courtesy-1", "ex-u25-courtesy-2"), remediation.exampleIds.toSet())
         val guided = pack.item("u25-g-courtesy-0")!!
         assertEquals("Пожа́луйста", guided.answer)
-        assertEquals(corrected, guided.distractorRationales[2])
-        assertEquals(corrected, guided.assessment!!.distractorDifference[2])
+        assertTrue(guided.distractorRationales[2].contains(corrected))
+        assertTrue(guided.distractorRationales[2].contains("Извини́те"))
+        assertEquals(guided.distractorRationales[2], guided.assessment!!.distractorDifference[2])
         assertEquals("excuse me, polite or plural", pack.item("u25-i-courtesy-2")!!.answer)
         assertTrue(pack.provenanceRecords.any {
             it.unitNumber == 25 && it.objectiveId == "obj-u25-courtesy" && it.shippedText == corrected

@@ -316,7 +316,7 @@ class BatchECapabilityResearchTest {
         val pack = loadCurriculumPack(root)
         val model = reconcileCurriculumReadiness(root, pack)
         val candidate = readAcceptanceCandidate(root)
-        assertEquals("0aaffcd83960764c388d4310ee07e589a8fe09e6de69f28ba6cfe6994c011a7b", model.packContentReviewDigest)
+        assertEquals("ba8b4c83a9216302a8c193bbffefaee67f228cb37572ed9c3dce154dc2fcbca8", model.packContentReviewDigest)
         assertEquals(candidate?.sourceDigest, model.repositorySourceDigest)
         assertEquals(model.repositorySourceDigest, computeReleaseSourceDigest(root))
         assertEquals("NOT_APPROVED", model.publicRelease)
@@ -339,7 +339,7 @@ class BatchECapabilityResearchTest {
             17 to "6172c2a9be50c4b3c79b962dc5f9b055f8d2d267d3a6a8627a3e9805e4fc8cca",
             23 to "bf0f8f30cb9ba46bf6b651e9fa266ef5c0e95fe7fb1636c0d2c28183fe4da60d",
             24 to "6c5760946172cd7567ed5abf909772a9a5e43009b5bf2b1c90717b7a98bff486",
-            25 to "4f6aa3777c7e6b3c8b57932d77a4ce6073b8523a00922e1e28bbd286d2bed669",
+            25 to "0135b723110314ccf313b5f0a267a4c1354a12bc02f977dbb0ef0237c107f1f9",
             26 to "64812803d45e4bad57dca03ad3622e809001a8a84435a218a85c0be58bdc642c",
             27 to "7f9490a90ed32877a1a8f67fd081dbadc6ee2b7a78eda523aac4764248530d0e",
             28 to "e979faa95a8b8acf8e2d03cce0760f24953b652da2d4f663ce1a169342593312",
@@ -359,16 +359,16 @@ class BatchECapabilityResearchTest {
             30 to "97f4c8beeb1d0e6827b94bedc1e379381c763c2c3522013890b75802630440a2",
         )
         val reviewPackages = mapOf(
-            7 to "26e439d58d10acf83ba43f9ca0b5e77b054017e91c3eeafb44d82c7eb319072c",
-            17 to "c5afa8ed31e48cb51d4bf693369cdcfadd9401eb199e448209262c78ff57d6da",
-            23 to "c8913ac1793df9a2f52fd1e1ef8d396f54d9e23c5a656d7c4a890461550c394e",
-            24 to "b99c9c935116c050b816a53c51477c5e949ce5a0d4ca4db42ad9485a479a0c6f",
-            25 to "e517adbfd86dc4912021aa79303afabef4ba159f640d0c29cfac888a9ed1271d",
-            26 to "4a3cd7903b3a48bed8cc4d8ecc1b7d6c150ac4a57480a91cf23c8fa8b33a6b01",
-            27 to "93ecc8afb9427fd271fd94445af3a71d682c15dae3431444d27e65bfa15292f4",
-            28 to "149587dddcc92c0f02b44bc2fc46c07ffedfef826a355e4f3652f5117176d20d",
-            29 to "bdd04e37f62f79ce4666d592e5e56bf4a9706c9954c8de0efb5f3ba4f23865b6",
-            30 to "38acbeba87ee0aa4e50339408ee4a4aac9de86dce1184d600b58abdb892dd015",
+            7 to "bbb837344e541269d3bcd55e5b22d35d4c844683088b5712e4919726cf6ddd16",
+            17 to "5d6891f2f4e3390580f3b23ab55a79df2b1f925d5b9a7cf2f033159a40001f33",
+            23 to "97e5c37b2f17940c1e9a939c2ee052460a8ab654988ec7f4afa284437ef41527",
+            24 to "005332ac20f0d9212d0f70e12b9b71dc0365e5ea198e13c907c840f15dac8d8e",
+            25 to "75bf81817dde0a025fe3bd8e10201b7b897f986ed352d9e306cd353d56508d60",
+            26 to "9fad6f9a9251d56ba02da67e89b212c00c2fd1a3781743e9288aa737fac27cd6",
+            27 to "bcdc1394d2d9aba3ae490b7ed263bdcf9a34567be5baa5755acf3de6a3eb5380",
+            28 to "bb3292fbe5fb218e394f50b2783e7ff1f8eddebc3ecb56cfeb0c534f39118cbb",
+            29 to "ac77b25c3d5a93a4977a5e3c73aa6e6afc8e4f8c0ecdbc325f7be773999821cb",
+            30 to "1e938d5930ade7e8fc2b4e59afed56f686bfeca93380dd721f6f5b1f529ab4de",
         )
         (content.keys).forEach { number ->
             val row = model.units.single { it.unitNumber == number }
