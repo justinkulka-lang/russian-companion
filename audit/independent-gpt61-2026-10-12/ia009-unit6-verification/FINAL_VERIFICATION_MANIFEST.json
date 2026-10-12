@@ -1,0 +1,168 @@
+{
+  "verifiedRepositoryCommit": "6dadbf6d5f06dc9c4c34a8e07bf64606e84dbbff",
+  "implementationCommit": "4e5e7adc8b9cfa96024e6b8c9c9db18d260a9634",
+  "command": "bash audit/independent-gpt61-2026-10-12/ia009-unit6-verification/verify.sh",
+  "expandedScript": "set -e\ncd /workspace/russian-companion\nsource /workspace/setup/android-env.sh\n./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*Unit6FeedbackCorrectionTest' --tests '*V2RebuildTest.structuralMappingSafeguardsRejectIncompleteOrInventedRecords' --tests '*UnitReviewPipelineTest.committedUnitPackagesMatchTheGenerator' --tests '*CurriculumReadinessReconciliationTest.committedReportsMatchTheGeneratorAndStayByteIdentical' --tests '*OwnerGovernanceDecisionTest.preparationManifestBindsFactsAndDoesNotPassAFinalAudit' --tests '*GapClosureDossierTest.dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease' --tests '*ReleaseSourceDigestTest.committedCandidateRecordsTheCurrentSourceDigestAndIdentity' --tests '*BatchECapabilityResearchTest.digestsGovernanceAndLaterUnitsStayUnchanged' --tests '*Units610SourceIntakeTest.earlierUnitDigestsStayPutAndLaterUnitsStayIsolated' --tests '*Units610SourceIntakeTest.unitsSixThroughTenStayReviewPendingAndSourceBound' --tests '*Units610SourceIntakeTest.retainedSourceBytesMatchImmutableRevisions' compileDebugSources lintDebug verifyReleaseGateAttachment --max-workers=4 --console=plain\n",
+  "workingDirectory": "/workspace/russian-companion",
+  "exitCode": 0,
+  "scope": "FOCUSED_NOT_COMPLETE_SUITE",
+  "classes": [
+    {
+      "className": "dev.russiancompanion.release.ReleaseSourceDigestTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "committedCandidateRecordsTheCurrentSourceDigestAndIdentity"
+      ],
+      "timestamp": "2026-10-12T22:57:47.717Z",
+      "sha256": "b4c90c7d27abdb0d05679fc01ef153f44dcfe19762d5983356450225306bf34b"
+    },
+    {
+      "className": "dev.russiancompanion.v2.BatchECapabilityResearchTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "digestsGovernanceAndLaterUnitsStayUnchanged"
+      ],
+      "timestamp": "2026-10-12T22:57:49.288Z",
+      "sha256": "825dab3c54d7e77b0c7714c111d9ab908f0996952ec57c06f21ea135d2935af2"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit6FeedbackCorrectionTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "historicalGenericFeedbackCreditIsRetainedButStale",
+        "feedbackExplainsPossessorRolesPersonNumberAndDestinationCase",
+        "wrongPossessiveSelectionDisplaysThePossessorExplanation"
+      ],
+      "timestamp": "2026-10-12T22:57:48.482Z",
+      "sha256": "afa54dbe5c1f97eb14ef9c1329e97813f02fb7d703249d859652c87387c54dc3"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Units610SourceIntakeTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "unitsSixThroughTenStayReviewPendingAndSourceBound",
+        "retainedSourceBytesMatchImmutableRevisions",
+        "earlierUnitDigestsStayPutAndLaterUnitsStayIsolated"
+      ],
+      "timestamp": "2026-10-12T22:58:58.222Z",
+      "sha256": "cf364d72ce71f9f849328d01e4dd42d47b8dbeb7bcf0bad2e175dc91d5555733"
+    },
+    {
+      "className": "dev.russiancompanion.v2.V2RebuildTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "structuralMappingSafeguardsRejectIncompleteOrInventedRecords"
+      ],
+      "timestamp": "2026-10-12T22:57:48.694Z",
+      "sha256": "0473d2ed4a84e0b0da98f71bb894d344cd5128a61d3c056bdcc478dea06215fa"
+    },
+    {
+      "className": "dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "committedReportsMatchTheGeneratorAndStayByteIdentical"
+      ],
+      "timestamp": "2026-10-12T22:58:23.067Z",
+      "sha256": "059378b37250fa41c0e4634c2ea0bd727b3c6db0ccd0827e2eadd40f46466d7d"
+    },
+    {
+      "className": "dev.russiancompanion.v2.audit.GapClosureDossierTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease"
+      ],
+      "timestamp": "2026-10-12T22:59:02.908Z",
+      "sha256": "2cf39faeac13eaa62347ff211b85c629b8d958e79ae09d6c25beb9b080bb2626"
+    },
+    {
+      "className": "dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "preparationManifestBindsFactsAndDoesNotPassAFinalAudit"
+      ],
+      "timestamp": "2026-10-12T22:59:42.379Z",
+      "sha256": "58980cfbbdaaed8f5b85a1988b33390d912decf42ee4382f7e56675b954113a4"
+    },
+    {
+      "className": "dev.russiancompanion.v2.review.UnitReviewPipelineTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "committedUnitPackagesMatchTheGenerator"
+      ],
+      "timestamp": "2026-10-12T22:59:42.317Z",
+      "sha256": "b87a7afd9ec0ac752395d8fe5cf59e40e06d52a457d5a887d7a1c9411dc240f6"
+    }
+  ],
+  "totals": {
+    "tests": 13,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "passed": 13,
+  "lint": {
+    "status": "PASSED",
+    "severities": {
+      "Warning": 20,
+      "Hint": 1
+    },
+    "sha256": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6",
+    "task": "> Task :app:lintDebug"
+  },
+  "compilation": "> Task :app:compileDebugSources UP-TO-DATE; production/test compilation in preceding focused/generator runs",
+  "releaseGateAttachment": "> Task :app:verifyReleaseGateAttachment; PASSED",
+  "excludedExporters": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  },
+  "initScriptSha256": {
+    "cloud-validation.gradle": "21c6a0ee2e97cf83c472513ac31c3d2d456e461185384e9b5e58c0fed298d123",
+    "parallel-tests.gradle": "2366eb867708f83db10b39080abff1b45d2e347bab15ce2ec1c95c3d31cf7ff3"
+  },
+  "logSha256": "3f3f0440da3001cc3d26372d1135e4612f04fad1c495b2637c6eee1141e8e82b",
+  "apk": {
+    "status": "NOT_ASSEMBLED_OR_SIGNED",
+    "identity": "NOT_RECORDED",
+    "signature": "NOT_RECORDED",
+    "historicalMainArtifactIsNotCurrentCandidate": true,
+    "historicalRecord": "audit/content-corrections/cloud-environment-2026-10-12/MAIN_HISTORICAL_VERIFICATION.json"
+  },
+  "historicalScope": "Main ff539220:579 source annotations,16 exporters excluded,563 reported/562 passed/one skipped. PR64 baseline420f41ff:691 source annotations (+112), execution claim unverified. These13 selected tests are not a complete suite.",
+  "priorScopes": "Baseline one-test negative failed as expected. Intermediate three-test scope had two passes/one production-validator failure. Refined three-test scope passed before packet regeneration. Overlapping runs are not summed.",
+  "acceptanceOrder": [
+    "FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
+    "PHYSICAL_DEVICE_ACCEPTANCE_LAST"
+  ],
+  "physicalDeviceAcceptance": "OUTSTANDING_DEFERRED_UNTIL_AFTER_FINAL_AUDIT",
+  "semanticAcceptance": false,
+  "publicRelease": "NOT_APPROVED"
+}
