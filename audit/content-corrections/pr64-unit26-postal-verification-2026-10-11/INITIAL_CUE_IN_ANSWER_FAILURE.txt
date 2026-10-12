@@ -1,0 +1,28 @@
+
+Thanks for using JUnit! Support its development at https://junit.org/sponsoring
+
+
+Failures (1):
+  JUnit Vintage:Unit26PostalInstructionTest:exactPostalIntakeRejectsHistoricalUniversalityAndUnboundApplications
+    MethodSource [className = 'dev.russiancompanion.v2.Unit26PostalInstructionTest', methodName = 'exactPostalIntakeRejectsHistoricalUniversalityAndUnboundApplications', methodParameterTypes = '']
+    => java.lang.AssertionError
+       org.junit.Assert.fail(Assert.java:87)
+       org.junit.Assert.assertTrue(Assert.java:42)
+       org.junit.Assert.assertTrue(Assert.java:53)
+       dev.russiancompanion.v2.Unit26PostalInstructionTest.exactPostalIntakeRejectsHistoricalUniversalityAndUnboundApplications(Unit26PostalInstructionTest.kt:21)
+       java.base/java.lang.reflect.Method.invoke(Method.java:569)
+
+Test run finished after 1252 ms
+[         4 containers found      ]
+[         0 containers skipped    ]
+[         4 containers started    ]
+[         0 containers aborted    ]
+[         4 containers successful ]
+[         0 containers failed     ]
+[         3 tests found           ]
+[         0 tests skipped         ]
+[         3 tests started         ]
+[         0 tests aborted         ]
+[         2 tests successful      ]
+[         1 tests failed          ]
+

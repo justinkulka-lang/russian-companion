@@ -1177,6 +1177,9 @@ internal object V2Validator {
         if (capability.supportedClaim == "word-order" && capability.sourceHash == "30e7e08a32bd5ca619593ff841bc22fff849a3ce2fc516d1f0cf67ea0c8e5bb6") {
             errors += "Source capability ${capability.id} historical word-order labels require contextual application correction"
         }
+        if (capability.supportedClaim == "postal-address" && capability.sourceHash == "546e52bec4a95e4454791c68858a19e6d713d3218d6dde3f43c041fbd3f83a97") {
+            errors += "Source capability ${capability.id} retired universal postal-order intake requires the exact contextual correction"
+        }
         val binding = REQUIRED_SOURCE_CAPABILITIES[capability.unitNumber].orEmpty().firstOrNull {
             it.objectiveId == capability.objectiveId && it.claim == capability.supportedClaim
         }

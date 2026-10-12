@@ -3,7 +3,7 @@
   "purpose": "Current evidence for the retained preliminary audit targets; no semantic closure or approval",
   "inputs": {
     "curriculumPath": "app/src/main/assets/content/v2-curriculum.json",
-    "curriculumFileSha256": "59d08619b95590bfed15a188719b01efc64be87fe47eb1ee916933709485e6fd",
+    "curriculumFileSha256": "3a3434192dd7cedf9f2faf6f82b6330a1effd2a005d5d65cf8d5ac220c03ac5f",
     "targetSnapshotPath": "audit/content-corrections/ITEM_TARGET_RECONCILIATION_PENDING.csv",
     "targetSnapshotFileSha256": "ba574c8a201baf52614b4cbdc35f9b3981e7a3de727df77e5c5f8ec827dce12f"
   },

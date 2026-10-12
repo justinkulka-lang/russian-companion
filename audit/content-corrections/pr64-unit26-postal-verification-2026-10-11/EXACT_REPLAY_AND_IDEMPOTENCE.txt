@@ -1,0 +1,1 @@
+PASS exact asset/trusted-pin replay and byte-idempotence. SHA256 3a3434192dd7cedf9f2faf6f82b6330a1effd2a005d5d65cf8d5ac220c03ac5f

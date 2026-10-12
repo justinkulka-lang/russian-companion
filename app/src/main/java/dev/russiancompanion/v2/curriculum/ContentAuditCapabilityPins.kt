@@ -5,6 +5,7 @@ internal object ContentAuditCapabilityPins {
     data class Pin(val id: String, val recordId: String, val hash: String, val unit: Int,
         val objective: String, val claim: String, val features: Set<String>)
     val all = listOf(
+        Pin("cap-obj-u26-postal-address", "ca-corrected-capability:cap-obj-u26-postal-address", "494257b8f11671d1643aefc7533fbb374966c84bc8a399dadfbe7973403d69f1", 26, "obj-u26-postal-address", "postal-address", setOf("ADDRESSEE_ROLE", "APARTMENT_CONDITIONAL", "COMPLETE_GOVERNED_ADDRESS", "COUNTRY_COMPONENT", "FEDERAL_CITY_WITHOUT_OBLAST", "FOUR_COMPONENT_INCOMPLETE", "POST_OFFICE_BOX_CONDITIONAL", "REGIONAL_UNIT_AS_APPLICABLE", "REJECTED_GREETING", "SIX_DIGIT_POSTCODE", "STREET_AND_PREMISES")),
         Pin("cap-obj-u26-word-order", "ca-corrected-capability:cap-obj-u26-word-order", "763d91eb12ba1c8ef6553d9c700f800fb8ccfb93bdf41ff5a6ae83a19d1fd94b", 26, "obj-u26-word-order", "word-order", setOf("WORD_ORDER")),
         Pin("cap-obj-u26-letter-writing", "ca-corrected-capability:cap-obj-u26-letter-writing", "9eb8191a1f3f63e03e646fb305215ba8401e5a1c31ae1f6d2aa79f670ed6af3c", 26, "obj-u26-letter-writing", "letter-writing", setOf("LETTER_ADDRESS_LIMIT", "LETTER_STRUCTURE")),
         Pin("cap-u20-motion-po-setting-out", "ca-corrected-capability:cap-u20-motion-po-setting-out", "3dad37f220e468c450c6500ebb4db6c92fe4c7bd0a51adae5b47a76f7730df0e", 20, "obj-u20-motion", "motion-po-setting-out", setOf("MOTION_SETTING_OUT")),

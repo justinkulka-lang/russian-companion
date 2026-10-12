@@ -87,6 +87,20 @@ internal fun correctedCapabilityDefects(pack: V2CurriculumPack, cap: V2SourceCap
                 item.prompt.isBlank() || item.prompt !in cap.exactSpan
         }) fail("is missing its exact guided and independent contextual word-order applications")
     }
+    if (pin.unit == 26 && pin.claim == "postal-address") {
+        val guided = practiced.mapNotNull(pack::item)
+        val checks = guided + independent
+        if (guided.size != 1 || guided.singleOrNull()?.assessment?.testedFeature != "LOCALITY_ROLE" ||
+            independent.size != 11 || independent.mapNotNull { it.assessment?.testedFeature }.toSet() != pin.features ||
+            checks.any { item -> item.assessment?.relationKind != "STATED_APPLICATION" ||
+                item.assessment.relationParticipantIds.isEmpty() || item.assessment.relationParticipantIds.any { it !in hostIds } ||
+                item.prompt.isBlank() || item.prompt !in cap.exactSpan }) {
+            fail("is missing its exact guided and independent contextual postal applications")
+        }
+        if (checks.map { it.prompt }.distinct().size != checks.size) {
+            fail("duplicate assessment checks do not clear postal-address")
+        }
+    }
     (objective.instructionStepIds + objective.remediationStepIds).forEach { id ->
         val step = pack.step(id)?.second
         if (step == null || step.body.isBlank() || step.body !in cap.exactSpan) fail("has an unbound teaching or remediation step $id")

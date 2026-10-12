@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "curriculumFileSha256": "59d08619b95590bfed15a188719b01efc64be87fe47eb1ee916933709485e6fd",
-  "candidateCount": 75,
+  "curriculumFileSha256": "3a3434192dd7cedf9f2faf6f82b6330a1effd2a005d5d65cf8d5ac220c03ac5f",
+  "candidateCount": 74,
   "affectedUnits": [
     3,
     4,
@@ -16,7 +16,6 @@
     13,
     14,
     15,
-    26,
     27,
     28,
     29,
@@ -842,18 +841,6 @@
       "laterTeachingStepIds": [
         "u15-st-teach-aspect-consolidate-2",
         "u15-st-teach-aspect-consolidate-3"
-      ],
-      "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
-    },
-    {
-      "unitNumber": 26,
-      "sessionId": "u26-s-gap-postal-address",
-      "guidedStepId": "u26-postal-guided",
-      "guidedItemIds": [
-        "u26-g-postal-1"
-      ],
-      "laterTeachingStepIds": [
-        "u26-postal-teach-2"
       ],
       "disposition": "CUE_LEVEL_SEQUENCE_REVIEW_REQUIRED"
     },
