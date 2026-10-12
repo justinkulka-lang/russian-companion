@@ -1,16 +1,17 @@
 {
   "handoff": {
     "filename": "Russian_Companion_Codex_Handoff_2026-10-12.zip",
-    "status": "NOT_AVAILABLE",
-    "sha256": null,
-    "completeResumePromptRead": false,
-    "originalAuditAndFourHistoricalCsvImport": "BLOCKED_PENDING_ARCHIVE_AND_DEDUPLICATION"
+    "status": "RECONSTRUCTED_HANDOFF_RECEIVED_AND_VERIFIED",
+    "sha256": "046f66597140b74bea0d92511abe7898b507f9e441db512ad1797524d4e28124",
+    "completeResumePromptRead": true,
+    "originalAuditAndFourHistoricalCsvImport": "BLOCKED; reconstructed handoff does not recover missing originals",
+    "sourceCommit": "b1218041cce417d072d8f86f97b973aa08cfaa31"
   },
   "privateReference": {
     "filename": "Private_Penguin_Reference.pdf",
-    "status": "NOT_AVAILABLE",
-    "expectedSha256": null,
-    "expectedHashSource": "must be recovered from supplied handoff or independently supplied owner metadata",
+    "status": "USER_ATTACHMENT_RECEIVED; OUTSIDE_CHECKOUT",
+    "expectedSha256": "0c441ffd8855b292922a40b10935d5ffb1b088b7118acfcc1856e259dc01867a",
+    "expectedHashSource": "new user attachment pin established 2026-10-12; historical expected hash unavailable",
     "obtainAs": "separate private attachment each session",
     "privateWorkingLocation": "/tmp/private-russian-companion/",
     "mustNotEnter": [
@@ -20,7 +21,10 @@
       "public logs",
       "review packets",
       "screenshots"
-    ]
+    ],
+    "independentHistoricalExpectedSha256": null,
+    "observedSha256": "0c441ffd8855b292922a40b10935d5ffb1b088b7118acfcc1856e259dc01867a",
+    "bytes": 13572361
   },
   "existingEvidence": {
     "path": "audit/content-corrections/ITEM_TARGET_RECONCILIATION_PENDING.csv",
