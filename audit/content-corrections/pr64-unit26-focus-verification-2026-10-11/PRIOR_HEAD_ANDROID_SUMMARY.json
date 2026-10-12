@@ -1,0 +1,61 @@
+{
+  "head": "0a8dcea03bac1c4e774cea56b7bd980bd992a05d",
+  "run": 38190433379,
+  "job": 114621838103,
+  "artifact": 11722584444,
+  "artifactSha256": "fc3ee57f201edfb1c20b9bed8c2ed52da3cc7b020a7b63c4a305c2b2a8ef088e",
+  "tests": 677,
+  "failed": [
+    {
+      "className": "dev.russiancompanion.v2.Units2125SourceIntakeTest",
+      "method": "datedNamesClaimsAndLinkedAudioStayOutOfLearnerContent",
+      "status": "FAIL",
+      "message": "java.lang.AssertionError: u25-st-teach-courtesy-3 contains listen"
+    }
+  ],
+  "skipped": 1,
+  "selected": [
+    {
+      "className": "dev.russiancompanion.v2.RuntimeCorrectionTest",
+      "method": "unitOneSequenceKeepsDraftsThroughRemediationResumeAndAdvancement",
+      "status": "PASS",
+      "message": null
+    },
+    {
+      "className": "dev.russiancompanion.v2.SourceTextPoolTest",
+      "method": "pythonAndKotlinExpansionRestoreTheSameRecordsAndTypedPack",
+      "status": "PASS",
+      "message": null
+    },
+    {
+      "className": "dev.russiancompanion.v2.SourceTextPoolTest",
+      "method": "poolingDoesNotLoosenStrictModelDecodingOrApproveRelease",
+      "status": "PASS",
+      "message": null
+    },
+    {
+      "className": "dev.russiancompanion.v2.SourceTextPoolTest",
+      "method": "corruptMissingConflictingAndUnboundPoolEvidenceIsRejected",
+      "status": "PASS",
+      "message": null
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit26LetterInstructionTest",
+      "method": "completeFrameworkPrecedesPracticeAndReturnsAfterAMiss",
+      "status": "PASS",
+      "message": null
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit26LetterInstructionTest",
+      "method": "exactResearchAdmissionRejectsLegacyCapabilityAndForgery",
+      "status": "PASS",
+      "message": null
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit26LetterInstructionTest",
+      "method": "suppliedOrganizationAndGreetingInferenceReplaceUniversalKeys",
+      "status": "PASS",
+      "message": null
+    }
+  ]
+}

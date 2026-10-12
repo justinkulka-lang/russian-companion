@@ -82,10 +82,11 @@ class Units2125SourceIntakeTest {
         "Creativity in baby-naming",
         ".ogg",
         "[[Media:",
-        "listen",
         "good fighter",
         "Lord of the World",
     )
+
+    private val listeningInstruction = Regex("(?i)\\blisten\\b")
 
     private val keywordBlob = (
         "\u0441\u0435\u0431\u044f \u0447\u0442\u043e\u0431\u044b declension of numerals \u043e\u0431\u0430 \u043e\u0431\u0435 " +
@@ -650,6 +651,19 @@ class Units2125SourceIntakeTest {
     }
 
     @Test
+    fun listeningInstructionGuardAllowsListenerNounsButRejectsAudioDirections() {
+        listOf("one listener", "several listeners", "Listeners hear polite address", "Listening stays with the book. No audio is mapped here.").forEach {
+            assertFalse(it, listeningInstruction.containsMatchIn(it))
+        }
+        listOf("listen to the recording", "Listen here", "[[Media:clip.ogg|listen]]").forEach {
+            assertTrue(it, listeningInstruction.containsMatchIn(it))
+        }
+        assertTrue(".ogg" in excludedLearnerText)
+        assertTrue("[[Media:" in excludedLearnerText)
+        assertTrue("don't deserve the title Comrade" in excludedLearnerText)
+    }
+
+    @Test
     fun datedNamesClaimsAndLinkedAudioStayOutOfLearnerContent() {
         val pack = pack()
         val root = repo()
@@ -657,12 +671,14 @@ class Units2125SourceIntakeTest {
             excludedLearnerText.forEach { excluded ->
                 assertFalse("$field contains $excluded", excluded in text)
             }
+            assertFalse("$field contains a listening instruction", listeningInstruction.containsMatchIn(text))
             assertFalse(field, mediaWiki(text))
         }
         pack.provenanceRecords.filter { it.unitNumber in 21..25 }.forEach { record ->
             excludedLearnerText.forEach { excluded ->
                 assertFalse("${record.itemId} ships $excluded", excluded in record.shippedText)
             }
+            assertFalse("${record.itemId} ships a listening instruction", listeningInstruction.containsMatchIn(record.shippedText))
         }
         val names = frozenFile(root, "wikibooks/names-4660786.txt").readText()
         assertTrue(names.contains("don't deserve the title Comrade"))

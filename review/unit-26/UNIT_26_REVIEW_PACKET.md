@@ -11,12 +11,12 @@ Unit 26 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 8641d0e4f07bb8b0d393fca8e088959db43698cf
-- Unit content-review SHA-256: 2f489cf9a83d3697f87a8500cd2446ba5f88ffcd3e77707f81bf4f4122fe1906
+- Curriculum source commit: 7b3574acc58335510def5d8a6c70a26cfdf6ba75
+- Unit content-review SHA-256: f20defdb7d081b696ec378eeb62c4b1ec124203e5c70d49ce2955f492b351ad4
 - Mapping-package SHA-256: c15db22cc82dcfa6c49d6d0e50beea0f90b16dfc4db90777623e99d540790489
-- Pack content-review SHA-256: 8e734423a87e4ddf7ba4d71c376a97750bb8014b3a72d0ff516ea58e167af51f
-- Review-package SHA-256: 17b868d7ffa538c6e80c1a8900fe04d13b5f8359ff4b42be99fd92a0e72b72b1
-- Repository source SHA-256: c57dde2820eeaf9ec14f3325b749dcd08d98bbb48d67d8bdd5f0ddd3c12e9d19
+- Pack content-review SHA-256: ae8635ec33aa598c57e35d84b9b4811c8a08e22e282b99b024bc63f0720c981b
+- Review-package SHA-256: 209887e11419326fb8068f8ec1238f7475d5aee9d91c85e031706ff3f2709756
+- Repository source SHA-256: c62c5e2c90872387c4dc0d7368c46a63de9bc535f566fa6c096fd25af27147fa
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -113,9 +113,9 @@ tutorOptional=true
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 208f8dd7ce2e5a16ecd92f199f5a666d26dd223b27b85a8136b8d60d426f0474
+- Content hash: ef0a4b3c32abc591409c4e0e4dd27541894bece83f4c02c77b15150f6f6a5c39
 
-title=Choose the admitted label for the shown arrangement
+title=Interpret supplied word order in context
 kind=RECOGNITION
 unitNumber=26
 instruction=u26-st-orient,u26-st-teach-word-order-1,u26-st-teach-word-order-2,u26-st-teach-word-order-3,u26-st-teach-word-order-4
@@ -170,9 +170,9 @@ remediation=u26-st-rem-address-notation
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 010fc835ae73650ca793c387944d61561e2fa99ad5a488bdc53b0c3f287c6a45
+- Content hash: fa11b589f12ecb9e721c54540e666d3a79cac5ab32368d0b1071a51cde349c2b
 
-title=Classify the shown form by its admitted series meaning
+title=Distinguish specific unknown, open and speaker-known reference
 kind=RECOGNITION
 unitNumber=26
 instruction=u26-st-orient,u26-st-teach-indefinite-1,u26-st-teach-indefinite-2,u26-st-teach-indefinite-3
@@ -302,12 +302,12 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a0e0c57f9137219ba7b0d29f648431cb23327c99e7d13b9b79c0b4b6a77efd3e
+- Content hash: b1eec9fb60eb4a727df43ad353da899b7d68657389741d5a7e3055351e2f03fc
 
-title=Choose the admitted label for the shown arrangement
+title=Interpret supplied word order in context
 estimatedMinutes=12
 objectives=obj-u26-word-order
-steps=u26-st-teach-word-order-1,u26-st-guided-word-order-1,u26-st-teach-word-order-2,u26-st-teach-word-order-3,u26-st-teach-word-order-4,u26-st-rem-word-order,u26-st-check-word-order
+steps=u26-st-teach-word-order-1,u26-st-teach-word-order-2,u26-st-teach-word-order-3,u26-st-teach-word-order-4,u26-st-guided-word-order-1,u26-st-rem-word-order,u26-st-check-word-order
 
 ### STEP `u26-st-teach-word-order-1`
 
@@ -317,11 +317,11 @@ steps=u26-st-teach-word-order-1,u26-st-guided-word-order-1,u26-st-teach-word-ord
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 314a1de27501f59ccb5fd35f819d72af25db6b89590e66cec4b57e0dd3182513
+- Content hash: 877b8185cb3b95da653a6963e2dd37a091f555dbd4998ffd67e5786be0e1522c
 
 kind=TEACH
-title=Admitted lines
-body=Read the admitted examples on this card.
+title=Separate the event from the focus
+body=В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -331,28 +331,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u26-st-guided-word-order-1`
-
-- Objectives: obj-u26-word-order
-- Sessions: u26-s-word-order
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8fec73e48b04359b19fcd320ce08104c211706fbb4e038c80644770775dd880d
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u26-g-word-order-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u26-st-rem-word-order
-
 ### STEP `u26-st-teach-word-order-2`
 
 - Objectives: obj-u26-word-order
@@ -361,11 +339,11 @@ remediationStepId=u26-st-rem-word-order
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: bd340c0bddd8a285ba1d858104831e0b1fc03c1f0bb6c82bd91998a543e42386
+- Content hash: 23a3d7f100d040ecc56cf280bee7a200171952aec33131408914785475dd35bb
 
 kind=TEACH
-title=Admitted instruction
-body=Word order can express logical stress, and degree of definiteness.
+title=Read a story opening in its stated context
+body=Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -383,11 +361,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c775f72288760267a6847cc58cb007b4ab3ae0acfc91ebbab98fbd36e0fec93d
+- Content hash: 20497263e2bfa387ac9ea9168cbfd03d1cb843de09c16d0cdbcb93e2d3258649
 
 kind=TEACH
-title=Admitted lines
-body=Read the admitted examples on this card.
+title=Recognize a neutral report without inventing a contrast
+body=Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -405,11 +383,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1c965f6167564db95a6b6af52745fc7b077d59830352fff9a1bd4c4ebef5deb8
+- Content hash: a6156b5c8a2ad9477a367070c078a0c7b83f504909bd59ec29af87682cf00c2d
 
 kind=TEACH
-title=Admitted lines
-body=Read the admitted examples on this card.
+title=New and known information require context
+body=В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -419,6 +397,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u26-st-guided-word-order-1`
+
+- Objectives: obj-u26-word-order
+- Sessions: u26-s-word-order
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 728a1c35e31a8786ec7e4cfba0b59a86a398a4e3edd7cbafa6fa0ca7edf7f802
+
+kind=GUIDED
+title=Guided practice
+body=Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
+dominantAction=Continue
+references=
+items=u26-g-word-order-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u26-st-rem-word-order
+
 ### STEP `u26-st-rem-word-order`
 
 - Objectives: obj-u26-word-order
@@ -427,15 +427,21 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 734c90c3a876ca41758bbb4e76da084c640d6a83210dfcdc1323a1c4518a3918
+- Content hash: c630fc75834884d69ca1156af0d4087ce07feec1998c864cbcb046053feac728
 
 kind=REMEDIATE
-title=Remediation
-body=Word order can express logical stress, and degree of definiteness.
+title=Review the full contextual distinction
+body=В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
 dominantAction=Continue
 references=
 items=
-examples=ex-u26-word-order-0,ex-u26-word-order-1
+examples=ex-u26-word-order-0,ex-u26-word-order-1,ex-u26-word-order-2,ex-u26-word-order-3,ex-u26-word-order-4
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -449,11 +455,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e6f8f3fd562ac3804576e7405ae4643343ddccfb49b9e11e2d46a501825767dc
+- Content hash: 042f07fc1021b19583f6f0f27d3841600fee703f4cc4562209d564e94f12edf9
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
 dominantAction=Continue
 references=
 items=u26-i-word-order-1,u26-i-word-order-2
@@ -765,12 +771,12 @@ remediationStepId=u26-st-rem-address-notation
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c52326b8546b836e52c13219ec75f3427b26f7befd02b495316fefdbc0cd940f
+- Content hash: 5ac833d15032fb350abbadab5bcdc2f58979b9321865b0d4c32dc706507865b2
 
-title=Classify the shown form by its admitted series meaning
+title=Distinguish specific unknown, open and speaker-known reference
 estimatedMinutes=12
 objectives=obj-u26-indefinite
-steps=u26-st-teach-indefinite-1,u26-st-guided-indefinite-1,u26-st-teach-indefinite-2,u26-st-teach-indefinite-3,u26-st-rem-indefinite,u26-st-check-indefinite
+steps=u26-st-teach-indefinite-1,u26-st-teach-indefinite-2,u26-st-teach-indefinite-3,u26-st-guided-indefinite-1,u26-st-rem-indefinite,u26-st-check-indefinite
 
 ### STEP `u26-st-teach-indefinite-1`
 
@@ -780,11 +786,11 @@ steps=u26-st-teach-indefinite-1,u26-st-guided-indefinite-1,u26-st-teach-indefini
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c76244b6c15cea605d7e25addbbecdb4b98cff94493abee91a60b320f4cc6182
+- Content hash: 91cc1a0b8c536207e1caa5235674e2647dd2956e30a963e546d7609aa8f77afa
 
 kind=TEACH
-title=Admitted lines
-body=Read the admitted examples on this card. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+title=A specific person whose identity is unknown
+body=В доме действительно кто-то был means that someone really was in the house. The label референтность и неизвестность говорящему describes reference to a particular person whose identity is unknown to the speaker in this supplied use. It does not mean nobody was there. Referential concerns whether a particular entity is intended; it is different from whether the speaker knows that entity's identity.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -794,28 +800,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u26-st-guided-indefinite-1`
-
-- Objectives: obj-u26-indefinite
-- Sessions: u26-s-indefinite
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 2e18836283ed68c8573f9b3e69f232add9634fa66b0794753724e6be810c988a
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u26-g-indefinite-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u26-st-rem-indefinite
-
 ### STEP `u26-st-teach-indefinite-2`
 
 - Objectives: obj-u26-indefinite
@@ -824,11 +808,11 @@ remediationStepId=u26-st-rem-indefinite
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5d0a39dc1dad3c92963874e2dc67e15ef73336f7436a037f3e588ef1690cb052
+- Content hash: c374ecc8f0eeec9dab78125e1d18042261043e4050d1610b112b58a85e83a314
 
 kind=TEACH
-title=Admitted instruction
-body=Местоимение на -то может употребляться также и в значении местоимения на -нибудь
+title=An unspecified alternative is not absence
+body=куда-нибудь is the supplied example of an open, unspecified destination. The label являются нереферентными means non-referential in this classification: no particular fixed destination is selected. An alternative is considered against other possible destinations, as in a future plan, desire or conditional context. This is not the label референтность и неизвестность говорящему for a particular unknown entity, nor референтный денотативный статус слабой определённости for a specific entity known to the speaker. The classification concerns this supplied series/use, not a universal translation of every indefinite form.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -846,11 +830,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 48bb0ce0f67f9a4f3ef135a5882e05d208e8170dc489318fec8193982228e5d8
+- Content hash: 62e8cfeaed040f3ab58a22f9f5cb71f4eff55889a66592a0f4fcbd0f84d2b3a1
 
 kind=TEACH
-title=Admitted lines
-body=Read the admitted examples on this card.
+title=A specific choice known to the speaker, with overlap limits
+body=кое-какие is classified as референтный денотативный статус слабой определённости: weakly definite reference to particular things known to the speaker but not assumed known to the listener. It differs from a particular unknown entity and from an open alternative with no fixed referent. The retained rule Местоимение на -то может употребляться также и в значении местоимения на -нибудь says the first series can also be used with the meaning of the second in some contexts. Do not infer a rigid one-suffix/one-meaning division. These checks classify the supplied forms; broader production and selection need the sentence and discourse context.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -860,6 +844,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u26-st-guided-indefinite-1`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-indefinite
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: e38fd08ce9a588a4c172259994596ed0ddd99beb58de23f0be8e12743de11112
+
+kind=GUIDED
+title=Guided practice
+body=Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
+dominantAction=Continue
+references=
+items=u26-g-indefinite-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u26-st-rem-indefinite
+
 ### STEP `u26-st-rem-indefinite`
 
 - Objectives: obj-u26-indefinite
@@ -868,15 +874,19 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a2fa1c07661fe607e816c1ee1111a17fff08b121ef43c4b64379bb0387c4da8d
+- Content hash: 5a4aadf98eebb8ff3444cbc0227ea2417a966aa6de849af13fb4334be4083202
 
 kind=REMEDIATE
-title=Remediation
-body=Местоимение на -то может употребляться также и в значении местоимения на -нибудь
+title=Review the full contextual distinction
+body=В доме действительно кто-то был means that someone really was in the house. The label референтность и неизвестность говорящему describes reference to a particular person whose identity is unknown to the speaker in this supplied use. It does not mean nobody was there. Referential concerns whether a particular entity is intended; it is different from whether the speaker knows that entity's identity.
+
+куда-нибудь is the supplied example of an open, unspecified destination. The label являются нереферентными means non-referential in this classification: no particular fixed destination is selected. An alternative is considered against other possible destinations, as in a future plan, desire or conditional context. This is not the label референтность и неизвестность говорящему for a particular unknown entity, nor референтный денотативный статус слабой определённости for a specific entity known to the speaker. The classification concerns this supplied series/use, not a universal translation of every indefinite form.
+
+кое-какие is classified as референтный денотативный статус слабой определённости: weakly definite reference to particular things known to the speaker but not assumed known to the listener. It differs from a particular unknown entity and from an open alternative with no fixed referent. The retained rule Местоимение на -то может употребляться также и в значении местоимения на -нибудь says the first series can also be used with the meaning of the second in some contexts. Do not infer a rigid one-suffix/one-meaning division. These checks classify the supplied forms; broader production and selection need the sentence and discourse context.
 dominantAction=Continue
 references=
 items=
-examples=ex-u26-indefinite-0,ex-u26-indefinite-1
+examples=ex-u26-indefinite-0,ex-u26-indefinite-1,ex-u26-indefinite-2
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -890,11 +900,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f6c3b5c006bc6a3f356dccac833a5082d17422c0012d7b635ca6102c933582f4
+- Content hash: 33f37c5882b72f5235c005a285b0484b9058ec50856342e4e5d8008ba41b59c5
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
 dominantAction=Continue
 references=
 items=u26-i-indefinite-1,u26-i-indefinite-2
@@ -1432,16 +1442,16 @@ remediationStepId=
 
 - Objectives: obj-u26-word-order
 - Sessions: u26-s-word-order
-- Source: src-wikipedia-russian-grammar-1369617627
-- Rights: rights-wikipedia-russian-grammar-1369617627
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: ebe374e48161308f5ec2be606499c4cd720461388c57e344add331efb6ba81f0
+- Content hash: 0821a9e835415edab8cab534a61db4ba9c6bd33a7e17f7fddc694f5ec50862ac
 
 kind=LEXICAL
 letterId=
 display=В магазин пошёл я.
-note=To the shop went I
+note=In the supplied context: It was me who went to the shop.
 objectiveId=obj-u26-word-order
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
@@ -1449,16 +1459,16 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 - Objectives: obj-u26-word-order
 - Sessions: u26-s-word-order
-- Source: src-wikipedia-russian-grammar-1369617627
-- Rights: rights-wikipedia-russian-grammar-1369617627
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 647342563a7888ca7cfd4f74271d22c161ccfb79c6c9c88ced6c17d8f4bc9daa
+- Content hash: c2a9273c9e695a0b2b6c61f2d349ad6937eef5492f1e758827f6d001bb756b6a
 
 kind=LEXICAL
 letterId=
 display=Пошёл я в магазин.
-note=Went I to the shop
+note=In the supplied context: I went to the shop, and the story continues.
 objectiveId=obj-u26-word-order
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
@@ -1466,16 +1476,16 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 - Objectives: obj-u26-word-order
 - Sessions: u26-s-word-order
-- Source: src-wikipedia-russian-grammar-1369617627
-- Rights: rights-wikipedia-russian-grammar-1369617627
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: cc36b895bdd52d93f68e3a2f61982b85e9731cd07f0eaf5db7922a9a05eda567
+- Content hash: 295638737136a9c29c90e9bfd0fdb3100740c7d615457958d2a5320f455f4d0f
 
 kind=LEXICAL
 letterId=
 display=Я пошёл в магазин.
-note=I went to the shop
+note=In the supplied context: I went to the shop.
 objectiveId=obj-u26-word-order
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
@@ -1772,35 +1782,35 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 - Objectives: obj-u26-word-order
 - Sessions: u26-s-word-order
-- Source: src-wikipedia-russian-grammar-1369617627
-- Rights: rights-wikipedia-russian-grammar-1369617627
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 68b6f9b6735ce764808dbf329e47f7c5a8013f5b9be92b0676ebfedbbe190c03
+- Content hash: 8fecee5fe6d8d4817b6f375f5ff1c404c8e0be78fc3ef12c14cc298968a3cfec
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English label is written beside the shown arrangement?
+prompt=Someone attributes the shopping trip to another person. Which English reading fits this sentence when the speaker corrects that attribution?
 promptLetter=В магазин пошёл я.
-options=To the shop went I | Went I to the shop | I went to the shop
-answer=To the shop went I
-feedback=The frozen line says considerable latitude in word order is allowed. This label is written beside the shown arrangement. To the shop went I.
+options=It was me who went to the shop. | The speaker did not go to the shop. | The speaker went somewhere other than the shop.
+answer=It was me who went to the shop.
+feedback=В магазин пошёл я. has this supplied contextual reading: It was me who went to the shop. Read the stated discourse context rather than selecting an English word-order label.
 objectiveId=obj-u26-word-order
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This label is written beside a different arrangement for Went I to the shop. | This label is written beside the opening arrangement, not the shown one for I went to the shop.
+distractorRationales= | The speaker did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading. | The speaker went somewhere other than the shop. changes the event, participant or stated context; it does not match the supplied reading.
 testedFeature=WORD_ORDER
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+evidenceMode=STATED_APPLICATION
 contrastSetId=u26-word-order-0
 cueLanguage=ru
 independent=false
-answerSourceIds=prov-ex-u26-word-order-0-en
-distractorSourceIds= | prov-ex-u26-word-order-1-en | prov-ex-u26-word-order-2-en
-distractorDifference= | The frozen line pairs this label with another arrangement (Went I to the shop). | The frozen line pairs this label with the opening arrangement (I went to the shop).
-whyAnswerDemonstratesObjective=The frozen line says considerable latitude in word order is allowed. This label is written beside the shown arrangement.
-contrastMembers=To the shop went I | Went I to the shop | I went to the shop
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u26-word-order-0-ru | prov-ex-u26-word-order-0-en | prov-ex-u26-word-order-1-en | prov-ex-u26-word-order-2-en
+answerSourceIds=prov-ca-u26-focus-word-18
+distractorSourceIds= | prov-ca-u26-focus-word-19 | prov-ca-u26-focus-word-20
+distractorDifference= | The speaker did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading. | The speaker went somewhere other than the shop. changes the event, participant or stated context; it does not match the supplied reading.
+whyAnswerDemonstratesObjective=В магазин пошёл я. has this supplied contextual reading: It was me who went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+contrastMembers=It was me who went to the shop. | The speaker did not go to the shop. | The speaker went somewhere other than the shop.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u26-focus-word-16 | prov-ca-u26-focus-word-18 | prov-ca-u26-focus-word-19 | prov-ca-u26-focus-word-20
 responseKind=ENGLISH_CLASSIFICATION
 
 ### GUIDED_PRACTICE `u26-g-vy-capital-0`
@@ -1881,19 +1891,20 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-ruwiki-neopredelennoe-mestoimenie-149963314
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 586779ab95d9f3ad583be24e80b2e15ba7ecd5080f47f6f50eefe20bd50823f3
+- Content hash: 293c437685c3788d64a1ef0b35522621f5cf66134f52879aa0ab28ca3e048137
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted phrase classifies the shown form?
+prompt=Which Russian classification describes the supplied indefinite-pronoun use?
 promptLetter=В доме действительно кто-то был
 options=референтность и неизвестность говорящему | являются нереферентными | референтный денотативный статус слабой определённости
 answer=референтность и неизвестность говорящему
-feedback=The source says this series expresses референтность и неизвестность говорящему and gives В доме действительно кто-то был. The keyed phrase is референтность и неизвестность говорящему. референтность и неизвестность говорящему.
+feedback=The source says this series expresses референтность и неизвестность говорящему and gives В доме действительно кто-то был. The keyed phrase is референтность и неизвестность говорящему.
+В доме действительно кто-то был has the supplied classification референтность и неизвестность говорящему. Use the explained distinction between a particular unknown entity, an open alternative and speaker-known reference.
 objectiveId=obj-u26-indefinite
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The source assigns являются нереферентными to куда-нибудь. | The source assigns референтный денотативный статус слабой определённости to кое-какие.
+distractorRationales= | являются нереферентными is a different reference classification in the supplied contrasts. The source assigns являются нереферентными to куда-нибудь. | референтный денотативный статус слабой определённости is a different reference classification in the supplied contrasts. The source assigns референтный денотативный статус слабой определённости to кое-какие.
 testedFeature=INDEFINITE_PRONOUN
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u26-indefinite-0
@@ -1901,8 +1912,9 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u26-indefinite-0-en
 distractorSourceIds= | prov-ex-u26-indefinite-1-en | prov-ex-u26-indefinite-2-en
-distractorDifference= | являются нереферентными does not classify the shown form. | референтный денотативный статус слабой определённости does not classify the shown form.
+distractorDifference= | являются нереферентными is a different reference classification in the supplied contrasts. The source assigns являются нереферентными to куда-нибудь. | референтный денотативный статус слабой определённости is a different reference classification in the supplied contrasts. The source assigns референтный денотативный статус слабой определённости to кое-какие.
 whyAnswerDemonstratesObjective=The source says this series expresses референтность и неизвестность говорящему and gives В доме действительно кто-то был. The keyed phrase is референтность и неизвестность говорящему.
+В доме действительно кто-то был has the supplied classification референтность и неизвестность говорящему. Use the explained distinction between a particular unknown entity, an open alternative and speaker-known reference.
 contrastMembers=референтность и неизвестность говорящему | являются нереферентными | референтный денотативный статус слабой определённости
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u26-indefinite-0-ru | prov-ex-u26-indefinite-0-en | prov-ex-u26-indefinite-1-en | prov-ex-u26-indefinite-2-en
@@ -2017,70 +2029,70 @@ responseKind=ENGLISH_CLASSIFICATION
 
 - Objectives: obj-u26-word-order
 - Sessions: u26-s-word-order
-- Source: src-wikipedia-russian-grammar-1369617627
-- Rights: rights-wikipedia-russian-grammar-1369617627
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 86e047ca5977eeae983a528d188da23929a2fdfa54a8bbb4f20fb7d9c2f512f8
+- Content hash: ad21dafeff3d4c8c01d98728bcd548716df5b83f02bbc8bc6555025b1948a1c7
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English label is written beside this shown arrangement?
+prompt=At the beginning of a story about a past visit, which English reading fits this sentence?
 promptLetter=Пошёл я в магазин.
-options=Went I to the shop | To the shop went I | I went to the shop
-answer=Went I to the shop
-feedback=The frozen line says considerable latitude in word order is allowed. This label is written beside the shown arrangement. Went I to the shop.
+options=I went to the shop, and the story continues. | I did not go to the shop. | I will go to the shop after deciding to leave.
+answer=I went to the shop, and the story continues.
+feedback=Пошёл я в магазин. has this supplied contextual reading: I went to the shop, and the story continues. Read the stated discourse context rather than selecting an English word-order label.
 objectiveId=obj-u26-word-order
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This label is written beside the closing arrangement, not the shown one for To the shop went I. | This label is written beside the opening arrangement, not the shown one for I went to the shop.
+distractorRationales= | I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading. | I will go to the shop after deciding to leave. changes the event, participant or stated context; it does not match the supplied reading.
 testedFeature=WORD_ORDER
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+evidenceMode=STATED_APPLICATION
 contrastSetId=u26-word-order-1
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-u26-word-order-1-en
-distractorSourceIds= | prov-ex-u26-word-order-0-en | prov-ex-u26-word-order-2-en
-distractorDifference= | The frozen line pairs this label with the closing arrangement (To the shop went I). | The frozen line pairs this label with the opening arrangement (I went to the shop).
-whyAnswerDemonstratesObjective=The frozen line says considerable latitude in word order is allowed. This label is written beside the shown arrangement.
-contrastMembers=Went I to the shop | To the shop went I | I went to the shop
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u26-word-order-1-ru | prov-ex-u26-word-order-1-en | prov-ex-u26-word-order-0-en | prov-ex-u26-word-order-2-en
+answerSourceIds=prov-ca-u26-focus-word-26
+distractorSourceIds= | prov-ca-u26-focus-word-27 | prov-ca-u26-focus-word-28
+distractorDifference= | I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading. | I will go to the shop after deciding to leave. changes the event, participant or stated context; it does not match the supplied reading.
+whyAnswerDemonstratesObjective=Пошёл я в магазин. has this supplied contextual reading: I went to the shop, and the story continues. Read the stated discourse context rather than selecting an English word-order label.
+contrastMembers=I went to the shop, and the story continues. | I did not go to the shop. | I will go to the shop after deciding to leave.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u26-focus-word-24 | prov-ca-u26-focus-word-26 | prov-ca-u26-focus-word-27 | prov-ca-u26-focus-word-28
 responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u26-i-word-order-2`
 
 - Objectives: obj-u26-word-order
 - Sessions: u26-s-word-order
-- Source: src-wikipedia-russian-grammar-1369617627
-- Rights: rights-wikipedia-russian-grammar-1369617627
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 6f1360b9b00e9d7911c3d44c73e39f29e796eb5120b4fe16b6b91552ea1e39c1
+- Content hash: 32596801fff00944f3cca1815411dcd7818bbefdd7c15d6860dc74ab7316dd3d
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English label is written beside the opening arrangement?
+prompt=Reporting a past trip without contrasting the traveler or destination, which English reading fits this sentence?
 promptLetter=Я пошёл в магазин.
-options=I went to the shop | To the shop went I | Went I to the shop
-answer=I went to the shop
-feedback=The frozen line says considerable latitude in word order is allowed. This label is written beside the shown arrangement. I went to the shop.
+options=I went to the shop. | It was someone else, not me, who went to the shop. | I did not go to the shop.
+answer=I went to the shop.
+feedback=Я пошёл в магазин. has this supplied contextual reading: I went to the shop. Read the stated discourse context rather than selecting an English word-order label.
 objectiveId=obj-u26-word-order
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This label is written beside the closing arrangement for To the shop went I. | This label is written beside a story-opening arrangement for Went I to the shop.
+distractorRationales= | It was someone else, not me, who went to the shop. changes the event, participant or stated context; it does not match the supplied reading. | I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
 testedFeature=WORD_ORDER
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+evidenceMode=STATED_APPLICATION
 contrastSetId=u26-word-order-2
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-u26-word-order-2-en
-distractorSourceIds= | prov-ex-u26-word-order-0-en | prov-ex-u26-word-order-1-en
-distractorDifference= | The frozen line pairs this label with the closing arrangement (To the shop went I). | The frozen line pairs this label with a different arrangement (Went I to the shop).
-whyAnswerDemonstratesObjective=The frozen line says considerable latitude in word order is allowed. This label is written beside the shown arrangement.
-contrastMembers=I went to the shop | To the shop went I | Went I to the shop
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u26-word-order-2-ru | prov-ex-u26-word-order-2-en | prov-ex-u26-word-order-0-en | prov-ex-u26-word-order-1-en
+answerSourceIds=prov-ca-u26-focus-word-34
+distractorSourceIds= | prov-ca-u26-focus-word-35 | prov-ca-u26-focus-word-27
+distractorDifference= | It was someone else, not me, who went to the shop. changes the event, participant or stated context; it does not match the supplied reading. | I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+whyAnswerDemonstratesObjective=Я пошёл в магазин. has this supplied contextual reading: I went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+contrastMembers=I went to the shop. | It was someone else, not me, who went to the shop. | I did not go to the shop.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u26-focus-word-32 | prov-ca-u26-focus-word-34 | prov-ca-u26-focus-word-35 | prov-ca-u26-focus-word-27
 responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u26-i-vy-capital-1`
@@ -2231,19 +2243,20 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-ruwiki-neopredelennoe-mestoimenie-149963314
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: b06f38c1a36eddab26a0ea7f1dda513edc3c2d622be2e6b8d7eeadd15e7fe251
+- Content hash: 412798d3726b6de043372166ea6ba381becbe224a7c382e27978fca567469035
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted phrase classifies the shown form?
+prompt=Which Russian classification describes the supplied indefinite-pronoun use?
 promptLetter=куда-нибудь
 options=являются нереферентными | референтность и неизвестность говорящему | референтный денотативный статус слабой определённости
 answer=являются нереферентными
-feedback=The source says the series являются нереферентными and gives куда-нибудь. The keyed phrase is являются нереферентными. являются нереферентными.
+feedback=The source says the series являются нереферентными and gives куда-нибудь. The keyed phrase is являются нереферентными.
+куда-нибудь has the supplied classification являются нереферентными. Use the explained distinction between a particular unknown entity, an open alternative and speaker-known reference.
 objectiveId=obj-u26-indefinite
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The source assigns референтность и неизвестность говорящему to В доме действительно кто-то был. | The source assigns референтный денотативный статус слабой определённости to кое-какие.
+distractorRationales= | референтность и неизвестность говорящему is a different reference classification in the supplied contrasts. The source assigns референтность и неизвестность говорящему to В доме действительно кто-то был. | референтный денотативный статус слабой определённости is a different reference classification in the supplied contrasts. The source assigns референтный денотативный статус слабой определённости to кое-какие.
 testedFeature=INDEFINITE_PRONOUN
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u26-indefinite-1
@@ -2251,8 +2264,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u26-indefinite-1-en
 distractorSourceIds= | prov-ex-u26-indefinite-0-en | prov-ex-u26-indefinite-2-en
-distractorDifference= | референтность и неизвестность говорящему does not classify the shown form. | референтный денотативный статус слабой определённости does not classify this shown form.
+distractorDifference= | референтность и неизвестность говорящему is a different reference classification in the supplied contrasts. The source assigns референтность и неизвестность говорящему to В доме действительно кто-то был. | референтный денотативный статус слабой определённости is a different reference classification in the supplied contrasts. The source assigns референтный денотативный статус слабой определённости to кое-какие.
 whyAnswerDemonstratesObjective=The source says the series являются нереферентными and gives куда-нибудь. The keyed phrase is являются нереферентными.
+куда-нибудь has the supplied classification являются нереферентными. Use the explained distinction between a particular unknown entity, an open alternative and speaker-known reference.
 contrastMembers=являются нереферентными | референтность и неизвестность говорящему | референтный денотативный статус слабой определённости
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u26-indefinite-1-ru | prov-ex-u26-indefinite-1-en | prov-ex-u26-indefinite-0-en | prov-ex-u26-indefinite-2-en
@@ -2266,19 +2280,20 @@ responseKind=RUSSIAN_PHRASE
 - Rights: rights-ruwiki-neopredelennoe-mestoimenie-149963314
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: e59897be05eb9223f5911bdbe1809b1bc279735f97d83eb62f3f6be8aa4ec77a
+- Content hash: 9fe7545156e0f19a9dd3b333c9b77b613b8ed8c4dbee24ffc5d0fe3ec7cd9b31
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted phrase classifies the shown form?
+prompt=Which Russian classification describes the supplied indefinite-pronoun use?
 promptLetter=кое-какие
 options=референтный денотативный статус слабой определённости | референтность и неизвестность говорящему | являются нереферентными
 answer=референтный денотативный статус слабой определённости
-feedback=The source says this series expresses референтный денотативный статус слабой определённости and gives кое-какие. The keyed phrase is референтный денотативный статус слабой определённости. референтный денотативный статус слабой определённости.
+feedback=The source says this series expresses референтный денотативный статус слабой определённости and gives кое-какие. The keyed phrase is референтный денотативный статус слабой определённости.
+кое-какие has the supplied classification референтный денотативный статус слабой определённости. Use the explained distinction between a particular unknown entity, an open alternative and speaker-known reference.
 objectiveId=obj-u26-indefinite
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The source assigns референтность и неизвестность говорящему to В доме действительно кто-то был. | The source assigns являются нереферентными to куда-нибудь.
+distractorRationales= | референтность и неизвестность говорящему is a different reference classification in the supplied contrasts. The source assigns референтность и неизвестность говорящему to В доме действительно кто-то был. | являются нереферентными is a different reference classification in the supplied contrasts. The source assigns являются нереферентными to куда-нибудь.
 testedFeature=INDEFINITE_PRONOUN
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u26-indefinite-2
@@ -2286,8 +2301,9 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u26-indefinite-2-en
 distractorSourceIds= | prov-ex-u26-indefinite-0-en | prov-ex-u26-indefinite-1-en
-distractorDifference= | референтность и неизвестность говорящему does not classify the shown form. | являются нереферентными does not classify the shown form.
+distractorDifference= | референтность и неизвестность говорящему is a different reference classification in the supplied contrasts. The source assigns референтность и неизвестность говорящему to В доме действительно кто-то был. | являются нереферентными is a different reference classification in the supplied contrasts. The source assigns являются нереферентными to куда-нибудь.
 whyAnswerDemonstratesObjective=The source says this series expresses референтный денотативный статус слабой определённости and gives кое-какие. The keyed phrase is референтный денотативный статус слабой определённости.
+кое-какие has the supplied classification референтный денотативный статус слабой определённости. Use the explained distinction between a particular unknown entity, an open alternative and speaker-known reference.
 contrastMembers=референтный денотативный статус слабой определённости | референтность и неизвестность говорящему | являются нереферентными
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u26-indefinite-2-ru | prov-ex-u26-indefinite-2-en | prov-ex-u26-indefinite-0-en | prov-ex-u26-indefinite-1-en
@@ -3010,6 +3026,3636 @@ attribution=Russian Companion content-audit research synthesis, content-audit-20
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
 sourceHash=8cbdd45e7fb070fbf5e42c5458556da7ac5fbb37454d9213aa932d0125d6186c
 contentHash=0afff52ca49d9adc7b3fb39de24b16290d6908faa0a72a4209008f32c863dbbf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-indefinite-0`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-orient, u26-s-indefinite
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e331dffc97b08f120843366bb5fbc347b1445808dfe24ed4601e234fa5ba0b0b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-indefinite:indefinite-0
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+Distinguish specific unknown, open and speaker-known reference
+shippedText=Distinguish specific unknown, open and speaker-known reference
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bc16223c575a1a35527ba3621832371f5348a6d1a42f13c98217b9c85267e884
+contentHash=9570da75568c81fca1654d7d8f2efb83096450d484a7e2ceb8639f6232b2d7d1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-indefinite-1`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-orient, u26-s-indefinite
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2a25e0b2296bf75f158d3f2d4ef0d6b936c08bcbb734119a7a9cc4d96e33ecef
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-indefinite:indefinite-1
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+A specific person whose identity is unknown
+shippedText=A specific person whose identity is unknown
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=48d67ca209553f0b24dafc8151ac613e7f1123cd131b71cffc4d92265b454c25
+contentHash=37376b0c5cb10e9c34ed92d57d309993dd9898c51d9ddeae5fec928bf0cacfe5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-indefinite-10`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-orient, u26-s-indefinite
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 342750bfc301fd20738e4eaef4201390f49ba234bbc01d4e2eb6b18d5db8ba1e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-indefinite:indefinite-10
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+В доме действительно кто-то был means that someone really was in the house. The label референтность и неизвестность говорящему describes reference to a particular person whose identity is unknown to the speaker in this supplied use. It does not mean nobody was there. Referential concerns whether a particular entity is intended; it is different from whether the speaker knows that entity's identity.
+
+куда-нибудь is the supplied example of an open, unspecified destination. The label являются нереферентными means non-referential in this classification: no particular fixed destination is selected. An alternative is considered against other possible destinations, as in a future plan, desire or conditional context. This is not the label референтность и неизвестность говорящему for a particular unknown entity, nor референтный денотативный статус слабой определённости for a specific entity known to the speaker. The classification concerns this supplied series/use, not a universal translation of every indefinite form.
+
+кое-какие is classified as референтный денотативный статус слабой определённости: weakly definite reference to particular things known to the speaker but not assumed known to the listener. It differs from a particular unknown entity and from an open alternative with no fixed referent. The retained rule Местоимение на -то может употребляться также и в значении местоимения на -нибудь says the first series can also be used with the meaning of the second in some contexts. Do not infer a rigid one-suffix/one-meaning division. These checks classify the supplied forms; broader production and selection need the sentence and discourse context.
+shippedText=В доме действительно кто-то был means that someone really was in the house. The label референтность и неизвестность говорящему describes reference to a particular person whose identity is unknown to the speaker in this supplied use. It does not mean nobody was there. Referential concerns whether a particular entity is intended; it is different from whether the speaker knows that entity's identity.
+
+куда-нибудь is the supplied example of an open, unspecified destination. The label являются нереферентными means non-referential in this classification: no particular fixed destination is selected. An alternative is considered against other possible destinations, as in a future plan, desire or conditional context. This is not the label референтность и неизвестность говорящему for a particular unknown entity, nor референтный денотативный статус слабой определённости for a specific entity known to the speaker. The classification concerns this supplied series/use, not a universal translation of every indefinite form.
+
+кое-какие is classified as референтный денотативный статус слабой определённости: weakly definite reference to particular things known to the speaker but not assumed known to the listener. It differs from a particular unknown entity and from an open alternative with no fixed referent. The retained rule Местоимение на -то может употребляться также и в значении местоимения на -нибудь says the first series can also be used with the meaning of the second in some contexts. Do not infer a rigid one-suffix/one-meaning division. These checks classify the supplied forms; broader production and selection need the sentence and discourse context.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=81e8ae3a4b7303a4a141cd2f88f7dd4222d7837141a98e2e2d7c6f101498977f
+contentHash=d1c99238fcbd2a8b91597da22bcebec67e948fbdb857067dfc31a341f0da482c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-indefinite-11`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-orient, u26-s-indefinite
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 59c667e706f626653eec33bc1abeb2605f2ff7c1989d95f9279d8ae01b6f0068
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-indefinite:indefinite-11
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+Independent checks
+shippedText=Independent checks
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ee5a880a3d4ecaa33825de61006086432fc74a5a4e988acbabf8756704c44bf0
+contentHash=012ab8f74509f135e510ad3d930ff2e1b92c944e2d060f0b35ddeee63616b486
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-indefinite-12`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-orient, u26-s-indefinite
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d8aa6df2f1932863d2f4fb8f30c647aed8b43d5c07f88b5362db1f95b300ccca
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-indefinite:indefinite-12
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+Which Russian classification describes the supplied indefinite-pronoun use?
+shippedText=Which Russian classification describes the supplied indefinite-pronoun use?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bb31fd895bbcb1bf5cb966372856348e9314c285b558b8fbd6e312375999d292
+contentHash=ce97b591683b8c88b43cdda7c5673efba4199ffb357428e7941d39362a41d0d6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-indefinite-13`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-orient, u26-s-indefinite
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cbe85be05e586ffa0a2e71a99c2ed9a713bfc27c5007d9197128f623c549d3f9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-indefinite:indefinite-13
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+The source says this series expresses референтность и неизвестность говорящему and gives В доме действительно кто-то был. The keyed phrase is референтность и неизвестность говорящему.
+В доме действительно кто-то был has the supplied classification референтность и неизвестность говорящему. Use the explained distinction between a particular unknown entity, an open alternative and speaker-known reference.
+shippedText=The source says this series expresses референтность и неизвестность говорящему and gives В доме действительно кто-то был. The keyed phrase is референтность и неизвестность говорящему.
+В доме действительно кто-то был has the supplied classification референтность и неизвестность говорящему. Use the explained distinction between a particular unknown entity, an open alternative and speaker-known reference.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c3432c10f7aa2a742db849d8c1f776c64d17ddb028970fee7e53f5405b227e7d
+contentHash=a5699e6cbe4a89d2173fee27bab68b079227d8dd945d91347af3212f4501d96b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-indefinite-14`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-orient, u26-s-indefinite
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 87b6b7fc420edabb98460f22cc9c90f9ef365801eb35b9151b271d53dbe219b8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-indefinite:indefinite-14
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+являются нереферентными is a different reference classification in the supplied contrasts. The source assigns являются нереферентными to куда-нибудь.
+shippedText=являются нереферентными is a different reference classification in the supplied contrasts. The source assigns являются нереферентными to куда-нибудь.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9efe88d666a9bb1420f42e8b732a06ca365dd02f330055ed8f5f96c64c6f9b30
+contentHash=eeb064307f9c54fec4a1c500df8d8f471663fe5d89552e2b45baa1f9d8b05673
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-indefinite-15`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-orient, u26-s-indefinite
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 30d2df232b81483c6f0adba992f0cda98f6effff772bf8a85587bbd55f2c6bd9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-indefinite:indefinite-15
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+референтный денотативный статус слабой определённости is a different reference classification in the supplied contrasts. The source assigns референтный денотативный статус слабой определённости to кое-какие.
+shippedText=референтный денотативный статус слабой определённости is a different reference classification in the supplied contrasts. The source assigns референтный денотативный статус слабой определённости to кое-какие.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ded7af860afc0f8a3941b67d3dbb59148e7d26701f5dabe2f200c362cf9edca5
+contentHash=6cf31abc7c516ae0e2b853d9ac5e71f9dd9acd953c9e722f83b6af9f800629d9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-indefinite-16`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-orient, u26-s-indefinite
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8cd4660443692b7b247831a90307d3160b93d5c35f90b31d425556099462c7f2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-indefinite:indefinite-16
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+The source says the series являются нереферентными and gives куда-нибудь. The keyed phrase is являются нереферентными.
+куда-нибудь has the supplied classification являются нереферентными. Use the explained distinction between a particular unknown entity, an open alternative and speaker-known reference.
+shippedText=The source says the series являются нереферентными and gives куда-нибудь. The keyed phrase is являются нереферентными.
+куда-нибудь has the supplied classification являются нереферентными. Use the explained distinction between a particular unknown entity, an open alternative and speaker-known reference.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cd47713dedf0b3ecadd25faeb91ea5039f32661c1a7a91cfeb457eec55f6c267
+contentHash=2d258fab097eb29eaed5297f66405d4fa23bc2e6429feccfb586d88dd27dcc24
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-indefinite-17`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-orient, u26-s-indefinite
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 63860fdbfff3ef5e8984420e71ad3db2ff1b30a26ce4a2565fa72d27581d3ac8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-indefinite:indefinite-17
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+референтность и неизвестность говорящему is a different reference classification in the supplied contrasts. The source assigns референтность и неизвестность говорящему to В доме действительно кто-то был.
+shippedText=референтность и неизвестность говорящему is a different reference classification in the supplied contrasts. The source assigns референтность и неизвестность говорящему to В доме действительно кто-то был.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3fef8f94c64f59774c7d837933cd70d6510c83665c8e7ec37a786ba81c744917
+contentHash=07f66cfbf761edd85eaad9bc1c1b7e92d4069d0127eb4cb5503ea2dfd294860f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-indefinite-18`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-orient, u26-s-indefinite
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 29e7c54e42feb56a650c93f8737e157970b94dd2a6d69af1d5572cb6dafaad0e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-indefinite:indefinite-18
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+The source says this series expresses референтный денотативный статус слабой определённости and gives кое-какие. The keyed phrase is референтный денотативный статус слабой определённости.
+кое-какие has the supplied classification референтный денотативный статус слабой определённости. Use the explained distinction between a particular unknown entity, an open alternative and speaker-known reference.
+shippedText=The source says this series expresses референтный денотативный статус слабой определённости and gives кое-какие. The keyed phrase is референтный денотативный статус слабой определённости.
+кое-какие has the supplied classification референтный денотативный статус слабой определённости. Use the explained distinction between a particular unknown entity, an open alternative and speaker-known reference.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8e5095166860c28e1b1d815091c323bcf0c99f764982e18adeea9a1c742e10ef
+contentHash=1951069d404027b5cd01eb306103f38e3f3dd5756c9d85e0e557f55ba678ee09
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-indefinite-2`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-orient, u26-s-indefinite
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 80a2884a35c239e6811f32661425e42c01c2d5c67da4b7d8f74bb1e5512532a3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-indefinite:indefinite-2
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+В доме действительно кто-то был means that someone really was in the house. The label референтность и неизвестность говорящему describes reference to a particular person whose identity is unknown to the speaker in this supplied use. It does not mean nobody was there. Referential concerns whether a particular entity is intended; it is different from whether the speaker knows that entity's identity.
+shippedText=В доме действительно кто-то был means that someone really was in the house. The label референтность и неизвестность говорящему describes reference to a particular person whose identity is unknown to the speaker in this supplied use. It does not mean nobody was there. Referential concerns whether a particular entity is intended; it is different from whether the speaker knows that entity's identity.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1b8d8a18e61047759da0e6fc19b713cfae06b4d115987ef251981f189c371283
+contentHash=e3941c6290ec82da4df1ffb04f2e7475b3e7828e76cfb6a2602568ba734b4659
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-indefinite-3`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-orient, u26-s-indefinite
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d1599254f3bc5b281bf2ae1cecb4256b32802c6cb3d80f66e4d421564e3b6fbd
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-indefinite:indefinite-3
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+An unspecified alternative is not absence
+shippedText=An unspecified alternative is not absence
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ad62820ec7f0e6434981c9cd42a28d8294d89441fc5d63520c910648fb091337
+contentHash=db7d991ad006adc863cacfc88c71c06e6563af5f29947d782aaa26958072514d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-indefinite-4`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-orient, u26-s-indefinite
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 71f7b3d9760332071fa042857a57913336b1107144d6af210cfea476363f97f9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-indefinite:indefinite-4
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+куда-нибудь is the supplied example of an open, unspecified destination. The label являются нереферентными means non-referential in this classification: no particular fixed destination is selected. An alternative is considered against other possible destinations, as in a future plan, desire or conditional context. This is not the label референтность и неизвестность говорящему for a particular unknown entity, nor референтный денотативный статус слабой определённости for a specific entity known to the speaker. The classification concerns this supplied series/use, not a universal translation of every indefinite form.
+shippedText=куда-нибудь is the supplied example of an open, unspecified destination. The label являются нереферентными means non-referential in this classification: no particular fixed destination is selected. An alternative is considered against other possible destinations, as in a future plan, desire or conditional context. This is not the label референтность и неизвестность говорящему for a particular unknown entity, nor референтный денотативный статус слабой определённости for a specific entity known to the speaker. The classification concerns this supplied series/use, not a universal translation of every indefinite form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2cb7e170b402566a275bd5988e6fec9271f80a81d4ddeb1d1d40a22efb6208df
+contentHash=d3ceec90bcc2c604b5953be0bfc92d3008c708be22a2b5b267db4490e0232c97
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-indefinite-5`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-orient, u26-s-indefinite
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 37e5822a106b81ed3f4a70a33b6fe7caa6117f605a303c8fcb74f7eaafeedf78
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-indefinite:indefinite-5
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+A specific choice known to the speaker, with overlap limits
+shippedText=A specific choice known to the speaker, with overlap limits
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=52b77b6a64167ee4158549af11c033e603b7e7e40c14ca84207775f47f8776e6
+contentHash=e5450983dbef9b5d6e210933212e82b674d26ca61a51f57f30c450c1ec8d190a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-indefinite-6`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-orient, u26-s-indefinite
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b3956d1b12d4f0f39e4754e679247f738d6b615aaf751d13c4e9d098bda3ab32
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-indefinite:indefinite-6
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+кое-какие is classified as референтный денотативный статус слабой определённости: weakly definite reference to particular things known to the speaker but not assumed known to the listener. It differs from a particular unknown entity and from an open alternative with no fixed referent. The retained rule Местоимение на -то может употребляться также и в значении местоимения на -нибудь says the first series can also be used with the meaning of the second in some contexts. Do not infer a rigid one-suffix/one-meaning division. These checks classify the supplied forms; broader production and selection need the sentence and discourse context.
+shippedText=кое-какие is classified as референтный денотативный статус слабой определённости: weakly definite reference to particular things known to the speaker but not assumed known to the listener. It differs from a particular unknown entity and from an open alternative with no fixed referent. The retained rule Местоимение на -то может употребляться также и в значении местоимения на -нибудь says the first series can also be used with the meaning of the second in some contexts. Do not infer a rigid one-suffix/one-meaning division. These checks classify the supplied forms; broader production and selection need the sentence and discourse context.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=07d4553d087004b0a0bfbbe058a3576e16b1cb26b50656a676eabab28f5f9de1
+contentHash=4162703fa3d345baccf0d99da290f1f4e895f679cece8938c5c7504602578f61
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-indefinite-7`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-orient, u26-s-indefinite
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 97fb8e5199660b55bf1f41d1779d6eeaa165ecfea801d1104b080cc956691b88
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-indefinite:indefinite-7
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+Guided practice
+shippedText=Guided practice
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=31b84576f158fbd0cda77f78b9273a2e0bcf3918a529772acb56771e7ce04d6d
+contentHash=cb1d4a3d9d5db425da3797c7a997db3588ec122a60c4d645ea31cd849f76ab3c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-indefinite-8`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-orient, u26-s-indefinite
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5f2fcf7e1b128414b065e681c1608e71f744cff9ebe844355e9b800571db4af6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-indefinite:indefinite-8
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
+shippedText=Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3267f76b87007187e0e95b84ed38d276f2aca13b088a2e9f6d7f5f820ff0e041
+contentHash=fadfec48e5f69fd8f01ae75d8800bd59da44e4eea6dd63d36ed71f019fbb105d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-indefinite-9`
+
+- Objectives: obj-u26-indefinite
+- Sessions: u26-s-orient, u26-s-indefinite
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 45571422cfd9b50043a6310e40018d7df1c81076914aa47a905ba55196650627
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u26-indefinite:indefinite-9
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+Review the full contextual distinction
+shippedText=Review the full contextual distinction
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=59dd6e30e8789e7d39a4d52bef1c5ee7d157906678993ec15d9684a531d51208
+contentHash=eef1368bf22b56fc4fb3b745be1d6629ae22914f51c0d00224a79c0165b460f6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-word-1`
+
+- Objectives: obj-u26-word-order
+- Sessions: u26-s-orient, u26-s-word-order
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 998ebd1810b1de6d37f9ebf0994517103820f76d76d2a2d03fff1bc5808303d9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-word-order
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+Interpret supplied word order in context
+Separate the event from the focus
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+Read a story opening in its stated context
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+Recognize a neutral report without inventing a contrast
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+New and known information require context
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Guided practice
+Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
+Review the full contextual distinction
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Someone attributes the shopping trip to another person. Which English reading fits this sentence when the speaker corrects that attribution?
+В магазин пошёл я.
+В магазин пошёл я. has this supplied contextual reading: It was me who went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+It was me who went to the shop.
+The speaker did not go to the shop.
+The speaker went somewhere other than the shop.
+The speaker did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+The speaker went somewhere other than the shop. changes the event, participant or stated context; it does not match the supplied reading.
+At the beginning of a story about a past visit, which English reading fits this sentence?
+Пошёл я в магазин.
+Пошёл я в магазин. has this supplied contextual reading: I went to the shop, and the story continues. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop, and the story continues.
+I did not go to the shop.
+I will go to the shop after deciding to leave.
+I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+I will go to the shop after deciding to leave. changes the event, participant or stated context; it does not match the supplied reading.
+Reporting a past trip without contrasting the traveler or destination, which English reading fits this sentence?
+Я пошёл в магазин.
+Я пошёл в магазин. has this supplied contextual reading: I went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop.
+It was someone else, not me, who went to the shop.
+It was someone else, not me, who went to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+In the supplied context: It was me who went to the shop.
+In the supplied context: I went to the shop, and the story continues.
+In the supplied context: I went to the shop.
+[{"cue": "В магазин пошёл я.", "answer": "It was me who went to the shop.", "distractors": ["The speaker did not go to the shop.", "The speaker went somewhere other than the shop."]}, {"cue": "Пошёл я в магазин.", "answer": "I went to the shop, and the story continues.", "distractors": ["I did not go to the shop.", "I will go to the shop after deciding to leave."]}, {"cue": "Я пошёл в магазин.", "answer": "I went to the shop.", "distractors": ["It was someone else, not me, who went to the shop.", "I did not go to the shop."]}]
+shippedText=Separate the event from the focus
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=763d91eb12ba1c8ef6553d9c700f800fb8ccfb93bdf41ff5a6ae83a19d1fd94b
+contentHash=c092f6e5c7382ccc49ed04d388ae1137489cecaa609cf011702d764254a7fae4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-word-10`
+
+- Objectives: obj-u26-word-order
+- Sessions: u26-s-orient, u26-s-word-order
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a3b9d6b6bba1a250edeb2a794ca456a5fe8003f05ee21c1a2ccb9b54eaeca463
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-word-order
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+Interpret supplied word order in context
+Separate the event from the focus
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+Read a story opening in its stated context
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+Recognize a neutral report without inventing a contrast
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+New and known information require context
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Guided practice
+Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
+Review the full contextual distinction
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Someone attributes the shopping trip to another person. Which English reading fits this sentence when the speaker corrects that attribution?
+В магазин пошёл я.
+В магазин пошёл я. has this supplied contextual reading: It was me who went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+It was me who went to the shop.
+The speaker did not go to the shop.
+The speaker went somewhere other than the shop.
+The speaker did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+The speaker went somewhere other than the shop. changes the event, participant or stated context; it does not match the supplied reading.
+At the beginning of a story about a past visit, which English reading fits this sentence?
+Пошёл я в магазин.
+Пошёл я в магазин. has this supplied contextual reading: I went to the shop, and the story continues. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop, and the story continues.
+I did not go to the shop.
+I will go to the shop after deciding to leave.
+I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+I will go to the shop after deciding to leave. changes the event, participant or stated context; it does not match the supplied reading.
+Reporting a past trip without contrasting the traveler or destination, which English reading fits this sentence?
+Я пошёл в магазин.
+Я пошёл в магазин. has this supplied contextual reading: I went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop.
+It was someone else, not me, who went to the shop.
+It was someone else, not me, who went to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+In the supplied context: It was me who went to the shop.
+In the supplied context: I went to the shop, and the story continues.
+In the supplied context: I went to the shop.
+[{"cue": "В магазин пошёл я.", "answer": "It was me who went to the shop.", "distractors": ["The speaker did not go to the shop.", "The speaker went somewhere other than the shop."]}, {"cue": "Пошёл я в магазин.", "answer": "I went to the shop, and the story continues.", "distractors": ["I did not go to the shop.", "I will go to the shop after deciding to leave."]}, {"cue": "Я пошёл в магазин.", "answer": "I went to the shop.", "distractors": ["It was someone else, not me, who went to the shop.", "I did not go to the shop."]}]
+shippedText=Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=763d91eb12ba1c8ef6553d9c700f800fb8ccfb93bdf41ff5a6ae83a19d1fd94b
+contentHash=fadfec48e5f69fd8f01ae75d8800bd59da44e4eea6dd63d36ed71f019fbb105d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-word-11`
+
+- Objectives: obj-u26-word-order
+- Sessions: u26-s-orient, u26-s-word-order
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4743082f21cc78b6ac9faaf2676674cb70523263d39df67dc94c0de352d82cb9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-word-order
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+Interpret supplied word order in context
+Separate the event from the focus
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+Read a story opening in its stated context
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+Recognize a neutral report without inventing a contrast
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+New and known information require context
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Guided practice
+Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
+Review the full contextual distinction
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Someone attributes the shopping trip to another person. Which English reading fits this sentence when the speaker corrects that attribution?
+В магазин пошёл я.
+В магазин пошёл я. has this supplied contextual reading: It was me who went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+It was me who went to the shop.
+The speaker did not go to the shop.
+The speaker went somewhere other than the shop.
+The speaker did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+The speaker went somewhere other than the shop. changes the event, participant or stated context; it does not match the supplied reading.
+At the beginning of a story about a past visit, which English reading fits this sentence?
+Пошёл я в магазин.
+Пошёл я в магазин. has this supplied contextual reading: I went to the shop, and the story continues. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop, and the story continues.
+I did not go to the shop.
+I will go to the shop after deciding to leave.
+I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+I will go to the shop after deciding to leave. changes the event, participant or stated context; it does not match the supplied reading.
+Reporting a past trip without contrasting the traveler or destination, which English reading fits this sentence?
+Я пошёл в магазин.
+Я пошёл в магазин. has this supplied contextual reading: I went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop.
+It was someone else, not me, who went to the shop.
+It was someone else, not me, who went to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+In the supplied context: It was me who went to the shop.
+In the supplied context: I went to the shop, and the story continues.
+In the supplied context: I went to the shop.
+[{"cue": "В магазин пошёл я.", "answer": "It was me who went to the shop.", "distractors": ["The speaker did not go to the shop.", "The speaker went somewhere other than the shop."]}, {"cue": "Пошёл я в магазин.", "answer": "I went to the shop, and the story continues.", "distractors": ["I did not go to the shop.", "I will go to the shop after deciding to leave."]}, {"cue": "Я пошёл в магазин.", "answer": "I went to the shop.", "distractors": ["It was someone else, not me, who went to the shop.", "I did not go to the shop."]}]
+shippedText=Review the full contextual distinction
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=763d91eb12ba1c8ef6553d9c700f800fb8ccfb93bdf41ff5a6ae83a19d1fd94b
+contentHash=eef1368bf22b56fc4fb3b745be1d6629ae22914f51c0d00224a79c0165b460f6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-word-12`
+
+- Objectives: obj-u26-word-order
+- Sessions: u26-s-orient, u26-s-word-order
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 400178cbb4ac11b5e752c0bdfd87958ab2b3c1c6085579453a885f70551ab5ac
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-word-order
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+Interpret supplied word order in context
+Separate the event from the focus
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+Read a story opening in its stated context
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+Recognize a neutral report without inventing a contrast
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+New and known information require context
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Guided practice
+Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
+Review the full contextual distinction
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Someone attributes the shopping trip to another person. Which English reading fits this sentence when the speaker corrects that attribution?
+В магазин пошёл я.
+В магазин пошёл я. has this supplied contextual reading: It was me who went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+It was me who went to the shop.
+The speaker did not go to the shop.
+The speaker went somewhere other than the shop.
+The speaker did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+The speaker went somewhere other than the shop. changes the event, participant or stated context; it does not match the supplied reading.
+At the beginning of a story about a past visit, which English reading fits this sentence?
+Пошёл я в магазин.
+Пошёл я в магазин. has this supplied contextual reading: I went to the shop, and the story continues. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop, and the story continues.
+I did not go to the shop.
+I will go to the shop after deciding to leave.
+I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+I will go to the shop after deciding to leave. changes the event, participant or stated context; it does not match the supplied reading.
+Reporting a past trip without contrasting the traveler or destination, which English reading fits this sentence?
+Я пошёл в магазин.
+Я пошёл в магазин. has this supplied contextual reading: I went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop.
+It was someone else, not me, who went to the shop.
+It was someone else, not me, who went to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+In the supplied context: It was me who went to the shop.
+In the supplied context: I went to the shop, and the story continues.
+In the supplied context: I went to the shop.
+[{"cue": "В магазин пошёл я.", "answer": "It was me who went to the shop.", "distractors": ["The speaker did not go to the shop.", "The speaker went somewhere other than the shop."]}, {"cue": "Пошёл я в магазин.", "answer": "I went to the shop, and the story continues.", "distractors": ["I did not go to the shop.", "I will go to the shop after deciding to leave."]}, {"cue": "Я пошёл в магазин.", "answer": "I went to the shop.", "distractors": ["It was someone else, not me, who went to the shop.", "I did not go to the shop."]}]
+shippedText=В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=763d91eb12ba1c8ef6553d9c700f800fb8ccfb93bdf41ff5a6ae83a19d1fd94b
+contentHash=de595c56441375a4b19d0d1134f8bce43ea3fed40d39cead7e39de8c80e9be45
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-word-13`
+
+- Objectives: obj-u26-word-order
+- Sessions: u26-s-orient, u26-s-word-order
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 47e0f3617f76cca52a310b295e8cecb73bd77810c844dd1c5f75197a6748d12a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-word-order
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+Interpret supplied word order in context
+Separate the event from the focus
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+Read a story opening in its stated context
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+Recognize a neutral report without inventing a contrast
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+New and known information require context
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Guided practice
+Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
+Review the full contextual distinction
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Someone attributes the shopping trip to another person. Which English reading fits this sentence when the speaker corrects that attribution?
+В магазин пошёл я.
+В магазин пошёл я. has this supplied contextual reading: It was me who went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+It was me who went to the shop.
+The speaker did not go to the shop.
+The speaker went somewhere other than the shop.
+The speaker did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+The speaker went somewhere other than the shop. changes the event, participant or stated context; it does not match the supplied reading.
+At the beginning of a story about a past visit, which English reading fits this sentence?
+Пошёл я в магазин.
+Пошёл я в магазин. has this supplied contextual reading: I went to the shop, and the story continues. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop, and the story continues.
+I did not go to the shop.
+I will go to the shop after deciding to leave.
+I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+I will go to the shop after deciding to leave. changes the event, participant or stated context; it does not match the supplied reading.
+Reporting a past trip without contrasting the traveler or destination, which English reading fits this sentence?
+Я пошёл в магазин.
+Я пошёл в магазин. has this supplied contextual reading: I went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop.
+It was someone else, not me, who went to the shop.
+It was someone else, not me, who went to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+In the supplied context: It was me who went to the shop.
+In the supplied context: I went to the shop, and the story continues.
+In the supplied context: I went to the shop.
+[{"cue": "В магазин пошёл я.", "answer": "It was me who went to the shop.", "distractors": ["The speaker did not go to the shop.", "The speaker went somewhere other than the shop."]}, {"cue": "Пошёл я в магазин.", "answer": "I went to the shop, and the story continues.", "distractors": ["I did not go to the shop.", "I will go to the shop after deciding to leave."]}, {"cue": "Я пошёл в магазин.", "answer": "I went to the shop.", "distractors": ["It was someone else, not me, who went to the shop.", "I did not go to the shop."]}]
+shippedText=Independent checks
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=763d91eb12ba1c8ef6553d9c700f800fb8ccfb93bdf41ff5a6ae83a19d1fd94b
+contentHash=012ab8f74509f135e510ad3d930ff2e1b92c944e2d060f0b35ddeee63616b486
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-word-14`
+
+- Objectives: obj-u26-word-order
+- Sessions: u26-s-orient, u26-s-word-order
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0ae8388bc1246e31ee03596ee4f0098dfb81d4ab33ded7928e4b3594e7b57cb5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-word-order
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+Interpret supplied word order in context
+Separate the event from the focus
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+Read a story opening in its stated context
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+Recognize a neutral report without inventing a contrast
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+New and known information require context
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Guided practice
+Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
+Review the full contextual distinction
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Someone attributes the shopping trip to another person. Which English reading fits this sentence when the speaker corrects that attribution?
+В магазин пошёл я.
+В магазин пошёл я. has this supplied contextual reading: It was me who went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+It was me who went to the shop.
+The speaker did not go to the shop.
+The speaker went somewhere other than the shop.
+The speaker did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+The speaker went somewhere other than the shop. changes the event, participant or stated context; it does not match the supplied reading.
+At the beginning of a story about a past visit, which English reading fits this sentence?
+Пошёл я в магазин.
+Пошёл я в магазин. has this supplied contextual reading: I went to the shop, and the story continues. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop, and the story continues.
+I did not go to the shop.
+I will go to the shop after deciding to leave.
+I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+I will go to the shop after deciding to leave. changes the event, participant or stated context; it does not match the supplied reading.
+Reporting a past trip without contrasting the traveler or destination, which English reading fits this sentence?
+Я пошёл в магазин.
+Я пошёл в магазин. has this supplied contextual reading: I went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop.
+It was someone else, not me, who went to the shop.
+It was someone else, not me, who went to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+In the supplied context: It was me who went to the shop.
+In the supplied context: I went to the shop, and the story continues.
+In the supplied context: I went to the shop.
+[{"cue": "В магазин пошёл я.", "answer": "It was me who went to the shop.", "distractors": ["The speaker did not go to the shop.", "The speaker went somewhere other than the shop."]}, {"cue": "Пошёл я в магазин.", "answer": "I went to the shop, and the story continues.", "distractors": ["I did not go to the shop.", "I will go to the shop after deciding to leave."]}, {"cue": "Я пошёл в магазин.", "answer": "I went to the shop.", "distractors": ["It was someone else, not me, who went to the shop.", "I did not go to the shop."]}]
+shippedText=Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=763d91eb12ba1c8ef6553d9c700f800fb8ccfb93bdf41ff5a6ae83a19d1fd94b
+contentHash=d8d884fbe3c6647954658c8df12e40df8eedd8faeca5477215def44b05c8ef7e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-word-15`
+
+- Objectives: obj-u26-word-order
+- Sessions: u26-s-orient, u26-s-word-order
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8f878105f1341eaab41b2788be7bdf3273029c195befea38535314b8ff00bb0d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-word-order
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+Interpret supplied word order in context
+Separate the event from the focus
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+Read a story opening in its stated context
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+Recognize a neutral report without inventing a contrast
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+New and known information require context
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Guided practice
+Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
+Review the full contextual distinction
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Someone attributes the shopping trip to another person. Which English reading fits this sentence when the speaker corrects that attribution?
+В магазин пошёл я.
+В магазин пошёл я. has this supplied contextual reading: It was me who went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+It was me who went to the shop.
+The speaker did not go to the shop.
+The speaker went somewhere other than the shop.
+The speaker did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+The speaker went somewhere other than the shop. changes the event, participant or stated context; it does not match the supplied reading.
+At the beginning of a story about a past visit, which English reading fits this sentence?
+Пошёл я в магазин.
+Пошёл я в магазин. has this supplied contextual reading: I went to the shop, and the story continues. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop, and the story continues.
+I did not go to the shop.
+I will go to the shop after deciding to leave.
+I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+I will go to the shop after deciding to leave. changes the event, participant or stated context; it does not match the supplied reading.
+Reporting a past trip without contrasting the traveler or destination, which English reading fits this sentence?
+Я пошёл в магазин.
+Я пошёл в магазин. has this supplied contextual reading: I went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop.
+It was someone else, not me, who went to the shop.
+It was someone else, not me, who went to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+In the supplied context: It was me who went to the shop.
+In the supplied context: I went to the shop, and the story continues.
+In the supplied context: I went to the shop.
+[{"cue": "В магазин пошёл я.", "answer": "It was me who went to the shop.", "distractors": ["The speaker did not go to the shop.", "The speaker went somewhere other than the shop."]}, {"cue": "Пошёл я в магазин.", "answer": "I went to the shop, and the story continues.", "distractors": ["I did not go to the shop.", "I will go to the shop after deciding to leave."]}, {"cue": "Я пошёл в магазин.", "answer": "I went to the shop.", "distractors": ["It was someone else, not me, who went to the shop.", "I did not go to the shop."]}]
+shippedText=Someone attributes the shopping trip to another person. Which English reading fits this sentence when the speaker corrects that attribution?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=763d91eb12ba1c8ef6553d9c700f800fb8ccfb93bdf41ff5a6ae83a19d1fd94b
+contentHash=8aeab591d3d80630c9c01344bc98f29e54f00100facb466ddaea48ff436f5370
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-word-16`
+
+- Objectives: obj-u26-word-order
+- Sessions: u26-s-orient, u26-s-word-order
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9f3ce60ca2722473560a962034744767dd6489c280ac4d811373f8ac7ed48073
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-word-order
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+Interpret supplied word order in context
+Separate the event from the focus
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+Read a story opening in its stated context
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+Recognize a neutral report without inventing a contrast
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+New and known information require context
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Guided practice
+Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
+Review the full contextual distinction
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Someone attributes the shopping trip to another person. Which English reading fits this sentence when the speaker corrects that attribution?
+В магазин пошёл я.
+В магазин пошёл я. has this supplied contextual reading: It was me who went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+It was me who went to the shop.
+The speaker did not go to the shop.
+The speaker went somewhere other than the shop.
+The speaker did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+The speaker went somewhere other than the shop. changes the event, participant or stated context; it does not match the supplied reading.
+At the beginning of a story about a past visit, which English reading fits this sentence?
+Пошёл я в магазин.
+Пошёл я в магазин. has this supplied contextual reading: I went to the shop, and the story continues. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop, and the story continues.
+I did not go to the shop.
+I will go to the shop after deciding to leave.
+I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+I will go to the shop after deciding to leave. changes the event, participant or stated context; it does not match the supplied reading.
+Reporting a past trip without contrasting the traveler or destination, which English reading fits this sentence?
+Я пошёл в магазин.
+Я пошёл в магазин. has this supplied contextual reading: I went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop.
+It was someone else, not me, who went to the shop.
+It was someone else, not me, who went to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+In the supplied context: It was me who went to the shop.
+In the supplied context: I went to the shop, and the story continues.
+In the supplied context: I went to the shop.
+[{"cue": "В магазин пошёл я.", "answer": "It was me who went to the shop.", "distractors": ["The speaker did not go to the shop.", "The speaker went somewhere other than the shop."]}, {"cue": "Пошёл я в магазин.", "answer": "I went to the shop, and the story continues.", "distractors": ["I did not go to the shop.", "I will go to the shop after deciding to leave."]}, {"cue": "Я пошёл в магазин.", "answer": "I went to the shop.", "distractors": ["It was someone else, not me, who went to the shop.", "I did not go to the shop."]}]
+shippedText=В магазин пошёл я.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=763d91eb12ba1c8ef6553d9c700f800fb8ccfb93bdf41ff5a6ae83a19d1fd94b
+contentHash=c9ffe57d295efc1cb0730cd28dbfb851c0eb814c0ec1c64b423fe297f8b0a2fb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-word-17`
+
+- Objectives: obj-u26-word-order
+- Sessions: u26-s-orient, u26-s-word-order
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dd15887cc2f096592f297c3c76d84a23cbeddab10bfd97950cba5636349debb0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-word-order
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+Interpret supplied word order in context
+Separate the event from the focus
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+Read a story opening in its stated context
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+Recognize a neutral report without inventing a contrast
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+New and known information require context
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Guided practice
+Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
+Review the full contextual distinction
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Someone attributes the shopping trip to another person. Which English reading fits this sentence when the speaker corrects that attribution?
+В магазин пошёл я.
+В магазин пошёл я. has this supplied contextual reading: It was me who went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+It was me who went to the shop.
+The speaker did not go to the shop.
+The speaker went somewhere other than the shop.
+The speaker did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+The speaker went somewhere other than the shop. changes the event, participant or stated context; it does not match the supplied reading.
+At the beginning of a story about a past visit, which English reading fits this sentence?
+Пошёл я в магазин.
+Пошёл я в магазин. has this supplied contextual reading: I went to the shop, and the story continues. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop, and the story continues.
+I did not go to the shop.
+I will go to the shop after deciding to leave.
+I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+I will go to the shop after deciding to leave. changes the event, participant or stated context; it does not match the supplied reading.
+Reporting a past trip without contrasting the traveler or destination, which English reading fits this sentence?
+Я пошёл в магазин.
+Я пошёл в магазин. has this supplied contextual reading: I went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop.
+It was someone else, not me, who went to the shop.
+It was someone else, not me, who went to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+In the supplied context: It was me who went to the shop.
+In the supplied context: I went to the shop, and the story continues.
+In the supplied context: I went to the shop.
+[{"cue": "В магазин пошёл я.", "answer": "It was me who went to the shop.", "distractors": ["The speaker did not go to the shop.", "The speaker went somewhere other than the shop."]}, {"cue": "Пошёл я в магазин.", "answer": "I went to the shop, and the story continues.", "distractors": ["I did not go to the shop.", "I will go to the shop after deciding to leave."]}, {"cue": "Я пошёл в магазин.", "answer": "I went to the shop.", "distractors": ["It was someone else, not me, who went to the shop.", "I did not go to the shop."]}]
+shippedText=В магазин пошёл я. has this supplied contextual reading: It was me who went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=763d91eb12ba1c8ef6553d9c700f800fb8ccfb93bdf41ff5a6ae83a19d1fd94b
+contentHash=d8875fb9602aad62c9ef7da0a63fd9343f3db42b4a05fbc86584b21a431aefe0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-word-18`
+
+- Objectives: obj-u26-word-order
+- Sessions: u26-s-orient, u26-s-word-order
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c6cdddb477c2fd48e2d5bfea1b7e37d750be2c77f92a686a011050583da67192
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-word-order
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+Interpret supplied word order in context
+Separate the event from the focus
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+Read a story opening in its stated context
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+Recognize a neutral report without inventing a contrast
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+New and known information require context
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Guided practice
+Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
+Review the full contextual distinction
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Someone attributes the shopping trip to another person. Which English reading fits this sentence when the speaker corrects that attribution?
+В магазин пошёл я.
+В магазин пошёл я. has this supplied contextual reading: It was me who went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+It was me who went to the shop.
+The speaker did not go to the shop.
+The speaker went somewhere other than the shop.
+The speaker did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+The speaker went somewhere other than the shop. changes the event, participant or stated context; it does not match the supplied reading.
+At the beginning of a story about a past visit, which English reading fits this sentence?
+Пошёл я в магазин.
+Пошёл я в магазин. has this supplied contextual reading: I went to the shop, and the story continues. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop, and the story continues.
+I did not go to the shop.
+I will go to the shop after deciding to leave.
+I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+I will go to the shop after deciding to leave. changes the event, participant or stated context; it does not match the supplied reading.
+Reporting a past trip without contrasting the traveler or destination, which English reading fits this sentence?
+Я пошёл в магазин.
+Я пошёл в магазин. has this supplied contextual reading: I went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop.
+It was someone else, not me, who went to the shop.
+It was someone else, not me, who went to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+In the supplied context: It was me who went to the shop.
+In the supplied context: I went to the shop, and the story continues.
+In the supplied context: I went to the shop.
+[{"cue": "В магазин пошёл я.", "answer": "It was me who went to the shop.", "distractors": ["The speaker did not go to the shop.", "The speaker went somewhere other than the shop."]}, {"cue": "Пошёл я в магазин.", "answer": "I went to the shop, and the story continues.", "distractors": ["I did not go to the shop.", "I will go to the shop after deciding to leave."]}, {"cue": "Я пошёл в магазин.", "answer": "I went to the shop.", "distractors": ["It was someone else, not me, who went to the shop.", "I did not go to the shop."]}]
+shippedText=It was me who went to the shop.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=763d91eb12ba1c8ef6553d9c700f800fb8ccfb93bdf41ff5a6ae83a19d1fd94b
+contentHash=87bf836b7184d5decbb54ef64ba3473795fbbecbf252d6178b75fd5ba704d8dd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-word-19`
+
+- Objectives: obj-u26-word-order
+- Sessions: u26-s-orient, u26-s-word-order
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 70a61b2ba9338bc0d98c0f56d6e68db6e1d1d5b464b8fdc50dec48d2415c037f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-word-order
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+Interpret supplied word order in context
+Separate the event from the focus
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+Read a story opening in its stated context
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+Recognize a neutral report without inventing a contrast
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+New and known information require context
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Guided practice
+Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
+Review the full contextual distinction
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Someone attributes the shopping trip to another person. Which English reading fits this sentence when the speaker corrects that attribution?
+В магазин пошёл я.
+В магазин пошёл я. has this supplied contextual reading: It was me who went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+It was me who went to the shop.
+The speaker did not go to the shop.
+The speaker went somewhere other than the shop.
+The speaker did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+The speaker went somewhere other than the shop. changes the event, participant or stated context; it does not match the supplied reading.
+At the beginning of a story about a past visit, which English reading fits this sentence?
+Пошёл я в магазин.
+Пошёл я в магазин. has this supplied contextual reading: I went to the shop, and the story continues. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop, and the story continues.
+I did not go to the shop.
+I will go to the shop after deciding to leave.
+I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+I will go to the shop after deciding to leave. changes the event, participant or stated context; it does not match the supplied reading.
+Reporting a past trip without contrasting the traveler or destination, which English reading fits this sentence?
+Я пошёл в магазин.
+Я пошёл в магазин. has this supplied contextual reading: I went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop.
+It was someone else, not me, who went to the shop.
+It was someone else, not me, who went to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+In the supplied context: It was me who went to the shop.
+In the supplied context: I went to the shop, and the story continues.
+In the supplied context: I went to the shop.
+[{"cue": "В магазин пошёл я.", "answer": "It was me who went to the shop.", "distractors": ["The speaker did not go to the shop.", "The speaker went somewhere other than the shop."]}, {"cue": "Пошёл я в магазин.", "answer": "I went to the shop, and the story continues.", "distractors": ["I did not go to the shop.", "I will go to the shop after deciding to leave."]}, {"cue": "Я пошёл в магазин.", "answer": "I went to the shop.", "distractors": ["It was someone else, not me, who went to the shop.", "I did not go to the shop."]}]
+shippedText=The speaker did not go to the shop.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=763d91eb12ba1c8ef6553d9c700f800fb8ccfb93bdf41ff5a6ae83a19d1fd94b
+contentHash=7f6fd5e5530f02e66985049505edbe25e912fca0622de9b6fc237e74d680c8f5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-word-2`
+
+- Objectives: obj-u26-word-order
+- Sessions: u26-s-orient, u26-s-word-order
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 61666f6b4cf8fadf99eb8ed42094e711cf370328c01618b71b30a32147f3f13b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-word-order
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+Interpret supplied word order in context
+Separate the event from the focus
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+Read a story opening in its stated context
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+Recognize a neutral report without inventing a contrast
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+New and known information require context
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Guided practice
+Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
+Review the full contextual distinction
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Someone attributes the shopping trip to another person. Which English reading fits this sentence when the speaker corrects that attribution?
+В магазин пошёл я.
+В магазин пошёл я. has this supplied contextual reading: It was me who went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+It was me who went to the shop.
+The speaker did not go to the shop.
+The speaker went somewhere other than the shop.
+The speaker did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+The speaker went somewhere other than the shop. changes the event, participant or stated context; it does not match the supplied reading.
+At the beginning of a story about a past visit, which English reading fits this sentence?
+Пошёл я в магазин.
+Пошёл я в магазин. has this supplied contextual reading: I went to the shop, and the story continues. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop, and the story continues.
+I did not go to the shop.
+I will go to the shop after deciding to leave.
+I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+I will go to the shop after deciding to leave. changes the event, participant or stated context; it does not match the supplied reading.
+Reporting a past trip without contrasting the traveler or destination, which English reading fits this sentence?
+Я пошёл в магазин.
+Я пошёл в магазин. has this supplied contextual reading: I went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop.
+It was someone else, not me, who went to the shop.
+It was someone else, not me, who went to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+In the supplied context: It was me who went to the shop.
+In the supplied context: I went to the shop, and the story continues.
+In the supplied context: I went to the shop.
+[{"cue": "В магазин пошёл я.", "answer": "It was me who went to the shop.", "distractors": ["The speaker did not go to the shop.", "The speaker went somewhere other than the shop."]}, {"cue": "Пошёл я в магазин.", "answer": "I went to the shop, and the story continues.", "distractors": ["I did not go to the shop.", "I will go to the shop after deciding to leave."]}, {"cue": "Я пошёл в магазин.", "answer": "I went to the shop.", "distractors": ["It was someone else, not me, who went to the shop.", "I did not go to the shop."]}]
+shippedText=В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=763d91eb12ba1c8ef6553d9c700f800fb8ccfb93bdf41ff5a6ae83a19d1fd94b
+contentHash=2b18e586fb2e0ca32a052315b26a1ae66774424dcfcb5a68c9fd2b7d1a78d30f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-word-20`
+
+- Objectives: obj-u26-word-order
+- Sessions: u26-s-orient, u26-s-word-order
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4312053b6d5d3cd073f1b285b9efb9b4a7624e4f0d0220de8e450b0b30f1dabb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-word-order
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+Interpret supplied word order in context
+Separate the event from the focus
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+Read a story opening in its stated context
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+Recognize a neutral report without inventing a contrast
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+New and known information require context
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Guided practice
+Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
+Review the full contextual distinction
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Someone attributes the shopping trip to another person. Which English reading fits this sentence when the speaker corrects that attribution?
+В магазин пошёл я.
+В магазин пошёл я. has this supplied contextual reading: It was me who went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+It was me who went to the shop.
+The speaker did not go to the shop.
+The speaker went somewhere other than the shop.
+The speaker did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+The speaker went somewhere other than the shop. changes the event, participant or stated context; it does not match the supplied reading.
+At the beginning of a story about a past visit, which English reading fits this sentence?
+Пошёл я в магазин.
+Пошёл я в магазин. has this supplied contextual reading: I went to the shop, and the story continues. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop, and the story continues.
+I did not go to the shop.
+I will go to the shop after deciding to leave.
+I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+I will go to the shop after deciding to leave. changes the event, participant or stated context; it does not match the supplied reading.
+Reporting a past trip without contrasting the traveler or destination, which English reading fits this sentence?
+Я пошёл в магазин.
+Я пошёл в магазин. has this supplied contextual reading: I went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop.
+It was someone else, not me, who went to the shop.
+It was someone else, not me, who went to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+In the supplied context: It was me who went to the shop.
+In the supplied context: I went to the shop, and the story continues.
+In the supplied context: I went to the shop.
+[{"cue": "В магазин пошёл я.", "answer": "It was me who went to the shop.", "distractors": ["The speaker did not go to the shop.", "The speaker went somewhere other than the shop."]}, {"cue": "Пошёл я в магазин.", "answer": "I went to the shop, and the story continues.", "distractors": ["I did not go to the shop.", "I will go to the shop after deciding to leave."]}, {"cue": "Я пошёл в магазин.", "answer": "I went to the shop.", "distractors": ["It was someone else, not me, who went to the shop.", "I did not go to the shop."]}]
+shippedText=The speaker went somewhere other than the shop.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=763d91eb12ba1c8ef6553d9c700f800fb8ccfb93bdf41ff5a6ae83a19d1fd94b
+contentHash=a1e7adffe0b83ac30326f49abe0b511db5f939736cb3120953db125b8b61643a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-word-21`
+
+- Objectives: obj-u26-word-order
+- Sessions: u26-s-orient, u26-s-word-order
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 32aa2948f6076786ff2be796f3735b5d18f7e8ba9e0e3fc7e9a9e1a2042493d9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-word-order
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+Interpret supplied word order in context
+Separate the event from the focus
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+Read a story opening in its stated context
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+Recognize a neutral report without inventing a contrast
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+New and known information require context
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Guided practice
+Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
+Review the full contextual distinction
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Someone attributes the shopping trip to another person. Which English reading fits this sentence when the speaker corrects that attribution?
+В магазин пошёл я.
+В магазин пошёл я. has this supplied contextual reading: It was me who went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+It was me who went to the shop.
+The speaker did not go to the shop.
+The speaker went somewhere other than the shop.
+The speaker did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+The speaker went somewhere other than the shop. changes the event, participant or stated context; it does not match the supplied reading.
+At the beginning of a story about a past visit, which English reading fits this sentence?
+Пошёл я в магазин.
+Пошёл я в магазин. has this supplied contextual reading: I went to the shop, and the story continues. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop, and the story continues.
+I did not go to the shop.
+I will go to the shop after deciding to leave.
+I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+I will go to the shop after deciding to leave. changes the event, participant or stated context; it does not match the supplied reading.
+Reporting a past trip without contrasting the traveler or destination, which English reading fits this sentence?
+Я пошёл в магазин.
+Я пошёл в магазин. has this supplied contextual reading: I went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop.
+It was someone else, not me, who went to the shop.
+It was someone else, not me, who went to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+In the supplied context: It was me who went to the shop.
+In the supplied context: I went to the shop, and the story continues.
+In the supplied context: I went to the shop.
+[{"cue": "В магазин пошёл я.", "answer": "It was me who went to the shop.", "distractors": ["The speaker did not go to the shop.", "The speaker went somewhere other than the shop."]}, {"cue": "Пошёл я в магазин.", "answer": "I went to the shop, and the story continues.", "distractors": ["I did not go to the shop.", "I will go to the shop after deciding to leave."]}, {"cue": "Я пошёл в магазин.", "answer": "I went to the shop.", "distractors": ["It was someone else, not me, who went to the shop.", "I did not go to the shop."]}]
+shippedText=The speaker did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=763d91eb12ba1c8ef6553d9c700f800fb8ccfb93bdf41ff5a6ae83a19d1fd94b
+contentHash=e09d167c36f144711b1e6759861bae98cd8ccc34221295673dcb6a4e2c411f2b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-word-22`
+
+- Objectives: obj-u26-word-order
+- Sessions: u26-s-orient, u26-s-word-order
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8173bf4354f8cc18dd33af43dfaf43d16a523b4581b063b7f5dcf86817a107a7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-word-order
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+Interpret supplied word order in context
+Separate the event from the focus
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+Read a story opening in its stated context
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+Recognize a neutral report without inventing a contrast
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+New and known information require context
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Guided practice
+Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
+Review the full contextual distinction
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Someone attributes the shopping trip to another person. Which English reading fits this sentence when the speaker corrects that attribution?
+В магазин пошёл я.
+В магазин пошёл я. has this supplied contextual reading: It was me who went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+It was me who went to the shop.
+The speaker did not go to the shop.
+The speaker went somewhere other than the shop.
+The speaker did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+The speaker went somewhere other than the shop. changes the event, participant or stated context; it does not match the supplied reading.
+At the beginning of a story about a past visit, which English reading fits this sentence?
+Пошёл я в магазин.
+Пошёл я в магазин. has this supplied contextual reading: I went to the shop, and the story continues. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop, and the story continues.
+I did not go to the shop.
+I will go to the shop after deciding to leave.
+I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+I will go to the shop after deciding to leave. changes the event, participant or stated context; it does not match the supplied reading.
+Reporting a past trip without contrasting the traveler or destination, which English reading fits this sentence?
+Я пошёл в магазин.
+Я пошёл в магазин. has this supplied contextual reading: I went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop.
+It was someone else, not me, who went to the shop.
+It was someone else, not me, who went to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+In the supplied context: It was me who went to the shop.
+In the supplied context: I went to the shop, and the story continues.
+In the supplied context: I went to the shop.
+[{"cue": "В магазин пошёл я.", "answer": "It was me who went to the shop.", "distractors": ["The speaker did not go to the shop.", "The speaker went somewhere other than the shop."]}, {"cue": "Пошёл я в магазин.", "answer": "I went to the shop, and the story continues.", "distractors": ["I did not go to the shop.", "I will go to the shop after deciding to leave."]}, {"cue": "Я пошёл в магазин.", "answer": "I went to the shop.", "distractors": ["It was someone else, not me, who went to the shop.", "I did not go to the shop."]}]
+shippedText=The speaker went somewhere other than the shop. changes the event, participant or stated context; it does not match the supplied reading.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=763d91eb12ba1c8ef6553d9c700f800fb8ccfb93bdf41ff5a6ae83a19d1fd94b
+contentHash=a25b358c93cf2d87dbdb500f58e5a3318174209880f63ab8532595e9ac9caf95
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-word-23`
+
+- Objectives: obj-u26-word-order
+- Sessions: u26-s-orient, u26-s-word-order
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d3a75dbd682d754507655a5c5dfab9bcee298dd8aafdaa891156d5458ce2ce00
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-word-order
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+Interpret supplied word order in context
+Separate the event from the focus
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+Read a story opening in its stated context
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+Recognize a neutral report without inventing a contrast
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+New and known information require context
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Guided practice
+Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
+Review the full contextual distinction
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Someone attributes the shopping trip to another person. Which English reading fits this sentence when the speaker corrects that attribution?
+В магазин пошёл я.
+В магазин пошёл я. has this supplied contextual reading: It was me who went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+It was me who went to the shop.
+The speaker did not go to the shop.
+The speaker went somewhere other than the shop.
+The speaker did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+The speaker went somewhere other than the shop. changes the event, participant or stated context; it does not match the supplied reading.
+At the beginning of a story about a past visit, which English reading fits this sentence?
+Пошёл я в магазин.
+Пошёл я в магазин. has this supplied contextual reading: I went to the shop, and the story continues. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop, and the story continues.
+I did not go to the shop.
+I will go to the shop after deciding to leave.
+I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+I will go to the shop after deciding to leave. changes the event, participant or stated context; it does not match the supplied reading.
+Reporting a past trip without contrasting the traveler or destination, which English reading fits this sentence?
+Я пошёл в магазин.
+Я пошёл в магазин. has this supplied contextual reading: I went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop.
+It was someone else, not me, who went to the shop.
+It was someone else, not me, who went to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+In the supplied context: It was me who went to the shop.
+In the supplied context: I went to the shop, and the story continues.
+In the supplied context: I went to the shop.
+[{"cue": "В магазин пошёл я.", "answer": "It was me who went to the shop.", "distractors": ["The speaker did not go to the shop.", "The speaker went somewhere other than the shop."]}, {"cue": "Пошёл я в магазин.", "answer": "I went to the shop, and the story continues.", "distractors": ["I did not go to the shop.", "I will go to the shop after deciding to leave."]}, {"cue": "Я пошёл в магазин.", "answer": "I went to the shop.", "distractors": ["It was someone else, not me, who went to the shop.", "I did not go to the shop."]}]
+shippedText=At the beginning of a story about a past visit, which English reading fits this sentence?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=763d91eb12ba1c8ef6553d9c700f800fb8ccfb93bdf41ff5a6ae83a19d1fd94b
+contentHash=e6cf69d141610a6142231fe0f7218919fb7499e9ed5cca3f5e250998ff7ce969
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-word-24`
+
+- Objectives: obj-u26-word-order
+- Sessions: u26-s-orient, u26-s-word-order
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c4e80e225c162007b07104fb4452c7ce600c331b9f425b6cdb7dd76b4459297d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-word-order
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+Interpret supplied word order in context
+Separate the event from the focus
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+Read a story opening in its stated context
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+Recognize a neutral report without inventing a contrast
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+New and known information require context
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Guided practice
+Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
+Review the full contextual distinction
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Someone attributes the shopping trip to another person. Which English reading fits this sentence when the speaker corrects that attribution?
+В магазин пошёл я.
+В магазин пошёл я. has this supplied contextual reading: It was me who went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+It was me who went to the shop.
+The speaker did not go to the shop.
+The speaker went somewhere other than the shop.
+The speaker did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+The speaker went somewhere other than the shop. changes the event, participant or stated context; it does not match the supplied reading.
+At the beginning of a story about a past visit, which English reading fits this sentence?
+Пошёл я в магазин.
+Пошёл я в магазин. has this supplied contextual reading: I went to the shop, and the story continues. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop, and the story continues.
+I did not go to the shop.
+I will go to the shop after deciding to leave.
+I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+I will go to the shop after deciding to leave. changes the event, participant or stated context; it does not match the supplied reading.
+Reporting a past trip without contrasting the traveler or destination, which English reading fits this sentence?
+Я пошёл в магазин.
+Я пошёл в магазин. has this supplied contextual reading: I went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop.
+It was someone else, not me, who went to the shop.
+It was someone else, not me, who went to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+In the supplied context: It was me who went to the shop.
+In the supplied context: I went to the shop, and the story continues.
+In the supplied context: I went to the shop.
+[{"cue": "В магазин пошёл я.", "answer": "It was me who went to the shop.", "distractors": ["The speaker did not go to the shop.", "The speaker went somewhere other than the shop."]}, {"cue": "Пошёл я в магазин.", "answer": "I went to the shop, and the story continues.", "distractors": ["I did not go to the shop.", "I will go to the shop after deciding to leave."]}, {"cue": "Я пошёл в магазин.", "answer": "I went to the shop.", "distractors": ["It was someone else, not me, who went to the shop.", "I did not go to the shop."]}]
+shippedText=Пошёл я в магазин.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=763d91eb12ba1c8ef6553d9c700f800fb8ccfb93bdf41ff5a6ae83a19d1fd94b
+contentHash=5023391fca384a34e059824398fbb85adee90369578fc9e6d160d467107a2847
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-word-25`
+
+- Objectives: obj-u26-word-order
+- Sessions: u26-s-orient, u26-s-word-order
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a27f28a8d2a47c5ce9e5f5bad8a981ce9a9c081b5a858ca99357ccc4b04fc130
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-word-order
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+Interpret supplied word order in context
+Separate the event from the focus
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+Read a story opening in its stated context
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+Recognize a neutral report without inventing a contrast
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+New and known information require context
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Guided practice
+Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
+Review the full contextual distinction
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Someone attributes the shopping trip to another person. Which English reading fits this sentence when the speaker corrects that attribution?
+В магазин пошёл я.
+В магазин пошёл я. has this supplied contextual reading: It was me who went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+It was me who went to the shop.
+The speaker did not go to the shop.
+The speaker went somewhere other than the shop.
+The speaker did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+The speaker went somewhere other than the shop. changes the event, participant or stated context; it does not match the supplied reading.
+At the beginning of a story about a past visit, which English reading fits this sentence?
+Пошёл я в магазин.
+Пошёл я в магазин. has this supplied contextual reading: I went to the shop, and the story continues. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop, and the story continues.
+I did not go to the shop.
+I will go to the shop after deciding to leave.
+I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+I will go to the shop after deciding to leave. changes the event, participant or stated context; it does not match the supplied reading.
+Reporting a past trip without contrasting the traveler or destination, which English reading fits this sentence?
+Я пошёл в магазин.
+Я пошёл в магазин. has this supplied contextual reading: I went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop.
+It was someone else, not me, who went to the shop.
+It was someone else, not me, who went to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+In the supplied context: It was me who went to the shop.
+In the supplied context: I went to the shop, and the story continues.
+In the supplied context: I went to the shop.
+[{"cue": "В магазин пошёл я.", "answer": "It was me who went to the shop.", "distractors": ["The speaker did not go to the shop.", "The speaker went somewhere other than the shop."]}, {"cue": "Пошёл я в магазин.", "answer": "I went to the shop, and the story continues.", "distractors": ["I did not go to the shop.", "I will go to the shop after deciding to leave."]}, {"cue": "Я пошёл в магазин.", "answer": "I went to the shop.", "distractors": ["It was someone else, not me, who went to the shop.", "I did not go to the shop."]}]
+shippedText=Пошёл я в магазин. has this supplied contextual reading: I went to the shop, and the story continues. Read the stated discourse context rather than selecting an English word-order label.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=763d91eb12ba1c8ef6553d9c700f800fb8ccfb93bdf41ff5a6ae83a19d1fd94b
+contentHash=cf3f1866164f4c82a949c558d267c47eb1a6288634001972757cc321d071a96e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-word-26`
+
+- Objectives: obj-u26-word-order
+- Sessions: u26-s-orient, u26-s-word-order
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 245a2a5088cd75c3927daf7b7ce8ce4d530b6b2e4e72024a35b9695f4de68f9f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-word-order
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+Interpret supplied word order in context
+Separate the event from the focus
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+Read a story opening in its stated context
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+Recognize a neutral report without inventing a contrast
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+New and known information require context
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Guided practice
+Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
+Review the full contextual distinction
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Someone attributes the shopping trip to another person. Which English reading fits this sentence when the speaker corrects that attribution?
+В магазин пошёл я.
+В магазин пошёл я. has this supplied contextual reading: It was me who went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+It was me who went to the shop.
+The speaker did not go to the shop.
+The speaker went somewhere other than the shop.
+The speaker did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+The speaker went somewhere other than the shop. changes the event, participant or stated context; it does not match the supplied reading.
+At the beginning of a story about a past visit, which English reading fits this sentence?
+Пошёл я в магазин.
+Пошёл я в магазин. has this supplied contextual reading: I went to the shop, and the story continues. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop, and the story continues.
+I did not go to the shop.
+I will go to the shop after deciding to leave.
+I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+I will go to the shop after deciding to leave. changes the event, participant or stated context; it does not match the supplied reading.
+Reporting a past trip without contrasting the traveler or destination, which English reading fits this sentence?
+Я пошёл в магазин.
+Я пошёл в магазин. has this supplied contextual reading: I went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop.
+It was someone else, not me, who went to the shop.
+It was someone else, not me, who went to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+In the supplied context: It was me who went to the shop.
+In the supplied context: I went to the shop, and the story continues.
+In the supplied context: I went to the shop.
+[{"cue": "В магазин пошёл я.", "answer": "It was me who went to the shop.", "distractors": ["The speaker did not go to the shop.", "The speaker went somewhere other than the shop."]}, {"cue": "Пошёл я в магазин.", "answer": "I went to the shop, and the story continues.", "distractors": ["I did not go to the shop.", "I will go to the shop after deciding to leave."]}, {"cue": "Я пошёл в магазин.", "answer": "I went to the shop.", "distractors": ["It was someone else, not me, who went to the shop.", "I did not go to the shop."]}]
+shippedText=I went to the shop, and the story continues.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=763d91eb12ba1c8ef6553d9c700f800fb8ccfb93bdf41ff5a6ae83a19d1fd94b
+contentHash=1a601c77ce5d5e2d1f4a81621fe695de2c9374bfe34399044e19c1e8bd735622
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-word-27`
+
+- Objectives: obj-u26-word-order
+- Sessions: u26-s-orient, u26-s-word-order
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 070a4bc3f806174a1a60c271a8f6c6648d4fee50f6adddf2e8bd73b63d7404ff
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-word-order
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+Interpret supplied word order in context
+Separate the event from the focus
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+Read a story opening in its stated context
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+Recognize a neutral report without inventing a contrast
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+New and known information require context
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Guided practice
+Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
+Review the full contextual distinction
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Someone attributes the shopping trip to another person. Which English reading fits this sentence when the speaker corrects that attribution?
+В магазин пошёл я.
+В магазин пошёл я. has this supplied contextual reading: It was me who went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+It was me who went to the shop.
+The speaker did not go to the shop.
+The speaker went somewhere other than the shop.
+The speaker did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+The speaker went somewhere other than the shop. changes the event, participant or stated context; it does not match the supplied reading.
+At the beginning of a story about a past visit, which English reading fits this sentence?
+Пошёл я в магазин.
+Пошёл я в магазин. has this supplied contextual reading: I went to the shop, and the story continues. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop, and the story continues.
+I did not go to the shop.
+I will go to the shop after deciding to leave.
+I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+I will go to the shop after deciding to leave. changes the event, participant or stated context; it does not match the supplied reading.
+Reporting a past trip without contrasting the traveler or destination, which English reading fits this sentence?
+Я пошёл в магазин.
+Я пошёл в магазин. has this supplied contextual reading: I went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop.
+It was someone else, not me, who went to the shop.
+It was someone else, not me, who went to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+In the supplied context: It was me who went to the shop.
+In the supplied context: I went to the shop, and the story continues.
+In the supplied context: I went to the shop.
+[{"cue": "В магазин пошёл я.", "answer": "It was me who went to the shop.", "distractors": ["The speaker did not go to the shop.", "The speaker went somewhere other than the shop."]}, {"cue": "Пошёл я в магазин.", "answer": "I went to the shop, and the story continues.", "distractors": ["I did not go to the shop.", "I will go to the shop after deciding to leave."]}, {"cue": "Я пошёл в магазин.", "answer": "I went to the shop.", "distractors": ["It was someone else, not me, who went to the shop.", "I did not go to the shop."]}]
+shippedText=I did not go to the shop.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=763d91eb12ba1c8ef6553d9c700f800fb8ccfb93bdf41ff5a6ae83a19d1fd94b
+contentHash=d2be919f383386214b4229b9e2b408459fcf3b60912bb2656e03dda8c906c27c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-word-28`
+
+- Objectives: obj-u26-word-order
+- Sessions: u26-s-orient, u26-s-word-order
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ee06db2ec4e528f4338f5ccc6ebc0c8e9fd050ff333ab940b9e5d53f1d71bd9b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-word-order
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+Interpret supplied word order in context
+Separate the event from the focus
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+Read a story opening in its stated context
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+Recognize a neutral report without inventing a contrast
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+New and known information require context
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Guided practice
+Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
+Review the full contextual distinction
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Someone attributes the shopping trip to another person. Which English reading fits this sentence when the speaker corrects that attribution?
+В магазин пошёл я.
+В магазин пошёл я. has this supplied contextual reading: It was me who went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+It was me who went to the shop.
+The speaker did not go to the shop.
+The speaker went somewhere other than the shop.
+The speaker did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+The speaker went somewhere other than the shop. changes the event, participant or stated context; it does not match the supplied reading.
+At the beginning of a story about a past visit, which English reading fits this sentence?
+Пошёл я в магазин.
+Пошёл я в магазин. has this supplied contextual reading: I went to the shop, and the story continues. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop, and the story continues.
+I did not go to the shop.
+I will go to the shop after deciding to leave.
+I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+I will go to the shop after deciding to leave. changes the event, participant or stated context; it does not match the supplied reading.
+Reporting a past trip without contrasting the traveler or destination, which English reading fits this sentence?
+Я пошёл в магазин.
+Я пошёл в магазин. has this supplied contextual reading: I went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop.
+It was someone else, not me, who went to the shop.
+It was someone else, not me, who went to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+In the supplied context: It was me who went to the shop.
+In the supplied context: I went to the shop, and the story continues.
+In the supplied context: I went to the shop.
+[{"cue": "В магазин пошёл я.", "answer": "It was me who went to the shop.", "distractors": ["The speaker did not go to the shop.", "The speaker went somewhere other than the shop."]}, {"cue": "Пошёл я в магазин.", "answer": "I went to the shop, and the story continues.", "distractors": ["I did not go to the shop.", "I will go to the shop after deciding to leave."]}, {"cue": "Я пошёл в магазин.", "answer": "I went to the shop.", "distractors": ["It was someone else, not me, who went to the shop.", "I did not go to the shop."]}]
+shippedText=I will go to the shop after deciding to leave.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=763d91eb12ba1c8ef6553d9c700f800fb8ccfb93bdf41ff5a6ae83a19d1fd94b
+contentHash=67227e8ce5b0ccfc4f4b2c0145ad3578da6ddf2ee0d30bc2bbf2cb27350e3633
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-word-29`
+
+- Objectives: obj-u26-word-order
+- Sessions: u26-s-orient, u26-s-word-order
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 00cd04c730b3c2ae943578326f44dddc199595e124b87734a184930ac22d586b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-word-order
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+Interpret supplied word order in context
+Separate the event from the focus
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+Read a story opening in its stated context
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+Recognize a neutral report without inventing a contrast
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+New and known information require context
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Guided practice
+Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
+Review the full contextual distinction
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Someone attributes the shopping trip to another person. Which English reading fits this sentence when the speaker corrects that attribution?
+В магазин пошёл я.
+В магазин пошёл я. has this supplied contextual reading: It was me who went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+It was me who went to the shop.
+The speaker did not go to the shop.
+The speaker went somewhere other than the shop.
+The speaker did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+The speaker went somewhere other than the shop. changes the event, participant or stated context; it does not match the supplied reading.
+At the beginning of a story about a past visit, which English reading fits this sentence?
+Пошёл я в магазин.
+Пошёл я в магазин. has this supplied contextual reading: I went to the shop, and the story continues. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop, and the story continues.
+I did not go to the shop.
+I will go to the shop after deciding to leave.
+I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+I will go to the shop after deciding to leave. changes the event, participant or stated context; it does not match the supplied reading.
+Reporting a past trip without contrasting the traveler or destination, which English reading fits this sentence?
+Я пошёл в магазин.
+Я пошёл в магазин. has this supplied contextual reading: I went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop.
+It was someone else, not me, who went to the shop.
+It was someone else, not me, who went to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+In the supplied context: It was me who went to the shop.
+In the supplied context: I went to the shop, and the story continues.
+In the supplied context: I went to the shop.
+[{"cue": "В магазин пошёл я.", "answer": "It was me who went to the shop.", "distractors": ["The speaker did not go to the shop.", "The speaker went somewhere other than the shop."]}, {"cue": "Пошёл я в магазин.", "answer": "I went to the shop, and the story continues.", "distractors": ["I did not go to the shop.", "I will go to the shop after deciding to leave."]}, {"cue": "Я пошёл в магазин.", "answer": "I went to the shop.", "distractors": ["It was someone else, not me, who went to the shop.", "I did not go to the shop."]}]
+shippedText=I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=763d91eb12ba1c8ef6553d9c700f800fb8ccfb93bdf41ff5a6ae83a19d1fd94b
+contentHash=e6e40f2be9ec7dd357a1edb9dc25f912c4e0dfe1537546abd78bcccc3d3bb0e7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-word-3`
+
+- Objectives: obj-u26-word-order
+- Sessions: u26-s-orient, u26-s-word-order
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f3c2290031ca42f280ea70e03c2dd8b67165e58366955d1a969e2be96c6e88b2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-word-order
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+Interpret supplied word order in context
+Separate the event from the focus
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+Read a story opening in its stated context
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+Recognize a neutral report without inventing a contrast
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+New and known information require context
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Guided practice
+Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
+Review the full contextual distinction
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Someone attributes the shopping trip to another person. Which English reading fits this sentence when the speaker corrects that attribution?
+В магазин пошёл я.
+В магазин пошёл я. has this supplied contextual reading: It was me who went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+It was me who went to the shop.
+The speaker did not go to the shop.
+The speaker went somewhere other than the shop.
+The speaker did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+The speaker went somewhere other than the shop. changes the event, participant or stated context; it does not match the supplied reading.
+At the beginning of a story about a past visit, which English reading fits this sentence?
+Пошёл я в магазин.
+Пошёл я в магазин. has this supplied contextual reading: I went to the shop, and the story continues. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop, and the story continues.
+I did not go to the shop.
+I will go to the shop after deciding to leave.
+I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+I will go to the shop after deciding to leave. changes the event, participant or stated context; it does not match the supplied reading.
+Reporting a past trip without contrasting the traveler or destination, which English reading fits this sentence?
+Я пошёл в магазин.
+Я пошёл в магазин. has this supplied contextual reading: I went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop.
+It was someone else, not me, who went to the shop.
+It was someone else, not me, who went to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+In the supplied context: It was me who went to the shop.
+In the supplied context: I went to the shop, and the story continues.
+In the supplied context: I went to the shop.
+[{"cue": "В магазин пошёл я.", "answer": "It was me who went to the shop.", "distractors": ["The speaker did not go to the shop.", "The speaker went somewhere other than the shop."]}, {"cue": "Пошёл я в магазин.", "answer": "I went to the shop, and the story continues.", "distractors": ["I did not go to the shop.", "I will go to the shop after deciding to leave."]}, {"cue": "Я пошёл в магазин.", "answer": "I went to the shop.", "distractors": ["It was someone else, not me, who went to the shop.", "I did not go to the shop."]}]
+shippedText=Read a story opening in its stated context
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=763d91eb12ba1c8ef6553d9c700f800fb8ccfb93bdf41ff5a6ae83a19d1fd94b
+contentHash=0bbe23488a85028e251ed1782ab7279e195e70dac361371dd192f15172ec6a33
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-word-30`
+
+- Objectives: obj-u26-word-order
+- Sessions: u26-s-orient, u26-s-word-order
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2c50516a95f655b108f6b493ff043c2bf887bbcaee831340bed21e6a1d67b987
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-word-order
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+Interpret supplied word order in context
+Separate the event from the focus
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+Read a story opening in its stated context
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+Recognize a neutral report without inventing a contrast
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+New and known information require context
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Guided practice
+Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
+Review the full contextual distinction
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Someone attributes the shopping trip to another person. Which English reading fits this sentence when the speaker corrects that attribution?
+В магазин пошёл я.
+В магазин пошёл я. has this supplied contextual reading: It was me who went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+It was me who went to the shop.
+The speaker did not go to the shop.
+The speaker went somewhere other than the shop.
+The speaker did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+The speaker went somewhere other than the shop. changes the event, participant or stated context; it does not match the supplied reading.
+At the beginning of a story about a past visit, which English reading fits this sentence?
+Пошёл я в магазин.
+Пошёл я в магазин. has this supplied contextual reading: I went to the shop, and the story continues. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop, and the story continues.
+I did not go to the shop.
+I will go to the shop after deciding to leave.
+I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+I will go to the shop after deciding to leave. changes the event, participant or stated context; it does not match the supplied reading.
+Reporting a past trip without contrasting the traveler or destination, which English reading fits this sentence?
+Я пошёл в магазин.
+Я пошёл в магазин. has this supplied contextual reading: I went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop.
+It was someone else, not me, who went to the shop.
+It was someone else, not me, who went to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+In the supplied context: It was me who went to the shop.
+In the supplied context: I went to the shop, and the story continues.
+In the supplied context: I went to the shop.
+[{"cue": "В магазин пошёл я.", "answer": "It was me who went to the shop.", "distractors": ["The speaker did not go to the shop.", "The speaker went somewhere other than the shop."]}, {"cue": "Пошёл я в магазин.", "answer": "I went to the shop, and the story continues.", "distractors": ["I did not go to the shop.", "I will go to the shop after deciding to leave."]}, {"cue": "Я пошёл в магазин.", "answer": "I went to the shop.", "distractors": ["It was someone else, not me, who went to the shop.", "I did not go to the shop."]}]
+shippedText=I will go to the shop after deciding to leave. changes the event, participant or stated context; it does not match the supplied reading.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=763d91eb12ba1c8ef6553d9c700f800fb8ccfb93bdf41ff5a6ae83a19d1fd94b
+contentHash=d608d75895528854b04afde70eb656308e7a9f1efc0fb43f2a50b6d256464422
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-word-31`
+
+- Objectives: obj-u26-word-order
+- Sessions: u26-s-orient, u26-s-word-order
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4d4ac528bad85ed2ef1c8e67f83444f70ad9c8f7f378c87ac6974acc0c5534ac
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-word-order
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+Interpret supplied word order in context
+Separate the event from the focus
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+Read a story opening in its stated context
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+Recognize a neutral report without inventing a contrast
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+New and known information require context
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Guided practice
+Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
+Review the full contextual distinction
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Someone attributes the shopping trip to another person. Which English reading fits this sentence when the speaker corrects that attribution?
+В магазин пошёл я.
+В магазин пошёл я. has this supplied contextual reading: It was me who went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+It was me who went to the shop.
+The speaker did not go to the shop.
+The speaker went somewhere other than the shop.
+The speaker did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+The speaker went somewhere other than the shop. changes the event, participant or stated context; it does not match the supplied reading.
+At the beginning of a story about a past visit, which English reading fits this sentence?
+Пошёл я в магазин.
+Пошёл я в магазин. has this supplied contextual reading: I went to the shop, and the story continues. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop, and the story continues.
+I did not go to the shop.
+I will go to the shop after deciding to leave.
+I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+I will go to the shop after deciding to leave. changes the event, participant or stated context; it does not match the supplied reading.
+Reporting a past trip without contrasting the traveler or destination, which English reading fits this sentence?
+Я пошёл в магазин.
+Я пошёл в магазин. has this supplied contextual reading: I went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop.
+It was someone else, not me, who went to the shop.
+It was someone else, not me, who went to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+In the supplied context: It was me who went to the shop.
+In the supplied context: I went to the shop, and the story continues.
+In the supplied context: I went to the shop.
+[{"cue": "В магазин пошёл я.", "answer": "It was me who went to the shop.", "distractors": ["The speaker did not go to the shop.", "The speaker went somewhere other than the shop."]}, {"cue": "Пошёл я в магазин.", "answer": "I went to the shop, and the story continues.", "distractors": ["I did not go to the shop.", "I will go to the shop after deciding to leave."]}, {"cue": "Я пошёл в магазин.", "answer": "I went to the shop.", "distractors": ["It was someone else, not me, who went to the shop.", "I did not go to the shop."]}]
+shippedText=Reporting a past trip without contrasting the traveler or destination, which English reading fits this sentence?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=763d91eb12ba1c8ef6553d9c700f800fb8ccfb93bdf41ff5a6ae83a19d1fd94b
+contentHash=c0f95c682a89c4926a1a1fd68bb1e8e9013fc83bd6693bb8db4487f52a2884b8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-word-32`
+
+- Objectives: obj-u26-word-order
+- Sessions: u26-s-orient, u26-s-word-order
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1aeac84caefd78f195451fc6ef72b04fd92b2a4b80efb4d6b0737660cc428bf5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-word-order
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+Interpret supplied word order in context
+Separate the event from the focus
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+Read a story opening in its stated context
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+Recognize a neutral report without inventing a contrast
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+New and known information require context
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Guided practice
+Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
+Review the full contextual distinction
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Someone attributes the shopping trip to another person. Which English reading fits this sentence when the speaker corrects that attribution?
+В магазин пошёл я.
+В магазин пошёл я. has this supplied contextual reading: It was me who went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+It was me who went to the shop.
+The speaker did not go to the shop.
+The speaker went somewhere other than the shop.
+The speaker did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+The speaker went somewhere other than the shop. changes the event, participant or stated context; it does not match the supplied reading.
+At the beginning of a story about a past visit, which English reading fits this sentence?
+Пошёл я в магазин.
+Пошёл я в магазин. has this supplied contextual reading: I went to the shop, and the story continues. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop, and the story continues.
+I did not go to the shop.
+I will go to the shop after deciding to leave.
+I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+I will go to the shop after deciding to leave. changes the event, participant or stated context; it does not match the supplied reading.
+Reporting a past trip without contrasting the traveler or destination, which English reading fits this sentence?
+Я пошёл в магазин.
+Я пошёл в магазин. has this supplied contextual reading: I went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop.
+It was someone else, not me, who went to the shop.
+It was someone else, not me, who went to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+In the supplied context: It was me who went to the shop.
+In the supplied context: I went to the shop, and the story continues.
+In the supplied context: I went to the shop.
+[{"cue": "В магазин пошёл я.", "answer": "It was me who went to the shop.", "distractors": ["The speaker did not go to the shop.", "The speaker went somewhere other than the shop."]}, {"cue": "Пошёл я в магазин.", "answer": "I went to the shop, and the story continues.", "distractors": ["I did not go to the shop.", "I will go to the shop after deciding to leave."]}, {"cue": "Я пошёл в магазин.", "answer": "I went to the shop.", "distractors": ["It was someone else, not me, who went to the shop.", "I did not go to the shop."]}]
+shippedText=Я пошёл в магазин.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=763d91eb12ba1c8ef6553d9c700f800fb8ccfb93bdf41ff5a6ae83a19d1fd94b
+contentHash=22d1ce046862f699d15a2f7abd5fcecad9b1a80178400229f97be08f71208fcd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-word-33`
+
+- Objectives: obj-u26-word-order
+- Sessions: u26-s-orient, u26-s-word-order
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cbe7905c964c644ba30ed85f10043fa4e743391c1ef5255a6c99edbcc9ebde4a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-word-order
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+Interpret supplied word order in context
+Separate the event from the focus
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+Read a story opening in its stated context
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+Recognize a neutral report without inventing a contrast
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+New and known information require context
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Guided practice
+Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
+Review the full contextual distinction
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Someone attributes the shopping trip to another person. Which English reading fits this sentence when the speaker corrects that attribution?
+В магазин пошёл я.
+В магазин пошёл я. has this supplied contextual reading: It was me who went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+It was me who went to the shop.
+The speaker did not go to the shop.
+The speaker went somewhere other than the shop.
+The speaker did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+The speaker went somewhere other than the shop. changes the event, participant or stated context; it does not match the supplied reading.
+At the beginning of a story about a past visit, which English reading fits this sentence?
+Пошёл я в магазин.
+Пошёл я в магазин. has this supplied contextual reading: I went to the shop, and the story continues. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop, and the story continues.
+I did not go to the shop.
+I will go to the shop after deciding to leave.
+I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+I will go to the shop after deciding to leave. changes the event, participant or stated context; it does not match the supplied reading.
+Reporting a past trip without contrasting the traveler or destination, which English reading fits this sentence?
+Я пошёл в магазин.
+Я пошёл в магазин. has this supplied contextual reading: I went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop.
+It was someone else, not me, who went to the shop.
+It was someone else, not me, who went to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+In the supplied context: It was me who went to the shop.
+In the supplied context: I went to the shop, and the story continues.
+In the supplied context: I went to the shop.
+[{"cue": "В магазин пошёл я.", "answer": "It was me who went to the shop.", "distractors": ["The speaker did not go to the shop.", "The speaker went somewhere other than the shop."]}, {"cue": "Пошёл я в магазин.", "answer": "I went to the shop, and the story continues.", "distractors": ["I did not go to the shop.", "I will go to the shop after deciding to leave."]}, {"cue": "Я пошёл в магазин.", "answer": "I went to the shop.", "distractors": ["It was someone else, not me, who went to the shop.", "I did not go to the shop."]}]
+shippedText=Я пошёл в магазин. has this supplied contextual reading: I went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=763d91eb12ba1c8ef6553d9c700f800fb8ccfb93bdf41ff5a6ae83a19d1fd94b
+contentHash=184a9d09b701cd7365b9f09d1695b74e83eb1482e67a15a8dd48b88f3ce51d2b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-word-34`
+
+- Objectives: obj-u26-word-order
+- Sessions: u26-s-orient, u26-s-word-order
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8329c2b084b9cc5bd64a7e1d9a3037a41c676a32313ee2f829656fc068fb0067
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-word-order
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+Interpret supplied word order in context
+Separate the event from the focus
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+Read a story opening in its stated context
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+Recognize a neutral report without inventing a contrast
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+New and known information require context
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Guided practice
+Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
+Review the full contextual distinction
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Someone attributes the shopping trip to another person. Which English reading fits this sentence when the speaker corrects that attribution?
+В магазин пошёл я.
+В магазин пошёл я. has this supplied contextual reading: It was me who went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+It was me who went to the shop.
+The speaker did not go to the shop.
+The speaker went somewhere other than the shop.
+The speaker did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+The speaker went somewhere other than the shop. changes the event, participant or stated context; it does not match the supplied reading.
+At the beginning of a story about a past visit, which English reading fits this sentence?
+Пошёл я в магазин.
+Пошёл я в магазин. has this supplied contextual reading: I went to the shop, and the story continues. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop, and the story continues.
+I did not go to the shop.
+I will go to the shop after deciding to leave.
+I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+I will go to the shop after deciding to leave. changes the event, participant or stated context; it does not match the supplied reading.
+Reporting a past trip without contrasting the traveler or destination, which English reading fits this sentence?
+Я пошёл в магазин.
+Я пошёл в магазин. has this supplied contextual reading: I went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop.
+It was someone else, not me, who went to the shop.
+It was someone else, not me, who went to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+In the supplied context: It was me who went to the shop.
+In the supplied context: I went to the shop, and the story continues.
+In the supplied context: I went to the shop.
+[{"cue": "В магазин пошёл я.", "answer": "It was me who went to the shop.", "distractors": ["The speaker did not go to the shop.", "The speaker went somewhere other than the shop."]}, {"cue": "Пошёл я в магазин.", "answer": "I went to the shop, and the story continues.", "distractors": ["I did not go to the shop.", "I will go to the shop after deciding to leave."]}, {"cue": "Я пошёл в магазин.", "answer": "I went to the shop.", "distractors": ["It was someone else, not me, who went to the shop.", "I did not go to the shop."]}]
+shippedText=I went to the shop.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=763d91eb12ba1c8ef6553d9c700f800fb8ccfb93bdf41ff5a6ae83a19d1fd94b
+contentHash=bb3a2aea80af253e4cad8bd6c61a6446bcfb80c41366ee5e113b7682e61f6e1e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-word-35`
+
+- Objectives: obj-u26-word-order
+- Sessions: u26-s-orient, u26-s-word-order
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0df08bc543bf8276d775769a5b9afa010982028ea47acc2a08ce08ac28871d22
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-word-order
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+Interpret supplied word order in context
+Separate the event from the focus
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+Read a story opening in its stated context
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+Recognize a neutral report without inventing a contrast
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+New and known information require context
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Guided practice
+Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
+Review the full contextual distinction
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Someone attributes the shopping trip to another person. Which English reading fits this sentence when the speaker corrects that attribution?
+В магазин пошёл я.
+В магазин пошёл я. has this supplied contextual reading: It was me who went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+It was me who went to the shop.
+The speaker did not go to the shop.
+The speaker went somewhere other than the shop.
+The speaker did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+The speaker went somewhere other than the shop. changes the event, participant or stated context; it does not match the supplied reading.
+At the beginning of a story about a past visit, which English reading fits this sentence?
+Пошёл я в магазин.
+Пошёл я в магазин. has this supplied contextual reading: I went to the shop, and the story continues. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop, and the story continues.
+I did not go to the shop.
+I will go to the shop after deciding to leave.
+I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+I will go to the shop after deciding to leave. changes the event, participant or stated context; it does not match the supplied reading.
+Reporting a past trip without contrasting the traveler or destination, which English reading fits this sentence?
+Я пошёл в магазин.
+Я пошёл в магазин. has this supplied contextual reading: I went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop.
+It was someone else, not me, who went to the shop.
+It was someone else, not me, who went to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+In the supplied context: It was me who went to the shop.
+In the supplied context: I went to the shop, and the story continues.
+In the supplied context: I went to the shop.
+[{"cue": "В магазин пошёл я.", "answer": "It was me who went to the shop.", "distractors": ["The speaker did not go to the shop.", "The speaker went somewhere other than the shop."]}, {"cue": "Пошёл я в магазин.", "answer": "I went to the shop, and the story continues.", "distractors": ["I did not go to the shop.", "I will go to the shop after deciding to leave."]}, {"cue": "Я пошёл в магазин.", "answer": "I went to the shop.", "distractors": ["It was someone else, not me, who went to the shop.", "I did not go to the shop."]}]
+shippedText=It was someone else, not me, who went to the shop.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=763d91eb12ba1c8ef6553d9c700f800fb8ccfb93bdf41ff5a6ae83a19d1fd94b
+contentHash=27db39df36200725ea72f2c5565bc1e70c4b4a8e2472971b6ef9deb19ca2edf6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-word-36`
+
+- Objectives: obj-u26-word-order
+- Sessions: u26-s-orient, u26-s-word-order
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c30cf0331fa744e7d5b580f9b83e4ac1f5675e86ef8dbc24fb6dc68f18ff020a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-word-order
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+Interpret supplied word order in context
+Separate the event from the focus
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+Read a story opening in its stated context
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+Recognize a neutral report without inventing a contrast
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+New and known information require context
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Guided practice
+Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
+Review the full contextual distinction
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Someone attributes the shopping trip to another person. Which English reading fits this sentence when the speaker corrects that attribution?
+В магазин пошёл я.
+В магазин пошёл я. has this supplied contextual reading: It was me who went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+It was me who went to the shop.
+The speaker did not go to the shop.
+The speaker went somewhere other than the shop.
+The speaker did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+The speaker went somewhere other than the shop. changes the event, participant or stated context; it does not match the supplied reading.
+At the beginning of a story about a past visit, which English reading fits this sentence?
+Пошёл я в магазин.
+Пошёл я в магазин. has this supplied contextual reading: I went to the shop, and the story continues. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop, and the story continues.
+I did not go to the shop.
+I will go to the shop after deciding to leave.
+I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+I will go to the shop after deciding to leave. changes the event, participant or stated context; it does not match the supplied reading.
+Reporting a past trip without contrasting the traveler or destination, which English reading fits this sentence?
+Я пошёл в магазин.
+Я пошёл в магазин. has this supplied contextual reading: I went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop.
+It was someone else, not me, who went to the shop.
+It was someone else, not me, who went to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+In the supplied context: It was me who went to the shop.
+In the supplied context: I went to the shop, and the story continues.
+In the supplied context: I went to the shop.
+[{"cue": "В магазин пошёл я.", "answer": "It was me who went to the shop.", "distractors": ["The speaker did not go to the shop.", "The speaker went somewhere other than the shop."]}, {"cue": "Пошёл я в магазин.", "answer": "I went to the shop, and the story continues.", "distractors": ["I did not go to the shop.", "I will go to the shop after deciding to leave."]}, {"cue": "Я пошёл в магазин.", "answer": "I went to the shop.", "distractors": ["It was someone else, not me, who went to the shop.", "I did not go to the shop."]}]
+shippedText=It was someone else, not me, who went to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=763d91eb12ba1c8ef6553d9c700f800fb8ccfb93bdf41ff5a6ae83a19d1fd94b
+contentHash=26bbada87d0bfb14b4218f14ad03ad01ee7eb9a714e196c53b7bcef9e1706913
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-word-37`
+
+- Objectives: obj-u26-word-order
+- Sessions: u26-s-orient, u26-s-word-order
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 91fab9330aa18e4b733d5ea04e06c435c942f7aa6f276463fbeb1c3cc95213f7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-word-order
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+Interpret supplied word order in context
+Separate the event from the focus
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+Read a story opening in its stated context
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+Recognize a neutral report without inventing a contrast
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+New and known information require context
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Guided practice
+Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
+Review the full contextual distinction
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Someone attributes the shopping trip to another person. Which English reading fits this sentence when the speaker corrects that attribution?
+В магазин пошёл я.
+В магазин пошёл я. has this supplied contextual reading: It was me who went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+It was me who went to the shop.
+The speaker did not go to the shop.
+The speaker went somewhere other than the shop.
+The speaker did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+The speaker went somewhere other than the shop. changes the event, participant or stated context; it does not match the supplied reading.
+At the beginning of a story about a past visit, which English reading fits this sentence?
+Пошёл я в магазин.
+Пошёл я в магазин. has this supplied contextual reading: I went to the shop, and the story continues. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop, and the story continues.
+I did not go to the shop.
+I will go to the shop after deciding to leave.
+I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+I will go to the shop after deciding to leave. changes the event, participant or stated context; it does not match the supplied reading.
+Reporting a past trip without contrasting the traveler or destination, which English reading fits this sentence?
+Я пошёл в магазин.
+Я пошёл в магазин. has this supplied contextual reading: I went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop.
+It was someone else, not me, who went to the shop.
+It was someone else, not me, who went to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+In the supplied context: It was me who went to the shop.
+In the supplied context: I went to the shop, and the story continues.
+In the supplied context: I went to the shop.
+[{"cue": "В магазин пошёл я.", "answer": "It was me who went to the shop.", "distractors": ["The speaker did not go to the shop.", "The speaker went somewhere other than the shop."]}, {"cue": "Пошёл я в магазин.", "answer": "I went to the shop, and the story continues.", "distractors": ["I did not go to the shop.", "I will go to the shop after deciding to leave."]}, {"cue": "Я пошёл в магазин.", "answer": "I went to the shop.", "distractors": ["It was someone else, not me, who went to the shop.", "I did not go to the shop."]}]
+shippedText=In the supplied context: It was me who went to the shop.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=763d91eb12ba1c8ef6553d9c700f800fb8ccfb93bdf41ff5a6ae83a19d1fd94b
+contentHash=daf7799ad3a5774a2f15d7dd7d965150d2d1b6fdbbe3597b30bce2c487df8a96
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-word-38`
+
+- Objectives: obj-u26-word-order
+- Sessions: u26-s-orient, u26-s-word-order
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a5c6be49465719ce13856096a978d69699427e6ccb9ed30bee871ecd5b7394a8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-word-order
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+Interpret supplied word order in context
+Separate the event from the focus
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+Read a story opening in its stated context
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+Recognize a neutral report without inventing a contrast
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+New and known information require context
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Guided practice
+Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
+Review the full contextual distinction
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Someone attributes the shopping trip to another person. Which English reading fits this sentence when the speaker corrects that attribution?
+В магазин пошёл я.
+В магазин пошёл я. has this supplied contextual reading: It was me who went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+It was me who went to the shop.
+The speaker did not go to the shop.
+The speaker went somewhere other than the shop.
+The speaker did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+The speaker went somewhere other than the shop. changes the event, participant or stated context; it does not match the supplied reading.
+At the beginning of a story about a past visit, which English reading fits this sentence?
+Пошёл я в магазин.
+Пошёл я в магазин. has this supplied contextual reading: I went to the shop, and the story continues. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop, and the story continues.
+I did not go to the shop.
+I will go to the shop after deciding to leave.
+I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+I will go to the shop after deciding to leave. changes the event, participant or stated context; it does not match the supplied reading.
+Reporting a past trip without contrasting the traveler or destination, which English reading fits this sentence?
+Я пошёл в магазин.
+Я пошёл в магазин. has this supplied contextual reading: I went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop.
+It was someone else, not me, who went to the shop.
+It was someone else, not me, who went to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+In the supplied context: It was me who went to the shop.
+In the supplied context: I went to the shop, and the story continues.
+In the supplied context: I went to the shop.
+[{"cue": "В магазин пошёл я.", "answer": "It was me who went to the shop.", "distractors": ["The speaker did not go to the shop.", "The speaker went somewhere other than the shop."]}, {"cue": "Пошёл я в магазин.", "answer": "I went to the shop, and the story continues.", "distractors": ["I did not go to the shop.", "I will go to the shop after deciding to leave."]}, {"cue": "Я пошёл в магазин.", "answer": "I went to the shop.", "distractors": ["It was someone else, not me, who went to the shop.", "I did not go to the shop."]}]
+shippedText=In the supplied context: I went to the shop, and the story continues.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=763d91eb12ba1c8ef6553d9c700f800fb8ccfb93bdf41ff5a6ae83a19d1fd94b
+contentHash=e3f4743d75f6834326f482ccfb5b53c91f7bc2afa949d7f521cbb2599377e9ed
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-word-39`
+
+- Objectives: obj-u26-word-order
+- Sessions: u26-s-orient, u26-s-word-order
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0a820152f1dae200dcc1ede4c660f17d81ead7c05b922487e23e49053d46bff2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-word-order
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+Interpret supplied word order in context
+Separate the event from the focus
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+Read a story opening in its stated context
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+Recognize a neutral report without inventing a contrast
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+New and known information require context
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Guided practice
+Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
+Review the full contextual distinction
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Someone attributes the shopping trip to another person. Which English reading fits this sentence when the speaker corrects that attribution?
+В магазин пошёл я.
+В магазин пошёл я. has this supplied contextual reading: It was me who went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+It was me who went to the shop.
+The speaker did not go to the shop.
+The speaker went somewhere other than the shop.
+The speaker did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+The speaker went somewhere other than the shop. changes the event, participant or stated context; it does not match the supplied reading.
+At the beginning of a story about a past visit, which English reading fits this sentence?
+Пошёл я в магазин.
+Пошёл я в магазин. has this supplied contextual reading: I went to the shop, and the story continues. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop, and the story continues.
+I did not go to the shop.
+I will go to the shop after deciding to leave.
+I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+I will go to the shop after deciding to leave. changes the event, participant or stated context; it does not match the supplied reading.
+Reporting a past trip without contrasting the traveler or destination, which English reading fits this sentence?
+Я пошёл в магазин.
+Я пошёл в магазин. has this supplied contextual reading: I went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop.
+It was someone else, not me, who went to the shop.
+It was someone else, not me, who went to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+In the supplied context: It was me who went to the shop.
+In the supplied context: I went to the shop, and the story continues.
+In the supplied context: I went to the shop.
+[{"cue": "В магазин пошёл я.", "answer": "It was me who went to the shop.", "distractors": ["The speaker did not go to the shop.", "The speaker went somewhere other than the shop."]}, {"cue": "Пошёл я в магазин.", "answer": "I went to the shop, and the story continues.", "distractors": ["I did not go to the shop.", "I will go to the shop after deciding to leave."]}, {"cue": "Я пошёл в магазин.", "answer": "I went to the shop.", "distractors": ["It was someone else, not me, who went to the shop.", "I did not go to the shop."]}]
+shippedText=In the supplied context: I went to the shop.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=763d91eb12ba1c8ef6553d9c700f800fb8ccfb93bdf41ff5a6ae83a19d1fd94b
+contentHash=6bcd89b8e387a4caa937a16b36fc955fe8be2841916571f14d82fd211e23e2d4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-word-4`
+
+- Objectives: obj-u26-word-order
+- Sessions: u26-s-orient, u26-s-word-order
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e2fe1bf8fda8bde85e4489a1bda3ad4596c74d8ef055f27e99678848b01d36f5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-word-order
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+Interpret supplied word order in context
+Separate the event from the focus
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+Read a story opening in its stated context
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+Recognize a neutral report without inventing a contrast
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+New and known information require context
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Guided practice
+Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
+Review the full contextual distinction
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Someone attributes the shopping trip to another person. Which English reading fits this sentence when the speaker corrects that attribution?
+В магазин пошёл я.
+В магазин пошёл я. has this supplied contextual reading: It was me who went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+It was me who went to the shop.
+The speaker did not go to the shop.
+The speaker went somewhere other than the shop.
+The speaker did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+The speaker went somewhere other than the shop. changes the event, participant or stated context; it does not match the supplied reading.
+At the beginning of a story about a past visit, which English reading fits this sentence?
+Пошёл я в магазин.
+Пошёл я в магазин. has this supplied contextual reading: I went to the shop, and the story continues. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop, and the story continues.
+I did not go to the shop.
+I will go to the shop after deciding to leave.
+I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+I will go to the shop after deciding to leave. changes the event, participant or stated context; it does not match the supplied reading.
+Reporting a past trip without contrasting the traveler or destination, which English reading fits this sentence?
+Я пошёл в магазин.
+Я пошёл в магазин. has this supplied contextual reading: I went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop.
+It was someone else, not me, who went to the shop.
+It was someone else, not me, who went to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+In the supplied context: It was me who went to the shop.
+In the supplied context: I went to the shop, and the story continues.
+In the supplied context: I went to the shop.
+[{"cue": "В магазин пошёл я.", "answer": "It was me who went to the shop.", "distractors": ["The speaker did not go to the shop.", "The speaker went somewhere other than the shop."]}, {"cue": "Пошёл я в магазин.", "answer": "I went to the shop, and the story continues.", "distractors": ["I did not go to the shop.", "I will go to the shop after deciding to leave."]}, {"cue": "Я пошёл в магазин.", "answer": "I went to the shop.", "distractors": ["It was someone else, not me, who went to the shop.", "I did not go to the shop."]}]
+shippedText=Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=763d91eb12ba1c8ef6553d9c700f800fb8ccfb93bdf41ff5a6ae83a19d1fd94b
+contentHash=cad1cf108ab9f9dbfb1b639c6a6c959a682b1984fc8ae667d7bc9066b5a3ac4c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-word-5`
+
+- Objectives: obj-u26-word-order
+- Sessions: u26-s-orient, u26-s-word-order
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4dd3cad8cbbaed0bd9641d28bd5ff5762ebe5c284b5e0f6522102e2486982883
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-word-order
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+Interpret supplied word order in context
+Separate the event from the focus
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+Read a story opening in its stated context
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+Recognize a neutral report without inventing a contrast
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+New and known information require context
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Guided practice
+Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
+Review the full contextual distinction
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Someone attributes the shopping trip to another person. Which English reading fits this sentence when the speaker corrects that attribution?
+В магазин пошёл я.
+В магазин пошёл я. has this supplied contextual reading: It was me who went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+It was me who went to the shop.
+The speaker did not go to the shop.
+The speaker went somewhere other than the shop.
+The speaker did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+The speaker went somewhere other than the shop. changes the event, participant or stated context; it does not match the supplied reading.
+At the beginning of a story about a past visit, which English reading fits this sentence?
+Пошёл я в магазин.
+Пошёл я в магазин. has this supplied contextual reading: I went to the shop, and the story continues. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop, and the story continues.
+I did not go to the shop.
+I will go to the shop after deciding to leave.
+I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+I will go to the shop after deciding to leave. changes the event, participant or stated context; it does not match the supplied reading.
+Reporting a past trip without contrasting the traveler or destination, which English reading fits this sentence?
+Я пошёл в магазин.
+Я пошёл в магазин. has this supplied contextual reading: I went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop.
+It was someone else, not me, who went to the shop.
+It was someone else, not me, who went to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+In the supplied context: It was me who went to the shop.
+In the supplied context: I went to the shop, and the story continues.
+In the supplied context: I went to the shop.
+[{"cue": "В магазин пошёл я.", "answer": "It was me who went to the shop.", "distractors": ["The speaker did not go to the shop.", "The speaker went somewhere other than the shop."]}, {"cue": "Пошёл я в магазин.", "answer": "I went to the shop, and the story continues.", "distractors": ["I did not go to the shop.", "I will go to the shop after deciding to leave."]}, {"cue": "Я пошёл в магазин.", "answer": "I went to the shop.", "distractors": ["It was someone else, not me, who went to the shop.", "I did not go to the shop."]}]
+shippedText=Recognize a neutral report without inventing a contrast
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=763d91eb12ba1c8ef6553d9c700f800fb8ccfb93bdf41ff5a6ae83a19d1fd94b
+contentHash=de72fba862a25bce6d3fb89cd0e4e84a8120b4cb95ede18ed72003804ea6c9da
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-word-6`
+
+- Objectives: obj-u26-word-order
+- Sessions: u26-s-orient, u26-s-word-order
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9c348cfdd6ed4bffc428e903604d2350cc80b4b8f16f675b66d1de9de8602872
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-word-order
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+Interpret supplied word order in context
+Separate the event from the focus
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+Read a story opening in its stated context
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+Recognize a neutral report without inventing a contrast
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+New and known information require context
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Guided practice
+Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
+Review the full contextual distinction
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Someone attributes the shopping trip to another person. Which English reading fits this sentence when the speaker corrects that attribution?
+В магазин пошёл я.
+В магазин пошёл я. has this supplied contextual reading: It was me who went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+It was me who went to the shop.
+The speaker did not go to the shop.
+The speaker went somewhere other than the shop.
+The speaker did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+The speaker went somewhere other than the shop. changes the event, participant or stated context; it does not match the supplied reading.
+At the beginning of a story about a past visit, which English reading fits this sentence?
+Пошёл я в магазин.
+Пошёл я в магазин. has this supplied contextual reading: I went to the shop, and the story continues. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop, and the story continues.
+I did not go to the shop.
+I will go to the shop after deciding to leave.
+I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+I will go to the shop after deciding to leave. changes the event, participant or stated context; it does not match the supplied reading.
+Reporting a past trip without contrasting the traveler or destination, which English reading fits this sentence?
+Я пошёл в магазин.
+Я пошёл в магазин. has this supplied contextual reading: I went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop.
+It was someone else, not me, who went to the shop.
+It was someone else, not me, who went to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+In the supplied context: It was me who went to the shop.
+In the supplied context: I went to the shop, and the story continues.
+In the supplied context: I went to the shop.
+[{"cue": "В магазин пошёл я.", "answer": "It was me who went to the shop.", "distractors": ["The speaker did not go to the shop.", "The speaker went somewhere other than the shop."]}, {"cue": "Пошёл я в магазин.", "answer": "I went to the shop, and the story continues.", "distractors": ["I did not go to the shop.", "I will go to the shop after deciding to leave."]}, {"cue": "Я пошёл в магазин.", "answer": "I went to the shop.", "distractors": ["It was someone else, not me, who went to the shop.", "I did not go to the shop."]}]
+shippedText=Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=763d91eb12ba1c8ef6553d9c700f800fb8ccfb93bdf41ff5a6ae83a19d1fd94b
+contentHash=ca761667d85bae109b44e6732e70061531ade05c5a677959b2b7bb7d6e747a12
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-word-7`
+
+- Objectives: obj-u26-word-order
+- Sessions: u26-s-orient, u26-s-word-order
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7a78ca50f77e2aa65a9221b176733dc3d1198420d9a67d1e44ae0819b02b7dc5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-word-order
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+Interpret supplied word order in context
+Separate the event from the focus
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+Read a story opening in its stated context
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+Recognize a neutral report without inventing a contrast
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+New and known information require context
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Guided practice
+Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
+Review the full contextual distinction
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Someone attributes the shopping trip to another person. Which English reading fits this sentence when the speaker corrects that attribution?
+В магазин пошёл я.
+В магазин пошёл я. has this supplied contextual reading: It was me who went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+It was me who went to the shop.
+The speaker did not go to the shop.
+The speaker went somewhere other than the shop.
+The speaker did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+The speaker went somewhere other than the shop. changes the event, participant or stated context; it does not match the supplied reading.
+At the beginning of a story about a past visit, which English reading fits this sentence?
+Пошёл я в магазин.
+Пошёл я в магазин. has this supplied contextual reading: I went to the shop, and the story continues. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop, and the story continues.
+I did not go to the shop.
+I will go to the shop after deciding to leave.
+I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+I will go to the shop after deciding to leave. changes the event, participant or stated context; it does not match the supplied reading.
+Reporting a past trip without contrasting the traveler or destination, which English reading fits this sentence?
+Я пошёл в магазин.
+Я пошёл в магазин. has this supplied contextual reading: I went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop.
+It was someone else, not me, who went to the shop.
+It was someone else, not me, who went to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+In the supplied context: It was me who went to the shop.
+In the supplied context: I went to the shop, and the story continues.
+In the supplied context: I went to the shop.
+[{"cue": "В магазин пошёл я.", "answer": "It was me who went to the shop.", "distractors": ["The speaker did not go to the shop.", "The speaker went somewhere other than the shop."]}, {"cue": "Пошёл я в магазин.", "answer": "I went to the shop, and the story continues.", "distractors": ["I did not go to the shop.", "I will go to the shop after deciding to leave."]}, {"cue": "Я пошёл в магазин.", "answer": "I went to the shop.", "distractors": ["It was someone else, not me, who went to the shop.", "I did not go to the shop."]}]
+shippedText=New and known information require context
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=763d91eb12ba1c8ef6553d9c700f800fb8ccfb93bdf41ff5a6ae83a19d1fd94b
+contentHash=382c6ee7611295d06fb0c6b4e851ca7fa7dbdf46b8cd886b63ec481dfe3e9140
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-word-8`
+
+- Objectives: obj-u26-word-order
+- Sessions: u26-s-orient, u26-s-word-order
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 755574fe70f518e77ec1a48369f8a0fe2394898672f98e5f8dc1c45ef7f3c23a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-word-order
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+Interpret supplied word order in context
+Separate the event from the focus
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+Read a story opening in its stated context
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+Recognize a neutral report without inventing a contrast
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+New and known information require context
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Guided practice
+Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
+Review the full contextual distinction
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Someone attributes the shopping trip to another person. Which English reading fits this sentence when the speaker corrects that attribution?
+В магазин пошёл я.
+В магазин пошёл я. has this supplied contextual reading: It was me who went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+It was me who went to the shop.
+The speaker did not go to the shop.
+The speaker went somewhere other than the shop.
+The speaker did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+The speaker went somewhere other than the shop. changes the event, participant or stated context; it does not match the supplied reading.
+At the beginning of a story about a past visit, which English reading fits this sentence?
+Пошёл я в магазин.
+Пошёл я в магазин. has this supplied contextual reading: I went to the shop, and the story continues. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop, and the story continues.
+I did not go to the shop.
+I will go to the shop after deciding to leave.
+I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+I will go to the shop after deciding to leave. changes the event, participant or stated context; it does not match the supplied reading.
+Reporting a past trip without contrasting the traveler or destination, which English reading fits this sentence?
+Я пошёл в магазин.
+Я пошёл в магазин. has this supplied contextual reading: I went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop.
+It was someone else, not me, who went to the shop.
+It was someone else, not me, who went to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+In the supplied context: It was me who went to the shop.
+In the supplied context: I went to the shop, and the story continues.
+In the supplied context: I went to the shop.
+[{"cue": "В магазин пошёл я.", "answer": "It was me who went to the shop.", "distractors": ["The speaker did not go to the shop.", "The speaker went somewhere other than the shop."]}, {"cue": "Пошёл я в магазин.", "answer": "I went to the shop, and the story continues.", "distractors": ["I did not go to the shop.", "I will go to the shop after deciding to leave."]}, {"cue": "Я пошёл в магазин.", "answer": "I went to the shop.", "distractors": ["It was someone else, not me, who went to the shop.", "I did not go to the shop."]}]
+shippedText=В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=763d91eb12ba1c8ef6553d9c700f800fb8ccfb93bdf41ff5a6ae83a19d1fd94b
+contentHash=4cc153d8aa3632182fb1659bb3c5a73911c2b9ee5980d784c4d67e94befbab14
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-word-9`
+
+- Objectives: obj-u26-word-order
+- Sessions: u26-s-orient, u26-s-word-order
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c2369e5f9c52b8f5b2b66f409eee43e70b5efd1a541ffe511fdd8e34f4f53f9d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-word-order
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+Interpret supplied word order in context
+Separate the event from the focus
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+Read a story opening in its stated context
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+Recognize a neutral report without inventing a contrast
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+New and known information require context
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Guided practice
+Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
+Review the full contextual distinction
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Someone attributes the shopping trip to another person. Which English reading fits this sentence when the speaker corrects that attribution?
+В магазин пошёл я.
+В магазин пошёл я. has this supplied contextual reading: It was me who went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+It was me who went to the shop.
+The speaker did not go to the shop.
+The speaker went somewhere other than the shop.
+The speaker did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+The speaker went somewhere other than the shop. changes the event, participant or stated context; it does not match the supplied reading.
+At the beginning of a story about a past visit, which English reading fits this sentence?
+Пошёл я в магазин.
+Пошёл я в магазин. has this supplied contextual reading: I went to the shop, and the story continues. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop, and the story continues.
+I did not go to the shop.
+I will go to the shop after deciding to leave.
+I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+I will go to the shop after deciding to leave. changes the event, participant or stated context; it does not match the supplied reading.
+Reporting a past trip without contrasting the traveler or destination, which English reading fits this sentence?
+Я пошёл в магазин.
+Я пошёл в магазин. has this supplied contextual reading: I went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop.
+It was someone else, not me, who went to the shop.
+It was someone else, not me, who went to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+In the supplied context: It was me who went to the shop.
+In the supplied context: I went to the shop, and the story continues.
+In the supplied context: I went to the shop.
+[{"cue": "В магазин пошёл я.", "answer": "It was me who went to the shop.", "distractors": ["The speaker did not go to the shop.", "The speaker went somewhere other than the shop."]}, {"cue": "Пошёл я в магазин.", "answer": "I went to the shop, and the story continues.", "distractors": ["I did not go to the shop.", "I will go to the shop after deciding to leave."]}, {"cue": "Я пошёл в магазин.", "answer": "I went to the shop.", "distractors": ["It was someone else, not me, who went to the shop.", "I did not go to the shop."]}]
+shippedText=Guided practice
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=763d91eb12ba1c8ef6553d9c700f800fb8ccfb93bdf41ff5a6ae83a19d1fd94b
+contentHash=cb1d4a3d9d5db425da3797c7a997db3588ec122a60c4d645ea31cd849f76ab3c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u26-focus-word-capability`
+
+- Objectives: obj-u26-word-order
+- Sessions: u26-s-orient, u26-s-word-order
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6466ea4cc83e13ac7b5037676eff5b47344e6748e9c3cc35d676da13b76c3fb2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-word-order
+originalSourceText=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+Interpret supplied word order in context
+Separate the event from the focus
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+Read a story opening in its stated context
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+Recognize a neutral report without inventing a contrast
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+New and known information require context
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Guided practice
+Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
+Review the full contextual distinction
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Someone attributes the shopping trip to another person. Which English reading fits this sentence when the speaker corrects that attribution?
+В магазин пошёл я.
+В магазин пошёл я. has this supplied contextual reading: It was me who went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+It was me who went to the shop.
+The speaker did not go to the shop.
+The speaker went somewhere other than the shop.
+The speaker did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+The speaker went somewhere other than the shop. changes the event, participant or stated context; it does not match the supplied reading.
+At the beginning of a story about a past visit, which English reading fits this sentence?
+Пошёл я в магазин.
+Пошёл я в магазин. has this supplied contextual reading: I went to the shop, and the story continues. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop, and the story continues.
+I did not go to the shop.
+I will go to the shop after deciding to leave.
+I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+I will go to the shop after deciding to leave. changes the event, participant or stated context; it does not match the supplied reading.
+Reporting a past trip without contrasting the traveler or destination, which English reading fits this sentence?
+Я пошёл в магазин.
+Я пошёл в магазин. has this supplied contextual reading: I went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop.
+It was someone else, not me, who went to the shop.
+It was someone else, not me, who went to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+In the supplied context: It was me who went to the shop.
+In the supplied context: I went to the shop, and the story continues.
+In the supplied context: I went to the shop.
+[{"cue": "В магазин пошёл я.", "answer": "It was me who went to the shop.", "distractors": ["The speaker did not go to the shop.", "The speaker went somewhere other than the shop."]}, {"cue": "Пошёл я в магазин.", "answer": "I went to the shop, and the story continues.", "distractors": ["I did not go to the shop.", "I will go to the shop after deciding to leave."]}, {"cue": "Я пошёл в магазин.", "answer": "I went to the shop.", "distractors": ["It was someone else, not me, who went to the shop.", "I did not go to the shop."]}]
+shippedText=Interpret supplied word order in context
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion independently authored English contextual correction,2026-10-11; retained licensed Russian cues; no owned-book prose.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=763d91eb12ba1c8ef6553d9c700f800fb8ccfb93bdf41ff5a6ae83a19d1fd94b
+contentHash=7557169628db6bce0b01b13c2dc5c19cae4d686d06f999be53d4596cc92e206d
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -21528,27 +25174,80 @@ Rejected reading: recipient, premises, city, and postcode alone are not the comp
 
 - Objectives: obj-u26-word-order
 - Sessions: none
-- Source: src-wikipedia-russian-grammar-1369617627
-- Rights: rights-wikipedia-russian-grammar-1369617627
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: SOURCE_CAPABILITY
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 2635f78cb5562c966066c8a3b9b7f63535d21f1e9f4e9218286ad13dd7cab3e4
+- Content hash: 1a72ae311e2253c47dc41159a1066c849ac1ba9a72878d327a12ad042a3f4052
 
-sourceId=src-wikipedia-russian-grammar-1369617627
-sourceRevision=1369617627
-sourceRecordId=grammar:Basic word order, both in conversation and written language, is [[subject–verb–o
-sourceHash=30e7e08a32bd5ca619593ff841bc22fff849a3ce2fc516d1f0cf67ea0c8e5bb6
+sourceId=src-content-audit-research
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-obj-u26-word-order
+sourceHash=763d91eb12ba1c8ef6553d9c700f800fb8ccfb93bdf41ff5a6ae83a19d1fd94b
 supportedClaim=word-order
-exactSpan=Basic word order, both in conversation and written language, is [[subject–verb–object]]. However, because grammatical relationships are marked by inflection, considerable latitude in word order is allowed, and all possible permutations can be used. For example, the words in the phrase "я пошёл в магазин" ('I went to the shop') can be arranged:
-* Я пошёл в магазин. (I went to the shop; ''I went to the shop.'')
-* Я в магазин пошёл. (I to the shop went; approx. ''I am going out, my destination is the shop.'')
-* Пошёл я в магазин. (Went I to the shop; two meanings: can be treated as a beginning of a narrated story: ''"Went I to the shop, and something happened."'' or a decision made by someone after a long contemplation: ''"OK, I think I will go the shop."'')
-* Пошёл в магазин я. (Went to the shop I; rarely used, can be treated as a beginning of a line of a poem written in amphibrach due to uncommon word order, or when the speaker wants to highlight that exactly this subject "went to the shop". In that case, the subject is stressed)
-* В магазин я пошёл. (To the shop I went; two meanings: can be used as a response: "I went to the shop." – "Sorry, where did you go?" – ''"To the shop—that's where I went."'' or an emphasis on the way of transportation: ''I went to the shop on foot.'')
-* В магазин пошёл я. (To the shop went I; ''It was me who went to the shop.'')
-while maintaining grammatical correctness. Note, however, that the order of the phrase "в магазин" ("to the shop") is kept constant.
+exactSpan=Retained licensed frozen Russian-grammar word-order examples/revision1369617627 and indefinite-pronoun span/revision149963314. Rusgram pronoun primary indexed evidence consulted2026-10-11; full page timed out. Independently authored English contextual applications and explanations; review pending; no owned-book prose.
+Interpret supplied word order in context
+Separate the event from the focus
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
+Read a story opening in its stated context
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+Recognize a neutral report without inventing a contrast
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+New and known information require context
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Guided practice
+Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.
+Review the full contextual distinction
+В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.
 
-Word order can express logical stress, and degree of definiteness.
+Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.
+
+Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.
+
+В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.
+Independent checks
+Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.
+Someone attributes the shopping trip to another person. Which English reading fits this sentence when the speaker corrects that attribution?
+В магазин пошёл я.
+В магазин пошёл я. has this supplied contextual reading: It was me who went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+It was me who went to the shop.
+The speaker did not go to the shop.
+The speaker went somewhere other than the shop.
+The speaker did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+The speaker went somewhere other than the shop. changes the event, participant or stated context; it does not match the supplied reading.
+At the beginning of a story about a past visit, which English reading fits this sentence?
+Пошёл я в магазин.
+Пошёл я в магазин. has this supplied contextual reading: I went to the shop, and the story continues. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop, and the story continues.
+I did not go to the shop.
+I will go to the shop after deciding to leave.
+I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+I will go to the shop after deciding to leave. changes the event, participant or stated context; it does not match the supplied reading.
+Reporting a past trip without contrasting the traveler or destination, which English reading fits this sentence?
+Я пошёл в магазин.
+Я пошёл в магазин. has this supplied contextual reading: I went to the shop. Read the stated discourse context rather than selecting an English word-order label.
+I went to the shop.
+It was someone else, not me, who went to the shop.
+It was someone else, not me, who went to the shop. changes the event, participant or stated context; it does not match the supplied reading.
+In the supplied context: It was me who went to the shop.
+In the supplied context: I went to the shop, and the story continues.
+In the supplied context: I went to the shop.
+[{"cue": "В магазин пошёл я.", "answer": "It was me who went to the shop.", "distractors": ["The speaker did not go to the shop.", "The speaker went somewhere other than the shop."]}, {"cue": "Пошёл я в магазин.", "answer": "I went to the shop, and the story continues.", "distractors": ["I did not go to the shop.", "I will go to the shop after deciding to leave."]}, {"cue": "Я пошёл в магазин.", "answer": "I went to the shop.", "distractors": ["It was someone else, not me, who went to the shop.", "I did not go to the shop."]}]
+
+### SOURCE `src-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 4bb7355bcdaed471645229162f908afe75e5dc0978ea6ffc5617fbb237190d97
+
+Content-audit research notes
+Original app text
+Russian Companion content-audit research synthesis, content-audit-2026-10-08. Bibliography is on each note. No owned-book prose is included.
+Original research synthesis for registered content corrections. Not a quotation.
 
 ### SOURCE `src-wikipedia-russian-grammar-1369617627`
 
@@ -21625,21 +25324,6 @@ Original app text
 Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.
 Original research synthesis. Not a quotation of a third-party page.
 
-### SOURCE `src-content-audit-research`
-
-- Objectives: none
-- Sessions: none
-- Source: src-content-audit-research
-- Rights: rights-content-audit-research
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 4bb7355bcdaed471645229162f908afe75e5dc0978ea6ffc5617fbb237190d97
-
-Content-audit research notes
-Original app text
-Russian Companion content-audit research synthesis, content-audit-2026-10-08. Bibliography is on each note. No owned-book prose is included.
-Original research synthesis for registered content corrections. Not a quotation.
-
 ### SOURCE `src-app-english-v2`
 
 - Objectives: none
@@ -21654,6 +25338,20 @@ Independently authored companion English
 Original app text
 Russian Companion project
 Original
+
+### RIGHTS `rights-content-audit-research`
+
+- Objectives: none
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6e474fed734ce50e827ffb29f9c8eced5c10aa037e992e43e76435b822864375
+
+src-content-audit-research
+Original app text
+permitsAppUse=true
 
 ### RIGHTS `rights-wikipedia-russian-grammar-1369617627`
 
@@ -21722,20 +25420,6 @@ permitsAppUse=true
 - Content hash: 65ca0e4f268b6158cbfafc95d43b79c9894d018f538d27b8cf21e7000b24fbed
 
 src-original-research-synthesis
-Original app text
-permitsAppUse=true
-
-### RIGHTS `rights-content-audit-research`
-
-- Objectives: none
-- Sessions: none
-- Source: src-content-audit-research
-- Rights: rights-content-audit-research
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 6e474fed734ce50e827ffb29f9c8eced5c10aa037e992e43e76435b822864375
-
-src-content-audit-research
 Original app text
 permitsAppUse=true
 
@@ -21851,16 +25535,19 @@ permitsAppUse=true
 - `u26-st-teach-word-order-1` EXAMPLE `ex-u26-word-order-0`
 - `u26-st-teach-word-order-1` EXAMPLE `ex-u26-word-order-1`
 - `u26-st-teach-word-order-1` REFERENCE `ref-u2630-attribution`
-- `u26-st-guided-word-order-1` REMEDIATION `u26-st-rem-word-order`
-- `u26-st-guided-word-order-1` ITEM `u26-g-word-order-0`
 - `u26-st-teach-word-order-2` REFERENCE `ref-u2630-attribution`
 - `u26-st-teach-word-order-3` EXAMPLE `ex-u26-word-order-2`
 - `u26-st-teach-word-order-3` EXAMPLE `ex-u26-word-order-3`
 - `u26-st-teach-word-order-3` REFERENCE `ref-u2630-attribution`
 - `u26-st-teach-word-order-4` EXAMPLE `ex-u26-word-order-4`
 - `u26-st-teach-word-order-4` REFERENCE `ref-u2630-attribution`
+- `u26-st-guided-word-order-1` REMEDIATION `u26-st-rem-word-order`
+- `u26-st-guided-word-order-1` ITEM `u26-g-word-order-0`
 - `u26-st-rem-word-order` EXAMPLE `ex-u26-word-order-0`
 - `u26-st-rem-word-order` EXAMPLE `ex-u26-word-order-1`
+- `u26-st-rem-word-order` EXAMPLE `ex-u26-word-order-2`
+- `u26-st-rem-word-order` EXAMPLE `ex-u26-word-order-3`
+- `u26-st-rem-word-order` EXAMPLE `ex-u26-word-order-4`
 - `u26-st-check-word-order` REMEDIATION `u26-st-rem-word-order`
 - `u26-st-check-word-order` ITEM `u26-i-word-order-1`
 - `u26-st-check-word-order` ITEM `u26-i-word-order-2`
@@ -21896,13 +25583,14 @@ permitsAppUse=true
 - `u26-st-teach-indefinite-1` EXAMPLE `ex-u26-indefinite-0`
 - `u26-st-teach-indefinite-1` EXAMPLE `ex-u26-indefinite-1`
 - `u26-st-teach-indefinite-1` REFERENCE `ref-u2630-attribution`
-- `u26-st-guided-indefinite-1` REMEDIATION `u26-st-rem-indefinite`
-- `u26-st-guided-indefinite-1` ITEM `u26-g-indefinite-0`
 - `u26-st-teach-indefinite-2` REFERENCE `ref-u2630-attribution`
 - `u26-st-teach-indefinite-3` EXAMPLE `ex-u26-indefinite-2`
 - `u26-st-teach-indefinite-3` REFERENCE `ref-u2630-attribution`
+- `u26-st-guided-indefinite-1` REMEDIATION `u26-st-rem-indefinite`
+- `u26-st-guided-indefinite-1` ITEM `u26-g-indefinite-0`
 - `u26-st-rem-indefinite` EXAMPLE `ex-u26-indefinite-0`
 - `u26-st-rem-indefinite` EXAMPLE `ex-u26-indefinite-1`
+- `u26-st-rem-indefinite` EXAMPLE `ex-u26-indefinite-2`
 - `u26-st-check-indefinite` REMEDIATION `u26-st-rem-indefinite`
 - `u26-st-check-indefinite` ITEM `u26-i-indefinite-1`
 - `u26-st-check-indefinite` ITEM `u26-i-indefinite-2`
@@ -21961,6 +25649,65 @@ permitsAppUse=true
 - `obj-u26-word-order` PROVENANCE `prov-ca-26-606`
 - `obj-u26-word-order` PROVENANCE `prov-ca-26-619`
 - `obj-u26-word-order` PROVENANCE `prov-ca-26-620`
+- `obj-u26-indefinite` PROVENANCE `prov-ca-u26-focus-indefinite-0`
+- `obj-u26-indefinite` PROVENANCE `prov-ca-u26-focus-indefinite-1`
+- `obj-u26-indefinite` PROVENANCE `prov-ca-u26-focus-indefinite-10`
+- `obj-u26-indefinite` PROVENANCE `prov-ca-u26-focus-indefinite-11`
+- `obj-u26-indefinite` PROVENANCE `prov-ca-u26-focus-indefinite-12`
+- `obj-u26-indefinite` PROVENANCE `prov-ca-u26-focus-indefinite-13`
+- `obj-u26-indefinite` PROVENANCE `prov-ca-u26-focus-indefinite-14`
+- `obj-u26-indefinite` PROVENANCE `prov-ca-u26-focus-indefinite-15`
+- `obj-u26-indefinite` PROVENANCE `prov-ca-u26-focus-indefinite-16`
+- `obj-u26-indefinite` PROVENANCE `prov-ca-u26-focus-indefinite-17`
+- `obj-u26-indefinite` PROVENANCE `prov-ca-u26-focus-indefinite-18`
+- `obj-u26-indefinite` PROVENANCE `prov-ca-u26-focus-indefinite-2`
+- `obj-u26-indefinite` PROVENANCE `prov-ca-u26-focus-indefinite-3`
+- `obj-u26-indefinite` PROVENANCE `prov-ca-u26-focus-indefinite-4`
+- `obj-u26-indefinite` PROVENANCE `prov-ca-u26-focus-indefinite-5`
+- `obj-u26-indefinite` PROVENANCE `prov-ca-u26-focus-indefinite-6`
+- `obj-u26-indefinite` PROVENANCE `prov-ca-u26-focus-indefinite-7`
+- `obj-u26-indefinite` PROVENANCE `prov-ca-u26-focus-indefinite-8`
+- `obj-u26-indefinite` PROVENANCE `prov-ca-u26-focus-indefinite-9`
+- `obj-u26-word-order` PROVENANCE `prov-ca-u26-focus-word-1`
+- `obj-u26-word-order` PROVENANCE `prov-ca-u26-focus-word-10`
+- `obj-u26-word-order` PROVENANCE `prov-ca-u26-focus-word-11`
+- `obj-u26-word-order` PROVENANCE `prov-ca-u26-focus-word-12`
+- `obj-u26-word-order` PROVENANCE `prov-ca-u26-focus-word-13`
+- `obj-u26-word-order` PROVENANCE `prov-ca-u26-focus-word-14`
+- `obj-u26-word-order` PROVENANCE `prov-ca-u26-focus-word-15`
+- `obj-u26-word-order` PROVENANCE `prov-ca-u26-focus-word-16`
+- `obj-u26-word-order` PROVENANCE `prov-ca-u26-focus-word-17`
+- `obj-u26-word-order` PROVENANCE `prov-ca-u26-focus-word-18`
+- `obj-u26-word-order` PROVENANCE `prov-ca-u26-focus-word-19`
+- `obj-u26-word-order` PROVENANCE `prov-ca-u26-focus-word-2`
+- `obj-u26-word-order` PROVENANCE `prov-ca-u26-focus-word-20`
+- `obj-u26-word-order` PROVENANCE `prov-ca-u26-focus-word-21`
+- `obj-u26-word-order` PROVENANCE `prov-ca-u26-focus-word-22`
+- `obj-u26-word-order` PROVENANCE `prov-ca-u26-focus-word-23`
+- `obj-u26-word-order` PROVENANCE `prov-ca-u26-focus-word-24`
+- `obj-u26-word-order` PROVENANCE `prov-ca-u26-focus-word-25`
+- `obj-u26-word-order` PROVENANCE `prov-ca-u26-focus-word-26`
+- `obj-u26-word-order` PROVENANCE `prov-ca-u26-focus-word-27`
+- `obj-u26-word-order` PROVENANCE `prov-ca-u26-focus-word-28`
+- `obj-u26-word-order` PROVENANCE `prov-ca-u26-focus-word-29`
+- `obj-u26-word-order` PROVENANCE `prov-ca-u26-focus-word-3`
+- `obj-u26-word-order` PROVENANCE `prov-ca-u26-focus-word-30`
+- `obj-u26-word-order` PROVENANCE `prov-ca-u26-focus-word-31`
+- `obj-u26-word-order` PROVENANCE `prov-ca-u26-focus-word-32`
+- `obj-u26-word-order` PROVENANCE `prov-ca-u26-focus-word-33`
+- `obj-u26-word-order` PROVENANCE `prov-ca-u26-focus-word-34`
+- `obj-u26-word-order` PROVENANCE `prov-ca-u26-focus-word-35`
+- `obj-u26-word-order` PROVENANCE `prov-ca-u26-focus-word-36`
+- `obj-u26-word-order` PROVENANCE `prov-ca-u26-focus-word-37`
+- `obj-u26-word-order` PROVENANCE `prov-ca-u26-focus-word-38`
+- `obj-u26-word-order` PROVENANCE `prov-ca-u26-focus-word-39`
+- `obj-u26-word-order` PROVENANCE `prov-ca-u26-focus-word-4`
+- `obj-u26-word-order` PROVENANCE `prov-ca-u26-focus-word-5`
+- `obj-u26-word-order` PROVENANCE `prov-ca-u26-focus-word-6`
+- `obj-u26-word-order` PROVENANCE `prov-ca-u26-focus-word-7`
+- `obj-u26-word-order` PROVENANCE `prov-ca-u26-focus-word-8`
+- `obj-u26-word-order` PROVENANCE `prov-ca-u26-focus-word-9`
+- `obj-u26-word-order` PROVENANCE `prov-ca-u26-focus-word-capability`
 - `obj-u26-letter-writing` PROVENANCE `prov-ca-u26-letter-capability`
 - `obj-u26-letter-writing` PROVENANCE `prov-ca-u26-letter-label-1`
 - `obj-u26-letter-writing` PROVENANCE `prov-ca-u26-letter-label-10`
