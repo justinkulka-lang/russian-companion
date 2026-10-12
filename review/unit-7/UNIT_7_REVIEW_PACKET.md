@@ -11,12 +11,12 @@ Unit 7 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 4f5cb8024d3f68a37052fdf85b5755bffa2a0904
-- Unit content-review SHA-256: 46332a8e69325d3f187746e3e0d68b010a3662a980257bde7de05fd0636757fb
+- Curriculum source commit: b48d4a575e0d8496de4e02c4e7af6d4795d4309f
+- Unit content-review SHA-256: 0a4df65c918a87854c5088faf14ad2f6b9338d0b395452429ce6fd2a4caa1a6d
 - Mapping-package SHA-256: e39515585eea5b131797f0c93ce3508ee99b27206cc21070675d06aa975373c0
-- Pack content-review SHA-256: 1b9b4165f6fd32307de0f8b3d9c262d71512fa8cad3e4b0396f3a3c1a6dffa12
-- Review-package SHA-256: 9872ce412b515a6633811a7fb20a857c508ae61b8297577c715630291f0e52ef
-- Repository source SHA-256: 74145307b4a6df18e6a808aa4763aa72949aeece2b70286e7ab175c6a9148c46
+- Pack content-review SHA-256: 8b680bd4042fd8cc5e836923ac06d3d14bfca6157a7cccc12cec0f7df2c27698
+- Review-package SHA-256: 444e13e9aa62b4b120928c6f1381898565a9ff47cc2a8bf1c0edc6fc2a001a65
+- Repository source SHA-256: c305f2f15bf5f3d1e717e7c5246d83aeb46413ea063b43a8223dfdbe8f4c5cbc
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -3530,7 +3530,7 @@ relationParticipantIds=prov-ex-or-u7-question-0 | prov-ex-or-u7-question-3 | pro
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: f877e1a58ef4290e36c7afa3109a31b8efba498361f8486de42b0715e6d94712
+- Content hash: ec7075b64f7b2970743a59c20665026b5433cd65b1fac66dd5628a6bd91302e9
 
 kind=FORM_SELECTION
 language=en
@@ -3538,11 +3538,11 @@ prompt=Which admitted form does the shown line use?
 promptLetter=эти хорошие новые студенты
 options=э́ти | э́та
 answer=э́ти
-feedback=Does the admitted record show the governed contrast? э́ти.
+feedback=The shown line means these good new students and refers to more than one student. э́ти is the nominative plural form of this demonstrative, so it matches the plural phrase. э́та is feminine singular and does not match this phrase.
 objectiveId=obj-u7-demonstrative
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the other row of the same word, and the shown line uses another row.
+distractorRationales= | э́та is nominative feminine singular instead of the plural agreement used in the shown phrase.
 testedFeature=DEMONSTRATIVE_AGREEMENT
 evidenceMode=SAME_CONSTRUCTION_DIFFERENT_FORM
 contrastSetId=u7-demonstrative-0
@@ -3550,8 +3550,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-or-u7-demonstrative-3
 distractorSourceIds= | prov-ex-or-u7-demonstrative-1
-distractorDifference= | This form is the other row of the same word, and the shown line uses another row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | э́та is nominative feminine singular instead of the plural agreement used in the shown phrase.
+whyAnswerDemonstratesObjective=The shown line means these good new students and refers to more than one student. э́ти is the nominative plural form of this demonstrative, so it matches the plural phrase. э́та is feminine singular and does not match this phrase.
 contrastMembers=э́ти | э́та
 relationKind=SAME_CONSTRUCTION_DIFFERENT_FORM
 relationParticipantIds=prov-ex-u7-demonstrative-0-ru | prov-ex-or-u7-demonstrative-3 | prov-ex-or-u7-demonstrative-1
@@ -4011,7 +4011,7 @@ relationParticipantIds=prov-ex-or-u7-endings-8 | prov-ex-or-u7-endings-7 | prov-
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 2d69caa86bbcf6942000d6ed3aa0216ec5321bed56411c4c648c710a9a8e3c00
+- Content hash: 6d07ea57620afec9391fa6d52418ef638ddc5848f501ae6a8342b0ebbb4c8aee
 
 kind=FORM_SELECTION
 language=en
@@ -4019,11 +4019,11 @@ prompt=Which admitted form agrees with the shown word?
 promptLetter=машина
 options=но́вая | но́вый | но́вые
 answer=но́вая
-feedback=Does the admitted record show the governed contrast? но́вая.
+feedback=но́вая agrees with the shown feminine singular noun in the nominative, as in the retained new car phrase. но́вый is masculine singular and но́вые is plural. Choose the form that matches the noun in this phrase, rather than the dictionary form or a plural form.
 objectiveId=obj-u7-endings
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the other row of the same word, not the row of the shown word. | This form is the plural row of the same word, not the row of the shown word.
+distractorRationales= | но́вый is nominative masculine singular instead of the feminine singular agreement required here. | но́вые is nominative plural instead of the singular agreement required here.
 testedFeature=ADJECTIVE_AGREEMENT
 evidenceMode=SAME_CONSTRUCTION_DIFFERENT_FORM
 contrastSetId=u7-endings-4
@@ -4031,8 +4031,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u7-endings-8
 distractorSourceIds= | prov-ex-or-u7-endings-7 | prov-ex-or-u7-endings-10
-distractorDifference= | This form is the other row of the same word, not the row of the shown word. | This form is the plural row of the same word, not the row of the shown word.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | но́вый is nominative masculine singular instead of the feminine singular agreement required here. | но́вые is nominative plural instead of the singular agreement required here.
+whyAnswerDemonstratesObjective=но́вая agrees with the shown feminine singular noun in the nominative, as in the retained new car phrase. но́вый is masculine singular and но́вые is plural. Choose the form that matches the noun in this phrase, rather than the dictionary form or a plural form.
 contrastMembers=но́вая | но́вый | но́вые
 relationKind=SAME_CONSTRUCTION_DIFFERENT_FORM
 relationParticipantIds=prov-u7-endings-x-1 | prov-ex-or-u7-endings-8 | prov-ex-or-u7-endings-7 | prov-ex-or-u7-endings-10
@@ -13331,6 +13331,156 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-ca-u7-feedback-u7-g-demonstrative-0`
+
+- Objectives: obj-u7-demonstrative
+- Sessions: u7-s-orient, u7-s-demonstrative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 539cefc4d325fef7ce7942e9188ef46b842456ed6829381d4949afd0e30757f8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u7-demonstrative:feedback:u7-g-demonstrative-0
+originalSourceText=Retained Wikibooks Russian/Grammar/Adjectives oldid4292379, catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt, CC BY-SA 4.0: complete opening agreement definition and Nominative adjectives / Hard endings numbered examples new car and these good new students. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: adjectives.csv новый decl_f_nom/decl_m_nom/decl_pl_nom, этот decl_pl_nom/decl_f_nom; nouns.csv машина gender=f and sg_nom. Original Russian options, noun cue and complete plural phrase remain unchanged; no ending-only gender inference or new Russian form is taught. Bounded recognition of these nominative examples, not a productive paradigm or a claim that every source rule is correct. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+The shown line means these good new students and refers to more than one student. э́ти is the nominative plural form of this demonstrative, so it matches the plural phrase. э́та is feminine singular and does not match this phrase.
+shippedText=The shown line means these good new students and refers to more than one student. э́ти is the nominative plural form of this demonstrative, so it matches the plural phrase. э́та is feminine singular and does not match this phrase.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bbfe5b7adb44a35ccef3555d8dab0771401b7ccdf3facf99cd683b66bd737c5c
+contentHash=cfb268277429a904bb41acb8940e62ee0b4159550d04cd42e865fb151601d3b1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u7-feedback-u7-g-demonstrative-0-distractor-1`
+
+- Objectives: obj-u7-demonstrative
+- Sessions: u7-s-orient, u7-s-demonstrative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2ddbb298e84e8cbaae1efdc2ae00838fdb9f4932d9a28ea185946a33fbbf45b0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u7-demonstrative:feedback:u7-g-demonstrative-0-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Adjectives oldid4292379, catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt, CC BY-SA 4.0: complete opening agreement definition and Nominative adjectives / Hard endings numbered examples new car and these good new students. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: adjectives.csv новый decl_f_nom/decl_m_nom/decl_pl_nom, этот decl_pl_nom/decl_f_nom; nouns.csv машина gender=f and sg_nom. Original Russian options, noun cue and complete plural phrase remain unchanged; no ending-only gender inference or new Russian form is taught. Bounded recognition of these nominative examples, not a productive paradigm or a claim that every source rule is correct. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+э́та is nominative feminine singular instead of the plural agreement used in the shown phrase.
+shippedText=э́та is nominative feminine singular instead of the plural agreement used in the shown phrase.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e391f6c6a3b39e970b90a8128d45b99dc2a97eda90b3b60b9ba66c57af5fad9a
+contentHash=9e90e134e7ba6d1feb03ef2b7ade143bd560ecc25d27d21da432a39ce5b38aa3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u7-feedback-u7-i-endings-4`
+
+- Objectives: obj-u7-endings
+- Sessions: u7-s-orient, u7-s-endings
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 89e8764117c66e954a3112d7ff07e9cb9c0517e8bbc7d57fb353d0d7fb1685c1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u7-endings:feedback:u7-i-endings-4
+originalSourceText=Retained Wikibooks Russian/Grammar/Adjectives oldid4292379, catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt, CC BY-SA 4.0: complete opening agreement definition and Nominative adjectives / Hard endings numbered examples new car and these good new students. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: adjectives.csv новый decl_f_nom/decl_m_nom/decl_pl_nom, этот decl_pl_nom/decl_f_nom; nouns.csv машина gender=f and sg_nom. Original Russian options, noun cue and complete plural phrase remain unchanged; no ending-only gender inference or new Russian form is taught. Bounded recognition of these nominative examples, not a productive paradigm or a claim that every source rule is correct. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+но́вая agrees with the shown feminine singular noun in the nominative, as in the retained new car phrase. но́вый is masculine singular and но́вые is plural. Choose the form that matches the noun in this phrase, rather than the dictionary form or a plural form.
+shippedText=но́вая agrees with the shown feminine singular noun in the nominative, as in the retained new car phrase. но́вый is masculine singular and но́вые is plural. Choose the form that matches the noun in this phrase, rather than the dictionary form or a plural form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6c1610cfd5b57de103b2773f51914b5d84f5be80ea999227e3e4b5b16dc1d99a
+contentHash=a2d7eee4a8e69e56548c77acb8cd1c3f152e622df6adbb04328f265a8229cfc4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u7-feedback-u7-i-endings-4-distractor-1`
+
+- Objectives: obj-u7-endings
+- Sessions: u7-s-orient, u7-s-endings
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d06f85328dedb932a95789417bbf376682592e4e463cf828e4a384b0de0c1db7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u7-endings:feedback:u7-i-endings-4-distractor-1
+originalSourceText=Retained Wikibooks Russian/Grammar/Adjectives oldid4292379, catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt, CC BY-SA 4.0: complete opening agreement definition and Nominative adjectives / Hard endings numbered examples new car and these good new students. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: adjectives.csv новый decl_f_nom/decl_m_nom/decl_pl_nom, этот decl_pl_nom/decl_f_nom; nouns.csv машина gender=f and sg_nom. Original Russian options, noun cue and complete plural phrase remain unchanged; no ending-only gender inference or new Russian form is taught. Bounded recognition of these nominative examples, not a productive paradigm or a claim that every source rule is correct. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+но́вый is nominative masculine singular instead of the feminine singular agreement required here.
+shippedText=но́вый is nominative masculine singular instead of the feminine singular agreement required here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4ca3710c4b0db4a4be5420872fc59c4705fe8ea314e4315f3ea6dcb693b36151
+contentHash=6ec6a2e25c8fc6ca34699fbaff078e3c60c3d05250e7e9c648de5999a048dfa3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u7-feedback-u7-i-endings-4-distractor-2`
+
+- Objectives: obj-u7-endings
+- Sessions: u7-s-orient, u7-s-endings
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d96a297302e1c1189d05b984ee78b0cd3516a1f2a0859f3cbfafdde447626bc4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u7-endings:feedback:u7-i-endings-4-distractor-2
+originalSourceText=Retained Wikibooks Russian/Grammar/Adjectives oldid4292379, catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt, CC BY-SA 4.0: complete opening agreement definition and Nominative adjectives / Hard endings numbered examples new car and these good new students. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: adjectives.csv новый decl_f_nom/decl_m_nom/decl_pl_nom, этот decl_pl_nom/decl_f_nom; nouns.csv машина gender=f and sg_nom. Original Russian options, noun cue and complete plural phrase remain unchanged; no ending-only gender inference or new Russian form is taught. Bounded recognition of these nominative examples, not a productive paradigm or a claim that every source rule is correct. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+но́вые is nominative plural instead of the singular agreement required here.
+shippedText=но́вые is nominative plural instead of the singular agreement required here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d5e7cac4b88f00be422decf8ae430fcc4066708c1dbb13a7c2c86ba3d8cba135
+contentHash=a80bc279e115d2d69cd8acd1236ffbf262ac19bb3833aaff3b505c3ce18cefcf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-ca-u7-objectadj-f-nom`
 
 - Objectives: obj-u7-objectadj
@@ -21628,6 +21778,11 @@ permitsAppUse=true
 - `obj-u7-adverb-paradigm` PROVENANCE `prov-ca-repair-7-11077`
 - `obj-u7-adverb-paradigm` PROVENANCE `prov-ca-repair-7-11078`
 - `obj-u7-adverb-paradigm` PROVENANCE `prov-ca-repair-7-11079`
+- `obj-u7-demonstrative` PROVENANCE `prov-ca-u7-feedback-u7-g-demonstrative-0`
+- `obj-u7-demonstrative` PROVENANCE `prov-ca-u7-feedback-u7-g-demonstrative-0-distractor-1`
+- `obj-u7-endings` PROVENANCE `prov-ca-u7-feedback-u7-i-endings-4`
+- `obj-u7-endings` PROVENANCE `prov-ca-u7-feedback-u7-i-endings-4-distractor-1`
+- `obj-u7-endings` PROVENANCE `prov-ca-u7-feedback-u7-i-endings-4-distractor-2`
 - `obj-u7-objectadj` PROVENANCE `prov-ca-u7-objectadj-f-nom`
 - `obj-u7-spelling` PROVENANCE `prov-ca-u7-worked-accusative-feature`
 - `obj-u7-spelling` PROVENANCE `prov-ca-u7-worked-check-3-feedback`
