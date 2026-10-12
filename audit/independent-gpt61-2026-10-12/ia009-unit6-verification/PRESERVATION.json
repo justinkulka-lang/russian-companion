@@ -1,0 +1,28 @@
+{
+  "baselineCommit": "37e7a806f44f690baea0339806608ad06355a68f",
+  "rawCurriculumSha256": "c637c61a318bc040e80f1f3c2f109e2e1092e14049f141381f3ef6e851c5e03f",
+  "all5832PriorProvenanceRecordsUnchanged": true,
+  "allOtherTopLevelDataUnchanged": true,
+  "allScoredTuplesAndParticipantRelationshipsUnchanged": true,
+  "changedItems": [
+    "u6-g-third-0",
+    "u6-i-third-1",
+    "u6-i-third-2",
+    "u6-g-object-0",
+    "u6-i-object-1",
+    "u6-i-object-2",
+    "u6-i-object-3",
+    "u6-g-pronoun-0",
+    "u6-i-pronoun-1",
+    "u6-i-pronoun-2",
+    "u6-i-pronoun-3",
+    "u6-g-direction-0",
+    "u6-i-direction-1",
+    "u6-i-direction-2",
+    "u6-i-direction-3"
+  ],
+  "addedPendingCoverageRecords": 33,
+  "deterministicBaselineReplay": true,
+  "byteIdempotent": true,
+  "semanticAcceptance": false
+}

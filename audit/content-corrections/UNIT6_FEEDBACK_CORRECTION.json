@@ -1,0 +1,1610 @@
+{
+  "baselineCommit": "37e7a806f44f690baea0339806608ad06355a68f",
+  "beforeSha256": "1b5238058fd96caaf664e56141f3bd942f3ea4879dd23426049d3c866fe6b239",
+  "afterSha256": "c637c61a318bc040e80f1f3c2f109e2e1092e14049f141381f3ef6e851c5e03f",
+  "addedProvenanceIds": [
+    "prov-ca-u6-feedback-u6-g-third-0-distractor-1",
+    "prov-ca-u6-feedback-u6-g-third-0-distractor-2",
+    "prov-ca-u6-feedback-u6-g-third-0",
+    "prov-ca-u6-feedback-u6-i-third-1-distractor-1",
+    "prov-ca-u6-feedback-u6-i-third-1-distractor-2",
+    "prov-ca-u6-feedback-u6-i-third-1",
+    "prov-ca-u6-feedback-u6-i-third-2-distractor-1",
+    "prov-ca-u6-feedback-u6-i-third-2-distractor-2",
+    "prov-ca-u6-feedback-u6-i-third-2",
+    "prov-ca-u6-feedback-u6-g-object-0-distractor-1",
+    "prov-ca-u6-feedback-u6-g-object-0",
+    "prov-ca-u6-feedback-u6-i-object-1-distractor-1",
+    "prov-ca-u6-feedback-u6-i-object-1",
+    "prov-ca-u6-feedback-u6-i-object-2-distractor-1",
+    "prov-ca-u6-feedback-u6-i-object-2",
+    "prov-ca-u6-feedback-u6-i-object-3-distractor-1",
+    "prov-ca-u6-feedback-u6-i-object-3",
+    "prov-ca-u6-feedback-u6-g-pronoun-0-distractor-1",
+    "prov-ca-u6-feedback-u6-g-pronoun-0",
+    "prov-ca-u6-feedback-u6-i-pronoun-1-distractor-1",
+    "prov-ca-u6-feedback-u6-i-pronoun-1",
+    "prov-ca-u6-feedback-u6-i-pronoun-2-distractor-1",
+    "prov-ca-u6-feedback-u6-i-pronoun-2",
+    "prov-ca-u6-feedback-u6-i-pronoun-3-distractor-1",
+    "prov-ca-u6-feedback-u6-i-pronoun-3",
+    "prov-ca-u6-feedback-u6-g-direction-0-distractor-1",
+    "prov-ca-u6-feedback-u6-g-direction-0",
+    "prov-ca-u6-feedback-u6-i-direction-1-distractor-1",
+    "prov-ca-u6-feedback-u6-i-direction-1",
+    "prov-ca-u6-feedback-u6-i-direction-2-distractor-1",
+    "prov-ca-u6-feedback-u6-i-direction-2",
+    "prov-ca-u6-feedback-u6-i-direction-3-distractor-1",
+    "prov-ca-u6-feedback-u6-i-direction-3"
+  ],
+  "changes": [
+    {
+      "before": {
+        "id": "u6-g-third-0",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form matches the shown category?",
+        "promptLetter": "masculine and neuter possessive pronouns",
+        "options": [
+          "его",
+          "её",
+          "их"
+        ],
+        "answer": "его",
+        "feedback": "Does the admitted record show the governed contrast? его.",
+        "objectiveId": "obj-u6-third",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This form is another admitted form in the same frozen sentence.",
+          "This form is another admitted form in the same frozen sentence."
+        ],
+        "assessment": {
+          "testedFeature": "THIRD_PERSON_FORM",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u6-third-0",
+          "cueLanguage": "rule",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ex-u6-third-0-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u6-third-1-ru",
+            "prov-ex-u6-third-2-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "This form is another admitted form in the same frozen sentence.",
+            "This form is another admitted form in the same frozen sentence."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "его",
+            "её",
+            "их"
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-u6-third-x-0",
+            "prov-ex-u6-third-0-ru",
+            "prov-ex-u6-third-1-ru",
+            "prov-ex-u6-third-2-ru"
+          ]
+        }
+      },
+      "after": {
+        "id": "u6-g-third-0",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form matches the shown category?",
+        "promptLetter": "masculine and neuter possessive pronouns",
+        "options": [
+          "его",
+          "её",
+          "их"
+        ],
+        "answer": "его",
+        "feedback": "его means his or its: the category refers to a masculine or neuter singular possessor. её refers to a feminine singular possessor, and их to plural possessors. These third-person possessive forms do not change with the gender or number of the possessed noun.",
+        "objectiveId": "obj-u6-third",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "её identifies her, a feminine singular possessor instead of the shown possessor category.",
+          "их identifies their, plural possessors instead of the shown possessor category."
+        ],
+        "assessment": {
+          "testedFeature": "THIRD_PERSON_FORM",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u6-third-0",
+          "cueLanguage": "rule",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ex-u6-third-0-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u6-third-1-ru",
+            "prov-ex-u6-third-2-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "её identifies her, a feminine singular possessor instead of the shown possessor category.",
+            "их identifies their, plural possessors instead of the shown possessor category."
+          ],
+          "whyAnswerDemonstratesObjective": "его means his or its: the category refers to a masculine or neuter singular possessor. её refers to a feminine singular possessor, and их to plural possessors. These third-person possessive forms do not change with the gender or number of the possessed noun.",
+          "contrastMembers": [
+            "его",
+            "её",
+            "их"
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-u6-third-x-0",
+            "prov-ex-u6-third-0-ru",
+            "prov-ex-u6-third-1-ru",
+            "prov-ex-u6-third-2-ru"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u6-i-third-1",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form matches the shown category?",
+        "promptLetter": "The feminine",
+        "options": [
+          "её",
+          "его",
+          "их"
+        ],
+        "answer": "её",
+        "feedback": "Does the admitted record show the governed contrast? её.",
+        "objectiveId": "obj-u6-third",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This form is another admitted form in the same frozen sentence.",
+          "This form is another admitted form in the same frozen sentence."
+        ],
+        "assessment": {
+          "testedFeature": "THIRD_PERSON_FORM",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u6-third-1",
+          "cueLanguage": "rule",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u6-third-1-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u6-third-0-ru",
+            "prov-ex-u6-third-2-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "This form is another admitted form in the same frozen sentence.",
+            "This form is another admitted form in the same frozen sentence."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "её",
+            "его",
+            "их"
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-u6-third-x-1",
+            "prov-ex-u6-third-1-ru",
+            "prov-ex-u6-third-0-ru",
+            "prov-ex-u6-third-2-ru"
+          ]
+        }
+      },
+      "after": {
+        "id": "u6-i-third-1",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form matches the shown category?",
+        "promptLetter": "The feminine",
+        "options": [
+          "её",
+          "его",
+          "их"
+        ],
+        "answer": "её",
+        "feedback": "её means her: the category refers to a feminine singular possessor. его means his or its, and их means their. These third-person possessive forms do not change with the gender or number of the possessed noun.",
+        "objectiveId": "obj-u6-third",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "его identifies his or its, a masculine or neuter singular possessor instead of the shown possessor category.",
+          "их identifies their, plural possessors instead of the shown possessor category."
+        ],
+        "assessment": {
+          "testedFeature": "THIRD_PERSON_FORM",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u6-third-1",
+          "cueLanguage": "rule",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u6-third-1-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u6-third-0-ru",
+            "prov-ex-u6-third-2-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "его identifies his or its, a masculine or neuter singular possessor instead of the shown possessor category.",
+            "их identifies their, plural possessors instead of the shown possessor category."
+          ],
+          "whyAnswerDemonstratesObjective": "её means her: the category refers to a feminine singular possessor. его means his or its, and их means their. These third-person possessive forms do not change with the gender or number of the possessed noun.",
+          "contrastMembers": [
+            "её",
+            "его",
+            "их"
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-u6-third-x-1",
+            "prov-ex-u6-third-1-ru",
+            "prov-ex-u6-third-0-ru",
+            "prov-ex-u6-third-2-ru"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u6-i-third-2",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form matches the shown category?",
+        "promptLetter": "third-person plural",
+        "options": [
+          "их",
+          "его",
+          "её"
+        ],
+        "answer": "их",
+        "feedback": "Does the admitted record show the governed contrast? их.",
+        "objectiveId": "obj-u6-third",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This form is another admitted form in the same frozen sentence.",
+          "This form is another admitted form in the same frozen sentence."
+        ],
+        "assessment": {
+          "testedFeature": "THIRD_PERSON_FORM",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u6-third-2",
+          "cueLanguage": "rule",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u6-third-2-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u6-third-0-ru",
+            "prov-ex-u6-third-1-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "This form is another admitted form in the same frozen sentence.",
+            "This form is another admitted form in the same frozen sentence."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "их",
+            "его",
+            "её"
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-u6-third-x-2",
+            "prov-ex-u6-third-2-ru",
+            "prov-ex-u6-third-0-ru",
+            "prov-ex-u6-third-1-ru"
+          ]
+        }
+      },
+      "after": {
+        "id": "u6-i-third-2",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form matches the shown category?",
+        "promptLetter": "third-person plural",
+        "options": [
+          "их",
+          "его",
+          "её"
+        ],
+        "answer": "их",
+        "feedback": "их means their: the category refers to plural possessors. его and её refer to singular possessors. These third-person possessive forms do not change with the gender or number of the possessed noun.",
+        "objectiveId": "obj-u6-third",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "его identifies his or its, a masculine or neuter singular possessor instead of the shown possessor category.",
+          "её identifies her, a feminine singular possessor instead of the shown possessor category."
+        ],
+        "assessment": {
+          "testedFeature": "THIRD_PERSON_FORM",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u6-third-2",
+          "cueLanguage": "rule",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u6-third-2-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u6-third-0-ru",
+            "prov-ex-u6-third-1-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "его identifies his or its, a masculine or neuter singular possessor instead of the shown possessor category.",
+            "её identifies her, a feminine singular possessor instead of the shown possessor category."
+          ],
+          "whyAnswerDemonstratesObjective": "их means their: the category refers to plural possessors. его and её refer to singular possessors. These third-person possessive forms do not change with the gender or number of the possessed noun.",
+          "contrastMembers": [
+            "их",
+            "его",
+            "её"
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-u6-third-x-2",
+            "prov-ex-u6-third-2-ru",
+            "prov-ex-u6-third-0-ru",
+            "prov-ex-u6-third-1-ru"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u6-g-object-0",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted line is the other order of the shown line?",
+        "promptLetter": "Я люблю тебя",
+        "options": [
+          "Я тебя люблю",
+          "Я люблю тебя"
+        ],
+        "answer": "Я тебя люблю",
+        "feedback": "Does the admitted record show the governed contrast? Я тебя люблю.",
+        "objectiveId": "obj-u6-object",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This line repeats the shown line, not the other order of the same words."
+        ],
+        "assessment": {
+          "testedFeature": "OBJECT_ORDER",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u6-object-0",
+          "cueLanguage": "ru",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ex-u6-object-1-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u6-object-2-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "This line repeats the shown line, not the other order of the same words."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "Я тебя люблю",
+            "Я люблю тебя"
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-ex-u6-object-2-ru",
+            "prov-ex-u6-object-1-ru",
+            "prov-ex-u6-object-2-ru"
+          ]
+        }
+      },
+      "after": {
+        "id": "u6-g-object-0",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted line is the other order of the shown line?",
+        "promptLetter": "Я люблю тебя",
+        "options": [
+          "Я тебя люблю",
+          "Я люблю тебя"
+        ],
+        "answer": "Я тебя люблю",
+        "feedback": "Я тебя люблю places the object before the verb. Я люблю тебя places it after the verb. Both have the same meaning, I love you: the subject and object keep their roles and forms. The other option repeats the shown order.",
+        "objectiveId": "obj-u6-object",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This option repeats the shown order instead of moving the object before or after the verb."
+        ],
+        "assessment": {
+          "testedFeature": "OBJECT_ORDER",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u6-object-0",
+          "cueLanguage": "ru",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ex-u6-object-1-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u6-object-2-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "This option repeats the shown order instead of moving the object before or after the verb."
+          ],
+          "whyAnswerDemonstratesObjective": "Я тебя люблю places the object before the verb. Я люблю тебя places it after the verb. Both have the same meaning, I love you: the subject and object keep their roles and forms. The other option repeats the shown order.",
+          "contrastMembers": [
+            "Я тебя люблю",
+            "Я люблю тебя"
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-ex-u6-object-2-ru",
+            "prov-ex-u6-object-1-ru",
+            "prov-ex-u6-object-2-ru"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u6-i-object-1",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted line is the other order of the shown line?",
+        "promptLetter": "Я тебя люблю",
+        "options": [
+          "Я люблю тебя",
+          "Я тебя люблю"
+        ],
+        "answer": "Я люблю тебя",
+        "feedback": "Does the admitted record show the governed contrast? Я люблю тебя.",
+        "objectiveId": "obj-u6-object",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This line repeats the shown line, not the other order of the same words."
+        ],
+        "assessment": {
+          "testedFeature": "OBJECT_ORDER",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u6-object-1",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u6-object-2-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u6-object-1-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "This line repeats the shown line, not the other order of the same words."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "Я люблю тебя",
+            "Я тебя люблю"
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-ex-u6-object-1-ru",
+            "prov-ex-u6-object-2-ru",
+            "prov-ex-u6-object-1-ru"
+          ]
+        }
+      },
+      "after": {
+        "id": "u6-i-object-1",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted line is the other order of the shown line?",
+        "promptLetter": "Я тебя люблю",
+        "options": [
+          "Я люблю тебя",
+          "Я тебя люблю"
+        ],
+        "answer": "Я люблю тебя",
+        "feedback": "Я люблю тебя places the object after the verb. Я тебя люблю places it before the verb. Both have the same meaning, I love you: the subject and object keep their roles and forms. The other option repeats the shown order.",
+        "objectiveId": "obj-u6-object",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This option repeats the shown order instead of moving the object before or after the verb."
+        ],
+        "assessment": {
+          "testedFeature": "OBJECT_ORDER",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u6-object-1",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u6-object-2-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u6-object-1-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "This option repeats the shown order instead of moving the object before or after the verb."
+          ],
+          "whyAnswerDemonstratesObjective": "Я люблю тебя places the object after the verb. Я тебя люблю places it before the verb. Both have the same meaning, I love you: the subject and object keep their roles and forms. The other option repeats the shown order.",
+          "contrastMembers": [
+            "Я люблю тебя",
+            "Я тебя люблю"
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-ex-u6-object-1-ru",
+            "prov-ex-u6-object-2-ru",
+            "prov-ex-u6-object-1-ru"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u6-i-object-2",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted line reverses the object of the shown line?",
+        "promptLetter": "Собаки ненавидят котов.",
+        "options": [
+          "Коты ненавидят собак.",
+          "Собаки ненавидят котов."
+        ],
+        "answer": "Коты ненавидят собак.",
+        "feedback": "Does the admitted record show the governed contrast? Коты ненавидят собак.",
+        "objectiveId": "obj-u6-object",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This line repeats the shown line, not the reversed object pair."
+        ],
+        "assessment": {
+          "testedFeature": "ACCUSATIVE_OBJECT",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u6-object-2",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u6-object-4-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u6-object-3-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "This line repeats the shown line, not the reversed object pair."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "Коты ненавидят собак.",
+            "Собаки ненавидят котов."
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-ex-u6-object-3-ru",
+            "prov-ex-u6-object-4-ru",
+            "prov-ex-u6-object-3-ru"
+          ]
+        }
+      },
+      "after": {
+        "id": "u6-i-object-2",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted line reverses the object of the shown line?",
+        "promptLetter": "Собаки ненавидят котов.",
+        "options": [
+          "Коты ненавидят собак.",
+          "Собаки ненавидят котов."
+        ],
+        "answer": "Коты ненавидят собак.",
+        "feedback": "Коты ненавидят собак. means cats hate dogs. The cats are the subject and the dogs the accusative object. Compared with the shown dogs hate cats line, both roles are reversed; this is not merely a change of word order. The other option repeats dogs hate cats.",
+        "objectiveId": "obj-u6-object",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This option repeats the shown subject and object roles instead of reversing who hates whom."
+        ],
+        "assessment": {
+          "testedFeature": "ACCUSATIVE_OBJECT",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u6-object-2",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u6-object-4-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u6-object-3-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "This option repeats the shown subject and object roles instead of reversing who hates whom."
+          ],
+          "whyAnswerDemonstratesObjective": "Коты ненавидят собак. means cats hate dogs. The cats are the subject and the dogs the accusative object. Compared with the shown dogs hate cats line, both roles are reversed; this is not merely a change of word order. The other option repeats dogs hate cats.",
+          "contrastMembers": [
+            "Коты ненавидят собак.",
+            "Собаки ненавидят котов."
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-ex-u6-object-3-ru",
+            "prov-ex-u6-object-4-ru",
+            "prov-ex-u6-object-3-ru"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u6-i-object-3",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted line reverses the object of the shown line?",
+        "promptLetter": "Коты ненавидят собак.",
+        "options": [
+          "Собаки ненавидят котов.",
+          "Коты ненавидят собак."
+        ],
+        "answer": "Собаки ненавидят котов.",
+        "feedback": "Does the admitted record show the governed contrast? Собаки ненавидят котов.",
+        "objectiveId": "obj-u6-object",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This line repeats the shown line, not the reversed object pair."
+        ],
+        "assessment": {
+          "testedFeature": "ACCUSATIVE_OBJECT",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u6-object-3",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u6-object-3-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u6-object-4-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "This line repeats the shown line, not the reversed object pair."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "Собаки ненавидят котов.",
+            "Коты ненавидят собак."
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-ex-u6-object-4-ru",
+            "prov-ex-u6-object-3-ru",
+            "prov-ex-u6-object-4-ru"
+          ]
+        }
+      },
+      "after": {
+        "id": "u6-i-object-3",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted line reverses the object of the shown line?",
+        "promptLetter": "Коты ненавидят собак.",
+        "options": [
+          "Собаки ненавидят котов.",
+          "Коты ненавидят собак."
+        ],
+        "answer": "Собаки ненавидят котов.",
+        "feedback": "Собаки ненавидят котов. means dogs hate cats. The dogs are the subject and the cats the accusative object. Compared with the shown cats hate dogs line, both roles are reversed; this is not merely a change of word order. The other option repeats cats hate dogs.",
+        "objectiveId": "obj-u6-object",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This option repeats the shown subject and object roles instead of reversing who hates whom."
+        ],
+        "assessment": {
+          "testedFeature": "ACCUSATIVE_OBJECT",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u6-object-3",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u6-object-3-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u6-object-4-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "This option repeats the shown subject and object roles instead of reversing who hates whom."
+          ],
+          "whyAnswerDemonstratesObjective": "Собаки ненавидят котов. means dogs hate cats. The dogs are the subject and the cats the accusative object. Compared with the shown cats hate dogs line, both roles are reversed; this is not merely a change of word order. The other option repeats cats hate dogs.",
+          "contrastMembers": [
+            "Собаки ненавидят котов.",
+            "Коты ненавидят собак."
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-ex-u6-object-4-ru",
+            "prov-ex-u6-object-3-ru",
+            "prov-ex-u6-object-4-ru"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u6-g-pronoun-0",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form is the object row of the shown form?",
+        "promptLetter": "Я",
+        "options": [
+          "Меня",
+          "Нас"
+        ],
+        "answer": "Меня",
+        "feedback": "Does the admitted record show the governed contrast? Меня.",
+        "objectiveId": "obj-u6-pronoun",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This form is not the object row of the shown line."
+        ],
+        "assessment": {
+          "testedFeature": "PERSONAL_OBJECT_CASE",
+          "evidenceMode": "SAME_CONSTRUCTION_DIFFERENT_FORM",
+          "contrastSetId": "u6-pronoun-0",
+          "cueLanguage": "ru",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ex-u6-pronoun-0-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u6-pronoun-1-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "This form is not the object row of the shown line."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "Меня",
+            "Нас"
+          ],
+          "relationKind": "SAME_CONSTRUCTION_DIFFERENT_FORM",
+          "relationParticipantIds": [
+            "prov-u6-pronoun-rem-r0",
+            "prov-ex-u6-pronoun-0-ru",
+            "prov-ex-u6-pronoun-1-ru"
+          ]
+        }
+      },
+      "after": {
+        "id": "u6-g-pronoun-0",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form is the object row of the shown form?",
+        "promptLetter": "Я",
+        "options": [
+          "Меня",
+          "Нас"
+        ],
+        "answer": "Меня",
+        "feedback": "Меня is the accusative object form for Я, I/me: first person singular. Нас is the form for we/us instead, first person plural. Match the same person and number across the nominative and accusative table columns.",
+        "objectiveId": "obj-u6-pronoun",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Нас identifies we/us, first person plural instead of the person, number or gender in the shown nominative form."
+        ],
+        "assessment": {
+          "testedFeature": "PERSONAL_OBJECT_CASE",
+          "evidenceMode": "SAME_CONSTRUCTION_DIFFERENT_FORM",
+          "contrastSetId": "u6-pronoun-0",
+          "cueLanguage": "ru",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ex-u6-pronoun-0-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u6-pronoun-1-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "Нас identifies we/us, first person plural instead of the person, number or gender in the shown nominative form."
+          ],
+          "whyAnswerDemonstratesObjective": "Меня is the accusative object form for Я, I/me: first person singular. Нас is the form for we/us instead, first person plural. Match the same person and number across the nominative and accusative table columns.",
+          "contrastMembers": [
+            "Меня",
+            "Нас"
+          ],
+          "relationKind": "SAME_CONSTRUCTION_DIFFERENT_FORM",
+          "relationParticipantIds": [
+            "prov-u6-pronoun-rem-r0",
+            "prov-ex-u6-pronoun-0-ru",
+            "prov-ex-u6-pronoun-1-ru"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u6-i-pronoun-1",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form is the object row of the shown form?",
+        "promptLetter": "Мы",
+        "options": [
+          "Нас",
+          "Меня"
+        ],
+        "answer": "Нас",
+        "feedback": "Does the admitted record show the governed contrast? Нас.",
+        "objectiveId": "obj-u6-pronoun",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This form is not the object row of the shown line."
+        ],
+        "assessment": {
+          "testedFeature": "PERSONAL_OBJECT_CASE",
+          "evidenceMode": "SAME_CONSTRUCTION_DIFFERENT_FORM",
+          "contrastSetId": "u6-pronoun-1",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u6-pronoun-1-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u6-pronoun-0-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "This form is not the object row of the shown line."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "Нас",
+            "Меня"
+          ],
+          "relationKind": "SAME_CONSTRUCTION_DIFFERENT_FORM",
+          "relationParticipantIds": [
+            "prov-u6-pronoun-x-1",
+            "prov-ex-u6-pronoun-1-ru",
+            "prov-ex-u6-pronoun-0-ru"
+          ]
+        }
+      },
+      "after": {
+        "id": "u6-i-pronoun-1",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form is the object row of the shown form?",
+        "promptLetter": "Мы",
+        "options": [
+          "Нас",
+          "Меня"
+        ],
+        "answer": "Нас",
+        "feedback": "Нас is the accusative object form for Мы, we/us: first person plural. Меня is the form for I/me instead, first person singular. Match the same person and number across the nominative and accusative table columns.",
+        "objectiveId": "obj-u6-pronoun",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Меня identifies I/me, first person singular instead of the person, number or gender in the shown nominative form."
+        ],
+        "assessment": {
+          "testedFeature": "PERSONAL_OBJECT_CASE",
+          "evidenceMode": "SAME_CONSTRUCTION_DIFFERENT_FORM",
+          "contrastSetId": "u6-pronoun-1",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u6-pronoun-1-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u6-pronoun-0-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "Меня identifies I/me, first person singular instead of the person, number or gender in the shown nominative form."
+          ],
+          "whyAnswerDemonstratesObjective": "Нас is the accusative object form for Мы, we/us: first person plural. Меня is the form for I/me instead, first person singular. Match the same person and number across the nominative and accusative table columns.",
+          "contrastMembers": [
+            "Нас",
+            "Меня"
+          ],
+          "relationKind": "SAME_CONSTRUCTION_DIFFERENT_FORM",
+          "relationParticipantIds": [
+            "prov-u6-pronoun-x-1",
+            "prov-ex-u6-pronoun-1-ru",
+            "prov-ex-u6-pronoun-0-ru"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u6-i-pronoun-2",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form is the object row of the shown form?",
+        "promptLetter": "Она",
+        "options": [
+          "Её",
+          "Его"
+        ],
+        "answer": "Её",
+        "feedback": "Does the admitted record show the governed contrast? Её.",
+        "objectiveId": "obj-u6-pronoun",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This form is not the object row of the shown line."
+        ],
+        "assessment": {
+          "testedFeature": "PERSONAL_OBJECT_CASE",
+          "evidenceMode": "SAME_CONSTRUCTION_DIFFERENT_FORM",
+          "contrastSetId": "u6-pronoun-2",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u6-pronoun-5-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u6-pronoun-4-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "This form is not the object row of the shown line."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "Её",
+            "Его"
+          ],
+          "relationKind": "SAME_CONSTRUCTION_DIFFERENT_FORM",
+          "relationParticipantIds": [
+            "prov-u6-pronoun-x-2",
+            "prov-ex-u6-pronoun-5-ru",
+            "prov-ex-u6-pronoun-4-ru"
+          ]
+        }
+      },
+      "after": {
+        "id": "u6-i-pronoun-2",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form is the object row of the shown form?",
+        "promptLetter": "Она",
+        "options": [
+          "Её",
+          "Его"
+        ],
+        "answer": "Её",
+        "feedback": "Её is the accusative object form for Она, she/her: third person singular feminine. Его is the form for he/him or it instead. Match the same person, number and gender across the nominative and accusative table columns.",
+        "objectiveId": "obj-u6-pronoun",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Его identifies he/him or it, third person singular masculine or neuter instead of the person, number or gender in the shown nominative form."
+        ],
+        "assessment": {
+          "testedFeature": "PERSONAL_OBJECT_CASE",
+          "evidenceMode": "SAME_CONSTRUCTION_DIFFERENT_FORM",
+          "contrastSetId": "u6-pronoun-2",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u6-pronoun-5-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u6-pronoun-4-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "Его identifies he/him or it, third person singular masculine or neuter instead of the person, number or gender in the shown nominative form."
+          ],
+          "whyAnswerDemonstratesObjective": "Её is the accusative object form for Она, she/her: third person singular feminine. Его is the form for he/him or it instead. Match the same person, number and gender across the nominative and accusative table columns.",
+          "contrastMembers": [
+            "Её",
+            "Его"
+          ],
+          "relationKind": "SAME_CONSTRUCTION_DIFFERENT_FORM",
+          "relationParticipantIds": [
+            "prov-u6-pronoun-x-2",
+            "prov-ex-u6-pronoun-5-ru",
+            "prov-ex-u6-pronoun-4-ru"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u6-i-pronoun-3",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form is the object row of the shown form?",
+        "promptLetter": "Они",
+        "options": [
+          "Их",
+          "Вас"
+        ],
+        "answer": "Их",
+        "feedback": "Does the admitted record show the governed contrast? Их.",
+        "objectiveId": "obj-u6-pronoun",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This form is not the object row of the shown line."
+        ],
+        "assessment": {
+          "testedFeature": "PERSONAL_OBJECT_CASE",
+          "evidenceMode": "SAME_CONSTRUCTION_DIFFERENT_FORM",
+          "contrastSetId": "u6-pronoun-3",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u6-pronoun-6-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u6-pronoun-3-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "This form is not the object row of the shown line."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "Их",
+            "Вас"
+          ],
+          "relationKind": "SAME_CONSTRUCTION_DIFFERENT_FORM",
+          "relationParticipantIds": [
+            "prov-u6-pronoun-x-3",
+            "prov-ex-u6-pronoun-6-ru",
+            "prov-ex-u6-pronoun-3-ru"
+          ]
+        }
+      },
+      "after": {
+        "id": "u6-i-pronoun-3",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form is the object row of the shown form?",
+        "promptLetter": "Они",
+        "options": [
+          "Их",
+          "Вас"
+        ],
+        "answer": "Их",
+        "feedback": "Их is the accusative object form for Они, they/them: third person plural. Вас is the form for plural or polite you instead, second person. Match the same person and number across the nominative and accusative table columns.",
+        "objectiveId": "obj-u6-pronoun",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Вас identifies plural or polite you, second person instead of the person, number or gender in the shown nominative form."
+        ],
+        "assessment": {
+          "testedFeature": "PERSONAL_OBJECT_CASE",
+          "evidenceMode": "SAME_CONSTRUCTION_DIFFERENT_FORM",
+          "contrastSetId": "u6-pronoun-3",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u6-pronoun-6-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u6-pronoun-3-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "Вас identifies plural or polite you, second person instead of the person, number or gender in the shown nominative form."
+          ],
+          "whyAnswerDemonstratesObjective": "Их is the accusative object form for Они, they/them: third person plural. Вас is the form for plural or polite you instead, second person. Match the same person and number across the nominative and accusative table columns.",
+          "contrastMembers": [
+            "Их",
+            "Вас"
+          ],
+          "relationKind": "SAME_CONSTRUCTION_DIFFERENT_FORM",
+          "relationParticipantIds": [
+            "prov-u6-pronoun-x-3",
+            "prov-ex-u6-pronoun-6-ru",
+            "prov-ex-u6-pronoun-3-ru"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u6-g-direction-0",
+        "kind": "CASE_RECOGNITION",
+        "language": "en",
+        "prompt": "Which admitted function does the shown line use?",
+        "promptLetter": "Я шёл в дом",
+        "options": [
+          "direction",
+          "location"
+        ],
+        "answer": "direction",
+        "feedback": "Does the admitted record show the governed contrast? direction.",
+        "objectiveId": "obj-u6-direction",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This label names the other admitted function."
+        ],
+        "assessment": {
+          "testedFeature": "DIRECTION_LOCATION",
+          "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+          "contrastSetId": "u6-direction-0",
+          "cueLanguage": "ru",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-u6-direction-x-0"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-u6-direction-x-1"
+          ],
+          "distractorDifference": [
+            "",
+            "This label names the other admitted function."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "direction",
+            "location"
+          ],
+          "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+          "relationParticipantIds": [
+            "prov-ex-u6-direction-0-ru",
+            "prov-u6-direction-x-0",
+            "prov-u6-direction-x-1"
+          ]
+        }
+      },
+      "after": {
+        "id": "u6-g-direction-0",
+        "kind": "CASE_RECOGNITION",
+        "language": "en",
+        "prompt": "Which admitted function does the shown line use?",
+        "promptLetter": "Я шёл в дом",
+        "options": [
+          "direction",
+          "location"
+        ],
+        "answer": "direction",
+        "feedback": "Я шёл в дом describes walking into the house, a destination. Here the preposition takes the accusative, so the function is direction. Location instead describes being at a place; The same preposition with the prepositional case can express that different function.",
+        "objectiveId": "obj-u6-direction",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Location describes being at a place instead of moving toward a destination in this example."
+        ],
+        "assessment": {
+          "testedFeature": "DIRECTION_LOCATION",
+          "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+          "contrastSetId": "u6-direction-0",
+          "cueLanguage": "ru",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-u6-direction-x-0"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-u6-direction-x-1"
+          ],
+          "distractorDifference": [
+            "",
+            "Location describes being at a place instead of moving toward a destination in this example."
+          ],
+          "whyAnswerDemonstratesObjective": "Я шёл в дом describes walking into the house, a destination. Here the preposition takes the accusative, so the function is direction. Location instead describes being at a place; The same preposition with the prepositional case can express that different function.",
+          "contrastMembers": [
+            "direction",
+            "location"
+          ],
+          "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+          "relationParticipantIds": [
+            "prov-ex-u6-direction-0-ru",
+            "prov-u6-direction-x-0",
+            "prov-u6-direction-x-1"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u6-i-direction-1",
+        "kind": "CASE_RECOGNITION",
+        "language": "en",
+        "prompt": "Which admitted function does the shown line use?",
+        "promptLetter": "Я жил в Лондоне",
+        "options": [
+          "location",
+          "direction"
+        ],
+        "answer": "location",
+        "feedback": "Does the admitted record show the governed contrast? location.",
+        "objectiveId": "obj-u6-direction",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This label names the other admitted function."
+        ],
+        "assessment": {
+          "testedFeature": "DIRECTION_LOCATION",
+          "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+          "contrastSetId": "u6-direction-1",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-u6-direction-x-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-u6-direction-x-0"
+          ],
+          "distractorDifference": [
+            "",
+            "This label names the other admitted function."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "location",
+            "direction"
+          ],
+          "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+          "relationParticipantIds": [
+            "prov-ex-u6-direction-1-ru",
+            "prov-u6-direction-x-1",
+            "prov-u6-direction-x-0"
+          ]
+        }
+      },
+      "after": {
+        "id": "u6-i-direction-1",
+        "kind": "CASE_RECOGNITION",
+        "language": "en",
+        "prompt": "Which admitted function does the shown line use?",
+        "promptLetter": "Я жил в Лондоне",
+        "options": [
+          "location",
+          "direction"
+        ],
+        "answer": "location",
+        "feedback": "Я жил в Лондоне describes living in London, a location. Here the preposition takes the prepositional case. Direction instead describes a destination; The same preposition with the accusative can express that different function.",
+        "objectiveId": "obj-u6-direction",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Direction describes moving toward a destination instead of being at a place in this example."
+        ],
+        "assessment": {
+          "testedFeature": "DIRECTION_LOCATION",
+          "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+          "contrastSetId": "u6-direction-1",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-u6-direction-x-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-u6-direction-x-0"
+          ],
+          "distractorDifference": [
+            "",
+            "Direction describes moving toward a destination instead of being at a place in this example."
+          ],
+          "whyAnswerDemonstratesObjective": "Я жил в Лондоне describes living in London, a location. Here the preposition takes the prepositional case. Direction instead describes a destination; The same preposition with the accusative can express that different function.",
+          "contrastMembers": [
+            "location",
+            "direction"
+          ],
+          "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+          "relationParticipantIds": [
+            "prov-ex-u6-direction-1-ru",
+            "prov-u6-direction-x-1",
+            "prov-u6-direction-x-0"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u6-i-direction-2",
+        "kind": "CASE_RECOGNITION",
+        "language": "en",
+        "prompt": "Which admitted function does the shown line use?",
+        "promptLetter": "Я шёл на улицу",
+        "options": [
+          "direction",
+          "location"
+        ],
+        "answer": "direction",
+        "feedback": "Does the admitted record show the governed contrast? direction.",
+        "objectiveId": "obj-u6-direction",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This label names the other admitted function."
+        ],
+        "assessment": {
+          "testedFeature": "DIRECTION_LOCATION",
+          "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+          "contrastSetId": "u6-direction-2",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-u6-direction-x-0"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-u6-direction-x-1"
+          ],
+          "distractorDifference": [
+            "",
+            "This label names the other admitted function."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "direction",
+            "location"
+          ],
+          "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+          "relationParticipantIds": [
+            "prov-ex-u6-direction-2-ru",
+            "prov-u6-direction-x-0",
+            "prov-u6-direction-x-1"
+          ]
+        }
+      },
+      "after": {
+        "id": "u6-i-direction-2",
+        "kind": "CASE_RECOGNITION",
+        "language": "en",
+        "prompt": "Which admitted function does the shown line use?",
+        "promptLetter": "Я шёл на улицу",
+        "options": [
+          "direction",
+          "location"
+        ],
+        "answer": "direction",
+        "feedback": "Я шёл на улицу describes walking onto the street, a destination. Here the preposition takes the accusative, so the function is direction. Location instead describes being at a place; The same preposition with the prepositional case can express that different function.",
+        "objectiveId": "obj-u6-direction",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Location describes being at a place instead of moving toward a destination in this example."
+        ],
+        "assessment": {
+          "testedFeature": "DIRECTION_LOCATION",
+          "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+          "contrastSetId": "u6-direction-2",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-u6-direction-x-0"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-u6-direction-x-1"
+          ],
+          "distractorDifference": [
+            "",
+            "Location describes being at a place instead of moving toward a destination in this example."
+          ],
+          "whyAnswerDemonstratesObjective": "Я шёл на улицу describes walking onto the street, a destination. Here the preposition takes the accusative, so the function is direction. Location instead describes being at a place; The same preposition with the prepositional case can express that different function.",
+          "contrastMembers": [
+            "direction",
+            "location"
+          ],
+          "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+          "relationParticipantIds": [
+            "prov-ex-u6-direction-2-ru",
+            "prov-u6-direction-x-0",
+            "prov-u6-direction-x-1"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u6-i-direction-3",
+        "kind": "CASE_RECOGNITION",
+        "language": "en",
+        "prompt": "Which admitted function does the shown line use?",
+        "promptLetter": "Оно на столе",
+        "options": [
+          "location",
+          "direction"
+        ],
+        "answer": "location",
+        "feedback": "Does the admitted record show the governed contrast? location.",
+        "objectiveId": "obj-u6-direction",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This label names the other admitted function."
+        ],
+        "assessment": {
+          "testedFeature": "DIRECTION_LOCATION",
+          "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+          "contrastSetId": "u6-direction-3",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-u6-direction-x-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-u6-direction-x-0"
+          ],
+          "distractorDifference": [
+            "",
+            "This label names the other admitted function."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "location",
+            "direction"
+          ],
+          "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+          "relationParticipantIds": [
+            "prov-ex-u6-direction-3-ru",
+            "prov-u6-direction-x-1",
+            "prov-u6-direction-x-0"
+          ]
+        }
+      },
+      "after": {
+        "id": "u6-i-direction-3",
+        "kind": "CASE_RECOGNITION",
+        "language": "en",
+        "prompt": "Which admitted function does the shown line use?",
+        "promptLetter": "Оно на столе",
+        "options": [
+          "location",
+          "direction"
+        ],
+        "answer": "location",
+        "feedback": "Оно на столе describes being on the table, a location. Here the preposition takes the prepositional case. Direction instead describes a destination; The same preposition with the accusative can express that different function.",
+        "objectiveId": "obj-u6-direction",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Direction describes moving toward a destination instead of being at a place in this example."
+        ],
+        "assessment": {
+          "testedFeature": "DIRECTION_LOCATION",
+          "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+          "contrastSetId": "u6-direction-3",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-u6-direction-x-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-u6-direction-x-0"
+          ],
+          "distractorDifference": [
+            "",
+            "Direction describes moving toward a destination instead of being at a place in this example."
+          ],
+          "whyAnswerDemonstratesObjective": "Оно на столе describes being on the table, a location. Here the preposition takes the prepositional case. Direction instead describes a destination; The same preposition with the accusative can express that different function.",
+          "contrastMembers": [
+            "location",
+            "direction"
+          ],
+          "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+          "relationParticipantIds": [
+            "prov-ex-u6-direction-3-ru",
+            "prov-u6-direction-x-1",
+            "prov-u6-direction-x-0"
+          ]
+        }
+      }
+    }
+  ],
+  "bibliography": "Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, CC BY-SA 4.0. Complete reviewed context: Usage I-love-you word-order pair (no claim about emphasis); Nouns dogs/cats subject-object reversal and animate plural accusative; Personal Pronouns nominative/accusative table rows I/me, We/us, You, He/him, She/her, It, They/them; Possessive pronouns final third-person paragraph, including invariance with the modified noun; Usage paragraph distinguishing destination with в/на + accusative from location with в/на + prepositional. Original source selections and Russian cues/options are retained. These are bounded recognition explanations, not productive-skill claims or universal movement-verb rules. Independently authored English on 2026-10-12 within content-audit-2026-10-08; no private Penguin prose or other primary prose copied; final semantic audit pending.",
+  "semanticAcceptance": false
+}
