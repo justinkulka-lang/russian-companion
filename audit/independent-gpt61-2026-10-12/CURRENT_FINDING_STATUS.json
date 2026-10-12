@@ -64,8 +64,9 @@
       "findingId": "IA009",
       "producerSeverity": "MEDIUM",
       "producerStatus": "OPEN",
-      "engineeringDisposition": "OPEN",
-      "formalAcceptance": false
+      "engineeringDisposition": "PARTIAL_LAB_EXPLANATION_ROUTE_FIXED_121_FEEDBACK_ROWS_OPEN",
+      "formalAcceptance": false,
+      "implementationCommit": "c82e5b4a305c960ca41f660071d0da25070631ea"
     },
     {
       "findingId": "IA010",
@@ -148,5 +149,6 @@
     "FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
     "PHYSICAL_DEVICE_ACCEPTANCE_LAST"
   ],
-  "physicalDeviceEvidenceRequestTiming": "AFTER_FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT"
+  "physicalDeviceEvidenceRequestTiming": "AFTER_FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
+  "latestAppImplementationCommit": "c82e5b4a305c960ca41f660071d0da25070631ea"
 }
