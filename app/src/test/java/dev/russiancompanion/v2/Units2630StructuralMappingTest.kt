@@ -402,7 +402,13 @@ class Units2630StructuralMappingTest {
         // Bibliographic metadata does not redistribute the referenced PDF.
         // Learner-facing PDF references and assets are also rejected by the source-intake test.
         val cornellReference = "https://russian.cornell.edu/russian.web/courses/121/Leed_Less_9-12.pdf"
-        assertFalse(curriculum.replace(cornellReference, "").contains(".pdf"))
+        val upuReference = "https://www.upu.int/UPU/media/upu/PostalEntitiesFiles/addressingUnit/rusEn.pdf"
+        assertFalse(curriculum.replace(cornellReference, "").replace(upuReference, "").contains(".pdf"))
+        assertTrue(pack.provenanceRecords.filter { it.originalSourceText.contains(upuReference) }.all {
+            it.itemId.startsWith("prov-ca-u26-postal-") && it.unitNumber == 26 &&
+                it.objectiveId == "obj-u26-postal-address" && it.sourceId == "src-content-audit-research"
+        })
+        assertTrue(pack.provenanceRecords.none { it.shippedText.contains(".pdf") })
         assertTrue(pack.provenanceRecords.filter { it.originalSourceText.contains(cornellReference) }.all {
             ((it.itemId.startsWith("prov-ca-u6-worked-") && it.unitNumber == 6 && it.objectiveId == "obj-u6-possessive") ||
                 (it.itemId.startsWith("prov-ca-u7-worked-") && it.unitNumber == 7 && it.objectiveId == "obj-u7-spelling")) &&

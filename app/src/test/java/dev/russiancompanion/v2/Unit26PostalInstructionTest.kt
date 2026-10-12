@@ -25,5 +25,20 @@ class Unit26PostalInstructionTest {
         val removed=p.copy(items=p.items.filter { it.id!="u26-i-postal-10" });assertTrue(correctedCapabilityDefects(removed,cap).isNotEmpty())
         val records=p.provenanceRecords.filter { it.itemId.startsWith("prov-ca-u26-postal-") };assertEquals(97,records.size);records.forEach { assertContentAuditResearch(it) };assertTrue(V2Validator.validate(p).errors.joinToString("\n"),V2Validator.validate(p).ok);assertEquals("DEVELOPMENT",p.unit(26)!!.installState)
     }
+    @Test fun hashedApplicationPairsRejectReuseOfAllowedWords() {
+        val p=pack();val cap=p.sourceCapabilities.single { it.id=="cap-obj-u26-postal-address" }
+        val full=p.item("u26-i-postal-11")!!;val person=p.item("u26-i-postal-1")!!
+        val changed=full.copy(promptLetter=person.promptLetter,assessment=full.assessment!!.copy(
+            relationParticipantIds=listOf(person.assessment!!.relationParticipantIds.first())+full.assessment.relationParticipantIds.drop(1)))
+        val records=p.provenanceRecords.map { r ->
+            if(r.objectiveId==cap.objectiveId && r.synthesis!=null) r.copy(synthesis=r.synthesis.copy(
+                applications=r.synthesis.applications.map { a -> if(a.cue==full.promptLetter)a.copy(cue=person.promptLetter!!) else a })) else r
+        }
+        val forged=p.copy(items=p.items.map { if(it.id==full.id)changed else it },provenanceRecords=records)
+        assertTrue(correctedCapabilityDefects(forged,cap).joinToString("\n"),correctedCapabilityDefects(forged,cap).any { it.contains("exact guided and independent contextual postal applications") })
+        assertTrue(V2Validator.unresolvedRequiredSourceCapabilities(forged,26).any { it.claim=="postal-address" })
+        assertEquals(cap,p.sourceCapabilities.single { it.id==cap.id })
+        assertTrue(correctedCapabilityDefects(p,cap).isEmpty())
+    }
     private fun pack():V2CurriculumPack=V2PackLoader.parse((System.getProperty("unit26.postal.baseline")?.let(::File)?:File(if(File("app").isDirectory) "." else "..","app/src/main/assets/content/v2-curriculum.json")).readText())
 }

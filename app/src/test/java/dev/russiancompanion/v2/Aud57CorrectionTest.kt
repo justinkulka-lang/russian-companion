@@ -15,8 +15,8 @@ import java.security.MessageDigest
 
 /**
  * AUD-57-01 and AUD-57-02. Dictionary use reads a governed entry.
- * Postal address is the complete home-delivery organization.
- * A feature-name prefix, a four-part sample, or a neighboring claim does not clear either.
+ * Postal checks are bound to the supplied component model and format.
+ * Component recall alone, a retargeted sample, or a neighboring claim does not clear either.
  */
 class Aud57CorrectionTest {
     @Test
@@ -31,7 +31,10 @@ class Aud57CorrectionTest {
         assertFalse(unresolved(pack, 29).contains("bookish-reading"))
         val postal = pack.sourceCapabilities.single { it.supportedClaim == "postal-address" }
         val dictionary = pack.sourceCapabilities.single { it.supportedClaim == "dictionary-use" }
-        assertTrue(postal.exactSpan.contains("are not the complete order"))
+        assertEquals(ContentAuditCapabilityPins.all.single { it.claim == "postal-address" }.hash, postal.sourceHash)
+        assertTrue(postal.exactSpan.contains("not a universal international rule"))
+        assertTrue(postal.exactSpan.contains("not declare every shorter domestic address invalid"))
+        assertTrue(pack.items.single { it.id == "u26-i-postal-5" }.prompt.contains("supplied full model"))
         assertTrue(postal.exactSpan.contains("Headword").not())
         assertTrue(dictionary.exactSpan.contains("Headword стол"))
         assertTrue(dictionary.exactSpan.contains("Part of speech noun"))
@@ -158,7 +161,7 @@ class Aud57CorrectionTest {
             "recipient, premises, city, and postcode alone are not the complete order",
         )
         val found = errors(planted)
-        assertTrue(found, found.contains("incomplete address order does not clear postal-address"))
+        assertTrue(found, found.contains("corrected intake is missing its exact guided and independent contextual postal applications"))
         assertTrue(unresolved(planted, 26).contains("postal-address"))
     }
 
@@ -170,7 +173,7 @@ class Aud57CorrectionTest {
             "every home-delivery address must include a post-office box",
         )
         val found = errors(planted)
-        assertTrue(found, found.contains("incomplete address order does not clear postal-address"))
+        assertTrue(found, found.contains("corrected intake is missing its exact guided and independent contextual postal applications"))
         assertTrue(unresolved(planted, 26).contains("postal-address"))
     }
 
@@ -196,11 +199,11 @@ class Aud57CorrectionTest {
         assertTrue(unresolved(correspondencePack, 26).contains("postal-address"))
 
         val greeting = onlyChecks(pack, "obj-u26-postal-address", listOf("u26-i-postal-4"))
-        assertTrue(errors(greeting), errors(greeting).contains("incomplete address order does not clear postal-address"))
+        assertTrue(errors(greeting), errors(greeting).contains("corrected intake is missing its exact guided and independent contextual postal applications"))
         assertTrue(unresolved(greeting, 26).contains("postal-address"))
 
         val sample = retargetCue(pack, "u26-i-postal-11", "Анна Петрова", "COMPLETE_GOVERNED_ADDRESS")
-        assertTrue(errors(sample), errors(sample).contains("incomplete address order does not clear postal-address"))
+        assertTrue(errors(sample), errors(sample).contains("corrected intake is missing its exact guided and independent contextual postal applications"))
         assertTrue(unresolved(sample, 26).contains("postal-address"))
     }
 
@@ -211,7 +214,7 @@ class Aud57CorrectionTest {
             "obj-u26-postal-address",
             listOf("u26-i-postal-1", "u26-i-postal-2", "u26-i-postal-3", "u26-i-postal-4"),
         )
-        assertTrue(errors(components), errors(components).contains("incomplete address order does not clear postal-address"))
+        assertTrue(errors(components), errors(components).contains("corrected intake is missing its exact guided and independent contextual postal applications"))
         assertTrue(unresolved(components, 26).contains("postal-address"))
 
         val wrongOrder = pointAnswer(
@@ -219,7 +222,7 @@ class Aud57CorrectionTest {
             "u26-i-postal-11",
             "postcode, then country, then recipient, then premises, then locality, then region",
         )
-        assertTrue(errors(wrongOrder), errors(wrongOrder).contains("incomplete address order does not clear postal-address"))
+        assertTrue(errors(wrongOrder), errors(wrongOrder).contains("corrected intake is missing its exact guided and independent contextual postal applications"))
         assertTrue(unresolved(wrongOrder, 26).contains("postal-address"))
     }
 

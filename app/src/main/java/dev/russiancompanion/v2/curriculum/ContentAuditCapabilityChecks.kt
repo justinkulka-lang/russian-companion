@@ -1,6 +1,8 @@
 package dev.russiancompanion.v2.curriculum
 
 import java.security.MessageDigest
+import kotlinx.serialization.decodeFromString
+import kotlinx.serialization.json.Json
 
 /** Pending research intake is distinct from the final linguistic review chain. */
 internal fun correctedCapabilityDefects(pack: V2CurriculumPack, cap: V2SourceCapability): List<String> {
@@ -90,6 +92,19 @@ internal fun correctedCapabilityDefects(pack: V2CurriculumPack, cap: V2SourceCap
     if (pin.unit == 26 && pin.claim == "postal-address") {
         val guided = practiced.mapNotNull(pack::item)
         val checks = guided + independent
+        // Bind the applications themselves, not just their words, to the hashed corpus.
+        val frozenApplications = runCatching {
+            Json.decodeFromString<List<V2SynthesisApplication>>(cap.exactSpan.substringAfterLast('\n'))
+        }.getOrNull()
+        val applicationsBound = frozenApplications?.size == checks.size &&
+            hosts.all { it.synthesis?.applications == frozenApplications } &&
+            checks.all { item -> frozenApplications?.count { application ->
+                application.cue == item.promptLetter && application.answer == item.answer &&
+                    application.distractors == item.options.filter { it != item.answer }
+            } == 1 }
+        if (!applicationsBound) {
+            fail("is missing its exact guided and independent contextual postal applications")
+        }
         if (guided.size != 1 || guided.singleOrNull()?.assessment?.testedFeature != "LOCALITY_ROLE" ||
             independent.size != 11 || independent.mapNotNull { it.assessment?.testedFeature }.toSet() != pin.features ||
             checks.any { item -> item.assessment?.relationKind != "STATED_APPLICATION" ||
