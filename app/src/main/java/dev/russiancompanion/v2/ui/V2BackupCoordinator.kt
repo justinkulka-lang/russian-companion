@@ -16,6 +16,7 @@ import dev.russiancompanion.domain.progress.ExportCounts
 import dev.russiancompanion.v2.backup.BACKUP_CANCELLED
 import dev.russiancompanion.v2.backup.BACKUP_FAILED
 import dev.russiancompanion.v2.backup.BACKUP_SAVED
+import dev.russiancompanion.v2.backup.BACKUP_SAVED_WITH_LATER_CHANGES
 import dev.russiancompanion.v2.backup.GovernedReplaceOutcome
 import dev.russiancompanion.v2.backup.BackupWorkRegistry
 import dev.russiancompanion.v2.backup.RESTORE_CANCELLED
@@ -115,11 +116,12 @@ internal class V2BackupCoordinator(
         if (phase != V2BackupPhase.PREPARING || !running.get()) return
         phase = V2BackupPhase.WRITING
         scope.launch {
+            var laterChanges = false
             val outcome = withContext(Dispatchers.IO) {
                 runCatching {
                     if (cancelRequested) return@runCatching false
                     val stream = openOutput() ?: return@runCatching false
-                    stream.use { output ->
+                    val document = stream.use { output ->
                         if (cancelRequested) return@runCatching false
                         writeStoreBackup(
                             store = store,
@@ -131,7 +133,7 @@ internal class V2BackupCoordinator(
                         )
                     }
                     if (cancelRequested) return@runCatching false
-                    val document = store.governedLearnerDocument()
+                    laterChanges = store.governedLearnerDocument() != document
                     val counts = ExportCounts(
                         logCount = document.activityLogs.size,
                         evidenceCount = document.evidence.size + document.attempts.size,
@@ -156,7 +158,7 @@ internal class V2BackupCoordinator(
                 }
             }
             val succeeded = outcome.getOrNull() == true && !cancelRequested
-            finish(succeeded, BACKUP_FAILED, BACKUP_CANCELLED, BACKUP_SAVED)
+            finish(succeeded, BACKUP_FAILED, BACKUP_CANCELLED, if (laterChanges) BACKUP_SAVED_WITH_LATER_CHANGES else BACKUP_SAVED)
             onFinished()
         }
     }

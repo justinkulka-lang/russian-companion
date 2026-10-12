@@ -42,7 +42,7 @@ internal fun writeStoreBackup(
     packId: String,
     packVersion: Int,
     appearance: String,
-) {
+): GovernedLearnerDocument {
     val document = store.governedLearnerDocument()
     val files = document.recordings.map { recording ->
         val file = store.recordingFile(recording.localFileReference)
@@ -50,6 +50,7 @@ internal fun writeStoreBackup(
         recording to file
     }
     writeGovernedBackup(output, applicationId, packId, packVersion, appearance, document, files)
+    return document
 }
 
 internal fun restoreStoreBackup(

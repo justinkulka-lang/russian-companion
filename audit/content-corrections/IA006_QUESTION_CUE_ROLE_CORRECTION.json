@@ -1,0 +1,16 @@
+{
+  "disposition": "IMPLEMENTED_PENDING_INDEPENDENT_VERIFICATION",
+  "changedItemIds": [
+    "u5-i-q-kto",
+    "u5-i-q-chto",
+    "u5-i-q-kogda",
+    "u5-i-q-pochemu",
+    "u5-i-q-kak",
+    "u5-i-q-gde"
+  ],
+  "onlyItemFieldChanged": "promptLetterRole",
+  "previousRawSha256": "a295ba64af19ebe915146e651d57617103e52da59de63cf21b248b25380edd27",
+  "updatedRawSha256": "7040cc03c426fca7b819073ba1c611bb79f82c43c063cfa8c4f0e9b898c202b6",
+  "russianKeysOptionsPromptsFeedbackAndProvenanceUnchanged": true,
+  "oldAnswerExposingAttemptsInvalidateThroughGovernedDigest": true
+}

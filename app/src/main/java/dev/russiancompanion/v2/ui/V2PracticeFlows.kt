@@ -147,6 +147,7 @@ internal fun V2LabScreen(
             modifier = Modifier.semantics { heading(); testTag = "v2-lab-progress" },
         )
         Spacer(Modifier.height(8.dp))
+        V2QuestionCue(item, "v2-lab-cue")
         Text(item.prompt, style = MaterialTheme.typography.titleMedium, modifier = Modifier.semantics { testTag = "v2-lab-prompt" })
         item.options.forEach { option ->
             Row(

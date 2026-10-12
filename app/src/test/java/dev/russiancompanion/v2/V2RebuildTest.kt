@@ -459,7 +459,7 @@ class V2RebuildTest {
         store.v2CompleteUnit(1, "2026-09-23T12:00")
         store.v2CompleteUnit(2, "2026-09-23T12:00")
         store.v2SaveProfile(store.v2Profile().copy(currentUnitNumber = 3, onboardingCompleted = true))
-        assertEquals(V2UnitState.CURRENT, unitState(pack, unit3, store.v2LearnerView()))
+        assertEquals("Unsupported historical prerequisite rows do not unlock current placement", V2UnitState.LOCKED, unitState(pack, unit3, store.v2LearnerView()))
         assertEquals(V2UnitState.LOCKED, unitState(pack, pack.unit(4)!!, store.v2LearnerView()))
         val attested = store.v2LearnerView().copy(
             completedStepIds = unit3.sessions.flatMap { it.steps }.map { it.id }.toSet(),
@@ -696,6 +696,13 @@ class V2RebuildTest {
         assertEquals(V2UnitState.LOCKED, locked)
         store.v2CompleteUnit(1, "2026-09-22T12:00")
         store.v2SaveProfile(store.v2Profile().copy(currentUnitNumber = 2, onboardingCompleted = true))
+        assertEquals(V2UnitState.LOCKED, unitState(pack, pack.unit(2)!!, store.v2LearnerView()))
+        val firstUnit = pack.unit(1)!!
+        firstUnit.sessions.flatMap { it.steps }.forEach { step ->
+            store.v2CompleteGovernedStep(step.id, stepContentDigest(pack, step), "2026-09-22T12:01")
+            step.itemIds.forEach { id -> recordPrescribed(store, pack, pack.item(id)!!, "2026-09-22T12:01") }
+        }
+        store.v2AttestBook(1, "2026-09-22T12:01")
         assertEquals(V2UnitState.CURRENT, unitState(pack, pack.unit(2)!!, store.v2LearnerView()))
         assertTrue(pack.unit(1)!!.sessions.flatMap { it.steps }.none { it.unavailableReason != null })
         val unit2Steps = pack.unit(2)!!.sessions.flatMap { it.steps }

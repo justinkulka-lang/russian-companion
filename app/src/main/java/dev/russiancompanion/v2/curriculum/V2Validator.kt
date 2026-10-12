@@ -523,6 +523,9 @@ internal object V2Validator {
             "sourceId" to canonStr(item.sourceId),
             "containsGeneratedRussian" to canonBool(item.containsGeneratedRussian),
         )
+        if (item.promptLetterRole != "CUE") {
+            fields += "promptLetterRole" to canonStr(item.promptLetterRole)
+        }
         if (item.distractorRationales.isNotEmpty()) {
             fields += "distractorRationales" to canonArr(item.distractorRationales.map(::canonStr))
         }
@@ -1534,6 +1537,9 @@ internal object V2Validator {
         val id = capability.id
         val claim = admission.claim
         val synthesis = spanHost.synthesis
+        if (!OriginalApplicationTuplePins.matchesIfPinned(spanHost)) {
+            errors += "Source capability $id immutable application tuple identity does not match"
+        }
         if (synthesis == null || synthesis.objectiveOrClaimBinding != admission.binding) {
             errors += "Source capability $id synthesis binding does not match"
         }
@@ -3216,6 +3222,7 @@ internal object V2Validator {
     ): String? {
         if (cue.transformation != Phase2Sources.TRANSFORMATION) return null
         if (cue.sourceId != Phase2Sources.SOURCE_ID) return ""
+        if (!(listOf(cue, answer) + distractors).all { OriginalApplicationTuplePins.matchesIfPinned(it) }) return ""
         val applications = cue.synthesis?.applications.orEmpty()
         if (applications.isEmpty()) return ""
         val spec = applications.firstOrNull { it.cue == cue.shippedText } ?: return ""
@@ -4527,6 +4534,14 @@ internal object V2Validator {
     }
 
     private fun validateItem(pack: V2CurriculumPack, item: V2CheckItem, errors: MutableList<String>) {
+        if (item.promptLetterRole !in setOf("CUE", "ANSWER_REFERENCE") ||
+            (item.promptLetterRole == "ANSWER_REFERENCE" &&
+                (item.kind != "SOURCE_QUESTION" || item.promptLetter != item.answer))) {
+            errors += "Item ${item.id} has an invalid cue role"
+        }
+        if (item.kind == "SOURCE_QUESTION" && item.promptLetter == item.answer && item.promptLetterRole == "CUE") {
+            errors += "Item ${item.id} discloses its answer as a question cue"
+        }
         if (item.containsGeneratedRussian) errors += "Item ${item.id} marks generated Russian"
         if (item.language != "en") errors += "Item ${item.id} is not independently authored English"
         if (item.options.isEmpty() || item.answer !in item.options) {
@@ -5203,6 +5218,9 @@ internal object V2Validator {
         if (synthesis == null) {
             errors += "Provenance ${record.itemId} original synthesis evidence is missing"
             return errors
+        }
+        if (!OriginalApplicationTuplePins.matchesIfPinned(record)) {
+            errors += "Provenance ${record.itemId} immutable application tuple identity does not match"
         }
         if (synthesis.bibliography.isBlank() ||
             synthesis.authorshipDeclaration.isBlank() ||

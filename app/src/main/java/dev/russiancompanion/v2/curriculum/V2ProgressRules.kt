@@ -43,10 +43,9 @@ internal fun unitState(
     learner: V2LearnerView,
 ): V2UnitState {
     if (!unit.openable()) return V2UnitState.NOT_YET_INSTALLED
-    if (unit.number in learner.completedUnitNumbers) return V2UnitState.COMPLETED
-    if (unit.number == learner.currentUnitNumber) return V2UnitState.CURRENT
-    val prereqs = unit.prerequisiteUnitNumbers
-    return if (prereqs.all { it in learner.completedUnitNumbers }) {
+    if (unit.number in currentCompletedUnitNumbers(pack, learner)) return V2UnitState.COMPLETED
+    if (unit.number == learner.currentUnitNumber && unmetCurrentPrerequisites(pack, unit, learner).isEmpty()) return V2UnitState.CURRENT
+    return if (unmetCurrentPrerequisites(pack, unit, learner).isEmpty()) {
         V2UnitState.AVAILABLE
     } else {
         V2UnitState.LOCKED
@@ -122,6 +121,25 @@ internal fun continueTarget(pack: V2CurriculumPack, learner: V2LearnerView): V2C
             stepIndex = 0,
             unitNumber = unit.number,
             unavailable = true,
+        )
+    }
+    val missingPrerequisites = unmetCurrentPrerequisites(pack, unit, learner)
+    if (missingPrerequisites.isNotEmpty()) {
+        var review = pack.unit(missingPrerequisites.first())
+        val visited = mutableSetOf<Int>()
+        while (review != null && visited.add(review.number)) {
+            val earlier = unmetCurrentPrerequisites(pack, review, learner).firstOrNull() ?: break
+            review = pack.unit(earlier)
+        }
+        val reviewable = review != null && unmetCurrentPrerequisites(pack, review, learner).isEmpty()
+        return V2ContinueTarget(
+            title = "Review earlier completion",
+            reason = "Current prerequisite evidence is needed before Unit ${unit.number} can open.",
+            sessionId = null,
+            stepIndex = 0,
+            unitNumber = review?.number ?: unit.number,
+            unavailable = !reviewable,
+            opensUnitReview = reviewable,
         )
     }
     val sessions = unit.sessions
@@ -290,6 +308,18 @@ internal fun advancementDecision(
     unit: V2Unit,
     learner: V2LearnerView,
 ): V2AdvancementDecision {
+    val requirements = currentUnitRequirements(pack, unit, learner)
+    val missing = unmetCurrentPrerequisites(pack, unit, learner).filter { it in learner.completedUnitNumbers }
+    val remaining = requirements.remaining + missing.map { "Review current evidence for prerequisite Unit $it" }
+    return V2AdvancementDecision(remaining.isEmpty(), remaining)
+}
+
+/** Does not call completion/prerequisite derivation, avoiding recursive evidence evaluation. */
+internal fun currentUnitRequirements(
+    pack: V2CurriculumPack,
+    unit: V2Unit,
+    learner: V2LearnerView,
+): V2AdvancementDecision {
     val rule = unit.advancement ?: return V2AdvancementDecision(false, listOf("This unit has no advancement rule."))
     val remaining = mutableListOf<String>()
     if (unit.readiness == "NOT_PREPARED") {
@@ -335,7 +365,7 @@ internal fun advancementDecision(
 }
 
 internal fun visibleReferences(pack: V2CurriculumPack, learner: V2LearnerView): List<V2ReferenceEntry> {
-    val reached = (learner.completedUnitNumbers + learner.currentUnitNumber).maxOrNull() ?: 1
+    val reached = (currentCompletedUnitNumbers(pack, learner) + learner.currentUnitNumber).maxOrNull() ?: 1
     return pack.references.filter { it.introducedInUnit <= reached }
 }
 

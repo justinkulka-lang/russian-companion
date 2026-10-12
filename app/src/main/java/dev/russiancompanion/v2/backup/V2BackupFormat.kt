@@ -759,3 +759,6 @@ internal fun sha256(file: File): String {
 }
 
 private fun hex(bytes: ByteArray): String = bytes.joinToString("") { "%02x".format(it) }
+
+internal const val BACKUP_SAVED_WITH_LATER_CHANGES =
+    "Backup saved. Newer learner changes were not included. Back up again to save them."

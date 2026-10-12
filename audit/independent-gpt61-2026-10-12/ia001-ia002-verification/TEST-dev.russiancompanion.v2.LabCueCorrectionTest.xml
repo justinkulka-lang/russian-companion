@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.LabCueCorrectionTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-12T19:59:01.534Z" hostname="03aee042dd55" time="33.721">
+  <properties/>
+  <testcase name="vocabularyShowsTheGovernedWordCue" classname="dev.russiancompanion.v2.LabCueCorrectionTest" time="22.381"/>
+  <testcase name="readingShowsTheGovernedStressCue" classname="dev.russiancompanion.v2.LabCueCorrectionTest" time="3.885"/>
+  <testcase name="unsupportedCompletionIsVisibleAsHistoryWithoutCurrentCredit" classname="dev.russiancompanion.v2.LabCueCorrectionTest" time="1.992"/>
+  <testcase name="grammarShowsTheCompleteSentenceCue" classname="dev.russiancompanion.v2.LabCueCorrectionTest" time="2.319"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[System.logW: A resource failed to call close. 
+]]></system-err>
+</testsuite>

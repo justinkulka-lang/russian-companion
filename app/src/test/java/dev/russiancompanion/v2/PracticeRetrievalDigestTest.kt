@@ -45,6 +45,7 @@ import dev.russiancompanion.v2.curriculum.practiceStepId
 import dev.russiancompanion.v2.curriculum.prepareGovernedAttempt
 import dev.russiancompanion.v2.curriculum.savedWorkEntries
 import dev.russiancompanion.v2.curriculum.step
+import dev.russiancompanion.v2.curriculum.unit
 import dev.russiancompanion.v2.curriculum.stepContentDigest
 import dev.russiancompanion.v2.curriculum.verifiedResume
 import dev.russiancompanion.v2.ui.V2App
@@ -85,10 +86,11 @@ class PracticeRetrievalDigestTest {
         compose.setContent { V2App(store = store, pack = pack, onRetryOpen = {}) }
         compose.onNodeWithText("Practice").performClick()
         compose.onNodeWithText("Alphabet recognition").performScrollTo().performClick()
+        compose.onNodeWithTag("v2-lab-cue").assertTextEquals(requireNotNull(item.promptLetter)).assertIsDisplayed()
         compose.onNodeWithTag("v2-lab-prompt").assertIsDisplayed()
         compose.onNodeWithTag("v2-lab-option-$wrong").performScrollTo().performClick()
         compose.onNodeWithTag("v2-lab-submit").performClick()
-        compose.onNodeWithText("Not the reviewed answer.", substring = true).assertIsDisplayed()
+        compose.onNodeWithText("Not the reviewed answer.", substring = true).performScrollTo().assertIsDisplayed()
         assertEquals(1, store.v2Attempts().count { it.itemId == item.id })
         val row = store.v2Attempts().single { it.itemId == item.id }
         assertEquals(OPTIONAL_PRACTICE, row.attemptRole)
@@ -453,6 +455,15 @@ class PracticeRetrievalDigestTest {
         compose.onNodeWithText("Mixed review").performScrollTo().performClick()
         compose.onNodeWithTag("v2-lab-empty").assertIsDisplayed()
         assertEquals(1, store.v2Attempts().size)
+        store.v2SaveProfile(store.v2Profile().copy(startingPoint = "CAN_READ_CYRILLIC"))
+        pack.unit(3)!!.sessions.flatMap { it.steps }.forEach { step ->
+            store.v2CompleteGovernedStep(step.id, stepContentDigest(pack, step), "2026-10-04T04:00:00")
+            step.itemIds.forEach { id ->
+                val item = pack.item(id)!!
+                store.v2RecordGovernedAttempt(prepareGovernedAttempt(pack, id, item.answer, PRESCRIBED_CHECK, step.id, "2026-10-04T04:00:00")!!)
+            }
+        }
+        store.v2AttestBook(3, "2026-10-04T04:00:00")
         store.v2CompleteUnit(3, "2026-10-04T04:00:00")
         val mixed = practiceQueue(pack, store.v2LearnerView(), "mixed")
         assertTrue(mixed.isNotEmpty())

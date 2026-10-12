@@ -571,13 +571,7 @@ internal fun V2SessionScreen(
             if (itemId !in requiredItemIds) V2Status("Optional practice · not required to complete this step")
             val selected = selectedAnswer(step.id, item.id)
             val locked = item.id in lockedItemIds
-            item.promptLetter?.let { glyph ->
-                Text(
-                    glyph,
-                    style = MaterialTheme.typography.displayLarge,
-                    modifier = Modifier.semantics { testTag = "v2-prompt-letter" },
-                )
-            }
+            V2QuestionCue(item, "v2-prompt-letter")
             Text(item.prompt, style = MaterialTheme.typography.titleMedium, modifier = Modifier.semantics { testTag = "v2-item-prompt-${item.id}" })
             item.options.forEach { option ->
                 androidx.compose.foundation.layout.Row(
@@ -797,7 +791,12 @@ internal fun V2ProgressScreen(
             modifier = Modifier.semantics { testTag = "v2-progress-heading" },
         )
         V2Status("Current unit: ${unit?.title ?: "Unavailable"}")
-        V2Status("Completed units: ${learner.completedUnitNumbers.sorted().joinToString().ifBlank { "none" }}")
+        val currentCompletions = dev.russiancompanion.v2.curriculum.currentCompletedUnitNumbers(pack, learner)
+        V2Status("Completed units: ${currentCompletions.sorted().joinToString().ifBlank { "none" }}")
+        val historicalOnly = learner.completedUnitNumbers - currentCompletions
+        if (historicalOnly.isNotEmpty()) {
+            V2Status("Past completion records need current evidence: ${historicalOnly.sorted().joinToString()}")
+        }
         V2Status("Book self-attestations: ${learner.bookAttestedUnits.sorted().joinToString().ifBlank { "none" }}")
         V2Status("In-app checks marked correct: ${learner.correctItemIds.size}. This count includes historical rows and is not current prescribed credit.")
         if (objectiveLines == null) {
@@ -889,5 +888,18 @@ internal fun V2AttributionsScreen(pack: V2CurriculumPack, onBack: () -> Unit) {
                 Spacer(Modifier.height(12.dp))
             }
         }
+    }
+}
+
+/** Text semantics expose the same complete governed cue in lesson and optional practice. */
+@Composable
+internal fun V2QuestionCue(item: dev.russiancompanion.v2.curriculum.V2CheckItem, tag: String) {
+    if (item.promptLetterRole != "CUE") return
+    item.promptLetter?.takeIf { it.isNotBlank() }?.let { cue ->
+        Text(
+            cue,
+            style = if (cue.length <= 3) MaterialTheme.typography.displayLarge else MaterialTheme.typography.titleLarge,
+            modifier = Modifier.semantics { testTag = tag },
+        )
     }
 }

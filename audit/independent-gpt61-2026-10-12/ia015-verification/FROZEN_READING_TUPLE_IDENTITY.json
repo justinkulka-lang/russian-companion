@@ -1,0 +1,43 @@
+{
+  "recordId": "phase3:bookish-reading",
+  "unchangedSourceHash": "3228475d8bfaee13e41ef66f0a2a5e9f01640ce0b4fc8a6cc79df8abf8cadae3",
+  "tupleEncoding": "tuple-v1: application count; UTF8-byte-length-prefixed cue/answer; distractor count; UTF8-byte-length-prefixed distractors; original order",
+  "tupleSha256": "065d267c4a94d93576e4152ea262cda300ab0b862fe078a977e1b81ae2d582ab",
+  "hostCount": 39,
+  "applications": [
+    {
+      "cue": "Анна",
+      "answer": "Anna is the person who did the actions",
+      "distractors": [
+        "the letter went to the post office alone",
+        "the post office wrote the letter"
+      ]
+    },
+    {
+      "cue": "Закончив письмо",
+      "answer": "she finished the letter before leaving",
+      "distractors": [
+        "she sent the letter before writing it",
+        "she left before the letter existed"
+      ]
+    },
+    {
+      "cue": "пошла на почту",
+      "answer": "she went to the post office after finishing",
+      "distractors": [
+        "she stayed at the table after finishing",
+        "she finished the letter at the market"
+      ]
+    },
+    {
+      "cue": "отправила его",
+      "answer": "she sent the letter from the post office",
+      "distractors": [
+        "she left the letter at home",
+        "she received a letter at home"
+      ]
+    }
+  ],
+  "disposition": "GUARD_IMPLEMENTATION_NOT_FINAL_AUDIT",
+  "curriculumAssetModified": false
+}

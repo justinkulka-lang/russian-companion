@@ -321,6 +321,8 @@ internal data class V2CheckItem(
     val language: String,
     val prompt: String,
     val promptLetter: String? = null,
+    /** Answer/provenance-only data is retained but never rendered as a question cue. */
+    val promptLetterRole: String = "CUE",
     val options: List<String>,
     val answer: String,
     val feedback: String,

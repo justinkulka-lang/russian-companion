@@ -490,13 +490,13 @@ internal fun practiceOffers(pack: V2CurriculumPack, learner: V2LearnerView): Lis
 internal fun practiceQueue(pack: V2CurriculumPack, learner: V2LearnerView, labId: String): List<V2CheckItem> {
     if (pack.schemaVersion != 1) return emptyList()
     if (labId in setOf("listening", "pronunciation", "handwriting")) return emptyList()
-    val reached = learner.completedUnitNumbers + learner.currentUnitNumber
+    val reached = currentCompletedUnitNumbers(pack, learner) + learner.currentUnitNumber
     val pool = pack.items.mapNotNull { item ->
         val unitNumber = itemUnitNumber(pack, item) ?: return@mapNotNull null
         val unit = pack.unit(unitNumber) ?: return@mapNotNull null
         if (!unit.openable() || unitNumber !in reached) return@mapNotNull null
         if (item.options.isEmpty() || item.answer !in item.options) return@mapNotNull null
-        if (!itemKindMatchesLab(item.kind, labId, unitNumber, learner)) return@mapNotNull null
+        if (!itemKindMatchesLab(item.kind, labId, unitNumber, learner, pack)) return@mapNotNull null
         if (itemOnlyOnGapSteps(pack, item.id)) return@mapNotNull null
         item
     }
@@ -726,7 +726,7 @@ private fun itemOnlyOnGapSteps(pack: V2CurriculumPack, itemId: String): Boolean 
     return steps.isNotEmpty() && steps.all { it.id in GUIDED_PRACTICE_GAP_STEP_IDS }
 }
 
-private fun itemKindMatchesLab(kind: String, labId: String, unitNumber: Int, learner: V2LearnerView): Boolean {
+private fun itemKindMatchesLab(kind: String, labId: String, unitNumber: Int, learner: V2LearnerView, pack: V2CurriculumPack): Boolean {
     return when (labId) {
         "alphabet" -> kind in setOf("LETTER_IDENTITY", "CONFUSABLE", "SIGN", "PRINT_PAIR")
         "reading" -> kind == "SOURCE_STRESS"
@@ -740,7 +740,7 @@ private fun itemKindMatchesLab(kind: String, labId: String, unitNumber: Int, lea
             "CONTRAST_SELECTION",
         )
         "vocabulary" -> kind in setOf("SOURCE_MEANING", "SOURCE_FORM", "SOURCE_GENDER", "SOURCE_QUESTION")
-        "mixed" -> unitNumber in learner.completedUnitNumbers
+        "mixed" -> unitNumber in currentCompletedUnitNumbers(pack, learner)
         else -> false
     }
 }
@@ -780,6 +780,7 @@ internal object V2PackIdentityIndex {
     fun unitDigest(pack: V2CurriculumPack, unitNumber: Int): String? = units.get(pack)?.get(unitNumber)
 
     fun clearForTests() {
+        V2CompletionEvidence.clearForTests()
         steps.clear()
         units.clear()
     }
