@@ -1,0 +1,133 @@
+{
+  "verifiedRepositoryCommit": "37a230b615a1cc759cc3c7f2ca7489a7064f35ca",
+  "implementationAncestor": "69ebebf39db417c525211089d99f86f0fe094597",
+  "command": "source /workspace/setup/android-env.sh; ./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*Unit28InstructionTest' --tests '*Unit27RemainingInstructionTest' --tests '*UnitReviewPipelineTest.committedUnitPackagesMatchTheGenerator' --tests '*CurriculumReadinessReconciliationTest.committedReportsMatchTheGeneratorAndStayByteIdentical' --tests '*OwnerGovernanceDecisionTest.preparationManifestBindsFactsAndDoesNotPassAFinalAudit' --tests '*GapClosureDossierTest.dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease' --tests '*ReleaseSourceDigestTest.committedCandidateRecordsTheCurrentSourceDigestAndIdentity' --tests '*BatchECapabilityResearchTest.digestsGovernanceAndLaterUnitsStayUnchanged' --tests '*Units610SourceIntakeTest.earlierUnitDigestsStayPutAndLaterUnitsStayIsolated' compileDebugSources lintDebug verifyReleaseGateAttachment --max-workers=4 --console=plain",
+  "classes": [
+    {
+      "className": "dev.russiancompanion.release.ReleaseSourceDigestTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "c243d4720c8deed6f1605443052f11a595d25182d807fda4f007b5073a8024d0"
+    },
+    {
+      "className": "dev.russiancompanion.v2.review.UnitReviewPipelineTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "82a69359911c4d4d6d7fac71fded30033d45bf2129f0c3c1fcef5c6b1a4dec00"
+    },
+    {
+      "className": "dev.russiancompanion.v2.BatchECapabilityResearchTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "dcfeb67f2bfdbef66da4f41bfbfa5e88fa35c8e43c6cd6cd690e7ff9eb36cb22"
+    },
+    {
+      "className": "dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "c0e7078f4b01f45961232818f34c5aacccfdd691e505f71f616f7a8de4628757"
+    },
+    {
+      "className": "dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "8e592df6d7a765c37fc83c0ce11f9301156b491e294ff782e96ba75365e03c37"
+    },
+    {
+      "className": "dev.russiancompanion.v2.audit.GapClosureDossierTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "f61ffd9b400bbdbaf2be9a200850b337c50c809f31970ddc81d2ee3e33b2df86"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit28InstructionTest",
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "24c952ef7cca93a8b6bd75f4db91f56ab3845081c2d08c66ffc107770ebc4cce"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit27RemainingInstructionTest",
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "b407af6c781cc841b7b0327ef65318c4c3681b2fd6f5e0620ee64b3a116cb03e"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Units610SourceIntakeTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "e9921dce5882d1995d9080733647966c817667c1f415ae01743aeedb46f0d711"
+    }
+  ],
+  "counts": {
+    "tests": 17,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "completeSuite": false,
+  "excludedExporterClasses": [
+    "VisualReviewCaptureTest",
+    "Units35ChunkCaptureTest",
+    "Units610ChunkCaptureTest",
+    "Units1115GapCaptureTest"
+  ],
+  "excludedExporterSourceMethods": 16,
+  "negativeRegression": {
+    "file": "PAIR_FORGERY_BEFORE.xml",
+    "tests": 1,
+    "expectedFailures": 1,
+    "basis": "Before guard extension, mutable metadata could remove the main clause while source corpus and hash stayed unchanged."
+  },
+  "apk": {
+    "currentArtifact": "NOT_RECORDED",
+    "assembledOrSignedInThisCheckpoint": false,
+    "historicalIdentityAndSignature": "../cloud-environment-2026-10-12/MAIN_HISTORICAL_VERIFICATION.json; not evidence for this PR64 implementation"
+  },
+  "publication": {
+    "configurationSaved": true,
+    "userReported": "Published",
+    "independentPublicationStatusToolAvailable": false
+  },
+  "physicalDeviceAcceptance": "OUTSTANDING",
+  "publicRelease": "NOT_APPROVED",
+  "historicalTestScope": {
+    "mainSourceAnnotations": 579,
+    "mainReportedTests": 563,
+    "mainPassed": 562,
+    "mainSkipped": 1,
+    "pr64BaselineSourceAnnotations": 691,
+    "reported691Execution": "not independently XML-certified",
+    "currentRun": "17 focused tests; no complete-suite claim"
+  },
+  "compilation": {
+    "compileDebugSources": "UP-TO-DATE following successful current production/test compilation; not described as a clean rebuild"
+  },
+  "releaseGateAttachment": "PASS: verifyReleaseGateAttachment executed",
+  "lint": {
+    "result": "PASS",
+    "severities": {
+      "Warning": 20,
+      "Hint": 1
+    },
+    "sha256": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6"
+  },
+  "commandExitCode": 0
+}

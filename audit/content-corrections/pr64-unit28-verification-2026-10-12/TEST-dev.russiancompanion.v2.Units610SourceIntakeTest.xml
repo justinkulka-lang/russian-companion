@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Units610SourceIntakeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-12T18:09:57.019Z" hostname="03aee042dd55" time="33.41">
+  <properties/>
+  <testcase name="earlierUnitDigestsStayPutAndLaterUnitsStayIsolated" classname="dev.russiancompanion.v2.Units610SourceIntakeTest" time="33.406"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
