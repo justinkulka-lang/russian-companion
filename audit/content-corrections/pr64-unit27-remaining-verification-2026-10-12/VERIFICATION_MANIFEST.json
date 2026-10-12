@@ -1,0 +1,86 @@
+{
+  "baselineCommit": "e1af6c2cc71e1057d25349a66a2393b211ea34af",
+  "focusedCommand": "source /workspace/setup/android-env.sh; ./gradlew -I /workspace/setup/cloud-validation.gradle testDebugUnitTest --tests '*Unit27RemainingInstructionTest' --tests '*Unit27PastInstructionTest' --tests '*ContentAuditCorrectionTest.unit27AdvancesWithoutOptionalPresentPassive' --tests '*ContentAuditCheckpointRepairTest' --max-workers=4 --console=plain",
+  "focusedCounts": {
+    "tests": 13,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "classes": [
+    {
+      "class": "dev.russiancompanion.v2.ContentAuditCheckpointRepairTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "97b22840dc5cef62a71b6705a09c99d277e5a6672e15f1eadccc865bb14b7b67"
+    },
+    {
+      "class": "dev.russiancompanion.v2.ContentAuditCorrectionTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "8381d4b337b05f94e1b544049bcd02da993722190f2ec79f832cd52207fe1667"
+    },
+    {
+      "class": "dev.russiancompanion.v2.Unit27PastInstructionTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "385308fae4dc1dc67e64a535375b7a686ed2f89451d2816181f277557702b015"
+    },
+    {
+      "class": "dev.russiancompanion.v2.Unit27RemainingInstructionTest",
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "4423bc61b62c00ec1af0f200a3a8ae5dbf08d0f542b57f0b77b40b5ec9d86442"
+    }
+  ],
+  "completeSuite": false,
+  "excludedExporterClasses": [
+    "VisualReviewCaptureTest",
+    "Units35ChunkCaptureTest",
+    "Units610ChunkCaptureTest",
+    "Units1115GapCaptureTest"
+  ],
+  "negativeRegressionEvidence": {
+    "lessonBefore": {
+      "file": "LESSON_BEFORE.xml",
+      "tests": 3,
+      "expectedFailures": 3,
+      "basis": "new behavioral assertions executed against the exact preceding asset using external test-only baseline property"
+    },
+    "pairBefore": {
+      "file": "PAIR_FORGERY_BEFORE.xml",
+      "tests": 1,
+      "expectedFailures": 1,
+      "basis": "new pair-forgery assertion executed against the preceding production guard and revised pending corpus; old guard accepted unrelated reading answer with a writing cue"
+    }
+  },
+  "preservation": "73 added pending records including 29 revised-corpus hosts; all previous provenance/Russian examples/cues/options/answer keys, mappings and rights retained; other units unchanged; one capability hash/span refreshed without changing its scope",
+  "repeatability": "independent replay from preceding asset produced exact current bytes; second application was byte-idempotent",
+  "productionValidation": "zero errors in focused test",
+  "publication": {
+    "userReported": "Published",
+    "runtimeGithubApi": "HTTP 200 after prior proxy HTTP 403",
+    "independentPublicationStatusToolAvailable": false
+  },
+  "historicalCi": {
+    "runId": 38236890652,
+    "headSha": "420f41ff6c2a4417cd829fdee0179b6a3b797eff",
+    "event": "pull_request",
+    "conclusion": "success",
+    "jobId": 114769649516,
+    "reportedTestCount691": "still not independently XML-certified",
+    "reportArtifactId": 11744835599,
+    "reportArtifactSha256": "bd4de95a280110043898680276465e9041a729515d9b78974a20dc761da3b2fe",
+    "artifactDownload": "proxy denied artifact-storage destination; domain addition saved to draft, not confirmed active"
+  },
+  "physicalDeviceAcceptance": "OUTSTANDING",
+  "publicRelease": "NOT_APPROVED"
+}

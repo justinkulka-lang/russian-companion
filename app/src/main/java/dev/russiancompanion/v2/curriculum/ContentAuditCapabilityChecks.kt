@@ -116,6 +116,20 @@ internal fun correctedCapabilityDefects(pack: V2CurriculumPack, cap: V2SourceCap
             fail("duplicate assessment checks do not clear postal-address")
         }
     }
+    if (pin.unit == 27 && pin.claim == "participle-comprehension") {
+        // A known writing cue must not acquire a reading answer through mutable metadata.
+        val frozenApplications = runCatching {
+            Json.decodeFromString<List<V2SynthesisApplication>>(cap.exactSpan.substringAfterLast('\n'))
+        }.getOrNull()
+        if (frozenApplications?.size != independent.size ||
+            hosts.any { it.synthesis?.applications != frozenApplications } ||
+            independent.any { item -> frozenApplications?.count { application ->
+                application.cue == item.promptLetter && application.answer == item.answer &&
+                    application.distractors == item.options.filter { it != item.answer }
+            } != 1 }) {
+            fail("is missing its exact independent participial-reading applications")
+        }
+    }
     (objective.instructionStepIds + objective.remediationStepIds).forEach { id ->
         val step = pack.step(id)?.second
         if (step == null || step.body.isBlank() || step.body !in cap.exactSpan) fail("has an unbound teaching or remediation step $id")
