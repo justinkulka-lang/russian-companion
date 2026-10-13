@@ -1,0 +1,24 @@
+{
+  "status": "READ_ONLY_SOURCE_CANDIDATE_INSPECTION_NOT_ADMISSION_OR_ACCEPTANCE",
+  "candidateSourceHashes": {
+    "catalog/sources/units-3-5/wikibooks/nominative-4213267.txt": "c00d0dbe20bde2abd3aae63d08bf6a3f5a291f5cbfcd0cea5c853af04a6e1c84",
+    "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt": "9fc58c168fe33c428a4a9a665955dede2c19997a8fbf58042f207d282462e998",
+    "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt": "e12312425b1ed50177c3549ac10026696fbb8733c089b748b183eecdaf8ace85"
+  },
+  "findings": [
+    {
+      "path": "catalog/sources/units-3-5/wikibooks/nominative-4213267.txt",
+      "candidateScope": "Complete native long-form predicate example translated The student is new, and attributive examples translated new pencil/new book/new letter. Potential context for teaching that long forms also occur in predicates. Confirm actual source/rights/admission and every selected span before adding applications."
+    },
+    {
+      "path": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+      "risks": "Short-adjective section overgeneralizes permanent/temporary choice and universal formation, contradicts its own no-short-form exceptions, and includes stress/spelling quality problems and Latin letters in Cyrillic-looking endings. Its happy-predicate example is not accepted here as a safe unchanged target. Do not adopt these rules or silently repair native text."
+    },
+    {
+      "path": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+      "candidateScope": "Short-form gender/number table and explicit supplied new adjective paradigm. Correct selection provenance and complete context needed for new agreement applications; isolated table forms alone do not assess every sentence-level function."
+    }
+  ],
+  "newApplicationsImplementedFromTheseCandidates": false,
+  "broaderAgreementAndSentenceApplication": "OPEN"
+}

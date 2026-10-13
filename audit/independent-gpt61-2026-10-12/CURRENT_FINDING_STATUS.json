@@ -98,8 +98,17 @@
       "findingId": "IA011",
       "producerSeverity": "HIGH",
       "producerStatus": "OPEN",
-      "engineeringDisposition": "OPEN",
-      "formalAcceptance": false
+      "engineeringDisposition": "PARTIAL_FORM_RECOGNITION_CORRECTED_PENDING_INDEPENDENT_VERIFICATION_BROADER_AGREEMENT_AND_SENTENCE_APPLICATION_OPEN",
+      "formalAcceptance": false,
+      "implementationCommit": "f844dd187be8e2e4d650c40305655815c8b2c3ec",
+      "evidencePath": "ia011-unit29-verification/FINAL_VERIFICATION_MANIFEST.json",
+      "grammarItemIds": [
+        "u29-g-adjective-form-0",
+        "u29-i-adjective-form-1",
+        "u29-i-adjective-form-2"
+      ],
+      "vocabularyObjectiveId": "obj-u29-adjective-vocabulary",
+      "broaderAgreementAndSentenceApplication": "OPEN"
     },
     {
       "findingId": "IA012",
@@ -155,20 +164,20 @@
   "semanticAcceptancePromoted": false,
   "physicalDeviceAcceptance": "OUTSTANDING",
   "release": "NOT_APPROVED",
-  "latestValidatorImplementationCommit": "b4346e2797e8c4dd0965b4665773397d5e9be742",
-  "latestSourceBindingCheckpoint": "507796c9b859acfc287c59691132cac5b6f9bf6b",
+  "latestValidatorImplementationCommit": "f844dd187be8e2e4d650c40305655815c8b2c3ec",
+  "latestSourceBindingCheckpoint": "bc3db47dbb167a08dac05fda38ef368f62224249",
   "remainingSourceReviewPointers": [
     "IA007_SOURCE_REVIEW_PENDING.md",
     "IA008_SOURCE_REVIEW_PENDING.md"
   ],
   "firstBatchImplementationCommit": "4f5cb8024d3f68a37052fdf85b5755bffa2a0904",
   "firstBatchPacketCheckpoint": "49af91a0f5578c63a3b9b98bbe975f40d2758fcc",
-  "latestCurriculumImplementationCommit": "b4346e2797e8c4dd0965b4665773397d5e9be742",
+  "latestCurriculumImplementationCommit": "f844dd187be8e2e4d650c40305655815c8b2c3ec",
   "acceptanceOrder": [
     "FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
     "PHYSICAL_DEVICE_ACCEPTANCE_LAST"
   ],
   "physicalDeviceEvidenceRequestTiming": "AFTER_FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
   "latestAppImplementationCommit": "c82e5b4a305c960ca41f660071d0da25070631ea",
-  "latestVerifiedRepositoryCommit": "507796c9b859acfc287c59691132cac5b6f9bf6b"
+  "latestVerifiedRepositoryCommit": "bc3db47dbb167a08dac05fda38ef368f62224249"
 }

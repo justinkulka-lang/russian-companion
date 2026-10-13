@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit9QuantityRuleCorrectionTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-13T13:44:42.266Z" hostname="d0fbcd1608d3" time="34.451">
+  <properties/>
+  <testcase name="threeChoiceContextCannotSwapItsAnswerAndApplicationTogether" classname="dev.russiancompanion.v2.Unit9QuantityRuleCorrectionTest" time="19.762"/>
+  <testcase name="coordinatedKeyAndApplicationEditsCannotReverseTheTeenContext" classname="dev.russiancompanion.v2.Unit9QuantityRuleCorrectionTest" time="14.627"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[System.logW: A resource failed to call close. 
+]]></system-err>
+</testsuite>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.LabExplanationCorrectionTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-13T13:43:31.334Z" hostname="d0fbcd1608d3" time="76.309">
+  <properties/>
+  <testcase name="wrongGrammarAnswerCanReviewDeclaredTeachingWithoutWritingProgress" classname="dev.russiancompanion.v2.LabExplanationCorrectionTest" time="62.111"/>
+  <testcase name="crossUnitDeclarationsCannotRevealFutureTeaching" classname="dev.russiancompanion.v2.LabExplanationCorrectionTest" time="2.205"/>
+  <testcase name="correctVocabularyAnswerCanReviewTeachingAndKeepItsSavedSelection" classname="dev.russiancompanion.v2.LabExplanationCorrectionTest" time="6.977"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[System.logW: A resource failed to call close. 
+]]></system-err>
+</testsuite>

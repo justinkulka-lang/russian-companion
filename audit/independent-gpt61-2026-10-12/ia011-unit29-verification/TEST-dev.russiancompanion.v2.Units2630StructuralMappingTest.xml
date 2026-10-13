@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Units2630StructuralMappingTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-13T13:45:08.087Z" hostname="d0fbcd1608d3" time="24.808">
+  <properties/>
+  <testcase name="russianWithoutProvenanceIsRejectedAndPenguinStaysOut" classname="dev.russiancompanion.v2.Units2630StructuralMappingTest" time="21.206"/>
+  <testcase name="preparedLateUnitIsNotPermanentlyBlockedFromAdvancement" classname="dev.russiancompanion.v2.Units2630StructuralMappingTest" time="3.588"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[System.logW: A resource failed to call close. 
+]]></system-err>
+</testsuite>
