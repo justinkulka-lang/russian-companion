@@ -132,8 +132,28 @@
       "findingId": "IA013",
       "producerSeverity": "HIGH",
       "producerStatus": "OPEN",
-      "engineeringDisposition": "OPEN",
-      "formalAcceptance": false
+      "engineeringDisposition": "ENGINEERING_FIX_PENDING_INDEPENDENT_VERIFICATION",
+      "formalAcceptance": false,
+      "implementationCommit": "a2d7a2f62645aa6a95f7dd69590f7e61eb8b38b2",
+      "evidencePath": "ia013-unit30-verification/FINAL_VERIFICATION_MANIFEST.json",
+      "letterNameComponent": "BOUNDED_RUSSIAN_TEXT_NAME_RECOGNITION_PENDING_INDEPENDENT_VERIFICATION",
+      "abbreviationComponent": "SUPPLIED_INITIALISM_MEANING_AND_NOUN_TREATMENT_PENDING_INDEPENDENT_VERIFICATION",
+      "optionalReferenceItemIds": [
+        "u30-g-letter-names-0",
+        "u30-i-letter-names-1",
+        "u30-i-letter-names-2",
+        "u30-g-abbrev-examples-0",
+        "u30-i-abbrev-examples-1",
+        "u30-i-abbrev-examples-2"
+      ],
+      "newIndependentItemIds": [
+        "u30-i-native-name-b",
+        "u30-i-native-name-v",
+        "u30-i-initialism-ussr",
+        "u30-i-initialism-usa"
+      ],
+      "completePhoneticFoundationClaim": false,
+      "unrestrictedGrammarClaim": false
     },
     {
       "findingId": "IA014",
@@ -175,20 +195,20 @@
   "semanticAcceptancePromoted": false,
   "physicalDeviceAcceptance": "OUTSTANDING",
   "release": "NOT_APPROVED",
-  "latestValidatorImplementationCommit": "73a40c14b8afb01b521bddf24179c3454f0bae04",
-  "latestSourceBindingCheckpoint": "95469406f1440e6d5d0b2ad1987f1b9d3a304823",
+  "latestValidatorImplementationCommit": "a2d7a2f62645aa6a95f7dd69590f7e61eb8b38b2",
+  "latestSourceBindingCheckpoint": "c67e47bba71ce0b6c4ee0b0a1030c080af41f547",
   "remainingSourceReviewPointers": [
     "IA007_SOURCE_REVIEW_PENDING.md",
     "IA008_SOURCE_REVIEW_PENDING.md"
   ],
   "firstBatchImplementationCommit": "4f5cb8024d3f68a37052fdf85b5755bffa2a0904",
   "firstBatchPacketCheckpoint": "49af91a0f5578c63a3b9b98bbe975f40d2758fcc",
-  "latestCurriculumImplementationCommit": "73a40c14b8afb01b521bddf24179c3454f0bae04",
+  "latestCurriculumImplementationCommit": "a2d7a2f62645aa6a95f7dd69590f7e61eb8b38b2",
   "acceptanceOrder": [
     "FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
     "PHYSICAL_DEVICE_ACCEPTANCE_LAST"
   ],
   "physicalDeviceEvidenceRequestTiming": "AFTER_FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
   "latestAppImplementationCommit": "c82e5b4a305c960ca41f660071d0da25070631ea",
-  "latestVerifiedRepositoryCommit": "95469406f1440e6d5d0b2ad1987f1b9d3a304823"
+  "latestVerifiedRepositoryCommit": "c67e47bba71ce0b6c4ee0b0a1030c080af41f547"
 }

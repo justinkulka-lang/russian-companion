@@ -16,5 +16,6 @@
   },
   "command": "source /workspace/setup/android-env.sh; ./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*Unit30LanguageCorrectionTest' --tests '*Unit30InstructionTest' --max-workers=4 --console=plain",
   "rawCurriculumSha256": "1672d719a3d267bfdad813cdcf6952e201d6ffe242f271340a0d523778b240fd",
-  "nativePinCodeSha256": "6febecef91189af24e799cc08e046ad798fe0d6a2c06d4554e3ac4b5c006d2bb"
+  "nativePinCodeSha256": "6febecef91189af24e799cc08e046ad798fe0d6a2c06d4554e3ac4b5c006d2bb",
+  "hashScope": "Hashes identify the corrected expanded 98-record/13-primary-selection implementation. The earlier failed compile used the preceding 97-record/12-primary-selection prototype; that prototype was not separately hash-pinned. It failed before executing tests."
 }
