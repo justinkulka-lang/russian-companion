@@ -1,0 +1,46 @@
+package dev.russiancompanion.v2
+import android.content.Context
+import androidx.test.core.app.ApplicationProvider
+import dev.russiancompanion.data.local.LocalStore
+import dev.russiancompanion.v2.curriculum.*
+import org.junit.Assert.*
+import org.junit.Test
+import org.junit.runner.RunWith
+import org.robolectric.RobolectricTestRunner
+import org.robolectric.annotation.Config
+import java.io.File
+/** Pre-correction diagnostic: two distinct-context assertions deliberately expose IA016. */
+@RunWith(RobolectricTestRunner::class)
+@Config(sdk=[33])
+class Unit28TimingDiagnosticTest {
+    @Test fun originalSixGovernedAnswersCompleteBothTimingObjectives() {
+        val p=pack()
+        LocalStore.openInMemory(ApplicationProvider.getApplicationContext<Context>()).use { store ->
+            for (obj in objectives(p)) {
+                val ids=obj.practiceStepIds.flatMap { p.step(it)!!.second.itemIds }+obj.checkItemIds
+                assertEquals(3,ids.size)
+                for(id in ids) {
+                    val step=p.unit(28)!!.sessions.flatMap { it.steps }.single { id in it.itemIds }
+                    val a=prepareGovernedAttempt(p,id,p.item(id)!!.answer,PRESCRIBED_CHECK,step.id,"2026-10-13T23:00")!!
+                    store.v2RecordGovernedAttempt(a)
+                }
+                assertEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS,objectiveState(obj,store.v2LearnerView(),p))
+            }
+            assertEquals(6,store.v2Attempts().size)
+            assertEquals(6,creditItemIds(p,store.v2LearnerView()).size)
+        }
+    }
+    @Test fun imperfectiveTimingNeedsAnIndependentContextDifferentFromGuidedPractice() {
+        assertDistinct("obj-u28-imperfective-adverb","u28-i-imperfective-adverb-1")
+    }
+    @Test fun perfectiveTimingNeedsAnIndependentContextDifferentFromGuidedPractice() {
+        assertDistinct("obj-u28-perfective-adverb","u28-i-perfective-adverb-1")
+    }
+    private fun assertDistinct(id:String,check:String) {
+        val p=pack();val o=objectives(p).single { it.id==id }
+        val guided=o.practiceStepIds.flatMap { p.step(it)!!.second.itemIds }.map { p.item(it)!!.promptLetter }
+        assertTrue("IA016: independent timing context must differ from guided practice: $id",p.item(check)!!.promptLetter !in guided)
+    }
+    private fun objectives(p:V2CurriculumPack)=p.unit(28)!!.objectives.filter { it.id in listOf("obj-u28-imperfective-adverb","obj-u28-perfective-adverb") }
+    private fun pack()=V2PackLoader.parse(File(if(File("app").isDirectory)"." else "..","app/src/main/assets/content/v2-curriculum.json").readText())
+}

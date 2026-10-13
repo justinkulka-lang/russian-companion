@@ -1,0 +1,442 @@
+{
+  "schemaVersion": 1,
+  "baselineCommit": "425bf2a4fc166000f72fd81c03941a415f3d86c7",
+  "curriculumFileSha256": "acde4eb315efc79f18765f71a04434ff7b494ccdc9a9a0cba73cc05b2256fbf1",
+  "disposition": "RESEARCH_ONLY_NOT_ADMITTED_NOT_CORRECTED",
+  "originalItems": [
+    {
+      "id": "u28-g-imperfective-adverb-0",
+      "prompt": "Which English description identifies the timing of читая in this sentence?",
+      "promptLetter": "читая письмо, он улыбался",
+      "answer": "simultaneous with the main predicate",
+      "options": [
+        "simultaneous with the main predicate",
+        "an absolute present label",
+        "a different subject from the main verb"
+      ],
+      "objectiveId": "obj-u28-imperfective-adverb",
+      "assessment": {
+        "testedFeature": "IMPERFECTIVE_ADVERB_SIMULTANEOUS",
+        "evidenceMode": "STATED_APPLICATION",
+        "contrastSetId": "u28-imperfective-adverb-0",
+        "cueLanguage": "ru",
+        "independent": false,
+        "answerSourceIds": [
+          "prov-ca-repair-28-10677"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ca-repair-28-10681",
+          "prov-ca-repair-28-10682"
+        ],
+        "distractorDifference": [
+          "",
+          "an absolute present label ignores the past main verb; the verbal adverb has relative time.",
+          "a different subject from the main verb violates the shared-subject condition in this construction."
+        ],
+        "whyAnswerDemonstratesObjective": "In читая письмо, он улыбался, читая is simultaneous with the main predicate: the same person reads and smiles during the same interval.",
+        "contrastMembers": [
+          "simultaneous with the main predicate",
+          "an absolute present label",
+          "a different subject from the main verb"
+        ],
+        "relationKind": "STATED_APPLICATION",
+        "relationParticipantIds": [
+          "prov-ca-repair-28-10676",
+          "prov-ca-repair-28-10677",
+          "prov-ca-repair-28-10681",
+          "prov-ca-repair-28-10682"
+        ],
+        "responseKind": "ENGLISH_CLASSIFICATION"
+      }
+    },
+    {
+      "id": "u28-i-imperfective-adverb-1",
+      "prompt": "Which English description identifies the timing of читая in this sentence?",
+      "promptLetter": "читая письмо, он улыбался",
+      "answer": "simultaneous with the main predicate",
+      "options": [
+        "simultaneous with the main predicate",
+        "an absolute present label",
+        "a different subject from the main verb"
+      ],
+      "objectiveId": "obj-u28-imperfective-adverb",
+      "assessment": {
+        "testedFeature": "IMPERFECTIVE_ADVERB_SIMULTANEOUS",
+        "evidenceMode": "STATED_APPLICATION",
+        "contrastSetId": "u28-imperfective-adverb-1",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-8"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-12",
+          "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-13"
+        ],
+        "distractorDifference": [
+          "",
+          "an absolute present label ignores the past main verb; the verbal adverb has relative time.",
+          "a different subject from the main verb violates the shared-subject condition in this construction."
+        ],
+        "whyAnswerDemonstratesObjective": "In читая письмо, он улыбался, читая is simultaneous with the main predicate: the same person reads and smiles during the same interval.",
+        "contrastMembers": [
+          "simultaneous with the main predicate",
+          "an absolute present label",
+          "a different subject from the main verb"
+        ],
+        "relationKind": "STATED_APPLICATION",
+        "relationParticipantIds": [
+          "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-7",
+          "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-8",
+          "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-12",
+          "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-13"
+        ],
+        "responseKind": "ENGLISH_CLASSIFICATION"
+      }
+    },
+    {
+      "id": "u28-i-imperfective-adverb-2",
+      "prompt": "Which English description identifies the shared subject?",
+      "promptLetter": "читая письмо, он улыбался",
+      "answer": "the reader and the person smiling are the same person",
+      "options": [
+        "the reader and the person smiling are the same person",
+        "two unrelated people perform the actions",
+        "the sentence omits its main subject"
+      ],
+      "objectiveId": "obj-u28-imperfective-adverb",
+      "assessment": {
+        "testedFeature": "VERBAL_ADVERB_SHARED_SUBJECT",
+        "evidenceMode": "STATED_APPLICATION",
+        "contrastSetId": "u28-imperfective-adverb-2",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-16"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-19",
+          "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-20"
+        ],
+        "distractorDifference": [
+          "",
+          "two unrelated people perform the actions is not the shared-subject construction shown here.",
+          "the sentence omits its main subject is incorrect because the displayed main clause has an explicit subject."
+        ],
+        "whyAnswerDemonstratesObjective": "In читая письмо, он улыбался, the reader and the person smiling are the same person: the verbal adverb shares the subject of the main predicate.",
+        "contrastMembers": [
+          "the reader and the person smiling are the same person",
+          "two unrelated people perform the actions",
+          "the sentence omits its main subject"
+        ],
+        "relationKind": "STATED_APPLICATION",
+        "relationParticipantIds": [
+          "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-7",
+          "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-16",
+          "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-19",
+          "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-20"
+        ],
+        "responseKind": "ENGLISH_CLASSIFICATION"
+      }
+    },
+    {
+      "id": "u28-g-perfective-adverb-0",
+      "prompt": "Choose the English description. When is the perfective verbal adverb interpreted in this sentence?",
+      "promptLetter": "написав письмо, она отправит его завтра",
+      "answer": "anterior to a future main action",
+      "options": [
+        "anterior to a future main action",
+        "an absolute present label",
+        "a different subject from the main verb"
+      ],
+      "objectiveId": "obj-u28-perfective-adverb",
+      "assessment": {
+        "testedFeature": "PERFECTIVE_ADVERB_ANTERIOR",
+        "evidenceMode": "STATED_APPLICATION",
+        "contrastSetId": "u28-perfective-adverb-0",
+        "cueLanguage": "ru",
+        "independent": false,
+        "answerSourceIds": [
+          "prov-ca-repair-28-10854"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ca-repair-28-10857",
+          "prov-ca-repair-28-10858"
+        ],
+        "distractorDifference": [
+          "",
+          "an absolute present label is not the time of a perfective verbal adverb.",
+          "a different subject from the main verb violates the shared-subject constraint."
+        ],
+        "whyAnswerDemonstratesObjective": "In написав письмо, она отправит его завтра, anterior to a future main action describes написав: writing precedes the future sending, and the same person performs both actions.",
+        "contrastMembers": [
+          "anterior to a future main action",
+          "an absolute present label",
+          "a different subject from the main verb"
+        ],
+        "relationKind": "STATED_APPLICATION",
+        "relationParticipantIds": [
+          "prov-ca-repair-28-10853",
+          "prov-ca-repair-28-10854",
+          "prov-ca-repair-28-10857",
+          "prov-ca-repair-28-10858"
+        ],
+        "responseKind": "ENGLISH_CLASSIFICATION"
+      }
+    },
+    {
+      "id": "u28-i-perfective-adverb-1",
+      "prompt": "Choose the English description. When is the perfective verbal adverb interpreted in this sentence?",
+      "promptLetter": "написав письмо, она отправит его завтра",
+      "answer": "anterior to a future main action",
+      "options": [
+        "anterior to a future main action",
+        "an absolute present label",
+        "a different subject from the main verb"
+      ],
+      "objectiveId": "obj-u28-perfective-adverb",
+      "assessment": {
+        "testedFeature": "PERFECTIVE_ADVERB_ANTERIOR",
+        "evidenceMode": "STATED_APPLICATION",
+        "contrastSetId": "u28-perfective-adverb-1",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-9"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-12",
+          "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-13"
+        ],
+        "distractorDifference": [
+          "",
+          "an absolute present label is not the time of a perfective verbal adverb.",
+          "a different subject from the main verb violates the shared-subject constraint."
+        ],
+        "whyAnswerDemonstratesObjective": "In написав письмо, она отправит его завтра, anterior to a future main action describes написав: writing precedes the future sending, and the same person performs both actions.",
+        "contrastMembers": [
+          "anterior to a future main action",
+          "an absolute present label",
+          "a different subject from the main verb"
+        ],
+        "relationKind": "STATED_APPLICATION",
+        "relationParticipantIds": [
+          "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-8",
+          "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-9",
+          "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-12",
+          "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-13"
+        ],
+        "responseKind": "ENGLISH_CLASSIFICATION"
+      }
+    },
+    {
+      "id": "u28-i-perfective-adverb-2",
+      "prompt": "Which English description identifies the shared subject?",
+      "promptLetter": "написав письмо, она отправит его завтра",
+      "answer": "the writer and sender are the same person",
+      "options": [
+        "the writer and sender are the same person",
+        "two unrelated people perform the actions",
+        "the sentence omits its main subject"
+      ],
+      "objectiveId": "obj-u28-perfective-adverb",
+      "assessment": {
+        "testedFeature": "VERBAL_ADVERB_SHARED_SUBJECT",
+        "evidenceMode": "STATED_APPLICATION",
+        "contrastSetId": "u28-perfective-adverb-2",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-16"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-19",
+          "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-20"
+        ],
+        "distractorDifference": [
+          "",
+          "two unrelated people perform the actions is not the shared-subject construction shown here.",
+          "the sentence omits its main subject is incorrect because the displayed main clause has an explicit subject."
+        ],
+        "whyAnswerDemonstratesObjective": "In написав письмо, она отправит его завтра, the writer and sender are the same person: the verbal adverb shares the subject of the main predicate.",
+        "contrastMembers": [
+          "the writer and sender are the same person",
+          "two unrelated people perform the actions",
+          "the sentence omits its main subject"
+        ],
+        "relationKind": "STATED_APPLICATION",
+        "relationParticipantIds": [
+          "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-8",
+          "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-16",
+          "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-19",
+          "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-20"
+        ],
+        "responseKind": "ENGLISH_CLASSIFICATION"
+      }
+    }
+  ],
+  "exactRetainedTextSearch": {
+    "scope": "all catalog/sources/**/*.txt, exact unmodified substring only; not a web search or proof of absence from all public sources",
+    "fileCount": 60,
+    "results": {
+      "читая письмо, он улыбался": [],
+      "написав письмо, она отправит его завтра": []
+    }
+  },
+  "nativeCandidateContext": {
+    "file": "catalog/sources/units-26-30/wikisource/vechera-5336197.txt",
+    "line": 47,
+    "fullParagraphSha256": "f5a8d1c819401c77eafb9cce88010acdfbee067ae3f9da640bc55ba464bb2c16",
+    "revision": {
+      "title": "Вечера у княгини Старобельской (Чернышевский)",
+      "revid": 5336197,
+      "parentid": 5323067,
+      "timestamp": "2025-03-06T02:24:05Z",
+      "user": "TheyStoleMyNick",
+      "sha1": "1045b08284348dd6c58e5c1d0781ff4fee46e09d",
+      "size": 479184,
+      "contentmodel": "wikitext"
+    },
+    "actorContext": "Павел Сергеич Вязовский is introduced in the same complete paragraph before both actions; no actor name may be fabricated into the source clauses.",
+    "candidates": [
+      {
+        "objective": "obj-u28-imperfective-adverb",
+        "exactClause": "отдыхал читая",
+        "offsetInParagraph": 337,
+        "relativeReading": "Reading accompanies resting in this supplied episode.",
+        "requires": "Full preceding actor context and predicate retained; this is a clause selection, not a newly generated stand-alone sentence."
+      },
+      {
+        "objective": "obj-u28-perfective-adverb",
+        "exactClause": "устав писать ложился на диван",
+        "offsetInParagraph": 305,
+        "relativeReading": "Becoming tired of writing precedes lying down in the supplied sequence.",
+        "requires": "Preserve U+00A0 between на and диван, exact punctuation/absence of comma, full actor context; do not conflate grammatical lexical aspect with unrestricted always-anterior behavior."
+      }
+    ]
+  },
+  "existingCapabilityIdentities": [
+    {
+      "id": "cap-obj-u28-imperfective-adverb",
+      "sourceId": "src-content-audit-research",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-corrected-capability:cap-obj-u28-imperfective-adverb",
+      "sourceHash": "a21d6efac164e3442a34b198308777bc559f44a0d43524eded2d618a19e779bf",
+      "exactSpanSha256": "a21d6efac164e3442a34b198308777bc559f44a0d43524eded2d618a19e779bf",
+      "currentMatchingHostIds": [
+        "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-0",
+        "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-1",
+        "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-2",
+        "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-3",
+        "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-4",
+        "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-5",
+        "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-6",
+        "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-7",
+        "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-8",
+        "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-9",
+        "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-10",
+        "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-11",
+        "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-12",
+        "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-13",
+        "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-14",
+        "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-15",
+        "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-16",
+        "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-17",
+        "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-18",
+        "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-19",
+        "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-20",
+        "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-21",
+        "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-22"
+      ]
+    },
+    {
+      "id": "cap-obj-u28-perfective-adverb",
+      "sourceId": "src-content-audit-research",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-corrected-capability:cap-obj-u28-perfective-adverb",
+      "sourceHash": "bf5eb9cff399832fa6133f59b73b987e64b4882ec513f98f200b1a000c4716e0",
+      "exactSpanSha256": "bf5eb9cff399832fa6133f59b73b987e64b4882ec513f98f200b1a000c4716e0",
+      "currentMatchingHostIds": [
+        "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-0",
+        "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-1",
+        "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-2",
+        "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-3",
+        "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-4",
+        "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-5",
+        "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-6",
+        "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-7",
+        "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-8",
+        "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-9",
+        "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-10",
+        "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-11",
+        "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-12",
+        "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-13",
+        "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-14",
+        "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-15",
+        "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-16",
+        "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-17",
+        "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-18",
+        "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-19",
+        "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-20",
+        "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-21",
+        "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-22"
+      ]
+    }
+  ],
+  "sourceAndRightsDeclarationsUnchanged": true,
+  "semanticAcceptance": false,
+  "physicalAcceptance": false,
+  "implementationRequired": true,
+  "retainedSourceIdentities": {
+    "catalog/sources/units-26-30/wikisource/vechera-5336197.txt": {
+      "sha256": "af0a1b2a4a79796a3523bb8a35b708df450e5970a96af050230b42cf6f604517",
+      "bytes": 479184
+    },
+    "catalog/sources/units-26-30/wikisource/vechera-5336197.revision.json": {
+      "sha256": "2df453b915aaf2aaa22430099ea3e1ddae3e9be0e3a36c6209216eba48f88ffb",
+      "bytes": 315
+    },
+    "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt": {
+      "sha256": "e12312425b1ed50177c3549ac10026696fbb8733c089b748b183eecdaf8ace85",
+      "bytes": 165374
+    },
+    "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.revision.json": {
+      "sha256": "4db1b6d5d6a12e30cbf1e66941081dc1b387c28e4abcaeaf1988718c11ba97b2",
+      "bytes": 223
+    },
+    "catalog/sources/units-26-30/wikisource/pd-old-3794015.revision.json": {
+      "sha256": "ca78ef17c5f4ea1a7e329229613c5bfaeee833dabb61969292f76ae09e7b424c",
+      "bytes": 239
+    },
+    "catalog/sources/units-26-30/wikisource/pd-old-3794015.txt": {
+      "sha256": "37821d53b9d4c3e05f5119d05080cadc14d78e9e0141b371092e3ad218083f70",
+      "bytes": 58
+    },
+    "catalog/sources/units-26-30/wikisource/pd-old-70-5691096.revision.json": {
+      "sha256": "3992b9b408999d473648cd03e407ef434372a86481ce1bc5aafb08c9533552a2",
+      "bytes": 244
+    },
+    "catalog/sources/units-26-30/wikisource/pd-old-70-5691096.txt": {
+      "sha256": "4a870dff55a234c8e9f96a538ae9af6eef735809ab15ab3ad4ae29c9cd4f4a36",
+      "bytes": 2502
+    },
+    "catalog/sources/units-26-30/wikisource/author-5696210.txt": {
+      "sha256": "22caa67898cc2eac8bed9403a78be547da0546396cfa7b17ed47116aee7eb15f",
+      "bytes": 5142
+    },
+    "catalog/sources/units-26-30/wikisource/ap-4965505.txt": {
+      "sha256": "37d5a10c650502b557dee061fcc77482d29010799448fa5440f6d8ddabd317e3",
+      "bytes": 1301
+    },
+    "catalog/sources/units-26-30/wikisource/copyrights-5723825.txt": {
+      "sha256": "6b4b5ca20482c80ba478db1e6eb045732939c4796c5b3f86e720f15920e497cd",
+      "bytes": 59094
+    }
+  }
+}

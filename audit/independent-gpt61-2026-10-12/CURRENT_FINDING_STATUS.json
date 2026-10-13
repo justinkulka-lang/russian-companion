@@ -271,7 +271,20 @@
       "productiveReflexiveClaim": false,
       "allPronounCasesClaim": false,
       "productiveWordOrderClaim": false,
-      "independentSubjectFocusClaim": false
+      "independentSubjectFocusClaim": false,
+      "unit28PreImplementationResearch": {
+        "baselineCommit": "425bf2a4fc166000f72fd81c03941a415f3d86c7",
+        "evidencePath": "ia016-unit28-timing-research/BASELINE_VERIFICATION_MANIFEST.json",
+        "sourceReviewPath": "ia016-unit28-timing-research/SOURCE_REVIEW.md",
+        "disposition": "REPRODUCED_TWO_REPEATS_NATIVE_CANDIDATES_NOT_YET_ADMITTED",
+        "tests": 8,
+        "passed": 6,
+        "expectedDiagnosticFailures": 2,
+        "errors": 0,
+        "skipped": 0,
+        "applicationModified": false,
+        "formalAcceptance": false
+      }
     },
     {
       "findingId": "IA017",
