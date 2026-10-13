@@ -88,8 +88,11 @@
       "findingId": "IA010",
       "producerSeverity": "MEDIUM",
       "producerStatus": "OPEN",
-      "engineeringDisposition": "OPEN",
-      "formalAcceptance": false
+      "engineeringDisposition": "ENGINEERING_FIX_PENDING_INDEPENDENT_VERIFICATION",
+      "formalAcceptance": false,
+      "implementationCommit": "b4346e2797e8c4dd0965b4665773397d5e9be742",
+      "evidencePath": "ia010-unit29-verification/FINAL_VERIFICATION_MANIFEST.json",
+      "replacementItemId": "u29-i-active-2"
     },
     {
       "findingId": "IA011",
@@ -152,20 +155,20 @@
   "semanticAcceptancePromoted": false,
   "physicalDeviceAcceptance": "OUTSTANDING",
   "release": "NOT_APPROVED",
-  "latestValidatorImplementationCommit": "8e5db89c56d9421a6efcffa6f0a14c0f0b6c042a",
-  "latestSourceBindingCheckpoint": "36605d7e42dc06d452f5dd36d7cde9c4775d79da",
+  "latestValidatorImplementationCommit": "b4346e2797e8c4dd0965b4665773397d5e9be742",
+  "latestSourceBindingCheckpoint": "507796c9b859acfc287c59691132cac5b6f9bf6b",
   "remainingSourceReviewPointers": [
     "IA007_SOURCE_REVIEW_PENDING.md",
     "IA008_SOURCE_REVIEW_PENDING.md"
   ],
   "firstBatchImplementationCommit": "4f5cb8024d3f68a37052fdf85b5755bffa2a0904",
   "firstBatchPacketCheckpoint": "49af91a0f5578c63a3b9b98bbe975f40d2758fcc",
-  "latestCurriculumImplementationCommit": "434b32c618f45faa67a765d63d7d1f080ffd05d9",
+  "latestCurriculumImplementationCommit": "b4346e2797e8c4dd0965b4665773397d5e9be742",
   "acceptanceOrder": [
     "FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
     "PHYSICAL_DEVICE_ACCEPTANCE_LAST"
   ],
   "physicalDeviceEvidenceRequestTiming": "AFTER_FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
   "latestAppImplementationCommit": "c82e5b4a305c960ca41f660071d0da25070631ea",
-  "latestVerifiedRepositoryCommit": "36605d7e42dc06d452f5dd36d7cde9c4775d79da"
+  "latestVerifiedRepositoryCommit": "507796c9b859acfc287c59691132cac5b6f9bf6b"
 }
