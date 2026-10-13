@@ -11,12 +11,12 @@ Unit 13 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 4f5cb8024d3f68a37052fdf85b5755bffa2a0904
-- Unit content-review SHA-256: a83baf7bb4a5839fb36bb8e7c335a7b6e185718397626d58fa01ace4359fe35d
+- Curriculum source commit: 95b45043cd02ff5ad26e6c4ce9c7d8641795f0a0
+- Unit content-review SHA-256: 6c11707dad7fef23787ff3e0d535632b05d9aeacbb2cfd4e7a013add99c74fe6
 - Mapping-package SHA-256: e8ca3b0ba9b6a48acc54ea18e10a6e6fb1291698252fcbc35b02dbf2a820deb4
-- Pack content-review SHA-256: 511dffa7a574973009025b57a05d3b2d52d2fb147ea689ba90f43adfc53047cf
-- Review-package SHA-256: ca874af8fe237d40af880ca59518457b25f24977c215b3e6096adf8178e965ea
-- Repository source SHA-256: 38fabecd94e7dc17ed789d81e4981df34ec5b5ab2f013fefff03e945cd5964fc
+- Pack content-review SHA-256: 0bb26d899c3c3c1438e86c3e79200ffef347fdd4248fc0f2fd6b26e62df2a5a2
+- Review-package SHA-256: c056781ce9ec7fa02b4a608dab0023a733f06bfc659d77b73fc5c6ae8d0e3acb
+- Repository source SHA-256: 1ed00ccd1a7dcb8cc41791b3bd70c27fe904593d78afee5f56bb0caf1dcfbb93
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -1278,7 +1278,7 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 05b2fb67e4584c85bf764d5d7d145519f22ba9499df2cf08e904ce0795759f83
+- Content hash: 9bd915ba50d79900e226b72d6ae8229724bd97f1f564d2ea11708757f8dcadad
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1286,11 +1286,11 @@ prompt=Which admitted line is the perfective past?
 promptLetter=I read
 options=я прочитал | я читал
 answer=я прочитал
-feedback=Does this answer show the perfective past? я прочитал.
+feedback=я прочитал is the perfective past option: it presents reading as a completed whole. я читал is imperfective past, presenting the reading activity or process without asserting that completed whole. Both are past forms. English simple past wording alone does not determine Russian aspect; the question explicitly asks for the perfective form.
 objectiveId=obj-u13-past-aspect
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the perfective past?
+distractorRationales= | я читал uses the imperfective past, not the perfective past form requested here. Its process focus does not mean the activity could never have finished.
 testedFeature=PERFECTIVE_PAST
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u13-past-aspect-0
@@ -1298,8 +1298,8 @@ cueLanguage=rule
 independent=false
 answerSourceIds=prov-ex-u13-past-aspect-1-ru
 distractorSourceIds= | prov-ex-u13-past-aspect-0-ru
-distractorDifference= | Does this row fail the perfective past?
-whyAnswerDemonstratesObjective=Does this answer show the perfective past?
+distractorDifference= | я читал uses the imperfective past, not the perfective past form requested here. Its process focus does not mean the activity could never have finished.
+whyAnswerDemonstratesObjective=я прочитал is the perfective past option: it presents reading as a completed whole. я читал is imperfective past, presenting the reading activity or process without asserting that completed whole. Both are past forms. English simple past wording alone does not determine Russian aspect; the question explicitly asks for the perfective form.
 contrastMembers=я прочитал | я читал
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u13-past-aspect-1-en | prov-ex-u13-past-aspect-1-ru | prov-ex-u13-past-aspect-0-ru
@@ -1313,7 +1313,7 @@ responseKind=RUSSIAN_CLAUSE
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: b2ff501599adbcacd6a285fe0810db91059bad011f8217e0e5c1f8a2241a32c0
+- Content hash: 7716f3a469317b149497ce0fc09ee93c4d83a5e17e8e6985f49f21627caa0d2b
 
 kind=PATTERN_CLASSIFICATION
 language=en
@@ -1321,11 +1321,11 @@ prompt=Which admitted label keeps the same tense?
 promptLetter=Он сказа́л, что он англича́нин
 options=we keep the tense the same | we usually change the tense
 answer=we keep the tense the same
-feedback=Does this answer show the same tense? we keep the tense the same.
+feedback=The same tense label fits this nationality report: we keep the tense the same. Он сказа́л, что он англича́нин has a past reporting verb but a present-time nationality statement; a past reporting verb does not itself require English-style backshift in Russian. The other label describes changing the reported tense in the English comparison. This is the shown example, not a rule that every report must preserve every tense or word unchanged.
 objectiveId=obj-u13-tense-keep
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the same tense?
+distractorRationales= | we usually change the tense is the label for the English backshift comparison, not the same tense classification of the shown Russian nationality report.
 testedFeature=TENSE_KEPT
 evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
 contrastSetId=u13-tense-keep-0
@@ -1333,8 +1333,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u13-tense-keep-0-en
 distractorSourceIds= | prov-u13-tense-keep-x-1
-distractorDifference= | Does this row fail the same tense?
-whyAnswerDemonstratesObjective=Does this answer show the same tense?
+distractorDifference= | we usually change the tense is the label for the English backshift comparison, not the same tense classification of the shown Russian nationality report.
+whyAnswerDemonstratesObjective=The same tense label fits this nationality report: we keep the tense the same. Он сказа́л, что он англича́нин has a past reporting verb but a present-time nationality statement; a past reporting verb does not itself require English-style backshift in Russian. The other label describes changing the reported tense in the English comparison. This is the shown example, not a rule that every report must preserve every tense or word unchanged.
 contrastMembers=we keep the tense the same | we usually change the tense
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u13-tense-keep-0-ru | prov-ex-u13-tense-keep-0-en | prov-u13-tense-keep-x-1
@@ -1348,7 +1348,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 4e2c7e6634445493c85580726c54961e0c0bfe05c9683c17195188157729916c
+- Content hash: 84d1b1f35c255e45c4c77fc2067ca5bed15e25aaa86b54c66d623a923d0d302f
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1356,11 +1356,11 @@ prompt=Which admitted line is the perfective partner?
 promptLetter=говори́ть
 options=сказа́ть | де́лать
 answer=сказа́ть
-feedback=Does this answer show the perfective partner? сказа́ть.
+feedback=сказа́ть is the perfective partner paired with говори́ть for the say/tell meaning shown here. де́лать is imperfective and belongs to the different do/make pair. The pairing here does not mean every use of speak or talk can be replaced by the same perfective verb.
 objectiveId=obj-u13-infinitive
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the perfective partner?
+distractorRationales= | де́лать is imperfective and belongs to the do/make pair, not the perfective partner in the shown say/tell grouping.
 testedFeature=PERFECTIVE_PARTNER
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u13-infinitive-0
@@ -1368,8 +1368,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u13-infinitive-1-ru
 distractorSourceIds= | prov-ex-u13-infinitive-2-ru
-distractorDifference= | Does this row fail the perfective partner?
-whyAnswerDemonstratesObjective=Does this answer show the perfective partner?
+distractorDifference= | де́лать is imperfective and belongs to the do/make pair, not the perfective partner in the shown say/tell grouping.
+whyAnswerDemonstratesObjective=сказа́ть is the perfective partner paired with говори́ть for the say/tell meaning shown here. де́лать is imperfective and belongs to the different do/make pair. The pairing here does not mean every use of speak or talk can be replaced by the same perfective verb.
 contrastMembers=сказа́ть | де́лать
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u13-infinitive-0-ru | prov-ex-u13-infinitive-1-ru | prov-ex-u13-infinitive-2-ru
@@ -1383,7 +1383,7 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: e40b478c3dceeba33629986f4b25e4fb59b67a5e4c10bed8df4b0d236283d597
+- Content hash: 339232ab5a20dc75a31efed405a88b2579310655e78f59015a97ca644aa6ac6d
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1391,11 +1391,11 @@ prompt=Which admitted line is the reported evening?
 promptLetter=Я скажу ему ве́чером
 options=Она́ сказа́ла, что она́ ска́жет ему́ ве́чером | Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски
 answer=Она́ сказа́ла, что она́ ска́жет ему́ ве́чером
-feedback=Does this answer show the reported evening? Она́ сказа́ла, что она́ ска́жет ему́ ве́чером.
+feedback=Она́ сказа́ла, что она́ ска́жет ему́ ве́чером is the reported evening example: a past she said frame contains a future statement about telling him in the evening. The Moscow option is a future time clause and a plan to speak Russian, with no past reporting frame. The source supplies this pair; it is not a rule to replace every first-person pronoun mechanically with she.
 objectiveId=obj-u13-reported
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the reported evening?
+distractorRationales= | Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски is the future plan about Moscow, not the reported evening example.
 testedFeature=REPORTED_EVENING
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u13-reported-0
@@ -1403,8 +1403,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u13-reported-0-ru
 distractorSourceIds= | prov-u13-reported-x-1
-distractorDifference= | Does this row fail the reported evening?
-whyAnswerDemonstratesObjective=Does this answer show the reported evening?
+distractorDifference= | Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски is the future plan about Moscow, not the reported evening example.
+whyAnswerDemonstratesObjective=Она́ сказа́ла, что она́ ска́жет ему́ ве́чером is the reported evening example: a past she said frame contains a future statement about telling him in the evening. The Moscow option is a future time clause and a plan to speak Russian, with no past reporting frame. The source supplies this pair; it is not a rule to replace every first-person pronoun mechanically with she.
 contrastMembers=Она́ сказа́ла, что она́ ска́жет ему́ ве́чером | Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u13-reported-1-ru | prov-ex-u13-reported-0-ru | prov-u13-reported-x-1
@@ -1418,7 +1418,7 @@ responseKind=RUSSIAN_CLAUSE
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: e5ac04dd8eb4f22e43ab2c16e1bfdc5f042110e31803aef12e283c076bb3710e
+- Content hash: 15b8aaa2005a51b8225980e682e88e3ead8c09f839fc903ef488fd1f19750273
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1426,11 +1426,11 @@ prompt=Which admitted line is the imperfective past?
 promptLetter=I was reading
 options=я читал | я прочитал
 answer=я читал
-feedback=Does this answer show the imperfective past? я читал.
+feedback=я читал is the imperfective past option, presenting reading as activity or process. я прочитал presents the reading as a completed whole and is perfective past. A completed activity can still be described with imperfective aspect when the focus is on the process; English simple past can also translate an imperfective verb.
 objectiveId=obj-u13-past-aspect
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the imperfective past?
+distractorRationales= | я прочитал is perfective past and presents a completed whole, rather than the imperfective past requested here.
 testedFeature=IMPERFECTIVE_PAST
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u13-past-aspect-1
@@ -1438,8 +1438,8 @@ cueLanguage=rule
 independent=true
 answerSourceIds=prov-ex-u13-past-aspect-0-ru
 distractorSourceIds= | prov-ex-u13-past-aspect-1-ru
-distractorDifference= | Does this row fail the imperfective past?
-whyAnswerDemonstratesObjective=Does this answer show the imperfective past?
+distractorDifference= | я прочитал is perfective past and presents a completed whole, rather than the imperfective past requested here.
+whyAnswerDemonstratesObjective=я читал is the imperfective past option, presenting reading as activity or process. я прочитал presents the reading as a completed whole and is perfective past. A completed activity can still be described with imperfective aspect when the focus is on the process; English simple past can also translate an imperfective verb.
 contrastMembers=я читал | я прочитал
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u13-past-aspect-0-en | prov-ex-u13-past-aspect-0-ru | prov-ex-u13-past-aspect-1-ru
@@ -1453,7 +1453,7 @@ responseKind=RUSSIAN_CLAUSE
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 56b53fb74ccfd9cc32cf44a5419441e4a9eab1fab53fa75aae2cb952de8b3183
+- Content hash: c08adfa38f3511cffc812b057a45743b5daf2a56aad1c781267030839758864d
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1461,11 +1461,11 @@ prompt=Which admitted row is the masculine past?
 promptLetter=чита́ть
 options=чита́л | чита́ла
 answer=чита́л
-feedback=Does this answer show the masculine past? чита́л.
+feedback=чита́л is the masculine past form of the shown infinitive. чита́ла is feminine past. Both belong to the same imperfective verb; this question changes gender agreement rather than selecting a different aspect.
 objectiveId=obj-u13-past-aspect
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the masculine past?
+distractorRationales= | чита́ла is feminine past, not the requested masculine past form of the same verb.
 testedFeature=MASCULINE_PAST
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u13-past-aspect-2
@@ -1473,8 +1473,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u13-past-aspect-3
 distractorSourceIds= | prov-ex-or-u13-past-aspect-4
-distractorDifference= | Does this row fail the masculine past?
-whyAnswerDemonstratesObjective=Does this answer show the masculine past?
+distractorDifference= | чита́ла is feminine past, not the requested masculine past form of the same verb.
+whyAnswerDemonstratesObjective=чита́л is the masculine past form of the shown infinitive. чита́ла is feminine past. Both belong to the same imperfective verb; this question changes gender agreement rather than selecting a different aspect.
 contrastMembers=чита́л | чита́ла
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u13-past-aspect-2 | prov-ex-or-u13-past-aspect-3 | prov-ex-or-u13-past-aspect-4
@@ -1488,7 +1488,7 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: c6039ca6b2cc62675c99304eaf4c37a30bd9c2babc6d8636ae03c4dd04e4910a
+- Content hash: da736fa7c3ae842aaf58248f1c918748c71802d76f81314f00bad9aa11d28cd5
 
 kind=PATTERN_CLASSIFICATION
 language=en
@@ -1496,11 +1496,11 @@ prompt=Which admitted line is the reported evening?
 promptLetter=Я скажу ему ве́чером
 options=Она́ сказа́ла, что она́ ска́жет ему́ ве́чером | Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски
 answer=Она́ сказа́ла, что она́ ска́жет ему́ ве́чером
-feedback=Does this answer show the reported evening? Она́ сказа́ла, что она́ ска́жет ему́ ве́чером.
+feedback=Она́ сказа́ла, что она́ ска́жет ему́ ве́чером is the reported evening example: she said in the past that she would tell him in the evening. The reporting verb is past while the embedded verb remains future. The Moscow option instead gives a future time clause and a plan to speak Russian, without a past reporting frame. Recognize the supplied examples; pronoun changes depend on who is speaking.
 objectiveId=obj-u13-tense-keep
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the reported evening?
+distractorRationales= | Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски is the future plan about Moscow, not the reported evening example with a past reporting verb.
 testedFeature=REPORTED_EVENING
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u13-tense-keep-1
@@ -1508,8 +1508,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u13-tense-keep-2-ru
 distractorSourceIds= | prov-u13-tense-keep-x-3
-distractorDifference= | Does this row fail the reported evening?
-whyAnswerDemonstratesObjective=Does this answer show the reported evening?
+distractorDifference= | Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски is the future plan about Moscow, not the reported evening example with a past reporting verb.
+whyAnswerDemonstratesObjective=Она́ сказа́ла, что она́ ска́жет ему́ ве́чером is the reported evening example: she said in the past that she would tell him in the evening. The reporting verb is past while the embedded verb remains future. The Moscow option instead gives a future time clause and a plan to speak Russian, without a past reporting frame. Recognize the supplied examples; pronoun changes depend on who is speaking.
 contrastMembers=Она́ сказа́ла, что она́ ска́жет ему́ ве́чером | Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u13-tense-keep-1-ru | prov-ex-u13-tense-keep-2-ru | prov-u13-tense-keep-x-3
@@ -1523,7 +1523,7 @@ responseKind=RUSSIAN_CLAUSE
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: f51ca5eca5b1f1a39ecd4e3efa587df00e13a07cd492d739529bb5f12e8d8024
+- Content hash: 471fba11d260c46d6265d8c1baf18a99eb959c9a0dd639b366e06ae4d374f3c0
 
 kind=PATTERN_CLASSIFICATION
 language=en
@@ -1531,11 +1531,11 @@ prompt=Which admitted label is about changing the reported tense?
 promptLetter=the reported verb changes tense
 options=we usually change the tense | we keep the tense the same
 answer=we usually change the tense
-feedback=Does this answer show the changing the reported tense? we usually change the tense.
+feedback=we usually change the tense is the source label for changing the reported tense in its English backshift comparison. we keep the tense the same labels the contrasting Russian example. English backshift can follow a past reporting verb, but is not mandatory in every report; the question classifies the supplied labels rather than imposing an always-change rule.
 objectiveId=obj-u13-tense-keep
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the changing the reported tense?
+distractorRationales= | we keep the tense the same describes retention, not changing the reported tense in the English comparison requested here.
 testedFeature=ENGLISH_TENSE_CHANGE
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u13-tense-keep-2
@@ -1543,8 +1543,8 @@ cueLanguage=rule
 independent=true
 answerSourceIds=prov-u13-tense-keep-x-1
 distractorSourceIds= | prov-ex-u13-tense-keep-0-en
-distractorDifference= | Does this row fail the changing the reported tense?
-whyAnswerDemonstratesObjective=Does this answer show the changing the reported tense?
+distractorDifference= | we keep the tense the same describes retention, not changing the reported tense in the English comparison requested here.
+whyAnswerDemonstratesObjective=we usually change the tense is the source label for changing the reported tense in its English backshift comparison. we keep the tense the same labels the contrasting Russian example. English backshift can follow a past reporting verb, but is not mandatory in every report; the question classifies the supplied labels rather than imposing an always-change rule.
 contrastMembers=we usually change the tense | we keep the tense the same
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-u13-tense-keep-x-2 | prov-u13-tense-keep-x-1 | prov-ex-u13-tense-keep-0-en
@@ -1558,7 +1558,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 15ee8d18e49b653f4eb397d52b1ccac2bbba8c5fb32dcb18409aedfe9349fa48
+- Content hash: 657fb019aa610097bf74717a43a327077adbf3b6669aa3022e77f59f00d986b7
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1566,11 +1566,11 @@ prompt=Which admitted line is the perfective partner?
 promptLetter=де́лать
 options=сде́лать | говори́ть
 answer=сде́лать
-feedback=Does this answer show the perfective partner? сде́лать.
+feedback=сде́лать is the perfective partner of де́лать in the retained do/make pair. говори́ть is imperfective and belongs to the different say/tell grouping. Learn this recorded pair rather than assuming that adding any prefix gives the matching perfective of any verb.
 objectiveId=obj-u13-infinitive
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the perfective partner?
+distractorRationales= | говори́ть is imperfective and belongs to a different lexical grouping, not the perfective partner of the shown do/make verb.
 testedFeature=PERFECTIVE_PARTNER
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u13-infinitive-1
@@ -1578,8 +1578,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u13-infinitive-3-ru
 distractorSourceIds= | prov-ex-u13-infinitive-0-ru
-distractorDifference= | Does this row fail the perfective partner?
-whyAnswerDemonstratesObjective=Does this answer show the perfective partner?
+distractorDifference= | говори́ть is imperfective and belongs to a different lexical grouping, not the perfective partner of the shown do/make verb.
+whyAnswerDemonstratesObjective=сде́лать is the perfective partner of де́лать in the retained do/make pair. говори́ть is imperfective and belongs to the different say/tell grouping. Learn this recorded pair rather than assuming that adding any prefix gives the matching perfective of any verb.
 contrastMembers=сде́лать | говори́ть
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u13-infinitive-2-ru | prov-ex-u13-infinitive-3-ru | prov-ex-u13-infinitive-0-ru
@@ -1593,7 +1593,7 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 4ee41e698ad08323486eb5f8017f0eb2cb42d6c90a715f3ee78affb48c82767c
+- Content hash: 9b72d39a45db459c3ed644bc4f5067635e5c54814a4c58555271f7a0e0b36c3b
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1601,11 +1601,11 @@ prompt=Which admitted line is the imperfective partner?
 promptLetter=сказа́ть
 options=говори́ть | сде́лать
 answer=говори́ть
-feedback=Does this answer show the imperfective partner? говори́ть.
+feedback=говори́ть is the imperfective partner paired with сказа́ть for the say/tell meaning shown here. сде́лать is perfective and belongs to the different do/make pair. The question asks for the imperfective member of this recorded pairing, not any verb of another meaning.
 objectiveId=obj-u13-infinitive
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the imperfective partner?
+distractorRationales= | сде́лать is perfective and belongs to the do/make pair, not the imperfective partner in the shown say/tell grouping.
 testedFeature=IMPERFECTIVE_PARTNER
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u13-infinitive-2
@@ -1613,8 +1613,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u13-infinitive-0-ru
 distractorSourceIds= | prov-ex-u13-infinitive-3-ru
-distractorDifference= | Does this row fail the imperfective partner?
-whyAnswerDemonstratesObjective=Does this answer show the imperfective partner?
+distractorDifference= | сде́лать is perfective and belongs to the do/make pair, not the imperfective partner in the shown say/tell grouping.
+whyAnswerDemonstratesObjective=говори́ть is the imperfective partner paired with сказа́ть for the say/tell meaning shown here. сде́лать is perfective and belongs to the different do/make pair. The question asks for the imperfective member of this recorded pairing, not any verb of another meaning.
 contrastMembers=говори́ть | сде́лать
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u13-infinitive-1-ru | prov-ex-u13-infinitive-0-ru | prov-ex-u13-infinitive-3-ru
@@ -1628,7 +1628,7 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 23096c9a8d2f6de932a621ac616f9495fb15ac48d4062e8035fb4a35b18e6287
+- Content hash: 73afd1ec8a74eabf7752e827e32cc38aa628c9176e4e5d6f7a1e6c485c3e51a2
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1636,11 +1636,11 @@ prompt=Which admitted line is the direct evening?
 promptLetter=Она́ сказа́ла, что она́ ска́жет ему́ ве́чером
 options=Я скажу ему ве́чером | Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски
 answer=Я скажу ему ве́чером
-feedback=Does this answer show the direct evening? Я скажу ему ве́чером.
+feedback=Я скажу ему ве́чером is the direct evening statement, meaning I will tell him in the evening. It has a first-person future verb without a past reporting frame. The shown reported example instead says that she said she would tell him. The Moscow option describes a different future plan, not this direct evening statement.
 objectiveId=obj-u13-reported
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the direct evening?
+distractorRationales= | Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски describes a future plan about Moscow, not the direct evening statement requested here.
 testedFeature=DIRECT_EVENING
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u13-reported-1
@@ -1648,8 +1648,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u13-reported-1-ru
 distractorSourceIds= | prov-u13-reported-x-1
-distractorDifference= | Does this row fail the direct evening?
-whyAnswerDemonstratesObjective=Does this answer show the direct evening?
+distractorDifference= | Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски describes a future plan about Moscow, not the direct evening statement requested here.
+whyAnswerDemonstratesObjective=Я скажу ему ве́чером is the direct evening statement, meaning I will tell him in the evening. It has a first-person future verb without a past reporting frame. The shown reported example instead says that she said she would tell him. The Moscow option describes a different future plan, not this direct evening statement.
 contrastMembers=Я скажу ему ве́чером | Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u13-reported-0-ru | prov-ex-u13-reported-1-ru | prov-u13-reported-x-1
@@ -1663,7 +1663,7 @@ responseKind=RUSSIAN_CLAUSE
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 45b4c90bb74d4b3f4db643b3d4b31f699365a62a9ac3ff278a889b3b7ce5b651
+- Content hash: 1614d92e0e265ef43bc0546ac346183a63427f3fb63b1275d9308425e0226ad6
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1671,11 +1671,11 @@ prompt=Which admitted line is the future plan about Moscow?
 promptLetter=Она́ сказа́ла, что она́ ска́жет ему́ ве́чером
 options=Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски | Я скажу ему ве́чером
 answer=Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски
-feedback=Does this answer show the Moscow? Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски.
+feedback=Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски is the future plan about Moscow: when the speaker is there, the speaker will speak only Russian. Both clauses refer to the future, including the clause meaning when. Я скажу ему ве́чером instead says I will tell him in the evening. Neither option is itself a past reporting frame; identify the Moscow plan requested here.
 objectiveId=obj-u13-reported
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the Moscow?
+distractorRationales= | Я скажу ему ве́чером is the direct evening statement, not the future plan about Moscow.
 testedFeature=MOSCOW_FUTURE
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u13-reported-2
@@ -1683,8 +1683,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-u13-reported-x-1
 distractorSourceIds= | prov-ex-u13-reported-1-ru
-distractorDifference= | Does this row fail the Moscow?
-whyAnswerDemonstratesObjective=Does this answer show the Moscow?
+distractorDifference= | Я скажу ему ве́чером is the direct evening statement, not the future plan about Moscow.
+whyAnswerDemonstratesObjective=Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски is the future plan about Moscow: when the speaker is there, the speaker will speak only Russian. Both clauses refer to the future, including the clause meaning when. Я скажу ему ве́чером instead says I will tell him in the evening. Neither option is itself a past reporting frame; identify the Moscow plan requested here.
 contrastMembers=Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски | Я скажу ему ве́чером
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u13-reported-0-ru | prov-u13-reported-x-1 | prov-ex-u13-reported-1-ru
@@ -1732,6 +1732,726 @@ attribution=Russian Companion content-audit research synthesis, content-audit-20
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
 sourceHash=862f4d1a9d8133524e373822de5a02f8c306aa8fdbf58cc716270baf759394de
 contentHash=836034964dcbd33368668452a1e0eccc8070a51cf1408fb029370b16964f1c04
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-feedback-u13-g-infinitive-0`
+
+- Objectives: obj-u13-infinitive
+- Sessions: u13-s-orient, u13-s-infinitive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cfcbb1bced01a7d2cf249f7c48cb9ac91ac6b081ba4dcefc2500b49d38ce7f0b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-infinitive:feedback:u13-g-infinitive-0
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, complete Usage/imperfective/perfective and Regular conjugation contexts; Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, complete Introduction, Forming aspectual pairs and Unpredictable pairs contexts, including the explicit observation that a completed action can be viewed as process; Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete Present or future reported-nationality/evening/Moscow context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать/прочитать/говорить/сказать/делать/сделать aspect and partner fields, читать past_m/past_f, прочитать past_m, сказать past_f/presfut_sg3. Source errors/overgeneralizations are not adopted: being incorrectly classified as perfective; contradictory claims about how many verbs have pairs; automatic prefix-based pairing; simple English past/progressive mapped one-to-one to Russian aspect; every reported tense retained regardless of context. The говорить/сказать pairing is bounded to the source say/tell grouping and populated lexical partner fields, not every meaning of speak or talk. Reported examples distinguish past reporting from future content, present-time nationality and future time clauses; labels classify the supplied examples rather than prescribe mechanical pronoun/tense rewriting. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+сказа́ть is the perfective partner paired with говори́ть for the say/tell meaning shown here. де́лать is imperfective and belongs to the different do/make pair. The pairing here does not mean every use of speak or talk can be replaced by the same perfective verb.
+shippedText=сказа́ть is the perfective partner paired with говори́ть for the say/tell meaning shown here. де́лать is imperfective and belongs to the different do/make pair. The pairing here does not mean every use of speak or talk can be replaced by the same perfective verb.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0fc123ff69ac2d06963a5eb1a46676a5d61b871b375236b158fad58d8a2a06d0
+contentHash=8ff2135ffe39e2abca51568a477c7a013a532347dbe16b139cc21087f1ca77f6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-feedback-u13-g-infinitive-0-distractor-1`
+
+- Objectives: obj-u13-infinitive
+- Sessions: u13-s-orient, u13-s-infinitive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e6ebec0c9240525c2aaa6393d035850b242cecb2492b9fd9f8e383d4701944c4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-infinitive:feedback:u13-g-infinitive-0-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, complete Usage/imperfective/perfective and Regular conjugation contexts; Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, complete Introduction, Forming aspectual pairs and Unpredictable pairs contexts, including the explicit observation that a completed action can be viewed as process; Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete Present or future reported-nationality/evening/Moscow context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать/прочитать/говорить/сказать/делать/сделать aspect and partner fields, читать past_m/past_f, прочитать past_m, сказать past_f/presfut_sg3. Source errors/overgeneralizations are not adopted: being incorrectly classified as perfective; contradictory claims about how many verbs have pairs; automatic prefix-based pairing; simple English past/progressive mapped one-to-one to Russian aspect; every reported tense retained regardless of context. The говорить/сказать pairing is bounded to the source say/tell grouping and populated lexical partner fields, not every meaning of speak or talk. Reported examples distinguish past reporting from future content, present-time nationality and future time clauses; labels classify the supplied examples rather than prescribe mechanical pronoun/tense rewriting. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+де́лать is imperfective and belongs to the do/make pair, not the perfective partner in the shown say/tell grouping.
+shippedText=де́лать is imperfective and belongs to the do/make pair, not the perfective partner in the shown say/tell grouping.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0827f01f7fbb481ae0a6175c857c476b3a7109ebf22887c841688cdd9a79c73e
+contentHash=8065bf02f403794185994a75b46887cde7f9fb3d9166fa85c33b218afaf92425
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-feedback-u13-g-past-aspect-0`
+
+- Objectives: obj-u13-past-aspect
+- Sessions: u13-s-orient, u13-s-past-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 00c2870718859ef9a89422dc4b8380919378625906c5a3d5228f0329b8e13ecd
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-past-aspect:feedback:u13-g-past-aspect-0
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, complete Usage/imperfective/perfective and Regular conjugation contexts; Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, complete Introduction, Forming aspectual pairs and Unpredictable pairs contexts, including the explicit observation that a completed action can be viewed as process; Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete Present or future reported-nationality/evening/Moscow context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать/прочитать/говорить/сказать/делать/сделать aspect and partner fields, читать past_m/past_f, прочитать past_m, сказать past_f/presfut_sg3. Source errors/overgeneralizations are not adopted: being incorrectly classified as perfective; contradictory claims about how many verbs have pairs; automatic prefix-based pairing; simple English past/progressive mapped one-to-one to Russian aspect; every reported tense retained regardless of context. The говорить/сказать pairing is bounded to the source say/tell grouping and populated lexical partner fields, not every meaning of speak or talk. Reported examples distinguish past reporting from future content, present-time nationality and future time clauses; labels classify the supplied examples rather than prescribe mechanical pronoun/tense rewriting. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+я прочитал is the perfective past option: it presents reading as a completed whole. я читал is imperfective past, presenting the reading activity or process without asserting that completed whole. Both are past forms. English simple past wording alone does not determine Russian aspect; the question explicitly asks for the perfective form.
+shippedText=я прочитал is the perfective past option: it presents reading as a completed whole. я читал is imperfective past, presenting the reading activity or process without asserting that completed whole. Both are past forms. English simple past wording alone does not determine Russian aspect; the question explicitly asks for the perfective form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=64256fd7c837709ea171578494f869752054010557e99c5dc654b4ab1efde9fb
+contentHash=b07ec74d57e62289860808a11a476e08cf0e5ff4327c61b4851225eb2ec8feb9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-feedback-u13-g-past-aspect-0-distractor-1`
+
+- Objectives: obj-u13-past-aspect
+- Sessions: u13-s-orient, u13-s-past-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9cfbc4b9eb9e2b42dc575d7a8ebe62750c958da42a9f15b1f146ddb22a6c3265
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-past-aspect:feedback:u13-g-past-aspect-0-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, complete Usage/imperfective/perfective and Regular conjugation contexts; Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, complete Introduction, Forming aspectual pairs and Unpredictable pairs contexts, including the explicit observation that a completed action can be viewed as process; Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete Present or future reported-nationality/evening/Moscow context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать/прочитать/говорить/сказать/делать/сделать aspect and partner fields, читать past_m/past_f, прочитать past_m, сказать past_f/presfut_sg3. Source errors/overgeneralizations are not adopted: being incorrectly classified as perfective; contradictory claims about how many verbs have pairs; automatic prefix-based pairing; simple English past/progressive mapped one-to-one to Russian aspect; every reported tense retained regardless of context. The говорить/сказать pairing is bounded to the source say/tell grouping and populated lexical partner fields, not every meaning of speak or talk. Reported examples distinguish past reporting from future content, present-time nationality and future time clauses; labels classify the supplied examples rather than prescribe mechanical pronoun/tense rewriting. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+я читал uses the imperfective past, not the perfective past form requested here. Its process focus does not mean the activity could never have finished.
+shippedText=я читал uses the imperfective past, not the perfective past form requested here. Its process focus does not mean the activity could never have finished.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f1ae844cf9170cc8e258b2bf1580c37736901e05ae86dbb55d9dc1ecee9eb69d
+contentHash=7504bb11d431b9a0d74ba5ffe02c72504f1ff77b592d08bd99c0d61ac45b8d63
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-feedback-u13-g-reported-0`
+
+- Objectives: obj-u13-reported
+- Sessions: u13-s-orient, u13-s-reported
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a646c17addfe75e2694bd8335b28b0c43e6ef150ce5b511bde176d9529ad0913
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-reported:feedback:u13-g-reported-0
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, complete Usage/imperfective/perfective and Regular conjugation contexts; Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, complete Introduction, Forming aspectual pairs and Unpredictable pairs contexts, including the explicit observation that a completed action can be viewed as process; Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete Present or future reported-nationality/evening/Moscow context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать/прочитать/говорить/сказать/делать/сделать aspect and partner fields, читать past_m/past_f, прочитать past_m, сказать past_f/presfut_sg3. Source errors/overgeneralizations are not adopted: being incorrectly classified as perfective; contradictory claims about how many verbs have pairs; automatic prefix-based pairing; simple English past/progressive mapped one-to-one to Russian aspect; every reported tense retained regardless of context. The говорить/сказать pairing is bounded to the source say/tell grouping and populated lexical partner fields, not every meaning of speak or talk. Reported examples distinguish past reporting from future content, present-time nationality and future time clauses; labels classify the supplied examples rather than prescribe mechanical pronoun/tense rewriting. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Она́ сказа́ла, что она́ ска́жет ему́ ве́чером is the reported evening example: a past she said frame contains a future statement about telling him in the evening. The Moscow option is a future time clause and a plan to speak Russian, with no past reporting frame. The source supplies this pair; it is not a rule to replace every first-person pronoun mechanically with she.
+shippedText=Она́ сказа́ла, что она́ ска́жет ему́ ве́чером is the reported evening example: a past she said frame contains a future statement about telling him in the evening. The Moscow option is a future time clause and a plan to speak Russian, with no past reporting frame. The source supplies this pair; it is not a rule to replace every first-person pronoun mechanically with she.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7cc119fa03fa6123731c8f78ff4e9956b5e66e0042ccdec478f935e21c1f2cca
+contentHash=e44c0eddc9f902fe2aacccdeb6057780234632d87f6cf5644067abe44e446241
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-feedback-u13-g-reported-0-distractor-1`
+
+- Objectives: obj-u13-reported
+- Sessions: u13-s-orient, u13-s-reported
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 196e2a89b8f890885167bc3cc172170582ef09b6792126d45bfaf8b6f3877205
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-reported:feedback:u13-g-reported-0-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, complete Usage/imperfective/perfective and Regular conjugation contexts; Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, complete Introduction, Forming aspectual pairs and Unpredictable pairs contexts, including the explicit observation that a completed action can be viewed as process; Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete Present or future reported-nationality/evening/Moscow context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать/прочитать/говорить/сказать/делать/сделать aspect and partner fields, читать past_m/past_f, прочитать past_m, сказать past_f/presfut_sg3. Source errors/overgeneralizations are not adopted: being incorrectly classified as perfective; contradictory claims about how many verbs have pairs; automatic prefix-based pairing; simple English past/progressive mapped one-to-one to Russian aspect; every reported tense retained regardless of context. The говорить/сказать pairing is bounded to the source say/tell grouping and populated lexical partner fields, not every meaning of speak or talk. Reported examples distinguish past reporting from future content, present-time nationality and future time clauses; labels classify the supplied examples rather than prescribe mechanical pronoun/tense rewriting. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски is the future plan about Moscow, not the reported evening example.
+shippedText=Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски is the future plan about Moscow, not the reported evening example.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5a78a62ea850e55a9ac14c51eec766075d08dd6cbbc77f43bba4d65251cad90f
+contentHash=55854e5d26176e5d87ab1bb4dbbb459b7030e1064058668944b8244ce33546a2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-feedback-u13-g-tense-keep-0`
+
+- Objectives: obj-u13-tense-keep
+- Sessions: u13-s-orient, u13-s-tense-keep
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 269d8e3fd74fd62b74e78ada2e06b6f4ad655ed561ab0a66c91865dc76bf957e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-tense-keep:feedback:u13-g-tense-keep-0
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, complete Usage/imperfective/perfective and Regular conjugation contexts; Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, complete Introduction, Forming aspectual pairs and Unpredictable pairs contexts, including the explicit observation that a completed action can be viewed as process; Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete Present or future reported-nationality/evening/Moscow context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать/прочитать/говорить/сказать/делать/сделать aspect and partner fields, читать past_m/past_f, прочитать past_m, сказать past_f/presfut_sg3. Source errors/overgeneralizations are not adopted: being incorrectly classified as perfective; contradictory claims about how many verbs have pairs; automatic prefix-based pairing; simple English past/progressive mapped one-to-one to Russian aspect; every reported tense retained regardless of context. The говорить/сказать pairing is bounded to the source say/tell grouping and populated lexical partner fields, not every meaning of speak or talk. Reported examples distinguish past reporting from future content, present-time nationality and future time clauses; labels classify the supplied examples rather than prescribe mechanical pronoun/tense rewriting. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+The same tense label fits this nationality report: we keep the tense the same. Он сказа́л, что он англича́нин has a past reporting verb but a present-time nationality statement; a past reporting verb does not itself require English-style backshift in Russian. The other label describes changing the reported tense in the English comparison. This is the shown example, not a rule that every report must preserve every tense or word unchanged.
+shippedText=The same tense label fits this nationality report: we keep the tense the same. Он сказа́л, что он англича́нин has a past reporting verb but a present-time nationality statement; a past reporting verb does not itself require English-style backshift in Russian. The other label describes changing the reported tense in the English comparison. This is the shown example, not a rule that every report must preserve every tense or word unchanged.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=68d3e7d983a06cb8c09171bcd3be06586f5ed166b71c98ca63a111d4f3e6e012
+contentHash=0d6b7ed95a99c9c6ee1ae61e2faa8c623ddf9c0b3bd5ff9cc068fb6b36842cec
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-feedback-u13-g-tense-keep-0-distractor-1`
+
+- Objectives: obj-u13-tense-keep
+- Sessions: u13-s-orient, u13-s-tense-keep
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b3cd4c47a064ed036224f24072d5f8ab6d8594c92624ef0da271b74258f2cc49
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-tense-keep:feedback:u13-g-tense-keep-0-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, complete Usage/imperfective/perfective and Regular conjugation contexts; Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, complete Introduction, Forming aspectual pairs and Unpredictable pairs contexts, including the explicit observation that a completed action can be viewed as process; Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete Present or future reported-nationality/evening/Moscow context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать/прочитать/говорить/сказать/делать/сделать aspect and partner fields, читать past_m/past_f, прочитать past_m, сказать past_f/presfut_sg3. Source errors/overgeneralizations are not adopted: being incorrectly classified as perfective; contradictory claims about how many verbs have pairs; automatic prefix-based pairing; simple English past/progressive mapped one-to-one to Russian aspect; every reported tense retained regardless of context. The говорить/сказать pairing is bounded to the source say/tell grouping and populated lexical partner fields, not every meaning of speak or talk. Reported examples distinguish past reporting from future content, present-time nationality and future time clauses; labels classify the supplied examples rather than prescribe mechanical pronoun/tense rewriting. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+we usually change the tense is the label for the English backshift comparison, not the same tense classification of the shown Russian nationality report.
+shippedText=we usually change the tense is the label for the English backshift comparison, not the same tense classification of the shown Russian nationality report.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=06829e1409748354f9579f52b88558067daa42f4fc743afffa338533826353ea
+contentHash=e625cd187b200b3fa77c390fe3568e55eb54d0a10da23997aba6f16ceeee9278
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-feedback-u13-i-infinitive-1`
+
+- Objectives: obj-u13-infinitive
+- Sessions: u13-s-orient, u13-s-infinitive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 539edf08dc271b90100eb0a5a068507c2d822200bcf1f594e859d32e7e945e24
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-infinitive:feedback:u13-i-infinitive-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, complete Usage/imperfective/perfective and Regular conjugation contexts; Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, complete Introduction, Forming aspectual pairs and Unpredictable pairs contexts, including the explicit observation that a completed action can be viewed as process; Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete Present or future reported-nationality/evening/Moscow context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать/прочитать/говорить/сказать/делать/сделать aspect and partner fields, читать past_m/past_f, прочитать past_m, сказать past_f/presfut_sg3. Source errors/overgeneralizations are not adopted: being incorrectly classified as perfective; contradictory claims about how many verbs have pairs; automatic prefix-based pairing; simple English past/progressive mapped one-to-one to Russian aspect; every reported tense retained regardless of context. The говорить/сказать pairing is bounded to the source say/tell grouping and populated lexical partner fields, not every meaning of speak or talk. Reported examples distinguish past reporting from future content, present-time nationality and future time clauses; labels classify the supplied examples rather than prescribe mechanical pronoun/tense rewriting. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+сде́лать is the perfective partner of де́лать in the retained do/make pair. говори́ть is imperfective and belongs to the different say/tell grouping. Learn this recorded pair rather than assuming that adding any prefix gives the matching perfective of any verb.
+shippedText=сде́лать is the perfective partner of де́лать in the retained do/make pair. говори́ть is imperfective and belongs to the different say/tell grouping. Learn this recorded pair rather than assuming that adding any prefix gives the matching perfective of any verb.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8a122fa04307f5855cc53044ca646cba58b5cba10c646053a711101e82273211
+contentHash=e07764a5de7a580ee6ade97459c8261e4b611de2bddda6671e15cddc6daf657b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-feedback-u13-i-infinitive-1-distractor-1`
+
+- Objectives: obj-u13-infinitive
+- Sessions: u13-s-orient, u13-s-infinitive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f320a2a3c52f71625c7ebad2c9c5b07d7239eb25689c7e8afffa42bec0f5b8e9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-infinitive:feedback:u13-i-infinitive-1-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, complete Usage/imperfective/perfective and Regular conjugation contexts; Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, complete Introduction, Forming aspectual pairs and Unpredictable pairs contexts, including the explicit observation that a completed action can be viewed as process; Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete Present or future reported-nationality/evening/Moscow context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать/прочитать/говорить/сказать/делать/сделать aspect and partner fields, читать past_m/past_f, прочитать past_m, сказать past_f/presfut_sg3. Source errors/overgeneralizations are not adopted: being incorrectly classified as perfective; contradictory claims about how many verbs have pairs; automatic prefix-based pairing; simple English past/progressive mapped one-to-one to Russian aspect; every reported tense retained regardless of context. The говорить/сказать pairing is bounded to the source say/tell grouping and populated lexical partner fields, not every meaning of speak or talk. Reported examples distinguish past reporting from future content, present-time nationality and future time clauses; labels classify the supplied examples rather than prescribe mechanical pronoun/tense rewriting. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+говори́ть is imperfective and belongs to a different lexical grouping, not the perfective partner of the shown do/make verb.
+shippedText=говори́ть is imperfective and belongs to a different lexical grouping, not the perfective partner of the shown do/make verb.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3db8fe3743a39f0d3ee1120f41d8093f389fdb11bddd7eee619845973e1eb77c
+contentHash=5c60696d9a60368b2a296726631acc7a41a64b1881683f0e0e5f226530437ee0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-feedback-u13-i-infinitive-2`
+
+- Objectives: obj-u13-infinitive
+- Sessions: u13-s-orient, u13-s-infinitive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: faa5b01a9442f893965169119b014d93e3056f50bbc42ba5d1f0c53a4af694da
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-infinitive:feedback:u13-i-infinitive-2
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, complete Usage/imperfective/perfective and Regular conjugation contexts; Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, complete Introduction, Forming aspectual pairs and Unpredictable pairs contexts, including the explicit observation that a completed action can be viewed as process; Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete Present or future reported-nationality/evening/Moscow context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать/прочитать/говорить/сказать/делать/сделать aspect and partner fields, читать past_m/past_f, прочитать past_m, сказать past_f/presfut_sg3. Source errors/overgeneralizations are not adopted: being incorrectly classified as perfective; contradictory claims about how many verbs have pairs; automatic prefix-based pairing; simple English past/progressive mapped one-to-one to Russian aspect; every reported tense retained regardless of context. The говорить/сказать pairing is bounded to the source say/tell grouping and populated lexical partner fields, not every meaning of speak or talk. Reported examples distinguish past reporting from future content, present-time nationality and future time clauses; labels classify the supplied examples rather than prescribe mechanical pronoun/tense rewriting. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+говори́ть is the imperfective partner paired with сказа́ть for the say/tell meaning shown here. сде́лать is perfective and belongs to the different do/make pair. The question asks for the imperfective member of this recorded pairing, not any verb of another meaning.
+shippedText=говори́ть is the imperfective partner paired with сказа́ть for the say/tell meaning shown here. сде́лать is perfective and belongs to the different do/make pair. The question asks for the imperfective member of this recorded pairing, not any verb of another meaning.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a5455788cd65da7216b311397db94708d498f4e9387216d8077cf4c9d72e5947
+contentHash=4f34d151b8ca67431ebc9ecb8225e3b7bfc96cdb822d36782368ebb0ab148ad0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-feedback-u13-i-infinitive-2-distractor-1`
+
+- Objectives: obj-u13-infinitive
+- Sessions: u13-s-orient, u13-s-infinitive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4115e2ad96e70969392be3e506111b9814d4f11256af665913f1696fcc138721
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-infinitive:feedback:u13-i-infinitive-2-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, complete Usage/imperfective/perfective and Regular conjugation contexts; Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, complete Introduction, Forming aspectual pairs and Unpredictable pairs contexts, including the explicit observation that a completed action can be viewed as process; Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete Present or future reported-nationality/evening/Moscow context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать/прочитать/говорить/сказать/делать/сделать aspect and partner fields, читать past_m/past_f, прочитать past_m, сказать past_f/presfut_sg3. Source errors/overgeneralizations are not adopted: being incorrectly classified as perfective; contradictory claims about how many verbs have pairs; automatic prefix-based pairing; simple English past/progressive mapped one-to-one to Russian aspect; every reported tense retained regardless of context. The говорить/сказать pairing is bounded to the source say/tell grouping and populated lexical partner fields, not every meaning of speak or talk. Reported examples distinguish past reporting from future content, present-time nationality and future time clauses; labels classify the supplied examples rather than prescribe mechanical pronoun/tense rewriting. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+сде́лать is perfective and belongs to the do/make pair, not the imperfective partner in the shown say/tell grouping.
+shippedText=сде́лать is perfective and belongs to the do/make pair, not the imperfective partner in the shown say/tell grouping.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0d17ac50f5f2e3e61327784a39f23e130dbad2f1e81cea1312f4e1fe8c580beb
+contentHash=3b67e8f9c9201773e03353f88f06d8a6f7fa015c8ee5b22398fe881903f5327c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-feedback-u13-i-past-aspect-1`
+
+- Objectives: obj-u13-past-aspect
+- Sessions: u13-s-orient, u13-s-past-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f56836e5cf4913a787181ed08bb768f8bc74882d074499417ee0effd75d0aa62
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-past-aspect:feedback:u13-i-past-aspect-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, complete Usage/imperfective/perfective and Regular conjugation contexts; Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, complete Introduction, Forming aspectual pairs and Unpredictable pairs contexts, including the explicit observation that a completed action can be viewed as process; Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete Present or future reported-nationality/evening/Moscow context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать/прочитать/говорить/сказать/делать/сделать aspect and partner fields, читать past_m/past_f, прочитать past_m, сказать past_f/presfut_sg3. Source errors/overgeneralizations are not adopted: being incorrectly classified as perfective; contradictory claims about how many verbs have pairs; automatic prefix-based pairing; simple English past/progressive mapped one-to-one to Russian aspect; every reported tense retained regardless of context. The говорить/сказать pairing is bounded to the source say/tell grouping and populated lexical partner fields, not every meaning of speak or talk. Reported examples distinguish past reporting from future content, present-time nationality and future time clauses; labels classify the supplied examples rather than prescribe mechanical pronoun/tense rewriting. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+я читал is the imperfective past option, presenting reading as activity or process. я прочитал presents the reading as a completed whole and is perfective past. A completed activity can still be described with imperfective aspect when the focus is on the process; English simple past can also translate an imperfective verb.
+shippedText=я читал is the imperfective past option, presenting reading as activity or process. я прочитал presents the reading as a completed whole and is perfective past. A completed activity can still be described with imperfective aspect when the focus is on the process; English simple past can also translate an imperfective verb.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a34890210de26cb2ade0b00db5b6519b175d01b8051387b6e76d75a01e0c0165
+contentHash=3c13855fed93ae87072fbd84a306b6b68d903360bac8e39da37e279703b0944b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-feedback-u13-i-past-aspect-1-distractor-1`
+
+- Objectives: obj-u13-past-aspect
+- Sessions: u13-s-orient, u13-s-past-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e9705f5d854d22e73d93bd8d5bbb145f302056cfa3eaa9db3518837b85e9a0ae
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-past-aspect:feedback:u13-i-past-aspect-1-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, complete Usage/imperfective/perfective and Regular conjugation contexts; Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, complete Introduction, Forming aspectual pairs and Unpredictable pairs contexts, including the explicit observation that a completed action can be viewed as process; Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete Present or future reported-nationality/evening/Moscow context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать/прочитать/говорить/сказать/делать/сделать aspect and partner fields, читать past_m/past_f, прочитать past_m, сказать past_f/presfut_sg3. Source errors/overgeneralizations are not adopted: being incorrectly classified as perfective; contradictory claims about how many verbs have pairs; automatic prefix-based pairing; simple English past/progressive mapped one-to-one to Russian aspect; every reported tense retained regardless of context. The говорить/сказать pairing is bounded to the source say/tell grouping and populated lexical partner fields, not every meaning of speak or talk. Reported examples distinguish past reporting from future content, present-time nationality and future time clauses; labels classify the supplied examples rather than prescribe mechanical pronoun/tense rewriting. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+я прочитал is perfective past and presents a completed whole, rather than the imperfective past requested here.
+shippedText=я прочитал is perfective past and presents a completed whole, rather than the imperfective past requested here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7175b71990b81a76bf625adee805e0e0cd1aad07529897f14d4d0bfe3d18ce78
+contentHash=b2595eafcc5157a2f0cca11a73762d70cb316a46017d0a85a914bdd27291e0ee
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-feedback-u13-i-past-aspect-2`
+
+- Objectives: obj-u13-past-aspect
+- Sessions: u13-s-orient, u13-s-past-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2e254d9590e8cb969aea727dbe4fd225a489389da625c4f517c947b8b0dca359
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-past-aspect:feedback:u13-i-past-aspect-2
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, complete Usage/imperfective/perfective and Regular conjugation contexts; Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, complete Introduction, Forming aspectual pairs and Unpredictable pairs contexts, including the explicit observation that a completed action can be viewed as process; Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete Present or future reported-nationality/evening/Moscow context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать/прочитать/говорить/сказать/делать/сделать aspect and partner fields, читать past_m/past_f, прочитать past_m, сказать past_f/presfut_sg3. Source errors/overgeneralizations are not adopted: being incorrectly classified as perfective; contradictory claims about how many verbs have pairs; automatic prefix-based pairing; simple English past/progressive mapped one-to-one to Russian aspect; every reported tense retained regardless of context. The говорить/сказать pairing is bounded to the source say/tell grouping and populated lexical partner fields, not every meaning of speak or talk. Reported examples distinguish past reporting from future content, present-time nationality and future time clauses; labels classify the supplied examples rather than prescribe mechanical pronoun/tense rewriting. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+чита́л is the masculine past form of the shown infinitive. чита́ла is feminine past. Both belong to the same imperfective verb; this question changes gender agreement rather than selecting a different aspect.
+shippedText=чита́л is the masculine past form of the shown infinitive. чита́ла is feminine past. Both belong to the same imperfective verb; this question changes gender agreement rather than selecting a different aspect.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=89bc1993b79c9c28e52866d9b2940bb8758f94c85883b5b5499140755a38b8da
+contentHash=b5845345f8d785d49da1eb00021e32f1157ea2291ac767cfbe897aef824ab7a5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-feedback-u13-i-past-aspect-2-distractor-1`
+
+- Objectives: obj-u13-past-aspect
+- Sessions: u13-s-orient, u13-s-past-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bc727611a455ba8d90ebf6cbad126409955cae799136e34862e5b9026189e3af
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-past-aspect:feedback:u13-i-past-aspect-2-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, complete Usage/imperfective/perfective and Regular conjugation contexts; Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, complete Introduction, Forming aspectual pairs and Unpredictable pairs contexts, including the explicit observation that a completed action can be viewed as process; Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete Present or future reported-nationality/evening/Moscow context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать/прочитать/говорить/сказать/делать/сделать aspect and partner fields, читать past_m/past_f, прочитать past_m, сказать past_f/presfut_sg3. Source errors/overgeneralizations are not adopted: being incorrectly classified as perfective; contradictory claims about how many verbs have pairs; automatic prefix-based pairing; simple English past/progressive mapped one-to-one to Russian aspect; every reported tense retained regardless of context. The говорить/сказать pairing is bounded to the source say/tell grouping and populated lexical partner fields, not every meaning of speak or talk. Reported examples distinguish past reporting from future content, present-time nationality and future time clauses; labels classify the supplied examples rather than prescribe mechanical pronoun/tense rewriting. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+чита́ла is feminine past, not the requested masculine past form of the same verb.
+shippedText=чита́ла is feminine past, not the requested masculine past form of the same verb.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7a1cc68fbf1f682f9d924e7654092c83960deb9933af31da290a42ffdf0782aa
+contentHash=df865b6921578b8e2d38f7087d06d4efcf675e93fb86040983308117604a692f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-feedback-u13-i-reported-1`
+
+- Objectives: obj-u13-reported
+- Sessions: u13-s-orient, u13-s-reported
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0df11c301b331785e85d445febf9fd9b027a91c558eb56f245e2f95c5c8e2971
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-reported:feedback:u13-i-reported-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, complete Usage/imperfective/perfective and Regular conjugation contexts; Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, complete Introduction, Forming aspectual pairs and Unpredictable pairs contexts, including the explicit observation that a completed action can be viewed as process; Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete Present or future reported-nationality/evening/Moscow context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать/прочитать/говорить/сказать/делать/сделать aspect and partner fields, читать past_m/past_f, прочитать past_m, сказать past_f/presfut_sg3. Source errors/overgeneralizations are not adopted: being incorrectly classified as perfective; contradictory claims about how many verbs have pairs; automatic prefix-based pairing; simple English past/progressive mapped one-to-one to Russian aspect; every reported tense retained regardless of context. The говорить/сказать pairing is bounded to the source say/tell grouping and populated lexical partner fields, not every meaning of speak or talk. Reported examples distinguish past reporting from future content, present-time nationality and future time clauses; labels classify the supplied examples rather than prescribe mechanical pronoun/tense rewriting. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Я скажу ему ве́чером is the direct evening statement, meaning I will tell him in the evening. It has a first-person future verb without a past reporting frame. The shown reported example instead says that she said she would tell him. The Moscow option describes a different future plan, not this direct evening statement.
+shippedText=Я скажу ему ве́чером is the direct evening statement, meaning I will tell him in the evening. It has a first-person future verb without a past reporting frame. The shown reported example instead says that she said she would tell him. The Moscow option describes a different future plan, not this direct evening statement.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7307a558cc1e71d94e5b1e98536e15c8a646390669de218d89a3c27c68e734f3
+contentHash=98145b309761583479d42f0a1fa5f8595d253771f69ae38c26549cf7e6240da3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-feedback-u13-i-reported-1-distractor-1`
+
+- Objectives: obj-u13-reported
+- Sessions: u13-s-orient, u13-s-reported
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 846c096a9bf0f5d7ecebbfcf3af09bc73741dc86f8931ad3babbb617e06e2d13
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-reported:feedback:u13-i-reported-1-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, complete Usage/imperfective/perfective and Regular conjugation contexts; Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, complete Introduction, Forming aspectual pairs and Unpredictable pairs contexts, including the explicit observation that a completed action can be viewed as process; Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete Present or future reported-nationality/evening/Moscow context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать/прочитать/говорить/сказать/делать/сделать aspect and partner fields, читать past_m/past_f, прочитать past_m, сказать past_f/presfut_sg3. Source errors/overgeneralizations are not adopted: being incorrectly classified as perfective; contradictory claims about how many verbs have pairs; automatic prefix-based pairing; simple English past/progressive mapped one-to-one to Russian aspect; every reported tense retained regardless of context. The говорить/сказать pairing is bounded to the source say/tell grouping and populated lexical partner fields, not every meaning of speak or talk. Reported examples distinguish past reporting from future content, present-time nationality and future time clauses; labels classify the supplied examples rather than prescribe mechanical pronoun/tense rewriting. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски describes a future plan about Moscow, not the direct evening statement requested here.
+shippedText=Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски describes a future plan about Moscow, not the direct evening statement requested here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=dcdcdfd0b10f99249ff87560aca0b8e728ad5aca9d99398d7206ad7aea1b4990
+contentHash=4c659224a0b4fb3ec4d317c013b7d9ad7e51789656570a835cbf06ad852c338f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-feedback-u13-i-reported-2`
+
+- Objectives: obj-u13-reported
+- Sessions: u13-s-orient, u13-s-reported
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7d894336af4ea22b573a2394e74a0cb8bfab0b42abac270d460880a7942be80e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-reported:feedback:u13-i-reported-2
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, complete Usage/imperfective/perfective and Regular conjugation contexts; Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, complete Introduction, Forming aspectual pairs and Unpredictable pairs contexts, including the explicit observation that a completed action can be viewed as process; Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete Present or future reported-nationality/evening/Moscow context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать/прочитать/говорить/сказать/делать/сделать aspect and partner fields, читать past_m/past_f, прочитать past_m, сказать past_f/presfut_sg3. Source errors/overgeneralizations are not adopted: being incorrectly classified as perfective; contradictory claims about how many verbs have pairs; automatic prefix-based pairing; simple English past/progressive mapped one-to-one to Russian aspect; every reported tense retained regardless of context. The говорить/сказать pairing is bounded to the source say/tell grouping and populated lexical partner fields, not every meaning of speak or talk. Reported examples distinguish past reporting from future content, present-time nationality and future time clauses; labels classify the supplied examples rather than prescribe mechanical pronoun/tense rewriting. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски is the future plan about Moscow: when the speaker is there, the speaker will speak only Russian. Both clauses refer to the future, including the clause meaning when. Я скажу ему ве́чером instead says I will tell him in the evening. Neither option is itself a past reporting frame; identify the Moscow plan requested here.
+shippedText=Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски is the future plan about Moscow: when the speaker is there, the speaker will speak only Russian. Both clauses refer to the future, including the clause meaning when. Я скажу ему ве́чером instead says I will tell him in the evening. Neither option is itself a past reporting frame; identify the Moscow plan requested here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e181fb27c110c7831556350df379ccb4b5a8eac7f16fadd2990ed83e8f9fcc14
+contentHash=9de95a8267c88bb938b4678595246f6997e34dd47eb181b3fd3f22269bd8ec9c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-feedback-u13-i-reported-2-distractor-1`
+
+- Objectives: obj-u13-reported
+- Sessions: u13-s-orient, u13-s-reported
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a5ab6ae4ebf709bdf1d2ee85a055a61c660b75817cb6b5594273444817e15710
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-reported:feedback:u13-i-reported-2-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, complete Usage/imperfective/perfective and Regular conjugation contexts; Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, complete Introduction, Forming aspectual pairs and Unpredictable pairs contexts, including the explicit observation that a completed action can be viewed as process; Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete Present or future reported-nationality/evening/Moscow context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать/прочитать/говорить/сказать/делать/сделать aspect and partner fields, читать past_m/past_f, прочитать past_m, сказать past_f/presfut_sg3. Source errors/overgeneralizations are not adopted: being incorrectly classified as perfective; contradictory claims about how many verbs have pairs; automatic prefix-based pairing; simple English past/progressive mapped one-to-one to Russian aspect; every reported tense retained regardless of context. The говорить/сказать pairing is bounded to the source say/tell grouping and populated lexical partner fields, not every meaning of speak or talk. Reported examples distinguish past reporting from future content, present-time nationality and future time clauses; labels classify the supplied examples rather than prescribe mechanical pronoun/tense rewriting. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Я скажу ему ве́чером is the direct evening statement, not the future plan about Moscow.
+shippedText=Я скажу ему ве́чером is the direct evening statement, not the future plan about Moscow.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e49df66156cb1aedc5358d501c099f659d3a8d5fbe1b342b5217463417e2c0f8
+contentHash=1f3ae4087fe33222c8dc8261763cca6d2d78befa78da9e384638cff746c67a8e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-feedback-u13-i-tense-keep-1`
+
+- Objectives: obj-u13-tense-keep
+- Sessions: u13-s-orient, u13-s-tense-keep
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c87aeb19e102954a3c4e0e1f344ea1069f5ef43f3b646d533a38232eefb0a1a2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-tense-keep:feedback:u13-i-tense-keep-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, complete Usage/imperfective/perfective and Regular conjugation contexts; Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, complete Introduction, Forming aspectual pairs and Unpredictable pairs contexts, including the explicit observation that a completed action can be viewed as process; Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete Present or future reported-nationality/evening/Moscow context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать/прочитать/говорить/сказать/делать/сделать aspect and partner fields, читать past_m/past_f, прочитать past_m, сказать past_f/presfut_sg3. Source errors/overgeneralizations are not adopted: being incorrectly classified as perfective; contradictory claims about how many verbs have pairs; automatic prefix-based pairing; simple English past/progressive mapped one-to-one to Russian aspect; every reported tense retained regardless of context. The говорить/сказать pairing is bounded to the source say/tell grouping and populated lexical partner fields, not every meaning of speak or talk. Reported examples distinguish past reporting from future content, present-time nationality and future time clauses; labels classify the supplied examples rather than prescribe mechanical pronoun/tense rewriting. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Она́ сказа́ла, что она́ ска́жет ему́ ве́чером is the reported evening example: she said in the past that she would tell him in the evening. The reporting verb is past while the embedded verb remains future. The Moscow option instead gives a future time clause and a plan to speak Russian, without a past reporting frame. Recognize the supplied examples; pronoun changes depend on who is speaking.
+shippedText=Она́ сказа́ла, что она́ ска́жет ему́ ве́чером is the reported evening example: she said in the past that she would tell him in the evening. The reporting verb is past while the embedded verb remains future. The Moscow option instead gives a future time clause and a plan to speak Russian, without a past reporting frame. Recognize the supplied examples; pronoun changes depend on who is speaking.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=01a9cb4acff67940517939cb844082fb975af77ba03093c4e8c1e422e07a03bf
+contentHash=a2b509b552f2bb9162b2d44614bd48a77b6d99227b0fe37d3e971593a8b4ca65
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-feedback-u13-i-tense-keep-1-distractor-1`
+
+- Objectives: obj-u13-tense-keep
+- Sessions: u13-s-orient, u13-s-tense-keep
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c3c67cfc847477ab5609128d035a38a1bfe7548e2e505431fe625c95d38876e8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-tense-keep:feedback:u13-i-tense-keep-1-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, complete Usage/imperfective/perfective and Regular conjugation contexts; Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, complete Introduction, Forming aspectual pairs and Unpredictable pairs contexts, including the explicit observation that a completed action can be viewed as process; Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete Present or future reported-nationality/evening/Moscow context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать/прочитать/говорить/сказать/делать/сделать aspect and partner fields, читать past_m/past_f, прочитать past_m, сказать past_f/presfut_sg3. Source errors/overgeneralizations are not adopted: being incorrectly classified as perfective; contradictory claims about how many verbs have pairs; automatic prefix-based pairing; simple English past/progressive mapped one-to-one to Russian aspect; every reported tense retained regardless of context. The говорить/сказать pairing is bounded to the source say/tell grouping and populated lexical partner fields, not every meaning of speak or talk. Reported examples distinguish past reporting from future content, present-time nationality and future time clauses; labels classify the supplied examples rather than prescribe mechanical pronoun/tense rewriting. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски is the future plan about Moscow, not the reported evening example with a past reporting verb.
+shippedText=Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски is the future plan about Moscow, not the reported evening example with a past reporting verb.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8d112546390d36f6b5659f2d84c40468773b8698ac02189f9dcfccb357f5a36b
+contentHash=9a722a9d79dacb60fe020d5b23642fe4ad0caa0eb976e31d5aef01c566c502f9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-feedback-u13-i-tense-keep-2`
+
+- Objectives: obj-u13-tense-keep
+- Sessions: u13-s-orient, u13-s-tense-keep
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 572b6898a94ebaa0c687a0192844e252d7f4ef2ce97f1b715e61d9c5e99392a0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-tense-keep:feedback:u13-i-tense-keep-2
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, complete Usage/imperfective/perfective and Regular conjugation contexts; Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, complete Introduction, Forming aspectual pairs and Unpredictable pairs contexts, including the explicit observation that a completed action can be viewed as process; Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete Present or future reported-nationality/evening/Moscow context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать/прочитать/говорить/сказать/делать/сделать aspect and partner fields, читать past_m/past_f, прочитать past_m, сказать past_f/presfut_sg3. Source errors/overgeneralizations are not adopted: being incorrectly classified as perfective; contradictory claims about how many verbs have pairs; automatic prefix-based pairing; simple English past/progressive mapped one-to-one to Russian aspect; every reported tense retained regardless of context. The говорить/сказать pairing is bounded to the source say/tell grouping and populated lexical partner fields, not every meaning of speak or talk. Reported examples distinguish past reporting from future content, present-time nationality and future time clauses; labels classify the supplied examples rather than prescribe mechanical pronoun/tense rewriting. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+we usually change the tense is the source label for changing the reported tense in its English backshift comparison. we keep the tense the same labels the contrasting Russian example. English backshift can follow a past reporting verb, but is not mandatory in every report; the question classifies the supplied labels rather than imposing an always-change rule.
+shippedText=we usually change the tense is the source label for changing the reported tense in its English backshift comparison. we keep the tense the same labels the contrasting Russian example. English backshift can follow a past reporting verb, but is not mandatory in every report; the question classifies the supplied labels rather than imposing an always-change rule.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=522db96651126dfd771bf97a9190f1f677ff7287d503bd62d9dc9ace1aafe63b
+contentHash=44b3b95c292f927e78cd5087d20c72c5b1b49b189cea35f20f046aa42918bab9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-feedback-u13-i-tense-keep-2-distractor-1`
+
+- Objectives: obj-u13-tense-keep
+- Sessions: u13-s-orient, u13-s-tense-keep
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e860504af0aba83396ba37721ce569e278dd95e5bbfe0f96b5290e38ca7541b7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-tense-keep:feedback:u13-i-tense-keep-2-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, complete Usage/imperfective/perfective and Regular conjugation contexts; Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, complete Introduction, Forming aspectual pairs and Unpredictable pairs contexts, including the explicit observation that a completed action can be viewed as process; Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete Present or future reported-nationality/evening/Moscow context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать/прочитать/говорить/сказать/делать/сделать aspect and partner fields, читать past_m/past_f, прочитать past_m, сказать past_f/presfut_sg3. Source errors/overgeneralizations are not adopted: being incorrectly classified as perfective; contradictory claims about how many verbs have pairs; automatic prefix-based pairing; simple English past/progressive mapped one-to-one to Russian aspect; every reported tense retained regardless of context. The говорить/сказать pairing is bounded to the source say/tell grouping and populated lexical partner fields, not every meaning of speak or talk. Reported examples distinguish past reporting from future content, present-time nationality and future time clauses; labels classify the supplied examples rather than prescribe mechanical pronoun/tense rewriting. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+we keep the tense the same describes retention, not changing the reported tense in the English comparison requested here.
+shippedText=we keep the tense the same describes retention, not changing the reported tense in the English comparison requested here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=28b2eccd1947c4f26e0c9b3848fd3d42971997a86ddf4569d57669851e321610
+contentHash=7135f7faf8b1c064338c8a8d0138ccd5dc1653caaae825ba9e64bd8109f16427
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -5108,6 +5828,30 @@ permitsAppUse=true
 - `u13-s-book` OBJECTIVE `obj-u13-book`
 - `u13-st-book-work` REFERENCE `ref-u1115-attribution`
 - `obj-u13-past-aspect` PROVENANCE `prov-ca-13-370`
+- `obj-u13-infinitive` PROVENANCE `prov-ca-u13-feedback-u13-g-infinitive-0`
+- `obj-u13-infinitive` PROVENANCE `prov-ca-u13-feedback-u13-g-infinitive-0-distractor-1`
+- `obj-u13-past-aspect` PROVENANCE `prov-ca-u13-feedback-u13-g-past-aspect-0`
+- `obj-u13-past-aspect` PROVENANCE `prov-ca-u13-feedback-u13-g-past-aspect-0-distractor-1`
+- `obj-u13-reported` PROVENANCE `prov-ca-u13-feedback-u13-g-reported-0`
+- `obj-u13-reported` PROVENANCE `prov-ca-u13-feedback-u13-g-reported-0-distractor-1`
+- `obj-u13-tense-keep` PROVENANCE `prov-ca-u13-feedback-u13-g-tense-keep-0`
+- `obj-u13-tense-keep` PROVENANCE `prov-ca-u13-feedback-u13-g-tense-keep-0-distractor-1`
+- `obj-u13-infinitive` PROVENANCE `prov-ca-u13-feedback-u13-i-infinitive-1`
+- `obj-u13-infinitive` PROVENANCE `prov-ca-u13-feedback-u13-i-infinitive-1-distractor-1`
+- `obj-u13-infinitive` PROVENANCE `prov-ca-u13-feedback-u13-i-infinitive-2`
+- `obj-u13-infinitive` PROVENANCE `prov-ca-u13-feedback-u13-i-infinitive-2-distractor-1`
+- `obj-u13-past-aspect` PROVENANCE `prov-ca-u13-feedback-u13-i-past-aspect-1`
+- `obj-u13-past-aspect` PROVENANCE `prov-ca-u13-feedback-u13-i-past-aspect-1-distractor-1`
+- `obj-u13-past-aspect` PROVENANCE `prov-ca-u13-feedback-u13-i-past-aspect-2`
+- `obj-u13-past-aspect` PROVENANCE `prov-ca-u13-feedback-u13-i-past-aspect-2-distractor-1`
+- `obj-u13-reported` PROVENANCE `prov-ca-u13-feedback-u13-i-reported-1`
+- `obj-u13-reported` PROVENANCE `prov-ca-u13-feedback-u13-i-reported-1-distractor-1`
+- `obj-u13-reported` PROVENANCE `prov-ca-u13-feedback-u13-i-reported-2`
+- `obj-u13-reported` PROVENANCE `prov-ca-u13-feedback-u13-i-reported-2-distractor-1`
+- `obj-u13-tense-keep` PROVENANCE `prov-ca-u13-feedback-u13-i-tense-keep-1`
+- `obj-u13-tense-keep` PROVENANCE `prov-ca-u13-feedback-u13-i-tense-keep-1-distractor-1`
+- `obj-u13-tense-keep` PROVENANCE `prov-ca-u13-feedback-u13-i-tense-keep-2`
+- `obj-u13-tense-keep` PROVENANCE `prov-ca-u13-feedback-u13-i-tense-keep-2-distractor-1`
 - `obj-u13-past-aspect` PROVENANCE `prov-ex-or-u13-past-aspect-2`
 - `obj-u13-past-aspect` PROVENANCE `prov-ex-or-u13-past-aspect-2-gloss`
 - `obj-u13-past-aspect` PROVENANCE `prov-ex-or-u13-past-aspect-3`
