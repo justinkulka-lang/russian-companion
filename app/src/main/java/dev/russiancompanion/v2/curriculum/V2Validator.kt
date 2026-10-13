@@ -2108,6 +2108,23 @@ internal object V2Validator {
         ) {
             return false
         }
+        if (capability.unitNumber == 29 && capability.objectiveId == "obj-u29-short-adjective") {
+            // This claim requires curated grammar contrasts; vocabulary glosses cannot clear it.
+            if (capability.supportedClaim != "short-form-adjective" ||
+                capability.sourceId != "src-wikipedia-russian-grammar-1369617627" ||
+                capability.sourceRevision != "1369617627" ||
+                capability.sourceHash != "0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8" ||
+                spanHost.sourceHash != capability.sourceHash || spanHost.originalSourceText != capability.exactSpan ||
+                !verifiedFrozen(spanHost) || objective.checkItemIds != listOf("u29-i-adjective-form-1", "u29-i-adjective-form-2")) return false
+            val checks = objective.checkItemIds.mapNotNull { pack.item(it) }
+            val practice = objective.practiceStepIds.flatMap { id -> pack.step(id)?.second?.itemIds.orEmpty() }
+            val guided = pack.item("u29-g-adjective-form-0") ?: return false
+            return checks.size == 2 && checks.all {
+                it.assessment?.independent == true && it.assessment.testedFeature == "SHORT_FORM" &&
+                    CompleteRuleContextPins.itemMatches(pack, it) && structureValid(pack, it).isEmpty()
+            } && guided.id in practice && guided.assessment?.independent == false &&
+                CompleteRuleContextPins.itemMatches(pack, guided) && structureValid(pack, guided).isEmpty()
+        }
         return objective.checkItemIds.mapNotNull { pack.item(it) }.any { item ->
             val participants = item.assessment?.relationParticipantIds.orEmpty().mapNotNull { id ->
                 pack.provenanceRecords.firstOrNull { it.itemId == id }
