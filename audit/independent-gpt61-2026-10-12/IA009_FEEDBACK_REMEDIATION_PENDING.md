@@ -41,3 +41,7 @@ Implementationb9f00899069b495bed1f5791f72e485c63945938 explains17 numeric-value 
 ## Unit9 composition and agreement feedback — 2026-10-13
 
 Implementation0fde3d3991ba4493a0ca36b9c49cdd0a71c14401 explains five composition/thousands and six one/two agreement rows, with11 distractor rationales. Original scored/source tuples and prior provenance are retained;22 new English coverage records are review-pending. Current literal Does inventory:76 (22 generic/54 feature-specific). Unit9 has15 quantity/pattern rows remaining. Prior inventories are historical. Next:review all15 against complete source context and existing guards, replacing abbreviated rule choices/teaching/application bindings where required. Existing duplicate guided/check tuples remain open under IA016. No semantic acceptance or full-suite result is inferred.
+
+## Unit9 complete counted-noun rules — 2026-10-13
+
+Implementation8e5db89c56d9421a6efcffa6f0a14c0f0b6c042a corrects15 quantity/pattern choices, feedback and two full lessons, with canonical context/tuple guards. Original source records/Russian cues/examples are preserved;140 new English/context records remain review-pending. Current literal Does inventory:61 (7 generic/54 feature-specific), across Units10–15; Unit9 has none. Earlier inventories are historical. Next bounded feedback group:seven Unit10 rows, after complete source inspection. IA009 remains partial and duplicate-item findings remain open. No semantic acceptance or complete-suite claim.
