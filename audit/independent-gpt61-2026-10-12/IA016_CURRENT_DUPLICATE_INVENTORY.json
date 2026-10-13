@@ -1,5 +1,5 @@
 {
-  "repositoryCommit": "db323d1a07613846a088cd44cb9f2b72d24753c9",
+  "repositoryCommit": "f6651768a7d9a358341344198dc8384be7a1c5bf",
   "scope": "EXACT_SAME_UNIT_GATING_RECOGNITION_GUIDED_AND_INDEPENDENT_PROMPT_CUE_KEY_ORDERED_OPTIONS_SIGNATURE_NOT_ALL_TRANSFER_DEFECTS",
   "groups": [
     {
@@ -55,50 +55,14 @@
         "obj-u13-tense-keep",
         "obj-u13-reported"
       ]
-    },
-    {
-      "unitNumber": 28,
-      "itemIds": [
-        "u28-g-imperfective-adverb-0",
-        "u28-i-imperfective-adverb-1"
-      ],
-      "prompt": "Which English description identifies the timing of читая in this sentence?",
-      "cue": "читая письмо, он улыбался",
-      "answer": "simultaneous with the main predicate",
-      "options": [
-        "simultaneous with the main predicate",
-        "an absolute present label",
-        "a different subject from the main verb"
-      ],
-      "objectiveIds": [
-        "obj-u28-imperfective-adverb"
-      ]
-    },
-    {
-      "unitNumber": 28,
-      "itemIds": [
-        "u28-g-perfective-adverb-0",
-        "u28-i-perfective-adverb-1"
-      ],
-      "prompt": "Choose the English description. When is the perfective verbal adverb interpreted in this sentence?",
-      "cue": "написав письмо, она отправит его завтра",
-      "answer": "anterior to a future main action",
-      "options": [
-        "anterior to a future main action",
-        "an absolute present label",
-        "a different subject from the main verb"
-      ],
-      "objectiveIds": [
-        "obj-u28-perfective-adverb"
-      ]
     }
   ],
-  "count": 5,
+  "count": 3,
   "originalDiagnosticGroupCount": 11,
-  "priorInventoryCommit": "3b8b6df0150d406f8f71a2bc7eebd1a19a301eba",
-  "priorInventoryCount": 6,
-  "difference": "Unit24 guided practice now uses a distinct licensed introductory shop subject-focus example, preserving both correct independent persuasion readings and retaining the original repeated guided question as optional reference. Five guided/independent exact groups and four separate same-role groups remain; no semantic closure or independent subject-focus mastery claim.",
-  "engineeringDisposition": "PARTIAL_UNIT17_UNIT8_UNIT9_UNIT21_AND_UNIT24_FIXES_PENDING_INDEPENDENT_VERIFICATION_OTHER_GROUPS_OPEN",
+  "priorInventoryCommit": "db323d1a07613846a088cd44cb9f2b72d24753c9",
+  "priorInventoryCount": 5,
+  "difference": "Unit28 now uses two distinct exact guided literary clauses with actor/dictionary aspect binding while retaining original independent relative-time/shared-subject scored fields. Three inter-objective guided/independent groups and four separate same-role groups remain; their earlier-independent/later-guided sequencing needs contextual review. No semantic closure, unseen-context or productive-formation mastery claim.",
+  "engineeringDisposition": "PARTIAL_UNIT17_UNIT8_UNIT9_UNIT21_UNIT24_AND_UNIT28_FIXES_PENDING_INDEPENDENT_VERIFICATION_OTHER_GROUPS_OPEN",
   "formalAcceptance": false,
   "additionalSameRoleGroupsOutsideGuidedIndependentInventory": [
     {

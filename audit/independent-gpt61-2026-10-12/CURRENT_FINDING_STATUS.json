@@ -198,9 +198,9 @@
       "findingId": "IA016",
       "producerSeverity": "MEDIUM",
       "producerStatus": "OPEN",
-      "engineeringDisposition": "PARTIAL_UNIT17_UNIT8_UNIT9_UNIT21_AND_UNIT24_FIXES_PENDING_INDEPENDENT_VERIFICATION_OTHER_GROUPS_OPEN",
+      "engineeringDisposition": "PARTIAL_UNIT17_UNIT8_UNIT9_UNIT21_UNIT24_AND_UNIT28_FIXES_PENDING_INDEPENDENT_VERIFICATION_OTHER_GROUPS_OPEN",
       "formalAcceptance": false,
-      "currentExactSameUnitGroups": 5,
+      "currentExactSameUnitGroups": 3,
       "inventoryPath": "IA016_CURRENT_DUPLICATE_INVENTORY.json",
       "continuationPath": "IA016_INDEPENDENT_TRANSFER_PENDING.md",
       "implementationCommit": "db323d1a07613846a088cd44cb9f2b72d24753c9",
@@ -262,6 +262,21 @@
           "guidedItemId": "u24-g-context-subject-focus",
           "optionalReferenceItemId": "u24-g-word-order-contrast-0",
           "independentSubjectFocusClaim": false,
+          "formalAcceptance": false
+        },
+        "unit28Timing": {
+          "implementationCommit": "f6651768a7d9a358341344198dc8384be7a1c5bf",
+          "evidencePath": "ia016-unit28-timing-verification/FINAL_VERIFICATION_MANIFEST.json",
+          "guideIds": [
+            "u28-g-imperfective-adverb-0",
+            "u28-g-perfective-adverb-0"
+          ],
+          "independentScoredFieldsPreserved": true,
+          "capabilityPrefixesPreserved": true,
+          "newPendingProvenance": 76,
+          "nativeAndLexicalSelections": 8,
+          "unseenContextClaim": false,
+          "productiveFormationClaim": false,
           "formalAcceptance": false
         }
       },

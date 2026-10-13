@@ -1,0 +1,14 @@
+{
+  "catalog/sources/units-3-5/openrussian/verbs.csv": {
+    "sha256": "8659de6799b949fb35f080b08088fb7d347ed300490954ebb380a31642646e1d",
+    "bytes": 5650332
+  },
+  "catalog/sources/units-26-30/wikisource/vechera-5336197.txt": {
+    "sha256": "af0a1b2a4a79796a3523bb8a35b708df450e5970a96af050230b42cf6f604517",
+    "bytes": 479184
+  },
+  "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt": {
+    "sha256": "e12312425b1ed50177c3549ac10026696fbb8733c089b748b183eecdaf8ace85",
+    "bytes": 165374
+  }
+}
