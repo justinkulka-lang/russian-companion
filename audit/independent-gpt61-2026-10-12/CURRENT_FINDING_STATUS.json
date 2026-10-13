@@ -126,7 +126,11 @@
       "producerSeverity": "HIGH",
       "producerStatus": "OPEN",
       "engineeringDisposition": "OPEN",
-      "formalAcceptance": false
+      "formalAcceptance": false,
+      "diagnosticDisposition": "REPRODUCED_CONTEXTUAL_CREDIT_GAP",
+      "researchBlocker": "ProxyHTTP403 for new public source research; network draft saved and requires publication",
+      "researchEvidencePath": "ia012-unit29-research-verification/RESEARCH_VERIFICATION_MANIFEST.json",
+      "newSourceAdmission": false
     },
     {
       "findingId": "IA013",
@@ -210,5 +214,6 @@
   ],
   "physicalDeviceEvidenceRequestTiming": "AFTER_FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
   "latestAppImplementationCommit": "c82e5b4a305c960ca41f660071d0da25070631ea",
-  "latestVerifiedRepositoryCommit": "c67e47bba71ce0b6c4ee0b0a1030c080af41f547"
+  "latestVerifiedRepositoryCommit": "c67e47bba71ce0b6c4ee0b0a1030c080af41f547",
+  "latestResearchDiagnosticRepositoryCommit": "0edaa0fc635b3579823f7b352f52fa79a675db3d"
 }
