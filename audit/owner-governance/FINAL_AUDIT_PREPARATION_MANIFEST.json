@@ -5,8 +5,8 @@
   "preparationPath": "audit/owner-governance/FINAL_AUDIT_PREPARATION_MANIFEST.json",
   "modelVersion": "",
   "date": "",
-  "packContentReviewDigest": "ee64b836e32577a676e8f156eb33675c8cdb8d80eedad130bdeb8fd3e41727a9",
-  "repositorySourceDigest": "76f5398b1ef127f486f2f19e02f6ebac700b76091b0749927fadd7a7ff9a2997",
+  "packContentReviewDigest": "ecae24c4e29c7247517a26716213878e43c8cb4de414f5cbc93c6b0f5ca85a0a",
+  "repositorySourceDigest": "fae738eb8dd817bdd523fef1dfd01d2b7657eaac382302fe06fedf2f0295546b",
   "curriculumSourceCommits": {
     "1": "4f5cb8024d3f68a37052fdf85b5755bffa2a0904",
     "2": "4f5cb8024d3f68a37052fdf85b5755bffa2a0904",
@@ -36,7 +36,7 @@
     "26": "4f5cb8024d3f68a37052fdf85b5755bffa2a0904",
     "27": "4f5cb8024d3f68a37052fdf85b5755bffa2a0904",
     "28": "4f5cb8024d3f68a37052fdf85b5755bffa2a0904",
-    "29": "f844dd187be8e2e4d650c40305655815c8b2c3ec",
+    "29": "73a40c14b8afb01b521bddf24179c3454f0bae04",
     "30": "4f5cb8024d3f68a37052fdf85b5755bffa2a0904"
   },
   "evidenceClasses": [
@@ -73,7 +73,7 @@
     {"unitNumber": 26, "contentDigest": "7870405b2810239e5e744706b0376877191d00afc337ac30e7a2249ad97fddab", "disposition": ""},
     {"unitNumber": 27, "contentDigest": "fb8a23246226a841df660cae2517b139cba2ff51ef5939792268d2c6cb50bc2e", "disposition": ""},
     {"unitNumber": 28, "contentDigest": "d8df059f618e932eb0e77579113fea17db317584e77bef5a10dda3e82f70d402", "disposition": ""},
-    {"unitNumber": 29, "contentDigest": "438013b472cf7acbd10b47ebca7d3166e75f9087feb955438b85c19c5bddde50", "disposition": ""},
+    {"unitNumber": 29, "contentDigest": "b35528e0a8ca27fed0fe18541aab59755d6adcad90a7ccaae86c1f8318ab9374", "disposition": ""},
     {"unitNumber": 30, "contentDigest": "192db1dc6049b708d930fa05879089db636eb2d2cfbb3724bf72c8732dc1114e", "disposition": ""}
   ],
   "varianceDecision": "",

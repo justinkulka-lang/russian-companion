@@ -11,12 +11,12 @@ Unit 29 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: f844dd187be8e2e4d650c40305655815c8b2c3ec
-- Unit content-review SHA-256: 438013b472cf7acbd10b47ebca7d3166e75f9087feb955438b85c19c5bddde50
+- Curriculum source commit: 73a40c14b8afb01b521bddf24179c3454f0bae04
+- Unit content-review SHA-256: b35528e0a8ca27fed0fe18541aab59755d6adcad90a7ccaae86c1f8318ab9374
 - Mapping-package SHA-256: a7ebe370698a0dffe4f0311ccfbfff6f217171ffab7dda232447d4b62e2b4071
-- Pack content-review SHA-256: ee64b836e32577a676e8f156eb33675c8cdb8d80eedad130bdeb8fd3e41727a9
-- Review-package SHA-256: 4dfc829b31c6dab779d5cd17f36c5d7da6efc93d905a29f2a415465d1608b7b7
-- Repository source SHA-256: 76f5398b1ef127f486f2f19e02f6ebac700b76091b0749927fadd7a7ff9a2997
+- Pack content-review SHA-256: ecae24c4e29c7247517a26716213878e43c8cb4de414f5cbc93c6b0f5ca85a0a
+- Review-package SHA-256: 73eeb58d502dc27b52246f6c92bc52b4e8847ccce1c429806d28a18701d07639
+- Repository source SHA-256: fae738eb8dd817bdd523fef1dfd01d2b7657eaac382302fe06fedf2f0295546b
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -132,15 +132,15 @@ remediation=u29-st-rem-active
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 070d90bdff89e6e1d387a610e33e3c8abd6638d39df7e7a235680ba68e6f8569
+- Content hash: d1f5c6c6baad1e5bf7532ad71b13a9f3ca4caccb3ae83a9efe64deaff6c44921
 
 title=Distinguish admitted long, short and invariant adjective forms
 kind=RECOGNITION
 unitNumber=29
-instruction=u29-st-orient,u29-st-teach-short-adjective-1,u29-st-teach-short-adjective-2,u29-st-teach-short-adjective-3
-examples=ex-u29-short-adjective-0,ex-u29-short-adjective-1,ex-u29-short-adjective-2
+instruction=u29-st-orient,u29-st-teach-short-adjective-1,u29-st-teach-short-adjective-2,u29-st-teach-short-adjective-3,u29-st-teach-short-agreement,u29-st-teach-adjective-predicate,u29-st-teach-adjective-attributive
+examples=ex-u29-short-adjective-0,ex-u29-short-adjective-1,ex-u29-short-adjective-2,ex-u29-adjective-context-f,ex-u29-adjective-context-n,ex-u29-adjective-context-pl,ex-u29-adjective-context-train,ex-u29-adjective-context-pencil,ex-u29-adjective-context-student,ex-u29-adjective-context-letter,ex-u29-adjective-context-book,ex-u29-adjective-context-books
 practice=u29-st-guided-short-adjective-1
-checks=u29-i-adjective-form-1,u29-i-adjective-form-2
+checks=u29-i-adjective-form-1,u29-i-adjective-form-2,u29-i-short-agreement-f,u29-i-short-agreement-n,u29-i-short-agreement-pl,u29-i-adjective-function-p,u29-i-adjective-function-a
 remediation=u29-st-rem-short-adjective
 
 ### OBJECTIVE `obj-u29-bookish-note`
@@ -453,12 +453,12 @@ remediationStepId=u29-st-rem-active
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 18b7901f45b6d2aa38feb2805ec290a784adf38e1cef846be0b70b785df4f53d
+- Content hash: f7c74ed16fe15dd469357aba1b1688a3ae5f176a21be7eeb609d39ab1a04d8c3
 
 title=Distinguish admitted long, short and invariant adjective forms
 estimatedMinutes=12
 objectives=obj-u29-short-adjective
-steps=u29-st-teach-short-adjective-1,u29-st-teach-short-adjective-2,u29-st-teach-short-adjective-3,u29-st-guided-short-adjective-1,u29-st-rem-short-adjective,u29-st-check-short-adjective
+steps=u29-st-teach-short-adjective-1,u29-st-teach-short-adjective-2,u29-st-teach-short-adjective-3,u29-st-teach-short-agreement,u29-st-teach-adjective-predicate,u29-st-teach-adjective-attributive,u29-st-guided-short-adjective-1,u29-st-rem-short-adjective,u29-st-check-short-adjective
 
 ### STEP `u29-st-teach-short-adjective-1`
 
@@ -490,11 +490,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 4b846c8d590cde526d3bbcd70412ed0aeae1d0591cc713c57d18d25a6b09b2c0
+- Content hash: 398a41ddc343f8d2571700bb25538ec25746a33a9b4637bc38c928d759df62ea
 
 kind=TEACH
 title=Distinguish a predicate from a noun description
-body=In the taught modern use, short adjectives occur only in the nominative and are used predicatively to describe their subject. A long adjective often describes a noun attributively and can also be a predicate. The choice depends on the sentence, not a universal rule about one fixed word position. The isolated pair does not provide a complete context for selecting every long-versus-short form; broader agreement and sentence-level application remain pending.
+body=In the taught modern use, short adjectives occur only in the nominative and are used predicatively to describe their subject. A long adjective can modify a noun attributively and can also be a predicate. The choice depends on the sentence, not a universal rule about one fixed word position. The following supplied forms, complete clauses and noun phrases support bounded agreement and function checks; they do not settle every long-versus-short semantic or stylistic choice.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -526,6 +526,72 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u29-st-teach-short-agreement`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-short-adjective
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: c7e1684bd83b604d8e2228044ed64a707652058c5e4b4bbc0fba0779eb36e057
+
+kind=TEACH
+title=Apply short-form gender and number agreement
+body=The supplied short forms of new are нов for masculine singular, нова́ for feminine singular, но́во for neuter singular and новы́ for plural. Short adjectives agree with their subject in gender and number; they do not have a modern case paradigm. In the retained noun examples, книга is feminine singular, письмо is neuter singular, and книги has the supplied plural reading. Choose the short form for that subject rather than another form with the same lexical meaning. Some adjectives lack short forms and stress can change; these supplied forms are not a universal truncation recipe.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=ex-u29-short-adjective-1,ex-u29-adjective-context-f,ex-u29-adjective-context-n,ex-u29-adjective-context-pl,ex-u29-adjective-context-letter,ex-u29-adjective-context-book,ex-u29-adjective-context-books
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u29-st-teach-adjective-predicate`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-short-adjective
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 98eff0289b1cd9e0fbe938d8d012832a15ab342ab08fce7ea66e9f4035127aee
+
+kind=TEACH
+title=A long form can be a predicate
+body=The complete clauses Поезд старый and Студент новый say that the train is old and the student is new. Their long adjectives predicate a property of the subject. No overt present copula appears in these supplied clauses. Long form therefore does not force attributive function, and a temporary-versus-permanent slogan does not decide every form choice. Read the whole example and its supplied meaning rather than its adjective ending alone.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=ex-u29-adjective-context-train,ex-u29-adjective-context-student
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u29-st-teach-adjective-attributive`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-short-adjective
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: b299db18be81cd2dbb07977f0de7379613d4861cfb79b731d03ee81b5ee451f6
+
+kind=TEACH
+title=Distinguish a noun phrase from a predication
+body=The supplied новый карандаш and новое письмо mean new pencil and new letter. Each is an attributive noun phrase: the adjective modifies the head noun. These phrases alone do not assert that a pencil or letter is new in a complete clause. The adjective and noun agree in gender and number in the supplied singular examples. Do not infer an exceptionless word-position rule or every possible case from an isolated phrase. These exercises assess bounded agreement and function recognition, not unrestricted production or every long/short meaning distinction.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=ex-u29-adjective-context-pencil,ex-u29-adjective-context-letter
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
 ### STEP `u29-st-guided-short-adjective-1`
 
 - Objectives: obj-u29-short-adjective
@@ -534,14 +600,14 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 81c45de0c202ca3017e1f85713d48d680171b31b3b5e2c543616c60b19c950b1
+- Content hash: b0184380f1d26fc16d1a9360cead7194b0f7d027418362a8df19112eae45c9a4
 
 kind=GUIDED
 title=Guided practice
 body=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
 dominantAction=Continue
 references=
-items=u29-g-adjective-form-0
+items=u29-g-adjective-form-0,u29-g-short-agreement-m,u29-g-short-agreement-n,u29-g-adjective-function-p,u29-g-adjective-function-a
 examples=
 unavailableReason=
 bookDirection=
@@ -556,19 +622,25 @@ remediationStepId=u29-st-rem-short-adjective
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 2c181d4d3b2eb4d3c882a42f87bba61a0ab3798cec7c9af9eee8b502b500f1a8
+- Content hash: b9bec6fbca378a79b9a9f57010da12525504da3b3a51f26bcf1a34924cdfe8ef
 
 kind=REMEDIATE
 title=Review the complete retained-example contrast
 body=The retained но́вый and нов both mean new. The first is the long form and the second is the masculine singular short form. The grammatical check asks which form is shown, rather than its English gloss. Long adjectives have case, gender and number inflection; short adjectives vary for gender and number, not case. The retained examples are recognition targets, not a universal rule for producing short forms by removing endings.
 
-In the taught modern use, short adjectives occur only in the nominative and are used predicatively to describe their subject. A long adjective often describes a noun attributively and can also be a predicate. The choice depends on the sentence, not a universal rule about one fixed word position. The isolated pair does not provide a complete context for selecting every long-versus-short form; broader agreement and sentence-level application remain pending.
+In the taught modern use, short adjectives occur only in the nominative and are used predicatively to describe their subject. A long adjective can modify a noun attributively and can also be a predicate. The choice depends on the sentence, not a universal rule about one fixed word position. The following supplied forms, complete clauses and noun phrases support bounded agreement and function checks; they do not settle every long-versus-short semantic or stylistic choice.
 
 The retained беж means beige and is an invariant colour form, unchanged for case, gender and number. Its short appearance does not make it the short counterpart of но́вый. Keep lexical meaning, inflection and adjective function separate. The correct glosses remain in Vocabulary Lab as word-meaning practice; they do not satisfy the independent adjective grammar checks.
+
+The supplied short forms of new are нов for masculine singular, нова́ for feminine singular, но́во for neuter singular and новы́ for plural. Short adjectives agree with their subject in gender and number; they do not have a modern case paradigm. In the retained noun examples, книга is feminine singular, письмо is neuter singular, and книги has the supplied plural reading. Choose the short form for that subject rather than another form with the same lexical meaning. Some adjectives lack short forms and stress can change; these supplied forms are not a universal truncation recipe.
+
+The complete clauses Поезд старый and Студент новый say that the train is old and the student is new. Their long adjectives predicate a property of the subject. No overt present copula appears in these supplied clauses. Long form therefore does not force attributive function, and a temporary-versus-permanent slogan does not decide every form choice. Read the whole example and its supplied meaning rather than its adjective ending alone.
+
+The supplied новый карандаш and новое письмо mean new pencil and new letter. Each is an attributive noun phrase: the adjective modifies the head noun. These phrases alone do not assert that a pencil or letter is new in a complete clause. The adjective and noun agree in gender and number in the supplied singular examples. Do not infer an exceptionless word-position rule or every possible case from an isolated phrase. These exercises assess bounded agreement and function recognition, not unrestricted production or every long/short meaning distinction.
 dominantAction=Continue
 references=
 items=
-examples=ex-u29-short-adjective-0,ex-u29-short-adjective-1,ex-u29-short-adjective-2
+examples=ex-u29-short-adjective-0,ex-u29-short-adjective-1,ex-u29-short-adjective-2,ex-u29-adjective-context-f,ex-u29-adjective-context-n,ex-u29-adjective-context-pl,ex-u29-adjective-context-letter,ex-u29-adjective-context-book,ex-u29-adjective-context-books,ex-u29-adjective-context-train,ex-u29-adjective-context-student,ex-u29-adjective-context-pencil
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -582,14 +654,14 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 498eb08d44333066110c78a33fac581325c86b20daae0a2408bbf4e41581cc7f
+- Content hash: 640a4839c1683953f2d1a9ffe33781ea2e09d95e5d3dd3b44c2ed325070103a1
 
 kind=CHECK
 title=Independent checks
 body=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
 dominantAction=Continue
 references=
-items=u29-i-adjective-form-1,u29-i-adjective-form-2
+items=u29-i-adjective-form-1,u29-i-adjective-form-2,u29-i-short-agreement-f,u29-i-short-agreement-n,u29-i-short-agreement-pl,u29-i-adjective-function-p,u29-i-adjective-function-a
 examples=
 unavailableReason=
 bookDirection=
@@ -1377,6 +1449,159 @@ note=beige
 objectiveId=obj-u29-short-adjective
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
+### EXAMPLE `ex-u29-adjective-context-f`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-short-adjective
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9cf951b844c97dda334efc2c666867a8df2c4e023b4e601948256310df733574
+
+kind=LEXICAL
+letterId=
+display=нова́
+note=new
+objectiveId=obj-u29-short-adjective
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### EXAMPLE `ex-u29-adjective-context-n`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-short-adjective
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 878b248ca7b68bf1013e48fe9a36a10574b6562ad3405796b0df0037a8036b78
+
+kind=LEXICAL
+letterId=
+display=но́во
+note=new
+objectiveId=obj-u29-short-adjective
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### EXAMPLE `ex-u29-adjective-context-pl`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-short-adjective
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bded9b71c4ac3a2c6a198bf041e1c706acfe785983a72dc6657df7e9271e00d5
+
+kind=LEXICAL
+letterId=
+display=новы́
+note=new
+objectiveId=obj-u29-short-adjective
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### EXAMPLE `ex-u29-adjective-context-train`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-short-adjective
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b4b9771204889fc3db8c92cae6a5360569c17d52432a72f302f35c4fbeb1f77c
+
+kind=LEXICAL
+letterId=
+display=Поезд старый
+note=The train is old
+objectiveId=obj-u29-short-adjective
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### EXAMPLE `ex-u29-adjective-context-pencil`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-short-adjective
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 69d81eab146c86695edcd24774ec974fc5a1d739be244b5ba25f1bc9b83f9dc1
+
+kind=LEXICAL
+letterId=
+display=новый карандаш
+note=new pencil
+objectiveId=obj-u29-short-adjective
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### EXAMPLE `ex-u29-adjective-context-student`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-short-adjective
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a6b366b765290b7cce6ce0b76c56a138fcc1fc926fb031f7686197590c79135b
+
+kind=LEXICAL
+letterId=
+display=Студент новый
+note=The student is new
+objectiveId=obj-u29-short-adjective
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### EXAMPLE `ex-u29-adjective-context-letter`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-short-adjective
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fee44722a547d9ab7e686fa9e169649c5c94221387b789dfdd7cbe7baf26946a
+
+kind=LEXICAL
+letterId=
+display=новое письмо
+note=new letter
+objectiveId=obj-u29-short-adjective
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### EXAMPLE `ex-u29-adjective-context-book`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-short-adjective
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 726565962972959e1aa8899a636304b4a57b11d66bbe8639659506e0abb7f71a
+
+kind=LEXICAL
+letterId=
+display=новая книга
+note=new book
+objectiveId=obj-u29-short-adjective
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### EXAMPLE `ex-u29-adjective-context-books`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-short-adjective
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 074d645b265dc8ec713ac266ff4441148eda959682705c1ce18deaff62e60490
+
+kind=LEXICAL
+letterId=
+display=новые книги
+note=new books
+objectiveId=obj-u29-short-adjective
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
 ### EXAMPLE `ex-u29-bookish-note-0`
 
 - Objectives: obj-u29-bookish-note
@@ -1598,6 +1823,146 @@ whyAnswerDemonstratesObjective=беж means beige and is an invariant colour adj
 contrastMembers=Invariant colour adjective, unchanged for case, gender and number. | Long adjective form, with case, gender and number inflection. | Short adjective form, used predicatively and not declined for case.
 relationKind=STATED_APPLICATION
 relationParticipantIds=prov-ca-u29-adjective-u29-g-adjective-form-0-0 | prov-ca-u29-adjective-u29-g-adjective-form-0-1 | prov-ca-u29-adjective-u29-g-adjective-form-0-2 | prov-ca-u29-adjective-u29-g-adjective-form-0-3
+responseKind=ENGLISH_CLASSIFICATION
+
+### GUIDED_PRACTICE `u29-g-short-agreement-m`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8db10cbe52e556b32c997ebf946146d8c461a5735349ec2ab74ac5f0016a5111
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which supplied short adjective agrees with the described subject?
+promptLetter=One masculine singular subject is described as new. Choose the short adjective.
+options=нов | нова́ | но́во
+answer=нов
+feedback=нов is the supplied masculine singular short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.
+objectiveId=obj-u29-short-adjective
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | нова́ is the supplied feminine singular short form, rather than the masculine singular form required by this subject. | но́во is the supplied neuter singular short form, rather than the masculine singular form required by this subject.
+testedFeature=SHORT_AGREEMENT
+evidenceMode=STATED_APPLICATION
+contrastSetId=u29-g-short-agreement-m
+cueLanguage=rule
+independent=false
+answerSourceIds=prov-ca-u29-application-u29-g-short-agreement-m-1
+distractorSourceIds= | prov-ca-u29-application-u29-g-short-agreement-m-2 | prov-ca-u29-application-u29-g-short-agreement-m-3
+distractorDifference= | нова́ is the supplied feminine singular short form, rather than the masculine singular form required by this subject. | но́во is the supplied neuter singular short form, rather than the masculine singular form required by this subject.
+whyAnswerDemonstratesObjective=нов is the supplied masculine singular short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.
+contrastMembers=нов | нова́ | но́во
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u29-application-u29-g-short-agreement-m-0 | prov-ca-u29-application-u29-g-short-agreement-m-1 | prov-ca-u29-application-u29-g-short-agreement-m-2 | prov-ca-u29-application-u29-g-short-agreement-m-3
+responseKind=RUSSIAN_TOKEN
+
+### GUIDED_PRACTICE `u29-g-short-agreement-n`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 44d07f710c7d265c89f47e908edaccdc0ad8a3827a4056ecdad136b7b31ba88c
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which supplied short adjective agrees with the described subject?
+promptLetter=One neuter singular subject is described as new. Choose the short adjective.
+options=но́во | новы́ | нова́
+answer=но́во
+feedback=но́во is the supplied neuter singular short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.
+objectiveId=obj-u29-short-adjective
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | новы́ is the supplied plural short form, rather than the neuter singular form required by this subject. | нова́ is the supplied feminine singular short form, rather than the neuter singular form required by this subject.
+testedFeature=SHORT_AGREEMENT
+evidenceMode=STATED_APPLICATION
+contrastSetId=u29-g-short-agreement-n
+cueLanguage=rule
+independent=false
+answerSourceIds=prov-ca-u29-application-u29-g-short-agreement-n-1
+distractorSourceIds= | prov-ca-u29-application-u29-g-short-agreement-n-2 | prov-ca-u29-application-u29-g-short-agreement-n-3
+distractorDifference= | новы́ is the supplied plural short form, rather than the neuter singular form required by this subject. | нова́ is the supplied feminine singular short form, rather than the neuter singular form required by this subject.
+whyAnswerDemonstratesObjective=но́во is the supplied neuter singular short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.
+contrastMembers=но́во | новы́ | нова́
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u29-application-u29-g-short-agreement-n-0 | prov-ca-u29-application-u29-g-short-agreement-n-1 | prov-ca-u29-application-u29-g-short-agreement-n-2 | prov-ca-u29-application-u29-g-short-agreement-n-3
+responseKind=RUSSIAN_TOKEN
+
+### GUIDED_PRACTICE `u29-g-adjective-function-p`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0a592d2a326dd8a0c82968f82049a9620d87b5c4ff14acf5e2c70905c3a17045
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English explanation describes the adjective function in this whole example?
+promptLetter=Поезд старый
+options=A predicate describing the subject. | An attributive adjective modifying the noun.
+answer=A predicate describing the subject.
+feedback=The whole clause says the train is old. The long adjective predicates a property of the train; it is not merely a noun phrase naming an old train. A predicate describing the subject.
+objectiveId=obj-u29-short-adjective
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | An attributive modifier belongs inside the noun phrase; the supplied example instead predicates a property of its subject.
+testedFeature=ADJECTIVE_FUNCTION
+evidenceMode=STATED_APPLICATION
+contrastSetId=u29-g-adjective-function-p
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-ca-u29-application-u29-g-adjective-function-p-1
+distractorSourceIds= | prov-ca-u29-application-u29-g-adjective-function-p-2
+distractorDifference= | An attributive modifier belongs inside the noun phrase; the supplied example instead predicates a property of its subject.
+whyAnswerDemonstratesObjective=The whole clause says the train is old. The long adjective predicates a property of the train; it is not merely a noun phrase naming an old train. A predicate describing the subject.
+contrastMembers=A predicate describing the subject. | An attributive adjective modifying the noun.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u29-application-u29-g-adjective-function-p-0 | prov-ca-u29-application-u29-g-adjective-function-p-1 | prov-ca-u29-application-u29-g-adjective-function-p-2
+responseKind=ENGLISH_CLASSIFICATION
+
+### GUIDED_PRACTICE `u29-g-adjective-function-a`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4d0468c8694d7ec13cbfbe6ad320cd11b9b4d0e56ad41b5e22cfbb4ef8f18812
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English explanation describes the adjective function in this whole example?
+promptLetter=новый карандаш
+options=An attributive adjective modifying the noun. | A predicate describing the subject.
+answer=An attributive adjective modifying the noun.
+feedback=The supplied phrase means new pencil. The long adjective modifies pencil inside a noun phrase; this phrase alone does not assert that the pencil is new in a complete sentence. An attributive adjective modifying the noun.
+objectiveId=obj-u29-short-adjective
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | A predicate would assert a property of a subject in a clause; the supplied example is instead an attributive noun phrase.
+testedFeature=ADJECTIVE_FUNCTION
+evidenceMode=STATED_APPLICATION
+contrastSetId=u29-g-adjective-function-a
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-ca-u29-application-u29-g-adjective-function-a-1
+distractorSourceIds= | prov-ca-u29-application-u29-g-adjective-function-a-2
+distractorDifference= | A predicate would assert a property of a subject in a clause; the supplied example is instead an attributive noun phrase.
+whyAnswerDemonstratesObjective=The supplied phrase means new pencil. The long adjective modifies pencil inside a noun phrase; this phrase alone does not assert that the pencil is new in a complete sentence. An attributive adjective modifying the noun.
+contrastMembers=An attributive adjective modifying the noun. | A predicate describing the subject.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u29-application-u29-g-adjective-function-a-0 | prov-ca-u29-application-u29-g-adjective-function-a-1 | prov-ca-u29-application-u29-g-adjective-function-a-2
 responseKind=ENGLISH_CLASSIFICATION
 
 ### GUIDED_PRACTICE `u29-g-bookish-note-0`
@@ -1878,6 +2243,181 @@ whyAnswerDemonstratesObjective=но́вый means new and is the supplied long a
 contrastMembers=Long adjective form, with case, gender and number inflection. | Short adjective form, used predicatively and not declined for case. | Invariant colour adjective, unchanged for case, gender and number.
 relationKind=STATED_APPLICATION
 relationParticipantIds=prov-ca-u29-adjective-u29-i-adjective-form-2-0 | prov-ca-u29-adjective-u29-i-adjective-form-2-1 | prov-ca-u29-adjective-u29-i-adjective-form-2-2 | prov-ca-u29-adjective-u29-i-adjective-form-2-3
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u29-i-short-agreement-f`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dcebbbf97180e7ff40dadc97cbc0499dd986947a66ff5ca8ef2af9a33f2974e0
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which supplied short adjective meaning new would agree with the head noun of this phrase?
+promptLetter=новая книга
+options=нова́ | но́во | новы́
+answer=нова́
+feedback=нова́ is the supplied feminine singular short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.
+objectiveId=obj-u29-short-adjective
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | но́во is the supplied neuter singular short form, rather than the feminine singular form required by this subject. | новы́ is the supplied plural short form, rather than the feminine singular form required by this subject.
+testedFeature=SHORT_AGREEMENT
+evidenceMode=STATED_APPLICATION
+contrastSetId=u29-i-short-agreement-f
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ca-u29-application-u29-i-short-agreement-f-1
+distractorSourceIds= | prov-ca-u29-application-u29-i-short-agreement-f-2 | prov-ca-u29-application-u29-i-short-agreement-f-3
+distractorDifference= | но́во is the supplied neuter singular short form, rather than the feminine singular form required by this subject. | новы́ is the supplied plural short form, rather than the feminine singular form required by this subject.
+whyAnswerDemonstratesObjective=нова́ is the supplied feminine singular short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.
+contrastMembers=нова́ | но́во | новы́
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u29-application-u29-i-short-agreement-f-0 | prov-ca-u29-application-u29-i-short-agreement-f-1 | prov-ca-u29-application-u29-i-short-agreement-f-2 | prov-ca-u29-application-u29-i-short-agreement-f-3
+responseKind=RUSSIAN_TOKEN
+
+### INDEPENDENT_CHECK `u29-i-short-agreement-n`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c2e0ab875074dcd70b52138b944e36c517787e3a49da9374375fc282edf13385
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which supplied short adjective meaning new would agree with the head noun of this phrase?
+promptLetter=новое письмо
+options=но́во | нова́ | нов
+answer=но́во
+feedback=но́во is the supplied neuter singular short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.
+objectiveId=obj-u29-short-adjective
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | нова́ is the supplied feminine singular short form, rather than the neuter singular form required by this subject. | нов is the supplied masculine singular short form, rather than the neuter singular form required by this subject.
+testedFeature=SHORT_AGREEMENT
+evidenceMode=STATED_APPLICATION
+contrastSetId=u29-i-short-agreement-n
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ca-u29-application-u29-i-short-agreement-n-1
+distractorSourceIds= | prov-ca-u29-application-u29-i-short-agreement-n-2 | prov-ca-u29-application-u29-i-short-agreement-n-3
+distractorDifference= | нова́ is the supplied feminine singular short form, rather than the neuter singular form required by this subject. | нов is the supplied masculine singular short form, rather than the neuter singular form required by this subject.
+whyAnswerDemonstratesObjective=но́во is the supplied neuter singular short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.
+contrastMembers=но́во | нова́ | нов
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u29-application-u29-i-short-agreement-n-0 | prov-ca-u29-application-u29-i-short-agreement-n-1 | prov-ca-u29-application-u29-i-short-agreement-n-2 | prov-ca-u29-application-u29-i-short-agreement-n-3
+responseKind=RUSSIAN_TOKEN
+
+### INDEPENDENT_CHECK `u29-i-short-agreement-pl`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 84d6a351942f178facf482c860c498115e4fc9dbbcaee15a6e80ccb568d92e15
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which supplied short adjective meaning new would agree with the head noun of this phrase?
+promptLetter=новые книги
+options=новы́ | нов | нова́
+answer=новы́
+feedback=новы́ is the supplied plural short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.
+objectiveId=obj-u29-short-adjective
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | нов is the supplied masculine singular short form, rather than the plural form required by this subject. | нова́ is the supplied feminine singular short form, rather than the plural form required by this subject.
+testedFeature=SHORT_AGREEMENT
+evidenceMode=STATED_APPLICATION
+contrastSetId=u29-i-short-agreement-pl
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ca-u29-application-u29-i-short-agreement-pl-1
+distractorSourceIds= | prov-ca-u29-application-u29-i-short-agreement-pl-2 | prov-ca-u29-application-u29-i-short-agreement-pl-3
+distractorDifference= | нов is the supplied masculine singular short form, rather than the plural form required by this subject. | нова́ is the supplied feminine singular short form, rather than the plural form required by this subject.
+whyAnswerDemonstratesObjective=новы́ is the supplied plural short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.
+contrastMembers=новы́ | нов | нова́
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u29-application-u29-i-short-agreement-pl-0 | prov-ca-u29-application-u29-i-short-agreement-pl-1 | prov-ca-u29-application-u29-i-short-agreement-pl-2 | prov-ca-u29-application-u29-i-short-agreement-pl-3
+responseKind=RUSSIAN_TOKEN
+
+### INDEPENDENT_CHECK `u29-i-adjective-function-p`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 19fa15af15b455564e0b1780a84e0cc0547531a8789edd2a967f19d56b9523cc
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English explanation describes the adjective function in this whole example?
+promptLetter=Студент новый
+options=A predicate describing the subject. | An attributive adjective modifying the noun.
+answer=A predicate describing the subject.
+feedback=The whole clause says the student is new. The long adjective predicates a property of the student; long form does not automatically mean attributive function. There is no overt present copula in this supplied clause. A predicate describing the subject.
+objectiveId=obj-u29-short-adjective
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | An attributive modifier belongs inside the noun phrase; the supplied example instead predicates a property of its subject.
+testedFeature=ADJECTIVE_FUNCTION
+evidenceMode=STATED_APPLICATION
+contrastSetId=u29-i-adjective-function-p
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ca-u29-application-u29-i-adjective-function-p-1
+distractorSourceIds= | prov-ca-u29-application-u29-i-adjective-function-p-2
+distractorDifference= | An attributive modifier belongs inside the noun phrase; the supplied example instead predicates a property of its subject.
+whyAnswerDemonstratesObjective=The whole clause says the student is new. The long adjective predicates a property of the student; long form does not automatically mean attributive function. There is no overt present copula in this supplied clause. A predicate describing the subject.
+contrastMembers=A predicate describing the subject. | An attributive adjective modifying the noun.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u29-application-u29-i-adjective-function-p-0 | prov-ca-u29-application-u29-i-adjective-function-p-1 | prov-ca-u29-application-u29-i-adjective-function-p-2
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u29-i-adjective-function-a`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 35fc838a36115b6dbb79fc3d6c6f42bf42755d22317add0dedd8f675342cfe0d
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English explanation describes the adjective function in this whole example?
+promptLetter=новое письмо
+options=An attributive adjective modifying the noun. | A predicate describing the subject.
+answer=An attributive adjective modifying the noun.
+feedback=The supplied phrase means new letter. The long adjective modifies letter inside a noun phrase. It is not a complete assertion that the letter is new. This interpretation uses the whole source example and its meaning, not a universal word-position rule. An attributive adjective modifying the noun.
+objectiveId=obj-u29-short-adjective
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | A predicate would assert a property of a subject in a clause; the supplied example is instead an attributive noun phrase.
+testedFeature=ADJECTIVE_FUNCTION
+evidenceMode=STATED_APPLICATION
+contrastSetId=u29-i-adjective-function-a
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ca-u29-application-u29-i-adjective-function-a-1
+distractorSourceIds= | prov-ca-u29-application-u29-i-adjective-function-a-2
+distractorDifference= | A predicate would assert a property of a subject in a clause; the supplied example is instead an attributive noun phrase.
+whyAnswerDemonstratesObjective=The supplied phrase means new letter. The long adjective modifies letter inside a noun phrase. It is not a complete assertion that the letter is new. This interpretation uses the whole source example and its meaning, not a universal word-position rule. An attributive adjective modifying the noun.
+contrastMembers=An attributive adjective modifying the noun. | A predicate describing the subject.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u29-application-u29-i-adjective-function-a-0 | prov-ca-u29-application-u29-i-adjective-function-a-1 | prov-ca-u29-application-u29-i-adjective-function-a-2
 responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u29-i-bookish-note-1`
@@ -3844,6 +4384,2280 @@ attribution=Russian Companion content-audit research synthesis, content-audit-20
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
 sourceHash=7e1932bc1f058499a50b18b9e9974db4ebf857594964a548f5e4a1bcb7d624d6
 contentHash=a2b78c3937065cd032cdea8e55fb579ec60252005cfa33031a45f24d42d7e77f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-g-adjective-function-a-0`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a14ced6a738f3d6acee4b61130a64c6a4c42b343a19b9d7167cf5e9ff1766b1c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-g-adjective-function-a
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+The supplied phrase means new pencil. The long adjective modifies pencil inside a noun phrase; this phrase alone does not assert that the pencil is new in a complete sentence. An attributive adjective modifying the noun.
+Tuple-v1:tuple-v1:1;27:новый карандаш44:An attributive adjective modifying the noun.1;35:A predicate describing the subject.
+shippedText=новый карандаш
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=edb38fef41c45fa4670017d59b638788840d16effb462d12a1606b6f00d72e71
+contentHash=eab5644710755930b3dea97091baaf126cfeb54ec89ddaf93aa5def60dab5c36
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-g-adjective-function-a-1`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5e1b0a01fc9a1f62f054efda3f56ae9c08262a853925fe38ef764c23549edac7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-g-adjective-function-a
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+The supplied phrase means new pencil. The long adjective modifies pencil inside a noun phrase; this phrase alone does not assert that the pencil is new in a complete sentence. An attributive adjective modifying the noun.
+Tuple-v1:tuple-v1:1;27:новый карандаш44:An attributive adjective modifying the noun.1;35:A predicate describing the subject.
+shippedText=An attributive adjective modifying the noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=edb38fef41c45fa4670017d59b638788840d16effb462d12a1606b6f00d72e71
+contentHash=c18e06316175dfaa5f4ea35b2d36b3b0d301378a73e4eef8aa4c88848b837642
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-g-adjective-function-a-2`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0523bb9e9a8de23f3cf96e2d99d2354faf02b34e34fa440c5ad0f1718c365aae
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-g-adjective-function-a
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+The supplied phrase means new pencil. The long adjective modifies pencil inside a noun phrase; this phrase alone does not assert that the pencil is new in a complete sentence. An attributive adjective modifying the noun.
+Tuple-v1:tuple-v1:1;27:новый карандаш44:An attributive adjective modifying the noun.1;35:A predicate describing the subject.
+shippedText=A predicate describing the subject.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=edb38fef41c45fa4670017d59b638788840d16effb462d12a1606b6f00d72e71
+contentHash=78cfbf12c052d11c01c6e697ca0372924569b0c423a31caf3ed48295b92761d7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-g-adjective-function-a-feedback`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d99d9c53cf2706d8ba56aa5e95a8f121808fc75aa0d614bd953b6aa2d50539c9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective-application:u29-g-adjective-function-a-feedback
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+The supplied phrase means new pencil. The long adjective modifies pencil inside a noun phrase; this phrase alone does not assert that the pencil is new in a complete sentence. An attributive adjective modifying the noun.
+shippedText=The supplied phrase means new pencil. The long adjective modifies pencil inside a noun phrase; this phrase alone does not assert that the pencil is new in a complete sentence. An attributive adjective modifying the noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=45f3fb4962b2bcd40bc48c079ce4c5c0da170363133333907d3fa833bcd2c893
+contentHash=7c97893793e281252612f7456b999e2a6db7e112d6cbc956da019e1272bf427e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-g-adjective-function-a-prompt`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bcd265aa891caad922027a33d36b45170e25a43f6fbfd914477ecdb66226c347
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective-application:u29-g-adjective-function-a-prompt
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Which English explanation describes the adjective function in this whole example?
+shippedText=Which English explanation describes the adjective function in this whole example?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2fc728591aa41f57d6aa471a65bbbe4f95058b661567e6a71eb612e9a79e55b6
+contentHash=6435b159c1f8b334cd1d66dd0b258b093d162fd4d9f075ddb70fa545afde3553
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-g-adjective-function-a-rationale-1`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4c47a677beda8408db578523c4b43d278e004d8d4579217cf0c3309bb4638857
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective-application:u29-g-adjective-function-a-rationale-1
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+A predicate would assert a property of a subject in a clause; the supplied example is instead an attributive noun phrase.
+shippedText=A predicate would assert a property of a subject in a clause; the supplied example is instead an attributive noun phrase.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7445c7a407768e9a75caed38d5623280a9f7aaeac2a1389ba2a806eeb8a1924b
+contentHash=1dd48badd8d1c1d6332dc66f628ab73a3126ec2105a47091c9171fafb56bf5d9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-g-adjective-function-p-0`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0ae7e1a4e4e65b044dafea390c9ee02cd787e34808acdad06a2893b3f935a93d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-g-adjective-function-p
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+The whole clause says the train is old. The long adjective predicates a property of the train; it is not merely a noun phrase naming an old train. A predicate describing the subject.
+Tuple-v1:tuple-v1:1;23:Поезд старый35:A predicate describing the subject.1;44:An attributive adjective modifying the noun.
+shippedText=Поезд старый
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=75745398f43c89528a63cdda02e51c3e205499761f34e60f10ce80aebb5bb103
+contentHash=593100e07231bc9baa2d67875b75a5ce1d54a6bc15287a3edcebcf8bd0350426
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-g-adjective-function-p-1`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 938523d6af37f0da3cda9bc39d6d7702bfb2c9d4b96201ee072e6eb7a7035c02
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-g-adjective-function-p
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+The whole clause says the train is old. The long adjective predicates a property of the train; it is not merely a noun phrase naming an old train. A predicate describing the subject.
+Tuple-v1:tuple-v1:1;23:Поезд старый35:A predicate describing the subject.1;44:An attributive adjective modifying the noun.
+shippedText=A predicate describing the subject.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=75745398f43c89528a63cdda02e51c3e205499761f34e60f10ce80aebb5bb103
+contentHash=78cfbf12c052d11c01c6e697ca0372924569b0c423a31caf3ed48295b92761d7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-g-adjective-function-p-2`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3d8e0e19b8d0c523b6727aadd345a42d3171b8f5fed8a5a5154244d2f872732b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-g-adjective-function-p
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+The whole clause says the train is old. The long adjective predicates a property of the train; it is not merely a noun phrase naming an old train. A predicate describing the subject.
+Tuple-v1:tuple-v1:1;23:Поезд старый35:A predicate describing the subject.1;44:An attributive adjective modifying the noun.
+shippedText=An attributive adjective modifying the noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=75745398f43c89528a63cdda02e51c3e205499761f34e60f10ce80aebb5bb103
+contentHash=c18e06316175dfaa5f4ea35b2d36b3b0d301378a73e4eef8aa4c88848b837642
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-g-adjective-function-p-feedback`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2e25f3f8ecb488217ed4ef081cba6f6392ce8224050207f4c423d9f5895c1435
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective-application:u29-g-adjective-function-p-feedback
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+The whole clause says the train is old. The long adjective predicates a property of the train; it is not merely a noun phrase naming an old train. A predicate describing the subject.
+shippedText=The whole clause says the train is old. The long adjective predicates a property of the train; it is not merely a noun phrase naming an old train. A predicate describing the subject.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=427e3e26cd8134b516e75e533d35249a4398bc8ad460ec8e272ab330f6643bc3
+contentHash=4d748fcdcdb0e6e2a7e90eb6fba7e6d584d9921b07ab45d37cb058d32ed5f0bd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-g-adjective-function-p-prompt`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 65c46e542ca43f8852b3d5a21efb656ac1bc01dd081548a8dda5ef2a63429c27
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective-application:u29-g-adjective-function-p-prompt
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Which English explanation describes the adjective function in this whole example?
+shippedText=Which English explanation describes the adjective function in this whole example?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2fc728591aa41f57d6aa471a65bbbe4f95058b661567e6a71eb612e9a79e55b6
+contentHash=6435b159c1f8b334cd1d66dd0b258b093d162fd4d9f075ddb70fa545afde3553
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-g-adjective-function-p-rationale-1`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1d4a27c0a0357fe854bc3faf83660a04673b5babfe99599daa3f6cb47040e5c6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective-application:u29-g-adjective-function-p-rationale-1
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+An attributive modifier belongs inside the noun phrase; the supplied example instead predicates a property of its subject.
+shippedText=An attributive modifier belongs inside the noun phrase; the supplied example instead predicates a property of its subject.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cc5f360e0cbfc5836bba171adf3412beccada488d148ace6bf999169bb6e1f22
+contentHash=ad98666a6d631da21e468d68d137389c357355fbedd9fcfa7d6aea6dcfdd67ed
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-g-short-agreement-m-0`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2b91be9f9e3a82648be397650adb1503bf5b1ba2200e03c2e47cb19aed878f8f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-g-short-agreement-m
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+нов is the supplied masculine singular short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.
+Tuple-v1:tuple-v1:1;79:One masculine singular subject is described as new. Choose the short adjective.6:нов2;10:нова́10:но́во
+shippedText=One masculine singular subject is described as new. Choose the short adjective.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9d0751422e85c5756cdad2f417758817492117f7e5fea719be22d6fdcf27edec
+contentHash=e860840ab8fcd64fc20daf9938a5db53c140560c2aa587a211908944386369c2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-g-short-agreement-m-1`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bf9b9fd44559d77995a19c6b579225b3f1623e11746154b151eefa128146ec85
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-g-short-agreement-m
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+нов is the supplied masculine singular short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.
+Tuple-v1:tuple-v1:1;79:One masculine singular subject is described as new. Choose the short adjective.6:нов2;10:нова́10:но́во
+shippedText=нов
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9d0751422e85c5756cdad2f417758817492117f7e5fea719be22d6fdcf27edec
+contentHash=3ad3794cbd24fc246026b4f55ac401704eaee0758a8201a56f17336a32321745
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-g-short-agreement-m-2`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 921f80aa3b39618745db7939ebaed7a62d12a9ae3004394cd231f812156b45bd
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-g-short-agreement-m
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+нов is the supplied masculine singular short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.
+Tuple-v1:tuple-v1:1;79:One masculine singular subject is described as new. Choose the short adjective.6:нов2;10:нова́10:но́во
+shippedText=нова́
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9d0751422e85c5756cdad2f417758817492117f7e5fea719be22d6fdcf27edec
+contentHash=9b10fdaf815203aba70c613d48620e142e13831f7d73cc2983a9c11f3f2c7608
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-g-short-agreement-m-3`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 065e593cbc8da621434ffe7a905c9d108fb5cc9e45778932d11a68623a09e7e4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-g-short-agreement-m
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+нов is the supplied masculine singular short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.
+Tuple-v1:tuple-v1:1;79:One masculine singular subject is described as new. Choose the short adjective.6:нов2;10:нова́10:но́во
+shippedText=но́во
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9d0751422e85c5756cdad2f417758817492117f7e5fea719be22d6fdcf27edec
+contentHash=2b8b4473418aab42c25e71f53df1ebe3dff538554905969a70ac57e810f6e374
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-g-short-agreement-m-feedback`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 13da41d7d8960b03015c7b1e9bc0f2ed98ab691f68846d777c0b8e10e87e2277
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective-application:u29-g-short-agreement-m-feedback
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+нов is the supplied masculine singular short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.
+shippedText=нов is the supplied masculine singular short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4f144fcfde5fef4ce41df6337e9582aec48696a4b7d4c9808931feb47914c0a6
+contentHash=32ffe5e3017805ba5ba6736779ef49d3603c7d7793eb4b2ef1810b70c2f33978
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-g-short-agreement-m-prompt`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4badc0d0886f295f3ccd2c66e68c6598b8fcd8f8bafe0041dcaac2c43e084e81
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective-application:u29-g-short-agreement-m-prompt
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Which supplied short adjective agrees with the described subject?
+shippedText=Which supplied short adjective agrees with the described subject?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1a53dc1575595651264760e8664e2f615ac30523e2148336553a2c4bbe26c96c
+contentHash=d32576f4440f6b2b457f9bdf43341ac747014f38c8b1b5173a743b9275ccd40a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-g-short-agreement-m-rationale-1`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5c0bac3fd645584046ff17efbdf323350a0a17c6a45f8e5091c589697ce7455f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective-application:u29-g-short-agreement-m-rationale-1
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+нова́ is the supplied feminine singular short form, rather than the masculine singular form required by this subject.
+shippedText=нова́ is the supplied feminine singular short form, rather than the masculine singular form required by this subject.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e34d9344402ff616e821aa92680ea03264e20865eb705023ae45875275404238
+contentHash=23de89b00467dcd178470a0ac7163f3575acb48df7391dc4ce99f0dd193099e0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-g-short-agreement-m-rationale-2`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: da2f0c3236eda7249f212d02668de2342d9d5abd6accd39b706b579db9300017
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective-application:u29-g-short-agreement-m-rationale-2
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+но́во is the supplied neuter singular short form, rather than the masculine singular form required by this subject.
+shippedText=но́во is the supplied neuter singular short form, rather than the masculine singular form required by this subject.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fcb2098e43d7d2a6ef0a3abab995260af8ab50164c1bbb92d410ac3573f71ce6
+contentHash=4249d541307322d62d03d556ae119ea44b8fda612886a059f8ab040cfa8f5476
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-g-short-agreement-n-0`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ac0d0de324e5209cbdd601746c9994a129bb6657217571afb24c3704c2a23a1a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-g-short-agreement-n
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+но́во is the supplied neuter singular short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.
+Tuple-v1:tuple-v1:1;76:One neuter singular subject is described as new. Choose the short adjective.10:но́во2;10:новы́10:нова́
+shippedText=One neuter singular subject is described as new. Choose the short adjective.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=29b6ccb9736e8cbc111fe3631bcef9b095594fa526e16a71c0c619ff09d6c452
+contentHash=e98c97397b93193f34ded7c90c3522d722e3e046891678c417d76be2cef8eb6b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-g-short-agreement-n-1`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f1012df6939597089d94db4d08b507df938f8b3ee4d21f0e7ae779b85cfa5cf2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-g-short-agreement-n
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+но́во is the supplied neuter singular short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.
+Tuple-v1:tuple-v1:1;76:One neuter singular subject is described as new. Choose the short adjective.10:но́во2;10:новы́10:нова́
+shippedText=но́во
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=29b6ccb9736e8cbc111fe3631bcef9b095594fa526e16a71c0c619ff09d6c452
+contentHash=2b8b4473418aab42c25e71f53df1ebe3dff538554905969a70ac57e810f6e374
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-g-short-agreement-n-2`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 450ba21618b35eb80b9d577322dea10dc3d424ab78980b43f451d85ab97e93d5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-g-short-agreement-n
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+но́во is the supplied neuter singular short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.
+Tuple-v1:tuple-v1:1;76:One neuter singular subject is described as new. Choose the short adjective.10:но́во2;10:новы́10:нова́
+shippedText=новы́
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=29b6ccb9736e8cbc111fe3631bcef9b095594fa526e16a71c0c619ff09d6c452
+contentHash=0e319326a69f4d8a1e0e8955726894928e4b0477628262866ed97f85717c5b18
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-g-short-agreement-n-3`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cb325ba3fada2afc2b507d90ed9142f2c13fd4df0c4d0f3fa6819c1c2d6c7a4e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-g-short-agreement-n
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+но́во is the supplied neuter singular short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.
+Tuple-v1:tuple-v1:1;76:One neuter singular subject is described as new. Choose the short adjective.10:но́во2;10:новы́10:нова́
+shippedText=нова́
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=29b6ccb9736e8cbc111fe3631bcef9b095594fa526e16a71c0c619ff09d6c452
+contentHash=9b10fdaf815203aba70c613d48620e142e13831f7d73cc2983a9c11f3f2c7608
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-g-short-agreement-n-feedback`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 60453318e585684602aba00df3bc0bf6dadcdbf445a9f34f7e60629ebff54204
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective-application:u29-g-short-agreement-n-feedback
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+но́во is the supplied neuter singular short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.
+shippedText=но́во is the supplied neuter singular short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5018f53b1457afe430d1652eb4bd7052d86368f05f0c30335121b69ac4477fa5
+contentHash=fff56936c9e7d43c84cd24b8f6587492c816ea94f3d0a02202709ef6135fa14c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-g-short-agreement-n-prompt`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ac37edc449cc17deb167ca1ae0f8496b1b97aee9a29eb76043f711ab6ec5c21c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective-application:u29-g-short-agreement-n-prompt
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Which supplied short adjective agrees with the described subject?
+shippedText=Which supplied short adjective agrees with the described subject?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1a53dc1575595651264760e8664e2f615ac30523e2148336553a2c4bbe26c96c
+contentHash=d32576f4440f6b2b457f9bdf43341ac747014f38c8b1b5173a743b9275ccd40a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-g-short-agreement-n-rationale-1`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 14ba1aab9675b85ddc889f8669da7a00af11ebb32472e6e4473ebb88558ca537
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective-application:u29-g-short-agreement-n-rationale-1
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+новы́ is the supplied plural short form, rather than the neuter singular form required by this subject.
+shippedText=новы́ is the supplied plural short form, rather than the neuter singular form required by this subject.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=58e3516ea062136edcc1adea1f078189cfaccff3762e1d67964c7ea4985db7c1
+contentHash=da638b603b23b4dc63e10559172d8450311927012a628ba070ff1de0f5ca1335
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-g-short-agreement-n-rationale-2`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3ec3f09fc268647bf624e6afde1faa9889d410d9ef9f58c8fcbc54afc048a878
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective-application:u29-g-short-agreement-n-rationale-2
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+нова́ is the supplied feminine singular short form, rather than the neuter singular form required by this subject.
+shippedText=нова́ is the supplied feminine singular short form, rather than the neuter singular form required by this subject.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f119656828a2202b8d1c9bca407ea6f81dc29352cfbe592abf079f69611fed78
+contentHash=c9410fb673a007023b561394ce3b334039c2d40406dad77860803280db0cc061
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-i-adjective-function-a-0`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a3bab2d9a6e9a3e5ac8d384be7e45f9d7e11a2dbc2b70e4622e398b94f751719
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-i-adjective-function-a
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+The supplied phrase means new letter. The long adjective modifies letter inside a noun phrase. It is not a complete assertion that the letter is new. This interpretation uses the whole source example and its meaning, not a universal word-position rule. An attributive adjective modifying the noun.
+Tuple-v1:tuple-v1:1;23:новое письмо44:An attributive adjective modifying the noun.1;35:A predicate describing the subject.
+shippedText=новое письмо
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7911da4d3d2801aff276a748857ad36f62c908688c7acfadda1d3e3f9eb4100b
+contentHash=a88335f05fa40c3ccc368fc81744c9256ff757341b06abdc61b76b6ed5174855
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-i-adjective-function-a-1`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cb40c9810d9c422feb4f875019492d6a17781abb416b03b18d39f02a44f533b3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-i-adjective-function-a
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+The supplied phrase means new letter. The long adjective modifies letter inside a noun phrase. It is not a complete assertion that the letter is new. This interpretation uses the whole source example and its meaning, not a universal word-position rule. An attributive adjective modifying the noun.
+Tuple-v1:tuple-v1:1;23:новое письмо44:An attributive adjective modifying the noun.1;35:A predicate describing the subject.
+shippedText=An attributive adjective modifying the noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7911da4d3d2801aff276a748857ad36f62c908688c7acfadda1d3e3f9eb4100b
+contentHash=c18e06316175dfaa5f4ea35b2d36b3b0d301378a73e4eef8aa4c88848b837642
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-i-adjective-function-a-2`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 92f91d1296609f14dba9b492632569243e3019ef9695b720270b12f99cf13f75
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-i-adjective-function-a
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+The supplied phrase means new letter. The long adjective modifies letter inside a noun phrase. It is not a complete assertion that the letter is new. This interpretation uses the whole source example and its meaning, not a universal word-position rule. An attributive adjective modifying the noun.
+Tuple-v1:tuple-v1:1;23:новое письмо44:An attributive adjective modifying the noun.1;35:A predicate describing the subject.
+shippedText=A predicate describing the subject.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7911da4d3d2801aff276a748857ad36f62c908688c7acfadda1d3e3f9eb4100b
+contentHash=78cfbf12c052d11c01c6e697ca0372924569b0c423a31caf3ed48295b92761d7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-i-adjective-function-a-feedback`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 906e463d2d5317612ec86a1a741ccad7dfdbf3b39a049dfceba4d120a016bbc1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective-application:u29-i-adjective-function-a-feedback
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+The supplied phrase means new letter. The long adjective modifies letter inside a noun phrase. It is not a complete assertion that the letter is new. This interpretation uses the whole source example and its meaning, not a universal word-position rule. An attributive adjective modifying the noun.
+shippedText=The supplied phrase means new letter. The long adjective modifies letter inside a noun phrase. It is not a complete assertion that the letter is new. This interpretation uses the whole source example and its meaning, not a universal word-position rule. An attributive adjective modifying the noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cb320bcd1acfacac68234e817397776798a2611b4b0abf2d43b59d272ca84425
+contentHash=b7821818359ab859e1646b680658c2dba2ca236546e30bad32443cdd3a8867dc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-i-adjective-function-a-prompt`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5b73f6ae6f10bc00d4f1da99912e92d2cc85b5ba5a98704769f7171f2a49a4a3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective-application:u29-i-adjective-function-a-prompt
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Which English explanation describes the adjective function in this whole example?
+shippedText=Which English explanation describes the adjective function in this whole example?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2fc728591aa41f57d6aa471a65bbbe4f95058b661567e6a71eb612e9a79e55b6
+contentHash=6435b159c1f8b334cd1d66dd0b258b093d162fd4d9f075ddb70fa545afde3553
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-i-adjective-function-a-rationale-1`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: aa09b08f5e105fd39c0521ba2d9514084c40bd7f8bc9751fdd85346a087feafd
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective-application:u29-i-adjective-function-a-rationale-1
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+A predicate would assert a property of a subject in a clause; the supplied example is instead an attributive noun phrase.
+shippedText=A predicate would assert a property of a subject in a clause; the supplied example is instead an attributive noun phrase.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7445c7a407768e9a75caed38d5623280a9f7aaeac2a1389ba2a806eeb8a1924b
+contentHash=1dd48badd8d1c1d6332dc66f628ab73a3126ec2105a47091c9171fafb56bf5d9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-i-adjective-function-p-0`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 49002f36d899c54c7cd018c7abf2095fc6224af447a0ac3ca470052053a47e27
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-i-adjective-function-p
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+The whole clause says the student is new. The long adjective predicates a property of the student; long form does not automatically mean attributive function. There is no overt present copula in this supplied clause. A predicate describing the subject.
+Tuple-v1:tuple-v1:1;25:Студент новый35:A predicate describing the subject.1;44:An attributive adjective modifying the noun.
+shippedText=Студент новый
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=54aefc16d00f1d02086708f5c4179c0dc32246995112091d15e5f2949a147df8
+contentHash=99f3043523af00251b4438628b02f31f267556c001102d87dd914250ee638561
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-i-adjective-function-p-1`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 245fe89cfae4464f645668826e78f13346d4b06e1c0824af281a2feb1a550c79
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-i-adjective-function-p
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+The whole clause says the student is new. The long adjective predicates a property of the student; long form does not automatically mean attributive function. There is no overt present copula in this supplied clause. A predicate describing the subject.
+Tuple-v1:tuple-v1:1;25:Студент новый35:A predicate describing the subject.1;44:An attributive adjective modifying the noun.
+shippedText=A predicate describing the subject.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=54aefc16d00f1d02086708f5c4179c0dc32246995112091d15e5f2949a147df8
+contentHash=78cfbf12c052d11c01c6e697ca0372924569b0c423a31caf3ed48295b92761d7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-i-adjective-function-p-2`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6117d90e0f0986eabb8cfedaa0cb1df9965a82f67c25bc47ec3234f7a3f97647
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-i-adjective-function-p
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+The whole clause says the student is new. The long adjective predicates a property of the student; long form does not automatically mean attributive function. There is no overt present copula in this supplied clause. A predicate describing the subject.
+Tuple-v1:tuple-v1:1;25:Студент новый35:A predicate describing the subject.1;44:An attributive adjective modifying the noun.
+shippedText=An attributive adjective modifying the noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=54aefc16d00f1d02086708f5c4179c0dc32246995112091d15e5f2949a147df8
+contentHash=c18e06316175dfaa5f4ea35b2d36b3b0d301378a73e4eef8aa4c88848b837642
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-i-adjective-function-p-feedback`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5607f23ed99a47c8c610bae145be70393e772784544a88f42c1c564c2a5e6787
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective-application:u29-i-adjective-function-p-feedback
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+The whole clause says the student is new. The long adjective predicates a property of the student; long form does not automatically mean attributive function. There is no overt present copula in this supplied clause. A predicate describing the subject.
+shippedText=The whole clause says the student is new. The long adjective predicates a property of the student; long form does not automatically mean attributive function. There is no overt present copula in this supplied clause. A predicate describing the subject.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5cf5a770a6fca9203a3e28219e95f9fc20dd529f037e01f86161b79779889f16
+contentHash=a178903cce4bf6a4d89517a343eec6fd7e01b73ee37b8ed8e54bfe2ebb2eafd5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-i-adjective-function-p-prompt`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5d198163cb6385eb4bcc07462892cd8bfc146dc115d24c7274f192b8d10c9ebc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective-application:u29-i-adjective-function-p-prompt
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Which English explanation describes the adjective function in this whole example?
+shippedText=Which English explanation describes the adjective function in this whole example?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2fc728591aa41f57d6aa471a65bbbe4f95058b661567e6a71eb612e9a79e55b6
+contentHash=6435b159c1f8b334cd1d66dd0b258b093d162fd4d9f075ddb70fa545afde3553
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-i-adjective-function-p-rationale-1`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8b78cbc2e2b4e86e57e07235294d0703c4c684a2982831c911ee3c5728e541b1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective-application:u29-i-adjective-function-p-rationale-1
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+An attributive modifier belongs inside the noun phrase; the supplied example instead predicates a property of its subject.
+shippedText=An attributive modifier belongs inside the noun phrase; the supplied example instead predicates a property of its subject.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cc5f360e0cbfc5836bba171adf3412beccada488d148ace6bf999169bb6e1f22
+contentHash=ad98666a6d631da21e468d68d137389c357355fbedd9fcfa7d6aea6dcfdd67ed
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-f-0`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 933c79ee39df1d77c86521eb7bb3dd6c195550c7f0e73514614fc4dc707d1372
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-i-short-agreement-f
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+нова́ is the supplied feminine singular short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.
+Tuple-v1:tuple-v1:1;21:новая книга10:нова́2;10:но́во10:новы́
+shippedText=новая книга
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1d3e78947dcd18ec35de56ea459f502f4a5f0f1b1c9fea03ef8f0c03a2d1603b
+contentHash=c6f43008acbb4421a75f647056be412f0665aa5160060f5bf049f32a9b661296
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-f-1`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 81dc09dea3a20d905c3badd42f4ce36fdf3cfabeff29c44e3cbc81e9ec98985b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-i-short-agreement-f
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+нова́ is the supplied feminine singular short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.
+Tuple-v1:tuple-v1:1;21:новая книга10:нова́2;10:но́во10:новы́
+shippedText=нова́
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1d3e78947dcd18ec35de56ea459f502f4a5f0f1b1c9fea03ef8f0c03a2d1603b
+contentHash=9b10fdaf815203aba70c613d48620e142e13831f7d73cc2983a9c11f3f2c7608
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-f-2`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 76396f6c7307311e37c30e9e34ee137c55676f32b43389b6592fb1b38ad0a1f3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-i-short-agreement-f
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+нова́ is the supplied feminine singular short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.
+Tuple-v1:tuple-v1:1;21:новая книга10:нова́2;10:но́во10:новы́
+shippedText=но́во
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1d3e78947dcd18ec35de56ea459f502f4a5f0f1b1c9fea03ef8f0c03a2d1603b
+contentHash=2b8b4473418aab42c25e71f53df1ebe3dff538554905969a70ac57e810f6e374
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-f-3`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: af033e837f77ca40feb8da0ad612b7a6fd2120e0c237b27c01ee845b78f5f062
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-i-short-agreement-f
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+нова́ is the supplied feminine singular short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.
+Tuple-v1:tuple-v1:1;21:новая книга10:нова́2;10:но́во10:новы́
+shippedText=новы́
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1d3e78947dcd18ec35de56ea459f502f4a5f0f1b1c9fea03ef8f0c03a2d1603b
+contentHash=0e319326a69f4d8a1e0e8955726894928e4b0477628262866ed97f85717c5b18
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-f-feedback`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b6606f86238fd6c37dd3d96d516400df3b15a1e16a3dfbe20c0d8a569cf81073
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective-application:u29-i-short-agreement-f-feedback
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+нова́ is the supplied feminine singular short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.
+shippedText=нова́ is the supplied feminine singular short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=365a8882b9549af5883700cc1c990abe8ca62d95519b9dc95c8490015cc636e1
+contentHash=7568b309ea9855063ed92ab13d74308550b6bef769aee399fc84df7e4e4a1f78
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-f-prompt`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 64703930a4b204b9fb3c279bd4f2ade58ad3d0a823b9bb801ff610349f83bc3b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective-application:u29-i-short-agreement-f-prompt
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Which supplied short adjective meaning new would agree with the head noun of this phrase?
+shippedText=Which supplied short adjective meaning new would agree with the head noun of this phrase?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f8b39a35e9a1ceae3687a9bccb0d97c835a6c4a349b6d7a2629551253735336c
+contentHash=ecd4da2884bd481be1db67229e73d34ddc2bb08220d489b8e3470a647f0f2343
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-f-rationale-1`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8b793d2ed276aa219ac29593ab96f24a26ea7489df881852d2d2cfa4deb5af27
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective-application:u29-i-short-agreement-f-rationale-1
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+но́во is the supplied neuter singular short form, rather than the feminine singular form required by this subject.
+shippedText=но́во is the supplied neuter singular short form, rather than the feminine singular form required by this subject.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5430277505e2d6d64e19e412572e7d36881ad679e25866220921943cf240a37f
+contentHash=7b6a31a0c2ce2d04df816169978de26f104e114560c5d83b386ff97c6c1965cc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-f-rationale-2`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6c51647a960f412d6f8163c18cbad198631e76347292892d289b52c44bf1aa60
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective-application:u29-i-short-agreement-f-rationale-2
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+новы́ is the supplied plural short form, rather than the feminine singular form required by this subject.
+shippedText=новы́ is the supplied plural short form, rather than the feminine singular form required by this subject.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e93c586a4ecbcd5ec3f1025a045c29369b76e3b5993be5ff3f00bae30f98d9c5
+contentHash=5960cfcbd0921dc06908ca6d75e32672215ca3efd415ee2cf77e0a072abcacc2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-n-0`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 13ff49fc0b5ac234bdebd881ebabd81e96f1044e581b0042d0ebb58ce5de25dc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-i-short-agreement-n
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+но́во is the supplied neuter singular short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.
+Tuple-v1:tuple-v1:1;23:новое письмо10:но́во2;10:нова́6:нов
+shippedText=новое письмо
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f53fd1a191feee4a5d80cd25ff8523396ddb6fd8b1943b3688c0d3eaa80e38b0
+contentHash=a88335f05fa40c3ccc368fc81744c9256ff757341b06abdc61b76b6ed5174855
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-n-1`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6e9389840d55bd9747a1436520e7be5c179cd4d76c4e7fde2eebc713fadd4228
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-i-short-agreement-n
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+но́во is the supplied neuter singular short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.
+Tuple-v1:tuple-v1:1;23:новое письмо10:но́во2;10:нова́6:нов
+shippedText=но́во
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f53fd1a191feee4a5d80cd25ff8523396ddb6fd8b1943b3688c0d3eaa80e38b0
+contentHash=2b8b4473418aab42c25e71f53df1ebe3dff538554905969a70ac57e810f6e374
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-n-2`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bb75550b86a9aeae2413fd1baf93a720f319bd77555acc5d765fb697fde63012
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-i-short-agreement-n
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+но́во is the supplied neuter singular short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.
+Tuple-v1:tuple-v1:1;23:новое письмо10:но́во2;10:нова́6:нов
+shippedText=нова́
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f53fd1a191feee4a5d80cd25ff8523396ddb6fd8b1943b3688c0d3eaa80e38b0
+contentHash=9b10fdaf815203aba70c613d48620e142e13831f7d73cc2983a9c11f3f2c7608
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-n-3`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bdd6bdb4e507dd0a21cea0a6009434ae21217c224029ff68b8caaf47be7034b8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-i-short-agreement-n
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+но́во is the supplied neuter singular short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.
+Tuple-v1:tuple-v1:1;23:новое письмо10:но́во2;10:нова́6:нов
+shippedText=нов
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f53fd1a191feee4a5d80cd25ff8523396ddb6fd8b1943b3688c0d3eaa80e38b0
+contentHash=3ad3794cbd24fc246026b4f55ac401704eaee0758a8201a56f17336a32321745
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-n-feedback`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d5d7df166e48419a591d61abf361491b3842d22b690d401dc71129cba9edc522
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective-application:u29-i-short-agreement-n-feedback
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+но́во is the supplied neuter singular short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.
+shippedText=но́во is the supplied neuter singular short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5018f53b1457afe430d1652eb4bd7052d86368f05f0c30335121b69ac4477fa5
+contentHash=fff56936c9e7d43c84cd24b8f6587492c816ea94f3d0a02202709ef6135fa14c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-n-prompt`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0003e3124e99175926683a3736b15df4d3c87faed3117f25d85261c911426604
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective-application:u29-i-short-agreement-n-prompt
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Which supplied short adjective meaning new would agree with the head noun of this phrase?
+shippedText=Which supplied short adjective meaning new would agree with the head noun of this phrase?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f8b39a35e9a1ceae3687a9bccb0d97c835a6c4a349b6d7a2629551253735336c
+contentHash=ecd4da2884bd481be1db67229e73d34ddc2bb08220d489b8e3470a647f0f2343
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-n-rationale-1`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d8b91ee3bcfa93bd510fb9f4c2e2221d6778b8d1100d0123dfc5b536da184d8e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective-application:u29-i-short-agreement-n-rationale-1
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+нова́ is the supplied feminine singular short form, rather than the neuter singular form required by this subject.
+shippedText=нова́ is the supplied feminine singular short form, rather than the neuter singular form required by this subject.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f119656828a2202b8d1c9bca407ea6f81dc29352cfbe592abf079f69611fed78
+contentHash=c9410fb673a007023b561394ce3b334039c2d40406dad77860803280db0cc061
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-n-rationale-2`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a62a28edbe116710f77d9086079946e49af5b7ef8d54684c2d27cbd3ae197110
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective-application:u29-i-short-agreement-n-rationale-2
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+нов is the supplied masculine singular short form, rather than the neuter singular form required by this subject.
+shippedText=нов is the supplied masculine singular short form, rather than the neuter singular form required by this subject.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3098925553fc74970eca6b0f24359abd9b2e8702c024d77525be2fcd5bc50d51
+contentHash=c4cb4e4aebaedba394a4fdebced505eb53f8de618abbb040ba75e91321702318
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-pl-0`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8017f6f2aa4ea487b24e9424ba86810bb482bd9f25e6c733f14396b2c79c306b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-i-short-agreement-pl
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+новы́ is the supplied plural short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.
+Tuple-v1:tuple-v1:1;21:новые книги10:новы́2;6:нов10:нова́
+shippedText=новые книги
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c12b628c66f89e8eb380eed40645ed9b2f38da40af1297e3a5e1040167f04656
+contentHash=8717700856e9f8a40121a4253eed890dc01b4221daf135022bdc30f48c7cd28c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-pl-1`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5f7b65655cd2c872a2a1964080d8aae5433394b5ef69581aa08e975300b18bc0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-i-short-agreement-pl
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+новы́ is the supplied plural short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.
+Tuple-v1:tuple-v1:1;21:новые книги10:новы́2;6:нов10:нова́
+shippedText=новы́
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c12b628c66f89e8eb380eed40645ed9b2f38da40af1297e3a5e1040167f04656
+contentHash=0e319326a69f4d8a1e0e8955726894928e4b0477628262866ed97f85717c5b18
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-pl-2`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 705086b55bb818122a450dc54c8e4ca068ff7948490b4096fb885fce5c57b00f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-i-short-agreement-pl
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+новы́ is the supplied plural short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.
+Tuple-v1:tuple-v1:1;21:новые книги10:новы́2;6:нов10:нова́
+shippedText=нов
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c12b628c66f89e8eb380eed40645ed9b2f38da40af1297e3a5e1040167f04656
+contentHash=3ad3794cbd24fc246026b4f55ac401704eaee0758a8201a56f17336a32321745
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-pl-3`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a3c65df3e0b912a0ed246f230686852610211ae6cb119d167ffcb818374561fc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-i-short-agreement-pl
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+новы́ is the supplied plural short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.
+Tuple-v1:tuple-v1:1;21:новые книги10:новы́2;6:нов10:нова́
+shippedText=нова́
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c12b628c66f89e8eb380eed40645ed9b2f38da40af1297e3a5e1040167f04656
+contentHash=9b10fdaf815203aba70c613d48620e142e13831f7d73cc2983a9c11f3f2c7608
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-pl-feedback`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b8b733b97bf814ae6b4c2db204379fd4f5db9d9134e53d04a350b97586a53e70
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective-application:u29-i-short-agreement-pl-feedback
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+новы́ is the supplied plural short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.
+shippedText=новы́ is the supplied plural short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=19a3ea4972835e83402a7e414e839d5bd87ca1ea49534bc82010395b554e0758
+contentHash=5c0d2b7c397d96bc5be21fd4c0fd33691fe87d22785494bc20b1f2c3a3bb8aec
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-pl-prompt`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ba34e6907de2500fb368cac5d21063cf7b9a13bd17d402875bb2c1978138d1a0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective-application:u29-i-short-agreement-pl-prompt
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Which supplied short adjective meaning new would agree with the head noun of this phrase?
+shippedText=Which supplied short adjective meaning new would agree with the head noun of this phrase?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f8b39a35e9a1ceae3687a9bccb0d97c835a6c4a349b6d7a2629551253735336c
+contentHash=ecd4da2884bd481be1db67229e73d34ddc2bb08220d489b8e3470a647f0f2343
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-pl-rationale-1`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ff74fa06b054dcbebfd78e08f77a7471a7d407848d8c4c468f80117e2d53c347
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective-application:u29-i-short-agreement-pl-rationale-1
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+нов is the supplied masculine singular short form, rather than the plural form required by this subject.
+shippedText=нов is the supplied masculine singular short form, rather than the plural form required by this subject.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2ecd0f5f78f2b41a1174225ff6a1bd592c18f9ce9e32f48088b54eb4cd9b091d
+contentHash=9ee309abbbdfaa3143bc081011808859a76c895ba5934293bbd344cdba93c8dc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-pl-rationale-2`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9c507d72c9bc8181730be7c67d992df9ccf44283ead27d72432f17fb9bb0fe3f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective-application:u29-i-short-agreement-pl-rationale-2
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+нова́ is the supplied feminine singular short form, rather than the plural form required by this subject.
+shippedText=нова́ is the supplied feminine singular short form, rather than the plural form required by this subject.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=607b15764e3366e2dbc788537f4ebea67bc1ad98cfccdbbb14f82f7bd356d651
+contentHash=b5442d1a49c6463cc16b4bd485c33dbc6c12701ecb355d6c5fb5f1043831aabf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-st-rem-short-adjective-body`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f34c42411cd52ab7b8cec994b00ebffb3d5f47a5876a80ffc482169ccca44f05
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective-application:u29-st-rem-short-adjective-body
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+The retained но́вый and нов both mean new. The first is the long form and the second is the masculine singular short form. The grammatical check asks which form is shown, rather than its English gloss. Long adjectives have case, gender and number inflection; short adjectives vary for gender and number, not case. The retained examples are recognition targets, not a universal rule for producing short forms by removing endings.
+
+In the taught modern use, short adjectives occur only in the nominative and are used predicatively to describe their subject. A long adjective can modify a noun attributively and can also be a predicate. The choice depends on the sentence, not a universal rule about one fixed word position. The following supplied forms, complete clauses and noun phrases support bounded agreement and function checks; they do not settle every long-versus-short semantic or stylistic choice.
+
+The retained беж means beige and is an invariant colour form, unchanged for case, gender and number. Its short appearance does not make it the short counterpart of но́вый. Keep lexical meaning, inflection and adjective function separate. The correct glosses remain in Vocabulary Lab as word-meaning practice; they do not satisfy the independent adjective grammar checks.
+
+The supplied short forms of new are нов for masculine singular, нова́ for feminine singular, но́во for neuter singular and новы́ for plural. Short adjectives agree with their subject in gender and number; they do not have a modern case paradigm. In the retained noun examples, книга is feminine singular, письмо is neuter singular, and книги has the supplied plural reading. Choose the short form for that subject rather than another form with the same lexical meaning. Some adjectives lack short forms and stress can change; these supplied forms are not a universal truncation recipe.
+
+The complete clauses Поезд старый and Студент новый say that the train is old and the student is new. Their long adjectives predicate a property of the subject. No overt present copula appears in these supplied clauses. Long form therefore does not force attributive function, and a temporary-versus-permanent slogan does not decide every form choice. Read the whole example and its supplied meaning rather than its adjective ending alone.
+
+The supplied новый карандаш and новое письмо mean new pencil and new letter. Each is an attributive noun phrase: the adjective modifies the head noun. These phrases alone do not assert that a pencil or letter is new in a complete clause. The adjective and noun agree in gender and number in the supplied singular examples. Do not infer an exceptionless word-position rule or every possible case from an isolated phrase. These exercises assess bounded agreement and function recognition, not unrestricted production or every long/short meaning distinction.
+shippedText=The retained но́вый and нов both mean new. The first is the long form and the second is the masculine singular short form. The grammatical check asks which form is shown, rather than its English gloss. Long adjectives have case, gender and number inflection; short adjectives vary for gender and number, not case. The retained examples are recognition targets, not a universal rule for producing short forms by removing endings.
+
+In the taught modern use, short adjectives occur only in the nominative and are used predicatively to describe their subject. A long adjective can modify a noun attributively and can also be a predicate. The choice depends on the sentence, not a universal rule about one fixed word position. The following supplied forms, complete clauses and noun phrases support bounded agreement and function checks; they do not settle every long-versus-short semantic or stylistic choice.
+
+The retained беж means beige and is an invariant colour form, unchanged for case, gender and number. Its short appearance does not make it the short counterpart of но́вый. Keep lexical meaning, inflection and adjective function separate. The correct glosses remain in Vocabulary Lab as word-meaning practice; they do not satisfy the independent adjective grammar checks.
+
+The supplied short forms of new are нов for masculine singular, нова́ for feminine singular, но́во for neuter singular and новы́ for plural. Short adjectives agree with their subject in gender and number; they do not have a modern case paradigm. In the retained noun examples, книга is feminine singular, письмо is neuter singular, and книги has the supplied plural reading. Choose the short form for that subject rather than another form with the same lexical meaning. Some adjectives lack short forms and stress can change; these supplied forms are not a universal truncation recipe.
+
+The complete clauses Поезд старый and Студент новый say that the train is old and the student is new. Their long adjectives predicate a property of the subject. No overt present copula appears in these supplied clauses. Long form therefore does not force attributive function, and a temporary-versus-permanent slogan does not decide every form choice. Read the whole example and its supplied meaning rather than its adjective ending alone.
+
+The supplied новый карандаш and новое письмо mean new pencil and new letter. Each is an attributive noun phrase: the adjective modifies the head noun. These phrases alone do not assert that a pencil or letter is new in a complete clause. The adjective and noun agree in gender and number in the supplied singular examples. Do not infer an exceptionless word-position rule or every possible case from an isolated phrase. These exercises assess bounded agreement and function recognition, not unrestricted production or every long/short meaning distinction.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3a6cedeed38dacb9a0ce925cc6a178764e810a2fb5c1cdec28d1a6fba3b9f1ff
+contentHash=1e917ec375e0ee8ac73bba911d2b35b6203fd425996bfe36eddc9d0bd8b3668e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-st-teach-adjective-attributive-body`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 49cb8a74333c7a52d0ff4f719d205fc90fe1f6af2202dca55e1dbf26afa6777c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective-application:u29-st-teach-adjective-attributive-body
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+The supplied новый карандаш and новое письмо mean new pencil and new letter. Each is an attributive noun phrase: the adjective modifies the head noun. These phrases alone do not assert that a pencil or letter is new in a complete clause. The adjective and noun agree in gender and number in the supplied singular examples. Do not infer an exceptionless word-position rule or every possible case from an isolated phrase. These exercises assess bounded agreement and function recognition, not unrestricted production or every long/short meaning distinction.
+shippedText=The supplied новый карандаш and новое письмо mean new pencil and new letter. Each is an attributive noun phrase: the adjective modifies the head noun. These phrases alone do not assert that a pencil or letter is new in a complete clause. The adjective and noun agree in gender and number in the supplied singular examples. Do not infer an exceptionless word-position rule or every possible case from an isolated phrase. These exercises assess bounded agreement and function recognition, not unrestricted production or every long/short meaning distinction.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5eb7617c950d19c9dcaddf2896e807bfa1efb6d91ab4c7b70cb040a33fe4d117
+contentHash=592c2fee4ac7357a1c0aff8caaf74ab1f16974b25e018388cc5a6d04374558a6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-st-teach-adjective-attributive-title`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 514e7f06afc0d90892aa05e3ef58ba6cf65fe1572f298a87852f2a4967aac9c5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective-application:u29-st-teach-adjective-attributive-title
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Distinguish a noun phrase from a predication
+shippedText=Distinguish a noun phrase from a predication
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a8edea1e81e4f6745cca524ce410b6826d79494c39d4a660a5768d786c10f288
+contentHash=70b3eed10f885a914662ad144c8561fbbf77a860bf76db44c8c4adae9e5468f1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-st-teach-adjective-predicate-body`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d640c81d709dd8e54795d0a34c6b1c6adcd9503eeab0951264a201cf04c7ccc7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective-application:u29-st-teach-adjective-predicate-body
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+The complete clauses Поезд старый and Студент новый say that the train is old and the student is new. Their long adjectives predicate a property of the subject. No overt present copula appears in these supplied clauses. Long form therefore does not force attributive function, and a temporary-versus-permanent slogan does not decide every form choice. Read the whole example and its supplied meaning rather than its adjective ending alone.
+shippedText=The complete clauses Поезд старый and Студент новый say that the train is old and the student is new. Their long adjectives predicate a property of the subject. No overt present copula appears in these supplied clauses. Long form therefore does not force attributive function, and a temporary-versus-permanent slogan does not decide every form choice. Read the whole example and its supplied meaning rather than its adjective ending alone.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=309dec53453932d75865f9b95f410b083d57baddd763a5737b90fb2de00d7072
+contentHash=e89825d4e27b787c6d1268fc8a8c67fa89e3a8f9a9cd55c6e9aa39c652613fec
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-st-teach-adjective-predicate-title`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 55e0feea5a65d748eccaf9ab8d118abdbb4c4a4d0b813d71f2103fbc19ed1a0d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective-application:u29-st-teach-adjective-predicate-title
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+A long form can be a predicate
+shippedText=A long form can be a predicate
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8936bfc6a171ce2ab682647376e5cf331877e6b34c53742763b5bf35ceb0933d
+contentHash=f0686560b8d11e5ff3d893b3099ae07cf4436be146e54acf2c84acc2ff8e9cb3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-st-teach-short-adjective-2-body`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 413b155c2cde1954381280b50693439309e4f31d5fa79e3d02d0c9077daeb89f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective-application:u29-st-teach-short-adjective-2-body
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+In the taught modern use, short adjectives occur only in the nominative and are used predicatively to describe their subject. A long adjective can modify a noun attributively and can also be a predicate. The choice depends on the sentence, not a universal rule about one fixed word position. The following supplied forms, complete clauses and noun phrases support bounded agreement and function checks; they do not settle every long-versus-short semantic or stylistic choice.
+shippedText=In the taught modern use, short adjectives occur only in the nominative and are used predicatively to describe their subject. A long adjective can modify a noun attributively and can also be a predicate. The choice depends on the sentence, not a universal rule about one fixed word position. The following supplied forms, complete clauses and noun phrases support bounded agreement and function checks; they do not settle every long-versus-short semantic or stylistic choice.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=941c026170c0040a422cc5b87f35e862856d4be27fccbb4fa4a1fadaeb8dac18
+contentHash=ddcde894eb46932f7c27f13b1781a19210188d06ab575a7e17fadc8e67d268de
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-st-teach-short-agreement-body`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1825f8f03a85c81ed56c657311b9ef67ff32447aea11933d0ab273f58adf5c38
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective-application:u29-st-teach-short-agreement-body
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+The supplied short forms of new are нов for masculine singular, нова́ for feminine singular, но́во for neuter singular and новы́ for plural. Short adjectives agree with their subject in gender and number; they do not have a modern case paradigm. In the retained noun examples, книга is feminine singular, письмо is neuter singular, and книги has the supplied plural reading. Choose the short form for that subject rather than another form with the same lexical meaning. Some adjectives lack short forms and stress can change; these supplied forms are not a universal truncation recipe.
+shippedText=The supplied short forms of new are нов for masculine singular, нова́ for feminine singular, но́во for neuter singular and новы́ for plural. Short adjectives agree with their subject in gender and number; they do not have a modern case paradigm. In the retained noun examples, книга is feminine singular, письмо is neuter singular, and книги has the supplied plural reading. Choose the short form for that subject rather than another form with the same lexical meaning. Some adjectives lack short forms and stress can change; these supplied forms are not a universal truncation recipe.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ad165dbd898e774df46d17d539b109417e489b135c41939eacd3e1392430940d
+contentHash=4a540e4a16b37a1e4f0c088bb010f71d0734b10af1fe25acd8578c272936ac60
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-u29-st-teach-short-agreement-title`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0c3b5499143d28bda1bc8fb94a176972af90cffcc7c527da6f317be0608cf1f0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective-application:u29-st-teach-short-agreement-title
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Apply short-form gender and number agreement
+shippedText=Apply short-form gender and number agreement
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=89a9d38edacd132621a055f2d07d598c4119e4223758b4bcd7d500148862c9a8
+contentHash=0d246c5cb81ea6ab98771b2a600a97c841e2bdb18a9e33627761f03a8e0fa8c8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-application-vocabulary-u29-st-teach-short-adjective-2-body`
+
+- Objectives: obj-u29-adjective-vocabulary
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 04f78623dc260fa58124e0cf315ef42121452db2e5d6dd142ebd3d945bd9c595
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-adjective-vocabulary:adjective-application:vocabulary-u29-st-teach-short-adjective-2-body
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+In the taught modern use, short adjectives occur only in the nominative and are used predicatively to describe their subject. A long adjective can modify a noun attributively and can also be a predicate. The choice depends on the sentence, not a universal rule about one fixed word position. The following supplied forms, complete clauses and noun phrases support bounded agreement and function checks; they do not settle every long-versus-short semantic or stylistic choice.
+shippedText=In the taught modern use, short adjectives occur only in the nominative and are used predicatively to describe their subject. A long adjective can modify a noun attributively and can also be a predicate. The choice depends on the sentence, not a universal rule about one fixed word position. The following supplied forms, complete clauses and noun phrases support bounded agreement and function checks; they do not settle every long-versus-short semantic or stylistic choice.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=941c026170c0040a422cc5b87f35e862856d4be27fccbb4fa4a1fadaeb8dac18
+contentHash=ddcde894eb46932f7c27f13b1781a19210188d06ab575a7e17fadc8e67d268de
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -12449,6 +15263,615 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-u29-adjective-native-book-en`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5bf285103fbb2b2d345dfa6e7d6499fc93b59d2ef87bc89f8fda6283b94f5a0d
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267
+sourceRevision=4213267
+sourceRecordId=nominative-context:For feminine nouns, the adjective takes on the ending '''-ая''': 'new book' i
+originalSourceText=For feminine nouns, the adjective takes on the ending '''-ая''': 'new book' is '''новая книга'''.
+shippedText=new book
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors. License route: Wikibooks:Copyrights oldid 4622060; CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=894d9cc3ba6c3470d7fa46688e0145ea3515f552675657bfc232e8420481e7ea
+contentHash=4622e97837512ad8ecd272fd8fb41d3a9c19c95ff7f16b585a0dcfb0dcda1284
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-adjective-native-book-ru`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7cd31706dfac0619f9973fd5f2b0a2c3b1659cd2260b109c2f0538744806afac
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267
+sourceRevision=4213267
+sourceRecordId=nominative-context:For feminine nouns, the adjective takes on the ending '''-ая''': 'new book' i
+originalSourceText=For feminine nouns, the adjective takes on the ending '''-ая''': 'new book' is '''новая книга'''.
+shippedText=новая книга
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors. License route: Wikibooks:Copyrights oldid 4622060; CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=894d9cc3ba6c3470d7fa46688e0145ea3515f552675657bfc232e8420481e7ea
+contentHash=c6f43008acbb4421a75f647056be412f0665aa5160060f5bf049f32a9b661296
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-adjective-native-book-subject`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4d993dc21569e0c4edb45db6679b808eefa553150c0ce504f478485931ac09a1
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267
+sourceRevision=4213267
+sourceRecordId=nominative-context:For feminine nouns, the adjective takes on the ending '''-ая''': 'new book' i
+originalSourceText=For feminine nouns, the adjective takes on the ending '''-ая''': 'new book' is '''новая книга'''.
+shippedText=книга
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors. License route: Wikibooks:Copyrights oldid 4622060; CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=894d9cc3ba6c3470d7fa46688e0145ea3515f552675657bfc232e8420481e7ea
+contentHash=695b9685757ab1a5731425e4c8e0a6768093a9785faa71270c522c2c96690619
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-adjective-native-books-en`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5244d5473886094c5a1ca76e2c66d4de1e3a3f278be36f70f559e43453f746ba
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267
+sourceRevision=4213267
+sourceRecordId=nominative-context:Adjectives also change according to number, so when modifying a plural noun, 
+originalSourceText=Adjectives also change according to number, so when modifying a plural noun, regardless of gender, they have the ending '''-ые''': 'new books' is '''новые книги'''. However, like nouns, they obey the 7-letter spelling rule.
+shippedText=new books
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors. License route: Wikibooks:Copyrights oldid 4622060; CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=e01007802b268ee710b6d68a181723ec0286506d2fe6abd39353fce23495d515
+contentHash=ec884b60aef2f2d416cad67b6047ceb8ad5514bd7c18257e36d97795ccc50a2d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-adjective-native-books-ru`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 372b3aa34d70c6d241bc7fb056d3edc25d2e6c1a8cfb0fa5b0a149b29c6bfd7a
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267
+sourceRevision=4213267
+sourceRecordId=nominative-context:Adjectives also change according to number, so when modifying a plural noun, 
+originalSourceText=Adjectives also change according to number, so when modifying a plural noun, regardless of gender, they have the ending '''-ые''': 'new books' is '''новые книги'''. However, like nouns, they obey the 7-letter spelling rule.
+shippedText=новые книги
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors. License route: Wikibooks:Copyrights oldid 4622060; CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=e01007802b268ee710b6d68a181723ec0286506d2fe6abd39353fce23495d515
+contentHash=8717700856e9f8a40121a4253eed890dc01b4221daf135022bdc30f48c7cd28c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-adjective-native-books-subject`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dcc964e075f86a3ca5fa5f0e2c871753f0f7a13e1b4a05142764cbc0bc46b449
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267
+sourceRevision=4213267
+sourceRecordId=nominative-context:Adjectives also change according to number, so when modifying a plural noun, 
+originalSourceText=Adjectives also change according to number, so when modifying a plural noun, regardless of gender, they have the ending '''-ые''': 'new books' is '''новые книги'''. However, like nouns, they obey the 7-letter spelling rule.
+shippedText=книги
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors. License route: Wikibooks:Copyrights oldid 4622060; CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=e01007802b268ee710b6d68a181723ec0286506d2fe6abd39353fce23495d515
+contentHash=56f89eb50742288465e7715a3f315790fcb6390696b10a24d2dd2b89829b008d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-adjective-native-f-en`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 14214636689c4d4d4b79f37f6e7001c8e2bc1f39beecd7a7768cb88ed9eff5b2
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:such as {{wikt-lang|ru|беж}} ('beige', non-adapted form of {{wikt-lang|ru|бе́жев
+originalSourceText=such as {{wikt-lang|ru|беж}} ('beige', non-adapted form of {{wikt-lang|ru|бе́жевый}}) or {{lang|ru|ха́ки}} ('khaki-colored'), most adjectives follow one of a small number of regular declension patterns (except for some that complicate the {{wikt-lang|en|short form}}). In modern Russian, the short form appears only in the nominative and is used when the adjective is in a [[predicate (grammar)|predicative]] role: {{lang|ru|нов, нова́, но́во, новы́}} are short forms of {{lang|ru|но́вый}} ('new').
+shippedText=new
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8
+contentHash=11507a0e2f5e69d5dfa40a62a1bd7b6ee57e6bcd85c67c9b8431b36fff21c437
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-adjective-native-f-ru`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3c55a068da15694239f1e643ad1ae19e98e7b406824b6be992f7e0ea979ba9f2
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:such as {{wikt-lang|ru|беж}} ('beige', non-adapted form of {{wikt-lang|ru|бе́жев
+originalSourceText=such as {{wikt-lang|ru|беж}} ('beige', non-adapted form of {{wikt-lang|ru|бе́жевый}}) or {{lang|ru|ха́ки}} ('khaki-colored'), most adjectives follow one of a small number of regular declension patterns (except for some that complicate the {{wikt-lang|en|short form}}). In modern Russian, the short form appears only in the nominative and is used when the adjective is in a [[predicate (grammar)|predicative]] role: {{lang|ru|нов, нова́, но́во, новы́}} are short forms of {{lang|ru|но́вый}} ('new').
+shippedText=нова́
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8
+contentHash=9b10fdaf815203aba70c613d48620e142e13831f7d73cc2983a9c11f3f2c7608
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-adjective-native-letter-en`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 54bb4dde778e1c72d86f55d21eed97bdc6d90ab48aba43d2fe44f4c9681cb3bc
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267
+sourceRevision=4213267
+sourceRecordId=nominative-context:For neuter nouns, the ending is '''-ое''': 'new letter' is '''новое письмо'''
+originalSourceText=For neuter nouns, the ending is '''-ое''': 'new letter' is '''новое письмо'''.
+shippedText=new letter
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors. License route: Wikibooks:Copyrights oldid 4622060; CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a34366a3a1f62bbcba43e880e33f3dba940e7d26c4e629dca1c53b3ef57646ec
+contentHash=5320d32f74421d56e6243eca9e8c72229872fff01245d1a7522a06e52133e38e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-adjective-native-letter-ru`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d6635b6477d579de12280f081313e4d711958e71844e3f2f5a2c04ca902f3524
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267
+sourceRevision=4213267
+sourceRecordId=nominative-context:For neuter nouns, the ending is '''-ое''': 'new letter' is '''новое письмо'''
+originalSourceText=For neuter nouns, the ending is '''-ое''': 'new letter' is '''новое письмо'''.
+shippedText=новое письмо
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors. License route: Wikibooks:Copyrights oldid 4622060; CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a34366a3a1f62bbcba43e880e33f3dba940e7d26c4e629dca1c53b3ef57646ec
+contentHash=a88335f05fa40c3ccc368fc81744c9256ff757341b06abdc61b76b6ed5174855
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-adjective-native-letter-subject`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f56884276a577036ec25c7a88ad1f18b44392cce7dc9cfc68e05056eecfd4249
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267
+sourceRevision=4213267
+sourceRecordId=nominative-context:For neuter nouns, the ending is '''-ое''': 'new letter' is '''новое письмо'''
+originalSourceText=For neuter nouns, the ending is '''-ое''': 'new letter' is '''новое письмо'''.
+shippedText=письмо
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors. License route: Wikibooks:Copyrights oldid 4622060; CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a34366a3a1f62bbcba43e880e33f3dba940e7d26c4e629dca1c53b3ef57646ec
+contentHash=8f9e4e204dded78d9a8d1c64057e74602cf09c39ce489513499edc858ad938f8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-adjective-native-n-en`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 70d44a3f0def3966f0676dad06bd581f3347cd707b88c7dcdd500f17350cd260
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:such as {{wikt-lang|ru|беж}} ('beige', non-adapted form of {{wikt-lang|ru|бе́жев
+originalSourceText=such as {{wikt-lang|ru|беж}} ('beige', non-adapted form of {{wikt-lang|ru|бе́жевый}}) or {{lang|ru|ха́ки}} ('khaki-colored'), most adjectives follow one of a small number of regular declension patterns (except for some that complicate the {{wikt-lang|en|short form}}). In modern Russian, the short form appears only in the nominative and is used when the adjective is in a [[predicate (grammar)|predicative]] role: {{lang|ru|нов, нова́, но́во, новы́}} are short forms of {{lang|ru|но́вый}} ('new').
+shippedText=new
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8
+contentHash=11507a0e2f5e69d5dfa40a62a1bd7b6ee57e6bcd85c67c9b8431b36fff21c437
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-adjective-native-n-ru`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1ed3eaabf35b3ce388f553073c413c47c0b7ff1013e2a284424f3a570a27763b
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:such as {{wikt-lang|ru|беж}} ('beige', non-adapted form of {{wikt-lang|ru|бе́жев
+originalSourceText=such as {{wikt-lang|ru|беж}} ('beige', non-adapted form of {{wikt-lang|ru|бе́жевый}}) or {{lang|ru|ха́ки}} ('khaki-colored'), most adjectives follow one of a small number of regular declension patterns (except for some that complicate the {{wikt-lang|en|short form}}). In modern Russian, the short form appears only in the nominative and is used when the adjective is in a [[predicate (grammar)|predicative]] role: {{lang|ru|нов, нова́, но́во, новы́}} are short forms of {{lang|ru|но́вый}} ('new').
+shippedText=но́во
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8
+contentHash=2b8b4473418aab42c25e71f53df1ebe3dff538554905969a70ac57e810f6e374
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-adjective-native-pencil-en`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7609bf4fcdf3f3e86ef06fa712ca8981390812a9fe28c1bea51200b9e5f70f45
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267
+sourceRevision=4213267
+sourceRecordId=nominative-context:Adjectives modifying masculine nouns in the nominative case keep their defaul
+originalSourceText=Adjectives modifying masculine nouns in the nominative case keep their default endings: 'new pencil' is '''новый карандаш'''.
+shippedText=new pencil
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors. License route: Wikibooks:Copyrights oldid 4622060; CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=f2fd9de60a4f9debb3fa937d64b624e9e68eca93cc5e81a24981ca7308a8fcd3
+contentHash=8dd028d68d99df9e2c9c7b881c81ec9efd5d377b9c442554a25415cd291572ee
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-adjective-native-pencil-ru`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f698872807cc8b285ada40cb62308a4d51e75e5dbbf6c24ffb3cc887a89dd7bf
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267
+sourceRevision=4213267
+sourceRecordId=nominative-context:Adjectives modifying masculine nouns in the nominative case keep their defaul
+originalSourceText=Adjectives modifying masculine nouns in the nominative case keep their default endings: 'new pencil' is '''новый карандаш'''.
+shippedText=новый карандаш
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors. License route: Wikibooks:Copyrights oldid 4622060; CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=f2fd9de60a4f9debb3fa937d64b624e9e68eca93cc5e81a24981ca7308a8fcd3
+contentHash=eab5644710755930b3dea97091baaf126cfeb54ec89ddaf93aa5def60dab5c36
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-adjective-native-pl-en`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b74287ad5e6eb2f27263881e450b4346a9fa581f6bd118230a221ad32294b6e8
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:such as {{wikt-lang|ru|беж}} ('beige', non-adapted form of {{wikt-lang|ru|бе́жев
+originalSourceText=such as {{wikt-lang|ru|беж}} ('beige', non-adapted form of {{wikt-lang|ru|бе́жевый}}) or {{lang|ru|ха́ки}} ('khaki-colored'), most adjectives follow one of a small number of regular declension patterns (except for some that complicate the {{wikt-lang|en|short form}}). In modern Russian, the short form appears only in the nominative and is used when the adjective is in a [[predicate (grammar)|predicative]] role: {{lang|ru|нов, нова́, но́во, новы́}} are short forms of {{lang|ru|но́вый}} ('new').
+shippedText=new
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8
+contentHash=11507a0e2f5e69d5dfa40a62a1bd7b6ee57e6bcd85c67c9b8431b36fff21c437
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-adjective-native-pl-ru`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 625302047fa37f6dab7c9ef04efb7b2f84d9c031cc6b164887324facd757f347
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:such as {{wikt-lang|ru|беж}} ('beige', non-adapted form of {{wikt-lang|ru|бе́жев
+originalSourceText=such as {{wikt-lang|ru|беж}} ('beige', non-adapted form of {{wikt-lang|ru|бе́жевый}}) or {{lang|ru|ха́ки}} ('khaki-colored'), most adjectives follow one of a small number of regular declension patterns (except for some that complicate the {{wikt-lang|en|short form}}). In modern Russian, the short form appears only in the nominative and is used when the adjective is in a [[predicate (grammar)|predicative]] role: {{lang|ru|нов, нова́, но́во, новы́}} are short forms of {{lang|ru|но́вый}} ('new').
+shippedText=новы́
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8
+contentHash=0e319326a69f4d8a1e0e8955726894928e4b0477628262866ed97f85717c5b18
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-adjective-native-student-en`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9afcfbc4df500fbf138bd69626382be59c43bc5a6c79a1bdcfcc92bc7a78c99a
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267
+sourceRevision=4213267
+sourceRecordId=nominative-context::The student is new - '''Студент новый'''
+originalSourceText=:The student is new - '''Студент новый'''
+shippedText=The student is new
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors. License route: Wikibooks:Copyrights oldid 4622060; CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=dbfbf0e198229f249dcac80a39eb9cc1027f7f3cdfea7e732d3475ea389af395
+contentHash=cbd70222d49237531d7803458a7453eba84c8e39555b0dfc26d8dbbbc87aa5f3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-adjective-native-student-ru`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 25a8cf9e58627643b0dfe4e99e1c46e704cd2e854f388becd061b35c4ae77ad6
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267
+sourceRevision=4213267
+sourceRecordId=nominative-context::The student is new - '''Студент новый'''
+originalSourceText=:The student is new - '''Студент новый'''
+shippedText=Студент новый
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors. License route: Wikibooks:Copyrights oldid 4622060; CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=dbfbf0e198229f249dcac80a39eb9cc1027f7f3cdfea7e732d3475ea389af395
+contentHash=99f3043523af00251b4438628b02f31f267556c001102d87dd914250ee638561
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-adjective-native-train-en`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cb6b38dd574736e4fb83005cb66784754965a679190a7b047d09d87f519d34b8
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267
+sourceRevision=4213267
+sourceRecordId=nominative-context::The train is old - '''Поезд старый'''
+originalSourceText=:The train is old - '''Поезд старый'''
+shippedText=The train is old
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors. License route: Wikibooks:Copyrights oldid 4622060; CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=60bd8d99d502785ffccdde598aef375531b1e928d99fc14f563221e75399c600
+contentHash=920a6f8c4d84a3a9835b89834095398b4bd92336758f32836fc9273ce085b713
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-adjective-native-train-ru`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: df7833df0143f29dcf48de3b168e9baefafab1a5759fe7b3df98f0b726ffbdc1
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267
+sourceRevision=4213267
+sourceRecordId=nominative-context::The train is old - '''Поезд старый'''
+originalSourceText=:The train is old - '''Поезд старый'''
+shippedText=Поезд старый
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors. License route: Wikibooks:Copyrights oldid 4622060; CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=60bd8d99d502785ffccdde598aef375531b1e928d99fc14f563221e75399c600
+contentHash=593100e07231bc9baa2d67875b75a5ce1d54a6bc15287a3edcebcf8bd0350426
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u29-bookish-note-rem`
 
 - Objectives: obj-u29-bookish-note
@@ -14449,6 +17872,21 @@ CC BY-SA 4.0
 Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
 Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
+### SOURCE `src-wikibooks-russian-cc-by-sa`
+
+- Objectives: none
+- Sessions: none
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 20039cd983c84c1ba99787b2d548152844f49f4d7eb4fd378f10e3da956e7358
+
+Wikibooks Russian grammar
+CC BY-SA 4.0
+Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+Selected excerpts. Russian quotations are unchanged. English claims are quoted, not paraphrased.
+
 ### SOURCE `src-ruwiki-prichastie-153078996`
 
 - Objectives: none
@@ -14520,6 +17958,20 @@ Original
 - Content hash: 01f0218db3ba7a1fcd1d27d601ee1f3a41d4890505b9bde355184fe41a401cad
 
 src-wikipedia-russian-grammar-1369617627
+CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-wikibooks-russian-cc-by-sa`
+
+- Objectives: none
+- Sessions: none
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 1768f7fe2b673503aa632530903796a2567dca6256676f69a209257314b437e0
+
+src-wikibooks-russian-cc-by-sa
 CC BY-SA 4.0
 permitsAppUse=true
 
@@ -14596,12 +18048,29 @@ permitsAppUse=true
 - `obj-u29-short-adjective` INSTRUCTION `u29-st-teach-short-adjective-1`
 - `obj-u29-short-adjective` INSTRUCTION `u29-st-teach-short-adjective-2`
 - `obj-u29-short-adjective` INSTRUCTION `u29-st-teach-short-adjective-3`
+- `obj-u29-short-adjective` INSTRUCTION `u29-st-teach-short-agreement`
+- `obj-u29-short-adjective` INSTRUCTION `u29-st-teach-adjective-predicate`
+- `obj-u29-short-adjective` INSTRUCTION `u29-st-teach-adjective-attributive`
 - `obj-u29-short-adjective` EXAMPLE `ex-u29-short-adjective-0`
 - `obj-u29-short-adjective` EXAMPLE `ex-u29-short-adjective-1`
 - `obj-u29-short-adjective` EXAMPLE `ex-u29-short-adjective-2`
+- `obj-u29-short-adjective` EXAMPLE `ex-u29-adjective-context-f`
+- `obj-u29-short-adjective` EXAMPLE `ex-u29-adjective-context-n`
+- `obj-u29-short-adjective` EXAMPLE `ex-u29-adjective-context-pl`
+- `obj-u29-short-adjective` EXAMPLE `ex-u29-adjective-context-train`
+- `obj-u29-short-adjective` EXAMPLE `ex-u29-adjective-context-pencil`
+- `obj-u29-short-adjective` EXAMPLE `ex-u29-adjective-context-student`
+- `obj-u29-short-adjective` EXAMPLE `ex-u29-adjective-context-letter`
+- `obj-u29-short-adjective` EXAMPLE `ex-u29-adjective-context-book`
+- `obj-u29-short-adjective` EXAMPLE `ex-u29-adjective-context-books`
 - `obj-u29-short-adjective` PRACTICE `u29-st-guided-short-adjective-1`
 - `obj-u29-short-adjective` CHECK `u29-i-adjective-form-1`
 - `obj-u29-short-adjective` CHECK `u29-i-adjective-form-2`
+- `obj-u29-short-adjective` CHECK `u29-i-short-agreement-f`
+- `obj-u29-short-adjective` CHECK `u29-i-short-agreement-n`
+- `obj-u29-short-adjective` CHECK `u29-i-short-agreement-pl`
+- `obj-u29-short-adjective` CHECK `u29-i-adjective-function-p`
+- `obj-u29-short-adjective` CHECK `u29-i-adjective-function-a`
 - `obj-u29-short-adjective` REMEDIATION `u29-st-rem-short-adjective`
 - `obj-u29-bookish-note` INSTRUCTION `u29-st-orient`
 - `obj-u29-bookish-note` INSTRUCTION `u29-st-teach-bookish-note-1`
@@ -14676,14 +18145,46 @@ permitsAppUse=true
 - `u29-st-teach-short-adjective-2` REFERENCE `ref-u2630-attribution`
 - `u29-st-teach-short-adjective-3` EXAMPLE `ex-u29-short-adjective-2`
 - `u29-st-teach-short-adjective-3` REFERENCE `ref-u2630-attribution`
+- `u29-st-teach-short-agreement` EXAMPLE `ex-u29-short-adjective-1`
+- `u29-st-teach-short-agreement` EXAMPLE `ex-u29-adjective-context-f`
+- `u29-st-teach-short-agreement` EXAMPLE `ex-u29-adjective-context-n`
+- `u29-st-teach-short-agreement` EXAMPLE `ex-u29-adjective-context-pl`
+- `u29-st-teach-short-agreement` EXAMPLE `ex-u29-adjective-context-letter`
+- `u29-st-teach-short-agreement` EXAMPLE `ex-u29-adjective-context-book`
+- `u29-st-teach-short-agreement` EXAMPLE `ex-u29-adjective-context-books`
+- `u29-st-teach-short-agreement` REFERENCE `ref-u2630-attribution`
+- `u29-st-teach-adjective-predicate` EXAMPLE `ex-u29-adjective-context-train`
+- `u29-st-teach-adjective-predicate` EXAMPLE `ex-u29-adjective-context-student`
+- `u29-st-teach-adjective-predicate` REFERENCE `ref-u2630-attribution`
+- `u29-st-teach-adjective-attributive` EXAMPLE `ex-u29-adjective-context-pencil`
+- `u29-st-teach-adjective-attributive` EXAMPLE `ex-u29-adjective-context-letter`
+- `u29-st-teach-adjective-attributive` REFERENCE `ref-u2630-attribution`
 - `u29-st-guided-short-adjective-1` REMEDIATION `u29-st-rem-short-adjective`
 - `u29-st-guided-short-adjective-1` ITEM `u29-g-adjective-form-0`
+- `u29-st-guided-short-adjective-1` ITEM `u29-g-short-agreement-m`
+- `u29-st-guided-short-adjective-1` ITEM `u29-g-short-agreement-n`
+- `u29-st-guided-short-adjective-1` ITEM `u29-g-adjective-function-p`
+- `u29-st-guided-short-adjective-1` ITEM `u29-g-adjective-function-a`
 - `u29-st-rem-short-adjective` EXAMPLE `ex-u29-short-adjective-0`
 - `u29-st-rem-short-adjective` EXAMPLE `ex-u29-short-adjective-1`
 - `u29-st-rem-short-adjective` EXAMPLE `ex-u29-short-adjective-2`
+- `u29-st-rem-short-adjective` EXAMPLE `ex-u29-adjective-context-f`
+- `u29-st-rem-short-adjective` EXAMPLE `ex-u29-adjective-context-n`
+- `u29-st-rem-short-adjective` EXAMPLE `ex-u29-adjective-context-pl`
+- `u29-st-rem-short-adjective` EXAMPLE `ex-u29-adjective-context-letter`
+- `u29-st-rem-short-adjective` EXAMPLE `ex-u29-adjective-context-book`
+- `u29-st-rem-short-adjective` EXAMPLE `ex-u29-adjective-context-books`
+- `u29-st-rem-short-adjective` EXAMPLE `ex-u29-adjective-context-train`
+- `u29-st-rem-short-adjective` EXAMPLE `ex-u29-adjective-context-student`
+- `u29-st-rem-short-adjective` EXAMPLE `ex-u29-adjective-context-pencil`
 - `u29-st-check-short-adjective` REMEDIATION `u29-st-rem-short-adjective`
 - `u29-st-check-short-adjective` ITEM `u29-i-adjective-form-1`
 - `u29-st-check-short-adjective` ITEM `u29-i-adjective-form-2`
+- `u29-st-check-short-adjective` ITEM `u29-i-short-agreement-f`
+- `u29-st-check-short-adjective` ITEM `u29-i-short-agreement-n`
+- `u29-st-check-short-adjective` ITEM `u29-i-short-agreement-pl`
+- `u29-st-check-short-adjective` ITEM `u29-i-adjective-function-p`
+- `u29-st-check-short-adjective` ITEM `u29-i-adjective-function-a`
 - `u29-s-bookish-note` OBJECTIVE `obj-u29-bookish-note`
 - `u29-st-teach-bookish-note-1` EXAMPLE `ex-u29-bookish-note-0`
 - `u29-st-teach-bookish-note-1` EXAMPLE `ex-u29-bookish-note-1`
@@ -14798,6 +18299,79 @@ permitsAppUse=true
 - `obj-u29-adjective-vocabulary` PROVENANCE `prov-ca-u29-adjective-vocabulary-u29-st-teach-short-adjective-1-body`
 - `obj-u29-adjective-vocabulary` PROVENANCE `prov-ca-u29-adjective-vocabulary-u29-st-teach-short-adjective-2-body`
 - `obj-u29-adjective-vocabulary` PROVENANCE `prov-ca-u29-adjective-vocabulary-u29-st-teach-short-adjective-3-body`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-g-adjective-function-a-0`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-g-adjective-function-a-1`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-g-adjective-function-a-2`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-g-adjective-function-a-feedback`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-g-adjective-function-a-prompt`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-g-adjective-function-a-rationale-1`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-g-adjective-function-p-0`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-g-adjective-function-p-1`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-g-adjective-function-p-2`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-g-adjective-function-p-feedback`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-g-adjective-function-p-prompt`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-g-adjective-function-p-rationale-1`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-g-short-agreement-m-0`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-g-short-agreement-m-1`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-g-short-agreement-m-2`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-g-short-agreement-m-3`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-g-short-agreement-m-feedback`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-g-short-agreement-m-prompt`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-g-short-agreement-m-rationale-1`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-g-short-agreement-m-rationale-2`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-g-short-agreement-n-0`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-g-short-agreement-n-1`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-g-short-agreement-n-2`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-g-short-agreement-n-3`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-g-short-agreement-n-feedback`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-g-short-agreement-n-prompt`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-g-short-agreement-n-rationale-1`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-g-short-agreement-n-rationale-2`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-i-adjective-function-a-0`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-i-adjective-function-a-1`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-i-adjective-function-a-2`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-i-adjective-function-a-feedback`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-i-adjective-function-a-prompt`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-i-adjective-function-a-rationale-1`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-i-adjective-function-p-0`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-i-adjective-function-p-1`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-i-adjective-function-p-2`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-i-adjective-function-p-feedback`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-i-adjective-function-p-prompt`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-i-adjective-function-p-rationale-1`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-f-0`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-f-1`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-f-2`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-f-3`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-f-feedback`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-f-prompt`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-f-rationale-1`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-f-rationale-2`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-n-0`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-n-1`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-n-2`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-n-3`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-n-feedback`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-n-prompt`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-n-rationale-1`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-n-rationale-2`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-pl-0`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-pl-1`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-pl-2`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-pl-3`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-pl-feedback`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-pl-prompt`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-pl-rationale-1`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-i-short-agreement-pl-rationale-2`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-st-rem-short-adjective-body`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-st-teach-adjective-attributive-body`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-st-teach-adjective-attributive-title`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-st-teach-adjective-predicate-body`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-st-teach-adjective-predicate-title`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-st-teach-short-adjective-2-body`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-st-teach-short-agreement-body`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-application-u29-st-teach-short-agreement-title`
+- `obj-u29-adjective-vocabulary` PROVENANCE `prov-ca-u29-application-vocabulary-u29-st-teach-short-adjective-2-body`
 - `obj-u29-active` PROVENANCE `prov-ca-u29-instruction-u29-s-active-0`
 - `obj-u29-active` PROVENANCE `prov-ca-u29-instruction-u29-s-active-1`
 - `obj-u29-active` PROVENANCE `prov-ca-u29-instruction-u29-s-active-10`
@@ -14983,6 +18557,27 @@ permitsAppUse=true
 - `obj-u29-active` PROVENANCE `prov-u29-active-rem`
 - `obj-u29-active` PROVENANCE `prov-u29-active-x-0`
 - `obj-u29-active` PROVENANCE `prov-u29-active-x-1`
+- `obj-u29-short-adjective` PROVENANCE `prov-u29-adjective-native-book-en`
+- `obj-u29-short-adjective` PROVENANCE `prov-u29-adjective-native-book-ru`
+- `obj-u29-short-adjective` PROVENANCE `prov-u29-adjective-native-book-subject`
+- `obj-u29-short-adjective` PROVENANCE `prov-u29-adjective-native-books-en`
+- `obj-u29-short-adjective` PROVENANCE `prov-u29-adjective-native-books-ru`
+- `obj-u29-short-adjective` PROVENANCE `prov-u29-adjective-native-books-subject`
+- `obj-u29-short-adjective` PROVENANCE `prov-u29-adjective-native-f-en`
+- `obj-u29-short-adjective` PROVENANCE `prov-u29-adjective-native-f-ru`
+- `obj-u29-short-adjective` PROVENANCE `prov-u29-adjective-native-letter-en`
+- `obj-u29-short-adjective` PROVENANCE `prov-u29-adjective-native-letter-ru`
+- `obj-u29-short-adjective` PROVENANCE `prov-u29-adjective-native-letter-subject`
+- `obj-u29-short-adjective` PROVENANCE `prov-u29-adjective-native-n-en`
+- `obj-u29-short-adjective` PROVENANCE `prov-u29-adjective-native-n-ru`
+- `obj-u29-short-adjective` PROVENANCE `prov-u29-adjective-native-pencil-en`
+- `obj-u29-short-adjective` PROVENANCE `prov-u29-adjective-native-pencil-ru`
+- `obj-u29-short-adjective` PROVENANCE `prov-u29-adjective-native-pl-en`
+- `obj-u29-short-adjective` PROVENANCE `prov-u29-adjective-native-pl-ru`
+- `obj-u29-short-adjective` PROVENANCE `prov-u29-adjective-native-student-en`
+- `obj-u29-short-adjective` PROVENANCE `prov-u29-adjective-native-student-ru`
+- `obj-u29-short-adjective` PROVENANCE `prov-u29-adjective-native-train-en`
+- `obj-u29-short-adjective` PROVENANCE `prov-u29-adjective-native-train-ru`
 - `obj-u29-bookish-note` PROVENANCE `prov-u29-bookish-note-rem`
 - `obj-u29-bookish-note` PROVENANCE `prov-u29-bookish-note-x-0`
 - `obj-u29-punctuation` PROVENANCE `prov-u29-punctuation-rem`
