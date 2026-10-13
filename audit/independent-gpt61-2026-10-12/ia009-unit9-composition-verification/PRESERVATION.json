@@ -29,5 +29,6 @@
   "pack": "9b5db91a8f7a546112a2f1447f92365a4de332b3dd4f331be7dfe0b4b992c231",
   "source": "fa2540b484f5fca2db8933cee92c3d1ff0f4c98283e4a55450fc010188948a54",
   "activeUnit9SnapshotsUpdatedToGeneratedIdentity": true,
-  "otherUnitSnapshotExpectationsUnchanged": true
+  "otherUnitSnapshotExpectationsUnchanged": true,
+  "allNineOriginalAuditDeliverableHashesUnchanged": true
 }

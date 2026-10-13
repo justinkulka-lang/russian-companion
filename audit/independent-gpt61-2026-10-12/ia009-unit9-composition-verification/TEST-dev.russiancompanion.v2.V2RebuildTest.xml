@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.V2RebuildTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-13T00:25:58.140Z" hostname="d0fbcd1608d3" time="69.463">
+  <properties/>
+  <testcase name="structuralMappingSafeguardsRejectIncompleteOrInventedRecords" classname="dev.russiancompanion.v2.V2RebuildTest" time="67.113"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

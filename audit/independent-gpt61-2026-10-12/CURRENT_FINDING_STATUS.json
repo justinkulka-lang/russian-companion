@@ -142,7 +142,7 @@
   "physicalDeviceAcceptance": "OUTSTANDING",
   "release": "NOT_APPROVED",
   "latestValidatorImplementationCommit": "1ab25bc6813963cbb3f41da92f2c4ffe8383a1ae",
-  "latestSourceBindingCheckpoint": "e04c59c72d7a8a0df37a641eb443e53ebcc89b38",
+  "latestSourceBindingCheckpoint": "b69a9c76e3aa2fca78d45673e54e69c9b3996a95",
   "remainingSourceReviewPointers": [
     "IA007_SOURCE_REVIEW_PENDING.md",
     "IA008_SOURCE_REVIEW_PENDING.md"
@@ -156,5 +156,5 @@
   ],
   "physicalDeviceEvidenceRequestTiming": "AFTER_FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
   "latestAppImplementationCommit": "c82e5b4a305c960ca41f660071d0da25070631ea",
-  "latestVerifiedRepositoryCommit": "e04c59c72d7a8a0df37a641eb443e53ebcc89b38"
+  "latestVerifiedRepositoryCommit": "b69a9c76e3aa2fca78d45673e54e69c9b3996a95"
 }
