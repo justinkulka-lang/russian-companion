@@ -316,7 +316,7 @@ class BatchECapabilityResearchTest {
         val pack = loadCurriculumPack(root)
         val model = reconcileCurriculumReadiness(root, pack)
         val candidate = readAcceptanceCandidate(root)
-        assertEquals("c7e2891e19f0da37bc8a9200ceeb83b9bb8bea62c388e8cfd99bca7b3e89b51f", model.packContentReviewDigest)
+        assertEquals("e67744f1f482186215862537ef55e26ad820a6a6bd7de95b4ae0638ec0757c30", model.packContentReviewDigest)
         assertEquals(candidate?.sourceDigest, model.repositorySourceDigest)
         assertEquals(model.repositorySourceDigest, computeReleaseSourceDigest(root))
         assertEquals("NOT_APPROVED", model.publicRelease)
@@ -339,7 +339,7 @@ class BatchECapabilityResearchTest {
             // Unit17 question-transfer correction supersedes historical 6172c2a9be50c4b3c79b962dc5f9b055f8d2d267d3a6a8627a3e9805e4fc8cca.
             17 to "16e8478be2cab8dad81faf971e4c13f088323b93612407a3b928ce85d31ea1c5",
             23 to "42a67675479cb835e6c429ffc76c0120c00ea389baed9e7e0cbc91f593b564e4",
-            24 to "6e7a66f3c4f2f4457aa772a64e931a228933d6516cdd96986760692581d8cbc6",
+            24 to "0aadf91b5482f1036b5f57888de2744d1339cd7316f5725973f98a0fde693d17",
             25 to "317881a1a5a77489ce03b939b567642725274c10c534e14be68007b199cde98d",
             26 to "7870405b2810239e5e744706b0376877191d00afc337ac30e7a2249ad97fddab",
             27 to "fb8a23246226a841df660cae2517b139cba2ff51ef5939792268d2c6cb50bc2e",
@@ -365,7 +365,7 @@ class BatchECapabilityResearchTest {
             // Unit17 question-transfer correction supersedes historical 5f6ba37d5f872c8afc895c5b402d142240977157dff5f7b27c38a7104fbab6c3.
             17 to "6fe1333083ac2b7d9cd46a092533c0722f7e37688254159d3a4f611ba31d9953",
             23 to "3132b83999674df89783745ad1ec1b9b15709c9659062b0cccf858f50eae438e",
-            24 to "1513078e0309750e56a94be06f9da994060afb7ddd1cea9159fe758a1c68d6f5",
+            24 to "1758d551a515a381d7c790b67e10a0a9bb9e2ee99bb8e76ab736b027273bb5a2",
             25 to "d09669e2175455dba996fed8df9d84a04651b3d09477a7834dd765a9b31fae59",
             26 to "72034166355fc1ba567a4caa64db7c908d9c523ed7e2f3d618e45e9653a14e99",
             27 to "e1607fe23cb8f2e8bbc35c9a76a49b3895992b109075052c61b8daeab4e0e941",

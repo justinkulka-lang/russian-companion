@@ -11,12 +11,12 @@ Unit 24 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 4f5cb8024d3f68a37052fdf85b5755bffa2a0904
-- Unit content-review SHA-256: 6e7a66f3c4f2f4457aa772a64e931a228933d6516cdd96986760692581d8cbc6
+- Curriculum source commit: db323d1a07613846a088cd44cb9f2b72d24753c9
+- Unit content-review SHA-256: 0aadf91b5482f1036b5f57888de2744d1339cd7316f5725973f98a0fde693d17
 - Mapping-package SHA-256: dc6f9ac41a8520dc647df90313e05e547245bfa31fe3b2e883821f3591a24248
-- Pack content-review SHA-256: c7e2891e19f0da37bc8a9200ceeb83b9bb8bea62c388e8cfd99bca7b3e89b51f
-- Review-package SHA-256: 1513078e0309750e56a94be06f9da994060afb7ddd1cea9159fe758a1c68d6f5
-- Repository source SHA-256: 7d4dfb0067e3ecabba0f4b2a1df5787e97ee8caf675c406a6304a028e00f98e4
+- Pack content-review SHA-256: e67744f1f482186215862537ef55e26ad820a6a6bd7de95b4ae0638ec0757c30
+- Review-package SHA-256: 1758d551a515a381d7c790b67e10a0a9bb9e2ee99bb8e76ab736b027273bb5a2
+- Repository source SHA-256: b464d56b5cc582e86d2857c848d01403e7dd50e47a4278287a9cbd488584b532
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -69,13 +69,13 @@ notes=No qualified reviewer has signed Unit 24.
 
 ### UNIT `unit-24`
 
-- Objectives: obj-u24-verbal-ne, obj-u24-absence, obj-u24-alternation, obj-u24-stand-ins, obj-u24-concord, obj-u24-word-order-contrast, obj-u24-placement, obj-u24-book
+- Objectives: obj-u24-verbal-ne, obj-u24-absence, obj-u24-alternation, obj-u24-stand-ins, obj-u24-concord, obj-u24-word-order-contrast, obj-u24-placement, obj-u24-book, obj-u24-persuasion-reference
 - Sessions: u24-s-orient, u24-s-verbal-ne, u24-s-absence, u24-s-alternation, u24-s-stand-ins, u24-s-concord, u24-s-word-order-contrast, u24-s-placement, u24-s-book
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f2817abf893917415989a5505cff5174ec0fc9581abe48158825eae06c2e1c65
+- Content hash: d1f8baa643e5afb854b7ad555a3881d60acb3d264a4d50dfd0c252f14cf7a290
 
 number=24
 title=Negation, case behavior under negation, negative pronouns or particles, and the position or scope of не
@@ -208,12 +208,12 @@ remediation=u24-st-rem-concord
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8fef267a7165d769731d0d90b246c48c9b9be75005579d47c2a13b5bfb069255
+- Content hash: 90b32f5de4b8e5857c470eec2239e553f40e62ff4af7859f7f7a5032fff98c2d
 
-title=Interpret the supplied persuasion readings in context
+title=Interpret the supplied readings in stated contexts
 kind=RECOGNITION
 unitNumber=24
-instruction=u24-st-orient,u24-st-teach-word-order-contrast-1,u24-st-teach-word-order-contrast-2
+instruction=u24-st-orient,u24-st-teach-word-order-contrast-1,u24-st-teach-word-order-contrast-2,u24-st-teach-word-order-contrast-3
 examples=ex-u24-word-order-contrast-0,ex-u24-word-order-contrast-1
 practice=u24-st-guided-word-order-contrast-1
 checks=u24-i-word-order-contrast-1,u24-i-word-order-contrast-2
@@ -253,6 +253,25 @@ kind=SELF_ATTESTATION
 unitNumber=24
 instruction=u24-st-book-work,u24-st-book
 examples=
+practice=
+checks=
+remediation=
+
+### OBJECTIVE `obj-u24-persuasion-reference`
+
+- Objectives: obj-u24-persuasion-reference
+- Sessions: none
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 2f89a187fa9f54a92691d6417a6025f0c6a548db3939acd13baeafdadc857626
+
+title=Optional persuasion reference
+kind=GUIDANCE
+unitNumber=24
+instruction=u24-st-teach-word-order-contrast-1
+examples=ex-u24-word-order-contrast-0,ex-u24-word-order-contrast-1
 practice=
 checks=
 remediation=
@@ -1033,22 +1052,22 @@ remediationStepId=u24-st-rem-concord
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d24f2a7fa028957b49d7639f416e8384f110c2a34c1f9d2f4ebe8de250ba50c4
+- Content hash: c4b8fa1414c3c6d6f47c4596e0e99fac1297f0b516facd523e5e78be2a3bfc7c
 
-title=Interpret the supplied persuasion readings in context
+title=Interpret the supplied readings in stated contexts
 estimatedMinutes=12
 objectives=obj-u24-word-order-contrast
-steps=u24-st-teach-word-order-contrast-1,u24-st-teach-word-order-contrast-2,u24-st-guided-word-order-contrast-1,u24-st-rem-word-order-contrast,u24-st-check-word-order-contrast
+steps=u24-st-teach-word-order-contrast-1,u24-st-teach-word-order-contrast-2,u24-st-teach-word-order-contrast-3,u24-st-guided-word-order-contrast-1,u24-st-rem-word-order-contrast,u24-st-check-word-order-contrast
 
 ### STEP `u24-st-teach-word-order-contrast-1`
 
-- Objectives: obj-u24-word-order-contrast
+- Objectives: obj-u24-word-order-contrast, obj-u24-persuasion-reference
 - Sessions: u24-s-word-order-contrast
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b7fb9284a0ff3a495c4a2e7abe7185d81d00b8d054562f1e69874b6ecdd656b4
+- Content hash: ebb74b9a18f9b4da2648a66530c752e52b608ae205b7f4299764380ea8e376da
 
 kind=TEACH
 title=Two supplied readings with their stated contexts
@@ -1084,6 +1103,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u24-st-teach-word-order-contrast-3`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-word-order-contrast
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: e27b09edb1de808411ce683e37fc462b77ccef6b1f582fde951d6bb6874871cf
+
+kind=TEACH
+title=Use context to identify the supplied emphasis
+body=В магазин пошёл я. — It was me who went to the shop. In this supplied example the person who went is highlighted. Compare В магазин я пошёл. — To the shop—that's where I went. in the source’s destination-response context. Guided practice uses the highlighted-person example, with a different complete sentence and requested information from either independent persuasion check. The independent requirements still test both original persuasion contexts:the speaker will do it anyway, or the speaker would never agree. Subject-focus remains introductory guided evidence, not an independently demonstrated skill. Intonation and discourse context can affect readings; these examples do not establish a universal word-order switch or permission to infer present time from a past verb. The original repeated persuasion question remains optional reference practice and cannot credit or prevent the required objective.
+dominantAction=Continue
+references=ref-u2125-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
 ### STEP `u24-st-guided-word-order-contrast-1`
 
 - Objectives: obj-u24-word-order-contrast
@@ -1092,14 +1133,14 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5f409b17ff0dd8d36169f21444c135ac06b3c69102f86ea22ee11678c6303533
+- Content hash: 24228c3efe2f67c71069087238f98b2e88c9c6d0691764f102e90c74c80656b4
 
 kind=GUIDED
 title=Guided practice
 body=Read the requested negative meaning, structure or stated context. Use the complete explanation above. A missed check returns to that full explanation.
 dominantAction=Continue
 references=
-items=u24-g-word-order-contrast-0
+items=u24-g-context-subject-focus
 examples=
 unavailableReason=
 bookDirection=
@@ -1114,13 +1155,15 @@ remediationStepId=u24-st-rem-word-order-contrast
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 313e84791d20897169471731db20808da40b662ca7a2c8d09251a86bb4856684
+- Content hash: e020af2d47e49cb7de7026385b33a17ade950efcf5dd7b2bc6303b9fc68f4b97
 
 kind=REMEDIATE
 title=Review the complete negation contrast
 body=Не надо меня уговаривать. — One should not persuade me in the supplied context where the speaker would never agree. Меня не надо уговаривать. — There is no need to persuade me in the supplied context where the speaker will do it anyway. The questions provide these contexts rather than asking you to infer one unique interpretation from word order alone.
 
 Word order can change what is in focus or in the scope of a particle. It does not by itself assign one unique meaning to every sentence. Intonation and discourse context matter as well. The current source illustrates these two contextual readings; a speaker could use a sentence with a different intended emphasis in another context. The checks recognize the supplied reading, not a universal rule that moving the subject always changes prohibition into lack of necessity.
+
+В магазин пошёл я. — It was me who went to the shop. In this supplied example the person who went is highlighted. Compare В магазин я пошёл. — To the shop—that's where I went. in the source’s destination-response context. Guided practice uses the highlighted-person example, with a different complete sentence and requested information from either independent persuasion check. The independent requirements still test both original persuasion contexts:the speaker will do it anyway, or the speaker would never agree. Subject-focus remains introductory guided evidence, not an independently demonstrated skill. Intonation and discourse context can affect readings; these examples do not establish a universal word-order switch or permission to infer present time from a past verb. The original repeated persuasion question remains optional reference practice and cannot credit or prevent the required objective.
 dominantAction=Continue
 references=
 items=
@@ -1934,41 +1977,39 @@ relationKind=EXPLICIT_SOURCE_PAIR
 relationParticipantIds=prov-ex-u24-concord-0-ru | prov-ex-u24-concord-0-en | prov-u24-concord-x-0 | prov-u24-concord-x-1
 responseKind=RUSSIAN_TOKEN
 
-### GUIDED_PRACTICE `u24-g-word-order-contrast-0`
+### GUIDED_PRACTICE `u24-g-context-subject-focus`
 
 - Objectives: obj-u24-word-order-contrast
 - Sessions: u24-s-word-order-contrast
-- Source: src-wikipedia-russian-grammar-1369617627
-- Rights: rights-wikipedia-russian-grammar-1369617627
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 1031d21ba325597176be53675e5b89df63ca5dcd1a8624f1b9f08f9e62ca0a79
+- Content hash: f6e09b9a0d7374fd802ea9797418c5f9f0ae619b31ce2fb3ea0955214bb2e358
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=The speaker would never agree. Which supplied English interpretation fits the sentence in that context?
-promptLetter=Не надо меня уговаривать.
-options=One should not persuade me | There is no need to persuade me
-answer=One should not persuade me
-feedback=The frozen source pairs the shown form "Не надо меня уговаривать." with the admitted gloss "One should not persuade me" ("as I would never agree to do something").
-Не надо меня уговаривать. is the reference cue; One should not persuade me matches the requested meaning or structure. the supplied interpretation where the speaker would never agree.
+prompt=The supplied context emphasizes who went to the shop. Which English interpretation fits the sentence?
+promptLetter=В магазин пошёл я.
+options=It was me who went to the shop. | To the shop—that's where I went.
+answer=It was me who went to the shop.
+feedback=В магазин пошёл я. has the supplied subject-focus interpretation It was me who went to the shop. The context highlights the speaker as the person who went. This is an introductory supplied example; it does not establish every word order, a unique interpretation without context or independent subject-focus mastery.
 objectiveId=obj-u24-word-order-contrast
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | There is no need to persuade me: the supplied interpretation where the speaker will do it anyway. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "Меня не надо уговаривать." with the admitted gloss "There is no need to persuade me" ("as I will do it anyway").
-testedFeature=WORD_ORDER_NEVER
-evidenceMode=EXPLICIT_SOURCE_PAIR
-contrastSetId=u24-word-order-contrast-0
+distractorRationales= | To the shop—that's where I went. is the source’s destination-focus interpretation for В магазин я пошёл. in its supplied response context, rather than the highlighted-person reading requested here.
+testedFeature=WORD_ORDER_SUBJECT_FOCUS_GUIDED
+evidenceMode=STATED_APPLICATION
+contrastSetId=u24-g-context-subject-focus
 cueLanguage=ru
 independent=false
-answerSourceIds=prov-ex-u24-word-order-contrast-0-en
-distractorSourceIds= | prov-ex-u24-word-order-contrast-1-en
-distractorDifference= | There is no need to persuade me: the supplied interpretation where the speaker will do it anyway. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "Меня не надо уговаривать." with the admitted gloss "There is no need to persuade me" ("as I will do it anyway").
-whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Не надо меня уговаривать." with the admitted gloss "One should not persuade me" ("as I would never agree to do something").
-Не надо меня уговаривать. is the reference cue; One should not persuade me matches the requested meaning or structure. the supplied interpretation where the speaker would never agree.
-contrastMembers=One should not persuade me | There is no need to persuade me
-relationKind=EXPLICIT_SOURCE_PAIR
-relationParticipantIds=prov-ex-u24-word-order-contrast-0-ru | prov-ex-u24-word-order-contrast-0-en | prov-ex-u24-word-order-contrast-1-en
+answerSourceIds=prov-ca-u24-context-transfer-u24-g-context-subject-focus-1
+distractorSourceIds= | prov-ca-u24-context-transfer-u24-g-context-subject-focus-2
+distractorDifference= | To the shop—that's where I went. is the source’s destination-focus interpretation for В магазин я пошёл. in its supplied response context, rather than the highlighted-person reading requested here.
+whyAnswerDemonstratesObjective=В магазин пошёл я. has the supplied subject-focus interpretation It was me who went to the shop. The context highlights the speaker as the person who went. This is an introductory supplied example; it does not establish every word order, a unique interpretation without context or independent subject-focus mastery.
+contrastMembers=It was me who went to the shop. | To the shop—that's where I went.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u24-context-transfer-u24-g-context-subject-focus-0 | prov-ca-u24-context-transfer-u24-g-context-subject-focus-1 | prov-ca-u24-context-transfer-u24-g-context-subject-focus-2
 responseKind=ENGLISH_CLASSIFICATION
 
 ### GUIDED_PRACTICE `u24-g-placement-0`
@@ -6764,6 +6805,580 @@ attribution=Russian Companion content-audit research synthesis, content-audit-20
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
 sourceHash=d62affac6cbacfaa1928e34e8a9910bbc28b84043ef866bfee24522fd6601d53
 contentHash=7b752c9d7fe939a28acabf1ebd9c998d10085ece58572278168a8a5319cf4de4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-context-transfer-guided-feedback`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-orient, u24-s-word-order-contrast
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d5fb6974c35b49c18396382b6ab1844422b257fae8d547d0fd8a2b51806c8c0e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-word-order-contrast:transfer:guided-feedback
+originalSourceText=Complete retained Wikipedia Russian grammar1369617627 Syntax section, actual retained Wikipedia:Copyrights1369466282/CC BY-SA4.0 contributor-history/stable-oldid attribution. Exact native and English selections with existing mechanical emphasis/link-label unfolding; no native generation, stress insertion, punctuation repair, private Penguin prose/media or new source/rights declaration. Guided subject-focus example В магазин пошёл я. / It was me who went to the shop. is distinct from both independent persuasion sentences. The objective explicitly covers supplied readings in stated contexts; independently assessed claims remain the two original persuasion readings, unchanged. Subject-focus is introductory guided evidence, not independently demonstrated emphasis mastery. Preserve original persuasion native examples, both correct independent items, all prior provenance/capabilities/source/rights/mappings and other units. Original repeated correct guided persuasion item stays optional SOURCE_MEANING on non-gating GUIDANCE, outside prescribed credit. No universal word-order/intonation meaning switch, all possible permutations, inference of present time from a past verb, on-foot meaning without its supplied context or productive grammar claim. The broad/inaccurate original source claims remain raw historical evidence but are not adopted. English explanation keeps actual context and ambiguity; never infer prohibition versus no-need from word order alone. All three teaching cards precede practice; full remediation remains. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic review pending.
+В магазин пошёл я. has the supplied subject-focus interpretation It was me who went to the shop. The context highlights the speaker as the person who went. This is an introductory supplied example; it does not establish every word order, a unique interpretation without context or independent subject-focus mastery.
+shippedText=В магазин пошёл я. has the supplied subject-focus interpretation It was me who went to the shop. The context highlights the speaker as the person who went. This is an introductory supplied example; it does not establish every word order, a unique interpretation without context or independent subject-focus mastery.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=937aaf6b6d154249163f8689aa1d7d82e166db16e40c5c8cdeb3f1f1420395ef
+contentHash=20462a004229bab2f6c5aac1370b2096a612cf051e55836deaff3a380cf65bd2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-context-transfer-guided-prompt`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-orient, u24-s-word-order-contrast
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a3de0a477fd904842a3217f09020cb933177c99e898e934a42afede0194e988d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-word-order-contrast:transfer:guided-prompt
+originalSourceText=Complete retained Wikipedia Russian grammar1369617627 Syntax section, actual retained Wikipedia:Copyrights1369466282/CC BY-SA4.0 contributor-history/stable-oldid attribution. Exact native and English selections with existing mechanical emphasis/link-label unfolding; no native generation, stress insertion, punctuation repair, private Penguin prose/media or new source/rights declaration. Guided subject-focus example В магазин пошёл я. / It was me who went to the shop. is distinct from both independent persuasion sentences. The objective explicitly covers supplied readings in stated contexts; independently assessed claims remain the two original persuasion readings, unchanged. Subject-focus is introductory guided evidence, not independently demonstrated emphasis mastery. Preserve original persuasion native examples, both correct independent items, all prior provenance/capabilities/source/rights/mappings and other units. Original repeated correct guided persuasion item stays optional SOURCE_MEANING on non-gating GUIDANCE, outside prescribed credit. No universal word-order/intonation meaning switch, all possible permutations, inference of present time from a past verb, on-foot meaning without its supplied context or productive grammar claim. The broad/inaccurate original source claims remain raw historical evidence but are not adopted. English explanation keeps actual context and ambiguity; never infer prohibition versus no-need from word order alone. All three teaching cards precede practice; full remediation remains. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic review pending.
+The supplied context emphasizes who went to the shop. Which English interpretation fits the sentence?
+shippedText=The supplied context emphasizes who went to the shop. Which English interpretation fits the sentence?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=84de85658ef1e9202ea85332d74bdea6c18eea667e52ef7c77eec7c157b3a30d
+contentHash=75e0913e6175553fb1e4f04eebce54328aa5474b419186974bf0bce48f8ef837
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-context-transfer-guided-rationale`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-orient, u24-s-word-order-contrast
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a6e1180c6af71720a4f279a6b11efd7dcc97c6b84e371b48a70395f035b99420
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-word-order-contrast:transfer:guided-rationale
+originalSourceText=Complete retained Wikipedia Russian grammar1369617627 Syntax section, actual retained Wikipedia:Copyrights1369466282/CC BY-SA4.0 contributor-history/stable-oldid attribution. Exact native and English selections with existing mechanical emphasis/link-label unfolding; no native generation, stress insertion, punctuation repair, private Penguin prose/media or new source/rights declaration. Guided subject-focus example В магазин пошёл я. / It was me who went to the shop. is distinct from both independent persuasion sentences. The objective explicitly covers supplied readings in stated contexts; independently assessed claims remain the two original persuasion readings, unchanged. Subject-focus is introductory guided evidence, not independently demonstrated emphasis mastery. Preserve original persuasion native examples, both correct independent items, all prior provenance/capabilities/source/rights/mappings and other units. Original repeated correct guided persuasion item stays optional SOURCE_MEANING on non-gating GUIDANCE, outside prescribed credit. No universal word-order/intonation meaning switch, all possible permutations, inference of present time from a past verb, on-foot meaning without its supplied context or productive grammar claim. The broad/inaccurate original source claims remain raw historical evidence but are not adopted. English explanation keeps actual context and ambiguity; never infer prohibition versus no-need from word order alone. All three teaching cards precede practice; full remediation remains. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic review pending.
+To the shop—that's where I went. is the source’s destination-focus interpretation for В магазин я пошёл. in its supplied response context, rather than the highlighted-person reading requested here.
+shippedText=To the shop—that's where I went. is the source’s destination-focus interpretation for В магазин я пошёл. in its supplied response context, rather than the highlighted-person reading requested here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f12439308efd28e1f227e973a6b5bf82199b03bf9b8256420d6f675676e3ec16
+contentHash=a433916942c23bf2d73bc113d12d45ec5db54b9ed978fd6488931887ea8f3d3e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-context-transfer-objective-title`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-orient, u24-s-word-order-contrast
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 18d9fa664c0e5ace9986c9d26837030550c4c9e4ee689ead86269051053703d2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-word-order-contrast:transfer:objective-title
+originalSourceText=Complete retained Wikipedia Russian grammar1369617627 Syntax section, actual retained Wikipedia:Copyrights1369466282/CC BY-SA4.0 contributor-history/stable-oldid attribution. Exact native and English selections with existing mechanical emphasis/link-label unfolding; no native generation, stress insertion, punctuation repair, private Penguin prose/media or new source/rights declaration. Guided subject-focus example В магазин пошёл я. / It was me who went to the shop. is distinct from both independent persuasion sentences. The objective explicitly covers supplied readings in stated contexts; independently assessed claims remain the two original persuasion readings, unchanged. Subject-focus is introductory guided evidence, not independently demonstrated emphasis mastery. Preserve original persuasion native examples, both correct independent items, all prior provenance/capabilities/source/rights/mappings and other units. Original repeated correct guided persuasion item stays optional SOURCE_MEANING on non-gating GUIDANCE, outside prescribed credit. No universal word-order/intonation meaning switch, all possible permutations, inference of present time from a past verb, on-foot meaning without its supplied context or productive grammar claim. The broad/inaccurate original source claims remain raw historical evidence but are not adopted. English explanation keeps actual context and ambiguity; never infer prohibition versus no-need from word order alone. All three teaching cards precede practice; full remediation remains. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic review pending.
+Interpret the supplied readings in stated contexts
+shippedText=Interpret the supplied readings in stated contexts
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=93eac000905d584d1503eda2d0d000cc30d6540c7fcc6af9f68ba8463a913eb5
+contentHash=b91889c33488378deb0a99e24f284126f891278b2cb4b92193059f4167b2a25d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-context-transfer-reference-feedback`
+
+- Objectives: obj-u24-persuasion-reference
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 06d44f19593cbbba84f1ff91d351d78d1933e3a7371b3db5399211cff4288c7a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-persuasion-reference:transfer:reference-feedback
+originalSourceText=Complete retained Wikipedia Russian grammar1369617627 Syntax section, actual retained Wikipedia:Copyrights1369466282/CC BY-SA4.0 contributor-history/stable-oldid attribution. Exact native and English selections with existing mechanical emphasis/link-label unfolding; no native generation, stress insertion, punctuation repair, private Penguin prose/media or new source/rights declaration. Guided subject-focus example В магазин пошёл я. / It was me who went to the shop. is distinct from both independent persuasion sentences. The objective explicitly covers supplied readings in stated contexts; independently assessed claims remain the two original persuasion readings, unchanged. Subject-focus is introductory guided evidence, not independently demonstrated emphasis mastery. Preserve original persuasion native examples, both correct independent items, all prior provenance/capabilities/source/rights/mappings and other units. Original repeated correct guided persuasion item stays optional SOURCE_MEANING on non-gating GUIDANCE, outside prescribed credit. No universal word-order/intonation meaning switch, all possible permutations, inference of present time from a past verb, on-foot meaning without its supplied context or productive grammar claim. The broad/inaccurate original source claims remain raw historical evidence but are not adopted. English explanation keeps actual context and ambiguity; never infer prohibition versus no-need from word order alone. All three teaching cards precede practice; full remediation remains. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic review pending.
+The frozen source pairs the shown form "Не надо меня уговаривать." with the admitted gloss "One should not persuade me" ("as I would never agree to do something").
+Не надо меня уговаривать. is the reference cue; One should not persuade me matches the requested meaning or structure. the supplied interpretation where the speaker would never agree.
+shippedText=The frozen source pairs the shown form "Не надо меня уговаривать." with the admitted gloss "One should not persuade me" ("as I would never agree to do something").
+Не надо меня уговаривать. is the reference cue; One should not persuade me matches the requested meaning or structure. the supplied interpretation where the speaker would never agree.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d965eaf3f416e327fccd658fe9e16a1fc5de600dfbe5b9fd86527271724df525
+contentHash=b3cb3be431df027b81980edc37c6a664820960317a880543dd1676ff508150d8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-context-transfer-reference-objective-title`
+
+- Objectives: obj-u24-persuasion-reference
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 280d65aeb297853bcfabaf5a5ad7c54ad758d2ee51bcfc0873fa973e3caf9c30
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-persuasion-reference:transfer:reference-objective-title
+originalSourceText=Complete retained Wikipedia Russian grammar1369617627 Syntax section, actual retained Wikipedia:Copyrights1369466282/CC BY-SA4.0 contributor-history/stable-oldid attribution. Exact native and English selections with existing mechanical emphasis/link-label unfolding; no native generation, stress insertion, punctuation repair, private Penguin prose/media or new source/rights declaration. Guided subject-focus example В магазин пошёл я. / It was me who went to the shop. is distinct from both independent persuasion sentences. The objective explicitly covers supplied readings in stated contexts; independently assessed claims remain the two original persuasion readings, unchanged. Subject-focus is introductory guided evidence, not independently demonstrated emphasis mastery. Preserve original persuasion native examples, both correct independent items, all prior provenance/capabilities/source/rights/mappings and other units. Original repeated correct guided persuasion item stays optional SOURCE_MEANING on non-gating GUIDANCE, outside prescribed credit. No universal word-order/intonation meaning switch, all possible permutations, inference of present time from a past verb, on-foot meaning without its supplied context or productive grammar claim. The broad/inaccurate original source claims remain raw historical evidence but are not adopted. English explanation keeps actual context and ambiguity; never infer prohibition versus no-need from word order alone. All three teaching cards precede practice; full remediation remains. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic review pending.
+Optional persuasion reference
+shippedText=Optional persuasion reference
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=210a8aaf30a987f0f3fd3b6d8657f5e5fb756432345e149c94cb940cabe7090d
+contentHash=5143e080daf8ed27ad56e417037b8b63ec670df8566db28d14e27ff0659c3777
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-context-transfer-reference-prompt`
+
+- Objectives: obj-u24-persuasion-reference
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5669b24b4701a0c53d0d7ac46aced37807d118a84a1a955a60430b4d380a0d41
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-persuasion-reference:transfer:reference-prompt
+originalSourceText=Complete retained Wikipedia Russian grammar1369617627 Syntax section, actual retained Wikipedia:Copyrights1369466282/CC BY-SA4.0 contributor-history/stable-oldid attribution. Exact native and English selections with existing mechanical emphasis/link-label unfolding; no native generation, stress insertion, punctuation repair, private Penguin prose/media or new source/rights declaration. Guided subject-focus example В магазин пошёл я. / It was me who went to the shop. is distinct from both independent persuasion sentences. The objective explicitly covers supplied readings in stated contexts; independently assessed claims remain the two original persuasion readings, unchanged. Subject-focus is introductory guided evidence, not independently demonstrated emphasis mastery. Preserve original persuasion native examples, both correct independent items, all prior provenance/capabilities/source/rights/mappings and other units. Original repeated correct guided persuasion item stays optional SOURCE_MEANING on non-gating GUIDANCE, outside prescribed credit. No universal word-order/intonation meaning switch, all possible permutations, inference of present time from a past verb, on-foot meaning without its supplied context or productive grammar claim. The broad/inaccurate original source claims remain raw historical evidence but are not adopted. English explanation keeps actual context and ambiguity; never infer prohibition versus no-need from word order alone. All three teaching cards precede practice; full remediation remains. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic review pending.
+The speaker would never agree. Which supplied English interpretation fits the sentence in that context?
+shippedText=The speaker would never agree. Which supplied English interpretation fits the sentence in that context?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ca61542584056e1d6ae841a33473d0dcd7a7dd4f4f01ce33d796dafa1416d035
+contentHash=a4e84fea3281ee68e42c33546d737a3b20eb0e075b57d22241cd74d85274e6cb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-context-transfer-reference-rationale-1`
+
+- Objectives: obj-u24-persuasion-reference
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 61553e49c36d834780cbc0197a5a771bae1e73107a932cd623baa2917708cfa9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-persuasion-reference:transfer:reference-rationale-1
+originalSourceText=Complete retained Wikipedia Russian grammar1369617627 Syntax section, actual retained Wikipedia:Copyrights1369466282/CC BY-SA4.0 contributor-history/stable-oldid attribution. Exact native and English selections with existing mechanical emphasis/link-label unfolding; no native generation, stress insertion, punctuation repair, private Penguin prose/media or new source/rights declaration. Guided subject-focus example В магазин пошёл я. / It was me who went to the shop. is distinct from both independent persuasion sentences. The objective explicitly covers supplied readings in stated contexts; independently assessed claims remain the two original persuasion readings, unchanged. Subject-focus is introductory guided evidence, not independently demonstrated emphasis mastery. Preserve original persuasion native examples, both correct independent items, all prior provenance/capabilities/source/rights/mappings and other units. Original repeated correct guided persuasion item stays optional SOURCE_MEANING on non-gating GUIDANCE, outside prescribed credit. No universal word-order/intonation meaning switch, all possible permutations, inference of present time from a past verb, on-foot meaning without its supplied context or productive grammar claim. The broad/inaccurate original source claims remain raw historical evidence but are not adopted. English explanation keeps actual context and ambiguity; never infer prohibition versus no-need from word order alone. All three teaching cards precede practice; full remediation remains. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic review pending.
+There is no need to persuade me: the supplied interpretation where the speaker will do it anyway. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "Меня не надо уговаривать." with the admitted gloss "There is no need to persuade me" ("as I will do it anyway").
+shippedText=There is no need to persuade me: the supplied interpretation where the speaker will do it anyway. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form "Меня не надо уговаривать." with the admitted gloss "There is no need to persuade me" ("as I will do it anyway").
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5e4bf09c22afef01c2d5ae87acf5d516a12b91502f5cc1500915f15193cfa62d
+contentHash=2aa451439a8e4fe132cfaf1a086fbd0859b5fab0a5a3442904c2574c8bc922c5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-context-transfer-reference-teaching-body`
+
+- Objectives: obj-u24-persuasion-reference
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1378e393a89aab48efbbf4622683a8c15fab9a47e9ab1697cf8cda6396d64d28
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-persuasion-reference:transfer:reference-teaching-body
+originalSourceText=Complete retained Wikipedia Russian grammar1369617627 Syntax section, actual retained Wikipedia:Copyrights1369466282/CC BY-SA4.0 contributor-history/stable-oldid attribution. Exact native and English selections with existing mechanical emphasis/link-label unfolding; no native generation, stress insertion, punctuation repair, private Penguin prose/media or new source/rights declaration. Guided subject-focus example В магазин пошёл я. / It was me who went to the shop. is distinct from both independent persuasion sentences. The objective explicitly covers supplied readings in stated contexts; independently assessed claims remain the two original persuasion readings, unchanged. Subject-focus is introductory guided evidence, not independently demonstrated emphasis mastery. Preserve original persuasion native examples, both correct independent items, all prior provenance/capabilities/source/rights/mappings and other units. Original repeated correct guided persuasion item stays optional SOURCE_MEANING on non-gating GUIDANCE, outside prescribed credit. No universal word-order/intonation meaning switch, all possible permutations, inference of present time from a past verb, on-foot meaning without its supplied context or productive grammar claim. The broad/inaccurate original source claims remain raw historical evidence but are not adopted. English explanation keeps actual context and ambiguity; never infer prohibition versus no-need from word order alone. All three teaching cards precede practice; full remediation remains. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic review pending.
+Не надо меня уговаривать. — One should not persuade me in the supplied context where the speaker would never agree. Меня не надо уговаривать. — There is no need to persuade me in the supplied context where the speaker will do it anyway. The questions provide these contexts rather than asking you to infer one unique interpretation from word order alone.
+shippedText=Не надо меня уговаривать. — One should not persuade me in the supplied context where the speaker would never agree. Меня не надо уговаривать. — There is no need to persuade me in the supplied context where the speaker will do it anyway. The questions provide these contexts rather than asking you to infer one unique interpretation from word order alone.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=46414d0a522f216417da66655dabd6e23c9764a0673b011da7ddfc7083f202f8
+contentHash=b8174181643994e43e4e187e15df260ac3e6e151b8ebf1d160de67b21ac485a1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-context-transfer-reference-teaching-title`
+
+- Objectives: obj-u24-persuasion-reference
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bcb17c63a353de261e2c6bc958e0e23e9dd43ca195dbd39fc4419edc87673019
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-persuasion-reference:transfer:reference-teaching-title
+originalSourceText=Complete retained Wikipedia Russian grammar1369617627 Syntax section, actual retained Wikipedia:Copyrights1369466282/CC BY-SA4.0 contributor-history/stable-oldid attribution. Exact native and English selections with existing mechanical emphasis/link-label unfolding; no native generation, stress insertion, punctuation repair, private Penguin prose/media or new source/rights declaration. Guided subject-focus example В магазин пошёл я. / It was me who went to the shop. is distinct from both independent persuasion sentences. The objective explicitly covers supplied readings in stated contexts; independently assessed claims remain the two original persuasion readings, unchanged. Subject-focus is introductory guided evidence, not independently demonstrated emphasis mastery. Preserve original persuasion native examples, both correct independent items, all prior provenance/capabilities/source/rights/mappings and other units. Original repeated correct guided persuasion item stays optional SOURCE_MEANING on non-gating GUIDANCE, outside prescribed credit. No universal word-order/intonation meaning switch, all possible permutations, inference of present time from a past verb, on-foot meaning without its supplied context or productive grammar claim. The broad/inaccurate original source claims remain raw historical evidence but are not adopted. English explanation keeps actual context and ambiguity; never infer prohibition versus no-need from word order alone. All three teaching cards precede practice; full remediation remains. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic review pending.
+Two supplied readings with their stated contexts
+shippedText=Two supplied readings with their stated contexts
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=33e35b8432f0fd47f22217feb54d52c4a700f4e65e7ae8cefea6b460824f0f2f
+contentHash=acdfd6ae1409253614e6e6ad5624ffbaa2c680b1afe30a3ab29fbaf4d7c5cc88
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-context-transfer-remediation-body`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-orient, u24-s-word-order-contrast
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a6a56319dac7ffbf4005c6d202a44e0c9c0ddf1024d88e9afc2dc230a5e1db5d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-word-order-contrast:transfer:remediation-body
+originalSourceText=Complete retained Wikipedia Russian grammar1369617627 Syntax section, actual retained Wikipedia:Copyrights1369466282/CC BY-SA4.0 contributor-history/stable-oldid attribution. Exact native and English selections with existing mechanical emphasis/link-label unfolding; no native generation, stress insertion, punctuation repair, private Penguin prose/media or new source/rights declaration. Guided subject-focus example В магазин пошёл я. / It was me who went to the shop. is distinct from both independent persuasion sentences. The objective explicitly covers supplied readings in stated contexts; independently assessed claims remain the two original persuasion readings, unchanged. Subject-focus is introductory guided evidence, not independently demonstrated emphasis mastery. Preserve original persuasion native examples, both correct independent items, all prior provenance/capabilities/source/rights/mappings and other units. Original repeated correct guided persuasion item stays optional SOURCE_MEANING on non-gating GUIDANCE, outside prescribed credit. No universal word-order/intonation meaning switch, all possible permutations, inference of present time from a past verb, on-foot meaning without its supplied context or productive grammar claim. The broad/inaccurate original source claims remain raw historical evidence but are not adopted. English explanation keeps actual context and ambiguity; never infer prohibition versus no-need from word order alone. All three teaching cards precede practice; full remediation remains. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic review pending.
+Не надо меня уговаривать. — One should not persuade me in the supplied context where the speaker would never agree. Меня не надо уговаривать. — There is no need to persuade me in the supplied context where the speaker will do it anyway. The questions provide these contexts rather than asking you to infer one unique interpretation from word order alone.
+
+Word order can change what is in focus or in the scope of a particle. It does not by itself assign one unique meaning to every sentence. Intonation and discourse context matter as well. The current source illustrates these two contextual readings; a speaker could use a sentence with a different intended emphasis in another context. The checks recognize the supplied reading, not a universal rule that moving the subject always changes prohibition into lack of necessity.
+
+В магазин пошёл я. — It was me who went to the shop. In this supplied example the person who went is highlighted. Compare В магазин я пошёл. — To the shop—that's where I went. in the source’s destination-response context. Guided practice uses the highlighted-person example, with a different complete sentence and requested information from either independent persuasion check. The independent requirements still test both original persuasion contexts:the speaker will do it anyway, or the speaker would never agree. Subject-focus remains introductory guided evidence, not an independently demonstrated skill. Intonation and discourse context can affect readings; these examples do not establish a universal word-order switch or permission to infer present time from a past verb. The original repeated persuasion question remains optional reference practice and cannot credit or prevent the required objective.
+shippedText=Не надо меня уговаривать. — One should not persuade me in the supplied context where the speaker would never agree. Меня не надо уговаривать. — There is no need to persuade me in the supplied context where the speaker will do it anyway. The questions provide these contexts rather than asking you to infer one unique interpretation from word order alone.
+
+Word order can change what is in focus or in the scope of a particle. It does not by itself assign one unique meaning to every sentence. Intonation and discourse context matter as well. The current source illustrates these two contextual readings; a speaker could use a sentence with a different intended emphasis in another context. The checks recognize the supplied reading, not a universal rule that moving the subject always changes prohibition into lack of necessity.
+
+В магазин пошёл я. — It was me who went to the shop. In this supplied example the person who went is highlighted. Compare В магазин я пошёл. — To the shop—that's where I went. in the source’s destination-response context. Guided practice uses the highlighted-person example, with a different complete sentence and requested information from either independent persuasion check. The independent requirements still test both original persuasion contexts:the speaker will do it anyway, or the speaker would never agree. Subject-focus remains introductory guided evidence, not an independently demonstrated skill. Intonation and discourse context can affect readings; these examples do not establish a universal word-order switch or permission to infer present time from a past verb. The original repeated persuasion question remains optional reference practice and cannot credit or prevent the required objective.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=83e653b2368c475002ce2ee494f9105a66bf8f186261d559fcabdb4e35324629
+contentHash=09b4e64daebd3313ffef400429e1ea8e4fbd00df2d3cd0519aeb7190767304e5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-context-transfer-session-title`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-orient, u24-s-word-order-contrast
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 65dc2d79e087b0b777b2b76f54d5526984f4451ab35aad24f9febd07b90a2195
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-word-order-contrast:transfer:session-title
+originalSourceText=Complete retained Wikipedia Russian grammar1369617627 Syntax section, actual retained Wikipedia:Copyrights1369466282/CC BY-SA4.0 contributor-history/stable-oldid attribution. Exact native and English selections with existing mechanical emphasis/link-label unfolding; no native generation, stress insertion, punctuation repair, private Penguin prose/media or new source/rights declaration. Guided subject-focus example В магазин пошёл я. / It was me who went to the shop. is distinct from both independent persuasion sentences. The objective explicitly covers supplied readings in stated contexts; independently assessed claims remain the two original persuasion readings, unchanged. Subject-focus is introductory guided evidence, not independently demonstrated emphasis mastery. Preserve original persuasion native examples, both correct independent items, all prior provenance/capabilities/source/rights/mappings and other units. Original repeated correct guided persuasion item stays optional SOURCE_MEANING on non-gating GUIDANCE, outside prescribed credit. No universal word-order/intonation meaning switch, all possible permutations, inference of present time from a past verb, on-foot meaning without its supplied context or productive grammar claim. The broad/inaccurate original source claims remain raw historical evidence but are not adopted. English explanation keeps actual context and ambiguity; never infer prohibition versus no-need from word order alone. All three teaching cards precede practice; full remediation remains. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic review pending.
+Interpret the supplied readings in stated contexts
+shippedText=Interpret the supplied readings in stated contexts
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=93eac000905d584d1503eda2d0d000cc30d6540c7fcc6af9f68ba8463a913eb5
+contentHash=b91889c33488378deb0a99e24f284126f891278b2cb4b92193059f4167b2a25d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-context-transfer-teach-3-body`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-orient, u24-s-word-order-contrast
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fa83d1c1cb55d5d8875737cb2f35a5905c9a10a6c803406b2eff854e679ecb2e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-word-order-contrast:transfer:teach-3-body
+originalSourceText=Complete retained Wikipedia Russian grammar1369617627 Syntax section, actual retained Wikipedia:Copyrights1369466282/CC BY-SA4.0 contributor-history/stable-oldid attribution. Exact native and English selections with existing mechanical emphasis/link-label unfolding; no native generation, stress insertion, punctuation repair, private Penguin prose/media or new source/rights declaration. Guided subject-focus example В магазин пошёл я. / It was me who went to the shop. is distinct from both independent persuasion sentences. The objective explicitly covers supplied readings in stated contexts; independently assessed claims remain the two original persuasion readings, unchanged. Subject-focus is introductory guided evidence, not independently demonstrated emphasis mastery. Preserve original persuasion native examples, both correct independent items, all prior provenance/capabilities/source/rights/mappings and other units. Original repeated correct guided persuasion item stays optional SOURCE_MEANING on non-gating GUIDANCE, outside prescribed credit. No universal word-order/intonation meaning switch, all possible permutations, inference of present time from a past verb, on-foot meaning without its supplied context or productive grammar claim. The broad/inaccurate original source claims remain raw historical evidence but are not adopted. English explanation keeps actual context and ambiguity; never infer prohibition versus no-need from word order alone. All three teaching cards precede practice; full remediation remains. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic review pending.
+В магазин пошёл я. — It was me who went to the shop. In this supplied example the person who went is highlighted. Compare В магазин я пошёл. — To the shop—that's where I went. in the source’s destination-response context. Guided practice uses the highlighted-person example, with a different complete sentence and requested information from either independent persuasion check. The independent requirements still test both original persuasion contexts:the speaker will do it anyway, or the speaker would never agree. Subject-focus remains introductory guided evidence, not an independently demonstrated skill. Intonation and discourse context can affect readings; these examples do not establish a universal word-order switch or permission to infer present time from a past verb. The original repeated persuasion question remains optional reference practice and cannot credit or prevent the required objective.
+shippedText=В магазин пошёл я. — It was me who went to the shop. In this supplied example the person who went is highlighted. Compare В магазин я пошёл. — To the shop—that's where I went. in the source’s destination-response context. Guided practice uses the highlighted-person example, with a different complete sentence and requested information from either independent persuasion check. The independent requirements still test both original persuasion contexts:the speaker will do it anyway, or the speaker would never agree. Subject-focus remains introductory guided evidence, not an independently demonstrated skill. Intonation and discourse context can affect readings; these examples do not establish a universal word-order switch or permission to infer present time from a past verb. The original repeated persuasion question remains optional reference practice and cannot credit or prevent the required objective.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c75d821fe31bf416c9e9270cc6949c963374e91a76440915ac7325a72a844eb8
+contentHash=7d6463cc80312a2d9caac4684c26e9f49d13d834232068b83c86cc4b02ec3cfc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-context-transfer-teach-3-title`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-orient, u24-s-word-order-contrast
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ee76c274e0d74e92471ee1271f3c13351229c3c1a4b49f5ae989b4f9f3588238
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u24-word-order-contrast:transfer:teach-3-title
+originalSourceText=Complete retained Wikipedia Russian grammar1369617627 Syntax section, actual retained Wikipedia:Copyrights1369466282/CC BY-SA4.0 contributor-history/stable-oldid attribution. Exact native and English selections with existing mechanical emphasis/link-label unfolding; no native generation, stress insertion, punctuation repair, private Penguin prose/media or new source/rights declaration. Guided subject-focus example В магазин пошёл я. / It was me who went to the shop. is distinct from both independent persuasion sentences. The objective explicitly covers supplied readings in stated contexts; independently assessed claims remain the two original persuasion readings, unchanged. Subject-focus is introductory guided evidence, not independently demonstrated emphasis mastery. Preserve original persuasion native examples, both correct independent items, all prior provenance/capabilities/source/rights/mappings and other units. Original repeated correct guided persuasion item stays optional SOURCE_MEANING on non-gating GUIDANCE, outside prescribed credit. No universal word-order/intonation meaning switch, all possible permutations, inference of present time from a past verb, on-foot meaning without its supplied context or productive grammar claim. The broad/inaccurate original source claims remain raw historical evidence but are not adopted. English explanation keeps actual context and ambiguity; never infer prohibition versus no-need from word order alone. All three teaching cards precede practice; full remediation remains. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic review pending.
+Use context to identify the supplied emphasis
+shippedText=Use context to identify the supplied emphasis
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f247aa847629e5736ce9b89a0b229a74f6ecc97b14fdbb961bc70dde73a59231
+contentHash=2bcbd688f875610ee70f1c755652540e0425fb80f828adcb68e871e78197fd16
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-context-transfer-u24-g-context-subject-focus-0`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-orient, u24-s-word-order-contrast
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7066328c6fc8db1f846af4a37db0226776526ee9df7792ceb0227f40e138e68c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u24-g-context-subject-focus
+originalSourceText=Complete retained Wikipedia Russian grammar1369617627 Syntax section, actual retained Wikipedia:Copyrights1369466282/CC BY-SA4.0 contributor-history/stable-oldid attribution. Exact native and English selections with existing mechanical emphasis/link-label unfolding; no native generation, stress insertion, punctuation repair, private Penguin prose/media or new source/rights declaration. Guided subject-focus example В магазин пошёл я. / It was me who went to the shop. is distinct from both independent persuasion sentences. The objective explicitly covers supplied readings in stated contexts; independently assessed claims remain the two original persuasion readings, unchanged. Subject-focus is introductory guided evidence, not independently demonstrated emphasis mastery. Preserve original persuasion native examples, both correct independent items, all prior provenance/capabilities/source/rights/mappings and other units. Original repeated correct guided persuasion item stays optional SOURCE_MEANING on non-gating GUIDANCE, outside prescribed credit. No universal word-order/intonation meaning switch, all possible permutations, inference of present time from a past verb, on-foot meaning without its supplied context or productive grammar claim. The broad/inaccurate original source claims remain raw historical evidence but are not adopted. English explanation keeps actual context and ambiguity; never infer prohibition versus no-need from word order alone. All three teaching cards precede practice; full remediation remains. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic review pending.
+Complete raw context:
+== Syntax ==
+Basic word order, both in conversation and written language, is [[subject–verb–object]]. However, because grammatical relationships are marked by inflection, considerable latitude in word order is allowed, and all possible permutations can be used. For example, the words in the phrase "я пошёл в магазин" ('I went to the shop') can be arranged:
+* Я пошёл в магазин. (I went to the shop; ''I went to the shop.'')
+* Я в магазин пошёл. (I to the shop went; approx. ''I am going out, my destination is the shop.'')
+* Пошёл я в магазин. (Went I to the shop; two meanings: can be treated as a beginning of a narrated story: ''"Went I to the shop, and something happened."'' or a decision made by someone after a long contemplation: ''"OK, I think I will go the shop."'')
+* Пошёл в магазин я. (Went to the shop I; rarely used, can be treated as a beginning of a line of a poem written in amphibrach due to uncommon word order, or when the speaker wants to highlight that exactly this subject "went to the shop". In that case, the subject is stressed)
+* В магазин я пошёл. (To the shop I went; two meanings: can be used as a response: "I went to the shop." – "Sorry, where did you go?" – ''"To the shop—that's where I went."'' or an emphasis on the way of transportation: ''I went to the shop on foot.'')
+* В магазин пошёл я. (To the shop went I; ''It was me who went to the shop.'')
+while maintaining grammatical correctness. Note, however, that the order of the phrase "в магазин" ("to the shop") is kept constant.
+
+Word order can express logical stress, and degree of definiteness. The primary emphasis tends to be initial, with a weaker emphasis at the end. Some of these arrangements can describe present actions, not only past (despite the fact that the verb ''пошёл'' is in the past).
+
+In some cases, alternative word order can change the meaning entirely:
+* Не надо меня уговаривать. ("No need me [to] persuade" → One should not persuade me [''as I would never agree to do something''].)
+* Меня не надо уговаривать. ("Me no need [to] persuade" → There is no need to persuade me [''as I will do it anyway''].)
+Context explanation:
+В магазин пошёл я. has the supplied subject-focus interpretation It was me who went to the shop. The context highlights the speaker as the person who went. This is an introductory supplied example; it does not establish every word order, a unique interpretation without context or independent subject-focus mastery.
+Tuple-v1:tuple-v1:1;32:В магазин пошёл я.31:It was me who went to the shop.1;34:To the shop—that's where I went.
+shippedText=В магазин пошёл я.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7a075170a10d222fa2221ec794f0f5b0bf69a647ecd0c9202e8a3a5683642bef
+contentHash=c9ffe57d295efc1cb0730cd28dbfb851c0eb814c0ec1c64b423fe297f8b0a2fb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-context-transfer-u24-g-context-subject-focus-1`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-orient, u24-s-word-order-contrast
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 058cce48accdca540a0a284363df91b84538f300d169c21effb7e488dce6229e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u24-g-context-subject-focus
+originalSourceText=Complete retained Wikipedia Russian grammar1369617627 Syntax section, actual retained Wikipedia:Copyrights1369466282/CC BY-SA4.0 contributor-history/stable-oldid attribution. Exact native and English selections with existing mechanical emphasis/link-label unfolding; no native generation, stress insertion, punctuation repair, private Penguin prose/media or new source/rights declaration. Guided subject-focus example В магазин пошёл я. / It was me who went to the shop. is distinct from both independent persuasion sentences. The objective explicitly covers supplied readings in stated contexts; independently assessed claims remain the two original persuasion readings, unchanged. Subject-focus is introductory guided evidence, not independently demonstrated emphasis mastery. Preserve original persuasion native examples, both correct independent items, all prior provenance/capabilities/source/rights/mappings and other units. Original repeated correct guided persuasion item stays optional SOURCE_MEANING on non-gating GUIDANCE, outside prescribed credit. No universal word-order/intonation meaning switch, all possible permutations, inference of present time from a past verb, on-foot meaning without its supplied context or productive grammar claim. The broad/inaccurate original source claims remain raw historical evidence but are not adopted. English explanation keeps actual context and ambiguity; never infer prohibition versus no-need from word order alone. All three teaching cards precede practice; full remediation remains. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic review pending.
+Complete raw context:
+== Syntax ==
+Basic word order, both in conversation and written language, is [[subject–verb–object]]. However, because grammatical relationships are marked by inflection, considerable latitude in word order is allowed, and all possible permutations can be used. For example, the words in the phrase "я пошёл в магазин" ('I went to the shop') can be arranged:
+* Я пошёл в магазин. (I went to the shop; ''I went to the shop.'')
+* Я в магазин пошёл. (I to the shop went; approx. ''I am going out, my destination is the shop.'')
+* Пошёл я в магазин. (Went I to the shop; two meanings: can be treated as a beginning of a narrated story: ''"Went I to the shop, and something happened."'' or a decision made by someone after a long contemplation: ''"OK, I think I will go the shop."'')
+* Пошёл в магазин я. (Went to the shop I; rarely used, can be treated as a beginning of a line of a poem written in amphibrach due to uncommon word order, or when the speaker wants to highlight that exactly this subject "went to the shop". In that case, the subject is stressed)
+* В магазин я пошёл. (To the shop I went; two meanings: can be used as a response: "I went to the shop." – "Sorry, where did you go?" – ''"To the shop—that's where I went."'' or an emphasis on the way of transportation: ''I went to the shop on foot.'')
+* В магазин пошёл я. (To the shop went I; ''It was me who went to the shop.'')
+while maintaining grammatical correctness. Note, however, that the order of the phrase "в магазин" ("to the shop") is kept constant.
+
+Word order can express logical stress, and degree of definiteness. The primary emphasis tends to be initial, with a weaker emphasis at the end. Some of these arrangements can describe present actions, not only past (despite the fact that the verb ''пошёл'' is in the past).
+
+In some cases, alternative word order can change the meaning entirely:
+* Не надо меня уговаривать. ("No need me [to] persuade" → One should not persuade me [''as I would never agree to do something''].)
+* Меня не надо уговаривать. ("Me no need [to] persuade" → There is no need to persuade me [''as I will do it anyway''].)
+Context explanation:
+В магазин пошёл я. has the supplied subject-focus interpretation It was me who went to the shop. The context highlights the speaker as the person who went. This is an introductory supplied example; it does not establish every word order, a unique interpretation without context or independent subject-focus mastery.
+Tuple-v1:tuple-v1:1;32:В магазин пошёл я.31:It was me who went to the shop.1;34:To the shop—that's where I went.
+shippedText=It was me who went to the shop.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7a075170a10d222fa2221ec794f0f5b0bf69a647ecd0c9202e8a3a5683642bef
+contentHash=87bf836b7184d5decbb54ef64ba3473795fbbecbf252d6178b75fd5ba704d8dd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u24-context-transfer-u24-g-context-subject-focus-2`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-orient, u24-s-word-order-contrast
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 14241a8281a6f7a0f7891bb64f33c55a3c237b3d591258d7a52510297b78123b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u24-g-context-subject-focus
+originalSourceText=Complete retained Wikipedia Russian grammar1369617627 Syntax section, actual retained Wikipedia:Copyrights1369466282/CC BY-SA4.0 contributor-history/stable-oldid attribution. Exact native and English selections with existing mechanical emphasis/link-label unfolding; no native generation, stress insertion, punctuation repair, private Penguin prose/media or new source/rights declaration. Guided subject-focus example В магазин пошёл я. / It was me who went to the shop. is distinct from both independent persuasion sentences. The objective explicitly covers supplied readings in stated contexts; independently assessed claims remain the two original persuasion readings, unchanged. Subject-focus is introductory guided evidence, not independently demonstrated emphasis mastery. Preserve original persuasion native examples, both correct independent items, all prior provenance/capabilities/source/rights/mappings and other units. Original repeated correct guided persuasion item stays optional SOURCE_MEANING on non-gating GUIDANCE, outside prescribed credit. No universal word-order/intonation meaning switch, all possible permutations, inference of present time from a past verb, on-foot meaning without its supplied context or productive grammar claim. The broad/inaccurate original source claims remain raw historical evidence but are not adopted. English explanation keeps actual context and ambiguity; never infer prohibition versus no-need from word order alone. All three teaching cards precede practice; full remediation remains. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic review pending.
+Complete raw context:
+== Syntax ==
+Basic word order, both in conversation and written language, is [[subject–verb–object]]. However, because grammatical relationships are marked by inflection, considerable latitude in word order is allowed, and all possible permutations can be used. For example, the words in the phrase "я пошёл в магазин" ('I went to the shop') can be arranged:
+* Я пошёл в магазин. (I went to the shop; ''I went to the shop.'')
+* Я в магазин пошёл. (I to the shop went; approx. ''I am going out, my destination is the shop.'')
+* Пошёл я в магазин. (Went I to the shop; two meanings: can be treated as a beginning of a narrated story: ''"Went I to the shop, and something happened."'' or a decision made by someone after a long contemplation: ''"OK, I think I will go the shop."'')
+* Пошёл в магазин я. (Went to the shop I; rarely used, can be treated as a beginning of a line of a poem written in amphibrach due to uncommon word order, or when the speaker wants to highlight that exactly this subject "went to the shop". In that case, the subject is stressed)
+* В магазин я пошёл. (To the shop I went; two meanings: can be used as a response: "I went to the shop." – "Sorry, where did you go?" – ''"To the shop—that's where I went."'' or an emphasis on the way of transportation: ''I went to the shop on foot.'')
+* В магазин пошёл я. (To the shop went I; ''It was me who went to the shop.'')
+while maintaining grammatical correctness. Note, however, that the order of the phrase "в магазин" ("to the shop") is kept constant.
+
+Word order can express logical stress, and degree of definiteness. The primary emphasis tends to be initial, with a weaker emphasis at the end. Some of these arrangements can describe present actions, not only past (despite the fact that the verb ''пошёл'' is in the past).
+
+In some cases, alternative word order can change the meaning entirely:
+* Не надо меня уговаривать. ("No need me [to] persuade" → One should not persuade me [''as I would never agree to do something''].)
+* Меня не надо уговаривать. ("Me no need [to] persuade" → There is no need to persuade me [''as I will do it anyway''].)
+Context explanation:
+В магазин пошёл я. has the supplied subject-focus interpretation It was me who went to the shop. The context highlights the speaker as the person who went. This is an introductory supplied example; it does not establish every word order, a unique interpretation without context or independent subject-focus mastery.
+Tuple-v1:tuple-v1:1;32:В магазин пошёл я.31:It was me who went to the shop.1;34:To the shop—that's where I went.
+shippedText=To the shop—that's where I went.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7a075170a10d222fa2221ec794f0f5b0bf69a647ecd0c9202e8a3a5683642bef
+contentHash=a7a2246a5e88baf0e0de23b7439bdbf5cf8e305e503f1022b5926a862a4e2466
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -12531,6 +13146,310 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-u24-context-transfer-native-destination-en`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-orient, u24-s-word-order-contrast
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 23776ab4b6638feea39bb55c90fa15bb65240d0248df6824f902d29c07e43092
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=context-guided-subject-focus:== Syntax ==
+Basic word order, both in conversation and written language, is 
+originalSourceText=== Syntax ==
+Basic word order, both in conversation and written language, is [[subject–verb–object]]. However, because grammatical relationships are marked by inflection, considerable latitude in word order is allowed, and all possible permutations can be used. For example, the words in the phrase "я пошёл в магазин" ('I went to the shop') can be arranged:
+* Я пошёл в магазин. (I went to the shop; ''I went to the shop.'')
+* Я в магазин пошёл. (I to the shop went; approx. ''I am going out, my destination is the shop.'')
+* Пошёл я в магазин. (Went I to the shop; two meanings: can be treated as a beginning of a narrated story: ''"Went I to the shop, and something happened."'' or a decision made by someone after a long contemplation: ''"OK, I think I will go the shop."'')
+* Пошёл в магазин я. (Went to the shop I; rarely used, can be treated as a beginning of a line of a poem written in amphibrach due to uncommon word order, or when the speaker wants to highlight that exactly this subject "went to the shop". In that case, the subject is stressed)
+* В магазин я пошёл. (To the shop I went; two meanings: can be used as a response: "I went to the shop." – "Sorry, where did you go?" – ''"To the shop—that's where I went."'' or an emphasis on the way of transportation: ''I went to the shop on foot.'')
+* В магазин пошёл я. (To the shop went I; ''It was me who went to the shop.'')
+while maintaining grammatical correctness. Note, however, that the order of the phrase "в магазин" ("to the shop") is kept constant.
+
+Word order can express logical stress, and degree of definiteness. The primary emphasis tends to be initial, with a weaker emphasis at the end. Some of these arrangements can describe present actions, not only past (despite the fact that the verb ''пошёл'' is in the past).
+
+In some cases, alternative word order can change the meaning entirely:
+* Не надо меня уговаривать. ("No need me [to] persuade" → One should not persuade me [''as I would never agree to do something''].)
+* Меня не надо уговаривать. ("Me no need [to] persuade" → There is no need to persuade me [''as I will do it anyway''].)
+shippedText=To the shop—that's where I went.
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=de21f95b9b994a9013d8f6d9796ffde4c38648b48c3156fce81fb66427522205
+contentHash=a7a2246a5e88baf0e0de23b7439bdbf5cf8e305e503f1022b5926a862a4e2466
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u24-context-transfer-native-destination-ru`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-orient, u24-s-word-order-contrast
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2cf3549fdb51b414ec93273b61c9457c8be3772330700f3ca1efdd49b1a190dc
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=context-guided-subject-focus:== Syntax ==
+Basic word order, both in conversation and written language, is 
+originalSourceText=== Syntax ==
+Basic word order, both in conversation and written language, is [[subject–verb–object]]. However, because grammatical relationships are marked by inflection, considerable latitude in word order is allowed, and all possible permutations can be used. For example, the words in the phrase "я пошёл в магазин" ('I went to the shop') can be arranged:
+* Я пошёл в магазин. (I went to the shop; ''I went to the shop.'')
+* Я в магазин пошёл. (I to the shop went; approx. ''I am going out, my destination is the shop.'')
+* Пошёл я в магазин. (Went I to the shop; two meanings: can be treated as a beginning of a narrated story: ''"Went I to the shop, and something happened."'' or a decision made by someone after a long contemplation: ''"OK, I think I will go the shop."'')
+* Пошёл в магазин я. (Went to the shop I; rarely used, can be treated as a beginning of a line of a poem written in amphibrach due to uncommon word order, or when the speaker wants to highlight that exactly this subject "went to the shop". In that case, the subject is stressed)
+* В магазин я пошёл. (To the shop I went; two meanings: can be used as a response: "I went to the shop." – "Sorry, where did you go?" – ''"To the shop—that's where I went."'' or an emphasis on the way of transportation: ''I went to the shop on foot.'')
+* В магазин пошёл я. (To the shop went I; ''It was me who went to the shop.'')
+while maintaining grammatical correctness. Note, however, that the order of the phrase "в магазин" ("to the shop") is kept constant.
+
+Word order can express logical stress, and degree of definiteness. The primary emphasis tends to be initial, with a weaker emphasis at the end. Some of these arrangements can describe present actions, not only past (despite the fact that the verb ''пошёл'' is in the past).
+
+In some cases, alternative word order can change the meaning entirely:
+* Не надо меня уговаривать. ("No need me [to] persuade" → One should not persuade me [''as I would never agree to do something''].)
+* Меня не надо уговаривать. ("Me no need [to] persuade" → There is no need to persuade me [''as I will do it anyway''].)
+shippedText=В магазин я пошёл.
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=de21f95b9b994a9013d8f6d9796ffde4c38648b48c3156fce81fb66427522205
+contentHash=6cf54b62adc7a6fb234c43f6e20d504e401a9932775832fedde78a79977de988
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u24-context-transfer-native-guide-en`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-orient, u24-s-word-order-contrast
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ae80b6fd35a3278aec5d459223af2f17bd1a596e64ed7e9fdbaeb623e080042b
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=context-guided-subject-focus:== Syntax ==
+Basic word order, both in conversation and written language, is 
+originalSourceText=== Syntax ==
+Basic word order, both in conversation and written language, is [[subject–verb–object]]. However, because grammatical relationships are marked by inflection, considerable latitude in word order is allowed, and all possible permutations can be used. For example, the words in the phrase "я пошёл в магазин" ('I went to the shop') can be arranged:
+* Я пошёл в магазин. (I went to the shop; ''I went to the shop.'')
+* Я в магазин пошёл. (I to the shop went; approx. ''I am going out, my destination is the shop.'')
+* Пошёл я в магазин. (Went I to the shop; two meanings: can be treated as a beginning of a narrated story: ''"Went I to the shop, and something happened."'' or a decision made by someone after a long contemplation: ''"OK, I think I will go the shop."'')
+* Пошёл в магазин я. (Went to the shop I; rarely used, can be treated as a beginning of a line of a poem written in amphibrach due to uncommon word order, or when the speaker wants to highlight that exactly this subject "went to the shop". In that case, the subject is stressed)
+* В магазин я пошёл. (To the shop I went; two meanings: can be used as a response: "I went to the shop." – "Sorry, where did you go?" – ''"To the shop—that's where I went."'' or an emphasis on the way of transportation: ''I went to the shop on foot.'')
+* В магазин пошёл я. (To the shop went I; ''It was me who went to the shop.'')
+while maintaining grammatical correctness. Note, however, that the order of the phrase "в магазин" ("to the shop") is kept constant.
+
+Word order can express logical stress, and degree of definiteness. The primary emphasis tends to be initial, with a weaker emphasis at the end. Some of these arrangements can describe present actions, not only past (despite the fact that the verb ''пошёл'' is in the past).
+
+In some cases, alternative word order can change the meaning entirely:
+* Не надо меня уговаривать. ("No need me [to] persuade" → One should not persuade me [''as I would never agree to do something''].)
+* Меня не надо уговаривать. ("Me no need [to] persuade" → There is no need to persuade me [''as I will do it anyway''].)
+shippedText=It was me who went to the shop.
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=de21f95b9b994a9013d8f6d9796ffde4c38648b48c3156fce81fb66427522205
+contentHash=87bf836b7184d5decbb54ef64ba3473795fbbecbf252d6178b75fd5ba704d8dd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u24-context-transfer-native-guide-ru`
+
+- Objectives: obj-u24-word-order-contrast
+- Sessions: u24-s-orient, u24-s-word-order-contrast
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3e3ba42556e884faf75a8439fc936ede149b00f5a576bb5ed14746a3e03499ae
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=context-guided-subject-focus:== Syntax ==
+Basic word order, both in conversation and written language, is 
+originalSourceText=== Syntax ==
+Basic word order, both in conversation and written language, is [[subject–verb–object]]. However, because grammatical relationships are marked by inflection, considerable latitude in word order is allowed, and all possible permutations can be used. For example, the words in the phrase "я пошёл в магазин" ('I went to the shop') can be arranged:
+* Я пошёл в магазин. (I went to the shop; ''I went to the shop.'')
+* Я в магазин пошёл. (I to the shop went; approx. ''I am going out, my destination is the shop.'')
+* Пошёл я в магазин. (Went I to the shop; two meanings: can be treated as a beginning of a narrated story: ''"Went I to the shop, and something happened."'' or a decision made by someone after a long contemplation: ''"OK, I think I will go the shop."'')
+* Пошёл в магазин я. (Went to the shop I; rarely used, can be treated as a beginning of a line of a poem written in amphibrach due to uncommon word order, or when the speaker wants to highlight that exactly this subject "went to the shop". In that case, the subject is stressed)
+* В магазин я пошёл. (To the shop I went; two meanings: can be used as a response: "I went to the shop." – "Sorry, where did you go?" – ''"To the shop—that's where I went."'' or an emphasis on the way of transportation: ''I went to the shop on foot.'')
+* В магазин пошёл я. (To the shop went I; ''It was me who went to the shop.'')
+while maintaining grammatical correctness. Note, however, that the order of the phrase "в магазин" ("to the shop") is kept constant.
+
+Word order can express logical stress, and degree of definiteness. The primary emphasis tends to be initial, with a weaker emphasis at the end. Some of these arrangements can describe present actions, not only past (despite the fact that the verb ''пошёл'' is in the past).
+
+In some cases, alternative word order can change the meaning entirely:
+* Не надо меня уговаривать. ("No need me [to] persuade" → One should not persuade me [''as I would never agree to do something''].)
+* Меня не надо уговаривать. ("Me no need [to] persuade" → There is no need to persuade me [''as I will do it anyway''].)
+shippedText=В магазин пошёл я.
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=de21f95b9b994a9013d8f6d9796ffde4c38648b48c3156fce81fb66427522205
+contentHash=c9ffe57d295efc1cb0730cd28dbfb851c0eb814c0ec1c64b423fe297f8b0a2fb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u24-context-transfer-native-reference-prov-ex-u24-word-order-contrast-0-en`
+
+- Objectives: obj-u24-persuasion-reference
+- Sessions: none
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 152d9d18beda3290198bc39c7734db2b710d64ec824e03c0b1caeeef89357b67
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:In some cases, alternative word order can change the meaning entirely:
+* Не надо
+originalSourceText=In some cases, alternative word order can change the meaning entirely:
+* Не надо меня уговаривать. ("No need me [to] persuade" → One should not persuade me [''as I would never agree to do something''].)
+* Меня не надо уговаривать. ("Me no need [to] persuade" → There is no need to persuade me [''as I will do it anyway''].)
+shippedText=One should not persuade me
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=ef9f1bcd815ab4b23f2e073b493930ea41b5ad688f79a77310c415ccb7f9e668
+contentHash=2c10f50514dda0ff44727c1e7474b589210f3c1bf28c5250c7b42195d7b6c72b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u24-context-transfer-native-reference-prov-ex-u24-word-order-contrast-0-ru`
+
+- Objectives: obj-u24-persuasion-reference
+- Sessions: none
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 12efb99bb8b2d31c8ba46021ea6eb1a076b879d75c14c4ea1d91ad90bc72de48
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:In some cases, alternative word order can change the meaning entirely:
+* Не надо
+originalSourceText=In some cases, alternative word order can change the meaning entirely:
+* Не надо меня уговаривать. ("No need me [to] persuade" → One should not persuade me [''as I would never agree to do something''].)
+* Меня не надо уговаривать. ("Me no need [to] persuade" → There is no need to persuade me [''as I will do it anyway''].)
+shippedText=Не надо меня уговаривать.
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=ef9f1bcd815ab4b23f2e073b493930ea41b5ad688f79a77310c415ccb7f9e668
+contentHash=c8de239c5299690d8a28e03341487cae5ca0822c0d59bae6e9e47f97f1e0cf44
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u24-context-transfer-native-reference-prov-ex-u24-word-order-contrast-1-en`
+
+- Objectives: obj-u24-persuasion-reference
+- Sessions: none
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 94b5c576305fd317012d088fb7db090e04a07dbebaf6ebda586b8baf31ff805d
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:In some cases, alternative word order can change the meaning entirely:
+* Не надо
+originalSourceText=In some cases, alternative word order can change the meaning entirely:
+* Не надо меня уговаривать. ("No need me [to] persuade" → One should not persuade me [''as I would never agree to do something''].)
+* Меня не надо уговаривать. ("Me no need [to] persuade" → There is no need to persuade me [''as I will do it anyway''].)
+shippedText=There is no need to persuade me
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=ef9f1bcd815ab4b23f2e073b493930ea41b5ad688f79a77310c415ccb7f9e668
+contentHash=1f5a9e0426f3d84525148342b005283bab8db1c80740ce9a80af4b2e2f7565fc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u24-context-transfer-native-reference-prov-ex-u24-word-order-contrast-1-ru`
+
+- Objectives: obj-u24-persuasion-reference
+- Sessions: none
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ccc7b390ed27ac6c3f162615c37fd0c289020b51523dda1c29be64503ac8b633
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:In some cases, alternative word order can change the meaning entirely:
+* Не надо
+originalSourceText=In some cases, alternative word order can change the meaning entirely:
+* Не надо меня уговаривать. ("No need me [to] persuade" → One should not persuade me [''as I would never agree to do something''].)
+* Меня не надо уговаривать. ("Me no need [to] persuade" → There is no need to persuade me [''as I will do it anyway''].)
+shippedText=Меня не надо уговаривать.
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=ef9f1bcd815ab4b23f2e073b493930ea41b5ad688f79a77310c415ccb7f9e668
+contentHash=453eb5f26733dbc64de2fc66f2b3eadfd4ea6a2f9195a280f5187f59bf90c3a8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u24-placement-rem`
 
 - Objectives: obj-u24-placement
@@ -14561,6 +15480,7 @@ permitsAppUse=true
 - `obj-u24-word-order-contrast` INSTRUCTION `u24-st-orient`
 - `obj-u24-word-order-contrast` INSTRUCTION `u24-st-teach-word-order-contrast-1`
 - `obj-u24-word-order-contrast` INSTRUCTION `u24-st-teach-word-order-contrast-2`
+- `obj-u24-word-order-contrast` INSTRUCTION `u24-st-teach-word-order-contrast-3`
 - `obj-u24-word-order-contrast` EXAMPLE `ex-u24-word-order-contrast-0`
 - `obj-u24-word-order-contrast` EXAMPLE `ex-u24-word-order-contrast-1`
 - `obj-u24-word-order-contrast` PRACTICE `u24-st-guided-word-order-contrast-1`
@@ -14578,6 +15498,9 @@ permitsAppUse=true
 - `obj-u24-placement` REMEDIATION `u24-st-rem-placement`
 - `obj-u24-book` INSTRUCTION `u24-st-book-work`
 - `obj-u24-book` INSTRUCTION `u24-st-book`
+- `obj-u24-persuasion-reference` INSTRUCTION `u24-st-teach-word-order-contrast-1`
+- `obj-u24-persuasion-reference` EXAMPLE `ex-u24-word-order-contrast-0`
+- `obj-u24-persuasion-reference` EXAMPLE `ex-u24-word-order-contrast-1`
 - `u24-s-orient` OBJECTIVE `obj-u24-verbal-ne`
 - `u24-s-orient` OBJECTIVE `obj-u24-absence`
 - `u24-s-orient` OBJECTIVE `obj-u24-alternation`
@@ -14666,8 +15589,9 @@ permitsAppUse=true
 - `u24-st-teach-word-order-contrast-1` EXAMPLE `ex-u24-word-order-contrast-1`
 - `u24-st-teach-word-order-contrast-1` REFERENCE `ref-u2125-attribution`
 - `u24-st-teach-word-order-contrast-2` REFERENCE `ref-u2125-attribution`
+- `u24-st-teach-word-order-contrast-3` REFERENCE `ref-u2125-attribution`
 - `u24-st-guided-word-order-contrast-1` REMEDIATION `u24-st-rem-word-order-contrast`
-- `u24-st-guided-word-order-contrast-1` ITEM `u24-g-word-order-contrast-0`
+- `u24-st-guided-word-order-contrast-1` ITEM `u24-g-context-subject-focus`
 - `u24-st-rem-word-order-contrast` EXAMPLE `ex-u24-word-order-contrast-0`
 - `u24-st-rem-word-order-contrast` EXAMPLE `ex-u24-word-order-contrast-1`
 - `u24-st-check-word-order-contrast` REMEDIATION `u24-st-rem-word-order-contrast`
@@ -14797,6 +15721,23 @@ permitsAppUse=true
 - `obj-u24-stand-ins` PROVENANCE `prov-ca-u24-absence-participant-2`
 - `obj-u24-stand-ins` PROVENANCE `prov-ca-u24-absence-participant-3`
 - `obj-u24-stand-ins` PROVENANCE `prov-ca-u24-absence-prompt`
+- `obj-u24-word-order-contrast` PROVENANCE `prov-ca-u24-context-transfer-guided-feedback`
+- `obj-u24-word-order-contrast` PROVENANCE `prov-ca-u24-context-transfer-guided-prompt`
+- `obj-u24-word-order-contrast` PROVENANCE `prov-ca-u24-context-transfer-guided-rationale`
+- `obj-u24-word-order-contrast` PROVENANCE `prov-ca-u24-context-transfer-objective-title`
+- `obj-u24-persuasion-reference` PROVENANCE `prov-ca-u24-context-transfer-reference-feedback`
+- `obj-u24-persuasion-reference` PROVENANCE `prov-ca-u24-context-transfer-reference-objective-title`
+- `obj-u24-persuasion-reference` PROVENANCE `prov-ca-u24-context-transfer-reference-prompt`
+- `obj-u24-persuasion-reference` PROVENANCE `prov-ca-u24-context-transfer-reference-rationale-1`
+- `obj-u24-persuasion-reference` PROVENANCE `prov-ca-u24-context-transfer-reference-teaching-body`
+- `obj-u24-persuasion-reference` PROVENANCE `prov-ca-u24-context-transfer-reference-teaching-title`
+- `obj-u24-word-order-contrast` PROVENANCE `prov-ca-u24-context-transfer-remediation-body`
+- `obj-u24-word-order-contrast` PROVENANCE `prov-ca-u24-context-transfer-session-title`
+- `obj-u24-word-order-contrast` PROVENANCE `prov-ca-u24-context-transfer-teach-3-body`
+- `obj-u24-word-order-contrast` PROVENANCE `prov-ca-u24-context-transfer-teach-3-title`
+- `obj-u24-word-order-contrast` PROVENANCE `prov-ca-u24-context-transfer-u24-g-context-subject-focus-0`
+- `obj-u24-word-order-contrast` PROVENANCE `prov-ca-u24-context-transfer-u24-g-context-subject-focus-1`
+- `obj-u24-word-order-contrast` PROVENANCE `prov-ca-u24-context-transfer-u24-g-context-subject-focus-2`
 - `obj-u24-absence` PROVENANCE `prov-ca-u24-instruction-absence-guided`
 - `obj-u24-absence` PROVENANCE `prov-ca-u24-instruction-absence-objective`
 - `obj-u24-absence` PROVENANCE `prov-ca-u24-instruction-absence-rem-body`
@@ -14970,6 +15911,14 @@ permitsAppUse=true
 - `obj-u24-concord` PROVENANCE `prov-u24-concord-x-2`
 - `obj-u24-concord` PROVENANCE `prov-u24-concord-x-3`
 - `obj-u24-concord` PROVENANCE `prov-u24-concord-x-4`
+- `obj-u24-word-order-contrast` PROVENANCE `prov-u24-context-transfer-native-destination-en`
+- `obj-u24-word-order-contrast` PROVENANCE `prov-u24-context-transfer-native-destination-ru`
+- `obj-u24-word-order-contrast` PROVENANCE `prov-u24-context-transfer-native-guide-en`
+- `obj-u24-word-order-contrast` PROVENANCE `prov-u24-context-transfer-native-guide-ru`
+- `obj-u24-persuasion-reference` PROVENANCE `prov-u24-context-transfer-native-reference-prov-ex-u24-word-order-contrast-0-en`
+- `obj-u24-persuasion-reference` PROVENANCE `prov-u24-context-transfer-native-reference-prov-ex-u24-word-order-contrast-0-ru`
+- `obj-u24-persuasion-reference` PROVENANCE `prov-u24-context-transfer-native-reference-prov-ex-u24-word-order-contrast-1-en`
+- `obj-u24-persuasion-reference` PROVENANCE `prov-u24-context-transfer-native-reference-prov-ex-u24-word-order-contrast-1-ru`
 - `obj-u24-placement` PROVENANCE `prov-u24-placement-rem`
 - `obj-u24-placement` PROVENANCE `prov-u24-placement-rem-r0`
 - `obj-u24-placement` PROVENANCE `prov-u24-placement-x-0`

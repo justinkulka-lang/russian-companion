@@ -6,8 +6,8 @@
 **Repository:** `justinkulka-lang/russian-companion`  
 **Repository baseline main:** `c153103a0048f69f8de339b83e77d93572ebddb7`  
 **Unit 23 unprepared correction:** `fd69bd03298d69669d09daafe8d364b0e576d033` (`Keep Unit 23 unprepared until completion over a period is admitted.`). That commit is an ancestor of the repository baseline. It is not the repository baseline main commit.  
-**Pack content-review digest:** `c7e2891e19f0da37bc8a9200ceeb83b9bb8bea62c388e8cfd99bca7b3e89b51f`
-**Repository source digest:** `7d4dfb0067e3ecabba0f4b2a1df5787e97ee8caf675c406a6304a028e00f98e4`
+**Pack content-review digest:** `e67744f1f482186215862537ef55e26ad820a6a6bd7de95b4ae0638ec0757c30`
+**Repository source digest:** `b464d56b5cc582e86d2857c848d01403e7dd50e47a4278287a9cbd488584b532`
 **Public release:** **NOT_APPROVED**
 
 ## Purpose
@@ -270,3 +270,5 @@ Every unit also needs owned-edition mapping review: owned-copy verification, ISB
 
 This dossier authorizes research planning only. Public release remains **NOT_APPROVED**.
 
+
+Current Unit24 context-transfer checkpoint: original repeated guided persuasion item u24-g-word-order-contrast-0 is optional SOURCE_MEANING with teaching on non-gating GUIDANCE, outside the prescribed catalog graph. It is an additional disclosed optional-check orphan; current totals are four original example orphans and fourteen optional-check orphans. Do not fabricate a prescribed graph edge to reduce this count. Both original independent persuasion readings remain unchanged. Guided shop subject-focus is introductory, not independently demonstrated mastery. Source/rights/semantic review remains pending; no acceptance or release approval.

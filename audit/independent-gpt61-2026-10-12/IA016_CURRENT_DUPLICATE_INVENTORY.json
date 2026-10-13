@@ -1,5 +1,5 @@
 {
-  "repositoryCommit": "f47b8649cc72425d3b2854a2dadccdc89c17e617",
+  "repositoryCommit": "db323d1a07613846a088cd44cb9f2b72d24753c9",
   "scope": "EXACT_SAME_UNIT_GATING_RECOGNITION_GUIDED_AND_INDEPENDENT_PROMPT_CUE_KEY_ORDERED_OPTIONS_SIGNATURE_NOT_ALL_TRANSFER_DEFECTS",
   "groups": [
     {
@@ -57,23 +57,6 @@
       ]
     },
     {
-      "unitNumber": 24,
-      "itemIds": [
-        "u24-g-word-order-contrast-0",
-        "u24-i-word-order-contrast-2"
-      ],
-      "prompt": "The speaker would never agree. Which supplied English interpretation fits the sentence in that context?",
-      "cue": "Не надо меня уговаривать.",
-      "answer": "One should not persuade me",
-      "options": [
-        "One should not persuade me",
-        "There is no need to persuade me"
-      ],
-      "objectiveIds": [
-        "obj-u24-word-order-contrast"
-      ]
-    },
-    {
       "unitNumber": 28,
       "itemIds": [
         "u28-g-imperfective-adverb-0",
@@ -110,12 +93,12 @@
       ]
     }
   ],
-  "count": 6,
+  "count": 5,
   "originalDiagnosticGroupCount": 11,
-  "priorInventoryCommit": "6434cd12cdb22d0bbf6f7f848191d46b46501fca",
-  "priorInventoryCount": 7,
-  "difference": "Unit21 independent reflexive object now uses distinct supplied subject/action sentence Он поранил себя instead of guided Я люблю́ себя́. Correct guided myself and independent wife items retained. Six guided/independent exact groups remain, with four same-role groups explicitly outside that scope; not semantic closure. Inter-objective repetition requires session/return-path review.",
-  "engineeringDisposition": "PARTIAL_UNIT17_UNIT8_UNIT9_AND_UNIT21_FIXES_PENDING_INDEPENDENT_VERIFICATION_OTHER_GROUPS_OPEN",
+  "priorInventoryCommit": "3b8b6df0150d406f8f71a2bc7eebd1a19a301eba",
+  "priorInventoryCount": 6,
+  "difference": "Unit24 guided practice now uses a distinct licensed introductory shop subject-focus example, preserving both correct independent persuasion readings and retaining the original repeated guided question as optional reference. Five guided/independent exact groups and four separate same-role groups remain; no semantic closure or independent subject-focus mastery claim.",
+  "engineeringDisposition": "PARTIAL_UNIT17_UNIT8_UNIT9_UNIT21_AND_UNIT24_FIXES_PENDING_INDEPENDENT_VERIFICATION_OTHER_GROUPS_OPEN",
   "formalAcceptance": false,
   "additionalSameRoleGroupsOutsideGuidedIndependentInventory": [
     {
