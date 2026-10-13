@@ -37,3 +37,7 @@ Implementationb48d4a575e0d8496de4e02c4e7af6d4795d4309f explains the two remainin
 ## Unit9 numeric-value feedback — 2026-10-13
 
 Implementationb9f00899069b495bed1f5791f72e485c63945938 explains17 numeric-value contrasts and their17 distractors. Scored/source tuples remain unchanged;34 English coverage records are pending review. Current literal Does inventory:87 rows (33 generic/54 feature-specific); Unit9 has26 remaining rows (composition5, odindva6, quantity10, pattern5). Earlier counts are historical. Next bounded group:five composition/thousands items, starting with full retained number examples; the mixed thousands category needs its genitive-number context. Read IA009_UNIT9_SOURCE_REVIEW_PENDING.md. Do not treat abbreviated quantity labels as unrestricted rules. This is not semantic acceptance or a test count.
+
+## Unit9 composition and agreement feedback — 2026-10-13
+
+Implementation0fde3d3991ba4493a0ca36b9c49cdd0a71c14401 explains five composition/thousands and six one/two agreement rows, with11 distractor rationales. Original scored/source tuples and prior provenance are retained;22 new English coverage records are review-pending. Current literal Does inventory:76 (22 generic/54 feature-specific). Unit9 has15 quantity/pattern rows remaining. Prior inventories are historical. Next:review all15 against complete source context and existing guards, replacing abbreviated rule choices/teaching/application bindings where required. Existing duplicate guided/check tuples remain open under IA016. No semantic acceptance or full-suite result is inferred.

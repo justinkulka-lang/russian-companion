@@ -11,12 +11,12 @@ Unit 9 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: b9f00899069b495bed1f5791f72e485c63945938
-- Unit content-review SHA-256: 8e5447a098b03298f0eafdfe12a28fb675d3065464467a7cfc284d62188625df
+- Curriculum source commit: 0fde3d3991ba4493a0ca36b9c49cdd0a71c14401
+- Unit content-review SHA-256: 4b8f99197e95f754e7178c381cf6b143a958f2064a7dac230f3f6f5cbe200836
 - Mapping-package SHA-256: 44199859a34f129c83c22e0e058e305784913077a569025b871abdd1a6a707bf
-- Pack content-review SHA-256: 3472505a1a3c031ecd300537c671185fad28be8c5d3dd804d71c516cd33c9069
-- Review-package SHA-256: dc52830b29337d0ed16481dca5e0e5fc60bfba7b6a9e29cbed4d0f8ba5323a06
-- Repository source SHA-256: 45469cf99cead1cc5974a878d2f5cc32ac7c65134fa41ac00c73792314f73ee6
+- Pack content-review SHA-256: 9b5db91a8f7a546112a2f1447f92365a4de332b3dd4f331be7dfe0b4b992c231
+- Review-package SHA-256: af9d64c015f7cb8738280e98ef8c8d7ca5cb0f7845ae0ca59c739081ee1c876e
+- Repository source SHA-256: fa2540b484f5fca2db8933cee92c3d1ff0f4c98283e4a55450fc010188948a54
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -3712,7 +3712,7 @@ relationParticipantIds=prov-ex-u9-hundreds-0-en | prov-ex-u9-hundreds-0-ru | pro
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: a409a26b8115fbe105e98cad0c31c21bf5f4bc0f84762ec834f13f1ab9821f4a
+- Content hash: 379b157252249b32b1072b4b4cfe4c9df9af4b9e95709b928e208b75026f5761
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3720,11 +3720,11 @@ prompt=Which admitted form matches the shown number?
 promptLetter=21
 options=два́дцать оди́н | два́дцать
 answer=два́дцать оди́н
-feedback=Does the admitted record show the governed contrast? два́дцать оди́н.
+feedback=два́дцать оди́н represents 21: 20 + 1. The other option gives only 20 and omits the final unit.
 objectiveId=obj-u9-thousands
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted form is only the ten, not the composed number.
+distractorRationales= | The shorter option gives 20 instead of 21; it omits the final unit.
 testedFeature=COMPOUND_21
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-thousands-0
@@ -3732,8 +3732,8 @@ cueLanguage=number
 independent=false
 answerSourceIds=prov-ex-u9-thousands-1-ru
 distractorSourceIds= | prov-u9-thousands-x-0
-distractorDifference= | This admitted form is only the ten, not the composed number.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | The shorter option gives 20 instead of 21; it omits the final unit.
+whyAnswerDemonstratesObjective=два́дцать оди́н represents 21: 20 + 1. The other option gives only 20 and omits the final unit.
 contrastMembers=два́дцать оди́н | два́дцать
 relationKind=SAME_RULE_DIFFERENT_BOUNDARY
 relationParticipantIds=prov-ex-u9-thousands-1-en | prov-ex-u9-thousands-1-ru | prov-u9-thousands-x-0
@@ -3746,7 +3746,7 @@ relationParticipantIds=prov-ex-u9-thousands-1-en | prov-ex-u9-thousands-1-ru | p
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: a7af8b7d8811182987d1104e634ecf8553a249327deec63e5c9d3fed11757385
+- Content hash: 97fe9f1a4487db42fabcda344276203f2004c6f65d2aa98d4e1a855c67d4f1c1
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3754,11 +3754,11 @@ prompt=Which admitted form agrees with the shown word?
 promptLetter=мальчик
 options=один | одна
 answer=один
-feedback=Does the admitted record show the governed contrast? один.
+feedback=один is the masculine singular form of one and agrees with the shown word for boy in this example. одна is feminine singular instead. Match the grammatical gender of the noun in the retained counting phrase.
 objectiveId=obj-u9-odindva
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is another admitted form in the same frozen line.
+distractorRationales= | одна is feminine singular instead of the masculine singular agreement required by the shown noun.
 testedFeature=ODIN_MASCULINE
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u9-odindva-0
@@ -3766,8 +3766,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-u9-odindva-x-4
 distractorSourceIds= | prov-u9-odindva-x-5
-distractorDifference= | This form is another admitted form in the same frozen line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | одна is feminine singular instead of the masculine singular agreement required by the shown noun.
+whyAnswerDemonstratesObjective=один is the masculine singular form of one and agrees with the shown word for boy in this example. одна is feminine singular instead. Match the grammatical gender of the noun in the retained counting phrase.
 contrastMembers=один | одна
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-u9-odindva-x-0 | prov-u9-odindva-x-4 | prov-u9-odindva-x-5
@@ -4290,7 +4290,7 @@ relationParticipantIds=prov-ex-u9-hundreds-8-en | prov-ex-u9-hundreds-8-ru | pro
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 160883d26ee9741aeeda81b3799b6ae8fa0f682072e17f85ca29b8596ac89ffc
+- Content hash: f943c0257cf6d45d551da83f4c44fd49c2944f15956c9761ce24a1b4c3c3a942
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4298,11 +4298,11 @@ prompt=Which admitted form matches the shown number?
 promptLetter=101
 options=сто оди́н | сто
 answer=сто оди́н
-feedback=Does the admitted record show the governed contrast? сто оди́н.
+feedback=сто оди́н represents 101: 100 + 1. The other option gives only 100 and omits the final unit.
 objectiveId=obj-u9-thousands
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted form is only the hundred, not the composed number.
+distractorRationales= | The shorter option gives 100 instead of 101; it omits the final unit.
 testedFeature=HUNDREDS_COMPOSITION
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-thousands-1
@@ -4310,8 +4310,8 @@ cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-thousands-2-ru
 distractorSourceIds= | prov-u9-thousands-x-1
-distractorDifference= | This admitted form is only the hundred, not the composed number.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | The shorter option gives 100 instead of 101; it omits the final unit.
+whyAnswerDemonstratesObjective=сто оди́н represents 101: 100 + 1. The other option gives only 100 and omits the final unit.
 contrastMembers=сто оди́н | сто
 relationKind=SAME_RULE_DIFFERENT_BOUNDARY
 relationParticipantIds=prov-ex-u9-thousands-2-en | prov-ex-u9-thousands-2-ru | prov-u9-thousands-x-1
@@ -4324,7 +4324,7 @@ relationParticipantIds=prov-ex-u9-thousands-2-en | prov-ex-u9-thousands-2-ru | p
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: adf87d6d315271b9be83a77fc42cc00e0a8f71731a79bb1bc457d6dd5822e4e5
+- Content hash: ec92cb115ee44b0d08f342b8c8bbca6a839b0ef3c19fb765fbb152a902dbc0ba
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4332,11 +4332,11 @@ prompt=Which admitted form matches the shown number?
 promptLetter=215
 options=две́сти пятна́дцать | две́сти
 answer=две́сти пятна́дцать
-feedback=Does the admitted record show the governed contrast? две́сти пятна́дцать.
+feedback=две́сти пятна́дцать represents 215: 200 + 15. The other option gives only 200 and omits the final fifteen.
 objectiveId=obj-u9-thousands
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted form is only the hundred, not the composed number.
+distractorRationales= | The shorter option gives 200 instead of 215; it omits the final fifteen.
 testedFeature=HUNDREDS_COMPOSITION
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-thousands-2
@@ -4344,8 +4344,8 @@ cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-thousands-3-ru
 distractorSourceIds= | prov-u9-thousands-x-2
-distractorDifference= | This admitted form is only the hundred, not the composed number.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | The shorter option gives 200 instead of 215; it omits the final fifteen.
+whyAnswerDemonstratesObjective=две́сти пятна́дцать represents 215: 200 + 15. The other option gives only 200 and omits the final fifteen.
 contrastMembers=две́сти пятна́дцать | две́сти
 relationKind=SAME_RULE_DIFFERENT_BOUNDARY
 relationParticipantIds=prov-ex-u9-thousands-3-en | prov-ex-u9-thousands-3-ru | prov-u9-thousands-x-2
@@ -4358,7 +4358,7 @@ relationParticipantIds=prov-ex-u9-thousands-3-en | prov-ex-u9-thousands-3-ru | p
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: ea9a6a3471baea3cdd7ffba5445bc6afc0579f4b30b2a2a7568bfc2cddfaf482
+- Content hash: 8ce46d1a33cf05628f539d3c7bca9b64ded9460aaed66bc6766a10ddbbeb5aaf
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4366,11 +4366,11 @@ prompt=Which admitted form matches the shown number?
 promptLetter=1,984
 options=ты́сяча девятьсо́т во́семьдесят четы́ре | ты́сяча
 answer=ты́сяча девятьсо́т во́семьдесят четы́ре
-feedback=Does the admitted record show the governed contrast? ты́сяча девятьсо́т во́семьдесят четы́ре.
+feedback=ты́сяча девятьсо́т во́семьдесят четы́ре represents 1,984: 1,000 + 900 + 80 + 4. The other option gives only 1,000 and omits the remaining 984.
 objectiveId=obj-u9-thousands
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted form is only the thousand, not the composed number.
+distractorRationales= | The shorter option gives 1,000 instead of 1,984; it omits the remaining 984.
 testedFeature=THOUSANDS_COMPOSITION
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-thousands-3
@@ -4378,8 +4378,8 @@ cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-thousands-5-ru
 distractorSourceIds= | prov-ex-u9-thousands-0-ru
-distractorDifference= | This admitted form is only the thousand, not the composed number.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | The shorter option gives 1,000 instead of 1,984; it omits the remaining 984.
+whyAnswerDemonstratesObjective=ты́сяча девятьсо́т во́семьдесят четы́ре represents 1,984: 1,000 + 900 + 80 + 4. The other option gives only 1,000 and omits the remaining 984.
 contrastMembers=ты́сяча девятьсо́т во́семьдесят четы́ре | ты́сяча
 relationKind=SAME_RULE_DIFFERENT_BOUNDARY
 relationParticipantIds=prov-ex-u9-thousands-5-en | prov-ex-u9-thousands-5-ru | prov-ex-u9-thousands-0-ru
@@ -4392,7 +4392,7 @@ relationParticipantIds=prov-ex-u9-thousands-5-en | prov-ex-u9-thousands-5-ru | p
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 0430fefbfee01733dc0c605b9237007eb92bbfde2dee2f3dceb1698066dc2f49
+- Content hash: 1d9c64712540a4ceb4fd10043b059bfabb261b7a808555a78a8a05f277637478
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4400,11 +4400,11 @@ prompt=Which admitted form matches the shown number?
 promptLetter=2,000/3,000/4,000
 options=две/три/четы́ре ты́сячи | пять ~ де́вять ты́сяч
 answer=две/три/четы́ре ты́сячи
-feedback=Does the admitted record show the governed contrast? две/три/четы́ре ты́сячи.
+feedback=The shown group counts two, three or four thousands. In these whole-thousand examples, the counted word for thousand takes the genitive singular. The other option counts five through nine thousands and uses the genitive plural. These examples use the basic nominative or inanimate accusative counting construction.
 objectiveId=obj-u9-thousands
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted form is the other thousands band.
+distractorRationales= | The other option counts five through nine thousands with genitive plural instead of the shown two, three or four thousands with genitive singular.
 testedFeature=THOUSANDS_COMPOSITION
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-thousands-4
@@ -4412,8 +4412,8 @@ cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-thousands-6-ru
 distractorSourceIds= | prov-ex-u9-thousands-7-ru
-distractorDifference= | This admitted form is the other thousands band.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | The other option counts five through nine thousands with genitive plural instead of the shown two, three or four thousands with genitive singular.
+whyAnswerDemonstratesObjective=The shown group counts two, three or four thousands. In these whole-thousand examples, the counted word for thousand takes the genitive singular. The other option counts five through nine thousands and uses the genitive plural. These examples use the basic nominative or inanimate accusative counting construction.
 contrastMembers=две/три/четы́ре ты́сячи | пять ~ де́вять ты́сяч
 relationKind=SAME_RULE_DIFFERENT_BOUNDARY
 relationParticipantIds=prov-ex-u9-thousands-6-en | prov-ex-u9-thousands-6-ru | prov-ex-u9-thousands-7-ru
@@ -4426,7 +4426,7 @@ relationParticipantIds=prov-ex-u9-thousands-6-en | prov-ex-u9-thousands-6-ru | p
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 3b5b69ad55c3fbbe7d637b283eca1f3485e1da4f526832d3c09f93f8c7cdb0f1
+- Content hash: d56855075810daf85565f0dc8787a13d5f3a5cbab1fedc4a150b9b56dc8ca726
 
 kind=CONTRAST_SELECTION
 language=en
@@ -4434,11 +4434,11 @@ prompt=Which admitted form agrees with the shown word?
 promptLetter=девушка
 options=одна | один
 answer=одна
-feedback=Does the admitted record show the governed contrast? одна.
+feedback=одна is the feminine singular form of one and agrees with the shown word for girl in this example. один is masculine singular instead. Match the grammatical gender of the noun in the retained counting phrase.
 objectiveId=obj-u9-odindva
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is another admitted form in the same frozen line.
+distractorRationales= | один is masculine singular instead of the feminine singular agreement required by the shown noun.
 testedFeature=ODIN_FEMININE
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u9-odindva-1
@@ -4446,8 +4446,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-u9-odindva-x-5
 distractorSourceIds= | prov-u9-odindva-x-4
-distractorDifference= | This form is another admitted form in the same frozen line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | один is masculine singular instead of the feminine singular agreement required by the shown noun.
+whyAnswerDemonstratesObjective=одна is the feminine singular form of one and agrees with the shown word for girl in this example. один is masculine singular instead. Match the grammatical gender of the noun in the retained counting phrase.
 contrastMembers=одна | один
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-u9-odindva-x-1 | prov-u9-odindva-x-5 | prov-u9-odindva-x-4
@@ -4460,7 +4460,7 @@ relationParticipantIds=prov-u9-odindva-x-1 | prov-u9-odindva-x-5 | prov-u9-odind
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: e310f613fc4818b787f22c144de45f24b325729217a15bb4139924b14506ca75
+- Content hash: 85bb3751475d66034b9bdfe139f56e633f14658faf49a0d70c19625a32966f56
 
 kind=CONTRAST_SELECTION
 language=en
@@ -4468,11 +4468,11 @@ prompt=Which admitted form agrees with the shown word?
 promptLetter=животное
 options=одно | один
 answer=одно
-feedback=Does the admitted record show the governed contrast? одно.
+feedback=одно is the neuter singular form of one and agrees with the shown word for animal in this example. один is masculine singular instead. The retained lexical row classifies this noun as neuter; choose by that grammatical gender.
 objectiveId=obj-u9-odindva
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is another admitted form in the same frozen line.
+distractorRationales= | один is masculine singular instead of the neuter singular agreement required by the shown noun.
 testedFeature=ODIN_NEUTER
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u9-odindva-2
@@ -4480,8 +4480,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-u9-odindva-x-6
 distractorSourceIds= | prov-u9-odindva-x-4
-distractorDifference= | This form is another admitted form in the same frozen line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | один is masculine singular instead of the neuter singular agreement required by the shown noun.
+whyAnswerDemonstratesObjective=одно is the neuter singular form of one and agrees with the shown word for animal in this example. один is masculine singular instead. The retained lexical row classifies this noun as neuter; choose by that grammatical gender.
 contrastMembers=одно | один
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-u9-odindva-x-2 | prov-u9-odindva-x-6 | prov-u9-odindva-x-4
@@ -4494,7 +4494,7 @@ relationParticipantIds=prov-u9-odindva-x-2 | prov-u9-odindva-x-6 | prov-u9-odind
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: eb1a4eb67c20c49bf75a1e1b61fe9cad484c39d059e85ae0d82441a8044a710d
+- Content hash: 7fcb5a087c227875f32a9f711ed2df1fd99d8f611a74b58004e7be3a0892d214
 
 kind=CONTRAST_SELECTION
 language=en
@@ -4502,11 +4502,11 @@ prompt=Which admitted form agrees with the shown word?
 promptLetter=джинсы
 options=одни | один
 answer=одни
-feedback=Does the admitted record show the governed contrast? одни.
+feedback=одни is the plural form of one used with the shown word for jeans. The retained example means one pair of jeans; plural grammatical agreement does not mean several pairs here. один is masculine singular and does not match this plural-form noun.
 objectiveId=obj-u9-odindva
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is another admitted form in the same frozen line.
+distractorRationales= | один is masculine singular instead of the plural agreement used for one pair of jeans in the retained example.
 testedFeature=ODIN_PLURAL
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u9-odindva-3
@@ -4514,8 +4514,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-u9-odindva-x-7
 distractorSourceIds= | prov-u9-odindva-x-4
-distractorDifference= | This form is another admitted form in the same frozen line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | один is masculine singular instead of the plural agreement used for one pair of jeans in the retained example.
+whyAnswerDemonstratesObjective=одни is the plural form of one used with the shown word for jeans. The retained example means one pair of jeans; plural grammatical agreement does not mean several pairs here. один is masculine singular and does not match this plural-form noun.
 contrastMembers=одни | один
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-u9-odindva-x-3 | prov-u9-odindva-x-7 | prov-u9-odindva-x-4
@@ -4528,7 +4528,7 @@ relationParticipantIds=prov-u9-odindva-x-3 | prov-u9-odindva-x-7 | prov-u9-odind
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 23763f5b436c31710b3d6fb7effb03ecb239bec1d747d145976551a3cb446cc0
+- Content hash: 1fa772a9e5059599bac6bafb33b874e06c54e41a8410a9310c8de6adcfc02d7f
 
 kind=CONTRAST_SELECTION
 language=en
@@ -4536,11 +4536,11 @@ prompt=Which admitted form agrees with the shown word?
 promptLetter=мальчик
 options=один | одна
 answer=один
-feedback=Does the admitted record show the governed contrast? один.
+feedback=один is the masculine singular form of one and agrees with the shown word for boy in this example. одна is feminine singular instead. Match the grammatical gender of the noun in the retained counting phrase.
 objectiveId=obj-u9-odindva
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is another admitted form in the same frozen line.
+distractorRationales= | одна is feminine singular instead of the masculine singular agreement required by the shown noun.
 testedFeature=ODIN_MASCULINE
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u9-odindva-4
@@ -4548,8 +4548,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-u9-odindva-x-4
 distractorSourceIds= | prov-u9-odindva-x-5
-distractorDifference= | This form is another admitted form in the same frozen line.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | одна is feminine singular instead of the masculine singular agreement required by the shown noun.
+whyAnswerDemonstratesObjective=один is the masculine singular form of one and agrees with the shown word for boy in this example. одна is feminine singular instead. Match the grammatical gender of the noun in the retained counting phrase.
 contrastMembers=один | одна
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-u9-odindva-x-0 | prov-u9-odindva-x-4 | prov-u9-odindva-x-5
@@ -4562,7 +4562,7 @@ relationParticipantIds=prov-u9-odindva-x-0 | prov-u9-odindva-x-4 | prov-u9-odind
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: a6cb1a2aede6487625ae7fcbfb0a5857e36eda4695ff287631a03d1dccafd2ef
+- Content hash: 49c39e4591343617279a3806433660256250b04b047ce3780fe6e0cabc13366c
 
 kind=CONTRAST_SELECTION
 language=en
@@ -4570,11 +4570,11 @@ prompt=Which admitted form agrees with the shown word?
 promptLetter=девушки
 options=две | два
 answer=две
-feedback=Does the admitted record show the governed contrast? две.
+feedback=две is the feminine form of two used in the retained phrase for two girls. два is used with masculine or neuter nouns instead. Choose by grammatical gender here; both options express the same numeric value.
 objectiveId=obj-u9-odindva
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the other admitted form of two.
+distractorRationales= | два expresses two with masculine or neuter nouns instead of the feminine agreement used in the retained phrase.
 testedFeature=DVA_DVE
 evidenceMode=SAME_CONSTRUCTION_DIFFERENT_FORM
 contrastSetId=u9-odindva-5
@@ -4582,8 +4582,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u9-odindva-7-ru
 distractorSourceIds= | prov-u9-odindva-x-8
-distractorDifference= | This form is the other admitted form of two.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | два expresses two with masculine or neuter nouns instead of the feminine agreement used in the retained phrase.
+whyAnswerDemonstratesObjective=две is the feminine form of two used in the retained phrase for two girls. два is used with masculine or neuter nouns instead. Choose by grammatical gender here; both options express the same numeric value.
 contrastMembers=две | два
 relationKind=SAME_CONSTRUCTION_DIFFERENT_FORM
 relationParticipantIds=prov-u9-odindva-x-10 | prov-ex-u9-odindva-7-ru | prov-u9-odindva-x-8
@@ -5192,6 +5192,666 @@ attribution=Russian Companion content-audit research synthesis, content-audit-20
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
 sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
 contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-composition-feedback-u9-g-odindva-0`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6c290d35672d5e650009baed9acfcd5fc464c29e37fbc43f9af75ae7dba98711
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:composition-feedback:u9-g-odindva-0
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Cardinal numbers table/examples for21,101,215,1984 and whole thousands2/3/4 versus5-through9, plus the complete Use of numerals in context paragraphs for one/two, gender/number agreement, genitive singular/plural and restriction to nominative/inanimate accusative constructions. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: gender=m/f/n for мальчик/девушка/животное. The Numbers source explicitly gives the plural-form one-pair-of-jeans example; empty OpenRussian fields for jeans are not used as proof. Bounded independently authored English and arithmetic decomposition; no new Russian form, unrestricted numeral-declension rule or productive-language claim. Original Russian cues/options, keys and source participants remain unchanged. Independently authored on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+один is the masculine singular form of one and agrees with the shown word for boy in this example. одна is feminine singular instead. Match the grammatical gender of the noun in the retained counting phrase.
+shippedText=один is the masculine singular form of one and agrees with the shown word for boy in this example. одна is feminine singular instead. Match the grammatical gender of the noun in the retained counting phrase.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=140cf564d53c7ec9cf6c255063e3e36c3a5ebed4138a868f65b0c7beced7ba55
+contentHash=e7369ed9e32abf245ae9dde01b98487f7c730bcfdad5699842f5c5638c3a2096
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-composition-feedback-u9-g-odindva-0-distractor`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 154e31d8bd73e9572a786a638e5e4b597871dc46a77220a4960b116341bf21ff
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:composition-feedback:u9-g-odindva-0-distractor
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Cardinal numbers table/examples for21,101,215,1984 and whole thousands2/3/4 versus5-through9, plus the complete Use of numerals in context paragraphs for one/two, gender/number agreement, genitive singular/plural and restriction to nominative/inanimate accusative constructions. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: gender=m/f/n for мальчик/девушка/животное. The Numbers source explicitly gives the plural-form one-pair-of-jeans example; empty OpenRussian fields for jeans are not used as proof. Bounded independently authored English and arithmetic decomposition; no new Russian form, unrestricted numeral-declension rule or productive-language claim. Original Russian cues/options, keys and source participants remain unchanged. Independently authored on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+одна is feminine singular instead of the masculine singular agreement required by the shown noun.
+shippedText=одна is feminine singular instead of the masculine singular agreement required by the shown noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b37cfea1e1c035f7192c75427099845efa2c51434819dc213ac39baf5970eba0
+contentHash=81b235475917ab82250ccee4626a03540fdc4ab5e3bb708df9447033494f4ecc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-composition-feedback-u9-g-thousands-0`
+
+- Objectives: obj-u9-thousands
+- Sessions: u9-s-orient, u9-s-thousands
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d374afe144b8692d3a6b48a3c7e0093fcd19ae5a90f74b5ccf5da9950bd6479f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-thousands:composition-feedback:u9-g-thousands-0
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Cardinal numbers table/examples for21,101,215,1984 and whole thousands2/3/4 versus5-through9, plus the complete Use of numerals in context paragraphs for one/two, gender/number agreement, genitive singular/plural and restriction to nominative/inanimate accusative constructions. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: gender=m/f/n for мальчик/девушка/животное. The Numbers source explicitly gives the plural-form one-pair-of-jeans example; empty OpenRussian fields for jeans are not used as proof. Bounded independently authored English and arithmetic decomposition; no new Russian form, unrestricted numeral-declension rule or productive-language claim. Original Russian cues/options, keys and source participants remain unchanged. Independently authored on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+два́дцать оди́н represents 21: 20 + 1. The other option gives only 20 and omits the final unit.
+shippedText=два́дцать оди́н represents 21: 20 + 1. The other option gives only 20 and omits the final unit.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cdde8f88ee7e312f5f4c9e0deb79fe15d48b53e142c5257a3d7c555746f31481
+contentHash=4da097c6a54226ed80b20814b952c098122fb524f226da0d2d40a40227636bce
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-composition-feedback-u9-g-thousands-0-distractor`
+
+- Objectives: obj-u9-thousands
+- Sessions: u9-s-orient, u9-s-thousands
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4021cbf26a8196d5be575b6d45c1e326ab2e6d2357d2bef87774c5975f36297b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-thousands:composition-feedback:u9-g-thousands-0-distractor
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Cardinal numbers table/examples for21,101,215,1984 and whole thousands2/3/4 versus5-through9, plus the complete Use of numerals in context paragraphs for one/two, gender/number agreement, genitive singular/plural and restriction to nominative/inanimate accusative constructions. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: gender=m/f/n for мальчик/девушка/животное. The Numbers source explicitly gives the plural-form one-pair-of-jeans example; empty OpenRussian fields for jeans are not used as proof. Bounded independently authored English and arithmetic decomposition; no new Russian form, unrestricted numeral-declension rule or productive-language claim. Original Russian cues/options, keys and source participants remain unchanged. Independently authored on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+The shorter option gives 20 instead of 21; it omits the final unit.
+shippedText=The shorter option gives 20 instead of 21; it omits the final unit.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fd1a1fc5e69bb9f58e32b3b93d3485a63564756576f6f297189ddda67ffb7309
+contentHash=6cdaac597e46bb9ca45cbe59d46a1614f5370a2a9d8817f15f67537dd75d2130
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-composition-feedback-u9-i-odindva-1`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2dd549ca4ca3ae1b9b5e0dd11e65f4cd22eb861becb0e102d859a97490fe1e08
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:composition-feedback:u9-i-odindva-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Cardinal numbers table/examples for21,101,215,1984 and whole thousands2/3/4 versus5-through9, plus the complete Use of numerals in context paragraphs for one/two, gender/number agreement, genitive singular/plural and restriction to nominative/inanimate accusative constructions. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: gender=m/f/n for мальчик/девушка/животное. The Numbers source explicitly gives the plural-form one-pair-of-jeans example; empty OpenRussian fields for jeans are not used as proof. Bounded independently authored English and arithmetic decomposition; no new Russian form, unrestricted numeral-declension rule or productive-language claim. Original Russian cues/options, keys and source participants remain unchanged. Independently authored on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+одна is the feminine singular form of one and agrees with the shown word for girl in this example. один is masculine singular instead. Match the grammatical gender of the noun in the retained counting phrase.
+shippedText=одна is the feminine singular form of one and agrees with the shown word for girl in this example. один is masculine singular instead. Match the grammatical gender of the noun in the retained counting phrase.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c0f338d4b0c9998c844fb0bbbaee13d012203da4207327674cae27ffdb4dbf25
+contentHash=0fc025a39b3945ed6d22ac5b61fbc042a3e81434968f7c4461bb7450c88894b7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-composition-feedback-u9-i-odindva-1-distractor`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8cd516c40216201145f6734953cf88cbaf818a4df83bb86625820fe9b0efbb50
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:composition-feedback:u9-i-odindva-1-distractor
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Cardinal numbers table/examples for21,101,215,1984 and whole thousands2/3/4 versus5-through9, plus the complete Use of numerals in context paragraphs for one/two, gender/number agreement, genitive singular/plural and restriction to nominative/inanimate accusative constructions. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: gender=m/f/n for мальчик/девушка/животное. The Numbers source explicitly gives the plural-form one-pair-of-jeans example; empty OpenRussian fields for jeans are not used as proof. Bounded independently authored English and arithmetic decomposition; no new Russian form, unrestricted numeral-declension rule or productive-language claim. Original Russian cues/options, keys and source participants remain unchanged. Independently authored on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+один is masculine singular instead of the feminine singular agreement required by the shown noun.
+shippedText=один is masculine singular instead of the feminine singular agreement required by the shown noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=810a49273ea2311cc75eaf33e94238b5175cf106c9cbcb9b0325a704f58545e5
+contentHash=c12b331fe93730335571be59e7e55e22bf8a3bc39f6934fd3a429090cd0031fa
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-composition-feedback-u9-i-odindva-2`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ef3099e20a8a1e195d77ef1a0c102b0fbfef01ff0a042430840a4f2a45c64499
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:composition-feedback:u9-i-odindva-2
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Cardinal numbers table/examples for21,101,215,1984 and whole thousands2/3/4 versus5-through9, plus the complete Use of numerals in context paragraphs for one/two, gender/number agreement, genitive singular/plural and restriction to nominative/inanimate accusative constructions. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: gender=m/f/n for мальчик/девушка/животное. The Numbers source explicitly gives the plural-form one-pair-of-jeans example; empty OpenRussian fields for jeans are not used as proof. Bounded independently authored English and arithmetic decomposition; no new Russian form, unrestricted numeral-declension rule or productive-language claim. Original Russian cues/options, keys and source participants remain unchanged. Independently authored on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+одно is the neuter singular form of one and agrees with the shown word for animal in this example. один is masculine singular instead. The retained lexical row classifies this noun as neuter; choose by that grammatical gender.
+shippedText=одно is the neuter singular form of one and agrees with the shown word for animal in this example. один is masculine singular instead. The retained lexical row classifies this noun as neuter; choose by that grammatical gender.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=23aea22fc0f6c64538267a88cef286b8010436a5d9428116f1b1343f484bcc7c
+contentHash=1cc1baa7ccd67631722800518bd46c9a40523543199f9f8d8271881cc3472be8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-composition-feedback-u9-i-odindva-2-distractor`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0bca78eb2875c070f55ca26f179714d1d6e5da770b3377b0596289dee6653a5c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:composition-feedback:u9-i-odindva-2-distractor
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Cardinal numbers table/examples for21,101,215,1984 and whole thousands2/3/4 versus5-through9, plus the complete Use of numerals in context paragraphs for one/two, gender/number agreement, genitive singular/plural and restriction to nominative/inanimate accusative constructions. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: gender=m/f/n for мальчик/девушка/животное. The Numbers source explicitly gives the plural-form one-pair-of-jeans example; empty OpenRussian fields for jeans are not used as proof. Bounded independently authored English and arithmetic decomposition; no new Russian form, unrestricted numeral-declension rule or productive-language claim. Original Russian cues/options, keys and source participants remain unchanged. Independently authored on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+один is masculine singular instead of the neuter singular agreement required by the shown noun.
+shippedText=один is masculine singular instead of the neuter singular agreement required by the shown noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ab778607055e397bdad943e9b03c2ba923f85988856ce4b5eb416bc6046a8871
+contentHash=2f1fe365ee24c5b9bc93204566086090d276f64c5cd061a8fe337bfa4fed167d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-composition-feedback-u9-i-odindva-3`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5e2812c75f5935ab0e0c68e445233860be48ba987df28f11de691e841a3faeba
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:composition-feedback:u9-i-odindva-3
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Cardinal numbers table/examples for21,101,215,1984 and whole thousands2/3/4 versus5-through9, plus the complete Use of numerals in context paragraphs for one/two, gender/number agreement, genitive singular/plural and restriction to nominative/inanimate accusative constructions. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: gender=m/f/n for мальчик/девушка/животное. The Numbers source explicitly gives the plural-form one-pair-of-jeans example; empty OpenRussian fields for jeans are not used as proof. Bounded independently authored English and arithmetic decomposition; no new Russian form, unrestricted numeral-declension rule or productive-language claim. Original Russian cues/options, keys and source participants remain unchanged. Independently authored on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+одни is the plural form of one used with the shown word for jeans. The retained example means one pair of jeans; plural grammatical agreement does not mean several pairs here. один is masculine singular and does not match this plural-form noun.
+shippedText=одни is the plural form of one used with the shown word for jeans. The retained example means one pair of jeans; plural grammatical agreement does not mean several pairs here. один is masculine singular and does not match this plural-form noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f6bf7b8a4a319908513f16736629cec1a5f354c69b7405ed12c94d917ebebab6
+contentHash=5973706584ab8eeab230e24ca059743ac583d6fdf3a43f5c5728e708600294fa
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-composition-feedback-u9-i-odindva-3-distractor`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4d7f6fa7d373b239aa08e73ded24b2433098fab877e991b3f9821af4cca3c3e6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:composition-feedback:u9-i-odindva-3-distractor
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Cardinal numbers table/examples for21,101,215,1984 and whole thousands2/3/4 versus5-through9, plus the complete Use of numerals in context paragraphs for one/two, gender/number agreement, genitive singular/plural and restriction to nominative/inanimate accusative constructions. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: gender=m/f/n for мальчик/девушка/животное. The Numbers source explicitly gives the plural-form one-pair-of-jeans example; empty OpenRussian fields for jeans are not used as proof. Bounded independently authored English and arithmetic decomposition; no new Russian form, unrestricted numeral-declension rule or productive-language claim. Original Russian cues/options, keys and source participants remain unchanged. Independently authored on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+один is masculine singular instead of the plural agreement used for one pair of jeans in the retained example.
+shippedText=один is masculine singular instead of the plural agreement used for one pair of jeans in the retained example.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=29effb68285ce27405d14badc66b444b16b178f80a1df2c2d9fde3515d2af8ab
+contentHash=fa8a9e00daf355bef8d45da719e93815c81489aeb6637b777028a66c72e02a2d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-composition-feedback-u9-i-odindva-4`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3a44d3a6cd12b8de478cda086be64d13ac5e51f34a45ae60bc74a794cdf74d32
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:composition-feedback:u9-i-odindva-4
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Cardinal numbers table/examples for21,101,215,1984 and whole thousands2/3/4 versus5-through9, plus the complete Use of numerals in context paragraphs for one/two, gender/number agreement, genitive singular/plural and restriction to nominative/inanimate accusative constructions. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: gender=m/f/n for мальчик/девушка/животное. The Numbers source explicitly gives the plural-form one-pair-of-jeans example; empty OpenRussian fields for jeans are not used as proof. Bounded independently authored English and arithmetic decomposition; no new Russian form, unrestricted numeral-declension rule or productive-language claim. Original Russian cues/options, keys and source participants remain unchanged. Independently authored on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+один is the masculine singular form of one and agrees with the shown word for boy in this example. одна is feminine singular instead. Match the grammatical gender of the noun in the retained counting phrase.
+shippedText=один is the masculine singular form of one and agrees with the shown word for boy in this example. одна is feminine singular instead. Match the grammatical gender of the noun in the retained counting phrase.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=140cf564d53c7ec9cf6c255063e3e36c3a5ebed4138a868f65b0c7beced7ba55
+contentHash=e7369ed9e32abf245ae9dde01b98487f7c730bcfdad5699842f5c5638c3a2096
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-composition-feedback-u9-i-odindva-4-distractor`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a9677909d020a7d7867ff80f7d4193f6f15b06c2902be99a146ec6ed36caa2e0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:composition-feedback:u9-i-odindva-4-distractor
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Cardinal numbers table/examples for21,101,215,1984 and whole thousands2/3/4 versus5-through9, plus the complete Use of numerals in context paragraphs for one/two, gender/number agreement, genitive singular/plural and restriction to nominative/inanimate accusative constructions. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: gender=m/f/n for мальчик/девушка/животное. The Numbers source explicitly gives the plural-form one-pair-of-jeans example; empty OpenRussian fields for jeans are not used as proof. Bounded independently authored English and arithmetic decomposition; no new Russian form, unrestricted numeral-declension rule or productive-language claim. Original Russian cues/options, keys and source participants remain unchanged. Independently authored on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+одна is feminine singular instead of the masculine singular agreement required by the shown noun.
+shippedText=одна is feminine singular instead of the masculine singular agreement required by the shown noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b37cfea1e1c035f7192c75427099845efa2c51434819dc213ac39baf5970eba0
+contentHash=81b235475917ab82250ccee4626a03540fdc4ab5e3bb708df9447033494f4ecc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-composition-feedback-u9-i-odindva-5`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7fc7fda37ef15eb1212e7a9570761dd76e118ed930b4dd2a7bcc96e976ec745e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:composition-feedback:u9-i-odindva-5
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Cardinal numbers table/examples for21,101,215,1984 and whole thousands2/3/4 versus5-through9, plus the complete Use of numerals in context paragraphs for one/two, gender/number agreement, genitive singular/plural and restriction to nominative/inanimate accusative constructions. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: gender=m/f/n for мальчик/девушка/животное. The Numbers source explicitly gives the plural-form one-pair-of-jeans example; empty OpenRussian fields for jeans are not used as proof. Bounded independently authored English and arithmetic decomposition; no new Russian form, unrestricted numeral-declension rule or productive-language claim. Original Russian cues/options, keys and source participants remain unchanged. Independently authored on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+две is the feminine form of two used in the retained phrase for two girls. два is used with masculine or neuter nouns instead. Choose by grammatical gender here; both options express the same numeric value.
+shippedText=две is the feminine form of two used in the retained phrase for two girls. два is used with masculine or neuter nouns instead. Choose by grammatical gender here; both options express the same numeric value.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=eb05db93e2134d4522deffcb5670f6d605e30b4878bb6e4338dcd6cb83c138ea
+contentHash=d4ae0413e60d56f5a7a74fad64ad6d13d6afab6c687bd1a0fd069dcc55140bda
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-composition-feedback-u9-i-odindva-5-distractor`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9baed80558a1bf122e9cf41365e4a5ce1fe27f03fcf2c876d3dbf6f74c128b6e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:composition-feedback:u9-i-odindva-5-distractor
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Cardinal numbers table/examples for21,101,215,1984 and whole thousands2/3/4 versus5-through9, plus the complete Use of numerals in context paragraphs for one/two, gender/number agreement, genitive singular/plural and restriction to nominative/inanimate accusative constructions. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: gender=m/f/n for мальчик/девушка/животное. The Numbers source explicitly gives the plural-form one-pair-of-jeans example; empty OpenRussian fields for jeans are not used as proof. Bounded independently authored English and arithmetic decomposition; no new Russian form, unrestricted numeral-declension rule or productive-language claim. Original Russian cues/options, keys and source participants remain unchanged. Independently authored on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+два expresses two with masculine or neuter nouns instead of the feminine agreement used in the retained phrase.
+shippedText=два expresses two with masculine or neuter nouns instead of the feminine agreement used in the retained phrase.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ad56023db2534b025477ffefd6bd208e3d6945a90fec819728f676ec2f43aa73
+contentHash=5213ceada1994134862410fb0ebbebdcfa2ab2a68d92a5f0030c6d6d2427625e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-composition-feedback-u9-i-thousands-1`
+
+- Objectives: obj-u9-thousands
+- Sessions: u9-s-orient, u9-s-thousands
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3c5c647be6235d6ba064068d0adeb590db33237f9160efef7e59ae2a709494af
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-thousands:composition-feedback:u9-i-thousands-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Cardinal numbers table/examples for21,101,215,1984 and whole thousands2/3/4 versus5-through9, plus the complete Use of numerals in context paragraphs for one/two, gender/number agreement, genitive singular/plural and restriction to nominative/inanimate accusative constructions. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: gender=m/f/n for мальчик/девушка/животное. The Numbers source explicitly gives the plural-form one-pair-of-jeans example; empty OpenRussian fields for jeans are not used as proof. Bounded independently authored English and arithmetic decomposition; no new Russian form, unrestricted numeral-declension rule or productive-language claim. Original Russian cues/options, keys and source participants remain unchanged. Independently authored on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+сто оди́н represents 101: 100 + 1. The other option gives only 100 and omits the final unit.
+shippedText=сто оди́н represents 101: 100 + 1. The other option gives only 100 and omits the final unit.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=553955c18ba650c202d290ed5b32100ba1dd1807283783378936801c9026f82a
+contentHash=f1a50cae2bb90aa5f1d33c2889772ffc308896c54dc5e8f18dbd06dc2d33df0e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-composition-feedback-u9-i-thousands-1-distractor`
+
+- Objectives: obj-u9-thousands
+- Sessions: u9-s-orient, u9-s-thousands
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e7f639903c944b5f1b3fff9468b51d918202d230b7f9575a6571d65133e083ab
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-thousands:composition-feedback:u9-i-thousands-1-distractor
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Cardinal numbers table/examples for21,101,215,1984 and whole thousands2/3/4 versus5-through9, plus the complete Use of numerals in context paragraphs for one/two, gender/number agreement, genitive singular/plural and restriction to nominative/inanimate accusative constructions. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: gender=m/f/n for мальчик/девушка/животное. The Numbers source explicitly gives the plural-form one-pair-of-jeans example; empty OpenRussian fields for jeans are not used as proof. Bounded independently authored English and arithmetic decomposition; no new Russian form, unrestricted numeral-declension rule or productive-language claim. Original Russian cues/options, keys and source participants remain unchanged. Independently authored on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+The shorter option gives 100 instead of 101; it omits the final unit.
+shippedText=The shorter option gives 100 instead of 101; it omits the final unit.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0df40e262031aa1a884cb37a7999a63b011d16475fbbcea0d7839e7bf955ce0c
+contentHash=d3728898eee278e809d1e5c6af32361e604d572eb8b0226218949c1bb6915994
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-composition-feedback-u9-i-thousands-2`
+
+- Objectives: obj-u9-thousands
+- Sessions: u9-s-orient, u9-s-thousands
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f32cdf25827b46e4408d9fb86248f4a8f7977eb6d8f5dd684028aec0f6c9c2ea
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-thousands:composition-feedback:u9-i-thousands-2
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Cardinal numbers table/examples for21,101,215,1984 and whole thousands2/3/4 versus5-through9, plus the complete Use of numerals in context paragraphs for one/two, gender/number agreement, genitive singular/plural and restriction to nominative/inanimate accusative constructions. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: gender=m/f/n for мальчик/девушка/животное. The Numbers source explicitly gives the plural-form one-pair-of-jeans example; empty OpenRussian fields for jeans are not used as proof. Bounded independently authored English and arithmetic decomposition; no new Russian form, unrestricted numeral-declension rule or productive-language claim. Original Russian cues/options, keys and source participants remain unchanged. Independently authored on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+две́сти пятна́дцать represents 215: 200 + 15. The other option gives only 200 and omits the final fifteen.
+shippedText=две́сти пятна́дцать represents 215: 200 + 15. The other option gives only 200 and omits the final fifteen.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=59a5b8587c790f1e486760ee02ed0cd8dd514e465ca03b238666fda1b1884d21
+contentHash=d27bc05ce6734ba287cd49e3ab98ba125a6841b3809fd07ff37445d33f800b83
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-composition-feedback-u9-i-thousands-2-distractor`
+
+- Objectives: obj-u9-thousands
+- Sessions: u9-s-orient, u9-s-thousands
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5bbc94d5862181a6ed24344d64c54223bae0d33bfb214ba84bd2c345e0af8440
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-thousands:composition-feedback:u9-i-thousands-2-distractor
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Cardinal numbers table/examples for21,101,215,1984 and whole thousands2/3/4 versus5-through9, plus the complete Use of numerals in context paragraphs for one/two, gender/number agreement, genitive singular/plural and restriction to nominative/inanimate accusative constructions. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: gender=m/f/n for мальчик/девушка/животное. The Numbers source explicitly gives the plural-form one-pair-of-jeans example; empty OpenRussian fields for jeans are not used as proof. Bounded independently authored English and arithmetic decomposition; no new Russian form, unrestricted numeral-declension rule or productive-language claim. Original Russian cues/options, keys and source participants remain unchanged. Independently authored on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+The shorter option gives 200 instead of 215; it omits the final fifteen.
+shippedText=The shorter option gives 200 instead of 215; it omits the final fifteen.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2c86559d8c3d988930048123edf8437112e3a095149c41d7be13fdb5b8653807
+contentHash=a1321fe0803ef77d32bde0e741e5b562e3c7556fb1f90903a284a80980afd1cf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-composition-feedback-u9-i-thousands-3`
+
+- Objectives: obj-u9-thousands
+- Sessions: u9-s-orient, u9-s-thousands
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 017fd86d20e5f6a31df6b6961c3c089c351ffe6638a8c1bf4775b35ec32e8fe2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-thousands:composition-feedback:u9-i-thousands-3
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Cardinal numbers table/examples for21,101,215,1984 and whole thousands2/3/4 versus5-through9, plus the complete Use of numerals in context paragraphs for one/two, gender/number agreement, genitive singular/plural and restriction to nominative/inanimate accusative constructions. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: gender=m/f/n for мальчик/девушка/животное. The Numbers source explicitly gives the plural-form one-pair-of-jeans example; empty OpenRussian fields for jeans are not used as proof. Bounded independently authored English and arithmetic decomposition; no new Russian form, unrestricted numeral-declension rule or productive-language claim. Original Russian cues/options, keys and source participants remain unchanged. Independently authored on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+ты́сяча девятьсо́т во́семьдесят четы́ре represents 1,984: 1,000 + 900 + 80 + 4. The other option gives only 1,000 and omits the remaining 984.
+shippedText=ты́сяча девятьсо́т во́семьдесят четы́ре represents 1,984: 1,000 + 900 + 80 + 4. The other option gives only 1,000 and omits the remaining 984.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3a44390aaada64e073504c61d3d6c229401c9edd649d58dd16783af332cb9e19
+contentHash=761aacc504537276d819b4fc85bcf1a4f571908a37989872c45a2e78c76a9f84
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-composition-feedback-u9-i-thousands-3-distractor`
+
+- Objectives: obj-u9-thousands
+- Sessions: u9-s-orient, u9-s-thousands
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ae428cd1aed4a061f3a18303846b2d96047959fb7f0e7f19fbb395edd77e0358
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-thousands:composition-feedback:u9-i-thousands-3-distractor
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Cardinal numbers table/examples for21,101,215,1984 and whole thousands2/3/4 versus5-through9, plus the complete Use of numerals in context paragraphs for one/two, gender/number agreement, genitive singular/plural and restriction to nominative/inanimate accusative constructions. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: gender=m/f/n for мальчик/девушка/животное. The Numbers source explicitly gives the plural-form one-pair-of-jeans example; empty OpenRussian fields for jeans are not used as proof. Bounded independently authored English and arithmetic decomposition; no new Russian form, unrestricted numeral-declension rule or productive-language claim. Original Russian cues/options, keys and source participants remain unchanged. Independently authored on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+The shorter option gives 1,000 instead of 1,984; it omits the remaining 984.
+shippedText=The shorter option gives 1,000 instead of 1,984; it omits the remaining 984.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4bf8ab14451689e83551deb7f8fcd58ae549e039d168461a2364fa20a10c0fb7
+contentHash=13d78be6519807b7a5479e94e66edbf8b3bdb75f5dbf7a0d511e3c8b7da7d662
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-composition-feedback-u9-i-thousands-4`
+
+- Objectives: obj-u9-thousands
+- Sessions: u9-s-orient, u9-s-thousands
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c3af4a0d3807f8a100990b9e38938a2e4443fe89ea811a1ec71c86657afd7dd3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-thousands:composition-feedback:u9-i-thousands-4
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Cardinal numbers table/examples for21,101,215,1984 and whole thousands2/3/4 versus5-through9, plus the complete Use of numerals in context paragraphs for one/two, gender/number agreement, genitive singular/plural and restriction to nominative/inanimate accusative constructions. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: gender=m/f/n for мальчик/девушка/животное. The Numbers source explicitly gives the plural-form one-pair-of-jeans example; empty OpenRussian fields for jeans are not used as proof. Bounded independently authored English and arithmetic decomposition; no new Russian form, unrestricted numeral-declension rule or productive-language claim. Original Russian cues/options, keys and source participants remain unchanged. Independently authored on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+The shown group counts two, three or four thousands. In these whole-thousand examples, the counted word for thousand takes the genitive singular. The other option counts five through nine thousands and uses the genitive plural. These examples use the basic nominative or inanimate accusative counting construction.
+shippedText=The shown group counts two, three or four thousands. In these whole-thousand examples, the counted word for thousand takes the genitive singular. The other option counts five through nine thousands and uses the genitive plural. These examples use the basic nominative or inanimate accusative counting construction.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f295f1f445aaaaf524faf7f95f9efa5481a7dfb7d4c0243028bd7af6aa20db8
+contentHash=1c498660caa5cac0ab5d9cd1517cdcca1dcee3d899f915f8cbf67340ef953aaa
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-composition-feedback-u9-i-thousands-4-distractor`
+
+- Objectives: obj-u9-thousands
+- Sessions: u9-s-orient, u9-s-thousands
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 09af2abae9907b202e76b99df56afffe89ea18aa4f21763c0c0d49be26b04220
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-thousands:composition-feedback:u9-i-thousands-4-distractor
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Cardinal numbers table/examples for21,101,215,1984 and whole thousands2/3/4 versus5-through9, plus the complete Use of numerals in context paragraphs for one/two, gender/number agreement, genitive singular/plural and restriction to nominative/inanimate accusative constructions. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: gender=m/f/n for мальчик/девушка/животное. The Numbers source explicitly gives the plural-form one-pair-of-jeans example; empty OpenRussian fields for jeans are not used as proof. Bounded independently authored English and arithmetic decomposition; no new Russian form, unrestricted numeral-declension rule or productive-language claim. Original Russian cues/options, keys and source participants remain unchanged. Independently authored on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+The other option counts five through nine thousands with genitive plural instead of the shown two, three or four thousands with genitive singular.
+shippedText=The other option counts five through nine thousands with genitive plural instead of the shown two, three or four thousands with genitive singular.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=03af9e9f495f51c439fff310eb38d818ceb50773b2e9732fc74c60bf098202fa
+contentHash=b99ac977a8adaf4a9be2275d3b8863b26554ec51643ae68fa2fa11e89aaf5f99
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -14789,6 +15449,28 @@ permitsAppUse=true
 - `obj-u9-tens` PROVENANCE `prov-ca-9-37`
 - `obj-u9-hundreds` PROVENANCE `prov-ca-9-38`
 - `obj-u9-thousands` PROVENANCE `prov-ca-9-39`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-composition-feedback-u9-g-odindva-0`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-composition-feedback-u9-g-odindva-0-distractor`
+- `obj-u9-thousands` PROVENANCE `prov-ca-u9-composition-feedback-u9-g-thousands-0`
+- `obj-u9-thousands` PROVENANCE `prov-ca-u9-composition-feedback-u9-g-thousands-0-distractor`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-composition-feedback-u9-i-odindva-1`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-composition-feedback-u9-i-odindva-1-distractor`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-composition-feedback-u9-i-odindva-2`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-composition-feedback-u9-i-odindva-2-distractor`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-composition-feedback-u9-i-odindva-3`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-composition-feedback-u9-i-odindva-3-distractor`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-composition-feedback-u9-i-odindva-4`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-composition-feedback-u9-i-odindva-4-distractor`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-composition-feedback-u9-i-odindva-5`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-composition-feedback-u9-i-odindva-5-distractor`
+- `obj-u9-thousands` PROVENANCE `prov-ca-u9-composition-feedback-u9-i-thousands-1`
+- `obj-u9-thousands` PROVENANCE `prov-ca-u9-composition-feedback-u9-i-thousands-1-distractor`
+- `obj-u9-thousands` PROVENANCE `prov-ca-u9-composition-feedback-u9-i-thousands-2`
+- `obj-u9-thousands` PROVENANCE `prov-ca-u9-composition-feedback-u9-i-thousands-2-distractor`
+- `obj-u9-thousands` PROVENANCE `prov-ca-u9-composition-feedback-u9-i-thousands-3`
+- `obj-u9-thousands` PROVENANCE `prov-ca-u9-composition-feedback-u9-i-thousands-3-distractor`
+- `obj-u9-thousands` PROVENANCE `prov-ca-u9-composition-feedback-u9-i-thousands-4`
+- `obj-u9-thousands` PROVENANCE `prov-ca-u9-composition-feedback-u9-i-thousands-4-distractor`
 - `obj-u9-cardinal` PROVENANCE `prov-ca-u9-value-feedback-u9-g-cardinal-0`
 - `obj-u9-cardinal` PROVENANCE `prov-ca-u9-value-feedback-u9-g-cardinal-0-distractor-1`
 - `obj-u9-hundreds` PROVENANCE `prov-ca-u9-value-feedback-u9-g-hundreds-0`
