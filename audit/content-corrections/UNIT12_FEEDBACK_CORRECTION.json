@@ -1,0 +1,1601 @@
+{
+  "baselineCommit": "84b4141dc206c0317dd896d122f8570e8dbf932f",
+  "beforeSha256": "0839494cd18b90e5038fa33a9ba60a2b555d06eb8711e114c9a30a9e0532a59a",
+  "afterSha256": "df98b251af6805679b6e97fb84473fb23be537b6e7687bc6abdc591696e42b09",
+  "addedProvenanceIds": [
+    "prov-ca-u12-feedback-u12-g-future-imp-0",
+    "prov-ca-u12-feedback-u12-g-future-imp-0-distractor-1",
+    "prov-ca-u12-feedback-u12-i-future-imp-1",
+    "prov-ca-u12-feedback-u12-i-future-imp-1-distractor-1",
+    "prov-ca-u12-feedback-u12-i-future-imp-2",
+    "prov-ca-u12-feedback-u12-i-future-imp-2-distractor-1",
+    "prov-ca-u12-feedback-u12-g-future-perf-0",
+    "prov-ca-u12-feedback-u12-g-future-perf-0-distractor-1",
+    "prov-ca-u12-feedback-u12-i-future-perf-1",
+    "prov-ca-u12-feedback-u12-i-future-perf-1-distractor-1",
+    "prov-ca-u12-feedback-u12-i-future-perf-2",
+    "prov-ca-u12-feedback-u12-i-future-perf-2-distractor-1",
+    "prov-ca-u12-feedback-u12-g-dative-0",
+    "prov-ca-u12-feedback-u12-g-dative-0-distractor-1",
+    "prov-ca-u12-feedback-u12-i-dative-1",
+    "prov-ca-u12-feedback-u12-i-dative-1-distractor-1",
+    "prov-ca-u12-feedback-u12-i-dative-2",
+    "prov-ca-u12-feedback-u12-i-dative-2-distractor-1",
+    "prov-ca-u12-feedback-u12-g-spelling-0",
+    "prov-ca-u12-feedback-u12-g-spelling-0-distractor-1",
+    "prov-ca-u12-feedback-u12-i-spelling-1",
+    "prov-ca-u12-feedback-u12-i-spelling-1-distractor-1",
+    "prov-ca-u12-feedback-u12-i-spelling-2",
+    "prov-ca-u12-feedback-u12-i-spelling-2-distractor-1",
+    "prov-ca-u12-feedback-u12-g-prep-plural-0",
+    "prov-ca-u12-feedback-u12-g-prep-plural-0-distractor-1",
+    "prov-ca-u12-feedback-u12-i-prep-plural-1",
+    "prov-ca-u12-feedback-u12-i-prep-plural-1-distractor-1",
+    "prov-ca-u12-feedback-u12-i-prep-plural-2",
+    "prov-ca-u12-feedback-u12-i-prep-plural-2-distractor-1"
+  ],
+  "changes": [
+    {
+      "before": {
+        "id": "u12-g-future-imp-0",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted line is the first-person plural future?",
+        "promptLetter": "We will be speaking",
+        "options": [
+          "Мы бу́дем говори́ть",
+          "Я бу́ду говори́ть"
+        ],
+        "answer": "Мы бу́дем говори́ть",
+        "feedback": "Does this answer show the first-person plural future? Мы бу́дем говори́ть.",
+        "objectiveId": "obj-u12-future-imp",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Does this row fail the first-person plural future?"
+        ],
+        "assessment": {
+          "testedFeature": "FIRST_PERSON_PLURAL_FUTURE",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u12-future-imp-0",
+          "cueLanguage": "rule",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ex-u12-future-imp-1-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u12-future-imp-0-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "Does this row fail the first-person plural future?"
+          ],
+          "whyAnswerDemonstratesObjective": "Does this answer show the first-person plural future?",
+          "contrastMembers": [
+            "Мы бу́дем говори́ть",
+            "Я бу́ду говори́ть"
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-ex-u12-future-imp-1-en",
+            "prov-ex-u12-future-imp-1-ru",
+            "prov-ex-u12-future-imp-0-ru"
+          ],
+          "responseKind": "RUSSIAN_CLAUSE"
+        }
+      },
+      "after": {
+        "id": "u12-g-future-imp-0",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted line is the first-person plural future?",
+        "promptLetter": "We will be speaking",
+        "options": [
+          "Мы бу́дем говори́ть",
+          "Я бу́ду говори́ть"
+        ],
+        "answer": "Мы бу́дем говори́ть",
+        "feedback": "Мы бу́дем говори́ть is the first-person plural future: the subject means we, and the future auxiliary agrees with that plural subject. Я бу́ду говори́ть is first-person singular, meaning I. Both use a future auxiliary plus the same imperfective infinitive; choose the plural line requested here.",
+        "objectiveId": "obj-u12-future-imp",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Я бу́ду говори́ть has a first-person singular subject and auxiliary, rather than the requested first-person plural future."
+        ],
+        "assessment": {
+          "testedFeature": "FIRST_PERSON_PLURAL_FUTURE",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u12-future-imp-0",
+          "cueLanguage": "rule",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ex-u12-future-imp-1-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u12-future-imp-0-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "Я бу́ду говори́ть has a first-person singular subject and auxiliary, rather than the requested first-person plural future."
+          ],
+          "whyAnswerDemonstratesObjective": "Мы бу́дем говори́ть is the first-person plural future: the subject means we, and the future auxiliary agrees with that plural subject. Я бу́ду говори́ть is first-person singular, meaning I. Both use a future auxiliary plus the same imperfective infinitive; choose the plural line requested here.",
+          "contrastMembers": [
+            "Мы бу́дем говори́ть",
+            "Я бу́ду говори́ть"
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-ex-u12-future-imp-1-en",
+            "prov-ex-u12-future-imp-1-ru",
+            "prov-ex-u12-future-imp-0-ru"
+          ],
+          "responseKind": "RUSSIAN_CLAUSE"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u12-i-future-imp-1",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted line is the first-person singular future?",
+        "promptLetter": "I will be speaking",
+        "options": [
+          "Я бу́ду говори́ть",
+          "Мы бу́дем говори́ть"
+        ],
+        "answer": "Я бу́ду говори́ть",
+        "feedback": "Does this answer show the first-person singular future? Я бу́ду говори́ть.",
+        "objectiveId": "obj-u12-future-imp",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Does this row fail the first-person singular future?"
+        ],
+        "assessment": {
+          "testedFeature": "FIRST_PERSON_SINGULAR_FUTURE",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u12-future-imp-1",
+          "cueLanguage": "rule",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u12-future-imp-0-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u12-future-imp-1-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "Does this row fail the first-person singular future?"
+          ],
+          "whyAnswerDemonstratesObjective": "Does this answer show the first-person singular future?",
+          "contrastMembers": [
+            "Я бу́ду говори́ть",
+            "Мы бу́дем говори́ть"
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-ex-u12-future-imp-0-en",
+            "prov-ex-u12-future-imp-0-ru",
+            "prov-ex-u12-future-imp-1-ru"
+          ],
+          "responseKind": "RUSSIAN_CLAUSE"
+        }
+      },
+      "after": {
+        "id": "u12-i-future-imp-1",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted line is the first-person singular future?",
+        "promptLetter": "I will be speaking",
+        "options": [
+          "Я бу́ду говори́ть",
+          "Мы бу́дем говори́ть"
+        ],
+        "answer": "Я бу́ду говори́ть",
+        "feedback": "Я бу́ду говори́ть is the first-person singular future: the subject means I, and the future auxiliary agrees with one speaker. Мы бу́дем говори́ть is first-person plural, meaning we. The imperfective infinitive stays the same while the subject and auxiliary change.",
+        "objectiveId": "obj-u12-future-imp",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Мы бу́дем говори́ть has a first-person plural subject and auxiliary, rather than the requested first-person singular future."
+        ],
+        "assessment": {
+          "testedFeature": "FIRST_PERSON_SINGULAR_FUTURE",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u12-future-imp-1",
+          "cueLanguage": "rule",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u12-future-imp-0-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u12-future-imp-1-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "Мы бу́дем говори́ть has a first-person plural subject and auxiliary, rather than the requested first-person singular future."
+          ],
+          "whyAnswerDemonstratesObjective": "Я бу́ду говори́ть is the first-person singular future: the subject means I, and the future auxiliary agrees with one speaker. Мы бу́дем говори́ть is first-person plural, meaning we. The imperfective infinitive stays the same while the subject and auxiliary change.",
+          "contrastMembers": [
+            "Я бу́ду говори́ть",
+            "Мы бу́дем говори́ть"
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-ex-u12-future-imp-0-en",
+            "prov-ex-u12-future-imp-0-ru",
+            "prov-ex-u12-future-imp-1-ru"
+          ],
+          "responseKind": "RUSSIAN_CLAUSE"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u12-i-future-imp-2",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted line is the second-person plural future?",
+        "promptLetter": "Ты бу́дешь говори́ть",
+        "options": [
+          "Вы бу́дете говори́ть",
+          "Я бу́ду говори́ть"
+        ],
+        "answer": "Вы бу́дете говори́ть",
+        "feedback": "Does this answer show the second-person plural future? Вы бу́дете говори́ть.",
+        "objectiveId": "obj-u12-future-imp",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Does this row fail the second-person plural future?"
+        ],
+        "assessment": {
+          "testedFeature": "SECOND_PERSON_PLURAL_FUTURE",
+          "evidenceMode": "SAME_CONSTRUCTION_DIFFERENT_FORM",
+          "contrastSetId": "u12-future-imp-2",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-u12-future-imp-x-0"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u12-future-imp-0-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "Does this row fail the second-person plural future?"
+          ],
+          "whyAnswerDemonstratesObjective": "Does this answer show the second-person plural future?",
+          "contrastMembers": [
+            "Вы бу́дете говори́ть",
+            "Я бу́ду говори́ть"
+          ],
+          "relationKind": "SAME_CONSTRUCTION_DIFFERENT_FORM",
+          "relationParticipantIds": [
+            "prov-ex-u12-future-imp-2-ru",
+            "prov-u12-future-imp-x-0",
+            "prov-ex-u12-future-imp-0-ru"
+          ],
+          "responseKind": "RUSSIAN_CLAUSE"
+        }
+      },
+      "after": {
+        "id": "u12-i-future-imp-2",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted line is the second-person plural future?",
+        "promptLetter": "Ты бу́дешь говори́ть",
+        "options": [
+          "Вы бу́дете говори́ть",
+          "Я бу́ду говори́ть"
+        ],
+        "answer": "Вы бу́дете говори́ть",
+        "feedback": "Вы бу́дете говори́ть is the second-person plural future row: the auxiliary agrees with you in that row. This form can also address one person politely. Я бу́ду говори́ть is first-person singular and changes the person as well as the table number. The same imperfective infinitive follows each auxiliary.",
+        "objectiveId": "obj-u12-future-imp",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Я бу́ду говори́ть is first-person singular future, not the requested second-person plural future row."
+        ],
+        "assessment": {
+          "testedFeature": "SECOND_PERSON_PLURAL_FUTURE",
+          "evidenceMode": "SAME_CONSTRUCTION_DIFFERENT_FORM",
+          "contrastSetId": "u12-future-imp-2",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-u12-future-imp-x-0"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u12-future-imp-0-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "Я бу́ду говори́ть is first-person singular future, not the requested second-person plural future row."
+          ],
+          "whyAnswerDemonstratesObjective": "Вы бу́дете говори́ть is the second-person plural future row: the auxiliary agrees with you in that row. This form can also address one person politely. Я бу́ду говори́ть is first-person singular and changes the person as well as the table number. The same imperfective infinitive follows each auxiliary.",
+          "contrastMembers": [
+            "Вы бу́дете говори́ть",
+            "Я бу́ду говори́ть"
+          ],
+          "relationKind": "SAME_CONSTRUCTION_DIFFERENT_FORM",
+          "relationParticipantIds": [
+            "prov-ex-u12-future-imp-2-ru",
+            "prov-u12-future-imp-x-0",
+            "prov-ex-u12-future-imp-0-ru"
+          ],
+          "responseKind": "RUSSIAN_CLAUSE"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u12-g-future-perf-0",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted line is the first-person plural future?",
+        "promptLetter": "We will speak",
+        "options": [
+          "Мы ска́жем",
+          "Я скажу́"
+        ],
+        "answer": "Мы ска́жем",
+        "feedback": "Does this answer show the first-person plural future? Мы ска́жем.",
+        "objectiveId": "obj-u12-future-perf",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Does this row fail the first-person plural future?"
+        ],
+        "assessment": {
+          "testedFeature": "FIRST_PERSON_PLURAL_FUTURE",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u12-future-perf-0",
+          "cueLanguage": "rule",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ex-u12-future-perf-1-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u12-future-perf-0-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "Does this row fail the first-person plural future?"
+          ],
+          "whyAnswerDemonstratesObjective": "Does this answer show the first-person plural future?",
+          "contrastMembers": [
+            "Мы ска́жем",
+            "Я скажу́"
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-ex-u12-future-perf-1-en",
+            "prov-ex-u12-future-perf-1-ru",
+            "prov-ex-u12-future-perf-0-ru"
+          ],
+          "responseKind": "RUSSIAN_CLAUSE"
+        }
+      },
+      "after": {
+        "id": "u12-g-future-perf-0",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted line is the first-person plural future?",
+        "promptLetter": "We will speak",
+        "options": [
+          "Мы ска́жем",
+          "Я скажу́"
+        ],
+        "answer": "Мы ска́жем",
+        "feedback": "Мы ска́жем is the first-person plural future of the perfective verb in this table, agreeing with we. Я скажу́ is first-person singular, agreeing with I. These perfective future options use a single conjugated verb without a separate future auxiliary; choose the plural line.",
+        "objectiveId": "obj-u12-future-perf",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Я скажу́ is first-person singular future, not first-person plural future."
+        ],
+        "assessment": {
+          "testedFeature": "FIRST_PERSON_PLURAL_FUTURE",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u12-future-perf-0",
+          "cueLanguage": "rule",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ex-u12-future-perf-1-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u12-future-perf-0-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "Я скажу́ is first-person singular future, not first-person plural future."
+          ],
+          "whyAnswerDemonstratesObjective": "Мы ска́жем is the first-person plural future of the perfective verb in this table, agreeing with we. Я скажу́ is first-person singular, agreeing with I. These perfective future options use a single conjugated verb without a separate future auxiliary; choose the plural line.",
+          "contrastMembers": [
+            "Мы ска́жем",
+            "Я скажу́"
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-ex-u12-future-perf-1-en",
+            "prov-ex-u12-future-perf-1-ru",
+            "prov-ex-u12-future-perf-0-ru"
+          ],
+          "responseKind": "RUSSIAN_CLAUSE"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u12-i-future-perf-1",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted row is the first-person plural future?",
+        "promptLetter": "скажу́",
+        "options": [
+          "ска́жем",
+          "ска́жешь"
+        ],
+        "answer": "ска́жем",
+        "feedback": "Does this answer show the first-person plural future? ска́жем.",
+        "objectiveId": "obj-u12-future-perf",
+        "sourceId": "src-openrussian-50e210c4",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Does this row fail the first-person plural future?"
+        ],
+        "assessment": {
+          "testedFeature": "FIRST_PERSON_PLURAL_FUTURE",
+          "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+          "contrastSetId": "u12-future-perf-1",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-or-u12-future-perf-3"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-or-u12-future-perf-4"
+          ],
+          "distractorDifference": [
+            "",
+            "Does this row fail the first-person plural future?"
+          ],
+          "whyAnswerDemonstratesObjective": "Does this answer show the first-person plural future?",
+          "contrastMembers": [
+            "ска́жем",
+            "ска́жешь"
+          ],
+          "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+          "relationParticipantIds": [
+            "prov-ex-or-u12-future-perf-2",
+            "prov-ex-or-u12-future-perf-3",
+            "prov-ex-or-u12-future-perf-4"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      },
+      "after": {
+        "id": "u12-i-future-perf-1",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted row is the first-person plural future?",
+        "promptLetter": "скажу́",
+        "options": [
+          "ска́жем",
+          "ска́жешь"
+        ],
+        "answer": "ска́жем",
+        "feedback": "ска́жем is the first-person plural future form of this perfective verb, used with we. ска́жешь is second-person singular, used with singular informal you. The cue shows first-person singular, but the requested table row is first-person plural.",
+        "objectiveId": "obj-u12-future-perf",
+        "sourceId": "src-openrussian-50e210c4",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "ска́жешь is second-person singular future, rather than the first-person plural future requested here."
+        ],
+        "assessment": {
+          "testedFeature": "FIRST_PERSON_PLURAL_FUTURE",
+          "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+          "contrastSetId": "u12-future-perf-1",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-or-u12-future-perf-3"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-or-u12-future-perf-4"
+          ],
+          "distractorDifference": [
+            "",
+            "ска́жешь is second-person singular future, rather than the first-person plural future requested here."
+          ],
+          "whyAnswerDemonstratesObjective": "ска́жем is the first-person plural future form of this perfective verb, used with we. ска́жешь is second-person singular, used with singular informal you. The cue shows first-person singular, but the requested table row is first-person plural.",
+          "contrastMembers": [
+            "ска́жем",
+            "ска́жешь"
+          ],
+          "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+          "relationParticipantIds": [
+            "prov-ex-or-u12-future-perf-2",
+            "prov-ex-or-u12-future-perf-3",
+            "prov-ex-or-u12-future-perf-4"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u12-i-future-perf-2",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted line is the first-person singular future?",
+        "promptLetter": "I will speak",
+        "options": [
+          "Я скажу́",
+          "Мы ска́жем"
+        ],
+        "answer": "Я скажу́",
+        "feedback": "Does this answer show the first-person singular future? Я скажу́.",
+        "objectiveId": "obj-u12-future-perf",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Does this row fail the first-person singular future?"
+        ],
+        "assessment": {
+          "testedFeature": "FIRST_PERSON_SINGULAR_FUTURE",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u12-future-perf-2",
+          "cueLanguage": "rule",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u12-future-perf-0-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u12-future-perf-1-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "Does this row fail the first-person singular future?"
+          ],
+          "whyAnswerDemonstratesObjective": "Does this answer show the first-person singular future?",
+          "contrastMembers": [
+            "Я скажу́",
+            "Мы ска́жем"
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-ex-u12-future-perf-0-en",
+            "prov-ex-u12-future-perf-0-ru",
+            "prov-ex-u12-future-perf-1-ru"
+          ],
+          "responseKind": "RUSSIAN_CLAUSE"
+        }
+      },
+      "after": {
+        "id": "u12-i-future-perf-2",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted line is the first-person singular future?",
+        "promptLetter": "I will speak",
+        "options": [
+          "Я скажу́",
+          "Мы ска́жем"
+        ],
+        "answer": "Я скажу́",
+        "feedback": "Я скажу́ is the first-person singular future of the perfective verb in the table, agreeing with I. Мы ска́жем is first-person plural, agreeing with we. Both refer to the future with a single conjugated perfective verb; the question asks for one speaker.",
+        "objectiveId": "obj-u12-future-perf",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Мы ска́жем is first-person plural future, not first-person singular future."
+        ],
+        "assessment": {
+          "testedFeature": "FIRST_PERSON_SINGULAR_FUTURE",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u12-future-perf-2",
+          "cueLanguage": "rule",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u12-future-perf-0-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u12-future-perf-1-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "Мы ска́жем is first-person plural future, not first-person singular future."
+          ],
+          "whyAnswerDemonstratesObjective": "Я скажу́ is the first-person singular future of the perfective verb in the table, agreeing with I. Мы ска́жем is first-person plural, agreeing with we. Both refer to the future with a single conjugated perfective verb; the question asks for one speaker.",
+          "contrastMembers": [
+            "Я скажу́",
+            "Мы ска́жем"
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-ex-u12-future-perf-0-en",
+            "prov-ex-u12-future-perf-0-ru",
+            "prov-ex-u12-future-perf-1-ru"
+          ],
+          "responseKind": "RUSSIAN_CLAUSE"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u12-g-dative-0",
+        "kind": "CASE_RECOGNITION",
+        "language": "en",
+        "prompt": "Which admitted row is the dative singular?",
+        "promptLetter": "кни́га",
+        "options": [
+          "кни́ге",
+          "кни́ги"
+        ],
+        "answer": "кни́ге",
+        "feedback": "Does this answer show the dative singular? кни́ге.",
+        "objectiveId": "obj-u12-dative",
+        "sourceId": "src-openrussian-50e210c4",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Does this row fail the dative singular?"
+        ],
+        "assessment": {
+          "testedFeature": "DATIVE_SINGULAR",
+          "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+          "contrastSetId": "u12-dative-0",
+          "cueLanguage": "ru",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ex-or-u12-dative-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-or-u12-dative-2"
+          ],
+          "distractorDifference": [
+            "",
+            "Does this row fail the dative singular?"
+          ],
+          "whyAnswerDemonstratesObjective": "Does this answer show the dative singular?",
+          "contrastMembers": [
+            "кни́ге",
+            "кни́ги"
+          ],
+          "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+          "relationParticipantIds": [
+            "prov-ex-or-u12-dative-0",
+            "prov-ex-or-u12-dative-1",
+            "prov-ex-or-u12-dative-2"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      },
+      "after": {
+        "id": "u12-g-dative-0",
+        "kind": "CASE_RECOGNITION",
+        "language": "en",
+        "prompt": "Which admitted row is the dative singular?",
+        "promptLetter": "кни́га",
+        "options": [
+          "кни́ге",
+          "кни́ги"
+        ],
+        "answer": "кни́ге",
+        "feedback": "кни́ге is the recorded dative singular form of кни́га. кни́ги is the nominative plural option supplied here, so it changes the number and table row. This question asks for the dative singular row; the same spelling as the answer can also be prepositional singular in a sentence.",
+        "objectiveId": "obj-u12-dative",
+        "sourceId": "src-openrussian-50e210c4",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "кни́ги is the nominative plural option supplied here, not the requested dative singular table row."
+        ],
+        "assessment": {
+          "testedFeature": "DATIVE_SINGULAR",
+          "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+          "contrastSetId": "u12-dative-0",
+          "cueLanguage": "ru",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ex-or-u12-dative-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-or-u12-dative-2"
+          ],
+          "distractorDifference": [
+            "",
+            "кни́ги is the nominative plural option supplied here, not the requested dative singular table row."
+          ],
+          "whyAnswerDemonstratesObjective": "кни́ге is the recorded dative singular form of кни́га. кни́ги is the nominative plural option supplied here, so it changes the number and table row. This question asks for the dative singular row; the same spelling as the answer can also be prepositional singular in a sentence.",
+          "contrastMembers": [
+            "кни́ге",
+            "кни́ги"
+          ],
+          "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+          "relationParticipantIds": [
+            "prov-ex-or-u12-dative-0",
+            "prov-ex-or-u12-dative-1",
+            "prov-ex-or-u12-dative-2"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u12-i-dative-1",
+        "kind": "CASE_RECOGNITION",
+        "language": "en",
+        "prompt": "Which admitted row is the dative singular?",
+        "promptLetter": "сто́л",
+        "options": [
+          "столу́",
+          "столы́"
+        ],
+        "answer": "столу́",
+        "feedback": "Does this answer show the dative singular? столу́.",
+        "objectiveId": "obj-u12-dative",
+        "sourceId": "src-openrussian-50e210c4",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Does this row fail the dative singular?"
+        ],
+        "assessment": {
+          "testedFeature": "DATIVE_SINGULAR",
+          "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+          "contrastSetId": "u12-dative-1",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-or-u12-dative-4"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-or-u12-dative-5"
+          ],
+          "distractorDifference": [
+            "",
+            "Does this row fail the dative singular?"
+          ],
+          "whyAnswerDemonstratesObjective": "Does this answer show the dative singular?",
+          "contrastMembers": [
+            "столу́",
+            "столы́"
+          ],
+          "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+          "relationParticipantIds": [
+            "prov-ex-or-u12-dative-3",
+            "prov-ex-or-u12-dative-4",
+            "prov-ex-or-u12-dative-5"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      },
+      "after": {
+        "id": "u12-i-dative-1",
+        "kind": "CASE_RECOGNITION",
+        "language": "en",
+        "prompt": "Which admitted row is the dative singular?",
+        "promptLetter": "сто́л",
+        "options": [
+          "столу́",
+          "столы́"
+        ],
+        "answer": "столу́",
+        "feedback": "столу́ is the recorded dative singular form of сто́л. столы́ is the nominative plural option supplied here. Keep the noun singular and select its dative row, rather than selecting the plural nominative row.",
+        "objectiveId": "obj-u12-dative",
+        "sourceId": "src-openrussian-50e210c4",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "столы́ is nominative plural, not the requested dative singular."
+        ],
+        "assessment": {
+          "testedFeature": "DATIVE_SINGULAR",
+          "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+          "contrastSetId": "u12-dative-1",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-or-u12-dative-4"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-or-u12-dative-5"
+          ],
+          "distractorDifference": [
+            "",
+            "столы́ is nominative plural, not the requested dative singular."
+          ],
+          "whyAnswerDemonstratesObjective": "столу́ is the recorded dative singular form of сто́л. столы́ is the nominative plural option supplied here. Keep the noun singular and select its dative row, rather than selecting the plural nominative row.",
+          "contrastMembers": [
+            "столу́",
+            "столы́"
+          ],
+          "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+          "relationParticipantIds": [
+            "prov-ex-or-u12-dative-3",
+            "prov-ex-or-u12-dative-4",
+            "prov-ex-or-u12-dative-5"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u12-i-dative-2",
+        "kind": "CASE_RECOGNITION",
+        "language": "en",
+        "prompt": "Which admitted row is the dative singular?",
+        "promptLetter": "до́м",
+        "options": [
+          "до́му",
+          "дома́"
+        ],
+        "answer": "до́му",
+        "feedback": "Does this answer show the dative singular? до́му.",
+        "objectiveId": "obj-u12-dative",
+        "sourceId": "src-openrussian-50e210c4",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Does this row fail the dative singular?"
+        ],
+        "assessment": {
+          "testedFeature": "DATIVE_SINGULAR",
+          "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+          "contrastSetId": "u12-dative-2",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-or-u12-dative-7"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-or-u12-dative-8"
+          ],
+          "distractorDifference": [
+            "",
+            "Does this row fail the dative singular?"
+          ],
+          "whyAnswerDemonstratesObjective": "Does this answer show the dative singular?",
+          "contrastMembers": [
+            "до́му",
+            "дома́"
+          ],
+          "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+          "relationParticipantIds": [
+            "prov-ex-or-u12-dative-6",
+            "prov-ex-or-u12-dative-7",
+            "prov-ex-or-u12-dative-8"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      },
+      "after": {
+        "id": "u12-i-dative-2",
+        "kind": "CASE_RECOGNITION",
+        "language": "en",
+        "prompt": "Which admitted row is the dative singular?",
+        "promptLetter": "до́м",
+        "options": [
+          "до́му",
+          "дома́"
+        ],
+        "answer": "до́му",
+        "feedback": "до́му is the recorded dative singular form of до́м. дома́ is the nominative plural option supplied here. The requested row changes case while keeping the noun singular; the plural option changes number instead.",
+        "objectiveId": "obj-u12-dative",
+        "sourceId": "src-openrussian-50e210c4",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "дома́ is nominative plural, not the requested dative singular."
+        ],
+        "assessment": {
+          "testedFeature": "DATIVE_SINGULAR",
+          "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+          "contrastSetId": "u12-dative-2",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-or-u12-dative-7"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-or-u12-dative-8"
+          ],
+          "distractorDifference": [
+            "",
+            "дома́ is nominative plural, not the requested dative singular."
+          ],
+          "whyAnswerDemonstratesObjective": "до́му is the recorded dative singular form of до́м. дома́ is the nominative plural option supplied here. The requested row changes case while keeping the noun singular; the plural option changes number instead.",
+          "contrastMembers": [
+            "до́му",
+            "дома́"
+          ],
+          "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+          "relationParticipantIds": [
+            "prov-ex-or-u12-dative-6",
+            "prov-ex-or-u12-dative-7",
+            "prov-ex-or-u12-dative-8"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u12-g-spelling-0",
+        "kind": "PATTERN_CLASSIFICATION",
+        "language": "en",
+        "prompt": "Which admitted line is the accepted spelling rather than the rejected example?",
+        "promptLetter": "the good letter",
+        "options": [
+          "хорошее письмо",
+          "хорошое письмо"
+        ],
+        "answer": "хорошее письмо",
+        "feedback": "Does this answer show the accepted spelling? хорошее письмо.",
+        "objectiveId": "obj-u12-spelling",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Does this row fail the accepted spelling?"
+        ],
+        "assessment": {
+          "testedFeature": "ACCEPTED_SPELLING",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u12-spelling-0",
+          "cueLanguage": "rule",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ex-u12-spelling-3-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-u12-spelling-rem-r6"
+          ],
+          "distractorDifference": [
+            "",
+            "Does this row fail the accepted spelling?"
+          ],
+          "whyAnswerDemonstratesObjective": "Does this answer show the accepted spelling?",
+          "contrastMembers": [
+            "хорошее письмо",
+            "хорошое письмо"
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-ex-u12-spelling-3-en",
+            "prov-ex-u12-spelling-3-ru",
+            "prov-u12-spelling-rem-r6"
+          ],
+          "responseKind": "RUSSIAN_PHRASE"
+        }
+      },
+      "after": {
+        "id": "u12-g-spelling-0",
+        "kind": "PATTERN_CLASSIFICATION",
+        "language": "en",
+        "prompt": "Which admitted line is the accepted spelling rather than the rejected example?",
+        "promptLetter": "the good letter",
+        "options": [
+          "хорошее письмо",
+          "хорошое письмо"
+        ],
+        "answer": "хорошее письмо",
+        "feedback": "хорошее письмо is the accepted spelling in the source example. The adjective stem ends in the consonant transliterated sh; its unstressed neuter ending uses e rather than o under the five-letter spelling rule. хорошое письмо is the rejected counterexample and should not be used as correct Russian.",
+        "objectiveId": "obj-u12-spelling",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "хорошое письмо is the rejected spelling: it uses o where this unstressed adjective ending requires e."
+        ],
+        "assessment": {
+          "testedFeature": "ACCEPTED_SPELLING",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u12-spelling-0",
+          "cueLanguage": "rule",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ex-u12-spelling-3-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-u12-spelling-rem-r6"
+          ],
+          "distractorDifference": [
+            "",
+            "хорошое письмо is the rejected spelling: it uses o where this unstressed adjective ending requires e."
+          ],
+          "whyAnswerDemonstratesObjective": "хорошее письмо is the accepted spelling in the source example. The adjective stem ends in the consonant transliterated sh; its unstressed neuter ending uses e rather than o under the five-letter spelling rule. хорошое письмо is the rejected counterexample and should not be used as correct Russian.",
+          "contrastMembers": [
+            "хорошее письмо",
+            "хорошое письмо"
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-ex-u12-spelling-3-en",
+            "prov-ex-u12-spelling-3-ru",
+            "prov-u12-spelling-rem-r6"
+          ],
+          "responseKind": "RUSSIAN_PHRASE"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u12-i-spelling-1",
+        "kind": "PATTERN_CLASSIFICATION",
+        "language": "en",
+        "prompt": "Which admitted row is the neuter form?",
+        "promptLetter": "хоро́ший",
+        "options": [
+          "хоро́шее",
+          "хоро́шая"
+        ],
+        "answer": "хоро́шее",
+        "feedback": "Does this answer show the neuter form? хоро́шее.",
+        "objectiveId": "obj-u12-spelling",
+        "sourceId": "src-openrussian-50e210c4",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Does this row fail the neuter form?"
+        ],
+        "assessment": {
+          "testedFeature": "NEUTER_FORM",
+          "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+          "contrastSetId": "u12-spelling-1",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-or-u12-spelling-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-or-u12-spelling-2"
+          ],
+          "distractorDifference": [
+            "",
+            "Does this row fail the neuter form?"
+          ],
+          "whyAnswerDemonstratesObjective": "Does this answer show the neuter form?",
+          "contrastMembers": [
+            "хоро́шее",
+            "хоро́шая"
+          ],
+          "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+          "relationParticipantIds": [
+            "prov-ex-or-u12-spelling-0",
+            "prov-ex-or-u12-spelling-1",
+            "prov-ex-or-u12-spelling-2"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      },
+      "after": {
+        "id": "u12-i-spelling-1",
+        "kind": "PATTERN_CLASSIFICATION",
+        "language": "en",
+        "prompt": "Which admitted row is the neuter form?",
+        "promptLetter": "хоро́ший",
+        "options": [
+          "хоро́шее",
+          "хоро́шая"
+        ],
+        "answer": "хоро́шее",
+        "feedback": "хоро́шее is the nominative singular neuter form of this adjective. хоро́шая is feminine singular. The adjective agrees with the gender of the noun it modifies; the neuter form requested here is also the form used with the neuter noun in the good-letter example.",
+        "objectiveId": "obj-u12-spelling",
+        "sourceId": "src-openrussian-50e210c4",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "хоро́шая is feminine singular, not the requested neuter form."
+        ],
+        "assessment": {
+          "testedFeature": "NEUTER_FORM",
+          "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+          "contrastSetId": "u12-spelling-1",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-or-u12-spelling-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-or-u12-spelling-2"
+          ],
+          "distractorDifference": [
+            "",
+            "хоро́шая is feminine singular, not the requested neuter form."
+          ],
+          "whyAnswerDemonstratesObjective": "хоро́шее is the nominative singular neuter form of this adjective. хоро́шая is feminine singular. The adjective agrees with the gender of the noun it modifies; the neuter form requested here is also the form used with the neuter noun in the good-letter example.",
+          "contrastMembers": [
+            "хоро́шее",
+            "хоро́шая"
+          ],
+          "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+          "relationParticipantIds": [
+            "prov-ex-or-u12-spelling-0",
+            "prov-ex-or-u12-spelling-1",
+            "prov-ex-or-u12-spelling-2"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u12-i-spelling-2",
+        "kind": "PATTERN_CLASSIFICATION",
+        "language": "en",
+        "prompt": "Which admitted line is the rejected spelling rather than the accepted example?",
+        "promptLetter": "the good letter",
+        "options": [
+          "хорошое письмо",
+          "хорошее письмо"
+        ],
+        "answer": "хорошое письмо",
+        "feedback": "Does this answer show the rejected spelling? хорошое письмо.",
+        "objectiveId": "obj-u12-spelling",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Does this row fail the rejected spelling?"
+        ],
+        "assessment": {
+          "testedFeature": "REJECTED_SPELLING",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u12-spelling-2",
+          "cueLanguage": "rule",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-u12-spelling-rem-r6"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u12-spelling-3-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "Does this row fail the rejected spelling?"
+          ],
+          "whyAnswerDemonstratesObjective": "Does this answer show the rejected spelling?",
+          "contrastMembers": [
+            "хорошое письмо",
+            "хорошее письмо"
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-ex-u12-spelling-3-en",
+            "prov-u12-spelling-rem-r6",
+            "prov-ex-u12-spelling-3-ru"
+          ],
+          "responseKind": "RUSSIAN_PHRASE"
+        }
+      },
+      "after": {
+        "id": "u12-i-spelling-2",
+        "kind": "PATTERN_CLASSIFICATION",
+        "language": "en",
+        "prompt": "Which admitted line is the rejected spelling rather than the accepted example?",
+        "promptLetter": "the good letter",
+        "options": [
+          "хорошое письмо",
+          "хорошее письмо"
+        ],
+        "answer": "хорошое письмо",
+        "feedback": "хорошое письмо is the rejected spelling requested by this question. Its unstressed adjective ending uses o where the five-letter rule requires e after the stem-final consonant transliterated sh. хорошее письмо is the accepted spelling. The keyed counterexample is incorrect Russian, not a form to use.",
+        "objectiveId": "obj-u12-spelling",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "хорошее письмо is the accepted spelling, while this question asks you to identify the rejected spelling."
+        ],
+        "assessment": {
+          "testedFeature": "REJECTED_SPELLING",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u12-spelling-2",
+          "cueLanguage": "rule",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-u12-spelling-rem-r6"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u12-spelling-3-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "хорошее письмо is the accepted spelling, while this question asks you to identify the rejected spelling."
+          ],
+          "whyAnswerDemonstratesObjective": "хорошое письмо is the rejected spelling requested by this question. Its unstressed adjective ending uses o where the five-letter rule requires e after the stem-final consonant transliterated sh. хорошее письмо is the accepted spelling. The keyed counterexample is incorrect Russian, not a form to use.",
+          "contrastMembers": [
+            "хорошое письмо",
+            "хорошее письмо"
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-ex-u12-spelling-3-en",
+            "prov-u12-spelling-rem-r6",
+            "prov-ex-u12-spelling-3-ru"
+          ],
+          "responseKind": "RUSSIAN_PHRASE"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u12-g-prep-plural-0",
+        "kind": "CASE_RECOGNITION",
+        "language": "en",
+        "prompt": "Which admitted row is the prepositional plural?",
+        "promptLetter": "кни́ги",
+        "options": [
+          "кни́гах",
+          "кни́ге"
+        ],
+        "answer": "кни́гах",
+        "feedback": "Does this answer show the prepositional plural? кни́гах.",
+        "objectiveId": "obj-u12-prep-plural",
+        "sourceId": "src-openrussian-50e210c4",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Does this row fail the prepositional plural?"
+        ],
+        "assessment": {
+          "testedFeature": "PREPOSITIONAL_PLURAL",
+          "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+          "contrastSetId": "u12-prep-plural-0",
+          "cueLanguage": "ru",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ex-or-u12-prep-plural-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-or-u12-prep-plural-2"
+          ],
+          "distractorDifference": [
+            "",
+            "Does this row fail the prepositional plural?"
+          ],
+          "whyAnswerDemonstratesObjective": "Does this answer show the prepositional plural?",
+          "contrastMembers": [
+            "кни́гах",
+            "кни́ге"
+          ],
+          "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+          "relationParticipantIds": [
+            "prov-ex-or-u12-prep-plural-0",
+            "prov-ex-or-u12-prep-plural-1",
+            "prov-ex-or-u12-prep-plural-2"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      },
+      "after": {
+        "id": "u12-g-prep-plural-0",
+        "kind": "CASE_RECOGNITION",
+        "language": "en",
+        "prompt": "Which admitted row is the prepositional plural?",
+        "promptLetter": "кни́ги",
+        "options": [
+          "кни́гах",
+          "кни́ге"
+        ],
+        "answer": "кни́гах",
+        "feedback": "кни́гах is the recorded prepositional plural form of the shown noun. кни́ге is the dative singular option supplied here and can also be prepositional singular. Neither singular use matches the plural row requested. These are table forms; the prepositional case is used with a governing preposition in a sentence.",
+        "objectiveId": "obj-u12-prep-plural",
+        "sourceId": "src-openrussian-50e210c4",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "кни́ге is singular, including the supplied dative singular row, rather than prepositional plural."
+        ],
+        "assessment": {
+          "testedFeature": "PREPOSITIONAL_PLURAL",
+          "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+          "contrastSetId": "u12-prep-plural-0",
+          "cueLanguage": "ru",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ex-or-u12-prep-plural-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-or-u12-prep-plural-2"
+          ],
+          "distractorDifference": [
+            "",
+            "кни́ге is singular, including the supplied dative singular row, rather than prepositional plural."
+          ],
+          "whyAnswerDemonstratesObjective": "кни́гах is the recorded prepositional plural form of the shown noun. кни́ге is the dative singular option supplied here and can also be prepositional singular. Neither singular use matches the plural row requested. These are table forms; the prepositional case is used with a governing preposition in a sentence.",
+          "contrastMembers": [
+            "кни́гах",
+            "кни́ге"
+          ],
+          "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+          "relationParticipantIds": [
+            "prov-ex-or-u12-prep-plural-0",
+            "prov-ex-or-u12-prep-plural-1",
+            "prov-ex-or-u12-prep-plural-2"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u12-i-prep-plural-1",
+        "kind": "CASE_RECOGNITION",
+        "language": "en",
+        "prompt": "Which admitted row is the prepositional plural?",
+        "promptLetter": "столы́",
+        "options": [
+          "стола́х",
+          "столу́"
+        ],
+        "answer": "стола́х",
+        "feedback": "Does this answer show the prepositional plural? стола́х.",
+        "objectiveId": "obj-u12-prep-plural",
+        "sourceId": "src-openrussian-50e210c4",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Does this row fail the prepositional plural?"
+        ],
+        "assessment": {
+          "testedFeature": "PREPOSITIONAL_PLURAL",
+          "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+          "contrastSetId": "u12-prep-plural-1",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-or-u12-prep-plural-4"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-or-u12-prep-plural-5"
+          ],
+          "distractorDifference": [
+            "",
+            "Does this row fail the prepositional plural?"
+          ],
+          "whyAnswerDemonstratesObjective": "Does this answer show the prepositional plural?",
+          "contrastMembers": [
+            "стола́х",
+            "столу́"
+          ],
+          "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+          "relationParticipantIds": [
+            "prov-ex-or-u12-prep-plural-3",
+            "prov-ex-or-u12-prep-plural-4",
+            "prov-ex-or-u12-prep-plural-5"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      },
+      "after": {
+        "id": "u12-i-prep-plural-1",
+        "kind": "CASE_RECOGNITION",
+        "language": "en",
+        "prompt": "Which admitted row is the prepositional plural?",
+        "promptLetter": "столы́",
+        "options": [
+          "стола́х",
+          "столу́"
+        ],
+        "answer": "стола́х",
+        "feedback": "стола́х is the recorded prepositional plural form of the shown noun. столу́ is the supplied dative singular option. The question requires both prepositional case and plural number; the singular dative option changes both features. In a sentence the prepositional form follows a governing preposition.",
+        "objectiveId": "obj-u12-prep-plural",
+        "sourceId": "src-openrussian-50e210c4",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "столу́ is the supplied dative singular form, not prepositional plural."
+        ],
+        "assessment": {
+          "testedFeature": "PREPOSITIONAL_PLURAL",
+          "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+          "contrastSetId": "u12-prep-plural-1",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-or-u12-prep-plural-4"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-or-u12-prep-plural-5"
+          ],
+          "distractorDifference": [
+            "",
+            "столу́ is the supplied dative singular form, not prepositional plural."
+          ],
+          "whyAnswerDemonstratesObjective": "стола́х is the recorded prepositional plural form of the shown noun. столу́ is the supplied dative singular option. The question requires both prepositional case and plural number; the singular dative option changes both features. In a sentence the prepositional form follows a governing preposition.",
+          "contrastMembers": [
+            "стола́х",
+            "столу́"
+          ],
+          "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+          "relationParticipantIds": [
+            "prov-ex-or-u12-prep-plural-3",
+            "prov-ex-or-u12-prep-plural-4",
+            "prov-ex-or-u12-prep-plural-5"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u12-i-prep-plural-2",
+        "kind": "CASE_RECOGNITION",
+        "language": "en",
+        "prompt": "Which admitted row is the prepositional plural?",
+        "promptLetter": "дома́",
+        "options": [
+          "дома́х",
+          "до́му"
+        ],
+        "answer": "дома́х",
+        "feedback": "Does this answer show the prepositional plural? дома́х.",
+        "objectiveId": "obj-u12-prep-plural",
+        "sourceId": "src-openrussian-50e210c4",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Does this row fail the prepositional plural?"
+        ],
+        "assessment": {
+          "testedFeature": "PREPOSITIONAL_PLURAL",
+          "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+          "contrastSetId": "u12-prep-plural-2",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-or-u12-prep-plural-7"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-or-u12-prep-plural-8"
+          ],
+          "distractorDifference": [
+            "",
+            "Does this row fail the prepositional plural?"
+          ],
+          "whyAnswerDemonstratesObjective": "Does this answer show the prepositional plural?",
+          "contrastMembers": [
+            "дома́х",
+            "до́му"
+          ],
+          "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+          "relationParticipantIds": [
+            "prov-ex-or-u12-prep-plural-6",
+            "prov-ex-or-u12-prep-plural-7",
+            "prov-ex-or-u12-prep-plural-8"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      },
+      "after": {
+        "id": "u12-i-prep-plural-2",
+        "kind": "CASE_RECOGNITION",
+        "language": "en",
+        "prompt": "Which admitted row is the prepositional plural?",
+        "promptLetter": "дома́",
+        "options": [
+          "дома́х",
+          "до́му"
+        ],
+        "answer": "дома́х",
+        "feedback": "дома́х is the recorded prepositional plural form of the shown noun. до́му is the supplied dative singular option. Select the prepositional plural row while keeping the plural number of the cue. These are table forms; a sentence uses the prepositional case after a governing preposition.",
+        "objectiveId": "obj-u12-prep-plural",
+        "sourceId": "src-openrussian-50e210c4",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "до́му is the supplied dative singular form, not prepositional plural."
+        ],
+        "assessment": {
+          "testedFeature": "PREPOSITIONAL_PLURAL",
+          "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+          "contrastSetId": "u12-prep-plural-2",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-or-u12-prep-plural-7"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-or-u12-prep-plural-8"
+          ],
+          "distractorDifference": [
+            "",
+            "до́му is the supplied dative singular form, not prepositional plural."
+          ],
+          "whyAnswerDemonstratesObjective": "дома́х is the recorded prepositional plural form of the shown noun. до́му is the supplied dative singular option. Select the prepositional plural row while keeping the plural number of the cue. These are table forms; a sentence uses the prepositional case after a governing preposition.",
+          "contrastMembers": [
+            "дома́х",
+            "до́му"
+          ],
+          "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+          "relationParticipantIds": [
+            "prov-ex-or-u12-prep-plural-6",
+            "prov-ex-or-u12-prep-plural-7",
+            "prov-ex-or-u12-prep-plural-8"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      }
+    }
+  ],
+  "bibliography": "Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Future tense oldid3353822, catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt, complete imperfective/perfective future tables; Russian/Grammar/Dative case oldid4289617, catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt, complete Nouns context; Russian/Grammar/Adjectives oldid4292379, catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt, opening agreement definition, Nominative adjectives and 5- and 7-letter spelling rules with complete accepted/rejected good-letter example; Russian/Grammar/Prepositional case oldid4567336, catalog/sources/units-3-5/wikibooks/prepositional-4567336.txt, Usage and complete Nouns singular/plural context; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality context. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: units-3-5/openrussian/verbs.csv сказать aspect/presfut_sg1/presfut_pl1/presfut_sg2 and быть/говорить aspect; units-3-5/openrussian/nouns.csv книга/стол/дом sg_dat/pl_nom/pl_prep, книга sg_prep and письмо gender=n; units-6-10/openrussian/adjectives.csv хороший decl_m_nom/decl_n_nom/decl_f_nom. The Future tense source incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That error and one-to-one English-tense/aspect claims are not adopted. The wrong good-letter spelling is explicitly a rejected counterexample, not a form to use. Bare case-form recognition is bounded to the requested table row; shared spellings are not unambiguous case identifiers. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; no new Russian forms, complete phrases or productive-paradigm claim. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.",
+  "semanticAcceptance": false
+}
