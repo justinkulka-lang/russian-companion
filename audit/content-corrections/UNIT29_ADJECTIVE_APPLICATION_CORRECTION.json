@@ -1,0 +1,1531 @@
+{
+  "baselineCommit": "98b5b30ffc224b1119bc975fc698386ce8b91d3f",
+  "beforeSha256": "b0e475f206c7307495c427e405ea7983bf5bbdc0fa0a568b0a9e82f46021bfc2",
+  "afterSha256": "5092d6ef0ac6963a2955f206c7fce17016bdc1d145a136e3c6855b47ba3b7df4",
+  "frozenPublicSources": {
+    "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt": "e12312425b1ed50177c3549ac10026696fbb8733c089b748b183eecdaf8ace85",
+    "catalog/sources/units-3-5/wikibooks/nominative-4213267.txt": "c00d0dbe20bde2abd3aae63d08bf6a3f5a291f5cbfcd0cea5c853af04a6e1c84",
+    "catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt": "95447e1048fcc0094d2e96f1b796b8cc65a595a6fbcd385430a97dc2631b6b40"
+  },
+  "addedProvenanceIds": [
+    "prov-u29-adjective-native-f-ru",
+    "prov-u29-adjective-native-f-en",
+    "prov-u29-adjective-native-n-ru",
+    "prov-u29-adjective-native-n-en",
+    "prov-u29-adjective-native-pl-ru",
+    "prov-u29-adjective-native-pl-en",
+    "prov-u29-adjective-native-train-ru",
+    "prov-u29-adjective-native-train-en",
+    "prov-u29-adjective-native-pencil-ru",
+    "prov-u29-adjective-native-pencil-en",
+    "prov-u29-adjective-native-student-ru",
+    "prov-u29-adjective-native-student-en",
+    "prov-u29-adjective-native-letter-ru",
+    "prov-u29-adjective-native-letter-en",
+    "prov-u29-adjective-native-book-ru",
+    "prov-u29-adjective-native-book-en",
+    "prov-u29-adjective-native-books-ru",
+    "prov-u29-adjective-native-books-en",
+    "prov-u29-adjective-native-book-subject",
+    "prov-u29-adjective-native-letter-subject",
+    "prov-u29-adjective-native-books-subject",
+    "prov-ca-u29-application-u29-g-short-agreement-m-0",
+    "prov-ca-u29-application-u29-g-short-agreement-m-1",
+    "prov-ca-u29-application-u29-g-short-agreement-m-2",
+    "prov-ca-u29-application-u29-g-short-agreement-m-3",
+    "prov-ca-u29-application-u29-g-short-agreement-m-prompt",
+    "prov-ca-u29-application-u29-g-short-agreement-m-feedback",
+    "prov-ca-u29-application-u29-g-short-agreement-m-rationale-1",
+    "prov-ca-u29-application-u29-g-short-agreement-m-rationale-2",
+    "prov-ca-u29-application-u29-g-short-agreement-n-0",
+    "prov-ca-u29-application-u29-g-short-agreement-n-1",
+    "prov-ca-u29-application-u29-g-short-agreement-n-2",
+    "prov-ca-u29-application-u29-g-short-agreement-n-3",
+    "prov-ca-u29-application-u29-g-short-agreement-n-prompt",
+    "prov-ca-u29-application-u29-g-short-agreement-n-feedback",
+    "prov-ca-u29-application-u29-g-short-agreement-n-rationale-1",
+    "prov-ca-u29-application-u29-g-short-agreement-n-rationale-2",
+    "prov-ca-u29-application-u29-i-short-agreement-f-0",
+    "prov-ca-u29-application-u29-i-short-agreement-f-1",
+    "prov-ca-u29-application-u29-i-short-agreement-f-2",
+    "prov-ca-u29-application-u29-i-short-agreement-f-3",
+    "prov-ca-u29-application-u29-i-short-agreement-f-prompt",
+    "prov-ca-u29-application-u29-i-short-agreement-f-feedback",
+    "prov-ca-u29-application-u29-i-short-agreement-f-rationale-1",
+    "prov-ca-u29-application-u29-i-short-agreement-f-rationale-2",
+    "prov-ca-u29-application-u29-i-short-agreement-n-0",
+    "prov-ca-u29-application-u29-i-short-agreement-n-1",
+    "prov-ca-u29-application-u29-i-short-agreement-n-2",
+    "prov-ca-u29-application-u29-i-short-agreement-n-3",
+    "prov-ca-u29-application-u29-i-short-agreement-n-prompt",
+    "prov-ca-u29-application-u29-i-short-agreement-n-feedback",
+    "prov-ca-u29-application-u29-i-short-agreement-n-rationale-1",
+    "prov-ca-u29-application-u29-i-short-agreement-n-rationale-2",
+    "prov-ca-u29-application-u29-i-short-agreement-pl-0",
+    "prov-ca-u29-application-u29-i-short-agreement-pl-1",
+    "prov-ca-u29-application-u29-i-short-agreement-pl-2",
+    "prov-ca-u29-application-u29-i-short-agreement-pl-3",
+    "prov-ca-u29-application-u29-i-short-agreement-pl-prompt",
+    "prov-ca-u29-application-u29-i-short-agreement-pl-feedback",
+    "prov-ca-u29-application-u29-i-short-agreement-pl-rationale-1",
+    "prov-ca-u29-application-u29-i-short-agreement-pl-rationale-2",
+    "prov-ca-u29-application-u29-g-adjective-function-p-0",
+    "prov-ca-u29-application-u29-g-adjective-function-p-1",
+    "prov-ca-u29-application-u29-g-adjective-function-p-2",
+    "prov-ca-u29-application-u29-g-adjective-function-p-prompt",
+    "prov-ca-u29-application-u29-g-adjective-function-p-feedback",
+    "prov-ca-u29-application-u29-g-adjective-function-p-rationale-1",
+    "prov-ca-u29-application-u29-g-adjective-function-a-0",
+    "prov-ca-u29-application-u29-g-adjective-function-a-1",
+    "prov-ca-u29-application-u29-g-adjective-function-a-2",
+    "prov-ca-u29-application-u29-g-adjective-function-a-prompt",
+    "prov-ca-u29-application-u29-g-adjective-function-a-feedback",
+    "prov-ca-u29-application-u29-g-adjective-function-a-rationale-1",
+    "prov-ca-u29-application-u29-i-adjective-function-p-0",
+    "prov-ca-u29-application-u29-i-adjective-function-p-1",
+    "prov-ca-u29-application-u29-i-adjective-function-p-2",
+    "prov-ca-u29-application-u29-i-adjective-function-p-prompt",
+    "prov-ca-u29-application-u29-i-adjective-function-p-feedback",
+    "prov-ca-u29-application-u29-i-adjective-function-p-rationale-1",
+    "prov-ca-u29-application-u29-i-adjective-function-a-0",
+    "prov-ca-u29-application-u29-i-adjective-function-a-1",
+    "prov-ca-u29-application-u29-i-adjective-function-a-2",
+    "prov-ca-u29-application-u29-i-adjective-function-a-prompt",
+    "prov-ca-u29-application-u29-i-adjective-function-a-feedback",
+    "prov-ca-u29-application-u29-i-adjective-function-a-rationale-1",
+    "prov-ca-u29-application-u29-st-teach-short-adjective-2-body",
+    "prov-ca-u29-application-vocabulary-u29-st-teach-short-adjective-2-body",
+    "prov-ca-u29-application-u29-st-teach-short-agreement-title",
+    "prov-ca-u29-application-u29-st-teach-short-agreement-body",
+    "prov-ca-u29-application-u29-st-teach-adjective-predicate-title",
+    "prov-ca-u29-application-u29-st-teach-adjective-predicate-body",
+    "prov-ca-u29-application-u29-st-teach-adjective-attributive-title",
+    "prov-ca-u29-application-u29-st-teach-adjective-attributive-body",
+    "prov-ca-u29-application-u29-st-rem-short-adjective-body"
+  ],
+  "nativeSelections": [
+    {
+      "itemId": "prov-u29-adjective-native-f-ru",
+      "unitNumber": 29,
+      "objectiveId": "obj-u29-short-adjective",
+      "recordType": "example",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+      "sourceRevision": "1369617627",
+      "sourceRecordId": "grammar:such as {{wikt-lang|ru|беж}} ('beige', non-adapted form of {{wikt-lang|ru|бе́жев",
+      "shippedText": "нова́",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8",
+      "contentHash": "9b10fdaf815203aba70c613d48620e142e13831f7d73cc2983a9c11f3f2c7608",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "originalSourceTextRef": "0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8"
+    },
+    {
+      "itemId": "prov-u29-adjective-native-f-en",
+      "unitNumber": 29,
+      "objectiveId": "obj-u29-short-adjective",
+      "recordType": "meaning",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+      "sourceRevision": "1369617627",
+      "sourceRecordId": "grammar:such as {{wikt-lang|ru|беж}} ('beige', non-adapted form of {{wikt-lang|ru|бе́жев",
+      "shippedText": "new",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8",
+      "contentHash": "11507a0e2f5e69d5dfa40a62a1bd7b6ee57e6bcd85c67c9b8431b36fff21c437",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "originalSourceTextRef": "0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8"
+    },
+    {
+      "itemId": "prov-u29-adjective-native-n-ru",
+      "unitNumber": 29,
+      "objectiveId": "obj-u29-short-adjective",
+      "recordType": "example",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+      "sourceRevision": "1369617627",
+      "sourceRecordId": "grammar:such as {{wikt-lang|ru|беж}} ('beige', non-adapted form of {{wikt-lang|ru|бе́жев",
+      "shippedText": "но́во",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8",
+      "contentHash": "2b8b4473418aab42c25e71f53df1ebe3dff538554905969a70ac57e810f6e374",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "originalSourceTextRef": "0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8"
+    },
+    {
+      "itemId": "prov-u29-adjective-native-n-en",
+      "unitNumber": 29,
+      "objectiveId": "obj-u29-short-adjective",
+      "recordType": "meaning",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+      "sourceRevision": "1369617627",
+      "sourceRecordId": "grammar:such as {{wikt-lang|ru|беж}} ('beige', non-adapted form of {{wikt-lang|ru|бе́жев",
+      "shippedText": "new",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8",
+      "contentHash": "11507a0e2f5e69d5dfa40a62a1bd7b6ee57e6bcd85c67c9b8431b36fff21c437",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "originalSourceTextRef": "0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8"
+    },
+    {
+      "itemId": "prov-u29-adjective-native-pl-ru",
+      "unitNumber": 29,
+      "objectiveId": "obj-u29-short-adjective",
+      "recordType": "example",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+      "sourceRevision": "1369617627",
+      "sourceRecordId": "grammar:such as {{wikt-lang|ru|беж}} ('beige', non-adapted form of {{wikt-lang|ru|бе́жев",
+      "shippedText": "новы́",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8",
+      "contentHash": "0e319326a69f4d8a1e0e8955726894928e4b0477628262866ed97f85717c5b18",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "originalSourceTextRef": "0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8"
+    },
+    {
+      "itemId": "prov-u29-adjective-native-pl-en",
+      "unitNumber": 29,
+      "objectiveId": "obj-u29-short-adjective",
+      "recordType": "meaning",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+      "sourceRevision": "1369617627",
+      "sourceRecordId": "grammar:such as {{wikt-lang|ru|беж}} ('beige', non-adapted form of {{wikt-lang|ru|бе́жев",
+      "shippedText": "new",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8",
+      "contentHash": "11507a0e2f5e69d5dfa40a62a1bd7b6ee57e6bcd85c67c9b8431b36fff21c437",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "originalSourceTextRef": "0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8"
+    },
+    {
+      "itemId": "prov-u29-adjective-native-train-ru",
+      "unitNumber": 29,
+      "objectiveId": "obj-u29-short-adjective",
+      "recordType": "example",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267",
+      "sourceRevision": "4213267",
+      "sourceRecordId": "nominative-context::The train is old - '''Поезд старый'''",
+      "originalSourceText": ":The train is old - '''Поезд старый'''",
+      "shippedText": "Поезд старый",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors. License route: Wikibooks:Copyrights oldid 4622060; CC BY-SA 4.0.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "60bd8d99d502785ffccdde598aef375531b1e928d99fc14f563221e75399c600",
+      "contentHash": "593100e07231bc9baa2d67875b75a5ce1d54a6bc15287a3edcebcf8bd0350426",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "itemId": "prov-u29-adjective-native-train-en",
+      "unitNumber": 29,
+      "objectiveId": "obj-u29-short-adjective",
+      "recordType": "meaning",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267",
+      "sourceRevision": "4213267",
+      "sourceRecordId": "nominative-context::The train is old - '''Поезд старый'''",
+      "originalSourceText": ":The train is old - '''Поезд старый'''",
+      "shippedText": "The train is old",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors. License route: Wikibooks:Copyrights oldid 4622060; CC BY-SA 4.0.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "60bd8d99d502785ffccdde598aef375531b1e928d99fc14f563221e75399c600",
+      "contentHash": "920a6f8c4d84a3a9835b89834095398b4bd92336758f32836fc9273ce085b713",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "itemId": "prov-u29-adjective-native-pencil-ru",
+      "unitNumber": 29,
+      "objectiveId": "obj-u29-short-adjective",
+      "recordType": "example",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267",
+      "sourceRevision": "4213267",
+      "sourceRecordId": "nominative-context:Adjectives modifying masculine nouns in the nominative case keep their defaul",
+      "originalSourceText": "Adjectives modifying masculine nouns in the nominative case keep their default endings: 'new pencil' is '''новый карандаш'''.",
+      "shippedText": "новый карандаш",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors. License route: Wikibooks:Copyrights oldid 4622060; CC BY-SA 4.0.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "f2fd9de60a4f9debb3fa937d64b624e9e68eca93cc5e81a24981ca7308a8fcd3",
+      "contentHash": "eab5644710755930b3dea97091baaf126cfeb54ec89ddaf93aa5def60dab5c36",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "itemId": "prov-u29-adjective-native-pencil-en",
+      "unitNumber": 29,
+      "objectiveId": "obj-u29-short-adjective",
+      "recordType": "meaning",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267",
+      "sourceRevision": "4213267",
+      "sourceRecordId": "nominative-context:Adjectives modifying masculine nouns in the nominative case keep their defaul",
+      "originalSourceText": "Adjectives modifying masculine nouns in the nominative case keep their default endings: 'new pencil' is '''новый карандаш'''.",
+      "shippedText": "new pencil",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors. License route: Wikibooks:Copyrights oldid 4622060; CC BY-SA 4.0.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "f2fd9de60a4f9debb3fa937d64b624e9e68eca93cc5e81a24981ca7308a8fcd3",
+      "contentHash": "8dd028d68d99df9e2c9c7b881c81ec9efd5d377b9c442554a25415cd291572ee",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "itemId": "prov-u29-adjective-native-student-ru",
+      "unitNumber": 29,
+      "objectiveId": "obj-u29-short-adjective",
+      "recordType": "example",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267",
+      "sourceRevision": "4213267",
+      "sourceRecordId": "nominative-context::The student is new - '''Студент новый'''",
+      "originalSourceText": ":The student is new - '''Студент новый'''",
+      "shippedText": "Студент новый",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors. License route: Wikibooks:Copyrights oldid 4622060; CC BY-SA 4.0.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "dbfbf0e198229f249dcac80a39eb9cc1027f7f3cdfea7e732d3475ea389af395",
+      "contentHash": "99f3043523af00251b4438628b02f31f267556c001102d87dd914250ee638561",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "itemId": "prov-u29-adjective-native-student-en",
+      "unitNumber": 29,
+      "objectiveId": "obj-u29-short-adjective",
+      "recordType": "meaning",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267",
+      "sourceRevision": "4213267",
+      "sourceRecordId": "nominative-context::The student is new - '''Студент новый'''",
+      "originalSourceText": ":The student is new - '''Студент новый'''",
+      "shippedText": "The student is new",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors. License route: Wikibooks:Copyrights oldid 4622060; CC BY-SA 4.0.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "dbfbf0e198229f249dcac80a39eb9cc1027f7f3cdfea7e732d3475ea389af395",
+      "contentHash": "cbd70222d49237531d7803458a7453eba84c8e39555b0dfc26d8dbbbc87aa5f3",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "itemId": "prov-u29-adjective-native-letter-ru",
+      "unitNumber": 29,
+      "objectiveId": "obj-u29-short-adjective",
+      "recordType": "example",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267",
+      "sourceRevision": "4213267",
+      "sourceRecordId": "nominative-context:For neuter nouns, the ending is '''-ое''': 'new letter' is '''новое письмо'''",
+      "originalSourceText": "For neuter nouns, the ending is '''-ое''': 'new letter' is '''новое письмо'''.",
+      "shippedText": "новое письмо",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors. License route: Wikibooks:Copyrights oldid 4622060; CC BY-SA 4.0.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "a34366a3a1f62bbcba43e880e33f3dba940e7d26c4e629dca1c53b3ef57646ec",
+      "contentHash": "a88335f05fa40c3ccc368fc81744c9256ff757341b06abdc61b76b6ed5174855",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "itemId": "prov-u29-adjective-native-letter-en",
+      "unitNumber": 29,
+      "objectiveId": "obj-u29-short-adjective",
+      "recordType": "meaning",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267",
+      "sourceRevision": "4213267",
+      "sourceRecordId": "nominative-context:For neuter nouns, the ending is '''-ое''': 'new letter' is '''новое письмо'''",
+      "originalSourceText": "For neuter nouns, the ending is '''-ое''': 'new letter' is '''новое письмо'''.",
+      "shippedText": "new letter",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors. License route: Wikibooks:Copyrights oldid 4622060; CC BY-SA 4.0.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "a34366a3a1f62bbcba43e880e33f3dba940e7d26c4e629dca1c53b3ef57646ec",
+      "contentHash": "5320d32f74421d56e6243eca9e8c72229872fff01245d1a7522a06e52133e38e",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "itemId": "prov-u29-adjective-native-book-ru",
+      "unitNumber": 29,
+      "objectiveId": "obj-u29-short-adjective",
+      "recordType": "example",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267",
+      "sourceRevision": "4213267",
+      "sourceRecordId": "nominative-context:For feminine nouns, the adjective takes on the ending '''-ая''': 'new book' i",
+      "originalSourceText": "For feminine nouns, the adjective takes on the ending '''-ая''': 'new book' is '''новая книга'''.",
+      "shippedText": "новая книга",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors. License route: Wikibooks:Copyrights oldid 4622060; CC BY-SA 4.0.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "894d9cc3ba6c3470d7fa46688e0145ea3515f552675657bfc232e8420481e7ea",
+      "contentHash": "c6f43008acbb4421a75f647056be412f0665aa5160060f5bf049f32a9b661296",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "itemId": "prov-u29-adjective-native-book-en",
+      "unitNumber": 29,
+      "objectiveId": "obj-u29-short-adjective",
+      "recordType": "meaning",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267",
+      "sourceRevision": "4213267",
+      "sourceRecordId": "nominative-context:For feminine nouns, the adjective takes on the ending '''-ая''': 'new book' i",
+      "originalSourceText": "For feminine nouns, the adjective takes on the ending '''-ая''': 'new book' is '''новая книга'''.",
+      "shippedText": "new book",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors. License route: Wikibooks:Copyrights oldid 4622060; CC BY-SA 4.0.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "894d9cc3ba6c3470d7fa46688e0145ea3515f552675657bfc232e8420481e7ea",
+      "contentHash": "4622e97837512ad8ecd272fd8fb41d3a9c19c95ff7f16b585a0dcfb0dcda1284",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "itemId": "prov-u29-adjective-native-books-ru",
+      "unitNumber": 29,
+      "objectiveId": "obj-u29-short-adjective",
+      "recordType": "example",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267",
+      "sourceRevision": "4213267",
+      "sourceRecordId": "nominative-context:Adjectives also change according to number, so when modifying a plural noun, ",
+      "originalSourceText": "Adjectives also change according to number, so when modifying a plural noun, regardless of gender, they have the ending '''-ые''': 'new books' is '''новые книги'''. However, like nouns, they obey the 7-letter spelling rule.",
+      "shippedText": "новые книги",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors. License route: Wikibooks:Copyrights oldid 4622060; CC BY-SA 4.0.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "e01007802b268ee710b6d68a181723ec0286506d2fe6abd39353fce23495d515",
+      "contentHash": "8717700856e9f8a40121a4253eed890dc01b4221daf135022bdc30f48c7cd28c",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "itemId": "prov-u29-adjective-native-books-en",
+      "unitNumber": 29,
+      "objectiveId": "obj-u29-short-adjective",
+      "recordType": "meaning",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267",
+      "sourceRevision": "4213267",
+      "sourceRecordId": "nominative-context:Adjectives also change according to number, so when modifying a plural noun, ",
+      "originalSourceText": "Adjectives also change according to number, so when modifying a plural noun, regardless of gender, they have the ending '''-ые''': 'new books' is '''новые книги'''. However, like nouns, they obey the 7-letter spelling rule.",
+      "shippedText": "new books",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors. License route: Wikibooks:Copyrights oldid 4622060; CC BY-SA 4.0.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "e01007802b268ee710b6d68a181723ec0286506d2fe6abd39353fce23495d515",
+      "contentHash": "ec884b60aef2f2d416cad67b6047ceb8ad5514bd7c18257e36d97795ccc50a2d",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "itemId": "prov-u29-adjective-native-book-subject",
+      "unitNumber": 29,
+      "objectiveId": "obj-u29-short-adjective",
+      "recordType": "example",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267",
+      "sourceRevision": "4213267",
+      "sourceRecordId": "nominative-context:For feminine nouns, the adjective takes on the ending '''-ая''': 'new book' i",
+      "originalSourceText": "For feminine nouns, the adjective takes on the ending '''-ая''': 'new book' is '''новая книга'''.",
+      "shippedText": "книга",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors. License route: Wikibooks:Copyrights oldid 4622060; CC BY-SA 4.0.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "894d9cc3ba6c3470d7fa46688e0145ea3515f552675657bfc232e8420481e7ea",
+      "contentHash": "695b9685757ab1a5731425e4c8e0a6768093a9785faa71270c522c2c96690619",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "itemId": "prov-u29-adjective-native-letter-subject",
+      "unitNumber": 29,
+      "objectiveId": "obj-u29-short-adjective",
+      "recordType": "example",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267",
+      "sourceRevision": "4213267",
+      "sourceRecordId": "nominative-context:For neuter nouns, the ending is '''-ое''': 'new letter' is '''новое письмо'''",
+      "originalSourceText": "For neuter nouns, the ending is '''-ое''': 'new letter' is '''новое письмо'''.",
+      "shippedText": "письмо",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors. License route: Wikibooks:Copyrights oldid 4622060; CC BY-SA 4.0.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "a34366a3a1f62bbcba43e880e33f3dba940e7d26c4e629dca1c53b3ef57646ec",
+      "contentHash": "8f9e4e204dded78d9a8d1c64057e74602cf09c39ce489513499edc858ad938f8",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "itemId": "prov-u29-adjective-native-books-subject",
+      "unitNumber": 29,
+      "objectiveId": "obj-u29-short-adjective",
+      "recordType": "example",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267",
+      "sourceRevision": "4213267",
+      "sourceRecordId": "nominative-context:Adjectives also change according to number, so when modifying a plural noun, ",
+      "originalSourceText": "Adjectives also change according to number, so when modifying a plural noun, regardless of gender, they have the ending '''-ые''': 'new books' is '''новые книги'''. However, like nouns, they obey the 7-letter spelling rule.",
+      "shippedText": "книги",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors. License route: Wikibooks:Copyrights oldid 4622060; CC BY-SA 4.0.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "e01007802b268ee710b6d68a181723ec0286506d2fe6abd39353fce23495d515",
+      "contentHash": "56f89eb50742288465e7715a3f315790fcb6390696b10a24d2dd2b89829b008d",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    }
+  ],
+  "addedExamples": [
+    {
+      "id": "ex-u29-adjective-context-f",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "нова́",
+      "note": "new",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u29-short-adjective"
+    },
+    {
+      "id": "ex-u29-adjective-context-n",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "но́во",
+      "note": "new",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u29-short-adjective"
+    },
+    {
+      "id": "ex-u29-adjective-context-pl",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "новы́",
+      "note": "new",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u29-short-adjective"
+    },
+    {
+      "id": "ex-u29-adjective-context-train",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Поезд старый",
+      "note": "The train is old",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u29-short-adjective"
+    },
+    {
+      "id": "ex-u29-adjective-context-pencil",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "новый карандаш",
+      "note": "new pencil",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u29-short-adjective"
+    },
+    {
+      "id": "ex-u29-adjective-context-student",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Студент новый",
+      "note": "The student is new",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u29-short-adjective"
+    },
+    {
+      "id": "ex-u29-adjective-context-letter",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "новое письмо",
+      "note": "new letter",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u29-short-adjective"
+    },
+    {
+      "id": "ex-u29-adjective-context-book",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "новая книга",
+      "note": "new book",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u29-short-adjective"
+    },
+    {
+      "id": "ex-u29-adjective-context-books",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "новые книги",
+      "note": "new books",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u29-short-adjective"
+    }
+  ],
+  "addedItems": [
+    {
+      "id": "u29-g-short-agreement-m",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which supplied short adjective agrees with the described subject?",
+      "promptLetter": "One masculine singular subject is described as new. Choose the short adjective.",
+      "options": [
+        "нов",
+        "нова́",
+        "но́во"
+      ],
+      "answer": "нов",
+      "feedback": "нов is the supplied masculine singular short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.",
+      "objectiveId": "obj-u29-short-adjective",
+      "sourceId": "src-content-audit-research",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "нова́ is the supplied feminine singular short form, rather than the masculine singular form required by this subject.",
+        "но́во is the supplied neuter singular short form, rather than the masculine singular form required by this subject."
+      ],
+      "assessment": {
+        "testedFeature": "SHORT_AGREEMENT",
+        "evidenceMode": "STATED_APPLICATION",
+        "contrastSetId": "u29-g-short-agreement-m",
+        "cueLanguage": "rule",
+        "independent": false,
+        "answerSourceIds": [
+          "prov-ca-u29-application-u29-g-short-agreement-m-1"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ca-u29-application-u29-g-short-agreement-m-2",
+          "prov-ca-u29-application-u29-g-short-agreement-m-3"
+        ],
+        "distractorDifference": [
+          "",
+          "нова́ is the supplied feminine singular short form, rather than the masculine singular form required by this subject.",
+          "но́во is the supplied neuter singular short form, rather than the masculine singular form required by this subject."
+        ],
+        "whyAnswerDemonstratesObjective": "нов is the supplied masculine singular short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.",
+        "contrastMembers": [
+          "нов",
+          "нова́",
+          "но́во"
+        ],
+        "relationKind": "STATED_APPLICATION",
+        "relationParticipantIds": [
+          "prov-ca-u29-application-u29-g-short-agreement-m-0",
+          "prov-ca-u29-application-u29-g-short-agreement-m-1",
+          "prov-ca-u29-application-u29-g-short-agreement-m-2",
+          "prov-ca-u29-application-u29-g-short-agreement-m-3"
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
+      }
+    },
+    {
+      "id": "u29-g-short-agreement-n",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which supplied short adjective agrees with the described subject?",
+      "promptLetter": "One neuter singular subject is described as new. Choose the short adjective.",
+      "options": [
+        "но́во",
+        "новы́",
+        "нова́"
+      ],
+      "answer": "но́во",
+      "feedback": "но́во is the supplied neuter singular short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.",
+      "objectiveId": "obj-u29-short-adjective",
+      "sourceId": "src-content-audit-research",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "новы́ is the supplied plural short form, rather than the neuter singular form required by this subject.",
+        "нова́ is the supplied feminine singular short form, rather than the neuter singular form required by this subject."
+      ],
+      "assessment": {
+        "testedFeature": "SHORT_AGREEMENT",
+        "evidenceMode": "STATED_APPLICATION",
+        "contrastSetId": "u29-g-short-agreement-n",
+        "cueLanguage": "rule",
+        "independent": false,
+        "answerSourceIds": [
+          "prov-ca-u29-application-u29-g-short-agreement-n-1"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ca-u29-application-u29-g-short-agreement-n-2",
+          "prov-ca-u29-application-u29-g-short-agreement-n-3"
+        ],
+        "distractorDifference": [
+          "",
+          "новы́ is the supplied plural short form, rather than the neuter singular form required by this subject.",
+          "нова́ is the supplied feminine singular short form, rather than the neuter singular form required by this subject."
+        ],
+        "whyAnswerDemonstratesObjective": "но́во is the supplied neuter singular short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.",
+        "contrastMembers": [
+          "но́во",
+          "новы́",
+          "нова́"
+        ],
+        "relationKind": "STATED_APPLICATION",
+        "relationParticipantIds": [
+          "prov-ca-u29-application-u29-g-short-agreement-n-0",
+          "prov-ca-u29-application-u29-g-short-agreement-n-1",
+          "prov-ca-u29-application-u29-g-short-agreement-n-2",
+          "prov-ca-u29-application-u29-g-short-agreement-n-3"
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
+      }
+    },
+    {
+      "id": "u29-i-short-agreement-f",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which supplied short adjective meaning new would agree with the head noun of this phrase?",
+      "promptLetter": "новая книга",
+      "options": [
+        "нова́",
+        "но́во",
+        "новы́"
+      ],
+      "answer": "нова́",
+      "feedback": "нова́ is the supplied feminine singular short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.",
+      "objectiveId": "obj-u29-short-adjective",
+      "sourceId": "src-content-audit-research",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "но́во is the supplied neuter singular short form, rather than the feminine singular form required by this subject.",
+        "новы́ is the supplied plural short form, rather than the feminine singular form required by this subject."
+      ],
+      "assessment": {
+        "testedFeature": "SHORT_AGREEMENT",
+        "evidenceMode": "STATED_APPLICATION",
+        "contrastSetId": "u29-i-short-agreement-f",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ca-u29-application-u29-i-short-agreement-f-1"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ca-u29-application-u29-i-short-agreement-f-2",
+          "prov-ca-u29-application-u29-i-short-agreement-f-3"
+        ],
+        "distractorDifference": [
+          "",
+          "но́во is the supplied neuter singular short form, rather than the feminine singular form required by this subject.",
+          "новы́ is the supplied plural short form, rather than the feminine singular form required by this subject."
+        ],
+        "whyAnswerDemonstratesObjective": "нова́ is the supplied feminine singular short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.",
+        "contrastMembers": [
+          "нова́",
+          "но́во",
+          "новы́"
+        ],
+        "relationKind": "STATED_APPLICATION",
+        "relationParticipantIds": [
+          "prov-ca-u29-application-u29-i-short-agreement-f-0",
+          "prov-ca-u29-application-u29-i-short-agreement-f-1",
+          "prov-ca-u29-application-u29-i-short-agreement-f-2",
+          "prov-ca-u29-application-u29-i-short-agreement-f-3"
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
+      }
+    },
+    {
+      "id": "u29-i-short-agreement-n",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which supplied short adjective meaning new would agree with the head noun of this phrase?",
+      "promptLetter": "новое письмо",
+      "options": [
+        "но́во",
+        "нова́",
+        "нов"
+      ],
+      "answer": "но́во",
+      "feedback": "но́во is the supplied neuter singular short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.",
+      "objectiveId": "obj-u29-short-adjective",
+      "sourceId": "src-content-audit-research",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "нова́ is the supplied feminine singular short form, rather than the neuter singular form required by this subject.",
+        "нов is the supplied masculine singular short form, rather than the neuter singular form required by this subject."
+      ],
+      "assessment": {
+        "testedFeature": "SHORT_AGREEMENT",
+        "evidenceMode": "STATED_APPLICATION",
+        "contrastSetId": "u29-i-short-agreement-n",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ca-u29-application-u29-i-short-agreement-n-1"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ca-u29-application-u29-i-short-agreement-n-2",
+          "prov-ca-u29-application-u29-i-short-agreement-n-3"
+        ],
+        "distractorDifference": [
+          "",
+          "нова́ is the supplied feminine singular short form, rather than the neuter singular form required by this subject.",
+          "нов is the supplied masculine singular short form, rather than the neuter singular form required by this subject."
+        ],
+        "whyAnswerDemonstratesObjective": "но́во is the supplied neuter singular short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.",
+        "contrastMembers": [
+          "но́во",
+          "нова́",
+          "нов"
+        ],
+        "relationKind": "STATED_APPLICATION",
+        "relationParticipantIds": [
+          "prov-ca-u29-application-u29-i-short-agreement-n-0",
+          "prov-ca-u29-application-u29-i-short-agreement-n-1",
+          "prov-ca-u29-application-u29-i-short-agreement-n-2",
+          "prov-ca-u29-application-u29-i-short-agreement-n-3"
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
+      }
+    },
+    {
+      "id": "u29-i-short-agreement-pl",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which supplied short adjective meaning new would agree with the head noun of this phrase?",
+      "promptLetter": "новые книги",
+      "options": [
+        "новы́",
+        "нов",
+        "нова́"
+      ],
+      "answer": "новы́",
+      "feedback": "новы́ is the supplied plural short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.",
+      "objectiveId": "obj-u29-short-adjective",
+      "sourceId": "src-content-audit-research",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "нов is the supplied masculine singular short form, rather than the plural form required by this subject.",
+        "нова́ is the supplied feminine singular short form, rather than the plural form required by this subject."
+      ],
+      "assessment": {
+        "testedFeature": "SHORT_AGREEMENT",
+        "evidenceMode": "STATED_APPLICATION",
+        "contrastSetId": "u29-i-short-agreement-pl",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ca-u29-application-u29-i-short-agreement-pl-1"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ca-u29-application-u29-i-short-agreement-pl-2",
+          "prov-ca-u29-application-u29-i-short-agreement-pl-3"
+        ],
+        "distractorDifference": [
+          "",
+          "нов is the supplied masculine singular short form, rather than the plural form required by this subject.",
+          "нова́ is the supplied feminine singular short form, rather than the plural form required by this subject."
+        ],
+        "whyAnswerDemonstratesObjective": "новы́ is the supplied plural short form of new. It agrees with the described subject in gender and number; short adjectives have no case paradigm in the taught modern use. The other supplied forms express different gender or number. This applies the admitted paradigm, without inventing a Russian sentence or a general short-form formation algorithm.",
+        "contrastMembers": [
+          "новы́",
+          "нов",
+          "нова́"
+        ],
+        "relationKind": "STATED_APPLICATION",
+        "relationParticipantIds": [
+          "prov-ca-u29-application-u29-i-short-agreement-pl-0",
+          "prov-ca-u29-application-u29-i-short-agreement-pl-1",
+          "prov-ca-u29-application-u29-i-short-agreement-pl-2",
+          "prov-ca-u29-application-u29-i-short-agreement-pl-3"
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
+      }
+    },
+    {
+      "id": "u29-g-adjective-function-p",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which English explanation describes the adjective function in this whole example?",
+      "promptLetter": "Поезд старый",
+      "options": [
+        "A predicate describing the subject.",
+        "An attributive adjective modifying the noun."
+      ],
+      "answer": "A predicate describing the subject.",
+      "feedback": "The whole clause says the train is old. The long adjective predicates a property of the train; it is not merely a noun phrase naming an old train. A predicate describing the subject.",
+      "objectiveId": "obj-u29-short-adjective",
+      "sourceId": "src-content-audit-research",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "An attributive modifier belongs inside the noun phrase; the supplied example instead predicates a property of its subject."
+      ],
+      "assessment": {
+        "testedFeature": "ADJECTIVE_FUNCTION",
+        "evidenceMode": "STATED_APPLICATION",
+        "contrastSetId": "u29-g-adjective-function-p",
+        "cueLanguage": "ru",
+        "independent": false,
+        "answerSourceIds": [
+          "prov-ca-u29-application-u29-g-adjective-function-p-1"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ca-u29-application-u29-g-adjective-function-p-2"
+        ],
+        "distractorDifference": [
+          "",
+          "An attributive modifier belongs inside the noun phrase; the supplied example instead predicates a property of its subject."
+        ],
+        "whyAnswerDemonstratesObjective": "The whole clause says the train is old. The long adjective predicates a property of the train; it is not merely a noun phrase naming an old train. A predicate describing the subject.",
+        "contrastMembers": [
+          "A predicate describing the subject.",
+          "An attributive adjective modifying the noun."
+        ],
+        "relationKind": "STATED_APPLICATION",
+        "relationParticipantIds": [
+          "prov-ca-u29-application-u29-g-adjective-function-p-0",
+          "prov-ca-u29-application-u29-g-adjective-function-p-1",
+          "prov-ca-u29-application-u29-g-adjective-function-p-2"
+        ],
+        "responseKind": "ENGLISH_CLASSIFICATION"
+      }
+    },
+    {
+      "id": "u29-g-adjective-function-a",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which English explanation describes the adjective function in this whole example?",
+      "promptLetter": "новый карандаш",
+      "options": [
+        "An attributive adjective modifying the noun.",
+        "A predicate describing the subject."
+      ],
+      "answer": "An attributive adjective modifying the noun.",
+      "feedback": "The supplied phrase means new pencil. The long adjective modifies pencil inside a noun phrase; this phrase alone does not assert that the pencil is new in a complete sentence. An attributive adjective modifying the noun.",
+      "objectiveId": "obj-u29-short-adjective",
+      "sourceId": "src-content-audit-research",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "A predicate would assert a property of a subject in a clause; the supplied example is instead an attributive noun phrase."
+      ],
+      "assessment": {
+        "testedFeature": "ADJECTIVE_FUNCTION",
+        "evidenceMode": "STATED_APPLICATION",
+        "contrastSetId": "u29-g-adjective-function-a",
+        "cueLanguage": "ru",
+        "independent": false,
+        "answerSourceIds": [
+          "prov-ca-u29-application-u29-g-adjective-function-a-1"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ca-u29-application-u29-g-adjective-function-a-2"
+        ],
+        "distractorDifference": [
+          "",
+          "A predicate would assert a property of a subject in a clause; the supplied example is instead an attributive noun phrase."
+        ],
+        "whyAnswerDemonstratesObjective": "The supplied phrase means new pencil. The long adjective modifies pencil inside a noun phrase; this phrase alone does not assert that the pencil is new in a complete sentence. An attributive adjective modifying the noun.",
+        "contrastMembers": [
+          "An attributive adjective modifying the noun.",
+          "A predicate describing the subject."
+        ],
+        "relationKind": "STATED_APPLICATION",
+        "relationParticipantIds": [
+          "prov-ca-u29-application-u29-g-adjective-function-a-0",
+          "prov-ca-u29-application-u29-g-adjective-function-a-1",
+          "prov-ca-u29-application-u29-g-adjective-function-a-2"
+        ],
+        "responseKind": "ENGLISH_CLASSIFICATION"
+      }
+    },
+    {
+      "id": "u29-i-adjective-function-p",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which English explanation describes the adjective function in this whole example?",
+      "promptLetter": "Студент новый",
+      "options": [
+        "A predicate describing the subject.",
+        "An attributive adjective modifying the noun."
+      ],
+      "answer": "A predicate describing the subject.",
+      "feedback": "The whole clause says the student is new. The long adjective predicates a property of the student; long form does not automatically mean attributive function. There is no overt present copula in this supplied clause. A predicate describing the subject.",
+      "objectiveId": "obj-u29-short-adjective",
+      "sourceId": "src-content-audit-research",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "An attributive modifier belongs inside the noun phrase; the supplied example instead predicates a property of its subject."
+      ],
+      "assessment": {
+        "testedFeature": "ADJECTIVE_FUNCTION",
+        "evidenceMode": "STATED_APPLICATION",
+        "contrastSetId": "u29-i-adjective-function-p",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ca-u29-application-u29-i-adjective-function-p-1"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ca-u29-application-u29-i-adjective-function-p-2"
+        ],
+        "distractorDifference": [
+          "",
+          "An attributive modifier belongs inside the noun phrase; the supplied example instead predicates a property of its subject."
+        ],
+        "whyAnswerDemonstratesObjective": "The whole clause says the student is new. The long adjective predicates a property of the student; long form does not automatically mean attributive function. There is no overt present copula in this supplied clause. A predicate describing the subject.",
+        "contrastMembers": [
+          "A predicate describing the subject.",
+          "An attributive adjective modifying the noun."
+        ],
+        "relationKind": "STATED_APPLICATION",
+        "relationParticipantIds": [
+          "prov-ca-u29-application-u29-i-adjective-function-p-0",
+          "prov-ca-u29-application-u29-i-adjective-function-p-1",
+          "prov-ca-u29-application-u29-i-adjective-function-p-2"
+        ],
+        "responseKind": "ENGLISH_CLASSIFICATION"
+      }
+    },
+    {
+      "id": "u29-i-adjective-function-a",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which English explanation describes the adjective function in this whole example?",
+      "promptLetter": "новое письмо",
+      "options": [
+        "An attributive adjective modifying the noun.",
+        "A predicate describing the subject."
+      ],
+      "answer": "An attributive adjective modifying the noun.",
+      "feedback": "The supplied phrase means new letter. The long adjective modifies letter inside a noun phrase. It is not a complete assertion that the letter is new. This interpretation uses the whole source example and its meaning, not a universal word-position rule. An attributive adjective modifying the noun.",
+      "objectiveId": "obj-u29-short-adjective",
+      "sourceId": "src-content-audit-research",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "A predicate would assert a property of a subject in a clause; the supplied example is instead an attributive noun phrase."
+      ],
+      "assessment": {
+        "testedFeature": "ADJECTIVE_FUNCTION",
+        "evidenceMode": "STATED_APPLICATION",
+        "contrastSetId": "u29-i-adjective-function-a",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ca-u29-application-u29-i-adjective-function-a-1"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ca-u29-application-u29-i-adjective-function-a-2"
+        ],
+        "distractorDifference": [
+          "",
+          "A predicate would assert a property of a subject in a clause; the supplied example is instead an attributive noun phrase."
+        ],
+        "whyAnswerDemonstratesObjective": "The supplied phrase means new letter. The long adjective modifies letter inside a noun phrase. It is not a complete assertion that the letter is new. This interpretation uses the whole source example and its meaning, not a universal word-position rule. An attributive adjective modifying the noun.",
+        "contrastMembers": [
+          "An attributive adjective modifying the noun.",
+          "A predicate describing the subject."
+        ],
+        "relationKind": "STATED_APPLICATION",
+        "relationParticipantIds": [
+          "prov-ca-u29-application-u29-i-adjective-function-a-0",
+          "prov-ca-u29-application-u29-i-adjective-function-a-1",
+          "prov-ca-u29-application-u29-i-adjective-function-a-2"
+        ],
+        "responseKind": "ENGLISH_CLASSIFICATION"
+      }
+    }
+  ],
+  "changes": [
+    {
+      "before": {
+        "id": "obj-u29-short-adjective",
+        "unitNumber": 29,
+        "title": "Distinguish admitted long, short and invariant adjective forms",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u29-st-orient",
+          "u29-st-teach-short-adjective-1",
+          "u29-st-teach-short-adjective-2",
+          "u29-st-teach-short-adjective-3"
+        ],
+        "exampleIds": [
+          "ex-u29-short-adjective-0",
+          "ex-u29-short-adjective-1",
+          "ex-u29-short-adjective-2"
+        ],
+        "practiceStepIds": [
+          "u29-st-guided-short-adjective-1"
+        ],
+        "checkItemIds": [
+          "u29-i-adjective-form-1",
+          "u29-i-adjective-form-2"
+        ],
+        "remediationStepIds": [
+          "u29-st-rem-short-adjective"
+        ]
+      },
+      "after": {
+        "id": "obj-u29-short-adjective",
+        "unitNumber": 29,
+        "title": "Distinguish admitted long, short and invariant adjective forms",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u29-st-orient",
+          "u29-st-teach-short-adjective-1",
+          "u29-st-teach-short-adjective-2",
+          "u29-st-teach-short-adjective-3",
+          "u29-st-teach-short-agreement",
+          "u29-st-teach-adjective-predicate",
+          "u29-st-teach-adjective-attributive"
+        ],
+        "exampleIds": [
+          "ex-u29-short-adjective-0",
+          "ex-u29-short-adjective-1",
+          "ex-u29-short-adjective-2",
+          "ex-u29-adjective-context-f",
+          "ex-u29-adjective-context-n",
+          "ex-u29-adjective-context-pl",
+          "ex-u29-adjective-context-train",
+          "ex-u29-adjective-context-pencil",
+          "ex-u29-adjective-context-student",
+          "ex-u29-adjective-context-letter",
+          "ex-u29-adjective-context-book",
+          "ex-u29-adjective-context-books"
+        ],
+        "practiceStepIds": [
+          "u29-st-guided-short-adjective-1"
+        ],
+        "checkItemIds": [
+          "u29-i-adjective-form-1",
+          "u29-i-adjective-form-2",
+          "u29-i-short-agreement-f",
+          "u29-i-short-agreement-n",
+          "u29-i-short-agreement-pl",
+          "u29-i-adjective-function-p",
+          "u29-i-adjective-function-a"
+        ],
+        "remediationStepIds": [
+          "u29-st-rem-short-adjective"
+        ]
+      }
+    },
+    {
+      "before": {
+        "id": "u29-s-short-adjective",
+        "title": "Distinguish admitted long, short and invariant adjective forms",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u29-short-adjective"
+        ],
+        "steps": [
+          {
+            "id": "u29-st-teach-short-adjective-1",
+            "kind": "TEACH",
+            "title": "Recognize the long and short forms",
+            "body": "The retained но́вый and нов both mean new. The first is the long form and the second is the masculine singular short form. The grammatical check asks which form is shown, rather than its English gloss. Long adjectives have case, gender and number inflection; short adjectives vary for gender and number, not case. The retained examples are recognition targets, not a universal rule for producing short forms by removing endings.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ],
+            "exampleIds": [
+              "ex-u29-short-adjective-0",
+              "ex-u29-short-adjective-1"
+            ]
+          },
+          {
+            "id": "u29-st-teach-short-adjective-2",
+            "kind": "TEACH",
+            "title": "Distinguish a predicate from a noun description",
+            "body": "In the taught modern use, short adjectives occur only in the nominative and are used predicatively to describe their subject. A long adjective often describes a noun attributively and can also be a predicate. The choice depends on the sentence, not a universal rule about one fixed word position. The isolated pair does not provide a complete context for selecting every long-versus-short form; broader agreement and sentence-level application remain pending.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ]
+          },
+          {
+            "id": "u29-st-teach-short-adjective-3",
+            "kind": "TEACH",
+            "title": "A short-looking word need not be a short adjective",
+            "body": "The retained беж means beige and is an invariant colour form, unchanged for case, gender and number. Its short appearance does not make it the short counterpart of но́вый. Keep lexical meaning, inflection and adjective function separate. The correct glosses remain in Vocabulary Lab as word-meaning practice; they do not satisfy the independent adjective grammar checks.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ],
+            "exampleIds": [
+              "ex-u29-short-adjective-2"
+            ]
+          },
+          {
+            "id": "u29-st-guided-short-adjective-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.",
+            "itemIds": [
+              "u29-g-adjective-form-0"
+            ],
+            "remediationStepId": "u29-st-rem-short-adjective"
+          },
+          {
+            "id": "u29-st-rem-short-adjective",
+            "kind": "REMEDIATE",
+            "title": "Review the complete retained-example contrast",
+            "body": "The retained но́вый and нов both mean new. The first is the long form and the second is the masculine singular short form. The grammatical check asks which form is shown, rather than its English gloss. Long adjectives have case, gender and number inflection; short adjectives vary for gender and number, not case. The retained examples are recognition targets, not a universal rule for producing short forms by removing endings.\n\nIn the taught modern use, short adjectives occur only in the nominative and are used predicatively to describe their subject. A long adjective often describes a noun attributively and can also be a predicate. The choice depends on the sentence, not a universal rule about one fixed word position. The isolated pair does not provide a complete context for selecting every long-versus-short form; broader agreement and sentence-level application remain pending.\n\nThe retained беж means beige and is an invariant colour form, unchanged for case, gender and number. Its short appearance does not make it the short counterpart of но́вый. Keep lexical meaning, inflection and adjective function separate. The correct glosses remain in Vocabulary Lab as word-meaning practice; they do not satisfy the independent adjective grammar checks.",
+            "exampleIds": [
+              "ex-u29-short-adjective-0",
+              "ex-u29-short-adjective-1",
+              "ex-u29-short-adjective-2"
+            ]
+          },
+          {
+            "id": "u29-st-check-short-adjective",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.",
+            "itemIds": [
+              "u29-i-adjective-form-1",
+              "u29-i-adjective-form-2"
+            ],
+            "remediationStepId": "u29-st-rem-short-adjective"
+          }
+        ]
+      },
+      "after": {
+        "id": "u29-s-short-adjective",
+        "title": "Distinguish admitted long, short and invariant adjective forms",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u29-short-adjective"
+        ],
+        "steps": [
+          {
+            "id": "u29-st-teach-short-adjective-1",
+            "kind": "TEACH",
+            "title": "Recognize the long and short forms",
+            "body": "The retained но́вый and нов both mean new. The first is the long form and the second is the masculine singular short form. The grammatical check asks which form is shown, rather than its English gloss. Long adjectives have case, gender and number inflection; short adjectives vary for gender and number, not case. The retained examples are recognition targets, not a universal rule for producing short forms by removing endings.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ],
+            "exampleIds": [
+              "ex-u29-short-adjective-0",
+              "ex-u29-short-adjective-1"
+            ]
+          },
+          {
+            "id": "u29-st-teach-short-adjective-2",
+            "kind": "TEACH",
+            "title": "Distinguish a predicate from a noun description",
+            "body": "In the taught modern use, short adjectives occur only in the nominative and are used predicatively to describe their subject. A long adjective can modify a noun attributively and can also be a predicate. The choice depends on the sentence, not a universal rule about one fixed word position. The following supplied forms, complete clauses and noun phrases support bounded agreement and function checks; they do not settle every long-versus-short semantic or stylistic choice.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ]
+          },
+          {
+            "id": "u29-st-teach-short-adjective-3",
+            "kind": "TEACH",
+            "title": "A short-looking word need not be a short adjective",
+            "body": "The retained беж means beige and is an invariant colour form, unchanged for case, gender and number. Its short appearance does not make it the short counterpart of но́вый. Keep lexical meaning, inflection and adjective function separate. The correct glosses remain in Vocabulary Lab as word-meaning practice; they do not satisfy the independent adjective grammar checks.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ],
+            "exampleIds": [
+              "ex-u29-short-adjective-2"
+            ]
+          },
+          {
+            "id": "u29-st-teach-short-agreement",
+            "kind": "TEACH",
+            "title": "Apply short-form gender and number agreement",
+            "body": "The supplied short forms of new are нов for masculine singular, нова́ for feminine singular, но́во for neuter singular and новы́ for plural. Short adjectives agree with their subject in gender and number; they do not have a modern case paradigm. In the retained noun examples, книга is feminine singular, письмо is neuter singular, and книги has the supplied plural reading. Choose the short form for that subject rather than another form with the same lexical meaning. Some adjectives lack short forms and stress can change; these supplied forms are not a universal truncation recipe.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ],
+            "exampleIds": [
+              "ex-u29-short-adjective-1",
+              "ex-u29-adjective-context-f",
+              "ex-u29-adjective-context-n",
+              "ex-u29-adjective-context-pl",
+              "ex-u29-adjective-context-letter",
+              "ex-u29-adjective-context-book",
+              "ex-u29-adjective-context-books"
+            ]
+          },
+          {
+            "id": "u29-st-teach-adjective-predicate",
+            "kind": "TEACH",
+            "title": "A long form can be a predicate",
+            "body": "The complete clauses Поезд старый and Студент новый say that the train is old and the student is new. Their long adjectives predicate a property of the subject. No overt present copula appears in these supplied clauses. Long form therefore does not force attributive function, and a temporary-versus-permanent slogan does not decide every form choice. Read the whole example and its supplied meaning rather than its adjective ending alone.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ],
+            "exampleIds": [
+              "ex-u29-adjective-context-train",
+              "ex-u29-adjective-context-student"
+            ]
+          },
+          {
+            "id": "u29-st-teach-adjective-attributive",
+            "kind": "TEACH",
+            "title": "Distinguish a noun phrase from a predication",
+            "body": "The supplied новый карандаш and новое письмо mean new pencil and new letter. Each is an attributive noun phrase: the adjective modifies the head noun. These phrases alone do not assert that a pencil or letter is new in a complete clause. The adjective and noun agree in gender and number in the supplied singular examples. Do not infer an exceptionless word-position rule or every possible case from an isolated phrase. These exercises assess bounded agreement and function recognition, not unrestricted production or every long/short meaning distinction.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ],
+            "exampleIds": [
+              "ex-u29-adjective-context-pencil",
+              "ex-u29-adjective-context-letter"
+            ]
+          },
+          {
+            "id": "u29-st-guided-short-adjective-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.",
+            "itemIds": [
+              "u29-g-adjective-form-0",
+              "u29-g-short-agreement-m",
+              "u29-g-short-agreement-n",
+              "u29-g-adjective-function-p",
+              "u29-g-adjective-function-a"
+            ],
+            "remediationStepId": "u29-st-rem-short-adjective"
+          },
+          {
+            "id": "u29-st-rem-short-adjective",
+            "kind": "REMEDIATE",
+            "title": "Review the complete retained-example contrast",
+            "body": "The retained но́вый and нов both mean new. The first is the long form and the second is the masculine singular short form. The grammatical check asks which form is shown, rather than its English gloss. Long adjectives have case, gender and number inflection; short adjectives vary for gender and number, not case. The retained examples are recognition targets, not a universal rule for producing short forms by removing endings.\n\nIn the taught modern use, short adjectives occur only in the nominative and are used predicatively to describe their subject. A long adjective can modify a noun attributively and can also be a predicate. The choice depends on the sentence, not a universal rule about one fixed word position. The following supplied forms, complete clauses and noun phrases support bounded agreement and function checks; they do not settle every long-versus-short semantic or stylistic choice.\n\nThe retained беж means beige and is an invariant colour form, unchanged for case, gender and number. Its short appearance does not make it the short counterpart of но́вый. Keep lexical meaning, inflection and adjective function separate. The correct glosses remain in Vocabulary Lab as word-meaning practice; they do not satisfy the independent adjective grammar checks.\n\nThe supplied short forms of new are нов for masculine singular, нова́ for feminine singular, но́во for neuter singular and новы́ for plural. Short adjectives agree with their subject in gender and number; they do not have a modern case paradigm. In the retained noun examples, книга is feminine singular, письмо is neuter singular, and книги has the supplied plural reading. Choose the short form for that subject rather than another form with the same lexical meaning. Some adjectives lack short forms and stress can change; these supplied forms are not a universal truncation recipe.\n\nThe complete clauses Поезд старый and Студент новый say that the train is old and the student is new. Their long adjectives predicate a property of the subject. No overt present copula appears in these supplied clauses. Long form therefore does not force attributive function, and a temporary-versus-permanent slogan does not decide every form choice. Read the whole example and its supplied meaning rather than its adjective ending alone.\n\nThe supplied новый карандаш and новое письмо mean new pencil and new letter. Each is an attributive noun phrase: the adjective modifies the head noun. These phrases alone do not assert that a pencil or letter is new in a complete clause. The adjective and noun agree in gender and number in the supplied singular examples. Do not infer an exceptionless word-position rule or every possible case from an isolated phrase. These exercises assess bounded agreement and function recognition, not unrestricted production or every long/short meaning distinction.",
+            "exampleIds": [
+              "ex-u29-short-adjective-0",
+              "ex-u29-short-adjective-1",
+              "ex-u29-short-adjective-2",
+              "ex-u29-adjective-context-f",
+              "ex-u29-adjective-context-n",
+              "ex-u29-adjective-context-pl",
+              "ex-u29-adjective-context-letter",
+              "ex-u29-adjective-context-book",
+              "ex-u29-adjective-context-books",
+              "ex-u29-adjective-context-train",
+              "ex-u29-adjective-context-student",
+              "ex-u29-adjective-context-pencil"
+            ]
+          },
+          {
+            "id": "u29-st-check-short-adjective",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.",
+            "itemIds": [
+              "u29-i-adjective-form-1",
+              "u29-i-adjective-form-2",
+              "u29-i-short-agreement-f",
+              "u29-i-short-agreement-n",
+              "u29-i-short-agreement-pl",
+              "u29-i-adjective-function-p",
+              "u29-i-adjective-function-a"
+            ],
+            "remediationStepId": "u29-st-rem-short-adjective"
+          }
+        ]
+      }
+    }
+  ],
+  "contextIdentities": {
+    "ca-rule-context:u29-g-short-agreement-m": {
+      "sourceHash": "9d0751422e85c5756cdad2f417758817492117f7e5fea719be22d6fdcf27edec",
+      "applications": [
+        {
+          "cue": "One masculine singular subject is described as new. Choose the short adjective.",
+          "answer": "нов",
+          "distractors": [
+            "нова́",
+            "но́во"
+          ]
+        }
+      ],
+      "objectiveId": "obj-u29-short-adjective"
+    },
+    "ca-rule-context:u29-g-short-agreement-n": {
+      "sourceHash": "29b6ccb9736e8cbc111fe3631bcef9b095594fa526e16a71c0c619ff09d6c452",
+      "applications": [
+        {
+          "cue": "One neuter singular subject is described as new. Choose the short adjective.",
+          "answer": "но́во",
+          "distractors": [
+            "новы́",
+            "нова́"
+          ]
+        }
+      ],
+      "objectiveId": "obj-u29-short-adjective"
+    },
+    "ca-rule-context:u29-i-short-agreement-f": {
+      "sourceHash": "1d3e78947dcd18ec35de56ea459f502f4a5f0f1b1c9fea03ef8f0c03a2d1603b",
+      "applications": [
+        {
+          "cue": "новая книга",
+          "answer": "нова́",
+          "distractors": [
+            "но́во",
+            "новы́"
+          ]
+        }
+      ],
+      "objectiveId": "obj-u29-short-adjective"
+    },
+    "ca-rule-context:u29-i-short-agreement-n": {
+      "sourceHash": "f53fd1a191feee4a5d80cd25ff8523396ddb6fd8b1943b3688c0d3eaa80e38b0",
+      "applications": [
+        {
+          "cue": "новое письмо",
+          "answer": "но́во",
+          "distractors": [
+            "нова́",
+            "нов"
+          ]
+        }
+      ],
+      "objectiveId": "obj-u29-short-adjective"
+    },
+    "ca-rule-context:u29-i-short-agreement-pl": {
+      "sourceHash": "c12b628c66f89e8eb380eed40645ed9b2f38da40af1297e3a5e1040167f04656",
+      "applications": [
+        {
+          "cue": "новые книги",
+          "answer": "новы́",
+          "distractors": [
+            "нов",
+            "нова́"
+          ]
+        }
+      ],
+      "objectiveId": "obj-u29-short-adjective"
+    },
+    "ca-rule-context:u29-g-adjective-function-p": {
+      "sourceHash": "75745398f43c89528a63cdda02e51c3e205499761f34e60f10ce80aebb5bb103",
+      "applications": [
+        {
+          "cue": "Поезд старый",
+          "answer": "A predicate describing the subject.",
+          "distractors": [
+            "An attributive adjective modifying the noun."
+          ]
+        }
+      ],
+      "objectiveId": "obj-u29-short-adjective"
+    },
+    "ca-rule-context:u29-g-adjective-function-a": {
+      "sourceHash": "edb38fef41c45fa4670017d59b638788840d16effb462d12a1606b6f00d72e71",
+      "applications": [
+        {
+          "cue": "новый карандаш",
+          "answer": "An attributive adjective modifying the noun.",
+          "distractors": [
+            "A predicate describing the subject."
+          ]
+        }
+      ],
+      "objectiveId": "obj-u29-short-adjective"
+    },
+    "ca-rule-context:u29-i-adjective-function-p": {
+      "sourceHash": "54aefc16d00f1d02086708f5c4179c0dc32246995112091d15e5f2949a147df8",
+      "applications": [
+        {
+          "cue": "Студент новый",
+          "answer": "A predicate describing the subject.",
+          "distractors": [
+            "An attributive adjective modifying the noun."
+          ]
+        }
+      ],
+      "objectiveId": "obj-u29-short-adjective"
+    },
+    "ca-rule-context:u29-i-adjective-function-a": {
+      "sourceHash": "7911da4d3d2801aff276a748857ad36f62c908688c7acfadda1d3e3f9eb4100b",
+      "applications": [
+        {
+          "cue": "новое письмо",
+          "answer": "An attributive adjective modifying the noun.",
+          "distractors": [
+            "A predicate describing the subject."
+          ]
+        }
+      ],
+      "objectiveId": "obj-u29-short-adjective"
+    }
+  },
+  "bibliography": "Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, full/short declension table and stress/formation exceptions; admitted short-form span sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8. Retained Wikibooks Russian/Grammar/Nominative oldid4213267, catalog/sources/units-3-5/wikibooks/nominative-4213267.txt, CC BY-SA 4.0 via retained Wikibooks:Copyrights oldid4622060 (catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt) and existing rights declaration: complete Nouns and Adjectives context, explicit old-train/new-student clauses and new-pencil/book/letter/books attributive phrases. Only these specific native examples and their subject gender/number are adopted, not universal endings, simplistic default-case or borrowed-noun gender claims elsewhere in the snapshot. Short forms agree for gender/number, not case. Long form does not force attributive function: the actual complete clause predicates a property of the subject. A noun phrase modifies its head; no universal word-position or permanent/temporary rule is taught. Independent agreement questions use directly selected native noun phrases as their cues; no Russian sentence is synthesized. The Wikibooks adjectives4292379 snapshot with overgeneralized rules, stress/spelling and Latin-letter problems is not used. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new generated Russian, copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.",
+  "nativePinCodeSha256": "4ac717dc8a6a6d542ee22b92ae81f0e9c5a6f11df59ee45bd1b2c77cddbc0fd9",
+  "coverageScope": "BOUNDED_AGREEMENT_AND_NATIVE_LONG_PREDICATE_ATTRIBUTIVE_CONTEXTS_PENDING_INDEPENDENT_VERIFICATION",
+  "unrestrictedGrammarClaim": false,
+  "semanticAcceptance": false
+}

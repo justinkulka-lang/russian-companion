@@ -38,6 +38,15 @@ internal object CompleteRuleContextPins {
         "ca-rule-context:u29-g-adjective-form-0" to "e0cf5eb7be494b7ce79111cf1675317ddfe1b91e1739eb00c0f5ea01af8b8efd",
         "ca-rule-context:u29-i-adjective-form-1" to "924786f1419be0c9e7cb535401cb3e436131c828ce2d8fa23936b311d1a232c6",
         "ca-rule-context:u29-i-adjective-form-2" to "3bc652e6baa33cec41c1601054f3e2cc687acd069c841bfdd6550b87c1293dac",
+        "ca-rule-context:u29-g-short-agreement-m" to "9d0751422e85c5756cdad2f417758817492117f7e5fea719be22d6fdcf27edec",
+        "ca-rule-context:u29-g-short-agreement-n" to "29b6ccb9736e8cbc111fe3631bcef9b095594fa526e16a71c0c619ff09d6c452",
+        "ca-rule-context:u29-i-short-agreement-f" to "1d3e78947dcd18ec35de56ea459f502f4a5f0f1b1c9fea03ef8f0c03a2d1603b",
+        "ca-rule-context:u29-i-short-agreement-n" to "f53fd1a191feee4a5d80cd25ff8523396ddb6fd8b1943b3688c0d3eaa80e38b0",
+        "ca-rule-context:u29-i-short-agreement-pl" to "c12b628c66f89e8eb380eed40645ed9b2f38da40af1297e3a5e1040167f04656",
+        "ca-rule-context:u29-g-adjective-function-p" to "75745398f43c89528a63cdda02e51c3e205499761f34e60f10ce80aebb5bb103",
+        "ca-rule-context:u29-g-adjective-function-a" to "edb38fef41c45fa4670017d59b638788840d16effb462d12a1606b6f00d72e71",
+        "ca-rule-context:u29-i-adjective-function-p" to "54aefc16d00f1d02086708f5c4179c0dc32246995112091d15e5f2949a147df8",
+        "ca-rule-context:u29-i-adjective-function-a" to "7911da4d3d2801aff276a748857ad36f62c908688c7acfadda1d3e3f9eb4100b",
     )
     fun required(itemId: String) = hashes.containsKey("ca-rule-context:$itemId")
     private fun hash(value: String) = MessageDigest.getInstance("SHA-256").digest(value.toByteArray(Charsets.UTF_8))
@@ -60,6 +69,7 @@ internal object CompleteRuleContextPins {
     }
     fun itemMatches(pack: V2CurriculumPack, item: V2CheckItem): Boolean {
         val expectedObjective = when {
+            item.id.startsWith("u29-") && ("-short-agreement-" in item.id || "-adjective-function-" in item.id) -> "obj-u29-short-adjective"
             item.id in setOf("u29-g-adjective-form-0", "u29-i-adjective-form-1", "u29-i-adjective-form-2") -> "obj-u29-short-adjective"
             item.id == "u29-i-active-2" -> "obj-u29-active"
             item.id.startsWith("u8-") -> "obj-u8-availability"

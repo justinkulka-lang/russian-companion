@@ -2115,15 +2115,18 @@ internal object V2Validator {
                 capability.sourceRevision != "1369617627" ||
                 capability.sourceHash != "0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8" ||
                 spanHost.sourceHash != capability.sourceHash || spanHost.originalSourceText != capability.exactSpan ||
-                !verifiedFrozen(spanHost) || objective.checkItemIds != listOf("u29-i-adjective-form-1", "u29-i-adjective-form-2")) return false
+                !verifiedFrozen(spanHost) || objective.checkItemIds != Unit29AdjectiveNativePins.checkIds || !Unit29AdjectiveNativePins.matches(pack)) return false
             val checks = objective.checkItemIds.mapNotNull { pack.item(it) }
             val practice = objective.practiceStepIds.flatMap { id -> pack.step(id)?.second?.itemIds.orEmpty() }
-            val guided = pack.item("u29-g-adjective-form-0") ?: return false
-            return checks.size == 2 && checks.all {
-                it.assessment?.independent == true && it.assessment.testedFeature == "SHORT_FORM" &&
+            val guided = Unit29AdjectiveNativePins.guidedIds.mapNotNull(pack::item)
+            return checks.size == Unit29AdjectiveNativePins.checkIds.size && checks.all {
+                it.assessment?.independent == true && it.assessment.testedFeature == Unit29AdjectiveNativePins.feature(it.id) &&
                     CompleteRuleContextPins.itemMatches(pack, it) && structureValid(pack, it).isEmpty()
-            } && guided.id in practice && guided.assessment?.independent == false &&
-                CompleteRuleContextPins.itemMatches(pack, guided) && structureValid(pack, guided).isEmpty()
+            } && guided.size == Unit29AdjectiveNativePins.guidedIds.size && guided.all {
+                it.id in practice && it.assessment?.independent == false &&
+                    it.assessment.testedFeature == Unit29AdjectiveNativePins.feature(it.id) &&
+                    CompleteRuleContextPins.itemMatches(pack, it) && structureValid(pack, it).isEmpty()
+            }
         }
         return objective.checkItemIds.mapNotNull { pack.item(it) }.any { item ->
             val participants = item.assessment?.relationParticipantIds.orEmpty().mapNotNull { id ->
