@@ -139,7 +139,9 @@ class Units610SourceIntakeTest {
         }
         assertTrue(joined.contains("Я шёл в дом"))
         assertTrue(joined.contains("Я жил в Лондоне"))
-        assertTrue(joined.contains("11, 12, 13, 14"))
+        val quantityTeaching = pack.unit(9)!!.sessions.single { it.id == "u9-s-quantity" }.steps.filter { it.kind == "TEACH" }
+        assertTrue(quantityTeaching.any { it.body.contains("last two digits first") &&
+            it.body.contains("11, 12, 13 or 14") && it.body.contains("genitive plural") })
         assertTrue(joined.contains("not a statement of a present-day amount"))
         assertTrue(joined.contains("do not decline"))
         assertTrue(joined.contains("Я хочу нового кролика."))
