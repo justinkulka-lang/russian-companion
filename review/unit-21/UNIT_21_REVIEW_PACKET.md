@@ -11,12 +11,12 @@ Unit 21 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 4f5cb8024d3f68a37052fdf85b5755bffa2a0904
-- Unit content-review SHA-256: cf307d8e607534f20bff01a7af5cdf1c42ffc40dea38670ef1dbc12c005497ba
+- Curriculum source commit: f47b8649cc72425d3b2854a2dadccdc89c17e617
+- Unit content-review SHA-256: a79e2d859adfc1b99d562db212fae357042975353a3a3fbc9c33ab4876b165e7
 - Mapping-package SHA-256: a81fd110700d8cef3f88b5c34642feb7792e0bc851b2e13f08acba87969eab0e
-- Pack content-review SHA-256: 7e0bd4402ea9085cb686419f5881f6f6ba239152bcc46b8cbf0bb53aee4c95df
-- Review-package SHA-256: 920100c8abbbb6f7d0522c04a2aaddffd7c7cedce3d2c83caef9c65053616039
-- Repository source SHA-256: 9c79a564ed0340eef8fb0e56bcee07139a2c700f2897c46e04c70dec7817de3f
+- Pack content-review SHA-256: c7e2891e19f0da37bc8a9200ceeb83b9bb8bea62c388e8cfd99bca7b3e89b51f
+- Review-package SHA-256: c9841ecd5e8294f9290e0a6046bb2cf8774144ccdf9ad40078e6845747fcce20
+- Repository source SHA-256: 7d4dfb0067e3ecabba0f4b2a1df5787e97ee8caf675c406a6304a028e00f98e4
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -132,12 +132,12 @@ remediation=u21-st-rem-svoy
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 582f28ae23c5163b55b3db4f948a0def53705f11f4f599bca1e67a00d8fbf0ef
+- Content hash: 67ff16244ddda8d8e5b8fa297a0478eb462cbed87d129e472c1efe1cc0ccac8c
 
 title=Distinguish oneself from a possessed object
 kind=RECOGNITION
 unitNumber=21
-instruction=u21-st-orient,u21-st-teach-object-reference-1,u21-st-teach-object-reference-2
+instruction=u21-st-orient,u21-st-teach-object-reference-1,u21-st-teach-object-reference-2,u21-st-teach-object-reference-3
 examples=ex-u21-object-reference-0,ex-u21-object-reference-1
 practice=u21-st-guided-object-reference-1
 checks=u21-i-object-reference-1,u21-i-object-reference-2
@@ -401,12 +401,12 @@ remediationStepId=u21-st-rem-svoy
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 262e7d61fae03f298701134491de45be9634df9a2794748baa88f3b60eb6090e
+- Content hash: 2424096c57c246209cba6534241097540c3e1a1122784f44fac5174fcb417c0d
 
 title=Distinguish oneself from a possessed object
 estimatedMinutes=12
 objectives=obj-u21-object-reference
-steps=u21-st-teach-object-reference-1,u21-st-teach-object-reference-2,u21-st-guided-object-reference-1,u21-st-rem-object-reference,u21-st-check-object-reference
+steps=u21-st-teach-object-reference-1,u21-st-teach-object-reference-2,u21-st-teach-object-reference-3,u21-st-guided-object-reference-1,u21-st-rem-object-reference,u21-st-check-object-reference
 
 ### STEP `u21-st-teach-object-reference-1`
 
@@ -438,11 +438,33 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 71a8940cdbe46ce6344ac61679f9dd3d7b5f6a2bb376d43ef9855aa9eca741c3
+- Content hash: eb12777f20c6b5332c6c7792798f73f5d6483caf364d2ccb3ca1be091868218b
 
 kind=TEACH
 title=A whole sentence is more than its object word
-body=жену́ is the accusative form of the noun meaning wife. It does not mean I love. In Я люблю́ свою́ жену́ the verb supplies loving and the noun supplies its object. The full displayed sentence Я люблю́ (свою́) жену́ means I love my wife; the full displayed sentence Я люблю́ себя́ means I love myself. Choose the whole-sentence meaning rather than translating the object word as the verb. These checks recognize two retained sentences; they do not demonstrate independently choosing every reflexive case form.
+body=жену́ is the accusative form of the noun meaning wife. It does not mean I love. In Я люблю́ свою́ жену́ the verb supplies loving and the noun supplies its object. The full displayed sentence Я люблю́ (свою́) жену́ means I love my wife; the full displayed sentence Я люблю́ себя́ means I love myself. Choose the whole-sentence meaning rather than translating the object word as the verb. These checks recognize the supplied love and wounded-object sentences; they do not demonstrate independently choosing every reflexive case form.
+dominantAction=Continue
+references=ref-u2125-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u21-st-teach-object-reference-3`
+
+- Objectives: obj-u21-object-reference
+- Sessions: u21-s-object-reference
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: e97188e37e86230d624521db9585e3d45de62032104c34101938e1128b4d651e
+
+kind=TEACH
+title=Recognize the same-person object in a different sentence
+body=Он поранил себя — He has wounded himself. Here the subject denotes the man and the direct object себя refers back to that same person. The verb and subject differ from guided Я люблю́ себя́. Compare the complete supplied Он поранил его — He has wounded him (someone else). In this contrast the other person is the object; the person wounded is different from the subject. In both wounded sentences the object is a person, not a possessed wife. In the retained Я люблю́ (свою́) жену́ example, a wife is the object even when the possessive refers to the subject as owner. Keep object identity separate from ownership. These are supplied direct-object readings, not productive grammar, every pronoun case, emphasis or a rule that the reflexive-verb suffix always means accidental action.
 dominantAction=Continue
 references=ref-u2125-attribution
 items=
@@ -482,13 +504,15 @@ remediationStepId=u21-st-rem-object-reference
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 619a560d4c68ea9a6a8ba0fe86a746f6c91621eb3ed927796bbaa1dfd8181ba2
+- Content hash: 7d6ee160b662014f2502cab9c481ba17dc679292af18a018ed7327390a892540
 
 kind=REMEDIATE
 title=Review the complete contrast
 body=Я люблю́ себя́ — I love myself. Я люблю́ (свою́) жену́ — I love my wife. In the first sentence the object refers back to the subject. In the second the object is a wife; the parenthesized possessive makes ownership explicit. Loving oneself and loving a wife describe different objects.
 
-жену́ is the accusative form of the noun meaning wife. It does not mean I love. In Я люблю́ свою́ жену́ the verb supplies loving and the noun supplies its object. The full displayed sentence Я люблю́ (свою́) жену́ means I love my wife; the full displayed sentence Я люблю́ себя́ means I love myself. Choose the whole-sentence meaning rather than translating the object word as the verb. These checks recognize two retained sentences; they do not demonstrate independently choosing every reflexive case form.
+жену́ is the accusative form of the noun meaning wife. It does not mean I love. In Я люблю́ свою́ жену́ the verb supplies loving and the noun supplies its object. The full displayed sentence Я люблю́ (свою́) жену́ means I love my wife; the full displayed sentence Я люблю́ себя́ means I love myself. Choose the whole-sentence meaning rather than translating the object word as the verb. These checks recognize the supplied love and wounded-object sentences; they do not demonstrate independently choosing every reflexive case form.
+
+Он поранил себя — He has wounded himself. Here the subject denotes the man and the direct object себя refers back to that same person. The verb and subject differ from guided Я люблю́ себя́. Compare the complete supplied Он поранил его — He has wounded him (someone else). In this contrast the other person is the object; the person wounded is different from the subject. In both wounded sentences the object is a person, not a possessed wife. In the retained Я люблю́ (свою́) жену́ example, a wife is the object even when the possessive refers to the subject as owner. Keep object identity separate from ownership. These are supplied direct-object readings, not productive grammar, every pronoun case, emphasis or a rule that the reflexive-verb suffix always means accidental action.
 dominantAction=Continue
 references=
 items=
@@ -1244,37 +1268,35 @@ responseKind=ENGLISH_CLASSIFICATION
 
 - Objectives: obj-u21-object-reference
 - Sessions: u21-s-object-reference
-- Source: src-wikipedia-russian-grammar-1369617627
-- Rights: rights-wikipedia-russian-grammar-1369617627
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: f37da3d5468e987193dd90c1b239180795627a872fab30d28c974ecae5e85cba
+- Content hash: 1c5ffe7b86fdb1c5547d0dcbeccd3f51f2fd8f82b37527ed75d3cb4ca470d0bf
 
 kind=CONTRAST_SELECTION
 language=en
 prompt=Which English meaning matches the shown sentence?
-promptLetter=Я люблю́ себя́
-options=I love myself | I love my wife
-answer=I love myself
-feedback=The frozen source pairs the shown form "Я люблю́ себя́" with the admitted gloss "I love myself" ("Я люблю́ себя́ = I love myself").
-Я люблю́ себя́ means I love myself: the person who loves is also the person loved.
+promptLetter=Он поранил себя
+options=He has wounded himself. | He has wounded him (someone else).
+answer=He has wounded himself.
+feedback=Он поранил себя means He has wounded himself. The direct object себя refers back to the subject:the person wounded is the same person who wounded him. The contrasting source sentence Он поранил его has a non-reflexive pronoun referring to someone else. Read the whole supplied sentence; this does not test every reflexive case or the separate reflexive-verb interpretation.
 objectiveId=obj-u21-object-reference
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | I love my wife names a wife as the object.
+distractorRationales= | He has wounded him (someone else). describes the separate supplied Он поранил его sentence; it does not express the reflexive direct object себя in Он поранил себя.
 testedFeature=REFLEXIVE_MYSELF_SENTENCE
-evidenceMode=EXPLICIT_SOURCE_PAIR
-contrastSetId=u21-object-reference-2
+evidenceMode=STATED_APPLICATION
+contrastSetId=u21-i-object-reference-2
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-u21-object-reference-0-en
-distractorSourceIds= | prov-ex-u21-object-reference-1-en
-distractorDifference= | I love my wife names a wife as the object.
-whyAnswerDemonstratesObjective=The frozen source pairs the shown form "Я люблю́ себя́" with the admitted gloss "I love myself" ("Я люблю́ себя́ = I love myself").
-Я люблю́ себя́ means I love myself: the person who loves is also the person loved.
-contrastMembers=I love myself | I love my wife
-relationKind=EXPLICIT_SOURCE_PAIR
-relationParticipantIds=prov-ex-u21-object-reference-0-ru | prov-ex-u21-object-reference-0-en | prov-ex-u21-object-reference-1-en
+answerSourceIds=prov-ca-u21-object-transfer-u21-i-object-reference-2-1
+distractorSourceIds= | prov-ca-u21-object-transfer-u21-i-object-reference-2-2
+distractorDifference= | He has wounded him (someone else). describes the separate supplied Он поранил его sentence; it does not express the reflexive direct object себя in Он поранил себя.
+whyAnswerDemonstratesObjective=Он поранил себя means He has wounded himself. The direct object себя refers back to the subject:the person wounded is the same person who wounded him. The contrasting source sentence Он поранил его has a non-reflexive pronoun referring to someone else. Read the whole supplied sentence; this does not test every reflexive case or the separate reflexive-verb interpretation.
+contrastMembers=He has wounded himself. | He has wounded him (someone else).
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u21-object-transfer-u21-i-object-reference-2-0 | prov-ca-u21-object-transfer-u21-i-object-reference-2-1 | prov-ca-u21-object-transfer-u21-i-object-reference-2-2
 responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u21-i-purpose-1`
@@ -3921,6 +3943,410 @@ attribution=Russian Companion content-audit research synthesis, content-audit-20
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
 sourceHash=9fd8da1136da51537e48705a322c881bf039a8cde1ac6731d9af69660bef66ef
 contentHash=3c986ee2a65a5fba9d1914142d2f4071e47992c384c4147e191b6388de7e5755
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u21-object-transfer-item-feedback`
+
+- Objectives: obj-u21-object-reference
+- Sessions: u21-s-orient, u21-s-object-reference
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3a28295006378f10072d1d29c043ecaa558030c5570f75954e11f877e35c59a6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u21-object-reference:transfer:item-feedback
+originalSourceText=English Wikipedia Reflexive pronoun1374712982, complete Russian section:exact direct-object sentences Он поранил себя / Он поранил его and supplied English meanings. Retained pre2014 revision586336289 (2013-12-16) independently documents both exact native examples and meanings before the current section cites a book dated2014; that later citation is not the source basis for this bounded intake, and no book prose is adopted. Exact API SHA1/size/SHA256/raw responses/history are retained. First-party Wikipedia text selection/arrangement is CC BY-SA4.0 via actual retained Wikipedia:Copyrights1369466282, stable oldid/history/contributor attribution. No blanket hosting-license or qualified rights approval; historical chronology is not a legal clearance. Only literal template language values are selected, with no native generation, stress addition, punctuation repair, private Penguin prose or media. Preserve the correct guided Я люблю́ себя́ / I love myself and independent Я люблю́ (свою́) жену́ / I love my wife whole-object unchanged, all original examples and earlier native/source records. The changed independent check recognizes a different subject/action with a reflexive direct object; the contrasting supplied его sentence denotes someone else. Only these supplied object readings are taught; no universal all-case antecedent algorithm, emphasis rule, automatic/accidental -ся interpretation, all possessive style restrictions or whole-article grammar adoption. The source wording about emphasis and accidental reflexive verbs is explicitly excluded as unreliable beyond scope. All three teaching cards precede practice and full remediation is retained. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+Он поранил себя means He has wounded himself. The direct object себя refers back to the subject:the person wounded is the same person who wounded him. The contrasting source sentence Он поранил его has a non-reflexive pronoun referring to someone else. Read the whole supplied sentence; this does not test every reflexive case or the separate reflexive-verb interpretation.
+shippedText=Он поранил себя means He has wounded himself. The direct object себя refers back to the subject:the person wounded is the same person who wounded him. The contrasting source sentence Он поранил его has a non-reflexive pronoun referring to someone else. Read the whole supplied sentence; this does not test every reflexive case or the separate reflexive-verb interpretation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f8a8c3f88b0d542e7297bafc788b78083b297cd96694e66438f28907a4b56041
+contentHash=77f8e442c1766ac98134d55693ff9e304df03d1245effe7877f44c6d1b1728eb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u21-object-transfer-item-prompt`
+
+- Objectives: obj-u21-object-reference
+- Sessions: u21-s-orient, u21-s-object-reference
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 69472adc8124bc7feaf2b9fd7556caec8eeb68b701925bbc4e41d12a37958087
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u21-object-reference:transfer:item-prompt
+originalSourceText=English Wikipedia Reflexive pronoun1374712982, complete Russian section:exact direct-object sentences Он поранил себя / Он поранил его and supplied English meanings. Retained pre2014 revision586336289 (2013-12-16) independently documents both exact native examples and meanings before the current section cites a book dated2014; that later citation is not the source basis for this bounded intake, and no book prose is adopted. Exact API SHA1/size/SHA256/raw responses/history are retained. First-party Wikipedia text selection/arrangement is CC BY-SA4.0 via actual retained Wikipedia:Copyrights1369466282, stable oldid/history/contributor attribution. No blanket hosting-license or qualified rights approval; historical chronology is not a legal clearance. Only literal template language values are selected, with no native generation, stress addition, punctuation repair, private Penguin prose or media. Preserve the correct guided Я люблю́ себя́ / I love myself and independent Я люблю́ (свою́) жену́ / I love my wife whole-object unchanged, all original examples and earlier native/source records. The changed independent check recognizes a different subject/action with a reflexive direct object; the contrasting supplied его sentence denotes someone else. Only these supplied object readings are taught; no universal all-case antecedent algorithm, emphasis rule, automatic/accidental -ся interpretation, all possessive style restrictions or whole-article grammar adoption. The source wording about emphasis and accidental reflexive verbs is explicitly excluded as unreliable beyond scope. All three teaching cards precede practice and full remediation is retained. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+Which English meaning matches the shown sentence?
+shippedText=Which English meaning matches the shown sentence?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2676e33fd185219f122ebb9533ea3d25cbc260b64ce483b801c551ccfd4bef0b
+contentHash=886a93887bd104925c635406558aaa51df0a40418f7b96a960d5677e3246614c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u21-object-transfer-item-rationale`
+
+- Objectives: obj-u21-object-reference
+- Sessions: u21-s-orient, u21-s-object-reference
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 330e7c9934c9c15272ab77c9ad4c1b825be6ca78fbd8553679bc3dfa0091cfc4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u21-object-reference:transfer:item-rationale
+originalSourceText=English Wikipedia Reflexive pronoun1374712982, complete Russian section:exact direct-object sentences Он поранил себя / Он поранил его and supplied English meanings. Retained pre2014 revision586336289 (2013-12-16) independently documents both exact native examples and meanings before the current section cites a book dated2014; that later citation is not the source basis for this bounded intake, and no book prose is adopted. Exact API SHA1/size/SHA256/raw responses/history are retained. First-party Wikipedia text selection/arrangement is CC BY-SA4.0 via actual retained Wikipedia:Copyrights1369466282, stable oldid/history/contributor attribution. No blanket hosting-license or qualified rights approval; historical chronology is not a legal clearance. Only literal template language values are selected, with no native generation, stress addition, punctuation repair, private Penguin prose or media. Preserve the correct guided Я люблю́ себя́ / I love myself and independent Я люблю́ (свою́) жену́ / I love my wife whole-object unchanged, all original examples and earlier native/source records. The changed independent check recognizes a different subject/action with a reflexive direct object; the contrasting supplied его sentence denotes someone else. Only these supplied object readings are taught; no universal all-case antecedent algorithm, emphasis rule, automatic/accidental -ся interpretation, all possessive style restrictions or whole-article grammar adoption. The source wording about emphasis and accidental reflexive verbs is explicitly excluded as unreliable beyond scope. All three teaching cards precede practice and full remediation is retained. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+He has wounded him (someone else). describes the separate supplied Он поранил его sentence; it does not express the reflexive direct object себя in Он поранил себя.
+shippedText=He has wounded him (someone else). describes the separate supplied Он поранил его sentence; it does not express the reflexive direct object себя in Он поранил себя.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=09244628a286bbb166c32d962e80aea48e693615c9d9a4eb82893659f75afea8
+contentHash=430984221ccbddaa81f975e9d29e43539c1044f4fd499a1920375d4f9acd77cc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u21-object-transfer-remediation-body`
+
+- Objectives: obj-u21-object-reference
+- Sessions: u21-s-orient, u21-s-object-reference
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6249257013aa0283dad5645c2bcce7e5f7d3c12ce20b2c41a8a46050bf5c563c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u21-object-reference:transfer:remediation-body
+originalSourceText=English Wikipedia Reflexive pronoun1374712982, complete Russian section:exact direct-object sentences Он поранил себя / Он поранил его and supplied English meanings. Retained pre2014 revision586336289 (2013-12-16) independently documents both exact native examples and meanings before the current section cites a book dated2014; that later citation is not the source basis for this bounded intake, and no book prose is adopted. Exact API SHA1/size/SHA256/raw responses/history are retained. First-party Wikipedia text selection/arrangement is CC BY-SA4.0 via actual retained Wikipedia:Copyrights1369466282, stable oldid/history/contributor attribution. No blanket hosting-license or qualified rights approval; historical chronology is not a legal clearance. Only literal template language values are selected, with no native generation, stress addition, punctuation repair, private Penguin prose or media. Preserve the correct guided Я люблю́ себя́ / I love myself and independent Я люблю́ (свою́) жену́ / I love my wife whole-object unchanged, all original examples and earlier native/source records. The changed independent check recognizes a different subject/action with a reflexive direct object; the contrasting supplied его sentence denotes someone else. Only these supplied object readings are taught; no universal all-case antecedent algorithm, emphasis rule, automatic/accidental -ся interpretation, all possessive style restrictions or whole-article grammar adoption. The source wording about emphasis and accidental reflexive verbs is explicitly excluded as unreliable beyond scope. All three teaching cards precede practice and full remediation is retained. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+Я люблю́ себя́ — I love myself. Я люблю́ (свою́) жену́ — I love my wife. In the first sentence the object refers back to the subject. In the second the object is a wife; the parenthesized possessive makes ownership explicit. Loving oneself and loving a wife describe different objects.
+
+жену́ is the accusative form of the noun meaning wife. It does not mean I love. In Я люблю́ свою́ жену́ the verb supplies loving and the noun supplies its object. The full displayed sentence Я люблю́ (свою́) жену́ means I love my wife; the full displayed sentence Я люблю́ себя́ means I love myself. Choose the whole-sentence meaning rather than translating the object word as the verb. These checks recognize the supplied love and wounded-object sentences; they do not demonstrate independently choosing every reflexive case form.
+
+Он поранил себя — He has wounded himself. Here the subject denotes the man and the direct object себя refers back to that same person. The verb and subject differ from guided Я люблю́ себя́. Compare the complete supplied Он поранил его — He has wounded him (someone else). In this contrast the other person is the object; the person wounded is different from the subject. In both wounded sentences the object is a person, not a possessed wife. In the retained Я люблю́ (свою́) жену́ example, a wife is the object even when the possessive refers to the subject as owner. Keep object identity separate from ownership. These are supplied direct-object readings, not productive grammar, every pronoun case, emphasis or a rule that the reflexive-verb suffix always means accidental action.
+shippedText=Я люблю́ себя́ — I love myself. Я люблю́ (свою́) жену́ — I love my wife. In the first sentence the object refers back to the subject. In the second the object is a wife; the parenthesized possessive makes ownership explicit. Loving oneself and loving a wife describe different objects.
+
+жену́ is the accusative form of the noun meaning wife. It does not mean I love. In Я люблю́ свою́ жену́ the verb supplies loving and the noun supplies its object. The full displayed sentence Я люблю́ (свою́) жену́ means I love my wife; the full displayed sentence Я люблю́ себя́ means I love myself. Choose the whole-sentence meaning rather than translating the object word as the verb. These checks recognize the supplied love and wounded-object sentences; they do not demonstrate independently choosing every reflexive case form.
+
+Он поранил себя — He has wounded himself. Here the subject denotes the man and the direct object себя refers back to that same person. The verb and subject differ from guided Я люблю́ себя́. Compare the complete supplied Он поранил его — He has wounded him (someone else). In this contrast the other person is the object; the person wounded is different from the subject. In both wounded sentences the object is a person, not a possessed wife. In the retained Я люблю́ (свою́) жену́ example, a wife is the object even when the possessive refers to the subject as owner. Keep object identity separate from ownership. These are supplied direct-object readings, not productive grammar, every pronoun case, emphasis or a rule that the reflexive-verb suffix always means accidental action.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4c1731c279b3389b3e568bf917d9ea3957b00a56ec3d6f83a045dee67a1cb861
+contentHash=75dd46c5a082924d87b3f74d6ae1cbf2d564b82d61774823fb96667b178666a5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u21-object-transfer-teach-2-body`
+
+- Objectives: obj-u21-object-reference
+- Sessions: u21-s-orient, u21-s-object-reference
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 655a93155fce5d4336393efec2b71ec3b408333ee9f65b953c60d5741730afca
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u21-object-reference:transfer:teach-2-body
+originalSourceText=English Wikipedia Reflexive pronoun1374712982, complete Russian section:exact direct-object sentences Он поранил себя / Он поранил его and supplied English meanings. Retained pre2014 revision586336289 (2013-12-16) independently documents both exact native examples and meanings before the current section cites a book dated2014; that later citation is not the source basis for this bounded intake, and no book prose is adopted. Exact API SHA1/size/SHA256/raw responses/history are retained. First-party Wikipedia text selection/arrangement is CC BY-SA4.0 via actual retained Wikipedia:Copyrights1369466282, stable oldid/history/contributor attribution. No blanket hosting-license or qualified rights approval; historical chronology is not a legal clearance. Only literal template language values are selected, with no native generation, stress addition, punctuation repair, private Penguin prose or media. Preserve the correct guided Я люблю́ себя́ / I love myself and independent Я люблю́ (свою́) жену́ / I love my wife whole-object unchanged, all original examples and earlier native/source records. The changed independent check recognizes a different subject/action with a reflexive direct object; the contrasting supplied его sentence denotes someone else. Only these supplied object readings are taught; no universal all-case antecedent algorithm, emphasis rule, automatic/accidental -ся interpretation, all possessive style restrictions or whole-article grammar adoption. The source wording about emphasis and accidental reflexive verbs is explicitly excluded as unreliable beyond scope. All three teaching cards precede practice and full remediation is retained. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+жену́ is the accusative form of the noun meaning wife. It does not mean I love. In Я люблю́ свою́ жену́ the verb supplies loving and the noun supplies its object. The full displayed sentence Я люблю́ (свою́) жену́ means I love my wife; the full displayed sentence Я люблю́ себя́ means I love myself. Choose the whole-sentence meaning rather than translating the object word as the verb. These checks recognize the supplied love and wounded-object sentences; they do not demonstrate independently choosing every reflexive case form.
+shippedText=жену́ is the accusative form of the noun meaning wife. It does not mean I love. In Я люблю́ свою́ жену́ the verb supplies loving and the noun supplies its object. The full displayed sentence Я люблю́ (свою́) жену́ means I love my wife; the full displayed sentence Я люблю́ себя́ means I love myself. Choose the whole-sentence meaning rather than translating the object word as the verb. These checks recognize the supplied love and wounded-object sentences; they do not demonstrate independently choosing every reflexive case form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=866d68588558f8c1daf2b7e9c0024cd176d0a79c3de923f86f69ff861502eb81
+contentHash=7b440d9cf00c11dea7bb8ad9582cde5864d9b1abfa48f19d14b864cde9b0119e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u21-object-transfer-teach-3-body`
+
+- Objectives: obj-u21-object-reference
+- Sessions: u21-s-orient, u21-s-object-reference
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6d48112fd69da39ee81dcfd1019f4c03a3a0d2013ebddca8d98c3e55ac9334ff
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u21-object-reference:transfer:teach-3-body
+originalSourceText=English Wikipedia Reflexive pronoun1374712982, complete Russian section:exact direct-object sentences Он поранил себя / Он поранил его and supplied English meanings. Retained pre2014 revision586336289 (2013-12-16) independently documents both exact native examples and meanings before the current section cites a book dated2014; that later citation is not the source basis for this bounded intake, and no book prose is adopted. Exact API SHA1/size/SHA256/raw responses/history are retained. First-party Wikipedia text selection/arrangement is CC BY-SA4.0 via actual retained Wikipedia:Copyrights1369466282, stable oldid/history/contributor attribution. No blanket hosting-license or qualified rights approval; historical chronology is not a legal clearance. Only literal template language values are selected, with no native generation, stress addition, punctuation repair, private Penguin prose or media. Preserve the correct guided Я люблю́ себя́ / I love myself and independent Я люблю́ (свою́) жену́ / I love my wife whole-object unchanged, all original examples and earlier native/source records. The changed independent check recognizes a different subject/action with a reflexive direct object; the contrasting supplied его sentence denotes someone else. Only these supplied object readings are taught; no universal all-case antecedent algorithm, emphasis rule, automatic/accidental -ся interpretation, all possessive style restrictions or whole-article grammar adoption. The source wording about emphasis and accidental reflexive verbs is explicitly excluded as unreliable beyond scope. All three teaching cards precede practice and full remediation is retained. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+Он поранил себя — He has wounded himself. Here the subject denotes the man and the direct object себя refers back to that same person. The verb and subject differ from guided Я люблю́ себя́. Compare the complete supplied Он поранил его — He has wounded him (someone else). In this contrast the other person is the object; the person wounded is different from the subject. In both wounded sentences the object is a person, not a possessed wife. In the retained Я люблю́ (свою́) жену́ example, a wife is the object even when the possessive refers to the subject as owner. Keep object identity separate from ownership. These are supplied direct-object readings, not productive grammar, every pronoun case, emphasis or a rule that the reflexive-verb suffix always means accidental action.
+shippedText=Он поранил себя — He has wounded himself. Here the subject denotes the man and the direct object себя refers back to that same person. The verb and subject differ from guided Я люблю́ себя́. Compare the complete supplied Он поранил его — He has wounded him (someone else). In this contrast the other person is the object; the person wounded is different from the subject. In both wounded sentences the object is a person, not a possessed wife. In the retained Я люблю́ (свою́) жену́ example, a wife is the object even when the possessive refers to the subject as owner. Keep object identity separate from ownership. These are supplied direct-object readings, not productive grammar, every pronoun case, emphasis or a rule that the reflexive-verb suffix always means accidental action.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=008f0c19928e4d0967610169b2309dd068b6f705dd81a53063bcde406c2b662f
+contentHash=35e8483ad4c3f6338b236c47ef688d1b6c512a9638d9253537025168bcf134a7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u21-object-transfer-teach-3-title`
+
+- Objectives: obj-u21-object-reference
+- Sessions: u21-s-orient, u21-s-object-reference
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d9dd04e263841f20a65bf632e60b87063923a8c5990713a4afad2e00e29835cf
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u21-object-reference:transfer:teach-3-title
+originalSourceText=English Wikipedia Reflexive pronoun1374712982, complete Russian section:exact direct-object sentences Он поранил себя / Он поранил его and supplied English meanings. Retained pre2014 revision586336289 (2013-12-16) independently documents both exact native examples and meanings before the current section cites a book dated2014; that later citation is not the source basis for this bounded intake, and no book prose is adopted. Exact API SHA1/size/SHA256/raw responses/history are retained. First-party Wikipedia text selection/arrangement is CC BY-SA4.0 via actual retained Wikipedia:Copyrights1369466282, stable oldid/history/contributor attribution. No blanket hosting-license or qualified rights approval; historical chronology is not a legal clearance. Only literal template language values are selected, with no native generation, stress addition, punctuation repair, private Penguin prose or media. Preserve the correct guided Я люблю́ себя́ / I love myself and independent Я люблю́ (свою́) жену́ / I love my wife whole-object unchanged, all original examples and earlier native/source records. The changed independent check recognizes a different subject/action with a reflexive direct object; the contrasting supplied его sentence denotes someone else. Only these supplied object readings are taught; no universal all-case antecedent algorithm, emphasis rule, automatic/accidental -ся interpretation, all possessive style restrictions or whole-article grammar adoption. The source wording about emphasis and accidental reflexive verbs is explicitly excluded as unreliable beyond scope. All three teaching cards precede practice and full remediation is retained. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+Recognize the same-person object in a different sentence
+shippedText=Recognize the same-person object in a different sentence
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=283f82bb0b2aea87b13d44cbae9cc7681ddded6cb5b61937620865b12cffc65a
+contentHash=00863279c8a49d4f3f73984f153614cb9f95895ac0121de017abfa7512ce6b4b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u21-object-transfer-u21-i-object-reference-2-0`
+
+- Objectives: obj-u21-object-reference
+- Sessions: u21-s-orient, u21-s-object-reference
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9ca6b431f50438cb868171fb8e71514a1a41e21a362c76202a21c582e0efc69a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u21-i-object-reference-2
+originalSourceText=English Wikipedia Reflexive pronoun1374712982, complete Russian section:exact direct-object sentences Он поранил себя / Он поранил его and supplied English meanings. Retained pre2014 revision586336289 (2013-12-16) independently documents both exact native examples and meanings before the current section cites a book dated2014; that later citation is not the source basis for this bounded intake, and no book prose is adopted. Exact API SHA1/size/SHA256/raw responses/history are retained. First-party Wikipedia text selection/arrangement is CC BY-SA4.0 via actual retained Wikipedia:Copyrights1369466282, stable oldid/history/contributor attribution. No blanket hosting-license or qualified rights approval; historical chronology is not a legal clearance. Only literal template language values are selected, with no native generation, stress addition, punctuation repair, private Penguin prose or media. Preserve the correct guided Я люблю́ себя́ / I love myself and independent Я люблю́ (свою́) жену́ / I love my wife whole-object unchanged, all original examples and earlier native/source records. The changed independent check recognizes a different subject/action with a reflexive direct object; the contrasting supplied его sentence denotes someone else. Only these supplied object readings are taught; no universal all-case antecedent algorithm, emphasis rule, automatic/accidental -ся interpretation, all possessive style restrictions or whole-article grammar adoption. The source wording about emphasis and accidental reflexive verbs is explicitly excluded as unreliable beyond scope. All three teaching cards precede practice and full remediation is retained. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+Complete raw context:
+=== Russian ===
+
+In [[Russian Language|Russian]], the pronoun {{lang|ru|себя}} {{lang|ru-latn|sebya}} universally means "oneself"/"myself"/"himself", etc. It is inflected depending on the [[Grammatical case|case]].<ref>{{Cite book|title=Морфология простым языком|last=Naumanova|first=Irina|year=2014|location=Moscow|pages=111}}</ref>
+
+When used to indicate that the person is the direct object of the verb, one uses the [[Accusative case|accusative]] form, {{lang|ru-latn|sebya}}.<ref>{{Cite book|title=Морфология простым языком|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=98}}</ref> (It does not have a nominative form.)
+
+* {{lang|ru|Он поранил себя}}. {{lang|ru-latn|On poranil sebya}}. ("He has wounded himself.")
+
+Emphasized forms are "sam sebya" - masculine, "sama sebya" - feminine, "sami sebya" - plural. Unless there is a particular reason (emphasis, answering a question) the word "sam" usually comes after the noun it is emphasizing.<ref>{{Cite book|title=Морфология простым языком|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=121}}</ref>
+
+* {{lang|ru|'''Он''' сам поранил себя}}. {{lang|ru-latn|On sam poranil sebya}}. ("'''He''' has wounded himself." Literally: "He himself has wounded himself.")
+However the form, e.g.,  {{lang|ru|сам себя '''oн''' поранил}}, is grammatical as well.
+
+This sentence underlines that the subject inflicted the wounds while in the previous example, "sebya" merely indicates that the subject was wounded.
+
+The reflexive pronoun {{lang|ru-latn|sebya}} gave rise the reflexive affix {{lang|ru-latn|-sya}} ({{lang|ru|-ся}}) used to generate [[reflexive verb]]s, but in this context the affix indicates that the action happened accidentally:<ref>{{Cite book|title=Морфология простым языком|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=175}}</ref>
+
+* {{lang|ru|Он поранился}} (He has wounded himself.)
+
+There are stylistic differences between the three usages, despite being rendered in the same way in English.
+
+Russian has a reflexive possessive as well.<ref>{{Cite book|title=Морфология простым языком|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=82–83}}</ref>
+
+* {{lang|ru|Он любит свою жену.}} {{lang|ru-latn|On lyubit svoyu zhenu.}} (''He loves his wife (his own).'' - Reflexive possessive)
+* {{lang|ru|Он любит его жену.}} {{lang|ru-latn|On lyubit yego zhenu}} (''He loves his wife (someone else's).'' - It is ambiguous in English, but less so in Russian.)
+
+Because of the existence of reflexive forms, the use of a non-reflexive pronoun indicates a subject that is different from the object. If it is impossible, the sentence is invalid or at least irregular:
+
+* {{lang|ru|Он поранил его}}. {{lang|ru-latn|On poranil ego}}. ("He has wounded him (someone else).")
+Context explanation:
+Он поранил себя means He has wounded himself. The direct object себя refers back to the subject:the person wounded is the same person who wounded him. The contrasting source sentence Он поранил его has a non-reflexive pronoun referring to someone else. Read the whole supplied sentence; this does not test every reflexive case or the separate reflexive-verb interpretation.
+Tuple-v1:tuple-v1:1;28:Он поранил себя23:He has wounded himself.1;34:He has wounded him (someone else).
+shippedText=Он поранил себя
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=79cfe271dbde889ae4299b784c697f533b8b7f98a24076a73db60071a8f17480
+contentHash=b6f9cf992192330bd4d7048b457803f05d6aafa65a0090009708e4173e1eaf3b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u21-object-transfer-u21-i-object-reference-2-1`
+
+- Objectives: obj-u21-object-reference
+- Sessions: u21-s-orient, u21-s-object-reference
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 280619bf0fc48cdb87f59947a0c5c53731ed93256e79a09c91f66188883a6996
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u21-i-object-reference-2
+originalSourceText=English Wikipedia Reflexive pronoun1374712982, complete Russian section:exact direct-object sentences Он поранил себя / Он поранил его and supplied English meanings. Retained pre2014 revision586336289 (2013-12-16) independently documents both exact native examples and meanings before the current section cites a book dated2014; that later citation is not the source basis for this bounded intake, and no book prose is adopted. Exact API SHA1/size/SHA256/raw responses/history are retained. First-party Wikipedia text selection/arrangement is CC BY-SA4.0 via actual retained Wikipedia:Copyrights1369466282, stable oldid/history/contributor attribution. No blanket hosting-license or qualified rights approval; historical chronology is not a legal clearance. Only literal template language values are selected, with no native generation, stress addition, punctuation repair, private Penguin prose or media. Preserve the correct guided Я люблю́ себя́ / I love myself and independent Я люблю́ (свою́) жену́ / I love my wife whole-object unchanged, all original examples and earlier native/source records. The changed independent check recognizes a different subject/action with a reflexive direct object; the contrasting supplied его sentence denotes someone else. Only these supplied object readings are taught; no universal all-case antecedent algorithm, emphasis rule, automatic/accidental -ся interpretation, all possessive style restrictions or whole-article grammar adoption. The source wording about emphasis and accidental reflexive verbs is explicitly excluded as unreliable beyond scope. All three teaching cards precede practice and full remediation is retained. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+Complete raw context:
+=== Russian ===
+
+In [[Russian Language|Russian]], the pronoun {{lang|ru|себя}} {{lang|ru-latn|sebya}} universally means "oneself"/"myself"/"himself", etc. It is inflected depending on the [[Grammatical case|case]].<ref>{{Cite book|title=Морфология простым языком|last=Naumanova|first=Irina|year=2014|location=Moscow|pages=111}}</ref>
+
+When used to indicate that the person is the direct object of the verb, one uses the [[Accusative case|accusative]] form, {{lang|ru-latn|sebya}}.<ref>{{Cite book|title=Морфология простым языком|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=98}}</ref> (It does not have a nominative form.)
+
+* {{lang|ru|Он поранил себя}}. {{lang|ru-latn|On poranil sebya}}. ("He has wounded himself.")
+
+Emphasized forms are "sam sebya" - masculine, "sama sebya" - feminine, "sami sebya" - plural. Unless there is a particular reason (emphasis, answering a question) the word "sam" usually comes after the noun it is emphasizing.<ref>{{Cite book|title=Морфология простым языком|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=121}}</ref>
+
+* {{lang|ru|'''Он''' сам поранил себя}}. {{lang|ru-latn|On sam poranil sebya}}. ("'''He''' has wounded himself." Literally: "He himself has wounded himself.")
+However the form, e.g.,  {{lang|ru|сам себя '''oн''' поранил}}, is grammatical as well.
+
+This sentence underlines that the subject inflicted the wounds while in the previous example, "sebya" merely indicates that the subject was wounded.
+
+The reflexive pronoun {{lang|ru-latn|sebya}} gave rise the reflexive affix {{lang|ru-latn|-sya}} ({{lang|ru|-ся}}) used to generate [[reflexive verb]]s, but in this context the affix indicates that the action happened accidentally:<ref>{{Cite book|title=Морфология простым языком|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=175}}</ref>
+
+* {{lang|ru|Он поранился}} (He has wounded himself.)
+
+There are stylistic differences between the three usages, despite being rendered in the same way in English.
+
+Russian has a reflexive possessive as well.<ref>{{Cite book|title=Морфология простым языком|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=82–83}}</ref>
+
+* {{lang|ru|Он любит свою жену.}} {{lang|ru-latn|On lyubit svoyu zhenu.}} (''He loves his wife (his own).'' - Reflexive possessive)
+* {{lang|ru|Он любит его жену.}} {{lang|ru-latn|On lyubit yego zhenu}} (''He loves his wife (someone else's).'' - It is ambiguous in English, but less so in Russian.)
+
+Because of the existence of reflexive forms, the use of a non-reflexive pronoun indicates a subject that is different from the object. If it is impossible, the sentence is invalid or at least irregular:
+
+* {{lang|ru|Он поранил его}}. {{lang|ru-latn|On poranil ego}}. ("He has wounded him (someone else).")
+Context explanation:
+Он поранил себя means He has wounded himself. The direct object себя refers back to the subject:the person wounded is the same person who wounded him. The contrasting source sentence Он поранил его has a non-reflexive pronoun referring to someone else. Read the whole supplied sentence; this does not test every reflexive case or the separate reflexive-verb interpretation.
+Tuple-v1:tuple-v1:1;28:Он поранил себя23:He has wounded himself.1;34:He has wounded him (someone else).
+shippedText=He has wounded himself.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=79cfe271dbde889ae4299b784c697f533b8b7f98a24076a73db60071a8f17480
+contentHash=d639930ff17f9667508baf03a712668a4eb18f7f25d5de03f8678935df31f5e8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u21-object-transfer-u21-i-object-reference-2-2`
+
+- Objectives: obj-u21-object-reference
+- Sessions: u21-s-orient, u21-s-object-reference
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 275f3fbaf69921bf4f87a2481f8ced9dbff4648dc7c96b9453caaae84796fe90
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u21-i-object-reference-2
+originalSourceText=English Wikipedia Reflexive pronoun1374712982, complete Russian section:exact direct-object sentences Он поранил себя / Он поранил его and supplied English meanings. Retained pre2014 revision586336289 (2013-12-16) independently documents both exact native examples and meanings before the current section cites a book dated2014; that later citation is not the source basis for this bounded intake, and no book prose is adopted. Exact API SHA1/size/SHA256/raw responses/history are retained. First-party Wikipedia text selection/arrangement is CC BY-SA4.0 via actual retained Wikipedia:Copyrights1369466282, stable oldid/history/contributor attribution. No blanket hosting-license or qualified rights approval; historical chronology is not a legal clearance. Only literal template language values are selected, with no native generation, stress addition, punctuation repair, private Penguin prose or media. Preserve the correct guided Я люблю́ себя́ / I love myself and independent Я люблю́ (свою́) жену́ / I love my wife whole-object unchanged, all original examples and earlier native/source records. The changed independent check recognizes a different subject/action with a reflexive direct object; the contrasting supplied его sentence denotes someone else. Only these supplied object readings are taught; no universal all-case antecedent algorithm, emphasis rule, automatic/accidental -ся interpretation, all possessive style restrictions or whole-article grammar adoption. The source wording about emphasis and accidental reflexive verbs is explicitly excluded as unreliable beyond scope. All three teaching cards precede practice and full remediation is retained. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+Complete raw context:
+=== Russian ===
+
+In [[Russian Language|Russian]], the pronoun {{lang|ru|себя}} {{lang|ru-latn|sebya}} universally means "oneself"/"myself"/"himself", etc. It is inflected depending on the [[Grammatical case|case]].<ref>{{Cite book|title=Морфология простым языком|last=Naumanova|first=Irina|year=2014|location=Moscow|pages=111}}</ref>
+
+When used to indicate that the person is the direct object of the verb, one uses the [[Accusative case|accusative]] form, {{lang|ru-latn|sebya}}.<ref>{{Cite book|title=Морфология простым языком|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=98}}</ref> (It does not have a nominative form.)
+
+* {{lang|ru|Он поранил себя}}. {{lang|ru-latn|On poranil sebya}}. ("He has wounded himself.")
+
+Emphasized forms are "sam sebya" - masculine, "sama sebya" - feminine, "sami sebya" - plural. Unless there is a particular reason (emphasis, answering a question) the word "sam" usually comes after the noun it is emphasizing.<ref>{{Cite book|title=Морфология простым языком|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=121}}</ref>
+
+* {{lang|ru|'''Он''' сам поранил себя}}. {{lang|ru-latn|On sam poranil sebya}}. ("'''He''' has wounded himself." Literally: "He himself has wounded himself.")
+However the form, e.g.,  {{lang|ru|сам себя '''oн''' поранил}}, is grammatical as well.
+
+This sentence underlines that the subject inflicted the wounds while in the previous example, "sebya" merely indicates that the subject was wounded.
+
+The reflexive pronoun {{lang|ru-latn|sebya}} gave rise the reflexive affix {{lang|ru-latn|-sya}} ({{lang|ru|-ся}}) used to generate [[reflexive verb]]s, but in this context the affix indicates that the action happened accidentally:<ref>{{Cite book|title=Морфология простым языком|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=175}}</ref>
+
+* {{lang|ru|Он поранился}} (He has wounded himself.)
+
+There are stylistic differences between the three usages, despite being rendered in the same way in English.
+
+Russian has a reflexive possessive as well.<ref>{{Cite book|title=Морфология простым языком|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=82–83}}</ref>
+
+* {{lang|ru|Он любит свою жену.}} {{lang|ru-latn|On lyubit svoyu zhenu.}} (''He loves his wife (his own).'' - Reflexive possessive)
+* {{lang|ru|Он любит его жену.}} {{lang|ru-latn|On lyubit yego zhenu}} (''He loves his wife (someone else's).'' - It is ambiguous in English, but less so in Russian.)
+
+Because of the existence of reflexive forms, the use of a non-reflexive pronoun indicates a subject that is different from the object. If it is impossible, the sentence is invalid or at least irregular:
+
+* {{lang|ru|Он поранил его}}. {{lang|ru-latn|On poranil ego}}. ("He has wounded him (someone else).")
+Context explanation:
+Он поранил себя means He has wounded himself. The direct object себя refers back to the subject:the person wounded is the same person who wounded him. The contrasting source sentence Он поранил его has a non-reflexive pronoun referring to someone else. Read the whole supplied sentence; this does not test every reflexive case or the separate reflexive-verb interpretation.
+Tuple-v1:tuple-v1:1;28:Он поранил себя23:He has wounded himself.1;34:He has wounded him (someone else).
+shippedText=He has wounded him (someone else).
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=79cfe271dbde889ae4299b784c697f533b8b7f98a24076a73db60071a8f17480
+contentHash=b243e53b9c5e63818fca0cf4ebeb8c567b91c9c00a56aed383777055996b29d6
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -7136,6 +7562,242 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-u21-object-transfer-native-other`
+
+- Objectives: obj-u21-object-reference
+- Sessions: u21-s-orient, u21-s-object-reference
+- Source: src-enwiki-reflexive-pronoun-1374712982
+- Rights: rights-enwiki-reflexive-pronoun-1374712982
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b1265d009b1be25a9db2644b0789cb8aad27090d0ee2d477d133246ab56776d9
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Reflexive_pronoun&oldid=1374712982
+sourceRevision=1374712982
+sourceRecordId=reflexive-independent-direct-object:=== Russian ===
+
+In [[Russian Language|Russian]], the pronoun {{lang|ru|себя}
+originalSourceText==== Russian ===
+
+In [[Russian Language|Russian]], the pronoun {{lang|ru|себя}} {{lang|ru-latn|sebya}} universally means "oneself"/"myself"/"himself", etc. It is inflected depending on the [[Grammatical case|case]].<ref>{{Cite book|title=Морфология простым языком|last=Naumanova|first=Irina|year=2014|location=Moscow|pages=111}}</ref>
+
+When used to indicate that the person is the direct object of the verb, one uses the [[Accusative case|accusative]] form, {{lang|ru-latn|sebya}}.<ref>{{Cite book|title=Морфология простым языком|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=98}}</ref> (It does not have a nominative form.)
+
+* {{lang|ru|Он поранил себя}}. {{lang|ru-latn|On poranil sebya}}. ("He has wounded himself.")
+
+Emphasized forms are "sam sebya" - masculine, "sama sebya" - feminine, "sami sebya" - plural. Unless there is a particular reason (emphasis, answering a question) the word "sam" usually comes after the noun it is emphasizing.<ref>{{Cite book|title=Морфология простым языком|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=121}}</ref>
+
+* {{lang|ru|'''Он''' сам поранил себя}}. {{lang|ru-latn|On sam poranil sebya}}. ("'''He''' has wounded himself." Literally: "He himself has wounded himself.")
+However the form, e.g.,  {{lang|ru|сам себя '''oн''' поранил}}, is grammatical as well.
+
+This sentence underlines that the subject inflicted the wounds while in the previous example, "sebya" merely indicates that the subject was wounded.
+
+The reflexive pronoun {{lang|ru-latn|sebya}} gave rise the reflexive affix {{lang|ru-latn|-sya}} ({{lang|ru|-ся}}) used to generate [[reflexive verb]]s, but in this context the affix indicates that the action happened accidentally:<ref>{{Cite book|title=Морфология простым языком|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=175}}</ref>
+
+* {{lang|ru|Он поранился}} (He has wounded himself.)
+
+There are stylistic differences between the three usages, despite being rendered in the same way in English.
+
+Russian has a reflexive possessive as well.<ref>{{Cite book|title=Морфология простым языком|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=82–83}}</ref>
+
+* {{lang|ru|Он любит свою жену.}} {{lang|ru-latn|On lyubit svoyu zhenu.}} (''He loves his wife (his own).'' - Reflexive possessive)
+* {{lang|ru|Он любит его жену.}} {{lang|ru-latn|On lyubit yego zhenu}} (''He loves his wife (someone else's).'' - It is ambiguous in English, but less so in Russian.)
+
+Because of the existence of reflexive forms, the use of a non-reflexive pronoun indicates a subject that is different from the object. If it is impossible, the sentence is invalid or at least irregular:
+
+* {{lang|ru|Он поранил его}}. {{lang|ru-latn|On poranil ego}}. ("He has wounded him (someone else).")
+shippedText=Он поранил его
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=English Wikipedia Reflexive pronoun contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374712982 identifies contributors. Exact native language values selected without stress/punctuation changes; qualified source/rights review pending.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=0111295b473dbe0dd7f6353d48e7bbeccf180e48aa7a93b3cf3827dd62affa50
+contentHash=8a5be819075e5e040f45d23fe175aa52f6ae59aa816f585ec0e9ba90a16cdfb2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u21-object-transfer-native-personal`
+
+- Objectives: obj-u21-object-reference
+- Sessions: u21-s-orient, u21-s-object-reference
+- Source: src-enwiki-reflexive-pronoun-1374712982
+- Rights: rights-enwiki-reflexive-pronoun-1374712982
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5e70ed7ec90213baae3eda7d2bd1c7010565bf53630b2ee59507bee28258d190
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Reflexive_pronoun&oldid=1374712982
+sourceRevision=1374712982
+sourceRecordId=reflexive-independent-direct-object:=== Russian ===
+
+In [[Russian Language|Russian]], the pronoun {{lang|ru|себя}
+originalSourceText==== Russian ===
+
+In [[Russian Language|Russian]], the pronoun {{lang|ru|себя}} {{lang|ru-latn|sebya}} universally means "oneself"/"myself"/"himself", etc. It is inflected depending on the [[Grammatical case|case]].<ref>{{Cite book|title=Морфология простым языком|last=Naumanova|first=Irina|year=2014|location=Moscow|pages=111}}</ref>
+
+When used to indicate that the person is the direct object of the verb, one uses the [[Accusative case|accusative]] form, {{lang|ru-latn|sebya}}.<ref>{{Cite book|title=Морфология простым языком|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=98}}</ref> (It does not have a nominative form.)
+
+* {{lang|ru|Он поранил себя}}. {{lang|ru-latn|On poranil sebya}}. ("He has wounded himself.")
+
+Emphasized forms are "sam sebya" - masculine, "sama sebya" - feminine, "sami sebya" - plural. Unless there is a particular reason (emphasis, answering a question) the word "sam" usually comes after the noun it is emphasizing.<ref>{{Cite book|title=Морфология простым языком|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=121}}</ref>
+
+* {{lang|ru|'''Он''' сам поранил себя}}. {{lang|ru-latn|On sam poranil sebya}}. ("'''He''' has wounded himself." Literally: "He himself has wounded himself.")
+However the form, e.g.,  {{lang|ru|сам себя '''oн''' поранил}}, is grammatical as well.
+
+This sentence underlines that the subject inflicted the wounds while in the previous example, "sebya" merely indicates that the subject was wounded.
+
+The reflexive pronoun {{lang|ru-latn|sebya}} gave rise the reflexive affix {{lang|ru-latn|-sya}} ({{lang|ru|-ся}}) used to generate [[reflexive verb]]s, but in this context the affix indicates that the action happened accidentally:<ref>{{Cite book|title=Морфология простым языком|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=175}}</ref>
+
+* {{lang|ru|Он поранился}} (He has wounded himself.)
+
+There are stylistic differences between the three usages, despite being rendered in the same way in English.
+
+Russian has a reflexive possessive as well.<ref>{{Cite book|title=Морфология простым языком|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=82–83}}</ref>
+
+* {{lang|ru|Он любит свою жену.}} {{lang|ru-latn|On lyubit svoyu zhenu.}} (''He loves his wife (his own).'' - Reflexive possessive)
+* {{lang|ru|Он любит его жену.}} {{lang|ru-latn|On lyubit yego zhenu}} (''He loves his wife (someone else's).'' - It is ambiguous in English, but less so in Russian.)
+
+Because of the existence of reflexive forms, the use of a non-reflexive pronoun indicates a subject that is different from the object. If it is impossible, the sentence is invalid or at least irregular:
+
+* {{lang|ru|Он поранил его}}. {{lang|ru-latn|On poranil ego}}. ("He has wounded him (someone else).")
+shippedText=его
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=English Wikipedia Reflexive pronoun contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374712982 identifies contributors. Exact native language values selected without stress/punctuation changes; qualified source/rights review pending.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=0111295b473dbe0dd7f6353d48e7bbeccf180e48aa7a93b3cf3827dd62affa50
+contentHash=c8124ad7c5031eff874f18c0c1151e60becd8cf2e785c7c4e82a5dc659a33e7f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u21-object-transfer-native-reflexive`
+
+- Objectives: obj-u21-object-reference
+- Sessions: u21-s-orient, u21-s-object-reference
+- Source: src-enwiki-reflexive-pronoun-1374712982
+- Rights: rights-enwiki-reflexive-pronoun-1374712982
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1bcae4e49b1da65b4d6f5785fadb72a78d9589276eec4beec42a57dca237f1a1
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Reflexive_pronoun&oldid=1374712982
+sourceRevision=1374712982
+sourceRecordId=reflexive-independent-direct-object:=== Russian ===
+
+In [[Russian Language|Russian]], the pronoun {{lang|ru|себя}
+originalSourceText==== Russian ===
+
+In [[Russian Language|Russian]], the pronoun {{lang|ru|себя}} {{lang|ru-latn|sebya}} universally means "oneself"/"myself"/"himself", etc. It is inflected depending on the [[Grammatical case|case]].<ref>{{Cite book|title=Морфология простым языком|last=Naumanova|first=Irina|year=2014|location=Moscow|pages=111}}</ref>
+
+When used to indicate that the person is the direct object of the verb, one uses the [[Accusative case|accusative]] form, {{lang|ru-latn|sebya}}.<ref>{{Cite book|title=Морфология простым языком|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=98}}</ref> (It does not have a nominative form.)
+
+* {{lang|ru|Он поранил себя}}. {{lang|ru-latn|On poranil sebya}}. ("He has wounded himself.")
+
+Emphasized forms are "sam sebya" - masculine, "sama sebya" - feminine, "sami sebya" - plural. Unless there is a particular reason (emphasis, answering a question) the word "sam" usually comes after the noun it is emphasizing.<ref>{{Cite book|title=Морфология простым языком|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=121}}</ref>
+
+* {{lang|ru|'''Он''' сам поранил себя}}. {{lang|ru-latn|On sam poranil sebya}}. ("'''He''' has wounded himself." Literally: "He himself has wounded himself.")
+However the form, e.g.,  {{lang|ru|сам себя '''oн''' поранил}}, is grammatical as well.
+
+This sentence underlines that the subject inflicted the wounds while in the previous example, "sebya" merely indicates that the subject was wounded.
+
+The reflexive pronoun {{lang|ru-latn|sebya}} gave rise the reflexive affix {{lang|ru-latn|-sya}} ({{lang|ru|-ся}}) used to generate [[reflexive verb]]s, but in this context the affix indicates that the action happened accidentally:<ref>{{Cite book|title=Морфология простым языком|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=175}}</ref>
+
+* {{lang|ru|Он поранился}} (He has wounded himself.)
+
+There are stylistic differences between the three usages, despite being rendered in the same way in English.
+
+Russian has a reflexive possessive as well.<ref>{{Cite book|title=Морфология простым языком|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=82–83}}</ref>
+
+* {{lang|ru|Он любит свою жену.}} {{lang|ru-latn|On lyubit svoyu zhenu.}} (''He loves his wife (his own).'' - Reflexive possessive)
+* {{lang|ru|Он любит его жену.}} {{lang|ru-latn|On lyubit yego zhenu}} (''He loves his wife (someone else's).'' - It is ambiguous in English, but less so in Russian.)
+
+Because of the existence of reflexive forms, the use of a non-reflexive pronoun indicates a subject that is different from the object. If it is impossible, the sentence is invalid or at least irregular:
+
+* {{lang|ru|Он поранил его}}. {{lang|ru-latn|On poranil ego}}. ("He has wounded him (someone else).")
+shippedText=себя
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=English Wikipedia Reflexive pronoun contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374712982 identifies contributors. Exact native language values selected without stress/punctuation changes; qualified source/rights review pending.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=0111295b473dbe0dd7f6353d48e7bbeccf180e48aa7a93b3cf3827dd62affa50
+contentHash=9dfc032c33420654affb02f95ef3c5d558e35c25814a0b8f92c11890c8fb80ab
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u21-object-transfer-native-self`
+
+- Objectives: obj-u21-object-reference
+- Sessions: u21-s-orient, u21-s-object-reference
+- Source: src-enwiki-reflexive-pronoun-1374712982
+- Rights: rights-enwiki-reflexive-pronoun-1374712982
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ee44bf34bff11c7e3ba6bd1cbec219cfcbd7a6229b7a9165cfd1c6d4194f13c3
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Reflexive_pronoun&oldid=1374712982
+sourceRevision=1374712982
+sourceRecordId=reflexive-independent-direct-object:=== Russian ===
+
+In [[Russian Language|Russian]], the pronoun {{lang|ru|себя}
+originalSourceText==== Russian ===
+
+In [[Russian Language|Russian]], the pronoun {{lang|ru|себя}} {{lang|ru-latn|sebya}} universally means "oneself"/"myself"/"himself", etc. It is inflected depending on the [[Grammatical case|case]].<ref>{{Cite book|title=Морфология простым языком|last=Naumanova|first=Irina|year=2014|location=Moscow|pages=111}}</ref>
+
+When used to indicate that the person is the direct object of the verb, one uses the [[Accusative case|accusative]] form, {{lang|ru-latn|sebya}}.<ref>{{Cite book|title=Морфология простым языком|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=98}}</ref> (It does not have a nominative form.)
+
+* {{lang|ru|Он поранил себя}}. {{lang|ru-latn|On poranil sebya}}. ("He has wounded himself.")
+
+Emphasized forms are "sam sebya" - masculine, "sama sebya" - feminine, "sami sebya" - plural. Unless there is a particular reason (emphasis, answering a question) the word "sam" usually comes after the noun it is emphasizing.<ref>{{Cite book|title=Морфология простым языком|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=121}}</ref>
+
+* {{lang|ru|'''Он''' сам поранил себя}}. {{lang|ru-latn|On sam poranil sebya}}. ("'''He''' has wounded himself." Literally: "He himself has wounded himself.")
+However the form, e.g.,  {{lang|ru|сам себя '''oн''' поранил}}, is grammatical as well.
+
+This sentence underlines that the subject inflicted the wounds while in the previous example, "sebya" merely indicates that the subject was wounded.
+
+The reflexive pronoun {{lang|ru-latn|sebya}} gave rise the reflexive affix {{lang|ru-latn|-sya}} ({{lang|ru|-ся}}) used to generate [[reflexive verb]]s, but in this context the affix indicates that the action happened accidentally:<ref>{{Cite book|title=Морфология простым языком|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=175}}</ref>
+
+* {{lang|ru|Он поранился}} (He has wounded himself.)
+
+There are stylistic differences between the three usages, despite being rendered in the same way in English.
+
+Russian has a reflexive possessive as well.<ref>{{Cite book|title=Морфология простым языком|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=82–83}}</ref>
+
+* {{lang|ru|Он любит свою жену.}} {{lang|ru-latn|On lyubit svoyu zhenu.}} (''He loves his wife (his own).'' - Reflexive possessive)
+* {{lang|ru|Он любит его жену.}} {{lang|ru-latn|On lyubit yego zhenu}} (''He loves his wife (someone else's).'' - It is ambiguous in English, but less so in Russian.)
+
+Because of the existence of reflexive forms, the use of a non-reflexive pronoun indicates a subject that is different from the object. If it is impossible, the sentence is invalid or at least irregular:
+
+* {{lang|ru|Он поранил его}}. {{lang|ru-latn|On poranil ego}}. ("He has wounded him (someone else).")
+shippedText=Он поранил себя
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=English Wikipedia Reflexive pronoun contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374712982 identifies contributors. Exact native language values selected without stress/punctuation changes; qualified source/rights review pending.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=0111295b473dbe0dd7f6353d48e7bbeccf180e48aa7a93b3cf3827dd62affa50
+contentHash=b6f9cf992192330bd4d7048b457803f05d6aafa65a0090009708e4173e1eaf3b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u21-purpose-rem`
 
 - Objectives: obj-u21-purpose
@@ -8486,6 +9148,21 @@ Original app text
 Russian Companion content-audit research synthesis, content-audit-2026-10-08. Bibliography is on each note. No owned-book prose is included.
 Original research synthesis for registered content corrections. Not a quotation.
 
+### SOURCE `src-enwiki-reflexive-pronoun-1374712982`
+
+- Objectives: none
+- Sessions: none
+- Source: src-enwiki-reflexive-pronoun-1374712982
+- Rights: rights-enwiki-reflexive-pronoun-1374712982
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 5d7d17d070bc79caee43cee9a835bb8419b76fd1add4d058e456e221c755eb6c
+
+Reflexive pronoun — bounded Russian direct-object examples
+CC BY-SA 4.0
+English Wikipedia Reflexive pronoun contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374712982 identifies contributors. Exact native language values selected without stress/punctuation changes; qualified source/rights review pending.
+Exact supplied native direct-object sentences selected; English context independently explained. No whole-article rule adoption, book prose or media. Historical pre2014 evidence retained; formal source/rights review pending.
+
 ### SOURCE `src-app-english-v2`
 
 - Objectives: none
@@ -8543,6 +9220,20 @@ src-content-audit-research
 Original app text
 permitsAppUse=true
 
+### RIGHTS `rights-enwiki-reflexive-pronoun-1374712982`
+
+- Objectives: none
+- Sessions: none
+- Source: src-enwiki-reflexive-pronoun-1374712982
+- Rights: rights-enwiki-reflexive-pronoun-1374712982
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 35a17404df27014ebec25fe8e71c1c2eafce63254c07a962806013786a5bfa65
+
+src-enwiki-reflexive-pronoun-1374712982
+CC BY-SA 4.0
+permitsAppUse=true
+
 ### RIGHTS `rights-app-english-v2`
 
 - Objectives: none
@@ -8577,6 +9268,7 @@ permitsAppUse=true
 - `obj-u21-object-reference` INSTRUCTION `u21-st-orient`
 - `obj-u21-object-reference` INSTRUCTION `u21-st-teach-object-reference-1`
 - `obj-u21-object-reference` INSTRUCTION `u21-st-teach-object-reference-2`
+- `obj-u21-object-reference` INSTRUCTION `u21-st-teach-object-reference-3`
 - `obj-u21-object-reference` EXAMPLE `ex-u21-object-reference-0`
 - `obj-u21-object-reference` EXAMPLE `ex-u21-object-reference-1`
 - `obj-u21-object-reference` PRACTICE `u21-st-guided-object-reference-1`
@@ -8629,6 +9321,7 @@ permitsAppUse=true
 - `u21-st-teach-object-reference-1` EXAMPLE `ex-u21-object-reference-1`
 - `u21-st-teach-object-reference-1` REFERENCE `ref-u2125-attribution`
 - `u21-st-teach-object-reference-2` REFERENCE `ref-u2125-attribution`
+- `u21-st-teach-object-reference-3` REFERENCE `ref-u2125-attribution`
 - `u21-st-guided-object-reference-1` REMEDIATION `u21-st-rem-object-reference`
 - `u21-st-guided-object-reference-1` ITEM `u21-g-object-reference-0`
 - `u21-st-rem-object-reference` EXAMPLE `ex-u21-object-reference-0`
@@ -8721,6 +9414,16 @@ permitsAppUse=true
 - `obj-u21-object-reference` PROVENANCE `prov-ca-u21-object-teach-1-title`
 - `obj-u21-object-reference` PROVENANCE `prov-ca-u21-object-teach-2-body`
 - `obj-u21-object-reference` PROVENANCE `prov-ca-u21-object-teach-2-title`
+- `obj-u21-object-reference` PROVENANCE `prov-ca-u21-object-transfer-item-feedback`
+- `obj-u21-object-reference` PROVENANCE `prov-ca-u21-object-transfer-item-prompt`
+- `obj-u21-object-reference` PROVENANCE `prov-ca-u21-object-transfer-item-rationale`
+- `obj-u21-object-reference` PROVENANCE `prov-ca-u21-object-transfer-remediation-body`
+- `obj-u21-object-reference` PROVENANCE `prov-ca-u21-object-transfer-teach-2-body`
+- `obj-u21-object-reference` PROVENANCE `prov-ca-u21-object-transfer-teach-3-body`
+- `obj-u21-object-reference` PROVENANCE `prov-ca-u21-object-transfer-teach-3-title`
+- `obj-u21-object-reference` PROVENANCE `prov-ca-u21-object-transfer-u21-i-object-reference-2-0`
+- `obj-u21-object-reference` PROVENANCE `prov-ca-u21-object-transfer-u21-i-object-reference-2-1`
+- `obj-u21-object-reference` PROVENANCE `prov-ca-u21-object-transfer-u21-i-object-reference-2-2`
 - `obj-u21-purpose` PROVENANCE `prov-ca-u21-purpose-check`
 - `obj-u21-purpose` PROVENANCE `prov-ca-u21-purpose-guided`
 - `obj-u21-purpose` PROVENANCE `prov-ca-u21-purpose-objective`
@@ -8818,6 +9521,10 @@ permitsAppUse=true
 - `obj-u21-object-reference` PROVENANCE `prov-u21-object-reference-rem-r0`
 - `obj-u21-object-reference` PROVENANCE `prov-u21-object-reference-x-0`
 - `obj-u21-object-reference` PROVENANCE `prov-u21-object-reference-x-0-r0`
+- `obj-u21-object-reference` PROVENANCE `prov-u21-object-transfer-native-other`
+- `obj-u21-object-reference` PROVENANCE `prov-u21-object-transfer-native-personal`
+- `obj-u21-object-reference` PROVENANCE `prov-u21-object-transfer-native-reflexive`
+- `obj-u21-object-reference` PROVENANCE `prov-u21-object-transfer-native-self`
 - `obj-u21-purpose` PROVENANCE `prov-u21-purpose-rem`
 - `obj-u21-purpose` PROVENANCE `prov-u21-purpose-x-0`
 - `obj-u21-purpose` PROVENANCE `prov-u21-purpose-x-1`

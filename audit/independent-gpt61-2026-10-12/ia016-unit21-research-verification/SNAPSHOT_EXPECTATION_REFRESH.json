@@ -1,0 +1,33 @@
+{
+  "baselineCommit": "6434cd12cdb22d0bbf6f7f848191d46b46501fca",
+  "unit": 21,
+  "changes": [
+    {
+      "file": "app/src/test/java/dev/russiancompanion/v2/BatchECapabilityResearchTest.kt",
+      "field": "packContentReviewDigest",
+      "before": "7e0bd4402ea9085cb686419f5881f6f6ba239152bcc46b8cbf0bb53aee4c95df",
+      "after": "c7e2891e19f0da37bc8a9200ceeb83b9bb8bea62c388e8cfd99bca7b3e89b51f"
+    },
+    {
+      "file": "app/src/test/java/dev/russiancompanion/v2/Units2630SourceIntakeTest.kt",
+      "field": "contentReviewDigest",
+      "before": "cf307d8e607534f20bff01a7af5cdf1c42ffc40dea38670ef1dbc12c005497ba",
+      "after": "a79e2d859adfc1b99d562db212fae357042975353a3a3fbc9c33ab4876b165e7"
+    },
+    {
+      "file": "app/src/test/java/dev/russiancompanion/v2/V2RebuildTest.kt",
+      "field": "packContentReviewDigest",
+      "before": "7e0bd4402ea9085cb686419f5881f6f6ba239152bcc46b8cbf0bb53aee4c95df",
+      "after": "c7e2891e19f0da37bc8a9200ceeb83b9bb8bea62c388e8cfd99bca7b3e89b51f"
+    },
+    {
+      "file": "app/src/test/java/dev/russiancompanion/v2/audit/OwnerGovernanceDecisionTest.kt",
+      "field": "packContentReviewDigest",
+      "before": "7e0bd4402ea9085cb686419f5881f6f6ba239152bcc46b8cbf0bb53aee4c95df",
+      "after": "c7e2891e19f0da37bc8a9200ceeb83b9bb8bea62c388e8cfd99bca7b3e89b51f"
+    }
+  ],
+  "allOtherPerUnitSnapshotAndMappingValuesUnchanged": true,
+  "scope": "Current snapshot expectations only; historical evidence unchanged.",
+  "formalAcceptance": false
+}
