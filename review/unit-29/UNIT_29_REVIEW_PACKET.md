@@ -11,12 +11,12 @@ Unit 29 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 4f5cb8024d3f68a37052fdf85b5755bffa2a0904
-- Unit content-review SHA-256: f9528426886e3a2f8c990391731fa4272ceb9f606a361e466ff2c635008f13e8
+- Curriculum source commit: b4346e2797e8c4dd0965b4665773397d5e9be742
+- Unit content-review SHA-256: 0e99fc02a09d928d4cff5fce33b069907dfd2b84b7f6cf0b8efac068ffc65804
 - Mapping-package SHA-256: a7ebe370698a0dffe4f0311ccfbfff6f217171ffab7dda232447d4b62e2b4071
-- Pack content-review SHA-256: 90d68f8614841c9d2eec2c1187fad4bbdf0d3948ac9fa8f16a7ec730832a7f2d
-- Review-package SHA-256: 6a3a1f1f17dfc7984888f7a974bf1b76a3af97be1cf76013ca68288f8a6b0977
-- Repository source SHA-256: 4d59ef3eee6e8a4d942ae2a138618a63a88ab4bbeeacd36663d52bd3214f4918
+- Pack content-review SHA-256: 4f787a22d96862cfd369592b03e26886f9829d212a083f582915742a20434140
+- Review-package SHA-256: 0f81030a865fc3ceb8205562e363c079aedba6611b2ebe83c5aad203d3983dcc
+- Repository source SHA-256: a812cd35d250546ebfbbfc329a0063b4d3e28e0536f82d30a41e75895c6de1e2
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -320,11 +320,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 9f16b536dd93aa75cbe8f4fa47bbaa6a3d9cee8ac84d79476bff0fb9aaf64e9d
+- Content hash: a5662bda0ab2ed5986dc4aa63784807584d585633b47ca35394fbcd914d47fbf
 
 kind=TEACH
 title=Read the question as well as the form
-body=For чита́ющая, select in the present when asked for its time label. For чита́вшая, select in the past for its own time label. One retained contrast check instead asks for the other time: there the answer is in the present. That reversed question does not turn the displayed past form into a present form. The gloss that read names an action; it is not the requested contrasting time label.
+body=For чита́ющая, select in the present when asked for its time label. For чита́вшая, select in the past for its own time label. Classify the displayed form itself. Selecting the other time label would test following a reversal instruction rather than interpreting the participle. The gloss that read gives an action meaning rather than the requested time classification.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -342,11 +342,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 855fbea1550e7eee735cc6428b96143822e505bb1b8ac56b171f50174131f57f
+- Content hash: a2e399a85c927a787ef5416daab356025aa0d4dd7cd711ed4756056df4da0ecb
 
 kind=TEACH
 title=Recognize the separate living example
-body=The retained живу́щие has the meaning living and illustrates an active description. This is recognition of the admitted example, not a general algorithm for generating participles of unfamiliar verbs. Interpreting an isolated form does not establish the complete tense or actor of a sentence that has not been supplied.
+body=The retained живу́щие means living. In the supplied example, people perform the living action; this is an active present participle. Its time classification is in the present, while living is its lexical meaning. This is recognition of the admitted example, not a general algorithm for generating participles of unfamiliar verbs. Interpreting an isolated form does not establish the complete tense or actor of a sentence that has not been supplied.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -386,15 +386,15 @@ remediationStepId=u29-st-rem-active
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 43718f682bbfa256a6b7a3c7050857721ac36f4187684c4afb4f582d8bb1bc5e
+- Content hash: bcc86875c18107b45e29dd1cdbf52d07a544603674fb201a6574317c79d88842
 
 kind=REMEDIATE
 title=Review the complete retained-example contrast
 body=An active participle describes an entity performing the action. The retained чита́вшая is the past reading form; чита́ющая is the present reading form. The labels in the past and in the present distinguish these supplied forms. They do not identify a passive entity being read. An English description of reading can express the action without itself specifying this past/present contrast.
 
-For чита́ющая, select in the present when asked for its time label. For чита́вшая, select in the past for its own time label. One retained contrast check instead asks for the other time: there the answer is in the present. That reversed question does not turn the displayed past form into a present form. The gloss that read names an action; it is not the requested contrasting time label.
+For чита́ющая, select in the present when asked for its time label. For чита́вшая, select in the past for its own time label. Classify the displayed form itself. Selecting the other time label would test following a reversal instruction rather than interpreting the participle. The gloss that read gives an action meaning rather than the requested time classification.
 
-The retained живу́щие has the meaning living and illustrates an active description. This is recognition of the admitted example, not a general algorithm for generating participles of unfamiliar verbs. Interpreting an isolated form does not establish the complete tense or actor of a sentence that has not been supplied.
+The retained живу́щие means living. In the supplied example, people perform the living action; this is an active present participle. Its time classification is in the present, while living is its lexical meaning. This is recognition of the admitted example, not a general algorithm for generating participles of unfamiliar verbs. Interpreting an isolated form does not establish the complete tense or actor of a sentence that has not been supplied.
 dominantAction=Continue
 references=
 items=
@@ -1760,35 +1760,35 @@ responseKind=ENGLISH_CLASSIFICATION
 
 - Objectives: obj-u29-active
 - Sessions: u29-s-active
-- Source: src-wikipedia-russian-grammar-1369617627
-- Rights: rights-wikipedia-russian-grammar-1369617627
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 06c3961530618ef836668c11a507c0b30623d6458a29edd3ecd90e2dda4837b8
+- Content hash: bda14dda018db3b2d052a2ea6c4550b459caa93c5a8e9b31a4615ef540d97f46
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English gloss names the other time, not the one on the shown line?
-promptLetter=чита́вшая
-options=in the present | in the past | that read
+prompt=Which English time label describes the shown active participle itself?
+promptLetter=живу́щие
+options=in the present | in the past | living
 answer=in the present
-feedback=The frozen line says the form indicates actions that happened in the past. This label is the other time label. in the present.
+feedback=живу́щие means living and is the active present participle in the supplied example: the people perform the living action. Select in the present for this form itself. The past label describes a different participial tense; living gives the lexical meaning rather than the requested time classification. This identifies the admitted form, not the tense of an unseen sentence.
 objectiveId=obj-u29-active
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen line writes this label on the shown line for in the past. | The frozen line writes this phrase on the shown line, and it is not the other time label for that read.
+distractorRationales= | The past label names a different participial tense; the supplied living form is active present. | Living gives the lexical meaning, rather than the requested present or past time classification.
 testedFeature=ACTIVE_TIME
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
+evidenceMode=STATED_APPLICATION
 contrastSetId=u29-active-2
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-u29-active-1-en
-distractorSourceIds= | prov-ex-u29-active-0-en | prov-u29-active-x-1
-distractorDifference= | This label is the one on the shown line (in the past). | This phrase stays on the shown line (that read).
-whyAnswerDemonstratesObjective=The frozen line says the form indicates actions that happened in the past. This label is the other time label.
-contrastMembers=in the present | in the past | that read
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u29-active-0-ru | prov-ex-u29-active-1-en | prov-ex-u29-active-0-en | prov-u29-active-x-1
+answerSourceIds=prov-ca-u29-time-u29-i-active-2-1
+distractorSourceIds= | prov-ca-u29-time-u29-i-active-2-2 | prov-ca-u29-time-u29-i-active-2-3
+distractorDifference= | The past label names a different participial tense; the supplied living form is active present. | Living gives the lexical meaning, rather than the requested present or past time classification.
+whyAnswerDemonstratesObjective=живу́щие means living and is the active present participle in the supplied example: the people perform the living action. Select in the present for this form itself. The past label describes a different participial tense; living gives the lexical meaning rather than the requested time classification. This identifies the admitted form, not the tense of an unseen sentence.
+contrastMembers=in the present | in the past | living
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u29-time-u29-i-active-2-0 | prov-ca-u29-time-u29-i-active-2-1 | prov-ca-u29-time-u29-i-active-2-2 | prov-ca-u29-time-u29-i-active-2-3
 responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u29-i-short-adjective-1`
@@ -4399,6 +4399,352 @@ attribution=Russian Companion independently authored English explanation, 2026-1
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
 sourceHash=0b5543c863fe3f4b84eecdbf7bac775a64a149b23f12b38d139a7a2126edcb89
 contentHash=55eb2ae0657a1ef9f8be30941f9ded2c7374a6095ad3d9f575bb5dde393b5b05
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-time-u29-i-active-2-0`
+
+- Objectives: obj-u29-active
+- Sessions: u29-s-orient, u29-s-active
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: edc9e544d75af685c78d1dd05e87f6390674c754fa535fd09ac3590f051865d0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-i-active-2
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectival participle introduction and Active present participle / Active past participle sections. The already admitted living form is the example immediately under Active present participle; the separate reading examples distinguish past and present. This bounded classification identifies participial tense, not the time of an unseen sentence or a productive formation algorithm. Original reversal followed its literal prompt; its defect was awarding time-comprehension credit for choosing the complementary label, not mistranslating a form. Replace it with the distinct already admitted living form. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+живу́щие means living and is the active present participle in the supplied example: the people perform the living action. Select in the present for this form itself. The past label describes a different participial tense; living gives the lexical meaning rather than the requested time classification. This identifies the admitted form, not the tense of an unseen sentence.
+Tuple-v1:tuple-v1:1;16:живу́щие14:in the present2;11:in the past6:living
+shippedText=живу́щие
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=95d18c3e8285debf878068b03f7d3429ef4cb0f537d062dfe3ab1a2f9f83bf99
+contentHash=c87ca5f2464153658c2ec7ba8239942c3e739a26128d0ab65a51a06d0561f688
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-time-u29-i-active-2-1`
+
+- Objectives: obj-u29-active
+- Sessions: u29-s-orient, u29-s-active
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3d9bbdcac3dcc4e175a965e70e909d34ba562ff07f47eecc917f444ba81cd56e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-i-active-2
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectival participle introduction and Active present participle / Active past participle sections. The already admitted living form is the example immediately under Active present participle; the separate reading examples distinguish past and present. This bounded classification identifies participial tense, not the time of an unseen sentence or a productive formation algorithm. Original reversal followed its literal prompt; its defect was awarding time-comprehension credit for choosing the complementary label, not mistranslating a form. Replace it with the distinct already admitted living form. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+живу́щие means living and is the active present participle in the supplied example: the people perform the living action. Select in the present for this form itself. The past label describes a different participial tense; living gives the lexical meaning rather than the requested time classification. This identifies the admitted form, not the tense of an unseen sentence.
+Tuple-v1:tuple-v1:1;16:живу́щие14:in the present2;11:in the past6:living
+shippedText=in the present
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=95d18c3e8285debf878068b03f7d3429ef4cb0f537d062dfe3ab1a2f9f83bf99
+contentHash=bd20a96b52a0d1fc808fea6e34a05775c72f7edb6f376920e44f6a2357b2ca11
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-time-u29-i-active-2-2`
+
+- Objectives: obj-u29-active
+- Sessions: u29-s-orient, u29-s-active
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 57c6a14a3669a4b44e89bdc5a4acc545d156485392ac01fd5417fb8196e2ab49
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-i-active-2
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectival participle introduction and Active present participle / Active past participle sections. The already admitted living form is the example immediately under Active present participle; the separate reading examples distinguish past and present. This bounded classification identifies participial tense, not the time of an unseen sentence or a productive formation algorithm. Original reversal followed its literal prompt; its defect was awarding time-comprehension credit for choosing the complementary label, not mistranslating a form. Replace it with the distinct already admitted living form. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+живу́щие means living and is the active present participle in the supplied example: the people perform the living action. Select in the present for this form itself. The past label describes a different participial tense; living gives the lexical meaning rather than the requested time classification. This identifies the admitted form, not the tense of an unseen sentence.
+Tuple-v1:tuple-v1:1;16:живу́щие14:in the present2;11:in the past6:living
+shippedText=in the past
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=95d18c3e8285debf878068b03f7d3429ef4cb0f537d062dfe3ab1a2f9f83bf99
+contentHash=54fc0bf0aab2d13e68793f9f83c6a74192dddfc7258421dcbd066cb85b7e79a4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-time-u29-i-active-2-3`
+
+- Objectives: obj-u29-active
+- Sessions: u29-s-orient, u29-s-active
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: aaeb7d321832f63671b9fd32da30cb71ab0ab6fe91ccf4b5b4e05b07ad90fd89
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-i-active-2
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectival participle introduction and Active present participle / Active past participle sections. The already admitted living form is the example immediately under Active present participle; the separate reading examples distinguish past and present. This bounded classification identifies participial tense, not the time of an unseen sentence or a productive formation algorithm. Original reversal followed its literal prompt; its defect was awarding time-comprehension credit for choosing the complementary label, not mistranslating a form. Replace it with the distinct already admitted living form. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+живу́щие means living and is the active present participle in the supplied example: the people perform the living action. Select in the present for this form itself. The past label describes a different participial tense; living gives the lexical meaning rather than the requested time classification. This identifies the admitted form, not the tense of an unseen sentence.
+Tuple-v1:tuple-v1:1;16:живу́щие14:in the present2;11:in the past6:living
+shippedText=living
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=95d18c3e8285debf878068b03f7d3429ef4cb0f537d062dfe3ab1a2f9f83bf99
+contentHash=a93fcdf7dbae1c2f165aae3ee372a6cedc28effc66ebdbc08ae6eaa951ef53f6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-time-u29-i-active-2-feedback`
+
+- Objectives: obj-u29-active
+- Sessions: u29-s-orient, u29-s-active
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2dbb3814a75007f9d38b39b5c2be06ebcd946a5d56ec878fd2848c239f2d0794
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-active:time:u29-i-active-2-feedback
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectival participle introduction and Active present participle / Active past participle sections. The already admitted living form is the example immediately under Active present participle; the separate reading examples distinguish past and present. This bounded classification identifies participial tense, not the time of an unseen sentence or a productive formation algorithm. Original reversal followed its literal prompt; its defect was awarding time-comprehension credit for choosing the complementary label, not mistranslating a form. Replace it with the distinct already admitted living form. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+живу́щие means living and is the active present participle in the supplied example: the people perform the living action. Select in the present for this form itself. The past label describes a different participial tense; living gives the lexical meaning rather than the requested time classification. This identifies the admitted form, not the tense of an unseen sentence.
+shippedText=живу́щие means living and is the active present participle in the supplied example: the people perform the living action. Select in the present for this form itself. The past label describes a different participial tense; living gives the lexical meaning rather than the requested time classification. This identifies the admitted form, not the tense of an unseen sentence.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b40fdcc945ee4cd7ec4b6c081b104cf2b8de8a2c2689310164522c38297eaa78
+contentHash=f9ca50d7efdd3b1f5a7dbc9f9dae999ed681cc2df844f78965b4c40dc875a141
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-time-u29-i-active-2-prompt`
+
+- Objectives: obj-u29-active
+- Sessions: u29-s-orient, u29-s-active
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: de7d63bda0e1400546a7905c530c9fc382f2cf1f7edc376fac9a08f1e7bb6d8c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-active:time:u29-i-active-2-prompt
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectival participle introduction and Active present participle / Active past participle sections. The already admitted living form is the example immediately under Active present participle; the separate reading examples distinguish past and present. This bounded classification identifies participial tense, not the time of an unseen sentence or a productive formation algorithm. Original reversal followed its literal prompt; its defect was awarding time-comprehension credit for choosing the complementary label, not mistranslating a form. Replace it with the distinct already admitted living form. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+Which English time label describes the shown active participle itself?
+shippedText=Which English time label describes the shown active participle itself?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4d341265319dee06a77cf4968f6311a538211c3b41b78ac1eb3d2d725ec1d2f5
+contentHash=ef8a38860f85d761b43b01248400014f1e820bc8f3f7574d663b1881f495291c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-time-u29-i-active-2-rationale-1`
+
+- Objectives: obj-u29-active
+- Sessions: u29-s-orient, u29-s-active
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b834ef4de13b7026e66d806885eeada7502c60c5d9b588b3d8e4b0ae5af5e3f3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-active:time:u29-i-active-2-rationale-1
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectival participle introduction and Active present participle / Active past participle sections. The already admitted living form is the example immediately under Active present participle; the separate reading examples distinguish past and present. This bounded classification identifies participial tense, not the time of an unseen sentence or a productive formation algorithm. Original reversal followed its literal prompt; its defect was awarding time-comprehension credit for choosing the complementary label, not mistranslating a form. Replace it with the distinct already admitted living form. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+The past label names a different participial tense; the supplied living form is active present.
+shippedText=The past label names a different participial tense; the supplied living form is active present.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7f85ef7f4cf677414ecb24c7df4d3ea66eb2b02678338b57d5eadfd4ec7aeb8d
+contentHash=97d636eb35388d3dfd66b9c51da85258601b9c57d915e657c8319a1ee38e7863
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-time-u29-i-active-2-rationale-2`
+
+- Objectives: obj-u29-active
+- Sessions: u29-s-orient, u29-s-active
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 041f3c37050d3422785c012a21be452b250281390fe32acad27753a876a9011c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-active:time:u29-i-active-2-rationale-2
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectival participle introduction and Active present participle / Active past participle sections. The already admitted living form is the example immediately under Active present participle; the separate reading examples distinguish past and present. This bounded classification identifies participial tense, not the time of an unseen sentence or a productive formation algorithm. Original reversal followed its literal prompt; its defect was awarding time-comprehension credit for choosing the complementary label, not mistranslating a form. Replace it with the distinct already admitted living form. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+Living gives the lexical meaning, rather than the requested present or past time classification.
+shippedText=Living gives the lexical meaning, rather than the requested present or past time classification.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f2f6044c1b5e6aa1e015e6bc010816eda28b1949b95c609a41038aa2f6b06a3
+contentHash=96abc8229da61706183d40ebecf86cdb21865f6777ec60e0b5dfc916c8987282
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-time-u29-st-rem-active-body`
+
+- Objectives: obj-u29-active
+- Sessions: u29-s-orient, u29-s-active
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6a63e9e1f186ae948538240665502d1c02262fdb83350d4a5a705ab62c987599
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-active:time:u29-st-rem-active-body
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectival participle introduction and Active present participle / Active past participle sections. The already admitted living form is the example immediately under Active present participle; the separate reading examples distinguish past and present. This bounded classification identifies participial tense, not the time of an unseen sentence or a productive formation algorithm. Original reversal followed its literal prompt; its defect was awarding time-comprehension credit for choosing the complementary label, not mistranslating a form. Replace it with the distinct already admitted living form. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+An active participle describes an entity performing the action. The retained чита́вшая is the past reading form; чита́ющая is the present reading form. The labels in the past and in the present distinguish these supplied forms. They do not identify a passive entity being read. An English description of reading can express the action without itself specifying this past/present contrast.
+
+For чита́ющая, select in the present when asked for its time label. For чита́вшая, select in the past for its own time label. Classify the displayed form itself. Selecting the other time label would test following a reversal instruction rather than interpreting the participle. The gloss that read gives an action meaning rather than the requested time classification.
+
+The retained живу́щие means living. In the supplied example, people perform the living action; this is an active present participle. Its time classification is in the present, while living is its lexical meaning. This is recognition of the admitted example, not a general algorithm for generating participles of unfamiliar verbs. Interpreting an isolated form does not establish the complete tense or actor of a sentence that has not been supplied.
+shippedText=An active participle describes an entity performing the action. The retained чита́вшая is the past reading form; чита́ющая is the present reading form. The labels in the past and in the present distinguish these supplied forms. They do not identify a passive entity being read. An English description of reading can express the action without itself specifying this past/present contrast.
+
+For чита́ющая, select in the present when asked for its time label. For чита́вшая, select in the past for its own time label. Classify the displayed form itself. Selecting the other time label would test following a reversal instruction rather than interpreting the participle. The gloss that read gives an action meaning rather than the requested time classification.
+
+The retained живу́щие means living. In the supplied example, people perform the living action; this is an active present participle. Its time classification is in the present, while living is its lexical meaning. This is recognition of the admitted example, not a general algorithm for generating participles of unfamiliar verbs. Interpreting an isolated form does not establish the complete tense or actor of a sentence that has not been supplied.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=22c2a8ef5c8f00d5f99aa5cc1857693868020a15c96b3738e1df4899e8591d46
+contentHash=28b5af25d6a89e50131d1ce9dcc960462b49ea5ae57bbda42ed7b0185211e464
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-time-u29-st-teach-active-2-body`
+
+- Objectives: obj-u29-active
+- Sessions: u29-s-orient, u29-s-active
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 24f82ac8b808fa6a8ae0e836f949242187d8d3c3ee4f9d1b94ae745ae10e83c7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-active:time:u29-st-teach-active-2-body
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectival participle introduction and Active present participle / Active past participle sections. The already admitted living form is the example immediately under Active present participle; the separate reading examples distinguish past and present. This bounded classification identifies participial tense, not the time of an unseen sentence or a productive formation algorithm. Original reversal followed its literal prompt; its defect was awarding time-comprehension credit for choosing the complementary label, not mistranslating a form. Replace it with the distinct already admitted living form. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+For чита́ющая, select in the present when asked for its time label. For чита́вшая, select in the past for its own time label. Classify the displayed form itself. Selecting the other time label would test following a reversal instruction rather than interpreting the participle. The gloss that read gives an action meaning rather than the requested time classification.
+shippedText=For чита́ющая, select in the present when asked for its time label. For чита́вшая, select in the past for its own time label. Classify the displayed form itself. Selecting the other time label would test following a reversal instruction rather than interpreting the participle. The gloss that read gives an action meaning rather than the requested time classification.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3ee384dcc3649ed766a1fd5a29d23bcfac74f229d6aee7582d23a0a7bc928547
+contentHash=03305d9f749f041051530674d035b5f7b78de13b407c3790c33dee86c0837c0c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-time-u29-st-teach-active-3-body`
+
+- Objectives: obj-u29-active
+- Sessions: u29-s-orient, u29-s-active
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: aa65e8c3ecefe80aa004aa34532aec2cc7d4e5b0eaa20c9236fe326f25b1f204
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-active:time:u29-st-teach-active-3-body
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectival participle introduction and Active present participle / Active past participle sections. The already admitted living form is the example immediately under Active present participle; the separate reading examples distinguish past and present. This bounded classification identifies participial tense, not the time of an unseen sentence or a productive formation algorithm. Original reversal followed its literal prompt; its defect was awarding time-comprehension credit for choosing the complementary label, not mistranslating a form. Replace it with the distinct already admitted living form. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+The retained живу́щие means living. In the supplied example, people perform the living action; this is an active present participle. Its time classification is in the present, while living is its lexical meaning. This is recognition of the admitted example, not a general algorithm for generating participles of unfamiliar verbs. Interpreting an isolated form does not establish the complete tense or actor of a sentence that has not been supplied.
+shippedText=The retained живу́щие means living. In the supplied example, people perform the living action; this is an active present participle. Its time classification is in the present, while living is its lexical meaning. This is recognition of the admitted example, not a general algorithm for generating participles of unfamiliar verbs. Interpreting an isolated form does not establish the complete tense or actor of a sentence that has not been supplied.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=212763afdbc80df1526d05ef6b8b0a2f2f419ded3506d33000fe2b5a491ea737
+contentHash=571feb8167576fd33d1115ed71e48eefae1ca578b866ccf2bdeebc20d5083e94
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -12863,6 +13209,17 @@ permitsAppUse=true
 - `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-instruction-u29-s-short-adjective-7`
 - `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-instruction-u29-s-short-adjective-8`
 - `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-instruction-u29-s-short-adjective-9`
+- `obj-u29-active` PROVENANCE `prov-ca-u29-time-u29-i-active-2-0`
+- `obj-u29-active` PROVENANCE `prov-ca-u29-time-u29-i-active-2-1`
+- `obj-u29-active` PROVENANCE `prov-ca-u29-time-u29-i-active-2-2`
+- `obj-u29-active` PROVENANCE `prov-ca-u29-time-u29-i-active-2-3`
+- `obj-u29-active` PROVENANCE `prov-ca-u29-time-u29-i-active-2-feedback`
+- `obj-u29-active` PROVENANCE `prov-ca-u29-time-u29-i-active-2-prompt`
+- `obj-u29-active` PROVENANCE `prov-ca-u29-time-u29-i-active-2-rationale-1`
+- `obj-u29-active` PROVENANCE `prov-ca-u29-time-u29-i-active-2-rationale-2`
+- `obj-u29-active` PROVENANCE `prov-ca-u29-time-u29-st-rem-active-body`
+- `obj-u29-active` PROVENANCE `prov-ca-u29-time-u29-st-teach-active-2-body`
+- `obj-u29-active` PROVENANCE `prov-ca-u29-time-u29-st-teach-active-3-body`
 - `obj-u29-active` PROVENANCE `prov-ex-u29-active-0-en`
 - `obj-u29-active` PROVENANCE `prov-ex-u29-active-0-ru`
 - `obj-u29-active` PROVENANCE `prov-ex-u29-active-1-en`
