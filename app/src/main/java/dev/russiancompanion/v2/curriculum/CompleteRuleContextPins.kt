@@ -53,6 +53,12 @@ internal object CompleteRuleContextPins {
         "ca-rule-context:u30-g-initialism-use" to "e81c42ab58a78291c231a2a16d85653cb2b007c677d52359ca7acab5286f6fc9",
         "ca-rule-context:u30-i-initialism-ussr" to "086cd55cb22cf71d9b3d76b3c14ed7c38374bb9e234aceede9bd49db1423099f",
         "ca-rule-context:u30-i-initialism-usa" to "faa37cf30839ed5b0dad01b7236b594872d6acd39fd6a48bc322ef55bab8062c",
+        "ca-rule-context:u20-g-direction-library" to "20318815ccc53ea3827c22b879ba561a400c6d470160e70c23f2935d3c80a7c3",
+        "ca-rule-context:u20-g-direction-ability" to "b081223fabe312ca1ad0f26cdf46d476a7359e97d1bb72ee0a21065d72035148",
+        "ca-rule-context:u20-i-direction-birds" to "8b8356a976ddcad2ce84b5c83d03b22a94e342c9d3d059a85da9f9540a98fa85",
+        "ca-rule-context:u20-i-direction-city" to "0b1142168f9d306f64963f8e6bd5e244a301fc714f8d3adb6dea7aa8b2e781cb",
+        "ca-rule-context:u20-i-direction-weekly" to "adcc594ad7f033e607e2c5621fc73b23d645bb992d614e17471f29ca9937ef8c",
+        "ca-rule-context:u20-i-direction-round" to "b171342b5221b62065ca1666d6c51a35ca24ee5fc0408e91f80b51f18d6027bb",
     )
     fun required(itemId: String) = hashes.containsKey("ca-rule-context:$itemId")
     private fun hash(value: String) = MessageDigest.getInstance("SHA-256").digest(value.toByteArray(Charsets.UTF_8))
@@ -75,6 +81,7 @@ internal object CompleteRuleContextPins {
     }
     fun itemMatches(pack: V2CurriculumPack, item: V2CheckItem): Boolean {
         val expectedObjective = when {
+            item.id.startsWith("u20-") && "-direction-" in item.id -> "obj-u20-motion"
             item.id.startsWith("u30-") && "-native-name-" in item.id -> "obj-u30-letter-names"
             item.id.startsWith("u30-") && "-initialism-" in item.id -> "obj-u30-abbrev-examples"
             item.id.startsWith("u29-") && ("-short-agreement-" in item.id || "-adjective-function-" in item.id) -> "obj-u29-short-adjective"

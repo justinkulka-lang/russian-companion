@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit19PrefixUnit20MotionInstructionTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-13T15:58:31.041Z" hostname="d0fbcd1608d3" time="28.993">
+  <properties/>
+  <testcase name="sourceAndApplicationChainsValidateAndReviewRemainsPending" classname="dev.russiancompanion.v2.Unit19PrefixUnit20MotionInstructionTest" time="21.595"/>
+  <testcase name="completePrefixAndMotionInstructionPrecedesPracticeAndRemediation" classname="dev.russiancompanion.v2.Unit19PrefixUnit20MotionInstructionTest" time="1.083"/>
+  <testcase name="dissuadeCueUsesItsExplicitLicensedAspectPartnerWithoutAnswerLeak" classname="dev.russiancompanion.v2.Unit19PrefixUnit20MotionInstructionTest" time="0.429"/>
+  <testcase name="independentLikelihoodChecksHaveDistinctCuesAndFeatures" classname="dev.russiancompanion.v2.Unit19PrefixUnit20MotionInstructionTest" time="0.406"/>
+  <testcase name="omittedReviewDefaultsDecodeToTheSameTypedPack" classname="dev.russiancompanion.v2.Unit19PrefixUnit20MotionInstructionTest" time="4.601"/>
+  <testcase name="neutralMeaningPromptKeepsOtherTargetAndRelationRequirements" classname="dev.russiancompanion.v2.Unit19PrefixUnit20MotionInstructionTest" time="0.701"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

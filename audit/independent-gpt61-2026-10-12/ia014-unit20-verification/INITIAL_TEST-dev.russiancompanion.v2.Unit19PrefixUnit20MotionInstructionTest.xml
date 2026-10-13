@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit19PrefixUnit20MotionInstructionTest" tests="6" skipped="0" failures="1" errors="0" timestamp="2026-10-13T15:55:13.451Z" hostname="d0fbcd1608d3" time="11.881">
+  <properties/>
+  <testcase name="sourceAndApplicationChainsValidateAndReviewRemainsPending" classname="dev.russiancompanion.v2.Unit19PrefixUnit20MotionInstructionTest" time="9.28">
+    <failure message="java.lang.AssertionError: Source capability cap-u20-motion-directionality has no reviewable instruction and check chain&#10;Source capability cap-u20-motion-po-setting-out corrected intake has an unbound teaching or remediation step u20-st-teach-direction-contexts&#10;Source capability cap-u20-motion-po-setting-out corrected intake has an unbound teaching or remediation step u20-st-teach-direction-return&#10;Source capability cap-u20-motion-po-setting-out corrected intake has an unbound teaching or remediation step u20-st-rem-motion&#10;Source capability cap-u20-motion-prefixed-path corrected intake has an unbound teaching or remediation step u20-st-teach-direction-contexts&#10;Source capability cap-u20-motion-prefixed-path corrected intake has an unbound teaching or remediation step u20-st-teach-direction-return&#10;Source capability cap-u20-motion-prefixed-path corrected intake has an unbound teaching or remediation step u20-st-rem-motion&#10;Objective obj-u20-motion has no frozen native directionality application chain&#10;Unit 20 is not content-complete from a red link, general verb page, or dictionary rows alone&#10;Item u20-g-direction-library explanation does not name the shown form&#10;Item u20-g-direction-library distractor rationale does not name its competing gloss&#10;Item u20-g-direction-library distractor rationale does not name its competing gloss&#10;Item u20-g-direction-ability explanation does not name the shown form&#10;Item u20-g-direction-ability distractor rationale does not name its competing gloss&#10;Item u20-g-direction-ability distractor rationale does not name its competing gloss&#10;Item u20-i-direction-birds explanation does not name the shown form&#10;Item u20-i-direction-birds distractor rationale does not name its competing gloss&#10;Item u20-i-direction-birds distractor rationale does not name its competing gloss&#10;Item u20-i-direction-city explanation does not name the shown form&#10;Item u20-i-direction-city distractor rationale does not name its competing gloss&#10;Item u20-i-direction-city distractor rationale does not name its competing gloss&#10;Item u20-i-direction-weekly explanation does not name the shown form&#10;Item u20-i-direction-weekly distractor rationale does not name its competing gloss&#10;Item u20-i-direction-weekly distractor rationale does not name its competing gloss&#10;Item u20-i-direction-round explanation does not name the shown form&#10;Item u20-i-direction-round distractor rationale does not name its competing gloss&#10;Item u20-i-direction-round distractor rationale does not name its competing gloss" type="java.lang.AssertionError">java.lang.AssertionError: Source capability cap-u20-motion-directionality has no reviewable instruction and check chain
+Source capability cap-u20-motion-po-setting-out corrected intake has an unbound teaching or remediation step u20-st-teach-direction-contexts
+Source capability cap-u20-motion-po-setting-out corrected intake has an unbound teaching or remediation step u20-st-teach-direction-return
+Source capability cap-u20-motion-po-setting-out corrected intake has an unbound teaching or remediation step u20-st-rem-motion
+Source capability cap-u20-motion-prefixed-path corrected intake has an unbound teaching or remediation step u20-st-teach-direction-contexts
+Source capability cap-u20-motion-prefixed-path corrected intake has an unbound teaching or remediation step u20-st-teach-direction-return
+Source capability cap-u20-motion-prefixed-path corrected intake has an unbound teaching or remediation step u20-st-rem-motion
+Objective obj-u20-motion has no frozen native directionality application chain
+Unit 20 is not content-complete from a red link, general verb page, or dictionary rows alone
+Item u20-g-direction-library explanation does not name the shown form
+Item u20-g-direction-library distractor rationale does not name its competing gloss
+Item u20-g-direction-library distractor rationale does not name its competing gloss
+Item u20-g-direction-ability explanation does not name the shown form
+Item u20-g-direction-ability distractor rationale does not name its competing gloss
+Item u20-g-direction-ability distractor rationale does not name its competing gloss
+Item u20-i-direction-birds explanation does not name the shown form
+Item u20-i-direction-birds distractor rationale does not name its competing gloss
+Item u20-i-direction-birds distractor rationale does not name its competing gloss
+Item u20-i-direction-city explanation does not name the shown form
+Item u20-i-direction-city distractor rationale does not name its competing gloss
+Item u20-i-direction-city distractor rationale does not name its competing gloss
+Item u20-i-direction-weekly explanation does not name the shown form
+Item u20-i-direction-weekly distractor rationale does not name its competing gloss
+Item u20-i-direction-weekly distractor rationale does not name its competing gloss
+Item u20-i-direction-round explanation does not name the shown form
+Item u20-i-direction-round distractor rationale does not name its competing gloss
+Item u20-i-direction-round distractor rationale does not name its competing gloss
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at dev.russiancompanion.v2.Unit19PrefixUnit20MotionInstructionTest.sourceAndApplicationChainsValidateAndReviewRemainsPending(Unit19PrefixUnit20MotionInstructionTest.kt:61)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestExecutor.runRequest(JUnitTestExecutor.java:175)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestExecutor.accept(JUnitTestExecutor.java:84)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestExecutor.accept(JUnitTestExecutor.java:47)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestDefinitionProcessor.processTestDefinition(AbstractJUnitTestDefinitionProcessor.java:65)
+	at org.gradle.api.internal.tasks.testing.SuiteTestDefinitionProcessor.processTestDefinition(SuiteTestDefinitionProcessor.java:53)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.gradle.internal.dispatch.MethodInvocation.invokeOn(MethodInvocation.java:77)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:28)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:19)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:88)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.processTestDefinition(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:178)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:126)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <testcase name="completePrefixAndMotionInstructionPrecedesPracticeAndRemediation" classname="dev.russiancompanion.v2.Unit19PrefixUnit20MotionInstructionTest" time="0.183"/>
+  <testcase name="dissuadeCueUsesItsExplicitLicensedAspectPartnerWithoutAnswerLeak" classname="dev.russiancompanion.v2.Unit19PrefixUnit20MotionInstructionTest" time="0.143"/>
+  <testcase name="independentLikelihoodChecksHaveDistinctCuesAndFeatures" classname="dev.russiancompanion.v2.Unit19PrefixUnit20MotionInstructionTest" time="0.461"/>
+  <testcase name="omittedReviewDefaultsDecodeToTheSameTypedPack" classname="dev.russiancompanion.v2.Unit19PrefixUnit20MotionInstructionTest" time="1.638"/>
+  <testcase name="neutralMeaningPromptKeepsOtherTargetAndRelationRequirements" classname="dev.russiancompanion.v2.Unit19PrefixUnit20MotionInstructionTest" time="0.173"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

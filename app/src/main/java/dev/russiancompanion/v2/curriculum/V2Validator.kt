@@ -2128,6 +2128,14 @@ internal object V2Validator {
                     CompleteRuleContextPins.itemMatches(pack, it) && structureValid(pack, it).isEmpty()
             }
         }
+        if (capability.unitNumber == 20 && capability.supportedClaim == "motion-directionality") {
+            return capability.objectiveId == "obj-u20-motion" &&
+                capability.sourceId == "src-wikipedia-russian-grammar-1369617627" &&
+                capability.sourceRevision == "1369617627" &&
+                capability.sourceHash == "72b5e9d7c0791a6d33f232a67ef4670b1b13a796de487690fe4d4a646bb60e74" &&
+                spanHost.sourceHash == capability.sourceHash && spanHost.originalSourceText == capability.exactSpan &&
+                verifiedFrozen(spanHost) && Unit20DirectionalityPins.matches(pack)
+        }
         if (capability.unitNumber == 30 && capability.objectiveId == "obj-u30-letter-names") {
             return capability.sourceId == "src-wikipedia-russian-alphabet-1371795481" &&
                 capability.sourceRevision == "1371795481" && capability.supportedClaim == "letter-name-review" &&
@@ -2632,6 +2640,9 @@ internal object V2Validator {
     private fun validateGovernedChecks(pack: V2CurriculumPack, unit: V2Unit, errors: MutableList<String>) {
         val generic = "Return to the explanation. Compare the shown form with the admitted record."
         unit.objectives.filter { it.kind == "RECOGNITION" }.forEach { objective ->
+            if (objective.id == "obj-u20-motion" && !Unit20DirectionalityPins.matches(pack)) {
+                errors += "Objective ${objective.id} has no frozen native directionality application chain"
+            }
             if (Unit30LanguagePins.governs(objective.id) && !Unit30LanguagePins.matches(pack,objective)) {
                 errors += "Objective ${objective.id} has no frozen native language application chain"
             }

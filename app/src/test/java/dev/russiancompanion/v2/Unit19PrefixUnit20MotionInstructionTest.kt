@@ -34,7 +34,7 @@ class Unit19PrefixUnit20MotionInstructionTest {
     }
     @Test fun completePrefixAndMotionInstructionPrecedesPracticeAndRemediation() {
         val p = pack()
-        for ((number, slug, count) in listOf(Triple(19,"prefix-caution",3),Triple(20,"motion",5))) {
+        for ((number, slug, count) in listOf(Triple(19,"prefix-caution",3),Triple(20,"motion",7))) {
             val s = p.unit(number)!!.sessions.first { it.id == "u$number-s-$slug" }
             val teaches = s.steps.takeWhile { it.kind != "GUIDED" }.filter { it.kind == "TEACH" }
             assertEquals(count, teaches.size)

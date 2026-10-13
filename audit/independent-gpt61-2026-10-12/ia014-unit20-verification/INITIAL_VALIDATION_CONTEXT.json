@@ -1,0 +1,28 @@
+{
+  "repositoryHead": "1ce6184a5bbe894624807c066600fa51de42ace3",
+  "workingTree": "Uncommitted new applications, native helper, validator/context pins, temporary new test and updated exact teaching count.",
+  "rawCurriculumSha256": "3c33a7f671b847b82946655c3f5f05c41e87b2c30e131a829529a5f158c9e9a6",
+  "nativePinCodeSha256": "ff80c05bdab3e66ac8055576cda636457a1a58d9ed29b354c5c3ef022ade395a",
+  "command": "source /workspace/setup/android-env.sh; ./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*Unit20DirectionalityApplicationTest' --tests '*Unit19PrefixUnit20MotionInstructionTest' --max-workers=4 --console=plain",
+  "tests": 7,
+  "failures": 2,
+  "errors": 0,
+  "skipped": 0,
+  "diagnosedDefects": [
+    "New feedback lacked literal shown cues/competing option names; strict item validation rejected six new items.",
+    "Two existing corrected capabilities share the complete objective teaching chain; their old spans lacked the added teaching and expanded remediation."
+  ],
+  "correction": "Name exact cues/options, retain all original hosts and span prefixes, extend two corrected intakes with current teaching, pin new hashes, and append fresh application/teaching hosts. No validator weakening.",
+  "correctedInitial": {
+    "tests": 7,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "expanded": {
+    "tests": 15,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  }
+}
