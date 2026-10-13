@@ -11,12 +11,12 @@ Unit 8 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 1ab25bc6813963cbb3f41da92f2c4ffe8383a1ae
-- Unit content-review SHA-256: cd04cb2a10f58b72f853bf5070f7e436d65ce601b979ab8337eb1e4f0c1329c7
+- Curriculum source commit: 4295962682885f00cdcfcac0923aa213716b9cd5
+- Unit content-review SHA-256: 2c46aeb63e41b987fedf96c545a79d76451bda3263115a5ffbcfb67034063229
 - Mapping-package SHA-256: 3e6c6b7d1ed5142212fe254e14d7d6ebb9ecdf862b9dce921a415ba8e45411f1
-- Pack content-review SHA-256: a77b06817306455c0df0139bda5f47abea8d343cff2bffdcfd2dfa46e84f62fe
-- Review-package SHA-256: 1a3261e81764c9be8c770c2afa9ccea9b2f81ae0ba9215449e5f2c32e7a804d5
-- Repository source SHA-256: e37f64e0ec10d5819f7cd371cf640e1c2c293cf81aa49105a96fb2f500792e1c
+- Pack content-review SHA-256: cbcb933333bfaef0bad3a73f79386e7fd55845e6111be58209a0c2a7b80cafd9
+- Review-package SHA-256: 141fd56b2735c47541a3bd66c20e980fa6e8459f03ef6c03979782058e48180b
+- Repository source SHA-256: 99300eba8269e73d33f334de52912f6248802ec4b89add28a112e221e5019fd1
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -170,12 +170,12 @@ remediation=u8-st-rem-irregular
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 49adde990e643a56b88a5baaf190f154d6faa6182e6dbb84e1011481341caace
+- Content hash: 2ea041078c76ee9605dc8c29adc124e32971e821a0a315aec79d55f88ddfa71a
 
 title=Choose the admitted plural agreement form
 kind=RECOGNITION
 unitNumber=8
-instruction=u8-st-orient,u8-st-teach-agreement-1,u8-st-teach-agreement-2,u8-st-teach-agreement-3,u8-st-teach-agreement-4,u8-st-teach-agreement-5
+instruction=u8-st-orient,u8-st-teach-agreement-1,u8-st-teach-agreement-2,u8-st-teach-agreement-3,u8-st-teach-agreement-4,u8-st-teach-agreement-5,u8-st-teach-agreement-6
 examples=ex-u8-agreement-0,ex-u8-agreement-1,ex-or-u8-agreement-2,ex-or-u8-agreement-3,ex-or-u8-agreement-4,ex-or-u8-agreement-5,ex-or-u8-agreement-6,ex-or-u8-agreement-7
 practice=u8-st-guided-agreement-1
 checks=u8-i-agreement-1,u8-i-agreement-2,u8-i-agreement-3
@@ -933,12 +933,12 @@ remediationStepId=u8-st-rem-irregular
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 973be57984e207ac28c148fbe7789f32f3a058136aadf8a130895927db59d097
+- Content hash: dc2db700a9ca04bb31a4c1015c69ab02a3bc686cfb0479ba4e332cb91e7f2cec
 
 title=Choose the admitted plural agreement form
 estimatedMinutes=12
 objectives=obj-u8-agreement
-steps=u8-st-teach-agreement-1,u8-st-guided-agreement-1,u8-st-teach-agreement-2,u8-st-teach-agreement-3,u8-st-teach-agreement-4,u8-st-teach-agreement-5,u8-st-rem-agreement,u8-st-check-agreement
+steps=u8-st-teach-agreement-1,u8-st-teach-agreement-2,u8-st-teach-agreement-3,u8-st-teach-agreement-4,u8-st-teach-agreement-5,u8-st-teach-agreement-6,u8-st-guided-agreement-1,u8-st-rem-agreement,u8-st-check-agreement
 
 ### STEP `u8-st-teach-agreement-1`
 
@@ -948,15 +948,125 @@ steps=u8-st-teach-agreement-1,u8-st-guided-agreement-1,u8-st-teach-agreement-2,u
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e8ba2ddb51fafede054d46bac964131c96fe7e3c766b5121cd8d7f0e7455d3a9
+- Content hash: 8e2817ff42f1830d9c65d66863ad52c23a7e806fcc53bad26afc7ba3744dcf15
 
 kind=TEACH
-title=Admitted lines
-body=синие книги — the dark blue books. Наши — Our. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+title=Recognize the supplied plural modifiers
+body=синие книги — the dark blue books. Наши — Our. These supplied examples introduce plural modifiers or plural referents. This lesson asks you to recognize the listed form pairs; it does not demonstrate producing agreement for every noun or case.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
 examples=ex-u8-agreement-0,ex-u8-agreement-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u8-st-teach-agreement-2`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-agreement
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: f87d3316e0b1f80ff33967809112a8c781159a0269685dc108e97445726fcfd3
+
+kind=TEACH
+title=Read the adjective with its noun
+body=In the retained nominative example синие книги — the dark blue books, the adjective modifies a plural noun. The complete phrase provides the plural reading here; do not infer a universal noun-case interpretation from an isolated spelling.
+dominantAction=Continue
+references=ref-u610-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u8-st-teach-agreement-3`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-agreement
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: a56949657ac1477cc82df4703b8c9d81f1b2a8605a3eee8f32e48bc360764cc8
+
+kind=TEACH
+title=Compare the possessive forms
+body=мо́й and мои́ both retain the meaning my. In the supplied fields, мо́й is masculine singular nominative and мои́ is plural nominative. The requested plural is a number distinction, not a different owner or a change of English meaning.
+dominantAction=Continue
+references=ref-u610-attribution
+items=
+examples=ex-or-u8-agreement-2,ex-or-u8-agreement-3
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u8-st-teach-agreement-4`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-agreement
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 1908e64d6a8602e4437340cd623550e524dfac672e287af7ba8ead130b0d51f8
+
+kind=TEACH
+title=Work the guided adjective pair
+body=но́вый and но́вые both mean new. The supplied masculine singular nominative form is но́вый; the plural nominative is но́вые. Guided practice uses this pair. Recognize the whole form and requested number; this does not establish every case ending.
+dominantAction=Continue
+references=ref-u610-attribution
+items=
+examples=ex-or-u8-agreement-4,ex-or-u8-agreement-5
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u8-st-teach-agreement-5`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-agreement
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 44a4975d651f0b385aaee891345f8b1d2eb592170118a730202385794e8a93d3
+
+kind=TEACH
+title=Compare the demonstrative forms
+body=The dictionary groups э́та and э́ти under the same demonstrative entry labelled this. In ordinary English the plural demonstrative reading is these. The supplied feminine singular nominative form is э́та; the plural nominative form is э́ти. The plural does not have a feminine-only gender. Distinguish the source entry label from the number-sensitive English reading.
+dominantAction=Continue
+references=ref-u610-attribution
+items=
+examples=ex-or-u8-agreement-6,ex-or-u8-agreement-7
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u8-st-teach-agreement-6`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-agreement
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 14192e474205c5e39d350e76cd92b34d455b57f12743bbf1bc73bbc87a2465d8
+
+kind=TEACH
+title=Apply the distinction to a different adjective
+body=The retained nominative section supplies синий as the masculine singular form and синие in синие книги as the plural form of the same dark-blue adjective. This source prints these words without written stress; no stress mark is inserted. The independent adjective check uses this different lexeme and ending shape from the guided new/new-plural pair. Choose the supplied plural rather than repeat its singular form. These examples are bounded nominative recognition, not a rule that every adjective or every word with similar final letters changes identically.
+dominantAction=Continue
+references=ref-u610-attribution
+items=
+examples=ex-u8-agreement-0
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -984,94 +1094,6 @@ bookDirection=
 companionDirection=
 remediationStepId=u8-st-rem-agreement
 
-### STEP `u8-st-teach-agreement-2`
-
-- Objectives: obj-u8-agreement
-- Sessions: u8-s-agreement
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 0ae6fc69aa8032643ca74fdc94f77b610b85ad362fa645b80625b1227ec80d30
-
-kind=TEACH
-title=Admitted instruction
-body=the dark blue books - '''синие книги'''
-dominantAction=Continue
-references=ref-u610-attribution
-items=
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
-### STEP `u8-st-teach-agreement-3`
-
-- Objectives: obj-u8-agreement
-- Sessions: u8-s-agreement
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 4d3da9c20c878dcb24a0857388b91347f8542ad7c382f355b05cc61435904ee6
-
-kind=TEACH
-title=Admitted lines
-body=мо́й — my. мои́ — my. 
-dominantAction=Continue
-references=ref-u610-attribution
-items=
-examples=ex-or-u8-agreement-2,ex-or-u8-agreement-3
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
-### STEP `u8-st-teach-agreement-4`
-
-- Objectives: obj-u8-agreement
-- Sessions: u8-s-agreement
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: cde50575362ed205f61174a450ddbadfe426c3595064e774dd2396e653ffb6da
-
-kind=TEACH
-title=Admitted lines
-body=но́вый — new. но́вые — new. 
-dominantAction=Continue
-references=ref-u610-attribution
-items=
-examples=ex-or-u8-agreement-4,ex-or-u8-agreement-5
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
-### STEP `u8-st-teach-agreement-5`
-
-- Objectives: obj-u8-agreement
-- Sessions: u8-s-agreement
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 778067359f394e587a707e4ca4553aee89316302fa19a6cb330d276179b33f53
-
-kind=TEACH
-title=Admitted lines
-body=э́та — this. э́ти — this. 
-dominantAction=Continue
-references=ref-u610-attribution
-items=
-examples=ex-or-u8-agreement-6,ex-or-u8-agreement-7
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
 ### STEP `u8-st-rem-agreement`
 
 - Objectives: obj-u8-agreement
@@ -1080,15 +1102,25 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b3f47260b08fa1cd0d21d36f329765998f7bdd8a7cdd30c992c7b3083b899975
+- Content hash: c4a813bafca4fe8618924204c8734e807f997af3e08157a4bfa7c455be73cb96
 
 kind=REMEDIATE
 title=Remediation
-body=the dark blue books - '''синие книги'''
+body=синие книги — the dark blue books. Наши — Our. These supplied examples introduce plural modifiers or plural referents. This lesson asks you to recognize the listed form pairs; it does not demonstrate producing agreement for every noun or case.
+
+In the retained nominative example синие книги — the dark blue books, the adjective modifies a plural noun. The complete phrase provides the plural reading here; do not infer a universal noun-case interpretation from an isolated spelling.
+
+мо́й and мои́ both retain the meaning my. In the supplied fields, мо́й is masculine singular nominative and мои́ is plural nominative. The requested plural is a number distinction, not a different owner or a change of English meaning.
+
+но́вый and но́вые both mean new. The supplied masculine singular nominative form is но́вый; the plural nominative is но́вые. Guided practice uses this pair. Recognize the whole form and requested number; this does not establish every case ending.
+
+The dictionary groups э́та and э́ти under the same demonstrative entry labelled this. In ordinary English the plural demonstrative reading is these. The supplied feminine singular nominative form is э́та; the plural nominative form is э́ти. The plural does not have a feminine-only gender. Distinguish the source entry label from the number-sensitive English reading.
+
+The retained nominative section supplies синий as the masculine singular form and синие in синие книги as the plural form of the same dark-blue adjective. This source prints these words without written stress; no stress mark is inserted. The independent adjective check uses this different lexeme and ending shape from the guided new/new-plural pair. Choose the supplied plural rather than repeat its singular form. These examples are bounded nominative recognition, not a rule that every adjective or every word with similar final letters changes identically.
 dominantAction=Continue
 references=
 items=
-examples=ex-u8-agreement-0,ex-u8-agreement-1
+examples=ex-u8-agreement-0,ex-u8-agreement-1,ex-or-u8-agreement-2,ex-or-u8-agreement-3,ex-or-u8-agreement-4,ex-or-u8-agreement-5,ex-or-u8-agreement-6,ex-or-u8-agreement-7
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -2812,35 +2844,36 @@ relationParticipantIds=prov-ex-or-u8-agreement-6 | prov-ex-or-u8-agreement-7 | p
 
 - Objectives: obj-u8-agreement
 - Sessions: u8-s-agreement
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 7ad80d37e9c44c27f620b92a734e6e91ef8d0583508b29d1edb5a47292cafe5a
+- Content hash: 9717d138d58a36f7efa6dbb65a3040ded64d178aebc5403311b1bedc4980f338
 
-kind=FORM_SELECTION
+kind=CONTRAST_SELECTION
 language=en
 prompt=Which plural nominative form of the same adjective corresponds to the shown form?
-promptLetter=но́вый
-options=но́вые | но́вый
-answer=но́вые
-feedback=но́вый is the masculine singular nominative form; но́вые is the plural nominative form of the same adjective.
+promptLetter=синий
+options=синие | синий
+answer=синие
+feedback=синий is the supplied masculine singular nominative form; синие is the plural nominative form of the same dark-blue adjective. In the retained nominative example синие книги, the modifier is plural. The source supplies these words without written stress; this check recognizes this pair, not every adjective ending or case.
 objectiveId=obj-u8-agreement
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | но́вый is the masculine singular nominative form, so it does not supply the requested plural nominative form.
+distractorRationales= | синий is the supplied masculine singular form, so it does not provide the requested plural nominative form.
 testedFeature=PLURAL_AGREEMENT
-evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
-contrastSetId=u8-agreement-3
+evidenceMode=STATED_APPLICATION
+contrastSetId=u8-i-agreement-3
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-or-u8-agreement-5
-distractorSourceIds= | prov-ex-or-u8-agreement-4
-distractorDifference= | но́вый is the masculine singular nominative form, so it does not supply the requested plural nominative form.
-whyAnswerDemonstratesObjective=но́вый is the masculine singular nominative form; но́вые is the plural nominative form of the same adjective.
-contrastMembers=но́вые | но́вый
-relationKind=SAME_LEMMA_DIFFERENT_FIELD
-relationParticipantIds=prov-ex-or-u8-agreement-4 | prov-ex-or-u8-agreement-5 | prov-ex-or-u8-agreement-4
+answerSourceIds=prov-ca-u8-agreement-transfer-u8-i-agreement-3-1
+distractorSourceIds= | prov-ca-u8-agreement-transfer-u8-i-agreement-3-2
+distractorDifference= | синий is the supplied masculine singular form, so it does not provide the requested plural nominative form.
+whyAnswerDemonstratesObjective=синий is the supplied masculine singular nominative form; синие is the plural nominative form of the same dark-blue adjective. In the retained nominative example синие книги, the modifier is plural. The source supplies these words without written stress; this check recognizes this pair, not every adjective ending or case.
+contrastMembers=синие | синий
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u8-agreement-transfer-u8-i-agreement-3-0 | prov-ca-u8-agreement-transfer-u8-i-agreement-3-1 | prov-ca-u8-agreement-transfer-u8-i-agreement-3-2
+responseKind=RUSSIAN_TOKEN
 
 ### INDEPENDENT_CHECK `u8-i-availability-1`
 
@@ -5808,6 +5841,623 @@ attribution=Russian Companion content-audit research synthesis, content-audit-20
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
 sourceHash=7b6a01d3a60fbd4e910d4e073326f03e136a739a1bc6e03224b891d72662cfae
 contentHash=bbcc7b48eff209d61c0835f7ae1e847071f1350521315f037dece3717cdb5135
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-agreement-transfer-item-feedback`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fe7c30ef961a7687577f2594a0f75ae3fd1dee35a2ee9a2204101a271ace48dc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-agreement:transfer:item-feedback
+originalSourceText=Complete retained Wikibooks Adjectives4292379, especially nominative/soft-ending examples for синий and синие книги; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor attribution. Exact unaccented source words selected with existing mechanical emphasis/link-label unfolding. No generated native morphology, apostrophe-to-accent conversion, new stress or punctuation, private Penguin prose, media or new source/rights declaration. Retain the original OpenRussian50e210c4803237779cb562bc1abcea529066031c guided new/new-plural pair and independent possessive/demonstrative pairs unchanged. The independent adjective now uses a distinct lexeme and ending shape from the guided adjective. Scope is recognition of these supplied nominative singular/plural pairs, not agreement production in arbitrary sentences, every case or a universal -ний/all-adjective/short-adjective algorithm. Broad and inaccurate original source claims about all adjectives, Latin-letter ending spelling, conjugation and short-form permanence/temporariness are not adopted; the source is preserved unchanged. All current teaching precedes guided practice; remediation restores every card/example. Independently authored English2026-10-13 within content-audit-2026-10-08. Qualified source/rights/linguistic acceptance pending.
+синий is the supplied masculine singular nominative form; синие is the plural nominative form of the same dark-blue adjective. In the retained nominative example синие книги, the modifier is plural. The source supplies these words without written stress; this check recognizes this pair, not every adjective ending or case.
+shippedText=синий is the supplied masculine singular nominative form; синие is the plural nominative form of the same dark-blue adjective. In the retained nominative example синие книги, the modifier is plural. The source supplies these words without written stress; this check recognizes this pair, not every adjective ending or case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9448a901be14e333e8c7446a5ace511c44a3ec8aca938e53239f574ab8a639b0
+contentHash=ef2c111d3a83341a71395ebd58f5366c79441eec9d50ec1085e8a8ef9975efcf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-agreement-transfer-item-prompt`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4a58fc4e8e13f2e7c53bb81b6218b7e9bcec36007ad9f7aeba9a6b590f98a135
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-agreement:transfer:item-prompt
+originalSourceText=Complete retained Wikibooks Adjectives4292379, especially nominative/soft-ending examples for синий and синие книги; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor attribution. Exact unaccented source words selected with existing mechanical emphasis/link-label unfolding. No generated native morphology, apostrophe-to-accent conversion, new stress or punctuation, private Penguin prose, media or new source/rights declaration. Retain the original OpenRussian50e210c4803237779cb562bc1abcea529066031c guided new/new-plural pair and independent possessive/demonstrative pairs unchanged. The independent adjective now uses a distinct lexeme and ending shape from the guided adjective. Scope is recognition of these supplied nominative singular/plural pairs, not agreement production in arbitrary sentences, every case or a universal -ний/all-adjective/short-adjective algorithm. Broad and inaccurate original source claims about all adjectives, Latin-letter ending spelling, conjugation and short-form permanence/temporariness are not adopted; the source is preserved unchanged. All current teaching precedes guided practice; remediation restores every card/example. Independently authored English2026-10-13 within content-audit-2026-10-08. Qualified source/rights/linguistic acceptance pending.
+Which plural nominative form of the same adjective corresponds to the shown form?
+shippedText=Which plural nominative form of the same adjective corresponds to the shown form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=151a35572f2e1c3cd512315f7e067d9fdac83286e97e569f7561139b474b7509
+contentHash=357a5585c9b8542969f16cb41a54327157ad68d6e1ca3037b8512759ddabec71
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-agreement-transfer-item-rationale`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7d7dbc4810a0bcb88316de44679a9d913f7025b1372e6af46d4399417e0c505c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-agreement:transfer:item-rationale
+originalSourceText=Complete retained Wikibooks Adjectives4292379, especially nominative/soft-ending examples for синий and синие книги; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor attribution. Exact unaccented source words selected with existing mechanical emphasis/link-label unfolding. No generated native morphology, apostrophe-to-accent conversion, new stress or punctuation, private Penguin prose, media or new source/rights declaration. Retain the original OpenRussian50e210c4803237779cb562bc1abcea529066031c guided new/new-plural pair and independent possessive/demonstrative pairs unchanged. The independent adjective now uses a distinct lexeme and ending shape from the guided adjective. Scope is recognition of these supplied nominative singular/plural pairs, not agreement production in arbitrary sentences, every case or a universal -ний/all-adjective/short-adjective algorithm. Broad and inaccurate original source claims about all adjectives, Latin-letter ending spelling, conjugation and short-form permanence/temporariness are not adopted; the source is preserved unchanged. All current teaching precedes guided practice; remediation restores every card/example. Independently authored English2026-10-13 within content-audit-2026-10-08. Qualified source/rights/linguistic acceptance pending.
+синий is the supplied masculine singular form, so it does not provide the requested plural nominative form.
+shippedText=синий is the supplied masculine singular form, so it does not provide the requested plural nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=68f10e10165e8778328fcd6a43e26c265b5acfdc93ecb0617132a08e80eb1c0b
+contentHash=39c98f8ccd5e7dfa9809de42a0da149742bde108a7c1cd471b930871fd370f18
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-agreement-transfer-remediation-body`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2ce1afebf8e6e70ce1cca071a3e6099228f3c138df75d3e1374a53baec98b480
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-agreement:transfer:remediation-body
+originalSourceText=Complete retained Wikibooks Adjectives4292379, especially nominative/soft-ending examples for синий and синие книги; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor attribution. Exact unaccented source words selected with existing mechanical emphasis/link-label unfolding. No generated native morphology, apostrophe-to-accent conversion, new stress or punctuation, private Penguin prose, media or new source/rights declaration. Retain the original OpenRussian50e210c4803237779cb562bc1abcea529066031c guided new/new-plural pair and independent possessive/demonstrative pairs unchanged. The independent adjective now uses a distinct lexeme and ending shape from the guided adjective. Scope is recognition of these supplied nominative singular/plural pairs, not agreement production in arbitrary sentences, every case or a universal -ний/all-adjective/short-adjective algorithm. Broad and inaccurate original source claims about all adjectives, Latin-letter ending spelling, conjugation and short-form permanence/temporariness are not adopted; the source is preserved unchanged. All current teaching precedes guided practice; remediation restores every card/example. Independently authored English2026-10-13 within content-audit-2026-10-08. Qualified source/rights/linguistic acceptance pending.
+синие книги — the dark blue books. Наши — Our. These supplied examples introduce plural modifiers or plural referents. This lesson asks you to recognize the listed form pairs; it does not demonstrate producing agreement for every noun or case.
+
+In the retained nominative example синие книги — the dark blue books, the adjective modifies a plural noun. The complete phrase provides the plural reading here; do not infer a universal noun-case interpretation from an isolated spelling.
+
+мо́й and мои́ both retain the meaning my. In the supplied fields, мо́й is masculine singular nominative and мои́ is plural nominative. The requested plural is a number distinction, not a different owner or a change of English meaning.
+
+но́вый and но́вые both mean new. The supplied masculine singular nominative form is но́вый; the plural nominative is но́вые. Guided practice uses this pair. Recognize the whole form and requested number; this does not establish every case ending.
+
+The dictionary groups э́та and э́ти under the same demonstrative entry labelled this. In ordinary English the plural demonstrative reading is these. The supplied feminine singular nominative form is э́та; the plural nominative form is э́ти. The plural does not have a feminine-only gender. Distinguish the source entry label from the number-sensitive English reading.
+
+The retained nominative section supplies синий as the masculine singular form and синие in синие книги as the plural form of the same dark-blue adjective. This source prints these words without written stress; no stress mark is inserted. The independent adjective check uses this different lexeme and ending shape from the guided new/new-plural pair. Choose the supplied plural rather than repeat its singular form. These examples are bounded nominative recognition, not a rule that every adjective or every word with similar final letters changes identically.
+shippedText=синие книги — the dark blue books. Наши — Our. These supplied examples introduce plural modifiers or plural referents. This lesson asks you to recognize the listed form pairs; it does not demonstrate producing agreement for every noun or case.
+
+In the retained nominative example синие книги — the dark blue books, the adjective modifies a plural noun. The complete phrase provides the plural reading here; do not infer a universal noun-case interpretation from an isolated spelling.
+
+мо́й and мои́ both retain the meaning my. In the supplied fields, мо́й is masculine singular nominative and мои́ is plural nominative. The requested plural is a number distinction, not a different owner or a change of English meaning.
+
+но́вый and но́вые both mean new. The supplied masculine singular nominative form is но́вый; the plural nominative is но́вые. Guided practice uses this pair. Recognize the whole form and requested number; this does not establish every case ending.
+
+The dictionary groups э́та and э́ти under the same demonstrative entry labelled this. In ordinary English the plural demonstrative reading is these. The supplied feminine singular nominative form is э́та; the plural nominative form is э́ти. The plural does not have a feminine-only gender. Distinguish the source entry label from the number-sensitive English reading.
+
+The retained nominative section supplies синий as the masculine singular form and синие in синие книги as the plural form of the same dark-blue adjective. This source prints these words without written stress; no stress mark is inserted. The independent adjective check uses this different lexeme and ending shape from the guided new/new-plural pair. Choose the supplied plural rather than repeat its singular form. These examples are bounded nominative recognition, not a rule that every adjective or every word with similar final letters changes identically.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7aeb98e10c9ad98bff561e1027674ee83b9bcf1ed6191ba3437719e5e7ca8f46
+contentHash=7b11e0202ccc7ad409b9dd38f01a3d190a658476ad05e7c7208f73ec0e746ae0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-agreement-transfer-teach-1-body`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f56d8ce0559f10d0b01637ed582a99093274f5cee5bd45202739a5c3cecd6a80
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-agreement:transfer:teach-1-body
+originalSourceText=Complete retained Wikibooks Adjectives4292379, especially nominative/soft-ending examples for синий and синие книги; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor attribution. Exact unaccented source words selected with existing mechanical emphasis/link-label unfolding. No generated native morphology, apostrophe-to-accent conversion, new stress or punctuation, private Penguin prose, media or new source/rights declaration. Retain the original OpenRussian50e210c4803237779cb562bc1abcea529066031c guided new/new-plural pair and independent possessive/demonstrative pairs unchanged. The independent adjective now uses a distinct lexeme and ending shape from the guided adjective. Scope is recognition of these supplied nominative singular/plural pairs, not agreement production in arbitrary sentences, every case or a universal -ний/all-adjective/short-adjective algorithm. Broad and inaccurate original source claims about all adjectives, Latin-letter ending spelling, conjugation and short-form permanence/temporariness are not adopted; the source is preserved unchanged. All current teaching precedes guided practice; remediation restores every card/example. Independently authored English2026-10-13 within content-audit-2026-10-08. Qualified source/rights/linguistic acceptance pending.
+синие книги — the dark blue books. Наши — Our. These supplied examples introduce plural modifiers or plural referents. This lesson asks you to recognize the listed form pairs; it does not demonstrate producing agreement for every noun or case.
+shippedText=синие книги — the dark blue books. Наши — Our. These supplied examples introduce plural modifiers or plural referents. This lesson asks you to recognize the listed form pairs; it does not demonstrate producing agreement for every noun or case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fb01b67c16adcf156d98181230bdbbcb65fa075f2a7868412712bd268e9a0ac4
+contentHash=3654bea4754c635ba57dc64917a0675b676b9f079384c0f31582a8661bc82035
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-agreement-transfer-teach-1-title`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7cc65f2e95a70d5cc18ae83c5324b7e5645f0459346d0743f5e80b93ffd9d60a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-agreement:transfer:teach-1-title
+originalSourceText=Complete retained Wikibooks Adjectives4292379, especially nominative/soft-ending examples for синий and синие книги; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor attribution. Exact unaccented source words selected with existing mechanical emphasis/link-label unfolding. No generated native morphology, apostrophe-to-accent conversion, new stress or punctuation, private Penguin prose, media or new source/rights declaration. Retain the original OpenRussian50e210c4803237779cb562bc1abcea529066031c guided new/new-plural pair and independent possessive/demonstrative pairs unchanged. The independent adjective now uses a distinct lexeme and ending shape from the guided adjective. Scope is recognition of these supplied nominative singular/plural pairs, not agreement production in arbitrary sentences, every case or a universal -ний/all-adjective/short-adjective algorithm. Broad and inaccurate original source claims about all adjectives, Latin-letter ending spelling, conjugation and short-form permanence/temporariness are not adopted; the source is preserved unchanged. All current teaching precedes guided practice; remediation restores every card/example. Independently authored English2026-10-13 within content-audit-2026-10-08. Qualified source/rights/linguistic acceptance pending.
+Recognize the supplied plural modifiers
+shippedText=Recognize the supplied plural modifiers
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fafb83b1dd1a3f64572d26b3ce2433aebd416013d460eee1f53529bdba98c05c
+contentHash=b092bc6abd58f344775715609d2ff954c3a527286c0a3271e510561f8dcefd19
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-agreement-transfer-teach-2-body`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 609623fbbb76550f0d9e4d474c70a93f2a92dbf931a24b4b316655f0110869b2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-agreement:transfer:teach-2-body
+originalSourceText=Complete retained Wikibooks Adjectives4292379, especially nominative/soft-ending examples for синий and синие книги; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor attribution. Exact unaccented source words selected with existing mechanical emphasis/link-label unfolding. No generated native morphology, apostrophe-to-accent conversion, new stress or punctuation, private Penguin prose, media or new source/rights declaration. Retain the original OpenRussian50e210c4803237779cb562bc1abcea529066031c guided new/new-plural pair and independent possessive/demonstrative pairs unchanged. The independent adjective now uses a distinct lexeme and ending shape from the guided adjective. Scope is recognition of these supplied nominative singular/plural pairs, not agreement production in arbitrary sentences, every case or a universal -ний/all-adjective/short-adjective algorithm. Broad and inaccurate original source claims about all adjectives, Latin-letter ending spelling, conjugation and short-form permanence/temporariness are not adopted; the source is preserved unchanged. All current teaching precedes guided practice; remediation restores every card/example. Independently authored English2026-10-13 within content-audit-2026-10-08. Qualified source/rights/linguistic acceptance pending.
+In the retained nominative example синие книги — the dark blue books, the adjective modifies a plural noun. The complete phrase provides the plural reading here; do not infer a universal noun-case interpretation from an isolated spelling.
+shippedText=In the retained nominative example синие книги — the dark blue books, the adjective modifies a plural noun. The complete phrase provides the plural reading here; do not infer a universal noun-case interpretation from an isolated spelling.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7af2cf1dfe244f421ff034c544fc46fdb61db4ee27fb55c3db7732b845a4a968
+contentHash=b6d99d8207bbdfd9a84813e4f0c962840bf17613a67425f6c34c54b02c0d5745
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-agreement-transfer-teach-2-title`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7bd3dbff7a807c6ea627b9a1bb73640d45379a8c2be2210518d5d2c328b0c22c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-agreement:transfer:teach-2-title
+originalSourceText=Complete retained Wikibooks Adjectives4292379, especially nominative/soft-ending examples for синий and синие книги; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor attribution. Exact unaccented source words selected with existing mechanical emphasis/link-label unfolding. No generated native morphology, apostrophe-to-accent conversion, new stress or punctuation, private Penguin prose, media or new source/rights declaration. Retain the original OpenRussian50e210c4803237779cb562bc1abcea529066031c guided new/new-plural pair and independent possessive/demonstrative pairs unchanged. The independent adjective now uses a distinct lexeme and ending shape from the guided adjective. Scope is recognition of these supplied nominative singular/plural pairs, not agreement production in arbitrary sentences, every case or a universal -ний/all-adjective/short-adjective algorithm. Broad and inaccurate original source claims about all adjectives, Latin-letter ending spelling, conjugation and short-form permanence/temporariness are not adopted; the source is preserved unchanged. All current teaching precedes guided practice; remediation restores every card/example. Independently authored English2026-10-13 within content-audit-2026-10-08. Qualified source/rights/linguistic acceptance pending.
+Read the adjective with its noun
+shippedText=Read the adjective with its noun
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=df2e2dcc31bbcba0a57e3b779e186f72fbd914a2dd5aaf0f9232d8d20261a72d
+contentHash=ad88ad97823bad84e2202b916962d9bf991b7d6405f9ceac5c07da80c329c851
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-agreement-transfer-teach-3-body`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 84c3438b6857481672453a595249200e1d537c8488666f8240abb8f35846bd18
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-agreement:transfer:teach-3-body
+originalSourceText=Complete retained Wikibooks Adjectives4292379, especially nominative/soft-ending examples for синий and синие книги; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor attribution. Exact unaccented source words selected with existing mechanical emphasis/link-label unfolding. No generated native morphology, apostrophe-to-accent conversion, new stress or punctuation, private Penguin prose, media or new source/rights declaration. Retain the original OpenRussian50e210c4803237779cb562bc1abcea529066031c guided new/new-plural pair and independent possessive/demonstrative pairs unchanged. The independent adjective now uses a distinct lexeme and ending shape from the guided adjective. Scope is recognition of these supplied nominative singular/plural pairs, not agreement production in arbitrary sentences, every case or a universal -ний/all-adjective/short-adjective algorithm. Broad and inaccurate original source claims about all adjectives, Latin-letter ending spelling, conjugation and short-form permanence/temporariness are not adopted; the source is preserved unchanged. All current teaching precedes guided practice; remediation restores every card/example. Independently authored English2026-10-13 within content-audit-2026-10-08. Qualified source/rights/linguistic acceptance pending.
+мо́й and мои́ both retain the meaning my. In the supplied fields, мо́й is masculine singular nominative and мои́ is plural nominative. The requested plural is a number distinction, not a different owner or a change of English meaning.
+shippedText=мо́й and мои́ both retain the meaning my. In the supplied fields, мо́й is masculine singular nominative and мои́ is plural nominative. The requested plural is a number distinction, not a different owner or a change of English meaning.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ea23109fc4e52ebcbd9530290ebe3aff29cb2d10ed98a45da507fe719cd974b1
+contentHash=9b573cd8eb8dc3b7df229c5656c9df64efe41d24d3078119d29023534a03b0b5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-agreement-transfer-teach-3-title`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 441fa561c6615b3a30f086e7db90c7241c0809417cbea8d76368e0c3f7162417
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-agreement:transfer:teach-3-title
+originalSourceText=Complete retained Wikibooks Adjectives4292379, especially nominative/soft-ending examples for синий and синие книги; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor attribution. Exact unaccented source words selected with existing mechanical emphasis/link-label unfolding. No generated native morphology, apostrophe-to-accent conversion, new stress or punctuation, private Penguin prose, media or new source/rights declaration. Retain the original OpenRussian50e210c4803237779cb562bc1abcea529066031c guided new/new-plural pair and independent possessive/demonstrative pairs unchanged. The independent adjective now uses a distinct lexeme and ending shape from the guided adjective. Scope is recognition of these supplied nominative singular/plural pairs, not agreement production in arbitrary sentences, every case or a universal -ний/all-adjective/short-adjective algorithm. Broad and inaccurate original source claims about all adjectives, Latin-letter ending spelling, conjugation and short-form permanence/temporariness are not adopted; the source is preserved unchanged. All current teaching precedes guided practice; remediation restores every card/example. Independently authored English2026-10-13 within content-audit-2026-10-08. Qualified source/rights/linguistic acceptance pending.
+Compare the possessive forms
+shippedText=Compare the possessive forms
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=97b837a0277f518202d4063cdf14da224e2ffd3c9a8cf57ebc96373530109bce
+contentHash=68ab03f60d1e28c938de58343f4a045a45c1076db03de4d9c2c7507ce02fd933
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-agreement-transfer-teach-4-body`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b59ba72fac4006de283bb246e268189bf8c2cd489ed7a06dc30b3dbc74d7912b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-agreement:transfer:teach-4-body
+originalSourceText=Complete retained Wikibooks Adjectives4292379, especially nominative/soft-ending examples for синий and синие книги; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor attribution. Exact unaccented source words selected with existing mechanical emphasis/link-label unfolding. No generated native morphology, apostrophe-to-accent conversion, new stress or punctuation, private Penguin prose, media or new source/rights declaration. Retain the original OpenRussian50e210c4803237779cb562bc1abcea529066031c guided new/new-plural pair and independent possessive/demonstrative pairs unchanged. The independent adjective now uses a distinct lexeme and ending shape from the guided adjective. Scope is recognition of these supplied nominative singular/plural pairs, not agreement production in arbitrary sentences, every case or a universal -ний/all-adjective/short-adjective algorithm. Broad and inaccurate original source claims about all adjectives, Latin-letter ending spelling, conjugation and short-form permanence/temporariness are not adopted; the source is preserved unchanged. All current teaching precedes guided practice; remediation restores every card/example. Independently authored English2026-10-13 within content-audit-2026-10-08. Qualified source/rights/linguistic acceptance pending.
+но́вый and но́вые both mean new. The supplied masculine singular nominative form is но́вый; the plural nominative is но́вые. Guided practice uses this pair. Recognize the whole form and requested number; this does not establish every case ending.
+shippedText=но́вый and но́вые both mean new. The supplied masculine singular nominative form is но́вый; the plural nominative is но́вые. Guided practice uses this pair. Recognize the whole form and requested number; this does not establish every case ending.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=df7dcb7138a37322e631e360eac9a08e0474621cbd670ee0260c25619a6b595f
+contentHash=4fee0927bd52e735f6adc7b540e4974165eff0cdeb8d1bcfdd486bbb89dc35c2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-agreement-transfer-teach-4-title`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 11f0e7057c4f3bc04bfdda2ee384795b967c3e54d1830965d93535d9cbf5323f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-agreement:transfer:teach-4-title
+originalSourceText=Complete retained Wikibooks Adjectives4292379, especially nominative/soft-ending examples for синий and синие книги; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor attribution. Exact unaccented source words selected with existing mechanical emphasis/link-label unfolding. No generated native morphology, apostrophe-to-accent conversion, new stress or punctuation, private Penguin prose, media or new source/rights declaration. Retain the original OpenRussian50e210c4803237779cb562bc1abcea529066031c guided new/new-plural pair and independent possessive/demonstrative pairs unchanged. The independent adjective now uses a distinct lexeme and ending shape from the guided adjective. Scope is recognition of these supplied nominative singular/plural pairs, not agreement production in arbitrary sentences, every case or a universal -ний/all-adjective/short-adjective algorithm. Broad and inaccurate original source claims about all adjectives, Latin-letter ending spelling, conjugation and short-form permanence/temporariness are not adopted; the source is preserved unchanged. All current teaching precedes guided practice; remediation restores every card/example. Independently authored English2026-10-13 within content-audit-2026-10-08. Qualified source/rights/linguistic acceptance pending.
+Work the guided adjective pair
+shippedText=Work the guided adjective pair
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f6f0bfb27bb25600d0c35667498eac3882761895d57eb681854434069a95931d
+contentHash=89aa3f208c8b2dfda1a42a5e7964fc87064ac2b04097aa5daa14be3417aea05c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-agreement-transfer-teach-5-body`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3d080614a2e112e168cfa0407c0179a9c3598da2dcdfe12bb2d746169c88d59a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-agreement:transfer:teach-5-body
+originalSourceText=Complete retained Wikibooks Adjectives4292379, especially nominative/soft-ending examples for синий and синие книги; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor attribution. Exact unaccented source words selected with existing mechanical emphasis/link-label unfolding. No generated native morphology, apostrophe-to-accent conversion, new stress or punctuation, private Penguin prose, media or new source/rights declaration. Retain the original OpenRussian50e210c4803237779cb562bc1abcea529066031c guided new/new-plural pair and independent possessive/demonstrative pairs unchanged. The independent adjective now uses a distinct lexeme and ending shape from the guided adjective. Scope is recognition of these supplied nominative singular/plural pairs, not agreement production in arbitrary sentences, every case or a universal -ний/all-adjective/short-adjective algorithm. Broad and inaccurate original source claims about all adjectives, Latin-letter ending spelling, conjugation and short-form permanence/temporariness are not adopted; the source is preserved unchanged. All current teaching precedes guided practice; remediation restores every card/example. Independently authored English2026-10-13 within content-audit-2026-10-08. Qualified source/rights/linguistic acceptance pending.
+The dictionary groups э́та and э́ти under the same demonstrative entry labelled this. In ordinary English the plural demonstrative reading is these. The supplied feminine singular nominative form is э́та; the plural nominative form is э́ти. The plural does not have a feminine-only gender. Distinguish the source entry label from the number-sensitive English reading.
+shippedText=The dictionary groups э́та and э́ти under the same demonstrative entry labelled this. In ordinary English the plural demonstrative reading is these. The supplied feminine singular nominative form is э́та; the plural nominative form is э́ти. The plural does not have a feminine-only gender. Distinguish the source entry label from the number-sensitive English reading.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c093786ad9c006131973e7438cc56eb1b2475c696fbb4ff0adbf958e5fbaf3d5
+contentHash=c29043d2a860424103cb1853107a568409bfdf1c335561bc25f907212c0dca3b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-agreement-transfer-teach-5-title`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 889f248481bc8740b6812c8b1d97f076b2a8801c926260246bdf87dc1632d0bc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-agreement:transfer:teach-5-title
+originalSourceText=Complete retained Wikibooks Adjectives4292379, especially nominative/soft-ending examples for синий and синие книги; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor attribution. Exact unaccented source words selected with existing mechanical emphasis/link-label unfolding. No generated native morphology, apostrophe-to-accent conversion, new stress or punctuation, private Penguin prose, media or new source/rights declaration. Retain the original OpenRussian50e210c4803237779cb562bc1abcea529066031c guided new/new-plural pair and independent possessive/demonstrative pairs unchanged. The independent adjective now uses a distinct lexeme and ending shape from the guided adjective. Scope is recognition of these supplied nominative singular/plural pairs, not agreement production in arbitrary sentences, every case or a universal -ний/all-adjective/short-adjective algorithm. Broad and inaccurate original source claims about all adjectives, Latin-letter ending spelling, conjugation and short-form permanence/temporariness are not adopted; the source is preserved unchanged. All current teaching precedes guided practice; remediation restores every card/example. Independently authored English2026-10-13 within content-audit-2026-10-08. Qualified source/rights/linguistic acceptance pending.
+Compare the demonstrative forms
+shippedText=Compare the demonstrative forms
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9959b1728a64b419592ee1d2e248f01c099caf9ceafab93df8b1846bd48afbbe
+contentHash=1601ac655b891a04a810c2891035f460def87683e30f96eb7a787ced08a46721
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-agreement-transfer-teach-6-body`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 22ed96068b6e285682ac66336914d2562aec2c2437ca557c5662eaf7607c9821
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-agreement:transfer:teach-6-body
+originalSourceText=Complete retained Wikibooks Adjectives4292379, especially nominative/soft-ending examples for синий and синие книги; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor attribution. Exact unaccented source words selected with existing mechanical emphasis/link-label unfolding. No generated native morphology, apostrophe-to-accent conversion, new stress or punctuation, private Penguin prose, media or new source/rights declaration. Retain the original OpenRussian50e210c4803237779cb562bc1abcea529066031c guided new/new-plural pair and independent possessive/demonstrative pairs unchanged. The independent adjective now uses a distinct lexeme and ending shape from the guided adjective. Scope is recognition of these supplied nominative singular/plural pairs, not agreement production in arbitrary sentences, every case or a universal -ний/all-adjective/short-adjective algorithm. Broad and inaccurate original source claims about all adjectives, Latin-letter ending spelling, conjugation and short-form permanence/temporariness are not adopted; the source is preserved unchanged. All current teaching precedes guided practice; remediation restores every card/example. Independently authored English2026-10-13 within content-audit-2026-10-08. Qualified source/rights/linguistic acceptance pending.
+The retained nominative section supplies синий as the masculine singular form and синие in синие книги as the plural form of the same dark-blue adjective. This source prints these words without written stress; no stress mark is inserted. The independent adjective check uses this different lexeme and ending shape from the guided new/new-plural pair. Choose the supplied plural rather than repeat its singular form. These examples are bounded nominative recognition, not a rule that every adjective or every word with similar final letters changes identically.
+shippedText=The retained nominative section supplies синий as the masculine singular form and синие in синие книги as the plural form of the same dark-blue adjective. This source prints these words without written stress; no stress mark is inserted. The independent adjective check uses this different lexeme and ending shape from the guided new/new-plural pair. Choose the supplied plural rather than repeat its singular form. These examples are bounded nominative recognition, not a rule that every adjective or every word with similar final letters changes identically.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fc6ce0cf69f863527b791cd236e33453373b66b116e446e3c0d5029570b14a1d
+contentHash=544201083859bfaf41846bc4f8a44d4b4e02e61a95da9603a257643bfff08d39
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-agreement-transfer-teach-6-title`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 15c6e15a844a05104d87dadfde297847730e1fe1a946117b40e3fffe5fd327d9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-agreement:transfer:teach-6-title
+originalSourceText=Complete retained Wikibooks Adjectives4292379, especially nominative/soft-ending examples for синий and синие книги; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor attribution. Exact unaccented source words selected with existing mechanical emphasis/link-label unfolding. No generated native morphology, apostrophe-to-accent conversion, new stress or punctuation, private Penguin prose, media or new source/rights declaration. Retain the original OpenRussian50e210c4803237779cb562bc1abcea529066031c guided new/new-plural pair and independent possessive/demonstrative pairs unchanged. The independent adjective now uses a distinct lexeme and ending shape from the guided adjective. Scope is recognition of these supplied nominative singular/plural pairs, not agreement production in arbitrary sentences, every case or a universal -ний/all-adjective/short-adjective algorithm. Broad and inaccurate original source claims about all adjectives, Latin-letter ending spelling, conjugation and short-form permanence/temporariness are not adopted; the source is preserved unchanged. All current teaching precedes guided practice; remediation restores every card/example. Independently authored English2026-10-13 within content-audit-2026-10-08. Qualified source/rights/linguistic acceptance pending.
+Apply the distinction to a different adjective
+shippedText=Apply the distinction to a different adjective
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ea863de235f5d520fe81c3da8c0365267a389631c2359c17a662fa43f144c28d
+contentHash=5ebdc8c7577d6637499bcfb861fc4ebcce922a29c4e7846304c6a0d182e34e72
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-agreement-transfer-u8-i-agreement-3-0`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 78a9cc1c0d1e8fb8e1f08a6e7100a48d51fd040c0de324b6bafa0eb3cc5bce5f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-i-agreement-3
+originalSourceText=Complete retained Wikibooks Adjectives4292379, especially nominative/soft-ending examples for синий and синие книги; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor attribution. Exact unaccented source words selected with existing mechanical emphasis/link-label unfolding. No generated native morphology, apostrophe-to-accent conversion, new stress or punctuation, private Penguin prose, media or new source/rights declaration. Retain the original OpenRussian50e210c4803237779cb562bc1abcea529066031c guided new/new-plural pair and independent possessive/demonstrative pairs unchanged. The independent adjective now uses a distinct lexeme and ending shape from the guided adjective. Scope is recognition of these supplied nominative singular/plural pairs, not agreement production in arbitrary sentences, every case or a universal -ний/all-adjective/short-adjective algorithm. Broad and inaccurate original source claims about all adjectives, Latin-letter ending spelling, conjugation and short-form permanence/temporariness are not adopted; the source is preserved unchanged. All current teaching precedes guided practice; remediation restores every card/example. Independently authored English2026-10-13 within content-audit-2026-10-08. Qualified source/rights/linguistic acceptance pending.
+Complete raw context:
+===Soft endings===
+One rather rare exception to the above rules is if the adjective ends in the so-called 'soft' ending, '''-ний''', such as '''синий''' (dark blue). This doesn't conjugate like usual '''-ий''' endings, and instead has the following rules:
+# The ending is '''-ний''' when modifying a masculine noun. For example, the dark blue table - '''синий стол.'''
+# The ending is '''-няя''' ('nya-ah') when modifying feminine nouns. For example, the dark blue book - '''синяя книга'''
+# The ending is '''-нee''' ('nye-eh') when modifying neuter nouns. For example, the dark blue letter - '''синее письмо'''
+# The plural ending is '''-ние''' ('nee-ye'), as per usual. For example, the dark blue books - '''синие книги'''
+Context explanation:
+синий is the supplied masculine singular nominative form; синие is the plural nominative form of the same dark-blue adjective. In the retained nominative example синие книги, the modifier is plural. The source supplies these words without written stress; this check recognizes this pair, not every adjective ending or case.
+Tuple-v1:tuple-v1:1;10:синий10:синие1;10:синий
+shippedText=синий
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c2531b0635bff7a90616ae33b160e6f91ff0e5afef0f3994d58f85de360372c0
+contentHash=c65b1a8fccbf3115732e93bc6aa7ee896d431417c4f15282fa659e68025e469c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-agreement-transfer-u8-i-agreement-3-1`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6a98ada5b3d98ab3efbd6341e0c191a4278d826975a3e9e163c60a31ac4adc1c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-i-agreement-3
+originalSourceText=Complete retained Wikibooks Adjectives4292379, especially nominative/soft-ending examples for синий and синие книги; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor attribution. Exact unaccented source words selected with existing mechanical emphasis/link-label unfolding. No generated native morphology, apostrophe-to-accent conversion, new stress or punctuation, private Penguin prose, media or new source/rights declaration. Retain the original OpenRussian50e210c4803237779cb562bc1abcea529066031c guided new/new-plural pair and independent possessive/demonstrative pairs unchanged. The independent adjective now uses a distinct lexeme and ending shape from the guided adjective. Scope is recognition of these supplied nominative singular/plural pairs, not agreement production in arbitrary sentences, every case or a universal -ний/all-adjective/short-adjective algorithm. Broad and inaccurate original source claims about all adjectives, Latin-letter ending spelling, conjugation and short-form permanence/temporariness are not adopted; the source is preserved unchanged. All current teaching precedes guided practice; remediation restores every card/example. Independently authored English2026-10-13 within content-audit-2026-10-08. Qualified source/rights/linguistic acceptance pending.
+Complete raw context:
+===Soft endings===
+One rather rare exception to the above rules is if the adjective ends in the so-called 'soft' ending, '''-ний''', such as '''синий''' (dark blue). This doesn't conjugate like usual '''-ий''' endings, and instead has the following rules:
+# The ending is '''-ний''' when modifying a masculine noun. For example, the dark blue table - '''синий стол.'''
+# The ending is '''-няя''' ('nya-ah') when modifying feminine nouns. For example, the dark blue book - '''синяя книга'''
+# The ending is '''-нee''' ('nye-eh') when modifying neuter nouns. For example, the dark blue letter - '''синее письмо'''
+# The plural ending is '''-ние''' ('nee-ye'), as per usual. For example, the dark blue books - '''синие книги'''
+Context explanation:
+синий is the supplied masculine singular nominative form; синие is the plural nominative form of the same dark-blue adjective. In the retained nominative example синие книги, the modifier is plural. The source supplies these words without written stress; this check recognizes this pair, not every adjective ending or case.
+Tuple-v1:tuple-v1:1;10:синий10:синие1;10:синий
+shippedText=синие
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c2531b0635bff7a90616ae33b160e6f91ff0e5afef0f3994d58f85de360372c0
+contentHash=f6eb827345e7f8371429a0162da535ceaf5fecc606f5a4c7eeda5fa378cd1fd1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-agreement-transfer-u8-i-agreement-3-2`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 68e614f475d1875dda169ab05198bb6b4c8bd11756e83e4356c17f85c0f8d146
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-i-agreement-3
+originalSourceText=Complete retained Wikibooks Adjectives4292379, especially nominative/soft-ending examples for синий and синие книги; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor attribution. Exact unaccented source words selected with existing mechanical emphasis/link-label unfolding. No generated native morphology, apostrophe-to-accent conversion, new stress or punctuation, private Penguin prose, media or new source/rights declaration. Retain the original OpenRussian50e210c4803237779cb562bc1abcea529066031c guided new/new-plural pair and independent possessive/demonstrative pairs unchanged. The independent adjective now uses a distinct lexeme and ending shape from the guided adjective. Scope is recognition of these supplied nominative singular/plural pairs, not agreement production in arbitrary sentences, every case or a universal -ний/all-adjective/short-adjective algorithm. Broad and inaccurate original source claims about all adjectives, Latin-letter ending spelling, conjugation and short-form permanence/temporariness are not adopted; the source is preserved unchanged. All current teaching precedes guided practice; remediation restores every card/example. Independently authored English2026-10-13 within content-audit-2026-10-08. Qualified source/rights/linguistic acceptance pending.
+Complete raw context:
+===Soft endings===
+One rather rare exception to the above rules is if the adjective ends in the so-called 'soft' ending, '''-ний''', such as '''синий''' (dark blue). This doesn't conjugate like usual '''-ий''' endings, and instead has the following rules:
+# The ending is '''-ний''' when modifying a masculine noun. For example, the dark blue table - '''синий стол.'''
+# The ending is '''-няя''' ('nya-ah') when modifying feminine nouns. For example, the dark blue book - '''синяя книга'''
+# The ending is '''-нee''' ('nye-eh') when modifying neuter nouns. For example, the dark blue letter - '''синее письмо'''
+# The plural ending is '''-ние''' ('nee-ye'), as per usual. For example, the dark blue books - '''синие книги'''
+Context explanation:
+синий is the supplied masculine singular nominative form; синие is the plural nominative form of the same dark-blue adjective. In the retained nominative example синие книги, the modifier is plural. The source supplies these words without written stress; this check recognizes this pair, not every adjective ending or case.
+Tuple-v1:tuple-v1:1;10:синий10:синие1;10:синий
+shippedText=синий
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c2531b0635bff7a90616ae33b160e6f91ff0e5afef0f3994d58f85de360372c0
+contentHash=c65b1a8fccbf3115732e93bc6aa7ee896d431417c4f15282fa659e68025e469c
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -8978,6 +9628,76 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-u8-agreement-transfer-native-plural`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0956cf31b01f2f2085946111b44da8728693d6622feb73f90b96c940735377df
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Adjectives?oldid=4292379
+sourceRevision=4292379
+sourceRecordId=adjectives-independent-blue:===Soft endings===
+One rather rare exception to the above rules is if the adj
+originalSourceText====Soft endings===
+One rather rare exception to the above rules is if the adjective ends in the so-called 'soft' ending, '''-ний''', such as '''синий''' (dark blue). This doesn't conjugate like usual '''-ий''' endings, and instead has the following rules:
+# The ending is '''-ний''' when modifying a masculine noun. For example, the dark blue table - '''синий стол.'''
+# The ending is '''-няя''' ('nya-ah') when modifying feminine nouns. For example, the dark blue book - '''синяя книга'''
+# The ending is '''-нee''' ('nye-eh') when modifying neuter nouns. For example, the dark blue letter - '''синее письмо'''
+# The plural ending is '''-ние''' ('nee-ye'), as per usual. For example, the dark blue books - '''синие книги'''
+shippedText=синие
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=472f310b08dfe456837a47126e81dc2a40dc0c19551245589230eba3b43ce894
+contentHash=f6eb827345e7f8371429a0162da535ceaf5fecc606f5a4c7eeda5fa378cd1fd1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u8-agreement-transfer-native-singular`
+
+- Objectives: obj-u8-agreement
+- Sessions: u8-s-orient, u8-s-agreement
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cb6f23a918497c36a2dc37cd156807eaf0fc64eb1948d57ad74c752144034fcd
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Adjectives?oldid=4292379
+sourceRevision=4292379
+sourceRecordId=adjectives-independent-blue:===Soft endings===
+One rather rare exception to the above rules is if the adj
+originalSourceText====Soft endings===
+One rather rare exception to the above rules is if the adjective ends in the so-called 'soft' ending, '''-ний''', such as '''синий''' (dark blue). This doesn't conjugate like usual '''-ий''' endings, and instead has the following rules:
+# The ending is '''-ний''' when modifying a masculine noun. For example, the dark blue table - '''синий стол.'''
+# The ending is '''-няя''' ('nya-ah') when modifying feminine nouns. For example, the dark blue book - '''синяя книга'''
+# The ending is '''-нee''' ('nye-eh') when modifying neuter nouns. For example, the dark blue letter - '''синее письмо'''
+# The plural ending is '''-ние''' ('nee-ye'), as per usual. For example, the dark blue books - '''синие книги'''
+shippedText=синий
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=472f310b08dfe456837a47126e81dc2a40dc0c19551245589230eba3b43ce894
+contentHash=c65b1a8fccbf3115732e93bc6aa7ee896d431417c4f15282fa659e68025e469c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u8-availability-rem`
 
 - Objectives: obj-u8-availability
@@ -10085,6 +10805,7 @@ permitsAppUse=true
 - `obj-u8-agreement` INSTRUCTION `u8-st-teach-agreement-3`
 - `obj-u8-agreement` INSTRUCTION `u8-st-teach-agreement-4`
 - `obj-u8-agreement` INSTRUCTION `u8-st-teach-agreement-5`
+- `obj-u8-agreement` INSTRUCTION `u8-st-teach-agreement-6`
 - `obj-u8-agreement` EXAMPLE `ex-u8-agreement-0`
 - `obj-u8-agreement` EXAMPLE `ex-u8-agreement-1`
 - `obj-u8-agreement` EXAMPLE `ex-or-u8-agreement-2`
@@ -10209,8 +10930,6 @@ permitsAppUse=true
 - `u8-st-teach-agreement-1` EXAMPLE `ex-u8-agreement-0`
 - `u8-st-teach-agreement-1` EXAMPLE `ex-u8-agreement-1`
 - `u8-st-teach-agreement-1` REFERENCE `ref-u610-attribution`
-- `u8-st-guided-agreement-1` REMEDIATION `u8-st-rem-agreement`
-- `u8-st-guided-agreement-1` ITEM `u8-g-agreement-0`
 - `u8-st-teach-agreement-2` REFERENCE `ref-u610-attribution`
 - `u8-st-teach-agreement-3` EXAMPLE `ex-or-u8-agreement-2`
 - `u8-st-teach-agreement-3` EXAMPLE `ex-or-u8-agreement-3`
@@ -10221,8 +10940,18 @@ permitsAppUse=true
 - `u8-st-teach-agreement-5` EXAMPLE `ex-or-u8-agreement-6`
 - `u8-st-teach-agreement-5` EXAMPLE `ex-or-u8-agreement-7`
 - `u8-st-teach-agreement-5` REFERENCE `ref-u610-attribution`
+- `u8-st-teach-agreement-6` EXAMPLE `ex-u8-agreement-0`
+- `u8-st-teach-agreement-6` REFERENCE `ref-u610-attribution`
+- `u8-st-guided-agreement-1` REMEDIATION `u8-st-rem-agreement`
+- `u8-st-guided-agreement-1` ITEM `u8-g-agreement-0`
 - `u8-st-rem-agreement` EXAMPLE `ex-u8-agreement-0`
 - `u8-st-rem-agreement` EXAMPLE `ex-u8-agreement-1`
+- `u8-st-rem-agreement` EXAMPLE `ex-or-u8-agreement-2`
+- `u8-st-rem-agreement` EXAMPLE `ex-or-u8-agreement-3`
+- `u8-st-rem-agreement` EXAMPLE `ex-or-u8-agreement-4`
+- `u8-st-rem-agreement` EXAMPLE `ex-or-u8-agreement-5`
+- `u8-st-rem-agreement` EXAMPLE `ex-or-u8-agreement-6`
+- `u8-st-rem-agreement` EXAMPLE `ex-or-u8-agreement-7`
 - `u8-st-check-agreement` REMEDIATION `u8-st-rem-agreement`
 - `u8-st-check-agreement` ITEM `u8-i-agreement-1`
 - `u8-st-check-agreement` ITEM `u8-i-agreement-2`
@@ -10341,6 +11070,25 @@ permitsAppUse=true
 - `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-st-teach-availability-2-title`
 - `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-st-teach-availability-3-body`
 - `obj-u8-availability` PROVENANCE `prov-ca-rule-u8-st-teach-availability-3-title`
+- `obj-u8-agreement` PROVENANCE `prov-ca-u8-agreement-transfer-item-feedback`
+- `obj-u8-agreement` PROVENANCE `prov-ca-u8-agreement-transfer-item-prompt`
+- `obj-u8-agreement` PROVENANCE `prov-ca-u8-agreement-transfer-item-rationale`
+- `obj-u8-agreement` PROVENANCE `prov-ca-u8-agreement-transfer-remediation-body`
+- `obj-u8-agreement` PROVENANCE `prov-ca-u8-agreement-transfer-teach-1-body`
+- `obj-u8-agreement` PROVENANCE `prov-ca-u8-agreement-transfer-teach-1-title`
+- `obj-u8-agreement` PROVENANCE `prov-ca-u8-agreement-transfer-teach-2-body`
+- `obj-u8-agreement` PROVENANCE `prov-ca-u8-agreement-transfer-teach-2-title`
+- `obj-u8-agreement` PROVENANCE `prov-ca-u8-agreement-transfer-teach-3-body`
+- `obj-u8-agreement` PROVENANCE `prov-ca-u8-agreement-transfer-teach-3-title`
+- `obj-u8-agreement` PROVENANCE `prov-ca-u8-agreement-transfer-teach-4-body`
+- `obj-u8-agreement` PROVENANCE `prov-ca-u8-agreement-transfer-teach-4-title`
+- `obj-u8-agreement` PROVENANCE `prov-ca-u8-agreement-transfer-teach-5-body`
+- `obj-u8-agreement` PROVENANCE `prov-ca-u8-agreement-transfer-teach-5-title`
+- `obj-u8-agreement` PROVENANCE `prov-ca-u8-agreement-transfer-teach-6-body`
+- `obj-u8-agreement` PROVENANCE `prov-ca-u8-agreement-transfer-teach-6-title`
+- `obj-u8-agreement` PROVENANCE `prov-ca-u8-agreement-transfer-u8-i-agreement-3-0`
+- `obj-u8-agreement` PROVENANCE `prov-ca-u8-agreement-transfer-u8-i-agreement-3-1`
+- `obj-u8-agreement` PROVENANCE `prov-ca-u8-agreement-transfer-u8-i-agreement-3-2`
 - `obj-u8-spelling` PROVENANCE `prov-ca-u8-worked-adjective-feature`
 - `obj-u8-spelling` PROVENANCE `prov-ca-u8-worked-check-body`
 - `obj-u8-spelling` PROVENANCE `prov-ca-u8-worked-guided-body`
@@ -10444,6 +11192,8 @@ permitsAppUse=true
 - `obj-u8-spelling` PROVENANCE `prov-ex-u8-spelling-0-ru`
 - `obj-u8-agreement` PROVENANCE `prov-u8-agreement-rem`
 - `obj-u8-agreement` PROVENANCE `prov-u8-agreement-rem-r0`
+- `obj-u8-agreement` PROVENANCE `prov-u8-agreement-transfer-native-plural`
+- `obj-u8-agreement` PROVENANCE `prov-u8-agreement-transfer-native-singular`
 - `obj-u8-availability` PROVENANCE `prov-u8-availability-rem`
 - `obj-u8-availability` PROVENANCE `prov-u8-availability-x-0`
 - `obj-u8-availability` PROVENANCE `prov-u8-availability-x-1`
