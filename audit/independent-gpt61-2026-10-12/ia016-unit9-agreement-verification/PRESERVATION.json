@@ -1,0 +1,29 @@
+{
+  "baselineCommit": "5612180322ccf9c38a39def22f3640c7477a9d0d",
+  "oldProvenanceRecords": 6659,
+  "newPendingRecords": 24,
+  "newPrimaryNativeSelections": 3,
+  "newEnglishContextCoverageRecords": 21,
+  "allPriorProvenanceUnchanged": true,
+  "all58CapabilitiesAndSourcesRightsMappingsUnchanged": true,
+  "allOriginalExamplesUnchanged": true,
+  "allOtherUnitsUnchanged": true,
+  "allOtherItemsIncludingCorrectGuidedGenderPluralAndTwoFieldsUnchanged": true,
+  "all62PriorCanonicalPinsUnchanged": true,
+  "newPins": 1,
+  "oneIndependentMasculineNounReplaced": true,
+  "noItemsExamplesObjectivesRemoved": true,
+  "sixTeachingCardsBeforePracticeAndCompleteRemediation": true,
+  "nativeSourceWordsUnchangedAndNoStressInserted": true,
+  "deterministicBaselineReplay": true,
+  "nativePinCodeReplayByteIdentical": true,
+  "byteIdempotent": true,
+  "allNineOriginalDiagnosticDeliverableHashesUnchanged": true,
+  "rawCurriculumSha256": "5f13e8560d250ca3b3d195ebb2dccae56c8766ca165c9365f2f402af2181a44b",
+  "frozenPublicSources": {
+    "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt": "dcb20ca815c1dce735cfe57de68dc90baa0bc645489837ec50f3ec520f0a44ca"
+  },
+  "semanticAcceptance": false,
+  "productiveAgreementClaim": false,
+  "allNumeralCasesClaim": false
+}

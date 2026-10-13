@@ -1,0 +1,14 @@
+{
+  "repositoryCommit": "5612180322ccf9c38a39def22f3640c7477a9d0d",
+  "command": "source /workspace/setup/android-env.sh; ./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*Unit9AgreementTransferTest' --max-workers=4 --console=plain",
+  "scope": "ORIGINAL_SIX_ANSWER_COMPLETION_THEN_EXPECTED_DISTINCT_MASCULINE_CUE_ASSERTION_FAILURE",
+  "tests": 1,
+  "failures": 1,
+  "errors": 0,
+  "skipped": 0,
+  "exitCode": 1,
+  "timestamp": "2026-10-13T19:33:48.329Z",
+  "uncommittedTestHarness": true,
+  "rawCurriculumSha256": "049d60307f4c8ef27dae9f91be5fe31a03569684f4dd6eec5e3422df6d63f42c",
+  "xmlSha256": "26d4e096b994d9ffb4fdf6bcfab0741c513bee794771032f9e4dabae99b747b5"
+}

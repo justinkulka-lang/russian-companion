@@ -1,14 +1,18 @@
 {
   "originalDiagnosticTarget": "ebd71fd0d1226a5ce3ec9a310bb3638c3bc34fb9",
   "originalRawAssetSha256": "36d6c4b8fc55e0f8ca1d002536a0466006bd908befd57d609c609539ee42210e",
-  "currentRawAssetSha256": "049d60307f4c8ef27dae9f91be5fe31a03569684f4dd6eec5e3422df6d63f42c",
+  "currentRawAssetSha256": "5f13e8560d250ca3b3d195ebb2dccae56c8766ca165c9365f2f402af2181a44b",
   "originalLiteralFeedbackTargets": 135,
   "currentTargetsPresent": 135,
   "currentTargetsWithChangedFeedback": 135,
   "currentLiteralDoesFeedbackRows": 0,
-  "targetsWithScoredSourceChangesSinceDiagnostic": 29,
-  "all29ScoredSourceChangesMatchRetainedCompleteRuleLedgers": true,
-  "feedbackOnlyTargetsWithUnchangedScoredSourceFieldsSinceDiagnostic": 106,
+  "targetsWithScoredSourceChangesSinceDiagnostic": 30,
+  "original29ScoredSourceChangesMatchRetainedCompleteRuleLedgers": true,
+  "additionalDistinctMasculineTransferChanges": [
+    "u9-i-odindva-4"
+  ],
+  "all30ScoredSourceChangesMatchRetainedSeparateLedgers": true,
+  "feedbackOnlyTargetsWithUnchangedScoredSourceFieldsSinceDiagnostic": 105,
   "rows": [
     {
       "itemId": "u6-g-third-0",
@@ -720,14 +724,24 @@
       "itemId": "u9-i-odindva-4",
       "objectiveId": "obj-u9-odindva",
       "oldFeedback": "Does the admitted record show the governed contrast? один.",
-      "currentFeedback": "один is the masculine singular form of one and agrees with the shown word for boy in this example. одна is feminine singular instead. Match the grammatical gender of the noun in the retained counting phrase.",
+      "currentFeedback": "The supplied example один час uses masculine singular один with час. одна is the feminine singular form shown with девушка, so it does not agree with this noun here. Both forms mean one; the distinction is grammatical gender, not a different number. This recognizes the supplied counting form, not every declined case of the numeral.",
       "oldAnswer": "один",
       "currentAnswer": "один",
       "currentDistractorReasons": [
         "",
-        "одна is feminine singular instead of the masculine singular agreement required by the shown noun."
+        "одна is the feminine singular form; the supplied example with час uses masculine singular один."
       ],
-      "scoredSourceFieldsChangedSinceDiagnostic": [],
+      "scoredSourceFieldsChangedSinceDiagnostic": [
+        "promptLetter",
+        "sourceId",
+        "assessment.evidenceMode",
+        "assessment.contrastSetId",
+        "assessment.answerSourceIds",
+        "assessment.distractorSourceIds",
+        "assessment.relationKind",
+        "assessment.relationParticipantIds",
+        "assessment.responseKind"
+      ],
       "semanticAcceptance": false
     },
     {
@@ -2254,7 +2268,7 @@
     }
   ],
   "scope": "LITERAL_INVENTORY_AND_FIELD_RECONCILIATION_NOT_TEST_COUNT_OR_SEMANTIC_AUDIT",
-  "sourceTupleExplanation": "Changes since the diagnostic include separately retained context/cue and complete-rule corrections. Individual feedback-only batches preserve their own baseline scored/source tuples; see each correction ledger and verification manifest. This report does not relabel those earlier changes as feedback-only.",
+  "sourceTupleExplanation": "Changes since the diagnostic include 29 separately retained context/cue and complete-rule corrections plus one newly ledgered Unit 9 distinct masculine-noun application. Earlier 106/29 receipts remain historical; the current split is 105/30. Individual feedback-only batches preserve their own baseline scored/source tuples; see each correction ledger and verification manifest. This report does not relabel those earlier changes as feedback-only.",
   "remaining": "Independent semantic/source/rights verification, broader feedback/teaching/remediation review, IA012 category cues, IA016 duplicates and other findings remain open.",
   "formalAcceptance": false,
   "publicRelease": "NOT_APPROVED"
