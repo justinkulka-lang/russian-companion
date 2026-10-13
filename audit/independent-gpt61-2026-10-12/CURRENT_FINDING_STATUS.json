@@ -198,19 +198,17 @@
       "findingId": "IA016",
       "producerSeverity": "MEDIUM",
       "producerStatus": "OPEN",
-      "engineeringDisposition": "PARTIAL_UNIT17_UNIT8_UNIT9_AND_UNIT21_FIXES_PENDING_INDEPENDENT_VERIFICATION_OTHER_GROUPS_OPEN",
+      "engineeringDisposition": "PARTIAL_UNIT17_UNIT8_UNIT9_UNIT21_AND_UNIT24_FIXES_PENDING_INDEPENDENT_VERIFICATION_OTHER_GROUPS_OPEN",
       "formalAcceptance": false,
-      "currentExactSameUnitGroups": 6,
+      "currentExactSameUnitGroups": 5,
       "inventoryPath": "IA016_CURRENT_DUPLICATE_INVENTORY.json",
       "continuationPath": "IA016_INDEPENDENT_TRANSFER_PENDING.md",
-      "implementationCommit": "f47b8649cc72425d3b2854a2dadccdc89c17e617",
-      "evidencePath": "ia016-unit21-research-verification/FINAL_VERIFICATION_MANIFEST.json",
+      "implementationCommit": "db323d1a07613846a088cd44cb9f2b72d24753c9",
+      "evidencePath": "ia016-unit24-context-verification/FINAL_VERIFICATION_MANIFEST.json",
       "supplementalEvidencePath": "ia016-unit17-verification/SUPPLEMENTAL_VERIFICATION_MANIFEST.json",
-      "coverageScope": "Distinct supplied direct-object reflexive context Он поранил себя versus guided Я люблю́ себя́. Correct guided myself and independent wife objects unchanged. Three cards before practice/full original-example remediation. Supplied recognition, not unrestricted productive grammar/all cases.",
-      "newIndependentItemIds": [
-        "u21-i-object-reference-2"
-      ],
-      "newGuidedItemId": "u17-g-question-apple",
+      "coverageScope": "Distinct introductory guided shop subject-focus source example; both correct independent persuasion items unchanged. Original guided persuasion item optional/non-gating with teaching. Three cards/full remediation. Required independent evidence remains two supplied persuasion readings; no independent subject-focus or productive word-order mastery claim.",
+      "newIndependentItemIds": [],
+      "newGuidedItemId": "u24-g-context-subject-focus",
       "optionalVocabularyItemIds": [
         "u17-g-clock-0",
         "u17-i-clock-1",
@@ -253,13 +251,27 @@
           "independentItemId": "u21-i-object-reference-2",
           "guidedItemId": "u21-g-object-reference-0",
           "formalAcceptance": false
+        },
+        "unit24Context": {
+          "implementationCommit": "db323d1a07613846a088cd44cb9f2b72d24753c9",
+          "evidencePath": "ia016-unit24-context-verification/FINAL_VERIFICATION_MANIFEST.json",
+          "unchangedIndependentItemIds": [
+            "u24-i-word-order-contrast-1",
+            "u24-i-word-order-contrast-2"
+          ],
+          "guidedItemId": "u24-g-context-subject-focus",
+          "optionalReferenceItemId": "u24-g-word-order-contrast-0",
+          "independentSubjectFocusClaim": false,
+          "formalAcceptance": false
         }
       },
       "currentExactInventoryRoleScope": "GATING_RECOGNITION_GUIDED_AND_INDEPENDENT",
       "additionalSameRoleGroupsOutsideInventoryCount": 4,
       "allNumeralCasesClaim": false,
       "productiveReflexiveClaim": false,
-      "allPronounCasesClaim": false
+      "allPronounCasesClaim": false,
+      "productiveWordOrderClaim": false,
+      "independentSubjectFocusClaim": false
     },
     {
       "findingId": "IA017",
@@ -280,29 +292,29 @@
   "semanticAcceptancePromoted": false,
   "physicalDeviceAcceptance": "OUTSTANDING",
   "release": "NOT_APPROVED",
-  "latestValidatorImplementationCommit": "f47b8649cc72425d3b2854a2dadccdc89c17e617",
-  "latestSourceBindingCheckpoint": "e1ed0b2d6bb4b5056c256145f1ef57fc6ff02eab",
+  "latestValidatorImplementationCommit": "db323d1a07613846a088cd44cb9f2b72d24753c9",
+  "latestSourceBindingCheckpoint": "ee5bf94b2b2892e8ad9a30408b1a30b8cab81826",
   "remainingSourceReviewPointers": [
     "IA007_SOURCE_REVIEW_PENDING.md",
     "IA008_SOURCE_REVIEW_PENDING.md"
   ],
   "firstBatchImplementationCommit": "4f5cb8024d3f68a37052fdf85b5755bffa2a0904",
   "firstBatchPacketCheckpoint": "49af91a0f5578c63a3b9b98bbe975f40d2758fcc",
-  "latestCurriculumImplementationCommit": "f47b8649cc72425d3b2854a2dadccdc89c17e617",
+  "latestCurriculumImplementationCommit": "db323d1a07613846a088cd44cb9f2b72d24753c9",
   "acceptanceOrder": [
     "FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
     "PHYSICAL_DEVICE_ACCEPTANCE_LAST"
   ],
   "physicalDeviceEvidenceRequestTiming": "AFTER_FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
-  "latestAppImplementationCommit": "f47b8649cc72425d3b2854a2dadccdc89c17e617",
-  "latestVerifiedRepositoryCommit": "849bf35606c0588aa460db96143562b6c9a4a171",
+  "latestAppImplementationCommit": "db323d1a07613846a088cd44cb9f2b72d24753c9",
+  "latestVerifiedRepositoryCommit": "ee5bf94b2b2892e8ad9a30408b1a30b8cab81826",
   "latestResearchDiagnosticRepositoryCommit": "0edaa0fc635b3579823f7b352f52fa79a675db3d",
   "latestSupplementalVerifiedRepositoryCommit": "409a9e87bd17174e6340fc896b7576115d30a69a",
-  "latestFocusedIntegrationCommit": "e1ed0b2d6bb4b5056c256145f1ef57fc6ff02eab",
-  "latestFocusedIntegrationPassed": 31,
-  "latestFocusedIntegrationFailures": 1,
+  "latestFocusedIntegrationCommit": "ee5bf94b2b2892e8ad9a30408b1a30b8cab81826",
+  "latestFocusedIntegrationPassed": 33,
+  "latestFocusedIntegrationFailures": 0,
   "latestCorrectedTargetPassed": 1,
-  "latestFocusedIntegrationScope": "32_SELECTED_METHODS_31_PASS_ONE_FAIL_THEN_ONE_TARGET_PASS_16_CLASSES_NOT_SINGLE_SUITE",
-  "latestCorrectedTargetBatch": "IA016_UNIT21_HISTORICAL_INTAKE_AND_NEW14_SEPARATE_VALIDATION",
-  "latestFocusedVerificationUniquePassingMethods": 32
+  "latestFocusedIntegrationScope": "33_SELECTED_TESTS_16_CLASSES_SINGLE_FOCUSED_RUN_NOT_COMPLETE_SUITE",
+  "latestCorrectedTargetBatch": "IA016_UNIT21_HISTORICAL_NOT_THIS_UNIT24_RUN",
+  "latestFocusedVerificationUniquePassingMethods": 33
 }
