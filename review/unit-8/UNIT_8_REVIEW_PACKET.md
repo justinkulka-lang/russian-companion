@@ -11,12 +11,12 @@ Unit 8 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 4295962682885f00cdcfcac0923aa213716b9cd5
-- Unit content-review SHA-256: 2c46aeb63e41b987fedf96c545a79d76451bda3263115a5ffbcfb67034063229
+- Curriculum source commit: 4a67bce3a8c94efd7e63f49d911f91746376ecb2
+- Unit content-review SHA-256: 4e96407d31d4af7665321b509f83ce7508ccf510cf7f90d91ed5e4ba319088f8
 - Mapping-package SHA-256: 3e6c6b7d1ed5142212fe254e14d7d6ebb9ecdf862b9dce921a415ba8e45411f1
-- Pack content-review SHA-256: b9d52499458689e22ebecbf8130d13dcd2201e012727e43d233a358b2fe36ba3
-- Review-package SHA-256: 141fd56b2735c47541a3bd66c20e980fa6e8459f03ef6c03979782058e48180b
-- Repository source SHA-256: eb6510486092f5b91be3ddc84ed86fc372dc66cda223afcd8205495d62a232fd
+- Pack content-review SHA-256: 8569712c2395dfc04f56c6200f21a9e6e33575e3b65d06ee1b5eb50ae2c6a250
+- Review-package SHA-256: 3603f8aaf56d36a5856bfe960fbbf7de936213578fd6422c0d4a0c61d6358c19
+- Repository source SHA-256: 9e681236d40ae5ec5fc77a1a64dc9685f2c777ae9c6e4fa7691a0b07f39092ff
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -113,9 +113,9 @@ tutorOptional=true
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b72e16579f46b53c7ad7f5f357eb069d4894fbdf05cc8c944c837110a4e4c5a0
+- Content hash: 9d6934a143dc26de2bcff97b538157fbe9fd5d0340c8f681e7e76f20095cd4ac
 
-title=Choose the admitted plural form
+title=Recognize supplied singular and plural nominative noun forms
 kind=RECOGNITION
 unitNumber=8
 instruction=u8-st-orient,u8-st-teach-plural-1,u8-st-teach-plural-2,u8-st-teach-plural-3,u8-st-teach-plural-4,u8-st-teach-plural-5,u8-st-teach-plural-6,u8-st-teach-plural-7,u8-st-teach-plural-8
@@ -264,12 +264,12 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 89b6774eb2a4d6f130e36823f12ad1ee6c1756561e47be62a8f8424a12de3a5f
+- Content hash: 3e6891929ec1cbbd79ef9d72532433e312ea388b90cb5fad9e5cbfeccc7c0f75
 
 title=Choose the admitted plural form
 estimatedMinutes=12
 objectives=obj-u8-plural
-steps=u8-st-teach-plural-1,u8-st-guided-plural-1,u8-st-teach-plural-2,u8-st-teach-plural-3,u8-st-teach-plural-4,u8-st-teach-plural-5,u8-st-teach-plural-6,u8-st-teach-plural-7,u8-st-teach-plural-8,u8-st-rem-plural,u8-st-check-plural
+steps=u8-st-teach-plural-1,u8-st-teach-plural-2,u8-st-teach-plural-3,u8-st-teach-plural-4,u8-st-teach-plural-5,u8-st-teach-plural-6,u8-st-teach-plural-7,u8-st-teach-plural-8,u8-st-guided-plural-1,u8-st-rem-plural,u8-st-check-plural
 
 ### STEP `u8-st-teach-plural-1`
 
@@ -279,11 +279,11 @@ steps=u8-st-teach-plural-1,u8-st-guided-plural-1,u8-st-teach-plural-2,u8-st-teac
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: cbe8cb1e3cc78933b96ce8ef44986638978ab624021df36044b9d9f40bb29975
+- Content hash: f3932657cd7a794954fa1082c45c65445bff36f6af012925a1bbf8452492c397
 
 kind=TEACH
-title=Admitted lines
-body=сто́л — table. столы́ — table. 
+title=Distinguish one table from tables
+body=сто́л is singular nominative; столы́ is plural nominative. In the selected table sense, the plural refers to tables. The English notes beside these examples are dictionary labels, not plural English translations or complete sentences. Choose the plural form when the question requests plural nominative. Both the ending and the supplied stress matter; do not insert a new stress pattern.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -293,28 +293,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u8-st-guided-plural-1`
-
-- Objectives: obj-u8-plural
-- Sessions: u8-s-plural
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 26f13e9342a8d4d24a3323976dbc84c6a120432198429f2b827c3eeb5501a6b9
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u8-g-plural-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u8-st-rem-plural
-
 ### STEP `u8-st-teach-plural-2`
 
 - Objectives: obj-u8-plural
@@ -323,11 +301,11 @@ remediationStepId=u8-st-rem-plural
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 066ebfcd6fffe444abaf357506b8f5de01489e95f8b55798523494637b6707f9
+- Content hash: 83427d27ff3dc4389a9325676a30b7beead2e12137f368e43fc008dd030979bd
 
 kind=TEACH
-title=Admitted instruction
-body=There's no 'masculine plural' and 'feminine plural' - there's just, 'plural'.
+title=Keep lexical gender separate from plural agreement
+body=These checks select supplied nominative plural noun forms. Each noun retains its dictionary gender; plural adjective agreement does not require separate masculine, feminine and neuter plural endings. The source’s single plural agreement category is not a claim that nouns lose lexical gender. Gender alone is not a complete algorithm for unfamiliar plural endings or stress. Learn these supplied pairs rather than applying them to every noun.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -345,11 +323,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 790fddec282061c12773f596ae09a4764844e3d30d5e8e821c8debfb761916a7
+- Content hash: e451d362e2c843cc3c92b6506ba0933ce5667cf944be90725e87590a57c961eb
 
 kind=TEACH
-title=Admitted lines
-body=го́род — town. города́ — town. 
+title=Recognize the town pair
+body=го́род is singular nominative; города́ is plural nominative in this supplied pair. Select the latter for towns. The plural ending differs from the table pair and its supplied stress is on the final syllable. These patterns are word-specific recognition evidence, not permission to generate an unlisted form.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -367,11 +345,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c879c6bf35f230105c98d84fe8dd777fd50c76ecc773d0f7d8c7ca7d4ae26d70
+- Content hash: db84b1f7a5bbdd6b52dc0aa352918146b87ec69dd7b00397f552b5a3bc1a0e9a
 
 kind=TEACH
-title=Admitted lines
-body=кни́га — book. кни́ги — book. 
+title=Recognize the book pair and its spelling
+body=кни́га is singular nominative; кни́ги is plural nominative. Select the latter for books. The supplied plural retains its stress. Its final vowel follows the stem’s last consonant, one of the seven spelling-rule letters taught in the later spelling session. This same correct book pair is reused there as reinforcement; earlier independent credit does not replace that later objective’s checks.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -389,11 +367,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5a3448a229a5562c44783e36d087492f080f2744112e6cd218237c3f7fe2ac84
+- Content hash: ea37d21d822c301109f1f87a46a166e17ed5dcc949b84f211b7f2d553f82af23
 
 kind=TEACH
-title=Admitted lines
-body=окно́ — window. о́кна — window. 
+title=Recognize the window pair and shifted stress
+body=окно́ is singular nominative; о́кна is plural nominative in the supplied dictionary pair. Select the latter for windows. Notice the supplied stress moves to the first syllable. An ending-only guess would lose part of the taught form; do not invent another accent or treat this pair as every neuter noun’s algorithm.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -411,11 +389,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ff27deae73e5f3fe914228cc68e95f71275312e0a9feded3921d761da260eb71
+- Content hash: 8994468a27ef5b3999862e1fca95169e3ee7ee53cad288373675b48c737cd9a6
 
 kind=TEACH
-title=Admitted lines
-body=ма́ма — mom. ма́мы — mom. 
+title=Recognize the mom pair
+body=ма́ма is singular nominative; ма́мы is plural nominative. Select the latter for moms in the supplied sense. The ending changes while the supplied stress stays in place. A feminine dictionary label alone does not prove every feminine noun has this ending.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -433,11 +411,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5371e2b96f75da7004fcecd27d2621a5efd20300719b7c834c6107f6d466e1e5
+- Content hash: b50a9c6ea90d6fc867a3ecedfc694b3225e7ae5118a1c7ed72afd49e055119b0
 
 kind=TEACH
-title=Admitted lines
-body=до́м — house. дома́ — house. 
+title=Recognize the house pair
+body=до́м is singular nominative; дома́ is plural nominative in the supplied house sense. Select the latter for houses. Preserve the source stress shift. The dictionary’s English house/home labels identify a sense; they are not a plural translation of the Russian form.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -455,11 +433,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: adaf74af6dec33c23baf6a12286abf8a179103f51114754d6ebf04ab440100e7
+- Content hash: 39ddb510e3c0c04d240bdde5c6cd71ce8367a6ae3c1762ff2252f75043fba0a5
 
 kind=TEACH
-title=Admitted lines
-body=сло́во — word. слова́ — word. 
+title=Recognize the word pair within the taught scope
+body=сло́во is singular nominative; слова́ is plural nominative in the supplied word sense. Select the latter for words. Preserve its final stress. The seven pairs in this lesson cover several endings and stress patterns, but do not establish an unrestricted productive plural algorithm or meanings in every case. A missed choice returns to all cards and fourteen original worked forms.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -469,6 +447,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u8-st-guided-plural-1`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-plural
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: f09da71659afdc14c1409ab584f40b724ff68d4d0fb31cccfa2f5bcf9ec23e88
+
+kind=GUIDED
+title=Guided practice
+body=Choose the supplied nominative plural form. A missed answer returns to every teaching card and worked pair.
+dominantAction=Continue
+references=
+items=u8-g-plural-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u8-st-rem-plural
+
 ### STEP `u8-st-rem-plural`
 
 - Objectives: obj-u8-plural
@@ -477,15 +477,29 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1a075c0055e9d0d04afec83ae8537ba681f953c8edea08ab6ff989380016bc4b
+- Content hash: b4d99fe6d94dda68097db61305e287f140ec1a38193fe3022eb715a00508612c
 
 kind=REMEDIATE
-title=Remediation
-body=There's no 'masculine plural' and 'feminine plural' - there's just, 'plural'.
+title=Review all seven supplied nominative pairs
+body=сто́л is singular nominative; столы́ is plural nominative. In the selected table sense, the plural refers to tables. The English notes beside these examples are dictionary labels, not plural English translations or complete sentences. Choose the plural form when the question requests plural nominative. Both the ending and the supplied stress matter; do not insert a new stress pattern.
+
+These checks select supplied nominative plural noun forms. Each noun retains its dictionary gender; plural adjective agreement does not require separate masculine, feminine and neuter plural endings. The source’s single plural agreement category is not a claim that nouns lose lexical gender. Gender alone is not a complete algorithm for unfamiliar plural endings or stress. Learn these supplied pairs rather than applying them to every noun.
+
+го́род is singular nominative; города́ is plural nominative in this supplied pair. Select the latter for towns. The plural ending differs from the table pair and its supplied stress is on the final syllable. These patterns are word-specific recognition evidence, not permission to generate an unlisted form.
+
+кни́га is singular nominative; кни́ги is plural nominative. Select the latter for books. The supplied plural retains its stress. Its final vowel follows the stem’s last consonant, one of the seven spelling-rule letters taught in the later spelling session. This same correct book pair is reused there as reinforcement; earlier independent credit does not replace that later objective’s checks.
+
+окно́ is singular nominative; о́кна is plural nominative in the supplied dictionary pair. Select the latter for windows. Notice the supplied stress moves to the first syllable. An ending-only guess would lose part of the taught form; do not invent another accent or treat this pair as every neuter noun’s algorithm.
+
+ма́ма is singular nominative; ма́мы is plural nominative. Select the latter for moms in the supplied sense. The ending changes while the supplied stress stays in place. A feminine dictionary label alone does not prove every feminine noun has this ending.
+
+до́м is singular nominative; дома́ is plural nominative in the supplied house sense. Select the latter for houses. Preserve the source stress shift. The dictionary’s English house/home labels identify a sense; they are not a plural translation of the Russian form.
+
+сло́во is singular nominative; слова́ is plural nominative in the supplied word sense. Select the latter for words. Preserve its final stress. The seven pairs in this lesson cover several endings and stress patterns, but do not establish an unrestricted productive plural algorithm or meanings in every case. A missed choice returns to all cards and fourteen original worked forms.
 dominantAction=Continue
 references=
 items=
-examples=ex-or-u8-plural-0,ex-or-u8-plural-1
+examples=ex-or-u8-plural-0,ex-or-u8-plural-1,ex-or-u8-plural-2,ex-or-u8-plural-3,ex-or-u8-plural-4,ex-or-u8-plural-5,ex-or-u8-plural-6,ex-or-u8-plural-7,ex-or-u8-plural-8,ex-or-u8-plural-9,ex-or-u8-plural-10,ex-or-u8-plural-11,ex-or-u8-plural-12,ex-or-u8-plural-13
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -499,11 +513,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: abcba5d179a63751222235bf2e940e215a0df7094d38c64f4a7dcc61214ab67c
+- Content hash: eeda0fa2338131158960a0b0c1b141576495fe543b2ab47ed7ee80f5905ebc6b
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Choose the supplied nominative plural form. A missed answer returns to every teaching card and worked pair.
 dominantAction=Continue
 references=
 items=u8-i-plural-1,u8-i-plural-2,u8-i-plural-3,u8-i-plural-4,u8-i-plural-5,u8-i-plural-6
@@ -6464,6 +6478,664 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-ca-u8-plural-instruction-0-body`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1b4abf1fab5f00dda43ddec632ecf0d48f65f8b1da607a88b4585f71c1c28b27
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:instruction:0-body
+originalSourceText=Complete frozen OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c header and seven selected full rows, sg_nom/pl_nom/gender/English dictionary labels. Existing field-bound native records and apostrophe-to-combining-acute formatting unchanged. Existing CC BY-SA4.0 contributor/rights route retained. Wikibooks Adjectives4292379 complete nominative agreement/spelling context supplies plural adjective agreement regardless of noun gender. Broad all-ending/soft-adjective generalizations excluded. Independent English,2026-10-13; bounded recognition of seven supplied nominative pairs, not unrestricted formation/all cases/unseen or productive mastery. Dictionary English lemma labels are not plural sentence translations. No new Russian or private Penguin prose; qualified source/rights/semantic approval pending.
+сто́л is singular nominative; столы́ is plural nominative. In the selected table sense, the plural refers to tables. The English notes beside these examples are dictionary labels, not plural English translations or complete sentences. Choose the plural form when the question requests plural nominative. Both the ending and the supplied stress matter; do not insert a new stress pattern.
+shippedText=сто́л is singular nominative; столы́ is plural nominative. In the selected table sense, the plural refers to tables. The English notes beside these examples are dictionary labels, not plural English translations or complete sentences. Choose the plural form when the question requests plural nominative. Both the ending and the supplied stress matter; do not insert a new stress pattern.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=84c3190315e4f51c20fe3a30217adf8b7ada1b56be9f731e2641fb8db8ad4988
+contentHash=8dd0a9c7e78425ba7b900dc8d799000bd339fe4bac307b51936d19fa3954355c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-plural-instruction-0-title`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c6611d36e1bb41d52028cb551b2e2359b04be89833da4f6baa1d447e3a0559e9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:instruction:0-title
+originalSourceText=Complete frozen OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c header and seven selected full rows, sg_nom/pl_nom/gender/English dictionary labels. Existing field-bound native records and apostrophe-to-combining-acute formatting unchanged. Existing CC BY-SA4.0 contributor/rights route retained. Wikibooks Adjectives4292379 complete nominative agreement/spelling context supplies plural adjective agreement regardless of noun gender. Broad all-ending/soft-adjective generalizations excluded. Independent English,2026-10-13; bounded recognition of seven supplied nominative pairs, not unrestricted formation/all cases/unseen or productive mastery. Dictionary English lemma labels are not plural sentence translations. No new Russian or private Penguin prose; qualified source/rights/semantic approval pending.
+Distinguish one table from tables
+shippedText=Distinguish one table from tables
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=464411052ff6e79843f7466296919d20803529685ba3db86f4171d80f40f26ca
+contentHash=2ca3c4a26de5aed89c244c150d2dff9a34db668b4bbaed4723d4450fc3712bd7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-plural-instruction-1-body`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0471cfeff056f8029d913fc479dc8a29307b8dc66da55d9a0fbf143b762ad5e6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:instruction:1-body
+originalSourceText=Complete frozen OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c header and seven selected full rows, sg_nom/pl_nom/gender/English dictionary labels. Existing field-bound native records and apostrophe-to-combining-acute formatting unchanged. Existing CC BY-SA4.0 contributor/rights route retained. Wikibooks Adjectives4292379 complete nominative agreement/spelling context supplies plural adjective agreement regardless of noun gender. Broad all-ending/soft-adjective generalizations excluded. Independent English,2026-10-13; bounded recognition of seven supplied nominative pairs, not unrestricted formation/all cases/unseen or productive mastery. Dictionary English lemma labels are not plural sentence translations. No new Russian or private Penguin prose; qualified source/rights/semantic approval pending.
+These checks select supplied nominative plural noun forms. Each noun retains its dictionary gender; plural adjective agreement does not require separate masculine, feminine and neuter plural endings. The source’s single plural agreement category is not a claim that nouns lose lexical gender. Gender alone is not a complete algorithm for unfamiliar plural endings or stress. Learn these supplied pairs rather than applying them to every noun.
+shippedText=These checks select supplied nominative plural noun forms. Each noun retains its dictionary gender; plural adjective agreement does not require separate masculine, feminine and neuter plural endings. The source’s single plural agreement category is not a claim that nouns lose lexical gender. Gender alone is not a complete algorithm for unfamiliar plural endings or stress. Learn these supplied pairs rather than applying them to every noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f58b97bdc127a34e1d947add2d5a331b5b72ce0a26b51b7f8a7363dfab890676
+contentHash=17371f9b9a9c8e84f0c525369f0b1e909d4988273b47e691ed33ae13ebfbf1de
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-plural-instruction-1-title`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 016b6d3804175abe3ae5ce5d53bbdf515bf7074856373f15a1087d276571474e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:instruction:1-title
+originalSourceText=Complete frozen OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c header and seven selected full rows, sg_nom/pl_nom/gender/English dictionary labels. Existing field-bound native records and apostrophe-to-combining-acute formatting unchanged. Existing CC BY-SA4.0 contributor/rights route retained. Wikibooks Adjectives4292379 complete nominative agreement/spelling context supplies plural adjective agreement regardless of noun gender. Broad all-ending/soft-adjective generalizations excluded. Independent English,2026-10-13; bounded recognition of seven supplied nominative pairs, not unrestricted formation/all cases/unseen or productive mastery. Dictionary English lemma labels are not plural sentence translations. No new Russian or private Penguin prose; qualified source/rights/semantic approval pending.
+Keep lexical gender separate from plural agreement
+shippedText=Keep lexical gender separate from plural agreement
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=834c191f4852333da14e2e1b21ee2e54a15ca93ab693d7495beea228a137c7b9
+contentHash=5e05710eedc609e7e00d3742a44ffaa5fc154d3234cd1645ce2eaeba9378bb1f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-plural-instruction-2-body`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 20ff0cff551522a878d3a14b26705d6e3c4af8b3a623ddf1df7f23910a2569e7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:instruction:2-body
+originalSourceText=Complete frozen OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c header and seven selected full rows, sg_nom/pl_nom/gender/English dictionary labels. Existing field-bound native records and apostrophe-to-combining-acute formatting unchanged. Existing CC BY-SA4.0 contributor/rights route retained. Wikibooks Adjectives4292379 complete nominative agreement/spelling context supplies plural adjective agreement regardless of noun gender. Broad all-ending/soft-adjective generalizations excluded. Independent English,2026-10-13; bounded recognition of seven supplied nominative pairs, not unrestricted formation/all cases/unseen or productive mastery. Dictionary English lemma labels are not plural sentence translations. No new Russian or private Penguin prose; qualified source/rights/semantic approval pending.
+го́род is singular nominative; города́ is plural nominative in this supplied pair. Select the latter for towns. The plural ending differs from the table pair and its supplied stress is on the final syllable. These patterns are word-specific recognition evidence, not permission to generate an unlisted form.
+shippedText=го́род is singular nominative; города́ is plural nominative in this supplied pair. Select the latter for towns. The plural ending differs from the table pair and its supplied stress is on the final syllable. These patterns are word-specific recognition evidence, not permission to generate an unlisted form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=dafac8033dba5cda2a748de72bf441388b429c76090541c03184155ae1406f70
+contentHash=f5043c686d4f6a0e32d6d2937ae572d5a010fc84426fe71150d259a41b172ad9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-plural-instruction-2-title`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6e466b6578efd63dc50c648bb56b3c7b2b2f46039d1434a11a8a894823da1b39
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:instruction:2-title
+originalSourceText=Complete frozen OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c header and seven selected full rows, sg_nom/pl_nom/gender/English dictionary labels. Existing field-bound native records and apostrophe-to-combining-acute formatting unchanged. Existing CC BY-SA4.0 contributor/rights route retained. Wikibooks Adjectives4292379 complete nominative agreement/spelling context supplies plural adjective agreement regardless of noun gender. Broad all-ending/soft-adjective generalizations excluded. Independent English,2026-10-13; bounded recognition of seven supplied nominative pairs, not unrestricted formation/all cases/unseen or productive mastery. Dictionary English lemma labels are not plural sentence translations. No new Russian or private Penguin prose; qualified source/rights/semantic approval pending.
+Recognize the town pair
+shippedText=Recognize the town pair
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=62f4eda8f4cea10920abe38a93400062a826491e6800a3db4b10bfa3c86ef680
+contentHash=25ceabc54e38a83b767838c67bbb5db4aac0ec2eab71b7801e0d55facae75df6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-plural-instruction-3-body`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b83bb463975afe022d30d9c205641954194f37698822735bdb3616cbff816e80
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:instruction:3-body
+originalSourceText=Complete frozen OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c header and seven selected full rows, sg_nom/pl_nom/gender/English dictionary labels. Existing field-bound native records and apostrophe-to-combining-acute formatting unchanged. Existing CC BY-SA4.0 contributor/rights route retained. Wikibooks Adjectives4292379 complete nominative agreement/spelling context supplies plural adjective agreement regardless of noun gender. Broad all-ending/soft-adjective generalizations excluded. Independent English,2026-10-13; bounded recognition of seven supplied nominative pairs, not unrestricted formation/all cases/unseen or productive mastery. Dictionary English lemma labels are not plural sentence translations. No new Russian or private Penguin prose; qualified source/rights/semantic approval pending.
+кни́га is singular nominative; кни́ги is plural nominative. Select the latter for books. The supplied plural retains its stress. Its final vowel follows the stem’s last consonant, one of the seven spelling-rule letters taught in the later spelling session. This same correct book pair is reused there as reinforcement; earlier independent credit does not replace that later objective’s checks.
+shippedText=кни́га is singular nominative; кни́ги is plural nominative. Select the latter for books. The supplied plural retains its stress. Its final vowel follows the stem’s last consonant, one of the seven spelling-rule letters taught in the later spelling session. This same correct book pair is reused there as reinforcement; earlier independent credit does not replace that later objective’s checks.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3a27a0e1587129bee2296e1f79228f2a782db9b25c2cdd10da19379c3a2a4f05
+contentHash=189b56a89d3524f77f7c8d00bb93a982355f533efd616322bd64896a749a9df7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-plural-instruction-3-title`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3d0bcf2218c89a8c602528eed3cc5a0cc41c5d67308fd5a2f157da7206f3ae68
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:instruction:3-title
+originalSourceText=Complete frozen OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c header and seven selected full rows, sg_nom/pl_nom/gender/English dictionary labels. Existing field-bound native records and apostrophe-to-combining-acute formatting unchanged. Existing CC BY-SA4.0 contributor/rights route retained. Wikibooks Adjectives4292379 complete nominative agreement/spelling context supplies plural adjective agreement regardless of noun gender. Broad all-ending/soft-adjective generalizations excluded. Independent English,2026-10-13; bounded recognition of seven supplied nominative pairs, not unrestricted formation/all cases/unseen or productive mastery. Dictionary English lemma labels are not plural sentence translations. No new Russian or private Penguin prose; qualified source/rights/semantic approval pending.
+Recognize the book pair and its spelling
+shippedText=Recognize the book pair and its spelling
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3efc14dc0f1e77aaa95b562ad6a05903967211ea36044b1d006bcd90df950fb1
+contentHash=53234394b2bb70a3b40095583a9dfacdb1d6f482dfb8d61b69f84596074fa849
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-plural-instruction-4-body`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 88ffaef0a5dc4ad4e0828a0d65f876da1df823d351ee7f5b84e4c72af1222767
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:instruction:4-body
+originalSourceText=Complete frozen OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c header and seven selected full rows, sg_nom/pl_nom/gender/English dictionary labels. Existing field-bound native records and apostrophe-to-combining-acute formatting unchanged. Existing CC BY-SA4.0 contributor/rights route retained. Wikibooks Adjectives4292379 complete nominative agreement/spelling context supplies plural adjective agreement regardless of noun gender. Broad all-ending/soft-adjective generalizations excluded. Independent English,2026-10-13; bounded recognition of seven supplied nominative pairs, not unrestricted formation/all cases/unseen or productive mastery. Dictionary English lemma labels are not plural sentence translations. No new Russian or private Penguin prose; qualified source/rights/semantic approval pending.
+окно́ is singular nominative; о́кна is plural nominative in the supplied dictionary pair. Select the latter for windows. Notice the supplied stress moves to the first syllable. An ending-only guess would lose part of the taught form; do not invent another accent or treat this pair as every neuter noun’s algorithm.
+shippedText=окно́ is singular nominative; о́кна is plural nominative in the supplied dictionary pair. Select the latter for windows. Notice the supplied stress moves to the first syllable. An ending-only guess would lose part of the taught form; do not invent another accent or treat this pair as every neuter noun’s algorithm.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=73ef64df98039db595fd6ca50eb45cf6e1298c9be80b152e41169a59a6d9616e
+contentHash=638f78a5c1fc703af12a4f0bb5f9222b49c1367f5c0072ffc455c24870d86b27
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-plural-instruction-4-title`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8ed8b741377d8c5f2d156bbf8b4be9bae2b8d83c68d9bfee7f8528fbfb790163
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:instruction:4-title
+originalSourceText=Complete frozen OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c header and seven selected full rows, sg_nom/pl_nom/gender/English dictionary labels. Existing field-bound native records and apostrophe-to-combining-acute formatting unchanged. Existing CC BY-SA4.0 contributor/rights route retained. Wikibooks Adjectives4292379 complete nominative agreement/spelling context supplies plural adjective agreement regardless of noun gender. Broad all-ending/soft-adjective generalizations excluded. Independent English,2026-10-13; bounded recognition of seven supplied nominative pairs, not unrestricted formation/all cases/unseen or productive mastery. Dictionary English lemma labels are not plural sentence translations. No new Russian or private Penguin prose; qualified source/rights/semantic approval pending.
+Recognize the window pair and shifted stress
+shippedText=Recognize the window pair and shifted stress
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=78e86717d079aae504da071c4b400de53dde895cf02722daeb6b082775f0a9f4
+contentHash=1eff7cf4131c88f9c195158dbdff816bb7c5695f4fd5b2059af38baf067c1160
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-plural-instruction-5-body`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1f592484e66ec62bd428d0012f41282f8de9780ff13a099e4257ff5819864885
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:instruction:5-body
+originalSourceText=Complete frozen OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c header and seven selected full rows, sg_nom/pl_nom/gender/English dictionary labels. Existing field-bound native records and apostrophe-to-combining-acute formatting unchanged. Existing CC BY-SA4.0 contributor/rights route retained. Wikibooks Adjectives4292379 complete nominative agreement/spelling context supplies plural adjective agreement regardless of noun gender. Broad all-ending/soft-adjective generalizations excluded. Independent English,2026-10-13; bounded recognition of seven supplied nominative pairs, not unrestricted formation/all cases/unseen or productive mastery. Dictionary English lemma labels are not plural sentence translations. No new Russian or private Penguin prose; qualified source/rights/semantic approval pending.
+ма́ма is singular nominative; ма́мы is plural nominative. Select the latter for moms in the supplied sense. The ending changes while the supplied stress stays in place. A feminine dictionary label alone does not prove every feminine noun has this ending.
+shippedText=ма́ма is singular nominative; ма́мы is plural nominative. Select the latter for moms in the supplied sense. The ending changes while the supplied stress stays in place. A feminine dictionary label alone does not prove every feminine noun has this ending.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0fbc3003e21d63643e36641b725a8f708b9c977ca7f91855f03aa55bf6159ea0
+contentHash=497106c1f87fdd6b180b4eda1ee02e1f7032ac7f67d70888cd629f15333c9c3a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-plural-instruction-5-title`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1f6dd1f0e67f0c08831e3f7ef89b4a28f12463b558ac4877049c5fb6a48c4355
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:instruction:5-title
+originalSourceText=Complete frozen OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c header and seven selected full rows, sg_nom/pl_nom/gender/English dictionary labels. Existing field-bound native records and apostrophe-to-combining-acute formatting unchanged. Existing CC BY-SA4.0 contributor/rights route retained. Wikibooks Adjectives4292379 complete nominative agreement/spelling context supplies plural adjective agreement regardless of noun gender. Broad all-ending/soft-adjective generalizations excluded. Independent English,2026-10-13; bounded recognition of seven supplied nominative pairs, not unrestricted formation/all cases/unseen or productive mastery. Dictionary English lemma labels are not plural sentence translations. No new Russian or private Penguin prose; qualified source/rights/semantic approval pending.
+Recognize the mom pair
+shippedText=Recognize the mom pair
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=968b4def3eea1c35d09544fc337c047e2c7508ec7eb8d79cd3dad082b1349c86
+contentHash=4e4d7e2f66ddf7755dbffa8a7ca4b2bd9140b1ef0378c33d1c66b899b899c481
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-plural-instruction-6-body`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7a0b2473055d4e3b5b2a02737b949ba505c5a2556407a541a8229a7873c33ec1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:instruction:6-body
+originalSourceText=Complete frozen OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c header and seven selected full rows, sg_nom/pl_nom/gender/English dictionary labels. Existing field-bound native records and apostrophe-to-combining-acute formatting unchanged. Existing CC BY-SA4.0 contributor/rights route retained. Wikibooks Adjectives4292379 complete nominative agreement/spelling context supplies plural adjective agreement regardless of noun gender. Broad all-ending/soft-adjective generalizations excluded. Independent English,2026-10-13; bounded recognition of seven supplied nominative pairs, not unrestricted formation/all cases/unseen or productive mastery. Dictionary English lemma labels are not plural sentence translations. No new Russian or private Penguin prose; qualified source/rights/semantic approval pending.
+до́м is singular nominative; дома́ is plural nominative in the supplied house sense. Select the latter for houses. Preserve the source stress shift. The dictionary’s English house/home labels identify a sense; they are not a plural translation of the Russian form.
+shippedText=до́м is singular nominative; дома́ is plural nominative in the supplied house sense. Select the latter for houses. Preserve the source stress shift. The dictionary’s English house/home labels identify a sense; they are not a plural translation of the Russian form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=46afaebe2cde7abc1f74142f05b2aceaaf75fcc14d189fa5152c8fd30b7bf891
+contentHash=915ad68f946d6d862c40bfb7bdd8e204c4ee7358b48a2040436368f9c6a9902d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-plural-instruction-6-title`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: af65db929379d4bb7e1c13989e249942e3717bada3e8d28462964574e3b9a0dc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:instruction:6-title
+originalSourceText=Complete frozen OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c header and seven selected full rows, sg_nom/pl_nom/gender/English dictionary labels. Existing field-bound native records and apostrophe-to-combining-acute formatting unchanged. Existing CC BY-SA4.0 contributor/rights route retained. Wikibooks Adjectives4292379 complete nominative agreement/spelling context supplies plural adjective agreement regardless of noun gender. Broad all-ending/soft-adjective generalizations excluded. Independent English,2026-10-13; bounded recognition of seven supplied nominative pairs, not unrestricted formation/all cases/unseen or productive mastery. Dictionary English lemma labels are not plural sentence translations. No new Russian or private Penguin prose; qualified source/rights/semantic approval pending.
+Recognize the house pair
+shippedText=Recognize the house pair
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e6906099572f5c774aa819b2c6f7f0063ebaa4e00be321b262f6f5e7b9355d47
+contentHash=a6df13ddfa761e9c6c64b2c7ccade338bc769d2833648dd7ab9078147a53f308
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-plural-instruction-7-body`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9a360190f22e6f091acd25ab0959945e1c9524d65d1dff0d7a46b15f04622e84
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:instruction:7-body
+originalSourceText=Complete frozen OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c header and seven selected full rows, sg_nom/pl_nom/gender/English dictionary labels. Existing field-bound native records and apostrophe-to-combining-acute formatting unchanged. Existing CC BY-SA4.0 contributor/rights route retained. Wikibooks Adjectives4292379 complete nominative agreement/spelling context supplies plural adjective agreement regardless of noun gender. Broad all-ending/soft-adjective generalizations excluded. Independent English,2026-10-13; bounded recognition of seven supplied nominative pairs, not unrestricted formation/all cases/unseen or productive mastery. Dictionary English lemma labels are not plural sentence translations. No new Russian or private Penguin prose; qualified source/rights/semantic approval pending.
+сло́во is singular nominative; слова́ is plural nominative in the supplied word sense. Select the latter for words. Preserve its final stress. The seven pairs in this lesson cover several endings and stress patterns, but do not establish an unrestricted productive plural algorithm or meanings in every case. A missed choice returns to all cards and fourteen original worked forms.
+shippedText=сло́во is singular nominative; слова́ is plural nominative in the supplied word sense. Select the latter for words. Preserve its final stress. The seven pairs in this lesson cover several endings and stress patterns, but do not establish an unrestricted productive plural algorithm or meanings in every case. A missed choice returns to all cards and fourteen original worked forms.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=837090ccdbffe978dba1b47f66556edd6d46a9fe5bd01f430a21d2bdffdb1988
+contentHash=3647d5770956241afcd1aeb7dfb01bd730876199f0a472d9b86728cd90e24c61
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-plural-instruction-7-title`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e665de2ce0b93f157932345ce64c9fa749c5446ce07da3897bb734159575739d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:instruction:7-title
+originalSourceText=Complete frozen OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c header and seven selected full rows, sg_nom/pl_nom/gender/English dictionary labels. Existing field-bound native records and apostrophe-to-combining-acute formatting unchanged. Existing CC BY-SA4.0 contributor/rights route retained. Wikibooks Adjectives4292379 complete nominative agreement/spelling context supplies plural adjective agreement regardless of noun gender. Broad all-ending/soft-adjective generalizations excluded. Independent English,2026-10-13; bounded recognition of seven supplied nominative pairs, not unrestricted formation/all cases/unseen or productive mastery. Dictionary English lemma labels are not plural sentence translations. No new Russian or private Penguin prose; qualified source/rights/semantic approval pending.
+Recognize the word pair within the taught scope
+shippedText=Recognize the word pair within the taught scope
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a45f89df9d5bd2e69f47c5290d9cd6afa100cf56e0379c4d355884c602e0c197
+contentHash=175736b8efb94e387283f6226cc3b75d11b677a151875de8ae754ac4957747ef
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-plural-instruction-objective-title`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: aedaf3a3b77c80ac3f8b454387a2fa8ab5c808a3700cfd89f25ae5e48a576992
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:instruction:objective-title
+originalSourceText=Complete frozen OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c header and seven selected full rows, sg_nom/pl_nom/gender/English dictionary labels. Existing field-bound native records and apostrophe-to-combining-acute formatting unchanged. Existing CC BY-SA4.0 contributor/rights route retained. Wikibooks Adjectives4292379 complete nominative agreement/spelling context supplies plural adjective agreement regardless of noun gender. Broad all-ending/soft-adjective generalizations excluded. Independent English,2026-10-13; bounded recognition of seven supplied nominative pairs, not unrestricted formation/all cases/unseen or productive mastery. Dictionary English lemma labels are not plural sentence translations. No new Russian or private Penguin prose; qualified source/rights/semantic approval pending.
+Recognize supplied singular and plural nominative noun forms
+shippedText=Recognize supplied singular and plural nominative noun forms
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7ae5af187c8c626f2ebf56ab501c78a3c1c2ba6be273ea3caa2b9f550a162e43
+contentHash=101348ee69ebd1856d272ee0f5c87c4ccb4b008dad5a4ab7c21f13deaaa679b5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-plural-instruction-rem-body`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7e3a1faa40259fa7c043e9519adc88bbe7a159caaedc4194d99bd1fbfd677da7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:instruction:rem-body
+originalSourceText=Complete frozen OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c header and seven selected full rows, sg_nom/pl_nom/gender/English dictionary labels. Existing field-bound native records and apostrophe-to-combining-acute formatting unchanged. Existing CC BY-SA4.0 contributor/rights route retained. Wikibooks Adjectives4292379 complete nominative agreement/spelling context supplies plural adjective agreement regardless of noun gender. Broad all-ending/soft-adjective generalizations excluded. Independent English,2026-10-13; bounded recognition of seven supplied nominative pairs, not unrestricted formation/all cases/unseen or productive mastery. Dictionary English lemma labels are not plural sentence translations. No new Russian or private Penguin prose; qualified source/rights/semantic approval pending.
+сто́л is singular nominative; столы́ is plural nominative. In the selected table sense, the plural refers to tables. The English notes beside these examples are dictionary labels, not plural English translations or complete sentences. Choose the plural form when the question requests plural nominative. Both the ending and the supplied stress matter; do not insert a new stress pattern.
+
+These checks select supplied nominative plural noun forms. Each noun retains its dictionary gender; plural adjective agreement does not require separate masculine, feminine and neuter plural endings. The source’s single plural agreement category is not a claim that nouns lose lexical gender. Gender alone is not a complete algorithm for unfamiliar plural endings or stress. Learn these supplied pairs rather than applying them to every noun.
+
+го́род is singular nominative; города́ is plural nominative in this supplied pair. Select the latter for towns. The plural ending differs from the table pair and its supplied stress is on the final syllable. These patterns are word-specific recognition evidence, not permission to generate an unlisted form.
+
+кни́га is singular nominative; кни́ги is plural nominative. Select the latter for books. The supplied plural retains its stress. Its final vowel follows the stem’s last consonant, one of the seven spelling-rule letters taught in the later spelling session. This same correct book pair is reused there as reinforcement; earlier independent credit does not replace that later objective’s checks.
+
+окно́ is singular nominative; о́кна is plural nominative in the supplied dictionary pair. Select the latter for windows. Notice the supplied stress moves to the first syllable. An ending-only guess would lose part of the taught form; do not invent another accent or treat this pair as every neuter noun’s algorithm.
+
+ма́ма is singular nominative; ма́мы is plural nominative. Select the latter for moms in the supplied sense. The ending changes while the supplied stress stays in place. A feminine dictionary label alone does not prove every feminine noun has this ending.
+
+до́м is singular nominative; дома́ is plural nominative in the supplied house sense. Select the latter for houses. Preserve the source stress shift. The dictionary’s English house/home labels identify a sense; they are not a plural translation of the Russian form.
+
+сло́во is singular nominative; слова́ is plural nominative in the supplied word sense. Select the latter for words. Preserve its final stress. The seven pairs in this lesson cover several endings and stress patterns, but do not establish an unrestricted productive plural algorithm or meanings in every case. A missed choice returns to all cards and fourteen original worked forms.
+shippedText=сто́л is singular nominative; столы́ is plural nominative. In the selected table sense, the plural refers to tables. The English notes beside these examples are dictionary labels, not plural English translations or complete sentences. Choose the plural form when the question requests plural nominative. Both the ending and the supplied stress matter; do not insert a new stress pattern.
+
+These checks select supplied nominative plural noun forms. Each noun retains its dictionary gender; plural adjective agreement does not require separate masculine, feminine and neuter plural endings. The source’s single plural agreement category is not a claim that nouns lose lexical gender. Gender alone is not a complete algorithm for unfamiliar plural endings or stress. Learn these supplied pairs rather than applying them to every noun.
+
+го́род is singular nominative; города́ is plural nominative in this supplied pair. Select the latter for towns. The plural ending differs from the table pair and its supplied stress is on the final syllable. These patterns are word-specific recognition evidence, not permission to generate an unlisted form.
+
+кни́га is singular nominative; кни́ги is plural nominative. Select the latter for books. The supplied plural retains its stress. Its final vowel follows the stem’s last consonant, one of the seven spelling-rule letters taught in the later spelling session. This same correct book pair is reused there as reinforcement; earlier independent credit does not replace that later objective’s checks.
+
+окно́ is singular nominative; о́кна is plural nominative in the supplied dictionary pair. Select the latter for windows. Notice the supplied stress moves to the first syllable. An ending-only guess would lose part of the taught form; do not invent another accent or treat this pair as every neuter noun’s algorithm.
+
+ма́ма is singular nominative; ма́мы is plural nominative. Select the latter for moms in the supplied sense. The ending changes while the supplied stress stays in place. A feminine dictionary label alone does not prove every feminine noun has this ending.
+
+до́м is singular nominative; дома́ is plural nominative in the supplied house sense. Select the latter for houses. Preserve the source stress shift. The dictionary’s English house/home labels identify a sense; they are not a plural translation of the Russian form.
+
+сло́во is singular nominative; слова́ is plural nominative in the supplied word sense. Select the latter for words. Preserve its final stress. The seven pairs in this lesson cover several endings and stress patterns, but do not establish an unrestricted productive plural algorithm or meanings in every case. A missed choice returns to all cards and fourteen original worked forms.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6160e18eadab686f1177691748547a0e1c18b1ff14dd777ecf45101fe5e055c5
+contentHash=fcf7c279335254edd907d4aca7da7da3830dd09ecd64fcaa451fa817f7f8f0f3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-plural-instruction-rem-title`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 23de2b6663899e9e8b8bff25f9cf7205407bea61532ef5d23b7fe425e739d22f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:instruction:rem-title
+originalSourceText=Complete frozen OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c header and seven selected full rows, sg_nom/pl_nom/gender/English dictionary labels. Existing field-bound native records and apostrophe-to-combining-acute formatting unchanged. Existing CC BY-SA4.0 contributor/rights route retained. Wikibooks Adjectives4292379 complete nominative agreement/spelling context supplies plural adjective agreement regardless of noun gender. Broad all-ending/soft-adjective generalizations excluded. Independent English,2026-10-13; bounded recognition of seven supplied nominative pairs, not unrestricted formation/all cases/unseen or productive mastery. Dictionary English lemma labels are not plural sentence translations. No new Russian or private Penguin prose; qualified source/rights/semantic approval pending.
+Review all seven supplied nominative pairs
+shippedText=Review all seven supplied nominative pairs
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ae723b5585c3e73e0a79e99f45e16369957cdaa3d72db35d5b657d2adecf87dd
+contentHash=18d4d6c50b52c1bcf2917b2852d0f49e625981c4ebc4b256c7d8934b04c7c3b3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-plural-instruction-u8-st-check-plural-body`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a0677802a335a154a9a16a663cb34d4376b1f77176eaab74b7ee4965c01ffacf
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:instruction:u8-st-check-plural-body
+originalSourceText=Complete frozen OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c header and seven selected full rows, sg_nom/pl_nom/gender/English dictionary labels. Existing field-bound native records and apostrophe-to-combining-acute formatting unchanged. Existing CC BY-SA4.0 contributor/rights route retained. Wikibooks Adjectives4292379 complete nominative agreement/spelling context supplies plural adjective agreement regardless of noun gender. Broad all-ending/soft-adjective generalizations excluded. Independent English,2026-10-13; bounded recognition of seven supplied nominative pairs, not unrestricted formation/all cases/unseen or productive mastery. Dictionary English lemma labels are not plural sentence translations. No new Russian or private Penguin prose; qualified source/rights/semantic approval pending.
+Choose the supplied nominative plural form. A missed answer returns to every teaching card and worked pair.
+shippedText=Choose the supplied nominative plural form. A missed answer returns to every teaching card and worked pair.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0d60fabb7fac398398c4f943c83ffd270a2ec8854ab404c490554b40b778ed0a
+contentHash=13cd0230376cf3511020fde6eaf4cbf3e547288c5766571026944ed5b847c978
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u8-plural-instruction-u8-st-guided-plural-1-body`
+
+- Objectives: obj-u8-plural
+- Sessions: u8-s-orient, u8-s-plural
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 582eb335e37c60bef4e1da1133e9c966d71aabb1001bea65bb472804abc89293
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-plural:instruction:u8-st-guided-plural-1-body
+originalSourceText=Complete frozen OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c header and seven selected full rows, sg_nom/pl_nom/gender/English dictionary labels. Existing field-bound native records and apostrophe-to-combining-acute formatting unchanged. Existing CC BY-SA4.0 contributor/rights route retained. Wikibooks Adjectives4292379 complete nominative agreement/spelling context supplies plural adjective agreement regardless of noun gender. Broad all-ending/soft-adjective generalizations excluded. Independent English,2026-10-13; bounded recognition of seven supplied nominative pairs, not unrestricted formation/all cases/unseen or productive mastery. Dictionary English lemma labels are not plural sentence translations. No new Russian or private Penguin prose; qualified source/rights/semantic approval pending.
+Choose the supplied nominative plural form. A missed answer returns to every teaching card and worked pair.
+shippedText=Choose the supplied nominative plural form. A missed answer returns to every teaching card and worked pair.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0d60fabb7fac398398c4f943c83ffd270a2ec8854ab404c490554b40b778ed0a
+contentHash=13cd0230376cf3511020fde6eaf4cbf3e547288c5766571026944ed5b847c978
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-ca-u8-worked-adjective-feature`
 
 - Objectives: obj-u8-spelling
@@ -10845,8 +11517,6 @@ permitsAppUse=true
 - `u8-st-teach-plural-1` EXAMPLE `ex-or-u8-plural-0`
 - `u8-st-teach-plural-1` EXAMPLE `ex-or-u8-plural-1`
 - `u8-st-teach-plural-1` REFERENCE `ref-u610-attribution`
-- `u8-st-guided-plural-1` REMEDIATION `u8-st-rem-plural`
-- `u8-st-guided-plural-1` ITEM `u8-g-plural-0`
 - `u8-st-teach-plural-2` REFERENCE `ref-u610-attribution`
 - `u8-st-teach-plural-3` EXAMPLE `ex-or-u8-plural-2`
 - `u8-st-teach-plural-3` EXAMPLE `ex-or-u8-plural-3`
@@ -10866,8 +11536,22 @@ permitsAppUse=true
 - `u8-st-teach-plural-8` EXAMPLE `ex-or-u8-plural-12`
 - `u8-st-teach-plural-8` EXAMPLE `ex-or-u8-plural-13`
 - `u8-st-teach-plural-8` REFERENCE `ref-u610-attribution`
+- `u8-st-guided-plural-1` REMEDIATION `u8-st-rem-plural`
+- `u8-st-guided-plural-1` ITEM `u8-g-plural-0`
 - `u8-st-rem-plural` EXAMPLE `ex-or-u8-plural-0`
 - `u8-st-rem-plural` EXAMPLE `ex-or-u8-plural-1`
+- `u8-st-rem-plural` EXAMPLE `ex-or-u8-plural-2`
+- `u8-st-rem-plural` EXAMPLE `ex-or-u8-plural-3`
+- `u8-st-rem-plural` EXAMPLE `ex-or-u8-plural-4`
+- `u8-st-rem-plural` EXAMPLE `ex-or-u8-plural-5`
+- `u8-st-rem-plural` EXAMPLE `ex-or-u8-plural-6`
+- `u8-st-rem-plural` EXAMPLE `ex-or-u8-plural-7`
+- `u8-st-rem-plural` EXAMPLE `ex-or-u8-plural-8`
+- `u8-st-rem-plural` EXAMPLE `ex-or-u8-plural-9`
+- `u8-st-rem-plural` EXAMPLE `ex-or-u8-plural-10`
+- `u8-st-rem-plural` EXAMPLE `ex-or-u8-plural-11`
+- `u8-st-rem-plural` EXAMPLE `ex-or-u8-plural-12`
+- `u8-st-rem-plural` EXAMPLE `ex-or-u8-plural-13`
 - `u8-st-check-plural` REMEDIATION `u8-st-rem-plural`
 - `u8-st-check-plural` ITEM `u8-i-plural-1`
 - `u8-st-check-plural` ITEM `u8-i-plural-2`
@@ -11089,6 +11773,27 @@ permitsAppUse=true
 - `obj-u8-agreement` PROVENANCE `prov-ca-u8-agreement-transfer-u8-i-agreement-3-0`
 - `obj-u8-agreement` PROVENANCE `prov-ca-u8-agreement-transfer-u8-i-agreement-3-1`
 - `obj-u8-agreement` PROVENANCE `prov-ca-u8-agreement-transfer-u8-i-agreement-3-2`
+- `obj-u8-plural` PROVENANCE `prov-ca-u8-plural-instruction-0-body`
+- `obj-u8-plural` PROVENANCE `prov-ca-u8-plural-instruction-0-title`
+- `obj-u8-plural` PROVENANCE `prov-ca-u8-plural-instruction-1-body`
+- `obj-u8-plural` PROVENANCE `prov-ca-u8-plural-instruction-1-title`
+- `obj-u8-plural` PROVENANCE `prov-ca-u8-plural-instruction-2-body`
+- `obj-u8-plural` PROVENANCE `prov-ca-u8-plural-instruction-2-title`
+- `obj-u8-plural` PROVENANCE `prov-ca-u8-plural-instruction-3-body`
+- `obj-u8-plural` PROVENANCE `prov-ca-u8-plural-instruction-3-title`
+- `obj-u8-plural` PROVENANCE `prov-ca-u8-plural-instruction-4-body`
+- `obj-u8-plural` PROVENANCE `prov-ca-u8-plural-instruction-4-title`
+- `obj-u8-plural` PROVENANCE `prov-ca-u8-plural-instruction-5-body`
+- `obj-u8-plural` PROVENANCE `prov-ca-u8-plural-instruction-5-title`
+- `obj-u8-plural` PROVENANCE `prov-ca-u8-plural-instruction-6-body`
+- `obj-u8-plural` PROVENANCE `prov-ca-u8-plural-instruction-6-title`
+- `obj-u8-plural` PROVENANCE `prov-ca-u8-plural-instruction-7-body`
+- `obj-u8-plural` PROVENANCE `prov-ca-u8-plural-instruction-7-title`
+- `obj-u8-plural` PROVENANCE `prov-ca-u8-plural-instruction-objective-title`
+- `obj-u8-plural` PROVENANCE `prov-ca-u8-plural-instruction-rem-body`
+- `obj-u8-plural` PROVENANCE `prov-ca-u8-plural-instruction-rem-title`
+- `obj-u8-plural` PROVENANCE `prov-ca-u8-plural-instruction-u8-st-check-plural-body`
+- `obj-u8-plural` PROVENANCE `prov-ca-u8-plural-instruction-u8-st-guided-plural-1-body`
 - `obj-u8-spelling` PROVENANCE `prov-ca-u8-worked-adjective-feature`
 - `obj-u8-spelling` PROVENANCE `prov-ca-u8-worked-check-body`
 - `obj-u8-spelling` PROVENANCE `prov-ca-u8-worked-guided-body`
