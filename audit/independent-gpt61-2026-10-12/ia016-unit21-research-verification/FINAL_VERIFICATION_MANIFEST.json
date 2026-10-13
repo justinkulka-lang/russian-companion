@@ -1,0 +1,819 @@
+{
+  "verifiedRepositoryCommit": "849bf35606c0588aa460db96143562b6c9a4a171",
+  "integrationRepositoryCommit": "e1ed0b2d6bb4b5056c256145f1ef57fc6ff02eab",
+  "implementationCommit": "f47b8649cc72425d3b2854a2dadccdc89c17e617",
+  "baselineCommit": "6434cd12cdb22d0bbf6f7f848191d46b46501fca",
+  "workingDirectory": "/workspace/russian-companion",
+  "scope": "FOCUSED_SELECTED_CHECKS_ACROSS_TWO_RECORDED_RUNS_NOT_SINGLE_SUITE",
+  "integrationRun": {
+    "repositoryCommit": "e1ed0b2d6bb4b5056c256145f1ef57fc6ff02eab",
+    "command": "bash audit/independent-gpt61-2026-10-12/ia016-unit21-research-verification/verify.sh",
+    "expandedScript": "set -e\ncd /workspace/russian-companion\nsource /workspace/setup/android-env.sh\nchecks=(\n  --tests '*Unit21ObjectTransferTest'\n  --tests '*Unit21ReflexivePurposeInstructionTest'\n  --tests '*Units2630SourceIntakeTest.retainedSourceBytesMatchTheFrozenIdentityTwice'\n  --tests '*Units610InstructionalValidityTest.everyRecognitionObjectiveHasAnIndependentFeatureValidCheck'\n  --tests '*LabExplanationCorrectionTest'\n  --tests '*Unit9AgreementTransferTest.completedAgreementNeedsADifferentIndependentMasculineNoun'\n  --tests '*Units2125SourceIntakeTest.frozenSourceIdentityAndProvenanceSpansAreRequired'\n  --tests '*Units2125SourceIntakeTest.noPenguinContentInternetPermissionOrOpenReleaseGate'\n  --tests '*Units2125SourceIntakeTest.structuralMappingsAreDigestBoundAndStayUnsigned'\n  --tests '*UnitReviewPipelineTest.committedUnitPackagesMatchTheGenerator'\n  --tests '*CurriculumReadinessReconciliationTest.committedReportsMatchTheGeneratorAndStayByteIdentical'\n  --tests '*OwnerGovernanceDecisionTest.preparationManifestBindsFactsAndDoesNotPassAFinalAudit'\n  --tests '*GapClosureDossierTest.dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease'\n  --tests '*ReleaseSourceDigestTest.committedCandidateRecordsTheCurrentSourceDigestAndIdentity'\n  --tests '*BatchECapabilityResearchTest.digestsGovernanceAndLaterUnitsStayUnchanged'\n  --tests '*V2RebuildTest.structuralMappingSafeguardsRejectIncompleteOrInventedRecords'\n  --tests '*CompleteRuleCorrectionTest.coordinatedKeyAndApplicationEditsCannotReverseTheFrozenContext'\n  --tests '*Unit9QuantityRuleCorrectionTest.coordinatedKeyAndApplicationEditsCannotReverseTheTeenContext'\n)\n./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest \"${checks[@]}\" compileDebugSources lintDebug verifyReleaseGateAttachment --max-workers=4 --console=plain\n",
+    "exitCode": 1,
+    "totals": {
+      "tests": 32,
+      "failures": 1,
+      "errors": 0,
+      "skipped": 0
+    },
+    "classes": [
+      {
+        "className": "dev.russiancompanion.release.ReleaseSourceDigestTest",
+        "timestamp": "2026-10-13T20:07:50.275Z",
+        "xmlSha256": "1201a6f97eea2612a09e9601b0dceea45861520aa9ca8cbbd48fc69a5a9c1a7e",
+        "methods": [
+          {
+            "name": "committedCandidateRecordsTheCurrentSourceDigestAndIdentity",
+            "failed": false,
+            "skipped": false
+          }
+        ],
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "className": "dev.russiancompanion.v2.BatchECapabilityResearchTest",
+        "timestamp": "2026-10-13T20:06:23.719Z",
+        "xmlSha256": "dbf9b9e1167ac45bc6a581c09cfe5d514a824207144c65f664d5a5f27fe67895",
+        "methods": [
+          {
+            "name": "digestsGovernanceAndLaterUnitsStayUnchanged",
+            "failed": false,
+            "skipped": false
+          }
+        ],
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "className": "dev.russiancompanion.v2.V2RebuildTest",
+        "timestamp": "2026-10-13T20:08:32.025Z",
+        "xmlSha256": "749f4f946e70dd7dbe085381d533695b4b0440299f4b9cd48e15397d143647ff",
+        "methods": [
+          {
+            "name": "structuralMappingSafeguardsRejectIncompleteOrInventedRecords",
+            "failed": false,
+            "skipped": false
+          }
+        ],
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "className": "dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest",
+        "timestamp": "2026-10-13T20:08:33.463Z",
+        "xmlSha256": "556daa2a00643c770df674571dd362245457aac570f33dae66ca9a15eb94e9e3",
+        "methods": [
+          {
+            "name": "committedReportsMatchTheGeneratorAndStayByteIdentical",
+            "failed": false,
+            "skipped": false
+          }
+        ],
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "className": "dev.russiancompanion.v2.audit.GapClosureDossierTest",
+        "timestamp": "2026-10-13T20:10:39.604Z",
+        "xmlSha256": "92e272508b7d05f630bd4c68a45e5f450cc559e57d4aecd320f87cc05d83f56c",
+        "methods": [
+          {
+            "name": "dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease",
+            "failed": false,
+            "skipped": false
+          }
+        ],
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "className": "dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest",
+        "timestamp": "2026-10-13T20:06:58.071Z",
+        "xmlSha256": "7a447fe87e588a4064e4b1d4beb53f94d648986817a3477d4c339489427d7fda",
+        "methods": [
+          {
+            "name": "preparationManifestBindsFactsAndDoesNotPassAFinalAudit",
+            "failed": false,
+            "skipped": false
+          }
+        ],
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "className": "dev.russiancompanion.v2.review.UnitReviewPipelineTest",
+        "timestamp": "2026-10-13T20:10:07.312Z",
+        "xmlSha256": "43992b8920989b84910724da9b91ac3262ff6db151ef0eeffeb0e5b5ae0e8ea7",
+        "methods": [
+          {
+            "name": "committedUnitPackagesMatchTheGenerator",
+            "failed": false,
+            "skipped": false
+          }
+        ],
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "className": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+        "timestamp": "2026-10-13T20:06:57.541Z",
+        "xmlSha256": "7eb751d19f8c0c3f940996c5c5ecf7e25be039b0eda02757f4d578354c0899ec",
+        "methods": [
+          {
+            "name": "retainedSourceBytesMatchTheFrozenIdentityTwice",
+            "failed": false,
+            "skipped": false
+          }
+        ],
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "className": "dev.russiancompanion.v2.LabExplanationCorrectionTest",
+        "timestamp": "2026-10-13T20:08:19.382Z",
+        "xmlSha256": "59ace0cf7ac9b1dece4e57f8289410e26900dcff62ee7b2b3c3f696d56e1207c",
+        "methods": [
+          {
+            "name": "wrongGrammarAnswerCanReviewDeclaredTeachingWithoutWritingProgress",
+            "failed": false,
+            "skipped": false
+          },
+          {
+            "name": "crossUnitDeclarationsCannotRevealFutureTeaching",
+            "failed": false,
+            "skipped": false
+          },
+          {
+            "name": "correctVocabularyAnswerCanReviewTeachingAndKeepItsSavedSelection",
+            "failed": false,
+            "skipped": false
+          }
+        ],
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "className": "dev.russiancompanion.v2.Units610InstructionalValidityTest",
+        "timestamp": "2026-10-13T20:10:29.572Z",
+        "xmlSha256": "094789dc2145207d31a64bc3002c8d9e5dd28b5708d02c840dbd84e17c2cd6bf",
+        "methods": [
+          {
+            "name": "everyRecognitionObjectiveHasAnIndependentFeatureValidCheck",
+            "failed": false,
+            "skipped": false
+          }
+        ],
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "className": "dev.russiancompanion.v2.Unit21ObjectTransferTest",
+        "timestamp": "2026-10-13T20:07:27.898Z",
+        "xmlSha256": "892bd9d18a5e19be959f12b22be76fcda8ccfee61d06bbd3f77a05b90983d7bc",
+        "methods": [
+          {
+            "name": "playerRejectsTheOtherPersonAndExplainsReflexiveReference",
+            "failed": false,
+            "skipped": false
+          },
+          {
+            "name": "coordinatedKeyAndApplicationCannotReverseReflexiveReference",
+            "failed": false,
+            "skipped": false
+          },
+          {
+            "name": "historicalThreeAnswerCompletionStaysSavedButCannotCreditCurrentContent",
+            "failed": false,
+            "skipped": false
+          },
+          {
+            "name": "allThreeCardsPrecedePracticeAndRemediationRestoresThem",
+            "failed": false,
+            "skipped": false
+          },
+          {
+            "name": "forgedOldRevisionAndGhostRecordCannotUseTheNewSource",
+            "failed": false,
+            "skipped": false
+          },
+          {
+            "name": "exactSourcePairAndOtherCorrectFieldsArePreserved",
+            "failed": false,
+            "skipped": false
+          },
+          {
+            "name": "restoringTheOriginalValidRepeatedContrastCannotClearDistinctReflexiveEvidence",
+            "failed": false,
+            "skipped": false
+          },
+          {
+            "name": "guidedAndWifeMeaningCannotCompleteTheDistinctReflexiveCheck",
+            "failed": false,
+            "skipped": false
+          },
+          {
+            "name": "coherentNativeTextAndHashForgeryCannotChangeTheReflexiveSource",
+            "failed": false,
+            "skipped": false
+          },
+          {
+            "name": "completedObjectReferenceNeedsADistinctIndependentReflexiveContext",
+            "failed": false,
+            "skipped": false
+          }
+        ],
+        "tests": 10,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "className": "dev.russiancompanion.v2.Unit21ReflexivePurposeInstructionTest",
+        "timestamp": "2026-10-13T20:06:20.939Z",
+        "xmlSha256": "80325a1f16f537b4727f7a60889c8b01abacdb6290cf6f83629ba881c1c992a7",
+        "methods": [
+          {
+            "name": "possessionTracksSubjectButAgreementTracksThePossessedNoun",
+            "failed": false,
+            "skipped": false
+          },
+          {
+            "name": "omittedEmptyFinalAuditObjectsDecodeToIdenticalTypedEvidence",
+            "failed": false,
+            "skipped": false
+          },
+          {
+            "name": "completeInstructionAndRemediationCoverEveryCheckedCueBeforePractice",
+            "failed": false,
+            "skipped": false
+          },
+          {
+            "name": "causalCheckHasNoSynonymousSinceDistractorAndAdmittedBindingsStayValid",
+            "failed": false,
+            "skipped": false
+          }
+        ],
+        "tests": 4,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "className": "dev.russiancompanion.v2.CompleteRuleCorrectionTest",
+        "timestamp": "2026-10-13T20:06:24.694Z",
+        "xmlSha256": "2d1529b85d507989d835dfc14a5dfbd6a8d85e2602b1b0c6af6756a7606dad25",
+        "methods": [
+          {
+            "name": "coordinatedKeyAndApplicationEditsCannotReverseTheFrozenContext",
+            "failed": false,
+            "skipped": false
+          }
+        ],
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "className": "dev.russiancompanion.v2.Units2125SourceIntakeTest",
+        "timestamp": "2026-10-13T20:09:43.365Z",
+        "xmlSha256": "61af9373213de36c7c709dff30b1836bf0e05124c5824a455df4f83813baafbe",
+        "methods": [
+          {
+            "name": "structuralMappingsAreDigestBoundAndStayUnsigned",
+            "failed": false,
+            "skipped": false
+          },
+          {
+            "name": "frozenSourceIdentityAndProvenanceSpansAreRequired",
+            "failed": true,
+            "skipped": false
+          },
+          {
+            "name": "noPenguinContentInternetPermissionOrOpenReleaseGate",
+            "failed": false,
+            "skipped": false
+          }
+        ],
+        "tests": 3,
+        "failures": 1,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "className": "dev.russiancompanion.v2.Unit9AgreementTransferTest",
+        "timestamp": "2026-10-13T20:06:23.221Z",
+        "xmlSha256": "5020e5f0bee9e60ea265e22f752e1e3d14c4d56714b5d6361603a3d950d90a4b",
+        "methods": [
+          {
+            "name": "completedAgreementNeedsADifferentIndependentMasculineNoun",
+            "failed": false,
+            "skipped": false
+          }
+        ],
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "className": "dev.russiancompanion.v2.Unit9QuantityRuleCorrectionTest",
+        "timestamp": "2026-10-13T20:09:18.652Z",
+        "xmlSha256": "8eff291e50278daa658bfb8313735fa4d88cd7c86da9a274831d152cc98657c4",
+        "methods": [
+          {
+            "name": "coordinatedKeyAndApplicationEditsCannotReverseTheTeenContext",
+            "failed": false,
+            "skipped": false
+          }
+        ],
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      }
+    ],
+    "all18SelectorsExecuted": true,
+    "lintExecuted": false,
+    "releaseGateAttachmentExecuted": false,
+    "workingTreeNote": "All production/curriculum/test/review/readiness inputs committed; capture.py added outside those inputs during run.",
+    "rawCurriculumSha256": "b69fa96ba5f948b06eff67163d462136d9a6fb9e467378e1fe9621535af798b3",
+    "reason": "Historical source-intake counts included four new native and ten new English records; preserve old578 native/non-instruction and75 Unit21 instruction scope, explicitly validate new14 separately.",
+    "completeSuite": false
+  },
+  "correctionRun": {
+    "repositoryCommit": "849bf35606c0588aa460db96143562b6c9a4a171",
+    "command": "bash audit/independent-gpt61-2026-10-12/ia016-unit21-research-verification/verify-correction.sh",
+    "expandedScript": "set -e\ncd /workspace/russian-companion\nsource /workspace/setup/android-env.sh\n./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*Units2125SourceIntakeTest.frozenSourceIdentityAndProvenanceSpansAreRequired' compileDebugSources lintDebug verifyReleaseGateAttachment --max-workers=4 --console=plain\n",
+    "totals": {
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "className": "dev.russiancompanion.v2.Units2125SourceIntakeTest",
+    "methods": [
+      "frozenSourceIdentityAndProvenanceSpansAreRequired"
+    ],
+    "timestamp": "2026-10-13T20:13:09.884Z",
+    "xmlSha256": "f083508cd7fe769551693d42b20bfa88d4e6d5ee367f196bc45f1d58dcafa919",
+    "exitCode": 0
+  },
+  "uniquePassedSelectedMethods": 32,
+  "uniqueClassesCovered": 16,
+  "passedMethods": [
+    {
+      "className": "dev.russiancompanion.release.ReleaseSourceDigestTest",
+      "method": "committedCandidateRecordsTheCurrentSourceDigestAndIdentity"
+    },
+    {
+      "className": "dev.russiancompanion.v2.BatchECapabilityResearchTest",
+      "method": "digestsGovernanceAndLaterUnitsStayUnchanged"
+    },
+    {
+      "className": "dev.russiancompanion.v2.CompleteRuleCorrectionTest",
+      "method": "coordinatedKeyAndApplicationEditsCannotReverseTheFrozenContext"
+    },
+    {
+      "className": "dev.russiancompanion.v2.LabExplanationCorrectionTest",
+      "method": "correctVocabularyAnswerCanReviewTeachingAndKeepItsSavedSelection"
+    },
+    {
+      "className": "dev.russiancompanion.v2.LabExplanationCorrectionTest",
+      "method": "crossUnitDeclarationsCannotRevealFutureTeaching"
+    },
+    {
+      "className": "dev.russiancompanion.v2.LabExplanationCorrectionTest",
+      "method": "wrongGrammarAnswerCanReviewDeclaredTeachingWithoutWritingProgress"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit21ObjectTransferTest",
+      "method": "allThreeCardsPrecedePracticeAndRemediationRestoresThem"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit21ObjectTransferTest",
+      "method": "coherentNativeTextAndHashForgeryCannotChangeTheReflexiveSource"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit21ObjectTransferTest",
+      "method": "completedObjectReferenceNeedsADistinctIndependentReflexiveContext"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit21ObjectTransferTest",
+      "method": "coordinatedKeyAndApplicationCannotReverseReflexiveReference"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit21ObjectTransferTest",
+      "method": "exactSourcePairAndOtherCorrectFieldsArePreserved"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit21ObjectTransferTest",
+      "method": "forgedOldRevisionAndGhostRecordCannotUseTheNewSource"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit21ObjectTransferTest",
+      "method": "guidedAndWifeMeaningCannotCompleteTheDistinctReflexiveCheck"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit21ObjectTransferTest",
+      "method": "historicalThreeAnswerCompletionStaysSavedButCannotCreditCurrentContent"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit21ObjectTransferTest",
+      "method": "playerRejectsTheOtherPersonAndExplainsReflexiveReference"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit21ObjectTransferTest",
+      "method": "restoringTheOriginalValidRepeatedContrastCannotClearDistinctReflexiveEvidence"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit21ReflexivePurposeInstructionTest",
+      "method": "causalCheckHasNoSynonymousSinceDistractorAndAdmittedBindingsStayValid"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit21ReflexivePurposeInstructionTest",
+      "method": "completeInstructionAndRemediationCoverEveryCheckedCueBeforePractice"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit21ReflexivePurposeInstructionTest",
+      "method": "omittedEmptyFinalAuditObjectsDecodeToIdenticalTypedEvidence"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit21ReflexivePurposeInstructionTest",
+      "method": "possessionTracksSubjectButAgreementTracksThePossessedNoun"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit9AgreementTransferTest",
+      "method": "completedAgreementNeedsADifferentIndependentMasculineNoun"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit9QuantityRuleCorrectionTest",
+      "method": "coordinatedKeyAndApplicationEditsCannotReverseTheTeenContext"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Units2125SourceIntakeTest",
+      "method": "frozenSourceIdentityAndProvenanceSpansAreRequired"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Units2125SourceIntakeTest",
+      "method": "noPenguinContentInternetPermissionOrOpenReleaseGate"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Units2125SourceIntakeTest",
+      "method": "structuralMappingsAreDigestBoundAndStayUnsigned"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+      "method": "retainedSourceBytesMatchTheFrozenIdentityTwice"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Units610InstructionalValidityTest",
+      "method": "everyRecognitionObjectiveHasAnIndependentFeatureValidCheck"
+    },
+    {
+      "className": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "structuralMappingSafeguardsRejectIncompleteOrInventedRecords"
+    },
+    {
+      "className": "dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest",
+      "method": "committedReportsMatchTheGeneratorAndStayByteIdentical"
+    },
+    {
+      "className": "dev.russiancompanion.v2.audit.GapClosureDossierTest",
+      "method": "dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease"
+    },
+    {
+      "className": "dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest",
+      "method": "preparationManifestBindsFactsAndDoesNotPassAFinalAudit"
+    },
+    {
+      "className": "dev.russiancompanion.v2.review.UnitReviewPipelineTest",
+      "method": "committedUnitPackagesMatchTheGenerator"
+    }
+  ],
+  "all18IntegrationSelectorsExecuted": true,
+  "productionAndReviewInputsIdenticalAcrossTestCorrection": true,
+  "scopeExplanation": "Integration32 passed31/failed one historical source-intake count. Corrected existing test preserves original historical578 non-instruction/75 Unit21 instruction records and license routes, explicitly validates new14 (four frozen native,ten pending English). One targeted corrected test passes. These are32 unique methods across two runs, not a single32/0 suite or complete-suite result.",
+  "lint": {
+    "status": "PASSED",
+    "severities": {
+      "Warning": 20,
+      "Hint": 1
+    },
+    "task": "> Task :app:lintDebug",
+    "sha256": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6"
+  },
+  "compilation": "> Task :app:compileDebugSources UP-TO-DATE; production/test compilation in preceding validations/generators and corrected test compilation",
+  "releaseGateAttachment": {
+    "status": "PASSED",
+    "task": "> Task :app:verifyReleaseGateAttachment"
+  },
+  "rawCurriculumSha256": "b69fa96ba5f948b06eff67163d462136d9a6fb9e467378e1fe9621535af798b3",
+  "packContentReviewDigest": "c7e2891e19f0da37bc8a9200ceeb83b9bb8bea62c388e8cfd99bca7b3e89b51f",
+  "repositorySourceDigest": "7d4dfb0067e3ecabba0f4b2a1df5787e97ee8caf675c406a6304a028e00f98e4",
+  "logSha256": "ded552a46acbe5bf59259f8e298276344e803155ba735ecbcae94706097601ca",
+  "initScriptSha256": {
+    "cloud-validation.gradle": "21c6a0ee2e97cf83c472513ac31c3d2d456e461185384e9b5e58c0fed298d123",
+    "parallel-tests.gradle": "2366eb867708f83db10b39080abff1b45d2e347bab15ce2ec1c95c3d31cf7ff3",
+    "checkpoint-tools.gradle": "9abea9908af292b57e25d0743d53a00be1443b2b61f473cef5e66d97dd724d67"
+  },
+  "screenshotExporterExclusions": [
+    {
+      "className": "VisualReviewCaptureTest",
+      "methods": 2,
+      "reason": "Overwrites retained tracked screenshot evidence; explicitly excluded from environment setup verification."
+    },
+    {
+      "className": "Units35ChunkCaptureTest",
+      "methods": 2,
+      "reason": "Overwrites retained tracked screenshot evidence; explicitly excluded from environment setup verification."
+    },
+    {
+      "className": "Units610ChunkCaptureTest",
+      "methods": 10,
+      "reason": "Overwrites retained tracked screenshot evidence; explicitly excluded from environment setup verification."
+    },
+    {
+      "className": "Units1115GapCaptureTest",
+      "methods": 2,
+      "reason": "Overwrites retained tracked screenshot evidence; explicitly excluded from environment setup verification."
+    }
+  ],
+  "excludedMethods": 16,
+  "baselineNegative": {
+    "repositoryCommit": "6434cd12cdb22d0bbf6f7f848191d46b46501fca",
+    "command": "source /workspace/setup/android-env.sh; ./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*Unit21ObjectTransferTest' --max-workers=4 --console=plain",
+    "scope": "ORIGINAL_THREE_ANSWER_OBJECTIVE_COMPLETION_THEN_EXPECTED_DISTINCT_CONTEXT_FAILURE",
+    "tests": 1,
+    "failures": 1,
+    "errors": 0,
+    "skipped": 0,
+    "exitCode": 1,
+    "timestamp": "2026-10-13T19:51:42.194Z",
+    "uncommittedTestHarness": true,
+    "xmlSha256": "767c9252fda091750a10641baed0f4be1b3340ff058f47e901f259b21802715d",
+    "rawCurriculumSha256": "5f13e8560d250ca3b3d195ebb2dccae56c8766ca165c9365f2f402af2181a44b"
+  },
+  "earlyValidation": {
+    "repositoryHeadAtUncommittedRuns": "6434cd12cdb22d0bbf6f7f848191d46b46501fca",
+    "workingTree": "Uncommitted production/curriculum/test inputs; source ledger and replay preserve current implementation.",
+    "baselineNegative": {
+      "repositoryCommit": "6434cd12cdb22d0bbf6f7f848191d46b46501fca",
+      "command": "source /workspace/setup/android-env.sh; ./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*Unit21ObjectTransferTest' --max-workers=4 --console=plain",
+      "scope": "ORIGINAL_THREE_ANSWER_OBJECTIVE_COMPLETION_THEN_EXPECTED_DISTINCT_CONTEXT_FAILURE",
+      "tests": 1,
+      "failures": 1,
+      "errors": 0,
+      "skipped": 0,
+      "exitCode": 1,
+      "timestamp": "2026-10-13T19:51:42.194Z",
+      "uncommittedTestHarness": true,
+      "xmlSha256": "767c9252fda091750a10641baed0f4be1b3340ff058f47e901f259b21802715d",
+      "rawCurriculumSha256": "5f13e8560d250ca3b3d195ebb2dccae56c8766ca165c9365f2f402af2181a44b"
+    },
+    "initialScope": {
+      "tests": 2,
+      "passed": 1,
+      "failed": 1,
+      "exitCode": 1,
+      "reason": "Full validation:isolated Russian fragments and competing gloss in feedback; distinct-context credit passed."
+    },
+    "correctedInitialScope": {
+      "tests": 2,
+      "passed": 2,
+      "failed": 0,
+      "exitCode": 0
+    },
+    "expandedScope": {
+      "classes": [
+        {
+          "className": "dev.russiancompanion.v2.Units610InstructionalValidityTest",
+          "tests": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "className": "dev.russiancompanion.v2.Unit21ObjectTransferTest",
+          "tests": 10,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "className": "dev.russiancompanion.v2.Unit21ReflexivePurposeInstructionTest",
+          "tests": 4,
+          "failures": 1,
+          "errors": 0,
+          "skipped": 0
+        }
+      ],
+      "exitCode": 1,
+      "reason": "Legacy English provenance count expected75 before10 new pending records; existing75 unchanged and new10 separately asserted. No product changes."
+    },
+    "commands": {
+      "initial": "source /workspace/setup/android-env.sh; ./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*Unit21ObjectTransferTest' --tests '*Units610InstructionalValidityTest.everyRecognitionObjectiveHasAnIndependentFeatureValidCheck' --max-workers=4 --console=plain",
+      "expanded": "source /workspace/setup/android-env.sh; ./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*Unit21ObjectTransferTest' --tests '*Units610InstructionalValidityTest.everyRecognitionObjectiveHasAnIndependentFeatureValidCheck' --tests '*Unit21ReflexivePurposeInstructionTest' --max-workers=4 --console=plain"
+    },
+    "currentCorrectedRawCurriculumSha256": "b69fa96ba5f948b06eff67163d462136d9a6fb9e467378e1fe9621535af798b3",
+    "initialRawHashNotCaptured": true,
+    "completeSuite": false
+  },
+  "snapshotExpectationRefresh": {
+    "baselineCommit": "6434cd12cdb22d0bbf6f7f848191d46b46501fca",
+    "unit": 21,
+    "changes": [
+      {
+        "file": "app/src/test/java/dev/russiancompanion/v2/BatchECapabilityResearchTest.kt",
+        "field": "packContentReviewDigest",
+        "before": "7e0bd4402ea9085cb686419f5881f6f6ba239152bcc46b8cbf0bb53aee4c95df",
+        "after": "c7e2891e19f0da37bc8a9200ceeb83b9bb8bea62c388e8cfd99bca7b3e89b51f"
+      },
+      {
+        "file": "app/src/test/java/dev/russiancompanion/v2/Units2630SourceIntakeTest.kt",
+        "field": "contentReviewDigest",
+        "before": "cf307d8e607534f20bff01a7af5cdf1c42ffc40dea38670ef1dbc12c005497ba",
+        "after": "a79e2d859adfc1b99d562db212fae357042975353a3a3fbc9c33ab4876b165e7"
+      },
+      {
+        "file": "app/src/test/java/dev/russiancompanion/v2/V2RebuildTest.kt",
+        "field": "packContentReviewDigest",
+        "before": "7e0bd4402ea9085cb686419f5881f6f6ba239152bcc46b8cbf0bb53aee4c95df",
+        "after": "c7e2891e19f0da37bc8a9200ceeb83b9bb8bea62c388e8cfd99bca7b3e89b51f"
+      },
+      {
+        "file": "app/src/test/java/dev/russiancompanion/v2/audit/OwnerGovernanceDecisionTest.kt",
+        "field": "packContentReviewDigest",
+        "before": "7e0bd4402ea9085cb686419f5881f6f6ba239152bcc46b8cbf0bb53aee4c95df",
+        "after": "c7e2891e19f0da37bc8a9200ceeb83b9bb8bea62c388e8cfd99bca7b3e89b51f"
+      }
+    ],
+    "allOtherPerUnitSnapshotAndMappingValuesUnchanged": true,
+    "scope": "Current snapshot expectations only; historical evidence unchanged.",
+    "formalAcceptance": false
+  },
+  "sourceIntake": {
+    "baselineCommit": "6434cd12cdb22d0bbf6f7f848191d46b46501fca",
+    "developmentImplementationCommit": "f47b8649cc72425d3b2854a2dadccdc89c17e617",
+    "status": "BOUNDED_DEVELOPMENT_INTAKE_PENDING_INDEPENDENT_SOURCE_RIGHTS_LINGUISTIC_VERIFICATION",
+    "source": {
+      "id": "src-enwiki-reflexive-pronoun-1374712982",
+      "title": "Reflexive pronoun \u2014 bounded Russian direct-object examples",
+      "license": "CC BY-SA 4.0",
+      "attribution": "English Wikipedia Reflexive pronoun contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374712982 identifies contributors. Exact native language values selected without stress/punctuation changes; qualified source/rights review pending.",
+      "modification": "Exact supplied native direct-object sentences selected; English context independently explained. No whole-article rule adoption, book prose or media. Historical pre2014 evidence retained; formal source/rights review pending."
+    },
+    "rights": {
+      "id": "rights-enwiki-reflexive-pronoun-1374712982",
+      "sourceId": "src-enwiki-reflexive-pronoun-1374712982",
+      "license": "CC BY-SA 4.0",
+      "permitsAppUse": true
+    },
+    "nativeSelections": [
+      {
+        "itemId": "prov-u21-object-transfer-native-self",
+        "unitNumber": 21,
+        "objectiveId": "obj-u21-object-reference",
+        "recordType": "example",
+        "sourceId": "src-enwiki-reflexive-pronoun-1374712982",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Reflexive_pronoun&oldid=1374712982",
+        "sourceRevision": "1374712982",
+        "sourceRecordId": "reflexive-independent-direct-object:=== Russian ===\n\nIn [[Russian Language|Russian]], the pronoun {{lang|ru|\u0441\u0435\u0431\u044f}",
+        "originalSourceText": "=== Russian ===\n\nIn [[Russian Language|Russian]], the pronoun {{lang|ru|\u0441\u0435\u0431\u044f}} {{lang|ru-latn|sebya}} universally means \"oneself\"/\"myself\"/\"himself\", etc. It is inflected depending on the [[Grammatical case|case]].<ref>{{Cite book|title=\u041c\u043e\u0440\u0444\u043e\u043b\u043e\u0433\u0438\u044f \u043f\u0440\u043e\u0441\u0442\u044b\u043c \u044f\u0437\u044b\u043a\u043e\u043c|last=Naumanova|first=Irina|year=2014|location=Moscow|pages=111}}</ref>\n\nWhen used to indicate that the person is the direct object of the verb, one uses the [[Accusative case|accusative]] form, {{lang|ru-latn|sebya}}.<ref>{{Cite book|title=\u041c\u043e\u0440\u0444\u043e\u043b\u043e\u0433\u0438\u044f \u043f\u0440\u043e\u0441\u0442\u044b\u043c \u044f\u0437\u044b\u043a\u043e\u043c|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=98}}</ref> (It does not have a nominative form.)\n\n* {{lang|ru|\u041e\u043d \u043f\u043e\u0440\u0430\u043d\u0438\u043b \u0441\u0435\u0431\u044f}}. {{lang|ru-latn|On poranil sebya}}. (\"He has wounded himself.\")\n\nEmphasized forms are \"sam sebya\" - masculine, \"sama sebya\" - feminine, \"sami sebya\" - plural. Unless there is a particular reason (emphasis, answering a question) the word \"sam\" usually comes after the noun it is emphasizing.<ref>{{Cite book|title=\u041c\u043e\u0440\u0444\u043e\u043b\u043e\u0433\u0438\u044f \u043f\u0440\u043e\u0441\u0442\u044b\u043c \u044f\u0437\u044b\u043a\u043e\u043c|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=121}}</ref>\n\n* {{lang|ru|'''\u041e\u043d''' \u0441\u0430\u043c \u043f\u043e\u0440\u0430\u043d\u0438\u043b \u0441\u0435\u0431\u044f}}. {{lang|ru-latn|On sam poranil sebya}}. (\"'''He''' has wounded himself.\" Literally: \"He himself has wounded himself.\")\nHowever the form, e.g.,  {{lang|ru|\u0441\u0430\u043c \u0441\u0435\u0431\u044f '''o\u043d''' \u043f\u043e\u0440\u0430\u043d\u0438\u043b}}, is grammatical as well.\n\nThis sentence underlines that the subject inflicted the wounds while in the previous example, \"sebya\" merely indicates that the subject was wounded.\n\nThe reflexive pronoun {{lang|ru-latn|sebya}} gave rise the reflexive affix {{lang|ru-latn|-sya}} ({{lang|ru|-\u0441\u044f}}) used to generate [[reflexive verb]]s, but in this context the affix indicates that the action happened accidentally:<ref>{{Cite book|title=\u041c\u043e\u0440\u0444\u043e\u043b\u043e\u0433\u0438\u044f \u043f\u0440\u043e\u0441\u0442\u044b\u043c \u044f\u0437\u044b\u043a\u043e\u043c|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=175}}</ref>\n\n* {{lang|ru|\u041e\u043d \u043f\u043e\u0440\u0430\u043d\u0438\u043b\u0441\u044f}} (He has wounded himself.)\n\nThere are stylistic differences between the three usages, despite being rendered in the same way in English.\n\nRussian has a reflexive possessive as well.<ref>{{Cite book|title=\u041c\u043e\u0440\u0444\u043e\u043b\u043e\u0433\u0438\u044f \u043f\u0440\u043e\u0441\u0442\u044b\u043c \u044f\u0437\u044b\u043a\u043e\u043c|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=82\u201383}}</ref>\n\n* {{lang|ru|\u041e\u043d \u043b\u044e\u0431\u0438\u0442 \u0441\u0432\u043e\u044e \u0436\u0435\u043d\u0443.}} {{lang|ru-latn|On lyubit svoyu zhenu.}} (''He loves his wife (his own).'' - Reflexive possessive)\n* {{lang|ru|\u041e\u043d \u043b\u044e\u0431\u0438\u0442 \u0435\u0433\u043e \u0436\u0435\u043d\u0443.}} {{lang|ru-latn|On lyubit yego zhenu}} (''He loves his wife (someone else's).'' - It is ambiguous in English, but less so in Russian.)\n\nBecause of the existence of reflexive forms, the use of a non-reflexive pronoun indicates a subject that is different from the object. If it is impossible, the sentence is invalid or at least irregular:\n\n* {{lang|ru|\u041e\u043d \u043f\u043e\u0440\u0430\u043d\u0438\u043b \u0435\u0433\u043e}}. {{lang|ru-latn|On poranil ego}}. (\"He has wounded him (someone else).\")",
+        "shippedText": "\u041e\u043d \u043f\u043e\u0440\u0430\u043d\u0438\u043b \u0441\u0435\u0431\u044f",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "attribution": "English Wikipedia Reflexive pronoun contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374712982 identifies contributors. Exact native language values selected without stress/punctuation changes; qualified source/rights review pending.",
+        "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+        "sourceHash": "0111295b473dbe0dd7f6353d48e7bbeccf180e48aa7a93b3cf3827dd62affa50",
+        "contentHash": "b6f9cf992192330bd4d7048b457803f05d6aafa65a0090009708e4173e1eaf3b",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+      },
+      {
+        "itemId": "prov-u21-object-transfer-native-other",
+        "unitNumber": 21,
+        "objectiveId": "obj-u21-object-reference",
+        "recordType": "example",
+        "sourceId": "src-enwiki-reflexive-pronoun-1374712982",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Reflexive_pronoun&oldid=1374712982",
+        "sourceRevision": "1374712982",
+        "sourceRecordId": "reflexive-independent-direct-object:=== Russian ===\n\nIn [[Russian Language|Russian]], the pronoun {{lang|ru|\u0441\u0435\u0431\u044f}",
+        "originalSourceText": "=== Russian ===\n\nIn [[Russian Language|Russian]], the pronoun {{lang|ru|\u0441\u0435\u0431\u044f}} {{lang|ru-latn|sebya}} universally means \"oneself\"/\"myself\"/\"himself\", etc. It is inflected depending on the [[Grammatical case|case]].<ref>{{Cite book|title=\u041c\u043e\u0440\u0444\u043e\u043b\u043e\u0433\u0438\u044f \u043f\u0440\u043e\u0441\u0442\u044b\u043c \u044f\u0437\u044b\u043a\u043e\u043c|last=Naumanova|first=Irina|year=2014|location=Moscow|pages=111}}</ref>\n\nWhen used to indicate that the person is the direct object of the verb, one uses the [[Accusative case|accusative]] form, {{lang|ru-latn|sebya}}.<ref>{{Cite book|title=\u041c\u043e\u0440\u0444\u043e\u043b\u043e\u0433\u0438\u044f \u043f\u0440\u043e\u0441\u0442\u044b\u043c \u044f\u0437\u044b\u043a\u043e\u043c|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=98}}</ref> (It does not have a nominative form.)\n\n* {{lang|ru|\u041e\u043d \u043f\u043e\u0440\u0430\u043d\u0438\u043b \u0441\u0435\u0431\u044f}}. {{lang|ru-latn|On poranil sebya}}. (\"He has wounded himself.\")\n\nEmphasized forms are \"sam sebya\" - masculine, \"sama sebya\" - feminine, \"sami sebya\" - plural. Unless there is a particular reason (emphasis, answering a question) the word \"sam\" usually comes after the noun it is emphasizing.<ref>{{Cite book|title=\u041c\u043e\u0440\u0444\u043e\u043b\u043e\u0433\u0438\u044f \u043f\u0440\u043e\u0441\u0442\u044b\u043c \u044f\u0437\u044b\u043a\u043e\u043c|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=121}}</ref>\n\n* {{lang|ru|'''\u041e\u043d''' \u0441\u0430\u043c \u043f\u043e\u0440\u0430\u043d\u0438\u043b \u0441\u0435\u0431\u044f}}. {{lang|ru-latn|On sam poranil sebya}}. (\"'''He''' has wounded himself.\" Literally: \"He himself has wounded himself.\")\nHowever the form, e.g.,  {{lang|ru|\u0441\u0430\u043c \u0441\u0435\u0431\u044f '''o\u043d''' \u043f\u043e\u0440\u0430\u043d\u0438\u043b}}, is grammatical as well.\n\nThis sentence underlines that the subject inflicted the wounds while in the previous example, \"sebya\" merely indicates that the subject was wounded.\n\nThe reflexive pronoun {{lang|ru-latn|sebya}} gave rise the reflexive affix {{lang|ru-latn|-sya}} ({{lang|ru|-\u0441\u044f}}) used to generate [[reflexive verb]]s, but in this context the affix indicates that the action happened accidentally:<ref>{{Cite book|title=\u041c\u043e\u0440\u0444\u043e\u043b\u043e\u0433\u0438\u044f \u043f\u0440\u043e\u0441\u0442\u044b\u043c \u044f\u0437\u044b\u043a\u043e\u043c|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=175}}</ref>\n\n* {{lang|ru|\u041e\u043d \u043f\u043e\u0440\u0430\u043d\u0438\u043b\u0441\u044f}} (He has wounded himself.)\n\nThere are stylistic differences between the three usages, despite being rendered in the same way in English.\n\nRussian has a reflexive possessive as well.<ref>{{Cite book|title=\u041c\u043e\u0440\u0444\u043e\u043b\u043e\u0433\u0438\u044f \u043f\u0440\u043e\u0441\u0442\u044b\u043c \u044f\u0437\u044b\u043a\u043e\u043c|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=82\u201383}}</ref>\n\n* {{lang|ru|\u041e\u043d \u043b\u044e\u0431\u0438\u0442 \u0441\u0432\u043e\u044e \u0436\u0435\u043d\u0443.}} {{lang|ru-latn|On lyubit svoyu zhenu.}} (''He loves his wife (his own).'' - Reflexive possessive)\n* {{lang|ru|\u041e\u043d \u043b\u044e\u0431\u0438\u0442 \u0435\u0433\u043e \u0436\u0435\u043d\u0443.}} {{lang|ru-latn|On lyubit yego zhenu}} (''He loves his wife (someone else's).'' - It is ambiguous in English, but less so in Russian.)\n\nBecause of the existence of reflexive forms, the use of a non-reflexive pronoun indicates a subject that is different from the object. If it is impossible, the sentence is invalid or at least irregular:\n\n* {{lang|ru|\u041e\u043d \u043f\u043e\u0440\u0430\u043d\u0438\u043b \u0435\u0433\u043e}}. {{lang|ru-latn|On poranil ego}}. (\"He has wounded him (someone else).\")",
+        "shippedText": "\u041e\u043d \u043f\u043e\u0440\u0430\u043d\u0438\u043b \u0435\u0433\u043e",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "attribution": "English Wikipedia Reflexive pronoun contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374712982 identifies contributors. Exact native language values selected without stress/punctuation changes; qualified source/rights review pending.",
+        "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+        "sourceHash": "0111295b473dbe0dd7f6353d48e7bbeccf180e48aa7a93b3cf3827dd62affa50",
+        "contentHash": "8a5be819075e5e040f45d23fe175aa52f6ae59aa816f585ec0e9ba90a16cdfb2",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+      },
+      {
+        "itemId": "prov-u21-object-transfer-native-reflexive",
+        "unitNumber": 21,
+        "objectiveId": "obj-u21-object-reference",
+        "recordType": "meaning",
+        "sourceId": "src-enwiki-reflexive-pronoun-1374712982",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Reflexive_pronoun&oldid=1374712982",
+        "sourceRevision": "1374712982",
+        "sourceRecordId": "reflexive-independent-direct-object:=== Russian ===\n\nIn [[Russian Language|Russian]], the pronoun {{lang|ru|\u0441\u0435\u0431\u044f}",
+        "originalSourceText": "=== Russian ===\n\nIn [[Russian Language|Russian]], the pronoun {{lang|ru|\u0441\u0435\u0431\u044f}} {{lang|ru-latn|sebya}} universally means \"oneself\"/\"myself\"/\"himself\", etc. It is inflected depending on the [[Grammatical case|case]].<ref>{{Cite book|title=\u041c\u043e\u0440\u0444\u043e\u043b\u043e\u0433\u0438\u044f \u043f\u0440\u043e\u0441\u0442\u044b\u043c \u044f\u0437\u044b\u043a\u043e\u043c|last=Naumanova|first=Irina|year=2014|location=Moscow|pages=111}}</ref>\n\nWhen used to indicate that the person is the direct object of the verb, one uses the [[Accusative case|accusative]] form, {{lang|ru-latn|sebya}}.<ref>{{Cite book|title=\u041c\u043e\u0440\u0444\u043e\u043b\u043e\u0433\u0438\u044f \u043f\u0440\u043e\u0441\u0442\u044b\u043c \u044f\u0437\u044b\u043a\u043e\u043c|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=98}}</ref> (It does not have a nominative form.)\n\n* {{lang|ru|\u041e\u043d \u043f\u043e\u0440\u0430\u043d\u0438\u043b \u0441\u0435\u0431\u044f}}. {{lang|ru-latn|On poranil sebya}}. (\"He has wounded himself.\")\n\nEmphasized forms are \"sam sebya\" - masculine, \"sama sebya\" - feminine, \"sami sebya\" - plural. Unless there is a particular reason (emphasis, answering a question) the word \"sam\" usually comes after the noun it is emphasizing.<ref>{{Cite book|title=\u041c\u043e\u0440\u0444\u043e\u043b\u043e\u0433\u0438\u044f \u043f\u0440\u043e\u0441\u0442\u044b\u043c \u044f\u0437\u044b\u043a\u043e\u043c|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=121}}</ref>\n\n* {{lang|ru|'''\u041e\u043d''' \u0441\u0430\u043c \u043f\u043e\u0440\u0430\u043d\u0438\u043b \u0441\u0435\u0431\u044f}}. {{lang|ru-latn|On sam poranil sebya}}. (\"'''He''' has wounded himself.\" Literally: \"He himself has wounded himself.\")\nHowever the form, e.g.,  {{lang|ru|\u0441\u0430\u043c \u0441\u0435\u0431\u044f '''o\u043d''' \u043f\u043e\u0440\u0430\u043d\u0438\u043b}}, is grammatical as well.\n\nThis sentence underlines that the subject inflicted the wounds while in the previous example, \"sebya\" merely indicates that the subject was wounded.\n\nThe reflexive pronoun {{lang|ru-latn|sebya}} gave rise the reflexive affix {{lang|ru-latn|-sya}} ({{lang|ru|-\u0441\u044f}}) used to generate [[reflexive verb]]s, but in this context the affix indicates that the action happened accidentally:<ref>{{Cite book|title=\u041c\u043e\u0440\u0444\u043e\u043b\u043e\u0433\u0438\u044f \u043f\u0440\u043e\u0441\u0442\u044b\u043c \u044f\u0437\u044b\u043a\u043e\u043c|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=175}}</ref>\n\n* {{lang|ru|\u041e\u043d \u043f\u043e\u0440\u0430\u043d\u0438\u043b\u0441\u044f}} (He has wounded himself.)\n\nThere are stylistic differences between the three usages, despite being rendered in the same way in English.\n\nRussian has a reflexive possessive as well.<ref>{{Cite book|title=\u041c\u043e\u0440\u0444\u043e\u043b\u043e\u0433\u0438\u044f \u043f\u0440\u043e\u0441\u0442\u044b\u043c \u044f\u0437\u044b\u043a\u043e\u043c|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=82\u201383}}</ref>\n\n* {{lang|ru|\u041e\u043d \u043b\u044e\u0431\u0438\u0442 \u0441\u0432\u043e\u044e \u0436\u0435\u043d\u0443.}} {{lang|ru-latn|On lyubit svoyu zhenu.}} (''He loves his wife (his own).'' - Reflexive possessive)\n* {{lang|ru|\u041e\u043d \u043b\u044e\u0431\u0438\u0442 \u0435\u0433\u043e \u0436\u0435\u043d\u0443.}} {{lang|ru-latn|On lyubit yego zhenu}} (''He loves his wife (someone else's).'' - It is ambiguous in English, but less so in Russian.)\n\nBecause of the existence of reflexive forms, the use of a non-reflexive pronoun indicates a subject that is different from the object. If it is impossible, the sentence is invalid or at least irregular:\n\n* {{lang|ru|\u041e\u043d \u043f\u043e\u0440\u0430\u043d\u0438\u043b \u0435\u0433\u043e}}. {{lang|ru-latn|On poranil ego}}. (\"He has wounded him (someone else).\")",
+        "shippedText": "\u0441\u0435\u0431\u044f",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "attribution": "English Wikipedia Reflexive pronoun contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374712982 identifies contributors. Exact native language values selected without stress/punctuation changes; qualified source/rights review pending.",
+        "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+        "sourceHash": "0111295b473dbe0dd7f6353d48e7bbeccf180e48aa7a93b3cf3827dd62affa50",
+        "contentHash": "9dfc032c33420654affb02f95ef3c5d558e35c25814a0b8f92c11890c8fb80ab",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+      },
+      {
+        "itemId": "prov-u21-object-transfer-native-personal",
+        "unitNumber": 21,
+        "objectiveId": "obj-u21-object-reference",
+        "recordType": "meaning",
+        "sourceId": "src-enwiki-reflexive-pronoun-1374712982",
+        "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Reflexive_pronoun&oldid=1374712982",
+        "sourceRevision": "1374712982",
+        "sourceRecordId": "reflexive-independent-direct-object:=== Russian ===\n\nIn [[Russian Language|Russian]], the pronoun {{lang|ru|\u0441\u0435\u0431\u044f}",
+        "originalSourceText": "=== Russian ===\n\nIn [[Russian Language|Russian]], the pronoun {{lang|ru|\u0441\u0435\u0431\u044f}} {{lang|ru-latn|sebya}} universally means \"oneself\"/\"myself\"/\"himself\", etc. It is inflected depending on the [[Grammatical case|case]].<ref>{{Cite book|title=\u041c\u043e\u0440\u0444\u043e\u043b\u043e\u0433\u0438\u044f \u043f\u0440\u043e\u0441\u0442\u044b\u043c \u044f\u0437\u044b\u043a\u043e\u043c|last=Naumanova|first=Irina|year=2014|location=Moscow|pages=111}}</ref>\n\nWhen used to indicate that the person is the direct object of the verb, one uses the [[Accusative case|accusative]] form, {{lang|ru-latn|sebya}}.<ref>{{Cite book|title=\u041c\u043e\u0440\u0444\u043e\u043b\u043e\u0433\u0438\u044f \u043f\u0440\u043e\u0441\u0442\u044b\u043c \u044f\u0437\u044b\u043a\u043e\u043c|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=98}}</ref> (It does not have a nominative form.)\n\n* {{lang|ru|\u041e\u043d \u043f\u043e\u0440\u0430\u043d\u0438\u043b \u0441\u0435\u0431\u044f}}. {{lang|ru-latn|On poranil sebya}}. (\"He has wounded himself.\")\n\nEmphasized forms are \"sam sebya\" - masculine, \"sama sebya\" - feminine, \"sami sebya\" - plural. Unless there is a particular reason (emphasis, answering a question) the word \"sam\" usually comes after the noun it is emphasizing.<ref>{{Cite book|title=\u041c\u043e\u0440\u0444\u043e\u043b\u043e\u0433\u0438\u044f \u043f\u0440\u043e\u0441\u0442\u044b\u043c \u044f\u0437\u044b\u043a\u043e\u043c|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=121}}</ref>\n\n* {{lang|ru|'''\u041e\u043d''' \u0441\u0430\u043c \u043f\u043e\u0440\u0430\u043d\u0438\u043b \u0441\u0435\u0431\u044f}}. {{lang|ru-latn|On sam poranil sebya}}. (\"'''He''' has wounded himself.\" Literally: \"He himself has wounded himself.\")\nHowever the form, e.g.,  {{lang|ru|\u0441\u0430\u043c \u0441\u0435\u0431\u044f '''o\u043d''' \u043f\u043e\u0440\u0430\u043d\u0438\u043b}}, is grammatical as well.\n\nThis sentence underlines that the subject inflicted the wounds while in the previous example, \"sebya\" merely indicates that the subject was wounded.\n\nThe reflexive pronoun {{lang|ru-latn|sebya}} gave rise the reflexive affix {{lang|ru-latn|-sya}} ({{lang|ru|-\u0441\u044f}}) used to generate [[reflexive verb]]s, but in this context the affix indicates that the action happened accidentally:<ref>{{Cite book|title=\u041c\u043e\u0440\u0444\u043e\u043b\u043e\u0433\u0438\u044f \u043f\u0440\u043e\u0441\u0442\u044b\u043c \u044f\u0437\u044b\u043a\u043e\u043c|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=175}}</ref>\n\n* {{lang|ru|\u041e\u043d \u043f\u043e\u0440\u0430\u043d\u0438\u043b\u0441\u044f}} (He has wounded himself.)\n\nThere are stylistic differences between the three usages, despite being rendered in the same way in English.\n\nRussian has a reflexive possessive as well.<ref>{{Cite book|title=\u041c\u043e\u0440\u0444\u043e\u043b\u043e\u0433\u0438\u044f \u043f\u0440\u043e\u0441\u0442\u044b\u043c \u044f\u0437\u044b\u043a\u043e\u043c|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=82\u201383}}</ref>\n\n* {{lang|ru|\u041e\u043d \u043b\u044e\u0431\u0438\u0442 \u0441\u0432\u043e\u044e \u0436\u0435\u043d\u0443.}} {{lang|ru-latn|On lyubit svoyu zhenu.}} (''He loves his wife (his own).'' - Reflexive possessive)\n* {{lang|ru|\u041e\u043d \u043b\u044e\u0431\u0438\u0442 \u0435\u0433\u043e \u0436\u0435\u043d\u0443.}} {{lang|ru-latn|On lyubit yego zhenu}} (''He loves his wife (someone else's).'' - It is ambiguous in English, but less so in Russian.)\n\nBecause of the existence of reflexive forms, the use of a non-reflexive pronoun indicates a subject that is different from the object. If it is impossible, the sentence is invalid or at least irregular:\n\n* {{lang|ru|\u041e\u043d \u043f\u043e\u0440\u0430\u043d\u0438\u043b \u0435\u0433\u043e}}. {{lang|ru-latn|On poranil ego}}. (\"He has wounded him (someone else).\")",
+        "shippedText": "\u0435\u0433\u043e",
+        "transformation": "selection",
+        "licenseId": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "attribution": "English Wikipedia Reflexive pronoun contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374712982 identifies contributors. Exact native language values selected without stress/punctuation changes; qualified source/rights review pending.",
+        "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+        "sourceHash": "0111295b473dbe0dd7f6353d48e7bbeccf180e48aa7a93b3cf3827dd62affa50",
+        "contentHash": "c8124ad7c5031eff874f18c0c1151e60becd8cf2e785c7c4e82a5dc659a33e7f",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+      }
+    ],
+    "frozenPublicSources": {
+      "audit/independent-gpt61-2026-10-12/ia016-unit21-research-verification/public-candidates-2026-10-13/enwiki-reflexive-1374712982.wikitext.txt": "0d3aa40c1f8ccc9b3468b0d36273a104360640af336a598d31dda0eaffbdb12d",
+      "audit/independent-gpt61-2026-10-12/ia016-unit21-research-verification/public-candidates-2026-10-13/enwiki-reflexive-586336289.wikitext.txt": "fd86f2d388ece7e4aaf38dcd9dee3f25591ef18dfb4f2c855c2cc8efa2f54643"
+    },
+    "historicalReceiptPreserved": "public-candidates-2026-10-13/RESEARCH_RECEIPT.json",
+    "historicalRevision": "586336289",
+    "historicalTimestamp": "2013-12-16T13:48:07Z",
+    "historicalPairPredatesLater2014Citation": true,
+    "historicalChronologyIsNotLegalClearance": true,
+    "modernBookTextAdopted": false,
+    "ruwikiCandidateAdmitted": false,
+    "wholeArticleAdopted": false,
+    "formalAcceptance": false
+  },
+  "historicalScope": {
+    "mainCommit": "ff539220645670fbf7a1abacaa6f71e828606b80",
+    "mainSourceAnnotations": 579,
+    "exporters": 16,
+    "mainReported": 563,
+    "mainPassed": 562,
+    "mainSkipped": 1,
+    "pr64BaselineCommit": "420f41ff6c2a4417cd829fdee0179b6a3b797eff",
+    "pr64SourceAnnotations": 691,
+    "difference": 112,
+    "handoffExecutionVerified": false,
+    "interpretation": "Current focused execution does not prove historical complete-suite claims. Source annotations differ112 across commits. Overlapping scopes not summed."
+  },
+  "apk": {
+    "applicationId": "dev.russiancompanion",
+    "versionName": "2.0.0-dev",
+    "versionCode": 5,
+    "assembled": false,
+    "signed": false,
+    "artifactIdentity": "NOT_RECORDED",
+    "sha256": "NOT_RECORDED",
+    "signature": "NOT_RECORDED",
+    "historicalArtifactsAreNotCurrentCandidate": true
+  },
+  "coverageScope": "Distinct supplied direct-object reflexive context \u041e\u043d \u043f\u043e\u0440\u0430\u043d\u0438\u043b \u0441\u0435\u0431\u044f versus guided \u042f \u043b\u044e\u0431\u043b\u044e\u0301 \u0441\u0435\u0431\u044f\u0301. Correct guided myself and independent wife objects unchanged. Three cards before practice/full original-example remediation. Supplied recognition, not unrestricted productive grammar/all cases.",
+  "productiveReflexiveClaim": false,
+  "allCasesClaim": false,
+  "formalSourceRightsLinguisticAcceptance": false,
+  "physicalDeviceAcceptance": "OUTSTANDING_LAST_AFTER_FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
+  "release": "NOT_APPROVED"
+}
