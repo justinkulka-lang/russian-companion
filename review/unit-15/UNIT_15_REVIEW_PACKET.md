@@ -11,12 +11,12 @@ Unit 15 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 4f5cb8024d3f68a37052fdf85b5755bffa2a0904
-- Unit content-review SHA-256: 80225df0cc95cc791d6cc062121b3d1988b66fa4d7c11cf7b234ac38d227b6dc
+- Curriculum source commit: 434b32c618f45faa67a765d63d7d1f080ffd05d9
+- Unit content-review SHA-256: 6a2f591fdf4386dfcf371fdb13d4f754ac416dcc85f6918ca9ea63596e46971b
 - Mapping-package SHA-256: 7228dd28cc3954cb8810a77b81ad72f55fa4e51a64d669fd691cd61a120d710c
-- Pack content-review SHA-256: af309219bdc26167ea63b22add20ab0f70031d5c39dafb59499d4cff3c1d69c0
-- Review-package SHA-256: ddf74ed1c3667cb3a5aa3d59789fb6e41963d3a0b85b36d9e10492cb6e633b79
-- Repository source SHA-256: 1ac0b4daaeada361c45aa7a5184afafaabb301c36e2e19fae42c6398c64746a7
+- Pack content-review SHA-256: 90d68f8614841c9d2eec2c1187fad4bbdf0d3948ac9fa8f16a7ec730832a7f2d
+- Review-package SHA-256: 732c5477e1899b42abd579a0d49cf2168b4d913be76576f857c671923d298a2d
+- Repository source SHA-256: 4d59ef3eee6e8a4d942ae2a138618a63a88ab4bbeeacd36663d52bd3214f4918
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -1074,7 +1074,7 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 9e552567adf8798482c6fc13913875eabdedde1b76a40d392e4b0aa77cba99a7
+- Content hash: 6ec85c76de27181b537954ee68928ccec95e38566b1f6eab9eb5d33c208de02b
 
 kind=FORM_SELECTION
 language=en
@@ -1082,11 +1082,11 @@ prompt=Which admitted row is the plural imperative?
 promptLetter=чита́й
 options=чита́йте | чита́ть
 answer=чита́йте
-feedback=Does this answer show the plural imperative? чита́йте.
+feedback=чита́йте is the plural imperative form of the reading verb shown here, used for multiple addressees or polite address to one person. It extends the shown singular form with the plural/polite ending. чита́ть is the infinitive, not the inflected plural imperative requested. This identifies the supplied form, not every possible way to express a command.
 objectiveId=obj-u15-imperative
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the plural imperative?
+distractorRationales= | чита́ть is the infinitive, not the requested inflected plural imperative form.
 testedFeature=PLURAL_IMPERATIVE
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u15-imperative-0
@@ -1094,8 +1094,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-or-u15-imperative-1
 distractorSourceIds= | prov-ex-or-u15-imperative-2
-distractorDifference= | Does this row fail the plural imperative?
-whyAnswerDemonstratesObjective=Does this answer show the plural imperative?
+distractorDifference= | чита́ть is the infinitive, not the requested inflected plural imperative form.
+whyAnswerDemonstratesObjective=чита́йте is the plural imperative form of the reading verb shown here, used for multiple addressees or polite address to one person. It extends the shown singular form with the plural/polite ending. чита́ть is the infinitive, not the inflected plural imperative requested. This identifies the supplied form, not every possible way to express a command.
 contrastMembers=чита́йте | чита́ть
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u15-imperative-0 | prov-ex-or-u15-imperative-1 | prov-ex-or-u15-imperative-2
@@ -1109,7 +1109,7 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 54c95740f5ea0928b7e3a1dd0a5148021941a4e5da06569d1249f4dce9dad13a
+- Content hash: f713c2ed5729d6f369bf1ad4a8da084e3163623a1305a8ce314ab8f282199eff
 
 kind=FORM_SELECTION
 language=en
@@ -1117,11 +1117,11 @@ prompt=Which admitted row is the plural imperative?
 promptLetter=скажи́
 options=скажи́те | сказа́ть
 answer=скажи́те
-feedback=Does this answer show the plural imperative? скажи́те.
+feedback=скажи́те is the plural imperative form of the shown say/tell verb, used for multiple addressees or polite address to one person. сказа́ть is the infinitive, not the inflected plural imperative form requested. The singular and plural imperative forms keep the stress shown in these recorded examples; politeness also depends on context.
 objectiveId=obj-u15-say-request
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the plural imperative?
+distractorRationales= | сказа́ть is the infinitive, not the requested inflected plural imperative form.
 testedFeature=PLURAL_IMPERATIVE
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u15-say-request-0
@@ -1129,8 +1129,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-or-u15-say-request-1
 distractorSourceIds= | prov-ex-or-u15-say-request-2
-distractorDifference= | Does this row fail the plural imperative?
-whyAnswerDemonstratesObjective=Does this answer show the plural imperative?
+distractorDifference= | сказа́ть is the infinitive, not the requested inflected plural imperative form.
+whyAnswerDemonstratesObjective=скажи́те is the plural imperative form of the shown say/tell verb, used for multiple addressees or polite address to one person. сказа́ть is the infinitive, not the inflected plural imperative form requested. The singular and plural imperative forms keep the stress shown in these recorded examples; politeness also depends on context.
 contrastMembers=скажи́те | сказа́ть
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u15-say-request-0 | prov-ex-or-u15-say-request-1 | prov-ex-or-u15-say-request-2
@@ -1144,7 +1144,7 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: b1c2b06767abef5d47ff02e641905b11fc92d12d4d26186a9a16f757f84f5a21
+- Content hash: 0ea88783e6bb66e55e4ce0c7407347512458dcf87ad912135218a430c7b46afb
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1152,11 +1152,11 @@ prompt=Which admitted line is the perfective partner?
 promptLetter=говори́ть
 options=сказа́ть | де́лать
 answer=сказа́ть
-feedback=Does this answer show the perfective partner? сказа́ть.
+feedback=сказа́ть is the perfective partner paired with говори́ть for the say/tell meaning shown here. де́лать is imperfective and belongs to the different do/make pair. This pairing does not mean every use of speak or talk can be replaced by the same perfective verb.
 objectiveId=obj-u15-aspect-consolidate
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the perfective partner?
+distractorRationales= | де́лать is imperfective and belongs to the do/make pair, not the perfective partner for the supplied say/tell meaning.
 testedFeature=PERFECTIVE_PARTNER
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u15-aspect-consolidate-0
@@ -1164,8 +1164,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u15-aspect-consolidate-1-ru
 distractorSourceIds= | prov-ex-u15-aspect-consolidate-2-ru
-distractorDifference= | Does this row fail the perfective partner?
-whyAnswerDemonstratesObjective=Does this answer show the perfective partner?
+distractorDifference= | де́лать is imperfective and belongs to the do/make pair, not the perfective partner for the supplied say/tell meaning.
+whyAnswerDemonstratesObjective=сказа́ть is the perfective partner paired with говори́ть for the say/tell meaning shown here. де́лать is imperfective and belongs to the different do/make pair. This pairing does not mean every use of speak or talk can be replaced by the same perfective verb.
 contrastMembers=сказа́ть | де́лать
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u15-aspect-consolidate-0-ru | prov-ex-u15-aspect-consolidate-1-ru | prov-ex-u15-aspect-consolidate-2-ru
@@ -1179,7 +1179,7 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 2076101542c2aea112fccc25f77aee58942594f8da718b96aa30939c928d2157
+- Content hash: 4882d1f95b24e417eb5c6aebf8c29536e50811e4da210c50f8e4530cd0d48eb1
 
 kind=FORM_SELECTION
 language=en
@@ -1187,11 +1187,11 @@ prompt=Which admitted row is the singular imperative?
 promptLetter=чита́йте
 options=чита́й | чита́ть
 answer=чита́й
-feedback=Does this answer show the singular imperative? чита́й.
+feedback=чита́й is the singular imperative form of the reading verb, used for one informal addressee. чита́ть is the infinitive, not that inflected imperative form. The cue shows the plural/polite form, while this question asks for the singular imperative table row.
 objectiveId=obj-u15-imperative
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the singular imperative?
+distractorRationales= | чита́ть is the infinitive, not the requested inflected singular imperative form.
 testedFeature=SINGULAR_IMPERATIVE
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u15-imperative-1
@@ -1199,8 +1199,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u15-imperative-0
 distractorSourceIds= | prov-ex-or-u15-imperative-2
-distractorDifference= | Does this row fail the singular imperative?
-whyAnswerDemonstratesObjective=Does this answer show the singular imperative?
+distractorDifference= | чита́ть is the infinitive, not the requested inflected singular imperative form.
+whyAnswerDemonstratesObjective=чита́й is the singular imperative form of the reading verb, used for one informal addressee. чита́ть is the infinitive, not that inflected imperative form. The cue shows the plural/polite form, while this question asks for the singular imperative table row.
 contrastMembers=чита́й | чита́ть
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u15-imperative-1 | prov-ex-or-u15-imperative-0 | prov-ex-or-u15-imperative-2
@@ -1214,7 +1214,7 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: f628e69558253fda2c9fa0b47114ea2b0e0d4c36aa0b0b17101369e0ff6c39bc
+- Content hash: 7903d13d48eba1c95d1288301565297c73047af246d95a55ba32c9a6d3d61927
 
 kind=FORM_SELECTION
 language=en
@@ -1222,11 +1222,11 @@ prompt=Which admitted row is the singular imperative?
 promptLetter=чита́ть
 options=чита́й | чита́йте
 answer=чита́й
-feedback=Does this answer show the singular imperative? чита́й.
+feedback=чита́й is the singular imperative form for one informal addressee. чита́йте is the plural imperative form and can also address one person politely. Both are imperative forms of the shown infinitive; the requested singular table row selects the informal form, rather than identifying the actual number of listeners from spelling alone.
 objectiveId=obj-u15-imperative
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the singular imperative?
+distractorRationales= | чита́йте is the plural/polite imperative form, not the singular imperative table row requested here; polite use can still address one person.
 testedFeature=SINGULAR_IMPERATIVE
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u15-imperative-2
@@ -1234,8 +1234,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u15-imperative-0
 distractorSourceIds= | prov-ex-or-u15-imperative-1
-distractorDifference= | Does this row fail the singular imperative?
-whyAnswerDemonstratesObjective=Does this answer show the singular imperative?
+distractorDifference= | чита́йте is the plural/polite imperative form, not the singular imperative table row requested here; polite use can still address one person.
+whyAnswerDemonstratesObjective=чита́й is the singular imperative form for one informal addressee. чита́йте is the plural imperative form and can also address one person politely. Both are imperative forms of the shown infinitive; the requested singular table row selects the informal form, rather than identifying the actual number of listeners from spelling alone.
 contrastMembers=чита́й | чита́йте
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u15-imperative-2 | prov-ex-or-u15-imperative-0 | prov-ex-or-u15-imperative-1
@@ -1249,7 +1249,7 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: f2d979338daeb9ea28ea54dee76643698c1741967d0517d59c39a65bb08e7fc2
+- Content hash: 2cddc8ab6c2eecf95f80179afbed067c08a528e0bfb6b8f198845f2f961d8d1f
 
 kind=FORM_SELECTION
 language=en
@@ -1257,11 +1257,11 @@ prompt=Which admitted row is the plural imperative?
 promptLetter=да́й
 options=да́йте | дать
 answer=да́йте
-feedback=Does this answer show the plural imperative? да́йте.
+feedback=да́йте is the plural imperative form of the shown give verb. It can address multiple people or one person politely. дать is the infinitive, not the inflected imperative form requested. Select the recorded plural imperative of this verb rather than assuming the dictionary form is the requested command form.
 objectiveId=obj-u15-say-request
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the plural imperative?
+distractorRationales= | дать is the infinitive, not the requested inflected plural imperative form.
 testedFeature=PLURAL_IMPERATIVE
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u15-say-request-1
@@ -1269,8 +1269,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u15-say-request-4
 distractorSourceIds= | prov-ex-or-u15-say-request-5
-distractorDifference= | Does this row fail the plural imperative?
-whyAnswerDemonstratesObjective=Does this answer show the plural imperative?
+distractorDifference= | дать is the infinitive, not the requested inflected plural imperative form.
+whyAnswerDemonstratesObjective=да́йте is the plural imperative form of the shown give verb. It can address multiple people or one person politely. дать is the infinitive, not the inflected imperative form requested. Select the recorded plural imperative of this verb rather than assuming the dictionary form is the requested command form.
 contrastMembers=да́йте | дать
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u15-say-request-3 | prov-ex-or-u15-say-request-4 | prov-ex-or-u15-say-request-5
@@ -1284,7 +1284,7 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-openrussian-50e210c4
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: cf6e3d8b376247dc6c7531da342d6158bd8029146a570cec817ac0bdd058510a
+- Content hash: 8a149b0e1bc3c1c460ec678ca5f5e28ba10e3645e91d9f774dcfa8d65e191721
 
 kind=FORM_SELECTION
 language=en
@@ -1292,11 +1292,11 @@ prompt=Which admitted row is the singular imperative?
 promptLetter=скажи́те
 options=скажи́ | сказа́ть
 answer=скажи́
-feedback=Does this answer show the singular imperative? скажи́.
+feedback=скажи́ is the singular imperative form for one informal addressee. сказа́ть is the infinitive, not that inflected imperative form. The cue shows the plural/polite form, but the question asks for the singular imperative row of the same say/tell verb; the verb meaning and aspect stay the same.
 objectiveId=obj-u15-say-request
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the singular imperative?
+distractorRationales= | сказа́ть is the infinitive, not the requested inflected singular imperative form.
 testedFeature=SINGULAR_IMPERATIVE
 evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
 contrastSetId=u15-say-request-2
@@ -1304,8 +1304,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-or-u15-say-request-0
 distractorSourceIds= | prov-ex-or-u15-say-request-2
-distractorDifference= | Does this row fail the singular imperative?
-whyAnswerDemonstratesObjective=Does this answer show the singular imperative?
+distractorDifference= | сказа́ть is the infinitive, not the requested inflected singular imperative form.
+whyAnswerDemonstratesObjective=скажи́ is the singular imperative form for one informal addressee. сказа́ть is the infinitive, not that inflected imperative form. The cue shows the plural/polite form, but the question asks for the singular imperative row of the same say/tell verb; the verb meaning and aspect stay the same.
 contrastMembers=скажи́ | сказа́ть
 relationKind=SAME_LEMMA_DIFFERENT_FIELD
 relationParticipantIds=prov-ex-or-u15-say-request-1 | prov-ex-or-u15-say-request-0 | prov-ex-or-u15-say-request-2
@@ -1319,7 +1319,7 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 471d406acfde8855cbc0a05a645f462348503e5fe38a48ee839c29a773c20303
+- Content hash: 0943d2b114ed17f0f337f1c93fb4b97df3ee04e58d39bd9db8e783ed6b412415
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1327,11 +1327,11 @@ prompt=Which admitted line is the imperfective partner?
 promptLetter=сказа́ть
 options=говори́ть | сде́лать
 answer=говори́ть
-feedback=Does this answer show the imperfective partner? говори́ть.
+feedback=говори́ть is the imperfective partner paired with сказа́ть for the say/tell meaning shown here. сде́лать is perfective and belongs to the different do/make pair. The question asks for the imperfective member of the supplied pair, not another verb of a different meaning.
 objectiveId=obj-u15-aspect-consolidate
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the imperfective partner?
+distractorRationales= | сде́лать is perfective and belongs to the do/make pair, not the imperfective partner for the supplied say/tell meaning.
 testedFeature=IMPERFECTIVE_PARTNER
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u15-aspect-consolidate-1
@@ -1339,8 +1339,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u15-aspect-consolidate-0-ru
 distractorSourceIds= | prov-ex-u15-aspect-consolidate-3-ru
-distractorDifference= | Does this row fail the imperfective partner?
-whyAnswerDemonstratesObjective=Does this answer show the imperfective partner?
+distractorDifference= | сде́лать is perfective and belongs to the do/make pair, not the imperfective partner for the supplied say/tell meaning.
+whyAnswerDemonstratesObjective=говори́ть is the imperfective partner paired with сказа́ть for the say/tell meaning shown here. сде́лать is perfective and belongs to the different do/make pair. The question asks for the imperfective member of the supplied pair, not another verb of a different meaning.
 contrastMembers=говори́ть | сде́лать
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u15-aspect-consolidate-1-ru | prov-ex-u15-aspect-consolidate-0-ru | prov-ex-u15-aspect-consolidate-3-ru
@@ -1354,7 +1354,7 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 264ca6aeb489256e2d9291ad0ef8c106a0454f81d529af66b1c790fde49f4fa5
+- Content hash: c9772e561440790b757aa301b642760e9c8b3957b97792076f7ea686e25fff12
 
 kind=CONTRAST_SELECTION
 language=en
@@ -1362,11 +1362,11 @@ prompt=Which admitted line is the perfective partner?
 promptLetter=де́лать
 options=сде́лать | говори́ть
 answer=сде́лать
-feedback=Does this answer show the perfective partner? сде́лать.
+feedback=сде́лать is the perfective partner of де́лать in the recorded do/make pair. говори́ть is imperfective and belongs to the different say/tell grouping. Learn this supplied pair rather than assuming that adding any prefix gives the matching perfective of any verb.
 objectiveId=obj-u15-aspect-consolidate
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Does this row fail the perfective partner?
+distractorRationales= | говори́ть is imperfective and belongs to a different meaning group, not the perfective partner of the shown do/make verb.
 testedFeature=PERFECTIVE_PARTNER
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u15-aspect-consolidate-2
@@ -1374,8 +1374,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u15-aspect-consolidate-3-ru
 distractorSourceIds= | prov-ex-u15-aspect-consolidate-0-ru
-distractorDifference= | Does this row fail the perfective partner?
-whyAnswerDemonstratesObjective=Does this answer show the perfective partner?
+distractorDifference= | говори́ть is imperfective and belongs to a different meaning group, not the perfective partner of the shown do/make verb.
+whyAnswerDemonstratesObjective=сде́лать is the perfective partner of де́лать in the recorded do/make pair. говори́ть is imperfective and belongs to the different say/tell grouping. Learn this supplied pair rather than assuming that adding any prefix gives the matching perfective of any verb.
 contrastMembers=сде́лать | говори́ть
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u15-aspect-consolidate-2-ru | prov-ex-u15-aspect-consolidate-3-ru | prov-ex-u15-aspect-consolidate-0-ru
@@ -1453,6 +1453,546 @@ attribution=Russian Companion content-audit research synthesis, content-audit-20
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
 sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
 contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u15-feedback-u15-g-aspect-consolidate-0`
+
+- Objectives: obj-u15-aspect-consolidate
+- Sessions: u15-s-orient, u15-s-aspect-consolidate
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7cf4749300568fb2f3bfcf9ae96e82dc97fe278203af131d36e492e7f33e66fb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u15-aspect-consolidate:feedback:u15-g-aspect-consolidate-0
+originalSourceText=Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать/сказать/дать imperative_sg/imperative_pl/accented, and говорить/сказать/делать/сделать aspect/partner. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Moods / Imperative mood definition and singular/plural table, including polite second-person plural and other command constructions. Retained Wikibooks Russian/Useful Words oldid3353859, catalog/sources/units-21-25/wikibooks/useful-words-3353859.txt, CC BY-SA 4.0: complete greeting entry explicitly identifies plural/singular-polite imperative. Retained Wikibooks Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, CC BY-SA 4.0: complete Introduction, Forming aspectual pairs and Unpredictable pairs contexts. Imperative number labels are morphological table rows: plural form can address one person politely; the infinitive distractor is not the requested inflected imperative form, without denying other infinitival command uses. Actual politeness and imperative aspect choice depend on context. The говорить/сказать pairing is bounded to the supplied say/tell meaning and populated partner fields, not every meaning of speak/talk or an automatic prefix recipe. Source pairing-prevalence contradictions and one-to-one aspect/English-tense claims are not adopted. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+сказа́ть is the perfective partner paired with говори́ть for the say/tell meaning shown here. де́лать is imperfective and belongs to the different do/make pair. This pairing does not mean every use of speak or talk can be replaced by the same perfective verb.
+shippedText=сказа́ть is the perfective partner paired with говори́ть for the say/tell meaning shown here. де́лать is imperfective and belongs to the different do/make pair. This pairing does not mean every use of speak or talk can be replaced by the same perfective verb.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e4e821771c3819249170b57ee514c2a8dd963370bdcacb758f1a97ecc7405275
+contentHash=9e9263843eebf1c42a70b0ae064eb1559def81d8d0d2dd1ec16a4074289a159d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u15-feedback-u15-g-aspect-consolidate-0-distractor-1`
+
+- Objectives: obj-u15-aspect-consolidate
+- Sessions: u15-s-orient, u15-s-aspect-consolidate
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 66cf9639aa75bd965d9546cd85720dc570280ed46d83d068f7db3a677d7c9618
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u15-aspect-consolidate:feedback:u15-g-aspect-consolidate-0-distractor-1
+originalSourceText=Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать/сказать/дать imperative_sg/imperative_pl/accented, and говорить/сказать/делать/сделать aspect/partner. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Moods / Imperative mood definition and singular/plural table, including polite second-person plural and other command constructions. Retained Wikibooks Russian/Useful Words oldid3353859, catalog/sources/units-21-25/wikibooks/useful-words-3353859.txt, CC BY-SA 4.0: complete greeting entry explicitly identifies plural/singular-polite imperative. Retained Wikibooks Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, CC BY-SA 4.0: complete Introduction, Forming aspectual pairs and Unpredictable pairs contexts. Imperative number labels are morphological table rows: plural form can address one person politely; the infinitive distractor is not the requested inflected imperative form, without denying other infinitival command uses. Actual politeness and imperative aspect choice depend on context. The говорить/сказать pairing is bounded to the supplied say/tell meaning and populated partner fields, not every meaning of speak/talk or an automatic prefix recipe. Source pairing-prevalence contradictions and one-to-one aspect/English-tense claims are not adopted. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+де́лать is imperfective and belongs to the do/make pair, not the perfective partner for the supplied say/tell meaning.
+shippedText=де́лать is imperfective and belongs to the do/make pair, not the perfective partner for the supplied say/tell meaning.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9e2a1a11a986d47c3622b39f96774823a8685ba3077ef88e256a34814fe76011
+contentHash=738df10a3fc3b71c499189f20ac023fe4b566c171e1ea9718af68b96b7fdb6e6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u15-feedback-u15-g-imperative-0`
+
+- Objectives: obj-u15-imperative
+- Sessions: u15-s-orient, u15-s-imperative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 538154ca923352a88c7757d8b8e6c25298793ec336d80e9871b9f7d9ba588b92
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u15-imperative:feedback:u15-g-imperative-0
+originalSourceText=Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать/сказать/дать imperative_sg/imperative_pl/accented, and говорить/сказать/делать/сделать aspect/partner. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Moods / Imperative mood definition and singular/plural table, including polite second-person plural and other command constructions. Retained Wikibooks Russian/Useful Words oldid3353859, catalog/sources/units-21-25/wikibooks/useful-words-3353859.txt, CC BY-SA 4.0: complete greeting entry explicitly identifies plural/singular-polite imperative. Retained Wikibooks Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, CC BY-SA 4.0: complete Introduction, Forming aspectual pairs and Unpredictable pairs contexts. Imperative number labels are morphological table rows: plural form can address one person politely; the infinitive distractor is not the requested inflected imperative form, without denying other infinitival command uses. Actual politeness and imperative aspect choice depend on context. The говорить/сказать pairing is bounded to the supplied say/tell meaning and populated partner fields, not every meaning of speak/talk or an automatic prefix recipe. Source pairing-prevalence contradictions and one-to-one aspect/English-tense claims are not adopted. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+чита́йте is the plural imperative form of the reading verb shown here, used for multiple addressees or polite address to one person. It extends the shown singular form with the plural/polite ending. чита́ть is the infinitive, not the inflected plural imperative requested. This identifies the supplied form, not every possible way to express a command.
+shippedText=чита́йте is the plural imperative form of the reading verb shown here, used for multiple addressees or polite address to one person. It extends the shown singular form with the plural/polite ending. чита́ть is the infinitive, not the inflected plural imperative requested. This identifies the supplied form, not every possible way to express a command.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e5fdddb0c25923943b0964bf0fc55b77fa7daf1eb968a2f084e6759d9ca1f81d
+contentHash=48c16d7ff98c5103bf79c8ae7fce5a4e273cd8fa6bb809401d98f6ad919511d6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u15-feedback-u15-g-imperative-0-distractor-1`
+
+- Objectives: obj-u15-imperative
+- Sessions: u15-s-orient, u15-s-imperative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 21c73aaa3f4e4a84f84b4c26f21012bdf19f13f906e195f0ba39b44e5f985d78
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u15-imperative:feedback:u15-g-imperative-0-distractor-1
+originalSourceText=Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать/сказать/дать imperative_sg/imperative_pl/accented, and говорить/сказать/делать/сделать aspect/partner. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Moods / Imperative mood definition and singular/plural table, including polite second-person plural and other command constructions. Retained Wikibooks Russian/Useful Words oldid3353859, catalog/sources/units-21-25/wikibooks/useful-words-3353859.txt, CC BY-SA 4.0: complete greeting entry explicitly identifies plural/singular-polite imperative. Retained Wikibooks Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, CC BY-SA 4.0: complete Introduction, Forming aspectual pairs and Unpredictable pairs contexts. Imperative number labels are morphological table rows: plural form can address one person politely; the infinitive distractor is not the requested inflected imperative form, without denying other infinitival command uses. Actual politeness and imperative aspect choice depend on context. The говорить/сказать pairing is bounded to the supplied say/tell meaning and populated partner fields, not every meaning of speak/talk or an automatic prefix recipe. Source pairing-prevalence contradictions and one-to-one aspect/English-tense claims are not adopted. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+чита́ть is the infinitive, not the requested inflected plural imperative form.
+shippedText=чита́ть is the infinitive, not the requested inflected plural imperative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e506b15a6a2b08070b9fa5cbb8924676e577ae79d642323bbd16a7b2fe2e6312
+contentHash=44eeec571dbc5c87a46914ac11baa513dae8a18251f8dba70f777cd2cab5fe10
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u15-feedback-u15-g-say-request-0`
+
+- Objectives: obj-u15-say-request
+- Sessions: u15-s-orient, u15-s-say-request
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c044645673a8127e45a3941b71eb459ebc2af885a4c59c2b90018a252dac1b6c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u15-say-request:feedback:u15-g-say-request-0
+originalSourceText=Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать/сказать/дать imperative_sg/imperative_pl/accented, and говорить/сказать/делать/сделать aspect/partner. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Moods / Imperative mood definition and singular/plural table, including polite second-person plural and other command constructions. Retained Wikibooks Russian/Useful Words oldid3353859, catalog/sources/units-21-25/wikibooks/useful-words-3353859.txt, CC BY-SA 4.0: complete greeting entry explicitly identifies plural/singular-polite imperative. Retained Wikibooks Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, CC BY-SA 4.0: complete Introduction, Forming aspectual pairs and Unpredictable pairs contexts. Imperative number labels are morphological table rows: plural form can address one person politely; the infinitive distractor is not the requested inflected imperative form, without denying other infinitival command uses. Actual politeness and imperative aspect choice depend on context. The говорить/сказать pairing is bounded to the supplied say/tell meaning and populated partner fields, not every meaning of speak/talk or an automatic prefix recipe. Source pairing-prevalence contradictions and one-to-one aspect/English-tense claims are not adopted. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+скажи́те is the plural imperative form of the shown say/tell verb, used for multiple addressees or polite address to one person. сказа́ть is the infinitive, not the inflected plural imperative form requested. The singular and plural imperative forms keep the stress shown in these recorded examples; politeness also depends on context.
+shippedText=скажи́те is the plural imperative form of the shown say/tell verb, used for multiple addressees or polite address to one person. сказа́ть is the infinitive, not the inflected plural imperative form requested. The singular and plural imperative forms keep the stress shown in these recorded examples; politeness also depends on context.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d977f730eba3da6c34321c01c88235d72391a33e03eb5d257e0fce5ceff1c2ca
+contentHash=8af03b12195053ef94708500ec8b0f1831b926ed393ceea781e8a1cd13526f43
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u15-feedback-u15-g-say-request-0-distractor-1`
+
+- Objectives: obj-u15-say-request
+- Sessions: u15-s-orient, u15-s-say-request
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 748067f71609f59aba41b7316a5e929ff62c902f2bd17e9952dce49564d76268
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u15-say-request:feedback:u15-g-say-request-0-distractor-1
+originalSourceText=Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать/сказать/дать imperative_sg/imperative_pl/accented, and говорить/сказать/делать/сделать aspect/partner. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Moods / Imperative mood definition and singular/plural table, including polite second-person plural and other command constructions. Retained Wikibooks Russian/Useful Words oldid3353859, catalog/sources/units-21-25/wikibooks/useful-words-3353859.txt, CC BY-SA 4.0: complete greeting entry explicitly identifies plural/singular-polite imperative. Retained Wikibooks Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, CC BY-SA 4.0: complete Introduction, Forming aspectual pairs and Unpredictable pairs contexts. Imperative number labels are morphological table rows: plural form can address one person politely; the infinitive distractor is not the requested inflected imperative form, without denying other infinitival command uses. Actual politeness and imperative aspect choice depend on context. The говорить/сказать pairing is bounded to the supplied say/tell meaning and populated partner fields, not every meaning of speak/talk or an automatic prefix recipe. Source pairing-prevalence contradictions and one-to-one aspect/English-tense claims are not adopted. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+сказа́ть is the infinitive, not the requested inflected plural imperative form.
+shippedText=сказа́ть is the infinitive, not the requested inflected plural imperative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=563df26aba7f58b4e7eca93b0951b71cb7feb39f038c81a7bfd5392a843a1d73
+contentHash=b94fa08b79d893494d07a2f712cf8f41ac404fe45179d85d29ca1077af6cedaa
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u15-feedback-u15-i-aspect-consolidate-1`
+
+- Objectives: obj-u15-aspect-consolidate
+- Sessions: u15-s-orient, u15-s-aspect-consolidate
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c4a847a33db75b1278796c7df9ce80ecd417d0f21e286c8286b72e002ed9f8e6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u15-aspect-consolidate:feedback:u15-i-aspect-consolidate-1
+originalSourceText=Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать/сказать/дать imperative_sg/imperative_pl/accented, and говорить/сказать/делать/сделать aspect/partner. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Moods / Imperative mood definition and singular/plural table, including polite second-person plural and other command constructions. Retained Wikibooks Russian/Useful Words oldid3353859, catalog/sources/units-21-25/wikibooks/useful-words-3353859.txt, CC BY-SA 4.0: complete greeting entry explicitly identifies plural/singular-polite imperative. Retained Wikibooks Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, CC BY-SA 4.0: complete Introduction, Forming aspectual pairs and Unpredictable pairs contexts. Imperative number labels are morphological table rows: plural form can address one person politely; the infinitive distractor is not the requested inflected imperative form, without denying other infinitival command uses. Actual politeness and imperative aspect choice depend on context. The говорить/сказать pairing is bounded to the supplied say/tell meaning and populated partner fields, not every meaning of speak/talk or an automatic prefix recipe. Source pairing-prevalence contradictions and one-to-one aspect/English-tense claims are not adopted. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+говори́ть is the imperfective partner paired with сказа́ть for the say/tell meaning shown here. сде́лать is perfective and belongs to the different do/make pair. The question asks for the imperfective member of the supplied pair, not another verb of a different meaning.
+shippedText=говори́ть is the imperfective partner paired with сказа́ть for the say/tell meaning shown here. сде́лать is perfective and belongs to the different do/make pair. The question asks for the imperfective member of the supplied pair, not another verb of a different meaning.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1cb204fca63f724b54e8bbb38c8bf042dec915d9ca2187fbd0e532dfb2a478c1
+contentHash=05b63ba00ddaa73c1b7927c22db580073dcd67f2d358b1ce83bd010aa0f31aa4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u15-feedback-u15-i-aspect-consolidate-1-distractor-1`
+
+- Objectives: obj-u15-aspect-consolidate
+- Sessions: u15-s-orient, u15-s-aspect-consolidate
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d59eada9f6e3897d1b787825b681df6e92d285def37647a8ab7e85d17768f6d0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u15-aspect-consolidate:feedback:u15-i-aspect-consolidate-1-distractor-1
+originalSourceText=Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать/сказать/дать imperative_sg/imperative_pl/accented, and говорить/сказать/делать/сделать aspect/partner. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Moods / Imperative mood definition and singular/plural table, including polite second-person plural and other command constructions. Retained Wikibooks Russian/Useful Words oldid3353859, catalog/sources/units-21-25/wikibooks/useful-words-3353859.txt, CC BY-SA 4.0: complete greeting entry explicitly identifies plural/singular-polite imperative. Retained Wikibooks Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, CC BY-SA 4.0: complete Introduction, Forming aspectual pairs and Unpredictable pairs contexts. Imperative number labels are morphological table rows: plural form can address one person politely; the infinitive distractor is not the requested inflected imperative form, without denying other infinitival command uses. Actual politeness and imperative aspect choice depend on context. The говорить/сказать pairing is bounded to the supplied say/tell meaning and populated partner fields, not every meaning of speak/talk or an automatic prefix recipe. Source pairing-prevalence contradictions and one-to-one aspect/English-tense claims are not adopted. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+сде́лать is perfective and belongs to the do/make pair, not the imperfective partner for the supplied say/tell meaning.
+shippedText=сде́лать is perfective and belongs to the do/make pair, not the imperfective partner for the supplied say/tell meaning.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=112052ad76f12071e6118b14b80a48822910e5bdd1fb150718d532c46e013f7b
+contentHash=dd16cd477d5e62048d78c04d1ebdeb41f24de17ac1e49361307151fc7ea125f4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u15-feedback-u15-i-aspect-consolidate-2`
+
+- Objectives: obj-u15-aspect-consolidate
+- Sessions: u15-s-orient, u15-s-aspect-consolidate
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 37609e1996b114195b72be13cb464a606dcf6c3c908db5f7a936c9a42afa2aff
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u15-aspect-consolidate:feedback:u15-i-aspect-consolidate-2
+originalSourceText=Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать/сказать/дать imperative_sg/imperative_pl/accented, and говорить/сказать/делать/сделать aspect/partner. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Moods / Imperative mood definition and singular/plural table, including polite second-person plural and other command constructions. Retained Wikibooks Russian/Useful Words oldid3353859, catalog/sources/units-21-25/wikibooks/useful-words-3353859.txt, CC BY-SA 4.0: complete greeting entry explicitly identifies plural/singular-polite imperative. Retained Wikibooks Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, CC BY-SA 4.0: complete Introduction, Forming aspectual pairs and Unpredictable pairs contexts. Imperative number labels are morphological table rows: plural form can address one person politely; the infinitive distractor is not the requested inflected imperative form, without denying other infinitival command uses. Actual politeness and imperative aspect choice depend on context. The говорить/сказать pairing is bounded to the supplied say/tell meaning and populated partner fields, not every meaning of speak/talk or an automatic prefix recipe. Source pairing-prevalence contradictions and one-to-one aspect/English-tense claims are not adopted. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+сде́лать is the perfective partner of де́лать in the recorded do/make pair. говори́ть is imperfective and belongs to the different say/tell grouping. Learn this supplied pair rather than assuming that adding any prefix gives the matching perfective of any verb.
+shippedText=сде́лать is the perfective partner of де́лать in the recorded do/make pair. говори́ть is imperfective and belongs to the different say/tell grouping. Learn this supplied pair rather than assuming that adding any prefix gives the matching perfective of any verb.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8a0fc77360b6963dc20976011361cb855b46f56256829aac84a16a604f8bae06
+contentHash=e891d4338247377b77258e96fc5225773aabecbf6e3d2d394462a5bfe7ca7813
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u15-feedback-u15-i-aspect-consolidate-2-distractor-1`
+
+- Objectives: obj-u15-aspect-consolidate
+- Sessions: u15-s-orient, u15-s-aspect-consolidate
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 245500153b25d9d92b7d695b8cac7dc646812d4e9ec6e03aed00f591d1c8ffa4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u15-aspect-consolidate:feedback:u15-i-aspect-consolidate-2-distractor-1
+originalSourceText=Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать/сказать/дать imperative_sg/imperative_pl/accented, and говорить/сказать/делать/сделать aspect/partner. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Moods / Imperative mood definition and singular/plural table, including polite second-person plural and other command constructions. Retained Wikibooks Russian/Useful Words oldid3353859, catalog/sources/units-21-25/wikibooks/useful-words-3353859.txt, CC BY-SA 4.0: complete greeting entry explicitly identifies plural/singular-polite imperative. Retained Wikibooks Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, CC BY-SA 4.0: complete Introduction, Forming aspectual pairs and Unpredictable pairs contexts. Imperative number labels are morphological table rows: plural form can address one person politely; the infinitive distractor is not the requested inflected imperative form, without denying other infinitival command uses. Actual politeness and imperative aspect choice depend on context. The говорить/сказать pairing is bounded to the supplied say/tell meaning and populated partner fields, not every meaning of speak/talk or an automatic prefix recipe. Source pairing-prevalence contradictions and one-to-one aspect/English-tense claims are not adopted. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+говори́ть is imperfective and belongs to a different meaning group, not the perfective partner of the shown do/make verb.
+shippedText=говори́ть is imperfective and belongs to a different meaning group, not the perfective partner of the shown do/make verb.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8faade30b17d6ac55376a4d6e1f62ebc38e69f3827f61ee659583aa3e1792712
+contentHash=54f70a6f4e1d4841d8644e05650e3f0ed3679eba216685979d8c35b44ad41647
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u15-feedback-u15-i-imperative-1`
+
+- Objectives: obj-u15-imperative
+- Sessions: u15-s-orient, u15-s-imperative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 39eadee4744f1026b64654d8eedd014d33e7e248fa829a368d15ded5b556784b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u15-imperative:feedback:u15-i-imperative-1
+originalSourceText=Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать/сказать/дать imperative_sg/imperative_pl/accented, and говорить/сказать/делать/сделать aspect/partner. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Moods / Imperative mood definition and singular/plural table, including polite second-person plural and other command constructions. Retained Wikibooks Russian/Useful Words oldid3353859, catalog/sources/units-21-25/wikibooks/useful-words-3353859.txt, CC BY-SA 4.0: complete greeting entry explicitly identifies plural/singular-polite imperative. Retained Wikibooks Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, CC BY-SA 4.0: complete Introduction, Forming aspectual pairs and Unpredictable pairs contexts. Imperative number labels are morphological table rows: plural form can address one person politely; the infinitive distractor is not the requested inflected imperative form, without denying other infinitival command uses. Actual politeness and imperative aspect choice depend on context. The говорить/сказать pairing is bounded to the supplied say/tell meaning and populated partner fields, not every meaning of speak/talk or an automatic prefix recipe. Source pairing-prevalence contradictions and one-to-one aspect/English-tense claims are not adopted. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+чита́й is the singular imperative form of the reading verb, used for one informal addressee. чита́ть is the infinitive, not that inflected imperative form. The cue shows the plural/polite form, while this question asks for the singular imperative table row.
+shippedText=чита́й is the singular imperative form of the reading verb, used for one informal addressee. чита́ть is the infinitive, not that inflected imperative form. The cue shows the plural/polite form, while this question asks for the singular imperative table row.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d5f58c9cae2076eec8dbf4240df768dc6e78401fe5cfdba301c5b69dbda181d8
+contentHash=24841d167d95a0ab38d61cd02ae1c3727a1c5064fc68478bfcd5e41a84b58e23
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u15-feedback-u15-i-imperative-1-distractor-1`
+
+- Objectives: obj-u15-imperative
+- Sessions: u15-s-orient, u15-s-imperative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cbfd64009cf363c5ed4b3d19739152165d061540856b61f13dd82e9633cc71f7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u15-imperative:feedback:u15-i-imperative-1-distractor-1
+originalSourceText=Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать/сказать/дать imperative_sg/imperative_pl/accented, and говорить/сказать/делать/сделать aspect/partner. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Moods / Imperative mood definition and singular/plural table, including polite second-person plural and other command constructions. Retained Wikibooks Russian/Useful Words oldid3353859, catalog/sources/units-21-25/wikibooks/useful-words-3353859.txt, CC BY-SA 4.0: complete greeting entry explicitly identifies plural/singular-polite imperative. Retained Wikibooks Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, CC BY-SA 4.0: complete Introduction, Forming aspectual pairs and Unpredictable pairs contexts. Imperative number labels are morphological table rows: plural form can address one person politely; the infinitive distractor is not the requested inflected imperative form, without denying other infinitival command uses. Actual politeness and imperative aspect choice depend on context. The говорить/сказать pairing is bounded to the supplied say/tell meaning and populated partner fields, not every meaning of speak/talk or an automatic prefix recipe. Source pairing-prevalence contradictions and one-to-one aspect/English-tense claims are not adopted. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+чита́ть is the infinitive, not the requested inflected singular imperative form.
+shippedText=чита́ть is the infinitive, not the requested inflected singular imperative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=810dcce17c9ec3ec0d8b3a65be5847d95713039198bd329132b6255b733a9614
+contentHash=b9dca9c892cd5bf44c5ad68443187bddf0cbd49275eea9f1b9680f3c6bbbce3f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u15-feedback-u15-i-imperative-2`
+
+- Objectives: obj-u15-imperative
+- Sessions: u15-s-orient, u15-s-imperative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f33e44af517450cc762dafe6a19f04a9254b63fcc05f26d49fd472ecb6af6a90
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u15-imperative:feedback:u15-i-imperative-2
+originalSourceText=Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать/сказать/дать imperative_sg/imperative_pl/accented, and говорить/сказать/делать/сделать aspect/partner. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Moods / Imperative mood definition and singular/plural table, including polite second-person plural and other command constructions. Retained Wikibooks Russian/Useful Words oldid3353859, catalog/sources/units-21-25/wikibooks/useful-words-3353859.txt, CC BY-SA 4.0: complete greeting entry explicitly identifies plural/singular-polite imperative. Retained Wikibooks Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, CC BY-SA 4.0: complete Introduction, Forming aspectual pairs and Unpredictable pairs contexts. Imperative number labels are morphological table rows: plural form can address one person politely; the infinitive distractor is not the requested inflected imperative form, without denying other infinitival command uses. Actual politeness and imperative aspect choice depend on context. The говорить/сказать pairing is bounded to the supplied say/tell meaning and populated partner fields, not every meaning of speak/talk or an automatic prefix recipe. Source pairing-prevalence contradictions and one-to-one aspect/English-tense claims are not adopted. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+чита́й is the singular imperative form for one informal addressee. чита́йте is the plural imperative form and can also address one person politely. Both are imperative forms of the shown infinitive; the requested singular table row selects the informal form, rather than identifying the actual number of listeners from spelling alone.
+shippedText=чита́й is the singular imperative form for one informal addressee. чита́йте is the plural imperative form and can also address one person politely. Both are imperative forms of the shown infinitive; the requested singular table row selects the informal form, rather than identifying the actual number of listeners from spelling alone.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=544e12fedfbdab8c777e9a5daad2f2078d7bffb60cf16859cdff4713e6a87f8f
+contentHash=f7d7a5cc9e707e059b823caf3388556727a31a8976c582cfc34483f90bddaf17
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u15-feedback-u15-i-imperative-2-distractor-1`
+
+- Objectives: obj-u15-imperative
+- Sessions: u15-s-orient, u15-s-imperative
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: efd478bae4863d979cf990f37f121bed6602d6824ae74faf14f1dcb84f3ab730
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u15-imperative:feedback:u15-i-imperative-2-distractor-1
+originalSourceText=Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать/сказать/дать imperative_sg/imperative_pl/accented, and говорить/сказать/делать/сделать aspect/partner. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Moods / Imperative mood definition and singular/plural table, including polite second-person plural and other command constructions. Retained Wikibooks Russian/Useful Words oldid3353859, catalog/sources/units-21-25/wikibooks/useful-words-3353859.txt, CC BY-SA 4.0: complete greeting entry explicitly identifies plural/singular-polite imperative. Retained Wikibooks Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, CC BY-SA 4.0: complete Introduction, Forming aspectual pairs and Unpredictable pairs contexts. Imperative number labels are morphological table rows: plural form can address one person politely; the infinitive distractor is not the requested inflected imperative form, without denying other infinitival command uses. Actual politeness and imperative aspect choice depend on context. The говорить/сказать pairing is bounded to the supplied say/tell meaning and populated partner fields, not every meaning of speak/talk or an automatic prefix recipe. Source pairing-prevalence contradictions and one-to-one aspect/English-tense claims are not adopted. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+чита́йте is the plural/polite imperative form, not the singular imperative table row requested here; polite use can still address one person.
+shippedText=чита́йте is the plural/polite imperative form, not the singular imperative table row requested here; polite use can still address one person.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0e8968a37b5718b3a44984abe445dfb99fe518ff70b0b5188c5e712273d6066d
+contentHash=5add5a3bab60793da3841c165439ce90e9d77f757190f017cd8c982d6d605b65
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u15-feedback-u15-i-say-request-1`
+
+- Objectives: obj-u15-say-request
+- Sessions: u15-s-orient, u15-s-say-request
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d21159c30bd8294cdc5f75ffccb4f11cf8892324a0214577561711cb28a2435e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u15-say-request:feedback:u15-i-say-request-1
+originalSourceText=Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать/сказать/дать imperative_sg/imperative_pl/accented, and говорить/сказать/делать/сделать aspect/partner. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Moods / Imperative mood definition and singular/plural table, including polite second-person plural and other command constructions. Retained Wikibooks Russian/Useful Words oldid3353859, catalog/sources/units-21-25/wikibooks/useful-words-3353859.txt, CC BY-SA 4.0: complete greeting entry explicitly identifies plural/singular-polite imperative. Retained Wikibooks Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, CC BY-SA 4.0: complete Introduction, Forming aspectual pairs and Unpredictable pairs contexts. Imperative number labels are morphological table rows: plural form can address one person politely; the infinitive distractor is not the requested inflected imperative form, without denying other infinitival command uses. Actual politeness and imperative aspect choice depend on context. The говорить/сказать pairing is bounded to the supplied say/tell meaning and populated partner fields, not every meaning of speak/talk or an automatic prefix recipe. Source pairing-prevalence contradictions and one-to-one aspect/English-tense claims are not adopted. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+да́йте is the plural imperative form of the shown give verb. It can address multiple people or one person politely. дать is the infinitive, not the inflected imperative form requested. Select the recorded plural imperative of this verb rather than assuming the dictionary form is the requested command form.
+shippedText=да́йте is the plural imperative form of the shown give verb. It can address multiple people or one person politely. дать is the infinitive, not the inflected imperative form requested. Select the recorded plural imperative of this verb rather than assuming the dictionary form is the requested command form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6dc88dc3a8a9783cc75ae8104408d905066d75f628973aa66e7ad21828f94207
+contentHash=d75b15976dfbb9a878b39292c0e329dd37a7c1cdf5f75c6742cdea50f6803f5f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u15-feedback-u15-i-say-request-1-distractor-1`
+
+- Objectives: obj-u15-say-request
+- Sessions: u15-s-orient, u15-s-say-request
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 46af778e85ce443f43b4fd477219df8004a6c008550b46a57f8333c47a170800
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u15-say-request:feedback:u15-i-say-request-1-distractor-1
+originalSourceText=Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать/сказать/дать imperative_sg/imperative_pl/accented, and говорить/сказать/делать/сделать aspect/partner. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Moods / Imperative mood definition and singular/plural table, including polite second-person plural and other command constructions. Retained Wikibooks Russian/Useful Words oldid3353859, catalog/sources/units-21-25/wikibooks/useful-words-3353859.txt, CC BY-SA 4.0: complete greeting entry explicitly identifies plural/singular-polite imperative. Retained Wikibooks Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, CC BY-SA 4.0: complete Introduction, Forming aspectual pairs and Unpredictable pairs contexts. Imperative number labels are morphological table rows: plural form can address one person politely; the infinitive distractor is not the requested inflected imperative form, without denying other infinitival command uses. Actual politeness and imperative aspect choice depend on context. The говорить/сказать pairing is bounded to the supplied say/tell meaning and populated partner fields, not every meaning of speak/talk or an automatic prefix recipe. Source pairing-prevalence contradictions and one-to-one aspect/English-tense claims are not adopted. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+дать is the infinitive, not the requested inflected plural imperative form.
+shippedText=дать is the infinitive, not the requested inflected plural imperative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f60a99a598d6b201851fcb46ae35d1df0a5b64c5780809f3db266afb39bcbd22
+contentHash=2c3e8306594ce779355f74f842cbcb3cecc3b25b6cbf29562bc0fd72d9ff7c5f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u15-feedback-u15-i-say-request-2`
+
+- Objectives: obj-u15-say-request
+- Sessions: u15-s-orient, u15-s-say-request
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 59513b599a26e364ab11bb3862f4a7f3bb80c2b286fd463190ea8c2030d317e1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u15-say-request:feedback:u15-i-say-request-2
+originalSourceText=Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать/сказать/дать imperative_sg/imperative_pl/accented, and говорить/сказать/делать/сделать aspect/partner. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Moods / Imperative mood definition and singular/plural table, including polite second-person plural and other command constructions. Retained Wikibooks Russian/Useful Words oldid3353859, catalog/sources/units-21-25/wikibooks/useful-words-3353859.txt, CC BY-SA 4.0: complete greeting entry explicitly identifies plural/singular-polite imperative. Retained Wikibooks Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, CC BY-SA 4.0: complete Introduction, Forming aspectual pairs and Unpredictable pairs contexts. Imperative number labels are morphological table rows: plural form can address one person politely; the infinitive distractor is not the requested inflected imperative form, without denying other infinitival command uses. Actual politeness and imperative aspect choice depend on context. The говорить/сказать pairing is bounded to the supplied say/tell meaning and populated partner fields, not every meaning of speak/talk or an automatic prefix recipe. Source pairing-prevalence contradictions and one-to-one aspect/English-tense claims are not adopted. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+скажи́ is the singular imperative form for one informal addressee. сказа́ть is the infinitive, not that inflected imperative form. The cue shows the plural/polite form, but the question asks for the singular imperative row of the same say/tell verb; the verb meaning and aspect stay the same.
+shippedText=скажи́ is the singular imperative form for one informal addressee. сказа́ть is the infinitive, not that inflected imperative form. The cue shows the plural/polite form, but the question asks for the singular imperative row of the same say/tell verb; the verb meaning and aspect stay the same.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d18a7685559754406e2c6b6066bd99dd689118dfc31b2cae38e25406460d0f49
+contentHash=83a2aedd1b6033b30b1c8037169d413a6c8cc9914e46f2897e296150f97fa94e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u15-feedback-u15-i-say-request-2-distractor-1`
+
+- Objectives: obj-u15-say-request
+- Sessions: u15-s-orient, u15-s-say-request
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a385f94c5c885bb1d18f682b8e9a31ecb4b799c0e63e25deb2fbd23ae8948c99
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u15-say-request:feedback:u15-i-say-request-2-distractor-1
+originalSourceText=Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать/сказать/дать imperative_sg/imperative_pl/accented, and говорить/сказать/делать/сделать aspect/partner. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Moods / Imperative mood definition and singular/plural table, including polite second-person plural and other command constructions. Retained Wikibooks Russian/Useful Words oldid3353859, catalog/sources/units-21-25/wikibooks/useful-words-3353859.txt, CC BY-SA 4.0: complete greeting entry explicitly identifies plural/singular-polite imperative. Retained Wikibooks Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, CC BY-SA 4.0: complete Introduction, Forming aspectual pairs and Unpredictable pairs contexts. Imperative number labels are morphological table rows: plural form can address one person politely; the infinitive distractor is not the requested inflected imperative form, without denying other infinitival command uses. Actual politeness and imperative aspect choice depend on context. The говорить/сказать pairing is bounded to the supplied say/tell meaning and populated partner fields, not every meaning of speak/talk or an automatic prefix recipe. Source pairing-prevalence contradictions and one-to-one aspect/English-tense claims are not adopted. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+сказа́ть is the infinitive, not the requested inflected singular imperative form.
+shippedText=сказа́ть is the infinitive, not the requested inflected singular imperative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b5b20d94072f332800319a8c00fbdee49c8d76d95fa39745d866a34ec6b1fb98
+contentHash=37394d2d77b2dab3cdaf82f1d8d5a4821e41335212984ada7339e1c75efdb8b2
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -3590,6 +4130,24 @@ permitsAppUse=true
 - `u15-st-book-work` REFERENCE `ref-u1115-attribution`
 - `obj-u15-imperative` PROVENANCE `prov-ca-15-61`
 - `obj-u15-say-request` PROVENANCE `prov-ca-15-62`
+- `obj-u15-aspect-consolidate` PROVENANCE `prov-ca-u15-feedback-u15-g-aspect-consolidate-0`
+- `obj-u15-aspect-consolidate` PROVENANCE `prov-ca-u15-feedback-u15-g-aspect-consolidate-0-distractor-1`
+- `obj-u15-imperative` PROVENANCE `prov-ca-u15-feedback-u15-g-imperative-0`
+- `obj-u15-imperative` PROVENANCE `prov-ca-u15-feedback-u15-g-imperative-0-distractor-1`
+- `obj-u15-say-request` PROVENANCE `prov-ca-u15-feedback-u15-g-say-request-0`
+- `obj-u15-say-request` PROVENANCE `prov-ca-u15-feedback-u15-g-say-request-0-distractor-1`
+- `obj-u15-aspect-consolidate` PROVENANCE `prov-ca-u15-feedback-u15-i-aspect-consolidate-1`
+- `obj-u15-aspect-consolidate` PROVENANCE `prov-ca-u15-feedback-u15-i-aspect-consolidate-1-distractor-1`
+- `obj-u15-aspect-consolidate` PROVENANCE `prov-ca-u15-feedback-u15-i-aspect-consolidate-2`
+- `obj-u15-aspect-consolidate` PROVENANCE `prov-ca-u15-feedback-u15-i-aspect-consolidate-2-distractor-1`
+- `obj-u15-imperative` PROVENANCE `prov-ca-u15-feedback-u15-i-imperative-1`
+- `obj-u15-imperative` PROVENANCE `prov-ca-u15-feedback-u15-i-imperative-1-distractor-1`
+- `obj-u15-imperative` PROVENANCE `prov-ca-u15-feedback-u15-i-imperative-2`
+- `obj-u15-imperative` PROVENANCE `prov-ca-u15-feedback-u15-i-imperative-2-distractor-1`
+- `obj-u15-say-request` PROVENANCE `prov-ca-u15-feedback-u15-i-say-request-1`
+- `obj-u15-say-request` PROVENANCE `prov-ca-u15-feedback-u15-i-say-request-1-distractor-1`
+- `obj-u15-say-request` PROVENANCE `prov-ca-u15-feedback-u15-i-say-request-2`
+- `obj-u15-say-request` PROVENANCE `prov-ca-u15-feedback-u15-i-say-request-2-distractor-1`
 - `obj-u15-imperative` PROVENANCE `prov-ex-or-u15-imperative-0`
 - `obj-u15-imperative` PROVENANCE `prov-ex-or-u15-imperative-0-gloss`
 - `obj-u15-imperative` PROVENANCE `prov-ex-or-u15-imperative-1`
