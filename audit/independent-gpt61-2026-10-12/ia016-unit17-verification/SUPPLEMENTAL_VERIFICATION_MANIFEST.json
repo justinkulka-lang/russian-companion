@@ -1,0 +1,33 @@
+{
+  "repositoryCommit": "409a9e87bd17174e6340fc896b7576115d30a69a",
+  "command": "bash audit/independent-gpt61-2026-10-12/ia016-unit17-verification/verify-supplemental.sh",
+  "expandedScript": "set -e\ncd /workspace/russian-companion\nsource /workspace/setup/android-env.sh\n./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*Units2125SourceIntakeTest.structuralMappingsAreDigestBoundAndStayUnsigned' --max-workers=4 --console=plain\n",
+  "exitCode": 0,
+  "className": "dev.russiancompanion.v2.Units2125SourceIntakeTest",
+  "methods": [
+    "structuralMappingsAreDigestBoundAndStayUnsigned"
+  ],
+  "timestamp": "2026-10-13T18:46:41.775Z",
+  "tests": 1,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "passed": 1,
+  "xmlSha256": "d1094edb968e18e8a68f0837eadd08d202dd270cf636d32e670fef565264e211",
+  "logSha256": "77bfe2cd278e629c2b9af98f9ed28153575d7cc1d817db7aa6b777701094ba01",
+  "fixtureContext": {
+    "priorVerifiedRepositoryCommit": "d8242532259be670f8828c2ffb63a96bf26fadc7",
+    "file": "app/src/test/java/dev/russiancompanion/v2/Units2125SourceIntakeTest.kt",
+    "unit": 20,
+    "before": "bb408265fb5239daeb86d43c007061bff330e02a0a9afc1aa677526ccf57302b",
+    "after": "9238893adafd8d2001561e254f2471a7f23067f1979827873b970ed467768688",
+    "reason": "The previous Unit20 directionality correction already changed the current baseline review identity. This neighboring current assertion had retained its older value. Preserve historical hash in a comment; no source/curriculum/mapping change. Discovered by static snapshot comparison, not a failed execution in this batch.",
+    "scope": "Additional target checks the current unit17 expectation refresh and older unit20 snapshot, not another whole-suite result.",
+    "productionInputsUnchanged": true,
+    "semanticAcceptance": false
+  },
+  "productionInputsIdenticalToPrior31TestCommit": true,
+  "prior31TestCommit": "d8242532259be670f8828c2ffb63a96bf26fadc7",
+  "scope": "One separate current-snapshot/unsigned-mapping test, not a whole suite or another31 run. The prior31 scope remains bound to its recorded commit. No APK assembly/signing, additional lint or physical acceptance in this target.",
+  "formalAcceptance": false
+}

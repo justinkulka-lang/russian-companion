@@ -194,11 +194,27 @@
       "findingId": "IA016",
       "producerSeverity": "MEDIUM",
       "producerStatus": "OPEN",
-      "engineeringDisposition": "OPEN",
+      "engineeringDisposition": "PARTIAL_UNIT17_FIX_PENDING_INDEPENDENT_VERIFICATION_OTHER_GROUPS_OPEN",
       "formalAcceptance": false,
-      "currentExactSameUnitGroups": 10,
+      "currentExactSameUnitGroups": 9,
       "inventoryPath": "IA016_CURRENT_DUPLICATE_INVENTORY.json",
-      "continuationPath": "IA016_INDEPENDENT_TRANSFER_PENDING.md"
+      "continuationPath": "IA016_INDEPENDENT_TRANSFER_PENDING.md",
+      "implementationCommit": "4580f773097f0346e3a8000d8798de259a2e68a0",
+      "evidencePath": "ia016-unit17-verification/FINAL_VERIFICATION_MANIFEST.json",
+      "supplementalEvidencePath": "ia016-unit17-verification/SUPPLEMENTAL_VERIFICATION_MANIFEST.json",
+      "coverageScope": "One guided apple-ownership/selection question; two independent current-clock-time/listener-book-selection questions. Exact complete native cues and requested information differ. Interpretation of these supplied questions, not a second native clock-question variant, productive asking/giving time or unrestricted interrogative transfer.",
+      "newIndependentItemIds": [
+        "u17-i-question-clock",
+        "u17-i-question-book"
+      ],
+      "newGuidedItemId": "u17-g-question-apple",
+      "optionalVocabularyItemIds": [
+        "u17-g-clock-0",
+        "u17-i-clock-1",
+        "u17-i-clock-2"
+      ],
+      "productiveClockQuestionClaim": false,
+      "allQuestionTransferClaim": false
     },
     {
       "findingId": "IA017",
@@ -219,21 +235,22 @@
   "semanticAcceptancePromoted": false,
   "physicalDeviceAcceptance": "OUTSTANDING",
   "release": "NOT_APPROVED",
-  "latestValidatorImplementationCommit": "3761263941eb500b0d542df5c2c18d80146fcbb4",
-  "latestSourceBindingCheckpoint": "382250734d298429928d1e3359f5349c6fe6f0b1",
+  "latestValidatorImplementationCommit": "4580f773097f0346e3a8000d8798de259a2e68a0",
+  "latestSourceBindingCheckpoint": "d8242532259be670f8828c2ffb63a96bf26fadc7",
   "remainingSourceReviewPointers": [
     "IA007_SOURCE_REVIEW_PENDING.md",
     "IA008_SOURCE_REVIEW_PENDING.md"
   ],
   "firstBatchImplementationCommit": "4f5cb8024d3f68a37052fdf85b5755bffa2a0904",
   "firstBatchPacketCheckpoint": "49af91a0f5578c63a3b9b98bbe975f40d2758fcc",
-  "latestCurriculumImplementationCommit": "3761263941eb500b0d542df5c2c18d80146fcbb4",
+  "latestCurriculumImplementationCommit": "4580f773097f0346e3a8000d8798de259a2e68a0",
   "acceptanceOrder": [
     "FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
     "PHYSICAL_DEVICE_ACCEPTANCE_LAST"
   ],
   "physicalDeviceEvidenceRequestTiming": "AFTER_FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
   "latestAppImplementationCommit": "c82e5b4a305c960ca41f660071d0da25070631ea",
-  "latestVerifiedRepositoryCommit": "9a04b30909cfb0f3f21509411c695665d7c68f77",
-  "latestResearchDiagnosticRepositoryCommit": "0edaa0fc635b3579823f7b352f52fa79a675db3d"
+  "latestVerifiedRepositoryCommit": "d8242532259be670f8828c2ffb63a96bf26fadc7",
+  "latestResearchDiagnosticRepositoryCommit": "0edaa0fc635b3579823f7b352f52fa79a675db3d",
+  "latestSupplementalVerifiedRepositoryCommit": "409a9e87bd17174e6340fc896b7576115d30a69a"
 }
