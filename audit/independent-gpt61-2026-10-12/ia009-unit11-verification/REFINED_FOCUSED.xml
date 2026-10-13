@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit11FeedbackCorrectionTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-13T01:53:33.639Z" hostname="d0fbcd1608d3" time="13.647">
+  <properties/>
+  <testcase name="wrongPluralSelectionDisplaysFemininePastExplanation" classname="dev.russiancompanion.v2.Unit11FeedbackCorrectionTest" time="7.033"/>
+  <testcase name="feedbackExplainsPastAgreementAndInfinitiveContrast" classname="dev.russiancompanion.v2.Unit11FeedbackCorrectionTest" time="4.473"/>
+  <testcase name="historicalQuestionFeedbackCreditIsRetainedButStale" classname="dev.russiancompanion.v2.Unit11FeedbackCorrectionTest" time="0.247"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

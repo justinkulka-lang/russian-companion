@@ -1,0 +1,231 @@
+{
+  "verifiedRepositoryCommit": "5e49fdd5727d933a68a94a0479ca95b9c5c14ea9",
+  "implementationCommit": "d38b3d897651f4e963dc51211ef6f3078f752a3b",
+  "command": "bash audit/independent-gpt61-2026-10-12/ia009-unit11-verification/verify.sh",
+  "expandedScript": "set -e\ncd /workspace/russian-companion\nsource /workspace/setup/android-env.sh\n./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*Unit11FeedbackCorrectionTest' --tests '*V2RebuildTest.structuralMappingSafeguardsRejectIncompleteOrInventedRecords' --tests '*UnitReviewPipelineTest.committedUnitPackagesMatchTheGenerator' --tests '*CurriculumReadinessReconciliationTest.committedReportsMatchTheGeneratorAndStayByteIdentical' --tests '*OwnerGovernanceDecisionTest.preparationManifestBindsFactsAndDoesNotPassAFinalAudit' --tests '*GapClosureDossierTest.dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease' --tests '*ReleaseSourceDigestTest.committedCandidateRecordsTheCurrentSourceDigestAndIdentity' --tests '*BatchECapabilityResearchTest.digestsGovernanceAndLaterUnitsStayUnchanged' --tests '*Units610SourceIntakeTest.earlierUnitDigestsStayPutAndLaterUnitsStayIsolated' --tests '*Units610SourceIntakeTest.unitsSixThroughTenStayReviewPendingAndSourceBound' --tests '*Units610SourceIntakeTest.retainedSourceBytesMatchImmutableRevisions' --tests '*Units1115MappingGapTest.preservedUnitDigestsDoNotMoveWhenTheLaterGapIsRecorded' --tests '*Units2125SourceIntakeTest.structuralMappingsAreDigestBoundAndStayUnsigned' --tests '*Units2630SourceIntakeTest.generatedRussianPenguinAudioAndReleaseStayClosed' --tests '*Units1115InstructionalValidityTest.everyRecognitionObjectiveHasAnIndependentFeatureValidCheck' --tests '*Units1115InstructionalValidityTest.changingOnlySourceIdWhileRetainingSourceRecordIdFails' --tests '*Units1115InstructionalValidityTest.changingOriginalSourceTextAndHashWhileRetainingSourceRecordIdFails' --tests '*Units1115InstructionalValidityTest.changingProseRationaleCannotValidateAnInvalidContrast' --tests '*Units1620SourceIntakeTest.structuralMappingsMatchTheOwnedEditionObservations' compileDebugSources lintDebug verifyReleaseGateAttachment --max-workers=4 --console=plain\n",
+  "workingDirectory": "/workspace/russian-companion",
+  "exitCode": 0,
+  "scope": "FOCUSED_NOT_COMPLETE_SUITE",
+  "classes": [
+    {
+      "className": "dev.russiancompanion.release.ReleaseSourceDigestTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "committedCandidateRecordsTheCurrentSourceDigestAndIdentity"
+      ],
+      "timestamp": "2026-10-13T01:55:18.514Z",
+      "sha256": "4816cc5da0c84f8c211fe1c6b34e8fa05326fb108100d7ba5e5fe11f95e5269d"
+    },
+    {
+      "className": "dev.russiancompanion.v2.BatchECapabilityResearchTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "digestsGovernanceAndLaterUnitsStayUnchanged"
+      ],
+      "timestamp": "2026-10-13T01:55:18.977Z",
+      "sha256": "628c11268fa3cd502ec022a8aeaad7d7407bdf6f87ac89e2bef350e1ca4f9b8e"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit11FeedbackCorrectionTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "wrongPluralSelectionDisplaysFemininePastExplanation",
+        "feedbackExplainsPastAgreementAndInfinitiveContrast",
+        "historicalQuestionFeedbackCreditIsRetainedButStale"
+      ],
+      "timestamp": "2026-10-13T01:55:17.809Z",
+      "sha256": "9d06885675b97f4d09a053e5a51bd36e1c19ee9d973abef1e9ed359863cdd10c"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Units1115InstructionalValidityTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "everyRecognitionObjectiveHasAnIndependentFeatureValidCheck",
+        "changingOnlySourceIdWhileRetainingSourceRecordIdFails",
+        "changingProseRationaleCannotValidateAnInvalidContrast",
+        "changingOriginalSourceTextAndHashWhileRetainingSourceRecordIdFails"
+      ],
+      "timestamp": "2026-10-13T01:55:53.630Z",
+      "sha256": "255125fef380bc0bbdd9bb01236620c362343efad2206df40c68fa6e914b025e"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Units1115MappingGapTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "preservedUnitDigestsDoNotMoveWhenTheLaterGapIsRecorded"
+      ],
+      "timestamp": "2026-10-13T01:56:01.820Z",
+      "sha256": "f74abc407430acf867e9fed9046e3f83465df8452dd6e607eea4621232d9a737"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Units1620SourceIntakeTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "structuralMappingsMatchTheOwnedEditionObservations"
+      ],
+      "timestamp": "2026-10-13T01:56:12.780Z",
+      "sha256": "1aa523f7cca01ad95f50d8be762d865daafaa88c19133795f4dfb2d44cd68c71"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Units2125SourceIntakeTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "structuralMappingsAreDigestBoundAndStayUnsigned"
+      ],
+      "timestamp": "2026-10-13T01:55:18.611Z",
+      "sha256": "3a43b9bd225f8b3155c930169292e72a736530a69644e2852f9fabe042c19fd3"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "generatedRussianPenguinAudioAndReleaseStayClosed"
+      ],
+      "timestamp": "2026-10-13T01:56:04.430Z",
+      "sha256": "ec2f9f5373f5d53429ae8bff2e66aa06f4a4cfa9656590002b9262e0c2539d75"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Units610SourceIntakeTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "unitsSixThroughTenStayReviewPendingAndSourceBound",
+        "retainedSourceBytesMatchImmutableRevisions",
+        "earlierUnitDigestsStayPutAndLaterUnitsStayIsolated"
+      ],
+      "timestamp": "2026-10-13T01:56:34.711Z",
+      "sha256": "7cc6a7556a631d4b1964ba323f44008787a32027f9991603f27d7be97405ec41"
+    },
+    {
+      "className": "dev.russiancompanion.v2.V2RebuildTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "structuralMappingSafeguardsRejectIncompleteOrInventedRecords"
+      ],
+      "timestamp": "2026-10-13T01:56:05.703Z",
+      "sha256": "9d648b074f4b0b034db6d0a4a7c579559c4fa8fa711c598c3b43bc3c64865231"
+    },
+    {
+      "className": "dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "committedReportsMatchTheGeneratorAndStayByteIdentical"
+      ],
+      "timestamp": "2026-10-13T01:56:20.401Z",
+      "sha256": "5e5dc646bca78c9d4cad1cdd313ccf8aa29dc1854056d8f38b72c0bc0bdd7156"
+    },
+    {
+      "className": "dev.russiancompanion.v2.audit.GapClosureDossierTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease"
+      ],
+      "timestamp": "2026-10-13T01:56:02.613Z",
+      "sha256": "15fe5dc87f420920c28e6c8dec3c5e397b835aaa71e5f91f599b8718fa393392"
+    },
+    {
+      "className": "dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "preparationManifestBindsFactsAndDoesNotPassAFinalAudit"
+      ],
+      "timestamp": "2026-10-13T01:57:08.714Z",
+      "sha256": "8cdd26fac87dd4095cf7022a9707f26c529754dc745d79c30e06f30a14ce44dd"
+    },
+    {
+      "className": "dev.russiancompanion.v2.review.UnitReviewPipelineTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "committedUnitPackagesMatchTheGenerator"
+      ],
+      "timestamp": "2026-10-13T01:56:51.222Z",
+      "sha256": "75990e135a1bf26e68aeeeb58f275e95dbe25a1cbc67263ed39ed7a5cd189f62"
+    }
+  ],
+  "totals": {
+    "tests": 21,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "passed": 21,
+  "lint": {
+    "status": "PASSED",
+    "severities": {
+      "Warning": 20,
+      "Hint": 1
+    },
+    "sha256": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6",
+    "task": "> Task :app:lintDebug"
+  },
+  "compilation": "> Task :app:compileDebugSources UP-TO-DATE; test compilation in preceding focused/generator runs, production outputs reused",
+  "releaseGateAttachment": "> Task :app:verifyReleaseGateAttachment; PASSED",
+  "excludedExporters": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  },
+  "initScriptSha256": {
+    "cloud-validation.gradle": "21c6a0ee2e97cf83c472513ac31c3d2d456e461185384e9b5e58c0fed298d123",
+    "parallel-tests.gradle": "2366eb867708f83db10b39080abff1b45d2e347bab15ce2ec1c95c3d31cf7ff3"
+  },
+  "logSha256": "376d5b26d41342c1be21bdba745e691f9f7eff600d814c0370c2a9ed41514849",
+  "apk": {
+    "status": "NOT_ASSEMBLED_OR_SIGNED",
+    "identity": "NOT_RECORDED",
+    "signature": "NOT_RECORDED",
+    "historicalMainArtifactIsNotCurrentCandidate": true,
+    "historicalRecord": "audit/content-corrections/cloud-environment-2026-10-12/MAIN_HISTORICAL_VERIFICATION.json"
+  },
+  "historicalScope": "Main ff539220:579 source annotations,16 exporters excluded,563 reported/562 passed/one skipped. PR64 baseline420f41ff:691 source annotations (+112), execution claim unverified. These21 selected tests are not a complete suite.",
+  "priorScopes": "Baseline one-test feedback regression fails at1464bd6419b8514b7133f0bc9954bc90710de6b9. Initial three-test correction scope has two passes and one production-validator failure because explanations lack contiguous feature-name phrases. Wording was revised without changing the validator or scored/source tuples; refined three-test scope passes. Final21 includes real wrong-answer UI, historical-credit retention/invalidation, full production validation, existing Units11-15 recognition/immutable-source/contrast checks, source and current preservation snapshots, and packet/readiness bindings. Overlapping scopes are not summed.",
+  "acceptanceOrder": [
+    "FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
+    "PHYSICAL_DEVICE_ACCEPTANCE_LAST"
+  ],
+  "physicalDeviceAcceptance": "OUTSTANDING_DEFERRED_UNTIL_AFTER_FINAL_AUDIT",
+  "semanticAcceptance": false,
+  "publicRelease": "NOT_APPROVED"
+}
