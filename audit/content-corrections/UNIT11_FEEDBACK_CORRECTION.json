@@ -1,0 +1,1004 @@
+{
+  "baselineCommit": "1464bd6419b8514b7133f0bc9954bc90710de6b9",
+  "beforeSha256": "f7abb592f002abe77194a993d4a3de40dad3975e956926407a18b8d1609a48f1",
+  "afterSha256": "0839494cd18b90e5038fa33a9ba60a2b555d06eb8711e114c9a30a9e0532a59a",
+  "addedProvenanceIds": [
+    "prov-ca-u11-feedback-u11-g-past-read-0",
+    "prov-ca-u11-feedback-u11-g-past-read-0-distractor-1",
+    "prov-ca-u11-feedback-u11-g-past-read-0-distractor-2",
+    "prov-ca-u11-feedback-u11-i-past-read-1",
+    "prov-ca-u11-feedback-u11-i-past-read-1-distractor-1",
+    "prov-ca-u11-feedback-u11-i-past-read-2",
+    "prov-ca-u11-feedback-u11-i-past-read-2-distractor-1",
+    "prov-ca-u11-feedback-u11-g-past-be-0",
+    "prov-ca-u11-feedback-u11-g-past-be-0-distractor-1",
+    "prov-ca-u11-feedback-u11-g-past-be-0-distractor-2",
+    "prov-ca-u11-feedback-u11-i-past-be-1",
+    "prov-ca-u11-feedback-u11-i-past-be-1-distractor-1",
+    "prov-ca-u11-feedback-u11-i-past-be-2",
+    "prov-ca-u11-feedback-u11-i-past-be-2-distractor-1",
+    "prov-ca-u11-feedback-u11-g-reflexive-0",
+    "prov-ca-u11-feedback-u11-g-reflexive-0-distractor-1",
+    "prov-ca-u11-feedback-u11-g-reflexive-0-distractor-2",
+    "prov-ca-u11-feedback-u11-i-reflexive-1",
+    "prov-ca-u11-feedback-u11-i-reflexive-1-distractor-1",
+    "prov-ca-u11-feedback-u11-i-reflexive-2",
+    "prov-ca-u11-feedback-u11-i-reflexive-2-distractor-1"
+  ],
+  "changes": [
+    {
+      "before": {
+        "id": "u11-g-past-read-0",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted row is the feminine past?",
+        "promptLetter": "чита́л",
+        "options": [
+          "чита́ла",
+          "чита́ло",
+          "чита́ли"
+        ],
+        "answer": "чита́ла",
+        "feedback": "Does this answer show the feminine past? чита́ла.",
+        "objectiveId": "obj-u11-past-read",
+        "sourceId": "src-openrussian-50e210c4",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Does this row fail the feminine past?",
+          "Does this row fail the feminine past?"
+        ],
+        "assessment": {
+          "testedFeature": "FEMININE_PAST",
+          "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+          "contrastSetId": "u11-past-read-0",
+          "cueLanguage": "ru",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ex-or-u11-past-read-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-or-u11-past-read-2",
+            "prov-ex-or-u11-past-read-3"
+          ],
+          "distractorDifference": [
+            "",
+            "Does this row fail the feminine past?",
+            "Does this row fail the feminine past?"
+          ],
+          "whyAnswerDemonstratesObjective": "Does this answer show the feminine past?",
+          "contrastMembers": [
+            "чита́ла",
+            "чита́ло",
+            "чита́ли"
+          ],
+          "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+          "relationParticipantIds": [
+            "prov-ex-or-u11-past-read-0",
+            "prov-ex-or-u11-past-read-1",
+            "prov-ex-or-u11-past-read-2",
+            "prov-ex-or-u11-past-read-3"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      },
+      "after": {
+        "id": "u11-g-past-read-0",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted row is the feminine past?",
+        "promptLetter": "чита́л",
+        "options": [
+          "чита́ла",
+          "чита́ло",
+          "чита́ли"
+        ],
+        "answer": "чита́ла",
+        "feedback": "чита́ла is the feminine past form for a singular subject of the verb meaning to read. чита́ло is neuter singular and чита́ли is plural. The past form matches the subject in gender and number; choose feminine singular for this question.",
+        "objectiveId": "obj-u11-past-read",
+        "sourceId": "src-openrussian-50e210c4",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "чита́ло is neuter singular past, not feminine singular.",
+          "чита́ли is plural past, not feminine singular."
+        ],
+        "assessment": {
+          "testedFeature": "FEMININE_PAST",
+          "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+          "contrastSetId": "u11-past-read-0",
+          "cueLanguage": "ru",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ex-or-u11-past-read-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-or-u11-past-read-2",
+            "prov-ex-or-u11-past-read-3"
+          ],
+          "distractorDifference": [
+            "",
+            "чита́ло is neuter singular past, not feminine singular.",
+            "чита́ли is plural past, not feminine singular."
+          ],
+          "whyAnswerDemonstratesObjective": "чита́ла is the feminine past form for a singular subject of the verb meaning to read. чита́ло is neuter singular and чита́ли is plural. The past form matches the subject in gender and number; choose feminine singular for this question.",
+          "contrastMembers": [
+            "чита́ла",
+            "чита́ло",
+            "чита́ли"
+          ],
+          "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+          "relationParticipantIds": [
+            "prov-ex-or-u11-past-read-0",
+            "prov-ex-or-u11-past-read-1",
+            "prov-ex-or-u11-past-read-2",
+            "prov-ex-or-u11-past-read-3"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u11-i-past-read-1",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted row is the masculine past?",
+        "promptLetter": "чита́ла",
+        "options": [
+          "чита́л",
+          "чита́ли"
+        ],
+        "answer": "чита́л",
+        "feedback": "Does this answer show the masculine past? чита́л.",
+        "objectiveId": "obj-u11-past-read",
+        "sourceId": "src-openrussian-50e210c4",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Does this row fail the masculine past?"
+        ],
+        "assessment": {
+          "testedFeature": "MASCULINE_PAST",
+          "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+          "contrastSetId": "u11-past-read-1",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-or-u11-past-read-0"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-or-u11-past-read-3"
+          ],
+          "distractorDifference": [
+            "",
+            "Does this row fail the masculine past?"
+          ],
+          "whyAnswerDemonstratesObjective": "Does this answer show the masculine past?",
+          "contrastMembers": [
+            "чита́л",
+            "чита́ли"
+          ],
+          "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+          "relationParticipantIds": [
+            "prov-ex-or-u11-past-read-1",
+            "prov-ex-or-u11-past-read-0",
+            "prov-ex-or-u11-past-read-3"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      },
+      "after": {
+        "id": "u11-i-past-read-1",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted row is the masculine past?",
+        "promptLetter": "чита́ла",
+        "options": [
+          "чита́л",
+          "чита́ли"
+        ],
+        "answer": "чита́л",
+        "feedback": "чита́л is the masculine past form for a singular subject of the verb meaning to read. чита́ли is plural past. The cue shows the feminine singular form, but the question asks for masculine singular of the same verb.",
+        "objectiveId": "obj-u11-past-read",
+        "sourceId": "src-openrussian-50e210c4",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "чита́ли is plural past, not masculine singular."
+        ],
+        "assessment": {
+          "testedFeature": "MASCULINE_PAST",
+          "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+          "contrastSetId": "u11-past-read-1",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-or-u11-past-read-0"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-or-u11-past-read-3"
+          ],
+          "distractorDifference": [
+            "",
+            "чита́ли is plural past, not masculine singular."
+          ],
+          "whyAnswerDemonstratesObjective": "чита́л is the masculine past form for a singular subject of the verb meaning to read. чита́ли is plural past. The cue shows the feminine singular form, but the question asks for masculine singular of the same verb.",
+          "contrastMembers": [
+            "чита́л",
+            "чита́ли"
+          ],
+          "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+          "relationParticipantIds": [
+            "prov-ex-or-u11-past-read-1",
+            "prov-ex-or-u11-past-read-0",
+            "prov-ex-or-u11-past-read-3"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u11-i-past-read-2",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted line is the feminine past?",
+        "promptLetter": "Он чита́л",
+        "options": [
+          "Она чита́ла",
+          "Они чита́ли"
+        ],
+        "answer": "Она чита́ла",
+        "feedback": "Does this answer show the feminine past? Она чита́ла.",
+        "objectiveId": "obj-u11-past-read",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Does this row fail the feminine past?"
+        ],
+        "assessment": {
+          "testedFeature": "FEMININE_PAST",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u11-past-read-2",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u11-past-read-5-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-u11-past-read-x-0"
+          ],
+          "distractorDifference": [
+            "",
+            "Does this row fail the feminine past?"
+          ],
+          "whyAnswerDemonstratesObjective": "Does this answer show the feminine past?",
+          "contrastMembers": [
+            "Она чита́ла",
+            "Они чита́ли"
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-ex-u11-past-read-4-ru",
+            "prov-ex-u11-past-read-5-ru",
+            "prov-u11-past-read-x-0"
+          ],
+          "responseKind": "RUSSIAN_CLAUSE"
+        }
+      },
+      "after": {
+        "id": "u11-i-past-read-2",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted line is the feminine past?",
+        "promptLetter": "Он чита́л",
+        "options": [
+          "Она чита́ла",
+          "Они чита́ли"
+        ],
+        "answer": "Она чита́ла",
+        "feedback": "Она чита́ла means she was reading: the feminine singular subject matches the feminine past verb. Они чита́ли means they were reading and uses plural agreement. The question asks for the feminine singular line, not the plural line.",
+        "objectiveId": "obj-u11-past-read",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Они чита́ли has a plural subject and plural past verb, rather than feminine singular agreement."
+        ],
+        "assessment": {
+          "testedFeature": "FEMININE_PAST",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u11-past-read-2",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u11-past-read-5-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-u11-past-read-x-0"
+          ],
+          "distractorDifference": [
+            "",
+            "Они чита́ли has a plural subject and plural past verb, rather than feminine singular agreement."
+          ],
+          "whyAnswerDemonstratesObjective": "Она чита́ла means she was reading: the feminine singular subject matches the feminine past verb. Они чита́ли means they were reading and uses plural agreement. The question asks for the feminine singular line, not the plural line.",
+          "contrastMembers": [
+            "Она чита́ла",
+            "Они чита́ли"
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-ex-u11-past-read-4-ru",
+            "prov-ex-u11-past-read-5-ru",
+            "prov-u11-past-read-x-0"
+          ],
+          "responseKind": "RUSSIAN_CLAUSE"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u11-g-past-be-0",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted row is the feminine past?",
+        "promptLetter": "бы́л",
+        "options": [
+          "была́",
+          "бы́ло",
+          "бы́ли"
+        ],
+        "answer": "была́",
+        "feedback": "Does this answer show the feminine past? была́.",
+        "objectiveId": "obj-u11-past-be",
+        "sourceId": "src-openrussian-50e210c4",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Does this row fail the feminine past?",
+          "Does this row fail the feminine past?"
+        ],
+        "assessment": {
+          "testedFeature": "FEMININE_PAST",
+          "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+          "contrastSetId": "u11-past-be-0",
+          "cueLanguage": "ru",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ex-or-u11-past-be-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-or-u11-past-be-2",
+            "prov-ex-or-u11-past-be-3"
+          ],
+          "distractorDifference": [
+            "",
+            "Does this row fail the feminine past?",
+            "Does this row fail the feminine past?"
+          ],
+          "whyAnswerDemonstratesObjective": "Does this answer show the feminine past?",
+          "contrastMembers": [
+            "была́",
+            "бы́ло",
+            "бы́ли"
+          ],
+          "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+          "relationParticipantIds": [
+            "prov-ex-or-u11-past-be-0",
+            "prov-ex-or-u11-past-be-1",
+            "prov-ex-or-u11-past-be-2",
+            "prov-ex-or-u11-past-be-3"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      },
+      "after": {
+        "id": "u11-g-past-be-0",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted row is the feminine past?",
+        "promptLetter": "бы́л",
+        "options": [
+          "была́",
+          "бы́ло",
+          "бы́ли"
+        ],
+        "answer": "была́",
+        "feedback": "была́ is the feminine past form for a singular subject meaning was. бы́ло is neuter singular and бы́ли is plural. Choose the past form with the feminine singular agreement requested here.",
+        "objectiveId": "obj-u11-past-be",
+        "sourceId": "src-openrussian-50e210c4",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "бы́ло is neuter singular past, not feminine singular.",
+          "бы́ли is plural past, not feminine singular."
+        ],
+        "assessment": {
+          "testedFeature": "FEMININE_PAST",
+          "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+          "contrastSetId": "u11-past-be-0",
+          "cueLanguage": "ru",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ex-or-u11-past-be-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-or-u11-past-be-2",
+            "prov-ex-or-u11-past-be-3"
+          ],
+          "distractorDifference": [
+            "",
+            "бы́ло is neuter singular past, not feminine singular.",
+            "бы́ли is plural past, not feminine singular."
+          ],
+          "whyAnswerDemonstratesObjective": "была́ is the feminine past form for a singular subject meaning was. бы́ло is neuter singular and бы́ли is plural. Choose the past form with the feminine singular agreement requested here.",
+          "contrastMembers": [
+            "была́",
+            "бы́ло",
+            "бы́ли"
+          ],
+          "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+          "relationParticipantIds": [
+            "prov-ex-or-u11-past-be-0",
+            "prov-ex-or-u11-past-be-1",
+            "prov-ex-or-u11-past-be-2",
+            "prov-ex-or-u11-past-be-3"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u11-i-past-be-1",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted row is the plural past?",
+        "promptLetter": "была́",
+        "options": [
+          "бы́ли",
+          "бы́л"
+        ],
+        "answer": "бы́ли",
+        "feedback": "Does this answer show the plural past? бы́ли.",
+        "objectiveId": "obj-u11-past-be",
+        "sourceId": "src-openrussian-50e210c4",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Does this row fail the plural past?"
+        ],
+        "assessment": {
+          "testedFeature": "PLURAL_PAST",
+          "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+          "contrastSetId": "u11-past-be-1",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-or-u11-past-be-3"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-or-u11-past-be-0"
+          ],
+          "distractorDifference": [
+            "",
+            "Does this row fail the plural past?"
+          ],
+          "whyAnswerDemonstratesObjective": "Does this answer show the plural past?",
+          "contrastMembers": [
+            "бы́ли",
+            "бы́л"
+          ],
+          "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+          "relationParticipantIds": [
+            "prov-ex-or-u11-past-be-1",
+            "prov-ex-or-u11-past-be-3",
+            "prov-ex-or-u11-past-be-0"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      },
+      "after": {
+        "id": "u11-i-past-be-1",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted row is the plural past?",
+        "promptLetter": "была́",
+        "options": [
+          "бы́ли",
+          "бы́л"
+        ],
+        "answer": "бы́ли",
+        "feedback": "бы́ли is the plural past form meaning were. бы́л is masculine singular past. The cue shows feminine singular, but the requested row is plural; past agreement follows the subject number.",
+        "objectiveId": "obj-u11-past-be",
+        "sourceId": "src-openrussian-50e210c4",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "бы́л is masculine singular past, not the plural past requested here."
+        ],
+        "assessment": {
+          "testedFeature": "PLURAL_PAST",
+          "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+          "contrastSetId": "u11-past-be-1",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-or-u11-past-be-3"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-or-u11-past-be-0"
+          ],
+          "distractorDifference": [
+            "",
+            "бы́л is masculine singular past, not the plural past requested here."
+          ],
+          "whyAnswerDemonstratesObjective": "бы́ли is the plural past form meaning were. бы́л is masculine singular past. The cue shows feminine singular, but the requested row is plural; past agreement follows the subject number.",
+          "contrastMembers": [
+            "бы́ли",
+            "бы́л"
+          ],
+          "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+          "relationParticipantIds": [
+            "prov-ex-or-u11-past-be-1",
+            "prov-ex-or-u11-past-be-3",
+            "prov-ex-or-u11-past-be-0"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u11-i-past-be-2",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted row is the plural past?",
+        "promptLetter": "бы́ло",
+        "options": [
+          "бы́ли",
+          "бы́л"
+        ],
+        "answer": "бы́ли",
+        "feedback": "Does this answer show the plural past? бы́ли.",
+        "objectiveId": "obj-u11-past-be",
+        "sourceId": "src-openrussian-50e210c4",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Does this row fail the plural past?"
+        ],
+        "assessment": {
+          "testedFeature": "PLURAL_PAST",
+          "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+          "contrastSetId": "u11-past-be-2",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-or-u11-past-be-3"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-or-u11-past-be-0"
+          ],
+          "distractorDifference": [
+            "",
+            "Does this row fail the plural past?"
+          ],
+          "whyAnswerDemonstratesObjective": "Does this answer show the plural past?",
+          "contrastMembers": [
+            "бы́ли",
+            "бы́л"
+          ],
+          "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+          "relationParticipantIds": [
+            "prov-ex-or-u11-past-be-2",
+            "prov-ex-or-u11-past-be-3",
+            "prov-ex-or-u11-past-be-0"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      },
+      "after": {
+        "id": "u11-i-past-be-2",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted row is the plural past?",
+        "promptLetter": "бы́ло",
+        "options": [
+          "бы́ли",
+          "бы́л"
+        ],
+        "answer": "бы́ли",
+        "feedback": "бы́ли is the plural past form meaning were. бы́л is masculine singular past. The cue shows neuter singular, but the question asks for the plural form of the same verb.",
+        "objectiveId": "obj-u11-past-be",
+        "sourceId": "src-openrussian-50e210c4",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "бы́л is masculine singular past, not the plural past requested here."
+        ],
+        "assessment": {
+          "testedFeature": "PLURAL_PAST",
+          "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+          "contrastSetId": "u11-past-be-2",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-or-u11-past-be-3"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-or-u11-past-be-0"
+          ],
+          "distractorDifference": [
+            "",
+            "бы́л is masculine singular past, not the plural past requested here."
+          ],
+          "whyAnswerDemonstratesObjective": "бы́ли is the plural past form meaning were. бы́л is masculine singular past. The cue shows neuter singular, but the question asks for the plural form of the same verb.",
+          "contrastMembers": [
+            "бы́ли",
+            "бы́л"
+          ],
+          "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+          "relationParticipantIds": [
+            "prov-ex-or-u11-past-be-2",
+            "prov-ex-or-u11-past-be-3",
+            "prov-ex-or-u11-past-be-0"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u11-g-reflexive-0",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted row is the feminine past?",
+        "promptLetter": "улыба́лся",
+        "options": [
+          "улыба́лась",
+          "улыба́лись",
+          "улыба́ться"
+        ],
+        "answer": "улыба́лась",
+        "feedback": "Does this answer show the feminine past? улыба́лась.",
+        "objectiveId": "obj-u11-reflexive",
+        "sourceId": "src-openrussian-50e210c4",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Does this row fail the feminine past?",
+          "Does this row fail the feminine past?"
+        ],
+        "assessment": {
+          "testedFeature": "FEMININE_PAST",
+          "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+          "contrastSetId": "u11-reflexive-0",
+          "cueLanguage": "ru",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ex-or-u11-reflexive-2"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-or-u11-reflexive-3",
+            "prov-ex-or-u11-reflexive-0"
+          ],
+          "distractorDifference": [
+            "",
+            "Does this row fail the feminine past?",
+            "Does this row fail the feminine past?"
+          ],
+          "whyAnswerDemonstratesObjective": "Does this answer show the feminine past?",
+          "contrastMembers": [
+            "улыба́лась",
+            "улыба́лись",
+            "улыба́ться"
+          ],
+          "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+          "relationParticipantIds": [
+            "prov-ex-or-u11-reflexive-1",
+            "prov-ex-or-u11-reflexive-2",
+            "prov-ex-or-u11-reflexive-3",
+            "prov-ex-or-u11-reflexive-0"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      },
+      "after": {
+        "id": "u11-g-reflexive-0",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted row is the feminine past?",
+        "promptLetter": "улыба́лся",
+        "options": [
+          "улыба́лась",
+          "улыба́лись",
+          "улыба́ться"
+        ],
+        "answer": "улыба́лась",
+        "feedback": "улыба́лась is the feminine past form for a singular subject of the verb meaning to smile. улыба́лись is plural past, while улыба́ться is the infinitive, not a past form. The reflexive ending remains on the past verb; choose feminine singular agreement.",
+        "objectiveId": "obj-u11-reflexive",
+        "sourceId": "src-openrussian-50e210c4",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "улыба́лись is plural past, not feminine singular.",
+          "улыба́ться is the infinitive meaning to smile, not a past-tense form."
+        ],
+        "assessment": {
+          "testedFeature": "FEMININE_PAST",
+          "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+          "contrastSetId": "u11-reflexive-0",
+          "cueLanguage": "ru",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ex-or-u11-reflexive-2"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-or-u11-reflexive-3",
+            "prov-ex-or-u11-reflexive-0"
+          ],
+          "distractorDifference": [
+            "",
+            "улыба́лись is plural past, not feminine singular.",
+            "улыба́ться is the infinitive meaning to smile, not a past-tense form."
+          ],
+          "whyAnswerDemonstratesObjective": "улыба́лась is the feminine past form for a singular subject of the verb meaning to smile. улыба́лись is plural past, while улыба́ться is the infinitive, not a past form. The reflexive ending remains on the past verb; choose feminine singular agreement.",
+          "contrastMembers": [
+            "улыба́лась",
+            "улыба́лись",
+            "улыба́ться"
+          ],
+          "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+          "relationParticipantIds": [
+            "prov-ex-or-u11-reflexive-1",
+            "prov-ex-or-u11-reflexive-2",
+            "prov-ex-or-u11-reflexive-3",
+            "prov-ex-or-u11-reflexive-0"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u11-i-reflexive-1",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted line is the feminine past?",
+        "promptLetter": "Он улыба́лся",
+        "options": [
+          "Она улыба́лась",
+          "Они улыба́лись"
+        ],
+        "answer": "Она улыба́лась",
+        "feedback": "Does this answer show the feminine past? Она улыба́лась.",
+        "objectiveId": "obj-u11-reflexive",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Does this row fail the feminine past?"
+        ],
+        "assessment": {
+          "testedFeature": "FEMININE_PAST",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u11-reflexive-1",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u11-reflexive-5-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-u11-reflexive-x-0"
+          ],
+          "distractorDifference": [
+            "",
+            "Does this row fail the feminine past?"
+          ],
+          "whyAnswerDemonstratesObjective": "Does this answer show the feminine past?",
+          "contrastMembers": [
+            "Она улыба́лась",
+            "Они улыба́лись"
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-ex-u11-reflexive-4-ru",
+            "prov-ex-u11-reflexive-5-ru",
+            "prov-u11-reflexive-x-0"
+          ],
+          "responseKind": "RUSSIAN_CLAUSE"
+        }
+      },
+      "after": {
+        "id": "u11-i-reflexive-1",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted line is the feminine past?",
+        "promptLetter": "Он улыба́лся",
+        "options": [
+          "Она улыба́лась",
+          "Они улыба́лись"
+        ],
+        "answer": "Она улыба́лась",
+        "feedback": "Она улыба́лась means she was smiling, with feminine past agreement between the singular subject and verb. Они улыба́лись means they were smiling and has plural agreement. Both verbs keep their reflexive ending, but only the first line is feminine singular.",
+        "objectiveId": "obj-u11-reflexive",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Они улыба́лись has a plural subject and plural past verb, rather than feminine singular agreement."
+        ],
+        "assessment": {
+          "testedFeature": "FEMININE_PAST",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u11-reflexive-1",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u11-reflexive-5-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-u11-reflexive-x-0"
+          ],
+          "distractorDifference": [
+            "",
+            "Они улыба́лись has a plural subject and plural past verb, rather than feminine singular agreement."
+          ],
+          "whyAnswerDemonstratesObjective": "Она улыба́лась means she was smiling, with feminine past agreement between the singular subject and verb. Они улыба́лись means they were smiling and has plural agreement. Both verbs keep their reflexive ending, but only the first line is feminine singular.",
+          "contrastMembers": [
+            "Она улыба́лась",
+            "Они улыба́лись"
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-ex-u11-reflexive-4-ru",
+            "prov-ex-u11-reflexive-5-ru",
+            "prov-u11-reflexive-x-0"
+          ],
+          "responseKind": "RUSSIAN_CLAUSE"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u11-i-reflexive-2",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted row is the feminine past?",
+        "promptLetter": "учи́лся",
+        "options": [
+          "учи́лась",
+          "учи́лись"
+        ],
+        "answer": "учи́лась",
+        "feedback": "Does this answer show the feminine past? учи́лась.",
+        "objectiveId": "obj-u11-reflexive",
+        "sourceId": "src-openrussian-50e210c4",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Does this row fail the feminine past?"
+        ],
+        "assessment": {
+          "testedFeature": "FEMININE_PAST",
+          "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+          "contrastSetId": "u11-reflexive-2",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-or-u11-reflexive-7"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-or-u11-reflexive-8"
+          ],
+          "distractorDifference": [
+            "",
+            "Does this row fail the feminine past?"
+          ],
+          "whyAnswerDemonstratesObjective": "Does this answer show the feminine past?",
+          "contrastMembers": [
+            "учи́лась",
+            "учи́лись"
+          ],
+          "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+          "relationParticipantIds": [
+            "prov-ex-or-u11-reflexive-6",
+            "prov-ex-or-u11-reflexive-7",
+            "prov-ex-or-u11-reflexive-8"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      },
+      "after": {
+        "id": "u11-i-reflexive-2",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted row is the feminine past?",
+        "promptLetter": "учи́лся",
+        "options": [
+          "учи́лась",
+          "учи́лись"
+        ],
+        "answer": "учи́лась",
+        "feedback": "учи́лась is the feminine past form for a singular subject of the verb meaning to study. учи́лись is plural past. Both retain the reflexive ending, so that ending alone does not distinguish them; the question requires feminine singular agreement.",
+        "objectiveId": "obj-u11-reflexive",
+        "sourceId": "src-openrussian-50e210c4",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "учи́лись is plural past, not feminine singular."
+        ],
+        "assessment": {
+          "testedFeature": "FEMININE_PAST",
+          "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+          "contrastSetId": "u11-reflexive-2",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-or-u11-reflexive-7"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-or-u11-reflexive-8"
+          ],
+          "distractorDifference": [
+            "",
+            "учи́лись is plural past, not feminine singular."
+          ],
+          "whyAnswerDemonstratesObjective": "учи́лась is the feminine past form for a singular subject of the verb meaning to study. учи́лись is plural past. Both retain the reflexive ending, so that ending alone does not distinguish them; the question requires feminine singular agreement.",
+          "contrastMembers": [
+            "учи́лась",
+            "учи́лись"
+          ],
+          "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+          "relationParticipantIds": [
+            "prov-ex-or-u11-reflexive-6",
+            "prov-ex-or-u11-reflexive-7",
+            "prov-ex-or-u11-reflexive-8"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      }
+    }
+  ],
+  "bibliography": "Retained Wikibooks Russian/Grammar/Past tense oldid4567337, catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt, CC BY-SA 4.0: complete Regular conjugation read table, To be past forms and Reflexive verbs smiling/studying examples. Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать, быть, улыбаться, учиться past_m/past_f/past_n/past_pl; улыбаться accented infinitive. The Wikibooks To be paragraph incorrectly labels быть perfective; the retained lexical aspect field is imperfective. That incorrect source claim is not adopted. Bounded recognition of existing past forms and gender/number agreement; no aspect-to-English-tense equivalence, productive paradigm claim, new Russian text, or assertion that every reflexive verb means acting on oneself. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.",
+  "semanticAcceptance": false
+}
