@@ -64,18 +64,19 @@
       "findingId": "IA009",
       "producerSeverity": "MEDIUM",
       "producerStatus": "OPEN",
-      "engineeringDisposition": "PARTIAL_LAB_ROUTE_UNITS6_7_9_10_11_12_FEEDBACK_FIXED_30_FEEDBACK_ROWS_OPEN",
+      "engineeringDisposition": "PARTIAL_LAB_ROUTE_UNITS6_7_9_10_11_12_13_FEEDBACK_FIXED_18_FEEDBACK_ROWS_OPEN",
       "formalAcceptance": false,
       "implementationCommit": "c82e5b4a305c960ca41f660071d0da25070631ea",
       "unit6FeedbackImplementationCommit": "4e5e7adc8b9cfa96024e6b8c9c9db18d260a9634",
-      "remainingLiteralDoesFeedbackRows": 30,
+      "remainingLiteralDoesFeedbackRows": 18,
       "unit7FeedbackImplementationCommit": "b48d4a575e0d8496de4e02c4e7af6d4795d4309f",
       "unit9NumberFeedbackImplementationCommit": "b9f00899069b495bed1f5791f72e485c63945938",
       "unit9CompositionFeedbackImplementationCommit": "0fde3d3991ba4493a0ca36b9c49cdd0a71c14401",
       "unit9QuantityRuleImplementationCommit": "8e5db89c56d9421a6efcffa6f0a14c0f0b6c042a",
       "unit10FeedbackImplementationCommit": "4e624bc2af8fa70e488bd627cb2dc68d03b60406",
       "unit11FeedbackImplementationCommit": "d38b3d897651f4e963dc51211ef6f3078f752a3b",
-      "unit12FeedbackImplementationCommit": "c0b6feef2244e363496a68129cdd1aaeb8d84148"
+      "unit12FeedbackImplementationCommit": "c0b6feef2244e363496a68129cdd1aaeb8d84148",
+      "unit13FeedbackImplementationCommit": "95b45043cd02ff5ad26e6c4ce9c7d8641795f0a0"
     },
     {
       "findingId": "IA010",
@@ -146,19 +147,19 @@
   "physicalDeviceAcceptance": "OUTSTANDING",
   "release": "NOT_APPROVED",
   "latestValidatorImplementationCommit": "8e5db89c56d9421a6efcffa6f0a14c0f0b6c042a",
-  "latestSourceBindingCheckpoint": "026d34669c32d26d66e6f97853d27f1d97bd66e3",
+  "latestSourceBindingCheckpoint": "7cb0dca3682de95e3fcfd96c77deb1b39f2ecc2b",
   "remainingSourceReviewPointers": [
     "IA007_SOURCE_REVIEW_PENDING.md",
     "IA008_SOURCE_REVIEW_PENDING.md"
   ],
   "firstBatchImplementationCommit": "4f5cb8024d3f68a37052fdf85b5755bffa2a0904",
   "firstBatchPacketCheckpoint": "49af91a0f5578c63a3b9b98bbe975f40d2758fcc",
-  "latestCurriculumImplementationCommit": "c0b6feef2244e363496a68129cdd1aaeb8d84148",
+  "latestCurriculumImplementationCommit": "95b45043cd02ff5ad26e6c4ce9c7d8641795f0a0",
   "acceptanceOrder": [
     "FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
     "PHYSICAL_DEVICE_ACCEPTANCE_LAST"
   ],
   "physicalDeviceEvidenceRequestTiming": "AFTER_FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
   "latestAppImplementationCommit": "c82e5b4a305c960ca41f660071d0da25070631ea",
-  "latestVerifiedRepositoryCommit": "026d34669c32d26d66e6f97853d27f1d97bd66e3"
+  "latestVerifiedRepositoryCommit": "7cb0dca3682de95e3fcfd96c77deb1b39f2ecc2b"
 }

@@ -1,0 +1,54 @@
+{
+  "baselineCommit": "0e4bed79fa5b864714ffe0582d7664d2defeeab9",
+  "oldProvenanceRecords": 6131,
+  "newPendingCoverageRecords": 24,
+  "allPriorProvenanceUnchanged": true,
+  "allOtherPackFieldsUnchanged": true,
+  "allTwelveScoredSourceTuplesUnchanged": true,
+  "allOtherItemsUnchanged": true,
+  "deterministicBaselineReplay": true,
+  "byteIdempotent": true,
+  "rawCurriculumSha256": "8b30c2daca9f9d10999e5d29a668513cfcb097e66789d934b614941b767ce89a",
+  "sourceContextSha256": {
+    "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt": "4550574588e023a84084d9deea9b35f35fac82d64cef00d599dc0a059e48b9f3",
+    "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt": "1a1d31ff818472a2e0801d5c0a39f52afdef1d4ee9648b5a7b8f358621e6dfb7",
+    "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt": "0702bb0213b24bb48f1bbbfb4b1aa7fb76cf90fd520fe4bababb4d87db96e24e",
+    "catalog/sources/units-3-5/openrussian/verbs.csv": "8659de6799b949fb35f080b08088fb7d347ed300490954ebb380a31642646e1d"
+  },
+  "all30MappingsUnchanged": true,
+  "other29ContentReviewPackageDigestsAndAncestorsUnchanged": true,
+  "unit13GenuineImplementationAncestor": "95b45043cd02ff5ad26e6c4ce9c7d8641795f0a0",
+  "packDigest": "0bb26d899c3c3c1438e86c3e79200ffef347fdd4248fc0f2fd6b26e62df2a5a2",
+  "repositorySourceDigest": "1ed00ccd1a7dcb8cc41791b3bd70c27fe904593d78afee5f56bb0caf1dcfbb93",
+  "unit13ContentReviewDigest": "6c11707dad7fef23787ff3e0d535632b05d9aeacbb2cfd4e7a013add99c74fe6",
+  "baselineNegativeCommand": "source /workspace/setup/android-env.sh\n./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*Unit13FeedbackCorrectionTest.feedbackExplainsAspectAndReportedSpeechWithoutUniversalRules' --max-workers=4 --console=plain",
+  "baselineNegativeExitCode": 1,
+  "initialFocusedCommand": "source /workspace/setup/android-env.sh\n./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*Unit13FeedbackCorrectionTest' --max-workers=4 --console=plain",
+  "initialFocusedExitCode": 0,
+  "refinedFocusedCommand": "source /workspace/setup/android-env.sh\n./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*Unit13FeedbackCorrectionTest' --max-workers=4 --console=plain",
+  "refinedFocusedExitCode": 0,
+  "regressionScopes": {
+    "baseline": {
+      "tests": 1,
+      "failures": 1,
+      "errors": 0,
+      "skipped": 0
+    },
+    "initialCorrection": {
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "refinedCorrection": {
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "refinement": "Two partner explanations replace source-data-field wording with the say/tell meaning shown here; source/score tuples and semantic qualifications remain unchanged.",
+  "sourceQualifications": "Do not adopt one-to-one English past/progressive-to-aspect mapping, categorical all-reports-keep-every-tense rules, contradictory pairing prevalence claims, automatic prefix pairing, or incorrect perfective classification of being. Completed activity can be viewed as process; the say/tell partner relation is sense-bound.",
+  "recognitionLimits": "Original category cues and duplicate tuples remain unchanged. Source-table recognition does not close IA012 productive/category-cue concerns or IA016 duplicates.",
+  "allNineOriginalAuditDeliverableHashesUnchanged": true
+}
