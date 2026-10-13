@@ -1,0 +1,1418 @@
+{
+  "baselineCommit": "74f17e621a4b7ca2d9faf3228ef8f96c53c08c22",
+  "beforeSha256": "acde4eb315efc79f18765f71a04434ff7b494ccdc9a9a0cba73cc05b2256fbf1",
+  "afterSha256": "844d36cc863e24c1e6890cb758f760c3353b6dc769dc4c8935a1619eff9f2097",
+  "bibliography": "Retained Wikisource Вечера у княгини Старобельской oldid5336197, complete opening paragraph of ЗНАКОМСТВО С ДРУГОМ ПРИНЦЕССЫ КОРЛЕОНЕ with explicit actor Павел Сергеич Вязовский. Exact native clause selections with unchanged source punctuation and NBSP; no stress or actor inserted. Existing public-domain author/work/rights basis retained, qualified rights review pending. Frozen OpenRussian verbs.csv commit50e210c4803237779cb562bc1abcea529066031c identifies читать as imperfective and устать as perfective. Existing CC BY-SA4.0 attribution/rights apply to selected dictionary rows. Retained Russian grammar1369617627 complete Adverbial participle section supplies earlier/simultaneous relation; absolute usually-present/only-past labels are not adopted as sentence tense. Independent English,2026-10-13. Guided literary context also occurs in later reading; not unseen evidence or productive mastery. Original independent relative-time/shared-subject scored fields remain. No private Penguin text; source/rights/semantic review pending.",
+  "changes": [
+    {
+      "before": {
+        "id": "u28-i-imperfective-adverb-1",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which English description identifies the timing of читая in this sentence?",
+        "promptLetter": "читая письмо, он улыбался",
+        "options": [
+          "simultaneous with the main predicate",
+          "an absolute present label",
+          "a different subject from the main verb"
+        ],
+        "answer": "simultaneous with the main predicate",
+        "feedback": "In читая письмо, он улыбался, simultaneous with the main predicate describes читая: he reads while smiling. The past main verb does not turn читая into an absolute present tense.",
+        "objectiveId": "obj-u28-imperfective-adverb",
+        "sourceId": "src-content-audit-research",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "an absolute present label ignores the past main verb; the verbal adverb has relative time.",
+          "a different subject from the main verb violates the shared-subject condition in this construction."
+        ],
+        "assessment": {
+          "testedFeature": "IMPERFECTIVE_ADVERB_SIMULTANEOUS",
+          "evidenceMode": "STATED_APPLICATION",
+          "contrastSetId": "u28-imperfective-adverb-1",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-8"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-12",
+            "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-13"
+          ],
+          "distractorDifference": [
+            "",
+            "an absolute present label ignores the past main verb; the verbal adverb has relative time.",
+            "a different subject from the main verb violates the shared-subject condition in this construction."
+          ],
+          "whyAnswerDemonstratesObjective": "In читая письмо, он улыбался, читая is simultaneous with the main predicate: the same person reads and smiles during the same interval.",
+          "contrastMembers": [
+            "simultaneous with the main predicate",
+            "an absolute present label",
+            "a different subject from the main verb"
+          ],
+          "relationKind": "STATED_APPLICATION",
+          "relationParticipantIds": [
+            "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-7",
+            "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-8",
+            "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-12",
+            "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-13"
+          ],
+          "responseKind": "ENGLISH_CLASSIFICATION"
+        }
+      },
+      "after": {
+        "id": "u28-i-imperfective-adverb-1",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which English description identifies the timing of читая in this sentence?",
+        "promptLetter": "читая письмо, он улыбался",
+        "options": [
+          "simultaneous with the main predicate",
+          "an absolute present label",
+          "a different subject from the main verb"
+        ],
+        "answer": "simultaneous with the main predicate",
+        "feedback": "In читая письмо, он улыбался, simultaneous with the main predicate describes читая: he reads while smiling. The past main verb does not turn читая into an absolute present tense.",
+        "objectiveId": "obj-u28-imperfective-adverb",
+        "sourceId": "src-content-audit-research",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "an absolute present label ignores the past main verb; the verbal adverb has relative time.",
+          "a different subject from the main verb violates the shared-subject condition in this construction."
+        ],
+        "assessment": {
+          "testedFeature": "IMPERFECTIVE_ADVERB_SIMULTANEOUS",
+          "evidenceMode": "STATED_APPLICATION",
+          "contrastSetId": "u28-imperfective-adverb-1",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-8"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-12",
+            "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-13"
+          ],
+          "distractorDifference": [
+            "",
+            "an absolute present label ignores the past main verb; the verbal adverb has relative time.",
+            "a different subject from the main verb violates the shared-subject condition in this construction."
+          ],
+          "whyAnswerDemonstratesObjective": "In читая письмо, он улыбался, читая is simultaneous with the main predicate: the same person reads and smiles during the same interval.",
+          "contrastMembers": [
+            "simultaneous with the main predicate",
+            "an absolute present label",
+            "a different subject from the main verb"
+          ],
+          "relationKind": "STATED_APPLICATION",
+          "relationParticipantIds": [
+            "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-7",
+            "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-8",
+            "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-12",
+            "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-13"
+          ],
+          "responseKind": "ENGLISH_CLASSIFICATION"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u28-i-imperfective-adverb-2",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which English description identifies the shared subject?",
+        "promptLetter": "читая письмо, он улыбался",
+        "options": [
+          "the reader and the person smiling are the same person",
+          "two unrelated people perform the actions",
+          "the sentence omits its main subject"
+        ],
+        "answer": "the reader and the person smiling are the same person",
+        "feedback": "In читая письмо, он улыбался, the reader and the person smiling are the same person: the verbal adverb shares the subject of the main predicate.",
+        "objectiveId": "obj-u28-imperfective-adverb",
+        "sourceId": "src-content-audit-research",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "two unrelated people perform the actions is not the shared-subject construction shown here.",
+          "the sentence omits its main subject is incorrect because the displayed main clause has an explicit subject."
+        ],
+        "assessment": {
+          "testedFeature": "VERBAL_ADVERB_SHARED_SUBJECT",
+          "evidenceMode": "STATED_APPLICATION",
+          "contrastSetId": "u28-imperfective-adverb-2",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-16"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-19",
+            "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-20"
+          ],
+          "distractorDifference": [
+            "",
+            "two unrelated people perform the actions is not the shared-subject construction shown here.",
+            "the sentence omits its main subject is incorrect because the displayed main clause has an explicit subject."
+          ],
+          "whyAnswerDemonstratesObjective": "In читая письмо, он улыбался, the reader and the person smiling are the same person: the verbal adverb shares the subject of the main predicate.",
+          "contrastMembers": [
+            "the reader and the person smiling are the same person",
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ],
+          "relationKind": "STATED_APPLICATION",
+          "relationParticipantIds": [
+            "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-7",
+            "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-16",
+            "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-19",
+            "prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-20"
+          ],
+          "responseKind": "ENGLISH_CLASSIFICATION"
+        }
+      },
+      "after": {
+        "id": "u28-i-imperfective-adverb-2",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which English description identifies the shared subject?",
+        "promptLetter": "читая письмо, он улыбался",
+        "options": [
+          "the reader and the person smiling are the same person",
+          "two unrelated people perform the actions",
+          "the sentence omits its main subject"
+        ],
+        "answer": "the reader and the person smiling are the same person",
+        "feedback": "In читая письмо, он улыбался, the reader and the person smiling are the same person: the verbal adverb shares the subject of the main predicate.",
+        "objectiveId": "obj-u28-imperfective-adverb",
+        "sourceId": "src-content-audit-research",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "two unrelated people perform the actions is not the shared-subject construction shown here.",
+          "the sentence omits its main subject is incorrect because the displayed main clause has an explicit subject."
+        ],
+        "assessment": {
+          "testedFeature": "VERBAL_ADVERB_SHARED_SUBJECT",
+          "evidenceMode": "STATED_APPLICATION",
+          "contrastSetId": "u28-imperfective-adverb-2",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-16"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-19",
+            "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-20"
+          ],
+          "distractorDifference": [
+            "",
+            "two unrelated people perform the actions is not the shared-subject construction shown here.",
+            "the sentence omits its main subject is incorrect because the displayed main clause has an explicit subject."
+          ],
+          "whyAnswerDemonstratesObjective": "In читая письмо, он улыбался, the reader and the person smiling are the same person: the verbal adverb shares the subject of the main predicate.",
+          "contrastMembers": [
+            "the reader and the person smiling are the same person",
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ],
+          "relationKind": "STATED_APPLICATION",
+          "relationParticipantIds": [
+            "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-7",
+            "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-16",
+            "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-19",
+            "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-20"
+          ],
+          "responseKind": "ENGLISH_CLASSIFICATION"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u28-g-imperfective-adverb-0",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which English description identifies the timing of читая in this sentence?",
+        "promptLetter": "читая письмо, он улыбался",
+        "options": [
+          "simultaneous with the main predicate",
+          "an absolute present label",
+          "a different subject from the main verb"
+        ],
+        "answer": "simultaneous with the main predicate",
+        "feedback": "In читая письмо, он улыбался, simultaneous with the main predicate describes читая: he reads while smiling. The past main verb does not turn читая into an absolute present tense.",
+        "objectiveId": "obj-u28-imperfective-adverb",
+        "sourceId": "src-content-audit-research",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "an absolute present label ignores the past main verb; the verbal adverb has relative time.",
+          "a different subject from the main verb violates the shared-subject condition in this construction."
+        ],
+        "assessment": {
+          "testedFeature": "IMPERFECTIVE_ADVERB_SIMULTANEOUS",
+          "evidenceMode": "STATED_APPLICATION",
+          "contrastSetId": "u28-imperfective-adverb-0",
+          "cueLanguage": "ru",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ca-repair-28-10677"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ca-repair-28-10681",
+            "prov-ca-repair-28-10682"
+          ],
+          "distractorDifference": [
+            "",
+            "an absolute present label ignores the past main verb; the verbal adverb has relative time.",
+            "a different subject from the main verb violates the shared-subject condition in this construction."
+          ],
+          "whyAnswerDemonstratesObjective": "In читая письмо, он улыбался, читая is simultaneous with the main predicate: the same person reads and smiles during the same interval.",
+          "contrastMembers": [
+            "simultaneous with the main predicate",
+            "an absolute present label",
+            "a different subject from the main verb"
+          ],
+          "relationKind": "STATED_APPLICATION",
+          "relationParticipantIds": [
+            "prov-ca-repair-28-10676",
+            "prov-ca-repair-28-10677",
+            "prov-ca-repair-28-10681",
+            "prov-ca-repair-28-10682"
+          ],
+          "responseKind": "ENGLISH_CLASSIFICATION"
+        }
+      },
+      "after": {
+        "id": "u28-g-imperfective-adverb-0",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which English description identifies the relative timing in this retained clause?",
+        "promptLetter": "отдыхал читая",
+        "options": [
+          "simultaneous with the main predicate",
+          "an absolute present label",
+          "a different subject from the main verb"
+        ],
+        "answer": "simultaneous with the main predicate",
+        "feedback": "In отдыхал читая, simultaneous with the main predicate is the matching relative-time description. Reading accompanies resting; the same person performs both actions in this supplied episode. The main predicate is past; the verbal adverb does not independently label absolute sentence time.",
+        "objectiveId": "obj-u28-imperfective-adverb",
+        "sourceId": "src-content-audit-research",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "an absolute present label mistakes relative timing for an independent tense.",
+          "a different subject from the main verb is not the shared-actor reading supplied by this paragraph."
+        ],
+        "assessment": {
+          "testedFeature": "IMPERFECTIVE_ADVERB_SIMULTANEOUS",
+          "evidenceMode": "STATED_APPLICATION",
+          "contrastSetId": "u28-imperfective-adverb-0",
+          "cueLanguage": "ru",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-u28-timing-guided-imperfective-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-u28-timing-guided-imperfective-2",
+            "prov-u28-timing-guided-imperfective-3"
+          ],
+          "distractorDifference": [
+            "",
+            "an absolute present label mistakes relative timing for an independent tense.",
+            "a different subject from the main verb is not the shared-actor reading supplied by this paragraph."
+          ],
+          "whyAnswerDemonstratesObjective": "In отдыхал читая, simultaneous with the main predicate is the matching relative-time description. Reading accompanies resting; the same person performs both actions in this supplied episode. The main predicate is past; the verbal adverb does not independently label absolute sentence time.",
+          "contrastMembers": [
+            "simultaneous with the main predicate",
+            "an absolute present label",
+            "a different subject from the main verb"
+          ],
+          "relationKind": "STATED_APPLICATION",
+          "relationParticipantIds": [
+            "prov-u28-timing-guided-imperfective-0",
+            "prov-u28-timing-guided-imperfective-1",
+            "prov-u28-timing-guided-imperfective-2",
+            "prov-u28-timing-guided-imperfective-3"
+          ],
+          "responseKind": "ENGLISH_CLASSIFICATION"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u28-s-imperfective-adverb",
+        "title": "Choose the time relationship the source states for imperfective adverbial forms",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u28-imperfective-adverb"
+        ],
+        "steps": [
+          {
+            "id": "u28-st-teach-imperfective-adverb-1",
+            "kind": "TEACH",
+            "title": "Read two actions happening together",
+            "body": "An imperfective verbal adverb describes an accompanying action. In the supplied читая письмо, он улыбался, he was reading the letter while he smiled. Reading and smiling overlap: simultaneous means during the same interval as the main predicate. The main verb places this example in the past; читая does not independently mean absolute present time. The retained examples думая and учась illustrate imperfective verbal-adverb forms. An isolated form cannot establish the tense of an absent main verb.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ],
+            "exampleIds": [
+              "ex-u28-imperfective-adverb-0",
+              "ex-u28-imperfective-adverb-1"
+            ]
+          },
+          {
+            "id": "u28-st-teach-imperfective-adverb-2",
+            "kind": "TEACH",
+            "title": "Keep the two actions with the same person",
+            "body": "In читая письмо, он улыбался, The pronoun he is the explicit main-clause subject. The reader and the person smiling are the same person. The verbal adverb supplies an accompanying action by that subject, not an action by a second unrelated person. Identify the main verb and its subject before deciding who performs the accompanying action. These checks recognize timing and shared subject in the supplied construction; they do not demonstrate forming an unfamiliar verbal adverb or judging every possible literary use.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ]
+          },
+          {
+            "id": "u28-st-guided-imperfective-adverb-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Interpret the supplied sentence or passage. A missed choice returns to every teaching card and worked example.",
+            "itemIds": [
+              "u28-g-imperfective-adverb-0"
+            ],
+            "remediationStepId": "u28-st-rem-imperfective-adverb"
+          },
+          {
+            "id": "u28-st-rem-imperfective-adverb",
+            "kind": "REMEDIATE",
+            "title": "Review the complete timing and reading contrast",
+            "body": "An imperfective verbal adverb describes an accompanying action. In the supplied читая письмо, он улыбался, he was reading the letter while he smiled. Reading and smiling overlap: simultaneous means during the same interval as the main predicate. The main verb places this example in the past; читая does not independently mean absolute present time. The retained examples думая and учась illustrate imperfective verbal-adverb forms. An isolated form cannot establish the tense of an absent main verb.\n\nIn читая письмо, он улыбался, The pronoun he is the explicit main-clause subject. The reader and the person smiling are the same person. The verbal adverb supplies an accompanying action by that subject, not an action by a second unrelated person. Identify the main verb and its subject before deciding who performs the accompanying action. These checks recognize timing and shared subject in the supplied construction; they do not demonstrate forming an unfamiliar verbal adverb or judging every possible literary use.",
+            "referenceIds": [
+              "ref-ca-verbal-adverb"
+            ],
+            "exampleIds": [
+              "ex-u28-imperfective-adverb-0",
+              "ex-u28-imperfective-adverb-1"
+            ]
+          },
+          {
+            "id": "u28-st-check-imperfective-adverb",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "Interpret the supplied sentence or passage. A missed choice returns to every teaching card and worked example.",
+            "itemIds": [
+              "u28-i-imperfective-adverb-1",
+              "u28-i-imperfective-adverb-2"
+            ],
+            "remediationStepId": "u28-st-rem-imperfective-adverb"
+          }
+        ]
+      },
+      "after": {
+        "id": "u28-s-imperfective-adverb",
+        "title": "Choose the time relationship the source states for imperfective adverbial forms",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u28-imperfective-adverb"
+        ],
+        "steps": [
+          {
+            "id": "u28-st-teach-imperfective-adverb-1",
+            "kind": "TEACH",
+            "title": "Read two actions happening together",
+            "body": "An imperfective verbal adverb describes an accompanying action. In the supplied читая письмо, он улыбался, he was reading the letter while he smiled. Reading and smiling overlap: simultaneous means during the same interval as the main predicate. The main verb places this example in the past; читая does not independently mean absolute present time. The retained examples думая and учась illustrate imperfective verbal-adverb forms. An isolated form cannot establish the tense of an absent main verb.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ],
+            "exampleIds": [
+              "ex-u28-imperfective-adverb-0",
+              "ex-u28-imperfective-adverb-1"
+            ]
+          },
+          {
+            "id": "u28-st-teach-imperfective-adverb-2",
+            "kind": "TEACH",
+            "title": "Keep the two actions with the same person",
+            "body": "In читая письмо, он улыбался, The pronoun he is the explicit main-clause subject. The reader and the person smiling are the same person. The verbal adverb supplies an accompanying action by that subject, not an action by a second unrelated person. Identify the main verb and its subject before deciding who performs the accompanying action. These checks recognize timing and shared subject in the supplied construction; they do not demonstrate forming an unfamiliar verbal adverb or judging every possible literary use.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ]
+          },
+          {
+            "id": "u28-st-teach-imperfective-timing-context",
+            "kind": "TEACH",
+            "title": "Read the retained literary timing context",
+            "body": "The retained paragraph introduces Павел Сергеич Вязовский as the actor. отдыхал читая — Reading accompanies resting; the same person performs both actions in this supplied episode. The source marks читать as imperfective. simultaneous with the main predicate describes timing relative to the main predicate in this clause. The actor is supplied by the paragraph, not inserted into a new Russian sentence. This is an exact clause selection with source punctuation and spacing preserved. Compare the independent letter sentence already taught: it keeps its original relative-time and shared-subject reading. The same literary episode appears later in reading practice; this is not unseen evidence, a rule that fixes absolute tense, or unrestricted formation/production mastery.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ]
+          },
+          {
+            "id": "u28-st-guided-imperfective-adverb-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Interpret the supplied sentence or passage. A missed choice returns to every teaching card and worked example.",
+            "itemIds": [
+              "u28-g-imperfective-adverb-0"
+            ],
+            "remediationStepId": "u28-st-rem-imperfective-adverb"
+          },
+          {
+            "id": "u28-st-rem-imperfective-adverb",
+            "kind": "REMEDIATE",
+            "title": "Review the complete timing and reading contrast",
+            "body": "An imperfective verbal adverb describes an accompanying action. In the supplied читая письмо, он улыбался, he was reading the letter while he smiled. Reading and smiling overlap: simultaneous means during the same interval as the main predicate. The main verb places this example in the past; читая does not independently mean absolute present time. The retained examples думая and учась illustrate imperfective verbal-adverb forms. An isolated form cannot establish the tense of an absent main verb.\n\nIn читая письмо, он улыбался, The pronoun he is the explicit main-clause subject. The reader and the person smiling are the same person. The verbal adverb supplies an accompanying action by that subject, not an action by a second unrelated person. Identify the main verb and its subject before deciding who performs the accompanying action. These checks recognize timing and shared subject in the supplied construction; they do not demonstrate forming an unfamiliar verbal adverb or judging every possible literary use.\n\nThe retained paragraph introduces Павел Сергеич Вязовский as the actor. отдыхал читая — Reading accompanies resting; the same person performs both actions in this supplied episode. The source marks читать as imperfective. simultaneous with the main predicate describes timing relative to the main predicate in this clause. The actor is supplied by the paragraph, not inserted into a new Russian sentence. This is an exact clause selection with source punctuation and spacing preserved. Compare the independent letter sentence already taught: it keeps its original relative-time and shared-subject reading. The same literary episode appears later in reading practice; this is not unseen evidence, a rule that fixes absolute tense, or unrestricted formation/production mastery.",
+            "referenceIds": [
+              "ref-ca-verbal-adverb"
+            ],
+            "exampleIds": [
+              "ex-u28-imperfective-adverb-0",
+              "ex-u28-imperfective-adverb-1"
+            ]
+          },
+          {
+            "id": "u28-st-check-imperfective-adverb",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "Interpret the supplied sentence or passage. A missed choice returns to every teaching card and worked example.",
+            "itemIds": [
+              "u28-i-imperfective-adverb-1",
+              "u28-i-imperfective-adverb-2"
+            ],
+            "remediationStepId": "u28-st-rem-imperfective-adverb"
+          }
+        ]
+      }
+    },
+    {
+      "before": {
+        "id": "obj-u28-imperfective-adverb",
+        "unitNumber": 28,
+        "title": "Choose the time relationship the source states for imperfective adverbial forms",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u28-st-orient",
+          "u28-st-teach-imperfective-adverb-1",
+          "u28-st-teach-imperfective-adverb-2"
+        ],
+        "exampleIds": [
+          "ex-u28-imperfective-adverb-0",
+          "ex-u28-imperfective-adverb-1"
+        ],
+        "practiceStepIds": [
+          "u28-st-guided-imperfective-adverb-1"
+        ],
+        "checkItemIds": [
+          "u28-i-imperfective-adverb-1",
+          "u28-i-imperfective-adverb-2"
+        ],
+        "remediationStepIds": [
+          "u28-st-rem-imperfective-adverb"
+        ]
+      },
+      "after": {
+        "id": "obj-u28-imperfective-adverb",
+        "unitNumber": 28,
+        "title": "Choose the time relationship the source states for imperfective adverbial forms",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u28-st-orient",
+          "u28-st-teach-imperfective-adverb-1",
+          "u28-st-teach-imperfective-adverb-2",
+          "u28-st-teach-imperfective-timing-context"
+        ],
+        "exampleIds": [
+          "ex-u28-imperfective-adverb-0",
+          "ex-u28-imperfective-adverb-1"
+        ],
+        "practiceStepIds": [
+          "u28-st-guided-imperfective-adverb-1"
+        ],
+        "checkItemIds": [
+          "u28-i-imperfective-adverb-1",
+          "u28-i-imperfective-adverb-2"
+        ],
+        "remediationStepIds": [
+          "u28-st-rem-imperfective-adverb"
+        ]
+      }
+    },
+    {
+      "before": {
+        "id": "cap-obj-u28-imperfective-adverb",
+        "sourceId": "src-content-audit-research",
+        "sourceRevision": "content-audit-2026-10-08",
+        "sourceRecordId": "ca-corrected-capability:cap-obj-u28-imperfective-adverb",
+        "sourceHash": "a21d6efac164e3442a34b198308777bc559f44a0d43524eded2d618a19e779bf",
+        "exactSpan": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nProposed Unit 28 uses admitted imperfective and perfective adverbial lines and one admitted public-domain reading span. Qualified review is pending.\nRead the admitted examples on this card.\nAn imperfective verbal adverb is simultaneous with the main predicate. It has no independent tense, so it is not usually present as an absolute label. The subject is the same as the main verb.\nimperfective ones are usually present, while perfective ones can only be past\nдумая\nimperfective verbal adverb; relative time is interpreted with its main predicate, normally simultaneous in the taught construction\nучась\nчитая письмо, он улыбался\nsimultaneous with the main predicate\nWhich English description identifies the timing of читая in this sentence?\nIn читая письмо, он улыбался, simultaneous with the main predicate describes читая: he reads while smiling. The past main verb does not turn читая into an absolute present tense.\nIn читая письмо, он улыбался, читая is simultaneous with the main predicate: the same person reads and smiles during the same interval.\nan absolute present label\na different subject from the main verb\nan absolute present label ignores the past main verb; the verbal adverb has relative time.\na different subject from the main verb violates the shared-subject condition in this construction.\nthe reader and the person smiling are the same person\nWhich English description identifies the shared subject?\nIn читая письмо, он улыбался, the reader and the person smiling are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject.\nRetained Russian grammar revision 1369617627, existing hash-bound Unit28 contextual research applications, and retained public-domain Wikisource revision 5336197. Independently authored English explanation, 2026-10-12. No private book prose, new Russian, or general productive formation algorithm. Pending final linguistic audit.\nAn imperfective verbal adverb describes an accompanying action. In the supplied читая письмо, он улыбался, he was reading the letter while he smiled. Reading and smiling overlap: simultaneous means during the same interval as the main predicate. The main verb places this example in the past; читая does not independently mean absolute present time. The retained examples думая and учась illustrate imperfective verbal-adverb forms. An isolated form cannot establish the tense of an absent main verb.\nIn читая письмо, он улыбался, The pronoun he is the explicit main-clause subject. The reader and the person smiling are the same person. The verbal adverb supplies an accompanying action by that subject, not an action by a second unrelated person. Identify the main verb and its subject before deciding who performs the accompanying action. These checks recognize timing and shared subject in the supplied construction; they do not demonstrate forming an unfamiliar verbal adverb or judging every possible literary use.\nAn imperfective verbal adverb describes an accompanying action. In the supplied читая письмо, он улыбался, he was reading the letter while he smiled. Reading and smiling overlap: simultaneous means during the same interval as the main predicate. The main verb places this example in the past; читая does not independently mean absolute present time. The retained examples думая and учась illustrate imperfective verbal-adverb forms. An isolated form cannot establish the tense of an absent main verb.\n\nIn читая письмо, он улыбался, The pronoun he is the explicit main-clause subject. The reader and the person smiling are the same person. The verbal adverb supplies an accompanying action by that subject, not an action by a second unrelated person. Identify the main verb and its subject before deciding who performs the accompanying action. These checks recognize timing and shared subject in the supplied construction; they do not demonstrate forming an unfamiliar verbal adverb or judging every possible literary use.\n[{\"cue\": \"читая письмо, он улыбался\", \"answer\": \"simultaneous with the main predicate\", \"distractors\": [\"an absolute present label\", \"a different subject from the main verb\"]}, {\"cue\": \"читая письмо, он улыбался\", \"answer\": \"the reader and the person smiling are the same person\", \"distractors\": [\"two unrelated people perform the actions\", \"the sentence omits its main subject\"]}]",
+        "unitNumber": 28,
+        "objectiveId": "obj-u28-imperfective-adverb",
+        "supportedClaim": "imperfective-verbal-adverb"
+      },
+      "after": {
+        "id": "cap-obj-u28-imperfective-adverb",
+        "sourceId": "src-content-audit-research",
+        "sourceRevision": "content-audit-2026-10-08",
+        "sourceRecordId": "ca-corrected-capability:cap-obj-u28-imperfective-adverb",
+        "sourceHash": "06e82261084d6de88e892daf691a913cedc74b11d3b3f45f7bd7d10cd1fb5107",
+        "exactSpan": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nProposed Unit 28 uses admitted imperfective and perfective adverbial lines and one admitted public-domain reading span. Qualified review is pending.\nRead the admitted examples on this card.\nAn imperfective verbal adverb is simultaneous with the main predicate. It has no independent tense, so it is not usually present as an absolute label. The subject is the same as the main verb.\nimperfective ones are usually present, while perfective ones can only be past\nдумая\nimperfective verbal adverb; relative time is interpreted with its main predicate, normally simultaneous in the taught construction\nучась\nчитая письмо, он улыбался\nsimultaneous with the main predicate\nWhich English description identifies the timing of читая in this sentence?\nIn читая письмо, он улыбался, simultaneous with the main predicate describes читая: he reads while smiling. The past main verb does not turn читая into an absolute present tense.\nIn читая письмо, он улыбался, читая is simultaneous with the main predicate: the same person reads and smiles during the same interval.\nan absolute present label\na different subject from the main verb\nan absolute present label ignores the past main verb; the verbal adverb has relative time.\na different subject from the main verb violates the shared-subject condition in this construction.\nthe reader and the person smiling are the same person\nWhich English description identifies the shared subject?\nIn читая письмо, он улыбался, the reader and the person smiling are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject.\nRetained Russian grammar revision 1369617627, existing hash-bound Unit28 contextual research applications, and retained public-domain Wikisource revision 5336197. Independently authored English explanation, 2026-10-12. No private book prose, new Russian, or general productive formation algorithm. Pending final linguistic audit.\nAn imperfective verbal adverb describes an accompanying action. In the supplied читая письмо, он улыбался, he was reading the letter while he smiled. Reading and smiling overlap: simultaneous means during the same interval as the main predicate. The main verb places this example in the past; читая does not independently mean absolute present time. The retained examples думая and учась illustrate imperfective verbal-adverb forms. An isolated form cannot establish the tense of an absent main verb.\nIn читая письмо, он улыбался, The pronoun he is the explicit main-clause subject. The reader and the person smiling are the same person. The verbal adverb supplies an accompanying action by that subject, not an action by a second unrelated person. Identify the main verb and its subject before deciding who performs the accompanying action. These checks recognize timing and shared subject in the supplied construction; they do not demonstrate forming an unfamiliar verbal adverb or judging every possible literary use.\nAn imperfective verbal adverb describes an accompanying action. In the supplied читая письмо, он улыбался, he was reading the letter while he smiled. Reading and smiling overlap: simultaneous means during the same interval as the main predicate. The main verb places this example in the past; читая does not independently mean absolute present time. The retained examples думая and учась illustrate imperfective verbal-adverb forms. An isolated form cannot establish the tense of an absent main verb.\n\nIn читая письмо, он улыбался, The pronoun he is the explicit main-clause subject. The reader and the person smiling are the same person. The verbal adverb supplies an accompanying action by that subject, not an action by a second unrelated person. Identify the main verb and its subject before deciding who performs the accompanying action. These checks recognize timing and shared subject in the supplied construction; they do not demonstrate forming an unfamiliar verbal adverb or judging every possible literary use.\n[{\"cue\": \"читая письмо, он улыбался\", \"answer\": \"simultaneous with the main predicate\", \"distractors\": [\"an absolute present label\", \"a different subject from the main verb\"]}, {\"cue\": \"читая письмо, он улыбался\", \"answer\": \"the reader and the person smiling are the same person\", \"distractors\": [\"two unrelated people perform the actions\", \"the sentence omits its main subject\"]}]\nRetained Wikisource Вечера у княгини Старобельской oldid5336197, complete opening paragraph of ЗНАКОМСТВО С ДРУГОМ ПРИНЦЕССЫ КОРЛЕОНЕ with explicit actor Павел Сергеич Вязовский. Exact native clause selections with unchanged source punctuation and NBSP; no stress or actor inserted. Existing public-domain author/work/rights basis retained, qualified rights review pending. Frozen OpenRussian verbs.csv commit50e210c4803237779cb562bc1abcea529066031c identifies читать as imperfective and устать as perfective. Existing CC BY-SA4.0 attribution/rights apply to selected dictionary rows. Retained Russian grammar1369617627 complete Adverbial participle section supplies earlier/simultaneous relation; absolute usually-present/only-past labels are not adopted as sentence tense. Independent English,2026-10-13. Guided literary context also occurs in later reading; not unseen evidence or productive mastery. Original independent relative-time/shared-subject scored fields remain. No private Penguin text; source/rights/semantic review pending.\nС 6 часов утра часов до 6 вечера в первый четверг декабря нынешней зимы Павел Сергеич Вязовский, человек лет пятидесяти пяти, давнишний житель двух из трех комнат старенького крошечного деревянного домика в одном из глухих углов Петербурга, проводил время по обыкновению: сидел за рабочим столом и писал, устав писать ложился на диван и отдыхал читая, потом опять садился писать, и урывками между этих занятий услышал утром голос старушки, хозяйки домика: «самовар принесла, Павел Сергеевич», сказал ей «благодарю, Анна Даниловна», выпил два стакана чаю с молоком, съел с чаем ломоть белого хлеба; опять услышал голос хозяйки: «принесла завтрак, Павел Сергеевич», опять поблагодарил ее, выпил стакан молока с черным хлебом, составлявший его завтрак, опять услышал голос хозяйки: «принесла обед, Павел Сергеич», опять поблагодарил ее, съел тарелку грешневой кашицы, составлявшую его ежедневный обед; опять услышал — это было, наверное часов в 6, по аккуратно соблюдаемому старушкой порядку, — голос ее «принесла самовар, Павел Сергеич!», опять сказал «благодарю вас, Анна Даниловна», — но тут произошло отступление от ежедневного порядка: встав положить чаю в чайник, и налить кипятком, Павел Сергеич увидел, что старушка не ушла, стоит, сложа руки и смотрит на один из локтей его пальто. Он вздохнул, подумав: «опять за то же», — и не ошибся: старушка сказала:\nчитать\tчита'ть\tread\tlesen\timperfective\tпрочитать;почитать;прочесть\tчита'й\tчита'йте\tчита'л\tчита'ла\tчита'ло\tчита'ли\tчита'ю\tчита'ешь\tчита'ет\tчита'ем\tчита'ете\tчита'ют\nWhich English description identifies the relative timing in this retained clause?\nIn отдыхал читая, simultaneous with the main predicate is the matching relative-time description. Reading accompanies resting; the same person performs both actions in this supplied episode. The main predicate is past; the verbal adverb does not independently label absolute sentence time.\n\nan absolute present label mistakes relative timing for an independent tense.\na different subject from the main verb is not the shared-actor reading supplied by this paragraph.\nThe retained paragraph introduces Павел Сергеич Вязовский as the actor. отдыхал читая — Reading accompanies resting; the same person performs both actions in this supplied episode. The source marks читать as imperfective. simultaneous with the main predicate describes timing relative to the main predicate in this clause. The actor is supplied by the paragraph, not inserted into a new Russian sentence. This is an exact clause selection with source punctuation and spacing preserved. Compare the independent letter sentence already taught: it keeps its original relative-time and shared-subject reading. The same literary episode appears later in reading practice; this is not unseen evidence, a rule that fixes absolute tense, or unrestricted formation/production mastery.\nAn imperfective verbal adverb describes an accompanying action. In the supplied читая письмо, он улыбался, he was reading the letter while he smiled. Reading and smiling overlap: simultaneous means during the same interval as the main predicate. The main verb places this example in the past; читая does not independently mean absolute present time. The retained examples думая and учась illustrate imperfective verbal-adverb forms. An isolated form cannot establish the tense of an absent main verb.\n\nIn читая письмо, он улыбался, The pronoun he is the explicit main-clause subject. The reader and the person smiling are the same person. The verbal adverb supplies an accompanying action by that subject, not an action by a second unrelated person. Identify the main verb and its subject before deciding who performs the accompanying action. These checks recognize timing and shared subject in the supplied construction; they do not demonstrate forming an unfamiliar verbal adverb or judging every possible literary use.\n\nThe retained paragraph introduces Павел Сергеич Вязовский as the actor. отдыхал читая — Reading accompanies resting; the same person performs both actions in this supplied episode. The source marks читать as imperfective. simultaneous with the main predicate describes timing relative to the main predicate in this clause. The actor is supplied by the paragraph, not inserted into a new Russian sentence. This is an exact clause selection with source punctuation and spacing preserved. Compare the independent letter sentence already taught: it keeps its original relative-time and shared-subject reading. The same literary episode appears later in reading practice; this is not unseen evidence, a rule that fixes absolute tense, or unrestricted formation/production mastery.\n[{\"cue\": \"читая письмо, он улыбался\", \"answer\": \"simultaneous with the main predicate\", \"distractors\": [\"an absolute present label\", \"a different subject from the main verb\"]}, {\"cue\": \"читая письмо, он улыбался\", \"answer\": \"the reader and the person smiling are the same person\", \"distractors\": [\"two unrelated people perform the actions\", \"the sentence omits its main subject\"]}, {\"cue\": \"отдыхал читая\", \"answer\": \"simultaneous with the main predicate\", \"distractors\": [\"an absolute present label\", \"a different subject from the main verb\"]}]",
+        "unitNumber": 28,
+        "objectiveId": "obj-u28-imperfective-adverb",
+        "supportedClaim": "imperfective-verbal-adverb"
+      }
+    },
+    {
+      "before": {
+        "id": "u28-i-perfective-adverb-1",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Choose the English description. When is the perfective verbal adverb interpreted in this sentence?",
+        "promptLetter": "написав письмо, она отправит его завтра",
+        "options": [
+          "anterior to a future main action",
+          "an absolute present label",
+          "a different subject from the main verb"
+        ],
+        "answer": "anterior to a future main action",
+        "feedback": "In написав письмо, она отправит его завтра, anterior to a future main action describes написав: writing precedes the future sending, and the same person performs both actions.",
+        "objectiveId": "obj-u28-perfective-adverb",
+        "sourceId": "src-content-audit-research",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "an absolute present label is not the time of a perfective verbal adverb.",
+          "a different subject from the main verb violates the shared-subject constraint."
+        ],
+        "assessment": {
+          "testedFeature": "PERFECTIVE_ADVERB_ANTERIOR",
+          "evidenceMode": "STATED_APPLICATION",
+          "contrastSetId": "u28-perfective-adverb-1",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-9"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-12",
+            "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-13"
+          ],
+          "distractorDifference": [
+            "",
+            "an absolute present label is not the time of a perfective verbal adverb.",
+            "a different subject from the main verb violates the shared-subject constraint."
+          ],
+          "whyAnswerDemonstratesObjective": "In написав письмо, она отправит его завтра, anterior to a future main action describes написав: writing precedes the future sending, and the same person performs both actions.",
+          "contrastMembers": [
+            "anterior to a future main action",
+            "an absolute present label",
+            "a different subject from the main verb"
+          ],
+          "relationKind": "STATED_APPLICATION",
+          "relationParticipantIds": [
+            "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-8",
+            "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-9",
+            "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-12",
+            "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-13"
+          ],
+          "responseKind": "ENGLISH_CLASSIFICATION"
+        }
+      },
+      "after": {
+        "id": "u28-i-perfective-adverb-1",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Choose the English description. When is the perfective verbal adverb interpreted in this sentence?",
+        "promptLetter": "написав письмо, она отправит его завтра",
+        "options": [
+          "anterior to a future main action",
+          "an absolute present label",
+          "a different subject from the main verb"
+        ],
+        "answer": "anterior to a future main action",
+        "feedback": "In написав письмо, она отправит его завтра, anterior to a future main action describes написав: writing precedes the future sending, and the same person performs both actions.",
+        "objectiveId": "obj-u28-perfective-adverb",
+        "sourceId": "src-content-audit-research",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "an absolute present label is not the time of a perfective verbal adverb.",
+          "a different subject from the main verb violates the shared-subject constraint."
+        ],
+        "assessment": {
+          "testedFeature": "PERFECTIVE_ADVERB_ANTERIOR",
+          "evidenceMode": "STATED_APPLICATION",
+          "contrastSetId": "u28-perfective-adverb-1",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-9"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-12",
+            "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-13"
+          ],
+          "distractorDifference": [
+            "",
+            "an absolute present label is not the time of a perfective verbal adverb.",
+            "a different subject from the main verb violates the shared-subject constraint."
+          ],
+          "whyAnswerDemonstratesObjective": "In написав письмо, она отправит его завтра, anterior to a future main action describes написав: writing precedes the future sending, and the same person performs both actions.",
+          "contrastMembers": [
+            "anterior to a future main action",
+            "an absolute present label",
+            "a different subject from the main verb"
+          ],
+          "relationKind": "STATED_APPLICATION",
+          "relationParticipantIds": [
+            "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-8",
+            "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-9",
+            "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-12",
+            "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-13"
+          ],
+          "responseKind": "ENGLISH_CLASSIFICATION"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u28-i-perfective-adverb-2",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which English description identifies the shared subject?",
+        "promptLetter": "написав письмо, она отправит его завтра",
+        "options": [
+          "the writer and sender are the same person",
+          "two unrelated people perform the actions",
+          "the sentence omits its main subject"
+        ],
+        "answer": "the writer and sender are the same person",
+        "feedback": "In написав письмо, она отправит его завтра, the writer and sender are the same person: the verbal adverb shares the subject of the main predicate.",
+        "objectiveId": "obj-u28-perfective-adverb",
+        "sourceId": "src-content-audit-research",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "two unrelated people perform the actions is not the shared-subject construction shown here.",
+          "the sentence omits its main subject is incorrect because the displayed main clause has an explicit subject."
+        ],
+        "assessment": {
+          "testedFeature": "VERBAL_ADVERB_SHARED_SUBJECT",
+          "evidenceMode": "STATED_APPLICATION",
+          "contrastSetId": "u28-perfective-adverb-2",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-16"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-19",
+            "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-20"
+          ],
+          "distractorDifference": [
+            "",
+            "two unrelated people perform the actions is not the shared-subject construction shown here.",
+            "the sentence omits its main subject is incorrect because the displayed main clause has an explicit subject."
+          ],
+          "whyAnswerDemonstratesObjective": "In написав письмо, она отправит его завтра, the writer and sender are the same person: the verbal adverb shares the subject of the main predicate.",
+          "contrastMembers": [
+            "the writer and sender are the same person",
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ],
+          "relationKind": "STATED_APPLICATION",
+          "relationParticipantIds": [
+            "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-8",
+            "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-16",
+            "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-19",
+            "prov-ca-u28-instruction-obj-u28-perfective-adverb-host-20"
+          ],
+          "responseKind": "ENGLISH_CLASSIFICATION"
+        }
+      },
+      "after": {
+        "id": "u28-i-perfective-adverb-2",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which English description identifies the shared subject?",
+        "promptLetter": "написав письмо, она отправит его завтра",
+        "options": [
+          "the writer and sender are the same person",
+          "two unrelated people perform the actions",
+          "the sentence omits its main subject"
+        ],
+        "answer": "the writer and sender are the same person",
+        "feedback": "In написав письмо, она отправит его завтра, the writer and sender are the same person: the verbal adverb shares the subject of the main predicate.",
+        "objectiveId": "obj-u28-perfective-adverb",
+        "sourceId": "src-content-audit-research",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "two unrelated people perform the actions is not the shared-subject construction shown here.",
+          "the sentence omits its main subject is incorrect because the displayed main clause has an explicit subject."
+        ],
+        "assessment": {
+          "testedFeature": "VERBAL_ADVERB_SHARED_SUBJECT",
+          "evidenceMode": "STATED_APPLICATION",
+          "contrastSetId": "u28-perfective-adverb-2",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-16"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-19",
+            "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-20"
+          ],
+          "distractorDifference": [
+            "",
+            "two unrelated people perform the actions is not the shared-subject construction shown here.",
+            "the sentence omits its main subject is incorrect because the displayed main clause has an explicit subject."
+          ],
+          "whyAnswerDemonstratesObjective": "In написав письмо, она отправит его завтра, the writer and sender are the same person: the verbal adverb shares the subject of the main predicate.",
+          "contrastMembers": [
+            "the writer and sender are the same person",
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ],
+          "relationKind": "STATED_APPLICATION",
+          "relationParticipantIds": [
+            "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-8",
+            "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-16",
+            "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-19",
+            "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-20"
+          ],
+          "responseKind": "ENGLISH_CLASSIFICATION"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u28-g-perfective-adverb-0",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Choose the English description. When is the perfective verbal adverb interpreted in this sentence?",
+        "promptLetter": "написав письмо, она отправит его завтра",
+        "options": [
+          "anterior to a future main action",
+          "an absolute present label",
+          "a different subject from the main verb"
+        ],
+        "answer": "anterior to a future main action",
+        "feedback": "In написав письмо, она отправит его завтра, anterior to a future main action describes написав: writing precedes the future sending, and the same person performs both actions.",
+        "objectiveId": "obj-u28-perfective-adverb",
+        "sourceId": "src-content-audit-research",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "an absolute present label is not the time of a perfective verbal adverb.",
+          "a different subject from the main verb violates the shared-subject constraint."
+        ],
+        "assessment": {
+          "testedFeature": "PERFECTIVE_ADVERB_ANTERIOR",
+          "evidenceMode": "STATED_APPLICATION",
+          "contrastSetId": "u28-perfective-adverb-0",
+          "cueLanguage": "ru",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ca-repair-28-10854"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ca-repair-28-10857",
+            "prov-ca-repair-28-10858"
+          ],
+          "distractorDifference": [
+            "",
+            "an absolute present label is not the time of a perfective verbal adverb.",
+            "a different subject from the main verb violates the shared-subject constraint."
+          ],
+          "whyAnswerDemonstratesObjective": "In написав письмо, она отправит его завтра, anterior to a future main action describes написав: writing precedes the future sending, and the same person performs both actions.",
+          "contrastMembers": [
+            "anterior to a future main action",
+            "an absolute present label",
+            "a different subject from the main verb"
+          ],
+          "relationKind": "STATED_APPLICATION",
+          "relationParticipantIds": [
+            "prov-ca-repair-28-10853",
+            "prov-ca-repair-28-10854",
+            "prov-ca-repair-28-10857",
+            "prov-ca-repair-28-10858"
+          ],
+          "responseKind": "ENGLISH_CLASSIFICATION"
+        }
+      },
+      "after": {
+        "id": "u28-g-perfective-adverb-0",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which English description identifies the relative timing in this retained clause?",
+        "promptLetter": "устав писать ложился на диван",
+        "options": [
+          "anterior to a past main action",
+          "an absolute present label",
+          "a different subject from the main verb"
+        ],
+        "answer": "anterior to a past main action",
+        "feedback": "In устав писать ложился на диван, anterior to a past main action is the matching relative-time description. Becoming tired of writing precedes lying down; the same person performs both actions in this supplied episode. The main predicate is past; the verbal adverb does not independently label absolute sentence time.",
+        "objectiveId": "obj-u28-perfective-adverb",
+        "sourceId": "src-content-audit-research",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "an absolute present label mistakes relative timing for an independent tense.",
+          "a different subject from the main verb is not the shared-actor reading supplied by this paragraph."
+        ],
+        "assessment": {
+          "testedFeature": "PERFECTIVE_ADVERB_ANTERIOR",
+          "evidenceMode": "STATED_APPLICATION",
+          "contrastSetId": "u28-perfective-adverb-0",
+          "cueLanguage": "ru",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-u28-timing-guided-perfective-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-u28-timing-guided-perfective-2",
+            "prov-u28-timing-guided-perfective-3"
+          ],
+          "distractorDifference": [
+            "",
+            "an absolute present label mistakes relative timing for an independent tense.",
+            "a different subject from the main verb is not the shared-actor reading supplied by this paragraph."
+          ],
+          "whyAnswerDemonstratesObjective": "In устав писать ложился на диван, anterior to a past main action is the matching relative-time description. Becoming tired of writing precedes lying down; the same person performs both actions in this supplied episode. The main predicate is past; the verbal adverb does not independently label absolute sentence time.",
+          "contrastMembers": [
+            "anterior to a past main action",
+            "an absolute present label",
+            "a different subject from the main verb"
+          ],
+          "relationKind": "STATED_APPLICATION",
+          "relationParticipantIds": [
+            "prov-u28-timing-guided-perfective-0",
+            "prov-u28-timing-guided-perfective-1",
+            "prov-u28-timing-guided-perfective-2",
+            "prov-u28-timing-guided-perfective-3"
+          ],
+          "responseKind": "ENGLISH_CLASSIFICATION"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u28-s-perfective-adverb",
+        "title": "Choose the time relationship the source states for perfective adverbial forms",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u28-perfective-adverb"
+        ],
+        "steps": [
+          {
+            "id": "u28-st-teach-perfective-adverb-1",
+            "kind": "TEACH",
+            "title": "Read the completed action before the main action",
+            "body": "A perfective verbal adverb normally presents an action completed before the main action in this taught construction. Anterior means earlier relative to that action. The retained сказав and научившись illustrate these forms; their labels alone do not fix an absolute past tense. Read the accompanying main predicate to establish the sentence time.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ],
+            "exampleIds": [
+              "ex-u28-perfective-adverb-0",
+              "ex-u28-perfective-adverb-1"
+            ]
+          },
+          {
+            "id": "u28-st-teach-perfective-adverb-2",
+            "kind": "TEACH",
+            "title": "Earlier does not necessarily mean past",
+            "body": "In написав письмо, она отправит его завтра, she will send the letter tomorrow after writing it. The writing precedes the future sending: anterior to a future main action is the matching description. The sentence does not require the writing to have happened before the present moment. The pronoun she names the main subject, and the writer and sender are the same person. An absolute present label loses the relative timing; assigning a different subject loses the supplied construction.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ]
+          },
+          {
+            "id": "u28-st-teach-perfective-adverb-3",
+            "kind": "TEACH",
+            "title": "Recognize the retained form without inventing a formation rule",
+            "body": "The retained войдя illustrates another perfective verbal-adverb form with an action normally anterior to its main predicate. It does not by itself identify a main subject or an absolute sentence tense. Compare the supplied forms and read their complete contexts when available. This small example set supplies recognition practice, not a complete productive algorithm for unlisted verbs.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ],
+            "exampleIds": [
+              "ex-u28-perfective-adverb-2"
+            ]
+          },
+          {
+            "id": "u28-st-guided-perfective-adverb-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Interpret the supplied sentence or passage. A missed choice returns to every teaching card and worked example.",
+            "itemIds": [
+              "u28-g-perfective-adverb-0"
+            ],
+            "remediationStepId": "u28-st-rem-perfective-adverb"
+          },
+          {
+            "id": "u28-st-rem-perfective-adverb",
+            "kind": "REMEDIATE",
+            "title": "Review the complete timing and reading contrast",
+            "body": "A perfective verbal adverb normally presents an action completed before the main action in this taught construction. Anterior means earlier relative to that action. The retained сказав and научившись illustrate these forms; their labels alone do not fix an absolute past tense. Read the accompanying main predicate to establish the sentence time.\n\nIn написав письмо, она отправит его завтра, she will send the letter tomorrow after writing it. The writing precedes the future sending: anterior to a future main action is the matching description. The sentence does not require the writing to have happened before the present moment. The pronoun she names the main subject, and the writer and sender are the same person. An absolute present label loses the relative timing; assigning a different subject loses the supplied construction.\n\nThe retained войдя illustrates another perfective verbal-adverb form with an action normally anterior to its main predicate. It does not by itself identify a main subject or an absolute sentence tense. Compare the supplied forms and read their complete contexts when available. This small example set supplies recognition practice, not a complete productive algorithm for unlisted verbs.",
+            "referenceIds": [
+              "ref-ca-verbal-adverb"
+            ],
+            "exampleIds": [
+              "ex-u28-perfective-adverb-0",
+              "ex-u28-perfective-adverb-1",
+              "ex-u28-perfective-adverb-2"
+            ]
+          },
+          {
+            "id": "u28-st-check-perfective-adverb",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "Interpret the supplied sentence or passage. A missed choice returns to every teaching card and worked example.",
+            "itemIds": [
+              "u28-i-perfective-adverb-1",
+              "u28-i-perfective-adverb-2"
+            ],
+            "remediationStepId": "u28-st-rem-perfective-adverb"
+          }
+        ]
+      },
+      "after": {
+        "id": "u28-s-perfective-adverb",
+        "title": "Choose the time relationship the source states for perfective adverbial forms",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u28-perfective-adverb"
+        ],
+        "steps": [
+          {
+            "id": "u28-st-teach-perfective-adverb-1",
+            "kind": "TEACH",
+            "title": "Read the completed action before the main action",
+            "body": "A perfective verbal adverb normally presents an action completed before the main action in this taught construction. Anterior means earlier relative to that action. The retained сказав and научившись illustrate these forms; their labels alone do not fix an absolute past tense. Read the accompanying main predicate to establish the sentence time.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ],
+            "exampleIds": [
+              "ex-u28-perfective-adverb-0",
+              "ex-u28-perfective-adverb-1"
+            ]
+          },
+          {
+            "id": "u28-st-teach-perfective-adverb-2",
+            "kind": "TEACH",
+            "title": "Earlier does not necessarily mean past",
+            "body": "In написав письмо, она отправит его завтра, she will send the letter tomorrow after writing it. The writing precedes the future sending: anterior to a future main action is the matching description. The sentence does not require the writing to have happened before the present moment. The pronoun she names the main subject, and the writer and sender are the same person. An absolute present label loses the relative timing; assigning a different subject loses the supplied construction.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ]
+          },
+          {
+            "id": "u28-st-teach-perfective-adverb-3",
+            "kind": "TEACH",
+            "title": "Recognize the retained form without inventing a formation rule",
+            "body": "The retained войдя illustrates another perfective verbal-adverb form with an action normally anterior to its main predicate. It does not by itself identify a main subject or an absolute sentence tense. Compare the supplied forms and read their complete contexts when available. This small example set supplies recognition practice, not a complete productive algorithm for unlisted verbs.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ],
+            "exampleIds": [
+              "ex-u28-perfective-adverb-2"
+            ]
+          },
+          {
+            "id": "u28-st-teach-perfective-timing-context",
+            "kind": "TEACH",
+            "title": "Read the retained literary timing context",
+            "body": "The retained paragraph introduces Павел Сергеич Вязовский as the actor. устав писать ложился на диван — Becoming tired of writing precedes lying down; the same person performs both actions in this supplied episode. The source marks устать as perfective. anterior to a past main action describes timing relative to the main predicate in this clause. The actor is supplied by the paragraph, not inserted into a new Russian sentence. This is an exact clause selection with source punctuation and spacing preserved. Compare the independent letter sentence already taught: it keeps its original relative-time and shared-subject reading. The same literary episode appears later in reading practice; this is not unseen evidence, a rule that fixes absolute tense, or unrestricted formation/production mastery.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ]
+          },
+          {
+            "id": "u28-st-guided-perfective-adverb-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Interpret the supplied sentence or passage. A missed choice returns to every teaching card and worked example.",
+            "itemIds": [
+              "u28-g-perfective-adverb-0"
+            ],
+            "remediationStepId": "u28-st-rem-perfective-adverb"
+          },
+          {
+            "id": "u28-st-rem-perfective-adverb",
+            "kind": "REMEDIATE",
+            "title": "Review the complete timing and reading contrast",
+            "body": "A perfective verbal adverb normally presents an action completed before the main action in this taught construction. Anterior means earlier relative to that action. The retained сказав and научившись illustrate these forms; their labels alone do not fix an absolute past tense. Read the accompanying main predicate to establish the sentence time.\n\nIn написав письмо, она отправит его завтра, she will send the letter tomorrow after writing it. The writing precedes the future sending: anterior to a future main action is the matching description. The sentence does not require the writing to have happened before the present moment. The pronoun she names the main subject, and the writer and sender are the same person. An absolute present label loses the relative timing; assigning a different subject loses the supplied construction.\n\nThe retained войдя illustrates another perfective verbal-adverb form with an action normally anterior to its main predicate. It does not by itself identify a main subject or an absolute sentence tense. Compare the supplied forms and read their complete contexts when available. This small example set supplies recognition practice, not a complete productive algorithm for unlisted verbs.\n\nThe retained paragraph introduces Павел Сергеич Вязовский as the actor. устав писать ложился на диван — Becoming tired of writing precedes lying down; the same person performs both actions in this supplied episode. The source marks устать as perfective. anterior to a past main action describes timing relative to the main predicate in this clause. The actor is supplied by the paragraph, not inserted into a new Russian sentence. This is an exact clause selection with source punctuation and spacing preserved. Compare the independent letter sentence already taught: it keeps its original relative-time and shared-subject reading. The same literary episode appears later in reading practice; this is not unseen evidence, a rule that fixes absolute tense, or unrestricted formation/production mastery.",
+            "referenceIds": [
+              "ref-ca-verbal-adverb"
+            ],
+            "exampleIds": [
+              "ex-u28-perfective-adverb-0",
+              "ex-u28-perfective-adverb-1",
+              "ex-u28-perfective-adverb-2"
+            ]
+          },
+          {
+            "id": "u28-st-check-perfective-adverb",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "Interpret the supplied sentence or passage. A missed choice returns to every teaching card and worked example.",
+            "itemIds": [
+              "u28-i-perfective-adverb-1",
+              "u28-i-perfective-adverb-2"
+            ],
+            "remediationStepId": "u28-st-rem-perfective-adverb"
+          }
+        ]
+      }
+    },
+    {
+      "before": {
+        "id": "obj-u28-perfective-adverb",
+        "unitNumber": 28,
+        "title": "Choose the time relationship the source states for perfective adverbial forms",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u28-st-orient",
+          "u28-st-teach-perfective-adverb-1",
+          "u28-st-teach-perfective-adverb-2",
+          "u28-st-teach-perfective-adverb-3"
+        ],
+        "exampleIds": [
+          "ex-u28-perfective-adverb-0",
+          "ex-u28-perfective-adverb-1",
+          "ex-u28-perfective-adverb-2"
+        ],
+        "practiceStepIds": [
+          "u28-st-guided-perfective-adverb-1"
+        ],
+        "checkItemIds": [
+          "u28-i-perfective-adverb-1",
+          "u28-i-perfective-adverb-2"
+        ],
+        "remediationStepIds": [
+          "u28-st-rem-perfective-adverb"
+        ]
+      },
+      "after": {
+        "id": "obj-u28-perfective-adverb",
+        "unitNumber": 28,
+        "title": "Choose the time relationship the source states for perfective adverbial forms",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u28-st-orient",
+          "u28-st-teach-perfective-adverb-1",
+          "u28-st-teach-perfective-adverb-2",
+          "u28-st-teach-perfective-adverb-3",
+          "u28-st-teach-perfective-timing-context"
+        ],
+        "exampleIds": [
+          "ex-u28-perfective-adverb-0",
+          "ex-u28-perfective-adverb-1",
+          "ex-u28-perfective-adverb-2"
+        ],
+        "practiceStepIds": [
+          "u28-st-guided-perfective-adverb-1"
+        ],
+        "checkItemIds": [
+          "u28-i-perfective-adverb-1",
+          "u28-i-perfective-adverb-2"
+        ],
+        "remediationStepIds": [
+          "u28-st-rem-perfective-adverb"
+        ]
+      }
+    },
+    {
+      "before": {
+        "id": "cap-obj-u28-perfective-adverb",
+        "sourceId": "src-content-audit-research",
+        "sourceRevision": "content-audit-2026-10-08",
+        "sourceRecordId": "ca-corrected-capability:cap-obj-u28-perfective-adverb",
+        "sourceHash": "bf5eb9cff399832fa6133f59b73b987e64b4882ec513f98f200b1a000c4716e0",
+        "exactSpan": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nProposed Unit 28 uses admitted imperfective and perfective adverbial lines and one admitted public-domain reading span. Qualified review is pending.\nRead the admitted examples on this card.\nA perfective verbal adverb is anterior to the main predicate. It can precede a past or a future main action. It is not limited to an absolute past.\nusually present, while perfective ones can only be past\nсказав\nperfective verbal adverb; normally anterior to its main action, which can itself be past or future\nнаучившись\nвойдя\nнаписав письмо, она отправит его завтра\nanterior to a future main action\nWhen is the perfective verbal adverb interpreted in this sentence?\nIn написав письмо, она отправит его завтра, anterior to a future main action describes написав: writing precedes the future sending, and the same person performs both actions.\nan absolute present label\na different subject from the main verb\nan absolute present label is not the time of a perfective verbal adverb.\na different subject from the main verb violates the shared-subject constraint.\nthe writer and sender are the same person\nWhich English description identifies the shared subject?\nIn написав письмо, она отправит его завтра, the writer and sender are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject.\nRetained Russian grammar revision 1369617627, existing hash-bound Unit28 contextual research applications, and retained public-domain Wikisource revision 5336197. Independently authored English explanation, 2026-10-12. No private book prose, new Russian, or general productive formation algorithm. Pending final linguistic audit.\nA perfective verbal adverb normally presents an action completed before the main action in this taught construction. Anterior means earlier relative to that action. The retained сказав and научившись illustrate these forms; their labels alone do not fix an absolute past tense. Read the accompanying main predicate to establish the sentence time.\nIn написав письмо, она отправит его завтра, she will send the letter tomorrow after writing it. The writing precedes the future sending: anterior to a future main action is the matching description. The sentence does not require the writing to have happened before the present moment. The pronoun she names the main subject, and the writer and sender are the same person. An absolute present label loses the relative timing; assigning a different subject loses the supplied construction.\nThe retained войдя illustrates another perfective verbal-adverb form with an action normally anterior to its main predicate. It does not by itself identify a main subject or an absolute sentence tense. Compare the supplied forms and read their complete contexts when available. This small example set supplies recognition practice, not a complete productive algorithm for unlisted verbs.\nA perfective verbal adverb normally presents an action completed before the main action in this taught construction. Anterior means earlier relative to that action. The retained сказав and научившись illustrate these forms; their labels alone do not fix an absolute past tense. Read the accompanying main predicate to establish the sentence time.\n\nIn написав письмо, она отправит его завтра, she will send the letter tomorrow after writing it. The writing precedes the future sending: anterior to a future main action is the matching description. The sentence does not require the writing to have happened before the present moment. The pronoun she names the main subject, and the writer and sender are the same person. An absolute present label loses the relative timing; assigning a different subject loses the supplied construction.\n\nThe retained войдя illustrates another perfective verbal-adverb form with an action normally anterior to its main predicate. It does not by itself identify a main subject or an absolute sentence tense. Compare the supplied forms and read their complete contexts when available. This small example set supplies recognition practice, not a complete productive algorithm for unlisted verbs.\n[{\"cue\": \"написав письмо, она отправит его завтра\", \"answer\": \"anterior to a future main action\", \"distractors\": [\"an absolute present label\", \"a different subject from the main verb\"]}, {\"cue\": \"написав письмо, она отправит его завтра\", \"answer\": \"the writer and sender are the same person\", \"distractors\": [\"two unrelated people perform the actions\", \"the sentence omits its main subject\"]}]",
+        "unitNumber": 28,
+        "objectiveId": "obj-u28-perfective-adverb",
+        "supportedClaim": "perfective-verbal-adverb"
+      },
+      "after": {
+        "id": "cap-obj-u28-perfective-adverb",
+        "sourceId": "src-content-audit-research",
+        "sourceRevision": "content-audit-2026-10-08",
+        "sourceRecordId": "ca-corrected-capability:cap-obj-u28-perfective-adverb",
+        "sourceHash": "7bac1b521a8bf51e48a25af9adf518bd844391d098723752e0e6b07ad5e7c3e8",
+        "exactSpan": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nProposed Unit 28 uses admitted imperfective and perfective adverbial lines and one admitted public-domain reading span. Qualified review is pending.\nRead the admitted examples on this card.\nA perfective verbal adverb is anterior to the main predicate. It can precede a past or a future main action. It is not limited to an absolute past.\nusually present, while perfective ones can only be past\nсказав\nperfective verbal adverb; normally anterior to its main action, which can itself be past or future\nнаучившись\nвойдя\nнаписав письмо, она отправит его завтра\nanterior to a future main action\nWhen is the perfective verbal adverb interpreted in this sentence?\nIn написав письмо, она отправит его завтра, anterior to a future main action describes написав: writing precedes the future sending, and the same person performs both actions.\nan absolute present label\na different subject from the main verb\nan absolute present label is not the time of a perfective verbal adverb.\na different subject from the main verb violates the shared-subject constraint.\nthe writer and sender are the same person\nWhich English description identifies the shared subject?\nIn написав письмо, она отправит его завтра, the writer and sender are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject.\nRetained Russian grammar revision 1369617627, existing hash-bound Unit28 contextual research applications, and retained public-domain Wikisource revision 5336197. Independently authored English explanation, 2026-10-12. No private book prose, new Russian, or general productive formation algorithm. Pending final linguistic audit.\nA perfective verbal adverb normally presents an action completed before the main action in this taught construction. Anterior means earlier relative to that action. The retained сказав and научившись illustrate these forms; their labels alone do not fix an absolute past tense. Read the accompanying main predicate to establish the sentence time.\nIn написав письмо, она отправит его завтра, she will send the letter tomorrow after writing it. The writing precedes the future sending: anterior to a future main action is the matching description. The sentence does not require the writing to have happened before the present moment. The pronoun she names the main subject, and the writer and sender are the same person. An absolute present label loses the relative timing; assigning a different subject loses the supplied construction.\nThe retained войдя illustrates another perfective verbal-adverb form with an action normally anterior to its main predicate. It does not by itself identify a main subject or an absolute sentence tense. Compare the supplied forms and read their complete contexts when available. This small example set supplies recognition practice, not a complete productive algorithm for unlisted verbs.\nA perfective verbal adverb normally presents an action completed before the main action in this taught construction. Anterior means earlier relative to that action. The retained сказав and научившись illustrate these forms; their labels alone do not fix an absolute past tense. Read the accompanying main predicate to establish the sentence time.\n\nIn написав письмо, она отправит его завтра, she will send the letter tomorrow after writing it. The writing precedes the future sending: anterior to a future main action is the matching description. The sentence does not require the writing to have happened before the present moment. The pronoun she names the main subject, and the writer and sender are the same person. An absolute present label loses the relative timing; assigning a different subject loses the supplied construction.\n\nThe retained войдя illustrates another perfective verbal-adverb form with an action normally anterior to its main predicate. It does not by itself identify a main subject or an absolute sentence tense. Compare the supplied forms and read their complete contexts when available. This small example set supplies recognition practice, not a complete productive algorithm for unlisted verbs.\n[{\"cue\": \"написав письмо, она отправит его завтра\", \"answer\": \"anterior to a future main action\", \"distractors\": [\"an absolute present label\", \"a different subject from the main verb\"]}, {\"cue\": \"написав письмо, она отправит его завтра\", \"answer\": \"the writer and sender are the same person\", \"distractors\": [\"two unrelated people perform the actions\", \"the sentence omits its main subject\"]}]\nRetained Wikisource Вечера у княгини Старобельской oldid5336197, complete opening paragraph of ЗНАКОМСТВО С ДРУГОМ ПРИНЦЕССЫ КОРЛЕОНЕ with explicit actor Павел Сергеич Вязовский. Exact native clause selections with unchanged source punctuation and NBSP; no stress or actor inserted. Existing public-domain author/work/rights basis retained, qualified rights review pending. Frozen OpenRussian verbs.csv commit50e210c4803237779cb562bc1abcea529066031c identifies читать as imperfective and устать as perfective. Existing CC BY-SA4.0 attribution/rights apply to selected dictionary rows. Retained Russian grammar1369617627 complete Adverbial participle section supplies earlier/simultaneous relation; absolute usually-present/only-past labels are not adopted as sentence tense. Independent English,2026-10-13. Guided literary context also occurs in later reading; not unseen evidence or productive mastery. Original independent relative-time/shared-subject scored fields remain. No private Penguin text; source/rights/semantic review pending.\nС 6 часов утра часов до 6 вечера в первый четверг декабря нынешней зимы Павел Сергеич Вязовский, человек лет пятидесяти пяти, давнишний житель двух из трех комнат старенького крошечного деревянного домика в одном из глухих углов Петербурга, проводил время по обыкновению: сидел за рабочим столом и писал, устав писать ложился на диван и отдыхал читая, потом опять садился писать, и урывками между этих занятий услышал утром голос старушки, хозяйки домика: «самовар принесла, Павел Сергеевич», сказал ей «благодарю, Анна Даниловна», выпил два стакана чаю с молоком, съел с чаем ломоть белого хлеба; опять услышал голос хозяйки: «принесла завтрак, Павел Сергеевич», опять поблагодарил ее, выпил стакан молока с черным хлебом, составлявший его завтрак, опять услышал голос хозяйки: «принесла обед, Павел Сергеич», опять поблагодарил ее, съел тарелку грешневой кашицы, составлявшую его ежедневный обед; опять услышал — это было, наверное часов в 6, по аккуратно соблюдаемому старушкой порядку, — голос ее «принесла самовар, Павел Сергеич!», опять сказал «благодарю вас, Анна Даниловна», — но тут произошло отступление от ежедневного порядка: встав положить чаю в чайник, и налить кипятком, Павел Сергеич увидел, что старушка не ушла, стоит, сложа руки и смотрит на один из локтей его пальто. Он вздохнул, подумав: «опять за то же», — и не ошибся: старушка сказала:\nустать\tуста'ть\tget tired, be tired\termüden; müde sein\tperfective\tуставать\tуста'нь\tуста'ньте\tуста'л\tуста'ла\tуста'ло\tуста'ли\tуста'ну\tуста'нешь\tуста'нет\tуста'нем\tуста'нете\tуста'нут\nWhich English description identifies the relative timing in this retained clause?\nIn устав писать ложился на диван, anterior to a past main action is the matching relative-time description. Becoming tired of writing precedes lying down; the same person performs both actions in this supplied episode. The main predicate is past; the verbal adverb does not independently label absolute sentence time.\n\nan absolute present label mistakes relative timing for an independent tense.\na different subject from the main verb is not the shared-actor reading supplied by this paragraph.\nThe retained paragraph introduces Павел Сергеич Вязовский as the actor. устав писать ложился на диван — Becoming tired of writing precedes lying down; the same person performs both actions in this supplied episode. The source marks устать as perfective. anterior to a past main action describes timing relative to the main predicate in this clause. The actor is supplied by the paragraph, not inserted into a new Russian sentence. This is an exact clause selection with source punctuation and spacing preserved. Compare the independent letter sentence already taught: it keeps its original relative-time and shared-subject reading. The same literary episode appears later in reading practice; this is not unseen evidence, a rule that fixes absolute tense, or unrestricted formation/production mastery.\nA perfective verbal adverb normally presents an action completed before the main action in this taught construction. Anterior means earlier relative to that action. The retained сказав and научившись illustrate these forms; their labels alone do not fix an absolute past tense. Read the accompanying main predicate to establish the sentence time.\n\nIn написав письмо, она отправит его завтра, she will send the letter tomorrow after writing it. The writing precedes the future sending: anterior to a future main action is the matching description. The sentence does not require the writing to have happened before the present moment. The pronoun she names the main subject, and the writer and sender are the same person. An absolute present label loses the relative timing; assigning a different subject loses the supplied construction.\n\nThe retained войдя illustrates another perfective verbal-adverb form with an action normally anterior to its main predicate. It does not by itself identify a main subject or an absolute sentence tense. Compare the supplied forms and read their complete contexts when available. This small example set supplies recognition practice, not a complete productive algorithm for unlisted verbs.\n\nThe retained paragraph introduces Павел Сергеич Вязовский as the actor. устав писать ложился на диван — Becoming tired of writing precedes lying down; the same person performs both actions in this supplied episode. The source marks устать as perfective. anterior to a past main action describes timing relative to the main predicate in this clause. The actor is supplied by the paragraph, not inserted into a new Russian sentence. This is an exact clause selection with source punctuation and spacing preserved. Compare the independent letter sentence already taught: it keeps its original relative-time and shared-subject reading. The same literary episode appears later in reading practice; this is not unseen evidence, a rule that fixes absolute tense, or unrestricted formation/production mastery.\n[{\"cue\": \"написав письмо, она отправит его завтра\", \"answer\": \"anterior to a future main action\", \"distractors\": [\"an absolute present label\", \"a different subject from the main verb\"]}, {\"cue\": \"написав письмо, она отправит его завтра\", \"answer\": \"the writer and sender are the same person\", \"distractors\": [\"two unrelated people perform the actions\", \"the sentence omits its main subject\"]}, {\"cue\": \"устав писать ложился на диван\", \"answer\": \"anterior to a past main action\", \"distractors\": [\"an absolute present label\", \"a different subject from the main verb\"]}]",
+        "unitNumber": 28,
+        "objectiveId": "obj-u28-perfective-adverb",
+        "supportedClaim": "perfective-verbal-adverb"
+      }
+    }
+  ],
+  "addedProvenanceIds": [
+    "prov-u28-timing-native-imperfective-clause",
+    "prov-u28-timing-native-imperfective-actor",
+    "prov-u28-timing-native-imperfective-verb",
+    "prov-u28-timing-native-imperfective-aspect",
+    "prov-ca-u28-timing-imperfective-teach-title",
+    "prov-ca-u28-timing-imperfective-teach-body",
+    "prov-ca-u28-timing-imperfective-rem-body",
+    "prov-ca-u28-timing-imperfective-prompt",
+    "prov-ca-u28-timing-imperfective-feedback",
+    "prov-ca-u28-timing-imperfective-1-reason",
+    "prov-ca-u28-timing-imperfective-2-reason",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-0",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-1",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-2",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-3",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-4",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-5",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-6",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-7",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-8",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-9",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-10",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-11",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-12",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-13",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-14",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-15",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-16",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-17",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-18",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-19",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-20",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-21",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-22",
+    "prov-u28-timing-guided-imperfective-0",
+    "prov-u28-timing-guided-imperfective-1",
+    "prov-u28-timing-guided-imperfective-2",
+    "prov-u28-timing-guided-imperfective-3",
+    "prov-u28-timing-native-perfective-clause",
+    "prov-u28-timing-native-perfective-actor",
+    "prov-u28-timing-native-perfective-verb",
+    "prov-u28-timing-native-perfective-aspect",
+    "prov-ca-u28-timing-perfective-teach-title",
+    "prov-ca-u28-timing-perfective-teach-body",
+    "prov-ca-u28-timing-perfective-rem-body",
+    "prov-ca-u28-timing-perfective-prompt",
+    "prov-ca-u28-timing-perfective-feedback",
+    "prov-ca-u28-timing-perfective-1-reason",
+    "prov-ca-u28-timing-perfective-2-reason",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-0",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-1",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-2",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-3",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-4",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-5",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-6",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-7",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-8",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-9",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-10",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-11",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-12",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-13",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-14",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-15",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-16",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-17",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-18",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-19",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-20",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-21",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-22",
+    "prov-u28-timing-guided-perfective-0",
+    "prov-u28-timing-guided-perfective-1",
+    "prov-u28-timing-guided-perfective-2",
+    "prov-u28-timing-guided-perfective-3"
+  ],
+  "nativeSelections": [
+    {
+      "itemId": "prov-u28-timing-native-imperfective-clause",
+      "unitNumber": 28,
+      "objectiveId": "obj-u28-imperfective-adverb",
+      "recordType": "example",
+      "sourceId": "src-ruwikisource-vechera-5336197",
+      "sourceUrl": "https://ru.wikisource.org/w/index.php?title=Вечера_у_княгини_Старобельской_(Чернышевский)&oldid=5336197",
+      "sourceRevision": "5336197",
+      "sourceRecordId": "vechera-timing-full-paragraph:f5a8d1c819401c77eafb9cce88010acdfbee067ae3f9da640bc55ba464bb2c16",
+      "shippedText": "отдыхал читая",
+      "transformation": "selection",
+      "licenseId": "Public domain",
+      "licenseUrl": "https://ru.wikisource.org/w/index.php?title=Викитека:Авторские_права&oldid=5723825",
+      "attribution": "Николай Гаврилович Чернышевский. Вечера у княгини Старобельской, published 1888. Russian Wikisource oldid 5336197 records the work with PD-old. Шаблон:PD-old oldid 3794015 redirects to Шаблон:PD-old-70 oldid 5691096, which states that the work entered the public domain in Russia under Civil Code article 1281 and in countries whose term is the author's life plus 70 years. Автор:Николай Гаврилович Чернышевский oldid 5696210 records the death year 1889. Шаблон:АП oldid 4965505 defines that year parameter as the author's year of death. Викитека:Авторские права oldid 5723825 is the project license snapshot. Project hosting is not the public-domain basis. Retrieved 2026-09-28T16:43:13Z.",
+      "shareAlikeTreatment": "The retained literary span is in the public domain under the recorded life-plus-70 basis. Project hosting is not that basis. Application code, user data, and user recordings are outside this statement. No audio is included.",
+      "sourceHash": "f5a8d1c819401c77eafb9cce88010acdfbee067ae3f9da640bc55ba464bb2c16",
+      "contentHash": "0e8aed1a193faba14c8402c0a9c0e3eb3d5492d0114f89c4fe0bf88dcbbe8043",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "originalSourceText": "С 6 часов утра часов до 6 вечера в первый четверг декабря нынешней зимы Павел Сергеич Вязовский, человек лет пятидесяти пяти, давнишний житель двух из трех комнат старенького крошечного деревянного домика в одном из глухих углов Петербурга, проводил время по обыкновению: сидел за рабочим столом и писал, устав писать ложился на диван и отдыхал читая, потом опять садился писать, и урывками между этих занятий услышал утром голос старушки, хозяйки домика: «самовар принесла, Павел Сергеевич», сказал ей «благодарю, Анна Даниловна», выпил два стакана чаю с молоком, съел с чаем ломоть белого хлеба; опять услышал голос хозяйки: «принесла завтрак, Павел Сергеевич», опять поблагодарил ее, выпил стакан молока с черным хлебом, составлявший его завтрак, опять услышал голос хозяйки: «принесла обед, Павел Сергеич», опять поблагодарил ее, съел тарелку грешневой кашицы, составлявшую его ежедневный обед; опять услышал — это было, наверное часов в 6, по аккуратно соблюдаемому старушкой порядку, — голос ее «принесла самовар, Павел Сергеич!», опять сказал «благодарю вас, Анна Даниловна», — но тут произошло отступление от ежедневного порядка: встав положить чаю в чайник, и налить кипятком, Павел Сергеич увидел, что старушка не ушла, стоит, сложа руки и смотрит на один из локтей его пальто. Он вздохнул, подумав: «опять за то же», — и не ошибся: старушка сказала:"
+    },
+    {
+      "itemId": "prov-u28-timing-native-imperfective-actor",
+      "unitNumber": 28,
+      "objectiveId": "obj-u28-imperfective-adverb",
+      "recordType": "example",
+      "sourceId": "src-ruwikisource-vechera-5336197",
+      "sourceUrl": "https://ru.wikisource.org/w/index.php?title=Вечера_у_княгини_Старобельской_(Чернышевский)&oldid=5336197",
+      "sourceRevision": "5336197",
+      "sourceRecordId": "vechera-timing-full-paragraph:f5a8d1c819401c77eafb9cce88010acdfbee067ae3f9da640bc55ba464bb2c16",
+      "shippedText": "Павел Сергеич Вязовский",
+      "transformation": "selection",
+      "licenseId": "Public domain",
+      "licenseUrl": "https://ru.wikisource.org/w/index.php?title=Викитека:Авторские_права&oldid=5723825",
+      "attribution": "Николай Гаврилович Чернышевский. Вечера у княгини Старобельской, published 1888. Russian Wikisource oldid 5336197 records the work with PD-old. Шаблон:PD-old oldid 3794015 redirects to Шаблон:PD-old-70 oldid 5691096, which states that the work entered the public domain in Russia under Civil Code article 1281 and in countries whose term is the author's life plus 70 years. Автор:Николай Гаврилович Чернышевский oldid 5696210 records the death year 1889. Шаблон:АП oldid 4965505 defines that year parameter as the author's year of death. Викитека:Авторские права oldid 5723825 is the project license snapshot. Project hosting is not the public-domain basis. Retrieved 2026-09-28T16:43:13Z.",
+      "shareAlikeTreatment": "The retained literary span is in the public domain under the recorded life-plus-70 basis. Project hosting is not that basis. Application code, user data, and user recordings are outside this statement. No audio is included.",
+      "sourceHash": "f5a8d1c819401c77eafb9cce88010acdfbee067ae3f9da640bc55ba464bb2c16",
+      "contentHash": "52164d66f1693fef0bb8f6cc0802625950b6ce221a207f7cdf67611115e800fc",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "originalSourceText": "С 6 часов утра часов до 6 вечера в первый четверг декабря нынешней зимы Павел Сергеич Вязовский, человек лет пятидесяти пяти, давнишний житель двух из трех комнат старенького крошечного деревянного домика в одном из глухих углов Петербурга, проводил время по обыкновению: сидел за рабочим столом и писал, устав писать ложился на диван и отдыхал читая, потом опять садился писать, и урывками между этих занятий услышал утром голос старушки, хозяйки домика: «самовар принесла, Павел Сергеевич», сказал ей «благодарю, Анна Даниловна», выпил два стакана чаю с молоком, съел с чаем ломоть белого хлеба; опять услышал голос хозяйки: «принесла завтрак, Павел Сергеевич», опять поблагодарил ее, выпил стакан молока с черным хлебом, составлявший его завтрак, опять услышал голос хозяйки: «принесла обед, Павел Сергеич», опять поблагодарил ее, съел тарелку грешневой кашицы, составлявшую его ежедневный обед; опять услышал — это было, наверное часов в 6, по аккуратно соблюдаемому старушкой порядку, — голос ее «принесла самовар, Павел Сергеич!», опять сказал «благодарю вас, Анна Даниловна», — но тут произошло отступление от ежедневного порядка: встав положить чаю в чайник, и налить кипятком, Павел Сергеич увидел, что старушка не ушла, стоит, сложа руки и смотрит на один из локтей его пальто. Он вздохнул, подумав: «опять за то же», — и не ошибся: старушка сказала:"
+    },
+    {
+      "itemId": "prov-u28-timing-native-imperfective-verb",
+      "unitNumber": 28,
+      "objectiveId": "obj-u28-imperfective-adverb",
+      "recordType": "lexical record",
+      "sourceId": "src-openrussian-50e210c4",
+      "sourceUrl": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv",
+      "sourceRevision": "50e210c4803237779cb562bc1abcea529066031c",
+      "sourceRecordId": "verbs.csv:читать#timing-context",
+      "originalSourceText": "читать\tчита'ть\tread\tlesen\timperfective\tпрочитать;почитать;прочесть\tчита'й\tчита'йте\tчита'л\tчита'ла\tчита'ло\tчита'ли\tчита'ю\tчита'ешь\tчита'ет\tчита'ем\tчита'ете\tчита'ют",
+      "shippedText": "читать",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "db48a48e370520d2f199cdf3647c2a7bbd98760401eee7722c22c0e27eafb05d",
+      "contentHash": "7aa23ce5475abca729f6459384af5daf645239a98c459f735d838abf99fc2de4",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "itemId": "prov-u28-timing-native-imperfective-aspect",
+      "unitNumber": 28,
+      "objectiveId": "obj-u28-imperfective-adverb",
+      "recordType": "lexical record",
+      "sourceId": "src-openrussian-50e210c4",
+      "sourceUrl": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv",
+      "sourceRevision": "50e210c4803237779cb562bc1abcea529066031c",
+      "sourceRecordId": "verbs.csv:читать#timing-context",
+      "originalSourceText": "читать\tчита'ть\tread\tlesen\timperfective\tпрочитать;почитать;прочесть\tчита'й\tчита'йте\tчита'л\tчита'ла\tчита'ло\tчита'ли\tчита'ю\tчита'ешь\tчита'ет\tчита'ем\tчита'ете\tчита'ют",
+      "shippedText": "imperfective",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "db48a48e370520d2f199cdf3647c2a7bbd98760401eee7722c22c0e27eafb05d",
+      "contentHash": "f304861b05823220861aeceac4a4aebc54aa9546c5817d085e4c6f2f8dca1e1e",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "itemId": "prov-u28-timing-native-perfective-clause",
+      "unitNumber": 28,
+      "objectiveId": "obj-u28-perfective-adverb",
+      "recordType": "example",
+      "sourceId": "src-ruwikisource-vechera-5336197",
+      "sourceUrl": "https://ru.wikisource.org/w/index.php?title=Вечера_у_княгини_Старобельской_(Чернышевский)&oldid=5336197",
+      "sourceRevision": "5336197",
+      "sourceRecordId": "vechera-timing-full-paragraph:f5a8d1c819401c77eafb9cce88010acdfbee067ae3f9da640bc55ba464bb2c16",
+      "shippedText": "устав писать ложился на диван",
+      "transformation": "selection",
+      "licenseId": "Public domain",
+      "licenseUrl": "https://ru.wikisource.org/w/index.php?title=Викитека:Авторские_права&oldid=5723825",
+      "attribution": "Николай Гаврилович Чернышевский. Вечера у княгини Старобельской, published 1888. Russian Wikisource oldid 5336197 records the work with PD-old. Шаблон:PD-old oldid 3794015 redirects to Шаблон:PD-old-70 oldid 5691096, which states that the work entered the public domain in Russia under Civil Code article 1281 and in countries whose term is the author's life plus 70 years. Автор:Николай Гаврилович Чернышевский oldid 5696210 records the death year 1889. Шаблон:АП oldid 4965505 defines that year parameter as the author's year of death. Викитека:Авторские права oldid 5723825 is the project license snapshot. Project hosting is not the public-domain basis. Retrieved 2026-09-28T16:43:13Z.",
+      "shareAlikeTreatment": "The retained literary span is in the public domain under the recorded life-plus-70 basis. Project hosting is not that basis. Application code, user data, and user recordings are outside this statement. No audio is included.",
+      "sourceHash": "f5a8d1c819401c77eafb9cce88010acdfbee067ae3f9da640bc55ba464bb2c16",
+      "contentHash": "0144dd9e65cc85b506fec9e0a88c9ab6fc00d933aa21fd5b413977d6161cd316",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "originalSourceText": "С 6 часов утра часов до 6 вечера в первый четверг декабря нынешней зимы Павел Сергеич Вязовский, человек лет пятидесяти пяти, давнишний житель двух из трех комнат старенького крошечного деревянного домика в одном из глухих углов Петербурга, проводил время по обыкновению: сидел за рабочим столом и писал, устав писать ложился на диван и отдыхал читая, потом опять садился писать, и урывками между этих занятий услышал утром голос старушки, хозяйки домика: «самовар принесла, Павел Сергеевич», сказал ей «благодарю, Анна Даниловна», выпил два стакана чаю с молоком, съел с чаем ломоть белого хлеба; опять услышал голос хозяйки: «принесла завтрак, Павел Сергеевич», опять поблагодарил ее, выпил стакан молока с черным хлебом, составлявший его завтрак, опять услышал голос хозяйки: «принесла обед, Павел Сергеич», опять поблагодарил ее, съел тарелку грешневой кашицы, составлявшую его ежедневный обед; опять услышал — это было, наверное часов в 6, по аккуратно соблюдаемому старушкой порядку, — голос ее «принесла самовар, Павел Сергеич!», опять сказал «благодарю вас, Анна Даниловна», — но тут произошло отступление от ежедневного порядка: встав положить чаю в чайник, и налить кипятком, Павел Сергеич увидел, что старушка не ушла, стоит, сложа руки и смотрит на один из локтей его пальто. Он вздохнул, подумав: «опять за то же», — и не ошибся: старушка сказала:"
+    },
+    {
+      "itemId": "prov-u28-timing-native-perfective-actor",
+      "unitNumber": 28,
+      "objectiveId": "obj-u28-perfective-adverb",
+      "recordType": "example",
+      "sourceId": "src-ruwikisource-vechera-5336197",
+      "sourceUrl": "https://ru.wikisource.org/w/index.php?title=Вечера_у_княгини_Старобельской_(Чернышевский)&oldid=5336197",
+      "sourceRevision": "5336197",
+      "sourceRecordId": "vechera-timing-full-paragraph:f5a8d1c819401c77eafb9cce88010acdfbee067ae3f9da640bc55ba464bb2c16",
+      "shippedText": "Павел Сергеич Вязовский",
+      "transformation": "selection",
+      "licenseId": "Public domain",
+      "licenseUrl": "https://ru.wikisource.org/w/index.php?title=Викитека:Авторские_права&oldid=5723825",
+      "attribution": "Николай Гаврилович Чернышевский. Вечера у княгини Старобельской, published 1888. Russian Wikisource oldid 5336197 records the work with PD-old. Шаблон:PD-old oldid 3794015 redirects to Шаблон:PD-old-70 oldid 5691096, which states that the work entered the public domain in Russia under Civil Code article 1281 and in countries whose term is the author's life plus 70 years. Автор:Николай Гаврилович Чернышевский oldid 5696210 records the death year 1889. Шаблон:АП oldid 4965505 defines that year parameter as the author's year of death. Викитека:Авторские права oldid 5723825 is the project license snapshot. Project hosting is not the public-domain basis. Retrieved 2026-09-28T16:43:13Z.",
+      "shareAlikeTreatment": "The retained literary span is in the public domain under the recorded life-plus-70 basis. Project hosting is not that basis. Application code, user data, and user recordings are outside this statement. No audio is included.",
+      "sourceHash": "f5a8d1c819401c77eafb9cce88010acdfbee067ae3f9da640bc55ba464bb2c16",
+      "contentHash": "52164d66f1693fef0bb8f6cc0802625950b6ce221a207f7cdf67611115e800fc",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "originalSourceText": "С 6 часов утра часов до 6 вечера в первый четверг декабря нынешней зимы Павел Сергеич Вязовский, человек лет пятидесяти пяти, давнишний житель двух из трех комнат старенького крошечного деревянного домика в одном из глухих углов Петербурга, проводил время по обыкновению: сидел за рабочим столом и писал, устав писать ложился на диван и отдыхал читая, потом опять садился писать, и урывками между этих занятий услышал утром голос старушки, хозяйки домика: «самовар принесла, Павел Сергеевич», сказал ей «благодарю, Анна Даниловна», выпил два стакана чаю с молоком, съел с чаем ломоть белого хлеба; опять услышал голос хозяйки: «принесла завтрак, Павел Сергеевич», опять поблагодарил ее, выпил стакан молока с черным хлебом, составлявший его завтрак, опять услышал голос хозяйки: «принесла обед, Павел Сергеич», опять поблагодарил ее, съел тарелку грешневой кашицы, составлявшую его ежедневный обед; опять услышал — это было, наверное часов в 6, по аккуратно соблюдаемому старушкой порядку, — голос ее «принесла самовар, Павел Сергеич!», опять сказал «благодарю вас, Анна Даниловна», — но тут произошло отступление от ежедневного порядка: встав положить чаю в чайник, и налить кипятком, Павел Сергеич увидел, что старушка не ушла, стоит, сложа руки и смотрит на один из локтей его пальто. Он вздохнул, подумав: «опять за то же», — и не ошибся: старушка сказала:"
+    },
+    {
+      "itemId": "prov-u28-timing-native-perfective-verb",
+      "unitNumber": 28,
+      "objectiveId": "obj-u28-perfective-adverb",
+      "recordType": "lexical record",
+      "sourceId": "src-openrussian-50e210c4",
+      "sourceUrl": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv",
+      "sourceRevision": "50e210c4803237779cb562bc1abcea529066031c",
+      "sourceRecordId": "verbs.csv:устать#timing-context",
+      "originalSourceText": "устать\tуста'ть\tget tired, be tired\termüden; müde sein\tperfective\tуставать\tуста'нь\tуста'ньте\tуста'л\tуста'ла\tуста'ло\tуста'ли\tуста'ну\tуста'нешь\tуста'нет\tуста'нем\tуста'нете\tуста'нут",
+      "shippedText": "устать",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "4b77e66fd55de22edba1168e4be7de68d6222fbeeb2b789be1e39952aed0d225",
+      "contentHash": "ee2b39ff0fc56b1484566cfde2e1c2546e5361211dbc58349708b7a081fd97bc",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "itemId": "prov-u28-timing-native-perfective-aspect",
+      "unitNumber": 28,
+      "objectiveId": "obj-u28-perfective-adverb",
+      "recordType": "lexical record",
+      "sourceId": "src-openrussian-50e210c4",
+      "sourceUrl": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv",
+      "sourceRevision": "50e210c4803237779cb562bc1abcea529066031c",
+      "sourceRecordId": "verbs.csv:устать#timing-context",
+      "originalSourceText": "устать\tуста'ть\tget tired, be tired\termüden; müde sein\tperfective\tуставать\tуста'нь\tуста'ньте\tуста'л\tуста'ла\tуста'ло\tуста'ли\tуста'ну\tуста'нешь\tуста'нет\tуста'нем\tуста'нете\tуста'нут",
+      "shippedText": "perfective",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "4b77e66fd55de22edba1168e4be7de68d6222fbeeb2b789be1e39952aed0d225",
+      "contentHash": "11142462a3fd99fc462fd043af4dea0123fa5243f08ffb4feacfc0361179f5d8",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    }
+  ],
+  "nativePinCodeSha256": "daa6b75e66d04ee0fa5f7475cc3a3b0edf071dfd5a2dc087a7bcfd87da7dc360",
+  "semanticAcceptance": false,
+  "unseenContextClaim": false,
+  "productiveFormationClaim": false
+}

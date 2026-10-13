@@ -122,13 +122,21 @@ internal fun correctedCapabilityDefects(pack: V2CurriculumPack, cap: V2SourceCap
         val frozenApplications = runCatching {
             Json.decodeFromString<List<V2SynthesisApplication>>(cap.exactSpan.substringAfterLast('\n'))
         }.getOrNull()
-        if (frozenApplications?.size != independent.size ||
+        val contextualChecks = if (pin.unit == 28) practiced.mapNotNull(pack::item) + independent else independent
+        if (pin.unit == 28 && (practiced.size != 1 || independent.size != 2 ||
+            contextualChecks.firstOrNull()?.assessment?.independent != false ||
+            contextualChecks.any { item -> item.assessment?.relationParticipantIds.orEmpty().isEmpty() ||
+                item.assessment?.relationParticipantIds.orEmpty().any { it !in hostIds } } ||
+            independent.any { it.promptLetter == contextualChecks.firstOrNull()?.promptLetter })) {
+            fail("is missing its distinct bound guided timing application")
+        }
+        if (frozenApplications?.size != contextualChecks.size ||
             hosts.any { it.synthesis?.applications != frozenApplications } ||
-            independent.any { item -> frozenApplications?.count { application ->
+            contextualChecks.any { item -> frozenApplications?.count { application ->
                 application.cue == item.promptLetter && application.answer == item.answer &&
                     application.distractors == item.options.filter { it != item.answer }
             } != 1 }) {
-            fail("is missing its exact independent contextual applications")
+            fail(if (pin.unit == 28) "is missing its exact guided and independent contextual applications" else "is missing its exact independent contextual applications")
         }
     }
     (objective.instructionStepIds + objective.remediationStepIds).forEach { id ->
