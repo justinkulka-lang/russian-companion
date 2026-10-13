@@ -1,0 +1,23 @@
+{
+  "baselineCommit": "3b8b6df0150d406f8f71a2bc7eebd1a19a301eba",
+  "changes": [
+    {
+      "file": "app/src/test/java/dev/russiancompanion/v2/Unit24NegationInstructionTest.kt",
+      "beforeTeachingCards": 2,
+      "afterTeachingCards": 3,
+      "originalGovernedItemCountPreserved": 21,
+      "newOptionalReferenceCount": 1,
+      "all119OriginalInstructionRecordsPreserved": true
+    },
+    {
+      "file": "app/src/test/java/dev/russiancompanion/v2/Units2125SourceIntakeTest.kt",
+      "allHistoricalCountsAndLicenseRoutesPreserved": true,
+      "priorUnit21Intake14Preserved": true,
+      "newUnit24Intake25SeparatelyChecked": true,
+      "newNativeRecords": 8,
+      "newPendingEnglishRecords": 17
+    }
+  ],
+  "scope": "Current explicit roles/intake; historical evidence unchanged. No validation weakened.",
+  "formalAcceptance": false
+}

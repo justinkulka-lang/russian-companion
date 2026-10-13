@@ -8,7 +8,7 @@ import java.io.File
 class Unit24NegationInstructionTest {
     @Test fun allNegationContrastsAreExplainedBeforePracticeAndRepeatedAfterAMiss() {
         val p=pack()
-        for((slug,count) in mapOf("verbal-ne" to 4,"absence" to 3,"alternation" to 2,"stand-ins" to 3,"concord" to 2,"word-order-contrast" to 2,"placement" to 2)) {
+        for((slug,count) in mapOf("verbal-ne" to 4,"absence" to 3,"alternation" to 2,"stand-ins" to 3,"concord" to 2,"word-order-contrast" to 3,"placement" to 2)) {
             val s=p.unit(24)!!.sessions.single { it.id=="u24-s-$slug" };val teaches=s.steps.takeWhile { it.kind!="GUIDED" }.filter { it.kind=="TEACH" }
             assertEquals(slug,count,teaches.size);val body=teaches.joinToString("\n") { it.body }
             p.items.filter { it.objectiveId=="obj-u24-$slug" }.forEach { i ->
@@ -31,7 +31,8 @@ class Unit24NegationInstructionTest {
         assertTrue(text("placement").contains("does not by itself identify that other person"))
     }
     @Test fun existingKeysStayBoundAndSourceAndReviewRestrictionsRemainClosed() {
-        val p=pack();val items=p.items.filter { it.objectiveId.startsWith("obj-u24-") };assertEquals(21,items.size)
+        val p=pack();val items=p.items.filter { it.objectiveId.startsWith("obj-u24-") && it.assessment != null };assertEquals(21,items.size)
+        assertEquals(1,p.items.count { it.objectiveId=="obj-u24-persuasion-reference" && it.kind=="SOURCE_MEANING" })
         for(i in items) {
             if(i.assessment!!.independent)assertTrue(i.id,V2Validator.featureValid(p,i))
             assertTrue(i.id,i.feedback.contains(i.answer));for(n in 1 until i.options.size)assertTrue(i.id,i.distractorRationales[n].contains(i.options[n]))

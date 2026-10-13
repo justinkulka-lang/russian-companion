@@ -2653,6 +2653,9 @@ internal object V2Validator {
     private fun validateGovernedChecks(pack: V2CurriculumPack, unit: V2Unit, errors: MutableList<String>) {
         val generic = "Return to the explanation. Compare the shown form with the admitted record."
         unit.objectives.filter { it.kind == "RECOGNITION" }.forEach { objective ->
+            if (objective.id == "obj-u24-word-order-contrast" && !Unit24ContextPins.matches(pack)) {
+                errors += "Objective ${objective.id} has no frozen distinct guided context and preserved persuasion chain"
+            }
             if (objective.id == "obj-u21-object-reference" && !Unit21ObjectPins.matches(pack)) {
                 errors += "Objective ${objective.id} has no frozen distinct reflexive object application chain"
             }

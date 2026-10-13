@@ -69,6 +69,7 @@ internal object CompleteRuleContextPins {
         "ca-rule-context:u8-i-agreement-3" to "c2531b0635bff7a90616ae33b160e6f91ff0e5afef0f3994d58f85de360372c0",
         "ca-rule-context:u9-i-odindva-4" to "0315d56ca1515ed2adec087f8fbaea9c4f2de720bef39caecaea3a2870e4a44b",
         "ca-rule-context:u21-i-object-reference-2" to "79cfe271dbde889ae4299b784c697f533b8b7f98a24076a73db60071a8f17480",
+        "ca-rule-context:u24-g-context-subject-focus" to "7a075170a10d222fa2221ec794f0f5b0bf69a647ecd0c9202e8a3a5683642bef",
     )
     fun required(itemId: String) = hashes.containsKey("ca-rule-context:$itemId")
     private fun hash(value: String) = MessageDigest.getInstance("SHA-256").digest(value.toByteArray(Charsets.UTF_8))
@@ -91,6 +92,7 @@ internal object CompleteRuleContextPins {
     }
     fun itemMatches(pack: V2CurriculumPack, item: V2CheckItem): Boolean {
         val expectedObjective = when {
+            item.id == "u24-g-context-subject-focus" -> "obj-u24-word-order-contrast"
             item.id == "u21-i-object-reference-2" -> "obj-u21-object-reference"
             item.id == "u9-i-odindva-4" -> "obj-u9-odindva"
             item.id == "u8-i-agreement-3" -> "obj-u8-agreement"

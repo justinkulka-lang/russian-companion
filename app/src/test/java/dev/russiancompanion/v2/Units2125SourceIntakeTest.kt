@@ -277,9 +277,17 @@ class Units2125SourceIntakeTest {
             assertEquals(sha256(it.originalSourceText), it.sourceHash)
             assertEquals(sha256(it.shippedText), it.contentHash)
         }
+        val contextTransfer = currentIntake.filter { it.itemId.startsWith("prov-ca-u24-context-transfer-") || it.itemId.startsWith("prov-u24-context-transfer-native-") }
+        assertEquals(25,contextTransfer.size)
+        val contextEnglish = contextTransfer.filter { it.itemId.startsWith("prov-ca-u24-context-transfer-") }
+        assertEquals(17,contextEnglish.size)
+        contextEnglish.forEach { assertContentAuditResearch(it) }
+        val contextNative = contextTransfer.filter { it.itemId.startsWith("prov-u24-context-transfer-native-") }
+        assertEquals(8,contextNative.size)
+        contextNative.forEach { assertTrue(dev.russiancompanion.v2.curriculum.Unit24ContextPins.admittedNewNative(it)) }
         // Retain the original historical freeze/count/license-route checks below.
-        val intake = currentIntake.filterNot { it in distinctReflexive }
-        assertEquals(currentIntake.size, intake.size + distinctReflexive.size)
+        val intake = currentIntake.filterNot { it in distinctReflexive || it in contextTransfer }
+        assertEquals(currentIntake.size, intake.size + distinctReflexive.size + contextTransfer.size)
         val instructionSupplements = intake.filter { it.itemId.startsWith("prov-ca-u21-") || it.itemId.startsWith("prov-ca-u22-") || it.itemId.startsWith("prov-ca-u23-") || it.itemId.startsWith("prov-ca-u24-instruction-") || it.itemId.startsWith("prov-ca-u25-instruction-") }
         assertEquals(578, intake.size - instructionSupplements.size)
         assertEquals(75, instructionSupplements.count { it.unitNumber == 21 })
