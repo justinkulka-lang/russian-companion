@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit14FeedbackCorrectionTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-13T11:19:34.748Z" hostname="d0fbcd1608d3" time="26.854">
+  <properties/>
+  <testcase name="historicalQuestionFeedbackCreditIsRetainedButStale" classname="dev.russiancompanion.v2.Unit14FeedbackCorrectionTest" time="10.71"/>
+  <testcase name="maleColdExampleDoesNotAnswerFemaleColdQuestion" classname="dev.russiancompanion.v2.Unit14FeedbackCorrectionTest" time="5.126"/>
+  <testcase name="durationFreeOptionDoesNotAnswerBoundedWorkQuestion" classname="dev.russiancompanion.v2.Unit14FeedbackCorrectionTest" time="2.0"/>
+  <testcase name="feedbackExplainsFutureLimitsAndImpersonalExperiencers" classname="dev.russiancompanion.v2.Unit14FeedbackCorrectionTest" time="6.724"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
