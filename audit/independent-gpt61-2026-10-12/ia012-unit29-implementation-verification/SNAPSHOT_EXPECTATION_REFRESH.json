@@ -1,0 +1,20 @@
+{
+  "baselineCommit": "e4085c5686e1c58a0af43e1c1f66fbb573f56887",
+  "file": "app/src/test/java/dev/russiancompanion/v2/BatchECapabilityResearchTest.kt",
+  "unit": 29,
+  "changes": [
+    {
+      "field": "contentReviewDigest",
+      "before": "b35528e0a8ca27fed0fe18541aab59755d6adcad90a7ccaae86c1f8318ab9374",
+      "after": "454026c94347703fa15b6e305bf4319edcc1542e6a9eb786709186b435753501"
+    },
+    {
+      "field": "reviewPackageDigest",
+      "before": "73eeb58d502dc27b52246f6c92bc52b4e8847ccce1c429806d28a18701d07639",
+      "after": "2d3a8b3cdf53c88aab9cf389a8750cab1146ba02ca3d5ee47a4690ab8353446f"
+    }
+  ],
+  "allOtherSnapshotAndMappingExpectationsUnchanged": true,
+  "productionSourceAndCurriculumChanged": false,
+  "formalAcceptance": false
+}

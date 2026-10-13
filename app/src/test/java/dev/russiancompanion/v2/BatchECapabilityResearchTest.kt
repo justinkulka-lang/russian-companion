@@ -343,7 +343,8 @@ class BatchECapabilityResearchTest {
             26 to "7870405b2810239e5e744706b0376877191d00afc337ac30e7a2249ad97fddab",
             27 to "fb8a23246226a841df660cae2517b139cba2ff51ef5939792268d2c6cb50bc2e",
             28 to "d8df059f618e932eb0e77579113fea17db317584e77bef5a10dda3e82f70d402",
-            29 to "b35528e0a8ca27fed0fe18541aab59755d6adcad90a7ccaae86c1f8318ab9374",
+            // Contextual punctuation supersedes historical b35528e0a8ca27fed0fe18541aab59755d6adcad90a7ccaae86c1f8318ab9374.
+            29 to "454026c94347703fa15b6e305bf4319edcc1542e6a9eb786709186b435753501",
             30 to "9e453a1050dc3a25959271b300c68c64bb293ba9f34a40a9d76aaf3e0ce3f02e",
         )
         val mapping = mapOf(
@@ -367,7 +368,8 @@ class BatchECapabilityResearchTest {
             26 to "72034166355fc1ba567a4caa64db7c908d9c523ed7e2f3d618e45e9653a14e99",
             27 to "e1607fe23cb8f2e8bbc35c9a76a49b3895992b109075052c61b8daeab4e0e941",
             28 to "a4132204cbd12285cf157a29f2fb6bd28d03404145ae1fe830de9b93953236ad",
-            29 to "73eeb58d502dc27b52246f6c92bc52b4e8847ccce1c429806d28a18701d07639",
+            // Contextual punctuation supersedes historical 73eeb58d502dc27b52246f6c92bc52b4e8847ccce1c429806d28a18701d07639.
+            29 to "2d3a8b3cdf53c88aab9cf389a8750cab1146ba02ca3d5ee47a4690ab8353446f",
             30 to "f2c5e63a6b86d782c8bd055dac04923789909962aa6f1423208f5635aef354c8",
         )
         (content.keys).forEach { number ->
