@@ -64,12 +64,13 @@
       "findingId": "IA009",
       "producerSeverity": "MEDIUM",
       "producerStatus": "OPEN",
-      "engineeringDisposition": "PARTIAL_LAB_ROUTE_UNIT6_AND_UNIT7_FEEDBACK_FIXED_104_FEEDBACK_ROWS_OPEN",
+      "engineeringDisposition": "PARTIAL_LAB_ROUTE_UNITS6_7_AND_UNIT9_VALUES_FIXED_87_FEEDBACK_ROWS_OPEN",
       "formalAcceptance": false,
       "implementationCommit": "c82e5b4a305c960ca41f660071d0da25070631ea",
       "unit6FeedbackImplementationCommit": "4e5e7adc8b9cfa96024e6b8c9c9db18d260a9634",
-      "remainingLiteralDoesFeedbackRows": 104,
-      "unit7FeedbackImplementationCommit": "b48d4a575e0d8496de4e02c4e7af6d4795d4309f"
+      "remainingLiteralDoesFeedbackRows": 87,
+      "unit7FeedbackImplementationCommit": "b48d4a575e0d8496de4e02c4e7af6d4795d4309f",
+      "unit9NumberFeedbackImplementationCommit": "b9f00899069b495bed1f5791f72e485c63945938"
     },
     {
       "findingId": "IA010",
@@ -147,7 +148,7 @@
   ],
   "firstBatchImplementationCommit": "4f5cb8024d3f68a37052fdf85b5755bffa2a0904",
   "firstBatchPacketCheckpoint": "49af91a0f5578c63a3b9b98bbe975f40d2758fcc",
-  "latestCurriculumImplementationCommit": "b48d4a575e0d8496de4e02c4e7af6d4795d4309f",
+  "latestCurriculumImplementationCommit": "b9f00899069b495bed1f5791f72e485c63945938",
   "acceptanceOrder": [
     "FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
     "PHYSICAL_DEVICE_ACCEPTANCE_LAST"

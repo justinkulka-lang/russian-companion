@@ -33,3 +33,7 @@ Next bounded feedback batch:Unit7’s two rows, after reading their complete ret
 ## Unit7 feedback engineering correction
 
 Implementationb48d4a575e0d8496de4e02c4e7af6d4795d4309f explains the two remaining Unit7 agreement rows and all three distractors from retained grammar context and lexical fields. Scored/source tuples remain unchanged; five new English coverage records are review-pending. Current literal Does inventory:104 rows (50 generic/54 feature-specific), across Units9–15. All earlier counts above are historical snapshots. Next bounded batch:17 numeric-value recognition rows in Unit9; read IA009_UNIT9_SOURCE_REVIEW_PENDING.md before further corrections, especially its warning about incomplete quantity labels and bounded case context. This is not semantic acceptance or a test count.
+
+## Unit9 numeric-value feedback — 2026-10-13
+
+Implementationb9f00899069b495bed1f5791f72e485c63945938 explains17 numeric-value contrasts and their17 distractors. Scored/source tuples remain unchanged;34 English coverage records are pending review. Current literal Does inventory:87 rows (33 generic/54 feature-specific); Unit9 has26 remaining rows (composition5, odindva6, quantity10, pattern5). Earlier counts are historical. Next bounded group:five composition/thousands items, starting with full retained number examples; the mixed thousands category needs its genitive-number context. Read IA009_UNIT9_SOURCE_REVIEW_PENDING.md. Do not treat abbreviated quantity labels as unrestricted rules. This is not semantic acceptance or a test count.

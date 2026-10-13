@@ -11,12 +11,12 @@ Unit 9 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 4f5cb8024d3f68a37052fdf85b5755bffa2a0904
-- Unit content-review SHA-256: e910e061464deec4c9c2eab392ede33fba94cd3e528e8a142966b28e2d0bb470
+- Curriculum source commit: b9f00899069b495bed1f5791f72e485c63945938
+- Unit content-review SHA-256: 8e5447a098b03298f0eafdfe12a28fb675d3065464467a7cfc284d62188625df
 - Mapping-package SHA-256: 44199859a34f129c83c22e0e058e305784913077a569025b871abdd1a6a707bf
-- Pack content-review SHA-256: 8b680bd4042fd8cc5e836923ac06d3d14bfca6157a7cccc12cec0f7df2c27698
-- Review-package SHA-256: b2d676a7e72d93dcbfc35e25b35af23e86719fde79854850430c949cd813df8d
-- Repository source SHA-256: c305f2f15bf5f3d1e717e7c5246d83aeb46413ea063b43a8223dfdbe8f4c5cbc
+- Pack content-review SHA-256: 3472505a1a3c031ecd300537c671185fad28be8c5d3dd804d71c516cd33c9069
+- Review-package SHA-256: dc52830b29337d0ed16481dca5e0e5fc60bfba7b6a9e29cbed4d0f8ba5323a06
+- Repository source SHA-256: 45469cf99cead1cc5974a878d2f5cc32ac7c65134fa41ac00c73792314f73ee6
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -3576,7 +3576,7 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 65851a6aad772d16a11a764ab3d3a200e8710ea6b4244f1e77204086a8be3d18
+- Content hash: 661ccb4f2f59f526feaa3cbb0560f045d2188ccb07ca7b8cad0582d152f901a2
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3584,11 +3584,11 @@ prompt=Which admitted form matches the shown number?
 promptLetter=0
 options=ноль | оди́н
 answer=ноль
-feedback=Does the admitted record show the governed contrast? ноль.
+feedback=ноль names zero (0), the value shown. оди́н names one (1), a different value. Zero counts no units; one counts a single unit.
 objectiveId=obj-u9-cardinal
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted form is a different number in the same table.
+distractorRationales= | оди́н names one (1) instead of the shown value 0.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-cardinal-0
@@ -3596,8 +3596,8 @@ cueLanguage=number
 independent=false
 answerSourceIds=prov-ex-u9-cardinal-0-ru
 distractorSourceIds= | prov-ex-u9-cardinal-1-ru
-distractorDifference= | This admitted form is a different number in the same table.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | оди́н names one (1) instead of the shown value 0.
+whyAnswerDemonstratesObjective=ноль names zero (0), the value shown. оди́н names one (1), a different value. Zero counts no units; one counts a single unit.
 contrastMembers=ноль | оди́н
 relationKind=SAME_RULE_DIFFERENT_BOUNDARY
 relationParticipantIds=prov-ex-u9-cardinal-0-en | prov-ex-u9-cardinal-0-ru | prov-ex-u9-cardinal-1-ru
@@ -3610,7 +3610,7 @@ relationParticipantIds=prov-ex-u9-cardinal-0-en | prov-ex-u9-cardinal-0-ru | pro
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: cd2c0d61de9fde567c19ef9d64cde2e2c31a4350c1440116662f97f056946a9c
+- Content hash: 67c4139d00b352300480033311f58f303effa86496635932b65c87dce3e74620
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3618,11 +3618,11 @@ prompt=Which admitted form matches the shown number?
 promptLetter=11
 options=оди́ннадцать | двена́дцать
 answer=оди́ннадцать
-feedback=Does the admitted record show the governed contrast? оди́ннадцать.
+feedback=оди́ннадцать names eleven (11), the value shown. двена́дцать names twelve (12), a different value.
 objectiveId=obj-u9-teens
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted form is a different teen.
+distractorRationales= | двена́дцать names twelve (12) instead of the shown value 11.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-teens-0
@@ -3630,8 +3630,8 @@ cueLanguage=number
 independent=false
 answerSourceIds=prov-ex-u9-teens-0-ru
 distractorSourceIds= | prov-ex-u9-teens-1-ru
-distractorDifference= | This admitted form is a different teen.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | двена́дцать names twelve (12) instead of the shown value 11.
+whyAnswerDemonstratesObjective=оди́ннадцать names eleven (11), the value shown. двена́дцать names twelve (12), a different value.
 contrastMembers=оди́ннадцать | двена́дцать
 relationKind=SAME_RULE_DIFFERENT_BOUNDARY
 relationParticipantIds=prov-ex-u9-teens-0-en | prov-ex-u9-teens-0-ru | prov-ex-u9-teens-1-ru
@@ -3644,7 +3644,7 @@ relationParticipantIds=prov-ex-u9-teens-0-en | prov-ex-u9-teens-0-ru | prov-ex-u
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: a026221066370d4a19a3126134ec512826412e3fccbb5efc240cf4b968a04995
+- Content hash: 4e35361a81219b04cbaf83464c842c11fd56a4511bc622e4cbe9c9a20658bcb9
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3652,11 +3652,11 @@ prompt=Which admitted form matches the shown number?
 promptLetter=30
 options=три́дцать | со́рок
 answer=три́дцать
-feedback=Does the admitted record show the governed contrast? три́дцать.
+feedback=три́дцать names thirty (30), the value shown. со́рок names forty (40), a different value.
 objectiveId=obj-u9-tens
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted form is a different ten.
+distractorRationales= | со́рок names forty (40) instead of the shown value 30.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-tens-0
@@ -3664,8 +3664,8 @@ cueLanguage=number
 independent=false
 answerSourceIds=prov-ex-u9-tens-0-ru
 distractorSourceIds= | prov-ex-u9-tens-1-ru
-distractorDifference= | This admitted form is a different ten.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | со́рок names forty (40) instead of the shown value 30.
+whyAnswerDemonstratesObjective=три́дцать names thirty (30), the value shown. со́рок names forty (40), a different value.
 contrastMembers=три́дцать | со́рок
 relationKind=SAME_RULE_DIFFERENT_BOUNDARY
 relationParticipantIds=prov-ex-u9-tens-0-en | prov-ex-u9-tens-0-ru | prov-ex-u9-tens-1-ru
@@ -3678,7 +3678,7 @@ relationParticipantIds=prov-ex-u9-tens-0-en | prov-ex-u9-tens-0-ru | prov-ex-u9-
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 30095b761e19767b3d32cac4816bff4374edc93c4822c5b9d27a560bf7fe466b
+- Content hash: a2acf282d3b3db4fcd908c61968a69b145e745e56c36bc23278ddd51dd11c3d8
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3686,11 +3686,11 @@ prompt=Which admitted form matches the shown number?
 promptLetter=100
 options=сто | две́сти
 answer=сто
-feedback=Does the admitted record show the governed contrast? сто.
+feedback=сто names one hundred (100), the value shown. две́сти names two hundred (200), a different value.
 objectiveId=obj-u9-hundreds
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted form is a different hundred.
+distractorRationales= | две́сти names two hundred (200) instead of the shown value 100.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-hundreds-0
@@ -3698,8 +3698,8 @@ cueLanguage=number
 independent=false
 answerSourceIds=prov-ex-u9-hundreds-0-ru
 distractorSourceIds= | prov-ex-u9-hundreds-1-ru
-distractorDifference= | This admitted form is a different hundred.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | две́сти names two hundred (200) instead of the shown value 100.
+whyAnswerDemonstratesObjective=сто names one hundred (100), the value shown. две́сти names two hundred (200), a different value.
 contrastMembers=сто | две́сти
 relationKind=SAME_RULE_DIFFERENT_BOUNDARY
 relationParticipantIds=prov-ex-u9-hundreds-0-en | prov-ex-u9-hundreds-0-ru | prov-ex-u9-hundreds-1-ru
@@ -3848,7 +3848,7 @@ relationParticipantIds=prov-u9-pattern-x-5 | prov-u9-pattern-x-0 | prov-u9-patte
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: a56540b78cf6f26833c3271ea662190252d240488d01bee8e57bb8fe58d2caa1
+- Content hash: 87d8f97c160b03257751d81b73f03bb7d497c2879405a3f40e794c4dc8fe337b
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3856,11 +3856,11 @@ prompt=Which admitted form matches the shown number?
 promptLetter=1
 options=оди́н | два
 answer=оди́н
-feedback=Does the admitted record show the governed contrast? оди́н.
+feedback=оди́н names one (1), the value shown. два names two (2), a different value.
 objectiveId=obj-u9-cardinal
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted form is a different number in the same table.
+distractorRationales= | два names two (2) instead of the shown value 1.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-cardinal-1
@@ -3868,8 +3868,8 @@ cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-cardinal-1-ru
 distractorSourceIds= | prov-ex-u9-cardinal-2-ru
-distractorDifference= | This admitted form is a different number in the same table.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | два names two (2) instead of the shown value 1.
+whyAnswerDemonstratesObjective=оди́н names one (1), the value shown. два names two (2), a different value.
 contrastMembers=оди́н | два
 relationKind=SAME_RULE_DIFFERENT_BOUNDARY
 relationParticipantIds=prov-ex-u9-cardinal-1-en | prov-ex-u9-cardinal-1-ru | prov-ex-u9-cardinal-2-ru
@@ -3882,7 +3882,7 @@ relationParticipantIds=prov-ex-u9-cardinal-1-en | prov-ex-u9-cardinal-1-ru | pro
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: d10d2755808b87944dde772b68e8a24e2ec87aa5b37725d93be9a648fa754062
+- Content hash: 2c2fb367de0da69ed761d1ed52ea1406f28bd4d36289b23d59e226f3ca3d3d12
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3890,11 +3890,11 @@ prompt=Which admitted form matches the shown number?
 promptLetter=5
 options=пять | шесть
 answer=пять
-feedback=Does the admitted record show the governed contrast? пять.
+feedback=пять names five (5), the value shown. шесть names six (6), a different value.
 objectiveId=obj-u9-cardinal
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted form is a different number in the same table.
+distractorRationales= | шесть names six (6) instead of the shown value 5.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-cardinal-2
@@ -3902,8 +3902,8 @@ cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-cardinal-5-ru
 distractorSourceIds= | prov-ex-u9-cardinal-6-ru
-distractorDifference= | This admitted form is a different number in the same table.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | шесть names six (6) instead of the shown value 5.
+whyAnswerDemonstratesObjective=пять names five (5), the value shown. шесть names six (6), a different value.
 contrastMembers=пять | шесть
 relationKind=SAME_RULE_DIFFERENT_BOUNDARY
 relationParticipantIds=prov-ex-u9-cardinal-5-en | prov-ex-u9-cardinal-5-ru | prov-ex-u9-cardinal-6-ru
@@ -3916,7 +3916,7 @@ relationParticipantIds=prov-ex-u9-cardinal-5-en | prov-ex-u9-cardinal-5-ru | pro
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: b2f18266ad03aa0962589e1191926cb2a016ee86cf581b5016b6ceb1f2c79354
+- Content hash: cf51e4e5435a4eb334680ecc0d1e3f5774968e2ea13db7e82381b2ee16cfeffa
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3924,11 +3924,11 @@ prompt=Which admitted form matches the shown number?
 promptLetter=10
 options=де́сять | де́вять
 answer=де́сять
-feedback=Does the admitted record show the governed contrast? де́сять.
+feedback=де́сять names ten (10), the value shown. де́вять names nine (9), a different value.
 objectiveId=obj-u9-cardinal
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted form is a different number in the same table.
+distractorRationales= | де́вять names nine (9) instead of the shown value 10.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-cardinal-3
@@ -3936,8 +3936,8 @@ cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-cardinal-10-ru
 distractorSourceIds= | prov-ex-u9-cardinal-9-ru
-distractorDifference= | This admitted form is a different number in the same table.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | де́вять names nine (9) instead of the shown value 10.
+whyAnswerDemonstratesObjective=де́сять names ten (10), the value shown. де́вять names nine (9), a different value.
 contrastMembers=де́сять | де́вять
 relationKind=SAME_RULE_DIFFERENT_BOUNDARY
 relationParticipantIds=prov-ex-u9-cardinal-10-en | prov-ex-u9-cardinal-10-ru | prov-ex-u9-cardinal-9-ru
@@ -3950,7 +3950,7 @@ relationParticipantIds=prov-ex-u9-cardinal-10-en | prov-ex-u9-cardinal-10-ru | p
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 62500b8e6bbe140ff4c80f7f278b80ae09e7e302a15d8cdb8826664b65710c5e
+- Content hash: 8bbe15e647e125fc5e39af8f9dcf259f0188d4a61dc567144e60ec6a4310db07
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3958,11 +3958,11 @@ prompt=Which admitted form matches the shown number?
 promptLetter=4
 options=четы́ре | три
 answer=четы́ре
-feedback=Does the admitted record show the governed contrast? четы́ре.
+feedback=четы́ре names four (4), the value shown. три names three (3), a different value.
 objectiveId=obj-u9-cardinal
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted form is a different number in the same table.
+distractorRationales= | три names three (3) instead of the shown value 4.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-cardinal-4
@@ -3970,8 +3970,8 @@ cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-cardinal-4-ru
 distractorSourceIds= | prov-ex-u9-cardinal-3-ru
-distractorDifference= | This admitted form is a different number in the same table.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | три names three (3) instead of the shown value 4.
+whyAnswerDemonstratesObjective=четы́ре names four (4), the value shown. три names three (3), a different value.
 contrastMembers=четы́ре | три
 relationKind=SAME_RULE_DIFFERENT_BOUNDARY
 relationParticipantIds=prov-ex-u9-cardinal-4-en | prov-ex-u9-cardinal-4-ru | prov-ex-u9-cardinal-3-ru
@@ -3984,7 +3984,7 @@ relationParticipantIds=prov-ex-u9-cardinal-4-en | prov-ex-u9-cardinal-4-ru | pro
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 588e84100ce44b339005ea35c0c029aaf3ae8465e8c91908e2c9ea1a2c2f63ac
+- Content hash: 0b90857e52f8c42c5a6c4f7619e21d901ade6354922cc5cb83f0af316c403826
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -3992,11 +3992,11 @@ prompt=Which admitted form matches the shown number?
 promptLetter=14
 options=четы́рнадцать | пятна́дцать
 answer=четы́рнадцать
-feedback=Does the admitted record show the governed contrast? четы́рнадцать.
+feedback=четы́рнадцать names fourteen (14), the value shown. пятна́дцать names fifteen (15), a different value.
 objectiveId=obj-u9-teens
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted form is a different teen.
+distractorRationales= | пятна́дцать names fifteen (15) instead of the shown value 14.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-teens-1
@@ -4004,8 +4004,8 @@ cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-teens-3-ru
 distractorSourceIds= | prov-ex-u9-teens-4-ru
-distractorDifference= | This admitted form is a different teen.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | пятна́дцать names fifteen (15) instead of the shown value 14.
+whyAnswerDemonstratesObjective=четы́рнадцать names fourteen (14), the value shown. пятна́дцать names fifteen (15), a different value.
 contrastMembers=четы́рнадцать | пятна́дцать
 relationKind=SAME_RULE_DIFFERENT_BOUNDARY
 relationParticipantIds=prov-ex-u9-teens-3-en | prov-ex-u9-teens-3-ru | prov-ex-u9-teens-4-ru
@@ -4018,7 +4018,7 @@ relationParticipantIds=prov-ex-u9-teens-3-en | prov-ex-u9-teens-3-ru | prov-ex-u
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 590ff30878ce68512982e1aded967c3c756b9551d08a44692dbca942ee4b37ec
+- Content hash: d79e3cad4cb39fa1cf485ca6e5efde41a319d9af21b099dcb9ded100e08a7531
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4026,11 +4026,11 @@ prompt=Which admitted form matches the shown number?
 promptLetter=19
 options=девятна́дцать | два́дцать
 answer=девятна́дцать
-feedback=Does the admitted record show the governed contrast? девятна́дцать.
+feedback=девятна́дцать names nineteen (19), the value shown. два́дцать names twenty (20), a different value. Distinguish the teen value from a multiple of ten.
 objectiveId=obj-u9-teens
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted form is the following ten, not the teen.
+distractorRationales= | два́дцать names twenty (20) instead of the shown value 19.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-teens-2
@@ -4038,8 +4038,8 @@ cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-teens-8-ru
 distractorSourceIds= | prov-ex-u9-teens-9-ru
-distractorDifference= | This admitted form is the following ten, not the teen.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | два́дцать names twenty (20) instead of the shown value 19.
+whyAnswerDemonstratesObjective=девятна́дцать names nineteen (19), the value shown. два́дцать names twenty (20), a different value. Distinguish the teen value from a multiple of ten.
 contrastMembers=девятна́дцать | два́дцать
 relationKind=SAME_RULE_DIFFERENT_BOUNDARY
 relationParticipantIds=prov-ex-u9-teens-8-en | prov-ex-u9-teens-8-ru | prov-ex-u9-teens-9-ru
@@ -4052,7 +4052,7 @@ relationParticipantIds=prov-ex-u9-teens-8-en | prov-ex-u9-teens-8-ru | prov-ex-u
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 022c0e8573120bd662f108425b604ed75b5c0c99016a44eb9d0b1a15eeca5ca4
+- Content hash: 06d9ad9027c3cfa01e2ed05d72d64c5dc4367b242d9367476f41faa73c1347bf
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4060,11 +4060,11 @@ prompt=Which admitted form matches the shown number?
 promptLetter=12
 options=двена́дцать | два́дцать
 answer=двена́дцать
-feedback=Does the admitted record show the governed contrast? двена́дцать.
+feedback=двена́дцать names twelve (12), the value shown. два́дцать names twenty (20), a different value. Distinguish the teen value from a multiple of ten.
 objectiveId=obj-u9-teens
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted form is the ten, not the teen.
+distractorRationales= | два́дцать names twenty (20) instead of the shown value 12.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-teens-3
@@ -4072,8 +4072,8 @@ cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-teens-1-ru
 distractorSourceIds= | prov-ex-u9-teens-9-ru
-distractorDifference= | This admitted form is the ten, not the teen.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | два́дцать names twenty (20) instead of the shown value 12.
+whyAnswerDemonstratesObjective=двена́дцать names twelve (12), the value shown. два́дцать names twenty (20), a different value. Distinguish the teen value from a multiple of ten.
 contrastMembers=двена́дцать | два́дцать
 relationKind=SAME_RULE_DIFFERENT_BOUNDARY
 relationParticipantIds=prov-ex-u9-teens-1-en | prov-ex-u9-teens-1-ru | prov-ex-u9-teens-9-ru
@@ -4086,7 +4086,7 @@ relationParticipantIds=prov-ex-u9-teens-1-en | prov-ex-u9-teens-1-ru | prov-ex-u
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: c453f656d842fb5bbd83cb6f25971fa7228e20d2cd02c1845566a50119910d6e
+- Content hash: a05d7db15b05dd4bbc16d3d32b40334cf19b8a6650ade953a46b9c9e95607cee
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4094,11 +4094,11 @@ prompt=Which admitted form matches the shown number?
 promptLetter=50
 options=пятьдеся́т | шестьдеся́т
 answer=пятьдеся́т
-feedback=Does the admitted record show the governed contrast? пятьдеся́т.
+feedback=пятьдеся́т names fifty (50), the value shown. шестьдеся́т names sixty (60), a different value.
 objectiveId=obj-u9-tens
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted form is a different ten.
+distractorRationales= | шестьдеся́т names sixty (60) instead of the shown value 50.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-tens-1
@@ -4106,8 +4106,8 @@ cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-tens-2-ru
 distractorSourceIds= | prov-ex-u9-tens-3-ru
-distractorDifference= | This admitted form is a different ten.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | шестьдеся́т names sixty (60) instead of the shown value 50.
+whyAnswerDemonstratesObjective=пятьдеся́т names fifty (50), the value shown. шестьдеся́т names sixty (60), a different value.
 contrastMembers=пятьдеся́т | шестьдеся́т
 relationKind=SAME_RULE_DIFFERENT_BOUNDARY
 relationParticipantIds=prov-ex-u9-tens-2-en | prov-ex-u9-tens-2-ru | prov-ex-u9-tens-3-ru
@@ -4120,7 +4120,7 @@ relationParticipantIds=prov-ex-u9-tens-2-en | prov-ex-u9-tens-2-ru | prov-ex-u9-
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 4b5dacf11333d1cb0be213931edde9922ef4f20a39304d68ac10dacfef327dea
+- Content hash: fc25a8d84d1443192b2d116411159e0946f6d7980850b06bfa73c2fee73eca82
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4128,11 +4128,11 @@ prompt=Which admitted form matches the shown number?
 promptLetter=90
 options=девяно́сто | во́семьдесят
 answer=девяно́сто
-feedback=Does the admitted record show the governed contrast? девяно́сто.
+feedback=девяно́сто names ninety (90), the value shown. во́семьдесят names eighty (80), a different value.
 objectiveId=obj-u9-tens
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted form is a different ten.
+distractorRationales= | во́семьдесят names eighty (80) instead of the shown value 90.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-tens-2
@@ -4140,8 +4140,8 @@ cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-tens-6-ru
 distractorSourceIds= | prov-ex-u9-tens-5-ru
-distractorDifference= | This admitted form is a different ten.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | во́семьдесят names eighty (80) instead of the shown value 90.
+whyAnswerDemonstratesObjective=девяно́сто names ninety (90), the value shown. во́семьдесят names eighty (80), a different value.
 contrastMembers=девяно́сто | во́семьдесят
 relationKind=SAME_RULE_DIFFERENT_BOUNDARY
 relationParticipantIds=prov-ex-u9-tens-6-en | prov-ex-u9-tens-6-ru | prov-ex-u9-tens-5-ru
@@ -4154,7 +4154,7 @@ relationParticipantIds=prov-ex-u9-tens-6-en | prov-ex-u9-tens-6-ru | prov-ex-u9-
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 3ab35851d83d1f68fc022fa221ab6c54f066739d1d14eb32adb75cf7325fc5e9
+- Content hash: dddde3f6578bbde0a81705c458cf7e78efa51b55a04eaa9a28766b734f059904
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4162,11 +4162,11 @@ prompt=Which admitted form matches the shown number?
 promptLetter=20
 options=два́дцать | двена́дцать
 answer=два́дцать
-feedback=Does the admitted record show the governed contrast? два́дцать.
+feedback=два́дцать names twenty (20), the value shown. двена́дцать names twelve (12), a different value. Distinguish the teen value from a multiple of ten.
 objectiveId=obj-u9-tens
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted form is the teen, not the ten.
+distractorRationales= | двена́дцать names twelve (12) instead of the shown value 20.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-tens-3
@@ -4174,8 +4174,8 @@ cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-tens-7-ru
 distractorSourceIds= | prov-u9-tens-x-0
-distractorDifference= | This admitted form is the teen, not the ten.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | двена́дцать names twelve (12) instead of the shown value 20.
+whyAnswerDemonstratesObjective=два́дцать names twenty (20), the value shown. двена́дцать names twelve (12), a different value. Distinguish the teen value from a multiple of ten.
 contrastMembers=два́дцать | двена́дцать
 relationKind=SAME_RULE_DIFFERENT_BOUNDARY
 relationParticipantIds=prov-ex-u9-tens-7-en | prov-ex-u9-tens-7-ru | prov-u9-tens-x-0
@@ -4188,7 +4188,7 @@ relationParticipantIds=prov-ex-u9-tens-7-en | prov-ex-u9-tens-7-ru | prov-u9-ten
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: f64e7f9ad1f54d196d98a5f151037caf6686b73a85d85dbee32fbd235c249000
+- Content hash: c037b6cabcd52de2630dacda36e826e190c89bb3700a7f0736d423321e96fa30
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4196,11 +4196,11 @@ prompt=Which admitted form matches the shown number?
 promptLetter=300
 options=три́ста | три́дцать
 answer=три́ста
-feedback=Does the admitted record show the governed contrast? три́ста.
+feedback=три́ста names three hundred (300), the value shown. три́дцать names thirty (30), a different value. Compare place value: 300 has three hundreds; 30 has three tens.
 objectiveId=obj-u9-hundreds
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted form is the ten, not the hundred.
+distractorRationales= | три́дцать names thirty (30) instead of the shown value 300.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-hundreds-1
@@ -4208,8 +4208,8 @@ cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-hundreds-2-ru
 distractorSourceIds= | prov-u9-hundreds-x-0
-distractorDifference= | This admitted form is the ten, not the hundred.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | три́дцать names thirty (30) instead of the shown value 300.
+whyAnswerDemonstratesObjective=три́ста names three hundred (300), the value shown. три́дцать names thirty (30), a different value. Compare place value: 300 has three hundreds; 30 has three tens.
 contrastMembers=три́ста | три́дцать
 relationKind=SAME_RULE_DIFFERENT_BOUNDARY
 relationParticipantIds=prov-ex-u9-hundreds-2-en | prov-ex-u9-hundreds-2-ru | prov-u9-hundreds-x-0
@@ -4222,7 +4222,7 @@ relationParticipantIds=prov-ex-u9-hundreds-2-en | prov-ex-u9-hundreds-2-ru | pro
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 2ec2e333caa03fce42970cadc50ea8642d93d27919bba083d56b3b8fc8870a98
+- Content hash: 322dd4a28051f905c64649c2a6c667087d8cea3797300c6b4fc0ddd6be5e7113
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4230,11 +4230,11 @@ prompt=Which admitted form matches the shown number?
 promptLetter=500
 options=пятьсо́т | пять
 answer=пятьсо́т
-feedback=Does the admitted record show the governed contrast? пятьсо́т.
+feedback=пятьсо́т names five hundred (500), the value shown. пять names five (5), a different value. Compare place value: 500 has five hundreds; 5 has five single units.
 objectiveId=obj-u9-hundreds
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted form is the one-digit number, not the hundred.
+distractorRationales= | пять names five (5) instead of the shown value 500.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-hundreds-2
@@ -4242,8 +4242,8 @@ cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-hundreds-4-ru
 distractorSourceIds= | prov-u9-hundreds-x-1
-distractorDifference= | This admitted form is the one-digit number, not the hundred.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | пять names five (5) instead of the shown value 500.
+whyAnswerDemonstratesObjective=пятьсо́т names five hundred (500), the value shown. пять names five (5), a different value. Compare place value: 500 has five hundreds; 5 has five single units.
 contrastMembers=пятьсо́т | пять
 relationKind=SAME_RULE_DIFFERENT_BOUNDARY
 relationParticipantIds=prov-ex-u9-hundreds-4-en | prov-ex-u9-hundreds-4-ru | prov-u9-hundreds-x-1
@@ -4256,7 +4256,7 @@ relationParticipantIds=prov-ex-u9-hundreds-4-en | prov-ex-u9-hundreds-4-ru | pro
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: c62e7a79248342d48b1c68529fb8f1096854adfbedb025a90a57cbfe286e02db
+- Content hash: 10ab0463ef11881d50632057050f10dc9c0157ba5b776d62d082e4989ace61de
 
 kind=NUMBER_FORM_SELECTION
 language=en
@@ -4264,11 +4264,11 @@ prompt=Which admitted form matches the shown number?
 promptLetter=900
 options=девятьсо́т | девяно́сто
 answer=девятьсо́т
-feedback=Does the admitted record show the governed contrast? девятьсо́т.
+feedback=девятьсо́т names nine hundred (900), the value shown. девяно́сто names ninety (90), a different value. Compare place value: 900 has nine hundreds; 90 has nine tens.
 objectiveId=obj-u9-hundreds
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This admitted form is the ten, not the hundred.
+distractorRationales= | девяно́сто names ninety (90) instead of the shown value 900.
 testedFeature=GOVERNED_FORM
 evidenceMode=SAME_RULE_DIFFERENT_BOUNDARY
 contrastSetId=u9-hundreds-3
@@ -4276,8 +4276,8 @@ cueLanguage=number
 independent=true
 answerSourceIds=prov-ex-u9-hundreds-8-ru
 distractorSourceIds= | prov-u9-hundreds-x-2
-distractorDifference= | This admitted form is the ten, not the hundred.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | девяно́сто names ninety (90) instead of the shown value 900.
+whyAnswerDemonstratesObjective=девятьсо́т names nine hundred (900), the value shown. девяно́сто names ninety (90), a different value. Compare place value: 900 has nine hundreds; 90 has nine tens.
 contrastMembers=девятьсо́т | девяно́сто
 relationKind=SAME_RULE_DIFFERENT_BOUNDARY
 relationParticipantIds=prov-ex-u9-hundreds-8-en | prov-ex-u9-hundreds-8-ru | prov-u9-hundreds-x-2
@@ -5192,6 +5192,1026 @@ attribution=Russian Companion content-audit research synthesis, content-audit-20
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
 sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
 contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-g-cardinal-0`
+
+- Objectives: obj-u9-cardinal
+- Sessions: u9-s-orient, u9-s-cardinal
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4669b43f1331113fac1fb0d0820d419f7045f6c0b0d562f29f0fd8dc9309c70f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-cardinal:value-feedback:u9-g-cardinal-0
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+ноль names zero (0), the value shown. оди́н names one (1), a different value. Zero counts no units; one counts a single unit.
+shippedText=ноль names zero (0), the value shown. оди́н names one (1), a different value. Zero counts no units; one counts a single unit.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=469575e840b8d6511ad802105e90f6c32215e9701a5e709c0deeb44d9c7b31f4
+contentHash=a5901e348efc93e98cf0aef32d2c81950482fa653bd0dee654f4a2e2b4b14c06
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-g-cardinal-0-distractor-1`
+
+- Objectives: obj-u9-cardinal
+- Sessions: u9-s-orient, u9-s-cardinal
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 57e62dfd11d332d40455ba7e5f6295eaee3373b7f5eb098bcfeba8e41e6f7e2c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-cardinal:value-feedback:u9-g-cardinal-0-distractor-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+оди́н names one (1) instead of the shown value 0.
+shippedText=оди́н names one (1) instead of the shown value 0.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0c8154d711f9cdc17defbad2f6259173cecc6c879cf0bcf5514c8ee6e0f9af2b
+contentHash=8d715962e152665be2a7b9dc52326e2395ca75170db99351b7b49df51195a749
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-g-hundreds-0`
+
+- Objectives: obj-u9-hundreds
+- Sessions: u9-s-orient, u9-s-hundreds
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fd0aedbd60f68e5c81bfb35f28289bedd7760e8758bbe96d8426723dfa58bded
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-hundreds:value-feedback:u9-g-hundreds-0
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+сто names one hundred (100), the value shown. две́сти names two hundred (200), a different value.
+shippedText=сто names one hundred (100), the value shown. две́сти names two hundred (200), a different value.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ad8ca82007c523ae51d416a86fca98cc297363bc59c9da2ee5cd61c93343f68a
+contentHash=4c6ebeb913cdd51bde2ff05d25ee24e88c58cb9410fd3a5ff95c738f430d71e5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-g-hundreds-0-distractor-1`
+
+- Objectives: obj-u9-hundreds
+- Sessions: u9-s-orient, u9-s-hundreds
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9a1af56821e6bc6bdc0e0567a6fa874c688bfa246a6247458407a7fb2343da82
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-hundreds:value-feedback:u9-g-hundreds-0-distractor-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+две́сти names two hundred (200) instead of the shown value 100.
+shippedText=две́сти names two hundred (200) instead of the shown value 100.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4c1bcf5bb180e2e9982d182273cb58b428d1625445f12177387d30bee1056602
+contentHash=99931facc508d0ec763954cf60a64207595650f10a281080b6fec859a11bd0d9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-g-teens-0`
+
+- Objectives: obj-u9-teens
+- Sessions: u9-s-orient, u9-s-teens
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2f2f5b764bc99be383280705c7a54f02151ea8105bf8019c72fc6679f2cff415
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-teens:value-feedback:u9-g-teens-0
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+оди́ннадцать names eleven (11), the value shown. двена́дцать names twelve (12), a different value.
+shippedText=оди́ннадцать names eleven (11), the value shown. двена́дцать names twelve (12), a different value.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=85c13c5eb774cee0ece60a91588288dda3e02cfa1b310b832de4e14004658a80
+contentHash=d473d434073eb1194563a2408486a4fd02fc2808e3bc7d143ed8d188cc70379b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-g-teens-0-distractor-1`
+
+- Objectives: obj-u9-teens
+- Sessions: u9-s-orient, u9-s-teens
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0c0a2fb49fe6c560a2da9a4eb6ca636124a352ac912b15421574473ede84fbb7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-teens:value-feedback:u9-g-teens-0-distractor-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+двена́дцать names twelve (12) instead of the shown value 11.
+shippedText=двена́дцать names twelve (12) instead of the shown value 11.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8fa7dd60d4019cbe0fca4867930b119d37661009b559fee6fb56e2961406f2d5
+contentHash=b20f9a7d26f5d98ccce01d329ff3c32691f4e44c716edb392d8306bad28db090
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-g-tens-0`
+
+- Objectives: obj-u9-tens
+- Sessions: u9-s-orient, u9-s-tens
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3b6adee6f5f9042b9511c3806e0343b1a63355f1c0ec505c5476dc78ca839064
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-tens:value-feedback:u9-g-tens-0
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+три́дцать names thirty (30), the value shown. со́рок names forty (40), a different value.
+shippedText=три́дцать names thirty (30), the value shown. со́рок names forty (40), a different value.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f4951637358cd5b45e2621e2f7daaa04ed6f836e7533c21a20d7873362c37825
+contentHash=182e993a9a9d2daeffe388586b2643d32739e3bef44587787873e9c3fb2b6419
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-g-tens-0-distractor-1`
+
+- Objectives: obj-u9-tens
+- Sessions: u9-s-orient, u9-s-tens
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b8fff2ff0036e57e2957a6f225604b7880da2f2ff764a8ea39b1e28a36bb4a37
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-tens:value-feedback:u9-g-tens-0-distractor-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+со́рок names forty (40) instead of the shown value 30.
+shippedText=со́рок names forty (40) instead of the shown value 30.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=563b5bbbccaf6b95dfe76c19ebf560d0ea3e9040a47d62230a21e9b098d27f5e
+contentHash=2e19682dd0ffd5eb279e68f37cdab14e0382fdcf10243934966fad9c1dc7f75f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-cardinal-1`
+
+- Objectives: obj-u9-cardinal
+- Sessions: u9-s-orient, u9-s-cardinal
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: eb92d884d4eb3d44f7b02f4f68762bb55c47eedf4e909439e5c0f20636687bef
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-cardinal:value-feedback:u9-i-cardinal-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+оди́н names one (1), the value shown. два names two (2), a different value.
+shippedText=оди́н names one (1), the value shown. два names two (2), a different value.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=75e8e95de809c8674ea923f18c222389278a7f0ed8e1128eb13034d03f5fbee4
+contentHash=7b9c461e1283a27eca6e27caf10438c33a627240fd8d61b0a75012820b817aac
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-cardinal-1-distractor-1`
+
+- Objectives: obj-u9-cardinal
+- Sessions: u9-s-orient, u9-s-cardinal
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fcb580fe8a5e2f9bc91ae4836d15fdf5886d9cdf73a783df8d5a371e760b22a4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-cardinal:value-feedback:u9-i-cardinal-1-distractor-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+два names two (2) instead of the shown value 1.
+shippedText=два names two (2) instead of the shown value 1.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=13bbfef7594df829129b3c0b3b3c2d3e549c0f5407b8ab0230feb928cd33a735
+contentHash=d5c4cc2847681187ae7b596d70b6c1102053b4155f8f989d03ce0f9717e9c6aa
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-cardinal-2`
+
+- Objectives: obj-u9-cardinal
+- Sessions: u9-s-orient, u9-s-cardinal
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c9195b46d5f353c53689790e9a4dbf3e009bf9d5526112a5488cf798a6ed5ca1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-cardinal:value-feedback:u9-i-cardinal-2
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+пять names five (5), the value shown. шесть names six (6), a different value.
+shippedText=пять names five (5), the value shown. шесть names six (6), a different value.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8ff913e84e62689dd4e6a3c4d850b7392f10ce2df11b438d0089baa7f88ed85e
+contentHash=eb741ed93b4fdbbb2eeba68d8d4a2a62a2e89e51a1adca63022a1a91c02df827
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-cardinal-2-distractor-1`
+
+- Objectives: obj-u9-cardinal
+- Sessions: u9-s-orient, u9-s-cardinal
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2a7ed9096171a2dec9933519dbc1856524183604d711a5a35a92d42d5fb8a6e3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-cardinal:value-feedback:u9-i-cardinal-2-distractor-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+шесть names six (6) instead of the shown value 5.
+shippedText=шесть names six (6) instead of the shown value 5.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=149d091dc47746fcb02a297348afcf307fd3c1c8c819ece51a63a46ef5e8f77d
+contentHash=15dd447179a617628d70d1005ec1628f7b45675e17732831addfacf3ac01717e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-cardinal-3`
+
+- Objectives: obj-u9-cardinal
+- Sessions: u9-s-orient, u9-s-cardinal
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5cb7be4ca1e0c38de484f79a8837b1f438bf8aa440695e53c8fdff6ff1d8020b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-cardinal:value-feedback:u9-i-cardinal-3
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+де́сять names ten (10), the value shown. де́вять names nine (9), a different value.
+shippedText=де́сять names ten (10), the value shown. де́вять names nine (9), a different value.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cce7ce950b43699bb0ea16192f8d0beb884bc32ae23bb654e0c7f575ef5ae455
+contentHash=32dc2d51342d018720d7d8e8cc11fac0cea56c759c306b9548c65cf725185464
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-cardinal-3-distractor-1`
+
+- Objectives: obj-u9-cardinal
+- Sessions: u9-s-orient, u9-s-cardinal
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 84f8bd4a7cd0352bb015584bf08eacdff79678f0b00ef4721ab38df52d8bfecf
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-cardinal:value-feedback:u9-i-cardinal-3-distractor-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+де́вять names nine (9) instead of the shown value 10.
+shippedText=де́вять names nine (9) instead of the shown value 10.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cbfa00920cfc66d901c28933f5959987da841c96ee3d1746323d51b71ef4a1d6
+contentHash=e948b187d6c58f2f3c9795abc66f3006531f2664ad6dbc657ebc5ca8a291eacb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-cardinal-4`
+
+- Objectives: obj-u9-cardinal
+- Sessions: u9-s-orient, u9-s-cardinal
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 54116675a26508f4ea0fa9e30a4ea6ecc69eb0de6763d27a205e4062ddf9daeb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-cardinal:value-feedback:u9-i-cardinal-4
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+четы́ре names four (4), the value shown. три names three (3), a different value.
+shippedText=четы́ре names four (4), the value shown. три names three (3), a different value.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5dd5b74003e16723dd2e98390a10868f496c7105be28a0c825defc0e55378e70
+contentHash=e40881c8a9353b08ef0c408c26372a6cf1b685c870091e064584286f1e949131
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-cardinal-4-distractor-1`
+
+- Objectives: obj-u9-cardinal
+- Sessions: u9-s-orient, u9-s-cardinal
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 367c80efd3e1c84bc571c1950b4cca010d934d1dc10b4843c674055526f04a8f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-cardinal:value-feedback:u9-i-cardinal-4-distractor-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+три names three (3) instead of the shown value 4.
+shippedText=три names three (3) instead of the shown value 4.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=341ae1d658efa98aa4e310457483688ddc7dce61c7629334549ae278c74ddd78
+contentHash=6f34d218865bd80f51c948affd5286ed9c7a672123a8cd98de1fb3a5cd821787
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-hundreds-1`
+
+- Objectives: obj-u9-hundreds
+- Sessions: u9-s-orient, u9-s-hundreds
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ee760fadf8c3b1eca6bf04a204dadaf762a240df4799112554bfdac0c11c78b0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-hundreds:value-feedback:u9-i-hundreds-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+три́ста names three hundred (300), the value shown. три́дцать names thirty (30), a different value. Compare place value: 300 has three hundreds; 30 has three tens.
+shippedText=три́ста names three hundred (300), the value shown. три́дцать names thirty (30), a different value. Compare place value: 300 has three hundreds; 30 has three tens.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=08dcb77e2febdb193e2da7bbcc9930f77f2a6c526a694a0582354d25300bdb81
+contentHash=93ccd0da2f66ff7d17fb74d1e1a46fd95f7551e38515b5e60a6f503854353300
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-hundreds-1-distractor-1`
+
+- Objectives: obj-u9-hundreds
+- Sessions: u9-s-orient, u9-s-hundreds
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5d0ca068bce1a6a773da340f75f36ead4d3679d25532df899f5d5e08357cb496
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-hundreds:value-feedback:u9-i-hundreds-1-distractor-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+три́дцать names thirty (30) instead of the shown value 300.
+shippedText=три́дцать names thirty (30) instead of the shown value 300.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4b1238d945855dc8f0624c662096912e40a9ea91a0a392533a18b4cee96e6ac0
+contentHash=1e9898852bc25e2e4ab14d789fc93d36ed80a4accd783996b5a6f516a291f01a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-hundreds-2`
+
+- Objectives: obj-u9-hundreds
+- Sessions: u9-s-orient, u9-s-hundreds
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 69ac47dbc8e719cac16d6a957e9bec581307103d7f0cb4f945bd3a4237e858b6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-hundreds:value-feedback:u9-i-hundreds-2
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+пятьсо́т names five hundred (500), the value shown. пять names five (5), a different value. Compare place value: 500 has five hundreds; 5 has five single units.
+shippedText=пятьсо́т names five hundred (500), the value shown. пять names five (5), a different value. Compare place value: 500 has five hundreds; 5 has five single units.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b2317356290a4ab917db013d3a18f89be063c0e52bc6c93f041259e0cfa51a61
+contentHash=7e51a0f88120b83d53f1c701dea899a573d1ec80c94711c3d55c49c5d4bfee1c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-hundreds-2-distractor-1`
+
+- Objectives: obj-u9-hundreds
+- Sessions: u9-s-orient, u9-s-hundreds
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 62c4ccbf97a8ab5a59d5861b7ac32f0bdd2bf1aefb9e066d8c083f75c9e9d4ac
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-hundreds:value-feedback:u9-i-hundreds-2-distractor-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+пять names five (5) instead of the shown value 500.
+shippedText=пять names five (5) instead of the shown value 500.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=47a86cea391b679389d866eda3e07cd2126ef7829d7ee8bde930a4dcb719bb03
+contentHash=b223fe9f8140e52b95f9448a4b477d515d26503a5ce4e3f565b7eaa353c12a06
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-hundreds-3`
+
+- Objectives: obj-u9-hundreds
+- Sessions: u9-s-orient, u9-s-hundreds
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2c6594de08b53a77fe754ffe6acfdc9a5ca242a243b9afa070e6f47cf88cabce
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-hundreds:value-feedback:u9-i-hundreds-3
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+девятьсо́т names nine hundred (900), the value shown. девяно́сто names ninety (90), a different value. Compare place value: 900 has nine hundreds; 90 has nine tens.
+shippedText=девятьсо́т names nine hundred (900), the value shown. девяно́сто names ninety (90), a different value. Compare place value: 900 has nine hundreds; 90 has nine tens.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=882e6f88d4e02f3768ff0a14222a333bb1e8e0e78d6a633481877a378e0150aa
+contentHash=eab73b726cc3a4e530a66530b15bc3034fe0c86fdec4d4f090a6e2790bf91f7b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-hundreds-3-distractor-1`
+
+- Objectives: obj-u9-hundreds
+- Sessions: u9-s-orient, u9-s-hundreds
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d2d4783ed565e41dbac2a6681a98cb108c021aa186bd38fb39e510202b49a178
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-hundreds:value-feedback:u9-i-hundreds-3-distractor-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+девяно́сто names ninety (90) instead of the shown value 900.
+shippedText=девяно́сто names ninety (90) instead of the shown value 900.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6c040f5418c95ae12ca94fd980a119c3279a8e334786daf1e9272313b28fcd89
+contentHash=10132daef19cd67abe968b99b6aafdb6cdb1da697f7bfe167807c8cdd22c7b18
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-teens-1`
+
+- Objectives: obj-u9-teens
+- Sessions: u9-s-orient, u9-s-teens
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f8605225559f3eaa8f5e6f16b78106274fb4fe7f56d82611dfd621f2d503f84a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-teens:value-feedback:u9-i-teens-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+четы́рнадцать names fourteen (14), the value shown. пятна́дцать names fifteen (15), a different value.
+shippedText=четы́рнадцать names fourteen (14), the value shown. пятна́дцать names fifteen (15), a different value.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4b5e45d41266cbbad4ca8f43c34c6f9d771f4069e5e8ee58a9e4ca1285293c3f
+contentHash=a25fcfdea76aef3cf35403eed0169da6e172758b1d4563846a90a988d66393da
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-teens-1-distractor-1`
+
+- Objectives: obj-u9-teens
+- Sessions: u9-s-orient, u9-s-teens
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f9a6098cce55d6992825b6d469e349f7f7ad0c0a40a8c8ca7a0e5ea7d6cfd7e1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-teens:value-feedback:u9-i-teens-1-distractor-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+пятна́дцать names fifteen (15) instead of the shown value 14.
+shippedText=пятна́дцать names fifteen (15) instead of the shown value 14.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=272b1d3e6967fbad9e49829198e8eaa33133323d73a426881f9eeca5d88b029f
+contentHash=6f73e788ecbcfa9083d4cbfe4925a1c4298aac7afa25903fbfe4792576bc81d3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-teens-2`
+
+- Objectives: obj-u9-teens
+- Sessions: u9-s-orient, u9-s-teens
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3429a4e11b8aef39c6acb6b2b36e51016cccb8c68472aeb111ac868b7600a87d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-teens:value-feedback:u9-i-teens-2
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+девятна́дцать names nineteen (19), the value shown. два́дцать names twenty (20), a different value. Distinguish the teen value from a multiple of ten.
+shippedText=девятна́дцать names nineteen (19), the value shown. два́дцать names twenty (20), a different value. Distinguish the teen value from a multiple of ten.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1eab9bbbfafab748f74e850c4999e39fe4994e0353b8c5413e858d543e7d12fb
+contentHash=ff20dddb366f27d69eb98b7cf508fac055f2b9f409dbbcbfa4f1e66a1382f307
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-teens-2-distractor-1`
+
+- Objectives: obj-u9-teens
+- Sessions: u9-s-orient, u9-s-teens
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ce4eb6029876db4118e5b58cab752c684368e0685e0fc86e644e3d2090961c06
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-teens:value-feedback:u9-i-teens-2-distractor-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+два́дцать names twenty (20) instead of the shown value 19.
+shippedText=два́дцать names twenty (20) instead of the shown value 19.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f3087ae921709615add5e35a9a76cd0f63f17ff62be59829f4420aae43b8b783
+contentHash=3f2d0e5b64314152c582117780199188837f5ba274e8d8c7d442e1f3e9167088
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-teens-3`
+
+- Objectives: obj-u9-teens
+- Sessions: u9-s-orient, u9-s-teens
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d32908771511325fd4f0b3f774151ce876c8ccbb7aba752bcfedd542490fdf11
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-teens:value-feedback:u9-i-teens-3
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+двена́дцать names twelve (12), the value shown. два́дцать names twenty (20), a different value. Distinguish the teen value from a multiple of ten.
+shippedText=двена́дцать names twelve (12), the value shown. два́дцать names twenty (20), a different value. Distinguish the teen value from a multiple of ten.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6029b4378956d49d96d81c81d1babcfd5c4fe17bc20044ce097bbc7aa0a21170
+contentHash=e5374ce13d042cb044e603af03432d541c89c00054c565b953ecbec1de4b45ef
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-teens-3-distractor-1`
+
+- Objectives: obj-u9-teens
+- Sessions: u9-s-orient, u9-s-teens
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e50c5594862d05d21c03d1fbc28b3cdb45b1e35ecbc6abe658040198b1c911eb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-teens:value-feedback:u9-i-teens-3-distractor-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+два́дцать names twenty (20) instead of the shown value 12.
+shippedText=два́дцать names twenty (20) instead of the shown value 12.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e0287293ab8395dc9529bcaf910d7c4907dd8269cd48dd26fa18804f67fc07f0
+contentHash=d55accc2570572c3d9af94564602c81d72c1bb7674e24424a61695b58b37e297
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-tens-1`
+
+- Objectives: obj-u9-tens
+- Sessions: u9-s-orient, u9-s-tens
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e6d0ecc449075f675d33644e36fee48e468a91622ac7c9601d7529d7348072cf
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-tens:value-feedback:u9-i-tens-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+пятьдеся́т names fifty (50), the value shown. шестьдеся́т names sixty (60), a different value.
+shippedText=пятьдеся́т names fifty (50), the value shown. шестьдеся́т names sixty (60), a different value.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a16d1cfef1d54f4e8be671fe07be4ff624c9bda0dd4e7e8c36e5eea7afa134f7
+contentHash=8b26d3670fefd40bcde08a01c5069f11111d7150cc755757bf8e7ac13e18fd21
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-tens-1-distractor-1`
+
+- Objectives: obj-u9-tens
+- Sessions: u9-s-orient, u9-s-tens
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: aa996ca20234fd0643c892873f0d31b918567d20c8ca4fe6893767533f6741e0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-tens:value-feedback:u9-i-tens-1-distractor-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+шестьдеся́т names sixty (60) instead of the shown value 50.
+shippedText=шестьдеся́т names sixty (60) instead of the shown value 50.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ad9462a61a561c504a66baa00f8b0302cc177edd1e8cf7be42ec7deb1be3d2d5
+contentHash=766fd39d51bc087d0afa89b7fd74b268a1a65362ea79635ca07cd60cfcdd8e7d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-tens-2`
+
+- Objectives: obj-u9-tens
+- Sessions: u9-s-orient, u9-s-tens
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0222ee119bd4e43682e126fe44600cb9215b9eafb8fdc8ece62edf1bd33d3665
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-tens:value-feedback:u9-i-tens-2
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+девяно́сто names ninety (90), the value shown. во́семьдесят names eighty (80), a different value.
+shippedText=девяно́сто names ninety (90), the value shown. во́семьдесят names eighty (80), a different value.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c2f5d42c1c0762aeb218a10f49dc77c5439cf8f6f83e08c720bcd080e3c33ac7
+contentHash=181d992b283b806117c84dc0e2e8105b1c711808f709f0d73b88902d37e71c77
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-tens-2-distractor-1`
+
+- Objectives: obj-u9-tens
+- Sessions: u9-s-orient, u9-s-tens
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fb807befe40cccea7fc86803c13b437403e8ed85f6089290ab80f141957309e9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-tens:value-feedback:u9-i-tens-2-distractor-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+во́семьдесят names eighty (80) instead of the shown value 90.
+shippedText=во́семьдесят names eighty (80) instead of the shown value 90.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6b3f4a3b642de311b99b37f066aaa5078babb1dbbaa3bcecc89f1b20c29083f1
+contentHash=746cd9391c1aab6c3a3001c7058a526a52c9e52711e8eefec80eccca831500ae
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-tens-3`
+
+- Objectives: obj-u9-tens
+- Sessions: u9-s-orient, u9-s-tens
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c4ddf5cd03d29133fae6cf565b37c51f4bbec12357d4d1b19d815a8d4fa98818
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-tens:value-feedback:u9-i-tens-3
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+два́дцать names twenty (20), the value shown. двена́дцать names twelve (12), a different value. Distinguish the teen value from a multiple of ten.
+shippedText=два́дцать names twenty (20), the value shown. двена́дцать names twelve (12), a different value. Distinguish the teen value from a multiple of ten.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6d31331b06179fea9b64f6258e2849cfeab919561cd3931554dd4784bcfb309c
+contentHash=23c1f02c1e701fd0f83bcfdcb8e9df27252293ac591c8ce3e6ce343ad9e6e5c7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-value-feedback-u9-i-tens-3-distractor-1`
+
+- Objectives: obj-u9-tens
+- Sessions: u9-s-orient, u9-s-tens
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ea0ae6b6424fbceb39080d3219cbc564346f292db8339e6c28eabd2fad0c5825
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-tens:value-feedback:u9-i-tens-3-distractor-1
+originalSourceText=Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+двена́дцать names twelve (12) instead of the shown value 20.
+shippedText=двена́дцать names twelve (12) instead of the shown value 20.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e2e83ec3e50ec8843c25a9d0add372310509dd68db3629ab2efbf1ecad9d2cc0
+contentHash=1beb82801beaa06f5d7210ab644bc9f13d595d6a323c3e37bd1735375434589b
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -13769,6 +14789,40 @@ permitsAppUse=true
 - `obj-u9-tens` PROVENANCE `prov-ca-9-37`
 - `obj-u9-hundreds` PROVENANCE `prov-ca-9-38`
 - `obj-u9-thousands` PROVENANCE `prov-ca-9-39`
+- `obj-u9-cardinal` PROVENANCE `prov-ca-u9-value-feedback-u9-g-cardinal-0`
+- `obj-u9-cardinal` PROVENANCE `prov-ca-u9-value-feedback-u9-g-cardinal-0-distractor-1`
+- `obj-u9-hundreds` PROVENANCE `prov-ca-u9-value-feedback-u9-g-hundreds-0`
+- `obj-u9-hundreds` PROVENANCE `prov-ca-u9-value-feedback-u9-g-hundreds-0-distractor-1`
+- `obj-u9-teens` PROVENANCE `prov-ca-u9-value-feedback-u9-g-teens-0`
+- `obj-u9-teens` PROVENANCE `prov-ca-u9-value-feedback-u9-g-teens-0-distractor-1`
+- `obj-u9-tens` PROVENANCE `prov-ca-u9-value-feedback-u9-g-tens-0`
+- `obj-u9-tens` PROVENANCE `prov-ca-u9-value-feedback-u9-g-tens-0-distractor-1`
+- `obj-u9-cardinal` PROVENANCE `prov-ca-u9-value-feedback-u9-i-cardinal-1`
+- `obj-u9-cardinal` PROVENANCE `prov-ca-u9-value-feedback-u9-i-cardinal-1-distractor-1`
+- `obj-u9-cardinal` PROVENANCE `prov-ca-u9-value-feedback-u9-i-cardinal-2`
+- `obj-u9-cardinal` PROVENANCE `prov-ca-u9-value-feedback-u9-i-cardinal-2-distractor-1`
+- `obj-u9-cardinal` PROVENANCE `prov-ca-u9-value-feedback-u9-i-cardinal-3`
+- `obj-u9-cardinal` PROVENANCE `prov-ca-u9-value-feedback-u9-i-cardinal-3-distractor-1`
+- `obj-u9-cardinal` PROVENANCE `prov-ca-u9-value-feedback-u9-i-cardinal-4`
+- `obj-u9-cardinal` PROVENANCE `prov-ca-u9-value-feedback-u9-i-cardinal-4-distractor-1`
+- `obj-u9-hundreds` PROVENANCE `prov-ca-u9-value-feedback-u9-i-hundreds-1`
+- `obj-u9-hundreds` PROVENANCE `prov-ca-u9-value-feedback-u9-i-hundreds-1-distractor-1`
+- `obj-u9-hundreds` PROVENANCE `prov-ca-u9-value-feedback-u9-i-hundreds-2`
+- `obj-u9-hundreds` PROVENANCE `prov-ca-u9-value-feedback-u9-i-hundreds-2-distractor-1`
+- `obj-u9-hundreds` PROVENANCE `prov-ca-u9-value-feedback-u9-i-hundreds-3`
+- `obj-u9-hundreds` PROVENANCE `prov-ca-u9-value-feedback-u9-i-hundreds-3-distractor-1`
+- `obj-u9-teens` PROVENANCE `prov-ca-u9-value-feedback-u9-i-teens-1`
+- `obj-u9-teens` PROVENANCE `prov-ca-u9-value-feedback-u9-i-teens-1-distractor-1`
+- `obj-u9-teens` PROVENANCE `prov-ca-u9-value-feedback-u9-i-teens-2`
+- `obj-u9-teens` PROVENANCE `prov-ca-u9-value-feedback-u9-i-teens-2-distractor-1`
+- `obj-u9-teens` PROVENANCE `prov-ca-u9-value-feedback-u9-i-teens-3`
+- `obj-u9-teens` PROVENANCE `prov-ca-u9-value-feedback-u9-i-teens-3-distractor-1`
+- `obj-u9-tens` PROVENANCE `prov-ca-u9-value-feedback-u9-i-tens-1`
+- `obj-u9-tens` PROVENANCE `prov-ca-u9-value-feedback-u9-i-tens-1-distractor-1`
+- `obj-u9-tens` PROVENANCE `prov-ca-u9-value-feedback-u9-i-tens-2`
+- `obj-u9-tens` PROVENANCE `prov-ca-u9-value-feedback-u9-i-tens-2-distractor-1`
+- `obj-u9-tens` PROVENANCE `prov-ca-u9-value-feedback-u9-i-tens-3`
+- `obj-u9-tens` PROVENANCE `prov-ca-u9-value-feedback-u9-i-tens-3-distractor-1`
 - `obj-u9-odindva` PROVENANCE `prov-ex-or-u9-odindva-8`
 - `obj-u9-odindva` PROVENANCE `prov-ex-or-u9-odindva-8-gloss`
 - `obj-u9-odindva` PROVENANCE `prov-ex-or-u9-odindva-9`
