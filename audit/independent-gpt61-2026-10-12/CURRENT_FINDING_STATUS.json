@@ -128,9 +128,10 @@
       "engineeringDisposition": "OPEN",
       "formalAcceptance": false,
       "diagnosticDisposition": "REPRODUCED_CONTEXTUAL_CREDIT_GAP",
-      "researchBlocker": "ProxyHTTP403 for new public source research; network draft saved and requires publication",
+      "researchBlocker": "No current access blocker on documented API probes; candidate native source/rights/teaching review and implementation remain.",
       "researchEvidencePath": "ia012-unit29-research-verification/RESEARCH_VERIFICATION_MANIFEST.json",
-      "newSourceAdmission": false
+      "newSourceAdmission": false,
+      "researchCandidatePath": "ia012-unit29-research-verification/public-candidates-2026-10-13/RESEARCH_RECEIPT.json"
     },
     {
       "findingId": "IA013",
@@ -163,8 +164,18 @@
       "findingId": "IA014",
       "producerSeverity": "HIGH",
       "producerStatus": "OPEN",
-      "engineeringDisposition": "OPEN",
-      "formalAcceptance": false
+      "engineeringDisposition": "ENGINEERING_FIX_PENDING_INDEPENDENT_VERIFICATION",
+      "formalAcceptance": false,
+      "implementationCommit": "1bc59ded74292cd8353fc27f8f89ba89bff80f6d",
+      "evidencePath": "ia014-unit20-verification/FINAL_VERIFICATION_MANIFEST.json",
+      "newIndependentItemIds": [
+        "u20-i-direction-birds",
+        "u20-i-direction-city",
+        "u20-i-direction-weekly",
+        "u20-i-direction-round"
+      ],
+      "coverageScope": "Four bounded independent contexts:one-direction progress, various directions, repeated trips, past completed round trip; general walking ability remains guided. Not unrestricted motion-verb production or every use.",
+      "unrestrictedMotionGrammarClaim": false
     },
     {
       "findingId": "IA015",
@@ -199,21 +210,21 @@
   "semanticAcceptancePromoted": false,
   "physicalDeviceAcceptance": "OUTSTANDING",
   "release": "NOT_APPROVED",
-  "latestValidatorImplementationCommit": "a2d7a2f62645aa6a95f7dd69590f7e61eb8b38b2",
-  "latestSourceBindingCheckpoint": "c67e47bba71ce0b6c4ee0b0a1030c080af41f547",
+  "latestValidatorImplementationCommit": "1bc59ded74292cd8353fc27f8f89ba89bff80f6d",
+  "latestSourceBindingCheckpoint": "e986509f07923cc5c5fde823dbec69bec8296c8b",
   "remainingSourceReviewPointers": [
     "IA007_SOURCE_REVIEW_PENDING.md",
     "IA008_SOURCE_REVIEW_PENDING.md"
   ],
   "firstBatchImplementationCommit": "4f5cb8024d3f68a37052fdf85b5755bffa2a0904",
   "firstBatchPacketCheckpoint": "49af91a0f5578c63a3b9b98bbe975f40d2758fcc",
-  "latestCurriculumImplementationCommit": "a2d7a2f62645aa6a95f7dd69590f7e61eb8b38b2",
+  "latestCurriculumImplementationCommit": "1bc59ded74292cd8353fc27f8f89ba89bff80f6d",
   "acceptanceOrder": [
     "FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
     "PHYSICAL_DEVICE_ACCEPTANCE_LAST"
   ],
   "physicalDeviceEvidenceRequestTiming": "AFTER_FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
   "latestAppImplementationCommit": "c82e5b4a305c960ca41f660071d0da25070631ea",
-  "latestVerifiedRepositoryCommit": "c67e47bba71ce0b6c4ee0b0a1030c080af41f547",
+  "latestVerifiedRepositoryCommit": "e986509f07923cc5c5fde823dbec69bec8296c8b",
   "latestResearchDiagnosticRepositoryCommit": "0edaa0fc635b3579823f7b352f52fa79a675db3d"
 }

@@ -1,0 +1,44 @@
+{
+  "researchBaselineCommit": "1ce6184a5bbe894624807c066600fa51de42ace3",
+  "snapshots": [
+    {
+      "title": "Обособление",
+      "pageid": 2172762,
+      "revid": 144053197,
+      "parentid": 130457977,
+      "timestamp": "2025-03-18T00:49:51Z",
+      "size": 26266,
+      "sha1": "85dae76161377cc4fc3c008813936e850dddd1c1",
+      "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=%D0%9E%D0%B1%D0%BE%D1%81%D0%BE%D0%B1%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5&oldid=144053197",
+      "sha256": "0f5a33ffba100e7a6d5bf2c80987ce72f69e970f004b09e815ebf73ebe3ed638",
+      "status": "UNADMITTED_RESEARCH_CANDIDATE",
+      "markupOnlyNormalizationRequired": true
+    },
+    {
+      "title": "Больтраффио, Джованни",
+      "pageid": 394419,
+      "revid": 149826784,
+      "parentid": 146217015,
+      "timestamp": "2025-11-15T11:25:03Z",
+      "size": 3395,
+      "sha1": "55d87a3229d44de0ea30269822fc0c4d2b66350a",
+      "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=%D0%91%D0%BE%D0%BB%D1%8C%D1%82%D1%80%D0%B0%D1%84%D1%84%D0%B8%D0%BE%2C+%D0%94%D0%B6%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%B8&oldid=149826784",
+      "sha256": "e2ab8bd93324e7c77f86336c0780ce46314fa9e6fdbee0ba13fd148f143943c1",
+      "status": "UNADMITTED_RESEARCH_CANDIDATE",
+      "markupOnlyNormalizationRequired": true
+    }
+  ],
+  "liveAccess": "Both documented read-only API probes return HTTP200 with a descriptive research User-Agent. The Wikibooks Participles page is missing; HTTP200 does not mean that page exists.",
+  "earlier403": "Historical probe failure retained. Current tested endpoints have working live access; the older proxy-blocked continuation is superseded for those endpoints.",
+  "publication": "Prior environment publication user-confirmed. A current API response does not independently establish publication/snapshot status of the newer network draft.",
+  "sourceAndRightsAdmission": false,
+  "formalAcceptance": false,
+  "privatePdfIncluded": false,
+  "existingRightsRoute": "Russian Wikipedia copyrights oldid154562152, retained catalog/sources/units-6-10/ruwiki/copyrights-154562152.txt; first-party article text CC BY-SA4.0, quotations/third-party text require their own applicable basis.",
+  "sourceIntakeNext": [
+    "Inspect complete candidate pages and specific native constructions and third-party/quotation attribution before admission.",
+    "Obosoblenie144053197 supplies a cause-labelled pre-noun participial example and a complete terminal lighthouse example.",
+    "Boltraffio149826784 supplies a complete opening participial construction modifying он, but contains inline wikilinks. Only deterministic markup normalization may be considered; preserve the original words, punctuation and full construction.",
+    "Require source/rights records and primary raw-span/text/code pins for each new native application; no private book prose, silent punctuation repair or fabricated sentence."
+  ]
+}

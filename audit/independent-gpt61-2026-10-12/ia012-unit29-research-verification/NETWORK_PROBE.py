@@ -10,7 +10,8 @@ queries = [
 for host, params in queries:
     url = 'https://' + host + '/w/api.php?' + urllib.parse.urlencode(params)
     try:
-        with urllib.request.urlopen(url, timeout=25) as response:
+        request = urllib.request.Request(url, headers={'User-Agent':'RussianCompanionSourceResearch/1.0 (https://github.com/justinkulka-lang/russian-companion; public curriculum provenance audit)'})
+        with urllib.request.urlopen(request, timeout=25) as response:
             data = json.load(response)
             print(json.dumps({'host':host, 'status':response.status,'result':data}, ensure_ascii=False))
     except Exception as error:
