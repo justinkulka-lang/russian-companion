@@ -262,7 +262,24 @@ class Units2125SourceIntakeTest {
             assertEquals(page.getValue("byteCount").jsonPrimitive.content, bytes.size.toString())
             supplementalByOldid[page.getValue("oldid").jsonPrimitive.content] = bytes.toString(Charsets.UTF_8)
         }
-        val intake = pack.provenanceRecords.filter { it.unitNumber in 21..25 }
+        val currentIntake = pack.provenanceRecords.filter { it.unitNumber in 21..25 }
+        val distinctReflexive = currentIntake.filter { it.itemId.startsWith("prov-ca-u21-object-transfer-") || it.itemId.startsWith("prov-u21-object-transfer-native-") }
+        assertEquals(14, distinctReflexive.size)
+        val newEnglish = distinctReflexive.filter { it.itemId.startsWith("prov-ca-u21-object-transfer-") }
+        assertEquals(10, newEnglish.size)
+        newEnglish.forEach { assertContentAuditResearch(it) }
+        val newNative = distinctReflexive.filter { it.itemId.startsWith("prov-u21-object-transfer-native-") }
+        assertEquals(4, newNative.size)
+        val reflexiveSource = File(root, "audit/independent-gpt61-2026-10-12/ia016-unit21-research-verification/public-candidates-2026-10-13/enwiki-reflexive-1374712982.wikitext.txt").readText()
+        newNative.forEach {
+            assertTrue(dev.russiancompanion.v2.curriculum.Unit21ObjectPins.admittedNative(it))
+            assertTrue(it.originalSourceText in reflexiveSource)
+            assertEquals(sha256(it.originalSourceText), it.sourceHash)
+            assertEquals(sha256(it.shippedText), it.contentHash)
+        }
+        // Retain the original historical freeze/count/license-route checks below.
+        val intake = currentIntake.filterNot { it in distinctReflexive }
+        assertEquals(currentIntake.size, intake.size + distinctReflexive.size)
         val instructionSupplements = intake.filter { it.itemId.startsWith("prov-ca-u21-") || it.itemId.startsWith("prov-ca-u22-") || it.itemId.startsWith("prov-ca-u23-") || it.itemId.startsWith("prov-ca-u24-instruction-") || it.itemId.startsWith("prov-ca-u25-instruction-") }
         assertEquals(578, intake.size - instructionSupplements.size)
         assertEquals(75, instructionSupplements.count { it.unitNumber == 21 })
