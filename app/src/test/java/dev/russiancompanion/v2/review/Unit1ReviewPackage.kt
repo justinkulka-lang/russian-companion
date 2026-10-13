@@ -68,6 +68,8 @@ internal const val UNIT29_ADJECTIVE_CURRICULUM_COMMIT = "f844dd187be8e2e4d650c40
 
 internal const val UNIT29_APPLICATION_CURRICULUM_COMMIT = "73a40c14b8afb01b521bddf24179c3454f0bae04"
 
+internal const val UNIT30_LANGUAGE_CURRICULUM_COMMIT = "a2d7a2f62645aa6a95f7dd69590f7e61eb8b38b2"
+
 internal fun curriculumCommitForUnit(unitNumber: Int): String =
     if (unitNumber == 8) COMPLETE_RULE_CURRICULUM_COMMIT
     else if (unitNumber == 10) UNIT10_FEEDBACK_CURRICULUM_COMMIT
@@ -77,6 +79,7 @@ internal fun curriculumCommitForUnit(unitNumber: Int): String =
     else if (unitNumber == 14) UNIT14_FEEDBACK_CURRICULUM_COMMIT
     else if (unitNumber == 15) UNIT15_FEEDBACK_CURRICULUM_COMMIT
     else if (unitNumber == 29) UNIT29_APPLICATION_CURRICULUM_COMMIT
+    else if (unitNumber == 30) UNIT30_LANGUAGE_CURRICULUM_COMMIT
     else if (unitNumber == 5) UNIT5_INDECLINABILITY_CURRICULUM_COMMIT
     else if (unitNumber == 6) UNIT6_FEEDBACK_CURRICULUM_COMMIT
     else if (unitNumber == 7) UNIT7_FEEDBACK_CURRICULUM_COMMIT

@@ -1,0 +1,21 @@
+{
+  "all30MappingDigestsUnchanged": true,
+  "other29ContentReviewAndAncestorIdentitiesUnchanged": true,
+  "unit30Changes": [
+    {
+      "field": "contentReviewDigest",
+      "before": "192db1dc6049b708d930fa05879089db636eb2d2cfbb3724bf72c8732dc1114e",
+      "after": "9e453a1050dc3a25959271b300c68c64bb293ba9f34a40a9d76aaf3e0ce3f02e"
+    },
+    {
+      "field": "reviewPackageDigest",
+      "before": "8979f46b5b63705acfe0ec2669607abcdf9fe05ba9382fc6d9c7f81c9d1d3967",
+      "after": "f2c5e63a6b86d782c8bd055dac04923789909962aa6f1423208f5635aef354c8"
+    },
+    {
+      "field": "curriculumSourceCommit",
+      "before": "4f5cb8024d3f68a37052fdf85b5755bffa2a0904",
+      "after": "a2d7a2f62645aa6a95f7dd69590f7e61eb8b38b2"
+    }
+  ]
+}

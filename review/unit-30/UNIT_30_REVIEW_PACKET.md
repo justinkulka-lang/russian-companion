@@ -11,12 +11,12 @@ Unit 30 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 4f5cb8024d3f68a37052fdf85b5755bffa2a0904
-- Unit content-review SHA-256: 192db1dc6049b708d930fa05879089db636eb2d2cfbb3724bf72c8732dc1114e
+- Curriculum source commit: a2d7a2f62645aa6a95f7dd69590f7e61eb8b38b2
+- Unit content-review SHA-256: 9e453a1050dc3a25959271b300c68c64bb293ba9f34a40a9d76aaf3e0ce3f02e
 - Mapping-package SHA-256: 97f4c8beeb1d0e6827b94bedc1e379381c763c2c3522013890b75802630440a2
-- Pack content-review SHA-256: ecae24c4e29c7247517a26716213878e43c8cb4de414f5cbc93c6b0f5ca85a0a
-- Review-package SHA-256: 8979f46b5b63705acfe0ec2669607abcdf9fe05ba9382fc6d9c7f81c9d1d3967
-- Repository source SHA-256: fae738eb8dd817bdd523fef1dfd01d2b7657eaac382302fe06fedf2f0295546b
+- Pack content-review SHA-256: 149ece9aececeadfc8109e6da7e339515d81ee5e98ac5c5ff78cc50a0ac1aa62
+- Review-package SHA-256: f2c5e63a6b86d782c8bd055dac04923789909962aa6f1423208f5635aef354c8
+- Repository source SHA-256: 4c4a4408db41ce8e3edb16be91a5d01da8aee7b0cb1e20c50e9fe65e9c2a8a7f
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -69,13 +69,13 @@ notes=No qualified reviewer has signed Unit 30.
 
 ### UNIT `unit-30`
 
-- Objectives: obj-u30-letter-names, obj-u30-abbrev-examples, obj-u30-address-marks, obj-u30-abbreviation, obj-u30-particle, obj-u30-capstone, obj-u30-book, obj-u30-dictionary
+- Objectives: obj-u30-letter-names, obj-u30-abbrev-examples, obj-u30-address-marks, obj-u30-abbreviation, obj-u30-particle, obj-u30-capstone, obj-u30-book, obj-u30-dictionary, obj-u30-reference-literacy
 - Sessions: u30-s-orient, u30-s-letter-names, u30-s-abbrev-examples, u30-s-address-marks, u30-s-abbreviation, u30-s-particle, u30-s-capstone, u30-s-book, u30-s-dictionary
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 9e89320a527497338d87f557795e239a0b93521504d3575f4b8537f180a601d8
+- Content hash: b557dd3cdb6bf6532e2e6567bbf41db98d1dec2fb145d5717901fcb153aa80ae
 
 number=30
 title=Abbreviations, names of Russian letters, and particles
@@ -113,15 +113,15 @@ tutorOptional=true
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5651bfd92097a2c6ebaeef564741963d78f0d46968b5f1cdf5df8d6896c971de
+- Content hash: 0704489f07e5d856d0a01c900cec6df89a53afc238169748676242f0f7078250
 
-title=Review the admitted table name
+title=Name the supplied Russian letters
 kind=RECOGNITION
 unitNumber=30
 instruction=u30-st-orient,u30-st-teach-letter-names-1,u30-st-teach-letter-names-2
-examples=ex-u30-letter-names-0,ex-u30-letter-names-1
+examples=ex-u30-native-name-a,ex-u30-native-name-b,ex-u30-native-name-v
 practice=u30-st-guided-letter-names-1
-checks=u30-i-letter-names-1,u30-i-letter-names-2
+checks=u30-i-native-name-b,u30-i-native-name-v
 remediation=u30-st-rem-letter-names
 
 ### OBJECTIVE `obj-u30-abbrev-examples`
@@ -132,15 +132,15 @@ remediation=u30-st-rem-letter-names
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: fd2baa32efe91bbb8579eaddf127c39e443fa4d91e4dcc8bc31c4e696b23f0f5
+- Content hash: 094e44ecaac2efc11dd679f7759235415cf249722f165c8084f7904829a3d701
 
-title=Choose the admitted gloss for the shown abbreviation example
+title=Interpret the supplied initialisms and their noun treatment
 kind=RECOGNITION
 unitNumber=30
 instruction=u30-st-orient,u30-st-teach-abbrev-examples-1,u30-st-teach-abbrev-examples-2
 examples=ex-u30-abbrev-examples-0,ex-u30-abbrev-examples-1
 practice=u30-st-guided-abbrev-examples-1
-checks=u30-i-abbrev-examples-1,u30-i-abbrev-examples-2
+checks=u30-i-initialism-ussr,u30-i-initialism-usa
 remediation=u30-st-rem-abbrev-examples
 
 ### OBJECTIVE `obj-u30-address-marks`
@@ -257,6 +257,25 @@ practice=u30-dictionary-guided
 checks=u30-i-dictionary-1,u30-i-dictionary-2,u30-i-dictionary-3,u30-i-dictionary-4,u30-i-dictionary-5
 remediation=u30-dictionary-remediate
 
+### OBJECTIVE `obj-u30-reference-literacy`
+
+- Objectives: obj-u30-reference-literacy
+- Sessions: none
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 8a20746cf3c165c0a43219e3d453ed4298043e5018bac03ace0f84018fb53b92
+
+title=Optional reference-table literacy
+kind=GUIDANCE
+unitNumber=30
+instruction=u30-st-teach-letter-names-1,u30-st-teach-letter-names-2,u30-st-teach-abbrev-examples-1,u30-st-teach-abbrev-examples-2
+examples=
+practice=
+checks=
+remediation=
+
 ### SESSION `u30-s-orient`
 
 - Objectives: obj-u30-letter-names, obj-u30-abbrev-examples, obj-u30-address-marks, obj-u30-abbreviation, obj-u30-particle, obj-u30-capstone, obj-u30-book
@@ -302,30 +321,30 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3a7dc1e0d704601a17b0b1a878d9943439a1166c13669e5a69cbb9368d39183b
+- Content hash: 7f6eb75bf4ea30d39568fe70f74c5b6e2fcf67d291961814f9c319c541cc09e9
 
-title=Review the admitted table name
+title=Name the supplied Russian letters
 estimatedMinutes=12
 objectives=obj-u30-letter-names
 steps=u30-st-teach-letter-names-1,u30-st-teach-letter-names-2,u30-st-guided-letter-names-1,u30-st-rem-letter-names,u30-st-check-letter-names
 
 ### STEP `u30-st-teach-letter-names-1`
 
-- Objectives: obj-u30-letter-names
+- Objectives: obj-u30-letter-names, obj-u30-reference-literacy
 - Sessions: u30-s-letter-names
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b8e7be5d2f3f61582bcacaf4ebdf7e2d158511fb5cdb21105ea96fcbe49ee734
+- Content hash: e640152e4d723d33d7b5039d21d06538f1707f73f6a9df25ef3e6b6872960c8a
 
 kind=TEACH
 title=Separate a letter name from an approximate sound cue
-body=The retained а has the English name respelling ah. The retained бэ has be/beh. These respellings guide recognition of the supplied letter names; they are not words naming an object or an English translation of a Russian sentence.
+body=The supplied letters and modern Russian names are А — а, Б — бэ and В — вэ. The new checks show the letter and ask for its Russian name. English respellings, approximate sound comparisons and obsolete Old Church Slavonic names are separate reference information. Name recognition by text does not demonstrate listening or pronunciation, and does not complete the phonetic foundation.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
-examples=ex-u30-letter-names-0,ex-u30-letter-names-1
+examples=ex-u30-native-name-a,ex-u30-native-name-b,ex-u30-native-name-v
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -333,17 +352,17 @@ remediationStepId=
 
 ### STEP `u30-st-teach-letter-names-2`
 
-- Objectives: obj-u30-letter-names
+- Objectives: obj-u30-letter-names, obj-u30-reference-literacy
 - Sessions: u30-s-letter-names
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 39d7d3635de2fdcfcfbf8041f4ea2b889a5915ed7c499a057dc35d1c1a71eec6
+- Content hash: a018ddd93012c35d3ce97e68e2e8d55bcad3af689c273f0dae98039fa08a485a
 
 kind=TEACH
 title=A comparison word is not the name respelling
-body=The retained alphabet row uses father as an approximate English sound comparison for а. Choose father when asked for that comparison word, but ah when asked for the name respelling. The alternatives bad and both are different comparison words, and be/beh belongs to the other supplied name. English comparisons depend on accent and are approximate; these text checks do not demonstrate listening or pronunciation.
+body=For optional reference questions only, choose father when asked for that comparison word in the А row. bad is the approximate comparison in the Б row, while both is a translation of its example word. These are not Russian letter names. The optional original table questions do not satisfy the language objective. The three supplied name checks do not demonstrate listening or pronunciation or authorize a general rule for sounding out every letter.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -361,14 +380,14 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 7049ffae26b90c7bea48540b711d1f0448c23b6f3a9b80a80bfee7d03f291c65
+- Content hash: d0ea2e3f357dcb2d77a899344f5a50c5b25f1d2daa891d6c9ba5d2ce9634832d
 
 kind=GUIDED
 title=Guided practice
 body=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
 dominantAction=Continue
 references=
-items=u30-g-letter-names-0
+items=u30-g-native-name-a
 examples=
 unavailableReason=
 bookDirection=
@@ -383,17 +402,17 @@ remediationStepId=u30-st-rem-letter-names
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d7f43cbdbc918cff45b7497208e3e8a099331a89e657ae5dc781ec802783de59
+- Content hash: 729e743391cb65673f88fd676423356120a5167d9d2f327fbc12e2582892f8e1
 
 kind=REMEDIATE
 title=Review the complete retained-example contrast
-body=The retained а has the English name respelling ah. The retained бэ has be/beh. These respellings guide recognition of the supplied letter names; they are not words naming an object or an English translation of a Russian sentence.
+body=The supplied letters and modern Russian names are А — а, Б — бэ and В — вэ. The new checks show the letter and ask for its Russian name. English respellings, approximate sound comparisons and obsolete Old Church Slavonic names are separate reference information. Name recognition by text does not demonstrate listening or pronunciation, and does not complete the phonetic foundation.
 
-The retained alphabet row uses father as an approximate English sound comparison for а. Choose father when asked for that comparison word, but ah when asked for the name respelling. The alternatives bad and both are different comparison words, and be/beh belongs to the other supplied name. English comparisons depend on accent and are approximate; these text checks do not demonstrate listening or pronunciation.
+For optional reference questions only, choose father when asked for that comparison word in the А row. bad is the approximate comparison in the Б row, while both is a translation of its example word. These are not Russian letter names. The optional original table questions do not satisfy the language objective. The three supplied name checks do not demonstrate listening or pronunciation or authorize a general rule for sounding out every letter.
 dominantAction=Continue
 references=
 items=
-examples=ex-u30-letter-names-0,ex-u30-letter-names-1
+examples=ex-u30-native-name-a,ex-u30-native-name-b,ex-u30-native-name-v
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -407,14 +426,14 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 61c8b4a8e75e51020145f5be20d8f439f4619db59abf2d6883cd81a997915ebe
+- Content hash: 781756406ccd16b0dfe8abda02d04b141600c40bae689bd96fccabe6a2252fd7
 
 kind=CHECK
 title=Independent checks
 body=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
 dominantAction=Continue
 references=
-items=u30-i-letter-names-1,u30-i-letter-names-2
+items=u30-i-native-name-b,u30-i-native-name-v
 examples=
 unavailableReason=
 bookDirection=
@@ -429,26 +448,26 @@ remediationStepId=u30-st-rem-letter-names
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 44597c9c14d84515dae9494cdb5a1631e16d99a4a2f5ba648f0b9dc16d6b27dc
+- Content hash: 582b3cecd575b5001b8583bd9a6540e83976db55cd331e2747e2d082fbe69c23
 
-title=Choose the admitted gloss for the shown abbreviation example
+title=Interpret the supplied initialisms and their noun treatment
 estimatedMinutes=12
 objectives=obj-u30-abbrev-examples
 steps=u30-st-teach-abbrev-examples-1,u30-st-teach-abbrev-examples-2,u30-st-guided-abbrev-examples-1,u30-st-rem-abbrev-examples,u30-st-check-abbrev-examples
 
 ### STEP `u30-st-teach-abbrev-examples-1`
 
-- Objectives: obj-u30-abbrev-examples
+- Objectives: obj-u30-abbrev-examples, obj-u30-reference-literacy
 - Sessions: u30-s-abbrev-examples
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 88a6c9c99b4ef7764bbcdf8465d3cb0719b347aa23104fce71f1291cd4314243
+- Content hash: 7f24c7f814633836f07cdf05a588f2a1ee3261a177c3da0326d54cbf4a7de402
 
 kind=TEACH
 title=Recognize the two supplied country abbreviations
-body=The retained СССР corresponds to USSR and США to USA. Choose the English country abbreviation matching the Russian form. These are two admitted examples, not a complete list or a productive rule for pronouncing every Russian abbreviation.
+body=The retained СССР corresponds to USSR and is grammatically masculine in the supplied noun use. США corresponds to USA and is grammatically plural. The source lists both as indeclinable: their written forms do not gain case endings in this taught use. An adjective agreeing with the initialism follows the supplied gender or number even though the initialism itself stays unchanged. These examples do not classify every Russian abbreviation or demonstrate spoken pronunciation.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -460,17 +479,17 @@ remediationStepId=
 
 ### STEP `u30-st-teach-abbrev-examples-2`
 
-- Objectives: obj-u30-abbrev-examples
+- Objectives: obj-u30-abbrev-examples, obj-u30-reference-literacy
 - Sessions: u30-s-abbrev-examples
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: aa0add45374e638a68619cf2c819788b18c58a3c15f21d03f0b13a41836b5666
+- Content hash: 5e512e67ce420f3364584896241ea66b9dba9bd8e2bb794fbda7413e680f5edb
 
 kind=TEACH
 title=A heading describes the group rather than one country
-body=Abbreviations is the category heading for the supplied examples, not the English gloss of СССР or США. One retained check asks specifically for that heading; its answer is Abbreviations rather than USSR or USA. Distinguish a question about category from a question about the meaning of an individual example.
+body=When the shown initialism is a noun referring to the historical Soviet state, interpret USSR and use the supplied masculine agreement treatment. For the United States reference, interpret USA and use the supplied plural treatment. Do not replace agreement with an English table heading or add case endings to these indeclinable examples. Abbreviations is a reference heading, not the English gloss of either country example. The optional heading question is reference literacy and cannot satisfy the language checks.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -488,14 +507,14 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 79d9f024d6c94cc046fa98bfee7285b00b0fa59405a2c985ab00e76ee844ad9a
+- Content hash: 42bf3f3b6bc1362284576d185a50eca7e2bde8fe5e28268fcaf6195891d8f54b
 
 kind=GUIDED
 title=Guided practice
 body=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
 dominantAction=Continue
 references=
-items=u30-g-abbrev-examples-0
+items=u30-g-initialism-use
 examples=
 unavailableReason=
 bookDirection=
@@ -510,13 +529,13 @@ remediationStepId=u30-st-rem-abbrev-examples
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: cc7ee9eb44707ea2e2e2adf78c0c7ece640e9d63192f2d90952d62a73c4df920
+- Content hash: e875b7f9b0717c6cc1cb58d28884312f71c036b536598a733d2435eb1210e720
 
 kind=REMEDIATE
 title=Review the complete retained-example contrast
-body=The retained СССР corresponds to USSR and США to USA. Choose the English country abbreviation matching the Russian form. These are two admitted examples, not a complete list or a productive rule for pronouncing every Russian abbreviation.
+body=The retained СССР corresponds to USSR and is grammatically masculine in the supplied noun use. США corresponds to USA and is grammatically plural. The source lists both as indeclinable: their written forms do not gain case endings in this taught use. An adjective agreeing with the initialism follows the supplied gender or number even though the initialism itself stays unchanged. These examples do not classify every Russian abbreviation or demonstrate spoken pronunciation.
 
-Abbreviations is the category heading for the supplied examples, not the English gloss of СССР or США. One retained check asks specifically for that heading; its answer is Abbreviations rather than USSR or USA. Distinguish a question about category from a question about the meaning of an individual example.
+When the shown initialism is a noun referring to the historical Soviet state, interpret USSR and use the supplied masculine agreement treatment. For the United States reference, interpret USA and use the supplied plural treatment. Do not replace agreement with an English table heading or add case endings to these indeclinable examples. Abbreviations is a reference heading, not the English gloss of either country example. The optional heading question is reference literacy and cannot satisfy the language checks.
 dominantAction=Continue
 references=
 items=
@@ -534,14 +553,14 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d9f84cb930874c507815091659de3495620468f39775686a21ae359dc27b0071
+- Content hash: 88ee9d2bd35057ee24bcfc0e44a096430e492e2e8629e79710b1f841caba1af8
 
 kind=CHECK
 title=Independent checks
 body=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
 dominantAction=Continue
 references=
-items=u30-i-abbrev-examples-1,u30-i-abbrev-examples-2
+items=u30-i-initialism-ussr,u30-i-initialism-usa
 examples=
 unavailableReason=
 bookDirection=
@@ -1426,7 +1445,7 @@ bookDirection=
 companionDirection=Unit 30 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.
 remediationStepId=
 
-### EXAMPLE `ex-u30-letter-names-0`
+### EXAMPLE `ex-u30-native-name-a`
 
 - Objectives: obj-u30-letter-names
 - Sessions: u30-s-letter-names
@@ -1434,16 +1453,16 @@ remediationStepId=
 - Rights: rights-wikipedia-russian-alphabet-1371795481
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 53989f19e60bd3c95b7757604c316041de951ff5562d11b91484c2d53d64e9fe
+- Content hash: b5902637cbc800c73d567a077e9e4d11a823b6bf0efe820ed6df04af84d315d0
 
 kind=LEXICAL
 letterId=
-display=а
-note=ah
+display=А
+note=а
 objectiveId=obj-u30-letter-names
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
-### EXAMPLE `ex-u30-letter-names-1`
+### EXAMPLE `ex-u30-native-name-b`
 
 - Objectives: obj-u30-letter-names
 - Sessions: u30-s-letter-names
@@ -1451,12 +1470,29 @@ reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 - Rights: rights-wikipedia-russian-alphabet-1371795481
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 5dc6d8cc5a681baa73ccab1bff4bbf880138e0ccc4d69bc8f24caebe812ad3ec
+- Content hash: 7c7a65a2cc304ab7022c7a7c3a68c13f84c9407b13b2c1a2e8a47473775a07a7
 
 kind=LEXICAL
 letterId=
-display=бэ
-note=be/beh
+display=Б
+note=бэ
+objectiveId=obj-u30-letter-names
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### EXAMPLE `ex-u30-native-name-v`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-letter-names
+- Source: src-wikipedia-russian-alphabet-1371795481
+- Rights: rights-wikipedia-russian-alphabet-1371795481
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 47d3002d9cf675ab4e10f13ebbabc497c2eab3bf1978272eef1be7782fad5cc2
+
+kind=LEXICAL
+letterId=
+display=В
+note=вэ
 objectiveId=obj-u30-letter-names
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
@@ -1791,74 +1827,74 @@ note=remaining upright on a base
 objectiveId=obj-u30-dictionary
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
-### GUIDED_PRACTICE `u30-g-letter-names-0`
+### GUIDED_PRACTICE `u30-g-native-name-a`
 
 - Objectives: obj-u30-letter-names
 - Sessions: u30-s-letter-names
-- Source: src-wikipedia-russian-alphabet-1371795481
-- Rights: rights-wikipedia-russian-alphabet-1371795481
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 2647862bc69bd1972697ec471c23724f32a99c4b737555cfbb82c03598239f57
+- Content hash: 3c939b0c6249732a7288a2e0e984644315317262be33815692c45b8d8fc02f02
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English respelling is written beside the shown table name?
-promptLetter=а
-options=ah | be/beh | father
-answer=ah
-feedback=The frozen table places a respelling beside the name in the Approximate English row area. This label is the respelling beside the shown name. ah.
+prompt=Which Russian name belongs to the shown letter?
+promptLetter=А
+options=а | бэ | вэ
+answer=а
+feedback=The modern Russian name of А is а. Choose the Russian name of the shown letter, not an English comparison word or an obsolete word-name. This is textual name recognition and does not demonstrate listening or pronunciation.
 objectiveId=obj-u30-letter-names
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen table writes this respelling beside a different name for be/beh. | The frozen table writes this equivalent in another column for father.
+distractorRationales= | бэ is the modern name of Б, not the shown letter. | вэ is the modern name of В, not the shown letter.
 testedFeature=LETTER_NAME
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
-contrastSetId=u30-letter-names-0
+evidenceMode=STATED_APPLICATION
+contrastSetId=u30-g-native-name-a
 cueLanguage=ru
 independent=false
-answerSourceIds=prov-ex-u30-letter-names-0-en
-distractorSourceIds= | prov-ex-u30-letter-names-1-en | prov-u30-letter-names-x-0
-distractorDifference= | This respelling belongs to the other row (be/beh). | This equivalent is not the respelling (father).
-whyAnswerDemonstratesObjective=The frozen table places a respelling beside the name in the Approximate English row area. This label is the respelling beside the shown name.
-contrastMembers=ah | be/beh | father
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u30-letter-names-0-ru | prov-ex-u30-letter-names-0-en | prov-ex-u30-letter-names-1-en | prov-u30-letter-names-x-0
-responseKind=ENGLISH_CLASSIFICATION
+answerSourceIds=prov-ca-u30-language-u30-g-native-name-a-1
+distractorSourceIds= | prov-ca-u30-language-u30-g-native-name-a-2 | prov-ca-u30-language-u30-g-native-name-a-3
+distractorDifference= | бэ is the modern name of Б, not the shown letter. | вэ is the modern name of В, not the shown letter.
+whyAnswerDemonstratesObjective=The modern Russian name of А is а. Choose the Russian name of the shown letter, not an English comparison word or an obsolete word-name. This is textual name recognition and does not demonstrate listening or pronunciation.
+contrastMembers=а | бэ | вэ
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u30-language-u30-g-native-name-a-0 | prov-ca-u30-language-u30-g-native-name-a-1 | prov-ca-u30-language-u30-g-native-name-a-2 | prov-ca-u30-language-u30-g-native-name-a-3
+responseKind=RUSSIAN_TOKEN
 
-### GUIDED_PRACTICE `u30-g-abbrev-examples-0`
+### GUIDED_PRACTICE `u30-g-initialism-use`
 
 - Objectives: obj-u30-abbrev-examples
 - Sessions: u30-s-abbrev-examples
-- Source: src-wikipedia-russian-grammar-1369617627
-- Rights: rights-wikipedia-russian-grammar-1369617627
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: d89ccf11daeac656f1b11d858defa9335ffd7b197c62a26fb52936ae8422d2c8
+- Content hash: e84cb158f4ae7bf91a83911abf2f826dfe406ff676d3a6c066db6f60d79d3628
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English label is written beside the shown example?
+prompt=In a historical reference to the Soviet state, which English meaning and noun treatment fit the shown initialism?
 promptLetter=СССР
-options=USSR | USA | Abbreviations
-answer=USSR
-feedback=The frozen line lists these examples under Abbreviations. This label is written beside the shown example. USSR.
+options=USSR; masculine agreement; the initialism remains unchanged for case. | USA; plural agreement; the initialism remains unchanged for case.
+answer=USSR; masculine agreement; the initialism remains unchanged for case.
+feedback=СССР means USSR and has the supplied masculine agreement treatment. The initialism is indeclinable here: its written form remains unchanged for case, while an agreeing adjective follows its grammatical gender or number. Grammatical agreement and changing the initialism itself are separate facts. This is limited to these supplied examples, not every abbreviation. USSR; masculine agreement; the initialism remains unchanged for case.
 objectiveId=obj-u30-abbrev-examples
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen line writes this label beside the other example for USA. | The frozen line uses this word as the heading, not as the gloss for Abbreviations.
-testedFeature=ABBREVIATION_EXAMPLE
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
-contrastSetId=u30-abbrev-examples-0
+distractorRationales= | The USA plural treatment belongs to the other initialism, not the supplied Soviet-state reference.
+testedFeature=ABBREVIATION_TREATMENT
+evidenceMode=STATED_APPLICATION
+contrastSetId=u30-g-initialism-use
 cueLanguage=ru
 independent=false
-answerSourceIds=prov-ex-u30-abbrev-examples-0-en
-distractorSourceIds= | prov-ex-u30-abbrev-examples-1-en | prov-u30-abbrev-examples-x-0
-distractorDifference= | This label is paired with the other example (USA). | This word is the heading (Abbreviations).
-whyAnswerDemonstratesObjective=The frozen line lists these examples under Abbreviations. This label is written beside the shown example.
-contrastMembers=USSR | USA | Abbreviations
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u30-abbrev-examples-0-ru | prov-ex-u30-abbrev-examples-0-en | prov-ex-u30-abbrev-examples-1-en | prov-u30-abbrev-examples-x-0
+answerSourceIds=prov-ca-u30-language-u30-g-initialism-use-1
+distractorSourceIds= | prov-ca-u30-language-u30-g-initialism-use-2
+distractorDifference= | The USA plural treatment belongs to the other initialism, not the supplied Soviet-state reference.
+whyAnswerDemonstratesObjective=СССР means USSR and has the supplied masculine agreement treatment. The initialism is indeclinable here: its written form remains unchanged for case, while an agreeing adjective follows its grammatical gender or number. Grammatical agreement and changing the initialism itself are separate facts. This is limited to these supplied examples, not every abbreviation. USSR; masculine agreement; the initialism remains unchanged for case.
+contrastMembers=USSR; masculine agreement; the initialism remains unchanged for case. | USA; plural agreement; the initialism remains unchanged for case.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u30-language-u30-g-initialism-use-0 | prov-ca-u30-language-u30-g-initialism-use-1 | prov-ca-u30-language-u30-g-initialism-use-2
 responseKind=ENGLISH_CLASSIFICATION
 
 ### GUIDED_PRACTICE `u30-g-address-marks-0`
@@ -2036,144 +2072,144 @@ relationKind=STATED_APPLICATION
 relationParticipantIds=prov-obj-u30-dictionary-6 | prov-obj-u30-dictionary-7 | prov-obj-u30-dictionary-9 | prov-obj-u30-dictionary-11
 responseKind=ENGLISH_CLASSIFICATION
 
-### INDEPENDENT_CHECK `u30-i-letter-names-1`
+### INDEPENDENT_CHECK `u30-i-native-name-b`
 
 - Objectives: obj-u30-letter-names
 - Sessions: u30-s-letter-names
-- Source: src-wikipedia-russian-alphabet-1371795481
-- Rights: rights-wikipedia-russian-alphabet-1371795481
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 8ac0c1a239a0cb5cba1dfde61af621025c37150dceb144c04b2609c344ecc924
+- Content hash: e742de6681f1ee5a2604fb5ef33ad95212fe15caed1816f193c639df73345ae8
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English respelling is written beside this shown table name?
-promptLetter=бэ
-options=be/beh | ah | bad
-answer=be/beh
-feedback=The frozen table places a respelling beside the name in the Approximate English row area. This label is the respelling beside the shown name. be/beh.
+prompt=Which Russian name belongs to the shown letter?
+promptLetter=Б
+options=бэ | а | вэ
+answer=бэ
+feedback=The modern Russian name of Б is бэ. Choose the Russian name of the shown letter, not an English comparison word or an obsolete word-name. This is textual name recognition and does not demonstrate listening or pronunciation.
 objectiveId=obj-u30-letter-names
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen table writes this respelling beside a different name for ah. | The frozen table writes this equivalent in another column for bad.
+distractorRationales= | а is the modern name of А, not the shown letter. | вэ is the modern name of В, not the shown letter.
 testedFeature=LETTER_NAME
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
-contrastSetId=u30-letter-names-1
+evidenceMode=STATED_APPLICATION
+contrastSetId=u30-i-native-name-b
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-u30-letter-names-1-en
-distractorSourceIds= | prov-ex-u30-letter-names-0-en | prov-u30-letter-names-x-1
-distractorDifference= | This respelling belongs to the other row (ah). | This equivalent is not the respelling (bad).
-whyAnswerDemonstratesObjective=The frozen table places a respelling beside the name in the Approximate English row area. This label is the respelling beside the shown name.
-contrastMembers=be/beh | ah | bad
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u30-letter-names-1-ru | prov-ex-u30-letter-names-1-en | prov-ex-u30-letter-names-0-en | prov-u30-letter-names-x-1
-responseKind=ENGLISH_CLASSIFICATION
+answerSourceIds=prov-ca-u30-language-u30-i-native-name-b-1
+distractorSourceIds= | prov-ca-u30-language-u30-i-native-name-b-2 | prov-ca-u30-language-u30-i-native-name-b-3
+distractorDifference= | а is the modern name of А, not the shown letter. | вэ is the modern name of В, not the shown letter.
+whyAnswerDemonstratesObjective=The modern Russian name of Б is бэ. Choose the Russian name of the shown letter, not an English comparison word or an obsolete word-name. This is textual name recognition and does not demonstrate listening or pronunciation.
+contrastMembers=бэ | а | вэ
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u30-language-u30-i-native-name-b-0 | prov-ca-u30-language-u30-i-native-name-b-1 | prov-ca-u30-language-u30-i-native-name-b-2 | prov-ca-u30-language-u30-i-native-name-b-3
+responseKind=RUSSIAN_TOKEN
 
-### INDEPENDENT_CHECK `u30-i-letter-names-2`
+### INDEPENDENT_CHECK `u30-i-native-name-v`
 
 - Objectives: obj-u30-letter-names
 - Sessions: u30-s-letter-names
-- Source: src-wikipedia-russian-alphabet-1371795481
-- Rights: rights-wikipedia-russian-alphabet-1371795481
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: f3f7ef9957e195d59205b4978376312c6675cae3fc63bbd48b656eba517b7c69
+- Content hash: 9b0edfce158db7c55ed8d9693425001d76ceef04a5f7c78718c960b6ce8498c8
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English equivalent is written in the same row as the shown name?
-promptLetter=а
-options=father | bad | both
-answer=father
-feedback=The frozen table places a respelling beside the name in the Approximate English row area. This equivalent is written in the shown row. father.
+prompt=Which Russian name belongs to the shown letter?
+promptLetter=В
+options=вэ | а | бэ
+answer=вэ
+feedback=The modern Russian name of В is вэ. Choose the Russian name of the shown letter, not an English comparison word or an obsolete word-name. This is textual name recognition and does not demonstrate listening or pronunciation.
 objectiveId=obj-u30-letter-names
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen table writes this equivalent in a different row for bad. | The frozen table writes this gloss in a different row for both.
+distractorRationales= | а is the modern name of А, not the shown letter. | бэ is the modern name of Б, not the shown letter.
 testedFeature=LETTER_NAME
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
-contrastSetId=u30-letter-names-2
+evidenceMode=STATED_APPLICATION
+contrastSetId=u30-i-native-name-v
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-u30-letter-names-x-0
-distractorSourceIds= | prov-u30-letter-names-x-1 | prov-u30-letter-names-x-2
-distractorDifference= | This equivalent belongs to the other row (bad). | This gloss belongs to the other row (both).
-whyAnswerDemonstratesObjective=The frozen table places a respelling beside the name in the Approximate English row area. This equivalent is written in the shown row.
-contrastMembers=father | bad | both
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u30-letter-names-0-ru | prov-u30-letter-names-x-0 | prov-u30-letter-names-x-1 | prov-u30-letter-names-x-2
-responseKind=ENGLISH_CLASSIFICATION
+answerSourceIds=prov-ca-u30-language-u30-i-native-name-v-1
+distractorSourceIds= | prov-ca-u30-language-u30-i-native-name-v-2 | prov-ca-u30-language-u30-i-native-name-v-3
+distractorDifference= | а is the modern name of А, not the shown letter. | бэ is the modern name of Б, not the shown letter.
+whyAnswerDemonstratesObjective=The modern Russian name of В is вэ. Choose the Russian name of the shown letter, not an English comparison word or an obsolete word-name. This is textual name recognition and does not demonstrate listening or pronunciation.
+contrastMembers=вэ | а | бэ
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u30-language-u30-i-native-name-v-0 | prov-ca-u30-language-u30-i-native-name-v-1 | prov-ca-u30-language-u30-i-native-name-v-2 | prov-ca-u30-language-u30-i-native-name-v-3
+responseKind=RUSSIAN_TOKEN
 
-### INDEPENDENT_CHECK `u30-i-abbrev-examples-1`
+### INDEPENDENT_CHECK `u30-i-initialism-ussr`
 
 - Objectives: obj-u30-abbrev-examples
 - Sessions: u30-s-abbrev-examples
-- Source: src-wikipedia-russian-grammar-1369617627
-- Rights: rights-wikipedia-russian-grammar-1369617627
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 213688a759d623ffe5bed8ac1d94a5b872dda164a2db2fb7dead58fcb157176b
+- Content hash: d3b2008234ffbc5c17f262efab174361d877bb235926168671d65ad36cac5a68
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English label is written beside this shown example?
-promptLetter=США
-options=USA | USSR | Abbreviations
-answer=USA
-feedback=The frozen line lists these examples under Abbreviations. This label is written beside the shown example. USA.
-objectiveId=obj-u30-abbrev-examples
-containsGeneratedRussian=false
-reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen line writes this label beside the other example for USSR. | The frozen line uses this word as the heading for Abbreviations.
-testedFeature=ABBREVIATION_EXAMPLE
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
-contrastSetId=u30-abbrev-examples-1
-cueLanguage=ru
-independent=true
-answerSourceIds=prov-ex-u30-abbrev-examples-1-en
-distractorSourceIds= | prov-ex-u30-abbrev-examples-0-en | prov-u30-abbrev-examples-x-0
-distractorDifference= | This label is paired with the other example (USSR). | This word is the heading, not the gloss (Abbreviations).
-whyAnswerDemonstratesObjective=The frozen line lists these examples under Abbreviations. This label is written beside the shown example.
-contrastMembers=USA | USSR | Abbreviations
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u30-abbrev-examples-1-ru | prov-ex-u30-abbrev-examples-1-en | prov-ex-u30-abbrev-examples-0-en | prov-u30-abbrev-examples-x-0
-responseKind=ENGLISH_CLASSIFICATION
-
-### INDEPENDENT_CHECK `u30-i-abbrev-examples-2`
-
-- Objectives: obj-u30-abbrev-examples
-- Sessions: u30-s-abbrev-examples
-- Source: src-wikipedia-russian-grammar-1369617627
-- Rights: rights-wikipedia-russian-grammar-1369617627
-- Classification: none
-- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 4a9e689ded4cf877d1605db81f35d65c34558ed7bb5f209792386e8820c76ebe
-
-kind=CONTRAST_SELECTION
-language=en
-prompt=Which admitted English word is the heading rather than the gloss of the shown example?
+prompt=A Russian adjective agrees with this noun initialism referring to the historical Soviet state. Which English explanation fits its meaning and treatment?
 promptLetter=СССР
-options=Abbreviations | USSR | USA
-answer=Abbreviations
-feedback=The frozen line lists these examples under Abbreviations. This word is the heading above the examples. Abbreviations.
+options=USSR; masculine agreement; the initialism remains unchanged for case. | USSR; plural agreement; the initialism takes case endings. | USA; singular agreement; the initialism takes case endings.
+answer=USSR; masculine agreement; the initialism remains unchanged for case.
+feedback=СССР means USSR and has the supplied masculine agreement treatment. The initialism is indeclinable here: its written form remains unchanged for case, while an agreeing adjective follows its grammatical gender or number. Grammatical agreement and changing the initialism itself are separate facts. This is limited to these supplied examples, not every abbreviation. USSR; masculine agreement; the initialism remains unchanged for case.
 objectiveId=obj-u30-abbrev-examples
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen line writes this label beside the shown example for USSR. | The frozen line writes this label beside the other example for USA.
-testedFeature=ABBREVIATION_EXAMPLE
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
-contrastSetId=u30-abbrev-examples-2
+distractorRationales= | The USSR gloss does not justify plural agreement or adding case endings: the supplied USSR initialism is masculine and indeclinable. | The USA gloss does not justify singular agreement or adding case endings: the supplied USA initialism is plural and indeclinable.
+testedFeature=ABBREVIATION_TREATMENT
+evidenceMode=STATED_APPLICATION
+contrastSetId=u30-i-initialism-ussr
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-u30-abbrev-examples-x-0
-distractorSourceIds= | prov-ex-u30-abbrev-examples-0-en | prov-ex-u30-abbrev-examples-1-en
-distractorDifference= | This label is the gloss (USSR). | This label is the other gloss (USA).
-whyAnswerDemonstratesObjective=The frozen line lists these examples under Abbreviations. This word is the heading above the examples.
-contrastMembers=Abbreviations | USSR | USA
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u30-abbrev-examples-0-ru | prov-u30-abbrev-examples-x-0 | prov-ex-u30-abbrev-examples-0-en | prov-ex-u30-abbrev-examples-1-en
+answerSourceIds=prov-ca-u30-language-u30-i-initialism-ussr-1
+distractorSourceIds= | prov-ca-u30-language-u30-i-initialism-ussr-2 | prov-ca-u30-language-u30-i-initialism-ussr-3
+distractorDifference= | The USSR gloss does not justify plural agreement or adding case endings: the supplied USSR initialism is masculine and indeclinable. | The USA gloss does not justify singular agreement or adding case endings: the supplied USA initialism is plural and indeclinable.
+whyAnswerDemonstratesObjective=СССР means USSR and has the supplied masculine agreement treatment. The initialism is indeclinable here: its written form remains unchanged for case, while an agreeing adjective follows its grammatical gender or number. Grammatical agreement and changing the initialism itself are separate facts. This is limited to these supplied examples, not every abbreviation. USSR; masculine agreement; the initialism remains unchanged for case.
+contrastMembers=USSR; masculine agreement; the initialism remains unchanged for case. | USSR; plural agreement; the initialism takes case endings. | USA; singular agreement; the initialism takes case endings.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u30-language-u30-i-initialism-ussr-0 | prov-ca-u30-language-u30-i-initialism-ussr-1 | prov-ca-u30-language-u30-i-initialism-ussr-2 | prov-ca-u30-language-u30-i-initialism-ussr-3
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u30-i-initialism-usa`
+
+- Objectives: obj-u30-abbrev-examples
+- Sessions: u30-s-abbrev-examples
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: adabb3e036a0eb8aab08602c492169621fd5c8a93d443252bfcfa08f7357ddea
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=A Russian adjective agrees with this noun initialism referring to the United States. Which English explanation fits its meaning and treatment?
+promptLetter=США
+options=USA; plural agreement; the initialism remains unchanged for case. | USA; singular agreement; the initialism takes case endings. | USSR; plural agreement; the initialism takes case endings.
+answer=USA; plural agreement; the initialism remains unchanged for case.
+feedback=США means USA and has the supplied plural agreement treatment. The initialism is indeclinable here: its written form remains unchanged for case, while an agreeing adjective follows its grammatical gender or number. Grammatical agreement and changing the initialism itself are separate facts. This is limited to these supplied examples, not every abbreviation. USA; plural agreement; the initialism remains unchanged for case.
+objectiveId=obj-u30-abbrev-examples
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | The USA gloss does not justify singular agreement or adding case endings: the supplied USA initialism is plural and indeclinable. | The USSR gloss does not justify plural agreement or adding case endings: the supplied USSR initialism is masculine and indeclinable.
+testedFeature=ABBREVIATION_TREATMENT
+evidenceMode=STATED_APPLICATION
+contrastSetId=u30-i-initialism-usa
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ca-u30-language-u30-i-initialism-usa-1
+distractorSourceIds= | prov-ca-u30-language-u30-i-initialism-usa-2 | prov-ca-u30-language-u30-i-initialism-usa-3
+distractorDifference= | The USA gloss does not justify singular agreement or adding case endings: the supplied USA initialism is plural and indeclinable. | The USSR gloss does not justify plural agreement or adding case endings: the supplied USSR initialism is masculine and indeclinable.
+whyAnswerDemonstratesObjective=США means USA and has the supplied plural agreement treatment. The initialism is indeclinable here: its written form remains unchanged for case, while an agreeing adjective follows its grammatical gender or number. Grammatical agreement and changing the initialism itself are separate facts. This is limited to these supplied examples, not every abbreviation. USA; plural agreement; the initialism remains unchanged for case.
+contrastMembers=USA; plural agreement; the initialism remains unchanged for case. | USA; singular agreement; the initialism takes case endings. | USSR; plural agreement; the initialism takes case endings.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u30-language-u30-i-initialism-usa-0 | prov-ca-u30-language-u30-i-initialism-usa-1 | prov-ca-u30-language-u30-i-initialism-usa-2 | prov-ca-u30-language-u30-i-initialism-usa-3
 responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u30-i-address-marks-1`
@@ -5177,6 +5213,2250 @@ attribution=Russian Companion independently authored English explanation, 2026-1
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
 sourceHash=e9d2514e2c5ce1fbc930b5e1f2cdf8df7c0053099c257ec436e52660a4445929
 contentHash=30b222f79daf241f9f6dced70b4c76f9e2c1194a295068db730f1af47fd15198
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-obj-u30-abbrev-examples-title`
+
+- Objectives: obj-u30-abbrev-examples
+- Sessions: u30-s-orient, u30-s-abbrev-examples
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9c445a6d6d5a989010ec60314a3f6ca4db8defaf3712958fd091cc8ace54f1ec
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-abbrev-examples:language:obj-u30-abbrev-examples-title
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Interpret the supplied initialisms and their noun treatment
+shippedText=Interpret the supplied initialisms and their noun treatment
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7078d4e989b1d2338a310382c41751baa1e04145c345ba43a51d5bc797de7013
+contentHash=9bcbf792567ea82f5d3a440f2a3c81aa522fbdb4f60f58494700ebed2816a3f5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-obj-u30-letter-names-title`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 399e73409df534229f9d4f00466bf29c0a42ee15702a55759397782c51317ce0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-letter-names:language:obj-u30-letter-names-title
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Name the supplied Russian letters
+shippedText=Name the supplied Russian letters
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0bed57b64a7b5935e300a270fe559fe5e8be228f393671346cf5a1d168343201
+contentHash=b694292b50c894ac2cfad0578a0cbe5874087b785dc1a56a59427917eb61d5e1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-reference-title`
+
+- Objectives: obj-u30-reference-literacy
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5d889abcba0a3d91573179ea8c4c27b7a613f43966a4a338adbfe47d20b70b2a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-reference-literacy:language:reference-title
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Optional reference-table literacy
+shippedText=Optional reference-table literacy
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8fdd97965933d24f03ac9ae0f4690953e29117efd5fe74a872049811ef89ee91
+contentHash=39a8733498d447949559c252cfbef119e517eb2f9b0723a7b2acc2c6ed14e8e2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-reference-u30-st-teach-abbrev-examples-1-body`
+
+- Objectives: obj-u30-reference-literacy
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 958c4601d4a06299749922187e677afdf49a8e59162af6489727cb1adf72f28f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-reference-literacy:language:reference-u30-st-teach-abbrev-examples-1-body
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+The retained СССР corresponds to USSR and is grammatically masculine in the supplied noun use. США corresponds to USA and is grammatically plural. The source lists both as indeclinable: their written forms do not gain case endings in this taught use. An adjective agreeing with the initialism follows the supplied gender or number even though the initialism itself stays unchanged. These examples do not classify every Russian abbreviation or demonstrate spoken pronunciation.
+shippedText=The retained СССР corresponds to USSR and is grammatically masculine in the supplied noun use. США corresponds to USA and is grammatically plural. The source lists both as indeclinable: their written forms do not gain case endings in this taught use. An adjective agreeing with the initialism follows the supplied gender or number even though the initialism itself stays unchanged. These examples do not classify every Russian abbreviation or demonstrate spoken pronunciation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9d96522722f7450bc9b7f2a6757623225ea3b915a70527ccb323003d32b84ea5
+contentHash=2cdf70aea7cde937fbee7d9fd5f53f63207228c92fe57a167f9400675a20094d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-reference-u30-st-teach-abbrev-examples-2-body`
+
+- Objectives: obj-u30-reference-literacy
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8f66d271edd8594f3dff30510a245350bde1d9571b6e3375b664da813c447279
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-reference-literacy:language:reference-u30-st-teach-abbrev-examples-2-body
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+When the shown initialism is a noun referring to the historical Soviet state, interpret USSR and use the supplied masculine agreement treatment. For the United States reference, interpret USA and use the supplied plural treatment. Do not replace agreement with an English table heading or add case endings to these indeclinable examples. Abbreviations is a reference heading, not the English gloss of either country example. The optional heading question is reference literacy and cannot satisfy the language checks.
+shippedText=When the shown initialism is a noun referring to the historical Soviet state, interpret USSR and use the supplied masculine agreement treatment. For the United States reference, interpret USA and use the supplied plural treatment. Do not replace agreement with an English table heading or add case endings to these indeclinable examples. Abbreviations is a reference heading, not the English gloss of either country example. The optional heading question is reference literacy and cannot satisfy the language checks.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=986e912028abdf977022b62206c5ef732b38b1d397a6e8a5552b70b9fcbf50db
+contentHash=46a718f9ac3c508ce0b0abbb395366afa58d989dbee03e1bc79421f971f8785b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-reference-u30-st-teach-letter-names-1-body`
+
+- Objectives: obj-u30-reference-literacy
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9437d2562f564284709f6ed6e9a422adf97296cc19e3742f97372fe645491cf4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-reference-literacy:language:reference-u30-st-teach-letter-names-1-body
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+The supplied letters and modern Russian names are А — а, Б — бэ and В — вэ. The new checks show the letter and ask for its Russian name. English respellings, approximate sound comparisons and obsolete Old Church Slavonic names are separate reference information. Name recognition by text does not demonstrate listening or pronunciation, and does not complete the phonetic foundation.
+shippedText=The supplied letters and modern Russian names are А — а, Б — бэ and В — вэ. The new checks show the letter and ask for its Russian name. English respellings, approximate sound comparisons and obsolete Old Church Slavonic names are separate reference information. Name recognition by text does not demonstrate listening or pronunciation, and does not complete the phonetic foundation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=49f8f631cbc2e12ccabb5296efd107f63102fc721f42eadef036b59cbf895f9c
+contentHash=380fb282af029d83d0da417d3de584aa112e719f3bde3be91ca88bd1b2b94d04
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-reference-u30-st-teach-letter-names-2-body`
+
+- Objectives: obj-u30-reference-literacy
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f43a7644bec367563ec88c5d6b1344b2546b73a90565cfb713a431d198d718ee
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-reference-literacy:language:reference-u30-st-teach-letter-names-2-body
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+For optional reference questions only, choose father when asked for that comparison word in the А row. bad is the approximate comparison in the Б row, while both is a translation of its example word. These are not Russian letter names. The optional original table questions do not satisfy the language objective. The three supplied name checks do not demonstrate listening or pronunciation or authorize a general rule for sounding out every letter.
+shippedText=For optional reference questions only, choose father when asked for that comparison word in the А row. bad is the approximate comparison in the Б row, while both is a translation of its example word. These are not Russian letter names. The optional original table questions do not satisfy the language objective. The three supplied name checks do not demonstrate listening or pronunciation or authorize a general rule for sounding out every letter.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5e49fdb08ce9e35eaef229a26e618c91056329b1c45cb4b8427c8cc599c88292
+contentHash=ea3f677c372a05d14fddd80542288d6d8759229f2247427fed9697f9980bed4f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-g-abbrev-examples-0-feedback`
+
+- Objectives: obj-u30-reference-literacy
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3a057de8dbafd251d03eb287de9880a16e303eab6b020634f1e7b6900b9e704d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-reference-literacy:language:u30-g-abbrev-examples-0-feedback
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Optional reference-table literacy only. The frozen line lists these examples under Abbreviations. This label is written beside the shown example. USSR.
+shippedText=Optional reference-table literacy only. The frozen line lists these examples under Abbreviations. This label is written beside the shown example. USSR.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f5f660c578dd6fdd048345620658a44c33cbef21948c07cc09cc04ac9f76d4b2
+contentHash=842f67802e0df3b6701348de83a24df77011c9314cba294cc8ffe81cbe1a8f37
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-g-abbrev-examples-0-prompt`
+
+- Objectives: obj-u30-reference-literacy
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 712c22a5edad078f279405b4ba878af37ae0b7c35d8b3e4cf17d7a0449a861e4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-reference-literacy:language:u30-g-abbrev-examples-0-prompt
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Optional reference lookup: Which admitted English label is written beside the shown example?
+shippedText=Optional reference lookup: Which admitted English label is written beside the shown example?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=536eddd8b2e702916e2df44d0745774ddb4500c6ea6cb340b4cc83f982df3685
+contentHash=df3ddc7c069915045186a45ff0cd0d08635802ab04ea7b356703963bab852c5c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-g-initialism-use-0`
+
+- Objectives: obj-u30-abbrev-examples
+- Sessions: u30-s-orient, u30-s-abbrev-examples
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5b40045e98e42950bccfcd0833b7298b19e738d9d100a5f5309efef9056f85cc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u30-g-initialism-use
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+СССР means USSR and has the supplied masculine agreement treatment. The initialism is indeclinable here: its written form remains unchanged for case, while an agreeing adjective follows its grammatical gender or number. Grammatical agreement and changing the initialism itself are separate facts. This is limited to these supplied examples, not every abbreviation. USSR; masculine agreement; the initialism remains unchanged for case.
+Tuple-v1:tuple-v1:1;8:СССР69:USSR; masculine agreement; the initialism remains unchanged for case.1;65:USA; plural agreement; the initialism remains unchanged for case.
+shippedText=СССР
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e81c42ab58a78291c231a2a16d85653cb2b007c677d52359ca7acab5286f6fc9
+contentHash=eb4a629b985be5030a6e9c8c90cf93bad96ff02a70c869f0d571559c05395c80
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-g-initialism-use-1`
+
+- Objectives: obj-u30-abbrev-examples
+- Sessions: u30-s-orient, u30-s-abbrev-examples
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 85b4ddfe86d587c0f559460c4f39182e98e7cced32ccbf712552edf5eb3eb727
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u30-g-initialism-use
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+СССР means USSR and has the supplied masculine agreement treatment. The initialism is indeclinable here: its written form remains unchanged for case, while an agreeing adjective follows its grammatical gender or number. Grammatical agreement and changing the initialism itself are separate facts. This is limited to these supplied examples, not every abbreviation. USSR; masculine agreement; the initialism remains unchanged for case.
+Tuple-v1:tuple-v1:1;8:СССР69:USSR; masculine agreement; the initialism remains unchanged for case.1;65:USA; plural agreement; the initialism remains unchanged for case.
+shippedText=USSR; masculine agreement; the initialism remains unchanged for case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e81c42ab58a78291c231a2a16d85653cb2b007c677d52359ca7acab5286f6fc9
+contentHash=2818abe0653d9d010ef034ba422e56ee1dfd64d15f4b7a6f60fcfb4eca651722
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-g-initialism-use-2`
+
+- Objectives: obj-u30-abbrev-examples
+- Sessions: u30-s-orient, u30-s-abbrev-examples
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5d5cd3a1e07d486e087dd03a0bdcb4d4a3a4e1525e75a2286b5dad5770b2d7c5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u30-g-initialism-use
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+СССР means USSR and has the supplied masculine agreement treatment. The initialism is indeclinable here: its written form remains unchanged for case, while an agreeing adjective follows its grammatical gender or number. Grammatical agreement and changing the initialism itself are separate facts. This is limited to these supplied examples, not every abbreviation. USSR; masculine agreement; the initialism remains unchanged for case.
+Tuple-v1:tuple-v1:1;8:СССР69:USSR; masculine agreement; the initialism remains unchanged for case.1;65:USA; plural agreement; the initialism remains unchanged for case.
+shippedText=USA; plural agreement; the initialism remains unchanged for case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e81c42ab58a78291c231a2a16d85653cb2b007c677d52359ca7acab5286f6fc9
+contentHash=b48284440e23a6e73a2a9f3cdf4ca6bc8e80492d3574a185c6fee67a3a89332c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-g-initialism-use-feedback`
+
+- Objectives: obj-u30-abbrev-examples
+- Sessions: u30-s-orient, u30-s-abbrev-examples
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 64233b7949bcede2295e2f959cf68ef0fca7a3d1f9bf96d8423eb0a8092504f8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-abbrev-examples:language:u30-g-initialism-use-feedback
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+СССР means USSR and has the supplied masculine agreement treatment. The initialism is indeclinable here: its written form remains unchanged for case, while an agreeing adjective follows its grammatical gender or number. Grammatical agreement and changing the initialism itself are separate facts. This is limited to these supplied examples, not every abbreviation. USSR; masculine agreement; the initialism remains unchanged for case.
+shippedText=СССР means USSR and has the supplied masculine agreement treatment. The initialism is indeclinable here: its written form remains unchanged for case, while an agreeing adjective follows its grammatical gender or number. Grammatical agreement and changing the initialism itself are separate facts. This is limited to these supplied examples, not every abbreviation. USSR; masculine agreement; the initialism remains unchanged for case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c9a4433170b4a60a8bfaa2151b7f5488613882f33a8544740a316c5ca2c77e8a
+contentHash=7e96aaa91afedfc599a1d96bdc0a83d8b0fe96824ff7285bb15f200999f20d54
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-g-initialism-use-prompt`
+
+- Objectives: obj-u30-abbrev-examples
+- Sessions: u30-s-orient, u30-s-abbrev-examples
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 41c73e1d49668ba6a7133ddd46c79b026620424eb0fc573697b453f2c60e3238
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-abbrev-examples:language:u30-g-initialism-use-prompt
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+In a historical reference to the Soviet state, which English meaning and noun treatment fit the shown initialism?
+shippedText=In a historical reference to the Soviet state, which English meaning and noun treatment fit the shown initialism?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=06a9f108599c201358ce80484c7fc0946a0a76f183f3df56163c47782252645d
+contentHash=f80f88f9767ce0ac44828310bf2367f51888c707bd467af54b78d88cd6a92fae
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-g-initialism-use-rationale-1`
+
+- Objectives: obj-u30-abbrev-examples
+- Sessions: u30-s-orient, u30-s-abbrev-examples
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 22e7add8b88f520a6965c4babaaa5777194b841615e74d9e9024691a1e468f9b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-abbrev-examples:language:u30-g-initialism-use-rationale-1
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+The USA plural treatment belongs to the other initialism, not the supplied Soviet-state reference.
+shippedText=The USA plural treatment belongs to the other initialism, not the supplied Soviet-state reference.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e1d9ba470badf9e81de2d1f9bf28758dcbb73ea1f25ff3805d2d4a897d836785
+contentHash=f07f6e0556725ec0e4bb6d463a3c0bd3a9f5f6465a659ee636542bf4d5cc6b8f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-g-letter-names-0-feedback`
+
+- Objectives: obj-u30-reference-literacy
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6bffcc41f0e332092acdde5fb593c13ab6a1237b14b0ab6c8d48299c567fa9b5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-reference-literacy:language:u30-g-letter-names-0-feedback
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Optional reference-table literacy only. The frozen table places a respelling beside the name in the Approximate English row area. This label is the respelling beside the shown name. ah.
+shippedText=Optional reference-table literacy only. The frozen table places a respelling beside the name in the Approximate English row area. This label is the respelling beside the shown name. ah.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1930e02bc4c31c6eac39ba1571e6c69096dd1a130b527d0f2a442a62949d3cd5
+contentHash=bf25024d557842bd3fd2e8bf66e5d6e7ef4977e69ae608e99cd44da1e017553a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-g-letter-names-0-prompt`
+
+- Objectives: obj-u30-reference-literacy
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ee027b268075034aa8571db7ce567c01715e039f751c5934fbdbf592c31ac601
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-reference-literacy:language:u30-g-letter-names-0-prompt
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Optional reference lookup: Which admitted English respelling is written beside the shown table name?
+shippedText=Optional reference lookup: Which admitted English respelling is written beside the shown table name?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3312dce0d4680b6ea30d130bc040f2b58e1879f96bebdf7b372b78e4b82ba5c3
+contentHash=a669d5239e021bf87316091a00ec00a834c9f53946ad1bf9c0536827b17130fe
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-g-native-name-a-0`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7392d7465b0c1c1085ccfdd50a0c6773c0c18bac66ceab74afce41f1c346eef0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u30-g-native-name-a
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+The modern Russian name of А is а. Choose the Russian name of the shown letter, not an English comparison word or an obsolete word-name. This is textual name recognition and does not demonstrate listening or pronunciation.
+Tuple-v1:tuple-v1:1;2:А2:а2;4:бэ4:вэ
+shippedText=А
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e3f425a75d361194640545a2d9bb8953bb1210a7a83f4f1bfd5478d616764b15
+contentHash=1d15dbf70d129544581fda3192724f554f1f64c9aa404478a533e487b5d01626
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-g-native-name-a-1`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7df2e9732e5b64e61d47f7e318f008b31bb1f05b16b81ccee7a7070a2b8b9ad6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u30-g-native-name-a
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+The modern Russian name of А is а. Choose the Russian name of the shown letter, not an English comparison word or an obsolete word-name. This is textual name recognition and does not demonstrate listening or pronunciation.
+Tuple-v1:tuple-v1:1;2:А2:а2;4:бэ4:вэ
+shippedText=а
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e3f425a75d361194640545a2d9bb8953bb1210a7a83f4f1bfd5478d616764b15
+contentHash=823c4eb3e895adc925a755d89cea1c6c46954c999d23604e0091788b75496159
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-g-native-name-a-2`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6c010eccb00534c46ab2e1b926ca0484105279b68f4c760443860a6e8a8d9c75
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u30-g-native-name-a
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+The modern Russian name of А is а. Choose the Russian name of the shown letter, not an English comparison word or an obsolete word-name. This is textual name recognition and does not demonstrate listening or pronunciation.
+Tuple-v1:tuple-v1:1;2:А2:а2;4:бэ4:вэ
+shippedText=бэ
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e3f425a75d361194640545a2d9bb8953bb1210a7a83f4f1bfd5478d616764b15
+contentHash=1bba9502491c9bfe19ad31850ae337ec43c04763751300d3bf9b1df97bcac94f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-g-native-name-a-3`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ed2d36a5c7d79f77be187e412f1d9f0c8d657bb5ead970645fc8702ba23e235b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u30-g-native-name-a
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+The modern Russian name of А is а. Choose the Russian name of the shown letter, not an English comparison word or an obsolete word-name. This is textual name recognition and does not demonstrate listening or pronunciation.
+Tuple-v1:tuple-v1:1;2:А2:а2;4:бэ4:вэ
+shippedText=вэ
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e3f425a75d361194640545a2d9bb8953bb1210a7a83f4f1bfd5478d616764b15
+contentHash=a52b5d68a116502c939ffb0abf117128812a0b748ceed131a51fb0365990ea44
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-g-native-name-a-feedback`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1cfe5de53945d3059c68a76b5ef4005aa5594daeb5fd26e28e202fe3d5b25e82
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-letter-names:language:u30-g-native-name-a-feedback
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+The modern Russian name of А is а. Choose the Russian name of the shown letter, not an English comparison word or an obsolete word-name. This is textual name recognition and does not demonstrate listening or pronunciation.
+shippedText=The modern Russian name of А is а. Choose the Russian name of the shown letter, not an English comparison word or an obsolete word-name. This is textual name recognition and does not demonstrate listening or pronunciation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ce263d1e25076db2e03fc01afda01bdf1e86c3818ee46a8317ac53a58c846d50
+contentHash=3fc4ae88895c115d8ac3bbb27a1e2901bae9e28257a50f5a72536e7c68ba9637
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-g-native-name-a-prompt`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: be9cde191c97a59d430490b4dd42b076714c9a16aef7d3adfaae38ff690a6aa8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-letter-names:language:u30-g-native-name-a-prompt
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Which Russian name belongs to the shown letter?
+shippedText=Which Russian name belongs to the shown letter?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6564918c0f678a60faef084d57038033de49a104621f20c7dbd46c205ac4ee7e
+contentHash=33285b17ae5cde345a7f6e77abc5309216afb0bd31fcbcb17ff5b8583ae703e3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-g-native-name-a-rationale-1`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 79f898bb8520cbb541603cee814b8c662338203737512a538ecf689158fc45e1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-letter-names:language:u30-g-native-name-a-rationale-1
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+бэ is the modern name of Б, not the shown letter.
+shippedText=бэ is the modern name of Б, not the shown letter.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9200b8e5deabff74b2a1132cfd949a5fb500cdc4592326ccd9aa4fb35991052d
+contentHash=08d2005783f0b02cf471fb3298290807fb1e3591d571e343201ce079957d19cb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-g-native-name-a-rationale-2`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3aef216d9673ea8a0c1ee6e642d184ae18f31494c1235779103192004e7b4608
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-letter-names:language:u30-g-native-name-a-rationale-2
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+вэ is the modern name of В, not the shown letter.
+shippedText=вэ is the modern name of В, not the shown letter.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b7f67d118797c1e5b2ddd750cac03253821329cc639ce1bbccb585231584b53e
+contentHash=afa9e36675ff85c552e9f573debfd27954aa4c64a8ceac14bc95ee593c92e864
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-i-abbrev-examples-1-feedback`
+
+- Objectives: obj-u30-reference-literacy
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1c25553d184e08b1868ea63d3d224833f28e6bb71be00360aa9fb45c1dcf9de4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-reference-literacy:language:u30-i-abbrev-examples-1-feedback
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Optional reference-table literacy only. The frozen line lists these examples under Abbreviations. This label is written beside the shown example. USA.
+shippedText=Optional reference-table literacy only. The frozen line lists these examples under Abbreviations. This label is written beside the shown example. USA.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2747b00985df3e933cd6651c9906906d8ecda48efe9250b2a76326c620ba5c24
+contentHash=3f58183f184cb36aa2d7c2de92ca1ae4fd70572a6b1f6636e18218ec7b20b4be
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-i-abbrev-examples-1-prompt`
+
+- Objectives: obj-u30-reference-literacy
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e83b3f5b6ca74a77f21a4afc41fb3b12bae13878e96502f056eed990d00af84c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-reference-literacy:language:u30-i-abbrev-examples-1-prompt
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Optional reference lookup: Which admitted English label is written beside this shown example?
+shippedText=Optional reference lookup: Which admitted English label is written beside this shown example?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e77152b393e8d1f6623ff7a3a4959a45931d3b62a90b540ac87fb1e79e785cd7
+contentHash=54734e5ad9823836b1068e8e6b2fcd739b6047c88e7f1bcce697ae45e19705b8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-i-abbrev-examples-2-feedback`
+
+- Objectives: obj-u30-reference-literacy
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3abe398ef20f7db984e4057444a00881f23171eabf6b75f597388004df3736f8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-reference-literacy:language:u30-i-abbrev-examples-2-feedback
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Optional reference-table literacy only. The frozen line lists these examples under Abbreviations. This word is the heading above the examples. Abbreviations.
+shippedText=Optional reference-table literacy only. The frozen line lists these examples under Abbreviations. This word is the heading above the examples. Abbreviations.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=75fde935e1493aadfe61fb8b67fefff741a02adecb67169b848aa59981b1bd9c
+contentHash=7da54f058202c31f03d2ef0c0a4010554e643d0d4764e0bd72ada37888f5b1bf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-i-abbrev-examples-2-prompt`
+
+- Objectives: obj-u30-reference-literacy
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6bf0924d71b39980d0f8c9000e7f8cad94a2f2f6011949b2ffde10605dd49d93
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-reference-literacy:language:u30-i-abbrev-examples-2-prompt
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Optional reference lookup: Which admitted English word is the heading rather than the gloss of the shown example?
+shippedText=Optional reference lookup: Which admitted English word is the heading rather than the gloss of the shown example?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ccada1ef0a2fed668efd186a8061d07963a139136737307e4c6a979efe0ba5c3
+contentHash=f380873733ce49a3c8eee540d17267d26469c68017ef52ebe80a13ea98973943
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-i-initialism-usa-0`
+
+- Objectives: obj-u30-abbrev-examples
+- Sessions: u30-s-orient, u30-s-abbrev-examples
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 56b259f84621ba19fc42a785ca4c22c395914c5f3c56800b338ebf58150fada5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u30-i-initialism-usa
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+США means USA and has the supplied plural agreement treatment. The initialism is indeclinable here: its written form remains unchanged for case, while an agreeing adjective follows its grammatical gender or number. Grammatical agreement and changing the initialism itself are separate facts. This is limited to these supplied examples, not every abbreviation. USA; plural agreement; the initialism remains unchanged for case.
+Tuple-v1:tuple-v1:1;6:США65:USA; plural agreement; the initialism remains unchanged for case.2;59:USA; singular agreement; the initialism takes case endings.58:USSR; plural agreement; the initialism takes case endings.
+shippedText=США
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=faa37cf30839ed5b0dad01b7236b594872d6acd39fd6a48bc322ef55bab8062c
+contentHash=ff70c1501af7d0088c165e409b2296905021a7a9f63aceab44e9ccf4a23c205f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-i-initialism-usa-1`
+
+- Objectives: obj-u30-abbrev-examples
+- Sessions: u30-s-orient, u30-s-abbrev-examples
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3c80fffa9e128d4412c43e3fd53c0f83606d996631751bbb5d041db3e2ed0551
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u30-i-initialism-usa
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+США means USA and has the supplied plural agreement treatment. The initialism is indeclinable here: its written form remains unchanged for case, while an agreeing adjective follows its grammatical gender or number. Grammatical agreement and changing the initialism itself are separate facts. This is limited to these supplied examples, not every abbreviation. USA; plural agreement; the initialism remains unchanged for case.
+Tuple-v1:tuple-v1:1;6:США65:USA; plural agreement; the initialism remains unchanged for case.2;59:USA; singular agreement; the initialism takes case endings.58:USSR; plural agreement; the initialism takes case endings.
+shippedText=USA; plural agreement; the initialism remains unchanged for case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=faa37cf30839ed5b0dad01b7236b594872d6acd39fd6a48bc322ef55bab8062c
+contentHash=b48284440e23a6e73a2a9f3cdf4ca6bc8e80492d3574a185c6fee67a3a89332c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-i-initialism-usa-2`
+
+- Objectives: obj-u30-abbrev-examples
+- Sessions: u30-s-orient, u30-s-abbrev-examples
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e1b091a77bbb80f21184ef5b8c1ac69e5c9ba7c8ddf95c361a3b66968d52cfb5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u30-i-initialism-usa
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+США means USA and has the supplied plural agreement treatment. The initialism is indeclinable here: its written form remains unchanged for case, while an agreeing adjective follows its grammatical gender or number. Grammatical agreement and changing the initialism itself are separate facts. This is limited to these supplied examples, not every abbreviation. USA; plural agreement; the initialism remains unchanged for case.
+Tuple-v1:tuple-v1:1;6:США65:USA; plural agreement; the initialism remains unchanged for case.2;59:USA; singular agreement; the initialism takes case endings.58:USSR; plural agreement; the initialism takes case endings.
+shippedText=USA; singular agreement; the initialism takes case endings.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=faa37cf30839ed5b0dad01b7236b594872d6acd39fd6a48bc322ef55bab8062c
+contentHash=75fdc7f7294002c51940a784973eab6746e20ed4cf4632820dc6a5b8094897ac
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-i-initialism-usa-3`
+
+- Objectives: obj-u30-abbrev-examples
+- Sessions: u30-s-orient, u30-s-abbrev-examples
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: eeb0ed8c744c6778eb868579a70a9293676fda0cfd43dcaba7cfc618260f71a8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u30-i-initialism-usa
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+США means USA and has the supplied plural agreement treatment. The initialism is indeclinable here: its written form remains unchanged for case, while an agreeing adjective follows its grammatical gender or number. Grammatical agreement and changing the initialism itself are separate facts. This is limited to these supplied examples, not every abbreviation. USA; plural agreement; the initialism remains unchanged for case.
+Tuple-v1:tuple-v1:1;6:США65:USA; plural agreement; the initialism remains unchanged for case.2;59:USA; singular agreement; the initialism takes case endings.58:USSR; plural agreement; the initialism takes case endings.
+shippedText=USSR; plural agreement; the initialism takes case endings.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=faa37cf30839ed5b0dad01b7236b594872d6acd39fd6a48bc322ef55bab8062c
+contentHash=362789af7538cef62ba6b81599d52f555b5992ec945ae7708181bd6bb322762e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-i-initialism-usa-feedback`
+
+- Objectives: obj-u30-abbrev-examples
+- Sessions: u30-s-orient, u30-s-abbrev-examples
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4d0e984956b06789bab4883445be6402c56fb09c89515191c58925c09f5d74df
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-abbrev-examples:language:u30-i-initialism-usa-feedback
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+США means USA and has the supplied plural agreement treatment. The initialism is indeclinable here: its written form remains unchanged for case, while an agreeing adjective follows its grammatical gender or number. Grammatical agreement and changing the initialism itself are separate facts. This is limited to these supplied examples, not every abbreviation. USA; plural agreement; the initialism remains unchanged for case.
+shippedText=США means USA and has the supplied plural agreement treatment. The initialism is indeclinable here: its written form remains unchanged for case, while an agreeing adjective follows its grammatical gender or number. Grammatical agreement and changing the initialism itself are separate facts. This is limited to these supplied examples, not every abbreviation. USA; plural agreement; the initialism remains unchanged for case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e3ef210ddcae2c23801e2c36a5bf4e11657a239cd331ce6ed02405b439817e19
+contentHash=fa26cf96d8ecbecd9e8fac40d5cd9ebd707d56e5162c9e574ddf04f8dd2e4013
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-i-initialism-usa-prompt`
+
+- Objectives: obj-u30-abbrev-examples
+- Sessions: u30-s-orient, u30-s-abbrev-examples
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9b78ebc7a9f0f39fda451fff5a4539f7ccbbb0736090b705d986af3dbe405a04
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-abbrev-examples:language:u30-i-initialism-usa-prompt
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+A Russian adjective agrees with this noun initialism referring to the United States. Which English explanation fits its meaning and treatment?
+shippedText=A Russian adjective agrees with this noun initialism referring to the United States. Which English explanation fits its meaning and treatment?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ccfcc781433e3f8112a68ed58a2a0a8347fdf9f7041c9f28b3125b7c76db5a7f
+contentHash=4c4e680362ca9bb26bd2b855dc873f228bcbc68b7274a9ee1b5f65e8b2834fcc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-i-initialism-usa-rationale-1`
+
+- Objectives: obj-u30-abbrev-examples
+- Sessions: u30-s-orient, u30-s-abbrev-examples
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 33e8414e71d9eaea1a041e18fc8b22eb1e1fe38e3477fde6a82cb2956c34b440
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-abbrev-examples:language:u30-i-initialism-usa-rationale-1
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+The USA gloss does not justify singular agreement or adding case endings: the supplied USA initialism is plural and indeclinable.
+shippedText=The USA gloss does not justify singular agreement or adding case endings: the supplied USA initialism is plural and indeclinable.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c6012c5d6fcad63bfba393210e977f07fb2f9bbba4365deb62c126390bdb032b
+contentHash=2a91e1645713f0e41868c66bd892c86cb1597022fc5e9adcfe5de1c3abae221b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-i-initialism-usa-rationale-2`
+
+- Objectives: obj-u30-abbrev-examples
+- Sessions: u30-s-orient, u30-s-abbrev-examples
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7c0516b50c7d0cd8d5a4b2f498741758557ed1ac96e8f4f708a836e2e0333547
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-abbrev-examples:language:u30-i-initialism-usa-rationale-2
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+The USSR gloss does not justify plural agreement or adding case endings: the supplied USSR initialism is masculine and indeclinable.
+shippedText=The USSR gloss does not justify plural agreement or adding case endings: the supplied USSR initialism is masculine and indeclinable.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=09f924a51ec2928035bf9efb672897acef8ee5f36d62d26ecbe8eb7d6a5e5d8d
+contentHash=64474a2f5d82925f2af651a6e0e2403d079447464aba339fc614f8c990b3f212
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-i-initialism-ussr-0`
+
+- Objectives: obj-u30-abbrev-examples
+- Sessions: u30-s-orient, u30-s-abbrev-examples
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1960c867693ea42c84ac248707ac03d064bbb32484a9450d18efacd279dd2ef6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u30-i-initialism-ussr
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+СССР means USSR and has the supplied masculine agreement treatment. The initialism is indeclinable here: its written form remains unchanged for case, while an agreeing adjective follows its grammatical gender or number. Grammatical agreement and changing the initialism itself are separate facts. This is limited to these supplied examples, not every abbreviation. USSR; masculine agreement; the initialism remains unchanged for case.
+Tuple-v1:tuple-v1:1;8:СССР69:USSR; masculine agreement; the initialism remains unchanged for case.2;58:USSR; plural agreement; the initialism takes case endings.59:USA; singular agreement; the initialism takes case endings.
+shippedText=СССР
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=086cd55cb22cf71d9b3d76b3c14ed7c38374bb9e234aceede9bd49db1423099f
+contentHash=eb4a629b985be5030a6e9c8c90cf93bad96ff02a70c869f0d571559c05395c80
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-i-initialism-ussr-1`
+
+- Objectives: obj-u30-abbrev-examples
+- Sessions: u30-s-orient, u30-s-abbrev-examples
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b589c692ff55090e51ce38b94a84834cee26c7a885bd33ad6c217e1ceebb6b32
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u30-i-initialism-ussr
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+СССР means USSR and has the supplied masculine agreement treatment. The initialism is indeclinable here: its written form remains unchanged for case, while an agreeing adjective follows its grammatical gender or number. Grammatical agreement and changing the initialism itself are separate facts. This is limited to these supplied examples, not every abbreviation. USSR; masculine agreement; the initialism remains unchanged for case.
+Tuple-v1:tuple-v1:1;8:СССР69:USSR; masculine agreement; the initialism remains unchanged for case.2;58:USSR; plural agreement; the initialism takes case endings.59:USA; singular agreement; the initialism takes case endings.
+shippedText=USSR; masculine agreement; the initialism remains unchanged for case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=086cd55cb22cf71d9b3d76b3c14ed7c38374bb9e234aceede9bd49db1423099f
+contentHash=2818abe0653d9d010ef034ba422e56ee1dfd64d15f4b7a6f60fcfb4eca651722
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-i-initialism-ussr-2`
+
+- Objectives: obj-u30-abbrev-examples
+- Sessions: u30-s-orient, u30-s-abbrev-examples
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6ec4897499e025547c6ca8664565077ed58bba923999a7a1409213620d7ef3b0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u30-i-initialism-ussr
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+СССР means USSR and has the supplied masculine agreement treatment. The initialism is indeclinable here: its written form remains unchanged for case, while an agreeing adjective follows its grammatical gender or number. Grammatical agreement and changing the initialism itself are separate facts. This is limited to these supplied examples, not every abbreviation. USSR; masculine agreement; the initialism remains unchanged for case.
+Tuple-v1:tuple-v1:1;8:СССР69:USSR; masculine agreement; the initialism remains unchanged for case.2;58:USSR; plural agreement; the initialism takes case endings.59:USA; singular agreement; the initialism takes case endings.
+shippedText=USSR; plural agreement; the initialism takes case endings.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=086cd55cb22cf71d9b3d76b3c14ed7c38374bb9e234aceede9bd49db1423099f
+contentHash=362789af7538cef62ba6b81599d52f555b5992ec945ae7708181bd6bb322762e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-i-initialism-ussr-3`
+
+- Objectives: obj-u30-abbrev-examples
+- Sessions: u30-s-orient, u30-s-abbrev-examples
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9ffa4529290057c2ab37582492e84943c7288714afe29d07231b359d6427aa46
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u30-i-initialism-ussr
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+СССР means USSR and has the supplied masculine agreement treatment. The initialism is indeclinable here: its written form remains unchanged for case, while an agreeing adjective follows its grammatical gender or number. Grammatical agreement and changing the initialism itself are separate facts. This is limited to these supplied examples, not every abbreviation. USSR; masculine agreement; the initialism remains unchanged for case.
+Tuple-v1:tuple-v1:1;8:СССР69:USSR; masculine agreement; the initialism remains unchanged for case.2;58:USSR; plural agreement; the initialism takes case endings.59:USA; singular agreement; the initialism takes case endings.
+shippedText=USA; singular agreement; the initialism takes case endings.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=086cd55cb22cf71d9b3d76b3c14ed7c38374bb9e234aceede9bd49db1423099f
+contentHash=75fdc7f7294002c51940a784973eab6746e20ed4cf4632820dc6a5b8094897ac
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-i-initialism-ussr-feedback`
+
+- Objectives: obj-u30-abbrev-examples
+- Sessions: u30-s-orient, u30-s-abbrev-examples
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bf23ae0bda47e4763e6ddd4e217dadd080ca413bb3fcb6f08bb160374ea12d29
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-abbrev-examples:language:u30-i-initialism-ussr-feedback
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+СССР means USSR and has the supplied masculine agreement treatment. The initialism is indeclinable here: its written form remains unchanged for case, while an agreeing adjective follows its grammatical gender or number. Grammatical agreement and changing the initialism itself are separate facts. This is limited to these supplied examples, not every abbreviation. USSR; masculine agreement; the initialism remains unchanged for case.
+shippedText=СССР means USSR and has the supplied masculine agreement treatment. The initialism is indeclinable here: its written form remains unchanged for case, while an agreeing adjective follows its grammatical gender or number. Grammatical agreement and changing the initialism itself are separate facts. This is limited to these supplied examples, not every abbreviation. USSR; masculine agreement; the initialism remains unchanged for case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c9a4433170b4a60a8bfaa2151b7f5488613882f33a8544740a316c5ca2c77e8a
+contentHash=7e96aaa91afedfc599a1d96bdc0a83d8b0fe96824ff7285bb15f200999f20d54
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-i-initialism-ussr-prompt`
+
+- Objectives: obj-u30-abbrev-examples
+- Sessions: u30-s-orient, u30-s-abbrev-examples
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ebb3d65405b3f3bdce2e8f5fe662e9998b05e27efa1aa43ce5f0c26396b286ef
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-abbrev-examples:language:u30-i-initialism-ussr-prompt
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+A Russian adjective agrees with this noun initialism referring to the historical Soviet state. Which English explanation fits its meaning and treatment?
+shippedText=A Russian adjective agrees with this noun initialism referring to the historical Soviet state. Which English explanation fits its meaning and treatment?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c9418c4e490308e7d10a2c4d3b7274f4b2cbaf2572ba55deb4c2875e91c68197
+contentHash=9ff76dbcd28096e94c5277929d75d121ac4a87a7582b678498fc4aadab2523c8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-i-initialism-ussr-rationale-1`
+
+- Objectives: obj-u30-abbrev-examples
+- Sessions: u30-s-orient, u30-s-abbrev-examples
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e540e01d08227eba8f638801b3a27c499e73bcf3d22f3129d21b33b8a343ccaf
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-abbrev-examples:language:u30-i-initialism-ussr-rationale-1
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+The USSR gloss does not justify plural agreement or adding case endings: the supplied USSR initialism is masculine and indeclinable.
+shippedText=The USSR gloss does not justify plural agreement or adding case endings: the supplied USSR initialism is masculine and indeclinable.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=09f924a51ec2928035bf9efb672897acef8ee5f36d62d26ecbe8eb7d6a5e5d8d
+contentHash=64474a2f5d82925f2af651a6e0e2403d079447464aba339fc614f8c990b3f212
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-i-initialism-ussr-rationale-2`
+
+- Objectives: obj-u30-abbrev-examples
+- Sessions: u30-s-orient, u30-s-abbrev-examples
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5b168841baf2e555c8288e626b48fe6d0f38fd052bcdf087a915c245d1796ef5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-abbrev-examples:language:u30-i-initialism-ussr-rationale-2
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+The USA gloss does not justify singular agreement or adding case endings: the supplied USA initialism is plural and indeclinable.
+shippedText=The USA gloss does not justify singular agreement or adding case endings: the supplied USA initialism is plural and indeclinable.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c6012c5d6fcad63bfba393210e977f07fb2f9bbba4365deb62c126390bdb032b
+contentHash=2a91e1645713f0e41868c66bd892c86cb1597022fc5e9adcfe5de1c3abae221b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-i-letter-names-1-feedback`
+
+- Objectives: obj-u30-reference-literacy
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 659eeafe5ed6a06c0468479b72a4fe901eb81a40b81580523b502124ce44f835
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-reference-literacy:language:u30-i-letter-names-1-feedback
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Optional reference-table literacy only. The frozen table places a respelling beside the name in the Approximate English row area. This label is the respelling beside the shown name. be/beh.
+shippedText=Optional reference-table literacy only. The frozen table places a respelling beside the name in the Approximate English row area. This label is the respelling beside the shown name. be/beh.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=524bde60531008e4d2144cc60b09623e1bfc3d09140a259751d231fa06388292
+contentHash=366f8d52d4229ac396f4abc458f78b237cdaa1bb65ddcd4512fec28b687692bd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-i-letter-names-1-prompt`
+
+- Objectives: obj-u30-reference-literacy
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 25083405a8d613d7afdf0f22168c2978e482739b3f8025998c4162d1eff9c98b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-reference-literacy:language:u30-i-letter-names-1-prompt
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Optional reference lookup: Which admitted English respelling is written beside this shown table name?
+shippedText=Optional reference lookup: Which admitted English respelling is written beside this shown table name?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3985986964fbde157757480f002012f4158efa2b6b2dca21626aaa782ecf6567
+contentHash=393daa7419c4e06d1808264713e3436aeb827f6954b89bfccd1b193415d4fd2d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-i-letter-names-2-feedback`
+
+- Objectives: obj-u30-reference-literacy
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4df048f8ed34fac7b1e78b205c4d071988afd85705b3674760d92c1a70d66a98
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-reference-literacy:language:u30-i-letter-names-2-feedback
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Optional reference-table literacy only. The frozen table places a respelling beside the name in the Approximate English row area. This equivalent is written in the shown row. father.
+shippedText=Optional reference-table literacy only. The frozen table places a respelling beside the name in the Approximate English row area. This equivalent is written in the shown row. father.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f2ecccab0630a164029ff35de7290297468f2a853d3f610d5c751c8d3b56fe6f
+contentHash=31d6805fdb70c19c443d0ab7015e56588e31fb7f1bae538391ee2216faaaba45
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-i-letter-names-2-prompt`
+
+- Objectives: obj-u30-reference-literacy
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 736e61a6c10df88e521b54611aa76d923f3b996c2327719b92ee444f8e0e9ef1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-reference-literacy:language:u30-i-letter-names-2-prompt
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Optional reference lookup: Which admitted English equivalent is written in the same row as the shown name?
+shippedText=Optional reference lookup: Which admitted English equivalent is written in the same row as the shown name?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=98b64b93933ed822632ae66758313aa892bb6ecec1aaa41e2057c12d911b8fba
+contentHash=4b7fddf6e3e27776020543687a4858b3dc60ce843fdf0b2f22fa480aef655c92
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-i-native-name-b-0`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 74b20ff42aa78a78a9dac8781f0d7ac7dd0198e21ee47253e5145d245174f90b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u30-i-native-name-b
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+The modern Russian name of Б is бэ. Choose the Russian name of the shown letter, not an English comparison word or an obsolete word-name. This is textual name recognition and does not demonstrate listening or pronunciation.
+Tuple-v1:tuple-v1:1;2:Б4:бэ2;2:а4:вэ
+shippedText=Б
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=dad717a9bd2e922ec1928722809889c70ddaa13c8eb592374fa309ccdbd29599
+contentHash=c78364c5d0f27706fe002726c70be55fa7ceeb2537db621cfe54f73e9047c389
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-i-native-name-b-1`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c0ba2e61d632a291ae29a2933b816ffb030489a1c19625f7fd889dcf35fc1988
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u30-i-native-name-b
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+The modern Russian name of Б is бэ. Choose the Russian name of the shown letter, not an English comparison word or an obsolete word-name. This is textual name recognition and does not demonstrate listening or pronunciation.
+Tuple-v1:tuple-v1:1;2:Б4:бэ2;2:а4:вэ
+shippedText=бэ
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=dad717a9bd2e922ec1928722809889c70ddaa13c8eb592374fa309ccdbd29599
+contentHash=1bba9502491c9bfe19ad31850ae337ec43c04763751300d3bf9b1df97bcac94f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-i-native-name-b-2`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1400b3a2411dfa200631e422bb3bed95dfe6f529e34816aeed735019dfd64f79
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u30-i-native-name-b
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+The modern Russian name of Б is бэ. Choose the Russian name of the shown letter, not an English comparison word or an obsolete word-name. This is textual name recognition and does not demonstrate listening or pronunciation.
+Tuple-v1:tuple-v1:1;2:Б4:бэ2;2:а4:вэ
+shippedText=а
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=dad717a9bd2e922ec1928722809889c70ddaa13c8eb592374fa309ccdbd29599
+contentHash=823c4eb3e895adc925a755d89cea1c6c46954c999d23604e0091788b75496159
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-i-native-name-b-3`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5346651708712d81c776923ba411c1549b66c1b466b3320e2f1d668ad5fff215
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u30-i-native-name-b
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+The modern Russian name of Б is бэ. Choose the Russian name of the shown letter, not an English comparison word or an obsolete word-name. This is textual name recognition and does not demonstrate listening or pronunciation.
+Tuple-v1:tuple-v1:1;2:Б4:бэ2;2:а4:вэ
+shippedText=вэ
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=dad717a9bd2e922ec1928722809889c70ddaa13c8eb592374fa309ccdbd29599
+contentHash=a52b5d68a116502c939ffb0abf117128812a0b748ceed131a51fb0365990ea44
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-i-native-name-b-feedback`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bb598db3f35aad0a35499f613edda0e4a428ebea2ee3d9a064545d5fc619b1c4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-letter-names:language:u30-i-native-name-b-feedback
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+The modern Russian name of Б is бэ. Choose the Russian name of the shown letter, not an English comparison word or an obsolete word-name. This is textual name recognition and does not demonstrate listening or pronunciation.
+shippedText=The modern Russian name of Б is бэ. Choose the Russian name of the shown letter, not an English comparison word or an obsolete word-name. This is textual name recognition and does not demonstrate listening or pronunciation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1a7426ce6ad3161faafcac805b5d3936e3b4e88abe643634704931c8f1ced58b
+contentHash=9b152787bb9a260e1b4d208ca46b47b256c52410ee716cc8f26ba9f48bc3a4fd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-i-native-name-b-prompt`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3c61821e269002f246ad9ddb0b51768b6bd752809e66ac44447ea6c4e284f882
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-letter-names:language:u30-i-native-name-b-prompt
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Which Russian name belongs to the shown letter?
+shippedText=Which Russian name belongs to the shown letter?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6564918c0f678a60faef084d57038033de49a104621f20c7dbd46c205ac4ee7e
+contentHash=33285b17ae5cde345a7f6e77abc5309216afb0bd31fcbcb17ff5b8583ae703e3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-i-native-name-b-rationale-1`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0e673c228fa45e6166dff4243ae2409cbdbd5c25668d21d1da38ce34b504d7bb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-letter-names:language:u30-i-native-name-b-rationale-1
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+а is the modern name of А, not the shown letter.
+shippedText=а is the modern name of А, not the shown letter.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=544aff2b3c630ebb38dff561d928fe5f334a54d63a5c97b42fe96141e1ce87dc
+contentHash=99f0552602199207b976dccda87df5e3417fe2170d40fb5bfde8fba0812132ba
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-i-native-name-b-rationale-2`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d29e5f52843e969a1550f07f25edf3f3b7afee95a8749fecebb21e6c3d81c55f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-letter-names:language:u30-i-native-name-b-rationale-2
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+вэ is the modern name of В, not the shown letter.
+shippedText=вэ is the modern name of В, not the shown letter.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b7f67d118797c1e5b2ddd750cac03253821329cc639ce1bbccb585231584b53e
+contentHash=afa9e36675ff85c552e9f573debfd27954aa4c64a8ceac14bc95ee593c92e864
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-i-native-name-v-0`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c1a3d93560b00eacc8d69a7ffed8378e8a16b21af1eb1380a64ecfb16f0354e2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u30-i-native-name-v
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+The modern Russian name of В is вэ. Choose the Russian name of the shown letter, not an English comparison word or an obsolete word-name. This is textual name recognition and does not demonstrate listening or pronunciation.
+Tuple-v1:tuple-v1:1;2:В4:вэ2;2:а4:бэ
+shippedText=В
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3aa25a0c838ae473dab41d3b342356c8954d3451f936d08b9037da28a0cd42be
+contentHash=8b7b577aa31ebfac1df36dfd28c52b483a3d6546d0fb2528e1542456fcba8c41
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-i-native-name-v-1`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6c5c6498da8724d465db69fe2bd2fda93581d35ee70fa50a3fa237981d1c5074
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u30-i-native-name-v
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+The modern Russian name of В is вэ. Choose the Russian name of the shown letter, not an English comparison word or an obsolete word-name. This is textual name recognition and does not demonstrate listening or pronunciation.
+Tuple-v1:tuple-v1:1;2:В4:вэ2;2:а4:бэ
+shippedText=вэ
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3aa25a0c838ae473dab41d3b342356c8954d3451f936d08b9037da28a0cd42be
+contentHash=a52b5d68a116502c939ffb0abf117128812a0b748ceed131a51fb0365990ea44
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-i-native-name-v-2`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9ac256c512239492e352e0fce124c6d7f3e36044e5dd370c86afd88baae48233
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u30-i-native-name-v
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+The modern Russian name of В is вэ. Choose the Russian name of the shown letter, not an English comparison word or an obsolete word-name. This is textual name recognition and does not demonstrate listening or pronunciation.
+Tuple-v1:tuple-v1:1;2:В4:вэ2;2:а4:бэ
+shippedText=а
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3aa25a0c838ae473dab41d3b342356c8954d3451f936d08b9037da28a0cd42be
+contentHash=823c4eb3e895adc925a755d89cea1c6c46954c999d23604e0091788b75496159
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-i-native-name-v-3`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 873f6abeef8886d69e1f8216dcc23874b0b87a36caf25be25f1282875652cf22
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u30-i-native-name-v
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Context explanation:
+The modern Russian name of В is вэ. Choose the Russian name of the shown letter, not an English comparison word or an obsolete word-name. This is textual name recognition and does not demonstrate listening or pronunciation.
+Tuple-v1:tuple-v1:1;2:В4:вэ2;2:а4:бэ
+shippedText=бэ
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3aa25a0c838ae473dab41d3b342356c8954d3451f936d08b9037da28a0cd42be
+contentHash=1bba9502491c9bfe19ad31850ae337ec43c04763751300d3bf9b1df97bcac94f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-i-native-name-v-feedback`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a8f9ab0416967214d812e7b964b48afad2ded79b8ef3612cec2971d1dd08a6bd
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-letter-names:language:u30-i-native-name-v-feedback
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+The modern Russian name of В is вэ. Choose the Russian name of the shown letter, not an English comparison word or an obsolete word-name. This is textual name recognition and does not demonstrate listening or pronunciation.
+shippedText=The modern Russian name of В is вэ. Choose the Russian name of the shown letter, not an English comparison word or an obsolete word-name. This is textual name recognition and does not demonstrate listening or pronunciation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=67c44a59f43fbdb156274736197a0375d634bebc350ab2eaac04d100ff94dca9
+contentHash=d7dc87b892947e46429f0e0611517a6ca4c8debd4cc8fbb4af01b743ee031dea
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-i-native-name-v-prompt`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7d1a22f066023d87c5c8bab933a355e3315d10eb70410884edf9d02b9927fbf4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-letter-names:language:u30-i-native-name-v-prompt
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Which Russian name belongs to the shown letter?
+shippedText=Which Russian name belongs to the shown letter?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6564918c0f678a60faef084d57038033de49a104621f20c7dbd46c205ac4ee7e
+contentHash=33285b17ae5cde345a7f6e77abc5309216afb0bd31fcbcb17ff5b8583ae703e3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-i-native-name-v-rationale-1`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 378536618e556a819d35be3a9ab178b5773175b4ee20367d995f4902968950cd
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-letter-names:language:u30-i-native-name-v-rationale-1
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+а is the modern name of А, not the shown letter.
+shippedText=а is the modern name of А, not the shown letter.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=544aff2b3c630ebb38dff561d928fe5f334a54d63a5c97b42fe96141e1ce87dc
+contentHash=99f0552602199207b976dccda87df5e3417fe2170d40fb5bfde8fba0812132ba
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-i-native-name-v-rationale-2`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f7ca30c8cbe7f9ef99d352e2e1fd2f1a9821323ecbb9251502e77c40c9423b17
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-letter-names:language:u30-i-native-name-v-rationale-2
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+бэ is the modern name of Б, not the shown letter.
+shippedText=бэ is the modern name of Б, not the shown letter.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9200b8e5deabff74b2a1132cfd949a5fb500cdc4592326ccd9aa4fb35991052d
+contentHash=08d2005783f0b02cf471fb3298290807fb1e3591d571e343201ce079957d19cb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-s-abbrev-examples-title`
+
+- Objectives: obj-u30-abbrev-examples
+- Sessions: u30-s-orient, u30-s-abbrev-examples
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3149291f2c3c41bbf479d6dd3b74515c75ffc3c3af48226302f53bf8cbd395b9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-abbrev-examples:language:u30-s-abbrev-examples-title
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Interpret the supplied initialisms and their noun treatment
+shippedText=Interpret the supplied initialisms and their noun treatment
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7078d4e989b1d2338a310382c41751baa1e04145c345ba43a51d5bc797de7013
+contentHash=9bcbf792567ea82f5d3a440f2a3c81aa522fbdb4f60f58494700ebed2816a3f5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-s-letter-names-title`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c322eded7e5d4dea2733dc788dd0535f4f6ec300583c697206a47bab9cf2d53b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-letter-names:language:u30-s-letter-names-title
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+Name the supplied Russian letters
+shippedText=Name the supplied Russian letters
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0bed57b64a7b5935e300a270fe559fe5e8be228f393671346cf5a1d168343201
+contentHash=b694292b50c894ac2cfad0578a0cbe5874087b785dc1a56a59427917eb61d5e1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-st-rem-abbrev-examples-body`
+
+- Objectives: obj-u30-abbrev-examples
+- Sessions: u30-s-orient, u30-s-abbrev-examples
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2a2942b676e6c855b649c305ee7967ad2402bdd702f59910c64063fb4fa106f6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-abbrev-examples:language:u30-st-rem-abbrev-examples-body
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+The retained СССР corresponds to USSR and is grammatically masculine in the supplied noun use. США corresponds to USA and is grammatically plural. The source lists both as indeclinable: their written forms do not gain case endings in this taught use. An adjective agreeing with the initialism follows the supplied gender or number even though the initialism itself stays unchanged. These examples do not classify every Russian abbreviation or demonstrate spoken pronunciation.
+
+When the shown initialism is a noun referring to the historical Soviet state, interpret USSR and use the supplied masculine agreement treatment. For the United States reference, interpret USA and use the supplied plural treatment. Do not replace agreement with an English table heading or add case endings to these indeclinable examples. Abbreviations is a reference heading, not the English gloss of either country example. The optional heading question is reference literacy and cannot satisfy the language checks.
+shippedText=The retained СССР corresponds to USSR and is grammatically masculine in the supplied noun use. США corresponds to USA and is grammatically plural. The source lists both as indeclinable: their written forms do not gain case endings in this taught use. An adjective agreeing with the initialism follows the supplied gender or number even though the initialism itself stays unchanged. These examples do not classify every Russian abbreviation or demonstrate spoken pronunciation.
+
+When the shown initialism is a noun referring to the historical Soviet state, interpret USSR and use the supplied masculine agreement treatment. For the United States reference, interpret USA and use the supplied plural treatment. Do not replace agreement with an English table heading or add case endings to these indeclinable examples. Abbreviations is a reference heading, not the English gloss of either country example. The optional heading question is reference literacy and cannot satisfy the language checks.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=417979212cecb5ba8f63177778fc9a7c6264bddbf9abc2bcba6aa5bca8d52512
+contentHash=e6174be092bb80bbfaac59bb06efc49fc2f006a46a2e6095e6e0fc3bea5fd831
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-st-rem-letter-names-body`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8db176c8217ad056dfa1ac34940b74764671c4835fff6fd09611d74ba1bc6ad3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-letter-names:language:u30-st-rem-letter-names-body
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+The supplied letters and modern Russian names are А — а, Б — бэ and В — вэ. The new checks show the letter and ask for its Russian name. English respellings, approximate sound comparisons and obsolete Old Church Slavonic names are separate reference information. Name recognition by text does not demonstrate listening or pronunciation, and does not complete the phonetic foundation.
+
+For optional reference questions only, choose father when asked for that comparison word in the А row. bad is the approximate comparison in the Б row, while both is a translation of its example word. These are not Russian letter names. The optional original table questions do not satisfy the language objective. The three supplied name checks do not demonstrate listening or pronunciation or authorize a general rule for sounding out every letter.
+shippedText=The supplied letters and modern Russian names are А — а, Б — бэ and В — вэ. The new checks show the letter and ask for its Russian name. English respellings, approximate sound comparisons and obsolete Old Church Slavonic names are separate reference information. Name recognition by text does not demonstrate listening or pronunciation, and does not complete the phonetic foundation.
+
+For optional reference questions only, choose father when asked for that comparison word in the А row. bad is the approximate comparison in the Б row, while both is a translation of its example word. These are not Russian letter names. The optional original table questions do not satisfy the language objective. The three supplied name checks do not demonstrate listening or pronunciation or authorize a general rule for sounding out every letter.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f4812feb12d8801b98e6600ac289e703c0bef1dd79875dc046ec0f421b6f89a6
+contentHash=0b00a415150a6bdbb333d745078a90442ddc057cc6485ca245beff54881242e8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-st-teach-abbrev-examples-1-body`
+
+- Objectives: obj-u30-abbrev-examples
+- Sessions: u30-s-orient, u30-s-abbrev-examples
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f6446cae47060e8a44e2b1cf692a0bccb163ed764fd9177a5c9321f647aeb151
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-abbrev-examples:language:u30-st-teach-abbrev-examples-1-body
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+The retained СССР corresponds to USSR and is grammatically masculine in the supplied noun use. США corresponds to USA and is grammatically plural. The source lists both as indeclinable: their written forms do not gain case endings in this taught use. An adjective agreeing with the initialism follows the supplied gender or number even though the initialism itself stays unchanged. These examples do not classify every Russian abbreviation or demonstrate spoken pronunciation.
+shippedText=The retained СССР corresponds to USSR and is grammatically masculine in the supplied noun use. США corresponds to USA and is grammatically plural. The source lists both as indeclinable: their written forms do not gain case endings in this taught use. An adjective agreeing with the initialism follows the supplied gender or number even though the initialism itself stays unchanged. These examples do not classify every Russian abbreviation or demonstrate spoken pronunciation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9d96522722f7450bc9b7f2a6757623225ea3b915a70527ccb323003d32b84ea5
+contentHash=2cdf70aea7cde937fbee7d9fd5f53f63207228c92fe57a167f9400675a20094d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-st-teach-abbrev-examples-2-body`
+
+- Objectives: obj-u30-abbrev-examples
+- Sessions: u30-s-orient, u30-s-abbrev-examples
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f317820cba069e2cdb81e8afd7dbc3bc050c279a4698ac908f827b703cd7af74
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-abbrev-examples:language:u30-st-teach-abbrev-examples-2-body
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+When the shown initialism is a noun referring to the historical Soviet state, interpret USSR and use the supplied masculine agreement treatment. For the United States reference, interpret USA and use the supplied plural treatment. Do not replace agreement with an English table heading or add case endings to these indeclinable examples. Abbreviations is a reference heading, not the English gloss of either country example. The optional heading question is reference literacy and cannot satisfy the language checks.
+shippedText=When the shown initialism is a noun referring to the historical Soviet state, interpret USSR and use the supplied masculine agreement treatment. For the United States reference, interpret USA and use the supplied plural treatment. Do not replace agreement with an English table heading or add case endings to these indeclinable examples. Abbreviations is a reference heading, not the English gloss of either country example. The optional heading question is reference literacy and cannot satisfy the language checks.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=986e912028abdf977022b62206c5ef732b38b1d397a6e8a5552b70b9fcbf50db
+contentHash=46a718f9ac3c508ce0b0abbb395366afa58d989dbee03e1bc79421f971f8785b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-st-teach-letter-names-1-body`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7252b65435d481b97e0fdaeb466ccb2d326eae76c4e929b0a25f0598f18e9a16
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-letter-names:language:u30-st-teach-letter-names-1-body
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+The supplied letters and modern Russian names are А — а, Б — бэ and В — вэ. The new checks show the letter and ask for its Russian name. English respellings, approximate sound comparisons and obsolete Old Church Slavonic names are separate reference information. Name recognition by text does not demonstrate listening or pronunciation, and does not complete the phonetic foundation.
+shippedText=The supplied letters and modern Russian names are А — а, Б — бэ and В — вэ. The new checks show the letter and ask for its Russian name. English respellings, approximate sound comparisons and obsolete Old Church Slavonic names are separate reference information. Name recognition by text does not demonstrate listening or pronunciation, and does not complete the phonetic foundation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=49f8f631cbc2e12ccabb5296efd107f63102fc721f42eadef036b59cbf895f9c
+contentHash=380fb282af029d83d0da417d3de584aa112e719f3bde3be91ca88bd1b2b94d04
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u30-language-u30-st-teach-letter-names-2-body`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a8fb50969c8bc466552b25e3e11427996abe110e5cbae10d813bee1013e71fe6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u30-letter-names:language:u30-st-teach-letter-names-2-body
+originalSourceText=Retained Wikipedia Russian alphabet oldid1371795481, catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt: complete Letters table heading and А/Б/В rows, selecting the modern Russian Name field separately from obsolete Old Church Slavonic word-names, English respellings, approximate sound comparisons and example translations. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete Indeclinable nouns section, specifically the supplied USSR masculine and USA plural examples and unchanged case treatment. Both CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 rights attestation; stable primary URLs and contributor attribution preserved. English contexts ask about naming a shown glyph or interpreting a supplied initialism as a noun in a sentence/adjective agreement context. No Russian sentence is invented. The supplied names and initialisms are literal native selections; naming by text does not demonstrate listening, pronunciation or the complete phonetic foundation. Six former literal reference questions remain optional SOURCE_QUESTION practice on a non-gating GUIDANCE objective. Their correct keys follow the literal prompts and are preserved; table/heading recall does not clear the language objectives. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied explanatory primary prose or private Penguin text; qualified source/rights/semantic audit pending.
+For optional reference questions only, choose father when asked for that comparison word in the А row. bad is the approximate comparison in the Б row, while both is a translation of its example word. These are not Russian letter names. The optional original table questions do not satisfy the language objective. The three supplied name checks do not demonstrate listening or pronunciation or authorize a general rule for sounding out every letter.
+shippedText=For optional reference questions only, choose father when asked for that comparison word in the А row. bad is the approximate comparison in the Б row, while both is a translation of its example word. These are not Russian letter names. The optional original table questions do not satisfy the language objective. The three supplied name checks do not demonstrate listening or pronunciation or authorize a general rule for sounding out every letter.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5e49fdb08ce9e35eaef229a26e618c91056329b1c45cb4b8427c8cc599c88292
+contentHash=ea3f677c372a05d14fddd80542288d6d8759229f2247427fed9697f9980bed4f
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -12119,6 +14399,434 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-u30-language-native-a-glyph`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-wikipedia-russian-alphabet-1371795481
+- Rights: rights-wikipedia-russian-alphabet-1371795481
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: eb5e05895d77844429366e57ed819b7b6c35fa545269a8e9a4e9dc9cfeb27f3a
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_alphabet&oldid=1371795481
+sourceRevision=1371795481
+sourceRecordId=alphabet-native:! style="text-align: center;" | <big>{{lang|ru|[[А]]а}}</big>
+| [[File:01-Rus
+originalSourceText=! style="text-align: center;" | <big>{{lang|ru|[[А]]а}}</big>
+| [[File:01-Russian alphabet-А а.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''А а''</span> || {{lang|ru|а}}<br/>{{IPA|ru|a|}} {{Respell|ah}}|| {{lang|ru-petr1708|азъ}}<br/>{{IPA|[ɑs]}} || {{IPAblink|a}} 
+|a|| f'''a'''ther ||  {{lang|ru|дв'''а'''}} ''dva''<br/>"two" || 1 || U+0410 / U+0430
+shippedText=А
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1371795481 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=b7c684b44a2b49fa2822121d673e95925f67672be42b057df8b674de67b8da5b
+contentHash=1d15dbf70d129544581fda3192724f554f1f64c9aa404478a533e487b5d01626
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u30-language-native-a-name`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-wikipedia-russian-alphabet-1371795481
+- Rights: rights-wikipedia-russian-alphabet-1371795481
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c3a835459343cfb74991b355a3786d92d9b7593f086390d72c48b6e1dfcf27a7
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_alphabet&oldid=1371795481
+sourceRevision=1371795481
+sourceRecordId=alphabet-native:! style="text-align: center;" | <big>{{lang|ru|[[А]]а}}</big>
+| [[File:01-Rus
+originalSourceText=! style="text-align: center;" | <big>{{lang|ru|[[А]]а}}</big>
+| [[File:01-Russian alphabet-А а.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''А а''</span> || {{lang|ru|а}}<br/>{{IPA|ru|a|}} {{Respell|ah}}|| {{lang|ru-petr1708|азъ}}<br/>{{IPA|[ɑs]}} || {{IPAblink|a}} 
+|a|| f'''a'''ther ||  {{lang|ru|дв'''а'''}} ''dva''<br/>"two" || 1 || U+0410 / U+0430
+shippedText=а
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1371795481 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=b7c684b44a2b49fa2822121d673e95925f67672be42b057df8b674de67b8da5b
+contentHash=823c4eb3e895adc925a755d89cea1c6c46954c999d23604e0091788b75496159
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u30-language-native-b-glyph`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-wikipedia-russian-alphabet-1371795481
+- Rights: rights-wikipedia-russian-alphabet-1371795481
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 260cdef106e28e29a349cd422dbb069d514c63083a64a4d86547901c5e917d8e
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_alphabet&oldid=1371795481
+sourceRevision=1371795481
+sourceRecordId=alphabet-native:! style="text-align: center;" | <big>{{lang|ru|[[Б]]б}}</big>
+| [[File:02-Rus
+originalSourceText=! style="text-align: center;" | <big>{{lang|ru|[[Б]]б}}</big>
+| [[File:02-Russian alphabet-Б б.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''Б б''</span> || {{lang|ru|бэ}}<br/>{{IPA|ru|bɛ|}} {{Respell|be/beh}}|| {{lang|ru-petr1708|буки}}<br/>{{IPA|[ˈbukʲɪ]}} || {{IPAblink|b}} or {{IPA|[bʲ]}} 
+|b|| '''b'''ad || {{lang|ru|о'''б'''а}} ''óba''<br/>"both" || {{n/a}} || U+0411 / U+0431
+shippedText=Б
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1371795481 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=b9aa27ea4b93b0341a01fdece40fd014ab718f99875672c24fbed7c54319cdfd
+contentHash=c78364c5d0f27706fe002726c70be55fa7ceeb2537db621cfe54f73e9047c389
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u30-language-native-b-name`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-wikipedia-russian-alphabet-1371795481
+- Rights: rights-wikipedia-russian-alphabet-1371795481
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6b615ca6aa79cd770cf4f06059b6e87317d6374c16a27916aca7375e913c42e8
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_alphabet&oldid=1371795481
+sourceRevision=1371795481
+sourceRecordId=alphabet-native:! style="text-align: center;" | <big>{{lang|ru|[[Б]]б}}</big>
+| [[File:02-Rus
+originalSourceText=! style="text-align: center;" | <big>{{lang|ru|[[Б]]б}}</big>
+| [[File:02-Russian alphabet-Б б.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''Б б''</span> || {{lang|ru|бэ}}<br/>{{IPA|ru|bɛ|}} {{Respell|be/beh}}|| {{lang|ru-petr1708|буки}}<br/>{{IPA|[ˈbukʲɪ]}} || {{IPAblink|b}} or {{IPA|[bʲ]}} 
+|b|| '''b'''ad || {{lang|ru|о'''б'''а}} ''óba''<br/>"both" || {{n/a}} || U+0411 / U+0431
+shippedText=бэ
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1371795481 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=b9aa27ea4b93b0341a01fdece40fd014ab718f99875672c24fbed7c54319cdfd
+contentHash=1bba9502491c9bfe19ad31850ae337ec43c04763751300d3bf9b1df97bcac94f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u30-language-native-indeclinable-flag`
+
+- Objectives: obj-u30-abbrev-examples
+- Sessions: u30-s-orient, u30-s-abbrev-examples
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fca3ed01f631cbd7f3f79b451449892979385d46fda0b7c98c3e68132a8103bd
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar-native:=== Indeclinable nouns ===
+Some nouns (such as borrowings from other language
+originalSourceText==== Indeclinable nouns ===
+Some nouns (such as borrowings from other languages, abbreviations, etc.) are not modified when they change number and case. This occurs especially when the ending appears not to match any declension pattern in the appropriate gender. A few examples of indeclinable nouns are:
+* Foreign words:
+** ко́фе ("coffee", masculine in literary language, neuter in colloquial);
+** пальто́ ("overcoat", neuter);
+** бюро́ ("bureau, office, desk, writing-table"; neuter);
+* Abbreviations:
+** СССР ([ɛs ɛs ɛs ˈɛr] "USSR", masculine);
+** США ([sɛ ʂɛ ˈa] or [sɨ ʂ(ɨ) ˈa], "USA", plural).
+shippedText=not modified when they change number and case
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=782228a7d5e2e45a791dd0e185c6e0e23a6b430f5af014d75e0972bde2ecab89
+contentHash=e80f4d98a0200097a005c7db9a0c59fa702fcb39f6b7e34b03363d5e19854791
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u30-language-native-masculine-flag`
+
+- Objectives: obj-u30-abbrev-examples
+- Sessions: u30-s-orient, u30-s-abbrev-examples
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2e2a058edb0abb71973596a4d5f22e48944459374d099505aaabadc65c5c5539
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:* Abbreviations:
+** СССР ([ɛs ɛs ɛs ˈɛr] "USSR", masculine);
+** США ([sɛ ʂɛ ˈa] 
+originalSourceText=* Abbreviations:
+** СССР ([ɛs ɛs ɛs ˈɛr] "USSR", masculine);
+** США ([sɛ ʂɛ ˈa] or [sɨ ʂ(ɨ) ˈa], "USA", plural).
+shippedText=masculine
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=1e8ce1f79958d66a8d3aec76b7a5176f5b7d1ad14e6ea9c1a3b75189bd76ce5a
+contentHash=b01cc7b0a6012d960af4357a1e27f2d14f5b605c42d1d1372b0f2d7f6f328087
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u30-language-native-plural-flag`
+
+- Objectives: obj-u30-abbrev-examples
+- Sessions: u30-s-orient, u30-s-abbrev-examples
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 39b6ea7656d1471a3edc43e8c9cedd622336f27896c93acc6153aac80f404d5a
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:* Abbreviations:
+** СССР ([ɛs ɛs ɛs ˈɛr] "USSR", masculine);
+** США ([sɛ ʂɛ ˈa] 
+originalSourceText=* Abbreviations:
+** СССР ([ɛs ɛs ɛs ˈɛr] "USSR", masculine);
+** США ([sɛ ʂɛ ˈa] or [sɨ ʂ(ɨ) ˈa], "USA", plural).
+shippedText=plural
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=1e8ce1f79958d66a8d3aec76b7a5176f5b7d1ad14e6ea9c1a3b75189bd76ce5a
+contentHash=61d58cbe5bad3042630f503dbea9fa15177233a930129b826c6b33b808b81323
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u30-language-native-usa-en`
+
+- Objectives: obj-u30-abbrev-examples
+- Sessions: u30-s-orient, u30-s-abbrev-examples
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b769859518212a2646be9991f3e0b8a6e70dfb422298fd86d185959a67965c12
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:* Abbreviations:
+** СССР ([ɛs ɛs ɛs ˈɛr] "USSR", masculine);
+** США ([sɛ ʂɛ ˈa] 
+originalSourceText=* Abbreviations:
+** СССР ([ɛs ɛs ɛs ˈɛr] "USSR", masculine);
+** США ([sɛ ʂɛ ˈa] or [sɨ ʂ(ɨ) ˈa], "USA", plural).
+shippedText=USA
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=1e8ce1f79958d66a8d3aec76b7a5176f5b7d1ad14e6ea9c1a3b75189bd76ce5a
+contentHash=aa5ab35a9174c2062b7f7697b33fafe5ce404cf5fecf6bfbbf0dc96ba0d90046
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u30-language-native-usa-ru`
+
+- Objectives: obj-u30-abbrev-examples
+- Sessions: u30-s-orient, u30-s-abbrev-examples
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1746808631a3c7f4ecb0daafb0932ff0a48260f16c5d5a23302fba3550c664f4
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:* Abbreviations:
+** СССР ([ɛs ɛs ɛs ˈɛr] "USSR", masculine);
+** США ([sɛ ʂɛ ˈa] 
+originalSourceText=* Abbreviations:
+** СССР ([ɛs ɛs ɛs ˈɛr] "USSR", masculine);
+** США ([sɛ ʂɛ ˈa] or [sɨ ʂ(ɨ) ˈa], "USA", plural).
+shippedText=США
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=1e8ce1f79958d66a8d3aec76b7a5176f5b7d1ad14e6ea9c1a3b75189bd76ce5a
+contentHash=ff70c1501af7d0088c165e409b2296905021a7a9f63aceab44e9ccf4a23c205f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u30-language-native-ussr-en`
+
+- Objectives: obj-u30-abbrev-examples
+- Sessions: u30-s-orient, u30-s-abbrev-examples
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 65b7a87f7ca56da57d5809ff01dcaab73824d55a81732b98e9f0f4ad10e1bfae
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:* Abbreviations:
+** СССР ([ɛs ɛs ɛs ˈɛr] "USSR", masculine);
+** США ([sɛ ʂɛ ˈa] 
+originalSourceText=* Abbreviations:
+** СССР ([ɛs ɛs ɛs ˈɛr] "USSR", masculine);
+** США ([sɛ ʂɛ ˈa] or [sɨ ʂ(ɨ) ˈa], "USA", plural).
+shippedText=USSR
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=1e8ce1f79958d66a8d3aec76b7a5176f5b7d1ad14e6ea9c1a3b75189bd76ce5a
+contentHash=e4755b63db17b4b8560ecdb52ae0bcc48298928d729f8222179039f734fe8853
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u30-language-native-ussr-ru`
+
+- Objectives: obj-u30-abbrev-examples
+- Sessions: u30-s-orient, u30-s-abbrev-examples
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e1a85b2625fc3531f9964ceafca5e2e0fc390c6bf362c30eacea9f941bdf9844
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:* Abbreviations:
+** СССР ([ɛs ɛs ɛs ˈɛr] "USSR", masculine);
+** США ([sɛ ʂɛ ˈa] 
+originalSourceText=* Abbreviations:
+** СССР ([ɛs ɛs ɛs ˈɛr] "USSR", masculine);
+** США ([sɛ ʂɛ ˈa] or [sɨ ʂ(ɨ) ˈa], "USA", plural).
+shippedText=СССР
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=1e8ce1f79958d66a8d3aec76b7a5176f5b7d1ad14e6ea9c1a3b75189bd76ce5a
+contentHash=eb4a629b985be5030a6e9c8c90cf93bad96ff02a70c869f0d571559c05395c80
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u30-language-native-v-glyph`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-wikipedia-russian-alphabet-1371795481
+- Rights: rights-wikipedia-russian-alphabet-1371795481
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: aaf9420e117237232780c4d5338d6c7e5ca250b31c05beb8f408f69e329879e3
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_alphabet&oldid=1371795481
+sourceRevision=1371795481
+sourceRecordId=alphabet-native:! style="text-align: center;" | <big>{{lang|ru|[[В]]в}}</big>
+| [[File:03-Rus
+originalSourceText=! style="text-align: center;" | <big>{{lang|ru|[[В]]в}}</big>
+| [[File:03-Russian alphabet-В в.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''В в''</span> || {{lang|ru|вэ}}<br/>{{IPA|ru|vɛ|}} {{Respell|ve/veh}}|| {{lang|ru-petr1708|вѣди}}<br/>{{IPA|[ˈvʲedʲɪ]}} || {{IPAblink|v}} or {{IPA|[vʲ]}} 
+|v|| '''v'''ine || {{lang|ru|'''в'''ода}} ''vodá''<br/>"water" || 2 || U+0412 / U+0432
+shippedText=В
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1371795481 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=901123d470de234ddb4417cc787b1b42f7c88c220d043584c9e2b331a79f5fbb
+contentHash=8b7b577aa31ebfac1df36dfd28c52b483a3d6546d0fb2528e1542456fcba8c41
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u30-language-native-v-name`
+
+- Objectives: obj-u30-letter-names
+- Sessions: u30-s-orient, u30-s-letter-names
+- Source: src-wikipedia-russian-alphabet-1371795481
+- Rights: rights-wikipedia-russian-alphabet-1371795481
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d66df530c64914dc5869f38cda1c1e5cd1a567ddb0031bad1eba62a44aec5cd9
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_alphabet&oldid=1371795481
+sourceRevision=1371795481
+sourceRecordId=alphabet-native:! style="text-align: center;" | <big>{{lang|ru|[[В]]в}}</big>
+| [[File:03-Rus
+originalSourceText=! style="text-align: center;" | <big>{{lang|ru|[[В]]в}}</big>
+| [[File:03-Russian alphabet-В в.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''В в''</span> || {{lang|ru|вэ}}<br/>{{IPA|ru|vɛ|}} {{Respell|ve/veh}}|| {{lang|ru-petr1708|вѣди}}<br/>{{IPA|[ˈvʲedʲɪ]}} || {{IPAblink|v}} or {{IPA|[vʲ]}} 
+|v|| '''v'''ine || {{lang|ru|'''в'''ода}} ''vodá''<br/>"water" || 2 || U+0412 / U+0432
+shippedText=вэ
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1371795481 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=901123d470de234ddb4417cc787b1b42f7c88c220d043584c9e2b331a79f5fbb
+contentHash=a52b5d68a116502c939ffb0abf117128812a0b748ceed131a51fb0365990ea44
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u30-letter-names-rem`
 
 - Objectives: obj-u30-letter-names
@@ -12326,6 +15034,493 @@ attribution=Участники русской Википедии, CC BY-SA 4.0, 
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=d3148bc360a2b6620f80ae154c5f4d84b822ce065cd17343558f366c4d3070fd
 contentHash=35f74bd4a9b69638bf043d66a7b63c139365a3cf99d624a399d08fa77577d17e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u30-reference-prov-ex-u30-abbrev-examples-0-en`
+
+- Objectives: obj-u30-reference-literacy
+- Sessions: none
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ca8f6cd60f1581c09c556c6e21158a5816a1a05f463d040b8e63024fe6ab8e33
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:* Abbreviations:
+** СССР ([ɛs ɛs ɛs ˈɛr] "USSR", masculine);
+** США ([sɛ ʂɛ ˈa] 
+originalSourceText=* Abbreviations:
+** СССР ([ɛs ɛs ɛs ˈɛr] "USSR", masculine);
+** США ([sɛ ʂɛ ˈa] or [sɨ ʂ(ɨ) ˈa], "USA", plural).
+shippedText=USSR
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=1e8ce1f79958d66a8d3aec76b7a5176f5b7d1ad14e6ea9c1a3b75189bd76ce5a
+contentHash=e4755b63db17b4b8560ecdb52ae0bcc48298928d729f8222179039f734fe8853
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u30-reference-prov-ex-u30-abbrev-examples-0-ru`
+
+- Objectives: obj-u30-reference-literacy
+- Sessions: none
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f096735576325c42e2764550d24d0c51a3c7e5c6d099b1c8e04dbe54360775d5
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:* Abbreviations:
+** СССР ([ɛs ɛs ɛs ˈɛr] "USSR", masculine);
+** США ([sɛ ʂɛ ˈa] 
+originalSourceText=* Abbreviations:
+** СССР ([ɛs ɛs ɛs ˈɛr] "USSR", masculine);
+** США ([sɛ ʂɛ ˈa] or [sɨ ʂ(ɨ) ˈa], "USA", plural).
+shippedText=СССР
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=1e8ce1f79958d66a8d3aec76b7a5176f5b7d1ad14e6ea9c1a3b75189bd76ce5a
+contentHash=eb4a629b985be5030a6e9c8c90cf93bad96ff02a70c869f0d571559c05395c80
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u30-reference-prov-ex-u30-abbrev-examples-1-en`
+
+- Objectives: obj-u30-reference-literacy
+- Sessions: none
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c758d3d382da461dbe50f3c4abe90c85e31ec380145dc2704a327e34360bd992
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:* Abbreviations:
+** СССР ([ɛs ɛs ɛs ˈɛr] "USSR", masculine);
+** США ([sɛ ʂɛ ˈa] 
+originalSourceText=* Abbreviations:
+** СССР ([ɛs ɛs ɛs ˈɛr] "USSR", masculine);
+** США ([sɛ ʂɛ ˈa] or [sɨ ʂ(ɨ) ˈa], "USA", plural).
+shippedText=USA
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=1e8ce1f79958d66a8d3aec76b7a5176f5b7d1ad14e6ea9c1a3b75189bd76ce5a
+contentHash=aa5ab35a9174c2062b7f7697b33fafe5ce404cf5fecf6bfbbf0dc96ba0d90046
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u30-reference-prov-ex-u30-abbrev-examples-1-ru`
+
+- Objectives: obj-u30-reference-literacy
+- Sessions: none
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 50f1a2f390dc4cae1741d5747c1910e0f94d90de4c3d9d90f5b24b1b3ab87e13
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:* Abbreviations:
+** СССР ([ɛs ɛs ɛs ˈɛr] "USSR", masculine);
+** США ([sɛ ʂɛ ˈa] 
+originalSourceText=* Abbreviations:
+** СССР ([ɛs ɛs ɛs ˈɛr] "USSR", masculine);
+** США ([sɛ ʂɛ ˈa] or [sɨ ʂ(ɨ) ˈa], "USA", plural).
+shippedText=США
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=1e8ce1f79958d66a8d3aec76b7a5176f5b7d1ad14e6ea9c1a3b75189bd76ce5a
+contentHash=ff70c1501af7d0088c165e409b2296905021a7a9f63aceab44e9ccf4a23c205f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u30-reference-prov-ex-u30-letter-names-0-en`
+
+- Objectives: obj-u30-reference-literacy
+- Sessions: none
+- Source: src-wikipedia-russian-alphabet-1371795481
+- Rights: rights-wikipedia-russian-alphabet-1371795481
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3281fafd85213e858a74c5955fae7650b4ce52062acb9ec24afb46a0fac92e97
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_alphabet&oldid=1371795481
+sourceRevision=1371795481
+sourceRecordId=alphabet:! Name
+! Old Church Slavonic word-name
+! [[International Phonetic Alphabet|IPA]]
+originalSourceText=! Name
+! Old Church Slavonic word-name
+! [[International Phonetic Alphabet|IPA]]
+! Common transliteration
+! Approximate English equivalent
+! Examples
+! [[Russian alphabet#Numeric values|No.]]
+! [[Unicode]] ([[Hexadecimal|Hex]])
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[А]]а}}</big>
+| [[File:01-Russian alphabet-А а.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''А а''</span> || {{lang|ru|а}}<br/>{{IPA|ru|a|}} {{Respell|ah}}|| {{lang|ru-petr1708|азъ}}<br/>{{IPA|[ɑs]}} || {{IPAblink|a}} 
+|a|| f'''a'''ther ||  {{lang|ru|дв'''а'''}} ''dva''<br/>"two" || 1 || U+0410 / U+0430
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[Б]]б}}</big>
+| [[File:02-Russian alphabet-Б б.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''Б б''</span> || {{lang|ru|бэ}}<br/>{{IPA|ru|bɛ|}} {{Respell|be/beh}}|| {{lang|ru-petr1708|буки}}<br/>{{IPA|[ˈbukʲɪ]}} || {{IPAblink|b}} or {{IPA|[bʲ]}} 
+|b|| '''b'''ad || {{lang|ru|о'''б'''а}} ''óba''<br/>"both"
+shippedText=ah
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1371795481 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=0ebe7c0ee3c60d5e931fe34660098e88ee1b955585bddb9f03e2388c00dfc526
+contentHash=70a0d5198ebb88f97a2cc83a236a8afcc28c7d9e6abf40c173dd54c9f45ad7f6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u30-reference-prov-ex-u30-letter-names-0-ru`
+
+- Objectives: obj-u30-reference-literacy
+- Sessions: none
+- Source: src-wikipedia-russian-alphabet-1371795481
+- Rights: rights-wikipedia-russian-alphabet-1371795481
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fc9348e8d6c857c59758f884b81af077a0e0749ff21604f0ed921467c6a30eee
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_alphabet&oldid=1371795481
+sourceRevision=1371795481
+sourceRecordId=alphabet:! Name
+! Old Church Slavonic word-name
+! [[International Phonetic Alphabet|IPA]]
+originalSourceText=! Name
+! Old Church Slavonic word-name
+! [[International Phonetic Alphabet|IPA]]
+! Common transliteration
+! Approximate English equivalent
+! Examples
+! [[Russian alphabet#Numeric values|No.]]
+! [[Unicode]] ([[Hexadecimal|Hex]])
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[А]]а}}</big>
+| [[File:01-Russian alphabet-А а.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''А а''</span> || {{lang|ru|а}}<br/>{{IPA|ru|a|}} {{Respell|ah}}|| {{lang|ru-petr1708|азъ}}<br/>{{IPA|[ɑs]}} || {{IPAblink|a}} 
+|a|| f'''a'''ther ||  {{lang|ru|дв'''а'''}} ''dva''<br/>"two" || 1 || U+0410 / U+0430
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[Б]]б}}</big>
+| [[File:02-Russian alphabet-Б б.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''Б б''</span> || {{lang|ru|бэ}}<br/>{{IPA|ru|bɛ|}} {{Respell|be/beh}}|| {{lang|ru-petr1708|буки}}<br/>{{IPA|[ˈbukʲɪ]}} || {{IPAblink|b}} or {{IPA|[bʲ]}} 
+|b|| '''b'''ad || {{lang|ru|о'''б'''а}} ''óba''<br/>"both"
+shippedText=а
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1371795481 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=0ebe7c0ee3c60d5e931fe34660098e88ee1b955585bddb9f03e2388c00dfc526
+contentHash=823c4eb3e895adc925a755d89cea1c6c46954c999d23604e0091788b75496159
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u30-reference-prov-ex-u30-letter-names-1-en`
+
+- Objectives: obj-u30-reference-literacy
+- Sessions: none
+- Source: src-wikipedia-russian-alphabet-1371795481
+- Rights: rights-wikipedia-russian-alphabet-1371795481
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 03031b8d46f5bec184e8f932671ec898d03bcda642303a39ebde09bd339ef793
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_alphabet&oldid=1371795481
+sourceRevision=1371795481
+sourceRecordId=alphabet:! Name
+! Old Church Slavonic word-name
+! [[International Phonetic Alphabet|IPA]]
+originalSourceText=! Name
+! Old Church Slavonic word-name
+! [[International Phonetic Alphabet|IPA]]
+! Common transliteration
+! Approximate English equivalent
+! Examples
+! [[Russian alphabet#Numeric values|No.]]
+! [[Unicode]] ([[Hexadecimal|Hex]])
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[А]]а}}</big>
+| [[File:01-Russian alphabet-А а.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''А а''</span> || {{lang|ru|а}}<br/>{{IPA|ru|a|}} {{Respell|ah}}|| {{lang|ru-petr1708|азъ}}<br/>{{IPA|[ɑs]}} || {{IPAblink|a}} 
+|a|| f'''a'''ther ||  {{lang|ru|дв'''а'''}} ''dva''<br/>"two" || 1 || U+0410 / U+0430
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[Б]]б}}</big>
+| [[File:02-Russian alphabet-Б б.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''Б б''</span> || {{lang|ru|бэ}}<br/>{{IPA|ru|bɛ|}} {{Respell|be/beh}}|| {{lang|ru-petr1708|буки}}<br/>{{IPA|[ˈbukʲɪ]}} || {{IPAblink|b}} or {{IPA|[bʲ]}} 
+|b|| '''b'''ad || {{lang|ru|о'''б'''а}} ''óba''<br/>"both"
+shippedText=be/beh
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1371795481 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=0ebe7c0ee3c60d5e931fe34660098e88ee1b955585bddb9f03e2388c00dfc526
+contentHash=76deb8f5b745c4a39abea5d62488f1237c3f097d881d0e74d0fbc8c631c20903
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u30-reference-prov-ex-u30-letter-names-1-ru`
+
+- Objectives: obj-u30-reference-literacy
+- Sessions: none
+- Source: src-wikipedia-russian-alphabet-1371795481
+- Rights: rights-wikipedia-russian-alphabet-1371795481
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7ff8a8a5b4a663ba3f30f42069d91dbd5de42369f8a1d5306a835b524a100bb8
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_alphabet&oldid=1371795481
+sourceRevision=1371795481
+sourceRecordId=alphabet:! Name
+! Old Church Slavonic word-name
+! [[International Phonetic Alphabet|IPA]]
+originalSourceText=! Name
+! Old Church Slavonic word-name
+! [[International Phonetic Alphabet|IPA]]
+! Common transliteration
+! Approximate English equivalent
+! Examples
+! [[Russian alphabet#Numeric values|No.]]
+! [[Unicode]] ([[Hexadecimal|Hex]])
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[А]]а}}</big>
+| [[File:01-Russian alphabet-А а.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''А а''</span> || {{lang|ru|а}}<br/>{{IPA|ru|a|}} {{Respell|ah}}|| {{lang|ru-petr1708|азъ}}<br/>{{IPA|[ɑs]}} || {{IPAblink|a}} 
+|a|| f'''a'''ther ||  {{lang|ru|дв'''а'''}} ''dva''<br/>"two" || 1 || U+0410 / U+0430
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[Б]]б}}</big>
+| [[File:02-Russian alphabet-Б б.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''Б б''</span> || {{lang|ru|бэ}}<br/>{{IPA|ru|bɛ|}} {{Respell|be/beh}}|| {{lang|ru-petr1708|буки}}<br/>{{IPA|[ˈbukʲɪ]}} || {{IPAblink|b}} or {{IPA|[bʲ]}} 
+|b|| '''b'''ad || {{lang|ru|о'''б'''а}} ''óba''<br/>"both"
+shippedText=бэ
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1371795481 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=0ebe7c0ee3c60d5e931fe34660098e88ee1b955585bddb9f03e2388c00dfc526
+contentHash=1bba9502491c9bfe19ad31850ae337ec43c04763751300d3bf9b1df97bcac94f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u30-reference-prov-u30-abbrev-examples-x-0`
+
+- Objectives: obj-u30-reference-literacy
+- Sessions: none
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 67d972a21eebf1068301244dda12bccff4608256540fd0e73fab579398c24e8e
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:* Abbreviations:
+** СССР ([ɛs ɛs ɛs ˈɛr] "USSR", masculine);
+** США ([sɛ ʂɛ ˈa] 
+originalSourceText=* Abbreviations:
+** СССР ([ɛs ɛs ɛs ˈɛr] "USSR", masculine);
+** США ([sɛ ʂɛ ˈa] or [sɨ ʂ(ɨ) ˈa], "USA", plural).
+shippedText=Abbreviations
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=1e8ce1f79958d66a8d3aec76b7a5176f5b7d1ad14e6ea9c1a3b75189bd76ce5a
+contentHash=e05e2aeff5c60d2adf4d8541cd92e829ef16ade6198c4874b4975b44cc93bedb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u30-reference-prov-u30-letter-names-x-0`
+
+- Objectives: obj-u30-reference-literacy
+- Sessions: none
+- Source: src-wikipedia-russian-alphabet-1371795481
+- Rights: rights-wikipedia-russian-alphabet-1371795481
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d1031a8f7f096f63749c95d6d2a8037224ec5fe7ee4a7ba7c63c612306311db4
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_alphabet&oldid=1371795481
+sourceRevision=1371795481
+sourceRecordId=alphabet:! Name
+! Old Church Slavonic word-name
+! [[International Phonetic Alphabet|IPA]]
+originalSourceText=! Name
+! Old Church Slavonic word-name
+! [[International Phonetic Alphabet|IPA]]
+! Common transliteration
+! Approximate English equivalent
+! Examples
+! [[Russian alphabet#Numeric values|No.]]
+! [[Unicode]] ([[Hexadecimal|Hex]])
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[А]]а}}</big>
+| [[File:01-Russian alphabet-А а.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''А а''</span> || {{lang|ru|а}}<br/>{{IPA|ru|a|}} {{Respell|ah}}|| {{lang|ru-petr1708|азъ}}<br/>{{IPA|[ɑs]}} || {{IPAblink|a}} 
+|a|| f'''a'''ther ||  {{lang|ru|дв'''а'''}} ''dva''<br/>"two" || 1 || U+0410 / U+0430
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[Б]]б}}</big>
+| [[File:02-Russian alphabet-Б б.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''Б б''</span> || {{lang|ru|бэ}}<br/>{{IPA|ru|bɛ|}} {{Respell|be/beh}}|| {{lang|ru-petr1708|буки}}<br/>{{IPA|[ˈbukʲɪ]}} || {{IPAblink|b}} or {{IPA|[bʲ]}} 
+|b|| '''b'''ad || {{lang|ru|о'''б'''а}} ''óba''<br/>"both"
+shippedText=father
+transformation=wikimedia emphasis formatting
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1371795481 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=0ebe7c0ee3c60d5e931fe34660098e88ee1b955585bddb9f03e2388c00dfc526
+contentHash=88a1881f0025cf7117501d07aefc5d4be6696656790d765678df8bc48ca52687
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u30-reference-prov-u30-letter-names-x-1`
+
+- Objectives: obj-u30-reference-literacy
+- Sessions: none
+- Source: src-wikipedia-russian-alphabet-1371795481
+- Rights: rights-wikipedia-russian-alphabet-1371795481
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 060d7b4570c96f34ed960574dc95954925a9f88b1db31257f9125e1c24d1068c
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_alphabet&oldid=1371795481
+sourceRevision=1371795481
+sourceRecordId=alphabet:! Name
+! Old Church Slavonic word-name
+! [[International Phonetic Alphabet|IPA]]
+originalSourceText=! Name
+! Old Church Slavonic word-name
+! [[International Phonetic Alphabet|IPA]]
+! Common transliteration
+! Approximate English equivalent
+! Examples
+! [[Russian alphabet#Numeric values|No.]]
+! [[Unicode]] ([[Hexadecimal|Hex]])
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[А]]а}}</big>
+| [[File:01-Russian alphabet-А а.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''А а''</span> || {{lang|ru|а}}<br/>{{IPA|ru|a|}} {{Respell|ah}}|| {{lang|ru-petr1708|азъ}}<br/>{{IPA|[ɑs]}} || {{IPAblink|a}} 
+|a|| f'''a'''ther ||  {{lang|ru|дв'''а'''}} ''dva''<br/>"two" || 1 || U+0410 / U+0430
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[Б]]б}}</big>
+| [[File:02-Russian alphabet-Б б.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''Б б''</span> || {{lang|ru|бэ}}<br/>{{IPA|ru|bɛ|}} {{Respell|be/beh}}|| {{lang|ru-petr1708|буки}}<br/>{{IPA|[ˈbukʲɪ]}} || {{IPAblink|b}} or {{IPA|[bʲ]}} 
+|b|| '''b'''ad || {{lang|ru|о'''б'''а}} ''óba''<br/>"both"
+shippedText=bad
+transformation=wikimedia emphasis formatting
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1371795481 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=0ebe7c0ee3c60d5e931fe34660098e88ee1b955585bddb9f03e2388c00dfc526
+contentHash=2f05d4b689d270cafb02285f35f44866f7dc8a2d368a3f9d1124373eeab31fb1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u30-reference-prov-u30-letter-names-x-2`
+
+- Objectives: obj-u30-reference-literacy
+- Sessions: none
+- Source: src-wikipedia-russian-alphabet-1371795481
+- Rights: rights-wikipedia-russian-alphabet-1371795481
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9fa235ade7de1a64e03eb40fffc297bf9b730253fe026277c344c12bc7d8f7fa
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_alphabet&oldid=1371795481
+sourceRevision=1371795481
+sourceRecordId=alphabet:! Name
+! Old Church Slavonic word-name
+! [[International Phonetic Alphabet|IPA]]
+originalSourceText=! Name
+! Old Church Slavonic word-name
+! [[International Phonetic Alphabet|IPA]]
+! Common transliteration
+! Approximate English equivalent
+! Examples
+! [[Russian alphabet#Numeric values|No.]]
+! [[Unicode]] ([[Hexadecimal|Hex]])
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[А]]а}}</big>
+| [[File:01-Russian alphabet-А а.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''А а''</span> || {{lang|ru|а}}<br/>{{IPA|ru|a|}} {{Respell|ah}}|| {{lang|ru-petr1708|азъ}}<br/>{{IPA|[ɑs]}} || {{IPAblink|a}} 
+|a|| f'''a'''ther ||  {{lang|ru|дв'''а'''}} ''dva''<br/>"two" || 1 || U+0410 / U+0430
+|-
+! style="text-align: center;" | <big>{{lang|ru|[[Б]]б}}</big>
+| [[File:02-Russian alphabet-Б б.svg|class=skin-invert]] || <span style="font-family: 'Times New Roman', serif;">''Б б''</span> || {{lang|ru|бэ}}<br/>{{IPA|ru|bɛ|}} {{Respell|be/beh}}|| {{lang|ru-petr1708|буки}}<br/>{{IPA|[ˈbukʲɪ]}} || {{IPAblink|b}} or {{IPA|[bʲ]}} 
+|b|| '''b'''ad || {{lang|ru|о'''б'''а}} ''óba''<br/>"both"
+shippedText=both
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1371795481 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=0ebe7c0ee3c60d5e931fe34660098e88ee1b955585bddb9f03e2388c00dfc526
+contentHash=ff7772053abf7d817d6eec229a09e14f0d1552f1cb0aeedb2ac73784ac2d2e39
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -14203,11 +17398,12 @@ permitsAppUse=true
 - `obj-u30-letter-names` INSTRUCTION `u30-st-orient`
 - `obj-u30-letter-names` INSTRUCTION `u30-st-teach-letter-names-1`
 - `obj-u30-letter-names` INSTRUCTION `u30-st-teach-letter-names-2`
-- `obj-u30-letter-names` EXAMPLE `ex-u30-letter-names-0`
-- `obj-u30-letter-names` EXAMPLE `ex-u30-letter-names-1`
+- `obj-u30-letter-names` EXAMPLE `ex-u30-native-name-a`
+- `obj-u30-letter-names` EXAMPLE `ex-u30-native-name-b`
+- `obj-u30-letter-names` EXAMPLE `ex-u30-native-name-v`
 - `obj-u30-letter-names` PRACTICE `u30-st-guided-letter-names-1`
-- `obj-u30-letter-names` CHECK `u30-i-letter-names-1`
-- `obj-u30-letter-names` CHECK `u30-i-letter-names-2`
+- `obj-u30-letter-names` CHECK `u30-i-native-name-b`
+- `obj-u30-letter-names` CHECK `u30-i-native-name-v`
 - `obj-u30-letter-names` REMEDIATION `u30-st-rem-letter-names`
 - `obj-u30-abbrev-examples` INSTRUCTION `u30-st-orient`
 - `obj-u30-abbrev-examples` INSTRUCTION `u30-st-teach-abbrev-examples-1`
@@ -14215,8 +17411,8 @@ permitsAppUse=true
 - `obj-u30-abbrev-examples` EXAMPLE `ex-u30-abbrev-examples-0`
 - `obj-u30-abbrev-examples` EXAMPLE `ex-u30-abbrev-examples-1`
 - `obj-u30-abbrev-examples` PRACTICE `u30-st-guided-abbrev-examples-1`
-- `obj-u30-abbrev-examples` CHECK `u30-i-abbrev-examples-1`
-- `obj-u30-abbrev-examples` CHECK `u30-i-abbrev-examples-2`
+- `obj-u30-abbrev-examples` CHECK `u30-i-initialism-ussr`
+- `obj-u30-abbrev-examples` CHECK `u30-i-initialism-usa`
 - `obj-u30-abbrev-examples` REMEDIATION `u30-st-rem-abbrev-examples`
 - `obj-u30-address-marks` INSTRUCTION `u30-st-orient`
 - `obj-u30-address-marks` INSTRUCTION `u30-st-teach-address-marks-1`
@@ -14278,6 +17474,10 @@ permitsAppUse=true
 - `obj-u30-dictionary` CHECK `u30-i-dictionary-4`
 - `obj-u30-dictionary` CHECK `u30-i-dictionary-5`
 - `obj-u30-dictionary` REMEDIATION `u30-dictionary-remediate`
+- `obj-u30-reference-literacy` INSTRUCTION `u30-st-teach-letter-names-1`
+- `obj-u30-reference-literacy` INSTRUCTION `u30-st-teach-letter-names-2`
+- `obj-u30-reference-literacy` INSTRUCTION `u30-st-teach-abbrev-examples-1`
+- `obj-u30-reference-literacy` INSTRUCTION `u30-st-teach-abbrev-examples-2`
 - `u30-s-orient` OBJECTIVE `obj-u30-letter-names`
 - `u30-s-orient` OBJECTIVE `obj-u30-abbrev-examples`
 - `u30-s-orient` OBJECTIVE `obj-u30-address-marks`
@@ -14287,29 +17487,31 @@ permitsAppUse=true
 - `u30-s-orient` OBJECTIVE `obj-u30-book`
 - `u30-st-orient` REFERENCE `ref-u2630-attribution`
 - `u30-s-letter-names` OBJECTIVE `obj-u30-letter-names`
-- `u30-st-teach-letter-names-1` EXAMPLE `ex-u30-letter-names-0`
-- `u30-st-teach-letter-names-1` EXAMPLE `ex-u30-letter-names-1`
+- `u30-st-teach-letter-names-1` EXAMPLE `ex-u30-native-name-a`
+- `u30-st-teach-letter-names-1` EXAMPLE `ex-u30-native-name-b`
+- `u30-st-teach-letter-names-1` EXAMPLE `ex-u30-native-name-v`
 - `u30-st-teach-letter-names-1` REFERENCE `ref-u2630-attribution`
 - `u30-st-teach-letter-names-2` REFERENCE `ref-u2630-attribution`
 - `u30-st-guided-letter-names-1` REMEDIATION `u30-st-rem-letter-names`
-- `u30-st-guided-letter-names-1` ITEM `u30-g-letter-names-0`
-- `u30-st-rem-letter-names` EXAMPLE `ex-u30-letter-names-0`
-- `u30-st-rem-letter-names` EXAMPLE `ex-u30-letter-names-1`
+- `u30-st-guided-letter-names-1` ITEM `u30-g-native-name-a`
+- `u30-st-rem-letter-names` EXAMPLE `ex-u30-native-name-a`
+- `u30-st-rem-letter-names` EXAMPLE `ex-u30-native-name-b`
+- `u30-st-rem-letter-names` EXAMPLE `ex-u30-native-name-v`
 - `u30-st-check-letter-names` REMEDIATION `u30-st-rem-letter-names`
-- `u30-st-check-letter-names` ITEM `u30-i-letter-names-1`
-- `u30-st-check-letter-names` ITEM `u30-i-letter-names-2`
+- `u30-st-check-letter-names` ITEM `u30-i-native-name-b`
+- `u30-st-check-letter-names` ITEM `u30-i-native-name-v`
 - `u30-s-abbrev-examples` OBJECTIVE `obj-u30-abbrev-examples`
 - `u30-st-teach-abbrev-examples-1` EXAMPLE `ex-u30-abbrev-examples-0`
 - `u30-st-teach-abbrev-examples-1` EXAMPLE `ex-u30-abbrev-examples-1`
 - `u30-st-teach-abbrev-examples-1` REFERENCE `ref-u2630-attribution`
 - `u30-st-teach-abbrev-examples-2` REFERENCE `ref-u2630-attribution`
 - `u30-st-guided-abbrev-examples-1` REMEDIATION `u30-st-rem-abbrev-examples`
-- `u30-st-guided-abbrev-examples-1` ITEM `u30-g-abbrev-examples-0`
+- `u30-st-guided-abbrev-examples-1` ITEM `u30-g-initialism-use`
 - `u30-st-rem-abbrev-examples` EXAMPLE `ex-u30-abbrev-examples-0`
 - `u30-st-rem-abbrev-examples` EXAMPLE `ex-u30-abbrev-examples-1`
 - `u30-st-check-abbrev-examples` REMEDIATION `u30-st-rem-abbrev-examples`
-- `u30-st-check-abbrev-examples` ITEM `u30-i-abbrev-examples-1`
-- `u30-st-check-abbrev-examples` ITEM `u30-i-abbrev-examples-2`
+- `u30-st-check-abbrev-examples` ITEM `u30-i-initialism-ussr`
+- `u30-st-check-abbrev-examples` ITEM `u30-i-initialism-usa`
 - `u30-s-address-marks` OBJECTIVE `obj-u30-address-marks`
 - `u30-st-teach-address-marks-1` EXAMPLE `ex-u30-address-marks-0`
 - `u30-st-teach-address-marks-1` EXAMPLE `ex-u30-address-marks-1`
@@ -14480,6 +17682,79 @@ permitsAppUse=true
 - `obj-u30-particle` PROVENANCE `prov-ca-u30-instruction-u30-s-particle-7`
 - `obj-u30-particle` PROVENANCE `prov-ca-u30-instruction-u30-s-particle-8`
 - `obj-u30-particle` PROVENANCE `prov-ca-u30-instruction-u30-s-particle-9`
+- `obj-u30-abbrev-examples` PROVENANCE `prov-ca-u30-language-obj-u30-abbrev-examples-title`
+- `obj-u30-letter-names` PROVENANCE `prov-ca-u30-language-obj-u30-letter-names-title`
+- `obj-u30-reference-literacy` PROVENANCE `prov-ca-u30-language-reference-title`
+- `obj-u30-reference-literacy` PROVENANCE `prov-ca-u30-language-reference-u30-st-teach-abbrev-examples-1-body`
+- `obj-u30-reference-literacy` PROVENANCE `prov-ca-u30-language-reference-u30-st-teach-abbrev-examples-2-body`
+- `obj-u30-reference-literacy` PROVENANCE `prov-ca-u30-language-reference-u30-st-teach-letter-names-1-body`
+- `obj-u30-reference-literacy` PROVENANCE `prov-ca-u30-language-reference-u30-st-teach-letter-names-2-body`
+- `obj-u30-reference-literacy` PROVENANCE `prov-ca-u30-language-u30-g-abbrev-examples-0-feedback`
+- `obj-u30-reference-literacy` PROVENANCE `prov-ca-u30-language-u30-g-abbrev-examples-0-prompt`
+- `obj-u30-abbrev-examples` PROVENANCE `prov-ca-u30-language-u30-g-initialism-use-0`
+- `obj-u30-abbrev-examples` PROVENANCE `prov-ca-u30-language-u30-g-initialism-use-1`
+- `obj-u30-abbrev-examples` PROVENANCE `prov-ca-u30-language-u30-g-initialism-use-2`
+- `obj-u30-abbrev-examples` PROVENANCE `prov-ca-u30-language-u30-g-initialism-use-feedback`
+- `obj-u30-abbrev-examples` PROVENANCE `prov-ca-u30-language-u30-g-initialism-use-prompt`
+- `obj-u30-abbrev-examples` PROVENANCE `prov-ca-u30-language-u30-g-initialism-use-rationale-1`
+- `obj-u30-reference-literacy` PROVENANCE `prov-ca-u30-language-u30-g-letter-names-0-feedback`
+- `obj-u30-reference-literacy` PROVENANCE `prov-ca-u30-language-u30-g-letter-names-0-prompt`
+- `obj-u30-letter-names` PROVENANCE `prov-ca-u30-language-u30-g-native-name-a-0`
+- `obj-u30-letter-names` PROVENANCE `prov-ca-u30-language-u30-g-native-name-a-1`
+- `obj-u30-letter-names` PROVENANCE `prov-ca-u30-language-u30-g-native-name-a-2`
+- `obj-u30-letter-names` PROVENANCE `prov-ca-u30-language-u30-g-native-name-a-3`
+- `obj-u30-letter-names` PROVENANCE `prov-ca-u30-language-u30-g-native-name-a-feedback`
+- `obj-u30-letter-names` PROVENANCE `prov-ca-u30-language-u30-g-native-name-a-prompt`
+- `obj-u30-letter-names` PROVENANCE `prov-ca-u30-language-u30-g-native-name-a-rationale-1`
+- `obj-u30-letter-names` PROVENANCE `prov-ca-u30-language-u30-g-native-name-a-rationale-2`
+- `obj-u30-reference-literacy` PROVENANCE `prov-ca-u30-language-u30-i-abbrev-examples-1-feedback`
+- `obj-u30-reference-literacy` PROVENANCE `prov-ca-u30-language-u30-i-abbrev-examples-1-prompt`
+- `obj-u30-reference-literacy` PROVENANCE `prov-ca-u30-language-u30-i-abbrev-examples-2-feedback`
+- `obj-u30-reference-literacy` PROVENANCE `prov-ca-u30-language-u30-i-abbrev-examples-2-prompt`
+- `obj-u30-abbrev-examples` PROVENANCE `prov-ca-u30-language-u30-i-initialism-usa-0`
+- `obj-u30-abbrev-examples` PROVENANCE `prov-ca-u30-language-u30-i-initialism-usa-1`
+- `obj-u30-abbrev-examples` PROVENANCE `prov-ca-u30-language-u30-i-initialism-usa-2`
+- `obj-u30-abbrev-examples` PROVENANCE `prov-ca-u30-language-u30-i-initialism-usa-3`
+- `obj-u30-abbrev-examples` PROVENANCE `prov-ca-u30-language-u30-i-initialism-usa-feedback`
+- `obj-u30-abbrev-examples` PROVENANCE `prov-ca-u30-language-u30-i-initialism-usa-prompt`
+- `obj-u30-abbrev-examples` PROVENANCE `prov-ca-u30-language-u30-i-initialism-usa-rationale-1`
+- `obj-u30-abbrev-examples` PROVENANCE `prov-ca-u30-language-u30-i-initialism-usa-rationale-2`
+- `obj-u30-abbrev-examples` PROVENANCE `prov-ca-u30-language-u30-i-initialism-ussr-0`
+- `obj-u30-abbrev-examples` PROVENANCE `prov-ca-u30-language-u30-i-initialism-ussr-1`
+- `obj-u30-abbrev-examples` PROVENANCE `prov-ca-u30-language-u30-i-initialism-ussr-2`
+- `obj-u30-abbrev-examples` PROVENANCE `prov-ca-u30-language-u30-i-initialism-ussr-3`
+- `obj-u30-abbrev-examples` PROVENANCE `prov-ca-u30-language-u30-i-initialism-ussr-feedback`
+- `obj-u30-abbrev-examples` PROVENANCE `prov-ca-u30-language-u30-i-initialism-ussr-prompt`
+- `obj-u30-abbrev-examples` PROVENANCE `prov-ca-u30-language-u30-i-initialism-ussr-rationale-1`
+- `obj-u30-abbrev-examples` PROVENANCE `prov-ca-u30-language-u30-i-initialism-ussr-rationale-2`
+- `obj-u30-reference-literacy` PROVENANCE `prov-ca-u30-language-u30-i-letter-names-1-feedback`
+- `obj-u30-reference-literacy` PROVENANCE `prov-ca-u30-language-u30-i-letter-names-1-prompt`
+- `obj-u30-reference-literacy` PROVENANCE `prov-ca-u30-language-u30-i-letter-names-2-feedback`
+- `obj-u30-reference-literacy` PROVENANCE `prov-ca-u30-language-u30-i-letter-names-2-prompt`
+- `obj-u30-letter-names` PROVENANCE `prov-ca-u30-language-u30-i-native-name-b-0`
+- `obj-u30-letter-names` PROVENANCE `prov-ca-u30-language-u30-i-native-name-b-1`
+- `obj-u30-letter-names` PROVENANCE `prov-ca-u30-language-u30-i-native-name-b-2`
+- `obj-u30-letter-names` PROVENANCE `prov-ca-u30-language-u30-i-native-name-b-3`
+- `obj-u30-letter-names` PROVENANCE `prov-ca-u30-language-u30-i-native-name-b-feedback`
+- `obj-u30-letter-names` PROVENANCE `prov-ca-u30-language-u30-i-native-name-b-prompt`
+- `obj-u30-letter-names` PROVENANCE `prov-ca-u30-language-u30-i-native-name-b-rationale-1`
+- `obj-u30-letter-names` PROVENANCE `prov-ca-u30-language-u30-i-native-name-b-rationale-2`
+- `obj-u30-letter-names` PROVENANCE `prov-ca-u30-language-u30-i-native-name-v-0`
+- `obj-u30-letter-names` PROVENANCE `prov-ca-u30-language-u30-i-native-name-v-1`
+- `obj-u30-letter-names` PROVENANCE `prov-ca-u30-language-u30-i-native-name-v-2`
+- `obj-u30-letter-names` PROVENANCE `prov-ca-u30-language-u30-i-native-name-v-3`
+- `obj-u30-letter-names` PROVENANCE `prov-ca-u30-language-u30-i-native-name-v-feedback`
+- `obj-u30-letter-names` PROVENANCE `prov-ca-u30-language-u30-i-native-name-v-prompt`
+- `obj-u30-letter-names` PROVENANCE `prov-ca-u30-language-u30-i-native-name-v-rationale-1`
+- `obj-u30-letter-names` PROVENANCE `prov-ca-u30-language-u30-i-native-name-v-rationale-2`
+- `obj-u30-abbrev-examples` PROVENANCE `prov-ca-u30-language-u30-s-abbrev-examples-title`
+- `obj-u30-letter-names` PROVENANCE `prov-ca-u30-language-u30-s-letter-names-title`
+- `obj-u30-abbrev-examples` PROVENANCE `prov-ca-u30-language-u30-st-rem-abbrev-examples-body`
+- `obj-u30-letter-names` PROVENANCE `prov-ca-u30-language-u30-st-rem-letter-names-body`
+- `obj-u30-abbrev-examples` PROVENANCE `prov-ca-u30-language-u30-st-teach-abbrev-examples-1-body`
+- `obj-u30-abbrev-examples` PROVENANCE `prov-ca-u30-language-u30-st-teach-abbrev-examples-2-body`
+- `obj-u30-letter-names` PROVENANCE `prov-ca-u30-language-u30-st-teach-letter-names-1-body`
+- `obj-u30-letter-names` PROVENANCE `prov-ca-u30-language-u30-st-teach-letter-names-2-body`
 - `obj-u30-abbrev-examples` PROVENANCE `prov-ex-u30-abbrev-examples-0-en`
 - `obj-u30-abbrev-examples` PROVENANCE `prov-ex-u30-abbrev-examples-0-ru`
 - `obj-u30-abbrev-examples` PROVENANCE `prov-ex-u30-abbrev-examples-1-en`
@@ -14592,11 +17867,36 @@ permitsAppUse=true
 - `obj-u30-capstone` PROVENANCE `prov-u30-capstone-rem`
 - `obj-u30-capstone` PROVENANCE `prov-u30-capstone-x-0`
 - `obj-u30-capstone` PROVENANCE `prov-u30-capstone-x-1`
+- `obj-u30-letter-names` PROVENANCE `prov-u30-language-native-a-glyph`
+- `obj-u30-letter-names` PROVENANCE `prov-u30-language-native-a-name`
+- `obj-u30-letter-names` PROVENANCE `prov-u30-language-native-b-glyph`
+- `obj-u30-letter-names` PROVENANCE `prov-u30-language-native-b-name`
+- `obj-u30-abbrev-examples` PROVENANCE `prov-u30-language-native-indeclinable-flag`
+- `obj-u30-abbrev-examples` PROVENANCE `prov-u30-language-native-masculine-flag`
+- `obj-u30-abbrev-examples` PROVENANCE `prov-u30-language-native-plural-flag`
+- `obj-u30-abbrev-examples` PROVENANCE `prov-u30-language-native-usa-en`
+- `obj-u30-abbrev-examples` PROVENANCE `prov-u30-language-native-usa-ru`
+- `obj-u30-abbrev-examples` PROVENANCE `prov-u30-language-native-ussr-en`
+- `obj-u30-abbrev-examples` PROVENANCE `prov-u30-language-native-ussr-ru`
+- `obj-u30-letter-names` PROVENANCE `prov-u30-language-native-v-glyph`
+- `obj-u30-letter-names` PROVENANCE `prov-u30-language-native-v-name`
 - `obj-u30-letter-names` PROVENANCE `prov-u30-letter-names-rem`
 - `obj-u30-letter-names` PROVENANCE `prov-u30-letter-names-x-0`
 - `obj-u30-letter-names` PROVENANCE `prov-u30-letter-names-x-1`
 - `obj-u30-letter-names` PROVENANCE `prov-u30-letter-names-x-2`
 - `obj-u30-particle` PROVENANCE `prov-u30-particle-rem`
+- `obj-u30-reference-literacy` PROVENANCE `prov-u30-reference-prov-ex-u30-abbrev-examples-0-en`
+- `obj-u30-reference-literacy` PROVENANCE `prov-u30-reference-prov-ex-u30-abbrev-examples-0-ru`
+- `obj-u30-reference-literacy` PROVENANCE `prov-u30-reference-prov-ex-u30-abbrev-examples-1-en`
+- `obj-u30-reference-literacy` PROVENANCE `prov-u30-reference-prov-ex-u30-abbrev-examples-1-ru`
+- `obj-u30-reference-literacy` PROVENANCE `prov-u30-reference-prov-ex-u30-letter-names-0-en`
+- `obj-u30-reference-literacy` PROVENANCE `prov-u30-reference-prov-ex-u30-letter-names-0-ru`
+- `obj-u30-reference-literacy` PROVENANCE `prov-u30-reference-prov-ex-u30-letter-names-1-en`
+- `obj-u30-reference-literacy` PROVENANCE `prov-u30-reference-prov-ex-u30-letter-names-1-ru`
+- `obj-u30-reference-literacy` PROVENANCE `prov-u30-reference-prov-u30-abbrev-examples-x-0`
+- `obj-u30-reference-literacy` PROVENANCE `prov-u30-reference-prov-u30-letter-names-x-0`
+- `obj-u30-reference-literacy` PROVENANCE `prov-u30-reference-prov-u30-letter-names-x-1`
+- `obj-u30-reference-literacy` PROVENANCE `prov-u30-reference-prov-u30-letter-names-x-2`
 - `obj-u30-abbreviation` SOURCE_CAPABILITY `cap-obj-u30-abbreviation`
 - `obj-u30-capstone` SOURCE_CAPABILITY `cap-obj-u30-capstone`
 - `obj-u30-dictionary` SOURCE_CAPABILITY `cap-obj-u30-dictionary`
@@ -14617,8 +17917,9 @@ permitsAppUse=true
 - `cap-obj-u30-capstone` supports `capstone-reading` for `obj-u30-capstone`
 - `cap-obj-u30-dictionary` supports `dictionary-use` for `obj-u30-dictionary`
 
-No guidance objective is recorded.
+Guidance objectives stay unsupported until an admitted frozen capability exists:
 
+- `obj-u30-reference-literacy` Optional reference-table literacy
 
 ## Book-directed register
 
@@ -14628,8 +17929,7 @@ No guidance objective is recorded.
 
 ## Optional non-gating register
 
-None.
-
+- `obj-u30-reference-literacy` Optional reference-table literacy
 
 ## Unavailable experiences
 
