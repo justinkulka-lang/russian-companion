@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Units610SourceIntakeTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-13T19:42:53.715Z" hostname="d0fbcd1608d3" time="4.089">
+  <properties/>
+  <testcase name="retainedSourceBytesMatchImmutableRevisions" classname="dev.russiancompanion.v2.Units610SourceIntakeTest" time="0.408"/>
+  <testcase name="governedContrastsStaySourceBoundAndBookAttestationDoesNotAdvance" classname="dev.russiancompanion.v2.Units610SourceIntakeTest" time="1.683"/>
+  <testcase name="noPenguinAudioOrNetworkWasAdded" classname="dev.russiancompanion.v2.Units610SourceIntakeTest" time="1.992"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

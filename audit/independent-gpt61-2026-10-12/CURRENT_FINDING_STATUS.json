@@ -82,7 +82,11 @@
       "currentOriginalTargetsWithChangedFeedback": 135,
       "unit15FeedbackImplementationCommit": "434b32c618f45faa67a765d63d7d1f080ffd05d9",
       "reconciliationPath": "IA009_135_TARGET_FEEDBACK_RECONCILIATION.json",
-      "broaderFeedbackTeachingRemediationReview": "OPEN"
+      "broaderFeedbackTeachingRemediationReview": "OPEN",
+      "currentOriginalTargetsWithUnchangedScoredSourceTuples": 105,
+      "currentOriginalTargetsWithSeparatelyLedgeredScoredSourceChanges": 30,
+      "unit9DistinctMasculineTransferImplementationCommit": "3fcf287f2118e51f39d4c339f9a06bc526fbe57b",
+      "reconciliationExplanation": "29 prior complete-rule changes plus one distinct masculine-noun application; previous106/29 receipts historical. Content rows, not tests/acceptance."
     },
     {
       "findingId": "IA010",
@@ -194,17 +198,17 @@
       "findingId": "IA016",
       "producerSeverity": "MEDIUM",
       "producerStatus": "OPEN",
-      "engineeringDisposition": "PARTIAL_UNIT17_AND_UNIT8_AGREEMENT_FIXES_PENDING_INDEPENDENT_VERIFICATION_OTHER_GROUPS_OPEN",
+      "engineeringDisposition": "PARTIAL_UNIT17_UNIT8_AND_UNIT9_AGREEMENT_FIXES_PENDING_INDEPENDENT_VERIFICATION_OTHER_GROUPS_OPEN",
       "formalAcceptance": false,
-      "currentExactSameUnitGroups": 8,
+      "currentExactSameUnitGroups": 7,
       "inventoryPath": "IA016_CURRENT_DUPLICATE_INVENTORY.json",
       "continuationPath": "IA016_INDEPENDENT_TRANSFER_PENDING.md",
-      "implementationCommit": "4295962682885f00cdcfcac0923aa213716b9cd5",
-      "evidencePath": "ia016-unit8-agreement-verification/FINAL_VERIFICATION_MANIFEST.json",
+      "implementationCommit": "3fcf287f2118e51f39d4c339f9a06bc526fbe57b",
+      "evidencePath": "ia016-unit9-agreement-verification/FINAL_VERIFICATION_MANIFEST.json",
       "supplementalEvidencePath": "ia016-unit17-verification/SUPPLEMENTAL_VERIFICATION_MANIFEST.json",
-      "coverageScope": "Supplied nominative adjective form recognition on distinct exact unaccented blue singular/plural pair; correct guided/new, possessive and demonstrative pairs preserved. Six cards before practice/full remediation. Not arbitrary sentence agreement, every case, universal adjective morphology or linguistic acceptance.",
+      "coverageScope": "Distinct source-supplied masculine counting noun час/один versus guided мальчик/один. Feminine/neuter/plural-form one and feminine two checks unchanged. Six cards before practice/full ten-example remediation. Recognition only, not unrestricted productive agreement or all numeral cases.",
       "newIndependentItemIds": [
-        "u8-i-agreement-3"
+        "u9-i-odindva-4"
       ],
       "newGuidedItemId": "u17-g-question-apple",
       "optionalVocabularyItemIds": [
@@ -235,8 +239,18 @@
           "independentItemId": "u8-i-agreement-3",
           "guidedItemId": "u8-g-agreement-0",
           "formalAcceptance": false
+        },
+        "unit9Agreement": {
+          "implementationCommit": "3fcf287f2118e51f39d4c339f9a06bc526fbe57b",
+          "evidencePath": "ia016-unit9-agreement-verification/FINAL_VERIFICATION_MANIFEST.json",
+          "independentItemId": "u9-i-odindva-4",
+          "guidedItemId": "u9-g-odindva-0",
+          "formalAcceptance": false
         }
-      }
+      },
+      "currentExactInventoryRoleScope": "GATING_RECOGNITION_GUIDED_AND_INDEPENDENT",
+      "additionalSameRoleGroupsOutsideInventoryCount": 4,
+      "allNumeralCasesClaim": false
     },
     {
       "findingId": "IA017",
@@ -257,26 +271,28 @@
   "semanticAcceptancePromoted": false,
   "physicalDeviceAcceptance": "OUTSTANDING",
   "release": "NOT_APPROVED",
-  "latestValidatorImplementationCommit": "a53041e3c330b7dd13a7b54535fd791bd7fdfc41",
-  "latestSourceBindingCheckpoint": "189d173407bb93e82e67c3e2ef0bff27b6532343",
+  "latestValidatorImplementationCommit": "3fcf287f2118e51f39d4c339f9a06bc526fbe57b",
+  "latestSourceBindingCheckpoint": "3376f798eec0e79656b8baeab24fa236364b58e7",
   "remainingSourceReviewPointers": [
     "IA007_SOURCE_REVIEW_PENDING.md",
     "IA008_SOURCE_REVIEW_PENDING.md"
   ],
   "firstBatchImplementationCommit": "4f5cb8024d3f68a37052fdf85b5755bffa2a0904",
   "firstBatchPacketCheckpoint": "49af91a0f5578c63a3b9b98bbe975f40d2758fcc",
-  "latestCurriculumImplementationCommit": "4295962682885f00cdcfcac0923aa213716b9cd5",
+  "latestCurriculumImplementationCommit": "3fcf287f2118e51f39d4c339f9a06bc526fbe57b",
   "acceptanceOrder": [
     "FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
     "PHYSICAL_DEVICE_ACCEPTANCE_LAST"
   ],
   "physicalDeviceEvidenceRequestTiming": "AFTER_FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
-  "latestAppImplementationCommit": "c82e5b4a305c960ca41f660071d0da25070631ea",
-  "latestVerifiedRepositoryCommit": "ad266cf92a4d8976f6b9f30111626f8245794137",
+  "latestAppImplementationCommit": "3fcf287f2118e51f39d4c339f9a06bc526fbe57b",
+  "latestVerifiedRepositoryCommit": "3376f798eec0e79656b8baeab24fa236364b58e7",
   "latestResearchDiagnosticRepositoryCommit": "0edaa0fc635b3579823f7b352f52fa79a675db3d",
   "latestSupplementalVerifiedRepositoryCommit": "409a9e87bd17174e6340fc896b7576115d30a69a",
-  "latestFocusedIntegrationCommit": "189d173407bb93e82e67c3e2ef0bff27b6532343",
-  "latestFocusedIntegrationPassed": 25,
-  "latestFocusedIntegrationFailures": 1,
-  "latestCorrectedTargetPassed": 1
+  "latestFocusedIntegrationCommit": "3376f798eec0e79656b8baeab24fa236364b58e7",
+  "latestFocusedIntegrationPassed": 30,
+  "latestFocusedIntegrationFailures": 0,
+  "latestCorrectedTargetPassed": 1,
+  "latestFocusedIntegrationScope": "30_SELECTED_TESTS_16_CLASSES_NOT_COMPLETE_SUITE",
+  "latestCorrectedTargetBatch": "IA016_UNIT8_HISTORICAL_NOT_THIS_UNIT9_RUN"
 }
