@@ -1,0 +1,187 @@
+{
+  "repositoryCommit": "26b83e34651c235c1abc97b5bf9e094e36a3998e",
+  "scope": "EXACT_SAME_UNIT_PROMPT_CUE_KEY_ORDERED_OPTIONS_SIGNATURE_NOT_ALL_TRANSFER_DEFECTS",
+  "groups": [
+    {
+      "unitNumber": 8,
+      "itemIds": [
+        "u8-i-plural-6",
+        "u8-g-spelling-0"
+      ],
+      "prompt": "Which plural nominative form of the same noun corresponds to the shown form?",
+      "cue": "кни́га",
+      "answer": "кни́ги",
+      "options": [
+        "кни́ги",
+        "кни́га"
+      ],
+      "objectiveIds": [
+        "obj-u8-plural",
+        "obj-u8-spelling"
+      ]
+    },
+    {
+      "unitNumber": 8,
+      "itemIds": [
+        "u8-g-agreement-0",
+        "u8-i-agreement-3"
+      ],
+      "prompt": "Which plural nominative form of the same adjective corresponds to the shown form?",
+      "cue": "но́вый",
+      "answer": "но́вые",
+      "options": [
+        "но́вые",
+        "но́вый"
+      ],
+      "objectiveIds": [
+        "obj-u8-agreement"
+      ]
+    },
+    {
+      "unitNumber": 9,
+      "itemIds": [
+        "u9-g-odindva-0",
+        "u9-i-odindva-4"
+      ],
+      "prompt": "Which admitted form agrees with the shown word?",
+      "cue": "мальчик",
+      "answer": "один",
+      "options": [
+        "один",
+        "одна"
+      ],
+      "objectiveIds": [
+        "obj-u9-odindva"
+      ]
+    },
+    {
+      "unitNumber": 10,
+      "itemIds": [
+        "u10-i-have-3",
+        "u10-g-absence-0"
+      ],
+      "prompt": "Which explanation accounts for the noun cases in the shown line?",
+      "cue": "У меня́ нет сы́на",
+      "answer": "In this line, the absent thing is in the genitive case.",
+      "options": [
+        "In this line, the possessor is genitive and the possessed thing is nominative.",
+        "In this line, the absent thing is in the genitive case."
+      ],
+      "objectiveIds": [
+        "obj-u10-have",
+        "obj-u10-absence"
+      ]
+    },
+    {
+      "unitNumber": 13,
+      "itemIds": [
+        "u13-i-tense-keep-1",
+        "u13-g-reported-0"
+      ],
+      "prompt": "Which admitted line is the reported evening?",
+      "cue": "Я скажу ему ве́чером",
+      "answer": "Она́ сказа́ла, что она́ ска́жет ему́ ве́чером",
+      "options": [
+        "Она́ сказа́ла, что она́ ска́жет ему́ ве́чером",
+        "Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски"
+      ],
+      "objectiveIds": [
+        "obj-u13-tense-keep",
+        "obj-u13-reported"
+      ]
+    },
+    {
+      "unitNumber": 17,
+      "itemIds": [
+        "u17-g-clock-0",
+        "u17-i-clock-1",
+        "u17-i-clock-2"
+      ],
+      "prompt": "Which admitted English gloss is written beside the shown form?",
+      "cue": "Который час?",
+      "answer": "What time is it?",
+      "options": [
+        "What time is it?",
+        "Which book do you want?"
+      ],
+      "objectiveIds": [
+        "obj-u17-clock"
+      ]
+    },
+    {
+      "unitNumber": 21,
+      "itemIds": [
+        "u21-g-object-reference-0",
+        "u21-i-object-reference-2"
+      ],
+      "prompt": "Which English meaning matches the shown sentence?",
+      "cue": "Я люблю́ себя́",
+      "answer": "I love myself",
+      "options": [
+        "I love myself",
+        "I love my wife"
+      ],
+      "objectiveIds": [
+        "obj-u21-object-reference"
+      ]
+    },
+    {
+      "unitNumber": 24,
+      "itemIds": [
+        "u24-g-word-order-contrast-0",
+        "u24-i-word-order-contrast-2"
+      ],
+      "prompt": "The speaker would never agree. Which supplied English interpretation fits the sentence in that context?",
+      "cue": "Не надо меня уговаривать.",
+      "answer": "One should not persuade me",
+      "options": [
+        "One should not persuade me",
+        "There is no need to persuade me"
+      ],
+      "objectiveIds": [
+        "obj-u24-word-order-contrast"
+      ]
+    },
+    {
+      "unitNumber": 28,
+      "itemIds": [
+        "u28-g-imperfective-adverb-0",
+        "u28-i-imperfective-adverb-1"
+      ],
+      "prompt": "Which English description identifies the timing of читая in this sentence?",
+      "cue": "читая письмо, он улыбался",
+      "answer": "simultaneous with the main predicate",
+      "options": [
+        "simultaneous with the main predicate",
+        "an absolute present label",
+        "a different subject from the main verb"
+      ],
+      "objectiveIds": [
+        "obj-u28-imperfective-adverb"
+      ]
+    },
+    {
+      "unitNumber": 28,
+      "itemIds": [
+        "u28-g-perfective-adverb-0",
+        "u28-i-perfective-adverb-1"
+      ],
+      "prompt": "Choose the English description. When is the perfective verbal adverb interpreted in this sentence?",
+      "cue": "написав письмо, она отправит его завтра",
+      "answer": "anterior to a future main action",
+      "options": [
+        "anterior to a future main action",
+        "an absolute present label",
+        "a different subject from the main verb"
+      ],
+      "objectiveIds": [
+        "obj-u28-perfective-adverb"
+      ]
+    }
+  ],
+  "count": 10,
+  "originalDiagnosticGroupCount": 11,
+  "difference": "Original Unit4 gloss checks now reside in optional vocabulary practice; they no longer form a governed guided/independent pair. The cross-unit Unit7/8 spelling pair is outside this same-unit inventory. Exact duplicate count is not a semantic audit and does not close IA016.",
+  "engineeringDisposition": "OPEN",
+  "formalAcceptance": false
+}

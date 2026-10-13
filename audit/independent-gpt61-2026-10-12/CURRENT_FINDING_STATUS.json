@@ -125,13 +125,19 @@
       "findingId": "IA012",
       "producerSeverity": "HIGH",
       "producerStatus": "OPEN",
-      "engineeringDisposition": "OPEN",
+      "engineeringDisposition": "BOUNDED_PUNCTUATION_FIX_PENDING_INDEPENDENT_VERIFICATION_BROADER_CATEGORY_CUES_OPEN",
       "formalAcceptance": false,
       "diagnosticDisposition": "REPRODUCED_CONTEXTUAL_CREDIT_GAP",
-      "researchBlocker": "No current access blocker on documented API probes; candidate native source/rights/teaching review and implementation remain.",
+      "researchBlocker": "No current documented API access blocker; selected source/rights and linguistic acceptance still pending.",
       "researchEvidencePath": "ia012-unit29-research-verification/RESEARCH_VERIFICATION_MANIFEST.json",
-      "newSourceAdmission": false,
-      "researchCandidatePath": "ia012-unit29-research-verification/public-candidates-2026-10-13/RESEARCH_RECEIPT.json"
+      "newSourceAdmission": true,
+      "researchCandidatePath": "ia012-unit29-research-verification/public-candidates-2026-10-13/RESEARCH_RECEIPT.json",
+      "implementationCommit": "3761263941eb500b0d542df5c2c18d80146fcbb4",
+      "evidencePath": "ia012-unit29-implementation-verification/FINAL_VERIFICATION_MANIFEST.json",
+      "newSourceAdmissionScope": "Two exact selected development sources and four constructions; not whole-article grammar coverage.",
+      "coverageScope": "Four independent comma decisions on already punctuated complete supplied constructions:continuing predicate boundaries, pronoun-headed opening modifier, source-labelled causal exception, terminal modifier. Existing two defaults preserved. Recognition/interpretation, not unrestricted insertion or production.",
+      "optionalReferenceItemId": "u29-i-punctuation-2",
+      "unrestrictedPunctuationProductionClaim": false
     },
     {
       "findingId": "IA013",
@@ -189,7 +195,10 @@
       "producerSeverity": "MEDIUM",
       "producerStatus": "OPEN",
       "engineeringDisposition": "OPEN",
-      "formalAcceptance": false
+      "formalAcceptance": false,
+      "currentExactSameUnitGroups": 10,
+      "inventoryPath": "IA016_CURRENT_DUPLICATE_INVENTORY.json",
+      "continuationPath": "IA016_INDEPENDENT_TRANSFER_PENDING.md"
     },
     {
       "findingId": "IA017",
@@ -210,21 +219,21 @@
   "semanticAcceptancePromoted": false,
   "physicalDeviceAcceptance": "OUTSTANDING",
   "release": "NOT_APPROVED",
-  "latestValidatorImplementationCommit": "1bc59ded74292cd8353fc27f8f89ba89bff80f6d",
-  "latestSourceBindingCheckpoint": "e986509f07923cc5c5fde823dbec69bec8296c8b",
+  "latestValidatorImplementationCommit": "3761263941eb500b0d542df5c2c18d80146fcbb4",
+  "latestSourceBindingCheckpoint": "382250734d298429928d1e3359f5349c6fe6f0b1",
   "remainingSourceReviewPointers": [
     "IA007_SOURCE_REVIEW_PENDING.md",
     "IA008_SOURCE_REVIEW_PENDING.md"
   ],
   "firstBatchImplementationCommit": "4f5cb8024d3f68a37052fdf85b5755bffa2a0904",
   "firstBatchPacketCheckpoint": "49af91a0f5578c63a3b9b98bbe975f40d2758fcc",
-  "latestCurriculumImplementationCommit": "1bc59ded74292cd8353fc27f8f89ba89bff80f6d",
+  "latestCurriculumImplementationCommit": "3761263941eb500b0d542df5c2c18d80146fcbb4",
   "acceptanceOrder": [
     "FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
     "PHYSICAL_DEVICE_ACCEPTANCE_LAST"
   ],
   "physicalDeviceEvidenceRequestTiming": "AFTER_FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
   "latestAppImplementationCommit": "c82e5b4a305c960ca41f660071d0da25070631ea",
-  "latestVerifiedRepositoryCommit": "e986509f07923cc5c5fde823dbec69bec8296c8b",
+  "latestVerifiedRepositoryCommit": "9a04b30909cfb0f3f21509411c695665d7c68f77",
   "latestResearchDiagnosticRepositoryCommit": "0edaa0fc635b3579823f7b352f52fa79a675db3d"
 }

@@ -1,0 +1,782 @@
+{
+  "verifiedRepositoryCommit": "9a04b30909cfb0f3f21509411c695665d7c68f77",
+  "implementationCommit": "3761263941eb500b0d542df5c2c18d80146fcbb4",
+  "sourceBindingCheckpoint": "382250734d298429928d1e3359f5349c6fe6f0b1",
+  "workingDirectory": "/workspace/russian-companion",
+  "command": "bash audit/independent-gpt61-2026-10-12/ia012-unit29-implementation-verification/verify-correction.sh",
+  "expandedScript": "set -e\ncd /workspace/russian-companion\nsource /workspace/setup/android-env.sh\n./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*BatchECapabilityResearchTest.digestsGovernanceAndLaterUnitsStayUnchanged' compileDebugSources lintDebug verifyReleaseGateAttachment --max-workers=4 --console=plain\n",
+  "exitCode": 0,
+  "scope": "FOCUSED_SELECTED_METHODS_ACROSS_TWO_DOCUMENTED_RUNS_NOT_SINGLE_SUITE",
+  "selectors": [
+    "*BatchECapabilityResearchTest.digestsGovernanceAndLaterUnitsStayUnchanged"
+  ],
+  "allCorrectionSelectorsExecuted": true,
+  "classes": [
+    {
+      "className": "dev.russiancompanion.v2.BatchECapabilityResearchTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "methods": [
+        "digestsGovernanceAndLaterUnitsStayUnchanged"
+      ],
+      "timestamp": "2026-10-13T18:19:41.106Z",
+      "sha256": "fb864c593c6c2b42e3ebbe9ef3cc07d506845297c8002e9495cae4160b0b20e3"
+    }
+  ],
+  "correctionRunTotals": {
+    "tests": 1,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "passed": 38,
+  "lint": {
+    "status": "PASSED",
+    "severities": {
+      "Warning": 20,
+      "Hint": 1
+    },
+    "sha256": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6",
+    "task": "> Task :app:lintDebug"
+  },
+  "compilation": "> Task :app:compileDebugSources UP-TO-DATE",
+  "releaseGateAttachment": {
+    "status": "PASSED",
+    "task": "> Task :app:verifyReleaseGateAttachment"
+  },
+  "screenshotExporterExclusions": [
+    {
+      "className": "VisualReviewCaptureTest",
+      "methods": 2,
+      "reason": "Overwrites retained tracked evidence and writes outside the setup verification scope."
+    },
+    {
+      "className": "Units35ChunkCaptureTest",
+      "methods": 2,
+      "reason": "Overwrites retained tracked evidence and writes outside the setup verification scope."
+    },
+    {
+      "className": "Units610ChunkCaptureTest",
+      "methods": 10,
+      "reason": "Overwrites retained tracked evidence and writes outside the setup verification scope."
+    },
+    {
+      "className": "Units1115GapCaptureTest",
+      "methods": 2,
+      "reason": "Overwrites retained tracked evidence and writes outside the setup verification scope."
+    }
+  ],
+  "excludedMethods": 16,
+  "initScriptSha256": {
+    "cloud-validation.gradle": "21c6a0ee2e97cf83c472513ac31c3d2d456e461185384e9b5e58c0fed298d123",
+    "parallel-tests.gradle": "2366eb867708f83db10b39080abff1b45d2e347bab15ce2ec1c95c3d31cf7ff3"
+  },
+  "androidEnvironmentActivationSha256": "7b43d8cc2eb67096aa87a50863a7fcf3f91fa644ceed87fbd2f7b377b35a1182",
+  "logSha256": "f22f2a119fdb88d21ae1f5e7e5be4f2134fc69e711b4fea205bd6bee4aab0a33",
+  "rawCurriculumSha256": "efd130b055b5943462ad14979925e6aaddcb6f598bb016592da78062fd92a5be",
+  "packContentReviewDigest": "7b8428298d5896c2c50ece4191bc39f87ddb45e07320fbdf3ff14d0e1ab97c88",
+  "repositorySourceDigest": "bbb002d32acf65589119430185433a4d5777d15a83181f9a700f65bf1d9eda55",
+  "apk": {
+    "applicationId": "dev.russiancompanion",
+    "versionName": "2.0.0-dev",
+    "versionCode": 5,
+    "assembled": false,
+    "signed": false,
+    "artifactIdentity": "NOT_RECORDED",
+    "sha256": "NOT_RECORDED",
+    "signature": "NOT_RECORDED",
+    "historicalArtifactScope": "Earlier main/frozen artifacts are not this source candidate."
+  },
+  "baselineNegative": {
+    "commit": "e4085c5686e1c58a0af43e1c1f66fbb573f56887",
+    "tests": 1,
+    "failures": 1,
+    "errors": 0,
+    "skipped": 0,
+    "command": "source /workspace/setup/android-env.sh; ./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*Unit29PunctuationContextRegressionTest' --max-workers=4 --console=plain",
+    "scope": "Baseline curriculum plus new uncommitted diagnostic harness; original3 answers first demonstrate objective, then complete-context requirement fails."
+  },
+  "initialValidation": {
+    "repositoryHead": "e4085c5686e1c58a0af43e1c1f66fbb573f56887",
+    "workingTree": "Uncommitted punctuation/native-source/validator/context-pin implementation plus diagnostic test harness.",
+    "rawCurriculumSha256": "eb6e6ca8469517801f6cf5cca8eaf4762178c54627d564cd6bdabb80c36f0a1d",
+    "nativePinCodeSha256": "c59ad5924a61bfe5d43c0efe911240794449baec0855e6cb1674dedbaef667b4",
+    "command": "source /workspace/setup/android-env.sh; ./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*Unit29PunctuationContextRegressionTest' --tests '*Unit29InstructionTest' --max-workers=4 --console=plain",
+    "tests": 6,
+    "failures": 1,
+    "errors": 0,
+    "skipped": 0,
+    "diagnosis": "The first prototype lacked exact Cyrillic-region/native-name coverage records. Complete sentence selections alone do not satisfy the existing exact region validator. Added mechanically selected fragments without changing learner Russian or loosening the validator."
+  },
+  "integrationHistory": {
+    "baselineCommit": "e4085c5686e1c58a0af43e1c1f66fbb573f56887",
+    "secondIntegration": {
+      "tests": 6,
+      "failures": 1,
+      "errors": 0,
+      "skipped": 0,
+      "diagnosis": "Exact native coverage accepted; four new English classifications lacked an explicit English/label prompt. Prompt changed to Which English description..., existing response-shape validator unchanged."
+    },
+    "regressionCompileFailure": {
+      "testsExecuted": 0,
+      "diagnosis": "New test called endsWith on nullable promptLetter; corrected test null assertion. This is not a test failure or passing scope."
+    },
+    "scope": "Uncommitted implementation at recorded baseline HEAD, not pristine-baseline verification.",
+    "wrapperFailure": {
+      "repositoryCommit": "382250734d298429928d1e3359f5349c6fe6f0b1",
+      "shellExitCode": 127,
+      "actualExecutedTests": 11,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "lintExecuted": false,
+      "gateAttachmentExecuted": false,
+      "diagnosis": "Missing shell continuation ran only the new punctuation class, then --tests was treated as a command. Replaced continuation-based list with a bash argument array. No integration-pass claim."
+    },
+    "snapshotFixtureRefresh": {
+      "file": "app/src/test/java/dev/russiancompanion/v2/Units2630SourceIntakeTest.kt",
+      "unit": 20,
+      "oldDigest": "bb408265fb5239daeb86d43c007061bff330e02a0a9afc1aa677526ccf57302b",
+      "newDigest": "9238893adafd8d2001561e254f2471a7f23067f1979827873b970ed467768688",
+      "reason": "Prior Unit20 correction intentionally changed its content; current baseline review manifest already binds the new digest. Other24 neighboring snapshots unchanged. Identified by comparison before executing the repaired selected scope, not a failure observed in this run."
+    }
+  },
+  "expandedValidation": {
+    "tests": 16,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "classes": 2,
+    "scope": "Uncommitted corrected implementation at e408 HEAD; overlaps final scope, do not sum."
+  },
+  "historicalScope": {
+    "mainCommit": "ff539220645670fbf7a1abacaa6f71e828606b80",
+    "mainSourceTestAnnotations": 579,
+    "mainExporterExclusions": 16,
+    "mainReportedTests": 563,
+    "mainPassed": 562,
+    "mainSkipped": 1,
+    "pr64BaselineCommit": "420f41ff6c2a4417cd829fdee0179b6a3b797eff",
+    "pr64BaselineSourceTestAnnotations": 691,
+    "sourceAnnotationDifference": 112,
+    "pr64HandoffExecutionVerified": false,
+    "interpretation": "These38 focused tests do not establish a complete-suite result or validate the historical handoff execution. Scopes overlap and are not summed."
+  },
+  "coverageScope": "Four independent comma decisions on already punctuated complete supplied constructions:continuing predicate boundaries, pronoun-headed opening modifier, source-labelled causal exception, terminal modifier. Existing two defaults preserved. Recognition/interpretation, not unrestricted insertion or production.",
+  "unrestrictedPunctuationProductionClaim": false,
+  "findingDisposition": "ENGINEERING_FIX_PENDING_INDEPENDENT_VERIFICATION",
+  "formalSourceRightsLinguisticAcceptance": false,
+  "physicalDeviceAcceptance": "OUTSTANDING_LAST_AFTER_FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
+  "release": "NOT_APPROVED",
+  "verifiedWorkingTree": "Committed production/curriculum/test/review inputs at verifiedRepositoryCommit. Later checkpoint/diagnostic inventory files do not enter these production inputs or selected test calculations.",
+  "integrationRun": {
+    "repositoryCommit": "26b83e34651c235c1abc97b5bf9e094e36a3998e",
+    "command": "bash audit/independent-gpt61-2026-10-12/ia012-unit29-implementation-verification/verify.sh",
+    "expandedScript": "set -e\ncd /workspace/russian-companion\nsource /workspace/setup/android-env.sh\nchecks=(\n  --tests '*Unit29PunctuationContextRegressionTest'\n  --tests '*Unit20DirectionalityApplicationTest.motionCompletionMustRequireDistinctIndependentDirectionalityContexts'\n  --tests '*Unit29InstructionTest'\n  --tests '*Unit29ShortAdjectiveCorrectionTest.grammarGateMustNotBeSatisfiedByVocabularyGlosses'\n  --tests '*Unit29ActiveTimeCorrectionTest.creditedCheckMustInterpretADistinctAdmittedFormRatherThanTheOppositeLabel'\n  --tests '*Unit30LanguageCorrectionTest.languageCompletionMustNotDependOnEnglishTableOrHeadingAnswers'\n  --tests '*LabExplanationCorrectionTest'\n  --tests '*V2RebuildTest.structuralMappingSafeguardsRejectIncompleteOrInventedRecords'\n  --tests '*UnitReviewPipelineTest.committedUnitPackagesMatchTheGenerator'\n  --tests '*CurriculumReadinessReconciliationTest.committedReportsMatchTheGeneratorAndStayByteIdentical'\n  --tests '*OwnerGovernanceDecisionTest.preparationManifestBindsFactsAndDoesNotPassAFinalAudit'\n  --tests '*GapClosureDossierTest.dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease'\n  --tests '*ReleaseSourceDigestTest.committedCandidateRecordsTheCurrentSourceDigestAndIdentity'\n  --tests '*BatchECapabilityResearchTest.digestsGovernanceAndLaterUnitsStayUnchanged'\n  --tests '*Units2630SourceIntakeTest.retainedSourceBytesMatchTheFrozenIdentityTwice'\n  --tests '*Units2630SourceIntakeTest.admittedCapabilitiesBindSpanUnitObjectiveAndClaim'\n  --tests '*Units2630SourceIntakeTest.partialStrandsDoNotClearBroadClaimsAndOptionalMaterialDoesNotGate'\n  --tests '*Units2630SourceIntakeTest.generatedRussianPenguinAudioAndReleaseStayClosed'\n  --tests '*BatchAUnits71620Test.admittedCapabilitiesRejectForgeryCrossBindingAndWrongSpans'\n  --tests '*CompleteRuleCorrectionTest.coordinatedKeyAndApplicationEditsCannotReverseTheFrozenContext'\n  --tests '*Unit9QuantityRuleCorrectionTest.coordinatedKeyAndApplicationEditsCannotReverseTheTeenContext'\n  --tests '*Unit9QuantityRuleCorrectionTest.threeChoiceContextCannotSwapItsAnswerAndApplicationTogether'\n)\n./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest \"${checks[@]}\" compileDebugSources lintDebug verifyReleaseGateAttachment --max-workers=4 --console=plain\n",
+    "exitCode": 1,
+    "totals": {
+      "tests": 38,
+      "failures": 1,
+      "errors": 0,
+      "skipped": 0
+    },
+    "passed": 37,
+    "classes": [
+      {
+        "className": "dev.russiancompanion.release.ReleaseSourceDigestTest",
+        "methods": [
+          {
+            "name": "committedCandidateRecordsTheCurrentSourceDigestAndIdentity",
+            "failed": false
+          }
+        ],
+        "timestamp": "2026-10-13T18:09:34.818Z",
+        "sha256": "b7fede08504465f4d2b4c3ae2d057b376499c6de157a12a29026e72c9c776891",
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "className": "dev.russiancompanion.v2.BatchAUnits71620Test",
+        "methods": [
+          {
+            "name": "admittedCapabilitiesRejectForgeryCrossBindingAndWrongSpans",
+            "failed": false
+          }
+        ],
+        "timestamp": "2026-10-13T18:10:31.829Z",
+        "sha256": "897d74c4f20e1bc11af9b29d3a2b4d6d3ebd13ec76bfffdf9db53f7e34602de7",
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "className": "dev.russiancompanion.v2.BatchECapabilityResearchTest",
+        "methods": [
+          {
+            "name": "digestsGovernanceAndLaterUnitsStayUnchanged",
+            "failed": true
+          }
+        ],
+        "timestamp": "2026-10-13T18:14:28.057Z",
+        "sha256": "349623bb7c6ad703db502b96ba0f6043c6ee5198e4adfe1d126a39d0249c5446",
+        "tests": 1,
+        "failures": 1,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "className": "dev.russiancompanion.v2.CompleteRuleCorrectionTest",
+        "methods": [
+          {
+            "name": "coordinatedKeyAndApplicationEditsCannotReverseTheFrozenContext",
+            "failed": false
+          }
+        ],
+        "timestamp": "2026-10-13T18:14:28.941Z",
+        "sha256": "30619361fa310763a766e087e6a7d616601be2c459bc3c050454ed40559c21e6",
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "className": "dev.russiancompanion.v2.LabExplanationCorrectionTest",
+        "methods": [
+          {
+            "name": "wrongGrammarAnswerCanReviewDeclaredTeachingWithoutWritingProgress",
+            "failed": false
+          },
+          {
+            "name": "crossUnitDeclarationsCannotRevealFutureTeaching",
+            "failed": false
+          },
+          {
+            "name": "correctVocabularyAnswerCanReviewTeachingAndKeepItsSavedSelection",
+            "failed": false
+          }
+        ],
+        "timestamp": "2026-10-13T18:11:49.868Z",
+        "sha256": "d4be7fa7e304be177521c6fa014d66dad6d2f5cdf3cbcfd63e491465f564bd89",
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "className": "dev.russiancompanion.v2.Unit20DirectionalityApplicationTest",
+        "methods": [
+          {
+            "name": "motionCompletionMustRequireDistinctIndependentDirectionalityContexts",
+            "failed": false
+          }
+        ],
+        "timestamp": "2026-10-13T18:09:25.498Z",
+        "sha256": "2171d73f14c5ba89c22779756ba235d3bc37c67cfdebd2070b9097dcab6fc932",
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "className": "dev.russiancompanion.v2.Unit29ActiveTimeCorrectionTest",
+        "methods": [
+          {
+            "name": "creditedCheckMustInterpretADistinctAdmittedFormRatherThanTheOppositeLabel",
+            "failed": false
+          }
+        ],
+        "timestamp": "2026-10-13T18:16:49.164Z",
+        "sha256": "13b71e05c2a5f4c1d17059aa16d790b209e8a9c948b8483b90d51f1f3755a05b",
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "className": "dev.russiancompanion.v2.Unit29InstructionTest",
+        "methods": [
+          {
+            "name": "instructionSeparatesTimeMeaningAndClassifiesTheDisplayedForm",
+            "failed": false
+          },
+          {
+            "name": "registerDoesNotReplaceActorSequenceOrEventMeaning",
+            "failed": false
+          },
+          {
+            "name": "remediationRestoresEveryCardAndEveryExampleBeforePractice",
+            "failed": false
+          },
+          {
+            "name": "independentlyAuthoredPendingCoveragePassesTheProductionValidator",
+            "failed": false
+          },
+          {
+            "name": "punctuationExplainsBothBoundariesAndTheExceptions",
+            "failed": false
+          }
+        ],
+        "timestamp": "2026-10-13T18:12:43.614Z",
+        "sha256": "10e5c8eeee9e7b24b6453136e3c16bba56874fd82dd65298e671447c3a52682b",
+        "tests": 5,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "className": "dev.russiancompanion.v2.Unit29PunctuationContextRegressionTest",
+        "methods": [
+          {
+            "name": "optionalReferenceHasTeachingButNoGrammarCredit",
+            "failed": false
+          },
+          {
+            "name": "categoryAndConnectiveCreditMustNotDemonstrateContextualPunctuation",
+            "failed": false
+          },
+          {
+            "name": "coordinatedKeyAndApplicationCannotRemovePronounComma",
+            "failed": false
+          },
+          {
+            "name": "coherentNativeTextAndHashForgeryCannotRemoveTerminalComma",
+            "failed": false
+          },
+          {
+            "name": "newSourceCannotBorrowAnOlderAdmittedRevisionOrAddGhostRecord",
+            "failed": false
+          },
+          {
+            "name": "playerRejectsNoCommaForPersonalPronoun",
+            "failed": false
+          },
+          {
+            "name": "sourceNormalizationPreservesCompleteWordsAndPunctuation",
+            "failed": false
+          },
+          {
+            "name": "originalDefaultAnswersCannotCompleteExpandedPunctuation",
+            "failed": false
+          },
+          {
+            "name": "restoringOriginalContrastCategoryCannotClearPunctuationCapability",
+            "failed": false
+          },
+          {
+            "name": "authenticHistoricalCompletionStaysSavedButCannotCreditNewChecks",
+            "failed": false
+          },
+          {
+            "name": "playerRejectsClosingCommaAtSentenceEnd",
+            "failed": false
+          }
+        ],
+        "timestamp": "2026-10-13T18:10:15.918Z",
+        "sha256": "45310337f9050d57c45340422e2d21fe9db590c4377ee929421399b7cb639294",
+        "tests": 11,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "className": "dev.russiancompanion.v2.Unit29ShortAdjectiveCorrectionTest",
+        "methods": [
+          {
+            "name": "grammarGateMustNotBeSatisfiedByVocabularyGlosses",
+            "failed": false
+          }
+        ],
+        "timestamp": "2026-10-13T18:17:42.307Z",
+        "sha256": "f4e40712908d3953675bef120b4ef7286d5d3f685dea470d5354204e2f99e050",
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "className": "dev.russiancompanion.v2.Unit30LanguageCorrectionTest",
+        "methods": [
+          {
+            "name": "languageCompletionMustNotDependOnEnglishTableOrHeadingAnswers",
+            "failed": false
+          }
+        ],
+        "timestamp": "2026-10-13T18:13:04.829Z",
+        "sha256": "a005ff40ca656b1b0d6a9c6616476de9d8199ed090874eaf71e6daf977b8d97c",
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "className": "dev.russiancompanion.v2.Unit9QuantityRuleCorrectionTest",
+        "methods": [
+          {
+            "name": "threeChoiceContextCannotSwapItsAnswerAndApplicationTogether",
+            "failed": false
+          },
+          {
+            "name": "coordinatedKeyAndApplicationEditsCannotReverseTheTeenContext",
+            "failed": false
+          }
+        ],
+        "timestamp": "2026-10-13T18:12:18.691Z",
+        "sha256": "b62bef97b2d17e20c32c55cc5794e5964a07f4814900fdaaa5f18370cbab2cbf",
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "className": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+        "methods": [
+          {
+            "name": "partialStrandsDoNotClearBroadClaimsAndOptionalMaterialDoesNotGate",
+            "failed": false
+          },
+          {
+            "name": "admittedCapabilitiesBindSpanUnitObjectiveAndClaim",
+            "failed": false
+          },
+          {
+            "name": "generatedRussianPenguinAudioAndReleaseStayClosed",
+            "failed": false
+          },
+          {
+            "name": "retainedSourceBytesMatchTheFrozenIdentityTwice",
+            "failed": false
+          }
+        ],
+        "timestamp": "2026-10-13T18:18:04.464Z",
+        "sha256": "3b22aac3b4a6b450fe2359b58144f03c739e55ca0c238e2107c4cbc86c635135",
+        "tests": 4,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "className": "dev.russiancompanion.v2.V2RebuildTest",
+        "methods": [
+          {
+            "name": "structuralMappingSafeguardsRejectIncompleteOrInventedRecords",
+            "failed": false
+          }
+        ],
+        "timestamp": "2026-10-13T18:15:20.045Z",
+        "sha256": "f39e4667fe6c7346b3b08959d99265a862667389bf75b1f15d6ed78d368b5721",
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "className": "dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest",
+        "methods": [
+          {
+            "name": "committedReportsMatchTheGeneratorAndStayByteIdentical",
+            "failed": false
+          }
+        ],
+        "timestamp": "2026-10-13T18:13:07.104Z",
+        "sha256": "d037efbdca92c8ad9b91a2a9ae56e25f7d9da504e647084f3ccfc276f3f5e22b",
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "className": "dev.russiancompanion.v2.audit.GapClosureDossierTest",
+        "methods": [
+          {
+            "name": "dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease",
+            "failed": false
+          }
+        ],
+        "timestamp": "2026-10-13T18:12:45.480Z",
+        "sha256": "0b1361136704485941d6b93db5d5c7ba1c29924703bae6d8da045b63f77898bd",
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "className": "dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest",
+        "methods": [
+          {
+            "name": "preparationManifestBindsFactsAndDoesNotPassAFinalAudit",
+            "failed": false
+          }
+        ],
+        "timestamp": "2026-10-13T18:18:27.753Z",
+        "sha256": "54ab9769e847400c7f5c012246b8c111bafecae2bd5d367851dc36ebe8dd287f",
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "className": "dev.russiancompanion.v2.review.UnitReviewPipelineTest",
+        "methods": [
+          {
+            "name": "committedUnitPackagesMatchTheGenerator",
+            "failed": false
+          }
+        ],
+        "timestamp": "2026-10-13T18:16:46.971Z",
+        "sha256": "cfdb04c400719eba67ab34553c723d7937f7adc7e81938730f42f6c8e5bf6585",
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      }
+    ],
+    "diagnosis": "Unit29 content/review digest expectations in the current snapshot map were not refreshed after the punctuation correction. All37 other selected tests pass. Refresh only those two Unit29 expectations against the generated current manifest and proven baseline/current identity comparison; preserve historical hashes explicitly. No production/asset/source/mapping change is needed."
+  },
+  "correctionRun": {
+    "repositoryCommit": "9a04b30909cfb0f3f21509411c695665d7c68f77",
+    "command": "bash audit/independent-gpt61-2026-10-12/ia012-unit29-implementation-verification/verify-correction.sh",
+    "totals": {
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "classes": [
+      {
+        "className": "dev.russiancompanion.v2.BatchECapabilityResearchTest",
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "methods": [
+          "digestsGovernanceAndLaterUnitsStayUnchanged"
+        ],
+        "timestamp": "2026-10-13T18:19:41.106Z",
+        "sha256": "fb864c593c6c2b42e3ebbe9ef3cc07d506845297c8002e9495cae4160b0b20e3"
+      }
+    ],
+    "exitCode": 0
+  },
+  "uniquePassedSelectedMethods": 38,
+  "uniqueClassesCovered": 18,
+  "passedSelectedMethods": [
+    {
+      "className": "dev.russiancompanion.release.ReleaseSourceDigestTest",
+      "method": "committedCandidateRecordsTheCurrentSourceDigestAndIdentity",
+      "successfulRepositoryCommit": "26b83e34651c235c1abc97b5bf9e094e36a3998e"
+    },
+    {
+      "className": "dev.russiancompanion.v2.BatchAUnits71620Test",
+      "method": "admittedCapabilitiesRejectForgeryCrossBindingAndWrongSpans",
+      "successfulRepositoryCommit": "26b83e34651c235c1abc97b5bf9e094e36a3998e"
+    },
+    {
+      "className": "dev.russiancompanion.v2.BatchECapabilityResearchTest",
+      "method": "digestsGovernanceAndLaterUnitsStayUnchanged",
+      "successfulRepositoryCommit": "9a04b30909cfb0f3f21509411c695665d7c68f77"
+    },
+    {
+      "className": "dev.russiancompanion.v2.CompleteRuleCorrectionTest",
+      "method": "coordinatedKeyAndApplicationEditsCannotReverseTheFrozenContext",
+      "successfulRepositoryCommit": "26b83e34651c235c1abc97b5bf9e094e36a3998e"
+    },
+    {
+      "className": "dev.russiancompanion.v2.LabExplanationCorrectionTest",
+      "method": "correctVocabularyAnswerCanReviewTeachingAndKeepItsSavedSelection",
+      "successfulRepositoryCommit": "26b83e34651c235c1abc97b5bf9e094e36a3998e"
+    },
+    {
+      "className": "dev.russiancompanion.v2.LabExplanationCorrectionTest",
+      "method": "crossUnitDeclarationsCannotRevealFutureTeaching",
+      "successfulRepositoryCommit": "26b83e34651c235c1abc97b5bf9e094e36a3998e"
+    },
+    {
+      "className": "dev.russiancompanion.v2.LabExplanationCorrectionTest",
+      "method": "wrongGrammarAnswerCanReviewDeclaredTeachingWithoutWritingProgress",
+      "successfulRepositoryCommit": "26b83e34651c235c1abc97b5bf9e094e36a3998e"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit20DirectionalityApplicationTest",
+      "method": "motionCompletionMustRequireDistinctIndependentDirectionalityContexts",
+      "successfulRepositoryCommit": "26b83e34651c235c1abc97b5bf9e094e36a3998e"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit29ActiveTimeCorrectionTest",
+      "method": "creditedCheckMustInterpretADistinctAdmittedFormRatherThanTheOppositeLabel",
+      "successfulRepositoryCommit": "26b83e34651c235c1abc97b5bf9e094e36a3998e"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit29InstructionTest",
+      "method": "independentlyAuthoredPendingCoveragePassesTheProductionValidator",
+      "successfulRepositoryCommit": "26b83e34651c235c1abc97b5bf9e094e36a3998e"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit29InstructionTest",
+      "method": "instructionSeparatesTimeMeaningAndClassifiesTheDisplayedForm",
+      "successfulRepositoryCommit": "26b83e34651c235c1abc97b5bf9e094e36a3998e"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit29InstructionTest",
+      "method": "punctuationExplainsBothBoundariesAndTheExceptions",
+      "successfulRepositoryCommit": "26b83e34651c235c1abc97b5bf9e094e36a3998e"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit29InstructionTest",
+      "method": "registerDoesNotReplaceActorSequenceOrEventMeaning",
+      "successfulRepositoryCommit": "26b83e34651c235c1abc97b5bf9e094e36a3998e"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit29InstructionTest",
+      "method": "remediationRestoresEveryCardAndEveryExampleBeforePractice",
+      "successfulRepositoryCommit": "26b83e34651c235c1abc97b5bf9e094e36a3998e"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit29PunctuationContextRegressionTest",
+      "method": "authenticHistoricalCompletionStaysSavedButCannotCreditNewChecks",
+      "successfulRepositoryCommit": "26b83e34651c235c1abc97b5bf9e094e36a3998e"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit29PunctuationContextRegressionTest",
+      "method": "categoryAndConnectiveCreditMustNotDemonstrateContextualPunctuation",
+      "successfulRepositoryCommit": "26b83e34651c235c1abc97b5bf9e094e36a3998e"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit29PunctuationContextRegressionTest",
+      "method": "coherentNativeTextAndHashForgeryCannotRemoveTerminalComma",
+      "successfulRepositoryCommit": "26b83e34651c235c1abc97b5bf9e094e36a3998e"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit29PunctuationContextRegressionTest",
+      "method": "coordinatedKeyAndApplicationCannotRemovePronounComma",
+      "successfulRepositoryCommit": "26b83e34651c235c1abc97b5bf9e094e36a3998e"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit29PunctuationContextRegressionTest",
+      "method": "newSourceCannotBorrowAnOlderAdmittedRevisionOrAddGhostRecord",
+      "successfulRepositoryCommit": "26b83e34651c235c1abc97b5bf9e094e36a3998e"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit29PunctuationContextRegressionTest",
+      "method": "optionalReferenceHasTeachingButNoGrammarCredit",
+      "successfulRepositoryCommit": "26b83e34651c235c1abc97b5bf9e094e36a3998e"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit29PunctuationContextRegressionTest",
+      "method": "originalDefaultAnswersCannotCompleteExpandedPunctuation",
+      "successfulRepositoryCommit": "26b83e34651c235c1abc97b5bf9e094e36a3998e"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit29PunctuationContextRegressionTest",
+      "method": "playerRejectsClosingCommaAtSentenceEnd",
+      "successfulRepositoryCommit": "26b83e34651c235c1abc97b5bf9e094e36a3998e"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit29PunctuationContextRegressionTest",
+      "method": "playerRejectsNoCommaForPersonalPronoun",
+      "successfulRepositoryCommit": "26b83e34651c235c1abc97b5bf9e094e36a3998e"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit29PunctuationContextRegressionTest",
+      "method": "restoringOriginalContrastCategoryCannotClearPunctuationCapability",
+      "successfulRepositoryCommit": "26b83e34651c235c1abc97b5bf9e094e36a3998e"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit29PunctuationContextRegressionTest",
+      "method": "sourceNormalizationPreservesCompleteWordsAndPunctuation",
+      "successfulRepositoryCommit": "26b83e34651c235c1abc97b5bf9e094e36a3998e"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit29ShortAdjectiveCorrectionTest",
+      "method": "grammarGateMustNotBeSatisfiedByVocabularyGlosses",
+      "successfulRepositoryCommit": "26b83e34651c235c1abc97b5bf9e094e36a3998e"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit30LanguageCorrectionTest",
+      "method": "languageCompletionMustNotDependOnEnglishTableOrHeadingAnswers",
+      "successfulRepositoryCommit": "26b83e34651c235c1abc97b5bf9e094e36a3998e"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit9QuantityRuleCorrectionTest",
+      "method": "coordinatedKeyAndApplicationEditsCannotReverseTheTeenContext",
+      "successfulRepositoryCommit": "26b83e34651c235c1abc97b5bf9e094e36a3998e"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit9QuantityRuleCorrectionTest",
+      "method": "threeChoiceContextCannotSwapItsAnswerAndApplicationTogether",
+      "successfulRepositoryCommit": "26b83e34651c235c1abc97b5bf9e094e36a3998e"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+      "method": "admittedCapabilitiesBindSpanUnitObjectiveAndClaim",
+      "successfulRepositoryCommit": "26b83e34651c235c1abc97b5bf9e094e36a3998e"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+      "method": "generatedRussianPenguinAudioAndReleaseStayClosed",
+      "successfulRepositoryCommit": "26b83e34651c235c1abc97b5bf9e094e36a3998e"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+      "method": "partialStrandsDoNotClearBroadClaimsAndOptionalMaterialDoesNotGate",
+      "successfulRepositoryCommit": "26b83e34651c235c1abc97b5bf9e094e36a3998e"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+      "method": "retainedSourceBytesMatchTheFrozenIdentityTwice",
+      "successfulRepositoryCommit": "26b83e34651c235c1abc97b5bf9e094e36a3998e"
+    },
+    {
+      "className": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "structuralMappingSafeguardsRejectIncompleteOrInventedRecords",
+      "successfulRepositoryCommit": "26b83e34651c235c1abc97b5bf9e094e36a3998e"
+    },
+    {
+      "className": "dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest",
+      "method": "committedReportsMatchTheGeneratorAndStayByteIdentical",
+      "successfulRepositoryCommit": "26b83e34651c235c1abc97b5bf9e094e36a3998e"
+    },
+    {
+      "className": "dev.russiancompanion.v2.audit.GapClosureDossierTest",
+      "method": "dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease",
+      "successfulRepositoryCommit": "26b83e34651c235c1abc97b5bf9e094e36a3998e"
+    },
+    {
+      "className": "dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest",
+      "method": "preparationManifestBindsFactsAndDoesNotPassAFinalAudit",
+      "successfulRepositoryCommit": "26b83e34651c235c1abc97b5bf9e094e36a3998e"
+    },
+    {
+      "className": "dev.russiancompanion.v2.review.UnitReviewPipelineTest",
+      "method": "committedUnitPackagesMatchTheGenerator",
+      "successfulRepositoryCommit": "26b83e34651c235c1abc97b5bf9e094e36a3998e"
+    }
+  ],
+  "all22IntegrationSelectorsExecuted": true,
+  "scopeExplanation": "The38-test integration run passed37 and failed one stale Unit29 digest expectation. After changing only the two Unit29 snapshot expectations, the affected one-test run passes. These are38 unique selected methods across two recorded commits/runs, not a single38/0 run or a complete suite. Do not sum overlapping scopes. Production/curriculum inputs are byte-identical across the correction.",
+  "productionInputsIdenticalAcrossSnapshotCorrection": true,
+  "snapshotExpectationRefresh": {
+    "baselineCommit": "e4085c5686e1c58a0af43e1c1f66fbb573f56887",
+    "file": "app/src/test/java/dev/russiancompanion/v2/BatchECapabilityResearchTest.kt",
+    "unit": 29,
+    "changes": [
+      {
+        "field": "contentReviewDigest",
+        "before": "b35528e0a8ca27fed0fe18541aab59755d6adcad90a7ccaae86c1f8318ab9374",
+        "after": "454026c94347703fa15b6e305bf4319edcc1542e6a9eb786709186b435753501"
+      },
+      {
+        "field": "reviewPackageDigest",
+        "before": "73eeb58d502dc27b52246f6c92bc52b4e8847ccce1c429806d28a18701d07639",
+        "after": "2d3a8b3cdf53c88aab9cf389a8750cab1146ba02ca3d5ee47a4690ab8353446f"
+      }
+    ],
+    "allOtherSnapshotAndMappingExpectationsUnchanged": true,
+    "productionSourceAndCurriculumChanged": false,
+    "formalAcceptance": false
+  }
+}
