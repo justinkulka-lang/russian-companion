@@ -2128,6 +2128,13 @@ internal object V2Validator {
                     CompleteRuleContextPins.itemMatches(pack, it) && structureValid(pack, it).isEmpty()
             }
         }
+        if (capability.unitNumber == 30 && capability.objectiveId == "obj-u30-letter-names") {
+            return capability.sourceId == "src-wikipedia-russian-alphabet-1371795481" &&
+                capability.sourceRevision == "1371795481" && capability.supportedClaim == "letter-name-review" &&
+                capability.sourceHash == "0ebe7c0ee3c60d5e931fe34660098e88ee1b955585bddb9f03e2388c00dfc526" &&
+                spanHost.sourceHash == capability.sourceHash && spanHost.originalSourceText == capability.exactSpan &&
+                verifiedFrozen(spanHost) && Unit30LanguagePins.matches(pack,objective)
+        }
         return objective.checkItemIds.mapNotNull { pack.item(it) }.any { item ->
             val participants = item.assessment?.relationParticipantIds.orEmpty().mapNotNull { id ->
                 pack.provenanceRecords.firstOrNull { it.itemId == id }
@@ -2625,6 +2632,9 @@ internal object V2Validator {
     private fun validateGovernedChecks(pack: V2CurriculumPack, unit: V2Unit, errors: MutableList<String>) {
         val generic = "Return to the explanation. Compare the shown form with the admitted record."
         unit.objectives.filter { it.kind == "RECOGNITION" }.forEach { objective ->
+            if (Unit30LanguagePins.governs(objective.id) && !Unit30LanguagePins.matches(pack,objective)) {
+                errors += "Objective ${objective.id} has no frozen native language application chain"
+            }
             val checks = objective.checkItemIds.mapNotNull { pack.item(it) }
             if (checks.none { it.kind in GRAMMAR_ITEM_KINDS }) {
                 errors += "Unit ${unit.number} objective ${objective.id} has no check of its grammatical distinction"
@@ -3443,7 +3453,7 @@ internal object V2Validator {
         return null
     }
 
-    private fun structureValid(pack: V2CurriculumPack, item: V2CheckItem): List<String> {
+    internal fun structureValid(pack: V2CurriculumPack, item: V2CheckItem): List<String> {
         val errors = mutableListOf<String>()
         val assessment = item.assessment
         if (item.kind !in GRAMMAR_ITEM_KINDS) {

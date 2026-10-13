@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit30InstructionTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-13T14:58:18.692Z" hostname="d0fbcd1608d3" time="12.69">
+  <properties/>
+  <testcase name="particlesStoryAndDictionaryRequireMeaningAndInformationLimits" classname="dev.russiancompanion.v2.Unit30InstructionTest" time="2.181"/>
+  <testcase name="letterNameAndHeadingQuestionsDoNotChangeTheExampleMeaning" classname="dev.russiancompanion.v2.Unit30InstructionTest" time="0.568"/>
+  <testcase name="allTeachingAndExamplesReturnOnRemediation" classname="dev.russiancompanion.v2.Unit30InstructionTest" time="0.203"/>
+  <testcase name="pendingInstructionAndProductionValidationRemainValid" classname="dev.russiancompanion.v2.Unit30InstructionTest" time="9.201"/>
+  <testcase name="addressAndAbbreviationTeachingExplainsRolesAndTheSourceLimit" classname="dev.russiancompanion.v2.Unit30InstructionTest" time="0.53"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -47,6 +47,12 @@ internal object CompleteRuleContextPins {
         "ca-rule-context:u29-g-adjective-function-a" to "edb38fef41c45fa4670017d59b638788840d16effb462d12a1606b6f00d72e71",
         "ca-rule-context:u29-i-adjective-function-p" to "54aefc16d00f1d02086708f5c4179c0dc32246995112091d15e5f2949a147df8",
         "ca-rule-context:u29-i-adjective-function-a" to "7911da4d3d2801aff276a748857ad36f62c908688c7acfadda1d3e3f9eb4100b",
+        "ca-rule-context:u30-g-native-name-a" to "e3f425a75d361194640545a2d9bb8953bb1210a7a83f4f1bfd5478d616764b15",
+        "ca-rule-context:u30-i-native-name-b" to "dad717a9bd2e922ec1928722809889c70ddaa13c8eb592374fa309ccdbd29599",
+        "ca-rule-context:u30-i-native-name-v" to "3aa25a0c838ae473dab41d3b342356c8954d3451f936d08b9037da28a0cd42be",
+        "ca-rule-context:u30-g-initialism-use" to "e81c42ab58a78291c231a2a16d85653cb2b007c677d52359ca7acab5286f6fc9",
+        "ca-rule-context:u30-i-initialism-ussr" to "086cd55cb22cf71d9b3d76b3c14ed7c38374bb9e234aceede9bd49db1423099f",
+        "ca-rule-context:u30-i-initialism-usa" to "faa37cf30839ed5b0dad01b7236b594872d6acd39fd6a48bc322ef55bab8062c",
     )
     fun required(itemId: String) = hashes.containsKey("ca-rule-context:$itemId")
     private fun hash(value: String) = MessageDigest.getInstance("SHA-256").digest(value.toByteArray(Charsets.UTF_8))
@@ -69,6 +75,8 @@ internal object CompleteRuleContextPins {
     }
     fun itemMatches(pack: V2CurriculumPack, item: V2CheckItem): Boolean {
         val expectedObjective = when {
+            item.id.startsWith("u30-") && "-native-name-" in item.id -> "obj-u30-letter-names"
+            item.id.startsWith("u30-") && "-initialism-" in item.id -> "obj-u30-abbrev-examples"
             item.id.startsWith("u29-") && ("-short-agreement-" in item.id || "-adjective-function-" in item.id) -> "obj-u29-short-adjective"
             item.id in setOf("u29-g-adjective-form-0", "u29-i-adjective-form-1", "u29-i-adjective-form-2") -> "obj-u29-short-adjective"
             item.id == "u29-i-active-2" -> "obj-u29-active"
