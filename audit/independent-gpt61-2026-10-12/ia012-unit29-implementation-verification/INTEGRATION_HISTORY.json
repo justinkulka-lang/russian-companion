@@ -11,5 +11,23 @@
     "testsExecuted": 0,
     "diagnosis": "New test called endsWith on nullable promptLetter; corrected test null assertion. This is not a test failure or passing scope."
   },
-  "scope": "Uncommitted implementation at recorded baseline HEAD, not pristine-baseline verification."
+  "scope": "Uncommitted implementation at recorded baseline HEAD, not pristine-baseline verification.",
+  "wrapperFailure": {
+    "repositoryCommit": "382250734d298429928d1e3359f5349c6fe6f0b1",
+    "shellExitCode": 127,
+    "actualExecutedTests": 11,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "lintExecuted": false,
+    "gateAttachmentExecuted": false,
+    "diagnosis": "Missing shell continuation ran only the new punctuation class, then --tests was treated as a command. Replaced continuation-based list with a bash argument array. No integration-pass claim."
+  },
+  "snapshotFixtureRefresh": {
+    "file": "app/src/test/java/dev/russiancompanion/v2/Units2630SourceIntakeTest.kt",
+    "unit": 20,
+    "oldDigest": "bb408265fb5239daeb86d43c007061bff330e02a0a9afc1aa677526ccf57302b",
+    "newDigest": "9238893adafd8d2001561e254f2471a7f23067f1979827873b970ed467768688",
+    "reason": "Prior Unit20 correction intentionally changed its content; current baseline review manifest already binds the new digest. Other24 neighboring snapshots unchanged. Identified by comparison before executing the repaired selected scope, not a failure observed in this run."
+  }
 }
