@@ -11,12 +11,12 @@ Unit 10 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 1ab25bc6813963cbb3f41da92f2c4ffe8383a1ae
-- Unit content-review SHA-256: 0937a4c6577bff3eca3a0570f0213631fc45b6941d1f400e7dff93212f31f055
+- Curriculum source commit: 4e624bc2af8fa70e488bd627cb2dc68d03b60406
+- Unit content-review SHA-256: 279e8d36f385de505648c3b6e794a3920fe3ed39ce82f8536cb459e1352cae1b
 - Mapping-package SHA-256: 57676882eb615fb046a9a5e2429f1d97bf6fcf54010d7ae287cdfc456bcfca52
-- Pack content-review SHA-256: 8a96fab97083f634fbf411bbcce79c720179cdc58cc2c3970f2e83e40917d44c
-- Review-package SHA-256: 473d3e4e305a45133aa43cd548f37ddd627ee876a085d452be559cd18d388645
-- Repository source SHA-256: 5e3279a2ad9562b06322dc534d878b93e1b9c4424e30aa6b9418bc20f1b2b3b9
+- Pack content-review SHA-256: 9033071053c763a8f48a584e756074ec4e4fb9e06d841821a7b49db74594f639
+- Review-package SHA-256: f52b8ee039351c8552ba3f5e9d8f29dd2349910bb045f9e5c038045fbe056c5d
+- Repository source SHA-256: 7df4d97e71587bc39750838acd8eea9097ded6894293930afb1130871a247cd8
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -2983,7 +2983,7 @@ relationParticipantIds=prov-ca-rule-u10-g-absence-0-0 | prov-ca-rule-u10-g-absen
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: a2bb6515831bb4bfaf9681e5c6265d896aa0cd0008c4b3f980f89509936bf9f8
+- Content hash: 1c9e1e43e80aa842682ccfc972bb057ffba67e011adc80df85729f46c85387e8
 
 kind=FORM_SELECTION
 language=en
@@ -2991,11 +2991,11 @@ prompt=Which admitted form is the genitive row of the shown form?
 promptLetter=Я
 options=Меня́ | Нас
 answer=Меня́
-feedback=Does the admitted record show the governed contrast? Меня́.
+feedback=Меня́ is the genitive form of Я, meaning I. Нас is the genitive form of Мы, meaning we. Keep the same first-person singular referent when moving to the genitive row.
 objectiveId=obj-u10-pronoun
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the genitive cell of another row in the same frozen table.
+distractorRationales= | Нас belongs to Мы (we), first-person plural, rather than Я (I), first-person singular.
 testedFeature=GENITIVE_PRONOUN
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u10-pronoun-0
@@ -3003,8 +3003,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u10-pronoun-2-ru
 distractorSourceIds= | prov-ex-u10-pronoun-7-ru
-distractorDifference= | This form is the genitive cell of another row in the same frozen table.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Нас belongs to Мы (we), first-person plural, rather than Я (I), first-person singular.
+whyAnswerDemonstratesObjective=Меня́ is the genitive form of Я, meaning I. Нас is the genitive form of Мы, meaning we. Keep the same first-person singular referent when moving to the genitive row.
 contrastMembers=Меня́ | Нас
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u10-pronoun-5-ru | prov-ex-u10-pronoun-2-ru | prov-ex-u10-pronoun-7-ru
@@ -3085,7 +3085,7 @@ relationParticipantIds=prov-ex-or-u10-adjective-4 | prov-ex-or-u10-adjective-3 |
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 0caf8e458b0027a802bd6581b75f3f91d017d69585c4f16717ec24b2d618dac2
+- Content hash: c298acce83793163d5b678505527c89dba52b814acd4c5e6168df88fb10f1253
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3093,11 +3093,11 @@ prompt=Which admitted form is the object row of the shown form?
 promptLetter=Эти женщины
 options=этих женщин | Эти женщины
 answer=этих женщин
-feedback=Does the admitted record show the governed contrast? этих женщин.
+feedback=этих женщин is the animate plural accusative object phrase in the source example meaning I like these women. Its forms match the genitive plural. Эти женщины is the nominative subject phrase in the example meaning These women like me. Choose the object form, not the subject form.
 objectiveId=obj-u10-animate
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the other row of the same word, not the object row.
+distractorRationales= | Эти женщины is the nominative plural subject phrase, rather than the animate accusative object phrase requested here.
 testedFeature=ANIMATE_PLURAL_OBJECT
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u10-animate-0
@@ -3105,8 +3105,8 @@ cueLanguage=ru
 independent=false
 answerSourceIds=prov-ex-u10-animate-0-ru
 distractorSourceIds= | prov-ex-u10-animate-1-ru
-distractorDifference= | This form is the other row of the same word, not the object row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Эти женщины is the nominative plural subject phrase, rather than the animate accusative object phrase requested here.
+whyAnswerDemonstratesObjective=этих женщин is the animate plural accusative object phrase in the source example meaning I like these women. Its forms match the genitive plural. Эти женщины is the nominative subject phrase in the example meaning These women like me. Choose the object form, not the subject form.
 contrastMembers=этих женщин | Эти женщины
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u10-animate-1-ru | prov-ex-u10-animate-0-ru | prov-ex-u10-animate-1-ru
@@ -3391,7 +3391,7 @@ relationParticipantIds=prov-ca-rule-u10-i-absence-4-0 | prov-ca-rule-u10-i-absen
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 7fc6e75e1d41dc0b17813747c8107efcba31d291c98d63324977c0fcdb0e10d6
+- Content hash: 902cfa5a9ecefbcea5b82587b54483ff90719fe9722aacec53d069b4a6a99ebf
 
 kind=FORM_SELECTION
 language=en
@@ -3399,11 +3399,11 @@ prompt=Which admitted form is the genitive row of the shown form?
 promptLetter=Мы
 options=Нас | Меня́
 answer=Нас
-feedback=Does the admitted record show the governed contrast? Нас.
+feedback=Нас is the genitive form of Мы, meaning we. Меня́ belongs to Я, meaning I. Both are first person, but the cue refers to the plural group, not one speaker.
 objectiveId=obj-u10-pronoun
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the genitive cell of another row in the same frozen table.
+distractorRationales= | Меня́ belongs to Я (I), first-person singular, rather than Мы (we), first-person plural.
 testedFeature=GENITIVE_PRONOUN
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u10-pronoun-1
@@ -3411,8 +3411,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u10-pronoun-7-ru
 distractorSourceIds= | prov-ex-u10-pronoun-2-ru
-distractorDifference= | This form is the genitive cell of another row in the same frozen table.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Меня́ belongs to Я (I), first-person singular, rather than Мы (we), first-person plural.
+whyAnswerDemonstratesObjective=Нас is the genitive form of Мы, meaning we. Меня́ belongs to Я, meaning I. Both are first person, but the cue refers to the plural group, not one speaker.
 contrastMembers=Нас | Меня́
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u10-pronoun-6-ru | prov-ex-u10-pronoun-7-ru | prov-ex-u10-pronoun-2-ru
@@ -3425,7 +3425,7 @@ relationParticipantIds=prov-ex-u10-pronoun-6-ru | prov-ex-u10-pronoun-7-ru | pro
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 2f22f63d68ea2ef04ae943e784b4b84073a2640d6c863ff16895a8402ad56fd6
+- Content hash: ac5760c1200b9ee01979747db77f121c615f9f969ae72d28c4655d90dfd3e32b
 
 kind=FORM_SELECTION
 language=en
@@ -3433,11 +3433,11 @@ prompt=Which admitted form is the genitive row of the shown form?
 promptLetter=Ты
 options=Тебя́ | Вас
 answer=Тебя́
-feedback=Does the admitted record show the governed contrast? Тебя́.
+feedback=Тебя́ is the genitive form of Ты, the singular informal you. Вас belongs to Вы, used for plural you or polite address to one person. Match the shown pronoun, rather than replacing it with the other you form.
 objectiveId=obj-u10-pronoun
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the genitive cell of another row in the same frozen table.
+distractorRationales= | Вас belongs to Вы (plural or polite you), not the singular informal Ты shown here.
 testedFeature=GENITIVE_PRONOUN
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u10-pronoun-2
@@ -3445,8 +3445,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u10-pronoun-10-ru
 distractorSourceIds= | prov-ex-u10-pronoun-11-ru
-distractorDifference= | This form is the genitive cell of another row in the same frozen table.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Вас belongs to Вы (plural or polite you), not the singular informal Ты shown here.
+whyAnswerDemonstratesObjective=Тебя́ is the genitive form of Ты, the singular informal you. Вас belongs to Вы, used for plural you or polite address to one person. Match the shown pronoun, rather than replacing it with the other you form.
 contrastMembers=Тебя́ | Вас
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u10-pronoun-8-ru | prov-ex-u10-pronoun-10-ru | prov-ex-u10-pronoun-11-ru
@@ -3459,7 +3459,7 @@ relationParticipantIds=prov-ex-u10-pronoun-8-ru | prov-ex-u10-pronoun-10-ru | pr
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 9dd17b84e4f504b0248c3d8d49e45f7e4dae1688ee1b8845a6552a3bc815b92b
+- Content hash: 4a36865b7f3b7c5c311fbe2a33725268c7b7d6d0310dae520a9931286957e613
 
 kind=FORM_SELECTION
 language=en
@@ -3467,11 +3467,11 @@ prompt=Which admitted form is the genitive row of the shown form?
 promptLetter=Вы
 options=Вас | Тебя́
 answer=Вас
-feedback=Does the admitted record show the governed contrast? Вас.
+feedback=Вас is the genitive form of Вы, used for plural you or polite address to one person. Тебя́ belongs to Ты, singular informal you. Preserve the shown pronoun and its form of address.
 objectiveId=obj-u10-pronoun
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the genitive cell of another row in the same frozen table.
+distractorRationales= | Тебя́ belongs to Ты (singular informal you), not the plural or polite Вы shown here.
 testedFeature=GENITIVE_PRONOUN
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u10-pronoun-3
@@ -3479,8 +3479,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u10-pronoun-11-ru
 distractorSourceIds= | prov-ex-u10-pronoun-10-ru
-distractorDifference= | This form is the genitive cell of another row in the same frozen table.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Тебя́ belongs to Ты (singular informal you), not the plural or polite Вы shown here.
+whyAnswerDemonstratesObjective=Вас is the genitive form of Вы, used for plural you or polite address to one person. Тебя́ belongs to Ты, singular informal you. Preserve the shown pronoun and its form of address.
 contrastMembers=Вас | Тебя́
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u10-pronoun-9-ru | prov-ex-u10-pronoun-11-ru | prov-ex-u10-pronoun-10-ru
@@ -3493,7 +3493,7 @@ relationParticipantIds=prov-ex-u10-pronoun-9-ru | prov-ex-u10-pronoun-11-ru | pr
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: b8118fe33933b330ce3301b291b12665a86f3a4538293a5175ca6f890813331a
+- Content hash: 18d64bde0c2bfa04ef94d8a7ee14c9d9cd771cc6409e645d5d8d1c7b0973aa9b
 
 kind=FORM_SELECTION
 language=en
@@ -3501,11 +3501,11 @@ prompt=Which admitted form is the genitive row of the shown form?
 promptLetter=Они
 options=Их | Нас
 answer=Их
-feedback=Does the admitted record show the governed contrast? Их.
+feedback=Их is the bare genitive table form of Они, meaning they. Нас belongs to Мы, meaning we. Both refer to a plural group, but they is third person and we is first person. This checks the bare table form; third-person forms can change after prepositions.
 objectiveId=obj-u10-pronoun
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the genitive cell of another row in the same frozen table.
+distractorRationales= | Нас belongs to Мы (we), first-person plural, rather than Они (they), third-person plural.
 testedFeature=GENITIVE_PRONOUN
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u10-pronoun-4
@@ -3513,8 +3513,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u10-pronoun-4-ru
 distractorSourceIds= | prov-ex-u10-pronoun-7-ru
-distractorDifference= | This form is the genitive cell of another row in the same frozen table.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | Нас belongs to Мы (we), first-person plural, rather than Они (they), third-person plural.
+whyAnswerDemonstratesObjective=Их is the bare genitive table form of Они, meaning they. Нас belongs to Мы, meaning we. Both refer to a plural group, but they is third person and we is first person. This checks the bare table form; third-person forms can change after prepositions.
 contrastMembers=Их | Нас
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u10-pronoun-12-ru | prov-ex-u10-pronoun-4-ru | prov-ex-u10-pronoun-7-ru
@@ -3765,7 +3765,7 @@ relationParticipantIds=prov-ex-or-u10-adjective-7 | prov-ex-or-u10-adjective-8 |
 - Rights: rights-wikibooks-russian-cc-by-sa
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: ea164ac4fa48647f3c5b01d65ed7ebe28f58f44ab3d3a7f54f64a6506b5d263c
+- Content hash: a7914a35773c1cb246b3da2d7a3d2d602f84694bb6749554eb691decd9b6036c
 
 kind=CONTRAST_SELECTION
 language=en
@@ -3773,11 +3773,11 @@ prompt=Which admitted form is the other plural row of the shown form?
 promptLetter=этих женщин
 options=Эти женщины | этих женщин
 answer=Эти женщины
-feedback=Does the admitted record show the governed contrast? Эти женщины.
+feedback=Эти женщины is the nominative plural subject phrase in the source example meaning These women like me. The shown этих женщин is the animate plural accusative object phrase in I like these women, with genitive-like forms. The other row requested here is the nominative subject form.
 objectiveId=obj-u10-animate
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | This form is the object row of the same word, not the other plural row.
+distractorRationales= | этих женщин repeats the animate plural accusative object phrase shown in the cue; the requested other row is the nominative subject phrase.
 testedFeature=ANIMATE_PLURAL_OBJECT
 evidenceMode=SOURCE_SUPPLIED_PAIR
 contrastSetId=u10-animate-1
@@ -3785,8 +3785,8 @@ cueLanguage=ru
 independent=true
 answerSourceIds=prov-ex-u10-animate-1-ru
 distractorSourceIds= | prov-ex-u10-animate-0-ru
-distractorDifference= | This form is the object row of the same word, not the other plural row.
-whyAnswerDemonstratesObjective=Does the admitted record show the governed contrast?
+distractorDifference= | этих женщин repeats the animate plural accusative object phrase shown in the cue; the requested other row is the nominative subject phrase.
+whyAnswerDemonstratesObjective=Эти женщины is the nominative plural subject phrase in the source example meaning These women like me. The shown этих женщин is the animate plural accusative object phrase in I like these women, with genitive-like forms. The other row requested here is the nominative subject form.
 contrastMembers=Эти женщины | этих женщин
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u10-animate-0-ru | prov-ex-u10-animate-1-ru | prov-ex-u10-animate-0-ru
@@ -7589,6 +7589,426 @@ attribution=Russian Companion content-audit research synthesis, content-audit-20
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
 sourceHash=66d276a879a3fe9ba9c24cdac0fef756b1fecfb0e04ea90a64f2b200a52bfbe1
 contentHash=259e99f10b51d2d59700d5199df477187c3ed6f9cf49ba8e95307d4c65061eab
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u10-feedback-u10-g-animate-0`
+
+- Objectives: obj-u10-animate
+- Sessions: u10-s-orient, u10-s-animate
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0e0babb58bf6e420ab0af7e2467f41fe2a9b0cb8a6277a99f76840a29422fd3f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-animate:feedback:u10-g-animate-0
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Genitive oldid4567338, catalog/sources/units-6-10/wikibooks/genitive-4567338.txt, complete Personal Pronouns table and following preposition note; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality and Personal sections; Russian/Personal Pronouns oldid3598527, catalog/sources/units-3-5/wikibooks/personal-pronouns-3598527.txt, complete person/number table; Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, Nouns animate-plural subject/object examples and Adjectives agreement context. Bare genitive table-form recognition, not a claim that third-person forms remain unchanged after prepositions. Animate object is syntactically accusative, with genitive-like forms, not syntactically genitive. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+этих женщин is the animate plural accusative object phrase in the source example meaning I like these women. Its forms match the genitive plural. Эти женщины is the nominative subject phrase in the example meaning These women like me. Choose the object form, not the subject form.
+shippedText=этих женщин is the animate plural accusative object phrase in the source example meaning I like these women. Its forms match the genitive plural. Эти женщины is the nominative subject phrase in the example meaning These women like me. Choose the object form, not the subject form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=31cc016932205ac074d70503eca55ee8a7d0e87d3841281cefc228e0062f2201
+contentHash=57d460cb33fbb2b65127db46bef8ff02618de65ba4ab457950b60c11f0066249
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u10-feedback-u10-g-animate-0-distractor-1`
+
+- Objectives: obj-u10-animate
+- Sessions: u10-s-orient, u10-s-animate
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fdba6d84abf2ccb39fb699e7db2230238c78ccbeb9f01e296eea140bc9e90d1a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-animate:feedback:u10-g-animate-0-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Genitive oldid4567338, catalog/sources/units-6-10/wikibooks/genitive-4567338.txt, complete Personal Pronouns table and following preposition note; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality and Personal sections; Russian/Personal Pronouns oldid3598527, catalog/sources/units-3-5/wikibooks/personal-pronouns-3598527.txt, complete person/number table; Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, Nouns animate-plural subject/object examples and Adjectives agreement context. Bare genitive table-form recognition, not a claim that third-person forms remain unchanged after prepositions. Animate object is syntactically accusative, with genitive-like forms, not syntactically genitive. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Эти женщины is the nominative plural subject phrase, rather than the animate accusative object phrase requested here.
+shippedText=Эти женщины is the nominative plural subject phrase, rather than the animate accusative object phrase requested here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8e14728ce52748dc7a254f5039e7d3bb701426ed3eb7a386797195d831ad9118
+contentHash=d76cbd6ecc2a86d242cfe622b8d29c3357da19ebb48e5c87a1392c3831d4dc4e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u10-feedback-u10-g-pronoun-0`
+
+- Objectives: obj-u10-pronoun
+- Sessions: u10-s-orient, u10-s-pronoun
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b4d9eb5dfac4f7b7656fcff759ca97c8e05f77218b81ab968d1f83e0a3e4391d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-pronoun:feedback:u10-g-pronoun-0
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Genitive oldid4567338, catalog/sources/units-6-10/wikibooks/genitive-4567338.txt, complete Personal Pronouns table and following preposition note; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality and Personal sections; Russian/Personal Pronouns oldid3598527, catalog/sources/units-3-5/wikibooks/personal-pronouns-3598527.txt, complete person/number table; Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, Nouns animate-plural subject/object examples and Adjectives agreement context. Bare genitive table-form recognition, not a claim that third-person forms remain unchanged after prepositions. Animate object is syntactically accusative, with genitive-like forms, not syntactically genitive. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Меня́ is the genitive form of Я, meaning I. Нас is the genitive form of Мы, meaning we. Keep the same first-person singular referent when moving to the genitive row.
+shippedText=Меня́ is the genitive form of Я, meaning I. Нас is the genitive form of Мы, meaning we. Keep the same first-person singular referent when moving to the genitive row.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b923ccb627705045a97a1609ff252deb08e595c4dd47cff0031329440c581a5f
+contentHash=d9aa2f18cbd7d3044c645679b4395fe0bcaf737d9eb69375fdeda4d5c9d96ff4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u10-feedback-u10-g-pronoun-0-distractor-1`
+
+- Objectives: obj-u10-pronoun
+- Sessions: u10-s-orient, u10-s-pronoun
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b57554da0ea333f5ec9b572d62d50e8d2a6c87c53bd98cc659ef64215d15f7d6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-pronoun:feedback:u10-g-pronoun-0-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Genitive oldid4567338, catalog/sources/units-6-10/wikibooks/genitive-4567338.txt, complete Personal Pronouns table and following preposition note; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality and Personal sections; Russian/Personal Pronouns oldid3598527, catalog/sources/units-3-5/wikibooks/personal-pronouns-3598527.txt, complete person/number table; Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, Nouns animate-plural subject/object examples and Adjectives agreement context. Bare genitive table-form recognition, not a claim that third-person forms remain unchanged after prepositions. Animate object is syntactically accusative, with genitive-like forms, not syntactically genitive. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Нас belongs to Мы (we), first-person plural, rather than Я (I), first-person singular.
+shippedText=Нас belongs to Мы (we), first-person plural, rather than Я (I), first-person singular.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=33b57195cad0d55550841378793737a2e5c656478a97e3f8bd33446a4b4bac8f
+contentHash=dbe85c3c68afd6a5b3fe001e136703d1bc4ffb834a7ed1625388646798dc0bca
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u10-feedback-u10-i-animate-1`
+
+- Objectives: obj-u10-animate
+- Sessions: u10-s-orient, u10-s-animate
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5eb6e4a3496160a0c4ff9c13834a5c0e1d749575316f5f95a9aee22c2c6f0780
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-animate:feedback:u10-i-animate-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Genitive oldid4567338, catalog/sources/units-6-10/wikibooks/genitive-4567338.txt, complete Personal Pronouns table and following preposition note; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality and Personal sections; Russian/Personal Pronouns oldid3598527, catalog/sources/units-3-5/wikibooks/personal-pronouns-3598527.txt, complete person/number table; Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, Nouns animate-plural subject/object examples and Adjectives agreement context. Bare genitive table-form recognition, not a claim that third-person forms remain unchanged after prepositions. Animate object is syntactically accusative, with genitive-like forms, not syntactically genitive. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Эти женщины is the nominative plural subject phrase in the source example meaning These women like me. The shown этих женщин is the animate plural accusative object phrase in I like these women, with genitive-like forms. The other row requested here is the nominative subject form.
+shippedText=Эти женщины is the nominative plural subject phrase in the source example meaning These women like me. The shown этих женщин is the animate plural accusative object phrase in I like these women, with genitive-like forms. The other row requested here is the nominative subject form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=88722c696ef35c7ac479b802b70e0ef7a1ed8d29f12c19aad2c79945f6bb8f8f
+contentHash=96bf7d6f85075d4ac538c9324881c43647c24e9dc68d59cb50bbc243a68026a5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u10-feedback-u10-i-animate-1-distractor-1`
+
+- Objectives: obj-u10-animate
+- Sessions: u10-s-orient, u10-s-animate
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a38e351b9bbc28b7a15b68ace1700cda0db37f73a684cb51dbcf0f6d2d6c8411
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-animate:feedback:u10-i-animate-1-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Genitive oldid4567338, catalog/sources/units-6-10/wikibooks/genitive-4567338.txt, complete Personal Pronouns table and following preposition note; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality and Personal sections; Russian/Personal Pronouns oldid3598527, catalog/sources/units-3-5/wikibooks/personal-pronouns-3598527.txt, complete person/number table; Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, Nouns animate-plural subject/object examples and Adjectives agreement context. Bare genitive table-form recognition, not a claim that third-person forms remain unchanged after prepositions. Animate object is syntactically accusative, with genitive-like forms, not syntactically genitive. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+этих женщин repeats the animate plural accusative object phrase shown in the cue; the requested other row is the nominative subject phrase.
+shippedText=этих женщин repeats the animate plural accusative object phrase shown in the cue; the requested other row is the nominative subject phrase.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=77969dd3d94da86116486036cf64e7dc3af4d17b6ed409b4eafcf282328fcf78
+contentHash=0bea846273eb8148c08a726f4825510711fd4ad37a4ca8e13063c351011936ab
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u10-feedback-u10-i-pronoun-1`
+
+- Objectives: obj-u10-pronoun
+- Sessions: u10-s-orient, u10-s-pronoun
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1457fc9c75543771dc2cae266b0352243ca83921c92488ffddc563698ffe24da
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-pronoun:feedback:u10-i-pronoun-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Genitive oldid4567338, catalog/sources/units-6-10/wikibooks/genitive-4567338.txt, complete Personal Pronouns table and following preposition note; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality and Personal sections; Russian/Personal Pronouns oldid3598527, catalog/sources/units-3-5/wikibooks/personal-pronouns-3598527.txt, complete person/number table; Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, Nouns animate-plural subject/object examples and Adjectives agreement context. Bare genitive table-form recognition, not a claim that third-person forms remain unchanged after prepositions. Animate object is syntactically accusative, with genitive-like forms, not syntactically genitive. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Нас is the genitive form of Мы, meaning we. Меня́ belongs to Я, meaning I. Both are first person, but the cue refers to the plural group, not one speaker.
+shippedText=Нас is the genitive form of Мы, meaning we. Меня́ belongs to Я, meaning I. Both are first person, but the cue refers to the plural group, not one speaker.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ff299b031ed6513e1cdae12888fff24a871e855e2378526e5e444aa01c337a0c
+contentHash=a311e135fed795fa7c4d14b7bfe611108e3738e0e32adfdf452c73b0a70be0b1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u10-feedback-u10-i-pronoun-1-distractor-1`
+
+- Objectives: obj-u10-pronoun
+- Sessions: u10-s-orient, u10-s-pronoun
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 78c816969958f4512db3a691be4a663758ad9c5c5812247767c818caaaaa5cc9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-pronoun:feedback:u10-i-pronoun-1-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Genitive oldid4567338, catalog/sources/units-6-10/wikibooks/genitive-4567338.txt, complete Personal Pronouns table and following preposition note; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality and Personal sections; Russian/Personal Pronouns oldid3598527, catalog/sources/units-3-5/wikibooks/personal-pronouns-3598527.txt, complete person/number table; Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, Nouns animate-plural subject/object examples and Adjectives agreement context. Bare genitive table-form recognition, not a claim that third-person forms remain unchanged after prepositions. Animate object is syntactically accusative, with genitive-like forms, not syntactically genitive. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Меня́ belongs to Я (I), first-person singular, rather than Мы (we), first-person plural.
+shippedText=Меня́ belongs to Я (I), first-person singular, rather than Мы (we), first-person plural.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=081d3176698174248ac735c4a0b8e05a81122510e1f70ee40d4e09d54f38ea88
+contentHash=17a6c52d8ada94383ea15abb10cddce2f967ec992e2eac80a04a05cc6222effd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u10-feedback-u10-i-pronoun-2`
+
+- Objectives: obj-u10-pronoun
+- Sessions: u10-s-orient, u10-s-pronoun
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4b0cf02cf85d5e47516abce936678a8761bd265a929f6bb984478ae8e2ea9eb5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-pronoun:feedback:u10-i-pronoun-2
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Genitive oldid4567338, catalog/sources/units-6-10/wikibooks/genitive-4567338.txt, complete Personal Pronouns table and following preposition note; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality and Personal sections; Russian/Personal Pronouns oldid3598527, catalog/sources/units-3-5/wikibooks/personal-pronouns-3598527.txt, complete person/number table; Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, Nouns animate-plural subject/object examples and Adjectives agreement context. Bare genitive table-form recognition, not a claim that third-person forms remain unchanged after prepositions. Animate object is syntactically accusative, with genitive-like forms, not syntactically genitive. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Тебя́ is the genitive form of Ты, the singular informal you. Вас belongs to Вы, used for plural you or polite address to one person. Match the shown pronoun, rather than replacing it with the other you form.
+shippedText=Тебя́ is the genitive form of Ты, the singular informal you. Вас belongs to Вы, used for plural you or polite address to one person. Match the shown pronoun, rather than replacing it with the other you form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=160a71f7c19c264daecf918e1234536aad82b88a02f71421128444dd6395d75c
+contentHash=b5dff5030fe7be23a211fc6ce6c53f464b0ee08561eb413a11360d2badad9801
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u10-feedback-u10-i-pronoun-2-distractor-1`
+
+- Objectives: obj-u10-pronoun
+- Sessions: u10-s-orient, u10-s-pronoun
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4301bf74ad61e3f0a517ce199e43f289332035ef86c72376c1152aba89822056
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-pronoun:feedback:u10-i-pronoun-2-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Genitive oldid4567338, catalog/sources/units-6-10/wikibooks/genitive-4567338.txt, complete Personal Pronouns table and following preposition note; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality and Personal sections; Russian/Personal Pronouns oldid3598527, catalog/sources/units-3-5/wikibooks/personal-pronouns-3598527.txt, complete person/number table; Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, Nouns animate-plural subject/object examples and Adjectives agreement context. Bare genitive table-form recognition, not a claim that third-person forms remain unchanged after prepositions. Animate object is syntactically accusative, with genitive-like forms, not syntactically genitive. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Вас belongs to Вы (plural or polite you), not the singular informal Ты shown here.
+shippedText=Вас belongs to Вы (plural or polite you), not the singular informal Ты shown here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fad3655f67575d08f44b273c0864cd1ec41e75f4e7db6335ba18fcc1e384273a
+contentHash=4bcdfc06c0a47e1e8747218218b6acb04e90327269d373a730f98ad875357af1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u10-feedback-u10-i-pronoun-3`
+
+- Objectives: obj-u10-pronoun
+- Sessions: u10-s-orient, u10-s-pronoun
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1dc101bb0ec48e0e1afbaae81c2c2d3e47e8bf4c087bda917bdbc4e9020ad68b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-pronoun:feedback:u10-i-pronoun-3
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Genitive oldid4567338, catalog/sources/units-6-10/wikibooks/genitive-4567338.txt, complete Personal Pronouns table and following preposition note; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality and Personal sections; Russian/Personal Pronouns oldid3598527, catalog/sources/units-3-5/wikibooks/personal-pronouns-3598527.txt, complete person/number table; Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, Nouns animate-plural subject/object examples and Adjectives agreement context. Bare genitive table-form recognition, not a claim that third-person forms remain unchanged after prepositions. Animate object is syntactically accusative, with genitive-like forms, not syntactically genitive. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Вас is the genitive form of Вы, used for plural you or polite address to one person. Тебя́ belongs to Ты, singular informal you. Preserve the shown pronoun and its form of address.
+shippedText=Вас is the genitive form of Вы, used for plural you or polite address to one person. Тебя́ belongs to Ты, singular informal you. Preserve the shown pronoun and its form of address.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=80608baa1fb1b4319fd5c829070f5b8f20c07c84aa5a079c0dcbf2a20959e3f6
+contentHash=652cf49acf011286c943de531ea328211a89012d5776c93a055521a4e86300e8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u10-feedback-u10-i-pronoun-3-distractor-1`
+
+- Objectives: obj-u10-pronoun
+- Sessions: u10-s-orient, u10-s-pronoun
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: de81b63914aa81f406f8df77eecef1d67b722573d40cb434c4d5846c4f581352
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-pronoun:feedback:u10-i-pronoun-3-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Genitive oldid4567338, catalog/sources/units-6-10/wikibooks/genitive-4567338.txt, complete Personal Pronouns table and following preposition note; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality and Personal sections; Russian/Personal Pronouns oldid3598527, catalog/sources/units-3-5/wikibooks/personal-pronouns-3598527.txt, complete person/number table; Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, Nouns animate-plural subject/object examples and Adjectives agreement context. Bare genitive table-form recognition, not a claim that third-person forms remain unchanged after prepositions. Animate object is syntactically accusative, with genitive-like forms, not syntactically genitive. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Тебя́ belongs to Ты (singular informal you), not the plural or polite Вы shown here.
+shippedText=Тебя́ belongs to Ты (singular informal you), not the plural or polite Вы shown here.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=dc78e1946fbb8e137759d8eea8ce60e5c9bc9eddc1759a70fecb602ef13663b6
+contentHash=d43497d24cf3c94e6a9bd2156f0d173030bb2ba49ba3bcb14b8b3fa429718ed1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u10-feedback-u10-i-pronoun-4`
+
+- Objectives: obj-u10-pronoun
+- Sessions: u10-s-orient, u10-s-pronoun
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2bfcac8c5dad1dab9347478905d7a1410e224cfa876510ddba4bc1d9153300a6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-pronoun:feedback:u10-i-pronoun-4
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Genitive oldid4567338, catalog/sources/units-6-10/wikibooks/genitive-4567338.txt, complete Personal Pronouns table and following preposition note; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality and Personal sections; Russian/Personal Pronouns oldid3598527, catalog/sources/units-3-5/wikibooks/personal-pronouns-3598527.txt, complete person/number table; Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, Nouns animate-plural subject/object examples and Adjectives agreement context. Bare genitive table-form recognition, not a claim that third-person forms remain unchanged after prepositions. Animate object is syntactically accusative, with genitive-like forms, not syntactically genitive. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Их is the bare genitive table form of Они, meaning they. Нас belongs to Мы, meaning we. Both refer to a plural group, but they is third person and we is first person. This checks the bare table form; third-person forms can change after prepositions.
+shippedText=Их is the bare genitive table form of Они, meaning they. Нас belongs to Мы, meaning we. Both refer to a plural group, but they is third person and we is first person. This checks the bare table form; third-person forms can change after prepositions.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=983a0b148a1b91581b9ab07b58b77fc7c794c6f1093735bd35fe380e5aa0ae4d
+contentHash=be71dbd40405cfb76a8b496cfa23798e24d95c5fa55b41d559104df691a2cbf2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u10-feedback-u10-i-pronoun-4-distractor-1`
+
+- Objectives: obj-u10-pronoun
+- Sessions: u10-s-orient, u10-s-pronoun
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 83ac1c07540312aba5a79c964c5563d252f7d24b2dd2ac0a9684a7c7ecb6dc98
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-pronoun:feedback:u10-i-pronoun-4-distractor-1
+originalSourceText=Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Genitive oldid4567338, catalog/sources/units-6-10/wikibooks/genitive-4567338.txt, complete Personal Pronouns table and following preposition note; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality and Personal sections; Russian/Personal Pronouns oldid3598527, catalog/sources/units-3-5/wikibooks/personal-pronouns-3598527.txt, complete person/number table; Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, Nouns animate-plural subject/object examples and Adjectives agreement context. Bare genitive table-form recognition, not a claim that third-person forms remain unchanged after prepositions. Animate object is syntactically accusative, with genitive-like forms, not syntactically genitive. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.
+Нас belongs to Мы (we), first-person plural, rather than Они (they), third-person plural.
+shippedText=Нас belongs to Мы (we), first-person plural, rather than Они (they), third-person plural.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1b76c3db1afc9778680cc43bfcbb1079272e5ececa02f0279143282212faad05
+contentHash=6dfc264862efea096a619e5ab627fcbab81270389a07724487bf54413f4022cd
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -13834,6 +14254,20 @@ permitsAppUse=true
 - `obj-u10-have` PROVENANCE `prov-ca-rule-u10-st-teach-have-4-title`
 - `obj-u10-have` PROVENANCE `prov-ca-rule-u10-st-teach-have-5-body`
 - `obj-u10-have` PROVENANCE `prov-ca-rule-u10-st-teach-have-5-title`
+- `obj-u10-animate` PROVENANCE `prov-ca-u10-feedback-u10-g-animate-0`
+- `obj-u10-animate` PROVENANCE `prov-ca-u10-feedback-u10-g-animate-0-distractor-1`
+- `obj-u10-pronoun` PROVENANCE `prov-ca-u10-feedback-u10-g-pronoun-0`
+- `obj-u10-pronoun` PROVENANCE `prov-ca-u10-feedback-u10-g-pronoun-0-distractor-1`
+- `obj-u10-animate` PROVENANCE `prov-ca-u10-feedback-u10-i-animate-1`
+- `obj-u10-animate` PROVENANCE `prov-ca-u10-feedback-u10-i-animate-1-distractor-1`
+- `obj-u10-pronoun` PROVENANCE `prov-ca-u10-feedback-u10-i-pronoun-1`
+- `obj-u10-pronoun` PROVENANCE `prov-ca-u10-feedback-u10-i-pronoun-1-distractor-1`
+- `obj-u10-pronoun` PROVENANCE `prov-ca-u10-feedback-u10-i-pronoun-2`
+- `obj-u10-pronoun` PROVENANCE `prov-ca-u10-feedback-u10-i-pronoun-2-distractor-1`
+- `obj-u10-pronoun` PROVENANCE `prov-ca-u10-feedback-u10-i-pronoun-3`
+- `obj-u10-pronoun` PROVENANCE `prov-ca-u10-feedback-u10-i-pronoun-3-distractor-1`
+- `obj-u10-pronoun` PROVENANCE `prov-ca-u10-feedback-u10-i-pronoun-4`
+- `obj-u10-pronoun` PROVENANCE `prov-ca-u10-feedback-u10-i-pronoun-4-distractor-1`
 - `obj-u10-adjective` PROVENANCE `prov-ex-or-u10-adjective-3`
 - `obj-u10-adjective` PROVENANCE `prov-ex-or-u10-adjective-3-gloss`
 - `obj-u10-adjective` PROVENANCE `prov-ex-or-u10-adjective-4`

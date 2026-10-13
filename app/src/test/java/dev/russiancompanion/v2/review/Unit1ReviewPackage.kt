@@ -50,8 +50,11 @@ internal const val UNIT7_FEEDBACK_CURRICULUM_COMMIT = "b48d4a575e0d8496de4e02c4e
 
 internal const val UNIT9_NUMBER_FEEDBACK_CURRICULUM_COMMIT = "8e5db89c56d9421a6efcffa6f0a14c0f0b6c042a"
 
+internal const val UNIT10_FEEDBACK_CURRICULUM_COMMIT = "4e624bc2af8fa70e488bd627cb2dc68d03b60406"
+
 internal fun curriculumCommitForUnit(unitNumber: Int): String =
-    if (unitNumber in listOf(8, 10)) COMPLETE_RULE_CURRICULUM_COMMIT
+    if (unitNumber == 8) COMPLETE_RULE_CURRICULUM_COMMIT
+    else if (unitNumber == 10) UNIT10_FEEDBACK_CURRICULUM_COMMIT
     else if (unitNumber == 5) UNIT5_INDECLINABILITY_CURRICULUM_COMMIT
     else if (unitNumber == 6) UNIT6_FEEDBACK_CURRICULUM_COMMIT
     else if (unitNumber == 7) UNIT7_FEEDBACK_CURRICULUM_COMMIT
