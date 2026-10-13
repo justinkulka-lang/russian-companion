@@ -1,0 +1,739 @@
+{
+  "baselineCommit": "80c106875c36f2e11911c7ebdcd5f8d39fd330db",
+  "beforeSha256": "afede79149abc9058fe2d255ff6a6ce7277bede2aaedc36df58478c345047308",
+  "afterSha256": "f7abb592f002abe77194a993d4a3de40dad3975e956926407a18b8d1609a48f1",
+  "addedProvenanceIds": [
+    "prov-ca-u10-feedback-u10-g-pronoun-0",
+    "prov-ca-u10-feedback-u10-g-pronoun-0-distractor-1",
+    "prov-ca-u10-feedback-u10-i-pronoun-1",
+    "prov-ca-u10-feedback-u10-i-pronoun-1-distractor-1",
+    "prov-ca-u10-feedback-u10-i-pronoun-2",
+    "prov-ca-u10-feedback-u10-i-pronoun-2-distractor-1",
+    "prov-ca-u10-feedback-u10-i-pronoun-3",
+    "prov-ca-u10-feedback-u10-i-pronoun-3-distractor-1",
+    "prov-ca-u10-feedback-u10-i-pronoun-4",
+    "prov-ca-u10-feedback-u10-i-pronoun-4-distractor-1",
+    "prov-ca-u10-feedback-u10-g-animate-0",
+    "prov-ca-u10-feedback-u10-g-animate-0-distractor-1",
+    "prov-ca-u10-feedback-u10-i-animate-1",
+    "prov-ca-u10-feedback-u10-i-animate-1-distractor-1"
+  ],
+  "changes": [
+    {
+      "before": {
+        "id": "u10-g-pronoun-0",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form is the genitive row of the shown form?",
+        "promptLetter": "Я",
+        "options": [
+          "Меня́",
+          "Нас"
+        ],
+        "answer": "Меня́",
+        "feedback": "Does the admitted record show the governed contrast? Меня́.",
+        "objectiveId": "obj-u10-pronoun",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This form is the genitive cell of another row in the same frozen table."
+        ],
+        "assessment": {
+          "testedFeature": "GENITIVE_PRONOUN",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u10-pronoun-0",
+          "cueLanguage": "ru",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ex-u10-pronoun-2-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u10-pronoun-7-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "This form is the genitive cell of another row in the same frozen table."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "Меня́",
+            "Нас"
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-ex-u10-pronoun-5-ru",
+            "prov-ex-u10-pronoun-2-ru",
+            "prov-ex-u10-pronoun-7-ru"
+          ]
+        }
+      },
+      "after": {
+        "id": "u10-g-pronoun-0",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form is the genitive row of the shown form?",
+        "promptLetter": "Я",
+        "options": [
+          "Меня́",
+          "Нас"
+        ],
+        "answer": "Меня́",
+        "feedback": "Меня́ is the genitive form of Я, meaning I. Нас is the genitive form of Мы, meaning we. Keep the same first-person singular referent when moving to the genitive row.",
+        "objectiveId": "obj-u10-pronoun",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Нас belongs to Мы (we), first-person plural, rather than Я (I), first-person singular."
+        ],
+        "assessment": {
+          "testedFeature": "GENITIVE_PRONOUN",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u10-pronoun-0",
+          "cueLanguage": "ru",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ex-u10-pronoun-2-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u10-pronoun-7-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "Нас belongs to Мы (we), first-person plural, rather than Я (I), first-person singular."
+          ],
+          "whyAnswerDemonstratesObjective": "Меня́ is the genitive form of Я, meaning I. Нас is the genitive form of Мы, meaning we. Keep the same first-person singular referent when moving to the genitive row.",
+          "contrastMembers": [
+            "Меня́",
+            "Нас"
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-ex-u10-pronoun-5-ru",
+            "prov-ex-u10-pronoun-2-ru",
+            "prov-ex-u10-pronoun-7-ru"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u10-i-pronoun-1",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form is the genitive row of the shown form?",
+        "promptLetter": "Мы",
+        "options": [
+          "Нас",
+          "Меня́"
+        ],
+        "answer": "Нас",
+        "feedback": "Does the admitted record show the governed contrast? Нас.",
+        "objectiveId": "obj-u10-pronoun",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This form is the genitive cell of another row in the same frozen table."
+        ],
+        "assessment": {
+          "testedFeature": "GENITIVE_PRONOUN",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u10-pronoun-1",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u10-pronoun-7-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u10-pronoun-2-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "This form is the genitive cell of another row in the same frozen table."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "Нас",
+            "Меня́"
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-ex-u10-pronoun-6-ru",
+            "prov-ex-u10-pronoun-7-ru",
+            "prov-ex-u10-pronoun-2-ru"
+          ]
+        }
+      },
+      "after": {
+        "id": "u10-i-pronoun-1",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form is the genitive row of the shown form?",
+        "promptLetter": "Мы",
+        "options": [
+          "Нас",
+          "Меня́"
+        ],
+        "answer": "Нас",
+        "feedback": "Нас is the genitive form of Мы, meaning we. Меня́ belongs to Я, meaning I. Both are first person, but the cue refers to the plural group, not one speaker.",
+        "objectiveId": "obj-u10-pronoun",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Меня́ belongs to Я (I), first-person singular, rather than Мы (we), first-person plural."
+        ],
+        "assessment": {
+          "testedFeature": "GENITIVE_PRONOUN",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u10-pronoun-1",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u10-pronoun-7-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u10-pronoun-2-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "Меня́ belongs to Я (I), first-person singular, rather than Мы (we), first-person plural."
+          ],
+          "whyAnswerDemonstratesObjective": "Нас is the genitive form of Мы, meaning we. Меня́ belongs to Я, meaning I. Both are first person, but the cue refers to the plural group, not one speaker.",
+          "contrastMembers": [
+            "Нас",
+            "Меня́"
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-ex-u10-pronoun-6-ru",
+            "prov-ex-u10-pronoun-7-ru",
+            "prov-ex-u10-pronoun-2-ru"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u10-i-pronoun-2",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form is the genitive row of the shown form?",
+        "promptLetter": "Ты",
+        "options": [
+          "Тебя́",
+          "Вас"
+        ],
+        "answer": "Тебя́",
+        "feedback": "Does the admitted record show the governed contrast? Тебя́.",
+        "objectiveId": "obj-u10-pronoun",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This form is the genitive cell of another row in the same frozen table."
+        ],
+        "assessment": {
+          "testedFeature": "GENITIVE_PRONOUN",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u10-pronoun-2",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u10-pronoun-10-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u10-pronoun-11-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "This form is the genitive cell of another row in the same frozen table."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "Тебя́",
+            "Вас"
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-ex-u10-pronoun-8-ru",
+            "prov-ex-u10-pronoun-10-ru",
+            "prov-ex-u10-pronoun-11-ru"
+          ]
+        }
+      },
+      "after": {
+        "id": "u10-i-pronoun-2",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form is the genitive row of the shown form?",
+        "promptLetter": "Ты",
+        "options": [
+          "Тебя́",
+          "Вас"
+        ],
+        "answer": "Тебя́",
+        "feedback": "Тебя́ is the genitive form of Ты, the singular informal you. Вас belongs to Вы, used for plural you or polite address to one person. Match the shown pronoun, rather than replacing it with the other you form.",
+        "objectiveId": "obj-u10-pronoun",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Вас belongs to Вы (plural or polite you), not the singular informal Ты shown here."
+        ],
+        "assessment": {
+          "testedFeature": "GENITIVE_PRONOUN",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u10-pronoun-2",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u10-pronoun-10-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u10-pronoun-11-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "Вас belongs to Вы (plural or polite you), not the singular informal Ты shown here."
+          ],
+          "whyAnswerDemonstratesObjective": "Тебя́ is the genitive form of Ты, the singular informal you. Вас belongs to Вы, used for plural you or polite address to one person. Match the shown pronoun, rather than replacing it with the other you form.",
+          "contrastMembers": [
+            "Тебя́",
+            "Вас"
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-ex-u10-pronoun-8-ru",
+            "prov-ex-u10-pronoun-10-ru",
+            "prov-ex-u10-pronoun-11-ru"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u10-i-pronoun-3",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form is the genitive row of the shown form?",
+        "promptLetter": "Вы",
+        "options": [
+          "Вас",
+          "Тебя́"
+        ],
+        "answer": "Вас",
+        "feedback": "Does the admitted record show the governed contrast? Вас.",
+        "objectiveId": "obj-u10-pronoun",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This form is the genitive cell of another row in the same frozen table."
+        ],
+        "assessment": {
+          "testedFeature": "GENITIVE_PRONOUN",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u10-pronoun-3",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u10-pronoun-11-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u10-pronoun-10-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "This form is the genitive cell of another row in the same frozen table."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "Вас",
+            "Тебя́"
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-ex-u10-pronoun-9-ru",
+            "prov-ex-u10-pronoun-11-ru",
+            "prov-ex-u10-pronoun-10-ru"
+          ]
+        }
+      },
+      "after": {
+        "id": "u10-i-pronoun-3",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form is the genitive row of the shown form?",
+        "promptLetter": "Вы",
+        "options": [
+          "Вас",
+          "Тебя́"
+        ],
+        "answer": "Вас",
+        "feedback": "Вас is the genitive form of Вы, used for plural you or polite address to one person. Тебя́ belongs to Ты, singular informal you. Preserve the shown pronoun and its form of address.",
+        "objectiveId": "obj-u10-pronoun",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Тебя́ belongs to Ты (singular informal you), not the plural or polite Вы shown here."
+        ],
+        "assessment": {
+          "testedFeature": "GENITIVE_PRONOUN",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u10-pronoun-3",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u10-pronoun-11-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u10-pronoun-10-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "Тебя́ belongs to Ты (singular informal you), not the plural or polite Вы shown here."
+          ],
+          "whyAnswerDemonstratesObjective": "Вас is the genitive form of Вы, used for plural you or polite address to one person. Тебя́ belongs to Ты, singular informal you. Preserve the shown pronoun and its form of address.",
+          "contrastMembers": [
+            "Вас",
+            "Тебя́"
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-ex-u10-pronoun-9-ru",
+            "prov-ex-u10-pronoun-11-ru",
+            "prov-ex-u10-pronoun-10-ru"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u10-i-pronoun-4",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form is the genitive row of the shown form?",
+        "promptLetter": "Они",
+        "options": [
+          "Их",
+          "Нас"
+        ],
+        "answer": "Их",
+        "feedback": "Does the admitted record show the governed contrast? Их.",
+        "objectiveId": "obj-u10-pronoun",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This form is the genitive cell of another row in the same frozen table."
+        ],
+        "assessment": {
+          "testedFeature": "GENITIVE_PRONOUN",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u10-pronoun-4",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u10-pronoun-4-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u10-pronoun-7-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "This form is the genitive cell of another row in the same frozen table."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "Их",
+            "Нас"
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-ex-u10-pronoun-12-ru",
+            "prov-ex-u10-pronoun-4-ru",
+            "prov-ex-u10-pronoun-7-ru"
+          ]
+        }
+      },
+      "after": {
+        "id": "u10-i-pronoun-4",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form is the genitive row of the shown form?",
+        "promptLetter": "Они",
+        "options": [
+          "Их",
+          "Нас"
+        ],
+        "answer": "Их",
+        "feedback": "Их is the bare genitive table form of Они, meaning they. Нас belongs to Мы, meaning we. Both refer to a plural group, but they is third person and we is first person. This checks the bare table form; third-person forms can change after prepositions.",
+        "objectiveId": "obj-u10-pronoun",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Нас belongs to Мы (we), first-person plural, rather than Они (they), third-person plural."
+        ],
+        "assessment": {
+          "testedFeature": "GENITIVE_PRONOUN",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u10-pronoun-4",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u10-pronoun-4-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u10-pronoun-7-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "Нас belongs to Мы (we), first-person plural, rather than Они (they), third-person plural."
+          ],
+          "whyAnswerDemonstratesObjective": "Их is the bare genitive table form of Они, meaning they. Нас belongs to Мы, meaning we. Both refer to a plural group, but they is third person and we is first person. This checks the bare table form; third-person forms can change after prepositions.",
+          "contrastMembers": [
+            "Их",
+            "Нас"
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-ex-u10-pronoun-12-ru",
+            "prov-ex-u10-pronoun-4-ru",
+            "prov-ex-u10-pronoun-7-ru"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u10-g-animate-0",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form is the object row of the shown form?",
+        "promptLetter": "Эти женщины",
+        "options": [
+          "этих женщин",
+          "Эти женщины"
+        ],
+        "answer": "этих женщин",
+        "feedback": "Does the admitted record show the governed contrast? этих женщин.",
+        "objectiveId": "obj-u10-animate",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This form is the other row of the same word, not the object row."
+        ],
+        "assessment": {
+          "testedFeature": "ANIMATE_PLURAL_OBJECT",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u10-animate-0",
+          "cueLanguage": "ru",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ex-u10-animate-0-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u10-animate-1-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "This form is the other row of the same word, not the object row."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "этих женщин",
+            "Эти женщины"
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-ex-u10-animate-1-ru",
+            "prov-ex-u10-animate-0-ru",
+            "prov-ex-u10-animate-1-ru"
+          ]
+        }
+      },
+      "after": {
+        "id": "u10-g-animate-0",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form is the object row of the shown form?",
+        "promptLetter": "Эти женщины",
+        "options": [
+          "этих женщин",
+          "Эти женщины"
+        ],
+        "answer": "этих женщин",
+        "feedback": "этих женщин is the animate plural accusative object phrase in the source example meaning I like these women. Its forms match the genitive plural. Эти женщины is the nominative subject phrase in the example meaning These women like me. Choose the object form, not the subject form.",
+        "objectiveId": "obj-u10-animate",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Эти женщины is the nominative plural subject phrase, rather than the animate accusative object phrase requested here."
+        ],
+        "assessment": {
+          "testedFeature": "ANIMATE_PLURAL_OBJECT",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u10-animate-0",
+          "cueLanguage": "ru",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ex-u10-animate-0-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u10-animate-1-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "Эти женщины is the nominative plural subject phrase, rather than the animate accusative object phrase requested here."
+          ],
+          "whyAnswerDemonstratesObjective": "этих женщин is the animate plural accusative object phrase in the source example meaning I like these women. Its forms match the genitive plural. Эти женщины is the nominative subject phrase in the example meaning These women like me. Choose the object form, not the subject form.",
+          "contrastMembers": [
+            "этих женщин",
+            "Эти женщины"
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-ex-u10-animate-1-ru",
+            "prov-ex-u10-animate-0-ru",
+            "prov-ex-u10-animate-1-ru"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u10-i-animate-1",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form is the other plural row of the shown form?",
+        "promptLetter": "этих женщин",
+        "options": [
+          "Эти женщины",
+          "этих женщин"
+        ],
+        "answer": "Эти женщины",
+        "feedback": "Does the admitted record show the governed contrast? Эти женщины.",
+        "objectiveId": "obj-u10-animate",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This form is the object row of the same word, not the other plural row."
+        ],
+        "assessment": {
+          "testedFeature": "ANIMATE_PLURAL_OBJECT",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u10-animate-1",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u10-animate-1-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u10-animate-0-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "This form is the object row of the same word, not the other plural row."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "Эти женщины",
+            "этих женщин"
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-ex-u10-animate-0-ru",
+            "prov-ex-u10-animate-1-ru",
+            "prov-ex-u10-animate-0-ru"
+          ]
+        }
+      },
+      "after": {
+        "id": "u10-i-animate-1",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form is the other plural row of the shown form?",
+        "promptLetter": "этих женщин",
+        "options": [
+          "Эти женщины",
+          "этих женщин"
+        ],
+        "answer": "Эти женщины",
+        "feedback": "Эти женщины is the nominative plural subject phrase in the source example meaning These women like me. The shown этих женщин is the animate plural accusative object phrase in I like these women, with genitive-like forms. The other row requested here is the nominative subject form.",
+        "objectiveId": "obj-u10-animate",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "этих женщин repeats the animate plural accusative object phrase shown in the cue; the requested other row is the nominative subject phrase."
+        ],
+        "assessment": {
+          "testedFeature": "ANIMATE_PLURAL_OBJECT",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u10-animate-1",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u10-animate-1-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u10-animate-0-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "этих женщин repeats the animate plural accusative object phrase shown in the cue; the requested other row is the nominative subject phrase."
+          ],
+          "whyAnswerDemonstratesObjective": "Эти женщины is the nominative plural subject phrase in the source example meaning These women like me. The shown этих женщин is the animate plural accusative object phrase in I like these women, with genitive-like forms. The other row requested here is the nominative subject form.",
+          "contrastMembers": [
+            "Эти женщины",
+            "этих женщин"
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-ex-u10-animate-0-ru",
+            "prov-ex-u10-animate-1-ru",
+            "prov-ex-u10-animate-0-ru"
+          ]
+        }
+      }
+    }
+  ],
+  "bibliography": "Retained Wikibooks CC BY-SA 4.0: Russian/Grammar/Genitive oldid4567338, catalog/sources/units-6-10/wikibooks/genitive-4567338.txt, complete Personal Pronouns table and following preposition note; Russian/Pronouns oldid4585698, catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt, complete Formality and Personal sections; Russian/Personal Pronouns oldid3598527, catalog/sources/units-3-5/wikibooks/personal-pronouns-3598527.txt, complete person/number table; Russian/Grammar/Accusative_case oldid4330404, catalog/sources/units-6-10/wikibooks/accusative-4330404.txt, Nouns animate-plural subject/object examples and Adjectives agreement context. Bare genitive table-form recognition, not a claim that third-person forms remain unchanged after prepositions. Animate object is syntactically accusative, with genitive-like forms, not syntactically genitive. All scored/source tuples and exact Russian spellings/capitalization remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.",
+  "semanticAcceptance": false
+}
