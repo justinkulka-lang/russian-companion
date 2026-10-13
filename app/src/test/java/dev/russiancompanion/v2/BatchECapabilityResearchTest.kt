@@ -316,7 +316,7 @@ class BatchECapabilityResearchTest {
         val pack = loadCurriculumPack(root)
         val model = reconcileCurriculumReadiness(root, pack)
         val candidate = readAcceptanceCandidate(root)
-        assertEquals("e67744f1f482186215862537ef55e26ad820a6a6bd7de95b4ae0638ec0757c30", model.packContentReviewDigest)
+        assertEquals("8e12b776136a7462b0bb0a4d13be11215a52ca88db22700a7abdade712140915", model.packContentReviewDigest)
         assertEquals(candidate?.sourceDigest, model.repositorySourceDigest)
         assertEquals(model.repositorySourceDigest, computeReleaseSourceDigest(root))
         assertEquals("NOT_APPROVED", model.publicRelease)
@@ -343,7 +343,7 @@ class BatchECapabilityResearchTest {
             25 to "317881a1a5a77489ce03b939b567642725274c10c534e14be68007b199cde98d",
             26 to "7870405b2810239e5e744706b0376877191d00afc337ac30e7a2249ad97fddab",
             27 to "fb8a23246226a841df660cae2517b139cba2ff51ef5939792268d2c6cb50bc2e",
-            28 to "d8df059f618e932eb0e77579113fea17db317584e77bef5a10dda3e82f70d402",
+            28 to "decfe657342b98c1c35277cd88e1a3e125df1233549f01872af8eae7c8fcbd82",
             // Contextual punctuation supersedes historical b35528e0a8ca27fed0fe18541aab59755d6adcad90a7ccaae86c1f8318ab9374.
             29 to "454026c94347703fa15b6e305bf4319edcc1542e6a9eb786709186b435753501",
             30 to "9e453a1050dc3a25959271b300c68c64bb293ba9f34a40a9d76aaf3e0ce3f02e",
@@ -369,7 +369,7 @@ class BatchECapabilityResearchTest {
             25 to "d09669e2175455dba996fed8df9d84a04651b3d09477a7834dd765a9b31fae59",
             26 to "72034166355fc1ba567a4caa64db7c908d9c523ed7e2f3d618e45e9653a14e99",
             27 to "e1607fe23cb8f2e8bbc35c9a76a49b3895992b109075052c61b8daeab4e0e941",
-            28 to "a4132204cbd12285cf157a29f2fb6bd28d03404145ae1fe830de9b93953236ad",
+            28 to "a35f13bcab8de9bbc9f2530ac07da48c7b3b6384fddcb7553c8caecb91dbb9c4",
             // Contextual punctuation supersedes historical 73eeb58d502dc27b52246f6c92bc52b4e8847ccce1c429806d28a18701d07639.
             29 to "2d3a8b3cdf53c88aab9cf389a8750cab1146ba02ca3d5ee47a4690ab8353446f",
             30 to "f2c5e63a6b86d782c8bd055dac04923789909962aa6f1423208f5635aef354c8",

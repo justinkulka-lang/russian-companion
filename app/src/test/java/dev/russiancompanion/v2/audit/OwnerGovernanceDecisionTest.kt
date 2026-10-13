@@ -25,7 +25,7 @@ class OwnerGovernanceDecisionTest {
         }
         assertEquals(emptyList<String>(), unresolved)
         assertEquals(
-            "e67744f1f482186215862537ef55e26ad820a6a6bd7de95b4ae0638ec0757c30",
+            "8e12b776136a7462b0bb0a4d13be11215a52ca88db22700a7abdade712140915",
             V2Validator.contentReviewDigest(pack),
         )
         val readiness = pack.units.groupBy { it.readiness }.mapValues { it.value.size }
