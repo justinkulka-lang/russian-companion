@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Units610SourceIntakeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-13T19:16:57.986Z" hostname="d0fbcd1608d3" time="2.503">
+  <properties/>
+  <testcase name="governedContrastsStaySourceBoundAndBookAttestationDoesNotAdvance" classname="dev.russiancompanion.v2.Units610SourceIntakeTest" time="2.497"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

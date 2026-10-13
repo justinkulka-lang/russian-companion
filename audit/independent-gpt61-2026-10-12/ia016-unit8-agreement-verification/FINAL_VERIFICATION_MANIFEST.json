@@ -1,0 +1,544 @@
+{
+  "verifiedRepositoryCommit": "ad266cf92a4d8976f6b9f30111626f8245794137",
+  "integrationRepositoryCommit": "189d173407bb93e82e67c3e2ef0bff27b6532343",
+  "implementationCommit": "4295962682885f00cdcfcac0923aa213716b9cd5",
+  "initialAdjectiveImplementationCommit": "a53041e3c330b7dd13a7b54535fd791bd7fdfc41",
+  "workingDirectory": "/workspace/russian-companion",
+  "scope": "FOCUSED_SELECTED_CHECKS_ACROSS_TWO_RECORDED_RUNS_NOT_SINGLE_SUITE",
+  "integrationRun": {
+    "repositoryCommit": "189d173407bb93e82e67c3e2ef0bff27b6532343",
+    "workingTreeNote": "Selected production/curriculum/test/review inputs committed. Unexecuted Units1115MappingGapTest current Unit8 snapshot assertion refresh was present but uncommitted; listed in SNAPSHOT_EXPECTATION_REFRESH.json.",
+    "command": "bash audit/independent-gpt61-2026-10-12/ia016-unit8-agreement-verification/verify.sh",
+    "expandedScript": "set -e\ncd /workspace/russian-companion\nsource /workspace/setup/android-env.sh\nchecks=(\n  --tests '*Unit8AgreementTransferTest'\n  --tests '*Units610InstructionalValidityTest.everyRecognitionObjectiveHasAnIndependentFeatureValidCheck'\n  --tests '*LabExplanationCorrectionTest'\n  --tests '*Unit17QuestionTransferTest.questionCompletionRequiresIndependentCuesDistinctFromGuidedPractice'\n  --tests '*Units610SourceIntakeTest.retainedSourceBytesMatchImmutableRevisions'\n  --tests '*Units610SourceIntakeTest.noPenguinAudioOrNetworkWasAdded'\n  --tests '*Units610SourceIntakeTest.governedContrastsStaySourceBoundAndBookAttestationDoesNotAdvance'\n  --tests '*UnitReviewPipelineTest.committedUnitPackagesMatchTheGenerator'\n  --tests '*CurriculumReadinessReconciliationTest.committedReportsMatchTheGeneratorAndStayByteIdentical'\n  --tests '*OwnerGovernanceDecisionTest.preparationManifestBindsFactsAndDoesNotPassAFinalAudit'\n  --tests '*GapClosureDossierTest.dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease'\n  --tests '*ReleaseSourceDigestTest.committedCandidateRecordsTheCurrentSourceDigestAndIdentity'\n  --tests '*BatchECapabilityResearchTest.digestsGovernanceAndLaterUnitsStayUnchanged'\n  --tests '*V2RebuildTest.structuralMappingSafeguardsRejectIncompleteOrInventedRecords'\n  --tests '*CompleteRuleCorrectionTest.coordinatedKeyAndApplicationEditsCannotReverseTheFrozenContext'\n  --tests '*Unit9QuantityRuleCorrectionTest.coordinatedKeyAndApplicationEditsCannotReverseTheTeenContext'\n)\n./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest \"${checks[@]}\" compileDebugSources lintDebug verifyReleaseGateAttachment --max-workers=4 --console=plain\n",
+    "exitCode": 1,
+    "totals": {
+      "tests": 26,
+      "failures": 1,
+      "errors": 0,
+      "skipped": 0
+    },
+    "passed": 25,
+    "classes": [
+      {
+        "className": "dev.russiancompanion.release.ReleaseSourceDigestTest",
+        "methods": [
+          {
+            "name": "committedCandidateRecordsTheCurrentSourceDigestAndIdentity",
+            "failed": false
+          }
+        ],
+        "timestamp": "2026-10-13T19:10:11.475Z",
+        "sha256": "5dd87ed34f5b1f2f7060fde56a724375fcd8093406c99420c7e76a626ccc4ebf",
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "className": "dev.russiancompanion.v2.BatchECapabilityResearchTest",
+        "methods": [
+          {
+            "name": "digestsGovernanceAndLaterUnitsStayUnchanged",
+            "failed": false
+          }
+        ],
+        "timestamp": "2026-10-13T19:10:11.043Z",
+        "sha256": "d756e6e9608831837ac519efd47e82e372266d721b4dfac93b332e9af1371356",
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "className": "dev.russiancompanion.v2.Units610SourceIntakeTest",
+        "methods": [
+          {
+            "name": "retainedSourceBytesMatchImmutableRevisions",
+            "failed": false
+          },
+          {
+            "name": "governedContrastsStaySourceBoundAndBookAttestationDoesNotAdvance",
+            "failed": true
+          },
+          {
+            "name": "noPenguinAudioOrNetworkWasAdded",
+            "failed": false
+          }
+        ],
+        "timestamp": "2026-10-13T19:14:13.361Z",
+        "sha256": "7d4c63213acd85d6b2b278cac9174eee0f8219b4c1ef887c8ee0d59c0afdbc7d",
+        "tests": 3,
+        "failures": 1,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "className": "dev.russiancompanion.v2.V2RebuildTest",
+        "methods": [
+          {
+            "name": "structuralMappingSafeguardsRejectIncompleteOrInventedRecords",
+            "failed": false
+          }
+        ],
+        "timestamp": "2026-10-13T19:10:10.544Z",
+        "sha256": "08b85cbee27b74cd107f842972a0f340240b687a54c08cc73bfba2e561044fba",
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "className": "dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest",
+        "methods": [
+          {
+            "name": "committedReportsMatchTheGeneratorAndStayByteIdentical",
+            "failed": false
+          }
+        ],
+        "timestamp": "2026-10-13T19:12:57.543Z",
+        "sha256": "2c2ee0ffed4687341dad398d1eb107ee2dab07b63b85ab9185aeb500f66250c2",
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "className": "dev.russiancompanion.v2.audit.GapClosureDossierTest",
+        "methods": [
+          {
+            "name": "dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease",
+            "failed": false
+          }
+        ],
+        "timestamp": "2026-10-13T19:12:30.720Z",
+        "sha256": "6287806b85658e58d37ea2abe8c9742ac19057cd4f2710ba08c7b739a9d8fd55",
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "className": "dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest",
+        "methods": [
+          {
+            "name": "preparationManifestBindsFactsAndDoesNotPassAFinalAudit",
+            "failed": false
+          }
+        ],
+        "timestamp": "2026-10-13T19:14:19.495Z",
+        "sha256": "53d5fe3dec4c35c72e2b7428f3dca3d5d5586134c0e3f80bd0451c93cde5c2cc",
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "className": "dev.russiancompanion.v2.review.UnitReviewPipelineTest",
+        "methods": [
+          {
+            "name": "committedUnitPackagesMatchTheGenerator",
+            "failed": false
+          }
+        ],
+        "timestamp": "2026-10-13T19:12:41.125Z",
+        "sha256": "74ac5e5c5865c664756575e1816c6197e337afee2eac9d7e9b08317bc77d7521",
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "className": "dev.russiancompanion.v2.Unit8AgreementTransferTest",
+        "methods": [
+          {
+            "name": "completedAgreementNeedsADifferentIndependentAdjective",
+            "failed": false
+          },
+          {
+            "name": "guidedAndOtherCorrectPairsCannotCompleteTheIndependentAdjective",
+            "failed": false
+          },
+          {
+            "name": "restoringTheOriginalValidFormSelectionCannotClearDistinctAdjectiveEvidence",
+            "failed": false
+          },
+          {
+            "name": "coherentNativeTextAndHashForgeryCannotChangeTheBlueSource",
+            "failed": false
+          },
+          {
+            "name": "coordinatedKeyAndApplicationCannotMakeTheSingularAPluralAnswer",
+            "failed": false
+          },
+          {
+            "name": "playerRejectsTheSingularBlueFormAndExplainsTheNumber",
+            "failed": false
+          },
+          {
+            "name": "allSixCardsPrecedePracticeAndRemediationRestoresThem",
+            "failed": false
+          },
+          {
+            "name": "unaccentedSourcePairAndOtherCorrectFieldsArePreserved",
+            "failed": false
+          },
+          {
+            "name": "historicalFourAnswerCompletionStaysSavedButCannotCreditCurrentContent",
+            "failed": false
+          }
+        ],
+        "timestamp": "2026-10-13T19:12:35.677Z",
+        "sha256": "ec40a96f4bd3958ffa3642502d3418ff77ee7b8ad92457338f82a85bd66c93f2",
+        "tests": 9,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "className": "dev.russiancompanion.v2.LabExplanationCorrectionTest",
+        "methods": [
+          {
+            "name": "wrongGrammarAnswerCanReviewDeclaredTeachingWithoutWritingProgress",
+            "failed": false
+          },
+          {
+            "name": "crossUnitDeclarationsCannotRevealFutureTeaching",
+            "failed": false
+          },
+          {
+            "name": "correctVocabularyAnswerCanReviewTeachingAndKeepItsSavedSelection",
+            "failed": false
+          }
+        ],
+        "timestamp": "2026-10-13T19:11:25.678Z",
+        "sha256": "3bc593c1167020cb816241d3e7bddbe8127ebd64e2d5ed84454b81ab8d3724f7",
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "className": "dev.russiancompanion.v2.Units610InstructionalValidityTest",
+        "methods": [
+          {
+            "name": "everyRecognitionObjectiveHasAnIndependentFeatureValidCheck",
+            "failed": false
+          }
+        ],
+        "timestamp": "2026-10-13T19:11:52.388Z",
+        "sha256": "8a0d59cb09ce2c25468e8811ca2697069f18655537adbb483718bc2ba249e8b8",
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "className": "dev.russiancompanion.v2.CompleteRuleCorrectionTest",
+        "methods": [
+          {
+            "name": "coordinatedKeyAndApplicationEditsCannotReverseTheFrozenContext",
+            "failed": false
+          }
+        ],
+        "timestamp": "2026-10-13T19:10:13.575Z",
+        "sha256": "2a4fe6fedfd70214da225636b18ae9bf826663b3374d89db4ae9ba942ce4788b",
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "className": "dev.russiancompanion.v2.Unit9QuantityRuleCorrectionTest",
+        "methods": [
+          {
+            "name": "coordinatedKeyAndApplicationEditsCannotReverseTheTeenContext",
+            "failed": false
+          }
+        ],
+        "timestamp": "2026-10-13T19:11:22.819Z",
+        "sha256": "b4322ddc9e6938311a959e5480ecef9e4bcd3a009a4c43f1754c63cde73a62e8",
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "className": "dev.russiancompanion.v2.Unit17QuestionTransferTest",
+        "methods": [
+          {
+            "name": "questionCompletionRequiresIndependentCuesDistinctFromGuidedPractice",
+            "failed": false
+          }
+        ],
+        "timestamp": "2026-10-13T19:12:22.786Z",
+        "sha256": "7fba3bd0b14dbcdaedb6b30828e4fb855aae64f5b8723dbb5a6a281758e59ef9",
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      }
+    ],
+    "diagnosis": "Legacy assertion expected 11, 12, 13, 14, while both current and previous2f06e472 curriculum already say 11, 12, 13 or14 within the complete last-two-digits/genitive-plural rule. This is a preexisting stale wording assertion, not a new Unit8 production regression. Other required literal anchors were checked in baseline/current and are present."
+  },
+  "correctionRun": {
+    "repositoryCommit": "ad266cf92a4d8976f6b9f30111626f8245794137",
+    "command": "bash audit/independent-gpt61-2026-10-12/ia016-unit8-agreement-verification/verify-correction.sh",
+    "expandedScript": "set -e\ncd /workspace/russian-companion\nsource /workspace/setup/android-env.sh\n./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*Units610SourceIntakeTest.governedContrastsStaySourceBoundAndBookAttestationDoesNotAdvance' compileDebugSources lintDebug verifyReleaseGateAttachment --max-workers=4 --console=plain\n",
+    "totals": {
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "methods": [
+      "governedContrastsStaySourceBoundAndBookAttestationDoesNotAdvance"
+    ],
+    "className": "dev.russiancompanion.v2.Units610SourceIntakeTest",
+    "timestamp": "2026-10-13T19:16:57.986Z",
+    "xmlSha256": "f87cf99cbe8dcd42551e0608253e8bbcd7c0f6bb5b54a90ca8c6d03c09335e14",
+    "exitCode": 0
+  },
+  "uniquePassedSelectedMethods": 26,
+  "uniqueClassesCovered": 14,
+  "passedMethods": [
+    {
+      "className": "dev.russiancompanion.release.ReleaseSourceDigestTest",
+      "method": "committedCandidateRecordsTheCurrentSourceDigestAndIdentity"
+    },
+    {
+      "className": "dev.russiancompanion.v2.BatchECapabilityResearchTest",
+      "method": "digestsGovernanceAndLaterUnitsStayUnchanged"
+    },
+    {
+      "className": "dev.russiancompanion.v2.CompleteRuleCorrectionTest",
+      "method": "coordinatedKeyAndApplicationEditsCannotReverseTheFrozenContext"
+    },
+    {
+      "className": "dev.russiancompanion.v2.LabExplanationCorrectionTest",
+      "method": "correctVocabularyAnswerCanReviewTeachingAndKeepItsSavedSelection"
+    },
+    {
+      "className": "dev.russiancompanion.v2.LabExplanationCorrectionTest",
+      "method": "crossUnitDeclarationsCannotRevealFutureTeaching"
+    },
+    {
+      "className": "dev.russiancompanion.v2.LabExplanationCorrectionTest",
+      "method": "wrongGrammarAnswerCanReviewDeclaredTeachingWithoutWritingProgress"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit17QuestionTransferTest",
+      "method": "questionCompletionRequiresIndependentCuesDistinctFromGuidedPractice"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit8AgreementTransferTest",
+      "method": "allSixCardsPrecedePracticeAndRemediationRestoresThem"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit8AgreementTransferTest",
+      "method": "coherentNativeTextAndHashForgeryCannotChangeTheBlueSource"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit8AgreementTransferTest",
+      "method": "completedAgreementNeedsADifferentIndependentAdjective"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit8AgreementTransferTest",
+      "method": "coordinatedKeyAndApplicationCannotMakeTheSingularAPluralAnswer"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit8AgreementTransferTest",
+      "method": "guidedAndOtherCorrectPairsCannotCompleteTheIndependentAdjective"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit8AgreementTransferTest",
+      "method": "historicalFourAnswerCompletionStaysSavedButCannotCreditCurrentContent"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit8AgreementTransferTest",
+      "method": "playerRejectsTheSingularBlueFormAndExplainsTheNumber"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit8AgreementTransferTest",
+      "method": "restoringTheOriginalValidFormSelectionCannotClearDistinctAdjectiveEvidence"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit8AgreementTransferTest",
+      "method": "unaccentedSourcePairAndOtherCorrectFieldsArePreserved"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit9QuantityRuleCorrectionTest",
+      "method": "coordinatedKeyAndApplicationEditsCannotReverseTheTeenContext"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Units610InstructionalValidityTest",
+      "method": "everyRecognitionObjectiveHasAnIndependentFeatureValidCheck"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Units610SourceIntakeTest",
+      "method": "governedContrastsStaySourceBoundAndBookAttestationDoesNotAdvance"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Units610SourceIntakeTest",
+      "method": "noPenguinAudioOrNetworkWasAdded"
+    },
+    {
+      "className": "dev.russiancompanion.v2.Units610SourceIntakeTest",
+      "method": "retainedSourceBytesMatchImmutableRevisions"
+    },
+    {
+      "className": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "structuralMappingSafeguardsRejectIncompleteOrInventedRecords"
+    },
+    {
+      "className": "dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest",
+      "method": "committedReportsMatchTheGeneratorAndStayByteIdentical"
+    },
+    {
+      "className": "dev.russiancompanion.v2.audit.GapClosureDossierTest",
+      "method": "dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease"
+    },
+    {
+      "className": "dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest",
+      "method": "preparationManifestBindsFactsAndDoesNotPassAFinalAudit"
+    },
+    {
+      "className": "dev.russiancompanion.v2.review.UnitReviewPipelineTest",
+      "method": "committedUnitPackagesMatchTheGenerator"
+    }
+  ],
+  "all16IntegrationSelectorsExecuted": true,
+  "productionInputsIdenticalAcrossTestCorrection": true,
+  "scopeExplanation": "Integration26:25 passed/one stale wording assertion failed. Corrected existing test checks the already retained whole-numeral last-two-digits/11\u201314/genitive-plural rule; one targeted test passes. These are26 unique methods across two runs, not a single26/0 suite or a complete-suite result. Other refreshed snapshot fixtures were not separately executed.",
+  "lint": {
+    "status": "PASSED",
+    "severities": {
+      "Warning": 20,
+      "Hint": 1
+    },
+    "task": "> Task :app:lintDebug",
+    "sha256": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6"
+  },
+  "compilation": "> Task :app:compileDebugSources UP-TO-DATE; current production/test compilation in preceding validations/generators",
+  "releaseGateAttachment": {
+    "status": "PASSED",
+    "task": "> Task :app:verifyReleaseGateAttachment"
+  },
+  "rawCurriculumSha256": "049d60307f4c8ef27dae9f91be5fe31a03569684f4dd6eec5e3422df6d63f42c",
+  "packContentReviewDigest": "cbcb933333bfaef0bad3a73f79386e7fd55845e6111be58209a0c2a7b80cafd9",
+  "repositorySourceDigest": "99300eba8269e73d33f334de52912f6248802ec4b89add28a112e221e5019fd1",
+  "logSha256": "b841afd2fc93c9c6e357554b90067c6106d9689beb01b655f780330393a27af4",
+  "initScriptSha256": {
+    "cloud-validation.gradle": "21c6a0ee2e97cf83c472513ac31c3d2d456e461185384e9b5e58c0fed298d123",
+    "parallel-tests.gradle": "2366eb867708f83db10b39080abff1b45d2e347bab15ce2ec1c95c3d31cf7ff3"
+  },
+  "screenshotExporterExclusions": [
+    {
+      "className": "VisualReviewCaptureTest",
+      "methods": 2,
+      "reason": "Overwrites retained tracked evidence; excluded from setup verification."
+    },
+    {
+      "className": "Units35ChunkCaptureTest",
+      "methods": 2,
+      "reason": "Overwrites retained tracked evidence; excluded from setup verification."
+    },
+    {
+      "className": "Units610ChunkCaptureTest",
+      "methods": 10,
+      "reason": "Overwrites retained tracked evidence; excluded from setup verification."
+    },
+    {
+      "className": "Units1115GapCaptureTest",
+      "methods": 2,
+      "reason": "Overwrites retained tracked evidence; excluded from setup verification."
+    }
+  ],
+  "excludedMethods": 16,
+  "baselineNegative": {
+    "repositoryCommit": "2f06e472876d5248a403b8f523305918afca65fa",
+    "command": "source /workspace/setup/android-env.sh; ./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*Unit8AgreementTransferTest' --max-workers=4 --console=plain",
+    "tests": 1,
+    "failures": 1,
+    "errors": 0,
+    "skipped": 0,
+    "scope": "Baseline curriculum plus new diagnostic harness; original four answers first demonstrate the objective, then distinct independent adjective requirement fails."
+  },
+  "earlyValidation": {
+    "repositoryHead": "2f06e472876d5248a403b8f523305918afca65fa",
+    "workingTree": "Uncommitted distinct-adjective implementation before English demonstrative-label clarification.",
+    "rawCurriculumSha256": "eb445ead5e09404679fa0bcabed26c350dae3112744df22d6c50dbaa2ef0f378",
+    "initial": {
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "expanded": {
+      "tests": 10,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "clarificationCommit": "4295962682885f00cdcfcac0923aa213716b9cd5",
+    "clarification": "Distinguish dictionary entry this from ordinary English plural these. No key, native stress, primary/canonical pin or other-item change; two English coverage records and their teaching/remediation bodies renewed.",
+    "scope": "Early scopes overlap final selected scope; not complete-suite runs."
+  },
+  "snapshotExpectationRefresh": {
+    "baselineCommit": "2f06e472876d5248a403b8f523305918afca65fa",
+    "unit": 8,
+    "changes": [
+      {
+        "file": "app/src/test/java/dev/russiancompanion/v2/Units1115MappingGapTest.kt",
+        "field": "contentReviewDigest",
+        "before": "cd04cb2a10f58b72f853bf5070f7e436d65ce601b979ab8337eb1e4f0c1329c7",
+        "after": "2c46aeb63e41b987fedf96c545a79d76451bda3263115a5ffbcfb67034063229"
+      },
+      {
+        "file": "app/src/test/java/dev/russiancompanion/v2/Units2125SourceIntakeTest.kt",
+        "field": "contentReviewDigest",
+        "before": "cd04cb2a10f58b72f853bf5070f7e436d65ce601b979ab8337eb1e4f0c1329c7",
+        "after": "2c46aeb63e41b987fedf96c545a79d76451bda3263115a5ffbcfb67034063229"
+      },
+      {
+        "file": "app/src/test/java/dev/russiancompanion/v2/Units2630SourceIntakeTest.kt",
+        "field": "contentReviewDigest",
+        "before": "cd04cb2a10f58b72f853bf5070f7e436d65ce601b979ab8337eb1e4f0c1329c7",
+        "after": "2c46aeb63e41b987fedf96c545a79d76451bda3263115a5ffbcfb67034063229"
+      }
+    ],
+    "oldPackDigest": "a77b06817306455c0df0139bda5f47abea8d343cff2bffdcfd2dfa46e84f62fe",
+    "newPackDigest": "cbcb933333bfaef0bad3a73f79386e7fd55845e6111be58209a0c2a7b80cafd9",
+    "allOtherUnitContentReviewAndMappingExpectationsUnchanged": true,
+    "formalAcceptance": false
+  },
+  "historicalScope": {
+    "mainCommit": "ff539220645670fbf7a1abacaa6f71e828606b80",
+    "mainSourceAnnotations": 579,
+    "exporters": 16,
+    "mainReported": 563,
+    "mainPassed": 562,
+    "mainSkipped": 1,
+    "pr64BaselineCommit": "420f41ff6c2a4417cd829fdee0179b6a3b797eff",
+    "pr64SourceAnnotations": 691,
+    "difference": 112,
+    "handoffExecutionVerified": false,
+    "interpretation": "Selected scopes do not establish a complete-suite result or verify historical handoff execution. Overlapping scopes are not summed."
+  },
+  "apk": {
+    "applicationId": "dev.russiancompanion",
+    "versionName": "2.0.0-dev",
+    "versionCode": 5,
+    "assembled": false,
+    "signed": false,
+    "artifactIdentity": "NOT_RECORDED",
+    "sha256": "NOT_RECORDED",
+    "signature": "NOT_RECORDED",
+    "historicalArtifactsAreNotCurrentCandidate": true
+  },
+  "coverageScope": "Supplied nominative adjective form recognition on distinct exact unaccented blue singular/plural pair; correct guided/new, possessive and demonstrative pairs preserved. Six cards before practice/full remediation. Not arbitrary sentence agreement, every case, universal adjective morphology or linguistic acceptance.",
+  "productiveAgreementClaim": false,
+  "universalAdjectiveAlgorithmClaim": false,
+  "formalSourceRightsLinguisticAcceptance": false,
+  "physicalDeviceAcceptance": "OUTSTANDING_LAST_AFTER_FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
+  "release": "NOT_APPROVED"
+}

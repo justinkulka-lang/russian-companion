@@ -1,5 +1,5 @@
 {
-  "repositoryCommit": "d8242532259be670f8828c2ffb63a96bf26fadc7",
+  "repositoryCommit": "189d173407bb93e82e67c3e2ef0bff27b6532343",
   "scope": "EXACT_SAME_UNIT_PROMPT_CUE_KEY_ORDERED_OPTIONS_SIGNATURE_NOT_ALL_TRANSFER_DEFECTS",
   "groups": [
     {
@@ -18,23 +18,6 @@
       "objectiveIds": [
         "obj-u8-plural",
         "obj-u8-spelling"
-      ]
-    },
-    {
-      "unitNumber": 8,
-      "itemIds": [
-        "u8-g-agreement-0",
-        "u8-i-agreement-3"
-      ],
-      "prompt": "Which plural nominative form of the same adjective corresponds to the shown form?",
-      "cue": "но́вый",
-      "answer": "но́вые",
-      "options": [
-        "но́вые",
-        "но́вый"
-      ],
-      "objectiveIds": [
-        "obj-u8-agreement"
       ]
     },
     {
@@ -161,11 +144,11 @@
       ]
     }
   ],
-  "count": 9,
+  "count": 8,
   "originalDiagnosticGroupCount": 11,
-  "priorInventoryCommit": "151cae10b653be9038423e0d19afca2cf9a48b18",
-  "priorInventoryCount": 10,
-  "difference": "The original Unit4 glossary pair and Unit17 repeated clock gloss group are now optional vocabulary, outside governed guided/independent pairs. Unit17 adds one guided apple question and two independent clock/book questions with distinct complete cues/requested information. Nine other exact same-unit groups remain; cross-unit review repeats are separate. This count is not a semantic audit or closure of IA016.",
-  "engineeringDisposition": "PARTIAL_UNIT17_FIX_PENDING_INDEPENDENT_VERIFICATION_OTHER_GROUPS_OPEN",
+  "priorInventoryCommit": "2f06e472876d5248a403b8f523305918afca65fa",
+  "priorInventoryCount": 9,
+  "difference": "Unit4/17 repeated gloss roles became optional; Unit8 independent adjective now uses a distinct source lexeme and ending shape. Eight exact groups remain, without semantic closure. The Unit8 noun/spelling pair is inter-objective, with independent plural before guided spelling in normal session order; contextual review is required rather than automatically treating it as rehearsed-before-independent. Cross-unit review repetitions remain separate.",
+  "engineeringDisposition": "PARTIAL_UNIT17_AND_UNIT8_AGREEMENT_FIXES_PENDING_INDEPENDENT_VERIFICATION_OTHER_GROUPS_OPEN",
   "formalAcceptance": false
 }

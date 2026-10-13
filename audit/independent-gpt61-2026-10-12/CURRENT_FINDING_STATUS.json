@@ -194,18 +194,17 @@
       "findingId": "IA016",
       "producerSeverity": "MEDIUM",
       "producerStatus": "OPEN",
-      "engineeringDisposition": "PARTIAL_UNIT17_FIX_PENDING_INDEPENDENT_VERIFICATION_OTHER_GROUPS_OPEN",
+      "engineeringDisposition": "PARTIAL_UNIT17_AND_UNIT8_AGREEMENT_FIXES_PENDING_INDEPENDENT_VERIFICATION_OTHER_GROUPS_OPEN",
       "formalAcceptance": false,
-      "currentExactSameUnitGroups": 9,
+      "currentExactSameUnitGroups": 8,
       "inventoryPath": "IA016_CURRENT_DUPLICATE_INVENTORY.json",
       "continuationPath": "IA016_INDEPENDENT_TRANSFER_PENDING.md",
-      "implementationCommit": "4580f773097f0346e3a8000d8798de259a2e68a0",
-      "evidencePath": "ia016-unit17-verification/FINAL_VERIFICATION_MANIFEST.json",
+      "implementationCommit": "4295962682885f00cdcfcac0923aa213716b9cd5",
+      "evidencePath": "ia016-unit8-agreement-verification/FINAL_VERIFICATION_MANIFEST.json",
       "supplementalEvidencePath": "ia016-unit17-verification/SUPPLEMENTAL_VERIFICATION_MANIFEST.json",
-      "coverageScope": "One guided apple-ownership/selection question; two independent current-clock-time/listener-book-selection questions. Exact complete native cues and requested information differ. Interpretation of these supplied questions, not a second native clock-question variant, productive asking/giving time or unrestricted interrogative transfer.",
+      "coverageScope": "Supplied nominative adjective form recognition on distinct exact unaccented blue singular/plural pair; correct guided/new, possessive and demonstrative pairs preserved. Six cards before practice/full remediation. Not arbitrary sentence agreement, every case, universal adjective morphology or linguistic acceptance.",
       "newIndependentItemIds": [
-        "u17-i-question-clock",
-        "u17-i-question-book"
+        "u8-i-agreement-3"
       ],
       "newGuidedItemId": "u17-g-question-apple",
       "optionalVocabularyItemIds": [
@@ -214,7 +213,30 @@
         "u17-i-clock-2"
       ],
       "productiveClockQuestionClaim": false,
-      "allQuestionTransferClaim": false
+      "allQuestionTransferClaim": false,
+      "unit17ImplementationCommit": "4580f773097f0346e3a8000d8798de259a2e68a0",
+      "unit17EvidencePath": "ia016-unit17-verification/FINAL_VERIFICATION_MANIFEST.json",
+      "productiveAgreementClaim": false,
+      "universalAdjectiveAlgorithmClaim": false,
+      "boundedComponents": {
+        "unit17": {
+          "implementationCommit": "4580f773097f0346e3a8000d8798de259a2e68a0",
+          "evidencePath": "ia016-unit17-verification/FINAL_VERIFICATION_MANIFEST.json",
+          "independentItemIds": [
+            "u17-i-question-clock",
+            "u17-i-question-book"
+          ],
+          "guidedItemId": "u17-g-question-apple",
+          "formalAcceptance": false
+        },
+        "unit8Agreement": {
+          "implementationCommit": "4295962682885f00cdcfcac0923aa213716b9cd5",
+          "evidencePath": "ia016-unit8-agreement-verification/FINAL_VERIFICATION_MANIFEST.json",
+          "independentItemId": "u8-i-agreement-3",
+          "guidedItemId": "u8-g-agreement-0",
+          "formalAcceptance": false
+        }
+      }
     },
     {
       "findingId": "IA017",
@@ -235,22 +257,26 @@
   "semanticAcceptancePromoted": false,
   "physicalDeviceAcceptance": "OUTSTANDING",
   "release": "NOT_APPROVED",
-  "latestValidatorImplementationCommit": "4580f773097f0346e3a8000d8798de259a2e68a0",
-  "latestSourceBindingCheckpoint": "d8242532259be670f8828c2ffb63a96bf26fadc7",
+  "latestValidatorImplementationCommit": "a53041e3c330b7dd13a7b54535fd791bd7fdfc41",
+  "latestSourceBindingCheckpoint": "189d173407bb93e82e67c3e2ef0bff27b6532343",
   "remainingSourceReviewPointers": [
     "IA007_SOURCE_REVIEW_PENDING.md",
     "IA008_SOURCE_REVIEW_PENDING.md"
   ],
   "firstBatchImplementationCommit": "4f5cb8024d3f68a37052fdf85b5755bffa2a0904",
   "firstBatchPacketCheckpoint": "49af91a0f5578c63a3b9b98bbe975f40d2758fcc",
-  "latestCurriculumImplementationCommit": "4580f773097f0346e3a8000d8798de259a2e68a0",
+  "latestCurriculumImplementationCommit": "4295962682885f00cdcfcac0923aa213716b9cd5",
   "acceptanceOrder": [
     "FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
     "PHYSICAL_DEVICE_ACCEPTANCE_LAST"
   ],
   "physicalDeviceEvidenceRequestTiming": "AFTER_FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
   "latestAppImplementationCommit": "c82e5b4a305c960ca41f660071d0da25070631ea",
-  "latestVerifiedRepositoryCommit": "d8242532259be670f8828c2ffb63a96bf26fadc7",
+  "latestVerifiedRepositoryCommit": "ad266cf92a4d8976f6b9f30111626f8245794137",
   "latestResearchDiagnosticRepositoryCommit": "0edaa0fc635b3579823f7b352f52fa79a675db3d",
-  "latestSupplementalVerifiedRepositoryCommit": "409a9e87bd17174e6340fc896b7576115d30a69a"
+  "latestSupplementalVerifiedRepositoryCommit": "409a9e87bd17174e6340fc896b7576115d30a69a",
+  "latestFocusedIntegrationCommit": "189d173407bb93e82e67c3e2ef0bff27b6532343",
+  "latestFocusedIntegrationPassed": 25,
+  "latestFocusedIntegrationFailures": 1,
+  "latestCorrectedTargetPassed": 1
 }
