@@ -11,12 +11,12 @@ Unit 20 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 4f5cb8024d3f68a37052fdf85b5755bffa2a0904
-- Unit content-review SHA-256: bb408265fb5239daeb86d43c007061bff330e02a0a9afc1aa677526ccf57302b
+- Curriculum source commit: 1bc59ded74292cd8353fc27f8f89ba89bff80f6d
+- Unit content-review SHA-256: 9238893adafd8d2001561e254f2471a7f23067f1979827873b970ed467768688
 - Mapping-package SHA-256: f24f256481096bcc5f47bcb849f053bfda59fc67e670492c6b4e7a42b514a8c9
-- Pack content-review SHA-256: 149ece9aececeadfc8109e6da7e339515d81ee5e98ac5c5ff78cc50a0ac1aa62
-- Review-package SHA-256: 09070b1d80e7247c4613390e8e066b5fb44ae8821b237f2c0f3d1e07f63c8b69
-- Repository source SHA-256: 4c4a4408db41ce8e3edb16be91a5d01da8aee7b0cb1e20c50e9fe65e9c2a8a7f
+- Pack content-review SHA-256: 0860ba87d95667f0bd13285fa30e3b7e51ea9d8444d97d47bdd193d5e3532e92
+- Review-package SHA-256: fae173597a6933a316332d75c63c589dd11f92f2e62bbe36d25bccc565f81032
+- Repository source SHA-256: d54f21f257028bfc4ea1a864dd63a8a51cb3bbbbd2426146dd4298c831b3ff55
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -113,15 +113,15 @@ tutorOptional=true
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5eb6d338da898128809f96d1a16ed131034f9e8f5439e5bbea15b3c432f9416e
+- Content hash: 98408a976066d02b084dc406ed6dcb935d73be8d71f8dab01b882616cd6ec8f7
 
 title=Distinguish motion meaning, directionality and setting out
 kind=RECOGNITION
 unitNumber=20
-instruction=u20-st-orient,u20-st-teach-motion-1,u20-st-teach-motion-2,u20-st-teach-motion-3,u20-st-teach-motion-4,u20-st-teach-motion-5
-examples=ex-u20-motion-0,ex-u20-motion-1,ex-u20-motion-2,ex-u20-motion-3,ex-u20-motion-4,ex-u20-motion-5,ex-u20-motion-6,ex-u20-motion-7
+instruction=u20-st-orient,u20-st-teach-motion-1,u20-st-teach-motion-2,u20-st-teach-motion-3,u20-st-teach-motion-4,u20-st-teach-motion-5,u20-st-teach-direction-contexts,u20-st-teach-direction-return
+examples=ex-u20-motion-0,ex-u20-motion-1,ex-u20-motion-2,ex-u20-motion-3,ex-u20-motion-4,ex-u20-motion-5,ex-u20-motion-6,ex-u20-motion-7,ex-u20-direction-library,ex-u20-direction-ability,ex-u20-direction-birds,ex-u20-direction-city,ex-u20-direction-weekly,ex-u20-direction-round
 practice=u20-st-guided-motion-1
-checks=u20-i-motion-1,u20-i-motion-2,u20-i-motion-3,u20-i-motion-4
+checks=u20-i-motion-1,u20-i-motion-2,u20-i-motion-3,u20-i-motion-4,u20-i-direction-birds,u20-i-direction-city,u20-i-direction-weekly,u20-i-direction-round
 remediation=u20-st-rem-motion
 
 ### OBJECTIVE `obj-u20-book`
@@ -188,12 +188,12 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c0942e61a2e8997daa3e7a5984cfb8985b9b24fba90b99d96cc1646c25a348cb
+- Content hash: 4f2b88b4e69c5258411f6b8a86034f9b31037d64f54eb6748799e1d7059dfb04
 
 title=Distinguish motion meaning, directionality and setting out
 estimatedMinutes=12
 objectives=obj-u20-motion
-steps=u20-st-teach-motion-1,u20-st-teach-motion-2,u20-st-teach-motion-3,u20-st-teach-motion-4,u20-st-teach-motion-5,u20-st-guided-motion-1,u20-st-rem-motion,u20-st-check-motion
+steps=u20-st-teach-motion-1,u20-st-teach-motion-2,u20-st-teach-motion-3,u20-st-teach-motion-4,u20-st-teach-motion-5,u20-st-teach-direction-contexts,u20-st-teach-direction-return,u20-st-guided-motion-1,u20-st-rem-motion,u20-st-check-motion
 
 ### STEP `u20-st-teach-motion-1`
 
@@ -305,6 +305,50 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u20-st-teach-direction-contexts`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-motion
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 4a09194ed2a1cb21b481226d4f11ff6a452e84e269fc1f477ea300aea3b23f9e
+
+kind=TEACH
+title=Interpret directionality in a whole example
+body=Мы идём в библиотеку. — We are headed to the library. Птицы летят на юг. — The birds are flying south. These supplied contexts show Motion in progress in one direction (imperfective). Ребёнок ходит шесть месяцев. — The child has been walking for six months. This is General walking ability (imperfective). Мы ходили по городу весь день. — We walked around the city all day. This is Movement in various directions (imperfective). Directionality is a property of the whole supplied use, not an English lexical gloss or an automatic claim that the traveller arrived. The basic unprefixed pairs are imperfective.
+dominantAction=Continue
+references=ref-u1620-attribution
+items=
+examples=ex-u20-direction-library,ex-u20-direction-ability,ex-u20-direction-birds,ex-u20-direction-city
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u20-st-teach-direction-return`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-motion
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 44b78d87e7ed5e9e6e016e1c6c04d8fcd905ea997566f438139909226ab5c9ae
+
+kind=TEACH
+title=Distinguish repeated trips and a completed return
+body=Она ходит в супермаркет каждую неделю. — She goes to the supermarket every week. This is Repeated trips (imperfective). В прошлом году я ездил в Россию. — I went to Russia (and returned) last year. In the retained supplied context this is One completed round trip in the past (imperfective). The past round-trip interpretation includes a return; the unprefixed form nevertheless remains imperfective. A choice saying “The form is perfective because this trip is completed.” makes an incorrect aspect inference for these forms. Do not equate a destination with unidirectionality or event completion with perfective aspect. Prefixed setting-out and path examples require their separately taught meanings.
+dominantAction=Continue
+references=ref-u1620-attribution
+items=
+examples=ex-u20-direction-weekly,ex-u20-direction-round
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
 ### STEP `u20-st-guided-motion-1`
 
 - Objectives: obj-u20-motion
@@ -313,14 +357,14 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ea7686533afd137927f765905f6dca0bc510ee7362505e4421dca772c263ea47
+- Content hash: 3257ed04d953629f258b4abfa8a8cb8a711aece4c2a8009c94bae74fdaf53434
 
 kind=GUIDED
 title=Guided practice
 body=Read the shown Russian form and choose the requested meaning, directionality label or aspect partner using the examples above. A missed check returns to the complete explanation.
 dominantAction=Continue
 references=
-items=u20-g-motion-0
+items=u20-g-motion-0,u20-g-direction-library,u20-g-direction-ability
 examples=
 unavailableReason=
 bookDirection=
@@ -335,7 +379,7 @@ remediationStepId=u20-st-rem-motion
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: daff8e9b98700bb15ae451ee29774b08d2bd0d8c34265bdee26c03d243926b5b
+- Content hash: 657e76a2bba30e17c6f1da52041516a8b2d98c7a47ce1e7a9f10c63a8c8f56b4
 
 kind=REMEDIATE
 title=Review the complete contrast
@@ -348,10 +392,14 @@ The table places идти́ in the unidirectional column: motion in one directio
 Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
 
 Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
+
+Мы идём в библиотеку. — We are headed to the library. Птицы летят на юг. — The birds are flying south. These supplied contexts show Motion in progress in one direction (imperfective). Ребёнок ходит шесть месяцев. — The child has been walking for six months. This is General walking ability (imperfective). Мы ходили по городу весь день. — We walked around the city all day. This is Movement in various directions (imperfective). Directionality is a property of the whole supplied use, not an English lexical gloss or an automatic claim that the traveller arrived. The basic unprefixed pairs are imperfective.
+
+Она ходит в супермаркет каждую неделю. — She goes to the supermarket every week. This is Repeated trips (imperfective). В прошлом году я ездил в Россию. — I went to Russia (and returned) last year. In the retained supplied context this is One completed round trip in the past (imperfective). The past round-trip interpretation includes a return; the unprefixed form nevertheless remains imperfective. A choice saying “The form is perfective because this trip is completed.” makes an incorrect aspect inference for these forms. Do not equate a destination with unidirectionality or event completion with perfective aspect. Prefixed setting-out and path examples require their separately taught meanings.
 dominantAction=Continue
 references=ref-ca-motion
 items=
-examples=ex-u20-motion-0,ex-u20-motion-1,ex-u20-motion-2,ex-u20-motion-3,ex-u20-motion-4,ex-u20-motion-5,ex-u20-motion-6,ex-u20-motion-7
+examples=ex-u20-motion-0,ex-u20-motion-1,ex-u20-motion-2,ex-u20-motion-3,ex-u20-motion-4,ex-u20-motion-5,ex-u20-motion-6,ex-u20-motion-7,ex-u20-direction-library,ex-u20-direction-ability,ex-u20-direction-birds,ex-u20-direction-city,ex-u20-direction-weekly,ex-u20-direction-round
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -365,14 +413,14 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: efec555aca2bafa10afd3b747f219ea5257a3f419b4d4dac21cf8289270b2412
+- Content hash: 2db8ba796abf7f7e58caec665115868ae0a54e6444b8a178d4f3b4c7216d0504
 
 kind=CHECK
 title=Independent checks
 body=Read the shown Russian form and choose the requested meaning, directionality label or aspect partner using the examples above. A missed check returns to the complete explanation.
 dominantAction=Continue
 references=
-items=u20-i-motion-1,u20-i-motion-2,u20-i-motion-3,u20-i-motion-4
+items=u20-i-motion-1,u20-i-motion-2,u20-i-motion-3,u20-i-motion-4,u20-i-direction-birds,u20-i-direction-city,u20-i-direction-weekly,u20-i-direction-round
 examples=
 unavailableReason=
 bookDirection=
@@ -662,6 +710,108 @@ note=The ball flew onto the roof of the house.
 objectiveId=obj-u20-motion
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
+### EXAMPLE `ex-u20-direction-library`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-motion
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ce8ace55f8cf91b4151d1cd1cab852085df5c55c93ca8e03413c60e4c13e539e
+
+kind=LEXICAL
+letterId=
+display=Мы идём в библиотеку.
+note=We are headed to the library.
+objectiveId=obj-u20-motion
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### EXAMPLE `ex-u20-direction-ability`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-motion
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2a272975f0aec1071a5a7703a4e34a09e99797868728e84230c3063eafd5c2d9
+
+kind=LEXICAL
+letterId=
+display=Ребёнок ходит шесть месяцев.
+note=The child has been walking for six months.
+objectiveId=obj-u20-motion
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### EXAMPLE `ex-u20-direction-birds`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-motion
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 485a81b7ff771e90523f91b91df6b32b0841e9176f306f5b0a9162c5023ea543
+
+kind=LEXICAL
+letterId=
+display=Птицы летят на юг.
+note=The birds are flying south.
+objectiveId=obj-u20-motion
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### EXAMPLE `ex-u20-direction-city`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-motion
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 82e476d7874aef263620175b87df785a04c07c3f3a0aad69b81b6bdd917c4313
+
+kind=LEXICAL
+letterId=
+display=Мы ходили по городу весь день.
+note=We walked around the city all day.
+objectiveId=obj-u20-motion
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### EXAMPLE `ex-u20-direction-weekly`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-motion
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0b12bb8e72e18a783240f449444b36cd0f43d63a460f8d749f1ca7214378e1ef
+
+kind=LEXICAL
+letterId=
+display=Она ходит в супермаркет каждую неделю.
+note=She goes to the supermarket every week.
+objectiveId=obj-u20-motion
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### EXAMPLE `ex-u20-direction-round`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-motion
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 40925f1bcf4b2dc25f14978ac2114f48b38a5b1fbf806cce3dcb632ea139be52
+
+kind=LEXICAL
+letterId=
+display=В прошлом году я ездил в Россию.
+note=I went to Russia (and returned) last year.
+objectiveId=obj-u20-motion
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
 ### GUIDED_PRACTICE `u20-g-motion-0`
 
 - Objectives: obj-u20-motion
@@ -695,6 +845,76 @@ whyAnswerDemonstratesObjective=идти́ is unidirectional in the retained tabl
 contrastMembers=unidirectional | multidirectional
 relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u20-motion-0-ru | prov-u20-motion-rem | prov-u20-motion-x-1
+responseKind=ENGLISH_CLASSIFICATION
+
+### GUIDED_PRACTICE `u20-g-direction-library`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8c90b6052f1be2a286842e20a3924d7435bbbe9a8ec2ecaaa15192aff41e0f1f
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English explanation fits the directionality and aspect of this whole supplied example?
+promptLetter=Мы идём в библиотеку.
+options=Motion in progress in one direction (imperfective). | Repeated trips (imperfective). | The form is perfective because this trip is completed.
+answer=Motion in progress in one direction (imperfective).
+feedback=In Мы идём в библиотеку. The supplied context describes motion in progress in one direction; it does not assert completed arrival. The answer is Motion in progress in one direction (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+objectiveId=obj-u20-motion
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Repeated trips (imperfective). Repeated trips are not a single movement now in progress or merely movement around an area. | The form is perfective because this trip is completed. Unprefixed motion forms in the supplied pairs are imperfective; a completed trip does not by itself make the form perfective.
+testedFeature=MOTION_DIRECTIONAL_APPLICATION
+evidenceMode=STATED_APPLICATION
+contrastSetId=u20-g-direction-library
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-ca-u20-direction-u20-g-direction-library-1
+distractorSourceIds= | prov-ca-u20-direction-u20-g-direction-library-2 | prov-ca-u20-direction-u20-g-direction-library-3
+distractorDifference= | Repeated trips (imperfective). Repeated trips are not a single movement now in progress or merely movement around an area. | The form is perfective because this trip is completed. Unprefixed motion forms in the supplied pairs are imperfective; a completed trip does not by itself make the form perfective.
+whyAnswerDemonstratesObjective=In Мы идём в библиотеку. The supplied context describes motion in progress in one direction; it does not assert completed arrival. The answer is Motion in progress in one direction (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+contrastMembers=Motion in progress in one direction (imperfective). | Repeated trips (imperfective). | The form is perfective because this trip is completed.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u20-direction-u20-g-direction-library-0 | prov-ca-u20-direction-u20-g-direction-library-1 | prov-ca-u20-direction-u20-g-direction-library-2 | prov-ca-u20-direction-u20-g-direction-library-3
+responseKind=ENGLISH_CLASSIFICATION
+
+### GUIDED_PRACTICE `u20-g-direction-ability`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6b08ee385e97da1fad023ebd1655651f047a9b40ec16e697f5d1d5ff1029c830
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English explanation fits the directionality and aspect of this whole supplied example?
+promptLetter=Ребёнок ходит шесть месяцев.
+options=General walking ability (imperfective). | Motion in progress in one direction (imperfective). | The form is perfective because this trip is completed.
+answer=General walking ability (imperfective).
+feedback=In Ребёнок ходит шесть месяцев. The supplied child example describes walking ability over time, rather than a journey now aimed at one destination. The answer is General walking ability (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+objectiveId=obj-u20-motion
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Motion in progress in one direction (imperfective). One directed journey in progress is not the supplied general, various-direction, repeated-trip or completed-return reading. | The form is perfective because this trip is completed. Unprefixed motion forms in the supplied pairs are imperfective; a completed trip does not by itself make the form perfective.
+testedFeature=MOTION_DIRECTIONAL_APPLICATION
+evidenceMode=STATED_APPLICATION
+contrastSetId=u20-g-direction-ability
+cueLanguage=ru
+independent=false
+answerSourceIds=prov-ca-u20-direction-u20-g-direction-ability-1
+distractorSourceIds= | prov-ca-u20-direction-u20-g-direction-ability-2 | prov-ca-u20-direction-u20-g-direction-ability-3
+distractorDifference= | Motion in progress in one direction (imperfective). One directed journey in progress is not the supplied general, various-direction, repeated-trip or completed-return reading. | The form is perfective because this trip is completed. Unprefixed motion forms in the supplied pairs are imperfective; a completed trip does not by itself make the form perfective.
+whyAnswerDemonstratesObjective=In Ребёнок ходит шесть месяцев. The supplied child example describes walking ability over time, rather than a journey now aimed at one destination. The answer is General walking ability (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+contrastMembers=General walking ability (imperfective). | Motion in progress in one direction (imperfective). | The form is perfective because this trip is completed.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u20-direction-u20-g-direction-ability-0 | prov-ca-u20-direction-u20-g-direction-ability-1 | prov-ca-u20-direction-u20-g-direction-ability-2 | prov-ca-u20-direction-u20-g-direction-ability-3
 responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u20-i-motion-1`
@@ -776,7 +996,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 610246e99b9e0a66d0f7b0e4e7bdab5bc63e487edf93e8b9227c16288da2d483
+- Content hash: 2806392c91250c9364e9b7bc0b0167110a8bf80bfb26fef97fcc6a27e62c2c54
 
 kind=CONTRAST_SELECTION
 language=en
@@ -794,13 +1014,13 @@ evidenceMode=STATED_APPLICATION
 contrastSetId=u20-motion-3
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ca-repair-20-10962
-distractorSourceIds= | prov-ca-repair-20-10965 | prov-ca-repair-20-10966
+answerSourceIds=prov-u20-direction-rebind-prov-ca-repair-20-10962
+distractorSourceIds= | prov-u20-direction-rebind-prov-ca-repair-20-10965 | prov-u20-direction-rebind-prov-ca-repair-20-10966
 distractorDifference= | he was already on the way for a long time is an imperfective duration reading. | he refused to go contradicts the motion verb.
 whyAnswerDemonstratesObjective=Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
 contrastMembers=he set off toward a friend | he was already on the way for a long time | he refused to go
 relationKind=STATED_APPLICATION
-relationParticipantIds=prov-ca-repair-20-10954 | prov-ca-repair-20-10962 | prov-ca-repair-20-10965 | prov-ca-repair-20-10966
+relationParticipantIds=prov-u20-direction-rebind-prov-ca-repair-20-10954 | prov-u20-direction-rebind-prov-ca-repair-20-10962 | prov-u20-direction-rebind-prov-ca-repair-20-10965 | prov-u20-direction-rebind-prov-ca-repair-20-10966
 responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u20-i-motion-4`
@@ -811,7 +1031,7 @@ responseKind=ENGLISH_CLASSIFICATION
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 0ab765653e3f7941c8f672ebeddfd88124d6f7b24048eccecc8f0311a57da5da
+- Content hash: 0a30e302aa2ea91daaca8ffdc8f681877de3d7872567ffd23b2cbe99aa6d23cd
 
 kind=CONTRAST_SELECTION
 language=en
@@ -829,13 +1049,153 @@ evidenceMode=STATED_APPLICATION
 contrastSetId=u20-motion-4
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ca-repair-20-10992
-distractorSourceIds= | prov-ca-repair-20-10988 | prov-ca-repair-20-10990
+answerSourceIds=prov-u20-direction-rebind-prov-ca-repair-20-10992
+distractorSourceIds= | prov-u20-direction-rebind-prov-ca-repair-20-10988 | prov-u20-direction-rebind-prov-ca-repair-20-10990
 distractorDifference= | They will leave Vladivostok in a month. is a different motion sentence. | The ball flew onto the roof of the house. is a different motion sentence.
 whyAnswerDemonstratesObjective=Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
 contrastMembers=The boy stepped back from the stranger. | They will leave Vladivostok in a month. | The ball flew onto the roof of the house.
 relationKind=STATED_APPLICATION
-relationParticipantIds=prov-ca-repair-20-10991 | prov-ca-repair-20-10992 | prov-ca-repair-20-10988 | prov-ca-repair-20-10990
+relationParticipantIds=prov-u20-direction-rebind-prov-ca-repair-20-10991 | prov-u20-direction-rebind-prov-ca-repair-20-10992 | prov-u20-direction-rebind-prov-ca-repair-20-10988 | prov-u20-direction-rebind-prov-ca-repair-20-10990
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u20-i-direction-birds`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: eb06a61f01400fe7b76ac587e3ba017987967848227e1f91ce65c5411b057e7d
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English explanation fits the directionality and aspect of this whole supplied example?
+promptLetter=Птицы летят на юг.
+options=Motion in progress in one direction (imperfective). | Movement in various directions (imperfective). | The form is perfective because this trip is completed.
+answer=Motion in progress in one direction (imperfective).
+feedback=In Птицы летят на юг. The supplied context describes motion in progress in one direction; it does not assert completed arrival. The answer is Motion in progress in one direction (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+objectiveId=obj-u20-motion
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Movement in various directions (imperfective). Various-direction movement around an area is not the supplied directed flight or weekly repeated trips. | The form is perfective because this trip is completed. Unprefixed motion forms in the supplied pairs are imperfective; a completed trip does not by itself make the form perfective.
+testedFeature=MOTION_DIRECTIONAL_APPLICATION
+evidenceMode=STATED_APPLICATION
+contrastSetId=u20-i-direction-birds
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ca-u20-direction-u20-i-direction-birds-1
+distractorSourceIds= | prov-ca-u20-direction-u20-i-direction-birds-2 | prov-ca-u20-direction-u20-i-direction-birds-3
+distractorDifference= | Movement in various directions (imperfective). Various-direction movement around an area is not the supplied directed flight or weekly repeated trips. | The form is perfective because this trip is completed. Unprefixed motion forms in the supplied pairs are imperfective; a completed trip does not by itself make the form perfective.
+whyAnswerDemonstratesObjective=In Птицы летят на юг. The supplied context describes motion in progress in one direction; it does not assert completed arrival. The answer is Motion in progress in one direction (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+contrastMembers=Motion in progress in one direction (imperfective). | Movement in various directions (imperfective). | The form is perfective because this trip is completed.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u20-direction-u20-i-direction-birds-0 | prov-ca-u20-direction-u20-i-direction-birds-1 | prov-ca-u20-direction-u20-i-direction-birds-2 | prov-ca-u20-direction-u20-i-direction-birds-3
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u20-i-direction-city`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3583de0a1a453f2bcff6dbe08b0700f5615c5e6ec38efa25d47b169d92e60936
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English explanation fits the directionality and aspect of this whole supplied example?
+promptLetter=Мы ходили по городу весь день.
+options=Movement in various directions (imperfective). | Repeated trips (imperfective). | Motion in progress in one direction (imperfective).
+answer=Movement in various directions (imperfective).
+feedback=In Мы ходили по городу весь день. The supplied city example describes movement around the city in various directions, not a single directed journey. The answer is Movement in various directions (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+objectiveId=obj-u20-motion
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Repeated trips (imperfective). Repeated trips are not a single movement now in progress or merely movement around an area. | Motion in progress in one direction (imperfective). One directed journey in progress is not the supplied general, various-direction, repeated-trip or completed-return reading.
+testedFeature=MOTION_DIRECTIONAL_APPLICATION
+evidenceMode=STATED_APPLICATION
+contrastSetId=u20-i-direction-city
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ca-u20-direction-u20-i-direction-city-1
+distractorSourceIds= | prov-ca-u20-direction-u20-i-direction-city-2 | prov-ca-u20-direction-u20-i-direction-city-3
+distractorDifference= | Repeated trips (imperfective). Repeated trips are not a single movement now in progress or merely movement around an area. | Motion in progress in one direction (imperfective). One directed journey in progress is not the supplied general, various-direction, repeated-trip or completed-return reading.
+whyAnswerDemonstratesObjective=In Мы ходили по городу весь день. The supplied city example describes movement around the city in various directions, not a single directed journey. The answer is Movement in various directions (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+contrastMembers=Movement in various directions (imperfective). | Repeated trips (imperfective). | Motion in progress in one direction (imperfective).
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u20-direction-u20-i-direction-city-0 | prov-ca-u20-direction-u20-i-direction-city-1 | prov-ca-u20-direction-u20-i-direction-city-2 | prov-ca-u20-direction-u20-i-direction-city-3
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u20-i-direction-weekly`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0ebc89c5d087712defea96cddc2e023769f657ec1879123bfbc339c1eee2666b
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English explanation fits the directionality and aspect of this whole supplied example?
+promptLetter=Она ходит в супермаркет каждую неделю.
+options=Repeated trips (imperfective). | Motion in progress in one direction (imperfective). | The form is perfective because this trip is completed.
+answer=Repeated trips (imperfective).
+feedback=In Она ходит в супермаркет каждую неделю. The supplied weekly example describes repeated trips, not one current journey toward the shop. The answer is Repeated trips (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+objectiveId=obj-u20-motion
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Motion in progress in one direction (imperfective). One directed journey in progress is not the supplied general, various-direction, repeated-trip or completed-return reading. | The form is perfective because this trip is completed. Unprefixed motion forms in the supplied pairs are imperfective; a completed trip does not by itself make the form perfective.
+testedFeature=MOTION_DIRECTIONAL_APPLICATION
+evidenceMode=STATED_APPLICATION
+contrastSetId=u20-i-direction-weekly
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ca-u20-direction-u20-i-direction-weekly-1
+distractorSourceIds= | prov-ca-u20-direction-u20-i-direction-weekly-2 | prov-ca-u20-direction-u20-i-direction-weekly-3
+distractorDifference= | Motion in progress in one direction (imperfective). One directed journey in progress is not the supplied general, various-direction, repeated-trip or completed-return reading. | The form is perfective because this trip is completed. Unprefixed motion forms in the supplied pairs are imperfective; a completed trip does not by itself make the form perfective.
+whyAnswerDemonstratesObjective=In Она ходит в супермаркет каждую неделю. The supplied weekly example describes repeated trips, not one current journey toward the shop. The answer is Repeated trips (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+contrastMembers=Repeated trips (imperfective). | Motion in progress in one direction (imperfective). | The form is perfective because this trip is completed.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u20-direction-u20-i-direction-weekly-0 | prov-ca-u20-direction-u20-i-direction-weekly-1 | prov-ca-u20-direction-u20-i-direction-weekly-2 | prov-ca-u20-direction-u20-i-direction-weekly-3
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u20-i-direction-round`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4bfabc124aed780596a6dc12b39837fdcffa66d3dc4905da0cb76c0128b83d78
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English explanation fits the directionality and aspect of this whole supplied example?
+promptLetter=В прошлом году я ездил в Россию.
+options=One completed round trip in the past (imperfective). | Motion in progress in one direction (imperfective). | The form is perfective because this trip is completed.
+answer=One completed round trip in the past (imperfective).
+feedback=In В прошлом году я ездил в Россию. The retained past example is a completed round trip in the supplied interpretation; its unprefixed verb is still imperfective. The answer is One completed round trip in the past (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+objectiveId=obj-u20-motion
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Motion in progress in one direction (imperfective). One directed journey in progress is not the supplied general, various-direction, repeated-trip or completed-return reading. | The form is perfective because this trip is completed. Unprefixed motion forms in the supplied pairs are imperfective; a completed trip does not by itself make the form perfective.
+testedFeature=MOTION_DIRECTIONAL_APPLICATION
+evidenceMode=STATED_APPLICATION
+contrastSetId=u20-i-direction-round
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ca-u20-direction-u20-i-direction-round-1
+distractorSourceIds= | prov-ca-u20-direction-u20-i-direction-round-2 | prov-ca-u20-direction-u20-i-direction-round-3
+distractorDifference= | Motion in progress in one direction (imperfective). One directed journey in progress is not the supplied general, various-direction, repeated-trip or completed-return reading. | The form is perfective because this trip is completed. Unprefixed motion forms in the supplied pairs are imperfective; a completed trip does not by itself make the form perfective.
+whyAnswerDemonstratesObjective=In В прошлом году я ездил в Россию. The retained past example is a completed round trip in the supplied interpretation; its unprefixed verb is still imperfective. The answer is One completed round trip in the past (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+contrastMembers=One completed round trip in the past (imperfective). | Motion in progress in one direction (imperfective). | The form is perfective because this trip is completed.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u20-direction-u20-i-direction-round-0 | prov-ca-u20-direction-u20-i-direction-round-1 | prov-ca-u20-direction-u20-i-direction-round-2 | prov-ca-u20-direction-u20-i-direction-round-3
 responseKind=ENGLISH_CLASSIFICATION
 
 ### REFERENCE `ref-u1620-attribution`
@@ -7183,6 +7543,1668 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-ca-u20-direction-u20-g-direction-ability-0`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 76345cf47e398775c644b96a3d91d193cdb672843373e71aae7438cdc1d88ad6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u20-g-direction-ability
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+Context explanation:
+In Ребёнок ходит шесть месяцев. The supplied child example describes walking ability over time, rather than a journey now aimed at one destination. The answer is General walking ability (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+Tuple-v1:tuple-v1:1;52:Ребёнок ходит шесть месяцев.39:General walking ability (imperfective).2;51:Motion in progress in one direction (imperfective).54:The form is perfective because this trip is completed.
+shippedText=Ребёнок ходит шесть месяцев.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b081223fabe312ca1ad0f26cdf46d476a7359e97d1bb72ee0a21065d72035148
+contentHash=410e2e1b56489a3869becdc9d7bcd48a007ee6a8dfcc9fbcd6c0dd23e4acef00
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-g-direction-ability-1`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6ba79096903e423e239b9e4f253c5d1840ff9d5c2d65b9415b304ec840e1bf1f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u20-g-direction-ability
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+Context explanation:
+In Ребёнок ходит шесть месяцев. The supplied child example describes walking ability over time, rather than a journey now aimed at one destination. The answer is General walking ability (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+Tuple-v1:tuple-v1:1;52:Ребёнок ходит шесть месяцев.39:General walking ability (imperfective).2;51:Motion in progress in one direction (imperfective).54:The form is perfective because this trip is completed.
+shippedText=General walking ability (imperfective).
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b081223fabe312ca1ad0f26cdf46d476a7359e97d1bb72ee0a21065d72035148
+contentHash=0e54253ca2c9600847c3ccffadeb7c9e8f8c83589e2735c935bb236e0833f596
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-g-direction-ability-2`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c25bbd6329b536e7e63a6a3c18b237519fbcd1938f01017d569cfd8202a4ab3b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u20-g-direction-ability
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+Context explanation:
+In Ребёнок ходит шесть месяцев. The supplied child example describes walking ability over time, rather than a journey now aimed at one destination. The answer is General walking ability (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+Tuple-v1:tuple-v1:1;52:Ребёнок ходит шесть месяцев.39:General walking ability (imperfective).2;51:Motion in progress in one direction (imperfective).54:The form is perfective because this trip is completed.
+shippedText=Motion in progress in one direction (imperfective).
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b081223fabe312ca1ad0f26cdf46d476a7359e97d1bb72ee0a21065d72035148
+contentHash=ed13f2583682ea36eb3459ebde007df76915a2085a2e336f07437df172eb38d3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-g-direction-ability-3`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 823ddaa0b033541d24020fafb1b9042129b58d99416f553b20871ebb6fadc2b0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u20-g-direction-ability
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+Context explanation:
+In Ребёнок ходит шесть месяцев. The supplied child example describes walking ability over time, rather than a journey now aimed at one destination. The answer is General walking ability (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+Tuple-v1:tuple-v1:1;52:Ребёнок ходит шесть месяцев.39:General walking ability (imperfective).2;51:Motion in progress in one direction (imperfective).54:The form is perfective because this trip is completed.
+shippedText=The form is perfective because this trip is completed.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b081223fabe312ca1ad0f26cdf46d476a7359e97d1bb72ee0a21065d72035148
+contentHash=a42f93f676a406abf6901feead96e19f4d26fdc55b34f4575f4c7141c787a815
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-g-direction-ability-feedback`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4356f80679bb15300c5a7e1ef90def8ef60079f1ac1aa8dd3f965d5856458af9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:direction:u20-g-direction-ability-feedback
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+In Ребёнок ходит шесть месяцев. The supplied child example describes walking ability over time, rather than a journey now aimed at one destination. The answer is General walking ability (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+shippedText=In Ребёнок ходит шесть месяцев. The supplied child example describes walking ability over time, rather than a journey now aimed at one destination. The answer is General walking ability (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=dd225626d149ce39ec2168cca3de942d1b09a64d18f2fd185e80cd7222b66d02
+contentHash=e8d17767a2120465b3f61e9ff36446d90ffa5de4243a2c4768ae4d7bca99de02
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-g-direction-ability-prompt`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 45e046e9d327970dd4751484ad9d14500b12b7ef8278e7912e8b566cc8cddd08
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:direction:u20-g-direction-ability-prompt
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+Which English explanation fits the directionality and aspect of this whole supplied example?
+shippedText=Which English explanation fits the directionality and aspect of this whole supplied example?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6511bdf784880c0b9a40110043490ea629170395dec60f7477ef0cb8d303fb27
+contentHash=d091edab6c32ba0dfe0e5f1de2294dcd458b0fb086e3b1de1a17f3c17406c149
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-g-direction-ability-rationale-1`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 275b91ef6eaae11121b0069279d2bdc3185bd79ab801dd10c9994e2ef22aa37b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:direction:u20-g-direction-ability-rationale-1
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+Motion in progress in one direction (imperfective). One directed journey in progress is not the supplied general, various-direction, repeated-trip or completed-return reading.
+shippedText=Motion in progress in one direction (imperfective). One directed journey in progress is not the supplied general, various-direction, repeated-trip or completed-return reading.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6f0486b812128619b9d4deb1796bb5f622250489966ec4549d0ac1b69f384c60
+contentHash=c52901ca98bbc928579c5a33464ad5fe364e9b265dd88604e11ffe57d5390beb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-g-direction-ability-rationale-2`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d3e76558a3287040aab0d1fd09e60fde876e7375c9f21f5fafd3f0aaf6273beb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:direction:u20-g-direction-ability-rationale-2
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+The form is perfective because this trip is completed. Unprefixed motion forms in the supplied pairs are imperfective; a completed trip does not by itself make the form perfective.
+shippedText=The form is perfective because this trip is completed. Unprefixed motion forms in the supplied pairs are imperfective; a completed trip does not by itself make the form perfective.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2090c5ff6fe41d6bf6f757f5afefce0af78b015ac0ec590c8e55b90f0651b868
+contentHash=faa34fe200f0d1912288d30dbc4289f5634c72850747609b5c166ca8674efec0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-g-direction-library-0`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 938cd498136d69c7718a170be6e8103e8eff1c8a943bb69a551281e54ef07557
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u20-g-direction-library
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+Context explanation:
+In Мы идём в библиотеку. The supplied context describes motion in progress in one direction; it does not assert completed arrival. The answer is Motion in progress in one direction (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+Tuple-v1:tuple-v1:1;38:Мы идём в библиотеку.51:Motion in progress in one direction (imperfective).2;30:Repeated trips (imperfective).54:The form is perfective because this trip is completed.
+shippedText=Мы идём в библиотеку.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=20318815ccc53ea3827c22b879ba561a400c6d470160e70c23f2935d3c80a7c3
+contentHash=86386aec41e0cadb90989f259df2b6ed6f9786b98d831ad30e3f7e24bdca7ae2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-g-direction-library-1`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9076a859b60b743ed3bef43446cd622894c86850a7b0fb99c13583aed122246c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u20-g-direction-library
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+Context explanation:
+In Мы идём в библиотеку. The supplied context describes motion in progress in one direction; it does not assert completed arrival. The answer is Motion in progress in one direction (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+Tuple-v1:tuple-v1:1;38:Мы идём в библиотеку.51:Motion in progress in one direction (imperfective).2;30:Repeated trips (imperfective).54:The form is perfective because this trip is completed.
+shippedText=Motion in progress in one direction (imperfective).
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=20318815ccc53ea3827c22b879ba561a400c6d470160e70c23f2935d3c80a7c3
+contentHash=ed13f2583682ea36eb3459ebde007df76915a2085a2e336f07437df172eb38d3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-g-direction-library-2`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bf035491aecee5c48279e4c9431f575432b3bf198206ec1e413e81b758bd613f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u20-g-direction-library
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+Context explanation:
+In Мы идём в библиотеку. The supplied context describes motion in progress in one direction; it does not assert completed arrival. The answer is Motion in progress in one direction (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+Tuple-v1:tuple-v1:1;38:Мы идём в библиотеку.51:Motion in progress in one direction (imperfective).2;30:Repeated trips (imperfective).54:The form is perfective because this trip is completed.
+shippedText=Repeated trips (imperfective).
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=20318815ccc53ea3827c22b879ba561a400c6d470160e70c23f2935d3c80a7c3
+contentHash=688b7316539a2a817eab88e815e295e18f98773a5521298d1bacf928ba8abea7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-g-direction-library-3`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d489a2fea09a28f8522dfa320e4452e2bd37517eb2bba93a1df48411b9f5c63b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u20-g-direction-library
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+Context explanation:
+In Мы идём в библиотеку. The supplied context describes motion in progress in one direction; it does not assert completed arrival. The answer is Motion in progress in one direction (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+Tuple-v1:tuple-v1:1;38:Мы идём в библиотеку.51:Motion in progress in one direction (imperfective).2;30:Repeated trips (imperfective).54:The form is perfective because this trip is completed.
+shippedText=The form is perfective because this trip is completed.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=20318815ccc53ea3827c22b879ba561a400c6d470160e70c23f2935d3c80a7c3
+contentHash=a42f93f676a406abf6901feead96e19f4d26fdc55b34f4575f4c7141c787a815
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-g-direction-library-feedback`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4b9c4f9853e1884bb05b05870c6f54b9fde81259aaa76b782f21c979c3f6fb50
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:direction:u20-g-direction-library-feedback
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+In Мы идём в библиотеку. The supplied context describes motion in progress in one direction; it does not assert completed arrival. The answer is Motion in progress in one direction (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+shippedText=In Мы идём в библиотеку. The supplied context describes motion in progress in one direction; it does not assert completed arrival. The answer is Motion in progress in one direction (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4105f93217ddc4861526b721d63aa5a1e8b4059a38dd3cdd9c78a3bd9fecb6cf
+contentHash=82b8ad04305886f6f6505ec27d13facff14c6fbcd3a4e0e2c92f6f10dce10516
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-g-direction-library-prompt`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f750768e9cc0d177f879dbc7b6f2968a8e0674fcf6c4ad9838b20cb2e818b30d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:direction:u20-g-direction-library-prompt
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+Which English explanation fits the directionality and aspect of this whole supplied example?
+shippedText=Which English explanation fits the directionality and aspect of this whole supplied example?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6511bdf784880c0b9a40110043490ea629170395dec60f7477ef0cb8d303fb27
+contentHash=d091edab6c32ba0dfe0e5f1de2294dcd458b0fb086e3b1de1a17f3c17406c149
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-g-direction-library-rationale-1`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 72bacdb276d72423ac44afa8746ecfcc0156f714f81a300886095e86d9a9c76d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:direction:u20-g-direction-library-rationale-1
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+Repeated trips (imperfective). Repeated trips are not a single movement now in progress or merely movement around an area.
+shippedText=Repeated trips (imperfective). Repeated trips are not a single movement now in progress or merely movement around an area.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5646bf7b55705a0c0e650625db1f0b92d132f0a3b2037266545acf0d50b21d24
+contentHash=ccb40ffd82083f7e7efec4551696c19898b866abf9b1d34d2747006ed7d904be
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-g-direction-library-rationale-2`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2e0c4c942d325f345b11dff27bfe45d1609e8da6f92c865140580340fa1ca6c8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:direction:u20-g-direction-library-rationale-2
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+The form is perfective because this trip is completed. Unprefixed motion forms in the supplied pairs are imperfective; a completed trip does not by itself make the form perfective.
+shippedText=The form is perfective because this trip is completed. Unprefixed motion forms in the supplied pairs are imperfective; a completed trip does not by itself make the form perfective.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2090c5ff6fe41d6bf6f757f5afefce0af78b015ac0ec590c8e55b90f0651b868
+contentHash=faa34fe200f0d1912288d30dbc4289f5634c72850747609b5c166ca8674efec0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-i-direction-birds-0`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 21e53f83e572f9fcfaad7e17023e90f7f68952b07037762508f561810e9198d9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u20-i-direction-birds
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+Context explanation:
+In Птицы летят на юг. The supplied context describes motion in progress in one direction; it does not assert completed arrival. The answer is Motion in progress in one direction (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+Tuple-v1:tuple-v1:1;32:Птицы летят на юг.51:Motion in progress in one direction (imperfective).2;46:Movement in various directions (imperfective).54:The form is perfective because this trip is completed.
+shippedText=Птицы летят на юг.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8b8356a976ddcad2ce84b5c83d03b22a94e342c9d3d059a85da9f9540a98fa85
+contentHash=d8bea4a2fc363fe3f2361a65449e3fa6608b7beb43759f7f7121975d158bb297
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-i-direction-birds-1`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 31f6cbda20cf4bcdd1d0ea92765f673b5133b61313b4a9d75c9e03b0d0fb18ca
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u20-i-direction-birds
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+Context explanation:
+In Птицы летят на юг. The supplied context describes motion in progress in one direction; it does not assert completed arrival. The answer is Motion in progress in one direction (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+Tuple-v1:tuple-v1:1;32:Птицы летят на юг.51:Motion in progress in one direction (imperfective).2;46:Movement in various directions (imperfective).54:The form is perfective because this trip is completed.
+shippedText=Motion in progress in one direction (imperfective).
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8b8356a976ddcad2ce84b5c83d03b22a94e342c9d3d059a85da9f9540a98fa85
+contentHash=ed13f2583682ea36eb3459ebde007df76915a2085a2e336f07437df172eb38d3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-i-direction-birds-2`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 184b272c2d29fb80a2a881504ef3b004bba0e323dbea7c975ae33c84ec621c77
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u20-i-direction-birds
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+Context explanation:
+In Птицы летят на юг. The supplied context describes motion in progress in one direction; it does not assert completed arrival. The answer is Motion in progress in one direction (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+Tuple-v1:tuple-v1:1;32:Птицы летят на юг.51:Motion in progress in one direction (imperfective).2;46:Movement in various directions (imperfective).54:The form is perfective because this trip is completed.
+shippedText=Movement in various directions (imperfective).
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8b8356a976ddcad2ce84b5c83d03b22a94e342c9d3d059a85da9f9540a98fa85
+contentHash=e2f1976d83552777ba80520efb0955f2dc2da38e2e513f9c621fd30c1c0e36e7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-i-direction-birds-3`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 44c05d2c3bd6dfabc8bde37f19a1a82006219859e02688c7150638cc143157e4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u20-i-direction-birds
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+Context explanation:
+In Птицы летят на юг. The supplied context describes motion in progress in one direction; it does not assert completed arrival. The answer is Motion in progress in one direction (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+Tuple-v1:tuple-v1:1;32:Птицы летят на юг.51:Motion in progress in one direction (imperfective).2;46:Movement in various directions (imperfective).54:The form is perfective because this trip is completed.
+shippedText=The form is perfective because this trip is completed.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8b8356a976ddcad2ce84b5c83d03b22a94e342c9d3d059a85da9f9540a98fa85
+contentHash=a42f93f676a406abf6901feead96e19f4d26fdc55b34f4575f4c7141c787a815
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-i-direction-birds-feedback`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9464b567b108994471681367ad43d16b3e7731e61e83dd252c425450c576b604
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:direction:u20-i-direction-birds-feedback
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+In Птицы летят на юг. The supplied context describes motion in progress in one direction; it does not assert completed arrival. The answer is Motion in progress in one direction (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+shippedText=In Птицы летят на юг. The supplied context describes motion in progress in one direction; it does not assert completed arrival. The answer is Motion in progress in one direction (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=86e339dfdc34059515f49cfeabe89f10c9816b845ab825316c9326b49aefeffa
+contentHash=ffd47f274659e3b870b7461faa4113ea327ca180d3278cc33573377b5472f4ca
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-i-direction-birds-prompt`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cd2b80e05a8c96200ca4c920ae9d8f662589078bf7c52ac7c425223cdae42908
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:direction:u20-i-direction-birds-prompt
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+Which English explanation fits the directionality and aspect of this whole supplied example?
+shippedText=Which English explanation fits the directionality and aspect of this whole supplied example?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6511bdf784880c0b9a40110043490ea629170395dec60f7477ef0cb8d303fb27
+contentHash=d091edab6c32ba0dfe0e5f1de2294dcd458b0fb086e3b1de1a17f3c17406c149
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-i-direction-birds-rationale-1`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e620f89a747463578af18fab96bbcdd713548d37b48a9012cf310c0ef9e01380
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:direction:u20-i-direction-birds-rationale-1
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+Movement in various directions (imperfective). Various-direction movement around an area is not the supplied directed flight or weekly repeated trips.
+shippedText=Movement in various directions (imperfective). Various-direction movement around an area is not the supplied directed flight or weekly repeated trips.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2b516f5ce77ac2f7104d4677210b78e41edc13913219ce93107dc169a8b0f359
+contentHash=83f50abb4a2df76fbe32d791ac5b1c5946e22da945f1d2694694842240a30f71
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-i-direction-birds-rationale-2`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6c76fdb18d23ca47278b45d83d418dff3858b6bdd9ce8a204712bc6fdd5a00a9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:direction:u20-i-direction-birds-rationale-2
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+The form is perfective because this trip is completed. Unprefixed motion forms in the supplied pairs are imperfective; a completed trip does not by itself make the form perfective.
+shippedText=The form is perfective because this trip is completed. Unprefixed motion forms in the supplied pairs are imperfective; a completed trip does not by itself make the form perfective.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2090c5ff6fe41d6bf6f757f5afefce0af78b015ac0ec590c8e55b90f0651b868
+contentHash=faa34fe200f0d1912288d30dbc4289f5634c72850747609b5c166ca8674efec0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-i-direction-city-0`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5084217c0c3ffdf03e3755940c7ec4f631b0a35f3a977125d94fc1fd191b7e2f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u20-i-direction-city
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+Context explanation:
+In Мы ходили по городу весь день. The supplied city example describes movement around the city in various directions, not a single directed journey. The answer is Movement in various directions (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+Tuple-v1:tuple-v1:1;54:Мы ходили по городу весь день.46:Movement in various directions (imperfective).2;30:Repeated trips (imperfective).51:Motion in progress in one direction (imperfective).
+shippedText=Мы ходили по городу весь день.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0b1142168f9d306f64963f8e6bd5e244a301fc714f8d3adb6dea7aa8b2e781cb
+contentHash=cd874b88f7d3bcc6bd63aba77a1fec941c3f45d6dbbfb9cea1fdea506906307c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-i-direction-city-1`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bfeaa6a9b4cf6327b6b9dfc1a1933dbeb504b4b8823afa783ca8a2d57a1b9ba9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u20-i-direction-city
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+Context explanation:
+In Мы ходили по городу весь день. The supplied city example describes movement around the city in various directions, not a single directed journey. The answer is Movement in various directions (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+Tuple-v1:tuple-v1:1;54:Мы ходили по городу весь день.46:Movement in various directions (imperfective).2;30:Repeated trips (imperfective).51:Motion in progress in one direction (imperfective).
+shippedText=Movement in various directions (imperfective).
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0b1142168f9d306f64963f8e6bd5e244a301fc714f8d3adb6dea7aa8b2e781cb
+contentHash=e2f1976d83552777ba80520efb0955f2dc2da38e2e513f9c621fd30c1c0e36e7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-i-direction-city-2`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e318872275a22bb1919c674997c471b031eae3f6b0b7fa25a8309ff78fb04406
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u20-i-direction-city
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+Context explanation:
+In Мы ходили по городу весь день. The supplied city example describes movement around the city in various directions, not a single directed journey. The answer is Movement in various directions (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+Tuple-v1:tuple-v1:1;54:Мы ходили по городу весь день.46:Movement in various directions (imperfective).2;30:Repeated trips (imperfective).51:Motion in progress in one direction (imperfective).
+shippedText=Repeated trips (imperfective).
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0b1142168f9d306f64963f8e6bd5e244a301fc714f8d3adb6dea7aa8b2e781cb
+contentHash=688b7316539a2a817eab88e815e295e18f98773a5521298d1bacf928ba8abea7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-i-direction-city-3`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 806ae185f7804156ca80f83454d0c5416cb68f4185100f619f404d3bde8d34d0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u20-i-direction-city
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+Context explanation:
+In Мы ходили по городу весь день. The supplied city example describes movement around the city in various directions, not a single directed journey. The answer is Movement in various directions (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+Tuple-v1:tuple-v1:1;54:Мы ходили по городу весь день.46:Movement in various directions (imperfective).2;30:Repeated trips (imperfective).51:Motion in progress in one direction (imperfective).
+shippedText=Motion in progress in one direction (imperfective).
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0b1142168f9d306f64963f8e6bd5e244a301fc714f8d3adb6dea7aa8b2e781cb
+contentHash=ed13f2583682ea36eb3459ebde007df76915a2085a2e336f07437df172eb38d3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-i-direction-city-feedback`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fee28c60881d81f0f32ec6c8ce4e1a8cc65c0bc18f6d31111509e1acda5783eb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:direction:u20-i-direction-city-feedback
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+In Мы ходили по городу весь день. The supplied city example describes movement around the city in various directions, not a single directed journey. The answer is Movement in various directions (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+shippedText=In Мы ходили по городу весь день. The supplied city example describes movement around the city in various directions, not a single directed journey. The answer is Movement in various directions (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=41e255f0eeb5f438c39a87974023b4a84682f20ca6a195d5d911db5e2dcf352f
+contentHash=c0f7b0f7b0dcf621bfeeb4bb3f78a9cdbe0bd1141908bd11f9cec294af4e9289
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-i-direction-city-prompt`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e814192770aac2ae1c2534abfce87290e9b7a59503245b1dac67a13a9a47682a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:direction:u20-i-direction-city-prompt
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+Which English explanation fits the directionality and aspect of this whole supplied example?
+shippedText=Which English explanation fits the directionality and aspect of this whole supplied example?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6511bdf784880c0b9a40110043490ea629170395dec60f7477ef0cb8d303fb27
+contentHash=d091edab6c32ba0dfe0e5f1de2294dcd458b0fb086e3b1de1a17f3c17406c149
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-i-direction-city-rationale-1`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 74e5a043b29075fd63c1ee1b49a56d1526a8ad529972accec920b0d3984ba2de
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:direction:u20-i-direction-city-rationale-1
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+Repeated trips (imperfective). Repeated trips are not a single movement now in progress or merely movement around an area.
+shippedText=Repeated trips (imperfective). Repeated trips are not a single movement now in progress or merely movement around an area.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5646bf7b55705a0c0e650625db1f0b92d132f0a3b2037266545acf0d50b21d24
+contentHash=ccb40ffd82083f7e7efec4551696c19898b866abf9b1d34d2747006ed7d904be
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-i-direction-city-rationale-2`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c18c025bcddb74cdde009db7d2d6f4f953662bb5dc6e74cae67668ead5bf4207
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:direction:u20-i-direction-city-rationale-2
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+Motion in progress in one direction (imperfective). One directed journey in progress is not the supplied general, various-direction, repeated-trip or completed-return reading.
+shippedText=Motion in progress in one direction (imperfective). One directed journey in progress is not the supplied general, various-direction, repeated-trip or completed-return reading.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6f0486b812128619b9d4deb1796bb5f622250489966ec4549d0ac1b69f384c60
+contentHash=c52901ca98bbc928579c5a33464ad5fe364e9b265dd88604e11ffe57d5390beb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-i-direction-round-0`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4f9bdb4b701680cbf148a1773edd8fee97c5e76d36c2711154614e3cea49797e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u20-i-direction-round
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+Context explanation:
+In В прошлом году я ездил в Россию. The retained past example is a completed round trip in the supplied interpretation; its unprefixed verb is still imperfective. The answer is One completed round trip in the past (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+Tuple-v1:tuple-v1:1;57:В прошлом году я ездил в Россию.52:One completed round trip in the past (imperfective).2;51:Motion in progress in one direction (imperfective).54:The form is perfective because this trip is completed.
+shippedText=В прошлом году я ездил в Россию.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b171342b5221b62065ca1666d6c51a35ca24ee5fc0408e91f80b51f18d6027bb
+contentHash=0934b9a753be4165a3e1669c0f2735e8562fa10b4212da795f151b24559d6078
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-i-direction-round-1`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a9a66f2eb106e2b5891c1ff4f63c09d5788813953b1ad38f51a37193781798a2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u20-i-direction-round
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+Context explanation:
+In В прошлом году я ездил в Россию. The retained past example is a completed round trip in the supplied interpretation; its unprefixed verb is still imperfective. The answer is One completed round trip in the past (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+Tuple-v1:tuple-v1:1;57:В прошлом году я ездил в Россию.52:One completed round trip in the past (imperfective).2;51:Motion in progress in one direction (imperfective).54:The form is perfective because this trip is completed.
+shippedText=One completed round trip in the past (imperfective).
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b171342b5221b62065ca1666d6c51a35ca24ee5fc0408e91f80b51f18d6027bb
+contentHash=6fb2361de3d910eb121fbada10b416bd5438f5f0921fe26577686d03f0bc7aba
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-i-direction-round-2`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f09de943362cac989b8a92042b0360562885dc92539452144dcafd3d32a0dadc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u20-i-direction-round
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+Context explanation:
+In В прошлом году я ездил в Россию. The retained past example is a completed round trip in the supplied interpretation; its unprefixed verb is still imperfective. The answer is One completed round trip in the past (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+Tuple-v1:tuple-v1:1;57:В прошлом году я ездил в Россию.52:One completed round trip in the past (imperfective).2;51:Motion in progress in one direction (imperfective).54:The form is perfective because this trip is completed.
+shippedText=Motion in progress in one direction (imperfective).
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b171342b5221b62065ca1666d6c51a35ca24ee5fc0408e91f80b51f18d6027bb
+contentHash=ed13f2583682ea36eb3459ebde007df76915a2085a2e336f07437df172eb38d3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-i-direction-round-3`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 83545a7dce84ffed6998c809b94f74dab33fb0eab094efc949ecec77cc9773bf
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u20-i-direction-round
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+Context explanation:
+In В прошлом году я ездил в Россию. The retained past example is a completed round trip in the supplied interpretation; its unprefixed verb is still imperfective. The answer is One completed round trip in the past (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+Tuple-v1:tuple-v1:1;57:В прошлом году я ездил в Россию.52:One completed round trip in the past (imperfective).2;51:Motion in progress in one direction (imperfective).54:The form is perfective because this trip is completed.
+shippedText=The form is perfective because this trip is completed.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b171342b5221b62065ca1666d6c51a35ca24ee5fc0408e91f80b51f18d6027bb
+contentHash=a42f93f676a406abf6901feead96e19f4d26fdc55b34f4575f4c7141c787a815
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-i-direction-round-feedback`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e28c829f6db6f9dedfc8cb230f81cafede5e73edc45676328aa319a75082d8f5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:direction:u20-i-direction-round-feedback
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+In В прошлом году я ездил в Россию. The retained past example is a completed round trip in the supplied interpretation; its unprefixed verb is still imperfective. The answer is One completed round trip in the past (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+shippedText=In В прошлом году я ездил в Россию. The retained past example is a completed round trip in the supplied interpretation; its unprefixed verb is still imperfective. The answer is One completed round trip in the past (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ac6d44f1c3c44c15455e6e030378824fd6cab989fc6f8ea265fa59b33f036d10
+contentHash=82017a0a6c20905af6c4f05f10c637d6660720357c177c3b85a04976040136ac
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-i-direction-round-prompt`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 599b55e8a6f9a255967c91bfa61993f1e2355c975ce019e0f14781f17ac7d52f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:direction:u20-i-direction-round-prompt
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+Which English explanation fits the directionality and aspect of this whole supplied example?
+shippedText=Which English explanation fits the directionality and aspect of this whole supplied example?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6511bdf784880c0b9a40110043490ea629170395dec60f7477ef0cb8d303fb27
+contentHash=d091edab6c32ba0dfe0e5f1de2294dcd458b0fb086e3b1de1a17f3c17406c149
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-i-direction-round-rationale-1`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5cbbbf88a38b1dfde3cff8f275886f386f7deb64dc072a3cff8331a5d1ef857a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:direction:u20-i-direction-round-rationale-1
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+Motion in progress in one direction (imperfective). One directed journey in progress is not the supplied general, various-direction, repeated-trip or completed-return reading.
+shippedText=Motion in progress in one direction (imperfective). One directed journey in progress is not the supplied general, various-direction, repeated-trip or completed-return reading.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6f0486b812128619b9d4deb1796bb5f622250489966ec4549d0ac1b69f384c60
+contentHash=c52901ca98bbc928579c5a33464ad5fe364e9b265dd88604e11ffe57d5390beb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-i-direction-round-rationale-2`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 84c5f6b985185bba6af604426dae27bb4679ed5678af4021ef4d729f1aebad09
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:direction:u20-i-direction-round-rationale-2
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+The form is perfective because this trip is completed. Unprefixed motion forms in the supplied pairs are imperfective; a completed trip does not by itself make the form perfective.
+shippedText=The form is perfective because this trip is completed. Unprefixed motion forms in the supplied pairs are imperfective; a completed trip does not by itself make the form perfective.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2090c5ff6fe41d6bf6f757f5afefce0af78b015ac0ec590c8e55b90f0651b868
+contentHash=faa34fe200f0d1912288d30dbc4289f5634c72850747609b5c166ca8674efec0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-i-direction-weekly-0`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c67b2a45c6c1aa2ce1afffbedc36807753a6b10d5b46cc436b4ddc7a12e64f1b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u20-i-direction-weekly
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+Context explanation:
+In Она ходит в супермаркет каждую неделю. The supplied weekly example describes repeated trips, not one current journey toward the shop. The answer is Repeated trips (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+Tuple-v1:tuple-v1:1;70:Она ходит в супермаркет каждую неделю.30:Repeated trips (imperfective).2;51:Motion in progress in one direction (imperfective).54:The form is perfective because this trip is completed.
+shippedText=Она ходит в супермаркет каждую неделю.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=adcc594ad7f033e607e2c5621fc73b23d645bb992d614e17471f29ca9937ef8c
+contentHash=2584be6ddba6175a76f93507fb50d724bc0c9a5722fa1ab41e9cbd74421580dd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-i-direction-weekly-1`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 12648a663bb54d35c8f2f8cbf93baa0c6c2fbcffa5b5c562fdd7d19888cf2e80
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u20-i-direction-weekly
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+Context explanation:
+In Она ходит в супермаркет каждую неделю. The supplied weekly example describes repeated trips, not one current journey toward the shop. The answer is Repeated trips (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+Tuple-v1:tuple-v1:1;70:Она ходит в супермаркет каждую неделю.30:Repeated trips (imperfective).2;51:Motion in progress in one direction (imperfective).54:The form is perfective because this trip is completed.
+shippedText=Repeated trips (imperfective).
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=adcc594ad7f033e607e2c5621fc73b23d645bb992d614e17471f29ca9937ef8c
+contentHash=688b7316539a2a817eab88e815e295e18f98773a5521298d1bacf928ba8abea7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-i-direction-weekly-2`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: be5b249f2b65e92865dfb52f2a2003a165eb5ca33b08e1c5bc9c9a2bf6239f6b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u20-i-direction-weekly
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+Context explanation:
+In Она ходит в супермаркет каждую неделю. The supplied weekly example describes repeated trips, not one current journey toward the shop. The answer is Repeated trips (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+Tuple-v1:tuple-v1:1;70:Она ходит в супермаркет каждую неделю.30:Repeated trips (imperfective).2;51:Motion in progress in one direction (imperfective).54:The form is perfective because this trip is completed.
+shippedText=Motion in progress in one direction (imperfective).
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=adcc594ad7f033e607e2c5621fc73b23d645bb992d614e17471f29ca9937ef8c
+contentHash=ed13f2583682ea36eb3459ebde007df76915a2085a2e336f07437df172eb38d3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-i-direction-weekly-3`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f0fdab59a13bd0892f7bc53cf2df58b155a541277206ec1356f784187ec5d868
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u20-i-direction-weekly
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+Context explanation:
+In Она ходит в супермаркет каждую неделю. The supplied weekly example describes repeated trips, not one current journey toward the shop. The answer is Repeated trips (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+Tuple-v1:tuple-v1:1;70:Она ходит в супермаркет каждую неделю.30:Repeated trips (imperfective).2;51:Motion in progress in one direction (imperfective).54:The form is perfective because this trip is completed.
+shippedText=The form is perfective because this trip is completed.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=adcc594ad7f033e607e2c5621fc73b23d645bb992d614e17471f29ca9937ef8c
+contentHash=a42f93f676a406abf6901feead96e19f4d26fdc55b34f4575f4c7141c787a815
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-i-direction-weekly-feedback`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0d701818ae2983b8108242b7d58b3d412d99b0efdf6251315fea532e4e054750
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:direction:u20-i-direction-weekly-feedback
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+In Она ходит в супермаркет каждую неделю. The supplied weekly example describes repeated trips, not one current journey toward the shop. The answer is Repeated trips (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+shippedText=In Она ходит в супермаркет каждую неделю. The supplied weekly example describes repeated trips, not one current journey toward the shop. The answer is Repeated trips (imperfective). Read this whole source example rather than translating an isolated verb or naming a table column. The supplied interpretation is bounded; these labels do not classify every prefixed verb.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4cde09351d681d52787265d6db57a7527b2fdc074fb8119b3b452c4d3643b5ae
+contentHash=6f10a1ccb49ce3d852dbfb5360fa4aeb815930f6bdc8adaadcfb2657a74c124b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-i-direction-weekly-prompt`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ac0a7ce9df47ddc03c6dd9629ccf6055e1d9d0fa87a92ebaab2e5843d2098865
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:direction:u20-i-direction-weekly-prompt
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+Which English explanation fits the directionality and aspect of this whole supplied example?
+shippedText=Which English explanation fits the directionality and aspect of this whole supplied example?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6511bdf784880c0b9a40110043490ea629170395dec60f7477ef0cb8d303fb27
+contentHash=d091edab6c32ba0dfe0e5f1de2294dcd458b0fb086e3b1de1a17f3c17406c149
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-i-direction-weekly-rationale-1`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 716f0a7c6ce63d9d6964d736f9c66a1ff44fb07dae19e74b14ca69c9fb55cf5b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:direction:u20-i-direction-weekly-rationale-1
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+Motion in progress in one direction (imperfective). One directed journey in progress is not the supplied general, various-direction, repeated-trip or completed-return reading.
+shippedText=Motion in progress in one direction (imperfective). One directed journey in progress is not the supplied general, various-direction, repeated-trip or completed-return reading.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6f0486b812128619b9d4deb1796bb5f622250489966ec4549d0ac1b69f384c60
+contentHash=c52901ca98bbc928579c5a33464ad5fe364e9b265dd88604e11ffe57d5390beb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-i-direction-weekly-rationale-2`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0a5647cbfc4910daeb4ffe35e037266de2a4713397208d12a658b87a90723e8f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:direction:u20-i-direction-weekly-rationale-2
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+The form is perfective because this trip is completed. Unprefixed motion forms in the supplied pairs are imperfective; a completed trip does not by itself make the form perfective.
+shippedText=The form is perfective because this trip is completed. Unprefixed motion forms in the supplied pairs are imperfective; a completed trip does not by itself make the form perfective.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2090c5ff6fe41d6bf6f757f5afefce0af78b015ac0ec590c8e55b90f0651b868
+contentHash=faa34fe200f0d1912288d30dbc4289f5634c72850747609b5c166ca8674efec0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-st-rem-motion-body`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2e653df1be22e0df664f3f0e62e4f49b6e2262cd766240b28917d9e0fe8c2485
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:direction:u20-st-rem-motion-body
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
+
+Мы идём в библиотеку. — We are headed to the library. Птицы летят на юг. — The birds are flying south. These supplied contexts show Motion in progress in one direction (imperfective). Ребёнок ходит шесть месяцев. — The child has been walking for six months. This is General walking ability (imperfective). Мы ходили по городу весь день. — We walked around the city all day. This is Movement in various directions (imperfective). Directionality is a property of the whole supplied use, not an English lexical gloss or an automatic claim that the traveller arrived. The basic unprefixed pairs are imperfective.
+
+Она ходит в супермаркет каждую неделю. — She goes to the supermarket every week. This is Repeated trips (imperfective). В прошлом году я ездил в Россию. — I went to Russia (and returned) last year. In the retained supplied context this is One completed round trip in the past (imperfective). The past round-trip interpretation includes a return; the unprefixed form nevertheless remains imperfective. A choice saying “The form is perfective because this trip is completed.” makes an incorrect aspect inference for these forms. Do not equate a destination with unidirectionality or event completion with perfective aspect. Prefixed setting-out and path examples require their separately taught meanings.
+shippedText=идти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
+
+Мы идём в библиотеку. — We are headed to the library. Птицы летят на юг. — The birds are flying south. These supplied contexts show Motion in progress in one direction (imperfective). Ребёнок ходит шесть месяцев. — The child has been walking for six months. This is General walking ability (imperfective). Мы ходили по городу весь день. — We walked around the city all day. This is Movement in various directions (imperfective). Directionality is a property of the whole supplied use, not an English lexical gloss or an automatic claim that the traveller arrived. The basic unprefixed pairs are imperfective.
+
+Она ходит в супермаркет каждую неделю. — She goes to the supermarket every week. This is Repeated trips (imperfective). В прошлом году я ездил в Россию. — I went to Russia (and returned) last year. In the retained supplied context this is One completed round trip in the past (imperfective). The past round-trip interpretation includes a return; the unprefixed form nevertheless remains imperfective. A choice saying “The form is perfective because this trip is completed.” makes an incorrect aspect inference for these forms. Do not equate a destination with unidirectionality or event completion with perfective aspect. Prefixed setting-out and path examples require their separately taught meanings.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2240d44bb1f7565b8da176b1798516934c45112aac1ebfcc8f2b5122a771565b
+contentHash=3d0456f9b1321f3bd171a2d5312c8dc2c60324b276e01a84a9080bd7c3f16812
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-st-teach-direction-contexts-body`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3b5ce7ee61fecd44e1430c950955456622ecf465ca539b325042482f1e4447e3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:direction:u20-st-teach-direction-contexts-body
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+Мы идём в библиотеку. — We are headed to the library. Птицы летят на юг. — The birds are flying south. These supplied contexts show Motion in progress in one direction (imperfective). Ребёнок ходит шесть месяцев. — The child has been walking for six months. This is General walking ability (imperfective). Мы ходили по городу весь день. — We walked around the city all day. This is Movement in various directions (imperfective). Directionality is a property of the whole supplied use, not an English lexical gloss or an automatic claim that the traveller arrived. The basic unprefixed pairs are imperfective.
+shippedText=Мы идём в библиотеку. — We are headed to the library. Птицы летят на юг. — The birds are flying south. These supplied contexts show Motion in progress in one direction (imperfective). Ребёнок ходит шесть месяцев. — The child has been walking for six months. This is General walking ability (imperfective). Мы ходили по городу весь день. — We walked around the city all day. This is Movement in various directions (imperfective). Directionality is a property of the whole supplied use, not an English lexical gloss or an automatic claim that the traveller arrived. The basic unprefixed pairs are imperfective.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=15ac0ef0cc99b21f27ac7c503d75de945e3827e784dc2fae1bc7448c2502b42e
+contentHash=cecfa8dc82064112e6a84917aba8fd660da12a79664b872e5986c682154d75c4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-st-teach-direction-contexts-title`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 287df82d9e0d2bf4372c55a5bb78d06dc532e8cb39af507d82dbe3a9e05c3bea
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:direction:u20-st-teach-direction-contexts-title
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+Interpret directionality in a whole example
+shippedText=Interpret directionality in a whole example
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=18ec6a0b1cf74e0e9286ab08ff901439259d5c81fb4640cedab1548645ad73f3
+contentHash=797fcc0ffdde2f62775b91da7a2a70adf3f26f6fbf036728136cd099e667a203
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-st-teach-direction-return-body`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7a364c1427ff6d042654d7dd9d09304e5e69c52e304cc79dc16b6608b7a078a5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:direction:u20-st-teach-direction-return-body
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+Она ходит в супермаркет каждую неделю. — She goes to the supermarket every week. This is Repeated trips (imperfective). В прошлом году я ездил в Россию. — I went to Russia (and returned) last year. In the retained supplied context this is One completed round trip in the past (imperfective). The past round-trip interpretation includes a return; the unprefixed form nevertheless remains imperfective. A choice saying “The form is perfective because this trip is completed.” makes an incorrect aspect inference for these forms. Do not equate a destination with unidirectionality or event completion with perfective aspect. Prefixed setting-out and path examples require their separately taught meanings.
+shippedText=Она ходит в супермаркет каждую неделю. — She goes to the supermarket every week. This is Repeated trips (imperfective). В прошлом году я ездил в Россию. — I went to Russia (and returned) last year. In the retained supplied context this is One completed round trip in the past (imperfective). The past round-trip interpretation includes a return; the unprefixed form nevertheless remains imperfective. A choice saying “The form is perfective because this trip is completed.” makes an incorrect aspect inference for these forms. Do not equate a destination with unidirectionality or event completion with perfective aspect. Prefixed setting-out and path examples require their separately taught meanings.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fa6fdd58ac4e024e140ed345699b9c325e6b629269aba281faac73ba8590a253
+contentHash=1f7360265a9d9c82e966b30dd2f2ff9aff85261285e6489b7f391cd97f34efdc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u20-direction-u20-st-teach-direction-return-title`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4b13c22179bfce8906cabf2591ce4ca3bc5558803deedd236e14acd47981cfb4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u20-motion:direction:u20-st-teach-direction-return-title
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+Distinguish repeated trips and a completed return
+shippedText=Distinguish repeated trips and a completed return
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7efa232803325381bcd954da529caeb0163e52fe1c2079d9d54f8ffb9b792e10
+contentHash=2b42a0b5a12556c549a152234c2c0586afb52d864c03c5269b76fb5de413213e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-ex-u20-motion-0-en`
 
 - Objectives: obj-u20-motion
@@ -8029,6 +10051,2169 @@ attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=91e79ac2824455369290c1a4f7179c1cc8aa815773495fe8b13c924530082d0e
 contentHash=02bfafb40697403fc390959d7154af6477b5e95576efa7ed185e2e2b7e063116
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u20-direction-cap-cap-u20-motion-po-setting-out-u20-st-rem-motion`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 165f156aba3a098393734d1aaa1395da63dd361c6cd57c1f7ba3620f93919213
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-po-setting-out
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
+Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
+
+Мы идём в библиотеку. — We are headed to the library. Птицы летят на юг. — The birds are flying south. These supplied contexts show Motion in progress in one direction (imperfective). Ребёнок ходит шесть месяцев. — The child has been walking for six months. This is General walking ability (imperfective). Мы ходили по городу весь день. — We walked around the city all day. This is Movement in various directions (imperfective). Directionality is a property of the whole supplied use, not an English lexical gloss or an automatic claim that the traveller arrived. The basic unprefixed pairs are imperfective.
+
+Она ходит в супермаркет каждую неделю. — She goes to the supermarket every week. This is Repeated trips (imperfective). В прошлом году я ездил в Россию. — I went to Russia (and returned) last year. In the retained supplied context this is One completed round trip in the past (imperfective). The past round-trip interpretation includes a return; the unprefixed form nevertheless remains imperfective. A choice saying “The form is perfective because this trip is completed.” makes an incorrect aspect inference for these forms. Do not equate a destination with unidirectionality or event completion with perfective aspect. Prefixed setting-out and path examples require their separately taught meanings.
+shippedText=идти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
+
+Мы идём в библиотеку. — We are headed to the library. Птицы летят на юг. — The birds are flying south. These supplied contexts show Motion in progress in one direction (imperfective). Ребёнок ходит шесть месяцев. — The child has been walking for six months. This is General walking ability (imperfective). Мы ходили по городу весь день. — We walked around the city all day. This is Movement in various directions (imperfective). Directionality is a property of the whole supplied use, not an English lexical gloss or an automatic claim that the traveller arrived. The basic unprefixed pairs are imperfective.
+
+Она ходит в супермаркет каждую неделю. — She goes to the supermarket every week. This is Repeated trips (imperfective). В прошлом году я ездил в Россию. — I went to Russia (and returned) last year. In the retained supplied context this is One completed round trip in the past (imperfective). The past round-trip interpretation includes a return; the unprefixed form nevertheless remains imperfective. A choice saying “The form is perfective because this trip is completed.” makes an incorrect aspect inference for these forms. Do not equate a destination with unidirectionality or event completion with perfective aspect. Prefixed setting-out and path examples require their separately taught meanings.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=543855e3604c8812cbc0bc2b2a22361f3165472708bc771019db79a534c5aedc
+contentHash=3d0456f9b1321f3bd171a2d5312c8dc2c60324b276e01a84a9080bd7c3f16812
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u20-direction-cap-cap-u20-motion-po-setting-out-u20-st-teach-direction-contexts`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8a041a484334be0e87b71a7f36d38c2ebeba6b16e5d8762ea533a4ac6bf7036b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-po-setting-out
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
+Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
+
+Мы идём в библиотеку. — We are headed to the library. Птицы летят на юг. — The birds are flying south. These supplied contexts show Motion in progress in one direction (imperfective). Ребёнок ходит шесть месяцев. — The child has been walking for six months. This is General walking ability (imperfective). Мы ходили по городу весь день. — We walked around the city all day. This is Movement in various directions (imperfective). Directionality is a property of the whole supplied use, not an English lexical gloss or an automatic claim that the traveller arrived. The basic unprefixed pairs are imperfective.
+
+Она ходит в супермаркет каждую неделю. — She goes to the supermarket every week. This is Repeated trips (imperfective). В прошлом году я ездил в Россию. — I went to Russia (and returned) last year. In the retained supplied context this is One completed round trip in the past (imperfective). The past round-trip interpretation includes a return; the unprefixed form nevertheless remains imperfective. A choice saying “The form is perfective because this trip is completed.” makes an incorrect aspect inference for these forms. Do not equate a destination with unidirectionality or event completion with perfective aspect. Prefixed setting-out and path examples require their separately taught meanings.
+shippedText=Мы идём в библиотеку. — We are headed to the library. Птицы летят на юг. — The birds are flying south. These supplied contexts show Motion in progress in one direction (imperfective). Ребёнок ходит шесть месяцев. — The child has been walking for six months. This is General walking ability (imperfective). Мы ходили по городу весь день. — We walked around the city all day. This is Movement in various directions (imperfective). Directionality is a property of the whole supplied use, not an English lexical gloss or an automatic claim that the traveller arrived. The basic unprefixed pairs are imperfective.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=543855e3604c8812cbc0bc2b2a22361f3165472708bc771019db79a534c5aedc
+contentHash=cecfa8dc82064112e6a84917aba8fd660da12a79664b872e5986c682154d75c4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u20-direction-cap-cap-u20-motion-po-setting-out-u20-st-teach-direction-return`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 114861c25f4b3dc12dc9f51ec58e0aca39dca7c366b903e8b9cb5f7aeb90bc67
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-po-setting-out
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
+Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
+
+Мы идём в библиотеку. — We are headed to the library. Птицы летят на юг. — The birds are flying south. These supplied contexts show Motion in progress in one direction (imperfective). Ребёнок ходит шесть месяцев. — The child has been walking for six months. This is General walking ability (imperfective). Мы ходили по городу весь день. — We walked around the city all day. This is Movement in various directions (imperfective). Directionality is a property of the whole supplied use, not an English lexical gloss or an automatic claim that the traveller arrived. The basic unprefixed pairs are imperfective.
+
+Она ходит в супермаркет каждую неделю. — She goes to the supermarket every week. This is Repeated trips (imperfective). В прошлом году я ездил в Россию. — I went to Russia (and returned) last year. In the retained supplied context this is One completed round trip in the past (imperfective). The past round-trip interpretation includes a return; the unprefixed form nevertheless remains imperfective. A choice saying “The form is perfective because this trip is completed.” makes an incorrect aspect inference for these forms. Do not equate a destination with unidirectionality or event completion with perfective aspect. Prefixed setting-out and path examples require their separately taught meanings.
+shippedText=Она ходит в супермаркет каждую неделю. — She goes to the supermarket every week. This is Repeated trips (imperfective). В прошлом году я ездил в Россию. — I went to Russia (and returned) last year. In the retained supplied context this is One completed round trip in the past (imperfective). The past round-trip interpretation includes a return; the unprefixed form nevertheless remains imperfective. A choice saying “The form is perfective because this trip is completed.” makes an incorrect aspect inference for these forms. Do not equate a destination with unidirectionality or event completion with perfective aspect. Prefixed setting-out and path examples require their separately taught meanings.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=543855e3604c8812cbc0bc2b2a22361f3165472708bc771019db79a534c5aedc
+contentHash=1f7360265a9d9c82e966b30dd2f2ff9aff85261285e6489b7f391cd97f34efdc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u20-direction-cap-cap-u20-motion-prefixed-path-u20-st-rem-motion`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 56b03a199412935cfb752d4dd104156161d1e369d1c54f7ca2f6c5311f154d79
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-prefixed-path
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
+Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
+
+Мы идём в библиотеку. — We are headed to the library. Птицы летят на юг. — The birds are flying south. These supplied contexts show Motion in progress in one direction (imperfective). Ребёнок ходит шесть месяцев. — The child has been walking for six months. This is General walking ability (imperfective). Мы ходили по городу весь день. — We walked around the city all day. This is Movement in various directions (imperfective). Directionality is a property of the whole supplied use, not an English lexical gloss or an automatic claim that the traveller arrived. The basic unprefixed pairs are imperfective.
+
+Она ходит в супермаркет каждую неделю. — She goes to the supermarket every week. This is Repeated trips (imperfective). В прошлом году я ездил в Россию. — I went to Russia (and returned) last year. In the retained supplied context this is One completed round trip in the past (imperfective). The past round-trip interpretation includes a return; the unprefixed form nevertheless remains imperfective. A choice saying “The form is perfective because this trip is completed.” makes an incorrect aspect inference for these forms. Do not equate a destination with unidirectionality or event completion with perfective aspect. Prefixed setting-out and path examples require their separately taught meanings.
+shippedText=идти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
+
+Мы идём в библиотеку. — We are headed to the library. Птицы летят на юг. — The birds are flying south. These supplied contexts show Motion in progress in one direction (imperfective). Ребёнок ходит шесть месяцев. — The child has been walking for six months. This is General walking ability (imperfective). Мы ходили по городу весь день. — We walked around the city all day. This is Movement in various directions (imperfective). Directionality is a property of the whole supplied use, not an English lexical gloss or an automatic claim that the traveller arrived. The basic unprefixed pairs are imperfective.
+
+Она ходит в супермаркет каждую неделю. — She goes to the supermarket every week. This is Repeated trips (imperfective). В прошлом году я ездил в Россию. — I went to Russia (and returned) last year. In the retained supplied context this is One completed round trip in the past (imperfective). The past round-trip interpretation includes a return; the unprefixed form nevertheless remains imperfective. A choice saying “The form is perfective because this trip is completed.” makes an incorrect aspect inference for these forms. Do not equate a destination with unidirectionality or event completion with perfective aspect. Prefixed setting-out and path examples require their separately taught meanings.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ee7cfc22128ea694fcc77ec8da9d348ee9d1f2e72b50e69bea8754ca4970f753
+contentHash=3d0456f9b1321f3bd171a2d5312c8dc2c60324b276e01a84a9080bd7c3f16812
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u20-direction-cap-cap-u20-motion-prefixed-path-u20-st-teach-direction-contexts`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 12ab5dfe9fe140ba40f9cd28183d926e20b42450c43a926396e740980ed9277e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-prefixed-path
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
+Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
+
+Мы идём в библиотеку. — We are headed to the library. Птицы летят на юг. — The birds are flying south. These supplied contexts show Motion in progress in one direction (imperfective). Ребёнок ходит шесть месяцев. — The child has been walking for six months. This is General walking ability (imperfective). Мы ходили по городу весь день. — We walked around the city all day. This is Movement in various directions (imperfective). Directionality is a property of the whole supplied use, not an English lexical gloss or an automatic claim that the traveller arrived. The basic unprefixed pairs are imperfective.
+
+Она ходит в супермаркет каждую неделю. — She goes to the supermarket every week. This is Repeated trips (imperfective). В прошлом году я ездил в Россию. — I went to Russia (and returned) last year. In the retained supplied context this is One completed round trip in the past (imperfective). The past round-trip interpretation includes a return; the unprefixed form nevertheless remains imperfective. A choice saying “The form is perfective because this trip is completed.” makes an incorrect aspect inference for these forms. Do not equate a destination with unidirectionality or event completion with perfective aspect. Prefixed setting-out and path examples require their separately taught meanings.
+shippedText=Мы идём в библиотеку. — We are headed to the library. Птицы летят на юг. — The birds are flying south. These supplied contexts show Motion in progress in one direction (imperfective). Ребёнок ходит шесть месяцев. — The child has been walking for six months. This is General walking ability (imperfective). Мы ходили по городу весь день. — We walked around the city all day. This is Movement in various directions (imperfective). Directionality is a property of the whole supplied use, not an English lexical gloss or an automatic claim that the traveller arrived. The basic unprefixed pairs are imperfective.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ee7cfc22128ea694fcc77ec8da9d348ee9d1f2e72b50e69bea8754ca4970f753
+contentHash=cecfa8dc82064112e6a84917aba8fd660da12a79664b872e5986c682154d75c4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u20-direction-cap-cap-u20-motion-prefixed-path-u20-st-teach-direction-return`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d63cd998871aa460c63be7b364dd1abffaab303f407d42db2e1eddb28da9a27f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-prefixed-path
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
+Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
+
+Мы идём в библиотеку. — We are headed to the library. Птицы летят на юг. — The birds are flying south. These supplied contexts show Motion in progress in one direction (imperfective). Ребёнок ходит шесть месяцев. — The child has been walking for six months. This is General walking ability (imperfective). Мы ходили по городу весь день. — We walked around the city all day. This is Movement in various directions (imperfective). Directionality is a property of the whole supplied use, not an English lexical gloss or an automatic claim that the traveller arrived. The basic unprefixed pairs are imperfective.
+
+Она ходит в супермаркет каждую неделю. — She goes to the supermarket every week. This is Repeated trips (imperfective). В прошлом году я ездил в Россию. — I went to Russia (and returned) last year. In the retained supplied context this is One completed round trip in the past (imperfective). The past round-trip interpretation includes a return; the unprefixed form nevertheless remains imperfective. A choice saying “The form is perfective because this trip is completed.” makes an incorrect aspect inference for these forms. Do not equate a destination with unidirectionality or event completion with perfective aspect. Prefixed setting-out and path examples require their separately taught meanings.
+shippedText=Она ходит в супермаркет каждую неделю. — She goes to the supermarket every week. This is Repeated trips (imperfective). В прошлом году я ездил в Россию. — I went to Russia (and returned) last year. In the retained supplied context this is One completed round trip in the past (imperfective). The past round-trip interpretation includes a return; the unprefixed form nevertheless remains imperfective. A choice saying “The form is perfective because this trip is completed.” makes an incorrect aspect inference for these forms. Do not equate a destination with unidirectionality or event completion with perfective aspect. Prefixed setting-out and path examples require their separately taught meanings.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ee7cfc22128ea694fcc77ec8da9d348ee9d1f2e72b50e69bea8754ca4970f753
+contentHash=1f7360265a9d9c82e966b30dd2f2ff9aff85261285e6489b7f391cd97f34efdc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u20-direction-native-ability-en`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 21aaeedb19c28a839b733a3612217215e5b51461f63da4a7c01a2ff2dff57a2f
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=motion-native-context:===  Verbs of motion ===
+Verbs of motion are a distinct class of verbs found 
+originalSourceText====  Verbs of motion ===
+Verbs of motion are a distinct class of verbs found in several Slavic languages. Due to the extensive semantic information they contain, Russian verbs of motion pose difficulties for non-native learners at all levels of study.<ref name="Gor">{{cite journal|author=Gor, K., Cook, S., Malyushenkova, V., & Vdovina, T|title=Verbs of Motion in Highly Proficient Learners and Heritage Speakers of Russian|journal=The Slavic and East European Journal|year=2009|volume=53|issue=3|pages=386–408|jstor=40651163}}</ref> Unprefixed verbs of motion, which are all imperfective, divide into pairs based on the direction of the movement (uni- or multidirectional — sometimes referred to as determinate/indeterminate or definite/indefinite). As opposed to a verb-framed language, in which path is encoded in the verb, but manner of motion typically is expressed with complements, Russian is a ''satellite'' language, meaning that these concepts are encoded in both the root of the verb and the particles associated with it, satellites.<ref name="Talmy">{{cite book|last=Talmy|first=Leonard|title=Language Typology and Syntactic Description, vol. 3|date=1985|publisher=Cambridge University Press|location=Cambridge|pages=57–149|editor=Timothy Shopen|chapter=Lexicalization Patterns: Semantic Structure in Lexical Forms}}</ref> Thus, the roots of motion verbs convey the lexical information of manner of movement, e.g. walking, crawling, running, whereas prefixes denote path, e.g. motion in and out of space.<ref name="Nesset">{{cite journal|last=Nesset|first=Tore|title=Path and Manner: An Image-Schematic Approach to Russian Verbs of Motion|journal=Scando-Slavica|date=2008|volume=54|issue=1|pages=135–158|doi=10.1080/00806760802494232|s2cid=123427088}}</ref><ref group=note>Nesset (2008) applied Leonard Talmy's (1985, 2000) terms "manner" and "path" to her image schema for Russian verbs of motion.</ref> The roots also distinguish between means of conveyance, e.g. by transport or by one's own power, and in transitive verbs, the object or person being transported.<ref name="Muravyova">{{cite book|last=Muravyova|first=L|title=Verbs of Motion in Russian / Glagoly dviženija v russkom jazyke|date=1986|publisher=Russkij jazyk|location=Moscow|edition=5|editor=V. Korotky|pages=211–212, 218–225}}</ref> The information below provides an outline of the formation and basic usage of unprefixed and prefixed verbs of motion.
+
+==== Unprefixed  ====
+
+{| class="wikitable" style="vertical-align: top;"
+|+Pairs of Russian verbs of motion, adapted from Muravyova<ref name="Muravyova" /><ref group="note">Researchers have also included the reflexive verbs катиться/кататься, гнаться/гоняться, нестись/носиться, and тащиться/таскаться (Gagarina 2009: 451–452).</ref>
+! English !! unidirectional !! multidirectional
+|- style="vertical-align: top;"
+| to run || бежа́ть || бе́гать
+|- style="vertical-align: top;"
+| to wander || брести́ || броди́ть
+|- style="vertical-align: top;"
+| to convey, transport || везти́ || вози́ть
+|- style="vertical-align: top;"
+| to lead || вести́ || води́ть
+|- style="vertical-align: top;"
+| to drive, chase || гна́ть || гоня́ть
+|- style="vertical-align: top;"
+| to go by vehicle, ride || е́хать || е́здить
+|- style="vertical-align: top;"
+| to go, walk || идти́ || ходи́ть
+|- style="vertical-align: top;"
+| to roll || кати́ть || ката́ть
+|- style="vertical-align: top;"
+| to climb || ле́зть || ла́зить (ла́зать)
+|- style="vertical-align: top;"
+| to fly || лете́ть || лета́ть
+|- style="vertical-align: top;"
+| to carry || нести́ || носи́ть
+|- style="vertical-align: top;"
+| to swim, float || плы́ть || пла́вать
+|- style="vertical-align: top;"
+| to crawl || ползти́ || по́лзать
+|- style="vertical-align: top;"
+| to drag || тащи́ть || таска́ть
+|}
+
+==== Directionality ====
+Unidirectional verbs describe motion in progress in one direction, e.g.:
+* We are headed to the library.<br />Мы идём в библиотеку.
+* I was on my way to work.<br />Я шла на работу.
+* The birds are flying south.<br />Птицы летят на юг.
+Multidirectional verbs describe:
+# General motion, referring to ability or habitual motion, without reference to direction or destination, e.g.:
+#* The child has been walking for six months.<br />Ребёнок ходит шесть месяцев.
+#* Birds fly, fish swim, and dogs walk.<br />Птицы летают, рыбы плавают, а собаки ходят.
+# Movement in various directions, e.g.:
+#* We walked around the city all day.<br />Мы ходили по городу весь день.
+# Repetition of completed trips, e.g.:
+#* She goes to the supermarket every week.<br />Она ходит в супермаркет каждую неделю.
+# In the past tense, a single completed round trip, e.g.:
+#* I went to Russia (and returned) last year.<br />В прошлом году я ездил в Россию.
+shippedText=The child has been walking for six months.
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=144527c7aff47147bbe8d5f4176e26d67bd5324a92439e1012965a6974f546b9
+contentHash=f6e27520f5961777a5a01200e416396c8fb97e83454f3eb4ac03c466e84e955c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u20-direction-native-ability-ru`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f0529f31fb172f7c81810c29b436afb65d4c022d793fc0c1bfc794d45f3319ef
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=motion-native-context:===  Verbs of motion ===
+Verbs of motion are a distinct class of verbs found 
+originalSourceText====  Verbs of motion ===
+Verbs of motion are a distinct class of verbs found in several Slavic languages. Due to the extensive semantic information they contain, Russian verbs of motion pose difficulties for non-native learners at all levels of study.<ref name="Gor">{{cite journal|author=Gor, K., Cook, S., Malyushenkova, V., & Vdovina, T|title=Verbs of Motion in Highly Proficient Learners and Heritage Speakers of Russian|journal=The Slavic and East European Journal|year=2009|volume=53|issue=3|pages=386–408|jstor=40651163}}</ref> Unprefixed verbs of motion, which are all imperfective, divide into pairs based on the direction of the movement (uni- or multidirectional — sometimes referred to as determinate/indeterminate or definite/indefinite). As opposed to a verb-framed language, in which path is encoded in the verb, but manner of motion typically is expressed with complements, Russian is a ''satellite'' language, meaning that these concepts are encoded in both the root of the verb and the particles associated with it, satellites.<ref name="Talmy">{{cite book|last=Talmy|first=Leonard|title=Language Typology and Syntactic Description, vol. 3|date=1985|publisher=Cambridge University Press|location=Cambridge|pages=57–149|editor=Timothy Shopen|chapter=Lexicalization Patterns: Semantic Structure in Lexical Forms}}</ref> Thus, the roots of motion verbs convey the lexical information of manner of movement, e.g. walking, crawling, running, whereas prefixes denote path, e.g. motion in and out of space.<ref name="Nesset">{{cite journal|last=Nesset|first=Tore|title=Path and Manner: An Image-Schematic Approach to Russian Verbs of Motion|journal=Scando-Slavica|date=2008|volume=54|issue=1|pages=135–158|doi=10.1080/00806760802494232|s2cid=123427088}}</ref><ref group=note>Nesset (2008) applied Leonard Talmy's (1985, 2000) terms "manner" and "path" to her image schema for Russian verbs of motion.</ref> The roots also distinguish between means of conveyance, e.g. by transport or by one's own power, and in transitive verbs, the object or person being transported.<ref name="Muravyova">{{cite book|last=Muravyova|first=L|title=Verbs of Motion in Russian / Glagoly dviženija v russkom jazyke|date=1986|publisher=Russkij jazyk|location=Moscow|edition=5|editor=V. Korotky|pages=211–212, 218–225}}</ref> The information below provides an outline of the formation and basic usage of unprefixed and prefixed verbs of motion.
+
+==== Unprefixed  ====
+
+{| class="wikitable" style="vertical-align: top;"
+|+Pairs of Russian verbs of motion, adapted from Muravyova<ref name="Muravyova" /><ref group="note">Researchers have also included the reflexive verbs катиться/кататься, гнаться/гоняться, нестись/носиться, and тащиться/таскаться (Gagarina 2009: 451–452).</ref>
+! English !! unidirectional !! multidirectional
+|- style="vertical-align: top;"
+| to run || бежа́ть || бе́гать
+|- style="vertical-align: top;"
+| to wander || брести́ || броди́ть
+|- style="vertical-align: top;"
+| to convey, transport || везти́ || вози́ть
+|- style="vertical-align: top;"
+| to lead || вести́ || води́ть
+|- style="vertical-align: top;"
+| to drive, chase || гна́ть || гоня́ть
+|- style="vertical-align: top;"
+| to go by vehicle, ride || е́хать || е́здить
+|- style="vertical-align: top;"
+| to go, walk || идти́ || ходи́ть
+|- style="vertical-align: top;"
+| to roll || кати́ть || ката́ть
+|- style="vertical-align: top;"
+| to climb || ле́зть || ла́зить (ла́зать)
+|- style="vertical-align: top;"
+| to fly || лете́ть || лета́ть
+|- style="vertical-align: top;"
+| to carry || нести́ || носи́ть
+|- style="vertical-align: top;"
+| to swim, float || плы́ть || пла́вать
+|- style="vertical-align: top;"
+| to crawl || ползти́ || по́лзать
+|- style="vertical-align: top;"
+| to drag || тащи́ть || таска́ть
+|}
+
+==== Directionality ====
+Unidirectional verbs describe motion in progress in one direction, e.g.:
+* We are headed to the library.<br />Мы идём в библиотеку.
+* I was on my way to work.<br />Я шла на работу.
+* The birds are flying south.<br />Птицы летят на юг.
+Multidirectional verbs describe:
+# General motion, referring to ability or habitual motion, without reference to direction or destination, e.g.:
+#* The child has been walking for six months.<br />Ребёнок ходит шесть месяцев.
+#* Birds fly, fish swim, and dogs walk.<br />Птицы летают, рыбы плавают, а собаки ходят.
+# Movement in various directions, e.g.:
+#* We walked around the city all day.<br />Мы ходили по городу весь день.
+# Repetition of completed trips, e.g.:
+#* She goes to the supermarket every week.<br />Она ходит в супермаркет каждую неделю.
+# In the past tense, a single completed round trip, e.g.:
+#* I went to Russia (and returned) last year.<br />В прошлом году я ездил в Россию.
+shippedText=Ребёнок ходит шесть месяцев.
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=144527c7aff47147bbe8d5f4176e26d67bd5324a92439e1012965a6974f546b9
+contentHash=410e2e1b56489a3869becdc9d7bcd48a007ee6a8dfcc9fbcd6c0dd23e4acef00
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u20-direction-native-birds-en`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dd365bb645d12c4b9c911d42ee0fd4c9deff7f4926515a8a4ba8e8958343cdb6
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=motion-native-context:===  Verbs of motion ===
+Verbs of motion are a distinct class of verbs found 
+originalSourceText====  Verbs of motion ===
+Verbs of motion are a distinct class of verbs found in several Slavic languages. Due to the extensive semantic information they contain, Russian verbs of motion pose difficulties for non-native learners at all levels of study.<ref name="Gor">{{cite journal|author=Gor, K., Cook, S., Malyushenkova, V., & Vdovina, T|title=Verbs of Motion in Highly Proficient Learners and Heritage Speakers of Russian|journal=The Slavic and East European Journal|year=2009|volume=53|issue=3|pages=386–408|jstor=40651163}}</ref> Unprefixed verbs of motion, which are all imperfective, divide into pairs based on the direction of the movement (uni- or multidirectional — sometimes referred to as determinate/indeterminate or definite/indefinite). As opposed to a verb-framed language, in which path is encoded in the verb, but manner of motion typically is expressed with complements, Russian is a ''satellite'' language, meaning that these concepts are encoded in both the root of the verb and the particles associated with it, satellites.<ref name="Talmy">{{cite book|last=Talmy|first=Leonard|title=Language Typology and Syntactic Description, vol. 3|date=1985|publisher=Cambridge University Press|location=Cambridge|pages=57–149|editor=Timothy Shopen|chapter=Lexicalization Patterns: Semantic Structure in Lexical Forms}}</ref> Thus, the roots of motion verbs convey the lexical information of manner of movement, e.g. walking, crawling, running, whereas prefixes denote path, e.g. motion in and out of space.<ref name="Nesset">{{cite journal|last=Nesset|first=Tore|title=Path and Manner: An Image-Schematic Approach to Russian Verbs of Motion|journal=Scando-Slavica|date=2008|volume=54|issue=1|pages=135–158|doi=10.1080/00806760802494232|s2cid=123427088}}</ref><ref group=note>Nesset (2008) applied Leonard Talmy's (1985, 2000) terms "manner" and "path" to her image schema for Russian verbs of motion.</ref> The roots also distinguish between means of conveyance, e.g. by transport or by one's own power, and in transitive verbs, the object or person being transported.<ref name="Muravyova">{{cite book|last=Muravyova|first=L|title=Verbs of Motion in Russian / Glagoly dviženija v russkom jazyke|date=1986|publisher=Russkij jazyk|location=Moscow|edition=5|editor=V. Korotky|pages=211–212, 218–225}}</ref> The information below provides an outline of the formation and basic usage of unprefixed and prefixed verbs of motion.
+
+==== Unprefixed  ====
+
+{| class="wikitable" style="vertical-align: top;"
+|+Pairs of Russian verbs of motion, adapted from Muravyova<ref name="Muravyova" /><ref group="note">Researchers have also included the reflexive verbs катиться/кататься, гнаться/гоняться, нестись/носиться, and тащиться/таскаться (Gagarina 2009: 451–452).</ref>
+! English !! unidirectional !! multidirectional
+|- style="vertical-align: top;"
+| to run || бежа́ть || бе́гать
+|- style="vertical-align: top;"
+| to wander || брести́ || броди́ть
+|- style="vertical-align: top;"
+| to convey, transport || везти́ || вози́ть
+|- style="vertical-align: top;"
+| to lead || вести́ || води́ть
+|- style="vertical-align: top;"
+| to drive, chase || гна́ть || гоня́ть
+|- style="vertical-align: top;"
+| to go by vehicle, ride || е́хать || е́здить
+|- style="vertical-align: top;"
+| to go, walk || идти́ || ходи́ть
+|- style="vertical-align: top;"
+| to roll || кати́ть || ката́ть
+|- style="vertical-align: top;"
+| to climb || ле́зть || ла́зить (ла́зать)
+|- style="vertical-align: top;"
+| to fly || лете́ть || лета́ть
+|- style="vertical-align: top;"
+| to carry || нести́ || носи́ть
+|- style="vertical-align: top;"
+| to swim, float || плы́ть || пла́вать
+|- style="vertical-align: top;"
+| to crawl || ползти́ || по́лзать
+|- style="vertical-align: top;"
+| to drag || тащи́ть || таска́ть
+|}
+
+==== Directionality ====
+Unidirectional verbs describe motion in progress in one direction, e.g.:
+* We are headed to the library.<br />Мы идём в библиотеку.
+* I was on my way to work.<br />Я шла на работу.
+* The birds are flying south.<br />Птицы летят на юг.
+Multidirectional verbs describe:
+# General motion, referring to ability or habitual motion, without reference to direction or destination, e.g.:
+#* The child has been walking for six months.<br />Ребёнок ходит шесть месяцев.
+#* Birds fly, fish swim, and dogs walk.<br />Птицы летают, рыбы плавают, а собаки ходят.
+# Movement in various directions, e.g.:
+#* We walked around the city all day.<br />Мы ходили по городу весь день.
+# Repetition of completed trips, e.g.:
+#* She goes to the supermarket every week.<br />Она ходит в супермаркет каждую неделю.
+# In the past tense, a single completed round trip, e.g.:
+#* I went to Russia (and returned) last year.<br />В прошлом году я ездил в Россию.
+shippedText=The birds are flying south.
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=144527c7aff47147bbe8d5f4176e26d67bd5324a92439e1012965a6974f546b9
+contentHash=86faac78b7dfdc1174578222633981129c51974941482e9fbcdce214f5740e48
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u20-direction-native-birds-ru`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c9b691463ea4b0d620d3e8d783228e12817682de913bafd8b6adabfbca6a22e8
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=motion-native-context:===  Verbs of motion ===
+Verbs of motion are a distinct class of verbs found 
+originalSourceText====  Verbs of motion ===
+Verbs of motion are a distinct class of verbs found in several Slavic languages. Due to the extensive semantic information they contain, Russian verbs of motion pose difficulties for non-native learners at all levels of study.<ref name="Gor">{{cite journal|author=Gor, K., Cook, S., Malyushenkova, V., & Vdovina, T|title=Verbs of Motion in Highly Proficient Learners and Heritage Speakers of Russian|journal=The Slavic and East European Journal|year=2009|volume=53|issue=3|pages=386–408|jstor=40651163}}</ref> Unprefixed verbs of motion, which are all imperfective, divide into pairs based on the direction of the movement (uni- or multidirectional — sometimes referred to as determinate/indeterminate or definite/indefinite). As opposed to a verb-framed language, in which path is encoded in the verb, but manner of motion typically is expressed with complements, Russian is a ''satellite'' language, meaning that these concepts are encoded in both the root of the verb and the particles associated with it, satellites.<ref name="Talmy">{{cite book|last=Talmy|first=Leonard|title=Language Typology and Syntactic Description, vol. 3|date=1985|publisher=Cambridge University Press|location=Cambridge|pages=57–149|editor=Timothy Shopen|chapter=Lexicalization Patterns: Semantic Structure in Lexical Forms}}</ref> Thus, the roots of motion verbs convey the lexical information of manner of movement, e.g. walking, crawling, running, whereas prefixes denote path, e.g. motion in and out of space.<ref name="Nesset">{{cite journal|last=Nesset|first=Tore|title=Path and Manner: An Image-Schematic Approach to Russian Verbs of Motion|journal=Scando-Slavica|date=2008|volume=54|issue=1|pages=135–158|doi=10.1080/00806760802494232|s2cid=123427088}}</ref><ref group=note>Nesset (2008) applied Leonard Talmy's (1985, 2000) terms "manner" and "path" to her image schema for Russian verbs of motion.</ref> The roots also distinguish between means of conveyance, e.g. by transport or by one's own power, and in transitive verbs, the object or person being transported.<ref name="Muravyova">{{cite book|last=Muravyova|first=L|title=Verbs of Motion in Russian / Glagoly dviženija v russkom jazyke|date=1986|publisher=Russkij jazyk|location=Moscow|edition=5|editor=V. Korotky|pages=211–212, 218–225}}</ref> The information below provides an outline of the formation and basic usage of unprefixed and prefixed verbs of motion.
+
+==== Unprefixed  ====
+
+{| class="wikitable" style="vertical-align: top;"
+|+Pairs of Russian verbs of motion, adapted from Muravyova<ref name="Muravyova" /><ref group="note">Researchers have also included the reflexive verbs катиться/кататься, гнаться/гоняться, нестись/носиться, and тащиться/таскаться (Gagarina 2009: 451–452).</ref>
+! English !! unidirectional !! multidirectional
+|- style="vertical-align: top;"
+| to run || бежа́ть || бе́гать
+|- style="vertical-align: top;"
+| to wander || брести́ || броди́ть
+|- style="vertical-align: top;"
+| to convey, transport || везти́ || вози́ть
+|- style="vertical-align: top;"
+| to lead || вести́ || води́ть
+|- style="vertical-align: top;"
+| to drive, chase || гна́ть || гоня́ть
+|- style="vertical-align: top;"
+| to go by vehicle, ride || е́хать || е́здить
+|- style="vertical-align: top;"
+| to go, walk || идти́ || ходи́ть
+|- style="vertical-align: top;"
+| to roll || кати́ть || ката́ть
+|- style="vertical-align: top;"
+| to climb || ле́зть || ла́зить (ла́зать)
+|- style="vertical-align: top;"
+| to fly || лете́ть || лета́ть
+|- style="vertical-align: top;"
+| to carry || нести́ || носи́ть
+|- style="vertical-align: top;"
+| to swim, float || плы́ть || пла́вать
+|- style="vertical-align: top;"
+| to crawl || ползти́ || по́лзать
+|- style="vertical-align: top;"
+| to drag || тащи́ть || таска́ть
+|}
+
+==== Directionality ====
+Unidirectional verbs describe motion in progress in one direction, e.g.:
+* We are headed to the library.<br />Мы идём в библиотеку.
+* I was on my way to work.<br />Я шла на работу.
+* The birds are flying south.<br />Птицы летят на юг.
+Multidirectional verbs describe:
+# General motion, referring to ability or habitual motion, without reference to direction or destination, e.g.:
+#* The child has been walking for six months.<br />Ребёнок ходит шесть месяцев.
+#* Birds fly, fish swim, and dogs walk.<br />Птицы летают, рыбы плавают, а собаки ходят.
+# Movement in various directions, e.g.:
+#* We walked around the city all day.<br />Мы ходили по городу весь день.
+# Repetition of completed trips, e.g.:
+#* She goes to the supermarket every week.<br />Она ходит в супермаркет каждую неделю.
+# In the past tense, a single completed round trip, e.g.:
+#* I went to Russia (and returned) last year.<br />В прошлом году я ездил в Россию.
+shippedText=Птицы летят на юг.
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=144527c7aff47147bbe8d5f4176e26d67bd5324a92439e1012965a6974f546b9
+contentHash=d8bea4a2fc363fe3f2361a65449e3fa6608b7beb43759f7f7121975d158bb297
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u20-direction-native-city-en`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 883615160548dc73e6f837e4fbc63dd4e164a88d1e050bbe0a25483224b9284d
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=motion-native-context:===  Verbs of motion ===
+Verbs of motion are a distinct class of verbs found 
+originalSourceText====  Verbs of motion ===
+Verbs of motion are a distinct class of verbs found in several Slavic languages. Due to the extensive semantic information they contain, Russian verbs of motion pose difficulties for non-native learners at all levels of study.<ref name="Gor">{{cite journal|author=Gor, K., Cook, S., Malyushenkova, V., & Vdovina, T|title=Verbs of Motion in Highly Proficient Learners and Heritage Speakers of Russian|journal=The Slavic and East European Journal|year=2009|volume=53|issue=3|pages=386–408|jstor=40651163}}</ref> Unprefixed verbs of motion, which are all imperfective, divide into pairs based on the direction of the movement (uni- or multidirectional — sometimes referred to as determinate/indeterminate or definite/indefinite). As opposed to a verb-framed language, in which path is encoded in the verb, but manner of motion typically is expressed with complements, Russian is a ''satellite'' language, meaning that these concepts are encoded in both the root of the verb and the particles associated with it, satellites.<ref name="Talmy">{{cite book|last=Talmy|first=Leonard|title=Language Typology and Syntactic Description, vol. 3|date=1985|publisher=Cambridge University Press|location=Cambridge|pages=57–149|editor=Timothy Shopen|chapter=Lexicalization Patterns: Semantic Structure in Lexical Forms}}</ref> Thus, the roots of motion verbs convey the lexical information of manner of movement, e.g. walking, crawling, running, whereas prefixes denote path, e.g. motion in and out of space.<ref name="Nesset">{{cite journal|last=Nesset|first=Tore|title=Path and Manner: An Image-Schematic Approach to Russian Verbs of Motion|journal=Scando-Slavica|date=2008|volume=54|issue=1|pages=135–158|doi=10.1080/00806760802494232|s2cid=123427088}}</ref><ref group=note>Nesset (2008) applied Leonard Talmy's (1985, 2000) terms "manner" and "path" to her image schema for Russian verbs of motion.</ref> The roots also distinguish between means of conveyance, e.g. by transport or by one's own power, and in transitive verbs, the object or person being transported.<ref name="Muravyova">{{cite book|last=Muravyova|first=L|title=Verbs of Motion in Russian / Glagoly dviženija v russkom jazyke|date=1986|publisher=Russkij jazyk|location=Moscow|edition=5|editor=V. Korotky|pages=211–212, 218–225}}</ref> The information below provides an outline of the formation and basic usage of unprefixed and prefixed verbs of motion.
+
+==== Unprefixed  ====
+
+{| class="wikitable" style="vertical-align: top;"
+|+Pairs of Russian verbs of motion, adapted from Muravyova<ref name="Muravyova" /><ref group="note">Researchers have also included the reflexive verbs катиться/кататься, гнаться/гоняться, нестись/носиться, and тащиться/таскаться (Gagarina 2009: 451–452).</ref>
+! English !! unidirectional !! multidirectional
+|- style="vertical-align: top;"
+| to run || бежа́ть || бе́гать
+|- style="vertical-align: top;"
+| to wander || брести́ || броди́ть
+|- style="vertical-align: top;"
+| to convey, transport || везти́ || вози́ть
+|- style="vertical-align: top;"
+| to lead || вести́ || води́ть
+|- style="vertical-align: top;"
+| to drive, chase || гна́ть || гоня́ть
+|- style="vertical-align: top;"
+| to go by vehicle, ride || е́хать || е́здить
+|- style="vertical-align: top;"
+| to go, walk || идти́ || ходи́ть
+|- style="vertical-align: top;"
+| to roll || кати́ть || ката́ть
+|- style="vertical-align: top;"
+| to climb || ле́зть || ла́зить (ла́зать)
+|- style="vertical-align: top;"
+| to fly || лете́ть || лета́ть
+|- style="vertical-align: top;"
+| to carry || нести́ || носи́ть
+|- style="vertical-align: top;"
+| to swim, float || плы́ть || пла́вать
+|- style="vertical-align: top;"
+| to crawl || ползти́ || по́лзать
+|- style="vertical-align: top;"
+| to drag || тащи́ть || таска́ть
+|}
+
+==== Directionality ====
+Unidirectional verbs describe motion in progress in one direction, e.g.:
+* We are headed to the library.<br />Мы идём в библиотеку.
+* I was on my way to work.<br />Я шла на работу.
+* The birds are flying south.<br />Птицы летят на юг.
+Multidirectional verbs describe:
+# General motion, referring to ability or habitual motion, without reference to direction or destination, e.g.:
+#* The child has been walking for six months.<br />Ребёнок ходит шесть месяцев.
+#* Birds fly, fish swim, and dogs walk.<br />Птицы летают, рыбы плавают, а собаки ходят.
+# Movement in various directions, e.g.:
+#* We walked around the city all day.<br />Мы ходили по городу весь день.
+# Repetition of completed trips, e.g.:
+#* She goes to the supermarket every week.<br />Она ходит в супермаркет каждую неделю.
+# In the past tense, a single completed round trip, e.g.:
+#* I went to Russia (and returned) last year.<br />В прошлом году я ездил в Россию.
+shippedText=We walked around the city all day.
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=144527c7aff47147bbe8d5f4176e26d67bd5324a92439e1012965a6974f546b9
+contentHash=d8da9d41410825631a92dd40f302ceebcff3240883fe23177438eb8b547ef28e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u20-direction-native-city-ru`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e0071aadff79ef5cf0461c59289ac4673836e4d783477430134bf71e5be4e176
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=motion-native-context:===  Verbs of motion ===
+Verbs of motion are a distinct class of verbs found 
+originalSourceText====  Verbs of motion ===
+Verbs of motion are a distinct class of verbs found in several Slavic languages. Due to the extensive semantic information they contain, Russian verbs of motion pose difficulties for non-native learners at all levels of study.<ref name="Gor">{{cite journal|author=Gor, K., Cook, S., Malyushenkova, V., & Vdovina, T|title=Verbs of Motion in Highly Proficient Learners and Heritage Speakers of Russian|journal=The Slavic and East European Journal|year=2009|volume=53|issue=3|pages=386–408|jstor=40651163}}</ref> Unprefixed verbs of motion, which are all imperfective, divide into pairs based on the direction of the movement (uni- or multidirectional — sometimes referred to as determinate/indeterminate or definite/indefinite). As opposed to a verb-framed language, in which path is encoded in the verb, but manner of motion typically is expressed with complements, Russian is a ''satellite'' language, meaning that these concepts are encoded in both the root of the verb and the particles associated with it, satellites.<ref name="Talmy">{{cite book|last=Talmy|first=Leonard|title=Language Typology and Syntactic Description, vol. 3|date=1985|publisher=Cambridge University Press|location=Cambridge|pages=57–149|editor=Timothy Shopen|chapter=Lexicalization Patterns: Semantic Structure in Lexical Forms}}</ref> Thus, the roots of motion verbs convey the lexical information of manner of movement, e.g. walking, crawling, running, whereas prefixes denote path, e.g. motion in and out of space.<ref name="Nesset">{{cite journal|last=Nesset|first=Tore|title=Path and Manner: An Image-Schematic Approach to Russian Verbs of Motion|journal=Scando-Slavica|date=2008|volume=54|issue=1|pages=135–158|doi=10.1080/00806760802494232|s2cid=123427088}}</ref><ref group=note>Nesset (2008) applied Leonard Talmy's (1985, 2000) terms "manner" and "path" to her image schema for Russian verbs of motion.</ref> The roots also distinguish between means of conveyance, e.g. by transport or by one's own power, and in transitive verbs, the object or person being transported.<ref name="Muravyova">{{cite book|last=Muravyova|first=L|title=Verbs of Motion in Russian / Glagoly dviženija v russkom jazyke|date=1986|publisher=Russkij jazyk|location=Moscow|edition=5|editor=V. Korotky|pages=211–212, 218–225}}</ref> The information below provides an outline of the formation and basic usage of unprefixed and prefixed verbs of motion.
+
+==== Unprefixed  ====
+
+{| class="wikitable" style="vertical-align: top;"
+|+Pairs of Russian verbs of motion, adapted from Muravyova<ref name="Muravyova" /><ref group="note">Researchers have also included the reflexive verbs катиться/кататься, гнаться/гоняться, нестись/носиться, and тащиться/таскаться (Gagarina 2009: 451–452).</ref>
+! English !! unidirectional !! multidirectional
+|- style="vertical-align: top;"
+| to run || бежа́ть || бе́гать
+|- style="vertical-align: top;"
+| to wander || брести́ || броди́ть
+|- style="vertical-align: top;"
+| to convey, transport || везти́ || вози́ть
+|- style="vertical-align: top;"
+| to lead || вести́ || води́ть
+|- style="vertical-align: top;"
+| to drive, chase || гна́ть || гоня́ть
+|- style="vertical-align: top;"
+| to go by vehicle, ride || е́хать || е́здить
+|- style="vertical-align: top;"
+| to go, walk || идти́ || ходи́ть
+|- style="vertical-align: top;"
+| to roll || кати́ть || ката́ть
+|- style="vertical-align: top;"
+| to climb || ле́зть || ла́зить (ла́зать)
+|- style="vertical-align: top;"
+| to fly || лете́ть || лета́ть
+|- style="vertical-align: top;"
+| to carry || нести́ || носи́ть
+|- style="vertical-align: top;"
+| to swim, float || плы́ть || пла́вать
+|- style="vertical-align: top;"
+| to crawl || ползти́ || по́лзать
+|- style="vertical-align: top;"
+| to drag || тащи́ть || таска́ть
+|}
+
+==== Directionality ====
+Unidirectional verbs describe motion in progress in one direction, e.g.:
+* We are headed to the library.<br />Мы идём в библиотеку.
+* I was on my way to work.<br />Я шла на работу.
+* The birds are flying south.<br />Птицы летят на юг.
+Multidirectional verbs describe:
+# General motion, referring to ability or habitual motion, without reference to direction or destination, e.g.:
+#* The child has been walking for six months.<br />Ребёнок ходит шесть месяцев.
+#* Birds fly, fish swim, and dogs walk.<br />Птицы летают, рыбы плавают, а собаки ходят.
+# Movement in various directions, e.g.:
+#* We walked around the city all day.<br />Мы ходили по городу весь день.
+# Repetition of completed trips, e.g.:
+#* She goes to the supermarket every week.<br />Она ходит в супермаркет каждую неделю.
+# In the past tense, a single completed round trip, e.g.:
+#* I went to Russia (and returned) last year.<br />В прошлом году я ездил в Россию.
+shippedText=Мы ходили по городу весь день.
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=144527c7aff47147bbe8d5f4176e26d67bd5324a92439e1012965a6974f546b9
+contentHash=cd874b88f7d3bcc6bd63aba77a1fec941c3f45d6dbbfb9cea1fdea506906307c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u20-direction-native-library-en`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 700ca168bee0b2944fa85192b1d486c5f13bae3c325285902bcc6c5aba6853f0
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=motion-native-context:===  Verbs of motion ===
+Verbs of motion are a distinct class of verbs found 
+originalSourceText====  Verbs of motion ===
+Verbs of motion are a distinct class of verbs found in several Slavic languages. Due to the extensive semantic information they contain, Russian verbs of motion pose difficulties for non-native learners at all levels of study.<ref name="Gor">{{cite journal|author=Gor, K., Cook, S., Malyushenkova, V., & Vdovina, T|title=Verbs of Motion in Highly Proficient Learners and Heritage Speakers of Russian|journal=The Slavic and East European Journal|year=2009|volume=53|issue=3|pages=386–408|jstor=40651163}}</ref> Unprefixed verbs of motion, which are all imperfective, divide into pairs based on the direction of the movement (uni- or multidirectional — sometimes referred to as determinate/indeterminate or definite/indefinite). As opposed to a verb-framed language, in which path is encoded in the verb, but manner of motion typically is expressed with complements, Russian is a ''satellite'' language, meaning that these concepts are encoded in both the root of the verb and the particles associated with it, satellites.<ref name="Talmy">{{cite book|last=Talmy|first=Leonard|title=Language Typology and Syntactic Description, vol. 3|date=1985|publisher=Cambridge University Press|location=Cambridge|pages=57–149|editor=Timothy Shopen|chapter=Lexicalization Patterns: Semantic Structure in Lexical Forms}}</ref> Thus, the roots of motion verbs convey the lexical information of manner of movement, e.g. walking, crawling, running, whereas prefixes denote path, e.g. motion in and out of space.<ref name="Nesset">{{cite journal|last=Nesset|first=Tore|title=Path and Manner: An Image-Schematic Approach to Russian Verbs of Motion|journal=Scando-Slavica|date=2008|volume=54|issue=1|pages=135–158|doi=10.1080/00806760802494232|s2cid=123427088}}</ref><ref group=note>Nesset (2008) applied Leonard Talmy's (1985, 2000) terms "manner" and "path" to her image schema for Russian verbs of motion.</ref> The roots also distinguish between means of conveyance, e.g. by transport or by one's own power, and in transitive verbs, the object or person being transported.<ref name="Muravyova">{{cite book|last=Muravyova|first=L|title=Verbs of Motion in Russian / Glagoly dviženija v russkom jazyke|date=1986|publisher=Russkij jazyk|location=Moscow|edition=5|editor=V. Korotky|pages=211–212, 218–225}}</ref> The information below provides an outline of the formation and basic usage of unprefixed and prefixed verbs of motion.
+
+==== Unprefixed  ====
+
+{| class="wikitable" style="vertical-align: top;"
+|+Pairs of Russian verbs of motion, adapted from Muravyova<ref name="Muravyova" /><ref group="note">Researchers have also included the reflexive verbs катиться/кататься, гнаться/гоняться, нестись/носиться, and тащиться/таскаться (Gagarina 2009: 451–452).</ref>
+! English !! unidirectional !! multidirectional
+|- style="vertical-align: top;"
+| to run || бежа́ть || бе́гать
+|- style="vertical-align: top;"
+| to wander || брести́ || броди́ть
+|- style="vertical-align: top;"
+| to convey, transport || везти́ || вози́ть
+|- style="vertical-align: top;"
+| to lead || вести́ || води́ть
+|- style="vertical-align: top;"
+| to drive, chase || гна́ть || гоня́ть
+|- style="vertical-align: top;"
+| to go by vehicle, ride || е́хать || е́здить
+|- style="vertical-align: top;"
+| to go, walk || идти́ || ходи́ть
+|- style="vertical-align: top;"
+| to roll || кати́ть || ката́ть
+|- style="vertical-align: top;"
+| to climb || ле́зть || ла́зить (ла́зать)
+|- style="vertical-align: top;"
+| to fly || лете́ть || лета́ть
+|- style="vertical-align: top;"
+| to carry || нести́ || носи́ть
+|- style="vertical-align: top;"
+| to swim, float || плы́ть || пла́вать
+|- style="vertical-align: top;"
+| to crawl || ползти́ || по́лзать
+|- style="vertical-align: top;"
+| to drag || тащи́ть || таска́ть
+|}
+
+==== Directionality ====
+Unidirectional verbs describe motion in progress in one direction, e.g.:
+* We are headed to the library.<br />Мы идём в библиотеку.
+* I was on my way to work.<br />Я шла на работу.
+* The birds are flying south.<br />Птицы летят на юг.
+Multidirectional verbs describe:
+# General motion, referring to ability or habitual motion, without reference to direction or destination, e.g.:
+#* The child has been walking for six months.<br />Ребёнок ходит шесть месяцев.
+#* Birds fly, fish swim, and dogs walk.<br />Птицы летают, рыбы плавают, а собаки ходят.
+# Movement in various directions, e.g.:
+#* We walked around the city all day.<br />Мы ходили по городу весь день.
+# Repetition of completed trips, e.g.:
+#* She goes to the supermarket every week.<br />Она ходит в супермаркет каждую неделю.
+# In the past tense, a single completed round trip, e.g.:
+#* I went to Russia (and returned) last year.<br />В прошлом году я ездил в Россию.
+shippedText=We are headed to the library.
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=144527c7aff47147bbe8d5f4176e26d67bd5324a92439e1012965a6974f546b9
+contentHash=be95fb5d67a0c4a63a89d092ac898cbe52029c9d33ed5162a306225a07006728
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u20-direction-native-library-ru`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0391a4e953f773c78efb494b4f5d26e589d93084b367da92010537bc75a19f13
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=motion-native-context:===  Verbs of motion ===
+Verbs of motion are a distinct class of verbs found 
+originalSourceText====  Verbs of motion ===
+Verbs of motion are a distinct class of verbs found in several Slavic languages. Due to the extensive semantic information they contain, Russian verbs of motion pose difficulties for non-native learners at all levels of study.<ref name="Gor">{{cite journal|author=Gor, K., Cook, S., Malyushenkova, V., & Vdovina, T|title=Verbs of Motion in Highly Proficient Learners and Heritage Speakers of Russian|journal=The Slavic and East European Journal|year=2009|volume=53|issue=3|pages=386–408|jstor=40651163}}</ref> Unprefixed verbs of motion, which are all imperfective, divide into pairs based on the direction of the movement (uni- or multidirectional — sometimes referred to as determinate/indeterminate or definite/indefinite). As opposed to a verb-framed language, in which path is encoded in the verb, but manner of motion typically is expressed with complements, Russian is a ''satellite'' language, meaning that these concepts are encoded in both the root of the verb and the particles associated with it, satellites.<ref name="Talmy">{{cite book|last=Talmy|first=Leonard|title=Language Typology and Syntactic Description, vol. 3|date=1985|publisher=Cambridge University Press|location=Cambridge|pages=57–149|editor=Timothy Shopen|chapter=Lexicalization Patterns: Semantic Structure in Lexical Forms}}</ref> Thus, the roots of motion verbs convey the lexical information of manner of movement, e.g. walking, crawling, running, whereas prefixes denote path, e.g. motion in and out of space.<ref name="Nesset">{{cite journal|last=Nesset|first=Tore|title=Path and Manner: An Image-Schematic Approach to Russian Verbs of Motion|journal=Scando-Slavica|date=2008|volume=54|issue=1|pages=135–158|doi=10.1080/00806760802494232|s2cid=123427088}}</ref><ref group=note>Nesset (2008) applied Leonard Talmy's (1985, 2000) terms "manner" and "path" to her image schema for Russian verbs of motion.</ref> The roots also distinguish between means of conveyance, e.g. by transport or by one's own power, and in transitive verbs, the object or person being transported.<ref name="Muravyova">{{cite book|last=Muravyova|first=L|title=Verbs of Motion in Russian / Glagoly dviženija v russkom jazyke|date=1986|publisher=Russkij jazyk|location=Moscow|edition=5|editor=V. Korotky|pages=211–212, 218–225}}</ref> The information below provides an outline of the formation and basic usage of unprefixed and prefixed verbs of motion.
+
+==== Unprefixed  ====
+
+{| class="wikitable" style="vertical-align: top;"
+|+Pairs of Russian verbs of motion, adapted from Muravyova<ref name="Muravyova" /><ref group="note">Researchers have also included the reflexive verbs катиться/кататься, гнаться/гоняться, нестись/носиться, and тащиться/таскаться (Gagarina 2009: 451–452).</ref>
+! English !! unidirectional !! multidirectional
+|- style="vertical-align: top;"
+| to run || бежа́ть || бе́гать
+|- style="vertical-align: top;"
+| to wander || брести́ || броди́ть
+|- style="vertical-align: top;"
+| to convey, transport || везти́ || вози́ть
+|- style="vertical-align: top;"
+| to lead || вести́ || води́ть
+|- style="vertical-align: top;"
+| to drive, chase || гна́ть || гоня́ть
+|- style="vertical-align: top;"
+| to go by vehicle, ride || е́хать || е́здить
+|- style="vertical-align: top;"
+| to go, walk || идти́ || ходи́ть
+|- style="vertical-align: top;"
+| to roll || кати́ть || ката́ть
+|- style="vertical-align: top;"
+| to climb || ле́зть || ла́зить (ла́зать)
+|- style="vertical-align: top;"
+| to fly || лете́ть || лета́ть
+|- style="vertical-align: top;"
+| to carry || нести́ || носи́ть
+|- style="vertical-align: top;"
+| to swim, float || плы́ть || пла́вать
+|- style="vertical-align: top;"
+| to crawl || ползти́ || по́лзать
+|- style="vertical-align: top;"
+| to drag || тащи́ть || таска́ть
+|}
+
+==== Directionality ====
+Unidirectional verbs describe motion in progress in one direction, e.g.:
+* We are headed to the library.<br />Мы идём в библиотеку.
+* I was on my way to work.<br />Я шла на работу.
+* The birds are flying south.<br />Птицы летят на юг.
+Multidirectional verbs describe:
+# General motion, referring to ability or habitual motion, without reference to direction or destination, e.g.:
+#* The child has been walking for six months.<br />Ребёнок ходит шесть месяцев.
+#* Birds fly, fish swim, and dogs walk.<br />Птицы летают, рыбы плавают, а собаки ходят.
+# Movement in various directions, e.g.:
+#* We walked around the city all day.<br />Мы ходили по городу весь день.
+# Repetition of completed trips, e.g.:
+#* She goes to the supermarket every week.<br />Она ходит в супермаркет каждую неделю.
+# In the past tense, a single completed round trip, e.g.:
+#* I went to Russia (and returned) last year.<br />В прошлом году я ездил в Россию.
+shippedText=Мы идём в библиотеку.
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=144527c7aff47147bbe8d5f4176e26d67bd5324a92439e1012965a6974f546b9
+contentHash=86386aec41e0cadb90989f259df2b6ed6f9786b98d831ad30e3f7e24bdca7ae2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u20-direction-native-round-en`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 21e1e76d16329fdd027f2d489d606687b82a437ab4e202037ef7cdb5c376f54c
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=motion-native-context:===  Verbs of motion ===
+Verbs of motion are a distinct class of verbs found 
+originalSourceText====  Verbs of motion ===
+Verbs of motion are a distinct class of verbs found in several Slavic languages. Due to the extensive semantic information they contain, Russian verbs of motion pose difficulties for non-native learners at all levels of study.<ref name="Gor">{{cite journal|author=Gor, K., Cook, S., Malyushenkova, V., & Vdovina, T|title=Verbs of Motion in Highly Proficient Learners and Heritage Speakers of Russian|journal=The Slavic and East European Journal|year=2009|volume=53|issue=3|pages=386–408|jstor=40651163}}</ref> Unprefixed verbs of motion, which are all imperfective, divide into pairs based on the direction of the movement (uni- or multidirectional — sometimes referred to as determinate/indeterminate or definite/indefinite). As opposed to a verb-framed language, in which path is encoded in the verb, but manner of motion typically is expressed with complements, Russian is a ''satellite'' language, meaning that these concepts are encoded in both the root of the verb and the particles associated with it, satellites.<ref name="Talmy">{{cite book|last=Talmy|first=Leonard|title=Language Typology and Syntactic Description, vol. 3|date=1985|publisher=Cambridge University Press|location=Cambridge|pages=57–149|editor=Timothy Shopen|chapter=Lexicalization Patterns: Semantic Structure in Lexical Forms}}</ref> Thus, the roots of motion verbs convey the lexical information of manner of movement, e.g. walking, crawling, running, whereas prefixes denote path, e.g. motion in and out of space.<ref name="Nesset">{{cite journal|last=Nesset|first=Tore|title=Path and Manner: An Image-Schematic Approach to Russian Verbs of Motion|journal=Scando-Slavica|date=2008|volume=54|issue=1|pages=135–158|doi=10.1080/00806760802494232|s2cid=123427088}}</ref><ref group=note>Nesset (2008) applied Leonard Talmy's (1985, 2000) terms "manner" and "path" to her image schema for Russian verbs of motion.</ref> The roots also distinguish between means of conveyance, e.g. by transport or by one's own power, and in transitive verbs, the object or person being transported.<ref name="Muravyova">{{cite book|last=Muravyova|first=L|title=Verbs of Motion in Russian / Glagoly dviženija v russkom jazyke|date=1986|publisher=Russkij jazyk|location=Moscow|edition=5|editor=V. Korotky|pages=211–212, 218–225}}</ref> The information below provides an outline of the formation and basic usage of unprefixed and prefixed verbs of motion.
+
+==== Unprefixed  ====
+
+{| class="wikitable" style="vertical-align: top;"
+|+Pairs of Russian verbs of motion, adapted from Muravyova<ref name="Muravyova" /><ref group="note">Researchers have also included the reflexive verbs катиться/кататься, гнаться/гоняться, нестись/носиться, and тащиться/таскаться (Gagarina 2009: 451–452).</ref>
+! English !! unidirectional !! multidirectional
+|- style="vertical-align: top;"
+| to run || бежа́ть || бе́гать
+|- style="vertical-align: top;"
+| to wander || брести́ || броди́ть
+|- style="vertical-align: top;"
+| to convey, transport || везти́ || вози́ть
+|- style="vertical-align: top;"
+| to lead || вести́ || води́ть
+|- style="vertical-align: top;"
+| to drive, chase || гна́ть || гоня́ть
+|- style="vertical-align: top;"
+| to go by vehicle, ride || е́хать || е́здить
+|- style="vertical-align: top;"
+| to go, walk || идти́ || ходи́ть
+|- style="vertical-align: top;"
+| to roll || кати́ть || ката́ть
+|- style="vertical-align: top;"
+| to climb || ле́зть || ла́зить (ла́зать)
+|- style="vertical-align: top;"
+| to fly || лете́ть || лета́ть
+|- style="vertical-align: top;"
+| to carry || нести́ || носи́ть
+|- style="vertical-align: top;"
+| to swim, float || плы́ть || пла́вать
+|- style="vertical-align: top;"
+| to crawl || ползти́ || по́лзать
+|- style="vertical-align: top;"
+| to drag || тащи́ть || таска́ть
+|}
+
+==== Directionality ====
+Unidirectional verbs describe motion in progress in one direction, e.g.:
+* We are headed to the library.<br />Мы идём в библиотеку.
+* I was on my way to work.<br />Я шла на работу.
+* The birds are flying south.<br />Птицы летят на юг.
+Multidirectional verbs describe:
+# General motion, referring to ability or habitual motion, without reference to direction or destination, e.g.:
+#* The child has been walking for six months.<br />Ребёнок ходит шесть месяцев.
+#* Birds fly, fish swim, and dogs walk.<br />Птицы летают, рыбы плавают, а собаки ходят.
+# Movement in various directions, e.g.:
+#* We walked around the city all day.<br />Мы ходили по городу весь день.
+# Repetition of completed trips, e.g.:
+#* She goes to the supermarket every week.<br />Она ходит в супермаркет каждую неделю.
+# In the past tense, a single completed round trip, e.g.:
+#* I went to Russia (and returned) last year.<br />В прошлом году я ездил в Россию.
+shippedText=I went to Russia (and returned) last year.
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=144527c7aff47147bbe8d5f4176e26d67bd5324a92439e1012965a6974f546b9
+contentHash=db92cdd20802d725ab696873ca39b5296dedf001c90372b168cbdb4a58f910e1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u20-direction-native-round-ru`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 749047da41e8491ea0813f54b9dd972be2cc6e9d51bee65418883b523450f950
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=motion-native-context:===  Verbs of motion ===
+Verbs of motion are a distinct class of verbs found 
+originalSourceText====  Verbs of motion ===
+Verbs of motion are a distinct class of verbs found in several Slavic languages. Due to the extensive semantic information they contain, Russian verbs of motion pose difficulties for non-native learners at all levels of study.<ref name="Gor">{{cite journal|author=Gor, K., Cook, S., Malyushenkova, V., & Vdovina, T|title=Verbs of Motion in Highly Proficient Learners and Heritage Speakers of Russian|journal=The Slavic and East European Journal|year=2009|volume=53|issue=3|pages=386–408|jstor=40651163}}</ref> Unprefixed verbs of motion, which are all imperfective, divide into pairs based on the direction of the movement (uni- or multidirectional — sometimes referred to as determinate/indeterminate or definite/indefinite). As opposed to a verb-framed language, in which path is encoded in the verb, but manner of motion typically is expressed with complements, Russian is a ''satellite'' language, meaning that these concepts are encoded in both the root of the verb and the particles associated with it, satellites.<ref name="Talmy">{{cite book|last=Talmy|first=Leonard|title=Language Typology and Syntactic Description, vol. 3|date=1985|publisher=Cambridge University Press|location=Cambridge|pages=57–149|editor=Timothy Shopen|chapter=Lexicalization Patterns: Semantic Structure in Lexical Forms}}</ref> Thus, the roots of motion verbs convey the lexical information of manner of movement, e.g. walking, crawling, running, whereas prefixes denote path, e.g. motion in and out of space.<ref name="Nesset">{{cite journal|last=Nesset|first=Tore|title=Path and Manner: An Image-Schematic Approach to Russian Verbs of Motion|journal=Scando-Slavica|date=2008|volume=54|issue=1|pages=135–158|doi=10.1080/00806760802494232|s2cid=123427088}}</ref><ref group=note>Nesset (2008) applied Leonard Talmy's (1985, 2000) terms "manner" and "path" to her image schema for Russian verbs of motion.</ref> The roots also distinguish between means of conveyance, e.g. by transport or by one's own power, and in transitive verbs, the object or person being transported.<ref name="Muravyova">{{cite book|last=Muravyova|first=L|title=Verbs of Motion in Russian / Glagoly dviženija v russkom jazyke|date=1986|publisher=Russkij jazyk|location=Moscow|edition=5|editor=V. Korotky|pages=211–212, 218–225}}</ref> The information below provides an outline of the formation and basic usage of unprefixed and prefixed verbs of motion.
+
+==== Unprefixed  ====
+
+{| class="wikitable" style="vertical-align: top;"
+|+Pairs of Russian verbs of motion, adapted from Muravyova<ref name="Muravyova" /><ref group="note">Researchers have also included the reflexive verbs катиться/кататься, гнаться/гоняться, нестись/носиться, and тащиться/таскаться (Gagarina 2009: 451–452).</ref>
+! English !! unidirectional !! multidirectional
+|- style="vertical-align: top;"
+| to run || бежа́ть || бе́гать
+|- style="vertical-align: top;"
+| to wander || брести́ || броди́ть
+|- style="vertical-align: top;"
+| to convey, transport || везти́ || вози́ть
+|- style="vertical-align: top;"
+| to lead || вести́ || води́ть
+|- style="vertical-align: top;"
+| to drive, chase || гна́ть || гоня́ть
+|- style="vertical-align: top;"
+| to go by vehicle, ride || е́хать || е́здить
+|- style="vertical-align: top;"
+| to go, walk || идти́ || ходи́ть
+|- style="vertical-align: top;"
+| to roll || кати́ть || ката́ть
+|- style="vertical-align: top;"
+| to climb || ле́зть || ла́зить (ла́зать)
+|- style="vertical-align: top;"
+| to fly || лете́ть || лета́ть
+|- style="vertical-align: top;"
+| to carry || нести́ || носи́ть
+|- style="vertical-align: top;"
+| to swim, float || плы́ть || пла́вать
+|- style="vertical-align: top;"
+| to crawl || ползти́ || по́лзать
+|- style="vertical-align: top;"
+| to drag || тащи́ть || таска́ть
+|}
+
+==== Directionality ====
+Unidirectional verbs describe motion in progress in one direction, e.g.:
+* We are headed to the library.<br />Мы идём в библиотеку.
+* I was on my way to work.<br />Я шла на работу.
+* The birds are flying south.<br />Птицы летят на юг.
+Multidirectional verbs describe:
+# General motion, referring to ability or habitual motion, without reference to direction or destination, e.g.:
+#* The child has been walking for six months.<br />Ребёнок ходит шесть месяцев.
+#* Birds fly, fish swim, and dogs walk.<br />Птицы летают, рыбы плавают, а собаки ходят.
+# Movement in various directions, e.g.:
+#* We walked around the city all day.<br />Мы ходили по городу весь день.
+# Repetition of completed trips, e.g.:
+#* She goes to the supermarket every week.<br />Она ходит в супермаркет каждую неделю.
+# In the past tense, a single completed round trip, e.g.:
+#* I went to Russia (and returned) last year.<br />В прошлом году я ездил в Россию.
+shippedText=В прошлом году я ездил в Россию.
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=144527c7aff47147bbe8d5f4176e26d67bd5324a92439e1012965a6974f546b9
+contentHash=0934b9a753be4165a3e1669c0f2735e8562fa10b4212da795f151b24559d6078
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u20-direction-native-weekly-en`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1280b74c119b20eccf4d1c2513c1c49680fafaaf4260db578769caa89bf95a25
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=motion-native-context:===  Verbs of motion ===
+Verbs of motion are a distinct class of verbs found 
+originalSourceText====  Verbs of motion ===
+Verbs of motion are a distinct class of verbs found in several Slavic languages. Due to the extensive semantic information they contain, Russian verbs of motion pose difficulties for non-native learners at all levels of study.<ref name="Gor">{{cite journal|author=Gor, K., Cook, S., Malyushenkova, V., & Vdovina, T|title=Verbs of Motion in Highly Proficient Learners and Heritage Speakers of Russian|journal=The Slavic and East European Journal|year=2009|volume=53|issue=3|pages=386–408|jstor=40651163}}</ref> Unprefixed verbs of motion, which are all imperfective, divide into pairs based on the direction of the movement (uni- or multidirectional — sometimes referred to as determinate/indeterminate or definite/indefinite). As opposed to a verb-framed language, in which path is encoded in the verb, but manner of motion typically is expressed with complements, Russian is a ''satellite'' language, meaning that these concepts are encoded in both the root of the verb and the particles associated with it, satellites.<ref name="Talmy">{{cite book|last=Talmy|first=Leonard|title=Language Typology and Syntactic Description, vol. 3|date=1985|publisher=Cambridge University Press|location=Cambridge|pages=57–149|editor=Timothy Shopen|chapter=Lexicalization Patterns: Semantic Structure in Lexical Forms}}</ref> Thus, the roots of motion verbs convey the lexical information of manner of movement, e.g. walking, crawling, running, whereas prefixes denote path, e.g. motion in and out of space.<ref name="Nesset">{{cite journal|last=Nesset|first=Tore|title=Path and Manner: An Image-Schematic Approach to Russian Verbs of Motion|journal=Scando-Slavica|date=2008|volume=54|issue=1|pages=135–158|doi=10.1080/00806760802494232|s2cid=123427088}}</ref><ref group=note>Nesset (2008) applied Leonard Talmy's (1985, 2000) terms "manner" and "path" to her image schema for Russian verbs of motion.</ref> The roots also distinguish between means of conveyance, e.g. by transport or by one's own power, and in transitive verbs, the object or person being transported.<ref name="Muravyova">{{cite book|last=Muravyova|first=L|title=Verbs of Motion in Russian / Glagoly dviženija v russkom jazyke|date=1986|publisher=Russkij jazyk|location=Moscow|edition=5|editor=V. Korotky|pages=211–212, 218–225}}</ref> The information below provides an outline of the formation and basic usage of unprefixed and prefixed verbs of motion.
+
+==== Unprefixed  ====
+
+{| class="wikitable" style="vertical-align: top;"
+|+Pairs of Russian verbs of motion, adapted from Muravyova<ref name="Muravyova" /><ref group="note">Researchers have also included the reflexive verbs катиться/кататься, гнаться/гоняться, нестись/носиться, and тащиться/таскаться (Gagarina 2009: 451–452).</ref>
+! English !! unidirectional !! multidirectional
+|- style="vertical-align: top;"
+| to run || бежа́ть || бе́гать
+|- style="vertical-align: top;"
+| to wander || брести́ || броди́ть
+|- style="vertical-align: top;"
+| to convey, transport || везти́ || вози́ть
+|- style="vertical-align: top;"
+| to lead || вести́ || води́ть
+|- style="vertical-align: top;"
+| to drive, chase || гна́ть || гоня́ть
+|- style="vertical-align: top;"
+| to go by vehicle, ride || е́хать || е́здить
+|- style="vertical-align: top;"
+| to go, walk || идти́ || ходи́ть
+|- style="vertical-align: top;"
+| to roll || кати́ть || ката́ть
+|- style="vertical-align: top;"
+| to climb || ле́зть || ла́зить (ла́зать)
+|- style="vertical-align: top;"
+| to fly || лете́ть || лета́ть
+|- style="vertical-align: top;"
+| to carry || нести́ || носи́ть
+|- style="vertical-align: top;"
+| to swim, float || плы́ть || пла́вать
+|- style="vertical-align: top;"
+| to crawl || ползти́ || по́лзать
+|- style="vertical-align: top;"
+| to drag || тащи́ть || таска́ть
+|}
+
+==== Directionality ====
+Unidirectional verbs describe motion in progress in one direction, e.g.:
+* We are headed to the library.<br />Мы идём в библиотеку.
+* I was on my way to work.<br />Я шла на работу.
+* The birds are flying south.<br />Птицы летят на юг.
+Multidirectional verbs describe:
+# General motion, referring to ability or habitual motion, without reference to direction or destination, e.g.:
+#* The child has been walking for six months.<br />Ребёнок ходит шесть месяцев.
+#* Birds fly, fish swim, and dogs walk.<br />Птицы летают, рыбы плавают, а собаки ходят.
+# Movement in various directions, e.g.:
+#* We walked around the city all day.<br />Мы ходили по городу весь день.
+# Repetition of completed trips, e.g.:
+#* She goes to the supermarket every week.<br />Она ходит в супермаркет каждую неделю.
+# In the past tense, a single completed round trip, e.g.:
+#* I went to Russia (and returned) last year.<br />В прошлом году я ездил в Россию.
+shippedText=She goes to the supermarket every week.
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=144527c7aff47147bbe8d5f4176e26d67bd5324a92439e1012965a6974f546b9
+contentHash=24f6b8f23ff0cc35fd080e3d35d103854b68b7585ec83ea44dedf21d56f95fba
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u20-direction-native-weekly-ru`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c6c1e27a10e475f1d8b0082c7c3daded8264be6886339414e00608d155b8ffbb
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=motion-native-context:===  Verbs of motion ===
+Verbs of motion are a distinct class of verbs found 
+originalSourceText====  Verbs of motion ===
+Verbs of motion are a distinct class of verbs found in several Slavic languages. Due to the extensive semantic information they contain, Russian verbs of motion pose difficulties for non-native learners at all levels of study.<ref name="Gor">{{cite journal|author=Gor, K., Cook, S., Malyushenkova, V., & Vdovina, T|title=Verbs of Motion in Highly Proficient Learners and Heritage Speakers of Russian|journal=The Slavic and East European Journal|year=2009|volume=53|issue=3|pages=386–408|jstor=40651163}}</ref> Unprefixed verbs of motion, which are all imperfective, divide into pairs based on the direction of the movement (uni- or multidirectional — sometimes referred to as determinate/indeterminate or definite/indefinite). As opposed to a verb-framed language, in which path is encoded in the verb, but manner of motion typically is expressed with complements, Russian is a ''satellite'' language, meaning that these concepts are encoded in both the root of the verb and the particles associated with it, satellites.<ref name="Talmy">{{cite book|last=Talmy|first=Leonard|title=Language Typology and Syntactic Description, vol. 3|date=1985|publisher=Cambridge University Press|location=Cambridge|pages=57–149|editor=Timothy Shopen|chapter=Lexicalization Patterns: Semantic Structure in Lexical Forms}}</ref> Thus, the roots of motion verbs convey the lexical information of manner of movement, e.g. walking, crawling, running, whereas prefixes denote path, e.g. motion in and out of space.<ref name="Nesset">{{cite journal|last=Nesset|first=Tore|title=Path and Manner: An Image-Schematic Approach to Russian Verbs of Motion|journal=Scando-Slavica|date=2008|volume=54|issue=1|pages=135–158|doi=10.1080/00806760802494232|s2cid=123427088}}</ref><ref group=note>Nesset (2008) applied Leonard Talmy's (1985, 2000) terms "manner" and "path" to her image schema for Russian verbs of motion.</ref> The roots also distinguish between means of conveyance, e.g. by transport or by one's own power, and in transitive verbs, the object or person being transported.<ref name="Muravyova">{{cite book|last=Muravyova|first=L|title=Verbs of Motion in Russian / Glagoly dviženija v russkom jazyke|date=1986|publisher=Russkij jazyk|location=Moscow|edition=5|editor=V. Korotky|pages=211–212, 218–225}}</ref> The information below provides an outline of the formation and basic usage of unprefixed and prefixed verbs of motion.
+
+==== Unprefixed  ====
+
+{| class="wikitable" style="vertical-align: top;"
+|+Pairs of Russian verbs of motion, adapted from Muravyova<ref name="Muravyova" /><ref group="note">Researchers have also included the reflexive verbs катиться/кататься, гнаться/гоняться, нестись/носиться, and тащиться/таскаться (Gagarina 2009: 451–452).</ref>
+! English !! unidirectional !! multidirectional
+|- style="vertical-align: top;"
+| to run || бежа́ть || бе́гать
+|- style="vertical-align: top;"
+| to wander || брести́ || броди́ть
+|- style="vertical-align: top;"
+| to convey, transport || везти́ || вози́ть
+|- style="vertical-align: top;"
+| to lead || вести́ || води́ть
+|- style="vertical-align: top;"
+| to drive, chase || гна́ть || гоня́ть
+|- style="vertical-align: top;"
+| to go by vehicle, ride || е́хать || е́здить
+|- style="vertical-align: top;"
+| to go, walk || идти́ || ходи́ть
+|- style="vertical-align: top;"
+| to roll || кати́ть || ката́ть
+|- style="vertical-align: top;"
+| to climb || ле́зть || ла́зить (ла́зать)
+|- style="vertical-align: top;"
+| to fly || лете́ть || лета́ть
+|- style="vertical-align: top;"
+| to carry || нести́ || носи́ть
+|- style="vertical-align: top;"
+| to swim, float || плы́ть || пла́вать
+|- style="vertical-align: top;"
+| to crawl || ползти́ || по́лзать
+|- style="vertical-align: top;"
+| to drag || тащи́ть || таска́ть
+|}
+
+==== Directionality ====
+Unidirectional verbs describe motion in progress in one direction, e.g.:
+* We are headed to the library.<br />Мы идём в библиотеку.
+* I was on my way to work.<br />Я шла на работу.
+* The birds are flying south.<br />Птицы летят на юг.
+Multidirectional verbs describe:
+# General motion, referring to ability or habitual motion, without reference to direction or destination, e.g.:
+#* The child has been walking for six months.<br />Ребёнок ходит шесть месяцев.
+#* Birds fly, fish swim, and dogs walk.<br />Птицы летают, рыбы плавают, а собаки ходят.
+# Movement in various directions, e.g.:
+#* We walked around the city all day.<br />Мы ходили по городу весь день.
+# Repetition of completed trips, e.g.:
+#* She goes to the supermarket every week.<br />Она ходит в супермаркет каждую неделю.
+# In the past tense, a single completed round trip, e.g.:
+#* I went to Russia (and returned) last year.<br />В прошлом году я ездил в Россию.
+shippedText=Она ходит в супермаркет каждую неделю.
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=144527c7aff47147bbe8d5f4176e26d67bd5324a92439e1012965a6974f546b9
+contentHash=2584be6ddba6175a76f93507fb50d724bc0c9a5722fa1ab41e9cbd74421580dd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u20-direction-rebind-prov-ca-repair-20-10954`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6b9dfe9ca04601e090af387b3448de897c883400bde65596cb14e8170fc4633f
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-po-setting-out
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
+Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
+
+Мы идём в библиотеку. — We are headed to the library. Птицы летят на юг. — The birds are flying south. These supplied contexts show Motion in progress in one direction (imperfective). Ребёнок ходит шесть месяцев. — The child has been walking for six months. This is General walking ability (imperfective). Мы ходили по городу весь день. — We walked around the city all day. This is Movement in various directions (imperfective). Directionality is a property of the whole supplied use, not an English lexical gloss or an automatic claim that the traveller arrived. The basic unprefixed pairs are imperfective.
+
+Она ходит в супермаркет каждую неделю. — She goes to the supermarket every week. This is Repeated trips (imperfective). В прошлом году я ездил в Россию. — I went to Russia (and returned) last year. In the retained supplied context this is One completed round trip in the past (imperfective). The past round-trip interpretation includes a return; the unprefixed form nevertheless remains imperfective. A choice saying “The form is perfective because this trip is completed.” makes an incorrect aspect inference for these forms. Do not equate a destination with unidirectionality or event completion with perfective aspect. Prefixed setting-out and path examples require their separately taught meanings.
+shippedText=Он пошёл к другу.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=543855e3604c8812cbc0bc2b2a22361f3165472708bc771019db79a534c5aedc
+contentHash=3d8c9926bcea41b886766d3d461ca670ef2c69c0eed6623748d6db87ec664634
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u20-direction-rebind-prov-ca-repair-20-10962`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d281a20ed70768baeb99e0dc265d66c8d5cd4938609bb204b56194da5bb8b0a5
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-po-setting-out
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
+Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
+
+Мы идём в библиотеку. — We are headed to the library. Птицы летят на юг. — The birds are flying south. These supplied contexts show Motion in progress in one direction (imperfective). Ребёнок ходит шесть месяцев. — The child has been walking for six months. This is General walking ability (imperfective). Мы ходили по городу весь день. — We walked around the city all day. This is Movement in various directions (imperfective). Directionality is a property of the whole supplied use, not an English lexical gloss or an automatic claim that the traveller arrived. The basic unprefixed pairs are imperfective.
+
+Она ходит в супермаркет каждую неделю. — She goes to the supermarket every week. This is Repeated trips (imperfective). В прошлом году я ездил в Россию. — I went to Russia (and returned) last year. In the retained supplied context this is One completed round trip in the past (imperfective). The past round-trip interpretation includes a return; the unprefixed form nevertheless remains imperfective. A choice saying “The form is perfective because this trip is completed.” makes an incorrect aspect inference for these forms. Do not equate a destination with unidirectionality or event completion with perfective aspect. Prefixed setting-out and path examples require their separately taught meanings.
+shippedText=he set off toward a friend
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=543855e3604c8812cbc0bc2b2a22361f3165472708bc771019db79a534c5aedc
+contentHash=2523daeda7b21354c504ea74998053c3b9c2fd32c44465ec0ac4b687aba4bf20
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u20-direction-rebind-prov-ca-repair-20-10965`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 32332fbe62f81d65a5564572307a831cb5ed169198f4b4cb07b8a3e978d4aff9
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-po-setting-out
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
+Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
+
+Мы идём в библиотеку. — We are headed to the library. Птицы летят на юг. — The birds are flying south. These supplied contexts show Motion in progress in one direction (imperfective). Ребёнок ходит шесть месяцев. — The child has been walking for six months. This is General walking ability (imperfective). Мы ходили по городу весь день. — We walked around the city all day. This is Movement in various directions (imperfective). Directionality is a property of the whole supplied use, not an English lexical gloss or an automatic claim that the traveller arrived. The basic unprefixed pairs are imperfective.
+
+Она ходит в супермаркет каждую неделю. — She goes to the supermarket every week. This is Repeated trips (imperfective). В прошлом году я ездил в Россию. — I went to Russia (and returned) last year. In the retained supplied context this is One completed round trip in the past (imperfective). The past round-trip interpretation includes a return; the unprefixed form nevertheless remains imperfective. A choice saying “The form is perfective because this trip is completed.” makes an incorrect aspect inference for these forms. Do not equate a destination with unidirectionality or event completion with perfective aspect. Prefixed setting-out and path examples require their separately taught meanings.
+shippedText=he was already on the way for a long time
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=543855e3604c8812cbc0bc2b2a22361f3165472708bc771019db79a534c5aedc
+contentHash=5cd963b28ff24aff8dfde426fce5ea20888c7bbc95d6f8ff21fb857f31254d83
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u20-direction-rebind-prov-ca-repair-20-10966`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 398a46e3c1de3f01a8c417293c080ee6ffe451d526334c87406afb442b0c054a
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-po-setting-out
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+he set off toward a friend
+Which reading matches the perfective setting-out verb?
+Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.
+he was already on the way for a long time
+he refused to go
+he was already on the way for a long time is an imperfective duration reading.
+he refused to go contradicts the motion verb.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
+Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
+
+Мы идём в библиотеку. — We are headed to the library. Птицы летят на юг. — The birds are flying south. These supplied contexts show Motion in progress in one direction (imperfective). Ребёнок ходит шесть месяцев. — The child has been walking for six months. This is General walking ability (imperfective). Мы ходили по городу весь день. — We walked around the city all day. This is Movement in various directions (imperfective). Directionality is a property of the whole supplied use, not an English lexical gloss or an automatic claim that the traveller arrived. The basic unprefixed pairs are imperfective.
+
+Она ходит в супермаркет каждую неделю. — She goes to the supermarket every week. This is Repeated trips (imperfective). В прошлом году я ездил в Россию. — I went to Russia (and returned) last year. In the retained supplied context this is One completed round trip in the past (imperfective). The past round-trip interpretation includes a return; the unprefixed form nevertheless remains imperfective. A choice saying “The form is perfective because this trip is completed.” makes an incorrect aspect inference for these forms. Do not equate a destination with unidirectionality or event completion with perfective aspect. Prefixed setting-out and path examples require their separately taught meanings.
+shippedText=he refused to go
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=543855e3604c8812cbc0bc2b2a22361f3165472708bc771019db79a534c5aedc
+contentHash=8912d8f39dc28a27ebb14fca6db5e8c99ad7ba80b5c72f4acc45a0dc9a9784df
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u20-direction-rebind-prov-ca-repair-20-10988`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 42c93447f5519018efb6f5d144761fb7755501642cc0793ca2b8fbf986942bcf
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-prefixed-path
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
+Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
+
+Мы идём в библиотеку. — We are headed to the library. Птицы летят на юг. — The birds are flying south. These supplied contexts show Motion in progress in one direction (imperfective). Ребёнок ходит шесть месяцев. — The child has been walking for six months. This is General walking ability (imperfective). Мы ходили по городу весь день. — We walked around the city all day. This is Movement in various directions (imperfective). Directionality is a property of the whole supplied use, not an English lexical gloss or an automatic claim that the traveller arrived. The basic unprefixed pairs are imperfective.
+
+Она ходит в супермаркет каждую неделю. — She goes to the supermarket every week. This is Repeated trips (imperfective). В прошлом году я ездил в Россию. — I went to Russia (and returned) last year. In the retained supplied context this is One completed round trip in the past (imperfective). The past round-trip interpretation includes a return; the unprefixed form nevertheless remains imperfective. A choice saying “The form is perfective because this trip is completed.” makes an incorrect aspect inference for these forms. Do not equate a destination with unidirectionality or event completion with perfective aspect. Prefixed setting-out and path examples require their separately taught meanings.
+shippedText=They will leave Vladivostok in a month.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ee7cfc22128ea694fcc77ec8da9d348ee9d1f2e72b50e69bea8754ca4970f753
+contentHash=902393f173486c8c2bf8490eda077f8877517965404f86ca76e22b0fbac7b224
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u20-direction-rebind-prov-ca-repair-20-10990`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 785e2bf37889fdf242657620d96de3bddbbb3586464dc0f1579ecd8c3a41fe39
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-prefixed-path
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
+Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
+
+Мы идём в библиотеку. — We are headed to the library. Птицы летят на юг. — The birds are flying south. These supplied contexts show Motion in progress in one direction (imperfective). Ребёнок ходит шесть месяцев. — The child has been walking for six months. This is General walking ability (imperfective). Мы ходили по городу весь день. — We walked around the city all day. This is Movement in various directions (imperfective). Directionality is a property of the whole supplied use, not an English lexical gloss or an automatic claim that the traveller arrived. The basic unprefixed pairs are imperfective.
+
+Она ходит в супермаркет каждую неделю. — She goes to the supermarket every week. This is Repeated trips (imperfective). В прошлом году я ездил в Россию. — I went to Russia (and returned) last year. In the retained supplied context this is One completed round trip in the past (imperfective). The past round-trip interpretation includes a return; the unprefixed form nevertheless remains imperfective. A choice saying “The form is perfective because this trip is completed.” makes an incorrect aspect inference for these forms. Do not equate a destination with unidirectionality or event completion with perfective aspect. Prefixed setting-out and path examples require their separately taught meanings.
+shippedText=The ball flew onto the roof of the house.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ee7cfc22128ea694fcc77ec8da9d348ee9d1f2e72b50e69bea8754ca4970f753
+contentHash=400e1a15c98b8cc064cd05ed030ebd4bfe47a8ecd2605b9bb1543c38e2f0a9a3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u20-direction-rebind-prov-ca-repair-20-10991`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f70811a37cf0aa3b337bce1ab5709a7977ae621ae798843baf5aac332acfa70a
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-prefixed-path
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
+Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
+
+Мы идём в библиотеку. — We are headed to the library. Птицы летят на юг. — The birds are flying south. These supplied contexts show Motion in progress in one direction (imperfective). Ребёнок ходит шесть месяцев. — The child has been walking for six months. This is General walking ability (imperfective). Мы ходили по городу весь день. — We walked around the city all day. This is Movement in various directions (imperfective). Directionality is a property of the whole supplied use, not an English lexical gloss or an automatic claim that the traveller arrived. The basic unprefixed pairs are imperfective.
+
+Она ходит в супермаркет каждую неделю. — She goes to the supermarket every week. This is Repeated trips (imperfective). В прошлом году я ездил в Россию. — I went to Russia (and returned) last year. In the retained supplied context this is One completed round trip in the past (imperfective). The past round-trip interpretation includes a return; the unprefixed form nevertheless remains imperfective. A choice saying “The form is perfective because this trip is completed.” makes an incorrect aspect inference for these forms. Do not equate a destination with unidirectionality or event completion with perfective aspect. Prefixed setting-out and path examples require their separately taught meanings.
+shippedText=Мальчик отошёл от незнакомца
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ee7cfc22128ea694fcc77ec8da9d348ee9d1f2e72b50e69bea8754ca4970f753
+contentHash=f643975be1f829d00f32b576b65f8c2bd8b7a29cad1079df8e62530c9d686386
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u20-direction-rebind-prov-ca-repair-20-10992`
+
+- Objectives: obj-u20-motion
+- Sessions: u20-s-orient, u20-s-motion
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2b046d52b8027b07c0040814083a9eb6f95a7f2d3266762d437098aad5b501ed
+
+recordType=original-synthesis
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-corrected-capability:cap-u20-motion-prefixed-path
+originalSourceText=Pending corrected research applications. No linguistic or owner approval is recorded.
+References: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.
+https://gramota.ru/poisk?query=быстрый&mode=slovari
+https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie
+Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. 
+unidirectional
+нести́ — to carry. вести́ — to lead. 
+Он пошёл к другу. — beginning of a movement. Он шёл к другу. — He went to a friend's place. 
+Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. 
+идти́
+to go, walk
+е́хать
+to go by vehicle, ride
+нести́
+to carry
+вести́
+to lead
+Он пошёл к другу.
+beginning of a movement
+Он шёл к другу.
+He went to a friend's place
+Они у́летят из Владивостока через месяц.
+They will leave Vladivostok in a month.
+Мяч залетел на крышу дома.
+The ball flew onto the roof of the house.
+Мальчик отошёл от незнакомца
+The boy stepped back from the stranger.
+Which translation covers only the shown sentence?
+Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.
+They will leave Vladivostok in a month. is a different motion sentence.
+The ball flew onto the roof of the house. is a different motion sentence.\nRetained Wikibooks Russian aspect paragraph explicitly pairs отговаривать with отговорить; Gramota https://gramota.ru/meta/otgovorit and /meta/otgovarivat corroborate the pair. Retained Wikipedia motion table and examples, and Wiktionary dolzhen revision84965088. Cornell Beginning Russian Grammar https://russian.cornell.edu/grammar/html/gr12_b_a.htm le57_62_a.htm (directionality), le57_62_b.htm (setting out), and subject index consulted2026-10-11. Independent English synthesis; linguistic review pending.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.\nThe table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.\nнести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.\nОн пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.\nМальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.\nидти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
+Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt: complete motion introduction, unprefixed pair table and Directionality section with all supplied examples. CC BY-SA4.0 through retained Wikipedia:Copyrights oldid1369466282 and existing source/rights declarations. The source states unprefixed pairs are imperfective. One-direction motion in progress, ability/general motion, movement in various directions, repeated trips and a past completed round trip are distinct supplied uses. Completion of a round trip does not turn the unprefixed form into a perfective. Prefixed setting-out/path meanings remain separately taught and are not inferred from these labels. Native clauses and bilingual notes are direct selections unchanged; no generated sentence, punctuation deletion, stress insertion or private Penguin text. All earlier lexical/prefixed checks and guided classification remain preserved. Independently authored English on 2026-10-13 within content-audit-2026-10-08; bounded contextual recognition rather than unrestricted production/all motion grammar. Qualified source/rights/semantic audit pending.
+идти́ — to go, walk. е́хать — to go by vehicle, ride. The first describes movement on foot; the second movement by vehicle. These are different means of moving, not an aspect pair.
+
+The table places идти́ in the unidirectional column: motion in one direction. Its other column is multidirectional, covering repeated, return or different-direction movement according to context. These directionality labels are not English verb meanings. The basic unprefixed forms in these columns are imperfective; unidirectional does not itself mean perfective or arrival.
+
+нести́ — to carry. вести́ — to lead. везти́ — to convey, transport. Carrying on foot, leading someone and transporting by vehicle are distinct meanings. For нести́ choose to carry. A question about its meaning is different from a question about directionality.
+
+Он пошёл к другу. — he set off toward a friend. The perfective prefixed verb presents the beginning of the journey; it does not say that he arrived. Он шёл к другу. — He went to a friend's place. This retained English rendering accompanies an imperfective form describing motion toward the friend; the Russian form alone does not specify how long he was on the way. The distractor he was already on the way for a long time adds duration that is not supplied, and he refused to go contradicts the setting-out sentence.
+
+Мальчик отошёл от незнакомца — The boy stepped back from the stranger. The verb and the phrase after it express movement away from the stranger. There is no additional relative clause in this displayed sentence. Они у́летят из Владивостока через месяц. — They will leave Vladivostok in a month. Мяч залетел на крышу дома. — The ball flew onto the roof of the house. These are different subjects and paths. The prefix contributes to the motion meaning, while the accompanying phrases identify the path and time; do not substitute a translation of a different example.
+
+Мы идём в библиотеку. — We are headed to the library. Птицы летят на юг. — The birds are flying south. These supplied contexts show Motion in progress in one direction (imperfective). Ребёнок ходит шесть месяцев. — The child has been walking for six months. This is General walking ability (imperfective). Мы ходили по городу весь день. — We walked around the city all day. This is Movement in various directions (imperfective). Directionality is a property of the whole supplied use, not an English lexical gloss or an automatic claim that the traveller arrived. The basic unprefixed pairs are imperfective.
+
+Она ходит в супермаркет каждую неделю. — She goes to the supermarket every week. This is Repeated trips (imperfective). В прошлом году я ездил в Россию. — I went to Russia (and returned) last year. In the retained supplied context this is One completed round trip in the past (imperfective). The past round-trip interpretation includes a return; the unprefixed form nevertheless remains imperfective. A choice saying “The form is perfective because this trip is completed.” makes an incorrect aspect inference for these forms. Do not equate a destination with unidirectionality or event completion with perfective aspect. Prefixed setting-out and path examples require their separately taught meanings.
+shippedText=The boy stepped back from the stranger.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ee7cfc22128ea694fcc77ec8da9d348ee9d1f2e72b50e69bea8754ca4970f753
+contentHash=0462e6892e86db8c18d2dec374c0478fe27d75286f9a11e941cb4d8a8f2faf4e
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -9193,6 +13378,8 @@ permitsAppUse=true
 - `obj-u20-motion` INSTRUCTION `u20-st-teach-motion-3`
 - `obj-u20-motion` INSTRUCTION `u20-st-teach-motion-4`
 - `obj-u20-motion` INSTRUCTION `u20-st-teach-motion-5`
+- `obj-u20-motion` INSTRUCTION `u20-st-teach-direction-contexts`
+- `obj-u20-motion` INSTRUCTION `u20-st-teach-direction-return`
 - `obj-u20-motion` EXAMPLE `ex-u20-motion-0`
 - `obj-u20-motion` EXAMPLE `ex-u20-motion-1`
 - `obj-u20-motion` EXAMPLE `ex-u20-motion-2`
@@ -9201,11 +13388,21 @@ permitsAppUse=true
 - `obj-u20-motion` EXAMPLE `ex-u20-motion-5`
 - `obj-u20-motion` EXAMPLE `ex-u20-motion-6`
 - `obj-u20-motion` EXAMPLE `ex-u20-motion-7`
+- `obj-u20-motion` EXAMPLE `ex-u20-direction-library`
+- `obj-u20-motion` EXAMPLE `ex-u20-direction-ability`
+- `obj-u20-motion` EXAMPLE `ex-u20-direction-birds`
+- `obj-u20-motion` EXAMPLE `ex-u20-direction-city`
+- `obj-u20-motion` EXAMPLE `ex-u20-direction-weekly`
+- `obj-u20-motion` EXAMPLE `ex-u20-direction-round`
 - `obj-u20-motion` PRACTICE `u20-st-guided-motion-1`
 - `obj-u20-motion` CHECK `u20-i-motion-1`
 - `obj-u20-motion` CHECK `u20-i-motion-2`
 - `obj-u20-motion` CHECK `u20-i-motion-3`
 - `obj-u20-motion` CHECK `u20-i-motion-4`
+- `obj-u20-motion` CHECK `u20-i-direction-birds`
+- `obj-u20-motion` CHECK `u20-i-direction-city`
+- `obj-u20-motion` CHECK `u20-i-direction-weekly`
+- `obj-u20-motion` CHECK `u20-i-direction-round`
 - `obj-u20-motion` REMEDIATION `u20-st-rem-motion`
 - `obj-u20-book` INSTRUCTION `u20-st-book-work`
 - `obj-u20-book` INSTRUCTION `u20-st-book`
@@ -9226,8 +13423,18 @@ permitsAppUse=true
 - `u20-st-teach-motion-5` EXAMPLE `ex-u20-motion-6`
 - `u20-st-teach-motion-5` EXAMPLE `ex-u20-motion-7`
 - `u20-st-teach-motion-5` REFERENCE `ref-u1620-attribution`
+- `u20-st-teach-direction-contexts` EXAMPLE `ex-u20-direction-library`
+- `u20-st-teach-direction-contexts` EXAMPLE `ex-u20-direction-ability`
+- `u20-st-teach-direction-contexts` EXAMPLE `ex-u20-direction-birds`
+- `u20-st-teach-direction-contexts` EXAMPLE `ex-u20-direction-city`
+- `u20-st-teach-direction-contexts` REFERENCE `ref-u1620-attribution`
+- `u20-st-teach-direction-return` EXAMPLE `ex-u20-direction-weekly`
+- `u20-st-teach-direction-return` EXAMPLE `ex-u20-direction-round`
+- `u20-st-teach-direction-return` REFERENCE `ref-u1620-attribution`
 - `u20-st-guided-motion-1` REMEDIATION `u20-st-rem-motion`
 - `u20-st-guided-motion-1` ITEM `u20-g-motion-0`
+- `u20-st-guided-motion-1` ITEM `u20-g-direction-library`
+- `u20-st-guided-motion-1` ITEM `u20-g-direction-ability`
 - `u20-st-rem-motion` EXAMPLE `ex-u20-motion-0`
 - `u20-st-rem-motion` EXAMPLE `ex-u20-motion-1`
 - `u20-st-rem-motion` EXAMPLE `ex-u20-motion-2`
@@ -9236,12 +13443,22 @@ permitsAppUse=true
 - `u20-st-rem-motion` EXAMPLE `ex-u20-motion-5`
 - `u20-st-rem-motion` EXAMPLE `ex-u20-motion-6`
 - `u20-st-rem-motion` EXAMPLE `ex-u20-motion-7`
+- `u20-st-rem-motion` EXAMPLE `ex-u20-direction-library`
+- `u20-st-rem-motion` EXAMPLE `ex-u20-direction-ability`
+- `u20-st-rem-motion` EXAMPLE `ex-u20-direction-birds`
+- `u20-st-rem-motion` EXAMPLE `ex-u20-direction-city`
+- `u20-st-rem-motion` EXAMPLE `ex-u20-direction-weekly`
+- `u20-st-rem-motion` EXAMPLE `ex-u20-direction-round`
 - `u20-st-rem-motion` REFERENCE `ref-ca-motion`
 - `u20-st-check-motion` REMEDIATION `u20-st-rem-motion`
 - `u20-st-check-motion` ITEM `u20-i-motion-1`
 - `u20-st-check-motion` ITEM `u20-i-motion-2`
 - `u20-st-check-motion` ITEM `u20-i-motion-3`
 - `u20-st-check-motion` ITEM `u20-i-motion-4`
+- `u20-st-check-motion` ITEM `u20-i-direction-birds`
+- `u20-st-check-motion` ITEM `u20-i-direction-city`
+- `u20-st-check-motion` ITEM `u20-i-direction-weekly`
+- `u20-st-check-motion` ITEM `u20-i-direction-round`
 - `u20-s-book` OBJECTIVE `obj-u20-book`
 - `u20-st-book-work` REFERENCE `ref-u1620-attribution`
 - `obj-u20-motion` PROVENANCE `prov-ca-20-250`
@@ -9369,6 +13586,59 @@ permitsAppUse=true
 - `obj-u20-motion` PROVENANCE `prov-ca-u1920-u20-i-motion-2-prompt`
 - `obj-u20-motion` PROVENANCE `prov-ca-u1920-u20-i-motion-2-wrong-0`
 - `obj-u20-motion` PROVENANCE `prov-ca-u1920-u20-i-motion-2-wrong-1`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-g-direction-ability-0`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-g-direction-ability-1`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-g-direction-ability-2`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-g-direction-ability-3`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-g-direction-ability-feedback`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-g-direction-ability-prompt`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-g-direction-ability-rationale-1`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-g-direction-ability-rationale-2`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-g-direction-library-0`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-g-direction-library-1`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-g-direction-library-2`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-g-direction-library-3`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-g-direction-library-feedback`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-g-direction-library-prompt`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-g-direction-library-rationale-1`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-g-direction-library-rationale-2`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-i-direction-birds-0`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-i-direction-birds-1`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-i-direction-birds-2`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-i-direction-birds-3`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-i-direction-birds-feedback`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-i-direction-birds-prompt`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-i-direction-birds-rationale-1`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-i-direction-birds-rationale-2`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-i-direction-city-0`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-i-direction-city-1`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-i-direction-city-2`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-i-direction-city-3`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-i-direction-city-feedback`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-i-direction-city-prompt`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-i-direction-city-rationale-1`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-i-direction-city-rationale-2`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-i-direction-round-0`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-i-direction-round-1`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-i-direction-round-2`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-i-direction-round-3`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-i-direction-round-feedback`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-i-direction-round-prompt`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-i-direction-round-rationale-1`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-i-direction-round-rationale-2`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-i-direction-weekly-0`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-i-direction-weekly-1`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-i-direction-weekly-2`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-i-direction-weekly-3`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-i-direction-weekly-feedback`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-i-direction-weekly-prompt`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-i-direction-weekly-rationale-1`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-i-direction-weekly-rationale-2`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-st-rem-motion-body`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-st-teach-direction-contexts-body`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-st-teach-direction-contexts-title`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-st-teach-direction-return-body`
+- `obj-u20-motion` PROVENANCE `prov-ca-u20-direction-u20-st-teach-direction-return-title`
 - `obj-u20-motion` PROVENANCE `prov-ex-u20-motion-0-en`
 - `obj-u20-motion` PROVENANCE `prov-ex-u20-motion-0-ru`
 - `obj-u20-motion` PROVENANCE `prov-ex-u20-motion-1-en`
@@ -9385,6 +13655,32 @@ permitsAppUse=true
 - `obj-u20-motion` PROVENANCE `prov-ex-u20-motion-6-ru`
 - `obj-u20-motion` PROVENANCE `prov-ex-u20-motion-7-en`
 - `obj-u20-motion` PROVENANCE `prov-ex-u20-motion-7-ru`
+- `obj-u20-motion` PROVENANCE `prov-u20-direction-cap-cap-u20-motion-po-setting-out-u20-st-rem-motion`
+- `obj-u20-motion` PROVENANCE `prov-u20-direction-cap-cap-u20-motion-po-setting-out-u20-st-teach-direction-contexts`
+- `obj-u20-motion` PROVENANCE `prov-u20-direction-cap-cap-u20-motion-po-setting-out-u20-st-teach-direction-return`
+- `obj-u20-motion` PROVENANCE `prov-u20-direction-cap-cap-u20-motion-prefixed-path-u20-st-rem-motion`
+- `obj-u20-motion` PROVENANCE `prov-u20-direction-cap-cap-u20-motion-prefixed-path-u20-st-teach-direction-contexts`
+- `obj-u20-motion` PROVENANCE `prov-u20-direction-cap-cap-u20-motion-prefixed-path-u20-st-teach-direction-return`
+- `obj-u20-motion` PROVENANCE `prov-u20-direction-native-ability-en`
+- `obj-u20-motion` PROVENANCE `prov-u20-direction-native-ability-ru`
+- `obj-u20-motion` PROVENANCE `prov-u20-direction-native-birds-en`
+- `obj-u20-motion` PROVENANCE `prov-u20-direction-native-birds-ru`
+- `obj-u20-motion` PROVENANCE `prov-u20-direction-native-city-en`
+- `obj-u20-motion` PROVENANCE `prov-u20-direction-native-city-ru`
+- `obj-u20-motion` PROVENANCE `prov-u20-direction-native-library-en`
+- `obj-u20-motion` PROVENANCE `prov-u20-direction-native-library-ru`
+- `obj-u20-motion` PROVENANCE `prov-u20-direction-native-round-en`
+- `obj-u20-motion` PROVENANCE `prov-u20-direction-native-round-ru`
+- `obj-u20-motion` PROVENANCE `prov-u20-direction-native-weekly-en`
+- `obj-u20-motion` PROVENANCE `prov-u20-direction-native-weekly-ru`
+- `obj-u20-motion` PROVENANCE `prov-u20-direction-rebind-prov-ca-repair-20-10954`
+- `obj-u20-motion` PROVENANCE `prov-u20-direction-rebind-prov-ca-repair-20-10962`
+- `obj-u20-motion` PROVENANCE `prov-u20-direction-rebind-prov-ca-repair-20-10965`
+- `obj-u20-motion` PROVENANCE `prov-u20-direction-rebind-prov-ca-repair-20-10966`
+- `obj-u20-motion` PROVENANCE `prov-u20-direction-rebind-prov-ca-repair-20-10988`
+- `obj-u20-motion` PROVENANCE `prov-u20-direction-rebind-prov-ca-repair-20-10990`
+- `obj-u20-motion` PROVENANCE `prov-u20-direction-rebind-prov-ca-repair-20-10991`
+- `obj-u20-motion` PROVENANCE `prov-u20-direction-rebind-prov-ca-repair-20-10992`
 - `obj-u20-motion` PROVENANCE `prov-u20-motion-rem`
 - `obj-u20-motion` PROVENANCE `prov-u20-motion-x-0`
 - `obj-u20-motion` PROVENANCE `prov-u20-motion-x-1`
