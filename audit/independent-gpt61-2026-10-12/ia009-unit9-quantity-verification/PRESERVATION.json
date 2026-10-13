@@ -1,0 +1,14 @@
+{
+  "baselineCommit": "016ad0211e4471c2ee4b6249acd4455499e3f861",
+  "rawCurriculumSha256": "afede79149abc9058fe2d255ff6a6ce7277bede2aaedc36df58478c345047308",
+  "all5926PriorProvenanceRecordsUnchanged": true,
+  "originalRussianCuesAndExamplesUnchanged": true,
+  "allSourcesRightsCapabilitiesMappingsAndOtherTopLevelDataUnchanged": true,
+  "other29UnitsByteEquivalentInData": true,
+  "changedItems": 15,
+  "changedLessons": 2,
+  "addedPendingRecords": 140,
+  "deterministicBaselineReplay": true,
+  "byteIdempotent": true,
+  "semanticAcceptance": false
+}

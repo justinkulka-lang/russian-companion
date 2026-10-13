@@ -19,6 +19,21 @@ internal object CompleteRuleContextPins {
         "ca-rule-context:u10-i-absence-2" to "f71fdb0cf1147171f2def872d028382337d74641aa2f94a4b20d0cb781bc51fc",
         "ca-rule-context:u10-i-absence-3" to "aff63f798517e16a0cb8f10d7aa60a1ba0c8c945251984f0a7e815a4ab0aff97",
         "ca-rule-context:u10-i-absence-4" to "d63695e270374d69b2ab7b22e2d7e10c514a68a7430f610a22d99ab16712d0b8",
+        "ca-rule-context:u9-g-quantity-0" to "ab01f9e22cd568a180d5f433b6445f4379bdb052b0095701a0f8371fb7b4665a",
+        "ca-rule-context:u9-i-quantity-1" to "d7fb2d3ee1075d7dcd2f08704e83c8b38f6aa9ce5a829f2b0316b92fb657f690",
+        "ca-rule-context:u9-i-quantity-2" to "4c7a0cc8ef8593c47555c350c46289dfec00a23853e8a1db1c5b61ba36568280",
+        "ca-rule-context:u9-i-quantity-3" to "12ec03047cd976cdb3c6669b82e0dd04a6fd80aa0b408d3b9e5ad3194a68c82e",
+        "ca-rule-context:u9-i-quantity-4" to "c6ba353fe2d21c6f2ffc6bf5b1859f236b0d0e45486c6c2a422530858327e61f",
+        "ca-rule-context:u9-i-quantity-5" to "5ce51dde3f3e428ef1d697cd1603f8faf28ba05f406f91c46c656debfd210707",
+        "ca-rule-context:u9-i-quantity-6" to "79329167565dcbb23404ccef54603e30f3e8f5fcff3272b77711da4fe22b1c03",
+        "ca-rule-context:u9-i-quantity-7" to "d47c4cb2b1cb8ec3eb22f758df601e0989ff2f12692c982358f8593ef1c08e0c",
+        "ca-rule-context:u9-i-quantity-8" to "61b4c87827f1a7396c6f8fb99109088e6df85ce3a8ad363c7b3d87cefe01ac34",
+        "ca-rule-context:u9-i-quantity-9" to "4381b1e305641449e427937df95d0e97fb57fa537f894de2cc314e13b2b8a6c4",
+        "ca-rule-context:u9-g-pattern-0" to "ab01f9e22cd568a180d5f433b6445f4379bdb052b0095701a0f8371fb7b4665a",
+        "ca-rule-context:u9-i-pattern-1" to "37a5960aee6cedbaf64ebeefdc141efd0709a5fd9421d6ca805411bb752ccc2b",
+        "ca-rule-context:u9-i-pattern-2" to "40b9b54ba28f25c4d392169d54316bbed09497a217b7a3b3bdeb1e968bf73358",
+        "ca-rule-context:u9-i-pattern-3" to "c0d8f40ceeac159db2e90171db8ab57913fc539b09ad14bcae5c263393ffb104",
+        "ca-rule-context:u9-i-pattern-4" to "8d56873c882a2014e2dcf857c9562428754d792439c78a44ad661009309fa5cf",
     )
     fun required(itemId: String) = hashes.containsKey("ca-rule-context:$itemId")
     private fun hash(value: String) = MessageDigest.getInstance("SHA-256").digest(value.toByteArray(Charsets.UTF_8))
@@ -42,6 +57,8 @@ internal object CompleteRuleContextPins {
     fun itemMatches(pack: V2CurriculumPack, item: V2CheckItem): Boolean {
         val expectedObjective = when {
             item.id.startsWith("u8-") -> "obj-u8-availability"
+            item.id.startsWith("u9-") && "-quantity-" in item.id -> "obj-u9-quantity"
+            item.id.startsWith("u9-") -> "obj-u9-pattern"
             "-have-" in item.id -> "obj-u10-have"
             else -> "obj-u10-absence"
         }
@@ -50,11 +67,12 @@ internal object CompleteRuleContextPins {
         if (item.kind != "CONTRAST_SELECTION" || item.sourceId != ContentAuditSources.SOURCE_ID ||
             assessment.relationKind != "STATED_APPLICATION" || assessment.evidenceMode != "STATED_APPLICATION") return false
         val ids = assessment.relationParticipantIds
-        if (ids.size != 3 || ids.distinct().size != 3) return false
+        if (ids.size != item.options.size + 1 || ids.distinct().size != ids.size) return false
         val records = ids.map { id -> pack.provenanceRecords.firstOrNull { it.itemId == id } ?: return false }
         if (!records.all { it.sourceRecordId == "ca-rule-context:${item.id}" && it.objectiveId == item.objectiveId && matchesIfPinned(it) }) return false
         val tuple = records[0].synthesis!!.applications.single()
         return tuple.cue == item.promptLetter && tuple.answer == item.answer && tuple.distractors == item.options.filter { it != item.answer } &&
-            records[0].shippedText == tuple.cue && records[1].shippedText == tuple.answer && records[2].shippedText == tuple.distractors.singleOrNull()
+            records[0].shippedText == tuple.cue && records[1].shippedText == tuple.answer &&
+            records.drop(2).map { it.shippedText } == tuple.distractors
     }
 }

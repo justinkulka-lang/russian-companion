@@ -1,0 +1,2532 @@
+{
+  "baselineCommit": "016ad0211e4471c2ee4b6249acd4455499e3f861",
+  "beforeSha256": "cd27e9a136b62f33f1e2eefed944152476d628a402bbf34d17c7b95c18a8a980",
+  "afterSha256": "afede79149abc9058fe2d255ff6a6ce7277bede2aaedc36df58478c345047308",
+  "frozenPublicSource": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+  "frozenPublicSourceSha256": "dcb20ca815c1dce735cfe57de68dc90baa0bc645489837ec50f3ec520f0a44ca",
+  "addedProvenanceIds": [
+    "prov-ca-u9-rule-u9-g-quantity-0-0",
+    "prov-ca-u9-rule-u9-g-quantity-0-1",
+    "prov-ca-u9-rule-u9-g-quantity-0-2",
+    "prov-ca-u9-rule-u9-g-quantity-0-3",
+    "prov-ca-u9-rule-u9-g-quantity-0-prompt",
+    "prov-ca-u9-rule-u9-g-quantity-0-feedback",
+    "prov-ca-u9-rule-u9-g-quantity-0-rationale-1",
+    "prov-ca-u9-rule-u9-g-quantity-0-rationale-2",
+    "prov-ca-u9-rule-u9-i-quantity-1-0",
+    "prov-ca-u9-rule-u9-i-quantity-1-1",
+    "prov-ca-u9-rule-u9-i-quantity-1-2",
+    "prov-ca-u9-rule-u9-i-quantity-1-3",
+    "prov-ca-u9-rule-u9-i-quantity-1-prompt",
+    "prov-ca-u9-rule-u9-i-quantity-1-feedback",
+    "prov-ca-u9-rule-u9-i-quantity-1-rationale-1",
+    "prov-ca-u9-rule-u9-i-quantity-1-rationale-2",
+    "prov-ca-u9-rule-u9-i-quantity-2-0",
+    "prov-ca-u9-rule-u9-i-quantity-2-1",
+    "prov-ca-u9-rule-u9-i-quantity-2-2",
+    "prov-ca-u9-rule-u9-i-quantity-2-prompt",
+    "prov-ca-u9-rule-u9-i-quantity-2-feedback",
+    "prov-ca-u9-rule-u9-i-quantity-2-rationale-1",
+    "prov-ca-u9-rule-u9-i-quantity-3-0",
+    "prov-ca-u9-rule-u9-i-quantity-3-1",
+    "prov-ca-u9-rule-u9-i-quantity-3-2",
+    "prov-ca-u9-rule-u9-i-quantity-3-3",
+    "prov-ca-u9-rule-u9-i-quantity-3-prompt",
+    "prov-ca-u9-rule-u9-i-quantity-3-feedback",
+    "prov-ca-u9-rule-u9-i-quantity-3-rationale-1",
+    "prov-ca-u9-rule-u9-i-quantity-3-rationale-2",
+    "prov-ca-u9-rule-u9-i-quantity-4-0",
+    "prov-ca-u9-rule-u9-i-quantity-4-1",
+    "prov-ca-u9-rule-u9-i-quantity-4-2",
+    "prov-ca-u9-rule-u9-i-quantity-4-prompt",
+    "prov-ca-u9-rule-u9-i-quantity-4-feedback",
+    "prov-ca-u9-rule-u9-i-quantity-4-rationale-1",
+    "prov-ca-u9-rule-u9-i-quantity-5-0",
+    "prov-ca-u9-rule-u9-i-quantity-5-1",
+    "prov-ca-u9-rule-u9-i-quantity-5-2",
+    "prov-ca-u9-rule-u9-i-quantity-5-prompt",
+    "prov-ca-u9-rule-u9-i-quantity-5-feedback",
+    "prov-ca-u9-rule-u9-i-quantity-5-rationale-1",
+    "prov-ca-u9-rule-u9-i-quantity-6-0",
+    "prov-ca-u9-rule-u9-i-quantity-6-1",
+    "prov-ca-u9-rule-u9-i-quantity-6-2",
+    "prov-ca-u9-rule-u9-i-quantity-6-prompt",
+    "prov-ca-u9-rule-u9-i-quantity-6-feedback",
+    "prov-ca-u9-rule-u9-i-quantity-6-rationale-1",
+    "prov-ca-u9-rule-u9-i-quantity-7-0",
+    "prov-ca-u9-rule-u9-i-quantity-7-1",
+    "prov-ca-u9-rule-u9-i-quantity-7-2",
+    "prov-ca-u9-rule-u9-i-quantity-7-prompt",
+    "prov-ca-u9-rule-u9-i-quantity-7-feedback",
+    "prov-ca-u9-rule-u9-i-quantity-7-rationale-1",
+    "prov-ca-u9-rule-u9-i-quantity-8-0",
+    "prov-ca-u9-rule-u9-i-quantity-8-1",
+    "prov-ca-u9-rule-u9-i-quantity-8-2",
+    "prov-ca-u9-rule-u9-i-quantity-8-prompt",
+    "prov-ca-u9-rule-u9-i-quantity-8-feedback",
+    "prov-ca-u9-rule-u9-i-quantity-8-rationale-1",
+    "prov-ca-u9-rule-u9-i-quantity-9-0",
+    "prov-ca-u9-rule-u9-i-quantity-9-1",
+    "prov-ca-u9-rule-u9-i-quantity-9-2",
+    "prov-ca-u9-rule-u9-i-quantity-9-prompt",
+    "prov-ca-u9-rule-u9-i-quantity-9-feedback",
+    "prov-ca-u9-rule-u9-i-quantity-9-rationale-1",
+    "prov-ca-u9-rule-u9-g-pattern-0-0",
+    "prov-ca-u9-rule-u9-g-pattern-0-1",
+    "prov-ca-u9-rule-u9-g-pattern-0-2",
+    "prov-ca-u9-rule-u9-g-pattern-0-3",
+    "prov-ca-u9-rule-u9-g-pattern-0-prompt",
+    "prov-ca-u9-rule-u9-g-pattern-0-feedback",
+    "prov-ca-u9-rule-u9-g-pattern-0-rationale-1",
+    "prov-ca-u9-rule-u9-g-pattern-0-rationale-2",
+    "prov-ca-u9-rule-u9-i-pattern-1-0",
+    "prov-ca-u9-rule-u9-i-pattern-1-1",
+    "prov-ca-u9-rule-u9-i-pattern-1-2",
+    "prov-ca-u9-rule-u9-i-pattern-1-3",
+    "prov-ca-u9-rule-u9-i-pattern-1-prompt",
+    "prov-ca-u9-rule-u9-i-pattern-1-feedback",
+    "prov-ca-u9-rule-u9-i-pattern-1-rationale-1",
+    "prov-ca-u9-rule-u9-i-pattern-1-rationale-2",
+    "prov-ca-u9-rule-u9-i-pattern-2-0",
+    "prov-ca-u9-rule-u9-i-pattern-2-1",
+    "prov-ca-u9-rule-u9-i-pattern-2-2",
+    "prov-ca-u9-rule-u9-i-pattern-2-prompt",
+    "prov-ca-u9-rule-u9-i-pattern-2-feedback",
+    "prov-ca-u9-rule-u9-i-pattern-2-rationale-1",
+    "prov-ca-u9-rule-u9-i-pattern-3-0",
+    "prov-ca-u9-rule-u9-i-pattern-3-1",
+    "prov-ca-u9-rule-u9-i-pattern-3-2",
+    "prov-ca-u9-rule-u9-i-pattern-3-3",
+    "prov-ca-u9-rule-u9-i-pattern-3-prompt",
+    "prov-ca-u9-rule-u9-i-pattern-3-feedback",
+    "prov-ca-u9-rule-u9-i-pattern-3-rationale-1",
+    "prov-ca-u9-rule-u9-i-pattern-3-rationale-2",
+    "prov-ca-u9-rule-u9-i-pattern-4-0",
+    "prov-ca-u9-rule-u9-i-pattern-4-1",
+    "prov-ca-u9-rule-u9-i-pattern-4-2",
+    "prov-ca-u9-rule-u9-i-pattern-4-prompt",
+    "prov-ca-u9-rule-u9-i-pattern-4-feedback",
+    "prov-ca-u9-rule-u9-i-pattern-4-rationale-1",
+    "prov-ca-u9-rule-u9-st-teach-quantity-1-title",
+    "prov-ca-u9-rule-u9-st-teach-quantity-1-body",
+    "prov-ca-u9-rule-u9-st-teach-quantity-2-title",
+    "prov-ca-u9-rule-u9-st-teach-quantity-2-body",
+    "prov-ca-u9-rule-u9-st-teach-quantity-3-title",
+    "prov-ca-u9-rule-u9-st-teach-quantity-3-body",
+    "prov-ca-u9-rule-u9-st-teach-quantity-4-title",
+    "prov-ca-u9-rule-u9-st-teach-quantity-4-body",
+    "prov-ca-u9-rule-u9-st-teach-quantity-5-title",
+    "prov-ca-u9-rule-u9-st-teach-quantity-5-body",
+    "prov-ca-u9-rule-u9-st-teach-quantity-6-title",
+    "prov-ca-u9-rule-u9-st-teach-quantity-6-body",
+    "prov-ca-u9-rule-u9-st-teach-quantity-7-title",
+    "prov-ca-u9-rule-u9-st-teach-quantity-7-body",
+    "prov-ca-u9-rule-u9-st-teach-quantity-8-title",
+    "prov-ca-u9-rule-u9-st-teach-quantity-8-body",
+    "prov-ca-u9-rule-u9-st-teach-quantity-9-title",
+    "prov-ca-u9-rule-u9-st-teach-quantity-9-body",
+    "prov-ca-u9-rule-u9-st-teach-quantity-10-title",
+    "prov-ca-u9-rule-u9-st-teach-quantity-10-body",
+    "prov-ca-u9-rule-u9-st-rem-quantity-title",
+    "prov-ca-u9-rule-u9-st-rem-quantity-body",
+    "prov-ca-u9-rule-u9-st-guided-quantity-1-body",
+    "prov-ca-u9-rule-u9-st-check-quantity-body",
+    "prov-ca-u9-rule-u9-st-teach-pattern-1-title",
+    "prov-ca-u9-rule-u9-st-teach-pattern-1-body",
+    "prov-ca-u9-rule-u9-st-teach-pattern-2-title",
+    "prov-ca-u9-rule-u9-st-teach-pattern-2-body",
+    "prov-ca-u9-rule-u9-st-teach-pattern-3-title",
+    "prov-ca-u9-rule-u9-st-teach-pattern-3-body",
+    "prov-ca-u9-rule-u9-st-teach-pattern-4-title",
+    "prov-ca-u9-rule-u9-st-teach-pattern-4-body",
+    "prov-ca-u9-rule-u9-st-teach-pattern-5-title",
+    "prov-ca-u9-rule-u9-st-teach-pattern-5-body",
+    "prov-ca-u9-rule-u9-st-rem-pattern-title",
+    "prov-ca-u9-rule-u9-st-rem-pattern-body",
+    "prov-ca-u9-rule-u9-st-guided-pattern-1-body",
+    "prov-ca-u9-rule-u9-st-check-pattern-body"
+  ],
+  "changes": [
+    {
+      "before": {
+        "id": "u9-g-quantity-0",
+        "kind": "NUMBER_FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted rule classifies the shown line?",
+        "promptLetter": "один час",
+        "options": [
+          "1 -> nominative",
+          "2, 3, 4 -> genitive singular",
+          "5 and more -> genitive plural"
+        ],
+        "answer": "1 -> nominative",
+        "feedback": "Does the admitted record show the governed contrast? 1 -> nominative.",
+        "objectiveId": "obj-u9-quantity",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This admitted rule is the two-to-four line, not the rule for the shown line.",
+          "This admitted rule is the five-and-more line, not the rule for the shown line."
+        ],
+        "assessment": {
+          "testedFeature": "FINAL_DIGIT_ONE",
+          "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+          "contrastSetId": "u9-quantity-0",
+          "cueLanguage": "ru",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-u9-quantity-x-0"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-u9-quantity-x-1",
+            "prov-u9-quantity-x-2"
+          ],
+          "distractorDifference": [
+            "",
+            "This admitted rule is the two-to-four line, not the rule for the shown line.",
+            "This admitted rule is the five-and-more line, not the rule for the shown line."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "1 -> nominative",
+            "2, 3, 4 -> genitive singular",
+            "5 and more -> genitive plural"
+          ],
+          "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+          "relationParticipantIds": [
+            "prov-u9-quantity-x-3",
+            "prov-u9-quantity-x-0",
+            "prov-u9-quantity-x-1",
+            "prov-u9-quantity-x-2"
+          ]
+        }
+      },
+      "after": {
+        "id": "u9-g-quantity-0",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which complete case explanation fits the shown example?",
+        "promptLetter": "один час",
+        "options": [
+          "In this basic counting phrase, the noun is nominative singular.",
+          "In this basic counting phrase, the noun is genitive singular.",
+          "In this basic counting phrase, the noun is genitive plural."
+        ],
+        "answer": "In this basic counting phrase, the noun is nominative singular.",
+        "feedback": "The value is 1; the last two digits do not fall in 11-through14, and the final digit is 1. In this basic counting phrase, the counted noun is nominative singular. Classify the complete number rather than treating every value above five as the same pattern.",
+        "objectiveId": "obj-u9-quantity",
+        "sourceId": "src-content-audit-research",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.",
+          "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern."
+        ],
+        "assessment": {
+          "testedFeature": "FINAL_DIGIT_ONE",
+          "evidenceMode": "STATED_APPLICATION",
+          "contrastSetId": "u9-quantity-0",
+          "cueLanguage": "ru",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ca-u9-rule-u9-g-quantity-0-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ca-u9-rule-u9-g-quantity-0-2",
+            "prov-ca-u9-rule-u9-g-quantity-0-3"
+          ],
+          "distractorDifference": [
+            "",
+            "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.",
+            "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern."
+          ],
+          "whyAnswerDemonstratesObjective": "The value is 1; the last two digits do not fall in 11-through14, and the final digit is 1. In this basic counting phrase, the counted noun is nominative singular. Classify the complete number rather than treating every value above five as the same pattern.",
+          "contrastMembers": [
+            "In this basic counting phrase, the noun is nominative singular.",
+            "In this basic counting phrase, the noun is genitive singular.",
+            "In this basic counting phrase, the noun is genitive plural."
+          ],
+          "relationKind": "STATED_APPLICATION",
+          "relationParticipantIds": [
+            "prov-ca-u9-rule-u9-g-quantity-0-0",
+            "prov-ca-u9-rule-u9-g-quantity-0-1",
+            "prov-ca-u9-rule-u9-g-quantity-0-2",
+            "prov-ca-u9-rule-u9-g-quantity-0-3"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u9-i-quantity-1",
+        "kind": "NUMBER_FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted rule classifies the shown line?",
+        "promptLetter": "двадцать два часа",
+        "options": [
+          "2, 3, 4 -> genitive singular",
+          "1 -> nominative",
+          "5 and more -> genitive plural"
+        ],
+        "answer": "2, 3, 4 -> genitive singular",
+        "feedback": "Does the admitted record show the governed contrast? 2, 3, 4 -> genitive singular.",
+        "objectiveId": "obj-u9-quantity",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This admitted rule is the one-item line, not the rule for the shown line.",
+          "This admitted rule is the five-and-more line, not the rule for the shown line."
+        ],
+        "assessment": {
+          "testedFeature": "COMPOUND_22",
+          "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+          "contrastSetId": "u9-quantity-1",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-u9-quantity-x-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-u9-quantity-x-0",
+            "prov-u9-quantity-x-2"
+          ],
+          "distractorDifference": [
+            "",
+            "This admitted rule is the one-item line, not the rule for the shown line.",
+            "This admitted rule is the five-and-more line, not the rule for the shown line."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "2, 3, 4 -> genitive singular",
+            "1 -> nominative",
+            "5 and more -> genitive plural"
+          ],
+          "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+          "relationParticipantIds": [
+            "prov-u9-quantity-x-7",
+            "prov-u9-quantity-x-1",
+            "prov-u9-quantity-x-0",
+            "prov-u9-quantity-x-2"
+          ]
+        }
+      },
+      "after": {
+        "id": "u9-i-quantity-1",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which complete case explanation fits the shown example?",
+        "promptLetter": "двадцать два часа",
+        "options": [
+          "In this basic counting phrase, the noun is genitive singular.",
+          "In this basic counting phrase, the noun is nominative singular.",
+          "In this basic counting phrase, the noun is genitive plural."
+        ],
+        "answer": "In this basic counting phrase, the noun is genitive singular.",
+        "feedback": "The value is 22; the last two digits do not fall in 11-through14, and the final digit is 2. In this basic counting phrase, the counted noun is genitive singular. Classify the complete number rather than treating every value above five as the same pattern.",
+        "objectiveId": "obj-u9-quantity",
+        "sourceId": "src-content-audit-research",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "The nominative-singular explanation applies to a final one outside the teen exception, rather than this shown counting pattern.",
+          "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern."
+        ],
+        "assessment": {
+          "testedFeature": "COMPOUND_22",
+          "evidenceMode": "STATED_APPLICATION",
+          "contrastSetId": "u9-quantity-1",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ca-u9-rule-u9-i-quantity-1-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ca-u9-rule-u9-i-quantity-1-2",
+            "prov-ca-u9-rule-u9-i-quantity-1-3"
+          ],
+          "distractorDifference": [
+            "",
+            "The nominative-singular explanation applies to a final one outside the teen exception, rather than this shown counting pattern.",
+            "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern."
+          ],
+          "whyAnswerDemonstratesObjective": "The value is 22; the last two digits do not fall in 11-through14, and the final digit is 2. In this basic counting phrase, the counted noun is genitive singular. Classify the complete number rather than treating every value above five as the same pattern.",
+          "contrastMembers": [
+            "In this basic counting phrase, the noun is genitive singular.",
+            "In this basic counting phrase, the noun is nominative singular.",
+            "In this basic counting phrase, the noun is genitive plural."
+          ],
+          "relationKind": "STATED_APPLICATION",
+          "relationParticipantIds": [
+            "prov-ca-u9-rule-u9-i-quantity-1-0",
+            "prov-ca-u9-rule-u9-i-quantity-1-1",
+            "prov-ca-u9-rule-u9-i-quantity-1-2",
+            "prov-ca-u9-rule-u9-i-quantity-1-3"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u9-i-quantity-2",
+        "kind": "NUMBER_FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted rule classifies the shown line?",
+        "promptLetter": "пять часов",
+        "options": [
+          "5 and more -> genitive plural",
+          "2, 3, 4 -> genitive singular"
+        ],
+        "answer": "5 and more -> genitive plural",
+        "feedback": "Does the admitted record show the governed contrast? 5 and more -> genitive plural.",
+        "objectiveId": "obj-u9-quantity",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This admitted rule is the two-to-four line, not the rule for the shown line."
+        ],
+        "assessment": {
+          "testedFeature": "FINAL_DIGIT_FIVE_PLUS",
+          "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+          "contrastSetId": "u9-quantity-2",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-u9-quantity-x-2"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-u9-quantity-x-1"
+          ],
+          "distractorDifference": [
+            "",
+            "This admitted rule is the two-to-four line, not the rule for the shown line."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "5 and more -> genitive plural",
+            "2, 3, 4 -> genitive singular"
+          ],
+          "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+          "relationParticipantIds": [
+            "prov-u9-quantity-x-5",
+            "prov-u9-quantity-x-2",
+            "prov-u9-quantity-x-1"
+          ]
+        }
+      },
+      "after": {
+        "id": "u9-i-quantity-2",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which complete case explanation fits the shown example?",
+        "promptLetter": "пять часов",
+        "options": [
+          "In this basic counting phrase, the noun is genitive plural.",
+          "In this basic counting phrase, the noun is genitive singular."
+        ],
+        "answer": "In this basic counting phrase, the noun is genitive plural.",
+        "feedback": "The value is 5; the last two digits do not fall in 11-through14, and the final digit is 5. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.",
+        "objectiveId": "obj-u9-quantity",
+        "sourceId": "src-content-audit-research",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern."
+        ],
+        "assessment": {
+          "testedFeature": "FINAL_DIGIT_FIVE_PLUS",
+          "evidenceMode": "STATED_APPLICATION",
+          "contrastSetId": "u9-quantity-2",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ca-u9-rule-u9-i-quantity-2-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ca-u9-rule-u9-i-quantity-2-2"
+          ],
+          "distractorDifference": [
+            "",
+            "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern."
+          ],
+          "whyAnswerDemonstratesObjective": "The value is 5; the last two digits do not fall in 11-through14, and the final digit is 5. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.",
+          "contrastMembers": [
+            "In this basic counting phrase, the noun is genitive plural.",
+            "In this basic counting phrase, the noun is genitive singular."
+          ],
+          "relationKind": "STATED_APPLICATION",
+          "relationParticipantIds": [
+            "prov-ca-u9-rule-u9-i-quantity-2-0",
+            "prov-ca-u9-rule-u9-i-quantity-2-1",
+            "prov-ca-u9-rule-u9-i-quantity-2-2"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u9-i-quantity-3",
+        "kind": "NUMBER_FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted rule classifies the shown line?",
+        "promptLetter": "двадцать один час",
+        "options": [
+          "1 -> nominative",
+          "2, 3, 4 -> genitive singular",
+          "5 and more -> genitive plural"
+        ],
+        "answer": "1 -> nominative",
+        "feedback": "Does the admitted record show the governed contrast? 1 -> nominative.",
+        "objectiveId": "obj-u9-quantity",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This admitted rule is the two-to-four line, not the rule for the shown line.",
+          "This admitted rule is the five-and-more line, not the rule for the shown line."
+        ],
+        "assessment": {
+          "testedFeature": "COMPOUND_21",
+          "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+          "contrastSetId": "u9-quantity-3",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-u9-quantity-x-0"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-u9-quantity-x-1",
+            "prov-u9-quantity-x-2"
+          ],
+          "distractorDifference": [
+            "",
+            "This admitted rule is the two-to-four line, not the rule for the shown line.",
+            "This admitted rule is the five-and-more line, not the rule for the shown line."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "1 -> nominative",
+            "2, 3, 4 -> genitive singular",
+            "5 and more -> genitive plural"
+          ],
+          "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+          "relationParticipantIds": [
+            "prov-u9-quantity-x-6",
+            "prov-u9-quantity-x-0",
+            "prov-u9-quantity-x-1",
+            "prov-u9-quantity-x-2"
+          ]
+        }
+      },
+      "after": {
+        "id": "u9-i-quantity-3",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which complete case explanation fits the shown example?",
+        "promptLetter": "двадцать один час",
+        "options": [
+          "In this basic counting phrase, the noun is nominative singular.",
+          "In this basic counting phrase, the noun is genitive singular.",
+          "In this basic counting phrase, the noun is genitive plural."
+        ],
+        "answer": "In this basic counting phrase, the noun is nominative singular.",
+        "feedback": "The value is 21; the last two digits do not fall in 11-through14, and the final digit is 1. In this basic counting phrase, the counted noun is nominative singular. Classify the complete number rather than treating every value above five as the same pattern.",
+        "objectiveId": "obj-u9-quantity",
+        "sourceId": "src-content-audit-research",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.",
+          "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern."
+        ],
+        "assessment": {
+          "testedFeature": "COMPOUND_21",
+          "evidenceMode": "STATED_APPLICATION",
+          "contrastSetId": "u9-quantity-3",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ca-u9-rule-u9-i-quantity-3-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ca-u9-rule-u9-i-quantity-3-2",
+            "prov-ca-u9-rule-u9-i-quantity-3-3"
+          ],
+          "distractorDifference": [
+            "",
+            "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.",
+            "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern."
+          ],
+          "whyAnswerDemonstratesObjective": "The value is 21; the last two digits do not fall in 11-through14, and the final digit is 1. In this basic counting phrase, the counted noun is nominative singular. Classify the complete number rather than treating every value above five as the same pattern.",
+          "contrastMembers": [
+            "In this basic counting phrase, the noun is nominative singular.",
+            "In this basic counting phrase, the noun is genitive singular.",
+            "In this basic counting phrase, the noun is genitive plural."
+          ],
+          "relationKind": "STATED_APPLICATION",
+          "relationParticipantIds": [
+            "prov-ca-u9-rule-u9-i-quantity-3-0",
+            "prov-ca-u9-rule-u9-i-quantity-3-1",
+            "prov-ca-u9-rule-u9-i-quantity-3-2",
+            "prov-ca-u9-rule-u9-i-quantity-3-3"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u9-i-quantity-4",
+        "kind": "NUMBER_FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted rule classifies the shown line?",
+        "promptLetter": "шестнадцать рублей",
+        "options": [
+          "5 and more -> genitive plural",
+          "2, 3, 4 -> genitive singular"
+        ],
+        "answer": "5 and more -> genitive plural",
+        "feedback": "Does the admitted record show the governed contrast? 5 and more -> genitive plural.",
+        "objectiveId": "obj-u9-quantity",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This admitted rule is the two-to-four line, and the teen pattern overrides that rule for the shown line."
+        ],
+        "assessment": {
+          "testedFeature": "TEEN_VALUE",
+          "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+          "contrastSetId": "u9-quantity-4",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-u9-quantity-x-2"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-u9-quantity-x-1"
+          ],
+          "distractorDifference": [
+            "",
+            "This admitted rule is the two-to-four line, and the teen pattern overrides that rule for the shown line."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "5 and more -> genitive plural",
+            "2, 3, 4 -> genitive singular"
+          ],
+          "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+          "relationParticipantIds": [
+            "prov-u9-quantity-x-8",
+            "prov-u9-quantity-x-2",
+            "prov-u9-quantity-x-1"
+          ]
+        }
+      },
+      "after": {
+        "id": "u9-i-quantity-4",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which complete case explanation fits the shown example?",
+        "promptLetter": "шестнадцать рублей",
+        "options": [
+          "In this basic counting phrase, the noun is genitive plural.",
+          "In this basic counting phrase, the noun is genitive singular."
+        ],
+        "answer": "In this basic counting phrase, the noun is genitive plural.",
+        "feedback": "The value is 16; the last two digits do not fall in 11-through14, and the final digit is 6. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.",
+        "objectiveId": "obj-u9-quantity",
+        "sourceId": "src-content-audit-research",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern."
+        ],
+        "assessment": {
+          "testedFeature": "TEEN_VALUE",
+          "evidenceMode": "STATED_APPLICATION",
+          "contrastSetId": "u9-quantity-4",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ca-u9-rule-u9-i-quantity-4-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ca-u9-rule-u9-i-quantity-4-2"
+          ],
+          "distractorDifference": [
+            "",
+            "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern."
+          ],
+          "whyAnswerDemonstratesObjective": "The value is 16; the last two digits do not fall in 11-through14, and the final digit is 6. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.",
+          "contrastMembers": [
+            "In this basic counting phrase, the noun is genitive plural.",
+            "In this basic counting phrase, the noun is genitive singular."
+          ],
+          "relationKind": "STATED_APPLICATION",
+          "relationParticipantIds": [
+            "prov-ca-u9-rule-u9-i-quantity-4-0",
+            "prov-ca-u9-rule-u9-i-quantity-4-1",
+            "prov-ca-u9-rule-u9-i-quantity-4-2"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u9-i-quantity-5",
+        "kind": "NUMBER_FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted rule classifies the shown line?",
+        "promptLetter": "сорок один год",
+        "options": [
+          "1 -> nominative",
+          "5 and more -> genitive plural"
+        ],
+        "answer": "1 -> nominative",
+        "feedback": "Does the admitted record show the governed contrast? 1 -> nominative.",
+        "objectiveId": "obj-u9-quantity",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This admitted rule is the five-and-more line, not the rule for the shown line."
+        ],
+        "assessment": {
+          "testedFeature": "FINAL_DIGIT_ONE",
+          "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+          "contrastSetId": "u9-quantity-5",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-u9-quantity-x-0"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-u9-quantity-x-2"
+          ],
+          "distractorDifference": [
+            "",
+            "This admitted rule is the five-and-more line, not the rule for the shown line."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "1 -> nominative",
+            "5 and more -> genitive plural"
+          ],
+          "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+          "relationParticipantIds": [
+            "prov-u9-quantity-x-9",
+            "prov-u9-quantity-x-0",
+            "prov-u9-quantity-x-2"
+          ]
+        }
+      },
+      "after": {
+        "id": "u9-i-quantity-5",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which complete case explanation fits the shown example?",
+        "promptLetter": "сорок один год",
+        "options": [
+          "In this basic counting phrase, the noun is nominative singular.",
+          "In this basic counting phrase, the noun is genitive plural."
+        ],
+        "answer": "In this basic counting phrase, the noun is nominative singular.",
+        "feedback": "The value is 41; the last two digits do not fall in 11-through14, and the final digit is 1. In this basic counting phrase, the counted noun is nominative singular. Classify the complete number rather than treating every value above five as the same pattern.",
+        "objectiveId": "obj-u9-quantity",
+        "sourceId": "src-content-audit-research",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern."
+        ],
+        "assessment": {
+          "testedFeature": "FINAL_DIGIT_ONE",
+          "evidenceMode": "STATED_APPLICATION",
+          "contrastSetId": "u9-quantity-5",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ca-u9-rule-u9-i-quantity-5-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ca-u9-rule-u9-i-quantity-5-2"
+          ],
+          "distractorDifference": [
+            "",
+            "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern."
+          ],
+          "whyAnswerDemonstratesObjective": "The value is 41; the last two digits do not fall in 11-through14, and the final digit is 1. In this basic counting phrase, the counted noun is nominative singular. Classify the complete number rather than treating every value above five as the same pattern.",
+          "contrastMembers": [
+            "In this basic counting phrase, the noun is nominative singular.",
+            "In this basic counting phrase, the noun is genitive plural."
+          ],
+          "relationKind": "STATED_APPLICATION",
+          "relationParticipantIds": [
+            "prov-ca-u9-rule-u9-i-quantity-5-0",
+            "prov-ca-u9-rule-u9-i-quantity-5-1",
+            "prov-ca-u9-rule-u9-i-quantity-5-2"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u9-i-quantity-6",
+        "kind": "NUMBER_FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted rule classifies the shown line?",
+        "promptLetter": "двести тринадцать собак",
+        "options": [
+          "5 and more -> genitive plural",
+          "2, 3, 4 -> genitive singular"
+        ],
+        "answer": "5 and more -> genitive plural",
+        "feedback": "Does the admitted record show the governed contrast? 5 and more -> genitive plural.",
+        "objectiveId": "obj-u9-quantity",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This admitted rule is the two-to-four line, and the teen pattern overrides that rule for the shown line."
+        ],
+        "assessment": {
+          "testedFeature": "TEENS_OVERRIDE",
+          "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+          "contrastSetId": "u9-quantity-6",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-u9-quantity-x-2"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-u9-quantity-x-1"
+          ],
+          "distractorDifference": [
+            "",
+            "This admitted rule is the two-to-four line, and the teen pattern overrides that rule for the shown line."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "5 and more -> genitive plural",
+            "2, 3, 4 -> genitive singular"
+          ],
+          "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+          "relationParticipantIds": [
+            "prov-u9-quantity-x-10",
+            "prov-u9-quantity-x-2",
+            "prov-u9-quantity-x-1"
+          ]
+        }
+      },
+      "after": {
+        "id": "u9-i-quantity-6",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which complete case explanation fits the shown example?",
+        "promptLetter": "двести тринадцать собак",
+        "options": [
+          "In this basic counting phrase, the noun is genitive plural.",
+          "In this basic counting phrase, the noun is genitive singular."
+        ],
+        "answer": "In this basic counting phrase, the noun is genitive plural.",
+        "feedback": "The value is 213; its last two digits are 13, so the 11-through14 exception takes priority over the final digit. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.",
+        "objectiveId": "obj-u9-quantity",
+        "sourceId": "src-content-audit-research",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern."
+        ],
+        "assessment": {
+          "testedFeature": "TEENS_OVERRIDE",
+          "evidenceMode": "STATED_APPLICATION",
+          "contrastSetId": "u9-quantity-6",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ca-u9-rule-u9-i-quantity-6-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ca-u9-rule-u9-i-quantity-6-2"
+          ],
+          "distractorDifference": [
+            "",
+            "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern."
+          ],
+          "whyAnswerDemonstratesObjective": "The value is 213; its last two digits are 13, so the 11-through14 exception takes priority over the final digit. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.",
+          "contrastMembers": [
+            "In this basic counting phrase, the noun is genitive plural.",
+            "In this basic counting phrase, the noun is genitive singular."
+          ],
+          "relationKind": "STATED_APPLICATION",
+          "relationParticipantIds": [
+            "prov-ca-u9-rule-u9-i-quantity-6-0",
+            "prov-ca-u9-rule-u9-i-quantity-6-1",
+            "prov-ca-u9-rule-u9-i-quantity-6-2"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u9-i-quantity-7",
+        "kind": "NUMBER_FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted rule classifies the shown line?",
+        "promptLetter": "десять копеек",
+        "options": [
+          "5 and more -> genitive plural",
+          "1 -> nominative"
+        ],
+        "answer": "5 and more -> genitive plural",
+        "feedback": "Does the admitted record show the governed contrast? 5 and more -> genitive plural.",
+        "objectiveId": "obj-u9-quantity",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This admitted rule is the one-item line, not the rule for the shown line."
+        ],
+        "assessment": {
+          "testedFeature": "FINAL_ZERO_OR_TEN",
+          "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+          "contrastSetId": "u9-quantity-7",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-u9-quantity-x-2"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-u9-quantity-x-0"
+          ],
+          "distractorDifference": [
+            "",
+            "This admitted rule is the one-item line, not the rule for the shown line."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "5 and more -> genitive plural",
+            "1 -> nominative"
+          ],
+          "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+          "relationParticipantIds": [
+            "prov-u9-quantity-x-11",
+            "prov-u9-quantity-x-2",
+            "prov-u9-quantity-x-0"
+          ]
+        }
+      },
+      "after": {
+        "id": "u9-i-quantity-7",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which complete case explanation fits the shown example?",
+        "promptLetter": "десять копеек",
+        "options": [
+          "In this basic counting phrase, the noun is genitive plural.",
+          "In this basic counting phrase, the noun is nominative singular."
+        ],
+        "answer": "In this basic counting phrase, the noun is genitive plural.",
+        "feedback": "The value is 10; the last two digits do not fall in 11-through14, and the final digit is 0. In this basic counting phrase, the counted noun is genitive plural. A final zero follows the same noun-case pattern as ten.",
+        "objectiveId": "obj-u9-quantity",
+        "sourceId": "src-content-audit-research",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "The nominative-singular explanation applies to a final one outside the teen exception, rather than this shown counting pattern."
+        ],
+        "assessment": {
+          "testedFeature": "FINAL_ZERO_OR_TEN",
+          "evidenceMode": "STATED_APPLICATION",
+          "contrastSetId": "u9-quantity-7",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ca-u9-rule-u9-i-quantity-7-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ca-u9-rule-u9-i-quantity-7-2"
+          ],
+          "distractorDifference": [
+            "",
+            "The nominative-singular explanation applies to a final one outside the teen exception, rather than this shown counting pattern."
+          ],
+          "whyAnswerDemonstratesObjective": "The value is 10; the last two digits do not fall in 11-through14, and the final digit is 0. In this basic counting phrase, the counted noun is genitive plural. A final zero follows the same noun-case pattern as ten.",
+          "contrastMembers": [
+            "In this basic counting phrase, the noun is genitive plural.",
+            "In this basic counting phrase, the noun is nominative singular."
+          ],
+          "relationKind": "STATED_APPLICATION",
+          "relationParticipantIds": [
+            "prov-ca-u9-rule-u9-i-quantity-7-0",
+            "prov-ca-u9-rule-u9-i-quantity-7-1",
+            "prov-ca-u9-rule-u9-i-quantity-7-2"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u9-i-quantity-8",
+        "kind": "NUMBER_FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted rule classifies the shown line?",
+        "promptLetter": "два часа",
+        "options": [
+          "2, 3, 4 -> genitive singular",
+          "5 and more -> genitive plural"
+        ],
+        "answer": "2, 3, 4 -> genitive singular",
+        "feedback": "Does the admitted record show the governed contrast? 2, 3, 4 -> genitive singular.",
+        "objectiveId": "obj-u9-quantity",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This admitted rule is the five-and-more line, not the rule for the shown line."
+        ],
+        "assessment": {
+          "testedFeature": "FINAL_DIGIT_TWO",
+          "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+          "contrastSetId": "u9-quantity-8",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-u9-quantity-x-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-u9-quantity-x-2"
+          ],
+          "distractorDifference": [
+            "",
+            "This admitted rule is the five-and-more line, not the rule for the shown line."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "2, 3, 4 -> genitive singular",
+            "5 and more -> genitive plural"
+          ],
+          "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+          "relationParticipantIds": [
+            "prov-u9-quantity-x-4",
+            "prov-u9-quantity-x-1",
+            "prov-u9-quantity-x-2"
+          ]
+        }
+      },
+      "after": {
+        "id": "u9-i-quantity-8",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which complete case explanation fits the shown example?",
+        "promptLetter": "два часа",
+        "options": [
+          "In this basic counting phrase, the noun is genitive singular.",
+          "In this basic counting phrase, the noun is genitive plural."
+        ],
+        "answer": "In this basic counting phrase, the noun is genitive singular.",
+        "feedback": "The value is 2; the last two digits do not fall in 11-through14, and the final digit is 2. In this basic counting phrase, the counted noun is genitive singular. Classify the complete number rather than treating every value above five as the same pattern.",
+        "objectiveId": "obj-u9-quantity",
+        "sourceId": "src-content-audit-research",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern."
+        ],
+        "assessment": {
+          "testedFeature": "FINAL_DIGIT_TWO",
+          "evidenceMode": "STATED_APPLICATION",
+          "contrastSetId": "u9-quantity-8",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ca-u9-rule-u9-i-quantity-8-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ca-u9-rule-u9-i-quantity-8-2"
+          ],
+          "distractorDifference": [
+            "",
+            "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern."
+          ],
+          "whyAnswerDemonstratesObjective": "The value is 2; the last two digits do not fall in 11-through14, and the final digit is 2. In this basic counting phrase, the counted noun is genitive singular. Classify the complete number rather than treating every value above five as the same pattern.",
+          "contrastMembers": [
+            "In this basic counting phrase, the noun is genitive singular.",
+            "In this basic counting phrase, the noun is genitive plural."
+          ],
+          "relationKind": "STATED_APPLICATION",
+          "relationParticipantIds": [
+            "prov-ca-u9-rule-u9-i-quantity-8-0",
+            "prov-ca-u9-rule-u9-i-quantity-8-1",
+            "prov-ca-u9-rule-u9-i-quantity-8-2"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u9-i-quantity-9",
+        "kind": "NUMBER_FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted rule classifies the shown line?",
+        "promptLetter": "двести три собаки",
+        "options": [
+          "2, 3, 4 -> genitive singular",
+          "5 and more -> genitive plural"
+        ],
+        "answer": "2, 3, 4 -> genitive singular",
+        "feedback": "Does the admitted record show the governed contrast? 2, 3, 4 -> genitive singular.",
+        "objectiveId": "obj-u9-quantity",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This admitted rule is the five-and-more line, not the rule for the shown line."
+        ],
+        "assessment": {
+          "testedFeature": "HUNDREDS_COMPOSITION",
+          "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+          "contrastSetId": "u9-quantity-9",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-u9-quantity-x-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-u9-quantity-x-2"
+          ],
+          "distractorDifference": [
+            "",
+            "This admitted rule is the five-and-more line, not the rule for the shown line."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "2, 3, 4 -> genitive singular",
+            "5 and more -> genitive plural"
+          ],
+          "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+          "relationParticipantIds": [
+            "prov-u9-quantity-x-12",
+            "prov-u9-quantity-x-1",
+            "prov-u9-quantity-x-2"
+          ]
+        }
+      },
+      "after": {
+        "id": "u9-i-quantity-9",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which complete case explanation fits the shown example?",
+        "promptLetter": "двести три собаки",
+        "options": [
+          "In this basic counting phrase, the noun is genitive singular.",
+          "In this basic counting phrase, the noun is genitive plural."
+        ],
+        "answer": "In this basic counting phrase, the noun is genitive singular.",
+        "feedback": "The value is 203; the last two digits do not fall in 11-through14, and the final digit is 3. In this basic counting phrase, the counted noun is genitive singular. Classify the complete number rather than treating every value above five as the same pattern.",
+        "objectiveId": "obj-u9-quantity",
+        "sourceId": "src-content-audit-research",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern."
+        ],
+        "assessment": {
+          "testedFeature": "HUNDREDS_COMPOSITION",
+          "evidenceMode": "STATED_APPLICATION",
+          "contrastSetId": "u9-quantity-9",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ca-u9-rule-u9-i-quantity-9-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ca-u9-rule-u9-i-quantity-9-2"
+          ],
+          "distractorDifference": [
+            "",
+            "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern."
+          ],
+          "whyAnswerDemonstratesObjective": "The value is 203; the last two digits do not fall in 11-through14, and the final digit is 3. In this basic counting phrase, the counted noun is genitive singular. Classify the complete number rather than treating every value above five as the same pattern.",
+          "contrastMembers": [
+            "In this basic counting phrase, the noun is genitive singular.",
+            "In this basic counting phrase, the noun is genitive plural."
+          ],
+          "relationKind": "STATED_APPLICATION",
+          "relationParticipantIds": [
+            "prov-ca-u9-rule-u9-i-quantity-9-0",
+            "prov-ca-u9-rule-u9-i-quantity-9-1",
+            "prov-ca-u9-rule-u9-i-quantity-9-2"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u9-g-pattern-0",
+        "kind": "PATTERN_CLASSIFICATION",
+        "language": "en",
+        "prompt": "Which admitted rule applies to the shown line?",
+        "promptLetter": "один час",
+        "options": [
+          "1 -> nominative",
+          "2, 3, 4 -> genitive singular",
+          "5 and more -> genitive plural"
+        ],
+        "answer": "1 -> nominative",
+        "feedback": "Does the admitted record show the governed contrast? 1 -> nominative.",
+        "objectiveId": "obj-u9-pattern",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This admitted rule is the two-to-four line.",
+          "This admitted rule is the five-and-more line."
+        ],
+        "assessment": {
+          "testedFeature": "GOVERNED_FORM",
+          "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+          "contrastSetId": "u9-pattern-0",
+          "cueLanguage": "ru",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-u9-pattern-x-0"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-u9-pattern-x-1",
+            "prov-u9-pattern-x-2"
+          ],
+          "distractorDifference": [
+            "",
+            "This admitted rule is the two-to-four line.",
+            "This admitted rule is the five-and-more line."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "1 -> nominative",
+            "2, 3, 4 -> genitive singular",
+            "5 and more -> genitive plural"
+          ],
+          "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+          "relationParticipantIds": [
+            "prov-u9-pattern-x-5",
+            "prov-u9-pattern-x-0",
+            "prov-u9-pattern-x-1",
+            "prov-u9-pattern-x-2"
+          ]
+        }
+      },
+      "after": {
+        "id": "u9-g-pattern-0",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which complete case explanation fits the shown example?",
+        "promptLetter": "один час",
+        "options": [
+          "In this basic counting phrase, the noun is nominative singular.",
+          "In this basic counting phrase, the noun is genitive singular.",
+          "In this basic counting phrase, the noun is genitive plural."
+        ],
+        "answer": "In this basic counting phrase, the noun is nominative singular.",
+        "feedback": "The value is 1; the last two digits do not fall in 11-through14, and the final digit is 1. In this basic counting phrase, the counted noun is nominative singular. Classify the complete number rather than treating every value above five as the same pattern.",
+        "objectiveId": "obj-u9-pattern",
+        "sourceId": "src-content-audit-research",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.",
+          "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern."
+        ],
+        "assessment": {
+          "testedFeature": "GOVERNED_FORM",
+          "evidenceMode": "STATED_APPLICATION",
+          "contrastSetId": "u9-pattern-0",
+          "cueLanguage": "ru",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ca-u9-rule-u9-g-pattern-0-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ca-u9-rule-u9-g-pattern-0-2",
+            "prov-ca-u9-rule-u9-g-pattern-0-3"
+          ],
+          "distractorDifference": [
+            "",
+            "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.",
+            "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern."
+          ],
+          "whyAnswerDemonstratesObjective": "The value is 1; the last two digits do not fall in 11-through14, and the final digit is 1. In this basic counting phrase, the counted noun is nominative singular. Classify the complete number rather than treating every value above five as the same pattern.",
+          "contrastMembers": [
+            "In this basic counting phrase, the noun is nominative singular.",
+            "In this basic counting phrase, the noun is genitive singular.",
+            "In this basic counting phrase, the noun is genitive plural."
+          ],
+          "relationKind": "STATED_APPLICATION",
+          "relationParticipantIds": [
+            "prov-ca-u9-rule-u9-g-pattern-0-0",
+            "prov-ca-u9-rule-u9-g-pattern-0-1",
+            "prov-ca-u9-rule-u9-g-pattern-0-2",
+            "prov-ca-u9-rule-u9-g-pattern-0-3"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u9-i-pattern-1",
+        "kind": "PATTERN_CLASSIFICATION",
+        "language": "en",
+        "prompt": "Which admitted rule applies to the shown line?",
+        "promptLetter": "три кошки",
+        "options": [
+          "2, 3, 4 -> genitive singular",
+          "1 -> nominative",
+          "5 and more -> genitive plural"
+        ],
+        "answer": "2, 3, 4 -> genitive singular",
+        "feedback": "Does the admitted record show the governed contrast? 2, 3, 4 -> genitive singular.",
+        "objectiveId": "obj-u9-pattern",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This admitted rule is the one-item line.",
+          "This admitted rule is the five-and-more line."
+        ],
+        "assessment": {
+          "testedFeature": "GOVERNED_FORM",
+          "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+          "contrastSetId": "u9-pattern-1",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-u9-pattern-x-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-u9-pattern-x-0",
+            "prov-u9-pattern-x-2"
+          ],
+          "distractorDifference": [
+            "",
+            "This admitted rule is the one-item line.",
+            "This admitted rule is the five-and-more line."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "2, 3, 4 -> genitive singular",
+            "1 -> nominative",
+            "5 and more -> genitive plural"
+          ],
+          "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+          "relationParticipantIds": [
+            "prov-u9-pattern-x-6",
+            "prov-u9-pattern-x-1",
+            "prov-u9-pattern-x-0",
+            "prov-u9-pattern-x-2"
+          ]
+        }
+      },
+      "after": {
+        "id": "u9-i-pattern-1",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which complete case explanation fits the shown example?",
+        "promptLetter": "три кошки",
+        "options": [
+          "In this basic counting phrase, the noun is genitive singular.",
+          "In this basic counting phrase, the noun is nominative singular.",
+          "In this basic counting phrase, the noun is genitive plural."
+        ],
+        "answer": "In this basic counting phrase, the noun is genitive singular.",
+        "feedback": "The value is 3; the last two digits do not fall in 11-through14, and the final digit is 3. In this basic counting phrase, the counted noun is genitive singular. Classify the complete number rather than treating every value above five as the same pattern.",
+        "objectiveId": "obj-u9-pattern",
+        "sourceId": "src-content-audit-research",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "The nominative-singular explanation applies to a final one outside the teen exception, rather than this shown counting pattern.",
+          "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern."
+        ],
+        "assessment": {
+          "testedFeature": "GOVERNED_FORM",
+          "evidenceMode": "STATED_APPLICATION",
+          "contrastSetId": "u9-pattern-1",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ca-u9-rule-u9-i-pattern-1-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ca-u9-rule-u9-i-pattern-1-2",
+            "prov-ca-u9-rule-u9-i-pattern-1-3"
+          ],
+          "distractorDifference": [
+            "",
+            "The nominative-singular explanation applies to a final one outside the teen exception, rather than this shown counting pattern.",
+            "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern."
+          ],
+          "whyAnswerDemonstratesObjective": "The value is 3; the last two digits do not fall in 11-through14, and the final digit is 3. In this basic counting phrase, the counted noun is genitive singular. Classify the complete number rather than treating every value above five as the same pattern.",
+          "contrastMembers": [
+            "In this basic counting phrase, the noun is genitive singular.",
+            "In this basic counting phrase, the noun is nominative singular.",
+            "In this basic counting phrase, the noun is genitive plural."
+          ],
+          "relationKind": "STATED_APPLICATION",
+          "relationParticipantIds": [
+            "prov-ca-u9-rule-u9-i-pattern-1-0",
+            "prov-ca-u9-rule-u9-i-pattern-1-1",
+            "prov-ca-u9-rule-u9-i-pattern-1-2",
+            "prov-ca-u9-rule-u9-i-pattern-1-3"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u9-i-pattern-2",
+        "kind": "PATTERN_CLASSIFICATION",
+        "language": "en",
+        "prompt": "Which admitted rule applies to the shown line?",
+        "promptLetter": "пять девушек",
+        "options": [
+          "5 and more -> genitive plural",
+          "2, 3, 4 -> genitive singular"
+        ],
+        "answer": "5 and more -> genitive plural",
+        "feedback": "Does the admitted record show the governed contrast? 5 and more -> genitive plural.",
+        "objectiveId": "obj-u9-pattern",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This admitted rule is the two-to-four line."
+        ],
+        "assessment": {
+          "testedFeature": "GOVERNED_FORM",
+          "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+          "contrastSetId": "u9-pattern-2",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-u9-pattern-x-2"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-u9-pattern-x-1"
+          ],
+          "distractorDifference": [
+            "",
+            "This admitted rule is the two-to-four line."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "5 and more -> genitive plural",
+            "2, 3, 4 -> genitive singular"
+          ],
+          "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+          "relationParticipantIds": [
+            "prov-u9-pattern-x-7",
+            "prov-u9-pattern-x-2",
+            "prov-u9-pattern-x-1"
+          ]
+        }
+      },
+      "after": {
+        "id": "u9-i-pattern-2",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which complete case explanation fits the shown example?",
+        "promptLetter": "пять девушек",
+        "options": [
+          "In this basic counting phrase, the noun is genitive plural.",
+          "In this basic counting phrase, the noun is genitive singular."
+        ],
+        "answer": "In this basic counting phrase, the noun is genitive plural.",
+        "feedback": "The value is 5; the last two digits do not fall in 11-through14, and the final digit is 5. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.",
+        "objectiveId": "obj-u9-pattern",
+        "sourceId": "src-content-audit-research",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern."
+        ],
+        "assessment": {
+          "testedFeature": "GOVERNED_FORM",
+          "evidenceMode": "STATED_APPLICATION",
+          "contrastSetId": "u9-pattern-2",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ca-u9-rule-u9-i-pattern-2-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ca-u9-rule-u9-i-pattern-2-2"
+          ],
+          "distractorDifference": [
+            "",
+            "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern."
+          ],
+          "whyAnswerDemonstratesObjective": "The value is 5; the last two digits do not fall in 11-through14, and the final digit is 5. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.",
+          "contrastMembers": [
+            "In this basic counting phrase, the noun is genitive plural.",
+            "In this basic counting phrase, the noun is genitive singular."
+          ],
+          "relationKind": "STATED_APPLICATION",
+          "relationParticipantIds": [
+            "prov-ca-u9-rule-u9-i-pattern-2-0",
+            "prov-ca-u9-rule-u9-i-pattern-2-1",
+            "prov-ca-u9-rule-u9-i-pattern-2-2"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u9-i-pattern-3",
+        "kind": "PATTERN_CLASSIFICATION",
+        "language": "en",
+        "prompt": "Which admitted rule classifies the shown line?",
+        "promptLetter": "шестнадцать рублей",
+        "options": [
+          "5 and more -> genitive plural",
+          "2, 3, 4 -> genitive singular",
+          "1 -> nominative"
+        ],
+        "answer": "5 and more -> genitive plural",
+        "feedback": "Does the admitted record show the governed contrast? 5 and more -> genitive plural.",
+        "objectiveId": "obj-u9-pattern",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This admitted rule is the two-to-four line, and the teen pattern overrides that rule for the shown line.",
+          "This admitted rule is the one-item line, and the teen pattern overrides that rule for the shown line."
+        ],
+        "assessment": {
+          "testedFeature": "TEENS_OVERRIDE",
+          "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+          "contrastSetId": "u9-pattern-3",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-u9-pattern-x-2"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-u9-pattern-x-1",
+            "prov-u9-pattern-x-0"
+          ],
+          "distractorDifference": [
+            "",
+            "This admitted rule is the two-to-four line, and the teen pattern overrides that rule for the shown line.",
+            "This admitted rule is the one-item line, and the teen pattern overrides that rule for the shown line."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "5 and more -> genitive plural",
+            "2, 3, 4 -> genitive singular",
+            "1 -> nominative"
+          ],
+          "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+          "relationParticipantIds": [
+            "prov-u9-pattern-x-8",
+            "prov-u9-pattern-x-2",
+            "prov-u9-pattern-x-1",
+            "prov-u9-pattern-x-0"
+          ]
+        }
+      },
+      "after": {
+        "id": "u9-i-pattern-3",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which complete case explanation fits the shown example?",
+        "promptLetter": "шестнадцать рублей",
+        "options": [
+          "In this basic counting phrase, the noun is genitive plural.",
+          "In this basic counting phrase, the noun is genitive singular.",
+          "In this basic counting phrase, the noun is nominative singular."
+        ],
+        "answer": "In this basic counting phrase, the noun is genitive plural.",
+        "feedback": "The value is 16; the last two digits do not fall in 11-through14, and the final digit is 6. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.",
+        "objectiveId": "obj-u9-pattern",
+        "sourceId": "src-content-audit-research",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.",
+          "The nominative-singular explanation applies to a final one outside the teen exception, rather than this shown counting pattern."
+        ],
+        "assessment": {
+          "testedFeature": "TEENS_OVERRIDE",
+          "evidenceMode": "STATED_APPLICATION",
+          "contrastSetId": "u9-pattern-3",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ca-u9-rule-u9-i-pattern-3-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ca-u9-rule-u9-i-pattern-3-2",
+            "prov-ca-u9-rule-u9-i-pattern-3-3"
+          ],
+          "distractorDifference": [
+            "",
+            "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.",
+            "The nominative-singular explanation applies to a final one outside the teen exception, rather than this shown counting pattern."
+          ],
+          "whyAnswerDemonstratesObjective": "The value is 16; the last two digits do not fall in 11-through14, and the final digit is 6. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.",
+          "contrastMembers": [
+            "In this basic counting phrase, the noun is genitive plural.",
+            "In this basic counting phrase, the noun is genitive singular.",
+            "In this basic counting phrase, the noun is nominative singular."
+          ],
+          "relationKind": "STATED_APPLICATION",
+          "relationParticipantIds": [
+            "prov-ca-u9-rule-u9-i-pattern-3-0",
+            "prov-ca-u9-rule-u9-i-pattern-3-1",
+            "prov-ca-u9-rule-u9-i-pattern-3-2",
+            "prov-ca-u9-rule-u9-i-pattern-3-3"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u9-i-pattern-4",
+        "kind": "PATTERN_CLASSIFICATION",
+        "language": "en",
+        "prompt": "Which admitted scope sentence covers the shown line?",
+        "promptLetter": "Я видел двух друзей",
+        "options": [
+          "When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined",
+          "If the item needs to be in the nominative or inanimate accusative case, use the following rule."
+        ],
+        "answer": "When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined",
+        "feedback": "Does the admitted record show the governed contrast? When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined.",
+        "objectiveId": "obj-u9-pattern",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This admitted sentence is the other scope in the frozen paragraph."
+        ],
+        "assessment": {
+          "testedFeature": "GOVERNED_FORM",
+          "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+          "contrastSetId": "u9-pattern-4",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-u9-pattern-x-3"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-u9-pattern-x-4"
+          ],
+          "distractorDifference": [
+            "",
+            "This admitted sentence is the other scope in the frozen paragraph."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined",
+            "If the item needs to be in the nominative or inanimate accusative case, use the following rule."
+          ],
+          "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+          "relationParticipantIds": [
+            "prov-u9-pattern-x-9",
+            "prov-u9-pattern-x-3",
+            "prov-u9-pattern-x-4"
+          ]
+        }
+      },
+      "after": {
+        "id": "u9-i-pattern-4",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which complete case explanation fits the shown example?",
+        "promptLetter": "Я видел двух друзей",
+        "options": [
+          "In this line, the animate object is accusative and both numeral and noun are declined.",
+          "In this line, use the basic nominative or inanimate accusative counting pattern."
+        ],
+        "answer": "In this line, the animate object is accusative and both numeral and noun are declined.",
+        "feedback": "The line means I saw two friends. The friends are an animate accusative object. Both the numeral and noun are declined, so the basic nominative or inanimate accusative counting pattern does not describe this sentence.",
+        "objectiveId": "obj-u9-pattern",
+        "sourceId": "src-content-audit-research",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "The basic nominative/inanimate accusative pattern omits the animate accusative object and declined numeral in this sentence."
+        ],
+        "assessment": {
+          "testedFeature": "GOVERNED_FORM",
+          "evidenceMode": "STATED_APPLICATION",
+          "contrastSetId": "u9-pattern-4",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ca-u9-rule-u9-i-pattern-4-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ca-u9-rule-u9-i-pattern-4-2"
+          ],
+          "distractorDifference": [
+            "",
+            "The basic nominative/inanimate accusative pattern omits the animate accusative object and declined numeral in this sentence."
+          ],
+          "whyAnswerDemonstratesObjective": "The line means I saw two friends. The friends are an animate accusative object. Both the numeral and noun are declined, so the basic nominative or inanimate accusative counting pattern does not describe this sentence.",
+          "contrastMembers": [
+            "In this line, the animate object is accusative and both numeral and noun are declined.",
+            "In this line, use the basic nominative or inanimate accusative counting pattern."
+          ],
+          "relationKind": "STATED_APPLICATION",
+          "relationParticipantIds": [
+            "prov-ca-u9-rule-u9-i-pattern-4-0",
+            "prov-ca-u9-rule-u9-i-pattern-4-1",
+            "prov-ca-u9-rule-u9-i-pattern-4-2"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u9-st-teach-quantity-1",
+        "kind": "TEACH",
+        "title": "Admitted lines",
+        "body": "один час — один час. два часа — два часа. ",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ],
+        "exampleIds": [
+          "ex-u9-quantity-0",
+          "ex-u9-quantity-1"
+        ]
+      },
+      "after": {
+        "id": "u9-st-teach-quantity-1",
+        "kind": "TEACH",
+        "title": "Start with the construction",
+        "body": "These basic counting examples use nominative phrases. The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form. Other sentence cases require numeral declension as well as noun declension. A count ending in one outside the teen exception uses a nominative singular noun in the shown basic phrases. один час — один час. два часа — два часа. ",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ],
+        "exampleIds": [
+          "ex-u9-quantity-0",
+          "ex-u9-quantity-1"
+        ]
+      }
+    },
+    {
+      "before": {
+        "id": "u9-st-teach-quantity-2",
+        "kind": "TEACH",
+        "title": "Admitted instruction",
+        "body": "Numerals larger than twenty follow the above rules using the last digit.",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ]
+      },
+      "after": {
+        "id": "u9-st-teach-quantity-2",
+        "kind": "TEACH",
+        "title": "Two, three and four",
+        "body": "A count ending in two, three or four outside the teen exception uses a genitive singular noun in the basic construction. This is a grammatical singular form even though the count is greater than one.",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ]
+      }
+    },
+    {
+      "before": {
+        "id": "u9-st-teach-quantity-3",
+        "kind": "TEACH",
+        "title": "Admitted lines",
+        "body": "пять часов — пять часов. двадцать один час — двадцать один час. ",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ],
+        "exampleIds": [
+          "ex-u9-quantity-2",
+          "ex-u9-quantity-3"
+        ]
+      },
+      "after": {
+        "id": "u9-st-teach-quantity-3",
+        "kind": "TEACH",
+        "title": "Genitive plural counts",
+        "body": "Counts ending in zero or five through nine use genitive plural in the basic construction. The teen exception also uses genitive plural. Ten and sixteen therefore fit this pattern. пять часов — пять часов. двадцать один час — двадцать один час. ",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ],
+        "exampleIds": [
+          "ex-u9-quantity-2",
+          "ex-u9-quantity-3"
+        ]
+      }
+    },
+    {
+      "before": {
+        "id": "u9-st-teach-quantity-4",
+        "kind": "TEACH",
+        "title": "Admitted lines",
+        "body": "двадцать два часа — двадцать два часа. две девушки — two girls. ",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ],
+        "exampleIds": [
+          "ex-u9-quantity-4",
+          "ex-u9-quantity-5"
+        ]
+      },
+      "after": {
+        "id": "u9-st-teach-quantity-4",
+        "kind": "TEACH",
+        "title": "Compound counts",
+        "body": "For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. Compare 21 and 22: their final digits select different noun cases; being larger than five is not enough to choose genitive plural. двадцать два часа — двадцать два часа. две девушки — two girls. ",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ],
+        "exampleIds": [
+          "ex-u9-quantity-4",
+          "ex-u9-quantity-5"
+        ]
+      }
+    },
+    {
+      "before": {
+        "id": "u9-st-teach-quantity-5",
+        "kind": "TEACH",
+        "title": "Admitted lines",
+        "body": "пять девушек — five girls. шестнадцать рублей — sixteen rubles. ",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ],
+        "exampleIds": [
+          "ex-u9-quantity-6",
+          "ex-u9-quantity-7"
+        ]
+      },
+      "after": {
+        "id": "u9-st-teach-quantity-5",
+        "kind": "TEACH",
+        "title": "Teen values and exceptions",
+        "body": "For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. All counts from 11 through19 use genitive plural here. For 15 through19 the final digit already leads to genitive plural;11 through14 override the one/two/three/four ending pattern. пять девушек — five girls. шестнадцать рублей — sixteen rubles. ",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ],
+        "exampleIds": [
+          "ex-u9-quantity-6",
+          "ex-u9-quantity-7"
+        ]
+      }
+    },
+    {
+      "before": {
+        "id": "u9-st-teach-quantity-6",
+        "kind": "TEACH",
+        "title": "Admitted lines",
+        "body": "десять копеек — ten kopeks. сорок один год — forty-one years. ",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ],
+        "exampleIds": [
+          "ex-u9-quantity-8",
+          "ex-u9-quantity-9"
+        ]
+      },
+      "after": {
+        "id": "u9-st-teach-quantity-6",
+        "kind": "TEACH",
+        "title": "One and zero endings",
+        "body": "The example with 41 follows the final-one pattern and uses nominative singular for the counted noun. The example with 10 follows the zero-ending pattern and uses genitive plural. десять копеек — ten kopeks. сорок один год — forty-one years. ",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ],
+        "exampleIds": [
+          "ex-u9-quantity-8",
+          "ex-u9-quantity-9"
+        ]
+      }
+    },
+    {
+      "before": {
+        "id": "u9-st-teach-quantity-7",
+        "kind": "TEACH",
+        "title": "Admitted lines",
+        "body": "пять лет — пять лет. двести три собаки — two hundred and three dogs. ",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ],
+        "exampleIds": [
+          "ex-u9-quantity-10",
+          "ex-u9-quantity-11"
+        ]
+      },
+      "after": {
+        "id": "u9-st-teach-quantity-7",
+        "kind": "TEACH",
+        "title": "Hundreds preserve the boundary",
+        "body": "The count 203 ends in 03, so final three selects genitive singular in the basic counting phrase. The count 213 ends in 13, so the teen exception selects genitive plural. пять лет — пять лет. двести три собаки — two hundred and three dogs. ",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ],
+        "exampleIds": [
+          "ex-u9-quantity-10",
+          "ex-u9-quantity-11"
+        ]
+      }
+    },
+    {
+      "before": {
+        "id": "u9-st-teach-quantity-8",
+        "kind": "TEACH",
+        "title": "Admitted lines",
+        "body": "двести тринадцать собак — two hundred and thirteen dogs. Два́дцать две копе́йки — 22 kopecks. ",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ],
+        "exampleIds": [
+          "ex-u9-quantity-12",
+          "ex-u9-quantity-13"
+        ]
+      },
+      "after": {
+        "id": "u9-st-teach-quantity-8",
+        "kind": "TEACH",
+        "title": "Compare the supplied hundreds",
+        "body": "For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. Compare the supplied 203 and 213 examples and the two kopeck examples. Count value and sentence construction govern the explanation. двести тринадцать собак — two hundred and thirteen dogs. Два́дцать две копе́йки — 22 kopecks. ",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ],
+        "exampleIds": [
+          "ex-u9-quantity-12",
+          "ex-u9-quantity-13"
+        ]
+      }
+    },
+    {
+      "before": {
+        "id": "u9-st-teach-quantity-9",
+        "kind": "TEACH",
+        "title": "Admitted lines",
+        "body": "Два́дцать пять копе́ек — 25 kopecks. стола́ — table. ",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ],
+        "exampleIds": [
+          "ex-u9-quantity-14",
+          "ex-or-u9-quantity-15"
+        ]
+      },
+      "after": {
+        "id": "u9-st-teach-quantity-9",
+        "kind": "TEACH",
+        "title": "Keep lexical forms separate",
+        "body": "The isolated table forms below illustrate genitive singular and genitive plural noun forms. They do not by themselves state a quantity or sentence context; apply the complete counted-noun rules to whole examples. Два́дцать пять копе́ек — 25 kopecks. стола́ — table. ",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ],
+        "exampleIds": [
+          "ex-u9-quantity-14",
+          "ex-or-u9-quantity-15"
+        ]
+      }
+    },
+    {
+      "before": {
+        "id": "u9-st-teach-quantity-10",
+        "kind": "TEACH",
+        "title": "Admitted lines",
+        "body": "столо́в — table. ",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ],
+        "exampleIds": [
+          "ex-or-u9-quantity-16"
+        ]
+      },
+      "after": {
+        "id": "u9-st-teach-quantity-10",
+        "kind": "TEACH",
+        "title": "Review the complete decision",
+        "body": "These basic counting examples use nominative phrases. The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form. Other sentence cases require numeral declension as well as noun declension. For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. столо́в — table. ",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ],
+        "exampleIds": [
+          "ex-or-u9-quantity-16"
+        ]
+      }
+    },
+    {
+      "before": {
+        "id": "u9-st-rem-quantity",
+        "kind": "REMEDIATE",
+        "title": "Remediation",
+        "body": "Numerals larger than twenty follow the above rules using the last digit.",
+        "exampleIds": [
+          "ex-u9-quantity-0",
+          "ex-u9-quantity-1"
+        ]
+      },
+      "after": {
+        "id": "u9-st-rem-quantity",
+        "kind": "REMEDIATE",
+        "title": "Review the complete counted-noun rules",
+        "body": "These basic counting examples use nominative phrases. The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form. Other sentence cases require numeral declension as well as noun declension. A count ending in one outside the teen exception uses a nominative singular noun in the shown basic phrases. один час — один час. два часа — два часа. \n\nA count ending in two, three or four outside the teen exception uses a genitive singular noun in the basic construction. This is a grammatical singular form even though the count is greater than one.\n\nCounts ending in zero or five through nine use genitive plural in the basic construction. The teen exception also uses genitive plural. Ten and sixteen therefore fit this pattern. пять часов — пять часов. двадцать один час — двадцать один час. \n\nFor a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. Compare 21 and 22: their final digits select different noun cases; being larger than five is not enough to choose genitive plural. двадцать два часа — двадцать два часа. две девушки — two girls. \n\nFor a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. All counts from 11 through19 use genitive plural here. For 15 through19 the final digit already leads to genitive plural;11 through14 override the one/two/three/four ending pattern. пять девушек — five girls. шестнадцать рублей — sixteen rubles. \n\nThe example with 41 follows the final-one pattern and uses nominative singular for the counted noun. The example with 10 follows the zero-ending pattern and uses genitive plural. десять копеек — ten kopeks. сорок один год — forty-one years. \n\nThe count 203 ends in 03, so final three selects genitive singular in the basic counting phrase. The count 213 ends in 13, so the teen exception selects genitive plural. пять лет — пять лет. двести три собаки — two hundred and three dogs. \n\nFor a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. Compare the supplied 203 and 213 examples and the two kopeck examples. Count value and sentence construction govern the explanation. двести тринадцать собак — two hundred and thirteen dogs. Два́дцать две копе́йки — 22 kopecks. \n\nThe isolated table forms below illustrate genitive singular and genitive plural noun forms. They do not by themselves state a quantity or sentence context; apply the complete counted-noun rules to whole examples. Два́дцать пять копе́ек — 25 kopecks. стола́ — table. \n\nThese basic counting examples use nominative phrases. The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form. Other sentence cases require numeral declension as well as noun declension. For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. столо́в — table. ",
+        "exampleIds": [
+          "ex-u9-quantity-0",
+          "ex-u9-quantity-1",
+          "ex-u9-quantity-2",
+          "ex-u9-quantity-3",
+          "ex-u9-quantity-4",
+          "ex-u9-quantity-5",
+          "ex-u9-quantity-6",
+          "ex-u9-quantity-7",
+          "ex-u9-quantity-8",
+          "ex-u9-quantity-9",
+          "ex-u9-quantity-10",
+          "ex-u9-quantity-11",
+          "ex-u9-quantity-12",
+          "ex-u9-quantity-13",
+          "ex-u9-quantity-14",
+          "ex-or-u9-quantity-15",
+          "ex-or-u9-quantity-16"
+        ]
+      }
+    },
+    {
+      "before": {
+        "id": "u9-st-guided-quantity-1",
+        "kind": "GUIDED",
+        "title": "Guided practice",
+        "body": "Choose the admitted record. The feedback states the frozen field.",
+        "itemIds": [
+          "u9-g-quantity-0"
+        ],
+        "remediationStepId": "u9-st-rem-quantity"
+      },
+      "after": {
+        "id": "u9-st-guided-quantity-1",
+        "kind": "GUIDED",
+        "title": "Guided practice",
+        "body": "Read the whole example and choose the complete case explanation. Review all teaching and examples after a miss.",
+        "itemIds": [
+          "u9-g-quantity-0"
+        ],
+        "remediationStepId": "u9-st-rem-quantity"
+      }
+    },
+    {
+      "before": {
+        "id": "u9-st-check-quantity",
+        "kind": "CHECK",
+        "title": "Independent checks",
+        "body": "These checks use only admitted records. A miss returns to the explanation.",
+        "itemIds": [
+          "u9-i-quantity-1",
+          "u9-i-quantity-2",
+          "u9-i-quantity-3",
+          "u9-i-quantity-4",
+          "u9-i-quantity-5",
+          "u9-i-quantity-6",
+          "u9-i-quantity-7",
+          "u9-i-quantity-8",
+          "u9-i-quantity-9"
+        ],
+        "remediationStepId": "u9-st-rem-quantity"
+      },
+      "after": {
+        "id": "u9-st-check-quantity",
+        "kind": "CHECK",
+        "title": "Independent checks",
+        "body": "Read the whole example and choose the complete case explanation. Review all teaching and examples after a miss.",
+        "itemIds": [
+          "u9-i-quantity-1",
+          "u9-i-quantity-2",
+          "u9-i-quantity-3",
+          "u9-i-quantity-4",
+          "u9-i-quantity-5",
+          "u9-i-quantity-6",
+          "u9-i-quantity-7",
+          "u9-i-quantity-8",
+          "u9-i-quantity-9"
+        ],
+        "remediationStepId": "u9-st-rem-quantity"
+      }
+    },
+    {
+      "before": {
+        "id": "u9-st-teach-pattern-1",
+        "kind": "TEACH",
+        "title": "Admitted lines",
+        "body": "один час — один час. три кошки — three cats. ",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ],
+        "exampleIds": [
+          "ex-u9-pattern-0",
+          "ex-u9-pattern-1"
+        ]
+      },
+      "after": {
+        "id": "u9-st-teach-pattern-1",
+        "kind": "TEACH",
+        "title": "Identify the counting context",
+        "body": "These basic counting examples use nominative phrases. The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form. Other sentence cases require numeral declension as well as noun declension. In these basic examples, a final one outside the teen exception uses nominative singular; final two, three or four use genitive singular. один час — один час. три кошки — three cats. ",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ],
+        "exampleIds": [
+          "ex-u9-pattern-0",
+          "ex-u9-pattern-1"
+        ]
+      }
+    },
+    {
+      "before": {
+        "id": "u9-st-teach-pattern-2",
+        "kind": "TEACH",
+        "title": "Admitted instruction",
+        "body": "Notice that for the ''teens'' (11, 12, 13, 14, ... 19) ending on ''-надцать'' always the last rule is to be applied, no matter what digit they end on.",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ]
+      },
+      "after": {
+        "id": "u9-st-teach-pattern-2",
+        "kind": "TEACH",
+        "title": "Check the teen exception",
+        "body": "For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. All teen counts in the supplied basic examples take genitive plural.",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ]
+      }
+    },
+    {
+      "before": {
+        "id": "u9-st-teach-pattern-3",
+        "kind": "TEACH",
+        "title": "Admitted lines",
+        "body": "пять девушек — five girls. шестнадцать рублей — sixteen rubles. ",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ],
+        "exampleIds": [
+          "ex-u9-pattern-2",
+          "ex-u9-pattern-3"
+        ]
+      },
+      "after": {
+        "id": "u9-st-teach-pattern-3",
+        "kind": "TEACH",
+        "title": "Genitive plural examples",
+        "body": "Five and sixteen both use genitive plural in these counting examples. The complete value matters: a compound count ending in one outside the teen exception has a different pattern. пять девушек — five girls. шестнадцать рублей — sixteen rubles. ",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ],
+        "exampleIds": [
+          "ex-u9-pattern-2",
+          "ex-u9-pattern-3"
+        ]
+      }
+    },
+    {
+      "before": {
+        "id": "u9-st-teach-pattern-4",
+        "kind": "TEACH",
+        "title": "Admitted lines",
+        "body": "Я видел двух друзей — I saw two friends. Есть оди́н кот — There is one cat. ",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ],
+        "exampleIds": [
+          "ex-u9-pattern-4",
+          "ex-u9-pattern-5"
+        ]
+      },
+      "after": {
+        "id": "u9-st-teach-pattern-4",
+        "kind": "TEACH",
+        "title": "A sentence outside the basic pattern",
+        "body": "The I saw two friends sentence has an animate accusative object. Both the numeral and noun are declined; do not classify it with the basic nominative/inanimate accusative rule. The one-cat example below instead states existence in the basic nominative context. Я видел двух друзей — I saw two friends. Есть оди́н кот — There is one cat. ",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ],
+        "exampleIds": [
+          "ex-u9-pattern-4",
+          "ex-u9-pattern-5"
+        ]
+      }
+    },
+    {
+      "before": {
+        "id": "u9-st-teach-pattern-5",
+        "kind": "TEACH",
+        "title": "Admitted lines",
+        "body": "Пять рубле́й — Five roubles. ",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ],
+        "exampleIds": [
+          "ex-u9-pattern-6"
+        ]
+      },
+      "after": {
+        "id": "u9-st-teach-pattern-5",
+        "kind": "TEACH",
+        "title": "Review before practice",
+        "body": "These basic counting examples use nominative phrases. The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form. Other sentence cases require numeral declension as well as noun declension. For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. Пять рубле́й — Five roubles. ",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ],
+        "exampleIds": [
+          "ex-u9-pattern-6"
+        ]
+      }
+    },
+    {
+      "before": {
+        "id": "u9-st-rem-pattern",
+        "kind": "REMEDIATE",
+        "title": "Remediation",
+        "body": "Notice that for the ''teens'' (11, 12, 13, 14, ... 19) ending on ''-надцать'' always the last rule is to be applied, no matter what digit they end on.",
+        "exampleIds": [
+          "ex-u9-pattern-0",
+          "ex-u9-pattern-1"
+        ]
+      },
+      "after": {
+        "id": "u9-st-rem-pattern",
+        "kind": "REMEDIATE",
+        "title": "Review the complete counted-noun rules",
+        "body": "These basic counting examples use nominative phrases. The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form. Other sentence cases require numeral declension as well as noun declension. In these basic examples, a final one outside the teen exception uses nominative singular; final two, three or four use genitive singular. один час — один час. три кошки — three cats. \n\nFor a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. All teen counts in the supplied basic examples take genitive plural.\n\nFive and sixteen both use genitive plural in these counting examples. The complete value matters: a compound count ending in one outside the teen exception has a different pattern. пять девушек — five girls. шестнадцать рублей — sixteen rubles. \n\nThe I saw two friends sentence has an animate accusative object. Both the numeral and noun are declined; do not classify it with the basic nominative/inanimate accusative rule. The one-cat example below instead states existence in the basic nominative context. Я видел двух друзей — I saw two friends. Есть оди́н кот — There is one cat. \n\nThese basic counting examples use nominative phrases. The related noun-case pattern also applies in inanimate accusative contexts, with the appropriate noun form. Other sentence cases require numeral declension as well as noun declension. For a compound count, inspect the last two digits first. If they are 11, 12, 13 or 14, use genitive plural for the counted noun in the basic construction. Otherwise, the final digit selects the pattern: one, two-through-four, or zero/five-through-nine. Пять рубле́й — Five roubles. ",
+        "exampleIds": [
+          "ex-u9-pattern-0",
+          "ex-u9-pattern-1",
+          "ex-u9-pattern-2",
+          "ex-u9-pattern-3",
+          "ex-u9-pattern-4",
+          "ex-u9-pattern-5",
+          "ex-u9-pattern-6"
+        ]
+      }
+    },
+    {
+      "before": {
+        "id": "u9-st-guided-pattern-1",
+        "kind": "GUIDED",
+        "title": "Guided practice",
+        "body": "Choose the admitted record. The feedback states the frozen field.",
+        "itemIds": [
+          "u9-g-pattern-0"
+        ],
+        "remediationStepId": "u9-st-rem-pattern"
+      },
+      "after": {
+        "id": "u9-st-guided-pattern-1",
+        "kind": "GUIDED",
+        "title": "Guided practice",
+        "body": "Read the whole example and choose the complete case explanation. Review all teaching and examples after a miss.",
+        "itemIds": [
+          "u9-g-pattern-0"
+        ],
+        "remediationStepId": "u9-st-rem-pattern"
+      }
+    },
+    {
+      "before": {
+        "id": "u9-st-check-pattern",
+        "kind": "CHECK",
+        "title": "Independent checks",
+        "body": "These checks use only admitted records. A miss returns to the explanation.",
+        "itemIds": [
+          "u9-i-pattern-1",
+          "u9-i-pattern-2",
+          "u9-i-pattern-3",
+          "u9-i-pattern-4"
+        ],
+        "remediationStepId": "u9-st-rem-pattern"
+      },
+      "after": {
+        "id": "u9-st-check-pattern",
+        "kind": "CHECK",
+        "title": "Independent checks",
+        "body": "Read the whole example and choose the complete case explanation. Review all teaching and examples after a miss.",
+        "itemIds": [
+          "u9-i-pattern-1",
+          "u9-i-pattern-2",
+          "u9-i-pattern-3",
+          "u9-i-pattern-4"
+        ],
+        "remediationStepId": "u9-st-rem-pattern"
+      }
+    }
+  ],
+  "contextIdentities": {
+    "ca-rule-context:u9-g-quantity-0": {
+      "sourceHash": "ab01f9e22cd568a180d5f433b6445f4379bdb052b0095701a0f8371fb7b4665a",
+      "applications": [
+        {
+          "cue": "один час",
+          "answer": "In this basic counting phrase, the noun is nominative singular.",
+          "distractors": [
+            "In this basic counting phrase, the noun is genitive singular.",
+            "In this basic counting phrase, the noun is genitive plural."
+          ]
+        }
+      ],
+      "objectiveId": "obj-u9-quantity"
+    },
+    "ca-rule-context:u9-i-quantity-1": {
+      "sourceHash": "d7fb2d3ee1075d7dcd2f08704e83c8b38f6aa9ce5a829f2b0316b92fb657f690",
+      "applications": [
+        {
+          "cue": "двадцать два часа",
+          "answer": "In this basic counting phrase, the noun is genitive singular.",
+          "distractors": [
+            "In this basic counting phrase, the noun is nominative singular.",
+            "In this basic counting phrase, the noun is genitive plural."
+          ]
+        }
+      ],
+      "objectiveId": "obj-u9-quantity"
+    },
+    "ca-rule-context:u9-i-quantity-2": {
+      "sourceHash": "4c7a0cc8ef8593c47555c350c46289dfec00a23853e8a1db1c5b61ba36568280",
+      "applications": [
+        {
+          "cue": "пять часов",
+          "answer": "In this basic counting phrase, the noun is genitive plural.",
+          "distractors": [
+            "In this basic counting phrase, the noun is genitive singular."
+          ]
+        }
+      ],
+      "objectiveId": "obj-u9-quantity"
+    },
+    "ca-rule-context:u9-i-quantity-3": {
+      "sourceHash": "12ec03047cd976cdb3c6669b82e0dd04a6fd80aa0b408d3b9e5ad3194a68c82e",
+      "applications": [
+        {
+          "cue": "двадцать один час",
+          "answer": "In this basic counting phrase, the noun is nominative singular.",
+          "distractors": [
+            "In this basic counting phrase, the noun is genitive singular.",
+            "In this basic counting phrase, the noun is genitive plural."
+          ]
+        }
+      ],
+      "objectiveId": "obj-u9-quantity"
+    },
+    "ca-rule-context:u9-i-quantity-4": {
+      "sourceHash": "c6ba353fe2d21c6f2ffc6bf5b1859f236b0d0e45486c6c2a422530858327e61f",
+      "applications": [
+        {
+          "cue": "шестнадцать рублей",
+          "answer": "In this basic counting phrase, the noun is genitive plural.",
+          "distractors": [
+            "In this basic counting phrase, the noun is genitive singular."
+          ]
+        }
+      ],
+      "objectiveId": "obj-u9-quantity"
+    },
+    "ca-rule-context:u9-i-quantity-5": {
+      "sourceHash": "5ce51dde3f3e428ef1d697cd1603f8faf28ba05f406f91c46c656debfd210707",
+      "applications": [
+        {
+          "cue": "сорок один год",
+          "answer": "In this basic counting phrase, the noun is nominative singular.",
+          "distractors": [
+            "In this basic counting phrase, the noun is genitive plural."
+          ]
+        }
+      ],
+      "objectiveId": "obj-u9-quantity"
+    },
+    "ca-rule-context:u9-i-quantity-6": {
+      "sourceHash": "79329167565dcbb23404ccef54603e30f3e8f5fcff3272b77711da4fe22b1c03",
+      "applications": [
+        {
+          "cue": "двести тринадцать собак",
+          "answer": "In this basic counting phrase, the noun is genitive plural.",
+          "distractors": [
+            "In this basic counting phrase, the noun is genitive singular."
+          ]
+        }
+      ],
+      "objectiveId": "obj-u9-quantity"
+    },
+    "ca-rule-context:u9-i-quantity-7": {
+      "sourceHash": "d47c4cb2b1cb8ec3eb22f758df601e0989ff2f12692c982358f8593ef1c08e0c",
+      "applications": [
+        {
+          "cue": "десять копеек",
+          "answer": "In this basic counting phrase, the noun is genitive plural.",
+          "distractors": [
+            "In this basic counting phrase, the noun is nominative singular."
+          ]
+        }
+      ],
+      "objectiveId": "obj-u9-quantity"
+    },
+    "ca-rule-context:u9-i-quantity-8": {
+      "sourceHash": "61b4c87827f1a7396c6f8fb99109088e6df85ce3a8ad363c7b3d87cefe01ac34",
+      "applications": [
+        {
+          "cue": "два часа",
+          "answer": "In this basic counting phrase, the noun is genitive singular.",
+          "distractors": [
+            "In this basic counting phrase, the noun is genitive plural."
+          ]
+        }
+      ],
+      "objectiveId": "obj-u9-quantity"
+    },
+    "ca-rule-context:u9-i-quantity-9": {
+      "sourceHash": "4381b1e305641449e427937df95d0e97fb57fa537f894de2cc314e13b2b8a6c4",
+      "applications": [
+        {
+          "cue": "двести три собаки",
+          "answer": "In this basic counting phrase, the noun is genitive singular.",
+          "distractors": [
+            "In this basic counting phrase, the noun is genitive plural."
+          ]
+        }
+      ],
+      "objectiveId": "obj-u9-quantity"
+    },
+    "ca-rule-context:u9-g-pattern-0": {
+      "sourceHash": "ab01f9e22cd568a180d5f433b6445f4379bdb052b0095701a0f8371fb7b4665a",
+      "applications": [
+        {
+          "cue": "один час",
+          "answer": "In this basic counting phrase, the noun is nominative singular.",
+          "distractors": [
+            "In this basic counting phrase, the noun is genitive singular.",
+            "In this basic counting phrase, the noun is genitive plural."
+          ]
+        }
+      ],
+      "objectiveId": "obj-u9-pattern"
+    },
+    "ca-rule-context:u9-i-pattern-1": {
+      "sourceHash": "37a5960aee6cedbaf64ebeefdc141efd0709a5fd9421d6ca805411bb752ccc2b",
+      "applications": [
+        {
+          "cue": "три кошки",
+          "answer": "In this basic counting phrase, the noun is genitive singular.",
+          "distractors": [
+            "In this basic counting phrase, the noun is nominative singular.",
+            "In this basic counting phrase, the noun is genitive plural."
+          ]
+        }
+      ],
+      "objectiveId": "obj-u9-pattern"
+    },
+    "ca-rule-context:u9-i-pattern-2": {
+      "sourceHash": "40b9b54ba28f25c4d392169d54316bbed09497a217b7a3b3bdeb1e968bf73358",
+      "applications": [
+        {
+          "cue": "пять девушек",
+          "answer": "In this basic counting phrase, the noun is genitive plural.",
+          "distractors": [
+            "In this basic counting phrase, the noun is genitive singular."
+          ]
+        }
+      ],
+      "objectiveId": "obj-u9-pattern"
+    },
+    "ca-rule-context:u9-i-pattern-3": {
+      "sourceHash": "c0d8f40ceeac159db2e90171db8ab57913fc539b09ad14bcae5c263393ffb104",
+      "applications": [
+        {
+          "cue": "шестнадцать рублей",
+          "answer": "In this basic counting phrase, the noun is genitive plural.",
+          "distractors": [
+            "In this basic counting phrase, the noun is genitive singular.",
+            "In this basic counting phrase, the noun is nominative singular."
+          ]
+        }
+      ],
+      "objectiveId": "obj-u9-pattern"
+    },
+    "ca-rule-context:u9-i-pattern-4": {
+      "sourceHash": "8d56873c882a2014e2dcf857c9562428754d792439c78a44ad661009309fa5cf",
+      "applications": [
+        {
+          "cue": "Я видел двух друзей",
+          "answer": "In this line, the animate object is accusative and both numeral and noun are declined.",
+          "distractors": [
+            "In this line, use the basic nominative or inanimate accusative counting pattern."
+          ]
+        }
+      ],
+      "objectiveId": "obj-u9-pattern"
+    }
+  },
+  "bibliography": "Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0: complete Use of numerals in context, one/two/three/four and5-through20 examples, last-digit/last-two-digit interpretation,203 versus213, zero endings, and non-basic-case example I saw two friends. Retained Wikibooks Russian/Grammar/Accusative_case oldid4330404, CC BY-SA 4.0, Usage and Nouns: direct object and animate plural accusative shapes. Retained OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0: стол sg_gen and pl_gen fields for the already admitted isolated table forms. Bounded inference for the already admitted examples: basic standalone counting phrases use nominative context; choose noun nominative singular for final1 except11, genitive singular for final2/3/4 except12/13/14, genitive plural otherwise; inspect last two digits first. The animate object sentence lies outside the basic nominative/inanimate accusative pattern and declines both numeral and noun. No new Russian form or productive paradigm is supplied. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; qualified semantic audit pending.",
+  "semanticAcceptance": false
+}
