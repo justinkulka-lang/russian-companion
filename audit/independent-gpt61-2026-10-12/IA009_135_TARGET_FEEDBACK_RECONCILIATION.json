@@ -1,18 +1,21 @@
 {
   "originalDiagnosticTarget": "ebd71fd0d1226a5ce3ec9a310bb3638c3bc34fb9",
   "originalRawAssetSha256": "36d6c4b8fc55e0f8ca1d002536a0466006bd908befd57d609c609539ee42210e",
-  "currentRawAssetSha256": "844d36cc863e24c1e6890cb758f760c3353b6dc769dc4c8935a1619eff9f2097",
+  "currentRawAssetSha256": "69c7e0d715b87b233a0d0a93e33bc4bb13722fd7a3f852cba408ab9054fe501d",
   "originalLiteralFeedbackTargets": 135,
   "currentTargetsPresent": 135,
   "currentTargetsWithChangedFeedback": 135,
   "currentLiteralDoesFeedbackRows": 0,
-  "targetsWithScoredSourceChangesSinceDiagnostic": 30,
+  "targetsWithScoredSourceChangesSinceDiagnostic": 31,
   "original29ScoredSourceChangesMatchRetainedCompleteRuleLedgers": true,
   "additionalDistinctMasculineTransferChanges": [
     "u9-i-odindva-4"
   ],
-  "all30ScoredSourceChangesMatchRetainedSeparateLedgers": true,
-  "feedbackOnlyTargetsWithUnchangedScoredSourceFieldsSinceDiagnostic": 105,
+  "additionalReportedContextTransferChanges": [
+    "u13-g-reported-0"
+  ],
+  "all31ScoredSourceChangesMatchRetainedSeparateLedgers": true,
+  "feedbackOnlyTargetsWithUnchangedScoredSourceFieldsSinceDiagnostic": 104,
   "rows": [
     {
       "itemId": "u6-g-third-0",
@@ -1976,14 +1979,29 @@
       "itemId": "u13-g-reported-0",
       "objectiveId": "obj-u13-reported",
       "oldFeedback": "Does this answer show the reported evening? Она́ сказа́ла, что она́ ска́жет ему́ ве́чером.",
-      "currentFeedback": "Она́ сказа́ла, что она́ ска́жет ему́ ве́чером is the reported evening example: a past she said frame contains a future statement about telling him in the evening. The Moscow option is a future time clause and a plan to speak Russian, with no past reporting frame. The source supplies this pair; it is not a rule to replace every first-person pronoun mechanically with she.",
+      "currentFeedback": "In Он сказа́л, что он англича́нин, Past reporting verb with present nationality statement. The reporting verb is past and the nationality statement has no past copula. The alternative with был explicitly supplies a past copula and changes the stated reading; it is not universally ungrammatical. Recognize this supplied context; English backshift and Russian tense/pronoun choices are not automatic rules for every report.",
       "oldAnswer": "Она́ сказа́ла, что она́ ска́жет ему́ ве́чером",
-      "currentAnswer": "Она́ сказа́ла, что она́ ска́жет ему́ ве́чером",
+      "currentAnswer": "Past reporting verb with present nationality statement.",
       "currentDistractorReasons": [
         "",
-        "Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски is the future plan about Moscow, not the reported evening example."
+        "Past reporting verb with past nationality statement. This does not describe the finite forms in the supplied target context."
       ],
-      "scoredSourceFieldsChangedSinceDiagnostic": [],
+      "scoredSourceFieldsChangedSinceDiagnostic": [
+        "prompt",
+        "promptLetter",
+        "options",
+        "answer",
+        "sourceId",
+        "assessment.testedFeature",
+        "assessment.evidenceMode",
+        "assessment.contrastSetId",
+        "assessment.answerSourceIds",
+        "assessment.distractorSourceIds",
+        "assessment.contrastMembers",
+        "assessment.relationKind",
+        "assessment.relationParticipantIds",
+        "assessment.responseKind"
+      ],
       "semanticAcceptance": false
     },
     {
@@ -2268,7 +2286,7 @@
     }
   ],
   "scope": "LITERAL_INVENTORY_AND_FIELD_RECONCILIATION_NOT_TEST_COUNT_OR_SEMANTIC_AUDIT",
-  "sourceTupleExplanation": "Changes since the diagnostic include 29 separately retained context/cue and complete-rule corrections plus one newly ledgered Unit 9 distinct masculine-noun application. Earlier 106/29 receipts remain historical; the current split is 105/30. Individual feedback-only batches preserve their own baseline scored/source tuples; see each correction ledger and verification manifest. This report does not relabel those earlier changes as feedback-only.",
+  "sourceTupleExplanation": "Changes since the diagnostic include 29 separately retained context/cue and complete-rule corrections plus one Unit 9 distinct masculine-noun application and one Unit 13 distinct guided report interpretation. Earlier 106/29 and105/30 receipts remain historical; current split is104/31. Individual feedback-only batches preserve their own baseline scored/source tuples; see each correction ledger and verification manifest. This report does not relabel those earlier changes as feedback-only.",
   "remaining": "Independent semantic/source/rights verification, broader feedback/teaching/remediation review, IA012 category cues, IA016 duplicates and other findings remain open.",
   "formalAcceptance": false,
   "publicRelease": "NOT_APPROVED"

@@ -1,0 +1,503 @@
+{
+  "baselineCommit": "d7d84571fa8374c91561e1cdfde52d43ff79a787",
+  "beforeSha256": "844d36cc863e24c1e6890cb758f760c3353b6dc769dc4c8935a1619eff9f2097",
+  "afterSha256": "69c7e0d715b87b233a0d0a93e33bc4bb13722fd7a3f852cba408ab9054fe501d",
+  "changes": [
+    {
+      "before": {
+        "id": "u13-g-reported-0",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted line is the reported evening?",
+        "promptLetter": "Я скажу ему ве́чером",
+        "options": [
+          "Она́ сказа́ла, что она́ ска́жет ему́ ве́чером",
+          "Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски"
+        ],
+        "answer": "Она́ сказа́ла, что она́ ска́жет ему́ ве́чером",
+        "feedback": "Она́ сказа́ла, что она́ ска́жет ему́ ве́чером is the reported evening example: a past she said frame contains a future statement about telling him in the evening. The Moscow option is a future time clause and a plan to speak Russian, with no past reporting frame. The source supplies this pair; it is not a rule to replace every first-person pronoun mechanically with she.",
+        "objectiveId": "obj-u13-reported",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски is the future plan about Moscow, not the reported evening example."
+        ],
+        "assessment": {
+          "testedFeature": "REPORTED_EVENING",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u13-reported-0",
+          "cueLanguage": "ru",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ex-u13-reported-0-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-u13-reported-x-1"
+          ],
+          "distractorDifference": [
+            "",
+            "Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски is the future plan about Moscow, not the reported evening example."
+          ],
+          "whyAnswerDemonstratesObjective": "Она́ сказа́ла, что она́ ска́жет ему́ ве́чером is the reported evening example: a past she said frame contains a future statement about telling him in the evening. The Moscow option is a future time clause and a plan to speak Russian, with no past reporting frame. The source supplies this pair; it is not a rule to replace every first-person pronoun mechanically with she.",
+          "contrastMembers": [
+            "Она́ сказа́ла, что она́ ска́жет ему́ ве́чером",
+            "Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски"
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-ex-u13-reported-1-ru",
+            "prov-ex-u13-reported-0-ru",
+            "prov-u13-reported-x-1"
+          ],
+          "responseKind": "RUSSIAN_CLAUSE"
+        }
+      },
+      "after": {
+        "id": "u13-g-reported-0",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "In this supplied report of “I am English”, which English interpretation preserves the original present nationality statement?",
+        "promptLetter": "Он сказа́л, что он англича́нин",
+        "options": [
+          "Past reporting verb with present nationality statement.",
+          "Past reporting verb with past nationality statement."
+        ],
+        "answer": "Past reporting verb with present nationality statement.",
+        "feedback": "In Он сказа́л, что он англича́нин, Past reporting verb with present nationality statement. The reporting verb is past and the nationality statement has no past copula. The alternative with был explicitly supplies a past copula and changes the stated reading; it is not universally ungrammatical. Recognize this supplied context; English backshift and Russian tense/pronoun choices are not automatic rules for every report.",
+        "objectiveId": "obj-u13-reported",
+        "sourceId": "src-content-audit-research",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Past reporting verb with past nationality statement. This does not describe the finite forms in the supplied target context."
+        ],
+        "assessment": {
+          "testedFeature": "REPORTED_NATIONALITY_GUIDED",
+          "evidenceMode": "STATED_APPLICATION",
+          "contrastSetId": "u13-g-reported-0",
+          "cueLanguage": "ru",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ca-u13-report-transfer-u13-g-reported-0-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ca-u13-report-transfer-u13-g-reported-0-2"
+          ],
+          "distractorDifference": [
+            "",
+            "Past reporting verb with past nationality statement. This does not describe the finite forms in the supplied target context."
+          ],
+          "whyAnswerDemonstratesObjective": "In Он сказа́л, что он англича́нин, Past reporting verb with present nationality statement. The reporting verb is past and the nationality statement has no past copula. The alternative with был explicitly supplies a past copula and changes the stated reading; it is not universally ungrammatical. Recognize this supplied context; English backshift and Russian tense/pronoun choices are not automatic rules for every report.",
+          "contrastMembers": [
+            "Past reporting verb with present nationality statement.",
+            "Past reporting verb with past nationality statement."
+          ],
+          "relationKind": "STATED_APPLICATION",
+          "relationParticipantIds": [
+            "prov-ca-u13-report-transfer-u13-g-reported-0-0",
+            "prov-ca-u13-report-transfer-u13-g-reported-0-1",
+            "prov-ca-u13-report-transfer-u13-g-reported-0-2"
+          ],
+          "responseKind": "ENGLISH_CLASSIFICATION"
+        }
+      }
+    },
+    {
+      "before": null,
+      "after": {
+        "id": "u13-i-report-frame-time",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which English interpretation identifies the reporting verb and embedded action in this supplied evening report?",
+        "promptLetter": "Она́ сказа́ла, что она́ ска́жет ему́ ве́чером",
+        "options": [
+          "Past reporting verb with a future embedded action.",
+          "Future reporting verb with a past embedded action."
+        ],
+        "answer": "Past reporting verb with a future embedded action.",
+        "feedback": "In Она́ сказа́ла, что она́ ска́жет ему́ ве́чером, Past reporting verb with a future embedded action. The reporting verb said is past; the embedded verb about telling him retains future form. Future is interpreted within the reported content, not a guarantee that the action is after the present moment or has been completed. Recognize this supplied context; English backshift and Russian tense/pronoun choices are not automatic rules for every report.",
+        "objectiveId": "obj-u13-reported",
+        "sourceId": "src-content-audit-research",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Future reporting verb with a past embedded action. This does not describe the finite forms in the supplied target context."
+        ],
+        "assessment": {
+          "testedFeature": "REPORTED_FRAME_EMBEDDED_TIME",
+          "evidenceMode": "STATED_APPLICATION",
+          "contrastSetId": "u13-i-report-frame-time",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ca-u13-report-transfer-u13-i-report-frame-time-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ca-u13-report-transfer-u13-i-report-frame-time-2"
+          ],
+          "distractorDifference": [
+            "",
+            "Future reporting verb with a past embedded action. This does not describe the finite forms in the supplied target context."
+          ],
+          "whyAnswerDemonstratesObjective": "In Она́ сказа́ла, что она́ ска́жет ему́ ве́чером, Past reporting verb with a future embedded action. The reporting verb said is past; the embedded verb about telling him retains future form. Future is interpreted within the reported content, not a guarantee that the action is after the present moment or has been completed. Recognize this supplied context; English backshift and Russian tense/pronoun choices are not automatic rules for every report.",
+          "contrastMembers": [
+            "Past reporting verb with a future embedded action.",
+            "Future reporting verb with a past embedded action."
+          ],
+          "relationKind": "STATED_APPLICATION",
+          "relationParticipantIds": [
+            "prov-ca-u13-report-transfer-u13-i-report-frame-time-0",
+            "prov-ca-u13-report-transfer-u13-i-report-frame-time-1",
+            "prov-ca-u13-report-transfer-u13-i-report-frame-time-2"
+          ],
+          "responseKind": "ENGLISH_CLASSIFICATION"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "obj-u13-reported",
+        "unitNumber": 13,
+        "title": "Choose the admitted reported line",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u13-st-orient",
+          "u13-st-teach-reported-1",
+          "u13-st-teach-reported-2",
+          "u13-st-teach-reported-3"
+        ],
+        "exampleIds": [
+          "ex-u13-reported-0",
+          "ex-u13-reported-1",
+          "ex-u13-reported-2",
+          "ex-u13-reported-3"
+        ],
+        "practiceStepIds": [
+          "u13-st-guided-reported-1"
+        ],
+        "checkItemIds": [
+          "u13-i-reported-1",
+          "u13-i-reported-2"
+        ],
+        "remediationStepIds": [
+          "u13-st-rem-reported"
+        ]
+      },
+      "after": {
+        "id": "obj-u13-reported",
+        "unitNumber": 13,
+        "title": "Recognize supplied reports, direct statements and future time clauses",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u13-st-orient",
+          "u13-st-teach-reported-1",
+          "u13-st-teach-reported-2",
+          "u13-st-teach-reported-3"
+        ],
+        "exampleIds": [
+          "ex-u13-reported-0",
+          "ex-u13-reported-1",
+          "ex-u13-reported-2",
+          "ex-u13-reported-3"
+        ],
+        "practiceStepIds": [
+          "u13-st-guided-reported-1"
+        ],
+        "checkItemIds": [
+          "u13-i-reported-1",
+          "u13-i-reported-2",
+          "u13-i-report-frame-time"
+        ],
+        "remediationStepIds": [
+          "u13-st-rem-reported"
+        ]
+      }
+    },
+    {
+      "before": {
+        "id": "u13-s-reported",
+        "title": "Choose the admitted reported line",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u13-reported"
+        ],
+        "steps": [
+          {
+            "id": "u13-st-teach-reported-1",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "Она́ сказа́ла, что она́ ска́жет ему́ ве́чером — She said that she would speak to him in the evening. Я скажу ему ве́чером — I will tell him in the evening. ",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "exampleIds": [
+              "ex-u13-reported-0",
+              "ex-u13-reported-1"
+            ]
+          },
+          {
+            "id": "u13-st-guided-reported-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u13-g-reported-0"
+            ],
+            "remediationStepId": "u13-st-rem-reported"
+          },
+          {
+            "id": "u13-st-teach-reported-2",
+            "kind": "TEACH",
+            "title": "Admitted instruction",
+            "body": ":I will tell him in the evening - '''Я скажу ему ве́чером'''\n:She said that she would speak to him in the evening - '''Она́ сказа́ла, что она́ ска́жет ему́ ве́чером''' - ''perfective past and future as actions completed, definite, etc.''\n:When I'm in Moscow, I'll speak only in Russian - '''Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски'''",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ]
+          },
+          {
+            "id": "u13-st-teach-reported-3",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "Он сказа́л, что он англича́нин — we keep the tense the same. Он сказа́л, что он ''был'' англича́нином — был. ",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "exampleIds": [
+              "ex-u13-reported-2",
+              "ex-u13-reported-3"
+            ]
+          },
+          {
+            "id": "u13-st-rem-reported",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": ":I will tell him in the evening - '''Я скажу ему ве́чером'''\n:She said that she would speak to him in the evening - '''Она́ сказа́ла, что она́ ска́жет ему́ ве́чером''' - ''perfective past and future as actions completed, definite, etc.''\n:When I'm in Moscow, I'll speak only in Russian - '''Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски'''",
+            "exampleIds": [
+              "ex-u13-reported-0",
+              "ex-u13-reported-1"
+            ]
+          },
+          {
+            "id": "u13-st-check-reported",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u13-i-reported-1",
+              "u13-i-reported-2"
+            ],
+            "remediationStepId": "u13-st-rem-reported"
+          }
+        ]
+      },
+      "after": {
+        "id": "u13-s-reported",
+        "title": "Choose the admitted reported line",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u13-reported"
+        ],
+        "steps": [
+          {
+            "id": "u13-st-teach-reported-1",
+            "kind": "TEACH",
+            "title": "Interpret the nationality report",
+            "body": "A past reporting frame can contain a statement whose tense is interpreted from the reported speaker’s perspective. Он сказа́л, что он англича́нин has a past said verb and no past copula in the nationality statement. The supplied original is “I am English”. Past reporting verb with present nationality statement. is the matching description. The source’s alternative with a past copula changes the stated reading. That alternative can be grammatical in a different context; it is not this supplied present-nationality report. This nationality context was also taught earlier, so it is not unseen evidence.",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "exampleIds": [
+              "ex-u13-reported-0",
+              "ex-u13-reported-1"
+            ]
+          },
+          {
+            "id": "u13-st-teach-reported-2",
+            "kind": "TEACH",
+            "title": "Separate reporting time from embedded time",
+            "body": "Я скажу ему ве́чером is the direct statement “I will tell him in the evening”. Она́ сказа́ла, что она́ ска́жет ему́ ве́чером is the supplied reported evening context. Past reporting verb with a future embedded action. describes its two finite verbs: said is past, and the embedded telling action retains future form within reported content. This does not imply the action must still be future compared with the present moment. The source supplies these speaker/pronoun choices; do not mechanically replace every I with she or manufacture new reported clauses.",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ]
+          },
+          {
+            "id": "u13-st-teach-reported-3",
+            "kind": "TEACH",
+            "title": "Distinguish a report, direct statement and time clause",
+            "body": "Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски gives a future time clause and a plan to speak Russian. It has no past reporting frame. Existing independent choices distinguish this supplied Moscow plan and the direct evening statement. The added independent check must also interpret the evening report’s past reporting verb and future embedded action. English backshift is not compulsory in every report; preserving these source readings is not a universal rule that every tense or word stays unchanged. This small set supports recognition of supplied contexts, not unrestricted reported-speech production.",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "exampleIds": [
+              "ex-u13-reported-2",
+              "ex-u13-reported-3"
+            ]
+          },
+          {
+            "id": "u13-st-guided-reported-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Interpret the complete supplied context. A missed choice returns to all teaching cards and worked examples.",
+            "itemIds": [
+              "u13-g-reported-0"
+            ],
+            "remediationStepId": "u13-st-rem-reported"
+          },
+          {
+            "id": "u13-st-rem-reported",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": "A past reporting frame can contain a statement whose tense is interpreted from the reported speaker’s perspective. Он сказа́л, что он англича́нин has a past said verb and no past copula in the nationality statement. The supplied original is “I am English”. Past reporting verb with present nationality statement. is the matching description. The source’s alternative with a past copula changes the stated reading. That alternative can be grammatical in a different context; it is not this supplied present-nationality report. This nationality context was also taught earlier, so it is not unseen evidence.\n\nЯ скажу ему ве́чером is the direct statement “I will tell him in the evening”. Она́ сказа́ла, что она́ ска́жет ему́ ве́чером is the supplied reported evening context. Past reporting verb with a future embedded action. describes its two finite verbs: said is past, and the embedded telling action retains future form within reported content. This does not imply the action must still be future compared with the present moment. The source supplies these speaker/pronoun choices; do not mechanically replace every I with she or manufacture new reported clauses.\n\nКогда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски gives a future time clause and a plan to speak Russian. It has no past reporting frame. Existing independent choices distinguish this supplied Moscow plan and the direct evening statement. The added independent check must also interpret the evening report’s past reporting verb and future embedded action. English backshift is not compulsory in every report; preserving these source readings is not a universal rule that every tense or word stays unchanged. This small set supports recognition of supplied contexts, not unrestricted reported-speech production.",
+            "exampleIds": [
+              "ex-u13-reported-0",
+              "ex-u13-reported-1",
+              "ex-u13-reported-2",
+              "ex-u13-reported-3"
+            ]
+          },
+          {
+            "id": "u13-st-check-reported",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "Interpret the complete supplied context. A missed choice returns to all teaching cards and worked examples.",
+            "itemIds": [
+              "u13-i-reported-1",
+              "u13-i-reported-2",
+              "u13-i-report-frame-time"
+            ],
+            "remediationStepId": "u13-st-rem-reported"
+          }
+        ]
+      }
+    }
+  ],
+  "addedProvenanceIds": [
+    "prov-u13-report-transfer-native-nationality",
+    "prov-u13-report-transfer-native-past-nationality",
+    "prov-u13-report-transfer-native-evening",
+    "prov-ca-u13-report-transfer-u13-g-reported-0-0",
+    "prov-ca-u13-report-transfer-u13-g-reported-0-1",
+    "prov-ca-u13-report-transfer-u13-g-reported-0-2",
+    "prov-ca-u13-report-transfer-u13-g-reported-0-prompt",
+    "prov-ca-u13-report-transfer-u13-g-reported-0-feedback",
+    "prov-ca-u13-report-transfer-u13-g-reported-0-reason",
+    "prov-ca-u13-report-transfer-u13-i-report-frame-time-0",
+    "prov-ca-u13-report-transfer-u13-i-report-frame-time-1",
+    "prov-ca-u13-report-transfer-u13-i-report-frame-time-2",
+    "prov-ca-u13-report-transfer-u13-i-report-frame-time-prompt",
+    "prov-ca-u13-report-transfer-u13-i-report-frame-time-feedback",
+    "prov-ca-u13-report-transfer-u13-i-report-frame-time-reason",
+    "prov-ca-u13-report-transfer-objective-title",
+    "prov-ca-u13-report-transfer-teach-0-title",
+    "prov-ca-u13-report-transfer-teach-0-body",
+    "prov-ca-u13-report-transfer-teach-1-title",
+    "prov-ca-u13-report-transfer-teach-1-body",
+    "prov-ca-u13-report-transfer-teach-2-title",
+    "prov-ca-u13-report-transfer-teach-2-body",
+    "prov-ca-u13-report-transfer-u13-st-guided-reported-1-body",
+    "prov-ca-u13-report-transfer-remediation-body",
+    "prov-ca-u13-report-transfer-u13-st-check-reported-body"
+  ],
+  "nativeSelections": [
+    {
+      "itemId": "prov-u13-report-transfer-native-nationality",
+      "unitNumber": 13,
+      "objectiveId": "obj-u13-reported",
+      "recordType": "example",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Future_tense?oldid=3353822",
+      "sourceRevision": "3353822",
+      "sourceRecordId": "future-report-full-context:83ebe0a793af0039623aecdf1a0b3e548ba94af3d8ef89259089cc01791807b1",
+      "shippedText": "Он сказа́л, что он англича́нин",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "83ebe0a793af0039623aecdf1a0b3e548ba94af3d8ef89259089cc01791807b1",
+      "contentHash": "2562d2fa8f1de2890f3a7a0b8088edee6d2893c7609e3036feb64be1808581f8",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "originalSourceText": "=== Present or future? ===\n\nThere is also the decision whether to use the future tense at all, and there are three nuances between English and Russian. In English, when reporting a story, we usually change the tense of what was said: compare \"I ''am'' English\" with \"He said he ''was'' English\" - the reported verb changes tense. In Russian, however, we keep the tense the same, so the same report is literally, \"He said he '''is''' English\" - \"'''Он сказа́л, что он англича́нин'''\", not \"'''Он сказа́л, что он ''был'' англича́нином'''\". Whatever tense was used originally is kept.\n\nAnother nuance between English and Russian is using prepositions and time. In English, after 'if', 'until', 'while', 'when', etc, we use the present tense, even if we're referring to the future. For example, in \"If I fly, I'll phone you\", \"I fly\" is the present tense, even though we're referring to the future. Since Russian has less ambiguous grammar for tense and aspect, if they're referring to the future with those words, they use it: \"If I ''will fly'', I'll phone you\" - '''Если я ''полечу́'', Я тебе́ позвоню́'''.\n\nFinally, like in English, Russians can also use the present tense to refer to future events, if they're definitely going to happen: I'm going to America tomorrow - '''За́втра я ''е́ду'' в Аме́рику''', is present tense.\n\nExamples:\n:I will tell him in the evening - '''Я скажу ему ве́чером'''\n:She said that she would speak to him in the evening - '''Она́ сказа́ла, что она́ ска́жет ему́ ве́чером''' - ''perfective past and future as actions completed, definite, etc.''\n:When I'm in Moscow, I'll speak only in Russian - '''Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски'''"
+    },
+    {
+      "itemId": "prov-u13-report-transfer-native-past-nationality",
+      "unitNumber": 13,
+      "objectiveId": "obj-u13-reported",
+      "recordType": "example",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Future_tense?oldid=3353822",
+      "sourceRevision": "3353822",
+      "sourceRecordId": "future-report-full-context:83ebe0a793af0039623aecdf1a0b3e548ba94af3d8ef89259089cc01791807b1",
+      "shippedText": "Он сказа́л, что он был англича́нином",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "83ebe0a793af0039623aecdf1a0b3e548ba94af3d8ef89259089cc01791807b1",
+      "contentHash": "60ec708b70a093be7e3272a89aec3c52f81b719ef906073ee2a6165014cba015",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "originalSourceText": "=== Present or future? ===\n\nThere is also the decision whether to use the future tense at all, and there are three nuances between English and Russian. In English, when reporting a story, we usually change the tense of what was said: compare \"I ''am'' English\" with \"He said he ''was'' English\" - the reported verb changes tense. In Russian, however, we keep the tense the same, so the same report is literally, \"He said he '''is''' English\" - \"'''Он сказа́л, что он англича́нин'''\", not \"'''Он сказа́л, что он ''был'' англича́нином'''\". Whatever tense was used originally is kept.\n\nAnother nuance between English and Russian is using prepositions and time. In English, after 'if', 'until', 'while', 'when', etc, we use the present tense, even if we're referring to the future. For example, in \"If I fly, I'll phone you\", \"I fly\" is the present tense, even though we're referring to the future. Since Russian has less ambiguous grammar for tense and aspect, if they're referring to the future with those words, they use it: \"If I ''will fly'', I'll phone you\" - '''Если я ''полечу́'', Я тебе́ позвоню́'''.\n\nFinally, like in English, Russians can also use the present tense to refer to future events, if they're definitely going to happen: I'm going to America tomorrow - '''За́втра я ''е́ду'' в Аме́рику''', is present tense.\n\nExamples:\n:I will tell him in the evening - '''Я скажу ему ве́чером'''\n:She said that she would speak to him in the evening - '''Она́ сказа́ла, что она́ ска́жет ему́ ве́чером''' - ''perfective past and future as actions completed, definite, etc.''\n:When I'm in Moscow, I'll speak only in Russian - '''Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски'''"
+    },
+    {
+      "itemId": "prov-u13-report-transfer-native-evening",
+      "unitNumber": 13,
+      "objectiveId": "obj-u13-reported",
+      "recordType": "example",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Future_tense?oldid=3353822",
+      "sourceRevision": "3353822",
+      "sourceRecordId": "future-report-full-context:83ebe0a793af0039623aecdf1a0b3e548ba94af3d8ef89259089cc01791807b1",
+      "shippedText": "Она́ сказа́ла, что она́ ска́жет ему́ ве́чером",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "83ebe0a793af0039623aecdf1a0b3e548ba94af3d8ef89259089cc01791807b1",
+      "contentHash": "c8e6010b0c44c8a1bb53ff367c6e2429431de7167b8a4987f2cfebb8e4a14dbd",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "originalSourceText": "=== Present or future? ===\n\nThere is also the decision whether to use the future tense at all, and there are three nuances between English and Russian. In English, when reporting a story, we usually change the tense of what was said: compare \"I ''am'' English\" with \"He said he ''was'' English\" - the reported verb changes tense. In Russian, however, we keep the tense the same, so the same report is literally, \"He said he '''is''' English\" - \"'''Он сказа́л, что он англича́нин'''\", not \"'''Он сказа́л, что он ''был'' англича́нином'''\". Whatever tense was used originally is kept.\n\nAnother nuance between English and Russian is using prepositions and time. In English, after 'if', 'until', 'while', 'when', etc, we use the present tense, even if we're referring to the future. For example, in \"If I fly, I'll phone you\", \"I fly\" is the present tense, even though we're referring to the future. Since Russian has less ambiguous grammar for tense and aspect, if they're referring to the future with those words, they use it: \"If I ''will fly'', I'll phone you\" - '''Если я ''полечу́'', Я тебе́ позвоню́'''.\n\nFinally, like in English, Russians can also use the present tense to refer to future events, if they're definitely going to happen: I'm going to America tomorrow - '''За́втра я ''е́ду'' в Аме́рику''', is present tense.\n\nExamples:\n:I will tell him in the evening - '''Я скажу ему ве́чером'''\n:She said that she would speak to him in the evening - '''Она́ сказа́ла, что она́ ска́жет ему́ ве́чером''' - ''perfective past and future as actions completed, definite, etc.''\n:When I'm in Moscow, I'll speak only in Russian - '''Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски'''"
+    }
+  ],
+  "contextIdentities": {
+    "ca-rule-context:u13-g-reported-0": {
+      "sourceHash": "ab6b459efa2a85226d0bcce4b2da08039a14505f3ecbcc07863b9c529f2302d8",
+      "applications": [
+        {
+          "cue": "Он сказа́л, что он англича́нин",
+          "answer": "Past reporting verb with present nationality statement.",
+          "distractors": [
+            "Past reporting verb with past nationality statement."
+          ]
+        }
+      ],
+      "objectiveId": "obj-u13-reported"
+    },
+    "ca-rule-context:u13-i-report-frame-time": {
+      "sourceHash": "bb16858992d2aecc3561c7838fe8e44ea234e462e672eb1c2e7294c4ef7a52fb",
+      "applications": [
+        {
+          "cue": "Она́ сказа́ла, что она́ ска́жет ему́ ве́чером",
+          "answer": "Past reporting verb with a future embedded action.",
+          "distractors": [
+            "Future reporting verb with a past embedded action."
+          ]
+        }
+      ],
+      "objectiveId": "obj-u13-reported"
+    }
+  },
+  "bibliography": "Complete retained Wikibooks Future3353822 Present or future subsection with nationality comparison and direct/reported evening examples, existing CC BY-SA4.0 contributor-history/rights route Copyrights4622060. Native clauses preserve source stress/words/punctuation; only mechanical emphasis/link-label unfolding. Independent English,2026-10-13. Bounded supplied-context recognition, not generating reports or universally mandatory English backshift/Russian tense retention/pronoun replacement. The source mislabels быть perfective and overgeneralizes aspect/completion/repetition and every original tense; those claims are excluded. Guided nationality example has already been taught earlier; new report uses existing evening context, not unseen evidence. Source/rights/linguistic acceptance pending; no private book prose.",
+  "nativePinCodeSha256": "5f32e03eff4344040b4a1e8cf0e512a8b6b0b8fdee5652d4e2df2776050427fc",
+  "semanticAcceptance": false,
+  "unseenContextClaim": false,
+  "productiveReportedSpeechClaim": false
+}

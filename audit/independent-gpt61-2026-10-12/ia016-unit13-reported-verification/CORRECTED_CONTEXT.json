@@ -1,0 +1,12 @@
+{
+  "totals": {
+    "tests": 15,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "scope": "UNCOMMITTED_CORRECTED_FOCUSED_SCOPE_NOT_FINAL_INTEGRATION",
+  "command": "./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*Unit13ReportedTransferTest' --tests '*Unit13FeedbackCorrectionTest' --tests '*Units1115InstructionalValidityTest.everyRecognitionObjectiveHasAnIndependentFeatureValidCheck' --max-workers=4 --console=plain",
+  "rawCurriculumSha256": "69c7e0d715b87b233a0d0a93e33bc4bb13722fd7a3f852cba408ab9054fe501d",
+  "changesFromFailedInitial": "Added explicit target phrases for two new features; removed an unsupported alternative fragment from teaching while retaining its exact native source record; renewed canonical language only where current teaching changed. Legacy guide feedback assertion follows the new nationality context and retains universal-rule qualification."
+}

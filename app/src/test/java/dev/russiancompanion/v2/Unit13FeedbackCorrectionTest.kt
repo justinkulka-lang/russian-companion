@@ -39,7 +39,7 @@ class Unit13FeedbackCorrectionTest {
         for (id in listOf("u13-g-infinitive-0", "u13-i-infinitive-2"))
             assertTrue(p.item(id)!!.feedback.contains("say/tell meaning"))
         assertTrue(p.item("u13-i-infinitive-1")!!.feedback.contains("rather than assuming that adding any prefix"))
-        assertTrue(p.item("u13-g-reported-0")!!.feedback.contains("not a rule to replace every first-person pronoun mechanically"))
+        assertTrue(p.item("u13-g-reported-0")!!.feedback.contains("not automatic rules for every report"))
         assertTrue(p.item("u13-i-reported-1")!!.feedback.contains("without a past reporting frame"))
         assertTrue(p.item("u13-i-reported-2")!!.feedback.contains("Both clauses refer to the future"))
         val validation = V2Validator.validate(p)

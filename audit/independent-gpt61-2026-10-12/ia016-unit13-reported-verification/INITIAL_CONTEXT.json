@@ -1,0 +1,12 @@
+{
+  "counts": {
+    "tests": 10,
+    "failures": 1,
+    "errors": 0,
+    "skipped": 0
+  },
+  "scope": "UNCOMMITTED_INITIAL_IMPLEMENTATION",
+  "rawCurriculumSha256": "805796fe8ed9b4e0addb6dbfa22dd6d7215609acb1327149572899cad7a13f2e",
+  "failure": "Full validator rejects unbound native fragment and two new features without explicit target phrases. Correction must add explicit targets and preserve source bindings; no validator bypass.",
+  "exitCode": 1
+}

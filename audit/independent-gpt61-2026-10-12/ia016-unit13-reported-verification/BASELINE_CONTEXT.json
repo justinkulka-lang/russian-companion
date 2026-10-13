@@ -1,0 +1,19 @@
+{
+  "repositoryCommit": "d7d84571fa8374c91561e1cdfde52d43ff79a787",
+  "command": "./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*Unit13ReportedBaselineTest' --max-workers=4 --console=plain",
+  "exitCode": 1,
+  "counts": {
+    "tests": 3,
+    "failures": 2,
+    "errors": 0,
+    "skipped": 0
+  },
+  "passed": 1,
+  "expectedFailures": [
+    "reportedObjectiveNeedsItsOwnIndependentFrameAndEmbeddedTimeInterpretation",
+    "laterGuideNeedsDifferentContextFromTheEarlierEveningCheck"
+  ],
+  "workingTree": "Only temporary untracked baseline harness added to app tests; archived outside app and removed after capture. Production inputs unchanged.",
+  "xmlSha256": "24f3bc9e6b82bb52decff4c0e9ae4e116904e44827c8805a53133802925cc92f",
+  "curriculumSha256": "844d36cc863e24c1e6890cb758f760c3353b6dc769dc4c8935a1619eff9f2097"
+}
