@@ -1,0 +1,12 @@
+{
+  "repositoryHead": "98b5b30ffc224b1119bc975fc698386ce8b91d3f",
+  "workingTree": "Uncommitted application prototype, not pristine baseline",
+  "rawAssetSha256": "047e265d74890f2c0f8577d1eea80450a0340841a4131a2cc00f88f908d60527",
+  "nativePinCodeSha256": "4ac717dc8a6a6d542ee22b92ae81f0e9c5a6f11df59ee45bd1b2c77cddbc0fd9",
+  "command": "source /workspace/setup/android-env.sh; ./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*Unit29AdjectiveApplicationTest' --tests '*Unit29InstructionTest' --max-workers=4 --console=plain",
+  "tests": 6,
+  "failures": 1,
+  "errors": 0,
+  "skipped": 0,
+  "resolution": "Retained Wikibooks copyright route attribution added; independent agreement cues use exact native noun phrases tagged ru, without weakening validation."
+}

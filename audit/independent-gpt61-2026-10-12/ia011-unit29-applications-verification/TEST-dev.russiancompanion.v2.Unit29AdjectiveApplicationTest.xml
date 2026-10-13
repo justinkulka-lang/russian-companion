@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit29AdjectiveApplicationTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-13T14:18:21.106Z" hostname="d0fbcd1608d3" time="89.207">
+  <properties/>
+  <testcase name="authenticHistoricalClassificationAttemptsSurviveButCannotCreditNewContent" classname="dev.russiancompanion.v2.Unit29AdjectiveApplicationTest" time="33.326"/>
+  <testcase name="playerRejectsAttributiveAnswerForTheCompleteLongFormPredicate" classname="dev.russiancompanion.v2.Unit29AdjectiveApplicationTest" time="10.723"/>
+  <testcase name="originalClassificationItemsAloneCannotCompleteTheExpandedObjective" classname="dev.russiancompanion.v2.Unit29AdjectiveApplicationTest" time="3.745"/>
+  <testcase name="coordinatedNativeTextAndHashForgeryCannotReplaceThePredicateExample" classname="dev.russiancompanion.v2.Unit29AdjectiveApplicationTest" time="9.297"/>
+  <testcase name="playerRejectsNeuterShortFormForTheFeminineHeadNoun" classname="dev.russiancompanion.v2.Unit29AdjectiveApplicationTest" time="5.206"/>
+  <testcase name="coordinatedApplicationAndKeyEditsCannotMakeTheFeminineSubjectNeuter" classname="dev.russiancompanion.v2.Unit29AdjectiveApplicationTest" time="12.97"/>
+  <testcase name="classificationCreditMustAlsoRequireAgreementAndSentenceFunctionChecks" classname="dev.russiancompanion.v2.Unit29AdjectiveApplicationTest" time="7.733"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+]]></system-err>
+</testsuite>

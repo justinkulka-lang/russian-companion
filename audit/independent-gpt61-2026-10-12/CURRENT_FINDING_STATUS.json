@@ -98,17 +98,28 @@
       "findingId": "IA011",
       "producerSeverity": "HIGH",
       "producerStatus": "OPEN",
-      "engineeringDisposition": "PARTIAL_FORM_RECOGNITION_CORRECTED_PENDING_INDEPENDENT_VERIFICATION_BROADER_AGREEMENT_AND_SENTENCE_APPLICATION_OPEN",
+      "engineeringDisposition": "ENGINEERING_FIX_PENDING_INDEPENDENT_VERIFICATION",
       "formalAcceptance": false,
       "implementationCommit": "f844dd187be8e2e4d650c40305655815c8b2c3ec",
-      "evidencePath": "ia011-unit29-verification/FINAL_VERIFICATION_MANIFEST.json",
+      "evidencePath": "ia011-unit29-applications-verification/FINAL_VERIFICATION_MANIFEST.json",
       "grammarItemIds": [
         "u29-g-adjective-form-0",
         "u29-i-adjective-form-1",
         "u29-i-adjective-form-2"
       ],
       "vocabularyObjectiveId": "obj-u29-adjective-vocabulary",
-      "broaderAgreementAndSentenceApplication": "OPEN"
+      "broaderAgreementAndSentenceApplication": "BOUNDED_APPLICATIONS_IMPLEMENTED_PENDING_INDEPENDENT_VERIFICATION",
+      "applicationImplementationCommit": "73a40c14b8afb01b521bddf24179c3454f0bae04",
+      "newIndependentAgreementItemIds": [
+        "u29-i-short-agreement-f",
+        "u29-i-short-agreement-n",
+        "u29-i-short-agreement-pl"
+      ],
+      "newIndependentFunctionItemIds": [
+        "u29-i-adjective-function-p",
+        "u29-i-adjective-function-a"
+      ],
+      "unrestrictedGrammarClaim": false
     },
     {
       "findingId": "IA012",
@@ -164,20 +175,20 @@
   "semanticAcceptancePromoted": false,
   "physicalDeviceAcceptance": "OUTSTANDING",
   "release": "NOT_APPROVED",
-  "latestValidatorImplementationCommit": "f844dd187be8e2e4d650c40305655815c8b2c3ec",
-  "latestSourceBindingCheckpoint": "bc3db47dbb167a08dac05fda38ef368f62224249",
+  "latestValidatorImplementationCommit": "73a40c14b8afb01b521bddf24179c3454f0bae04",
+  "latestSourceBindingCheckpoint": "95469406f1440e6d5d0b2ad1987f1b9d3a304823",
   "remainingSourceReviewPointers": [
     "IA007_SOURCE_REVIEW_PENDING.md",
     "IA008_SOURCE_REVIEW_PENDING.md"
   ],
   "firstBatchImplementationCommit": "4f5cb8024d3f68a37052fdf85b5755bffa2a0904",
   "firstBatchPacketCheckpoint": "49af91a0f5578c63a3b9b98bbe975f40d2758fcc",
-  "latestCurriculumImplementationCommit": "f844dd187be8e2e4d650c40305655815c8b2c3ec",
+  "latestCurriculumImplementationCommit": "73a40c14b8afb01b521bddf24179c3454f0bae04",
   "acceptanceOrder": [
     "FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
     "PHYSICAL_DEVICE_ACCEPTANCE_LAST"
   ],
   "physicalDeviceEvidenceRequestTiming": "AFTER_FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
   "latestAppImplementationCommit": "c82e5b4a305c960ca41f660071d0da25070631ea",
-  "latestVerifiedRepositoryCommit": "bc3db47dbb167a08dac05fda38ef368f62224249"
+  "latestVerifiedRepositoryCommit": "95469406f1440e6d5d0b2ad1987f1b9d3a304823"
 }
