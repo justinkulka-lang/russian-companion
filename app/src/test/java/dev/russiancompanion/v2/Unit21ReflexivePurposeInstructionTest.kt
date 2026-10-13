@@ -9,7 +9,7 @@ import java.io.File
 class Unit21ReflexivePurposeInstructionTest {
     @Test fun completeInstructionAndRemediationCoverEveryCheckedCueBeforePractice() {
         val p = pack()
-        for ((slug, count) in mapOf("svoy" to 4, "object-reference" to 2, "purpose" to 3)) {
+        for ((slug, count) in mapOf("svoy" to 4, "object-reference" to 3, "purpose" to 3)) {
             val s = p.unit(21)!!.sessions.first { it.id == "u21-s-$slug" }
             val teaches = s.steps.takeWhile { it.kind != "GUIDED" }.filter { it.kind == "TEACH" }
             assertEquals(count, teaches.size)
@@ -49,7 +49,9 @@ class Unit21ReflexivePurposeInstructionTest {
         assertTrue(V2Validator.featureValid(p,i))
         assertFalse(p.item("u21-g-object-reference-0")!!.prompt.contains("equals sign"))
         val records = p.provenanceRecords.filter { it.itemId.startsWith("prov-ca-u21-") }
-        assertEquals(75,records.size)
+        assertEquals(75,records.count { !it.itemId.startsWith("prov-ca-u21-object-transfer-") })
+        assertEquals(10,records.count { it.itemId.startsWith("prov-ca-u21-object-transfer-") })
+        assertEquals(85,records.size)
         records.forEach { assertContentAuditResearch(it) }
         assertTrue(V2Validator.validate(p).errors.joinToString("\n"), V2Validator.validate(p).ok)
         assertEquals("DEVELOPMENT",p.unit(21)!!.installState)

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit21ObjectTransferTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-10-13T20:01:49.300Z" hostname="d0fbcd1608d3" time="41.745">
+  <properties/>
+  <testcase name="playerRejectsTheOtherPersonAndExplainsReflexiveReference" classname="dev.russiancompanion.v2.Unit21ObjectTransferTest" time="19.592"/>
+  <testcase name="coordinatedKeyAndApplicationCannotReverseReflexiveReference" classname="dev.russiancompanion.v2.Unit21ObjectTransferTest" time="4.793"/>
+  <testcase name="historicalThreeAnswerCompletionStaysSavedButCannotCreditCurrentContent" classname="dev.russiancompanion.v2.Unit21ObjectTransferTest" time="0.58"/>
+  <testcase name="allThreeCardsPrecedePracticeAndRemediationRestoresThem" classname="dev.russiancompanion.v2.Unit21ObjectTransferTest" time="0.216"/>
+  <testcase name="forgedOldRevisionAndGhostRecordCannotUseTheNewSource" classname="dev.russiancompanion.v2.Unit21ObjectTransferTest" time="5.07"/>
+  <testcase name="exactSourcePairAndOtherCorrectFieldsArePreserved" classname="dev.russiancompanion.v2.Unit21ObjectTransferTest" time="3.053"/>
+  <testcase name="restoringTheOriginalValidRepeatedContrastCannotClearDistinctReflexiveEvidence" classname="dev.russiancompanion.v2.Unit21ObjectTransferTest" time="2.93"/>
+  <testcase name="guidedAndWifeMeaningCannotCompleteTheDistinctReflexiveCheck" classname="dev.russiancompanion.v2.Unit21ObjectTransferTest" time="0.306"/>
+  <testcase name="coherentNativeTextAndHashForgeryCannotChangeTheReflexiveSource" classname="dev.russiancompanion.v2.Unit21ObjectTransferTest" time="3.372"/>
+  <testcase name="completedObjectReferenceNeedsADistinctIndependentReflexiveContext" classname="dev.russiancompanion.v2.Unit21ObjectTransferTest" time="0.415"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+]]></system-err>
+</testsuite>

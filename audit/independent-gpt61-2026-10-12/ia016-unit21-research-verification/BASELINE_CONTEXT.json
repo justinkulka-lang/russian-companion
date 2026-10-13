@@ -1,0 +1,14 @@
+{
+  "repositoryCommit": "6434cd12cdb22d0bbf6f7f848191d46b46501fca",
+  "command": "source /workspace/setup/android-env.sh; ./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*Unit21ObjectTransferTest' --max-workers=4 --console=plain",
+  "scope": "ORIGINAL_THREE_ANSWER_OBJECTIVE_COMPLETION_THEN_EXPECTED_DISTINCT_CONTEXT_FAILURE",
+  "tests": 1,
+  "failures": 1,
+  "errors": 0,
+  "skipped": 0,
+  "exitCode": 1,
+  "timestamp": "2026-10-13T19:51:42.194Z",
+  "uncommittedTestHarness": true,
+  "xmlSha256": "767c9252fda091750a10641baed0f4be1b3340ff058f47e901f259b21802715d",
+  "rawCurriculumSha256": "5f13e8560d250ca3b3d195ebb2dccae56c8766ca165c9365f2f402af2181a44b"
+}

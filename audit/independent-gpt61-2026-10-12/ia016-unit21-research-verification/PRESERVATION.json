@@ -1,0 +1,30 @@
+{
+  "baselineCommit": "6434cd12cdb22d0bbf6f7f848191d46b46501fca",
+  "oldProvenanceRecords": 6683,
+  "newPendingRecords": 14,
+  "newPrimaryNativeSelections": 4,
+  "newEnglishContextCoverageRecords": 10,
+  "allPriorProvenanceUnchanged": true,
+  "all58CapabilitiesAndOriginalSourcesRightsMappingsUnchanged": true,
+  "allOriginalExamplesUnchanged": true,
+  "allOtherUnitsUnchanged": true,
+  "allOtherItemsIncludingCorrectGuidedMyselfAndIndependentWifeFieldsUnchanged": true,
+  "all63PriorCanonicalPinsUnchanged": true,
+  "newPins": 1,
+  "oneIndependentReflexiveContextReplaced": true,
+  "noItemsExamplesObjectivesRemoved": true,
+  "threeTeachingCardsBeforePracticeAndCompleteRemediation": true,
+  "nativeSourceWordsUnchangedAndNoStressInserted": true,
+  "deterministicBaselineReplay": true,
+  "nativePinCodeReplayByteIdentical": true,
+  "byteIdempotent": true,
+  "allNineOriginalDiagnosticDeliverableHashesUnchanged": true,
+  "rawCurriculumSha256": "b69fa96ba5f948b06eff67163d462136d9a6fb9e467378e1fe9621535af798b3",
+  "frozenPublicSources": {
+    "audit/independent-gpt61-2026-10-12/ia016-unit21-research-verification/public-candidates-2026-10-13/enwiki-reflexive-1374712982.wikitext.txt": "0d3aa40c1f8ccc9b3468b0d36273a104360640af336a598d31dda0eaffbdb12d",
+    "audit/independent-gpt61-2026-10-12/ia016-unit21-research-verification/public-candidates-2026-10-13/enwiki-reflexive-586336289.wikitext.txt": "fd86f2d388ece7e4aaf38dcd9dee3f25591ef18dfb4f2c855c2cc8efa2f54643"
+  },
+  "semanticAcceptance": false,
+  "productiveReflexiveClaim": false,
+  "allCasesClaim": false
+}

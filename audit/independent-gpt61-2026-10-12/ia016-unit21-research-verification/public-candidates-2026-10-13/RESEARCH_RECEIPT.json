@@ -1,0 +1,47 @@
+{
+  "repositoryBaseline": "6434cd12cdb22d0bbf6f7f848191d46b46501fca",
+  "records": [
+    {
+      "name": "ruwiki-reflexive-plural",
+      "title": "Возвратные местоимения",
+      "revision": 154034048,
+      "parent": 148365580,
+      "timestamp": "2026-07-20T17:30:43Z",
+      "providerSha1": "804bbc23f1c9b94b9fca5b4698a481b5020542ea",
+      "bytes": 12618,
+      "sha256": "1cf8ed9585b01b3b7c98ad4c73292b65c84248d62a11da5636a9164772231d01",
+      "responseSha256": "ff327c90fd101f52387704d9bb28af9804b4a3c03c13703e16f199e4d7b81b21",
+      "status": "UNADMITTED_RESEARCH_CANDIDATE_AT_BASELINE"
+    },
+    {
+      "name": "enwiki-reflexive",
+      "title": "Reflexive pronoun",
+      "revision": 1374712982,
+      "parent": 1372861810,
+      "timestamp": "2026-09-13T18:04:57Z",
+      "providerSha1": "64b35f5856e88d58e8140de214d3aa14d2d26892",
+      "bytes": 48253,
+      "sha256": "0d3aa40c1f8ccc9b3468b0d36273a104360640af336a598d31dda0eaffbdb12d",
+      "responseSha256": "9498c85c7fa760cdf53398360cfa0c8b528ca65f513410e2fcf493e25609948f",
+      "status": "UNADMITTED_RESEARCH_CANDIDATE_AT_BASELINE"
+    }
+  ],
+  "requests": [
+    {
+      "host": "en.wikibooks.org",
+      "title": "Russian/Reflexive Pronouns",
+      "result": "HTTP200_MISSING_PAGE"
+    },
+    {
+      "host": "ru.wikipedia.org",
+      "title": "Возвратное местоимение",
+      "result": "HTTP200_REDIRECT_TO_PLURAL_TITLE"
+    },
+    {
+      "host": "en.wiktionary.org",
+      "title": "себя",
+      "result": "PROXY_TUNNEL_HTTP403"
+    }
+  ],
+  "formalAcceptance": false
+}

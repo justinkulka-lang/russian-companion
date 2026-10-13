@@ -2653,6 +2653,9 @@ internal object V2Validator {
     private fun validateGovernedChecks(pack: V2CurriculumPack, unit: V2Unit, errors: MutableList<String>) {
         val generic = "Return to the explanation. Compare the shown form with the admitted record."
         unit.objectives.filter { it.kind == "RECOGNITION" }.forEach { objective ->
+            if (objective.id == "obj-u21-object-reference" && !Unit21ObjectPins.matches(pack)) {
+                errors += "Objective ${objective.id} has no frozen distinct reflexive object application chain"
+            }
             if (objective.id == "obj-u9-odindva" && !Unit9AgreementPins.matches(pack)) {
                 errors += "Objective ${objective.id} has no frozen distinct masculine numeral application chain"
             }
@@ -4982,6 +4985,9 @@ internal object V2Validator {
                 ) {
                     errors += "Provenance ${record.itemId} Wikipedia license route is missing"
                 }
+            }
+            if (record.sourceId == Unit21ObjectPins.SOURCE && !Unit21ObjectPins.admittedNative(record)) {
+                errors += "Provenance ${record.itemId} distinct reflexive object source identity is not admitted"
             }
             if (record.sourceId.startsWith("src-ruwiki-")) {
                 val copyright = "\u0412\u0438\u043a\u0438\u043f\u0435\u0434\u0438\u044f:\u0410\u0432\u0442\u043e\u0440\u0441\u043a\u0438\u0435 \u043f\u0440\u0430\u0432\u0430 oldid ${BatchARemainingSources.RU_COPYRIGHT_OLDID}"

@@ -1,0 +1,889 @@
+{{Short description|Anaphoric pronoun}}
+{{Redirect-several|link=off|dab=off|text=like "myself" and "yourself"|{{Section link||Works}}}}
+{{more citations needed|date=May 2022}}
+ {{Transitivity and Valency}}
+ 
+A '''reflexive pronoun''' is a [[pronoun]] that refers to another noun or pronoun (its [[Antecedent (grammar)|antecedent]]) within the same sentence.{{cn|date=March 2026}}
+ 
+In the [[English language]] specifically, a reflexive pronoun will end in ''-self'' or ''-selves'', and refer to a previously named noun or pronoun (''myself'', ''yourself'', ''ourselves'', ''themselves'', etc.). English [[intensive pronouns]], used for emphasis, take the same form.
+ 
+In [[generative grammar]], a reflexive pronoun is an [[anaphora (linguistics)|anaphor]] that must be bound by its antecedent (see [[binding (linguistics)|binding]]). In a general sense, it is a [[noun phrase]] that obligatorily gets its meaning from another noun phrase in the sentence.<ref>{{cite book|last=Carnie|first=Andrew|title=Syntax: A Generative Introduction|year=2013|publisher=Wiley-Blackwell}}</ref> Different languages have different [[Binding (linguistics)#Binding domains|binding domains]] for reflexive pronouns, according to their structure.
+
+==Origins and usage of reflexive pronouns==
+
+In [[Indo-European languages]], the reflexive pronoun has its origins in [[Proto-Indo-European language|Proto-Indo-European]].{{Dubious|date=June 2024}}{{cn|date=March 2026}}{{text-source|date=June 2024}} In some languages, some distinction exists between normal object and reflexive pronouns, mainly in the third person: whether one says "I like me" or "I like myself", there is no question that the object is the same person as the subject; but, in "They like them(selves)", there can be uncertainty about the identity of the object unless a distinction exists between the reflexive and the nonreflexive. In some languages, this distinction includes [[genitive case|genitive]] forms: see, for instance, the Danish examples below. In languages with a distinct reflexive pronoun form, it is often [[gender-neutral pronoun|gender-neutral]].
+
+A reflexive pronoun is normally used when the object of a sentence is the same as the subject. Each personal pronoun (such as ''I'', ''you'', ''he'' and ''she'') has its own reflexive form:
+ 
+* ''I — myself''
+* ''thou — thyself/thyselves'' (archaic)
+* ''he — himself'' 
+* ''she — herself'' 
+* ''it — itself''
+* ''we — ourselves''
+* ''you — yourself/yourselves'' 
+* ''they — themself/themselves'' 
+* ''one — oneself''
+
+These pronouns can also be used ''intensively'', to emphasize the identity of whoever or whatever is being talked about:
+
+* Jim bought '''himself''' a book (reflexive)
+* Jim '''himself''' bought a book (intensive)
+ 
+[[Intensive pronoun]]s usually appear near and/or before the subject of the sentence.
+ 
+Usually, after prepositions of locality it is preferred to use a [[Personal pronoun|personal]] object pronoun rather than a reflexive pronoun:<ref>{{Cite book|title=A Practical English Grammar|last=Martinet and Thomson|first=Agnes and Audrey|publisher=Oxford University Press|year=1986|isbn=0-19-431347-6|location=Oxford|pages=[https://archive.org/details/practicalenglish00thom/page/55 55]|url=https://archive.org/details/practicalenglish00thom/page/55}}</ref>
+ 
+* Close the door ''after you.'' (NOT ''... after yourself.'')
+* He was pulling a small cart ''behind him.'' (NOT ''... behind himself.'')
+* She took her dog ''with her.'' (NOT ... ''with herself.'')
+ 
+Compare:
+
+* She's very pleased ''with herself.'' (NOT ... ''with her.'')
+ 
+Certain verbs have reflexive pronouns in some languages but not in English:<ref>{{Cite book|title=Advanced Grammar in Use|url=https://archive.org/details/advacedgrammaris00hewi|url-access=limited|last=Hewings|first=Martin|publisher=Cambridge University Press|year=1999|isbn=0-521-49868-6|location=Cambridge|pages=[https://archive.org/details/advacedgrammaris00hewi/page/n160 152]}}</ref>
+ 
+* Do you ''shave'' on Sundays? (NOT Do you ''shave yourself'' on Sundays?)
+* Try to ''concentrate.'' (NOT Try to ''concentrate yourself'')
+* I ''feel'' strange''.'' (NOT I ''feel myself'' strange.)
+
+Compare to French:
+
+* {{lang|fr|''Te rases''-tu le dimanche ?|italic=unset}} (''te'' is the second person singular reflexive pronoun in French, but it can serve as an object pronoun)
+* {{lang|fr|Essaie de ''te concentrer''.|italic=unset}}
+* {{lang|fr|Je ''me sens'' étrange.|italic=unset}}
+
+ 
+The list of such verbs:
+ 
+* ''acclimatize, adapt, behave, complain, concentrate, hide, get up/hot/tired, lie down, meet, move, relax, remember, shave, sit down, undress, wake up, wash...''
+
+==Non-reflexive usage in English==
+
+Non-reflexive use of reflexive pronouns is rather common in English. Most of the time, reflexive pronouns function as [[emphatic pronoun]]s that highlight or emphasize the individuality or particularity of the noun. Grammatically, the position of reflexive pronouns in this usage is either right after the noun the pronouns are emphasizing or, if the noun is subject, after-verb-or-object position is also possible. For example, "Why don't you ''yourself'' do the job?", "Why don't you do the job ''yourself''?", or "I want to fix my phone ''itself''; I will not fix your watch as well."<ref>{{Cite book|title=Practical English Usage|edition=Third|last=Michael|first=Swan|publisher=Oxford University Press|year=2005|isbn=9780194420983|location=Oxford|pages=476–477}}</ref>
+ 
+Some speakers use reflexive pronouns without local linguistic antecedents to refer to discourse participants or people already referenced in a discourse: for example, "Please, forward the information to ''myself'', Anything else for ''yourself'' today?" Within the linguistics literature, reflexives with discourse antecedents are often referred to as [[Logophoricity|logophor]]s. Standard English allows use of logophors in some contexts: for example, "John was angry. Embarrassing pictures of himself were on display." However, within Standard English, this logophoric use of reflexives is generally limited to positions where the reflexive does not have a coargument.<ref>{{cite journal|author=Pollard, Carl & Ivan Sag|title=Anaphors in English and the Scope of the Binding Theory|year=1992|journal=Linguistic Inquiry|issue=23|pages=261–303}}</ref> The newer non-standard usage does not respect this limitation. In some cases, reflexives without local antecedents may be better analyzed as emphatic pronouns without any true reflexive sense.
+ 
+It is common in some dialects of English to use standard [[object pronoun]]s to express reflexive relations, especially in the first and sometimes second persons, and especially for a recipient: for example, "I want to get '''me''' some supper." While this was seemingly standard in Old English through the Early Modern Period (with "self" constructs primarily used for emphatic purposes), it is held to be dialectal or nonstandard in Modern English.<ref>[[Old English#Charter of Cnut]]</ref><ref>{{cite web|url=http://public.oed.com/aspects-of-english/english-in-time/grammar-in-early-modern-english/|title=Grammar in early modern English - Oxford English Dictionary|website=oed.com|date=16 August 2012|access-date=29 March 2018|archive-date=17 January 2018|archive-url=https://web.archive.org/web/20180117123603/http://public.oed.com/aspects-of-english/english-in-time/grammar-in-early-modern-english/|url-status=dead}}</ref>
+ 
+It is also common in informal speech to use ''myself'' in a conjunctive phrase when 'me' would suffice: "She stood by Jane and myself." Also ''myself'' is used when 'I' would also be appropriate; for example, Thomas Jefferson was quoted as saying, "Hamilton and myself were daily pitted in the cabinet like two cocks."<ref>{{Cite book|title=The Virginia Dynasty|author=Lynne Cheney|publisher=Viking|year=2020|isbn=9781101980040|location=United States|page=123}}</ref>
+
+==In languages other than English==
+
+===Chinese===
+
+In [[Standard Mandarin|Mandarin Chinese]], the reflexive pronoun is {{Ruby|自|zì}}{{Ruby|己|jǐ}}, meaning "self".<ref name="Chinese-Grammar">{{cite book|last1=Yip|first1=Po-Ching|last2=Rimmington|first2=Don|title=Chinese: A Comprehensive Grammar|url=https://archive.org/details/chinesecomprehen00poch|url-access=limited|year=2004|publisher=Routledge|isbn=0-415-15032-9|pages=[https://archive.org/details/chinesecomprehen00poch/page/n72 56]–7}}</ref> The antecedent it refers to can be inferred by context, which is generally the subject of the sentence:
+ 
+* {{Ruby|照|zhào}}{{Ruby|顾|gù}}{{Ruby|好|hǎo}}{{Ruby|''自''|zì}}{{Ruby|''己''|jǐ}}。(Take care of ''(your)self''.)
+* {{Ruby|''我''|wǒ}}{{Ruby|会|huì}}{{Ruby|照|zhào}}{{Ruby|顾|gù}}{{Ruby|好|hǎo}}{{Ruby|''自''|zì}}{{Ruby|''己''|jǐ}}{{Ruby|的|de}}。(''I'''ll take care of ''(my)self''.)
+
+The antecedent can be reiterated before the reflexive pronoun; this can be used to refer to an antecedent that's not the subject:
+ 
+* {{Ruby|我|wǒ}}{{Ruby|给|gěi}}{{Ruby|了|le}}{{Ruby|他|tā}}{{Ruby|''他''|tā}}{{Ruby|''自''|zì}}{{Ruby|''己''|jǐ}}{{Ruby|''的''|de}}{{Ruby|书|shū}}。(I gave him ''his own'' book.)
+* {{Ruby|我|wǒ}}{{Ruby|给|gěi}}{{Ruby|了|le}}{{Ruby|他|tā}}{{Ruby|''我''|wǒ}}{{Ruby|''自''|zì}}{{Ruby|''己''|jǐ}}{{Ruby|''的''|de}}{{Ruby|书|shū}}。(I gave him ''my own'' book.)
+ 
+Like English, the reflexive can also be used to emphasize the antecedent:<ref name="Chinese-Grammar" />
+ 
+* {{Ruby|''他''|tā}}{{Ruby|''自''|zì}}{{Ruby|''己''|jǐ}}{{Ruby|拿|ná}}{{Ruby|走|zǒu}}{{Ruby|了|le}}。(''He'' took it ''(him)self''.)
+ 
+The reflexive can also be the subject of an embedded clause.
+ 
+* {{Ruby|''他''|tā}}{{Ruby|觉|jué}}{{Ruby|得|dé}}{{Ruby|''自''|zì}}{{Ruby|''己''|jǐ}}{{Ruby|很|hěn}}{{Ruby|聪|cōng}}{{Ruby|明|míng}}。 (''He'' considers ''(him)self'' very clever. ''He'' feels that ''he'' is very clever.)
+ 
+Also unlike English, the reflexive can refer to antecedents outside of the embedded clause. Because of this, it may be ambiguous whether the antecedent refers to the subject of the main clause or the embedded clause, in which case it may be necessary to reiterate the antecedent:
+
+* {{Ruby|我|wǒ}}{{Ruby|觉|jué}}{{Ruby|得|dé}}{{Ruby|''王''|wáng}}{{Ruby|''先''|xiān}}{{Ruby|''生''|shēng}}{{Ruby|喜|xǐ}}{{Ruby|欢|huān}}{{Ruby|你|nǐ}}{{Ruby|胜|shèng}}{{Ruby|过|guò}}{{Ruby|喜|xǐ}}{{Ruby|欢|huān}}{{Ruby|''自''|zì}}{{Ruby|''己''|jǐ}}。(I feel that ''Mr. Wang'' likes you more than he likes ''(him)self''.)
+* {{Ruby|我|wǒ}}{{Ruby|觉|jué}}{{Ruby|得|dé}}{{Ruby|王|wáng}}{{Ruby|先|xiān}}{{Ruby|生|shēng}}{{Ruby|喜|xǐ}}{{Ruby|欢|huān}}{{Ruby|你|nǐ}}{{Ruby|胜|shèng}}{{Ruby|过|guò}}{{Ruby|喜|xǐ}}{{Ruby|欢|huān}}{{Ruby|''我''|wǒ}}{{Ruby|''自''|zì}}{{Ruby|''己''|jǐ}}。(I feel that ''Mr. Wang'' likes you more than he likes ''myself''.)
+
+The reflexive pronoun in [[Standard Cantonese|Cantonese Chinese]], ''jihgéi'', [[cognate (etymology)|cognate]] to Mandarin ''zìjǐ'' (and thus also written as {{lang|yue-hant|自己}}), also follows the same rules.<ref name="Cantonese-Grammar">{{cite book|last1=Matthews|first1=Stephen|last2=Yip|first2=Virginia|title=Cantonese: A Comprehensive Grammar|url=https://archive.org/details/cantonesecompreh00yipv|url-access=limited|year=1994|publisher=Routledge|isbn=0-415-08945-X|pages=[https://archive.org/details/cantonesecompreh00yipv/page/n50 84]–7}}</ref>  This was also the case in [[Classical Chinese]], which simply used {{lang|yue-hant|己}}<ref name="Classical-Chinese-Grammar">{{cite book|last=Pulleyblank|first=Edwin G.|title=Outline of Classical Chinese Grammar|url=https://archive.org/details/outlineclassical00pull|url-access=limited|year=1995|publisher=UBC Press|isbn=0-7748-0541-2|page=[https://archive.org/details/outlineclassical00pull/page/n93 83]}}</ref> ([[Old Chinese]]: *''kəʔ''<ref name="Old-Chinese-Etymology">{{Cite book|last=Schuessler|first=Axel|contribution=jǐ<sub>2</sub> 己|title=ABC Etymological Dictionary of Old Chinese|year=2007|publisher=University of Hawai'i Press|isbn=978-0-8248-2975-9}}</ref>).
+
+===Danish===
+
+[[Danish (language)|Danish]] uses the separate reflexive pronoun ''[[wikt:sig|sig]]'' for third person pronouns, and 'selv' to mark intensive.
+ 
+* {{lang|da|''Jeg beskytter mig (selv).''|italic=unset}} (''I protect myself'')
+ 
+In Danish, there is also a difference between normal and reflexive genitives, the latter being used only in the singular:
+ 
+* {{lang|da|''Anna gav Maria hendes bog.''|italic=unset}} (Anna gave Maria her [''Maria's, or possibly some unknown third person's''] book.)
+* {{lang|da|''Anna gav Maria sin bog.''|italic=unset}} (Anna gave Maria her [''Anna's''] book.)
+ 
+In the latter case, [[wikt:sin|sin]] is a case of a ''reflexive possessive pronoun'', i.e. it reflects that the subject in the phrase (Anna) owns the object (the book).
+
+===Esperanto===
+
+The [[Esperanto]] third-person reflexive pronoun is {{lang|eo|si}}, or {{lang|eo|sia}} for the possessive (to which can be added ''-j'' for plural agreement and ''-n'' for direct object).{{citation needed|date=May 2022}}
+ 
+* {{lang|eo|Li legas liajn librojn.|italic=unset}} (''He reads his (someone else's) books.'')
+* {{lang|eo|Li legas siajn librojn.|italic=unset}} (''He reads his (own) books.'')
+
+===French===
+
+In [[French language|French]], the main reflexive pronoun is {{lang|fr|'se'}}, with its [[indefinite pronoun|indefinite]] form {{lang|fr|soi}}.
+ 
+There are also intensifying reflexive pronouns, such as {{lang|fr|moi-même}}, {{lang|fr|toi-même}}, {{lang|fr|lui-même/elle-même/soi-même}}, {{lang|fr|nous-mêmes}}, {{lang|fr|vous-mêmes}} and {{lang|fr|eux-mêmes/elles-mêmes}}, similar in meaning (but not often used) to myself, yourself, etc.
+
+French also uses reflexive verbs to express actions that somebody is doing to themselves. Many of these are related to daily routine. For example,
+ 
+* {{lang|fr|Je '''me''' lave|italic=unset}} (I get washed, lit "I wash myself")
+
+===German===
+
+In [[German language|German]], the reflexive case is not distinguishable from the accusative and dative cases except in the third person reflexive.<ref>{{cite web |url=http://class.georgiasouthern.edu/german/grammar/gr-refl.htm |title= German Grammar: Reflexive Pronouns & Verbs|website=class.georgiasouthern.edu |archive-url=https://web.archive.org/web/20111117111659/http://class.georgiasouthern.edu/german/grammar/gr-refl.htm |archive-date=November 17, 2011}}</ref> As discussed above, the reflexive case is most useful when handling third person because it is not always clear that pronouns refer to the same person, whereas in the first and second persons, it is clear: ''he hit him'' and ''he hit himself'' have different meanings, but ''I hit me'' and ''I hit myself'' mean the same thing although the former is nonstandard English.
+ 
+Because the accusative and dative cases are different, the speaker must know whether the verb is reflexive accusative or reflexive dative.  There are very few reflexive dative verbs, which must be memorised to ensure that the correct grammar is used. The most notable one is {{lang|de|(sich) weh tun}} (to hurt oneself): {{lang|de|Ich tue mir weh.}} (I hurt myself.)  See also [[German pronouns]]. The genetive form of the reflexive pronoun {{lang|de|sein}} is effectively lost as it has drifted in meaning to mean specifically 'his'.
+
+=== Hindi/Urdu ===
+In [[Hindustani grammar|Hindi]], there are two primary reflexive pronouns, the reflexive pronoun {{lang|hi|खुद}} ({{transliteration|hi|khud}}) [from PIE {{lang|ine-x-proto|*swé}}] meaning "self" and pronoun {{lang|hi|अपना}} ({{transliteration|hi|apnā}}) [from [[Proto-Indo-Iranian language|PII]] {{lang|iir-x-proto|*HáHtmā}} "self"] which is the possessive reflexive pronoun and both these pronouns are used with all the three, 1st, 2nd, and 3rd, persons.<ref name=snell>{{cite book|last1=Snell|first1=Rupert|last2=Weightman|first2=Simon|year=1989|title=Teach Yourself Hindi|publisher=McGraw-Hill|edition=2003|isbn=978-0-07-142012-9|title-link=Teach Yourself |pages=79–80}}</ref> There is also the pronoun {{lang|hi|आपस}} ({{transliteration|hi|āpas}}) which is used with either the [[Inessive case|inessive case-marker]] {{lang|hi|में}} ({{transliteration|hi|mẽ}}) forming the reflexive pronoun {{lang|hi|आपस में}} ({{transliteration|hi|āpas mẽ}}) meaning "among ourselves" or the genitive postpostion {{lang|hi|का}} ({{transliteration|hi|kā}}) forming the reflexing pronoun {{lang|hi|आपस का}} ({{transliteration|hi|āpas kā}}) meaning "of ourselves". The genitive reflexive pronoun can also be used to emphasise when used with the personal genitive pronouns, so e.g. {{lang|hi|मेरा}} ({{transliteration|hi|merā}}) "mine" becomes {{lang|hi|मेरा अपना}} ({{transliteration|hi|merā apnā}}) "my very own".<ref name=snell/> Alternatively, using the genitive postposition {{lang|hi|का}} ({{transliteration|hi|kā}}) with {{lang|hi|खुद}} ({{transliteration|hi|khud}}) gives {{lang|hi|मेरे खुदका}} ({{transliteration|hi|mere khudkā}}) meaning the same as {{lang|hi|मेरा अपना}} ({{transliteration|hi|merā apnā}}).
+These reflexive pronouns can be used with case-marking postpositions as shown below in the table to the right.
+{|
+|
+{| class="wikitable"
+! colspan="3" rowspan="2" |''Reflexive pronouns''
+!''Singular''
+!''Plural''
+!''Singular''
+!''Plural''
+|-
+! colspan="2" |''Masculine''
+! colspan="2" |''Feminine''
+|-
+! rowspan="3" |'''''Undeclinable'''''
+! colspan="2" |''[[Nominative case|Nominative<br>case]]''
+| colspan="4" rowspan="3" |{{lang|hi|खुद}} ({{transliteration|hi|khud}}) — "self"
+
+{{lang|hi|आपस}} ({{transliteration|hi|āpas}}) — "oneselves"
+
+{{lang|hi|अपने आप}} ({{transliteration|hi|apne āp}}) — "by oneself", "automatically"
+|-
+! rowspan="2" |''[[Oblique case|Oblique<br>case]]''
+!''with noun''
+|-
+!''sans noun''
+|-
+! rowspan="3" |'''''Declinable'''''
+! colspan="2" |''[[Nominative case|Nominative<br>case]]''
+|{{lang|hi|अपना}}
+{{transliteration|hi|apnā}}
+|{{lang|hi|अपने}}
+{{transliteration|hi|apne}}
+| colspan="2" rowspan="2" |{{lang|hi|अपनी}}
+{{transliteration|hi|apnī}}
+|-
+! rowspan="2" |''[[Oblique case|Oblique<br>case]]''
+!''with noun''
+| colspan="2" |{{lang|hi|अपने}} 
+{{transliteration|hi|apne}}
+|-
+!''sans noun''
+|{{lang|hi|अपने}} 
+{{transliteration|hi|apne}}
+|{{lang|hi|अपन}}
+{{transliteration|hi|apnõ}}
+|{{lang|hi|अपनी}}
+{{transliteration|hi|apnī}}
+|{{lang|hi|अप्नियों}}
+{{transliteration|hi|apniyõ}}
+|}
+|
+{| class="wikitable"
+!''Case''
+!''Postpositional<br>case marker''
+!''Reflexive<br>pronoun''
+!''Translation''
+|-
+|'''''[[Nominative case|Nominative]]'''''
+|—
+|{{lang|hi|खुद}} ({{transliteration|hi|khud}})
+|''self''
+|-
+|'''''[[Ergative case|Ergative]]'''''
+|{{lang|hi|ने}} ({{transliteration|hi|ne}})
+|{{lang|hi|खुदने}} ({{transliteration|hi|khudne}})
+|''self''
+|-
+|'''''[[Accusative case|Accusative]]'''''
+| rowspan="2" |{{lang|hi|को}} ({{transliteration|hi|ko}})
+| rowspan="2" |{{lang|hi|खुदको}} ({{transliteration|hi|khudko}})
+|''self''
+|-
+|'''''[[Dative case|Dative]]'''''
+|''to self''
+|-
+|'''''[[Instrumental case|Instrumental]]'''''
+| rowspan="2" |{{lang|hi|से}} ({{transliteration|hi|se}})
+| rowspan="2" |{{lang|hi|खुदसे}} ({{transliteration|hi|khudse}})
+|''using, by, with self''
+|-
+|'''''[[Ablative case|Ablative]]'''''
+|''from self''
+|-
+|'''''[[Genitive case|Genitive]]'''''
+|{{lang|hi|का}} ({{transliteration|hi|kā}})
+|{{lang|hi|खुदका}} ({{transliteration|hi|khudkā}})
+|''of self''
+|-
+|'''''[[Inessive case|Inessive]]'''''
+|{{lang|hi|में}} ({{transliteration|hi|mẽ}})
+|{{lang|hi|खुदमें}} ({{transliteration|hi|khudmẽ}})
+|''in self''
+|-
+|'''''[[Adessive case|Adessive]]'''''
+|{{lang|hi|पे}} ({{transliteration|hi|pe}})
+|{{lang|hi|खुदपे}} ({{transliteration|hi|khudpe}})
+|''on self''
+|-
+|'''''[[Terminative case|Terminative]]'''''
+|{{lang|hi|तक}} ({{transliteration|hi|tak}})
+|{{lang|hi|खुदतक}} ({{transliteration|hi|khudtak}})
+|''until, till self''
+|-
+|'''''[[Semblative case|Semblative]]'''''
+|{{lang|hi|सा}} ({{transliteration|hi|sā}})
+|{{lang|hi|खुदसा}} ({{transliteration|hi|khudsā}})
+|''like self''
+|}
+|}
+
+===Hungarian===
+
+Hungarian has two primary means of expressing reflexivity.
+
+==== Mag- ====
+The most common is by means of the stem ''mag-'' which behaves much like standard postpositions and case endings in Hungarian in that it can take the six personal suffixes to form the following personal pronouns: 
+* ''magam'' (myself)
+* ''magad'' (yourself)
+* ''maga'' (himself/herself)
+* ''magunk'' (ourselves)
+* ''magatok'' (yourselves)
+* ''maguk'' (themselves)
+
+Thus formed, these reflexive pronouns are in the nominative (i.e. subject) case and can take any case ending or postposition: ''magamnak'' (for myself), ''magunk előtt'' (in front of ourselves), ''magát'' (himself/herself (acc.)). However the accusative case marking ''-t'' is often omitted in ''magamat'' (myself), and ''magadat'' (yourself) remaining ''magam'' and ''magad'' respectively. This is also the case with possessed nouns using the same personal endings e.g. ''házam'' (my house), and ''kocsid'' (your car) both of which can be interpreted in less formal language as either nominative or accusative depending on context. Nonetheless, using the accusative ending ''-t'' (as in ''házamat'' and ''kocsidat'') is still considered formal and correct.
+
+Relfexive pronouns in the nominative case exist but have no logical reflexive function. Rather they have an intensifying purpose and follow the subject (if given): 
+* ''ő '''maga''' csinálta'' (He himself did it)
+* ''a kutya '''maga''' ásta a gödröt'' (the dog himself dug the hole)
+* '''''magam''' is így gondoltam'' (I myself am also of this mind) 
+note the absence of non-reflexive subject pronoun in the latter case where the verb marking implies the subject. In order to intensify a relfexive pronoun in any other case, i.e. a reflexive pronoun with a genuine reflexive grammatical function the word ''saját'' (one's own) is added before the reflexive pronoun: 
+* ''saját magának okoz gondot'' (he's making trouble for his own self).
+
+==== Ön ====
+The second reflexive mechanism in Hungarian is the word ''ön'' (self) which is most commonly used as a prefix with the meaning of ''(one)self-'', For example ''öngyilkos'' (suicide victim, lit. "self-murderer") and ''önfeláldozni'' (to sacrifice oneself). This can be combined with the reflexive pronouns above to express intensity or formality:
+* ''önmagam'' (myself)
+* ''önmagad'' (yourself)
+* ''önmaga'' (himself/herself)
+* ''önmagunk'' (ourselves)
+* ''önmagatok'' (yourselves)
+* ''önmaguk'' (themselves)
+The prefix ''ön'' can also be used in the manner of ''saját'', above, but the sense is more formal than intensive.
+
+==== Formal pronouns ====
+
+Hungarian does not have a T-V distinction as in many European languages, rather it uses third person reflexive pronouns and third person verbs to indicate politeness. The singular pronouns ''ön'' (self) and ''maga'' (himself/herself) and the plural pronouns ''önök'' (selves) and ''maguk'' (themselves) are used when addressing one or more people (respectively) in a formal context, whether written or spoken. Largely seen as interchangeable, ''ön'' and ''önök'' are less common and perceived as somewhat more formal than ''maga'' and ''maguk''. The combined forms ''önmaga'' and ''önmaguk'' are only used to express intensity and genuine reflexivity as laid out above, but are not used as non-reflexive formal/polite pronouns.
+
+Grammatically, when using ''ön'', ''maga'', ''önök'', or ''maguk'' as subject pronouns, they will be treated as though they were non-reflexive third person pronouns. This means verbs agree with a third person subject (despite having a second person referent in reality) but unlike a true reflexive object pronoun (which requires a definite verb ending), verbs using formal/polite pronouns conjugate for definite or indefinite objects as that verb's actual object requires. Compare the following:
+
+* ''(ti) mos'''tok''''' (you (pl.) are washing [informal]) 
+Here the verb uses the second person plural indefinite ending '''-tok''' indicating that the object of the verb is unclear or non-existent.
+* ''(ti) magatokat mos'''sátok''''' (you (pl.) are washing yourselves [informal])
+Here the verb has changed from the second person plural indefinite ending to the definite ending '''-játok''' to indicate the reflexive object.
+* ''(ők) mos'''nak''''' (they are washing [informal])
+Here the verb uses the third person plural indefinite ending '''-nak'''
+* ''maguk mos'''nak''''' or ''önök mos'''nak''''' (you (pl.) are washing [formal]) 
+Here the verb also uses the third person plural indefinite ending '''-nak''' as the formal pronoun is third person, but unlike true reflexives, it does not require a definite verb ending.
+* ''magukat mos'''sák''''' ("they are washing themselves" or "you (pl.) are washing yourselves" [formal])
+Here the verb is conjugated with the third person plural definite ending '''-ják''' as the pronoun is a genuine reflexive. In this case, it is not possible to tell from the sentence alone whether the intention is third person informal, or second person formal. In reality however when clarity is required an explicit subject pronoun can be used to express informal third person (''ők magukat mossák''), or more formal language can be used to express formal second person usage (''magukat tetszik mosni'' lit. "it pleases to wash oneselves").
+
+===Icelandic===
+
+There is only one reflexive pronoun in [[Icelandic language|Icelandic]] and that is the word ''[[wikt:en:sig#Icelandic|sig]]''. It does not differ between [[grammatical gender|genders]] nor [[number]].
+ 
+The reflexive pronouns are as such:
+ 
+* Reflexive pronoun: {{lang|is|sig}} (himself/itself/herself/themselves)
+* [[wikt:en:reflexive possessive pronoun|reflexive possessive pronoun]]: {{lang|is|sinn}} (his/her/its/their)
+ 
+{| class="wikitable"
+ 
+! rowspan="2" |
+ 
+! colspan="3" | [[Grammatical number|Singular]] and [[plural]]
+ 
+|-
+ 
+! Masculine
+ 
+! Feminine
+ 
+! Neuter
+ 
+|-
+ 
+! [[Nominative]]
+ 
+| colspan="3" align="center" | {{lang|is|(hann/hún/það/þeir/þær/þau)}} ("he/she/it/they")
+ 
+|-
+ 
+! [[Accusative]]
+ 
+| colspan="3" align="center" | {{lang|is|sig}}
+ 
+|-
+ 
+! [[Dative]]
+ 
+| colspan="3" align="center" | {{lang|is|sér}}
+ 
+|-
+ 
+! [[Genitive]]
+ 
+| colspan="3" align="center" | {{lang|is|sín}}
+ 
+|}
+
+====Examples====
+
+The reflexive pronoun refers to the [[grammatical person|third person]]:
+ 
+* {{lang|is|Hann talar um ''sig''|italic=unset}}. (masc. sing.) (He talks about ''himself'')
+
+===Italian===
+
+The reflexive pronouns in [[Italian language|Italian]] are:
+ 
+* {{lang|it|mi}} (first person singular)
+* {{lang|it|ti}} (second person singular)
+* {{lang|it|si}} (third person singular)
+* {{lang|it|ci}} (first person plural)
+* {{lang|it|vi}} (second person plural)
+* {{lang|it|si}} (third person plural)
+ 
+Reflexive pronouns are usually employed when the direct object in a sentence is also its subject, thus reflecting the action as expressed in the verb on the subject itself.
+ 
+This pronoun allows the building of three kinds of reflexive verbal forms: proper, non-proper (or ostensible), and reciprocal.
+ 
+* {{lang|it|Io ''mi'' lavo|italic=unset}}, or {{lang|it|io lavo ''me''|italic=unset}} (I wash myself): reflexive proper, because the subject is at the same time the object of the sentence.
+
+Notice that the sentence ''I wash myself'' could also be translated in Italian as {{lang|it|io lavo ''me stesso''|italic=unset}}, stressing the reflexiveness much more than English.
+
+The complete list of intensifying reflexive pronouns is:
+ 
+* {{lang|it|me stesso}} (first person masculine singular)
+* {{lang|it|me stessa}} (first person feminine singular)
+* {{lang|it|te stesso}} (second person masculine singular)
+* {{lang|it|te stessa}} (second person feminine singular)
+* {{lang|it|se stesso}} (third person masculine singular)
+* {{lang|it|se stessa}} (third person feminine singular)
+* {{lang|it|noi stessi}} (first person masculine plural)
+* {{lang|it|noi stesse}} (first person feminine plural)
+* {{lang|it|voi stessi}} (second person masculine plural)
+* {{lang|it|voi stesse}} (second person feminine plural)
+* {{lang|it|se stessi}} (third person masculine plural)
+* {{lang|it|se stesse}} (third person feminine plural)
+
+===Japanese===
+
+In the [[Japanese language]], {{lang|ja-latn|jibun}} ({{lang|ja|自分}}) and {{lang|ja-latn|jibunjishin}} ({{lang|ja|自分自身}}) are reflexive pronouns that correspond roughly to 'oneself'. They differ from English in some ways; for example, {{lang|ja-latn|jibun}} and {{lang|ja-latn|jibunjishin}} do not have to agree in gender or number where English reflexives do. {{lang|ja-latn|Jibun}} can further be bound locally or long distance where English reflexives must always occur locally. Although both English and Japanese pronouns must be [[c-command]]ed by their antecedents, because of the syntactic structure of Japanese, long distance binding is allowed.
+
+===Korean===
+
+In [[Korean language|Korean]], {{lang|ko-latn|jagi}} {{lang|ko|자기(自己)}} and {{lang|ko-latn|jasin}} {{lang|ko|자신(自身)}} are used as reflexive pronouns that refer to 'myself', 'himself', 'herself', and 'ourselves'. {{lang|ko-latn|Jagijasin}} {{lang|ko|자기자신(自己自身)}} is also a reflexive pronoun but it usually corresponds only to the first person (myself).
+
+===Latin===
+
+In the first and second persons, [[Latin]] uses the ordinary oblique forms of the personal pronouns as reflexive pronouns.  In the third person, Latin uses the special reflexive pronoun {{lang|la|se}}, which is the same for all genders and numbers, and declined in all [[grammatical case|cases]] except the [[nominative]] and the [[vocative]].
+
+{| class="wikitable"
+ 
+! rowspan="2" |
+ 
+! colspan="3" | [[Grammatical number|Singular]] or [[Plural]]
+ 
+|-
+ 
+! [[grammatical gender|Masculine]]
+ 
+! [[grammatical gender|Feminine]]
+ 
+! [[grammatical gender|Neuter]]
+ 
+|-
+ 
+! [[Nominative]]
+ 
+| colspan="3" align="center" | —
+ 
+|-
+ 
+! [[Vocative]]
+ 
+| colspan="3" align="center" | —
+ 
+|-
+ 
+! [[Accusative]]
+ 
+| colspan="3" align="center" | {{lang|la|''sē'', ''sēsē''|italic=unset}}
+ 
+|-
+ 
+! [[Genitive]]
+ 
+| colspan="3" align="center" | {{lang|la|suī}}
+ 
+|-
+ 
+! [[Dative]]
+ 
+| colspan="3" align="center" | {{lang|la|sibi}}
+ 
+|-
+ 
+! [[Ablative]]
+ 
+| colspan="3" align="center" | {{lang|la|''sē'', ''sēsē''|italic=unset}}
+ 
+|-
+ 
+![[Locative]]
+ 
+| colspan="3" align="center" | {{lang|la|''sē'', ''sēsē''|italic=unset}}
+ 
+|}
+
+====Example====
+
+* ''[[wikt:per se|per se]]''
+
+===Macedonian===
+
+{{Main|Macedonian pronouns}}
+
+{| class="wikitable"
+ 
+! colspan="2" | Accusative
+ 
+! colspan="2" | Dative
+ 
+|-
+ 
+! Full
+ 
+! Short
+ 
+! Full
+ 
+! Short
+ 
+|-
+ 
+| {{lang|mk|себе}}
+ 
+| {{lang|mk|се}}
+ 
+| {{lang|mk|себе}}
+ 
+| {{lang|mk|си}}
+ 
+|}
+
+An alternative full form, {{lang|mk|''себеси''|italic=unset}}, is used for emphasis.
+ 
+* {{lang|mk|Ана ѝ ја даде ''нејзината'' книга на Марија.|italic=unset}} (Ana gave her [''Maria's''] book to Maria.)
+* {{lang|mk|Ана ѝ ја даде ''својата'' книга на Марија.|italic=unset}} (Ana gave her [''Ana's''] book to Maria.)
+
+===Novial===
+
+([[Novial]] is a [[constructed language]], mostly based on [[Romance languages]].)
+ 
+* {{lang|nov|Lo vida lo.}} (He sees him.)
+
+===Polish===
+
+====Oblique====
+
+{| class="wikitable"
+ 
+!Nominative
+ 
+| –
+ 
+|-
+ 
+!Genitive
+ 
+| {{lang|pl|siebie}}
+ 
+|-
+ 
+!Dative
+ 
+| {{lang|pl|sobie}}
+ 
+|-
+ 
+!Accusative
+ 
+| {{lang|pl|''się'', ''siebie''|italic=unset}}
+ 
+|-
+ 
+!Instrumental
+ 
+| {{lang|pl|sobą}}
+ 
+|-
+ 
+!Locative
+ 
+| {{lang|pl|sobie}}
+ 
+|}
+ 
+In [[Polish language|Polish]] the oblique reflexive pronouns is {{lang|pl|się}} and it declines as above. It is used with 1st, 2nd and 3rd person:
+ 
+* {{lang|pl|Myję się}} "I wash myself"
+* {{lang|pl|Myjesz się}} "You wash yourself"
+* {{lang|pl|Piotr się myje}} "Peter washes himself"
+
+It has been grammaticalized to a high degree, becoming also a marker of medial and/or anti-causative voice:
+ 
+* {{lang|pl|Drzwi się otworzyły}} "Door opened", lit. "Door opened itself"
+* {{lang|pl|Przewróciliśmy się}} "We fell", lit. "We turned ourselves over"
+
+Similarly, the dative {{lang|pl|sobie}} gained an additional, volitional/liberative meaning, usually used in informal speech:
+ 
+* {{lang|pl|Idę sobie ulicą, patrzę sobie, a tam leży sobie dziesięć złotych.}} "So, I'm casually walking down the street and suddenly I see 10&nbsp;[[Polish złoty|złoty]] just lying there.", lit. "I'm walking for myself, I'm looking for myself, and there lies for itself 10&nbsp;złoty."
+* {{lang|pl|Jestem sobie przedszkolaczek...}} "I'm a kindergartner" (from children's song)
+
+Moreover, the phrase {{lang|pl|iść sobie}} has been lexicalized and means "to leave" (cf. French {{lang|fr|s'en aller}}):
+ 
+* {{lang|pl|Nudna ta impreza, idę sobie.}} "This party's boring, I'm leaving"
+
+====Possessive====
+
+Polish also has a possessive reflexive pronoun {{lang|pl|''swój'' (''swoja'', ''swoje'')|italic=unset}}. It assumes the gender of the possessed object, not that of the possessor.
+ 
+* {{lang|pl|Zabrał swoje rzeczy i wyszedł.}} "He took his (own) things and went out."
+* {{lang|pl|Spojrzał na swój telefon.}} "He looked at his (own) phone."
+* {{lang|pl|Anna oddała Kasi swoją książkę.}} "Anna gave her (Anna's) book to Cathy."
+ 
+Not using a reflexive pronoun might indicate the other party's possession of the object:
+
+* {{lang|pl|Anna oddała Kasi jej książkę}} "Anna gave Cathy her (Cathy's) book back."
+
+====Intensive====
+
+The intensive meaning is done by the pronoun {{lang|pl|sam}} (inflecting for case, gender and number):
+ 
+{| class="wikitable"
+ 
+!Nominative
+ 
+|{{lang|pl|sam ''m''|italic=unset}}
+ 
+|{{lang|pl|samo ''n''|italic=unset}}
+ 
+|{{lang|pl|sama ''f''|italic=unset}}
+ 
+|{{lang|pl|sami ''v pl''|italic=unset}}
+ 
+|{{lang|pl|same ''nv pl''|italic=unset}}
+ 
+|-
+ 
+!Genitive
+ 
+| colspan="2" |{{lang|pl|samego}}
+ 
+|{{lang|pl|samej}}
+ 
+| colspan="2" |{{lang|pl|samych}}
+ 
+|-
+ 
+!Dative
+ 
+| colspan="2" |{{lang|pl|samemu}}
+ 
+|{{lang|pl|samej}}
+ 
+| colspan="2" |{{lang|pl|samym}}
+ 
+|-
+ 
+!Accusative
+ 
+|{{lang|pl|samego, sam}}
+ 
+|{{lang|pl|samo}}
+ 
+|{{lang|pl|samą}}
+ 
+|{{lang|pl|samych}}
+ 
+|{{lang|pl|same}}
+ 
+|-
+ 
+!Instrumental
+ 
+| colspan="2" |{{lang|pl|samym}}
+ 
+|{{lang|pl|samą}}
+ 
+| colspan="2" |{{lang|pl|samymi}}
+ 
+|-
+ 
+!Locative
+ 
+| colspan="2" |{{lang|pl|samym}}
+ 
+|{{lang|pl|samej}}
+ 
+| colspan="2" |{{lang|pl|samych}}
+ 
+|}
+
+Usually inflected {{lang|pl|się}} is added in obliques:
+ 
+* {{lang|pl|Słucham siebie samej}} (fem.) "I listen to myself"
+* {{lang|pl|Wierzę sobie samej}} (fem.) "I believe myself"
+
+Emphatically the accusative can be replaced with dative:
+ 
+* {{lang|pl|Zrobiłem to sam}} (masc.) "I did it myself", "I did it alone"
+* {{lang|pl|Zrobiłem to samemu}} (masc.) "I did it myself", "I did it personally"
+
+===Portuguese===
+
+* {{lang|pt|Quando ele ''o'' vê.|italic=unset}} (''When he sees him.'')
+* {{lang|pt|Quando ele ''se'' vê.|italic=unset}} (''When he sees himself.'')
+
+There are two ways to make a reflexive sentence in [[Portuguese language|Portuguese]]. The first way is by attaching the reflexive pronoun (me, te, se, nos - also vos) to the verb. The second way is by also attaching the words {{lang|pt|mesmo/a(s)}} or {{lang|pt|próprio/a(s)}}, masc/fem. (plural) (="self"), immediately after the verb to add stress/intensity :
+
+* {{lang|pt|Eu ''me'' magoei. / Magoei-me.|italic=unset}} (I hurt myself.)
+
+===Romanian===
+
+* {{lang|ro|sieşi, sie, îşi, şi-}}          Dative: himself, herself
+* {{lang|ro|pe sine, se, s-}}               Accusative: himself, herself
+
+=== Russian ===
+
+In [[Russian Language|Russian]], the pronoun {{lang|ru|себя}} {{lang|ru-latn|sebya}} universally means "oneself"/"myself"/"himself", etc. It is inflected depending on the [[Grammatical case|case]].<ref>{{Cite book|title=Морфология простым языком|last=Naumanova|first=Irina|year=2014|location=Moscow|pages=111}}</ref>
+
+When used to indicate that the person is the direct object of the verb, one uses the [[Accusative case|accusative]] form, {{lang|ru-latn|sebya}}.<ref>{{Cite book|title=Морфология простым языком|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=98}}</ref> (It does not have a nominative form.)
+
+* {{lang|ru|Он поранил себя}}. {{lang|ru-latn|On poranil sebya}}. ("He has wounded himself.")
+
+Emphasized forms are "sam sebya" - masculine, "sama sebya" - feminine, "sami sebya" - plural. Unless there is a particular reason (emphasis, answering a question) the word "sam" usually comes after the noun it is emphasizing.<ref>{{Cite book|title=Морфология простым языком|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=121}}</ref>
+
+* {{lang|ru|'''Он''' сам поранил себя}}. {{lang|ru-latn|On sam poranil sebya}}. ("'''He''' has wounded himself." Literally: "He himself has wounded himself.")
+However the form, e.g.,  {{lang|ru|сам себя '''oн''' поранил}}, is grammatical as well.
+
+This sentence underlines that the subject inflicted the wounds while in the previous example, "sebya" merely indicates that the subject was wounded.
+
+The reflexive pronoun {{lang|ru-latn|sebya}} gave rise the reflexive affix {{lang|ru-latn|-sya}} ({{lang|ru|-ся}}) used to generate [[reflexive verb]]s, but in this context the affix indicates that the action happened accidentally:<ref>{{Cite book|title=Морфология простым языком|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=175}}</ref>
+
+* {{lang|ru|Он поранился}} (He has wounded himself.)
+
+There are stylistic differences between the three usages, despite being rendered in the same way in English.
+
+Russian has a reflexive possessive as well.<ref>{{Cite book|title=Морфология простым языком|last=Naumanova|first=Irina|publisher=Unknown|year=2014|location=Moscow|pages=82–83}}</ref>
+
+* {{lang|ru|Он любит свою жену.}} {{lang|ru-latn|On lyubit svoyu zhenu.}} (''He loves his wife (his own).'' - Reflexive possessive)
+* {{lang|ru|Он любит его жену.}} {{lang|ru-latn|On lyubit yego zhenu}} (''He loves his wife (someone else's).'' - It is ambiguous in English, but less so in Russian.)
+
+Because of the existence of reflexive forms, the use of a non-reflexive pronoun indicates a subject that is different from the object. If it is impossible, the sentence is invalid or at least irregular:
+
+* {{lang|ru|Он поранил его}}. {{lang|ru-latn|On poranil ego}}. ("He has wounded him (someone else).")
+
+===Serbo-Croatian===
+
+[[Serbo-Croatian]] uses the reflexive pronoun {{lang|sh|sebe/se}}, which is the same for all persons, numbers and genders, and declined as follows:<ref name="KordiSC">{{cite book|last=Kordić |first=Snježana |author-link=Snježana Kordić |year=2006 |orig-year=1st pub. 1997  |title=Serbo-Croatian |series=Languages of the World/Materials; 148 |location=Munich & Newcastle |publisher=Lincom Europa |page=23 |isbn=3-89586-161-8 |oclc=37959860 |ol=2863538W |id={{CROSBI|426503}}}} [https://web.archive.org/web/20240509070531/http://www.snjezana-kordic.de/Contents_Serbo-Croatian_Grammar.pdf Contents]. [https://linguistlist.org/issues/?topic=Books Summary]. [Grammar book].</ref>
+
+{| class="wikitable"
+ 
+!Nominative
+ 
+| –
+ 
+|-
+ 
+!Genitive
+ 
+| {{lang|sh|sebe}}
+ 
+|-
+ 
+!Dative
+ 
+| {{lang|sh|sebi/si}}
+ 
+|-
+ 
+!Accusative
+ 
+| {{lang|sh|sebe/se}}
+ 
+|-
+ 
+!Vocative
+ 
+| –
+ 
+|-
+ 
+!Instrumental
+ 
+| {{lang|sh|sobom}}
+ 
+|-
+ 
+!Locative
+ 
+| {{lang|sh|sebi}}
+ 
+|}
+ 
+* {{lang|sh|Ana je dala Mariji ''njenu'' knjigu.|italic=unset}} ("Ana gave ''her'' [Maria's] book to Maria.")
+* {{lang|sh|Ana je dala Mariji ''svoju'' knjigu.|italic=unset}} ("Ana gave ''her'' [Ana's] book to Maria.")
+
+The words that modify the reflexive pronoun do show gender and number:<ref name="KordiSC" />
+ 
+* {{lang|sh|Čudi'''o''' se ''sam'''om''''' sebi.|italic=unset}} "He wondered at himself."
+ 
+The enclitic form of the reflexive pronoun, ''se'', has been grammaticalized to a high degree:<ref name="KordiSC" />
+ 
+* {{lang|sh|Vrata su se otvorila.}} lit. "Door opened itself" ("Door opened")
+* {{lang|sh|Prevrnuli smo se.}} lit. "We turned ourselves over" ("We fell")
+
+===Spanish===
+{{Unreferenced section|date=April 2026}}
+
+In [[Spanish language|Spanish]], the reflexive pronouns are: {{lang|es|''me''/''nos''|italic=unset}} (first person singular/plural), {{lang|es|''te''/''os''|italic=unset}} (second person) or {{lang|es|se}} (third person). In Latin America, {{lang|es|os}} is not used, being replaced by {{lang|es|se}} for the pronoun {{lang|es|ustedes}}. For clarity, there are optional intensifying adjuncts for reflexive pronouns, accompanied by {{lang|es|mismo/a}} (masculine and feminine forms for "self"). They are not strictly adjuncts: {{lang|es|sí mismo/a}} (instead of {{lang|es|se}}), {{lang|es|ti mismo/a}} (in the [[Río de la Plata]] region, it is replaced by {{lang|es|vos mismo/a}}), {{lang|es|mí mismo/a}}—they usually postpend the genitive.
+
+Example with "wash oneself":
+ 
+* {{lang|es|yo '''me''' lavo}}  ''(I wash myself.)''
+
+Note that the indirect object "le"/"les" does ''not'' override "se" in the reflexive.
+
+===Slovene===
+
+The [[Slovene language]] has reflexive pronouns as well:{{cn|date=March 2026}}
+* {{lang|sl|Ana je dala Mariji '''njeno''' knjigo.}} (''Ana gave her'' ['''''Maria's'''''] ''book to Maria.'')
+* {{lang|sl|Ana je dala Mariji '''svojo''' knjigo.}} (''Ana gave her'' ['''''Ana's'''''] ''book to Maria.'')
+
+=== Uzbek ===
+
+In [[Uzbek language|Uzbek]], the pronoun {{lang|uz|o'zi}} ({{IPA|uz|ɜzɪ|IPA}}), refers to ''oneself'' and, to create a person specific forms, it requires certain affixes:<ref name=":0">{{Cite book|title=Ona Tili - 7-SINF|last=MAHMUDOV, NURMONOV, SOBIROV, NABIYEVA, MIRZAAHMEDOV|first=NIZOMIDDIN, ABDUHAMID, ABDULHAY, DILDORA, MIRODIL|publisher=Ministry of Public Education of the Republic of Uzbekistan|year=2017|isbn=978-9943-04-324-4|location=Tashkent|pages=26–27}}</ref>
+
+''myself'' - {{lang|uz|o'zi}} + {{lang|uz|-mni}} => {{lang|uz|o'zimni}} ({{IPA|uz|ɜzɪmnɪ|IPA}}); to ''myself'' - {{lang|uz|o'zi}} + {{lang|uz|-mga}} => {{lang|uz|o'zimga}} ({{IPA|uz|ɜzɪmgʌ|IPA}}); from ''myself'' - {{lang|uz|o'zi}} + {{lang|uz|-mdan}} => {{lang|uz|o'zimdan}} ({{IPA|uz|ɜzɪmdʌn|IPA}});
+
+''yourself'' - {{lang|uz|o'zi}} + {{lang|uz|-ngni}} => {{lang|uz|o'zingni}} ({{IPA|uz|ɜzɪngnɪ|IPA}}); to ''yourself'' - {{lang|uz|o'zi}} + {{lang|uz|-ngga}} => {{lang|uz|o'zingga}} ({{IPA|uz|ɜzɪngʌ|IPA}}); from ''yourself'' - {{lang|uz|o'zi}} + {{lang|uz|-ngdan}} => {{lang|uz|o'zingdan}} ({{IPA|uz|ɜzɪngdʌn|IPA}});
+
+''himself''/ ''herself''/ ''itself'' - {{lang|uz|o'zi}} + {{lang|uz|-ni}} => {{lang|uz|o'zini}} ({{IPA|uz|ɜzɪnɪ|IPA}}); to ''himself''/ ''herself''/ ''itself''- {{lang|uz|o'zi}} + {{lang|uz|-ga}} => {{lang|uz|o'ziga}} ({{IPA|uz|ɜzɪgʌ|IPA}}); from ''himself''/ ''herself''/ ''itself''- {{lang|uz|o'zi}} + {{lang|uz|-dan}} => {{lang|uz|o'zidan}} ({{IPA|uz|ɜzɪdʌn|IPA}});
+
+''ourselves'' - {{lang|uz|o'zi}} + {{lang|uz|-mizni}} => {{lang|uz|o'zimizni}} ({{IPA|uz|ɜzɪmɪznɪ|IPA}}); to ''ourselves''- {{lang|uz|o'zi}} + {{lang|uz|-mizga}} => {{lang|uz|o'zimizga}} ({{IPA|uz|ɜzɪmɪzgʌ|IPA}}); from ''ourselves'' - {{lang|uz|o'zi}} + {{lang|uz|-mizdan}} => {{lang|uz|o'zimizdan}} ({{IPA|uz|ɜzɪmɪzdʌn|IPA}});
+
+''yourselves'' - {{lang|uz|o'zi}} + {{lang|uz|-ngizni}} => {{lang|uz|o'zingizni}} ({{IPA|uz|ɜzɪngɪznɪ|IPA}}); to ''yourselves'' - {{lang|uz|o'zi}} + {{lang|uz|-ngizga}} => {{lang|uz|o'zingizga}} ({{IPA|uz|ɜzɪngɪzgʌ|IPA}}); from ''yourselves'' - {{lang|uz|o'zi}} + {{lang|uz|-ngizdan}} => {{lang|uz|o'zingizdan}} ({{IPA|uz|ɜzɪngɪzdʌn|IPA}});
+
+''themselves'' - {{lang|uz|o'z}} + {{lang|uz|-larini}} => {{lang|uz|o'zlarini}} ({{IPA|uz|ɜzlʌrɪnɪ|IPA}}); to ''themselves''- {{lang|uz|o'z}} + {{lang|uz|-lariga}} => {{lang|uz|o'zlariga}} ({{IPA|uz|ɜzɪlʌrɪgʌ|IPA}}); from ''themselves''- {{lang|uz|o'z}} + {{lang|uz|-laridan}} => {{lang|uz|o'zilaridan}} ({{IPA|uz|ɜzɪlʌrɪdʌn|IPA}});
+
+[[Emphatic pronoun|Emphatic-pronoun]] use:
+
+''myself'' - {{lang|uz|o'zi}} + {{lang|uz|-m}} => {{lang|uz|o'zim}} ({{IPA|uz|ɜzɪm|IPA}})
+
+''yourself'' - {{lang|uz|o'zi}} + {{lang|uz|-ng}} => {{lang|uz|o'zing}} ({{IPA|uz|ɜzɪng|IPA}})
+
+''himself''/ ''herself''/ ''itself'' - {{lang|uz|o'zi}} + {{lang|uz|-}} => {{lang|uz|o'zi}} ({{IPA|uz|ɜzɪ|IPA}})
+
+''ourselves'' - {{lang|uz|o'zi}} + {{lang|uz|-miz}} => {{lang|uz|o'zimiz}} ({{IPA|uz|ɜzɪmɪz|IPA}})
+
+''yourselves'' - {{lang|uz|o'zi}} + {{lang|uz|-ngiz}} => {{lang|uz|o'zingiz}} ({{IPA|uz|ɜzɪngɪz|IPA}})
+
+''themselves'' - {{lang|uz|o'z}} + {{lang|uz|-lari}} => {{lang|uz|o'zlari}} ({{IPA|uz|ɜzlʌrɪ|IPA}})
+
+Basically, the suffixes change based on the preposition used:<ref name=":0" />
+
+* {{lang|uz|Jon ''o'ziga'' mashina sotiboldi.|italic=unset}} (John bought ''himself'' a car)
+* {{lang|uz|Biz futbol o'ynayotib ''o'zimizni'' jarohatladik.|italic=unset}} (We hurt ''ourselves'' playing football)
+* {{lang|uz|Bu holodilnik ''o'zini'' o'zi eritadi.|italic=unset}} (This refrigerator defrosts ''itself'' )
+* {{lang|uz|Men ''o'zimdan'' ranjidim.|italic=unset}} (I'm annoyed ''with myself'')
+* {{lang|uz|Ular ''o'zlariga'' qaradilar.|italic=unset}} (They looked ''at themselves'')
+* {{lang|uz|''O'zlaringizni'' ehtiyot qilinglar.|italic=unset}} (Take care ''of yourselves'')
+
+===Vietnamese===
+
+In [[Vietnamese language|Vietnamese]], the reflexive pronoun is {{lang|vi|mình}} whose meaning can be ''myself'', ''herself'', ''himself'', ''themselves'' etc. depending on the number/gender of its antecedent. 
+ 
+* {{lang|vi|Thằng John tự đánh mình}} (John hit himself.)
+
+=== [[Guugu Yimithirr language|Guugu Yimithirr]] ===
+
+A [[Pama–Nyungan languages|Pama–Nyungan language]], [[Guugu Yimithirr language|Guugu Yimithirr]] uses the suffix ''/-gu/'' on pronouns—much like ''-self'' in English, to emphasize that the action of the verb is performed by the subject and not someone else. Take for example, the following exchange.
+
+'''A:'''
+ 
+{{Interlinear|Ngadhu gudaa gunda-la!|1SG.GEN.ABS dog.ABS hit-IMP|Hit my dog!}}
+ 
+'''B:'''
+ 
+{{Interlinear|Nyundu-ugu gunda-la!|2SG.NOM-REF hit-IMP|Hit it yourself!}}
+ 
+<ref>{{Cite book|title=Handbook of Australian languages. Vol. 1|date=1979|publisher=Benjamins|others=Dixon, Robert Malcolm Ward., Blake, Barry J.|isbn=978-90-272-7355-0|location=Amsterdam|pages=122|oclc=793207750}}</ref>
+
+==See also==
+===Grammar===
+* [[Reflexive verb]]
+* [[Reciprocal pronoun]]
+* [[Reciprocal construction]]
+* [[Logophoricity]]
+
+===Works===
+* [[Myself (disambiguation)]]
+* [[Yourself (song)|''Yourself'' (song)]], the twelfth single by [[Dream (Japanese band)|Dream]]
+* [[Herself (film)|''Herself'' (film)]], a 2020 [[drama film]] directed by [[Phyllida Lloyd]]
+* [[Herself the Elf]], a franchise line for young girls similar to [[Strawberry Shortcake]]
+* [[Himself (disambiguation)]]
+
+== Further reading==
+{{Cite book
+| veditors=Janic K, Puddu N, Haspelmath M
+| title = Reflexive constructions in the world's languages 
+| place = Berlin
+| publisher = Language Science Press
+| date = 2023
+| format = pdf
+| url = http://langsci-press.org/catalog/book/284
+| doi = 10.5281/zenodo.7861660
+| doi-access = free
+| isbn = 9783961104116
+| last1 = Janic 
+| first1 = Katarzyna 
+| last2 = Puddu 
+| first2 = Nicoletta 
+| last3 = Haspelmath 
+| first3 = Martin 
+}}
+
+==References==
+
+{{Reflist}}
+
+==External links==
+*{{wti}}
+
+{{lexical categories|state=collapsed}}
+{{Syntax}}
+{{Authority control}}
+
+{{DEFAULTSORT:Reflexive Pronoun}}
+[[Category:Personal pronouns]]
+[[Category:Transitivity and valency]]
