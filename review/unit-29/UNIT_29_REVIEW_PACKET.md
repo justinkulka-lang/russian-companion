@@ -11,12 +11,12 @@ Unit 29 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 73a40c14b8afb01b521bddf24179c3454f0bae04
-- Unit content-review SHA-256: b35528e0a8ca27fed0fe18541aab59755d6adcad90a7ccaae86c1f8318ab9374
+- Curriculum source commit: 3761263941eb500b0d542df5c2c18d80146fcbb4
+- Unit content-review SHA-256: 454026c94347703fa15b6e305bf4319edcc1542e6a9eb786709186b435753501
 - Mapping-package SHA-256: a7ebe370698a0dffe4f0311ccfbfff6f217171ffab7dda232447d4b62e2b4071
-- Pack content-review SHA-256: 0860ba87d95667f0bd13285fa30e3b7e51ea9d8444d97d47bdd193d5e3532e92
-- Review-package SHA-256: 73eeb58d502dc27b52246f6c92bc52b4e8847ccce1c429806d28a18701d07639
-- Repository source SHA-256: d54f21f257028bfc4ea1a864dd63a8a51cb3bbbbd2426146dd4298c831b3ff55
+- Pack content-review SHA-256: 7b8428298d5896c2c50ece4191bc39f87ddb45e07320fbdf3ff14d0e1ab97c88
+- Review-package SHA-256: 2d3a8b3cdf53c88aab9cf389a8750cab1146ba02ca3d5ee47a4690ab8353446f
+- Repository source SHA-256: bbb002d32acf65589119430185433a4d5777d15a83181f9a700f65bf1d9eda55
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -69,13 +69,13 @@ notes=No qualified reviewer has signed Unit 29.
 
 ### UNIT `unit-29`
 
-- Objectives: obj-u29-active, obj-u29-short-adjective, obj-u29-bookish-note, obj-u29-punctuation, obj-u29-book, obj-u29-register, obj-u29-reading, obj-u29-adjective-vocabulary
+- Objectives: obj-u29-active, obj-u29-short-adjective, obj-u29-bookish-note, obj-u29-punctuation, obj-u29-book, obj-u29-register, obj-u29-reading, obj-u29-adjective-vocabulary, obj-u29-punctuation-reference
 - Sessions: u29-s-orient, u29-s-active, u29-s-short-adjective, u29-s-bookish-note, u29-s-punctuation, u29-s-book, u29-s-gap-register, u29-s-gap-reading
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 176f07bf8566407b04babf25ef117c1fac9bc3f08a3d4dfa3ad2f0aca42e2158
+- Content hash: 3abcc03401ae00a438eea66ea2d3b3470da04dc91e2b70dd1078f635ca42d464
 
 number=29
 title=Bookish style, active participles, punctuation, and short-form adjectives
@@ -170,15 +170,15 @@ remediation=u29-st-rem-bookish-note
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 27784da498e0916a2f10d066ca39cb963b5a864e4d8aa782cf80d17615b2b87b
+- Content hash: fea3b05947c536c30d1e0aa75659b409a05f4d1fd17f76256f18505f63ba1030
 
-title=Classify the shown phrase by the admitted punctuation rule
+title=Decide comma boundaries in the supplied participial constructions
 kind=RECOGNITION
 unitNumber=29
-instruction=u29-st-orient,u29-st-teach-punctuation-1,u29-st-teach-punctuation-2,u29-st-teach-punctuation-3
-examples=ex-u29-punctuation-0,ex-u29-punctuation-1,ex-u29-punctuation-2
+instruction=u29-st-orient,u29-st-teach-punctuation-1,u29-st-teach-punctuation-2,u29-st-teach-punctuation-3,u29-st-teach-punctuation-4
+examples=ex-u29-punctuation-0,ex-u29-punctuation-1,ex-u29-punctuation-context-after,ex-u29-punctuation-context-pronoun,ex-u29-punctuation-context-cause,ex-u29-punctuation-context-terminal
 practice=u29-st-guided-punctuation-1
-checks=u29-i-punctuation-1,u29-i-punctuation-2
+checks=u29-i-punctuation-1,u29-i-punctuation-after,u29-i-punctuation-pronoun,u29-i-punctuation-cause,u29-i-punctuation-terminal
 remediation=u29-st-rem-punctuation
 
 ### OBJECTIVE `obj-u29-book`
@@ -253,6 +253,25 @@ kind=GUIDANCE
 unitNumber=29
 instruction=u29-st-teach-short-adjective-1,u29-st-teach-short-adjective-2,u29-st-teach-short-adjective-3
 examples=
+practice=
+checks=
+remediation=
+
+### OBJECTIVE `obj-u29-punctuation-reference`
+
+- Objectives: obj-u29-punctuation-reference
+- Sessions: none
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 97b2dd26e8dbee94efa4b70f4e4cb4a885430575f65d8e28ebc4253d7b75a87e
+
+title=Optional source wording reference
+kind=GUIDANCE
+unitNumber=29
+instruction=u29-st-teach-punctuation-3
+examples=ex-u29-punctuation-2
 practice=
 checks=
 remediation=
@@ -803,12 +822,12 @@ remediationStepId=u29-st-rem-bookish-note
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: eefa7f098cf419848c40815ea9154c62ca9cacec2bb8914280e6ac27624f9a5b
+- Content hash: c2ae6f6328f8a70affe2c7bfc2a033673ebb7b6bf76ef37c8eb06ccd3ef585c8
 
-title=Classify the shown phrase by the admitted punctuation rule
+title=Decide comma boundaries in the supplied participial constructions
 estimatedMinutes=12
 objectives=obj-u29-punctuation
-steps=u29-st-teach-punctuation-1,u29-st-teach-punctuation-2,u29-st-teach-punctuation-3,u29-st-guided-punctuation-1,u29-st-rem-punctuation,u29-st-check-punctuation
+steps=u29-st-teach-punctuation-1,u29-st-teach-punctuation-2,u29-st-teach-punctuation-3,u29-st-teach-punctuation-4,u29-st-guided-punctuation-1,u29-st-rem-punctuation,u29-st-check-punctuation
 
 ### STEP `u29-st-teach-punctuation-1`
 
@@ -856,21 +875,43 @@ remediationStepId=
 
 ### STEP `u29-st-teach-punctuation-3`
 
+- Objectives: obj-u29-punctuation, obj-u29-punctuation-reference
+- Sessions: u29-s-punctuation
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: df0ed77ecaacb22705ddc5f64a436622ae55b9bae2ac1c126c4ada079a5bd4cd
+
+kind=TEACH
+title=Apply the pronoun and cause exceptions
+body=The retained rule states exceptions when the described entity is a personal pronoun or the participial phrase expresses a cause. Воспитанный в традициях Фоппы, Бернардо Дзенале и Амброджо Бергоньоне, он прошёл обучение в мастерской Леонардо. The opening phrase describes он, so A separating comma follows the opening participial phrase before the main clause. The comma after Фоппы is internal to the list of names. The later comma after Бергоньоне marks the modifier boundary before он; do not treat every visible comma as a modifier boundary. Изумлённый этим хохотом, Павел сел на пол и смотрел куда-то в угол The retained source row explicitly gives this example a causal shade, so A separating comma follows the opening participial phrase before the main clause. The ordinary preceding-noun label запятые не ставятся cannot cancel these exceptions. The optional source wording личным местоимением and кроме тех случаев identifies a category/connective, not a complete comma decision; its reference question does not satisfy these language checks.
+dominantAction=Continue
+references=ref-u2630-attribution
+items=
+examples=ex-u29-punctuation-context-pronoun,ex-u29-punctuation-context-cause
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u29-st-teach-punctuation-4`
+
 - Objectives: obj-u29-punctuation
 - Sessions: u29-s-punctuation
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 0e236886aded861c96e38b4ca83348fd5b175cf1d55452017bc00fcaff846d8e
+- Content hash: 46e43500288a31cb1edc24572bd3e2c4fe826cf519e9aa7146726120da25f6e6
 
 kind=TEACH
-title=Keep the stated exceptions to the preceding-phrase rule
-body=The retained rule identifies exceptions when the described entity is a personal pronoun or the participial phrase expresses a cause. The displayed личным местоимением names the personal-pronoun case; кроме тех случаев indicates the exception boundary, not the default no-comma treatment. Recognize that exception label here; this small set does not demonstrate punctuation of every unfamiliar participial sentence.
+title=Check the continuing clause and sentence end
+body=Туча, нависшая над высокими вершинами тополей, уже сыпала дождиком The phrase describes Туча and is followed by the continuing predicate, so Separating commas mark both boundaries of the participial phrase before the sentence continues. Вдали виднеется маяк, стоящий у моря Here the phrase describes маяк and ends the supplied construction, so A separating comma precedes the terminal participial phrase, with no closing comma at sentence end. A closing separating comma would have no continuing clause after it. By contrast, No separating comma is used between the participial phrase and the word it describes. is the ordinary non-causal, non-pronoun preceding-noun default shown in the earlier program example. These are bounded supplied constructions; not every phrase before a noun needs a comma and not every phrase after a word fits one universal rule.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
-examples=ex-u29-punctuation-2
+examples=ex-u29-punctuation-context-after,ex-u29-punctuation-context-terminal
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -906,7 +947,7 @@ remediationStepId=u29-st-rem-punctuation
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 7d144393c91d4ed6955ad2e773dd12adcec9f983ee32373e775e4fe70ca46b5c
+- Content hash: b4644f1d9d70b56bbd62ddbfa94e8923e32e6d4437ec152eec0d659714f7f6f3
 
 kind=REMEDIATE
 title=Review the complete retained-example contrast
@@ -914,11 +955,13 @@ body=In Программа, написанная в спешке, выполни
 
 In Написанная в спешке программа выполнила недопустимую операцию. The same descriptive phrase precedes the noun. The supplied example has no separating commas: запятые не ставятся is its label. Phrase position helps distinguish these two examples; this does not mean commas are never used before a described noun.
 
-The retained rule identifies exceptions when the described entity is a personal pronoun or the participial phrase expresses a cause. The displayed личным местоимением names the personal-pronoun case; кроме тех случаев indicates the exception boundary, not the default no-comma treatment. Recognize that exception label here; this small set does not demonstrate punctuation of every unfamiliar participial sentence.
+The retained rule states exceptions when the described entity is a personal pronoun or the participial phrase expresses a cause. Воспитанный в традициях Фоппы, Бернардо Дзенале и Амброджо Бергоньоне, он прошёл обучение в мастерской Леонардо. The opening phrase describes он, so A separating comma follows the opening participial phrase before the main clause. The comma after Фоппы is internal to the list of names. The later comma after Бергоньоне marks the modifier boundary before он; do not treat every visible comma as a modifier boundary. Изумлённый этим хохотом, Павел сел на пол и смотрел куда-то в угол The retained source row explicitly gives this example a causal shade, so A separating comma follows the opening participial phrase before the main clause. The ordinary preceding-noun label запятые не ставятся cannot cancel these exceptions. The optional source wording личным местоимением and кроме тех случаев identifies a category/connective, not a complete comma decision; its reference question does not satisfy these language checks.
+
+Туча, нависшая над высокими вершинами тополей, уже сыпала дождиком The phrase describes Туча and is followed by the continuing predicate, so Separating commas mark both boundaries of the participial phrase before the sentence continues. Вдали виднеется маяк, стоящий у моря Here the phrase describes маяк and ends the supplied construction, so A separating comma precedes the terminal participial phrase, with no closing comma at sentence end. A closing separating comma would have no continuing clause after it. By contrast, No separating comma is used between the participial phrase and the word it describes. is the ordinary non-causal, non-pronoun preceding-noun default shown in the earlier program example. These are bounded supplied constructions; not every phrase before a noun needs a comma and not every phrase after a word fits one universal rule.
 dominantAction=Continue
 references=
 items=
-examples=ex-u29-punctuation-0,ex-u29-punctuation-1,ex-u29-punctuation-2
+examples=ex-u29-punctuation-0,ex-u29-punctuation-1,ex-u29-punctuation-context-pronoun,ex-u29-punctuation-context-cause,ex-u29-punctuation-context-after,ex-u29-punctuation-context-terminal
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -932,14 +975,14 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: fa22f9b4755d6d04c249b446899b99d5fddee7a6c1dba2c3efec5fbedc713d43
+- Content hash: a86161d12c6dcd31399cadd3c786f28f707cc4ab1bc3206f3302a2b196a41c3d
 
 kind=CHECK
 title=Independent checks
 body=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
 dominantAction=Continue
 references=
-items=u29-i-punctuation-1,u29-i-punctuation-2
+items=u29-i-punctuation-1,u29-i-punctuation-after,u29-i-punctuation-pronoun,u29-i-punctuation-cause,u29-i-punctuation-terminal
 examples=
 unavailableReason=
 bookDirection=
@@ -1670,20 +1713,71 @@ note=запятые не ставятся
 objectiveId=obj-u29-punctuation
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
-### EXAMPLE `ex-u29-punctuation-2`
+### EXAMPLE `ex-u29-punctuation-context-after`
 
 - Objectives: obj-u29-punctuation
 - Sessions: u29-s-punctuation
-- Source: src-ruwiki-prichastie-153078996
-- Rights: rights-ruwiki-prichastie-153078996
+- Source: src-ruwiki-obosoblenie-144053197
+- Rights: rights-ruwiki-obosoblenie-144053197
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 17a0a544825fbb71b221d76e86c00839b398b1f24f7be9719e12cf5879cb4683
+- Content hash: 1a786add5bd17af9dc829bbc1c28e2103c16f669c17285fbefcfc2cfd478e747
 
 kind=LEXICAL
 letterId=
-display=личным местоимением
-note=кроме тех случаев
+display=Туча, нависшая над высокими вершинами тополей, уже сыпала дождиком
+note=The participial phrase follows the cloud noun, and the main predicate continues after it; both boundaries are marked.
+objectiveId=obj-u29-punctuation
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### EXAMPLE `ex-u29-punctuation-context-pronoun`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-punctuation
+- Source: src-ruwiki-boltraffio-149826784
+- Rights: rights-ruwiki-boltraffio-149826784
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ed1ccc6a674d4cbb934c306ba5e29c63c945c8005cb682429c37132038e8b5b6
+
+kind=LEXICAL
+letterId=
+display=Воспитанный в традициях Фоппы, Бернардо Дзенале и Амброджо Бергоньоне, он прошёл обучение в мастерской Леонардо.
+note=The opening participial phrase describes the personal pronoun он. Its separating comma is before that pronoun/main clause; the earlier comma separates names within the modifier.
+objectiveId=obj-u29-punctuation
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### EXAMPLE `ex-u29-punctuation-context-cause`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-punctuation
+- Source: src-ruwiki-obosoblenie-144053197
+- Rights: rights-ruwiki-obosoblenie-144053197
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8ec964e5c8f29b4f97dfe7fb1871a1ac9f3daa1afdcac74909f96dd8f3baf298
+
+kind=LEXICAL
+letterId=
+display=Изумлённый этим хохотом, Павел сел на пол и смотрел куда-то в угол
+note=The retained row explicitly assigns a causal shade to this opening modifier describing Pavel. It is separated from the main clause despite preceding the described noun.
+objectiveId=obj-u29-punctuation
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### EXAMPLE `ex-u29-punctuation-context-terminal`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-punctuation
+- Source: src-ruwiki-obosoblenie-144053197
+- Rights: rights-ruwiki-obosoblenie-144053197
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5cd0838f2aa676ca5e1317b611e2a350bd28247c768a6e75bc58cae6c008d87a
+
+kind=LEXICAL
+letterId=
+display=Вдали виднеется маяк, стоящий у моря
+note=The following participial phrase describes the lighthouse and ends the supplied construction; its preceding boundary takes a comma, with no closing separating comma at sentence end.
 objectiveId=obj-u29-punctuation
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
@@ -1753,6 +1847,23 @@ letterId=
 display=отправила его
 note=she sent the letter from the post office
 objectiveId=obj-u29-reading
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### EXAMPLE `ex-u29-punctuation-2`
+
+- Objectives: obj-u29-punctuation-reference
+- Sessions: none
+- Source: src-ruwiki-prichastie-153078996
+- Rights: rights-ruwiki-prichastie-153078996
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 94e4248a32cb74632bb40134dc6613b234b4053a155b62eeec7581a2457a821b
+
+kind=LEXICAL
+letterId=
+display=личным местоимением
+note=кроме тех случаев
+objectiveId=obj-u29-punctuation-reference
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
 ### GUIDED_PRACTICE `u29-g-active-0`
@@ -2525,40 +2636,145 @@ relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u29-punctuation-1-ru | prov-ex-u29-punctuation-1-en | prov-ex-u29-punctuation-0-en | prov-u29-punctuation-x-1
 responseKind=RUSSIAN_PHRASE
 
-### INDEPENDENT_CHECK `u29-i-punctuation-2`
+### INDEPENDENT_CHECK `u29-i-punctuation-after`
 
 - Objectives: obj-u29-punctuation
 - Sessions: u29-s-punctuation
-- Source: src-ruwiki-prichastie-153078996
-- Rights: rights-ruwiki-prichastie-153078996
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 500af917c907b41325a13eb93f97e7e42d45a792e321fa0bc5b988ba167fc616
+- Content hash: 87f9150b4d27dfbf792c0c2637465f640caf3fbcdd55c93467d00bcc1a9028e9
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted phrase classifies the shown form?
-promptLetter=личным местоимением
-options=кроме тех случаев | запятые не ставятся | выделяется запятыми с двух сторон
-answer=кроме тех случаев
-feedback=The source says the determined word can be личным местоимением. The keyed phrase is кроме тех случаев. кроме тех случаев.
+prompt=Which English description of separating-comma treatment fits the participial phrase in this complete supplied construction? Ignore commas inside lists of names.
+promptLetter=Туча, нависшая над высокими вершинами тополей, уже сыпала дождиком
+options=Separating commas mark both boundaries of the participial phrase before the sentence continues. | A separating comma precedes the terminal participial phrase, with no closing comma at sentence end. | No separating comma is used between the participial phrase and the word it describes.
+answer=Separating commas mark both boundaries of the participial phrase before the sentence continues.
+feedback=In Туча, нависшая над высокими вершинами тополей, уже сыпала дождиком The participial phrase follows the cloud noun, and the main predicate continues after it; both boundaries are marked. The answer is Separating commas mark both boundaries of the participial phrase before the sentence continues. This is the supplied construction, not a universal rule for every modifier.
 objectiveId=obj-u29-punctuation
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The source states запятые не ставятся as the default before the determined word. | The source assigns выделяется запятыми с двух сторон to a phrase after the determined word.
-testedFeature=PARTICIPLE_PUNCTUATION
-evidenceMode=SOURCE_SUPPLIED_PAIR
-contrastSetId=u29-punctuation-2
+distractorRationales= | A separating comma precedes the terminal participial phrase, with no closing comma at sentence end. One preceding separating comma without a closing comma applies to a terminal following modifier; it would omit the other boundary in a continuing clause. | No separating comma is used between the participial phrase and the word it describes. The ordinary preceding-noun default has no separating comma, but that default does not remove required commas in the supplied following, pronoun-headed or cause-labelled construction.
+testedFeature=PUNCTUATION_CONTINUING_BOUNDARIES
+evidenceMode=STATED_APPLICATION
+contrastSetId=u29-i-punctuation-after
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-u29-punctuation-2-en
-distractorSourceIds= | prov-ex-u29-punctuation-1-en | prov-ex-u29-punctuation-0-en
-distractorDifference= | запятые не ставятся does not classify the shown form. | выделяется запятыми с двух сторон does not classify the shown form.
-whyAnswerDemonstratesObjective=The source says the determined word can be личным местоимением. The keyed phrase is кроме тех случаев.
-contrastMembers=кроме тех случаев | запятые не ставятся | выделяется запятыми с двух сторон
-relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u29-punctuation-2-ru | prov-ex-u29-punctuation-2-en | prov-ex-u29-punctuation-1-en | prov-ex-u29-punctuation-0-en
-responseKind=RUSSIAN_PHRASE
+answerSourceIds=prov-ca-u29-punctuation-u29-i-punctuation-after-1
+distractorSourceIds= | prov-ca-u29-punctuation-u29-i-punctuation-after-2 | prov-ca-u29-punctuation-u29-i-punctuation-after-3
+distractorDifference= | A separating comma precedes the terminal participial phrase, with no closing comma at sentence end. One preceding separating comma without a closing comma applies to a terminal following modifier; it would omit the other boundary in a continuing clause. | No separating comma is used between the participial phrase and the word it describes. The ordinary preceding-noun default has no separating comma, but that default does not remove required commas in the supplied following, pronoun-headed or cause-labelled construction.
+whyAnswerDemonstratesObjective=In Туча, нависшая над высокими вершинами тополей, уже сыпала дождиком The participial phrase follows the cloud noun, and the main predicate continues after it; both boundaries are marked. The answer is Separating commas mark both boundaries of the participial phrase before the sentence continues. This is the supplied construction, not a universal rule for every modifier.
+contrastMembers=Separating commas mark both boundaries of the participial phrase before the sentence continues. | A separating comma precedes the terminal participial phrase, with no closing comma at sentence end. | No separating comma is used between the participial phrase and the word it describes.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u29-punctuation-u29-i-punctuation-after-0 | prov-ca-u29-punctuation-u29-i-punctuation-after-1 | prov-ca-u29-punctuation-u29-i-punctuation-after-2 | prov-ca-u29-punctuation-u29-i-punctuation-after-3
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u29-i-punctuation-pronoun`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f4c799fb48871d7d9ec7b9347010420e911f7b465fb4950f45d1784a55577e1e
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English description of separating-comma treatment fits the participial phrase in this complete supplied construction? Ignore commas inside lists of names.
+promptLetter=Воспитанный в традициях Фоппы, Бернардо Дзенале и Амброджо Бергоньоне, он прошёл обучение в мастерской Леонардо.
+options=A separating comma follows the opening participial phrase before the main clause. | No separating comma is used between the participial phrase and the word it describes. | Separating commas mark both boundaries of the participial phrase before the sentence continues.
+answer=A separating comma follows the opening participial phrase before the main clause.
+feedback=In Воспитанный в традициях Фоппы, Бернардо Дзенале и Амброджо Бергоньоне, он прошёл обучение в мастерской Леонардо. The opening participial phrase describes the personal pronoun он. Its separating comma is before that pronoun/main clause; the earlier comma separates names within the modifier. The answer is A separating comma follows the opening participial phrase before the main clause. This is the supplied construction, not a universal rule for every modifier.
+objectiveId=obj-u29-punctuation
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | No separating comma is used between the participial phrase and the word it describes. The ordinary preceding-noun default has no separating comma, but that default does not remove required commas in the supplied following, pronoun-headed or cause-labelled construction. | Separating commas mark both boundaries of the participial phrase before the sentence continues. Two separating boundaries are appropriate only when the parent clause continues after a medial modifier; an opening or terminal modifier does not have that same layout.
+testedFeature=PUNCTUATION_PERSONAL_PRONOUN
+evidenceMode=STATED_APPLICATION
+contrastSetId=u29-i-punctuation-pronoun
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ca-u29-punctuation-u29-i-punctuation-pronoun-1
+distractorSourceIds= | prov-ca-u29-punctuation-u29-i-punctuation-pronoun-2 | prov-ca-u29-punctuation-u29-i-punctuation-pronoun-3
+distractorDifference= | No separating comma is used between the participial phrase and the word it describes. The ordinary preceding-noun default has no separating comma, but that default does not remove required commas in the supplied following, pronoun-headed or cause-labelled construction. | Separating commas mark both boundaries of the participial phrase before the sentence continues. Two separating boundaries are appropriate only when the parent clause continues after a medial modifier; an opening or terminal modifier does not have that same layout.
+whyAnswerDemonstratesObjective=In Воспитанный в традициях Фоппы, Бернардо Дзенале и Амброджо Бергоньоне, он прошёл обучение в мастерской Леонардо. The opening participial phrase describes the personal pronoun он. Its separating comma is before that pronoun/main clause; the earlier comma separates names within the modifier. The answer is A separating comma follows the opening participial phrase before the main clause. This is the supplied construction, not a universal rule for every modifier.
+contrastMembers=A separating comma follows the opening participial phrase before the main clause. | No separating comma is used between the participial phrase and the word it describes. | Separating commas mark both boundaries of the participial phrase before the sentence continues.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u29-punctuation-u29-i-punctuation-pronoun-0 | prov-ca-u29-punctuation-u29-i-punctuation-pronoun-1 | prov-ca-u29-punctuation-u29-i-punctuation-pronoun-2 | prov-ca-u29-punctuation-u29-i-punctuation-pronoun-3
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u29-i-punctuation-cause`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4469b1b35a37af81e6f96b2f035263abbacafcba293a456b219426fbbfaf1e12
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English description of separating-comma treatment fits the participial phrase in this complete supplied construction? Ignore commas inside lists of names.
+promptLetter=Изумлённый этим хохотом, Павел сел на пол и смотрел куда-то в угол
+options=A separating comma follows the opening participial phrase before the main clause. | No separating comma is used between the participial phrase and the word it describes. | A separating comma precedes the terminal participial phrase, with no closing comma at sentence end.
+answer=A separating comma follows the opening participial phrase before the main clause.
+feedback=In Изумлённый этим хохотом, Павел сел на пол и смотрел куда-то в угол The retained row explicitly assigns a causal shade to this opening modifier describing Pavel. It is separated from the main clause despite preceding the described noun. The answer is A separating comma follows the opening participial phrase before the main clause. This is the supplied construction, not a universal rule for every modifier.
+objectiveId=obj-u29-punctuation
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | No separating comma is used between the participial phrase and the word it describes. The ordinary preceding-noun default has no separating comma, but that default does not remove required commas in the supplied following, pronoun-headed or cause-labelled construction. | A separating comma precedes the terminal participial phrase, with no closing comma at sentence end. One preceding separating comma without a closing comma applies to a terminal following modifier; it would omit the other boundary in a continuing clause.
+testedFeature=PUNCTUATION_CAUSE_EXCEPTION
+evidenceMode=STATED_APPLICATION
+contrastSetId=u29-i-punctuation-cause
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ca-u29-punctuation-u29-i-punctuation-cause-1
+distractorSourceIds= | prov-ca-u29-punctuation-u29-i-punctuation-cause-2 | prov-ca-u29-punctuation-u29-i-punctuation-cause-3
+distractorDifference= | No separating comma is used between the participial phrase and the word it describes. The ordinary preceding-noun default has no separating comma, but that default does not remove required commas in the supplied following, pronoun-headed or cause-labelled construction. | A separating comma precedes the terminal participial phrase, with no closing comma at sentence end. One preceding separating comma without a closing comma applies to a terminal following modifier; it would omit the other boundary in a continuing clause.
+whyAnswerDemonstratesObjective=In Изумлённый этим хохотом, Павел сел на пол и смотрел куда-то в угол The retained row explicitly assigns a causal shade to this opening modifier describing Pavel. It is separated from the main clause despite preceding the described noun. The answer is A separating comma follows the opening participial phrase before the main clause. This is the supplied construction, not a universal rule for every modifier.
+contrastMembers=A separating comma follows the opening participial phrase before the main clause. | No separating comma is used between the participial phrase and the word it describes. | A separating comma precedes the terminal participial phrase, with no closing comma at sentence end.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u29-punctuation-u29-i-punctuation-cause-0 | prov-ca-u29-punctuation-u29-i-punctuation-cause-1 | prov-ca-u29-punctuation-u29-i-punctuation-cause-2 | prov-ca-u29-punctuation-u29-i-punctuation-cause-3
+responseKind=ENGLISH_CLASSIFICATION
+
+### INDEPENDENT_CHECK `u29-i-punctuation-terminal`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f9dfc301c2285d4c541863771d9711d3bfeaa35bf6d6f474c8c85025cdea6f6f
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English description of separating-comma treatment fits the participial phrase in this complete supplied construction? Ignore commas inside lists of names.
+promptLetter=Вдали виднеется маяк, стоящий у моря
+options=A separating comma precedes the terminal participial phrase, with no closing comma at sentence end. | Separating commas mark both boundaries of the participial phrase before the sentence continues. | No separating comma is used between the participial phrase and the word it describes.
+answer=A separating comma precedes the terminal participial phrase, with no closing comma at sentence end.
+feedback=In Вдали виднеется маяк, стоящий у моря The following participial phrase describes the lighthouse and ends the supplied construction; its preceding boundary takes a comma, with no closing separating comma at sentence end. The answer is A separating comma precedes the terminal participial phrase, with no closing comma at sentence end. This is the supplied construction, not a universal rule for every modifier.
+objectiveId=obj-u29-punctuation
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Separating commas mark both boundaries of the participial phrase before the sentence continues. Two separating boundaries are appropriate only when the parent clause continues after a medial modifier; an opening or terminal modifier does not have that same layout. | No separating comma is used between the participial phrase and the word it describes. The ordinary preceding-noun default has no separating comma, but that default does not remove required commas in the supplied following, pronoun-headed or cause-labelled construction.
+testedFeature=PUNCTUATION_TERMINAL_BOUNDARY
+evidenceMode=STATED_APPLICATION
+contrastSetId=u29-i-punctuation-terminal
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ca-u29-punctuation-u29-i-punctuation-terminal-1
+distractorSourceIds= | prov-ca-u29-punctuation-u29-i-punctuation-terminal-2 | prov-ca-u29-punctuation-u29-i-punctuation-terminal-3
+distractorDifference= | Separating commas mark both boundaries of the participial phrase before the sentence continues. Two separating boundaries are appropriate only when the parent clause continues after a medial modifier; an opening or terminal modifier does not have that same layout. | No separating comma is used between the participial phrase and the word it describes. The ordinary preceding-noun default has no separating comma, but that default does not remove required commas in the supplied following, pronoun-headed or cause-labelled construction.
+whyAnswerDemonstratesObjective=In Вдали виднеется маяк, стоящий у моря The following participial phrase describes the lighthouse and ends the supplied construction; its preceding boundary takes a comma, with no closing separating comma at sentence end. The answer is A separating comma precedes the terminal participial phrase, with no closing comma at sentence end. This is the supplied construction, not a universal rule for every modifier.
+contrastMembers=A separating comma precedes the terminal participial phrase, with no closing comma at sentence end. | Separating commas mark both boundaries of the participial phrase before the sentence continues. | No separating comma is used between the participial phrase and the word it describes.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u29-punctuation-u29-i-punctuation-terminal-0 | prov-ca-u29-punctuation-u29-i-punctuation-terminal-1 | prov-ca-u29-punctuation-u29-i-punctuation-terminal-2 | prov-ca-u29-punctuation-u29-i-punctuation-terminal-3
+responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u29-i-register-1`
 
@@ -8644,6 +8860,1460 @@ attribution=Russian Companion independently authored English explanation, 2026-1
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
 sourceHash=0b5543c863fe3f4b84eecdbf7bac775a64a149b23f12b38d139a7a2126edcb89
 contentHash=55eb2ae0657a1ef9f8be30941f9ded2c7374a6095ad3d9f575bb5dde393b5b05
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-punctuation-ex-u29-punctuation-context-after-note`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 61b7d27ec9104e1fcba60b2521e578e7ea4f0f803a2e59d2f1d3dafb1b5cb6f8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-punctuation:punctuation:ex-u29-punctuation-context-after-note
+originalSourceText=Retained Russian Wikipedia Причастие (лингвистика)153078996 complete participial-phrase rule/default examples and copyright154562152. Newly selected Russian Wikipedia Обособление144053197 specific after-noun, cause-labelled and terminal examples; Больтраффио149826784 complete opening participial construction modifying он. Exact raw revisions and API SHA1/size/SHA256 metadata are retained under audit/independent-gpt61-2026-10-12/ia012-unit29-research-verification/public-candidates-2026-10-13/. Native selection performs only existing mechanical wiki-link label/emphasis unfolding; words, punctuation, spelling, capitalization and sentence limits are unchanged. No added terminal period, generated Russian sentence or private Penguin prose. Wikipedia first-party selection/arrangement is CC BY-SA4.0 under the actual retained Russian Wikipedia copyrights154562152 route, with stable page histories/contributor attribution. Underlying cloud quotation is Korolenko, В дурном обществе1885 (author died1921); the cause example is the licensed Wikipedia instructional adaptation of Gorky Горемыка Павел1894 (author died1936), not a verbatim original-story quotation. Original public-domain basis/edition/author-date checks are retained separately; no claim that hosting licenses every third-party quotation. The obsolete source reference year5078 is not adopted. Only these bounded comma decisions are taught:ordinary preceding-noun default, both boundaries before a continuing clause, pronoun-headed or cause-labelled opening modifier, and terminal modifier without a closing comma. The internal name-list comma in the artist sentence is distinct from its modifier/main-clause boundary. No universal comma-insertion, all modifier types or unrestricted production claim. Independently authored English on2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending. The old category/connective question stays optional SOURCE_QUESTION reference practice and cannot credit or prevent completion of the language objective.
+The participial phrase follows the cloud noun, and the main predicate continues after it; both boundaries are marked.
+shippedText=The participial phrase follows the cloud noun, and the main predicate continues after it; both boundaries are marked.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8ccb00039f9f6f5ded4f82d3277c0f56b4f67d3bbca625b73002e7af98474ff0
+contentHash=bf3cf7df841205e8a724f5235082c1844b8cd962621f1687fa1adf38fb37d81f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-punctuation-ex-u29-punctuation-context-cause-note`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c269bf153a84ef5e6fcf4db79277002c4218ecff15c270736b6bad8d051e4e90
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-punctuation:punctuation:ex-u29-punctuation-context-cause-note
+originalSourceText=Retained Russian Wikipedia Причастие (лингвистика)153078996 complete participial-phrase rule/default examples and copyright154562152. Newly selected Russian Wikipedia Обособление144053197 specific after-noun, cause-labelled and terminal examples; Больтраффио149826784 complete opening participial construction modifying он. Exact raw revisions and API SHA1/size/SHA256 metadata are retained under audit/independent-gpt61-2026-10-12/ia012-unit29-research-verification/public-candidates-2026-10-13/. Native selection performs only existing mechanical wiki-link label/emphasis unfolding; words, punctuation, spelling, capitalization and sentence limits are unchanged. No added terminal period, generated Russian sentence or private Penguin prose. Wikipedia first-party selection/arrangement is CC BY-SA4.0 under the actual retained Russian Wikipedia copyrights154562152 route, with stable page histories/contributor attribution. Underlying cloud quotation is Korolenko, В дурном обществе1885 (author died1921); the cause example is the licensed Wikipedia instructional adaptation of Gorky Горемыка Павел1894 (author died1936), not a verbatim original-story quotation. Original public-domain basis/edition/author-date checks are retained separately; no claim that hosting licenses every third-party quotation. The obsolete source reference year5078 is not adopted. Only these bounded comma decisions are taught:ordinary preceding-noun default, both boundaries before a continuing clause, pronoun-headed or cause-labelled opening modifier, and terminal modifier without a closing comma. The internal name-list comma in the artist sentence is distinct from its modifier/main-clause boundary. No universal comma-insertion, all modifier types or unrestricted production claim. Independently authored English on2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending. The old category/connective question stays optional SOURCE_QUESTION reference practice and cannot credit or prevent completion of the language objective.
+The retained row explicitly assigns a causal shade to this opening modifier describing Pavel. It is separated from the main clause despite preceding the described noun.
+shippedText=The retained row explicitly assigns a causal shade to this opening modifier describing Pavel. It is separated from the main clause despite preceding the described noun.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=89dc943dbecf6112da8466b4117ce5507f97a8182363977bcfee9bdf809db8ba
+contentHash=636e2ec8ba480f05899d15976e30f8cc84809aa5ea8952624bfaf5dd29331b3d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-punctuation-ex-u29-punctuation-context-pronoun-note`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4af7b296db82bc9442c69819ce79804f177b4929e8c73749e4781cbbf2b60944
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-punctuation:punctuation:ex-u29-punctuation-context-pronoun-note
+originalSourceText=Retained Russian Wikipedia Причастие (лингвистика)153078996 complete participial-phrase rule/default examples and copyright154562152. Newly selected Russian Wikipedia Обособление144053197 specific after-noun, cause-labelled and terminal examples; Больтраффио149826784 complete opening participial construction modifying он. Exact raw revisions and API SHA1/size/SHA256 metadata are retained under audit/independent-gpt61-2026-10-12/ia012-unit29-research-verification/public-candidates-2026-10-13/. Native selection performs only existing mechanical wiki-link label/emphasis unfolding; words, punctuation, spelling, capitalization and sentence limits are unchanged. No added terminal period, generated Russian sentence or private Penguin prose. Wikipedia first-party selection/arrangement is CC BY-SA4.0 under the actual retained Russian Wikipedia copyrights154562152 route, with stable page histories/contributor attribution. Underlying cloud quotation is Korolenko, В дурном обществе1885 (author died1921); the cause example is the licensed Wikipedia instructional adaptation of Gorky Горемыка Павел1894 (author died1936), not a verbatim original-story quotation. Original public-domain basis/edition/author-date checks are retained separately; no claim that hosting licenses every third-party quotation. The obsolete source reference year5078 is not adopted. Only these bounded comma decisions are taught:ordinary preceding-noun default, both boundaries before a continuing clause, pronoun-headed or cause-labelled opening modifier, and terminal modifier without a closing comma. The internal name-list comma in the artist sentence is distinct from its modifier/main-clause boundary. No universal comma-insertion, all modifier types or unrestricted production claim. Independently authored English on2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending. The old category/connective question stays optional SOURCE_QUESTION reference practice and cannot credit or prevent completion of the language objective.
+The opening participial phrase describes the personal pronoun он. Its separating comma is before that pronoun/main clause; the earlier comma separates names within the modifier.
+shippedText=The opening participial phrase describes the personal pronoun он. Its separating comma is before that pronoun/main clause; the earlier comma separates names within the modifier.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b4ffe42d746041f6ef976786c5d5d54e0aa91d05735b9cb6448f5567af141bd7
+contentHash=0352c24b22dbd2155bdfcdf852978c9abeadc59b4bc738bb820a670cc77eb54f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-punctuation-ex-u29-punctuation-context-terminal-note`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 097a8c9cd2b1889027c5e9d07f65a49d1ffc7ff4d47e1b71c200d78875454317
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-punctuation:punctuation:ex-u29-punctuation-context-terminal-note
+originalSourceText=Retained Russian Wikipedia Причастие (лингвистика)153078996 complete participial-phrase rule/default examples and copyright154562152. Newly selected Russian Wikipedia Обособление144053197 specific after-noun, cause-labelled and terminal examples; Больтраффио149826784 complete opening participial construction modifying он. Exact raw revisions and API SHA1/size/SHA256 metadata are retained under audit/independent-gpt61-2026-10-12/ia012-unit29-research-verification/public-candidates-2026-10-13/. Native selection performs only existing mechanical wiki-link label/emphasis unfolding; words, punctuation, spelling, capitalization and sentence limits are unchanged. No added terminal period, generated Russian sentence or private Penguin prose. Wikipedia first-party selection/arrangement is CC BY-SA4.0 under the actual retained Russian Wikipedia copyrights154562152 route, with stable page histories/contributor attribution. Underlying cloud quotation is Korolenko, В дурном обществе1885 (author died1921); the cause example is the licensed Wikipedia instructional adaptation of Gorky Горемыка Павел1894 (author died1936), not a verbatim original-story quotation. Original public-domain basis/edition/author-date checks are retained separately; no claim that hosting licenses every third-party quotation. The obsolete source reference year5078 is not adopted. Only these bounded comma decisions are taught:ordinary preceding-noun default, both boundaries before a continuing clause, pronoun-headed or cause-labelled opening modifier, and terminal modifier without a closing comma. The internal name-list comma in the artist sentence is distinct from its modifier/main-clause boundary. No universal comma-insertion, all modifier types or unrestricted production claim. Independently authored English on2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending. The old category/connective question stays optional SOURCE_QUESTION reference practice and cannot credit or prevent completion of the language objective.
+The following participial phrase describes the lighthouse and ends the supplied construction; its preceding boundary takes a comma, with no closing separating comma at sentence end.
+shippedText=The following participial phrase describes the lighthouse and ends the supplied construction; its preceding boundary takes a comma, with no closing separating comma at sentence end.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a47edd3d0922cf15e1813c22d825dbb4ef5a7efce15318d4c0ceb0e128e8dde7
+contentHash=98e1f6a1e1b751482a3f896151867ced1665f03d3ffde17542e99dd1b0940fda
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-punctuation-obj-u29-punctuation-reference-title`
+
+- Objectives: obj-u29-punctuation-reference
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a748353631238dd42e29e66f716b05bba8a7720d43938574b2f8849b78f26594
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-punctuation-reference:punctuation:obj-u29-punctuation-reference-title
+originalSourceText=Retained Russian Wikipedia Причастие (лингвистика)153078996 complete participial-phrase rule/default examples and copyright154562152. Newly selected Russian Wikipedia Обособление144053197 specific after-noun, cause-labelled and terminal examples; Больтраффио149826784 complete opening participial construction modifying он. Exact raw revisions and API SHA1/size/SHA256 metadata are retained under audit/independent-gpt61-2026-10-12/ia012-unit29-research-verification/public-candidates-2026-10-13/. Native selection performs only existing mechanical wiki-link label/emphasis unfolding; words, punctuation, spelling, capitalization and sentence limits are unchanged. No added terminal period, generated Russian sentence or private Penguin prose. Wikipedia first-party selection/arrangement is CC BY-SA4.0 under the actual retained Russian Wikipedia copyrights154562152 route, with stable page histories/contributor attribution. Underlying cloud quotation is Korolenko, В дурном обществе1885 (author died1921); the cause example is the licensed Wikipedia instructional adaptation of Gorky Горемыка Павел1894 (author died1936), not a verbatim original-story quotation. Original public-domain basis/edition/author-date checks are retained separately; no claim that hosting licenses every third-party quotation. The obsolete source reference year5078 is not adopted. Only these bounded comma decisions are taught:ordinary preceding-noun default, both boundaries before a continuing clause, pronoun-headed or cause-labelled opening modifier, and terminal modifier without a closing comma. The internal name-list comma in the artist sentence is distinct from its modifier/main-clause boundary. No universal comma-insertion, all modifier types or unrestricted production claim. Independently authored English on2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending. The old category/connective question stays optional SOURCE_QUESTION reference practice and cannot credit or prevent completion of the language objective.
+Optional source wording reference
+shippedText=Optional source wording reference
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=22ec831cbb77b2032aa9bfd7118911b9d3a3281a7d95dde31f59ff44454d8ede
+contentHash=aef4afff16341cc4d82c69a3d0f08346c039c8028afbd70df65f74c9b45be8d6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-punctuation-obj-u29-punctuation-title`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e65fd1ca8e2d8b775901f8be4376fede4b5a5f9da145ecf1e30fc7d6b37d034c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-punctuation:punctuation:obj-u29-punctuation-title
+originalSourceText=Retained Russian Wikipedia Причастие (лингвистика)153078996 complete participial-phrase rule/default examples and copyright154562152. Newly selected Russian Wikipedia Обособление144053197 specific after-noun, cause-labelled and terminal examples; Больтраффио149826784 complete opening participial construction modifying он. Exact raw revisions and API SHA1/size/SHA256 metadata are retained under audit/independent-gpt61-2026-10-12/ia012-unit29-research-verification/public-candidates-2026-10-13/. Native selection performs only existing mechanical wiki-link label/emphasis unfolding; words, punctuation, spelling, capitalization and sentence limits are unchanged. No added terminal period, generated Russian sentence or private Penguin prose. Wikipedia first-party selection/arrangement is CC BY-SA4.0 under the actual retained Russian Wikipedia copyrights154562152 route, with stable page histories/contributor attribution. Underlying cloud quotation is Korolenko, В дурном обществе1885 (author died1921); the cause example is the licensed Wikipedia instructional adaptation of Gorky Горемыка Павел1894 (author died1936), not a verbatim original-story quotation. Original public-domain basis/edition/author-date checks are retained separately; no claim that hosting licenses every third-party quotation. The obsolete source reference year5078 is not adopted. Only these bounded comma decisions are taught:ordinary preceding-noun default, both boundaries before a continuing clause, pronoun-headed or cause-labelled opening modifier, and terminal modifier without a closing comma. The internal name-list comma in the artist sentence is distinct from its modifier/main-clause boundary. No universal comma-insertion, all modifier types or unrestricted production claim. Independently authored English on2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending. The old category/connective question stays optional SOURCE_QUESTION reference practice and cannot credit or prevent completion of the language objective.
+Decide comma boundaries in the supplied participial constructions
+shippedText=Decide comma boundaries in the supplied participial constructions
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8da4820bc1e2d42286db763b23b08f4376c90b70db9027c8b9eacdcbcd75b114
+contentHash=2c946b6dd25975c443872fd84a31498d8f6b7e6431c4417a718d55c295c4056d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-punctuation-reference-u29-st-teach-punctuation-3-body`
+
+- Objectives: obj-u29-punctuation-reference
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b7616acec9f4cd3526a895135f9bd68a81b006f34bcc535cb06d0da9c626e125
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-punctuation-reference:punctuation:reference-u29-st-teach-punctuation-3-body
+originalSourceText=Retained Russian Wikipedia Причастие (лингвистика)153078996 complete participial-phrase rule/default examples and copyright154562152. Newly selected Russian Wikipedia Обособление144053197 specific after-noun, cause-labelled and terminal examples; Больтраффио149826784 complete opening participial construction modifying он. Exact raw revisions and API SHA1/size/SHA256 metadata are retained under audit/independent-gpt61-2026-10-12/ia012-unit29-research-verification/public-candidates-2026-10-13/. Native selection performs only existing mechanical wiki-link label/emphasis unfolding; words, punctuation, spelling, capitalization and sentence limits are unchanged. No added terminal period, generated Russian sentence or private Penguin prose. Wikipedia first-party selection/arrangement is CC BY-SA4.0 under the actual retained Russian Wikipedia copyrights154562152 route, with stable page histories/contributor attribution. Underlying cloud quotation is Korolenko, В дурном обществе1885 (author died1921); the cause example is the licensed Wikipedia instructional adaptation of Gorky Горемыка Павел1894 (author died1936), not a verbatim original-story quotation. Original public-domain basis/edition/author-date checks are retained separately; no claim that hosting licenses every third-party quotation. The obsolete source reference year5078 is not adopted. Only these bounded comma decisions are taught:ordinary preceding-noun default, both boundaries before a continuing clause, pronoun-headed or cause-labelled opening modifier, and terminal modifier without a closing comma. The internal name-list comma in the artist sentence is distinct from its modifier/main-clause boundary. No universal comma-insertion, all modifier types or unrestricted production claim. Independently authored English on2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending. The old category/connective question stays optional SOURCE_QUESTION reference practice and cannot credit or prevent completion of the language objective.
+The retained rule states exceptions when the described entity is a personal pronoun or the participial phrase expresses a cause. Воспитанный в традициях Фоппы, Бернардо Дзенале и Амброджо Бергоньоне, он прошёл обучение в мастерской Леонардо. The opening phrase describes он, so A separating comma follows the opening participial phrase before the main clause. The comma after Фоппы is internal to the list of names. The later comma after Бергоньоне marks the modifier boundary before он; do not treat every visible comma as a modifier boundary. Изумлённый этим хохотом, Павел сел на пол и смотрел куда-то в угол The retained source row explicitly gives this example a causal shade, so A separating comma follows the opening participial phrase before the main clause. The ordinary preceding-noun label запятые не ставятся cannot cancel these exceptions. The optional source wording личным местоимением and кроме тех случаев identifies a category/connective, not a complete comma decision; its reference question does not satisfy these language checks.
+shippedText=The retained rule states exceptions when the described entity is a personal pronoun or the participial phrase expresses a cause. Воспитанный в традициях Фоппы, Бернардо Дзенале и Амброджо Бергоньоне, он прошёл обучение в мастерской Леонардо. The opening phrase describes он, so A separating comma follows the opening participial phrase before the main clause. The comma after Фоппы is internal to the list of names. The later comma after Бергоньоне marks the modifier boundary before он; do not treat every visible comma as a modifier boundary. Изумлённый этим хохотом, Павел сел на пол и смотрел куда-то в угол The retained source row explicitly gives this example a causal shade, so A separating comma follows the opening participial phrase before the main clause. The ordinary preceding-noun label запятые не ставятся cannot cancel these exceptions. The optional source wording личным местоимением and кроме тех случаев identifies a category/connective, not a complete comma decision; its reference question does not satisfy these language checks.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d991abedfa0d6e286e39487f11ca0d73d2251212683cccd1d84cbbf360113dae
+contentHash=34bde1a40c57da81df8d9bb8bd329a59cfaf2b681dd5b39d44819ae0f9f01e19
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-2-feedback`
+
+- Objectives: obj-u29-punctuation-reference
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 02502d1365de36194617222f86621912794e163672920d03966f9a6dd6196a7d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-punctuation-reference:punctuation:u29-i-punctuation-2-feedback
+originalSourceText=Retained Russian Wikipedia Причастие (лингвистика)153078996 complete participial-phrase rule/default examples and copyright154562152. Newly selected Russian Wikipedia Обособление144053197 specific after-noun, cause-labelled and terminal examples; Больтраффио149826784 complete opening participial construction modifying он. Exact raw revisions and API SHA1/size/SHA256 metadata are retained under audit/independent-gpt61-2026-10-12/ia012-unit29-research-verification/public-candidates-2026-10-13/. Native selection performs only existing mechanical wiki-link label/emphasis unfolding; words, punctuation, spelling, capitalization and sentence limits are unchanged. No added terminal period, generated Russian sentence or private Penguin prose. Wikipedia first-party selection/arrangement is CC BY-SA4.0 under the actual retained Russian Wikipedia copyrights154562152 route, with stable page histories/contributor attribution. Underlying cloud quotation is Korolenko, В дурном обществе1885 (author died1921); the cause example is the licensed Wikipedia instructional adaptation of Gorky Горемыка Павел1894 (author died1936), not a verbatim original-story quotation. Original public-domain basis/edition/author-date checks are retained separately; no claim that hosting licenses every third-party quotation. The obsolete source reference year5078 is not adopted. Only these bounded comma decisions are taught:ordinary preceding-noun default, both boundaries before a continuing clause, pronoun-headed or cause-labelled opening modifier, and terminal modifier without a closing comma. The internal name-list comma in the artist sentence is distinct from its modifier/main-clause boundary. No universal comma-insertion, all modifier types or unrestricted production claim. Independently authored English on2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending. The old category/connective question stays optional SOURCE_QUESTION reference practice and cannot credit or prevent completion of the language objective.
+Optional source wording only; this category/connective answer is not a comma decision. The source says the determined word can be личным местоимением. The keyed phrase is кроме тех случаев. кроме тех случаев.
+shippedText=Optional source wording only; this category/connective answer is not a comma decision. The source says the determined word can be личным местоимением. The keyed phrase is кроме тех случаев. кроме тех случаев.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=39a32e095161d6720a488d59fa6b7ffaf59ab9ffffb2969761ff2ad261a38b34
+contentHash=a3dd3a5514f5c9bcf3bebd8b2a7c46f3ae86bde6f0df3952efd56c9aec21d347
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-2-prompt`
+
+- Objectives: obj-u29-punctuation-reference
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c041326a89132c3aac62e08207e9ac494c675f61ea9a6410009b57a50c1fc183
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-punctuation-reference:punctuation:u29-i-punctuation-2-prompt
+originalSourceText=Retained Russian Wikipedia Причастие (лингвистика)153078996 complete participial-phrase rule/default examples and copyright154562152. Newly selected Russian Wikipedia Обособление144053197 specific after-noun, cause-labelled and terminal examples; Больтраффио149826784 complete opening participial construction modifying он. Exact raw revisions and API SHA1/size/SHA256 metadata are retained under audit/independent-gpt61-2026-10-12/ia012-unit29-research-verification/public-candidates-2026-10-13/. Native selection performs only existing mechanical wiki-link label/emphasis unfolding; words, punctuation, spelling, capitalization and sentence limits are unchanged. No added terminal period, generated Russian sentence or private Penguin prose. Wikipedia first-party selection/arrangement is CC BY-SA4.0 under the actual retained Russian Wikipedia copyrights154562152 route, with stable page histories/contributor attribution. Underlying cloud quotation is Korolenko, В дурном обществе1885 (author died1921); the cause example is the licensed Wikipedia instructional adaptation of Gorky Горемыка Павел1894 (author died1936), not a verbatim original-story quotation. Original public-domain basis/edition/author-date checks are retained separately; no claim that hosting licenses every third-party quotation. The obsolete source reference year5078 is not adopted. Only these bounded comma decisions are taught:ordinary preceding-noun default, both boundaries before a continuing clause, pronoun-headed or cause-labelled opening modifier, and terminal modifier without a closing comma. The internal name-list comma in the artist sentence is distinct from its modifier/main-clause boundary. No universal comma-insertion, all modifier types or unrestricted production claim. Independently authored English on2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending. The old category/connective question stays optional SOURCE_QUESTION reference practice and cannot credit or prevent completion of the language objective.
+Optional reference wording: Which admitted phrase classifies the shown form?
+shippedText=Optional reference wording: Which admitted phrase classifies the shown form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=16309e3522312769926e0a1bc28dd30650020759faca1b549059423c37deb65a
+contentHash=88ebc23637c9356e867b0088c5bb4e37742f389be36e2182951af3d11e8a8026
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-after-0`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 06c819d86c61da99893886e4c44c4be73f43e6f719f3ccc526ce3e9c416ed0c0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-i-punctuation-after
+originalSourceText=Retained Russian Wikipedia Причастие (лингвистика)153078996 complete participial-phrase rule/default examples and copyright154562152. Newly selected Russian Wikipedia Обособление144053197 specific after-noun, cause-labelled and terminal examples; Больтраффио149826784 complete opening participial construction modifying он. Exact raw revisions and API SHA1/size/SHA256 metadata are retained under audit/independent-gpt61-2026-10-12/ia012-unit29-research-verification/public-candidates-2026-10-13/. Native selection performs only existing mechanical wiki-link label/emphasis unfolding; words, punctuation, spelling, capitalization and sentence limits are unchanged. No added terminal period, generated Russian sentence or private Penguin prose. Wikipedia first-party selection/arrangement is CC BY-SA4.0 under the actual retained Russian Wikipedia copyrights154562152 route, with stable page histories/contributor attribution. Underlying cloud quotation is Korolenko, В дурном обществе1885 (author died1921); the cause example is the licensed Wikipedia instructional adaptation of Gorky Горемыка Павел1894 (author died1936), not a verbatim original-story quotation. Original public-domain basis/edition/author-date checks are retained separately; no claim that hosting licenses every third-party quotation. The obsolete source reference year5078 is not adopted. Only these bounded comma decisions are taught:ordinary preceding-noun default, both boundaries before a continuing clause, pronoun-headed or cause-labelled opening modifier, and terminal modifier without a closing comma. The internal name-list comma in the artist sentence is distinct from its modifier/main-clause boundary. No universal comma-insertion, all modifier types or unrestricted production claim. Independently authored English on2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending. The old category/connective question stays optional SOURCE_QUESTION reference practice and cannot credit or prevent completion of the language objective.
+Context explanation:
+In Туча, нависшая над высокими вершинами тополей, уже сыпала дождиком The participial phrase follows the cloud noun, and the main predicate continues after it; both boundaries are marked. The answer is Separating commas mark both boundaries of the participial phrase before the sentence continues. This is the supplied construction, not a universal rule for every modifier.
+Tuple-v1:tuple-v1:1;122:Туча, нависшая над высокими вершинами тополей, уже сыпала дождиком95:Separating commas mark both boundaries of the participial phrase before the sentence continues.2;99:A separating comma precedes the terminal participial phrase, with no closing comma at sentence end.85:No separating comma is used between the participial phrase and the word it describes.
+shippedText=Туча, нависшая над высокими вершинами тополей, уже сыпала дождиком
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c62e02bbf86d3f93ad9d942508d251d80e7d4cf22f7687fdfadf5c07875b786e
+contentHash=7a661733fd5dd4f7195fd7c4a7a5cf65eb6ac982555f47c7fe936d82d66f2d28
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-after-1`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 82c09273fa95de74f7be2e948b5f4f5ab14ee050bf0d67008d091d087f04bc5d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-i-punctuation-after
+originalSourceText=Retained Russian Wikipedia Причастие (лингвистика)153078996 complete participial-phrase rule/default examples and copyright154562152. Newly selected Russian Wikipedia Обособление144053197 specific after-noun, cause-labelled and terminal examples; Больтраффио149826784 complete opening participial construction modifying он. Exact raw revisions and API SHA1/size/SHA256 metadata are retained under audit/independent-gpt61-2026-10-12/ia012-unit29-research-verification/public-candidates-2026-10-13/. Native selection performs only existing mechanical wiki-link label/emphasis unfolding; words, punctuation, spelling, capitalization and sentence limits are unchanged. No added terminal period, generated Russian sentence or private Penguin prose. Wikipedia first-party selection/arrangement is CC BY-SA4.0 under the actual retained Russian Wikipedia copyrights154562152 route, with stable page histories/contributor attribution. Underlying cloud quotation is Korolenko, В дурном обществе1885 (author died1921); the cause example is the licensed Wikipedia instructional adaptation of Gorky Горемыка Павел1894 (author died1936), not a verbatim original-story quotation. Original public-domain basis/edition/author-date checks are retained separately; no claim that hosting licenses every third-party quotation. The obsolete source reference year5078 is not adopted. Only these bounded comma decisions are taught:ordinary preceding-noun default, both boundaries before a continuing clause, pronoun-headed or cause-labelled opening modifier, and terminal modifier without a closing comma. The internal name-list comma in the artist sentence is distinct from its modifier/main-clause boundary. No universal comma-insertion, all modifier types or unrestricted production claim. Independently authored English on2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending. The old category/connective question stays optional SOURCE_QUESTION reference practice and cannot credit or prevent completion of the language objective.
+Context explanation:
+In Туча, нависшая над высокими вершинами тополей, уже сыпала дождиком The participial phrase follows the cloud noun, and the main predicate continues after it; both boundaries are marked. The answer is Separating commas mark both boundaries of the participial phrase before the sentence continues. This is the supplied construction, not a universal rule for every modifier.
+Tuple-v1:tuple-v1:1;122:Туча, нависшая над высокими вершинами тополей, уже сыпала дождиком95:Separating commas mark both boundaries of the participial phrase before the sentence continues.2;99:A separating comma precedes the terminal participial phrase, with no closing comma at sentence end.85:No separating comma is used between the participial phrase and the word it describes.
+shippedText=Separating commas mark both boundaries of the participial phrase before the sentence continues.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c62e02bbf86d3f93ad9d942508d251d80e7d4cf22f7687fdfadf5c07875b786e
+contentHash=a11b225ff814aa61da8c4688afd5085ad6adaab206fe0585687b8566d48b321c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-after-2`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 80e5196bd21f8f4fb02454450a874bdaaf6308801ae56f1290c1be65d075e610
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-i-punctuation-after
+originalSourceText=Retained Russian Wikipedia Причастие (лингвистика)153078996 complete participial-phrase rule/default examples and copyright154562152. Newly selected Russian Wikipedia Обособление144053197 specific after-noun, cause-labelled and terminal examples; Больтраффио149826784 complete opening participial construction modifying он. Exact raw revisions and API SHA1/size/SHA256 metadata are retained under audit/independent-gpt61-2026-10-12/ia012-unit29-research-verification/public-candidates-2026-10-13/. Native selection performs only existing mechanical wiki-link label/emphasis unfolding; words, punctuation, spelling, capitalization and sentence limits are unchanged. No added terminal period, generated Russian sentence or private Penguin prose. Wikipedia first-party selection/arrangement is CC BY-SA4.0 under the actual retained Russian Wikipedia copyrights154562152 route, with stable page histories/contributor attribution. Underlying cloud quotation is Korolenko, В дурном обществе1885 (author died1921); the cause example is the licensed Wikipedia instructional adaptation of Gorky Горемыка Павел1894 (author died1936), not a verbatim original-story quotation. Original public-domain basis/edition/author-date checks are retained separately; no claim that hosting licenses every third-party quotation. The obsolete source reference year5078 is not adopted. Only these bounded comma decisions are taught:ordinary preceding-noun default, both boundaries before a continuing clause, pronoun-headed or cause-labelled opening modifier, and terminal modifier without a closing comma. The internal name-list comma in the artist sentence is distinct from its modifier/main-clause boundary. No universal comma-insertion, all modifier types or unrestricted production claim. Independently authored English on2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending. The old category/connective question stays optional SOURCE_QUESTION reference practice and cannot credit or prevent completion of the language objective.
+Context explanation:
+In Туча, нависшая над высокими вершинами тополей, уже сыпала дождиком The participial phrase follows the cloud noun, and the main predicate continues after it; both boundaries are marked. The answer is Separating commas mark both boundaries of the participial phrase before the sentence continues. This is the supplied construction, not a universal rule for every modifier.
+Tuple-v1:tuple-v1:1;122:Туча, нависшая над высокими вершинами тополей, уже сыпала дождиком95:Separating commas mark both boundaries of the participial phrase before the sentence continues.2;99:A separating comma precedes the terminal participial phrase, with no closing comma at sentence end.85:No separating comma is used between the participial phrase and the word it describes.
+shippedText=A separating comma precedes the terminal participial phrase, with no closing comma at sentence end.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c62e02bbf86d3f93ad9d942508d251d80e7d4cf22f7687fdfadf5c07875b786e
+contentHash=7f61987314f41383cefdb5d65c84d27226473bb241cd197b482c064959d1358b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-after-3`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e1bde205cc8a83544faa2d5372f9842eff8447316fe7dbae36bab3cb3f110f87
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-i-punctuation-after
+originalSourceText=Retained Russian Wikipedia Причастие (лингвистика)153078996 complete participial-phrase rule/default examples and copyright154562152. Newly selected Russian Wikipedia Обособление144053197 specific after-noun, cause-labelled and terminal examples; Больтраффио149826784 complete opening participial construction modifying он. Exact raw revisions and API SHA1/size/SHA256 metadata are retained under audit/independent-gpt61-2026-10-12/ia012-unit29-research-verification/public-candidates-2026-10-13/. Native selection performs only existing mechanical wiki-link label/emphasis unfolding; words, punctuation, spelling, capitalization and sentence limits are unchanged. No added terminal period, generated Russian sentence or private Penguin prose. Wikipedia first-party selection/arrangement is CC BY-SA4.0 under the actual retained Russian Wikipedia copyrights154562152 route, with stable page histories/contributor attribution. Underlying cloud quotation is Korolenko, В дурном обществе1885 (author died1921); the cause example is the licensed Wikipedia instructional adaptation of Gorky Горемыка Павел1894 (author died1936), not a verbatim original-story quotation. Original public-domain basis/edition/author-date checks are retained separately; no claim that hosting licenses every third-party quotation. The obsolete source reference year5078 is not adopted. Only these bounded comma decisions are taught:ordinary preceding-noun default, both boundaries before a continuing clause, pronoun-headed or cause-labelled opening modifier, and terminal modifier without a closing comma. The internal name-list comma in the artist sentence is distinct from its modifier/main-clause boundary. No universal comma-insertion, all modifier types or unrestricted production claim. Independently authored English on2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending. The old category/connective question stays optional SOURCE_QUESTION reference practice and cannot credit or prevent completion of the language objective.
+Context explanation:
+In Туча, нависшая над высокими вершинами тополей, уже сыпала дождиком The participial phrase follows the cloud noun, and the main predicate continues after it; both boundaries are marked. The answer is Separating commas mark both boundaries of the participial phrase before the sentence continues. This is the supplied construction, not a universal rule for every modifier.
+Tuple-v1:tuple-v1:1;122:Туча, нависшая над высокими вершинами тополей, уже сыпала дождиком95:Separating commas mark both boundaries of the participial phrase before the sentence continues.2;99:A separating comma precedes the terminal participial phrase, with no closing comma at sentence end.85:No separating comma is used between the participial phrase and the word it describes.
+shippedText=No separating comma is used between the participial phrase and the word it describes.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c62e02bbf86d3f93ad9d942508d251d80e7d4cf22f7687fdfadf5c07875b786e
+contentHash=83a70717c9e7ab6128b4e5aa31a9bef350f9492459929016b9e9b4ed6bdfc704
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-after-feedback`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 60622707f823f7f2e69666cc2de7bf623c18c177372625a6f377192747889a64
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-punctuation:punctuation:u29-i-punctuation-after-feedback
+originalSourceText=Retained Russian Wikipedia Причастие (лингвистика)153078996 complete participial-phrase rule/default examples and copyright154562152. Newly selected Russian Wikipedia Обособление144053197 specific after-noun, cause-labelled and terminal examples; Больтраффио149826784 complete opening participial construction modifying он. Exact raw revisions and API SHA1/size/SHA256 metadata are retained under audit/independent-gpt61-2026-10-12/ia012-unit29-research-verification/public-candidates-2026-10-13/. Native selection performs only existing mechanical wiki-link label/emphasis unfolding; words, punctuation, spelling, capitalization and sentence limits are unchanged. No added terminal period, generated Russian sentence or private Penguin prose. Wikipedia first-party selection/arrangement is CC BY-SA4.0 under the actual retained Russian Wikipedia copyrights154562152 route, with stable page histories/contributor attribution. Underlying cloud quotation is Korolenko, В дурном обществе1885 (author died1921); the cause example is the licensed Wikipedia instructional adaptation of Gorky Горемыка Павел1894 (author died1936), not a verbatim original-story quotation. Original public-domain basis/edition/author-date checks are retained separately; no claim that hosting licenses every third-party quotation. The obsolete source reference year5078 is not adopted. Only these bounded comma decisions are taught:ordinary preceding-noun default, both boundaries before a continuing clause, pronoun-headed or cause-labelled opening modifier, and terminal modifier without a closing comma. The internal name-list comma in the artist sentence is distinct from its modifier/main-clause boundary. No universal comma-insertion, all modifier types or unrestricted production claim. Independently authored English on2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending. The old category/connective question stays optional SOURCE_QUESTION reference practice and cannot credit or prevent completion of the language objective.
+In Туча, нависшая над высокими вершинами тополей, уже сыпала дождиком The participial phrase follows the cloud noun, and the main predicate continues after it; both boundaries are marked. The answer is Separating commas mark both boundaries of the participial phrase before the sentence continues. This is the supplied construction, not a universal rule for every modifier.
+shippedText=In Туча, нависшая над высокими вершинами тополей, уже сыпала дождиком The participial phrase follows the cloud noun, and the main predicate continues after it; both boundaries are marked. The answer is Separating commas mark both boundaries of the participial phrase before the sentence continues. This is the supplied construction, not a universal rule for every modifier.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6a82b85c7f056bacf37f999c518175b5df2648c12f46a8d992fc276b9fa62dd6
+contentHash=86614641b1a894be77469dcf9cd7c9baa7bc5827d00c4f5dbffb53e3edf6f18c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-after-prompt`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1d688a683d2f56ca5e8da914c2d4921dfa6002d033c75d0adb1321ac76dd8ad2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-punctuation:punctuation:u29-i-punctuation-after-prompt
+originalSourceText=Retained Russian Wikipedia Причастие (лингвистика)153078996 complete participial-phrase rule/default examples and copyright154562152. Newly selected Russian Wikipedia Обособление144053197 specific after-noun, cause-labelled and terminal examples; Больтраффио149826784 complete opening participial construction modifying он. Exact raw revisions and API SHA1/size/SHA256 metadata are retained under audit/independent-gpt61-2026-10-12/ia012-unit29-research-verification/public-candidates-2026-10-13/. Native selection performs only existing mechanical wiki-link label/emphasis unfolding; words, punctuation, spelling, capitalization and sentence limits are unchanged. No added terminal period, generated Russian sentence or private Penguin prose. Wikipedia first-party selection/arrangement is CC BY-SA4.0 under the actual retained Russian Wikipedia copyrights154562152 route, with stable page histories/contributor attribution. Underlying cloud quotation is Korolenko, В дурном обществе1885 (author died1921); the cause example is the licensed Wikipedia instructional adaptation of Gorky Горемыка Павел1894 (author died1936), not a verbatim original-story quotation. Original public-domain basis/edition/author-date checks are retained separately; no claim that hosting licenses every third-party quotation. The obsolete source reference year5078 is not adopted. Only these bounded comma decisions are taught:ordinary preceding-noun default, both boundaries before a continuing clause, pronoun-headed or cause-labelled opening modifier, and terminal modifier without a closing comma. The internal name-list comma in the artist sentence is distinct from its modifier/main-clause boundary. No universal comma-insertion, all modifier types or unrestricted production claim. Independently authored English on2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending. The old category/connective question stays optional SOURCE_QUESTION reference practice and cannot credit or prevent completion of the language objective.
+Which English description of separating-comma treatment fits the participial phrase in this complete supplied construction? Ignore commas inside lists of names.
+shippedText=Which English description of separating-comma treatment fits the participial phrase in this complete supplied construction? Ignore commas inside lists of names.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=745d26eba6934414ac2fe4891e0e1c9be76ccd25166b121dec76ca17321ac4ca
+contentHash=232196064618d85a314151f91e74683068e332f3622e83dd78a8ae44b5a1d37d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-after-rationale-1`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 43d28c8e6767fc6293c3fb858b034ca2c5d34103942db2efd3cd739828c02fe1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-punctuation:punctuation:u29-i-punctuation-after-rationale-1
+originalSourceText=Retained Russian Wikipedia Причастие (лингвистика)153078996 complete participial-phrase rule/default examples and copyright154562152. Newly selected Russian Wikipedia Обособление144053197 specific after-noun, cause-labelled and terminal examples; Больтраффио149826784 complete opening participial construction modifying он. Exact raw revisions and API SHA1/size/SHA256 metadata are retained under audit/independent-gpt61-2026-10-12/ia012-unit29-research-verification/public-candidates-2026-10-13/. Native selection performs only existing mechanical wiki-link label/emphasis unfolding; words, punctuation, spelling, capitalization and sentence limits are unchanged. No added terminal period, generated Russian sentence or private Penguin prose. Wikipedia first-party selection/arrangement is CC BY-SA4.0 under the actual retained Russian Wikipedia copyrights154562152 route, with stable page histories/contributor attribution. Underlying cloud quotation is Korolenko, В дурном обществе1885 (author died1921); the cause example is the licensed Wikipedia instructional adaptation of Gorky Горемыка Павел1894 (author died1936), not a verbatim original-story quotation. Original public-domain basis/edition/author-date checks are retained separately; no claim that hosting licenses every third-party quotation. The obsolete source reference year5078 is not adopted. Only these bounded comma decisions are taught:ordinary preceding-noun default, both boundaries before a continuing clause, pronoun-headed or cause-labelled opening modifier, and terminal modifier without a closing comma. The internal name-list comma in the artist sentence is distinct from its modifier/main-clause boundary. No universal comma-insertion, all modifier types or unrestricted production claim. Independently authored English on2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending. The old category/connective question stays optional SOURCE_QUESTION reference practice and cannot credit or prevent completion of the language objective.
+A separating comma precedes the terminal participial phrase, with no closing comma at sentence end. One preceding separating comma without a closing comma applies to a terminal following modifier; it would omit the other boundary in a continuing clause.
+shippedText=A separating comma precedes the terminal participial phrase, with no closing comma at sentence end. One preceding separating comma without a closing comma applies to a terminal following modifier; it would omit the other boundary in a continuing clause.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8d23322b47bcb698f7dfdcc8e606d4ba5bc3dbecdc1960f261179eb73ad15001
+contentHash=18d95e3a134fdf738a1451cd8f66b06e0b3fc51cda18103f98f331e51c595b23
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-after-rationale-2`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e8299a4b6974fbde5c8a6f44a9387058d2100ba45304e04835febe43afc994b5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-punctuation:punctuation:u29-i-punctuation-after-rationale-2
+originalSourceText=Retained Russian Wikipedia Причастие (лингвистика)153078996 complete participial-phrase rule/default examples and copyright154562152. Newly selected Russian Wikipedia Обособление144053197 specific after-noun, cause-labelled and terminal examples; Больтраффио149826784 complete opening participial construction modifying он. Exact raw revisions and API SHA1/size/SHA256 metadata are retained under audit/independent-gpt61-2026-10-12/ia012-unit29-research-verification/public-candidates-2026-10-13/. Native selection performs only existing mechanical wiki-link label/emphasis unfolding; words, punctuation, spelling, capitalization and sentence limits are unchanged. No added terminal period, generated Russian sentence or private Penguin prose. Wikipedia first-party selection/arrangement is CC BY-SA4.0 under the actual retained Russian Wikipedia copyrights154562152 route, with stable page histories/contributor attribution. Underlying cloud quotation is Korolenko, В дурном обществе1885 (author died1921); the cause example is the licensed Wikipedia instructional adaptation of Gorky Горемыка Павел1894 (author died1936), not a verbatim original-story quotation. Original public-domain basis/edition/author-date checks are retained separately; no claim that hosting licenses every third-party quotation. The obsolete source reference year5078 is not adopted. Only these bounded comma decisions are taught:ordinary preceding-noun default, both boundaries before a continuing clause, pronoun-headed or cause-labelled opening modifier, and terminal modifier without a closing comma. The internal name-list comma in the artist sentence is distinct from its modifier/main-clause boundary. No universal comma-insertion, all modifier types or unrestricted production claim. Independently authored English on2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending. The old category/connective question stays optional SOURCE_QUESTION reference practice and cannot credit or prevent completion of the language objective.
+No separating comma is used between the participial phrase and the word it describes. The ordinary preceding-noun default has no separating comma, but that default does not remove required commas in the supplied following, pronoun-headed or cause-labelled construction.
+shippedText=No separating comma is used between the participial phrase and the word it describes. The ordinary preceding-noun default has no separating comma, but that default does not remove required commas in the supplied following, pronoun-headed or cause-labelled construction.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5e65f61dc2e23d96c1b70a88f7a496c37462de458f0515abbcb3b60db129a83f
+contentHash=a736c54d0dd6734d7c4d42aabe9a4ae6528ac3c9acd4722dad3cf3e7f3ea4b7a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-cause-0`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b099f6404fe861891b3d4697629e7c5f9ae6bee8384b1457eeccaaf83639547c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-i-punctuation-cause
+originalSourceText=Retained Russian Wikipedia Причастие (лингвистика)153078996 complete participial-phrase rule/default examples and copyright154562152. Newly selected Russian Wikipedia Обособление144053197 specific after-noun, cause-labelled and terminal examples; Больтраффио149826784 complete opening participial construction modifying он. Exact raw revisions and API SHA1/size/SHA256 metadata are retained under audit/independent-gpt61-2026-10-12/ia012-unit29-research-verification/public-candidates-2026-10-13/. Native selection performs only existing mechanical wiki-link label/emphasis unfolding; words, punctuation, spelling, capitalization and sentence limits are unchanged. No added terminal period, generated Russian sentence or private Penguin prose. Wikipedia first-party selection/arrangement is CC BY-SA4.0 under the actual retained Russian Wikipedia copyrights154562152 route, with stable page histories/contributor attribution. Underlying cloud quotation is Korolenko, В дурном обществе1885 (author died1921); the cause example is the licensed Wikipedia instructional adaptation of Gorky Горемыка Павел1894 (author died1936), not a verbatim original-story quotation. Original public-domain basis/edition/author-date checks are retained separately; no claim that hosting licenses every third-party quotation. The obsolete source reference year5078 is not adopted. Only these bounded comma decisions are taught:ordinary preceding-noun default, both boundaries before a continuing clause, pronoun-headed or cause-labelled opening modifier, and terminal modifier without a closing comma. The internal name-list comma in the artist sentence is distinct from its modifier/main-clause boundary. No universal comma-insertion, all modifier types or unrestricted production claim. Independently authored English on2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending. The old category/connective question stays optional SOURCE_QUESTION reference practice and cannot credit or prevent completion of the language objective.
+Context explanation:
+In Изумлённый этим хохотом, Павел сел на пол и смотрел куда-то в угол The retained row explicitly assigns a causal shade to this opening modifier describing Pavel. It is separated from the main clause despite preceding the described noun. The answer is A separating comma follows the opening participial phrase before the main clause. This is the supplied construction, not a universal rule for every modifier.
+Tuple-v1:tuple-v1:1;119:Изумлённый этим хохотом, Павел сел на пол и смотрел куда-то в угол81:A separating comma follows the opening participial phrase before the main clause.2;85:No separating comma is used between the participial phrase and the word it describes.99:A separating comma precedes the terminal participial phrase, with no closing comma at sentence end.
+shippedText=Изумлённый этим хохотом, Павел сел на пол и смотрел куда-то в угол
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ce5857b0173eef631cc5b3781478fe031b5c0c4aa98e29c1014c67feeb1c13d4
+contentHash=18f7b93e19852c003c77ff3c595e0235f287a9be52bf1891eaa68d489c4ff339
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-cause-1`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 10101487d11e5caa62f127bc6bf1df8852b0de2e801bb02344eb78c334fcddb1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-i-punctuation-cause
+originalSourceText=Retained Russian Wikipedia Причастие (лингвистика)153078996 complete participial-phrase rule/default examples and copyright154562152. Newly selected Russian Wikipedia Обособление144053197 specific after-noun, cause-labelled and terminal examples; Больтраффио149826784 complete opening participial construction modifying он. Exact raw revisions and API SHA1/size/SHA256 metadata are retained under audit/independent-gpt61-2026-10-12/ia012-unit29-research-verification/public-candidates-2026-10-13/. Native selection performs only existing mechanical wiki-link label/emphasis unfolding; words, punctuation, spelling, capitalization and sentence limits are unchanged. No added terminal period, generated Russian sentence or private Penguin prose. Wikipedia first-party selection/arrangement is CC BY-SA4.0 under the actual retained Russian Wikipedia copyrights154562152 route, with stable page histories/contributor attribution. Underlying cloud quotation is Korolenko, В дурном обществе1885 (author died1921); the cause example is the licensed Wikipedia instructional adaptation of Gorky Горемыка Павел1894 (author died1936), not a verbatim original-story quotation. Original public-domain basis/edition/author-date checks are retained separately; no claim that hosting licenses every third-party quotation. The obsolete source reference year5078 is not adopted. Only these bounded comma decisions are taught:ordinary preceding-noun default, both boundaries before a continuing clause, pronoun-headed or cause-labelled opening modifier, and terminal modifier without a closing comma. The internal name-list comma in the artist sentence is distinct from its modifier/main-clause boundary. No universal comma-insertion, all modifier types or unrestricted production claim. Independently authored English on2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending. The old category/connective question stays optional SOURCE_QUESTION reference practice and cannot credit or prevent completion of the language objective.
+Context explanation:
+In Изумлённый этим хохотом, Павел сел на пол и смотрел куда-то в угол The retained row explicitly assigns a causal shade to this opening modifier describing Pavel. It is separated from the main clause despite preceding the described noun. The answer is A separating comma follows the opening participial phrase before the main clause. This is the supplied construction, not a universal rule for every modifier.
+Tuple-v1:tuple-v1:1;119:Изумлённый этим хохотом, Павел сел на пол и смотрел куда-то в угол81:A separating comma follows the opening participial phrase before the main clause.2;85:No separating comma is used between the participial phrase and the word it describes.99:A separating comma precedes the terminal participial phrase, with no closing comma at sentence end.
+shippedText=A separating comma follows the opening participial phrase before the main clause.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ce5857b0173eef631cc5b3781478fe031b5c0c4aa98e29c1014c67feeb1c13d4
+contentHash=144e0b161208b3668f15e9635c5b43a182212dd2036428358335ec5a02e055ac
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-cause-2`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1a6e5a26cc439cddb722f014a74943170afc104ea233a59eabf770f580239cfd
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-i-punctuation-cause
+originalSourceText=Retained Russian Wikipedia Причастие (лингвистика)153078996 complete participial-phrase rule/default examples and copyright154562152. Newly selected Russian Wikipedia Обособление144053197 specific after-noun, cause-labelled and terminal examples; Больтраффио149826784 complete opening participial construction modifying он. Exact raw revisions and API SHA1/size/SHA256 metadata are retained under audit/independent-gpt61-2026-10-12/ia012-unit29-research-verification/public-candidates-2026-10-13/. Native selection performs only existing mechanical wiki-link label/emphasis unfolding; words, punctuation, spelling, capitalization and sentence limits are unchanged. No added terminal period, generated Russian sentence or private Penguin prose. Wikipedia first-party selection/arrangement is CC BY-SA4.0 under the actual retained Russian Wikipedia copyrights154562152 route, with stable page histories/contributor attribution. Underlying cloud quotation is Korolenko, В дурном обществе1885 (author died1921); the cause example is the licensed Wikipedia instructional adaptation of Gorky Горемыка Павел1894 (author died1936), not a verbatim original-story quotation. Original public-domain basis/edition/author-date checks are retained separately; no claim that hosting licenses every third-party quotation. The obsolete source reference year5078 is not adopted. Only these bounded comma decisions are taught:ordinary preceding-noun default, both boundaries before a continuing clause, pronoun-headed or cause-labelled opening modifier, and terminal modifier without a closing comma. The internal name-list comma in the artist sentence is distinct from its modifier/main-clause boundary. No universal comma-insertion, all modifier types or unrestricted production claim. Independently authored English on2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending. The old category/connective question stays optional SOURCE_QUESTION reference practice and cannot credit or prevent completion of the language objective.
+Context explanation:
+In Изумлённый этим хохотом, Павел сел на пол и смотрел куда-то в угол The retained row explicitly assigns a causal shade to this opening modifier describing Pavel. It is separated from the main clause despite preceding the described noun. The answer is A separating comma follows the opening participial phrase before the main clause. This is the supplied construction, not a universal rule for every modifier.
+Tuple-v1:tuple-v1:1;119:Изумлённый этим хохотом, Павел сел на пол и смотрел куда-то в угол81:A separating comma follows the opening participial phrase before the main clause.2;85:No separating comma is used between the participial phrase and the word it describes.99:A separating comma precedes the terminal participial phrase, with no closing comma at sentence end.
+shippedText=No separating comma is used between the participial phrase and the word it describes.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ce5857b0173eef631cc5b3781478fe031b5c0c4aa98e29c1014c67feeb1c13d4
+contentHash=83a70717c9e7ab6128b4e5aa31a9bef350f9492459929016b9e9b4ed6bdfc704
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-cause-3`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 095e15da9882f3c4ce3ebeeebf7944a943f2b1696a222599211ee36de13471c7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-i-punctuation-cause
+originalSourceText=Retained Russian Wikipedia Причастие (лингвистика)153078996 complete participial-phrase rule/default examples and copyright154562152. Newly selected Russian Wikipedia Обособление144053197 specific after-noun, cause-labelled and terminal examples; Больтраффио149826784 complete opening participial construction modifying он. Exact raw revisions and API SHA1/size/SHA256 metadata are retained under audit/independent-gpt61-2026-10-12/ia012-unit29-research-verification/public-candidates-2026-10-13/. Native selection performs only existing mechanical wiki-link label/emphasis unfolding; words, punctuation, spelling, capitalization and sentence limits are unchanged. No added terminal period, generated Russian sentence or private Penguin prose. Wikipedia first-party selection/arrangement is CC BY-SA4.0 under the actual retained Russian Wikipedia copyrights154562152 route, with stable page histories/contributor attribution. Underlying cloud quotation is Korolenko, В дурном обществе1885 (author died1921); the cause example is the licensed Wikipedia instructional adaptation of Gorky Горемыка Павел1894 (author died1936), not a verbatim original-story quotation. Original public-domain basis/edition/author-date checks are retained separately; no claim that hosting licenses every third-party quotation. The obsolete source reference year5078 is not adopted. Only these bounded comma decisions are taught:ordinary preceding-noun default, both boundaries before a continuing clause, pronoun-headed or cause-labelled opening modifier, and terminal modifier without a closing comma. The internal name-list comma in the artist sentence is distinct from its modifier/main-clause boundary. No universal comma-insertion, all modifier types or unrestricted production claim. Independently authored English on2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending. The old category/connective question stays optional SOURCE_QUESTION reference practice and cannot credit or prevent completion of the language objective.
+Context explanation:
+In Изумлённый этим хохотом, Павел сел на пол и смотрел куда-то в угол The retained row explicitly assigns a causal shade to this opening modifier describing Pavel. It is separated from the main clause despite preceding the described noun. The answer is A separating comma follows the opening participial phrase before the main clause. This is the supplied construction, not a universal rule for every modifier.
+Tuple-v1:tuple-v1:1;119:Изумлённый этим хохотом, Павел сел на пол и смотрел куда-то в угол81:A separating comma follows the opening participial phrase before the main clause.2;85:No separating comma is used between the participial phrase and the word it describes.99:A separating comma precedes the terminal participial phrase, with no closing comma at sentence end.
+shippedText=A separating comma precedes the terminal participial phrase, with no closing comma at sentence end.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ce5857b0173eef631cc5b3781478fe031b5c0c4aa98e29c1014c67feeb1c13d4
+contentHash=7f61987314f41383cefdb5d65c84d27226473bb241cd197b482c064959d1358b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-cause-feedback`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fae9b65b2f20c19c68952f58552395ef671931f7e93fb2690b6d21cd6cac3957
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-punctuation:punctuation:u29-i-punctuation-cause-feedback
+originalSourceText=Retained Russian Wikipedia Причастие (лингвистика)153078996 complete participial-phrase rule/default examples and copyright154562152. Newly selected Russian Wikipedia Обособление144053197 specific after-noun, cause-labelled and terminal examples; Больтраффио149826784 complete opening participial construction modifying он. Exact raw revisions and API SHA1/size/SHA256 metadata are retained under audit/independent-gpt61-2026-10-12/ia012-unit29-research-verification/public-candidates-2026-10-13/. Native selection performs only existing mechanical wiki-link label/emphasis unfolding; words, punctuation, spelling, capitalization and sentence limits are unchanged. No added terminal period, generated Russian sentence or private Penguin prose. Wikipedia first-party selection/arrangement is CC BY-SA4.0 under the actual retained Russian Wikipedia copyrights154562152 route, with stable page histories/contributor attribution. Underlying cloud quotation is Korolenko, В дурном обществе1885 (author died1921); the cause example is the licensed Wikipedia instructional adaptation of Gorky Горемыка Павел1894 (author died1936), not a verbatim original-story quotation. Original public-domain basis/edition/author-date checks are retained separately; no claim that hosting licenses every third-party quotation. The obsolete source reference year5078 is not adopted. Only these bounded comma decisions are taught:ordinary preceding-noun default, both boundaries before a continuing clause, pronoun-headed or cause-labelled opening modifier, and terminal modifier without a closing comma. The internal name-list comma in the artist sentence is distinct from its modifier/main-clause boundary. No universal comma-insertion, all modifier types or unrestricted production claim. Independently authored English on2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending. The old category/connective question stays optional SOURCE_QUESTION reference practice and cannot credit or prevent completion of the language objective.
+In Изумлённый этим хохотом, Павел сел на пол и смотрел куда-то в угол The retained row explicitly assigns a causal shade to this opening modifier describing Pavel. It is separated from the main clause despite preceding the described noun. The answer is A separating comma follows the opening participial phrase before the main clause. This is the supplied construction, not a universal rule for every modifier.
+shippedText=In Изумлённый этим хохотом, Павел сел на пол и смотрел куда-то в угол The retained row explicitly assigns a causal shade to this opening modifier describing Pavel. It is separated from the main clause despite preceding the described noun. The answer is A separating comma follows the opening participial phrase before the main clause. This is the supplied construction, not a universal rule for every modifier.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b64c4eac3472500706b0d52f5e1c61fc8cf58a40de6facc1b7f2c0fc46ba5667
+contentHash=10d4ee35059fd7c9b50881d561b5eb932efcc8cb6accdb0ddd9f1493f5dcd168
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-cause-prompt`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e1d1f16390ab5e88410d65003b6038dd9df1c44bf207c051681e257fb25aa36b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-punctuation:punctuation:u29-i-punctuation-cause-prompt
+originalSourceText=Retained Russian Wikipedia Причастие (лингвистика)153078996 complete participial-phrase rule/default examples and copyright154562152. Newly selected Russian Wikipedia Обособление144053197 specific after-noun, cause-labelled and terminal examples; Больтраффио149826784 complete opening participial construction modifying он. Exact raw revisions and API SHA1/size/SHA256 metadata are retained under audit/independent-gpt61-2026-10-12/ia012-unit29-research-verification/public-candidates-2026-10-13/. Native selection performs only existing mechanical wiki-link label/emphasis unfolding; words, punctuation, spelling, capitalization and sentence limits are unchanged. No added terminal period, generated Russian sentence or private Penguin prose. Wikipedia first-party selection/arrangement is CC BY-SA4.0 under the actual retained Russian Wikipedia copyrights154562152 route, with stable page histories/contributor attribution. Underlying cloud quotation is Korolenko, В дурном обществе1885 (author died1921); the cause example is the licensed Wikipedia instructional adaptation of Gorky Горемыка Павел1894 (author died1936), not a verbatim original-story quotation. Original public-domain basis/edition/author-date checks are retained separately; no claim that hosting licenses every third-party quotation. The obsolete source reference year5078 is not adopted. Only these bounded comma decisions are taught:ordinary preceding-noun default, both boundaries before a continuing clause, pronoun-headed or cause-labelled opening modifier, and terminal modifier without a closing comma. The internal name-list comma in the artist sentence is distinct from its modifier/main-clause boundary. No universal comma-insertion, all modifier types or unrestricted production claim. Independently authored English on2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending. The old category/connective question stays optional SOURCE_QUESTION reference practice and cannot credit or prevent completion of the language objective.
+Which English description of separating-comma treatment fits the participial phrase in this complete supplied construction? Ignore commas inside lists of names.
+shippedText=Which English description of separating-comma treatment fits the participial phrase in this complete supplied construction? Ignore commas inside lists of names.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=745d26eba6934414ac2fe4891e0e1c9be76ccd25166b121dec76ca17321ac4ca
+contentHash=232196064618d85a314151f91e74683068e332f3622e83dd78a8ae44b5a1d37d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-cause-rationale-1`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 918180f020e3a54646517b50d69ceab6d186790f1716c6935c67753315941727
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-punctuation:punctuation:u29-i-punctuation-cause-rationale-1
+originalSourceText=Retained Russian Wikipedia Причастие (лингвистика)153078996 complete participial-phrase rule/default examples and copyright154562152. Newly selected Russian Wikipedia Обособление144053197 specific after-noun, cause-labelled and terminal examples; Больтраффио149826784 complete opening participial construction modifying он. Exact raw revisions and API SHA1/size/SHA256 metadata are retained under audit/independent-gpt61-2026-10-12/ia012-unit29-research-verification/public-candidates-2026-10-13/. Native selection performs only existing mechanical wiki-link label/emphasis unfolding; words, punctuation, spelling, capitalization and sentence limits are unchanged. No added terminal period, generated Russian sentence or private Penguin prose. Wikipedia first-party selection/arrangement is CC BY-SA4.0 under the actual retained Russian Wikipedia copyrights154562152 route, with stable page histories/contributor attribution. Underlying cloud quotation is Korolenko, В дурном обществе1885 (author died1921); the cause example is the licensed Wikipedia instructional adaptation of Gorky Горемыка Павел1894 (author died1936), not a verbatim original-story quotation. Original public-domain basis/edition/author-date checks are retained separately; no claim that hosting licenses every third-party quotation. The obsolete source reference year5078 is not adopted. Only these bounded comma decisions are taught:ordinary preceding-noun default, both boundaries before a continuing clause, pronoun-headed or cause-labelled opening modifier, and terminal modifier without a closing comma. The internal name-list comma in the artist sentence is distinct from its modifier/main-clause boundary. No universal comma-insertion, all modifier types or unrestricted production claim. Independently authored English on2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending. The old category/connective question stays optional SOURCE_QUESTION reference practice and cannot credit or prevent completion of the language objective.
+No separating comma is used between the participial phrase and the word it describes. The ordinary preceding-noun default has no separating comma, but that default does not remove required commas in the supplied following, pronoun-headed or cause-labelled construction.
+shippedText=No separating comma is used between the participial phrase and the word it describes. The ordinary preceding-noun default has no separating comma, but that default does not remove required commas in the supplied following, pronoun-headed or cause-labelled construction.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5e65f61dc2e23d96c1b70a88f7a496c37462de458f0515abbcb3b60db129a83f
+contentHash=a736c54d0dd6734d7c4d42aabe9a4ae6528ac3c9acd4722dad3cf3e7f3ea4b7a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-cause-rationale-2`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2048c6e561866a6b082b92e5844ec417b3ccc06334488082b981abf5c45c7b63
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-punctuation:punctuation:u29-i-punctuation-cause-rationale-2
+originalSourceText=Retained Russian Wikipedia Причастие (лингвистика)153078996 complete participial-phrase rule/default examples and copyright154562152. Newly selected Russian Wikipedia Обособление144053197 specific after-noun, cause-labelled and terminal examples; Больтраффио149826784 complete opening participial construction modifying он. Exact raw revisions and API SHA1/size/SHA256 metadata are retained under audit/independent-gpt61-2026-10-12/ia012-unit29-research-verification/public-candidates-2026-10-13/. Native selection performs only existing mechanical wiki-link label/emphasis unfolding; words, punctuation, spelling, capitalization and sentence limits are unchanged. No added terminal period, generated Russian sentence or private Penguin prose. Wikipedia first-party selection/arrangement is CC BY-SA4.0 under the actual retained Russian Wikipedia copyrights154562152 route, with stable page histories/contributor attribution. Underlying cloud quotation is Korolenko, В дурном обществе1885 (author died1921); the cause example is the licensed Wikipedia instructional adaptation of Gorky Горемыка Павел1894 (author died1936), not a verbatim original-story quotation. Original public-domain basis/edition/author-date checks are retained separately; no claim that hosting licenses every third-party quotation. The obsolete source reference year5078 is not adopted. Only these bounded comma decisions are taught:ordinary preceding-noun default, both boundaries before a continuing clause, pronoun-headed or cause-labelled opening modifier, and terminal modifier without a closing comma. The internal name-list comma in the artist sentence is distinct from its modifier/main-clause boundary. No universal comma-insertion, all modifier types or unrestricted production claim. Independently authored English on2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending. The old category/connective question stays optional SOURCE_QUESTION reference practice and cannot credit or prevent completion of the language objective.
+A separating comma precedes the terminal participial phrase, with no closing comma at sentence end. One preceding separating comma without a closing comma applies to a terminal following modifier; it would omit the other boundary in a continuing clause.
+shippedText=A separating comma precedes the terminal participial phrase, with no closing comma at sentence end. One preceding separating comma without a closing comma applies to a terminal following modifier; it would omit the other boundary in a continuing clause.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8d23322b47bcb698f7dfdcc8e606d4ba5bc3dbecdc1960f261179eb73ad15001
+contentHash=18d95e3a134fdf738a1451cd8f66b06e0b3fc51cda18103f98f331e51c595b23
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-pronoun-0`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6e979327a5b5a6bc35a95ebd7e0f583fc2a739947d89905a326e4e8a8c8822a9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-i-punctuation-pronoun
+originalSourceText=Retained Russian Wikipedia Причастие (лингвистика)153078996 complete participial-phrase rule/default examples and copyright154562152. Newly selected Russian Wikipedia Обособление144053197 specific after-noun, cause-labelled and terminal examples; Больтраффио149826784 complete opening participial construction modifying он. Exact raw revisions and API SHA1/size/SHA256 metadata are retained under audit/independent-gpt61-2026-10-12/ia012-unit29-research-verification/public-candidates-2026-10-13/. Native selection performs only existing mechanical wiki-link label/emphasis unfolding; words, punctuation, spelling, capitalization and sentence limits are unchanged. No added terminal period, generated Russian sentence or private Penguin prose. Wikipedia first-party selection/arrangement is CC BY-SA4.0 under the actual retained Russian Wikipedia copyrights154562152 route, with stable page histories/contributor attribution. Underlying cloud quotation is Korolenko, В дурном обществе1885 (author died1921); the cause example is the licensed Wikipedia instructional adaptation of Gorky Горемыка Павел1894 (author died1936), not a verbatim original-story quotation. Original public-domain basis/edition/author-date checks are retained separately; no claim that hosting licenses every third-party quotation. The obsolete source reference year5078 is not adopted. Only these bounded comma decisions are taught:ordinary preceding-noun default, both boundaries before a continuing clause, pronoun-headed or cause-labelled opening modifier, and terminal modifier without a closing comma. The internal name-list comma in the artist sentence is distinct from its modifier/main-clause boundary. No universal comma-insertion, all modifier types or unrestricted production claim. Independently authored English on2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending. The old category/connective question stays optional SOURCE_QUESTION reference practice and cannot credit or prevent completion of the language objective.
+Context explanation:
+In Воспитанный в традициях Фоппы, Бернардо Дзенале и Амброджо Бергоньоне, он прошёл обучение в мастерской Леонардо. The opening participial phrase describes the personal pronoun он. Its separating comma is before that pronoun/main clause; the earlier comma separates names within the modifier. The answer is A separating comma follows the opening participial phrase before the main clause. This is the supplied construction, not a universal rule for every modifier.
+Tuple-v1:tuple-v1:1;207:Воспитанный в традициях Фоппы, Бернардо Дзенале и Амброджо Бергоньоне, он прошёл обучение в мастерской Леонардо.81:A separating comma follows the opening participial phrase before the main clause.2;85:No separating comma is used between the participial phrase and the word it describes.95:Separating commas mark both boundaries of the participial phrase before the sentence continues.
+shippedText=Воспитанный в традициях Фоппы, Бернардо Дзенале и Амброджо Бергоньоне, он прошёл обучение в мастерской Леонардо.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=17bed6f170ae6bf962eb73d2462fce256948bf6e32be8f8811674b755eb3ce93
+contentHash=cb2a80d87f9bddc68e821c8f3920a3c01f0fbf4bd705695e7460e3f49e8d1c29
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-pronoun-1`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6660cd0ca524fade0ca45a44791d3c19bd28c1e9374757c51c4d6d86a1002c00
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-i-punctuation-pronoun
+originalSourceText=Retained Russian Wikipedia Причастие (лингвистика)153078996 complete participial-phrase rule/default examples and copyright154562152. Newly selected Russian Wikipedia Обособление144053197 specific after-noun, cause-labelled and terminal examples; Больтраффио149826784 complete opening participial construction modifying он. Exact raw revisions and API SHA1/size/SHA256 metadata are retained under audit/independent-gpt61-2026-10-12/ia012-unit29-research-verification/public-candidates-2026-10-13/. Native selection performs only existing mechanical wiki-link label/emphasis unfolding; words, punctuation, spelling, capitalization and sentence limits are unchanged. No added terminal period, generated Russian sentence or private Penguin prose. Wikipedia first-party selection/arrangement is CC BY-SA4.0 under the actual retained Russian Wikipedia copyrights154562152 route, with stable page histories/contributor attribution. Underlying cloud quotation is Korolenko, В дурном обществе1885 (author died1921); the cause example is the licensed Wikipedia instructional adaptation of Gorky Горемыка Павел1894 (author died1936), not a verbatim original-story quotation. Original public-domain basis/edition/author-date checks are retained separately; no claim that hosting licenses every third-party quotation. The obsolete source reference year5078 is not adopted. Only these bounded comma decisions are taught:ordinary preceding-noun default, both boundaries before a continuing clause, pronoun-headed or cause-labelled opening modifier, and terminal modifier without a closing comma. The internal name-list comma in the artist sentence is distinct from its modifier/main-clause boundary. No universal comma-insertion, all modifier types or unrestricted production claim. Independently authored English on2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending. The old category/connective question stays optional SOURCE_QUESTION reference practice and cannot credit or prevent completion of the language objective.
+Context explanation:
+In Воспитанный в традициях Фоппы, Бернардо Дзенале и Амброджо Бергоньоне, он прошёл обучение в мастерской Леонардо. The opening participial phrase describes the personal pronoun он. Its separating comma is before that pronoun/main clause; the earlier comma separates names within the modifier. The answer is A separating comma follows the opening participial phrase before the main clause. This is the supplied construction, not a universal rule for every modifier.
+Tuple-v1:tuple-v1:1;207:Воспитанный в традициях Фоппы, Бернардо Дзенале и Амброджо Бергоньоне, он прошёл обучение в мастерской Леонардо.81:A separating comma follows the opening participial phrase before the main clause.2;85:No separating comma is used between the participial phrase and the word it describes.95:Separating commas mark both boundaries of the participial phrase before the sentence continues.
+shippedText=A separating comma follows the opening participial phrase before the main clause.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=17bed6f170ae6bf962eb73d2462fce256948bf6e32be8f8811674b755eb3ce93
+contentHash=144e0b161208b3668f15e9635c5b43a182212dd2036428358335ec5a02e055ac
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-pronoun-2`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dc219716241243a26869ef57ed0d2e8b7d8367666fe49bfe540c9749080b6537
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-i-punctuation-pronoun
+originalSourceText=Retained Russian Wikipedia Причастие (лингвистика)153078996 complete participial-phrase rule/default examples and copyright154562152. Newly selected Russian Wikipedia Обособление144053197 specific after-noun, cause-labelled and terminal examples; Больтраффио149826784 complete opening participial construction modifying он. Exact raw revisions and API SHA1/size/SHA256 metadata are retained under audit/independent-gpt61-2026-10-12/ia012-unit29-research-verification/public-candidates-2026-10-13/. Native selection performs only existing mechanical wiki-link label/emphasis unfolding; words, punctuation, spelling, capitalization and sentence limits are unchanged. No added terminal period, generated Russian sentence or private Penguin prose. Wikipedia first-party selection/arrangement is CC BY-SA4.0 under the actual retained Russian Wikipedia copyrights154562152 route, with stable page histories/contributor attribution. Underlying cloud quotation is Korolenko, В дурном обществе1885 (author died1921); the cause example is the licensed Wikipedia instructional adaptation of Gorky Горемыка Павел1894 (author died1936), not a verbatim original-story quotation. Original public-domain basis/edition/author-date checks are retained separately; no claim that hosting licenses every third-party quotation. The obsolete source reference year5078 is not adopted. Only these bounded comma decisions are taught:ordinary preceding-noun default, both boundaries before a continuing clause, pronoun-headed or cause-labelled opening modifier, and terminal modifier without a closing comma. The internal name-list comma in the artist sentence is distinct from its modifier/main-clause boundary. No universal comma-insertion, all modifier types or unrestricted production claim. Independently authored English on2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending. The old category/connective question stays optional SOURCE_QUESTION reference practice and cannot credit or prevent completion of the language objective.
+Context explanation:
+In Воспитанный в традициях Фоппы, Бернардо Дзенале и Амброджо Бергоньоне, он прошёл обучение в мастерской Леонардо. The opening participial phrase describes the personal pronoun он. Its separating comma is before that pronoun/main clause; the earlier comma separates names within the modifier. The answer is A separating comma follows the opening participial phrase before the main clause. This is the supplied construction, not a universal rule for every modifier.
+Tuple-v1:tuple-v1:1;207:Воспитанный в традициях Фоппы, Бернардо Дзенале и Амброджо Бергоньоне, он прошёл обучение в мастерской Леонардо.81:A separating comma follows the opening participial phrase before the main clause.2;85:No separating comma is used between the participial phrase and the word it describes.95:Separating commas mark both boundaries of the participial phrase before the sentence continues.
+shippedText=No separating comma is used between the participial phrase and the word it describes.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=17bed6f170ae6bf962eb73d2462fce256948bf6e32be8f8811674b755eb3ce93
+contentHash=83a70717c9e7ab6128b4e5aa31a9bef350f9492459929016b9e9b4ed6bdfc704
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-pronoun-3`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7f06a810d7ab7b5e5355222e1760e3ed59dc7080dbb5e7b25f91be4d7a21daa8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-i-punctuation-pronoun
+originalSourceText=Retained Russian Wikipedia Причастие (лингвистика)153078996 complete participial-phrase rule/default examples and copyright154562152. Newly selected Russian Wikipedia Обособление144053197 specific after-noun, cause-labelled and terminal examples; Больтраффио149826784 complete opening participial construction modifying он. Exact raw revisions and API SHA1/size/SHA256 metadata are retained under audit/independent-gpt61-2026-10-12/ia012-unit29-research-verification/public-candidates-2026-10-13/. Native selection performs only existing mechanical wiki-link label/emphasis unfolding; words, punctuation, spelling, capitalization and sentence limits are unchanged. No added terminal period, generated Russian sentence or private Penguin prose. Wikipedia first-party selection/arrangement is CC BY-SA4.0 under the actual retained Russian Wikipedia copyrights154562152 route, with stable page histories/contributor attribution. Underlying cloud quotation is Korolenko, В дурном обществе1885 (author died1921); the cause example is the licensed Wikipedia instructional adaptation of Gorky Горемыка Павел1894 (author died1936), not a verbatim original-story quotation. Original public-domain basis/edition/author-date checks are retained separately; no claim that hosting licenses every third-party quotation. The obsolete source reference year5078 is not adopted. Only these bounded comma decisions are taught:ordinary preceding-noun default, both boundaries before a continuing clause, pronoun-headed or cause-labelled opening modifier, and terminal modifier without a closing comma. The internal name-list comma in the artist sentence is distinct from its modifier/main-clause boundary. No universal comma-insertion, all modifier types or unrestricted production claim. Independently authored English on2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending. The old category/connective question stays optional SOURCE_QUESTION reference practice and cannot credit or prevent completion of the language objective.
+Context explanation:
+In Воспитанный в традициях Фоппы, Бернардо Дзенале и Амброджо Бергоньоне, он прошёл обучение в мастерской Леонардо. The opening participial phrase describes the personal pronoun он. Its separating comma is before that pronoun/main clause; the earlier comma separates names within the modifier. The answer is A separating comma follows the opening participial phrase before the main clause. This is the supplied construction, not a universal rule for every modifier.
+Tuple-v1:tuple-v1:1;207:Воспитанный в традициях Фоппы, Бернардо Дзенале и Амброджо Бергоньоне, он прошёл обучение в мастерской Леонардо.81:A separating comma follows the opening participial phrase before the main clause.2;85:No separating comma is used between the participial phrase and the word it describes.95:Separating commas mark both boundaries of the participial phrase before the sentence continues.
+shippedText=Separating commas mark both boundaries of the participial phrase before the sentence continues.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=17bed6f170ae6bf962eb73d2462fce256948bf6e32be8f8811674b755eb3ce93
+contentHash=a11b225ff814aa61da8c4688afd5085ad6adaab206fe0585687b8566d48b321c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-pronoun-feedback`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fee6e894e5e75b59c3e25d4e6a5f514f44ab38a7cdcd934e000e5bceb6bc0568
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-punctuation:punctuation:u29-i-punctuation-pronoun-feedback
+originalSourceText=Retained Russian Wikipedia Причастие (лингвистика)153078996 complete participial-phrase rule/default examples and copyright154562152. Newly selected Russian Wikipedia Обособление144053197 specific after-noun, cause-labelled and terminal examples; Больтраффио149826784 complete opening participial construction modifying он. Exact raw revisions and API SHA1/size/SHA256 metadata are retained under audit/independent-gpt61-2026-10-12/ia012-unit29-research-verification/public-candidates-2026-10-13/. Native selection performs only existing mechanical wiki-link label/emphasis unfolding; words, punctuation, spelling, capitalization and sentence limits are unchanged. No added terminal period, generated Russian sentence or private Penguin prose. Wikipedia first-party selection/arrangement is CC BY-SA4.0 under the actual retained Russian Wikipedia copyrights154562152 route, with stable page histories/contributor attribution. Underlying cloud quotation is Korolenko, В дурном обществе1885 (author died1921); the cause example is the licensed Wikipedia instructional adaptation of Gorky Горемыка Павел1894 (author died1936), not a verbatim original-story quotation. Original public-domain basis/edition/author-date checks are retained separately; no claim that hosting licenses every third-party quotation. The obsolete source reference year5078 is not adopted. Only these bounded comma decisions are taught:ordinary preceding-noun default, both boundaries before a continuing clause, pronoun-headed or cause-labelled opening modifier, and terminal modifier without a closing comma. The internal name-list comma in the artist sentence is distinct from its modifier/main-clause boundary. No universal comma-insertion, all modifier types or unrestricted production claim. Independently authored English on2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending. The old category/connective question stays optional SOURCE_QUESTION reference practice and cannot credit or prevent completion of the language objective.
+In Воспитанный в традициях Фоппы, Бернардо Дзенале и Амброджо Бергоньоне, он прошёл обучение в мастерской Леонардо. The opening participial phrase describes the personal pronoun он. Its separating comma is before that pronoun/main clause; the earlier comma separates names within the modifier. The answer is A separating comma follows the opening participial phrase before the main clause. This is the supplied construction, not a universal rule for every modifier.
+shippedText=In Воспитанный в традициях Фоппы, Бернардо Дзенале и Амброджо Бергоньоне, он прошёл обучение в мастерской Леонардо. The opening participial phrase describes the personal pronoun он. Its separating comma is before that pronoun/main clause; the earlier comma separates names within the modifier. The answer is A separating comma follows the opening participial phrase before the main clause. This is the supplied construction, not a universal rule for every modifier.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=be4a06b89bf3a1caef96c481e6ec0504fdc1f97f2dc866ee71f170c664a86072
+contentHash=1dee9c73abd18a12a11c197132d9d31691ee690f3ba3ce7f002c18741d505dc1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-pronoun-prompt`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c94116855456a0973d6cfefe4c4b82a9b1fb92936d26400c3cf56386c2971a08
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-punctuation:punctuation:u29-i-punctuation-pronoun-prompt
+originalSourceText=Retained Russian Wikipedia Причастие (лингвистика)153078996 complete participial-phrase rule/default examples and copyright154562152. Newly selected Russian Wikipedia Обособление144053197 specific after-noun, cause-labelled and terminal examples; Больтраффио149826784 complete opening participial construction modifying он. Exact raw revisions and API SHA1/size/SHA256 metadata are retained under audit/independent-gpt61-2026-10-12/ia012-unit29-research-verification/public-candidates-2026-10-13/. Native selection performs only existing mechanical wiki-link label/emphasis unfolding; words, punctuation, spelling, capitalization and sentence limits are unchanged. No added terminal period, generated Russian sentence or private Penguin prose. Wikipedia first-party selection/arrangement is CC BY-SA4.0 under the actual retained Russian Wikipedia copyrights154562152 route, with stable page histories/contributor attribution. Underlying cloud quotation is Korolenko, В дурном обществе1885 (author died1921); the cause example is the licensed Wikipedia instructional adaptation of Gorky Горемыка Павел1894 (author died1936), not a verbatim original-story quotation. Original public-domain basis/edition/author-date checks are retained separately; no claim that hosting licenses every third-party quotation. The obsolete source reference year5078 is not adopted. Only these bounded comma decisions are taught:ordinary preceding-noun default, both boundaries before a continuing clause, pronoun-headed or cause-labelled opening modifier, and terminal modifier without a closing comma. The internal name-list comma in the artist sentence is distinct from its modifier/main-clause boundary. No universal comma-insertion, all modifier types or unrestricted production claim. Independently authored English on2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending. The old category/connective question stays optional SOURCE_QUESTION reference practice and cannot credit or prevent completion of the language objective.
+Which English description of separating-comma treatment fits the participial phrase in this complete supplied construction? Ignore commas inside lists of names.
+shippedText=Which English description of separating-comma treatment fits the participial phrase in this complete supplied construction? Ignore commas inside lists of names.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=745d26eba6934414ac2fe4891e0e1c9be76ccd25166b121dec76ca17321ac4ca
+contentHash=232196064618d85a314151f91e74683068e332f3622e83dd78a8ae44b5a1d37d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-pronoun-rationale-1`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 71bbf40dd613f4846bb8bd164eff49942676eb12041638f90ef5453c2a951161
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-punctuation:punctuation:u29-i-punctuation-pronoun-rationale-1
+originalSourceText=Retained Russian Wikipedia Причастие (лингвистика)153078996 complete participial-phrase rule/default examples and copyright154562152. Newly selected Russian Wikipedia Обособление144053197 specific after-noun, cause-labelled and terminal examples; Больтраффио149826784 complete opening participial construction modifying он. Exact raw revisions and API SHA1/size/SHA256 metadata are retained under audit/independent-gpt61-2026-10-12/ia012-unit29-research-verification/public-candidates-2026-10-13/. Native selection performs only existing mechanical wiki-link label/emphasis unfolding; words, punctuation, spelling, capitalization and sentence limits are unchanged. No added terminal period, generated Russian sentence or private Penguin prose. Wikipedia first-party selection/arrangement is CC BY-SA4.0 under the actual retained Russian Wikipedia copyrights154562152 route, with stable page histories/contributor attribution. Underlying cloud quotation is Korolenko, В дурном обществе1885 (author died1921); the cause example is the licensed Wikipedia instructional adaptation of Gorky Горемыка Павел1894 (author died1936), not a verbatim original-story quotation. Original public-domain basis/edition/author-date checks are retained separately; no claim that hosting licenses every third-party quotation. The obsolete source reference year5078 is not adopted. Only these bounded comma decisions are taught:ordinary preceding-noun default, both boundaries before a continuing clause, pronoun-headed or cause-labelled opening modifier, and terminal modifier without a closing comma. The internal name-list comma in the artist sentence is distinct from its modifier/main-clause boundary. No universal comma-insertion, all modifier types or unrestricted production claim. Independently authored English on2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending. The old category/connective question stays optional SOURCE_QUESTION reference practice and cannot credit or prevent completion of the language objective.
+No separating comma is used between the participial phrase and the word it describes. The ordinary preceding-noun default has no separating comma, but that default does not remove required commas in the supplied following, pronoun-headed or cause-labelled construction.
+shippedText=No separating comma is used between the participial phrase and the word it describes. The ordinary preceding-noun default has no separating comma, but that default does not remove required commas in the supplied following, pronoun-headed or cause-labelled construction.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5e65f61dc2e23d96c1b70a88f7a496c37462de458f0515abbcb3b60db129a83f
+contentHash=a736c54d0dd6734d7c4d42aabe9a4ae6528ac3c9acd4722dad3cf3e7f3ea4b7a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-pronoun-rationale-2`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 429dd86ee26913c42425ee3bf5298c7d55a636aebbf079a61f95c4d129689575
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-punctuation:punctuation:u29-i-punctuation-pronoun-rationale-2
+originalSourceText=Retained Russian Wikipedia Причастие (лингвистика)153078996 complete participial-phrase rule/default examples and copyright154562152. Newly selected Russian Wikipedia Обособление144053197 specific after-noun, cause-labelled and terminal examples; Больтраффио149826784 complete opening participial construction modifying он. Exact raw revisions and API SHA1/size/SHA256 metadata are retained under audit/independent-gpt61-2026-10-12/ia012-unit29-research-verification/public-candidates-2026-10-13/. Native selection performs only existing mechanical wiki-link label/emphasis unfolding; words, punctuation, spelling, capitalization and sentence limits are unchanged. No added terminal period, generated Russian sentence or private Penguin prose. Wikipedia first-party selection/arrangement is CC BY-SA4.0 under the actual retained Russian Wikipedia copyrights154562152 route, with stable page histories/contributor attribution. Underlying cloud quotation is Korolenko, В дурном обществе1885 (author died1921); the cause example is the licensed Wikipedia instructional adaptation of Gorky Горемыка Павел1894 (author died1936), not a verbatim original-story quotation. Original public-domain basis/edition/author-date checks are retained separately; no claim that hosting licenses every third-party quotation. The obsolete source reference year5078 is not adopted. Only these bounded comma decisions are taught:ordinary preceding-noun default, both boundaries before a continuing clause, pronoun-headed or cause-labelled opening modifier, and terminal modifier without a closing comma. The internal name-list comma in the artist sentence is distinct from its modifier/main-clause boundary. No universal comma-insertion, all modifier types or unrestricted production claim. Independently authored English on2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending. The old category/connective question stays optional SOURCE_QUESTION reference practice and cannot credit or prevent completion of the language objective.
+Separating commas mark both boundaries of the participial phrase before the sentence continues. Two separating boundaries are appropriate only when the parent clause continues after a medial modifier; an opening or terminal modifier does not have that same layout.
+shippedText=Separating commas mark both boundaries of the participial phrase before the sentence continues. Two separating boundaries are appropriate only when the parent clause continues after a medial modifier; an opening or terminal modifier does not have that same layout.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=dfb8e36b86cf7da89d44681c99884ef742520d76e0694d80a294f6c20b7c0106
+contentHash=e391d73aabf7fbc72968936b92d5dc7b14ccc6bfdf52f138f60b2d0da6af6d0b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-terminal-0`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c91552371633dffcc66dfbf7604d7e2b1fe7cb3896444cac6e3af3d5818c4cee
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-i-punctuation-terminal
+originalSourceText=Retained Russian Wikipedia Причастие (лингвистика)153078996 complete participial-phrase rule/default examples and copyright154562152. Newly selected Russian Wikipedia Обособление144053197 specific after-noun, cause-labelled and terminal examples; Больтраффио149826784 complete opening participial construction modifying он. Exact raw revisions and API SHA1/size/SHA256 metadata are retained under audit/independent-gpt61-2026-10-12/ia012-unit29-research-verification/public-candidates-2026-10-13/. Native selection performs only existing mechanical wiki-link label/emphasis unfolding; words, punctuation, spelling, capitalization and sentence limits are unchanged. No added terminal period, generated Russian sentence or private Penguin prose. Wikipedia first-party selection/arrangement is CC BY-SA4.0 under the actual retained Russian Wikipedia copyrights154562152 route, with stable page histories/contributor attribution. Underlying cloud quotation is Korolenko, В дурном обществе1885 (author died1921); the cause example is the licensed Wikipedia instructional adaptation of Gorky Горемыка Павел1894 (author died1936), not a verbatim original-story quotation. Original public-domain basis/edition/author-date checks are retained separately; no claim that hosting licenses every third-party quotation. The obsolete source reference year5078 is not adopted. Only these bounded comma decisions are taught:ordinary preceding-noun default, both boundaries before a continuing clause, pronoun-headed or cause-labelled opening modifier, and terminal modifier without a closing comma. The internal name-list comma in the artist sentence is distinct from its modifier/main-clause boundary. No universal comma-insertion, all modifier types or unrestricted production claim. Independently authored English on2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending. The old category/connective question stays optional SOURCE_QUESTION reference practice and cannot credit or prevent completion of the language objective.
+Context explanation:
+In Вдали виднеется маяк, стоящий у моря The following participial phrase describes the lighthouse and ends the supplied construction; its preceding boundary takes a comma, with no closing separating comma at sentence end. The answer is A separating comma precedes the terminal participial phrase, with no closing comma at sentence end. This is the supplied construction, not a universal rule for every modifier.
+Tuple-v1:tuple-v1:1;66:Вдали виднеется маяк, стоящий у моря99:A separating comma precedes the terminal participial phrase, with no closing comma at sentence end.2;95:Separating commas mark both boundaries of the participial phrase before the sentence continues.85:No separating comma is used between the participial phrase and the word it describes.
+shippedText=Вдали виднеется маяк, стоящий у моря
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=58c24d0d711e3a5052a14311d33d50cec6cfb22e63f74fd3211ef06dba0813a1
+contentHash=fe2aabd1a975c8af6acf4a72c08f62808adc09a6c098ad3d36e656096fb8ecd4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-terminal-1`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9456df8c462155fab905a94291e4b9cd340cbfa2f7adb150f16ce73d222b434d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-i-punctuation-terminal
+originalSourceText=Retained Russian Wikipedia Причастие (лингвистика)153078996 complete participial-phrase rule/default examples and copyright154562152. Newly selected Russian Wikipedia Обособление144053197 specific after-noun, cause-labelled and terminal examples; Больтраффио149826784 complete opening participial construction modifying он. Exact raw revisions and API SHA1/size/SHA256 metadata are retained under audit/independent-gpt61-2026-10-12/ia012-unit29-research-verification/public-candidates-2026-10-13/. Native selection performs only existing mechanical wiki-link label/emphasis unfolding; words, punctuation, spelling, capitalization and sentence limits are unchanged. No added terminal period, generated Russian sentence or private Penguin prose. Wikipedia first-party selection/arrangement is CC BY-SA4.0 under the actual retained Russian Wikipedia copyrights154562152 route, with stable page histories/contributor attribution. Underlying cloud quotation is Korolenko, В дурном обществе1885 (author died1921); the cause example is the licensed Wikipedia instructional adaptation of Gorky Горемыка Павел1894 (author died1936), not a verbatim original-story quotation. Original public-domain basis/edition/author-date checks are retained separately; no claim that hosting licenses every third-party quotation. The obsolete source reference year5078 is not adopted. Only these bounded comma decisions are taught:ordinary preceding-noun default, both boundaries before a continuing clause, pronoun-headed or cause-labelled opening modifier, and terminal modifier without a closing comma. The internal name-list comma in the artist sentence is distinct from its modifier/main-clause boundary. No universal comma-insertion, all modifier types or unrestricted production claim. Independently authored English on2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending. The old category/connective question stays optional SOURCE_QUESTION reference practice and cannot credit or prevent completion of the language objective.
+Context explanation:
+In Вдали виднеется маяк, стоящий у моря The following participial phrase describes the lighthouse and ends the supplied construction; its preceding boundary takes a comma, with no closing separating comma at sentence end. The answer is A separating comma precedes the terminal participial phrase, with no closing comma at sentence end. This is the supplied construction, not a universal rule for every modifier.
+Tuple-v1:tuple-v1:1;66:Вдали виднеется маяк, стоящий у моря99:A separating comma precedes the terminal participial phrase, with no closing comma at sentence end.2;95:Separating commas mark both boundaries of the participial phrase before the sentence continues.85:No separating comma is used between the participial phrase and the word it describes.
+shippedText=A separating comma precedes the terminal participial phrase, with no closing comma at sentence end.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=58c24d0d711e3a5052a14311d33d50cec6cfb22e63f74fd3211ef06dba0813a1
+contentHash=7f61987314f41383cefdb5d65c84d27226473bb241cd197b482c064959d1358b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-terminal-2`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 175e5228d8321e4afe4662c0f94e75175c36b07141db77f9c71c26ea46f54343
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-i-punctuation-terminal
+originalSourceText=Retained Russian Wikipedia Причастие (лингвистика)153078996 complete participial-phrase rule/default examples and copyright154562152. Newly selected Russian Wikipedia Обособление144053197 specific after-noun, cause-labelled and terminal examples; Больтраффио149826784 complete opening participial construction modifying он. Exact raw revisions and API SHA1/size/SHA256 metadata are retained under audit/independent-gpt61-2026-10-12/ia012-unit29-research-verification/public-candidates-2026-10-13/. Native selection performs only existing mechanical wiki-link label/emphasis unfolding; words, punctuation, spelling, capitalization and sentence limits are unchanged. No added terminal period, generated Russian sentence or private Penguin prose. Wikipedia first-party selection/arrangement is CC BY-SA4.0 under the actual retained Russian Wikipedia copyrights154562152 route, with stable page histories/contributor attribution. Underlying cloud quotation is Korolenko, В дурном обществе1885 (author died1921); the cause example is the licensed Wikipedia instructional adaptation of Gorky Горемыка Павел1894 (author died1936), not a verbatim original-story quotation. Original public-domain basis/edition/author-date checks are retained separately; no claim that hosting licenses every third-party quotation. The obsolete source reference year5078 is not adopted. Only these bounded comma decisions are taught:ordinary preceding-noun default, both boundaries before a continuing clause, pronoun-headed or cause-labelled opening modifier, and terminal modifier without a closing comma. The internal name-list comma in the artist sentence is distinct from its modifier/main-clause boundary. No universal comma-insertion, all modifier types or unrestricted production claim. Independently authored English on2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending. The old category/connective question stays optional SOURCE_QUESTION reference practice and cannot credit or prevent completion of the language objective.
+Context explanation:
+In Вдали виднеется маяк, стоящий у моря The following participial phrase describes the lighthouse and ends the supplied construction; its preceding boundary takes a comma, with no closing separating comma at sentence end. The answer is A separating comma precedes the terminal participial phrase, with no closing comma at sentence end. This is the supplied construction, not a universal rule for every modifier.
+Tuple-v1:tuple-v1:1;66:Вдали виднеется маяк, стоящий у моря99:A separating comma precedes the terminal participial phrase, with no closing comma at sentence end.2;95:Separating commas mark both boundaries of the participial phrase before the sentence continues.85:No separating comma is used between the participial phrase and the word it describes.
+shippedText=Separating commas mark both boundaries of the participial phrase before the sentence continues.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=58c24d0d711e3a5052a14311d33d50cec6cfb22e63f74fd3211ef06dba0813a1
+contentHash=a11b225ff814aa61da8c4688afd5085ad6adaab206fe0585687b8566d48b321c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-terminal-3`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2a572173f700476e4a3b6c5769b4557b340b1b727297f9a8b0493ba92794d4a6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-i-punctuation-terminal
+originalSourceText=Retained Russian Wikipedia Причастие (лингвистика)153078996 complete participial-phrase rule/default examples and copyright154562152. Newly selected Russian Wikipedia Обособление144053197 specific after-noun, cause-labelled and terminal examples; Больтраффио149826784 complete opening participial construction modifying он. Exact raw revisions and API SHA1/size/SHA256 metadata are retained under audit/independent-gpt61-2026-10-12/ia012-unit29-research-verification/public-candidates-2026-10-13/. Native selection performs only existing mechanical wiki-link label/emphasis unfolding; words, punctuation, spelling, capitalization and sentence limits are unchanged. No added terminal period, generated Russian sentence or private Penguin prose. Wikipedia first-party selection/arrangement is CC BY-SA4.0 under the actual retained Russian Wikipedia copyrights154562152 route, with stable page histories/contributor attribution. Underlying cloud quotation is Korolenko, В дурном обществе1885 (author died1921); the cause example is the licensed Wikipedia instructional adaptation of Gorky Горемыка Павел1894 (author died1936), not a verbatim original-story quotation. Original public-domain basis/edition/author-date checks are retained separately; no claim that hosting licenses every third-party quotation. The obsolete source reference year5078 is not adopted. Only these bounded comma decisions are taught:ordinary preceding-noun default, both boundaries before a continuing clause, pronoun-headed or cause-labelled opening modifier, and terminal modifier without a closing comma. The internal name-list comma in the artist sentence is distinct from its modifier/main-clause boundary. No universal comma-insertion, all modifier types or unrestricted production claim. Independently authored English on2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending. The old category/connective question stays optional SOURCE_QUESTION reference practice and cannot credit or prevent completion of the language objective.
+Context explanation:
+In Вдали виднеется маяк, стоящий у моря The following participial phrase describes the lighthouse and ends the supplied construction; its preceding boundary takes a comma, with no closing separating comma at sentence end. The answer is A separating comma precedes the terminal participial phrase, with no closing comma at sentence end. This is the supplied construction, not a universal rule for every modifier.
+Tuple-v1:tuple-v1:1;66:Вдали виднеется маяк, стоящий у моря99:A separating comma precedes the terminal participial phrase, with no closing comma at sentence end.2;95:Separating commas mark both boundaries of the participial phrase before the sentence continues.85:No separating comma is used between the participial phrase and the word it describes.
+shippedText=No separating comma is used between the participial phrase and the word it describes.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=58c24d0d711e3a5052a14311d33d50cec6cfb22e63f74fd3211ef06dba0813a1
+contentHash=83a70717c9e7ab6128b4e5aa31a9bef350f9492459929016b9e9b4ed6bdfc704
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-terminal-feedback`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5193a332822ab4dc30f527f45ffff0f3f169018ac704dac5d929b032c9fc4320
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-punctuation:punctuation:u29-i-punctuation-terminal-feedback
+originalSourceText=Retained Russian Wikipedia Причастие (лингвистика)153078996 complete participial-phrase rule/default examples and copyright154562152. Newly selected Russian Wikipedia Обособление144053197 specific after-noun, cause-labelled and terminal examples; Больтраффио149826784 complete opening participial construction modifying он. Exact raw revisions and API SHA1/size/SHA256 metadata are retained under audit/independent-gpt61-2026-10-12/ia012-unit29-research-verification/public-candidates-2026-10-13/. Native selection performs only existing mechanical wiki-link label/emphasis unfolding; words, punctuation, spelling, capitalization and sentence limits are unchanged. No added terminal period, generated Russian sentence or private Penguin prose. Wikipedia first-party selection/arrangement is CC BY-SA4.0 under the actual retained Russian Wikipedia copyrights154562152 route, with stable page histories/contributor attribution. Underlying cloud quotation is Korolenko, В дурном обществе1885 (author died1921); the cause example is the licensed Wikipedia instructional adaptation of Gorky Горемыка Павел1894 (author died1936), not a verbatim original-story quotation. Original public-domain basis/edition/author-date checks are retained separately; no claim that hosting licenses every third-party quotation. The obsolete source reference year5078 is not adopted. Only these bounded comma decisions are taught:ordinary preceding-noun default, both boundaries before a continuing clause, pronoun-headed or cause-labelled opening modifier, and terminal modifier without a closing comma. The internal name-list comma in the artist sentence is distinct from its modifier/main-clause boundary. No universal comma-insertion, all modifier types or unrestricted production claim. Independently authored English on2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending. The old category/connective question stays optional SOURCE_QUESTION reference practice and cannot credit or prevent completion of the language objective.
+In Вдали виднеется маяк, стоящий у моря The following participial phrase describes the lighthouse and ends the supplied construction; its preceding boundary takes a comma, with no closing separating comma at sentence end. The answer is A separating comma precedes the terminal participial phrase, with no closing comma at sentence end. This is the supplied construction, not a universal rule for every modifier.
+shippedText=In Вдали виднеется маяк, стоящий у моря The following participial phrase describes the lighthouse and ends the supplied construction; its preceding boundary takes a comma, with no closing separating comma at sentence end. The answer is A separating comma precedes the terminal participial phrase, with no closing comma at sentence end. This is the supplied construction, not a universal rule for every modifier.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4b99b8b6f383ba1eb09bd55a0322a1318ab5e148633d127da755815c631aaea4
+contentHash=15ea6f191dd00f1a2679cccb8c25df15e06181b1c2a17e898b16cdb735547014
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-terminal-prompt`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 81500ff46357ec689340f5b8c6f9b0fcaaf9eb96ab01c28dfb2ce75e2b125d88
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-punctuation:punctuation:u29-i-punctuation-terminal-prompt
+originalSourceText=Retained Russian Wikipedia Причастие (лингвистика)153078996 complete participial-phrase rule/default examples and copyright154562152. Newly selected Russian Wikipedia Обособление144053197 specific after-noun, cause-labelled and terminal examples; Больтраффио149826784 complete opening participial construction modifying он. Exact raw revisions and API SHA1/size/SHA256 metadata are retained under audit/independent-gpt61-2026-10-12/ia012-unit29-research-verification/public-candidates-2026-10-13/. Native selection performs only existing mechanical wiki-link label/emphasis unfolding; words, punctuation, spelling, capitalization and sentence limits are unchanged. No added terminal period, generated Russian sentence or private Penguin prose. Wikipedia first-party selection/arrangement is CC BY-SA4.0 under the actual retained Russian Wikipedia copyrights154562152 route, with stable page histories/contributor attribution. Underlying cloud quotation is Korolenko, В дурном обществе1885 (author died1921); the cause example is the licensed Wikipedia instructional adaptation of Gorky Горемыка Павел1894 (author died1936), not a verbatim original-story quotation. Original public-domain basis/edition/author-date checks are retained separately; no claim that hosting licenses every third-party quotation. The obsolete source reference year5078 is not adopted. Only these bounded comma decisions are taught:ordinary preceding-noun default, both boundaries before a continuing clause, pronoun-headed or cause-labelled opening modifier, and terminal modifier without a closing comma. The internal name-list comma in the artist sentence is distinct from its modifier/main-clause boundary. No universal comma-insertion, all modifier types or unrestricted production claim. Independently authored English on2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending. The old category/connective question stays optional SOURCE_QUESTION reference practice and cannot credit or prevent completion of the language objective.
+Which English description of separating-comma treatment fits the participial phrase in this complete supplied construction? Ignore commas inside lists of names.
+shippedText=Which English description of separating-comma treatment fits the participial phrase in this complete supplied construction? Ignore commas inside lists of names.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=745d26eba6934414ac2fe4891e0e1c9be76ccd25166b121dec76ca17321ac4ca
+contentHash=232196064618d85a314151f91e74683068e332f3622e83dd78a8ae44b5a1d37d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-terminal-rationale-1`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d2e52f9cbc56e868f0ca87d506e5a6d84c1b62c8f3d57e3a2914cadf66630e47
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-punctuation:punctuation:u29-i-punctuation-terminal-rationale-1
+originalSourceText=Retained Russian Wikipedia Причастие (лингвистика)153078996 complete participial-phrase rule/default examples and copyright154562152. Newly selected Russian Wikipedia Обособление144053197 specific after-noun, cause-labelled and terminal examples; Больтраффио149826784 complete opening participial construction modifying он. Exact raw revisions and API SHA1/size/SHA256 metadata are retained under audit/independent-gpt61-2026-10-12/ia012-unit29-research-verification/public-candidates-2026-10-13/. Native selection performs only existing mechanical wiki-link label/emphasis unfolding; words, punctuation, spelling, capitalization and sentence limits are unchanged. No added terminal period, generated Russian sentence or private Penguin prose. Wikipedia first-party selection/arrangement is CC BY-SA4.0 under the actual retained Russian Wikipedia copyrights154562152 route, with stable page histories/contributor attribution. Underlying cloud quotation is Korolenko, В дурном обществе1885 (author died1921); the cause example is the licensed Wikipedia instructional adaptation of Gorky Горемыка Павел1894 (author died1936), not a verbatim original-story quotation. Original public-domain basis/edition/author-date checks are retained separately; no claim that hosting licenses every third-party quotation. The obsolete source reference year5078 is not adopted. Only these bounded comma decisions are taught:ordinary preceding-noun default, both boundaries before a continuing clause, pronoun-headed or cause-labelled opening modifier, and terminal modifier without a closing comma. The internal name-list comma in the artist sentence is distinct from its modifier/main-clause boundary. No universal comma-insertion, all modifier types or unrestricted production claim. Independently authored English on2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending. The old category/connective question stays optional SOURCE_QUESTION reference practice and cannot credit or prevent completion of the language objective.
+Separating commas mark both boundaries of the participial phrase before the sentence continues. Two separating boundaries are appropriate only when the parent clause continues after a medial modifier; an opening or terminal modifier does not have that same layout.
+shippedText=Separating commas mark both boundaries of the participial phrase before the sentence continues. Two separating boundaries are appropriate only when the parent clause continues after a medial modifier; an opening or terminal modifier does not have that same layout.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=dfb8e36b86cf7da89d44681c99884ef742520d76e0694d80a294f6c20b7c0106
+contentHash=e391d73aabf7fbc72968936b92d5dc7b14ccc6bfdf52f138f60b2d0da6af6d0b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-terminal-rationale-2`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3eac6fdf68c4268223150bb55f9c596d508586224e936d141bb529fcb9429ecb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-punctuation:punctuation:u29-i-punctuation-terminal-rationale-2
+originalSourceText=Retained Russian Wikipedia Причастие (лингвистика)153078996 complete participial-phrase rule/default examples and copyright154562152. Newly selected Russian Wikipedia Обособление144053197 specific after-noun, cause-labelled and terminal examples; Больтраффио149826784 complete opening participial construction modifying он. Exact raw revisions and API SHA1/size/SHA256 metadata are retained under audit/independent-gpt61-2026-10-12/ia012-unit29-research-verification/public-candidates-2026-10-13/. Native selection performs only existing mechanical wiki-link label/emphasis unfolding; words, punctuation, spelling, capitalization and sentence limits are unchanged. No added terminal period, generated Russian sentence or private Penguin prose. Wikipedia first-party selection/arrangement is CC BY-SA4.0 under the actual retained Russian Wikipedia copyrights154562152 route, with stable page histories/contributor attribution. Underlying cloud quotation is Korolenko, В дурном обществе1885 (author died1921); the cause example is the licensed Wikipedia instructional adaptation of Gorky Горемыка Павел1894 (author died1936), not a verbatim original-story quotation. Original public-domain basis/edition/author-date checks are retained separately; no claim that hosting licenses every third-party quotation. The obsolete source reference year5078 is not adopted. Only these bounded comma decisions are taught:ordinary preceding-noun default, both boundaries before a continuing clause, pronoun-headed or cause-labelled opening modifier, and terminal modifier without a closing comma. The internal name-list comma in the artist sentence is distinct from its modifier/main-clause boundary. No universal comma-insertion, all modifier types or unrestricted production claim. Independently authored English on2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending. The old category/connective question stays optional SOURCE_QUESTION reference practice and cannot credit or prevent completion of the language objective.
+No separating comma is used between the participial phrase and the word it describes. The ordinary preceding-noun default has no separating comma, but that default does not remove required commas in the supplied following, pronoun-headed or cause-labelled construction.
+shippedText=No separating comma is used between the participial phrase and the word it describes. The ordinary preceding-noun default has no separating comma, but that default does not remove required commas in the supplied following, pronoun-headed or cause-labelled construction.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5e65f61dc2e23d96c1b70a88f7a496c37462de458f0515abbcb3b60db129a83f
+contentHash=a736c54d0dd6734d7c4d42aabe9a4ae6528ac3c9acd4722dad3cf3e7f3ea4b7a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-punctuation-u29-s-punctuation-title`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 32e109d06259be8c924598844269f3559fef54921785a4c20a8503063ccb7c99
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-punctuation:punctuation:u29-s-punctuation-title
+originalSourceText=Retained Russian Wikipedia Причастие (лингвистика)153078996 complete participial-phrase rule/default examples and copyright154562152. Newly selected Russian Wikipedia Обособление144053197 specific after-noun, cause-labelled and terminal examples; Больтраффио149826784 complete opening participial construction modifying он. Exact raw revisions and API SHA1/size/SHA256 metadata are retained under audit/independent-gpt61-2026-10-12/ia012-unit29-research-verification/public-candidates-2026-10-13/. Native selection performs only existing mechanical wiki-link label/emphasis unfolding; words, punctuation, spelling, capitalization and sentence limits are unchanged. No added terminal period, generated Russian sentence or private Penguin prose. Wikipedia first-party selection/arrangement is CC BY-SA4.0 under the actual retained Russian Wikipedia copyrights154562152 route, with stable page histories/contributor attribution. Underlying cloud quotation is Korolenko, В дурном обществе1885 (author died1921); the cause example is the licensed Wikipedia instructional adaptation of Gorky Горемыка Павел1894 (author died1936), not a verbatim original-story quotation. Original public-domain basis/edition/author-date checks are retained separately; no claim that hosting licenses every third-party quotation. The obsolete source reference year5078 is not adopted. Only these bounded comma decisions are taught:ordinary preceding-noun default, both boundaries before a continuing clause, pronoun-headed or cause-labelled opening modifier, and terminal modifier without a closing comma. The internal name-list comma in the artist sentence is distinct from its modifier/main-clause boundary. No universal comma-insertion, all modifier types or unrestricted production claim. Independently authored English on2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending. The old category/connective question stays optional SOURCE_QUESTION reference practice and cannot credit or prevent completion of the language objective.
+Decide comma boundaries in the supplied participial constructions
+shippedText=Decide comma boundaries in the supplied participial constructions
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8da4820bc1e2d42286db763b23b08f4376c90b70db9027c8b9eacdcbcd75b114
+contentHash=2c946b6dd25975c443872fd84a31498d8f6b7e6431c4417a718d55c295c4056d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-punctuation-u29-st-rem-punctuation-body`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 217fa0c347965211f2154ebb38b76fb17c105791722ec04d219b7d29e2b7043d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-punctuation:punctuation:u29-st-rem-punctuation-body
+originalSourceText=Retained Russian Wikipedia Причастие (лингвистика)153078996 complete participial-phrase rule/default examples and copyright154562152. Newly selected Russian Wikipedia Обособление144053197 specific after-noun, cause-labelled and terminal examples; Больтраффио149826784 complete opening participial construction modifying он. Exact raw revisions and API SHA1/size/SHA256 metadata are retained under audit/independent-gpt61-2026-10-12/ia012-unit29-research-verification/public-candidates-2026-10-13/. Native selection performs only existing mechanical wiki-link label/emphasis unfolding; words, punctuation, spelling, capitalization and sentence limits are unchanged. No added terminal period, generated Russian sentence or private Penguin prose. Wikipedia first-party selection/arrangement is CC BY-SA4.0 under the actual retained Russian Wikipedia copyrights154562152 route, with stable page histories/contributor attribution. Underlying cloud quotation is Korolenko, В дурном обществе1885 (author died1921); the cause example is the licensed Wikipedia instructional adaptation of Gorky Горемыка Павел1894 (author died1936), not a verbatim original-story quotation. Original public-domain basis/edition/author-date checks are retained separately; no claim that hosting licenses every third-party quotation. The obsolete source reference year5078 is not adopted. Only these bounded comma decisions are taught:ordinary preceding-noun default, both boundaries before a continuing clause, pronoun-headed or cause-labelled opening modifier, and terminal modifier without a closing comma. The internal name-list comma in the artist sentence is distinct from its modifier/main-clause boundary. No universal comma-insertion, all modifier types or unrestricted production claim. Independently authored English on2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending. The old category/connective question stays optional SOURCE_QUESTION reference practice and cannot credit or prevent completion of the language objective.
+In Программа, написанная в спешке, выполнила недопустимую операцию. The phrase describing the program follows its noun and is set off by commas on both sides. The retained label выделяется запятыми с двух сторон names that treatment. A single comma before the phrase would omit its closing boundary in this supplied sentence.
+
+In Написанная в спешке программа выполнила недопустимую операцию. The same descriptive phrase precedes the noun. The supplied example has no separating commas: запятые не ставятся is its label. Phrase position helps distinguish these two examples; this does not mean commas are never used before a described noun.
+
+The retained rule states exceptions when the described entity is a personal pronoun or the participial phrase expresses a cause. Воспитанный в традициях Фоппы, Бернардо Дзенале и Амброджо Бергоньоне, он прошёл обучение в мастерской Леонардо. The opening phrase describes он, so A separating comma follows the opening participial phrase before the main clause. The comma after Фоппы is internal to the list of names. The later comma after Бергоньоне marks the modifier boundary before он; do not treat every visible comma as a modifier boundary. Изумлённый этим хохотом, Павел сел на пол и смотрел куда-то в угол The retained source row explicitly gives this example a causal shade, so A separating comma follows the opening participial phrase before the main clause. The ordinary preceding-noun label запятые не ставятся cannot cancel these exceptions. The optional source wording личным местоимением and кроме тех случаев identifies a category/connective, not a complete comma decision; its reference question does not satisfy these language checks.
+
+Туча, нависшая над высокими вершинами тополей, уже сыпала дождиком The phrase describes Туча and is followed by the continuing predicate, so Separating commas mark both boundaries of the participial phrase before the sentence continues. Вдали виднеется маяк, стоящий у моря Here the phrase describes маяк and ends the supplied construction, so A separating comma precedes the terminal participial phrase, with no closing comma at sentence end. A closing separating comma would have no continuing clause after it. By contrast, No separating comma is used between the participial phrase and the word it describes. is the ordinary non-causal, non-pronoun preceding-noun default shown in the earlier program example. These are bounded supplied constructions; not every phrase before a noun needs a comma and not every phrase after a word fits one universal rule.
+shippedText=In Программа, написанная в спешке, выполнила недопустимую операцию. The phrase describing the program follows its noun and is set off by commas on both sides. The retained label выделяется запятыми с двух сторон names that treatment. A single comma before the phrase would omit its closing boundary in this supplied sentence.
+
+In Написанная в спешке программа выполнила недопустимую операцию. The same descriptive phrase precedes the noun. The supplied example has no separating commas: запятые не ставятся is its label. Phrase position helps distinguish these two examples; this does not mean commas are never used before a described noun.
+
+The retained rule states exceptions when the described entity is a personal pronoun or the participial phrase expresses a cause. Воспитанный в традициях Фоппы, Бернардо Дзенале и Амброджо Бергоньоне, он прошёл обучение в мастерской Леонардо. The opening phrase describes он, so A separating comma follows the opening participial phrase before the main clause. The comma after Фоппы is internal to the list of names. The later comma after Бергоньоне marks the modifier boundary before он; do not treat every visible comma as a modifier boundary. Изумлённый этим хохотом, Павел сел на пол и смотрел куда-то в угол The retained source row explicitly gives this example a causal shade, so A separating comma follows the opening participial phrase before the main clause. The ordinary preceding-noun label запятые не ставятся cannot cancel these exceptions. The optional source wording личным местоимением and кроме тех случаев identifies a category/connective, not a complete comma decision; its reference question does not satisfy these language checks.
+
+Туча, нависшая над высокими вершинами тополей, уже сыпала дождиком The phrase describes Туча and is followed by the continuing predicate, so Separating commas mark both boundaries of the participial phrase before the sentence continues. Вдали виднеется маяк, стоящий у моря Here the phrase describes маяк and ends the supplied construction, so A separating comma precedes the terminal participial phrase, with no closing comma at sentence end. A closing separating comma would have no continuing clause after it. By contrast, No separating comma is used between the participial phrase and the word it describes. is the ordinary non-causal, non-pronoun preceding-noun default shown in the earlier program example. These are bounded supplied constructions; not every phrase before a noun needs a comma and not every phrase after a word fits one universal rule.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=00d74b2b8240e06a378c10f98092cd2f65e860076ac8e4f554498e9adfed880c
+contentHash=d3991f7a81d7ebb8c21dd13a1b66e3587ba97e43feb28a74718846dbd1b8374b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-punctuation-u29-st-teach-punctuation-3-body`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 500bf02653ed9c2fbcfbd9fb713c2e401228e70edfa7a947c4cc07f80dac8ea3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-punctuation:punctuation:u29-st-teach-punctuation-3-body
+originalSourceText=Retained Russian Wikipedia Причастие (лингвистика)153078996 complete participial-phrase rule/default examples and copyright154562152. Newly selected Russian Wikipedia Обособление144053197 specific after-noun, cause-labelled and terminal examples; Больтраффио149826784 complete opening participial construction modifying он. Exact raw revisions and API SHA1/size/SHA256 metadata are retained under audit/independent-gpt61-2026-10-12/ia012-unit29-research-verification/public-candidates-2026-10-13/. Native selection performs only existing mechanical wiki-link label/emphasis unfolding; words, punctuation, spelling, capitalization and sentence limits are unchanged. No added terminal period, generated Russian sentence or private Penguin prose. Wikipedia first-party selection/arrangement is CC BY-SA4.0 under the actual retained Russian Wikipedia copyrights154562152 route, with stable page histories/contributor attribution. Underlying cloud quotation is Korolenko, В дурном обществе1885 (author died1921); the cause example is the licensed Wikipedia instructional adaptation of Gorky Горемыка Павел1894 (author died1936), not a verbatim original-story quotation. Original public-domain basis/edition/author-date checks are retained separately; no claim that hosting licenses every third-party quotation. The obsolete source reference year5078 is not adopted. Only these bounded comma decisions are taught:ordinary preceding-noun default, both boundaries before a continuing clause, pronoun-headed or cause-labelled opening modifier, and terminal modifier without a closing comma. The internal name-list comma in the artist sentence is distinct from its modifier/main-clause boundary. No universal comma-insertion, all modifier types or unrestricted production claim. Independently authored English on2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending. The old category/connective question stays optional SOURCE_QUESTION reference practice and cannot credit or prevent completion of the language objective.
+The retained rule states exceptions when the described entity is a personal pronoun or the participial phrase expresses a cause. Воспитанный в традициях Фоппы, Бернардо Дзенале и Амброджо Бергоньоне, он прошёл обучение в мастерской Леонардо. The opening phrase describes он, so A separating comma follows the opening participial phrase before the main clause. The comma after Фоппы is internal to the list of names. The later comma after Бергоньоне marks the modifier boundary before он; do not treat every visible comma as a modifier boundary. Изумлённый этим хохотом, Павел сел на пол и смотрел куда-то в угол The retained source row explicitly gives this example a causal shade, so A separating comma follows the opening participial phrase before the main clause. The ordinary preceding-noun label запятые не ставятся cannot cancel these exceptions. The optional source wording личным местоимением and кроме тех случаев identifies a category/connective, not a complete comma decision; its reference question does not satisfy these language checks.
+shippedText=The retained rule states exceptions when the described entity is a personal pronoun or the participial phrase expresses a cause. Воспитанный в традициях Фоппы, Бернардо Дзенале и Амброджо Бергоньоне, он прошёл обучение в мастерской Леонардо. The opening phrase describes он, so A separating comma follows the opening participial phrase before the main clause. The comma after Фоппы is internal to the list of names. The later comma after Бергоньоне marks the modifier boundary before он; do not treat every visible comma as a modifier boundary. Изумлённый этим хохотом, Павел сел на пол и смотрел куда-то в угол The retained source row explicitly gives this example a causal shade, so A separating comma follows the opening participial phrase before the main clause. The ordinary preceding-noun label запятые не ставятся cannot cancel these exceptions. The optional source wording личным местоимением and кроме тех случаев identifies a category/connective, not a complete comma decision; its reference question does not satisfy these language checks.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d991abedfa0d6e286e39487f11ca0d73d2251212683cccd1d84cbbf360113dae
+contentHash=34bde1a40c57da81df8d9bb8bd329a59cfaf2b681dd5b39d44819ae0f9f01e19
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-punctuation-u29-st-teach-punctuation-3-title`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e6a1e865e56942cc39e211369775b9d601a2a15fe06657514f08661007037d1f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-punctuation:punctuation:u29-st-teach-punctuation-3-title
+originalSourceText=Retained Russian Wikipedia Причастие (лингвистика)153078996 complete participial-phrase rule/default examples and copyright154562152. Newly selected Russian Wikipedia Обособление144053197 specific after-noun, cause-labelled and terminal examples; Больтраффио149826784 complete opening participial construction modifying он. Exact raw revisions and API SHA1/size/SHA256 metadata are retained under audit/independent-gpt61-2026-10-12/ia012-unit29-research-verification/public-candidates-2026-10-13/. Native selection performs only existing mechanical wiki-link label/emphasis unfolding; words, punctuation, spelling, capitalization and sentence limits are unchanged. No added terminal period, generated Russian sentence or private Penguin prose. Wikipedia first-party selection/arrangement is CC BY-SA4.0 under the actual retained Russian Wikipedia copyrights154562152 route, with stable page histories/contributor attribution. Underlying cloud quotation is Korolenko, В дурном обществе1885 (author died1921); the cause example is the licensed Wikipedia instructional adaptation of Gorky Горемыка Павел1894 (author died1936), not a verbatim original-story quotation. Original public-domain basis/edition/author-date checks are retained separately; no claim that hosting licenses every third-party quotation. The obsolete source reference year5078 is not adopted. Only these bounded comma decisions are taught:ordinary preceding-noun default, both boundaries before a continuing clause, pronoun-headed or cause-labelled opening modifier, and terminal modifier without a closing comma. The internal name-list comma in the artist sentence is distinct from its modifier/main-clause boundary. No universal comma-insertion, all modifier types or unrestricted production claim. Independently authored English on2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending. The old category/connective question stays optional SOURCE_QUESTION reference practice and cannot credit or prevent completion of the language objective.
+Apply the pronoun and cause exceptions
+shippedText=Apply the pronoun and cause exceptions
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=da74a4dbb19472dd437ea641dd3a8ea19d22f30a7ce29c632512a9ce8080f435
+contentHash=8af34380423cf2b712810e109f2f7b549b6bdbe6a556bf3be127282a15cb8506
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-punctuation-u29-st-teach-punctuation-4-body`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 18e7182314b1a79141b229fd05884cb5da6c2b25e66b73e95a3ce0eb9fb7fee6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-punctuation:punctuation:u29-st-teach-punctuation-4-body
+originalSourceText=Retained Russian Wikipedia Причастие (лингвистика)153078996 complete participial-phrase rule/default examples and copyright154562152. Newly selected Russian Wikipedia Обособление144053197 specific after-noun, cause-labelled and terminal examples; Больтраффио149826784 complete opening participial construction modifying он. Exact raw revisions and API SHA1/size/SHA256 metadata are retained under audit/independent-gpt61-2026-10-12/ia012-unit29-research-verification/public-candidates-2026-10-13/. Native selection performs only existing mechanical wiki-link label/emphasis unfolding; words, punctuation, spelling, capitalization and sentence limits are unchanged. No added terminal period, generated Russian sentence or private Penguin prose. Wikipedia first-party selection/arrangement is CC BY-SA4.0 under the actual retained Russian Wikipedia copyrights154562152 route, with stable page histories/contributor attribution. Underlying cloud quotation is Korolenko, В дурном обществе1885 (author died1921); the cause example is the licensed Wikipedia instructional adaptation of Gorky Горемыка Павел1894 (author died1936), not a verbatim original-story quotation. Original public-domain basis/edition/author-date checks are retained separately; no claim that hosting licenses every third-party quotation. The obsolete source reference year5078 is not adopted. Only these bounded comma decisions are taught:ordinary preceding-noun default, both boundaries before a continuing clause, pronoun-headed or cause-labelled opening modifier, and terminal modifier without a closing comma. The internal name-list comma in the artist sentence is distinct from its modifier/main-clause boundary. No universal comma-insertion, all modifier types or unrestricted production claim. Independently authored English on2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending. The old category/connective question stays optional SOURCE_QUESTION reference practice and cannot credit or prevent completion of the language objective.
+Туча, нависшая над высокими вершинами тополей, уже сыпала дождиком The phrase describes Туча and is followed by the continuing predicate, so Separating commas mark both boundaries of the participial phrase before the sentence continues. Вдали виднеется маяк, стоящий у моря Here the phrase describes маяк and ends the supplied construction, so A separating comma precedes the terminal participial phrase, with no closing comma at sentence end. A closing separating comma would have no continuing clause after it. By contrast, No separating comma is used between the participial phrase and the word it describes. is the ordinary non-causal, non-pronoun preceding-noun default shown in the earlier program example. These are bounded supplied constructions; not every phrase before a noun needs a comma and not every phrase after a word fits one universal rule.
+shippedText=Туча, нависшая над высокими вершинами тополей, уже сыпала дождиком The phrase describes Туча and is followed by the continuing predicate, so Separating commas mark both boundaries of the participial phrase before the sentence continues. Вдали виднеется маяк, стоящий у моря Here the phrase describes маяк and ends the supplied construction, so A separating comma precedes the terminal participial phrase, with no closing comma at sentence end. A closing separating comma would have no continuing clause after it. By contrast, No separating comma is used between the participial phrase and the word it describes. is the ordinary non-causal, non-pronoun preceding-noun default shown in the earlier program example. These are bounded supplied constructions; not every phrase before a noun needs a comma and not every phrase after a word fits one universal rule.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d91442ee9f49d4bd3a0a9c1a5632aefe70ec8f2b836ffc8b8fb5f4c900e53c9d
+contentHash=47d99ae2a9d52c79fe2413572376081a60176259bfb9fbe41f20786eb214c010
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-punctuation-u29-st-teach-punctuation-4-title`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c3c39573ef1dfdd6fbbbc455ec4cdf8321ba90bebf85652f5e165e4a03010ae7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-punctuation:punctuation:u29-st-teach-punctuation-4-title
+originalSourceText=Retained Russian Wikipedia Причастие (лингвистика)153078996 complete participial-phrase rule/default examples and copyright154562152. Newly selected Russian Wikipedia Обособление144053197 specific after-noun, cause-labelled and terminal examples; Больтраффио149826784 complete opening participial construction modifying он. Exact raw revisions and API SHA1/size/SHA256 metadata are retained under audit/independent-gpt61-2026-10-12/ia012-unit29-research-verification/public-candidates-2026-10-13/. Native selection performs only existing mechanical wiki-link label/emphasis unfolding; words, punctuation, spelling, capitalization and sentence limits are unchanged. No added terminal period, generated Russian sentence or private Penguin prose. Wikipedia first-party selection/arrangement is CC BY-SA4.0 under the actual retained Russian Wikipedia copyrights154562152 route, with stable page histories/contributor attribution. Underlying cloud quotation is Korolenko, В дурном обществе1885 (author died1921); the cause example is the licensed Wikipedia instructional adaptation of Gorky Горемыка Павел1894 (author died1936), not a verbatim original-story quotation. Original public-domain basis/edition/author-date checks are retained separately; no claim that hosting licenses every third-party quotation. The obsolete source reference year5078 is not adopted. Only these bounded comma decisions are taught:ordinary preceding-noun default, both boundaries before a continuing clause, pronoun-headed or cause-labelled opening modifier, and terminal modifier without a closing comma. The internal name-list comma in the artist sentence is distinct from its modifier/main-clause boundary. No universal comma-insertion, all modifier types or unrestricted production claim. Independently authored English on2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending. The old category/connective question stays optional SOURCE_QUESTION reference practice and cannot credit or prevent completion of the language objective.
+Check the continuing clause and sentence end
+shippedText=Check the continuing clause and sentence end
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3c092bde7c810ad3e4ab7bf777f832675c7465aea77b54baa139e70675e7e4b3
+contentHash=748d6330b7a44589546f49d384eeb350da969ff52c36cd7d74b09851e99b24e7
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -15930,6 +17600,731 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-u29-punctuation-native-after-head`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-ruwiki-obosoblenie-144053197
+- Rights: rights-ruwiki-obosoblenie-144053197
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 44a71c834275c4be2289e796208c4a66e6ab242f40cf4a8d5f2dc91f88a74cad
+
+recordType=meaning
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обособление&oldid=144053197
+sourceRevision=144053197
+sourceRecordId=punctuation-native:after:|1. Стоят после определяемого слова и выражены причастным оборотом
+|''Туча, '
+originalSourceText=|1. Стоят после определяемого слова и выражены причастным оборотом
+|''Туча, '''нависшая над высокими вершинами тополей''', уже сыпала дождиком''
+shippedText=Туча
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 144053197 identifies contributors. Mechanical link-label/emphasis cleanup only; original words and punctuation unchanged. Qualified source/rights review pending.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a2c8e66f9f55fb67f145c16941ebae8a44dbff5efae1da4c5a76b1889697455d
+contentHash=7b5f476cf85e0ce2cc7b10433a23035bbf13215c6a6d3f7400cc1078fc4b6cfb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-punctuation-native-after-region-1`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-ruwiki-obosoblenie-144053197
+- Rights: rights-ruwiki-obosoblenie-144053197
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a7d986b32bf0231ca97eb411b1e28ad53838e5000dabc6303deb9a5018cf6e9b
+
+recordType=meaning
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обособление&oldid=144053197
+sourceRevision=144053197
+sourceRecordId=punctuation-native:after:|1. Стоят после определяемого слова и выражены причастным оборотом
+|''Туча, '
+originalSourceText=|1. Стоят после определяемого слова и выражены причастным оборотом
+|''Туча, '''нависшая над высокими вершинами тополей''', уже сыпала дождиком''
+shippedText=нависшая над высокими вершинами тополей,
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 144053197 identifies contributors. Mechanical link-label/emphasis cleanup only; original words and punctuation unchanged. Qualified source/rights review pending.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a2c8e66f9f55fb67f145c16941ebae8a44dbff5efae1da4c5a76b1889697455d
+contentHash=e3dc47fc9af85683180cd82b4a3d0c1cfa43dcbf4c537865cb6ab879e4d8728a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-punctuation-native-after-region-2`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-ruwiki-obosoblenie-144053197
+- Rights: rights-ruwiki-obosoblenie-144053197
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2319e792b95ef214264afb04f1e642aa59d6d61203ed7fd826ebb338bc90a994
+
+recordType=meaning
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обособление&oldid=144053197
+sourceRevision=144053197
+sourceRecordId=punctuation-native:after:|1. Стоят после определяемого слова и выражены причастным оборотом
+|''Туча, '
+originalSourceText=|1. Стоят после определяемого слова и выражены причастным оборотом
+|''Туча, '''нависшая над высокими вершинами тополей''', уже сыпала дождиком''
+shippedText=уже сыпала дождиком
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 144053197 identifies contributors. Mechanical link-label/emphasis cleanup only; original words and punctuation unchanged. Qualified source/rights review pending.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a2c8e66f9f55fb67f145c16941ebae8a44dbff5efae1da4c5a76b1889697455d
+contentHash=a265606c7bfdba0cfc7b3496b6e301f67c3fb98f5eeb1f751f97c334397218e8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-punctuation-native-after-ru`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-ruwiki-obosoblenie-144053197
+- Rights: rights-ruwiki-obosoblenie-144053197
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3e3d65f826555d1d5a2bf8548866e8582d2d7b30679b70259395d8b8ffbbcaa7
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обособление&oldid=144053197
+sourceRevision=144053197
+sourceRecordId=punctuation-native:after:|1. Стоят после определяемого слова и выражены причастным оборотом
+|''Туча, '
+originalSourceText=|1. Стоят после определяемого слова и выражены причастным оборотом
+|''Туча, '''нависшая над высокими вершинами тополей''', уже сыпала дождиком''
+shippedText=Туча, нависшая над высокими вершинами тополей, уже сыпала дождиком
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 144053197 identifies contributors. Mechanical link-label/emphasis cleanup only; original words and punctuation unchanged. Qualified source/rights review pending.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=a2c8e66f9f55fb67f145c16941ebae8a44dbff5efae1da4c5a76b1889697455d
+contentHash=7a661733fd5dd4f7195fd7c4a7a5cf65eb6ac982555f47c7fe936d82d66f2d28
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-punctuation-native-cause-head`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-ruwiki-obosoblenie-144053197
+- Rights: rights-ruwiki-obosoblenie-144053197
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fd14a4731761723436700d2c90998d0854aedaedfbdc59edf491b9a6f0ac28b6
+
+recordType=meaning
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обособление&oldid=144053197
+sourceRevision=144053197
+sourceRecordId=punctuation-native:cause:|3. Стоят перед определяемым словом и имеют добавочный оттенок (причины, усту
+originalSourceText=|3. Стоят перед определяемым словом и имеют добавочный оттенок (причины, уступки)
+|1. '''''Изумлённый этим хохотом''', Павел сел на пол и смотрел куда-то в угол'' (оттенок причины)
+shippedText=Павел
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 144053197 identifies contributors. Mechanical link-label/emphasis cleanup only; original words and punctuation unchanged. Qualified source/rights review pending.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=60ab6e0afc66709184089243bbeb6d173d336a6e95c01d2baea8ea8c3ccaacdd
+contentHash=63c2c03c21d7b631804043699d959a191217124ef2f63aeb8b5aec0a868a1a9a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-punctuation-native-cause-region-0`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-ruwiki-obosoblenie-144053197
+- Rights: rights-ruwiki-obosoblenie-144053197
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6d8a746d797a77b5598e20a18f8b7688ff46accd30e0cf683989d2d46b1a0212
+
+recordType=meaning
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обособление&oldid=144053197
+sourceRevision=144053197
+sourceRecordId=punctuation-native:cause:|3. Стоят перед определяемым словом и имеют добавочный оттенок (причины, усту
+originalSourceText=|3. Стоят перед определяемым словом и имеют добавочный оттенок (причины, уступки)
+|1. '''''Изумлённый этим хохотом''', Павел сел на пол и смотрел куда-то в угол'' (оттенок причины)
+shippedText=Изумлённый этим хохотом,
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 144053197 identifies contributors. Mechanical link-label/emphasis cleanup only; original words and punctuation unchanged. Qualified source/rights review pending.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=60ab6e0afc66709184089243bbeb6d173d336a6e95c01d2baea8ea8c3ccaacdd
+contentHash=4e3a4e4c01cea6f3082e366aab12db4280e020d2126369e6aefc06366a094cbf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-punctuation-native-cause-region-1`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-ruwiki-obosoblenie-144053197
+- Rights: rights-ruwiki-obosoblenie-144053197
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 56c1110f91b5cce7c322f7734625d3740928294cb93f441ba84414493a1fdade
+
+recordType=meaning
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обособление&oldid=144053197
+sourceRevision=144053197
+sourceRecordId=punctuation-native:cause:|3. Стоят перед определяемым словом и имеют добавочный оттенок (причины, усту
+originalSourceText=|3. Стоят перед определяемым словом и имеют добавочный оттенок (причины, уступки)
+|1. '''''Изумлённый этим хохотом''', Павел сел на пол и смотрел куда-то в угол'' (оттенок причины)
+shippedText=Павел сел на пол и смотрел куда
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 144053197 identifies contributors. Mechanical link-label/emphasis cleanup only; original words and punctuation unchanged. Qualified source/rights review pending.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=60ab6e0afc66709184089243bbeb6d173d336a6e95c01d2baea8ea8c3ccaacdd
+contentHash=30b9b5b830ac82ff4b391bd9b8c44654462f31226cfd48288d26d973517dbf9b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-punctuation-native-cause-region-2`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-ruwiki-obosoblenie-144053197
+- Rights: rights-ruwiki-obosoblenie-144053197
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5689911803b63d708fb0e9680325709794cf42092fd9e7bc385a70d4b5d68d72
+
+recordType=meaning
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обособление&oldid=144053197
+sourceRevision=144053197
+sourceRecordId=punctuation-native:cause:|3. Стоят перед определяемым словом и имеют добавочный оттенок (причины, усту
+originalSourceText=|3. Стоят перед определяемым словом и имеют добавочный оттенок (причины, уступки)
+|1. '''''Изумлённый этим хохотом''', Павел сел на пол и смотрел куда-то в угол'' (оттенок причины)
+shippedText=то в угол
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 144053197 identifies contributors. Mechanical link-label/emphasis cleanup only; original words and punctuation unchanged. Qualified source/rights review pending.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=60ab6e0afc66709184089243bbeb6d173d336a6e95c01d2baea8ea8c3ccaacdd
+contentHash=43acae66c939e66ef8946d96e884f56d1f106d21618c6950e41419a640f85ddd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-punctuation-native-cause-ru`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-ruwiki-obosoblenie-144053197
+- Rights: rights-ruwiki-obosoblenie-144053197
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 81fe284ba55982ebffc87a47dd624cf1a43c0bf39457b07a90483c78b33c8e28
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обособление&oldid=144053197
+sourceRevision=144053197
+sourceRecordId=punctuation-native:cause:|3. Стоят перед определяемым словом и имеют добавочный оттенок (причины, усту
+originalSourceText=|3. Стоят перед определяемым словом и имеют добавочный оттенок (причины, уступки)
+|1. '''''Изумлённый этим хохотом''', Павел сел на пол и смотрел куда-то в угол'' (оттенок причины)
+shippedText=Изумлённый этим хохотом, Павел сел на пол и смотрел куда-то в угол
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 144053197 identifies contributors. Mechanical link-label/emphasis cleanup only; original words and punctuation unchanged. Qualified source/rights review pending.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=60ab6e0afc66709184089243bbeb6d173d336a6e95c01d2baea8ea8c3ccaacdd
+contentHash=18f7b93e19852c003c77ff3c595e0235f287a9be52bf1891eaa68d489c4ff339
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-punctuation-native-pronoun-boundary-bergognone`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-ruwiki-boltraffio-149826784
+- Rights: rights-ruwiki-boltraffio-149826784
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 23efee53c59806fa7718a316b2376d058b4ca05c95a5e77f76bd59688147a742
+
+recordType=meaning
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Больтраффио,_Джованни&oldid=149826784
+sourceRevision=149826784
+sourceRecordId=punctuation-native:pronoun:Воспитанный в традициях [[Фоппа, Винченцо|Фоппы]], [[Дзенале, Бернардо|Бернар
+originalSourceText=Воспитанный в традициях [[Фоппа, Винченцо|Фоппы]], [[Дзенале, Бернардо|Бернардо Дзенале]] и [[Бергоньоне, Амброджо|Амброджо Бергоньоне]], он прошёл обучение в мастерской [[Леонардо]].
+shippedText=Бергоньоне
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 149826784 identifies contributors. Mechanical link-label/emphasis cleanup only; original words and punctuation unchanged. Qualified source/rights review pending.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=04798a919d45e77e4162a186ab72313dab529da5b5ac9d664748d1ca5a482acf
+contentHash=ead2d8ebe8af30d9720c84a5df0c3603410b56fb163ab2377226fe3525dae06f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-punctuation-native-pronoun-head`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-ruwiki-boltraffio-149826784
+- Rights: rights-ruwiki-boltraffio-149826784
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bf9ff6c7c9871bef994ddf42c9a6582609264dcff268cc10e06d9a85af2f13e5
+
+recordType=meaning
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Больтраффио,_Джованни&oldid=149826784
+sourceRevision=149826784
+sourceRecordId=punctuation-native:pronoun:Воспитанный в традициях [[Фоппа, Винченцо|Фоппы]], [[Дзенале, Бернардо|Бернар
+originalSourceText=Воспитанный в традициях [[Фоппа, Винченцо|Фоппы]], [[Дзенале, Бернардо|Бернардо Дзенале]] и [[Бергоньоне, Амброджо|Амброджо Бергоньоне]], он прошёл обучение в мастерской [[Леонардо]].
+shippedText=он
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 149826784 identifies contributors. Mechanical link-label/emphasis cleanup only; original words and punctuation unchanged. Qualified source/rights review pending.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=04798a919d45e77e4162a186ab72313dab529da5b5ac9d664748d1ca5a482acf
+contentHash=484518364fdba90e881b95500cc11d4917f8aa783dbbd5dba49485833426d2db
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-punctuation-native-pronoun-list-foppa`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-ruwiki-boltraffio-149826784
+- Rights: rights-ruwiki-boltraffio-149826784
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 838f85e5fba57cacd1212050e349a8cbc551e29b1fbde91958e82da1eb8277e2
+
+recordType=meaning
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Больтраффио,_Джованни&oldid=149826784
+sourceRevision=149826784
+sourceRecordId=punctuation-native:pronoun:Воспитанный в традициях [[Фоппа, Винченцо|Фоппы]], [[Дзенале, Бернардо|Бернар
+originalSourceText=Воспитанный в традициях [[Фоппа, Винченцо|Фоппы]], [[Дзенале, Бернардо|Бернардо Дзенале]] и [[Бергоньоне, Амброджо|Амброджо Бергоньоне]], он прошёл обучение в мастерской [[Леонардо]].
+shippedText=Фоппы
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 149826784 identifies contributors. Mechanical link-label/emphasis cleanup only; original words and punctuation unchanged. Qualified source/rights review pending.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=04798a919d45e77e4162a186ab72313dab529da5b5ac9d664748d1ca5a482acf
+contentHash=1f6f67f6be611d8d5d449da786c84746fed3936e172b242a94d0ff1c228d0420
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-punctuation-native-pronoun-region-0`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-ruwiki-boltraffio-149826784
+- Rights: rights-ruwiki-boltraffio-149826784
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 750951aca7551c8f1e1bfdd7492fb2d214637cb244b0ab61e64792a68a90675c
+
+recordType=meaning
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Больтраффио,_Джованни&oldid=149826784
+sourceRevision=149826784
+sourceRecordId=punctuation-native:pronoun:Воспитанный в традициях [[Фоппа, Винченцо|Фоппы]], [[Дзенале, Бернардо|Бернар
+originalSourceText=Воспитанный в традициях [[Фоппа, Винченцо|Фоппы]], [[Дзенале, Бернардо|Бернардо Дзенале]] и [[Бергоньоне, Амброджо|Амброджо Бергоньоне]], он прошёл обучение в мастерской [[Леонардо]].
+shippedText=Воспитанный в традициях Фоппы,
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 149826784 identifies contributors. Mechanical link-label/emphasis cleanup only; original words and punctuation unchanged. Qualified source/rights review pending.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=04798a919d45e77e4162a186ab72313dab529da5b5ac9d664748d1ca5a482acf
+contentHash=1db39d4b8f5d3a94b9d2d93d03439279d8d07838fe2b00441d18afb63f740cf1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-punctuation-native-pronoun-region-1`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-ruwiki-boltraffio-149826784
+- Rights: rights-ruwiki-boltraffio-149826784
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a0ca0979840c755c20fbb90d47d530bd045403e89e5a5ad696dd1227e7e3cdd7
+
+recordType=meaning
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Больтраффио,_Джованни&oldid=149826784
+sourceRevision=149826784
+sourceRecordId=punctuation-native:pronoun:Воспитанный в традициях [[Фоппа, Винченцо|Фоппы]], [[Дзенале, Бернардо|Бернар
+originalSourceText=Воспитанный в традициях [[Фоппа, Винченцо|Фоппы]], [[Дзенале, Бернардо|Бернардо Дзенале]] и [[Бергоньоне, Амброджо|Амброджо Бергоньоне]], он прошёл обучение в мастерской [[Леонардо]].
+shippedText=Бернардо Дзенале и Амброджо Бергоньоне,
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 149826784 identifies contributors. Mechanical link-label/emphasis cleanup only; original words and punctuation unchanged. Qualified source/rights review pending.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=04798a919d45e77e4162a186ab72313dab529da5b5ac9d664748d1ca5a482acf
+contentHash=4a6ec7ad3705773961a4c47c5d1efcd035dcdd92c9b9d0200b0b998a7616de8f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-punctuation-native-pronoun-region-2`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-ruwiki-boltraffio-149826784
+- Rights: rights-ruwiki-boltraffio-149826784
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7c4d011c064b247c19bde6368e3752611252f94590962a53354c0886350dcd46
+
+recordType=meaning
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Больтраффио,_Джованни&oldid=149826784
+sourceRevision=149826784
+sourceRecordId=punctuation-native:pronoun:Воспитанный в традициях [[Фоппа, Винченцо|Фоппы]], [[Дзенале, Бернардо|Бернар
+originalSourceText=Воспитанный в традициях [[Фоппа, Винченцо|Фоппы]], [[Дзенале, Бернардо|Бернардо Дзенале]] и [[Бергоньоне, Амброджо|Амброджо Бергоньоне]], он прошёл обучение в мастерской [[Леонардо]].
+shippedText=он прошёл обучение в мастерской Леонардо.
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 149826784 identifies contributors. Mechanical link-label/emphasis cleanup only; original words and punctuation unchanged. Qualified source/rights review pending.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=04798a919d45e77e4162a186ab72313dab529da5b5ac9d664748d1ca5a482acf
+contentHash=54adefe2c148f48c206f3b3031fdae7be3dc405576ff6711ba776baad650ba2e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-punctuation-native-pronoun-ru`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-ruwiki-boltraffio-149826784
+- Rights: rights-ruwiki-boltraffio-149826784
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d02dfa0f4c30fbaa766972819c474efd0766ff301eae4cd81d90e442e65b1e92
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Больтраффио,_Джованни&oldid=149826784
+sourceRevision=149826784
+sourceRecordId=punctuation-native:pronoun:Воспитанный в традициях [[Фоппа, Винченцо|Фоппы]], [[Дзенале, Бернардо|Бернар
+originalSourceText=Воспитанный в традициях [[Фоппа, Винченцо|Фоппы]], [[Дзенале, Бернардо|Бернардо Дзенале]] и [[Бергоньоне, Амброджо|Амброджо Бергоньоне]], он прошёл обучение в мастерской [[Леонардо]].
+shippedText=Воспитанный в традициях Фоппы, Бернардо Дзенале и Амброджо Бергоньоне, он прошёл обучение в мастерской Леонардо.
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 149826784 identifies contributors. Mechanical link-label/emphasis cleanup only; original words and punctuation unchanged. Qualified source/rights review pending.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=04798a919d45e77e4162a186ab72313dab529da5b5ac9d664748d1ca5a482acf
+contentHash=cb2a80d87f9bddc68e821c8f3920a3c01f0fbf4bd705695e7460e3f49e8d1c29
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-punctuation-native-terminal-head`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-ruwiki-obosoblenie-144053197
+- Rights: rights-ruwiki-obosoblenie-144053197
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5cd4d86454a00b424827b6c599962cc84b41074a446ac22139cdcc2194541ffc
+
+recordType=meaning
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обособление&oldid=144053197
+sourceRevision=144053197
+sourceRecordId=punctuation-native:terminal:* [[причастный оборот]] ({{lang-ru|Вдали виднеется маяк, '''стоящий у моря'''
+originalSourceText=* [[причастный оборот]] ({{lang-ru|Вдали виднеется маяк, '''стоящий у моря'''}});
+shippedText=маяк
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 144053197 identifies contributors. Mechanical link-label/emphasis cleanup only; original words and punctuation unchanged. Qualified source/rights review pending.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=875206a0ab7268a29758dcc2b9c6feff6e4a91bfb6b63ce0c7197cf2250a262e
+contentHash=013f12404ac0fb387631df1511d3cc83c3b63ca5bee5d7ecd089b49191d3cad9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-punctuation-native-terminal-region-0`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-ruwiki-obosoblenie-144053197
+- Rights: rights-ruwiki-obosoblenie-144053197
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 87a74bcc55b22c44a10c6cde5a5c209ac99ffc2ebbfabfe3931d5970d8af3244
+
+recordType=meaning
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обособление&oldid=144053197
+sourceRevision=144053197
+sourceRecordId=punctuation-native:terminal:* [[причастный оборот]] ({{lang-ru|Вдали виднеется маяк, '''стоящий у моря'''
+originalSourceText=* [[причастный оборот]] ({{lang-ru|Вдали виднеется маяк, '''стоящий у моря'''}});
+shippedText=Вдали виднеется маяк,
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 144053197 identifies contributors. Mechanical link-label/emphasis cleanup only; original words and punctuation unchanged. Qualified source/rights review pending.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=875206a0ab7268a29758dcc2b9c6feff6e4a91bfb6b63ce0c7197cf2250a262e
+contentHash=82d78c42c2f188494dd9cb3775b5622a931de13d2b1a1e1827e55d45be38859f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-punctuation-native-terminal-region-1`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-ruwiki-obosoblenie-144053197
+- Rights: rights-ruwiki-obosoblenie-144053197
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2ac576719540b4cf78fc369ff16c067dcebc37d4c2f34a9912ff372b262945f2
+
+recordType=meaning
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обособление&oldid=144053197
+sourceRevision=144053197
+sourceRecordId=punctuation-native:terminal:* [[причастный оборот]] ({{lang-ru|Вдали виднеется маяк, '''стоящий у моря'''
+originalSourceText=* [[причастный оборот]] ({{lang-ru|Вдали виднеется маяк, '''стоящий у моря'''}});
+shippedText=стоящий у моря
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 144053197 identifies contributors. Mechanical link-label/emphasis cleanup only; original words and punctuation unchanged. Qualified source/rights review pending.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=875206a0ab7268a29758dcc2b9c6feff6e4a91bfb6b63ce0c7197cf2250a262e
+contentHash=c86befbd9acd7989d20be6ff6aa150deceacf6d20eb00046474dca3f1907219e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-punctuation-native-terminal-ru`
+
+- Objectives: obj-u29-punctuation
+- Sessions: u29-s-orient, u29-s-punctuation
+- Source: src-ruwiki-obosoblenie-144053197
+- Rights: rights-ruwiki-obosoblenie-144053197
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 679bdddd8097b028738f78712daab9b8cd5700874eb5552df1888214db57cc5a
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Обособление&oldid=144053197
+sourceRevision=144053197
+sourceRecordId=punctuation-native:terminal:* [[причастный оборот]] ({{lang-ru|Вдали виднеется маяк, '''стоящий у моря'''
+originalSourceText=* [[причастный оборот]] ({{lang-ru|Вдали виднеется маяк, '''стоящий у моря'''}});
+shippedText=Вдали виднеется маяк, стоящий у моря
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 144053197 identifies contributors. Mechanical link-label/emphasis cleanup only; original words and punctuation unchanged. Qualified source/rights review pending.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=875206a0ab7268a29758dcc2b9c6feff6e4a91bfb6b63ce0c7197cf2250a262e
+contentHash=fe2aabd1a975c8af6acf4a72c08f62808adc09a6c098ad3d36e656096fb8ecd4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-punctuation-reference-prov-ex-u29-punctuation-0-en`
+
+- Objectives: obj-u29-punctuation-reference
+- Sessions: none
+- Source: src-ruwiki-prichastie-153078996
+- Rights: rights-ruwiki-prichastie-153078996
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 13dbc8019a7ddc3a69699f863987a0838dfeda36912ec129e3a7d38a1d15790a
+
+recordType=meaning
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Причастие_(лингвистика)&oldid=153078996
+sourceRevision=153078996
+sourceRecordId=prichastie:В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если пр
+originalSourceText=В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если причастный оборот стоит после определяемого слова, он выделяется запятыми с двух сторон. Когда причастный оборот стоит перед определяемым словом, запятые не ставятся, кроме тех случаев, когда определяемое слово выражено личным местоимением или причастный оборот обозначает причину. Если после причастного оборота конец предложения, то запятая ставится только перед причастным оборотом.
+
+'''Примеры:'''
+* ''Программа, написанная в спешке, выполнила недопустимую операцию.''
+* ''Написанная в спешке программа выполнила недопустимую операцию.
+shippedText=выделяется запятыми с двух сторон
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153078996 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=821d77bb38feb19b79078e8af3f507f2fcaa4d7e6735f4c1d10a2475a73cbc9a
+contentHash=4ab7796982c444f38373c5a8aa304d1cd9fdeb7f561b5d139efd571c7438d385
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-punctuation-reference-prov-ex-u29-punctuation-1-en`
+
+- Objectives: obj-u29-punctuation-reference
+- Sessions: none
+- Source: src-ruwiki-prichastie-153078996
+- Rights: rights-ruwiki-prichastie-153078996
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 15c6fcba26e26728740cb672557271bd8f8da24189276d087a95580219ea125f
+
+recordType=meaning
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Причастие_(лингвистика)&oldid=153078996
+sourceRevision=153078996
+sourceRecordId=prichastie:В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если пр
+originalSourceText=В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если причастный оборот стоит после определяемого слова, он выделяется запятыми с двух сторон. Когда причастный оборот стоит перед определяемым словом, запятые не ставятся, кроме тех случаев, когда определяемое слово выражено личным местоимением или причастный оборот обозначает причину. Если после причастного оборота конец предложения, то запятая ставится только перед причастным оборотом.
+
+'''Примеры:'''
+* ''Программа, написанная в спешке, выполнила недопустимую операцию.''
+* ''Написанная в спешке программа выполнила недопустимую операцию.
+shippedText=запятые не ставятся
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153078996 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=821d77bb38feb19b79078e8af3f507f2fcaa4d7e6735f4c1d10a2475a73cbc9a
+contentHash=18bf2028dad255feb08a59d7993dae98c16d53a0653a72fb1193939debfc9d0b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-punctuation-reference-prov-ex-u29-punctuation-2-en`
+
+- Objectives: obj-u29-punctuation-reference
+- Sessions: none
+- Source: src-ruwiki-prichastie-153078996
+- Rights: rights-ruwiki-prichastie-153078996
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 264e6b3e943128052e53e1cbf0cd24ce8a8dd099c51525619a46062d7b6fe3d9
+
+recordType=meaning
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Причастие_(лингвистика)&oldid=153078996
+sourceRevision=153078996
+sourceRecordId=prichastie:В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если пр
+originalSourceText=В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если причастный оборот стоит после определяемого слова, он выделяется запятыми с двух сторон. Когда причастный оборот стоит перед определяемым словом, запятые не ставятся, кроме тех случаев, когда определяемое слово выражено личным местоимением или причастный оборот обозначает причину. Если после причастного оборота конец предложения, то запятая ставится только перед причастным оборотом.
+
+'''Примеры:'''
+* ''Программа, написанная в спешке, выполнила недопустимую операцию.''
+* ''Написанная в спешке программа выполнила недопустимую операцию.
+shippedText=кроме тех случаев
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153078996 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=821d77bb38feb19b79078e8af3f507f2fcaa4d7e6735f4c1d10a2475a73cbc9a
+contentHash=5d0cf4672d26ce9babcdd7fa489e10e2aedd4f8aed6b9f30dda7079abe6d42ab
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-punctuation-reference-prov-ex-u29-punctuation-2-ru`
+
+- Objectives: obj-u29-punctuation-reference
+- Sessions: none
+- Source: src-ruwiki-prichastie-153078996
+- Rights: rights-ruwiki-prichastie-153078996
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 543048ed59256e56be50b3c436390cfc33bb5434226bf6ad98f5181f2524b164
+
+recordType=example
+sourceUrl=https://ru.wikipedia.org/w/index.php?title=Причастие_(лингвистика)&oldid=153078996
+sourceRevision=153078996
+sourceRecordId=prichastie:В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если пр
+originalSourceText=В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если причастный оборот стоит после определяемого слова, он выделяется запятыми с двух сторон. Когда причастный оборот стоит перед определяемым словом, запятые не ставятся, кроме тех случаев, когда определяемое слово выражено личным местоимением или причастный оборот обозначает причину. Если после причастного оборота конец предложения, то запятая ставится только перед причастным оборотом.
+
+'''Примеры:'''
+* ''Программа, написанная в спешке, выполнила недопустимую операцию.''
+* ''Написанная в спешке программа выполнила недопустимую операцию.
+shippedText=личным местоимением
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153078996 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=821d77bb38feb19b79078e8af3f507f2fcaa4d7e6735f4c1d10a2475a73cbc9a
+contentHash=b21573d1f76ae3e4f28da52ab9086ad59c4edd7247207211ab27c3597a797b9a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u29-punctuation-rem`
 
 - Objectives: obj-u29-punctuation
@@ -17902,6 +20297,36 @@ CC BY-SA 4.0
 Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 153078996 identifies the contributors.
 Selected spans only. Russian quotations are unchanged. English claims are quoted, not paraphrased.
 
+### SOURCE `src-ruwiki-obosoblenie-144053197`
+
+- Objectives: none
+- Sessions: none
+- Source: src-ruwiki-obosoblenie-144053197
+- Rights: rights-ruwiki-obosoblenie-144053197
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6fc9a23d16d08952145ea7fb67981455f23ef001d709d784a03a3bdc79d43516
+
+Обособление
+CC BY-SA 4.0
+Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 144053197 identifies contributors. Mechanical link-label/emphasis cleanup only; original words and punctuation unchanged. Qualified source/rights review pending.
+Specific native constructions selected with deterministic wiki-link label/emphasis unfolding. No native paraphrase, stress insertion or punctuation change. Original quotations/edition/author basis recorded separately; no whole-article grammar adoption.
+
+### SOURCE `src-ruwiki-boltraffio-149826784`
+
+- Objectives: none
+- Sessions: none
+- Source: src-ruwiki-boltraffio-149826784
+- Rights: rights-ruwiki-boltraffio-149826784
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 6595bc86ffd34fa62e27099c23d0df17623c75a0b3d387797a8b196e35b57b2d
+
+Больтраффио, Джованни
+CC BY-SA 4.0
+Участники русской Википедии, CC BY-SA 4.0, via Википедия:Авторские права oldid 154562152. Page history for oldid 149826784 identifies contributors. Mechanical link-label/emphasis cleanup only; original words and punctuation unchanged. Qualified source/rights review pending.
+Specific native constructions selected with deterministic wiki-link label/emphasis unfolding. No native paraphrase, stress insertion or punctuation change. Original quotations/edition/author basis recorded separately; no whole-article grammar adoption.
+
 ### SOURCE `src-original-research-synthesis`
 
 - Objectives: none
@@ -17986,6 +20411,34 @@ permitsAppUse=true
 - Content hash: 037810eea32f115d89eb66eb6e408aee2902f26a33a4b1940bace022880e2a58
 
 src-ruwiki-prichastie-153078996
+CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-ruwiki-obosoblenie-144053197`
+
+- Objectives: none
+- Sessions: none
+- Source: src-ruwiki-obosoblenie-144053197
+- Rights: rights-ruwiki-obosoblenie-144053197
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: da4005b1e2509f1498a401efc86ab6638f612dc9759a3fe15f1def67e101c9b5
+
+src-ruwiki-obosoblenie-144053197
+CC BY-SA 4.0
+permitsAppUse=true
+
+### RIGHTS `rights-ruwiki-boltraffio-149826784`
+
+- Objectives: none
+- Sessions: none
+- Source: src-ruwiki-boltraffio-149826784
+- Rights: rights-ruwiki-boltraffio-149826784
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: ea87051d3556b1e4be6dd540a6ca4329b9a29051b81b66d574b8531a92a7796a
+
+src-ruwiki-boltraffio-149826784
 CC BY-SA 4.0
 permitsAppUse=true
 
@@ -18085,12 +20538,19 @@ permitsAppUse=true
 - `obj-u29-punctuation` INSTRUCTION `u29-st-teach-punctuation-1`
 - `obj-u29-punctuation` INSTRUCTION `u29-st-teach-punctuation-2`
 - `obj-u29-punctuation` INSTRUCTION `u29-st-teach-punctuation-3`
+- `obj-u29-punctuation` INSTRUCTION `u29-st-teach-punctuation-4`
 - `obj-u29-punctuation` EXAMPLE `ex-u29-punctuation-0`
 - `obj-u29-punctuation` EXAMPLE `ex-u29-punctuation-1`
-- `obj-u29-punctuation` EXAMPLE `ex-u29-punctuation-2`
+- `obj-u29-punctuation` EXAMPLE `ex-u29-punctuation-context-after`
+- `obj-u29-punctuation` EXAMPLE `ex-u29-punctuation-context-pronoun`
+- `obj-u29-punctuation` EXAMPLE `ex-u29-punctuation-context-cause`
+- `obj-u29-punctuation` EXAMPLE `ex-u29-punctuation-context-terminal`
 - `obj-u29-punctuation` PRACTICE `u29-st-guided-punctuation-1`
 - `obj-u29-punctuation` CHECK `u29-i-punctuation-1`
-- `obj-u29-punctuation` CHECK `u29-i-punctuation-2`
+- `obj-u29-punctuation` CHECK `u29-i-punctuation-after`
+- `obj-u29-punctuation` CHECK `u29-i-punctuation-pronoun`
+- `obj-u29-punctuation` CHECK `u29-i-punctuation-cause`
+- `obj-u29-punctuation` CHECK `u29-i-punctuation-terminal`
 - `obj-u29-punctuation` REMEDIATION `u29-st-rem-punctuation`
 - `obj-u29-book` INSTRUCTION `u29-st-book-work`
 - `obj-u29-book` INSTRUCTION `u29-st-book`
@@ -18117,6 +20577,8 @@ permitsAppUse=true
 - `obj-u29-adjective-vocabulary` INSTRUCTION `u29-st-teach-short-adjective-1`
 - `obj-u29-adjective-vocabulary` INSTRUCTION `u29-st-teach-short-adjective-2`
 - `obj-u29-adjective-vocabulary` INSTRUCTION `u29-st-teach-short-adjective-3`
+- `obj-u29-punctuation-reference` INSTRUCTION `u29-st-teach-punctuation-3`
+- `obj-u29-punctuation-reference` EXAMPLE `ex-u29-punctuation-2`
 - `u29-s-orient` OBJECTIVE `obj-u29-active`
 - `u29-s-orient` OBJECTIVE `obj-u29-short-adjective`
 - `u29-s-orient` OBJECTIVE `obj-u29-bookish-note`
@@ -18202,16 +20664,26 @@ permitsAppUse=true
 - `u29-st-teach-punctuation-1` EXAMPLE `ex-u29-punctuation-1`
 - `u29-st-teach-punctuation-1` REFERENCE `ref-u2630-attribution`
 - `u29-st-teach-punctuation-2` REFERENCE `ref-u2630-attribution`
-- `u29-st-teach-punctuation-3` EXAMPLE `ex-u29-punctuation-2`
+- `u29-st-teach-punctuation-3` EXAMPLE `ex-u29-punctuation-context-pronoun`
+- `u29-st-teach-punctuation-3` EXAMPLE `ex-u29-punctuation-context-cause`
 - `u29-st-teach-punctuation-3` REFERENCE `ref-u2630-attribution`
+- `u29-st-teach-punctuation-4` EXAMPLE `ex-u29-punctuation-context-after`
+- `u29-st-teach-punctuation-4` EXAMPLE `ex-u29-punctuation-context-terminal`
+- `u29-st-teach-punctuation-4` REFERENCE `ref-u2630-attribution`
 - `u29-st-guided-punctuation-1` REMEDIATION `u29-st-rem-punctuation`
 - `u29-st-guided-punctuation-1` ITEM `u29-g-punctuation-0`
 - `u29-st-rem-punctuation` EXAMPLE `ex-u29-punctuation-0`
 - `u29-st-rem-punctuation` EXAMPLE `ex-u29-punctuation-1`
-- `u29-st-rem-punctuation` EXAMPLE `ex-u29-punctuation-2`
+- `u29-st-rem-punctuation` EXAMPLE `ex-u29-punctuation-context-pronoun`
+- `u29-st-rem-punctuation` EXAMPLE `ex-u29-punctuation-context-cause`
+- `u29-st-rem-punctuation` EXAMPLE `ex-u29-punctuation-context-after`
+- `u29-st-rem-punctuation` EXAMPLE `ex-u29-punctuation-context-terminal`
 - `u29-st-check-punctuation` REMEDIATION `u29-st-rem-punctuation`
 - `u29-st-check-punctuation` ITEM `u29-i-punctuation-1`
-- `u29-st-check-punctuation` ITEM `u29-i-punctuation-2`
+- `u29-st-check-punctuation` ITEM `u29-i-punctuation-after`
+- `u29-st-check-punctuation` ITEM `u29-i-punctuation-pronoun`
+- `u29-st-check-punctuation` ITEM `u29-i-punctuation-cause`
+- `u29-st-check-punctuation` ITEM `u29-i-punctuation-terminal`
 - `u29-s-book` OBJECTIVE `obj-u29-book`
 - `u29-st-book-work` REFERENCE `ref-u2630-attribution`
 - `u29-s-gap-register` OBJECTIVE `obj-u29-register`
@@ -18437,6 +20909,53 @@ permitsAppUse=true
 - `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-instruction-u29-s-short-adjective-7`
 - `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-instruction-u29-s-short-adjective-8`
 - `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-instruction-u29-s-short-adjective-9`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-punctuation-ex-u29-punctuation-context-after-note`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-punctuation-ex-u29-punctuation-context-cause-note`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-punctuation-ex-u29-punctuation-context-pronoun-note`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-punctuation-ex-u29-punctuation-context-terminal-note`
+- `obj-u29-punctuation-reference` PROVENANCE `prov-ca-u29-punctuation-obj-u29-punctuation-reference-title`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-punctuation-obj-u29-punctuation-title`
+- `obj-u29-punctuation-reference` PROVENANCE `prov-ca-u29-punctuation-reference-u29-st-teach-punctuation-3-body`
+- `obj-u29-punctuation-reference` PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-2-feedback`
+- `obj-u29-punctuation-reference` PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-2-prompt`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-after-0`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-after-1`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-after-2`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-after-3`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-after-feedback`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-after-prompt`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-after-rationale-1`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-after-rationale-2`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-cause-0`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-cause-1`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-cause-2`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-cause-3`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-cause-feedback`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-cause-prompt`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-cause-rationale-1`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-cause-rationale-2`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-pronoun-0`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-pronoun-1`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-pronoun-2`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-pronoun-3`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-pronoun-feedback`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-pronoun-prompt`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-pronoun-rationale-1`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-pronoun-rationale-2`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-terminal-0`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-terminal-1`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-terminal-2`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-terminal-3`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-terminal-feedback`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-terminal-prompt`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-terminal-rationale-1`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-punctuation-u29-i-punctuation-terminal-rationale-2`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-punctuation-u29-s-punctuation-title`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-punctuation-u29-st-rem-punctuation-body`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-punctuation-u29-st-teach-punctuation-3-body`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-punctuation-u29-st-teach-punctuation-3-title`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-punctuation-u29-st-teach-punctuation-4-body`
+- `obj-u29-punctuation` PROVENANCE `prov-ca-u29-punctuation-u29-st-teach-punctuation-4-title`
 - `obj-u29-active` PROVENANCE `prov-ca-u29-time-u29-i-active-2-0`
 - `obj-u29-active` PROVENANCE `prov-ca-u29-time-u29-i-active-2-1`
 - `obj-u29-active` PROVENANCE `prov-ca-u29-time-u29-i-active-2-2`
@@ -18580,6 +21099,30 @@ permitsAppUse=true
 - `obj-u29-short-adjective` PROVENANCE `prov-u29-adjective-native-train-ru`
 - `obj-u29-bookish-note` PROVENANCE `prov-u29-bookish-note-rem`
 - `obj-u29-bookish-note` PROVENANCE `prov-u29-bookish-note-x-0`
+- `obj-u29-punctuation` PROVENANCE `prov-u29-punctuation-native-after-head`
+- `obj-u29-punctuation` PROVENANCE `prov-u29-punctuation-native-after-region-1`
+- `obj-u29-punctuation` PROVENANCE `prov-u29-punctuation-native-after-region-2`
+- `obj-u29-punctuation` PROVENANCE `prov-u29-punctuation-native-after-ru`
+- `obj-u29-punctuation` PROVENANCE `prov-u29-punctuation-native-cause-head`
+- `obj-u29-punctuation` PROVENANCE `prov-u29-punctuation-native-cause-region-0`
+- `obj-u29-punctuation` PROVENANCE `prov-u29-punctuation-native-cause-region-1`
+- `obj-u29-punctuation` PROVENANCE `prov-u29-punctuation-native-cause-region-2`
+- `obj-u29-punctuation` PROVENANCE `prov-u29-punctuation-native-cause-ru`
+- `obj-u29-punctuation` PROVENANCE `prov-u29-punctuation-native-pronoun-boundary-bergognone`
+- `obj-u29-punctuation` PROVENANCE `prov-u29-punctuation-native-pronoun-head`
+- `obj-u29-punctuation` PROVENANCE `prov-u29-punctuation-native-pronoun-list-foppa`
+- `obj-u29-punctuation` PROVENANCE `prov-u29-punctuation-native-pronoun-region-0`
+- `obj-u29-punctuation` PROVENANCE `prov-u29-punctuation-native-pronoun-region-1`
+- `obj-u29-punctuation` PROVENANCE `prov-u29-punctuation-native-pronoun-region-2`
+- `obj-u29-punctuation` PROVENANCE `prov-u29-punctuation-native-pronoun-ru`
+- `obj-u29-punctuation` PROVENANCE `prov-u29-punctuation-native-terminal-head`
+- `obj-u29-punctuation` PROVENANCE `prov-u29-punctuation-native-terminal-region-0`
+- `obj-u29-punctuation` PROVENANCE `prov-u29-punctuation-native-terminal-region-1`
+- `obj-u29-punctuation` PROVENANCE `prov-u29-punctuation-native-terminal-ru`
+- `obj-u29-punctuation-reference` PROVENANCE `prov-u29-punctuation-reference-prov-ex-u29-punctuation-0-en`
+- `obj-u29-punctuation-reference` PROVENANCE `prov-u29-punctuation-reference-prov-ex-u29-punctuation-1-en`
+- `obj-u29-punctuation-reference` PROVENANCE `prov-u29-punctuation-reference-prov-ex-u29-punctuation-2-en`
+- `obj-u29-punctuation-reference` PROVENANCE `prov-u29-punctuation-reference-prov-ex-u29-punctuation-2-ru`
 - `obj-u29-punctuation` PROVENANCE `prov-u29-punctuation-rem`
 - `obj-u29-punctuation` PROVENANCE `prov-u29-punctuation-rem-r0`
 - `obj-u29-punctuation` PROVENANCE `prov-u29-punctuation-rem-r1`
@@ -18619,6 +21162,7 @@ permitsAppUse=true
 Guidance objectives stay unsupported until an admitted frozen capability exists:
 
 - `obj-u29-adjective-vocabulary` Optional Vocabulary Lab: supplied adjective meanings
+- `obj-u29-punctuation-reference` Optional source wording reference
 
 ## Book-directed register
 
@@ -18629,6 +21173,7 @@ Guidance objectives stay unsupported until an admitted frozen capability exists:
 ## Optional non-gating register
 
 - `obj-u29-adjective-vocabulary` Optional Vocabulary Lab: supplied adjective meanings
+- `obj-u29-punctuation-reference` Optional source wording reference
 
 ## Unavailable experiences
 

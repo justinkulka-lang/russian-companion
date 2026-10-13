@@ -23,19 +23,19 @@ Narrow checks, not comprehensive inspection: `itemsMarkedContainsGeneratedRussia
 | unitsLackingAdvancementRule | 0 |
 | unitsRequiringAudio | 2 |
 | unitsRequiringHandwritingAssets | 1 |
-| totalObjectives | 191 |
+| totalObjectives | 192 |
 | totalSessions | 228 |
-| totalInstructionSteps | 646 |
-| totalExamples | 806 |
+| totalInstructionSteps | 647 |
+| totalExamples | 810 |
 | totalGuidedPractice | 176 |
-| totalIndependentChecks | 427 |
+| totalIndependentChecks | 430 |
 | totalRemediationEdges | 157 |
-| totalProvenanceRecords | 6525 |
+| totalProvenanceRecords | 6596 |
 | totalAuthoredEnglishRecords | 1655 |
-| totalAdmittedSources | 120 |
-| totalRightsRecords | 120 |
-| distinctAdmittedSources | 32 |
-| distinctRightsRecords | 32 |
+| totalAdmittedSources | 122 |
+| totalRightsRecords | 122 |
+| distinctAdmittedSources | 34 |
+| distinctRightsRecords | 34 |
 | crossUnitSourceRecords | 9 |
 | totalSourceCapabilities | 58 |
 | totalResolvedSourceCapabilities | 58 |
@@ -46,24 +46,24 @@ Narrow checks, not comprehensive inspection: `itemsMarkedContainsGeneratedRussia
 | penguinProseAdmissionCount | 0 |
 | knownPenguinTitleMarkerMatches | 0 |
 | packagedAudioBoundToV2Units | 0 |
-| packagedExampleRecords | 807 |
-| reachableExampleRecords | 803 |
+| packagedExampleRecords | 811 |
+| reachableExampleRecords | 807 |
 | sharedExampleRecords | 3 |
 | exampleCrossUnitReferenceExcess | 3 |
-| exampleDuplicateUnitReferenceExcess | 1310 |
+| exampleDuplicateUnitReferenceExcess | 1316 |
 | orphanedExampleRecords | 4 |
 | orphanedExampleIds | ex-u30-letter-names-0, ex-u30-letter-names-1, ex-u4-verb-знать, ex-u4-verb-работать |
-| packagedCheckItems | 610 |
-| reachableCheckItems | 601 |
+| packagedCheckItems | 614 |
+| reachableCheckItems | 604 |
 | sharedCheckItems | 0 |
 | checkItemCrossUnitReferenceExcess | 0 |
-| checkItemDuplicateUnitReferenceExcess | 436 |
-| orphanedCheckItems | 9 |
-| orphanedCheckItemIds | u29-g-short-adjective-0, u29-i-short-adjective-1, u29-i-short-adjective-2, u30-g-abbrev-examples-0, u30-g-letter-names-0, u30-i-abbrev-examples-1, u30-i-abbrev-examples-2, u30-i-letter-names-1, u30-i-letter-names-2 |
+| checkItemDuplicateUnitReferenceExcess | 439 |
+| orphanedCheckItems | 10 |
+| orphanedCheckItemIds | u29-g-short-adjective-0, u29-i-punctuation-2, u29-i-short-adjective-1, u29-i-short-adjective-2, u30-g-abbrev-examples-0, u30-g-letter-names-0, u30-i-abbrev-examples-1, u30-i-abbrev-examples-2, u30-i-letter-names-1, u30-i-letter-names-2 |
 | internetPermissionDeclaredInMainManifest | ABSENT |
 | internetPermissionDeclaredInMergedDebugManifest | NOT_OBSERVED_IN_SOURCE_SNAPSHOT |
-| packContentReviewDigest | 0860ba87d95667f0bd13285fa30e3b7e51ea9d8444d97d47bdd193d5e3532e92 |
-| repositorySourceDigest | d54f21f257028bfc4ea1a864dd63a8a51cb3bbbbd2426146dd4298c831b3ff55 |
+| packContentReviewDigest | 7b8428298d5896c2c50ece4191bc39f87ddb45e07320fbdf3ff14d0e1ab97c88 |
+| repositorySourceDigest | bbb002d32acf65589119430185433a4d5777d15a83181f9a700f65bf1d9eda55 |
 | candidateFrozen | false |
 | candidateArtifact | NOT_RECORDED |
 | candidateSourceCommit | null |
@@ -75,7 +75,7 @@ Narrow checks, not comprehensive inspection: `itemsMarkedContainsGeneratedRussia
 | varianceProposalStatus | PROPOSED_NOT_ACTIVATED |
 | varianceResolutionStatus | PROPOSED_NOT_ACTIVATED |
 
-`totalExamples` and `totalIndependentChecks` sum unit rows. A row sum minus the count of shared records does not prove catalog coverage. `packagedExampleRecords` = `reachableExampleRecords` + `orphanedExampleRecords`. `exampleCrossUnitReferenceExcess` adds one for every unit beyond the first that references a record, so a record shared by three units contributes 2. `exampleDuplicateUnitReferenceExcess` counts repeated references to the same record inside one unit. The same identities apply to check items. Orphaned example ids: ex-u30-letter-names-0, ex-u30-letter-names-1, ex-u4-verb-знать, ex-u4-verb-работать. Orphaned check-item ids: u29-g-short-adjective-0, u29-i-short-adjective-1, u29-i-short-adjective-2, u30-g-abbrev-examples-0, u30-g-letter-names-0, u30-i-abbrev-examples-1, u30-i-abbrev-examples-2, u30-i-letter-names-1, u30-i-letter-names-2.
+`totalExamples` and `totalIndependentChecks` sum unit rows. A row sum minus the count of shared records does not prove catalog coverage. `packagedExampleRecords` = `reachableExampleRecords` + `orphanedExampleRecords`. `exampleCrossUnitReferenceExcess` adds one for every unit beyond the first that references a record, so a record shared by three units contributes 2. `exampleDuplicateUnitReferenceExcess` counts repeated references to the same record inside one unit. The same identities apply to check items. Orphaned example ids: ex-u30-letter-names-0, ex-u30-letter-names-1, ex-u4-verb-знать, ex-u4-verb-работать. Orphaned check-item ids: u29-g-short-adjective-0, u29-i-punctuation-2, u29-i-short-adjective-1, u29-i-short-adjective-2, u30-g-abbrev-examples-0, u30-g-letter-names-0, u30-i-abbrev-examples-1, u30-i-abbrev-examples-2, u30-i-letter-names-1, u30-i-letter-names-2.
 `totalAdmittedSources` and `totalRightsRecords` sum the unit rows. 9 admitted sources are referenced by more than one unit. `distinctAdmittedSources` and `distinctRightsRecords` count each shared source or rights record once.
 
 ## Blocker totals
@@ -121,7 +121,7 @@ Narrow checks, not comprehensive inspection: `itemsMarkedContainsGeneratedRussia
 | 26 | Indefinite pronouns, word order, and letter writing | DEVELOPMENT | CONTENT_COMPLETE_REVIEW_PENDING | PENDING_CURRICULUM_REVIEWER | IMPLEMENTED_PENDING_FINAL_AUDIT | ABSENT | ABSENT | ABSENT | 7870405b2810239e5e744706b0376877191d00afc337ac30e7a2249ad97fddab | c15db22cc82dcfa6c49d6d0e50beea0f90b16dfc4db90777623e99d540790489 | 72034166355fc1ba567a4caa64db7c908d9c523ed7e2f3d618e45e9653a14e99 | 4f5cb8024d3f68a37052fdf85b5755bffa2a0904 | 8 | 9 | 22 | 20 | 7 | 23 | 7 | PRESENT | YES | 3 | 0 | 398 | 101 | 6 | 6 | 5 | 5 | NONE | 0 | 0 | NONE | PENDING_FINAL_AUDIT, MISSING_REVIEWER_IDENTITY, MISSING_QUALIFICATION, MISSING_MATCHING_REVIEWED_DIGEST, REACHABLE_LINGUISTIC_RECORD_NOT_APPROVED | PENDING_MAPPING, MISSING_EDITION_ISBN, MISSING_OWNED_COPY_VERIFICATION, MISSING_VARIANCE_OR_COVERAGE_DISPOSITION | NONE | NONE | NOT_APPLICABLE | YES | RECORDED_STATE;install=DEVELOPMENT;readiness=CONTENT_COMPLETE_REVIEW_PENDING;review=IMPLEMENTED_PENDING_FINAL_AUDIT;mapping=PENDING_CURRICULUM_REVIEWER;advancement=YES;categories=LINGUISTIC_REVIEW+OWNED_EDITION_MAPPING |
 | 27 | Participles: types and stress | DEVELOPMENT | CONTENT_COMPLETE_REVIEW_PENDING | PENDING_CURRICULUM_REVIEWER | IMPLEMENTED_PENDING_FINAL_AUDIT | ABSENT | ABSENT | ABSENT | fb8a23246226a841df660cae2517b139cba2ff51ef5939792268d2c6cb50bc2e | 3924f3a8ac211579b4db3e387cb48632d27e9b41925e227b63b004bf652a3bc0 | e1607fe23cb8f2e8bbc35c9a76a49b3895992b109075052c61b8daeab4e0e941 | 4f5cb8024d3f68a37052fdf85b5755bffa2a0904 | 6 | 7 | 14 | 15 | 5 | 11 | 4 | PRESENT | YES | 3 | 0 | 317 | 61 | 7 | 7 | 3 | 3 | NONE | 0 | 0 | NONE | PENDING_FINAL_AUDIT, MISSING_REVIEWER_IDENTITY, MISSING_QUALIFICATION, MISSING_MATCHING_REVIEWED_DIGEST, REACHABLE_LINGUISTIC_RECORD_NOT_APPROVED | PENDING_MAPPING, MISSING_EDITION_ISBN, MISSING_OWNED_COPY_VERIFICATION, MISSING_VARIANCE_OR_COVERAGE_DISPOSITION | NONE | NONE | ACTIVATED | YES | RECORDED_STATE;install=DEVELOPMENT;readiness=CONTENT_COMPLETE_REVIEW_PENDING;review=IMPLEMENTED_PENDING_FINAL_AUDIT;mapping=PENDING_CURRICULUM_REVIEWER;advancement=YES;categories=LINGUISTIC_REVIEW+OWNED_EDITION_MAPPING |
 | 28 | Verbal adverbs | DEVELOPMENT | CONTENT_COMPLETE_REVIEW_PENDING | PENDING_CURRICULUM_REVIEWER | IMPLEMENTED_PENDING_FINAL_AUDIT | ABSENT | ABSENT | ABSENT | d8df059f618e932eb0e77579113fea17db317584e77bef5a10dda3e82f70d402 | 0fb9199bfef05acc54935be340710bd53e19fcd6066349300e09c29fb4b035e8 | a4132204cbd12285cf157a29f2fb6bd28d03404145ae1fe830de9b93953236ad | 4f5cb8024d3f68a37052fdf85b5755bffa2a0904 | 4 | 5 | 10 | 7 | 3 | 6 | 3 | PRESENT | YES | 3 | 0 | 375 | 50 | 3 | 3 | 3 | 3 | NONE | 0 | 0 | NONE | PENDING_FINAL_AUDIT, MISSING_REVIEWER_IDENTITY, MISSING_QUALIFICATION, MISSING_MATCHING_REVIEWED_DIGEST, REACHABLE_LINGUISTIC_RECORD_NOT_APPROVED | PENDING_MAPPING, MISSING_EDITION_ISBN, MISSING_OWNED_COPY_VERIFICATION, MISSING_VARIANCE_OR_COVERAGE_DISPOSITION | NONE | NONE | NOT_APPLICABLE | YES | RECORDED_STATE;install=DEVELOPMENT;readiness=CONTENT_COMPLETE_REVIEW_PENDING;review=IMPLEMENTED_PENDING_FINAL_AUDIT;mapping=PENDING_CURRICULUM_REVIEWER;advancement=YES;categories=LINGUISTIC_REVIEW+OWNED_EDITION_MAPPING |
-| 29 | Bookish style, active participles, punctuation, and short-form adjectives | DEVELOPMENT | CONTENT_COMPLETE_REVIEW_PENDING | PENDING_CURRICULUM_REVIEWER | IMPLEMENTED_PENDING_FINAL_AUDIT | ABSENT | ABSENT | ABSENT | b35528e0a8ca27fed0fe18541aab59755d6adcad90a7ccaae86c1f8318ab9374 | a7ebe370698a0dffe4f0311ccfbfff6f217171ffab7dda232447d4b62e2b4071 | 73eeb58d502dc27b52246f6c92bc52b4e8847ccce1c429806d28a18701d07639 | 73a40c14b8afb01b521bddf24179c3454f0bae04 | 8 | 8 | 21 | 24 | 10 | 21 | 6 | PRESENT | YES | 3 | 0 | 347 | 97 | 5 | 5 | 5 | 5 | NONE | 0 | 0 | NONE | PENDING_FINAL_AUDIT, MISSING_REVIEWER_IDENTITY, MISSING_QUALIFICATION, MISSING_MATCHING_REVIEWED_DIGEST, REACHABLE_LINGUISTIC_RECORD_NOT_APPROVED | PENDING_MAPPING, MISSING_EDITION_ISBN, MISSING_OWNED_COPY_VERIFICATION, MISSING_VARIANCE_OR_COVERAGE_DISPOSITION | NONE | NONE | ACTIVATED | YES | RECORDED_STATE;install=DEVELOPMENT;readiness=CONTENT_COMPLETE_REVIEW_PENDING;review=IMPLEMENTED_PENDING_FINAL_AUDIT;mapping=PENDING_CURRICULUM_REVIEWER;advancement=YES;categories=LINGUISTIC_REVIEW+OWNED_EDITION_MAPPING |
+| 29 | Bookish style, active participles, punctuation, and short-form adjectives | DEVELOPMENT | CONTENT_COMPLETE_REVIEW_PENDING | PENDING_CURRICULUM_REVIEWER | IMPLEMENTED_PENDING_FINAL_AUDIT | ABSENT | ABSENT | ABSENT | 454026c94347703fa15b6e305bf4319edcc1542e6a9eb786709186b435753501 | a7ebe370698a0dffe4f0311ccfbfff6f217171ffab7dda232447d4b62e2b4071 | 2d3a8b3cdf53c88aab9cf389a8750cab1146ba02ca3d5ee47a4690ab8353446f | 3761263941eb500b0d542df5c2c18d80146fcbb4 | 9 | 8 | 22 | 28 | 10 | 24 | 6 | PRESENT | YES | 3 | 0 | 418 | 97 | 7 | 7 | 5 | 5 | NONE | 0 | 0 | NONE | PENDING_FINAL_AUDIT, MISSING_REVIEWER_IDENTITY, MISSING_QUALIFICATION, MISSING_MATCHING_REVIEWED_DIGEST, REACHABLE_LINGUISTIC_RECORD_NOT_APPROVED | PENDING_MAPPING, MISSING_EDITION_ISBN, MISSING_OWNED_COPY_VERIFICATION, MISSING_VARIANCE_OR_COVERAGE_DISPOSITION | NONE | NONE | ACTIVATED | YES | RECORDED_STATE;install=DEVELOPMENT;readiness=CONTENT_COMPLETE_REVIEW_PENDING;review=IMPLEMENTED_PENDING_FINAL_AUDIT;mapping=PENDING_CURRICULUM_REVIEWER;advancement=YES;categories=LINGUISTIC_REVIEW+OWNED_EDITION_MAPPING |
 | 30 | Abbreviations, names of Russian letters, and particles | DEVELOPMENT | CONTENT_COMPLETE_REVIEW_PENDING | PENDING_CURRICULUM_REVIEWER | IMPLEMENTED_PENDING_FINAL_AUDIT | ABSENT | ABSENT | ABSENT | 9e453a1050dc3a25959271b300c68c64bb293ba9f34a40a9d76aaf3e0ce3f02e | 97f4c8beeb1d0e6827b94bedc1e379381c763c2c3522013890b75802630440a2 | f2c5e63a6b86d782c8bd055dac04923789909962aa6f1423208f5635aef354c8 | a2d7a2f62645aa6a95f7dd69590f7e61eb8b38b2 | 9 | 9 | 21 | 22 | 7 | 17 | 7 | PRESENT | YES | 3 | 0 | 298 | 113 | 7 | 7 | 5 | 5 | NONE | 0 | 0 | NONE | PENDING_FINAL_AUDIT, MISSING_REVIEWER_IDENTITY, MISSING_QUALIFICATION, MISSING_MATCHING_REVIEWED_DIGEST, REACHABLE_LINGUISTIC_RECORD_NOT_APPROVED | PENDING_MAPPING, MISSING_EDITION_ISBN, MISSING_OWNED_COPY_VERIFICATION, MISSING_VARIANCE_OR_COVERAGE_DISPOSITION | NONE | NONE | ACTIVATED | YES | RECORDED_STATE;install=DEVELOPMENT;readiness=CONTENT_COMPLETE_REVIEW_PENDING;review=IMPLEMENTED_PENDING_FINAL_AUDIT;mapping=PENDING_CURRICULUM_REVIEWER;advancement=YES;categories=LINGUISTIC_REVIEW+OWNED_EDITION_MAPPING |
 
 ## Next development sequence
