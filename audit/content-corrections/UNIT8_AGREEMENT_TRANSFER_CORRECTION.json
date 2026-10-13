@@ -1,0 +1,497 @@
+{
+  "baselineCommit": "2f06e472876d5248a403b8f523305918afca65fa",
+  "beforeSha256": "7c83fd536aad5d397d290beb7f052bf3c5a41004aca493369c727c3164f261d3",
+  "afterSha256": "eb445ead5e09404679fa0bcabed26c350dae3112744df22d6c50dbaa2ef0f378",
+  "changes": [
+    {
+      "before": {
+        "id": "u8-i-agreement-3",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which plural nominative form of the same adjective corresponds to the shown form?",
+        "promptLetter": "но́вый",
+        "options": [
+          "но́вые",
+          "но́вый"
+        ],
+        "answer": "но́вые",
+        "feedback": "но́вый is the masculine singular nominative form; но́вые is the plural nominative form of the same adjective.",
+        "objectiveId": "obj-u8-agreement",
+        "sourceId": "src-openrussian-50e210c4",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "но́вый is the masculine singular nominative form, so it does not supply the requested plural nominative form."
+        ],
+        "assessment": {
+          "testedFeature": "PLURAL_AGREEMENT",
+          "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+          "contrastSetId": "u8-agreement-3",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-or-u8-agreement-5"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-or-u8-agreement-4"
+          ],
+          "distractorDifference": [
+            "",
+            "но́вый is the masculine singular nominative form, so it does not supply the requested plural nominative form."
+          ],
+          "whyAnswerDemonstratesObjective": "но́вый is the masculine singular nominative form; но́вые is the plural nominative form of the same adjective.",
+          "contrastMembers": [
+            "но́вые",
+            "но́вый"
+          ],
+          "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+          "relationParticipantIds": [
+            "prov-ex-or-u8-agreement-4",
+            "prov-ex-or-u8-agreement-5",
+            "prov-ex-or-u8-agreement-4"
+          ]
+        }
+      },
+      "after": {
+        "id": "u8-i-agreement-3",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which plural nominative form of the same adjective corresponds to the shown form?",
+        "promptLetter": "синий",
+        "options": [
+          "синие",
+          "синий"
+        ],
+        "answer": "синие",
+        "feedback": "синий is the supplied masculine singular nominative form; синие is the plural nominative form of the same dark-blue adjective. In the retained nominative example синие книги, the modifier is plural. The source supplies these words without written stress; this check recognizes this pair, not every adjective ending or case.",
+        "objectiveId": "obj-u8-agreement",
+        "sourceId": "src-content-audit-research",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "синий is the supplied masculine singular form, so it does not provide the requested plural nominative form."
+        ],
+        "assessment": {
+          "testedFeature": "PLURAL_AGREEMENT",
+          "evidenceMode": "STATED_APPLICATION",
+          "contrastSetId": "u8-i-agreement-3",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ca-u8-agreement-transfer-u8-i-agreement-3-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ca-u8-agreement-transfer-u8-i-agreement-3-2"
+          ],
+          "distractorDifference": [
+            "",
+            "синий is the supplied masculine singular form, so it does not provide the requested plural nominative form."
+          ],
+          "whyAnswerDemonstratesObjective": "синий is the supplied masculine singular nominative form; синие is the plural nominative form of the same dark-blue adjective. In the retained nominative example синие книги, the modifier is plural. The source supplies these words without written stress; this check recognizes this pair, not every adjective ending or case.",
+          "contrastMembers": [
+            "синие",
+            "синий"
+          ],
+          "relationKind": "STATED_APPLICATION",
+          "relationParticipantIds": [
+            "prov-ca-u8-agreement-transfer-u8-i-agreement-3-0",
+            "prov-ca-u8-agreement-transfer-u8-i-agreement-3-1",
+            "prov-ca-u8-agreement-transfer-u8-i-agreement-3-2"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "obj-u8-agreement",
+        "unitNumber": 8,
+        "title": "Choose the admitted plural agreement form",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u8-st-orient",
+          "u8-st-teach-agreement-1",
+          "u8-st-teach-agreement-2",
+          "u8-st-teach-agreement-3",
+          "u8-st-teach-agreement-4",
+          "u8-st-teach-agreement-5"
+        ],
+        "exampleIds": [
+          "ex-u8-agreement-0",
+          "ex-u8-agreement-1",
+          "ex-or-u8-agreement-2",
+          "ex-or-u8-agreement-3",
+          "ex-or-u8-agreement-4",
+          "ex-or-u8-agreement-5",
+          "ex-or-u8-agreement-6",
+          "ex-or-u8-agreement-7"
+        ],
+        "practiceStepIds": [
+          "u8-st-guided-agreement-1"
+        ],
+        "checkItemIds": [
+          "u8-i-agreement-1",
+          "u8-i-agreement-2",
+          "u8-i-agreement-3"
+        ],
+        "remediationStepIds": [
+          "u8-st-rem-agreement"
+        ]
+      },
+      "after": {
+        "id": "obj-u8-agreement",
+        "unitNumber": 8,
+        "title": "Choose the admitted plural agreement form",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u8-st-orient",
+          "u8-st-teach-agreement-1",
+          "u8-st-teach-agreement-2",
+          "u8-st-teach-agreement-3",
+          "u8-st-teach-agreement-4",
+          "u8-st-teach-agreement-5",
+          "u8-st-teach-agreement-6"
+        ],
+        "exampleIds": [
+          "ex-u8-agreement-0",
+          "ex-u8-agreement-1",
+          "ex-or-u8-agreement-2",
+          "ex-or-u8-agreement-3",
+          "ex-or-u8-agreement-4",
+          "ex-or-u8-agreement-5",
+          "ex-or-u8-agreement-6",
+          "ex-or-u8-agreement-7"
+        ],
+        "practiceStepIds": [
+          "u8-st-guided-agreement-1"
+        ],
+        "checkItemIds": [
+          "u8-i-agreement-1",
+          "u8-i-agreement-2",
+          "u8-i-agreement-3"
+        ],
+        "remediationStepIds": [
+          "u8-st-rem-agreement"
+        ]
+      }
+    },
+    {
+      "before": {
+        "id": "u8-s-agreement",
+        "title": "Choose the admitted plural agreement form",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u8-agreement"
+        ],
+        "steps": [
+          {
+            "id": "u8-st-teach-agreement-1",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "синие книги — the dark blue books. Наши — Our. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-u8-agreement-0",
+              "ex-u8-agreement-1"
+            ]
+          },
+          {
+            "id": "u8-st-guided-agreement-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u8-g-agreement-0"
+            ],
+            "remediationStepId": "u8-st-rem-agreement"
+          },
+          {
+            "id": "u8-st-teach-agreement-2",
+            "kind": "TEACH",
+            "title": "Admitted instruction",
+            "body": "the dark blue books - '''синие книги'''",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ]
+          },
+          {
+            "id": "u8-st-teach-agreement-3",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "мо́й — my. мои́ — my. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u8-agreement-2",
+              "ex-or-u8-agreement-3"
+            ]
+          },
+          {
+            "id": "u8-st-teach-agreement-4",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "но́вый — new. но́вые — new. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u8-agreement-4",
+              "ex-or-u8-agreement-5"
+            ]
+          },
+          {
+            "id": "u8-st-teach-agreement-5",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "э́та — this. э́ти — this. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u8-agreement-6",
+              "ex-or-u8-agreement-7"
+            ]
+          },
+          {
+            "id": "u8-st-rem-agreement",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": "the dark blue books - '''синие книги'''",
+            "exampleIds": [
+              "ex-u8-agreement-0",
+              "ex-u8-agreement-1"
+            ]
+          },
+          {
+            "id": "u8-st-check-agreement",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u8-i-agreement-1",
+              "u8-i-agreement-2",
+              "u8-i-agreement-3"
+            ],
+            "remediationStepId": "u8-st-rem-agreement"
+          }
+        ]
+      },
+      "after": {
+        "id": "u8-s-agreement",
+        "title": "Choose the admitted plural agreement form",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u8-agreement"
+        ],
+        "steps": [
+          {
+            "id": "u8-st-teach-agreement-1",
+            "kind": "TEACH",
+            "title": "Recognize the supplied plural modifiers",
+            "body": "синие книги — the dark blue books. Наши — Our. These supplied examples introduce plural modifiers or plural referents. This lesson asks you to recognize the listed form pairs; it does not demonstrate producing agreement for every noun or case.",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-u8-agreement-0",
+              "ex-u8-agreement-1"
+            ]
+          },
+          {
+            "id": "u8-st-teach-agreement-2",
+            "kind": "TEACH",
+            "title": "Read the adjective with its noun",
+            "body": "In the retained nominative example синие книги — the dark blue books, the adjective modifies a plural noun. The complete phrase provides the plural reading here; do not infer a universal noun-case interpretation from an isolated spelling.",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ]
+          },
+          {
+            "id": "u8-st-teach-agreement-3",
+            "kind": "TEACH",
+            "title": "Compare the possessive forms",
+            "body": "мо́й and мои́ both retain the meaning my. In the supplied fields, мо́й is masculine singular nominative and мои́ is plural nominative. The requested plural is a number distinction, not a different owner or a change of English meaning.",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u8-agreement-2",
+              "ex-or-u8-agreement-3"
+            ]
+          },
+          {
+            "id": "u8-st-teach-agreement-4",
+            "kind": "TEACH",
+            "title": "Work the guided adjective pair",
+            "body": "но́вый and но́вые both mean new. The supplied masculine singular nominative form is но́вый; the plural nominative is но́вые. Guided practice uses this pair. Recognize the whole form and requested number; this does not establish every case ending.",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u8-agreement-4",
+              "ex-or-u8-agreement-5"
+            ]
+          },
+          {
+            "id": "u8-st-teach-agreement-5",
+            "kind": "TEACH",
+            "title": "Compare the demonstrative forms",
+            "body": "э́та and э́ти both retain the meaning this. The supplied feminine singular nominative form is э́та; the plural nominative form is э́ти. These paired fields do not require a different English meaning or a plural form with a feminine-only gender.",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u8-agreement-6",
+              "ex-or-u8-agreement-7"
+            ]
+          },
+          {
+            "id": "u8-st-teach-agreement-6",
+            "kind": "TEACH",
+            "title": "Apply the distinction to a different adjective",
+            "body": "The retained nominative section supplies синий as the masculine singular form and синие in синие книги as the plural form of the same dark-blue adjective. This source prints these words without written stress; no stress mark is inserted. The independent adjective check uses this different lexeme and ending shape from the guided new/new-plural pair. Choose the supplied plural rather than repeat its singular form. These examples are bounded nominative recognition, not a rule that every adjective or every word with similar final letters changes identically.",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-u8-agreement-0"
+            ]
+          },
+          {
+            "id": "u8-st-guided-agreement-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u8-g-agreement-0"
+            ],
+            "remediationStepId": "u8-st-rem-agreement"
+          },
+          {
+            "id": "u8-st-rem-agreement",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": "синие книги — the dark blue books. Наши — Our. These supplied examples introduce plural modifiers or plural referents. This lesson asks you to recognize the listed form pairs; it does not demonstrate producing agreement for every noun or case.\n\nIn the retained nominative example синие книги — the dark blue books, the adjective modifies a plural noun. The complete phrase provides the plural reading here; do not infer a universal noun-case interpretation from an isolated spelling.\n\nмо́й and мои́ both retain the meaning my. In the supplied fields, мо́й is masculine singular nominative and мои́ is plural nominative. The requested plural is a number distinction, not a different owner or a change of English meaning.\n\nно́вый and но́вые both mean new. The supplied masculine singular nominative form is но́вый; the plural nominative is но́вые. Guided practice uses this pair. Recognize the whole form and requested number; this does not establish every case ending.\n\nэ́та and э́ти both retain the meaning this. The supplied feminine singular nominative form is э́та; the plural nominative form is э́ти. These paired fields do not require a different English meaning or a plural form with a feminine-only gender.\n\nThe retained nominative section supplies синий as the masculine singular form and синие in синие книги as the plural form of the same dark-blue adjective. This source prints these words without written stress; no stress mark is inserted. The independent adjective check uses this different lexeme and ending shape from the guided new/new-plural pair. Choose the supplied plural rather than repeat its singular form. These examples are bounded nominative recognition, not a rule that every adjective or every word with similar final letters changes identically.",
+            "exampleIds": [
+              "ex-u8-agreement-0",
+              "ex-u8-agreement-1",
+              "ex-or-u8-agreement-2",
+              "ex-or-u8-agreement-3",
+              "ex-or-u8-agreement-4",
+              "ex-or-u8-agreement-5",
+              "ex-or-u8-agreement-6",
+              "ex-or-u8-agreement-7"
+            ]
+          },
+          {
+            "id": "u8-st-check-agreement",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u8-i-agreement-1",
+              "u8-i-agreement-2",
+              "u8-i-agreement-3"
+            ],
+            "remediationStepId": "u8-st-rem-agreement"
+          }
+        ]
+      }
+    }
+  ],
+  "addedProvenanceIds": [
+    "prov-u8-agreement-transfer-native-singular",
+    "prov-u8-agreement-transfer-native-plural",
+    "prov-ca-u8-agreement-transfer-u8-i-agreement-3-0",
+    "prov-ca-u8-agreement-transfer-u8-i-agreement-3-1",
+    "prov-ca-u8-agreement-transfer-u8-i-agreement-3-2",
+    "prov-ca-u8-agreement-transfer-item-prompt",
+    "prov-ca-u8-agreement-transfer-item-feedback",
+    "prov-ca-u8-agreement-transfer-item-rationale",
+    "prov-ca-u8-agreement-transfer-teach-1-title",
+    "prov-ca-u8-agreement-transfer-teach-1-body",
+    "prov-ca-u8-agreement-transfer-teach-2-title",
+    "prov-ca-u8-agreement-transfer-teach-2-body",
+    "prov-ca-u8-agreement-transfer-teach-3-title",
+    "prov-ca-u8-agreement-transfer-teach-3-body",
+    "prov-ca-u8-agreement-transfer-teach-4-title",
+    "prov-ca-u8-agreement-transfer-teach-4-body",
+    "prov-ca-u8-agreement-transfer-teach-5-title",
+    "prov-ca-u8-agreement-transfer-teach-5-body",
+    "prov-ca-u8-agreement-transfer-teach-6-title",
+    "prov-ca-u8-agreement-transfer-teach-6-body",
+    "prov-ca-u8-agreement-transfer-remediation-body"
+  ],
+  "nativeSelections": [
+    {
+      "itemId": "prov-u8-agreement-transfer-native-singular",
+      "unitNumber": 8,
+      "objectiveId": "obj-u8-agreement",
+      "recordType": "meaning",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Adjectives?oldid=4292379",
+      "sourceRevision": "4292379",
+      "sourceRecordId": "adjectives-independent-blue:===Soft endings===\nOne rather rare exception to the above rules is if the adj",
+      "originalSourceText": "===Soft endings===\nOne rather rare exception to the above rules is if the adjective ends in the so-called 'soft' ending, '''-ний''', such as '''синий''' (dark blue). This doesn't conjugate like usual '''-ий''' endings, and instead has the following rules:\n# The ending is '''-ний''' when modifying a masculine noun. For example, the dark blue table - '''синий стол.'''\n# The ending is '''-няя''' ('nya-ah') when modifying feminine nouns. For example, the dark blue book - '''синяя книга'''\n# The ending is '''-нee''' ('nye-eh') when modifying neuter nouns. For example, the dark blue letter - '''синее письмо'''\n# The plural ending is '''-ние''' ('nee-ye'), as per usual. For example, the dark blue books - '''синие книги'''",
+      "shippedText": "синий",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "472f310b08dfe456837a47126e81dc2a40dc0c19551245589230eba3b43ce894",
+      "contentHash": "c65b1a8fccbf3115732e93bc6aa7ee896d431417c4f15282fa659e68025e469c",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "itemId": "prov-u8-agreement-transfer-native-plural",
+      "unitNumber": 8,
+      "objectiveId": "obj-u8-agreement",
+      "recordType": "meaning",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Adjectives?oldid=4292379",
+      "sourceRevision": "4292379",
+      "sourceRecordId": "adjectives-independent-blue:===Soft endings===\nOne rather rare exception to the above rules is if the adj",
+      "originalSourceText": "===Soft endings===\nOne rather rare exception to the above rules is if the adjective ends in the so-called 'soft' ending, '''-ний''', such as '''синий''' (dark blue). This doesn't conjugate like usual '''-ий''' endings, and instead has the following rules:\n# The ending is '''-ний''' when modifying a masculine noun. For example, the dark blue table - '''синий стол.'''\n# The ending is '''-няя''' ('nya-ah') when modifying feminine nouns. For example, the dark blue book - '''синяя книга'''\n# The ending is '''-нee''' ('nye-eh') when modifying neuter nouns. For example, the dark blue letter - '''синее письмо'''\n# The plural ending is '''-ние''' ('nee-ye'), as per usual. For example, the dark blue books - '''синие книги'''",
+      "shippedText": "синие",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "472f310b08dfe456837a47126e81dc2a40dc0c19551245589230eba3b43ce894",
+      "contentHash": "f6eb827345e7f8371429a0162da535ceaf5fecc606f5a4c7eeda5fa378cd1fd1",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    }
+  ],
+  "contextIdentities": {
+    "ca-rule-context:u8-i-agreement-3": {
+      "sourceHash": "c2531b0635bff7a90616ae33b160e6f91ff0e5afef0f3994d58f85de360372c0",
+      "applications": [
+        {
+          "cue": "синий",
+          "answer": "синие",
+          "distractors": [
+            "синий"
+          ]
+        }
+      ],
+      "objectiveId": "obj-u8-agreement"
+    }
+  },
+  "bibliography": "Complete retained Wikibooks Adjectives4292379, especially nominative/soft-ending examples for синий and синие книги; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor attribution. Exact unaccented source words selected with existing mechanical emphasis/link-label unfolding. No generated native morphology, apostrophe-to-accent conversion, new stress or punctuation, private Penguin prose, media or new source/rights declaration. Retain the original OpenRussian50e210c4803237779cb562bc1abcea529066031c guided new/new-plural pair and independent possessive/demonstrative pairs unchanged. The independent adjective now uses a distinct lexeme and ending shape from the guided adjective. Scope is recognition of these supplied nominative singular/plural pairs, not agreement production in arbitrary sentences, every case or a universal -ний/all-adjective/short-adjective algorithm. Broad and inaccurate original source claims about all adjectives, Latin-letter ending spelling, conjugation and short-form permanence/temporariness are not adopted; the source is preserved unchanged. All current teaching precedes guided practice; remediation restores every card/example. Independently authored English2026-10-13 within content-audit-2026-10-08. Qualified source/rights/linguistic acceptance pending.",
+  "nativePinCodeSha256": "45ed03a6c619fcb3c0781da1e0c74d6e1015c31989a1f91388a09f14c9be056c",
+  "frozenPublicSources": {
+    "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt": "9fc58c168fe33c428a4a9a665955dede2c19997a8fbf58042f207d282462e998"
+  },
+  "semanticAcceptance": false,
+  "productiveAgreementClaim": false,
+  "universalAdjectiveAlgorithmClaim": false
+}

@@ -66,6 +66,7 @@ internal object CompleteRuleContextPins {
         "ca-rule-context:u17-g-question-apple" to "9231fda6efc41c119d4d7a461fe3ceaf05624ea22d46932db105c24d1deb95c8",
         "ca-rule-context:u17-i-question-clock" to "1e08ca44ff016f4e586fce390cd4179327551136457884e4ba631968921554d5",
         "ca-rule-context:u17-i-question-book" to "2e97b3bb0ea7fe5acd37c9de42693036da3c226ca2348af65f4ef27d9737ea61",
+        "ca-rule-context:u8-i-agreement-3" to "c2531b0635bff7a90616ae33b160e6f91ff0e5afef0f3994d58f85de360372c0",
     )
     fun required(itemId: String) = hashes.containsKey("ca-rule-context:$itemId")
     private fun hash(value: String) = MessageDigest.getInstance("SHA-256").digest(value.toByteArray(Charsets.UTF_8))
@@ -88,6 +89,7 @@ internal object CompleteRuleContextPins {
     }
     fun itemMatches(pack: V2CurriculumPack, item: V2CheckItem): Boolean {
         val expectedObjective = when {
+            item.id == "u8-i-agreement-3" -> "obj-u8-agreement"
             item.id in setOf("u17-g-question-apple","u17-i-question-clock","u17-i-question-book") -> "obj-u17-clock"
             item.id in setOf("u29-i-punctuation-after", "u29-i-punctuation-pronoun", "u29-i-punctuation-cause", "u29-i-punctuation-terminal") -> "obj-u29-punctuation"
             item.id.startsWith("u20-") && "-direction-" in item.id -> "obj-u20-motion"

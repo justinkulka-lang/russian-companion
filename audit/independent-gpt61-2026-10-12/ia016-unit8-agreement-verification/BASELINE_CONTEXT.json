@@ -1,0 +1,9 @@
+{
+  "repositoryCommit": "2f06e472876d5248a403b8f523305918afca65fa",
+  "command": "source /workspace/setup/android-env.sh; ./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*Unit8AgreementTransferTest' --max-workers=4 --console=plain",
+  "tests": 1,
+  "failures": 1,
+  "errors": 0,
+  "skipped": 0,
+  "scope": "Baseline curriculum plus new diagnostic harness; original four answers first demonstrate the objective, then distinct independent adjective requirement fails."
+}

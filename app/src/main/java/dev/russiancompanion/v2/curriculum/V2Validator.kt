@@ -2653,6 +2653,9 @@ internal object V2Validator {
     private fun validateGovernedChecks(pack: V2CurriculumPack, unit: V2Unit, errors: MutableList<String>) {
         val generic = "Return to the explanation. Compare the shown form with the admitted record."
         unit.objectives.filter { it.kind == "RECOGNITION" }.forEach { objective ->
+            if (objective.id == "obj-u8-agreement" && !Unit8AgreementPins.matches(pack)) {
+                errors += "Objective ${objective.id} has no frozen distinct adjective application chain"
+            }
             if (objective.id == "obj-u17-clock" && !Unit17QuestionPins.matches(pack)) {
                 errors += "Objective ${objective.id} has no frozen distinct question application chain"
             }

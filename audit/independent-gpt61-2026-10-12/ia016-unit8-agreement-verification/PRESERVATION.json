@@ -1,0 +1,29 @@
+{
+  "baselineCommit": "2f06e472876d5248a403b8f523305918afca65fa",
+  "oldProvenanceRecords": 6638,
+  "newPendingRecords": 21,
+  "newPrimaryNativeSelections": 2,
+  "newEnglishContextCoverageRecords": 19,
+  "allPriorProvenanceUnchanged": true,
+  "all58CapabilitiesAndSourcesRightsMappingsUnchanged": true,
+  "allOriginalExamplesUnchanged": true,
+  "allOtherUnitsUnchanged": true,
+  "allOtherItemsAndCorrectGuidedPossessiveDemonstrativeFieldsUnchanged": true,
+  "all61PriorCanonicalPinsUnchanged": true,
+  "newPins": 1,
+  "oneIndependentAdjectiveReplaced": true,
+  "noItemsExamplesObjectivesRemoved": true,
+  "sixTeachingCardsBeforePracticeAndCompleteRemediation": true,
+  "nativeSourceWordsUnchangedAndNoStressInserted": true,
+  "deterministicBaselineReplay": true,
+  "nativePinCodeReplayByteIdentical": true,
+  "byteIdempotent": true,
+  "allNineOriginalDiagnosticDeliverableHashesUnchanged": true,
+  "rawCurriculumSha256": "eb445ead5e09404679fa0bcabed26c350dae3112744df22d6c50dbaa2ef0f378",
+  "frozenPublicSources": {
+    "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt": "9fc58c168fe33c428a4a9a665955dede2c19997a8fbf58042f207d282462e998"
+  },
+  "semanticAcceptance": false,
+  "productiveAgreementClaim": false,
+  "universalAdjectiveAlgorithmClaim": false
+}
