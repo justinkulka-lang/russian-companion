@@ -11,12 +11,12 @@ Unit 9 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 8e5db89c56d9421a6efcffa6f0a14c0f0b6c042a
-- Unit content-review SHA-256: 8e120de84a4f0bb226508412b6b494dafbb08b8622b7ec6662d2fd2cb3523db1
+- Curriculum source commit: 3fcf287f2118e51f39d4c339f9a06bc526fbe57b
+- Unit content-review SHA-256: 709cbd16859649f7b9b205f009b570062d0ec9ad0481d040ebb3c03cd4967540
 - Mapping-package SHA-256: 44199859a34f129c83c22e0e058e305784913077a569025b871abdd1a6a707bf
-- Pack content-review SHA-256: cbcb933333bfaef0bad3a73f79386e7fd55845e6111be58209a0c2a7b80cafd9
-- Review-package SHA-256: 08c7003dd0f4cc29a0cb05a39d5e51f4c34cde632d576fed5e98fee8c9cd2870
-- Repository source SHA-256: 99300eba8269e73d33f334de52912f6248802ec4b89add28a112e221e5019fd1
+- Pack content-review SHA-256: 7e0bd4402ea9085cb686419f5881f6f6ba239152bcc46b8cbf0bb53aee4c95df
+- Review-package SHA-256: f4242b8a9c17b7f5582f62d0eb8494156cd1ecf778f3d2c7440db5dbf8020bc9
+- Repository source SHA-256: 9c79a564ed0340eef8fb0e56bcee07139a2c700f2897c46e04c70dec7817de3f
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -1364,12 +1364,12 @@ remediationStepId=u9-st-rem-thousands
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 9178f65761ffba18d78d729b7e68fab44061167b60f1b149286d2221cc16e78d
+- Content hash: 6610f18b657a2fc1083099b9d0f76430eef8ef534339a2bf93a34e15b5d9e295
 
 title=Choose the admitted form of one or two
 estimatedMinutes=12
 objectives=obj-u9-odindva
-steps=u9-st-teach-odindva-1,u9-st-guided-odindva-1,u9-st-teach-odindva-2,u9-st-teach-odindva-3,u9-st-teach-odindva-4,u9-st-teach-odindva-5,u9-st-teach-odindva-6,u9-st-rem-odindva,u9-st-check-odindva
+steps=u9-st-teach-odindva-1,u9-st-teach-odindva-2,u9-st-teach-odindva-3,u9-st-teach-odindva-4,u9-st-teach-odindva-5,u9-st-teach-odindva-6,u9-st-guided-odindva-1,u9-st-rem-odindva,u9-st-check-odindva
 
 ### STEP `u9-st-teach-odindva-1`
 
@@ -1379,11 +1379,11 @@ steps=u9-st-teach-odindva-1,u9-st-guided-odindva-1,u9-st-teach-odindva-2,u9-st-t
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8a8dd60236b5b985f9903864c280e36e318c8b4184bec624970b4646af5ea67d
+- Content hash: c1889cb1a1891fa348bb127ce60795238b92d940af1ec1a677c7fb8ce88c616c
 
 kind=TEACH
-title=Admitted lines
-body=один мальчик — one boy. одна девушка — one girl. 
+title=Choose one by gender
+body=один мальчик — one boy; одна девушка — one girl. For these singular counting examples, one agrees with the noun: masculine один and feminine одна. Both still mean one. Guided practice uses мальчик.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1393,28 +1393,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u9-st-guided-odindva-1`
-
-- Objectives: obj-u9-odindva
-- Sessions: u9-s-odindva
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 4127a07a16ef0a79fca27a93ed707a99f7c522a7904740e00fa7e14ab6164779
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u9-g-odindva-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u9-st-rem-odindva
-
 ### STEP `u9-st-teach-odindva-2`
 
 - Objectives: obj-u9-odindva
@@ -1423,11 +1401,11 @@ remediationStepId=u9-st-rem-odindva
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e600f021596ead125792ccce0d2abdcb9316c8cc354b9e965a826a0744a167f2
+- Content hash: 43be7972ab5f1e8e66e053b51be2412b78ca0dede8f6e08ab0c9ffb5bf8ef476
 
 kind=TEACH
-title=Admitted instruction
-body=The numeral два has two forms: два for masculine and neuter items and две for feminine items.
+title=Choose the form of two
+body=два is the form for masculine and neuter counted nouns; две is the feminine form. The supplied example две девушки — two girls uses feminine две. The following noun is genitive singular in this counting construction; the numeral choice still follows its gender.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1445,11 +1423,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 32b8d5450cb658be1971c5daa9fa95dcd097ad9a19c72e6976d68f7da03fba93
+- Content hash: d59b5d6e1574c125efba7826e01faf10948f96898970bc37a95d8d441e3f80fb
 
 kind=TEACH
-title=Admitted lines
-body=одно животное — one animal. одни джинсы — one [pair of] jeans. 
+title=Recognize neuter and plural-form one
+body=одно животное — one animal uses neuter singular одно. одни джинсы — one [pair of] jeans uses plural одни with the plural-form noun. The plural numeral here does not mean several pairs; these are different gender/number forms of one.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1467,11 +1445,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b26e94d3fd93217404654e5f746d334dd1e7897a8a19abf84e62b9ae80a80a0c
+- Content hash: f1b3a89b3487435528e4ec4e66ea1f5a1e07f4c0311fa6e97be93f97af7d9e9a
 
 kind=TEACH
-title=Admitted lines
-body=одна́ — 1. одно́ — 1. 
+title=Keep the value while changing agreement
+body=одна́ and одно́ both represent 1 in the retained cardinal table. They are feminine and neuter singular forms, respectively. The existing table stress is retained; the separate counting examples are printed without added stress.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1489,11 +1467,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e043cd124984f3b9b62cb7d4c1f41eafc83cf4c220f0db2f8fa1f729b91b54ce
+- Content hash: 590cd22df5a9efc633dd7964eaef680e266dda5ea0edda152c226802b25a0b5d
 
 kind=TEACH
-title=Admitted lines
-body=одни́ — 1. две — 2. 
+title=Distinguish plural one from feminine two
+body=одни́ represents 1 in the supplied plural-form example, while две represents 2 with a feminine noun. Distinguish одни джинсы from две девушки by the complete supplied construction, rather than treating every plural-looking form as two.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1511,11 +1489,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: f14c2140a01ec6bf4bef16c1a5b33820001a803d96c9851901f9f517d733f77d
+- Content hash: 698d0db03c313b388b33491ccc32c2332fe1263e525a676866e84c1a22b6ab99
 
 kind=TEACH
-title=Admitted lines
-body=оди́н — one. два — two. 
+title=Apply masculine one to a different noun
+body=оди́н — one and два — two retain their supplied values. The additional source example один час supplies masculine singular один with час. The independent masculine check uses this different noun from guided мальчик. Choose один rather than feminine одна for час in this counting context; this is supplied-form recognition, not all numeral cases or unrestricted sentence production.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1525,6 +1503,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u9-st-guided-odindva-1`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-odindva
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 876d81d130310a94bddceef4bacb184dabda7f3930959a066ae16f57a6905a3a
+
+kind=GUIDED
+title=Guided practice
+body=Choose the form of one that agrees with the shown noun in the supplied counting example.
+dominantAction=Continue
+references=
+items=u9-g-odindva-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u9-st-rem-odindva
+
 ### STEP `u9-st-rem-odindva`
 
 - Objectives: obj-u9-odindva
@@ -1533,15 +1533,25 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 683d79141c7d489d403f920160b3f96e266058321ff838994ee53ea58865c237
+- Content hash: aaa7f34a7ca8818c12a03151c3cb795dba13e6db5f8741eb9cf2f217e89e9270
 
 kind=REMEDIATE
 title=Remediation
-body=The numeral два has two forms: два for masculine and neuter items and две for feminine items.
+body=один мальчик — one boy; одна девушка — one girl. For these singular counting examples, one agrees with the noun: masculine один and feminine одна. Both still mean one. Guided practice uses мальчик.
+
+два is the form for masculine and neuter counted nouns; две is the feminine form. The supplied example две девушки — two girls uses feminine две. The following noun is genitive singular in this counting construction; the numeral choice still follows its gender.
+
+одно животное — one animal uses neuter singular одно. одни джинсы — one [pair of] jeans uses plural одни with the plural-form noun. The plural numeral here does not mean several pairs; these are different gender/number forms of one.
+
+одна́ and одно́ both represent 1 in the retained cardinal table. They are feminine and neuter singular forms, respectively. The existing table stress is retained; the separate counting examples are printed without added stress.
+
+одни́ represents 1 in the supplied plural-form example, while две represents 2 with a feminine noun. Distinguish одни джинсы from две девушки by the complete supplied construction, rather than treating every plural-looking form as two.
+
+оди́н — one and два — two retain their supplied values. The additional source example один час supplies masculine singular один with час. The independent masculine check uses this different noun from guided мальчик. Choose один rather than feminine одна for час in this counting context; this is supplied-form recognition, not all numeral cases or unrestricted sentence production.
 dominantAction=Continue
 references=
 items=
-examples=ex-u9-odindva-0,ex-u9-odindva-1
+examples=ex-u9-odindva-0,ex-u9-odindva-1,ex-u9-odindva-2,ex-u9-odindva-3,ex-u9-odindva-4,ex-u9-odindva-5,ex-u9-odindva-6,ex-u9-odindva-7,ex-or-u9-odindva-8,ex-or-u9-odindva-9
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1555,11 +1565,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a6a9151cf904cdb67d0721f20dea081d9e4c78418ff5272309d3f22118a0dd7d
+- Content hash: e5794ec957798283e7c25ee358a452adf5d5e44bd27cbf180e723755cf25e693
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Choose the supplied form of one or two for the noun and counting context. A missed check returns to the complete explanation.
 dominantAction=Continue
 references=
 items=u9-i-odindva-1,u9-i-odindva-2,u9-i-odindva-3,u9-i-odindva-4,u9-i-odindva-5
@@ -4550,35 +4560,36 @@ relationParticipantIds=prov-u9-odindva-x-3 | prov-u9-odindva-x-7 | prov-u9-odind
 
 - Objectives: obj-u9-odindva
 - Sessions: u9-s-odindva
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 1fa772a9e5059599bac6bafb33b874e06c54e41a8410a9310c8de6adcfc02d7f
+- Content hash: c85b083f838e62735090ac00a24079ecc19d0c31c54d8eea5039eab1a96ef3dc
 
 kind=CONTRAST_SELECTION
 language=en
 prompt=Which admitted form agrees with the shown word?
-promptLetter=мальчик
+promptLetter=час
 options=один | одна
 answer=один
-feedback=один is the masculine singular form of one and agrees with the shown word for boy in this example. одна is feminine singular instead. Match the grammatical gender of the noun in the retained counting phrase.
+feedback=The supplied example один час uses masculine singular один with час. одна is the feminine singular form shown with девушка, so it does not agree with this noun here. Both forms mean one; the distinction is grammatical gender, not a different number. This recognizes the supplied counting form, not every declined case of the numeral.
 objectiveId=obj-u9-odindva
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | одна is feminine singular instead of the masculine singular agreement required by the shown noun.
+distractorRationales= | одна is the feminine singular form; the supplied example with час uses masculine singular один.
 testedFeature=ODIN_MASCULINE
-evidenceMode=SOURCE_SUPPLIED_PAIR
-contrastSetId=u9-odindva-4
+evidenceMode=STATED_APPLICATION
+contrastSetId=u9-i-odindva-4
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-u9-odindva-x-4
-distractorSourceIds= | prov-u9-odindva-x-5
-distractorDifference= | одна is feminine singular instead of the masculine singular agreement required by the shown noun.
-whyAnswerDemonstratesObjective=один is the masculine singular form of one and agrees with the shown word for boy in this example. одна is feminine singular instead. Match the grammatical gender of the noun in the retained counting phrase.
+answerSourceIds=prov-ca-u9-agreement-transfer-u9-i-odindva-4-1
+distractorSourceIds= | prov-ca-u9-agreement-transfer-u9-i-odindva-4-2
+distractorDifference= | одна is the feminine singular form; the supplied example with час uses masculine singular один.
+whyAnswerDemonstratesObjective=The supplied example один час uses masculine singular один with час. одна is the feminine singular form shown with девушка, so it does not agree with this noun here. Both forms mean one; the distinction is grammatical gender, not a different number. This recognizes the supplied counting form, not every declined case of the numeral.
 contrastMembers=один | одна
-relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-u9-odindva-x-0 | prov-u9-odindva-x-4 | prov-u9-odindva-x-5
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u9-agreement-transfer-u9-i-odindva-4-0 | prov-ca-u9-agreement-transfer-u9-i-odindva-4-1 | prov-ca-u9-agreement-transfer-u9-i-odindva-4-2
+responseKind=RUSSIAN_TOKEN
 
 ### INDEPENDENT_CHECK `u9-i-odindva-5`
 
@@ -5218,6 +5229,821 @@ attribution=Russian Companion content-audit research synthesis, content-audit-20
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
 sourceHash=9f4ba08defb1913740c6be4b342a4660d351b65d988c707ac8a0fa69115fe554
 contentHash=d041eeb40cc8511a027df2c440c8d74888f975c9edc104cdaee761952fa21b26
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-agreement-transfer-check-body`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8388084624f6b555335a7e72983a8b38053d802578d97865fbc9e190c71eb080
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:transfer:check-body
+originalSourceText=Complete retained Wikibooks Russian/Numbers4371358, one/gender/number paragraph and complete additional examples including один час; actual retained copyrights4622060/CC BY-SA4.0 contributor-history attribution. Exact unaccented source words selected with existing mechanical link-label/emphasis unfolding. No generated native morphology, new stress/punctuation, private Penguin prose/media or new source/rights declaration. Preserve the correct guided мальчик/один pair and independent девушка/одна, животное/одно, джинсы/одни, девушки/две scored items whole and unchanged. Replace only repeated independent masculine cue with час from the supplied один час example. This recognizes the supplied masculine one agreement with a distinct noun, not every numeral declension, every noun/case or productive sentence formation. Original overly simplified compound-numeral last-digit statements and the assertion that non-nominative constructions are uncommon are not adopted; raw context retained unchanged. Earlier whole-numeral teen-exception guard remains. All six teaching cards precede practice and remediation restores every original example and all cards. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+Choose the supplied form of one or two for the noun and counting context. A missed check returns to the complete explanation.
+shippedText=Choose the supplied form of one or two for the noun and counting context. A missed check returns to the complete explanation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=579e4339757b6f427aa238e889d95a412a7d761feb039fe084a74f86fdcc0d53
+contentHash=38ef348d4397bb83427d770150d14261c3ba36cda0f89cb4d1b48686c107aaee
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-agreement-transfer-guided-body`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3eecce3962c253f617838330b9a70ce0563b947a8a44362c3beddf6bd372ee80
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:transfer:guided-body
+originalSourceText=Complete retained Wikibooks Russian/Numbers4371358, one/gender/number paragraph and complete additional examples including один час; actual retained copyrights4622060/CC BY-SA4.0 contributor-history attribution. Exact unaccented source words selected with existing mechanical link-label/emphasis unfolding. No generated native morphology, new stress/punctuation, private Penguin prose/media or new source/rights declaration. Preserve the correct guided мальчик/один pair and independent девушка/одна, животное/одно, джинсы/одни, девушки/две scored items whole and unchanged. Replace only repeated independent masculine cue with час from the supplied один час example. This recognizes the supplied masculine one agreement with a distinct noun, not every numeral declension, every noun/case or productive sentence formation. Original overly simplified compound-numeral last-digit statements and the assertion that non-nominative constructions are uncommon are not adopted; raw context retained unchanged. Earlier whole-numeral teen-exception guard remains. All six teaching cards precede practice and remediation restores every original example and all cards. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+Choose the form of one that agrees with the shown noun in the supplied counting example.
+shippedText=Choose the form of one that agrees with the shown noun in the supplied counting example.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e6fdffc994a139b319d75f13e9128f3959fff566d13ca859ae873bee0ea87a20
+contentHash=e6debb6c11a655babd836b670da2078397c718fd77491c3caec4fe4cc7da3b2c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-agreement-transfer-item-feedback`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d44ebbe6d9a0f843b1e20e2be6836543af650729e6ceb8b996d61260f9de0332
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:transfer:item-feedback
+originalSourceText=Complete retained Wikibooks Russian/Numbers4371358, one/gender/number paragraph and complete additional examples including один час; actual retained copyrights4622060/CC BY-SA4.0 contributor-history attribution. Exact unaccented source words selected with existing mechanical link-label/emphasis unfolding. No generated native morphology, new stress/punctuation, private Penguin prose/media or new source/rights declaration. Preserve the correct guided мальчик/один pair and independent девушка/одна, животное/одно, джинсы/одни, девушки/две scored items whole and unchanged. Replace only repeated independent masculine cue with час from the supplied один час example. This recognizes the supplied masculine one agreement with a distinct noun, not every numeral declension, every noun/case or productive sentence formation. Original overly simplified compound-numeral last-digit statements and the assertion that non-nominative constructions are uncommon are not adopted; raw context retained unchanged. Earlier whole-numeral teen-exception guard remains. All six teaching cards precede practice and remediation restores every original example and all cards. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+The supplied example один час uses masculine singular один with час. одна is the feminine singular form shown with девушка, so it does not agree with this noun here. Both forms mean one; the distinction is grammatical gender, not a different number. This recognizes the supplied counting form, not every declined case of the numeral.
+shippedText=The supplied example один час uses masculine singular один with час. одна is the feminine singular form shown with девушка, so it does not agree with this noun here. Both forms mean one; the distinction is grammatical gender, not a different number. This recognizes the supplied counting form, not every declined case of the numeral.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=089dfd07fa0f8bf1f777123b5e9cc6264a9ff7e14ecb8e82675164c6c39e3df3
+contentHash=4dcbea794a4765c9eb7a9239ae8521d255b4d58f7ef61c7113a62045a8f14b4e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-agreement-transfer-item-prompt`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4890606a1ac6d3f2d35fb8fc174de996e27317373b632f8cfe3e7ca572bde38f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:transfer:item-prompt
+originalSourceText=Complete retained Wikibooks Russian/Numbers4371358, one/gender/number paragraph and complete additional examples including один час; actual retained copyrights4622060/CC BY-SA4.0 contributor-history attribution. Exact unaccented source words selected with existing mechanical link-label/emphasis unfolding. No generated native morphology, new stress/punctuation, private Penguin prose/media or new source/rights declaration. Preserve the correct guided мальчик/один pair and independent девушка/одна, животное/одно, джинсы/одни, девушки/две scored items whole and unchanged. Replace only repeated independent masculine cue with час from the supplied один час example. This recognizes the supplied masculine one agreement with a distinct noun, not every numeral declension, every noun/case or productive sentence formation. Original overly simplified compound-numeral last-digit statements and the assertion that non-nominative constructions are uncommon are not adopted; raw context retained unchanged. Earlier whole-numeral teen-exception guard remains. All six teaching cards precede practice and remediation restores every original example and all cards. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+Which admitted form agrees with the shown word?
+shippedText=Which admitted form agrees with the shown word?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=decd5340f36e36d08f73329ed28dd37a3e0b02c1b3aeaacdc64c549659dae53b
+contentHash=cfc874bbdcb4fdce91ce67b3ebfb2d74e8180162e3b2ce83da3bba96a3b0b2df
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-agreement-transfer-item-rationale`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 70bbddca618a58b625910eb0798f2b55754344b9360a535685c2d46d2f158056
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:transfer:item-rationale
+originalSourceText=Complete retained Wikibooks Russian/Numbers4371358, one/gender/number paragraph and complete additional examples including один час; actual retained copyrights4622060/CC BY-SA4.0 contributor-history attribution. Exact unaccented source words selected with existing mechanical link-label/emphasis unfolding. No generated native morphology, new stress/punctuation, private Penguin prose/media or new source/rights declaration. Preserve the correct guided мальчик/один pair and independent девушка/одна, животное/одно, джинсы/одни, девушки/две scored items whole and unchanged. Replace only repeated independent masculine cue with час from the supplied один час example. This recognizes the supplied masculine one agreement with a distinct noun, not every numeral declension, every noun/case or productive sentence formation. Original overly simplified compound-numeral last-digit statements and the assertion that non-nominative constructions are uncommon are not adopted; raw context retained unchanged. Earlier whole-numeral teen-exception guard remains. All six teaching cards precede practice and remediation restores every original example and all cards. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+одна is the feminine singular form; the supplied example with час uses masculine singular один.
+shippedText=одна is the feminine singular form; the supplied example with час uses masculine singular один.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e7a5d5ca798c97b60a4d896df11adaf0fad94b02ee4209f6c7dab92c79090f8b
+contentHash=52b2171f9e838ecf534bf331f4514324ee0f854b794566f49756bc3f20d19656
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-agreement-transfer-remediation-body`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a00b385cb31c29adef7bcec9e5dda7ddd16ae00de1e2e6cce0d90e3a5e0a0365
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:transfer:remediation-body
+originalSourceText=Complete retained Wikibooks Russian/Numbers4371358, one/gender/number paragraph and complete additional examples including один час; actual retained copyrights4622060/CC BY-SA4.0 contributor-history attribution. Exact unaccented source words selected with existing mechanical link-label/emphasis unfolding. No generated native morphology, new stress/punctuation, private Penguin prose/media or new source/rights declaration. Preserve the correct guided мальчик/один pair and independent девушка/одна, животное/одно, джинсы/одни, девушки/две scored items whole and unchanged. Replace only repeated independent masculine cue with час from the supplied один час example. This recognizes the supplied masculine one agreement with a distinct noun, not every numeral declension, every noun/case or productive sentence formation. Original overly simplified compound-numeral last-digit statements and the assertion that non-nominative constructions are uncommon are not adopted; raw context retained unchanged. Earlier whole-numeral teen-exception guard remains. All six teaching cards precede practice and remediation restores every original example and all cards. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+один мальчик — one boy; одна девушка — one girl. For these singular counting examples, one agrees with the noun: masculine один and feminine одна. Both still mean one. Guided practice uses мальчик.
+
+два is the form for masculine and neuter counted nouns; две is the feminine form. The supplied example две девушки — two girls uses feminine две. The following noun is genitive singular in this counting construction; the numeral choice still follows its gender.
+
+одно животное — one animal uses neuter singular одно. одни джинсы — one [pair of] jeans uses plural одни with the plural-form noun. The plural numeral here does not mean several pairs; these are different gender/number forms of one.
+
+одна́ and одно́ both represent 1 in the retained cardinal table. They are feminine and neuter singular forms, respectively. The existing table stress is retained; the separate counting examples are printed without added stress.
+
+одни́ represents 1 in the supplied plural-form example, while две represents 2 with a feminine noun. Distinguish одни джинсы from две девушки by the complete supplied construction, rather than treating every plural-looking form as two.
+
+оди́н — one and два — two retain their supplied values. The additional source example один час supplies masculine singular один with час. The independent masculine check uses this different noun from guided мальчик. Choose один rather than feminine одна for час in this counting context; this is supplied-form recognition, not all numeral cases or unrestricted sentence production.
+shippedText=один мальчик — one boy; одна девушка — one girl. For these singular counting examples, one agrees with the noun: masculine один and feminine одна. Both still mean one. Guided practice uses мальчик.
+
+два is the form for masculine and neuter counted nouns; две is the feminine form. The supplied example две девушки — two girls uses feminine две. The following noun is genitive singular in this counting construction; the numeral choice still follows its gender.
+
+одно животное — one animal uses neuter singular одно. одни джинсы — one [pair of] jeans uses plural одни with the plural-form noun. The plural numeral here does not mean several pairs; these are different gender/number forms of one.
+
+одна́ and одно́ both represent 1 in the retained cardinal table. They are feminine and neuter singular forms, respectively. The existing table stress is retained; the separate counting examples are printed without added stress.
+
+одни́ represents 1 in the supplied plural-form example, while две represents 2 with a feminine noun. Distinguish одни джинсы from две девушки by the complete supplied construction, rather than treating every plural-looking form as two.
+
+оди́н — one and два — two retain their supplied values. The additional source example один час supplies masculine singular один with час. The independent masculine check uses this different noun from guided мальчик. Choose один rather than feminine одна for час in this counting context; this is supplied-form recognition, not all numeral cases or unrestricted sentence production.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6b54290d4e23752a566a32407b10c633a8476d9162620d1336660dbf9becabac
+contentHash=9d0cab493fac8091fca42d31b9bfc0c482ec038bdab1d918721e3dd42cbdcc19
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-agreement-transfer-teach-1-body`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 65dbccf71dfd8ed0b895cdf53c4aa73d09c53d99eb0e93a7129fb36dd2be2fda
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:transfer:teach-1-body
+originalSourceText=Complete retained Wikibooks Russian/Numbers4371358, one/gender/number paragraph and complete additional examples including один час; actual retained copyrights4622060/CC BY-SA4.0 contributor-history attribution. Exact unaccented source words selected with existing mechanical link-label/emphasis unfolding. No generated native morphology, new stress/punctuation, private Penguin prose/media or new source/rights declaration. Preserve the correct guided мальчик/один pair and independent девушка/одна, животное/одно, джинсы/одни, девушки/две scored items whole and unchanged. Replace only repeated independent masculine cue with час from the supplied один час example. This recognizes the supplied masculine one agreement with a distinct noun, not every numeral declension, every noun/case or productive sentence formation. Original overly simplified compound-numeral last-digit statements and the assertion that non-nominative constructions are uncommon are not adopted; raw context retained unchanged. Earlier whole-numeral teen-exception guard remains. All six teaching cards precede practice and remediation restores every original example and all cards. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+один мальчик — one boy; одна девушка — one girl. For these singular counting examples, one agrees with the noun: masculine один and feminine одна. Both still mean one. Guided practice uses мальчик.
+shippedText=один мальчик — one boy; одна девушка — one girl. For these singular counting examples, one agrees with the noun: masculine один and feminine одна. Both still mean one. Guided practice uses мальчик.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3fac2434b91892402076e0bbb2767ec5634da92cc1207ba5dd2643468318be0c
+contentHash=eb34886ef3c0e54cb3d3dcdef754d8778691c205da283cce18b1e1b9b3360f6e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-agreement-transfer-teach-1-title`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 31328d438a9f27c2b8e0dc697b92beb9521f3860b1c878b5ca935401812efaf7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:transfer:teach-1-title
+originalSourceText=Complete retained Wikibooks Russian/Numbers4371358, one/gender/number paragraph and complete additional examples including один час; actual retained copyrights4622060/CC BY-SA4.0 contributor-history attribution. Exact unaccented source words selected with existing mechanical link-label/emphasis unfolding. No generated native morphology, new stress/punctuation, private Penguin prose/media or new source/rights declaration. Preserve the correct guided мальчик/один pair and independent девушка/одна, животное/одно, джинсы/одни, девушки/две scored items whole and unchanged. Replace only repeated independent masculine cue with час from the supplied один час example. This recognizes the supplied masculine one agreement with a distinct noun, not every numeral declension, every noun/case or productive sentence formation. Original overly simplified compound-numeral last-digit statements and the assertion that non-nominative constructions are uncommon are not adopted; raw context retained unchanged. Earlier whole-numeral teen-exception guard remains. All six teaching cards precede practice and remediation restores every original example and all cards. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+Choose one by gender
+shippedText=Choose one by gender
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=78f14d6f11621639bb55625b37844f96eae70703b8ea3f22903a41aeec55fa78
+contentHash=bd1885d3081d5cefc157eb4a0fa416a8fbfb148274064c81f85e83e5b18cea30
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-agreement-transfer-teach-2-body`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 034e6718ee0e94c2b056ef811a1a5fdb0da0b36a498ed85375b648a691d20dce
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:transfer:teach-2-body
+originalSourceText=Complete retained Wikibooks Russian/Numbers4371358, one/gender/number paragraph and complete additional examples including один час; actual retained copyrights4622060/CC BY-SA4.0 contributor-history attribution. Exact unaccented source words selected with existing mechanical link-label/emphasis unfolding. No generated native morphology, new stress/punctuation, private Penguin prose/media or new source/rights declaration. Preserve the correct guided мальчик/один pair and independent девушка/одна, животное/одно, джинсы/одни, девушки/две scored items whole and unchanged. Replace only repeated independent masculine cue with час from the supplied один час example. This recognizes the supplied masculine one agreement with a distinct noun, not every numeral declension, every noun/case or productive sentence formation. Original overly simplified compound-numeral last-digit statements and the assertion that non-nominative constructions are uncommon are not adopted; raw context retained unchanged. Earlier whole-numeral teen-exception guard remains. All six teaching cards precede practice and remediation restores every original example and all cards. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+два is the form for masculine and neuter counted nouns; две is the feminine form. The supplied example две девушки — two girls uses feminine две. The following noun is genitive singular in this counting construction; the numeral choice still follows its gender.
+shippedText=два is the form for masculine and neuter counted nouns; две is the feminine form. The supplied example две девушки — two girls uses feminine две. The following noun is genitive singular in this counting construction; the numeral choice still follows its gender.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b4a1cb4e87e81ffe60126c9de9e48593c32be086fc6efb9d8e8bd60948e3ae31
+contentHash=e851efcac53b275f5c6bbedbfbf7a1c2332831a9681d0c464f3ec7b05cd1b771
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-agreement-transfer-teach-2-title`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9891638e699bdc8c1e25326a8df877feedfa174fe8e556408f1ecca5d1d188c7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:transfer:teach-2-title
+originalSourceText=Complete retained Wikibooks Russian/Numbers4371358, one/gender/number paragraph and complete additional examples including один час; actual retained copyrights4622060/CC BY-SA4.0 contributor-history attribution. Exact unaccented source words selected with existing mechanical link-label/emphasis unfolding. No generated native morphology, new stress/punctuation, private Penguin prose/media or new source/rights declaration. Preserve the correct guided мальчик/один pair and independent девушка/одна, животное/одно, джинсы/одни, девушки/две scored items whole and unchanged. Replace only repeated independent masculine cue with час from the supplied один час example. This recognizes the supplied masculine one agreement with a distinct noun, not every numeral declension, every noun/case or productive sentence formation. Original overly simplified compound-numeral last-digit statements and the assertion that non-nominative constructions are uncommon are not adopted; raw context retained unchanged. Earlier whole-numeral teen-exception guard remains. All six teaching cards precede practice and remediation restores every original example and all cards. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+Choose the form of two
+shippedText=Choose the form of two
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4c977b3c97d5efacc68a6d024c0eef445a138d798e65627cce2bc166d9b7af3c
+contentHash=a018dcbff67283a4a665a276d1913a45b1bc94a933bd671d4c4b6b9bd8829e71
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-agreement-transfer-teach-3-body`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7693f67cbaff8fcf294073a3df596a6a09f32539dfcda4d594401cc1bc35da59
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:transfer:teach-3-body
+originalSourceText=Complete retained Wikibooks Russian/Numbers4371358, one/gender/number paragraph and complete additional examples including один час; actual retained copyrights4622060/CC BY-SA4.0 contributor-history attribution. Exact unaccented source words selected with existing mechanical link-label/emphasis unfolding. No generated native morphology, new stress/punctuation, private Penguin prose/media or new source/rights declaration. Preserve the correct guided мальчик/один pair and independent девушка/одна, животное/одно, джинсы/одни, девушки/две scored items whole and unchanged. Replace only repeated independent masculine cue with час from the supplied один час example. This recognizes the supplied masculine one agreement with a distinct noun, not every numeral declension, every noun/case or productive sentence formation. Original overly simplified compound-numeral last-digit statements and the assertion that non-nominative constructions are uncommon are not adopted; raw context retained unchanged. Earlier whole-numeral teen-exception guard remains. All six teaching cards precede practice and remediation restores every original example and all cards. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+одно животное — one animal uses neuter singular одно. одни джинсы — one [pair of] jeans uses plural одни with the plural-form noun. The plural numeral here does not mean several pairs; these are different gender/number forms of one.
+shippedText=одно животное — one animal uses neuter singular одно. одни джинсы — one [pair of] jeans uses plural одни with the plural-form noun. The plural numeral here does not mean several pairs; these are different gender/number forms of one.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a47acffc31a23d1b4de6f5fc897be9c669bb2f47b2bf43887b1ae8220673eb47
+contentHash=f32c99344bb7972ff98606de2cf1fab96529b81122de0eefa7f7d2d2f750a153
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-agreement-transfer-teach-3-title`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 40454e5c22d4bc44a48c43f295fd0ff2fd4f550e2f2e083048119fa06be41569
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:transfer:teach-3-title
+originalSourceText=Complete retained Wikibooks Russian/Numbers4371358, one/gender/number paragraph and complete additional examples including один час; actual retained copyrights4622060/CC BY-SA4.0 contributor-history attribution. Exact unaccented source words selected with existing mechanical link-label/emphasis unfolding. No generated native morphology, new stress/punctuation, private Penguin prose/media or new source/rights declaration. Preserve the correct guided мальчик/один pair and independent девушка/одна, животное/одно, джинсы/одни, девушки/две scored items whole and unchanged. Replace only repeated independent masculine cue with час from the supplied один час example. This recognizes the supplied masculine one agreement with a distinct noun, not every numeral declension, every noun/case or productive sentence formation. Original overly simplified compound-numeral last-digit statements and the assertion that non-nominative constructions are uncommon are not adopted; raw context retained unchanged. Earlier whole-numeral teen-exception guard remains. All six teaching cards precede practice and remediation restores every original example and all cards. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+Recognize neuter and plural-form one
+shippedText=Recognize neuter and plural-form one
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1aa70523b38d2816f6139058b1b3ccf966b21849e63bcd3f50aecbad1181d8d7
+contentHash=412e15971c2dd030c46e8f8b679727c4bdd10e0f54e1d125f0bb753e5f224148
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-agreement-transfer-teach-4-body`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d5bfd712daca83dd670cbbc70d01bbeecb203949136afc8be30dfd7f868fec8c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:transfer:teach-4-body
+originalSourceText=Complete retained Wikibooks Russian/Numbers4371358, one/gender/number paragraph and complete additional examples including один час; actual retained copyrights4622060/CC BY-SA4.0 contributor-history attribution. Exact unaccented source words selected with existing mechanical link-label/emphasis unfolding. No generated native morphology, new stress/punctuation, private Penguin prose/media or new source/rights declaration. Preserve the correct guided мальчик/один pair and independent девушка/одна, животное/одно, джинсы/одни, девушки/две scored items whole and unchanged. Replace only repeated independent masculine cue with час from the supplied один час example. This recognizes the supplied masculine one agreement with a distinct noun, not every numeral declension, every noun/case or productive sentence formation. Original overly simplified compound-numeral last-digit statements and the assertion that non-nominative constructions are uncommon are not adopted; raw context retained unchanged. Earlier whole-numeral teen-exception guard remains. All six teaching cards precede practice and remediation restores every original example and all cards. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+одна́ and одно́ both represent 1 in the retained cardinal table. They are feminine and neuter singular forms, respectively. The existing table stress is retained; the separate counting examples are printed without added stress.
+shippedText=одна́ and одно́ both represent 1 in the retained cardinal table. They are feminine and neuter singular forms, respectively. The existing table stress is retained; the separate counting examples are printed without added stress.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6ba651db5956316c41792ec7c4ed79cc8f4b4305500cf15de7e31c6b990c3158
+contentHash=e0b17c12aaa51b0700be2ff19ce891b4e9053363c3696ebad913b2f8faf77641
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-agreement-transfer-teach-4-title`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7330f52e1fac27bcccd9a2a09d083965524faa0fed6063c0eaca8fdfcf600b4c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:transfer:teach-4-title
+originalSourceText=Complete retained Wikibooks Russian/Numbers4371358, one/gender/number paragraph and complete additional examples including один час; actual retained copyrights4622060/CC BY-SA4.0 contributor-history attribution. Exact unaccented source words selected with existing mechanical link-label/emphasis unfolding. No generated native morphology, new stress/punctuation, private Penguin prose/media or new source/rights declaration. Preserve the correct guided мальчик/один pair and independent девушка/одна, животное/одно, джинсы/одни, девушки/две scored items whole and unchanged. Replace only repeated independent masculine cue with час from the supplied один час example. This recognizes the supplied masculine one agreement with a distinct noun, not every numeral declension, every noun/case or productive sentence formation. Original overly simplified compound-numeral last-digit statements and the assertion that non-nominative constructions are uncommon are not adopted; raw context retained unchanged. Earlier whole-numeral teen-exception guard remains. All six teaching cards precede practice and remediation restores every original example and all cards. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+Keep the value while changing agreement
+shippedText=Keep the value while changing agreement
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=15a12fb1008df27583b239fde8475bb8507f6ba6b84324c1bb0b7515a27d196d
+contentHash=1185c660656b652bf112d1af67ddb70c1bb964b5d8d086397872932a03d00ae8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-agreement-transfer-teach-5-body`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e7fecbbada33f41ce4e14cd06c9dd0c9d45afeea110dc601f749d85a1efba6ec
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:transfer:teach-5-body
+originalSourceText=Complete retained Wikibooks Russian/Numbers4371358, one/gender/number paragraph and complete additional examples including один час; actual retained copyrights4622060/CC BY-SA4.0 contributor-history attribution. Exact unaccented source words selected with existing mechanical link-label/emphasis unfolding. No generated native morphology, new stress/punctuation, private Penguin prose/media or new source/rights declaration. Preserve the correct guided мальчик/один pair and independent девушка/одна, животное/одно, джинсы/одни, девушки/две scored items whole and unchanged. Replace only repeated independent masculine cue with час from the supplied один час example. This recognizes the supplied masculine one agreement with a distinct noun, not every numeral declension, every noun/case or productive sentence formation. Original overly simplified compound-numeral last-digit statements and the assertion that non-nominative constructions are uncommon are not adopted; raw context retained unchanged. Earlier whole-numeral teen-exception guard remains. All six teaching cards precede practice and remediation restores every original example and all cards. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+одни́ represents 1 in the supplied plural-form example, while две represents 2 with a feminine noun. Distinguish одни джинсы from две девушки by the complete supplied construction, rather than treating every plural-looking form as two.
+shippedText=одни́ represents 1 in the supplied plural-form example, while две represents 2 with a feminine noun. Distinguish одни джинсы from две девушки by the complete supplied construction, rather than treating every plural-looking form as two.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ba0cf65cacad7ea693c650e49a795f9dbe4699d53f8b6b7381c7e4e6045b5af1
+contentHash=53a7e841798205278f93083bc80c131e27482792506cd5cda2b7a0a49d46e05f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-agreement-transfer-teach-5-title`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 50e3abe08aa0ada34c9e0b36e88077abc69bb7a23363cded9df758e0dc0ac64a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:transfer:teach-5-title
+originalSourceText=Complete retained Wikibooks Russian/Numbers4371358, one/gender/number paragraph and complete additional examples including один час; actual retained copyrights4622060/CC BY-SA4.0 contributor-history attribution. Exact unaccented source words selected with existing mechanical link-label/emphasis unfolding. No generated native morphology, new stress/punctuation, private Penguin prose/media or new source/rights declaration. Preserve the correct guided мальчик/один pair and independent девушка/одна, животное/одно, джинсы/одни, девушки/две scored items whole and unchanged. Replace only repeated independent masculine cue with час from the supplied один час example. This recognizes the supplied masculine one agreement with a distinct noun, not every numeral declension, every noun/case or productive sentence formation. Original overly simplified compound-numeral last-digit statements and the assertion that non-nominative constructions are uncommon are not adopted; raw context retained unchanged. Earlier whole-numeral teen-exception guard remains. All six teaching cards precede practice and remediation restores every original example and all cards. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+Distinguish plural one from feminine two
+shippedText=Distinguish plural one from feminine two
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=965ba926036991b18669d2cb13fe00be7ad851f053a8b17081cc39a24588ef3f
+contentHash=18720da22af9628f92d10e4c205c95942b4318ba0f266be556767f522bbcdef4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-agreement-transfer-teach-6-body`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e8cfeef40aecacc948d329c19b86b5e7730a41f2901f0eed99ae19debe1d02ec
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:transfer:teach-6-body
+originalSourceText=Complete retained Wikibooks Russian/Numbers4371358, one/gender/number paragraph and complete additional examples including один час; actual retained copyrights4622060/CC BY-SA4.0 contributor-history attribution. Exact unaccented source words selected with existing mechanical link-label/emphasis unfolding. No generated native morphology, new stress/punctuation, private Penguin prose/media or new source/rights declaration. Preserve the correct guided мальчик/один pair and independent девушка/одна, животное/одно, джинсы/одни, девушки/две scored items whole and unchanged. Replace only repeated independent masculine cue with час from the supplied один час example. This recognizes the supplied masculine one agreement with a distinct noun, not every numeral declension, every noun/case or productive sentence formation. Original overly simplified compound-numeral last-digit statements and the assertion that non-nominative constructions are uncommon are not adopted; raw context retained unchanged. Earlier whole-numeral teen-exception guard remains. All six teaching cards precede practice and remediation restores every original example and all cards. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+оди́н — one and два — two retain their supplied values. The additional source example один час supplies masculine singular один with час. The independent masculine check uses this different noun from guided мальчик. Choose один rather than feminine одна for час in this counting context; this is supplied-form recognition, not all numeral cases or unrestricted sentence production.
+shippedText=оди́н — one and два — two retain their supplied values. The additional source example один час supplies masculine singular один with час. The independent masculine check uses this different noun from guided мальчик. Choose один rather than feminine одна for час in this counting context; this is supplied-form recognition, not all numeral cases or unrestricted sentence production.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b14e3b7bddd161bfd423ab3d23df76d9ca8add06b9737145c77b1096fc3ae746
+contentHash=96b8429c9b05adc1f4232e2812924ad57a40a560929ae2a6797f8fa164407eee
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-agreement-transfer-teach-6-title`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 03de06ab9ef599cf8e2e3137e78db639f7f41a9fb5125f2109dd03a31c884100
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u9-odindva:transfer:teach-6-title
+originalSourceText=Complete retained Wikibooks Russian/Numbers4371358, one/gender/number paragraph and complete additional examples including один час; actual retained copyrights4622060/CC BY-SA4.0 contributor-history attribution. Exact unaccented source words selected with existing mechanical link-label/emphasis unfolding. No generated native morphology, new stress/punctuation, private Penguin prose/media or new source/rights declaration. Preserve the correct guided мальчик/один pair and independent девушка/одна, животное/одно, джинсы/одни, девушки/две scored items whole and unchanged. Replace only repeated independent masculine cue with час from the supplied один час example. This recognizes the supplied masculine one agreement with a distinct noun, not every numeral declension, every noun/case or productive sentence formation. Original overly simplified compound-numeral last-digit statements and the assertion that non-nominative constructions are uncommon are not adopted; raw context retained unchanged. Earlier whole-numeral teen-exception guard remains. All six teaching cards precede practice and remediation restores every original example and all cards. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+Apply masculine one to a different noun
+shippedText=Apply masculine one to a different noun
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=55d69caf8881c487d40c02966651c6bfbf5f298390cc136095e745c568ba77df
+contentHash=b400663b3d5d38acb128bc71e682fdc1ce0166c297972f2cb569a78abfaac439
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-agreement-transfer-u9-i-odindva-4-0`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cd651d5910a530c4ce8c46612858d3b9ea00c4163d4db8ae2e5a04e3812c9413
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-odindva-4
+originalSourceText=Complete retained Wikibooks Russian/Numbers4371358, one/gender/number paragraph and complete additional examples including один час; actual retained copyrights4622060/CC BY-SA4.0 contributor-history attribution. Exact unaccented source words selected with existing mechanical link-label/emphasis unfolding. No generated native morphology, new stress/punctuation, private Penguin prose/media or new source/rights declaration. Preserve the correct guided мальчик/один pair and independent девушка/одна, животное/одно, джинсы/одни, девушки/две scored items whole and unchanged. Replace only repeated independent masculine cue with час from the supplied один час example. This recognizes the supplied masculine one agreement with a distinct noun, not every numeral declension, every noun/case or productive sentence formation. Original overly simplified compound-numeral last-digit statements and the assertion that non-nominative constructions are uncommon are not adopted; raw context retained unchanged. Earlier whole-numeral teen-exception guard remains. All six teaching cards precede practice and remediation restores every original example and all cards. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+Complete raw context:
+==Use of numerals in context==
+
+In English (and in many other Indo-European languages) the items being counted by a numeral are found following the numeral, and in the plural form.  In Russian, the syntax is somewhat more complex.  The case of the item must first be considered.  If the item needs to be in the nominative or inanimate accusative case, use the following rule.  
+
+The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+
+The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
+
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).  
+
+Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).  
+
+Numerals larger than 99 follow the above rules using the last two digits. For example: двести три собаки (two hundred and three dogs), двести тринадцать собак (two hundred and thirteen dogs).
+
+When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined in addition to the declension of the items following them.  This topic shall be discussed here later.  For now, be glad that these forms are relatively uncommon.  Examples follow:  Я видел двух друзей (I saw two friends), Ты не съела ни одной штуки (You didn't eat a single piece).
+
+In short, for nominative (and inanimate accusative) items, use the following rule to select the proper form of the item:
+
+1 -> nominative
+
+2, 3, 4 -> genitive singular
+
+5 and more -> genitive plural
+
+===A few more examples===
+* один час
+* два часа
+* пять часов 
+* двадцать один час
+* двадцать два часа
+* двадцать три часа
+* двадцать четыре часа
+
+* один год
+* два года
+* три года
+* четыре года
+* пять лет
+* пятьдесят один год
+* пятьдесят два года
+* пятьдесят пять лет
+    
+* одна минута
+* две минуты
+* три минуты
+* четыре минуты
+* пять минут
+* шесть минут
+* двадцать одна минута
+* тридцать две минуты
+* тридцать три минуты
+* сорок пять минут
+Context explanation:
+The supplied example один час uses masculine singular один with час. одна is the feminine singular form shown with девушка, so it does not agree with this noun here. Both forms mean one; the distinction is grammatical gender, not a different number. This recognizes the supplied counting form, not every declined case of the numeral.
+Tuple-v1:tuple-v1:1;6:час8:один1;8:одна
+shippedText=час
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0315d56ca1515ed2adec087f8fbaea9c4f2de720bef39caecaea3a2870e4a44b
+contentHash=3b717961ddfdfb919640a578d8ddb5b267fe8ece1b63aba1a1d98a589c07c7e8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-agreement-transfer-u9-i-odindva-4-1`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3aae40fe8d85fe321f78fcf81261b7028b5e5c16507e147081c34e1d517db1a0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-odindva-4
+originalSourceText=Complete retained Wikibooks Russian/Numbers4371358, one/gender/number paragraph and complete additional examples including один час; actual retained copyrights4622060/CC BY-SA4.0 contributor-history attribution. Exact unaccented source words selected with existing mechanical link-label/emphasis unfolding. No generated native morphology, new stress/punctuation, private Penguin prose/media or new source/rights declaration. Preserve the correct guided мальчик/один pair and independent девушка/одна, животное/одно, джинсы/одни, девушки/две scored items whole and unchanged. Replace only repeated independent masculine cue with час from the supplied один час example. This recognizes the supplied masculine one agreement with a distinct noun, not every numeral declension, every noun/case or productive sentence formation. Original overly simplified compound-numeral last-digit statements and the assertion that non-nominative constructions are uncommon are not adopted; raw context retained unchanged. Earlier whole-numeral teen-exception guard remains. All six teaching cards precede practice and remediation restores every original example and all cards. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+Complete raw context:
+==Use of numerals in context==
+
+In English (and in many other Indo-European languages) the items being counted by a numeral are found following the numeral, and in the plural form.  In Russian, the syntax is somewhat more complex.  The case of the item must first be considered.  If the item needs to be in the nominative or inanimate accusative case, use the following rule.  
+
+The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+
+The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
+
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).  
+
+Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).  
+
+Numerals larger than 99 follow the above rules using the last two digits. For example: двести три собаки (two hundred and three dogs), двести тринадцать собак (two hundred and thirteen dogs).
+
+When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined in addition to the declension of the items following them.  This topic shall be discussed here later.  For now, be glad that these forms are relatively uncommon.  Examples follow:  Я видел двух друзей (I saw two friends), Ты не съела ни одной штуки (You didn't eat a single piece).
+
+In short, for nominative (and inanimate accusative) items, use the following rule to select the proper form of the item:
+
+1 -> nominative
+
+2, 3, 4 -> genitive singular
+
+5 and more -> genitive plural
+
+===A few more examples===
+* один час
+* два часа
+* пять часов 
+* двадцать один час
+* двадцать два часа
+* двадцать три часа
+* двадцать четыре часа
+
+* один год
+* два года
+* три года
+* четыре года
+* пять лет
+* пятьдесят один год
+* пятьдесят два года
+* пятьдесят пять лет
+    
+* одна минута
+* две минуты
+* три минуты
+* четыре минуты
+* пять минут
+* шесть минут
+* двадцать одна минута
+* тридцать две минуты
+* тридцать три минуты
+* сорок пять минут
+Context explanation:
+The supplied example один час uses masculine singular один with час. одна is the feminine singular form shown with девушка, so it does not agree with this noun here. Both forms mean one; the distinction is grammatical gender, not a different number. This recognizes the supplied counting form, not every declined case of the numeral.
+Tuple-v1:tuple-v1:1;6:час8:один1;8:одна
+shippedText=один
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0315d56ca1515ed2adec087f8fbaea9c4f2de720bef39caecaea3a2870e4a44b
+contentHash=c5cffb9e60232cdf6f395101a5987dcb1b5df343397604bfeca92cba411c784f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u9-agreement-transfer-u9-i-odindva-4-2`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 27d5fe1b8952b052f21acc44967150e4aca2b30452eda832a0853b2de9173cf4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u9-i-odindva-4
+originalSourceText=Complete retained Wikibooks Russian/Numbers4371358, one/gender/number paragraph and complete additional examples including один час; actual retained copyrights4622060/CC BY-SA4.0 contributor-history attribution. Exact unaccented source words selected with existing mechanical link-label/emphasis unfolding. No generated native morphology, new stress/punctuation, private Penguin prose/media or new source/rights declaration. Preserve the correct guided мальчик/один pair and independent девушка/одна, животное/одно, джинсы/одни, девушки/две scored items whole and unchanged. Replace only repeated independent masculine cue with час from the supplied один час example. This recognizes the supplied masculine one agreement with a distinct noun, not every numeral declension, every noun/case or productive sentence formation. Original overly simplified compound-numeral last-digit statements and the assertion that non-nominative constructions are uncommon are not adopted; raw context retained unchanged. Earlier whole-numeral teen-exception guard remains. All six teaching cards precede practice and remediation restores every original example and all cards. Independently authored English2026-10-13 within content-audit-2026-10-08; qualified source/rights/linguistic acceptance pending.
+Complete raw context:
+==Use of numerals in context==
+
+In English (and in many other Indo-European languages) the items being counted by a numeral are found following the numeral, and in the plural form.  In Russian, the syntax is somewhat more complex.  The case of the item must first be considered.  If the item needs to be in the nominative or inanimate accusative case, use the following rule.  
+
+The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+
+The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
+
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).  
+
+Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).  
+
+Numerals larger than 99 follow the above rules using the last two digits. For example: двести три собаки (two hundred and three dogs), двести тринадцать собак (two hundred and thirteen dogs).
+
+When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined in addition to the declension of the items following them.  This topic shall be discussed here later.  For now, be glad that these forms are relatively uncommon.  Examples follow:  Я видел двух друзей (I saw two friends), Ты не съела ни одной штуки (You didn't eat a single piece).
+
+In short, for nominative (and inanimate accusative) items, use the following rule to select the proper form of the item:
+
+1 -> nominative
+
+2, 3, 4 -> genitive singular
+
+5 and more -> genitive plural
+
+===A few more examples===
+* один час
+* два часа
+* пять часов 
+* двадцать один час
+* двадцать два часа
+* двадцать три часа
+* двадцать четыре часа
+
+* один год
+* два года
+* три года
+* четыре года
+* пять лет
+* пятьдесят один год
+* пятьдесят два года
+* пятьдесят пять лет
+    
+* одна минута
+* две минуты
+* три минуты
+* четыре минуты
+* пять минут
+* шесть минут
+* двадцать одна минута
+* тридцать две минуты
+* тридцать три минуты
+* сорок пять минут
+Context explanation:
+The supplied example один час uses masculine singular один with час. одна is the feminine singular form shown with девушка, so it does not agree with this noun here. Both forms mean one; the distinction is grammatical gender, not a different number. This recognizes the supplied counting form, not every declined case of the numeral.
+Tuple-v1:tuple-v1:1;6:час8:один1;8:одна
+shippedText=одна
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0315d56ca1515ed2adec087f8fbaea9c4f2de720bef39caecaea3a2870e4a44b
+contentHash=4e469ca0a530b26d9b812df7a459753ef09873ea5aa9de32046b20b230d16bb5
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -16043,6 +16869,252 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-u9-agreement-transfer-native-feminine`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1f3d0c0a855629610c3e084a729dbe1125bf2c8801d3ef81cec4622c71a773f8
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
+sourceRevision=4371358
+sourceRecordId=numbers-independent-hour:==Use of numerals in context==
+
+In English (and in many other Indo-European l
+originalSourceText===Use of numerals in context==
+
+In English (and in many other Indo-European languages) the items being counted by a numeral are found following the numeral, and in the plural form.  In Russian, the syntax is somewhat more complex.  The case of the item must first be considered.  If the item needs to be in the nominative or inanimate accusative case, use the following rule.  
+
+The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+
+The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
+
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).  
+
+Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).  
+
+Numerals larger than 99 follow the above rules using the last two digits. For example: двести три собаки (two hundred and three dogs), двести тринадцать собак (two hundred and thirteen dogs).
+
+When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined in addition to the declension of the items following them.  This topic shall be discussed here later.  For now, be glad that these forms are relatively uncommon.  Examples follow:  Я видел двух друзей (I saw two friends), Ты не съела ни одной штуки (You didn't eat a single piece).
+
+In short, for nominative (and inanimate accusative) items, use the following rule to select the proper form of the item:
+
+1 -> nominative
+
+2, 3, 4 -> genitive singular
+
+5 and more -> genitive plural
+
+===A few more examples===
+* один час
+* два часа
+* пять часов 
+* двадцать один час
+* двадцать два часа
+* двадцать три часа
+* двадцать четыре часа
+
+* один год
+* два года
+* три года
+* четыре года
+* пять лет
+* пятьдесят один год
+* пятьдесят два года
+* пятьдесят пять лет
+    
+* одна минута
+* две минуты
+* три минуты
+* четыре минуты
+* пять минут
+* шесть минут
+* двадцать одна минута
+* тридцать две минуты
+* тридцать три минуты
+* сорок пять минут
+shippedText=одна
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=e05d0a76571644c1d271afe936b827bee4829ffd63c0ea854f4fcbb5fbf95122
+contentHash=4e469ca0a530b26d9b812df7a459753ef09873ea5aa9de32046b20b230d16bb5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u9-agreement-transfer-native-masculine`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5b6af1ea0a41d7e7ab4241cd0482d1cecb0378dbf702f713f14eb42212e36b28
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
+sourceRevision=4371358
+sourceRecordId=numbers-independent-hour:==Use of numerals in context==
+
+In English (and in many other Indo-European l
+originalSourceText===Use of numerals in context==
+
+In English (and in many other Indo-European languages) the items being counted by a numeral are found following the numeral, and in the plural form.  In Russian, the syntax is somewhat more complex.  The case of the item must first be considered.  If the item needs to be in the nominative or inanimate accusative case, use the following rule.  
+
+The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+
+The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
+
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).  
+
+Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).  
+
+Numerals larger than 99 follow the above rules using the last two digits. For example: двести три собаки (two hundred and three dogs), двести тринадцать собак (two hundred and thirteen dogs).
+
+When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined in addition to the declension of the items following them.  This topic shall be discussed here later.  For now, be glad that these forms are relatively uncommon.  Examples follow:  Я видел двух друзей (I saw two friends), Ты не съела ни одной штуки (You didn't eat a single piece).
+
+In short, for nominative (and inanimate accusative) items, use the following rule to select the proper form of the item:
+
+1 -> nominative
+
+2, 3, 4 -> genitive singular
+
+5 and more -> genitive plural
+
+===A few more examples===
+* один час
+* два часа
+* пять часов 
+* двадцать один час
+* двадцать два часа
+* двадцать три часа
+* двадцать четыре часа
+
+* один год
+* два года
+* три года
+* четыре года
+* пять лет
+* пятьдесят один год
+* пятьдесят два года
+* пятьдесят пять лет
+    
+* одна минута
+* две минуты
+* три минуты
+* четыре минуты
+* пять минут
+* шесть минут
+* двадцать одна минута
+* тридцать две минуты
+* тридцать три минуты
+* сорок пять минут
+shippedText=один
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=e05d0a76571644c1d271afe936b827bee4829ffd63c0ea854f4fcbb5fbf95122
+contentHash=c5cffb9e60232cdf6f395101a5987dcb1b5df343397604bfeca92cba411c784f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u9-agreement-transfer-native-noun`
+
+- Objectives: obj-u9-odindva
+- Sessions: u9-s-orient, u9-s-odindva
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9bff15b77b76d4f97113c0c402beb5584de87d6ad5c1ac467304e19ff558026a
+
+recordType=meaning
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358
+sourceRevision=4371358
+sourceRecordId=numbers-independent-hour:==Use of numerals in context==
+
+In English (and in many other Indo-European l
+originalSourceText===Use of numerals in context==
+
+In English (and in many other Indo-European languages) the items being counted by a numeral are found following the numeral, and in the plural form.  In Russian, the syntax is somewhat more complex.  The case of the item must first be considered.  If the item needs to be in the nominative or inanimate accusative case, use the following rule.  
+
+The numeral один (1) should be used in the proper form to indicate gender (and, number, believe it or not).  For example: один мальчик (one boy), одна девушка (one girl), одно животное (one animal), одни джинсы (one [pair of] jeans).  The plural form of the numeral (1) is a bit of an oddity, but its use will become clear with time.  Following a form of один should come the item at hand in the nominative or inanimate accusative case, as appropriate.
+
+The numerals два (or две), три, and четыре all require the following item to be presented in the genitive singular form.  The numeral два has two forms: два for masculine and neuter items and две for feminine items.  After the numeral два, each numeral has only a single form.  See for example:  две девушки (two girls), три кошки (three cats), четыре мальчика (four boys).  
+
+The numerals пять (5) through двадцать (20) require their attached items in the genitive plural forms, as in these examples:  пять девушек (five girls), десять копеек (ten kopeks), шестнадцать рублей (sixteen rubles).  
+
+Numerals larger than twenty follow the above rules using the last digit.  Think of numerals ending in zero as ending in ten.  For example:  тридцать три рюмки (thirty-three shot glasses), сорок один год (forty-one years), шестьдесят девять слов (sixty-nine words).  
+
+Numerals larger than 99 follow the above rules using the last two digits. For example: двести три собаки (two hundred and three dogs), двести тринадцать собак (two hundred and thirteen dogs).
+
+When the items at hand belong not in the nominative or inanimate accusative case, the numerals themselves must be declined in addition to the declension of the items following them.  This topic shall be discussed here later.  For now, be glad that these forms are relatively uncommon.  Examples follow:  Я видел двух друзей (I saw two friends), Ты не съела ни одной штуки (You didn't eat a single piece).
+
+In short, for nominative (and inanimate accusative) items, use the following rule to select the proper form of the item:
+
+1 -> nominative
+
+2, 3, 4 -> genitive singular
+
+5 and more -> genitive plural
+
+===A few more examples===
+* один час
+* два часа
+* пять часов 
+* двадцать один час
+* двадцать два часа
+* двадцать три часа
+* двадцать четыре часа
+
+* один год
+* два года
+* три года
+* четыре года
+* пять лет
+* пятьдесят один год
+* пятьдесят два года
+* пятьдесят пять лет
+    
+* одна минута
+* две минуты
+* три минуты
+* четыре минуты
+* пять минут
+* шесть минут
+* двадцать одна минута
+* тридцать две минуты
+* тридцать три минуты
+* сорок пять минут
+shippedText=час
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=e05d0a76571644c1d271afe936b827bee4829ffd63c0ea854f4fcbb5fbf95122
+contentHash=3b717961ddfdfb919640a578d8ddb5b267fe8ece1b63aba1a1d98a589c07c7e8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u9-cardinal-rem`
 
 - Objectives: obj-u9-cardinal
@@ -19735,8 +20807,6 @@ permitsAppUse=true
 - `u9-st-teach-odindva-1` EXAMPLE `ex-u9-odindva-0`
 - `u9-st-teach-odindva-1` EXAMPLE `ex-u9-odindva-1`
 - `u9-st-teach-odindva-1` REFERENCE `ref-u610-attribution`
-- `u9-st-guided-odindva-1` REMEDIATION `u9-st-rem-odindva`
-- `u9-st-guided-odindva-1` ITEM `u9-g-odindva-0`
 - `u9-st-teach-odindva-2` REFERENCE `ref-u610-attribution`
 - `u9-st-teach-odindva-3` EXAMPLE `ex-u9-odindva-2`
 - `u9-st-teach-odindva-3` EXAMPLE `ex-u9-odindva-3`
@@ -19750,8 +20820,18 @@ permitsAppUse=true
 - `u9-st-teach-odindva-6` EXAMPLE `ex-or-u9-odindva-8`
 - `u9-st-teach-odindva-6` EXAMPLE `ex-or-u9-odindva-9`
 - `u9-st-teach-odindva-6` REFERENCE `ref-u610-attribution`
+- `u9-st-guided-odindva-1` REMEDIATION `u9-st-rem-odindva`
+- `u9-st-guided-odindva-1` ITEM `u9-g-odindva-0`
 - `u9-st-rem-odindva` EXAMPLE `ex-u9-odindva-0`
 - `u9-st-rem-odindva` EXAMPLE `ex-u9-odindva-1`
+- `u9-st-rem-odindva` EXAMPLE `ex-u9-odindva-2`
+- `u9-st-rem-odindva` EXAMPLE `ex-u9-odindva-3`
+- `u9-st-rem-odindva` EXAMPLE `ex-u9-odindva-4`
+- `u9-st-rem-odindva` EXAMPLE `ex-u9-odindva-5`
+- `u9-st-rem-odindva` EXAMPLE `ex-u9-odindva-6`
+- `u9-st-rem-odindva` EXAMPLE `ex-u9-odindva-7`
+- `u9-st-rem-odindva` EXAMPLE `ex-or-u9-odindva-8`
+- `u9-st-rem-odindva` EXAMPLE `ex-or-u9-odindva-9`
 - `u9-st-check-odindva` REMEDIATION `u9-st-rem-odindva`
 - `u9-st-check-odindva` ITEM `u9-i-odindva-1`
 - `u9-st-check-odindva` ITEM `u9-i-odindva-2`
@@ -19849,6 +20929,27 @@ permitsAppUse=true
 - `obj-u9-tens` PROVENANCE `prov-ca-9-37`
 - `obj-u9-hundreds` PROVENANCE `prov-ca-9-38`
 - `obj-u9-thousands` PROVENANCE `prov-ca-9-39`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-agreement-transfer-check-body`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-agreement-transfer-guided-body`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-agreement-transfer-item-feedback`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-agreement-transfer-item-prompt`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-agreement-transfer-item-rationale`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-agreement-transfer-remediation-body`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-agreement-transfer-teach-1-body`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-agreement-transfer-teach-1-title`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-agreement-transfer-teach-2-body`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-agreement-transfer-teach-2-title`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-agreement-transfer-teach-3-body`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-agreement-transfer-teach-3-title`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-agreement-transfer-teach-4-body`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-agreement-transfer-teach-4-title`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-agreement-transfer-teach-5-body`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-agreement-transfer-teach-5-title`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-agreement-transfer-teach-6-body`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-agreement-transfer-teach-6-title`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-agreement-transfer-u9-i-odindva-4-0`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-agreement-transfer-u9-i-odindva-4-1`
+- `obj-u9-odindva` PROVENANCE `prov-ca-u9-agreement-transfer-u9-i-odindva-4-2`
 - `obj-u9-odindva` PROVENANCE `prov-ca-u9-composition-feedback-u9-g-odindva-0`
 - `obj-u9-odindva` PROVENANCE `prov-ca-u9-composition-feedback-u9-g-odindva-0-distractor`
 - `obj-u9-thousands` PROVENANCE `prov-ca-u9-composition-feedback-u9-g-thousands-0`
@@ -20210,6 +21311,9 @@ permitsAppUse=true
 - `obj-u9-thousands` PROVENANCE `prov-ex-u9-thousands-7-ru`
 - `obj-u9-thousands` PROVENANCE `prov-ex-u9-thousands-7-ru-r0`
 - `obj-u9-thousands` PROVENANCE `prov-ex-u9-thousands-7-ru-r1`
+- `obj-u9-odindva` PROVENANCE `prov-u9-agreement-transfer-native-feminine`
+- `obj-u9-odindva` PROVENANCE `prov-u9-agreement-transfer-native-masculine`
+- `obj-u9-odindva` PROVENANCE `prov-u9-agreement-transfer-native-noun`
 - `obj-u9-cardinal` PROVENANCE `prov-u9-cardinal-rem`
 - `obj-u9-cardinal` PROVENANCE `prov-u9-cardinal-rem-r0`
 - `obj-u9-cardinal` PROVENANCE `prov-u9-cardinal-rem-r1`

@@ -1,6 +1,6 @@
 {
-  "repositoryCommit": "189d173407bb93e82e67c3e2ef0bff27b6532343",
-  "scope": "EXACT_SAME_UNIT_PROMPT_CUE_KEY_ORDERED_OPTIONS_SIGNATURE_NOT_ALL_TRANSFER_DEFECTS",
+  "repositoryCommit": "3fcf287f2118e51f39d4c339f9a06bc526fbe57b",
+  "scope": "EXACT_SAME_UNIT_GATING_RECOGNITION_GUIDED_AND_INDEPENDENT_PROMPT_CUE_KEY_ORDERED_OPTIONS_SIGNATURE_NOT_ALL_TRANSFER_DEFECTS",
   "groups": [
     {
       "unitNumber": 8,
@@ -18,23 +18,6 @@
       "objectiveIds": [
         "obj-u8-plural",
         "obj-u8-spelling"
-      ]
-    },
-    {
-      "unitNumber": 9,
-      "itemIds": [
-        "u9-g-odindva-0",
-        "u9-i-odindva-4"
-      ],
-      "prompt": "Which admitted form agrees with the shown word?",
-      "cue": "мальчик",
-      "answer": "один",
-      "options": [
-        "один",
-        "одна"
-      ],
-      "objectiveIds": [
-        "obj-u9-odindva"
       ]
     },
     {
@@ -144,11 +127,85 @@
       ]
     }
   ],
-  "count": 8,
+  "count": 7,
   "originalDiagnosticGroupCount": 11,
-  "priorInventoryCommit": "2f06e472876d5248a403b8f523305918afca65fa",
-  "priorInventoryCount": 9,
-  "difference": "Unit4/17 repeated gloss roles became optional; Unit8 independent adjective now uses a distinct source lexeme and ending shape. Eight exact groups remain, without semantic closure. The Unit8 noun/spelling pair is inter-objective, with independent plural before guided spelling in normal session order; contextual review is required rather than automatically treating it as rehearsed-before-independent. Cross-unit review repetitions remain separate.",
-  "engineeringDisposition": "PARTIAL_UNIT17_AND_UNIT8_AGREEMENT_FIXES_PENDING_INDEPENDENT_VERIFICATION_OTHER_GROUPS_OPEN",
-  "formalAcceptance": false
+  "priorInventoryCommit": "5612180322ccf9c38a39def22f3640c7477a9d0d",
+  "priorInventoryCount": 8,
+  "difference": "Unit9 independent masculine one uses distinct source-supplied час instead of guided мальчик. Correct key and other pairs retained. Seven guided/independent exact groups remain; not semantic closure. Four additional same-role groups are explicitly outside this role-scoped inventory. Inter-objective Unit8 plural/spelling ordering requires contextual review.",
+  "engineeringDisposition": "PARTIAL_UNIT17_UNIT8_AND_UNIT9_AGREEMENT_FIXES_PENDING_INDEPENDENT_VERIFICATION_OTHER_GROUPS_OPEN",
+  "formalAcceptance": false,
+  "additionalSameRoleGroupsOutsideGuidedIndependentInventory": [
+    {
+      "unitNumber": 6,
+      "itemIds": [
+        "u6-i-animacy-1",
+        "u6-i-animacy-3"
+      ],
+      "prompt": "Which singular accusative form is used when the shown masculine animate noun is the direct object?",
+      "cue": "учи́тель",
+      "answer": "учи́теля",
+      "options": [
+        "учи́теля",
+        "учи́тель"
+      ],
+      "objectiveIds": [
+        "obj-u6-animacy"
+      ]
+    },
+    {
+      "unitNumber": 9,
+      "itemIds": [
+        "u9-g-quantity-0",
+        "u9-g-pattern-0"
+      ],
+      "prompt": "Which complete case explanation fits the shown example?",
+      "cue": "один час",
+      "answer": "In this basic counting phrase, the noun is nominative singular.",
+      "options": [
+        "In this basic counting phrase, the noun is nominative singular.",
+        "In this basic counting phrase, the noun is genitive singular.",
+        "In this basic counting phrase, the noun is genitive plural."
+      ],
+      "objectiveIds": [
+        "obj-u9-quantity",
+        "obj-u9-pattern"
+      ]
+    },
+    {
+      "unitNumber": 10,
+      "itemIds": [
+        "u10-i-have-1",
+        "u10-i-absence-3"
+      ],
+      "prompt": "Which explanation accounts for the noun cases in the shown line?",
+      "cue": "Да, у меня есть сын.",
+      "answer": "In this line, the possessor is genitive and the possessed thing is nominative.",
+      "options": [
+        "In this line, the possessor is genitive and the possessed thing is nominative.",
+        "In this line, the absent thing is in the genitive case."
+      ],
+      "objectiveIds": [
+        "obj-u10-have",
+        "obj-u10-absence"
+      ]
+    },
+    {
+      "unitNumber": 10,
+      "itemIds": [
+        "u10-i-have-4",
+        "u10-i-absence-4"
+      ],
+      "prompt": "Which explanation accounts for the noun cases in the shown line?",
+      "cue": "У моего́ бра́та нет де́нег",
+      "answer": "In this line, the absent thing is in the genitive case.",
+      "options": [
+        "In this line, the possessor is genitive and the possessed thing is nominative.",
+        "In this line, the absent thing is in the genitive case."
+      ],
+      "objectiveIds": [
+        "obj-u10-have",
+        "obj-u10-absence"
+      ]
+    }
+  ]
 }

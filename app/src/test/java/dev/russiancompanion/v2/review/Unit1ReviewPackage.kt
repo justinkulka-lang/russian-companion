@@ -93,7 +93,7 @@ internal fun curriculumCommitForUnit(unitNumber: Int): String =
     else if (unitNumber == 5) UNIT5_INDECLINABILITY_CURRICULUM_COMMIT
     else if (unitNumber == 6) UNIT6_FEEDBACK_CURRICULUM_COMMIT
     else if (unitNumber == 7) UNIT7_FEEDBACK_CURRICULUM_COMMIT
-    else if (unitNumber == 9) UNIT9_NUMBER_FEEDBACK_CURRICULUM_COMMIT
+    else if (unitNumber == 9) UNIT9_AGREEMENT_TRANSFER_CURRICULUM_COMMIT
     else if (unitNumber in 1..30) CONTENT_AUDIT_CORRECTION_CURRICULUM_COMMIT else UNITS_11_15_CURRICULUM_COMMIT
 
 internal const val CURRICULUM_SOURCE_COMMIT = UNITS_6_10_CURRICULUM_COMMIT
@@ -1964,6 +1964,8 @@ private fun canonStr(value: String): String = jsonString(value)
 
 internal fun reviewRepositoryRoot(): File =
     listOf(File("."), File("..")).first { File(it, "app/src/main").isDirectory }
+
+internal const val UNIT9_AGREEMENT_TRANSFER_CURRICULUM_COMMIT = "3fcf287f2118e51f39d4c339f9a06bc526fbe57b"
 
 internal fun curriculumSourceCommitErrors(recorded: String, repositoryRoot: File, unitNumber: Int): List<String> {
     val errors = mutableListOf<String>()
