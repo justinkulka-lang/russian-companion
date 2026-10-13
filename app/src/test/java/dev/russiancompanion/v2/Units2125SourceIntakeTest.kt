@@ -64,7 +64,8 @@ class Units2125SourceIntakeTest {
             17 to "16e8478be2cab8dad81faf971e4c13f088323b93612407a3b928ce85d31ea1c5",
         18 to "5041c377116988ac5906d4147af957b744742e28b9a3e44dd9489527648d62e3",
         19 to "5bec5c89d70f5928b6d7e03ab4ca35ad1b226451abe832e915b0f6f72f0e7907",
-        20 to "bb408265fb5239daeb86d43c007061bff330e02a0a9afc1aa677526ccf57302b",
+        // Prior Unit20 directionality implementation supersedes historical bb408265fb5239daeb86d43c007061bff330e02a0a9afc1aa677526ccf57302b.
+        20 to "9238893adafd8d2001561e254f2471a7f23067f1979827873b970ed467768688",
     )
 
     private val preservedMappingDigests = mapOf(

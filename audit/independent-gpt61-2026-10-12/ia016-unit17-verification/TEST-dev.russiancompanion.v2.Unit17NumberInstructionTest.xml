@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit17NumberInstructionTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-13T18:39:52.139Z" hostname="d0fbcd1608d3" time="16.397">
+  <properties/>
+  <testcase name="choicesReceiveSpecificMeaningFeedback" classname="dev.russiancompanion.v2.Unit17NumberInstructionTest" time="1.906"/>
+  <testcase name="coverageIsOriginalPendingAndCorpusValid" classname="dev.russiancompanion.v2.Unit17NumberInstructionTest" time="13.933"/>
+  <testcase name="meaningsRulesAndLimitsPrecedePractice" classname="dev.russiancompanion.v2.Unit17NumberInstructionTest" time="0.529"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
