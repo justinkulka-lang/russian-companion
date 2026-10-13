@@ -34,6 +34,7 @@ internal object CompleteRuleContextPins {
         "ca-rule-context:u9-i-pattern-2" to "40b9b54ba28f25c4d392169d54316bbed09497a217b7a3b3bdeb1e968bf73358",
         "ca-rule-context:u9-i-pattern-3" to "c0d8f40ceeac159db2e90171db8ab57913fc539b09ad14bcae5c263393ffb104",
         "ca-rule-context:u9-i-pattern-4" to "8d56873c882a2014e2dcf857c9562428754d792439c78a44ad661009309fa5cf",
+        "ca-rule-context:u29-i-active-2" to "95d18c3e8285debf878068b03f7d3429ef4cb0f537d062dfe3ab1a2f9f83bf99",
     )
     fun required(itemId: String) = hashes.containsKey("ca-rule-context:$itemId")
     private fun hash(value: String) = MessageDigest.getInstance("SHA-256").digest(value.toByteArray(Charsets.UTF_8))
@@ -56,6 +57,7 @@ internal object CompleteRuleContextPins {
     }
     fun itemMatches(pack: V2CurriculumPack, item: V2CheckItem): Boolean {
         val expectedObjective = when {
+            item.id == "u29-i-active-2" -> "obj-u29-active"
             item.id.startsWith("u8-") -> "obj-u8-availability"
             item.id.startsWith("u9-") && "-quantity-" in item.id -> "obj-u9-quantity"
             item.id.startsWith("u9-") -> "obj-u9-pattern"

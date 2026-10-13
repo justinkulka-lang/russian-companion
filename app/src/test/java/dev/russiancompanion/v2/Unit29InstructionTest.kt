@@ -4,10 +4,10 @@ import org.junit.Assert.*
 import org.junit.Test
 import java.io.File
 class Unit29InstructionTest {
-    @Test fun instructionSeparatesTimeMeaningAndTheReversedQuestion() {
+    @Test fun instructionSeparatesTimeMeaningAndClassifiesTheDisplayedForm() {
         val text = lesson("u29-s-active")
         assertTrue(text.contains("entity performing the action"))
-        assertTrue(text.contains("does not turn the displayed past form into a present form"))
+        assertTrue(text.contains("Classify the displayed form itself"))
         assertTrue(text.contains("not a general algorithm"))
         val adjective = lesson("u29-s-short-adjective")
         assertTrue(adjective.contains("invariant colour form"))
