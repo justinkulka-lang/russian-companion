@@ -59,6 +59,10 @@ internal object CompleteRuleContextPins {
         "ca-rule-context:u20-i-direction-city" to "0b1142168f9d306f64963f8e6bd5e244a301fc714f8d3adb6dea7aa8b2e781cb",
         "ca-rule-context:u20-i-direction-weekly" to "adcc594ad7f033e607e2c5621fc73b23d645bb992d614e17471f29ca9937ef8c",
         "ca-rule-context:u20-i-direction-round" to "b171342b5221b62065ca1666d6c51a35ca24ee5fc0408e91f80b51f18d6027bb",
+        "ca-rule-context:u29-i-punctuation-after" to "c62e02bbf86d3f93ad9d942508d251d80e7d4cf22f7687fdfadf5c07875b786e",
+        "ca-rule-context:u29-i-punctuation-pronoun" to "17bed6f170ae6bf962eb73d2462fce256948bf6e32be8f8811674b755eb3ce93",
+        "ca-rule-context:u29-i-punctuation-cause" to "ce5857b0173eef631cc5b3781478fe031b5c0c4aa98e29c1014c67feeb1c13d4",
+        "ca-rule-context:u29-i-punctuation-terminal" to "58c24d0d711e3a5052a14311d33d50cec6cfb22e63f74fd3211ef06dba0813a1",
     )
     fun required(itemId: String) = hashes.containsKey("ca-rule-context:$itemId")
     private fun hash(value: String) = MessageDigest.getInstance("SHA-256").digest(value.toByteArray(Charsets.UTF_8))
@@ -81,6 +85,7 @@ internal object CompleteRuleContextPins {
     }
     fun itemMatches(pack: V2CurriculumPack, item: V2CheckItem): Boolean {
         val expectedObjective = when {
+            item.id in setOf("u29-i-punctuation-after", "u29-i-punctuation-pronoun", "u29-i-punctuation-cause", "u29-i-punctuation-terminal") -> "obj-u29-punctuation"
             item.id.startsWith("u20-") && "-direction-" in item.id -> "obj-u20-motion"
             item.id.startsWith("u30-") && "-native-name-" in item.id -> "obj-u30-letter-names"
             item.id.startsWith("u30-") && "-initialism-" in item.id -> "obj-u30-abbrev-examples"

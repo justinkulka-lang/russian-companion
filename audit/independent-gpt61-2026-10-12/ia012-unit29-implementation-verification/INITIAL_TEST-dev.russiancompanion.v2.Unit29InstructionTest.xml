@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit29InstructionTest" tests="5" skipped="0" failures="1" errors="0" timestamp="2026-10-13T17:54:51.922Z" hostname="d0fbcd1608d3" time="8.748">
+  <properties/>
+  <testcase name="instructionSeparatesTimeMeaningAndClassifiesTheDisplayedForm" classname="dev.russiancompanion.v2.Unit29InstructionTest" time="0.885"/>
+  <testcase name="registerDoesNotReplaceActorSequenceOrEventMeaning" classname="dev.russiancompanion.v2.Unit29InstructionTest" time="0.966"/>
+  <testcase name="remediationRestoresEveryCardAndEveryExampleBeforePractice" classname="dev.russiancompanion.v2.Unit29InstructionTest" time="0.149"/>
+  <testcase name="independentlyAuthoredPendingCoveragePassesTheProductionValidator" classname="dev.russiancompanion.v2.Unit29InstructionTest" time="6.459">
+    <failure message="java.lang.AssertionError: Russian text has no admitted source record: нависшая над высокими вершинами тополей,&#10;Russian text has no admitted source record: уже сыпала дождиком&#10;Russian text has no admitted source record: Воспитанный в традициях Фоппы,&#10;Russian text has no admitted source record: Бернардо Дзенале и Амброджо Бергоньоне,&#10;Russian text has no admitted source record: он прошёл обучение в мастерской Леонардо.&#10;Russian text has no admitted source record: Изумлённый этим хохотом,&#10;Russian text has no admitted source record: Павел сел на пол и смотрел куда&#10;Russian text has no admitted source record: то в угол&#10;Russian text has no admitted source record: Вдали виднеется маяк,&#10;Russian text has no admitted source record: стоящий у моря&#10;Russian text has no admitted source record: нависшая над высокими вершинами тополей,&#10;Russian text has no admitted source record: уже сыпала дождиком&#10;Russian text has no admitted source record: нависшая над высокими вершинами тополей,&#10;Russian text has no admitted source record: уже сыпала дождиком&#10;Russian text has no admitted source record: нависшая над высокими вершинами тополей,&#10;Russian text has no admitted source record: уже сыпала дождиком&#10;Russian text has no admitted source record: Воспитанный в традициях Фоппы,&#10;Russian text has no admitted source record: Бернардо Дзенале и Амброджо Бергоньоне,&#10;Russian text has no admitted source record: он прошёл обучение в мастерской Леонардо.&#10;Russian text has no admitted source record: Воспитанный в традициях Фоппы,&#10;Russian text has no admitted source record: Бернардо Дзенале и Амброджо Бергоньоне,&#10;Russian text has no admitted source record: он прошёл обучение в мастерской Леонардо.&#10;Russian text has no admitted source record: Воспитанный в традициях Фоппы,&#10;Russian text has no admitted source record: Бернардо Дзенале и Амброджо Бергоньоне,&#10;Russian text has no admitted source record: он прошёл обучение в мастерской Леонардо.&#10;Russian text has no admitted source record: Изумлённый этим хохотом,&#10;Russian text has no admitted source record: Павел сел на пол и смотрел куда&#10;Russian text has no admitted source record: то в угол&#10;Russian text has no admitted source record: Изумлённый этим хохотом,&#10;Russian text has no admitted source record: Павел сел на пол и смотрел куда&#10;Russian text has no admitted source record: то в угол&#10;Russian text has no admitted source record: Изумлённый этим хохотом,&#10;Russian text has no admitted source record: Павел сел на пол и смотрел куда&#10;Russian text has no admitted source record: то в угол&#10;Russian text has no admitted source record: Вдали виднеется маяк,&#10;Russian text has no admitted source record: стоящий у моря&#10;Russian text has no admitted source record: Вдали виднеется маяк,&#10;Russian text has no admitted source record: стоящий у моря&#10;Russian text has no admitted source record: Вдали виднеется маяк,&#10;Russian text has no admitted source record: стоящий у моря&#10;Russian text has no admitted source record: Воспитанный в традициях Фоппы,&#10;Russian text has no admitted source record: Бернардо Дзенале и Амброджо Бергоньоне,&#10;Russian text has no admitted source record: он прошёл обучение в мастерской Леонардо.&#10;Russian text has no admitted source record: Фоппы&#10;Russian text has no admitted source record: Бергоньоне&#10;Russian text has no admitted source record: Изумлённый этим хохотом,&#10;Russian text has no admitted source record: Павел сел на пол и смотрел куда&#10;Russian text has no admitted source record: то в угол&#10;Russian text has no admitted source record: Воспитанный в традициях Фоппы,&#10;Russian text has no admitted source record: Бернардо Дзенале и Амброджо Бергоньоне,&#10;Russian text has no admitted source record: он прошёл обучение в мастерской Леонардо.&#10;Russian text has no admitted source record: Изумлённый этим хохотом,&#10;Russian text has no admitted source record: Павел сел на пол и смотрел куда&#10;Russian text has no admitted source record: то в угол&#10;Russian text has no admitted source record: нависшая над высокими вершинами тополей,&#10;Russian text has no admitted source record: уже сыпала дождиком&#10;Russian text has no admitted source record: Вдали виднеется маяк,&#10;Russian text has no admitted source record: стоящий у моря&#10;Russian text has no admitted source record: нависшая над высокими вершинами тополей,&#10;Russian text has no admitted source record: уже сыпала дождиком&#10;Russian text has no admitted source record: Вдали виднеется маяк,&#10;Russian text has no admitted source record: стоящий у моря&#10;Russian text has no admitted source record: Воспитанный в традициях Фоппы,&#10;Russian text has no admitted source record: Бернардо Дзенале и Амброджо Бергоньоне,&#10;Russian text has no admitted source record: он прошёл обучение в мастерской Леонардо.&#10;Russian text has no admitted source record: Фоппы&#10;Russian text has no admitted source record: Бергоньоне&#10;Russian text has no admitted source record: Изумлённый этим хохотом,&#10;Russian text has no admitted source record: Павел сел на пол и смотрел куда&#10;Russian text has no admitted source record: то в угол&#10;Russian text has no admitted source record: нависшая над высокими вершинами тополей,&#10;Russian text has no admitted source record: уже сыпала дождиком&#10;Russian text has no admitted source record: Вдали виднеется маяк,&#10;Russian text has no admitted source record: стоящий у моря&#10;Russian text has no admitted source record: Воспитанный в традициях Фоппы,&#10;Russian text has no admitted source record: Бернардо Дзенале и Амброджо Бергоньоне,&#10;Russian text has no admitted source record: он прошёл обучение в мастерской Леонардо.&#10;Russian text has no admitted source record: Изумлённый этим хохотом,&#10;Russian text has no admitted source record: Павел сел на пол и смотрел куда&#10;Russian text has no admitted source record: то в угол&#10;Russian text has no admitted source record: нависшая над высокими вершинами тополей,&#10;Russian text has no admitted source record: уже сыпала дождиком&#10;Russian text has no admitted source record: Вдали виднеется маяк,&#10;Russian text has no admitted source record: стоящий у моря&#10;Russian text has no admitted source record: нависшая над высокими вершинами тополей,&#10;Russian text has no admitted source record: уже сыпала дождиком&#10;Russian text has no admitted source record: нависшая над высокими вершинами тополей,&#10;Russian text has no admitted source record: уже сыпала дождиком&#10;Russian text has no admitted source record: нависшая над высокими вершинами тополей,&#10;Russian text has no admitted source record: уже сыпала дождиком&#10;Russian text has no admitted source record: Воспитанный в традициях Фоппы,&#10;Russian text has no admitted source record: Бернардо Дзенале и Амброджо Бергоньоне,&#10;Russian text has no admitted source record: он прошёл обучение в мастерской Леонардо.&#10;Russian text has no admitted source record: Воспитанный в традициях Фоппы,&#10;Russian text has no admitted source record: Бернардо Дзенале и Амброджо Бергоньоне,&#10;Russian text has no admitted source record: он прошёл обучение в мастерской Леонардо.&#10;Russian text has no admitted source record: Воспитанный в традициях Фоппы,&#10;Russian text has no admitted source record: Бернардо Дзенале и Амброджо Бергоньоне,&#10;Russian text has no admitted source record: он прошёл обучение в мастерской Леонардо.&#10;Russian text has no admitted source record: Изумлённый этим хохотом,&#10;Russian text has no admitted source record: Павел сел на пол и смотрел куда&#10;Russian text has no admitted source record: то в угол&#10;Russian text has no admitted source record: Изумлённый этим хохотом,&#10;Russian text has no admitted source record: Павел сел на пол и смотрел куда&#10;Russian text has no admitted source record: то в угол&#10;Russian text has no admitted source record: Изумлённый этим хохотом,&#10;Russian text has no admitted source record: Павел сел на пол и смотрел куда&#10;Russian text has no admitted source record: то в угол&#10;Russian text has no admitted source record: Вдали виднеется маяк,&#10;Russian text has no admitted source record: стоящий у моря&#10;Russian text has no admitted source record: Вдали виднеется маяк,&#10;Russian text has no admitted source record: стоящий у моря&#10;Russian text has no admitted source record: Вдали виднеется маяк,&#10;Russian text has no admitted source record: стоящий у моря&#10;Source capability cap-obj-u29-punctuation has no reviewable instruction and check chain&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Unit 29 Russian text has no resolved provenance record&#10;Objective obj-u29-punctuation has no frozen native punctuation application chain&#10;Unit 29 is not content-complete without admitted participle-punctuation source capabilities&#10;Item u29-i-punctuation-after response type&#10;Item u29-i-punctuation-pronoun response type&#10;Item u29-i-punctuation-cause response type&#10;Item u29-i-punctuation-terminal response type" type="java.lang.AssertionError">java.lang.AssertionError: Russian text has no admitted source record: нависшая над высокими вершинами тополей,
+Russian text has no admitted source record: уже сыпала дождиком
+Russian text has no admitted source record: Воспитанный в традициях Фоппы,
+Russian text has no admitted source record: Бернардо Дзенале и Амброджо Бергоньоне,
+Russian text has no admitted source record: он прошёл обучение в мастерской Леонардо.
+Russian text has no admitted source record: Изумлённый этим хохотом,
+Russian text has no admitted source record: Павел сел на пол и смотрел куда
+Russian text has no admitted source record: то в угол
+Russian text has no admitted source record: Вдали виднеется маяк,
+Russian text has no admitted source record: стоящий у моря
+Russian text has no admitted source record: нависшая над высокими вершинами тополей,
+Russian text has no admitted source record: уже сыпала дождиком
+Russian text has no admitted source record: нависшая над высокими вершинами тополей,
+Russian text has no admitted source record: уже сыпала дождиком
+Russian text has no admitted source record: нависшая над высокими вершинами тополей,
+Russian text has no admitted source record: уже сыпала дождиком
+Russian text has no admitted source record: Воспитанный в традициях Фоппы,
+Russian text has no admitted source record: Бернардо Дзенале и Амброджо Бергоньоне,
+Russian text has no admitted source record: он прошёл обучение в мастерской Леонардо.
+Russian text has no admitted source record: Воспитанный в традициях Фоппы,
+Russian text has no admitted source record: Бернардо Дзенале и Амброджо Бергоньоне,
+Russian text has no admitted source record: он прошёл обучение в мастерской Леонардо.
+Russian text has no admitted source record: Воспитанный в традициях Фоппы,
+Russian text has no admitted source record: Бернардо Дзенале и Амброджо Бергоньоне,
+Russian text has no admitted source record: он прошёл обучение в мастерской Леонардо.
+Russian text has no admitted source record: Изумлённый этим хохотом,
+Russian text has no admitted source record: Павел сел на пол и смотрел куда
+Russian text has no admitted source record: то в угол
+Russian text has no admitted source record: Изумлённый этим хохотом,
+Russian text has no admitted source record: Павел сел на пол и смотрел куда
+Russian text has no admitted source record: то в угол
+Russian text has no admitted source record: Изумлённый этим хохотом,
+Russian text has no admitted source record: Павел сел на пол и смотрел куда
+Russian text has no admitted source record: то в угол
+Russian text has no admitted source record: Вдали виднеется маяк,
+Russian text has no admitted source record: стоящий у моря
+Russian text has no admitted source record: Вдали виднеется маяк,
+Russian text has no admitted source record: стоящий у моря
+Russian text has no admitted source record: Вдали виднеется маяк,
+Russian text has no admitted source record: стоящий у моря
+Russian text has no admitted source record: Воспитанный в традициях Фоппы,
+Russian text has no admitted source record: Бернардо Дзенале и Амброджо Бергоньоне,
+Russian text has no admitted source record: он прошёл обучение в мастерской Леонардо.
+Russian text has no admitted source record: Фоппы
+Russian text has no admitted source record: Бергоньоне
+Russian text has no admitted source record: Изумлённый этим хохотом,
+Russian text has no admitted source record: Павел сел на пол и смотрел куда
+Russian text has no admitted source record: то в угол
+Russian text has no admitted source record: Воспитанный в традициях Фоппы,
+Russian text has no admitted source record: Бернардо Дзенале и Амброджо Бергоньоне,
+Russian text has no admitted source record: он прошёл обучение в мастерской Леонардо.
+Russian text has no admitted source record: Изумлённый этим хохотом,
+Russian text has no admitted source record: Павел сел на пол и смотрел куда
+Russian text has no admitted source record: то в угол
+Russian text has no admitted source record: нависшая над высокими вершинами тополей,
+Russian text has no admitted source record: уже сыпала дождиком
+Russian text has no admitted source record: Вдали виднеется маяк,
+Russian text has no admitted source record: стоящий у моря
+Russian text has no admitted source record: нависшая над высокими вершинами тополей,
+Russian text has no admitted source record: уже сыпала дождиком
+Russian text has no admitted source record: Вдали виднеется маяк,
+Russian text has no admitted source record: стоящий у моря
+Russian text has no admitted source record: Воспитанный в традициях Фоппы,
+Russian text has no admitted source record: Бернардо Дзенале и Амброджо Бергоньоне,
+Russian text has no admitted source record: он прошёл обучение в мастерской Леонардо.
+Russian text has no admitted source record: Фоппы
+Russian text has no admitted source record: Бергоньоне
+Russian text has no admitted source record: Изумлённый этим хохотом,
+Russian text has no admitted source record: Павел сел на пол и смотрел куда
+Russian text has no admitted source record: то в угол
+Russian text has no admitted source record: нависшая над высокими вершинами тополей,
+Russian text has no admitted source record: уже сыпала дождиком
+Russian text has no admitted source record: Вдали виднеется маяк,
+Russian text has no admitted source record: стоящий у моря
+Russian text has no admitted source record: Воспитанный в традициях Фоппы,
+Russian text has no admitted source record: Бернардо Дзенале и Амброджо Бергоньоне,
+Russian text has no admitted source record: он прошёл обучение в мастерской Леонардо.
+Russian text has no admitted source record: Изумлённый этим хохотом,
+Russian text has no admitted source record: Павел сел на пол и смотрел куда
+Russian text has no admitted source record: то в угол
+Russian text has no admitted source record: нависшая над высокими вершинами тополей,
+Russian text has no admitted source record: уже сыпала дождиком
+Russian text has no admitted source record: Вдали виднеется маяк,
+Russian text has no admitted source record: стоящий у моря
+Russian text has no admitted source record: нависшая над высокими вершинами тополей,
+Russian text has no admitted source record: уже сыпала дождиком
+Russian text has no admitted source record: нависшая над высокими вершинами тополей,
+Russian text has no admitted source record: уже сыпала дождиком
+Russian text has no admitted source record: нависшая над высокими вершинами тополей,
+Russian text has no admitted source record: уже сыпала дождиком
+Russian text has no admitted source record: Воспитанный в традициях Фоппы,
+Russian text has no admitted source record: Бернардо Дзенале и Амброджо Бергоньоне,
+Russian text has no admitted source record: он прошёл обучение в мастерской Леонардо.
+Russian text has no admitted source record: Воспитанный в традициях Фоппы,
+Russian text has no admitted source record: Бернардо Дзенале и Амброджо Бергоньоне,
+Russian text has no admitted source record: он прошёл обучение в мастерской Леонардо.
+Russian text has no admitted source record: Воспитанный в традициях Фоппы,
+Russian text has no admitted source record: Бернардо Дзенале и Амброджо Бергоньоне,
+Russian text has no admitted source record: он прошёл обучение в мастерской Леонардо.
+Russian text has no admitted source record: Изумлённый этим хохотом,
+Russian text has no admitted source record: Павел сел на пол и смотрел куда
+Russian text has no admitted source record: то в угол
+Russian text has no admitted source record: Изумлённый этим хохотом,
+Russian text has no admitted source record: Павел сел на пол и смотрел куда
+Russian text has no admitted source record: то в угол
+Russian text has no admitted source record: Изумлённый этим хохотом,
+Russian text has no admitted source record: Павел сел на пол и смотрел куда
+Russian text has no admitted source record: то в угол
+Russian text has no admitted source record: Вдали виднеется маяк,
+Russian text has no admitted source record: стоящий у моря
+Russian text has no admitted source record: Вдали виднеется маяк,
+Russian text has no admitted source record: стоящий у моря
+Russian text has no admitted source record: Вдали виднеется маяк,
+Russian text has no admitted source record: стоящий у моря
+Source capability cap-obj-u29-punctuation has no reviewable instruction and check chain
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Unit 29 Russian text has no resolved provenance record
+Objective obj-u29-punctuation has no frozen native punctuation application chain
+Unit 29 is not content-complete without admitted participle-punctuation source capabilities
+Item u29-i-punctuation-after response type
+Item u29-i-punctuation-pronoun response type
+Item u29-i-punctuation-cause response type
+Item u29-i-punctuation-terminal response type
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at dev.russiancompanion.v2.Unit29InstructionTest.independentlyAuthoredPendingCoveragePassesTheProductionValidator(Unit29InstructionTest.kt:45)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestExecutor.runRequest(JUnitTestExecutor.java:175)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestExecutor.accept(JUnitTestExecutor.java:84)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestExecutor.accept(JUnitTestExecutor.java:47)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestDefinitionProcessor.processTestDefinition(AbstractJUnitTestDefinitionProcessor.java:65)
+	at org.gradle.api.internal.tasks.testing.SuiteTestDefinitionProcessor.processTestDefinition(SuiteTestDefinitionProcessor.java:53)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.gradle.internal.dispatch.MethodInvocation.invokeOn(MethodInvocation.java:77)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:28)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:19)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:88)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.processTestDefinition(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:178)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:126)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <testcase name="punctuationExplainsBothBoundariesAndTheExceptions" classname="dev.russiancompanion.v2.Unit29InstructionTest" time="0.286"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,15 @@
+{
+  "baselineCommit": "e4085c5686e1c58a0af43e1c1f66fbb573f56887",
+  "secondIntegration": {
+    "tests": 6,
+    "failures": 1,
+    "errors": 0,
+    "skipped": 0,
+    "diagnosis": "Exact native coverage accepted; four new English classifications lacked an explicit English/label prompt. Prompt changed to Which English description..., existing response-shape validator unchanged."
+  },
+  "regressionCompileFailure": {
+    "testsExecuted": 0,
+    "diagnosis": "New test called endsWith on nullable promptLetter; corrected test null assertion. This is not a test failure or passing scope."
+  },
+  "scope": "Uncommitted implementation at recorded baseline HEAD, not pristine-baseline verification."
+}

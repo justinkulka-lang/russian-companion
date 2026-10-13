@@ -2128,6 +2128,13 @@ internal object V2Validator {
                     CompleteRuleContextPins.itemMatches(pack, it) && structureValid(pack, it).isEmpty()
             }
         }
+        if (capability.unitNumber == 29 && capability.objectiveId == "obj-u29-punctuation") {
+            return capability.supportedClaim == "participle-punctuation" &&
+                capability.sourceId == "src-ruwiki-prichastie-153078996" && capability.sourceRevision == "153078996" &&
+                capability.sourceHash == "821d77bb38feb19b79078e8af3f507f2fcaa4d7e6735f4c1d10a2475a73cbc9a" &&
+                spanHost.sourceHash == capability.sourceHash && spanHost.originalSourceText == capability.exactSpan &&
+                verifiedFrozen(spanHost) && Unit29PunctuationPins.matches(pack)
+        }
         if (capability.unitNumber == 20 && capability.supportedClaim == "motion-directionality") {
             return capability.objectiveId == "obj-u20-motion" &&
                 capability.sourceId == "src-wikipedia-russian-grammar-1369617627" &&
@@ -2640,6 +2647,9 @@ internal object V2Validator {
     private fun validateGovernedChecks(pack: V2CurriculumPack, unit: V2Unit, errors: MutableList<String>) {
         val generic = "Return to the explanation. Compare the shown form with the admitted record."
         unit.objectives.filter { it.kind == "RECOGNITION" }.forEach { objective ->
+            if (objective.id == "obj-u29-punctuation" && !Unit29PunctuationPins.matches(pack)) {
+                errors += "Objective ${objective.id} has no frozen native punctuation application chain"
+            }
             if (objective.id == "obj-u20-motion" && !Unit20DirectionalityPins.matches(pack)) {
                 errors += "Objective ${objective.id} has no frozen native directionality application chain"
             }
@@ -4960,8 +4970,12 @@ internal object V2Validator {
             }
             if (record.sourceId.startsWith("src-ruwiki-")) {
                 val copyright = "\u0412\u0438\u043a\u0438\u043f\u0435\u0434\u0438\u044f:\u0410\u0432\u0442\u043e\u0440\u0441\u043a\u0438\u0435 \u043f\u0440\u0430\u0432\u0430 oldid ${BatchARemainingSources.RU_COPYRIGHT_OLDID}"
-                val revisionAllowed = record.sourceRevision == BatchARemainingSources.RU_REVISION ||
-                    record.sourceRevision in BatchBSources.RU_REVISIONS
+                val revisionAllowed = if (Unit29PunctuationPins.ownsSource(record.sourceId)) {
+                    Unit29PunctuationPins.admittedNative(record)
+                } else {
+                    record.sourceRevision == BatchARemainingSources.RU_REVISION ||
+                        record.sourceRevision in BatchBSources.RU_REVISIONS
+                }
                 if (!revisionAllowed ||
                     !record.sourceUrl.contains("oldid=${record.sourceRevision}") ||
                     !record.attribution.contains(copyright) ||
