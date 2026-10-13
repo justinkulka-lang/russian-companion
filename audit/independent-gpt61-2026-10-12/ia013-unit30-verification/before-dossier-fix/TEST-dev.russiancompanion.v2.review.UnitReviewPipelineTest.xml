@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.review.UnitReviewPipelineTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-13T15:03:44.820Z" hostname="d0fbcd1608d3" time="125.298">
+  <properties/>
+  <testcase name="committedUnitPackagesMatchTheGenerator" classname="dev.russiancompanion.v2.review.UnitReviewPipelineTest" time="125.298"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

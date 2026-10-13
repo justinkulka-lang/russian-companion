@@ -1,0 +1,17 @@
+{
+  "repositoryCommit": "5f29c4a18fdbb0fc5b0f12850a87e5d50db777c2",
+  "command": "bash audit/independent-gpt61-2026-10-12/ia013-unit30-verification/verify.sh",
+  "counts": {
+    "tests": 33,
+    "failures": 1,
+    "errors": 0,
+    "skipped": 0
+  },
+  "passed": 32,
+  "reason": "Dossier exact orphan expectation omitted two historical Unit30 examples preserved outside the revised instructional chain.",
+  "unexecuted": [
+    "lintDebug",
+    "verifyReleaseGateAttachment"
+  ],
+  "correction": "Update exact four-example expectation and disclose historical data. No product/source/asset change or weakened assertion."
+}

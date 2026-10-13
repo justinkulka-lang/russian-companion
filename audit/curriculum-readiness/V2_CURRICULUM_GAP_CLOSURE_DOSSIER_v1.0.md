@@ -242,6 +242,10 @@ Units **27, 29, and 30** have an activated pedagogical boundary. The historical 
 - Options: Bind to obj-u4-present only if a curriculum reviewer affirms it materially serves the existing objective and the unit chain is re-reviewed; Remove the unreachable example record while preserving its source/provenance records if used elsewhere; Retain as disclosed unreachable data pending a documented curriculum decision.
 - Recommendation: Prefer removal unless the qualified reviewer identifies a concrete instructional role. Do not bind it merely to eliminate the orphan count.
 
+## Retained Unit 30 historical examples
+
+`ex-u30-letter-names-0` and `ex-u30-letter-names-1` remain packaged with their original Russian names, English respellings and provenance. They are deliberately outside the revised instructional chain, which uses three glyph/name examples. Their orphan status is disclosed historical data, not language-check evidence. The six old table/heading items are separately reachable as optional reference practice and do not gate language completion. Do not bind historical examples merely to reduce a count. Alongside the two Unit 4 examples above, the reconciliation now reports four orphan examples.
+
 ## Human review dependencies
 
 A qualified reviewer must separately sign each unit's matching content-review digest. The reviewer must demonstrate advanced Russian competence and sufficient teaching or curriculum-review competence. A later Claude audit or Codex audit is independent assurance, not the qualified-human signature.

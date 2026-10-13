@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Units2630SourceIntakeTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-13T15:03:14.028Z" hostname="d0fbcd1608d3" time="62.438">
+  <properties/>
+  <testcase name="partialStrandsDoNotClearBroadClaimsAndOptionalMaterialDoesNotGate" classname="dev.russiancompanion.v2.Units2630SourceIntakeTest" time="22.948"/>
+  <testcase name="admittedCapabilitiesBindSpanUnitObjectiveAndClaim" classname="dev.russiancompanion.v2.Units2630SourceIntakeTest" time="1.212"/>
+  <testcase name="generatedRussianPenguinAudioAndReleaseStayClosed" classname="dev.russiancompanion.v2.Units2630SourceIntakeTest" time="38.129"/>
+  <testcase name="retainedSourceBytesMatchTheFrozenIdentityTwice" classname="dev.russiancompanion.v2.Units2630SourceIntakeTest" time="0.142"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
