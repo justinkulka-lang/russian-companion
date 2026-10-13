@@ -83,8 +83,8 @@
       "unit15FeedbackImplementationCommit": "434b32c618f45faa67a765d63d7d1f080ffd05d9",
       "reconciliationPath": "IA009_135_TARGET_FEEDBACK_RECONCILIATION.json",
       "broaderFeedbackTeachingRemediationReview": "OPEN",
-      "currentOriginalTargetsWithUnchangedScoredSourceTuples": 105,
-      "currentOriginalTargetsWithSeparatelyLedgeredScoredSourceChanges": 30,
+      "currentOriginalTargetsWithUnchangedScoredSourceTuples": 104,
+      "currentOriginalTargetsWithSeparatelyLedgeredScoredSourceChanges": 31,
       "unit9DistinctMasculineTransferImplementationCommit": "3fcf287f2118e51f39d4c339f9a06bc526fbe57b",
       "reconciliationExplanation": "29 prior complete-rule changes plus one distinct masculine-noun application; previous106/29 receipts historical. Content rows, not tests/acceptance."
     },
@@ -198,9 +198,9 @@
       "findingId": "IA016",
       "producerSeverity": "MEDIUM",
       "producerStatus": "OPEN",
-      "engineeringDisposition": "PARTIAL_UNIT17_UNIT8_UNIT9_UNIT21_UNIT24_AND_UNIT28_FIXES_PENDING_INDEPENDENT_VERIFICATION_OTHER_GROUPS_OPEN",
+      "engineeringDisposition": "PARTIAL_UNIT17_UNIT8_UNIT9_UNIT21_UNIT24_UNIT28_AND_UNIT13_FIXES_PENDING_INDEPENDENT_VERIFICATION_OTHER_GROUPS_OPEN",
       "formalAcceptance": false,
-      "currentExactSameUnitGroups": 3,
+      "currentExactSameUnitGroups": 2,
       "inventoryPath": "IA016_CURRENT_DUPLICATE_INVENTORY.json",
       "continuationPath": "IA016_INDEPENDENT_TRANSFER_PENDING.md",
       "implementationCommit": "db323d1a07613846a088cd44cb9f2b72d24753c9",
@@ -277,6 +277,19 @@
           "nativeAndLexicalSelections": 8,
           "unseenContextClaim": false,
           "productiveFormationClaim": false,
+          "formalAcceptance": false
+        },
+        "unit13Reported": {
+          "implementationCommit": "e465017d6e6c14d6ca6cda390be0ef1fd7a95035",
+          "evidencePath": "ia016-unit13-reported-verification/FINAL_VERIFICATION_MANIFEST.json",
+          "newIndependentItemId": "u13-i-report-frame-time",
+          "guideId": "u13-g-reported-0",
+          "allOriginalIndependentItemsPreserved": true,
+          "all58CapabilitiesPreserved": true,
+          "newPendingProvenance": 25,
+          "nativeSelections": 3,
+          "unseenContextClaim": false,
+          "productiveReportedSpeechClaim": false,
           "formalAcceptance": false
         }
       },

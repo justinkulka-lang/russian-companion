@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.LabExplanationCorrectionTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-13T22:39:49.906Z" hostname="d0fbcd1608d3" time="45.684">
+  <properties/>
+  <testcase name="wrongGrammarAnswerCanReviewDeclaredTeachingWithoutWritingProgress" classname="dev.russiancompanion.v2.LabExplanationCorrectionTest" time="30.419"/>
+  <testcase name="crossUnitDeclarationsCannotRevealFutureTeaching" classname="dev.russiancompanion.v2.LabExplanationCorrectionTest" time="3.568"/>
+  <testcase name="correctVocabularyAnswerCanReviewTeachingAndKeepItsSavedSelection" classname="dev.russiancompanion.v2.LabExplanationCorrectionTest" time="9.824"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
