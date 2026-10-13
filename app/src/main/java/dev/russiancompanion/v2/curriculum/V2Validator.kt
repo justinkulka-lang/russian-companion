@@ -2108,6 +2108,12 @@ internal object V2Validator {
         ) {
             return false
         }
+        if (capability.unitNumber == 17 && capability.objectiveId == "obj-u17-clock") {
+            return capability.supportedClaim == "clock-question" && capability.sourceId == "src-wikibooks-russian-cc-by-sa" &&
+                capability.sourceRevision == "4220316" && capability.sourceHash == "5fcfdb73fc78d8dd2dcd5ffc25fe473990eb47f30e66d121c9e868a7c8776bbd" &&
+                spanHost.sourceHash == capability.sourceHash && spanHost.originalSourceText == capability.exactSpan &&
+                verifiedFrozen(spanHost) && Unit17QuestionPins.matches(pack)
+        }
         if (capability.unitNumber == 29 && capability.objectiveId == "obj-u29-short-adjective") {
             // This claim requires curated grammar contrasts; vocabulary glosses cannot clear it.
             if (capability.supportedClaim != "short-form-adjective" ||
@@ -2647,6 +2653,9 @@ internal object V2Validator {
     private fun validateGovernedChecks(pack: V2CurriculumPack, unit: V2Unit, errors: MutableList<String>) {
         val generic = "Return to the explanation. Compare the shown form with the admitted record."
         unit.objectives.filter { it.kind == "RECOGNITION" }.forEach { objective ->
+            if (objective.id == "obj-u17-clock" && !Unit17QuestionPins.matches(pack)) {
+                errors += "Objective ${objective.id} has no frozen distinct question application chain"
+            }
             if (objective.id == "obj-u29-punctuation" && !Unit29PunctuationPins.matches(pack)) {
                 errors += "Objective ${objective.id} has no frozen native punctuation application chain"
             }

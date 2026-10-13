@@ -63,6 +63,9 @@ internal object CompleteRuleContextPins {
         "ca-rule-context:u29-i-punctuation-pronoun" to "17bed6f170ae6bf962eb73d2462fce256948bf6e32be8f8811674b755eb3ce93",
         "ca-rule-context:u29-i-punctuation-cause" to "ce5857b0173eef631cc5b3781478fe031b5c0c4aa98e29c1014c67feeb1c13d4",
         "ca-rule-context:u29-i-punctuation-terminal" to "58c24d0d711e3a5052a14311d33d50cec6cfb22e63f74fd3211ef06dba0813a1",
+        "ca-rule-context:u17-g-question-apple" to "9231fda6efc41c119d4d7a461fe3ceaf05624ea22d46932db105c24d1deb95c8",
+        "ca-rule-context:u17-i-question-clock" to "1e08ca44ff016f4e586fce390cd4179327551136457884e4ba631968921554d5",
+        "ca-rule-context:u17-i-question-book" to "2e97b3bb0ea7fe5acd37c9de42693036da3c226ca2348af65f4ef27d9737ea61",
     )
     fun required(itemId: String) = hashes.containsKey("ca-rule-context:$itemId")
     private fun hash(value: String) = MessageDigest.getInstance("SHA-256").digest(value.toByteArray(Charsets.UTF_8))
@@ -85,6 +88,7 @@ internal object CompleteRuleContextPins {
     }
     fun itemMatches(pack: V2CurriculumPack, item: V2CheckItem): Boolean {
         val expectedObjective = when {
+            item.id in setOf("u17-g-question-apple","u17-i-question-clock","u17-i-question-book") -> "obj-u17-clock"
             item.id in setOf("u29-i-punctuation-after", "u29-i-punctuation-pronoun", "u29-i-punctuation-cause", "u29-i-punctuation-terminal") -> "obj-u29-punctuation"
             item.id.startsWith("u20-") && "-direction-" in item.id -> "obj-u20-motion"
             item.id.startsWith("u30-") && "-native-name-" in item.id -> "obj-u30-letter-names"

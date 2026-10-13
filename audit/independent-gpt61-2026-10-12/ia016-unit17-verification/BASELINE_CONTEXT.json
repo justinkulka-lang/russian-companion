@@ -1,0 +1,11 @@
+{
+  "repositoryCommit": "151cae10b653be9038423e0d19afca2cf9a48b18",
+  "workingTree": "Baseline curriculum plus new uncommitted diagnostic harness; no implementation change.",
+  "command": "source /workspace/setup/android-env.sh; ./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*Unit17QuestionTransferTest' --max-workers=4 --console=plain",
+  "tests": 1,
+  "failures": 1,
+  "errors": 0,
+  "skipped": 0,
+  "scope": "Original three answers first demonstrate the objective; then distinct independent-native-cue requirement fails.",
+  "rawCurriculumSha256": "efd130b055b5943462ad14979925e6aaddcb6f598bb016592da78062fd92a5be"
+}

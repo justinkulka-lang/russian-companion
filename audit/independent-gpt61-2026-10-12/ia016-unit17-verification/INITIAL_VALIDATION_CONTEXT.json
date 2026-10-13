@@ -1,0 +1,12 @@
+{
+  "repositoryCommit": "151cae10b653be9038423e0d19afca2cf9a48b18",
+  "workingTree": "Uncommitted question transfer implementation and diagnostic harness.",
+  "tests": 5,
+  "failures": 1,
+  "errors": 0,
+  "skipped": 0,
+  "command": "source /workspace/setup/android-env.sh; ./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*Unit17QuestionTransferTest' --tests '*Unit17AgeCalendarInstructionTest' --max-workers=4 --console=plain",
+  "rawCurriculumSha256": "860140c165aa31e3cb456c5917e12ab9e69b1be32bbd6c58018c70240977224f",
+  "nativePinCodeSha256": "a36432deb181d06872d3ce21adf9bbcce4b769a09aaaf8f1bd9d259caa629946",
+  "diagnosis": "Exact Cyrillic coverage lacked isolated \u043a\u043e\u0442\u043e\u0440\u044b\u0439; competing-option rationales repeated the literal keyed English answer, which existing validation disallows. Add an exact fragment selected from the frozen source and remove the key from rationales while keeping full native/gloss explanations. Do not weaken validators."
+}
