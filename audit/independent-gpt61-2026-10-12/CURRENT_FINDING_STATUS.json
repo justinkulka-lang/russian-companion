@@ -64,15 +64,16 @@
       "findingId": "IA009",
       "producerSeverity": "MEDIUM",
       "producerStatus": "OPEN",
-      "engineeringDisposition": "PARTIAL_LAB_ROUTE_UNITS6_7_9_FEEDBACK_FIXED_61_FEEDBACK_ROWS_OPEN",
+      "engineeringDisposition": "PARTIAL_LAB_ROUTE_UNITS6_7_9_10_FEEDBACK_FIXED_54_FEEDBACK_ROWS_OPEN",
       "formalAcceptance": false,
       "implementationCommit": "c82e5b4a305c960ca41f660071d0da25070631ea",
       "unit6FeedbackImplementationCommit": "4e5e7adc8b9cfa96024e6b8c9c9db18d260a9634",
-      "remainingLiteralDoesFeedbackRows": 61,
+      "remainingLiteralDoesFeedbackRows": 54,
       "unit7FeedbackImplementationCommit": "b48d4a575e0d8496de4e02c4e7af6d4795d4309f",
       "unit9NumberFeedbackImplementationCommit": "b9f00899069b495bed1f5791f72e485c63945938",
       "unit9CompositionFeedbackImplementationCommit": "0fde3d3991ba4493a0ca36b9c49cdd0a71c14401",
-      "unit9QuantityRuleImplementationCommit": "8e5db89c56d9421a6efcffa6f0a14c0f0b6c042a"
+      "unit9QuantityRuleImplementationCommit": "8e5db89c56d9421a6efcffa6f0a14c0f0b6c042a",
+      "unit10FeedbackImplementationCommit": "4e624bc2af8fa70e488bd627cb2dc68d03b60406"
     },
     {
       "findingId": "IA010",
@@ -143,19 +144,19 @@
   "physicalDeviceAcceptance": "OUTSTANDING",
   "release": "NOT_APPROVED",
   "latestValidatorImplementationCommit": "8e5db89c56d9421a6efcffa6f0a14c0f0b6c042a",
-  "latestSourceBindingCheckpoint": "710b21e022d053d13ad6bb0352c8399e7557113f",
+  "latestSourceBindingCheckpoint": "ef0010a340f6171a51334f35af1372c73e00816d",
   "remainingSourceReviewPointers": [
     "IA007_SOURCE_REVIEW_PENDING.md",
     "IA008_SOURCE_REVIEW_PENDING.md"
   ],
   "firstBatchImplementationCommit": "4f5cb8024d3f68a37052fdf85b5755bffa2a0904",
   "firstBatchPacketCheckpoint": "49af91a0f5578c63a3b9b98bbe975f40d2758fcc",
-  "latestCurriculumImplementationCommit": "8e5db89c56d9421a6efcffa6f0a14c0f0b6c042a",
+  "latestCurriculumImplementationCommit": "4e624bc2af8fa70e488bd627cb2dc68d03b60406",
   "acceptanceOrder": [
     "FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
     "PHYSICAL_DEVICE_ACCEPTANCE_LAST"
   ],
   "physicalDeviceEvidenceRequestTiming": "AFTER_FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
   "latestAppImplementationCommit": "c82e5b4a305c960ca41f660071d0da25070631ea",
-  "latestVerifiedRepositoryCommit": "710b21e022d053d13ad6bb0352c8399e7557113f"
+  "latestVerifiedRepositoryCommit": "ef0010a340f6171a51334f35af1372c73e00816d"
 }

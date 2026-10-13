@@ -45,3 +45,7 @@ Implementation0fde3d3991ba4493a0ca36b9c49cdd0a71c14401 explains five composition
 ## Unit9 complete counted-noun rules — 2026-10-13
 
 Implementation8e5db89c56d9421a6efcffa6f0a14c0f0b6c042a corrects15 quantity/pattern choices, feedback and two full lessons, with canonical context/tuple guards. Original source records/Russian cues/examples are preserved;140 new English/context records remain review-pending. Current literal Does inventory:61 (7 generic/54 feature-specific), across Units10–15; Unit9 has none. Earlier inventories are historical. Next bounded feedback group:seven Unit10 rows, after complete source inspection. IA009 remains partial and duplicate-item findings remain open. No semantic acceptance or complete-suite claim.
+
+## Unit10 feedback correction — 2026-10-13
+
+Implementation4e624bc2af8fa70e488bd627cb2dc68d03b60406 explains seven pronoun and animate subject/object contrasts. All scored/source tuples and6,066 old provenance records remain unchanged;14 new English records are review-pending. Current literal Does inventory:54 (zero generic/54 feature-specific), counts:u11=9,u12=15,u13=12,u14=9,u15=9. Older inventories are historical. Next:nine Unit11 past-tense/reflexive rows after full retained context inspection. IA009 remains partial; duplicate tuples/other findings and independent semantic verification stay open. See ia009-unit10-verification/FINAL_VERIFICATION_MANIFEST.json. No complete-suite or formal acceptance claim.

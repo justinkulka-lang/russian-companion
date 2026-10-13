@@ -1,0 +1,43 @@
+{
+  "baselineCommit": "80c106875c36f2e11911c7ebdcd5f8d39fd330db",
+  "oldProvenanceRecords": 6066,
+  "newPendingCoverageRecords": 14,
+  "allPriorProvenanceUnchanged": true,
+  "allOtherPackFieldsUnchanged": true,
+  "allSevenScoredSourceTuplesUnchanged": true,
+  "allOtherItemsUnchanged": true,
+  "deterministicBaselineReplay": true,
+  "byteIdempotent": true,
+  "rawCurriculumSha256": "f7abb592f002abe77194a993d4a3de40dad3975e956926407a18b8d1609a48f1",
+  "sourceContextSha256": {
+    "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt": "2bd8751faf3bae6d407445523671ffcf4827750f25318ae5fc0d40e482001591",
+    "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt": "60702c98a8e6178c4b140fe81e2220df1f830972913f99047502d95ecda00b16",
+    "catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt": "0e220e7623e9e04bbcc78f517f1b11c4788b97ec05e751e71d37fea3a0a93615",
+    "catalog/sources/units-3-5/wikibooks/personal-pronouns-3598527.txt": "58f8709942d5fc76188045276e7e5e2375b6be2e440fb82576ca78fb2df61e40"
+  },
+  "all30MappingsUnchanged": true,
+  "other29ContentReviewPackageDigestsAndAncestorsUnchanged": true,
+  "unit10GenuineImplementationAncestor": "4e624bc2af8fa70e488bd627cb2dc68d03b60406",
+  "packDigest": "9033071053c763a8f48a584e756074ec4e4fb9e06d841821a7b49db74594f639",
+  "repositorySourceDigest": "7df4d97e71587bc39750838acd8eea9097ded6894293930afb1130871a247cd8",
+  "unit10ContentReviewDigest": "279e8d36f385de505648c3b6e794a3920fe3ed39ce82f8536cb459e1352cae1b",
+  "baselineNegativeCommand": "source /workspace/setup/android-env.sh\n./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*Unit10FeedbackCorrectionTest.feedbackExplainsPronounReferentsAndAnimateObjectCase' --max-workers=4 --console=plain",
+  "baselineNegativeExitCode": 1,
+  "initialFocusedCommand": "source /workspace/setup/android-env.sh\n./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*Unit10FeedbackCorrectionTest' --max-workers=4 --console=plain",
+  "initialFocusedExitCode": 0,
+  "regressionScope": {
+    "baseline": {
+      "tests": 1,
+      "failures": 1,
+      "errors": 0,
+      "skipped": 0
+    },
+    "initialCorrection": {
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "allNineOriginalAuditDeliverableHashesUnchanged": true
+}
