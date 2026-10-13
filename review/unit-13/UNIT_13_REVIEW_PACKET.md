@@ -11,12 +11,12 @@ Unit 13 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 95b45043cd02ff5ad26e6c4ce9c7d8641795f0a0
-- Unit content-review SHA-256: 6c11707dad7fef23787ff3e0d535632b05d9aeacbb2cfd4e7a013add99c74fe6
+- Curriculum source commit: e465017d6e6c14d6ca6cda390be0ef1fd7a95035
+- Unit content-review SHA-256: 1091aa93b46aca71f711a41b6ee9d26102d98d342e3a41e459156e9f12ac0d13
 - Mapping-package SHA-256: e8ca3b0ba9b6a48acc54ea18e10a6e6fb1291698252fcbc35b02dbf2a820deb4
-- Pack content-review SHA-256: 8e12b776136a7462b0bb0a4d13be11215a52ca88db22700a7abdade712140915
-- Review-package SHA-256: c056781ce9ec7fa02b4a608dab0023a733f06bfc659d77b73fc5c6ae8d0e3acb
-- Repository source SHA-256: 989c2a36a14773d32a8c4cad9ceef9687ea2dc31b320bbb6032073712232a1c4
+- Pack content-review SHA-256: b9d52499458689e22ebecbf8130d13dcd2201e012727e43d233a358b2fe36ba3
+- Review-package SHA-256: 7065433a428496bf23fc6a90d7d3681b982872359a6cfc2f352ee8ed0226d921
+- Repository source SHA-256: eb6510486092f5b91be3ddc84ed86fc372dc66cda223afcd8205495d62a232fd
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -170,15 +170,15 @@ remediation=u13-st-rem-infinitive
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8520d6f311e9bc30d240d836ab7980507c92d8a42d4db5295fb10a47a7926033
+- Content hash: 3df02454f6c9e1493cbe7e3f8b3ab76a24da58f4326355f188ee8c281ac0fec9
 
-title=Choose the admitted reported line
+title=Recognize supplied reports, direct statements and future time clauses
 kind=RECOGNITION
 unitNumber=13
 instruction=u13-st-orient,u13-st-teach-reported-1,u13-st-teach-reported-2,u13-st-teach-reported-3
 examples=ex-u13-reported-0,ex-u13-reported-1,ex-u13-reported-2,ex-u13-reported-3
 practice=u13-st-guided-reported-1
-checks=u13-i-reported-1,u13-i-reported-2
+checks=u13-i-reported-1,u13-i-reported-2,u13-i-report-frame-time
 remediation=u13-st-rem-reported
 
 ### OBJECTIVE `obj-u13-book`
@@ -708,12 +708,12 @@ remediationStepId=u13-st-rem-infinitive
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3e17eb9fd215b443543ba7842522ed0db03c976119e5bff5343c4883dd73849c
+- Content hash: 5da1c26ef5d82d2b27fac03f34c837eac9c8a5fc05ec2f4308422b7b4a5e0dc2
 
 title=Choose the admitted reported line
 estimatedMinutes=12
 objectives=obj-u13-reported
-steps=u13-st-teach-reported-1,u13-st-guided-reported-1,u13-st-teach-reported-2,u13-st-teach-reported-3,u13-st-rem-reported,u13-st-check-reported
+steps=u13-st-teach-reported-1,u13-st-teach-reported-2,u13-st-teach-reported-3,u13-st-guided-reported-1,u13-st-rem-reported,u13-st-check-reported
 
 ### STEP `u13-st-teach-reported-1`
 
@@ -723,11 +723,11 @@ steps=u13-st-teach-reported-1,u13-st-guided-reported-1,u13-st-teach-reported-2,u
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: fc37bb25a7aef8e593c6b62e27983391a2c0217c637b800cda7b7c2990e8b2ce
+- Content hash: e71f81b0d4ae943a5fa5a4a6e01a1d36a44c23b18570d41a551ac3b53463ed88
 
 kind=TEACH
-title=Admitted lines
-body=Она́ сказа́ла, что она́ ска́жет ему́ ве́чером — She said that she would speak to him in the evening. Я скажу ему ве́чером — I will tell him in the evening. 
+title=Interpret the nationality report
+body=A past reporting frame can contain a statement whose tense is interpreted from the reported speaker’s perspective. Он сказа́л, что он англича́нин has a past said verb and no past copula in the nationality statement. The supplied original is “I am English”. Past reporting verb with present nationality statement. is the matching description. The source’s alternative with a past copula changes the stated reading. That alternative can be grammatical in a different context; it is not this supplied present-nationality report. This nationality context was also taught earlier, so it is not unseen evidence.
 dominantAction=Continue
 references=ref-u1115-attribution
 items=
@@ -737,28 +737,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u13-st-guided-reported-1`
-
-- Objectives: obj-u13-reported
-- Sessions: u13-s-reported
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 91eda681ff1064ae2644a5798a3f90e56bb25b9bcd6d48c85514acb8e47baf1d
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u13-g-reported-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u13-st-rem-reported
-
 ### STEP `u13-st-teach-reported-2`
 
 - Objectives: obj-u13-reported
@@ -767,13 +745,11 @@ remediationStepId=u13-st-rem-reported
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5b3754ff5340f7c93bdcbdaf638b23689d2bba99fa2959644629695644dab777
+- Content hash: ba185c6a4c8dde10100348f7345e425968b609358f6b8501a1c20115b208e656
 
 kind=TEACH
-title=Admitted instruction
-body=:I will tell him in the evening - '''Я скажу ему ве́чером'''
-:She said that she would speak to him in the evening - '''Она́ сказа́ла, что она́ ска́жет ему́ ве́чером''' - ''perfective past and future as actions completed, definite, etc.''
-:When I'm in Moscow, I'll speak only in Russian - '''Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски'''
+title=Separate reporting time from embedded time
+body=Я скажу ему ве́чером is the direct statement “I will tell him in the evening”. Она́ сказа́ла, что она́ ска́жет ему́ ве́чером is the supplied reported evening context. Past reporting verb with a future embedded action. describes its two finite verbs: said is past, and the embedded telling action retains future form within reported content. This does not imply the action must still be future compared with the present moment. The source supplies these speaker/pronoun choices; do not mechanically replace every I with she or manufacture new reported clauses.
 dominantAction=Continue
 references=ref-u1115-attribution
 items=
@@ -791,11 +767,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 4fd4174fae7901680ee1aceb82744e3c7c98b80bff53a1f259b3f79aa3629228
+- Content hash: 81ae3f197ec2fea2eb54352f8224a9bdeb89ff860a816504f4b42f583ccff0da
 
 kind=TEACH
-title=Admitted lines
-body=Он сказа́л, что он англича́нин — we keep the tense the same. Он сказа́л, что он ''был'' англича́нином — был. 
+title=Distinguish a report, direct statement and time clause
+body=Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски gives a future time clause and a plan to speak Russian. It has no past reporting frame. Existing independent choices distinguish this supplied Moscow plan and the direct evening statement. The added independent check must also interpret the evening report’s past reporting verb and future embedded action. English backshift is not compulsory in every report; preserving these source readings is not a universal rule that every tense or word stays unchanged. This small set supports recognition of supplied contexts, not unrestricted reported-speech production.
 dominantAction=Continue
 references=ref-u1115-attribution
 items=
@@ -805,6 +781,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u13-st-guided-reported-1`
+
+- Objectives: obj-u13-reported
+- Sessions: u13-s-reported
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: dee9232e5da5c9544b906550d788d5f5865c0d6f275294df27cd8d02f64f62b4
+
+kind=GUIDED
+title=Guided practice
+body=Interpret the complete supplied context. A missed choice returns to all teaching cards and worked examples.
+dominantAction=Continue
+references=
+items=u13-g-reported-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u13-st-rem-reported
+
 ### STEP `u13-st-rem-reported`
 
 - Objectives: obj-u13-reported
@@ -813,17 +811,19 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 00730260ed587db179abde9c803c1c135d00387a1eb5c778fb709e7c1b839e1a
+- Content hash: 73a2fb5467817d732a6e561a1c7b08dfb8337a7c3d06c7b93c5cb1376f519f75
 
 kind=REMEDIATE
 title=Remediation
-body=:I will tell him in the evening - '''Я скажу ему ве́чером'''
-:She said that she would speak to him in the evening - '''Она́ сказа́ла, что она́ ска́жет ему́ ве́чером''' - ''perfective past and future as actions completed, definite, etc.''
-:When I'm in Moscow, I'll speak only in Russian - '''Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски'''
+body=A past reporting frame can contain a statement whose tense is interpreted from the reported speaker’s perspective. Он сказа́л, что он англича́нин has a past said verb and no past copula in the nationality statement. The supplied original is “I am English”. Past reporting verb with present nationality statement. is the matching description. The source’s alternative with a past copula changes the stated reading. That alternative can be grammatical in a different context; it is not this supplied present-nationality report. This nationality context was also taught earlier, so it is not unseen evidence.
+
+Я скажу ему ве́чером is the direct statement “I will tell him in the evening”. Она́ сказа́ла, что она́ ска́жет ему́ ве́чером is the supplied reported evening context. Past reporting verb with a future embedded action. describes its two finite verbs: said is past, and the embedded telling action retains future form within reported content. This does not imply the action must still be future compared with the present moment. The source supplies these speaker/pronoun choices; do not mechanically replace every I with she or manufacture new reported clauses.
+
+Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски gives a future time clause and a plan to speak Russian. It has no past reporting frame. Existing independent choices distinguish this supplied Moscow plan and the direct evening statement. The added independent check must also interpret the evening report’s past reporting verb and future embedded action. English backshift is not compulsory in every report; preserving these source readings is not a universal rule that every tense or word stays unchanged. This small set supports recognition of supplied contexts, not unrestricted reported-speech production.
 dominantAction=Continue
 references=
 items=
-examples=ex-u13-reported-0,ex-u13-reported-1
+examples=ex-u13-reported-0,ex-u13-reported-1,ex-u13-reported-2,ex-u13-reported-3
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -837,14 +837,14 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 09583287d54fe421fa6a8e53cc27ebe682c6ef1e69578dd69731ca5a548bc9cb
+- Content hash: 8b78daabac0b31d7976a6a1ba29621ba8315e4741885e36d048b986f15caeed3
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Interpret the complete supplied context. A missed choice returns to all teaching cards and worked examples.
 dominantAction=Continue
 references=
-items=u13-i-reported-1,u13-i-reported-2
+items=u13-i-reported-1,u13-i-reported-2,u13-i-report-frame-time
 examples=
 unavailableReason=
 bookDirection=
@@ -1379,36 +1379,36 @@ responseKind=RUSSIAN_TOKEN
 
 - Objectives: obj-u13-reported
 - Sessions: u13-s-reported
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 339232ab5a20dc75a31efed405a88b2579310655e78f59015a97ca644aa6ac6d
+- Content hash: 6046cafb245f5bd5332b9364e031c2f2c2e50ddf7afd1b300d176d83c9d68e2f
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted line is the reported evening?
-promptLetter=Я скажу ему ве́чером
-options=Она́ сказа́ла, что она́ ска́жет ему́ ве́чером | Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски
-answer=Она́ сказа́ла, что она́ ска́жет ему́ ве́чером
-feedback=Она́ сказа́ла, что она́ ска́жет ему́ ве́чером is the reported evening example: a past she said frame contains a future statement about telling him in the evening. The Moscow option is a future time clause and a plan to speak Russian, with no past reporting frame. The source supplies this pair; it is not a rule to replace every first-person pronoun mechanically with she.
+prompt=In this supplied report of “I am English”, which English interpretation preserves the original present nationality statement?
+promptLetter=Он сказа́л, что он англича́нин
+options=Past reporting verb with present nationality statement. | Past reporting verb with past nationality statement.
+answer=Past reporting verb with present nationality statement.
+feedback=In Он сказа́л, что он англича́нин, Past reporting verb with present nationality statement. The reporting verb is past and the nationality statement has no past copula. The alternative with был explicitly supplies a past copula and changes the stated reading; it is not universally ungrammatical. Recognize this supplied context; English backshift and Russian tense/pronoun choices are not automatic rules for every report.
 objectiveId=obj-u13-reported
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски is the future plan about Moscow, not the reported evening example.
-testedFeature=REPORTED_EVENING
-evidenceMode=SOURCE_SUPPLIED_PAIR
-contrastSetId=u13-reported-0
+distractorRationales= | Past reporting verb with past nationality statement. This does not describe the finite forms in the supplied target context.
+testedFeature=REPORTED_NATIONALITY_GUIDED
+evidenceMode=STATED_APPLICATION
+contrastSetId=u13-g-reported-0
 cueLanguage=ru
 independent=false
-answerSourceIds=prov-ex-u13-reported-0-ru
-distractorSourceIds= | prov-u13-reported-x-1
-distractorDifference= | Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски is the future plan about Moscow, not the reported evening example.
-whyAnswerDemonstratesObjective=Она́ сказа́ла, что она́ ска́жет ему́ ве́чером is the reported evening example: a past she said frame contains a future statement about telling him in the evening. The Moscow option is a future time clause and a plan to speak Russian, with no past reporting frame. The source supplies this pair; it is not a rule to replace every first-person pronoun mechanically with she.
-contrastMembers=Она́ сказа́ла, что она́ ска́жет ему́ ве́чером | Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски
-relationKind=SOURCE_SUPPLIED_PAIR
-relationParticipantIds=prov-ex-u13-reported-1-ru | prov-ex-u13-reported-0-ru | prov-u13-reported-x-1
-responseKind=RUSSIAN_CLAUSE
+answerSourceIds=prov-ca-u13-report-transfer-u13-g-reported-0-1
+distractorSourceIds= | prov-ca-u13-report-transfer-u13-g-reported-0-2
+distractorDifference= | Past reporting verb with past nationality statement. This does not describe the finite forms in the supplied target context.
+whyAnswerDemonstratesObjective=In Он сказа́л, что он англича́нин, Past reporting verb with present nationality statement. The reporting verb is past and the nationality statement has no past copula. The alternative with был explicitly supplies a past copula and changes the stated reading; it is not universally ungrammatical. Recognize this supplied context; English backshift and Russian tense/pronoun choices are not automatic rules for every report.
+contrastMembers=Past reporting verb with present nationality statement. | Past reporting verb with past nationality statement.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u13-report-transfer-u13-g-reported-0-0 | prov-ca-u13-report-transfer-u13-g-reported-0-1 | prov-ca-u13-report-transfer-u13-g-reported-0-2
+responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u13-i-past-aspect-1`
 
@@ -1689,6 +1689,41 @@ contrastMembers=Когда́ я бу́ду в Москве́, я бу́ду го
 relationKind=SOURCE_SUPPLIED_PAIR
 relationParticipantIds=prov-ex-u13-reported-0-ru | prov-u13-reported-x-1 | prov-ex-u13-reported-1-ru
 responseKind=RUSSIAN_CLAUSE
+
+### INDEPENDENT_CHECK `u13-i-report-frame-time`
+
+- Objectives: obj-u13-reported
+- Sessions: u13-s-reported
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7850e18e885e818c0ba375f9d8635d5c73ee4d90289026f6e343acc202edd51d
+
+kind=CONTRAST_SELECTION
+language=en
+prompt=Which English interpretation identifies the reporting verb and embedded action in this supplied evening report?
+promptLetter=Она́ сказа́ла, что она́ ска́жет ему́ ве́чером
+options=Past reporting verb with a future embedded action. | Future reporting verb with a past embedded action.
+answer=Past reporting verb with a future embedded action.
+feedback=In Она́ сказа́ла, что она́ ска́жет ему́ ве́чером, Past reporting verb with a future embedded action. The reporting verb said is past; the embedded verb about telling him retains future form. Future is interpreted within the reported content, not a guarantee that the action is after the present moment or has been completed. Recognize this supplied context; English backshift and Russian tense/pronoun choices are not automatic rules for every report.
+objectiveId=obj-u13-reported
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales= | Future reporting verb with a past embedded action. This does not describe the finite forms in the supplied target context.
+testedFeature=REPORTED_FRAME_EMBEDDED_TIME
+evidenceMode=STATED_APPLICATION
+contrastSetId=u13-i-report-frame-time
+cueLanguage=ru
+independent=true
+answerSourceIds=prov-ca-u13-report-transfer-u13-i-report-frame-time-1
+distractorSourceIds= | prov-ca-u13-report-transfer-u13-i-report-frame-time-2
+distractorDifference= | Future reporting verb with a past embedded action. This does not describe the finite forms in the supplied target context.
+whyAnswerDemonstratesObjective=In Она́ сказа́ла, что она́ ска́жет ему́ ве́чером, Past reporting verb with a future embedded action. The reporting verb said is past; the embedded verb about telling him retains future form. Future is interpreted within the reported content, not a guarantee that the action is after the present moment or has been completed. Recognize this supplied context; English backshift and Russian tense/pronoun choices are not automatic rules for every report.
+contrastMembers=Past reporting verb with a future embedded action. | Future reporting verb with a past embedded action.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u13-report-transfer-u13-i-report-frame-time-0 | prov-ca-u13-report-transfer-u13-i-report-frame-time-1 | prov-ca-u13-report-transfer-u13-i-report-frame-time-2
+responseKind=ENGLISH_CLASSIFICATION
 
 ### REFERENCE `ref-u1115-attribution`
 
@@ -2452,6 +2487,686 @@ attribution=Russian Companion content-audit research synthesis, content-audit-20
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
 sourceHash=28b2eccd1947c4f26e0c9b3848fd3d42971997a86ddf4569d57669851e321610
 contentHash=7135f7faf8b1c064338c8a8d0138ccd5dc1653caaae825ba9e64bd8109f16427
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-report-transfer-objective-title`
+
+- Objectives: obj-u13-reported
+- Sessions: u13-s-orient, u13-s-reported
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 51dde21cd8655caf79c7dfcab5d107f8c250d20d8f5ef356e3f3593fc5ca82b3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-reported:report-transfer:objective-title
+originalSourceText=Complete retained Wikibooks Future3353822 Present or future subsection with nationality comparison and direct/reported evening examples, existing CC BY-SA4.0 contributor-history/rights route Copyrights4622060. Native clauses preserve source stress/words/punctuation; only mechanical emphasis/link-label unfolding. Independent English,2026-10-13. Bounded supplied-context recognition, not generating reports or universally mandatory English backshift/Russian tense retention/pronoun replacement. The source mislabels быть perfective and overgeneralizes aspect/completion/repetition and every original tense; those claims are excluded. Guided nationality example has already been taught earlier; new report uses existing evening context, not unseen evidence. Source/rights/linguistic acceptance pending; no private book prose.
+Recognize supplied reports, direct statements and future time clauses
+shippedText=Recognize supplied reports, direct statements and future time clauses
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4ed5e91bf2da5978d086d45f794485b11b41ae68b0ce0a000ff4f747b7ce3c0b
+contentHash=a463b9cd3fbb16f1d5aeb4087bcbcab4b0e03bd0883623d792493041fddba5ef
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-report-transfer-remediation-body`
+
+- Objectives: obj-u13-reported
+- Sessions: u13-s-orient, u13-s-reported
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6b06a49002ee1d9db53a50720e212a0c34b7e46587c5d1fecf92fe846bdd1641
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-reported:report-transfer:remediation-body
+originalSourceText=Complete retained Wikibooks Future3353822 Present or future subsection with nationality comparison and direct/reported evening examples, existing CC BY-SA4.0 contributor-history/rights route Copyrights4622060. Native clauses preserve source stress/words/punctuation; only mechanical emphasis/link-label unfolding. Independent English,2026-10-13. Bounded supplied-context recognition, not generating reports or universally mandatory English backshift/Russian tense retention/pronoun replacement. The source mislabels быть perfective and overgeneralizes aspect/completion/repetition and every original tense; those claims are excluded. Guided nationality example has already been taught earlier; new report uses existing evening context, not unseen evidence. Source/rights/linguistic acceptance pending; no private book prose.
+A past reporting frame can contain a statement whose tense is interpreted from the reported speaker’s perspective. Он сказа́л, что он англича́нин has a past said verb and no past copula in the nationality statement. The supplied original is “I am English”. Past reporting verb with present nationality statement. is the matching description. The source’s alternative with a past copula changes the stated reading. That alternative can be grammatical in a different context; it is not this supplied present-nationality report. This nationality context was also taught earlier, so it is not unseen evidence.
+
+Я скажу ему ве́чером is the direct statement “I will tell him in the evening”. Она́ сказа́ла, что она́ ска́жет ему́ ве́чером is the supplied reported evening context. Past reporting verb with a future embedded action. describes its two finite verbs: said is past, and the embedded telling action retains future form within reported content. This does not imply the action must still be future compared with the present moment. The source supplies these speaker/pronoun choices; do not mechanically replace every I with she or manufacture new reported clauses.
+
+Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски gives a future time clause and a plan to speak Russian. It has no past reporting frame. Existing independent choices distinguish this supplied Moscow plan and the direct evening statement. The added independent check must also interpret the evening report’s past reporting verb and future embedded action. English backshift is not compulsory in every report; preserving these source readings is not a universal rule that every tense or word stays unchanged. This small set supports recognition of supplied contexts, not unrestricted reported-speech production.
+shippedText=A past reporting frame can contain a statement whose tense is interpreted from the reported speaker’s perspective. Он сказа́л, что он англича́нин has a past said verb and no past copula in the nationality statement. The supplied original is “I am English”. Past reporting verb with present nationality statement. is the matching description. The source’s alternative with a past copula changes the stated reading. That alternative can be grammatical in a different context; it is not this supplied present-nationality report. This nationality context was also taught earlier, so it is not unseen evidence.
+
+Я скажу ему ве́чером is the direct statement “I will tell him in the evening”. Она́ сказа́ла, что она́ ска́жет ему́ ве́чером is the supplied reported evening context. Past reporting verb with a future embedded action. describes its two finite verbs: said is past, and the embedded telling action retains future form within reported content. This does not imply the action must still be future compared with the present moment. The source supplies these speaker/pronoun choices; do not mechanically replace every I with she or manufacture new reported clauses.
+
+Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски gives a future time clause and a plan to speak Russian. It has no past reporting frame. Existing independent choices distinguish this supplied Moscow plan and the direct evening statement. The added independent check must also interpret the evening report’s past reporting verb and future embedded action. English backshift is not compulsory in every report; preserving these source readings is not a universal rule that every tense or word stays unchanged. This small set supports recognition of supplied contexts, not unrestricted reported-speech production.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f27577c262bad97e0bf1249310d9c4bf9b919dd3d67fdf0ab95ad7c67f500a46
+contentHash=fd0ff54aaa48f504fda6c185ba86d835e855aea1d07381bcd3d415a4985ffb6d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-report-transfer-teach-0-body`
+
+- Objectives: obj-u13-reported
+- Sessions: u13-s-orient, u13-s-reported
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6d0486799c2695fa81170fa328ecffd5129349ae2e223813a38992030c8d9665
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-reported:report-transfer:teach-0-body
+originalSourceText=Complete retained Wikibooks Future3353822 Present or future subsection with nationality comparison and direct/reported evening examples, existing CC BY-SA4.0 contributor-history/rights route Copyrights4622060. Native clauses preserve source stress/words/punctuation; only mechanical emphasis/link-label unfolding. Independent English,2026-10-13. Bounded supplied-context recognition, not generating reports or universally mandatory English backshift/Russian tense retention/pronoun replacement. The source mislabels быть perfective and overgeneralizes aspect/completion/repetition and every original tense; those claims are excluded. Guided nationality example has already been taught earlier; new report uses existing evening context, not unseen evidence. Source/rights/linguistic acceptance pending; no private book prose.
+A past reporting frame can contain a statement whose tense is interpreted from the reported speaker’s perspective. Он сказа́л, что он англича́нин has a past said verb and no past copula in the nationality statement. The supplied original is “I am English”. Past reporting verb with present nationality statement. is the matching description. The source’s alternative with a past copula changes the stated reading. That alternative can be grammatical in a different context; it is not this supplied present-nationality report. This nationality context was also taught earlier, so it is not unseen evidence.
+shippedText=A past reporting frame can contain a statement whose tense is interpreted from the reported speaker’s perspective. Он сказа́л, что он англича́нин has a past said verb and no past copula in the nationality statement. The supplied original is “I am English”. Past reporting verb with present nationality statement. is the matching description. The source’s alternative with a past copula changes the stated reading. That alternative can be grammatical in a different context; it is not this supplied present-nationality report. This nationality context was also taught earlier, so it is not unseen evidence.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6040f5242ffb38e02f9da9bf054a7cd39aeac705a3bc89656b2b7a26ec40c2d7
+contentHash=f02533dc80bc6830ba139eb40699893a276f27436e852eb3784a002ace303ab9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-report-transfer-teach-0-title`
+
+- Objectives: obj-u13-reported
+- Sessions: u13-s-orient, u13-s-reported
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 102c79b3581600225fce100256aa0986d054a6ddff09fc38d55a8cc34fb9ee72
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-reported:report-transfer:teach-0-title
+originalSourceText=Complete retained Wikibooks Future3353822 Present or future subsection with nationality comparison and direct/reported evening examples, existing CC BY-SA4.0 contributor-history/rights route Copyrights4622060. Native clauses preserve source stress/words/punctuation; only mechanical emphasis/link-label unfolding. Independent English,2026-10-13. Bounded supplied-context recognition, not generating reports or universally mandatory English backshift/Russian tense retention/pronoun replacement. The source mislabels быть perfective and overgeneralizes aspect/completion/repetition and every original tense; those claims are excluded. Guided nationality example has already been taught earlier; new report uses existing evening context, not unseen evidence. Source/rights/linguistic acceptance pending; no private book prose.
+Interpret the nationality report
+shippedText=Interpret the nationality report
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cb6009510e3f578d74fbab4763de380afa9b522c3aed86c874c59699f846f7d7
+contentHash=b5d6dd920c21a05697896d7fadab6ec7f55eb90f5896019fc5582e8bea25083f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-report-transfer-teach-1-body`
+
+- Objectives: obj-u13-reported
+- Sessions: u13-s-orient, u13-s-reported
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9cf4a98d31526586de488a3a2a667817d578208f9f17c8a6dbd0595c26c43635
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-reported:report-transfer:teach-1-body
+originalSourceText=Complete retained Wikibooks Future3353822 Present or future subsection with nationality comparison and direct/reported evening examples, existing CC BY-SA4.0 contributor-history/rights route Copyrights4622060. Native clauses preserve source stress/words/punctuation; only mechanical emphasis/link-label unfolding. Independent English,2026-10-13. Bounded supplied-context recognition, not generating reports or universally mandatory English backshift/Russian tense retention/pronoun replacement. The source mislabels быть perfective and overgeneralizes aspect/completion/repetition and every original tense; those claims are excluded. Guided nationality example has already been taught earlier; new report uses existing evening context, not unseen evidence. Source/rights/linguistic acceptance pending; no private book prose.
+Я скажу ему ве́чером is the direct statement “I will tell him in the evening”. Она́ сказа́ла, что она́ ска́жет ему́ ве́чером is the supplied reported evening context. Past reporting verb with a future embedded action. describes its two finite verbs: said is past, and the embedded telling action retains future form within reported content. This does not imply the action must still be future compared with the present moment. The source supplies these speaker/pronoun choices; do not mechanically replace every I with she or manufacture new reported clauses.
+shippedText=Я скажу ему ве́чером is the direct statement “I will tell him in the evening”. Она́ сказа́ла, что она́ ска́жет ему́ ве́чером is the supplied reported evening context. Past reporting verb with a future embedded action. describes its two finite verbs: said is past, and the embedded telling action retains future form within reported content. This does not imply the action must still be future compared with the present moment. The source supplies these speaker/pronoun choices; do not mechanically replace every I with she or manufacture new reported clauses.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d3c7c82cb6cd7244b1f12bc909279826aef822990f3a957602a9dab83b87bcb2
+contentHash=be69e3f84a8d92ab411982bb97c5fda31a4776e833e4ae5e9bbb3f54abc53cd7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-report-transfer-teach-1-title`
+
+- Objectives: obj-u13-reported
+- Sessions: u13-s-orient, u13-s-reported
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9cc6be748b8b006cd03211418131d865b42ac72ed5996730a615816cac3c1596
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-reported:report-transfer:teach-1-title
+originalSourceText=Complete retained Wikibooks Future3353822 Present or future subsection with nationality comparison and direct/reported evening examples, existing CC BY-SA4.0 contributor-history/rights route Copyrights4622060. Native clauses preserve source stress/words/punctuation; only mechanical emphasis/link-label unfolding. Independent English,2026-10-13. Bounded supplied-context recognition, not generating reports or universally mandatory English backshift/Russian tense retention/pronoun replacement. The source mislabels быть perfective and overgeneralizes aspect/completion/repetition and every original tense; those claims are excluded. Guided nationality example has already been taught earlier; new report uses existing evening context, not unseen evidence. Source/rights/linguistic acceptance pending; no private book prose.
+Separate reporting time from embedded time
+shippedText=Separate reporting time from embedded time
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a5e36d5fad90b91ad6455d3213c1e99d3cab1e221c1fc901bcf941c4f1e72dde
+contentHash=2c9391a03e30ac91b34781eb1e3f760bc9bec09938003e0b1ff220189428631e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-report-transfer-teach-2-body`
+
+- Objectives: obj-u13-reported
+- Sessions: u13-s-orient, u13-s-reported
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6d3f4c3d49a307df338b84d2e1f899cfb2495ed1104bd8efb5bf264eb0a5594f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-reported:report-transfer:teach-2-body
+originalSourceText=Complete retained Wikibooks Future3353822 Present or future subsection with nationality comparison and direct/reported evening examples, existing CC BY-SA4.0 contributor-history/rights route Copyrights4622060. Native clauses preserve source stress/words/punctuation; only mechanical emphasis/link-label unfolding. Independent English,2026-10-13. Bounded supplied-context recognition, not generating reports or universally mandatory English backshift/Russian tense retention/pronoun replacement. The source mislabels быть perfective and overgeneralizes aspect/completion/repetition and every original tense; those claims are excluded. Guided nationality example has already been taught earlier; new report uses existing evening context, not unseen evidence. Source/rights/linguistic acceptance pending; no private book prose.
+Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски gives a future time clause and a plan to speak Russian. It has no past reporting frame. Existing independent choices distinguish this supplied Moscow plan and the direct evening statement. The added independent check must also interpret the evening report’s past reporting verb and future embedded action. English backshift is not compulsory in every report; preserving these source readings is not a universal rule that every tense or word stays unchanged. This small set supports recognition of supplied contexts, not unrestricted reported-speech production.
+shippedText=Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски gives a future time clause and a plan to speak Russian. It has no past reporting frame. Existing independent choices distinguish this supplied Moscow plan and the direct evening statement. The added independent check must also interpret the evening report’s past reporting verb and future embedded action. English backshift is not compulsory in every report; preserving these source readings is not a universal rule that every tense or word stays unchanged. This small set supports recognition of supplied contexts, not unrestricted reported-speech production.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d9204602cf2c8307ea74d1c5c39ae1500b3d09e8b47a0a3d26fd2993746a714d
+contentHash=b72323f44177f1cca8605776404c040759fe86944092b5831d151485b09dabf5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-report-transfer-teach-2-title`
+
+- Objectives: obj-u13-reported
+- Sessions: u13-s-orient, u13-s-reported
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2903b81ba89bfa2cd2c093e1d7939f246a7c529f3e2954b266a71dbdbbbee35f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-reported:report-transfer:teach-2-title
+originalSourceText=Complete retained Wikibooks Future3353822 Present or future subsection with nationality comparison and direct/reported evening examples, existing CC BY-SA4.0 contributor-history/rights route Copyrights4622060. Native clauses preserve source stress/words/punctuation; only mechanical emphasis/link-label unfolding. Independent English,2026-10-13. Bounded supplied-context recognition, not generating reports or universally mandatory English backshift/Russian tense retention/pronoun replacement. The source mislabels быть perfective and overgeneralizes aspect/completion/repetition and every original tense; those claims are excluded. Guided nationality example has already been taught earlier; new report uses existing evening context, not unseen evidence. Source/rights/linguistic acceptance pending; no private book prose.
+Distinguish a report, direct statement and time clause
+shippedText=Distinguish a report, direct statement and time clause
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a6b3ab160d94c0a717d72f113aa305a8b0abad12c2a7967e40706696380d6fa0
+contentHash=f85a99f42ce03809f3060d11d75c8a8ba6ffb8a0b111b5231c16d300bb855bcb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-report-transfer-u13-g-reported-0-0`
+
+- Objectives: obj-u13-reported
+- Sessions: u13-s-orient, u13-s-reported
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2fd3f47fa4cffe08c6a8beabc372bca5124a9c9d31f1faa52a1b1036c853d749
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u13-g-reported-0
+originalSourceText=Complete retained Wikibooks Future3353822 Present or future subsection with nationality comparison and direct/reported evening examples, existing CC BY-SA4.0 contributor-history/rights route Copyrights4622060. Native clauses preserve source stress/words/punctuation; only mechanical emphasis/link-label unfolding. Independent English,2026-10-13. Bounded supplied-context recognition, not generating reports or universally mandatory English backshift/Russian tense retention/pronoun replacement. The source mislabels быть perfective and overgeneralizes aspect/completion/repetition and every original tense; those claims are excluded. Guided nationality example has already been taught earlier; new report uses existing evening context, not unseen evidence. Source/rights/linguistic acceptance pending; no private book prose.
+Context:
+In Он сказа́л, что он англича́нин, Past reporting verb with present nationality statement. The reporting verb is past and the nationality statement has no past copula. The alternative with был explicitly supplies a past copula and changes the stated reading; it is not universally ungrammatical. Recognize this supplied context; English backshift and Russian tense/pronoun choices are not automatic rules for every report.
+Tuple-v1:tuple-v1:1;55:Он сказа́л, что он англича́нин55:Past reporting verb with present nationality statement.1;52:Past reporting verb with past nationality statement.
+shippedText=Он сказа́л, что он англича́нин
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ab6b459efa2a85226d0bcce4b2da08039a14505f3ecbcc07863b9c529f2302d8
+contentHash=2562d2fa8f1de2890f3a7a0b8088edee6d2893c7609e3036feb64be1808581f8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-report-transfer-u13-g-reported-0-1`
+
+- Objectives: obj-u13-reported
+- Sessions: u13-s-orient, u13-s-reported
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e235d570173d0af77c4de728f0928596fc87074322337eb28023a7dcfd2690b8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u13-g-reported-0
+originalSourceText=Complete retained Wikibooks Future3353822 Present or future subsection with nationality comparison and direct/reported evening examples, existing CC BY-SA4.0 contributor-history/rights route Copyrights4622060. Native clauses preserve source stress/words/punctuation; only mechanical emphasis/link-label unfolding. Independent English,2026-10-13. Bounded supplied-context recognition, not generating reports or universally mandatory English backshift/Russian tense retention/pronoun replacement. The source mislabels быть perfective and overgeneralizes aspect/completion/repetition and every original tense; those claims are excluded. Guided nationality example has already been taught earlier; new report uses existing evening context, not unseen evidence. Source/rights/linguistic acceptance pending; no private book prose.
+Context:
+In Он сказа́л, что он англича́нин, Past reporting verb with present nationality statement. The reporting verb is past and the nationality statement has no past copula. The alternative with был explicitly supplies a past copula and changes the stated reading; it is not universally ungrammatical. Recognize this supplied context; English backshift and Russian tense/pronoun choices are not automatic rules for every report.
+Tuple-v1:tuple-v1:1;55:Он сказа́л, что он англича́нин55:Past reporting verb with present nationality statement.1;52:Past reporting verb with past nationality statement.
+shippedText=Past reporting verb with present nationality statement.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ab6b459efa2a85226d0bcce4b2da08039a14505f3ecbcc07863b9c529f2302d8
+contentHash=d1c5af44d1187b5b5b38f953558329fe0872a5101e55252a2789feb7985ead04
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-report-transfer-u13-g-reported-0-2`
+
+- Objectives: obj-u13-reported
+- Sessions: u13-s-orient, u13-s-reported
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f8e216eaa24971322b4acad7ceb22a1f3b6d87a70cc93ceb105e9eddecfcb603
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u13-g-reported-0
+originalSourceText=Complete retained Wikibooks Future3353822 Present or future subsection with nationality comparison and direct/reported evening examples, existing CC BY-SA4.0 contributor-history/rights route Copyrights4622060. Native clauses preserve source stress/words/punctuation; only mechanical emphasis/link-label unfolding. Independent English,2026-10-13. Bounded supplied-context recognition, not generating reports or universally mandatory English backshift/Russian tense retention/pronoun replacement. The source mislabels быть perfective and overgeneralizes aspect/completion/repetition and every original tense; those claims are excluded. Guided nationality example has already been taught earlier; new report uses existing evening context, not unseen evidence. Source/rights/linguistic acceptance pending; no private book prose.
+Context:
+In Он сказа́л, что он англича́нин, Past reporting verb with present nationality statement. The reporting verb is past and the nationality statement has no past copula. The alternative with был explicitly supplies a past copula and changes the stated reading; it is not universally ungrammatical. Recognize this supplied context; English backshift and Russian tense/pronoun choices are not automatic rules for every report.
+Tuple-v1:tuple-v1:1;55:Он сказа́л, что он англича́нин55:Past reporting verb with present nationality statement.1;52:Past reporting verb with past nationality statement.
+shippedText=Past reporting verb with past nationality statement.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ab6b459efa2a85226d0bcce4b2da08039a14505f3ecbcc07863b9c529f2302d8
+contentHash=b0591bd716f83a06fa27ff7428ef6c38634f09d5118c88fe56a328e23dd63346
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-report-transfer-u13-g-reported-0-feedback`
+
+- Objectives: obj-u13-reported
+- Sessions: u13-s-orient, u13-s-reported
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d95499776b3bba8325e225530dd76f3fc58dd28124e08740e5486dc940f6e315
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-reported:report-transfer:u13-g-reported-0-feedback
+originalSourceText=Complete retained Wikibooks Future3353822 Present or future subsection with nationality comparison and direct/reported evening examples, existing CC BY-SA4.0 contributor-history/rights route Copyrights4622060. Native clauses preserve source stress/words/punctuation; only mechanical emphasis/link-label unfolding. Independent English,2026-10-13. Bounded supplied-context recognition, not generating reports or universally mandatory English backshift/Russian tense retention/pronoun replacement. The source mislabels быть perfective and overgeneralizes aspect/completion/repetition and every original tense; those claims are excluded. Guided nationality example has already been taught earlier; new report uses existing evening context, not unseen evidence. Source/rights/linguistic acceptance pending; no private book prose.
+In Он сказа́л, что он англича́нин, Past reporting verb with present nationality statement. The reporting verb is past and the nationality statement has no past copula. The alternative with был explicitly supplies a past copula and changes the stated reading; it is not universally ungrammatical. Recognize this supplied context; English backshift and Russian tense/pronoun choices are not automatic rules for every report.
+shippedText=In Он сказа́л, что он англича́нин, Past reporting verb with present nationality statement. The reporting verb is past and the nationality statement has no past copula. The alternative with был explicitly supplies a past copula and changes the stated reading; it is not universally ungrammatical. Recognize this supplied context; English backshift and Russian tense/pronoun choices are not automatic rules for every report.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e540134c30ddda6906e48128d07825a69044a762c13d579a4e0fcb28425caab1
+contentHash=7ea1e04bfd11075318ff2c5028c00409c99c4bd6b13b4a927b0c667a0ed7e550
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-report-transfer-u13-g-reported-0-prompt`
+
+- Objectives: obj-u13-reported
+- Sessions: u13-s-orient, u13-s-reported
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 01f70188b358ad630967be17c235cd0a7cb9a97a6678fc279870ff30180c6268
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-reported:report-transfer:u13-g-reported-0-prompt
+originalSourceText=Complete retained Wikibooks Future3353822 Present or future subsection with nationality comparison and direct/reported evening examples, existing CC BY-SA4.0 contributor-history/rights route Copyrights4622060. Native clauses preserve source stress/words/punctuation; only mechanical emphasis/link-label unfolding. Independent English,2026-10-13. Bounded supplied-context recognition, not generating reports or universally mandatory English backshift/Russian tense retention/pronoun replacement. The source mislabels быть perfective and overgeneralizes aspect/completion/repetition and every original tense; those claims are excluded. Guided nationality example has already been taught earlier; new report uses existing evening context, not unseen evidence. Source/rights/linguistic acceptance pending; no private book prose.
+In this supplied report of “I am English”, which English interpretation preserves the original present nationality statement?
+shippedText=In this supplied report of “I am English”, which English interpretation preserves the original present nationality statement?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7a800cecf587cc2f1271a40daab1d2e91d67749c7cbb52c78475f92411a696ef
+contentHash=1d458e8968f54e5ec6ded36b04cd2393dc146df66421ce43d0905b3afb691fd7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-report-transfer-u13-g-reported-0-reason`
+
+- Objectives: obj-u13-reported
+- Sessions: u13-s-orient, u13-s-reported
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1cdec89cbba4a1b248e03946d72651b385f57277d27b4d9ffff0b32563558bcf
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-reported:report-transfer:u13-g-reported-0-reason
+originalSourceText=Complete retained Wikibooks Future3353822 Present or future subsection with nationality comparison and direct/reported evening examples, existing CC BY-SA4.0 contributor-history/rights route Copyrights4622060. Native clauses preserve source stress/words/punctuation; only mechanical emphasis/link-label unfolding. Independent English,2026-10-13. Bounded supplied-context recognition, not generating reports or universally mandatory English backshift/Russian tense retention/pronoun replacement. The source mislabels быть perfective and overgeneralizes aspect/completion/repetition and every original tense; those claims are excluded. Guided nationality example has already been taught earlier; new report uses existing evening context, not unseen evidence. Source/rights/linguistic acceptance pending; no private book prose.
+Past reporting verb with past nationality statement. This does not describe the finite forms in the supplied target context.
+shippedText=Past reporting verb with past nationality statement. This does not describe the finite forms in the supplied target context.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3f55b8233a3e8b4c6b416d5e69e8d52454ac99ae4abcb69d8cd8edb47e36c08b
+contentHash=e6aee60f1e96391e30f56d9a732ef66b1c026a8faa47499213d3fa1f820b8623
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-report-transfer-u13-i-report-frame-time-0`
+
+- Objectives: obj-u13-reported
+- Sessions: u13-s-orient, u13-s-reported
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d28228779398aca3fdd2cef0fe6d3467dcb9592fbfeeb7b75049e9ea4f39b89d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u13-i-report-frame-time
+originalSourceText=Complete retained Wikibooks Future3353822 Present or future subsection with nationality comparison and direct/reported evening examples, existing CC BY-SA4.0 contributor-history/rights route Copyrights4622060. Native clauses preserve source stress/words/punctuation; only mechanical emphasis/link-label unfolding. Independent English,2026-10-13. Bounded supplied-context recognition, not generating reports or universally mandatory English backshift/Russian tense retention/pronoun replacement. The source mislabels быть perfective and overgeneralizes aspect/completion/repetition and every original tense; those claims are excluded. Guided nationality example has already been taught earlier; new report uses existing evening context, not unseen evidence. Source/rights/linguistic acceptance pending; no private book prose.
+Context:
+In Она́ сказа́ла, что она́ ска́жет ему́ ве́чером, Past reporting verb with a future embedded action. The reporting verb said is past; the embedded verb about telling him retains future form. Future is interpreted within the reported content, not a guarantee that the action is after the present moment or has been completed. Recognize this supplied context; English backshift and Russian tense/pronoun choices are not automatic rules for every report.
+Tuple-v1:tuple-v1:1;83:Она́ сказа́ла, что она́ ска́жет ему́ ве́чером50:Past reporting verb with a future embedded action.1;50:Future reporting verb with a past embedded action.
+shippedText=Она́ сказа́ла, что она́ ска́жет ему́ ве́чером
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bb16858992d2aecc3561c7838fe8e44ea234e462e672eb1c2e7294c4ef7a52fb
+contentHash=c8e6010b0c44c8a1bb53ff367c6e2429431de7167b8a4987f2cfebb8e4a14dbd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-report-transfer-u13-i-report-frame-time-1`
+
+- Objectives: obj-u13-reported
+- Sessions: u13-s-orient, u13-s-reported
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6772b0a060eebe89b3b02f4573c9fa97e6611f100b15304c2c95f8fe12239e64
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u13-i-report-frame-time
+originalSourceText=Complete retained Wikibooks Future3353822 Present or future subsection with nationality comparison and direct/reported evening examples, existing CC BY-SA4.0 contributor-history/rights route Copyrights4622060. Native clauses preserve source stress/words/punctuation; only mechanical emphasis/link-label unfolding. Independent English,2026-10-13. Bounded supplied-context recognition, not generating reports or universally mandatory English backshift/Russian tense retention/pronoun replacement. The source mislabels быть perfective and overgeneralizes aspect/completion/repetition and every original tense; those claims are excluded. Guided nationality example has already been taught earlier; new report uses existing evening context, not unseen evidence. Source/rights/linguistic acceptance pending; no private book prose.
+Context:
+In Она́ сказа́ла, что она́ ска́жет ему́ ве́чером, Past reporting verb with a future embedded action. The reporting verb said is past; the embedded verb about telling him retains future form. Future is interpreted within the reported content, not a guarantee that the action is after the present moment or has been completed. Recognize this supplied context; English backshift and Russian tense/pronoun choices are not automatic rules for every report.
+Tuple-v1:tuple-v1:1;83:Она́ сказа́ла, что она́ ска́жет ему́ ве́чером50:Past reporting verb with a future embedded action.1;50:Future reporting verb with a past embedded action.
+shippedText=Past reporting verb with a future embedded action.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bb16858992d2aecc3561c7838fe8e44ea234e462e672eb1c2e7294c4ef7a52fb
+contentHash=57cf0c49e50d6e67164e6931fff1b15bf3ba2e82c03b6a3c9a2014bdc2cc0301
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-report-transfer-u13-i-report-frame-time-2`
+
+- Objectives: obj-u13-reported
+- Sessions: u13-s-orient, u13-s-reported
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ba34cf61423d3d42391bdf2e2da5935ff85c8a5d0f3949c5cdd35009b889d020
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u13-i-report-frame-time
+originalSourceText=Complete retained Wikibooks Future3353822 Present or future subsection with nationality comparison and direct/reported evening examples, existing CC BY-SA4.0 contributor-history/rights route Copyrights4622060. Native clauses preserve source stress/words/punctuation; only mechanical emphasis/link-label unfolding. Independent English,2026-10-13. Bounded supplied-context recognition, not generating reports or universally mandatory English backshift/Russian tense retention/pronoun replacement. The source mislabels быть perfective and overgeneralizes aspect/completion/repetition and every original tense; those claims are excluded. Guided nationality example has already been taught earlier; new report uses existing evening context, not unseen evidence. Source/rights/linguistic acceptance pending; no private book prose.
+Context:
+In Она́ сказа́ла, что она́ ска́жет ему́ ве́чером, Past reporting verb with a future embedded action. The reporting verb said is past; the embedded verb about telling him retains future form. Future is interpreted within the reported content, not a guarantee that the action is after the present moment or has been completed. Recognize this supplied context; English backshift and Russian tense/pronoun choices are not automatic rules for every report.
+Tuple-v1:tuple-v1:1;83:Она́ сказа́ла, что она́ ска́жет ему́ ве́чером50:Past reporting verb with a future embedded action.1;50:Future reporting verb with a past embedded action.
+shippedText=Future reporting verb with a past embedded action.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bb16858992d2aecc3561c7838fe8e44ea234e462e672eb1c2e7294c4ef7a52fb
+contentHash=2b0b9fa3b07ce1868f1faa8469d22700b25c09b71b5cfbb2d6540c81048a1733
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-report-transfer-u13-i-report-frame-time-feedback`
+
+- Objectives: obj-u13-reported
+- Sessions: u13-s-orient, u13-s-reported
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 40c14f0330dba33c673be6216b91e049f5056bef6c8f2535e1bf0fc8fa68fbb6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-reported:report-transfer:u13-i-report-frame-time-feedback
+originalSourceText=Complete retained Wikibooks Future3353822 Present or future subsection with nationality comparison and direct/reported evening examples, existing CC BY-SA4.0 contributor-history/rights route Copyrights4622060. Native clauses preserve source stress/words/punctuation; only mechanical emphasis/link-label unfolding. Independent English,2026-10-13. Bounded supplied-context recognition, not generating reports or universally mandatory English backshift/Russian tense retention/pronoun replacement. The source mislabels быть perfective and overgeneralizes aspect/completion/repetition and every original tense; those claims are excluded. Guided nationality example has already been taught earlier; new report uses existing evening context, not unseen evidence. Source/rights/linguistic acceptance pending; no private book prose.
+In Она́ сказа́ла, что она́ ска́жет ему́ ве́чером, Past reporting verb with a future embedded action. The reporting verb said is past; the embedded verb about telling him retains future form. Future is interpreted within the reported content, not a guarantee that the action is after the present moment or has been completed. Recognize this supplied context; English backshift and Russian tense/pronoun choices are not automatic rules for every report.
+shippedText=In Она́ сказа́ла, что она́ ска́жет ему́ ве́чером, Past reporting verb with a future embedded action. The reporting verb said is past; the embedded verb about telling him retains future form. Future is interpreted within the reported content, not a guarantee that the action is after the present moment or has been completed. Recognize this supplied context; English backshift and Russian tense/pronoun choices are not automatic rules for every report.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=51869b22fc6a7f14c31c1cfd5d186d516220c06ff8f7afdc21e4aa72f050ff20
+contentHash=d4a9a8e75d4808ebd0d79f2b7ac648b64b3ffd2fe7f7a54e686b5be88ea09151
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-report-transfer-u13-i-report-frame-time-prompt`
+
+- Objectives: obj-u13-reported
+- Sessions: u13-s-orient, u13-s-reported
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dc85f24443c00fcbc20bd6d72f65ba4540be46f9970feb3c9dc3dd24cfc2fee0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-reported:report-transfer:u13-i-report-frame-time-prompt
+originalSourceText=Complete retained Wikibooks Future3353822 Present or future subsection with nationality comparison and direct/reported evening examples, existing CC BY-SA4.0 contributor-history/rights route Copyrights4622060. Native clauses preserve source stress/words/punctuation; only mechanical emphasis/link-label unfolding. Independent English,2026-10-13. Bounded supplied-context recognition, not generating reports or universally mandatory English backshift/Russian tense retention/pronoun replacement. The source mislabels быть perfective and overgeneralizes aspect/completion/repetition and every original tense; those claims are excluded. Guided nationality example has already been taught earlier; new report uses existing evening context, not unseen evidence. Source/rights/linguistic acceptance pending; no private book prose.
+Which English interpretation identifies the reporting verb and embedded action in this supplied evening report?
+shippedText=Which English interpretation identifies the reporting verb and embedded action in this supplied evening report?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6ba80bd60cb5c0fec263c389c2fb82d041b95574e132c8be2130b5dc147e1555
+contentHash=6997c660230c17a93b46dc299dc53fd36219d180fbe9381d4c2f1c3039fc43b4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-report-transfer-u13-i-report-frame-time-reason`
+
+- Objectives: obj-u13-reported
+- Sessions: u13-s-orient, u13-s-reported
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e72ff47f76f9cab721813786ddaaa2648d2b3275be8c3e9428eb625e02c7da52
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-reported:report-transfer:u13-i-report-frame-time-reason
+originalSourceText=Complete retained Wikibooks Future3353822 Present or future subsection with nationality comparison and direct/reported evening examples, existing CC BY-SA4.0 contributor-history/rights route Copyrights4622060. Native clauses preserve source stress/words/punctuation; only mechanical emphasis/link-label unfolding. Independent English,2026-10-13. Bounded supplied-context recognition, not generating reports or universally mandatory English backshift/Russian tense retention/pronoun replacement. The source mislabels быть perfective and overgeneralizes aspect/completion/repetition and every original tense; those claims are excluded. Guided nationality example has already been taught earlier; new report uses existing evening context, not unseen evidence. Source/rights/linguistic acceptance pending; no private book prose.
+Future reporting verb with a past embedded action. This does not describe the finite forms in the supplied target context.
+shippedText=Future reporting verb with a past embedded action. This does not describe the finite forms in the supplied target context.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e2b130b808d06fddf3883196285b9230504fbb68597ce1bbfe6a1801c3e20117
+contentHash=f0cdddbc28f0efeea6c7716eee94a9fb8e70e44c281081d3a9956f9cba2fdb70
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-report-transfer-u13-st-check-reported-body`
+
+- Objectives: obj-u13-reported
+- Sessions: u13-s-orient, u13-s-reported
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: eafc11b8fe4aefe76f282f97629d48cd7b9a8e3b5c9ca9c34c7ccdee17a48fd6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-reported:report-transfer:u13-st-check-reported-body
+originalSourceText=Complete retained Wikibooks Future3353822 Present or future subsection with nationality comparison and direct/reported evening examples, existing CC BY-SA4.0 contributor-history/rights route Copyrights4622060. Native clauses preserve source stress/words/punctuation; only mechanical emphasis/link-label unfolding. Independent English,2026-10-13. Bounded supplied-context recognition, not generating reports or universally mandatory English backshift/Russian tense retention/pronoun replacement. The source mislabels быть perfective and overgeneralizes aspect/completion/repetition and every original tense; those claims are excluded. Guided nationality example has already been taught earlier; new report uses existing evening context, not unseen evidence. Source/rights/linguistic acceptance pending; no private book prose.
+Interpret the complete supplied context. A missed choice returns to all teaching cards and worked examples.
+shippedText=Interpret the complete supplied context. A missed choice returns to all teaching cards and worked examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=200e97aea961c4a57a69e3c512a3a647a11c16c00caeed3ffe1de012f43a52b8
+contentHash=51290b0d032cc20843cdbadfaccaafb7f4b0e8120b37d3d3bed9c4dc2321e31c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-report-transfer-u13-st-guided-reported-1-body`
+
+- Objectives: obj-u13-reported
+- Sessions: u13-s-orient, u13-s-reported
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c6dd8680ac417558b6b5752d1f5288c2eebca3c37404bca967bd6035391cf860
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-reported:report-transfer:u13-st-guided-reported-1-body
+originalSourceText=Complete retained Wikibooks Future3353822 Present or future subsection with nationality comparison and direct/reported evening examples, existing CC BY-SA4.0 contributor-history/rights route Copyrights4622060. Native clauses preserve source stress/words/punctuation; only mechanical emphasis/link-label unfolding. Independent English,2026-10-13. Bounded supplied-context recognition, not generating reports or universally mandatory English backshift/Russian tense retention/pronoun replacement. The source mislabels быть perfective and overgeneralizes aspect/completion/repetition and every original tense; those claims are excluded. Guided nationality example has already been taught earlier; new report uses existing evening context, not unseen evidence. Source/rights/linguistic acceptance pending; no private book prose.
+Interpret the complete supplied context. A missed choice returns to all teaching cards and worked examples.
+shippedText=Interpret the complete supplied context. A missed choice returns to all teaching cards and worked examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=200e97aea961c4a57a69e3c512a3a647a11c16c00caeed3ffe1de012f43a52b8
+contentHash=51290b0d032cc20843cdbadfaccaafb7f4b0e8120b37d3d3bed9c4dc2321e31c
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -4054,6 +4769,126 @@ attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history f
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=b12fad2c641b1c5647b12762968bb5d302adaada5c7cdc620b3c153be64e5181
 contentHash=5e0d737af507e7533d4e288ecce80627dc9ed90656ed2e36e15ead74bdcedb0b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u13-report-transfer-native-evening`
+
+- Objectives: obj-u13-reported
+- Sessions: u13-s-orient, u13-s-reported
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 343be43e65a6da7688277a6a1b1105b6ed86c685a0887575843725b32c805807
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Future_tense?oldid=3353822
+sourceRevision=3353822
+sourceRecordId=future-report-full-context:83ebe0a793af0039623aecdf1a0b3e548ba94af3d8ef89259089cc01791807b1
+originalSourceText==== Present or future? ===
+
+There is also the decision whether to use the future tense at all, and there are three nuances between English and Russian. In English, when reporting a story, we usually change the tense of what was said: compare "I ''am'' English" with "He said he ''was'' English" - the reported verb changes tense. In Russian, however, we keep the tense the same, so the same report is literally, "He said he '''is''' English" - "'''Он сказа́л, что он англича́нин'''", not "'''Он сказа́л, что он ''был'' англича́нином'''". Whatever tense was used originally is kept.
+
+Another nuance between English and Russian is using prepositions and time. In English, after 'if', 'until', 'while', 'when', etc, we use the present tense, even if we're referring to the future. For example, in "If I fly, I'll phone you", "I fly" is the present tense, even though we're referring to the future. Since Russian has less ambiguous grammar for tense and aspect, if they're referring to the future with those words, they use it: "If I ''will fly'', I'll phone you" - '''Если я ''полечу́'', Я тебе́ позвоню́'''.
+
+Finally, like in English, Russians can also use the present tense to refer to future events, if they're definitely going to happen: I'm going to America tomorrow - '''За́втра я ''е́ду'' в Аме́рику''', is present tense.
+
+Examples:
+:I will tell him in the evening - '''Я скажу ему ве́чером'''
+:She said that she would speak to him in the evening - '''Она́ сказа́ла, что она́ ска́жет ему́ ве́чером''' - ''perfective past and future as actions completed, definite, etc.''
+:When I'm in Moscow, I'll speak only in Russian - '''Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски'''
+shippedText=Она́ сказа́ла, что она́ ска́жет ему́ ве́чером
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=83ebe0a793af0039623aecdf1a0b3e548ba94af3d8ef89259089cc01791807b1
+contentHash=c8e6010b0c44c8a1bb53ff367c6e2429431de7167b8a4987f2cfebb8e4a14dbd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u13-report-transfer-native-nationality`
+
+- Objectives: obj-u13-reported
+- Sessions: u13-s-orient, u13-s-reported
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 290f88e6f716eff97f30373f6ae36bb9551adfdabb7280004af1b1a99cc63fcd
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Future_tense?oldid=3353822
+sourceRevision=3353822
+sourceRecordId=future-report-full-context:83ebe0a793af0039623aecdf1a0b3e548ba94af3d8ef89259089cc01791807b1
+originalSourceText==== Present or future? ===
+
+There is also the decision whether to use the future tense at all, and there are three nuances between English and Russian. In English, when reporting a story, we usually change the tense of what was said: compare "I ''am'' English" with "He said he ''was'' English" - the reported verb changes tense. In Russian, however, we keep the tense the same, so the same report is literally, "He said he '''is''' English" - "'''Он сказа́л, что он англича́нин'''", not "'''Он сказа́л, что он ''был'' англича́нином'''". Whatever tense was used originally is kept.
+
+Another nuance between English and Russian is using prepositions and time. In English, after 'if', 'until', 'while', 'when', etc, we use the present tense, even if we're referring to the future. For example, in "If I fly, I'll phone you", "I fly" is the present tense, even though we're referring to the future. Since Russian has less ambiguous grammar for tense and aspect, if they're referring to the future with those words, they use it: "If I ''will fly'', I'll phone you" - '''Если я ''полечу́'', Я тебе́ позвоню́'''.
+
+Finally, like in English, Russians can also use the present tense to refer to future events, if they're definitely going to happen: I'm going to America tomorrow - '''За́втра я ''е́ду'' в Аме́рику''', is present tense.
+
+Examples:
+:I will tell him in the evening - '''Я скажу ему ве́чером'''
+:She said that she would speak to him in the evening - '''Она́ сказа́ла, что она́ ска́жет ему́ ве́чером''' - ''perfective past and future as actions completed, definite, etc.''
+:When I'm in Moscow, I'll speak only in Russian - '''Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски'''
+shippedText=Он сказа́л, что он англича́нин
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=83ebe0a793af0039623aecdf1a0b3e548ba94af3d8ef89259089cc01791807b1
+contentHash=2562d2fa8f1de2890f3a7a0b8088edee6d2893c7609e3036feb64be1808581f8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u13-report-transfer-native-past-nationality`
+
+- Objectives: obj-u13-reported
+- Sessions: u13-s-orient, u13-s-reported
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 01d03c5560bcf540fda603d2b28fc5b0b7942a1555cf9e4f0152e5e10c8910dc
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Future_tense?oldid=3353822
+sourceRevision=3353822
+sourceRecordId=future-report-full-context:83ebe0a793af0039623aecdf1a0b3e548ba94af3d8ef89259089cc01791807b1
+originalSourceText==== Present or future? ===
+
+There is also the decision whether to use the future tense at all, and there are three nuances between English and Russian. In English, when reporting a story, we usually change the tense of what was said: compare "I ''am'' English" with "He said he ''was'' English" - the reported verb changes tense. In Russian, however, we keep the tense the same, so the same report is literally, "He said he '''is''' English" - "'''Он сказа́л, что он англича́нин'''", not "'''Он сказа́л, что он ''был'' англича́нином'''". Whatever tense was used originally is kept.
+
+Another nuance between English and Russian is using prepositions and time. In English, after 'if', 'until', 'while', 'when', etc, we use the present tense, even if we're referring to the future. For example, in "If I fly, I'll phone you", "I fly" is the present tense, even though we're referring to the future. Since Russian has less ambiguous grammar for tense and aspect, if they're referring to the future with those words, they use it: "If I ''will fly'', I'll phone you" - '''Если я ''полечу́'', Я тебе́ позвоню́'''.
+
+Finally, like in English, Russians can also use the present tense to refer to future events, if they're definitely going to happen: I'm going to America tomorrow - '''За́втра я ''е́ду'' в Аме́рику''', is present tense.
+
+Examples:
+:I will tell him in the evening - '''Я скажу ему ве́чером'''
+:She said that she would speak to him in the evening - '''Она́ сказа́ла, что она́ ска́жет ему́ ве́чером''' - ''perfective past and future as actions completed, definite, etc.''
+:When I'm in Moscow, I'll speak only in Russian - '''Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски'''
+shippedText=Он сказа́л, что он был англича́нином
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=83ebe0a793af0039623aecdf1a0b3e548ba94af3d8ef89259089cc01791807b1
+contentHash=60ec708b70a093be7e3272a89aec3c52f81b719ef906073ee2a6165014cba015
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -5755,6 +6590,7 @@ permitsAppUse=true
 - `obj-u13-reported` PRACTICE `u13-st-guided-reported-1`
 - `obj-u13-reported` CHECK `u13-i-reported-1`
 - `obj-u13-reported` CHECK `u13-i-reported-2`
+- `obj-u13-reported` CHECK `u13-i-report-frame-time`
 - `obj-u13-reported` REMEDIATION `u13-st-rem-reported`
 - `obj-u13-book` INSTRUCTION `u13-st-book-work`
 - `obj-u13-book` INSTRUCTION `u13-st-book`
@@ -5814,17 +6650,20 @@ permitsAppUse=true
 - `u13-st-teach-reported-1` EXAMPLE `ex-u13-reported-0`
 - `u13-st-teach-reported-1` EXAMPLE `ex-u13-reported-1`
 - `u13-st-teach-reported-1` REFERENCE `ref-u1115-attribution`
-- `u13-st-guided-reported-1` REMEDIATION `u13-st-rem-reported`
-- `u13-st-guided-reported-1` ITEM `u13-g-reported-0`
 - `u13-st-teach-reported-2` REFERENCE `ref-u1115-attribution`
 - `u13-st-teach-reported-3` EXAMPLE `ex-u13-reported-2`
 - `u13-st-teach-reported-3` EXAMPLE `ex-u13-reported-3`
 - `u13-st-teach-reported-3` REFERENCE `ref-u1115-attribution`
+- `u13-st-guided-reported-1` REMEDIATION `u13-st-rem-reported`
+- `u13-st-guided-reported-1` ITEM `u13-g-reported-0`
 - `u13-st-rem-reported` EXAMPLE `ex-u13-reported-0`
 - `u13-st-rem-reported` EXAMPLE `ex-u13-reported-1`
+- `u13-st-rem-reported` EXAMPLE `ex-u13-reported-2`
+- `u13-st-rem-reported` EXAMPLE `ex-u13-reported-3`
 - `u13-st-check-reported` REMEDIATION `u13-st-rem-reported`
 - `u13-st-check-reported` ITEM `u13-i-reported-1`
 - `u13-st-check-reported` ITEM `u13-i-reported-2`
+- `u13-st-check-reported` ITEM `u13-i-report-frame-time`
 - `u13-s-book` OBJECTIVE `obj-u13-book`
 - `u13-st-book-work` REFERENCE `ref-u1115-attribution`
 - `obj-u13-past-aspect` PROVENANCE `prov-ca-13-370`
@@ -5852,6 +6691,28 @@ permitsAppUse=true
 - `obj-u13-tense-keep` PROVENANCE `prov-ca-u13-feedback-u13-i-tense-keep-1-distractor-1`
 - `obj-u13-tense-keep` PROVENANCE `prov-ca-u13-feedback-u13-i-tense-keep-2`
 - `obj-u13-tense-keep` PROVENANCE `prov-ca-u13-feedback-u13-i-tense-keep-2-distractor-1`
+- `obj-u13-reported` PROVENANCE `prov-ca-u13-report-transfer-objective-title`
+- `obj-u13-reported` PROVENANCE `prov-ca-u13-report-transfer-remediation-body`
+- `obj-u13-reported` PROVENANCE `prov-ca-u13-report-transfer-teach-0-body`
+- `obj-u13-reported` PROVENANCE `prov-ca-u13-report-transfer-teach-0-title`
+- `obj-u13-reported` PROVENANCE `prov-ca-u13-report-transfer-teach-1-body`
+- `obj-u13-reported` PROVENANCE `prov-ca-u13-report-transfer-teach-1-title`
+- `obj-u13-reported` PROVENANCE `prov-ca-u13-report-transfer-teach-2-body`
+- `obj-u13-reported` PROVENANCE `prov-ca-u13-report-transfer-teach-2-title`
+- `obj-u13-reported` PROVENANCE `prov-ca-u13-report-transfer-u13-g-reported-0-0`
+- `obj-u13-reported` PROVENANCE `prov-ca-u13-report-transfer-u13-g-reported-0-1`
+- `obj-u13-reported` PROVENANCE `prov-ca-u13-report-transfer-u13-g-reported-0-2`
+- `obj-u13-reported` PROVENANCE `prov-ca-u13-report-transfer-u13-g-reported-0-feedback`
+- `obj-u13-reported` PROVENANCE `prov-ca-u13-report-transfer-u13-g-reported-0-prompt`
+- `obj-u13-reported` PROVENANCE `prov-ca-u13-report-transfer-u13-g-reported-0-reason`
+- `obj-u13-reported` PROVENANCE `prov-ca-u13-report-transfer-u13-i-report-frame-time-0`
+- `obj-u13-reported` PROVENANCE `prov-ca-u13-report-transfer-u13-i-report-frame-time-1`
+- `obj-u13-reported` PROVENANCE `prov-ca-u13-report-transfer-u13-i-report-frame-time-2`
+- `obj-u13-reported` PROVENANCE `prov-ca-u13-report-transfer-u13-i-report-frame-time-feedback`
+- `obj-u13-reported` PROVENANCE `prov-ca-u13-report-transfer-u13-i-report-frame-time-prompt`
+- `obj-u13-reported` PROVENANCE `prov-ca-u13-report-transfer-u13-i-report-frame-time-reason`
+- `obj-u13-reported` PROVENANCE `prov-ca-u13-report-transfer-u13-st-check-reported-body`
+- `obj-u13-reported` PROVENANCE `prov-ca-u13-report-transfer-u13-st-guided-reported-1-body`
 - `obj-u13-past-aspect` PROVENANCE `prov-ex-or-u13-past-aspect-2`
 - `obj-u13-past-aspect` PROVENANCE `prov-ex-or-u13-past-aspect-2-gloss`
 - `obj-u13-past-aspect` PROVENANCE `prov-ex-or-u13-past-aspect-3`
@@ -5906,6 +6767,9 @@ permitsAppUse=true
 - `obj-u13-past-aspect` PROVENANCE `prov-u13-past-aspect-rem-r1`
 - `obj-u13-past-aspect` PROVENANCE `prov-u13-past-aspect-x-0`
 - `obj-u13-past-aspect` PROVENANCE `prov-u13-past-aspect-x-1`
+- `obj-u13-reported` PROVENANCE `prov-u13-report-transfer-native-evening`
+- `obj-u13-reported` PROVENANCE `prov-u13-report-transfer-native-nationality`
+- `obj-u13-reported` PROVENANCE `prov-u13-report-transfer-native-past-nationality`
 - `obj-u13-reported` PROVENANCE `prov-u13-reported-rem`
 - `obj-u13-reported` PROVENANCE `prov-u13-reported-rem-r0`
 - `obj-u13-reported` PROVENANCE `prov-u13-reported-rem-r1`
