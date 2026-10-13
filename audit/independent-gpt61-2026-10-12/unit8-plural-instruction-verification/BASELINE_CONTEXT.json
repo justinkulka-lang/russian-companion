@@ -1,0 +1,14 @@
+{
+  "repositoryCommit": "3812f0e793ac6478a809fe683b303048e6f1c69c",
+  "command": "./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*Unit8PluralBaselineTest' --max-workers=4 --console=plain",
+  "exitCode": 1,
+  "counts": {
+    "tests": 1,
+    "failures": 1,
+    "errors": 0,
+    "skipped": 0
+  },
+  "expectedFailure": "Only one of eight cards precedes guidance; remediation omits seven cards and worked examples.",
+  "workingTree": "Temporary untracked diagnostic harness only; production unchanged. Archived outside compiled tests and removed.",
+  "rawCurriculumSha256": "69c7e0d715b87b233a0d0a93e33bc4bb13722fd7a3f852cba408ab9054fe501d"
+}

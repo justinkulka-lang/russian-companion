@@ -1,0 +1,436 @@
+{
+  "baselineCommit": "3812f0e793ac6478a809fe683b303048e6f1c69c",
+  "beforeSha256": "69c7e0d715b87b233a0d0a93e33bc4bb13722fd7a3f852cba408ab9054fe501d",
+  "afterSha256": "0d270e80b87924ada1e13d657a0e655315501604361b2eda946db9b3af803b36",
+  "changes": [
+    {
+      "before": {
+        "id": "obj-u8-plural",
+        "unitNumber": 8,
+        "title": "Choose the admitted plural form",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u8-st-orient",
+          "u8-st-teach-plural-1",
+          "u8-st-teach-plural-2",
+          "u8-st-teach-plural-3",
+          "u8-st-teach-plural-4",
+          "u8-st-teach-plural-5",
+          "u8-st-teach-plural-6",
+          "u8-st-teach-plural-7",
+          "u8-st-teach-plural-8"
+        ],
+        "exampleIds": [
+          "ex-or-u8-plural-0",
+          "ex-or-u8-plural-1",
+          "ex-or-u8-plural-2",
+          "ex-or-u8-plural-3",
+          "ex-or-u8-plural-4",
+          "ex-or-u8-plural-5",
+          "ex-or-u8-plural-6",
+          "ex-or-u8-plural-7",
+          "ex-or-u8-plural-8",
+          "ex-or-u8-plural-9",
+          "ex-or-u8-plural-10",
+          "ex-or-u8-plural-11",
+          "ex-or-u8-plural-12",
+          "ex-or-u8-plural-13"
+        ],
+        "practiceStepIds": [
+          "u8-st-guided-plural-1"
+        ],
+        "checkItemIds": [
+          "u8-i-plural-1",
+          "u8-i-plural-2",
+          "u8-i-plural-3",
+          "u8-i-plural-4",
+          "u8-i-plural-5",
+          "u8-i-plural-6"
+        ],
+        "remediationStepIds": [
+          "u8-st-rem-plural"
+        ]
+      },
+      "after": {
+        "id": "obj-u8-plural",
+        "unitNumber": 8,
+        "title": "Recognize supplied singular and plural nominative noun forms",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u8-st-orient",
+          "u8-st-teach-plural-1",
+          "u8-st-teach-plural-2",
+          "u8-st-teach-plural-3",
+          "u8-st-teach-plural-4",
+          "u8-st-teach-plural-5",
+          "u8-st-teach-plural-6",
+          "u8-st-teach-plural-7",
+          "u8-st-teach-plural-8"
+        ],
+        "exampleIds": [
+          "ex-or-u8-plural-0",
+          "ex-or-u8-plural-1",
+          "ex-or-u8-plural-2",
+          "ex-or-u8-plural-3",
+          "ex-or-u8-plural-4",
+          "ex-or-u8-plural-5",
+          "ex-or-u8-plural-6",
+          "ex-or-u8-plural-7",
+          "ex-or-u8-plural-8",
+          "ex-or-u8-plural-9",
+          "ex-or-u8-plural-10",
+          "ex-or-u8-plural-11",
+          "ex-or-u8-plural-12",
+          "ex-or-u8-plural-13"
+        ],
+        "practiceStepIds": [
+          "u8-st-guided-plural-1"
+        ],
+        "checkItemIds": [
+          "u8-i-plural-1",
+          "u8-i-plural-2",
+          "u8-i-plural-3",
+          "u8-i-plural-4",
+          "u8-i-plural-5",
+          "u8-i-plural-6"
+        ],
+        "remediationStepIds": [
+          "u8-st-rem-plural"
+        ]
+      }
+    },
+    {
+      "before": {
+        "id": "u8-s-plural",
+        "title": "Choose the admitted plural form",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u8-plural"
+        ],
+        "steps": [
+          {
+            "id": "u8-st-teach-plural-1",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "сто́л — table. столы́ — table. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u8-plural-0",
+              "ex-or-u8-plural-1"
+            ]
+          },
+          {
+            "id": "u8-st-guided-plural-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u8-g-plural-0"
+            ],
+            "remediationStepId": "u8-st-rem-plural"
+          },
+          {
+            "id": "u8-st-teach-plural-2",
+            "kind": "TEACH",
+            "title": "Admitted instruction",
+            "body": "There's no 'masculine plural' and 'feminine plural' - there's just, 'plural'.",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ]
+          },
+          {
+            "id": "u8-st-teach-plural-3",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "го́род — town. города́ — town. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u8-plural-2",
+              "ex-or-u8-plural-3"
+            ]
+          },
+          {
+            "id": "u8-st-teach-plural-4",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "кни́га — book. кни́ги — book. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u8-plural-4",
+              "ex-or-u8-plural-5"
+            ]
+          },
+          {
+            "id": "u8-st-teach-plural-5",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "окно́ — window. о́кна — window. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u8-plural-6",
+              "ex-or-u8-plural-7"
+            ]
+          },
+          {
+            "id": "u8-st-teach-plural-6",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "ма́ма — mom. ма́мы — mom. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u8-plural-8",
+              "ex-or-u8-plural-9"
+            ]
+          },
+          {
+            "id": "u8-st-teach-plural-7",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "до́м — house. дома́ — house. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u8-plural-10",
+              "ex-or-u8-plural-11"
+            ]
+          },
+          {
+            "id": "u8-st-teach-plural-8",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "сло́во — word. слова́ — word. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u8-plural-12",
+              "ex-or-u8-plural-13"
+            ]
+          },
+          {
+            "id": "u8-st-rem-plural",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": "There's no 'masculine plural' and 'feminine plural' - there's just, 'plural'.",
+            "exampleIds": [
+              "ex-or-u8-plural-0",
+              "ex-or-u8-plural-1"
+            ]
+          },
+          {
+            "id": "u8-st-check-plural",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u8-i-plural-1",
+              "u8-i-plural-2",
+              "u8-i-plural-3",
+              "u8-i-plural-4",
+              "u8-i-plural-5",
+              "u8-i-plural-6"
+            ],
+            "remediationStepId": "u8-st-rem-plural"
+          }
+        ]
+      },
+      "after": {
+        "id": "u8-s-plural",
+        "title": "Choose the admitted plural form",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u8-plural"
+        ],
+        "steps": [
+          {
+            "id": "u8-st-teach-plural-1",
+            "kind": "TEACH",
+            "title": "Distinguish one table from tables",
+            "body": "сто́л is singular nominative; столы́ is plural nominative. In the selected table sense, the plural refers to tables. The English notes beside these examples are dictionary labels, not plural English translations or complete sentences. Choose the plural form when the question requests plural nominative. Both the ending and the supplied stress matter; do not insert a new stress pattern.",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u8-plural-0",
+              "ex-or-u8-plural-1"
+            ]
+          },
+          {
+            "id": "u8-st-teach-plural-2",
+            "kind": "TEACH",
+            "title": "Keep lexical gender separate from plural agreement",
+            "body": "These checks select supplied nominative plural noun forms. Each noun retains its dictionary gender; plural adjective agreement does not require separate masculine, feminine and neuter plural endings. The source’s single plural agreement category is not a claim that nouns lose lexical gender. Gender alone is not a complete algorithm for unfamiliar plural endings or stress. Learn these supplied pairs rather than applying them to every noun.",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ]
+          },
+          {
+            "id": "u8-st-teach-plural-3",
+            "kind": "TEACH",
+            "title": "Recognize the town pair",
+            "body": "го́род is singular nominative; города́ is plural nominative in this supplied pair. Select the latter for towns. The plural ending differs from the table pair and its supplied stress is on the final syllable. These patterns are word-specific recognition evidence, not permission to generate an unlisted form.",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u8-plural-2",
+              "ex-or-u8-plural-3"
+            ]
+          },
+          {
+            "id": "u8-st-teach-plural-4",
+            "kind": "TEACH",
+            "title": "Recognize the book pair and its spelling",
+            "body": "кни́га is singular nominative; кни́ги is plural nominative. Select the latter for books. The supplied plural retains its stress. Its final vowel follows the stem’s last consonant, one of the seven spelling-rule letters taught in the later spelling session. This same correct book pair is reused there as reinforcement; earlier independent credit does not replace that later objective’s checks.",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u8-plural-4",
+              "ex-or-u8-plural-5"
+            ]
+          },
+          {
+            "id": "u8-st-teach-plural-5",
+            "kind": "TEACH",
+            "title": "Recognize the window pair and shifted stress",
+            "body": "окно́ is singular nominative; о́кна is plural nominative in the supplied dictionary pair. Select the latter for windows. Notice the supplied stress moves to the first syllable. An ending-only guess would lose part of the taught form; do not invent another accent or treat this pair as every neuter noun’s algorithm.",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u8-plural-6",
+              "ex-or-u8-plural-7"
+            ]
+          },
+          {
+            "id": "u8-st-teach-plural-6",
+            "kind": "TEACH",
+            "title": "Recognize the mom pair",
+            "body": "ма́ма is singular nominative; ма́мы is plural nominative. Select the latter for moms in the supplied sense. The ending changes while the supplied stress stays in place. A feminine dictionary label alone does not prove every feminine noun has this ending.",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u8-plural-8",
+              "ex-or-u8-plural-9"
+            ]
+          },
+          {
+            "id": "u8-st-teach-plural-7",
+            "kind": "TEACH",
+            "title": "Recognize the house pair",
+            "body": "до́м is singular nominative; дома́ is plural nominative in the supplied house sense. Select the latter for houses. Preserve the source stress shift. The dictionary’s English house/home labels identify a sense; they are not a plural translation of the Russian form.",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u8-plural-10",
+              "ex-or-u8-plural-11"
+            ]
+          },
+          {
+            "id": "u8-st-teach-plural-8",
+            "kind": "TEACH",
+            "title": "Recognize the word pair within the taught scope",
+            "body": "сло́во is singular nominative; слова́ is plural nominative in the supplied word sense. Select the latter for words. Preserve its final stress. The seven pairs in this lesson cover several endings and stress patterns, but do not establish an unrestricted productive plural algorithm or meanings in every case. A missed choice returns to all cards and fourteen original worked forms.",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u8-plural-12",
+              "ex-or-u8-plural-13"
+            ]
+          },
+          {
+            "id": "u8-st-guided-plural-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the supplied nominative plural form. A missed answer returns to every teaching card and worked pair.",
+            "itemIds": [
+              "u8-g-plural-0"
+            ],
+            "remediationStepId": "u8-st-rem-plural"
+          },
+          {
+            "id": "u8-st-rem-plural",
+            "kind": "REMEDIATE",
+            "title": "Review all seven supplied nominative pairs",
+            "body": "сто́л is singular nominative; столы́ is plural nominative. In the selected table sense, the plural refers to tables. The English notes beside these examples are dictionary labels, not plural English translations or complete sentences. Choose the plural form when the question requests plural nominative. Both the ending and the supplied stress matter; do not insert a new stress pattern.\n\nThese checks select supplied nominative plural noun forms. Each noun retains its dictionary gender; plural adjective agreement does not require separate masculine, feminine and neuter plural endings. The source’s single plural agreement category is not a claim that nouns lose lexical gender. Gender alone is not a complete algorithm for unfamiliar plural endings or stress. Learn these supplied pairs rather than applying them to every noun.\n\nго́род is singular nominative; города́ is plural nominative in this supplied pair. Select the latter for towns. The plural ending differs from the table pair and its supplied stress is on the final syllable. These patterns are word-specific recognition evidence, not permission to generate an unlisted form.\n\nкни́га is singular nominative; кни́ги is plural nominative. Select the latter for books. The supplied plural retains its stress. Its final vowel follows the stem’s last consonant, one of the seven spelling-rule letters taught in the later spelling session. This same correct book pair is reused there as reinforcement; earlier independent credit does not replace that later objective’s checks.\n\nокно́ is singular nominative; о́кна is plural nominative in the supplied dictionary pair. Select the latter for windows. Notice the supplied stress moves to the first syllable. An ending-only guess would lose part of the taught form; do not invent another accent or treat this pair as every neuter noun’s algorithm.\n\nма́ма is singular nominative; ма́мы is plural nominative. Select the latter for moms in the supplied sense. The ending changes while the supplied stress stays in place. A feminine dictionary label alone does not prove every feminine noun has this ending.\n\nдо́м is singular nominative; дома́ is plural nominative in the supplied house sense. Select the latter for houses. Preserve the source stress shift. The dictionary’s English house/home labels identify a sense; they are not a plural translation of the Russian form.\n\nсло́во is singular nominative; слова́ is plural nominative in the supplied word sense. Select the latter for words. Preserve its final stress. The seven pairs in this lesson cover several endings and stress patterns, but do not establish an unrestricted productive plural algorithm or meanings in every case. A missed choice returns to all cards and fourteen original worked forms.",
+            "exampleIds": [
+              "ex-or-u8-plural-0",
+              "ex-or-u8-plural-1",
+              "ex-or-u8-plural-2",
+              "ex-or-u8-plural-3",
+              "ex-or-u8-plural-4",
+              "ex-or-u8-plural-5",
+              "ex-or-u8-plural-6",
+              "ex-or-u8-plural-7",
+              "ex-or-u8-plural-8",
+              "ex-or-u8-plural-9",
+              "ex-or-u8-plural-10",
+              "ex-or-u8-plural-11",
+              "ex-or-u8-plural-12",
+              "ex-or-u8-plural-13"
+            ]
+          },
+          {
+            "id": "u8-st-check-plural",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "Choose the supplied nominative plural form. A missed answer returns to every teaching card and worked pair.",
+            "itemIds": [
+              "u8-i-plural-1",
+              "u8-i-plural-2",
+              "u8-i-plural-3",
+              "u8-i-plural-4",
+              "u8-i-plural-5",
+              "u8-i-plural-6"
+            ],
+            "remediationStepId": "u8-st-rem-plural"
+          }
+        ]
+      }
+    }
+  ],
+  "addedProvenanceIds": [
+    "prov-ca-u8-plural-instruction-objective-title",
+    "prov-ca-u8-plural-instruction-0-title",
+    "prov-ca-u8-plural-instruction-0-body",
+    "prov-ca-u8-plural-instruction-1-title",
+    "prov-ca-u8-plural-instruction-1-body",
+    "prov-ca-u8-plural-instruction-2-title",
+    "prov-ca-u8-plural-instruction-2-body",
+    "prov-ca-u8-plural-instruction-3-title",
+    "prov-ca-u8-plural-instruction-3-body",
+    "prov-ca-u8-plural-instruction-4-title",
+    "prov-ca-u8-plural-instruction-4-body",
+    "prov-ca-u8-plural-instruction-5-title",
+    "prov-ca-u8-plural-instruction-5-body",
+    "prov-ca-u8-plural-instruction-6-title",
+    "prov-ca-u8-plural-instruction-6-body",
+    "prov-ca-u8-plural-instruction-7-title",
+    "prov-ca-u8-plural-instruction-7-body",
+    "prov-ca-u8-plural-instruction-u8-st-guided-plural-1-body",
+    "prov-ca-u8-plural-instruction-rem-title",
+    "prov-ca-u8-plural-instruction-rem-body",
+    "prov-ca-u8-plural-instruction-u8-st-check-plural-body"
+  ],
+  "bibliography": "Complete frozen OpenRussian nouns.csv commit50e210c4803237779cb562bc1abcea529066031c header and seven selected full rows, sg_nom/pl_nom/gender/English dictionary labels. Existing field-bound native records and apostrophe-to-combining-acute formatting unchanged. Existing CC BY-SA4.0 contributor/rights route retained. Wikibooks Adjectives4292379 complete nominative agreement/spelling context supplies plural adjective agreement regardless of noun gender. Broad all-ending/soft-adjective generalizations excluded. Independent English,2026-10-13; bounded recognition of seven supplied nominative pairs, not unrestricted formation/all cases/unseen or productive mastery. Dictionary English lemma labels are not plural sentence translations. No new Russian or private Penguin prose; qualified source/rights/semantic approval pending.",
+  "allScoredItemsUnchanged": true,
+  "allNativeExamplesUnchanged": true,
+  "semanticAcceptance": false,
+  "unseenContextClaim": false,
+  "productivePluralClaim": false
+}

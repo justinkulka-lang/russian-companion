@@ -1,0 +1,11 @@
+{
+  "totals": {
+    "tests": 7,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "workingTree": "Uncommitted instruction repair and six new methods; actual remediation-navigation assertions added afterward for final integration.",
+  "rawCurriculumSha256": "0d270e80b87924ada1e13d657a0e655315501604361b2eda946db9b3af803b36",
+  "baselineDiagnosticLabelNote": "The archived diagnostic accidentally labels its assertion IA011. Original producer IA011 concerns Unit29. This separate supplemental Unit8 instruction finding is not relabeled as producer IA011; original diagnostic bytes retained."
+}
