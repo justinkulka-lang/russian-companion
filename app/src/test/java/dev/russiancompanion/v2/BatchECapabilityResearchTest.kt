@@ -316,7 +316,7 @@ class BatchECapabilityResearchTest {
         val pack = loadCurriculumPack(root)
         val model = reconcileCurriculumReadiness(root, pack)
         val candidate = readAcceptanceCandidate(root)
-        assertEquals("7b8428298d5896c2c50ece4191bc39f87ddb45e07320fbdf3ff14d0e1ab97c88", model.packContentReviewDigest)
+        assertEquals("a77b06817306455c0df0139bda5f47abea8d343cff2bffdcfd2dfa46e84f62fe", model.packContentReviewDigest)
         assertEquals(candidate?.sourceDigest, model.repositorySourceDigest)
         assertEquals(model.repositorySourceDigest, computeReleaseSourceDigest(root))
         assertEquals("NOT_APPROVED", model.publicRelease)
@@ -336,7 +336,8 @@ class BatchECapabilityResearchTest {
         }
         val content = mapOf(
             7 to "0a4df65c918a87854c5088faf14ad2f6b9338d0b395452429ce6fd2a4caa1a6d",
-            17 to "6172c2a9be50c4b3c79b962dc5f9b055f8d2d267d3a6a8627a3e9805e4fc8cca",
+            // Unit17 question-transfer correction supersedes historical 6172c2a9be50c4b3c79b962dc5f9b055f8d2d267d3a6a8627a3e9805e4fc8cca.
+            17 to "16e8478be2cab8dad81faf971e4c13f088323b93612407a3b928ce85d31ea1c5",
             23 to "42a67675479cb835e6c429ffc76c0120c00ea389baed9e7e0cbc91f593b564e4",
             24 to "6e7a66f3c4f2f4457aa772a64e931a228933d6516cdd96986760692581d8cbc6",
             25 to "317881a1a5a77489ce03b939b567642725274c10c534e14be68007b199cde98d",
@@ -361,7 +362,8 @@ class BatchECapabilityResearchTest {
         )
         val reviewPackages = mapOf(
             7 to "444e13e9aa62b4b120928c6f1381898565a9ff47cc2a8bf1c0edc6fc2a001a65",
-            17 to "5f6ba37d5f872c8afc895c5b402d142240977157dff5f7b27c38a7104fbab6c3",
+            // Unit17 question-transfer correction supersedes historical 5f6ba37d5f872c8afc895c5b402d142240977157dff5f7b27c38a7104fbab6c3.
+            17 to "6fe1333083ac2b7d9cd46a092533c0722f7e37688254159d3a4f611ba31d9953",
             23 to "3132b83999674df89783745ad1ec1b9b15709c9659062b0cccf858f50eae438e",
             24 to "1513078e0309750e56a94be06f9da994060afb7ddd1cea9159fe758a1c68d6f5",
             25 to "d09669e2175455dba996fed8df9d84a04651b3d09477a7834dd765a9b31fae59",
