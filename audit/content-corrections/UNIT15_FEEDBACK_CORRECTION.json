@@ -1,0 +1,965 @@
+{
+  "baselineCommit": "deb398001af69dc58e1dddd5a18b8361182508f0",
+  "beforeSha256": "e7d644f726e79ed790524a74b693781de57483897cf19189224c4eef23e587b0",
+  "afterSha256": "ae49f032039e20ce3ac41bc9c249a31c25e0b8e5cfae397d1164042b57007f87",
+  "addedProvenanceIds": [
+    "prov-ca-u15-feedback-u15-g-imperative-0",
+    "prov-ca-u15-feedback-u15-g-imperative-0-distractor-1",
+    "prov-ca-u15-feedback-u15-i-imperative-1",
+    "prov-ca-u15-feedback-u15-i-imperative-1-distractor-1",
+    "prov-ca-u15-feedback-u15-i-imperative-2",
+    "prov-ca-u15-feedback-u15-i-imperative-2-distractor-1",
+    "prov-ca-u15-feedback-u15-g-say-request-0",
+    "prov-ca-u15-feedback-u15-g-say-request-0-distractor-1",
+    "prov-ca-u15-feedback-u15-i-say-request-1",
+    "prov-ca-u15-feedback-u15-i-say-request-1-distractor-1",
+    "prov-ca-u15-feedback-u15-i-say-request-2",
+    "prov-ca-u15-feedback-u15-i-say-request-2-distractor-1",
+    "prov-ca-u15-feedback-u15-g-aspect-consolidate-0",
+    "prov-ca-u15-feedback-u15-g-aspect-consolidate-0-distractor-1",
+    "prov-ca-u15-feedback-u15-i-aspect-consolidate-1",
+    "prov-ca-u15-feedback-u15-i-aspect-consolidate-1-distractor-1",
+    "prov-ca-u15-feedback-u15-i-aspect-consolidate-2",
+    "prov-ca-u15-feedback-u15-i-aspect-consolidate-2-distractor-1"
+  ],
+  "changes": [
+    {
+      "before": {
+        "id": "u15-g-imperative-0",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted row is the plural imperative?",
+        "promptLetter": "чита́й",
+        "options": [
+          "чита́йте",
+          "чита́ть"
+        ],
+        "answer": "чита́йте",
+        "feedback": "Does this answer show the plural imperative? чита́йте.",
+        "objectiveId": "obj-u15-imperative",
+        "sourceId": "src-openrussian-50e210c4",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Does this row fail the plural imperative?"
+        ],
+        "assessment": {
+          "testedFeature": "PLURAL_IMPERATIVE",
+          "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+          "contrastSetId": "u15-imperative-0",
+          "cueLanguage": "ru",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ex-or-u15-imperative-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-or-u15-imperative-2"
+          ],
+          "distractorDifference": [
+            "",
+            "Does this row fail the plural imperative?"
+          ],
+          "whyAnswerDemonstratesObjective": "Does this answer show the plural imperative?",
+          "contrastMembers": [
+            "чита́йте",
+            "чита́ть"
+          ],
+          "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+          "relationParticipantIds": [
+            "prov-ex-or-u15-imperative-0",
+            "prov-ex-or-u15-imperative-1",
+            "prov-ex-or-u15-imperative-2"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      },
+      "after": {
+        "id": "u15-g-imperative-0",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted row is the plural imperative?",
+        "promptLetter": "чита́й",
+        "options": [
+          "чита́йте",
+          "чита́ть"
+        ],
+        "answer": "чита́йте",
+        "feedback": "чита́йте is the plural imperative form of the reading verb shown here, used for multiple addressees or polite address to one person. It extends the shown singular form with the plural/polite ending. чита́ть is the infinitive, not the inflected plural imperative requested. This identifies the supplied form, not every possible way to express a command.",
+        "objectiveId": "obj-u15-imperative",
+        "sourceId": "src-openrussian-50e210c4",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "чита́ть is the infinitive, not the requested inflected plural imperative form."
+        ],
+        "assessment": {
+          "testedFeature": "PLURAL_IMPERATIVE",
+          "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+          "contrastSetId": "u15-imperative-0",
+          "cueLanguage": "ru",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ex-or-u15-imperative-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-or-u15-imperative-2"
+          ],
+          "distractorDifference": [
+            "",
+            "чита́ть is the infinitive, not the requested inflected plural imperative form."
+          ],
+          "whyAnswerDemonstratesObjective": "чита́йте is the plural imperative form of the reading verb shown here, used for multiple addressees or polite address to one person. It extends the shown singular form with the plural/polite ending. чита́ть is the infinitive, not the inflected plural imperative requested. This identifies the supplied form, not every possible way to express a command.",
+          "contrastMembers": [
+            "чита́йте",
+            "чита́ть"
+          ],
+          "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+          "relationParticipantIds": [
+            "prov-ex-or-u15-imperative-0",
+            "prov-ex-or-u15-imperative-1",
+            "prov-ex-or-u15-imperative-2"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u15-i-imperative-1",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted row is the singular imperative?",
+        "promptLetter": "чита́йте",
+        "options": [
+          "чита́й",
+          "чита́ть"
+        ],
+        "answer": "чита́й",
+        "feedback": "Does this answer show the singular imperative? чита́й.",
+        "objectiveId": "obj-u15-imperative",
+        "sourceId": "src-openrussian-50e210c4",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Does this row fail the singular imperative?"
+        ],
+        "assessment": {
+          "testedFeature": "SINGULAR_IMPERATIVE",
+          "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+          "contrastSetId": "u15-imperative-1",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-or-u15-imperative-0"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-or-u15-imperative-2"
+          ],
+          "distractorDifference": [
+            "",
+            "Does this row fail the singular imperative?"
+          ],
+          "whyAnswerDemonstratesObjective": "Does this answer show the singular imperative?",
+          "contrastMembers": [
+            "чита́й",
+            "чита́ть"
+          ],
+          "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+          "relationParticipantIds": [
+            "prov-ex-or-u15-imperative-1",
+            "prov-ex-or-u15-imperative-0",
+            "prov-ex-or-u15-imperative-2"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      },
+      "after": {
+        "id": "u15-i-imperative-1",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted row is the singular imperative?",
+        "promptLetter": "чита́йте",
+        "options": [
+          "чита́й",
+          "чита́ть"
+        ],
+        "answer": "чита́й",
+        "feedback": "чита́й is the singular imperative form of the reading verb, used for one informal addressee. чита́ть is the infinitive, not that inflected imperative form. The cue shows the plural/polite form, while this question asks for the singular imperative table row.",
+        "objectiveId": "obj-u15-imperative",
+        "sourceId": "src-openrussian-50e210c4",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "чита́ть is the infinitive, not the requested inflected singular imperative form."
+        ],
+        "assessment": {
+          "testedFeature": "SINGULAR_IMPERATIVE",
+          "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+          "contrastSetId": "u15-imperative-1",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-or-u15-imperative-0"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-or-u15-imperative-2"
+          ],
+          "distractorDifference": [
+            "",
+            "чита́ть is the infinitive, not the requested inflected singular imperative form."
+          ],
+          "whyAnswerDemonstratesObjective": "чита́й is the singular imperative form of the reading verb, used for one informal addressee. чита́ть is the infinitive, not that inflected imperative form. The cue shows the plural/polite form, while this question asks for the singular imperative table row.",
+          "contrastMembers": [
+            "чита́й",
+            "чита́ть"
+          ],
+          "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+          "relationParticipantIds": [
+            "prov-ex-or-u15-imperative-1",
+            "prov-ex-or-u15-imperative-0",
+            "prov-ex-or-u15-imperative-2"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u15-i-imperative-2",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted row is the singular imperative?",
+        "promptLetter": "чита́ть",
+        "options": [
+          "чита́й",
+          "чита́йте"
+        ],
+        "answer": "чита́й",
+        "feedback": "Does this answer show the singular imperative? чита́й.",
+        "objectiveId": "obj-u15-imperative",
+        "sourceId": "src-openrussian-50e210c4",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Does this row fail the singular imperative?"
+        ],
+        "assessment": {
+          "testedFeature": "SINGULAR_IMPERATIVE",
+          "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+          "contrastSetId": "u15-imperative-2",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-or-u15-imperative-0"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-or-u15-imperative-1"
+          ],
+          "distractorDifference": [
+            "",
+            "Does this row fail the singular imperative?"
+          ],
+          "whyAnswerDemonstratesObjective": "Does this answer show the singular imperative?",
+          "contrastMembers": [
+            "чита́й",
+            "чита́йте"
+          ],
+          "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+          "relationParticipantIds": [
+            "prov-ex-or-u15-imperative-2",
+            "prov-ex-or-u15-imperative-0",
+            "prov-ex-or-u15-imperative-1"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      },
+      "after": {
+        "id": "u15-i-imperative-2",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted row is the singular imperative?",
+        "promptLetter": "чита́ть",
+        "options": [
+          "чита́й",
+          "чита́йте"
+        ],
+        "answer": "чита́й",
+        "feedback": "чита́й is the singular imperative form for one informal addressee. чита́йте is the plural imperative form and can also address one person politely. Both are imperative forms of the shown infinitive; the requested singular table row selects the informal form, rather than identifying the actual number of listeners from spelling alone.",
+        "objectiveId": "obj-u15-imperative",
+        "sourceId": "src-openrussian-50e210c4",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "чита́йте is the plural/polite imperative form, not the singular imperative table row requested here; polite use can still address one person."
+        ],
+        "assessment": {
+          "testedFeature": "SINGULAR_IMPERATIVE",
+          "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+          "contrastSetId": "u15-imperative-2",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-or-u15-imperative-0"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-or-u15-imperative-1"
+          ],
+          "distractorDifference": [
+            "",
+            "чита́йте is the plural/polite imperative form, not the singular imperative table row requested here; polite use can still address one person."
+          ],
+          "whyAnswerDemonstratesObjective": "чита́й is the singular imperative form for one informal addressee. чита́йте is the plural imperative form and can also address one person politely. Both are imperative forms of the shown infinitive; the requested singular table row selects the informal form, rather than identifying the actual number of listeners from spelling alone.",
+          "contrastMembers": [
+            "чита́й",
+            "чита́йте"
+          ],
+          "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+          "relationParticipantIds": [
+            "prov-ex-or-u15-imperative-2",
+            "prov-ex-or-u15-imperative-0",
+            "prov-ex-or-u15-imperative-1"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u15-g-say-request-0",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted row is the plural imperative?",
+        "promptLetter": "скажи́",
+        "options": [
+          "скажи́те",
+          "сказа́ть"
+        ],
+        "answer": "скажи́те",
+        "feedback": "Does this answer show the plural imperative? скажи́те.",
+        "objectiveId": "obj-u15-say-request",
+        "sourceId": "src-openrussian-50e210c4",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Does this row fail the plural imperative?"
+        ],
+        "assessment": {
+          "testedFeature": "PLURAL_IMPERATIVE",
+          "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+          "contrastSetId": "u15-say-request-0",
+          "cueLanguage": "ru",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ex-or-u15-say-request-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-or-u15-say-request-2"
+          ],
+          "distractorDifference": [
+            "",
+            "Does this row fail the plural imperative?"
+          ],
+          "whyAnswerDemonstratesObjective": "Does this answer show the plural imperative?",
+          "contrastMembers": [
+            "скажи́те",
+            "сказа́ть"
+          ],
+          "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+          "relationParticipantIds": [
+            "prov-ex-or-u15-say-request-0",
+            "prov-ex-or-u15-say-request-1",
+            "prov-ex-or-u15-say-request-2"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      },
+      "after": {
+        "id": "u15-g-say-request-0",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted row is the plural imperative?",
+        "promptLetter": "скажи́",
+        "options": [
+          "скажи́те",
+          "сказа́ть"
+        ],
+        "answer": "скажи́те",
+        "feedback": "скажи́те is the plural imperative form of the shown say/tell verb, used for multiple addressees or polite address to one person. сказа́ть is the infinitive, not the inflected plural imperative form requested. The singular and plural imperative forms keep the stress shown in these recorded examples; politeness also depends on context.",
+        "objectiveId": "obj-u15-say-request",
+        "sourceId": "src-openrussian-50e210c4",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "сказа́ть is the infinitive, not the requested inflected plural imperative form."
+        ],
+        "assessment": {
+          "testedFeature": "PLURAL_IMPERATIVE",
+          "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+          "contrastSetId": "u15-say-request-0",
+          "cueLanguage": "ru",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ex-or-u15-say-request-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-or-u15-say-request-2"
+          ],
+          "distractorDifference": [
+            "",
+            "сказа́ть is the infinitive, not the requested inflected plural imperative form."
+          ],
+          "whyAnswerDemonstratesObjective": "скажи́те is the plural imperative form of the shown say/tell verb, used for multiple addressees or polite address to one person. сказа́ть is the infinitive, not the inflected plural imperative form requested. The singular and plural imperative forms keep the stress shown in these recorded examples; politeness also depends on context.",
+          "contrastMembers": [
+            "скажи́те",
+            "сказа́ть"
+          ],
+          "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+          "relationParticipantIds": [
+            "prov-ex-or-u15-say-request-0",
+            "prov-ex-or-u15-say-request-1",
+            "prov-ex-or-u15-say-request-2"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u15-i-say-request-1",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted row is the plural imperative?",
+        "promptLetter": "да́й",
+        "options": [
+          "да́йте",
+          "дать"
+        ],
+        "answer": "да́йте",
+        "feedback": "Does this answer show the plural imperative? да́йте.",
+        "objectiveId": "obj-u15-say-request",
+        "sourceId": "src-openrussian-50e210c4",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Does this row fail the plural imperative?"
+        ],
+        "assessment": {
+          "testedFeature": "PLURAL_IMPERATIVE",
+          "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+          "contrastSetId": "u15-say-request-1",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-or-u15-say-request-4"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-or-u15-say-request-5"
+          ],
+          "distractorDifference": [
+            "",
+            "Does this row fail the plural imperative?"
+          ],
+          "whyAnswerDemonstratesObjective": "Does this answer show the plural imperative?",
+          "contrastMembers": [
+            "да́йте",
+            "дать"
+          ],
+          "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+          "relationParticipantIds": [
+            "prov-ex-or-u15-say-request-3",
+            "prov-ex-or-u15-say-request-4",
+            "prov-ex-or-u15-say-request-5"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      },
+      "after": {
+        "id": "u15-i-say-request-1",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted row is the plural imperative?",
+        "promptLetter": "да́й",
+        "options": [
+          "да́йте",
+          "дать"
+        ],
+        "answer": "да́йте",
+        "feedback": "да́йте is the plural imperative form of the shown give verb. It can address multiple people or one person politely. дать is the infinitive, not the inflected imperative form requested. Select the recorded plural imperative of this verb rather than assuming the dictionary form is the requested command form.",
+        "objectiveId": "obj-u15-say-request",
+        "sourceId": "src-openrussian-50e210c4",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "дать is the infinitive, not the requested inflected plural imperative form."
+        ],
+        "assessment": {
+          "testedFeature": "PLURAL_IMPERATIVE",
+          "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+          "contrastSetId": "u15-say-request-1",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-or-u15-say-request-4"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-or-u15-say-request-5"
+          ],
+          "distractorDifference": [
+            "",
+            "дать is the infinitive, not the requested inflected plural imperative form."
+          ],
+          "whyAnswerDemonstratesObjective": "да́йте is the plural imperative form of the shown give verb. It can address multiple people or one person politely. дать is the infinitive, not the inflected imperative form requested. Select the recorded plural imperative of this verb rather than assuming the dictionary form is the requested command form.",
+          "contrastMembers": [
+            "да́йте",
+            "дать"
+          ],
+          "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+          "relationParticipantIds": [
+            "prov-ex-or-u15-say-request-3",
+            "prov-ex-or-u15-say-request-4",
+            "prov-ex-or-u15-say-request-5"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u15-i-say-request-2",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted row is the singular imperative?",
+        "promptLetter": "скажи́те",
+        "options": [
+          "скажи́",
+          "сказа́ть"
+        ],
+        "answer": "скажи́",
+        "feedback": "Does this answer show the singular imperative? скажи́.",
+        "objectiveId": "obj-u15-say-request",
+        "sourceId": "src-openrussian-50e210c4",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Does this row fail the singular imperative?"
+        ],
+        "assessment": {
+          "testedFeature": "SINGULAR_IMPERATIVE",
+          "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+          "contrastSetId": "u15-say-request-2",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-or-u15-say-request-0"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-or-u15-say-request-2"
+          ],
+          "distractorDifference": [
+            "",
+            "Does this row fail the singular imperative?"
+          ],
+          "whyAnswerDemonstratesObjective": "Does this answer show the singular imperative?",
+          "contrastMembers": [
+            "скажи́",
+            "сказа́ть"
+          ],
+          "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+          "relationParticipantIds": [
+            "prov-ex-or-u15-say-request-1",
+            "prov-ex-or-u15-say-request-0",
+            "prov-ex-or-u15-say-request-2"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      },
+      "after": {
+        "id": "u15-i-say-request-2",
+        "kind": "FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted row is the singular imperative?",
+        "promptLetter": "скажи́те",
+        "options": [
+          "скажи́",
+          "сказа́ть"
+        ],
+        "answer": "скажи́",
+        "feedback": "скажи́ is the singular imperative form for one informal addressee. сказа́ть is the infinitive, not that inflected imperative form. The cue shows the plural/polite form, but the question asks for the singular imperative row of the same say/tell verb; the verb meaning and aspect stay the same.",
+        "objectiveId": "obj-u15-say-request",
+        "sourceId": "src-openrussian-50e210c4",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "сказа́ть is the infinitive, not the requested inflected singular imperative form."
+        ],
+        "assessment": {
+          "testedFeature": "SINGULAR_IMPERATIVE",
+          "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+          "contrastSetId": "u15-say-request-2",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-or-u15-say-request-0"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-or-u15-say-request-2"
+          ],
+          "distractorDifference": [
+            "",
+            "сказа́ть is the infinitive, not the requested inflected singular imperative form."
+          ],
+          "whyAnswerDemonstratesObjective": "скажи́ is the singular imperative form for one informal addressee. сказа́ть is the infinitive, not that inflected imperative form. The cue shows the plural/polite form, but the question asks for the singular imperative row of the same say/tell verb; the verb meaning and aspect stay the same.",
+          "contrastMembers": [
+            "скажи́",
+            "сказа́ть"
+          ],
+          "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+          "relationParticipantIds": [
+            "prov-ex-or-u15-say-request-1",
+            "prov-ex-or-u15-say-request-0",
+            "prov-ex-or-u15-say-request-2"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u15-g-aspect-consolidate-0",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted line is the perfective partner?",
+        "promptLetter": "говори́ть",
+        "options": [
+          "сказа́ть",
+          "де́лать"
+        ],
+        "answer": "сказа́ть",
+        "feedback": "Does this answer show the perfective partner? сказа́ть.",
+        "objectiveId": "obj-u15-aspect-consolidate",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Does this row fail the perfective partner?"
+        ],
+        "assessment": {
+          "testedFeature": "PERFECTIVE_PARTNER",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u15-aspect-consolidate-0",
+          "cueLanguage": "ru",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ex-u15-aspect-consolidate-1-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u15-aspect-consolidate-2-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "Does this row fail the perfective partner?"
+          ],
+          "whyAnswerDemonstratesObjective": "Does this answer show the perfective partner?",
+          "contrastMembers": [
+            "сказа́ть",
+            "де́лать"
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-ex-u15-aspect-consolidate-0-ru",
+            "prov-ex-u15-aspect-consolidate-1-ru",
+            "prov-ex-u15-aspect-consolidate-2-ru"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      },
+      "after": {
+        "id": "u15-g-aspect-consolidate-0",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted line is the perfective partner?",
+        "promptLetter": "говори́ть",
+        "options": [
+          "сказа́ть",
+          "де́лать"
+        ],
+        "answer": "сказа́ть",
+        "feedback": "сказа́ть is the perfective partner paired with говори́ть for the say/tell meaning shown here. де́лать is imperfective and belongs to the different do/make pair. This pairing does not mean every use of speak or talk can be replaced by the same perfective verb.",
+        "objectiveId": "obj-u15-aspect-consolidate",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "де́лать is imperfective and belongs to the do/make pair, not the perfective partner for the supplied say/tell meaning."
+        ],
+        "assessment": {
+          "testedFeature": "PERFECTIVE_PARTNER",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u15-aspect-consolidate-0",
+          "cueLanguage": "ru",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ex-u15-aspect-consolidate-1-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u15-aspect-consolidate-2-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "де́лать is imperfective and belongs to the do/make pair, not the perfective partner for the supplied say/tell meaning."
+          ],
+          "whyAnswerDemonstratesObjective": "сказа́ть is the perfective partner paired with говори́ть for the say/tell meaning shown here. де́лать is imperfective and belongs to the different do/make pair. This pairing does not mean every use of speak or talk can be replaced by the same perfective verb.",
+          "contrastMembers": [
+            "сказа́ть",
+            "де́лать"
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-ex-u15-aspect-consolidate-0-ru",
+            "prov-ex-u15-aspect-consolidate-1-ru",
+            "prov-ex-u15-aspect-consolidate-2-ru"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u15-i-aspect-consolidate-1",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted line is the imperfective partner?",
+        "promptLetter": "сказа́ть",
+        "options": [
+          "говори́ть",
+          "сде́лать"
+        ],
+        "answer": "говори́ть",
+        "feedback": "Does this answer show the imperfective partner? говори́ть.",
+        "objectiveId": "obj-u15-aspect-consolidate",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Does this row fail the imperfective partner?"
+        ],
+        "assessment": {
+          "testedFeature": "IMPERFECTIVE_PARTNER",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u15-aspect-consolidate-1",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u15-aspect-consolidate-0-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u15-aspect-consolidate-3-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "Does this row fail the imperfective partner?"
+          ],
+          "whyAnswerDemonstratesObjective": "Does this answer show the imperfective partner?",
+          "contrastMembers": [
+            "говори́ть",
+            "сде́лать"
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-ex-u15-aspect-consolidate-1-ru",
+            "prov-ex-u15-aspect-consolidate-0-ru",
+            "prov-ex-u15-aspect-consolidate-3-ru"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      },
+      "after": {
+        "id": "u15-i-aspect-consolidate-1",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted line is the imperfective partner?",
+        "promptLetter": "сказа́ть",
+        "options": [
+          "говори́ть",
+          "сде́лать"
+        ],
+        "answer": "говори́ть",
+        "feedback": "говори́ть is the imperfective partner paired with сказа́ть for the say/tell meaning shown here. сде́лать is perfective and belongs to the different do/make pair. The question asks for the imperfective member of the supplied pair, not another verb of a different meaning.",
+        "objectiveId": "obj-u15-aspect-consolidate",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "сде́лать is perfective and belongs to the do/make pair, not the imperfective partner for the supplied say/tell meaning."
+        ],
+        "assessment": {
+          "testedFeature": "IMPERFECTIVE_PARTNER",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u15-aspect-consolidate-1",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u15-aspect-consolidate-0-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u15-aspect-consolidate-3-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "сде́лать is perfective and belongs to the do/make pair, not the imperfective partner for the supplied say/tell meaning."
+          ],
+          "whyAnswerDemonstratesObjective": "говори́ть is the imperfective partner paired with сказа́ть for the say/tell meaning shown here. сде́лать is perfective and belongs to the different do/make pair. The question asks for the imperfective member of the supplied pair, not another verb of a different meaning.",
+          "contrastMembers": [
+            "говори́ть",
+            "сде́лать"
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-ex-u15-aspect-consolidate-1-ru",
+            "prov-ex-u15-aspect-consolidate-0-ru",
+            "prov-ex-u15-aspect-consolidate-3-ru"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u15-i-aspect-consolidate-2",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted line is the perfective partner?",
+        "promptLetter": "де́лать",
+        "options": [
+          "сде́лать",
+          "говори́ть"
+        ],
+        "answer": "сде́лать",
+        "feedback": "Does this answer show the perfective partner? сде́лать.",
+        "objectiveId": "obj-u15-aspect-consolidate",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "Does this row fail the perfective partner?"
+        ],
+        "assessment": {
+          "testedFeature": "PERFECTIVE_PARTNER",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u15-aspect-consolidate-2",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u15-aspect-consolidate-3-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u15-aspect-consolidate-0-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "Does this row fail the perfective partner?"
+          ],
+          "whyAnswerDemonstratesObjective": "Does this answer show the perfective partner?",
+          "contrastMembers": [
+            "сде́лать",
+            "говори́ть"
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-ex-u15-aspect-consolidate-2-ru",
+            "prov-ex-u15-aspect-consolidate-3-ru",
+            "prov-ex-u15-aspect-consolidate-0-ru"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      },
+      "after": {
+        "id": "u15-i-aspect-consolidate-2",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted line is the perfective partner?",
+        "promptLetter": "де́лать",
+        "options": [
+          "сде́лать",
+          "говори́ть"
+        ],
+        "answer": "сде́лать",
+        "feedback": "сде́лать is the perfective partner of де́лать in the recorded do/make pair. говори́ть is imperfective and belongs to the different say/tell grouping. Learn this supplied pair rather than assuming that adding any prefix gives the matching perfective of any verb.",
+        "objectiveId": "obj-u15-aspect-consolidate",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "говори́ть is imperfective and belongs to a different meaning group, not the perfective partner of the shown do/make verb."
+        ],
+        "assessment": {
+          "testedFeature": "PERFECTIVE_PARTNER",
+          "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+          "contrastSetId": "u15-aspect-consolidate-2",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u15-aspect-consolidate-3-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u15-aspect-consolidate-0-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "говори́ть is imperfective and belongs to a different meaning group, not the perfective partner of the shown do/make verb."
+          ],
+          "whyAnswerDemonstratesObjective": "сде́лать is the perfective partner of де́лать in the recorded do/make pair. говори́ть is imperfective and belongs to the different say/tell grouping. Learn this supplied pair rather than assuming that adding any prefix gives the matching perfective of any verb.",
+          "contrastMembers": [
+            "сде́лать",
+            "говори́ть"
+          ],
+          "relationKind": "SOURCE_SUPPLIED_PAIR",
+          "relationParticipantIds": [
+            "prov-ex-u15-aspect-consolidate-2-ru",
+            "prov-ex-u15-aspect-consolidate-3-ru",
+            "prov-ex-u15-aspect-consolidate-0-ru"
+          ],
+          "responseKind": "RUSSIAN_TOKEN"
+        }
+      }
+    }
+  ],
+  "bibliography": "Retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c, catalog/sources/units-3-5/openrussian/verbs.csv, CC BY-SA 4.0: читать/сказать/дать imperative_sg/imperative_pl/accented, and говорить/сказать/делать/сделать aspect/partner. Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Moods / Imperative mood definition and singular/plural table, including polite second-person plural and other command constructions. Retained Wikibooks Russian/Useful Words oldid3353859, catalog/sources/units-21-25/wikibooks/useful-words-3353859.txt, CC BY-SA 4.0: complete greeting entry explicitly identifies plural/singular-polite imperative. Retained Wikibooks Russian/Verbal Aspect oldid4059032, catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt, CC BY-SA 4.0: complete Introduction, Forming aspectual pairs and Unpredictable pairs contexts. Imperative number labels are morphological table rows: plural form can address one person politely; the infinitive distractor is not the requested inflected imperative form, without denying other infinitival command uses. Actual politeness and imperative aspect choice depend on context. The говорить/сказать pairing is bounded to the supplied say/tell meaning and populated partner fields, not every meaning of speak/talk or an automatic prefix recipe. Source pairing-prevalence contradictions and one-to-one aspect/English-tense claims are not adopted. All scored/source tuples and exact Russian spellings/capitalization remain unchanged; original category cues/duplicate relationships and productive-competence concerns remain open. No new Russian forms or phrases. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.",
+  "semanticAcceptance": false
+}
