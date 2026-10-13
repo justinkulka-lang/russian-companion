@@ -1,0 +1,1985 @@
+{
+  "baselineCommit": "3558b70bea28e8f40198025573538b8f612ed26d",
+  "beforeSha256": "11ecb568c7096aefb7444953e3bd4359f7c81e9577963fd0ec2ec5d402a26c6a",
+  "afterSha256": "8865e656d95f7eca05da823cf98027fa5231c8ad9e6ee9d175e2de3ac191db2f",
+  "addedProvenanceIds": [
+    "prov-ca-u9-value-feedback-u9-g-cardinal-0",
+    "prov-ca-u9-value-feedback-u9-g-cardinal-0-distractor-1",
+    "prov-ca-u9-value-feedback-u9-i-cardinal-1",
+    "prov-ca-u9-value-feedback-u9-i-cardinal-1-distractor-1",
+    "prov-ca-u9-value-feedback-u9-i-cardinal-2",
+    "prov-ca-u9-value-feedback-u9-i-cardinal-2-distractor-1",
+    "prov-ca-u9-value-feedback-u9-i-cardinal-3",
+    "prov-ca-u9-value-feedback-u9-i-cardinal-3-distractor-1",
+    "prov-ca-u9-value-feedback-u9-i-cardinal-4",
+    "prov-ca-u9-value-feedback-u9-i-cardinal-4-distractor-1",
+    "prov-ca-u9-value-feedback-u9-g-teens-0",
+    "prov-ca-u9-value-feedback-u9-g-teens-0-distractor-1",
+    "prov-ca-u9-value-feedback-u9-i-teens-1",
+    "prov-ca-u9-value-feedback-u9-i-teens-1-distractor-1",
+    "prov-ca-u9-value-feedback-u9-i-teens-2",
+    "prov-ca-u9-value-feedback-u9-i-teens-2-distractor-1",
+    "prov-ca-u9-value-feedback-u9-i-teens-3",
+    "prov-ca-u9-value-feedback-u9-i-teens-3-distractor-1",
+    "prov-ca-u9-value-feedback-u9-g-tens-0",
+    "prov-ca-u9-value-feedback-u9-g-tens-0-distractor-1",
+    "prov-ca-u9-value-feedback-u9-i-tens-1",
+    "prov-ca-u9-value-feedback-u9-i-tens-1-distractor-1",
+    "prov-ca-u9-value-feedback-u9-i-tens-2",
+    "prov-ca-u9-value-feedback-u9-i-tens-2-distractor-1",
+    "prov-ca-u9-value-feedback-u9-i-tens-3",
+    "prov-ca-u9-value-feedback-u9-i-tens-3-distractor-1",
+    "prov-ca-u9-value-feedback-u9-g-hundreds-0",
+    "prov-ca-u9-value-feedback-u9-g-hundreds-0-distractor-1",
+    "prov-ca-u9-value-feedback-u9-i-hundreds-1",
+    "prov-ca-u9-value-feedback-u9-i-hundreds-1-distractor-1",
+    "prov-ca-u9-value-feedback-u9-i-hundreds-2",
+    "prov-ca-u9-value-feedback-u9-i-hundreds-2-distractor-1",
+    "prov-ca-u9-value-feedback-u9-i-hundreds-3",
+    "prov-ca-u9-value-feedback-u9-i-hundreds-3-distractor-1"
+  ],
+  "changes": [
+    {
+      "before": {
+        "id": "u9-g-cardinal-0",
+        "kind": "NUMBER_FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form matches the shown number?",
+        "promptLetter": "0",
+        "options": [
+          "ноль",
+          "оди́н"
+        ],
+        "answer": "ноль",
+        "feedback": "Does the admitted record show the governed contrast? ноль.",
+        "objectiveId": "obj-u9-cardinal",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This admitted form is a different number in the same table."
+        ],
+        "assessment": {
+          "testedFeature": "GOVERNED_FORM",
+          "evidenceMode": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "contrastSetId": "u9-cardinal-0",
+          "cueLanguage": "number",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ex-u9-cardinal-0-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u9-cardinal-1-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "This admitted form is a different number in the same table."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "ноль",
+            "оди́н"
+          ],
+          "relationKind": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "relationParticipantIds": [
+            "prov-ex-u9-cardinal-0-en",
+            "prov-ex-u9-cardinal-0-ru",
+            "prov-ex-u9-cardinal-1-ru"
+          ]
+        }
+      },
+      "after": {
+        "id": "u9-g-cardinal-0",
+        "kind": "NUMBER_FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form matches the shown number?",
+        "promptLetter": "0",
+        "options": [
+          "ноль",
+          "оди́н"
+        ],
+        "answer": "ноль",
+        "feedback": "ноль names zero (0), the value shown. оди́н names one (1), a different value. Zero counts no units; one counts a single unit.",
+        "objectiveId": "obj-u9-cardinal",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "оди́н names one (1) instead of the shown value 0."
+        ],
+        "assessment": {
+          "testedFeature": "GOVERNED_FORM",
+          "evidenceMode": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "contrastSetId": "u9-cardinal-0",
+          "cueLanguage": "number",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ex-u9-cardinal-0-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u9-cardinal-1-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "оди́н names one (1) instead of the shown value 0."
+          ],
+          "whyAnswerDemonstratesObjective": "ноль names zero (0), the value shown. оди́н names one (1), a different value. Zero counts no units; one counts a single unit.",
+          "contrastMembers": [
+            "ноль",
+            "оди́н"
+          ],
+          "relationKind": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "relationParticipantIds": [
+            "prov-ex-u9-cardinal-0-en",
+            "prov-ex-u9-cardinal-0-ru",
+            "prov-ex-u9-cardinal-1-ru"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u9-i-cardinal-1",
+        "kind": "NUMBER_FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form matches the shown number?",
+        "promptLetter": "1",
+        "options": [
+          "оди́н",
+          "два"
+        ],
+        "answer": "оди́н",
+        "feedback": "Does the admitted record show the governed contrast? оди́н.",
+        "objectiveId": "obj-u9-cardinal",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This admitted form is a different number in the same table."
+        ],
+        "assessment": {
+          "testedFeature": "GOVERNED_FORM",
+          "evidenceMode": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "contrastSetId": "u9-cardinal-1",
+          "cueLanguage": "number",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u9-cardinal-1-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u9-cardinal-2-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "This admitted form is a different number in the same table."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "оди́н",
+            "два"
+          ],
+          "relationKind": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "relationParticipantIds": [
+            "prov-ex-u9-cardinal-1-en",
+            "prov-ex-u9-cardinal-1-ru",
+            "prov-ex-u9-cardinal-2-ru"
+          ]
+        }
+      },
+      "after": {
+        "id": "u9-i-cardinal-1",
+        "kind": "NUMBER_FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form matches the shown number?",
+        "promptLetter": "1",
+        "options": [
+          "оди́н",
+          "два"
+        ],
+        "answer": "оди́н",
+        "feedback": "оди́н names one (1), the value shown. два names two (2), a different value.",
+        "objectiveId": "obj-u9-cardinal",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "два names two (2) instead of the shown value 1."
+        ],
+        "assessment": {
+          "testedFeature": "GOVERNED_FORM",
+          "evidenceMode": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "contrastSetId": "u9-cardinal-1",
+          "cueLanguage": "number",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u9-cardinal-1-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u9-cardinal-2-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "два names two (2) instead of the shown value 1."
+          ],
+          "whyAnswerDemonstratesObjective": "оди́н names one (1), the value shown. два names two (2), a different value.",
+          "contrastMembers": [
+            "оди́н",
+            "два"
+          ],
+          "relationKind": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "relationParticipantIds": [
+            "prov-ex-u9-cardinal-1-en",
+            "prov-ex-u9-cardinal-1-ru",
+            "prov-ex-u9-cardinal-2-ru"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u9-i-cardinal-2",
+        "kind": "NUMBER_FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form matches the shown number?",
+        "promptLetter": "5",
+        "options": [
+          "пять",
+          "шесть"
+        ],
+        "answer": "пять",
+        "feedback": "Does the admitted record show the governed contrast? пять.",
+        "objectiveId": "obj-u9-cardinal",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This admitted form is a different number in the same table."
+        ],
+        "assessment": {
+          "testedFeature": "GOVERNED_FORM",
+          "evidenceMode": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "contrastSetId": "u9-cardinal-2",
+          "cueLanguage": "number",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u9-cardinal-5-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u9-cardinal-6-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "This admitted form is a different number in the same table."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "пять",
+            "шесть"
+          ],
+          "relationKind": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "relationParticipantIds": [
+            "prov-ex-u9-cardinal-5-en",
+            "prov-ex-u9-cardinal-5-ru",
+            "prov-ex-u9-cardinal-6-ru"
+          ]
+        }
+      },
+      "after": {
+        "id": "u9-i-cardinal-2",
+        "kind": "NUMBER_FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form matches the shown number?",
+        "promptLetter": "5",
+        "options": [
+          "пять",
+          "шесть"
+        ],
+        "answer": "пять",
+        "feedback": "пять names five (5), the value shown. шесть names six (6), a different value.",
+        "objectiveId": "obj-u9-cardinal",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "шесть names six (6) instead of the shown value 5."
+        ],
+        "assessment": {
+          "testedFeature": "GOVERNED_FORM",
+          "evidenceMode": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "contrastSetId": "u9-cardinal-2",
+          "cueLanguage": "number",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u9-cardinal-5-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u9-cardinal-6-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "шесть names six (6) instead of the shown value 5."
+          ],
+          "whyAnswerDemonstratesObjective": "пять names five (5), the value shown. шесть names six (6), a different value.",
+          "contrastMembers": [
+            "пять",
+            "шесть"
+          ],
+          "relationKind": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "relationParticipantIds": [
+            "prov-ex-u9-cardinal-5-en",
+            "prov-ex-u9-cardinal-5-ru",
+            "prov-ex-u9-cardinal-6-ru"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u9-i-cardinal-3",
+        "kind": "NUMBER_FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form matches the shown number?",
+        "promptLetter": "10",
+        "options": [
+          "де́сять",
+          "де́вять"
+        ],
+        "answer": "де́сять",
+        "feedback": "Does the admitted record show the governed contrast? де́сять.",
+        "objectiveId": "obj-u9-cardinal",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This admitted form is a different number in the same table."
+        ],
+        "assessment": {
+          "testedFeature": "GOVERNED_FORM",
+          "evidenceMode": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "contrastSetId": "u9-cardinal-3",
+          "cueLanguage": "number",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u9-cardinal-10-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u9-cardinal-9-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "This admitted form is a different number in the same table."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "де́сять",
+            "де́вять"
+          ],
+          "relationKind": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "relationParticipantIds": [
+            "prov-ex-u9-cardinal-10-en",
+            "prov-ex-u9-cardinal-10-ru",
+            "prov-ex-u9-cardinal-9-ru"
+          ]
+        }
+      },
+      "after": {
+        "id": "u9-i-cardinal-3",
+        "kind": "NUMBER_FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form matches the shown number?",
+        "promptLetter": "10",
+        "options": [
+          "де́сять",
+          "де́вять"
+        ],
+        "answer": "де́сять",
+        "feedback": "де́сять names ten (10), the value shown. де́вять names nine (9), a different value.",
+        "objectiveId": "obj-u9-cardinal",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "де́вять names nine (9) instead of the shown value 10."
+        ],
+        "assessment": {
+          "testedFeature": "GOVERNED_FORM",
+          "evidenceMode": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "contrastSetId": "u9-cardinal-3",
+          "cueLanguage": "number",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u9-cardinal-10-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u9-cardinal-9-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "де́вять names nine (9) instead of the shown value 10."
+          ],
+          "whyAnswerDemonstratesObjective": "де́сять names ten (10), the value shown. де́вять names nine (9), a different value.",
+          "contrastMembers": [
+            "де́сять",
+            "де́вять"
+          ],
+          "relationKind": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "relationParticipantIds": [
+            "prov-ex-u9-cardinal-10-en",
+            "prov-ex-u9-cardinal-10-ru",
+            "prov-ex-u9-cardinal-9-ru"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u9-i-cardinal-4",
+        "kind": "NUMBER_FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form matches the shown number?",
+        "promptLetter": "4",
+        "options": [
+          "четы́ре",
+          "три"
+        ],
+        "answer": "четы́ре",
+        "feedback": "Does the admitted record show the governed contrast? четы́ре.",
+        "objectiveId": "obj-u9-cardinal",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This admitted form is a different number in the same table."
+        ],
+        "assessment": {
+          "testedFeature": "GOVERNED_FORM",
+          "evidenceMode": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "contrastSetId": "u9-cardinal-4",
+          "cueLanguage": "number",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u9-cardinal-4-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u9-cardinal-3-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "This admitted form is a different number in the same table."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "четы́ре",
+            "три"
+          ],
+          "relationKind": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "relationParticipantIds": [
+            "prov-ex-u9-cardinal-4-en",
+            "prov-ex-u9-cardinal-4-ru",
+            "prov-ex-u9-cardinal-3-ru"
+          ]
+        }
+      },
+      "after": {
+        "id": "u9-i-cardinal-4",
+        "kind": "NUMBER_FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form matches the shown number?",
+        "promptLetter": "4",
+        "options": [
+          "четы́ре",
+          "три"
+        ],
+        "answer": "четы́ре",
+        "feedback": "четы́ре names four (4), the value shown. три names three (3), a different value.",
+        "objectiveId": "obj-u9-cardinal",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "три names three (3) instead of the shown value 4."
+        ],
+        "assessment": {
+          "testedFeature": "GOVERNED_FORM",
+          "evidenceMode": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "contrastSetId": "u9-cardinal-4",
+          "cueLanguage": "number",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u9-cardinal-4-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u9-cardinal-3-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "три names three (3) instead of the shown value 4."
+          ],
+          "whyAnswerDemonstratesObjective": "четы́ре names four (4), the value shown. три names three (3), a different value.",
+          "contrastMembers": [
+            "четы́ре",
+            "три"
+          ],
+          "relationKind": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "relationParticipantIds": [
+            "prov-ex-u9-cardinal-4-en",
+            "prov-ex-u9-cardinal-4-ru",
+            "prov-ex-u9-cardinal-3-ru"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u9-g-teens-0",
+        "kind": "NUMBER_FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form matches the shown number?",
+        "promptLetter": "11",
+        "options": [
+          "оди́ннадцать",
+          "двена́дцать"
+        ],
+        "answer": "оди́ннадцать",
+        "feedback": "Does the admitted record show the governed contrast? оди́ннадцать.",
+        "objectiveId": "obj-u9-teens",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This admitted form is a different teen."
+        ],
+        "assessment": {
+          "testedFeature": "GOVERNED_FORM",
+          "evidenceMode": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "contrastSetId": "u9-teens-0",
+          "cueLanguage": "number",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ex-u9-teens-0-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u9-teens-1-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "This admitted form is a different teen."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "оди́ннадцать",
+            "двена́дцать"
+          ],
+          "relationKind": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "relationParticipantIds": [
+            "prov-ex-u9-teens-0-en",
+            "prov-ex-u9-teens-0-ru",
+            "prov-ex-u9-teens-1-ru"
+          ]
+        }
+      },
+      "after": {
+        "id": "u9-g-teens-0",
+        "kind": "NUMBER_FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form matches the shown number?",
+        "promptLetter": "11",
+        "options": [
+          "оди́ннадцать",
+          "двена́дцать"
+        ],
+        "answer": "оди́ннадцать",
+        "feedback": "оди́ннадцать names eleven (11), the value shown. двена́дцать names twelve (12), a different value.",
+        "objectiveId": "obj-u9-teens",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "двена́дцать names twelve (12) instead of the shown value 11."
+        ],
+        "assessment": {
+          "testedFeature": "GOVERNED_FORM",
+          "evidenceMode": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "contrastSetId": "u9-teens-0",
+          "cueLanguage": "number",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ex-u9-teens-0-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u9-teens-1-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "двена́дцать names twelve (12) instead of the shown value 11."
+          ],
+          "whyAnswerDemonstratesObjective": "оди́ннадцать names eleven (11), the value shown. двена́дцать names twelve (12), a different value.",
+          "contrastMembers": [
+            "оди́ннадцать",
+            "двена́дцать"
+          ],
+          "relationKind": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "relationParticipantIds": [
+            "prov-ex-u9-teens-0-en",
+            "prov-ex-u9-teens-0-ru",
+            "prov-ex-u9-teens-1-ru"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u9-i-teens-1",
+        "kind": "NUMBER_FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form matches the shown number?",
+        "promptLetter": "14",
+        "options": [
+          "четы́рнадцать",
+          "пятна́дцать"
+        ],
+        "answer": "четы́рнадцать",
+        "feedback": "Does the admitted record show the governed contrast? четы́рнадцать.",
+        "objectiveId": "obj-u9-teens",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This admitted form is a different teen."
+        ],
+        "assessment": {
+          "testedFeature": "GOVERNED_FORM",
+          "evidenceMode": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "contrastSetId": "u9-teens-1",
+          "cueLanguage": "number",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u9-teens-3-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u9-teens-4-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "This admitted form is a different teen."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "четы́рнадцать",
+            "пятна́дцать"
+          ],
+          "relationKind": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "relationParticipantIds": [
+            "prov-ex-u9-teens-3-en",
+            "prov-ex-u9-teens-3-ru",
+            "prov-ex-u9-teens-4-ru"
+          ]
+        }
+      },
+      "after": {
+        "id": "u9-i-teens-1",
+        "kind": "NUMBER_FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form matches the shown number?",
+        "promptLetter": "14",
+        "options": [
+          "четы́рнадцать",
+          "пятна́дцать"
+        ],
+        "answer": "четы́рнадцать",
+        "feedback": "четы́рнадцать names fourteen (14), the value shown. пятна́дцать names fifteen (15), a different value.",
+        "objectiveId": "obj-u9-teens",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "пятна́дцать names fifteen (15) instead of the shown value 14."
+        ],
+        "assessment": {
+          "testedFeature": "GOVERNED_FORM",
+          "evidenceMode": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "contrastSetId": "u9-teens-1",
+          "cueLanguage": "number",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u9-teens-3-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u9-teens-4-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "пятна́дцать names fifteen (15) instead of the shown value 14."
+          ],
+          "whyAnswerDemonstratesObjective": "четы́рнадцать names fourteen (14), the value shown. пятна́дцать names fifteen (15), a different value.",
+          "contrastMembers": [
+            "четы́рнадцать",
+            "пятна́дцать"
+          ],
+          "relationKind": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "relationParticipantIds": [
+            "prov-ex-u9-teens-3-en",
+            "prov-ex-u9-teens-3-ru",
+            "prov-ex-u9-teens-4-ru"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u9-i-teens-2",
+        "kind": "NUMBER_FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form matches the shown number?",
+        "promptLetter": "19",
+        "options": [
+          "девятна́дцать",
+          "два́дцать"
+        ],
+        "answer": "девятна́дцать",
+        "feedback": "Does the admitted record show the governed contrast? девятна́дцать.",
+        "objectiveId": "obj-u9-teens",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This admitted form is the following ten, not the teen."
+        ],
+        "assessment": {
+          "testedFeature": "GOVERNED_FORM",
+          "evidenceMode": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "contrastSetId": "u9-teens-2",
+          "cueLanguage": "number",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u9-teens-8-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u9-teens-9-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "This admitted form is the following ten, not the teen."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "девятна́дцать",
+            "два́дцать"
+          ],
+          "relationKind": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "relationParticipantIds": [
+            "prov-ex-u9-teens-8-en",
+            "prov-ex-u9-teens-8-ru",
+            "prov-ex-u9-teens-9-ru"
+          ]
+        }
+      },
+      "after": {
+        "id": "u9-i-teens-2",
+        "kind": "NUMBER_FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form matches the shown number?",
+        "promptLetter": "19",
+        "options": [
+          "девятна́дцать",
+          "два́дцать"
+        ],
+        "answer": "девятна́дцать",
+        "feedback": "девятна́дцать names nineteen (19), the value shown. два́дцать names twenty (20), a different value. Distinguish the teen value from a multiple of ten.",
+        "objectiveId": "obj-u9-teens",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "два́дцать names twenty (20) instead of the shown value 19."
+        ],
+        "assessment": {
+          "testedFeature": "GOVERNED_FORM",
+          "evidenceMode": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "contrastSetId": "u9-teens-2",
+          "cueLanguage": "number",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u9-teens-8-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u9-teens-9-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "два́дцать names twenty (20) instead of the shown value 19."
+          ],
+          "whyAnswerDemonstratesObjective": "девятна́дцать names nineteen (19), the value shown. два́дцать names twenty (20), a different value. Distinguish the teen value from a multiple of ten.",
+          "contrastMembers": [
+            "девятна́дцать",
+            "два́дцать"
+          ],
+          "relationKind": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "relationParticipantIds": [
+            "prov-ex-u9-teens-8-en",
+            "prov-ex-u9-teens-8-ru",
+            "prov-ex-u9-teens-9-ru"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u9-i-teens-3",
+        "kind": "NUMBER_FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form matches the shown number?",
+        "promptLetter": "12",
+        "options": [
+          "двена́дцать",
+          "два́дцать"
+        ],
+        "answer": "двена́дцать",
+        "feedback": "Does the admitted record show the governed contrast? двена́дцать.",
+        "objectiveId": "obj-u9-teens",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This admitted form is the ten, not the teen."
+        ],
+        "assessment": {
+          "testedFeature": "GOVERNED_FORM",
+          "evidenceMode": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "contrastSetId": "u9-teens-3",
+          "cueLanguage": "number",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u9-teens-1-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u9-teens-9-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "This admitted form is the ten, not the teen."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "двена́дцать",
+            "два́дцать"
+          ],
+          "relationKind": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "relationParticipantIds": [
+            "prov-ex-u9-teens-1-en",
+            "prov-ex-u9-teens-1-ru",
+            "prov-ex-u9-teens-9-ru"
+          ]
+        }
+      },
+      "after": {
+        "id": "u9-i-teens-3",
+        "kind": "NUMBER_FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form matches the shown number?",
+        "promptLetter": "12",
+        "options": [
+          "двена́дцать",
+          "два́дцать"
+        ],
+        "answer": "двена́дцать",
+        "feedback": "двена́дцать names twelve (12), the value shown. два́дцать names twenty (20), a different value. Distinguish the teen value from a multiple of ten.",
+        "objectiveId": "obj-u9-teens",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "два́дцать names twenty (20) instead of the shown value 12."
+        ],
+        "assessment": {
+          "testedFeature": "GOVERNED_FORM",
+          "evidenceMode": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "contrastSetId": "u9-teens-3",
+          "cueLanguage": "number",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u9-teens-1-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u9-teens-9-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "два́дцать names twenty (20) instead of the shown value 12."
+          ],
+          "whyAnswerDemonstratesObjective": "двена́дцать names twelve (12), the value shown. два́дцать names twenty (20), a different value. Distinguish the teen value from a multiple of ten.",
+          "contrastMembers": [
+            "двена́дцать",
+            "два́дцать"
+          ],
+          "relationKind": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "relationParticipantIds": [
+            "prov-ex-u9-teens-1-en",
+            "prov-ex-u9-teens-1-ru",
+            "prov-ex-u9-teens-9-ru"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u9-g-tens-0",
+        "kind": "NUMBER_FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form matches the shown number?",
+        "promptLetter": "30",
+        "options": [
+          "три́дцать",
+          "со́рок"
+        ],
+        "answer": "три́дцать",
+        "feedback": "Does the admitted record show the governed contrast? три́дцать.",
+        "objectiveId": "obj-u9-tens",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This admitted form is a different ten."
+        ],
+        "assessment": {
+          "testedFeature": "GOVERNED_FORM",
+          "evidenceMode": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "contrastSetId": "u9-tens-0",
+          "cueLanguage": "number",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ex-u9-tens-0-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u9-tens-1-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "This admitted form is a different ten."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "три́дцать",
+            "со́рок"
+          ],
+          "relationKind": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "relationParticipantIds": [
+            "prov-ex-u9-tens-0-en",
+            "prov-ex-u9-tens-0-ru",
+            "prov-ex-u9-tens-1-ru"
+          ]
+        }
+      },
+      "after": {
+        "id": "u9-g-tens-0",
+        "kind": "NUMBER_FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form matches the shown number?",
+        "promptLetter": "30",
+        "options": [
+          "три́дцать",
+          "со́рок"
+        ],
+        "answer": "три́дцать",
+        "feedback": "три́дцать names thirty (30), the value shown. со́рок names forty (40), a different value.",
+        "objectiveId": "obj-u9-tens",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "со́рок names forty (40) instead of the shown value 30."
+        ],
+        "assessment": {
+          "testedFeature": "GOVERNED_FORM",
+          "evidenceMode": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "contrastSetId": "u9-tens-0",
+          "cueLanguage": "number",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ex-u9-tens-0-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u9-tens-1-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "со́рок names forty (40) instead of the shown value 30."
+          ],
+          "whyAnswerDemonstratesObjective": "три́дцать names thirty (30), the value shown. со́рок names forty (40), a different value.",
+          "contrastMembers": [
+            "три́дцать",
+            "со́рок"
+          ],
+          "relationKind": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "relationParticipantIds": [
+            "prov-ex-u9-tens-0-en",
+            "prov-ex-u9-tens-0-ru",
+            "prov-ex-u9-tens-1-ru"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u9-i-tens-1",
+        "kind": "NUMBER_FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form matches the shown number?",
+        "promptLetter": "50",
+        "options": [
+          "пятьдеся́т",
+          "шестьдеся́т"
+        ],
+        "answer": "пятьдеся́т",
+        "feedback": "Does the admitted record show the governed contrast? пятьдеся́т.",
+        "objectiveId": "obj-u9-tens",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This admitted form is a different ten."
+        ],
+        "assessment": {
+          "testedFeature": "GOVERNED_FORM",
+          "evidenceMode": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "contrastSetId": "u9-tens-1",
+          "cueLanguage": "number",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u9-tens-2-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u9-tens-3-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "This admitted form is a different ten."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "пятьдеся́т",
+            "шестьдеся́т"
+          ],
+          "relationKind": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "relationParticipantIds": [
+            "prov-ex-u9-tens-2-en",
+            "prov-ex-u9-tens-2-ru",
+            "prov-ex-u9-tens-3-ru"
+          ]
+        }
+      },
+      "after": {
+        "id": "u9-i-tens-1",
+        "kind": "NUMBER_FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form matches the shown number?",
+        "promptLetter": "50",
+        "options": [
+          "пятьдеся́т",
+          "шестьдеся́т"
+        ],
+        "answer": "пятьдеся́т",
+        "feedback": "пятьдеся́т names fifty (50), the value shown. шестьдеся́т names sixty (60), a different value.",
+        "objectiveId": "obj-u9-tens",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "шестьдеся́т names sixty (60) instead of the shown value 50."
+        ],
+        "assessment": {
+          "testedFeature": "GOVERNED_FORM",
+          "evidenceMode": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "contrastSetId": "u9-tens-1",
+          "cueLanguage": "number",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u9-tens-2-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u9-tens-3-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "шестьдеся́т names sixty (60) instead of the shown value 50."
+          ],
+          "whyAnswerDemonstratesObjective": "пятьдеся́т names fifty (50), the value shown. шестьдеся́т names sixty (60), a different value.",
+          "contrastMembers": [
+            "пятьдеся́т",
+            "шестьдеся́т"
+          ],
+          "relationKind": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "relationParticipantIds": [
+            "prov-ex-u9-tens-2-en",
+            "prov-ex-u9-tens-2-ru",
+            "prov-ex-u9-tens-3-ru"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u9-i-tens-2",
+        "kind": "NUMBER_FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form matches the shown number?",
+        "promptLetter": "90",
+        "options": [
+          "девяно́сто",
+          "во́семьдесят"
+        ],
+        "answer": "девяно́сто",
+        "feedback": "Does the admitted record show the governed contrast? девяно́сто.",
+        "objectiveId": "obj-u9-tens",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This admitted form is a different ten."
+        ],
+        "assessment": {
+          "testedFeature": "GOVERNED_FORM",
+          "evidenceMode": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "contrastSetId": "u9-tens-2",
+          "cueLanguage": "number",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u9-tens-6-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u9-tens-5-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "This admitted form is a different ten."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "девяно́сто",
+            "во́семьдесят"
+          ],
+          "relationKind": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "relationParticipantIds": [
+            "prov-ex-u9-tens-6-en",
+            "prov-ex-u9-tens-6-ru",
+            "prov-ex-u9-tens-5-ru"
+          ]
+        }
+      },
+      "after": {
+        "id": "u9-i-tens-2",
+        "kind": "NUMBER_FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form matches the shown number?",
+        "promptLetter": "90",
+        "options": [
+          "девяно́сто",
+          "во́семьдесят"
+        ],
+        "answer": "девяно́сто",
+        "feedback": "девяно́сто names ninety (90), the value shown. во́семьдесят names eighty (80), a different value.",
+        "objectiveId": "obj-u9-tens",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "во́семьдесят names eighty (80) instead of the shown value 90."
+        ],
+        "assessment": {
+          "testedFeature": "GOVERNED_FORM",
+          "evidenceMode": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "contrastSetId": "u9-tens-2",
+          "cueLanguage": "number",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u9-tens-6-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u9-tens-5-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "во́семьдесят names eighty (80) instead of the shown value 90."
+          ],
+          "whyAnswerDemonstratesObjective": "девяно́сто names ninety (90), the value shown. во́семьдесят names eighty (80), a different value.",
+          "contrastMembers": [
+            "девяно́сто",
+            "во́семьдесят"
+          ],
+          "relationKind": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "relationParticipantIds": [
+            "prov-ex-u9-tens-6-en",
+            "prov-ex-u9-tens-6-ru",
+            "prov-ex-u9-tens-5-ru"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u9-i-tens-3",
+        "kind": "NUMBER_FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form matches the shown number?",
+        "promptLetter": "20",
+        "options": [
+          "два́дцать",
+          "двена́дцать"
+        ],
+        "answer": "два́дцать",
+        "feedback": "Does the admitted record show the governed contrast? два́дцать.",
+        "objectiveId": "obj-u9-tens",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This admitted form is the teen, not the ten."
+        ],
+        "assessment": {
+          "testedFeature": "GOVERNED_FORM",
+          "evidenceMode": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "contrastSetId": "u9-tens-3",
+          "cueLanguage": "number",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u9-tens-7-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-u9-tens-x-0"
+          ],
+          "distractorDifference": [
+            "",
+            "This admitted form is the teen, not the ten."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "два́дцать",
+            "двена́дцать"
+          ],
+          "relationKind": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "relationParticipantIds": [
+            "prov-ex-u9-tens-7-en",
+            "prov-ex-u9-tens-7-ru",
+            "prov-u9-tens-x-0"
+          ]
+        }
+      },
+      "after": {
+        "id": "u9-i-tens-3",
+        "kind": "NUMBER_FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form matches the shown number?",
+        "promptLetter": "20",
+        "options": [
+          "два́дцать",
+          "двена́дцать"
+        ],
+        "answer": "два́дцать",
+        "feedback": "два́дцать names twenty (20), the value shown. двена́дцать names twelve (12), a different value. Distinguish the teen value from a multiple of ten.",
+        "objectiveId": "obj-u9-tens",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "двена́дцать names twelve (12) instead of the shown value 20."
+        ],
+        "assessment": {
+          "testedFeature": "GOVERNED_FORM",
+          "evidenceMode": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "contrastSetId": "u9-tens-3",
+          "cueLanguage": "number",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u9-tens-7-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-u9-tens-x-0"
+          ],
+          "distractorDifference": [
+            "",
+            "двена́дцать names twelve (12) instead of the shown value 20."
+          ],
+          "whyAnswerDemonstratesObjective": "два́дцать names twenty (20), the value shown. двена́дцать names twelve (12), a different value. Distinguish the teen value from a multiple of ten.",
+          "contrastMembers": [
+            "два́дцать",
+            "двена́дцать"
+          ],
+          "relationKind": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "relationParticipantIds": [
+            "prov-ex-u9-tens-7-en",
+            "prov-ex-u9-tens-7-ru",
+            "prov-u9-tens-x-0"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u9-g-hundreds-0",
+        "kind": "NUMBER_FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form matches the shown number?",
+        "promptLetter": "100",
+        "options": [
+          "сто",
+          "две́сти"
+        ],
+        "answer": "сто",
+        "feedback": "Does the admitted record show the governed contrast? сто.",
+        "objectiveId": "obj-u9-hundreds",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This admitted form is a different hundred."
+        ],
+        "assessment": {
+          "testedFeature": "GOVERNED_FORM",
+          "evidenceMode": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "contrastSetId": "u9-hundreds-0",
+          "cueLanguage": "number",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ex-u9-hundreds-0-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u9-hundreds-1-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "This admitted form is a different hundred."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "сто",
+            "две́сти"
+          ],
+          "relationKind": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "relationParticipantIds": [
+            "prov-ex-u9-hundreds-0-en",
+            "prov-ex-u9-hundreds-0-ru",
+            "prov-ex-u9-hundreds-1-ru"
+          ]
+        }
+      },
+      "after": {
+        "id": "u9-g-hundreds-0",
+        "kind": "NUMBER_FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form matches the shown number?",
+        "promptLetter": "100",
+        "options": [
+          "сто",
+          "две́сти"
+        ],
+        "answer": "сто",
+        "feedback": "сто names one hundred (100), the value shown. две́сти names two hundred (200), a different value.",
+        "objectiveId": "obj-u9-hundreds",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "две́сти names two hundred (200) instead of the shown value 100."
+        ],
+        "assessment": {
+          "testedFeature": "GOVERNED_FORM",
+          "evidenceMode": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "contrastSetId": "u9-hundreds-0",
+          "cueLanguage": "number",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ex-u9-hundreds-0-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ex-u9-hundreds-1-ru"
+          ],
+          "distractorDifference": [
+            "",
+            "две́сти names two hundred (200) instead of the shown value 100."
+          ],
+          "whyAnswerDemonstratesObjective": "сто names one hundred (100), the value shown. две́сти names two hundred (200), a different value.",
+          "contrastMembers": [
+            "сто",
+            "две́сти"
+          ],
+          "relationKind": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "relationParticipantIds": [
+            "prov-ex-u9-hundreds-0-en",
+            "prov-ex-u9-hundreds-0-ru",
+            "prov-ex-u9-hundreds-1-ru"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u9-i-hundreds-1",
+        "kind": "NUMBER_FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form matches the shown number?",
+        "promptLetter": "300",
+        "options": [
+          "три́ста",
+          "три́дцать"
+        ],
+        "answer": "три́ста",
+        "feedback": "Does the admitted record show the governed contrast? три́ста.",
+        "objectiveId": "obj-u9-hundreds",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This admitted form is the ten, not the hundred."
+        ],
+        "assessment": {
+          "testedFeature": "GOVERNED_FORM",
+          "evidenceMode": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "contrastSetId": "u9-hundreds-1",
+          "cueLanguage": "number",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u9-hundreds-2-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-u9-hundreds-x-0"
+          ],
+          "distractorDifference": [
+            "",
+            "This admitted form is the ten, not the hundred."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "три́ста",
+            "три́дцать"
+          ],
+          "relationKind": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "relationParticipantIds": [
+            "prov-ex-u9-hundreds-2-en",
+            "prov-ex-u9-hundreds-2-ru",
+            "prov-u9-hundreds-x-0"
+          ]
+        }
+      },
+      "after": {
+        "id": "u9-i-hundreds-1",
+        "kind": "NUMBER_FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form matches the shown number?",
+        "promptLetter": "300",
+        "options": [
+          "три́ста",
+          "три́дцать"
+        ],
+        "answer": "три́ста",
+        "feedback": "три́ста names three hundred (300), the value shown. три́дцать names thirty (30), a different value. Compare place value: 300 has three hundreds; 30 has three tens.",
+        "objectiveId": "obj-u9-hundreds",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "три́дцать names thirty (30) instead of the shown value 300."
+        ],
+        "assessment": {
+          "testedFeature": "GOVERNED_FORM",
+          "evidenceMode": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "contrastSetId": "u9-hundreds-1",
+          "cueLanguage": "number",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u9-hundreds-2-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-u9-hundreds-x-0"
+          ],
+          "distractorDifference": [
+            "",
+            "три́дцать names thirty (30) instead of the shown value 300."
+          ],
+          "whyAnswerDemonstratesObjective": "три́ста names three hundred (300), the value shown. три́дцать names thirty (30), a different value. Compare place value: 300 has three hundreds; 30 has three tens.",
+          "contrastMembers": [
+            "три́ста",
+            "три́дцать"
+          ],
+          "relationKind": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "relationParticipantIds": [
+            "prov-ex-u9-hundreds-2-en",
+            "prov-ex-u9-hundreds-2-ru",
+            "prov-u9-hundreds-x-0"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u9-i-hundreds-2",
+        "kind": "NUMBER_FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form matches the shown number?",
+        "promptLetter": "500",
+        "options": [
+          "пятьсо́т",
+          "пять"
+        ],
+        "answer": "пятьсо́т",
+        "feedback": "Does the admitted record show the governed contrast? пятьсо́т.",
+        "objectiveId": "obj-u9-hundreds",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This admitted form is the one-digit number, not the hundred."
+        ],
+        "assessment": {
+          "testedFeature": "GOVERNED_FORM",
+          "evidenceMode": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "contrastSetId": "u9-hundreds-2",
+          "cueLanguage": "number",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u9-hundreds-4-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-u9-hundreds-x-1"
+          ],
+          "distractorDifference": [
+            "",
+            "This admitted form is the one-digit number, not the hundred."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "пятьсо́т",
+            "пять"
+          ],
+          "relationKind": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "relationParticipantIds": [
+            "prov-ex-u9-hundreds-4-en",
+            "prov-ex-u9-hundreds-4-ru",
+            "prov-u9-hundreds-x-1"
+          ]
+        }
+      },
+      "after": {
+        "id": "u9-i-hundreds-2",
+        "kind": "NUMBER_FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form matches the shown number?",
+        "promptLetter": "500",
+        "options": [
+          "пятьсо́т",
+          "пять"
+        ],
+        "answer": "пятьсо́т",
+        "feedback": "пятьсо́т names five hundred (500), the value shown. пять names five (5), a different value. Compare place value: 500 has five hundreds; 5 has five single units.",
+        "objectiveId": "obj-u9-hundreds",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "пять names five (5) instead of the shown value 500."
+        ],
+        "assessment": {
+          "testedFeature": "GOVERNED_FORM",
+          "evidenceMode": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "contrastSetId": "u9-hundreds-2",
+          "cueLanguage": "number",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u9-hundreds-4-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-u9-hundreds-x-1"
+          ],
+          "distractorDifference": [
+            "",
+            "пять names five (5) instead of the shown value 500."
+          ],
+          "whyAnswerDemonstratesObjective": "пятьсо́т names five hundred (500), the value shown. пять names five (5), a different value. Compare place value: 500 has five hundreds; 5 has five single units.",
+          "contrastMembers": [
+            "пятьсо́т",
+            "пять"
+          ],
+          "relationKind": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "relationParticipantIds": [
+            "prov-ex-u9-hundreds-4-en",
+            "prov-ex-u9-hundreds-4-ru",
+            "prov-u9-hundreds-x-1"
+          ]
+        }
+      }
+    },
+    {
+      "before": {
+        "id": "u9-i-hundreds-3",
+        "kind": "NUMBER_FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form matches the shown number?",
+        "promptLetter": "900",
+        "options": [
+          "девятьсо́т",
+          "девяно́сто"
+        ],
+        "answer": "девятьсо́т",
+        "feedback": "Does the admitted record show the governed contrast? девятьсо́т.",
+        "objectiveId": "obj-u9-hundreds",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "This admitted form is the ten, not the hundred."
+        ],
+        "assessment": {
+          "testedFeature": "GOVERNED_FORM",
+          "evidenceMode": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "contrastSetId": "u9-hundreds-3",
+          "cueLanguage": "number",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u9-hundreds-8-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-u9-hundreds-x-2"
+          ],
+          "distractorDifference": [
+            "",
+            "This admitted form is the ten, not the hundred."
+          ],
+          "whyAnswerDemonstratesObjective": "Does the admitted record show the governed contrast?",
+          "contrastMembers": [
+            "девятьсо́т",
+            "девяно́сто"
+          ],
+          "relationKind": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "relationParticipantIds": [
+            "prov-ex-u9-hundreds-8-en",
+            "prov-ex-u9-hundreds-8-ru",
+            "prov-u9-hundreds-x-2"
+          ]
+        }
+      },
+      "after": {
+        "id": "u9-i-hundreds-3",
+        "kind": "NUMBER_FORM_SELECTION",
+        "language": "en",
+        "prompt": "Which admitted form matches the shown number?",
+        "promptLetter": "900",
+        "options": [
+          "девятьсо́т",
+          "девяно́сто"
+        ],
+        "answer": "девятьсо́т",
+        "feedback": "девятьсо́т names nine hundred (900), the value shown. девяно́сто names ninety (90), a different value. Compare place value: 900 has nine hundreds; 90 has nine tens.",
+        "objectiveId": "obj-u9-hundreds",
+        "sourceId": "src-wikibooks-russian-cc-by-sa",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "девяно́сто names ninety (90) instead of the shown value 900."
+        ],
+        "assessment": {
+          "testedFeature": "GOVERNED_FORM",
+          "evidenceMode": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "contrastSetId": "u9-hundreds-3",
+          "cueLanguage": "number",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ex-u9-hundreds-8-ru"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-u9-hundreds-x-2"
+          ],
+          "distractorDifference": [
+            "",
+            "девяно́сто names ninety (90) instead of the shown value 900."
+          ],
+          "whyAnswerDemonstratesObjective": "девятьсо́т names nine hundred (900), the value shown. девяно́сто names ninety (90), a different value. Compare place value: 900 has nine hundreds; 90 has nine tens.",
+          "contrastMembers": [
+            "девятьсо́т",
+            "девяно́сто"
+          ],
+          "relationKind": "SAME_RULE_DIFFERENT_BOUNDARY",
+          "relationParticipantIds": [
+            "prov-ex-u9-hundreds-8-en",
+            "prov-ex-u9-hundreds-8-ru",
+            "prov-u9-hundreds-x-2"
+          ]
+        }
+      }
+    }
+  ],
+  "valueBindings": [
+    {
+      "sourceRecordId": "prov-ex-u9-cardinal-0-ru",
+      "sourceHash": "b090f40e39acf0382c43ee3ce3cd7a89c0d63aa6ce679dffee33c9830a03e415",
+      "word": "ноль",
+      "value": 0
+    },
+    {
+      "sourceRecordId": "prov-ex-u9-cardinal-1-ru",
+      "sourceHash": "88b50728d876a3dc27014b99c8aa6504998e73b0136e25e23bbceb0eca87102e",
+      "word": "оди́н",
+      "value": 1
+    },
+    {
+      "sourceRecordId": "prov-ex-u9-cardinal-1-ru",
+      "sourceHash": "88b50728d876a3dc27014b99c8aa6504998e73b0136e25e23bbceb0eca87102e",
+      "word": "оди́н",
+      "value": 1
+    },
+    {
+      "sourceRecordId": "prov-ex-u9-cardinal-2-ru",
+      "sourceHash": "693ad5f87d7036aa8e77931d6be59a8cd40f69af3d471bfb7bbe47bfd527a4a9",
+      "word": "два",
+      "value": 2
+    },
+    {
+      "sourceRecordId": "prov-ex-u9-cardinal-5-ru",
+      "sourceHash": "b8db828150141220f98e412fcd5fe85536ff73c3b08e5467a68b115acc9285e6",
+      "word": "пять",
+      "value": 5
+    },
+    {
+      "sourceRecordId": "prov-ex-u9-cardinal-6-ru",
+      "sourceHash": "e24b501ced41561a77c8a962e99219f9f5bcb007678bd34b2d98212bb6522ff6",
+      "word": "шесть",
+      "value": 6
+    },
+    {
+      "sourceRecordId": "prov-ex-u9-cardinal-10-ru",
+      "sourceHash": "529afd0b4c8d0a44237d1e2789f5170a8867b46a41afb27c588065c029428bce",
+      "word": "де́сять",
+      "value": 10
+    },
+    {
+      "sourceRecordId": "prov-ex-u9-cardinal-9-ru",
+      "sourceHash": "16a2eea55cb3701072e55cdd41dcec19bf70a3833ab25e186056e284224651b6",
+      "word": "де́вять",
+      "value": 9
+    },
+    {
+      "sourceRecordId": "prov-ex-u9-cardinal-4-ru",
+      "sourceHash": "40b213974a05da1eab023f7f7d32c8e671052889a806ccd0e56c89622d41a065",
+      "word": "четы́ре",
+      "value": 4
+    },
+    {
+      "sourceRecordId": "prov-ex-u9-cardinal-3-ru",
+      "sourceHash": "ec5a15271ba289f24d447b3c674fcb2b77f8f42e3ec1a0926ee18a645b70edb5",
+      "word": "три",
+      "value": 3
+    },
+    {
+      "sourceRecordId": "prov-ex-u9-teens-0-ru",
+      "sourceHash": "4f5aa80b265a7750b74238fb7a8f4d3192b4077eb3484bec1dacdc6c91ec5b64",
+      "word": "оди́ннадцать",
+      "value": 11
+    },
+    {
+      "sourceRecordId": "prov-ex-u9-teens-1-ru",
+      "sourceHash": "63e6463325fc5dd4fd2a894b5721dc9a2168578261b3d3d03282106921176d60",
+      "word": "двена́дцать",
+      "value": 12
+    },
+    {
+      "sourceRecordId": "prov-ex-u9-teens-3-ru",
+      "sourceHash": "71719144df9024df75ddbc179cb0568ec92abeff9e18720705c280f67b3b9202",
+      "word": "четы́рнадцать",
+      "value": 14
+    },
+    {
+      "sourceRecordId": "prov-ex-u9-teens-4-ru",
+      "sourceHash": "ed41560a369e75ecd90061e05e9e9158af1ea750fccf33d5d2881d0b36360f66",
+      "word": "пятна́дцать",
+      "value": 15
+    },
+    {
+      "sourceRecordId": "prov-ex-u9-teens-8-ru",
+      "sourceHash": "8385a38600c91f642bef0422c9ade5a22634c0ec7c7f3b6f3122690b92710664",
+      "word": "девятна́дцать",
+      "value": 19
+    },
+    {
+      "sourceRecordId": "prov-ex-u9-teens-9-ru",
+      "sourceHash": "02b951d3bd6b67f60ce69b4c312a21a5e88c5aa363d865f72d859617d0c38365",
+      "word": "два́дцать",
+      "value": 20
+    },
+    {
+      "sourceRecordId": "prov-ex-u9-teens-1-ru",
+      "sourceHash": "63e6463325fc5dd4fd2a894b5721dc9a2168578261b3d3d03282106921176d60",
+      "word": "двена́дцать",
+      "value": 12
+    },
+    {
+      "sourceRecordId": "prov-ex-u9-teens-9-ru",
+      "sourceHash": "02b951d3bd6b67f60ce69b4c312a21a5e88c5aa363d865f72d859617d0c38365",
+      "word": "два́дцать",
+      "value": 20
+    },
+    {
+      "sourceRecordId": "prov-ex-u9-tens-0-ru",
+      "sourceHash": "aafb5d92351a4f9294baea96287b0f11b6114f874fb2b24eb82d6bcbf06bb318",
+      "word": "три́дцать",
+      "value": 30
+    },
+    {
+      "sourceRecordId": "prov-ex-u9-tens-1-ru",
+      "sourceHash": "2c7fe02063f83362a385633932ef5d307082b002601112c3e497edb61b7b830b",
+      "word": "со́рок",
+      "value": 40
+    },
+    {
+      "sourceRecordId": "prov-ex-u9-tens-2-ru",
+      "sourceHash": "a02c014fcca7dcf4fa3fc2df36062ce56ee54ba23c15ab7e26189378beaca0d0",
+      "word": "пятьдеся́т",
+      "value": 50
+    },
+    {
+      "sourceRecordId": "prov-ex-u9-tens-3-ru",
+      "sourceHash": "37edeb38d1a3dc659b579ba29c4984bc758f9b4277028b602a92d382d8b61c13",
+      "word": "шестьдеся́т",
+      "value": 60
+    },
+    {
+      "sourceRecordId": "prov-ex-u9-tens-6-ru",
+      "sourceHash": "151dacbe578c0d015215ae56e15a55974a33a5b7688c043a3db93251ed0a255a",
+      "word": "девяно́сто",
+      "value": 90
+    },
+    {
+      "sourceRecordId": "prov-ex-u9-tens-5-ru",
+      "sourceHash": "441d81392a0364573f1b9b889ea43188b66c381c3692ce2e26024ce66f36d6a7",
+      "word": "во́семьдесят",
+      "value": 80
+    },
+    {
+      "sourceRecordId": "prov-ex-u9-tens-7-ru",
+      "sourceHash": "02b951d3bd6b67f60ce69b4c312a21a5e88c5aa363d865f72d859617d0c38365",
+      "word": "два́дцать",
+      "value": 20
+    },
+    {
+      "sourceRecordId": "prov-u9-tens-x-0",
+      "sourceHash": "63e6463325fc5dd4fd2a894b5721dc9a2168578261b3d3d03282106921176d60",
+      "word": "двена́дцать",
+      "value": 12
+    },
+    {
+      "sourceRecordId": "prov-ex-u9-hundreds-0-ru",
+      "sourceHash": "0fec85b1451c884da09b599161d9d8a80453a1ddaea857f6071d4df2427e544b",
+      "word": "сто",
+      "value": 100
+    },
+    {
+      "sourceRecordId": "prov-ex-u9-hundreds-1-ru",
+      "sourceHash": "700f9f2942f9ce163e6fa042d7290823f2b53d2ab2211430a5b7ac1258497653",
+      "word": "две́сти",
+      "value": 200
+    },
+    {
+      "sourceRecordId": "prov-ex-u9-hundreds-2-ru",
+      "sourceHash": "298aee09d0d849b140a00685e9c71fb7d4db6c0d2c58c3a6da93beaadfd79489",
+      "word": "три́ста",
+      "value": 300
+    },
+    {
+      "sourceRecordId": "prov-u9-hundreds-x-0",
+      "sourceHash": "aafb5d92351a4f9294baea96287b0f11b6114f874fb2b24eb82d6bcbf06bb318",
+      "word": "три́дцать",
+      "value": 30
+    },
+    {
+      "sourceRecordId": "prov-ex-u9-hundreds-4-ru",
+      "sourceHash": "60fe1a186962ca54608ce904a80f7daf0e8ced5cea4d369c539e878df652cc12",
+      "word": "пятьсо́т",
+      "value": 500
+    },
+    {
+      "sourceRecordId": "prov-u9-hundreds-x-1",
+      "sourceHash": "b8db828150141220f98e412fcd5fe85536ff73c3b08e5467a68b115acc9285e6",
+      "word": "пять",
+      "value": 5
+    },
+    {
+      "sourceRecordId": "prov-ex-u9-hundreds-8-ru",
+      "sourceHash": "72f621fb7ac31fa16cdf0f4768158bd5044908c7dc1a44925a24e76d6e119466",
+      "word": "девятьсо́т",
+      "value": 900
+    },
+    {
+      "sourceRecordId": "prov-u9-hundreds-x-2",
+      "sourceHash": "151dacbe578c0d015215ae56e15a55974a33a5b7688c043a3db93251ed0a255a",
+      "word": "девяно́сто",
+      "value": 90
+    }
+  ],
+  "bibliography": "Retained Wikibooks Russian/Numbers oldid4371358, catalog/sources/units-6-10/wikibooks/numbers-4371358.txt, CC BY-SA 4.0. Complete Cardinal numbers table and each existing answer/distractor provenance row bind displayed Russian number words to their numeric values. Bounded independently authored value comparison and arithmetic place-value explanation; no numeral declension, noun-case or productive-language claim. Original Russian cues/options, scored keys and source participant relationships remain unchanged. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no copied primary prose or private Penguin text; final semantic audit pending.",
+  "semanticAcceptance": false
+}
