@@ -11,12 +11,12 @@ Unit 29 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: b4346e2797e8c4dd0965b4665773397d5e9be742
-- Unit content-review SHA-256: 0e99fc02a09d928d4cff5fce33b069907dfd2b84b7f6cf0b8efac068ffc65804
+- Curriculum source commit: f844dd187be8e2e4d650c40305655815c8b2c3ec
+- Unit content-review SHA-256: 438013b472cf7acbd10b47ebca7d3166e75f9087feb955438b85c19c5bddde50
 - Mapping-package SHA-256: a7ebe370698a0dffe4f0311ccfbfff6f217171ffab7dda232447d4b62e2b4071
-- Pack content-review SHA-256: 4f787a22d96862cfd369592b03e26886f9829d212a083f582915742a20434140
-- Review-package SHA-256: 0f81030a865fc3ceb8205562e363c079aedba6611b2ebe83c5aad203d3983dcc
-- Repository source SHA-256: a812cd35d250546ebfbbfc329a0063b4d3e28e0536f82d30a41e75895c6de1e2
+- Pack content-review SHA-256: ee64b836e32577a676e8f156eb33675c8cdb8d80eedad130bdeb8fd3e41727a9
+- Review-package SHA-256: 4dfc829b31c6dab779d5cd17f36c5d7da6efc93d905a29f2a415465d1608b7b7
+- Repository source SHA-256: 76f5398b1ef127f486f2f19e02f6ebac700b76091b0749927fadd7a7ff9a2997
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -69,13 +69,13 @@ notes=No qualified reviewer has signed Unit 29.
 
 ### UNIT `unit-29`
 
-- Objectives: obj-u29-active, obj-u29-short-adjective, obj-u29-bookish-note, obj-u29-punctuation, obj-u29-book, obj-u29-register, obj-u29-reading
+- Objectives: obj-u29-active, obj-u29-short-adjective, obj-u29-bookish-note, obj-u29-punctuation, obj-u29-book, obj-u29-register, obj-u29-reading, obj-u29-adjective-vocabulary
 - Sessions: u29-s-orient, u29-s-active, u29-s-short-adjective, u29-s-bookish-note, u29-s-punctuation, u29-s-book, u29-s-gap-register, u29-s-gap-reading
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c51cf6c8bb718286b50653b0849b6b5e3a346c3aa32d561cc446e1b3384443b1
+- Content hash: 176f07bf8566407b04babf25ef117c1fac9bc3f08a3d4dfa3ad2f0aca42e2158
 
 number=29
 title=Bookish style, active participles, punctuation, and short-form adjectives
@@ -132,15 +132,15 @@ remediation=u29-st-rem-active
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: aca6dd76e075c1f6fe09b749f95a689e6c93c60f12e4a04bf54fd8211ef1dc4b
+- Content hash: 070d90bdff89e6e1d387a610e33e3c8abd6638d39df7e7a235680ba68e6f8569
 
-title=Choose the admitted gloss for the shown short form
+title=Distinguish admitted long, short and invariant adjective forms
 kind=RECOGNITION
 unitNumber=29
 instruction=u29-st-orient,u29-st-teach-short-adjective-1,u29-st-teach-short-adjective-2,u29-st-teach-short-adjective-3
 examples=ex-u29-short-adjective-0,ex-u29-short-adjective-1,ex-u29-short-adjective-2
 practice=u29-st-guided-short-adjective-1
-checks=u29-i-short-adjective-1,u29-i-short-adjective-2
+checks=u29-i-adjective-form-1,u29-i-adjective-form-2
 remediation=u29-st-rem-short-adjective
 
 ### OBJECTIVE `obj-u29-bookish-note`
@@ -237,6 +237,25 @@ examples=ex-u29-reading-1,ex-u29-reading-2
 practice=u29-reading-guided
 checks=u29-i-reading-1,u29-i-reading-2,u29-i-reading-3
 remediation=u29-reading-remediate
+
+### OBJECTIVE `obj-u29-adjective-vocabulary`
+
+- Objectives: obj-u29-adjective-vocabulary
+- Sessions: none
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 316ec478a1020b53e635d3d4c1f1b2cd2339f6b80c556c7f15422d605d30e78c
+
+title=Optional Vocabulary Lab: supplied adjective meanings
+kind=GUIDANCE
+unitNumber=29
+instruction=u29-st-teach-short-adjective-1,u29-st-teach-short-adjective-2,u29-st-teach-short-adjective-3
+examples=
+practice=
+checks=
+remediation=
 
 ### SESSION `u29-s-orient`
 
@@ -434,26 +453,26 @@ remediationStepId=u29-st-rem-active
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1645bf26149c514c568d18e193c4c2ac63c6e3daff7ab17b1f089cf677d971d9
+- Content hash: 18b7901f45b6d2aa38feb2805ec290a784adf38e1cef846be0b70b785df4f53d
 
-title=Choose the admitted gloss for the shown short form
+title=Distinguish admitted long, short and invariant adjective forms
 estimatedMinutes=12
 objectives=obj-u29-short-adjective
 steps=u29-st-teach-short-adjective-1,u29-st-teach-short-adjective-2,u29-st-teach-short-adjective-3,u29-st-guided-short-adjective-1,u29-st-rem-short-adjective,u29-st-check-short-adjective
 
 ### STEP `u29-st-teach-short-adjective-1`
 
-- Objectives: obj-u29-short-adjective
+- Objectives: obj-u29-short-adjective, obj-u29-adjective-vocabulary
 - Sessions: u29-s-short-adjective
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 000b867265a3e9ac4ad4f0cc48ea3e2c4fe0290c5f0974650af311e98a969024
+- Content hash: b69fd06c857d5092fa797b310c4f177dcf7d80189f64a0269aef496fdc2a0db0
 
 kind=TEACH
 title=Recognize the long and short forms
-body=The retained но́вый and нов both mean new. The first is the long form and the second is the short form. Their shared meaning distinguishes them from the colour meanings beige and khaki-colored. Choosing the English gloss alone does not demonstrate selecting the appropriate adjective form in a complete sentence.
+body=The retained но́вый and нов both mean new. The first is the long form and the second is the masculine singular short form. The grammatical check asks which form is shown, rather than its English gloss. Long adjectives have case, gender and number inflection; short adjectives vary for gender and number, not case. The retained examples are recognition targets, not a universal rule for producing short forms by removing endings.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -465,17 +484,17 @@ remediationStepId=
 
 ### STEP `u29-st-teach-short-adjective-2`
 
-- Objectives: obj-u29-short-adjective
+- Objectives: obj-u29-short-adjective, obj-u29-adjective-vocabulary
 - Sessions: u29-s-short-adjective
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1b7b71f420514cf83dac68c3d4730e9c6783106b6a25acb18483cbba70776b03
+- Content hash: 4b846c8d590cde526d3bbcd70412ed0aeae1d0591cc713c57d18d25a6b09b2c0
 
 kind=TEACH
 title=Distinguish a predicate from a noun description
-body=A short adjective often supplies the predicate describing its subject; a long adjective often describes a noun attributively. The choice depends on the sentence, not a universal rule about one fixed word position. The retained isolated pair does not provide a complete context for deciding every long-versus-short choice. Do not treat the common predicate/attribute contrast as an exceptionless rule.
+body=In the taught modern use, short adjectives occur only in the nominative and are used predicatively to describe their subject. A long adjective often describes a noun attributively and can also be a predicate. The choice depends on the sentence, not a universal rule about one fixed word position. The isolated pair does not provide a complete context for selecting every long-versus-short form; broader agreement and sentence-level application remain pending.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -487,17 +506,17 @@ remediationStepId=
 
 ### STEP `u29-st-teach-short-adjective-3`
 
-- Objectives: obj-u29-short-adjective
+- Objectives: obj-u29-short-adjective, obj-u29-adjective-vocabulary
 - Sessions: u29-s-short-adjective
 - Source: none
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 54f7c6b0fd8764b6161c5b14480f890c4e6fc20b6b737bc9f8be836562a3ff09
+- Content hash: e59416e56f0177577f3654b9cdb14f1f20eb8fae156ebd82cfc39faf22ae7a13
 
 kind=TEACH
 title=A short-looking word need not be a short adjective
-body=The retained беж means beige and is an invariant colour form. Its short appearance does not make it the short counterpart of но́вый. Keep meaning, inflection and adjective function separate. This set checks supplied gloss recognition and explains the contrast; it does not demonstrate productive adjective agreement or sentence-level form selection.
+body=The retained беж means beige and is an invariant colour form, unchanged for case, gender and number. Its short appearance does not make it the short counterpart of но́вый. Keep lexical meaning, inflection and adjective function separate. The correct glosses remain in Vocabulary Lab as word-meaning practice; they do not satisfy the independent adjective grammar checks.
 dominantAction=Continue
 references=ref-u2630-attribution
 items=
@@ -515,14 +534,14 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 0758c2bec4e337957e1e454560d7629d2a83c5731b41075768e7483cf267200b
+- Content hash: 81c45de0c202ca3017e1f85713d48d680171b31b3b5e2c543616c60b19c950b1
 
 kind=GUIDED
 title=Guided practice
 body=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
 dominantAction=Continue
 references=
-items=u29-g-short-adjective-0
+items=u29-g-adjective-form-0
 examples=
 unavailableReason=
 bookDirection=
@@ -537,15 +556,15 @@ remediationStepId=u29-st-rem-short-adjective
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: da04731b3a0c57f5e57cbdc9472350d9f1dfb7fd193f31cb4b18755b13599d4f
+- Content hash: 2c181d4d3b2eb4d3c882a42f87bba61a0ab3798cec7c9af9eee8b502b500f1a8
 
 kind=REMEDIATE
 title=Review the complete retained-example contrast
-body=The retained но́вый and нов both mean new. The first is the long form and the second is the short form. Their shared meaning distinguishes them from the colour meanings beige and khaki-colored. Choosing the English gloss alone does not demonstrate selecting the appropriate adjective form in a complete sentence.
+body=The retained но́вый and нов both mean new. The first is the long form and the second is the masculine singular short form. The grammatical check asks which form is shown, rather than its English gloss. Long adjectives have case, gender and number inflection; short adjectives vary for gender and number, not case. The retained examples are recognition targets, not a universal rule for producing short forms by removing endings.
 
-A short adjective often supplies the predicate describing its subject; a long adjective often describes a noun attributively. The choice depends on the sentence, not a universal rule about one fixed word position. The retained isolated pair does not provide a complete context for deciding every long-versus-short choice. Do not treat the common predicate/attribute contrast as an exceptionless rule.
+In the taught modern use, short adjectives occur only in the nominative and are used predicatively to describe their subject. A long adjective often describes a noun attributively and can also be a predicate. The choice depends on the sentence, not a universal rule about one fixed word position. The isolated pair does not provide a complete context for selecting every long-versus-short form; broader agreement and sentence-level application remain pending.
 
-The retained беж means beige and is an invariant colour form. Its short appearance does not make it the short counterpart of но́вый. Keep meaning, inflection and adjective function separate. This set checks supplied gloss recognition and explains the contrast; it does not demonstrate productive adjective agreement or sentence-level form selection.
+The retained беж means beige and is an invariant colour form, unchanged for case, gender and number. Its short appearance does not make it the short counterpart of но́вый. Keep lexical meaning, inflection and adjective function separate. The correct glosses remain in Vocabulary Lab as word-meaning practice; they do not satisfy the independent adjective grammar checks.
 dominantAction=Continue
 references=
 items=
@@ -563,14 +582,14 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ec343feb4d7d5d3f02797aeee9ddbf9a588cb4781f80370b0c45c02791acb249
+- Content hash: 498eb08d44333066110c78a33fac581325c86b20daae0a2408bbf4e41581cc7f
 
 kind=CHECK
 title=Independent checks
 body=Use the explanation and supplied examples. A missed choice restores every teaching card and worked example.
 dominantAction=Continue
 references=
-items=u29-i-short-adjective-1,u29-i-short-adjective-2
+items=u29-i-adjective-form-1,u29-i-adjective-form-2
 examples=
 unavailableReason=
 bookDirection=
@@ -1546,39 +1565,39 @@ relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
 relationParticipantIds=prov-ex-u29-active-0-ru | prov-ex-u29-active-0-en | prov-ex-u29-active-1-en | prov-u29-active-x-1
 responseKind=ENGLISH_CLASSIFICATION
 
-### GUIDED_PRACTICE `u29-g-short-adjective-0`
+### GUIDED_PRACTICE `u29-g-adjective-form-0`
 
 - Objectives: obj-u29-short-adjective
 - Sessions: u29-s-short-adjective
-- Source: src-wikipedia-russian-grammar-1369617627
-- Rights: rights-wikipedia-russian-grammar-1369617627
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 106cc05e82078b3eba45ade749652fb5a8348a9116b60f4ff537751c7ad35e85
+- Content hash: 92c679f2a6c6c530da4cd71c1bdba018b309e357f53684d1378ca69ecc6770fb
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English label is written beside the shown form?
-promptLetter=но́вый
-options=new | beige | khaki-colored
-answer=new
-feedback=The frozen line says the short form appears in the stated role. This label is written beside the shown form. new.
+prompt=Which English grammatical explanation fits the shown adjective form?
+promptLetter=беж
+options=Invariant colour adjective, unchanged for case, gender and number. | Long adjective form, with case, gender and number inflection. | Short adjective form, used predicatively and not declined for case.
+answer=Invariant colour adjective, unchanged for case, gender and number.
+feedback=беж means beige and is an invariant colour adjective in the supplied source. Its short appearance does not make it a short adjective of the long/short new pair. It stays unchanged for case, gender and number.
 objectiveId=obj-u29-short-adjective
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen line writes this label beside a different form for beige. | The frozen line writes this label beside a different form for khaki-colored.
+distractorRationales= | The supplied long form is inflected for case, gender and number; this classification does not fit the displayed form. | The supplied short form is predicative and varies for gender/number, not case; this classification does not fit the displayed form.
 testedFeature=SHORT_FORM
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
-contrastSetId=u29-short-adjective-0
+evidenceMode=STATED_APPLICATION
+contrastSetId=u29-g-adjective-form-0
 cueLanguage=ru
 independent=false
-answerSourceIds=prov-ex-u29-short-adjective-0-en
-distractorSourceIds= | prov-ex-u29-short-adjective-2-en | prov-u29-short-adjective-x-0
-distractorDifference= | This label is paired with an invariant form (beige). | This label is paired with the other invariant form (khaki-colored).
-whyAnswerDemonstratesObjective=The frozen line says the short form appears in the stated role. This label is written beside the shown form.
-contrastMembers=new | beige | khaki-colored
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u29-short-adjective-0-ru | prov-ex-u29-short-adjective-0-en | prov-ex-u29-short-adjective-2-en | prov-u29-short-adjective-x-0
+answerSourceIds=prov-ca-u29-adjective-u29-g-adjective-form-0-1
+distractorSourceIds= | prov-ca-u29-adjective-u29-g-adjective-form-0-2 | prov-ca-u29-adjective-u29-g-adjective-form-0-3
+distractorDifference= | The supplied long form is inflected for case, gender and number; this classification does not fit the displayed form. | The supplied short form is predicative and varies for gender/number, not case; this classification does not fit the displayed form.
+whyAnswerDemonstratesObjective=беж means beige and is an invariant colour adjective in the supplied source. Its short appearance does not make it a short adjective of the long/short new pair. It stays unchanged for case, gender and number.
+contrastMembers=Invariant colour adjective, unchanged for case, gender and number. | Long adjective form, with case, gender and number inflection. | Short adjective form, used predicatively and not declined for case.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u29-adjective-u29-g-adjective-form-0-0 | prov-ca-u29-adjective-u29-g-adjective-form-0-1 | prov-ca-u29-adjective-u29-g-adjective-form-0-2 | prov-ca-u29-adjective-u29-g-adjective-form-0-3
 responseKind=ENGLISH_CLASSIFICATION
 
 ### GUIDED_PRACTICE `u29-g-bookish-note-0`
@@ -1791,74 +1810,74 @@ relationKind=STATED_APPLICATION
 relationParticipantIds=prov-ca-u29-time-u29-i-active-2-0 | prov-ca-u29-time-u29-i-active-2-1 | prov-ca-u29-time-u29-i-active-2-2 | prov-ca-u29-time-u29-i-active-2-3
 responseKind=ENGLISH_CLASSIFICATION
 
-### INDEPENDENT_CHECK `u29-i-short-adjective-1`
+### INDEPENDENT_CHECK `u29-i-adjective-form-1`
 
 - Objectives: obj-u29-short-adjective
 - Sessions: u29-s-short-adjective
-- Source: src-wikipedia-russian-grammar-1369617627
-- Rights: rights-wikipedia-russian-grammar-1369617627
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: a600f0e8d684fdfdd7b991d12ac75a65cc9b4bf007e35ef2ab56f64f9b6bf03e
+- Content hash: af2b229281314e282759aba2f7812db911779ba91b233aebe0c724706764fb0c
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English label is written beside this shown form?
+prompt=Which English grammatical explanation fits the shown adjective form?
 promptLetter=нов
-options=new | beige | khaki-colored
-answer=new
-feedback=The frozen line says the short form appears in the stated role. This label is written beside the shown form. new.
+options=Short adjective form, used predicatively and not declined for case. | Long adjective form, with case, gender and number inflection. | Invariant colour adjective, unchanged for case, gender and number.
+answer=Short adjective form, used predicatively and not declined for case.
+feedback=нов means new and is the supplied masculine singular short adjective. In the taught modern use, short adjectives are predicative and occur only in the nominative. They vary for gender and number, not case. This is a grammatical distinction from the long form even though both mean new.
 objectiveId=obj-u29-short-adjective
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen line writes this label beside an invariant form for beige. | The frozen line writes this label beside an invariant form for khaki-colored.
+distractorRationales= | The supplied long form is inflected for case, gender and number; this classification does not fit the displayed form. | An invariant colour adjective does not vary for case, gender or number; the displayed form belongs to the supplied long/short pair instead.
 testedFeature=SHORT_FORM
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
-contrastSetId=u29-short-adjective-1
+evidenceMode=STATED_APPLICATION
+contrastSetId=u29-i-adjective-form-1
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-u29-short-adjective-0-en
-distractorSourceIds= | prov-ex-u29-short-adjective-2-en | prov-u29-short-adjective-x-0
-distractorDifference= | This label is not the gloss of the shown form (beige). | This label is paired with a different form (khaki-colored).
-whyAnswerDemonstratesObjective=The frozen line says the short form appears in the stated role. This label is written beside the shown form.
-contrastMembers=new | beige | khaki-colored
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u29-short-adjective-1-ru | prov-ex-u29-short-adjective-0-en | prov-ex-u29-short-adjective-2-en | prov-u29-short-adjective-x-0
+answerSourceIds=prov-ca-u29-adjective-u29-i-adjective-form-1-1
+distractorSourceIds= | prov-ca-u29-adjective-u29-i-adjective-form-1-2 | prov-ca-u29-adjective-u29-i-adjective-form-1-3
+distractorDifference= | The supplied long form is inflected for case, gender and number; this classification does not fit the displayed form. | An invariant colour adjective does not vary for case, gender or number; the displayed form belongs to the supplied long/short pair instead.
+whyAnswerDemonstratesObjective=нов means new and is the supplied masculine singular short adjective. In the taught modern use, short adjectives are predicative and occur only in the nominative. They vary for gender and number, not case. This is a grammatical distinction from the long form even though both mean new.
+contrastMembers=Short adjective form, used predicatively and not declined for case. | Long adjective form, with case, gender and number inflection. | Invariant colour adjective, unchanged for case, gender and number.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u29-adjective-u29-i-adjective-form-1-0 | prov-ca-u29-adjective-u29-i-adjective-form-1-1 | prov-ca-u29-adjective-u29-i-adjective-form-1-2 | prov-ca-u29-adjective-u29-i-adjective-form-1-3
 responseKind=ENGLISH_CLASSIFICATION
 
-### INDEPENDENT_CHECK `u29-i-short-adjective-2`
+### INDEPENDENT_CHECK `u29-i-adjective-form-2`
 
 - Objectives: obj-u29-short-adjective
 - Sessions: u29-s-short-adjective
-- Source: src-wikipedia-russian-grammar-1369617627
-- Rights: rights-wikipedia-russian-grammar-1369617627
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: eaac83f41bb75b568419974149eef63c6f3856387f4a189e5251448fccc2589f
+- Content hash: 078986f15d3454f738b33eced878c4f76665fb91c58d4d016c7e8d36da6f4b98
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which admitted English label is written beside the invariant form?
-promptLetter=беж
-options=beige | new | khaki-colored
-answer=beige
-feedback=The frozen line says the short form appears in the stated role. This label is written beside the shown invariant form. beige.
+prompt=Which English grammatical explanation fits the shown adjective form?
+promptLetter=но́вый
+options=Long adjective form, with case, gender and number inflection. | Short adjective form, used predicatively and not declined for case. | Invariant colour adjective, unchanged for case, gender and number.
+answer=Long adjective form, with case, gender and number inflection.
+feedback=но́вый means new and is the supplied long adjective form. Long adjectives have case, gender and number inflection; the supplied short counterpart has predicative use and no case paradigm. Long forms can also be predicates, so form classification alone does not choose the appropriate form for an unseen sentence.
 objectiveId=obj-u29-short-adjective
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The frozen line writes this label beside the other forms for new. | The frozen line writes this label beside the other invariant form for khaki-colored.
+distractorRationales= | The supplied short form is predicative and varies for gender/number, not case; this classification does not fit the displayed form. | An invariant colour adjective does not vary for case, gender or number; the displayed form belongs to the supplied long/short pair instead.
 testedFeature=SHORT_FORM
-evidenceMode=RULE_CLASSIFIES_SOURCE_EXAMPLE
-contrastSetId=u29-short-adjective-2
+evidenceMode=STATED_APPLICATION
+contrastSetId=u29-i-adjective-form-2
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-u29-short-adjective-2-en
-distractorSourceIds= | prov-ex-u29-short-adjective-0-en | prov-u29-short-adjective-x-0
-distractorDifference= | This label is paired with a different form (new). | This label is paired with a different form (khaki-colored).
-whyAnswerDemonstratesObjective=The frozen line says the short form appears in the stated role. This label is written beside the shown invariant form.
-contrastMembers=beige | new | khaki-colored
-relationKind=RULE_CLASSIFIES_SOURCE_EXAMPLE
-relationParticipantIds=prov-ex-u29-short-adjective-2-ru | prov-ex-u29-short-adjective-2-en | prov-ex-u29-short-adjective-0-en | prov-u29-short-adjective-x-0
+answerSourceIds=prov-ca-u29-adjective-u29-i-adjective-form-2-1
+distractorSourceIds= | prov-ca-u29-adjective-u29-i-adjective-form-2-2 | prov-ca-u29-adjective-u29-i-adjective-form-2-3
+distractorDifference= | The supplied short form is predicative and varies for gender/number, not case; this classification does not fit the displayed form. | An invariant colour adjective does not vary for case, gender or number; the displayed form belongs to the supplied long/short pair instead.
+whyAnswerDemonstratesObjective=но́вый means new and is the supplied long adjective form. Long adjectives have case, gender and number inflection; the supplied short counterpart has predicative use and no case paradigm. Long forms can also be predicates, so form classification alone does not choose the appropriate form for an unseen sentence.
+contrastMembers=Long adjective form, with case, gender and number inflection. | Short adjective form, used predicatively and not declined for case. | Invariant colour adjective, unchanged for case, gender and number.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u29-adjective-u29-i-adjective-form-2-0 | prov-ca-u29-adjective-u29-i-adjective-form-2-1 | prov-ca-u29-adjective-u29-i-adjective-form-2-2 | prov-ca-u29-adjective-u29-i-adjective-form-2-3
 responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u29-i-bookish-note-1`
@@ -2413,6 +2432,1418 @@ attribution=Russian Companion content-audit research synthesis, content-audit-20
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
 sourceHash=8cbdd45e7fb070fbf5e42c5458556da7ac5fbb37454d9213aa932d0125d6186c
 contentHash=0afff52ca49d9adc7b3fb39de24b16290d6908faa0a72a4209008f32c863dbbf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-adjective-objective-title`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f5bf37d3bbcdd508981cca523b3588b9319bc9dc5a06992156fc09cbf547067d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective:objective-title
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, long/short declension table and qualifications before Comparison of adjectives. Immutable admitted short-form capability sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8 identifies the invariant beige and khaki forms, the supplied new long/short pair, and short forms in nominative/predicative use. Only the already admitted long new, short new and invariant beige forms are classified. Short adjectives vary for gender/number, not case; some adjectives lack short forms, and spelling/stress cannot be generated by a universal truncation rule. Long forms can also be predicates: do not infer an exceptionless word-position rule. Vocabulary glosses remain available as optional word-meaning practice and do not satisfy the grammar gate. Broader agreement and sentence-level predicate/attribute application remain pending. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+Distinguish admitted long, short and invariant adjective forms
+shippedText=Distinguish admitted long, short and invariant adjective forms
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0f2243e5312b7178fdbc86c9b11dc42534fbf2431d5b5a6f1cdf61c3ecad39fa
+contentHash=f7e1c33d4d4ac3375fe8b164b5e6963152580d20f6ee1ef6d2505c4c39e6b17d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-adjective-session-title`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 27cc0f6426a227de20dd34f71e31d8bf9099c3ad60656442c4867a315a974de2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective:session-title
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, long/short declension table and qualifications before Comparison of adjectives. Immutable admitted short-form capability sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8 identifies the invariant beige and khaki forms, the supplied new long/short pair, and short forms in nominative/predicative use. Only the already admitted long new, short new and invariant beige forms are classified. Short adjectives vary for gender/number, not case; some adjectives lack short forms, and spelling/stress cannot be generated by a universal truncation rule. Long forms can also be predicates: do not infer an exceptionless word-position rule. Vocabulary glosses remain available as optional word-meaning practice and do not satisfy the grammar gate. Broader agreement and sentence-level predicate/attribute application remain pending. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+Distinguish admitted long, short and invariant adjective forms
+shippedText=Distinguish admitted long, short and invariant adjective forms
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0f2243e5312b7178fdbc86c9b11dc42534fbf2431d5b5a6f1cdf61c3ecad39fa
+contentHash=f7e1c33d4d4ac3375fe8b164b5e6963152580d20f6ee1ef6d2505c4c39e6b17d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-adjective-u29-g-adjective-form-0-0`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a88f0b6959454f894c7d23938cccb37e8f8a4ff0e62d3ad16e618c19056469d6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-g-adjective-form-0
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, long/short declension table and qualifications before Comparison of adjectives. Immutable admitted short-form capability sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8 identifies the invariant beige and khaki forms, the supplied new long/short pair, and short forms in nominative/predicative use. Only the already admitted long new, short new and invariant beige forms are classified. Short adjectives vary for gender/number, not case; some adjectives lack short forms, and spelling/stress cannot be generated by a universal truncation rule. Long forms can also be predicates: do not infer an exceptionless word-position rule. Vocabulary glosses remain available as optional word-meaning practice and do not satisfy the grammar gate. Broader agreement and sentence-level predicate/attribute application remain pending. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+беж means beige and is an invariant colour adjective in the supplied source. Its short appearance does not make it a short adjective of the long/short new pair. It stays unchanged for case, gender and number.
+Tuple-v1:tuple-v1:1;6:беж66:Invariant colour adjective, unchanged for case, gender and number.2;61:Long adjective form, with case, gender and number inflection.67:Short adjective form, used predicatively and not declined for case.
+shippedText=беж
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e0cf5eb7be494b7ce79111cf1675317ddfe1b91e1739eb00c0f5ea01af8b8efd
+contentHash=7e7bdbcd586e76916429c3e938a66eb72771755d3b5961b9c8ed5e9db3f3ffb4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-adjective-u29-g-adjective-form-0-1`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2877110eb594c362464d7d1e0c3efaef6efa43464b6c5c732ab4698f99b02b85
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-g-adjective-form-0
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, long/short declension table and qualifications before Comparison of adjectives. Immutable admitted short-form capability sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8 identifies the invariant beige and khaki forms, the supplied new long/short pair, and short forms in nominative/predicative use. Only the already admitted long new, short new and invariant beige forms are classified. Short adjectives vary for gender/number, not case; some adjectives lack short forms, and spelling/stress cannot be generated by a universal truncation rule. Long forms can also be predicates: do not infer an exceptionless word-position rule. Vocabulary glosses remain available as optional word-meaning practice and do not satisfy the grammar gate. Broader agreement and sentence-level predicate/attribute application remain pending. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+беж means beige and is an invariant colour adjective in the supplied source. Its short appearance does not make it a short adjective of the long/short new pair. It stays unchanged for case, gender and number.
+Tuple-v1:tuple-v1:1;6:беж66:Invariant colour adjective, unchanged for case, gender and number.2;61:Long adjective form, with case, gender and number inflection.67:Short adjective form, used predicatively and not declined for case.
+shippedText=Invariant colour adjective, unchanged for case, gender and number.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e0cf5eb7be494b7ce79111cf1675317ddfe1b91e1739eb00c0f5ea01af8b8efd
+contentHash=689bcab4dcfee55a1a12a3832374f70bd87cfa5b3813520a55934b337f918300
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-adjective-u29-g-adjective-form-0-2`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2d0e004fac4936fc39d814a4cbd77340f289c55bdff179b0988396dc25f10ec5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-g-adjective-form-0
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, long/short declension table and qualifications before Comparison of adjectives. Immutable admitted short-form capability sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8 identifies the invariant beige and khaki forms, the supplied new long/short pair, and short forms in nominative/predicative use. Only the already admitted long new, short new and invariant beige forms are classified. Short adjectives vary for gender/number, not case; some adjectives lack short forms, and spelling/stress cannot be generated by a universal truncation rule. Long forms can also be predicates: do not infer an exceptionless word-position rule. Vocabulary glosses remain available as optional word-meaning practice and do not satisfy the grammar gate. Broader agreement and sentence-level predicate/attribute application remain pending. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+беж means beige and is an invariant colour adjective in the supplied source. Its short appearance does not make it a short adjective of the long/short new pair. It stays unchanged for case, gender and number.
+Tuple-v1:tuple-v1:1;6:беж66:Invariant colour adjective, unchanged for case, gender and number.2;61:Long adjective form, with case, gender and number inflection.67:Short adjective form, used predicatively and not declined for case.
+shippedText=Long adjective form, with case, gender and number inflection.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e0cf5eb7be494b7ce79111cf1675317ddfe1b91e1739eb00c0f5ea01af8b8efd
+contentHash=374483da96f25eb9a76b584dcb9c488594c56c3f551547550e0cc03646ff8ac1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-adjective-u29-g-adjective-form-0-3`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cc2d09dfac1e09476efe5b51325965d7b04af2cd1dea9e78ed5d15c15944de1a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-g-adjective-form-0
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, long/short declension table and qualifications before Comparison of adjectives. Immutable admitted short-form capability sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8 identifies the invariant beige and khaki forms, the supplied new long/short pair, and short forms in nominative/predicative use. Only the already admitted long new, short new and invariant beige forms are classified. Short adjectives vary for gender/number, not case; some adjectives lack short forms, and spelling/stress cannot be generated by a universal truncation rule. Long forms can also be predicates: do not infer an exceptionless word-position rule. Vocabulary glosses remain available as optional word-meaning practice and do not satisfy the grammar gate. Broader agreement and sentence-level predicate/attribute application remain pending. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+беж means beige and is an invariant colour adjective in the supplied source. Its short appearance does not make it a short adjective of the long/short new pair. It stays unchanged for case, gender and number.
+Tuple-v1:tuple-v1:1;6:беж66:Invariant colour adjective, unchanged for case, gender and number.2;61:Long adjective form, with case, gender and number inflection.67:Short adjective form, used predicatively and not declined for case.
+shippedText=Short adjective form, used predicatively and not declined for case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e0cf5eb7be494b7ce79111cf1675317ddfe1b91e1739eb00c0f5ea01af8b8efd
+contentHash=e457ea252286cd22acbd3cb0ebdc8d6e5588d2daeb0d18b66bfe2dea6d01594a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-adjective-u29-g-adjective-form-0-feedback`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: df9438e18de5f5247ee5a38b94ee706bda6de2dd0a38f5cfbb162ce02a24a220
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective:u29-g-adjective-form-0-feedback
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, long/short declension table and qualifications before Comparison of adjectives. Immutable admitted short-form capability sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8 identifies the invariant beige and khaki forms, the supplied new long/short pair, and short forms in nominative/predicative use. Only the already admitted long new, short new and invariant beige forms are classified. Short adjectives vary for gender/number, not case; some adjectives lack short forms, and spelling/stress cannot be generated by a universal truncation rule. Long forms can also be predicates: do not infer an exceptionless word-position rule. Vocabulary glosses remain available as optional word-meaning practice and do not satisfy the grammar gate. Broader agreement and sentence-level predicate/attribute application remain pending. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+беж means beige and is an invariant colour adjective in the supplied source. Its short appearance does not make it a short adjective of the long/short new pair. It stays unchanged for case, gender and number.
+shippedText=беж means beige and is an invariant colour adjective in the supplied source. Its short appearance does not make it a short adjective of the long/short new pair. It stays unchanged for case, gender and number.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fee7856a831a736fd2fec826fdede2540573afe8177405c3219b0c07db01c252
+contentHash=795e6afbb116b568e6714493f9869b4149897a270d323bea95778d18b33dd106
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-adjective-u29-g-adjective-form-0-prompt`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 979298c718ad9e262a6da42daee3b330a7e5049cbcae24a284a230a75f6e6830
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective:u29-g-adjective-form-0-prompt
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, long/short declension table and qualifications before Comparison of adjectives. Immutable admitted short-form capability sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8 identifies the invariant beige and khaki forms, the supplied new long/short pair, and short forms in nominative/predicative use. Only the already admitted long new, short new and invariant beige forms are classified. Short adjectives vary for gender/number, not case; some adjectives lack short forms, and spelling/stress cannot be generated by a universal truncation rule. Long forms can also be predicates: do not infer an exceptionless word-position rule. Vocabulary glosses remain available as optional word-meaning practice and do not satisfy the grammar gate. Broader agreement and sentence-level predicate/attribute application remain pending. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+Which English grammatical explanation fits the shown adjective form?
+shippedText=Which English grammatical explanation fits the shown adjective form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7806697892e88cf768119f0fa72b415dc46af0ee695922508853424d0e45e1da
+contentHash=c27dfab85fc520ac27d072d0c1ef8335f4d8a247076dfdd81696252ee7d2f9bc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-adjective-u29-g-adjective-form-0-rationale-1`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a012e1f8c8a8fd9551b5e48bbe5db8153148454bc70f67e3d808b241716735c7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective:u29-g-adjective-form-0-rationale-1
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, long/short declension table and qualifications before Comparison of adjectives. Immutable admitted short-form capability sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8 identifies the invariant beige and khaki forms, the supplied new long/short pair, and short forms in nominative/predicative use. Only the already admitted long new, short new and invariant beige forms are classified. Short adjectives vary for gender/number, not case; some adjectives lack short forms, and spelling/stress cannot be generated by a universal truncation rule. Long forms can also be predicates: do not infer an exceptionless word-position rule. Vocabulary glosses remain available as optional word-meaning practice and do not satisfy the grammar gate. Broader agreement and sentence-level predicate/attribute application remain pending. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+The supplied long form is inflected for case, gender and number; this classification does not fit the displayed form.
+shippedText=The supplied long form is inflected for case, gender and number; this classification does not fit the displayed form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c41dd874efb269d33aa62bd819bccd3dba18d7e32fe5963ba10e0538a9426fb2
+contentHash=34347f2783e204674a8c178df8a9ea6cc0807405b6879587bdd4150f805864e4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-adjective-u29-g-adjective-form-0-rationale-2`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f77e538d4ac374f53aa8abfa199c0f9bd22128d070c9aa09a374e0b090d3dd2c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective:u29-g-adjective-form-0-rationale-2
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, long/short declension table and qualifications before Comparison of adjectives. Immutable admitted short-form capability sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8 identifies the invariant beige and khaki forms, the supplied new long/short pair, and short forms in nominative/predicative use. Only the already admitted long new, short new and invariant beige forms are classified. Short adjectives vary for gender/number, not case; some adjectives lack short forms, and spelling/stress cannot be generated by a universal truncation rule. Long forms can also be predicates: do not infer an exceptionless word-position rule. Vocabulary glosses remain available as optional word-meaning practice and do not satisfy the grammar gate. Broader agreement and sentence-level predicate/attribute application remain pending. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+The supplied short form is predicative and varies for gender/number, not case; this classification does not fit the displayed form.
+shippedText=The supplied short form is predicative and varies for gender/number, not case; this classification does not fit the displayed form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=76a9f690ec260c6b8d73ae0dd4ba35d5bea1b90a8e9f24907febd64024b9c399
+contentHash=34ae31eec7bee4fd626137cf8f73d2c35b156d9eafe2984e84f31ed1b1e883b0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-adjective-u29-g-short-adjective-0-feedback`
+
+- Objectives: obj-u29-adjective-vocabulary
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 977f3197a2aa67b99cfc22360c1afe0033ecc7f7e2426462556e203b9ba788df
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-adjective-vocabulary:adjective:u29-g-short-adjective-0-feedback
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, long/short declension table and qualifications before Comparison of adjectives. Immutable admitted short-form capability sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8 identifies the invariant beige and khaki forms, the supplied new long/short pair, and short forms in nominative/predicative use. Only the already admitted long new, short new and invariant beige forms are classified. Short adjectives vary for gender/number, not case; some adjectives lack short forms, and spelling/stress cannot be generated by a universal truncation rule. Long forms can also be predicates: do not infer an exceptionless word-position rule. Vocabulary glosses remain available as optional word-meaning practice and do not satisfy the grammar gate. Broader agreement and sentence-level predicate/attribute application remain pending. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+но́вый means new in the supplied example. This checks word meaning only; it does not demonstrate adjective form, agreement or sentence function.
+shippedText=но́вый means new in the supplied example. This checks word meaning only; it does not demonstrate adjective form, agreement or sentence function.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3071c38175c7ff991602e0d1b27e6ddd5884682d2645e7a6fc74328f07854344
+contentHash=8cd106907a6f7254da7e16d099aa5b976606d5bcdd1878c5cbecccc92e9f6269
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-adjective-u29-g-short-adjective-0-prompt`
+
+- Objectives: obj-u29-adjective-vocabulary
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8381e12754c0aa1cebc2e5a2e0ac5c76d1d2cb9f42ab46de997277a140660915
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-adjective-vocabulary:adjective:u29-g-short-adjective-0-prompt
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, long/short declension table and qualifications before Comparison of adjectives. Immutable admitted short-form capability sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8 identifies the invariant beige and khaki forms, the supplied new long/short pair, and short forms in nominative/predicative use. Only the already admitted long new, short new and invariant beige forms are classified. Short adjectives vary for gender/number, not case; some adjectives lack short forms, and spelling/stress cannot be generated by a universal truncation rule. Long forms can also be predicates: do not infer an exceptionless word-position rule. Vocabulary glosses remain available as optional word-meaning practice and do not satisfy the grammar gate. Broader agreement and sentence-level predicate/attribute application remain pending. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+Which English meaning matches the shown adjective?
+shippedText=Which English meaning matches the shown adjective?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=42cfbfda55cf90206cafa988016f7097ee5aa5420ec1b072485f67febdc45115
+contentHash=65edbcca6ec3b05e7f9a3935cca7c0536e9b986d6ce6adbe4d3104b6167729e1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-adjective-u29-g-short-adjective-0-rationale-1`
+
+- Objectives: obj-u29-adjective-vocabulary
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 04c1c9bfb725e846f2c15cd32e66bcf7d8a4ce3c7a037effe52a8c5b9f6541c3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-adjective-vocabulary:adjective:u29-g-short-adjective-0-rationale-1
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, long/short declension table and qualifications before Comparison of adjectives. Immutable admitted short-form capability sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8 identifies the invariant beige and khaki forms, the supplied new long/short pair, and short forms in nominative/predicative use. Only the already admitted long new, short new and invariant beige forms are classified. Short adjectives vary for gender/number, not case; some adjectives lack short forms, and spelling/stress cannot be generated by a universal truncation rule. Long forms can also be predicates: do not infer an exceptionless word-position rule. Vocabulary glosses remain available as optional word-meaning practice and do not satisfy the grammar gate. Broader agreement and sentence-level predicate/attribute application remain pending. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+beige is the meaning of a different supplied adjective, not this one.
+shippedText=beige is the meaning of a different supplied adjective, not this one.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=28a4a6c6f8daef58acacb5e205d3f89041add6623c05b54b48077a98f5e26c34
+contentHash=59cfe28dae8df96e44dcf344c17ec3f9044860b40a6720f7c51cb57150f48465
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-adjective-u29-g-short-adjective-0-rationale-2`
+
+- Objectives: obj-u29-adjective-vocabulary
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7636b42137f89a69bb0a6c9bda61a4676d6bde089a4c6477a4ad6529029dfcf0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-adjective-vocabulary:adjective:u29-g-short-adjective-0-rationale-2
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, long/short declension table and qualifications before Comparison of adjectives. Immutable admitted short-form capability sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8 identifies the invariant beige and khaki forms, the supplied new long/short pair, and short forms in nominative/predicative use. Only the already admitted long new, short new and invariant beige forms are classified. Short adjectives vary for gender/number, not case; some adjectives lack short forms, and spelling/stress cannot be generated by a universal truncation rule. Long forms can also be predicates: do not infer an exceptionless word-position rule. Vocabulary glosses remain available as optional word-meaning practice and do not satisfy the grammar gate. Broader agreement and sentence-level predicate/attribute application remain pending. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+khaki-colored is the meaning of a different supplied adjective, not this one.
+shippedText=khaki-colored is the meaning of a different supplied adjective, not this one.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6683d3bda4c6249655d02d4cd4afb43af5430d1726dafbd5faaacbfed6163623
+contentHash=e30e4073c0f5f56db7c66c473c932c5c2f8665f18a5cca6ca0cab3b4edd051a2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-adjective-u29-i-adjective-form-1-0`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2ca4e86790f72b8338f72b84295fe4eeac6fd81ad2c7cba6093336b753d0f776
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-i-adjective-form-1
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, long/short declension table and qualifications before Comparison of adjectives. Immutable admitted short-form capability sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8 identifies the invariant beige and khaki forms, the supplied new long/short pair, and short forms in nominative/predicative use. Only the already admitted long new, short new and invariant beige forms are classified. Short adjectives vary for gender/number, not case; some adjectives lack short forms, and spelling/stress cannot be generated by a universal truncation rule. Long forms can also be predicates: do not infer an exceptionless word-position rule. Vocabulary glosses remain available as optional word-meaning practice and do not satisfy the grammar gate. Broader agreement and sentence-level predicate/attribute application remain pending. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+нов means new and is the supplied masculine singular short adjective. In the taught modern use, short adjectives are predicative and occur only in the nominative. They vary for gender and number, not case. This is a grammatical distinction from the long form even though both mean new.
+Tuple-v1:tuple-v1:1;6:нов67:Short adjective form, used predicatively and not declined for case.2;61:Long adjective form, with case, gender and number inflection.66:Invariant colour adjective, unchanged for case, gender and number.
+shippedText=нов
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=924786f1419be0c9e7cb535401cb3e436131c828ce2d8fa23936b311d1a232c6
+contentHash=3ad3794cbd24fc246026b4f55ac401704eaee0758a8201a56f17336a32321745
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-adjective-u29-i-adjective-form-1-1`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d7c0ec0d08b1835c4b115b4a97d90477717d500f36e074f6f4d50280d2157e04
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-i-adjective-form-1
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, long/short declension table and qualifications before Comparison of adjectives. Immutable admitted short-form capability sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8 identifies the invariant beige and khaki forms, the supplied new long/short pair, and short forms in nominative/predicative use. Only the already admitted long new, short new and invariant beige forms are classified. Short adjectives vary for gender/number, not case; some adjectives lack short forms, and spelling/stress cannot be generated by a universal truncation rule. Long forms can also be predicates: do not infer an exceptionless word-position rule. Vocabulary glosses remain available as optional word-meaning practice and do not satisfy the grammar gate. Broader agreement and sentence-level predicate/attribute application remain pending. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+нов means new and is the supplied masculine singular short adjective. In the taught modern use, short adjectives are predicative and occur only in the nominative. They vary for gender and number, not case. This is a grammatical distinction from the long form even though both mean new.
+Tuple-v1:tuple-v1:1;6:нов67:Short adjective form, used predicatively and not declined for case.2;61:Long adjective form, with case, gender and number inflection.66:Invariant colour adjective, unchanged for case, gender and number.
+shippedText=Short adjective form, used predicatively and not declined for case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=924786f1419be0c9e7cb535401cb3e436131c828ce2d8fa23936b311d1a232c6
+contentHash=e457ea252286cd22acbd3cb0ebdc8d6e5588d2daeb0d18b66bfe2dea6d01594a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-adjective-u29-i-adjective-form-1-2`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fc48fa136e24670a829fff220553dc9b1c0ed386cf2367db71ce5f4d2f64b696
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-i-adjective-form-1
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, long/short declension table and qualifications before Comparison of adjectives. Immutable admitted short-form capability sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8 identifies the invariant beige and khaki forms, the supplied new long/short pair, and short forms in nominative/predicative use. Only the already admitted long new, short new and invariant beige forms are classified. Short adjectives vary for gender/number, not case; some adjectives lack short forms, and spelling/stress cannot be generated by a universal truncation rule. Long forms can also be predicates: do not infer an exceptionless word-position rule. Vocabulary glosses remain available as optional word-meaning practice and do not satisfy the grammar gate. Broader agreement and sentence-level predicate/attribute application remain pending. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+нов means new and is the supplied masculine singular short adjective. In the taught modern use, short adjectives are predicative and occur only in the nominative. They vary for gender and number, not case. This is a grammatical distinction from the long form even though both mean new.
+Tuple-v1:tuple-v1:1;6:нов67:Short adjective form, used predicatively and not declined for case.2;61:Long adjective form, with case, gender and number inflection.66:Invariant colour adjective, unchanged for case, gender and number.
+shippedText=Long adjective form, with case, gender and number inflection.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=924786f1419be0c9e7cb535401cb3e436131c828ce2d8fa23936b311d1a232c6
+contentHash=374483da96f25eb9a76b584dcb9c488594c56c3f551547550e0cc03646ff8ac1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-adjective-u29-i-adjective-form-1-3`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d25d36d736bdebcd45a02718ce33bb09f242971da51091b29103fd0f042a2c13
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-i-adjective-form-1
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, long/short declension table and qualifications before Comparison of adjectives. Immutable admitted short-form capability sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8 identifies the invariant beige and khaki forms, the supplied new long/short pair, and short forms in nominative/predicative use. Only the already admitted long new, short new and invariant beige forms are classified. Short adjectives vary for gender/number, not case; some adjectives lack short forms, and spelling/stress cannot be generated by a universal truncation rule. Long forms can also be predicates: do not infer an exceptionless word-position rule. Vocabulary glosses remain available as optional word-meaning practice and do not satisfy the grammar gate. Broader agreement and sentence-level predicate/attribute application remain pending. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+нов means new and is the supplied masculine singular short adjective. In the taught modern use, short adjectives are predicative and occur only in the nominative. They vary for gender and number, not case. This is a grammatical distinction from the long form even though both mean new.
+Tuple-v1:tuple-v1:1;6:нов67:Short adjective form, used predicatively and not declined for case.2;61:Long adjective form, with case, gender and number inflection.66:Invariant colour adjective, unchanged for case, gender and number.
+shippedText=Invariant colour adjective, unchanged for case, gender and number.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=924786f1419be0c9e7cb535401cb3e436131c828ce2d8fa23936b311d1a232c6
+contentHash=689bcab4dcfee55a1a12a3832374f70bd87cfa5b3813520a55934b337f918300
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-adjective-u29-i-adjective-form-1-feedback`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 49b26ed1e9bca4c5818bb12f65a42b88d8ba4380b75e8e3578e8f1db735df636
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective:u29-i-adjective-form-1-feedback
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, long/short declension table and qualifications before Comparison of adjectives. Immutable admitted short-form capability sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8 identifies the invariant beige and khaki forms, the supplied new long/short pair, and short forms in nominative/predicative use. Only the already admitted long new, short new and invariant beige forms are classified. Short adjectives vary for gender/number, not case; some adjectives lack short forms, and spelling/stress cannot be generated by a universal truncation rule. Long forms can also be predicates: do not infer an exceptionless word-position rule. Vocabulary glosses remain available as optional word-meaning practice and do not satisfy the grammar gate. Broader agreement and sentence-level predicate/attribute application remain pending. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+нов means new and is the supplied masculine singular short adjective. In the taught modern use, short adjectives are predicative and occur only in the nominative. They vary for gender and number, not case. This is a grammatical distinction from the long form even though both mean new.
+shippedText=нов means new and is the supplied masculine singular short adjective. In the taught modern use, short adjectives are predicative and occur only in the nominative. They vary for gender and number, not case. This is a grammatical distinction from the long form even though both mean new.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=94e5f74fa8519ca50d218636d0f740de3c9e0f56aa089d2d29522efdf34787b7
+contentHash=3888bf33f50b9f14571485807d1869c3709095840939a8102208a8817d952b16
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-adjective-u29-i-adjective-form-1-prompt`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f21b0ac57a9794e1265da8b65b54803654ba8c0ea69033c79ca5dc37037b97eb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective:u29-i-adjective-form-1-prompt
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, long/short declension table and qualifications before Comparison of adjectives. Immutable admitted short-form capability sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8 identifies the invariant beige and khaki forms, the supplied new long/short pair, and short forms in nominative/predicative use. Only the already admitted long new, short new and invariant beige forms are classified. Short adjectives vary for gender/number, not case; some adjectives lack short forms, and spelling/stress cannot be generated by a universal truncation rule. Long forms can also be predicates: do not infer an exceptionless word-position rule. Vocabulary glosses remain available as optional word-meaning practice and do not satisfy the grammar gate. Broader agreement and sentence-level predicate/attribute application remain pending. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+Which English grammatical explanation fits the shown adjective form?
+shippedText=Which English grammatical explanation fits the shown adjective form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7806697892e88cf768119f0fa72b415dc46af0ee695922508853424d0e45e1da
+contentHash=c27dfab85fc520ac27d072d0c1ef8335f4d8a247076dfdd81696252ee7d2f9bc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-adjective-u29-i-adjective-form-1-rationale-1`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1bbdfcd135237e8633b65e9eb3c04ec4a44cedcc33c79db853f371129e116097
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective:u29-i-adjective-form-1-rationale-1
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, long/short declension table and qualifications before Comparison of adjectives. Immutable admitted short-form capability sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8 identifies the invariant beige and khaki forms, the supplied new long/short pair, and short forms in nominative/predicative use. Only the already admitted long new, short new and invariant beige forms are classified. Short adjectives vary for gender/number, not case; some adjectives lack short forms, and spelling/stress cannot be generated by a universal truncation rule. Long forms can also be predicates: do not infer an exceptionless word-position rule. Vocabulary glosses remain available as optional word-meaning practice and do not satisfy the grammar gate. Broader agreement and sentence-level predicate/attribute application remain pending. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+The supplied long form is inflected for case, gender and number; this classification does not fit the displayed form.
+shippedText=The supplied long form is inflected for case, gender and number; this classification does not fit the displayed form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c41dd874efb269d33aa62bd819bccd3dba18d7e32fe5963ba10e0538a9426fb2
+contentHash=34347f2783e204674a8c178df8a9ea6cc0807405b6879587bdd4150f805864e4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-adjective-u29-i-adjective-form-1-rationale-2`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d67e5316558c6996bf8352371a8ce75d61a1b76ad95844061b3ee58e8d19e697
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective:u29-i-adjective-form-1-rationale-2
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, long/short declension table and qualifications before Comparison of adjectives. Immutable admitted short-form capability sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8 identifies the invariant beige and khaki forms, the supplied new long/short pair, and short forms in nominative/predicative use. Only the already admitted long new, short new and invariant beige forms are classified. Short adjectives vary for gender/number, not case; some adjectives lack short forms, and spelling/stress cannot be generated by a universal truncation rule. Long forms can also be predicates: do not infer an exceptionless word-position rule. Vocabulary glosses remain available as optional word-meaning practice and do not satisfy the grammar gate. Broader agreement and sentence-level predicate/attribute application remain pending. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+An invariant colour adjective does not vary for case, gender or number; the displayed form belongs to the supplied long/short pair instead.
+shippedText=An invariant colour adjective does not vary for case, gender or number; the displayed form belongs to the supplied long/short pair instead.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d50ac71796e9156a7cded20fed3b495cb133f62d591a7cc391f0ae0492c16de2
+contentHash=fbaa2239a6b419caf888222ca8dcb91b837d6de610c1c608c29c11f6ceda6c83
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-adjective-u29-i-adjective-form-2-0`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6de6c303dea2a09f1e68909500480320a87a7d83339099d96214de825d5bafe1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-i-adjective-form-2
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, long/short declension table and qualifications before Comparison of adjectives. Immutable admitted short-form capability sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8 identifies the invariant beige and khaki forms, the supplied new long/short pair, and short forms in nominative/predicative use. Only the already admitted long new, short new and invariant beige forms are classified. Short adjectives vary for gender/number, not case; some adjectives lack short forms, and spelling/stress cannot be generated by a universal truncation rule. Long forms can also be predicates: do not infer an exceptionless word-position rule. Vocabulary glosses remain available as optional word-meaning practice and do not satisfy the grammar gate. Broader agreement and sentence-level predicate/attribute application remain pending. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+но́вый means new and is the supplied long adjective form. Long adjectives have case, gender and number inflection; the supplied short counterpart has predicative use and no case paradigm. Long forms can also be predicates, so form classification alone does not choose the appropriate form for an unseen sentence.
+Tuple-v1:tuple-v1:1;12:но́вый61:Long adjective form, with case, gender and number inflection.2;67:Short adjective form, used predicatively and not declined for case.66:Invariant colour adjective, unchanged for case, gender and number.
+shippedText=но́вый
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3bc652e6baa33cec41c1601054f3e2cc687acd069c841bfdd6550b87c1293dac
+contentHash=2b2f765b2e162f149dfd5b622e4a7022f5890647a9ca269decb3b26d59321415
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-adjective-u29-i-adjective-form-2-1`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7611607da9414bcaa0b6a482666ac3ec717059aea8d15599a24747d1704f55b7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-i-adjective-form-2
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, long/short declension table and qualifications before Comparison of adjectives. Immutable admitted short-form capability sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8 identifies the invariant beige and khaki forms, the supplied new long/short pair, and short forms in nominative/predicative use. Only the already admitted long new, short new and invariant beige forms are classified. Short adjectives vary for gender/number, not case; some adjectives lack short forms, and spelling/stress cannot be generated by a universal truncation rule. Long forms can also be predicates: do not infer an exceptionless word-position rule. Vocabulary glosses remain available as optional word-meaning practice and do not satisfy the grammar gate. Broader agreement and sentence-level predicate/attribute application remain pending. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+но́вый means new and is the supplied long adjective form. Long adjectives have case, gender and number inflection; the supplied short counterpart has predicative use and no case paradigm. Long forms can also be predicates, so form classification alone does not choose the appropriate form for an unseen sentence.
+Tuple-v1:tuple-v1:1;12:но́вый61:Long adjective form, with case, gender and number inflection.2;67:Short adjective form, used predicatively and not declined for case.66:Invariant colour adjective, unchanged for case, gender and number.
+shippedText=Long adjective form, with case, gender and number inflection.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3bc652e6baa33cec41c1601054f3e2cc687acd069c841bfdd6550b87c1293dac
+contentHash=374483da96f25eb9a76b584dcb9c488594c56c3f551547550e0cc03646ff8ac1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-adjective-u29-i-adjective-form-2-2`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ee5e5661d281167245aa6bc8fa413ffd73d00f8bcae57ecb6ad278834ecccea7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-i-adjective-form-2
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, long/short declension table and qualifications before Comparison of adjectives. Immutable admitted short-form capability sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8 identifies the invariant beige and khaki forms, the supplied new long/short pair, and short forms in nominative/predicative use. Only the already admitted long new, short new and invariant beige forms are classified. Short adjectives vary for gender/number, not case; some adjectives lack short forms, and spelling/stress cannot be generated by a universal truncation rule. Long forms can also be predicates: do not infer an exceptionless word-position rule. Vocabulary glosses remain available as optional word-meaning practice and do not satisfy the grammar gate. Broader agreement and sentence-level predicate/attribute application remain pending. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+но́вый means new and is the supplied long adjective form. Long adjectives have case, gender and number inflection; the supplied short counterpart has predicative use and no case paradigm. Long forms can also be predicates, so form classification alone does not choose the appropriate form for an unseen sentence.
+Tuple-v1:tuple-v1:1;12:но́вый61:Long adjective form, with case, gender and number inflection.2;67:Short adjective form, used predicatively and not declined for case.66:Invariant colour adjective, unchanged for case, gender and number.
+shippedText=Short adjective form, used predicatively and not declined for case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3bc652e6baa33cec41c1601054f3e2cc687acd069c841bfdd6550b87c1293dac
+contentHash=e457ea252286cd22acbd3cb0ebdc8d6e5588d2daeb0d18b66bfe2dea6d01594a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-adjective-u29-i-adjective-form-2-3`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ba9de5586a700bd9ab7fb563e7853e07ddd763506467bdc54b9e687e86f77426
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u29-i-adjective-form-2
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, long/short declension table and qualifications before Comparison of adjectives. Immutable admitted short-form capability sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8 identifies the invariant beige and khaki forms, the supplied new long/short pair, and short forms in nominative/predicative use. Only the already admitted long new, short new and invariant beige forms are classified. Short adjectives vary for gender/number, not case; some adjectives lack short forms, and spelling/stress cannot be generated by a universal truncation rule. Long forms can also be predicates: do not infer an exceptionless word-position rule. Vocabulary glosses remain available as optional word-meaning practice and do not satisfy the grammar gate. Broader agreement and sentence-level predicate/attribute application remain pending. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+Context explanation:
+но́вый means new and is the supplied long adjective form. Long adjectives have case, gender and number inflection; the supplied short counterpart has predicative use and no case paradigm. Long forms can also be predicates, so form classification alone does not choose the appropriate form for an unseen sentence.
+Tuple-v1:tuple-v1:1;12:но́вый61:Long adjective form, with case, gender and number inflection.2;67:Short adjective form, used predicatively and not declined for case.66:Invariant colour adjective, unchanged for case, gender and number.
+shippedText=Invariant colour adjective, unchanged for case, gender and number.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3bc652e6baa33cec41c1601054f3e2cc687acd069c841bfdd6550b87c1293dac
+contentHash=689bcab4dcfee55a1a12a3832374f70bd87cfa5b3813520a55934b337f918300
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-adjective-u29-i-adjective-form-2-feedback`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 317d3c730a6e38485b3aa94ac40f561afdbe6f2f50d2f503fc6e2176425ac334
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective:u29-i-adjective-form-2-feedback
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, long/short declension table and qualifications before Comparison of adjectives. Immutable admitted short-form capability sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8 identifies the invariant beige and khaki forms, the supplied new long/short pair, and short forms in nominative/predicative use. Only the already admitted long new, short new and invariant beige forms are classified. Short adjectives vary for gender/number, not case; some adjectives lack short forms, and spelling/stress cannot be generated by a universal truncation rule. Long forms can also be predicates: do not infer an exceptionless word-position rule. Vocabulary glosses remain available as optional word-meaning practice and do not satisfy the grammar gate. Broader agreement and sentence-level predicate/attribute application remain pending. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+но́вый means new and is the supplied long adjective form. Long adjectives have case, gender and number inflection; the supplied short counterpart has predicative use and no case paradigm. Long forms can also be predicates, so form classification alone does not choose the appropriate form for an unseen sentence.
+shippedText=но́вый means new and is the supplied long adjective form. Long adjectives have case, gender and number inflection; the supplied short counterpart has predicative use and no case paradigm. Long forms can also be predicates, so form classification alone does not choose the appropriate form for an unseen sentence.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1adc48083ee9e5712aac0da384dd4764e1066bc306b08c2c65fd5c2074665c82
+contentHash=6d0aea26f29068dda88f6c32affb06eb05cb887c0a4cd8530dca75b2894ce98f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-adjective-u29-i-adjective-form-2-prompt`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5a6f58953c98b90b22ce6e9634ddf5b5c46df76be809bbbca22e155c5781b0d7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective:u29-i-adjective-form-2-prompt
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, long/short declension table and qualifications before Comparison of adjectives. Immutable admitted short-form capability sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8 identifies the invariant beige and khaki forms, the supplied new long/short pair, and short forms in nominative/predicative use. Only the already admitted long new, short new and invariant beige forms are classified. Short adjectives vary for gender/number, not case; some adjectives lack short forms, and spelling/stress cannot be generated by a universal truncation rule. Long forms can also be predicates: do not infer an exceptionless word-position rule. Vocabulary glosses remain available as optional word-meaning practice and do not satisfy the grammar gate. Broader agreement and sentence-level predicate/attribute application remain pending. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+Which English grammatical explanation fits the shown adjective form?
+shippedText=Which English grammatical explanation fits the shown adjective form?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7806697892e88cf768119f0fa72b415dc46af0ee695922508853424d0e45e1da
+contentHash=c27dfab85fc520ac27d072d0c1ef8335f4d8a247076dfdd81696252ee7d2f9bc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-adjective-u29-i-adjective-form-2-rationale-1`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ec7f6e050f87d7ad5733d4dfb72373dfd2cc36745e0039183a68441ddbfabb7f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective:u29-i-adjective-form-2-rationale-1
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, long/short declension table and qualifications before Comparison of adjectives. Immutable admitted short-form capability sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8 identifies the invariant beige and khaki forms, the supplied new long/short pair, and short forms in nominative/predicative use. Only the already admitted long new, short new and invariant beige forms are classified. Short adjectives vary for gender/number, not case; some adjectives lack short forms, and spelling/stress cannot be generated by a universal truncation rule. Long forms can also be predicates: do not infer an exceptionless word-position rule. Vocabulary glosses remain available as optional word-meaning practice and do not satisfy the grammar gate. Broader agreement and sentence-level predicate/attribute application remain pending. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+The supplied short form is predicative and varies for gender/number, not case; this classification does not fit the displayed form.
+shippedText=The supplied short form is predicative and varies for gender/number, not case; this classification does not fit the displayed form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=76a9f690ec260c6b8d73ae0dd4ba35d5bea1b90a8e9f24907febd64024b9c399
+contentHash=34ae31eec7bee4fd626137cf8f73d2c35b156d9eafe2984e84f31ed1b1e883b0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-adjective-u29-i-adjective-form-2-rationale-2`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2b6d769a3e10292362ed85f6deb95578faef63a229fe709dc40c0ca6f3947e8b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective:u29-i-adjective-form-2-rationale-2
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, long/short declension table and qualifications before Comparison of adjectives. Immutable admitted short-form capability sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8 identifies the invariant beige and khaki forms, the supplied new long/short pair, and short forms in nominative/predicative use. Only the already admitted long new, short new and invariant beige forms are classified. Short adjectives vary for gender/number, not case; some adjectives lack short forms, and spelling/stress cannot be generated by a universal truncation rule. Long forms can also be predicates: do not infer an exceptionless word-position rule. Vocabulary glosses remain available as optional word-meaning practice and do not satisfy the grammar gate. Broader agreement and sentence-level predicate/attribute application remain pending. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+An invariant colour adjective does not vary for case, gender or number; the displayed form belongs to the supplied long/short pair instead.
+shippedText=An invariant colour adjective does not vary for case, gender or number; the displayed form belongs to the supplied long/short pair instead.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d50ac71796e9156a7cded20fed3b495cb133f62d591a7cc391f0ae0492c16de2
+contentHash=fbaa2239a6b419caf888222ca8dcb91b837d6de610c1c608c29c11f6ceda6c83
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-adjective-u29-i-short-adjective-1-feedback`
+
+- Objectives: obj-u29-adjective-vocabulary
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fda1c108138e16513d21ddb78197336b35c4a9eb1e6f6c7f39190d753790566a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-adjective-vocabulary:adjective:u29-i-short-adjective-1-feedback
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, long/short declension table and qualifications before Comparison of adjectives. Immutable admitted short-form capability sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8 identifies the invariant beige and khaki forms, the supplied new long/short pair, and short forms in nominative/predicative use. Only the already admitted long new, short new and invariant beige forms are classified. Short adjectives vary for gender/number, not case; some adjectives lack short forms, and spelling/stress cannot be generated by a universal truncation rule. Long forms can also be predicates: do not infer an exceptionless word-position rule. Vocabulary glosses remain available as optional word-meaning practice and do not satisfy the grammar gate. Broader agreement and sentence-level predicate/attribute application remain pending. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+нов means new in the supplied example. This checks word meaning only; it does not demonstrate adjective form, agreement or sentence function.
+shippedText=нов means new in the supplied example. This checks word meaning only; it does not demonstrate adjective form, agreement or sentence function.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1a6982d4eec4ff58d524b4c07860adb43af22483fadcc4e884c18c42b3243e38
+contentHash=de4939b4cba562fde47c3fe6196021b66c929bd45f570de6bbb3eeaa8cccbef1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-adjective-u29-i-short-adjective-1-prompt`
+
+- Objectives: obj-u29-adjective-vocabulary
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 463b2d123978e4adfdb4daa5931c0c12c54c2935c9d6eb44cda28758dd5d8abe
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-adjective-vocabulary:adjective:u29-i-short-adjective-1-prompt
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, long/short declension table and qualifications before Comparison of adjectives. Immutable admitted short-form capability sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8 identifies the invariant beige and khaki forms, the supplied new long/short pair, and short forms in nominative/predicative use. Only the already admitted long new, short new and invariant beige forms are classified. Short adjectives vary for gender/number, not case; some adjectives lack short forms, and spelling/stress cannot be generated by a universal truncation rule. Long forms can also be predicates: do not infer an exceptionless word-position rule. Vocabulary glosses remain available as optional word-meaning practice and do not satisfy the grammar gate. Broader agreement and sentence-level predicate/attribute application remain pending. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+Which English meaning matches the shown adjective?
+shippedText=Which English meaning matches the shown adjective?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=42cfbfda55cf90206cafa988016f7097ee5aa5420ec1b072485f67febdc45115
+contentHash=65edbcca6ec3b05e7f9a3935cca7c0536e9b986d6ce6adbe4d3104b6167729e1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-adjective-u29-i-short-adjective-1-rationale-1`
+
+- Objectives: obj-u29-adjective-vocabulary
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7b78d7f626147a88893f11509c699db3468904d50b738f0e95d0aa76e1c0b104
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-adjective-vocabulary:adjective:u29-i-short-adjective-1-rationale-1
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, long/short declension table and qualifications before Comparison of adjectives. Immutable admitted short-form capability sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8 identifies the invariant beige and khaki forms, the supplied new long/short pair, and short forms in nominative/predicative use. Only the already admitted long new, short new and invariant beige forms are classified. Short adjectives vary for gender/number, not case; some adjectives lack short forms, and spelling/stress cannot be generated by a universal truncation rule. Long forms can also be predicates: do not infer an exceptionless word-position rule. Vocabulary glosses remain available as optional word-meaning practice and do not satisfy the grammar gate. Broader agreement and sentence-level predicate/attribute application remain pending. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+beige is the meaning of a different supplied adjective, not this one.
+shippedText=beige is the meaning of a different supplied adjective, not this one.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=28a4a6c6f8daef58acacb5e205d3f89041add6623c05b54b48077a98f5e26c34
+contentHash=59cfe28dae8df96e44dcf344c17ec3f9044860b40a6720f7c51cb57150f48465
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-adjective-u29-i-short-adjective-1-rationale-2`
+
+- Objectives: obj-u29-adjective-vocabulary
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e239cd9044de29904982d9ef2967f78c1267423a58ed13c311120257d67c3ba3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-adjective-vocabulary:adjective:u29-i-short-adjective-1-rationale-2
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, long/short declension table and qualifications before Comparison of adjectives. Immutable admitted short-form capability sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8 identifies the invariant beige and khaki forms, the supplied new long/short pair, and short forms in nominative/predicative use. Only the already admitted long new, short new and invariant beige forms are classified. Short adjectives vary for gender/number, not case; some adjectives lack short forms, and spelling/stress cannot be generated by a universal truncation rule. Long forms can also be predicates: do not infer an exceptionless word-position rule. Vocabulary glosses remain available as optional word-meaning practice and do not satisfy the grammar gate. Broader agreement and sentence-level predicate/attribute application remain pending. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+khaki-colored is the meaning of a different supplied adjective, not this one.
+shippedText=khaki-colored is the meaning of a different supplied adjective, not this one.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6683d3bda4c6249655d02d4cd4afb43af5430d1726dafbd5faaacbfed6163623
+contentHash=e30e4073c0f5f56db7c66c473c932c5c2f8665f18a5cca6ca0cab3b4edd051a2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-adjective-u29-i-short-adjective-2-feedback`
+
+- Objectives: obj-u29-adjective-vocabulary
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ac0a93b2de0d010ebe4623ac3509f4b746b63a911d261e33cd54c8a257762c2b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-adjective-vocabulary:adjective:u29-i-short-adjective-2-feedback
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, long/short declension table and qualifications before Comparison of adjectives. Immutable admitted short-form capability sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8 identifies the invariant beige and khaki forms, the supplied new long/short pair, and short forms in nominative/predicative use. Only the already admitted long new, short new and invariant beige forms are classified. Short adjectives vary for gender/number, not case; some adjectives lack short forms, and spelling/stress cannot be generated by a universal truncation rule. Long forms can also be predicates: do not infer an exceptionless word-position rule. Vocabulary glosses remain available as optional word-meaning practice and do not satisfy the grammar gate. Broader agreement and sentence-level predicate/attribute application remain pending. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+беж means beige in the supplied example. This checks word meaning only; it does not demonstrate adjective form, agreement or sentence function.
+shippedText=беж means beige in the supplied example. This checks word meaning only; it does not demonstrate adjective form, agreement or sentence function.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2aad02e618936b245eea2adadce5d552f25159af3902ef0cb69b4056dfba77fd
+contentHash=cade2a55d334553e76fd7b850b5dc76725336bfcec27f473d118b30c004837b1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-adjective-u29-i-short-adjective-2-prompt`
+
+- Objectives: obj-u29-adjective-vocabulary
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bbef25fc81ec64bad28258c8632e257769df254a4b136cb138cad2bca45553c2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-adjective-vocabulary:adjective:u29-i-short-adjective-2-prompt
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, long/short declension table and qualifications before Comparison of adjectives. Immutable admitted short-form capability sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8 identifies the invariant beige and khaki forms, the supplied new long/short pair, and short forms in nominative/predicative use. Only the already admitted long new, short new and invariant beige forms are classified. Short adjectives vary for gender/number, not case; some adjectives lack short forms, and spelling/stress cannot be generated by a universal truncation rule. Long forms can also be predicates: do not infer an exceptionless word-position rule. Vocabulary glosses remain available as optional word-meaning practice and do not satisfy the grammar gate. Broader agreement and sentence-level predicate/attribute application remain pending. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+Which English meaning matches the shown adjective?
+shippedText=Which English meaning matches the shown adjective?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=42cfbfda55cf90206cafa988016f7097ee5aa5420ec1b072485f67febdc45115
+contentHash=65edbcca6ec3b05e7f9a3935cca7c0536e9b986d6ce6adbe4d3104b6167729e1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-adjective-u29-i-short-adjective-2-rationale-1`
+
+- Objectives: obj-u29-adjective-vocabulary
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 164b60fb4979ee449b3b8346e057fe464e73846a932e7e31f70d6c176ebd7524
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-adjective-vocabulary:adjective:u29-i-short-adjective-2-rationale-1
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, long/short declension table and qualifications before Comparison of adjectives. Immutable admitted short-form capability sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8 identifies the invariant beige and khaki forms, the supplied new long/short pair, and short forms in nominative/predicative use. Only the already admitted long new, short new and invariant beige forms are classified. Short adjectives vary for gender/number, not case; some adjectives lack short forms, and spelling/stress cannot be generated by a universal truncation rule. Long forms can also be predicates: do not infer an exceptionless word-position rule. Vocabulary glosses remain available as optional word-meaning practice and do not satisfy the grammar gate. Broader agreement and sentence-level predicate/attribute application remain pending. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+new is the meaning of a different supplied adjective, not this one.
+shippedText=new is the meaning of a different supplied adjective, not this one.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=91b616eeb651bd449afe1a7c2de310a69e94a34c96d5bac32cdce88ab67f8e61
+contentHash=ef5b3a5d57ae73e9d6f46f02ee254f97e229fc616048c5129450e5a2941165d5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-adjective-u29-i-short-adjective-2-rationale-2`
+
+- Objectives: obj-u29-adjective-vocabulary
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fc9261a4c8fe16803195c3ce6981d92dffafb186f1a70b63161db21d158a567b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-adjective-vocabulary:adjective:u29-i-short-adjective-2-rationale-2
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, long/short declension table and qualifications before Comparison of adjectives. Immutable admitted short-form capability sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8 identifies the invariant beige and khaki forms, the supplied new long/short pair, and short forms in nominative/predicative use. Only the already admitted long new, short new and invariant beige forms are classified. Short adjectives vary for gender/number, not case; some adjectives lack short forms, and spelling/stress cannot be generated by a universal truncation rule. Long forms can also be predicates: do not infer an exceptionless word-position rule. Vocabulary glosses remain available as optional word-meaning practice and do not satisfy the grammar gate. Broader agreement and sentence-level predicate/attribute application remain pending. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+khaki-colored is the meaning of a different supplied adjective, not this one.
+shippedText=khaki-colored is the meaning of a different supplied adjective, not this one.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6683d3bda4c6249655d02d4cd4afb43af5430d1726dafbd5faaacbfed6163623
+contentHash=e30e4073c0f5f56db7c66c473c932c5c2f8665f18a5cca6ca0cab3b4edd051a2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-adjective-u29-st-rem-short-adjective-body`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3c6a307e113c86ab2f80c5105ab1264dfb0eedd76565664477a93401132e1ed6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective:u29-st-rem-short-adjective-body
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, long/short declension table and qualifications before Comparison of adjectives. Immutable admitted short-form capability sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8 identifies the invariant beige and khaki forms, the supplied new long/short pair, and short forms in nominative/predicative use. Only the already admitted long new, short new and invariant beige forms are classified. Short adjectives vary for gender/number, not case; some adjectives lack short forms, and spelling/stress cannot be generated by a universal truncation rule. Long forms can also be predicates: do not infer an exceptionless word-position rule. Vocabulary glosses remain available as optional word-meaning practice and do not satisfy the grammar gate. Broader agreement and sentence-level predicate/attribute application remain pending. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+The retained но́вый and нов both mean new. The first is the long form and the second is the masculine singular short form. The grammatical check asks which form is shown, rather than its English gloss. Long adjectives have case, gender and number inflection; short adjectives vary for gender and number, not case. The retained examples are recognition targets, not a universal rule for producing short forms by removing endings.
+
+In the taught modern use, short adjectives occur only in the nominative and are used predicatively to describe their subject. A long adjective often describes a noun attributively and can also be a predicate. The choice depends on the sentence, not a universal rule about one fixed word position. The isolated pair does not provide a complete context for selecting every long-versus-short form; broader agreement and sentence-level application remain pending.
+
+The retained беж means beige and is an invariant colour form, unchanged for case, gender and number. Its short appearance does not make it the short counterpart of но́вый. Keep lexical meaning, inflection and adjective function separate. The correct glosses remain in Vocabulary Lab as word-meaning practice; they do not satisfy the independent adjective grammar checks.
+shippedText=The retained но́вый and нов both mean new. The first is the long form and the second is the masculine singular short form. The grammatical check asks which form is shown, rather than its English gloss. Long adjectives have case, gender and number inflection; short adjectives vary for gender and number, not case. The retained examples are recognition targets, not a universal rule for producing short forms by removing endings.
+
+In the taught modern use, short adjectives occur only in the nominative and are used predicatively to describe their subject. A long adjective often describes a noun attributively and can also be a predicate. The choice depends on the sentence, not a universal rule about one fixed word position. The isolated pair does not provide a complete context for selecting every long-versus-short form; broader agreement and sentence-level application remain pending.
+
+The retained беж means beige and is an invariant colour form, unchanged for case, gender and number. Its short appearance does not make it the short counterpart of но́вый. Keep lexical meaning, inflection and adjective function separate. The correct glosses remain in Vocabulary Lab as word-meaning practice; they do not satisfy the independent adjective grammar checks.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=05a3524a723daa7be33303636b466750a475b0a0198639db169bd01ddaf21d41
+contentHash=a88e8b023f457eea5ea85ab8d1611faa8273adf5c8d4b366a677e113e762f3c5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-adjective-u29-st-teach-short-adjective-1-body`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c1fe9ad24e4f62fe5befbd91947f3d4315f931c115db233cfcfbeb6623adad95
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective:u29-st-teach-short-adjective-1-body
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, long/short declension table and qualifications before Comparison of adjectives. Immutable admitted short-form capability sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8 identifies the invariant beige and khaki forms, the supplied new long/short pair, and short forms in nominative/predicative use. Only the already admitted long new, short new and invariant beige forms are classified. Short adjectives vary for gender/number, not case; some adjectives lack short forms, and spelling/stress cannot be generated by a universal truncation rule. Long forms can also be predicates: do not infer an exceptionless word-position rule. Vocabulary glosses remain available as optional word-meaning practice and do not satisfy the grammar gate. Broader agreement and sentence-level predicate/attribute application remain pending. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+The retained но́вый and нов both mean new. The first is the long form and the second is the masculine singular short form. The grammatical check asks which form is shown, rather than its English gloss. Long adjectives have case, gender and number inflection; short adjectives vary for gender and number, not case. The retained examples are recognition targets, not a universal rule for producing short forms by removing endings.
+shippedText=The retained но́вый and нов both mean new. The first is the long form and the second is the masculine singular short form. The grammatical check asks which form is shown, rather than its English gloss. Long adjectives have case, gender and number inflection; short adjectives vary for gender and number, not case. The retained examples are recognition targets, not a universal rule for producing short forms by removing endings.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d98baac7aa30013e68112bc69baa2ee9500ba9ccfe5de483450b43e165dd84b2
+contentHash=8baf0c2d6b398af23b57c5e477c794dfb56968122b2e86a045b822692d0caabd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-adjective-u29-st-teach-short-adjective-2-body`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7800d4467466427470ecb69453232723c0509233e746314bdd0239046d59232b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective:u29-st-teach-short-adjective-2-body
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, long/short declension table and qualifications before Comparison of adjectives. Immutable admitted short-form capability sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8 identifies the invariant beige and khaki forms, the supplied new long/short pair, and short forms in nominative/predicative use. Only the already admitted long new, short new and invariant beige forms are classified. Short adjectives vary for gender/number, not case; some adjectives lack short forms, and spelling/stress cannot be generated by a universal truncation rule. Long forms can also be predicates: do not infer an exceptionless word-position rule. Vocabulary glosses remain available as optional word-meaning practice and do not satisfy the grammar gate. Broader agreement and sentence-level predicate/attribute application remain pending. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+In the taught modern use, short adjectives occur only in the nominative and are used predicatively to describe their subject. A long adjective often describes a noun attributively and can also be a predicate. The choice depends on the sentence, not a universal rule about one fixed word position. The isolated pair does not provide a complete context for selecting every long-versus-short form; broader agreement and sentence-level application remain pending.
+shippedText=In the taught modern use, short adjectives occur only in the nominative and are used predicatively to describe their subject. A long adjective often describes a noun attributively and can also be a predicate. The choice depends on the sentence, not a universal rule about one fixed word position. The isolated pair does not provide a complete context for selecting every long-versus-short form; broader agreement and sentence-level application remain pending.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=29204a634ec8c4478236b81f9ed362c3cdd0fed2ee22aead7ebf028ea4205955
+contentHash=f4ffc7627e436330207d0d6defda4f30cdb3b9ac3138e92dc985343bef7b1e1a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-adjective-u29-st-teach-short-adjective-3-body`
+
+- Objectives: obj-u29-short-adjective
+- Sessions: u29-s-orient, u29-s-short-adjective
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3179810522949ab07ddc9f38040d3b3a8e3621854b5fc55dcfda94372dbb22f5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-short-adjective:adjective:u29-st-teach-short-adjective-3-body
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, long/short declension table and qualifications before Comparison of adjectives. Immutable admitted short-form capability sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8 identifies the invariant beige and khaki forms, the supplied new long/short pair, and short forms in nominative/predicative use. Only the already admitted long new, short new and invariant beige forms are classified. Short adjectives vary for gender/number, not case; some adjectives lack short forms, and spelling/stress cannot be generated by a universal truncation rule. Long forms can also be predicates: do not infer an exceptionless word-position rule. Vocabulary glosses remain available as optional word-meaning practice and do not satisfy the grammar gate. Broader agreement and sentence-level predicate/attribute application remain pending. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+The retained беж means beige and is an invariant colour form, unchanged for case, gender and number. Its short appearance does not make it the short counterpart of но́вый. Keep lexical meaning, inflection and adjective function separate. The correct glosses remain in Vocabulary Lab as word-meaning practice; they do not satisfy the independent adjective grammar checks.
+shippedText=The retained беж means beige and is an invariant colour form, unchanged for case, gender and number. Its short appearance does not make it the short counterpart of но́вый. Keep lexical meaning, inflection and adjective function separate. The correct glosses remain in Vocabulary Lab as word-meaning practice; they do not satisfy the independent adjective grammar checks.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7e1932bc1f058499a50b18b9e9974db4ebf857594964a548f5e4a1bcb7d624d6
+contentHash=a2b78c3937065cd032cdea8e55fb579ec60252005cfa33031a45f24d42d7e77f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-adjective-vocabulary-objective-title`
+
+- Objectives: obj-u29-adjective-vocabulary
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8505ac406551ee968d63e2b866255701da1c61941d1cfa5bf592ce6c65e4dac0
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-adjective-vocabulary:adjective:vocabulary-objective-title
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, long/short declension table and qualifications before Comparison of adjectives. Immutable admitted short-form capability sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8 identifies the invariant beige and khaki forms, the supplied new long/short pair, and short forms in nominative/predicative use. Only the already admitted long new, short new and invariant beige forms are classified. Short adjectives vary for gender/number, not case; some adjectives lack short forms, and spelling/stress cannot be generated by a universal truncation rule. Long forms can also be predicates: do not infer an exceptionless word-position rule. Vocabulary glosses remain available as optional word-meaning practice and do not satisfy the grammar gate. Broader agreement and sentence-level predicate/attribute application remain pending. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+Optional Vocabulary Lab: supplied adjective meanings
+shippedText=Optional Vocabulary Lab: supplied adjective meanings
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=62a68ecaba8bf1911422c8e8d6ada43d69ecfb6bf10194317905463bfe4235ea
+contentHash=a842e9f10721c469eea15551181e82e35025c3714cd53ec5bf5dfc946cd1e122
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-adjective-vocabulary-u29-st-teach-short-adjective-1-body`
+
+- Objectives: obj-u29-adjective-vocabulary
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fb8ebf617f420a44b515272bf84a798350e2f2604893d7339e03eb80474a6295
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-adjective-vocabulary:adjective:vocabulary-u29-st-teach-short-adjective-1-body
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, long/short declension table and qualifications before Comparison of adjectives. Immutable admitted short-form capability sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8 identifies the invariant beige and khaki forms, the supplied new long/short pair, and short forms in nominative/predicative use. Only the already admitted long new, short new and invariant beige forms are classified. Short adjectives vary for gender/number, not case; some adjectives lack short forms, and spelling/stress cannot be generated by a universal truncation rule. Long forms can also be predicates: do not infer an exceptionless word-position rule. Vocabulary glosses remain available as optional word-meaning practice and do not satisfy the grammar gate. Broader agreement and sentence-level predicate/attribute application remain pending. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+The retained но́вый and нов both mean new. The first is the long form and the second is the masculine singular short form. The grammatical check asks which form is shown, rather than its English gloss. Long adjectives have case, gender and number inflection; short adjectives vary for gender and number, not case. The retained examples are recognition targets, not a universal rule for producing short forms by removing endings.
+shippedText=The retained но́вый and нов both mean new. The first is the long form and the second is the masculine singular short form. The grammatical check asks which form is shown, rather than its English gloss. Long adjectives have case, gender and number inflection; short adjectives vary for gender and number, not case. The retained examples are recognition targets, not a universal rule for producing short forms by removing endings.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d98baac7aa30013e68112bc69baa2ee9500ba9ccfe5de483450b43e165dd84b2
+contentHash=8baf0c2d6b398af23b57c5e477c794dfb56968122b2e86a045b822692d0caabd
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-adjective-vocabulary-u29-st-teach-short-adjective-2-body`
+
+- Objectives: obj-u29-adjective-vocabulary
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7e7abfb0a7ba12b0bc6ad521a21e5181a3963f7551e23a9d643280af76ffc5af
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-adjective-vocabulary:adjective:vocabulary-u29-st-teach-short-adjective-2-body
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, long/short declension table and qualifications before Comparison of adjectives. Immutable admitted short-form capability sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8 identifies the invariant beige and khaki forms, the supplied new long/short pair, and short forms in nominative/predicative use. Only the already admitted long new, short new and invariant beige forms are classified. Short adjectives vary for gender/number, not case; some adjectives lack short forms, and spelling/stress cannot be generated by a universal truncation rule. Long forms can also be predicates: do not infer an exceptionless word-position rule. Vocabulary glosses remain available as optional word-meaning practice and do not satisfy the grammar gate. Broader agreement and sentence-level predicate/attribute application remain pending. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+In the taught modern use, short adjectives occur only in the nominative and are used predicatively to describe their subject. A long adjective often describes a noun attributively and can also be a predicate. The choice depends on the sentence, not a universal rule about one fixed word position. The isolated pair does not provide a complete context for selecting every long-versus-short form; broader agreement and sentence-level application remain pending.
+shippedText=In the taught modern use, short adjectives occur only in the nominative and are used predicatively to describe their subject. A long adjective often describes a noun attributively and can also be a predicate. The choice depends on the sentence, not a universal rule about one fixed word position. The isolated pair does not provide a complete context for selecting every long-versus-short form; broader agreement and sentence-level application remain pending.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=29204a634ec8c4478236b81f9ed362c3cdd0fed2ee22aead7ebf028ea4205955
+contentHash=f4ffc7627e436330207d0d6defda4f30cdb3b9ac3138e92dc985343bef7b1e1a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u29-adjective-vocabulary-u29-st-teach-short-adjective-3-body`
+
+- Objectives: obj-u29-adjective-vocabulary
+- Sessions: none
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0bc1c2c2bcb781ba7dbbc5afa98497222417fdd056d165aa7767687e0fec6ee2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u29-adjective-vocabulary:adjective:vocabulary-u29-st-teach-short-adjective-3-body
+originalSourceText=Retained Wikipedia Russian grammar oldid1369617627, catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt, CC BY-SA 4.0 under retained FREEZE rights attestation: complete Adjectives introduction, long/short declension table and qualifications before Comparison of adjectives. Immutable admitted short-form capability sourceHash0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8 identifies the invariant beige and khaki forms, the supplied new long/short pair, and short forms in nominative/predicative use. Only the already admitted long new, short new and invariant beige forms are classified. Short adjectives vary for gender/number, not case; some adjectives lack short forms, and spelling/stress cannot be generated by a universal truncation rule. Long forms can also be predicates: do not infer an exceptionless word-position rule. Vocabulary glosses remain available as optional word-meaning practice and do not satisfy the grammar gate. Broader agreement and sentence-level predicate/attribute application remain pending. Independently authored English on 2026-10-13 within content-audit-2026-10-08; no new Russian forms, copied primary prose or private Penguin text; qualified semantic audit pending.
+The retained беж means beige and is an invariant colour form, unchanged for case, gender and number. Its short appearance does not make it the short counterpart of но́вый. Keep lexical meaning, inflection and adjective function separate. The correct glosses remain in Vocabulary Lab as word-meaning practice; they do not satisfy the independent adjective grammar checks.
+shippedText=The retained беж means beige and is an invariant colour form, unchanged for case, gender and number. Its short appearance does not make it the short counterpart of но́вый. Keep lexical meaning, inflection and adjective function separate. The correct glosses remain in Vocabulary Lab as word-meaning practice; they do not satisfy the independent adjective grammar checks.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7e1932bc1f058499a50b18b9e9974db4ebf857594964a548f5e4a1bcb7d624d6
+contentHash=a2b78c3937065cd032cdea8e55fb579ec60252005cfa33031a45f24d42d7e77f
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -11398,6 +12829,180 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-u29-vocabulary-prov-ex-u29-short-adjective-0-en`
+
+- Objectives: obj-u29-adjective-vocabulary
+- Sessions: none
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e5685b9f2974acc77fc0fcc1980b7e2ef3c109a8bb323566be12e13521bd5282
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:such as {{wikt-lang|ru|беж}} ('beige', non-adapted form of {{wikt-lang|ru|бе́жев
+originalSourceText=such as {{wikt-lang|ru|беж}} ('beige', non-adapted form of {{wikt-lang|ru|бе́жевый}}) or {{lang|ru|ха́ки}} ('khaki-colored'), most adjectives follow one of a small number of regular declension patterns (except for some that complicate the {{wikt-lang|en|short form}}). In modern Russian, the short form appears only in the nominative and is used when the adjective is in a [[predicate (grammar)|predicative]] role: {{lang|ru|нов, нова́, но́во, новы́}} are short forms of {{lang|ru|но́вый}} ('new').
+shippedText=new
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8
+contentHash=11507a0e2f5e69d5dfa40a62a1bd7b6ee57e6bcd85c67c9b8431b36fff21c437
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-vocabulary-prov-ex-u29-short-adjective-0-ru`
+
+- Objectives: obj-u29-adjective-vocabulary
+- Sessions: none
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2dc131484692577addf0e5fbf7655b581d42b2f37d4506ce4e0dbc10a75a573d
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:such as {{wikt-lang|ru|беж}} ('beige', non-adapted form of {{wikt-lang|ru|бе́жев
+originalSourceText=such as {{wikt-lang|ru|беж}} ('beige', non-adapted form of {{wikt-lang|ru|бе́жевый}}) or {{lang|ru|ха́ки}} ('khaki-colored'), most adjectives follow one of a small number of regular declension patterns (except for some that complicate the {{wikt-lang|en|short form}}). In modern Russian, the short form appears only in the nominative and is used when the adjective is in a [[predicate (grammar)|predicative]] role: {{lang|ru|нов, нова́, но́во, новы́}} are short forms of {{lang|ru|но́вый}} ('new').
+shippedText=но́вый
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8
+contentHash=2b2f765b2e162f149dfd5b622e4a7022f5890647a9ca269decb3b26d59321415
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-vocabulary-prov-ex-u29-short-adjective-1-ru`
+
+- Objectives: obj-u29-adjective-vocabulary
+- Sessions: none
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 18a8b98cf05ca7b8bb61dec97aee00bae72af94c77f99eb488903efb4b3df635
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:such as {{wikt-lang|ru|беж}} ('beige', non-adapted form of {{wikt-lang|ru|бе́жев
+originalSourceText=such as {{wikt-lang|ru|беж}} ('beige', non-adapted form of {{wikt-lang|ru|бе́жевый}}) or {{lang|ru|ха́ки}} ('khaki-colored'), most adjectives follow one of a small number of regular declension patterns (except for some that complicate the {{wikt-lang|en|short form}}). In modern Russian, the short form appears only in the nominative and is used when the adjective is in a [[predicate (grammar)|predicative]] role: {{lang|ru|нов, нова́, но́во, новы́}} are short forms of {{lang|ru|но́вый}} ('new').
+shippedText=нов
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8
+contentHash=3ad3794cbd24fc246026b4f55ac401704eaee0758a8201a56f17336a32321745
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-vocabulary-prov-ex-u29-short-adjective-2-en`
+
+- Objectives: obj-u29-adjective-vocabulary
+- Sessions: none
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4bcaae4d97061cb572c6bf32389a57d6f21f62b1e8c324c628aafff753983d7d
+
+recordType=meaning
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:such as {{wikt-lang|ru|беж}} ('beige', non-adapted form of {{wikt-lang|ru|бе́жев
+originalSourceText=such as {{wikt-lang|ru|беж}} ('beige', non-adapted form of {{wikt-lang|ru|бе́жевый}}) or {{lang|ru|ха́ки}} ('khaki-colored'), most adjectives follow one of a small number of regular declension patterns (except for some that complicate the {{wikt-lang|en|short form}}). In modern Russian, the short form appears only in the nominative and is used when the adjective is in a [[predicate (grammar)|predicative]] role: {{lang|ru|нов, нова́, но́во, новы́}} are short forms of {{lang|ru|но́вый}} ('new').
+shippedText=beige
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8
+contentHash=b4f0534e651ac8d5e10d95ddfcafdb123550a5e3185e3fe61ec1746a7222a88e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-vocabulary-prov-ex-u29-short-adjective-2-ru`
+
+- Objectives: obj-u29-adjective-vocabulary
+- Sessions: none
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 17a32e679f869d36fab1ee011a05ef5b2fa421769059f08bf6b91d3e7b66a599
+
+recordType=example
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:such as {{wikt-lang|ru|беж}} ('beige', non-adapted form of {{wikt-lang|ru|бе́жев
+originalSourceText=such as {{wikt-lang|ru|беж}} ('beige', non-adapted form of {{wikt-lang|ru|бе́жевый}}) or {{lang|ru|ха́ки}} ('khaki-colored'), most adjectives follow one of a small number of regular declension patterns (except for some that complicate the {{wikt-lang|en|short form}}). In modern Russian, the short form appears only in the nominative and is used when the adjective is in a [[predicate (grammar)|predicative]] role: {{lang|ru|нов, нова́, но́во, новы́}} are short forms of {{lang|ru|но́вый}} ('new').
+shippedText=беж
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8
+contentHash=7e7bdbcd586e76916429c3e938a66eb72771755d3b5961b9c8ed5e9db3f3ffb4
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u29-vocabulary-prov-u29-short-adjective-x-0`
+
+- Objectives: obj-u29-adjective-vocabulary
+- Sessions: none
+- Source: src-wikipedia-russian-grammar-1369617627
+- Rights: rights-wikipedia-russian-grammar-1369617627
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fd2265fcd07c6231ef3b580a947fe1db122578af2d2cef21bbdb020a7fa9f8ce
+
+recordType=label
+sourceUrl=https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627
+sourceRevision=1369617627
+sourceRecordId=grammar:such as {{wikt-lang|ru|беж}} ('beige', non-adapted form of {{wikt-lang|ru|бе́жев
+originalSourceText=such as {{wikt-lang|ru|беж}} ('beige', non-adapted form of {{wikt-lang|ru|бе́жевый}}) or {{lang|ru|ха́ки}} ('khaki-colored'), most adjectives follow one of a small number of regular declension patterns (except for some that complicate the {{wikt-lang|en|short form}}). In modern Russian, the short form appears only in the nominative and is used when the adjective is in a [[predicate (grammar)|predicative]] role: {{lang|ru|нов, нова́, но́во, новы́}} are short forms of {{lang|ru|но́вый}} ('new').
+shippedText=khaki-colored
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8
+contentHash=28b780920257464a195d68ccdab3e56274481e11d6b14ed275f5274c95603005
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### AUTHORED_ENGLISH `en-ca-29-11309`
 
 - Objectives: none
@@ -12995,8 +14600,8 @@ permitsAppUse=true
 - `obj-u29-short-adjective` EXAMPLE `ex-u29-short-adjective-1`
 - `obj-u29-short-adjective` EXAMPLE `ex-u29-short-adjective-2`
 - `obj-u29-short-adjective` PRACTICE `u29-st-guided-short-adjective-1`
-- `obj-u29-short-adjective` CHECK `u29-i-short-adjective-1`
-- `obj-u29-short-adjective` CHECK `u29-i-short-adjective-2`
+- `obj-u29-short-adjective` CHECK `u29-i-adjective-form-1`
+- `obj-u29-short-adjective` CHECK `u29-i-adjective-form-2`
 - `obj-u29-short-adjective` REMEDIATION `u29-st-rem-short-adjective`
 - `obj-u29-bookish-note` INSTRUCTION `u29-st-orient`
 - `obj-u29-bookish-note` INSTRUCTION `u29-st-teach-bookish-note-1`
@@ -13040,6 +14645,9 @@ permitsAppUse=true
 - `obj-u29-reading` CHECK `u29-i-reading-2`
 - `obj-u29-reading` CHECK `u29-i-reading-3`
 - `obj-u29-reading` REMEDIATION `u29-reading-remediate`
+- `obj-u29-adjective-vocabulary` INSTRUCTION `u29-st-teach-short-adjective-1`
+- `obj-u29-adjective-vocabulary` INSTRUCTION `u29-st-teach-short-adjective-2`
+- `obj-u29-adjective-vocabulary` INSTRUCTION `u29-st-teach-short-adjective-3`
 - `u29-s-orient` OBJECTIVE `obj-u29-active`
 - `u29-s-orient` OBJECTIVE `obj-u29-short-adjective`
 - `u29-s-orient` OBJECTIVE `obj-u29-bookish-note`
@@ -13069,13 +14677,13 @@ permitsAppUse=true
 - `u29-st-teach-short-adjective-3` EXAMPLE `ex-u29-short-adjective-2`
 - `u29-st-teach-short-adjective-3` REFERENCE `ref-u2630-attribution`
 - `u29-st-guided-short-adjective-1` REMEDIATION `u29-st-rem-short-adjective`
-- `u29-st-guided-short-adjective-1` ITEM `u29-g-short-adjective-0`
+- `u29-st-guided-short-adjective-1` ITEM `u29-g-adjective-form-0`
 - `u29-st-rem-short-adjective` EXAMPLE `ex-u29-short-adjective-0`
 - `u29-st-rem-short-adjective` EXAMPLE `ex-u29-short-adjective-1`
 - `u29-st-rem-short-adjective` EXAMPLE `ex-u29-short-adjective-2`
 - `u29-st-check-short-adjective` REMEDIATION `u29-st-rem-short-adjective`
-- `u29-st-check-short-adjective` ITEM `u29-i-short-adjective-1`
-- `u29-st-check-short-adjective` ITEM `u29-i-short-adjective-2`
+- `u29-st-check-short-adjective` ITEM `u29-i-adjective-form-1`
+- `u29-st-check-short-adjective` ITEM `u29-i-adjective-form-2`
 - `u29-s-bookish-note` OBJECTIVE `obj-u29-bookish-note`
 - `u29-st-teach-bookish-note-1` EXAMPLE `ex-u29-bookish-note-0`
 - `u29-st-teach-bookish-note-1` EXAMPLE `ex-u29-bookish-note-1`
@@ -13144,6 +14752,52 @@ permitsAppUse=true
 - `obj-u29-short-adjective` PROVENANCE `prov-ca-29-378`
 - `obj-u29-active` PROVENANCE `prov-ca-29-625`
 - `obj-u29-active` PROVENANCE `prov-ca-29-626`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-adjective-objective-title`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-adjective-session-title`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-adjective-u29-g-adjective-form-0-0`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-adjective-u29-g-adjective-form-0-1`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-adjective-u29-g-adjective-form-0-2`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-adjective-u29-g-adjective-form-0-3`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-adjective-u29-g-adjective-form-0-feedback`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-adjective-u29-g-adjective-form-0-prompt`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-adjective-u29-g-adjective-form-0-rationale-1`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-adjective-u29-g-adjective-form-0-rationale-2`
+- `obj-u29-adjective-vocabulary` PROVENANCE `prov-ca-u29-adjective-u29-g-short-adjective-0-feedback`
+- `obj-u29-adjective-vocabulary` PROVENANCE `prov-ca-u29-adjective-u29-g-short-adjective-0-prompt`
+- `obj-u29-adjective-vocabulary` PROVENANCE `prov-ca-u29-adjective-u29-g-short-adjective-0-rationale-1`
+- `obj-u29-adjective-vocabulary` PROVENANCE `prov-ca-u29-adjective-u29-g-short-adjective-0-rationale-2`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-adjective-u29-i-adjective-form-1-0`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-adjective-u29-i-adjective-form-1-1`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-adjective-u29-i-adjective-form-1-2`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-adjective-u29-i-adjective-form-1-3`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-adjective-u29-i-adjective-form-1-feedback`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-adjective-u29-i-adjective-form-1-prompt`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-adjective-u29-i-adjective-form-1-rationale-1`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-adjective-u29-i-adjective-form-1-rationale-2`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-adjective-u29-i-adjective-form-2-0`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-adjective-u29-i-adjective-form-2-1`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-adjective-u29-i-adjective-form-2-2`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-adjective-u29-i-adjective-form-2-3`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-adjective-u29-i-adjective-form-2-feedback`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-adjective-u29-i-adjective-form-2-prompt`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-adjective-u29-i-adjective-form-2-rationale-1`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-adjective-u29-i-adjective-form-2-rationale-2`
+- `obj-u29-adjective-vocabulary` PROVENANCE `prov-ca-u29-adjective-u29-i-short-adjective-1-feedback`
+- `obj-u29-adjective-vocabulary` PROVENANCE `prov-ca-u29-adjective-u29-i-short-adjective-1-prompt`
+- `obj-u29-adjective-vocabulary` PROVENANCE `prov-ca-u29-adjective-u29-i-short-adjective-1-rationale-1`
+- `obj-u29-adjective-vocabulary` PROVENANCE `prov-ca-u29-adjective-u29-i-short-adjective-1-rationale-2`
+- `obj-u29-adjective-vocabulary` PROVENANCE `prov-ca-u29-adjective-u29-i-short-adjective-2-feedback`
+- `obj-u29-adjective-vocabulary` PROVENANCE `prov-ca-u29-adjective-u29-i-short-adjective-2-prompt`
+- `obj-u29-adjective-vocabulary` PROVENANCE `prov-ca-u29-adjective-u29-i-short-adjective-2-rationale-1`
+- `obj-u29-adjective-vocabulary` PROVENANCE `prov-ca-u29-adjective-u29-i-short-adjective-2-rationale-2`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-adjective-u29-st-rem-short-adjective-body`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-adjective-u29-st-teach-short-adjective-1-body`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-adjective-u29-st-teach-short-adjective-2-body`
+- `obj-u29-short-adjective` PROVENANCE `prov-ca-u29-adjective-u29-st-teach-short-adjective-3-body`
+- `obj-u29-adjective-vocabulary` PROVENANCE `prov-ca-u29-adjective-vocabulary-objective-title`
+- `obj-u29-adjective-vocabulary` PROVENANCE `prov-ca-u29-adjective-vocabulary-u29-st-teach-short-adjective-1-body`
+- `obj-u29-adjective-vocabulary` PROVENANCE `prov-ca-u29-adjective-vocabulary-u29-st-teach-short-adjective-2-body`
+- `obj-u29-adjective-vocabulary` PROVENANCE `prov-ca-u29-adjective-vocabulary-u29-st-teach-short-adjective-3-body`
 - `obj-u29-active` PROVENANCE `prov-ca-u29-instruction-u29-s-active-0`
 - `obj-u29-active` PROVENANCE `prov-ca-u29-instruction-u29-s-active-1`
 - `obj-u29-active` PROVENANCE `prov-ca-u29-instruction-u29-s-active-10`
@@ -13341,6 +14995,12 @@ permitsAppUse=true
 - `obj-u29-punctuation` PROVENANCE `prov-u29-punctuation-x-2`
 - `obj-u29-short-adjective` PROVENANCE `prov-u29-short-adjective-rem`
 - `obj-u29-short-adjective` PROVENANCE `prov-u29-short-adjective-x-0`
+- `obj-u29-adjective-vocabulary` PROVENANCE `prov-u29-vocabulary-prov-ex-u29-short-adjective-0-en`
+- `obj-u29-adjective-vocabulary` PROVENANCE `prov-u29-vocabulary-prov-ex-u29-short-adjective-0-ru`
+- `obj-u29-adjective-vocabulary` PROVENANCE `prov-u29-vocabulary-prov-ex-u29-short-adjective-1-ru`
+- `obj-u29-adjective-vocabulary` PROVENANCE `prov-u29-vocabulary-prov-ex-u29-short-adjective-2-en`
+- `obj-u29-adjective-vocabulary` PROVENANCE `prov-u29-vocabulary-prov-ex-u29-short-adjective-2-ru`
+- `obj-u29-adjective-vocabulary` PROVENANCE `prov-u29-vocabulary-prov-u29-short-adjective-x-0`
 - `obj-u29-active` SOURCE_CAPABILITY `cap-obj-u29-active`
 - `obj-u29-punctuation` SOURCE_CAPABILITY `cap-obj-u29-punctuation`
 - `obj-u29-reading` SOURCE_CAPABILITY `cap-obj-u29-reading`
@@ -13361,8 +15021,9 @@ permitsAppUse=true
 - `cap-obj-u29-register` supports `bookish-register` for `obj-u29-register`
 - `cap-obj-u29-reading` supports `bookish-reading` for `obj-u29-reading`
 
-No guidance objective is recorded.
+Guidance objectives stay unsupported until an admitted frozen capability exists:
 
+- `obj-u29-adjective-vocabulary` Optional Vocabulary Lab: supplied adjective meanings
 
 ## Book-directed register
 
@@ -13372,8 +15033,7 @@ No guidance objective is recorded.
 
 ## Optional non-gating register
 
-None.
-
+- `obj-u29-adjective-vocabulary` Optional Vocabulary Lab: supplied adjective meanings
 
 ## Unavailable experiences
 

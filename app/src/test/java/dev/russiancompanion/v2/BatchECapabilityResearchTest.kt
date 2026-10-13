@@ -316,7 +316,7 @@ class BatchECapabilityResearchTest {
         val pack = loadCurriculumPack(root)
         val model = reconcileCurriculumReadiness(root, pack)
         val candidate = readAcceptanceCandidate(root)
-        assertEquals("4f787a22d96862cfd369592b03e26886f9829d212a083f582915742a20434140", model.packContentReviewDigest)
+        assertEquals("ee64b836e32577a676e8f156eb33675c8cdb8d80eedad130bdeb8fd3e41727a9", model.packContentReviewDigest)
         assertEquals(candidate?.sourceDigest, model.repositorySourceDigest)
         assertEquals(model.repositorySourceDigest, computeReleaseSourceDigest(root))
         assertEquals("NOT_APPROVED", model.publicRelease)
@@ -343,7 +343,7 @@ class BatchECapabilityResearchTest {
             26 to "7870405b2810239e5e744706b0376877191d00afc337ac30e7a2249ad97fddab",
             27 to "fb8a23246226a841df660cae2517b139cba2ff51ef5939792268d2c6cb50bc2e",
             28 to "d8df059f618e932eb0e77579113fea17db317584e77bef5a10dda3e82f70d402",
-            29 to "0e99fc02a09d928d4cff5fce33b069907dfd2b84b7f6cf0b8efac068ffc65804",
+            29 to "438013b472cf7acbd10b47ebca7d3166e75f9087feb955438b85c19c5bddde50",
             30 to "192db1dc6049b708d930fa05879089db636eb2d2cfbb3724bf72c8732dc1114e",
         )
         val mapping = mapOf(
@@ -367,7 +367,7 @@ class BatchECapabilityResearchTest {
             26 to "72034166355fc1ba567a4caa64db7c908d9c523ed7e2f3d618e45e9653a14e99",
             27 to "e1607fe23cb8f2e8bbc35c9a76a49b3895992b109075052c61b8daeab4e0e941",
             28 to "a4132204cbd12285cf157a29f2fb6bd28d03404145ae1fe830de9b93953236ad",
-            29 to "0f81030a865fc3ceb8205562e363c079aedba6611b2ebe83c5aad203d3983dcc",
+            29 to "4dfc829b31c6dab779d5cd17f36c5d7da6efc93d905a29f2a415465d1608b7b7",
             30 to "8979f46b5b63705acfe0ec2669607abcdf9fe05ba9382fc6d9c7f81c9d1d3967",
         )
         (content.keys).forEach { number ->
