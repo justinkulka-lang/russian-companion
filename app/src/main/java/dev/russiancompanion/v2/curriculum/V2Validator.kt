@@ -7,6 +7,13 @@ internal object V2Validator {
     fun validate(pack: V2CurriculumPack, repositoryRoot: File? = null): V2Validation {
         val errors = mutableListOf<String>()
         if (!unit3ReviewDeclarationValid(pack)) errors += "Unit 3 requires the versioned cumulative-review declaration"
+        for (unit in pack.units.filter { it.number != 3 }) {
+            if ((unit.advancement?.cumulativeReviewPolicyId != null ||
+                (unit.number != 2 && unit.advancement?.requireDueReview == true)) &&
+                !cumulativeReviewDeclarationValid(pack, unit.number)) {
+                errors += "Unit ${unit.number} has no verified cumulative-review policy"
+            }
+        }
         if (pack.schemaVersion != 1) errors += "Unsupported curriculum schema ${pack.schemaVersion}"
         if (pack.units.size != 30) errors += "The map must contain exactly 30 Penguin-aligned units"
         if (pack.units.map { it.number } != (1..30).toList()) {

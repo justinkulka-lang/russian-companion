@@ -223,6 +223,97 @@ class CumulativeReviewStorageTest {
         }
     }
 
+    @Test fun genericKernelPreservesTheOriginalUnit3PolicyAndAssignmentIdentity() {
+        val p = pack()
+        val legacyPool = listOf(
+            Triple("obj-u1-decoding", "BOUNDED_READING", listOf("u1-i-decode-pair")),
+            Triple("obj-u1-confusable", "PRINTED_LETTER_RECOGNITION", listOf(
+                "u1-i-р-not-p", "u1-i-н-not-h", "u1-i-с-not-c", "u1-i-в-not-b", "u1-i-у-not-y", "u1-i-х-not-x")),
+        )
+        val legacyDigest = reviewHash(canonicalParts(listOf("unit3-prior-literacy-v1", "target:3", "slots:2") +
+            legacyPool.map { canonicalParts(listOf(it.first, it.second, canonicalParts(it.third))) }))
+        assertEquals(legacyDigest, cumulativeReviewPolicy(3)!!.digest)
+        prepared(p).use { s ->
+            val original = createUnit3ReviewAssignment(p, s.v2LearnerView(), "same-id", 0)!!
+            assertEquals(original, createCumulativeReviewAssignment(p, s.v2LearnerView(), 3, "same-id", 0))
+            val persisted = open(p, s)
+            assertEquals(persisted, s.openCumulativeReview(p, 3, s.learnerMutationEpoch()))
+        }
+    }
+
+    @Test fun undeclaredTargetsAndFlagOnlyLaterGatesCannotCreateHistory() {
+        val p = pack()
+        prepared(p).use { s ->
+            val before = s.governedLearnerFingerprint()
+            for (n in listOf(1, 2, 4, 27, 30, 31)) {
+                assertNull(cumulativeReviewPolicy(n))
+                assertNull(s.openCumulativeReview(p, n, s.learnerMutationEpoch()))
+                assertNull(createCumulativeReviewAssignment(p, s.v2LearnerView(), n, "undeclared", 0))
+            }
+            val flagOnly = p.copy(units = p.units.map { if (it.number == 4) it.copy(
+                advancement = it.advancement!!.copy(requireDueReview = true, cumulativeReviewPolicyId = Unit3CumulativeReviewPolicy.id)) else it })
+            assertFalse(cumulativeReviewDeclarationValid(flagOnly, 4))
+            assertTrue(currentUnitRequirements(flagOnly, flagOnly.unit(4)!!, s.v2LearnerView()).remaining
+                .contains("The cumulative-review rule cannot be verified"))
+            assertTrue(V2Validator.validate(flagOnly).errors.contains("Unit 4 has no verified cumulative-review policy"))
+            val emptyFlag = flagOnly.copy(units = flagOnly.units.map { if (it.number == 4) it.copy(
+                advancement = it.advancement!!.copy(cumulativeReviewPolicyId = null)) else it })
+            assertTrue(currentUnitRequirements(emptyFlag, emptyFlag.unit(4)!!, s.v2LearnerView()).remaining
+                .contains("The cumulative-review rule cannot be verified"))
+            assertNull(s.openCumulativeReview(emptyFlag, 4, s.learnerMutationEpoch()))
+            assertNull(s.openCumulativeReview(flagOnly, 4, s.learnerMutationEpoch()))
+            assertEquals(before, s.governedLearnerFingerprint())
+            assertTrue(s.cumulativeReviewHistory().first.isEmpty())
+        }
+    }
+
+    @Test fun typedPoliciesRefuseEmptyRepeatedAndAmbiguousCandidatePools() {
+        val valid = cumulativeReviewPolicy(3)!!
+        for (invalid in listOf(
+            { valid.copy(pool = emptyList()) },
+            { valid.copy(pool = listOf(valid.pool.first())) },
+            { valid.copy(pool = listOf(valid.pool.first(), valid.pool.first())) },
+            { valid.copy(pool = valid.pool.map { it.copy(candidateItemIds = emptyList()) }) },
+            { valid.copy(pool = valid.pool.map { it.copy(candidateItemIds = listOf("duplicate", "duplicate")) }) },
+            { valid.copy(targetUnit = 2) },
+        )) {
+            try { invalid(); fail("invalid policy accepted") } catch (_: IllegalArgumentException) { }
+        }
+    }
+
+    @Test fun disabledOrWrongPolicyRejectsOldAssignmentsAndAnswersWithoutMutation() {
+        val p = pack()
+        prepared(p).use { s ->
+            val a = open(p, s); val before = s.governedLearnerFingerprint()
+            for (disabled in listOf(false, true)) {
+                val changed = p.copy(units = p.units.map { if (it.number == 3) it.copy(advancement =
+                    it.advancement!!.copy(requireDueReview = disabled, cumulativeReviewPolicyId = if (disabled) "unknown-policy" else Unit3CumulativeReviewPolicy.id)) else it })
+                assertFalse(reviewAssignmentCurrent(changed, a))
+                assertNull(s.openCumulativeReview(changed, 3, s.learnerMutationEpoch()))
+                assertFalse(s.answerCumulativeReview(changed, a.id, 0, p.item(a.slots[0].itemId)!!.answer, s.learnerMutationEpoch()))
+                assertEquals(before, s.governedLearnerFingerprint())
+            }
+        }
+    }
+
+    @Test fun completionMetadataCannotLinkAReviewToAnotherUnitDuringRestore() {
+        val p = pack()
+        prepared(p).use { s ->
+            val a = open(p, s); answer(p, s, a, 0, true); answer(p, s, a, 1, true)
+            val doc = s.governedLearnerDocument()
+            val link = BackupUnitCompletion(3, "snapshot", false, a.policyDigest, a.id,
+                doc.reviewAnswers.maxOf { it.acceptedOrder })
+            assertNull(completionActivationDefects(doc.copy(unitCompletions = doc.unitCompletions + link)))
+            val forged = doc.copy(unitCompletions = doc.unitCompletions + link.copy(unitNumber = 4))
+            assertNotNull(completionActivationDefects(forged))
+            LocalStore.openInMemory(context()).use { target ->
+                val before = target.governedLearnerFingerprint()
+                assertEquals(GovernedReplaceOutcome.UNCHANGED, target.replaceGovernedLearner(forged, emptyList()))
+                assertEquals(before, target.governedLearnerFingerprint())
+            }
+        }
+    }
+
     private fun prepared(p: V2CurriculumPack) = LocalStore.openInMemory(context()).also { finish(p, it) }
     private fun finish(p: V2CurriculumPack, s: LocalStore) {
         for (n in 1..2) {

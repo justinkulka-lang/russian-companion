@@ -16,7 +16,7 @@ Unit 11 remains in development. Its readiness is content-complete and review-pen
 - Mapping-package SHA-256: 61b1d9c77882225528ca0d0f68a44efa13c68605efdaed0e6abb8e1b519db587
 - Pack content-review SHA-256: 0329d329e03ad02d0e258d36ffad07bcf80bfd9f6f6c5929808c7e90748aadc3
 - Review-package SHA-256: c74929657e8025c0149111980d75917fd18991adc7764e426d2e173db22ee409
-- Repository source SHA-256: 74d2210e6f95206023276a876788ba2898f85966bb13c564696d059c2ddf3721
+- Repository source SHA-256: e24cef4e38760da41c203f478f917fd813778a2c80077cbb3363e8dfda3272f2
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 

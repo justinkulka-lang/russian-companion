@@ -1421,15 +1421,18 @@ internal class LocalStore private constructor(
         call { readReviewAssignments() to readReviewAnswers() }
 
     /** Explicit mutating open; read-only progress never creates an assignment. */
-    internal fun openUnit3CumulativeReview(pack: V2CurriculumPack, epoch: Long): CumulativeReviewAssignment? = call {
+    internal fun openUnit3CumulativeReview(pack: V2CurriculumPack, epoch: Long): CumulativeReviewAssignment? =
+        openCumulativeReview(pack, 3, epoch)
+
+    internal fun openCumulativeReview(pack: V2CurriculumPack, targetUnit: Int, epoch: Long): CumulativeReviewAssignment? = call {
         if (!learnerMutationCurrent(epoch)) return@call null
         var result: CumulativeReviewAssignment? = null
         database.runInTransaction {
             val learner = readV2Learner()
             val boundary = database.v2().maxReviewOrder()
-            val candidate = createUnit3ReviewAssignment(pack, learner, java.util.UUID.randomUUID().toString(), boundary)
+            val candidate = createCumulativeReviewAssignment(pack, learner, targetUnit, java.util.UUID.randomUUID().toString(), boundary)
                 ?: return@runInTransaction
-            result = readReviewAssignments().lastOrNull { it.targetUnit == 3 && reviewAssignmentCurrent(pack, it) }
+            result = readReviewAssignments().lastOrNull { it.targetUnit == targetUnit && reviewAssignmentCurrent(pack, it) }
             if (result == null) {
                 database.v2().insertReviewAssignment(V2ReviewAssignmentEntity(candidate.id, candidate.targetUnit,
                     backupJson.encodeToString(CumulativeReviewAssignment.serializer(), candidate)))
@@ -1447,7 +1450,7 @@ internal class LocalStore private constructor(
         database.runInTransaction {
             val a = readReviewAssignments().singleOrNull { it.id == assignmentId } ?: return@runInTransaction
             if (!reviewAssignmentCurrent(pack, a) || slotIndex !in a.slots.indices) return@runInTransaction
-            if (createUnit3ReviewAssignment(pack, readV2Learner(), a.id, a.boundary) == null) return@runInTransaction
+            if (createCumulativeReviewAssignment(pack, readV2Learner(), a.targetUnit, a.id, a.boundary) == null) return@runInTransaction
             val item = pack.item(a.slots[slotIndex].itemId) ?: return@runInTransaction
             if (selected !in item.options) return@runInTransaction
             val latest = readReviewAnswers().lastOrNull { it.assignmentId == a.id && it.slotIndex == slotIndex }

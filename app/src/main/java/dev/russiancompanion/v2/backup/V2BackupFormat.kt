@@ -784,10 +784,10 @@ internal fun completionActivationDefects(document: GovernedLearnerDocument): Str
     for (row in document.unitCompletions) {
         if ((document.schemaVersion < 3 || row.preReviewActivation) &&
             (!row.preReviewActivation || row.reviewPolicyDigest.isNotEmpty() || row.reviewAssignmentId.isNotEmpty() || row.reviewCompletionOrder != 0L)) return "invalid pre-review completion"
-        if (!row.preReviewActivation && row.unitNumber == 3 &&
+        if (!row.preReviewActivation &&
             (row.reviewPolicyDigest.isNotEmpty() || row.reviewAssignmentId.isNotEmpty() || row.reviewCompletionOrder != 0L)) {
             val a = document.reviewAssignments.singleOrNull { it.id == row.reviewAssignmentId } ?: return "missing completion assignment"
-            if (a.targetUnit != 3 || a.policyDigest != row.reviewPolicyDigest ||
+            if (a.targetUnit != row.unitNumber || a.policyDigest != row.reviewPolicyDigest ||
                 row.reviewCompletionOrder <= a.boundary ||
                 row.reviewCompletionOrder > (document.reviewAnswers.maxOfOrNull { it.acceptedOrder } ?: 0)) return "invalid completion assignment link"
         }

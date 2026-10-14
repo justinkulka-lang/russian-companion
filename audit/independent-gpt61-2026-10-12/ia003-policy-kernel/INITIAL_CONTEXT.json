@@ -1,0 +1,7 @@
+{
+  "baselineCommit": "92b1173220004a4061e0a29bc2881d99cf9e21b4",
+  "testInputSha256": "fa47503f45da795593f30f0c0feaec016cb1df717cf83053f044b8546fce70ef",
+  "testsExecuted": 0,
+  "command": "source /workspace/setup/android-env.sh; ./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*CumulativeReviewStorageTest' --tests '*CumulativeReviewGateTest' --max-workers=4 --console=plain",
+  "failure": "New test referenced nonexistent REJECTED result;actual unchanged replacement is GovernedReplaceOutcome.UNCHANGED. Production unchanged."
+}

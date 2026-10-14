@@ -330,6 +330,10 @@ internal fun currentUnitRequirements(pack: V2CurriculumPack, unit: V2Unit, learn
             !unit3ReviewComplete(pack, learner) -> listOf("Complete the assigned earlier reading and letter-recognition review")
             else -> emptyList()
         }
+    } else if ((unit.advancement?.cumulativeReviewPolicyId != null ||
+        (unit.number != 2 && unit.advancement?.requireDueReview == true)) &&
+        !cumulativeReviewDeclarationValid(pack, unit.number)) {
+        listOf("The cumulative-review rule cannot be verified")
     } else emptyList()
     val remaining = base.remaining + review
     return V2AdvancementDecision(remaining.isEmpty(), remaining)

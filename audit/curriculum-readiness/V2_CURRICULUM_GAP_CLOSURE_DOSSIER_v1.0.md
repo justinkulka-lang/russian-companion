@@ -7,7 +7,7 @@
 **Repository baseline main:** `c153103a0048f69f8de339b83e77d93572ebddb7`  
 **Unit 23 unprepared correction:** `fd69bd03298d69669d09daafe8d364b0e576d033` (`Keep Unit 23 unprepared until completion over a period is admitted.`). That commit is an ancestor of the repository baseline. It is not the repository baseline main commit.  
 **Pack content-review digest:** `0329d329e03ad02d0e258d36ffad07bcf80bfd9f6f6c5929808c7e90748aadc3`
-**Repository source digest:** `74d2210e6f95206023276a876788ba2898f85966bb13c564696d059c2ddf3721`
+**Repository source digest:** `e24cef4e38760da41c203f478f917fd813778a2c80077cbb3363e8dfda3272f2`
 **Public release:** **NOT_APPROVED**
 
 ## Purpose
