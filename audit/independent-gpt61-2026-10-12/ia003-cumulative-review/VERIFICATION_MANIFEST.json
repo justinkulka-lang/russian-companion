@@ -1,0 +1,311 @@
+{
+  "schemaVersion": 1,
+  "status": "BASELINE_DIAGNOSTIC_REPRODUCED_IMPLEMENTATION_NOT_STARTED",
+  "finding": "IA003",
+  "requirements": [
+    "MA2-027",
+    "MA2-088"
+  ],
+  "baselineCommit": "11d70e5e4512ff93758ebf246f2a4773f83ca0e0",
+  "testedCommit": "c4b789a2628fb60eb81acf098e61c333dbeb9810",
+  "repository": "justinkulka-lang/russian-companion",
+  "branch": "cursor/content-audit-corrections-964f",
+  "draftPR": 64,
+  "command": "bash audit/independent-gpt61-2026-10-12/ia003-cumulative-review/verify-baseline.sh",
+  "expandedGradleCommand": "./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle -I /workspace/setup/ia003-diagnostics.gradle testDebugUnitTest --tests '*Ia003CumulativeReviewBaselineTest' compileDebugSources lintDebug verifyReleaseGateAttachment --max-workers=4 --console=plain",
+  "attempts": [
+    {
+      "name": "initial external source-set override",
+      "commit": "5d11f1509243a4bba2991cfbff0c22888cbe2654",
+      "result": "NO_TESTS_FOUND",
+      "executedTests": 0,
+      "log": "INITIAL_NO_TESTS.txt",
+      "diagnosis": "AGP9 built-in Kotlin did not compile the diagnostic .kt from the added java source directory."
+    },
+    {
+      "name": "second external source-set override",
+      "commit": "5d11f1509243a4bba2991cfbff0c22888cbe2654",
+      "result": "NO_TESTS_FOUND",
+      "executedTests": 0,
+      "log": "SECOND_NO_TESTS.txt",
+      "diagnosis": "org.jetbrains.kotlin.android plugin callback did not apply to AGP9 built-in Kotlin; diagnostic source not compiled."
+    },
+    {
+      "name": "corrected built-in Kotlin source-set baseline",
+      "commit": "5d11f1509243a4bba2991cfbff0c22888cbe2654",
+      "result": "PASS_DEFECT_REPRODUCTIONS",
+      "counts": {
+        "tests": 6,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "timestamp": "2026-10-14T03:19:34.816Z",
+      "xml": "BASELINE_TEST_RESULTS.xml",
+      "log": "BASELINE_RUN.txt"
+    },
+    {
+      "name": "committed replay-helper final baseline",
+      "commit": "c4b789a2628fb60eb81acf098e61c333dbeb9810",
+      "result": "PASS_DEFECT_REPRODUCTIONS",
+      "counts": {
+        "tests": 6,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "timestamp": "2026-10-14T03:23:03.749Z",
+      "xml": "FINAL_BASELINE_TEST_RESULTS.xml",
+      "log": "FINAL_BASELINE_RUN.txt"
+    }
+  ],
+  "finalScope": {
+    "counts": {
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "classes": 1,
+    "selectors": [
+      "*Ia003CumulativeReviewBaselineTest"
+    ],
+    "methods": [
+      {
+        "name": "changingOnlyUnitThreeDueFlagStillSilentlyPassesAnEmptyReview",
+        "seconds": "12.89"
+      },
+      {
+        "name": "unitThreeAdvancesWithRealEarlierCompletionAndNoFreshEarlierReviewAnswers",
+        "seconds": "5.393"
+      },
+      {
+        "name": "unitTwoGateActuallyRequiresItsHardCodedUnitOneReviewSteps",
+        "seconds": "3.277"
+      },
+      {
+        "name": "onlyUnitTwoDeclaresDueReviewInAllThirtyRules",
+        "seconds": "0.312"
+      },
+      {
+        "name": "noCumulativeReviewAttemptRoleCanBePreparedOrWritten",
+        "seconds": "0.287"
+      },
+      {
+        "name": "mixedPracticeReordersRecentMissesWithoutCreatingAnAdvancementObligation",
+        "seconds": "6.508"
+      }
+    ],
+    "type": "Historical baseline defect reproductions; NOT correction acceptance or complete suite",
+    "overlappingRunsSummed": false
+  },
+  "lint": {
+    "result": "PASS",
+    "errors": 0,
+    "warnings": 20,
+    "hints": 1,
+    "xml": "FINAL_BASELINE_LINT.xml",
+    "currentFinalReport": "UP-TO-DATE; generated in first successful diagnostic run with same inputs",
+    "finalTask": "lintDebug executes; main/Android-test/unit-test analysis and report UP-TO-DATE"
+  },
+  "compile": {
+    "compileDebugSources": "UP-TO-DATE",
+    "mainSourceChanged": false,
+    "diagnosticTestCompilation": "Executed in first successful run; UP-TO-DATE in final run"
+  },
+  "releaseGateAttachment": {
+    "result": "PASS",
+    "task": "verifyReleaseGateAttachment",
+    "finalTaskExecuted": true
+  },
+  "apk": {
+    "assembled": false,
+    "signed": false,
+    "configuredApplicationId": "dev.russiancompanion",
+    "configuredVersionName": "2.0.0-dev",
+    "configuredVersionCode": 5,
+    "currentArtifactIdentity": "NOT_RECORDED",
+    "currentApkSha256": "NOT_RECORDED",
+    "currentApkSignature": "NOT_RECORDED",
+    "historicalCandidateArtifacts": "Preserved; not this run"
+  },
+  "excludedScreenshotExporters": [
+    {
+      "name": "VisualReviewCaptureTest",
+      "methods": 2
+    },
+    {
+      "name": "Units35ChunkCaptureTest",
+      "methods": 2
+    },
+    {
+      "name": "Units610ChunkCaptureTest",
+      "methods": 10
+    },
+    {
+      "name": "Units1115GapCaptureTest",
+      "methods": 2
+    }
+  ],
+  "exclusionReason": "Overwrite tracked screenshot evidence and write /opt/cursor; excluded by external cloud-validation init. Diagnostic selector additionally limits scope to one class.",
+  "historicalCountComparison": {
+    "mainCommit": "ff539220645670fbf7a1abacaa6f71e828606b80",
+    "mainSourceAnnotations": 579,
+    "excludedMethods": 16,
+    "reportedTests": 563,
+    "passed": 562,
+    "skipped": 1,
+    "completeSuiteClaim": "NOT_PROVEN",
+    "pr64BaselineCommit": "420f41ff6c2a4417cd829fdee0179b6a3b797eff",
+    "pr64BaselineSourceAnnotations": 691,
+    "sourceAnnotationDifference": 112,
+    "handoffExecution": "UNVERIFIED",
+    "currentScope": "Six explicit diagnostic methods at another commit; neither 562 nor 691 is this executed scope."
+  },
+  "preservation": {
+    "protectedTrees": [
+      {
+        "path": "app/src/main",
+        "gitTree": "72951bdd07700f22c8c125b2f2d9f505d115e3e9",
+        "unchanged": true,
+        "status": "PRESERVED"
+      },
+      {
+        "path": "app/src/test",
+        "gitTree": "2f1ca014e1e8c0a1ce967429aacd0a9380ca50a6",
+        "unchanged": true,
+        "status": "PRESERVED"
+      },
+      {
+        "path": "app/src/androidTest",
+        "gitTree": null,
+        "unchanged": true,
+        "status": "ABSENT_BOTH_COMMITS"
+      },
+      {
+        "path": "catalog",
+        "gitTree": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+        "unchanged": true,
+        "status": "PRESERVED"
+      },
+      {
+        "path": "review",
+        "gitTree": "211de108f78cbdcb39ac4ddb2a127f66ba7cb15f",
+        "unchanged": true,
+        "status": "PRESERVED"
+      },
+      {
+        "path": "release",
+        "gitTree": "371bb8146487ef162ad4760324854c5d2be957d0",
+        "unchanged": true,
+        "status": "PRESERVED"
+      },
+      {
+        "path": "docs",
+        "gitTree": "7364239dde1b40c703aaca92974413f403e928f4",
+        "unchanged": true,
+        "status": "PRESERVED"
+      }
+    ],
+    "allOriginalNineDiagnosticHashes": "PASS",
+    "rawAssetSha256": "c829c6caf79f2e4e2fac0fb379f2393d9a16baae46e1286927f21cfe83649e53",
+    "packDigest": "4d2d7078afd288289e300f082e641e637fda261d486fa9f1c6b91c014c5b3192",
+    "repositorySourceDigest": "f575c241a0c7e2d103e6babb6ca224fb199dc9a3751c8220b3d09837d46b422f",
+    "candidate": "Unchanged; unfrozen/sourceCommit null/current artifact NOT_RECORDED/public release NOT_APPROVED"
+  },
+  "environment": {
+    "configurationChangeThisRun": false,
+    "installScriptAndStartSkill": "Saved previously",
+    "priorPublication": "USER_CONFIRMED",
+    "laterNetworkOnlyDraftPublication": "NOT_INDEPENDENTLY_ESTABLISHED",
+    "supportedPublicationControlHere": "UNAVAILABLE"
+  },
+  "acceptance": {
+    "independentComprehensiveAudit": "OUTSTANDING; after engineering corrections",
+    "physicalGalaxyS26UltraAirplaneModeAndReboot": "OUTSTANDING; LAST after final independent comprehensive audit",
+    "mergeFreezeSigningReleaseApproval": "NOT_AUTHORIZED_OR_PERFORMED"
+  },
+  "next": "Add assignment/history persistence and migration plus a bounded Unit3 vertical slice; then integrate all explicit main-path policies and backup/restore, with correction acceptance before IA003 closure.",
+  "evidenceFiles": [
+    {
+      "path": "BASELINE_INVENTORY.json",
+      "sha256": "8c38cdf16533c8617072ced6dec7b0ba761eec850fb5c92017c8eaf8a088398e",
+      "bytes": 105860
+    },
+    {
+      "path": "BASELINE_LINT.xml",
+      "sha256": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6",
+      "bytes": 31476
+    },
+    {
+      "path": "BASELINE_RUN.txt",
+      "sha256": "b86207ec0bfdcd853c93f81594c83e222f5e2ce6ec61043b4d4c886396585942",
+      "bytes": 3752
+    },
+    {
+      "path": "BASELINE_TEST_RESULTS.xml",
+      "sha256": "4a571272407db44626f954a3f628ec55db1fdba44b5d5bf908061648e80d4215",
+      "bytes": 54864
+    },
+    {
+      "path": "FINAL_BASELINE_LINT.xml",
+      "sha256": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6",
+      "bytes": 31476
+    },
+    {
+      "path": "FINAL_BASELINE_RUN.txt",
+      "sha256": "80b8d64b63410298329388bc60b3033bf8fdf5261f28244a4f7e69ea05c179ba",
+      "bytes": 3591
+    },
+    {
+      "path": "FINAL_BASELINE_TEST_RESULTS.xml",
+      "sha256": "71969eba92b139ec0df45a854667a838a3402dfc501350350979a63b7312cef2",
+      "bytes": 99463
+    },
+    {
+      "path": "IMPLEMENTATION_PLAN.md",
+      "sha256": "d02630e6d85dd5c34e885df8a4bd108f167e6bd3ffd54270aa2891c090dfa8fb",
+      "bytes": 14997
+    },
+    {
+      "path": "INITIAL_NO_TESTS.txt",
+      "sha256": "acfe64cb7d62327ab6925a597711367c31162458bd469825ab513604a288512d",
+      "bytes": 3368
+    },
+    {
+      "path": "SECOND_NO_TESTS.txt",
+      "sha256": "4dcc3bcb753f433d982c3e09cc53eb91668b9b1d6d229ee3058df961ef4f458d",
+      "bytes": 3379
+    },
+    {
+      "path": "collect-baseline.py",
+      "sha256": "42ea32f13d213fbde9b2ae1c6483b1115b20586c5d4079ab51aa32b147b70971",
+      "bytes": 8964
+    },
+    {
+      "path": "diagnostics-source-set.gradle",
+      "sha256": "7e6a6ed182bf4489bdec07d0b145a52ae884f701219a48197d3803931839198a",
+      "bytes": 449
+    },
+    {
+      "path": "verify-baseline.sh",
+      "sha256": "cb6e35b56760813bb75d004e781b9b389ec84c457299854fc75fbae0e2b0439e",
+      "bytes": 792
+    }
+  ],
+  "externalInitFiles": [
+    {
+      "path": "/workspace/setup/cloud-validation.gradle",
+      "sha256": "21c6a0ee2e97cf83c472513ac31c3d2d456e461185384e9b5e58c0fed298d123"
+    },
+    {
+      "path": "/workspace/setup/parallel-tests.gradle",
+      "sha256": "2366eb867708f83db10b39080abff1b45d2e347bab15ce2ec1c95c3d31cf7ff3"
+    },
+    {
+      "path": "/workspace/setup/ia003-diagnostics.gradle",
+      "sha256": "7e6a6ed182bf4489bdec07d0b145a52ae884f701219a48197d3803931839198a"
+    }
+  ],
+  "diagnosticSourceSha256": "a9578178ea5fa320c022a2060baa82c4aba6be6e9599816c40061b3c8f5b1024"
+}
