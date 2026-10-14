@@ -195,9 +195,9 @@ internal fun continueTarget(pack: V2CurriculumPack, learner: V2LearnerView): V2C
             unitNumber = unit.number,
         )
     }
-    if (unit.number == 3 && !unit3ReviewComplete(pack, learner)) return V2ContinueTarget(
-        title = "Review earlier reading and letters", reason = "Complete the assigned review before advancement.",
-        sessionId = null, stepIndex = 0, unitNumber = 3, opensCumulativeReview = true,
+    if (cumulativeReviewPolicy(unit.number) != null && !cumulativeReviewComplete(pack, learner, unit.number)) return V2ContinueTarget(
+        title = cumulativeReviewTitle(unit.number), reason = "Complete the assigned review before advancement.",
+        sessionId = null, stepIndex = 0, unitNumber = unit.number, opensCumulativeReview = true,
     )
     return V2ContinueTarget(
         title = "Review advancement",
@@ -215,8 +215,11 @@ internal fun continueTarget(pack: V2CurriculumPack, learner: V2LearnerView): V2C
  * to the failed check.
  */
 internal fun reviewedGuidedPractice(pack: V2CurriculumPack, remediationStepId: String): List<String> {
+    val explicitReviewTeaching = listOfNotNull(cumulativeReviewPolicy(3), cumulativeReviewPolicy(4))
+        .any { policy -> policy.pool.any { it.remediationStepId == remediationStepId } }
     val practiceIds = pack.units.flatMap { it.objectives }
-        .filter { remediationStepId in it.remediationStepIds }
+        .filter { remediationStepId in it.remediationStepIds ||
+            (explicitReviewTeaching && remediationStepId in it.instructionStepIds) }
         .flatMap { it.practiceStepIds }
         .distinct()
     return practiceIds.filter { id ->
@@ -324,10 +327,10 @@ internal fun advancementDecision(
 
 internal fun currentUnitRequirements(pack: V2CurriculumPack, unit: V2Unit, learner: V2LearnerView): V2AdvancementDecision {
     val base = ordinaryUnitRequirements(pack, unit, learner)
-    val review = if (unit.number == 3) {
+    val review = if (cumulativeReviewPolicy(unit.number) != null) {
         when {
-            !unit3ReviewDeclarationValid(pack) -> listOf("The cumulative-review rule cannot be verified")
-            !unit3ReviewComplete(pack, learner) -> listOf("Complete the assigned earlier reading and letter-recognition review")
+            !cumulativeReviewDeclarationValid(pack, unit.number) -> listOf("The cumulative-review rule cannot be verified")
+            !cumulativeReviewComplete(pack, learner, unit.number) -> listOf("Complete the assigned earlier-objective review")
             else -> emptyList()
         }
     } else if ((unit.advancement?.cumulativeReviewPolicyId != null ||
@@ -377,7 +380,7 @@ internal fun ordinaryUnitRequirements(
             }
         }
     }
-    if (rule.requireDueReview && unit.number != 3) {
+    if (rule.requireDueReview && cumulativeReviewPolicy(unit.number) == null) {
         val reviewSteps = unit.sessions.flatMap { it.steps }.filter { step ->
             pack.items.any { it.id in step.itemIds && it.objectiveId == "obj-u2-review" } ||
                 step.id.contains("review")

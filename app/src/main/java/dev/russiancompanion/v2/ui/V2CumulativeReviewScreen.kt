@@ -8,25 +8,30 @@ import androidx.compose.ui.semantics.testTag
 import dev.russiancompanion.v2.curriculum.*
 
 private data class ReviewScreenState(val assignment: CumulativeReviewAssignment?, val eligible: Boolean,
-                                     val completed: Set<Int>, val stale: Boolean)
+                                     val completed: Set<Int>, val stale: Boolean, val repairUnits: List<Int>)
 
 @Composable
-internal fun V2CumulativeReviewScreen(pack: V2CurriculumPack, learner: V2LearnerView, busy: Boolean,
+internal fun V2CumulativeReviewScreen(pack: V2CurriculumPack, learner: V2LearnerView, targetUnit: Int, busy: Boolean,
     onBack: () -> Unit, onTab: (V2Tab) -> Unit, onStart: () -> Unit,
-    onAnswer: (String, Int, String) -> Unit, onOpenEarlierUnit: () -> Unit,
+    onAnswer: (String, Int, String) -> Unit, onOpenEarlierUnit: (Int) -> Unit,
     onGate: () -> Unit, onRemediate: (String) -> Unit) {
     val state = rememberGoverned(pack, learner, label = "cumulative-review") {
-        val a = currentUnit3Assignment(pack, learner)
-        val eligible = createUnit3ReviewAssignment(pack, learner, "eligibility-preview", 0) != null
+        val a = currentCumulativeAssignment(pack, learner, targetUnit)
+        val eligible = createCumulativeReviewAssignment(pack, learner, targetUnit, "eligibility-preview", 0) != null
         ReviewScreenState(a, eligible, a?.let { completedReviewSlots(pack, it, learner.reviewAnswers) }.orEmpty(),
-            a == null && learner.reviewAssignments.any { it.targetUnit == 3 })
+            a == null && learner.reviewAssignments.any { it.targetUnit == targetUnit }, cumulativeReviewPolicy(targetUnit)?.pool.orEmpty().mapNotNull { spec ->
+                pack.units.firstOrNull { u -> u.objectives.any { it.id == spec.objectiveId } }?.number
+            }.distinct().filter { it !in currentCompletedUnitNumbers(pack, learner) })
     }
-    V2Scaffold("Earlier reading and letters", V2Tab.COURSE, onTab, onBack) {
-        Text("Review two earlier skills: reading and recognising printed letters. Use what you learned in Unit 1; complete both checks before continuing.")
+    V2Scaffold(cumulativeReviewTitle(targetUnit), V2Tab.COURSE, onTab, onBack) {
+        Text(if (targetUnit == 3) "Review two earlier skills: reading and recognising printed letters. Use what you learned in Unit 1; complete both checks before continuing." else "Review earlier print-pair decoding and noun-gender labels from Units 1 and 3. Complete both checks before continuing; these supplied choices do not demonstrate whole-word reading, speaking or writing.")
         if (state == null) { V2Status("Preparing review"); return@V2Scaffold }
         if (!state.eligible) {
             Text("Finish the earlier instruction and checks before starting this review.", Modifier.semantics { testTag = "v2-review-insufficient" })
-            V2SecondaryButton("Open earlier instruction and checks", onOpenEarlierUnit, tag = "v2-review-repair")
+            state.repairUnits.ifEmpty { listOf(1) }.forEachIndexed { index, number ->
+                V2SecondaryButton("Open earlier Unit $number instruction and checks", { onOpenEarlierUnit(number) },
+                    tag = if (index == 0) "v2-review-repair" else "v2-review-repair-$number")
+            }
             return@V2Scaffold
         }
         val a = state.assignment
@@ -51,14 +56,15 @@ internal fun V2CumulativeReviewScreen(pack: V2CurriculumPack, learner: V2Learner
                 Text(if (index in state.completed) "Review answer recorded. ${item.feedback}" else "Not the reviewed answer. ${item.feedback}",
                     Modifier.semantics { testTag = "v2-review-feedback-$index" })
                 val objective = pack.unit(slot.ownerUnit)?.objectives?.firstOrNull { it.id == slot.objectiveId }
-                objective?.remediationStepIds?.firstOrNull()?.let { step ->
+                (cumulativeReviewPolicy(targetUnit)?.pool?.firstOrNull { it.objectiveId == slot.objectiveId }?.remediationStepId
+                    ?: objective?.remediationStepIds?.firstOrNull())?.let { step ->
                     V2SecondaryButton("Return to this teaching", { onRemediate(step) }, tag = "v2-review-remediate-$index")
                 }
             }
         }
         if (state.completed.size == a.slots.size) {
             Text("Assigned review complete. Ordinary unit instruction, book work and checks remain required.")
-            V2PrimaryButton("Return to Unit 3 advancement", onGate, tag = "v2-review-gate")
+            V2PrimaryButton("Return to Unit $targetUnit advancement", onGate, tag = "v2-review-gate")
         }
     }
 }

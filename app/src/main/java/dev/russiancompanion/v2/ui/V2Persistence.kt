@@ -18,7 +18,7 @@ internal interface V2Persistence {
     suspend fun profile(): V2ProfileEntity
     suspend fun saveProfile(profile: V2ProfileEntity)
     suspend fun completeStep(stepId: String, recordedAt: String, contentDigest: String)
-    suspend fun openCumulativeReview(pack: dev.russiancompanion.v2.curriculum.V2CurriculumPack) { error("Review persistence unavailable") }
+    suspend fun openCumulativeReview(pack: dev.russiancompanion.v2.curriculum.V2CurriculumPack, targetUnit: Int) { error("Review persistence unavailable") }
     suspend fun answerCumulativeReview(pack: dev.russiancompanion.v2.curriculum.V2CurriculumPack, assignment: String, slot: Int, selected: String) { error("Review persistence unavailable") }
     suspend fun recordAttempt(write: dev.russiancompanion.v2.curriculum.GovernedAttemptWrite)
     suspend fun toggleBookmark(targetId: String, kind: String, recordedAt: String, targetDigest: String)
@@ -73,9 +73,9 @@ internal class StoreV2Persistence(private val store: LocalStore, private val pac
         }
     }
 
-    override suspend fun openCumulativeReview(pack: dev.russiancompanion.v2.curriculum.V2CurriculumPack) {
+    override suspend fun openCumulativeReview(pack: dev.russiancompanion.v2.curriculum.V2CurriculumPack, targetUnit: Int) {
         val epoch = coroutineContext[CapturedLearnerEpoch]?.epoch ?: store.learnerMutationEpoch()
-        val opened = store.awaitStore { store.openUnit3CumulativeReview(pack, epoch) }
+        val opened = store.awaitStore { store.openCumulativeReview(pack, targetUnit, epoch) }
         if (opened == null) error("Earlier teaching/check evidence is required or the learner changed")
     }
     override suspend fun answerCumulativeReview(pack: dev.russiancompanion.v2.curriculum.V2CurriculumPack, assignment: String, slot: Int, selected: String) {

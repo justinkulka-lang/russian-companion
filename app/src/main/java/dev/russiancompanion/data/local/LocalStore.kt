@@ -1344,11 +1344,11 @@ internal class LocalStore private constructor(
         }
         database.runInTransaction {
             val latest = readV2Learner()
-            if (unitNumber == 3 && pack == null) error("Unit 3 requires verified cumulative-review evidence")
+            if (unitNumber in 3..4 && pack == null) error("Unit $unitNumber requires verified cumulative-review evidence")
             if (pack != null && (!canOpenUnit(unitState(pack, pack.unit(unitNumber) ?: error("missing unit"), latest)) ||
                 !advancementDecision(pack, pack.unit(unitNumber)!!, latest).allowed))
                 error("current advancement evidence is incomplete")
-            val assignment = if (unitNumber == 3 && pack != null) currentUnit3Assignment(pack, latest) else null
+            val assignment = if (pack != null) currentCumulativeAssignment(pack, latest, unitNumber) else null
             database.v2().upsertUnitCompletion(
                 dev.russiancompanion.v2.data.V2UnitCompletionEntity(unitNumber, recordedAtLocal, false,
                     assignment?.policyDigest.orEmpty(), assignment?.id.orEmpty(),

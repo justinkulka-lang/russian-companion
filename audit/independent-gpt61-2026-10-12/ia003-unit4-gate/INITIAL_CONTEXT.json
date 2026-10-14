@@ -1,0 +1,9 @@
+{
+  "baselineCommit": "73a8f9ad447fe86ed334671277a86be0d790ec2f",
+  "testsExecuted": 0,
+  "command": "source /workspace/setup/android-env.sh; ./gradlew -I /workspace/setup/cloud-validation.gradle compileDebugSources --max-workers=4 --console=plain",
+  "failures": [
+    "Raw-asset patch assumed pretty JSON;it stopped before changing the asset. Apply exact compact Unit4 substring instead.",
+    "New navigation callback used unit rather than existing local number. Two new helpers needed explicit V2Screens imports."
+  ]
+}

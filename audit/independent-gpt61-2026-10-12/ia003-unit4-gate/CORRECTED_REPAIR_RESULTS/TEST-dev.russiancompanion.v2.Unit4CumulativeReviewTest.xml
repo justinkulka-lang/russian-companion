@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit4CumulativeReviewTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-14T16:09:59.940Z" hostname="f5c5dd6b855f" time="17.123">
+  <properties/>
+  <testcase name="placementWithTaughtUnit1ButUntaughtUnit3RepairsTheMissingOwnerInsteadOfUnit1" classname="dev.russiancompanion.v2.Unit4CumulativeReviewTest" time="14.49"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

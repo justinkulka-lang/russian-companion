@@ -1,5 +1,8 @@
 package dev.russiancompanion.v2.ui
 
+import dev.russiancompanion.v2.curriculum.cumulativeReviewPolicy
+import dev.russiancompanion.v2.curriculum.cumulativeReviewTitle
+
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -430,9 +433,9 @@ internal fun V2UnitScreen(
                 modifier = Modifier.semantics { testTag = "v2-advancement-rule" },
             )
         }
-        if (unit.number == 3) {
-            Text("Before advancing, complete the assigned earlier reading and letter-recognition review. Earlier lesson answers and optional practice do not complete this review.")
-            V2SecondaryButton("Review earlier reading and letters", onOpenCumulativeReview, tag = "v2-open-cumulative-review")
+        if (cumulativeReviewPolicy(unit.number) != null) {
+            Text("Before advancing, complete the assigned earlier-objective review. Earlier lesson answers and optional practice do not complete this review.")
+            V2SecondaryButton(cumulativeReviewTitle(unit.number), onOpenCumulativeReview, tag = "v2-open-cumulative-review")
         }
         if (decision == null) {
             V2Status("Preparing advancement")

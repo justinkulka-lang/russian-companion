@@ -27,10 +27,11 @@ internal data class CumulativeReviewAnswer(
 )
 
 /** Skill labels describe only the bounded evidence supported by the authored checks. */
-internal enum class CumulativeReviewSkill { BOUNDED_READING, PRINTED_LETTER_RECOGNITION }
+internal enum class CumulativeReviewSkill { BOUNDED_READING, PRINTED_LETTER_RECOGNITION, NOUN_GENDER_RECOGNITION }
 
 internal data class CumulativeReviewObjectivePool(
     val objectiveId: String, val skill: CumulativeReviewSkill, val candidateItemIds: List<String>,
+    val remediationStepId: String? = null,
 )
 
 /** Explicit declarations only; adding a type or passing a target number never activates a gate. */
@@ -45,9 +46,12 @@ internal data class CumulativeReviewPolicy(
             it.candidateItemIds.distinct().size == it.candidateItemIds.size })
     }
     // Keep the original Unit3 canonical form: persisted policy/assignment identities remain valid.
-    val digest = reviewHash(canonicalParts(listOf(id, "target:$targetUnit", "slots:${pool.size}") + pool.map {
-        canonicalParts(listOf(it.objectiveId, it.skill.name, canonicalParts(it.candidateItemIds)))
-    }))
+    val digest by lazy {
+        reviewHash(canonicalParts(listOf(id, "target:$targetUnit", "slots:${pool.size}") + pool.map {
+            canonicalParts(listOf(it.objectiveId, it.skill.name, canonicalParts(it.candidateItemIds)) +
+                listOfNotNull(it.remediationStepId))
+        }))
+    }
 }
 
 internal object Unit3CumulativeReviewPolicy {
@@ -60,9 +64,23 @@ internal object Unit3CumulativeReviewPolicy {
     val digest get() = definition.digest
 }
 
-/** Only the independently authored Unit3 engineering slice exists; later targets fail closed. */
-internal fun cumulativeReviewPolicy(targetUnit: Int): CumulativeReviewPolicy? =
-    Unit3CumulativeReviewPolicy.definition.takeIf { it.targetUnit == targetUnit }
+internal object Unit4CumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit4-prior-reading-gender-v1", 4, listOf(
+        CumulativeReviewObjectivePool("obj-u1-decoding", CumulativeReviewSkill.BOUNDED_READING, listOf("u1-i-decode-pair")),
+        CumulativeReviewObjectivePool("obj-u3-gender", CumulativeReviewSkill.NOUN_GENDER_RECOGNITION,
+            listOf("u3-i-gender-город"), "u3-st-teach-gender-2"),
+    ))
+}
+
+/** Authored engineering slices only; every remaining target has no policy. */
+internal fun cumulativeReviewPolicy(targetUnit: Int): CumulativeReviewPolicy? = when (targetUnit) {
+    3 -> Unit3CumulativeReviewPolicy.definition
+    4 -> Unit4CumulativeReviewPolicy.definition
+    else -> null
+}
+
+internal fun cumulativeReviewTitle(targetUnit: Int): String = if (targetUnit == 3)
+    "Review earlier reading and letters" else "Review earlier reading and noun genders"
 
 internal fun cumulativeReviewDeclarationValid(pack: V2CurriculumPack, targetUnit: Int): Boolean {
     val policy = cumulativeReviewPolicy(targetUnit) ?: return false
@@ -105,9 +123,11 @@ internal fun createCumulativeReviewAssignment(pack: V2CurriculumPack, learner: V
     val target = pack.unit(targetUnit) ?: return null
     if (!target.openable() || unmetCurrentPrerequisites(pack, target, learner).isNotEmpty()) return null
     val taught = currentCompletedUnitNumbers(pack, learner)
-    val slots = policy.pool.map { (objectiveId, skill, candidates) ->
+    val slots = policy.pool.map { (objectiveId, skill, candidates, remediationStepId) ->
         val unit = pack.units.singleOrNull { u -> u.objectives.any { it.id == objectiveId } } ?: return null
         val o = unit.objectives.single { it.id == objectiveId }
+        if (remediationStepId != null && (remediationStepId !in o.instructionStepIds + o.remediationStepIds ||
+            pack.step(remediationStepId) == null)) return null
         if (unit.number !in taught || !unit.openable() || unit.number >= targetUnit || !o.gating ||
             o.kind != "RECOGNITION" || o.instructionStepIds.isEmpty() || o.practiceStepIds.isEmpty() ||
             (o.instructionStepIds + o.practiceStepIds).any { !completedStepCounts(pack, learner, it) } ||
@@ -136,6 +156,7 @@ internal fun reviewAssignmentCurrent(pack: V2CurriculumPack, a: CumulativeReview
         val item = pack.item(s.itemId) ?: return@all false
         unit.openable() && unit.number < a.targetUnit && o.gating && o.kind == "RECOGNITION" &&
             s.objectiveId == spec.objectiveId && s.skill == spec.skill.name && s.itemId in spec.candidateItemIds &&
+            (spec.remediationStepId == null || spec.remediationStepId in o.instructionStepIds + o.remediationStepIds) &&
             s.itemId in o.checkItemIds && item.objectiveId == o.id &&
             s.itemDigest == V2Validator.checkItemContentDigest(item) &&
             s.unitDigest == reviewUnitDigest(pack, s.ownerUnit) &&
@@ -183,46 +204,55 @@ internal data class CumulativeUnitCompletion(val preActivation: Boolean, val pol
 
 internal fun unit3ReviewDeclarationValid(pack: V2CurriculumPack): Boolean = cumulativeReviewDeclarationValid(pack, 3)
 
-internal fun currentUnit3Assignment(pack: V2CurriculumPack, learner: V2LearnerView): CumulativeReviewAssignment? =
-    learner.reviewAssignments.lastOrNull { it.targetUnit == 3 && reviewAssignmentCurrent(pack, it) }
+internal fun currentCumulativeAssignment(pack: V2CurriculumPack, learner: V2LearnerView, targetUnit: Int): CumulativeReviewAssignment? =
+    learner.reviewAssignments.lastOrNull { it.targetUnit == targetUnit && reviewAssignmentCurrent(pack, it) }
 
-internal fun unit3ReviewComplete(pack: V2CurriculumPack, learner: V2LearnerView): Boolean {
-    if (!unit3ReviewDeclarationValid(pack)) return false
-    val a = currentUnit3Assignment(pack, learner) ?: return false
+internal fun currentUnit3Assignment(pack: V2CurriculumPack, learner: V2LearnerView): CumulativeReviewAssignment? =
+    currentCumulativeAssignment(pack, learner, 3)
+
+internal fun cumulativeReviewComplete(pack: V2CurriculumPack, learner: V2LearnerView, targetUnit: Int): Boolean {
+    if (!cumulativeReviewDeclarationValid(pack, targetUnit)) return false
+    val a = currentCumulativeAssignment(pack, learner, targetUnit) ?: return false
     return completedReviewSlots(pack, a, learner.reviewAnswers).size == a.slots.size
 }
+internal fun unit3ReviewComplete(pack: V2CurriculumPack, learner: V2LearnerView): Boolean = cumulativeReviewComplete(pack, learner, 3)
 
-/** No learner/prerequisite recursion: this only validates the persisted completion link. */
+/** No learner/prerequisite recursion: validate only ordinary old proof or a recorded review snapshot. */
 internal fun historicalReviewCompletionCurrent(pack: V2CurriculumPack, unit: V2Unit, learner: V2LearnerView): Boolean {
-    if (unit.number != 3) return true
-    val record = learner.unitReviewCompletions[3] ?: return false
-    if (record.preActivation) {
-        if (!unit3ReviewDeclarationValid(pack) || record.policyDigest.isNotEmpty() || record.assignmentId.isNotEmpty() || record.completionOrder != 0L) return false
-        val legacy = preReviewUnitDigest(pack)
+    val policy = cumulativeReviewPolicy(unit.number) ?: return true
+    if (!cumulativeReviewDeclarationValid(pack, unit.number)) return false
+    val record = learner.unitReviewCompletions[unit.number] ?: return false
+    val emptyLink = record.policyDigest.isEmpty() && record.assignmentId.isEmpty() && record.completionOrder == 0L
+    // Schema11 already wrote ordinary Unit4 rows with preActivation=false before Unit4 activation.
+    // Only exact pre-policy governed work may preserve them; current-source raw flags cannot.
+    if (emptyLink && (record.preActivation || unit.number == 4)) {
+        val legacy = preReviewUnitDigest(pack, unit.number)
         val oldEvidence = learner.copy(governedAttempts = learner.governedAttempts?.filter {
-            it.unitNumber != 3 || it.unitContentDigest == legacy
+            it.unitNumber != unit.number || it.unitContentDigest == legacy
         })
         return ordinaryUnitRequirements(pack, unit, oldEvidence).allowed
     }
-    if (!unit3ReviewDeclarationValid(pack) || record.policyDigest != Unit3CumulativeReviewPolicy.digest) return false
+    if (record.preActivation || record.policyDigest != policy.digest) return false
     val a = learner.reviewAssignments.singleOrNull { it.id == record.assignmentId } ?: return false
-    return a.targetUnit == 3 && record.completionOrder > a.boundary &&
+    return a.targetUnit == unit.number && record.completionOrder > a.boundary &&
         completedReviewSlots(pack, a, learner.reviewAnswers.filter { it.acceptedOrder <= record.completionOrder }).size == a.slots.size
 }
 
 /** Exact pre-activation rule identity, with every current item/source/teaching field retained. */
-private val preReviewUnitDigests = IdentityWeakCache<String>()
+private val preReviewUnitDigests = IdentityWeakCache<Map<Int, String>>()
 internal fun prescribedUnitIdentityMatches(pack: V2CurriculumPack, number: Int, recorded: String): Boolean {
     val current = V2PackIdentityIndex.unitDigest(pack, number) ?: V2Validator.unitContentReviewDigest(pack, number)
     if (recorded == current) return true
-    if (number != 3 || !unit3ReviewDeclarationValid(pack)) return false
-    return recorded == preReviewUnitDigest(pack)
+    if (cumulativeReviewPolicy(number) == null || !cumulativeReviewDeclarationValid(pack, number)) return false
+    return recorded == preReviewUnitDigest(pack, number)
 }
 
-private fun preReviewUnitDigest(pack: V2CurriculumPack): String =
-    preReviewUnitDigests.get(pack) ?: run {
-        val unit = pack.unit(3)!!
-        val old = pack.copy(units = pack.units.map { if (it.number == 3) unit.copy(advancement = unit.advancement!!.copy(
+private fun preReviewUnitDigest(pack: V2CurriculumPack, number: Int): String =
+    preReviewUnitDigests.get(pack)?.get(number) ?: run {
+        val unit = pack.unit(number)!!
+        val old = pack.copy(units = pack.units.map { if (it.number == number) unit.copy(advancement = unit.advancement!!.copy(
             requireDueReview = false, cumulativeReviewPolicyId = null)) else it })
-        V2Validator.unitContentReviewDigest(old, 3).also { preReviewUnitDigests.put(pack, it) }
+        V2Validator.unitContentReviewDigest(old, number).also { digest ->
+            preReviewUnitDigests.put(pack, preReviewUnitDigests.get(pack).orEmpty() + (number to digest))
+        }
     }

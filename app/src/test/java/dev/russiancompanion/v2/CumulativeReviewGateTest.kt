@@ -205,8 +205,8 @@ class CumulativeReviewGateTest {
         ready(p).use { s ->
             val entered=CompletableDeferred<Unit>(); val release=CompletableDeferred<Unit>()
             val api=object:V2Persistence by StoreV2Persistence(s,p) {
-                override suspend fun openCumulativeReview(pack:V2CurriculumPack) {
-                    entered.complete(Unit); release.await(); StoreV2Persistence(s,p).openCumulativeReview(pack)
+                override suspend fun openCumulativeReview(pack:V2CurriculumPack,targetUnit:Int) {
+                    entered.complete(Unit); release.await(); StoreV2Persistence(s,p).openCumulativeReview(pack,targetUnit)
                 }
             }
             V2UiWork.blockForTests=false

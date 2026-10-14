@@ -1,0 +1,31 @@
+{
+  "baselineCommit": "73a8f9ad447fe86ed334671277a86be0d790ec2f",
+  "unitNumber": 4,
+  "oldAdvancement": {
+    "requireInstruction": true,
+    "requireBookSelfAttestation": true,
+    "requireAppChecks": true,
+    "minimumDistinctChecks": 14,
+    "requireDueReview": false,
+    "tutorOptional": true
+  },
+  "newAdvancement": {
+    "requireInstruction": true,
+    "requireBookSelfAttestation": true,
+    "requireAppChecks": true,
+    "minimumDistinctChecks": 14,
+    "requireDueReview": true,
+    "tutorOptional": true,
+    "cumulativeReviewPolicyId": "unit4-prior-reading-gender-v1"
+  },
+  "minimumDistinctChecksUnchanged": 14,
+  "entireRawAssetExceptUnit4Advancement": "JSON_VALUE_IDENTICAL",
+  "provenance": 6913,
+  "capabilities": 58,
+  "canonicalPins": 71,
+  "oldSchema1Through11": "UNCHANGED",
+  "oldUnit3PolicyAndAssignmentIdentities": "PRESERVED_NULL_REMEDIATION_METADATA_OMITTED_FROM_CANONICAL_FORM",
+  "historicalDisposition": "Unit4 empty-link preActivation=true OR false rows require exact pre-policy governed work;new current-source raw flags never supply historical/review credit",
+  "newGates": "ONLY_UNIT4;UNIT3_REMAINS_ACTIVE;UNITS5_TO30_INACTIVE",
+  "claims": "Bounded print-pair decoding and noun-gender label recognition;not whole-word/unseen/production mastery or qualified approval"
+}

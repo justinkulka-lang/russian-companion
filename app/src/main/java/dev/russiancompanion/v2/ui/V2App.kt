@@ -290,11 +290,11 @@ internal fun V2App(
                             withCapturedLearnerEpoch(epoch) { api.recordAttempt(write) }
                         }
                     },
-                    onOpenCumulativeReview = {
+                    onOpenCumulativeReview = { targetUnit ->
                         val epoch = store.learnerMutationEpoch()
-                        writes.submit("review:open") {
+                        writes.submit("review:open:$targetUnit") {
                             withContext(Dispatchers.Default) { V2PackIdentityIndex.warm(pack) }
-                            withCapturedLearnerEpoch(epoch) { api.openCumulativeReview(pack) }
+                            withCapturedLearnerEpoch(epoch) { api.openCumulativeReview(pack, targetUnit) }
                         }
                         Unit
                     },

@@ -6,8 +6,9 @@ import java.security.MessageDigest
 internal object V2Validator {
     fun validate(pack: V2CurriculumPack, repositoryRoot: File? = null): V2Validation {
         val errors = mutableListOf<String>()
-        if (!unit3ReviewDeclarationValid(pack)) errors += "Unit 3 requires the versioned cumulative-review declaration"
-        for (unit in pack.units.filter { it.number != 3 }) {
+        for (number in listOf(3, 4)) if (!cumulativeReviewDeclarationValid(pack, number))
+            errors += "Unit $number requires the versioned cumulative-review declaration"
+        for (unit in pack.units.filter { cumulativeReviewPolicy(it.number) == null }) {
             if ((unit.advancement?.cumulativeReviewPolicyId != null ||
                 (unit.number != 2 && unit.advancement?.requireDueReview == true)) &&
                 !cumulativeReviewDeclarationValid(pack, unit.number)) {
