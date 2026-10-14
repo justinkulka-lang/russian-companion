@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.RuntimeCorrectionTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-14T17:20:30.487Z" hostname="f5c5dd6b855f" time="16.757">
+  <properties/>
+  <testcase name="storeWorkRunsOnTheStoreThread" classname="dev.russiancompanion.v2.RuntimeCorrectionTest" time="0.341"/>
+  <testcase name="unitOneSequenceKeepsDraftsThroughRemediationResumeAndAdvancement" classname="dev.russiancompanion.v2.RuntimeCorrectionTest" time="6.01"/>
+  <testcase name="failedAdvancementLeavesTheReviewInPlace" classname="dev.russiancompanion.v2.RuntimeCorrectionTest" time="4.666"/>
+  <testcase name="failedWritePreservesPriorDataAndShowsOneFailure" classname="dev.russiancompanion.v2.RuntimeCorrectionTest" time="2.025"/>
+  <testcase name="remediationReachesGuidedPracticeThenReturnsToTheFailedCheck" classname="dev.russiancompanion.v2.RuntimeCorrectionTest" time="1.718"/>
+  <testcase name="todayOpensAdvancementReviewInsteadOfTheLastLessonStep" classname="dev.russiancompanion.v2.RuntimeCorrectionTest" time="1.985"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call close. 
+]]></system-err>
+</testsuite>

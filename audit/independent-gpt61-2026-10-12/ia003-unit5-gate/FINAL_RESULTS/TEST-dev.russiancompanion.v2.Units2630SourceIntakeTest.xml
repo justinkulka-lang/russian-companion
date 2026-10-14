@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Units2630SourceIntakeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-14T17:20:02.826Z" hostname="f5c5dd6b855f" time="34.498">
+  <properties/>
+  <testcase name="generatedRussianPenguinAudioAndReleaseStayClosed" classname="dev.russiancompanion.v2.Units2630SourceIntakeTest" time="34.497"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call close. 
+]]></system-err>
+</testsuite>
