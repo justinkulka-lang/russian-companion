@@ -5,9 +5,9 @@ Application: dev.russiancompanion 2.0.0-dev (5)
 Curriculum source commit: 434b32c618f45faa67a765d63d7d1f080ffd05d9
 Unit content-review digest: 6a2f591fdf4386dfcf371fdb13d4f754ac416dcc85f6918ca9ea63596e46971b
 Mapping-package digest: 7228dd28cc3954cb8810a77b81ad72f55fa4e51a64d669fd691cd61a120d710c
-Pack content-review digest: 4d2d7078afd288289e300f082e641e637fda261d486fa9f1c6b91c014c5b3192
+Pack content-review digest: 0329d329e03ad02d0e258d36ffad07bcf80bfd9f6f6c5929808c7e90748aadc3
 Review-package digest: 732c5477e1899b42abd579a0d49cf2168b4d913be76576f857c671923d298a2d
-Repository source digest: a9cde918178bad5957d1e047d07c81ee3bbbff7d4894dd8105d110bbaf76e46e
+Repository source digest: 74d2210e6f95206023276a876788ba2898f85966bb13c564696d059c2ddf3721
 
 This packet was generated from the packaged curriculum at curriculum source commit 434b32c618f45faa67a765d63d7d1f080ffd05d9. That commit contains this unit's reviewed records. A later commit that changes only other units does not change this digest. This packet commit records that identity and does not perform review.
 

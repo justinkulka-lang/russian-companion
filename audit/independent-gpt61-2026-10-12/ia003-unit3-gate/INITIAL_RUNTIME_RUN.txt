@@ -1,0 +1,115 @@
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:generateDebugBuildConfig UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:processDebugNavigationResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:generateDebugRFile UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:compileDebugNavigationResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:javaPreCompileDebugUnitTest UP-TO-DATE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets UP-TO-DATE
+> Task :app:packageDebugUnitTestForUnitTest UP-TO-DATE
+> Task :app:mergeDebugUnitTestManifest UP-TO-DATE
+> Task :app:processDebugUnitTestManifest UP-TO-DATE
+> Task :app:generateDebugUnitTestConfig UP-TO-DATE
+> Task :app:kspDebugKotlin
+> Task :app:compileDebugKotlin
+> Task :app:compileDebugJavaWithJavac UP-TO-DATE
+> Task :app:processDebugJavaRes UP-TO-DATE
+> Task :app:compileDebugSources UP-TO-DATE
+> Task :app:bundleDebugClassesToRuntimeJar
+> Task :app:bundleDebugClassesToCompileJar
+> Task :app:kspDebugUnitTestKotlin
+> Task :app:compileDebugUnitTestKotlin
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/ContentAuditCorrectionTest.kt:157:56 Unnecessary non-null assertion (!!) on a non-null receiver of type 'V2Assessment'.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/ContentAuditCorrectionTest.kt:181:40 Unnecessary non-null assertion (!!) on a non-null receiver of type 'V2OriginalSynthesisEvidence'.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/ContentAuditCorrectionTest.kt:184:44 Unnecessary non-null assertion (!!) on a non-null receiver of type 'V2OriginalSynthesisEvidence'.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/ContentAuditCorrectionTest.kt:223:71 Unnecessary non-null assertion (!!) on a non-null receiver of type 'V2Assessment'.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/ContentAuditCorrectionTest.kt:229:52 Unnecessary non-null assertion (!!) on a non-null receiver of type 'V2Assessment'.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/ContentAuditCorrectionTest.kt:233:113 Unnecessary non-null assertion (!!) on a non-null receiver of type 'V2Assessment'.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/ContentAuditCorrectionTest.kt:292:71 Unnecessary non-null assertion (!!) on a non-null receiver of type 'V2Assessment'.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/ContentAuditCorrectionTest.kt:293:53 Unnecessary non-null assertion (!!) on a non-null receiver of type 'V2Assessment'.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/ContentAuditCorrectionTest.kt:315:44 Unnecessary non-null assertion (!!) on a non-null receiver of type 'V2OriginalSynthesisEvidence'.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/ContentAuditCorrectionTest.kt:359:68 Unnecessary non-null assertion (!!) on a non-null receiver of type 'V2Assessment'.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/ContentAuditCorrectionTest.kt:360:65 Unnecessary non-null assertion (!!) on a non-null receiver of type 'V2Assessment'.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/ContentAuditCorrectionTest.kt:361:53 Unnecessary non-null assertion (!!) on a non-null receiver of type 'V2Assessment'.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/ContentAuditCorrectionTest.kt:383:44 Unnecessary non-null assertion (!!) on a non-null receiver of type 'V2OriginalSynthesisEvidence'.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/CumulativeReviewStorageTest.kt:111:124 Unnecessary non-null assertion (!!) on a non-null receiver of type 'CumulativeReviewAssignment'.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/CumulativeReviewStorageTest.kt:111:161 Unnecessary non-null assertion (!!) on a non-null receiver of type 'CumulativeReviewAssignment'.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/Unit10FeedbackCorrectionTest.kt:64:23 Redundant creation of Json format. Creating instances for each usage can be slow.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/Unit11FeedbackCorrectionTest.kt:66:23 Redundant creation of Json format. Creating instances for each usage can be slow.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/Unit12FeedbackCorrectionTest.kt:82:23 Redundant creation of Json format. Creating instances for each usage can be slow.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/Unit13FeedbackCorrectionTest.kt:82:23 Redundant creation of Json format. Creating instances for each usage can be slow.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/Unit14FeedbackCorrectionTest.kt:84:23 Redundant creation of Json format. Creating instances for each usage can be slow.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/Unit15FeedbackCorrectionTest.kt:82:23 Redundant creation of Json format. Creating instances for each usage can be slow.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/Unit16InstrumentalInstructionTest.kt:39:72 Unnecessary non-null assertion (!!) on a non-null receiver of type 'V2Assessment'.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/Unit16InstrumentalInstructionTest.kt:62:40 Unnecessary non-null assertion (!!) on a non-null receiver of type 'V2OriginalSynthesisEvidence'.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/Unit16InstrumentalUsesTest.kt:35:72 Unnecessary non-null assertion (!!) on a non-null receiver of type 'V2Assessment'.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/Unit17AgeCalendarInstructionTest.kt:37:62 Unnecessary non-null assertion (!!) on a non-null receiver of type 'V2Assessment'.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/Unit17NumberInstructionTest.kt:38:62 Unnecessary non-null assertion (!!) on a non-null receiver of type 'V2Assessment'.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/Unit18ComparisonRelativeInstructionTest.kt:47:68 Unnecessary non-null assertion (!!) on a non-null receiver of type 'V2Assessment'.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/Unit19ConditionalObligationInstructionTest.kt:17:144 Unnecessary non-null assertion (!!) on a non-null receiver of type 'String'.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/Unit19ConditionalObligationInstructionTest.kt:45:68 Unnecessary non-null assertion (!!) on a non-null receiver of type 'V2Assessment'.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/Unit19PrefixUnit20MotionInstructionTest.kt:33:64 Unnecessary non-null assertion (!!) on a non-null receiver of type 'V2Assessment'.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/Unit21ReflexivePurposeInstructionTest.kt:37:87 Unnecessary non-null assertion (!!) on a non-null receiver of type 'V2Assessment'.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/Unit21ReflexivePurposeInstructionTest.kt:48:58 Unnecessary non-null assertion (!!) on a non-null receiver of type 'V2Assessment'.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/Unit29ActiveTimeCorrectionTest.kt:55:23 Redundant creation of Json format. Creating instances for each usage can be slow.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/Unit29ShortAdjectiveCorrectionTest.kt:101:20 Redundant creation of Json format. Creating instances for each usage can be slow.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/Unit6FeedbackCorrectionTest.kt:67:23 Redundant creation of Json format. Creating instances for each usage can be slow.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/Unit7FeedbackCorrectionTest.kt:59:23 Redundant creation of Json format. Creating instances for each usage can be slow.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/Unit9CompositionFeedbackCorrectionTest.kt:60:23 Redundant creation of Json format. Creating instances for each usage can be slow.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/Unit9NumberFeedbackCorrectionTest.kt:60:23 Redundant creation of Json format. Creating instances for each usage can be slow.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/Units2630SourceIntakeTest.kt:272:71 Unnecessary non-null assertion (!!) on a non-null receiver of type 'V2Assessment'.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/Units2630SourceIntakeTest.kt:274:38 Unnecessary non-null assertion (!!) on a non-null receiver of type 'V2Assessment'.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/Units2630SourceIntakeTest.kt:287:41 Unnecessary non-null assertion (!!) on a non-null receiver of type 'V2Assessment'.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/Units2630SourceIntakeTest.kt:730:45 Unnecessary non-null assertion (!!) on a non-null receiver of type 'V2Assessment'.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/audit/CurriculumReadinessReconciliationTest.kt:106:49 Unnecessary non-null assertion (!!) on a non-null receiver of type 'V2Unit'.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/audit/CurriculumReadinessReconciliationTest.kt:226:32 Unnecessary non-null assertion (!!) on a non-null receiver of type 'V2Unit'.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/audit/CurriculumReadinessReconciliationTest.kt:255:32 Unnecessary non-null assertion (!!) on a non-null receiver of type 'V2Unit'.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/review/Unit1ReviewPackage.kt:2020:33 Only safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type 'String?'.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/review/Unit1ReviewPackage.kt:2029:34 Only safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type 'String?'.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/review/Unit1ReviewPackage.kt:2030:33 Only safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type 'String?'.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/review/UnitReviewPipelineTest.kt:288:37 Only safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type 'String?'.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/review/UnitReviewPipelineTest.kt:308:37 Only safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type 'String?'.
+
+> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:processDebugUnitTestJavaRes UP-TO-DATE
+
+> Task :app:testDebugUnitTest
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+
+CumulativeReviewGateTest > actualContinueReviewAndGateUiRequireBothChoicesAndShowTargetedFeedback FAILED
+    java.lang.AssertionError at CumulativeReviewGateTest.kt:155
+
+41 tests completed, 1 failed
+
+> Task :app:testDebugUnitTest FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:testDebugUnitTest'.
+> There were failing tests. See the report at: file:///workspace/russian-companion/app/build/reports/tests/testDebugUnitTest/index.html
+
+* Try:
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+BUILD FAILED in 2m
+33 actionable tasks: 7 executed, 26 up-to-date

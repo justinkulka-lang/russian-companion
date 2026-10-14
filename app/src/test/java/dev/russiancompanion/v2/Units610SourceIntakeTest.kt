@@ -65,7 +65,7 @@ class Units610SourceIntakeTest {
         val pack = pack()
         assertEquals("161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7", V2Validator.unitContentReviewDigest(pack, 1))
         assertEquals("4fd67bff0431a11416115de023e076c52b7879304fc4a98b508d871170703e9c", V2Validator.unitContentReviewDigest(pack, 2))
-        assertEquals("29121dfbfb6a2e07d413e86b01462a76a62b9659f52597300ccd91c569224d7c", V2Validator.unitContentReviewDigest(pack, 3))
+        assertEquals("5480d8e87a1651d1bc16ad6c5a0856724f7bad1b746a62bbfab2bb60f3cc3e0b", V2Validator.unitContentReviewDigest(pack, 3))
         assertEquals("fc7326deb96fff33b36c0533b353ae8a8b239a8e63e057447d54999ed2b5c78c", V2Validator.unitContentReviewDigest(pack, 4))
         assertEquals("2d0bd5ce23de6a68c10be5a349554b768f551faaf0a90c3432bd5d6e00d1cd73", V2Validator.unitContentReviewDigest(pack, 5))
         assertEquals(

@@ -187,4 +187,3 @@ private fun preReviewUnitDigest(pack: V2CurriculumPack): String =
             requireDueReview = false, cumulativeReviewPolicyId = null)) else it })
         V2Validator.unitContentReviewDigest(old, 3).also { preReviewUnitDigests.put(pack, it) }
     }
-

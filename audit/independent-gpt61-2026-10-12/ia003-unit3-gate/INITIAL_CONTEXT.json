@@ -1,0 +1,99 @@
+{
+  "baselineCommit": "20a227817562e3a8645488fd52db2e7589713a7a",
+  "workingTree": "Uncommitted Unit3 gate/UI/activation migration and backup3 changes",
+  "compilationAttempt": "Zero tests: mixed SQLite fixture bind array inferred an intersection type; corrected to explicit arrayOf<Any?>.",
+  "runtimeScope": {
+    "tests": 41,
+    "passed": 40,
+    "failures": 1,
+    "errors": 0,
+    "skipped": 0
+  },
+  "runtimeFailure": "Compose assertTextContains defaults substring=false, so the new test expected an exact short phrase while the correct full feedback paragraph was visible. Replace with exact paragraph assertion, retaining the feedback check.",
+  "files": [
+    {
+      "path": "app/src/main/assets/content/v2-curriculum.json",
+      "sha256": "6df1de6aeca3ef6e9c74de3fcf07df8759b17f5342d318f92e37cababfba81f1"
+    },
+    {
+      "path": "app/src/main/java/dev/russiancompanion/data/local/AppDatabase.kt",
+      "sha256": "44828fe10e5eda65d98e1ee5492f648232d614710f3dfda0cf69edb9ceb1ee86"
+    },
+    {
+      "path": "app/src/main/java/dev/russiancompanion/data/local/DatabaseMigrations.kt",
+      "sha256": "f95efeb4e9899b69388b109f3eb4b3ae15c5c11f3fb7016a9da9a144cfceaffd"
+    },
+    {
+      "path": "app/src/main/java/dev/russiancompanion/data/local/LocalStore.kt",
+      "sha256": "30647ff82163a6eb60c970e0dbc7773c9d7b55632789b8ef5b63f8ec2eb13807"
+    },
+    {
+      "path": "app/src/main/java/dev/russiancompanion/v2/backup/V2BackupFormat.kt",
+      "sha256": "88033cfe016b0550cea9e07c92e90227b2a9480ae1a8ad3cff4323f16107acc4"
+    },
+    {
+      "path": "app/src/main/java/dev/russiancompanion/v2/curriculum/V2CompletionEvidence.kt",
+      "sha256": "bae0c1f6583a7e7ee7c9a47a4d24874d54cd20f3ebc9f83b82123053dcb29b9a"
+    },
+    {
+      "path": "app/src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt",
+      "sha256": "c7a44f6db5b125e65fa9dac80a02f4957bd64929093e053ae1fd84625c9edbf7"
+    },
+    {
+      "path": "app/src/main/java/dev/russiancompanion/v2/curriculum/V2GovernedIdentity.kt",
+      "sha256": "f1450256df5def3781134008a72415a925bab5d76ad59bfcb350b1b60d6ff889"
+    },
+    {
+      "path": "app/src/main/java/dev/russiancompanion/v2/curriculum/V2Models.kt",
+      "sha256": "6522a4627d8897f670c7d390e3cf15575186157bc62a0bb11cb7505f127b6fd4"
+    },
+    {
+      "path": "app/src/main/java/dev/russiancompanion/v2/curriculum/V2ProgressRules.kt",
+      "sha256": "f22d3f7b93121e4e15ad52690306a84ff1c818db19f46e95a91d3c67c1fd9ad1"
+    },
+    {
+      "path": "app/src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt",
+      "sha256": "f79f0af05dd58065d908ffd56186360e1b4d94bf75161f2a93e3be6f37a30ee1"
+    },
+    {
+      "path": "app/src/main/java/dev/russiancompanion/v2/data/V2Entities.kt",
+      "sha256": "24db026c9241bf3bd86faa18aa3b309b13b14b571bd1f5c14c2fa91056ee6a4a"
+    },
+    {
+      "path": "app/src/main/java/dev/russiancompanion/v2/ui/V2App.kt",
+      "sha256": "d22a81211bf6fb8c65e1a23d0a064030b3ece7975994556cf51014168a83e3a0"
+    },
+    {
+      "path": "app/src/main/java/dev/russiancompanion/v2/ui/V2NavHost.kt",
+      "sha256": "3bab11d1af492c2eae4196fcaf480ca2cfb2de3c022b28db13bceefdef52c14a"
+    },
+    {
+      "path": "app/src/main/java/dev/russiancompanion/v2/ui/V2Persistence.kt",
+      "sha256": "12dc3426d44cd824a971212aef3a1a5025cc532cf8ce7c4c8e728caeef2cedf8"
+    },
+    {
+      "path": "app/src/main/java/dev/russiancompanion/v2/ui/V2Routes.kt",
+      "sha256": "039f7bf8a9beacecc6205c661a3f00307a32e3ffc4330991eb4f79fed96d5bc9"
+    },
+    {
+      "path": "app/src/main/java/dev/russiancompanion/v2/ui/V2Screens.kt",
+      "sha256": "ac696726570644f5839eb0d8239c33e0660053f9dd0578e4d11e12290de478ea"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/CumulativeReviewStorageTest.kt",
+      "sha256": "ebe2ce2546ffc6d50bb2c17b4dff3f68c48f52b5ca20b1212860469d95256ab1"
+    },
+    {
+      "path": "app/schemas/dev.russiancompanion.data.local.AppDatabase/11.json",
+      "sha256": "53ff52219502b7ff9ff14e500e15eec8acf43ece39b40c12fca99e9fd5959c33"
+    },
+    {
+      "path": "app/src/main/java/dev/russiancompanion/v2/ui/V2CumulativeReviewScreen.kt",
+      "sha256": "d5509723e1453bd9ff2927ad33206ed50f643fadf5e16596904c4e8f319a49a7"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/CumulativeReviewGateTest.kt",
+      "sha256": "e666347a177e03456ba54f1fd381e2ac423587858487bfc0daa14ea78a283e96"
+    }
+  ]
+}
