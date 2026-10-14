@@ -11,12 +11,12 @@ Unit 11 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 89a8323e451ac73345081125b44ab6f107a6995c
-- Unit content-review SHA-256: 4e3f32d66de93776e545f388a06a6ab514bc4ca050a425608f879de8ac4e9d40
+- Curriculum source commit: 37e6a0cbd7de30a539e90a0481f6ab8c5c562ed9
+- Unit content-review SHA-256: 35de2337c00321867e4c30871b048181738017a79babc4f0135ad4131e1b6c69
 - Mapping-package SHA-256: 61b1d9c77882225528ca0d0f68a44efa13c68605efdaed0e6abb8e1b519db587
-- Pack content-review SHA-256: ae09c34cf5d80a63e0ea46b014d2690e00b23b59f6448917ca071e6555d02594
-- Review-package SHA-256: bc27d705523d77a5e521734360d246e9e7406294e46cf0d6b22671c69b7c592c
-- Repository source SHA-256: c581506da064d2be845e1f1277003ef2a0aac21fd689d57d1a8f77adf854942b
+- Pack content-review SHA-256: bf20ef2d14d97a4d29a38a6f4bec683917c226e07ab3c6a348dff1cb6592657d
+- Review-package SHA-256: a033385ada8abab3709054bdfbaadf74ded58b92d5fa9478903fc2fde052f66a
+- Repository source SHA-256: 7494579a5f42a37ff33fd8ca0f1e017ad8974b2d3907d5549557f0788ae99fe5
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -583,12 +583,12 @@ remediationStepId=u11-st-rem-past-be
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 74bdf4ae9e8ba7ff50a4263e8f0a626556a07f88e3d42f7c6943705e0331c9a9
+- Content hash: 0180940d5369ce37d512c2208300c41c01630be65889a204615f9c310fe94b90
 
 title=Choose past-tense gender agreement
 estimatedMinutes=12
 objectives=obj-u11-past-aspect
-steps=u11-st-teach-past-aspect-1,u11-st-guided-past-aspect-1,u11-st-teach-past-aspect-2,u11-st-teach-past-aspect-3,u11-st-teach-past-aspect-4,u11-st-rem-past-aspect,u11-st-check-past-aspect
+steps=u11-st-teach-past-aspect-1,u11-st-teach-past-aspect-2,u11-st-teach-past-aspect-3,u11-st-teach-past-aspect-4,u11-st-guided-past-aspect-1,u11-st-rem-past-aspect,u11-st-check-past-aspect
 
 ### STEP `u11-st-teach-past-aspect-1`
 
@@ -611,28 +611,6 @@ unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=
-
-### STEP `u11-st-guided-past-aspect-1`
-
-- Objectives: obj-u11-past-aspect
-- Sessions: u11-s-past-aspect
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: bb2ba388033efe07080688ea67e3ea29cde528755ccfed96c1c882abecbcb4ea
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u11-g-past-aspect-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u11-st-rem-past-aspect
 
 ### STEP `u11-st-teach-past-aspect-2`
 
@@ -700,6 +678,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u11-st-guided-past-aspect-1`
+
+- Objectives: obj-u11-past-aspect
+- Sessions: u11-s-past-aspect
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: bb2ba388033efe07080688ea67e3ea29cde528755ccfed96c1c882abecbcb4ea
+
+kind=GUIDED
+title=Guided practice
+body=Choose the admitted record. The feedback states the frozen field.
+dominantAction=Continue
+references=
+items=u11-g-past-aspect-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u11-st-rem-past-aspect
+
 ### STEP `u11-st-rem-past-aspect`
 
 - Objectives: obj-u11-past-aspect
@@ -708,15 +708,21 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3c71c056ec820a496d9fa770ed8c0e7727814f7dd02d85e2a2759448f1bf00fd
+- Content hash: d0b365f2bd1bfbff5e0f7447407fd602c05efa0b0d5c529619a69232b67488d7
 
 kind=REMEDIATE
 title=Remediation
-body=Use the gender requested in the question. The pronoun I does not select one past-tense gender for every speaker. Compare the entire recorded forms: прочита́л, прочита́ла and прочита́ло. These are masculine, feminine and neuter singular forms of the same verb, respectively.
+body=In the singular, a past-tense verb agrees with its subject in gender. In this recorded set, прочита́л is masculine, прочита́ла feminine, and прочита́ло neuter. Compare the endings while keeping the same verb.
+
+Use the gender requested in the question. The pronoun I does not select one past-tense gender for every speaker. Compare the entire recorded forms: прочита́л, прочита́ла and прочита́ло. These are masculine, feminine and neuter singular forms of the same verb, respectively.
+
+The recorded feminine singular past form is прочита́ла. Compare its ending with the masculine прочита́л and neuter прочита́ло forms of the same verb.
+
+The recorded neuter singular past form is прочита́ло. Compare its ending with the masculine прочита́л and feminine прочита́ла forms of the same verb.
 dominantAction=Continue
 references=
 items=
-examples=ex-u11-past-aspect-0,ex-u11-past-aspect-1
+examples=ex-or-u11-past-aspect-2,ex-or-u11-past-aspect-3,ex-or-u11-past-aspect-4
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1512,40 +1518,6 @@ note=learn
 objectiveId=obj-u11-reflexive
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
-### EXAMPLE `ex-u11-past-aspect-0`
-
-- Objectives: obj-u11-past-aspect
-- Sessions: u11-s-past-aspect
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 9a916eff4ef7c157bdea558ba812523c1b8596da3824ef585fb17a302610ec2a
-
-kind=LEXICAL
-letterId=
-display=я читал
-note=I was reading
-objectiveId=obj-u11-past-aspect
-reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-
-### EXAMPLE `ex-u11-past-aspect-1`
-
-- Objectives: obj-u11-past-aspect
-- Sessions: u11-s-past-aspect
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: feac967ab86b8b185a7482527262f24cfab1fc029dfd787b67acb161b23e6918
-
-kind=LEXICAL
-letterId=
-display=я прочитал
-note=I read
-objectiveId=obj-u11-past-aspect
-reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-
 ### GUIDED_PRACTICE `u11-g-past-read-0`
 
 - Objectives: obj-u11-past-read
@@ -2188,6 +2160,48 @@ attribution=Russian Companion content-audit research synthesis, content-audit-20
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
 sourceHash=f9c17dd1eed776c57a55145e7bc123834f34fdd5e49ce5ada1816208cb71394f
 contentHash=1e43f837fbfcbdc7d7e5c157df05e79afc9f4a889a33f20286c012ba68134b94
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u11-agreement-remediation-complete-v1`
+
+- Objectives: obj-u11-past-aspect
+- Sessions: u11-s-orient, u11-s-past-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1bca1a651e0549ab0bba5adea0fd938cf8bd12b22bc32b82c7d26719d91c6278
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u11-past-aspect:agreement-remediation-complete-v1
+originalSourceText=Arrangement of unchanged previously authored Unit11 agreement explanations prov-ca-u11-agreement-teach-1..4. Frozen OpenRussian verbs.csv:прочита'ть#past_m,past_f,past_n at50e210c4803237779cb562bc1abcea529066031c retain separate CC BY-SA4.0 native provenance. Complete retained Wikibooks Past tense4567337 inspected for context; its aspect/English-tense equivalences and быть regularity claims are not newly admitted. No new rules, Russian, stress, scored tuples or private Penguin prose. Arrangement authored2026-10-14;qualified semantic and rights review pending.
+In the singular, a past-tense verb agrees with its subject in gender. In this recorded set, прочита́л is masculine, прочита́ла feminine, and прочита́ло neuter. Compare the endings while keeping the same verb.
+
+Use the gender requested in the question. The pronoun I does not select one past-tense gender for every speaker. Compare the entire recorded forms: прочита́л, прочита́ла and прочита́ло. These are masculine, feminine and neuter singular forms of the same verb, respectively.
+
+The recorded feminine singular past form is прочита́ла. Compare its ending with the masculine прочита́л and neuter прочита́ло forms of the same verb.
+
+The recorded neuter singular past form is прочита́ло. Compare its ending with the masculine прочита́л and feminine прочита́ла forms of the same verb.
+shippedText=In the singular, a past-tense verb agrees with its subject in gender. In this recorded set, прочита́л is masculine, прочита́ла feminine, and прочита́ло neuter. Compare the endings while keeping the same verb.
+
+Use the gender requested in the question. The pronoun I does not select one past-tense gender for every speaker. Compare the entire recorded forms: прочита́л, прочита́ла and прочита́ло. These are masculine, feminine and neuter singular forms of the same verb, respectively.
+
+The recorded feminine singular past form is прочита́ла. Compare its ending with the masculine прочита́л and neuter прочита́ло forms of the same verb.
+
+The recorded neuter singular past form is прочита́ло. Compare its ending with the masculine прочита́л and feminine прочита́ла forms of the same verb.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2cdc1ecefc8674c61c32377921a3e6ec3eb950afc413222bd98c729c6eb1245b
+contentHash=91840f73a3aa73e800e280267f602df808af2fc7c2138f391333bf2c250fae93
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -6103,16 +6117,17 @@ permitsAppUse=true
 - `u11-st-teach-past-aspect-1` EXAMPLE `ex-or-u11-past-aspect-3`
 - `u11-st-teach-past-aspect-1` EXAMPLE `ex-or-u11-past-aspect-4`
 - `u11-st-teach-past-aspect-1` REFERENCE `ref-u1115-attribution`
-- `u11-st-guided-past-aspect-1` REMEDIATION `u11-st-rem-past-aspect`
-- `u11-st-guided-past-aspect-1` ITEM `u11-g-past-aspect-0`
 - `u11-st-teach-past-aspect-2` REFERENCE `ref-u1115-attribution`
 - `u11-st-teach-past-aspect-3` EXAMPLE `ex-or-u11-past-aspect-2`
 - `u11-st-teach-past-aspect-3` EXAMPLE `ex-or-u11-past-aspect-3`
 - `u11-st-teach-past-aspect-3` REFERENCE `ref-u1115-attribution`
 - `u11-st-teach-past-aspect-4` EXAMPLE `ex-or-u11-past-aspect-4`
 - `u11-st-teach-past-aspect-4` REFERENCE `ref-u1115-attribution`
-- `u11-st-rem-past-aspect` EXAMPLE `ex-u11-past-aspect-0`
-- `u11-st-rem-past-aspect` EXAMPLE `ex-u11-past-aspect-1`
+- `u11-st-guided-past-aspect-1` REMEDIATION `u11-st-rem-past-aspect`
+- `u11-st-guided-past-aspect-1` ITEM `u11-g-past-aspect-0`
+- `u11-st-rem-past-aspect` EXAMPLE `ex-or-u11-past-aspect-2`
+- `u11-st-rem-past-aspect` EXAMPLE `ex-or-u11-past-aspect-3`
+- `u11-st-rem-past-aspect` EXAMPLE `ex-or-u11-past-aspect-4`
 - `u11-st-check-past-aspect` REMEDIATION `u11-st-rem-past-aspect`
 - `u11-st-check-past-aspect` ITEM `u11-i-past-aspect-1`
 - `u11-st-check-past-aspect` ITEM `u11-i-past-aspect-2`
@@ -6148,6 +6163,7 @@ permitsAppUse=true
 - `obj-u11-past-aspect` PROVENANCE `prov-ca-11-369`
 - `obj-u11-past-be` PROVENANCE `prov-ca-11-47`
 - `obj-u11-reflexive` PROVENANCE `prov-ca-u11-agreement-reflexive`
+- `obj-u11-past-aspect` PROVENANCE `prov-ca-u11-agreement-remediation-complete-v1`
 - `obj-u11-past-aspect` PROVENANCE `prov-ca-u11-agreement-teach-1`
 - `obj-u11-past-aspect` PROVENANCE `prov-ca-u11-agreement-teach-2`
 - `obj-u11-past-aspect` PROVENANCE `prov-ca-u11-agreement-teach-3`

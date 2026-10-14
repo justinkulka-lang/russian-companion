@@ -6,8 +6,8 @@
 **Repository:** `justinkulka-lang/russian-companion`  
 **Repository baseline main:** `c153103a0048f69f8de339b83e77d93572ebddb7`  
 **Unit 23 unprepared correction:** `fd69bd03298d69669d09daafe8d364b0e576d033` (`Keep Unit 23 unprepared until completion over a period is admitted.`). That commit is an ancestor of the repository baseline. It is not the repository baseline main commit.  
-**Pack content-review digest:** `ae09c34cf5d80a63e0ea46b014d2690e00b23b59f6448917ca071e6555d02594`
-**Repository source digest:** `c581506da064d2be845e1f1277003ef2a0aac21fd689d57d1a8f77adf854942b`
+**Pack content-review digest:** `bf20ef2d14d97a4d29a38a6f4bec683917c226e07ab3c6a348dff1cb6592657d`
+**Repository source digest:** `7494579a5f42a37ff33fd8ca0f1e017ad8974b2d3907d5549557f0788ae99fe5`
 **Public release:** **NOT_APPROVED**
 
 ## Purpose
@@ -277,3 +277,7 @@ Current Unit24 context-transfer checkpoint: original repeated guided persuasion 
 Unit3 cumulative-review activation: the advancement projection above supplies ordinary work but no assigned cumulative review, so Unit3 now records NO. This is a due-review blocker, not a new missing linguistic/source capability. The separate runtime/UI proof completes both assigned earlier-objective checks and advances. Existing native material and ordinary minimum12 remain; qualified educational/source/rights acceptance is pending. Older completed-unit rows retain only exact pre-activation ordinary evidence; they do not fabricate review completion. New completions record an immutable accepted-answer snapshot. That earlier Unit3-only scope is superseded by the Unit4 activation below. Final comprehensive independent audit precedes actual Galaxy S26 Ultra airplane-mode/reboot acceptance, which remains LAST/outstanding. No merge,freeze,signing or release approval.
 
 Unit4 cumulative-review activation: its ordinary-work projection now also records NO because it supplies no assigned review. The explicit prior print-pair/noun-gender assignment is a due-review obligation,not a new linguistic/source-capability gap. Separate real runtime/UI checks answer both assigned items and advance. All native material,ordinary minimum14,existing independent checks and source blockers remain. Exact pre-policy Unit4 work preserves genuine old schema11 completions with either activation-marker value and empty links;new current-source raw flags do not count. Current linked completions preserve accepted-answer snapshots. Units5–30 cumulative policies and qualified educational/source/rights assessment remain outstanding. Final independent comprehensive audit precedes actual Galaxy S26 Ultra airplane-mode/reboot acceptance LAST/outstanding. No merge,freeze,signing or release approval.
+
+## Unit11 agreement remediation arrangement — 2026-10-14
+
+The four unchanged agreement cards now precede practice, and remediation restores their full text and the three same-lemma checked forms. Historical `ex-u11-past-aspect-0` and `ex-u11-past-aspect-1` remain packaged but are no longer used by this objective;they add two explicit orphan examples to the four existing ones. Do not delete or bind them solely to reduce the count. This dossier remains research planning only;no qualified review or release approval.
