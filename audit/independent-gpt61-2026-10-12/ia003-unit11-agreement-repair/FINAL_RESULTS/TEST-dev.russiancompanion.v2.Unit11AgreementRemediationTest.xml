@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit11AgreementRemediationTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-14T23:34:10.303Z" hostname="f5c5dd6b855f" time="56.975">
+  <properties/>
+  <testcase name="oldGuidePositionDoesNotResumeAsTheNewSecondTeachingCard" classname="dev.russiancompanion.v2.Unit11AgreementRemediationTest" time="20.965"/>
+  <testcase name="unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException" classname="dev.russiancompanion.v2.Unit11AgreementRemediationTest" time="0.29"/>
+  <testcase name="wrongIndependentAnswerShowsCompleteRepairAndGuidedSuccessStillNeedsANewCheckAnswer" classname="dev.russiancompanion.v2.Unit11AgreementRemediationTest" time="14.368"/>
+  <testcase name="oldPrescribedAttemptsStayStoredButCannotCreditChangedUnitInstruction" classname="dev.russiancompanion.v2.Unit11AgreementRemediationTest" time="1.055"/>
+  <testcase name="completeAgreementTeachingPrecedesPracticeAndRepairRestoresTheCheckedForms" classname="dev.russiancompanion.v2.Unit11AgreementRemediationTest" time="16.677"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

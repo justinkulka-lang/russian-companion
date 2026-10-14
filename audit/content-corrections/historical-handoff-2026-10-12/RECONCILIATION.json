@@ -1,0 +1,41 @@
+{
+  "kind": "HISTORICAL_RECONSTRUCTED_HANDOFF_RECONCILIATION",
+  "date": "2026-10-14",
+  "archivePath": "/workspace/artifacts/Russian_Companion_Codex_Handoff_2026-10-12.zip",
+  "archiveBytes": 6559732,
+  "archiveSha256": "046f66597140b74bea0d92511abe7898b507f9e441db512ad1797524d4e28124",
+  "crc": "PASS",
+  "archiveSourceCommit": "b1218041cce417d072d8f86f97b973aa08cfaa31",
+  "manifestSha256": "25b8358577e0ca362b1ad206fd9017e6c1409a445a5cb878afb990d91b528f0a",
+  "manifestFilesHashVerified": 712,
+  "repositorySnapshotsVerifiedAgainstGit": 710,
+  "repositorySnapshotCopiesImported": 0,
+  "completeResumePromptRead": true,
+  "promptArchiveEntry": "RESUME_PROMPT.md",
+  "promptSha256": "71a9cc6bc4ed85108ac133f10497f3278beb1170c305cbf1da98ba37e420374c",
+  "durablePromptPath": "audit/content-corrections/historical-handoff-2026-10-12/RESUME_PROMPT_RECONSTRUCTED.md",
+  "existingEquivalentPromptPaths": [],
+  "currentAuthorizedRepository": "justinkulka-lang/russian-companion",
+  "currentAuthorizedBranch": "cursor/content-audit-corrections-964f",
+  "draftPR": 64,
+  "sourceCommitIsAncestorOfCurrentHead": true,
+  "reconciliation": {
+    "checkout": "Same repository/authorized branch/Draft PR64;retain newer work,no reset/force-push",
+    "oldNextWork": "Unit27/28\u201330 directions are historical;current correction/findings/checkpoints supersede them",
+    "environment": "Saved configuration persists;publication subsequently USER_CONFIRMED;old prompt not-published/403 statements are historical,current GitHub API/push work",
+    "tests": "67 focused at420f and main563reported/562pass/one skip historical;691 source annotations and112 delta do not prove executed complete suite",
+    "sourceAndRights": "Preserve historical evidence/native/capability/rights constraints;qualified semantic review remains pending",
+    "acceptance": "User subsequently directs final comprehensive independent audit FIRST,physical Galaxy S26 Ultra airplane-mode/reboot acceptance LAST;no merge,freeze,signing or release approval"
+  },
+  "originalMissingHandoffRecovered": false,
+  "originalAuditAndFourHistoricalCsvsRecovered": false,
+  "csvArchiveMembers": [
+    "repository/audit/content-corrections/ITEM_TARGET_RECONCILIATION_PENDING.csv"
+  ],
+  "privatePdfMembers": [],
+  "independentlyExpectedHistoricalPrivatePdfSha256": null,
+  "observedPrivatePdfContinuitySha256": "0c441ffd8855b292922a40b10935d5ffb1b088b7118acfcc1856e259dc01867a",
+  "nextPrivatePdfAcquisition": "Separate private attachment,outside GitHub/assets/logs/packets/environment snapshots;observed continuity pin is not an independently recovered historical expected digest",
+  "promptPrivateBookProse": "NONE_OBSERVED;engineering instructions inspected before safe byte-for-byte retention",
+  "earlierAvailabilityStatements": "Original earlier ZIP/audit/four CSVs still missing. This reconstructed local ZIP is available and read;do not equate the two."
+}

@@ -62,6 +62,35 @@
           "Broader instruction/remediation accuracy and coverage"
         ],
         "acceptance": "ENGINEERING_ONLY;IA003_OPEN"
+      },
+      "preUnit12AgreementRepair": {
+        "implementationCommit": "37e6a0cbd7de30a539e90a0481f6ab8c5c562ed9",
+        "testedCommit": "ed167f3e2e423a2b31d5002c6b5ebbf4a2219893",
+        "focusedCounts": {
+          "tests": 22,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "completeSuite": false,
+        "unit12Activated": false,
+        "activeEngineeringUnits": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "manifest": "ia003-unit11-agreement-repair/FINAL_VERIFICATION_MANIFEST.json",
+        "historicalExamplesNowUnbound": [
+          "ex-u11-past-aspect-0",
+          "ex-u11-past-aspect-1"
+        ],
+        "qualifiedAcceptance": false
       }
     },
     {
