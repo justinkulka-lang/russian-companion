@@ -117,6 +117,7 @@
       "unitNumber": 8,
       "changedFields": [
         "contentReviewDigest",
+        "curriculumSourceCommit",
         "packContentReviewDigest",
         "records",
         "repositorySourceDigest",
@@ -124,8 +125,8 @@
       ],
       "contentReviewDigest": "96b3a661d0ad5edd55ed44e2890a88250081275a7881713c9daf37ed94d7f42a",
       "mappingPackageDigest": "3e6c6b7d1ed5142212fe254e14d7d6ebb9ecdf862b9dce921a415ba8e45411f1",
-      "reviewPackageDigest": "69cee2295feec970cb01af1a41c88fb7d4d45bb80ca661b0dd25f8ecc6378a66",
-      "curriculumSourceCommit": "4a67bce3a8c94efd7e63f49d911f91746376ecb2"
+      "reviewPackageDigest": "9d285d238824e09b1133ef0b0a6c9022374472341c9f9c38796020cd9f67aff3",
+      "curriculumSourceCommit": "c0a758abc8e0afc103a9987f268848630586d35e"
     },
     {
       "unitNumber": 9,

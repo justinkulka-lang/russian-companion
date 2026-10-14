@@ -94,7 +94,7 @@ internal const val UNIT8_AGREEMENT_TRANSFER_CURRICULUM_COMMIT = "4295962682885f0
 internal fun curriculumCommitForUnit(unitNumber: Int): String =
     if (unitNumber == 3) UNIT3_CUMULATIVE_REVIEW_CURRICULUM_COMMIT
     else if (unitNumber == 4) UNIT4_CUMULATIVE_REVIEW_CURRICULUM_COMMIT
-    else if (unitNumber == 8) UNIT8_PLURAL_INSTRUCTION_CURRICULUM_COMMIT
+    else if (unitNumber == 8) UNIT8_CUMULATIVE_REVIEW_CURRICULUM_COMMIT
     else if (unitNumber == 10) UNIT10_FEEDBACK_CURRICULUM_COMMIT
     else if (unitNumber == 11) UNIT11_FEEDBACK_CURRICULUM_COMMIT
     else if (unitNumber == 12) UNIT12_FEEDBACK_CURRICULUM_COMMIT
@@ -108,7 +108,6 @@ internal fun curriculumCommitForUnit(unitNumber: Int): String =
     else if (unitNumber == 5) UNIT5_CUMULATIVE_REVIEW_CURRICULUM_COMMIT
     else if (unitNumber == 6) UNIT6_CUMULATIVE_REVIEW_CURRICULUM_COMMIT
     else if (unitNumber == 7) UNIT7_CUMULATIVE_REVIEW_CURRICULUM_COMMIT
-    else if (unitNumber == 8) UNIT8_CUMULATIVE_REVIEW_CURRICULUM_COMMIT
     else if (unitNumber == 9) UNIT9_AGREEMENT_TRANSFER_CURRICULUM_COMMIT
     else if (unitNumber == 28) UNIT28_TIMING_TRANSFER_CURRICULUM_COMMIT
     else if (unitNumber == 24) UNIT24_CONTEXT_TRANSFER_CURRICULUM_COMMIT

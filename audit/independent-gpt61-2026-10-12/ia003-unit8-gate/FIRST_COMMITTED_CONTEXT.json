@@ -1,0 +1,14 @@
+{
+  "testedCommit": "b1d4879017d876c65df53f05b310bad4dfded7a2",
+  "command": "bash audit/independent-gpt61-2026-10-12/ia003-unit8-gate/verify.sh",
+  "counts": {
+    "tests": 133,
+    "failures": 1,
+    "errors": 0,
+    "skipped": 0
+  },
+  "runnerExitCode": 1,
+  "lintAndGate": "NOT_REACHED",
+  "failure": "UnitReviewPipelineTest.committedUnitPackagesMatchTheGenerator:old Unit8 selector shadowed new cumulative-review selector;source ancestry mismatch",
+  "repair": "Use new genuine Unit8 implementation selector once;retain historical constant and all assertions;regenerate pending packets,rerun full focused scope"
+}

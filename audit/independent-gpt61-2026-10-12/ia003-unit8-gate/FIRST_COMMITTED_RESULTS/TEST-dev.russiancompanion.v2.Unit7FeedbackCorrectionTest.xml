@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit7FeedbackCorrectionTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-14T19:10:52.047Z" hostname="f5c5dd6b855f" time="13.598">
+  <properties/>
+  <testcase name="feedbackExplainsGenderNumberAndNominativeAgreement" classname="dev.russiancompanion.v2.Unit7FeedbackCorrectionTest" time="9.801"/>
+  <testcase name="historicalGenericFeedbackCreditIsRetainedButStale" classname="dev.russiancompanion.v2.Unit7FeedbackCorrectionTest" time="1.135"/>
+  <testcase name="wrongAdjectiveSelectionDisplaysTheAgreementExplanation" classname="dev.russiancompanion.v2.Unit7FeedbackCorrectionTest" time="2.621"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+]]></system-err>
+</testsuite>
