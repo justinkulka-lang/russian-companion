@@ -316,7 +316,7 @@ class BatchECapabilityResearchTest {
         val pack = loadCurriculumPack(root)
         val model = reconcileCurriculumReadiness(root, pack)
         val candidate = readAcceptanceCandidate(root)
-        assertEquals("0329d329e03ad02d0e258d36ffad07bcf80bfd9f6f6c5929808c7e90748aadc3", model.packContentReviewDigest)
+        assertEquals("daca542983af27d9543a0d2eb9ddd11a63b0dd035ad6c155b6feaea753c8e181", model.packContentReviewDigest)
         assertEquals(candidate?.sourceDigest, model.repositorySourceDigest)
         assertEquals(model.repositorySourceDigest, computeReleaseSourceDigest(root))
         assertEquals("NOT_APPROVED", model.publicRelease)
