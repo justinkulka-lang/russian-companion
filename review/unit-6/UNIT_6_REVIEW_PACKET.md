@@ -11,12 +11,12 @@ Unit 6 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 4e5e7adc8b9cfa96024e6b8c9c9db18d260a9634
-- Unit content-review SHA-256: ca4ad8b37d632b7d9c9008c387a1efe57938026c96275995e22b5c3e24a843a5
+- Curriculum source commit: 30ca4e8a8200dc34704a8fcb2aab03ed1df2c97e
+- Unit content-review SHA-256: d162e5571c6646b01e3fb6bcdf9f87dd3af31b593c7f27615c40019930c6faad
 - Mapping-package SHA-256: f95e0c2f351ec7cba23cdb09b87274bb97f2e392dd783ad59c2978ed58f63b15
-- Pack content-review SHA-256: 8569712c2395dfc04f56c6200f21a9e6e33575e3b65d06ee1b5eb50ae2c6a250
-- Review-package SHA-256: 80a7580749317ad949a7a64933579af747a4813c010558fd0a7bf976fd2928f2
-- Repository source SHA-256: 9e681236d40ae5ec5fc77a1a64dc9685f2c777ae9c6e4fa7691a0b07f39092ff
+- Pack content-review SHA-256: 1ba053798680aa069b7759f3e8f4dc32f3ce843149165cf76fd906f1d61c9bc1
+- Review-package SHA-256: 29c2a91722f2b93b5edad1b973edd8a251409a62da21c6d12b0b6f8643d90ae5
+- Repository source SHA-256: c58bb8b35d20f0e492ecb3c4edf2a6d88e372e332607a65b482cdd99a0cea520
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -189,13 +189,13 @@ remediation=u6-st-rem-feminine
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b77269c4df329f03ef1884752e1ee9c3b2925286413f572f29a178d65922c4a6
+- Content hash: db869d2d86b627c340f2fa56c841daa19b4fb001a1b1208feebfa2d3621adbb0
 
-title=Choose the admitted animate or inanimate object form
+title=Recognize supplied masculine singular animate and inanimate accusatives
 kind=RECOGNITION
 unitNumber=6
 instruction=u6-st-orient,u6-st-teach-animacy-1,u6-st-teach-animacy-2,u6-st-teach-animacy-3,u6-st-teach-animacy-4,u6-st-teach-animacy-5,u6-st-teach-animacy-6
-examples=ex-or-u6-animacy-0,ex-or-u6-animacy-1,ex-or-u6-animacy-2,ex-or-u6-animacy-3,ex-or-u6-animacy-4,ex-or-u6-animacy-5,ex-or-u6-animacy-6,ex-or-u6-animacy-7,ex-or-u6-animacy-8,ex-or-u6-animacy-9
+examples=ex-or-u6-animacy-0,ex-or-u6-animacy-1,ex-or-u6-animacy-2,ex-or-u6-animacy-3,ex-or-u6-animacy-4,ex-or-u6-animacy-5,ex-or-u6-animacy-6,ex-or-u6-animacy-7,ex-or-u6-animacy-8,ex-or-u6-animacy-9,ex-u6-animacy-transfer-chair
 practice=u6-st-guided-animacy-1
 checks=u6-i-animacy-1,u6-i-animacy-2,u6-i-animacy-3
 remediation=u6-st-rem-animacy
@@ -1010,12 +1010,12 @@ remediationStepId=u6-st-rem-feminine
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d001a7e9b89f642e2b1aed8d5854baf8f66c076830156995625cd24464926005
+- Content hash: f4e9f3ab3fa51d9f0ef86f31e370e6733fcbe3c65b0aa7186cdf14f0f877e9b7
 
 title=Choose the admitted animate or inanimate object form
 estimatedMinutes=12
 objectives=obj-u6-animacy
-steps=u6-st-teach-animacy-1,u6-st-guided-animacy-1,u6-st-teach-animacy-2,u6-st-teach-animacy-3,u6-st-teach-animacy-4,u6-st-teach-animacy-5,u6-st-teach-animacy-6,u6-st-rem-animacy,u6-st-check-animacy
+steps=u6-st-teach-animacy-1,u6-st-teach-animacy-2,u6-st-teach-animacy-3,u6-st-teach-animacy-4,u6-st-teach-animacy-5,u6-st-teach-animacy-6,u6-st-guided-animacy-1,u6-st-rem-animacy,u6-st-check-animacy
 
 ### STEP `u6-st-teach-animacy-1`
 
@@ -1025,11 +1025,11 @@ steps=u6-st-teach-animacy-1,u6-st-guided-animacy-1,u6-st-teach-animacy-2,u6-st-t
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5478a2f88d21023f41ed15a6ce9514f0a4b9171998d0a830a1273066279fd0d3
+- Content hash: 042e635895db7284148ff0b622ff1073f74064f48d46fc9314482cfb42e21749
 
 kind=TEACH
-title=Admitted lines
-body=сто́л — table. сто́л — table. 
+title=Identify the inanimate table object
+body=сто́л is the supplied masculine inanimate table form. Its singular nominative and accusative have the same spelling and stress. A direct object can be accusative even when its form matches nominative. Dictionary English notes name a sense; they are not complete sentence translations.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1039,28 +1039,6 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u6-st-guided-animacy-1`
-
-- Objectives: obj-u6-animacy
-- Sessions: u6-s-animacy
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1da52bebf962541267d5fada514efc363ac22121aa17177941ba3f6af3de3a4f
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u6-g-animacy-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u6-st-rem-animacy
-
 ### STEP `u6-st-teach-animacy-2`
 
 - Objectives: obj-u6-animacy
@@ -1069,11 +1047,11 @@ remediationStepId=u6-st-rem-animacy
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 93254c99c081b0e0b02a2ee7cc70d55613e054d39861b6451e5cc73186603635
+- Content hash: d95ee6a0a82b423a0a0eabd2ae0bfc9f311fe9b1bbdac16ba83c28db00213cda
 
 kind=TEACH
-title=Admitted instruction
-body=If they're animated nouns, they follow the genitive rules
+title=Contrast masculine singular animacy
+body=In these supplied singular masculine examples, an inanimate accusative matches nominative; an animate accusative matches genitive. Matching a genitive form does not change the accusative syntactic role. This is bounded recognition of supplied forms, not a rule that every animate noun in every gender or number takes an ending you can generate.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1091,11 +1069,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e01ed134e23f448984bbca064af7f641055b23861f56dfdac5600204eb8f5a9f
+- Content hash: 18d4e6001d217608ce02ac5406b4a3bd108688db398563f6d477dac3555299c9
 
 kind=TEACH
-title=Admitted lines
-body=до́м — house. до́м — house. 
+title=Keep the inanimate house form
+body=до́м is the supplied masculine inanimate house form. Its singular accusative matches its singular nominative. This spelling identity does not by itself tell you a word’s sentence role; use the requested case or supplied context.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1113,11 +1091,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: eff86adb23faf9b12edcae11945db95ad2bc175c9a99206a5b5e87cd3637ef88
+- Content hash: 1dec93d7dd4bbf49468f37cdff6b09a1a55e74c8b180f8763c88c2fc3be3cf69
 
 kind=TEACH
-title=Admitted lines
-body=брат — brother. бра́та — brother. 
+title=Recognize the animate brother pair
+body=брат is singular nominative and бра́та is the supplied singular accusative. Brother is masculine animate; this accusative is genitive-shaped. Guided practice chooses the supplied object form, without inventing a sentence or new stress.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1135,11 +1113,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: dd452f1126bc92f8f6d722499b96f98bb6068e2b152e3b7fff226a07ef6dec76
+- Content hash: 5fc29540dd5cb0922f2a868ea5e90153fc1d3439e4ab57324a7bd27eaa53933c
 
 kind=TEACH
-title=Admitted lines
-body=учи́тель — teacher. учи́теля — teacher. 
+title=Recognize the animate teacher pair
+body=учи́тель is singular nominative and учи́теля is the supplied singular accusative. Teacher is masculine animate; its singular accusative has the same form as its singular genitive. The independent teacher check retains this exact pair. Do not treat form syncretism as two different semantic case roles being interchangeable.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1157,19 +1135,41 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e8f232b3aa4800607b8413888843ba0a45b6960a0e04021bcbfc1df92f366f9b
+- Content hash: 6c5c98b9bdbd9b2a5710c1381c46805d909c4897e220b2595212ef56aebff242
 
 kind=TEACH
-title=Admitted lines
-body=друг — friend. дру́га — friend. 
+title=Compare the friend with the source chair clause
+body=друг is singular nominative and дру́га is the supplied masculine animate singular accusative. The retained clause Я де́лал стул. instead contains a masculine inanimate chair as direct object: its accusative matches nominative. The new independent check classifies that inanimate context rather than repeating the teacher answer. The imperfective verb does not establish completed action; no aspect or full-translation claim is tested. Recognize supplied forms and contexts, not unseen or unrestricted productive mastery.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
-examples=ex-or-u6-animacy-8,ex-or-u6-animacy-9
+examples=ex-or-u6-animacy-8,ex-or-u6-animacy-9,ex-u6-animacy-transfer-chair
 unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=
+
+### STEP `u6-st-guided-animacy-1`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-animacy
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 9544c144006277f7527d6e3db3e868104e236220e3970e66a7f695cab57f257f
+
+kind=GUIDED
+title=Guided practice
+body=Recognize the supplied masculine singular case form or classify the complete chair context. A miss returns to all teaching and examples.
+dominantAction=Continue
+references=
+items=u6-g-animacy-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u6-st-rem-animacy
 
 ### STEP `u6-st-rem-animacy`
 
@@ -1179,15 +1179,25 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 901f497b4951ec56e6fdf92e818035a36ada1072b40c5e1fee96e1937787a59e
+- Content hash: c4008fb331cf3f4f91a37367135300b5b2fd72db5cd3525f63f610c4ac04a439
 
 kind=REMEDIATE
-title=Remediation
-body=If they're animated nouns, they follow the genitive rules
+title=Review animate pairs and the inanimate chair
+body=сто́л is the supplied masculine inanimate table form. Its singular nominative and accusative have the same spelling and stress. A direct object can be accusative even when its form matches nominative. Dictionary English notes name a sense; they are not complete sentence translations.
+
+In these supplied singular masculine examples, an inanimate accusative matches nominative; an animate accusative matches genitive. Matching a genitive form does not change the accusative syntactic role. This is bounded recognition of supplied forms, not a rule that every animate noun in every gender or number takes an ending you can generate.
+
+до́м is the supplied masculine inanimate house form. Its singular accusative matches its singular nominative. This spelling identity does not by itself tell you a word’s sentence role; use the requested case or supplied context.
+
+брат is singular nominative and бра́та is the supplied singular accusative. Brother is masculine animate; this accusative is genitive-shaped. Guided practice chooses the supplied object form, without inventing a sentence or new stress.
+
+учи́тель is singular nominative and учи́теля is the supplied singular accusative. Teacher is masculine animate; its singular accusative has the same form as its singular genitive. The independent teacher check retains this exact pair. Do not treat form syncretism as two different semantic case roles being interchangeable.
+
+друг is singular nominative and дру́га is the supplied masculine animate singular accusative. The retained clause Я де́лал стул. instead contains a masculine inanimate chair as direct object: its accusative matches nominative. The new independent check classifies that inanimate context rather than repeating the teacher answer. The imperfective verb does not establish completed action; no aspect or full-translation claim is tested. Recognize supplied forms and contexts, not unseen or unrestricted productive mastery.
 dominantAction=Continue
 references=ref-ca-cases
 items=
-examples=ex-or-u6-animacy-0,ex-or-u6-animacy-1
+examples=ex-or-u6-animacy-0,ex-or-u6-animacy-1,ex-or-u6-animacy-2,ex-or-u6-animacy-3,ex-or-u6-animacy-4,ex-or-u6-animacy-5,ex-or-u6-animacy-6,ex-or-u6-animacy-7,ex-or-u6-animacy-8,ex-or-u6-animacy-9,ex-u6-animacy-transfer-chair
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1201,11 +1211,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 9dd6fbf4ea794ac8b17b16c892fe9cc05558a5b891d3a66d529207c97c19ea3a
+- Content hash: a0fb5eb51cada3db43bff36b4e7354bc4e084b911cad23edbefeddc2f20125a4
 
 kind=CHECK
 title=Independent checks
-body=These checks use only admitted records. A miss returns to the explanation.
+body=Recognize the supplied masculine singular case form or classify the complete chair context. A miss returns to all teaching and examples.
 dominantAction=Continue
 references=
 items=u6-i-animacy-1,u6-i-animacy-2,u6-i-animacy-3
@@ -2300,6 +2310,23 @@ note=friend
 objectiveId=obj-u6-animacy
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
+### EXAMPLE `ex-u6-animacy-transfer-chair`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-animacy
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 41a2e6b8f310da467e7b8be56ca6b6930b13add25cef470231f6b2065e217f03
+
+kind=LEXICAL
+letterId=
+display=Я де́лал стул.
+note=The chair is the masculine inanimate direct object; its accusative form matches nominative.
+objectiveId=obj-u6-animacy
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
 ### EXAMPLE `ex-u6-pronoun-0`
 
 - Objectives: obj-u6-pronoun
@@ -3155,35 +3182,36 @@ relationParticipantIds=prov-ex-or-u6-animacy-8 | prov-ex-or-u6-animacy-9 | prov-
 
 - Objectives: obj-u6-animacy
 - Sessions: u6-s-animacy
-- Source: src-openrussian-50e210c4
-- Rights: rights-openrussian-50e210c4
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: d3d085b25ec2ddaefd81ba9ff18f5553a5d7cfa4bc505f05ec2e1dd009040ccc
+- Content hash: dcf66b82def345e6d06344e0965f69aca487f4852811bc4f0f912956602da859
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which singular accusative form is used when the shown masculine animate noun is the direct object?
-promptLetter=учи́тель
-options=учи́теля | учи́тель
-answer=учи́теля
-feedback=учи́тель is the singular nominative form; учи́теля is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.
+prompt=Which English classification explains the masculine inanimate direct object in the supplied chair clause?
+promptLetter=Я де́лал стул.
+options=The masculine inanimate direct object keeps the nominative form. | The masculine inanimate direct object takes the genitive form.
+answer=The masculine inanimate direct object keeps the nominative form.
+feedback=In the supplied chair clause, the direct object is masculine singular and inanimate. The masculine inanimate direct object keeps the nominative form. The accusative role does not require a different spelling here. The teacher and friend examples are animate and instead have genitive-shaped singular accusatives. Form identity does not turn the chair into a subject or change this into a genitive case. Recognize these supplied contexts; no universal all-case or completed-action claim.
 objectiveId=obj-u6-animacy
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | учи́тель is the singular nominative form, so it does not supply the requested singular accusative form.
-testedFeature=ANIMACY
-evidenceMode=SAME_LEMMA_DIFFERENT_FIELD
-contrastSetId=u6-animacy-3
+distractorRationales= | The genitive-shaped singular accusative applies to the supplied masculine animate teacher and friend, not this inanimate chair.
+testedFeature=ANIMACY_INANIMATE_CONTEXT
+evidenceMode=STATED_APPLICATION
+contrastSetId=u6-i-animacy-3
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ex-or-u6-animacy-7
-distractorSourceIds= | prov-ex-or-u6-animacy-6
-distractorDifference= | учи́тель is the singular nominative form, so it does not supply the requested singular accusative form.
-whyAnswerDemonstratesObjective=учи́тель is the singular nominative form; учи́теля is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.
-contrastMembers=учи́теля | учи́тель
-relationKind=SAME_LEMMA_DIFFERENT_FIELD
-relationParticipantIds=prov-ex-or-u6-animacy-6 | prov-ex-or-u6-animacy-7 | prov-ex-or-u6-animacy-6
+answerSourceIds=prov-ca-u6-animacy-transfer-item-1
+distractorSourceIds= | prov-ca-u6-animacy-transfer-item-2
+distractorDifference= | The genitive-shaped singular accusative applies to the supplied masculine animate teacher and friend, not this inanimate chair.
+whyAnswerDemonstratesObjective=In the supplied chair clause, the direct object is masculine singular and inanimate. The masculine inanimate direct object keeps the nominative form. The accusative role does not require a different spelling here. The teacher and friend examples are animate and instead have genitive-shaped singular accusatives. Form identity does not turn the chair into a subject or change this into a genitive case. Recognize these supplied contexts; no universal all-case or completed-action claim.
+contrastMembers=The masculine inanimate direct object keeps the nominative form. | The masculine inanimate direct object takes the genitive form.
+relationKind=STATED_APPLICATION
+relationParticipantIds=prov-ca-u6-animacy-transfer-item-0 | prov-ca-u6-animacy-transfer-item-1 | prov-ca-u6-animacy-transfer-item-2
+responseKind=ENGLISH_CLASSIFICATION
 
 ### INDEPENDENT_CHECK `u6-i-pronoun-1`
 
@@ -4829,6 +4857,854 @@ attribution=Russian Companion content-audit research synthesis, content-audit-20
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
 sourceHash=fa129a14220bca02e6275ec53cf52eceb11456f354426f259b83c12f70a8837c
 contentHash=bb0bfc4784cc98146560ce28f1cae39155903bca94367dca64c8f348956d8ef2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-chair-note`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7b8263e55add4878e863283150f7a7c2be34bd3d70aba3be584a6e27efcd1039
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:transfer:chair-note
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+The chair is the masculine inanimate direct object; its accusative form matches nominative.
+shippedText=The chair is the masculine inanimate direct object; its accusative form matches nominative.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3d29ea0ac2f477fcd483e284ad9cc4478865b7180682f3e16f09373e6f7667f5
+contentHash=cfcf2b6a250f80edff2aa29c69e94673864c44191dcd7c2b17d67a8879bcd36d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-check-body`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 970214ea8e47018fc5896a34105665d2ab01e89e123288f1da4babb9aef576f2
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:transfer:check-body
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+Recognize the supplied masculine singular case form or classify the complete chair context. A miss returns to all teaching and examples.
+shippedText=Recognize the supplied masculine singular case form or classify the complete chair context. A miss returns to all teaching and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=90838b6b7e70f08204df9e9e7589a152553e19dab3548aa045936f7fd6baf8b5
+contentHash=12cfab41e5a04c3f47827788aeeb706127167427ffe20b305b58884e593355d9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-guided-body`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 822a2fe73d8dd9fdee2a3e70b9e17bdd70cf2e0a04de7a8ec2497053517a15bc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:transfer:guided-body
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+Recognize the supplied masculine singular case form or classify the complete chair context. A miss returns to all teaching and examples.
+shippedText=Recognize the supplied masculine singular case form or classify the complete chair context. A miss returns to all teaching and examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=90838b6b7e70f08204df9e9e7589a152553e19dab3548aa045936f7fd6baf8b5
+contentHash=12cfab41e5a04c3f47827788aeeb706127167427ffe20b305b58884e593355d9
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-item-0`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a4dcfe248de69957425afb776c7768212bd378e7fafcfa88438c5e1ea8930b81
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u6-i-animacy-3
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+Complete native context:
+==Nouns==
+The accusative case is a peculiar case in Russian, as it makes a distinction that other cases do not. Specifically, if a masculine word denotes an inanimate thing ('table', 'chair', etc), then it remains the same as the nominative. If, however, a masculine word denotes a person or animal ('man', 'son', 'cow', etc), then the case uses the endings of the [[Russian/Grammar/Genitive case|''genitive case'']]. For plurals in the accusative, no matter what gender the word, they are also split: any plural word that's inanimate is identical to its [[Russian/Grammar/Nominative case|nominative plural form]], while animate plural words follow the rules for the genitive plural. Some examples highlighting this distinction are as follows:
+:* This chair is brown. - '''Этот ''стул'' коричневый.''' - Nominative of an inanimate noun
+:*I made a chair. - '''Я де́лал ''стул.''''' - Accusative of the noun
+:*This cat likes me. - '''''Этот кот'' любит меня.''' - Nom. of an animate noun
+:*I like this cat. - '''Я люблю ''этого кота.''''' - Acc. of the noun
+:*These women like me. - '''''Эти женщины'' любят меня.''' - Nom. of an animate, plural, feminine noun
+:*I like these women. - '''Я люблю ''этих женщин.''''' - Acc. of the noun
+
+So, masculine nouns denoting inanimate objects in the accusative case are the same as in the nominative case. If they're animated nouns, they follow the genitive rules, which are: add '''-а''', and replace '''-й''' and '''-ь''' with '''-я'''.
+
+Neuter nouns, regardless of animation, also keep their nominative forms in the accusative case.
+
+Feminine words are the only words to have their own accusative ending: '''-а''' becomes '''-у''', and '''-я''' becomes '''-ю'''. Feminine nouns ending in the soft sign '''-ь''' do not change.
+
+To form the plural of an inanimate word, use the nominative rules: add or replace with '''-ы''' or '''-и''', and neuter nouns change '''-o''' to '''-а''' and '''-e''' to '''-я'''. If the word is animate, regardless of gender, use the [[Russian/Grammar/Genitive case#Nouns|genitive plural]]: drop '''-а''' and '''-о''', convert or append ending consonants with '''-ов''', '''-ев''', or '''-ей''', and replace '''-я''' with '''-ь''' or '''-й'''.
+
+This summary table splits the masculine and plural forms into two sections, the left being the inanimate form, the right being the animate form.
+
+{| class="wikitable"
+|-
+!  
+! colspan="2"|Masculine
+! Feminine !! Neuter
+! colspan="2"|Plural
+|-
+| Accusative || valign="bottom"|''As nom.'' || '''+a''', '''-я'''<br>''As gen.'' || valign="top"|'''у''', '''ю''', '''ь''' || '''о, е'''<br>''As nom.'' || '''ы, и, etc'''<br>''As nom.'' || '''ов, ев''', etc<br>''As gen.''
+|}
+
+Examples:
+:* Dogs hate cats. - '''Собаки ненавидят котов.'''
+:* Cats hate dogs. - '''Коты ненавидят собак.'''
+:* I drove to the museum. - '''Я поехал в музей.'''
+Context explanation:
+In the supplied chair clause, the direct object is masculine singular and inanimate. The masculine inanimate direct object keeps the nominative form. The accusative role does not require a different spelling here. The teacher and friend examples are animate and instead have genitive-shaped singular accusatives. Form identity does not turn the chair into a subject or change this into a genitive case. Recognize these supplied contexts; no universal all-case or completed-action claim.
+Tuple-v1:tuple-v1:1;25:Я де́лал стул.64:The masculine inanimate direct object keeps the nominative form.1;62:The masculine inanimate direct object takes the genitive form.
+shippedText=Я де́лал стул.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=60a52daaaa27cdfd6c5f57ea8ac35fe116c5073470af05646752d6de8b40dac3
+contentHash=fdea60f023d07f9d8a24db6cd159b2639edecb0ccbce29e0dc8962ca814bb474
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-item-1`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7f6041036f38ca3ccf7db2b2851337381ab0bbd8b0347f02fa82e3997c386c93
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u6-i-animacy-3
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+Complete native context:
+==Nouns==
+The accusative case is a peculiar case in Russian, as it makes a distinction that other cases do not. Specifically, if a masculine word denotes an inanimate thing ('table', 'chair', etc), then it remains the same as the nominative. If, however, a masculine word denotes a person or animal ('man', 'son', 'cow', etc), then the case uses the endings of the [[Russian/Grammar/Genitive case|''genitive case'']]. For plurals in the accusative, no matter what gender the word, they are also split: any plural word that's inanimate is identical to its [[Russian/Grammar/Nominative case|nominative plural form]], while animate plural words follow the rules for the genitive plural. Some examples highlighting this distinction are as follows:
+:* This chair is brown. - '''Этот ''стул'' коричневый.''' - Nominative of an inanimate noun
+:*I made a chair. - '''Я де́лал ''стул.''''' - Accusative of the noun
+:*This cat likes me. - '''''Этот кот'' любит меня.''' - Nom. of an animate noun
+:*I like this cat. - '''Я люблю ''этого кота.''''' - Acc. of the noun
+:*These women like me. - '''''Эти женщины'' любят меня.''' - Nom. of an animate, plural, feminine noun
+:*I like these women. - '''Я люблю ''этих женщин.''''' - Acc. of the noun
+
+So, masculine nouns denoting inanimate objects in the accusative case are the same as in the nominative case. If they're animated nouns, they follow the genitive rules, which are: add '''-а''', and replace '''-й''' and '''-ь''' with '''-я'''.
+
+Neuter nouns, regardless of animation, also keep their nominative forms in the accusative case.
+
+Feminine words are the only words to have their own accusative ending: '''-а''' becomes '''-у''', and '''-я''' becomes '''-ю'''. Feminine nouns ending in the soft sign '''-ь''' do not change.
+
+To form the plural of an inanimate word, use the nominative rules: add or replace with '''-ы''' or '''-и''', and neuter nouns change '''-o''' to '''-а''' and '''-e''' to '''-я'''. If the word is animate, regardless of gender, use the [[Russian/Grammar/Genitive case#Nouns|genitive plural]]: drop '''-а''' and '''-о''', convert or append ending consonants with '''-ов''', '''-ев''', or '''-ей''', and replace '''-я''' with '''-ь''' or '''-й'''.
+
+This summary table splits the masculine and plural forms into two sections, the left being the inanimate form, the right being the animate form.
+
+{| class="wikitable"
+|-
+!  
+! colspan="2"|Masculine
+! Feminine !! Neuter
+! colspan="2"|Plural
+|-
+| Accusative || valign="bottom"|''As nom.'' || '''+a''', '''-я'''<br>''As gen.'' || valign="top"|'''у''', '''ю''', '''ь''' || '''о, е'''<br>''As nom.'' || '''ы, и, etc'''<br>''As nom.'' || '''ов, ев''', etc<br>''As gen.''
+|}
+
+Examples:
+:* Dogs hate cats. - '''Собаки ненавидят котов.'''
+:* Cats hate dogs. - '''Коты ненавидят собак.'''
+:* I drove to the museum. - '''Я поехал в музей.'''
+Context explanation:
+In the supplied chair clause, the direct object is masculine singular and inanimate. The masculine inanimate direct object keeps the nominative form. The accusative role does not require a different spelling here. The teacher and friend examples are animate and instead have genitive-shaped singular accusatives. Form identity does not turn the chair into a subject or change this into a genitive case. Recognize these supplied contexts; no universal all-case or completed-action claim.
+Tuple-v1:tuple-v1:1;25:Я де́лал стул.64:The masculine inanimate direct object keeps the nominative form.1;62:The masculine inanimate direct object takes the genitive form.
+shippedText=The masculine inanimate direct object keeps the nominative form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=60a52daaaa27cdfd6c5f57ea8ac35fe116c5073470af05646752d6de8b40dac3
+contentHash=a186f2399af846bdf6b38ebe3804ae623691ec65658c542599ba2b699c6de722
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-item-2`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 721d7a52be27345515aa73b2efd08b196dd86439bf557e722798ca4fd9f84277
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u6-i-animacy-3
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+Complete native context:
+==Nouns==
+The accusative case is a peculiar case in Russian, as it makes a distinction that other cases do not. Specifically, if a masculine word denotes an inanimate thing ('table', 'chair', etc), then it remains the same as the nominative. If, however, a masculine word denotes a person or animal ('man', 'son', 'cow', etc), then the case uses the endings of the [[Russian/Grammar/Genitive case|''genitive case'']]. For plurals in the accusative, no matter what gender the word, they are also split: any plural word that's inanimate is identical to its [[Russian/Grammar/Nominative case|nominative plural form]], while animate plural words follow the rules for the genitive plural. Some examples highlighting this distinction are as follows:
+:* This chair is brown. - '''Этот ''стул'' коричневый.''' - Nominative of an inanimate noun
+:*I made a chair. - '''Я де́лал ''стул.''''' - Accusative of the noun
+:*This cat likes me. - '''''Этот кот'' любит меня.''' - Nom. of an animate noun
+:*I like this cat. - '''Я люблю ''этого кота.''''' - Acc. of the noun
+:*These women like me. - '''''Эти женщины'' любят меня.''' - Nom. of an animate, plural, feminine noun
+:*I like these women. - '''Я люблю ''этих женщин.''''' - Acc. of the noun
+
+So, masculine nouns denoting inanimate objects in the accusative case are the same as in the nominative case. If they're animated nouns, they follow the genitive rules, which are: add '''-а''', and replace '''-й''' and '''-ь''' with '''-я'''.
+
+Neuter nouns, regardless of animation, also keep their nominative forms in the accusative case.
+
+Feminine words are the only words to have their own accusative ending: '''-а''' becomes '''-у''', and '''-я''' becomes '''-ю'''. Feminine nouns ending in the soft sign '''-ь''' do not change.
+
+To form the plural of an inanimate word, use the nominative rules: add or replace with '''-ы''' or '''-и''', and neuter nouns change '''-o''' to '''-а''' and '''-e''' to '''-я'''. If the word is animate, regardless of gender, use the [[Russian/Grammar/Genitive case#Nouns|genitive plural]]: drop '''-а''' and '''-о''', convert or append ending consonants with '''-ов''', '''-ев''', or '''-ей''', and replace '''-я''' with '''-ь''' or '''-й'''.
+
+This summary table splits the masculine and plural forms into two sections, the left being the inanimate form, the right being the animate form.
+
+{| class="wikitable"
+|-
+!  
+! colspan="2"|Masculine
+! Feminine !! Neuter
+! colspan="2"|Plural
+|-
+| Accusative || valign="bottom"|''As nom.'' || '''+a''', '''-я'''<br>''As gen.'' || valign="top"|'''у''', '''ю''', '''ь''' || '''о, е'''<br>''As nom.'' || '''ы, и, etc'''<br>''As nom.'' || '''ов, ев''', etc<br>''As gen.''
+|}
+
+Examples:
+:* Dogs hate cats. - '''Собаки ненавидят котов.'''
+:* Cats hate dogs. - '''Коты ненавидят собак.'''
+:* I drove to the museum. - '''Я поехал в музей.'''
+Context explanation:
+In the supplied chair clause, the direct object is masculine singular and inanimate. The masculine inanimate direct object keeps the nominative form. The accusative role does not require a different spelling here. The teacher and friend examples are animate and instead have genitive-shaped singular accusatives. Form identity does not turn the chair into a subject or change this into a genitive case. Recognize these supplied contexts; no universal all-case or completed-action claim.
+Tuple-v1:tuple-v1:1;25:Я де́лал стул.64:The masculine inanimate direct object keeps the nominative form.1;62:The masculine inanimate direct object takes the genitive form.
+shippedText=The masculine inanimate direct object takes the genitive form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=60a52daaaa27cdfd6c5f57ea8ac35fe116c5073470af05646752d6de8b40dac3
+contentHash=d54614bee891aca39303710b2ffa26becfe4dcf754ff45cf5cdece1313a7fcfa
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-item-feedback`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 27461783e3144b92c056cb6d0d499e4c5dd344c49b3e59a5ce90f6b3937ecf8d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:transfer:item-feedback
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+In the supplied chair clause, the direct object is masculine singular and inanimate. The masculine inanimate direct object keeps the nominative form. The accusative role does not require a different spelling here. The teacher and friend examples are animate and instead have genitive-shaped singular accusatives. Form identity does not turn the chair into a subject or change this into a genitive case. Recognize these supplied contexts; no universal all-case or completed-action claim.
+shippedText=In the supplied chair clause, the direct object is masculine singular and inanimate. The masculine inanimate direct object keeps the nominative form. The accusative role does not require a different spelling here. The teacher and friend examples are animate and instead have genitive-shaped singular accusatives. Form identity does not turn the chair into a subject or change this into a genitive case. Recognize these supplied contexts; no universal all-case or completed-action claim.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=160f71c096273e656a838f341430a68b70a0d972f2e56fb42ad8c395e60e5483
+contentHash=e0fc167b116bcd3e462543436cdf3b074af4589957ec6dd93510b441b34b7ce0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-item-prompt`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7afc082d6ff6d7520baff099dda64aaeabdcf55292e2dafaeee2c056deb76628
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:transfer:item-prompt
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+Which English classification explains the masculine inanimate direct object in the supplied chair clause?
+shippedText=Which English classification explains the masculine inanimate direct object in the supplied chair clause?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8727470e9c62746bfb897fd0eee58a604fa3b8be8b1235238bd7ec902bd4ffde
+contentHash=0adb7daf464ed821600944aea7f13f4c8da4e5a7e43ab5a49e7e40c4aa9eb7f8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-item-rationale`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 69f21a04dd44e8eb437904f2d53f7e5df39796b3131dc0236e2f7dbf699adb05
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:transfer:item-rationale
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+The genitive-shaped singular accusative applies to the supplied masculine animate teacher and friend, not this inanimate chair.
+shippedText=The genitive-shaped singular accusative applies to the supplied masculine animate teacher and friend, not this inanimate chair.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c0d558dd6f8d18c77d285b08b15a91ab2406abcc847a7705a03637432d94a869
+contentHash=2f2e0352d42d035d65704aee63d2331147d222031834b34a62b62887fd77c87e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-objective-title`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 116a9d00a98bcd92003a95699bb0de5012638b1d77be73705d8eaf3d7ef1442b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:transfer:objective-title
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+Recognize supplied masculine singular animate and inanimate accusatives
+shippedText=Recognize supplied masculine singular animate and inanimate accusatives
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=807505b55bbda5d45a957477336fdcda1df42c36796004848ea4368612d3065c
+contentHash=b2c2cb6b39993e789dd579b672c262e8f67be0537f02485d33549479f5baac0e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-rem-body`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5acc894a3c1eb3eb06cdaabc330a42e3d35d1a29cd11edf6b41008a24c053518
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:transfer:rem-body
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+сто́л is the supplied masculine inanimate table form. Its singular nominative and accusative have the same spelling and stress. A direct object can be accusative even when its form matches nominative. Dictionary English notes name a sense; they are not complete sentence translations.
+
+In these supplied singular masculine examples, an inanimate accusative matches nominative; an animate accusative matches genitive. Matching a genitive form does not change the accusative syntactic role. This is bounded recognition of supplied forms, not a rule that every animate noun in every gender or number takes an ending you can generate.
+
+до́м is the supplied masculine inanimate house form. Its singular accusative matches its singular nominative. This spelling identity does not by itself tell you a word’s sentence role; use the requested case or supplied context.
+
+брат is singular nominative and бра́та is the supplied singular accusative. Brother is masculine animate; this accusative is genitive-shaped. Guided practice chooses the supplied object form, without inventing a sentence or new stress.
+
+учи́тель is singular nominative and учи́теля is the supplied singular accusative. Teacher is masculine animate; its singular accusative has the same form as its singular genitive. The independent teacher check retains this exact pair. Do not treat form syncretism as two different semantic case roles being interchangeable.
+
+друг is singular nominative and дру́га is the supplied masculine animate singular accusative. The retained clause Я де́лал стул. instead contains a masculine inanimate chair as direct object: its accusative matches nominative. The new independent check classifies that inanimate context rather than repeating the teacher answer. The imperfective verb does not establish completed action; no aspect or full-translation claim is tested. Recognize supplied forms and contexts, not unseen or unrestricted productive mastery.
+shippedText=сто́л is the supplied masculine inanimate table form. Its singular nominative and accusative have the same spelling and stress. A direct object can be accusative even when its form matches nominative. Dictionary English notes name a sense; they are not complete sentence translations.
+
+In these supplied singular masculine examples, an inanimate accusative matches nominative; an animate accusative matches genitive. Matching a genitive form does not change the accusative syntactic role. This is bounded recognition of supplied forms, not a rule that every animate noun in every gender or number takes an ending you can generate.
+
+до́м is the supplied masculine inanimate house form. Its singular accusative matches its singular nominative. This spelling identity does not by itself tell you a word’s sentence role; use the requested case or supplied context.
+
+брат is singular nominative and бра́та is the supplied singular accusative. Brother is masculine animate; this accusative is genitive-shaped. Guided practice chooses the supplied object form, without inventing a sentence or new stress.
+
+учи́тель is singular nominative and учи́теля is the supplied singular accusative. Teacher is masculine animate; its singular accusative has the same form as its singular genitive. The independent teacher check retains this exact pair. Do not treat form syncretism as two different semantic case roles being interchangeable.
+
+друг is singular nominative and дру́га is the supplied masculine animate singular accusative. The retained clause Я де́лал стул. instead contains a masculine inanimate chair as direct object: its accusative matches nominative. The new independent check classifies that inanimate context rather than repeating the teacher answer. The imperfective verb does not establish completed action; no aspect or full-translation claim is tested. Recognize supplied forms and contexts, not unseen or unrestricted productive mastery.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c1a131e5c2b1f90d5385d60f8d78e9699072772e9ba9d3efb9a68540c37e5c5d
+contentHash=1e948580cff26002fccaaf617c1f0c83495a11e953bf43801794033a12381883
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-rem-title`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c9841fddd9bb9dae079bd0ff2ad49183aa66d293a09cbf6b14d3aee237c638ff
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:transfer:rem-title
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+Review animate pairs and the inanimate chair
+shippedText=Review animate pairs and the inanimate chair
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5c3f0557606318588a1ec208e47c21ad898cd3b35c53f34a23241ab7e1158eaa
+contentHash=1abbd12ba6537c580b0419052a0471b2ee8ea69115868275ca6d7db005e2c995
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-teach-0-body`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5546c9e46b3077e5b8883ad7d87ab5e45a6b8a00f97dd1921fa23a244a7604d1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:transfer:teach-0-body
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+сто́л is the supplied masculine inanimate table form. Its singular nominative and accusative have the same spelling and stress. A direct object can be accusative even when its form matches nominative. Dictionary English notes name a sense; they are not complete sentence translations.
+shippedText=сто́л is the supplied masculine inanimate table form. Its singular nominative and accusative have the same spelling and stress. A direct object can be accusative even when its form matches nominative. Dictionary English notes name a sense; they are not complete sentence translations.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=75788bffc525aadf0e38c94571db3e6e91f06eb4cceb48e586be4d8836f6fba7
+contentHash=8938588c949787f00de3f77bef01fbbbf61d666742664b0b9065f805254a2859
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-teach-0-title`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a1223509bd08bdd9d75043031369bc04bf37c25b2c3d3f2afeec18abf40af784
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:transfer:teach-0-title
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+Identify the inanimate table object
+shippedText=Identify the inanimate table object
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0e7ddb98fd567160ea7e1b5437617797a28039e5be855e69eaafdd1dae27d72b
+contentHash=77c2c87a37ac7822bf6a58f03ed484e31a421fd474d3b0f3213935677dc4dc8f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-teach-1-body`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 66cdbdd9cfdd7eea2b3f27f7fff72a2fe028cc4a7399136585056e8a076800b3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:transfer:teach-1-body
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+In these supplied singular masculine examples, an inanimate accusative matches nominative; an animate accusative matches genitive. Matching a genitive form does not change the accusative syntactic role. This is bounded recognition of supplied forms, not a rule that every animate noun in every gender or number takes an ending you can generate.
+shippedText=In these supplied singular masculine examples, an inanimate accusative matches nominative; an animate accusative matches genitive. Matching a genitive form does not change the accusative syntactic role. This is bounded recognition of supplied forms, not a rule that every animate noun in every gender or number takes an ending you can generate.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ed076c2c3e0a1f98d5945eb427b12880c613c0460159f2bd209aa3988d93589a
+contentHash=ad63855488d442a892f9c106217f50fc5fc2de729c3033727347fc86a3c4655a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-teach-1-title`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8ebce3ec435a5d4a667699a8f88ecc9046ac0cdd7954cc957c20c5ca4f1cccbc
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:transfer:teach-1-title
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+Contrast masculine singular animacy
+shippedText=Contrast masculine singular animacy
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b045faa55426b2ad84ecac003f62ef47b967efd986bde3d7701e421ad6925abe
+contentHash=ce7d1844e6c2c773f225b3a2736fab5250dd06b17262a4bbf28a26f2bdfcdce2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-teach-2-body`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 843af29dc120afdfcb4d78c4655a8c2a3a3be0485c739f73bb2922a5ddf36321
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:transfer:teach-2-body
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+до́м is the supplied masculine inanimate house form. Its singular accusative matches its singular nominative. This spelling identity does not by itself tell you a word’s sentence role; use the requested case or supplied context.
+shippedText=до́м is the supplied masculine inanimate house form. Its singular accusative matches its singular nominative. This spelling identity does not by itself tell you a word’s sentence role; use the requested case or supplied context.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ae2852053589d6881e231de761b7216ce07d7492d9d31a380ab722e6d2e074f6
+contentHash=910279cc99d7aaad4c5f3949190f3534fd074d2273c9d88dab1037b7da0b1196
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-teach-2-title`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fb46c18f2f72fdc538ced751a7fa84d8fbc2655fcd674c2e75fe9c16f9ea5e48
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:transfer:teach-2-title
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+Keep the inanimate house form
+shippedText=Keep the inanimate house form
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=91af9dadda70c0c4c18a3042858894909db511aba7de425acd524619185efccf
+contentHash=1e032a2f9390cfca28672297d1a067c02e5411d4ab87b00b9b9ab679aab23cf0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-teach-3-body`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ed77d4a8cacf56e269068585cb8966997fe68c5bd3bd8356ac1f8214962b962f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:transfer:teach-3-body
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+брат is singular nominative and бра́та is the supplied singular accusative. Brother is masculine animate; this accusative is genitive-shaped. Guided practice chooses the supplied object form, without inventing a sentence or new stress.
+shippedText=брат is singular nominative and бра́та is the supplied singular accusative. Brother is masculine animate; this accusative is genitive-shaped. Guided practice chooses the supplied object form, without inventing a sentence or new stress.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4e9af22d33898917c75c7945b166a71ed3eee6b7db9051e43eab1d64437cf5f2
+contentHash=f383480a1cf0d0850bc344e1d4f43f8ce6aa25051a37a1279baa2b4470c94062
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-teach-3-title`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: dc9e2a165352a62a8c3ecc07ab29f7ac4a1adfb672f5e48baa3e7c50dc4cacd4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:transfer:teach-3-title
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+Recognize the animate brother pair
+shippedText=Recognize the animate brother pair
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=64edbf31031bfdd60df7b51db9bc01976c00276daed14266b748d9be7a0236e8
+contentHash=22bfc6a8e74cca87f179c79a7877adf8846c7c27e54b40073fbffffb4bc7d9e5
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-teach-4-body`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: aa7ecbbe0fcb2b42882320a5465f8698a43ecdade7b091432f2558f480a8e805
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:transfer:teach-4-body
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+учи́тель is singular nominative and учи́теля is the supplied singular accusative. Teacher is masculine animate; its singular accusative has the same form as its singular genitive. The independent teacher check retains this exact pair. Do not treat form syncretism as two different semantic case roles being interchangeable.
+shippedText=учи́тель is singular nominative and учи́теля is the supplied singular accusative. Teacher is masculine animate; its singular accusative has the same form as its singular genitive. The independent teacher check retains this exact pair. Do not treat form syncretism as two different semantic case roles being interchangeable.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=903b09bbd69cc281b1ab20ea8c42229c366da9db6e447837557044820b050a4e
+contentHash=b475db73b5945fdfa25bd0abc99be10b00ff1890a8cf3212ebc02979859db5cc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-teach-4-title`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3d62d0a1852cadb2dbd821f5cecac4871c0d4d42285d38dd44a199567e04030f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:transfer:teach-4-title
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+Recognize the animate teacher pair
+shippedText=Recognize the animate teacher pair
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1ddbc37e589ae542edfdc469d0e75cac2e70b95b43408795b02dd2d9c2dcd521
+contentHash=81b82cbe6ca0e2ff5ad72291b838a1f428ab4b80c634edd5b3b98f52b4ea5562
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-teach-5-body`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 637abffb49968cba14afe42d7f9f77b243530cd6dadf3ded33ba9c7e7ff2bacb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:transfer:teach-5-body
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+друг is singular nominative and дру́га is the supplied masculine animate singular accusative. The retained clause Я де́лал стул. instead contains a masculine inanimate chair as direct object: its accusative matches nominative. The new independent check classifies that inanimate context rather than repeating the teacher answer. The imperfective verb does not establish completed action; no aspect or full-translation claim is tested. Recognize supplied forms and contexts, not unseen or unrestricted productive mastery.
+shippedText=друг is singular nominative and дру́га is the supplied masculine animate singular accusative. The retained clause Я де́лал стул. instead contains a masculine inanimate chair as direct object: its accusative matches nominative. The new independent check classifies that inanimate context rather than repeating the teacher answer. The imperfective verb does not establish completed action; no aspect or full-translation claim is tested. Recognize supplied forms and contexts, not unseen or unrestricted productive mastery.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=42c456c8fd024399a72c64ff6bf6ef63dd7447e37ba40e3ee28a43cdabaa9f8e
+contentHash=6b877c1c19ee381752f879ee6beaca1ee974482f51ec5f816b96de8225e44f22
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u6-animacy-transfer-teach-5-title`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e75f5eb8422d6c638c4342a9b39140479dcd9b133fef1a820acbd5fe93a1dcd5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u6-animacy:transfer:teach-5-title
+originalSourceText=Complete retained Wikibooks Accusative4330404 Nouns context and exact chair example; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route retained. Full frozen OpenRussian50e210c4 masculine animate brother/teacher/friend and inanimate table/house dictionary rows support supplied singular nominative/accusative distinctions. Independently authored English2026-10-14. Retained chair clause changes only wiki emphasis; no new stress/words/punctuation or private Penguin prose. Its imperfective verb does not prove completed action; source English made translation is not adopted as an aspect claim. Broad word-order/emphasis, plural-ending algorithms and other simplified source claims are not adopted. Bounded supplied singular masculine animacy recognition, not every noun/case, unseen or productive mastery. Qualified source/rights/semantic approval pending.
+Compare the friend with the source chair clause
+shippedText=Compare the friend with the source chair clause
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bf1d66a31125bbd61c0e8e37f4235b846ffa00e0927d12d389f4dba853e03493
+contentHash=e18ceb39e7c4cf7fa2b7bdad5c81eb31b6484b7d8c857d08fb625a1b84f9db6e
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -9240,6 +10116,67 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-u6-animacy-transfer-native-chair`
+
+- Objectives: obj-u6-animacy
+- Sessions: u6-s-orient, u6-s-animacy
+- Source: src-wikibooks-russian-cc-by-sa
+- Rights: rights-wikibooks-russian-cc-by-sa
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 911e4ca1d284fc66e3d935a22976b08a87c6b6842eb081d8d1a827216bbc300d
+
+recordType=example
+sourceUrl=https://en.wikibooks.org/wiki/Russian/Grammar/Accusative_case?oldid=4330404
+sourceRevision=4330404
+sourceRecordId=accusative-nouns-full-context:3c0f8565ede2345d57ef60cd27ce8c719dacfc3019e9a9e2bb6b8c8ae37be858
+originalSourceText===Nouns==
+The accusative case is a peculiar case in Russian, as it makes a distinction that other cases do not. Specifically, if a masculine word denotes an inanimate thing ('table', 'chair', etc), then it remains the same as the nominative. If, however, a masculine word denotes a person or animal ('man', 'son', 'cow', etc), then the case uses the endings of the [[Russian/Grammar/Genitive case|''genitive case'']]. For plurals in the accusative, no matter what gender the word, they are also split: any plural word that's inanimate is identical to its [[Russian/Grammar/Nominative case|nominative plural form]], while animate plural words follow the rules for the genitive plural. Some examples highlighting this distinction are as follows:
+:* This chair is brown. - '''Этот ''стул'' коричневый.''' - Nominative of an inanimate noun
+:*I made a chair. - '''Я де́лал ''стул.''''' - Accusative of the noun
+:*This cat likes me. - '''''Этот кот'' любит меня.''' - Nom. of an animate noun
+:*I like this cat. - '''Я люблю ''этого кота.''''' - Acc. of the noun
+:*These women like me. - '''''Эти женщины'' любят меня.''' - Nom. of an animate, plural, feminine noun
+:*I like these women. - '''Я люблю ''этих женщин.''''' - Acc. of the noun
+
+So, masculine nouns denoting inanimate objects in the accusative case are the same as in the nominative case. If they're animated nouns, they follow the genitive rules, which are: add '''-а''', and replace '''-й''' and '''-ь''' with '''-я'''.
+
+Neuter nouns, regardless of animation, also keep their nominative forms in the accusative case.
+
+Feminine words are the only words to have their own accusative ending: '''-а''' becomes '''-у''', and '''-я''' becomes '''-ю'''. Feminine nouns ending in the soft sign '''-ь''' do not change.
+
+To form the plural of an inanimate word, use the nominative rules: add or replace with '''-ы''' or '''-и''', and neuter nouns change '''-o''' to '''-а''' and '''-e''' to '''-я'''. If the word is animate, regardless of gender, use the [[Russian/Grammar/Genitive case#Nouns|genitive plural]]: drop '''-а''' and '''-о''', convert or append ending consonants with '''-ов''', '''-ев''', or '''-ей''', and replace '''-я''' with '''-ь''' or '''-й'''.
+
+This summary table splits the masculine and plural forms into two sections, the left being the inanimate form, the right being the animate form.
+
+{| class="wikitable"
+|-
+!  
+! colspan="2"|Masculine
+! Feminine !! Neuter
+! colspan="2"|Plural
+|-
+| Accusative || valign="bottom"|''As nom.'' || '''+a''', '''-я'''<br>''As gen.'' || valign="top"|'''у''', '''ю''', '''ь''' || '''о, е'''<br>''As nom.'' || '''ы, и, etc'''<br>''As nom.'' || '''ов, ев''', etc<br>''As gen.''
+|}
+
+Examples:
+:* Dogs hate cats. - '''Собаки ненавидят котов.'''
+:* Cats hate dogs. - '''Коты ненавидят собак.'''
+:* I drove to the museum. - '''Я поехал в музей.'''
+shippedText=Я де́лал стул.
+transformation=selection
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=3c0f8565ede2345d57ef60cd27ce8c719dacfc3019e9a9e2bb6b8c8ae37be858
+contentHash=fdea60f023d07f9d8a24db6cd159b2639edecb0ccbce29e0dc8962ca814bb474
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u6-animacy-x-0`
 
 - Objectives: obj-u6-animacy
@@ -10761,6 +11698,7 @@ permitsAppUse=true
 - `obj-u6-animacy` EXAMPLE `ex-or-u6-animacy-7`
 - `obj-u6-animacy` EXAMPLE `ex-or-u6-animacy-8`
 - `obj-u6-animacy` EXAMPLE `ex-or-u6-animacy-9`
+- `obj-u6-animacy` EXAMPLE `ex-u6-animacy-transfer-chair`
 - `obj-u6-animacy` PRACTICE `u6-st-guided-animacy-1`
 - `obj-u6-animacy` CHECK `u6-i-animacy-1`
 - `obj-u6-animacy` CHECK `u6-i-animacy-2`
@@ -10901,8 +11839,6 @@ permitsAppUse=true
 - `u6-st-teach-animacy-1` EXAMPLE `ex-or-u6-animacy-0`
 - `u6-st-teach-animacy-1` EXAMPLE `ex-or-u6-animacy-1`
 - `u6-st-teach-animacy-1` REFERENCE `ref-u610-attribution`
-- `u6-st-guided-animacy-1` REMEDIATION `u6-st-rem-animacy`
-- `u6-st-guided-animacy-1` ITEM `u6-g-animacy-0`
 - `u6-st-teach-animacy-2` REFERENCE `ref-u610-attribution`
 - `u6-st-teach-animacy-3` EXAMPLE `ex-or-u6-animacy-2`
 - `u6-st-teach-animacy-3` EXAMPLE `ex-or-u6-animacy-3`
@@ -10915,9 +11851,21 @@ permitsAppUse=true
 - `u6-st-teach-animacy-5` REFERENCE `ref-u610-attribution`
 - `u6-st-teach-animacy-6` EXAMPLE `ex-or-u6-animacy-8`
 - `u6-st-teach-animacy-6` EXAMPLE `ex-or-u6-animacy-9`
+- `u6-st-teach-animacy-6` EXAMPLE `ex-u6-animacy-transfer-chair`
 - `u6-st-teach-animacy-6` REFERENCE `ref-u610-attribution`
+- `u6-st-guided-animacy-1` REMEDIATION `u6-st-rem-animacy`
+- `u6-st-guided-animacy-1` ITEM `u6-g-animacy-0`
 - `u6-st-rem-animacy` EXAMPLE `ex-or-u6-animacy-0`
 - `u6-st-rem-animacy` EXAMPLE `ex-or-u6-animacy-1`
+- `u6-st-rem-animacy` EXAMPLE `ex-or-u6-animacy-2`
+- `u6-st-rem-animacy` EXAMPLE `ex-or-u6-animacy-3`
+- `u6-st-rem-animacy` EXAMPLE `ex-or-u6-animacy-4`
+- `u6-st-rem-animacy` EXAMPLE `ex-or-u6-animacy-5`
+- `u6-st-rem-animacy` EXAMPLE `ex-or-u6-animacy-6`
+- `u6-st-rem-animacy` EXAMPLE `ex-or-u6-animacy-7`
+- `u6-st-rem-animacy` EXAMPLE `ex-or-u6-animacy-8`
+- `u6-st-rem-animacy` EXAMPLE `ex-or-u6-animacy-9`
+- `u6-st-rem-animacy` EXAMPLE `ex-u6-animacy-transfer-chair`
 - `u6-st-rem-animacy` REFERENCE `ref-ca-cases`
 - `u6-st-check-animacy` REMEDIATION `u6-st-rem-animacy`
 - `u6-st-check-animacy` ITEM `u6-i-animacy-1`
@@ -11010,6 +11958,30 @@ permitsAppUse=true
 - `obj-u6-possessive` PROVENANCE `prov-ca-declension-u6-i-possessive-3-0`
 - `obj-u6-possessive` PROVENANCE `prov-ca-declension-u6-i-possessive-3-1`
 - `obj-u6-possessive` PROVENANCE `prov-ca-declension-u6-i-possessive-3-3`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-chair-note`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-check-body`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-guided-body`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-item-0`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-item-1`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-item-2`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-item-feedback`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-item-prompt`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-item-rationale`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-objective-title`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-rem-body`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-rem-title`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-teach-0-body`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-teach-0-title`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-teach-1-body`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-teach-1-title`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-teach-2-body`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-teach-2-title`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-teach-3-body`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-teach-3-title`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-teach-4-body`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-teach-4-title`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-teach-5-body`
+- `obj-u6-animacy` PROVENANCE `prov-ca-u6-animacy-transfer-teach-5-title`
 - `obj-u6-direction` PROVENANCE `prov-ca-u6-feedback-u6-g-direction-0`
 - `obj-u6-direction` PROVENANCE `prov-ca-u6-feedback-u6-g-direction-0-distractor-1`
 - `obj-u6-object` PROVENANCE `prov-ca-u6-feedback-u6-g-object-0`
@@ -11159,6 +12131,7 @@ permitsAppUse=true
 - `obj-u6-third` PROVENANCE `prov-ex-u6-third-2-en`
 - `obj-u6-third` PROVENANCE `prov-ex-u6-third-2-ru`
 - `obj-u6-animacy` PROVENANCE `prov-u6-animacy-rem`
+- `obj-u6-animacy` PROVENANCE `prov-u6-animacy-transfer-native-chair`
 - `obj-u6-animacy` PROVENANCE `prov-u6-animacy-x-0`
 - `obj-u6-direction` PROVENANCE `prov-u6-direction-rem`
 - `obj-u6-direction` PROVENANCE `prov-u6-direction-x-0`
