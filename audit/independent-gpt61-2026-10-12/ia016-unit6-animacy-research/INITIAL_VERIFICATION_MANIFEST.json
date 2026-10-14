@@ -20,5 +20,8 @@
     }
   ],
   "failureDiagnosis": "New source clause was incorrectly typed GRAMMAR, which requires a letter binding. Existing clause convention is LEXICAL; corrected type without changing native/context bytes or disabling validation.",
-  "scope": "8 focused methods: six pass/two full-validator assertions fail, zero errors/skips."
+  "scope": "8 focused methods: six pass/two full-validator assertions fail, zero errors/skips.",
+  "workingDirectory": "/workspace/russian-companion",
+  "expandedCommand": "source /workspace/setup/android-env.sh\n./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*Unit6AnimacyTransferTest' --tests '*Units610InstructionalValidityTest.everyRecognitionObjectiveHasAnIndependentFeatureValidCheck' --max-workers=4 --console=plain",
+  "newUnit6TestSha256": "b24210ea053e0ec7ead9e48c5a4f4f04caaf49436569796118d83feef7bdcce9"
 }

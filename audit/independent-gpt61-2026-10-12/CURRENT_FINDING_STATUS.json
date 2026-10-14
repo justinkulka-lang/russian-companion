@@ -198,7 +198,7 @@
       "findingId": "IA016",
       "producerSeverity": "MEDIUM",
       "producerStatus": "OPEN",
-      "engineeringDisposition": "PARTIAL_UNIT17_UNIT8_UNIT9_UNIT21_UNIT24_UNIT28_AND_UNIT13_FIXES_PENDING_INDEPENDENT_VERIFICATION_OTHER_GROUPS_OPEN",
+      "engineeringDisposition": "PARTIAL_UNIT6_UNIT17_UNIT8_UNIT9_UNIT21_UNIT24_UNIT28_AND_UNIT13_FIXES_PENDING_INDEPENDENT_VERIFICATION_OTHER_GROUPS_OPEN",
       "formalAcceptance": false,
       "currentExactSameUnitGroups": 2,
       "inventoryPath": "IA016_CURRENT_DUPLICATE_INVENTORY.json",
@@ -291,10 +291,27 @@
           "unseenContextClaim": false,
           "productiveReportedSpeechClaim": false,
           "formalAcceptance": false
+        },
+        "unit6Animacy": {
+          "implementationCommit": "30ca4e8a8200dc34704a8fcb2aab03ed1df2c97e",
+          "evidencePath": "ia016-unit6-animacy-research/FINAL_VERIFICATION_MANIFEST.json",
+          "changedIndependentItemId": "u6-i-animacy-3",
+          "preservedScoredItemIds": [
+            "u6-g-animacy-0",
+            "u6-i-animacy-1",
+            "u6-i-animacy-2"
+          ],
+          "requiredIndependentCountUnchanged": 3,
+          "newPendingProvenance": 25,
+          "nativeSelections": 1,
+          "newCanonicalPins": 1,
+          "unseenContextClaim": false,
+          "productiveAnimacyClaim": false,
+          "formalAcceptance": false
         }
       },
       "currentExactInventoryRoleScope": "GATING_RECOGNITION_GUIDED_AND_INDEPENDENT",
-      "additionalSameRoleGroupsOutsideInventoryCount": 4,
+      "additionalSameRoleGroupsOutsideInventoryCount": 3,
       "allNumeralCasesClaim": false,
       "productiveReflexiveClaim": false,
       "allPronounCasesClaim": false,
@@ -356,30 +373,30 @@
   "physicalDeviceAcceptance": "OUTSTANDING",
   "release": "NOT_APPROVED",
   "latestValidatorImplementationCommit": "db323d1a07613846a088cd44cb9f2b72d24753c9",
-  "latestSourceBindingCheckpoint": "ee5bf94b2b2892e8ad9a30408b1a30b8cab81826",
+  "latestSourceBindingCheckpoint": "a39b3f2ba3fc73673186acb6767a54040e0e0df0",
   "remainingSourceReviewPointers": [
     "IA007_SOURCE_REVIEW_PENDING.md",
     "IA008_SOURCE_REVIEW_PENDING.md"
   ],
   "firstBatchImplementationCommit": "4f5cb8024d3f68a37052fdf85b5755bffa2a0904",
   "firstBatchPacketCheckpoint": "49af91a0f5578c63a3b9b98bbe975f40d2758fcc",
-  "latestCurriculumImplementationCommit": "db323d1a07613846a088cd44cb9f2b72d24753c9",
+  "latestCurriculumImplementationCommit": "30ca4e8a8200dc34704a8fcb2aab03ed1df2c97e",
   "acceptanceOrder": [
     "FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
     "PHYSICAL_DEVICE_ACCEPTANCE_LAST"
   ],
   "physicalDeviceEvidenceRequestTiming": "AFTER_FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
-  "latestAppImplementationCommit": "db323d1a07613846a088cd44cb9f2b72d24753c9",
-  "latestVerifiedRepositoryCommit": "ee5bf94b2b2892e8ad9a30408b1a30b8cab81826",
+  "latestAppImplementationCommit": "30ca4e8a8200dc34704a8fcb2aab03ed1df2c97e",
+  "latestVerifiedRepositoryCommit": "a39b3f2ba3fc73673186acb6767a54040e0e0df0",
   "latestResearchDiagnosticRepositoryCommit": "0edaa0fc635b3579823f7b352f52fa79a675db3d",
   "latestSupplementalVerifiedRepositoryCommit": "409a9e87bd17174e6340fc896b7576115d30a69a",
-  "latestFocusedIntegrationCommit": "ee5bf94b2b2892e8ad9a30408b1a30b8cab81826",
-  "latestFocusedIntegrationPassed": 33,
+  "latestFocusedIntegrationCommit": "a39b3f2ba3fc73673186acb6767a54040e0e0df0",
+  "latestFocusedIntegrationPassed": 27,
   "latestFocusedIntegrationFailures": 0,
   "latestCorrectedTargetPassed": 1,
-  "latestFocusedIntegrationScope": "33_SELECTED_TESTS_16_CLASSES_SINGLE_FOCUSED_RUN_NOT_COMPLETE_SUITE",
+  "latestFocusedIntegrationScope": "27_SELECTED_TESTS_16_CLASSES_17_SELECTORS_SINGLE_FOCUSED_RUN_NOT_COMPLETE_SUITE",
   "latestCorrectedTargetBatch": "IA016_UNIT21_HISTORICAL_NOT_THIS_UNIT24_RUN",
-  "latestFocusedVerificationUniquePassingMethods": 33,
+  "latestFocusedVerificationUniquePassingMethods": 27,
   "additionalEngineeringFollowups": {
     "UNIT8_PLURAL_INSTRUCTION_FOLLOWUP": {
       "producerFindingId": null,

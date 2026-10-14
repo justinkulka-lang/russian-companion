@@ -52,5 +52,8 @@
         "originalIndependentScoredFieldsAndEveryExampleRemainUnchanged"
       ]
     }
-  ]
+  ],
+  "workingDirectory": "/workspace/russian-companion",
+  "expandedCommand": "source /workspace/setup/android-env.sh\n./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*Unit6AnimacyTransferTest' --tests '*Units610InstructionalValidityTest.everyRecognitionObjectiveHasAnIndependentFeatureValidCheck' --tests '*Unit8PluralInstructionTest.unit8ScoredObjectsAndAllPriorNativeExamplesAndProvenanceRemainIdentical' --tests '*Unit13ReportedTransferTest.originalIndependentItemsEarlierObjectiveAndAllExamplesRemainUnchanged' --tests '*Unit28TimingTransferTest.originalIndependentScoredFieldsAndEveryExampleRemainUnchanged' --max-workers=4 --console=plain",
+  "newUnit6TestSha256": "b24210ea053e0ec7ead9e48c5a4f4f04caaf49436569796118d83feef7bdcce9"
 }
