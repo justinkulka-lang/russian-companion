@@ -29,6 +29,7 @@ internal fun V2CumulativeReviewScreen(pack: V2CurriculumPack, learner: V2Learner
             4 -> "Review earlier print-pair decoding and noun-gender labels from Units 1 and 3. Complete both checks before continuing; these supplied choices do not demonstrate whole-word reading, speaking or writing."
             5 -> "Review earlier print-pair matching from Unit 1 and nominative subjects in supplied Unit 4 clauses. Complete both checks before continuing. These taught choices do not demonstrate unseen reading, productive grammar, speaking or writing."
             6 -> "Review earlier print-pair matching from Unit 1 and the behavior of supplied Unit 5 nouns. Complete both checks before continuing. These taught choices do not demonstrate unseen reading, productive morphology, speaking or writing."
+            7 -> "Review earlier print-pair matching from Unit 1 and the supplied inanimate direct object from Unit 6. Complete both checks before continuing. These taught choices do not demonstrate unseen reading, productive grammar, speaking or writing."
             else -> "Review the required earlier objectives before continuing."
         })
         if (state == null) { V2Status("Preparing review"); return@V2Scaffold }
