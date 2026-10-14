@@ -30,6 +30,7 @@ internal fun V2CumulativeReviewScreen(pack: V2CurriculumPack, learner: V2Learner
             5 -> "Review earlier print-pair matching from Unit 1 and nominative subjects in supplied Unit 4 clauses. Complete both checks before continuing. These taught choices do not demonstrate unseen reading, productive grammar, speaking or writing."
             6 -> "Review earlier print-pair matching from Unit 1 and the behavior of supplied Unit 5 nouns. Complete both checks before continuing. These taught choices do not demonstrate unseen reading, productive morphology, speaking or writing."
             7 -> "Review earlier print-pair matching from Unit 1 and the supplied inanimate direct object from Unit 6. Complete both checks before continuing. These taught choices do not demonstrate unseen reading, productive grammar, speaking or writing."
+            8 -> "Review earlier print-pair matching and supplied feminine singular nominative agreement. For agreement repair, revisit the shown car phrase and related feminine object-phrase practice, then answer this nominative check again. These taught choices do not demonstrate unseen reading, productive grammar, speaking or writing."
             else -> "Review the required earlier objectives before continuing."
         })
         if (state == null) { V2Status("Preparing review"); return@V2Scaffold }

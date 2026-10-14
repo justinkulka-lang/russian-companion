@@ -1,0 +1,33 @@
+{
+  "baselineCommit": "3dfa67d9bd87073e1d5423e6e8856056e85d24a9",
+  "unitNumber": 8,
+  "oldAdvancement": {
+    "requireInstruction": true,
+    "requireBookSelfAttestation": true,
+    "requireAppChecks": true,
+    "minimumDistinctChecks": 18,
+    "requireDueReview": false,
+    "tutorOptional": true
+  },
+  "newAdvancement": {
+    "requireInstruction": true,
+    "requireBookSelfAttestation": true,
+    "requireAppChecks": true,
+    "minimumDistinctChecks": 18,
+    "requireDueReview": true,
+    "tutorOptional": true,
+    "cumulativeReviewPolicyId": "unit8-prior-reading-nominative-agreement-v1"
+  },
+  "minimumDistinctChecksUnchanged": 18,
+  "entireRawAssetExceptUnit8Advancement": "JSON_VALUE_IDENTICAL",
+  "provenance": 6913,
+  "capabilities": 58,
+  "rawAssetSha256": "809ffa3739adfa181d50d9bc09e30a7f174dbf50be55fcea26936b2d21547dc3",
+  "catalogAndSchemas": "BYTE_IDENTICAL",
+  "priorPolicyCanonicalDefinitions": "UNITS3_TO7_BYTE_IDENTICAL",
+  "historicalDisposition": "Exact pre-policy ordinary governed work only;no synthetic review or raw-marker credit",
+  "claims": "Two fixed supplied recognition slots;related accusative guided practice cannot satisfy nominative due slot;qualified acceptance pending",
+  "activation": "ONLY_UNIT8_ADDED;UNITS3_TO7_REMAIN_ACTIVE",
+  "canonicalPins": 71,
+  "allNineOriginalAuditFiles": "HASH_VERIFIED"
+}
