@@ -27,7 +27,7 @@ internal data class CumulativeReviewAnswer(
 )
 
 /** Skill labels describe only the bounded evidence supported by the authored checks. */
-internal enum class CumulativeReviewSkill { BOUNDED_READING, PRINTED_LETTER_RECOGNITION, NOUN_GENDER_RECOGNITION }
+internal enum class CumulativeReviewSkill { BOUNDED_READING, PRINTED_LETTER_RECOGNITION, NOUN_GENDER_RECOGNITION, SUPPLIED_NOMINATIVE_SUBJECT_RECOGNITION }
 
 internal data class CumulativeReviewObjectivePool(
     val objectiveId: String, val skill: CumulativeReviewSkill, val candidateItemIds: List<String>,
@@ -72,15 +72,28 @@ internal object Unit4CumulativeReviewPolicy {
     ))
 }
 
+internal object Unit5CumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit5-prior-reading-subject-v1", 5, listOf(
+        CumulativeReviewObjectivePool("obj-u1-decoding", CumulativeReviewSkill.BOUNDED_READING, listOf("u1-i-decode-pair")),
+        CumulativeReviewObjectivePool("obj-u4-nominative", CumulativeReviewSkill.SUPPLIED_NOMINATIVE_SUBJECT_RECOGNITION,
+            listOf("u4-i-nom-role-train", "u4-i-nom-role-student"), "u4-st-rem-nominative"),
+    ))
+}
+
 /** Authored engineering slices only; every remaining target has no policy. */
 internal fun cumulativeReviewPolicy(targetUnit: Int): CumulativeReviewPolicy? = when (targetUnit) {
     3 -> Unit3CumulativeReviewPolicy.definition
     4 -> Unit4CumulativeReviewPolicy.definition
+    5 -> Unit5CumulativeReviewPolicy.definition
     else -> null
 }
 
-internal fun cumulativeReviewTitle(targetUnit: Int): String = if (targetUnit == 3)
-    "Review earlier reading and letters" else "Review earlier reading and noun genders"
+internal fun cumulativeReviewTitle(targetUnit: Int): String = when (targetUnit) {
+    3 -> "Review earlier reading and letters"
+    4 -> "Review earlier reading and noun genders"
+    5 -> "Review earlier reading and supplied subjects"
+    else -> "Review earlier objectives"
+}
 
 internal fun cumulativeReviewDeclarationValid(pack: V2CurriculumPack, targetUnit: Int): Boolean {
     val policy = cumulativeReviewPolicy(targetUnit) ?: return false
@@ -223,9 +236,9 @@ internal fun historicalReviewCompletionCurrent(pack: V2CurriculumPack, unit: V2U
     if (!cumulativeReviewDeclarationValid(pack, unit.number)) return false
     val record = learner.unitReviewCompletions[unit.number] ?: return false
     val emptyLink = record.policyDigest.isEmpty() && record.assignmentId.isEmpty() && record.completionOrder == 0L
-    // Schema11 already wrote ordinary Unit4 rows with preActivation=false before Unit4 activation.
+    // Schema11 already wrote ordinary Unit4/5 rows with preActivation=false before their activation.
     // Only exact pre-policy governed work may preserve them; current-source raw flags cannot.
-    if (emptyLink && (record.preActivation || unit.number == 4)) {
+    if (emptyLink && (record.preActivation || unit.number in 4..5)) {
         val legacy = preReviewUnitDigest(pack, unit.number)
         val oldEvidence = learner.copy(governedAttempts = learner.governedAttempts?.filter {
             it.unitNumber != unit.number || it.unitContentDigest == legacy

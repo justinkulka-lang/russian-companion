@@ -1,0 +1,31 @@
+{
+  "baselineCommit": "1b7f2cc24905df96bc6e00cf8ab69687905076f8",
+  "unitNumber": 5,
+  "oldAdvancement": {
+    "requireInstruction": true,
+    "requireBookSelfAttestation": true,
+    "requireAppChecks": true,
+    "minimumDistinctChecks": 14,
+    "requireDueReview": false,
+    "tutorOptional": true
+  },
+  "newAdvancement": {
+    "requireInstruction": true,
+    "requireBookSelfAttestation": true,
+    "requireAppChecks": true,
+    "minimumDistinctChecks": 14,
+    "requireDueReview": true,
+    "tutorOptional": true,
+    "cumulativeReviewPolicyId": "unit5-prior-reading-subject-v1"
+  },
+  "minimumDistinctChecksUnchanged": 14,
+  "entireRawAssetExceptUnit5Advancement": "JSON_VALUE_IDENTICAL",
+  "provenance": 6913,
+  "rawAssetSha256": "226a4b98f00e54c343d23d42e33ac09d10b4abfd1d76a5ea3be44f75e826d5b0",
+  "catalogAndSchemas": "BYTE_IDENTICAL",
+  "allNineOriginalAuditFiles": "HASH_VERIFIED",
+  "priorPolicyCanonicalDefinitions": "UNIT3_AND_UNIT4_UNCHANGED",
+  "historicalDisposition": "Empty review links with either activation marker require exact pre-policy governed Unit5 work; no synthetic review, no stale numeric-flag credit",
+  "claims": "Two fixed supplied recognition slots; qualified acceptance pending",
+  "activation": "ONLY_UNIT5_ADDED;UNITS3_AND4_REMAIN_ACTIVE"
+}
