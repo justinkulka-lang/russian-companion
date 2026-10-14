@@ -1,0 +1,81 @@
+{
+  "baselineCommit": "b5610846cae953c3655466794c83cdcb4063ac4e",
+  "rawCurriculumSha256": "c829c6caf79f2e4e2fac0fb379f2393d9a16baae46e1286927f21cfe83649e53",
+  "precedingProvenancePreserved": 6869,
+  "newPendingProvenance": 44,
+  "totalProvenance": 6913,
+  "all58CapabilitiesPreserved": true,
+  "priorCanonicalPinsPreserved": 68,
+  "newCanonicalPins": 3,
+  "allOriginalExamplesPreserved": true,
+  "other29UnitsPreserved": true,
+  "otherUnit4ObjectivesSessionsAndAdvancementUnchanged": true,
+  "minimumDistinctChecks": 14,
+  "legacyTranslationsPreservedAsOptional": [
+    "u4-g-nominative-1",
+    "u4-i-nom-muzh",
+    "u4-i-nom-poezd"
+  ],
+  "newRequiredRoleItemIds": [
+    "u4-g-nom-role",
+    "u4-i-nom-role-train",
+    "u4-i-nom-role-student"
+  ],
+  "allSourcesRightsMappingsPreserved": true,
+  "deterministicReplay": true,
+  "idempotent": true,
+  "sourceIdentities": [
+    {
+      "path": "catalog/sources/units-3-5/wikibooks/nominative-4213267.txt",
+      "sha256": "c00d0dbe20bde2abd3aae63d08bf6a3f5a291f5cbfcd0cea5c853af04a6e1c84"
+    },
+    {
+      "path": "catalog/sources/units-3-5/wikibooks/nominative-4213267.revision.json",
+      "sha256": "31db61b3bdbbcdc004b0f4d2835d99678f5fc4aef734ec40fce37357d47b9558"
+    },
+    {
+      "path": "catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt",
+      "sha256": "95447e1048fcc0094d2e96f1b796b8cc65a595a6fbcd385430a97dc2631b6b40"
+    }
+  ],
+  "originalDiagnosticFiles": [
+    {
+      "path": "audit/independent-gpt61-2026-10-12/received-results/AUDIT_SCOPE_AND_EVIDENCE.json",
+      "sha256": "ede9d04c1df26f2612f0210dfe0916a17dbe687ac9612f6858ee9c5025f20563"
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/received-results/CODEX_RETURN_HANDOFF.md",
+      "sha256": "a52afc6e6db45b10bceaca78034ba5697328e8b534f225de90fbb9c7b0b29fd0"
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/received-results/FINDINGS.csv",
+      "sha256": "f8e6a593545a24f5f02702d59ac7d63ef3b7f796ec71dc0a06063fa491d21ace"
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/received-results/INDEPENDENT_AUDIT_REPORT.md",
+      "sha256": "fd9ad913e312e1f6b332cd5a21ab90a783a809c8443f11c486c99ab9f0b4ad40"
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/received-results/ITEM_ASSESSMENT_AUDIT.csv",
+      "sha256": "2637ecf4f205610710dfa42ff9878ba592f0284a2f3fd46fbd6d297d32c37ddd"
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/received-results/REQUIREMENTS_MATRIX.csv",
+      "sha256": "3f0770ad922a99da67ea533b7e799a0a3951f91abaf528d70b0a9b1a1db52c1e"
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/received-results/SOURCE_AND_BINDING_REVIEW.json",
+      "sha256": "59d00b0b7163c741adff98ea884bc10972eabe258d4ebdc18d8e7aa22a6c3ad0"
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/received-results/TARGET_75_DISPOSITIONS.csv",
+      "sha256": "76fa43dd958a3e9b6459601b0bd22c113b4b1b376af6cc8f6d772e18ef8a126d"
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/received-results/UNIT_COVERAGE.csv",
+      "sha256": "794828fc9d6de4c5c5cc85df40630ba0bd4b136d98b107b795887999a04440bd"
+    }
+  ],
+  "allNineOriginalHashesPreserved": true,
+  "semanticAcceptance": false
+}

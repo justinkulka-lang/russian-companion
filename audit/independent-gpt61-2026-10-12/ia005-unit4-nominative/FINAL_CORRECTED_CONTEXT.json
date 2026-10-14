@@ -1,0 +1,41 @@
+{
+  "repositoryCommit": "b5610846cae953c3655466794c83cdcb4063ac4e",
+  "workingTree": "Uncommitted corrected role chain/optional remediation and scoped prior fixtures",
+  "counts": {
+    "tests": 9,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "exitCode": 0,
+  "files": [
+    {
+      "path": "FINAL_CORRECTED_TEST-dev.russiancompanion.v2.Unit6AnimacyTransferTest.xml",
+      "sha256": "8ee4b0bc63fff98b52eea0d4c459b4c10e2be2d41e372852ce15c6616942490d",
+      "methods": [
+        "unit6ScoredEvidenceAndEveryPriorExampleRecordRemainWhole"
+      ]
+    },
+    {
+      "path": "FINAL_CORRECTED_TEST-dev.russiancompanion.v2.Unit8PluralInstructionTest.xml",
+      "sha256": "1aee277628ab84a18ce661c4027d05849fc9117d99e37d91845829f09cc46f20",
+      "methods": [
+        "unit8ScoredObjectsAndAllPriorNativeExamplesAndProvenanceRemainIdentical"
+      ]
+    },
+    {
+      "path": "FINAL_CORRECTED_TEST-dev.russiancompanion.v2.Unit4NominativeRoleTest.xml",
+      "sha256": "309394ecae489924fb12fa0b5f71c4cab469e47e44f32ec27e9af913f0da457f",
+      "methods": [
+        "oldTranslationCompletionHistoryIsPreservedButStaleForTheNewConstruct",
+        "twoDistinctIndependentSubjectsAndFullTeachingAreRequired",
+        "correctGlossesStayOptionalAndCannotReplaceCaseRoleChecks",
+        "legacyGlossRestorationAndCoherentNativeForgeryCannotBypassTheRoleGuard",
+        "coordinatedRoleKeyAndCanonicalTupleHashReversalIsRejected",
+        "allPriorExamplesRecordsCapabilitiesAndOtherUnitsRemainWhole",
+        "wrongCaseRoleShowsTargetedFeedbackAndReturnsToEveryExample"
+      ]
+    }
+  ],
+  "scope": "9_FOCUSED_METHODS_NOT_COMPLETE_SUITE"
+}

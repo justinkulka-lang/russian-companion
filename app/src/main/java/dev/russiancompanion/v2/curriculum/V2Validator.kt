@@ -2610,6 +2610,9 @@ internal object V2Validator {
         if (unit.sessions.isEmpty()) errors += "Development unit ${unit.number} has no sessions"
         if (unit.objectives.isEmpty()) errors += "Development unit ${unit.number} has no objectives"
         validateOpenableBody(pack, unit, errors, requireCompleteRecognition = true)
+        if (unit.number == 4 && !Unit4NominativeRolePins.matches(pack)) {
+            errors += "Unit 4 nominative objective has no frozen distinct subject-role evidence chain"
+        }
         if (unit.number in 6..30) validateGovernedChecks(pack, unit, errors)
     }
 
@@ -3628,6 +3631,7 @@ internal object V2Validator {
         "REPORTED_NATIONALITY_GUIDED" to "nationality statement",
         "REPORTED_FRAME_EMBEDDED_TIME" to "reporting verb",
         "ANIMACY_INANIMATE_CONTEXT" to "masculine inanimate direct object",
+        "NOMINATIVE_CASE_ROLE" to "case role",
         "REPORTED_EVENING" to "reported evening",
         "DIRECT_EVENING" to "direct evening",
         "MOSCOW_FUTURE" to "Moscow",

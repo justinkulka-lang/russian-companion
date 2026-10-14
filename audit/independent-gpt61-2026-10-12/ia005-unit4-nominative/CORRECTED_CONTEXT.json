@@ -1,0 +1,13 @@
+{
+  "repositoryCommit": "b5610846cae953c3655466794c83cdcb4063ac4e",
+  "workingTree": "Uncommitted correction/guard/test helper syntax fixed",
+  "counts": {
+    "tests": 7,
+    "failures": 1,
+    "errors": 0,
+    "skipped": 0
+  },
+  "exitCode": 1,
+  "xmlSha256": "dc8c3a43de301588f80c12160cc96201d4d8420ac39d4a93eeaddb066f3a3fe3",
+  "assetSha256": "709ee45404fa961e231b75ea4101b9cea71eb167f7b87a9c2460559c8f7192db"
+}

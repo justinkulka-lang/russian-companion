@@ -1,0 +1,10 @@
+{
+  "repositoryCommit": "b5610846cae953c3655466794c83cdcb4063ac4e",
+  "workingTree": "Uncommitted correction and seven new tests",
+  "outcome": "TEST_COMPILATION_FAILURE_ZERO_TESTS_EXECUTED",
+  "testsExecuted": 0,
+  "logSha256": "30baf018db087bc7e2ee54c1cc9326a9f74b62ffacce56e12c7fa5270261ea95",
+  "testSha256": "9aecb7266f81e643b540bf2ec640410f34f467125d3ffe3cdd0bc25c969bacad",
+  "diagnosis": "Local expression-body helper written inline with following declaration; replace it with a lambda. No assertion bypass.",
+  "command": "source /workspace/setup/android-env.sh\n./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*Unit4NominativeRoleTest' --max-workers=4 --console=plain"
+}

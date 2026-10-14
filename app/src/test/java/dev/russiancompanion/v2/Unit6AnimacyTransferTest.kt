@@ -24,10 +24,10 @@ class Unit6AnimacyTransferTest {
   assertTrue(r.body.contains("Matching a genitive form does not change the accusative"));assertTrue(r.body.contains("does not establish completed action"));assertTrue(r.body.contains("not unseen or unrestricted productive mastery"))
   val v=V2Validator.validate(p);assertTrue(v.errors.joinToString("\n"),v.ok)
  }
- @Test fun onlyDuplicateChangesAndAllPriorNativeAndProvenanceRemainWhole() {
-  val p=pack();val old=baseline();assertEquals(old.items.filter{it.id!="u6-i-animacy-3"},p.items.filter{it.id!="u6-i-animacy-3"});assertEquals(old.sourceCapabilities,p.sourceCapabilities)
-  assertEquals(old.examples,p.examples.filter{it.id!="ex-u6-animacy-transfer-chair"});val records=p.provenanceRecords.associateBy{it.itemId};old.provenanceRecords.forEach{assertEquals(it,records[it.itemId])};assertEquals(25,p.provenanceRecords.size-old.provenanceRecords.size)
-  assertEquals(old.units.filter{it.number!=6},p.units.filter{it.number!=6});assertEquals(old.unit(6)!!.objectives.filter{it.id!="obj-u6-animacy"},p.unit(6)!!.objectives.filter{it.id!="obj-u6-animacy"});assertEquals(old.unit(6)!!.sessions.filter{it.id!="u6-s-animacy"},p.unit(6)!!.sessions.filter{it.id!="u6-s-animacy"})
+ @Test fun unit6ScoredEvidenceAndEveryPriorExampleRecordRemainWhole() {
+  val p=pack();val old=baseline();assertEquals(old.items.filter{it.objectiveId.startsWith("obj-u6-") && it.id!="u6-i-animacy-3"},p.items.filter{it.objectiveId.startsWith("obj-u6-") && it.id!="u6-i-animacy-3"});assertEquals(old.sourceCapabilities,p.sourceCapabilities)
+  assertEquals(old.examples,p.examples.filter{e->old.examples.any{it.id==e.id}});val records=p.provenanceRecords.associateBy{it.itemId};old.provenanceRecords.forEach{assertEquals(it,records[it.itemId])};assertEquals(25,p.provenanceRecords.count{it.unitNumber==6}-old.provenanceRecords.count{it.unitNumber==6})
+  assertEquals(old.unit(6)!!.objectives.filter{it.id!="obj-u6-animacy"},p.unit(6)!!.objectives.filter{it.id!="obj-u6-animacy"});assertEquals(old.unit(6)!!.sessions.filter{it.id!="u6-s-animacy"},p.unit(6)!!.sessions.filter{it.id!="u6-s-animacy"})
  }
  @Test fun teacherAndFriendAnswersCannotReplaceRequiredInanimateClassification() {
   val p=pack();val o=obj(p);LocalStore.openInMemory(context()).use { store ->

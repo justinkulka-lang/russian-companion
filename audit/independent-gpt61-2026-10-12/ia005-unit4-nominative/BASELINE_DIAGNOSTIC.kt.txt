@@ -1,0 +1,26 @@
+package dev.russiancompanion.v2
+import android.content.Context
+import androidx.test.core.app.ApplicationProvider
+import dev.russiancompanion.data.local.LocalStore
+import dev.russiancompanion.v2.curriculum.*
+import org.junit.Assert.*
+import org.junit.Test
+import org.junit.runner.RunWith
+import org.robolectric.RobolectricTestRunner
+import org.robolectric.annotation.Config
+import java.io.File
+@RunWith(RobolectricTestRunner::class)
+@Config(sdk=[33])
+class Unit4NominativeBaselineDiagnosticTest {
+ @Test fun threeTranslationAnswersCompleteTheNamedNominativeObjective() {
+  val p=pack();val o=p.unit(4)!!.objectives.single{it.id=="obj-u4-nominative"};val ids=listOf("u4-g-nominative-1","u4-i-nom-muzh","u4-i-nom-poezd");val c:Context=ApplicationProvider.getApplicationContext()
+  LocalStore.openInMemory(c).use { s->
+   for(id in ids){val t=p.unit(4)!!.sessions.flatMap{it.steps}.first{id in it.itemIds};val i=p.item(id)!!;assertNull(i.assessment);s.v2RecordGovernedAttempt(prepareGovernedAttempt(p,id,i.answer,PRESCRIBED_CHECK,t.id,"2026-10-14T00:00")!!)}
+   assertEquals(ids.toSet(),creditItemIds(p,s.v2LearnerView()));assertEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS,objectiveState(o,s.v2LearnerView(),p));assertEquals(3,s.v2Attempts().size)
+  }
+ }
+ @Test fun namedRoleObjectiveMustHaveDistinctIndependentCaseRoleEvidence() {
+  val p=pack();val o=p.unit(4)!!.objectives.single{it.id=="obj-u4-nominative"};assertEquals("IA005 legacy translation choices do not assess the named case role",2,o.checkItemIds.count{p.item(it)!!.assessment?.testedFeature=="NOMINATIVE_CASE_ROLE"})
+ }
+ private fun pack()=V2PackLoader.parse(File(if(File("app").isDirectory)"." else "..","app/src/main/assets/content/v2-curriculum.json").readText())
+}
