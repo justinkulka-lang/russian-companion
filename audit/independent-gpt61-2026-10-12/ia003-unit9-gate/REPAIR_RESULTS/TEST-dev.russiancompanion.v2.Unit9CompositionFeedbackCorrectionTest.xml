@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit9CompositionFeedbackCorrectionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-14T19:57:25.717Z" hostname="f5c5dd6b855f" time="25.194">
+  <properties/>
+  <testcase name="compositionAndAgreementFeedbackExplainsTheSourceDistinctions" classname="dev.russiancompanion.v2.Unit9CompositionFeedbackCorrectionTest" time="23.552"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

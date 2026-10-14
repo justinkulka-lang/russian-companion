@@ -28,7 +28,16 @@ class Unit9CompositionFeedbackCorrectionTest {
             assertFalse(item.id, item.feedback.startsWith("Does"))
             assertEquals(item.feedback, item.assessment!!.whyAnswerDemonstratesObjective)
             assertEquals(item.distractorRationales, item.assessment.distractorDifference)
-            assertTrue(item.id, item.distractorRationales.filter { it.isNotBlank() }.all { it.contains("instead") || it.contains("omits") })
+            if (item.id == "u9-i-odindva-4") {
+                // This earlier distinct-noun correction explains gender without numeric instead/omits wording.
+                assertEquals("час", item.promptLetter)
+                assertEquals(listOf("один", "одна"), item.options)
+                assertEquals("один", item.answer)
+                assertEquals("ODIN_MASCULINE", item.assessment.testedFeature)
+                assertEquals(listOf("", "одна is the feminine singular form; the supplied example with час uses masculine singular один."), item.distractorRationales)
+            } else {
+                assertTrue(item.id, item.distractorRationales.filter { it.isNotBlank() }.all { it.contains("instead") || it.contains("omits") })
+            }
         }
         assertTrue(p.item("u9-i-thousands-3")!!.feedback.contains("1,000 + 900 + 80 + 4"))
         assertTrue(p.item("u9-i-thousands-4")!!.feedback.contains("genitive singular") && p.item("u9-i-thousands-4")!!.feedback.contains("genitive plural"))
