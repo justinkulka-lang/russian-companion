@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit10FeedbackCorrectionTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-14T21:10:28.333Z" hostname="f5c5dd6b855f" time="80.49">
+  <properties/>
+  <testcase name="wrongObjectSelectionDisplaysTheSubjectContrast" classname="dev.russiancompanion.v2.Unit10FeedbackCorrectionTest" time="53.175"/>
+  <testcase name="feedbackExplainsPronounReferentsAndAnimateObjectCase" classname="dev.russiancompanion.v2.Unit10FeedbackCorrectionTest" time="22.808"/>
+  <testcase name="historicalGenericFeedbackCreditIsRetainedButStale" classname="dev.russiancompanion.v2.Unit10FeedbackCorrectionTest" time="1.213"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

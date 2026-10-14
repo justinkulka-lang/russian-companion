@@ -27,7 +27,7 @@ internal data class CumulativeReviewAnswer(
 )
 
 /** Skill labels describe only the bounded evidence supported by the authored checks. */
-internal enum class CumulativeReviewSkill { BOUNDED_READING, PRINTED_LETTER_RECOGNITION, NOUN_GENDER_RECOGNITION, SUPPLIED_NOMINATIVE_SUBJECT_RECOGNITION, SUPPLIED_NOUN_BEHAVIOR_RECOGNITION, SUPPLIED_INANIMATE_ACCUSATIVE_RECOGNITION, SUPPLIED_NOMINATIVE_AGREEMENT_RECOGNITION, SUPPLIED_NOMINATIVE_PLURAL_RECOGNITION }
+internal enum class CumulativeReviewSkill { BOUNDED_READING, PRINTED_LETTER_RECOGNITION, NOUN_GENDER_RECOGNITION, SUPPLIED_NOMINATIVE_SUBJECT_RECOGNITION, SUPPLIED_NOUN_BEHAVIOR_RECOGNITION, SUPPLIED_INANIMATE_ACCUSATIVE_RECOGNITION, SUPPLIED_NOMINATIVE_AGREEMENT_RECOGNITION, SUPPLIED_NOMINATIVE_PLURAL_RECOGNITION, SUPPLIED_NUMERAL_GENDER_RECOGNITION }
 
 internal data class CumulativeReviewObjectivePool(
     val objectiveId: String, val skill: CumulativeReviewSkill, val candidateItemIds: List<String>,
@@ -113,6 +113,14 @@ internal object Unit9CumulativeReviewPolicy {
     ))
 }
 
+internal object Unit10CumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit10-prior-reading-numeral-gender-v1", 10, listOf(
+        CumulativeReviewObjectivePool("obj-u1-decoding", CumulativeReviewSkill.BOUNDED_READING, listOf("u1-i-decode-pair")),
+        CumulativeReviewObjectivePool("obj-u9-odindva", CumulativeReviewSkill.SUPPLIED_NUMERAL_GENDER_RECOGNITION,
+            listOf("u9-i-odindva-4"), "u9-st-rem-odindva"),
+    ))
+}
+
 /** Authored engineering slices only; every remaining target has no policy. */
 internal fun cumulativeReviewPolicy(targetUnit: Int): CumulativeReviewPolicy? = when (targetUnit) {
     3 -> Unit3CumulativeReviewPolicy.definition
@@ -122,6 +130,7 @@ internal fun cumulativeReviewPolicy(targetUnit: Int): CumulativeReviewPolicy? = 
     7 -> Unit7CumulativeReviewPolicy.definition
     8 -> Unit8CumulativeReviewPolicy.definition
     9 -> Unit9CumulativeReviewPolicy.definition
+    10 -> Unit10CumulativeReviewPolicy.definition
     else -> null
 }
 
@@ -133,6 +142,7 @@ internal fun cumulativeReviewTitle(targetUnit: Int): String = when (targetUnit) 
     7 -> "Review earlier reading and supplied object forms"
     8 -> "Review earlier reading and supplied agreement"
     9 -> "Review earlier reading and supplied noun plurals"
+    10 -> "Review earlier reading and supplied numeral agreement"
     else -> "Review earlier objectives"
 }
 
@@ -277,9 +287,9 @@ internal fun historicalReviewCompletionCurrent(pack: V2CurriculumPack, unit: V2U
     if (!cumulativeReviewDeclarationValid(pack, unit.number)) return false
     val record = learner.unitReviewCompletions[unit.number] ?: return false
     val emptyLink = record.policyDigest.isEmpty() && record.assignmentId.isEmpty() && record.completionOrder == 0L
-    // Schema11 already wrote ordinary Unit4–9 rows with preActivation=false before their activation.
+    // Schema11 already wrote ordinary Unit4–10 rows with preActivation=false before their activation.
     // Only exact pre-policy governed work may preserve them; current-source raw flags cannot.
-    if (emptyLink && (record.preActivation || unit.number in 4..9)) {
+    if (emptyLink && (record.preActivation || unit.number in 4..10)) {
         val legacy = preReviewUnitDigest(pack, unit.number)
         val oldEvidence = learner.copy(governedAttempts = learner.governedAttempts?.filter {
             it.unitNumber != unit.number || it.unitContentDigest == legacy
