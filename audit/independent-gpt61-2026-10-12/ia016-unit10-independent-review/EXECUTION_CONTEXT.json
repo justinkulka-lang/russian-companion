@@ -1,0 +1,15 @@
+{
+  "baselineRepositoryCommit": "55b00df945814c4c6bb089868d5352f38908b74d",
+  "workingTree": "One new committed independent-pair regression class; protected production/source/review/release inputs unchanged.",
+  "testSha256": "c6e71c09314c5d4a51f35da70fbdc9c0fa6cc4553bad838480663cb2da57a2e6",
+  "scriptSha256": "eda3a8212329c0c40e6f0e12f1503284ffd3c15a3e23e330c29b00822d8ce879",
+  "initScripts": {
+    "/workspace/setup/cloud-validation.gradle": "21c6a0ee2e97cf83c472513ac31c3d2d456e461185384e9b5e58c0fed298d123",
+    "/workspace/setup/parallel-tests.gradle": "2366eb867708f83db10b39080abff1b45d2e347bab15ce2ec1c95c3d31cf7ff3"
+  },
+  "intendedTests": 9,
+  "intendedClasses": 3,
+  "intendedSelectors": 3,
+  "scope": "FOCUSED_INDEPENDENT_REINFORCEMENT_REVIEW_NOT_COMPLETE_SUITE",
+  "formalAcceptance": false
+}

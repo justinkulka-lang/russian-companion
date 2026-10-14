@@ -1,0 +1,1134 @@
+{
+  "baselineRepositoryCommit": "55b00df945814c4c6bb089868d5352f38908b74d",
+  "identities": [
+    {
+      "path": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+      "sha256": "2bd8751faf3bae6d407445523671ffcf4827750f25318ae5fc0d40e482001591",
+      "bytes": 11793
+    },
+    {
+      "path": "catalog/sources/units-6-10/wikibooks/genitive-4567338.revision.json",
+      "sha256": "2b365f792bfa7616dee9cceac70088e3327597f8c69408a1467c1f048527b686",
+      "bytes": 230
+    },
+    {
+      "path": "catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt",
+      "sha256": "95447e1048fcc0094d2e96f1b796b8cc65a595a6fbcd385430a97dc2631b6b40",
+      "bytes": 10475
+    },
+    {
+      "path": "app/src/main/assets/content/v2-curriculum.json",
+      "sha256": "3052b1dc1ac32d91c0a5b3b5be25c867a95a26c7aaaabac5445b2e72be4e297f",
+      "bytes": 19720276
+    },
+    {
+      "path": "app/src/main/java/dev/russiancompanion/v2/curriculum/CompleteRuleContextPins.kt",
+      "sha256": "12b293da98d7e9766c5f707f9d3ad5efd678d89b45f9073434dee132ba8a6171",
+      "bytes": 12475
+    },
+    {
+      "path": "release/acceptance/candidate.json",
+      "sha256": "b5fbee8b0e8219aeeac4d86bd6756704eb7a8ab53ca902fc0382c30efd43b573",
+      "bytes": 3659
+    },
+    {
+      "path": "review/unit-10/UNIT_10_REVIEW_MANIFEST.json",
+      "sha256": "b011b275cae5ccc945d47155a155dc63a2380c17122e50d5a61e2ee3d9d3a118",
+      "bytes": 238371
+    }
+  ],
+  "items": [
+    {
+      "id": "u10-g-have-0",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which explanation accounts for the noun cases in the shown line?",
+      "promptLetter": "У меня есть Х",
+      "options": [
+        "In this line, the possessor is genitive and the possessed thing is nominative.",
+        "In this line, the absent thing is in the genitive case."
+      ],
+      "answer": "In this line, the possessor is genitive and the possessed thing is nominative.",
+      "feedback": "У меня есть Х uses the simple possession construction. The possessor after the possession preposition is genitive; the possessed thing or slot is nominative. The absence explanation would deny possession, which this line does not do.",
+      "objectiveId": "obj-u10-have",
+      "sourceId": "src-content-audit-research",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "The other explanation describes absence rather than the presence or simple possession shown here."
+      ],
+      "assessment": {
+        "testedFeature": "POSSESSION_EST",
+        "evidenceMode": "STATED_APPLICATION",
+        "contrastSetId": "u10-have-0",
+        "cueLanguage": "ru",
+        "independent": false,
+        "answerSourceIds": [
+          "prov-ca-rule-u10-g-have-0-1"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ca-rule-u10-g-have-0-2"
+        ],
+        "distractorDifference": [
+          "",
+          "The other explanation describes absence rather than the presence or simple possession shown here."
+        ],
+        "whyAnswerDemonstratesObjective": "У меня есть Х uses the simple possession construction. The possessor after the possession preposition is genitive; the possessed thing or slot is nominative. The absence explanation would deny possession, which this line does not do.",
+        "contrastMembers": [
+          "In this line, the possessor is genitive and the possessed thing is nominative.",
+          "In this line, the absent thing is in the genitive case."
+        ],
+        "relationKind": "STATED_APPLICATION",
+        "relationParticipantIds": [
+          "prov-ca-rule-u10-g-have-0-0",
+          "prov-ca-rule-u10-g-have-0-1",
+          "prov-ca-rule-u10-g-have-0-2"
+        ]
+      }
+    },
+    {
+      "id": "u10-i-have-1",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which explanation accounts for the noun cases in the shown line?",
+      "promptLetter": "Да, у меня есть сын.",
+      "options": [
+        "In this line, the possessor is genitive and the possessed thing is nominative.",
+        "In this line, the absent thing is in the genitive case."
+      ],
+      "answer": "In this line, the possessor is genitive and the possessed thing is nominative.",
+      "feedback": "Да, у меня есть сын. uses the simple possession construction. The possessor after the possession preposition is genitive; the possessed thing or slot is nominative. The absence explanation would deny possession, which this line does not do.",
+      "objectiveId": "obj-u10-have",
+      "sourceId": "src-content-audit-research",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "The other explanation describes absence rather than the presence or simple possession shown here."
+      ],
+      "assessment": {
+        "testedFeature": "POSSESSION_EST",
+        "evidenceMode": "STATED_APPLICATION",
+        "contrastSetId": "u10-have-1",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ca-rule-u10-i-have-1-1"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ca-rule-u10-i-have-1-2"
+        ],
+        "distractorDifference": [
+          "",
+          "The other explanation describes absence rather than the presence or simple possession shown here."
+        ],
+        "whyAnswerDemonstratesObjective": "Да, у меня есть сын. uses the simple possession construction. The possessor after the possession preposition is genitive; the possessed thing or slot is nominative. The absence explanation would deny possession, which this line does not do.",
+        "contrastMembers": [
+          "In this line, the possessor is genitive and the possessed thing is nominative.",
+          "In this line, the absent thing is in the genitive case."
+        ],
+        "relationKind": "STATED_APPLICATION",
+        "relationParticipantIds": [
+          "prov-ca-rule-u10-i-have-1-0",
+          "prov-ca-rule-u10-i-have-1-1",
+          "prov-ca-rule-u10-i-have-1-2"
+        ]
+      }
+    },
+    {
+      "id": "u10-i-have-2",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which explanation accounts for the noun cases in the shown line?",
+      "promptLetter": "У вас есть сын?",
+      "options": [
+        "In this line, the possessor is genitive and the possessed thing is nominative.",
+        "In this line, the absent thing is in the genitive case."
+      ],
+      "answer": "In this line, the possessor is genitive and the possessed thing is nominative.",
+      "feedback": "У вас есть сын? uses the simple possession construction. The possessor after the possession preposition is genitive; the possessed thing or slot is nominative. The absence explanation would deny possession, which this line does not do.",
+      "objectiveId": "obj-u10-have",
+      "sourceId": "src-content-audit-research",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "The other explanation describes absence rather than the presence or simple possession shown here."
+      ],
+      "assessment": {
+        "testedFeature": "POSSESSION_EST",
+        "evidenceMode": "STATED_APPLICATION",
+        "contrastSetId": "u10-have-2",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ca-rule-u10-i-have-2-1"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ca-rule-u10-i-have-2-2"
+        ],
+        "distractorDifference": [
+          "",
+          "The other explanation describes absence rather than the presence or simple possession shown here."
+        ],
+        "whyAnswerDemonstratesObjective": "У вас есть сын? uses the simple possession construction. The possessor after the possession preposition is genitive; the possessed thing or slot is nominative. The absence explanation would deny possession, which this line does not do.",
+        "contrastMembers": [
+          "In this line, the possessor is genitive and the possessed thing is nominative.",
+          "In this line, the absent thing is in the genitive case."
+        ],
+        "relationKind": "STATED_APPLICATION",
+        "relationParticipantIds": [
+          "prov-ca-rule-u10-i-have-2-0",
+          "prov-ca-rule-u10-i-have-2-1",
+          "prov-ca-rule-u10-i-have-2-2"
+        ]
+      }
+    },
+    {
+      "id": "u10-i-have-3",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which explanation accounts for the noun cases in the shown line?",
+      "promptLetter": "У меня́ нет сы́на",
+      "options": [
+        "In this line, the possessor is genitive and the possessed thing is nominative.",
+        "In this line, the absent thing is in the genitive case."
+      ],
+      "answer": "In this line, the absent thing is in the genitive case.",
+      "feedback": "У меня́ нет сы́на expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.",
+      "objectiveId": "obj-u10-have",
+      "sourceId": "src-content-audit-research",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "The other explanation asserts presence or simple possession rather than the absence shown here.",
+        ""
+      ],
+      "assessment": {
+        "testedFeature": "POSSESSION_EST",
+        "evidenceMode": "STATED_APPLICATION",
+        "contrastSetId": "u10-have-3",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ca-rule-u10-i-have-3-1"
+        ],
+        "distractorSourceIds": [
+          "prov-ca-rule-u10-i-have-3-2",
+          ""
+        ],
+        "distractorDifference": [
+          "The other explanation asserts presence or simple possession rather than the absence shown here.",
+          ""
+        ],
+        "whyAnswerDemonstratesObjective": "У меня́ нет сы́на expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.",
+        "contrastMembers": [
+          "In this line, the possessor is genitive and the possessed thing is nominative.",
+          "In this line, the absent thing is in the genitive case."
+        ],
+        "relationKind": "STATED_APPLICATION",
+        "relationParticipantIds": [
+          "prov-ca-rule-u10-i-have-3-0",
+          "prov-ca-rule-u10-i-have-3-1",
+          "prov-ca-rule-u10-i-have-3-2"
+        ]
+      }
+    },
+    {
+      "id": "u10-i-have-4",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which explanation accounts for the noun cases in the shown line?",
+      "promptLetter": "У моего́ бра́та нет де́нег",
+      "options": [
+        "In this line, the possessor is genitive and the possessed thing is nominative.",
+        "In this line, the absent thing is in the genitive case."
+      ],
+      "answer": "In this line, the absent thing is in the genitive case.",
+      "feedback": "У моего́ бра́та нет де́нег expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.",
+      "objectiveId": "obj-u10-have",
+      "sourceId": "src-content-audit-research",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "The other explanation asserts presence or simple possession rather than the absence shown here.",
+        ""
+      ],
+      "assessment": {
+        "testedFeature": "POSSESSION_EST",
+        "evidenceMode": "STATED_APPLICATION",
+        "contrastSetId": "u10-have-4",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ca-rule-u10-i-have-4-1"
+        ],
+        "distractorSourceIds": [
+          "prov-ca-rule-u10-i-have-4-2",
+          ""
+        ],
+        "distractorDifference": [
+          "The other explanation asserts presence or simple possession rather than the absence shown here.",
+          ""
+        ],
+        "whyAnswerDemonstratesObjective": "У моего́ бра́та нет де́нег expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.",
+        "contrastMembers": [
+          "In this line, the possessor is genitive and the possessed thing is nominative.",
+          "In this line, the absent thing is in the genitive case."
+        ],
+        "relationKind": "STATED_APPLICATION",
+        "relationParticipantIds": [
+          "prov-ca-rule-u10-i-have-4-0",
+          "prov-ca-rule-u10-i-have-4-1",
+          "prov-ca-rule-u10-i-have-4-2"
+        ]
+      }
+    },
+    {
+      "id": "u10-g-absence-0",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which explanation accounts for the noun cases in the shown line?",
+      "promptLetter": "У меня́ нет сы́на",
+      "options": [
+        "In this line, the possessor is genitive and the possessed thing is nominative.",
+        "In this line, the absent thing is in the genitive case."
+      ],
+      "answer": "In this line, the absent thing is in the genitive case.",
+      "feedback": "У меня́ нет сы́на expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.",
+      "objectiveId": "obj-u10-absence",
+      "sourceId": "src-content-audit-research",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "The other explanation asserts presence or simple possession rather than the absence shown here.",
+        ""
+      ],
+      "assessment": {
+        "testedFeature": "ABSENCE_NET",
+        "evidenceMode": "STATED_APPLICATION",
+        "contrastSetId": "u10-absence-0",
+        "cueLanguage": "ru",
+        "independent": false,
+        "answerSourceIds": [
+          "prov-ca-rule-u10-g-absence-0-1"
+        ],
+        "distractorSourceIds": [
+          "prov-ca-rule-u10-g-absence-0-2",
+          ""
+        ],
+        "distractorDifference": [
+          "The other explanation asserts presence or simple possession rather than the absence shown here.",
+          ""
+        ],
+        "whyAnswerDemonstratesObjective": "У меня́ нет сы́на expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.",
+        "contrastMembers": [
+          "In this line, the possessor is genitive and the possessed thing is nominative.",
+          "In this line, the absent thing is in the genitive case."
+        ],
+        "relationKind": "STATED_APPLICATION",
+        "relationParticipantIds": [
+          "prov-ca-rule-u10-g-absence-0-0",
+          "prov-ca-rule-u10-g-absence-0-1",
+          "prov-ca-rule-u10-g-absence-0-2"
+        ]
+      }
+    },
+    {
+      "id": "u10-i-absence-1",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which explanation accounts for the noun cases in the shown line?",
+      "promptLetter": "Нет рестора́нов",
+      "options": [
+        "In this line, the possessor is genitive and the possessed thing is nominative.",
+        "In this line, the absent thing is in the genitive case."
+      ],
+      "answer": "In this line, the absent thing is in the genitive case.",
+      "feedback": "Нет рестора́нов expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.",
+      "objectiveId": "obj-u10-absence",
+      "sourceId": "src-content-audit-research",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "The other explanation asserts presence or simple possession rather than the absence shown here.",
+        ""
+      ],
+      "assessment": {
+        "testedFeature": "ABSENCE_NET",
+        "evidenceMode": "STATED_APPLICATION",
+        "contrastSetId": "u10-absence-1",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ca-rule-u10-i-absence-1-1"
+        ],
+        "distractorSourceIds": [
+          "prov-ca-rule-u10-i-absence-1-2",
+          ""
+        ],
+        "distractorDifference": [
+          "The other explanation asserts presence or simple possession rather than the absence shown here.",
+          ""
+        ],
+        "whyAnswerDemonstratesObjective": "Нет рестора́нов expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.",
+        "contrastMembers": [
+          "In this line, the possessor is genitive and the possessed thing is nominative.",
+          "In this line, the absent thing is in the genitive case."
+        ],
+        "relationKind": "STATED_APPLICATION",
+        "relationParticipantIds": [
+          "prov-ca-rule-u10-i-absence-1-0",
+          "prov-ca-rule-u10-i-absence-1-1",
+          "prov-ca-rule-u10-i-absence-1-2"
+        ]
+      }
+    },
+    {
+      "id": "u10-i-absence-2",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which explanation accounts for the noun cases in the shown line?",
+      "promptLetter": "В Москве́ нет ста́рых зда́ний",
+      "options": [
+        "In this line, the possessor is genitive and the possessed thing is nominative.",
+        "In this line, the absent thing is in the genitive case."
+      ],
+      "answer": "In this line, the absent thing is in the genitive case.",
+      "feedback": "В Москве́ нет ста́рых зда́ний expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.",
+      "objectiveId": "obj-u10-absence",
+      "sourceId": "src-content-audit-research",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "The other explanation asserts presence or simple possession rather than the absence shown here.",
+        ""
+      ],
+      "assessment": {
+        "testedFeature": "ABSENCE_NET",
+        "evidenceMode": "STATED_APPLICATION",
+        "contrastSetId": "u10-absence-2",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ca-rule-u10-i-absence-2-1"
+        ],
+        "distractorSourceIds": [
+          "prov-ca-rule-u10-i-absence-2-2",
+          ""
+        ],
+        "distractorDifference": [
+          "The other explanation asserts presence or simple possession rather than the absence shown here.",
+          ""
+        ],
+        "whyAnswerDemonstratesObjective": "В Москве́ нет ста́рых зда́ний expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.",
+        "contrastMembers": [
+          "In this line, the possessor is genitive and the possessed thing is nominative.",
+          "In this line, the absent thing is in the genitive case."
+        ],
+        "relationKind": "STATED_APPLICATION",
+        "relationParticipantIds": [
+          "prov-ca-rule-u10-i-absence-2-0",
+          "prov-ca-rule-u10-i-absence-2-1",
+          "prov-ca-rule-u10-i-absence-2-2"
+        ]
+      }
+    },
+    {
+      "id": "u10-i-absence-3",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which explanation accounts for the noun cases in the shown line?",
+      "promptLetter": "Да, у меня есть сын.",
+      "options": [
+        "In this line, the possessor is genitive and the possessed thing is nominative.",
+        "In this line, the absent thing is in the genitive case."
+      ],
+      "answer": "In this line, the possessor is genitive and the possessed thing is nominative.",
+      "feedback": "Да, у меня есть сын. uses the simple possession construction. The possessor after the possession preposition is genitive; the possessed thing or slot is nominative. The absence explanation would deny possession, which this line does not do.",
+      "objectiveId": "obj-u10-absence",
+      "sourceId": "src-content-audit-research",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "The other explanation describes absence rather than the presence or simple possession shown here."
+      ],
+      "assessment": {
+        "testedFeature": "ABSENCE_NET",
+        "evidenceMode": "STATED_APPLICATION",
+        "contrastSetId": "u10-absence-3",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ca-rule-u10-i-absence-3-1"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ca-rule-u10-i-absence-3-2"
+        ],
+        "distractorDifference": [
+          "",
+          "The other explanation describes absence rather than the presence or simple possession shown here."
+        ],
+        "whyAnswerDemonstratesObjective": "Да, у меня есть сын. uses the simple possession construction. The possessor after the possession preposition is genitive; the possessed thing or slot is nominative. The absence explanation would deny possession, which this line does not do.",
+        "contrastMembers": [
+          "In this line, the possessor is genitive and the possessed thing is nominative.",
+          "In this line, the absent thing is in the genitive case."
+        ],
+        "relationKind": "STATED_APPLICATION",
+        "relationParticipantIds": [
+          "prov-ca-rule-u10-i-absence-3-0",
+          "prov-ca-rule-u10-i-absence-3-1",
+          "prov-ca-rule-u10-i-absence-3-2"
+        ]
+      }
+    },
+    {
+      "id": "u10-i-absence-4",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which explanation accounts for the noun cases in the shown line?",
+      "promptLetter": "У моего́ бра́та нет де́нег",
+      "options": [
+        "In this line, the possessor is genitive and the possessed thing is nominative.",
+        "In this line, the absent thing is in the genitive case."
+      ],
+      "answer": "In this line, the absent thing is in the genitive case.",
+      "feedback": "У моего́ бра́та нет де́нег expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.",
+      "objectiveId": "obj-u10-absence",
+      "sourceId": "src-content-audit-research",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "The other explanation asserts presence or simple possession rather than the absence shown here.",
+        ""
+      ],
+      "assessment": {
+        "testedFeature": "ABSENCE_NET",
+        "evidenceMode": "STATED_APPLICATION",
+        "contrastSetId": "u10-absence-4",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ca-rule-u10-i-absence-4-1"
+        ],
+        "distractorSourceIds": [
+          "prov-ca-rule-u10-i-absence-4-2",
+          ""
+        ],
+        "distractorDifference": [
+          "The other explanation asserts presence or simple possession rather than the absence shown here.",
+          ""
+        ],
+        "whyAnswerDemonstratesObjective": "У моего́ бра́та нет де́нег expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.",
+        "contrastMembers": [
+          "In this line, the possessor is genitive and the possessed thing is nominative.",
+          "In this line, the absent thing is in the genitive case."
+        ],
+        "relationKind": "STATED_APPLICATION",
+        "relationParticipantIds": [
+          "prov-ca-rule-u10-i-absence-4-0",
+          "prov-ca-rule-u10-i-absence-4-1",
+          "prov-ca-rule-u10-i-absence-4-2"
+        ]
+      }
+    }
+  ],
+  "bindings": [
+    {
+      "itemId": "prov-ex-u10-have-2-ru",
+      "sourceRevision": "4567338",
+      "sourceRecordId": "genitive:Another use of the genitive is in the phrase \"I have...\". Though Russian does ha",
+      "sourceHash": "f710b08adceaa3696f96fa7dd4d70348de2171ffc50dac17eb62c006c29180d3",
+      "contentHash": "09c888d1ad8439903b4973308cfe8eb3a03eed03e44b907bcb53fdbab5791947",
+      "shippedText": "Да, у меня есть сын.",
+      "applications": null
+    },
+    {
+      "itemId": "prov-ex-u10-have-6-ru",
+      "sourceRevision": "4567338",
+      "sourceRecordId": "genitive:Another use of the genitive is in the phrase \"I have...\". Though Russian does ha",
+      "sourceHash": "f710b08adceaa3696f96fa7dd4d70348de2171ffc50dac17eb62c006c29180d3",
+      "contentHash": "15d48d5726b52a14f481d34df4793abdcbd549fb068426ca8772ec6cf5c6e03f",
+      "shippedText": "У моего́ бра́та нет де́нег",
+      "applications": null
+    },
+    {
+      "itemId": "prov-ex-u10-absence-3-ru",
+      "sourceRevision": "4567338",
+      "sourceRecordId": "genitive:Another use of the genitive is in the phrase \"I have...\". Though Russian does ha",
+      "sourceHash": "f710b08adceaa3696f96fa7dd4d70348de2171ffc50dac17eb62c006c29180d3",
+      "contentHash": "15d48d5726b52a14f481d34df4793abdcbd549fb068426ca8772ec6cf5c6e03f",
+      "shippedText": "У моего́ бра́та нет де́нег",
+      "applications": null
+    },
+    {
+      "itemId": "prov-ex-u10-absence-4-ru",
+      "sourceRevision": "4567338",
+      "sourceRecordId": "genitive:Another use of the genitive is in the phrase \"I have...\". Though Russian does ha",
+      "sourceHash": "f710b08adceaa3696f96fa7dd4d70348de2171ffc50dac17eb62c006c29180d3",
+      "contentHash": "09c888d1ad8439903b4973308cfe8eb3a03eed03e44b907bcb53fdbab5791947",
+      "shippedText": "Да, у меня есть сын.",
+      "applications": null
+    },
+    {
+      "itemId": "prov-ca-rule-u10-g-have-0-0",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-rule-context:u10-g-have-0",
+      "sourceHash": "491543136e5d0103914655386150d3d8968ef58b0be8ad34ea1cf897022fd1ea",
+      "contentHash": "7e62433c5fd78bb66f32c9c9cd53b463dcb7e74afa4fe51319582613f300be56",
+      "shippedText": "У меня есть Х",
+      "applications": [
+        {
+          "cue": "У меня есть Х",
+          "answer": "In this line, the possessor is genitive and the possessed thing is nominative.",
+          "distractors": [
+            "In this line, the absent thing is in the genitive case."
+          ]
+        }
+      ]
+    },
+    {
+      "itemId": "prov-ca-rule-u10-g-have-0-1",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-rule-context:u10-g-have-0",
+      "sourceHash": "491543136e5d0103914655386150d3d8968ef58b0be8ad34ea1cf897022fd1ea",
+      "contentHash": "e76c2b8ebd63a3092d566f863c753dde1e63408e9484dfdc293bdf45d3bd2713",
+      "shippedText": "In this line, the possessor is genitive and the possessed thing is nominative.",
+      "applications": [
+        {
+          "cue": "У меня есть Х",
+          "answer": "In this line, the possessor is genitive and the possessed thing is nominative.",
+          "distractors": [
+            "In this line, the absent thing is in the genitive case."
+          ]
+        }
+      ]
+    },
+    {
+      "itemId": "prov-ca-rule-u10-g-have-0-2",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-rule-context:u10-g-have-0",
+      "sourceHash": "491543136e5d0103914655386150d3d8968ef58b0be8ad34ea1cf897022fd1ea",
+      "contentHash": "0d075de2ad09497c4d6794bc7a9fe6bbaec4ed77037a667ab3a4000bf29fdb46",
+      "shippedText": "In this line, the absent thing is in the genitive case.",
+      "applications": [
+        {
+          "cue": "У меня есть Х",
+          "answer": "In this line, the possessor is genitive and the possessed thing is nominative.",
+          "distractors": [
+            "In this line, the absent thing is in the genitive case."
+          ]
+        }
+      ]
+    },
+    {
+      "itemId": "prov-ca-rule-u10-i-have-1-0",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-rule-context:u10-i-have-1",
+      "sourceHash": "aff63f798517e16a0cb8f10d7aa60a1ba0c8c945251984f0a7e815a4ab0aff97",
+      "contentHash": "09c888d1ad8439903b4973308cfe8eb3a03eed03e44b907bcb53fdbab5791947",
+      "shippedText": "Да, у меня есть сын.",
+      "applications": [
+        {
+          "cue": "Да, у меня есть сын.",
+          "answer": "In this line, the possessor is genitive and the possessed thing is nominative.",
+          "distractors": [
+            "In this line, the absent thing is in the genitive case."
+          ]
+        }
+      ]
+    },
+    {
+      "itemId": "prov-ca-rule-u10-i-have-1-1",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-rule-context:u10-i-have-1",
+      "sourceHash": "aff63f798517e16a0cb8f10d7aa60a1ba0c8c945251984f0a7e815a4ab0aff97",
+      "contentHash": "e76c2b8ebd63a3092d566f863c753dde1e63408e9484dfdc293bdf45d3bd2713",
+      "shippedText": "In this line, the possessor is genitive and the possessed thing is nominative.",
+      "applications": [
+        {
+          "cue": "Да, у меня есть сын.",
+          "answer": "In this line, the possessor is genitive and the possessed thing is nominative.",
+          "distractors": [
+            "In this line, the absent thing is in the genitive case."
+          ]
+        }
+      ]
+    },
+    {
+      "itemId": "prov-ca-rule-u10-i-have-1-2",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-rule-context:u10-i-have-1",
+      "sourceHash": "aff63f798517e16a0cb8f10d7aa60a1ba0c8c945251984f0a7e815a4ab0aff97",
+      "contentHash": "0d075de2ad09497c4d6794bc7a9fe6bbaec4ed77037a667ab3a4000bf29fdb46",
+      "shippedText": "In this line, the absent thing is in the genitive case.",
+      "applications": [
+        {
+          "cue": "Да, у меня есть сын.",
+          "answer": "In this line, the possessor is genitive and the possessed thing is nominative.",
+          "distractors": [
+            "In this line, the absent thing is in the genitive case."
+          ]
+        }
+      ]
+    },
+    {
+      "itemId": "prov-ca-rule-u10-i-have-2-0",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-rule-context:u10-i-have-2",
+      "sourceHash": "125f6734d187e827eaee0f761146d8f7d56f723213c353bc5dcbafd148df1082",
+      "contentHash": "a703190a745ab124225aab59b1f2a5ee6b216bab2cc57675a3824a66b70a2f52",
+      "shippedText": "У вас есть сын?",
+      "applications": [
+        {
+          "cue": "У вас есть сын?",
+          "answer": "In this line, the possessor is genitive and the possessed thing is nominative.",
+          "distractors": [
+            "In this line, the absent thing is in the genitive case."
+          ]
+        }
+      ]
+    },
+    {
+      "itemId": "prov-ca-rule-u10-i-have-2-1",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-rule-context:u10-i-have-2",
+      "sourceHash": "125f6734d187e827eaee0f761146d8f7d56f723213c353bc5dcbafd148df1082",
+      "contentHash": "e76c2b8ebd63a3092d566f863c753dde1e63408e9484dfdc293bdf45d3bd2713",
+      "shippedText": "In this line, the possessor is genitive and the possessed thing is nominative.",
+      "applications": [
+        {
+          "cue": "У вас есть сын?",
+          "answer": "In this line, the possessor is genitive and the possessed thing is nominative.",
+          "distractors": [
+            "In this line, the absent thing is in the genitive case."
+          ]
+        }
+      ]
+    },
+    {
+      "itemId": "prov-ca-rule-u10-i-have-2-2",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-rule-context:u10-i-have-2",
+      "sourceHash": "125f6734d187e827eaee0f761146d8f7d56f723213c353bc5dcbafd148df1082",
+      "contentHash": "0d075de2ad09497c4d6794bc7a9fe6bbaec4ed77037a667ab3a4000bf29fdb46",
+      "shippedText": "In this line, the absent thing is in the genitive case.",
+      "applications": [
+        {
+          "cue": "У вас есть сын?",
+          "answer": "In this line, the possessor is genitive and the possessed thing is nominative.",
+          "distractors": [
+            "In this line, the absent thing is in the genitive case."
+          ]
+        }
+      ]
+    },
+    {
+      "itemId": "prov-ca-rule-u10-i-have-3-0",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-rule-context:u10-i-have-3",
+      "sourceHash": "9dcbfc14ca484a1971e3043597b9cbba31fa653fd0bf9b703edf201bd63ce66f",
+      "contentHash": "3271c3390c7fbe85fcd481027a6832e6c911f7da27f3b4cd88985887bf7232ef",
+      "shippedText": "У меня́ нет сы́на",
+      "applications": [
+        {
+          "cue": "У меня́ нет сы́на",
+          "answer": "In this line, the absent thing is in the genitive case.",
+          "distractors": [
+            "In this line, the possessor is genitive and the possessed thing is nominative."
+          ]
+        }
+      ]
+    },
+    {
+      "itemId": "prov-ca-rule-u10-i-have-3-1",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-rule-context:u10-i-have-3",
+      "sourceHash": "9dcbfc14ca484a1971e3043597b9cbba31fa653fd0bf9b703edf201bd63ce66f",
+      "contentHash": "0d075de2ad09497c4d6794bc7a9fe6bbaec4ed77037a667ab3a4000bf29fdb46",
+      "shippedText": "In this line, the absent thing is in the genitive case.",
+      "applications": [
+        {
+          "cue": "У меня́ нет сы́на",
+          "answer": "In this line, the absent thing is in the genitive case.",
+          "distractors": [
+            "In this line, the possessor is genitive and the possessed thing is nominative."
+          ]
+        }
+      ]
+    },
+    {
+      "itemId": "prov-ca-rule-u10-i-have-3-2",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-rule-context:u10-i-have-3",
+      "sourceHash": "9dcbfc14ca484a1971e3043597b9cbba31fa653fd0bf9b703edf201bd63ce66f",
+      "contentHash": "e76c2b8ebd63a3092d566f863c753dde1e63408e9484dfdc293bdf45d3bd2713",
+      "shippedText": "In this line, the possessor is genitive and the possessed thing is nominative.",
+      "applications": [
+        {
+          "cue": "У меня́ нет сы́на",
+          "answer": "In this line, the absent thing is in the genitive case.",
+          "distractors": [
+            "In this line, the possessor is genitive and the possessed thing is nominative."
+          ]
+        }
+      ]
+    },
+    {
+      "itemId": "prov-ca-rule-u10-i-have-4-0",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-rule-context:u10-i-have-4",
+      "sourceHash": "d63695e270374d69b2ab7b22e2d7e10c514a68a7430f610a22d99ab16712d0b8",
+      "contentHash": "15d48d5726b52a14f481d34df4793abdcbd549fb068426ca8772ec6cf5c6e03f",
+      "shippedText": "У моего́ бра́та нет де́нег",
+      "applications": [
+        {
+          "cue": "У моего́ бра́та нет де́нег",
+          "answer": "In this line, the absent thing is in the genitive case.",
+          "distractors": [
+            "In this line, the possessor is genitive and the possessed thing is nominative."
+          ]
+        }
+      ]
+    },
+    {
+      "itemId": "prov-ca-rule-u10-i-have-4-1",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-rule-context:u10-i-have-4",
+      "sourceHash": "d63695e270374d69b2ab7b22e2d7e10c514a68a7430f610a22d99ab16712d0b8",
+      "contentHash": "0d075de2ad09497c4d6794bc7a9fe6bbaec4ed77037a667ab3a4000bf29fdb46",
+      "shippedText": "In this line, the absent thing is in the genitive case.",
+      "applications": [
+        {
+          "cue": "У моего́ бра́та нет де́нег",
+          "answer": "In this line, the absent thing is in the genitive case.",
+          "distractors": [
+            "In this line, the possessor is genitive and the possessed thing is nominative."
+          ]
+        }
+      ]
+    },
+    {
+      "itemId": "prov-ca-rule-u10-i-have-4-2",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-rule-context:u10-i-have-4",
+      "sourceHash": "d63695e270374d69b2ab7b22e2d7e10c514a68a7430f610a22d99ab16712d0b8",
+      "contentHash": "e76c2b8ebd63a3092d566f863c753dde1e63408e9484dfdc293bdf45d3bd2713",
+      "shippedText": "In this line, the possessor is genitive and the possessed thing is nominative.",
+      "applications": [
+        {
+          "cue": "У моего́ бра́та нет де́нег",
+          "answer": "In this line, the absent thing is in the genitive case.",
+          "distractors": [
+            "In this line, the possessor is genitive and the possessed thing is nominative."
+          ]
+        }
+      ]
+    },
+    {
+      "itemId": "prov-ca-rule-u10-g-absence-0-0",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-rule-context:u10-g-absence-0",
+      "sourceHash": "9dcbfc14ca484a1971e3043597b9cbba31fa653fd0bf9b703edf201bd63ce66f",
+      "contentHash": "3271c3390c7fbe85fcd481027a6832e6c911f7da27f3b4cd88985887bf7232ef",
+      "shippedText": "У меня́ нет сы́на",
+      "applications": [
+        {
+          "cue": "У меня́ нет сы́на",
+          "answer": "In this line, the absent thing is in the genitive case.",
+          "distractors": [
+            "In this line, the possessor is genitive and the possessed thing is nominative."
+          ]
+        }
+      ]
+    },
+    {
+      "itemId": "prov-ca-rule-u10-g-absence-0-1",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-rule-context:u10-g-absence-0",
+      "sourceHash": "9dcbfc14ca484a1971e3043597b9cbba31fa653fd0bf9b703edf201bd63ce66f",
+      "contentHash": "0d075de2ad09497c4d6794bc7a9fe6bbaec4ed77037a667ab3a4000bf29fdb46",
+      "shippedText": "In this line, the absent thing is in the genitive case.",
+      "applications": [
+        {
+          "cue": "У меня́ нет сы́на",
+          "answer": "In this line, the absent thing is in the genitive case.",
+          "distractors": [
+            "In this line, the possessor is genitive and the possessed thing is nominative."
+          ]
+        }
+      ]
+    },
+    {
+      "itemId": "prov-ca-rule-u10-g-absence-0-2",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-rule-context:u10-g-absence-0",
+      "sourceHash": "9dcbfc14ca484a1971e3043597b9cbba31fa653fd0bf9b703edf201bd63ce66f",
+      "contentHash": "e76c2b8ebd63a3092d566f863c753dde1e63408e9484dfdc293bdf45d3bd2713",
+      "shippedText": "In this line, the possessor is genitive and the possessed thing is nominative.",
+      "applications": [
+        {
+          "cue": "У меня́ нет сы́на",
+          "answer": "In this line, the absent thing is in the genitive case.",
+          "distractors": [
+            "In this line, the possessor is genitive and the possessed thing is nominative."
+          ]
+        }
+      ]
+    },
+    {
+      "itemId": "prov-ca-rule-u10-i-absence-1-0",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-rule-context:u10-i-absence-1",
+      "sourceHash": "b8d9bca0cf40ae4e8d7610a43c514c9fbe25a6b876729b74de4375f33a593b00",
+      "contentHash": "a297a66555ed1f3f1734bc4d6eb6dcc52e6b910186adf5c42f4d21b4358b1b05",
+      "shippedText": "Нет рестора́нов",
+      "applications": [
+        {
+          "cue": "Нет рестора́нов",
+          "answer": "In this line, the absent thing is in the genitive case.",
+          "distractors": [
+            "In this line, the possessor is genitive and the possessed thing is nominative."
+          ]
+        }
+      ]
+    },
+    {
+      "itemId": "prov-ca-rule-u10-i-absence-1-1",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-rule-context:u10-i-absence-1",
+      "sourceHash": "b8d9bca0cf40ae4e8d7610a43c514c9fbe25a6b876729b74de4375f33a593b00",
+      "contentHash": "0d075de2ad09497c4d6794bc7a9fe6bbaec4ed77037a667ab3a4000bf29fdb46",
+      "shippedText": "In this line, the absent thing is in the genitive case.",
+      "applications": [
+        {
+          "cue": "Нет рестора́нов",
+          "answer": "In this line, the absent thing is in the genitive case.",
+          "distractors": [
+            "In this line, the possessor is genitive and the possessed thing is nominative."
+          ]
+        }
+      ]
+    },
+    {
+      "itemId": "prov-ca-rule-u10-i-absence-1-2",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-rule-context:u10-i-absence-1",
+      "sourceHash": "b8d9bca0cf40ae4e8d7610a43c514c9fbe25a6b876729b74de4375f33a593b00",
+      "contentHash": "e76c2b8ebd63a3092d566f863c753dde1e63408e9484dfdc293bdf45d3bd2713",
+      "shippedText": "In this line, the possessor is genitive and the possessed thing is nominative.",
+      "applications": [
+        {
+          "cue": "Нет рестора́нов",
+          "answer": "In this line, the absent thing is in the genitive case.",
+          "distractors": [
+            "In this line, the possessor is genitive and the possessed thing is nominative."
+          ]
+        }
+      ]
+    },
+    {
+      "itemId": "prov-ca-rule-u10-i-absence-2-0",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-rule-context:u10-i-absence-2",
+      "sourceHash": "f71fdb0cf1147171f2def872d028382337d74641aa2f94a4b20d0cb781bc51fc",
+      "contentHash": "71cfe1f3e16ccd19bb427a345fd4afd17d51554c2e2f7cdf6d5fe80cd9214b4f",
+      "shippedText": "В Москве́ нет ста́рых зда́ний",
+      "applications": [
+        {
+          "cue": "В Москве́ нет ста́рых зда́ний",
+          "answer": "In this line, the absent thing is in the genitive case.",
+          "distractors": [
+            "In this line, the possessor is genitive and the possessed thing is nominative."
+          ]
+        }
+      ]
+    },
+    {
+      "itemId": "prov-ca-rule-u10-i-absence-2-1",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-rule-context:u10-i-absence-2",
+      "sourceHash": "f71fdb0cf1147171f2def872d028382337d74641aa2f94a4b20d0cb781bc51fc",
+      "contentHash": "0d075de2ad09497c4d6794bc7a9fe6bbaec4ed77037a667ab3a4000bf29fdb46",
+      "shippedText": "In this line, the absent thing is in the genitive case.",
+      "applications": [
+        {
+          "cue": "В Москве́ нет ста́рых зда́ний",
+          "answer": "In this line, the absent thing is in the genitive case.",
+          "distractors": [
+            "In this line, the possessor is genitive and the possessed thing is nominative."
+          ]
+        }
+      ]
+    },
+    {
+      "itemId": "prov-ca-rule-u10-i-absence-2-2",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-rule-context:u10-i-absence-2",
+      "sourceHash": "f71fdb0cf1147171f2def872d028382337d74641aa2f94a4b20d0cb781bc51fc",
+      "contentHash": "e76c2b8ebd63a3092d566f863c753dde1e63408e9484dfdc293bdf45d3bd2713",
+      "shippedText": "In this line, the possessor is genitive and the possessed thing is nominative.",
+      "applications": [
+        {
+          "cue": "В Москве́ нет ста́рых зда́ний",
+          "answer": "In this line, the absent thing is in the genitive case.",
+          "distractors": [
+            "In this line, the possessor is genitive and the possessed thing is nominative."
+          ]
+        }
+      ]
+    },
+    {
+      "itemId": "prov-ca-rule-u10-i-absence-3-0",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-rule-context:u10-i-absence-3",
+      "sourceHash": "aff63f798517e16a0cb8f10d7aa60a1ba0c8c945251984f0a7e815a4ab0aff97",
+      "contentHash": "09c888d1ad8439903b4973308cfe8eb3a03eed03e44b907bcb53fdbab5791947",
+      "shippedText": "Да, у меня есть сын.",
+      "applications": [
+        {
+          "cue": "Да, у меня есть сын.",
+          "answer": "In this line, the possessor is genitive and the possessed thing is nominative.",
+          "distractors": [
+            "In this line, the absent thing is in the genitive case."
+          ]
+        }
+      ]
+    },
+    {
+      "itemId": "prov-ca-rule-u10-i-absence-3-1",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-rule-context:u10-i-absence-3",
+      "sourceHash": "aff63f798517e16a0cb8f10d7aa60a1ba0c8c945251984f0a7e815a4ab0aff97",
+      "contentHash": "e76c2b8ebd63a3092d566f863c753dde1e63408e9484dfdc293bdf45d3bd2713",
+      "shippedText": "In this line, the possessor is genitive and the possessed thing is nominative.",
+      "applications": [
+        {
+          "cue": "Да, у меня есть сын.",
+          "answer": "In this line, the possessor is genitive and the possessed thing is nominative.",
+          "distractors": [
+            "In this line, the absent thing is in the genitive case."
+          ]
+        }
+      ]
+    },
+    {
+      "itemId": "prov-ca-rule-u10-i-absence-3-2",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-rule-context:u10-i-absence-3",
+      "sourceHash": "aff63f798517e16a0cb8f10d7aa60a1ba0c8c945251984f0a7e815a4ab0aff97",
+      "contentHash": "0d075de2ad09497c4d6794bc7a9fe6bbaec4ed77037a667ab3a4000bf29fdb46",
+      "shippedText": "In this line, the absent thing is in the genitive case.",
+      "applications": [
+        {
+          "cue": "Да, у меня есть сын.",
+          "answer": "In this line, the possessor is genitive and the possessed thing is nominative.",
+          "distractors": [
+            "In this line, the absent thing is in the genitive case."
+          ]
+        }
+      ]
+    },
+    {
+      "itemId": "prov-ca-rule-u10-i-absence-4-0",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-rule-context:u10-i-absence-4",
+      "sourceHash": "d63695e270374d69b2ab7b22e2d7e10c514a68a7430f610a22d99ab16712d0b8",
+      "contentHash": "15d48d5726b52a14f481d34df4793abdcbd549fb068426ca8772ec6cf5c6e03f",
+      "shippedText": "У моего́ бра́та нет де́нег",
+      "applications": [
+        {
+          "cue": "У моего́ бра́та нет де́нег",
+          "answer": "In this line, the absent thing is in the genitive case.",
+          "distractors": [
+            "In this line, the possessor is genitive and the possessed thing is nominative."
+          ]
+        }
+      ]
+    },
+    {
+      "itemId": "prov-ca-rule-u10-i-absence-4-1",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-rule-context:u10-i-absence-4",
+      "sourceHash": "d63695e270374d69b2ab7b22e2d7e10c514a68a7430f610a22d99ab16712d0b8",
+      "contentHash": "0d075de2ad09497c4d6794bc7a9fe6bbaec4ed77037a667ab3a4000bf29fdb46",
+      "shippedText": "In this line, the absent thing is in the genitive case.",
+      "applications": [
+        {
+          "cue": "У моего́ бра́та нет де́нег",
+          "answer": "In this line, the absent thing is in the genitive case.",
+          "distractors": [
+            "In this line, the possessor is genitive and the possessed thing is nominative."
+          ]
+        }
+      ]
+    },
+    {
+      "itemId": "prov-ca-rule-u10-i-absence-4-2",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-rule-context:u10-i-absence-4",
+      "sourceHash": "d63695e270374d69b2ab7b22e2d7e10c514a68a7430f610a22d99ab16712d0b8",
+      "contentHash": "e76c2b8ebd63a3092d566f863c753dde1e63408e9484dfdc293bdf45d3bd2713",
+      "shippedText": "In this line, the possessor is genitive and the possessed thing is nominative.",
+      "applications": [
+        {
+          "cue": "У моего́ бра́та нет де́нег",
+          "answer": "In this line, the absent thing is in the genitive case.",
+          "distractors": [
+            "In this line, the possessor is genitive and the possessed thing is nominative."
+          ]
+        }
+      ]
+    }
+  ],
+  "originalDiagnosticFiles": [
+    {
+      "path": "audit/independent-gpt61-2026-10-12/received-results/AUDIT_SCOPE_AND_EVIDENCE.json",
+      "sha256": "ede9d04c1df26f2612f0210dfe0916a17dbe687ac9612f6858ee9c5025f20563"
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/received-results/CODEX_RETURN_HANDOFF.md",
+      "sha256": "a52afc6e6db45b10bceaca78034ba5697328e8b534f225de90fbb9c7b0b29fd0"
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/received-results/FINDINGS.csv",
+      "sha256": "f8e6a593545a24f5f02702d59ac7d63ef3b7f796ec71dc0a06063fa491d21ace"
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/received-results/INDEPENDENT_AUDIT_REPORT.md",
+      "sha256": "fd9ad913e312e1f6b332cd5a21ab90a783a809c8443f11c486c99ab9f0b4ad40"
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/received-results/ITEM_ASSESSMENT_AUDIT.csv",
+      "sha256": "2637ecf4f205610710dfa42ff9878ba592f0284a2f3fd46fbd6d297d32c37ddd"
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/received-results/REQUIREMENTS_MATRIX.csv",
+      "sha256": "3f0770ad922a99da67ea533b7e799a0a3951f91abaf528d70b0a9b1a1db52c1e"
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/received-results/SOURCE_AND_BINDING_REVIEW.json",
+      "sha256": "59d00b0b7163c741adff98ea884bc10972eabe258d4ebdc18d8e7aa22a6c3ad0"
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/received-results/TARGET_75_DISPOSITIONS.csv",
+      "sha256": "76fa43dd958a3e9b6459601b0bd22c113b4b1b376af6cc8f6d772e18ef8a126d"
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/received-results/UNIT_COVERAGE.csv",
+      "sha256": "794828fc9d6de4c5c5cc85df40630ba0bd4b136d98b107b795887999a04440bd"
+    }
+  ],
+  "originalNineHashesPreserved": true,
+  "sourceCapabilities": 58,
+  "provenanceRecords": 6869,
+  "canonicalPins": 68,
+  "newNativeAdmission": false,
+  "semanticAcceptance": false
+}
