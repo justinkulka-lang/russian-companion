@@ -1,0 +1,32 @@
+{
+  "priorFocusedMethods": 138,
+  "currentFocusedMethods": 148,
+  "currentClasses": 28,
+  "currentSelectors": 33,
+  "newUnit11Methods": 7,
+  "additionallySelectedExistingUnit11Methods": 3,
+  "removedFromPriorSelectors": [],
+  "notSelectedEarlierSemanticMethods": {
+    "IndeclinableCorrectionTest": 4,
+    "Unit6AnimacyTransferTest": 7,
+    "Unit7FeedbackCorrectionTest": 3,
+    "Unit8PluralInstructionTest": 6,
+    "Unit8AgreementTransferTest": 9,
+    "Unit9QuantityRuleCorrectionTest": 5,
+    "Unit9NumberFeedbackCorrectionTest": 3,
+    "Unit9CompositionFeedbackCorrectionTest": 3,
+    "Unit9ReinforcementReviewTest": 4
+  },
+  "sourceHashes": {
+    "app/src/test/java/dev/russiancompanion/v2/IndeclinableCorrectionTest.kt": "26dc556ee71d43a89d76ff28ee4762e627bcf79b94e02c554cce6978c94d507f",
+    "app/src/test/java/dev/russiancompanion/v2/Unit6AnimacyTransferTest.kt": "1f13c09fca210a73f094d80a2dffe5fab383c4d501c57f2af2742e497a4becda",
+    "app/src/test/java/dev/russiancompanion/v2/Unit7FeedbackCorrectionTest.kt": "eb7a618fd7b8694434526cea1fc8948e88b02b656ec6db89f387595460988dbc",
+    "app/src/test/java/dev/russiancompanion/v2/Unit8AgreementTransferTest.kt": "2e4f428710aae35ff7880d019b722f978f85553a46a1de9754927e65e84879c1",
+    "app/src/test/java/dev/russiancompanion/v2/Unit8PluralInstructionTest.kt": "68b42964a500d14add17d0f23fdd1843608c6708cd24d2363a9320a58f7ff11a",
+    "app/src/test/java/dev/russiancompanion/v2/Unit9CompositionFeedbackCorrectionTest.kt": "7b6df73f4da486dcae7a881affe232590244980cb12a585b290534aecc363e9a",
+    "app/src/test/java/dev/russiancompanion/v2/Unit9NumberFeedbackCorrectionTest.kt": "64b22f197b3c42aa13091b90217aa2b04e34b5c2f02e1f4cb517c9c3909e82cd",
+    "app/src/test/java/dev/russiancompanion/v2/Unit9QuantityRuleCorrectionTest.kt": "810a294db3b39b680d451926bf65e05a70107f28dbd7f6dc3c858b1267e9f861",
+    "app/src/test/java/dev/russiancompanion/v2/Unit9ReinforcementReviewTest.kt": "b797c260c6f948af146470872c6eff029455044555c931e4b762c82254caa0d6"
+  },
+  "reason": "Retain all prior138 focused methods;add Unit11 gate and ordinary feedback. Earlier44 semantic methods remain unchanged/enabled and not selected again. Screenshot-exporter exclusions are separate. NOT complete suite."
+}
