@@ -168,7 +168,7 @@ class BackupLicenseTest {
         assertEquals(BackupRejection.MALFORMED, rejection(store, "not a backup".toByteArray()))
         val truncated = valid.readBytes().copyOf(valid.length().toInt() / 2)
         assertEquals(BackupRejection.TRUNCATED, rejection(store, truncated))
-        val unsupported = rewriteManifest(valid) { it.replace(Regex("\"formatVersion\"\\s*:\\s*1"), "\"formatVersion\":99") }
+        val unsupported = rewriteManifest(valid) { it.replace(Regex("\"formatVersion\"\\s*:\\s*\\d+"), "\"formatVersion\":99") }
         assertEquals(BackupRejection.UNSUPPORTED_VERSION, rejection(store, unsupported))
         val tampered = rewriteEntry(valid, "learner.json") { bytes ->
             val text = bytes.toString(Charsets.UTF_8).replace("keep me", "tampered")

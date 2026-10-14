@@ -136,8 +136,8 @@ internal class V2BackupCoordinator(
                     laterChanges = store.governedLearnerDocument() != document
                     val counts = ExportCounts(
                         logCount = document.activityLogs.size,
-                        evidenceCount = document.evidence.size + document.attempts.size,
-                        progressCount = document.steps.size + document.unitCompletions.size,
+                        evidenceCount = document.evidence.size + document.attempts.size + document.reviewAnswers.size,
+                        progressCount = document.steps.size + document.unitCompletions.size + document.reviewAssignments.size,
                         recordingCount = document.recordings.size,
                     )
                     store.saveExport(

@@ -1,5 +1,8 @@
 package dev.russiancompanion.v2.backup
 
+import dev.russiancompanion.v2.curriculum.CumulativeReviewAssignment
+import dev.russiancompanion.v2.curriculum.CumulativeReviewAnswer
+import dev.russiancompanion.v2.curriculum.reviewHistoryDefects
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json
 import java.io.File
@@ -14,8 +17,8 @@ import java.util.zip.ZipOutputStream
 import dev.russiancompanion.v2.curriculum.LEGACY_UNVERIFIED
 import dev.russiancompanion.v2.curriculum.UNRECOVERABLE_GOVERNED_IDENTITY
 
-internal const val BACKUP_FORMAT_VERSION = 1
-internal const val BACKUP_SCHEMA_VERSION = 1
+internal const val BACKUP_FORMAT_VERSION = 2
+internal const val BACKUP_SCHEMA_VERSION = 2
 internal const val BACKUP_LEARNER_ENTRY = "learner.json"
 internal const val BACKUP_MANIFEST_ENTRY = "manifest.json"
 
@@ -58,6 +61,8 @@ internal data class BackupManifest(
     val activityCount: Int,
     val evidenceCount: Int,
     val files: List<BackupFileRecord>,
+    val reviewAssignmentCount: Int = 0,
+    val reviewAnswerCount: Int = 0,
 )
 
 @Serializable
@@ -85,6 +90,8 @@ internal data class GovernedLearnerDocument(
     val tutorRequirements: List<BackupTutorRequirement>,
     val decisions: List<BackupDecision>,
     val recordings: List<BackupRecording>,
+    val reviewAssignments: List<CumulativeReviewAssignment> = emptyList(),
+    val reviewAnswers: List<CumulativeReviewAnswer> = emptyList(),
 )
 
 @Serializable
@@ -511,6 +518,8 @@ internal fun writeGovernedBackup(
         activityCount = document.activityLogs.size,
         evidenceCount = document.evidence.size,
         files = files,
+        reviewAssignmentCount = document.reviewAssignments.size,
+        reviewAnswerCount = document.reviewAnswers.size,
     )
     val manifestBytes = backupJson.encodeToString(BackupManifest.serializer(), manifest).encodeToByteArray()
     ZipOutputStream(output).use { zip ->
@@ -562,7 +571,7 @@ internal fun readGovernedBackup(
         } catch (_: Exception) {
             return BackupReadResult.Rejected(BackupRejection.MALFORMED)
         }
-        if (manifest.formatVersion != BACKUP_FORMAT_VERSION) {
+        if (manifest.formatVersion !in 1..BACKUP_FORMAT_VERSION) {
             return BackupReadResult.Rejected(BackupRejection.UNSUPPORTED_VERSION)
         }
         if (manifest.applicationId != expectedApplicationId) {
@@ -598,10 +607,16 @@ internal fun readGovernedBackup(
         } catch (_: Exception) {
             return BackupReadResult.Rejected(BackupRejection.MALFORMED)
         }
-        if (document.schemaVersion != BACKUP_SCHEMA_VERSION) {
+        if (document.schemaVersion !in 1..BACKUP_SCHEMA_VERSION || document.schemaVersion != manifest.formatVersion) {
             return BackupReadResult.Rejected(BackupRejection.UNSUPPORTED_VERSION)
         }
+        if ((document.schemaVersion == 1 && (document.reviewAssignments.isNotEmpty() || document.reviewAnswers.isNotEmpty())) ||
+            reviewHistoryDefects(document.reviewAssignments, document.reviewAnswers) != null) {
+            return BackupReadResult.Rejected(BackupRejection.MALFORMED)
+        }
         if (
+            document.reviewAssignments.size != manifest.reviewAssignmentCount ||
+            document.reviewAnswers.size != manifest.reviewAnswerCount ||
             document.attempts.size != manifest.attemptCount ||
             document.notes.size != manifest.noteCount ||
             document.bookmarks.size != manifest.bookmarkCount ||
