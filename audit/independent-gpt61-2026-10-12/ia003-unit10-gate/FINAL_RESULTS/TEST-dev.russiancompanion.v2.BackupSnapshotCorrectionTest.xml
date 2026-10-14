@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.BackupSnapshotCorrectionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-14T21:23:16.301Z" hostname="f5c5dd6b855f" time="26.64">
+  <properties/>
+  <testcase name="concurrentLearnerWritesCannotBeClaimedAsPartOfTheWrittenArchive" classname="dev.russiancompanion.v2.BackupSnapshotCorrectionTest" time="22.484"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
