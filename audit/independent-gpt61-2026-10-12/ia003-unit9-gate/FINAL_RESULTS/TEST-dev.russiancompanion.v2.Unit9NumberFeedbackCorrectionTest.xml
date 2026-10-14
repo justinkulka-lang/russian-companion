@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit9NumberFeedbackCorrectionTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-14T20:10:25.445Z" hostname="f5c5dd6b855f" time="8.719">
+  <properties/>
+  <testcase name="historicalGenericFeedbackCreditIsRetainedButStale" classname="dev.russiancompanion.v2.Unit9NumberFeedbackCorrectionTest" time="0.386"/>
+  <testcase name="wrongHundredsSelectionDisplaysTheDifferentValues" classname="dev.russiancompanion.v2.Unit9NumberFeedbackCorrectionTest" time="1.555"/>
+  <testcase name="numberFeedbackDistinguishesActualValuesAndPlaceValue" classname="dev.russiancompanion.v2.Unit9NumberFeedbackCorrectionTest" time="6.771"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+]]></system-err>
+</testsuite>
