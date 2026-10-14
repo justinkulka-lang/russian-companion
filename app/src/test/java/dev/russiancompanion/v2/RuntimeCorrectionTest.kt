@@ -922,7 +922,8 @@ class RuntimeCorrectionTest {
 
     private fun awaitTag(tag: String) {
         val start = System.currentTimeMillis()
-        while (System.currentTimeMillis() - start < 5_000) {
+        // Real asynchronous evidence checks can exceed five seconds under parallel Robolectric load.
+        while (System.currentTimeMillis() - start < 20_000) {
             compose.waitForIdle()
             try {
                 compose.onNodeWithTag(tag).assertExists()

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.CumulativeReviewStorageTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2026-10-14T14:36:14.563Z" hostname="f5c5dd6b855f" time="16.573">
+  <properties/>
+  <testcase name="prescribedAndOptionalAnswersNeverSupplyReviewOrGainExtraPrescribedCredit" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="2.454"/>
+  <testcase name="malformedRolePreBoundaryAndWrongAssignmentDigestNeverSupplyCompletion" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="1.181"/>
+  <testcase name="immutableSlotsSpanTwoTaughtObjectivesAndRepeatedOpenDoesNotResample" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="1.617"/>
+  <testcase name="staleEpochWrongAssignmentInvalidSlotAndOutOfOptionsAreRejectedWithoutWrites" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="1.113"/>
+  <testcase name="forgedLinksOrdersRolesAndAssignmentHashCannotReplaceAnyLearnerRows" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="0.971"/>
+  <testcase name="latestAcceptedAnswerWinsAndDuplicateTapsDoNotAllocateExtraOrder" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="2.152"/>
+  <testcase name="legacyDocumentWithoutNewFieldsDecodesWithNoSyntheticReviewRows" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="0.058"/>
+  <testcase name="realVersionNineDatabaseMigratesWithoutRewritingHistoricalRowsOrInventingCredit" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="0.271"/>
+  <testcase name="offlineCloseAndReopenRetainsExactAssignmentAnswersAndCurrentCompletion" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="1.003"/>
+  <testcase name="newBackupRoundtripReplacesReviewHistoryAndRestoreFaultRollsItBack" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="1.35"/>
+  <testcase name="placementAndBareLegacyCorrectIdsCannotCreateAssignments" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="0.429"/>
+  <testcase name="changedKeyTeachingAndOwnerAvailabilityRejectCreditButUnrelatedUnitsDoNot" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="2.047"/>
+  <testcase name="schemaOneBackupRestoresNoSyntheticReviewAndClearsReplacedLearnerHistory" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="1.909"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call close. 
+]]></system-err>
+</testsuite>
