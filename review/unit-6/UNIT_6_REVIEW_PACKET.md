@@ -11,12 +11,12 @@ Unit 6 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 30ca4e8a8200dc34704a8fcb2aab03ed1df2c97e
-- Unit content-review SHA-256: d162e5571c6646b01e3fb6bcdf9f87dd3af31b593c7f27615c40019930c6faad
+- Curriculum source commit: 68cfac6b93741b8b955219f822aabefdd46dbf49
+- Unit content-review SHA-256: 936f868f09c20b9cf58d7b4e06b3920c37d9acae153836522e4e5b9ef2cafa70
 - Mapping-package SHA-256: f95e0c2f351ec7cba23cdb09b87274bb97f2e392dd783ad59c2978ed58f63b15
-- Pack content-review SHA-256: 6a3fe99037831cb052309826edacad6fc1a2cb204d68a90a498d1f55ae32015f
-- Review-package SHA-256: 29c2a91722f2b93b5edad1b973edd8a251409a62da21c6d12b0b6f8643d90ae5
-- Repository source SHA-256: 2f55d5eec5bdce1f584271b4aaf07419aba9b8ecb1c92c8d9bb7db7bbb3a3e23
+- Pack content-review SHA-256: 1d9fa8976107fc8bc8b5d9af567c0331aaa7d5693110ba4ba39881a9857f5860
+- Review-package SHA-256: ed6661be9ccc6ad5ffbe834de2b7e2f89c4c17465747587540b99df970a8c153
+- Repository source SHA-256: 97c25b7fdd00ebbaef842c28809608abb51abd1dd39608071ffbade3149c8f0e
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -96,13 +96,13 @@ estimatedMinutes=102
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 85a665f92f48a20ffa80145ff9a567a59f696a7438f6e33f578705b045f5df59
+- Content hash: dc8d527fc3e53e2a819ecec02ca38f8af68002384ae8c111afd1be9d2b1155b1
 
 requireInstruction=true
 requireBookSelfAttestation=true
 requireAppChecks=true
 minimumDistinctChecks=18
-requireDueReview=false
+requireDueReview=true
 tutorOptional=true
 
 ### OBJECTIVE `obj-u6-possessive`
