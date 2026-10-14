@@ -11,12 +11,12 @@ Unit 10 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 4e624bc2af8fa70e488bd627cb2dc68d03b60406
-- Unit content-review SHA-256: 279e8d36f385de505648c3b6e794a3920fe3ed39ce82f8536cb459e1352cae1b
+- Curriculum source commit: 4ceb59d48b54471ba845664f19c9a605f6e70567
+- Unit content-review SHA-256: 3ae5a3b41bc970ef43589ace5929e65818fa620c8660f0bd1c4de5275667cf84
 - Mapping-package SHA-256: 57676882eb615fb046a9a5e2429f1d97bf6fcf54010d7ae287cdfc456bcfca52
-- Pack content-review SHA-256: a7f4317bb56081330f77346584744d7b7be1335c7d4837c9d8593f874246c3cf
-- Review-package SHA-256: f52b8ee039351c8552ba3f5e9d8f29dd2349910bb045f9e5c038045fbe056c5d
-- Repository source SHA-256: 74885a111ca3429993cda2b17d0800b65c33ed013bff5c82958ac1714dda5383
+- Pack content-review SHA-256: e91f84967f1070b41acb1294625303bc04433f83d78754b507735085c21f9e77
+- Review-package SHA-256: d3a56eb9f9ac6dc7a7c3dabd55ee79152bcfef83aa5b4d44405a91de69eaa678
+- Repository source SHA-256: d0e919a342d26343a238b9496875f17f1e2cd6990d5422cd086e50c8586b1b41
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -96,13 +96,13 @@ estimatedMinutes=90
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 4d367c8c4af3959bb87466d331271727745192a9b180ec770e5496b9ca79e63f
+- Content hash: 6b25c41ba136e8dc4f3ef5bd00664cdbb21415bb35b6841bb7409372447c6a0a
 
 requireInstruction=true
 requireBookSelfAttestation=true
 requireAppChecks=true
 minimumDistinctChecks=22
-requireDueReview=false
+requireDueReview=true
 tutorOptional=true
 
 ### OBJECTIVE `obj-u10-have`

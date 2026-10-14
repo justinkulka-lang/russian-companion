@@ -6,8 +6,8 @@
 **Repository:** `justinkulka-lang/russian-companion`  
 **Repository baseline main:** `c153103a0048f69f8de339b83e77d93572ebddb7`  
 **Unit 23 unprepared correction:** `fd69bd03298d69669d09daafe8d364b0e576d033` (`Keep Unit 23 unprepared until completion over a period is admitted.`). That commit is an ancestor of the repository baseline. It is not the repository baseline main commit.  
-**Pack content-review digest:** `a7f4317bb56081330f77346584744d7b7be1335c7d4837c9d8593f874246c3cf`
-**Repository source digest:** `74885a111ca3429993cda2b17d0800b65c33ed013bff5c82958ac1714dda5383`
+**Pack content-review digest:** `e91f84967f1070b41acb1294625303bc04433f83d78754b507735085c21f9e77`
+**Repository source digest:** `d0e919a342d26343a238b9496875f17f1e2cd6990d5422cd086e50c8586b1b41`
 **Public release:** **NOT_APPROVED**
 
 ## Purpose
@@ -56,7 +56,7 @@ Unacceptable shortcuts include keyword matches, mutable pages, dictionary-row gr
 | 7 | Adjectives, agreement, demonstratives, adjective case forms, and adverbs | CONTENT_COMPLETE_REVIEW_PENDING | NO | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 8 | Plurals, first spelling rules, existence questions, and buying things | CONTENT_COMPLETE_REVIEW_PENDING | NO | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 9 | Numbers, genitive singular and plural, quantities, and money | CONTENT_COMPLETE_REVIEW_PENDING | NO | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
-| 10 | Expressions of having, expanded genitive functions, absence, genitive prepositions, pronouns, and adjectives | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
+| 10 | Expressions of having, expanded genitive functions, absence, genitive prepositions, pronouns, and adjectives | CONTENT_COMPLETE_REVIEW_PENDING | NO | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 11 | Past tense and reflexive verbs | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 12 | Future, aspect introduction, dative case, additional spelling rules, and prepositional plural | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 13 | Aspect in the past, tense use, infinitive aspect, and reported speech | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
