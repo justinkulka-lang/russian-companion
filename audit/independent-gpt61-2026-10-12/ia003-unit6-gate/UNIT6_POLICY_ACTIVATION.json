@@ -1,0 +1,32 @@
+{
+  "baselineCommit": "56c227f280a3b90ff670b1c73607b83ad1ea4e2f",
+  "unitNumber": 6,
+  "oldAdvancement": {
+    "requireInstruction": true,
+    "requireBookSelfAttestation": true,
+    "requireAppChecks": true,
+    "minimumDistinctChecks": 18,
+    "requireDueReview": false,
+    "tutorOptional": true
+  },
+  "newAdvancement": {
+    "requireInstruction": true,
+    "requireBookSelfAttestation": true,
+    "requireAppChecks": true,
+    "minimumDistinctChecks": 18,
+    "requireDueReview": true,
+    "tutorOptional": true,
+    "cumulativeReviewPolicyId": "unit6-prior-reading-noun-behavior-v1"
+  },
+  "minimumDistinctChecksUnchanged": 18,
+  "entireRawAssetExceptUnit6Advancement": "JSON_VALUE_IDENTICAL",
+  "provenance": 6913,
+  "capabilities": 58,
+  "rawAssetSha256": "31eba623683ba0b6105d8ea82132d3ae4fa52db1e3292b8617c3567cbfef456c",
+  "catalogAndSchemas": "BYTE_IDENTICAL",
+  "allNineOriginalAuditFiles": "HASH_VERIFIED",
+  "priorPolicyCanonicalDefinitions": "UNITS3_4_5_BYTE_IDENTICAL",
+  "historicalDisposition": "Empty links with either activation marker require exact pre-policy Unit6 governed work;no synthetic review,no stale duplicate animacy credit",
+  "claims": "Two fixed supplied recognition slots;qualified acceptance pending",
+  "activation": "ONLY_UNIT6_ADDED;UNITS3_TO5_REMAIN_ACTIVE"
+}

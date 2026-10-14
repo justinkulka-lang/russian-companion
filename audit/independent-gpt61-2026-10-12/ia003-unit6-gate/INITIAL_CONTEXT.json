@@ -1,0 +1,50 @@
+{
+  "baseCommit": "56c227f280a3b90ff670b1c73607b83ad1ea4e2f",
+  "scope": "Initial25 focused methods:18 storage/kernel and7 Unit6;uncommitted inputs,not final binding validation",
+  "command": "./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*Unit6CumulativeReviewTest' --tests '*CumulativeReviewStorageTest' --max-workers=4 --console=plain",
+  "inputs": [
+    {
+      "path": "app/src/main/assets/content/v2-curriculum.json",
+      "sha256": "31eba623683ba0b6105d8ea82132d3ae4fa52db1e3292b8617c3567cbfef456c"
+    },
+    {
+      "path": "app/src/main/java/dev/russiancompanion/data/local/LocalStore.kt",
+      "sha256": "1da1483d2a9e4db9af6a0cdf50a42733f03424f75395b64c9ce541a8aefe2d81"
+    },
+    {
+      "path": "app/src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt",
+      "sha256": "65c9d76a894c00b8e925eae1a1b24d3f63592b0d5a8b59a32979d4faae8f2266"
+    },
+    {
+      "path": "app/src/main/java/dev/russiancompanion/v2/curriculum/V2ProgressRules.kt",
+      "sha256": "5e1a97a14f022bddff94f2e33475df0ec0624b10dae5a8866042d7b3a7c88bcb"
+    },
+    {
+      "path": "app/src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt",
+      "sha256": "562707cb5ed3bf0ce167c98c36988fd3ce5279c686297d46e8b1c8c30af37a41"
+    },
+    {
+      "path": "app/src/main/java/dev/russiancompanion/v2/ui/V2CumulativeReviewScreen.kt",
+      "sha256": "e7501f4e0c142d9ee35da348cc1be114a4c68081c6011e2b8eec9d9da097e9c1"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/CumulativeReviewStorageTest.kt",
+      "sha256": "43b717e19e70e2d99b26dd645bb6d83894ef9477125ab599df6691e0d81b9496"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit4NominativeRoleTest.kt",
+      "sha256": "8ab8ba8bdf0aa19cc98df10dfd049037e282d2ba3be334ac1630bb3fa74a913b"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit6CumulativeReviewTest.kt",
+      "sha256": "61a59e0b04f5979167e54d090e964b8a8ae30a9d4abcef7891a893295eeac53c"
+    }
+  ],
+  "counts": {
+    "tests": 25,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "result": "PASS"
+}
