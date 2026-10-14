@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Units2630SourceIntakeTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-13T23:50:55.500Z" hostname="d0fbcd1608d3" time="40.035">
+  <properties/>
+  <testcase name="generatedRussianPenguinAudioAndReleaseStayClosed" classname="dev.russiancompanion.v2.Units2630SourceIntakeTest" time="39.988"/>
+  <testcase name="retainedSourceBytesMatchTheFrozenIdentityTwice" classname="dev.russiancompanion.v2.Units2630SourceIntakeTest" time="0.046"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -325,6 +325,14 @@
           "errors": 0,
           "skipped": 0,
           "formalAcceptance": false
+        },
+        "unit8PluralSpelling": {
+          "baselineCommit": "3812f0e793ac6478a809fe683b303048e6f1c69c",
+          "evidencePath": "unit8-plural-instruction-verification/FINAL_VERIFICATION_MANIFEST.json",
+          "disposition": "RETAIN_CORRECT_REINFORCEMENT_PENDING_INDEPENDENT_ASSESSMENT",
+          "duplicateCountChanged": false,
+          "additionalInstructionIssue": "UNIT8_PLURAL_INSTRUCTION_FOLLOWUP",
+          "formalAcceptance": false
         }
       }
     },
@@ -371,5 +379,17 @@
   "latestCorrectedTargetPassed": 1,
   "latestFocusedIntegrationScope": "33_SELECTED_TESTS_16_CLASSES_SINGLE_FOCUSED_RUN_NOT_COMPLETE_SUITE",
   "latestCorrectedTargetBatch": "IA016_UNIT21_HISTORICAL_NOT_THIS_UNIT24_RUN",
-  "latestFocusedVerificationUniquePassingMethods": 33
+  "latestFocusedVerificationUniquePassingMethods": 33,
+  "additionalEngineeringFollowups": {
+    "UNIT8_PLURAL_INSTRUCTION_FOLLOWUP": {
+      "producerFindingId": null,
+      "discoveredDuring": "IA016_UNIT8_PLURAL_SPELLING_REVIEW",
+      "implementationCommit": "4a67bce3a8c94efd7e63f49d911f91746376ecb2",
+      "evidencePath": "unit8-plural-instruction-verification/FINAL_VERIFICATION_MANIFEST.json",
+      "disposition": "ENGINEERING_FIX_PENDING_INDEPENDENT_VERIFICATION",
+      "allScoredAndNativeFieldsPreserved": true,
+      "newPendingEnglishRecords": 21,
+      "formalAcceptance": false
+    }
+  }
 }
