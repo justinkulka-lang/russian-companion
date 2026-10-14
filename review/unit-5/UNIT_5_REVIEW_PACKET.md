@@ -11,12 +11,12 @@ Unit 5 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 7873c4794c65d06dacf8f80bcb8fcbf110f975b3
-- Unit content-review SHA-256: 2d0bd5ce23de6a68c10be5a349554b768f551faaf0a90c3432bd5d6e00d1cd73
+- Curriculum source commit: 1e84576413cbd0e51cc07934baf416154e69bd0b
+- Unit content-review SHA-256: 3c9149de87feeda96f64e195f3dab0428700049f3a7342e4ba764191a16db141
 - Mapping-package SHA-256: 2a08c3d25c46aa6820a3798cafb90e415a873dbaa13bb003c42f330d15fe40ec
-- Pack content-review SHA-256: daca542983af27d9543a0d2eb9ddd11a63b0dd035ad6c155b6feaea753c8e181
-- Review-package SHA-256: 33524ffeef0069e16031da2a590c2a4bfed01738ec9e9eb154ebcb38b901b3a9
-- Repository source SHA-256: 37a25fc75f8bf9f97d18dba327ff4c6d6c6a251d71db9fdd452fcaab580c2f72
+- Pack content-review SHA-256: 6a3fe99037831cb052309826edacad6fc1a2cb204d68a90a498d1f55ae32015f
+- Review-package SHA-256: 0e991d61cccc162862791db9e429acc26fcd3d677b5afed22aa7fd75d27a8297
+- Repository source SHA-256: 2f55d5eec5bdce1f584271b4aaf07419aba9b8ecb1c92c8d9bb7db7bbb3a3e23
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -96,13 +96,13 @@ estimatedMinutes=54
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 213c5f5037d7f6a5b3d3a0bf008140467aca3055a2bd2f983b5a5c5997564cdf
+- Content hash: fe33d69c7bfb8d797ea9b42cdff56effb75824b841f21f6517c78f83fa288be6
 
 requireInstruction=true
 requireBookSelfAttestation=true
 requireAppChecks=true
 minimumDistinctChecks=14
-requireDueReview=false
+requireDueReview=true
 tutorOptional=true
 
 ### OBJECTIVE `obj-u5-questions`

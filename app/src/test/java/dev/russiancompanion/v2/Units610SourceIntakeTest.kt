@@ -67,7 +67,7 @@ class Units610SourceIntakeTest {
         assertEquals("4fd67bff0431a11416115de023e076c52b7879304fc4a98b508d871170703e9c", V2Validator.unitContentReviewDigest(pack, 2))
         assertEquals("5480d8e87a1651d1bc16ad6c5a0856724f7bad1b746a62bbfab2bb60f3cc3e0b", V2Validator.unitContentReviewDigest(pack, 3))
         assertEquals("1ebcde1ebabf867b08e137a96bf30f56cccbb0ea85cfd8ecb54cee463a79bf11", V2Validator.unitContentReviewDigest(pack, 4))
-        assertEquals("2d0bd5ce23de6a68c10be5a349554b768f551faaf0a90c3432bd5d6e00d1cd73", V2Validator.unitContentReviewDigest(pack, 5))
+        assertEquals("3c9149de87feeda96f64e195f3dab0428700049f3a7342e4ba764191a16db141", V2Validator.unitContentReviewDigest(pack, 5))
         assertEquals(
             mappingPackageDigest(governedMappingFacts(5)),
             buildUnitReviewPackage(pack, 5).mappingPackageDigest,

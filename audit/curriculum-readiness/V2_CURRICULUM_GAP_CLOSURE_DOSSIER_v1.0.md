@@ -6,8 +6,8 @@
 **Repository:** `justinkulka-lang/russian-companion`  
 **Repository baseline main:** `c153103a0048f69f8de339b83e77d93572ebddb7`  
 **Unit 23 unprepared correction:** `fd69bd03298d69669d09daafe8d364b0e576d033` (`Keep Unit 23 unprepared until completion over a period is admitted.`). That commit is an ancestor of the repository baseline. It is not the repository baseline main commit.  
-**Pack content-review digest:** `daca542983af27d9543a0d2eb9ddd11a63b0dd035ad6c155b6feaea753c8e181`
-**Repository source digest:** `37a25fc75f8bf9f97d18dba327ff4c6d6c6a251d71db9fdd452fcaab580c2f72`
+**Pack content-review digest:** `6a3fe99037831cb052309826edacad6fc1a2cb204d68a90a498d1f55ae32015f`
+**Repository source digest:** `2f55d5eec5bdce1f584271b4aaf07419aba9b8ecb1c92c8d9bb7db7bbb3a3e23`
 **Public release:** **NOT_APPROVED**
 
 ## Purpose
@@ -51,7 +51,7 @@ Unacceptable shortcuts include keyword matches, mutable pages, dictionary-row gr
 | 2 | Handwriting and additional pronunciation | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | REQUIRED_LICENSED_AUDIO_ABSENT, REQUIRED_HANDWRITING_ASSET_ABSENT | NOT_APPLICABLE | YES | Admit mapped licensed audio and verified handwriting assets; then qualified review and mapping |
 | 3 | Everyday phrases, naming things, basic grammar, and gender | CONTENT_COMPLETE_REVIEW_PENDING | NO | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 4 | Verbs, personal pronouns, present tense, conjugation, word stress, and introduction to nouns and cases | CONTENT_COMPLETE_REVIEW_PENDING | NO | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
-| 5 | Questions, prepositional case, and indeclinable nouns | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
+| 5 | Questions, prepositional case, and indeclinable nouns | CONTENT_COMPLETE_REVIEW_PENDING | NO | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 6 | Possession, going places, accusative case, and personal names | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 7 | Adjectives, agreement, demonstratives, adjective case forms, and adverbs | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 8 | Plurals, first spelling rules, existence questions, and buying things | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
