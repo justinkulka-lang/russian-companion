@@ -282,5 +282,6 @@
   "newUnit11Digest": "4e3f32d66de93776e545f388a06a6ab514bc4ca050a425608f879de8ac4e9d40",
   "canonicalPins": 71,
   "unit11ChangedRecord": "Only unit-11-advancement contentHash;all other record fields and records unchanged",
-  "bindingHelperCorrection": "Local helper corrected actual UNIT_n_REVIEW_MANIFEST.json path and five affected fixtures (Units1115MappingGapTest preserves only Units1\u201310 and is unchanged). Unit11 manifest also changes the advancement record hash, verified as its only record difference. No test assertions or historical records weakened. Initial46 passed;final verification executes corrected current inputs."
+  "bindingHelperCorrection": "Local helper corrected actual UNIT_n_REVIEW_MANIFEST.json path and five affected fixtures (Units1115MappingGapTest preserves only Units1\u201310 and is unchanged). Unit11 manifest also changes the advancement record hash, verified as its only record difference. No test assertions or historical records weakened. Initial46 passed;final verification executes corrected current inputs.",
+  "runtimeTransition": "Environment briefly reported starting/ready during correction run. Original tool session handle became unavailable;existing runner/workers,exact HEAD and log remained intact. Monitored persisted exit file;no duplicate Gradle run started."
 }

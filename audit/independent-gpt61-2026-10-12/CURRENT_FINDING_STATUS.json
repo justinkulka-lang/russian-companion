@@ -21,7 +21,48 @@
       "producerSeverity": "HIGH",
       "producerStatus": "OPEN",
       "engineeringDisposition": "OPEN",
-      "formalAcceptance": false
+      "formalAcceptance": false,
+      "boundedCumulativeReviewCheckpoint": {
+        "activeEngineeringUnits": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "implementationCommit": "89a8323e451ac73345081125b44ab6f107a6995c",
+        "applicationIntegrationTestedCommit": "272f8505ba0f464e8e02197a953531cd06538d5f",
+        "integrationCounts": {
+          "tests": 148,
+          "passed": 147,
+          "failures": 1,
+          "errors": 0,
+          "skipped": 0
+        },
+        "correctedBindingTestedCommit": "56fd4b0f4e254226a5546fdf348846d883c3ce37",
+        "correctedBindingCounts": {
+          "tests": 8,
+          "passed": 8,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "uniquePassingMethodEvidenceAcrossOverlappingScopes": 148,
+        "fresh148MethodRunAtCorrectedCommit": false,
+        "completeSuite": false,
+        "manifest": "ia003-unit11-gate/FINAL_VERIFICATION_MANIFEST.json",
+        "remaining": [
+          "Applicable Units12\u201330",
+          "Larger eligible pools/recent-review scheduling",
+          "Qualified assessment",
+          "Broader instruction/remediation accuracy and coverage"
+        ],
+        "acceptance": "ENGINEERING_ONLY;IA003_OPEN"
+      }
     },
     {
       "findingId": "IA004",

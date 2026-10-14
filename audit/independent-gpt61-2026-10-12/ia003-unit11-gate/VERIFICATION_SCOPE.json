@@ -28,5 +28,25 @@
     "app/src/test/java/dev/russiancompanion/v2/Unit9QuantityRuleCorrectionTest.kt": "810a294db3b39b680d451926bf65e05a70107f28dbd7f6dc3c858b1267e9f861",
     "app/src/test/java/dev/russiancompanion/v2/Unit9ReinforcementReviewTest.kt": "b797c260c6f948af146470872c6eff029455044555c931e4b762c82254caa0d6"
   },
-  "reason": "Retain all prior138 focused methods;add Unit11 gate and ordinary feedback. Earlier44 semantic methods remain unchanged/enabled and not selected again. Screenshot-exporter exclusions are separate. NOT complete suite."
+  "reason": "Retain all prior138 focused methods;add Unit11 gate and ordinary feedback. Earlier44 semantic methods remain unchanged/enabled and not selected again. Screenshot-exporter exclusions are separate. NOT complete suite.",
+  "appliesTo": "Original148-method integration, not the corrected8-method run",
+  "integrationOutcome": {
+    "tests": 148,
+    "passed": 147,
+    "failures": 1,
+    "errors": 0,
+    "skipped": 0,
+    "testedCommit": "272f8505ba0f464e8e02197a953531cd06538d5f"
+  },
+  "dossierOnlyCorrectionOutcome": {
+    "tests": 8,
+    "passed": 8,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "testedCommit": "56fd4b0f4e254226a5546fdf348846d883c3ce37",
+    "script": "verify-bindings.sh"
+  },
+  "uniquePassingMethodEvidenceAcrossScopes": 148,
+  "fresh148MethodRunAtCorrectedCommit": false
 }

@@ -1,0 +1,1073 @@
+{
+  "repository": "justinkulka-lang/russian-companion",
+  "branch": "cursor/content-audit-corrections-964f",
+  "draftPR": 64,
+  "apk": {
+    "assembled": false,
+    "signed": false,
+    "configuredApplicationId": "dev.russiancompanion",
+    "configuredVersionName": "2.0.0-dev",
+    "configuredVersionCode": 5,
+    "currentArtifactIdentity": "NOT_RECORDED",
+    "currentApkSha256": "NOT_RECORDED",
+    "currentApkSignature": "NOT_RECORDED",
+    "historicalArtifacts": "Preserved; not this candidate"
+  },
+  "excludedScreenshotExporters": [
+    {
+      "class": "VisualReviewCaptureTest",
+      "methods": 2
+    },
+    {
+      "class": "Units35ChunkCaptureTest",
+      "methods": 2
+    },
+    {
+      "class": "Units610ChunkCaptureTest",
+      "methods": 10
+    },
+    {
+      "class": "Units1115GapCaptureTest",
+      "methods": 2
+    }
+  ],
+  "exclusionReason": "Exporters overwrite tracked screenshot evidence and write /opt/cursor; external cloud-validation init excludes them from environment setup verification. Current selectors additionally limit scope.",
+  "environment": {
+    "configurationChanged": false,
+    "installScriptAndStartSkill": "Saved; nonempty contents confirmed by supported current settings read",
+    "priorPublication": "USER_CONFIRMED",
+    "laterNetworkOnlyDraftPublication": "NOT_INDEPENDENTLY_ESTABLISHED",
+    "supportedPublicationControlHere": "UNAVAILABLE",
+    "settingsRead": {
+      "draftId": null,
+      "revision": null,
+      "baseVersionId": "13a458c1-0aec-4d7a-ab78-a70d382275e1~cecfgver_6acedb2102ec8196804d03e72c487901",
+      "installScriptSaved": true,
+      "startSkillSaved": true,
+      "publication": "USER_CONFIRMED; no supported publication or status tool available",
+      "configurationChanged": false
+    },
+    "publicationIndependentlyVerified": false,
+    "settingsReadEvidence": "../ia003-unit5-gate/ENVIRONMENT_SETTINGS_READ.json;previous supported read,configuration unchanged"
+  },
+  "privateReference": "No private PDF read/copied into GitHub/assets/logs/packets/environment snapshot. Obtain privately using continuity SHA256 in durable instructions; historical expected hash remains unknown.",
+  "acceptance": {
+    "IA003": "OPEN:Units3\u201311 bounded engineering slices active;Units12\u201330,larger rotating pools/recent-review scheduling and qualified assessment remain pending",
+    "independentComprehensiveAudit": "OUTSTANDING",
+    "physicalGalaxyS26UltraAirplaneModeAndReboot": "OUTSTANDING;LAST after final comprehensive audit",
+    "mergeFreezeSigningReleaseApproval": "NOT_AUTHORIZED_OR_PERFORMED"
+  },
+  "historicalCounts": {
+    "mainCommit": "ff539220645670fbf7a1abacaa6f71e828606b80",
+    "mainSourceAnnotations": 579,
+    "excludedMethods": 16,
+    "reportedTests": 563,
+    "passed": 562,
+    "skipped": 1,
+    "completeSuiteClaim": "NOT_PROVEN",
+    "pr64BaselineCommit": "420f41ff6c2a4417cd829fdee0179b6a3b797eff",
+    "pr64SourceAnnotations": 691,
+    "sourceDifference": 112,
+    "handoffExecution": "UNVERIFIED",
+    "currentDifference": "Integration148 retains prior138 plus7 new Unit11 and3 existing Unit11 methods;147pass/one dossier failure at 272f8505ba0f464e8e02197a953531cd06538d5f. Eight corrected binding checks pass at 56fd4b0f4e254226a5546fdf348846d883c3ce37;seven overlap prior passes and one repairs the failed method.148 unique passing-method evidence across scopes,NOT a fresh148-method run at corrected commit or complete suite. Historical562/691 claims differ in commits/scopes and are not summed."
+  },
+  "schemaVersion": 1,
+  "status": "UNITS3_TO11_ACTIVE_IA003_OPEN_UNITS12_TO30_PENDING",
+  "baselineCommit": "79dfaa34ae54afb3aa1ae595919da45c1c6aa0dc",
+  "implementationCommit": "89a8323e451ac73345081125b44ab6f107a6995c",
+  "testedCommit": "56fd4b0f4e254226a5546fdf348846d883c3ce37",
+  "command": "bash audit/independent-gpt61-2026-10-12/ia003-unit11-gate/verify-bindings.sh",
+  "expandedScript": "#!/usr/bin/env bash\nset -euo pipefail\ncd /workspace/russian-companion\nsource /workspace/setup/android-env.sh\nchecks=(\n --tests '*UnitReviewPipelineTest.committedUnitPackagesMatchTheGenerator'\n --tests '*CurriculumReadinessReconciliationTest.committedReportsMatchTheGeneratorAndStayByteIdentical'\n --tests '*OwnerGovernanceDecisionTest.preparationManifestBindsFactsAndDoesNotPassAFinalAudit'\n --tests '*GapClosureDossierTest.dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease'\n --tests '*ReleaseSourceDigestTest.committedCandidateRecordsTheCurrentSourceDigestAndIdentity'\n --tests '*Units2630SourceIntakeTest.generatedRussianPenguinAudioAndReleaseStayClosed'\n --tests '*V2RebuildTest.structuralMappingSafeguardsRejectIncompleteOrInventedRecords'\n --tests '*BatchECapabilityResearchTest.digestsGovernanceAndLaterUnitsStayUnchanged'\n)\n./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle \\\n testDebugUnitTest \"${checks[@]}\" compileDebugSources lintDebug verifyReleaseGateAttachment --max-workers=4 --console=plain\n",
+  "scriptSha256": "c89561c14d638d2da7656ec6971a8e494cfc7c9587db2545a89aab3f3d052c5c",
+  "selectors": [
+    "*UnitReviewPipelineTest.committedUnitPackagesMatchTheGenerator",
+    "*CurriculumReadinessReconciliationTest.committedReportsMatchTheGeneratorAndStayByteIdentical",
+    "*OwnerGovernanceDecisionTest.preparationManifestBindsFactsAndDoesNotPassAFinalAudit",
+    "*GapClosureDossierTest.dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease",
+    "*ReleaseSourceDigestTest.committedCandidateRecordsTheCurrentSourceDigestAndIdentity",
+    "*Units2630SourceIntakeTest.generatedRussianPenguinAudioAndReleaseStayClosed",
+    "*V2RebuildTest.structuralMappingSafeguardsRejectIncompleteOrInventedRecords",
+    "*BatchECapabilityResearchTest.digestsGovernanceAndLaterUnitsStayUnchanged"
+  ],
+  "allSelectorsExecuted": true,
+  "counts": {
+    "tests": 8,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "passed": 8,
+  "classes": [
+    {
+      "name": "dev.russiancompanion.release.ReleaseSourceDigestTest",
+      "timestamp": "2026-10-14T22:42:20.583Z",
+      "counts": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "committedCandidateRecordsTheCurrentSourceDigestAndIdentity",
+          "seconds": "24.025"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.release.ReleaseSourceDigestTest.xml",
+      "sha256": "f29658211b38c2836b597cfe88fda704af2d4c9fd19677b9115c125999005184"
+    },
+    {
+      "name": "dev.russiancompanion.v2.BatchECapabilityResearchTest",
+      "timestamp": "2026-10-14T22:40:42.734Z",
+      "counts": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "digestsGovernanceAndLaterUnitsStayUnchanged",
+          "seconds": "88.908"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.BatchECapabilityResearchTest.xml",
+      "sha256": "d697be5802dd946e5368c495ed84f73b312e6947fce5442d838082419b4764f5"
+    },
+    {
+      "name": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+      "timestamp": "2026-10-14T22:40:42.051Z",
+      "counts": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "generatedRussianPenguinAudioAndReleaseStayClosed",
+          "seconds": "68.938"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.Units2630SourceIntakeTest.xml",
+      "sha256": "4ca9676f512b3d6948f9ac32654161620513f8edae7cf2685c72ea16ea5c8616"
+    },
+    {
+      "name": "dev.russiancompanion.v2.V2RebuildTest",
+      "timestamp": "2026-10-14T22:42:12.110Z",
+      "counts": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "structuralMappingSafeguardsRejectIncompleteOrInventedRecords",
+          "seconds": "59.803"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.V2RebuildTest.xml",
+      "sha256": "dfa6ff000bf9a1a4f3f83853d39b8502e965ec5ba5384987b4a26e32fec436e6"
+    },
+    {
+      "name": "dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest",
+      "timestamp": "2026-10-14T22:40:41.987Z",
+      "counts": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "committedReportsMatchTheGeneratorAndStayByteIdentical",
+          "seconds": "90.395"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest.xml",
+      "sha256": "66a4ef47524410130585b5b2ace7ca0b3cbda12b13ed447a4cf4ff76774f74b0"
+    },
+    {
+      "name": "dev.russiancompanion.v2.audit.GapClosureDossierTest",
+      "timestamp": "2026-10-14T22:40:39.873Z",
+      "counts": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease",
+          "seconds": "99.839"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.audit.GapClosureDossierTest.xml",
+      "sha256": "251b8c896748e7a9195e11cfcc8c6ad50166be09b91f7c8335f9380d4c3ed9ab"
+    },
+    {
+      "name": "dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest",
+      "timestamp": "2026-10-14T22:42:46.899Z",
+      "counts": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "preparationManifestBindsFactsAndDoesNotPassAFinalAudit",
+          "seconds": "5.614"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest.xml",
+      "sha256": "716ec250ea9fb17a80d99a886814ff4c67bf23cb37772cfdb45e34ae83af4ddd"
+    },
+    {
+      "name": "dev.russiancompanion.v2.review.UnitReviewPipelineTest",
+      "timestamp": "2026-10-14T22:41:51.130Z",
+      "counts": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "committedUnitPackagesMatchTheGenerator",
+          "seconds": "137.472"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.review.UnitReviewPipelineTest.xml",
+      "sha256": "5bf13dce62a9ae17a7a87812e8b6d405a7c226811ca6009281e7997e1061021c"
+    }
+  ],
+  "scope": "8 corrected source/binding/readiness checks after a dossier-only correction;prior integration148 at272f8505 had147 passes/one dossier failure. NOT a fresh148-method run at the corrected commit or a complete suite",
+  "overlappingScopesSummed": false,
+  "scopeLimitations": "Simulated governed teaching and book records;fixed supplied checks,not observed human performance/unseen transfer.",
+  "runnerExitCode": 0,
+  "lint": {
+    "fatal": 0,
+    "errors": 0,
+    "warnings": 20,
+    "hints": 1,
+    "xml": "FINAL_LINT.xml",
+    "result": "PASS",
+    "taskExecution": [
+      "> Task :app:generateDebugAndroidTestLintModel UP-TO-DATE",
+      "> Task :app:generateDebugLintReportModel UP-TO-DATE",
+      "> Task :app:generateDebugUnitTestLintModel UP-TO-DATE",
+      "> Task :app:lintAnalyzeDebug UP-TO-DATE",
+      "> Task :app:lintAnalyzeDebugAndroidTest UP-TO-DATE",
+      "> Task :app:lintAnalyzeDebugUnitTest UP-TO-DATE",
+      "> Task :app:lintReportDebug",
+      "> Task :app:lintDebug"
+    ]
+  },
+  "releaseGateAttachment": {
+    "task": "verifyReleaseGateAttachment",
+    "executed": true,
+    "result": "PASS",
+    "releaseAuthorization": false
+  },
+  "gradleTasks": [
+    "> Task :app:preBuild UP-TO-DATE",
+    "> Task :app:preDebugBuild UP-TO-DATE",
+    "> Task :app:generateDebugBuildConfig UP-TO-DATE",
+    "> Task :app:generateDebugResources UP-TO-DATE",
+    "> Task :app:packageDebugResources UP-TO-DATE",
+    "> Task :app:processDebugNavigationResources UP-TO-DATE",
+    "> Task :app:parseDebugLocalResources UP-TO-DATE",
+    "> Task :app:generateDebugRFile UP-TO-DATE",
+    "> Task :app:kspDebugKotlin UP-TO-DATE",
+    "> Task :app:compileDebugKotlin UP-TO-DATE",
+    "> Task :app:javaPreCompileDebug UP-TO-DATE",
+    "> Task :app:compileDebugJavaWithJavac UP-TO-DATE",
+    "> Task :app:checkDebugAarMetadata UP-TO-DATE",
+    "> Task :app:mapDebugSourceSetPaths UP-TO-DATE",
+    "> Task :app:compileDebugNavigationResources UP-TO-DATE",
+    "> Task :app:mergeDebugResources UP-TO-DATE",
+    "> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE",
+    "> Task :app:extractDeepLinksDebug UP-TO-DATE",
+    "> Task :app:processDebugMainManifest UP-TO-DATE",
+    "> Task :app:processDebugManifest UP-TO-DATE",
+    "> Task :app:processDebugManifestForPackage UP-TO-DATE",
+    "> Task :app:processDebugResources UP-TO-DATE",
+    "> Task :app:bundleDebugClassesToRuntimeJar UP-TO-DATE",
+    "> Task :app:bundleDebugClassesToCompileJar UP-TO-DATE",
+    "> Task :app:kspDebugUnitTestKotlin UP-TO-DATE",
+    "> Task :app:preDebugUnitTestBuild UP-TO-DATE",
+    "> Task :app:compileDebugUnitTestKotlin UP-TO-DATE",
+    "> Task :app:javaPreCompileDebugUnitTest UP-TO-DATE",
+    "> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE",
+    "> Task :app:generateDebugAssets UP-TO-DATE",
+    "> Task :app:mergeDebugAssets UP-TO-DATE",
+    "> Task :app:packageDebugUnitTestForUnitTest UP-TO-DATE",
+    "> Task :app:mergeDebugUnitTestManifest UP-TO-DATE",
+    "> Task :app:processDebugUnitTestManifest UP-TO-DATE",
+    "> Task :app:generateDebugUnitTestConfig UP-TO-DATE",
+    "> Task :app:processDebugJavaRes UP-TO-DATE",
+    "> Task :app:processDebugUnitTestJavaRes UP-TO-DATE",
+    "> Task :app:testDebugUnitTest",
+    "> Task :app:compileDebugSources UP-TO-DATE",
+    "> Task :app:preDebugAndroidTestBuild SKIPPED",
+    "> Task :app:generateDebugAndroidTestLintModel UP-TO-DATE",
+    "> Task :app:extractProguardFiles UP-TO-DATE",
+    "> Task :app:generateDebugLintReportModel UP-TO-DATE",
+    "> Task :app:generateDebugUnitTestLintModel UP-TO-DATE",
+    "> Task :app:lintAnalyzeDebug UP-TO-DATE",
+    "> Task :app:lintAnalyzeDebugAndroidTest UP-TO-DATE",
+    "> Task :app:lintAnalyzeDebugUnitTest UP-TO-DATE",
+    "> Task :app:verifyReleaseGateAttachment",
+    "> Task :app:lintReportDebug",
+    "> Task :app:lintDebug"
+  ],
+  "compile": {
+    "compileDebugSources": "UP-TO-DATE",
+    "mainKotlin": "UP-TO-DATE",
+    "testKotlin": "UP-TO-DATE",
+    "earlierCurrentCompilation": "INITIAL_RUN.txt,REVIEW_REFRESH.txt,READINESS_REFRESH.txt,INTEGRATION_RUN.txt"
+  },
+  "preservation": {
+    "baselineCommit": "79dfaa34ae54afb3aa1ae595919da45c1c6aa0dc",
+    "unitNumber": 11,
+    "oldAdvancement": {
+      "requireInstruction": true,
+      "requireBookSelfAttestation": true,
+      "requireAppChecks": true,
+      "minimumDistinctChecks": 8,
+      "requireDueReview": false,
+      "tutorOptional": true
+    },
+    "newAdvancement": {
+      "requireInstruction": true,
+      "requireBookSelfAttestation": true,
+      "requireAppChecks": true,
+      "minimumDistinctChecks": 8,
+      "requireDueReview": true,
+      "tutorOptional": true,
+      "cumulativeReviewPolicyId": "unit11-prior-reading-possession-absence-v1"
+    },
+    "minimumDistinctChecksUnchanged": 8,
+    "entireRawAssetExceptUnit11Advancement": "JSON_VALUE_IDENTICAL",
+    "provenance": 6913,
+    "capabilities": 58,
+    "catalogAndSchemas": "BYTE_IDENTICAL",
+    "allNineOriginalAuditFiles": "HASH_VERIFIED",
+    "priorPolicyCanonicalDefinitions": "UNITS3_TO10_BYTE_IDENTICAL",
+    "rawAssetSha256": "1a410752f15cb1bb9414a457e6fd7a80a08b0e07fb04466982604f84ce6270c9",
+    "activation": "ONLY_UNIT11_ADDED;UNITS3_TO10_REMAIN_ACTIVE",
+    "claims": "Two fixed supplied recognition slots;guided positive possession cannot supply independent absence due credit;qualified acceptance pending",
+    "historicalDisposition": "Exact otherwise-current pre-policy Unit11 work only;20a227 Unit11 declaration/items verified identical before fixture reuse;no synthetic review or raw/stale credit",
+    "implementationCommit": "89a8323e451ac73345081125b44ab6f107a6995c",
+    "newPackDigest": "ae09c34cf5d80a63e0ea46b014d2690e00b23b59f6448917ca071e6555d02594",
+    "newRepositorySourceDigest": "c581506da064d2be845e1f1277003ef2a0aac21fd689d57d1a8f77adf854942b",
+    "unitReviewBindings": [
+      {
+        "unitNumber": 1,
+        "changedFields": [
+          "repositorySourceDigest",
+          "packContentReviewDigest"
+        ],
+        "contentReviewDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7"
+      },
+      {
+        "unitNumber": 2,
+        "changedFields": [
+          "repositorySourceDigest",
+          "packContentReviewDigest"
+        ],
+        "contentReviewDigest": "4fd67bff0431a11416115de023e076c52b7879304fc4a98b508d871170703e9c"
+      },
+      {
+        "unitNumber": 3,
+        "changedFields": [
+          "repositorySourceDigest",
+          "packContentReviewDigest"
+        ],
+        "contentReviewDigest": "5480d8e87a1651d1bc16ad6c5a0856724f7bad1b746a62bbfab2bb60f3cc3e0b"
+      },
+      {
+        "unitNumber": 4,
+        "changedFields": [
+          "repositorySourceDigest",
+          "packContentReviewDigest"
+        ],
+        "contentReviewDigest": "1ebcde1ebabf867b08e137a96bf30f56cccbb0ea85cfd8ecb54cee463a79bf11"
+      },
+      {
+        "unitNumber": 5,
+        "changedFields": [
+          "repositorySourceDigest",
+          "packContentReviewDigest"
+        ],
+        "contentReviewDigest": "3c9149de87feeda96f64e195f3dab0428700049f3a7342e4ba764191a16db141"
+      },
+      {
+        "unitNumber": 6,
+        "changedFields": [
+          "repositorySourceDigest",
+          "packContentReviewDigest"
+        ],
+        "contentReviewDigest": "936f868f09c20b9cf58d7b4e06b3920c37d9acae153836522e4e5b9ef2cafa70"
+      },
+      {
+        "unitNumber": 7,
+        "changedFields": [
+          "repositorySourceDigest",
+          "packContentReviewDigest"
+        ],
+        "contentReviewDigest": "3999906034a7cc8baca24f2aa063320bf6927663f5f62e19e8957167206f520a"
+      },
+      {
+        "unitNumber": 8,
+        "changedFields": [
+          "repositorySourceDigest",
+          "packContentReviewDigest"
+        ],
+        "contentReviewDigest": "96b3a661d0ad5edd55ed44e2890a88250081275a7881713c9daf37ed94d7f42a"
+      },
+      {
+        "unitNumber": 9,
+        "changedFields": [
+          "repositorySourceDigest",
+          "packContentReviewDigest"
+        ],
+        "contentReviewDigest": "db6599afa744df79762a78f3d56dc0190ec2ca886343a020afbc6c3816de7696"
+      },
+      {
+        "unitNumber": 10,
+        "changedFields": [
+          "repositorySourceDigest",
+          "packContentReviewDigest"
+        ],
+        "contentReviewDigest": "3ae5a3b41bc970ef43589ace5929e65818fa620c8660f0bd1c4de5275667cf84"
+      },
+      {
+        "unitNumber": 11,
+        "changedFields": [
+          "curriculumSourceCommit",
+          "repositorySourceDigest",
+          "reviewPackageDigest",
+          "packContentReviewDigest",
+          "records",
+          "contentReviewDigest"
+        ],
+        "contentReviewDigest": "4e3f32d66de93776e545f388a06a6ab514bc4ca050a425608f879de8ac4e9d40"
+      },
+      {
+        "unitNumber": 12,
+        "changedFields": [
+          "repositorySourceDigest",
+          "packContentReviewDigest"
+        ],
+        "contentReviewDigest": "a48e06a4b9b4c9944fd679496777886fb5a88a6ff04d621f9b8882c223ee4b12"
+      },
+      {
+        "unitNumber": 13,
+        "changedFields": [
+          "repositorySourceDigest",
+          "packContentReviewDigest"
+        ],
+        "contentReviewDigest": "1091aa93b46aca71f711a41b6ee9d26102d98d342e3a41e459156e9f12ac0d13"
+      },
+      {
+        "unitNumber": 14,
+        "changedFields": [
+          "repositorySourceDigest",
+          "packContentReviewDigest"
+        ],
+        "contentReviewDigest": "a27be08b81bc956dc5bfd40c6bb4c47613b9ea580dd59cf898ccf10bf8c791c1"
+      },
+      {
+        "unitNumber": 15,
+        "changedFields": [
+          "repositorySourceDigest",
+          "packContentReviewDigest"
+        ],
+        "contentReviewDigest": "6a2f591fdf4386dfcf371fdb13d4f754ac416dcc85f6918ca9ea63596e46971b"
+      },
+      {
+        "unitNumber": 16,
+        "changedFields": [
+          "repositorySourceDigest",
+          "packContentReviewDigest"
+        ],
+        "contentReviewDigest": "bba607c6ebf3b11a2275a97319d9c4cf8c80978ea6ad71e0da73f46c23d6069b"
+      },
+      {
+        "unitNumber": 17,
+        "changedFields": [
+          "repositorySourceDigest",
+          "packContentReviewDigest"
+        ],
+        "contentReviewDigest": "16e8478be2cab8dad81faf971e4c13f088323b93612407a3b928ce85d31ea1c5"
+      },
+      {
+        "unitNumber": 18,
+        "changedFields": [
+          "repositorySourceDigest",
+          "packContentReviewDigest"
+        ],
+        "contentReviewDigest": "5041c377116988ac5906d4147af957b744742e28b9a3e44dd9489527648d62e3"
+      },
+      {
+        "unitNumber": 19,
+        "changedFields": [
+          "repositorySourceDigest",
+          "packContentReviewDigest"
+        ],
+        "contentReviewDigest": "5bec5c89d70f5928b6d7e03ab4ca35ad1b226451abe832e915b0f6f72f0e7907"
+      },
+      {
+        "unitNumber": 20,
+        "changedFields": [
+          "repositorySourceDigest",
+          "packContentReviewDigest"
+        ],
+        "contentReviewDigest": "9238893adafd8d2001561e254f2471a7f23067f1979827873b970ed467768688"
+      },
+      {
+        "unitNumber": 21,
+        "changedFields": [
+          "repositorySourceDigest",
+          "packContentReviewDigest"
+        ],
+        "contentReviewDigest": "a79e2d859adfc1b99d562db212fae357042975353a3a3fbc9c33ab4876b165e7"
+      },
+      {
+        "unitNumber": 22,
+        "changedFields": [
+          "repositorySourceDigest",
+          "packContentReviewDigest"
+        ],
+        "contentReviewDigest": "279be738a2fa1f3e7dd5ae766124c9d438edef4bf19d597e622615eea719a184"
+      },
+      {
+        "unitNumber": 23,
+        "changedFields": [
+          "repositorySourceDigest",
+          "packContentReviewDigest"
+        ],
+        "contentReviewDigest": "42a67675479cb835e6c429ffc76c0120c00ea389baed9e7e0cbc91f593b564e4"
+      },
+      {
+        "unitNumber": 24,
+        "changedFields": [
+          "repositorySourceDigest",
+          "packContentReviewDigest"
+        ],
+        "contentReviewDigest": "0aadf91b5482f1036b5f57888de2744d1339cd7316f5725973f98a0fde693d17"
+      },
+      {
+        "unitNumber": 25,
+        "changedFields": [
+          "repositorySourceDigest",
+          "packContentReviewDigest"
+        ],
+        "contentReviewDigest": "317881a1a5a77489ce03b939b567642725274c10c534e14be68007b199cde98d"
+      },
+      {
+        "unitNumber": 26,
+        "changedFields": [
+          "repositorySourceDigest",
+          "packContentReviewDigest"
+        ],
+        "contentReviewDigest": "7870405b2810239e5e744706b0376877191d00afc337ac30e7a2249ad97fddab"
+      },
+      {
+        "unitNumber": 27,
+        "changedFields": [
+          "repositorySourceDigest",
+          "packContentReviewDigest"
+        ],
+        "contentReviewDigest": "fb8a23246226a841df660cae2517b139cba2ff51ef5939792268d2c6cb50bc2e"
+      },
+      {
+        "unitNumber": 28,
+        "changedFields": [
+          "repositorySourceDigest",
+          "packContentReviewDigest"
+        ],
+        "contentReviewDigest": "decfe657342b98c1c35277cd88e1a3e125df1233549f01872af8eae7c8fcbd82"
+      },
+      {
+        "unitNumber": 29,
+        "changedFields": [
+          "repositorySourceDigest",
+          "packContentReviewDigest"
+        ],
+        "contentReviewDigest": "454026c94347703fa15b6e305bf4319edcc1542e6a9eb786709186b435753501"
+      },
+      {
+        "unitNumber": 30,
+        "changedFields": [
+          "repositorySourceDigest",
+          "packContentReviewDigest"
+        ],
+        "contentReviewDigest": "9e453a1050dc3a25959271b300c68c64bb293ba9f34a40a9d76aaf3e0ce3f02e"
+      }
+    ],
+    "oldUnit11Digest": "2a0b74e3722f0f0a1c2e0041c73c6654211eee81c918e44c1b23929fcf24672b",
+    "newUnit11Digest": "4e3f32d66de93776e545f388a06a6ab514bc4ca050a425608f879de8ac4e9d40",
+    "canonicalPins": 71,
+    "unit11ChangedRecord": "Only unit-11-advancement contentHash;all other record fields and records unchanged",
+    "bindingHelperCorrection": "Local helper corrected actual UNIT_n_REVIEW_MANIFEST.json path and five affected fixtures (Units1115MappingGapTest preserves only Units1\u201310 and is unchanged). Unit11 manifest also changes the advancement record hash, verified as its only record difference. No test assertions or historical records weakened. Initial46 passed;final verification executes corrected current inputs.",
+    "runtimeTransition": "Environment briefly reported starting/ready during correction run. Original tool session handle became unavailable;existing runner/workers,exact HEAD and log remained intact. Monitored persisted exit file;no duplicate Gradle run started."
+  },
+  "priorRuns": [
+    {
+      "stage": "Initial uncommitted46",
+      "counts": {
+        "tests": 46,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "context": "INITIAL_CONTEXT.json",
+      "log": "INITIAL_RUN.txt",
+      "laterChanges": "Integration148 executes selected app/test inputs;dossier-only correction rechecks8 affected binding methods. No initial assertions or app fields weakened.",
+      "runnerExitCode": 0
+    },
+    {
+      "stage": "Integration148 with stale dossier binding",
+      "counts": {
+        "tests": 148,
+        "failures": 1,
+        "errors": 0,
+        "skipped": 0
+      },
+      "passed": 147,
+      "testedCommit": "272f8505ba0f464e8e02197a953531cd06538d5f",
+      "runnerExitCode": 1,
+      "context": "INTEGRATION_VERIFICATION.json",
+      "log": "INTEGRATION_RUN.txt",
+      "failureCorrection": "DOSSIER_BINDING_CORRECTION.json;no app/test assertions changed"
+    }
+  ],
+  "externalInitFiles": [
+    {
+      "path": "/workspace/setup/cloud-validation.gradle",
+      "sha256": "21c6a0ee2e97cf83c472513ac31c3d2d456e461185384e9b5e58c0fed298d123",
+      "contents": "allprojects {\n    tasks.withType(Test).configureEach {\n        systemProperty 'user.home', '/workspace/java-user-home'\n        systemProperty 'maven.repo.local', '/workspace/.m2/repository' \n        // These screenshot exporters overwrite retained evidence and write to /opt/cursor.\n        exclude '**/VisualReviewCaptureTest*', '**/Units35ChunkCaptureTest*', '**/Units610ChunkCaptureTest*', '**/Units1115GapCaptureTest*'\n        systemProperty 'robolectric.dependency.repo.url', 'https://repo.maven.apache.org/maven2'\n        ['https.proxyHost','https.proxyPort','http.proxyHost','http.proxyPort','http.nonProxyHosts','javax.net.ssl.trustStore'].each { name ->\n            def value = System.getProperty(name)\n            if (value != null) systemProperty name, value\n        }\n    }\n}\n"
+    },
+    {
+      "path": "/workspace/setup/parallel-tests.gradle",
+      "sha256": "2366eb867708f83db10b39080abff1b45d2e347bab15ce2ec1c95c3d31cf7ff3",
+      "contents": "allprojects {\n    tasks.withType(Test).configureEach {\n        maxParallelForks = 4\n        maxHeapSize = '1g'\n    }\n}\n"
+    }
+  ],
+  "finalSourceInputsUnchangedAfterTesting": true,
+  "startupEnvironmentScript": {
+    "path": "/workspace/setup/android-env.sh",
+    "sha256": "7b43d8cc2eb67096aa87a50863a7fcf3f91fa644ceed87fbd2f7b377b35a1182",
+    "note": "Sourced by verify.sh;setup instructions saved separately in environment settings."
+  },
+  "inputTrees": {
+    "app/src/main": "b0f709de0a9e5b66b0d5c3e743eed27599942048",
+    "app/src/test": "86d9419405b7e367456b0cf1ba0395df6831c353",
+    "app/schemas": "bf24044fda8ca836d62e24e94c537eea0aec8e83",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "review": "8771c38ec391a9d17d61019e31735524e839591f",
+    "release": "051d55bfe602d320f2360b6aefa0efe66fd308e2",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "audit/curriculum-readiness": "1740c4fb2b8a461bfd95e48217ddfa819df52522",
+    "audit/owner-governance": "5236fee5cf2bb4827a9e298e4cb9880522f11f30"
+  },
+  "selectedTestSources": [
+    {
+      "path": "app/src/test/java/dev/russiancompanion/release/ReleaseSourceDigestTest.kt",
+      "sha256": "e4c1dd9ac6403d4255233b32737c2c45e457352b498cc24a4871207fab65e762"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/BatchECapabilityResearchTest.kt",
+      "sha256": "b016dc3b1eba3ec982c9862ee1a17b20ea6e566b414c220cc2f463fa80609b52"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Units2630SourceIntakeTest.kt",
+      "sha256": "9c7e77fce9d92e05263b3d98842563098bd7ba79d9b0c251a8b211788a7e981e"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/V2RebuildTest.kt",
+      "sha256": "26a81f9f80f926167c18f542127b7d776122233be04cc9d405a27fc36c918c3d"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/audit/CurriculumReadinessReconciliationTest.kt",
+      "sha256": "687dd1b1712f614b5ea6d7b59d210198e285e55950abb108192e7232bdd6dc23"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/audit/GapClosureDossierTest.kt",
+      "sha256": "514344762bf893fbeba9ddfe0dc94f8e6bb2d8435faf5affacd939ac5143fd08"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/audit/OwnerGovernanceDecisionTest.kt",
+      "sha256": "f8f6d6634adbd9b1a058dc5c514b2edf9d3508e6469d4b3aadcefea4a8ebda9d"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/review/UnitReviewPipelineTest.kt",
+      "sha256": "930dc6ce893d75377ce5399fcde093ad0344c63e295fd4f4eda3fac9ccaf3666"
+    }
+  ],
+  "generationCommands": [
+    {
+      "mode": "reviews",
+      "command": "./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/checkpoint-tools.gradle -Dcheckpoint.mode=reviews renderCheckpointArtifacts --max-workers=4 --console=plain",
+      "log": "REVIEW_REFRESH.txt"
+    },
+    {
+      "mode": "readiness",
+      "command": "./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/checkpoint-tools.gradle -Dcheckpoint.mode=readiness renderCheckpointArtifacts --max-workers=4 --console=plain",
+      "log": "READINESS_REFRESH.txt"
+    }
+  ],
+  "generatedWorksheetWhitespace": "Trailing tab-separated empty reviewer fields are intentional generated output;not normalized by diff-check.",
+  "focusedScopeSelection": {
+    "priorFocusedMethods": 138,
+    "currentFocusedMethods": 148,
+    "currentClasses": 28,
+    "currentSelectors": 33,
+    "newUnit11Methods": 7,
+    "additionallySelectedExistingUnit11Methods": 3,
+    "removedFromPriorSelectors": [],
+    "notSelectedEarlierSemanticMethods": {
+      "IndeclinableCorrectionTest": 4,
+      "Unit6AnimacyTransferTest": 7,
+      "Unit7FeedbackCorrectionTest": 3,
+      "Unit8PluralInstructionTest": 6,
+      "Unit8AgreementTransferTest": 9,
+      "Unit9QuantityRuleCorrectionTest": 5,
+      "Unit9NumberFeedbackCorrectionTest": 3,
+      "Unit9CompositionFeedbackCorrectionTest": 3,
+      "Unit9ReinforcementReviewTest": 4
+    },
+    "sourceHashes": {
+      "app/src/test/java/dev/russiancompanion/v2/IndeclinableCorrectionTest.kt": "26dc556ee71d43a89d76ff28ee4762e627bcf79b94e02c554cce6978c94d507f",
+      "app/src/test/java/dev/russiancompanion/v2/Unit6AnimacyTransferTest.kt": "1f13c09fca210a73f094d80a2dffe5fab383c4d501c57f2af2742e497a4becda",
+      "app/src/test/java/dev/russiancompanion/v2/Unit7FeedbackCorrectionTest.kt": "eb7a618fd7b8694434526cea1fc8948e88b02b656ec6db89f387595460988dbc",
+      "app/src/test/java/dev/russiancompanion/v2/Unit8AgreementTransferTest.kt": "2e4f428710aae35ff7880d019b722f978f85553a46a1de9754927e65e84879c1",
+      "app/src/test/java/dev/russiancompanion/v2/Unit8PluralInstructionTest.kt": "68b42964a500d14add17d0f23fdd1843608c6708cd24d2363a9320a58f7ff11a",
+      "app/src/test/java/dev/russiancompanion/v2/Unit9CompositionFeedbackCorrectionTest.kt": "7b6df73f4da486dcae7a881affe232590244980cb12a585b290534aecc363e9a",
+      "app/src/test/java/dev/russiancompanion/v2/Unit9NumberFeedbackCorrectionTest.kt": "64b22f197b3c42aa13091b90217aa2b04e34b5c2f02e1f4cb517c9c3909e82cd",
+      "app/src/test/java/dev/russiancompanion/v2/Unit9QuantityRuleCorrectionTest.kt": "810a294db3b39b680d451926bf65e05a70107f28dbd7f6dc3c858b1267e9f861",
+      "app/src/test/java/dev/russiancompanion/v2/Unit9ReinforcementReviewTest.kt": "b797c260c6f948af146470872c6eff029455044555c931e4b762c82254caa0d6"
+    },
+    "reason": "Retain all prior138 focused methods;add Unit11 gate and ordinary feedback. Earlier44 semantic methods remain unchanged/enabled and not selected again. Screenshot-exporter exclusions are separate. NOT complete suite.",
+    "appliesTo": "Original148-method integration, not the corrected8-method run",
+    "integrationOutcome": {
+      "tests": 148,
+      "passed": 147,
+      "failures": 1,
+      "errors": 0,
+      "skipped": 0,
+      "testedCommit": "272f8505ba0f464e8e02197a953531cd06538d5f"
+    },
+    "dossierOnlyCorrectionOutcome": {
+      "tests": 8,
+      "passed": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "testedCommit": "56fd4b0f4e254226a5546fdf348846d883c3ce37",
+      "script": "verify-bindings.sh"
+    },
+    "uniquePassingMethodEvidenceAcrossScopes": 148,
+    "fresh148MethodRunAtCorrectedCommit": false
+  },
+  "next": "Inspect actual Unit11/prior complete native/rule/source/rights/teaching/check context for Unit12;preserve earlier policy identities and exact pre-policy history;no empty gates or modality inference. Wider pool/recent scheduling remains outstanding.",
+  "applicationIntegrationTestedCommit": "272f8505ba0f464e8e02197a953531cd06538d5f",
+  "uniquePassingMethodEvidenceAcrossIntegrationAndCorrection": 148,
+  "fresh148MethodRunAtCorrectedCommit": false,
+  "files": [
+    {
+      "path": "DOSSIER_BINDING_CORRECTION.json",
+      "sha256": "90873736d8bed880f4c384f0cf0e545daa453ccdf781e2b82130f26a5d7e5260",
+      "bytes": 995
+    },
+    {
+      "path": "FINAL_LINT.xml",
+      "sha256": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6",
+      "bytes": 31476
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.release.ReleaseSourceDigestTest.xml",
+      "sha256": "f29658211b38c2836b597cfe88fda704af2d4c9fd19677b9115c125999005184",
+      "bytes": 500
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.BatchECapabilityResearchTest.xml",
+      "sha256": "d697be5802dd946e5368c495ed84f73b312e6947fce5442d838082419b4764f5",
+      "bytes": 485
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.Units2630SourceIntakeTest.xml",
+      "sha256": "4ca9676f512b3d6948f9ac32654161620513f8edae7cf2685c72ea16ea5c8616",
+      "bytes": 484
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.V2RebuildTest.xml",
+      "sha256": "dfa6ff000bf9a1a4f3f83853d39b8502e965ec5ba5384987b4a26e32fec436e6",
+      "bytes": 472
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest.xml",
+      "sha256": "66a4ef47524410130585b5b2ace7ca0b3cbda12b13ed447a4cf4ff76774f74b0",
+      "bytes": 525
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.audit.GapClosureDossierTest.xml",
+      "sha256": "251b8c896748e7a9195e11cfcc8c6ad50166be09b91f7c8335f9380d4c3ed9ab",
+      "bytes": 494
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest.xml",
+      "sha256": "716ec250ea9fb17a80d99a886814ff4c67bf23cb37772cfdb45e34ae83af4ddd",
+      "bytes": 504
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.review.UnitReviewPipelineTest.xml",
+      "sha256": "5bf13dce62a9ae17a7a87812e8b6d405a7c226811ca6009281e7997e1061021c",
+      "bytes": 484
+    },
+    {
+      "path": "FINAL_RUN.txt",
+      "sha256": "bc7ad550cc7046be802f995b7c0e494a484a55c681c2e23276b018a48ae85fac",
+      "bytes": 3785
+    },
+    {
+      "path": "IMPLEMENTATION_SCOPE.md",
+      "sha256": "1e19c5a0610f71c7d951af7e9309396ababf61641eeb9b5cd98916f846bbeaa6",
+      "bytes": 1800
+    },
+    {
+      "path": "INITIAL_CONTEXT.json",
+      "sha256": "674ec4ffe6ea55ef2dd1d2098994931ef14268621050b8e86ee60e5c1a0362fa",
+      "bytes": 161529
+    },
+    {
+      "path": "INITIAL_RESULTS/TEST-dev.russiancompanion.v2.CumulativeReviewStorageTest.xml",
+      "sha256": "eb4a40fb18d4cc3a027d2034abb7908376acfff55197e6d64b60e53beca4e540",
+      "bytes": 297713
+    },
+    {
+      "path": "INITIAL_RESULTS/TEST-dev.russiancompanion.v2.Unit10FeedbackCorrectionTest.xml",
+      "sha256": "3cc967931fcfc09ee45d57dc53b8103e7fb5c77a2c324bb478dbdeef915d5e6a",
+      "bytes": 788
+    },
+    {
+      "path": "INITIAL_RESULTS/TEST-dev.russiancompanion.v2.Unit10IndependentReinforcementTest.xml",
+      "sha256": "63817c28a2c4f0cd0bab8868c329ef35441a3048e122c6720542da3b59389fd4",
+      "bytes": 188368
+    },
+    {
+      "path": "INITIAL_RESULTS/TEST-dev.russiancompanion.v2.Unit10ReinforcementReviewTest.xml",
+      "sha256": "0377ecdc26e95e75dfe10695872275bc203c0cb0448e4e9401896afdbc19e534",
+      "bytes": 7267
+    },
+    {
+      "path": "INITIAL_RESULTS/TEST-dev.russiancompanion.v2.Unit11CumulativeReviewTest.xml",
+      "sha256": "b342f3653901f4ff45bc97bd66fd41fb76f96fc483f6b19bdb40d6b34c02e8fc",
+      "bytes": 36482
+    },
+    {
+      "path": "INITIAL_RESULTS/TEST-dev.russiancompanion.v2.Unit11FeedbackCorrectionTest.xml",
+      "sha256": "40d3eeff7b09c975aee289d861fa49143de09cd2b5195887f9d17c872e0cb169",
+      "bytes": 1130
+    },
+    {
+      "path": "INITIAL_RESULTS/TEST-dev.russiancompanion.v2.Unit4NominativeRoleTest.xml",
+      "sha256": "f699a3115bde07fc6230076548f97cd6211a5bd4559f680650d91a57f5d3dcb5",
+      "bytes": 140602
+    },
+    {
+      "path": "INITIAL_RUN.txt",
+      "sha256": "9809b9706d59a0de5c58df730eb2e3512ea41a6b0f0dc2911a23c8d13153e50e",
+      "bytes": 3594
+    },
+    {
+      "path": "INTEGRATION_RESULTS/TEST-dev.russiancompanion.data.local.DatabaseMigrationTest.xml",
+      "sha256": "7620d995eff0ef42952d19e691262b9c109aa85139344677d33cbdb0bf45e1d5",
+      "bytes": 1431
+    },
+    {
+      "path": "INTEGRATION_RESULTS/TEST-dev.russiancompanion.release.ReleaseSourceDigestTest.xml",
+      "sha256": "f9f748fed900ad621e18303d5d7c58b71da90c546944a939fdac045b8f68f58b",
+      "bytes": 500
+    },
+    {
+      "path": "INTEGRATION_RESULTS/TEST-dev.russiancompanion.v2.BackupLicenseTest.xml",
+      "sha256": "fd2a6dbebf86a46634e656ba784bdfb48f211cdc97170c4237c927c03d2ad550",
+      "bytes": 10381
+    },
+    {
+      "path": "INTEGRATION_RESULTS/TEST-dev.russiancompanion.v2.BackupSnapshotCorrectionTest.xml",
+      "sha256": "ce133c8690d0de61f1f39637ee496bc602e012fd1ba5ffbaeedf5bdf14c85a2c",
+      "bytes": 505
+    },
+    {
+      "path": "INTEGRATION_RESULTS/TEST-dev.russiancompanion.v2.BatchECapabilityResearchTest.xml",
+      "sha256": "14da438b65ec2e53580b69790397fb416eb791e1a89fe880567d18e10b329967",
+      "bytes": 485
+    },
+    {
+      "path": "INTEGRATION_RESULTS/TEST-dev.russiancompanion.v2.CumulativeReviewGateTest.xml",
+      "sha256": "63db62425533ea937b9a8ccdaa8feff29bb5ee51e1a4c35e941bd033869a7ee6",
+      "bytes": 45818
+    },
+    {
+      "path": "INTEGRATION_RESULTS/TEST-dev.russiancompanion.v2.CumulativeReviewStorageTest.xml",
+      "sha256": "43b6f11cfdf9e832886981cee0440afba0c90f7fcabbbd6450bd180e6c307bd7",
+      "bytes": 4805
+    },
+    {
+      "path": "INTEGRATION_RESULTS/TEST-dev.russiancompanion.v2.RuntimeCorrectionTest.xml",
+      "sha256": "fc2e67d87047e37ee4a1daf41626e1a0d0e3a506b0acfa4dd5bf905393964351",
+      "bytes": 5377
+    },
+    {
+      "path": "INTEGRATION_RESULTS/TEST-dev.russiancompanion.v2.Unit10CumulativeReviewTest.xml",
+      "sha256": "a2e801b8da77a762aed01919af0980f6d1b32df5a0e34021ec38f5dc86faf8bd",
+      "bytes": 93523
+    },
+    {
+      "path": "INTEGRATION_RESULTS/TEST-dev.russiancompanion.v2.Unit10FeedbackCorrectionTest.xml",
+      "sha256": "b589516b50de248bc1e172076b3f5f4641c74593c3da4e0cdf7b1f7ae338bb22",
+      "bytes": 1757
+    },
+    {
+      "path": "INTEGRATION_RESULTS/TEST-dev.russiancompanion.v2.Unit10IndependentReinforcementTest.xml",
+      "sha256": "f3f8b12b54a4b006482358d414e454a26d55f23ce4afec110d9f5c359e47dd7e",
+      "bytes": 1964
+    },
+    {
+      "path": "INTEGRATION_RESULTS/TEST-dev.russiancompanion.v2.Unit10ReinforcementReviewTest.xml",
+      "sha256": "cd22db01d03f633f6556f5b6f3a1c0c1e636e17486aeeced803379647fca41a3",
+      "bytes": 13517
+    },
+    {
+      "path": "INTEGRATION_RESULTS/TEST-dev.russiancompanion.v2.Unit11CumulativeReviewTest.xml",
+      "sha256": "810883af9d94d32f8ff4bc2c9e6000fcd0d347edc06f08ecd08023c594f4239a",
+      "bytes": 3342
+    },
+    {
+      "path": "INTEGRATION_RESULTS/TEST-dev.russiancompanion.v2.Unit11FeedbackCorrectionTest.xml",
+      "sha256": "648857bdf785c658f9c6f16e5ed1eab5411fa7be091784a4a97654a5c949f9f5",
+      "bytes": 1326
+    },
+    {
+      "path": "INTEGRATION_RESULTS/TEST-dev.russiancompanion.v2.Unit4CumulativeReviewTest.xml",
+      "sha256": "7843e3ace4880cf42f05055f3214ae7e9a10a6276c15c718c49b36a323c0099f",
+      "bytes": 3267
+    },
+    {
+      "path": "INTEGRATION_RESULTS/TEST-dev.russiancompanion.v2.Unit4NominativeRoleTest.xml",
+      "sha256": "0ad9100f8f9f67808c2b645814461b73a6dbafcfb5c8fe758e378b267b4c94b4",
+      "bytes": 223546
+    },
+    {
+      "path": "INTEGRATION_RESULTS/TEST-dev.russiancompanion.v2.Unit5CumulativeReviewTest.xml",
+      "sha256": "a5d11ea3ec6c9022865c09a9d8c9a9542bbb9ff53cf8c9dd5fb232b42e1526b7",
+      "bytes": 3417
+    },
+    {
+      "path": "INTEGRATION_RESULTS/TEST-dev.russiancompanion.v2.Unit6CumulativeReviewTest.xml",
+      "sha256": "91eb5a98ca19ff4f1851e285a260f6030c91a65b7d60c6baca229facda50a433",
+      "bytes": 3275
+    },
+    {
+      "path": "INTEGRATION_RESULTS/TEST-dev.russiancompanion.v2.Unit7CumulativeReviewTest.xml",
+      "sha256": "30ce0579e74d8384016781bc1b550100391eb3319b4e49e0258fb9bd19792a0f",
+      "bytes": 3323
+    },
+    {
+      "path": "INTEGRATION_RESULTS/TEST-dev.russiancompanion.v2.Unit8CumulativeReviewTest.xml",
+      "sha256": "50824aa0ed59206dea6cfb679efb708181e2a2cfc270ecb2079318631386d454",
+      "bytes": 2258
+    },
+    {
+      "path": "INTEGRATION_RESULTS/TEST-dev.russiancompanion.v2.Unit9AgreementTransferTest.xml",
+      "sha256": "a6e03337620810b79066dcec8a15b3247e5831c332bd58b0d709f41c6d0833df",
+      "bytes": 3958
+    },
+    {
+      "path": "INTEGRATION_RESULTS/TEST-dev.russiancompanion.v2.Unit9CumulativeReviewTest.xml",
+      "sha256": "5e05b700cde93bfb22d9fc26a26359eca65069cbcd98640018ad706e5a95fe1c",
+      "bytes": 3872
+    },
+    {
+      "path": "INTEGRATION_RESULTS/TEST-dev.russiancompanion.v2.Units2630SourceIntakeTest.xml",
+      "sha256": "f7fe1a0f0fe5a071228c2e17057dc2a5bff8ed999733af4e51d12c83a2762559",
+      "bytes": 484
+    },
+    {
+      "path": "INTEGRATION_RESULTS/TEST-dev.russiancompanion.v2.V2RebuildTest.xml",
+      "sha256": "152a94ca9238609b5d8a2960643ecd9ea58edecb923c3fb2761abbf7a33b853f",
+      "bytes": 519
+    },
+    {
+      "path": "INTEGRATION_RESULTS/TEST-dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest.xml",
+      "sha256": "c6c26e7f1006e397ca0c83cc2f4552bbabcd24da86b6ecce93c898d71ebf1d27",
+      "bytes": 964
+    },
+    {
+      "path": "INTEGRATION_RESULTS/TEST-dev.russiancompanion.v2.audit.GapClosureDossierTest.xml",
+      "sha256": "4b0a7b13fd134b4c9be36fc813fa5bad9da16da1a1757d713d6fdeaaa3544c72",
+      "bytes": 4686
+    },
+    {
+      "path": "INTEGRATION_RESULTS/TEST-dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest.xml",
+      "sha256": "36a23a72f44ae94f51693e9959b07152781219f5749c83b7b06574952f52ea94",
+      "bytes": 504
+    },
+    {
+      "path": "INTEGRATION_RESULTS/TEST-dev.russiancompanion.v2.review.UnitReviewPipelineTest.xml",
+      "sha256": "0cfc78e86df661c10f9ed1e5b984a535b2ee2bec4827308fd87dbd2d75b38e93",
+      "bytes": 482
+    },
+    {
+      "path": "INTEGRATION_RUN.txt",
+      "sha256": "1605b5f48472727434313449fb438ac1412d9042bcfd3ca284a42da5bb24ddfc",
+      "bytes": 4695
+    },
+    {
+      "path": "INTEGRATION_VERIFICATION.json",
+      "sha256": "b6ef250790c2452aabb8d8b1c707392e963c10788844bd143bde71ca7afdc11b",
+      "bytes": 44059
+    },
+    {
+      "path": "READINESS_REFRESH.txt",
+      "sha256": "d041e2e316d6365165eeabb67807268f81c724204f36cd5f7a772eec7f3d70a6",
+      "bytes": 2514
+    },
+    {
+      "path": "REVIEW_REFRESH.txt",
+      "sha256": "8484503598dfce8fdb95f0c14c7fb0d87fab3221f70d3442e995a0399d83f800",
+      "bytes": 3240
+    },
+    {
+      "path": "SOURCE_REVIEW.md",
+      "sha256": "ed086f5888cc260584ab755d53f6bf0682325fc2e8834b2c0dc2f4b74a31a74d",
+      "bytes": 5314
+    },
+    {
+      "path": "UNIT11_POLICY_ACTIVATION.json",
+      "sha256": "42569be2e1955ada7e10289e1c82b2dbf0d6991845baa3524882d022025cfea9",
+      "bytes": 9838
+    },
+    {
+      "path": "VERIFICATION_SCOPE.json",
+      "sha256": "5ad07707c6dc0b6666c20264bf865fe8a41fc38d52201e44d9a2641f89a03d6c",
+      "bytes": 2820
+    },
+    {
+      "path": "verify-bindings.sh",
+      "sha256": "c89561c14d638d2da7656ec6971a8e494cfc7c9587db2545a89aab3f3d052c5c",
+      "bytes": 1057
+    },
+    {
+      "path": "verify.sh",
+      "sha256": "2136322101575cb4e26951d2482b2826c4b70a387596e45dd321e750212d604a",
+      "bytes": 2292
+    }
+  ]
+}
