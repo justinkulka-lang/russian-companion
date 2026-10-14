@@ -484,9 +484,10 @@ class ContentAuditCorrectionTest {
             completedStepIds = requiredInstructionSteps(unit).map { it.id }.toSet(), correctItemIds = correct,
             bookAttestedUnits = setOf(11), completedUnitNumbers = emptySet(),
         )
-        val decision = advancementDecision(pack, unit, learner)
-        assertTrue(decision.remaining.joinToString("\n"), decision.allowed)
-        assertFalse(advancementDecision(pack, unit, learner.copy(correctItemIds = correct - "u11-i-past-aspect-1")).allowed)
+        val ordinary = dev.russiancompanion.v2.curriculum.ordinaryUnitRequirements(pack, unit, learner)
+        assertTrue(ordinary.remaining.joinToString("\n"), ordinary.allowed)
+        assertFalse(advancementDecision(pack, unit, learner).allowed) // Its separate cumulative review is still required.
+        assertFalse(dev.russiancompanion.v2.curriculum.ordinaryUnitRequirements(pack, unit, learner.copy(correctItemIds = correct - "u11-i-past-aspect-1")).allowed)
         assertTrue(V2Validator.validate(pack).errors.joinToString("\n"), V2Validator.validate(pack).ok)
     }
 
@@ -508,7 +509,7 @@ class ContentAuditCorrectionTest {
             val objective = pack.unit(number)!!.objectives.single {
                 teach.id in it.instructionStepIds && remediation.id in it.remediationStepIds
             }
-            if ((number == 21 && topic == "purpose") ||
+            if ((number == 11 && topic == "past-aspect") || (number == 28 && topic in listOf("imperfective-adverb", "perfective-adverb")) || (number == 21 && topic == "purpose") ||
                 (number == 24 && topic in listOf("stand-ins", "word-order-contrast")) ||
                 (number == 26 && topic == "letter-writing")) {
                 val session = pack.unit(number)!!.sessions.single { it.steps.any { step -> step.id == teach.id } }

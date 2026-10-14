@@ -92,7 +92,7 @@ class Unit11CumulativeReviewTest {
         }
     }
 
-    @Test fun schema11OrdinaryLegacyRowsWithFalseActivationMarkerSurviveReopenWithoutSyntheticReview() {
+    @Test fun schema11LegacyRowsRemainStoredButChangedAgreementInstructionRequiresRepair() {
         val old = oldPack("79dfaa34ae54afb3aa1ae595919da45c1c6aa0dc")
         val p = pack(); val name = "unit11-old-${System.nanoTime()}.db"
         try {
@@ -103,14 +103,23 @@ class Unit11CumulativeReviewTest {
                 s.v2SaveProfile(s.v2Profile().copy(currentUnitNumber = 12))
             }
             LocalStore.openNamed(context(), name).use { s ->
-                assertEquals(setOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11), currentCompletedUnitNumbers(p, s.v2LearnerView()))
-                assertTrue(canOpenUnit(unitState(p, p.unit(12)!!, s.v2LearnerView())))
+                assertEquals(setOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10), currentCompletedUnitNumbers(p, s.v2LearnerView()))
+                assertFalse(canOpenUnit(unitState(p, p.unit(12)!!, s.v2LearnerView())))
                 assertFalse(s.cumulativeReviewHistory().first.any { it.targetUnit == 11 })
                 assertFalse(advancementDecision(p, p.unit(11)!!, s.v2LearnerView()).allowed)
-                val altered = p.copy(items = p.items.map { if (it.id == "u11-i-reflexive-2") it.copy(feedback = it.feedback + " changed") else it })
-                assertFalse(11 in currentCompletedUnitNumbers(altered, s.v2LearnerView()))
+                assertTrue(s.governedLearnerDocument().unitCompletions.any { it.unitNumber == 11 })
+                val oldPolicyPack = oldPack("ea3ef13a866edab83c024a317a52fc750e359787")
+                val priorReview = createCumulativeReviewAssignment(oldPolicyPack, s.v2LearnerView(), 11, "same-prior-policy", 0)!!
+                assertEquals(priorReview, createCumulativeReviewAssignment(p, s.v2LearnerView(), 11, "same-prior-policy", 0))
+                val previousAttempts = s.v2Attempts().size
+                ordinary(p, s, 11) // Complete repaired teaching and fresh current checks.
                 val before = s.governedLearnerFingerprint(); val a = open(p, s)
                 assertEquals(11, a.targetUnit); assertNotEquals(before, s.governedLearnerFingerprint())
+                answer(p, s, a, 0); answer(p, s, a, 1); assertTrue(advance(p, s))
+                assertTrue(s.v2Attempts().size > previousAttempts)
+                assertTrue(11 in currentCompletedUnitNumbers(p, s.v2LearnerView()))
+                val altered = p.copy(items = p.items.map { if (it.id == "u11-i-reflexive-2") it.copy(feedback = it.feedback + " changed") else it })
+                assertFalse(11 in currentCompletedUnitNumbers(altered, s.v2LearnerView()))
             }
             ready(p).use { fresh ->
                 fresh.v2CompleteUnit(11, "raw-current-source")
@@ -123,7 +132,7 @@ class Unit11CumulativeReviewTest {
         } finally { context().deleteDatabase(name) }
     }
 
-    @Test fun oldFormatOneAndTwoRestoreExactPrePolicyWorkWithoutAnyNewReviewCredit() {
+    @Test fun oldFormatOneAndTwoKeepHistoricalWorkWithoutCreditingChangedUnit11Instruction() {
         val old = oldPack("20a227817562e3a8645488fd52db2e7589713a7a"); val p = pack()
         LocalStore.openInMemory(context()).use { source ->
             for (n in 1..11) { ordinary(old, source, n); source.v2CompleteUnit(n, "historical") }
@@ -137,7 +146,7 @@ class Unit11CumulativeReviewTest {
                     val read = readGovernedBackup(bytes.toByteArray().inputStream(), "dev.russiancompanion", p.packId, p.packVersion, temp) as BackupReadResult.Valid
                     LocalStore.openInMemory(context()).use { target ->
                         assertEquals(GovernedReplaceOutcome.REPLACED, target.replaceGovernedLearner(read.backup.document, emptyList()))
-                        assertEquals(setOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11), currentCompletedUnitNumbers(p, target.v2LearnerView()))
+                        assertEquals(setOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10), currentCompletedUnitNumbers(p, target.v2LearnerView()))
                         assertTrue(target.cumulativeReviewHistory().first.isEmpty()); assertTrue(target.cumulativeReviewHistory().second.isEmpty())
                         assertFalse(cumulativeReviewComplete(p, target.v2LearnerView(), 11))
                     }

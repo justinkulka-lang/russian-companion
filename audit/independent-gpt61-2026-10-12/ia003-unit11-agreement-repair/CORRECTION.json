@@ -1,0 +1,206 @@
+{
+  "baselineCommit": "ea3ef13a866edab83c024a317a52fc750e359787",
+  "unitNumber": 11,
+  "sessionId": "u11-s-past-aspect",
+  "beforeSession": {
+    "id": "u11-s-past-aspect",
+    "title": "Choose past-tense gender agreement",
+    "estimatedMinutes": 12,
+    "objectiveIds": [
+      "obj-u11-past-aspect"
+    ],
+    "steps": [
+      {
+        "id": "u11-st-teach-past-aspect-1",
+        "kind": "TEACH",
+        "title": "Admitted lines",
+        "body": "In the singular, a past-tense verb agrees with its subject in gender. In this recorded set, прочита́л is masculine, прочита́ла feminine, and прочита́ло neuter. Compare the endings while keeping the same verb.",
+        "referenceIds": [
+          "ref-u1115-attribution"
+        ],
+        "exampleIds": [
+          "ex-or-u11-past-aspect-2",
+          "ex-or-u11-past-aspect-3",
+          "ex-or-u11-past-aspect-4"
+        ]
+      },
+      {
+        "id": "u11-st-guided-past-aspect-1",
+        "kind": "GUIDED",
+        "title": "Guided practice",
+        "body": "Choose the admitted record. The feedback states the frozen field.",
+        "itemIds": [
+          "u11-g-past-aspect-0"
+        ],
+        "remediationStepId": "u11-st-rem-past-aspect"
+      },
+      {
+        "id": "u11-st-teach-past-aspect-2",
+        "kind": "TEACH",
+        "title": "Admitted instruction",
+        "body": "Use the gender requested in the question. The pronoun I does not select one past-tense gender for every speaker. Compare the entire recorded forms: прочита́л, прочита́ла and прочита́ло. These are masculine, feminine and neuter singular forms of the same verb, respectively.",
+        "referenceIds": [
+          "ref-u1115-attribution"
+        ]
+      },
+      {
+        "id": "u11-st-teach-past-aspect-3",
+        "kind": "TEACH",
+        "title": "Admitted lines",
+        "body": "The recorded feminine singular past form is прочита́ла. Compare its ending with the masculine прочита́л and neuter прочита́ло forms of the same verb.",
+        "referenceIds": [
+          "ref-u1115-attribution"
+        ],
+        "exampleIds": [
+          "ex-or-u11-past-aspect-2",
+          "ex-or-u11-past-aspect-3"
+        ]
+      },
+      {
+        "id": "u11-st-teach-past-aspect-4",
+        "kind": "TEACH",
+        "title": "Admitted lines",
+        "body": "The recorded neuter singular past form is прочита́ло. Compare its ending with the masculine прочита́л and feminine прочита́ла forms of the same verb.",
+        "referenceIds": [
+          "ref-u1115-attribution"
+        ],
+        "exampleIds": [
+          "ex-or-u11-past-aspect-4"
+        ]
+      },
+      {
+        "id": "u11-st-rem-past-aspect",
+        "kind": "REMEDIATE",
+        "title": "Remediation",
+        "body": "Use the gender requested in the question. The pronoun I does not select one past-tense gender for every speaker. Compare the entire recorded forms: прочита́л, прочита́ла and прочита́ло. These are masculine, feminine and neuter singular forms of the same verb, respectively.",
+        "exampleIds": [
+          "ex-u11-past-aspect-0",
+          "ex-u11-past-aspect-1"
+        ]
+      },
+      {
+        "id": "u11-st-check-past-aspect",
+        "kind": "CHECK",
+        "title": "Independent checks",
+        "body": "These checks use only admitted records. A miss returns to the explanation.",
+        "itemIds": [
+          "u11-i-past-aspect-1",
+          "u11-i-past-aspect-2"
+        ],
+        "remediationStepId": "u11-st-rem-past-aspect"
+      }
+    ]
+  },
+  "afterSession": {
+    "id": "u11-s-past-aspect",
+    "title": "Choose past-tense gender agreement",
+    "estimatedMinutes": 12,
+    "objectiveIds": [
+      "obj-u11-past-aspect"
+    ],
+    "steps": [
+      {
+        "id": "u11-st-teach-past-aspect-1",
+        "kind": "TEACH",
+        "title": "Admitted lines",
+        "body": "In the singular, a past-tense verb agrees with its subject in gender. In this recorded set, прочита́л is masculine, прочита́ла feminine, and прочита́ло neuter. Compare the endings while keeping the same verb.",
+        "referenceIds": [
+          "ref-u1115-attribution"
+        ],
+        "exampleIds": [
+          "ex-or-u11-past-aspect-2",
+          "ex-or-u11-past-aspect-3",
+          "ex-or-u11-past-aspect-4"
+        ]
+      },
+      {
+        "id": "u11-st-teach-past-aspect-2",
+        "kind": "TEACH",
+        "title": "Admitted instruction",
+        "body": "Use the gender requested in the question. The pronoun I does not select one past-tense gender for every speaker. Compare the entire recorded forms: прочита́л, прочита́ла and прочита́ло. These are masculine, feminine and neuter singular forms of the same verb, respectively.",
+        "referenceIds": [
+          "ref-u1115-attribution"
+        ]
+      },
+      {
+        "id": "u11-st-teach-past-aspect-3",
+        "kind": "TEACH",
+        "title": "Admitted lines",
+        "body": "The recorded feminine singular past form is прочита́ла. Compare its ending with the masculine прочита́л and neuter прочита́ло forms of the same verb.",
+        "referenceIds": [
+          "ref-u1115-attribution"
+        ],
+        "exampleIds": [
+          "ex-or-u11-past-aspect-2",
+          "ex-or-u11-past-aspect-3"
+        ]
+      },
+      {
+        "id": "u11-st-teach-past-aspect-4",
+        "kind": "TEACH",
+        "title": "Admitted lines",
+        "body": "The recorded neuter singular past form is прочита́ло. Compare its ending with the masculine прочита́л and feminine прочита́ла forms of the same verb.",
+        "referenceIds": [
+          "ref-u1115-attribution"
+        ],
+        "exampleIds": [
+          "ex-or-u11-past-aspect-4"
+        ]
+      },
+      {
+        "id": "u11-st-guided-past-aspect-1",
+        "kind": "GUIDED",
+        "title": "Guided practice",
+        "body": "Choose the admitted record. The feedback states the frozen field.",
+        "itemIds": [
+          "u11-g-past-aspect-0"
+        ],
+        "remediationStepId": "u11-st-rem-past-aspect"
+      },
+      {
+        "id": "u11-st-rem-past-aspect",
+        "kind": "REMEDIATE",
+        "title": "Remediation",
+        "body": "In the singular, a past-tense verb agrees with its subject in gender. In this recorded set, прочита́л is masculine, прочита́ла feminine, and прочита́ло neuter. Compare the endings while keeping the same verb.\n\nUse the gender requested in the question. The pronoun I does not select one past-tense gender for every speaker. Compare the entire recorded forms: прочита́л, прочита́ла and прочита́ло. These are masculine, feminine and neuter singular forms of the same verb, respectively.\n\nThe recorded feminine singular past form is прочита́ла. Compare its ending with the masculine прочита́л and neuter прочита́ло forms of the same verb.\n\nThe recorded neuter singular past form is прочита́ло. Compare its ending with the masculine прочита́л and feminine прочита́ла forms of the same verb.",
+        "exampleIds": [
+          "ex-or-u11-past-aspect-2",
+          "ex-or-u11-past-aspect-3",
+          "ex-or-u11-past-aspect-4"
+        ]
+      },
+      {
+        "id": "u11-st-check-past-aspect",
+        "kind": "CHECK",
+        "title": "Independent checks",
+        "body": "These checks use only admitted records. A miss returns to the explanation.",
+        "itemIds": [
+          "u11-i-past-aspect-1",
+          "u11-i-past-aspect-2"
+        ],
+        "remediationStepId": "u11-st-rem-past-aspect"
+      }
+    ]
+  },
+  "addedCoverageId": "prov-ca-u11-agreement-remediation-complete-v1",
+  "oldProvenanceCount": 6913,
+  "newProvenanceCount": 6914,
+  "allOldProvenance": "JSON_VALUE_IDENTICAL",
+  "allOtherAssetValues": "JSON_VALUE_IDENTICAL",
+  "historicalExamplesNowUnbound": [
+    "ex-u11-past-aspect-0",
+    "ex-u11-past-aspect-1"
+  ],
+  "advancementUnchanged": {
+    "requireInstruction": true,
+    "requireBookSelfAttestation": true,
+    "requireAppChecks": true,
+    "minimumDistinctChecks": 8,
+    "requireDueReview": true,
+    "tutorOptional": true,
+    "cumulativeReviewPolicyId": "unit11-prior-reading-possession-absence-v1"
+  },
+  "unit12Policy": "NOT_ACTIVATED",
+  "disposition": "ENGINEERING_CORRECTION_PENDING_QUALIFIED_AUDIT",
+  "preExistingRegressionMismatch": "ContentAuditCorrectionTest.wrongAnswerRoutesRetainTheCorrectedObjectiveExplanation still expects one Unit28 card despite existing complete multi-card remediation. Unit28 JSON identical to baseline EA. Update expectation to full joined teaching/examples;no Unit28 app changes.",
+  "historyDisposition": "Old Unit11 governed work remains stored but is stale for corrected instruction. Earlier Unit1–10 data and policies remain unchanged. Preserve current earlier review identities;do not rewrite history or synthesize new due credit."
+}
