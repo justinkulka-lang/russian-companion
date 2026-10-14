@@ -1,0 +1,85 @@
+{
+  "repositoryCommit": "1077239d25c11a5184489c37daf143db139a97ae",
+  "counts": {
+    "tests": 40,
+    "failures": 1,
+    "errors": 0,
+    "skipped": 0
+  },
+  "exitCode": 1,
+  "files": [
+    {
+      "path": "SECOND_INTEGRATION_TEST-dev.russiancompanion.release.ReleaseSourceDigestTest.xml",
+      "sha256": "120ea93282c57171b8cc89f2ab07342fa5b0d92d7754bfd3aafc76fe9e01a75d"
+    },
+    {
+      "path": "SECOND_INTEGRATION_TEST-dev.russiancompanion.v2.BatchECapabilityResearchTest.xml",
+      "sha256": "5c99beac36c8514badd7db2b2985b9b267f278a9a911cafc0631203b7d56e04b"
+    },
+    {
+      "path": "SECOND_INTEGRATION_TEST-dev.russiancompanion.v2.LabExplanationCorrectionTest.xml",
+      "sha256": "04bfe3f1167f6b5731213d6708b32d91006cbb5882123ca9496613302ec14567"
+    },
+    {
+      "path": "SECOND_INTEGRATION_TEST-dev.russiancompanion.v2.Unit13ReportedTransferTest.xml",
+      "sha256": "a98abf8bd0efb564a4243162ff9c3eab987b0f1199a766749dd0ac7220b911f1"
+    },
+    {
+      "path": "SECOND_INTEGRATION_TEST-dev.russiancompanion.v2.Unit28TimingTransferTest.xml",
+      "sha256": "9bca6581bfc35ebf531ef25aa92bb42124c2adc0c301e5c3da4735d314a0a0cb"
+    },
+    {
+      "path": "SECOND_INTEGRATION_TEST-dev.russiancompanion.v2.Unit6AnimacyTransferTest.xml",
+      "sha256": "fa28ce4d9c052667216321c87a5999330bd15777ec2b22c86787f0b7da32e061"
+    },
+    {
+      "path": "SECOND_INTEGRATION_TEST-dev.russiancompanion.v2.Unit8PluralInstructionTest.xml",
+      "sha256": "a2b62aba1baa288a46c6495025cc26080ff1aefe00bb79d9683d2ac0170e0b4b"
+    },
+    {
+      "path": "SECOND_INTEGRATION_TEST-dev.russiancompanion.v2.Units2630SourceIntakeTest.xml",
+      "sha256": "97ab9f7925b87ac6dd4dcc8ab5a34a2771865c10910df987a8db181f16d36e1e"
+    },
+    {
+      "path": "SECOND_INTEGRATION_TEST-dev.russiancompanion.v2.V2RebuildTest.xml",
+      "sha256": "d39898fac1313fa2fd670bdc7c0e3776643daeae22a7395d36606fab64e40227"
+    },
+    {
+      "path": "SECOND_INTEGRATION_TEST-dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest.xml",
+      "sha256": "120f2f1868cd1db78bac357bf0bd7e986c5f1c174b207088e94679cba2ceee28"
+    },
+    {
+      "path": "SECOND_INTEGRATION_TEST-dev.russiancompanion.v2.audit.GapClosureDossierTest.xml",
+      "sha256": "96b257ecf869abe035ed3f3ed869eacf7d23b92bd46460aabf40ca8baf80be8b"
+    },
+    {
+      "path": "SECOND_INTEGRATION_TEST-dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest.xml",
+      "sha256": "15ed10503e8720ff3fca0fea5f3b9e5bddd0c61de3623da3b14e8d1c0fd08f72"
+    },
+    {
+      "path": "SECOND_INTEGRATION_TEST-dev.russiancompanion.v2.review.UnitReviewPipelineTest.xml",
+      "sha256": "a31fa16e640ed91970fd36a372d9ef4ed8e0f02f417999d4b1d01363d4eb2e6d"
+    },
+    {
+      "path": "SECOND_INTEGRATION_TEST-dev.russiancompanion.v2.Unit10IndependentReinforcementTest.xml",
+      "sha256": "ff0906ead80cd5bd9da2bc12e7a7a5f3af5b3da1830fc9b70b053b25f97df40e"
+    },
+    {
+      "path": "SECOND_INTEGRATION_TEST-dev.russiancompanion.v2.Unit10ReinforcementReviewTest.xml",
+      "sha256": "c5aa21c3c16b684cadc7fb6f153477fe2d11de936604c34d0cc16170e488ce98"
+    },
+    {
+      "path": "SECOND_INTEGRATION_TEST-dev.russiancompanion.v2.Unit4NominativeRoleTest.xml",
+      "sha256": "df29f15b23f1f290f07f056ee130ef07cea4818556d1823b4cc44bcc8e720017"
+    },
+    {
+      "path": "SECOND_INTEGRATION_TEST-dev.russiancompanion.v2.Unit9ReinforcementReviewTest.xml",
+      "sha256": "a2b7f90d55dd670cea611a45cca515f8bd1361cfcf481080647b545fe0f43178"
+    },
+    {
+      "path": "SECOND_INTEGRATION_TEST-dev.russiancompanion.v2.Units35SourceIntakeTest.xml",
+      "sha256": "8244d6b1cfec2beed404b4f8cf04d4cb892d2072d6b6604625ef874731ebb1c1"
+    }
+  ],
+  "diagnosis": "New test assertion guessed /wiki/ URL; actual frozen Unit21 source URL uses w/index.php. Test fixture corrected to exact existing URL; source unchanged."
+}

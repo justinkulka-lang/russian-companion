@@ -72,7 +72,7 @@ class Units35SourceIntakeTest {
                 )
             } else if (record.sourceId == "src-enwiki-reflexive-pronoun-1374712982") {
                 assertEquals(record.itemId, "1374712982", record.sourceRevision)
-                assertEquals(record.itemId, "https://en.wikipedia.org/wiki/Reflexive_pronoun?oldid=1374712982", record.sourceUrl)
+                assertEquals(record.itemId, "https://en.wikipedia.org/w/index.php?title=Reflexive_pronoun&oldid=1374712982", record.sourceUrl)
             } else if (record.unitNumber in 26..30) {
                 assertTrue(record.itemId, record.sourceUrl.contains("oldid=${record.sourceRevision}"))
             }

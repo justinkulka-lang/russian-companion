@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-14T02:39:06.521Z" hostname="f5c5dd6b855f" time="68.132">
+  <properties/>
+  <testcase name="committedReportsMatchTheGeneratorAndStayByteIdentical" classname="dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest" time="68.132"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call close. 
+]]></system-err>
+</testsuite>
