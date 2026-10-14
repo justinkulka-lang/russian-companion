@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.data.local.DatabaseMigrationTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-14T14:42:55.191Z" hostname="f5c5dd6b855f" time="15.424">
+  <properties/>
+  <testcase name="version5ExportRowsGainANullableRecordingSetDigest" classname="dev.russiancompanion.data.local.DatabaseMigrationTest" time="10.538"/>
+  <testcase name="version6LearnerAndExportRowsSurviveMigrationToVersion7" classname="dev.russiancompanion.data.local.DatabaseMigrationTest" time="0.206"/>
+  <testcase name="version1RowsKeepTheirDataAndGainTheNewNullableFields" classname="dev.russiancompanion.data.local.DatabaseMigrationTest" time="0.139"/>
+  <testcase name="version2PlanRowsBecomeIneligibleWhenLessonNumberCannotBeRecovered" classname="dev.russiancompanion.data.local.DatabaseMigrationTest" time="0.141"/>
+  <testcase name="version3DecisionsBeforeAndAfterTutorDoNotInventAHistoricalRule" classname="dev.russiancompanion.data.local.DatabaseMigrationTest" time="0.301"/>
+  <testcase name="version4SeedStateGainsAContentHashColumn" classname="dev.russiancompanion.data.local.DatabaseMigrationTest" time="0.196"/>
+  <testcase name="version3DecisionsKeepTheirEvidenceAndGainACanonicalRuleSnapshot" classname="dev.russiancompanion.data.local.DatabaseMigrationTest" time="0.239"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,1067 @@
+{
+  "repository": "justinkulka-lang/russian-companion",
+  "branch": "cursor/content-audit-corrections-964f",
+  "draftPR": 64,
+  "apk": {
+    "assembled": false,
+    "signed": false,
+    "configuredApplicationId": "dev.russiancompanion",
+    "configuredVersionName": "2.0.0-dev",
+    "configuredVersionCode": 5,
+    "currentArtifactIdentity": "NOT_RECORDED",
+    "currentApkSha256": "NOT_RECORDED",
+    "currentApkSignature": "NOT_RECORDED",
+    "historicalArtifacts": "Preserved; not this candidate"
+  },
+  "excludedScreenshotExporters": [
+    {
+      "class": "VisualReviewCaptureTest",
+      "methods": 2
+    },
+    {
+      "class": "Units35ChunkCaptureTest",
+      "methods": 2
+    },
+    {
+      "class": "Units610ChunkCaptureTest",
+      "methods": 10
+    },
+    {
+      "class": "Units1115GapCaptureTest",
+      "methods": 2
+    }
+  ],
+  "exclusionReason": "Exporters overwrite tracked screenshot evidence and write /opt/cursor; external cloud-validation init excludes them from environment setup verification. Current selectors additionally limit scope.",
+  "environment": {
+    "configurationChanged": false,
+    "installScriptAndStartSkill": "Previously saved",
+    "priorPublication": "USER_CONFIRMED",
+    "laterNetworkOnlyDraftPublication": "NOT_INDEPENDENTLY_ESTABLISHED",
+    "supportedPublicationControlHere": "UNAVAILABLE"
+  },
+  "privateReference": "No private PDF read/copied into GitHub/assets/logs/packets/environment snapshot. Obtain privately using continuity SHA256 in durable instructions; historical expected hash remains unknown.",
+  "schemaVersion": 1,
+  "status": "UNIT3_GATE_UI_IMPLEMENTED_IA003_OPEN_UNITS4_TO30_PENDING",
+  "finding": "IA003",
+  "baselineCommit": "20a227817562e3a8645488fd52db2e7589713a7a",
+  "implementationCommit": "81933b52d85153ea848f63125ea3b1afe12de83d",
+  "testedCommit": "bee9d0fa603b243385126a4e3c8fc103eff4a4e0",
+  "command": "bash audit/independent-gpt61-2026-10-12/ia003-unit3-gate/verify.sh",
+  "scriptSha256": "ae702d7f8b92a6c1458d2aee20a9a5101640667e06d8124fc5c162da8c715aa2",
+  "expandedScript": "#!/usr/bin/env bash\nset -euo pipefail\ncd /workspace/russian-companion\nsource /workspace/setup/android-env.sh\nchecks=(\n --tests '*CumulativeReviewGateTest'\n --tests '*CumulativeReviewStorageTest'\n --tests '*BackupLicenseTest'\n --tests '*DatabaseMigrationTest'\n --tests '*BackupSnapshotCorrectionTest'\n --tests '*RuntimeCorrectionTest.todayOpensAdvancementReviewInsteadOfTheLastLessonStep'\n --tests '*RuntimeCorrectionTest.unitOneSequenceKeepsDraftsThroughRemediationResumeAndAdvancement'\n --tests '*RuntimeCorrectionTest.failedAdvancementLeavesTheReviewInPlace'\n --tests '*RuntimeCorrectionTest.remediationReachesGuidedPracticeThenReturnsToTheFailedCheck'\n --tests '*RuntimeCorrectionTest.storeWorkRunsOnTheStoreThread'\n --tests '*RuntimeCorrectionTest.failedWritePreservesPriorDataAndShowsOneFailure'\n --tests '*Unit4NominativeRoleTest.allPriorExamplesRecordsCapabilitiesAndOtherUnitsRemainWhole'\n --tests '*UnitReviewPipelineTest.committedUnitPackagesMatchTheGenerator'\n --tests '*CurriculumReadinessReconciliationTest.committedReportsMatchTheGeneratorAndStayByteIdentical'\n --tests '*OwnerGovernanceDecisionTest.preparationManifestBindsFactsAndDoesNotPassAFinalAudit'\n --tests '*GapClosureDossierTest.dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease'\n --tests '*ReleaseSourceDigestTest.committedCandidateRecordsTheCurrentSourceDigestAndIdentity'\n --tests '*Units2630SourceIntakeTest.generatedRussianPenguinAudioAndReleaseStayClosed'\n --tests '*V2RebuildTest.structuralMappingSafeguardsRejectIncompleteOrInventedRecords'\n --tests '*BatchECapabilityResearchTest.digestsGovernanceAndLaterUnitsStayUnchanged'\n)\n./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle \\\n testDebugUnitTest \"${checks[@]}\" compileDebugSources lintDebug verifyReleaseGateAttachment --max-workers=4 --console=plain\n",
+  "counts": {
+    "tests": 58,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "classes": [
+    {
+      "name": "dev.russiancompanion.data.local.DatabaseMigrationTest",
+      "timestamp": "2026-10-14T14:42:55.191Z",
+      "counts": {
+        "tests": 7,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "version5ExportRowsGainANullableRecordingSetDigest",
+          "seconds": "10.538"
+        },
+        {
+          "name": "version6LearnerAndExportRowsSurviveMigrationToVersion7",
+          "seconds": "0.206"
+        },
+        {
+          "name": "version1RowsKeepTheirDataAndGainTheNewNullableFields",
+          "seconds": "0.139"
+        },
+        {
+          "name": "version2PlanRowsBecomeIneligibleWhenLessonNumberCannotBeRecovered",
+          "seconds": "0.141"
+        },
+        {
+          "name": "version3DecisionsBeforeAndAfterTutorDoNotInventAHistoricalRule",
+          "seconds": "0.301"
+        },
+        {
+          "name": "version4SeedStateGainsAContentHashColumn",
+          "seconds": "0.196"
+        },
+        {
+          "name": "version3DecisionsKeepTheirEvidenceAndGainACanonicalRuleSnapshot",
+          "seconds": "0.239"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.data.local.DatabaseMigrationTest.xml",
+      "sha256": "c5aac8e7c4f19b2873e34b6dcf73aa2810186963ae29a99ccf3de3b4432865f8"
+    },
+    {
+      "name": "dev.russiancompanion.release.ReleaseSourceDigestTest",
+      "timestamp": "2026-10-14T14:44:04.279Z",
+      "counts": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "committedCandidateRecordsTheCurrentSourceDigestAndIdentity",
+          "seconds": "37.689"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.release.ReleaseSourceDigestTest.xml",
+      "sha256": "c8cbb0b160f40fd366be0631a8a8036d0bdd8d3b07bb01924841e5d1f4b0de68"
+    },
+    {
+      "name": "dev.russiancompanion.v2.BackupLicenseTest",
+      "timestamp": "2026-10-14T14:44:42.035Z",
+      "counts": {
+        "tests": 14,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "backupRoundTripRestoresGovernedRecordsWithoutChangingTheLiveCopy",
+          "seconds": "39.964"
+        },
+        {
+          "name": "recordingBytesRoundTripAndBackupDoesNotClaimAFailedWrite",
+          "seconds": "4.872"
+        },
+        {
+          "name": "cancelledBackupAndDeclinedRestoreLeaveLiveDataUnchanged",
+          "seconds": "11.264"
+        },
+        {
+          "name": "failedJournalWriteKeepsTheSnapshotWhenImmediateRollbackCannotFinish",
+          "seconds": "6.148"
+        },
+        {
+          "name": "restoreRejectsARecordingForAnUnknownAudioModel",
+          "seconds": "1.86"
+        },
+        {
+          "name": "repeatedBackupTapsDoNotStartASecondOperation",
+          "seconds": "1.307"
+        },
+        {
+          "name": "backupScreenRejectsABadFileAndConfirmsReplacementOnce",
+          "seconds": "5.98"
+        },
+        {
+          "name": "malformedTruncatedUnsupportedAndTamperedPackagesDoNotChangeData",
+          "seconds": "7.432"
+        },
+        {
+          "name": "missingAttributionAndMissingNoticeFailClosed",
+          "seconds": "25.095"
+        },
+        {
+          "name": "attributionsScreenShowsPackagedNoticeTextAndReturns",
+          "seconds": "10.18"
+        },
+        {
+          "name": "failedRecordingPublishRestoresDatabaseRowsAndRecordingBytes",
+          "seconds": "1.74"
+        },
+        {
+          "name": "failedJournalWriteRestoresTheOriginalRecordingSnapshot",
+          "seconds": "1.893"
+        },
+        {
+          "name": "failedReplacementKeepsTheOriginalDatabase",
+          "seconds": "1.954"
+        },
+        {
+          "name": "failedSnapshotRestoreKeepsRecoveryMaterialsUntilTheNextStoreOpen",
+          "seconds": "2.504"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.BackupLicenseTest.xml",
+      "sha256": "05a6ef2383aa945b163eaddbf5a5f0b315df96767903fde367418a90e1ff91b1"
+    },
+    {
+      "name": "dev.russiancompanion.v2.BackupSnapshotCorrectionTest",
+      "timestamp": "2026-10-14T14:42:54.612Z",
+      "counts": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "concurrentLearnerWritesCannotBeClaimedAsPartOfTheWrittenArchive",
+          "seconds": "22.563"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.BackupSnapshotCorrectionTest.xml",
+      "sha256": "b742da78e1396b9847feb60b9082c11c4e66acc12ebaf60fd2b128b7eef9a45f"
+    },
+    {
+      "name": "dev.russiancompanion.v2.BatchECapabilityResearchTest",
+      "timestamp": "2026-10-14T14:43:19.978Z",
+      "counts": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "digestsGovernanceAndLaterUnitsStayUnchanged",
+          "seconds": "97.208"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.BatchECapabilityResearchTest.xml",
+      "sha256": "bf87dda35140120f03f808bed13d40954febb3a22ab5580851286c5d3a0cffeb"
+    },
+    {
+      "name": "dev.russiancompanion.v2.CumulativeReviewGateTest",
+      "timestamp": "2026-10-14T14:43:11.887Z",
+      "counts": {
+        "tests": 8,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "asynchronousReviewWriteCannotCrossActualLearnerReplacementAndBackRemainsResponsive",
+          "seconds": "24.78"
+        },
+        {
+          "name": "migratedVersionTenRetainsGenuineOldLessonCreditWithoutFabricatingReviewCompletion",
+          "seconds": "11.612"
+        },
+        {
+          "name": "actualContinueReviewAndGateUiRequireBothChoicesAndShowTargetedFeedback",
+          "seconds": "7.848"
+        },
+        {
+          "name": "completeOrdinaryWorkCannotAdvanceUntilBothAssignedObjectivesAreReviewed",
+          "seconds": "67.915"
+        },
+        {
+          "name": "versionThreeBackupPreservesCompletionSnapshotAndRejectsForgedActivationLinks",
+          "seconds": "11.681"
+        },
+        {
+          "name": "optionalAndPrescribedReplaysCannotCompleteReviewOrBypassTransactionalAdvance",
+          "seconds": "6.05"
+        },
+        {
+          "name": "completedHistoryKeepsItsAcceptedAnswerSnapshotAndTransactionFailureRollsBack",
+          "seconds": "4.321"
+        },
+        {
+          "name": "placementOnlyUiOffersRealEarlierTeachingAndNoEmptyReviewCompletion",
+          "seconds": "1.914"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.CumulativeReviewGateTest.xml",
+      "sha256": "5168798f9532b1787f7099c87e2d52476af5f5a1d4b6836a3b412d9d0e3a49b0"
+    },
+    {
+      "name": "dev.russiancompanion.v2.CumulativeReviewStorageTest",
+      "timestamp": "2026-10-14T14:46:47.217Z",
+      "counts": {
+        "tests": 13,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "prescribedAndOptionalAnswersNeverSupplyReviewOrGainExtraPrescribedCredit",
+          "seconds": "4.452"
+        },
+        {
+          "name": "malformedRolePreBoundaryAndWrongAssignmentDigestNeverSupplyCompletion",
+          "seconds": "1.922"
+        },
+        {
+          "name": "immutableSlotsSpanTwoTaughtObjectivesAndRepeatedOpenDoesNotResample",
+          "seconds": "1.425"
+        },
+        {
+          "name": "staleEpochWrongAssignmentInvalidSlotAndOutOfOptionsAreRejectedWithoutWrites",
+          "seconds": "1.753"
+        },
+        {
+          "name": "forgedLinksOrdersRolesAndAssignmentHashCannotReplaceAnyLearnerRows",
+          "seconds": "1.305"
+        },
+        {
+          "name": "latestAcceptedAnswerWinsAndDuplicateTapsDoNotAllocateExtraOrder",
+          "seconds": "2.348"
+        },
+        {
+          "name": "legacyDocumentWithoutNewFieldsDecodesWithNoSyntheticReviewRows",
+          "seconds": "0.352"
+        },
+        {
+          "name": "realVersionNineDatabaseMigratesWithoutRewritingHistoricalRowsOrInventingCredit",
+          "seconds": "0.431"
+        },
+        {
+          "name": "offlineCloseAndReopenRetainsExactAssignmentAnswersAndCurrentCompletion",
+          "seconds": "2.514"
+        },
+        {
+          "name": "newBackupRoundtripReplacesReviewHistoryAndRestoreFaultRollsItBack",
+          "seconds": "1.829"
+        },
+        {
+          "name": "placementAndBareLegacyCorrectIdsCannotCreateAssignments",
+          "seconds": "0.225"
+        },
+        {
+          "name": "changedKeyTeachingAndOwnerAvailabilityRejectCreditButUnrelatedUnitsDoNot",
+          "seconds": "1.229"
+        },
+        {
+          "name": "schemaOneBackupRestoresNoSyntheticReviewAndClearsReplacedLearnerHistory",
+          "seconds": "1.861"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.CumulativeReviewStorageTest.xml",
+      "sha256": "24c66bebfb64a04609b47fb4af39b045ab83d29f79bed75b2789afdc839c4125"
+    },
+    {
+      "name": "dev.russiancompanion.v2.RuntimeCorrectionTest",
+      "timestamp": "2026-10-14T14:47:09.211Z",
+      "counts": {
+        "tests": 6,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "storeWorkRunsOnTheStoreThread",
+          "seconds": "0.29"
+        },
+        {
+          "name": "unitOneSequenceKeepsDraftsThroughRemediationResumeAndAdvancement",
+          "seconds": "7.023"
+        },
+        {
+          "name": "failedAdvancementLeavesTheReviewInPlace",
+          "seconds": "4.666"
+        },
+        {
+          "name": "failedWritePreservesPriorDataAndShowsOneFailure",
+          "seconds": "2.206"
+        },
+        {
+          "name": "remediationReachesGuidedPracticeThenReturnsToTheFailedCheck",
+          "seconds": "2.23"
+        },
+        {
+          "name": "todayOpensAdvancementReviewInsteadOfTheLastLessonStep",
+          "seconds": "1.353"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.RuntimeCorrectionTest.xml",
+      "sha256": "99d904b542a18fabf1fc4d043012908172986a44b11992767dca3e4860adad9e"
+    },
+    {
+      "name": "dev.russiancompanion.v2.Unit4NominativeRoleTest",
+      "timestamp": "2026-10-14T14:44:57.829Z",
+      "counts": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "allPriorExamplesRecordsCapabilitiesAndOtherUnitsRemainWhole",
+          "seconds": "23.537"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.Unit4NominativeRoleTest.xml",
+      "sha256": "2b86e967d1d060f8e6cc5702215a0f833b2ee9e8d911fa6975debe0535bce797"
+    },
+    {
+      "name": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+      "timestamp": "2026-10-14T14:42:54.631Z",
+      "counts": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "generatedRussianPenguinAudioAndReleaseStayClosed",
+          "seconds": "57.553"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.Units2630SourceIntakeTest.xml",
+      "sha256": "f1014e88e416fae0914ef50bd413b5f58becc25748e93407e42cf49ca8c7046b"
+    },
+    {
+      "name": "dev.russiancompanion.v2.V2RebuildTest",
+      "timestamp": "2026-10-14T14:45:22.413Z",
+      "counts": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "structuralMappingSafeguardsRejectIncompleteOrInventedRecords",
+          "seconds": "97.391"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.V2RebuildTest.xml",
+      "sha256": "fe29d80cf80d915ca566c8320d8c57e2d719583458b0e135c86b6d0c54e3b013"
+    },
+    {
+      "name": "dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest",
+      "timestamp": "2026-10-14T14:45:29.227Z",
+      "counts": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "committedReportsMatchTheGeneratorAndStayByteIdentical",
+          "seconds": "100.069"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest.xml",
+      "sha256": "baf182f10b2262abfb345cb89d2d8a264776ed0a868b39c6931c19fc477412e2"
+    },
+    {
+      "name": "dev.russiancompanion.v2.audit.GapClosureDossierTest",
+      "timestamp": "2026-10-14T14:47:27.504Z",
+      "counts": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease",
+          "seconds": "39.189"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.audit.GapClosureDossierTest.xml",
+      "sha256": "8e3cc00da56beebd718bcd11cc0a55ad2f5f2bc59130a9f5e91ea5def42d871b"
+    },
+    {
+      "name": "dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest",
+      "timestamp": "2026-10-14T14:43:52.277Z",
+      "counts": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "preparationManifestBindsFactsAndDoesNotPassAFinalAudit",
+          "seconds": "7.31"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest.xml",
+      "sha256": "e761a53bac10d12c67027f45a184a184ff01b49b5aa61e7c74196961326ecfa4"
+    },
+    {
+      "name": "dev.russiancompanion.v2.review.UnitReviewPipelineTest",
+      "timestamp": "2026-10-14T14:46:59.923Z",
+      "counts": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "committedUnitPackagesMatchTheGenerator",
+          "seconds": "120.321"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.review.UnitReviewPipelineTest.xml",
+      "sha256": "3ba0a2d209dc46cb50cf7bcbda63771f78a1c7193e128dc837b5c83b93149495"
+    }
+  ],
+  "selectors": [
+    "*CumulativeReviewGateTest",
+    "*CumulativeReviewStorageTest",
+    "*BackupLicenseTest",
+    "*DatabaseMigrationTest",
+    "*BackupSnapshotCorrectionTest",
+    "*RuntimeCorrectionTest.todayOpensAdvancementReviewInsteadOfTheLastLessonStep",
+    "*RuntimeCorrectionTest.unitOneSequenceKeepsDraftsThroughRemediationResumeAndAdvancement",
+    "*RuntimeCorrectionTest.failedAdvancementLeavesTheReviewInPlace",
+    "*RuntimeCorrectionTest.remediationReachesGuidedPracticeThenReturnsToTheFailedCheck",
+    "*RuntimeCorrectionTest.storeWorkRunsOnTheStoreThread",
+    "*RuntimeCorrectionTest.failedWritePreservesPriorDataAndShowsOneFailure",
+    "*Unit4NominativeRoleTest.allPriorExamplesRecordsCapabilitiesAndOtherUnitsRemainWhole",
+    "*UnitReviewPipelineTest.committedUnitPackagesMatchTheGenerator",
+    "*CurriculumReadinessReconciliationTest.committedReportsMatchTheGeneratorAndStayByteIdentical",
+    "*OwnerGovernanceDecisionTest.preparationManifestBindsFactsAndDoesNotPassAFinalAudit",
+    "*GapClosureDossierTest.dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease",
+    "*ReleaseSourceDigestTest.committedCandidateRecordsTheCurrentSourceDigestAndIdentity",
+    "*Units2630SourceIntakeTest.generatedRussianPenguinAudioAndReleaseStayClosed",
+    "*V2RebuildTest.structuralMappingSafeguardsRejectIncompleteOrInventedRecords",
+    "*BatchECapabilityResearchTest.digestsGovernanceAndLaterUnitsStayUnchanged"
+  ],
+  "allSelectorsExecuted": true,
+  "scope": "58 focused methods,15 classes,20 selectors. NOT complete suite, qualified educational/source/rights/semantic or physical acceptance.",
+  "overlappingScopesSummed": false,
+  "lint": {
+    "errors": 0,
+    "warnings": 20,
+    "hints": 1,
+    "result": "PASS",
+    "xml": "FINAL_LINT.xml",
+    "taskExecution": [
+      "> Task :app:generateDebugAndroidTestLintModel UP-TO-DATE",
+      "> Task :app:generateDebugLintReportModel UP-TO-DATE",
+      "> Task :app:generateDebugUnitTestLintModel",
+      "> Task :app:lintAnalyzeDebug UP-TO-DATE",
+      "> Task :app:lintAnalyzeDebugAndroidTest UP-TO-DATE",
+      "> Task :app:lintAnalyzeDebugUnitTest",
+      "> Task :app:lintReportDebug",
+      "> Task :app:lintDebug"
+    ]
+  },
+  "releaseGateAttachment": {
+    "task": "verifyReleaseGateAttachment",
+    "executed": true,
+    "result": "PASS",
+    "releaseAuthorization": false
+  },
+  "gradleTasks": [
+    "> Task :app:preBuild UP-TO-DATE",
+    "> Task :app:preDebugBuild UP-TO-DATE",
+    "> Task :app:generateDebugBuildConfig UP-TO-DATE",
+    "> Task :app:generateDebugResources UP-TO-DATE",
+    "> Task :app:packageDebugResources UP-TO-DATE",
+    "> Task :app:processDebugNavigationResources UP-TO-DATE",
+    "> Task :app:parseDebugLocalResources UP-TO-DATE",
+    "> Task :app:generateDebugRFile UP-TO-DATE",
+    "> Task :app:kspDebugKotlin UP-TO-DATE",
+    "> Task :app:compileDebugKotlin UP-TO-DATE",
+    "> Task :app:javaPreCompileDebug UP-TO-DATE",
+    "> Task :app:compileDebugJavaWithJavac UP-TO-DATE",
+    "> Task :app:checkDebugAarMetadata UP-TO-DATE",
+    "> Task :app:mapDebugSourceSetPaths UP-TO-DATE",
+    "> Task :app:compileDebugNavigationResources UP-TO-DATE",
+    "> Task :app:mergeDebugResources UP-TO-DATE",
+    "> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE",
+    "> Task :app:extractDeepLinksDebug UP-TO-DATE",
+    "> Task :app:processDebugMainManifest UP-TO-DATE",
+    "> Task :app:processDebugManifest UP-TO-DATE",
+    "> Task :app:processDebugManifestForPackage UP-TO-DATE",
+    "> Task :app:processDebugResources UP-TO-DATE",
+    "> Task :app:bundleDebugClassesToRuntimeJar UP-TO-DATE",
+    "> Task :app:bundleDebugClassesToCompileJar UP-TO-DATE",
+    "> Task :app:kspDebugUnitTestKotlin",
+    "> Task :app:preDebugUnitTestBuild UP-TO-DATE",
+    "> Task :app:javaPreCompileDebugUnitTest UP-TO-DATE",
+    "> Task :app:generateDebugAssets UP-TO-DATE",
+    "> Task :app:mergeDebugAssets UP-TO-DATE",
+    "> Task :app:packageDebugUnitTestForUnitTest UP-TO-DATE",
+    "> Task :app:mergeDebugUnitTestManifest UP-TO-DATE",
+    "> Task :app:processDebugUnitTestManifest UP-TO-DATE",
+    "> Task :app:generateDebugUnitTestConfig UP-TO-DATE",
+    "> Task :app:processDebugJavaRes UP-TO-DATE",
+    "> Task :app:compileDebugSources UP-TO-DATE",
+    "> Task :app:preDebugAndroidTestBuild SKIPPED",
+    "> Task :app:generateDebugAndroidTestLintModel UP-TO-DATE",
+    "> Task :app:extractProguardFiles UP-TO-DATE",
+    "> Task :app:generateDebugLintReportModel UP-TO-DATE",
+    "> Task :app:generateDebugUnitTestLintModel",
+    "> Task :app:lintAnalyzeDebug UP-TO-DATE",
+    "> Task :app:lintAnalyzeDebugAndroidTest UP-TO-DATE",
+    "> Task :app:verifyReleaseGateAttachment",
+    "> Task :app:compileDebugUnitTestKotlin",
+    "> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE",
+    "> Task :app:processDebugUnitTestJavaRes UP-TO-DATE",
+    "> Task :app:testDebugUnitTest",
+    "> Task :app:lintAnalyzeDebugUnitTest",
+    "> Task :app:testDebugUnitTest",
+    "> Task :app:lintReportDebug",
+    "> Task :app:lintDebug"
+  ],
+  "historicalCounts": {
+    "mainCommit": "ff539220645670fbf7a1abacaa6f71e828606b80",
+    "mainSourceAnnotations": 579,
+    "excludedMethods": 16,
+    "reportedTests": 563,
+    "passed": 562,
+    "skipped": 1,
+    "completeSuiteClaim": "NOT_PROVEN",
+    "pr64BaselineCommit": "420f41ff6c2a4417cd829fdee0179b6a3b797eff",
+    "pr64SourceAnnotations": 691,
+    "sourceDifference": 112,
+    "handoffExecution": "UNVERIFIED",
+    "currentDifference": "58 executed methods at bee9d0fa with20 explicit selectors;historical main/baseline source counts are different commits/scopes."
+  },
+  "preservation": {
+    "rawAssetSha256": "6df1de6aeca3ef6e9c74de3fcf07df8759b17f5342d318f92e37cababfba81f1",
+    "entireRawAssetExceptUnit3Advancement": "JSON_VALUE_IDENTICAL",
+    "catalog": "BYTE_IDENTICAL",
+    "schemas9And10": "BYTE_IDENTICAL",
+    "originalDiagnosticFiles": "ALL_NINE_HASH_VERIFIED",
+    "ledger": "UNIT3_REVIEW_ACTIVATION.json",
+    "provenance": 6913,
+    "capabilities": 58,
+    "canonicalPins": 71
+  },
+  "priorRuns": [
+    "INITIAL_COMPILATION_FAILURE.txt:zero tests",
+    "INITIAL_RUNTIME_RUN.txt:41 methods40 pass1 fail",
+    "CORRECTED_RUNTIME_RUN.txt:42 methods40 pass2 fail",
+    "FOOTER_RUNTIME_RUN.txt:42 methods41 pass1 fail",
+    "VERIFIED_RUNTIME_RUN.txt:42 pass;uncommitted inputs",
+    "FIRST_COMMITTED_CONTEXT.json:58 methods56 pass2 fail at726bdc70",
+    "SECOND_COMMITTED_CONTEXT.json:58 methods57 pass1 fail at ec593c6e;transport recovered",
+    "ISOLATED_RUNTIME_CONTEXT.json:one failed-in-parallel method passes alone unchanged"
+  ],
+  "acceptance": {
+    "IA003": "OPEN:Unit3 engineering slice implemented;Units4\u201330 applicable policies/integrations and qualified assessment pending",
+    "independentComprehensiveAudit": "OUTSTANDING",
+    "physicalGalaxyS26UltraAirplaneModeAndReboot": "OUTSTANDING;LAST after final comprehensive audit",
+    "mergeFreezeSigningReleaseApproval": "NOT_AUTHORIZED_OR_PERFORMED"
+  },
+  "finalSourceInputsUnchangedAfterTesting": true,
+  "compile": {
+    "compileDebugSources": "UP-TO-DATE",
+    "mainKotlin": "UP-TO-DATE",
+    "testKotlin": "EXECUTED"
+  },
+  "externalInitFiles": [
+    {
+      "path": "/workspace/setup/cloud-validation.gradle",
+      "sha256": "21c6a0ee2e97cf83c472513ac31c3d2d456e461185384e9b5e58c0fed298d123"
+    },
+    {
+      "path": "/workspace/setup/parallel-tests.gradle",
+      "sha256": "2366eb867708f83db10b39080abff1b45d2e347bab15ce2ec1c95c3d31cf7ff3"
+    }
+  ],
+  "files": [
+    {
+      "path": "CORRECTED_RUNTIME_RESULTS/TEST-dev.russiancompanion.data.local.DatabaseMigrationTest.xml",
+      "sha256": "dc5eeb9fe9dc07a1fe3ac97af440f05cd6e4f5593f9737ab23ddd6b89c125424",
+      "bytes": 1434
+    },
+    {
+      "path": "CORRECTED_RUNTIME_RESULTS/TEST-dev.russiancompanion.v2.BackupLicenseTest.xml",
+      "sha256": "812d5b535f0d002f78306b18055c0bea7b4c7e8c68eefeb33ed0a82de9267c21",
+      "bytes": 6236
+    },
+    {
+      "path": "CORRECTED_RUNTIME_RESULTS/TEST-dev.russiancompanion.v2.CumulativeReviewGateTest.xml",
+      "sha256": "6073e80d16ffd934eee501792c4d767a6ebd918c1c01291a80f887dc74e1aecc",
+      "bytes": 14624
+    },
+    {
+      "path": "CORRECTED_RUNTIME_RESULTS/TEST-dev.russiancompanion.v2.CumulativeReviewStorageTest.xml",
+      "sha256": "74b627cd83165cbc3f48740ff5c8f95d81cfed365d86f7fb8d6bd32b80d03e6e",
+      "bytes": 360247
+    },
+    {
+      "path": "CORRECTED_RUNTIME_RUN.txt",
+      "sha256": "d006a2f0a9abf7c0f1b9b31094866d16aba9b937d4b37c4171af3fe011d14fd4",
+      "bytes": 3747
+    },
+    {
+      "path": "FINAL_LINT.xml",
+      "sha256": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6",
+      "bytes": 31476
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.data.local.DatabaseMigrationTest.xml",
+      "sha256": "c5aac8e7c4f19b2873e34b6dcf73aa2810186963ae29a99ccf3de3b4432865f8",
+      "bytes": 1435
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.release.ReleaseSourceDigestTest.xml",
+      "sha256": "c8cbb0b160f40fd366be0631a8a8036d0bdd8d3b07bb01924841e5d1f4b0de68",
+      "bytes": 500
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.BackupLicenseTest.xml",
+      "sha256": "05a6ef2383aa945b163eaddbf5a5f0b315df96767903fde367418a90e1ff91b1",
+      "bytes": 39030
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.BackupSnapshotCorrectionTest.xml",
+      "sha256": "b742da78e1396b9847feb60b9082c11c4e66acc12ebaf60fd2b128b7eef9a45f",
+      "bytes": 505
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.BatchECapabilityResearchTest.xml",
+      "sha256": "bf87dda35140120f03f808bed13d40954febb3a22ab5580851286c5d3a0cffeb",
+      "bytes": 485
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.CumulativeReviewGateTest.xml",
+      "sha256": "5168798f9532b1787f7099c87e2d52476af5f5a1d4b6836a3b412d9d0e3a49b0",
+      "bytes": 46258
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.CumulativeReviewStorageTest.xml",
+      "sha256": "24c66bebfb64a04609b47fb4af39b045ab83d29f79bed75b2789afdc839c4125",
+      "bytes": 3860
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.RuntimeCorrectionTest.xml",
+      "sha256": "99d904b542a18fabf1fc4d043012908172986a44b11992767dca3e4860adad9e",
+      "bytes": 4795
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.Unit4NominativeRoleTest.xml",
+      "sha256": "2b86e967d1d060f8e6cc5702215a0f833b2ee9e8d911fa6975debe0535bce797",
+      "bytes": 491
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.Units2630SourceIntakeTest.xml",
+      "sha256": "f1014e88e416fae0914ef50bd413b5f58becc25748e93407e42cf49ca8c7046b",
+      "bytes": 484
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.V2RebuildTest.xml",
+      "sha256": "fe29d80cf80d915ca566c8320d8c57e2d719583458b0e135c86b6d0c54e3b013",
+      "bytes": 12965
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest.xml",
+      "sha256": "baf182f10b2262abfb345cb89d2d8a264776ed0a868b39c6931c19fc477412e2",
+      "bytes": 966
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.audit.GapClosureDossierTest.xml",
+      "sha256": "8e3cc00da56beebd718bcd11cc0a55ad2f5f2bc59130a9f5e91ea5def42d871b",
+      "bytes": 539
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest.xml",
+      "sha256": "e761a53bac10d12c67027f45a184a184ff01b49b5aa61e7c74196961326ecfa4",
+      "bytes": 502
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.review.UnitReviewPipelineTest.xml",
+      "sha256": "3ba0a2d209dc46cb50cf7bcbda63771f78a1c7193e128dc837b5c83b93149495",
+      "bytes": 484
+    },
+    {
+      "path": "FINAL_RUN.txt",
+      "sha256": "b08fb9354d6e53f114f3645080812d94789c1fd180638ba134e32157f6eedac1",
+      "bytes": 3772
+    },
+    {
+      "path": "FIRST_COMMITTED_CONTEXT.json",
+      "sha256": "c55e7288988d521b1e901465207aceb35b8c2ac9b3f0992a151b70a6e8fa15b4",
+      "bytes": 605
+    },
+    {
+      "path": "FIRST_COMMITTED_RESULTS/TEST-dev.russiancompanion.data.local.DatabaseMigrationTest.xml",
+      "sha256": "4a1fe91e655e5948661d89630f444972a209c1beff8a4f3a8e534b4c596a5d2a",
+      "bytes": 1434
+    },
+    {
+      "path": "FIRST_COMMITTED_RESULTS/TEST-dev.russiancompanion.release.ReleaseSourceDigestTest.xml",
+      "sha256": "728c1a1bbaf94852b7b6b10dcc0b8d28abcf8b429c9e5f7d1b13d8fa206b3418",
+      "bytes": 500
+    },
+    {
+      "path": "FIRST_COMMITTED_RESULTS/TEST-dev.russiancompanion.v2.BackupLicenseTest.xml",
+      "sha256": "f1f1fbd74111f962ccae2d24f9516f01fd8b2c4eae0536cce244b6970378c560",
+      "bytes": 10441
+    },
+    {
+      "path": "FIRST_COMMITTED_RESULTS/TEST-dev.russiancompanion.v2.BackupSnapshotCorrectionTest.xml",
+      "sha256": "065ada2e48f43a06063a05a0d38d4fc7f83ef1aa3d27cd56e2d4b0cab91e64be",
+      "bytes": 505
+    },
+    {
+      "path": "FIRST_COMMITTED_RESULTS/TEST-dev.russiancompanion.v2.BatchECapabilityResearchTest.xml",
+      "sha256": "375f9606031bf695d12cb5aae82430c0304ce3877bfb473140d8006decf38faa",
+      "bytes": 485
+    },
+    {
+      "path": "FIRST_COMMITTED_RESULTS/TEST-dev.russiancompanion.v2.CumulativeReviewGateTest.xml",
+      "sha256": "3deb36d0cd53e37ac823404a6fcde96035ff91c41be1c62d0eaa5ae081a2aaac",
+      "bytes": 45620
+    },
+    {
+      "path": "FIRST_COMMITTED_RESULTS/TEST-dev.russiancompanion.v2.CumulativeReviewStorageTest.xml",
+      "sha256": "a4c958345915d9f1236c5aa6b6f9373e6add38db5ba3419eb5b964fa7017634e",
+      "bytes": 4009
+    },
+    {
+      "path": "FIRST_COMMITTED_RESULTS/TEST-dev.russiancompanion.v2.RuntimeCorrectionTest.xml",
+      "sha256": "b541b530f579e3affa4319993c7c9f73d8d77fb9794d57f47d5f04dd09386ace",
+      "bytes": 11213
+    },
+    {
+      "path": "FIRST_COMMITTED_RESULTS/TEST-dev.russiancompanion.v2.Unit4NominativeRoleTest.xml",
+      "sha256": "9a83a5a5950ca21086af2c2c9098120602156a34b5abb0b576a3e8fa1afd4ccf",
+      "bytes": 489
+    },
+    {
+      "path": "FIRST_COMMITTED_RESULTS/TEST-dev.russiancompanion.v2.Units2630SourceIntakeTest.xml",
+      "sha256": "282fbf28b6e6b4f7b6524630a89f2281843e42bb8bf2f62f51c22ed73710fd64",
+      "bytes": 484
+    },
+    {
+      "path": "FIRST_COMMITTED_RESULTS/TEST-dev.russiancompanion.v2.V2RebuildTest.xml",
+      "sha256": "fac2a1459a145db4ddd14e0772db84d44971dc8d33b1c5cad5e6bee87ddf9d04",
+      "bytes": 12966
+    },
+    {
+      "path": "FIRST_COMMITTED_RESULTS/TEST-dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest.xml",
+      "sha256": "992418d3f461ebf580d13905c1502f9f04e0d125a43ff56d45af6c3832f9e442",
+      "bytes": 1207
+    },
+    {
+      "path": "FIRST_COMMITTED_RESULTS/TEST-dev.russiancompanion.v2.audit.GapClosureDossierTest.xml",
+      "sha256": "e88c09d643ee877f262ffc14a9aefa711737e9d0d926db6e8c7a964bd970b1a8",
+      "bytes": 4702
+    },
+    {
+      "path": "FIRST_COMMITTED_RESULTS/TEST-dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest.xml",
+      "sha256": "496a6611756f8310131e8208cd024ccf9922bb6a58525fdae69e95b5c279a17e",
+      "bytes": 504
+    },
+    {
+      "path": "FIRST_COMMITTED_RESULTS/TEST-dev.russiancompanion.v2.review.UnitReviewPipelineTest.xml",
+      "sha256": "59cb8a9fd0e52fa218f1b2417dd37e2595f9a68f52f9009a726936b61ffe4e70",
+      "bytes": 484
+    },
+    {
+      "path": "FIRST_COMMITTED_RUN.txt",
+      "sha256": "ca9587c22230e53386ff70ff818db0826b02fda9acb5326382da7b3b0b7fb334",
+      "bytes": 5286
+    },
+    {
+      "path": "FOOTER_RUNTIME_RESULTS/TEST-dev.russiancompanion.data.local.DatabaseMigrationTest.xml",
+      "sha256": "98ed3979c40d8f6e504525a61c9fff3bb11c2d8f584ad2926fcea5ab0f3249eb",
+      "bytes": 1431
+    },
+    {
+      "path": "FOOTER_RUNTIME_RESULTS/TEST-dev.russiancompanion.v2.BackupLicenseTest.xml",
+      "sha256": "bce05be69086a3795b149ea5262d02a361f5ac1282bed3483c31643236779bea",
+      "bytes": 5994
+    },
+    {
+      "path": "FOOTER_RUNTIME_RESULTS/TEST-dev.russiancompanion.v2.CumulativeReviewGateTest.xml",
+      "sha256": "3c15e105396cd399a66e15109d2284477b1fa8c50ab5f5cb862f39ca96bde05c",
+      "bytes": 8318
+    },
+    {
+      "path": "FOOTER_RUNTIME_RESULTS/TEST-dev.russiancompanion.v2.CumulativeReviewStorageTest.xml",
+      "sha256": "61b1a5cc2c0bb23583d7a7407858027ba3aa521b9603274bf90caa6ccbd8803c",
+      "bytes": 293347
+    },
+    {
+      "path": "FOOTER_RUNTIME_RUN.txt",
+      "sha256": "f0423f8345dcba66424ec5514d7c1768f1a7330c2189a0e297aa5a35b5989f7d",
+      "bytes": 3517
+    },
+    {
+      "path": "IMPLEMENTATION_SCOPE.md",
+      "sha256": "1da99202899882ecc032dfaf5609f8bc87a5e8d757f3cfdea175e209ddf48b4d",
+      "bytes": 3511
+    },
+    {
+      "path": "INITIAL_COMPILATION_FAILURE.txt",
+      "sha256": "402a640ddbe0eef18b47985f5d29551fd554690aa17a708e230654486533458a",
+      "bytes": 4445
+    },
+    {
+      "path": "INITIAL_CONTEXT.json",
+      "sha256": "29da216f1f22c91288a4f09c474d73aa716222377b0a154af02b456c67fae325",
+      "bytes": 4421
+    },
+    {
+      "path": "INITIAL_MAIN_COMPILE.txt",
+      "sha256": "57c87e9c5d923cde5428997773e0037a942e59138431af16a7f8a6a4ae31f5a9",
+      "bytes": 1750
+    },
+    {
+      "path": "INITIAL_RUNTIME_RESULTS/TEST-dev.russiancompanion.data.local.DatabaseMigrationTest.xml",
+      "sha256": "a6261fa0ab49868f41b35c672507b7519ed0fbc9bd2de954abd4d9d6dcc9b491",
+      "bytes": 1432
+    },
+    {
+      "path": "INITIAL_RUNTIME_RESULTS/TEST-dev.russiancompanion.v2.BackupLicenseTest.xml",
+      "sha256": "f8ad164bb425a375a196244d2c4d5b8c512ea32fa8254a4eb7c0a39ed79ed4a8",
+      "bytes": 10438
+    },
+    {
+      "path": "INITIAL_RUNTIME_RESULTS/TEST-dev.russiancompanion.v2.CumulativeReviewGateTest.xml",
+      "sha256": "1774d434a4eb778e4ba02dd02012df405caad49266c02c11182d3c2a23bad2e5",
+      "bytes": 157800
+    },
+    {
+      "path": "INITIAL_RUNTIME_RESULTS/TEST-dev.russiancompanion.v2.CumulativeReviewStorageTest.xml",
+      "sha256": "3352f3a965410e5ef3a20fda63d829b9b688a07e93317b498707ea66897fabf8",
+      "bytes": 3420
+    },
+    {
+      "path": "INITIAL_RUNTIME_RUN.txt",
+      "sha256": "32c1b231beb560883a9f666807aed00cf1a31ecba2696aba11a44c1ba71afd47",
+      "bytes": 13865
+    },
+    {
+      "path": "ISOLATED_RUNTIME_CONTEXT.json",
+      "sha256": "30a50b0c590d896049e505755cdd3bdfaa14141819628a2354c67da6d3117545",
+      "bytes": 644
+    },
+    {
+      "path": "ISOLATED_RUNTIME_RESULTS/TEST-dev.russiancompanion.v2.RuntimeCorrectionTest.xml",
+      "sha256": "8da811f4f44ed358f0a949f04d9cf75f74eaa2fa4afd61f0d538c24ef161cf08",
+      "bytes": 491
+    },
+    {
+      "path": "ISOLATED_RUNTIME_RUN.txt",
+      "sha256": "d77c47706bac4cc368c7a8ae58aa6e3252e4ede65938a7788ac13400693f746c",
+      "bytes": 2416
+    },
+    {
+      "path": "SECOND_COMMITTED_CONTEXT.json",
+      "sha256": "d19683bd9a5426d9794381a567b87dd8c6b77f829f35876b269738c1caacd4db",
+      "bytes": 397
+    },
+    {
+      "path": "SECOND_COMMITTED_RESULTS/TEST-dev.russiancompanion.data.local.DatabaseMigrationTest.xml",
+      "sha256": "33c0e8547221926e4da68e91c0c4728925cd174c2e1eb74f2f497286e0641988",
+      "bytes": 1433
+    },
+    {
+      "path": "SECOND_COMMITTED_RESULTS/TEST-dev.russiancompanion.release.ReleaseSourceDigestTest.xml",
+      "sha256": "62ff8546500d181d6f83c7b1d3552ef912442ba5117fc7097791d7ad9d72a21a",
+      "bytes": 500
+    },
+    {
+      "path": "SECOND_COMMITTED_RESULTS/TEST-dev.russiancompanion.v2.BackupLicenseTest.xml",
+      "sha256": "70e3d58ff3459c028dd9773e236724e2ff64d22cd1f363795d9a885b17ca6999",
+      "bytes": 16882
+    },
+    {
+      "path": "SECOND_COMMITTED_RESULTS/TEST-dev.russiancompanion.v2.BackupSnapshotCorrectionTest.xml",
+      "sha256": "a37b074c25a5cacdaaf161cef8f4678b17f18f8d0c38fd59e352edd6573e8596",
+      "bytes": 505
+    },
+    {
+      "path": "SECOND_COMMITTED_RESULTS/TEST-dev.russiancompanion.v2.BatchECapabilityResearchTest.xml",
+      "sha256": "1bde0bf95994820f25d21cb57377bd143fddf7ee2332e6298d47b72aa56addae",
+      "bytes": 485
+    },
+    {
+      "path": "SECOND_COMMITTED_RESULTS/TEST-dev.russiancompanion.v2.CumulativeReviewGateTest.xml",
+      "sha256": "f453b1b0d65e659dfd70d6c2435b11953218db80ba23df039d41c62107e02b7c",
+      "bytes": 5196
+    },
+    {
+      "path": "SECOND_COMMITTED_RESULTS/TEST-dev.russiancompanion.v2.CumulativeReviewStorageTest.xml",
+      "sha256": "5987eabce4ae36f7e612e548eca370cb5d05e4d4595fa951ca1851203ce0d1c3",
+      "bytes": 3515
+    },
+    {
+      "path": "SECOND_COMMITTED_RESULTS/TEST-dev.russiancompanion.v2.RuntimeCorrectionTest.xml",
+      "sha256": "490279786acc0ed9677c076430060377713339efa2be2807ee247828a7c4551a",
+      "bytes": 7713
+    },
+    {
+      "path": "SECOND_COMMITTED_RESULTS/TEST-dev.russiancompanion.v2.Unit4NominativeRoleTest.xml",
+      "sha256": "8239c2c7d6f486d2aace6d4229ddad548e5b38eea46b3474e1981af1a8740eb0",
+      "bytes": 491
+    },
+    {
+      "path": "SECOND_COMMITTED_RESULTS/TEST-dev.russiancompanion.v2.Units2630SourceIntakeTest.xml",
+      "sha256": "ef79c32098474eae9c299274b2897893c6b1e42bf6c3017f5e4479730801f764",
+      "bytes": 1119
+    },
+    {
+      "path": "SECOND_COMMITTED_RESULTS/TEST-dev.russiancompanion.v2.V2RebuildTest.xml",
+      "sha256": "78533c5def20f8f0b96c470b92a13b15b22bcade3dc934b13381e5d3fc5c5214",
+      "bytes": 6719
+    },
+    {
+      "path": "SECOND_COMMITTED_RESULTS/TEST-dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest.xml",
+      "sha256": "690bdeb41e97ba1f613ff968921398bfeb1e4853bf3f67f8fa53b63d56288c3d",
+      "bytes": 525
+    },
+    {
+      "path": "SECOND_COMMITTED_RESULTS/TEST-dev.russiancompanion.v2.audit.GapClosureDossierTest.xml",
+      "sha256": "40c49b9ec93daa17370ed18860d295f1f867d89ab7fd52a4114086441822a400",
+      "bytes": 493
+    },
+    {
+      "path": "SECOND_COMMITTED_RESULTS/TEST-dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest.xml",
+      "sha256": "358e67690f7b96fdf9e495c9d4f352c4256e3d13981c184a75c5a3767359e589",
+      "bytes": 945
+    },
+    {
+      "path": "SECOND_COMMITTED_RESULTS/TEST-dev.russiancompanion.v2.review.UnitReviewPipelineTest.xml",
+      "sha256": "c494bfda171dd6dba32a5cff825bb2fbd934f8c8252a43147253f372f8f3bb2d",
+      "bytes": 482
+    },
+    {
+      "path": "SECOND_COMMITTED_RUN.txt",
+      "sha256": "4a97edd07a1b4ca97be33ea8a8b66ddab04a5f25305f73c5975ea9eeb81eaa20",
+      "bytes": 3945
+    },
+    {
+      "path": "UNIT3_REVIEW_ACTIVATION.json",
+      "sha256": "e3de4fbd6a8e961559c2fa320f87cfc87d0da57a499bb5948af42075d3818212",
+      "bytes": 15444
+    },
+    {
+      "path": "VERIFIED_RUNTIME_CONTEXT.json",
+      "sha256": "2024c696f8f7389db6546b95fc693619175d5a3ba9439ff4ca1eac6fe77b254a",
+      "bytes": 363
+    },
+    {
+      "path": "VERIFIED_RUNTIME_RESULTS/TEST-dev.russiancompanion.data.local.DatabaseMigrationTest.xml",
+      "sha256": "d553e8bdc036666a099ee379f1771b33867e5d588c174f33b52286da27289c2e",
+      "bytes": 1434
+    },
+    {
+      "path": "VERIFIED_RUNTIME_RESULTS/TEST-dev.russiancompanion.v2.BackupLicenseTest.xml",
+      "sha256": "be907ae2523df5f439be6a1b7b86a08ea78a4db84771ce1781f9db65b55c4e22",
+      "bytes": 5646
+    },
+    {
+      "path": "VERIFIED_RUNTIME_RESULTS/TEST-dev.russiancompanion.v2.CumulativeReviewGateTest.xml",
+      "sha256": "b2ea11ebee2386691d965baf851fbc4e733928af583efbfabe9e4e7465385cfb",
+      "bytes": 2284
+    },
+    {
+      "path": "VERIFIED_RUNTIME_RESULTS/TEST-dev.russiancompanion.v2.CumulativeReviewStorageTest.xml",
+      "sha256": "9eb49e81e302e70cdfa295c13f119a714bb3ce730c1ef0e9b33100f5621f6bc1",
+      "bytes": 337948
+    },
+    {
+      "path": "VERIFIED_RUNTIME_RUN.txt",
+      "sha256": "ba0e157039e78315f12ede6bbeea0eab9e68568184e987549b9f5e211f776e92",
+      "bytes": 3035
+    },
+    {
+      "path": "verify.sh",
+      "sha256": "ae702d7f8b92a6c1458d2aee20a9a5101640667e06d8124fc5c162da8c715aa2",
+      "bytes": 1836
+    }
+  ]
+}
