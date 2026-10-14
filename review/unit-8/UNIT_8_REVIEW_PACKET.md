@@ -12,11 +12,11 @@ Unit 8 remains in development. Its readiness is content-complete and review-pend
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
 - Curriculum source commit: 4a67bce3a8c94efd7e63f49d911f91746376ecb2
-- Unit content-review SHA-256: 4e96407d31d4af7665321b509f83ce7508ccf510cf7f90d91ed5e4ba319088f8
+- Unit content-review SHA-256: 96b3a661d0ad5edd55ed44e2890a88250081275a7881713c9daf37ed94d7f42a
 - Mapping-package SHA-256: 3e6c6b7d1ed5142212fe254e14d7d6ebb9ecdf862b9dce921a415ba8e45411f1
-- Pack content-review SHA-256: 1cdf383e65186a41c1aee38d56138886beb437a4600e9fcfd200aaf51c59981d
-- Review-package SHA-256: 3603f8aaf56d36a5856bfe960fbbf7de936213578fd6422c0d4a0c61d6358c19
-- Repository source SHA-256: 39c36b02c8f58eadd31b9ecc63e9e9b51b093aac40b022e2574689f3984c89b2
+- Pack content-review SHA-256: 6891fb25a4c81c5cbb49e5f1812e8cbb7a71379392b7b85c30c011f1bb57153c
+- Review-package SHA-256: 69cee2295feec970cb01af1a41c88fb7d4d45bb80ca661b0dd25f8ecc6378a66
+- Repository source SHA-256: 4967ace9f8d0257bb91598175c50759793963aee2594a63d223b13382f908e26
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -96,13 +96,13 @@ estimatedMinutes=78
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 0be3713e54996cc53576e4ab167105e900c7f8172cad36c58313f080b841f9d4
+- Content hash: ff503aa7f2e1860a730dbab616fbc4f5e8a455c23cfae5651c323954d23dcbdc
 
 requireInstruction=true
 requireBookSelfAttestation=true
 requireAppChecks=true
 minimumDistinctChecks=18
-requireDueReview=false
+requireDueReview=true
 tutorOptional=true
 
 ### OBJECTIVE `obj-u8-plural`
