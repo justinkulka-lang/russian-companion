@@ -1,0 +1,13 @@
+{
+  "testedCommit": "cf0b6fceac39f724aa660725e496be2f34e43b2b",
+  "command": "./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*RuntimeCorrectionTest.failedAdvancementLeavesTheReviewInPlace' --max-workers=4 --console=plain",
+  "counts": {
+    "tests": 1,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "runnerExitCode": 0,
+  "sourceUnchanged": true,
+  "diagnosis": "Existing method passes unchanged in isolation;first parallel scope did not observe Saved within five seconds. Extend only this final Saved wait to30s;retain status/completion/profile assertions and production behavior."
+}

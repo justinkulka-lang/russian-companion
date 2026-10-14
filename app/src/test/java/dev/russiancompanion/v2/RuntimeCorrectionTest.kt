@@ -750,7 +750,7 @@ class RuntimeCorrectionTest {
         assertEquals(1, store.v2Profile().currentUnitNumber)
         assertFalse(store.failAdvanceAfterCompletionForTests)
         compose.onNodeWithTag("v2-advance").performScrollTo().performClick()
-        awaitText("Saved")
+        awaitText("Saved", timeoutMillis = 30_000)
         assertTrue(1 in store.v2LearnerView().completedUnitNumbers)
         assertEquals(2, store.v2Profile().currentUnitNumber)
     }
@@ -877,9 +877,9 @@ class RuntimeCorrectionTest {
         compose.onNodeWithTag(tag).assertIsEnabled()
     }
 
-    private fun awaitText(text: String) {
+    private fun awaitText(text: String, timeoutMillis: Long = 5_000) {
         val start = System.currentTimeMillis()
-        while (System.currentTimeMillis() - start < 5_000) {
+        while (System.currentTimeMillis() - start < timeoutMillis) {
             compose.waitForIdle()
             if (compose.onAllNodesWithText(text, substring = true).fetchSemanticsNodes().isNotEmpty()) return
             Thread.sleep(20)

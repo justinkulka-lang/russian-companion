@@ -361,7 +361,8 @@ class BatchECapabilityResearchTest {
             30 to "97f4c8beeb1d0e6827b94bedc1e379381c763c2c3522013890b75802630440a2",
         )
         val reviewPackages = mapOf(
-            7 to "444e13e9aa62b4b120928c6f1381898565a9ff47cc2a8bf1c0edc6fc2a001a65",
+            // Unit7 due-review activation supersedes historical444e13e9aa62b4b120928c6f1381898565a9ff47cc2a8bf1c0edc6fc2a001a65.
+            7 to "b25f603bbb4d3eeb5904914cd4e5c39b3839a8a1b1ded61f1e5793331ba554ef",
             // Unit17 question-transfer correction supersedes historical 5f6ba37d5f872c8afc895c5b402d142240977157dff5f7b27c38a7104fbab6c3.
             17 to "6fe1333083ac2b7d9cd46a092533c0722f7e37688254159d3a4f611ba31d9953",
             23 to "3132b83999674df89783745ad1ec1b9b15709c9659062b0cccf858f50eae438e",
