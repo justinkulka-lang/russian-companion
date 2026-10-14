@@ -1,0 +1,18 @@
+{
+  "baselineCommit": "550049c63a590c70c0d11cd47258452a1b03c50a",
+  "rawCurriculumSha256": "3052b1dc1ac32d91c0a5b3b5be25c867a95a26c7aaaabac5445b2e72be4e297f",
+  "precedingProvenancePreserved": 6844,
+  "newPendingProvenance": 25,
+  "totalProvenance": 6869,
+  "all58CapabilitiesPreserved": true,
+  "all67PriorCanonicalPinsPreserved": true,
+  "newCanonicalPins": 1,
+  "allSourcesRightsMappingsPreserved": true,
+  "allPriorExamplesPreserved": true,
+  "other29UnitsAndOtherUnit6ObjectivesSessionsPreserved": true,
+  "onlyChangedScoredItem": "u6-i-animacy-3",
+  "deterministicReplay": true,
+  "idempotent": true,
+  "allNineOriginalDiagnosticHashesPreserved": true,
+  "semanticAcceptance": false
+}

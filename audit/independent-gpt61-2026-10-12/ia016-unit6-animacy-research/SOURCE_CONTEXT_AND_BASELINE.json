@@ -1,0 +1,1233 @@
+{
+  "repositoryCommit": "550049c63a590c70c0d11cd47258452a1b03c50a",
+  "scope": "RETAINED_SOURCE_REVIEW_AND_CURRENT_UNIT6_BASELINE_NOT_ADMISSION",
+  "sourceIdentities": [
+    {
+      "path": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+      "sha256": "60702c98a8e6178c4b140fe81e2220df1f830972913f99047502d95ecda00b16",
+      "bytes": 15454,
+      "unchangedAgainstBaseline": true
+    },
+    {
+      "path": "catalog/sources/units-6-10/wikibooks/accusative-4330404.revision.json",
+      "sha256": "d321e626bd83ae73b42ec2f49b83860d710582f9988fa909a7f25cd25c04776e",
+      "bytes": 232,
+      "unchangedAgainstBaseline": true
+    },
+    {
+      "path": "catalog/sources/units-6-10/FREEZE.json",
+      "sha256": "242d3072e10ca71e1a7acc86bbef11ff94776add3444caf3dcbc92267df85179",
+      "bytes": 30813,
+      "unchangedAgainstBaseline": true
+    },
+    {
+      "path": "catalog/sources/units-3-5/openrussian/nouns.csv",
+      "sha256": "c388f9e6dde51932832be8d7e9afdbe9f0acee72fcf70677f0fe25ea61293c84",
+      "bytes": 8378501,
+      "unchangedAgainstBaseline": true
+    },
+    {
+      "path": "catalog/sources/units-3-5/openrussian/LICENSE",
+      "sha256": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+      "bytes": 20131,
+      "unchangedAgainstBaseline": true
+    },
+    {
+      "path": "catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt",
+      "sha256": "95447e1048fcc0094d2e96f1b796b8cc65a595a6fbcd385430a97dc2631b6b40",
+      "bytes": 10475,
+      "unchangedAgainstBaseline": true
+    },
+    {
+      "path": "catalog/sources/units-3-5/wikibooks/copyrights-4622060.revision.json",
+      "sha256": "c50208f83a6c61a1fa85f11687ae883117eb01b00a533e1fb87e232b83f1d4c5",
+      "bytes": 221,
+      "unchangedAgainstBaseline": true
+    }
+  ],
+  "dictionaryHeader": [
+    "bare",
+    "accented",
+    "translations_en",
+    "translations_de",
+    "gender",
+    "partner",
+    "animate",
+    "indeclinable",
+    "sg_only",
+    "pl_only",
+    "sg_nom",
+    "sg_gen",
+    "sg_dat",
+    "sg_acc",
+    "sg_inst",
+    "sg_prep",
+    "pl_nom",
+    "pl_gen",
+    "pl_dat",
+    "pl_acc",
+    "pl_inst",
+    "pl_prep"
+  ],
+  "fullSelectedDictionaryRows": [
+    {
+      "bare": "друг",
+      "accented": "друг",
+      "translations_en": "friend",
+      "translations_de": "Freund",
+      "gender": "m",
+      "partner": "",
+      "animate": "1",
+      "indeclinable": "0",
+      "sg_only": "0",
+      "pl_only": "0",
+      "sg_nom": "друг",
+      "sg_gen": "дру'га",
+      "sg_dat": "дру'гу",
+      "sg_acc": "дру'га",
+      "sg_inst": "дру'гом",
+      "sg_prep": "дру'ге",
+      "pl_nom": "друзья'",
+      "pl_gen": "друзе'й",
+      "pl_dat": "друзья'м",
+      "pl_acc": "друзе'й",
+      "pl_inst": "друзья'ми",
+      "pl_prep": "друзья'х"
+    },
+    {
+      "bare": "дом",
+      "accented": "дом",
+      "translations_en": "house, home, house-hold",
+      "translations_de": "Haus, Gebäude, Zuhause, Heim",
+      "gender": "m",
+      "partner": "",
+      "animate": "0",
+      "indeclinable": "0",
+      "sg_only": "0",
+      "pl_only": "0",
+      "sg_nom": "до'м",
+      "sg_gen": "до'ма",
+      "sg_dat": "до'му",
+      "sg_acc": "до'м",
+      "sg_inst": "до'мом",
+      "sg_prep": "до'ме",
+      "pl_nom": "дома'",
+      "pl_gen": "домо'в",
+      "pl_dat": "дома'м",
+      "pl_acc": "дома'",
+      "pl_inst": "дома'ми",
+      "pl_prep": "дома'х"
+    },
+    {
+      "bare": "стол",
+      "accented": "стол",
+      "translations_en": "table, desk, board; diet, cooking, cuisine; department, section",
+      "translations_de": "Tisch, Tafel; Essen, Kost; Büro, Abteilung",
+      "gender": "m",
+      "partner": "",
+      "animate": "0",
+      "indeclinable": "0",
+      "sg_only": "0",
+      "pl_only": "0",
+      "sg_nom": "сто'л",
+      "sg_gen": "стола'",
+      "sg_dat": "столу'",
+      "sg_acc": "сто'л",
+      "sg_inst": "столо'м",
+      "sg_prep": "столе'",
+      "pl_nom": "столы'",
+      "pl_gen": "столо'в",
+      "pl_dat": "стола'м",
+      "pl_acc": "столы'",
+      "pl_inst": "стола'ми",
+      "pl_prep": "стола'х"
+    },
+    {
+      "bare": "брат",
+      "accented": "брат",
+      "translations_en": "brother",
+      "translations_de": "Bruder",
+      "gender": "m",
+      "partner": "",
+      "animate": "1",
+      "indeclinable": "0",
+      "sg_only": "0",
+      "pl_only": "0",
+      "sg_nom": "брат",
+      "sg_gen": "бра'та",
+      "sg_dat": "бра'ту",
+      "sg_acc": "бра'та",
+      "sg_inst": "бра'том",
+      "sg_prep": "бра'те",
+      "pl_nom": "бра'тья",
+      "pl_gen": "бра'тьев",
+      "pl_dat": "бра'тьям",
+      "pl_acc": "бра'тьев",
+      "pl_inst": "бра'тьями",
+      "pl_prep": "бра'тьях"
+    },
+    {
+      "bare": "учитель",
+      "accented": "учи'тель",
+      "translations_en": "teacher, tutor",
+      "translations_de": "Lehrer",
+      "gender": "m",
+      "partner": "учительница",
+      "animate": "1",
+      "indeclinable": "0",
+      "sg_only": "0",
+      "pl_only": "0",
+      "sg_nom": "учи'тель",
+      "sg_gen": "учи'теля",
+      "sg_dat": "учи'телю",
+      "sg_acc": "учи'теля",
+      "sg_inst": "учи'телем",
+      "sg_prep": "учи'теле",
+      "pl_nom": "учителя'",
+      "pl_gen": "учителе'й",
+      "pl_dat": "учителя'м",
+      "pl_acc": "учителе'й",
+      "pl_inst": "учителя'ми",
+      "pl_prep": "учителя'х"
+    }
+  ],
+  "originalUnit6Objective": {
+    "id": "obj-u6-animacy",
+    "unitNumber": 6,
+    "title": "Choose the admitted animate or inanimate object form",
+    "kind": "RECOGNITION",
+    "instructionStepIds": [
+      "u6-st-orient",
+      "u6-st-teach-animacy-1",
+      "u6-st-teach-animacy-2",
+      "u6-st-teach-animacy-3",
+      "u6-st-teach-animacy-4",
+      "u6-st-teach-animacy-5",
+      "u6-st-teach-animacy-6"
+    ],
+    "exampleIds": [
+      "ex-or-u6-animacy-0",
+      "ex-or-u6-animacy-1",
+      "ex-or-u6-animacy-2",
+      "ex-or-u6-animacy-3",
+      "ex-or-u6-animacy-4",
+      "ex-or-u6-animacy-5",
+      "ex-or-u6-animacy-6",
+      "ex-or-u6-animacy-7",
+      "ex-or-u6-animacy-8",
+      "ex-or-u6-animacy-9"
+    ],
+    "practiceStepIds": [
+      "u6-st-guided-animacy-1"
+    ],
+    "checkItemIds": [
+      "u6-i-animacy-1",
+      "u6-i-animacy-2",
+      "u6-i-animacy-3"
+    ],
+    "remediationStepIds": [
+      "u6-st-rem-animacy"
+    ]
+  },
+  "originalUnit6Session": {
+    "id": "u6-s-animacy",
+    "title": "Choose the admitted animate or inanimate object form",
+    "estimatedMinutes": 12,
+    "objectiveIds": [
+      "obj-u6-animacy"
+    ],
+    "steps": [
+      {
+        "id": "u6-st-teach-animacy-1",
+        "kind": "TEACH",
+        "title": "Admitted lines",
+        "body": "сто́л — table. сто́л — table. ",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ],
+        "exampleIds": [
+          "ex-or-u6-animacy-0",
+          "ex-or-u6-animacy-1"
+        ]
+      },
+      {
+        "id": "u6-st-guided-animacy-1",
+        "kind": "GUIDED",
+        "title": "Guided practice",
+        "body": "Choose the admitted record. The feedback states the frozen field.",
+        "itemIds": [
+          "u6-g-animacy-0"
+        ],
+        "remediationStepId": "u6-st-rem-animacy"
+      },
+      {
+        "id": "u6-st-teach-animacy-2",
+        "kind": "TEACH",
+        "title": "Admitted instruction",
+        "body": "If they're animated nouns, they follow the genitive rules",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ]
+      },
+      {
+        "id": "u6-st-teach-animacy-3",
+        "kind": "TEACH",
+        "title": "Admitted lines",
+        "body": "до́м — house. до́м — house. ",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ],
+        "exampleIds": [
+          "ex-or-u6-animacy-2",
+          "ex-or-u6-animacy-3"
+        ]
+      },
+      {
+        "id": "u6-st-teach-animacy-4",
+        "kind": "TEACH",
+        "title": "Admitted lines",
+        "body": "брат — brother. бра́та — brother. ",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ],
+        "exampleIds": [
+          "ex-or-u6-animacy-4",
+          "ex-or-u6-animacy-5"
+        ]
+      },
+      {
+        "id": "u6-st-teach-animacy-5",
+        "kind": "TEACH",
+        "title": "Admitted lines",
+        "body": "учи́тель — teacher. учи́теля — teacher. ",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ],
+        "exampleIds": [
+          "ex-or-u6-animacy-6",
+          "ex-or-u6-animacy-7"
+        ]
+      },
+      {
+        "id": "u6-st-teach-animacy-6",
+        "kind": "TEACH",
+        "title": "Admitted lines",
+        "body": "друг — friend. дру́га — friend. ",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ],
+        "exampleIds": [
+          "ex-or-u6-animacy-8",
+          "ex-or-u6-animacy-9"
+        ]
+      },
+      {
+        "id": "u6-st-rem-animacy",
+        "kind": "REMEDIATE",
+        "title": "Remediation",
+        "body": "If they're animated nouns, they follow the genitive rules",
+        "referenceIds": [
+          "ref-ca-cases"
+        ],
+        "exampleIds": [
+          "ex-or-u6-animacy-0",
+          "ex-or-u6-animacy-1"
+        ]
+      },
+      {
+        "id": "u6-st-check-animacy",
+        "kind": "CHECK",
+        "title": "Independent checks",
+        "body": "These checks use only admitted records. A miss returns to the explanation.",
+        "itemIds": [
+          "u6-i-animacy-1",
+          "u6-i-animacy-2",
+          "u6-i-animacy-3"
+        ],
+        "remediationStepId": "u6-st-rem-animacy"
+      }
+    ]
+  },
+  "originalUnit6Items": [
+    {
+      "id": "u6-g-animacy-0",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which singular accusative form is used when the shown masculine animate noun is the direct object?",
+      "promptLetter": "брат",
+      "options": [
+        "бра́та",
+        "брат"
+      ],
+      "answer": "бра́та",
+      "feedback": "брат is the singular nominative form; бра́та is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.",
+      "objectiveId": "obj-u6-animacy",
+      "sourceId": "src-openrussian-50e210c4",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "брат is the singular nominative form, so it does not supply the requested singular accusative form."
+      ],
+      "assessment": {
+        "testedFeature": "ANIMACY",
+        "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+        "contrastSetId": "u6-animacy-0",
+        "cueLanguage": "ru",
+        "independent": false,
+        "answerSourceIds": [
+          "prov-ex-or-u6-animacy-5"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-or-u6-animacy-4"
+        ],
+        "distractorDifference": [
+          "",
+          "брат is the singular nominative form, so it does not supply the requested singular accusative form."
+        ],
+        "whyAnswerDemonstratesObjective": "брат is the singular nominative form; бра́та is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.",
+        "contrastMembers": [
+          "бра́та",
+          "брат"
+        ],
+        "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+        "relationParticipantIds": [
+          "prov-ex-or-u6-animacy-4",
+          "prov-ex-or-u6-animacy-5",
+          "prov-ex-or-u6-animacy-4"
+        ]
+      }
+    },
+    {
+      "id": "u6-i-animacy-1",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which singular accusative form is used when the shown masculine animate noun is the direct object?",
+      "promptLetter": "учи́тель",
+      "options": [
+        "учи́теля",
+        "учи́тель"
+      ],
+      "answer": "учи́теля",
+      "feedback": "учи́тель is the singular nominative form; учи́теля is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.",
+      "objectiveId": "obj-u6-animacy",
+      "sourceId": "src-openrussian-50e210c4",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "учи́тель is the singular nominative form, so it does not supply the requested singular accusative form."
+      ],
+      "assessment": {
+        "testedFeature": "ANIMACY",
+        "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+        "contrastSetId": "u6-animacy-1",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ex-or-u6-animacy-7"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-or-u6-animacy-6"
+        ],
+        "distractorDifference": [
+          "",
+          "учи́тель is the singular nominative form, so it does not supply the requested singular accusative form."
+        ],
+        "whyAnswerDemonstratesObjective": "учи́тель is the singular nominative form; учи́теля is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.",
+        "contrastMembers": [
+          "учи́теля",
+          "учи́тель"
+        ],
+        "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+        "relationParticipantIds": [
+          "prov-ex-or-u6-animacy-6",
+          "prov-ex-or-u6-animacy-7",
+          "prov-ex-or-u6-animacy-6"
+        ]
+      }
+    },
+    {
+      "id": "u6-i-animacy-2",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which singular accusative form is used when the shown masculine animate noun is the direct object?",
+      "promptLetter": "друг",
+      "options": [
+        "дру́га",
+        "друг"
+      ],
+      "answer": "дру́га",
+      "feedback": "друг is the singular nominative form; дру́га is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.",
+      "objectiveId": "obj-u6-animacy",
+      "sourceId": "src-openrussian-50e210c4",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "друг is the singular nominative form, so it does not supply the requested singular accusative form."
+      ],
+      "assessment": {
+        "testedFeature": "ANIMACY",
+        "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+        "contrastSetId": "u6-animacy-2",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ex-or-u6-animacy-9"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-or-u6-animacy-8"
+        ],
+        "distractorDifference": [
+          "",
+          "друг is the singular nominative form, so it does not supply the requested singular accusative form."
+        ],
+        "whyAnswerDemonstratesObjective": "друг is the singular nominative form; дру́га is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.",
+        "contrastMembers": [
+          "дру́га",
+          "друг"
+        ],
+        "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+        "relationParticipantIds": [
+          "prov-ex-or-u6-animacy-8",
+          "prov-ex-or-u6-animacy-9",
+          "prov-ex-or-u6-animacy-8"
+        ]
+      }
+    },
+    {
+      "id": "u6-i-animacy-3",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which singular accusative form is used when the shown masculine animate noun is the direct object?",
+      "promptLetter": "учи́тель",
+      "options": [
+        "учи́теля",
+        "учи́тель"
+      ],
+      "answer": "учи́теля",
+      "feedback": "учи́тель is the singular nominative form; учи́теля is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.",
+      "objectiveId": "obj-u6-animacy",
+      "sourceId": "src-openrussian-50e210c4",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "учи́тель is the singular nominative form, so it does not supply the requested singular accusative form."
+      ],
+      "assessment": {
+        "testedFeature": "ANIMACY",
+        "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+        "contrastSetId": "u6-animacy-3",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ex-or-u6-animacy-7"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-or-u6-animacy-6"
+        ],
+        "distractorDifference": [
+          "",
+          "учи́тель is the singular nominative form, so it does not supply the requested singular accusative form."
+        ],
+        "whyAnswerDemonstratesObjective": "учи́тель is the singular nominative form; учи́теля is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.",
+        "contrastMembers": [
+          "учи́теля",
+          "учи́тель"
+        ],
+        "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+        "relationParticipantIds": [
+          "prov-ex-or-u6-animacy-6",
+          "prov-ex-or-u6-animacy-7",
+          "prov-ex-or-u6-animacy-6"
+        ]
+      }
+    }
+  ],
+  "originalUnit6Provenance": [
+    {
+      "itemId": "prov-ex-or-u6-animacy-0",
+      "unitNumber": 6,
+      "objectiveId": "obj-u6-animacy",
+      "recordType": "lexical record",
+      "sourceId": "src-openrussian-50e210c4",
+      "sourceUrl": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv",
+      "sourceRevision": "50e210c4803237779cb562bc1abcea529066031c",
+      "sourceRecordId": "nouns.csv:стол#sg_nom",
+      "originalSourceText": "сто'л",
+      "shippedText": "сто́л",
+      "transformation": "formatting",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "6ffdb9ee5ac5807ea8e6855321d74cb2913caec8e590deb7ae68017a602b072e",
+      "contentHash": "fbd569200eced2f5c7de45fbc2ae050ecd4835bdfea568ba34f8a5b72a673166",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "itemId": "prov-ex-or-u6-animacy-0-gloss",
+      "unitNumber": 6,
+      "objectiveId": "obj-u6-animacy",
+      "recordType": "lexical record",
+      "sourceId": "src-openrussian-50e210c4",
+      "sourceUrl": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv",
+      "sourceRevision": "50e210c4803237779cb562bc1abcea529066031c",
+      "sourceRecordId": "nouns.csv:стол#translations_en",
+      "originalSourceText": "table, desk, board; diet, cooking, cuisine; department, section",
+      "shippedText": "table",
+      "transformation": "sense selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "f27cc2c8a71de4aef61cea7eb4777768cd53c906f03627296bd3b8998c919ab6",
+      "contentHash": "0d4fc4a78d3706edccafb665a8b2fdd9309e82c78625bb0f2b8e7bb9e1c4d21c",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "itemId": "prov-ex-or-u6-animacy-1",
+      "unitNumber": 6,
+      "objectiveId": "obj-u6-animacy",
+      "recordType": "lexical record",
+      "sourceId": "src-openrussian-50e210c4",
+      "sourceUrl": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv",
+      "sourceRevision": "50e210c4803237779cb562bc1abcea529066031c",
+      "sourceRecordId": "nouns.csv:стол#sg_acc",
+      "originalSourceText": "сто'л",
+      "shippedText": "сто́л",
+      "transformation": "formatting",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "6ffdb9ee5ac5807ea8e6855321d74cb2913caec8e590deb7ae68017a602b072e",
+      "contentHash": "fbd569200eced2f5c7de45fbc2ae050ecd4835bdfea568ba34f8a5b72a673166",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "itemId": "prov-ex-or-u6-animacy-1-gloss",
+      "unitNumber": 6,
+      "objectiveId": "obj-u6-animacy",
+      "recordType": "lexical record",
+      "sourceId": "src-openrussian-50e210c4",
+      "sourceUrl": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv",
+      "sourceRevision": "50e210c4803237779cb562bc1abcea529066031c",
+      "sourceRecordId": "nouns.csv:стол#translations_en",
+      "originalSourceText": "table, desk, board; diet, cooking, cuisine; department, section",
+      "shippedText": "table",
+      "transformation": "sense selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "f27cc2c8a71de4aef61cea7eb4777768cd53c906f03627296bd3b8998c919ab6",
+      "contentHash": "0d4fc4a78d3706edccafb665a8b2fdd9309e82c78625bb0f2b8e7bb9e1c4d21c",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "itemId": "prov-ex-or-u6-animacy-2",
+      "unitNumber": 6,
+      "objectiveId": "obj-u6-animacy",
+      "recordType": "lexical record",
+      "sourceId": "src-openrussian-50e210c4",
+      "sourceUrl": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv",
+      "sourceRevision": "50e210c4803237779cb562bc1abcea529066031c",
+      "sourceRecordId": "nouns.csv:дом#sg_nom",
+      "originalSourceText": "до'м",
+      "shippedText": "до́м",
+      "transformation": "formatting",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "ce94ec5fc770def6f9e65baa3fdb9ccb1e092f3059486e1179ebb1dd3f7b1ed9",
+      "contentHash": "dff2181fee228a7f01235ebbe64bd232b28eb0364ca02c0b2b82abc9e1da070d",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "itemId": "prov-ex-or-u6-animacy-2-gloss",
+      "unitNumber": 6,
+      "objectiveId": "obj-u6-animacy",
+      "recordType": "lexical record",
+      "sourceId": "src-openrussian-50e210c4",
+      "sourceUrl": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv",
+      "sourceRevision": "50e210c4803237779cb562bc1abcea529066031c",
+      "sourceRecordId": "nouns.csv:дом#translations_en",
+      "originalSourceText": "house, home, house-hold",
+      "shippedText": "house",
+      "transformation": "sense selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "d5140b4f5c763738e8327a10a66a10858446112daaa55417c81397dd4c9da2f0",
+      "contentHash": "d6e21286621a8586f7e54720ab5a39c93acc2f4b8fba7a16ec1c24d69a08c613",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "itemId": "prov-ex-or-u6-animacy-3",
+      "unitNumber": 6,
+      "objectiveId": "obj-u6-animacy",
+      "recordType": "lexical record",
+      "sourceId": "src-openrussian-50e210c4",
+      "sourceUrl": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv",
+      "sourceRevision": "50e210c4803237779cb562bc1abcea529066031c",
+      "sourceRecordId": "nouns.csv:дом#sg_acc",
+      "originalSourceText": "до'м",
+      "shippedText": "до́м",
+      "transformation": "formatting",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "ce94ec5fc770def6f9e65baa3fdb9ccb1e092f3059486e1179ebb1dd3f7b1ed9",
+      "contentHash": "dff2181fee228a7f01235ebbe64bd232b28eb0364ca02c0b2b82abc9e1da070d",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "itemId": "prov-ex-or-u6-animacy-3-gloss",
+      "unitNumber": 6,
+      "objectiveId": "obj-u6-animacy",
+      "recordType": "lexical record",
+      "sourceId": "src-openrussian-50e210c4",
+      "sourceUrl": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv",
+      "sourceRevision": "50e210c4803237779cb562bc1abcea529066031c",
+      "sourceRecordId": "nouns.csv:дом#translations_en",
+      "originalSourceText": "house, home, house-hold",
+      "shippedText": "house",
+      "transformation": "sense selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "d5140b4f5c763738e8327a10a66a10858446112daaa55417c81397dd4c9da2f0",
+      "contentHash": "d6e21286621a8586f7e54720ab5a39c93acc2f4b8fba7a16ec1c24d69a08c613",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "itemId": "prov-ex-or-u6-animacy-4",
+      "unitNumber": 6,
+      "objectiveId": "obj-u6-animacy",
+      "recordType": "lexical record",
+      "sourceId": "src-openrussian-50e210c4",
+      "sourceUrl": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv",
+      "sourceRevision": "50e210c4803237779cb562bc1abcea529066031c",
+      "sourceRecordId": "nouns.csv:брат#sg_nom",
+      "originalSourceText": "брат",
+      "shippedText": "брат",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "d99306448e987d2ba1fcec05cfa520ffb0d0df90d6caea50b1263dc62637e5e4",
+      "contentHash": "d99306448e987d2ba1fcec05cfa520ffb0d0df90d6caea50b1263dc62637e5e4",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "itemId": "prov-ex-or-u6-animacy-4-gloss",
+      "unitNumber": 6,
+      "objectiveId": "obj-u6-animacy",
+      "recordType": "lexical record",
+      "sourceId": "src-openrussian-50e210c4",
+      "sourceUrl": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv",
+      "sourceRevision": "50e210c4803237779cb562bc1abcea529066031c",
+      "sourceRecordId": "nouns.csv:брат#translations_en",
+      "originalSourceText": "brother",
+      "shippedText": "brother",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "0b4bd77cec705cf5df016344c0fc673fb3c2240078e6af572b2c5c6fa76114af",
+      "contentHash": "0b4bd77cec705cf5df016344c0fc673fb3c2240078e6af572b2c5c6fa76114af",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "itemId": "prov-ex-or-u6-animacy-5",
+      "unitNumber": 6,
+      "objectiveId": "obj-u6-animacy",
+      "recordType": "lexical record",
+      "sourceId": "src-openrussian-50e210c4",
+      "sourceUrl": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv",
+      "sourceRevision": "50e210c4803237779cb562bc1abcea529066031c",
+      "sourceRecordId": "nouns.csv:брат#sg_acc",
+      "originalSourceText": "бра'та",
+      "shippedText": "бра́та",
+      "transformation": "formatting",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "5ace6e52a292bde580d32d836b20e71cb9f956a563d89946d3c55aae80a706ab",
+      "contentHash": "8dd76dd3b7456d4028cd5c4d35ac5df6ae9343361cddb05b33e6b1f786245a94",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "itemId": "prov-ex-or-u6-animacy-5-gloss",
+      "unitNumber": 6,
+      "objectiveId": "obj-u6-animacy",
+      "recordType": "lexical record",
+      "sourceId": "src-openrussian-50e210c4",
+      "sourceUrl": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv",
+      "sourceRevision": "50e210c4803237779cb562bc1abcea529066031c",
+      "sourceRecordId": "nouns.csv:брат#translations_en",
+      "originalSourceText": "brother",
+      "shippedText": "brother",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "0b4bd77cec705cf5df016344c0fc673fb3c2240078e6af572b2c5c6fa76114af",
+      "contentHash": "0b4bd77cec705cf5df016344c0fc673fb3c2240078e6af572b2c5c6fa76114af",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "itemId": "prov-ex-or-u6-animacy-6",
+      "unitNumber": 6,
+      "objectiveId": "obj-u6-animacy",
+      "recordType": "lexical record",
+      "sourceId": "src-openrussian-50e210c4",
+      "sourceUrl": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv",
+      "sourceRevision": "50e210c4803237779cb562bc1abcea529066031c",
+      "sourceRecordId": "nouns.csv:учитель#sg_nom",
+      "originalSourceText": "учи'тель",
+      "shippedText": "учи́тель",
+      "transformation": "formatting",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "d9d921149c4cb276aab3caa34a92aef9e0c3df8bb8460aae611476b1b19e7787",
+      "contentHash": "037b0dff83964605488915901e620e29f769c25ee275b205a2aca9ee9446b6eb",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "itemId": "prov-ex-or-u6-animacy-6-gloss",
+      "unitNumber": 6,
+      "objectiveId": "obj-u6-animacy",
+      "recordType": "lexical record",
+      "sourceId": "src-openrussian-50e210c4",
+      "sourceUrl": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv",
+      "sourceRevision": "50e210c4803237779cb562bc1abcea529066031c",
+      "sourceRecordId": "nouns.csv:учитель#translations_en",
+      "originalSourceText": "teacher, tutor",
+      "shippedText": "teacher",
+      "transformation": "sense selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "9ea0353cc2b9ccaa9554efddbad2d9c8bbebae73b5f47730461e4b4df72d198e",
+      "contentHash": "1057a9604e04b274da5a4de0c8f4b4868d9b230989f8c8c6a28221143cc5a755",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "itemId": "prov-ex-or-u6-animacy-7",
+      "unitNumber": 6,
+      "objectiveId": "obj-u6-animacy",
+      "recordType": "lexical record",
+      "sourceId": "src-openrussian-50e210c4",
+      "sourceUrl": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv",
+      "sourceRevision": "50e210c4803237779cb562bc1abcea529066031c",
+      "sourceRecordId": "nouns.csv:учитель#sg_acc",
+      "originalSourceText": "учи'теля",
+      "shippedText": "учи́теля",
+      "transformation": "formatting",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "54a7afa12673770bd2cced59188f16105c2f6e069b1bd079758ee2606ac662ab",
+      "contentHash": "05d6b5e3e1d88ddb54a0c2b6a3981fd92f601246afc01ea86bb84f161310521e",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "itemId": "prov-ex-or-u6-animacy-7-gloss",
+      "unitNumber": 6,
+      "objectiveId": "obj-u6-animacy",
+      "recordType": "lexical record",
+      "sourceId": "src-openrussian-50e210c4",
+      "sourceUrl": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv",
+      "sourceRevision": "50e210c4803237779cb562bc1abcea529066031c",
+      "sourceRecordId": "nouns.csv:учитель#translations_en",
+      "originalSourceText": "teacher, tutor",
+      "shippedText": "teacher",
+      "transformation": "sense selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "9ea0353cc2b9ccaa9554efddbad2d9c8bbebae73b5f47730461e4b4df72d198e",
+      "contentHash": "1057a9604e04b274da5a4de0c8f4b4868d9b230989f8c8c6a28221143cc5a755",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "itemId": "prov-ex-or-u6-animacy-8",
+      "unitNumber": 6,
+      "objectiveId": "obj-u6-animacy",
+      "recordType": "lexical record",
+      "sourceId": "src-openrussian-50e210c4",
+      "sourceUrl": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv",
+      "sourceRevision": "50e210c4803237779cb562bc1abcea529066031c",
+      "sourceRecordId": "nouns.csv:друг#sg_nom",
+      "originalSourceText": "друг",
+      "shippedText": "друг",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "a963d21beea64b7e2630a5ddd1a7e8673fd457896ffdae03242bda9f147aa354",
+      "contentHash": "a963d21beea64b7e2630a5ddd1a7e8673fd457896ffdae03242bda9f147aa354",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "itemId": "prov-ex-or-u6-animacy-8-gloss",
+      "unitNumber": 6,
+      "objectiveId": "obj-u6-animacy",
+      "recordType": "lexical record",
+      "sourceId": "src-openrussian-50e210c4",
+      "sourceUrl": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv",
+      "sourceRevision": "50e210c4803237779cb562bc1abcea529066031c",
+      "sourceRecordId": "nouns.csv:друг#translations_en",
+      "originalSourceText": "friend",
+      "shippedText": "friend",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "cde48537ca2c28084ff560826d0e6388b7c57a51497a6cb56f397289e52ff41b",
+      "contentHash": "cde48537ca2c28084ff560826d0e6388b7c57a51497a6cb56f397289e52ff41b",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "itemId": "prov-ex-or-u6-animacy-9",
+      "unitNumber": 6,
+      "objectiveId": "obj-u6-animacy",
+      "recordType": "lexical record",
+      "sourceId": "src-openrussian-50e210c4",
+      "sourceUrl": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv",
+      "sourceRevision": "50e210c4803237779cb562bc1abcea529066031c",
+      "sourceRecordId": "nouns.csv:друг#sg_acc",
+      "originalSourceText": "дру'га",
+      "shippedText": "дру́га",
+      "transformation": "formatting",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "456e8a50b3628151e3c591b5bc2dba76f7e0c5b5000fce07252206cfff2c1046",
+      "contentHash": "897bfa3068efda34368b7415bdbc63725da949f7f45e8bffe54b711716ae217f",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "itemId": "prov-ex-or-u6-animacy-9-gloss",
+      "unitNumber": 6,
+      "objectiveId": "obj-u6-animacy",
+      "recordType": "lexical record",
+      "sourceId": "src-openrussian-50e210c4",
+      "sourceUrl": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv",
+      "sourceRevision": "50e210c4803237779cb562bc1abcea529066031c",
+      "sourceRecordId": "nouns.csv:друг#translations_en",
+      "originalSourceText": "friend",
+      "shippedText": "friend",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "cde48537ca2c28084ff560826d0e6388b7c57a51497a6cb56f397289e52ff41b",
+      "contentHash": "cde48537ca2c28084ff560826d0e6388b7c57a51497a6cb56f397289e52ff41b",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "itemId": "prov-u6-animacy-rem",
+      "unitNumber": 6,
+      "objectiveId": "obj-u6-animacy",
+      "recordType": "instruction",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Accusative_case?oldid=4330404",
+      "sourceRevision": "4330404",
+      "sourceRecordId": "accusative:If they're animated nouns, they follow the genitive rules",
+      "originalSourceText": "If they're animated nouns, they follow the genitive rules",
+      "shippedText": "If they're animated nouns, they follow the genitive rules",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "634d3d8562cf2074f4403d4314fe2f092252a9d8fa4bb97bcd154458707db6a0",
+      "contentHash": "634d3d8562cf2074f4403d4314fe2f092252a9d8fa4bb97bcd154458707db6a0",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "itemId": "prov-u6-animacy-x-0",
+      "unitNumber": 6,
+      "objectiveId": "obj-u6-animacy",
+      "recordType": "instruction",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Accusative_case?oldid=4330404",
+      "sourceRevision": "4330404",
+      "sourceRecordId": "accusative:So, masculine nouns denoting inanimate objects in the accusative case are the sa",
+      "originalSourceText": "So, masculine nouns denoting inanimate objects in the accusative case are the same as in the nominative case.",
+      "shippedText": "So, masculine nouns denoting inanimate objects in the accusative case are the same as in the nominative case.",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history for each frozen oldid identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "67491d1be7ae9d15bd56d290004d8dc894ae05eaa29f88ac80c65ebe43a568d7",
+      "contentHash": "67491d1be7ae9d15bd56d290004d8dc894ae05eaa29f88ac80c65ebe43a568d7",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "itemId": "prov-ca-declension-u6-g-animacy-0-0",
+      "unitNumber": 6,
+      "objectiveId": "obj-u6-animacy",
+      "recordType": "label",
+      "sourceId": "src-content-audit-research",
+      "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-coverage:obj-u6-animacy:u6-g-animacy-0:declension-explanation:0",
+      "originalSourceText": "OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:брат#sg_nom; nouns.csv:брат#sg_acc; nouns.csv:брат#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.\nWhich singular accusative form is used when the shown masculine animate noun is the direct object?",
+      "shippedText": "Which singular accusative form is used when the shown masculine animate noun is the direct object?",
+      "transformation": "content-audit research synthesis",
+      "licenseId": "Original app text",
+      "licenseUrl": "urn:russian-companion:license:original-app-text",
+      "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+      "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+      "sourceHash": "ee0a61182bcef6d9d32b9bf1afbdce6d4c822d3ec7e97e34e5a603152657bbab",
+      "contentHash": "103e38b146ac39f0b56994d99056ed51b70372fc37917792db6be3f448409516",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "synthesis": {
+        "bibliography": "OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:брат#sg_nom; nouns.csv:брат#sg_acc; nouns.csv:брат#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.",
+        "sourceDateOrVersion": "2026-10-08",
+        "authorshipDeclaration": "Independently authored English explanation for Russian Companion; inflected Russian cells remain the separately frozen OpenRussian records.",
+        "objectiveOrClaimBinding": "obj-u6-animacy:u6-g-animacy-0:declension-explanation:0"
+      }
+    },
+    {
+      "itemId": "prov-ca-declension-u6-g-animacy-0-1",
+      "unitNumber": 6,
+      "objectiveId": "obj-u6-animacy",
+      "recordType": "label",
+      "sourceId": "src-content-audit-research",
+      "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-coverage:obj-u6-animacy:u6-g-animacy-0:declension-explanation:1",
+      "originalSourceText": "OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:брат#sg_nom; nouns.csv:брат#sg_acc; nouns.csv:брат#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.\nбрат is the singular nominative form; бра́та is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.",
+      "shippedText": "брат is the singular nominative form; бра́та is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.",
+      "transformation": "content-audit research synthesis",
+      "licenseId": "Original app text",
+      "licenseUrl": "urn:russian-companion:license:original-app-text",
+      "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+      "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+      "sourceHash": "22a027091c6f3216cec7d13b7a9f14634e264dbeb4e6f03f42361aaf2078df68",
+      "contentHash": "77ff91ad3ec9875895e2ee2ea5ebb89076a992d1c4f0bdd56d9e6de932e97c34",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "synthesis": {
+        "bibliography": "OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:брат#sg_nom; nouns.csv:брат#sg_acc; nouns.csv:брат#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.",
+        "sourceDateOrVersion": "2026-10-08",
+        "authorshipDeclaration": "Independently authored English explanation for Russian Companion; inflected Russian cells remain the separately frozen OpenRussian records.",
+        "objectiveOrClaimBinding": "obj-u6-animacy:u6-g-animacy-0:declension-explanation:1"
+      }
+    },
+    {
+      "itemId": "prov-ca-declension-u6-g-animacy-0-3",
+      "unitNumber": 6,
+      "objectiveId": "obj-u6-animacy",
+      "recordType": "label",
+      "sourceId": "src-content-audit-research",
+      "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-coverage:obj-u6-animacy:u6-g-animacy-0:declension-explanation:3",
+      "originalSourceText": "OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:брат#sg_nom; nouns.csv:брат#sg_acc; nouns.csv:брат#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.\nбрат is the singular nominative form, so it does not supply the requested singular accusative form.",
+      "shippedText": "брат is the singular nominative form, so it does not supply the requested singular accusative form.",
+      "transformation": "content-audit research synthesis",
+      "licenseId": "Original app text",
+      "licenseUrl": "urn:russian-companion:license:original-app-text",
+      "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+      "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+      "sourceHash": "bffda3214d60d4f3cad4f1edfda55be0a6d41c390c4bf72aeea61d5a3e2e937a",
+      "contentHash": "5b7dccf3c2a8d1284829478e141af7831a4268f124c95ea220c50d09f1fcced8",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "synthesis": {
+        "bibliography": "OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:брат#sg_nom; nouns.csv:брат#sg_acc; nouns.csv:брат#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.",
+        "sourceDateOrVersion": "2026-10-08",
+        "authorshipDeclaration": "Independently authored English explanation for Russian Companion; inflected Russian cells remain the separately frozen OpenRussian records.",
+        "objectiveOrClaimBinding": "obj-u6-animacy:u6-g-animacy-0:declension-explanation:3"
+      }
+    },
+    {
+      "itemId": "prov-ca-declension-u6-i-animacy-1-1",
+      "unitNumber": 6,
+      "objectiveId": "obj-u6-animacy",
+      "recordType": "label",
+      "sourceId": "src-content-audit-research",
+      "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-coverage:obj-u6-animacy:u6-i-animacy-1:declension-explanation:1",
+      "originalSourceText": "OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:учитель#sg_nom; nouns.csv:учитель#sg_acc; nouns.csv:учитель#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.\nучи́тель is the singular nominative form; учи́теля is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.",
+      "shippedText": "учи́тель is the singular nominative form; учи́теля is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.",
+      "transformation": "content-audit research synthesis",
+      "licenseId": "Original app text",
+      "licenseUrl": "urn:russian-companion:license:original-app-text",
+      "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+      "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+      "sourceHash": "66aed515eaeb4def382cfb7135a436ce7edc36ad8335ac16f369390b32090bc8",
+      "contentHash": "d96b48435ebc695e34e57047546ed1126a9ec16aeaeccf58eb20ee64f63fadf8",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "synthesis": {
+        "bibliography": "OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:учитель#sg_nom; nouns.csv:учитель#sg_acc; nouns.csv:учитель#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.",
+        "sourceDateOrVersion": "2026-10-08",
+        "authorshipDeclaration": "Independently authored English explanation for Russian Companion; inflected Russian cells remain the separately frozen OpenRussian records.",
+        "objectiveOrClaimBinding": "obj-u6-animacy:u6-i-animacy-1:declension-explanation:1"
+      }
+    },
+    {
+      "itemId": "prov-ca-declension-u6-i-animacy-1-3",
+      "unitNumber": 6,
+      "objectiveId": "obj-u6-animacy",
+      "recordType": "label",
+      "sourceId": "src-content-audit-research",
+      "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-coverage:obj-u6-animacy:u6-i-animacy-1:declension-explanation:3",
+      "originalSourceText": "OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:учитель#sg_nom; nouns.csv:учитель#sg_acc; nouns.csv:учитель#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.\nучи́тель is the singular nominative form, so it does not supply the requested singular accusative form.",
+      "shippedText": "учи́тель is the singular nominative form, so it does not supply the requested singular accusative form.",
+      "transformation": "content-audit research synthesis",
+      "licenseId": "Original app text",
+      "licenseUrl": "urn:russian-companion:license:original-app-text",
+      "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+      "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+      "sourceHash": "00c17f7a8fe4f38e1bf301cfb6d76d5c5fc2d0ab3517fae29eba8b12fd6e1010",
+      "contentHash": "a205e4b5966e4ca94c7342cfe47510936bf46f39cb107030842fff829897f17c",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "synthesis": {
+        "bibliography": "OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:учитель#sg_nom; nouns.csv:учитель#sg_acc; nouns.csv:учитель#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.",
+        "sourceDateOrVersion": "2026-10-08",
+        "authorshipDeclaration": "Independently authored English explanation for Russian Companion; inflected Russian cells remain the separately frozen OpenRussian records.",
+        "objectiveOrClaimBinding": "obj-u6-animacy:u6-i-animacy-1:declension-explanation:3"
+      }
+    },
+    {
+      "itemId": "prov-ca-declension-u6-i-animacy-2-1",
+      "unitNumber": 6,
+      "objectiveId": "obj-u6-animacy",
+      "recordType": "label",
+      "sourceId": "src-content-audit-research",
+      "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-coverage:obj-u6-animacy:u6-i-animacy-2:declension-explanation:1",
+      "originalSourceText": "OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:друг#sg_nom; nouns.csv:друг#sg_acc; nouns.csv:друг#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.\nдруг is the singular nominative form; дру́га is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.",
+      "shippedText": "друг is the singular nominative form; дру́га is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.",
+      "transformation": "content-audit research synthesis",
+      "licenseId": "Original app text",
+      "licenseUrl": "urn:russian-companion:license:original-app-text",
+      "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+      "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+      "sourceHash": "2802eff92e8df93414f1b5a3316f7e2c4d36385dd9d417307e2e1e33bb149a99",
+      "contentHash": "82fcb6d797a8346a2e157fb66923e861da1fda304253ede65a78566e2ef0c334",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "synthesis": {
+        "bibliography": "OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:друг#sg_nom; nouns.csv:друг#sg_acc; nouns.csv:друг#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.",
+        "sourceDateOrVersion": "2026-10-08",
+        "authorshipDeclaration": "Independently authored English explanation for Russian Companion; inflected Russian cells remain the separately frozen OpenRussian records.",
+        "objectiveOrClaimBinding": "obj-u6-animacy:u6-i-animacy-2:declension-explanation:1"
+      }
+    },
+    {
+      "itemId": "prov-ca-declension-u6-i-animacy-2-3",
+      "unitNumber": 6,
+      "objectiveId": "obj-u6-animacy",
+      "recordType": "label",
+      "sourceId": "src-content-audit-research",
+      "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-coverage:obj-u6-animacy:u6-i-animacy-2:declension-explanation:3",
+      "originalSourceText": "OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:друг#sg_nom; nouns.csv:друг#sg_acc; nouns.csv:друг#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.\nдруг is the singular nominative form, so it does not supply the requested singular accusative form.",
+      "shippedText": "друг is the singular nominative form, so it does not supply the requested singular accusative form.",
+      "transformation": "content-audit research synthesis",
+      "licenseId": "Original app text",
+      "licenseUrl": "urn:russian-companion:license:original-app-text",
+      "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+      "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+      "sourceHash": "e1bf4568eb34294084165d014647e6ac895be3966829c2d6a23544ffe23d2213",
+      "contentHash": "fbc84deea21d0e1e60bf2e263230b56671f10969b564814d7099484f15337355",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "synthesis": {
+        "bibliography": "OpenRussian noun/adjective inflection cells, commit 50e210c4803237779cb562bc1abcea529066031c. Resolved cell references: nouns.csv:друг#sg_nom; nouns.csv:друг#sg_acc; nouns.csv:друг#sg_nom. Source locations: https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv. Case, number and gender labels expand the cited field names. For animate masculine accusative/genitive coincidence, supplementary Gramota dictionary/search evidence: https://gramota.ru/meta/uchitel and https://gramota.ru/spravka/vopros/303478 (search results checked 2026-10-09; full-page retrieval unavailable). Independently authored English explanation; no new Russian forms or keys. Pending linguistic review, not evidence of completed review.",
+        "sourceDateOrVersion": "2026-10-08",
+        "authorshipDeclaration": "Independently authored English explanation for Russian Companion; inflected Russian cells remain the separately frozen OpenRussian records.",
+        "objectiveOrClaimBinding": "obj-u6-animacy:u6-i-animacy-2:declension-explanation:3"
+      }
+    }
+  ],
+  "candidateNativeContext": {
+    "text": "Я де́лал стул.",
+    "retainedSourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Accusative_case?oldid=4330404",
+    "revision": 4330404,
+    "completeNounsSubsection": "==Nouns==\nThe accusative case is a peculiar case in Russian, as it makes a distinction that other cases do not. Specifically, if a masculine word denotes an inanimate thing ('table', 'chair', etc), then it remains the same as the nominative. If, however, a masculine word denotes a person or animal ('man', 'son', 'cow', etc), then the case uses the endings of the [[Russian/Grammar/Genitive case|''genitive case'']]. For plurals in the accusative, no matter what gender the word, they are also split: any plural word that's inanimate is identical to its [[Russian/Grammar/Nominative case|nominative plural form]], while animate plural words follow the rules for the genitive plural. Some examples highlighting this distinction are as follows:\n:* This chair is brown. - '''Этот ''стул'' коричневый.''' - Nominative of an inanimate noun\n:*I made a chair. - '''Я де́лал ''стул.''''' - Accusative of the noun\n:*This cat likes me. - '''''Этот кот'' любит меня.''' - Nom. of an animate noun\n:*I like this cat. - '''Я люблю ''этого кота.''''' - Acc. of the noun\n:*These women like me. - '''''Эти женщины'' любят меня.''' - Nom. of an animate, plural, feminine noun\n:*I like these women. - '''Я люблю ''этих женщин.''''' - Acc. of the noun\n\nSo, masculine nouns denoting inanimate objects in the accusative case are the same as in the nominative case. If they're animated nouns, they follow the genitive rules, which are: add '''-а''', and replace '''-й''' and '''-ь''' with '''-я'''.\n\nNeuter nouns, regardless of animation, also keep their nominative forms in the accusative case.\n\nFeminine words are the only words to have their own accusative ending: '''-а''' becomes '''-у''', and '''-я''' becomes '''-ю'''. Feminine nouns ending in the soft sign '''-ь''' do not change.\n\nTo form the plural of an inanimate word, use the nominative rules: add or replace with '''-ы''' or '''-и''', and neuter nouns change '''-o''' to '''-а''' and '''-e''' to '''-я'''. If the word is animate, regardless of gender, use the [[Russian/Grammar/Genitive case#Nouns|genitive plural]]: drop '''-а''' and '''-о''', convert or append ending consonants with '''-ов''', '''-ев''', or '''-ей''', and replace '''-я''' with '''-ь''' or '''-й'''.\n\nThis summary table splits the masculine and plural forms into two sections, the left being the inanimate form, the right being the animate form.\n\n{| class=\"wikitable\"\n|-\n!  \n! colspan=\"2\"|Masculine\n! Feminine !! Neuter\n! colspan=\"2\"|Plural\n|-\n| Accusative || valign=\"bottom\"|''As nom.'' || '''+a''', '''-я'''<br>''As gen.'' || valign=\"top\"|'''у''', '''ю''', '''ь''' || '''о, е'''<br>''As nom.'' || '''ы, и, etc'''<br>''As nom.'' || '''ов, ев''', etc<br>''As gen.''\n|}\n\nExamples:\n:* Dogs hate cats. - '''Собаки ненавидят котов.'''\n:* Cats hate dogs. - '''Коты ненавидят собак.'''\n:* I drove to the museum. - '''Я поехал в музей.'''",
+    "subsectionSha256": "3c0f8565ede2345d57ef60cd27ce8c719dacfc3019e9a9e2bb6b8c8ae37be858",
+    "formatting": "Only existing emphasis/link-label unfolding; do not add stress or alter words/punctuation.",
+    "admitted": false,
+    "candidateKey": "The masculine inanimate direct object keeps the nominative form.",
+    "candidateDistractor": "The masculine inanimate direct object takes the genitive form.",
+    "intendedFeature": "ANIMACY_INANIMATE_CONTEXT",
+    "translationOrAspectClaim": false
+  },
+  "all6844ProvenanceUnchanged": true,
+  "all58CapabilitiesUnchanged": true,
+  "all67CanonicalPinsUnchanged": true,
+  "originalDiagnosticDeliverables": [
+    {
+      "path": "audit/independent-gpt61-2026-10-12/received-results/AUDIT_SCOPE_AND_EVIDENCE.json",
+      "sha256": "ede9d04c1df26f2612f0210dfe0916a17dbe687ac9612f6858ee9c5025f20563"
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/received-results/CODEX_RETURN_HANDOFF.md",
+      "sha256": "a52afc6e6db45b10bceaca78034ba5697328e8b534f225de90fbb9c7b0b29fd0"
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/received-results/FINDINGS.csv",
+      "sha256": "f8e6a593545a24f5f02702d59ac7d63ef3b7f796ec71dc0a06063fa491d21ace"
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/received-results/INDEPENDENT_AUDIT_REPORT.md",
+      "sha256": "fd9ad913e312e1f6b332cd5a21ab90a783a809c8443f11c486c99ab9f0b4ad40"
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/received-results/ITEM_ASSESSMENT_AUDIT.csv",
+      "sha256": "2637ecf4f205610710dfa42ff9878ba592f0284a2f3fd46fbd6d297d32c37ddd"
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/received-results/REQUIREMENTS_MATRIX.csv",
+      "sha256": "3f0770ad922a99da67ea533b7e799a0a3951f91abaf528d70b0a9b1a1db52c1e"
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/received-results/SOURCE_AND_BINDING_REVIEW.json",
+      "sha256": "59d00b0b7163c741adff98ea884bc10972eabe258d4ebdc18d8e7aa22a6c3ad0"
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/received-results/TARGET_75_DISPOSITIONS.csv",
+      "sha256": "76fa43dd958a3e9b6459601b0bd22c113b4b1b376af6cc8f6d772e18ef8a126d"
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/received-results/UNIT_COVERAGE.csv",
+      "sha256": "794828fc9d6de4c5c5cc85df40630ba0bd4b136d98b107b795887999a04440bd"
+    }
+  ],
+  "originalNineHashesPreserved": true,
+  "formalAcceptance": false
+}

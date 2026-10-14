@@ -22,9 +22,9 @@ class Unit8PluralInstructionTest {
   assertEquals(8,t.size);assertEquals(8,s.steps.takeWhile{it.kind!="GUIDED"}.count{it.kind=="TEACH"});assertEquals(t.joinToString("\n\n"){it.body},rem.body);assertEquals(t.flatMap{it.exampleIds}.distinct(),rem.exampleIds);assertEquals(14,rem.exampleIds.size)
   assertTrue(rem.body.contains("dictionary labels, not plural English translations"));assertTrue(rem.body.contains("retains its dictionary gender"));assertTrue(rem.body.contains("not establish an unrestricted productive plural algorithm"))
  }
- @Test fun allOldScoredObjectsNativeExamplesAndProvenanceRemainIdentical() {
-  val p=pack();val old=baseline();assertEquals(old.items,p.items);assertEquals(old.examples,p.examples);assertEquals(old.sourceCapabilities,p.sourceCapabilities)
-  val records=p.provenanceRecords.associateBy{it.itemId};old.provenanceRecords.forEach{assertEquals(it,records[it.itemId])};assertEquals(21,p.provenanceRecords.size-old.provenanceRecords.size)
+ @Test fun unit8ScoredObjectsAndAllPriorNativeExamplesAndProvenanceRemainIdentical() {
+  val p=pack();val old=baseline();assertEquals(old.items.filter{it.objectiveId.startsWith("obj-u8-")},p.items.filter{it.objectiveId.startsWith("obj-u8-")});assertEquals(old.examples,p.examples.filter{e->old.examples.any{it.id==e.id}});assertEquals(old.sourceCapabilities,p.sourceCapabilities)
+  val records=p.provenanceRecords.associateBy{it.itemId};old.provenanceRecords.forEach{assertEquals(it,records[it.itemId])};assertEquals(21,p.provenanceRecords.count{it.unitNumber==8}-old.provenanceRecords.count{it.unitNumber==8})
   assertEquals(old.unit(8)!!.sessions.single{it.id=="u8-s-spelling"},p.unit(8)!!.sessions.single{it.id=="u8-s-spelling"})
   val v=V2Validator.validate(p);assertTrue(v.errors.joinToString("\n"),v.ok)
  }

@@ -72,6 +72,7 @@ internal object CompleteRuleContextPins {
         "ca-rule-context:u24-g-context-subject-focus" to "7a075170a10d222fa2221ec794f0f5b0bf69a647ecd0c9202e8a3a5683642bef",
         "ca-rule-context:u13-g-reported-0" to "ab6b459efa2a85226d0bcce4b2da08039a14505f3ecbcc07863b9c529f2302d8",
         "ca-rule-context:u13-i-report-frame-time" to "bb16858992d2aecc3561c7838fe8e44ea234e462e672eb1c2e7294c4ef7a52fb",
+        "ca-rule-context:u6-i-animacy-3" to "60a52daaaa27cdfd6c5f57ea8ac35fe116c5073470af05646752d6de8b40dac3",
     )
     fun required(itemId: String) = hashes.containsKey("ca-rule-context:$itemId")
     private fun hash(value: String) = MessageDigest.getInstance("SHA-256").digest(value.toByteArray(Charsets.UTF_8))
@@ -94,6 +95,7 @@ internal object CompleteRuleContextPins {
     }
     fun itemMatches(pack: V2CurriculumPack, item: V2CheckItem): Boolean {
         val expectedObjective = when {
+            item.id == "u6-i-animacy-3" -> "obj-u6-animacy"
             item.id in setOf("u13-g-reported-0","u13-i-report-frame-time") -> "obj-u13-reported"
             item.id == "u24-g-context-subject-focus" -> "obj-u24-word-order-contrast"
             item.id == "u21-i-object-reference-2" -> "obj-u21-object-reference"

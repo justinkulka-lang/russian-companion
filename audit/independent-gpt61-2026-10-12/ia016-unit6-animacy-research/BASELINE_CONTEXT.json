@@ -1,0 +1,25 @@
+{
+  "repositoryCommit": "550049c63a590c70c0d11cd47258452a1b03c50a",
+  "scope": "FOUR_TEMPORARY_BASELINE_DIAGNOSTICS_NOT_COMPLETE_SUITE",
+  "workingTree": "Current tracked inputs unchanged; untracked diagnostic harness and research receipts added.",
+  "harnessSha256": "f9a070e4dd6baa2900a1faec29e0dae5d2e2977050b58a5b023ad7a158cd6b1f",
+  "rawCurriculumSha256": "0d270e80b87924ada1e13d657a0e655315501604361b2eda946db9b3af803b36",
+  "expectedOutcomes": {
+    "fourGovernedAnswersCompleteDespiteRepeatedIndependentEvidence": "PASS",
+    "currentTeacherAndFriendFormsRetainValidFieldBindings": "PASS",
+    "independentChecksMustNotRequireTheSameScoredTupleTwice": "EXPECTED_REQUIREMENT_FAILURE",
+    "allAnimacyTeachingMustPrecedeGuidanceAndRemediationRestoreEveryPair": "EXPECTED_REQUIREMENT_FAILURE"
+  },
+  "excludedExporters": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  },
+  "initSha256": {
+    "/workspace/setup/cloud-validation.gradle": "21c6a0ee2e97cf83c472513ac31c3d2d456e461185384e9b5e58c0fed298d123",
+    "/workspace/setup/parallel-tests.gradle": "2366eb867708f83db10b39080abff1b45d2e347bab15ce2ec1c95c3d31cf7ff3"
+  },
+  "physicalAcceptance": "OUTSTANDING_LAST_AFTER_FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
+  "release": "NOT_APPROVED"
+}

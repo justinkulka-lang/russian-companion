@@ -1,0 +1,24 @@
+{
+  "repositoryCommit": "550049c63a590c70c0d11cd47258452a1b03c50a",
+  "workingTree": "Uncommitted correction, pin guards and seven new tests",
+  "counts": {
+    "tests": 8,
+    "failures": 2,
+    "errors": 0,
+    "skipped": 0
+  },
+  "exitCode": 1,
+  "rawAssetSha256": "0d105de52f58c29bad286855a1ff6e919c3138459305d360f6bc70b9f995ed64",
+  "files": [
+    {
+      "path": "INITIAL_TEST-dev.russiancompanion.v2.Unit6AnimacyTransferTest.xml",
+      "sha256": "d4b3b19caa8fd29c0ca9c60d1c94d3030223ea9d109384361fb437af020dbb71"
+    },
+    {
+      "path": "INITIAL_TEST-dev.russiancompanion.v2.Units610InstructionalValidityTest.xml",
+      "sha256": "0386e88d34f66067c30479ef129d70215411508c7cbcedfaeb2485c31bc09498"
+    }
+  ],
+  "failureDiagnosis": "New source clause was incorrectly typed GRAMMAR, which requires a letter binding. Existing clause convention is LEXICAL; corrected type without changing native/context bytes or disabling validation.",
+  "scope": "8 focused methods: six pass/two full-validator assertions fail, zero errors/skips."
+}

@@ -72,7 +72,7 @@ class Unit28TimingTransferTest {
         }
     }
     @Test fun originalIndependentScoredFieldsAndEveryExampleRemainUnchanged() {
-        val p=pack();val old=baseline();assertEquals(old.examples,p.examples)
+        val p=pack();val old=baseline();assertEquals(old.examples,p.examples.filter{e->old.examples.any{it.id==e.id}})
         for(o in objectives(old))for(id in o.checkItemIds) {
             val a=old.item(id)!!;val b=p.item(id)!!
             assertEquals(a.copy(assessment=a.assessment!!.copy(relationParticipantIds=b.assessment!!.relationParticipantIds,answerSourceIds=b.assessment.answerSourceIds,distractorSourceIds=b.assessment.distractorSourceIds)),b)

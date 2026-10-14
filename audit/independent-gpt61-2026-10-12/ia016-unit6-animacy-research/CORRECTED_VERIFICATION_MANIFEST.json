@@ -1,0 +1,56 @@
+{
+  "repositoryCommit": "550049c63a590c70c0d11cd47258452a1b03c50a",
+  "workingTree": "Uncommitted correction/guards/7 new tests and scoped prior preservation fixtures",
+  "scope": "11_FOCUSED_METHODS_NOT_COMPLETE_SUITE",
+  "counts": {
+    "tests": 11,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "exitCode": 0,
+  "rawAssetSha256": "3052b1dc1ac32d91c0a5b3b5be25c867a95a26c7aaaabac5445b2e72be4e297f",
+  "files": [
+    {
+      "path": "CORRECTED_TEST-dev.russiancompanion.v2.Unit6AnimacyTransferTest.xml",
+      "sha256": "916a398768cf624335998850a62b2bd42dadca400f964cef8cec36cfaf1affaa",
+      "methods": [
+        "coordinatedKeyAndApplicationReversalCannotRedefineInanimateCase",
+        "completeTeachingPrecedesPracticeAndRemediationRestoresElevenExamples",
+        "authenticOldFourAnswerHistoryIsPreservedButStaleAfterRenewal",
+        "onlyDuplicateChangesAndAllPriorNativeAndProvenanceRemainWhole",
+        "restoredDuplicateAndCoherentNativeForgeryAreRejected",
+        "wrongInanimateCaseDisplaysFeedbackAndFullRemediation",
+        "teacherAndFriendAnswersCannotReplaceRequiredInanimateClassification"
+      ]
+    },
+    {
+      "path": "CORRECTED_TEST-dev.russiancompanion.v2.Units610InstructionalValidityTest.xml",
+      "sha256": "66b4351d23025de5d972bb4a7352bb1b2b217bc527970b5c62df38b0038335e5",
+      "methods": [
+        "everyRecognitionObjectiveHasAnIndependentFeatureValidCheck"
+      ]
+    },
+    {
+      "path": "CORRECTED_TEST-dev.russiancompanion.v2.Unit8PluralInstructionTest.xml",
+      "sha256": "24aa163cfe11f8d7178e395a1dc66328112933f5f45f1c7e50e552e3d4bab343",
+      "methods": [
+        "unit8ScoredObjectsAndAllPriorNativeExamplesAndProvenanceRemainIdentical"
+      ]
+    },
+    {
+      "path": "CORRECTED_TEST-dev.russiancompanion.v2.Unit13ReportedTransferTest.xml",
+      "sha256": "919dbfba84631d9d7c85762ad23c0f77a638434ec8dfa23bfd75437b4232f2a3",
+      "methods": [
+        "originalIndependentItemsEarlierObjectiveAndAllExamplesRemainUnchanged"
+      ]
+    },
+    {
+      "path": "CORRECTED_TEST-dev.russiancompanion.v2.Unit28TimingTransferTest.xml",
+      "sha256": "ad76473d01ec9e334d759dbed8e23d2c3711ec27345ce3284cca187e6cdd632b",
+      "methods": [
+        "originalIndependentScoredFieldsAndEveryExampleRemainUnchanged"
+      ]
+    }
+  ]
+}

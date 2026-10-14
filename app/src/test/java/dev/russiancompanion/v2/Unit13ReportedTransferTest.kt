@@ -39,7 +39,7 @@ class Unit13ReportedTransferTest {
   }
  }
  @Test fun originalIndependentItemsEarlierObjectiveAndAllExamplesRemainUnchanged() {
-  val p=pack();val old=baseline();assertEquals(old.examples,p.examples)
+  val p=pack();val old=baseline();assertEquals(old.examples,p.examples.filter{e->old.examples.any{it.id==e.id}})
   for(id in listOf("u13-g-tense-keep-0","u13-i-tense-keep-1","u13-i-tense-keep-2","u13-i-reported-1","u13-i-reported-2"))assertEquals(old.item(id),p.item(id))
   assertEquals(old.unit(13)!!.objectives.single{it.id=="obj-u13-tense-keep"},p.unit(13)!!.objectives.single{it.id=="obj-u13-tense-keep"})
   val v=V2Validator.validate(p);assertTrue(v.errors.joinToString("\n"),v.ok)

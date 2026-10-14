@@ -2653,6 +2653,9 @@ internal object V2Validator {
     private fun validateGovernedChecks(pack: V2CurriculumPack, unit: V2Unit, errors: MutableList<String>) {
         val generic = "Return to the explanation. Compare the shown form with the admitted record."
         unit.objectives.filter { it.kind == "RECOGNITION" }.forEach { objective ->
+            if (objective.id == "obj-u6-animacy" && !Unit6AnimacyPins.matches(pack)) {
+                errors += "Objective ${objective.id} has no frozen distinct animate and inanimate application chain"
+            }
             if (objective.id == "obj-u13-reported" && !Unit13ReportedPins.matches(pack)) {
                 errors += "Objective ${objective.id} has no frozen supplied reported-context interpretation chain"
             }
@@ -3624,6 +3627,7 @@ internal object V2Validator {
         "IMPERFECTIVE_PAST" to "imperfective past",
         "REPORTED_NATIONALITY_GUIDED" to "nationality statement",
         "REPORTED_FRAME_EMBEDDED_TIME" to "reporting verb",
+        "ANIMACY_INANIMATE_CONTEXT" to "masculine inanimate direct object",
         "REPORTED_EVENING" to "reported evening",
         "DIRECT_EVENING" to "direct evening",
         "MOSCOW_FUTURE" to "Moscow",

@@ -1,0 +1,73 @@
+package dev.russiancompanion.v2
+
+import android.content.Context
+import androidx.test.core.app.ApplicationProvider
+import dev.russiancompanion.data.local.LocalStore
+import dev.russiancompanion.v2.curriculum.*
+import org.junit.Assert.*
+import org.junit.Test
+import org.junit.runner.RunWith
+import org.robolectric.RobolectricTestRunner
+import org.robolectric.annotation.Config
+import java.io.File
+
+/** Temporary baseline diagnostic. Archive outside compiled tests before any correction. */
+@RunWith(RobolectricTestRunner::class)
+@Config(sdk = [33])
+class Unit6AnimacyBaselineDiagnosticTest {
+    @Test fun fourGovernedAnswersCompleteDespiteRepeatedIndependentEvidence() {
+        val p = pack()
+        val o = p.unit(6)!!.objectives.single { it.id == "obj-u6-animacy" }
+        val ids = o.practiceStepIds.flatMap { p.step(it)!!.second.itemIds } + o.checkItemIds
+        assertEquals(listOf("u6-g-animacy-0", "u6-i-animacy-1", "u6-i-animacy-2", "u6-i-animacy-3"), ids)
+        val context: Context = ApplicationProvider.getApplicationContext()
+        LocalStore.openInMemory(context).use { store ->
+            for (id in ids) {
+                val step = p.unit(6)!!.sessions.flatMap { it.steps }.single { id in it.itemIds }
+                store.v2RecordGovernedAttempt(prepareGovernedAttempt(p, id, p.item(id)!!.answer,
+                    PRESCRIBED_CHECK, step.id, "2026-10-14T00:00")!!)
+            }
+            assertEquals(4, store.v2Attempts().size)
+            assertEquals(ids.toSet(), creditItemIds(p, store.v2LearnerView()))
+            assertEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS, objectiveState(o, store.v2LearnerView(), p))
+        }
+    }
+
+    @Test fun independentChecksMustNotRequireTheSameScoredTupleTwice() {
+        val p = pack()
+        val items = p.unit(6)!!.objectives.single { it.id == "obj-u6-animacy" }.checkItemIds.map { p.item(it)!! }
+        val tuples = items.map { listOf(it.prompt, it.promptLetter, it.answer, it.options, it.assessment!!.testedFeature) }
+        assertEquals("IA016 same-objective independent evidence is duplicated", items.size, tuples.distinct().size)
+    }
+
+    @Test fun allAnimacyTeachingMustPrecedeGuidanceAndRemediationRestoreEveryPair() {
+        val p = pack()
+        val s = p.unit(6)!!.sessions.single { it.id == "u6-s-animacy" }
+        val teaching = s.steps.filter { it.kind == "TEACH" }
+        val rem = s.steps.single { it.kind == "REMEDIATE" }
+        assertEquals(6, teaching.size)
+        assertEquals("Animacy guidance precedes five required teaching cards", teaching.size,
+            s.steps.takeWhile { it.kind != "GUIDED" }.count { it.kind == "TEACH" })
+        assertEquals(teaching.flatMap { it.exampleIds }.distinct(), rem.exampleIds)
+        assertEquals(teaching.joinToString("\n\n") { it.body }, rem.body)
+    }
+
+    @Test fun currentTeacherAndFriendFormsRetainValidFieldBindings() {
+        val p = pack()
+        val records = p.provenanceRecords.associateBy { it.itemId }
+        for ((id, noun, answer) in listOf(Triple("u6-i-animacy-1", "учитель", "учи́теля"),
+            Triple("u6-i-animacy-2", "друг", "дру́га"), Triple("u6-i-animacy-3", "учитель", "учи́теля"))) {
+            val i = p.item(id)!!
+            assertEquals(answer, i.answer)
+            assertEquals("nouns.csv:$noun#sg_acc", records[i.assessment!!.answerSourceIds.single()]!!.sourceRecordId)
+            assertEquals("nouns.csv:$noun#sg_nom", records[i.assessment.relationParticipantIds.first()]!!.sourceRecordId)
+            assertTrue(i.feedback.contains("same form as the genitive"))
+            assertTrue(V2Validator.structureValid(p, i).joinToString("\n"), V2Validator.structureValid(p, i).isEmpty())
+        }
+        val v = V2Validator.validate(p)
+        assertTrue(v.errors.joinToString("\n"), v.ok)
+    }
+
+    private fun pack() = V2PackLoader.parse(File(if (File("app").isDirectory) "." else "..",
+        "app/src/main/assets/content/v2-curriculum.json").readText())
+}
