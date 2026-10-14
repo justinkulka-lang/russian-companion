@@ -4,7 +4,8 @@ cd /workspace/russian-companion
 source /workspace/setup/android-env.sh
 # Historical diagnostic source is deliberately outside normal app test sources.
 # Keep the Android source-set override outside the checkout as an onboarding helper.
-test -f /workspace/setup/ia003-diagnostics.gradle
+cp audit/independent-gpt61-2026-10-12/ia003-cumulative-review/diagnostics-source-set.gradle \
+ /workspace/setup/ia003-diagnostics.gradle
 git diff --exit-code 11d70e5e4512ff93758ebf246f2a4773f83ca0e0 -- app/src/main
 ./gradlew -I /workspace/setup/cloud-validation.gradle \
  -I /workspace/setup/parallel-tests.gradle -I /workspace/setup/ia003-diagnostics.gradle \

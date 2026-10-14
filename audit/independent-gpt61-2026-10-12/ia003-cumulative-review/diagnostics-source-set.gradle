@@ -1,0 +1,10 @@
+allprojects {
+    tasks.withType(Test).configureEach {
+        // A baseline replay must execute its diagnostic methods, not reuse old results.
+        outputs.upToDateWhen { false }
+    }
+    plugins.withId('com.android.application') {
+        extensions.getByName('android').sourceSets.getByName('test').kotlin.srcDir(
+            new File(rootProject.projectDir, 'audit/independent-gpt61-2026-10-12/ia003-cumulative-review/diagnostics'))
+    }
+}
