@@ -44,5 +44,15 @@
   "newSourceOrRightsDeclaration": false,
   "assertionsRetained": true,
   "englishWikipediaRevisionUrlCheckAdded": true,
-  "qualifiedAcceptance": false
+  "qualifiedAcceptance": false,
+  "exactEnglishWikipediaUrl": "https://en.wikipedia.org/w/index.php?title=Reflexive_pronoun&oldid=1374712982",
+  "preexistingUnit28DictionaryBranchAdded": true,
+  "dictionaryCommit": "50e210c4803237779cb562bc1abcea529066031c",
+  "dictionaryAllowedCsvs": [
+    "nouns.csv",
+    "adjectives.csv",
+    "others.csv",
+    "verbs.csv"
+  ],
+  "sourceChange": false
 }

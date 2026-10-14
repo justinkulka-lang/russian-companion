@@ -73,6 +73,11 @@ class Units35SourceIntakeTest {
             } else if (record.sourceId == "src-enwiki-reflexive-pronoun-1374712982") {
                 assertEquals(record.itemId, "1374712982", record.sourceRevision)
                 assertEquals(record.itemId, "https://en.wikipedia.org/w/index.php?title=Reflexive_pronoun&oldid=1374712982", record.sourceUrl)
+            } else if (record.sourceId == "src-openrussian-50e210c4") {
+                assertEquals(record.itemId, "50e210c4803237779cb562bc1abcea529066031c", record.sourceRevision)
+                assertTrue(record.itemId, record.sourceUrl in listOf("nouns.csv", "adjectives.csv", "others.csv", "verbs.csv").map {
+                    "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/$it"
+                })
             } else if (record.unitNumber in 26..30) {
                 assertTrue(record.itemId, record.sourceUrl.contains("oldid=${record.sourceRevision}"))
             }

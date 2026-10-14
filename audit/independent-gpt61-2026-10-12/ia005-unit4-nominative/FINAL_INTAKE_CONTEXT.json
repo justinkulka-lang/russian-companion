@@ -1,0 +1,14 @@
+{
+  "repositoryCommit": "b3c02f3631589a56266c8f53b2a483562f466725",
+  "workingTree": "Uncommitted exact dictionary commit/CSV URL assertion branch",
+  "counts": {
+    "tests": 1,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "exitCode": 0,
+  "xmlSha256": "31ef91352822e012f568556d42231f4a1152980ab992a0914a162c8b9e88cf96",
+  "testSha256": "c7a746deb8439238331fa958dd961c4903b748bbc468e5623093bd1ba0d222f4",
+  "scope": "ONE_CORRECTED_SOURCE_INTAKE_TARGET_NOT_COMPLETE_SUITE"
+}
