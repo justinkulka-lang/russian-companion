@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit10FeedbackCorrectionTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-14T22:13:33.138Z" hostname="f5c5dd6b855f" time="11.188">
+  <properties/>
+  <testcase name="wrongObjectSelectionDisplaysTheSubjectContrast" classname="dev.russiancompanion.v2.Unit10FeedbackCorrectionTest" time="2.34"/>
+  <testcase name="feedbackExplainsPronounReferentsAndAnimateObjectCase" classname="dev.russiancompanion.v2.Unit10FeedbackCorrectionTest" time="8.045"/>
+  <testcase name="historicalGenericFeedbackCreditIsRetainedButStale" classname="dev.russiancompanion.v2.Unit10FeedbackCorrectionTest" time="0.8"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+]]></system-err>
+</testsuite>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit10IndependentReinforcementTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-14T22:14:21.337Z" hostname="f5c5dd6b855f" time="45.372">
+  <properties/>
+  <testcase name="sharedFrozenApplicationsCannotBeReversedWithCoherentTupleHashUpdates" classname="dev.russiancompanion.v2.Unit10IndependentReinforcementTest" time="37.83"/>
+  <testcase name="repeatedIndependentAnswersNeedTheirOwnGovernedAttemptsInEachObjective" classname="dev.russiancompanion.v2.Unit10IndependentReinforcementTest" time="1.239"/>
+  <testcase name="earlierCompletionAndBothRepeatedAbsenceAnswersStillRequireTwoPlaceContexts" classname="dev.russiancompanion.v2.Unit10IndependentReinforcementTest" time="5.196"/>
+  <testcase name="wrongPolarityCannotCreditAnyMemberOfEitherIndependentPair" classname="dev.russiancompanion.v2.Unit10IndependentReinforcementTest" time="1.069"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+]]></system-err>
+</testsuite>

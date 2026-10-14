@@ -1,0 +1,14 @@
+{
+  "integrationTestedCommit": "272f8505ba0f464e8e02197a953531cd06538d5f",
+  "changedFile": "audit/curriculum-readiness/V2_CURRICULUM_GAP_CLOSURE_DOSSIER_v1.0.md",
+  "changedFields": [
+    "pack digest",
+    "repository source digest",
+    "Unit11 ordinary-work advancement YES\u2192NO"
+  ],
+  "priorMatrixRow": "| 11 | Past tense and reflexive verbs | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |",
+  "currentMatrixRow": "| 11 | Past tense and reflexive verbs | CONTENT_COMPLETE_REVIEW_PENDING | NO | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |",
+  "appOrTestsModified": false,
+  "assertionsWeakened": false,
+  "remaining147IntegrationMethodsNotRepeated": "Their app/test/catalog/review/release/docs/governance inputs remain unchanged;target eight source/readiness checks after only dossier correction. Not a fresh148-method run at the corrected commit."
+}
