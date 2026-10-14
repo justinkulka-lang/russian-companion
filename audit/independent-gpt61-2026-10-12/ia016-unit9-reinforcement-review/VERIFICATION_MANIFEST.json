@@ -1,0 +1,124 @@
+{
+  "repositoryCommit": "b32ac3fbbd4aa9dc9394ff0edcfcb5e7bb532b28",
+  "baselineRepositoryCommit": "0bb3e2427b9ebde8270cc99a6cf097e3c489201b",
+  "scope": "6_FOCUSED_METHODS_3_CLASSES_3_SELECTORS_NOT_COMPLETE_SUITE",
+  "expandedCommand": "set -e\ncd /workspace/russian-companion\nsource /workspace/setup/android-env.sh\n./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*Unit9ReinforcementReviewTest' --tests '*Unit9QuantityRuleCorrectionTest.coordinatedKeyAndApplicationEditsCannotReverseTheTeenContext' --tests '*CompleteRuleCorrectionTest.coordinatedKeyAndApplicationEditsCannotReverseTheFrozenContext' compileDebugSources lintDebug verifyReleaseGateAttachment --max-workers=4 --console=plain\n",
+  "exitCode": 0,
+  "counts": {
+    "tests": 6,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "classes": [
+    {
+      "name": "dev.russiancompanion.v2.CompleteRuleCorrectionTest",
+      "timestamp": "2026-10-14T01:37:02.338Z",
+      "counts": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "sha256": "bb598bf8f2bcfabf7c6285c82f3d21901b9b84c607b443582e752227b3fd7ba8",
+      "methods": [
+        "coordinatedKeyAndApplicationEditsCannotReverseTheFrozenContext"
+      ]
+    },
+    {
+      "name": "dev.russiancompanion.v2.Unit9QuantityRuleCorrectionTest",
+      "timestamp": "2026-10-14T01:37:49.999Z",
+      "counts": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "sha256": "dc895b95b6ef835819f383e38ca432da22911a4cb13348d4c14213adb4b0d304",
+      "methods": [
+        "coordinatedKeyAndApplicationEditsCannotReverseTheTeenContext"
+      ]
+    },
+    {
+      "name": "dev.russiancompanion.v2.Unit9ReinforcementReviewTest",
+      "timestamp": "2026-10-14T01:37:06.065Z",
+      "counts": {
+        "tests": 4,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "sha256": "e1598816f565805938fcfd4051e36d0040801f7cf21649fa940ad6bc9b146071",
+      "methods": [
+        "oneHourNominativeExplanationCannotCreditOtherBasicCountingPatterns",
+        "earlierQuantityCompletionCannotCreditTheLaterRepeatedGuideOrPatternChecks",
+        "repeatedGuideAndBasicCountsCannotReplaceRequiredAnimateAccusativeContext",
+        "allTeachingAndWorkedExamplesPrecedePracticeAndReturnInRemediation"
+      ]
+    }
+  ],
+  "allThreeSelectorsExecuted": true,
+  "testSha256": "b797c260c6f948af146470872c6eff029455044555c931e4b762c82254caa0d6",
+  "initScripts": {
+    "/workspace/setup/cloud-validation.gradle": "21c6a0ee2e97cf83c472513ac31c3d2d456e461185384e9b5e58c0fed298d123",
+    "/workspace/setup/parallel-tests.gradle": "2366eb867708f83db10b39080abff1b45d2e347bab15ce2ec1c95c3d31cf7ff3"
+  },
+  "logSha256": "d1390e55af26321c1872d55412f28eaee74d3d5a8a53a70d7b04b2cc718b203b",
+  "lint": {
+    "task": "> Task :app:lintDebug",
+    "severities": {
+      "Warning": 20,
+      "Hint": 1
+    },
+    "sha256": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6",
+    "cacheNote": "lintDebug executed; main and Android-test analysis and report outputs were reused, while lintAnalyzeDebugUnitTest executed for the new regression class. See raw task log."
+  },
+  "releaseGateAttachment": {
+    "status": "PASSED",
+    "task": "> Task :app:verifyReleaseGateAttachment"
+  },
+  "compilation": {
+    "task": "> Task :app:compileDebugSources UP-TO-DATE",
+    "note": "Reused valid main outputs; current test compilation is recorded in the raw log."
+  },
+  "rawCurriculumSha256": "3052b1dc1ac32d91c0a5b3b5be25c867a95a26c7aaaabac5445b2e72be4e297f",
+  "packContentReviewDigest": "1ba053798680aa069b7759f3e8f4dc32f3ce843149165cf76fd906f1d61c9bc1",
+  "repositorySourceDigest": "c58bb8b35d20f0e492ecb3c4edf2a6d88e372e332607a65b482cdd99a0cea520",
+  "productionSourceReviewReleaseUnchanged": true,
+  "allNineOriginalDiagnosticFilesPreserved": true,
+  "newNativeAdmission": false,
+  "exclusions": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  },
+  "excludedExporterMethods": 16,
+  "exclusionReason": "Screenshot exporters excluded from environment setup verification; overwrite retained tracked screenshots.",
+  "apk": {
+    "applicationId": "dev.russiancompanion",
+    "versionName": "2.0.0-dev",
+    "versionCode": 5,
+    "assembled": false,
+    "signed": false,
+    "identity": "NOT_RECORDED",
+    "sha256": "NOT_RECORDED",
+    "signature": "NOT_RECORDED"
+  },
+  "historicalScope": {
+    "mainCommit": "ff539220645670fbf7a1abacaa6f71e828606b80",
+    "mainAnnotations": 579,
+    "mainReported": 563,
+    "mainPassed": 562,
+    "mainSkipped": 1,
+    "excluded": 16,
+    "pr64BaselineCommit": "420f41ff6c2a4417cd829fdee0179b6a3b797eff",
+    "pr64Annotations": 691,
+    "annotationDifference": 112,
+    "handoffExecutionVerified": false,
+    "completeSuiteClaim": false
+  },
+  "formalAcceptance": false,
+  "physicalAcceptance": "OUTSTANDING_LAST_AFTER_FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
+  "release": "NOT_APPROVED"
+}

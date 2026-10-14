@@ -350,6 +350,16 @@
           "duplicateCountChanged": false,
           "additionalInstructionIssue": "UNIT8_PLURAL_INSTRUCTION_FOLLOWUP",
           "formalAcceptance": false
+        },
+        "unit9Reinforcement": {
+          "repositoryCommit": "b32ac3fbbd4aa9dc9394ff0edcfcb5e7bb532b28",
+          "evidencePath": "ia016-unit9-reinforcement-review/VERIFICATION_MANIFEST.json",
+          "disposition": "CORRECT_GUIDED_REINFORCEMENT_RETAINED_PENDING_INDEPENDENT_ASSESSMENT",
+          "passingMethods": 6,
+          "classes": 3,
+          "productionChanges": false,
+          "formalAcceptance": false,
+          "semanticOverlapBeyondExactSignaturesDisclosed": true
         }
       }
     },
@@ -387,16 +397,16 @@
   ],
   "physicalDeviceEvidenceRequestTiming": "AFTER_FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
   "latestAppImplementationCommit": "30ca4e8a8200dc34704a8fcb2aab03ed1df2c97e",
-  "latestVerifiedRepositoryCommit": "a39b3f2ba3fc73673186acb6767a54040e0e0df0",
+  "latestVerifiedRepositoryCommit": "b32ac3fbbd4aa9dc9394ff0edcfcb5e7bb532b28",
   "latestResearchDiagnosticRepositoryCommit": "0edaa0fc635b3579823f7b352f52fa79a675db3d",
   "latestSupplementalVerifiedRepositoryCommit": "409a9e87bd17174e6340fc896b7576115d30a69a",
-  "latestFocusedIntegrationCommit": "a39b3f2ba3fc73673186acb6767a54040e0e0df0",
-  "latestFocusedIntegrationPassed": 27,
+  "latestFocusedIntegrationCommit": "b32ac3fbbd4aa9dc9394ff0edcfcb5e7bb532b28",
+  "latestFocusedIntegrationPassed": 6,
   "latestFocusedIntegrationFailures": 0,
   "latestCorrectedTargetPassed": 1,
-  "latestFocusedIntegrationScope": "27_SELECTED_TESTS_16_CLASSES_17_SELECTORS_SINGLE_FOCUSED_RUN_NOT_COMPLETE_SUITE",
+  "latestFocusedIntegrationScope": "6_SELECTED_TESTS_3_CLASSES_3_SELECTORS_NOT_COMPLETE_SUITE_PRODUCTION_UNCHANGED",
   "latestCorrectedTargetBatch": "IA016_UNIT21_HISTORICAL_NOT_THIS_UNIT24_RUN",
-  "latestFocusedVerificationUniquePassingMethods": 27,
+  "latestFocusedVerificationUniquePassingMethods": 6,
   "additionalEngineeringFollowups": {
     "UNIT8_PLURAL_INSTRUCTION_FOLLOWUP": {
       "producerFindingId": null,
@@ -408,5 +418,6 @@
       "newPendingEnglishRecords": 21,
       "formalAcceptance": false
     }
-  }
+  },
+  "latestBoundedReviewRepositoryCommit": "b32ac3fbbd4aa9dc9394ff0edcfcb5e7bb532b28"
 }
