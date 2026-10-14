@@ -811,6 +811,7 @@ class RuntimeCorrectionTest {
             store.v2Profile().copy(
                 onboardingCompleted = true,
                 currentUnitNumber = unitNumber,
+                startingPoint = if (unitNumber > 1) "RESUME_FROM_BOOK" else store.v2Profile().startingPoint,
                 currentSessionId = located.first.id,
                 currentStepIndex = index,
             ).verifiedResume(pack),
