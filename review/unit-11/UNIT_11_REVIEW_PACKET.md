@@ -11,12 +11,12 @@ Unit 11 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: d38b3d897651f4e963dc51211ef6f3078f752a3b
-- Unit content-review SHA-256: 2a0b74e3722f0f0a1c2e0041c73c6654211eee81c918e44c1b23929fcf24672b
+- Curriculum source commit: 89a8323e451ac73345081125b44ab6f107a6995c
+- Unit content-review SHA-256: 4e3f32d66de93776e545f388a06a6ab514bc4ca050a425608f879de8ac4e9d40
 - Mapping-package SHA-256: 61b1d9c77882225528ca0d0f68a44efa13c68605efdaed0e6abb8e1b519db587
-- Pack content-review SHA-256: e91f84967f1070b41acb1294625303bc04433f83d78754b507735085c21f9e77
-- Review-package SHA-256: c74929657e8025c0149111980d75917fd18991adc7764e426d2e173db22ee409
-- Repository source SHA-256: d0e919a342d26343a238b9496875f17f1e2cd6990d5422cd086e50c8586b1b41
+- Pack content-review SHA-256: ae09c34cf5d80a63e0ea46b014d2690e00b23b59f6448917ca071e6555d02594
+- Review-package SHA-256: bc27d705523d77a5e521734360d246e9e7406294e46cf0d6b22671c69b7c592c
+- Repository source SHA-256: c581506da064d2be845e1f1277003ef2a0aac21fd689d57d1a8f77adf854942b
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -96,13 +96,13 @@ estimatedMinutes=66
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e8b168939c02220e62d68f4141bded31d7fe6a2aaf409b25fab4dae1df2e7f8a
+- Content hash: fb5ba81b05349be9190edeb44b4cdd2f6b442eb3c2f891cf0f9b72ec090846ae
 
 requireInstruction=true
 requireBookSelfAttestation=true
 requireAppChecks=true
 minimumDistinctChecks=8
-requireDueReview=false
+requireDueReview=true
 tutorOptional=true
 
 ### OBJECTIVE `obj-u11-past-read`
