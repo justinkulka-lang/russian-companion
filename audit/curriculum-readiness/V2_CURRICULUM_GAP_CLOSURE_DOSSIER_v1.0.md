@@ -6,8 +6,8 @@
 **Repository:** `justinkulka-lang/russian-companion`  
 **Repository baseline main:** `c153103a0048f69f8de339b83e77d93572ebddb7`  
 **Unit 23 unprepared correction:** `fd69bd03298d69669d09daafe8d364b0e576d033` (`Keep Unit 23 unprepared until completion over a period is admitted.`). That commit is an ancestor of the repository baseline. It is not the repository baseline main commit.  
-**Pack content-review digest:** `1d9fa8976107fc8bc8b5d9af567c0331aaa7d5693110ba4ba39881a9857f5860`
-**Repository source digest:** `97c25b7fdd00ebbaef842c28809608abb51abd1dd39608071ffbade3149c8f0e`
+**Pack content-review digest:** `1cdf383e65186a41c1aee38d56138886beb437a4600e9fcfd200aaf51c59981d`
+**Repository source digest:** `39c36b02c8f58eadd31b9ecc63e9e9b51b093aac40b022e2574689f3984c89b2`
 **Public release:** **NOT_APPROVED**
 
 ## Purpose
@@ -53,7 +53,7 @@ Unacceptable shortcuts include keyword matches, mutable pages, dictionary-row gr
 | 4 | Verbs, personal pronouns, present tense, conjugation, word stress, and introduction to nouns and cases | CONTENT_COMPLETE_REVIEW_PENDING | NO | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 5 | Questions, prepositional case, and indeclinable nouns | CONTENT_COMPLETE_REVIEW_PENDING | NO | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 6 | Possession, going places, accusative case, and personal names | CONTENT_COMPLETE_REVIEW_PENDING | NO | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
-| 7 | Adjectives, agreement, demonstratives, adjective case forms, and adverbs | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
+| 7 | Adjectives, agreement, demonstratives, adjective case forms, and adverbs | CONTENT_COMPLETE_REVIEW_PENDING | NO | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 8 | Plurals, first spelling rules, existence questions, and buying things | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 9 | Numbers, genitive singular and plural, quantities, and money | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 10 | Expressions of having, expanded genitive functions, absence, genitive prepositions, pronouns, and adjectives | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |

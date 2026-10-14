@@ -316,7 +316,7 @@ class BatchECapabilityResearchTest {
         val pack = loadCurriculumPack(root)
         val model = reconcileCurriculumReadiness(root, pack)
         val candidate = readAcceptanceCandidate(root)
-        assertEquals("1d9fa8976107fc8bc8b5d9af567c0331aaa7d5693110ba4ba39881a9857f5860", model.packContentReviewDigest)
+        assertEquals("1cdf383e65186a41c1aee38d56138886beb437a4600e9fcfd200aaf51c59981d", model.packContentReviewDigest)
         assertEquals(candidate?.sourceDigest, model.repositorySourceDigest)
         assertEquals(model.repositorySourceDigest, computeReleaseSourceDigest(root))
         assertEquals("NOT_APPROVED", model.publicRelease)
@@ -335,7 +335,7 @@ class BatchECapabilityResearchTest {
             assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", model.units.single { it.unitNumber == number }.readiness)
         }
         val content = mapOf(
-            7 to "0a4df65c918a87854c5088faf14ad2f6b9338d0b395452429ce6fd2a4caa1a6d",
+            7 to "3999906034a7cc8baca24f2aa063320bf6927663f5f62e19e8957167206f520a",
             // Unit17 question-transfer correction supersedes historical 6172c2a9be50c4b3c79b962dc5f9b055f8d2d267d3a6a8627a3e9805e4fc8cca.
             17 to "16e8478be2cab8dad81faf971e4c13f088323b93612407a3b928ce85d31ea1c5",
             23 to "42a67675479cb835e6c429ffc76c0120c00ea389baed9e7e0cbc91f593b564e4",
