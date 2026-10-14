@@ -373,6 +373,7 @@ internal fun V2UnitScreen(
     onOpenSession: (String) -> Unit,
     onAttestBook: (Int) -> Unit,
     onAdvance: (Int) -> Unit,
+    onOpenCumulativeReview: () -> Unit = {},
 ) {
     val unit = pack.unit(unitNumber) ?: return
     val state = unitState(pack, unit, learner)
@@ -428,6 +429,10 @@ internal fun V2UnitScreen(
                 advancementRuleSummary(rule),
                 modifier = Modifier.semantics { testTag = "v2-advancement-rule" },
             )
+        }
+        if (unit.number == 3) {
+            Text("Before advancing, complete the assigned earlier reading and letter-recognition review. Earlier lesson answers and optional practice do not complete this review.")
+            V2SecondaryButton("Review earlier reading and letters", onOpenCumulativeReview, tag = "v2-open-cumulative-review")
         }
         if (decision == null) {
             V2Status("Preparing advancement")

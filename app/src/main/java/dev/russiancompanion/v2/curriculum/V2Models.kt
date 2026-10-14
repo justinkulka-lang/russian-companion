@@ -413,6 +413,7 @@ internal data class V2AdvancementRule(
     val minimumDistinctChecks: Int,
     val requireDueReview: Boolean,
     val tutorOptional: Boolean,
+    val cumulativeReviewPolicyId: String? = null,
 )
 
 @Serializable

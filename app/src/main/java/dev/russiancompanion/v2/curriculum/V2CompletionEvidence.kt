@@ -13,7 +13,8 @@ internal object V2CompletionEvidence {
         }
         val eligible = pack.units.filter { unit ->
             unit.number in learner.completedUnitNumbers && unit.openable() &&
-                currentUnitRequirements(pack, unit, learner).allowed
+                ordinaryUnitRequirements(pack, unit, learner).allowed &&
+                historicalReviewCompletionCurrent(pack, unit, learner)
         }
         val verified = linkedSetOf<Int>()
         // Fixed point also fails closed for unknown or cyclic prerequisite claims.

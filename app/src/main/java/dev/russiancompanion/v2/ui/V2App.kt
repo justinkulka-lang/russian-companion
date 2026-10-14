@@ -140,7 +140,7 @@ internal fun V2App(
     onRetryOpen: () -> Unit,
     appearanceStore: AppearanceStore = AppearanceStore.memory(defaultAppearancePreference()),
     recordedAt: () -> String = { LocalDateTime.now().toString() },
-    persistence: V2Persistence? = store?.let { StoreV2Persistence(it) },
+    persistence: V2Persistence? = store?.let { StoreV2Persistence(it, pack) },
 ) {
     val dispatcher = snapshotDispatcher()
     val scope = androidx.compose.runtime.rememberCoroutineScope()
@@ -289,6 +289,21 @@ internal fun V2App(
                             } ?: error("unverified attempt")
                             withCapturedLearnerEpoch(epoch) { api.recordAttempt(write) }
                         }
+                    },
+                    onOpenCumulativeReview = {
+                        val epoch = store.learnerMutationEpoch()
+                        writes.submit("review:open") {
+                            withContext(Dispatchers.Default) { V2PackIdentityIndex.warm(pack) }
+                            withCapturedLearnerEpoch(epoch) { api.openCumulativeReview(pack) }
+                        }
+                        Unit
+                    },
+                    onCumulativeAnswer = { assignment, slot, selected ->
+                        val epoch = store.learnerMutationEpoch()
+                        writes.submit("review:answer:$assignment:$slot") {
+                            withCapturedLearnerEpoch(epoch) { api.answerCumulativeReview(pack, assignment, slot, selected) }
+                        }
+                        Unit
                     },
                     onPracticeAttempt = { labId, itemId, selected ->
                         if (writes.pending.any { it.startsWith("practice:$labId:$itemId:") }) {

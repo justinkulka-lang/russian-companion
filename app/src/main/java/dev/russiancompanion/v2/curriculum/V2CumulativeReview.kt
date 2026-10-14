@@ -137,3 +137,54 @@ internal fun reviewHistoryDefects(assignments: List<CumulativeReviewAssignment>,
     }
     return null
 }
+
+internal data class CumulativeUnitCompletion(val preActivation: Boolean, val policyDigest: String, val assignmentId: String, val completionOrder: Long)
+
+internal fun unit3ReviewDeclarationValid(pack: V2CurriculumPack): Boolean = pack.unit(3)?.advancement?.let {
+    it.requireDueReview && it.cumulativeReviewPolicyId == Unit3CumulativeReviewPolicy.id
+} == true
+
+internal fun currentUnit3Assignment(pack: V2CurriculumPack, learner: V2LearnerView): CumulativeReviewAssignment? =
+    learner.reviewAssignments.lastOrNull { it.targetUnit == 3 && reviewAssignmentCurrent(pack, it) }
+
+internal fun unit3ReviewComplete(pack: V2CurriculumPack, learner: V2LearnerView): Boolean {
+    if (!unit3ReviewDeclarationValid(pack)) return false
+    val a = currentUnit3Assignment(pack, learner) ?: return false
+    return completedReviewSlots(pack, a, learner.reviewAnswers).size == a.slots.size
+}
+
+/** No learner/prerequisite recursion: this only validates the persisted completion link. */
+internal fun historicalReviewCompletionCurrent(pack: V2CurriculumPack, unit: V2Unit, learner: V2LearnerView): Boolean {
+    if (unit.number != 3) return true
+    val record = learner.unitReviewCompletions[3] ?: return false
+    if (record.preActivation) {
+        if (!unit3ReviewDeclarationValid(pack) || record.policyDigest.isNotEmpty() || record.assignmentId.isNotEmpty() || record.completionOrder != 0L) return false
+        val legacy = preReviewUnitDigest(pack)
+        val oldEvidence = learner.copy(governedAttempts = learner.governedAttempts?.filter {
+            it.unitNumber != 3 || it.unitContentDigest == legacy
+        })
+        return ordinaryUnitRequirements(pack, unit, oldEvidence).allowed
+    }
+    if (!unit3ReviewDeclarationValid(pack) || record.policyDigest != Unit3CumulativeReviewPolicy.digest) return false
+    val a = learner.reviewAssignments.singleOrNull { it.id == record.assignmentId } ?: return false
+    return a.targetUnit == 3 && record.completionOrder > a.boundary &&
+        completedReviewSlots(pack, a, learner.reviewAnswers.filter { it.acceptedOrder <= record.completionOrder }).size == a.slots.size
+}
+
+/** Exact pre-activation rule identity, with every current item/source/teaching field retained. */
+private val preReviewUnitDigests = IdentityWeakCache<String>()
+internal fun prescribedUnitIdentityMatches(pack: V2CurriculumPack, number: Int, recorded: String): Boolean {
+    val current = V2PackIdentityIndex.unitDigest(pack, number) ?: V2Validator.unitContentReviewDigest(pack, number)
+    if (recorded == current) return true
+    if (number != 3 || !unit3ReviewDeclarationValid(pack)) return false
+    return recorded == preReviewUnitDigest(pack)
+}
+
+private fun preReviewUnitDigest(pack: V2CurriculumPack): String =
+    preReviewUnitDigests.get(pack) ?: run {
+        val unit = pack.unit(3)!!
+        val old = pack.copy(units = pack.units.map { if (it.number == 3) unit.copy(advancement = unit.advancement!!.copy(
+            requireDueReview = false, cumulativeReviewPolicyId = null)) else it })
+        V2Validator.unitContentReviewDigest(old, 3).also { preReviewUnitDigests.put(pack, it) }
+    }
+

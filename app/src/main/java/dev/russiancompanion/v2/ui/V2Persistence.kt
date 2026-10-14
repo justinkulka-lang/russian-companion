@@ -18,6 +18,8 @@ internal interface V2Persistence {
     suspend fun profile(): V2ProfileEntity
     suspend fun saveProfile(profile: V2ProfileEntity)
     suspend fun completeStep(stepId: String, recordedAt: String, contentDigest: String)
+    suspend fun openCumulativeReview(pack: dev.russiancompanion.v2.curriculum.V2CurriculumPack) { error("Review persistence unavailable") }
+    suspend fun answerCumulativeReview(pack: dev.russiancompanion.v2.curriculum.V2CurriculumPack, assignment: String, slot: Int, selected: String) { error("Review persistence unavailable") }
     suspend fun recordAttempt(write: dev.russiancompanion.v2.curriculum.GovernedAttemptWrite)
     suspend fun toggleBookmark(targetId: String, kind: String, recordedAt: String, targetDigest: String)
     suspend fun addNote(targetId: String, text: String, recordedAt: String, targetDigest: String)
@@ -46,7 +48,7 @@ internal suspend fun <T> withCapturedLearnerEpoch(epoch: Long, block: suspend ()
     return withContext(CapturedLearnerEpoch(epoch)) { block() }
 }
 
-internal class StoreV2Persistence(private val store: LocalStore) : V2Persistence {
+internal class StoreV2Persistence(private val store: LocalStore, private val pack: dev.russiancompanion.v2.curriculum.V2CurriculumPack? = null) : V2Persistence {
     override val bindingKey: Any = store
 
     override suspend fun learner(): V2LearnerView = store.v2LearnerViewAsync()
@@ -69,6 +71,16 @@ internal class StoreV2Persistence(private val store: LocalStore) : V2Persistence
         } else if (!store.v2CompleteStepIfCurrentAsync(epoch, stepId, recordedAt, contentDigest)) {
             error("stale completion")
         }
+    }
+
+    override suspend fun openCumulativeReview(pack: dev.russiancompanion.v2.curriculum.V2CurriculumPack) {
+        val epoch = coroutineContext[CapturedLearnerEpoch]?.epoch ?: store.learnerMutationEpoch()
+        val opened = store.awaitStore { store.openUnit3CumulativeReview(pack, epoch) }
+        if (opened == null) error("Earlier teaching/check evidence is required or the learner changed")
+    }
+    override suspend fun answerCumulativeReview(pack: dev.russiancompanion.v2.curriculum.V2CurriculumPack, assignment: String, slot: Int, selected: String) {
+        val epoch = coroutineContext[CapturedLearnerEpoch]?.epoch ?: store.learnerMutationEpoch()
+        if (!store.awaitStore { store.answerCumulativeReview(pack, assignment, slot, selected, epoch) }) error("Review answer could not be saved")
     }
 
     override suspend fun recordAttempt(write: dev.russiancompanion.v2.curriculum.GovernedAttemptWrite) {
@@ -161,6 +173,7 @@ internal class StoreV2Persistence(private val store: LocalStore) : V2Persistence
                 nextSessionId,
                 nextResumeDigest,
                 nextResumeSchema,
+                pack,
             )
         } else {
             store.v2AdvanceUnitIfCurrentAsync(
@@ -171,6 +184,7 @@ internal class StoreV2Persistence(private val store: LocalStore) : V2Persistence
                 nextSessionId,
                 nextResumeDigest,
                 nextResumeSchema,
+                pack,
             )
         }
         if (!saved) error("stale advance")

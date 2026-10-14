@@ -446,3 +446,13 @@ internal val MIGRATION_9_10 = object : Migration(9, 10) {
         db.execSQL("CREATE UNIQUE INDEX IF NOT EXISTS `index_v2_review_answers_acceptedOrder` ON `v2_review_answers` (`acceptedOrder`)")
     }
 }
+
+/** Existing completions predate the required review; they are not review evidence. */
+internal val MIGRATION_10_11 = object : Migration(10, 11) {
+    override fun migrate(db: SupportSQLiteDatabase) {
+        db.execSQL("ALTER TABLE `v2_unit_completions` ADD COLUMN `preReviewActivation` INTEGER NOT NULL DEFAULT 1")
+        db.execSQL("ALTER TABLE `v2_unit_completions` ADD COLUMN `reviewPolicyDigest` TEXT NOT NULL DEFAULT ''")
+        db.execSQL("ALTER TABLE `v2_unit_completions` ADD COLUMN `reviewAssignmentId` TEXT NOT NULL DEFAULT ''")
+        db.execSQL("ALTER TABLE `v2_unit_completions` ADD COLUMN `reviewCompletionOrder` INTEGER NOT NULL DEFAULT 0")
+    }
+}

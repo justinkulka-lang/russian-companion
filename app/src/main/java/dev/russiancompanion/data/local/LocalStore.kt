@@ -877,6 +877,9 @@ internal class LocalStore private constructor(
             bookmarks = dao.bookmarks().map { it.toView() },
             notes = dao.notes().map { it.toView() },
             tutorItems = dao.tutorQueue().map { it.toView() },
+            reviewAssignments = readReviewAssignments(), reviewAnswers = readReviewAnswers(),
+            unitReviewCompletions = dao.unitCompletions().associate { it.unitNumber to CumulativeUnitCompletion(
+                it.preReviewActivation, it.reviewPolicyDigest, it.reviewAssignmentId, it.reviewCompletionOrder) },
         )
     }
 
@@ -1311,6 +1314,7 @@ internal class LocalStore private constructor(
         nextSessionId: String?,
         nextResumeDigest: String,
         nextResumeSchema: Int,
+        pack: V2CurriculumPack? = null,
     ) = v2AdvanceUnitIfCurrentAsync(
         learnerMutationEpoch(),
         unitNumber,
@@ -1319,6 +1323,7 @@ internal class LocalStore private constructor(
         nextSessionId,
         nextResumeDigest,
         nextResumeSchema,
+        pack,
     )
 
     internal suspend fun v2AdvanceUnitIfCurrentAsync(
@@ -1329,6 +1334,7 @@ internal class LocalStore private constructor(
         nextSessionId: String?,
         nextResumeDigest: String,
         nextResumeSchema: Int,
+        pack: V2CurriculumPack? = null,
     ): Boolean = withContext(ioDispatcher) {
         if (!learnerMutationCurrent(capturedEpoch)) return@withContext false
         val digestGoverned = nextResumeDigest.length == 64 &&
@@ -1337,8 +1343,16 @@ internal class LocalStore private constructor(
             error("unverified position")
         }
         database.runInTransaction {
+            val latest = readV2Learner()
+            if (unitNumber == 3 && pack == null) error("Unit 3 requires verified cumulative-review evidence")
+            if (pack != null && (!canOpenUnit(unitState(pack, pack.unit(unitNumber) ?: error("missing unit"), latest)) ||
+                !advancementDecision(pack, pack.unit(unitNumber)!!, latest).allowed))
+                error("current advancement evidence is incomplete")
+            val assignment = if (unitNumber == 3 && pack != null) currentUnit3Assignment(pack, latest) else null
             database.v2().upsertUnitCompletion(
-                dev.russiancompanion.v2.data.V2UnitCompletionEntity(unitNumber, recordedAtLocal),
+                dev.russiancompanion.v2.data.V2UnitCompletionEntity(unitNumber, recordedAtLocal, false,
+                    assignment?.policyDigest.orEmpty(), assignment?.id.orEmpty(),
+                    if (assignment == null) 0 else database.v2().maxReviewOrder()),
             )
             if (failAdvanceAfterCompletionForTests) {
                 failAdvanceAfterCompletionForTests = false
@@ -1470,6 +1484,7 @@ internal class LocalStore private constructor(
     ): GovernedReplaceOutcome = call {
         if (document.schemaVersion !in 1..BACKUP_SCHEMA_VERSION ||
             (document.schemaVersion == 1 && (document.reviewAssignments.isNotEmpty() || document.reviewAnswers.isNotEmpty())) ||
+            dev.russiancompanion.v2.backup.completionActivationDefects(document) != null ||
             reviewHistoryDefects(document.reviewAssignments, document.reviewAnswers) != null ||
             acceptedOrderDefects(document.attempts) != null) return@call GovernedReplaceOutcome.UNCHANGED
         val inputs = recordings.map { it.file }
@@ -1783,7 +1798,7 @@ internal class LocalStore private constructor(
             )
         }
         document.bookAttestations.forEach { curriculum.upsertBookAttestation(V2BookAttestationEntity(it.unitNumber, it.recordedAtLocal)) }
-        document.unitCompletions.forEach { curriculum.upsertUnitCompletion(V2UnitCompletionEntity(it.unitNumber, it.recordedAtLocal)) }
+        document.unitCompletions.forEach { curriculum.upsertUnitCompletion(V2UnitCompletionEntity(it.unitNumber, it.recordedAtLocal, it.preReviewActivation, it.reviewPolicyDigest, it.reviewAssignmentId, it.reviewCompletionOrder)) }
     }
 
     private fun BackupProfile.toEntity(): V2ProfileEntity {
@@ -2174,7 +2189,7 @@ internal class LocalStore private constructor(
                 BackupBookAttestation(it.unitNumber, it.recordedAtLocal)
             },
             unitCompletions = curriculum.unitCompletions().sortedBy { it.unitNumber }.map {
-                BackupUnitCompletion(it.unitNumber, it.recordedAtLocal)
+                BackupUnitCompletion(it.unitNumber, it.recordedAtLocal, it.preReviewActivation, it.reviewPolicyDigest, it.reviewAssignmentId, it.reviewCompletionOrder)
             },
             learnerState = users.learner(LearnerStateEntity.LOCAL_ID)?.let {
                 BackupLearnerState(it.id, it.activeSegmentId, it.onboardingCompleted, it.planContext)
@@ -2271,7 +2286,7 @@ internal class LocalStore private constructor(
         fun open(context: Context): LocalStore {
             val appContext = context.applicationContext
             val database = Room.databaseBuilder(appContext, AppDatabase::class.java, DATABASE_NAME)
-                .addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6, MIGRATION_6_7, MIGRATION_7_8, MIGRATION_8_9, MIGRATION_9_10)
+                .addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6, MIGRATION_6_7, MIGRATION_7_8, MIGRATION_8_9, MIGRATION_9_10, MIGRATION_10_11)
                 .build()
             val store = LocalStore(database, File(appContext.filesDir, "recordings"))
             store.applySeed(readSeed(appContext))
@@ -2289,7 +2304,7 @@ internal class LocalStore private constructor(
         fun openNamed(context: Context, name: String): LocalStore {
             val appContext = context.applicationContext
             val database = Room.databaseBuilder(appContext, AppDatabase::class.java, name)
-                .addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6, MIGRATION_6_7, MIGRATION_7_8, MIGRATION_8_9, MIGRATION_9_10)
+                .addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6, MIGRATION_6_7, MIGRATION_7_8, MIGRATION_8_9, MIGRATION_9_10, MIGRATION_10_11)
                 .build()
             val store = LocalStore(database, File(appContext.filesDir, "recordings-$name"))
             store.applySeed(null)

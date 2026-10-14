@@ -17,8 +17,8 @@ import java.util.zip.ZipOutputStream
 import dev.russiancompanion.v2.curriculum.LEGACY_UNVERIFIED
 import dev.russiancompanion.v2.curriculum.UNRECOVERABLE_GOVERNED_IDENTITY
 
-internal const val BACKUP_FORMAT_VERSION = 2
-internal const val BACKUP_SCHEMA_VERSION = 2
+internal const val BACKUP_FORMAT_VERSION = 3
+internal const val BACKUP_SCHEMA_VERSION = 3
 internal const val BACKUP_LEARNER_ENTRY = "learner.json"
 internal const val BACKUP_MANIFEST_ENTRY = "manifest.json"
 
@@ -172,7 +172,8 @@ internal data class BackupTutorItem(
 internal data class BackupBookAttestation(val unitNumber: Int, val recordedAtLocal: String)
 
 @Serializable
-internal data class BackupUnitCompletion(val unitNumber: Int, val recordedAtLocal: String)
+internal data class BackupUnitCompletion(val unitNumber: Int, val recordedAtLocal: String,
+    val preReviewActivation: Boolean = true, val reviewPolicyDigest: String = "", val reviewAssignmentId: String = "", val reviewCompletionOrder: Long = 0)
 
 @Serializable
 internal data class BackupLearnerState(
@@ -610,6 +611,7 @@ internal fun readGovernedBackup(
         if (document.schemaVersion !in 1..BACKUP_SCHEMA_VERSION || document.schemaVersion != manifest.formatVersion) {
             return BackupReadResult.Rejected(BackupRejection.UNSUPPORTED_VERSION)
         }
+        if (completionActivationDefects(document) != null) return BackupReadResult.Rejected(BackupRejection.MALFORMED)
         if ((document.schemaVersion == 1 && (document.reviewAssignments.isNotEmpty() || document.reviewAnswers.isNotEmpty())) ||
             reviewHistoryDefects(document.reviewAssignments, document.reviewAnswers) != null) {
             return BackupReadResult.Rejected(BackupRejection.MALFORMED)
@@ -777,3 +779,18 @@ private fun hex(bytes: ByteArray): String = bytes.joinToString("") { "%02x".form
 
 internal const val BACKUP_SAVED_WITH_LATER_CHANGES =
     "Backup saved. Newer learner changes were not included. Back up again to save them."
+
+internal fun completionActivationDefects(document: GovernedLearnerDocument): String? {
+    for (row in document.unitCompletions) {
+        if ((document.schemaVersion < 3 || row.preReviewActivation) &&
+            (!row.preReviewActivation || row.reviewPolicyDigest.isNotEmpty() || row.reviewAssignmentId.isNotEmpty() || row.reviewCompletionOrder != 0L)) return "invalid pre-review completion"
+        if (!row.preReviewActivation && row.unitNumber == 3 &&
+            (row.reviewPolicyDigest.isNotEmpty() || row.reviewAssignmentId.isNotEmpty() || row.reviewCompletionOrder != 0L)) {
+            val a = document.reviewAssignments.singleOrNull { it.id == row.reviewAssignmentId } ?: return "missing completion assignment"
+            if (a.targetUnit != 3 || a.policyDigest != row.reviewPolicyDigest ||
+                row.reviewCompletionOrder <= a.boundary ||
+                row.reviewCompletionOrder > (document.reviewAnswers.maxOfOrNull { it.acceptedOrder } ?: 0)) return "invalid completion assignment link"
+        }
+    }
+    return null
+}

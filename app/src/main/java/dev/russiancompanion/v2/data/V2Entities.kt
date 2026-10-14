@@ -113,6 +113,10 @@ internal data class V2BookAttestationEntity(
 internal data class V2UnitCompletionEntity(
     @PrimaryKey val unitNumber: Int,
     val recordedAtLocal: String,
+    @ColumnInfo(defaultValue = "1") val preReviewActivation: Boolean = false,
+    @ColumnInfo(defaultValue = "''") val reviewPolicyDigest: String = "",
+    @ColumnInfo(defaultValue = "''") val reviewAssignmentId: String = "",
+    @ColumnInfo(defaultValue = "0") val reviewCompletionOrder: Long = 0,
 )
 
 /** Immutable serialized assignment/answer identities; no UPDATE/REPLACE write API. */

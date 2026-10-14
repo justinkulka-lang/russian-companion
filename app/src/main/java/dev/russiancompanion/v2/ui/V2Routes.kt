@@ -25,6 +25,9 @@ internal data class V2SessionRoute(
 )
 
 @Serializable
+internal data object V2CumulativeReviewRoute
+
+@Serializable
 internal data object V2PracticeRoute
 
 @Serializable

@@ -25,6 +25,8 @@ internal fun V2NavHost(
     onCompleteOnboarding: (V2OnboardingDraft) -> Unit,
     onCompleteStep: (String, () -> Unit) -> Unit,
     onAttempt: (String, String, String) -> Boolean,
+    onOpenCumulativeReview: () -> Unit,
+    onCumulativeAnswer: (String, Int, String) -> Unit,
     onPracticeAttempt: (String, String, String) -> Boolean,
     onBookmark: (String, String) -> Unit,
     onNoteDraft: (String, String) -> Unit,
@@ -80,7 +82,9 @@ internal fun V2NavHost(
                     onTab = ::goTab,
                     onSavedWork = { navController.navigate(V2SavedWorkRoute) },
                     onContinue = { target ->
-                        if (target.opensUnitReview) {
+                        if (target.opensCumulativeReview) {
+                            navController.navigate(V2CumulativeReviewRoute)
+                        } else if (target.opensUnitReview) {
                             navController.navigate(V2UnitRoute(target.unitNumber))
                         } else if (target.sessionId != null) {
                             onResumeAt(target.sessionId, target.stepIndex)
@@ -118,7 +122,21 @@ internal fun V2NavHost(
                 },
                 onAttestBook = onAttestBook,
                 onAdvance = onAdvance,
+                onOpenCumulativeReview = { navController.navigate(V2CumulativeReviewRoute) },
             )
+        }
+        composable<V2CumulativeReviewRoute> {
+            val pack = state.pack ?: return@composable
+            val learner = state.learner ?: return@composable
+            V2CumulativeReviewScreen(pack, learner, pendingKeys.any { it.startsWith("review:") },
+                onBack = { navController.popBackStack() }, onTab = ::goTab,
+                onStart = onOpenCumulativeReview, onAnswer = onCumulativeAnswer,
+                onOpenEarlierUnit = { navController.navigate(V2UnitRoute(1)) },
+                onGate = { navController.navigate(V2UnitRoute(3)) },
+                onRemediate = { step ->
+                    val located = pack.step(step) ?: return@V2CumulativeReviewScreen
+                    navController.navigate(V2SessionRoute(located.first.id, located.first.steps.indexOf(located.second), remedial = true))
+                })
         }
         composable<V2SessionRoute> { entry ->
             val pack = state.pack

@@ -25,6 +25,9 @@ internal data class V2LearnerView(
     val bookmarks: List<GovernedBookmarkView> = emptyList(),
     val notes: List<GovernedNoteView> = emptyList(),
     val tutorItems: List<GovernedTutorView> = emptyList(),
+    val reviewAssignments: List<CumulativeReviewAssignment> = emptyList(),
+    val reviewAnswers: List<CumulativeReviewAnswer> = emptyList(),
+    val unitReviewCompletions: Map<Int, CumulativeUnitCompletion> = emptyMap(),
 )
 
 internal data class V2ContinueTarget(
@@ -35,6 +38,7 @@ internal data class V2ContinueTarget(
     val unitNumber: Int,
     val unavailable: Boolean = false,
     val opensUnitReview: Boolean = false,
+    val opensCumulativeReview: Boolean = false,
 )
 
 internal fun unitState(
@@ -191,6 +195,10 @@ internal fun continueTarget(pack: V2CurriculumPack, learner: V2LearnerView): V2C
             unitNumber = unit.number,
         )
     }
+    if (unit.number == 3 && !unit3ReviewComplete(pack, learner)) return V2ContinueTarget(
+        title = "Review earlier reading and letters", reason = "Complete the assigned review before advancement.",
+        sessionId = null, stepIndex = 0, unitNumber = 3, opensCumulativeReview = true,
+    )
     return V2ContinueTarget(
         title = "Review advancement",
         reason = "Required Unit ${unit.number} steps are recorded. Check advancement before moving on.",
@@ -314,8 +322,21 @@ internal fun advancementDecision(
     return V2AdvancementDecision(remaining.isEmpty(), remaining)
 }
 
+internal fun currentUnitRequirements(pack: V2CurriculumPack, unit: V2Unit, learner: V2LearnerView): V2AdvancementDecision {
+    val base = ordinaryUnitRequirements(pack, unit, learner)
+    val review = if (unit.number == 3) {
+        when {
+            !unit3ReviewDeclarationValid(pack) -> listOf("The cumulative-review rule cannot be verified")
+            !unit3ReviewComplete(pack, learner) -> listOf("Complete the assigned earlier reading and letter-recognition review")
+            else -> emptyList()
+        }
+    } else emptyList()
+    val remaining = base.remaining + review
+    return V2AdvancementDecision(remaining.isEmpty(), remaining)
+}
+
 /** Does not call completion/prerequisite derivation, avoiding recursive evidence evaluation. */
-internal fun currentUnitRequirements(
+internal fun ordinaryUnitRequirements(
     pack: V2CurriculumPack,
     unit: V2Unit,
     learner: V2LearnerView,
@@ -352,7 +373,7 @@ internal fun currentUnitRequirements(
             }
         }
     }
-    if (rule.requireDueReview) {
+    if (rule.requireDueReview && unit.number != 3) {
         val reviewSteps = unit.sessions.flatMap { it.steps }.filter { step ->
             pack.items.any { it.id in step.itemIds && it.objectiveId == "obj-u2-review" } ||
                 step.id.contains("review")

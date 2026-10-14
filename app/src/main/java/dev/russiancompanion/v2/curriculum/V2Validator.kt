@@ -6,6 +6,7 @@ import java.security.MessageDigest
 internal object V2Validator {
     fun validate(pack: V2CurriculumPack, repositoryRoot: File? = null): V2Validation {
         val errors = mutableListOf<String>()
+        if (!unit3ReviewDeclarationValid(pack)) errors += "Unit 3 requires the versioned cumulative-review declaration"
         if (pack.schemaVersion != 1) errors += "Unsupported curriculum schema ${pack.schemaVersion}"
         if (pack.units.size != 30) errors += "The map must contain exactly 30 Penguin-aligned units"
         if (pack.units.map { it.number } != (1..30).toList()) {
@@ -498,6 +499,7 @@ internal object V2Validator {
                     "minimumDistinctChecks" to canonNum(rule.minimumDistinctChecks),
                     "requireDueReview" to canonBool(rule.requireDueReview),
                     "tutorOptional" to canonBool(rule.tutorOptional),
+                    *rule.cumulativeReviewPolicyId?.let { arrayOf("cumulativeReviewPolicyId" to canonStr(it)) }.orEmpty(),
                 )
             } ?: "null"),
         )

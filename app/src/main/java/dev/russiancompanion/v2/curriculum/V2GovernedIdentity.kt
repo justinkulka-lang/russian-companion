@@ -312,7 +312,7 @@ internal fun attemptSuppliesStepSelection(
     if (attempt.itemDigest != V2Validator.checkItemContentDigest(item)) return false
     val unitNumber = itemUnitNumber(pack, item) ?: return false
     if (attempt.unitNumber != unitNumber || pack.unit(unitNumber) == null) return false
-    if (attempt.unitContentDigest != currentUnitDigest(pack, unitNumber)) return false
+    if (!prescribedUnitIdentityMatches(pack, unitNumber, attempt.unitContentDigest)) return false
     val step = pack.step(stepId)?.second ?: return false
     return attempt.itemId in step.itemIds
 }
@@ -405,7 +405,9 @@ internal fun attemptGrantsPrescribedCredit(attempt: GovernedAttemptView, pack: V
     val item = pack.item(attempt.itemId) ?: return false
     if (attempt.itemDigest != V2Validator.checkItemContentDigest(item)) return false
     if (pack.unit(attempt.unitNumber) == null) return false
-    return attempt.unitContentDigest == currentUnitDigest(pack, attempt.unitNumber)
+    if (attempt.selected != item.answer || attempt.objectiveId != item.objectiveId ||
+        itemUnitNumber(pack, item) != attempt.unitNumber) return false
+    return prescribedUnitIdentityMatches(pack, attempt.unitNumber, attempt.unitContentDigest)
 }
 
 internal fun creditItemIds(pack: V2CurriculumPack, learner: V2LearnerView): Set<String> {
