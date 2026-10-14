@@ -1,0 +1,107 @@
+{
+  "repositoryCommit": "be61e58913f0aa43fab096b0f5143291216b476c",
+  "counts": {
+    "tests": 40,
+    "failures": 1,
+    "errors": 0,
+    "skipped": 0
+  },
+  "exitCode": 1,
+  "files": [
+    {
+      "path": "FIRST_INTEGRATION_TEST-dev.russiancompanion.release.ReleaseSourceDigestTest.xml",
+      "sha256": "3a1ef0ba1bcd9c9913d6f21f9ef99def890db1716f8251996fc1f5af21210695",
+      "failedMethods": []
+    },
+    {
+      "path": "FIRST_INTEGRATION_TEST-dev.russiancompanion.v2.BatchECapabilityResearchTest.xml",
+      "sha256": "0c754791374b41e90f85876b43075725efbd53eaa13e51686889fd17a93a0591",
+      "failedMethods": []
+    },
+    {
+      "path": "FIRST_INTEGRATION_TEST-dev.russiancompanion.v2.LabExplanationCorrectionTest.xml",
+      "sha256": "ae5c634a2043c5a075853125ae768230aea348d3b968d45c204252dc702f3a7e",
+      "failedMethods": []
+    },
+    {
+      "path": "FIRST_INTEGRATION_TEST-dev.russiancompanion.v2.Unit13ReportedTransferTest.xml",
+      "sha256": "bb1490cc61da19201bef50db7ddd0bb7840a911e4eecc29fb5ae463d2408a83a",
+      "failedMethods": []
+    },
+    {
+      "path": "FIRST_INTEGRATION_TEST-dev.russiancompanion.v2.Unit28TimingTransferTest.xml",
+      "sha256": "09094c79f522f2577d3c573da210104d8e6f15c9b23524401aa39249dee602ab",
+      "failedMethods": []
+    },
+    {
+      "path": "FIRST_INTEGRATION_TEST-dev.russiancompanion.v2.Unit6AnimacyTransferTest.xml",
+      "sha256": "9bf82a10b8ffbb5f510968891a92c36cb3bfa126adeb8661cbb7df1f0275e59a",
+      "failedMethods": []
+    },
+    {
+      "path": "FIRST_INTEGRATION_TEST-dev.russiancompanion.v2.Unit8PluralInstructionTest.xml",
+      "sha256": "ce4f2c61271b10418f6c0c8e4cefa8a86f1b2e76ad0ab8f482884e8f82a0e65f",
+      "failedMethods": []
+    },
+    {
+      "path": "FIRST_INTEGRATION_TEST-dev.russiancompanion.v2.Units2630SourceIntakeTest.xml",
+      "sha256": "03afbd4ad537dc782d24df62e8d95c765cf41a584f6d63044fd8074362a54765",
+      "failedMethods": []
+    },
+    {
+      "path": "FIRST_INTEGRATION_TEST-dev.russiancompanion.v2.V2RebuildTest.xml",
+      "sha256": "221445c9f60a18b7af040002003f6a5bda947bbe8e274fe73511ed645319871f",
+      "failedMethods": []
+    },
+    {
+      "path": "FIRST_INTEGRATION_TEST-dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest.xml",
+      "sha256": "3a9a65f294c1baa8ebb12309ae93b7cb03a7806c5d1615913ffd216ff52ac11b",
+      "failedMethods": []
+    },
+    {
+      "path": "FIRST_INTEGRATION_TEST-dev.russiancompanion.v2.audit.GapClosureDossierTest.xml",
+      "sha256": "b38f90ba66a8b677df432f874bd65b398fdc1e7d31367ee4c87fd28a00f290f8",
+      "failedMethods": []
+    },
+    {
+      "path": "FIRST_INTEGRATION_TEST-dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest.xml",
+      "sha256": "a8483a4854c641a25497a69ae026ce7c0e3d215602b043076f51d0c412ddc876",
+      "failedMethods": []
+    },
+    {
+      "path": "FIRST_INTEGRATION_TEST-dev.russiancompanion.v2.review.UnitReviewPipelineTest.xml",
+      "sha256": "e1abc98bae82f7857cfa3b299b25f0bff7797eb4b8759a9f4186d415e7232f67",
+      "failedMethods": []
+    },
+    {
+      "path": "FIRST_INTEGRATION_TEST-dev.russiancompanion.v2.Unit10IndependentReinforcementTest.xml",
+      "sha256": "802338a3e9d633abaebf7fbd7e5ebb96c9a7c76bd6922782543da4af1bff62b7",
+      "failedMethods": []
+    },
+    {
+      "path": "FIRST_INTEGRATION_TEST-dev.russiancompanion.v2.Unit10ReinforcementReviewTest.xml",
+      "sha256": "d438ad85c7407aa2204be341c052b84b17342b9a1f967d8a531f36c2ed8c8f48",
+      "failedMethods": []
+    },
+    {
+      "path": "FIRST_INTEGRATION_TEST-dev.russiancompanion.v2.Unit4NominativeRoleTest.xml",
+      "sha256": "d3d94532a63dcb288a2df85b7f81ef97d8063cebcda78d94e7612ac1bf3d9797",
+      "failedMethods": []
+    },
+    {
+      "path": "FIRST_INTEGRATION_TEST-dev.russiancompanion.v2.Unit9ReinforcementReviewTest.xml",
+      "sha256": "0ad587eb6918b7ed4d212b803b28532b3005ccf41d5ca24a02c3d035dabc6acd",
+      "failedMethods": []
+    },
+    {
+      "path": "FIRST_INTEGRATION_TEST-dev.russiancompanion.v2.Units35SourceIntakeTest.xml",
+      "sha256": "da64b6522d5eb1cd09098fd107af1ad8a47365324408a6a604285dc451091d03",
+      "failedMethods": [
+        "everyRussianCandidateHasAnAdmittedImmutableSourceAndRights"
+      ]
+    }
+  ],
+  "diagnosis": "Preexisting all-record source allowlist in Units35SourceIntakeTest omits three declared Unit21/Unit29 sources; no Unit4 source declaration changed.",
+  "lint": "NOT_EXECUTED_AFTER_FAILED_TEST_TASK",
+  "releaseGateAttachment": "NOT_EXECUTED_AFTER_FAILED_TEST_TASK"
+}

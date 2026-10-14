@@ -54,6 +54,9 @@ class Units35SourceIntakeTest {
             "src-ruwikisource-vechera-5336197",
             "src-original-research-synthesis",
             "src-content-audit-research",
+            "src-enwiki-reflexive-pronoun-1374712982",
+            "src-ruwiki-obosoblenie-144053197",
+            "src-ruwiki-boltraffio-149826784",
         )
         pack.provenanceRecords.forEach { record ->
             assertTrue(record.itemId, record.sourceId in admitted)
@@ -67,6 +70,9 @@ class Units35SourceIntakeTest {
                     "urn:russian-companion:original-research-synthesis:${record.sourceRevision}",
                     record.sourceUrl,
                 )
+            } else if (record.sourceId == "src-enwiki-reflexive-pronoun-1374712982") {
+                assertEquals(record.itemId, "1374712982", record.sourceRevision)
+                assertEquals(record.itemId, "https://en.wikipedia.org/wiki/Reflexive_pronoun?oldid=1374712982", record.sourceUrl)
             } else if (record.unitNumber in 26..30) {
                 assertTrue(record.itemId, record.sourceUrl.contains("oldid=${record.sourceRevision}"))
             }
