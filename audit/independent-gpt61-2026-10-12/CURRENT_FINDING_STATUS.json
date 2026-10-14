@@ -360,6 +360,16 @@
           "productionChanges": false,
           "formalAcceptance": false,
           "semanticOverlapBeyondExactSignaturesDisclosed": true
+        },
+        "unit10IndependentPairs": {
+          "repositoryCommit": "0fa2c6083ee29b730268c66e267e47246dc9195f",
+          "evidencePath": "ia016-unit10-independent-review/VERIFICATION_MANIFEST.json",
+          "disposition": "CORRECT_CROSS_OBJECTIVE_REHEARSED_EVIDENCE_RETAINED_PENDING_INDEPENDENT_ASSESSMENT",
+          "passingMethods": 9,
+          "classes": 3,
+          "productionChanges": false,
+          "formalAcceptance": false,
+          "unseenContextClaim": false
         }
       }
     },
@@ -397,16 +407,16 @@
   ],
   "physicalDeviceEvidenceRequestTiming": "AFTER_FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
   "latestAppImplementationCommit": "30ca4e8a8200dc34704a8fcb2aab03ed1df2c97e",
-  "latestVerifiedRepositoryCommit": "b32ac3fbbd4aa9dc9394ff0edcfcb5e7bb532b28",
+  "latestVerifiedRepositoryCommit": "0fa2c6083ee29b730268c66e267e47246dc9195f",
   "latestResearchDiagnosticRepositoryCommit": "0edaa0fc635b3579823f7b352f52fa79a675db3d",
   "latestSupplementalVerifiedRepositoryCommit": "409a9e87bd17174e6340fc896b7576115d30a69a",
-  "latestFocusedIntegrationCommit": "b32ac3fbbd4aa9dc9394ff0edcfcb5e7bb532b28",
-  "latestFocusedIntegrationPassed": 6,
+  "latestFocusedIntegrationCommit": "0fa2c6083ee29b730268c66e267e47246dc9195f",
+  "latestFocusedIntegrationPassed": 9,
   "latestFocusedIntegrationFailures": 0,
   "latestCorrectedTargetPassed": 1,
-  "latestFocusedIntegrationScope": "6_SELECTED_TESTS_3_CLASSES_3_SELECTORS_NOT_COMPLETE_SUITE_PRODUCTION_UNCHANGED",
+  "latestFocusedIntegrationScope": "9_SELECTED_TESTS_3_CLASSES_3_SELECTORS_NOT_COMPLETE_SUITE_PRODUCTION_UNCHANGED",
   "latestCorrectedTargetBatch": "IA016_UNIT21_HISTORICAL_NOT_THIS_UNIT24_RUN",
-  "latestFocusedVerificationUniquePassingMethods": 6,
+  "latestFocusedVerificationUniquePassingMethods": 9,
   "additionalEngineeringFollowups": {
     "UNIT8_PLURAL_INSTRUCTION_FOLLOWUP": {
       "producerFindingId": null,
@@ -419,5 +429,5 @@
       "formalAcceptance": false
     }
   },
-  "latestBoundedReviewRepositoryCommit": "b32ac3fbbd4aa9dc9394ff0edcfcb5e7bb532b28"
+  "latestBoundedReviewRepositoryCommit": "0fa2c6083ee29b730268c66e267e47246dc9195f"
 }
