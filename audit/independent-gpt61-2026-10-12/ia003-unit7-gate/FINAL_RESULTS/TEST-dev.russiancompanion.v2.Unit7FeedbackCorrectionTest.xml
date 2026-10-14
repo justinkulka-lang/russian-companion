@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit7FeedbackCorrectionTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-14T18:30:55.349Z" hostname="f5c5dd6b855f" time="13.16">
+  <properties/>
+  <testcase name="feedbackExplainsGenderNumberAndNominativeAgreement" classname="dev.russiancompanion.v2.Unit7FeedbackCorrectionTest" time="9.066"/>
+  <testcase name="historicalGenericFeedbackCreditIsRetainedButStale" classname="dev.russiancompanion.v2.Unit7FeedbackCorrectionTest" time="1.173"/>
+  <testcase name="wrongAdjectiveSelectionDisplaysTheAgreementExplanation" classname="dev.russiancompanion.v2.Unit7FeedbackCorrectionTest" time="2.888"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+]]></system-err>
+</testsuite>
