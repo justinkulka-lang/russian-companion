@@ -1,0 +1,15 @@
+{
+  "baselineRepositoryCommit": "0bb3e2427b9ebde8270cc99a6cf097e3c489201b",
+  "workingTree": "One new regression class and audit evidence; protected production/source/review/release inputs unchanged.",
+  "testSha256": "b797c260c6f948af146470872c6eff029455044555c931e4b762c82254caa0d6",
+  "scriptSha256": "097497b3eba177d797eee14477ccc7f3ffbeec0647081f690cd9a2388f186098",
+  "initScripts": {
+    "/workspace/setup/cloud-validation.gradle": "21c6a0ee2e97cf83c472513ac31c3d2d456e461185384e9b5e58c0fed298d123",
+    "/workspace/setup/parallel-tests.gradle": "2366eb867708f83db10b39080abff1b45d2e347bab15ce2ec1c95c3d31cf7ff3"
+  },
+  "intendedTests": 6,
+  "intendedClasses": 3,
+  "intendedSelectors": 3,
+  "scope": "FOCUSED_REINFORCEMENT_REVIEW_NOT_COMPLETE_SUITE",
+  "formalAcceptance": false
+}

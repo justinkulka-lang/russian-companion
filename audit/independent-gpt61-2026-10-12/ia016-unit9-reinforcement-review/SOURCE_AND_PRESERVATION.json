@@ -1,0 +1,1838 @@
+{
+  "baselineRepositoryCommit": "0bb3e2427b9ebde8270cc99a6cf097e3c489201b",
+  "identities": [
+    {
+      "path": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+      "sha256": "dcb20ca815c1dce735cfe57de68dc90baa0bc645489837ec50f3ec520f0a44ca",
+      "bytes": 6548
+    },
+    {
+      "path": "catalog/sources/units-6-10/wikibooks/numbers-4371358.revision.json",
+      "sha256": "8f2d7afa56ea696659b2a4df066bb31b0964473dc5f413508daf66b48523a142",
+      "bytes": 215
+    },
+    {
+      "path": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+      "sha256": "60702c98a8e6178c4b140fe81e2220df1f830972913f99047502d95ecda00b16",
+      "bytes": 15454
+    },
+    {
+      "path": "catalog/sources/units-6-10/wikibooks/accusative-4330404.revision.json",
+      "sha256": "d321e626bd83ae73b42ec2f49b83860d710582f9988fa909a7f25cd25c04776e",
+      "bytes": 232
+    },
+    {
+      "path": "catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt",
+      "sha256": "95447e1048fcc0094d2e96f1b796b8cc65a595a6fbcd385430a97dc2631b6b40",
+      "bytes": 10475
+    },
+    {
+      "path": "catalog/sources/units-3-5/openrussian/LICENSE",
+      "sha256": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+      "bytes": 20131
+    },
+    {
+      "path": "app/src/main/assets/content/v2-curriculum.json",
+      "sha256": "3052b1dc1ac32d91c0a5b3b5be25c867a95a26c7aaaabac5445b2e72be4e297f",
+      "bytes": 19720276
+    },
+    {
+      "path": "app/src/main/java/dev/russiancompanion/v2/curriculum/CompleteRuleContextPins.kt",
+      "sha256": "12b293da98d7e9766c5f707f9d3ad5efd678d89b45f9073434dee132ba8a6171",
+      "bytes": 12475
+    },
+    {
+      "path": "release/acceptance/candidate.json",
+      "sha256": "b5fbee8b0e8219aeeac4d86bd6756704eb7a8ab53ca902fc0382c30efd43b573",
+      "bytes": 3659
+    },
+    {
+      "path": "review/unit-9/UNIT_9_REVIEW_MANIFEST.json",
+      "sha256": "3862480503680c560967b41507ee546673ecb55c7e808cd99a6a3855ba171fbd",
+      "bytes": 346986
+    }
+  ],
+  "itemsAndBindings": [
+    {
+      "item": {
+        "id": "u9-g-quantity-0",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which complete case explanation fits the shown example?",
+        "promptLetter": "один час",
+        "options": [
+          "In this basic counting phrase, the noun is nominative singular.",
+          "In this basic counting phrase, the noun is genitive singular.",
+          "In this basic counting phrase, the noun is genitive plural."
+        ],
+        "answer": "In this basic counting phrase, the noun is nominative singular.",
+        "feedback": "The value is 1; the last two digits do not fall in 11-through14, and the final digit is 1. In this basic counting phrase, the counted noun is nominative singular. Classify the complete number rather than treating every value above five as the same pattern.",
+        "objectiveId": "obj-u9-quantity",
+        "sourceId": "src-content-audit-research",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.",
+          "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern."
+        ],
+        "assessment": {
+          "testedFeature": "FINAL_DIGIT_ONE",
+          "evidenceMode": "STATED_APPLICATION",
+          "contrastSetId": "u9-quantity-0",
+          "cueLanguage": "ru",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ca-u9-rule-u9-g-quantity-0-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ca-u9-rule-u9-g-quantity-0-2",
+            "prov-ca-u9-rule-u9-g-quantity-0-3"
+          ],
+          "distractorDifference": [
+            "",
+            "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.",
+            "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern."
+          ],
+          "whyAnswerDemonstratesObjective": "The value is 1; the last two digits do not fall in 11-through14, and the final digit is 1. In this basic counting phrase, the counted noun is nominative singular. Classify the complete number rather than treating every value above five as the same pattern.",
+          "contrastMembers": [
+            "In this basic counting phrase, the noun is nominative singular.",
+            "In this basic counting phrase, the noun is genitive singular.",
+            "In this basic counting phrase, the noun is genitive plural."
+          ],
+          "relationKind": "STATED_APPLICATION",
+          "relationParticipantIds": [
+            "prov-ca-u9-rule-u9-g-quantity-0-0",
+            "prov-ca-u9-rule-u9-g-quantity-0-1",
+            "prov-ca-u9-rule-u9-g-quantity-0-2",
+            "prov-ca-u9-rule-u9-g-quantity-0-3"
+          ]
+        }
+      },
+      "records": [
+        {
+          "id": "prov-ca-u9-rule-u9-g-quantity-0-0",
+          "sourceRecordId": "ca-rule-context:u9-g-quantity-0",
+          "sourceHash": "ab01f9e22cd568a180d5f433b6445f4379bdb052b0095701a0f8371fb7b4665a",
+          "contentHash": "914759c18921b7f23fa9d6be1c98f1b919a4ffb271c6b44b9219ab8e26b13fe3",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "один час",
+              "answer": "In this basic counting phrase, the noun is nominative singular.",
+              "distractors": [
+                "In this basic counting phrase, the noun is genitive singular.",
+                "In this basic counting phrase, the noun is genitive plural."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "prov-ca-u9-rule-u9-g-quantity-0-1",
+          "sourceRecordId": "ca-rule-context:u9-g-quantity-0",
+          "sourceHash": "ab01f9e22cd568a180d5f433b6445f4379bdb052b0095701a0f8371fb7b4665a",
+          "contentHash": "b7b5d6cc2271440fcd31c6e4faf72ba48e1a15e4455f0d232bf03be5b4bac623",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "один час",
+              "answer": "In this basic counting phrase, the noun is nominative singular.",
+              "distractors": [
+                "In this basic counting phrase, the noun is genitive singular.",
+                "In this basic counting phrase, the noun is genitive plural."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "prov-ca-u9-rule-u9-g-quantity-0-2",
+          "sourceRecordId": "ca-rule-context:u9-g-quantity-0",
+          "sourceHash": "ab01f9e22cd568a180d5f433b6445f4379bdb052b0095701a0f8371fb7b4665a",
+          "contentHash": "db4e0ed4e59b656352fc017795778efdc7f9424e5ba08e81962bb908d4c0991f",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "один час",
+              "answer": "In this basic counting phrase, the noun is nominative singular.",
+              "distractors": [
+                "In this basic counting phrase, the noun is genitive singular.",
+                "In this basic counting phrase, the noun is genitive plural."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "prov-ca-u9-rule-u9-g-quantity-0-3",
+          "sourceRecordId": "ca-rule-context:u9-g-quantity-0",
+          "sourceHash": "ab01f9e22cd568a180d5f433b6445f4379bdb052b0095701a0f8371fb7b4665a",
+          "contentHash": "5777bda01a98552e2b4a5cb65882356827b5a0278db0ef0e592d7a5b99b4e47c",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "один час",
+              "answer": "In this basic counting phrase, the noun is nominative singular.",
+              "distractors": [
+                "In this basic counting phrase, the noun is genitive singular.",
+                "In this basic counting phrase, the noun is genitive plural."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item": {
+        "id": "u9-i-quantity-1",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which complete case explanation fits the shown example?",
+        "promptLetter": "двадцать два часа",
+        "options": [
+          "In this basic counting phrase, the noun is genitive singular.",
+          "In this basic counting phrase, the noun is nominative singular.",
+          "In this basic counting phrase, the noun is genitive plural."
+        ],
+        "answer": "In this basic counting phrase, the noun is genitive singular.",
+        "feedback": "The value is 22; the last two digits do not fall in 11-through14, and the final digit is 2. In this basic counting phrase, the counted noun is genitive singular. Classify the complete number rather than treating every value above five as the same pattern.",
+        "objectiveId": "obj-u9-quantity",
+        "sourceId": "src-content-audit-research",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "The nominative-singular explanation applies to a final one outside the teen exception, rather than this shown counting pattern.",
+          "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern."
+        ],
+        "assessment": {
+          "testedFeature": "COMPOUND_22",
+          "evidenceMode": "STATED_APPLICATION",
+          "contrastSetId": "u9-quantity-1",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ca-u9-rule-u9-i-quantity-1-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ca-u9-rule-u9-i-quantity-1-2",
+            "prov-ca-u9-rule-u9-i-quantity-1-3"
+          ],
+          "distractorDifference": [
+            "",
+            "The nominative-singular explanation applies to a final one outside the teen exception, rather than this shown counting pattern.",
+            "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern."
+          ],
+          "whyAnswerDemonstratesObjective": "The value is 22; the last two digits do not fall in 11-through14, and the final digit is 2. In this basic counting phrase, the counted noun is genitive singular. Classify the complete number rather than treating every value above five as the same pattern.",
+          "contrastMembers": [
+            "In this basic counting phrase, the noun is genitive singular.",
+            "In this basic counting phrase, the noun is nominative singular.",
+            "In this basic counting phrase, the noun is genitive plural."
+          ],
+          "relationKind": "STATED_APPLICATION",
+          "relationParticipantIds": [
+            "prov-ca-u9-rule-u9-i-quantity-1-0",
+            "prov-ca-u9-rule-u9-i-quantity-1-1",
+            "prov-ca-u9-rule-u9-i-quantity-1-2",
+            "prov-ca-u9-rule-u9-i-quantity-1-3"
+          ]
+        }
+      },
+      "records": [
+        {
+          "id": "prov-ca-u9-rule-u9-i-quantity-1-0",
+          "sourceRecordId": "ca-rule-context:u9-i-quantity-1",
+          "sourceHash": "d7fb2d3ee1075d7dcd2f08704e83c8b38f6aa9ce5a829f2b0316b92fb657f690",
+          "contentHash": "74885decbdca27deb5edf5a88acf41150fc426948c474d6c00648a77ac075762",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "двадцать два часа",
+              "answer": "In this basic counting phrase, the noun is genitive singular.",
+              "distractors": [
+                "In this basic counting phrase, the noun is nominative singular.",
+                "In this basic counting phrase, the noun is genitive plural."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "prov-ca-u9-rule-u9-i-quantity-1-1",
+          "sourceRecordId": "ca-rule-context:u9-i-quantity-1",
+          "sourceHash": "d7fb2d3ee1075d7dcd2f08704e83c8b38f6aa9ce5a829f2b0316b92fb657f690",
+          "contentHash": "db4e0ed4e59b656352fc017795778efdc7f9424e5ba08e81962bb908d4c0991f",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "двадцать два часа",
+              "answer": "In this basic counting phrase, the noun is genitive singular.",
+              "distractors": [
+                "In this basic counting phrase, the noun is nominative singular.",
+                "In this basic counting phrase, the noun is genitive plural."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "prov-ca-u9-rule-u9-i-quantity-1-2",
+          "sourceRecordId": "ca-rule-context:u9-i-quantity-1",
+          "sourceHash": "d7fb2d3ee1075d7dcd2f08704e83c8b38f6aa9ce5a829f2b0316b92fb657f690",
+          "contentHash": "b7b5d6cc2271440fcd31c6e4faf72ba48e1a15e4455f0d232bf03be5b4bac623",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "двадцать два часа",
+              "answer": "In this basic counting phrase, the noun is genitive singular.",
+              "distractors": [
+                "In this basic counting phrase, the noun is nominative singular.",
+                "In this basic counting phrase, the noun is genitive plural."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "prov-ca-u9-rule-u9-i-quantity-1-3",
+          "sourceRecordId": "ca-rule-context:u9-i-quantity-1",
+          "sourceHash": "d7fb2d3ee1075d7dcd2f08704e83c8b38f6aa9ce5a829f2b0316b92fb657f690",
+          "contentHash": "5777bda01a98552e2b4a5cb65882356827b5a0278db0ef0e592d7a5b99b4e47c",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "двадцать два часа",
+              "answer": "In this basic counting phrase, the noun is genitive singular.",
+              "distractors": [
+                "In this basic counting phrase, the noun is nominative singular.",
+                "In this basic counting phrase, the noun is genitive plural."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item": {
+        "id": "u9-i-quantity-2",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which complete case explanation fits the shown example?",
+        "promptLetter": "пять часов",
+        "options": [
+          "In this basic counting phrase, the noun is genitive plural.",
+          "In this basic counting phrase, the noun is genitive singular."
+        ],
+        "answer": "In this basic counting phrase, the noun is genitive plural.",
+        "feedback": "The value is 5; the last two digits do not fall in 11-through14, and the final digit is 5. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.",
+        "objectiveId": "obj-u9-quantity",
+        "sourceId": "src-content-audit-research",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern."
+        ],
+        "assessment": {
+          "testedFeature": "FINAL_DIGIT_FIVE_PLUS",
+          "evidenceMode": "STATED_APPLICATION",
+          "contrastSetId": "u9-quantity-2",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ca-u9-rule-u9-i-quantity-2-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ca-u9-rule-u9-i-quantity-2-2"
+          ],
+          "distractorDifference": [
+            "",
+            "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern."
+          ],
+          "whyAnswerDemonstratesObjective": "The value is 5; the last two digits do not fall in 11-through14, and the final digit is 5. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.",
+          "contrastMembers": [
+            "In this basic counting phrase, the noun is genitive plural.",
+            "In this basic counting phrase, the noun is genitive singular."
+          ],
+          "relationKind": "STATED_APPLICATION",
+          "relationParticipantIds": [
+            "prov-ca-u9-rule-u9-i-quantity-2-0",
+            "prov-ca-u9-rule-u9-i-quantity-2-1",
+            "prov-ca-u9-rule-u9-i-quantity-2-2"
+          ]
+        }
+      },
+      "records": [
+        {
+          "id": "prov-ca-u9-rule-u9-i-quantity-2-0",
+          "sourceRecordId": "ca-rule-context:u9-i-quantity-2",
+          "sourceHash": "4c7a0cc8ef8593c47555c350c46289dfec00a23853e8a1db1c5b61ba36568280",
+          "contentHash": "e323224d27d02edb9a7c35bd15e0919791e785100bbea36301b4d07c6ad191df",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "пять часов",
+              "answer": "In this basic counting phrase, the noun is genitive plural.",
+              "distractors": [
+                "In this basic counting phrase, the noun is genitive singular."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "prov-ca-u9-rule-u9-i-quantity-2-1",
+          "sourceRecordId": "ca-rule-context:u9-i-quantity-2",
+          "sourceHash": "4c7a0cc8ef8593c47555c350c46289dfec00a23853e8a1db1c5b61ba36568280",
+          "contentHash": "5777bda01a98552e2b4a5cb65882356827b5a0278db0ef0e592d7a5b99b4e47c",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "пять часов",
+              "answer": "In this basic counting phrase, the noun is genitive plural.",
+              "distractors": [
+                "In this basic counting phrase, the noun is genitive singular."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "prov-ca-u9-rule-u9-i-quantity-2-2",
+          "sourceRecordId": "ca-rule-context:u9-i-quantity-2",
+          "sourceHash": "4c7a0cc8ef8593c47555c350c46289dfec00a23853e8a1db1c5b61ba36568280",
+          "contentHash": "db4e0ed4e59b656352fc017795778efdc7f9424e5ba08e81962bb908d4c0991f",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "пять часов",
+              "answer": "In this basic counting phrase, the noun is genitive plural.",
+              "distractors": [
+                "In this basic counting phrase, the noun is genitive singular."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item": {
+        "id": "u9-i-quantity-3",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which complete case explanation fits the shown example?",
+        "promptLetter": "двадцать один час",
+        "options": [
+          "In this basic counting phrase, the noun is nominative singular.",
+          "In this basic counting phrase, the noun is genitive singular.",
+          "In this basic counting phrase, the noun is genitive plural."
+        ],
+        "answer": "In this basic counting phrase, the noun is nominative singular.",
+        "feedback": "The value is 21; the last two digits do not fall in 11-through14, and the final digit is 1. In this basic counting phrase, the counted noun is nominative singular. Classify the complete number rather than treating every value above five as the same pattern.",
+        "objectiveId": "obj-u9-quantity",
+        "sourceId": "src-content-audit-research",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.",
+          "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern."
+        ],
+        "assessment": {
+          "testedFeature": "COMPOUND_21",
+          "evidenceMode": "STATED_APPLICATION",
+          "contrastSetId": "u9-quantity-3",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ca-u9-rule-u9-i-quantity-3-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ca-u9-rule-u9-i-quantity-3-2",
+            "prov-ca-u9-rule-u9-i-quantity-3-3"
+          ],
+          "distractorDifference": [
+            "",
+            "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.",
+            "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern."
+          ],
+          "whyAnswerDemonstratesObjective": "The value is 21; the last two digits do not fall in 11-through14, and the final digit is 1. In this basic counting phrase, the counted noun is nominative singular. Classify the complete number rather than treating every value above five as the same pattern.",
+          "contrastMembers": [
+            "In this basic counting phrase, the noun is nominative singular.",
+            "In this basic counting phrase, the noun is genitive singular.",
+            "In this basic counting phrase, the noun is genitive plural."
+          ],
+          "relationKind": "STATED_APPLICATION",
+          "relationParticipantIds": [
+            "prov-ca-u9-rule-u9-i-quantity-3-0",
+            "prov-ca-u9-rule-u9-i-quantity-3-1",
+            "prov-ca-u9-rule-u9-i-quantity-3-2",
+            "prov-ca-u9-rule-u9-i-quantity-3-3"
+          ]
+        }
+      },
+      "records": [
+        {
+          "id": "prov-ca-u9-rule-u9-i-quantity-3-0",
+          "sourceRecordId": "ca-rule-context:u9-i-quantity-3",
+          "sourceHash": "12ec03047cd976cdb3c6669b82e0dd04a6fd80aa0b408d3b9e5ad3194a68c82e",
+          "contentHash": "87bee02c1ecf4f5be986cd4c90129fe40aa3c0500a799c5404306c05bb01c8ea",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "двадцать один час",
+              "answer": "In this basic counting phrase, the noun is nominative singular.",
+              "distractors": [
+                "In this basic counting phrase, the noun is genitive singular.",
+                "In this basic counting phrase, the noun is genitive plural."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "prov-ca-u9-rule-u9-i-quantity-3-1",
+          "sourceRecordId": "ca-rule-context:u9-i-quantity-3",
+          "sourceHash": "12ec03047cd976cdb3c6669b82e0dd04a6fd80aa0b408d3b9e5ad3194a68c82e",
+          "contentHash": "b7b5d6cc2271440fcd31c6e4faf72ba48e1a15e4455f0d232bf03be5b4bac623",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "двадцать один час",
+              "answer": "In this basic counting phrase, the noun is nominative singular.",
+              "distractors": [
+                "In this basic counting phrase, the noun is genitive singular.",
+                "In this basic counting phrase, the noun is genitive plural."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "prov-ca-u9-rule-u9-i-quantity-3-2",
+          "sourceRecordId": "ca-rule-context:u9-i-quantity-3",
+          "sourceHash": "12ec03047cd976cdb3c6669b82e0dd04a6fd80aa0b408d3b9e5ad3194a68c82e",
+          "contentHash": "db4e0ed4e59b656352fc017795778efdc7f9424e5ba08e81962bb908d4c0991f",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "двадцать один час",
+              "answer": "In this basic counting phrase, the noun is nominative singular.",
+              "distractors": [
+                "In this basic counting phrase, the noun is genitive singular.",
+                "In this basic counting phrase, the noun is genitive plural."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "prov-ca-u9-rule-u9-i-quantity-3-3",
+          "sourceRecordId": "ca-rule-context:u9-i-quantity-3",
+          "sourceHash": "12ec03047cd976cdb3c6669b82e0dd04a6fd80aa0b408d3b9e5ad3194a68c82e",
+          "contentHash": "5777bda01a98552e2b4a5cb65882356827b5a0278db0ef0e592d7a5b99b4e47c",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "двадцать один час",
+              "answer": "In this basic counting phrase, the noun is nominative singular.",
+              "distractors": [
+                "In this basic counting phrase, the noun is genitive singular.",
+                "In this basic counting phrase, the noun is genitive plural."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item": {
+        "id": "u9-i-quantity-4",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which complete case explanation fits the shown example?",
+        "promptLetter": "шестнадцать рублей",
+        "options": [
+          "In this basic counting phrase, the noun is genitive plural.",
+          "In this basic counting phrase, the noun is genitive singular."
+        ],
+        "answer": "In this basic counting phrase, the noun is genitive plural.",
+        "feedback": "The value is 16; the last two digits do not fall in 11-through14, and the final digit is 6. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.",
+        "objectiveId": "obj-u9-quantity",
+        "sourceId": "src-content-audit-research",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern."
+        ],
+        "assessment": {
+          "testedFeature": "TEEN_VALUE",
+          "evidenceMode": "STATED_APPLICATION",
+          "contrastSetId": "u9-quantity-4",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ca-u9-rule-u9-i-quantity-4-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ca-u9-rule-u9-i-quantity-4-2"
+          ],
+          "distractorDifference": [
+            "",
+            "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern."
+          ],
+          "whyAnswerDemonstratesObjective": "The value is 16; the last two digits do not fall in 11-through14, and the final digit is 6. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.",
+          "contrastMembers": [
+            "In this basic counting phrase, the noun is genitive plural.",
+            "In this basic counting phrase, the noun is genitive singular."
+          ],
+          "relationKind": "STATED_APPLICATION",
+          "relationParticipantIds": [
+            "prov-ca-u9-rule-u9-i-quantity-4-0",
+            "prov-ca-u9-rule-u9-i-quantity-4-1",
+            "prov-ca-u9-rule-u9-i-quantity-4-2"
+          ]
+        }
+      },
+      "records": [
+        {
+          "id": "prov-ca-u9-rule-u9-i-quantity-4-0",
+          "sourceRecordId": "ca-rule-context:u9-i-quantity-4",
+          "sourceHash": "c6ba353fe2d21c6f2ffc6bf5b1859f236b0d0e45486c6c2a422530858327e61f",
+          "contentHash": "35a086e48347adc9066dca35a5970138aa5c4fde39b647171c05275a1b5d50bb",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "шестнадцать рублей",
+              "answer": "In this basic counting phrase, the noun is genitive plural.",
+              "distractors": [
+                "In this basic counting phrase, the noun is genitive singular."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "prov-ca-u9-rule-u9-i-quantity-4-1",
+          "sourceRecordId": "ca-rule-context:u9-i-quantity-4",
+          "sourceHash": "c6ba353fe2d21c6f2ffc6bf5b1859f236b0d0e45486c6c2a422530858327e61f",
+          "contentHash": "5777bda01a98552e2b4a5cb65882356827b5a0278db0ef0e592d7a5b99b4e47c",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "шестнадцать рублей",
+              "answer": "In this basic counting phrase, the noun is genitive plural.",
+              "distractors": [
+                "In this basic counting phrase, the noun is genitive singular."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "prov-ca-u9-rule-u9-i-quantity-4-2",
+          "sourceRecordId": "ca-rule-context:u9-i-quantity-4",
+          "sourceHash": "c6ba353fe2d21c6f2ffc6bf5b1859f236b0d0e45486c6c2a422530858327e61f",
+          "contentHash": "db4e0ed4e59b656352fc017795778efdc7f9424e5ba08e81962bb908d4c0991f",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "шестнадцать рублей",
+              "answer": "In this basic counting phrase, the noun is genitive plural.",
+              "distractors": [
+                "In this basic counting phrase, the noun is genitive singular."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item": {
+        "id": "u9-i-quantity-5",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which complete case explanation fits the shown example?",
+        "promptLetter": "сорок один год",
+        "options": [
+          "In this basic counting phrase, the noun is nominative singular.",
+          "In this basic counting phrase, the noun is genitive plural."
+        ],
+        "answer": "In this basic counting phrase, the noun is nominative singular.",
+        "feedback": "The value is 41; the last two digits do not fall in 11-through14, and the final digit is 1. In this basic counting phrase, the counted noun is nominative singular. Classify the complete number rather than treating every value above five as the same pattern.",
+        "objectiveId": "obj-u9-quantity",
+        "sourceId": "src-content-audit-research",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern."
+        ],
+        "assessment": {
+          "testedFeature": "FINAL_DIGIT_ONE",
+          "evidenceMode": "STATED_APPLICATION",
+          "contrastSetId": "u9-quantity-5",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ca-u9-rule-u9-i-quantity-5-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ca-u9-rule-u9-i-quantity-5-2"
+          ],
+          "distractorDifference": [
+            "",
+            "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern."
+          ],
+          "whyAnswerDemonstratesObjective": "The value is 41; the last two digits do not fall in 11-through14, and the final digit is 1. In this basic counting phrase, the counted noun is nominative singular. Classify the complete number rather than treating every value above five as the same pattern.",
+          "contrastMembers": [
+            "In this basic counting phrase, the noun is nominative singular.",
+            "In this basic counting phrase, the noun is genitive plural."
+          ],
+          "relationKind": "STATED_APPLICATION",
+          "relationParticipantIds": [
+            "prov-ca-u9-rule-u9-i-quantity-5-0",
+            "prov-ca-u9-rule-u9-i-quantity-5-1",
+            "prov-ca-u9-rule-u9-i-quantity-5-2"
+          ]
+        }
+      },
+      "records": [
+        {
+          "id": "prov-ca-u9-rule-u9-i-quantity-5-0",
+          "sourceRecordId": "ca-rule-context:u9-i-quantity-5",
+          "sourceHash": "5ce51dde3f3e428ef1d697cd1603f8faf28ba05f406f91c46c656debfd210707",
+          "contentHash": "ead90f0119bd544b8199f818c7a4b3d502850a583e85be600b0fe62de62f62a7",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "сорок один год",
+              "answer": "In this basic counting phrase, the noun is nominative singular.",
+              "distractors": [
+                "In this basic counting phrase, the noun is genitive plural."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "prov-ca-u9-rule-u9-i-quantity-5-1",
+          "sourceRecordId": "ca-rule-context:u9-i-quantity-5",
+          "sourceHash": "5ce51dde3f3e428ef1d697cd1603f8faf28ba05f406f91c46c656debfd210707",
+          "contentHash": "b7b5d6cc2271440fcd31c6e4faf72ba48e1a15e4455f0d232bf03be5b4bac623",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "сорок один год",
+              "answer": "In this basic counting phrase, the noun is nominative singular.",
+              "distractors": [
+                "In this basic counting phrase, the noun is genitive plural."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "prov-ca-u9-rule-u9-i-quantity-5-2",
+          "sourceRecordId": "ca-rule-context:u9-i-quantity-5",
+          "sourceHash": "5ce51dde3f3e428ef1d697cd1603f8faf28ba05f406f91c46c656debfd210707",
+          "contentHash": "5777bda01a98552e2b4a5cb65882356827b5a0278db0ef0e592d7a5b99b4e47c",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "сорок один год",
+              "answer": "In this basic counting phrase, the noun is nominative singular.",
+              "distractors": [
+                "In this basic counting phrase, the noun is genitive plural."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item": {
+        "id": "u9-i-quantity-6",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which complete case explanation fits the shown example?",
+        "promptLetter": "двести тринадцать собак",
+        "options": [
+          "In this basic counting phrase, the noun is genitive plural.",
+          "In this basic counting phrase, the noun is genitive singular."
+        ],
+        "answer": "In this basic counting phrase, the noun is genitive plural.",
+        "feedback": "The value is 213; its last two digits are 13, so the 11-through14 exception takes priority over the final digit. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.",
+        "objectiveId": "obj-u9-quantity",
+        "sourceId": "src-content-audit-research",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern."
+        ],
+        "assessment": {
+          "testedFeature": "TEENS_OVERRIDE",
+          "evidenceMode": "STATED_APPLICATION",
+          "contrastSetId": "u9-quantity-6",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ca-u9-rule-u9-i-quantity-6-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ca-u9-rule-u9-i-quantity-6-2"
+          ],
+          "distractorDifference": [
+            "",
+            "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern."
+          ],
+          "whyAnswerDemonstratesObjective": "The value is 213; its last two digits are 13, so the 11-through14 exception takes priority over the final digit. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.",
+          "contrastMembers": [
+            "In this basic counting phrase, the noun is genitive plural.",
+            "In this basic counting phrase, the noun is genitive singular."
+          ],
+          "relationKind": "STATED_APPLICATION",
+          "relationParticipantIds": [
+            "prov-ca-u9-rule-u9-i-quantity-6-0",
+            "prov-ca-u9-rule-u9-i-quantity-6-1",
+            "prov-ca-u9-rule-u9-i-quantity-6-2"
+          ]
+        }
+      },
+      "records": [
+        {
+          "id": "prov-ca-u9-rule-u9-i-quantity-6-0",
+          "sourceRecordId": "ca-rule-context:u9-i-quantity-6",
+          "sourceHash": "79329167565dcbb23404ccef54603e30f3e8f5fcff3272b77711da4fe22b1c03",
+          "contentHash": "c7ec9a2fd397fe4273cf455901fb9bb41c6000fdf342ffba7b6ab22fe6c23dda",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "двести тринадцать собак",
+              "answer": "In this basic counting phrase, the noun is genitive plural.",
+              "distractors": [
+                "In this basic counting phrase, the noun is genitive singular."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "prov-ca-u9-rule-u9-i-quantity-6-1",
+          "sourceRecordId": "ca-rule-context:u9-i-quantity-6",
+          "sourceHash": "79329167565dcbb23404ccef54603e30f3e8f5fcff3272b77711da4fe22b1c03",
+          "contentHash": "5777bda01a98552e2b4a5cb65882356827b5a0278db0ef0e592d7a5b99b4e47c",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "двести тринадцать собак",
+              "answer": "In this basic counting phrase, the noun is genitive plural.",
+              "distractors": [
+                "In this basic counting phrase, the noun is genitive singular."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "prov-ca-u9-rule-u9-i-quantity-6-2",
+          "sourceRecordId": "ca-rule-context:u9-i-quantity-6",
+          "sourceHash": "79329167565dcbb23404ccef54603e30f3e8f5fcff3272b77711da4fe22b1c03",
+          "contentHash": "db4e0ed4e59b656352fc017795778efdc7f9424e5ba08e81962bb908d4c0991f",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "двести тринадцать собак",
+              "answer": "In this basic counting phrase, the noun is genitive plural.",
+              "distractors": [
+                "In this basic counting phrase, the noun is genitive singular."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item": {
+        "id": "u9-i-quantity-7",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which complete case explanation fits the shown example?",
+        "promptLetter": "десять копеек",
+        "options": [
+          "In this basic counting phrase, the noun is genitive plural.",
+          "In this basic counting phrase, the noun is nominative singular."
+        ],
+        "answer": "In this basic counting phrase, the noun is genitive plural.",
+        "feedback": "The value is 10; the last two digits do not fall in 11-through14, and the final digit is 0. In this basic counting phrase, the counted noun is genitive plural. A final zero follows the same noun-case pattern as ten.",
+        "objectiveId": "obj-u9-quantity",
+        "sourceId": "src-content-audit-research",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "The nominative-singular explanation applies to a final one outside the teen exception, rather than this shown counting pattern."
+        ],
+        "assessment": {
+          "testedFeature": "FINAL_ZERO_OR_TEN",
+          "evidenceMode": "STATED_APPLICATION",
+          "contrastSetId": "u9-quantity-7",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ca-u9-rule-u9-i-quantity-7-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ca-u9-rule-u9-i-quantity-7-2"
+          ],
+          "distractorDifference": [
+            "",
+            "The nominative-singular explanation applies to a final one outside the teen exception, rather than this shown counting pattern."
+          ],
+          "whyAnswerDemonstratesObjective": "The value is 10; the last two digits do not fall in 11-through14, and the final digit is 0. In this basic counting phrase, the counted noun is genitive plural. A final zero follows the same noun-case pattern as ten.",
+          "contrastMembers": [
+            "In this basic counting phrase, the noun is genitive plural.",
+            "In this basic counting phrase, the noun is nominative singular."
+          ],
+          "relationKind": "STATED_APPLICATION",
+          "relationParticipantIds": [
+            "prov-ca-u9-rule-u9-i-quantity-7-0",
+            "prov-ca-u9-rule-u9-i-quantity-7-1",
+            "prov-ca-u9-rule-u9-i-quantity-7-2"
+          ]
+        }
+      },
+      "records": [
+        {
+          "id": "prov-ca-u9-rule-u9-i-quantity-7-0",
+          "sourceRecordId": "ca-rule-context:u9-i-quantity-7",
+          "sourceHash": "d47c4cb2b1cb8ec3eb22f758df601e0989ff2f12692c982358f8593ef1c08e0c",
+          "contentHash": "fb205d4acd981ae43cd813d92106e7e1c92225016c5a750dbfcd47851009f771",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "десять копеек",
+              "answer": "In this basic counting phrase, the noun is genitive plural.",
+              "distractors": [
+                "In this basic counting phrase, the noun is nominative singular."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "prov-ca-u9-rule-u9-i-quantity-7-1",
+          "sourceRecordId": "ca-rule-context:u9-i-quantity-7",
+          "sourceHash": "d47c4cb2b1cb8ec3eb22f758df601e0989ff2f12692c982358f8593ef1c08e0c",
+          "contentHash": "5777bda01a98552e2b4a5cb65882356827b5a0278db0ef0e592d7a5b99b4e47c",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "десять копеек",
+              "answer": "In this basic counting phrase, the noun is genitive plural.",
+              "distractors": [
+                "In this basic counting phrase, the noun is nominative singular."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "prov-ca-u9-rule-u9-i-quantity-7-2",
+          "sourceRecordId": "ca-rule-context:u9-i-quantity-7",
+          "sourceHash": "d47c4cb2b1cb8ec3eb22f758df601e0989ff2f12692c982358f8593ef1c08e0c",
+          "contentHash": "b7b5d6cc2271440fcd31c6e4faf72ba48e1a15e4455f0d232bf03be5b4bac623",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "десять копеек",
+              "answer": "In this basic counting phrase, the noun is genitive plural.",
+              "distractors": [
+                "In this basic counting phrase, the noun is nominative singular."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item": {
+        "id": "u9-i-quantity-8",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which complete case explanation fits the shown example?",
+        "promptLetter": "два часа",
+        "options": [
+          "In this basic counting phrase, the noun is genitive singular.",
+          "In this basic counting phrase, the noun is genitive plural."
+        ],
+        "answer": "In this basic counting phrase, the noun is genitive singular.",
+        "feedback": "The value is 2; the last two digits do not fall in 11-through14, and the final digit is 2. In this basic counting phrase, the counted noun is genitive singular. Classify the complete number rather than treating every value above five as the same pattern.",
+        "objectiveId": "obj-u9-quantity",
+        "sourceId": "src-content-audit-research",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern."
+        ],
+        "assessment": {
+          "testedFeature": "FINAL_DIGIT_TWO",
+          "evidenceMode": "STATED_APPLICATION",
+          "contrastSetId": "u9-quantity-8",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ca-u9-rule-u9-i-quantity-8-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ca-u9-rule-u9-i-quantity-8-2"
+          ],
+          "distractorDifference": [
+            "",
+            "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern."
+          ],
+          "whyAnswerDemonstratesObjective": "The value is 2; the last two digits do not fall in 11-through14, and the final digit is 2. In this basic counting phrase, the counted noun is genitive singular. Classify the complete number rather than treating every value above five as the same pattern.",
+          "contrastMembers": [
+            "In this basic counting phrase, the noun is genitive singular.",
+            "In this basic counting phrase, the noun is genitive plural."
+          ],
+          "relationKind": "STATED_APPLICATION",
+          "relationParticipantIds": [
+            "prov-ca-u9-rule-u9-i-quantity-8-0",
+            "prov-ca-u9-rule-u9-i-quantity-8-1",
+            "prov-ca-u9-rule-u9-i-quantity-8-2"
+          ]
+        }
+      },
+      "records": [
+        {
+          "id": "prov-ca-u9-rule-u9-i-quantity-8-0",
+          "sourceRecordId": "ca-rule-context:u9-i-quantity-8",
+          "sourceHash": "61b4c87827f1a7396c6f8fb99109088e6df85ce3a8ad363c7b3d87cefe01ac34",
+          "contentHash": "29effe1520939a15946d77aca610e86d5a33ff3cf747b6b653c5155a76805b1b",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "два часа",
+              "answer": "In this basic counting phrase, the noun is genitive singular.",
+              "distractors": [
+                "In this basic counting phrase, the noun is genitive plural."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "prov-ca-u9-rule-u9-i-quantity-8-1",
+          "sourceRecordId": "ca-rule-context:u9-i-quantity-8",
+          "sourceHash": "61b4c87827f1a7396c6f8fb99109088e6df85ce3a8ad363c7b3d87cefe01ac34",
+          "contentHash": "db4e0ed4e59b656352fc017795778efdc7f9424e5ba08e81962bb908d4c0991f",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "два часа",
+              "answer": "In this basic counting phrase, the noun is genitive singular.",
+              "distractors": [
+                "In this basic counting phrase, the noun is genitive plural."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "prov-ca-u9-rule-u9-i-quantity-8-2",
+          "sourceRecordId": "ca-rule-context:u9-i-quantity-8",
+          "sourceHash": "61b4c87827f1a7396c6f8fb99109088e6df85ce3a8ad363c7b3d87cefe01ac34",
+          "contentHash": "5777bda01a98552e2b4a5cb65882356827b5a0278db0ef0e592d7a5b99b4e47c",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "два часа",
+              "answer": "In this basic counting phrase, the noun is genitive singular.",
+              "distractors": [
+                "In this basic counting phrase, the noun is genitive plural."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item": {
+        "id": "u9-i-quantity-9",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which complete case explanation fits the shown example?",
+        "promptLetter": "двести три собаки",
+        "options": [
+          "In this basic counting phrase, the noun is genitive singular.",
+          "In this basic counting phrase, the noun is genitive plural."
+        ],
+        "answer": "In this basic counting phrase, the noun is genitive singular.",
+        "feedback": "The value is 203; the last two digits do not fall in 11-through14, and the final digit is 3. In this basic counting phrase, the counted noun is genitive singular. Classify the complete number rather than treating every value above five as the same pattern.",
+        "objectiveId": "obj-u9-quantity",
+        "sourceId": "src-content-audit-research",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern."
+        ],
+        "assessment": {
+          "testedFeature": "HUNDREDS_COMPOSITION",
+          "evidenceMode": "STATED_APPLICATION",
+          "contrastSetId": "u9-quantity-9",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ca-u9-rule-u9-i-quantity-9-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ca-u9-rule-u9-i-quantity-9-2"
+          ],
+          "distractorDifference": [
+            "",
+            "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern."
+          ],
+          "whyAnswerDemonstratesObjective": "The value is 203; the last two digits do not fall in 11-through14, and the final digit is 3. In this basic counting phrase, the counted noun is genitive singular. Classify the complete number rather than treating every value above five as the same pattern.",
+          "contrastMembers": [
+            "In this basic counting phrase, the noun is genitive singular.",
+            "In this basic counting phrase, the noun is genitive plural."
+          ],
+          "relationKind": "STATED_APPLICATION",
+          "relationParticipantIds": [
+            "prov-ca-u9-rule-u9-i-quantity-9-0",
+            "prov-ca-u9-rule-u9-i-quantity-9-1",
+            "prov-ca-u9-rule-u9-i-quantity-9-2"
+          ]
+        }
+      },
+      "records": [
+        {
+          "id": "prov-ca-u9-rule-u9-i-quantity-9-0",
+          "sourceRecordId": "ca-rule-context:u9-i-quantity-9",
+          "sourceHash": "4381b1e305641449e427937df95d0e97fb57fa537f894de2cc314e13b2b8a6c4",
+          "contentHash": "3378bc773e386356bbd40849fbc646c8fa242d9568c4da021e6b3aefcf006d1c",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "двести три собаки",
+              "answer": "In this basic counting phrase, the noun is genitive singular.",
+              "distractors": [
+                "In this basic counting phrase, the noun is genitive plural."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "prov-ca-u9-rule-u9-i-quantity-9-1",
+          "sourceRecordId": "ca-rule-context:u9-i-quantity-9",
+          "sourceHash": "4381b1e305641449e427937df95d0e97fb57fa537f894de2cc314e13b2b8a6c4",
+          "contentHash": "db4e0ed4e59b656352fc017795778efdc7f9424e5ba08e81962bb908d4c0991f",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "двести три собаки",
+              "answer": "In this basic counting phrase, the noun is genitive singular.",
+              "distractors": [
+                "In this basic counting phrase, the noun is genitive plural."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "prov-ca-u9-rule-u9-i-quantity-9-2",
+          "sourceRecordId": "ca-rule-context:u9-i-quantity-9",
+          "sourceHash": "4381b1e305641449e427937df95d0e97fb57fa537f894de2cc314e13b2b8a6c4",
+          "contentHash": "5777bda01a98552e2b4a5cb65882356827b5a0278db0ef0e592d7a5b99b4e47c",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "двести три собаки",
+              "answer": "In this basic counting phrase, the noun is genitive singular.",
+              "distractors": [
+                "In this basic counting phrase, the noun is genitive plural."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item": {
+        "id": "u9-g-pattern-0",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which complete case explanation fits the shown example?",
+        "promptLetter": "один час",
+        "options": [
+          "In this basic counting phrase, the noun is nominative singular.",
+          "In this basic counting phrase, the noun is genitive singular.",
+          "In this basic counting phrase, the noun is genitive plural."
+        ],
+        "answer": "In this basic counting phrase, the noun is nominative singular.",
+        "feedback": "The value is 1; the last two digits do not fall in 11-through14, and the final digit is 1. In this basic counting phrase, the counted noun is nominative singular. Classify the complete number rather than treating every value above five as the same pattern.",
+        "objectiveId": "obj-u9-pattern",
+        "sourceId": "src-content-audit-research",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.",
+          "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern."
+        ],
+        "assessment": {
+          "testedFeature": "GOVERNED_FORM",
+          "evidenceMode": "STATED_APPLICATION",
+          "contrastSetId": "u9-pattern-0",
+          "cueLanguage": "ru",
+          "independent": false,
+          "answerSourceIds": [
+            "prov-ca-u9-rule-u9-g-pattern-0-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ca-u9-rule-u9-g-pattern-0-2",
+            "prov-ca-u9-rule-u9-g-pattern-0-3"
+          ],
+          "distractorDifference": [
+            "",
+            "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.",
+            "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern."
+          ],
+          "whyAnswerDemonstratesObjective": "The value is 1; the last two digits do not fall in 11-through14, and the final digit is 1. In this basic counting phrase, the counted noun is nominative singular. Classify the complete number rather than treating every value above five as the same pattern.",
+          "contrastMembers": [
+            "In this basic counting phrase, the noun is nominative singular.",
+            "In this basic counting phrase, the noun is genitive singular.",
+            "In this basic counting phrase, the noun is genitive plural."
+          ],
+          "relationKind": "STATED_APPLICATION",
+          "relationParticipantIds": [
+            "prov-ca-u9-rule-u9-g-pattern-0-0",
+            "prov-ca-u9-rule-u9-g-pattern-0-1",
+            "prov-ca-u9-rule-u9-g-pattern-0-2",
+            "prov-ca-u9-rule-u9-g-pattern-0-3"
+          ]
+        }
+      },
+      "records": [
+        {
+          "id": "prov-ca-u9-rule-u9-g-pattern-0-0",
+          "sourceRecordId": "ca-rule-context:u9-g-pattern-0",
+          "sourceHash": "ab01f9e22cd568a180d5f433b6445f4379bdb052b0095701a0f8371fb7b4665a",
+          "contentHash": "914759c18921b7f23fa9d6be1c98f1b919a4ffb271c6b44b9219ab8e26b13fe3",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "один час",
+              "answer": "In this basic counting phrase, the noun is nominative singular.",
+              "distractors": [
+                "In this basic counting phrase, the noun is genitive singular.",
+                "In this basic counting phrase, the noun is genitive plural."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "prov-ca-u9-rule-u9-g-pattern-0-1",
+          "sourceRecordId": "ca-rule-context:u9-g-pattern-0",
+          "sourceHash": "ab01f9e22cd568a180d5f433b6445f4379bdb052b0095701a0f8371fb7b4665a",
+          "contentHash": "b7b5d6cc2271440fcd31c6e4faf72ba48e1a15e4455f0d232bf03be5b4bac623",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "один час",
+              "answer": "In this basic counting phrase, the noun is nominative singular.",
+              "distractors": [
+                "In this basic counting phrase, the noun is genitive singular.",
+                "In this basic counting phrase, the noun is genitive plural."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "prov-ca-u9-rule-u9-g-pattern-0-2",
+          "sourceRecordId": "ca-rule-context:u9-g-pattern-0",
+          "sourceHash": "ab01f9e22cd568a180d5f433b6445f4379bdb052b0095701a0f8371fb7b4665a",
+          "contentHash": "db4e0ed4e59b656352fc017795778efdc7f9424e5ba08e81962bb908d4c0991f",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "один час",
+              "answer": "In this basic counting phrase, the noun is nominative singular.",
+              "distractors": [
+                "In this basic counting phrase, the noun is genitive singular.",
+                "In this basic counting phrase, the noun is genitive plural."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "prov-ca-u9-rule-u9-g-pattern-0-3",
+          "sourceRecordId": "ca-rule-context:u9-g-pattern-0",
+          "sourceHash": "ab01f9e22cd568a180d5f433b6445f4379bdb052b0095701a0f8371fb7b4665a",
+          "contentHash": "5777bda01a98552e2b4a5cb65882356827b5a0278db0ef0e592d7a5b99b4e47c",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "один час",
+              "answer": "In this basic counting phrase, the noun is nominative singular.",
+              "distractors": [
+                "In this basic counting phrase, the noun is genitive singular.",
+                "In this basic counting phrase, the noun is genitive plural."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item": {
+        "id": "u9-i-pattern-1",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which complete case explanation fits the shown example?",
+        "promptLetter": "три кошки",
+        "options": [
+          "In this basic counting phrase, the noun is genitive singular.",
+          "In this basic counting phrase, the noun is nominative singular.",
+          "In this basic counting phrase, the noun is genitive plural."
+        ],
+        "answer": "In this basic counting phrase, the noun is genitive singular.",
+        "feedback": "The value is 3; the last two digits do not fall in 11-through14, and the final digit is 3. In this basic counting phrase, the counted noun is genitive singular. Classify the complete number rather than treating every value above five as the same pattern.",
+        "objectiveId": "obj-u9-pattern",
+        "sourceId": "src-content-audit-research",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "The nominative-singular explanation applies to a final one outside the teen exception, rather than this shown counting pattern.",
+          "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern."
+        ],
+        "assessment": {
+          "testedFeature": "GOVERNED_FORM",
+          "evidenceMode": "STATED_APPLICATION",
+          "contrastSetId": "u9-pattern-1",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ca-u9-rule-u9-i-pattern-1-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ca-u9-rule-u9-i-pattern-1-2",
+            "prov-ca-u9-rule-u9-i-pattern-1-3"
+          ],
+          "distractorDifference": [
+            "",
+            "The nominative-singular explanation applies to a final one outside the teen exception, rather than this shown counting pattern.",
+            "The genitive-plural explanation applies to zero, five-through-nine endings and the teen exception, rather than this shown counting pattern."
+          ],
+          "whyAnswerDemonstratesObjective": "The value is 3; the last two digits do not fall in 11-through14, and the final digit is 3. In this basic counting phrase, the counted noun is genitive singular. Classify the complete number rather than treating every value above five as the same pattern.",
+          "contrastMembers": [
+            "In this basic counting phrase, the noun is genitive singular.",
+            "In this basic counting phrase, the noun is nominative singular.",
+            "In this basic counting phrase, the noun is genitive plural."
+          ],
+          "relationKind": "STATED_APPLICATION",
+          "relationParticipantIds": [
+            "prov-ca-u9-rule-u9-i-pattern-1-0",
+            "prov-ca-u9-rule-u9-i-pattern-1-1",
+            "prov-ca-u9-rule-u9-i-pattern-1-2",
+            "prov-ca-u9-rule-u9-i-pattern-1-3"
+          ]
+        }
+      },
+      "records": [
+        {
+          "id": "prov-ca-u9-rule-u9-i-pattern-1-0",
+          "sourceRecordId": "ca-rule-context:u9-i-pattern-1",
+          "sourceHash": "37a5960aee6cedbaf64ebeefdc141efd0709a5fd9421d6ca805411bb752ccc2b",
+          "contentHash": "c9112ceafd474abcd6eced8d52d2b5acce7f1ec3243ab6ab81fb0780acd93043",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "три кошки",
+              "answer": "In this basic counting phrase, the noun is genitive singular.",
+              "distractors": [
+                "In this basic counting phrase, the noun is nominative singular.",
+                "In this basic counting phrase, the noun is genitive plural."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "prov-ca-u9-rule-u9-i-pattern-1-1",
+          "sourceRecordId": "ca-rule-context:u9-i-pattern-1",
+          "sourceHash": "37a5960aee6cedbaf64ebeefdc141efd0709a5fd9421d6ca805411bb752ccc2b",
+          "contentHash": "db4e0ed4e59b656352fc017795778efdc7f9424e5ba08e81962bb908d4c0991f",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "три кошки",
+              "answer": "In this basic counting phrase, the noun is genitive singular.",
+              "distractors": [
+                "In this basic counting phrase, the noun is nominative singular.",
+                "In this basic counting phrase, the noun is genitive plural."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "prov-ca-u9-rule-u9-i-pattern-1-2",
+          "sourceRecordId": "ca-rule-context:u9-i-pattern-1",
+          "sourceHash": "37a5960aee6cedbaf64ebeefdc141efd0709a5fd9421d6ca805411bb752ccc2b",
+          "contentHash": "b7b5d6cc2271440fcd31c6e4faf72ba48e1a15e4455f0d232bf03be5b4bac623",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "три кошки",
+              "answer": "In this basic counting phrase, the noun is genitive singular.",
+              "distractors": [
+                "In this basic counting phrase, the noun is nominative singular.",
+                "In this basic counting phrase, the noun is genitive plural."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "prov-ca-u9-rule-u9-i-pattern-1-3",
+          "sourceRecordId": "ca-rule-context:u9-i-pattern-1",
+          "sourceHash": "37a5960aee6cedbaf64ebeefdc141efd0709a5fd9421d6ca805411bb752ccc2b",
+          "contentHash": "5777bda01a98552e2b4a5cb65882356827b5a0278db0ef0e592d7a5b99b4e47c",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "три кошки",
+              "answer": "In this basic counting phrase, the noun is genitive singular.",
+              "distractors": [
+                "In this basic counting phrase, the noun is nominative singular.",
+                "In this basic counting phrase, the noun is genitive plural."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item": {
+        "id": "u9-i-pattern-2",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which complete case explanation fits the shown example?",
+        "promptLetter": "пять девушек",
+        "options": [
+          "In this basic counting phrase, the noun is genitive plural.",
+          "In this basic counting phrase, the noun is genitive singular."
+        ],
+        "answer": "In this basic counting phrase, the noun is genitive plural.",
+        "feedback": "The value is 5; the last two digits do not fall in 11-through14, and the final digit is 5. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.",
+        "objectiveId": "obj-u9-pattern",
+        "sourceId": "src-content-audit-research",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern."
+        ],
+        "assessment": {
+          "testedFeature": "GOVERNED_FORM",
+          "evidenceMode": "STATED_APPLICATION",
+          "contrastSetId": "u9-pattern-2",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ca-u9-rule-u9-i-pattern-2-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ca-u9-rule-u9-i-pattern-2-2"
+          ],
+          "distractorDifference": [
+            "",
+            "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern."
+          ],
+          "whyAnswerDemonstratesObjective": "The value is 5; the last two digits do not fall in 11-through14, and the final digit is 5. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.",
+          "contrastMembers": [
+            "In this basic counting phrase, the noun is genitive plural.",
+            "In this basic counting phrase, the noun is genitive singular."
+          ],
+          "relationKind": "STATED_APPLICATION",
+          "relationParticipantIds": [
+            "prov-ca-u9-rule-u9-i-pattern-2-0",
+            "prov-ca-u9-rule-u9-i-pattern-2-1",
+            "prov-ca-u9-rule-u9-i-pattern-2-2"
+          ]
+        }
+      },
+      "records": [
+        {
+          "id": "prov-ca-u9-rule-u9-i-pattern-2-0",
+          "sourceRecordId": "ca-rule-context:u9-i-pattern-2",
+          "sourceHash": "40b9b54ba28f25c4d392169d54316bbed09497a217b7a3b3bdeb1e968bf73358",
+          "contentHash": "e4c87b9100f8ca3c3365928e83236cad3bd0636b45d00c3f9dedec28ffa0498b",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "пять девушек",
+              "answer": "In this basic counting phrase, the noun is genitive plural.",
+              "distractors": [
+                "In this basic counting phrase, the noun is genitive singular."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "prov-ca-u9-rule-u9-i-pattern-2-1",
+          "sourceRecordId": "ca-rule-context:u9-i-pattern-2",
+          "sourceHash": "40b9b54ba28f25c4d392169d54316bbed09497a217b7a3b3bdeb1e968bf73358",
+          "contentHash": "5777bda01a98552e2b4a5cb65882356827b5a0278db0ef0e592d7a5b99b4e47c",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "пять девушек",
+              "answer": "In this basic counting phrase, the noun is genitive plural.",
+              "distractors": [
+                "In this basic counting phrase, the noun is genitive singular."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "prov-ca-u9-rule-u9-i-pattern-2-2",
+          "sourceRecordId": "ca-rule-context:u9-i-pattern-2",
+          "sourceHash": "40b9b54ba28f25c4d392169d54316bbed09497a217b7a3b3bdeb1e968bf73358",
+          "contentHash": "db4e0ed4e59b656352fc017795778efdc7f9424e5ba08e81962bb908d4c0991f",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "пять девушек",
+              "answer": "In this basic counting phrase, the noun is genitive plural.",
+              "distractors": [
+                "In this basic counting phrase, the noun is genitive singular."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item": {
+        "id": "u9-i-pattern-3",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which complete case explanation fits the shown example?",
+        "promptLetter": "шестнадцать рублей",
+        "options": [
+          "In this basic counting phrase, the noun is genitive plural.",
+          "In this basic counting phrase, the noun is genitive singular.",
+          "In this basic counting phrase, the noun is nominative singular."
+        ],
+        "answer": "In this basic counting phrase, the noun is genitive plural.",
+        "feedback": "The value is 16; the last two digits do not fall in 11-through14, and the final digit is 6. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.",
+        "objectiveId": "obj-u9-pattern",
+        "sourceId": "src-content-audit-research",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.",
+          "The nominative-singular explanation applies to a final one outside the teen exception, rather than this shown counting pattern."
+        ],
+        "assessment": {
+          "testedFeature": "TEENS_OVERRIDE",
+          "evidenceMode": "STATED_APPLICATION",
+          "contrastSetId": "u9-pattern-3",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ca-u9-rule-u9-i-pattern-3-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ca-u9-rule-u9-i-pattern-3-2",
+            "prov-ca-u9-rule-u9-i-pattern-3-3"
+          ],
+          "distractorDifference": [
+            "",
+            "The genitive-singular explanation applies to final two, three or four outside the teen exception, rather than this shown counting pattern.",
+            "The nominative-singular explanation applies to a final one outside the teen exception, rather than this shown counting pattern."
+          ],
+          "whyAnswerDemonstratesObjective": "The value is 16; the last two digits do not fall in 11-through14, and the final digit is 6. In this basic counting phrase, the counted noun is genitive plural. Classify the complete number rather than treating every value above five as the same pattern.",
+          "contrastMembers": [
+            "In this basic counting phrase, the noun is genitive plural.",
+            "In this basic counting phrase, the noun is genitive singular.",
+            "In this basic counting phrase, the noun is nominative singular."
+          ],
+          "relationKind": "STATED_APPLICATION",
+          "relationParticipantIds": [
+            "prov-ca-u9-rule-u9-i-pattern-3-0",
+            "prov-ca-u9-rule-u9-i-pattern-3-1",
+            "prov-ca-u9-rule-u9-i-pattern-3-2",
+            "prov-ca-u9-rule-u9-i-pattern-3-3"
+          ]
+        }
+      },
+      "records": [
+        {
+          "id": "prov-ca-u9-rule-u9-i-pattern-3-0",
+          "sourceRecordId": "ca-rule-context:u9-i-pattern-3",
+          "sourceHash": "c0d8f40ceeac159db2e90171db8ab57913fc539b09ad14bcae5c263393ffb104",
+          "contentHash": "35a086e48347adc9066dca35a5970138aa5c4fde39b647171c05275a1b5d50bb",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "шестнадцать рублей",
+              "answer": "In this basic counting phrase, the noun is genitive plural.",
+              "distractors": [
+                "In this basic counting phrase, the noun is genitive singular.",
+                "In this basic counting phrase, the noun is nominative singular."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "prov-ca-u9-rule-u9-i-pattern-3-1",
+          "sourceRecordId": "ca-rule-context:u9-i-pattern-3",
+          "sourceHash": "c0d8f40ceeac159db2e90171db8ab57913fc539b09ad14bcae5c263393ffb104",
+          "contentHash": "5777bda01a98552e2b4a5cb65882356827b5a0278db0ef0e592d7a5b99b4e47c",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "шестнадцать рублей",
+              "answer": "In this basic counting phrase, the noun is genitive plural.",
+              "distractors": [
+                "In this basic counting phrase, the noun is genitive singular.",
+                "In this basic counting phrase, the noun is nominative singular."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "prov-ca-u9-rule-u9-i-pattern-3-2",
+          "sourceRecordId": "ca-rule-context:u9-i-pattern-3",
+          "sourceHash": "c0d8f40ceeac159db2e90171db8ab57913fc539b09ad14bcae5c263393ffb104",
+          "contentHash": "db4e0ed4e59b656352fc017795778efdc7f9424e5ba08e81962bb908d4c0991f",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "шестнадцать рублей",
+              "answer": "In this basic counting phrase, the noun is genitive plural.",
+              "distractors": [
+                "In this basic counting phrase, the noun is genitive singular.",
+                "In this basic counting phrase, the noun is nominative singular."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "prov-ca-u9-rule-u9-i-pattern-3-3",
+          "sourceRecordId": "ca-rule-context:u9-i-pattern-3",
+          "sourceHash": "c0d8f40ceeac159db2e90171db8ab57913fc539b09ad14bcae5c263393ffb104",
+          "contentHash": "b7b5d6cc2271440fcd31c6e4faf72ba48e1a15e4455f0d232bf03be5b4bac623",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "шестнадцать рублей",
+              "answer": "In this basic counting phrase, the noun is genitive plural.",
+              "distractors": [
+                "In this basic counting phrase, the noun is genitive singular.",
+                "In this basic counting phrase, the noun is nominative singular."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item": {
+        "id": "u9-i-pattern-4",
+        "kind": "CONTRAST_SELECTION",
+        "language": "en",
+        "prompt": "Which complete case explanation fits the shown example?",
+        "promptLetter": "Я видел двух друзей",
+        "options": [
+          "In this line, the animate object is accusative and both numeral and noun are declined.",
+          "In this line, use the basic nominative or inanimate accusative counting pattern."
+        ],
+        "answer": "In this line, the animate object is accusative and both numeral and noun are declined.",
+        "feedback": "The line means I saw two friends. The friends are an animate accusative object. Both the numeral and noun are declined, so the basic nominative or inanimate accusative counting pattern does not describe this sentence.",
+        "objectiveId": "obj-u9-pattern",
+        "sourceId": "src-content-audit-research",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false,
+        "distractorRationales": [
+          "",
+          "The basic nominative/inanimate accusative pattern omits the animate accusative object and declined numeral in this sentence."
+        ],
+        "assessment": {
+          "testedFeature": "GOVERNED_FORM",
+          "evidenceMode": "STATED_APPLICATION",
+          "contrastSetId": "u9-pattern-4",
+          "cueLanguage": "ru",
+          "independent": true,
+          "answerSourceIds": [
+            "prov-ca-u9-rule-u9-i-pattern-4-1"
+          ],
+          "distractorSourceIds": [
+            "",
+            "prov-ca-u9-rule-u9-i-pattern-4-2"
+          ],
+          "distractorDifference": [
+            "",
+            "The basic nominative/inanimate accusative pattern omits the animate accusative object and declined numeral in this sentence."
+          ],
+          "whyAnswerDemonstratesObjective": "The line means I saw two friends. The friends are an animate accusative object. Both the numeral and noun are declined, so the basic nominative or inanimate accusative counting pattern does not describe this sentence.",
+          "contrastMembers": [
+            "In this line, the animate object is accusative and both numeral and noun are declined.",
+            "In this line, use the basic nominative or inanimate accusative counting pattern."
+          ],
+          "relationKind": "STATED_APPLICATION",
+          "relationParticipantIds": [
+            "prov-ca-u9-rule-u9-i-pattern-4-0",
+            "prov-ca-u9-rule-u9-i-pattern-4-1",
+            "prov-ca-u9-rule-u9-i-pattern-4-2"
+          ]
+        }
+      },
+      "records": [
+        {
+          "id": "prov-ca-u9-rule-u9-i-pattern-4-0",
+          "sourceRecordId": "ca-rule-context:u9-i-pattern-4",
+          "sourceHash": "8d56873c882a2014e2dcf857c9562428754d792439c78a44ad661009309fa5cf",
+          "contentHash": "6ec2184264f7d117a594231af4caf40aa4f2d2bc1436def1bf5254c4fb4f7117",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "Я видел двух друзей",
+              "answer": "In this line, the animate object is accusative and both numeral and noun are declined.",
+              "distractors": [
+                "In this line, use the basic nominative or inanimate accusative counting pattern."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "prov-ca-u9-rule-u9-i-pattern-4-1",
+          "sourceRecordId": "ca-rule-context:u9-i-pattern-4",
+          "sourceHash": "8d56873c882a2014e2dcf857c9562428754d792439c78a44ad661009309fa5cf",
+          "contentHash": "dd818a95e10067eecefea7637473fdd9f6d1cbb0fe1c73eaefb4bfb9f9e58531",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "Я видел двух друзей",
+              "answer": "In this line, the animate object is accusative and both numeral and noun are declined.",
+              "distractors": [
+                "In this line, use the basic nominative or inanimate accusative counting pattern."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "prov-ca-u9-rule-u9-i-pattern-4-2",
+          "sourceRecordId": "ca-rule-context:u9-i-pattern-4",
+          "sourceHash": "8d56873c882a2014e2dcf857c9562428754d792439c78a44ad661009309fa5cf",
+          "contentHash": "860535a4f60912530bc09a7a716586bcf4d87c9c4b36816f54e712581094209d",
+          "sourceId": "src-content-audit-research",
+          "sourceRevision": "content-audit-2026-10-08",
+          "applications": [
+            {
+              "cue": "Я видел двух друзей",
+              "answer": "In this line, the animate object is accusative and both numeral and noun are declined.",
+              "distractors": [
+                "In this line, use the basic nominative or inanimate accusative counting pattern."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "originalDiagnosticFiles": [
+    {
+      "path": "audit/independent-gpt61-2026-10-12/received-results/AUDIT_SCOPE_AND_EVIDENCE.json",
+      "sha256": "ede9d04c1df26f2612f0210dfe0916a17dbe687ac9612f6858ee9c5025f20563"
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/received-results/CODEX_RETURN_HANDOFF.md",
+      "sha256": "a52afc6e6db45b10bceaca78034ba5697328e8b534f225de90fbb9c7b0b29fd0"
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/received-results/FINDINGS.csv",
+      "sha256": "f8e6a593545a24f5f02702d59ac7d63ef3b7f796ec71dc0a06063fa491d21ace"
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/received-results/INDEPENDENT_AUDIT_REPORT.md",
+      "sha256": "fd9ad913e312e1f6b332cd5a21ab90a783a809c8443f11c486c99ab9f0b4ad40"
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/received-results/ITEM_ASSESSMENT_AUDIT.csv",
+      "sha256": "2637ecf4f205610710dfa42ff9878ba592f0284a2f3fd46fbd6d297d32c37ddd"
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/received-results/REQUIREMENTS_MATRIX.csv",
+      "sha256": "3f0770ad922a99da67ea533b7e799a0a3951f91abaf528d70b0a9b1a1db52c1e"
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/received-results/SOURCE_AND_BINDING_REVIEW.json",
+      "sha256": "59d00b0b7163c741adff98ea884bc10972eabe258d4ebdc18d8e7aa22a6c3ad0"
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/received-results/TARGET_75_DISPOSITIONS.csv",
+      "sha256": "76fa43dd958a3e9b6459601b0bd22c113b4b1b376af6cc8f6d772e18ef8a126d"
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/received-results/UNIT_COVERAGE.csv",
+      "sha256": "794828fc9d6de4c5c5cc85df40630ba0bd4b136d98b107b795887999a04440bd"
+    }
+  ],
+  "originalNineHashesPreserved": true,
+  "sourceCapabilities": 58,
+  "provenanceRecords": 6869,
+  "canonicalPins": 68,
+  "newNativeAdmission": false,
+  "semanticAcceptance": false
+}
