@@ -1,0 +1,13 @@
+{
+  "testedCommit": "a9ac5de55b97c0b89757f735704dfb550710bf37",
+  "command": "bash audit/independent-gpt61-2026-10-12/ia003-policy-kernel/verify.sh",
+  "counts": {
+    "tests": 63,
+    "failures": 1,
+    "errors": 0,
+    "skipped": 0
+  },
+  "passed": 62,
+  "diagnosis": "Readiness reports generated before current candidate.sourceDigest refresh;they retain obsolete SOURCE_DIGEST_MISMATCH blocker. Regenerate after candidate rebinding;actual remaining release blockers preserved. No app/tests changed.",
+  "lintAndAttachment": "UNEXECUTED in aborted first run;final rerun required"
+}

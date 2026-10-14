@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.CumulativeReviewStorageTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2026-10-14T15:13:11.498Z" hostname="f5c5dd6b855f" time="30.993">
+  <properties/>
+  <testcase name="genericKernelPreservesTheOriginalUnit3PolicyAndAssignmentIdentity" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="4.212"/>
+  <testcase name="prescribedAndOptionalAnswersNeverSupplyReviewOrGainExtraPrescribedCredit" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="2.253"/>
+  <testcase name="completionMetadataCannotLinkAReviewToAnotherUnitDuringRestore" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="1.437"/>
+  <testcase name="malformedRolePreBoundaryAndWrongAssignmentDigestNeverSupplyCompletion" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="1.238"/>
+  <testcase name="disabledOrWrongPolicyRejectsOldAssignmentsAndAnswersWithoutMutation" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="1.096"/>
+  <testcase name="immutableSlotsSpanTwoTaughtObjectivesAndRepeatedOpenDoesNotResample" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="0.984"/>
+  <testcase name="staleEpochWrongAssignmentInvalidSlotAndOutOfOptionsAreRejectedWithoutWrites" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="1.419"/>
+  <testcase name="forgedLinksOrdersRolesAndAssignmentHashCannotReplaceAnyLearnerRows" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="1.022"/>
+  <testcase name="typedPoliciesRefuseEmptyRepeatedAndAmbiguousCandidatePools" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="0.028"/>
+  <testcase name="latestAcceptedAnswerWinsAndDuplicateTapsDoNotAllocateExtraOrder" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="0.991"/>
+  <testcase name="undeclaredTargetsAndFlagOnlyLaterGatesCannotCreateHistory" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="9.811"/>
+  <testcase name="legacyDocumentWithoutNewFieldsDecodesWithNoSyntheticReviewRows" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="0.189"/>
+  <testcase name="realVersionNineDatabaseMigratesWithoutRewritingHistoricalRowsOrInventingCredit" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="0.435"/>
+  <testcase name="offlineCloseAndReopenRetainsExactAssignmentAnswersAndCurrentCompletion" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="1.085"/>
+  <testcase name="newBackupRoundtripReplacesReviewHistoryAndRestoreFaultRollsItBack" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="1.519"/>
+  <testcase name="placementAndBareLegacyCorrectIdsCannotCreateAssignments" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="0.142"/>
+  <testcase name="changedKeyTeachingAndOwnerAvailabilityRejectCreditButUnrelatedUnitsDoNot" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="2.164"/>
+  <testcase name="schemaOneBackupRestoresNoSyntheticReviewAndClearsReplacedLearnerHistory" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="0.947"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+]]></system-err>
+</testsuite>
