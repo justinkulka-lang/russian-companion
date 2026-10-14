@@ -37,5 +37,6 @@
       ]
     }
   ],
-  "scope": "9_FOCUSED_METHODS_NOT_COMPLETE_SUITE"
+  "scope": "9_FOCUSED_METHODS_NOT_COMPLETE_SUITE",
+  "expandedCommand": "source /workspace/setup/android-env.sh\n./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*Unit4NominativeRoleTest' --tests '*Unit6AnimacyTransferTest.unit6ScoredEvidenceAndEveryPriorExampleRecordRemainWhole' --tests '*Unit8PluralInstructionTest.unit8ScoredObjectsAndAllPriorNativeExamplesAndProvenanceRemainIdentical' --max-workers=4 --console=plain"
 }

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit28TimingTransferTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-14T02:46:39.157Z" hostname="f5c5dd6b855f" time="8.743">
+  <properties/>
+  <testcase name="originalIndependentScoredFieldsAndEveryExampleRemainUnchanged" classname="dev.russiancompanion.v2.Unit28TimingTransferTest" time="8.725"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+]]></system-err>
+</testsuite>

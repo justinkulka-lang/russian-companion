@@ -9,5 +9,6 @@
   },
   "exitCode": 1,
   "xmlSha256": "dc8c3a43de301588f80c12160cc96201d4d8420ac39d4a93eeaddb066f3a3fe3",
-  "assetSha256": "709ee45404fa961e231b75ea4101b9cea71eb167f7b87a9c2460559c8f7192db"
+  "assetSha256": "709ee45404fa961e231b75ea4101b9cea71eb167f7b87a9c2460559c8f7192db",
+  "expandedCommand": "source /workspace/setup/android-env.sh\n./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*Unit4NominativeRoleTest' --max-workers=4 --console=plain"
 }

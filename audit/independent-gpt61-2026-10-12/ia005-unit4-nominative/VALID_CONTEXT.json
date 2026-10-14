@@ -21,5 +21,6 @@
       "path": "VALID_TEST-dev.russiancompanion.v2.Unit4NominativeRoleTest.xml",
       "sha256": "c34aab3d1c744b67d484735710d66aef10d81c0410d1bb907ea2bbcfe3059169"
     }
-  ]
+  ],
+  "expandedCommand": "source /workspace/setup/android-env.sh\n./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*Unit4NominativeRoleTest' --tests '*Unit6AnimacyTransferTest.unit6ScoredEvidenceAndEveryPriorExampleRecordRemainWhole' --tests '*Unit8PluralInstructionTest.unit8ScoredObjectsAndAllPriorNativeExamplesAndProvenanceRemainIdentical' --max-workers=4 --console=plain"
 }

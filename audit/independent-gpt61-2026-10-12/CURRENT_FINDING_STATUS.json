@@ -34,8 +34,11 @@
       "findingId": "IA005",
       "producerSeverity": "HIGH",
       "producerStatus": "OPEN",
-      "engineeringDisposition": "OPEN",
-      "formalAcceptance": false
+      "engineeringDisposition": "BOUNDED_SUPPLIED_NOMINATIVE_SUBJECT_ROLE_FIX_PENDING_INDEPENDENT_VERIFICATION",
+      "formalAcceptance": false,
+      "implementationCommit": "087f17c59c21d5a3cc6c272f588ec4cd60cea387",
+      "evidencePath": "ia005-unit4-nominative/FINAL_VERIFICATION_MANIFEST.json",
+      "coverageScope": "Supplied husband guide/train/student independent subject-role classifications; correct old glosses optional. No unseen/every-nominative-function/productive mastery claim."
     },
     {
       "findingId": "IA006",
@@ -393,30 +396,30 @@
   "physicalDeviceAcceptance": "OUTSTANDING",
   "release": "NOT_APPROVED",
   "latestValidatorImplementationCommit": "db323d1a07613846a088cd44cb9f2b72d24753c9",
-  "latestSourceBindingCheckpoint": "a39b3f2ba3fc73673186acb6767a54040e0e0df0",
+  "latestSourceBindingCheckpoint": "be61e58913f0aa43fab096b0f5143291216b476c",
   "remainingSourceReviewPointers": [
     "IA007_SOURCE_REVIEW_PENDING.md",
     "IA008_SOURCE_REVIEW_PENDING.md"
   ],
   "firstBatchImplementationCommit": "4f5cb8024d3f68a37052fdf85b5755bffa2a0904",
   "firstBatchPacketCheckpoint": "49af91a0f5578c63a3b9b98bbe975f40d2758fcc",
-  "latestCurriculumImplementationCommit": "30ca4e8a8200dc34704a8fcb2aab03ed1df2c97e",
+  "latestCurriculumImplementationCommit": "087f17c59c21d5a3cc6c272f588ec4cd60cea387",
   "acceptanceOrder": [
     "FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
     "PHYSICAL_DEVICE_ACCEPTANCE_LAST"
   ],
   "physicalDeviceEvidenceRequestTiming": "AFTER_FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
-  "latestAppImplementationCommit": "30ca4e8a8200dc34704a8fcb2aab03ed1df2c97e",
-  "latestVerifiedRepositoryCommit": "0fa2c6083ee29b730268c66e267e47246dc9195f",
+  "latestAppImplementationCommit": "087f17c59c21d5a3cc6c272f588ec4cd60cea387",
+  "latestVerifiedRepositoryCommit": "6f7ba9d66272e782c93a0563697d7a3afda69061",
   "latestResearchDiagnosticRepositoryCommit": "0edaa0fc635b3579823f7b352f52fa79a675db3d",
   "latestSupplementalVerifiedRepositoryCommit": "409a9e87bd17174e6340fc896b7576115d30a69a",
-  "latestFocusedIntegrationCommit": "0fa2c6083ee29b730268c66e267e47246dc9195f",
-  "latestFocusedIntegrationPassed": 9,
+  "latestFocusedIntegrationCommit": "6f7ba9d66272e782c93a0563697d7a3afda69061",
+  "latestFocusedIntegrationPassed": 40,
   "latestFocusedIntegrationFailures": 0,
   "latestCorrectedTargetPassed": 1,
-  "latestFocusedIntegrationScope": "9_SELECTED_TESTS_3_CLASSES_3_SELECTORS_NOT_COMPLETE_SUITE_PRODUCTION_UNCHANGED",
+  "latestFocusedIntegrationScope": "40_SELECTED_TESTS_18_CLASSES_19_SELECTORS_SINGLE_FOCUSED_RUN_NOT_COMPLETE_SUITE",
   "latestCorrectedTargetBatch": "IA016_UNIT21_HISTORICAL_NOT_THIS_UNIT24_RUN",
-  "latestFocusedVerificationUniquePassingMethods": 9,
+  "latestFocusedVerificationUniquePassingMethods": 40,
   "additionalEngineeringFollowups": {
     "UNIT8_PLURAL_INSTRUCTION_FOLLOWUP": {
       "producerFindingId": null,
