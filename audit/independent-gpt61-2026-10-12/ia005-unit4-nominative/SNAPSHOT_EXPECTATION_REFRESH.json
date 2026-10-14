@@ -1,0 +1,76 @@
+{
+  "paths": [
+    "app/src/test/java/dev/russiancompanion/v2/BatchECapabilityResearchTest.kt",
+    "app/src/test/java/dev/russiancompanion/v2/Units1115MappingGapTest.kt",
+    "app/src/test/java/dev/russiancompanion/v2/Units2125SourceIntakeTest.kt",
+    "app/src/test/java/dev/russiancompanion/v2/Units2630SourceIntakeTest.kt",
+    "app/src/test/java/dev/russiancompanion/v2/Units610SourceIntakeTest.kt",
+    "app/src/test/java/dev/russiancompanion/v2/V2RebuildTest.kt",
+    "app/src/test/java/dev/russiancompanion/v2/audit/OwnerGovernanceDecisionTest.kt",
+    "app/src/test/java/dev/russiancompanion/v2/review/UnitReviewPipelineTest.kt"
+  ],
+  "oldUnit4": {
+    "curriculumSourceCommit": "4f5cb8024d3f68a37052fdf85b5755bffa2a0904",
+    "contentReviewDigest": "9f255afab766ef14cbf8ef2688a512f74c00d3c45efc772d6b4506a431a21121",
+    "mappingPackageDigest": "889c15ed7bf5d3189af391210f35bae5c57a9fd9c9dc3b3a439e8ebc1143b6fd",
+    "packContentReviewDigest": "1ba053798680aa069b7759f3e8f4dc32f3ce843149165cf76fd906f1d61c9bc1",
+    "reviewPackageDigest": "74c08a1f8b227475c1fa76f0ab86a3fb5cd753edf25278adc2c2eeeb54ed2d70",
+    "repositorySourceDigest": "c58bb8b35d20f0e492ecb3c4edf2a6d88e372e332607a65b482cdd99a0cea520",
+    "unit": {
+      "id": "unit-4",
+      "installState": "DEVELOPMENT",
+      "readiness": "CONTENT_COMPLETE_REVIEW_PENDING",
+      "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
+      "contentHash": "e90352df437fea9f534d48627e8c7b92d6582845a016a8f1af0a32553d073402"
+    },
+    "counts": {
+      "ADVANCEMENT": 1,
+      "AUTHORED_ENGLISH": 65,
+      "EXAMPLE": 15,
+      "GUIDED_PRACTICE": 6,
+      "INDEPENDENT_CHECK": 14,
+      "OBJECTIVE": 5,
+      "PROVENANCE": 126,
+      "REFERENCE": 2,
+      "RIGHTS": 4,
+      "SESSION": 6,
+      "SOURCE": 4,
+      "STEP": 34,
+      "UNIT": 1,
+      "UNIT_REVIEW": 1
+    }
+  },
+  "newUnit4": {
+    "curriculumSourceCommit": "087f17c59c21d5a3cc6c272f588ec4cd60cea387",
+    "contentReviewDigest": "fc7326deb96fff33b36c0533b353ae8a8b239a8e63e057447d54999ed2b5c78c",
+    "mappingPackageDigest": "889c15ed7bf5d3189af391210f35bae5c57a9fd9c9dc3b3a439e8ebc1143b6fd",
+    "packContentReviewDigest": "4d2d7078afd288289e300f082e641e637fda261d486fa9f1c6b91c014c5b3192",
+    "reviewPackageDigest": "40496a59d86c1880a1e76639dacf42f6ede60115c93e4c8b3e2e5084c1a04d97",
+    "repositorySourceDigest": "f575c241a0c7e2d103e6babb6ca224fb199dc9a3751c8220b3d09837d46b422f",
+    "unit": {
+      "id": "unit-4",
+      "installState": "DEVELOPMENT",
+      "readiness": "CONTENT_COMPLETE_REVIEW_PENDING",
+      "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
+      "contentHash": "37d54f35160017ea881c86426339684a7b5e4a0ca92080296f2a956d7aec4077"
+    },
+    "counts": {
+      "ADVANCEMENT": 1,
+      "AUTHORED_ENGLISH": 65,
+      "EXAMPLE": 16,
+      "GUIDED_PRACTICE": 9,
+      "INDEPENDENT_CHECK": 14,
+      "OBJECTIVE": 6,
+      "PROVENANCE": 170,
+      "REFERENCE": 2,
+      "RIGHTS": 4,
+      "SESSION": 6,
+      "SOURCE": 4,
+      "STEP": 36,
+      "UNIT": 1,
+      "UNIT_REVIEW": 1
+    }
+  },
+  "other29UnitIdentitiesPreserved": true,
+  "all30MappingIdentitiesPreserved": true
+}
