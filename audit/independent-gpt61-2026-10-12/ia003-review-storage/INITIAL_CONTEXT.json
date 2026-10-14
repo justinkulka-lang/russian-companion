@@ -1,0 +1,49 @@
+{
+  "baselineCommit": "1e9e1e2995e294ff3777a66c55a47f4ef42bc2fb",
+  "workingTree": "Uncommitted storage/kernel/migration/backup changes",
+  "command": "./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*CumulativeReviewStorageTest' --tests '*BackupLicenseTest' compileDebugSources lintDebug verifyReleaseGateAttachment --max-workers=4 --console=plain",
+  "testOutcome": "25 methods:23 pass,2 fixture failures; not acceptance",
+  "diagnosis": "New backup fixtures use appearance SYSTEM, but existing supported values are DARK or FOLLOW_SYSTEM. Production validation correctly refuses SYSTEM. Fix fixture, not validator.",
+  "files": [
+    {
+      "path": "app/src/main/java/dev/russiancompanion/data/local/AppDatabase.kt",
+      "sha256": "59cddda73f1f77d2a1d087f9a8df147d89087041191b039eb98b9a538d77e7f2"
+    },
+    {
+      "path": "app/src/main/java/dev/russiancompanion/data/local/DatabaseMigrations.kt",
+      "sha256": "b06bf3cfcfd214f3c9098587da1c053d56165e55367d5b4221b51747ba0a05d0"
+    },
+    {
+      "path": "app/src/main/java/dev/russiancompanion/data/local/LocalStore.kt",
+      "sha256": "6aae7457883bc4b182c35f8ef5b6235eaebd276132056a5d5cde82c20c4c966e"
+    },
+    {
+      "path": "app/src/main/java/dev/russiancompanion/v2/backup/V2BackupFormat.kt",
+      "sha256": "fdbeb808600cd1985933d89013ea7ccd1b781b4d03e1e2fd4cf225549ffd382e"
+    },
+    {
+      "path": "app/src/main/java/dev/russiancompanion/v2/data/V2Dao.kt",
+      "sha256": "e02188275b085dbf3d97a3cc4c60d4491e4f7d0cc87e9eb1c716aa13310c1286"
+    },
+    {
+      "path": "app/src/main/java/dev/russiancompanion/v2/data/V2Entities.kt",
+      "sha256": "362ac164aaedf28da8e97565f7b468ebe25db44432fa9a05837cbb728bbb9740"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/BackupLicenseTest.kt",
+      "sha256": "a92f714f1f59abd29be56b0b96da31714612985c80c188a650b14c555a02268f"
+    },
+    {
+      "path": "app/schemas/dev.russiancompanion.data.local.AppDatabase/10.json",
+      "sha256": "f1828378e2f729de1f4f05b9985cf6d8bc40555f2a5b5d9cd3b3a52dd0fafbe1"
+    },
+    {
+      "path": "app/src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt",
+      "sha256": "fc30117ceaa9a7cdad7499d7a8fd323a7ff4968dbc07bb6cc888bae4c5815401"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/CumulativeReviewStorageTest.kt",
+      "sha256": "3a72b8738a7a76ff686b4d2874b85e5b973d6dfaf823e5c6da2acabab9cb4991"
+    }
+  ]
+}

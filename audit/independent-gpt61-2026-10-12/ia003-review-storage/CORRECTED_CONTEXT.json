@@ -1,0 +1,51 @@
+{
+  "baselineCommit": "1e9e1e2995e294ff3777a66c55a47f4ef42bc2fb",
+  "workingTree": "Uncommitted cache/appearance/history-validator/backup-count corrections",
+  "scope": "28 methods in3 classes,allpass;13newstorage+14backup+1snapshot;not complete suite or IA003 gate acceptance",
+  "files": [
+    {
+      "path": "app/src/main/java/dev/russiancompanion/data/local/AppDatabase.kt",
+      "sha256": "59cddda73f1f77d2a1d087f9a8df147d89087041191b039eb98b9a538d77e7f2"
+    },
+    {
+      "path": "app/src/main/java/dev/russiancompanion/data/local/DatabaseMigrations.kt",
+      "sha256": "b06bf3cfcfd214f3c9098587da1c053d56165e55367d5b4221b51747ba0a05d0"
+    },
+    {
+      "path": "app/src/main/java/dev/russiancompanion/data/local/LocalStore.kt",
+      "sha256": "6aae7457883bc4b182c35f8ef5b6235eaebd276132056a5d5cde82c20c4c966e"
+    },
+    {
+      "path": "app/src/main/java/dev/russiancompanion/v2/backup/V2BackupFormat.kt",
+      "sha256": "fdbeb808600cd1985933d89013ea7ccd1b781b4d03e1e2fd4cf225549ffd382e"
+    },
+    {
+      "path": "app/src/main/java/dev/russiancompanion/v2/data/V2Dao.kt",
+      "sha256": "e02188275b085dbf3d97a3cc4c60d4491e4f7d0cc87e9eb1c716aa13310c1286"
+    },
+    {
+      "path": "app/src/main/java/dev/russiancompanion/v2/data/V2Entities.kt",
+      "sha256": "362ac164aaedf28da8e97565f7b468ebe25db44432fa9a05837cbb728bbb9740"
+    },
+    {
+      "path": "app/src/main/java/dev/russiancompanion/v2/ui/V2BackupCoordinator.kt",
+      "sha256": "07a4a2228d7675acf23531c397b47e4b0386c20f95015256d37d45d9758ffcb3"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/BackupLicenseTest.kt",
+      "sha256": "a92f714f1f59abd29be56b0b96da31714612985c80c188a650b14c555a02268f"
+    },
+    {
+      "path": "app/schemas/dev.russiancompanion.data.local.AppDatabase/10.json",
+      "sha256": "f1828378e2f729de1f4f05b9985cf6d8bc40555f2a5b5d9cd3b3a52dd0fafbe1"
+    },
+    {
+      "path": "app/src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt",
+      "sha256": "af3569f92f2a472a5aaf05d9d0846a4e13ddb4b17d8693a9ccfd6884d7ce674a"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/CumulativeReviewStorageTest.kt",
+      "sha256": "c1afc4012dc3ea83a38127dce23880de860d9cf15d4586480a6808967c2e6e56"
+    }
+  ]
+}

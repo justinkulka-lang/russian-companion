@@ -1,0 +1,93 @@
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:generateDebugBuildConfig UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:processDebugNavigationResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:generateDebugRFile UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:compileDebugNavigationResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:javaPreCompileDebugUnitTest UP-TO-DATE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets UP-TO-DATE
+> Task :app:packageDebugUnitTestForUnitTest UP-TO-DATE
+> Task :app:mergeDebugUnitTestManifest UP-TO-DATE
+> Task :app:processDebugUnitTestManifest UP-TO-DATE
+> Task :app:generateDebugUnitTestConfig UP-TO-DATE
+> Task :app:preDebugAndroidTestBuild SKIPPED
+> Task :app:extractProguardFiles UP-TO-DATE
+> Task :app:verifyReleaseGateAttachment
+> Task :app:kspDebugKotlin
+> Task :app:compileDebugKotlin
+> Task :app:compileDebugJavaWithJavac UP-TO-DATE
+> Task :app:processDebugJavaRes
+> Task :app:compileDebugSources UP-TO-DATE
+> Task :app:bundleDebugClassesToRuntimeJar
+> Task :app:bundleDebugClassesToCompileJar
+> Task :app:generateDebugLintReportModel
+> Task :app:kspDebugUnitTestKotlin
+> Task :app:generateDebugAndroidTestLintModel
+> Task :app:generateDebugUnitTestLintModel
+> Task :app:lintAnalyzeDebugAndroidTest
+> Task :app:compileDebugUnitTestKotlin
+> Task :app:lintAnalyzeDebug
+> Task :app:lintAnalyzeDebugUnitTest
+
+> Task :app:compileDebugUnitTestKotlin
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/CumulativeReviewStorageTest.kt:108:124 Unnecessary non-null assertion (!!) on a non-null receiver of type 'CumulativeReviewAssignment'.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/CumulativeReviewStorageTest.kt:108:161 Unnecessary non-null assertion (!!) on a non-null receiver of type 'CumulativeReviewAssignment'.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/Unit10FeedbackCorrectionTest.kt:64:23 Redundant creation of Json format. Creating instances for each usage can be slow.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/Unit11FeedbackCorrectionTest.kt:66:23 Redundant creation of Json format. Creating instances for each usage can be slow.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/Unit12FeedbackCorrectionTest.kt:82:23 Redundant creation of Json format. Creating instances for each usage can be slow.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/Unit13FeedbackCorrectionTest.kt:82:23 Redundant creation of Json format. Creating instances for each usage can be slow.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/Unit14FeedbackCorrectionTest.kt:84:23 Redundant creation of Json format. Creating instances for each usage can be slow.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/Unit15FeedbackCorrectionTest.kt:82:23 Redundant creation of Json format. Creating instances for each usage can be slow.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/Unit29ActiveTimeCorrectionTest.kt:55:23 Redundant creation of Json format. Creating instances for each usage can be slow.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/Unit29ShortAdjectiveCorrectionTest.kt:101:20 Redundant creation of Json format. Creating instances for each usage can be slow.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/Unit6FeedbackCorrectionTest.kt:67:23 Redundant creation of Json format. Creating instances for each usage can be slow.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/Unit7FeedbackCorrectionTest.kt:59:23 Redundant creation of Json format. Creating instances for each usage can be slow.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/Unit9CompositionFeedbackCorrectionTest.kt:60:23 Redundant creation of Json format. Creating instances for each usage can be slow.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/Unit9NumberFeedbackCorrectionTest.kt:60:23 Redundant creation of Json format. Creating instances for each usage can be slow.
+
+> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:processDebugUnitTestJavaRes UP-TO-DATE
+
+> Task :app:testDebugUnitTest
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+
+CumulativeReviewStorageTest > newBackupRoundtripReplacesReviewHistoryAndRestoreFaultRollsItBack FAILED
+    java.lang.AssertionError at CumulativeReviewStorageTest.kt:123
+
+CumulativeReviewStorageTest > schemaOneBackupRestoresNoSyntheticReviewAndClearsReplacedLearnerHistory FAILED
+    java.lang.AssertionError at CumulativeReviewStorageTest.kt:148
+
+25 tests completed, 2 failed
+
+> Task :app:testDebugUnitTest FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:testDebugUnitTest'.
+> There were failing tests. See the report at: file:///workspace/russian-companion/app/build/reports/tests/testDebugUnitTest/index.html
+
+* Try:
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+BUILD FAILED in 7m 11s
+41 actionable tasks: 15 executed, 26 up-to-date
