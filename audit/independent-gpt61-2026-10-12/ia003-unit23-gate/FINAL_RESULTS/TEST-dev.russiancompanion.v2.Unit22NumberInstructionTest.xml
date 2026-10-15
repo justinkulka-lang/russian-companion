@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit22NumberInstructionTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-15T22:02:16.470Z" hostname="f5c5dd6b855f" time="20.196">
+  <properties/>
+  <testcase name="omittedStepNullsAndEmptySynthesisApplicationsHaveIdenticalTypedMeaning" classname="dev.russiancompanion.v2.Unit22NumberInstructionTest" time="6.019"/>
+  <testcase name="everyCheckedNumberContrastIsTaughtBeforePracticeAndRestoredOnAMiss" classname="dev.russiancompanion.v2.Unit22NumberInstructionTest" time="0.635"/>
+  <testcase name="admittedAnswersStayBoundAndWrongKeysStillFailProductionValidation" classname="dev.russiancompanion.v2.Unit22NumberInstructionTest" time="12.996"/>
+  <testcase name="ruleScopeDistinguishesTeensGenderCaseAmbiguityAndCollectiveUsage" classname="dev.russiancompanion.v2.Unit22NumberInstructionTest" time="0.544"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
