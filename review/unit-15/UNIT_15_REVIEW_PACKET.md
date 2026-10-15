@@ -11,12 +11,12 @@ Unit 15 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 434b32c618f45faa67a765d63d7d1f080ffd05d9
-- Unit content-review SHA-256: 6a2f591fdf4386dfcf371fdb13d4f754ac416dcc85f6918ca9ea63596e46971b
+- Curriculum source commit: 8aa1051f188c979e09deb854729d56121551fd50
+- Unit content-review SHA-256: b431fa38b138ab9157084fd874cbfd627aafb83e49da1ce2e9af74711ae75d75
 - Mapping-package SHA-256: 7228dd28cc3954cb8810a77b81ad72f55fa4e51a64d669fd691cd61a120d710c
-- Pack content-review SHA-256: 43a64be8a630c84aaa922388a192fd218de8fc3ddf8a666420015851b2d9cda6
-- Review-package SHA-256: 732c5477e1899b42abd579a0d49cf2168b4d913be76576f857c671923d298a2d
-- Repository source SHA-256: 61dbba6063882f213a327c71be4f568f792279f2176810d660efb17c8c6d27f3
+- Pack content-review SHA-256: ea35db76727e05236f2a3044052208914b544dac2ec022886aa70a1a109256dc
+- Review-package SHA-256: 138654bf973fd12dff0d60b3e30053e3d903139a280b1a5d981c300afb53a13b
+- Repository source SHA-256: 40ea1d0bcf06001213275258c155679ad5928fe7086b5112c5a7580a6df11862
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -96,13 +96,13 @@ estimatedMinutes=54
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 6222fcb69f73115c1a54ff7d45553d80575b1dc0d5cdd5b6a4d308888fd20d2d
+- Content hash: 9943056c9f436d13c72cd57a13529bf45e87c4ec966f67e2c76705daaff89f35
 
 requireInstruction=true
 requireBookSelfAttestation=true
 requireAppChecks=true
 minimumDistinctChecks=6
-requireDueReview=false
+requireDueReview=true
 tutorOptional=true
 
 ### OBJECTIVE `obj-u15-imperative`
