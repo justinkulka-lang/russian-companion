@@ -6,8 +6,8 @@
 **Repository:** `justinkulka-lang/russian-companion`  
 **Repository baseline main:** `c153103a0048f69f8de339b83e77d93572ebddb7`  
 **Unit 23 unprepared correction:** `fd69bd03298d69669d09daafe8d364b0e576d033` (`Keep Unit 23 unprepared until completion over a period is admitted.`). That commit is an ancestor of the repository baseline. It is not the repository baseline main commit.  
-**Pack content-review digest:** `bf20ef2d14d97a4d29a38a6f4bec683917c226e07ab3c6a348dff1cb6592657d`
-**Repository source digest:** `7494579a5f42a37ff33fd8ca0f1e017ad8974b2d3907d5549557f0788ae99fe5`
+**Pack content-review digest:** `5c9ac16bdc422385f202f3e1457d95eed06316efa7b52f9e65a0c5f8224fb022`
+**Repository source digest:** `27953a457eade5c86898c2e9e1afc06e6bb43d9dbc0240b7ffc4a0bfed07a149`
 **Public release:** **NOT_APPROVED**
 
 ## Purpose
@@ -58,7 +58,7 @@ Unacceptable shortcuts include keyword matches, mutable pages, dictionary-row gr
 | 9 | Numbers, genitive singular and plural, quantities, and money | CONTENT_COMPLETE_REVIEW_PENDING | NO | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 10 | Expressions of having, expanded genitive functions, absence, genitive prepositions, pronouns, and adjectives | CONTENT_COMPLETE_REVIEW_PENDING | NO | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 11 | Past tense and reflexive verbs | CONTENT_COMPLETE_REVIEW_PENDING | NO | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
-| 12 | Future, aspect introduction, dative case, additional spelling rules, and prepositional plural | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
+| 12 | Future, aspect introduction, dative case, additional spelling rules, and prepositional plural | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | NO | Qualified linguistic review and owned-edition mapping |
 | 13 | Aspect in the past, tense use, infinitive aspect, and reported speech | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 14 | Aspect in the future and impersonal constructions | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 15 | Requests, the imperative, and consolidation of aspect use | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
