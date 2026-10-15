@@ -35,11 +35,12 @@ class Unit15ImperativeRemediationTest {
     @Test fun exactDeclaredUnitExceptionPreservesEveryQuestionRecordAndRequirement() {
         val p = pack(); val old = baseline()
         assertEquals(declaredAfterUnit(), p.unit(15))
-        assertEquals(old, p.copy(units = p.units.map { if (it.number == 15) old.unit(15)!! else it }))
+        assertEquals(old, p.copy(units = p.units.map { if (it.number == 15) old.unit(15)!! else if (it.number == 16) it.copy(advancement = old.unit(16)!!.advancement) else it }))
         assertEquals(old.unit(15)!!.advancement, p.unit(15)!!.advancement)
         assertEquals(6, p.unit(15)!!.advancement!!.minimumDistinctChecks)
         assertEquals(10, p.unit(16)!!.advancement!!.minimumDistinctChecks)
-        assertNull(cumulativeReviewPolicy(16))
+        assertEquals(old.unit(16)!!.copy(advancement = old.unit(16)!!.advancement!!.copy(requireDueReview = true, cumulativeReviewPolicyId = Unit16CumulativeReviewPolicy.definition.id)), p.unit(16))
+        assertNull(cumulativeReviewPolicy(17))
         val teaching = p.step("u15-st-teach-imperative-contrast")!!.second
         assertTrue("u15-st-teach-imperative-contrast" in p.unit(15)!!.objectives.single { it.id == "obj-u15-imperative" }.instructionStepIds)
         assertEquals(listOf("u15-g-imperative-0", "u15-i-imperative-1", "u15-i-imperative-2").joinToString("\n\n") { p.item(it)!!.feedback }, teaching.body)

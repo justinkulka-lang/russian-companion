@@ -38,7 +38,7 @@ class Unit14ImpersonalRemediationTest {
         val restored = p.copy(units = p.units.map { unit ->
             if (unit.number == 14) unit.copy(sessions = unit.sessions.map { current ->
                 if (current.id == "u14-s-impersonal") session(old) else current
-            }) else if (unit.number == 15) old.unit(15)!! else unit
+            }) else if (unit.number == 15) old.unit(15)!! else if (unit.number == 16) unit.copy(advancement = old.unit(16)!!.advancement) else unit
         })
         assertEquals(Unit15ImperativeRemediationTest.declaredAfterUnit(), p.unit(15))
         assertEquals(old, restored)
@@ -46,7 +46,8 @@ class Unit14ImpersonalRemediationTest {
         assertEquals(6, p.unit(14)!!.advancement!!.minimumDistinctChecks)
         assertEquals(old.items, p.items); assertEquals(old.examples, p.examples)
         assertEquals(old.provenanceRecords, p.provenanceRecords)
-        assertNull(cumulativeReviewPolicy(16))
+        assertEquals(old.unit(16)!!.copy(advancement = old.unit(16)!!.advancement!!.copy(requireDueReview = true, cumulativeReviewPolicyId = Unit16CumulativeReviewPolicy.definition.id)), p.unit(16))
+        assertNull(cumulativeReviewPolicy(17))
     }
     @Test fun oldGuidePositionDoesNotResumeAsTheNewSecondTeachingCard() {
         val p = pack(); val old = baseline()
