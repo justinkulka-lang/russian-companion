@@ -27,7 +27,7 @@ internal data class CumulativeReviewAnswer(
 )
 
 /** Skill labels describe only the bounded evidence supported by the authored checks. */
-internal enum class CumulativeReviewSkill { BOUNDED_READING, PRINTED_LETTER_RECOGNITION, NOUN_GENDER_RECOGNITION, SUPPLIED_NOMINATIVE_SUBJECT_RECOGNITION, SUPPLIED_NOUN_BEHAVIOR_RECOGNITION, SUPPLIED_INANIMATE_ACCUSATIVE_RECOGNITION, SUPPLIED_NOMINATIVE_AGREEMENT_RECOGNITION, SUPPLIED_NOMINATIVE_PLURAL_RECOGNITION, SUPPLIED_NUMERAL_GENDER_RECOGNITION, SUPPLIED_POSSESSION_ABSENCE_RECOGNITION, SUPPLIED_PAST_GENDER_RECOGNITION, SUPPLIED_ASPECT_PARTNER_RECOGNITION, SUPPLIED_REPORTED_FRAME_TIME_RECOGNITION, SUPPLIED_IMPERSONAL_STATE_RECOGNITION, SUPPLIED_IMPERATIVE_FORM_RECOGNITION, SUPPLIED_INSTRUMENTAL_PLURAL_RECOGNITION, SUPPLIED_QUESTION_INTERPRETATION, SUPPLIED_RELATIVE_CLAUSE_RECOGNITION }
+internal enum class CumulativeReviewSkill { BOUNDED_READING, PRINTED_LETTER_RECOGNITION, NOUN_GENDER_RECOGNITION, SUPPLIED_NOMINATIVE_SUBJECT_RECOGNITION, SUPPLIED_NOUN_BEHAVIOR_RECOGNITION, SUPPLIED_INANIMATE_ACCUSATIVE_RECOGNITION, SUPPLIED_NOMINATIVE_AGREEMENT_RECOGNITION, SUPPLIED_NOMINATIVE_PLURAL_RECOGNITION, SUPPLIED_NUMERAL_GENDER_RECOGNITION, SUPPLIED_POSSESSION_ABSENCE_RECOGNITION, SUPPLIED_PAST_GENDER_RECOGNITION, SUPPLIED_ASPECT_PARTNER_RECOGNITION, SUPPLIED_REPORTED_FRAME_TIME_RECOGNITION, SUPPLIED_IMPERSONAL_STATE_RECOGNITION, SUPPLIED_IMPERATIVE_FORM_RECOGNITION, SUPPLIED_INSTRUMENTAL_PLURAL_RECOGNITION, SUPPLIED_QUESTION_INTERPRETATION, SUPPLIED_RELATIVE_CLAUSE_RECOGNITION, SUPPLIED_CONDITIONAL_AGREEMENT_RECOGNITION }
 
 internal data class CumulativeReviewObjectivePool(
     val objectiveId: String, val skill: CumulativeReviewSkill, val candidateItemIds: List<String>,
@@ -193,6 +193,14 @@ internal object Unit19CumulativeReviewPolicy {
     ))
 }
 
+internal object Unit20CumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit20-prior-reading-conditional-agreement-v1", 20, listOf(
+        CumulativeReviewObjectivePool("obj-u1-decoding", CumulativeReviewSkill.BOUNDED_READING, listOf("u1-i-decode-pair")),
+        CumulativeReviewObjectivePool("obj-u19-conditional", CumulativeReviewSkill.SUPPLIED_CONDITIONAL_AGREEMENT_RECOGNITION,
+            listOf("u19-i-conditional-1"), "u19-st-rem-conditional"),
+    ))
+}
+
 /** Authored engineering slices only; every remaining target has no policy. */
 internal fun cumulativeReviewPolicy(targetUnit: Int): CumulativeReviewPolicy? = when (targetUnit) {
     3 -> Unit3CumulativeReviewPolicy.definition
@@ -212,6 +220,7 @@ internal fun cumulativeReviewPolicy(targetUnit: Int): CumulativeReviewPolicy? = 
     17 -> Unit17CumulativeReviewPolicy.definition
     18 -> Unit18CumulativeReviewPolicy.definition
     19 -> Unit19CumulativeReviewPolicy.definition
+    20 -> Unit20CumulativeReviewPolicy.definition
     else -> null
 }
 
@@ -233,6 +242,7 @@ internal fun cumulativeReviewTitle(targetUnit: Int): String = when (targetUnit) 
     17 -> "Review earlier reading and supplied instrumental plurals"
     18 -> "Review earlier reading and supplied question meanings"
     19 -> "Review earlier reading and supplied relative-clause meanings"
+    20 -> "Review earlier reading and supplied conditional agreement"
     else -> "Review earlier objectives"
 }
 
@@ -377,9 +387,9 @@ internal fun historicalReviewCompletionCurrent(pack: V2CurriculumPack, unit: V2U
     if (!cumulativeReviewDeclarationValid(pack, unit.number)) return false
     val record = learner.unitReviewCompletions[unit.number] ?: return false
     val emptyLink = record.policyDigest.isEmpty() && record.assignmentId.isEmpty() && record.completionOrder == 0L
-    // Schema11 already wrote ordinary Unit4–19 rows with preActivation=false before their activation.
+    // Schema11 already wrote ordinary Unit4–20 rows with preActivation=false before their activation.
     // Only exact pre-policy governed work may preserve them; current-source raw flags cannot.
-    if (emptyLink && (record.preActivation || unit.number in 4..19)) {
+    if (emptyLink && (record.preActivation || unit.number in 4..20)) {
         val legacy = preReviewUnitDigest(pack, unit.number)
         val oldEvidence = learner.copy(governedAttempts = learner.governedAttempts?.filter {
             it.unitNumber != unit.number || it.unitContentDigest == legacy
