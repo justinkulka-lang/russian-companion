@@ -1,0 +1,13 @@
+{
+  "testedCommit": "8c132c8e8abaf4d2f75aad4ea15b895848efffe5",
+  "counts": {
+    "tests": 1,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "runnerExitCode": 0,
+  "sourceUnchanged": true,
+  "command": "source /workspace/setup/android-env.sh; ./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*CumulativeReviewStorageTest.legacyDocumentWithoutNewFieldsDecodesWithNoSyntheticReviewRows' --max-workers=4 --console=plain",
+  "conclusion": "Original failure did not reproduce in isolation;exact suite interaction remains unproven. No deterministic product-failure claim."
+}

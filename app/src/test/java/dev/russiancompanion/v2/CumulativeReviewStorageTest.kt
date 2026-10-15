@@ -202,12 +202,26 @@ class CumulativeReviewStorageTest {
     }
 
     @Test fun legacyDocumentWithoutNewFieldsDecodesWithNoSyntheticReviewRows() {
-        LocalStore.openInMemory(context()).use { s ->
-            val json = JSONObject(backupJson.encodeToString(GovernedLearnerDocument.serializer(), s.governedLearnerDocument().copy(schemaVersion = 1)))
-            json.remove("reviewAssignments"); json.remove("reviewAnswers")
-            val old = backupJson.decodeFromString(GovernedLearnerDocument.serializer(), json.toString())
-            assertEquals(1, old.schemaVersion); assertTrue(old.reviewAssignments.isEmpty()); assertTrue(old.reviewAnswers.isEmpty())
-            assertEquals(GovernedReplaceOutcome.REPLACED, s.replaceGovernedLearner(old, emptyList()))
+        // A unique journal root isolates this restore from rollback fixtures using in-memory stores.
+        val name = "legacy-review-fields-${System.nanoTime()}.db"
+        try {
+            LocalStore.openNamed(context(), name).use { s ->
+                val json = JSONObject(backupJson.encodeToString(GovernedLearnerDocument.serializer(), s.governedLearnerDocument().copy(schemaVersion = 1)))
+                json.remove("reviewAssignments"); json.remove("reviewAnswers")
+                val old = backupJson.decodeFromString(GovernedLearnerDocument.serializer(), json.toString())
+                assertEquals(1, old.schemaVersion); assertTrue(old.reviewAssignments.isEmpty()); assertTrue(old.reviewAnswers.isEmpty())
+                assertNull(backupProfileDefects(old.profile))
+                s.v2SaveProfile(s.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = 2))
+                s.v2AttestBook(2, "target-before-legacy-restore")
+                assertEquals(setOf(2), s.v2LearnerView().bookAttestedUnits)
+                assertEquals(GovernedReplaceOutcome.REPLACED, s.replaceGovernedLearner(old, emptyList()))
+                assertEquals(old.profile, s.governedLearnerDocument().profile)
+                assertTrue(s.v2LearnerView().bookAttestedUnits.isEmpty())
+                assertTrue(s.cumulativeReviewHistory().first.isEmpty()); assertTrue(s.cumulativeReviewHistory().second.isEmpty())
+            }
+        } finally {
+            context().deleteDatabase(name)
+            File(context().filesDir, "recordings-$name").deleteRecursively()
         }
     }
 
