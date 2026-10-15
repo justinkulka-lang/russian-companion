@@ -101,7 +101,7 @@ class Unit14CumulativeReviewTest {
         }
     }
 
-    @Test fun schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot() {
+    @Test fun schema11RowsRemainStoredButChangedImpersonalInstructionRequiresRepair() {
         val old = oldPack("ef8078157d8d560f7bb65a16d801402b32b6542b")
         val p = pack(); val name = "unit14-old-${System.nanoTime()}.db"
         try {
@@ -112,18 +112,21 @@ class Unit14CumulativeReviewTest {
                 s.v2SaveProfile(s.v2Profile().copy(currentUnitNumber = 15))
             }
             LocalStore.openNamed(context(), name).use { s ->
-                assertEquals((1..14).toSet(), currentCompletedUnitNumbers(p, s.v2LearnerView()))
-                assertTrue(canOpenUnit(unitState(p, p.unit(15)!!, s.v2LearnerView())))
+                assertEquals((1..13).toSet(), currentCompletedUnitNumbers(p, s.v2LearnerView()))
+                assertFalse(canOpenUnit(unitState(p, p.unit(15)!!, s.v2LearnerView())))
                 assertFalse(s.cumulativeReviewHistory().first.any { it.targetUnit == 14 })
                 assertFalse(advancementDecision(p, p.unit(14)!!, s.v2LearnerView()).allowed)
                 val oldAssignments = s.cumulativeReviewHistory().first
                 oldAssignments.forEach { assertTrue(reviewAssignmentCurrent(p, it)) }
+                assertTrue(s.governedLearnerDocument().unitCompletions.any { it.unitNumber == 14 })
+                ordinary(p, s, 14) // Repair stale Unit14 instruction; keep prior review assignments unchanged.
                 val before = s.governedLearnerFingerprint(); val a = open(p, s)
                 assertNotEquals(before, s.governedLearnerFingerprint())
                 answer(p, s, a, 0); answer(p, s, a, 1); assertTrue(advance(p, s))
                 assertTrue(14 in currentCompletedUnitNumbers(p, s.v2LearnerView()))
                 assertTrue(s.cumulativeReviewHistory().first.containsAll(oldAssignments))
                 val altered = p.copy(items = p.items.map { if (it.id == "u14-i-impersonal-2") it.copy(feedback = it.feedback + " changed") else it })
+                V2PackIdentityIndex.warm(altered) // Compute genuine digests once for this separate immutable mutation.
                 assertFalse(14 in currentCompletedUnitNumbers(altered, s.v2LearnerView()))
             }
             ready(p).use { fresh ->
@@ -152,9 +155,9 @@ class Unit14CumulativeReviewTest {
                     isolatedStore("case").use { target ->
                         assertEquals(GovernedReplaceOutcome.REPLACED, target.replaceGovernedLearner(read.backup.document, emptyList()))
                         assertEquals((1..10).toSet(), currentCompletedUnitNumbers(p, target.v2LearnerView()))
-                        // Unit14's own ordinary legacy proof survives; fixed-point prerequisites reject stale Unit11.
-                        assertTrue(ordinaryUnitRequirements(p, p.unit(14)!!, target.v2LearnerView()).allowed)
-                        assertTrue(historicalReviewCompletionCurrent(p, p.unit(14)!!, target.v2LearnerView()))
+                        // Raw Unit14 legacy rows survive; changed Unit14 instruction and stale Unit11 both require repair.
+                        assertFalse(ordinaryUnitRequirements(p, p.unit(14)!!, target.v2LearnerView()).allowed)
+                        assertFalse(historicalReviewCompletionCurrent(p, p.unit(14)!!, target.v2LearnerView()))
                         assertFalse(canOpenUnit(unitState(p, p.unit(15)!!, target.v2LearnerView())))
                         assertTrue(target.governedLearnerDocument().unitCompletions.any { it.unitNumber == 14 })
                         assertFalse(11 in currentCompletedUnitNumbers(p, target.v2LearnerView()))

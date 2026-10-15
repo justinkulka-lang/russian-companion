@@ -1,0 +1,181 @@
+{
+  "baselineCommit": "2546331775c783813bd2c4785a5e08e6dfe42ed0",
+  "status": "ENGINEERING_REPAIR_PENDING_QUALIFIED_AUDIT",
+  "unitNumber": 14,
+  "sessionId": "u14-s-impersonal",
+  "beforeSession": {
+    "id": "u14-s-impersonal",
+    "title": "Choose the admitted impersonal line",
+    "estimatedMinutes": 12,
+    "objectiveIds": [
+      "obj-u14-impersonal"
+    ],
+    "steps": [
+      {
+        "id": "u14-st-teach-impersonal-1",
+        "kind": "TEACH",
+        "title": "Admitted lines",
+        "body": "Ему было холодно — He was cold. Им было скучно — They were bored. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+        "referenceIds": [
+          "ref-u1115-attribution"
+        ],
+        "exampleIds": [
+          "ex-u14-impersonal-0",
+          "ex-u14-impersonal-1"
+        ]
+      },
+      {
+        "id": "u14-st-guided-impersonal-1",
+        "kind": "GUIDED",
+        "title": "Guided practice",
+        "body": "Choose the admitted record. The feedback states the frozen field.",
+        "itemIds": [
+          "u14-g-impersonal-0"
+        ],
+        "remediationStepId": "u14-st-rem-impersonal"
+      },
+      {
+        "id": "u14-st-teach-impersonal-2",
+        "kind": "TEACH",
+        "title": "Admitted instruction",
+        "body": "To refer to these states in the past tense, always use '''было'''",
+        "referenceIds": [
+          "ref-u1115-attribution"
+        ]
+      },
+      {
+        "id": "u14-st-teach-impersonal-3",
+        "kind": "TEACH",
+        "title": "Admitted lines",
+        "body": "ей было холодно — she was cold. бы́ло — be. ",
+        "referenceIds": [
+          "ref-u1115-attribution"
+        ],
+        "exampleIds": [
+          "ex-u14-impersonal-2",
+          "ex-or-u14-impersonal-3"
+        ]
+      },
+      {
+        "id": "u14-st-rem-impersonal",
+        "kind": "REMEDIATE",
+        "title": "Remediation",
+        "body": "To refer to these states in the past tense, always use '''было'''",
+        "exampleIds": [
+          "ex-u14-impersonal-0",
+          "ex-u14-impersonal-1"
+        ]
+      },
+      {
+        "id": "u14-st-check-impersonal",
+        "kind": "CHECK",
+        "title": "Independent checks",
+        "body": "These checks use only admitted records. A miss returns to the explanation.",
+        "itemIds": [
+          "u14-i-impersonal-1",
+          "u14-i-impersonal-2"
+        ],
+        "remediationStepId": "u14-st-rem-impersonal"
+      }
+    ]
+  },
+  "afterSession": {
+    "id": "u14-s-impersonal",
+    "title": "Choose the admitted impersonal line",
+    "estimatedMinutes": 12,
+    "objectiveIds": [
+      "obj-u14-impersonal"
+    ],
+    "steps": [
+      {
+        "id": "u14-st-teach-impersonal-1",
+        "kind": "TEACH",
+        "title": "Admitted lines",
+        "body": "Ему было холодно — He was cold. Им было скучно — They were bored. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+        "referenceIds": [
+          "ref-u1115-attribution"
+        ],
+        "exampleIds": [
+          "ex-u14-impersonal-0",
+          "ex-u14-impersonal-1"
+        ]
+      },
+      {
+        "id": "u14-st-teach-impersonal-2",
+        "kind": "TEACH",
+        "title": "Admitted instruction",
+        "body": "To refer to these states in the past tense, always use '''было'''",
+        "referenceIds": [
+          "ref-u1115-attribution"
+        ]
+      },
+      {
+        "id": "u14-st-teach-impersonal-3",
+        "kind": "TEACH",
+        "title": "Admitted lines",
+        "body": "ей было холодно — she was cold. бы́ло — be. ",
+        "referenceIds": [
+          "ref-u1115-attribution"
+        ],
+        "exampleIds": [
+          "ex-u14-impersonal-2",
+          "ex-or-u14-impersonal-3"
+        ]
+      },
+      {
+        "id": "u14-st-guided-impersonal-1",
+        "kind": "GUIDED",
+        "title": "Guided practice",
+        "body": "Choose the admitted record. The feedback states the frozen field.",
+        "itemIds": [
+          "u14-g-impersonal-0"
+        ],
+        "remediationStepId": "u14-st-rem-impersonal"
+      },
+      {
+        "id": "u14-st-rem-impersonal",
+        "kind": "REMEDIATE",
+        "title": "Remediation",
+        "body": "Ему было холодно — He was cold. Им было скучно — They were bored. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.\n\nTo refer to these states in the past tense, always use '''было'''\n\nей было холодно — she was cold. бы́ло — be. ",
+        "exampleIds": [
+          "ex-u14-impersonal-0",
+          "ex-u14-impersonal-1",
+          "ex-u14-impersonal-2",
+          "ex-or-u14-impersonal-3"
+        ]
+      },
+      {
+        "id": "u14-st-check-impersonal",
+        "kind": "CHECK",
+        "title": "Independent checks",
+        "body": "These checks use only admitted records. A miss returns to the explanation.",
+        "itemIds": [
+          "u14-i-impersonal-1",
+          "u14-i-impersonal-2"
+        ],
+        "remediationStepId": "u14-st-rem-impersonal"
+      }
+    ]
+  },
+  "changedFields": [
+    "unit14.impersonal.steps.order",
+    "u14-st-rem-impersonal.body",
+    "u14-st-rem-impersonal.exampleIds"
+  ],
+  "allOtherAssetValues": "JSON_VALUE_IDENTICAL",
+  "allProvenanceRecords": "JSON_VALUE_IDENTICAL",
+  "provenanceRecordCount": 6914,
+  "newProvenanceRecords": 0,
+  "provenanceTreatment": "Arrangement of previously shipped constituent text/examples only. Existing source records and original English disclaimer remain distinct under unchanged licenses;no composite is misclassified as newly authored English.",
+  "advancementUnchanged": {
+    "requireInstruction": true,
+    "requireBookSelfAttestation": true,
+    "requireAppChecks": true,
+    "minimumDistinctChecks": 6,
+    "requireDueReview": true,
+    "tutorOptional": true,
+    "cumulativeReviewPolicyId": "unit14-prior-reading-reported-time-v1"
+  },
+  "unit15Policy": "NOT_ACTIVATED",
+  "orphanExamplesUnchanged": true
+}
