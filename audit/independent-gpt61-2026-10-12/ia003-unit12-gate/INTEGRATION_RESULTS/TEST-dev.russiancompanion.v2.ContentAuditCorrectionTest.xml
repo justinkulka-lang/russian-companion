@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.ContentAuditCorrectionTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-15T00:24:20.728Z" hostname="f5c5dd6b855f" time="21.749">
+  <properties/>
+  <testcase name="unitElevenChecksPastAgreementBeforeAspectIntroductionWithoutLoweringItsGate" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="21.375"/>
+  <testcase name="wrongAnswerRoutesRetainTheCorrectedObjectiveExplanation" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.373"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

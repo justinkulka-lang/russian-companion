@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit9AgreementTransferTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-10-15T00:43:10.652Z" hostname="f5c5dd6b855f" time="29.06">
+  <properties/>
+  <testcase name="playerRejectsTheFeminineFormAndExplainsTheGender" classname="dev.russiancompanion.v2.Unit9AgreementTransferTest" time="4.059"/>
+  <testcase name="restoringTheOriginalValidRepeatedContrastCannotClearDistinctMasculineNounEvidence" classname="dev.russiancompanion.v2.Unit9AgreementTransferTest" time="7.378"/>
+  <testcase name="coherentNativeTextAndHashForgeryCannotChangeTheHourSource" classname="dev.russiancompanion.v2.Unit9AgreementTransferTest" time="5.06"/>
+  <testcase name="allSixCardsPrecedePracticeAndRemediationRestoresThem" classname="dev.russiancompanion.v2.Unit9AgreementTransferTest" time="0.357"/>
+  <testcase name="coordinatedKeyAndApplicationCannotMakeTheFeminineAMasculineAnswer" classname="dev.russiancompanion.v2.Unit9AgreementTransferTest" time="5.249"/>
+  <testcase name="unaccentedSourcePairAndOtherCorrectFieldsArePreserved" classname="dev.russiancompanion.v2.Unit9AgreementTransferTest" time="4.544"/>
+  <testcase name="historicalSixAnswerCompletionStaysSavedButCannotCreditCurrentContent" classname="dev.russiancompanion.v2.Unit9AgreementTransferTest" time="1.157"/>
+  <testcase name="completedAgreementNeedsADifferentIndependentMasculineNoun" classname="dev.russiancompanion.v2.Unit9AgreementTransferTest" time="0.536"/>
+  <testcase name="guidedAndOtherCorrectPairsCannotCompleteTheIndependentMasculineNoun" classname="dev.russiancompanion.v2.Unit9AgreementTransferTest" time="0.711"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+]]></system-err>
+</testsuite>

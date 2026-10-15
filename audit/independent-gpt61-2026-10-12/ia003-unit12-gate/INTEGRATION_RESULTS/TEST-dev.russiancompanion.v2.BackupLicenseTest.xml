@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.BackupLicenseTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2026-10-15T00:41:11.149Z" hostname="f5c5dd6b855f" time="55.671">
+  <properties/>
+  <testcase name="backupRoundTripRestoresGovernedRecordsWithoutChangingTheLiveCopy" classname="dev.russiancompanion.v2.BackupLicenseTest" time="5.2"/>
+  <testcase name="recordingBytesRoundTripAndBackupDoesNotClaimAFailedWrite" classname="dev.russiancompanion.v2.BackupLicenseTest" time="4.993"/>
+  <testcase name="cancelledBackupAndDeclinedRestoreLeaveLiveDataUnchanged" classname="dev.russiancompanion.v2.BackupLicenseTest" time="4.294"/>
+  <testcase name="failedJournalWriteKeepsTheSnapshotWhenImmediateRollbackCannotFinish" classname="dev.russiancompanion.v2.BackupLicenseTest" time="1.643"/>
+  <testcase name="restoreRejectsARecordingForAnUnknownAudioModel" classname="dev.russiancompanion.v2.BackupLicenseTest" time="1.349"/>
+  <testcase name="repeatedBackupTapsDoNotStartASecondOperation" classname="dev.russiancompanion.v2.BackupLicenseTest" time="1.201"/>
+  <testcase name="backupScreenRejectsABadFileAndConfirmsReplacementOnce" classname="dev.russiancompanion.v2.BackupLicenseTest" time="3.128"/>
+  <testcase name="malformedTruncatedUnsupportedAndTamperedPackagesDoNotChangeData" classname="dev.russiancompanion.v2.BackupLicenseTest" time="3.932"/>
+  <testcase name="missingAttributionAndMissingNoticeFailClosed" classname="dev.russiancompanion.v2.BackupLicenseTest" time="17.793"/>
+  <testcase name="attributionsScreenShowsPackagedNoticeTextAndReturns" classname="dev.russiancompanion.v2.BackupLicenseTest" time="6.498"/>
+  <testcase name="failedRecordingPublishRestoresDatabaseRowsAndRecordingBytes" classname="dev.russiancompanion.v2.BackupLicenseTest" time="1.747"/>
+  <testcase name="failedJournalWriteRestoresTheOriginalRecordingSnapshot" classname="dev.russiancompanion.v2.BackupLicenseTest" time="1.634"/>
+  <testcase name="failedReplacementKeepsTheOriginalDatabase" classname="dev.russiancompanion.v2.BackupLicenseTest" time="1.194"/>
+  <testcase name="failedSnapshotRestoreKeepsRecoveryMaterialsUntilTheNextStoreOpen" classname="dev.russiancompanion.v2.BackupLicenseTest" time="0.91"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call Surface.release. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+]]></system-err>
+</testsuite>

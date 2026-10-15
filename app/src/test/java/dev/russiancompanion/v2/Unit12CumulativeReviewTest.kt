@@ -128,7 +128,7 @@ class Unit12CumulativeReviewTest {
         } finally { context().deleteDatabase(name) }
     }
 
-    @Test fun oldFormatOneAndTwoKeepUnit12HistoryWithoutInventingReviewOrRepairingUnit11() {
+    @Test fun oldFormatOneAndTwoKeepRawUnit12HistoryWithoutInventingCreditOrRepairingUnit11() {
         val old = oldPack("20a227817562e3a8645488fd52db2e7589713a7a"); val p = pack()
         LocalStore.openInMemory(context()).use { source ->
             for (n in 1..12) { ordinary(old, source, n); source.v2CompleteUnit(n, "historical") }
@@ -142,9 +142,12 @@ class Unit12CumulativeReviewTest {
                     val read = readGovernedBackup(bytes.toByteArray().inputStream(), "dev.russiancompanion", p.packId, p.packVersion, temp) as BackupReadResult.Valid
                     LocalStore.openInMemory(context()).use { target ->
                         assertEquals(GovernedReplaceOutcome.REPLACED, target.replaceGovernedLearner(read.backup.document, emptyList()))
-                        assertEquals(setOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12), currentCompletedUnitNumbers(p, target.v2LearnerView()))
-                        // Historical completion validates direct prerequisites, without recursive prior-unit closure.
-                        assertTrue(canOpenUnit(unitState(p, p.unit(13)!!, target.v2LearnerView())))
+                        assertEquals((1..10).toSet(), currentCompletedUnitNumbers(p, target.v2LearnerView()))
+                        // Unit12's own ordinary legacy proof survives; fixed-point prerequisites reject stale Unit11.
+                        assertTrue(ordinaryUnitRequirements(p, p.unit(12)!!, target.v2LearnerView()).allowed)
+                        assertTrue(historicalReviewCompletionCurrent(p, p.unit(12)!!, target.v2LearnerView()))
+                        assertFalse(canOpenUnit(unitState(p, p.unit(13)!!, target.v2LearnerView())))
+                        assertTrue(target.governedLearnerDocument().unitCompletions.any { it.unitNumber == 12 })
                         assertFalse(11 in currentCompletedUnitNumbers(p, target.v2LearnerView()))
                         assertFalse(advancementDecision(p, p.unit(12)!!, target.v2LearnerView()).allowed)
                         assertTrue(target.governedLearnerDocument().unitCompletions.any { it.unitNumber == 11 })

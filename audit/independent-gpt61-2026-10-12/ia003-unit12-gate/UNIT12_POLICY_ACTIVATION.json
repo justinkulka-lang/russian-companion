@@ -341,5 +341,11 @@
   "currentSourceAnnotationCount": 1023,
   "sourceAnnotationsAreNotExecutedTests": true,
   "newSourceMethods": 7,
-  "originalDiagnosticReceiptFilesPreserved": 9
+  "originalDiagnosticReceiptFilesPreserved": 9,
+  "initialFixtureCorrectionsWereIncomplete": true,
+  "correctedIntegrationFailures": [
+    "Expected current completions1..10;old Unit12 own ordinary/legacy proof remains valid but prerequisite11 is stale. Preserve raw Unit11/12 rows and require fresh teaching/review;Unit13 remains locked. No production change.",
+    "Restore Unit12 Packet YES and set Advancement NO at named header column positions."
+  ],
+  "fixedPointPrerequisiteValidationPreserved": true
 }
