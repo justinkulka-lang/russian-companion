@@ -1110,9 +1110,9 @@
   "unit16MinimumPreserved": 10,
   "unit16Policy": "NOT_ACTIVATED",
   "policiesUnchanged": true,
-  "implementationCommit": "44c2d731dcd6cf5a6c8af973cad475e38fdb5572",
-  "newPackDigest": "ec76c2ae5c7cfa647e1c39adccd81e3feb4c38314712f1cdb85987f836951732",
-  "newRepositorySourceDigest": "e689b67cabed41e803f2ce218855af23db8c5f183436ddda37f3b5008a054c72",
+  "implementationCommit": "1e571336b9157b884beb2e6e5e79c3b95aa99480",
+  "newPackDigest": "027733e06ef938701051adc705c768616f39c58ee31e53e9fb889145d521f3ce",
+  "newRepositorySourceDigest": "bdbbce47a954745097899b62d2f562dd9b5a4ac1b2fe2358bfdf3e2d03690a6f",
   "unitReviewBindings": [
     {
       "unitNumber": 1,
@@ -1252,7 +1252,7 @@
         "repositorySourceDigest",
         "reviewPackageDigest"
       ],
-      "contentReviewDigest": "7d7bb82044afe2763640a16751462a4784bc95f5f03104e59edb6933e4978172",
+      "contentReviewDigest": "ea945a9c9cd01a30db3522794b9df36c5a4fc291092a153da0672bb4b8a9a6bd",
       "mappingPackageDigest": "7228dd28cc3954cb8810a77b81ad72f55fa4e51a64d669fd691cd61a120d710c"
     },
     {
@@ -1392,7 +1392,7 @@
     }
   ],
   "oldUnit15Digest": "b431fa38b138ab9157084fd874cbfd627aafb83e49da1ce2e9af74711ae75d75",
-  "newUnit15Digest": "7d7bb82044afe2763640a16751462a4784bc95f5f03104e59edb6933e4978172",
+  "newUnit15Digest": "ea945a9c9cd01a30db3522794b9df36c5a4fc291092a153da0672bb4b8a9a6bd",
   "currentDigestFixtureFiles": [
     "app/src/test/java/dev/russiancompanion/v2/BatchECapabilityResearchTest.kt",
     "app/src/test/java/dev/russiancompanion/v2/Units1620SourceIntakeTest.kt",
@@ -1414,5 +1414,7 @@
     "cause": "Existing English linguistic-claim admission guard treats the descriptive heading as a claim;it was not exempt UI text. Reuse neutral existing heading. Body/native/scored/provenance and validators unchanged.",
     "evidence": "INITIAL_VERIFICATION.json",
     "validationWeakened": false
-  }
+  },
+  "originalImplementationCommit": "44c2d731dcd6cf5a6c8af973cad475e38fdb5572",
+  "correctedHeadingImplementationCommit": "1e571336b9157b884beb2e6e5e79c3b95aa99480"
 }
