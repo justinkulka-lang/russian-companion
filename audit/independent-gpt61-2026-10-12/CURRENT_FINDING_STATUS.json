@@ -472,6 +472,43 @@
         "qualifiedAcceptance": false,
         "remaining": "Units22\u201330,wider pools/recent scheduling and qualified assessment",
         "legacyRestoreOriginalCause": "UNCONFIRMED"
+      },
+      "unit22EngineeringCheckpoint": {
+        "implementationCommit": "177a10ba3f1626226c63d9e49b038ba1e5d45f09",
+        "testedCommit": "0033e8b9a85cbf4c9f81aeb53271855e861421cc",
+        "counts": {
+          "tests": 63,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "completeSuite": false,
+        "activeEngineeringUnits": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ],
+        "manifest": "ia003-unit22-gate/FINAL_VERIFICATION_MANIFEST.json",
+        "qualifiedAcceptance": false,
+        "remaining": "Units23\u201330,wider pools/recent scheduling and qualified assessment",
+        "legacyRestoreOriginalCause": "UNCONFIRMED"
       }
     },
     {
