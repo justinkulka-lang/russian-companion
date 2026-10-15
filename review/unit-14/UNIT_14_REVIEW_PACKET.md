@@ -11,12 +11,12 @@ Unit 14 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: fc482ecd8e9e5f77f59fea67357936e364ac70f6
-- Unit content-review SHA-256: 6ccad95cd470ad23ed3054c2ed75442c7a8dc73d7b31071290bf577bd5f51153
+- Curriculum source commit: e88130c42b21fc2440cb82792a3bc3841fe69563
+- Unit content-review SHA-256: 9e136e9af2fe3611d6862fa46e3217f85ad45c8b23ad622eec6f36e48ab97f38
 - Mapping-package SHA-256: d59ce00b8c97b8610770ad1409daa9584e520ddab3c53a0b539e46b4a0162367
-- Pack content-review SHA-256: f3d4a49f3572c862f561a55ba8a6e684a49331368021e16f7123bc47dc48a74d
-- Review-package SHA-256: 34209c7b73343be22f2fea8dd07dbf5038548fce8408d4a16117420eb35888e6
-- Repository source SHA-256: a931453f35d0e2c74c02d10f00043e4a1d6a05babc04592b88312f8e54dbb541
+- Pack content-review SHA-256: 43a64be8a630c84aaa922388a192fd218de8fc3ddf8a666420015851b2d9cda6
+- Review-package SHA-256: 09057ac14bcf5427f175392fe768ebb3954c09d1cb146007103276f32b43650b
+- Repository source SHA-256: 61dbba6063882f213a327c71be4f568f792279f2176810d660efb17c8c6d27f3
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -542,12 +542,12 @@ remediationStepId=u14-st-rem-future-person
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: aa50e2022cd7e1710d934c7a96f946aef0c57c91b5289b2429f16ccdac95ad13
+- Content hash: a64ba28d9077dd36f41986b474dd47564b0f559fdae7e522a2e5ddd48eed512c
 
 title=Choose the admitted impersonal line
 estimatedMinutes=12
 objectives=obj-u14-impersonal
-steps=u14-st-teach-impersonal-1,u14-st-guided-impersonal-1,u14-st-teach-impersonal-2,u14-st-teach-impersonal-3,u14-st-rem-impersonal,u14-st-check-impersonal
+steps=u14-st-teach-impersonal-1,u14-st-teach-impersonal-2,u14-st-teach-impersonal-3,u14-st-guided-impersonal-1,u14-st-rem-impersonal,u14-st-check-impersonal
 
 ### STEP `u14-st-teach-impersonal-1`
 
@@ -570,28 +570,6 @@ unavailableReason=
 bookDirection=
 companionDirection=
 remediationStepId=
-
-### STEP `u14-st-guided-impersonal-1`
-
-- Objectives: obj-u14-impersonal
-- Sessions: u14-s-impersonal
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 16d26da402033e09bc9164e450f4e9815b2b5f60ad8456aab7ee02bdce9751ab
-
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
-dominantAction=Continue
-references=
-items=u14-g-impersonal-0
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=u14-st-rem-impersonal
 
 ### STEP `u14-st-teach-impersonal-2`
 
@@ -637,6 +615,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u14-st-guided-impersonal-1`
+
+- Objectives: obj-u14-impersonal
+- Sessions: u14-s-impersonal
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 16d26da402033e09bc9164e450f4e9815b2b5f60ad8456aab7ee02bdce9751ab
+
+kind=GUIDED
+title=Guided practice
+body=Choose the admitted record. The feedback states the frozen field.
+dominantAction=Continue
+references=
+items=u14-g-impersonal-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u14-st-rem-impersonal
+
 ### STEP `u14-st-rem-impersonal`
 
 - Objectives: obj-u14-impersonal
@@ -645,15 +645,19 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 88f7bde71c330684621e77c445fbfd248a8be5ffbed9bb67c8fe576ecde3cfb7
+- Content hash: ef0621e01e8240c949da38e5a9222bd5cdc17ad33566ce44196804d1c1fb49fd
 
 kind=REMEDIATE
 title=Remediation
-body=To refer to these states in the past tense, always use '''было'''
+body=Ему было холодно — He was cold. Им было скучно — They were bored. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+
+To refer to these states in the past tense, always use '''было'''
+
+ей было холодно — she was cold. бы́ло — be. 
 dominantAction=Continue
 references=
 items=
-examples=ex-u14-impersonal-0,ex-u14-impersonal-1
+examples=ex-u14-impersonal-0,ex-u14-impersonal-1,ex-u14-impersonal-2,ex-or-u14-impersonal-3
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -3707,14 +3711,16 @@ permitsAppUse=true
 - `u14-st-teach-impersonal-1` EXAMPLE `ex-u14-impersonal-0`
 - `u14-st-teach-impersonal-1` EXAMPLE `ex-u14-impersonal-1`
 - `u14-st-teach-impersonal-1` REFERENCE `ref-u1115-attribution`
-- `u14-st-guided-impersonal-1` REMEDIATION `u14-st-rem-impersonal`
-- `u14-st-guided-impersonal-1` ITEM `u14-g-impersonal-0`
 - `u14-st-teach-impersonal-2` REFERENCE `ref-u1115-attribution`
 - `u14-st-teach-impersonal-3` EXAMPLE `ex-u14-impersonal-2`
 - `u14-st-teach-impersonal-3` EXAMPLE `ex-or-u14-impersonal-3`
 - `u14-st-teach-impersonal-3` REFERENCE `ref-u1115-attribution`
+- `u14-st-guided-impersonal-1` REMEDIATION `u14-st-rem-impersonal`
+- `u14-st-guided-impersonal-1` ITEM `u14-g-impersonal-0`
 - `u14-st-rem-impersonal` EXAMPLE `ex-u14-impersonal-0`
 - `u14-st-rem-impersonal` EXAMPLE `ex-u14-impersonal-1`
+- `u14-st-rem-impersonal` EXAMPLE `ex-u14-impersonal-2`
+- `u14-st-rem-impersonal` EXAMPLE `ex-or-u14-impersonal-3`
 - `u14-st-check-impersonal` REMEDIATION `u14-st-rem-impersonal`
 - `u14-st-check-impersonal` ITEM `u14-i-impersonal-1`
 - `u14-st-check-impersonal` ITEM `u14-i-impersonal-2`
