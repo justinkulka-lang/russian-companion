@@ -6,8 +6,8 @@
 **Repository:** `justinkulka-lang/russian-companion`  
 **Repository baseline main:** `c153103a0048f69f8de339b83e77d93572ebddb7`  
 **Unit 23 unprepared correction:** `fd69bd03298d69669d09daafe8d364b0e576d033` (`Keep Unit 23 unprepared until completion over a period is admitted.`). That commit is an ancestor of the repository baseline. It is not the repository baseline main commit.  
-**Pack content-review digest:** `8893b01e44fe56d449575fb2ccaaadaf4b8100f76de510e9237387ce914ac28c`
-**Repository source digest:** `96e4e43534d76f3af58493dca1ce05cc4f2aedad5599bd2d88296581014476f5`
+**Pack content-review digest:** `f3d4a49f3572c862f561a55ba8a6e684a49331368021e16f7123bc47dc48a74d`
+**Repository source digest:** `a931453f35d0e2c74c02d10f00043e4a1d6a05babc04592b88312f8e54dbb541`
 **Public release:** **NOT_APPROVED**
 
 ## Purpose
@@ -60,7 +60,7 @@ Unacceptable shortcuts include keyword matches, mutable pages, dictionary-row gr
 | 11 | Past tense and reflexive verbs | CONTENT_COMPLETE_REVIEW_PENDING | NO | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 12 | Future, aspect introduction, dative case, additional spelling rules, and prepositional plural | CONTENT_COMPLETE_REVIEW_PENDING | NO | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 13 | Aspect in the past, tense use, infinitive aspect, and reported speech | CONTENT_COMPLETE_REVIEW_PENDING | NO | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
-| 14 | Aspect in the future and impersonal constructions | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
+| 14 | Aspect in the future and impersonal constructions | CONTENT_COMPLETE_REVIEW_PENDING | NO | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 15 | Requests, the imperative, and consolidation of aspect use | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 16 | Instrumental case: principal uses; singular and plural noun forms; adjective agreement; common instrumental-governing constructions; instrumental complements with identity, role, or becoming | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 17 | Time, weekdays, calendar dates, years, age expressions, and ordinal numbers | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
