@@ -248,6 +248,21 @@
         "qualifiedAcceptance": false,
         "remaining": "Units16\u201330,wider pools/recent scheduling and qualified assessment",
         "legacyRestoreOriginalCause": "UNCONFIRMED"
+      },
+      "unit15ImperativePrerequisiteRepair": {
+        "implementationCommit": "1e571336b9157b884beb2e6e5e79c3b95aa99480",
+        "testedCommit": "e5900163bb5b04aee3bd50b37e1406229b206b8c",
+        "counts": {
+          "tests": 32,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "completeSuite": false,
+        "unit16Activated": false,
+        "unit16OrdinaryMinimum": 10,
+        "manifest": "ia003-unit15-imperative-repair/FINAL_VERIFICATION_MANIFEST.json",
+        "qualifiedAcceptance": false
       }
     },
     {
