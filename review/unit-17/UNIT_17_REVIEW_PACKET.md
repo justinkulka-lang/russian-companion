@@ -11,12 +11,12 @@ Unit 17 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 4580f773097f0346e3a8000d8798de259a2e68a0
-- Unit content-review SHA-256: 16e8478be2cab8dad81faf971e4c13f088323b93612407a3b928ce85d31ea1c5
+- Curriculum source commit: 443c0331623ebe10b81c96f3a4d1204462a46644
+- Unit content-review SHA-256: 415d0ecc0e4e8ce649dff17aef09851beddc39f191f6bedf783af07904481c62
 - Mapping-package SHA-256: 724a3220ec28b620687871fbca1639cc8e64b58fed7fcfe8ba1a29bdf39d6328
-- Pack content-review SHA-256: b452ae4f997c307a2ea00566ca53d4cb9bd1e581627107f000fbcf357077688c
-- Review-package SHA-256: 6fe1333083ac2b7d9cd46a092533c0722f7e37688254159d3a4f611ba31d9953
-- Repository source SHA-256: cd2517b8f4b0f5c3b3d09e4674fba6f0d67defea57ed967ae22dea64448a3fb0
+- Pack content-review SHA-256: 0bbb988b2700850392c3d396668b94e0dc30f1bf87831e739454489e01afbf3e
+- Review-package SHA-256: 7aa99195f1357b0d38c3c047eaebca699ba1f33a277c2686b62f2c66d27717d6
+- Repository source SHA-256: 7f9b118edf1ff97c288b236463d0676939f058d7acc189bf672ae7c9183979c6
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -96,13 +96,13 @@ estimatedMinutes=162
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: be2ab1c0d3c5914987906005f43769060a289934b176874c132910c71c6c9bb3
+- Content hash: d3eb74afa858caa5448dc015f1393c3951c1f19d4d693ec0583410e7cc949561
 
 requireInstruction=true
 requireBookSelfAttestation=true
 requireAppChecks=true
 minimumDistinctChecks=8
-requireDueReview=false
+requireDueReview=true
 tutorOptional=true
 
 ### OBJECTIVE `obj-u17-ordinals`
