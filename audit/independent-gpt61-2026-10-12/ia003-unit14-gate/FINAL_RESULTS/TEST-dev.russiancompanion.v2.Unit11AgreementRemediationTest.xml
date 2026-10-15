@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit11AgreementRemediationTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-15T01:48:15.951Z" hostname="f5c5dd6b855f" time="77.048">
+  <properties/>
+  <testcase name="oldGuidePositionDoesNotResumeAsTheNewSecondTeachingCard" classname="dev.russiancompanion.v2.Unit11AgreementRemediationTest" time="34.752"/>
+  <testcase name="unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException" classname="dev.russiancompanion.v2.Unit11AgreementRemediationTest" time="0.812"/>
+  <testcase name="wrongIndependentAnswerShowsCompleteRepairAndGuidedSuccessStillNeedsANewCheckAnswer" classname="dev.russiancompanion.v2.Unit11AgreementRemediationTest" time="6.457"/>
+  <testcase name="oldPrescribedAttemptsStayStoredButCannotCreditChangedUnitInstruction" classname="dev.russiancompanion.v2.Unit11AgreementRemediationTest" time="0.951"/>
+  <testcase name="completeAgreementTeachingPrecedesPracticeAndRepairRestoresTheCheckedForms" classname="dev.russiancompanion.v2.Unit11AgreementRemediationTest" time="30.998"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[System.logW: A resource failed to call close. 
+]]></system-err>
+</testsuite>
