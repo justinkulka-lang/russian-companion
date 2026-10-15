@@ -11,12 +11,12 @@ Unit 22 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 4f5cb8024d3f68a37052fdf85b5755bffa2a0904
-- Unit content-review SHA-256: 279be738a2fa1f3e7dd5ae766124c9d438edef4bf19d597e622615eea719a184
+- Curriculum source commit: 177a10ba3f1626226c63d9e49b038ba1e5d45f09
+- Unit content-review SHA-256: 886c572c8d1adf2e0e508fe20e872afd81c49510db28bf46d2c16823c5f83f08
 - Mapping-package SHA-256: 135262f03abc4c4ef1dad6c992bbbf53993657e3ce3af4fe789fadcbebbff021
-- Pack content-review SHA-256: 3d1a191e3f876304daa096c398d93ee6526e4ed062ea4aa1b8d77dd7c4bde025
-- Review-package SHA-256: 0a1b840db83e41c7b41c322a2bbd23fda1adb1725624d8f3f31124cb7ba96bc7
-- Repository source SHA-256: 8388621f700c87fc827ad859f7c98aa809b448f23510eb4569ff62569715fff0
+- Pack content-review SHA-256: c7a5cc3ef5b13dd11f5ed7f8f579c98c841258e52e68d587e80d3fe625fdb0e9
+- Review-package SHA-256: e243333b2d94e21daf147b28286a10bf37a6c98a2723c7f2917e1f4cb58b3551
+- Repository source SHA-256: b80f637139f9418af970711813f2e95cfc72de1e4d034b18ec8f26f5315a50b0
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -96,13 +96,13 @@ estimatedMinutes=90
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3006c2480bbf289cb5965f909b277d61afadd43245705f2ad0ff32fc4978255a
+- Content hash: ce75d05af1d7468d41466150875b420e9cf0a05f3a18411bbfcb9f4236db16ac
 
 requireInstruction=true
 requireBookSelfAttestation=true
 requireAppChecks=true
 minimumDistinctChecks=4
-requireDueReview=false
+requireDueReview=true
 tutorOptional=true
 
 ### OBJECTIVE `obj-u22-noun-forms`

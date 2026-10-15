@@ -51,7 +51,7 @@ class Units2630SourceIntakeTest {
         // Unit 20 directionality implementation 1bc59ded intentionally supersedes historical bb408265fb5239daeb86d43c007061bff330e02a0a9afc1aa677526ccf57302b.
         20 to "6c11d3dd467846f5aabf034024f7d27d3ed9a5cc9eec4a8462cd8be3c54069eb",
         21 to "987a27a7a3de52fa7965c6b81b5ef3ab74221b62d96f52b98e5b093c8e39ae56",
-        22 to "279be738a2fa1f3e7dd5ae766124c9d438edef4bf19d597e622615eea719a184",
+        22 to "886c572c8d1adf2e0e508fe20e872afd81c49510db28bf46d2c16823c5f83f08",
         23 to "42a67675479cb835e6c429ffc76c0120c00ea389baed9e7e0cbc91f593b564e4",
         24 to "0aadf91b5482f1036b5f57888de2744d1339cd7316f5725973f98a0fde693d17",
         25 to "317881a1a5a77489ce03b939b567642725274c10c534e14be68007b199cde98d",
