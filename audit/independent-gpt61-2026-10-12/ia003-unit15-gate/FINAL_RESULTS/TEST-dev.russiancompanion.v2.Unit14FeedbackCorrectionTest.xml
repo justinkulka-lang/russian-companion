@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit14FeedbackCorrectionTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-15T10:50:28.692Z" hostname="f5c5dd6b855f" time="28.096">
+  <properties/>
+  <testcase name="historicalQuestionFeedbackCreditIsRetainedButStale" classname="dev.russiancompanion.v2.Unit14FeedbackCorrectionTest" time="2.093"/>
+  <testcase name="maleColdExampleDoesNotAnswerFemaleColdQuestion" classname="dev.russiancompanion.v2.Unit14FeedbackCorrectionTest" time="4.411"/>
+  <testcase name="durationFreeOptionDoesNotAnswerBoundedWorkQuestion" classname="dev.russiancompanion.v2.Unit14FeedbackCorrectionTest" time="6.075"/>
+  <testcase name="feedbackExplainsFutureLimitsAndImpersonalExperiencers" classname="dev.russiancompanion.v2.Unit14FeedbackCorrectionTest" time="15.494"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call close. 
+]]></system-err>
+</testsuite>

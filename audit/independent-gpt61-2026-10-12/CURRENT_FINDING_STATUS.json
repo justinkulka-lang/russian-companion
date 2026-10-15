@@ -218,6 +218,36 @@
         "unit15Activated": false,
         "manifest": "ia003-unit14-impersonal-repair/FINAL_VERIFICATION_MANIFEST.json",
         "qualifiedAcceptance": false
+      },
+      "unit15EngineeringCheckpoint": {
+        "implementationCommit": "8aa1051f188c979e09deb854729d56121551fd50",
+        "testedCommit": "9d99331818f06576e44cc9c5595b3582782e15f6",
+        "counts": {
+          "tests": 60,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "completeSuite": false,
+        "activeEngineeringUnits": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "manifest": "ia003-unit15-gate/FINAL_VERIFICATION_MANIFEST.json",
+        "qualifiedAcceptance": false,
+        "remaining": "Units16\u201330,wider pools/recent scheduling and qualified assessment",
+        "legacyRestoreOriginalCause": "UNCONFIRMED"
       }
     },
     {
