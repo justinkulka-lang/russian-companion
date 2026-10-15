@@ -11,12 +11,12 @@ Unit 20 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 1bc59ded74292cd8353fc27f8f89ba89bff80f6d
-- Unit content-review SHA-256: 9238893adafd8d2001561e254f2471a7f23067f1979827873b970ed467768688
+- Curriculum source commit: e5faf806e5b88e2e31833ce9429365eafeae49c7
+- Unit content-review SHA-256: 6c11d3dd467846f5aabf034024f7d27d3ed9a5cc9eec4a8462cd8be3c54069eb
 - Mapping-package SHA-256: f24f256481096bcc5f47bcb849f053bfda59fc67e670492c6b4e7a42b514a8c9
-- Pack content-review SHA-256: 697a4ff11559f17f4e36e7e4308518adb62c2b80312f150618f81a01c9dbcd6b
-- Review-package SHA-256: fae173597a6933a316332d75c63c589dd11f92f2e62bbe36d25bccc565f81032
-- Repository source SHA-256: b56bca3cd134adb8fbf7d14f512e566178c4d0b13e9722a38b3469681fbbdf80
+- Pack content-review SHA-256: 70ffdf98964f0fc5b7f18a5c1e3b99a68608b42a788b100f88d2c9e959ccdf7b
+- Review-package SHA-256: 2efd96774cca5bbd4aa4be7f6cbc04cf72c67c1c2a647c045fea8d354de86f81
+- Repository source SHA-256: 5a1ec4d141bc3d52de7f1364051f703753fbb592d3054433cb70a22ff91c4b92
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -96,13 +96,13 @@ estimatedMinutes=30
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c0c05bf721934809e119b5927f2de6b7d6cfcfe2841b25cb91c8330524635959
+- Content hash: 86432aec68875b3480c1d13df19522885f8551a8fb5c387079f49ed06c327338
 
 requireInstruction=true
 requireBookSelfAttestation=true
 requireAppChecks=true
 minimumDistinctChecks=2
-requireDueReview=false
+requireDueReview=true
 tutorOptional=true
 
 ### OBJECTIVE `obj-u20-motion`
