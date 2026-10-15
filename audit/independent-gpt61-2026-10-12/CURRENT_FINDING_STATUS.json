@@ -263,6 +263,37 @@
         "unit16OrdinaryMinimum": 10,
         "manifest": "ia003-unit15-imperative-repair/FINAL_VERIFICATION_MANIFEST.json",
         "qualifiedAcceptance": false
+      },
+      "unit16EngineeringCheckpoint": {
+        "implementationCommit": "9ee2fa6bf235e6f310f8b5005a26644e57cddafc",
+        "testedCommit": "aa1f46d339fd6d8c2338a1ce1d87eb1b207a2310",
+        "counts": {
+          "tests": 61,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "completeSuite": false,
+        "activeEngineeringUnits": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "manifest": "ia003-unit16-gate/FINAL_VERIFICATION_MANIFEST.json",
+        "qualifiedAcceptance": false,
+        "remaining": "Units17\u201330,wider pools/recent scheduling and qualified assessment",
+        "legacyRestoreOriginalCause": "UNCONFIRMED"
       }
     },
     {

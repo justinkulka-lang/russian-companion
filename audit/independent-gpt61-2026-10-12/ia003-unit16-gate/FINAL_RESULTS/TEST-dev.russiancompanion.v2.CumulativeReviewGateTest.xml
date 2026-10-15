@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.CumulativeReviewGateTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-15T13:05:45.147Z" hostname="f5c5dd6b855f" time="146.347">
+  <properties/>
+  <testcase name="asynchronousReviewWriteCannotCrossActualLearnerReplacementAndBackRemainsResponsive" classname="dev.russiancompanion.v2.CumulativeReviewGateTest" time="61.623"/>
+  <testcase name="migratedVersionTenRetainsGenuineOldLessonCreditWithoutFabricatingReviewCompletion" classname="dev.russiancompanion.v2.CumulativeReviewGateTest" time="14.208"/>
+  <testcase name="actualContinueReviewAndGateUiRequireBothChoicesAndShowTargetedFeedback" classname="dev.russiancompanion.v2.CumulativeReviewGateTest" time="10.208"/>
+  <testcase name="completeOrdinaryWorkCannotAdvanceUntilBothAssignedObjectivesAreReviewed" classname="dev.russiancompanion.v2.CumulativeReviewGateTest" time="37.586"/>
+  <testcase name="versionThreeBackupPreservesCompletionSnapshotAndRejectsForgedActivationLinks" classname="dev.russiancompanion.v2.CumulativeReviewGateTest" time="2.782"/>
+  <testcase name="optionalAndPrescribedReplaysCannotCompleteReviewOrBypassTransactionalAdvance" classname="dev.russiancompanion.v2.CumulativeReviewGateTest" time="3.904"/>
+  <testcase name="completedHistoryKeepsItsAcceptedAnswerSnapshotAndTransactionFailureRollsBack" classname="dev.russiancompanion.v2.CumulativeReviewGateTest" time="5.487"/>
+  <testcase name="placementOnlyUiOffersRealEarlierTeachingAndNoEmptyReviewCompletion" classname="dev.russiancompanion.v2.CumulativeReviewGateTest" time="5.698"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+]]></system-err>
+</testsuite>

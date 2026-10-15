@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit15FeedbackCorrectionTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-15T13:08:06.105Z" hostname="f5c5dd6b855f" time="41.944">
+  <properties/>
+  <testcase name="infinitiveDoesNotAnswerSingularImperativeQuestion" classname="dev.russiancompanion.v2.Unit15FeedbackCorrectionTest" time="13.092"/>
+  <testcase name="feedbackExplainsImperativeRowsAndSenseBoundAspectPartners" classname="dev.russiancompanion.v2.Unit15FeedbackCorrectionTest" time="23.754"/>
+  <testcase name="historicalQuestionFeedbackCreditIsRetainedButStale" classname="dev.russiancompanion.v2.Unit15FeedbackCorrectionTest" time="0.972"/>
+  <testcase name="differentMeaningDoesNotAnswerPerfectivePartnerQuestion" classname="dev.russiancompanion.v2.Unit15FeedbackCorrectionTest" time="4.097"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+]]></system-err>
+</testsuite>
