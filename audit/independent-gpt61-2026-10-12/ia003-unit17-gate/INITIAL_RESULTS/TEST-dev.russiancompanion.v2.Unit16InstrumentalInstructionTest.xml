@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit16InstrumentalInstructionTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-15T14:12:04.954Z" hostname="f5c5dd6b855f" time="41.494">
+  <properties/>
+  <testcase name="caseAndNumberAreExplainedBeforeGuidedChoices" classname="dev.russiancompanion.v2.Unit16InstrumentalInstructionTest" time="4.743"/>
+  <testcase name="remediationRetainsEveryExplanationAndCaseSpecificFeedback" classname="dev.russiancompanion.v2.Unit16InstrumentalInstructionTest" time="1.513"/>
+  <testcase name="newExplanationsHavePendingEvidenceAndNoAcceptance" classname="dev.russiancompanion.v2.Unit16InstrumentalInstructionTest" time="35.206"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
