@@ -11,12 +11,12 @@ Unit 15 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 8aa1051f188c979e09deb854729d56121551fd50
-- Unit content-review SHA-256: b431fa38b138ab9157084fd874cbfd627aafb83e49da1ce2e9af74711ae75d75
+- Curriculum source commit: 44c2d731dcd6cf5a6c8af973cad475e38fdb5572
+- Unit content-review SHA-256: 7d7bb82044afe2763640a16751462a4784bc95f5f03104e59edb6933e4978172
 - Mapping-package SHA-256: 7228dd28cc3954cb8810a77b81ad72f55fa4e51a64d669fd691cd61a120d710c
-- Pack content-review SHA-256: ea35db76727e05236f2a3044052208914b544dac2ec022886aa70a1a109256dc
-- Review-package SHA-256: 138654bf973fd12dff0d60b3e30053e3d903139a280b1a5d981c300afb53a13b
-- Repository source SHA-256: 40ea1d0bcf06001213275258c155679ad5928fe7086b5112c5a7580a6df11862
+- Pack content-review SHA-256: ec76c2ae5c7cfa647e1c39adccd81e3feb4c38314712f1cdb85987f836951732
+- Review-package SHA-256: 26c98ca349364c09486124ed0b4fbfe0aa6367ecb666e229e1659ffac9162d39
+- Repository source SHA-256: e689b67cabed41e803f2ce218855af23db8c5f183436ddda37f3b5008a054c72
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -113,12 +113,12 @@ tutorOptional=true
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: d0cde06fba41d1d12c86d13e52eec624a85165cbac9d3092e1318c1dac80188f
+- Content hash: 5540bbb5a1855cc15a746cd53ababb8213b1f334fb72d35895767218b175a797
 
 title=Choose the admitted request row
 kind=RECOGNITION
 unitNumber=15
-instruction=u15-st-orient,u15-st-teach-imperative-1,u15-st-teach-imperative-2,u15-st-teach-imperative-3
+instruction=u15-st-orient,u15-st-teach-imperative-1,u15-st-teach-imperative-contrast,u15-st-teach-imperative-2,u15-st-teach-imperative-3
 examples=ex-or-u15-imperative-0,ex-or-u15-imperative-1,ex-or-u15-imperative-2,ex-u15-imperative-3
 practice=u15-st-guided-imperative-1
 checks=u15-i-imperative-1,u15-i-imperative-2
@@ -226,12 +226,12 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: cce1bca2049de46db6d3388045bf035694102c7fc1bdfdd2970bc7a163ca434c
+- Content hash: ab135dfb2102921019743a14b90cff7d2eab4b851197927f412f020f9da03548
 
 title=Choose the admitted request row
 estimatedMinutes=12
 objectives=obj-u15-imperative
-steps=u15-st-teach-imperative-1,u15-st-guided-imperative-1,u15-st-teach-imperative-2,u15-st-teach-imperative-3,u15-st-rem-imperative,u15-st-check-imperative
+steps=u15-st-teach-imperative-1,u15-st-teach-imperative-contrast,u15-st-teach-imperative-2,u15-st-teach-imperative-3,u15-st-guided-imperative-1,u15-st-rem-imperative,u15-st-check-imperative
 
 ### STEP `u15-st-teach-imperative-1`
 
@@ -255,7 +255,7 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
-### STEP `u15-st-guided-imperative-1`
+### STEP `u15-st-teach-imperative-contrast`
 
 - Objectives: obj-u15-imperative
 - Sessions: u15-s-imperative
@@ -263,19 +263,23 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ced948c7696ce128183af42f94a57aa09789f7070e5fe1db181faff15ff3cb6f
+- Content hash: 56b7baaffe886af96ec6c00da313df337a4d7c68b6e538d609ce699e9be4d975
 
-kind=GUIDED
-title=Guided practice
-body=Choose the admitted record. The feedback states the frozen field.
+kind=TEACH
+title=Distinguish the supplied imperative and infinitive forms
+body=чита́йте is the plural imperative form of the reading verb shown here, used for multiple addressees or polite address to one person. It extends the shown singular form with the plural/polite ending. чита́ть is the infinitive, not the inflected plural imperative requested. This identifies the supplied form, not every possible way to express a command.
+
+чита́й is the singular imperative form of the reading verb, used for one informal addressee. чита́ть is the infinitive, not that inflected imperative form. The cue shows the plural/polite form, while this question asks for the singular imperative table row.
+
+чита́й is the singular imperative form for one informal addressee. чита́йте is the plural imperative form and can also address one person politely. Both are imperative forms of the shown infinitive; the requested singular table row selects the informal form, rather than identifying the actual number of listeners from spelling alone.
 dominantAction=Continue
-references=
-items=u15-g-imperative-0
-examples=
+references=ref-u1115-attribution
+items=
+examples=ex-or-u15-imperative-0,ex-or-u15-imperative-1,ex-or-u15-imperative-2
 unavailableReason=
 bookDirection=
 companionDirection=
-remediationStepId=u15-st-rem-imperative
+remediationStepId=
 
 ### STEP `u15-st-teach-imperative-2`
 
@@ -321,6 +325,28 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u15-st-guided-imperative-1`
+
+- Objectives: obj-u15-imperative
+- Sessions: u15-s-imperative
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: ced948c7696ce128183af42f94a57aa09789f7070e5fe1db181faff15ff3cb6f
+
+kind=GUIDED
+title=Guided practice
+body=Choose the admitted record. The feedback states the frozen field.
+dominantAction=Continue
+references=
+items=u15-g-imperative-0
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u15-st-rem-imperative
+
 ### STEP `u15-st-rem-imperative`
 
 - Objectives: obj-u15-imperative
@@ -329,15 +355,25 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 930c0736ddba03281bf817d0e5e5a279c4fbec99b80b9ac49c62f4db129a36c8
+- Content hash: d7dceb8d5b9a4a160fd8b86985eaa1c559f2f9a6ea34caea98b8d5156a783aca
 
 kind=REMEDIATE
 title=Remediation
-body=Купи, пожалуйста, свежие фрукты.
+body=чита́й — read. чита́йте — read. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+
+чита́йте is the plural imperative form of the reading verb shown here, used for multiple addressees or polite address to one person. It extends the shown singular form with the plural/polite ending. чита́ть is the infinitive, not the inflected plural imperative requested. This identifies the supplied form, not every possible way to express a command.
+
+чита́й is the singular imperative form of the reading verb, used for one informal addressee. чита́ть is the infinitive, not that inflected imperative form. The cue shows the plural/polite form, while this question asks for the singular imperative table row.
+
+чита́й is the singular imperative form for one informal addressee. чита́йте is the plural imperative form and can also address one person politely. Both are imperative forms of the shown infinitive; the requested singular table row selects the informal form, rather than identifying the actual number of listeners from spelling alone.
+
+Купи, пожалуйста, свежие фрукты.
+
+чита́ть — read. Купи, пожалуйста, свежие фрукты. — Please, buy fresh fruits. 
 dominantAction=Continue
 references=
 items=
-examples=ex-or-u15-imperative-0,ex-or-u15-imperative-1
+examples=ex-or-u15-imperative-0,ex-or-u15-imperative-1,ex-or-u15-imperative-2,ex-u15-imperative-3
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -4034,6 +4070,7 @@ permitsAppUse=true
 
 - `obj-u15-imperative` INSTRUCTION `u15-st-orient`
 - `obj-u15-imperative` INSTRUCTION `u15-st-teach-imperative-1`
+- `obj-u15-imperative` INSTRUCTION `u15-st-teach-imperative-contrast`
 - `obj-u15-imperative` INSTRUCTION `u15-st-teach-imperative-2`
 - `obj-u15-imperative` INSTRUCTION `u15-st-teach-imperative-3`
 - `obj-u15-imperative` EXAMPLE `ex-or-u15-imperative-0`
@@ -4082,14 +4119,20 @@ permitsAppUse=true
 - `u15-st-teach-imperative-1` EXAMPLE `ex-or-u15-imperative-0`
 - `u15-st-teach-imperative-1` EXAMPLE `ex-or-u15-imperative-1`
 - `u15-st-teach-imperative-1` REFERENCE `ref-u1115-attribution`
-- `u15-st-guided-imperative-1` REMEDIATION `u15-st-rem-imperative`
-- `u15-st-guided-imperative-1` ITEM `u15-g-imperative-0`
+- `u15-st-teach-imperative-contrast` EXAMPLE `ex-or-u15-imperative-0`
+- `u15-st-teach-imperative-contrast` EXAMPLE `ex-or-u15-imperative-1`
+- `u15-st-teach-imperative-contrast` EXAMPLE `ex-or-u15-imperative-2`
+- `u15-st-teach-imperative-contrast` REFERENCE `ref-u1115-attribution`
 - `u15-st-teach-imperative-2` REFERENCE `ref-u1115-attribution`
 - `u15-st-teach-imperative-3` EXAMPLE `ex-or-u15-imperative-2`
 - `u15-st-teach-imperative-3` EXAMPLE `ex-u15-imperative-3`
 - `u15-st-teach-imperative-3` REFERENCE `ref-u1115-attribution`
+- `u15-st-guided-imperative-1` REMEDIATION `u15-st-rem-imperative`
+- `u15-st-guided-imperative-1` ITEM `u15-g-imperative-0`
 - `u15-st-rem-imperative` EXAMPLE `ex-or-u15-imperative-0`
 - `u15-st-rem-imperative` EXAMPLE `ex-or-u15-imperative-1`
+- `u15-st-rem-imperative` EXAMPLE `ex-or-u15-imperative-2`
+- `u15-st-rem-imperative` EXAMPLE `ex-u15-imperative-3`
 - `u15-st-check-imperative` REMEDIATION `u15-st-rem-imperative`
 - `u15-st-check-imperative` ITEM `u15-i-imperative-1`
 - `u15-st-check-imperative` ITEM `u15-i-imperative-2`

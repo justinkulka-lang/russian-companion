@@ -945,7 +945,7 @@ class V2RebuildTest {
         assertEquals("5480d8e87a1651d1bc16ad6c5a0856724f7bad1b746a62bbfab2bb60f3cc3e0b", V2Validator.unitContentReviewDigest(pack, 3))
         assertEquals("1ebcde1ebabf867b08e137a96bf30f56cccbb0ea85cfd8ecb54cee463a79bf11", V2Validator.unitContentReviewDigest(pack, 4))
         assertEquals("3c9149de87feeda96f64e195f3dab0428700049f3a7342e4ba764191a16db141", V2Validator.unitContentReviewDigest(pack, 5))
-        assertEquals("ea35db76727e05236f2a3044052208914b544dac2ec022886aa70a1a109256dc", V2Validator.contentReviewDigest(pack))
+        assertEquals("ec76c2ae5c7cfa647e1c39adccd81e3feb4c38314712f1cdb85987f836951732", V2Validator.contentReviewDigest(pack))
         val seed = File(repo(), "app/src/main/assets/content/v2-curriculum.json").readText()
         assertFalse(seed.contains("The New Penguin Russian Course"))
         assertEquals(0, pack.admissions.penguinProseAssets)
