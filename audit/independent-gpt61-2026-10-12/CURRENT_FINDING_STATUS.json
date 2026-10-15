@@ -129,6 +129,52 @@
         "manifest": "ia003-unit12-gate/FINAL_VERIFICATION_MANIFEST.json",
         "qualifiedAcceptance": false,
         "remaining": "Units13\u201330,wider pools/recent scheduling and qualified assessment"
+      },
+      "unit13EngineeringCheckpoint": {
+        "implementationCommit": "4433aca0323c2e6ae9ee8c7c44a6b6db6eadf076",
+        "testedCommit": "bcb25cdc5d9fa957ee547bf83d3c18e35fab1a8c",
+        "integrationCounts": {
+          "tests": 67,
+          "failures": 1,
+          "errors": 0,
+          "skipped": 0
+        },
+        "correctedCounts": {
+          "tests": 18,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "passingEvidenceUnion": {
+          "uniqueMethods": 67,
+          "notFresh67RunAtCorrectedCommit": true,
+          "overlappingScopesNotSummed": true
+        },
+        "legacyRestoreFollowup": {
+          "originalFailure": "Expected REPLACED,got UNCHANGED",
+          "unchangedIsolatedPassed": true,
+          "fixtureIsolationAndObservableReplacementStrengthened": true,
+          "sharedJournalRootCauseProven": false,
+          "originalInteractionDisposition": "UNCONFIRMED;retain for independent audit",
+          "reconciliation": "LEGACY_FIXTURE_RECONCILIATION.md"
+        },
+        "completeSuite": false,
+        "activeEngineeringUnits": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "manifest": "ia003-unit13-gate/FINAL_VERIFICATION_MANIFEST.json",
+        "qualifiedAcceptance": false,
+        "remaining": "Units14\u201330,wider pools/recent scheduling and qualified assessment"
       }
     },
     {
