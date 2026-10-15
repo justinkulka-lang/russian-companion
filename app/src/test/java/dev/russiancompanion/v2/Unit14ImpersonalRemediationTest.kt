@@ -45,7 +45,7 @@ class Unit14ImpersonalRemediationTest {
         assertEquals(6, p.unit(14)!!.advancement!!.minimumDistinctChecks)
         assertEquals(old.items, p.items); assertEquals(old.examples, p.examples)
         assertEquals(old.provenanceRecords, p.provenanceRecords)
-        assertNull(cumulativeReviewPolicy(15))
+        assertNull(cumulativeReviewPolicy(16))
     }
     @Test fun oldGuidePositionDoesNotResumeAsTheNewSecondTeachingCard() {
         val p = pack(); val old = baseline()

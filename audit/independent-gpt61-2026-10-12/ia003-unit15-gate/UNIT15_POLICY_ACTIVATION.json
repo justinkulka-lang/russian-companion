@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "baselineCommit": "bcd78c32ccd6aa87d9b1fb53f4e79b2a4bf2572a",
+  "status": "BOUNDED_ENGINEERING_ONLY_IA003_OPEN",
+  "targetUnit": 15,
+  "policyId": "unit15-prior-reading-impersonal-state-v1",
+  "owners": [
+    1,
+    14
+  ],
+  "beforeAdvancement": {
+    "requireInstruction": true,
+    "requireBookSelfAttestation": true,
+    "requireAppChecks": true,
+    "minimumDistinctChecks": 6,
+    "requireDueReview": false,
+    "tutorOptional": true
+  },
+  "afterAdvancement": {
+    "requireInstruction": true,
+    "requireBookSelfAttestation": true,
+    "requireAppChecks": true,
+    "minimumDistinctChecks": 6,
+    "requireDueReview": true,
+    "tutorOptional": true,
+    "cumulativeReviewPolicyId": "unit15-prior-reading-impersonal-state-v1"
+  },
+  "ordinaryMinimumPreserved": 6,
+  "changedUnitFields": [
+    "advancement.requireDueReview",
+    "advancement.cumulativeReviewPolicyId"
+  ],
+  "earlierPolicySourceHashes": {
+    "3": "5375c7c0fde0d156a7e64a97f3b5669b0690c8e2f8ab576fe225e6c84963ae70",
+    "4": "d881b5cfbea335be6e5ab2e869c64cd54598883d1cc60dc2a3942ee4e9979355",
+    "5": "6befdcee801a9815fdada5fb043372b962d443913c6197a4153da566345800cd",
+    "6": "f6132e00d70828fbe6792c134958b5a47c68d905023547091670acecb2ea0179",
+    "7": "7294cbaeaeea5a82f83dc05ff0c6ce6cfccf9ca87e0ea85ea2c4e07f37111ac7",
+    "8": "b2f1498ca1f846e21a502ea05bd65602ab537bab32622574b6c77f983f080a00",
+    "9": "da0b455f6313adba561973aabb57323a09c17ab2a6eef2608159727a41f57283",
+    "10": "eb0f05f2d74549a0a2dfa6e2e3cef67364fa57eaeeb067d91c84e8cd29b516b4",
+    "11": "b5e1d23edd2cd90c16b149e89286dcb1eebbbbb21d65c4e6f141f8e45e234b1e",
+    "12": "d1f4568d3c58e3a7decffd40f3a52157b8d50560d1639d2caf6099733075d993",
+    "13": "c358dae543e43a9fe1d78ecdaba01ec87f64793635462379f926cab397694da5",
+    "14": "71a72229f1b3936154f561ed56294f08932b094c0357cd4ccf992043d1e27753"
+  },
+  "allOther29UnitsAndAllScoredNativeProvenanceRightsFieldsUnchanged": true,
+  "privateReferenceCopied": false,
+  "releaseAuthorized": false,
+  "newSourceMethods": 7,
+  "fixtureSetup": "Immutable current governed history generated once through actual teaching/check/due/advance operations,restored into fresh unique named stores;old/pre-policy packs prepared separately. No manufactured assignments or current credit."
+}
