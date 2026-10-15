@@ -1,0 +1,1202 @@
+{
+  "repository": "justinkulka-lang/russian-companion",
+  "branch": "cursor/content-audit-corrections-964f",
+  "draftPR": 64,
+  "apk": {
+    "assembled": false,
+    "signed": false,
+    "configuredApplicationId": "dev.russiancompanion",
+    "configuredVersionName": "2.0.0-dev",
+    "configuredVersionCode": 5,
+    "currentArtifactIdentity": "NOT_RECORDED",
+    "currentApkSha256": "NOT_RECORDED",
+    "currentApkSignature": "NOT_RECORDED",
+    "historicalArtifacts": "Preserved; not this candidate"
+  },
+  "excludedScreenshotExporters": [
+    {
+      "class": "VisualReviewCaptureTest",
+      "methods": 2
+    },
+    {
+      "class": "Units35ChunkCaptureTest",
+      "methods": 2
+    },
+    {
+      "class": "Units610ChunkCaptureTest",
+      "methods": 10
+    },
+    {
+      "class": "Units1115GapCaptureTest",
+      "methods": 2
+    }
+  ],
+  "exclusionReason": "Exporters overwrite tracked screenshot evidence and write /opt/cursor; external cloud-validation init excludes them from environment setup verification. Current selectors additionally limit scope.",
+  "environment": {
+    "configurationChanged": false,
+    "installScriptAndStartSkill": "Saved; nonempty contents confirmed by prior supported settings read retained under ia003-unit12-gate; configuration unchanged this turn",
+    "priorPublication": "USER_CONFIRMED",
+    "laterNetworkOnlyDraftPublication": "NOT_INDEPENDENTLY_ESTABLISHED",
+    "supportedPublicationControlHere": "UNAVAILABLE",
+    "settingsRead": {
+      "draftId": null,
+      "revision": null,
+      "baseVersionId": "13a458c1-0aec-4d7a-ab78-a70d382275e1~cecfgver_6acedb2102ec8196804d03e72c487901",
+      "installScriptSaved": true,
+      "startSkillSaved": true,
+      "publication": "USER_CONFIRMED; no supported publication or status tool available",
+      "configurationChanged": false
+    },
+    "publicationIndependentlyVerified": false,
+    "settingsReadEvidence": "../ia003-unit12-gate/ENVIRONMENT_SETTINGS_READ.json;previous supported read,configuration unchanged"
+  },
+  "privateReference": "No private PDF read/copied into GitHub/assets/logs/packets/environment snapshot. Obtain privately using continuity SHA256 in durable instructions; historical expected hash remains unknown.",
+  "acceptance": {
+    "IA003": "OPEN:Units3\u201314 bounded gates;Unit14 prerequisite repair,Unit15 not activated. Units15\u201330,wider pools/recent scheduling,qualified assessment pending.",
+    "independentComprehensiveAudit": "OUTSTANDING",
+    "physicalGalaxyS26UltraAirplaneModeAndReboot": "OUTSTANDING;LAST after final comprehensive audit",
+    "mergeFreezeSigningReleaseApproval": "NOT_AUTHORIZED_OR_PERFORMED"
+  },
+  "historicalCounts": {
+    "mainCommit": "ff539220645670fbf7a1abacaa6f71e828606b80",
+    "mainSourceAnnotations": 579,
+    "excludedMethods": 16,
+    "reportedTests": 563,
+    "passed": 562,
+    "skipped": 1,
+    "completeSuiteClaim": "NOT_PROVEN",
+    "pr64BaselineCommit": "420f41ff6c2a4417cd829fdee0179b6a3b797eff",
+    "pr64SourceAnnotations": 691,
+    "sourceDifference": 112,
+    "handoffExecution": "UNVERIFIED",
+    "currentDifference": "Current31 repair scope at b161ee65bb46561d21341142e1b542cca56612fe differs from prior69 gate scope and historical main562-pass/one-skip and baseline691 source annotations. No complete-suite claim;handoff execution unverified."
+  },
+  "legacyRestoreReliabilityFollowup": {
+    "originalFailure": "Expected REPLACED,got UNCHANGED",
+    "unchangedIsolatedPassed": true,
+    "fixtureIsolationAndObservableReplacementStrengthened": true,
+    "sharedJournalRootCauseProven": false,
+    "originalInteractionDisposition": "UNCONFIRMED;retain for independent audit",
+    "reconciliation": "LEGACY_FIXTURE_RECONCILIATION.md"
+  },
+  "schemaVersion": 1,
+  "status": "UNIT14_IMPERSONAL_PREREQUISITE_REPAIRED_UNIT15_NOT_ACTIVE",
+  "baselineCommit": "2546331775c783813bd2c4785a5e08e6dfe42ed0",
+  "implementationCommit": "e88130c42b21fc2440cb82792a3bc3841fe69563",
+  "testedCommit": "b161ee65bb46561d21341142e1b542cca56612fe",
+  "runStartedUtc": "2026-10-15T02:14:31.321411+00:00",
+  "allXmlSuiteTimestampsAfterRunStart": true,
+  "counts": {
+    "tests": 31,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "passed": 31,
+  "classes": [
+    {
+      "name": "dev.russiancompanion.release.ReleaseSourceDigestTest",
+      "timestamp": "2026-10-15T02:14:38.376Z",
+      "counts": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "committedCandidateRecordsTheCurrentSourceDigestAndIdentity",
+          "seconds": "46.667"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.release.ReleaseSourceDigestTest.xml",
+      "sha256": "e7835ffecedf84365e374e08336200749c4aa70997b434067def9218b7422457"
+    },
+    {
+      "name": "dev.russiancompanion.v2.BatchECapabilityResearchTest",
+      "timestamp": "2026-10-15T02:14:38.799Z",
+      "counts": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "digestsGovernanceAndLaterUnitsStayUnchanged",
+          "seconds": "111.366"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.BatchECapabilityResearchTest.xml",
+      "sha256": "02367c292ed8e3b71ab84f79bbc9c5c66130d2bd60b2b78c5841e45c0b34ece9"
+    },
+    {
+      "name": "dev.russiancompanion.v2.Unit14CumulativeReviewTest",
+      "timestamp": "2026-10-15T02:16:30.718Z",
+      "counts": {
+        "tests": 7,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "heldUnit14WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching",
+          "seconds": "90.273"
+        },
+        {
+          "name": "oldFormatOneAndTwoKeepRawUnit14HistoryWithoutInventingCreditOrRepairingUnit11",
+          "seconds": "37.295"
+        },
+        {
+          "name": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+          "seconds": "22.655"
+        },
+        {
+          "name": "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+          "seconds": "343.836"
+        },
+        {
+          "name": "actualUnit14ContinueReportedTimeCueTeachingPracticeReturnAndAdvanceStayOnUnit14",
+          "seconds": "30.601"
+        },
+        {
+          "name": "schema11RowsRemainStoredButChangedImpersonalInstructionRequiresRepair",
+          "seconds": "58.134"
+        },
+        {
+          "name": "placementWithTaughtUnit1ButUntaughtUnit13RepairsTheMissingOwnerInsteadOfUnit1",
+          "seconds": "1.105"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.Unit14CumulativeReviewTest.xml",
+      "sha256": "fc90bd875acda8397c586e92837d603d6c3cee779d70dda0ef5f3e2bacc299d0"
+    },
+    {
+      "name": "dev.russiancompanion.v2.Unit14FeedbackCorrectionTest",
+      "timestamp": "2026-10-15T02:14:39.503Z",
+      "counts": {
+        "tests": 4,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "historicalQuestionFeedbackCreditIsRetainedButStale",
+          "seconds": "19.667"
+        },
+        {
+          "name": "maleColdExampleDoesNotAnswerFemaleColdQuestion",
+          "seconds": "15.191"
+        },
+        {
+          "name": "durationFreeOptionDoesNotAnswerBoundedWorkQuestion",
+          "seconds": "6.744"
+        },
+        {
+          "name": "feedbackExplainsFutureLimitsAndImpersonalExperiencers",
+          "seconds": "26.763"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.Unit14FeedbackCorrectionTest.xml",
+      "sha256": "6669a20e490b04034ff165ad17ab16871b93012eb2bd280b964575a1f9b6b115"
+    },
+    {
+      "name": "dev.russiancompanion.v2.Unit14ImpersonalRemediationTest",
+      "timestamp": "2026-10-15T02:15:25.601Z",
+      "counts": {
+        "tests": 5,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "allThreeStateCardsPrecedePracticeAndRepairRestoresEveryExample",
+          "seconds": "48.679"
+        },
+        {
+          "name": "oldGuidePositionDoesNotResumeAsTheNewSecondTeachingCard",
+          "seconds": "0.514"
+        },
+        {
+          "name": "unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException",
+          "seconds": "0.489"
+        },
+        {
+          "name": "wrongIndependentAnswerShowsCompleteRepairAndGuidedSuccessStillNeedsANewCheckAnswer",
+          "seconds": "10.82"
+        },
+        {
+          "name": "oldPrescribedAttemptsStayStoredButCannotCreditChangedUnitInstruction",
+          "seconds": "0.779"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.Unit14ImpersonalRemediationTest.xml",
+      "sha256": "fffb968a5230b3af1fc3fc9df416356f24d3d7f7de85b1e74f0ce5f5807e4746"
+    },
+    {
+      "name": "dev.russiancompanion.v2.Unit4NominativeRoleTest",
+      "timestamp": "2026-10-15T02:26:16.541Z",
+      "counts": {
+        "tests": 7,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "oldTranslationCompletionHistoryIsPreservedButStaleForTheNewConstruct",
+          "seconds": "0.753"
+        },
+        {
+          "name": "twoDistinctIndependentSubjectsAndFullTeachingAreRequired",
+          "seconds": "5.324"
+        },
+        {
+          "name": "correctGlossesStayOptionalAndCannotReplaceCaseRoleChecks",
+          "seconds": "0.782"
+        },
+        {
+          "name": "legacyGlossRestorationAndCoherentNativeForgeryCannotBypassTheRoleGuard",
+          "seconds": "12.981"
+        },
+        {
+          "name": "coordinatedRoleKeyAndCanonicalTupleHashReversalIsRejected",
+          "seconds": "16.321"
+        },
+        {
+          "name": "allPriorExamplesRecordsCapabilitiesAndOtherUnitsRemainWhole",
+          "seconds": "0.918"
+        },
+        {
+          "name": "wrongCaseRoleShowsTargetedFeedbackAndReturnsToEveryExample",
+          "seconds": "2.176"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.Unit4NominativeRoleTest.xml",
+      "sha256": "978c2b7dce918dbe54939b8b4d1a11ee4ad209db53f6f9af9430e754e029f35e"
+    },
+    {
+      "name": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+      "timestamp": "2026-10-15T02:26:55.920Z",
+      "counts": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "generatedRussianPenguinAudioAndReleaseStayClosed",
+          "seconds": "19.896"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.Units2630SourceIntakeTest.xml",
+      "sha256": "368ee0889fa5c5cb8bf8aee8a2caf8a8cd6bdef66c77688996933433f43a00ed"
+    },
+    {
+      "name": "dev.russiancompanion.v2.V2RebuildTest",
+      "timestamp": "2026-10-15T02:15:52.832Z",
+      "counts": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "structuralMappingSafeguardsRejectIncompleteOrInventedRecords",
+          "seconds": "43.308"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.V2RebuildTest.xml",
+      "sha256": "c25ee0b6b6f65201e03fa9f9925d188c78daac5ec0b8f5fa7a97a7b5c4e6494d"
+    },
+    {
+      "name": "dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest",
+      "timestamp": "2026-10-15T02:16:31.096Z",
+      "counts": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "committedReportsMatchTheGeneratorAndStayByteIdentical",
+          "seconds": "53.05"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest.xml",
+      "sha256": "fe5248ed8d9cc54f4d28ccdd7136ffde94ee4ae91fef2fb1f40d0f79363a1f83"
+    },
+    {
+      "name": "dev.russiancompanion.v2.audit.GapClosureDossierTest",
+      "timestamp": "2026-10-15T02:14:37.675Z",
+      "counts": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease",
+          "seconds": "78.914"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.audit.GapClosureDossierTest.xml",
+      "sha256": "2d953fcd54c57cdd71bc172205817c7df2dc1bcb97a8159ad3637cea04cf010c"
+    },
+    {
+      "name": "dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest",
+      "timestamp": "2026-10-15T02:27:15.851Z",
+      "counts": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "preparationManifestBindsFactsAndDoesNotPassAFinalAudit",
+          "seconds": "3.571"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest.xml",
+      "sha256": "da6ed614d0f2550f42f4df8d46224e382d001608346af89a0dd493dfc2b7fb49"
+    },
+    {
+      "name": "dev.russiancompanion.v2.review.UnitReviewPipelineTest",
+      "timestamp": "2026-10-15T02:16:36.271Z",
+      "counts": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "committedUnitPackagesMatchTheGenerator",
+          "seconds": "132.144"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.review.UnitReviewPipelineTest.xml",
+      "sha256": "fccccbd951b9cfda5949d62f5c78d95594ee620e492d42d79ed27f354ab66333"
+    }
+  ],
+  "selectors": [
+    "*Unit14ImpersonalRemediationTest",
+    "*Unit14CumulativeReviewTest",
+    "*Unit4NominativeRoleTest",
+    "*Unit14FeedbackCorrectionTest",
+    "*UnitReviewPipelineTest.committedUnitPackagesMatchTheGenerator",
+    "*CurriculumReadinessReconciliationTest.committedReportsMatchTheGeneratorAndStayByteIdentical",
+    "*OwnerGovernanceDecisionTest.preparationManifestBindsFactsAndDoesNotPassAFinalAudit",
+    "*GapClosureDossierTest.dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease",
+    "*ReleaseSourceDigestTest.committedCandidateRecordsTheCurrentSourceDigestAndIdentity",
+    "*Units2630SourceIntakeTest.generatedRussianPenguinAudioAndReleaseStayClosed",
+    "*V2RebuildTest.structuralMappingSafeguardsRejectIncompleteOrInventedRecords",
+    "*BatchECapabilityResearchTest.digestsGovernanceAndLaterUnitsStayUnchanged"
+  ],
+  "allSelectorsExecuted": true,
+  "command": "bash audit/independent-gpt61-2026-10-12/ia003-unit14-impersonal-repair/verify.sh",
+  "expandedScript": "#!/usr/bin/env bash\nset -euo pipefail\ncd /workspace/russian-companion\nsource /workspace/setup/android-env.sh\nchecks=(\n --tests '*Unit14ImpersonalRemediationTest'\n --tests '*Unit14CumulativeReviewTest'\n --tests '*Unit4NominativeRoleTest'\n --tests '*Unit14FeedbackCorrectionTest'\n --tests '*UnitReviewPipelineTest.committedUnitPackagesMatchTheGenerator'\n --tests '*CurriculumReadinessReconciliationTest.committedReportsMatchTheGeneratorAndStayByteIdentical'\n --tests '*OwnerGovernanceDecisionTest.preparationManifestBindsFactsAndDoesNotPassAFinalAudit'\n --tests '*GapClosureDossierTest.dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease'\n --tests '*ReleaseSourceDigestTest.committedCandidateRecordsTheCurrentSourceDigestAndIdentity'\n --tests '*Units2630SourceIntakeTest.generatedRussianPenguinAudioAndReleaseStayClosed'\n --tests '*V2RebuildTest.structuralMappingSafeguardsRejectIncompleteOrInventedRecords'\n --tests '*BatchECapabilityResearchTest.digestsGovernanceAndLaterUnitsStayUnchanged'\n)\n./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest \"${checks[@]}\" compileDebugSources lintDebug verifyReleaseGateAttachment --max-workers=4 --console=plain\n",
+  "scriptSha256": "a233fe505c7103b70972b89a55584dd480bc3feb220b31c71f1a4d2356a44cba",
+  "runnerExitCode": 0,
+  "scope": "31 focused methods/12 classes/12 selectors:five new repair,seven Unit14 gate/history/UI,seven whole-unit preservation,four existing Unit14 feedback,eight canonical source/readiness/binding/release. NOT complete suite or human/device/qualified acceptance.",
+  "scopeLimitations": "Host simulations;prior kernel/storage/earlier gate/owner suites retain historical receipts,not rerun/claimed passed here. Only Unit14 session changed;policies/main Kotlin/schemas unchanged. Earlier suite-only restore cause remains unconfirmed.",
+  "overlappingScopesSummed": false,
+  "lint": {
+    "fatal": 0,
+    "errors": 0,
+    "warnings": 20,
+    "hints": 1,
+    "xml": "FINAL_LINT.xml",
+    "result": "PASS",
+    "taskExecution": [
+      "> Task :app:generateDebugAndroidTestLintModel UP-TO-DATE",
+      "> Task :app:generateDebugLintReportModel",
+      "> Task :app:generateDebugUnitTestLintModel",
+      "> Task :app:lintAnalyzeDebugAndroidTest UP-TO-DATE",
+      "> Task :app:lintAnalyzeDebug",
+      "> Task :app:lintAnalyzeDebugUnitTest",
+      "> Task :app:lintReportDebug",
+      "> Task :app:lintDebug"
+    ]
+  },
+  "releaseGateAttachment": {
+    "task": "verifyReleaseGateAttachment",
+    "executed": true,
+    "result": "PASS",
+    "releaseAuthorization": false
+  },
+  "gradleTasks": [
+    "> Task :app:preBuild UP-TO-DATE",
+    "> Task :app:preDebugBuild UP-TO-DATE",
+    "> Task :app:generateDebugBuildConfig UP-TO-DATE",
+    "> Task :app:generateDebugResources UP-TO-DATE",
+    "> Task :app:packageDebugResources UP-TO-DATE",
+    "> Task :app:processDebugNavigationResources UP-TO-DATE",
+    "> Task :app:parseDebugLocalResources UP-TO-DATE",
+    "> Task :app:generateDebugRFile UP-TO-DATE",
+    "> Task :app:kspDebugKotlin UP-TO-DATE",
+    "> Task :app:compileDebugKotlin UP-TO-DATE",
+    "> Task :app:javaPreCompileDebug UP-TO-DATE",
+    "> Task :app:compileDebugJavaWithJavac UP-TO-DATE",
+    "> Task :app:checkDebugAarMetadata UP-TO-DATE",
+    "> Task :app:mapDebugSourceSetPaths UP-TO-DATE",
+    "> Task :app:compileDebugNavigationResources UP-TO-DATE",
+    "> Task :app:mergeDebugResources UP-TO-DATE",
+    "> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE",
+    "> Task :app:extractDeepLinksDebug UP-TO-DATE",
+    "> Task :app:processDebugMainManifest UP-TO-DATE",
+    "> Task :app:processDebugManifest UP-TO-DATE",
+    "> Task :app:processDebugManifestForPackage UP-TO-DATE",
+    "> Task :app:processDebugResources UP-TO-DATE",
+    "> Task :app:bundleDebugClassesToRuntimeJar UP-TO-DATE",
+    "> Task :app:bundleDebugClassesToCompileJar UP-TO-DATE",
+    "> Task :app:kspDebugUnitTestKotlin UP-TO-DATE",
+    "> Task :app:preDebugUnitTestBuild UP-TO-DATE",
+    "> Task :app:compileDebugUnitTestKotlin UP-TO-DATE",
+    "> Task :app:javaPreCompileDebugUnitTest UP-TO-DATE",
+    "> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE",
+    "> Task :app:generateDebugAssets UP-TO-DATE",
+    "> Task :app:mergeDebugAssets UP-TO-DATE",
+    "> Task :app:packageDebugUnitTestForUnitTest UP-TO-DATE",
+    "> Task :app:mergeDebugUnitTestManifest UP-TO-DATE",
+    "> Task :app:processDebugUnitTestManifest UP-TO-DATE",
+    "> Task :app:generateDebugUnitTestConfig UP-TO-DATE",
+    "> Task :app:processDebugJavaRes UP-TO-DATE",
+    "> Task :app:processDebugUnitTestJavaRes UP-TO-DATE",
+    "> Task :app:testDebugUnitTest",
+    "> Task :app:compileDebugSources UP-TO-DATE",
+    "> Task :app:preDebugAndroidTestBuild SKIPPED",
+    "> Task :app:generateDebugAndroidTestLintModel UP-TO-DATE",
+    "> Task :app:extractProguardFiles UP-TO-DATE",
+    "> Task :app:generateDebugLintReportModel",
+    "> Task :app:generateDebugUnitTestLintModel",
+    "> Task :app:lintAnalyzeDebugAndroidTest UP-TO-DATE",
+    "> Task :app:verifyReleaseGateAttachment",
+    "> Task :app:lintAnalyzeDebug",
+    "> Task :app:lintAnalyzeDebugUnitTest",
+    "> Task :app:lintReportDebug",
+    "> Task :app:lintDebug"
+  ],
+  "preservation": {
+    "baselineCommit": "2546331775c783813bd2c4785a5e08e6dfe42ed0",
+    "status": "ENGINEERING_REPAIR_PENDING_QUALIFIED_AUDIT",
+    "unitNumber": 14,
+    "sessionId": "u14-s-impersonal",
+    "beforeSession": {
+      "id": "u14-s-impersonal",
+      "title": "Choose the admitted impersonal line",
+      "estimatedMinutes": 12,
+      "objectiveIds": [
+        "obj-u14-impersonal"
+      ],
+      "steps": [
+        {
+          "id": "u14-st-teach-impersonal-1",
+          "kind": "TEACH",
+          "title": "Admitted lines",
+          "body": "\u0415\u043c\u0443 \u0431\u044b\u043b\u043e \u0445\u043e\u043b\u043e\u0434\u043d\u043e \u2014 He was cold. \u0418\u043c \u0431\u044b\u043b\u043e \u0441\u043a\u0443\u0447\u043d\u043e \u2014 They were bored. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+          "referenceIds": [
+            "ref-u1115-attribution"
+          ],
+          "exampleIds": [
+            "ex-u14-impersonal-0",
+            "ex-u14-impersonal-1"
+          ]
+        },
+        {
+          "id": "u14-st-guided-impersonal-1",
+          "kind": "GUIDED",
+          "title": "Guided practice",
+          "body": "Choose the admitted record. The feedback states the frozen field.",
+          "itemIds": [
+            "u14-g-impersonal-0"
+          ],
+          "remediationStepId": "u14-st-rem-impersonal"
+        },
+        {
+          "id": "u14-st-teach-impersonal-2",
+          "kind": "TEACH",
+          "title": "Admitted instruction",
+          "body": "To refer to these states in the past tense, always use '''\u0431\u044b\u043b\u043e'''",
+          "referenceIds": [
+            "ref-u1115-attribution"
+          ]
+        },
+        {
+          "id": "u14-st-teach-impersonal-3",
+          "kind": "TEACH",
+          "title": "Admitted lines",
+          "body": "\u0435\u0439 \u0431\u044b\u043b\u043e \u0445\u043e\u043b\u043e\u0434\u043d\u043e \u2014 she was cold. \u0431\u044b\u0301\u043b\u043e \u2014 be. ",
+          "referenceIds": [
+            "ref-u1115-attribution"
+          ],
+          "exampleIds": [
+            "ex-u14-impersonal-2",
+            "ex-or-u14-impersonal-3"
+          ]
+        },
+        {
+          "id": "u14-st-rem-impersonal",
+          "kind": "REMEDIATE",
+          "title": "Remediation",
+          "body": "To refer to these states in the past tense, always use '''\u0431\u044b\u043b\u043e'''",
+          "exampleIds": [
+            "ex-u14-impersonal-0",
+            "ex-u14-impersonal-1"
+          ]
+        },
+        {
+          "id": "u14-st-check-impersonal",
+          "kind": "CHECK",
+          "title": "Independent checks",
+          "body": "These checks use only admitted records. A miss returns to the explanation.",
+          "itemIds": [
+            "u14-i-impersonal-1",
+            "u14-i-impersonal-2"
+          ],
+          "remediationStepId": "u14-st-rem-impersonal"
+        }
+      ]
+    },
+    "afterSession": {
+      "id": "u14-s-impersonal",
+      "title": "Choose the admitted impersonal line",
+      "estimatedMinutes": 12,
+      "objectiveIds": [
+        "obj-u14-impersonal"
+      ],
+      "steps": [
+        {
+          "id": "u14-st-teach-impersonal-1",
+          "kind": "TEACH",
+          "title": "Admitted lines",
+          "body": "\u0415\u043c\u0443 \u0431\u044b\u043b\u043e \u0445\u043e\u043b\u043e\u0434\u043d\u043e \u2014 He was cold. \u0418\u043c \u0431\u044b\u043b\u043e \u0441\u043a\u0443\u0447\u043d\u043e \u2014 They were bored. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+          "referenceIds": [
+            "ref-u1115-attribution"
+          ],
+          "exampleIds": [
+            "ex-u14-impersonal-0",
+            "ex-u14-impersonal-1"
+          ]
+        },
+        {
+          "id": "u14-st-teach-impersonal-2",
+          "kind": "TEACH",
+          "title": "Admitted instruction",
+          "body": "To refer to these states in the past tense, always use '''\u0431\u044b\u043b\u043e'''",
+          "referenceIds": [
+            "ref-u1115-attribution"
+          ]
+        },
+        {
+          "id": "u14-st-teach-impersonal-3",
+          "kind": "TEACH",
+          "title": "Admitted lines",
+          "body": "\u0435\u0439 \u0431\u044b\u043b\u043e \u0445\u043e\u043b\u043e\u0434\u043d\u043e \u2014 she was cold. \u0431\u044b\u0301\u043b\u043e \u2014 be. ",
+          "referenceIds": [
+            "ref-u1115-attribution"
+          ],
+          "exampleIds": [
+            "ex-u14-impersonal-2",
+            "ex-or-u14-impersonal-3"
+          ]
+        },
+        {
+          "id": "u14-st-guided-impersonal-1",
+          "kind": "GUIDED",
+          "title": "Guided practice",
+          "body": "Choose the admitted record. The feedback states the frozen field.",
+          "itemIds": [
+            "u14-g-impersonal-0"
+          ],
+          "remediationStepId": "u14-st-rem-impersonal"
+        },
+        {
+          "id": "u14-st-rem-impersonal",
+          "kind": "REMEDIATE",
+          "title": "Remediation",
+          "body": "\u0415\u043c\u0443 \u0431\u044b\u043b\u043e \u0445\u043e\u043b\u043e\u0434\u043d\u043e \u2014 He was cold. \u0418\u043c \u0431\u044b\u043b\u043e \u0441\u043a\u0443\u0447\u043d\u043e \u2014 They were bored. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.\n\nTo refer to these states in the past tense, always use '''\u0431\u044b\u043b\u043e'''\n\n\u0435\u0439 \u0431\u044b\u043b\u043e \u0445\u043e\u043b\u043e\u0434\u043d\u043e \u2014 she was cold. \u0431\u044b\u0301\u043b\u043e \u2014 be. ",
+          "exampleIds": [
+            "ex-u14-impersonal-0",
+            "ex-u14-impersonal-1",
+            "ex-u14-impersonal-2",
+            "ex-or-u14-impersonal-3"
+          ]
+        },
+        {
+          "id": "u14-st-check-impersonal",
+          "kind": "CHECK",
+          "title": "Independent checks",
+          "body": "These checks use only admitted records. A miss returns to the explanation.",
+          "itemIds": [
+            "u14-i-impersonal-1",
+            "u14-i-impersonal-2"
+          ],
+          "remediationStepId": "u14-st-rem-impersonal"
+        }
+      ]
+    },
+    "changedFields": [
+      "unit14.impersonal.steps.order",
+      "u14-st-rem-impersonal.body",
+      "u14-st-rem-impersonal.exampleIds"
+    ],
+    "allOtherAssetValues": "JSON_VALUE_IDENTICAL",
+    "allProvenanceRecords": "JSON_VALUE_IDENTICAL",
+    "provenanceRecordCount": 6914,
+    "newProvenanceRecords": 0,
+    "provenanceTreatment": "Arrangement of previously shipped constituent text/examples only. Existing source records and original English disclaimer remain distinct under unchanged licenses;no composite is misclassified as newly authored English.",
+    "advancementUnchanged": {
+      "requireInstruction": true,
+      "requireBookSelfAttestation": true,
+      "requireAppChecks": true,
+      "minimumDistinctChecks": 6,
+      "requireDueReview": true,
+      "tutorOptional": true,
+      "cumulativeReviewPolicyId": "unit14-prior-reading-reported-time-v1"
+    },
+    "unit15Policy": "NOT_ACTIVATED",
+    "orphanExamplesUnchanged": true,
+    "implementationCommit": "e88130c42b21fc2440cb82792a3bc3841fe69563",
+    "newPackDigest": "43a64be8a630c84aaa922388a192fd218de8fc3ddf8a666420015851b2d9cda6",
+    "newRepositorySourceDigest": "61dbba6063882f213a327c71be4f568f792279f2176810d660efb17c8c6d27f3",
+    "unitReviewBindings": [
+      {
+        "unitNumber": 1,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+        "mappingPackageDigest": "b85c056f7c940f045fcb9270edcfda31371ae36f7277c75b673158fcc52872d0"
+      },
+      {
+        "unitNumber": 2,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "4fd67bff0431a11416115de023e076c52b7879304fc4a98b508d871170703e9c",
+        "mappingPackageDigest": "def2280a90229cec52750f12cb7dc2f7564df8508c113a69cf6ed585cee1c0c6"
+      },
+      {
+        "unitNumber": 3,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "5480d8e87a1651d1bc16ad6c5a0856724f7bad1b746a62bbfab2bb60f3cc3e0b",
+        "mappingPackageDigest": "e40e0ce030f9221b6e2fceba66fe946d85ad172703c47bd34d795e77e43120b4"
+      },
+      {
+        "unitNumber": 4,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "1ebcde1ebabf867b08e137a96bf30f56cccbb0ea85cfd8ecb54cee463a79bf11",
+        "mappingPackageDigest": "889c15ed7bf5d3189af391210f35bae5c57a9fd9c9dc3b3a439e8ebc1143b6fd"
+      },
+      {
+        "unitNumber": 5,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "3c9149de87feeda96f64e195f3dab0428700049f3a7342e4ba764191a16db141",
+        "mappingPackageDigest": "2a08c3d25c46aa6820a3798cafb90e415a873dbaa13bb003c42f330d15fe40ec"
+      },
+      {
+        "unitNumber": 6,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "936f868f09c20b9cf58d7b4e06b3920c37d9acae153836522e4e5b9ef2cafa70",
+        "mappingPackageDigest": "f95e0c2f351ec7cba23cdb09b87274bb97f2e392dd783ad59c2978ed58f63b15"
+      },
+      {
+        "unitNumber": 7,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "3999906034a7cc8baca24f2aa063320bf6927663f5f62e19e8957167206f520a",
+        "mappingPackageDigest": "e39515585eea5b131797f0c93ce3508ee99b27206cc21070675d06aa975373c0"
+      },
+      {
+        "unitNumber": 8,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "96b3a661d0ad5edd55ed44e2890a88250081275a7881713c9daf37ed94d7f42a",
+        "mappingPackageDigest": "3e6c6b7d1ed5142212fe254e14d7d6ebb9ecdf862b9dce921a415ba8e45411f1"
+      },
+      {
+        "unitNumber": 9,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "db6599afa744df79762a78f3d56dc0190ec2ca886343a020afbc6c3816de7696",
+        "mappingPackageDigest": "44199859a34f129c83c22e0e058e305784913077a569025b871abdd1a6a707bf"
+      },
+      {
+        "unitNumber": 10,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "3ae5a3b41bc970ef43589ace5929e65818fa620c8660f0bd1c4de5275667cf84",
+        "mappingPackageDigest": "57676882eb615fb046a9a5e2429f1d97bf6fcf54010d7ae287cdfc456bcfca52"
+      },
+      {
+        "unitNumber": 11,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "35de2337c00321867e4c30871b048181738017a79babc4f0135ad4131e1b6c69",
+        "mappingPackageDigest": "61b1d9c77882225528ca0d0f68a44efa13c68605efdaed0e6abb8e1b519db587"
+      },
+      {
+        "unitNumber": 12,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97",
+        "mappingPackageDigest": "0747489371acaab80787db42f08f6d4f5479e6186a2c9415052df484324e37d3"
+      },
+      {
+        "unitNumber": 13,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "7385fdd118b5f5cb988ad00832614fa4f15835e26dbbb30cfbbf9379f2340d54",
+        "mappingPackageDigest": "e8ca3b0ba9b6a48acc54ea18e10a6e6fb1291698252fcbc35b02dbf2a820deb4"
+      },
+      {
+        "unitNumber": 14,
+        "changedFields": [
+          "contentReviewDigest",
+          "curriculumSourceCommit",
+          "edges",
+          "packContentReviewDigest",
+          "records",
+          "repositorySourceDigest",
+          "reviewPackageDigest"
+        ],
+        "contentReviewDigest": "9e136e9af2fe3611d6862fa46e3217f85ad45c8b23ad622eec6f36e48ab97f38",
+        "mappingPackageDigest": "d59ce00b8c97b8610770ad1409daa9584e520ddab3c53a0b539e46b4a0162367"
+      },
+      {
+        "unitNumber": 15,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "6a2f591fdf4386dfcf371fdb13d4f754ac416dcc85f6918ca9ea63596e46971b",
+        "mappingPackageDigest": "7228dd28cc3954cb8810a77b81ad72f55fa4e51a64d669fd691cd61a120d710c"
+      },
+      {
+        "unitNumber": 16,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "bba607c6ebf3b11a2275a97319d9c4cf8c80978ea6ad71e0da73f46c23d6069b",
+        "mappingPackageDigest": "f74c6fa2206f8faad47ad15e91b8dce61f886293f64d9a3f2e47947b2d5db8e7"
+      },
+      {
+        "unitNumber": 17,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "16e8478be2cab8dad81faf971e4c13f088323b93612407a3b928ce85d31ea1c5",
+        "mappingPackageDigest": "724a3220ec28b620687871fbca1639cc8e64b58fed7fcfe8ba1a29bdf39d6328"
+      },
+      {
+        "unitNumber": 18,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "5041c377116988ac5906d4147af957b744742e28b9a3e44dd9489527648d62e3",
+        "mappingPackageDigest": "f195680e986e1c1069418022707886a4b11b4fe9cf8410e9e8b78e71525008bb"
+      },
+      {
+        "unitNumber": 19,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "5bec5c89d70f5928b6d7e03ab4ca35ad1b226451abe832e915b0f6f72f0e7907",
+        "mappingPackageDigest": "56534b156e7412d1bd8e51bf493e8d80f4b58461446382483a8ed118681dd6b2"
+      },
+      {
+        "unitNumber": 20,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "9238893adafd8d2001561e254f2471a7f23067f1979827873b970ed467768688",
+        "mappingPackageDigest": "f24f256481096bcc5f47bcb849f053bfda59fc67e670492c6b4e7a42b514a8c9"
+      },
+      {
+        "unitNumber": 21,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "a79e2d859adfc1b99d562db212fae357042975353a3a3fbc9c33ab4876b165e7",
+        "mappingPackageDigest": "a81fd110700d8cef3f88b5c34642feb7792e0bc851b2e13f08acba87969eab0e"
+      },
+      {
+        "unitNumber": 22,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "279be738a2fa1f3e7dd5ae766124c9d438edef4bf19d597e622615eea719a184",
+        "mappingPackageDigest": "135262f03abc4c4ef1dad6c992bbbf53993657e3ce3af4fe789fadcbebbff021"
+      },
+      {
+        "unitNumber": 23,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "42a67675479cb835e6c429ffc76c0120c00ea389baed9e7e0cbc91f593b564e4",
+        "mappingPackageDigest": "968d763b963eb028d821bb426f6c906c079a6266184e4f89d79d21fa34699e95"
+      },
+      {
+        "unitNumber": 24,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "0aadf91b5482f1036b5f57888de2744d1339cd7316f5725973f98a0fde693d17",
+        "mappingPackageDigest": "dc6f9ac41a8520dc647df90313e05e547245bfa31fe3b2e883821f3591a24248"
+      },
+      {
+        "unitNumber": 25,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "317881a1a5a77489ce03b939b567642725274c10c534e14be68007b199cde98d",
+        "mappingPackageDigest": "239e966c5d5b4f00ea70616e8ec949d583bb9406407438ab7f04df9fc363bf31"
+      },
+      {
+        "unitNumber": 26,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "7870405b2810239e5e744706b0376877191d00afc337ac30e7a2249ad97fddab",
+        "mappingPackageDigest": "c15db22cc82dcfa6c49d6d0e50beea0f90b16dfc4db90777623e99d540790489"
+      },
+      {
+        "unitNumber": 27,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "fb8a23246226a841df660cae2517b139cba2ff51ef5939792268d2c6cb50bc2e",
+        "mappingPackageDigest": "3924f3a8ac211579b4db3e387cb48632d27e9b41925e227b63b004bf652a3bc0"
+      },
+      {
+        "unitNumber": 28,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "decfe657342b98c1c35277cd88e1a3e125df1233549f01872af8eae7c8fcbd82",
+        "mappingPackageDigest": "0fb9199bfef05acc54935be340710bd53e19fcd6066349300e09c29fb4b035e8"
+      },
+      {
+        "unitNumber": 29,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "454026c94347703fa15b6e305bf4319edcc1542e6a9eb786709186b435753501",
+        "mappingPackageDigest": "a7ebe370698a0dffe4f0311ccfbfff6f217171ffab7dda232447d4b62e2b4071"
+      },
+      {
+        "unitNumber": 30,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "9e453a1050dc3a25959271b300c68c64bb293ba9f34a40a9d76aaf3e0ce3f02e",
+        "mappingPackageDigest": "97f4c8beeb1d0e6827b94bedc1e379381c763c2c3522013890b75802630440a2"
+      }
+    ],
+    "oldUnit14Digest": "6ccad95cd470ad23ed3054c2ed75442c7a8dc73d7b31071290bf577bd5f51153",
+    "newUnit14Digest": "9e136e9af2fe3611d6862fa46e3217f85ad45c8b23ad622eec6f36e48ab97f38",
+    "currentDigestFixtureFiles": [
+      "app/src/test/java/dev/russiancompanion/v2/BatchECapabilityResearchTest.kt",
+      "app/src/test/java/dev/russiancompanion/v2/Units1620SourceIntakeTest.kt",
+      "app/src/test/java/dev/russiancompanion/v2/Units2125SourceIntakeTest.kt",
+      "app/src/test/java/dev/russiancompanion/v2/Units2630SourceIntakeTest.kt",
+      "app/src/test/java/dev/russiancompanion/v2/V2RebuildTest.kt",
+      "app/src/test/java/dev/russiancompanion/v2/audit/OwnerGovernanceDecisionTest.kt"
+    ],
+    "generatedWhitespace": "git diff --check reports pre-existing constituent trailing space copied into canonical generated packet and TSV empty columns. Preserve exact source text and generator bytes;source-code diff checked separately. This is not a failed Gradle/test run."
+  },
+  "externalInitFiles": [
+    {
+      "path": "/workspace/setup/cloud-validation.gradle",
+      "contents": "allprojects {\n    tasks.withType(Test).configureEach {\n        systemProperty 'user.home', '/workspace/java-user-home'\n        systemProperty 'maven.repo.local', '/workspace/.m2/repository' \n        // These screenshot exporters overwrite retained evidence and write to /opt/cursor.\n        exclude '**/VisualReviewCaptureTest*', '**/Units35ChunkCaptureTest*', '**/Units610ChunkCaptureTest*', '**/Units1115GapCaptureTest*'\n        systemProperty 'robolectric.dependency.repo.url', 'https://repo.maven.apache.org/maven2'\n        ['https.proxyHost','https.proxyPort','http.proxyHost','http.proxyPort','http.nonProxyHosts','javax.net.ssl.trustStore'].each { name ->\n            def value = System.getProperty(name)\n            if (value != null) systemProperty name, value\n        }\n    }\n}\n",
+      "sha256": "21c6a0ee2e97cf83c472513ac31c3d2d456e461185384e9b5e58c0fed298d123"
+    },
+    {
+      "path": "/workspace/setup/parallel-tests.gradle",
+      "contents": "allprojects {\n    tasks.withType(Test).configureEach {\n        maxParallelForks = 4\n        maxHeapSize = '1g'\n    }\n}\n",
+      "sha256": "2366eb867708f83db10b39080abff1b45d2e347bab15ce2ec1c95c3d31cf7ff3"
+    }
+  ],
+  "inputTrees": {
+    "app/src/main": "2384adf3ed1da6911c618d19fb84cc607d5dd646",
+    "app/src/test": "cb841dd9193756be7b6ed5081d5f4bd9997775c4",
+    "app/schemas": "bf24044fda8ca836d62e24e94c537eea0aec8e83",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "review": "f2c6df8c21eb9e5d23900a6b056cce29697cd074",
+    "release": "0003a68e008a8bf45fd7b365112c38058cf7e66f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "audit/curriculum-readiness": "2102ecb3149e99944dc513a3cf19152427aafe90",
+    "audit/owner-governance": "602a51d796914887511f5d8fff15af4416178116"
+  },
+  "selectedTestSources": [
+    {
+      "path": "app/src/test/java/dev/russiancompanion/release/ReleaseSourceDigestTest.kt",
+      "sha256": "e4c1dd9ac6403d4255233b32737c2c45e457352b498cc24a4871207fab65e762"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/BatchECapabilityResearchTest.kt",
+      "sha256": "6fcf1b7c4893c5bfceb9888a67c0e1fdff422995e362fb764c2e15cf5a9ff2e6"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit14FeedbackCorrectionTest.kt",
+      "sha256": "fc4920d222b417dc9fe7312c16a5898df7e003e4f2e936f4e32b0b2634e1b86d"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Units2630SourceIntakeTest.kt",
+      "sha256": "72b423075c857411266f076bf69f4d161e1bc81afe3e00496c01b6b71a0678c3"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/V2RebuildTest.kt",
+      "sha256": "6bb1992533c8e8370455bbcd70409b779ae11ee3addab78b739305d3cbc10c0a"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit14ImpersonalRemediationTest.kt",
+      "sha256": "07a2ad48dab78f5037d2d6996e0f63567cdbcd329ecfb57ea9089fd9ee471fb2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit4NominativeRoleTest.kt",
+      "sha256": "9ea6abae15b9d62da92af5306fd8dff18e49439a0f05ab3bff389f1cc8ca21ce"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit14CumulativeReviewTest.kt",
+      "sha256": "9677b49361df7fefb3e3bbbd55749efac41eb1d81f722fedd239d390cfae7c27"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/audit/CurriculumReadinessReconciliationTest.kt",
+      "sha256": "687dd1b1712f614b5ea6d7b59d210198e285e55950abb108192e7232bdd6dc23"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/audit/GapClosureDossierTest.kt",
+      "sha256": "83b04ad8935be53116394836efc99da6078b1fe2064f41ee703bb78cdbc043fa"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/audit/OwnerGovernanceDecisionTest.kt",
+      "sha256": "e1810093ff004706e9923116b635bca1ad76a05fb67fb16b94e10a5c334bbb58"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/review/UnitReviewPipelineTest.kt",
+      "sha256": "930dc6ce893d75377ce5399fcde093ad0344c63e295fd4f4eda3fac9ccaf3666"
+    }
+  ],
+  "sourceInventoryOnly": 1042,
+  "next": "Activate supported Unit15 review only after final source/rights/owner eligibility review;Unit14 impersonal repair is a candidate,not qualified acceptance.",
+  "performanceObservation": "Extended CPU time observed in Unit14 optional-policy-flag mutation at line92 through unmetCurrentPrerequisites/currentCompletedUnitNumbers/canonicalUnitInstructionalDocument;input left unchanged. Thread snapshots external;not a production timing measurement.",
+  "performanceFollowup": "Separately copied immutable negative-mutation pack in Unit14 history test now explicitly warmed through unchanged V2PackIdentityIndex;genuine canonical digests computed,not reused from original pack. Assertions remain unchanged. Prior cold-path timing retained in Unit14 gate evidence;no production timing conclusion.",
+  "generationCommands": [
+    {
+      "mode": "reviews",
+      "command": "./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/checkpoint-tools.gradle -Dcheckpoint.mode=reviews renderCheckpointArtifacts --max-workers=4 --console=plain",
+      "log": "REVIEW_REFRESH.txt"
+    },
+    {
+      "mode": "readiness",
+      "command": "./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/checkpoint-tools.gradle -Dcheckpoint.mode=readiness renderCheckpointArtifacts --max-workers=4 --console=plain",
+      "log": "READINESS_REFRESH.txt"
+    }
+  ],
+  "originalDiagnosticFiles": [
+    {
+      "path": "received-results/AUDIT_SCOPE_AND_EVIDENCE.json",
+      "bytes": 64713,
+      "sha256": "ede9d04c1df26f2612f0210dfe0916a17dbe687ac9612f6858ee9c5025f20563",
+      "verifiedSha256": "ede9d04c1df26f2612f0210dfe0916a17dbe687ac9612f6858ee9c5025f20563"
+    },
+    {
+      "path": "received-results/CODEX_RETURN_HANDOFF.md",
+      "bytes": 6635,
+      "sha256": "a52afc6e6db45b10bceaca78034ba5697328e8b534f225de90fbb9c7b0b29fd0",
+      "verifiedSha256": "a52afc6e6db45b10bceaca78034ba5697328e8b534f225de90fbb9c7b0b29fd0"
+    },
+    {
+      "path": "received-results/FINDINGS.csv",
+      "bytes": 20729,
+      "sha256": "f8e6a593545a24f5f02702d59ac7d63ef3b7f796ec71dc0a06063fa491d21ace",
+      "verifiedSha256": "f8e6a593545a24f5f02702d59ac7d63ef3b7f796ec71dc0a06063fa491d21ace"
+    },
+    {
+      "path": "received-results/INDEPENDENT_AUDIT_REPORT.md",
+      "bytes": 31981,
+      "sha256": "fd9ad913e312e1f6b332cd5a21ab90a783a809c8443f11c486c99ab9f0b4ad40",
+      "verifiedSha256": "fd9ad913e312e1f6b332cd5a21ab90a783a809c8443f11c486c99ab9f0b4ad40"
+    },
+    {
+      "path": "received-results/ITEM_ASSESSMENT_AUDIT.csv",
+      "bytes": 372802,
+      "sha256": "2637ecf4f205610710dfa42ff9878ba592f0284a2f3fd46fbd6d297d32c37ddd",
+      "verifiedSha256": "2637ecf4f205610710dfa42ff9878ba592f0284a2f3fd46fbd6d297d32c37ddd"
+    },
+    {
+      "path": "received-results/REQUIREMENTS_MATRIX.csv",
+      "bytes": 81719,
+      "sha256": "3f0770ad922a99da67ea533b7e799a0a3951f91abaf528d70b0a9b1a1db52c1e",
+      "verifiedSha256": "3f0770ad922a99da67ea533b7e799a0a3951f91abaf528d70b0a9b1a1db52c1e"
+    },
+    {
+      "path": "received-results/SOURCE_AND_BINDING_REVIEW.json",
+      "bytes": 32046,
+      "sha256": "59d00b0b7163c741adff98ea884bc10972eabe258d4ebdc18d8e7aa22a6c3ad0",
+      "verifiedSha256": "59d00b0b7163c741adff98ea884bc10972eabe258d4ebdc18d8e7aa22a6c3ad0"
+    },
+    {
+      "path": "received-results/TARGET_75_DISPOSITIONS.csv",
+      "bytes": 32672,
+      "sha256": "76fa43dd958a3e9b6459601b0bd22c113b4b1b376af6cc8f6d772e18ef8a126d",
+      "verifiedSha256": "76fa43dd958a3e9b6459601b0bd22c113b4b1b376af6cc8f6d772e18ef8a126d"
+    },
+    {
+      "path": "received-results/UNIT_COVERAGE.csv",
+      "bytes": 27754,
+      "sha256": "794828fc9d6de4c5c5cc85df40630ba0bd4b136d98b107b795887999a04440bd",
+      "verifiedSha256": "794828fc9d6de4c5c5cc85df40630ba0bd4b136d98b107b795887999a04440bd"
+    }
+  ],
+  "files": [
+    {
+      "path": "CORRECTION.json",
+      "sha256": "d88e95a1b14b79d5fc22802260fa4c2666d13c5671420029c4a5cfb9d3690a1e",
+      "bytes": 17858
+    },
+    {
+      "path": "FINAL_LINT.xml",
+      "sha256": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6",
+      "bytes": 31476
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.release.ReleaseSourceDigestTest.xml",
+      "sha256": "e7835ffecedf84365e374e08336200749c4aa70997b434067def9218b7422457",
+      "bytes": 500
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.BatchECapabilityResearchTest.xml",
+      "sha256": "02367c292ed8e3b71ab84f79bbc9c5c66130d2bd60b2b78c5841e45c0b34ece9",
+      "bytes": 487
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.Unit14CumulativeReviewTest.xml",
+      "sha256": "fc90bd875acda8397c586e92837d603d6c3cee779d70dda0ef5f3e2bacc299d0",
+      "bytes": 2358
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.Unit14FeedbackCorrectionTest.xml",
+      "sha256": "6669a20e490b04034ff165ad17ab16871b93012eb2bd280b964575a1f9b6b115",
+      "bytes": 7237
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.Unit14ImpersonalRemediationTest.xml",
+      "sha256": "fffb968a5230b3af1fc3fc9df416356f24d3d7f7de85b1e74f0ce5f5807e4746",
+      "bytes": 1198
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.Unit4NominativeRoleTest.xml",
+      "sha256": "978c2b7dce918dbe54939b8b4d1a11ee4ad209db53f6f9af9430e754e029f35e",
+      "bytes": 3175
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.Units2630SourceIntakeTest.xml",
+      "sha256": "368ee0889fa5c5cb8bf8aee8a2caf8a8cd6bdef66c77688996933433f43a00ed",
+      "bytes": 680
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.V2RebuildTest.xml",
+      "sha256": "c25ee0b6b6f65201e03fa9f9925d188c78daac5ec0b8f5fa7a97a7b5c4e6494d",
+      "bytes": 519
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest.xml",
+      "sha256": "fe5248ed8d9cc54f4d28ccdd7136ffde94ee4ae91fef2fb1f40d0f79363a1f83",
+      "bytes": 524
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.audit.GapClosureDossierTest.xml",
+      "sha256": "2d953fcd54c57cdd71bc172205817c7df2dc1bcb97a8159ad3637cea04cf010c",
+      "bytes": 493
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest.xml",
+      "sha256": "da6ed614d0f2550f42f4df8d46224e382d001608346af89a0dd493dfc2b7fb49",
+      "bytes": 504
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.review.UnitReviewPipelineTest.xml",
+      "sha256": "fccccbd951b9cfda5949d62f5c78d95594ee620e492d42d79ed27f354ab66333",
+      "bytes": 484
+    },
+    {
+      "path": "FINAL_RUN.txt",
+      "sha256": "ebef26789c2bfc52481bc3068fcf0f73af7822e0aabf2f69612e478e8a15eee1",
+      "bytes": 3742
+    },
+    {
+      "path": "READINESS_REFRESH.txt",
+      "sha256": "0a8f0771083314c55c8ca0604a5a5ddcf7b0232b11ef102f9eb4cbb1909b8cdd",
+      "bytes": 3294
+    },
+    {
+      "path": "REVIEW_REFRESH.txt",
+      "sha256": "54e916d47b223464d3a43f8ff097cfae8826871d8dc810de00ab843bbd9a0889",
+      "bytes": 3412
+    },
+    {
+      "path": "SOURCE_REVIEW.md",
+      "sha256": "17aab976dcbbc8e41eab97740424920c14c1337ec550d89c1956da623b6de7e9",
+      "bytes": 3535
+    },
+    {
+      "path": "verify.sh",
+      "sha256": "a233fe505c7103b70972b89a55584dd480bc3feb220b31c71f1a4d2356a44cba",
+      "bytes": 1214
+    }
+  ]
+}
