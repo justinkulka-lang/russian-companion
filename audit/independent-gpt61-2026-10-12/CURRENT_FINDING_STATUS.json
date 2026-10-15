@@ -91,6 +91,44 @@
           "ex-u11-past-aspect-1"
         ],
         "qualifiedAcceptance": false
+      },
+      "unit12EngineeringCheckpoint": {
+        "implementationCommit": "71b56a1f80584feb36ad6e28bee6744b9c8a7ec9",
+        "integrationCommit": "9fe6c36b9c1717cbdab5c67e5a59bd77d6d171de",
+        "integrationCounts": {
+          "tests": 166,
+          "failures": 2,
+          "errors": 0,
+          "skipped": 0
+        },
+        "correctedTestedCommit": "c339d69573b010e1a612dc23835f5a27070f2293",
+        "correctedCounts": {
+          "tests": 2,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "passingEvidenceUnion": {
+          "uniqueMethods": 166,
+          "scope": "Distinct passing method identities across integration and corrections;full executed scopes overlap and the invalid history fixture was renamed. Not a fresh166-method run at corrected commit",
+          "integrationFailuresPreserved": true
+        },
+        "completeSuite": false,
+        "activeEngineeringUnits": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "manifest": "ia003-unit12-gate/FINAL_VERIFICATION_MANIFEST.json",
+        "qualifiedAcceptance": false,
+        "remaining": "Units13\u201330,wider pools/recent scheduling and qualified assessment"
       }
     },
     {
