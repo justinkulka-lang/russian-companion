@@ -259,23 +259,23 @@ class CumulativeReviewStorageTest {
         val p = pack()
         prepared(p).use { s ->
             val before = s.governedLearnerFingerprint()
-            for (n in listOf(1, 2, 21, 27, 30, 31)) {
+            for (n in listOf(1, 2, 22, 27, 30, 31)) {
                 assertNull(cumulativeReviewPolicy(n))
                 assertNull(s.openCumulativeReview(p, n, s.learnerMutationEpoch()))
                 assertNull(createCumulativeReviewAssignment(p, s.v2LearnerView(), n, "undeclared", 0))
             }
-            val flagOnly = p.copy(units = p.units.map { if (it.number == 21) it.copy(
+            val flagOnly = p.copy(units = p.units.map { if (it.number == 22) it.copy(
                 advancement = it.advancement!!.copy(requireDueReview = true, cumulativeReviewPolicyId = Unit3CumulativeReviewPolicy.id)) else it })
-            assertFalse(cumulativeReviewDeclarationValid(flagOnly, 21))
-            assertTrue(currentUnitRequirements(flagOnly, flagOnly.unit(21)!!, s.v2LearnerView()).remaining
+            assertFalse(cumulativeReviewDeclarationValid(flagOnly, 22))
+            assertTrue(currentUnitRequirements(flagOnly, flagOnly.unit(22)!!, s.v2LearnerView()).remaining
                 .contains("The cumulative-review rule cannot be verified"))
-            assertTrue(V2Validator.validate(flagOnly).errors.contains("Unit 21 has no verified cumulative-review policy"))
-            val emptyFlag = flagOnly.copy(units = flagOnly.units.map { if (it.number == 21) it.copy(
+            assertTrue(V2Validator.validate(flagOnly).errors.contains("Unit 22 has no verified cumulative-review policy"))
+            val emptyFlag = flagOnly.copy(units = flagOnly.units.map { if (it.number == 22) it.copy(
                 advancement = it.advancement!!.copy(cumulativeReviewPolicyId = null)) else it })
-            assertTrue(currentUnitRequirements(emptyFlag, emptyFlag.unit(21)!!, s.v2LearnerView()).remaining
+            assertTrue(currentUnitRequirements(emptyFlag, emptyFlag.unit(22)!!, s.v2LearnerView()).remaining
                 .contains("The cumulative-review rule cannot be verified"))
-            assertNull(s.openCumulativeReview(emptyFlag, 21, s.learnerMutationEpoch()))
-            assertNull(s.openCumulativeReview(flagOnly, 21, s.learnerMutationEpoch()))
+            assertNull(s.openCumulativeReview(emptyFlag, 22, s.learnerMutationEpoch()))
+            assertNull(s.openCumulativeReview(flagOnly, 22, s.learnerMutationEpoch()))
             assertEquals(before, s.governedLearnerFingerprint())
             assertTrue(s.cumulativeReviewHistory().first.isEmpty())
         }

@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "baselineCommit": "d9ed23eb733e6bf068b11dc38a33d3e46debafbd",
+  "status": "BOUNDED_ENGINEERING_ONLY_IA003_OPEN",
+  "targetUnit": 21,
+  "policyId": "unit21-prior-reading-motion-context-v1",
+  "owners": [
+    1,
+    20
+  ],
+  "beforeAdvancement": {
+    "requireInstruction": true,
+    "requireBookSelfAttestation": true,
+    "requireAppChecks": true,
+    "minimumDistinctChecks": 2,
+    "requireDueReview": false,
+    "tutorOptional": true
+  },
+  "afterAdvancement": {
+    "requireInstruction": true,
+    "requireBookSelfAttestation": true,
+    "requireAppChecks": true,
+    "minimumDistinctChecks": 2,
+    "requireDueReview": true,
+    "tutorOptional": true,
+    "cumulativeReviewPolicyId": "unit21-prior-reading-motion-context-v1"
+  },
+  "ordinaryMinimumPreserved": 2,
+  "changedUnitFields": [
+    "advancement.requireDueReview",
+    "advancement.cumulativeReviewPolicyId"
+  ],
+  "earlierPolicySourceHashes": {
+    "3": "5375c7c0fde0d156a7e64a97f3b5669b0690c8e2f8ab576fe225e6c84963ae70",
+    "4": "d881b5cfbea335be6e5ab2e869c64cd54598883d1cc60dc2a3942ee4e9979355",
+    "5": "6befdcee801a9815fdada5fb043372b962d443913c6197a4153da566345800cd",
+    "6": "f6132e00d70828fbe6792c134958b5a47c68d905023547091670acecb2ea0179",
+    "7": "7294cbaeaeea5a82f83dc05ff0c6ce6cfccf9ca87e0ea85ea2c4e07f37111ac7",
+    "8": "b2f1498ca1f846e21a502ea05bd65602ab537bab32622574b6c77f983f080a00",
+    "9": "da0b455f6313adba561973aabb57323a09c17ab2a6eef2608159727a41f57283",
+    "10": "eb0f05f2d74549a0a2dfa6e2e3cef67364fa57eaeeb067d91c84e8cd29b516b4",
+    "11": "b5e1d23edd2cd90c16b149e89286dcb1eebbbbb21d65c4e6f141f8e45e234b1e",
+    "12": "d1f4568d3c58e3a7decffd40f3a52157b8d50560d1639d2caf6099733075d993",
+    "13": "c358dae543e43a9fe1d78ecdaba01ec87f64793635462379f926cab397694da5",
+    "14": "71a72229f1b3936154f561ed56294f08932b094c0357cd4ccf992043d1e27753",
+    "15": "1ca9dcaa650cdb7d59392b6458104077362ae82c00b2e8b525754d555a081fe9",
+    "16": "4931d70fd950dca5b413eba87b5056776041c3a22ebb8a4539cf1e875c8f42a2",
+    "17": "482fa32dfc1f792ae1cb31b1e197e08d2cc29e1cabfb37a095a0013ac2124c9e",
+    "18": "d6fb25caf455709129717f073936d0a10528dfa1b8099bf2404d4a0bdc51bcf9",
+    "19": "28e2d9dc91594137f91231c6bd852355276d077421e13d7c77e6ecd6f12acdae",
+    "20": "4333ab40b6d1e6b6fa1ba9dde6c9cead258411ad6d10eecd15042f5f3051239b"
+  },
+  "allOther29UnitsAndAllScoredNativeProvenanceRightsFieldsUnchanged": true,
+  "privateReferenceCopied": false,
+  "releaseAuthorized": false,
+  "newSourceMethods": 7,
+  "fixtureSetup": "Genuine governed teaching/check/due/advance history through20, restored into fresh isolated stores. Old packs separately prepared. No manufactured assignments or current credit.",
+  "sourceContextSha256": {
+    "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt": "e12312425b1ed50177c3549ac10026696fbb8733c089b748b183eecdaf8ace85",
+    "catalog/sources/units-26-30/wikipedia/copyrights-1369466282.txt": "79be61298fb5e458a485eb4ad72c68b73d5284de99807cf4561bcff9ace36210"
+  },
+  "nativePins": [
+    {
+      "itemId": "prov-u20-direction-native-city-ru",
+      "unitNumber": 20,
+      "objectiveId": "obj-u20-motion",
+      "recordType": "example",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+      "sourceRevision": "1369617627",
+      "sourceRecordId": "motion-native-context:===  Verbs of motion ===\nVerbs of motion are a distinct class of verbs found ",
+      "shippedText": "Мы ходили по городу весь день.",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "144527c7aff47147bbe8d5f4176e26d67bd5324a92439e1012965a6974f546b9",
+      "contentHash": "cd874b88f7d3bcc6bd63aba77a1fec941c3f45d6dbbfb9cea1fdea506906307c",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "originalSourceTextRef": "144527c7aff47147bbe8d5f4176e26d67bd5324a92439e1012965a6974f546b9"
+    },
+    {
+      "itemId": "prov-u20-direction-native-city-en",
+      "unitNumber": 20,
+      "objectiveId": "obj-u20-motion",
+      "recordType": "meaning",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+      "sourceRevision": "1369617627",
+      "sourceRecordId": "motion-native-context:===  Verbs of motion ===\nVerbs of motion are a distinct class of verbs found ",
+      "shippedText": "We walked around the city all day.",
+      "transformation": "selection",
+      "licenseId": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Wikipedia contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1369617627 identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "sourceHash": "144527c7aff47147bbe8d5f4176e26d67bd5324a92439e1012965a6974f546b9",
+      "contentHash": "d8da9d41410825631a92dd40f302ceebcff3240883fe23177438eb8b547ef28e",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "originalSourceTextRef": "144527c7aff47147bbe8d5f4176e26d67bd5324a92439e1012965a6974f546b9"
+    }
+  ],
+  "resolvedNativeContext": "===  Verbs of motion ===\nVerbs of motion are a distinct class of verbs found in several Slavic languages. Due to the extensive semantic information they contain, Russian verbs of motion pose difficulties for non-native learners at all levels of study.<ref name=\"Gor\">{{cite journal|author=Gor, K., Cook, S., Malyushenkova, V., & Vdovina, T|title=Verbs of Motion in Highly Proficient Learners and Heritage Speakers of Russian|journal=The Slavic and East European Journal|year=2009|volume=53|issue=3|pages=386–408|jstor=40651163}}</ref> Unprefixed verbs of motion, which are all imperfective, divide into pairs based on the direction of the movement (uni- or multidirectional — sometimes referred to as determinate/indeterminate or definite/indefinite). As opposed to a verb-framed language, in which path is encoded in the verb, but manner of motion typically is expressed with complements, Russian is a ''satellite'' language, meaning that these concepts are encoded in both the root of the verb and the particles associated with it, satellites.<ref name=\"Talmy\">{{cite book|last=Talmy|first=Leonard|title=Language Typology and Syntactic Description, vol. 3|date=1985|publisher=Cambridge University Press|location=Cambridge|pages=57–149|editor=Timothy Shopen|chapter=Lexicalization Patterns: Semantic Structure in Lexical Forms}}</ref> Thus, the roots of motion verbs convey the lexical information of manner of movement, e.g. walking, crawling, running, whereas prefixes denote path, e.g. motion in and out of space.<ref name=\"Nesset\">{{cite journal|last=Nesset|first=Tore|title=Path and Manner: An Image-Schematic Approach to Russian Verbs of Motion|journal=Scando-Slavica|date=2008|volume=54|issue=1|pages=135–158|doi=10.1080/00806760802494232|s2cid=123427088}}</ref><ref group=note>Nesset (2008) applied Leonard Talmy's (1985, 2000) terms \"manner\" and \"path\" to her image schema for Russian verbs of motion.</ref> The roots also distinguish between means of conveyance, e.g. by transport or by one's own power, and in transitive verbs, the object or person being transported.<ref name=\"Muravyova\">{{cite book|last=Muravyova|first=L|title=Verbs of Motion in Russian / Glagoly dviženija v russkom jazyke|date=1986|publisher=Russkij jazyk|location=Moscow|edition=5|editor=V. Korotky|pages=211–212, 218–225}}</ref> The information below provides an outline of the formation and basic usage of unprefixed and prefixed verbs of motion.\n\n==== Unprefixed  ====\n\n{| class=\"wikitable\" style=\"vertical-align: top;\"\n|+Pairs of Russian verbs of motion, adapted from Muravyova<ref name=\"Muravyova\" /><ref group=\"note\">Researchers have also included the reflexive verbs катиться/кататься, гнаться/гоняться, нестись/носиться, and тащиться/таскаться (Gagarina 2009: 451–452).</ref>\n! English !! unidirectional !! multidirectional\n|- style=\"vertical-align: top;\"\n| to run || бежа́ть || бе́гать\n|- style=\"vertical-align: top;\"\n| to wander || брести́ || броди́ть\n|- style=\"vertical-align: top;\"\n| to convey, transport || везти́ || вози́ть\n|- style=\"vertical-align: top;\"\n| to lead || вести́ || води́ть\n|- style=\"vertical-align: top;\"\n| to drive, chase || гна́ть || гоня́ть\n|- style=\"vertical-align: top;\"\n| to go by vehicle, ride || е́хать || е́здить\n|- style=\"vertical-align: top;\"\n| to go, walk || идти́ || ходи́ть\n|- style=\"vertical-align: top;\"\n| to roll || кати́ть || ката́ть\n|- style=\"vertical-align: top;\"\n| to climb || ле́зть || ла́зить (ла́зать)\n|- style=\"vertical-align: top;\"\n| to fly || лете́ть || лета́ть\n|- style=\"vertical-align: top;\"\n| to carry || нести́ || носи́ть\n|- style=\"vertical-align: top;\"\n| to swim, float || плы́ть || пла́вать\n|- style=\"vertical-align: top;\"\n| to crawl || ползти́ || по́лзать\n|- style=\"vertical-align: top;\"\n| to drag || тащи́ть || таска́ть\n|}\n\n==== Directionality ====\nUnidirectional verbs describe motion in progress in one direction, e.g.:\n* We are headed to the library.<br />Мы идём в библиотеку.\n* I was on my way to work.<br />Я шла на работу.\n* The birds are flying south.<br />Птицы летят на юг.\nMultidirectional verbs describe:\n# General motion, referring to ability or habitual motion, without reference to direction or destination, e.g.:\n#* The child has been walking for six months.<br />Ребёнок ходит шесть месяцев.\n#* Birds fly, fish swim, and dogs walk.<br />Птицы летают, рыбы плавают, а собаки ходят.\n# Movement in various directions, e.g.:\n#* We walked around the city all day.<br />Мы ходили по городу весь день.\n# Repetition of completed trips, e.g.:\n#* She goes to the supermarket every week.<br />Она ходит в супермаркет каждую неделю.\n# In the past tense, a single completed round trip, e.g.:\n#* I went to Russia (and returned) last year.<br />В прошлом году я ездил в Россию."
+}
