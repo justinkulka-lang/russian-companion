@@ -1,0 +1,18 @@
+{
+  "readAtUtc": "2026-10-15T20:36:11.410344+00:00",
+  "draftId": null,
+  "revision": null,
+  "baseVersionId": "13a458c1-0aec-4d7a-ab78-a70d382275e1~cecfgver_6acedb2102ec8196804d03e72c487901",
+  "configurationChanged": false,
+  "publication": "USER_CONFIRMED; not independently verified; no supported status/publication control",
+  "install_script": {
+    "saved": true,
+    "sha256": "a439863dd20b1248e05b3b0a8e5fb7f11833819cdfb89ce78d5a83cb3e8f228f",
+    "bytes": 3938
+  },
+  "start_skill": {
+    "saved": true,
+    "sha256": "c2127b1c5e95a5c192f4cf4d579ad60dd6bfe5219f09436bd8d175da506a33d9",
+    "bytes": 3095
+  }
+}
