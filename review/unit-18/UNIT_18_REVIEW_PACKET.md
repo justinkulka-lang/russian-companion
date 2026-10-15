@@ -11,12 +11,12 @@ Unit 18 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 4f5cb8024d3f68a37052fdf85b5755bffa2a0904
-- Unit content-review SHA-256: 5041c377116988ac5906d4147af957b744742e28b9a3e44dd9489527648d62e3
+- Curriculum source commit: 96fff68390ba77498983de3044b7e0010fdd2d8b
+- Unit content-review SHA-256: 603827ede7e8394cef33bf1af9fb4ef6217a80f0e6624f1bd385e4a0766b69ac
 - Mapping-package SHA-256: f195680e986e1c1069418022707886a4b11b4fe9cf8410e9e8b78e71525008bb
-- Pack content-review SHA-256: 0bbb988b2700850392c3d396668b94e0dc30f1bf87831e739454489e01afbf3e
-- Review-package SHA-256: 114799502c60f62327ae55b7f2cd5384271674a5ed679ebc68c76427809956a3
-- Repository source SHA-256: 7f9b118edf1ff97c288b236463d0676939f058d7acc189bf672ae7c9183979c6
+- Pack content-review SHA-256: df8556d9786312890b5a8dfb2946cb734b165b7b02af0649ed1ec3501980d4ff
+- Review-package SHA-256: f378bb35d90d19daf4859b4585aff63d4a7e30495bbfbe35adb405a489246ca0
+- Repository source SHA-256: 8aa936d21c6ad8d649fa6bcef3293db986ae949be38901aa4148c7f71dee0772
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -96,13 +96,13 @@ estimatedMinutes=42
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5d32460433cb02ff6e696fdab5c8bb95dc57945496e8daa122c77b31e372a517
+- Content hash: 7ddc6bdf638b41425259e259a4f81e39e02b6fd2f096c59e4b424dde2a98a1c3
 
 requireInstruction=true
 requireBookSelfAttestation=true
 requireAppChecks=true
 minimumDistinctChecks=2
-requireDueReview=false
+requireDueReview=true
 tutorOptional=true
 
 ### OBJECTIVE `obj-u18-comparison`
