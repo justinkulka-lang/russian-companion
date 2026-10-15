@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.CumulativeReviewGateTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-15T19:52:30.694Z" hostname="f5c5dd6b855f" time="190.192">
+  <properties/>
+  <testcase name="asynchronousReviewWriteCannotCrossActualLearnerReplacementAndBackRemainsResponsive" classname="dev.russiancompanion.v2.CumulativeReviewGateTest" time="49.586"/>
+  <testcase name="migratedVersionTenRetainsGenuineOldLessonCreditWithoutFabricatingReviewCompletion" classname="dev.russiancompanion.v2.CumulativeReviewGateTest" time="20.336"/>
+  <testcase name="actualContinueReviewAndGateUiRequireBothChoicesAndShowTargetedFeedback" classname="dev.russiancompanion.v2.CumulativeReviewGateTest" time="14.488"/>
+  <testcase name="completeOrdinaryWorkCannotAdvanceUntilBothAssignedObjectivesAreReviewed" classname="dev.russiancompanion.v2.CumulativeReviewGateTest" time="76.712"/>
+  <testcase name="versionThreeBackupPreservesCompletionSnapshotAndRejectsForgedActivationLinks" classname="dev.russiancompanion.v2.CumulativeReviewGateTest" time="3.292"/>
+  <testcase name="optionalAndPrescribedReplaysCannotCompleteReviewOrBypassTransactionalAdvance" classname="dev.russiancompanion.v2.CumulativeReviewGateTest" time="17.082"/>
+  <testcase name="completedHistoryKeepsItsAcceptedAnswerSnapshotAndTransactionFailureRollsBack" classname="dev.russiancompanion.v2.CumulativeReviewGateTest" time="2.628"/>
+  <testcase name="placementOnlyUiOffersRealEarlierTeachingAndNoEmptyReviewCompletion" classname="dev.russiancompanion.v2.CumulativeReviewGateTest" time="3.105"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call close. 
+]]></system-err>
+</testsuite>
