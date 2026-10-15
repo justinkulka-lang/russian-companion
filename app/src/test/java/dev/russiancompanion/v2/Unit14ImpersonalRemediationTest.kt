@@ -38,10 +38,9 @@ class Unit14ImpersonalRemediationTest {
         val restored = p.copy(units = p.units.map { unit ->
             if (unit.number == 14) unit.copy(sessions = unit.sessions.map { current ->
                 if (current.id == "u14-s-impersonal") session(old) else current
-            }) else if (unit.number == 15) unit.copy(advancement = old.unit(15)!!.advancement) else unit
+            }) else if (unit.number == 15) old.unit(15)!! else unit
         })
-        assertEquals(old.unit(15)!!.copy(advancement = old.unit(15)!!.advancement!!.copy(
-            requireDueReview = true, cumulativeReviewPolicyId = Unit15CumulativeReviewPolicy.definition.id)), p.unit(15))
+        assertEquals(Unit15ImperativeRemediationTest.declaredAfterUnit(), p.unit(15))
         assertEquals(old, restored)
         assertEquals(old.unit(14)!!.advancement, p.unit(14)!!.advancement)
         assertEquals(6, p.unit(14)!!.advancement!!.minimumDistinctChecks)

@@ -1,0 +1,1113 @@
+{
+  "baselineCommit": "6975ead6e11b4eac4e56b9d538e026b577760385",
+  "status": "ENGINEERING_PREREQUISITE_REPAIR_UNIT16_NOT_ACTIVE",
+  "unitNumber": 15,
+  "sessionId": "u15-s-imperative",
+  "beforeUnit": {
+    "number": 15,
+    "id": "unit-15",
+    "title": "Requests, the imperative, and consolidation of aspect use",
+    "shortLabel": "Requests",
+    "topicSummary": "Proposed Unit 15 is a development unit awaiting qualified review. It contains admitted records for this lesson's governed objectives, plus separate book self-attestation. It is not installed and the owned-edition mapping is not signed.",
+    "installState": "DEVELOPMENT",
+    "readiness": "CONTENT_COMPLETE_REVIEW_PENDING",
+    "penguinLesson": 15,
+    "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
+    "mappingNote": "Proposed Lesson 15, printed pages 171-187. Independently stated topic scope: Requests, imperative forms, and consolidation of aspect use. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.",
+    "prerequisiteUnitNumbers": [
+      14
+    ],
+    "estimatedMinutes": 54,
+    "objectives": [
+      {
+        "id": "obj-u15-imperative",
+        "unitNumber": 15,
+        "title": "Choose the admitted request row",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u15-st-orient",
+          "u15-st-teach-imperative-1",
+          "u15-st-teach-imperative-2",
+          "u15-st-teach-imperative-3"
+        ],
+        "exampleIds": [
+          "ex-or-u15-imperative-0",
+          "ex-or-u15-imperative-1",
+          "ex-or-u15-imperative-2",
+          "ex-u15-imperative-3"
+        ],
+        "practiceStepIds": [
+          "u15-st-guided-imperative-1"
+        ],
+        "checkItemIds": [
+          "u15-i-imperative-1",
+          "u15-i-imperative-2"
+        ],
+        "remediationStepIds": [
+          "u15-st-rem-imperative"
+        ]
+      },
+      {
+        "id": "obj-u15-say-request",
+        "unitNumber": 15,
+        "title": "Choose the admitted say-request row",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u15-st-orient",
+          "u15-st-teach-say-request-1",
+          "u15-st-teach-say-request-2",
+          "u15-st-teach-say-request-3",
+          "u15-st-teach-say-request-4"
+        ],
+        "exampleIds": [
+          "ex-or-u15-say-request-0",
+          "ex-or-u15-say-request-1",
+          "ex-or-u15-say-request-2",
+          "ex-or-u15-say-request-3",
+          "ex-or-u15-say-request-4",
+          "ex-or-u15-say-request-5"
+        ],
+        "practiceStepIds": [
+          "u15-st-guided-say-request-1"
+        ],
+        "checkItemIds": [
+          "u15-i-say-request-1",
+          "u15-i-say-request-2"
+        ],
+        "remediationStepIds": [
+          "u15-st-rem-say-request"
+        ]
+      },
+      {
+        "id": "obj-u15-aspect-consolidate",
+        "unitNumber": 15,
+        "title": "Choose the admitted aspect pair",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u15-st-orient",
+          "u15-st-teach-aspect-consolidate-1",
+          "u15-st-teach-aspect-consolidate-2",
+          "u15-st-teach-aspect-consolidate-3"
+        ],
+        "exampleIds": [
+          "ex-u15-aspect-consolidate-0",
+          "ex-u15-aspect-consolidate-1",
+          "ex-u15-aspect-consolidate-2",
+          "ex-u15-aspect-consolidate-3"
+        ],
+        "practiceStepIds": [
+          "u15-st-guided-aspect-consolidate-1"
+        ],
+        "checkItemIds": [
+          "u15-i-aspect-consolidate-1",
+          "u15-i-aspect-consolidate-2"
+        ],
+        "remediationStepIds": [
+          "u15-st-rem-aspect-consolidate"
+        ]
+      },
+      {
+        "id": "obj-u15-book",
+        "unitNumber": 15,
+        "title": "Self-attest Lesson 15 book work",
+        "kind": "SELF_ATTESTATION",
+        "instructionStepIds": [
+          "u15-st-book-work",
+          "u15-st-book"
+        ],
+        "exampleIds": [],
+        "practiceStepIds": [],
+        "checkItemIds": [],
+        "remediationStepIds": []
+      }
+    ],
+    "sessions": [
+      {
+        "id": "u15-s-orient",
+        "title": "Admitted request rows and aspect pairs",
+        "estimatedMinutes": 8,
+        "objectiveIds": [
+          "obj-u15-imperative",
+          "obj-u15-say-request",
+          "obj-u15-aspect-consolidate",
+          "obj-u15-book"
+        ],
+        "steps": [
+          {
+            "id": "u15-st-orient",
+            "kind": "ORIENT",
+            "title": "Admitted request rows and aspect pairs",
+            "body": "Proposed Unit 15 uses frozen records for request rows and aspect pairs. Qualified review is pending.",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "bookDirection": "Open Lesson 15 in the copy you own. The app records do not replace that lesson."
+          }
+        ]
+      },
+      {
+        "id": "u15-s-imperative",
+        "title": "Choose the admitted request row",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u15-imperative"
+        ],
+        "steps": [
+          {
+            "id": "u15-st-teach-imperative-1",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "чита́й — read. чита́йте — read. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u15-imperative-0",
+              "ex-or-u15-imperative-1"
+            ]
+          },
+          {
+            "id": "u15-st-guided-imperative-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u15-g-imperative-0"
+            ],
+            "remediationStepId": "u15-st-rem-imperative"
+          },
+          {
+            "id": "u15-st-teach-imperative-2",
+            "kind": "TEACH",
+            "title": "Admitted instruction",
+            "body": "Купи, пожалуйста, свежие фрукты.",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ]
+          },
+          {
+            "id": "u15-st-teach-imperative-3",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "чита́ть — read. Купи, пожалуйста, свежие фрукты. — Please, buy fresh fruits. ",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u15-imperative-2",
+              "ex-u15-imperative-3"
+            ]
+          },
+          {
+            "id": "u15-st-rem-imperative",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": "Купи, пожалуйста, свежие фрукты.",
+            "exampleIds": [
+              "ex-or-u15-imperative-0",
+              "ex-or-u15-imperative-1"
+            ]
+          },
+          {
+            "id": "u15-st-check-imperative",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u15-i-imperative-1",
+              "u15-i-imperative-2"
+            ],
+            "remediationStepId": "u15-st-rem-imperative"
+          }
+        ]
+      },
+      {
+        "id": "u15-s-say-request",
+        "title": "Choose the admitted say-request row",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u15-say-request"
+        ],
+        "steps": [
+          {
+            "id": "u15-st-teach-say-request-1",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "скажи́ — say. скажи́те — say. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u15-say-request-0",
+              "ex-or-u15-say-request-1"
+            ]
+          },
+          {
+            "id": "u15-st-guided-say-request-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u15-g-say-request-0"
+            ],
+            "remediationStepId": "u15-st-rem-say-request"
+          },
+          {
+            "id": "u15-st-teach-say-request-2",
+            "kind": "TEACH",
+            "title": "Admitted instruction",
+            "body": "'''говорить''' (impf.) and '''сказать''' (pf.) - 'to say, speak, tell'",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ]
+          },
+          {
+            "id": "u15-st-teach-say-request-3",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "сказа́ть — say. да́й — give. ",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u15-say-request-2",
+              "ex-or-u15-say-request-3"
+            ]
+          },
+          {
+            "id": "u15-st-teach-say-request-4",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "да́йте — give. дать — give. ",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u15-say-request-4",
+              "ex-or-u15-say-request-5"
+            ]
+          },
+          {
+            "id": "u15-st-rem-say-request",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": "'''говорить''' (impf.) and '''сказать''' (pf.) - 'to say, speak, tell'",
+            "exampleIds": [
+              "ex-or-u15-say-request-0",
+              "ex-or-u15-say-request-1"
+            ]
+          },
+          {
+            "id": "u15-st-check-say-request",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u15-i-say-request-1",
+              "u15-i-say-request-2"
+            ],
+            "remediationStepId": "u15-st-rem-say-request"
+          }
+        ]
+      },
+      {
+        "id": "u15-s-aspect-consolidate",
+        "title": "Choose the admitted aspect pair",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u15-aspect-consolidate"
+        ],
+        "steps": [
+          {
+            "id": "u15-st-teach-aspect-consolidate-1",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "говори́ть — to speak. сказа́ть — to speak. ",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "exampleIds": [
+              "ex-u15-aspect-consolidate-0",
+              "ex-u15-aspect-consolidate-1"
+            ]
+          },
+          {
+            "id": "u15-st-guided-aspect-consolidate-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u15-g-aspect-consolidate-0"
+            ],
+            "remediationStepId": "u15-st-rem-aspect-consolidate"
+          },
+          {
+            "id": "u15-st-teach-aspect-consolidate-2",
+            "kind": "TEACH",
+            "title": "Admitted instruction",
+            "body": "Let us take the verbs \"to speak\" (imperfective: '''говори́ть''', perfective: '''сказа́ть''') and \"to do\" (imper.: '''де́лать''', per.: '''сде́лать''').",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ]
+          },
+          {
+            "id": "u15-st-teach-aspect-consolidate-3",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "де́лать — to do. сде́лать — to do. ",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "exampleIds": [
+              "ex-u15-aspect-consolidate-2",
+              "ex-u15-aspect-consolidate-3"
+            ]
+          },
+          {
+            "id": "u15-st-rem-aspect-consolidate",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": "Let us take the verbs \"to speak\" (imperfective: '''говори́ть''', perfective: '''сказа́ть''') and \"to do\" (imper.: '''де́лать''', per.: '''сде́лать''').",
+            "exampleIds": [
+              "ex-u15-aspect-consolidate-0",
+              "ex-u15-aspect-consolidate-1"
+            ]
+          },
+          {
+            "id": "u15-st-check-aspect-consolidate",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u15-i-aspect-consolidate-1",
+              "u15-i-aspect-consolidate-2"
+            ],
+            "remediationStepId": "u15-st-rem-aspect-consolidate"
+          }
+        ]
+      },
+      {
+        "id": "u15-s-book",
+        "title": "Self-attest Lesson 15",
+        "estimatedMinutes": 10,
+        "objectiveIds": [
+          "obj-u15-book"
+        ],
+        "steps": [
+          {
+            "id": "u15-st-book-work",
+            "kind": "BOOK",
+            "title": "Work Lesson 15 in your copy",
+            "body": "Do Lesson 15 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "bookDirection": "Owned-book assignment for Lesson 15: printed pages 171-187. PDF indexes 183-199 are file locators, not printed pages. Observed section locators: §15.1 p171 (PDF 183); §15.2 p171 (PDF 183); §15.3 p174 (PDF 186); §15.4 p175 (PDF 187); §15.5 p176 (PDF 188); §15.6 p176 (PDF 188); §15.7 p177 (PDF 189); §15.9 p178 (PDF 190); §15.10 p178 (PDF 190); §15.11 p178 (PDF 190); §15.12 p181 (PDF 193); §15.13 p182 (PDF 194); §15.14 p184 (PDF 196). Observed exercise locators: 15/1 p172/PDF184; 15/2 p173/PDF185; 15/3 p174/PDF186; 15/4 p175/PDF187; 15/5 p175/PDF187; 15/6 p177/PDF189; 15/7 p182/PDF194; 15/8 p185/PDF197; 15/9 p186/PDF198. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check."
+          },
+          {
+            "id": "u15-st-book",
+            "kind": "BOOK",
+            "title": "Record Lesson 15 book work",
+            "body": "When you have done Lesson 15 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+            "bookDirection": "Owned-book assignment for Lesson 15: printed pages 171-187. PDF indexes 183-199 are file locators, not printed pages. Observed section locators: §15.1 p171 (PDF 183); §15.2 p171 (PDF 183); §15.3 p174 (PDF 186); §15.4 p175 (PDF 187); §15.5 p176 (PDF 188); §15.6 p176 (PDF 188); §15.7 p177 (PDF 189); §15.9 p178 (PDF 190); §15.10 p178 (PDF 190); §15.11 p178 (PDF 190); §15.12 p181 (PDF 193); §15.13 p182 (PDF 194); §15.14 p184 (PDF 196). Observed exercise locators: 15/1 p172/PDF184; 15/2 p173/PDF185; 15/3 p174/PDF186; 15/4 p175/PDF187; 15/5 p175/PDF187; 15/6 p177/PDF189; 15/7 p182/PDF194; 15/8 p185/PDF197; 15/9 p186/PDF198. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check."
+          },
+          {
+            "id": "u15-st-anki-direction",
+            "kind": "ANKI",
+            "title": "Unit 15 AnkiDroid direction",
+            "body": "Unit 15 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "dominantAction": "Self-attest",
+            "companionDirection": "Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check."
+          },
+          {
+            "id": "u15-st-binder-direction",
+            "kind": "BINDER",
+            "title": "Unit 15 binder prompt",
+            "body": "Unit 15 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "A binder prompt is one specific note, not a score."
+          },
+          {
+            "id": "u15-st-tutor-direction",
+            "kind": "TUTOR",
+            "title": "Unit 15 optional tutor",
+            "body": "Unit 15 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "Tutor work is optional and does not count as demonstrated ability."
+          },
+          {
+            "id": "u15-st-cumulative-direction",
+            "kind": "ORIENT",
+            "title": "Unit 15 cumulative review",
+            "body": "Unit 15 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "Unit 15 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked."
+          }
+        ]
+      }
+    ],
+    "advancement": {
+      "requireInstruction": true,
+      "requireBookSelfAttestation": true,
+      "requireAppChecks": true,
+      "minimumDistinctChecks": 6,
+      "requireDueReview": true,
+      "tutorOptional": true,
+      "cumulativeReviewPolicyId": "unit15-prior-reading-impersonal-state-v1"
+    }
+  },
+  "afterUnit": {
+    "number": 15,
+    "id": "unit-15",
+    "title": "Requests, the imperative, and consolidation of aspect use",
+    "shortLabel": "Requests",
+    "topicSummary": "Proposed Unit 15 is a development unit awaiting qualified review. It contains admitted records for this lesson's governed objectives, plus separate book self-attestation. It is not installed and the owned-edition mapping is not signed.",
+    "installState": "DEVELOPMENT",
+    "readiness": "CONTENT_COMPLETE_REVIEW_PENDING",
+    "penguinLesson": 15,
+    "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
+    "mappingNote": "Proposed Lesson 15, printed pages 171-187. Independently stated topic scope: Requests, imperative forms, and consolidation of aspect use. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.",
+    "prerequisiteUnitNumbers": [
+      14
+    ],
+    "estimatedMinutes": 54,
+    "objectives": [
+      {
+        "id": "obj-u15-imperative",
+        "unitNumber": 15,
+        "title": "Choose the admitted request row",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u15-st-orient",
+          "u15-st-teach-imperative-1",
+          "u15-st-teach-imperative-contrast",
+          "u15-st-teach-imperative-2",
+          "u15-st-teach-imperative-3"
+        ],
+        "exampleIds": [
+          "ex-or-u15-imperative-0",
+          "ex-or-u15-imperative-1",
+          "ex-or-u15-imperative-2",
+          "ex-u15-imperative-3"
+        ],
+        "practiceStepIds": [
+          "u15-st-guided-imperative-1"
+        ],
+        "checkItemIds": [
+          "u15-i-imperative-1",
+          "u15-i-imperative-2"
+        ],
+        "remediationStepIds": [
+          "u15-st-rem-imperative"
+        ]
+      },
+      {
+        "id": "obj-u15-say-request",
+        "unitNumber": 15,
+        "title": "Choose the admitted say-request row",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u15-st-orient",
+          "u15-st-teach-say-request-1",
+          "u15-st-teach-say-request-2",
+          "u15-st-teach-say-request-3",
+          "u15-st-teach-say-request-4"
+        ],
+        "exampleIds": [
+          "ex-or-u15-say-request-0",
+          "ex-or-u15-say-request-1",
+          "ex-or-u15-say-request-2",
+          "ex-or-u15-say-request-3",
+          "ex-or-u15-say-request-4",
+          "ex-or-u15-say-request-5"
+        ],
+        "practiceStepIds": [
+          "u15-st-guided-say-request-1"
+        ],
+        "checkItemIds": [
+          "u15-i-say-request-1",
+          "u15-i-say-request-2"
+        ],
+        "remediationStepIds": [
+          "u15-st-rem-say-request"
+        ]
+      },
+      {
+        "id": "obj-u15-aspect-consolidate",
+        "unitNumber": 15,
+        "title": "Choose the admitted aspect pair",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u15-st-orient",
+          "u15-st-teach-aspect-consolidate-1",
+          "u15-st-teach-aspect-consolidate-2",
+          "u15-st-teach-aspect-consolidate-3"
+        ],
+        "exampleIds": [
+          "ex-u15-aspect-consolidate-0",
+          "ex-u15-aspect-consolidate-1",
+          "ex-u15-aspect-consolidate-2",
+          "ex-u15-aspect-consolidate-3"
+        ],
+        "practiceStepIds": [
+          "u15-st-guided-aspect-consolidate-1"
+        ],
+        "checkItemIds": [
+          "u15-i-aspect-consolidate-1",
+          "u15-i-aspect-consolidate-2"
+        ],
+        "remediationStepIds": [
+          "u15-st-rem-aspect-consolidate"
+        ]
+      },
+      {
+        "id": "obj-u15-book",
+        "unitNumber": 15,
+        "title": "Self-attest Lesson 15 book work",
+        "kind": "SELF_ATTESTATION",
+        "instructionStepIds": [
+          "u15-st-book-work",
+          "u15-st-book"
+        ],
+        "exampleIds": [],
+        "practiceStepIds": [],
+        "checkItemIds": [],
+        "remediationStepIds": []
+      }
+    ],
+    "sessions": [
+      {
+        "id": "u15-s-orient",
+        "title": "Admitted request rows and aspect pairs",
+        "estimatedMinutes": 8,
+        "objectiveIds": [
+          "obj-u15-imperative",
+          "obj-u15-say-request",
+          "obj-u15-aspect-consolidate",
+          "obj-u15-book"
+        ],
+        "steps": [
+          {
+            "id": "u15-st-orient",
+            "kind": "ORIENT",
+            "title": "Admitted request rows and aspect pairs",
+            "body": "Proposed Unit 15 uses frozen records for request rows and aspect pairs. Qualified review is pending.",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "bookDirection": "Open Lesson 15 in the copy you own. The app records do not replace that lesson."
+          }
+        ]
+      },
+      {
+        "id": "u15-s-imperative",
+        "title": "Choose the admitted request row",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u15-imperative"
+        ],
+        "steps": [
+          {
+            "id": "u15-st-teach-imperative-1",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "чита́й — read. чита́йте — read. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u15-imperative-0",
+              "ex-or-u15-imperative-1"
+            ]
+          },
+          {
+            "id": "u15-st-teach-imperative-contrast",
+            "kind": "TEACH",
+            "title": "Distinguish the supplied imperative and infinitive forms",
+            "body": "чита́йте is the plural imperative form of the reading verb shown here, used for multiple addressees or polite address to one person. It extends the shown singular form with the plural/polite ending. чита́ть is the infinitive, not the inflected plural imperative requested. This identifies the supplied form, not every possible way to express a command.\n\nчита́й is the singular imperative form of the reading verb, used for one informal addressee. чита́ть is the infinitive, not that inflected imperative form. The cue shows the plural/polite form, while this question asks for the singular imperative table row.\n\nчита́й is the singular imperative form for one informal addressee. чита́йте is the plural imperative form and can also address one person politely. Both are imperative forms of the shown infinitive; the requested singular table row selects the informal form, rather than identifying the actual number of listeners from spelling alone.",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u15-imperative-0",
+              "ex-or-u15-imperative-1",
+              "ex-or-u15-imperative-2"
+            ]
+          },
+          {
+            "id": "u15-st-teach-imperative-2",
+            "kind": "TEACH",
+            "title": "Admitted instruction",
+            "body": "Купи, пожалуйста, свежие фрукты.",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ]
+          },
+          {
+            "id": "u15-st-teach-imperative-3",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "чита́ть — read. Купи, пожалуйста, свежие фрукты. — Please, buy fresh fruits. ",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u15-imperative-2",
+              "ex-u15-imperative-3"
+            ]
+          },
+          {
+            "id": "u15-st-guided-imperative-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u15-g-imperative-0"
+            ],
+            "remediationStepId": "u15-st-rem-imperative"
+          },
+          {
+            "id": "u15-st-rem-imperative",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": "чита́й — read. чита́йте — read. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.\n\nчита́йте is the plural imperative form of the reading verb shown here, used for multiple addressees or polite address to one person. It extends the shown singular form with the plural/polite ending. чита́ть is the infinitive, not the inflected plural imperative requested. This identifies the supplied form, not every possible way to express a command.\n\nчита́й is the singular imperative form of the reading verb, used for one informal addressee. чита́ть is the infinitive, not that inflected imperative form. The cue shows the plural/polite form, while this question asks for the singular imperative table row.\n\nчита́й is the singular imperative form for one informal addressee. чита́йте is the plural imperative form and can also address one person politely. Both are imperative forms of the shown infinitive; the requested singular table row selects the informal form, rather than identifying the actual number of listeners from spelling alone.\n\nКупи, пожалуйста, свежие фрукты.\n\nчита́ть — read. Купи, пожалуйста, свежие фрукты. — Please, buy fresh fruits. ",
+            "exampleIds": [
+              "ex-or-u15-imperative-0",
+              "ex-or-u15-imperative-1",
+              "ex-or-u15-imperative-2",
+              "ex-u15-imperative-3"
+            ]
+          },
+          {
+            "id": "u15-st-check-imperative",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u15-i-imperative-1",
+              "u15-i-imperative-2"
+            ],
+            "remediationStepId": "u15-st-rem-imperative"
+          }
+        ]
+      },
+      {
+        "id": "u15-s-say-request",
+        "title": "Choose the admitted say-request row",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u15-say-request"
+        ],
+        "steps": [
+          {
+            "id": "u15-st-teach-say-request-1",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "скажи́ — say. скажи́те — say. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u15-say-request-0",
+              "ex-or-u15-say-request-1"
+            ]
+          },
+          {
+            "id": "u15-st-guided-say-request-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u15-g-say-request-0"
+            ],
+            "remediationStepId": "u15-st-rem-say-request"
+          },
+          {
+            "id": "u15-st-teach-say-request-2",
+            "kind": "TEACH",
+            "title": "Admitted instruction",
+            "body": "'''говорить''' (impf.) and '''сказать''' (pf.) - 'to say, speak, tell'",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ]
+          },
+          {
+            "id": "u15-st-teach-say-request-3",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "сказа́ть — say. да́й — give. ",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u15-say-request-2",
+              "ex-or-u15-say-request-3"
+            ]
+          },
+          {
+            "id": "u15-st-teach-say-request-4",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "да́йте — give. дать — give. ",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u15-say-request-4",
+              "ex-or-u15-say-request-5"
+            ]
+          },
+          {
+            "id": "u15-st-rem-say-request",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": "'''говорить''' (impf.) and '''сказать''' (pf.) - 'to say, speak, tell'",
+            "exampleIds": [
+              "ex-or-u15-say-request-0",
+              "ex-or-u15-say-request-1"
+            ]
+          },
+          {
+            "id": "u15-st-check-say-request",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u15-i-say-request-1",
+              "u15-i-say-request-2"
+            ],
+            "remediationStepId": "u15-st-rem-say-request"
+          }
+        ]
+      },
+      {
+        "id": "u15-s-aspect-consolidate",
+        "title": "Choose the admitted aspect pair",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u15-aspect-consolidate"
+        ],
+        "steps": [
+          {
+            "id": "u15-st-teach-aspect-consolidate-1",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "говори́ть — to speak. сказа́ть — to speak. ",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "exampleIds": [
+              "ex-u15-aspect-consolidate-0",
+              "ex-u15-aspect-consolidate-1"
+            ]
+          },
+          {
+            "id": "u15-st-guided-aspect-consolidate-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u15-g-aspect-consolidate-0"
+            ],
+            "remediationStepId": "u15-st-rem-aspect-consolidate"
+          },
+          {
+            "id": "u15-st-teach-aspect-consolidate-2",
+            "kind": "TEACH",
+            "title": "Admitted instruction",
+            "body": "Let us take the verbs \"to speak\" (imperfective: '''говори́ть''', perfective: '''сказа́ть''') and \"to do\" (imper.: '''де́лать''', per.: '''сде́лать''').",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ]
+          },
+          {
+            "id": "u15-st-teach-aspect-consolidate-3",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "де́лать — to do. сде́лать — to do. ",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "exampleIds": [
+              "ex-u15-aspect-consolidate-2",
+              "ex-u15-aspect-consolidate-3"
+            ]
+          },
+          {
+            "id": "u15-st-rem-aspect-consolidate",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": "Let us take the verbs \"to speak\" (imperfective: '''говори́ть''', perfective: '''сказа́ть''') and \"to do\" (imper.: '''де́лать''', per.: '''сде́лать''').",
+            "exampleIds": [
+              "ex-u15-aspect-consolidate-0",
+              "ex-u15-aspect-consolidate-1"
+            ]
+          },
+          {
+            "id": "u15-st-check-aspect-consolidate",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u15-i-aspect-consolidate-1",
+              "u15-i-aspect-consolidate-2"
+            ],
+            "remediationStepId": "u15-st-rem-aspect-consolidate"
+          }
+        ]
+      },
+      {
+        "id": "u15-s-book",
+        "title": "Self-attest Lesson 15",
+        "estimatedMinutes": 10,
+        "objectiveIds": [
+          "obj-u15-book"
+        ],
+        "steps": [
+          {
+            "id": "u15-st-book-work",
+            "kind": "BOOK",
+            "title": "Work Lesson 15 in your copy",
+            "body": "Do Lesson 15 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "bookDirection": "Owned-book assignment for Lesson 15: printed pages 171-187. PDF indexes 183-199 are file locators, not printed pages. Observed section locators: §15.1 p171 (PDF 183); §15.2 p171 (PDF 183); §15.3 p174 (PDF 186); §15.4 p175 (PDF 187); §15.5 p176 (PDF 188); §15.6 p176 (PDF 188); §15.7 p177 (PDF 189); §15.9 p178 (PDF 190); §15.10 p178 (PDF 190); §15.11 p178 (PDF 190); §15.12 p181 (PDF 193); §15.13 p182 (PDF 194); §15.14 p184 (PDF 196). Observed exercise locators: 15/1 p172/PDF184; 15/2 p173/PDF185; 15/3 p174/PDF186; 15/4 p175/PDF187; 15/5 p175/PDF187; 15/6 p177/PDF189; 15/7 p182/PDF194; 15/8 p185/PDF197; 15/9 p186/PDF198. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check."
+          },
+          {
+            "id": "u15-st-book",
+            "kind": "BOOK",
+            "title": "Record Lesson 15 book work",
+            "body": "When you have done Lesson 15 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+            "bookDirection": "Owned-book assignment for Lesson 15: printed pages 171-187. PDF indexes 183-199 are file locators, not printed pages. Observed section locators: §15.1 p171 (PDF 183); §15.2 p171 (PDF 183); §15.3 p174 (PDF 186); §15.4 p175 (PDF 187); §15.5 p176 (PDF 188); §15.6 p176 (PDF 188); §15.7 p177 (PDF 189); §15.9 p178 (PDF 190); §15.10 p178 (PDF 190); §15.11 p178 (PDF 190); §15.12 p181 (PDF 193); §15.13 p182 (PDF 194); §15.14 p184 (PDF 196). Observed exercise locators: 15/1 p172/PDF184; 15/2 p173/PDF185; 15/3 p174/PDF186; 15/4 p175/PDF187; 15/5 p175/PDF187; 15/6 p177/PDF189; 15/7 p182/PDF194; 15/8 p185/PDF197; 15/9 p186/PDF198. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check."
+          },
+          {
+            "id": "u15-st-anki-direction",
+            "kind": "ANKI",
+            "title": "Unit 15 AnkiDroid direction",
+            "body": "Unit 15 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "dominantAction": "Self-attest",
+            "companionDirection": "Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check."
+          },
+          {
+            "id": "u15-st-binder-direction",
+            "kind": "BINDER",
+            "title": "Unit 15 binder prompt",
+            "body": "Unit 15 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "A binder prompt is one specific note, not a score."
+          },
+          {
+            "id": "u15-st-tutor-direction",
+            "kind": "TUTOR",
+            "title": "Unit 15 optional tutor",
+            "body": "Unit 15 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "Tutor work is optional and does not count as demonstrated ability."
+          },
+          {
+            "id": "u15-st-cumulative-direction",
+            "kind": "ORIENT",
+            "title": "Unit 15 cumulative review",
+            "body": "Unit 15 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "Unit 15 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked."
+          }
+        ]
+      }
+    ],
+    "advancement": {
+      "requireInstruction": true,
+      "requireBookSelfAttestation": true,
+      "requireAppChecks": true,
+      "minimumDistinctChecks": 6,
+      "requireDueReview": true,
+      "tutorOptional": true,
+      "cumulativeReviewPolicyId": "unit15-prior-reading-impersonal-state-v1"
+    }
+  },
+  "beforeSession": {
+    "id": "u15-s-imperative",
+    "title": "Choose the admitted request row",
+    "estimatedMinutes": 12,
+    "objectiveIds": [
+      "obj-u15-imperative"
+    ],
+    "steps": [
+      {
+        "id": "u15-st-teach-imperative-1",
+        "kind": "TEACH",
+        "title": "Admitted lines",
+        "body": "чита́й — read. чита́йте — read. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+        "referenceIds": [
+          "ref-u1115-attribution"
+        ],
+        "exampleIds": [
+          "ex-or-u15-imperative-0",
+          "ex-or-u15-imperative-1"
+        ]
+      },
+      {
+        "id": "u15-st-guided-imperative-1",
+        "kind": "GUIDED",
+        "title": "Guided practice",
+        "body": "Choose the admitted record. The feedback states the frozen field.",
+        "itemIds": [
+          "u15-g-imperative-0"
+        ],
+        "remediationStepId": "u15-st-rem-imperative"
+      },
+      {
+        "id": "u15-st-teach-imperative-2",
+        "kind": "TEACH",
+        "title": "Admitted instruction",
+        "body": "Купи, пожалуйста, свежие фрукты.",
+        "referenceIds": [
+          "ref-u1115-attribution"
+        ]
+      },
+      {
+        "id": "u15-st-teach-imperative-3",
+        "kind": "TEACH",
+        "title": "Admitted lines",
+        "body": "чита́ть — read. Купи, пожалуйста, свежие фрукты. — Please, buy fresh fruits. ",
+        "referenceIds": [
+          "ref-u1115-attribution"
+        ],
+        "exampleIds": [
+          "ex-or-u15-imperative-2",
+          "ex-u15-imperative-3"
+        ]
+      },
+      {
+        "id": "u15-st-rem-imperative",
+        "kind": "REMEDIATE",
+        "title": "Remediation",
+        "body": "Купи, пожалуйста, свежие фрукты.",
+        "exampleIds": [
+          "ex-or-u15-imperative-0",
+          "ex-or-u15-imperative-1"
+        ]
+      },
+      {
+        "id": "u15-st-check-imperative",
+        "kind": "CHECK",
+        "title": "Independent checks",
+        "body": "These checks use only admitted records. A miss returns to the explanation.",
+        "itemIds": [
+          "u15-i-imperative-1",
+          "u15-i-imperative-2"
+        ],
+        "remediationStepId": "u15-st-rem-imperative"
+      }
+    ]
+  },
+  "afterSession": {
+    "id": "u15-s-imperative",
+    "title": "Choose the admitted request row",
+    "estimatedMinutes": 12,
+    "objectiveIds": [
+      "obj-u15-imperative"
+    ],
+    "steps": [
+      {
+        "id": "u15-st-teach-imperative-1",
+        "kind": "TEACH",
+        "title": "Admitted lines",
+        "body": "чита́й — read. чита́йте — read. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+        "referenceIds": [
+          "ref-u1115-attribution"
+        ],
+        "exampleIds": [
+          "ex-or-u15-imperative-0",
+          "ex-or-u15-imperative-1"
+        ]
+      },
+      {
+        "id": "u15-st-teach-imperative-contrast",
+        "kind": "TEACH",
+        "title": "Distinguish the supplied imperative and infinitive forms",
+        "body": "чита́йте is the plural imperative form of the reading verb shown here, used for multiple addressees or polite address to one person. It extends the shown singular form with the plural/polite ending. чита́ть is the infinitive, not the inflected plural imperative requested. This identifies the supplied form, not every possible way to express a command.\n\nчита́й is the singular imperative form of the reading verb, used for one informal addressee. чита́ть is the infinitive, not that inflected imperative form. The cue shows the plural/polite form, while this question asks for the singular imperative table row.\n\nчита́й is the singular imperative form for one informal addressee. чита́йте is the plural imperative form and can also address one person politely. Both are imperative forms of the shown infinitive; the requested singular table row selects the informal form, rather than identifying the actual number of listeners from spelling alone.",
+        "referenceIds": [
+          "ref-u1115-attribution"
+        ],
+        "exampleIds": [
+          "ex-or-u15-imperative-0",
+          "ex-or-u15-imperative-1",
+          "ex-or-u15-imperative-2"
+        ]
+      },
+      {
+        "id": "u15-st-teach-imperative-2",
+        "kind": "TEACH",
+        "title": "Admitted instruction",
+        "body": "Купи, пожалуйста, свежие фрукты.",
+        "referenceIds": [
+          "ref-u1115-attribution"
+        ]
+      },
+      {
+        "id": "u15-st-teach-imperative-3",
+        "kind": "TEACH",
+        "title": "Admitted lines",
+        "body": "чита́ть — read. Купи, пожалуйста, свежие фрукты. — Please, buy fresh fruits. ",
+        "referenceIds": [
+          "ref-u1115-attribution"
+        ],
+        "exampleIds": [
+          "ex-or-u15-imperative-2",
+          "ex-u15-imperative-3"
+        ]
+      },
+      {
+        "id": "u15-st-guided-imperative-1",
+        "kind": "GUIDED",
+        "title": "Guided practice",
+        "body": "Choose the admitted record. The feedback states the frozen field.",
+        "itemIds": [
+          "u15-g-imperative-0"
+        ],
+        "remediationStepId": "u15-st-rem-imperative"
+      },
+      {
+        "id": "u15-st-rem-imperative",
+        "kind": "REMEDIATE",
+        "title": "Remediation",
+        "body": "чита́й — read. чита́йте — read. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.\n\nчита́йте is the plural imperative form of the reading verb shown here, used for multiple addressees or polite address to one person. It extends the shown singular form with the plural/polite ending. чита́ть is the infinitive, not the inflected plural imperative requested. This identifies the supplied form, not every possible way to express a command.\n\nчита́й is the singular imperative form of the reading verb, used for one informal addressee. чита́ть is the infinitive, not that inflected imperative form. The cue shows the plural/polite form, while this question asks for the singular imperative table row.\n\nчита́й is the singular imperative form for one informal addressee. чита́йте is the plural imperative form and can also address one person politely. Both are imperative forms of the shown infinitive; the requested singular table row selects the informal form, rather than identifying the actual number of listeners from spelling alone.\n\nКупи, пожалуйста, свежие фрукты.\n\nчита́ть — read. Купи, пожалуйста, свежие фрукты. — Please, buy fresh fruits. ",
+        "exampleIds": [
+          "ex-or-u15-imperative-0",
+          "ex-or-u15-imperative-1",
+          "ex-or-u15-imperative-2",
+          "ex-u15-imperative-3"
+        ]
+      },
+      {
+        "id": "u15-st-check-imperative",
+        "kind": "CHECK",
+        "title": "Independent checks",
+        "body": "These checks use only admitted records. A miss returns to the explanation.",
+        "itemIds": [
+          "u15-i-imperative-1",
+          "u15-i-imperative-2"
+        ],
+        "remediationStepId": "u15-st-rem-imperative"
+      }
+    ]
+  },
+  "changedFields": [
+    "obj-u15-imperative.instructionStepIds",
+    "u15-s-imperative.steps.order",
+    "u15-st-teach-imperative-contrast",
+    "u15-st-rem-imperative.body",
+    "u15-st-rem-imperative.exampleIds"
+  ],
+  "allOtherAssetValues": "JSON_VALUE_IDENTICAL",
+  "provenanceRecordCount": 6914,
+  "allProvenanceRecords": "JSON_VALUE_IDENTICAL",
+  "newProvenanceRecords": 0,
+  "reusedOriginalEnglishCoverage": [
+    "prov-ca-u15-feedback-u15-g-imperative-0",
+    "prov-ca-u15-feedback-u15-i-imperative-1",
+    "prov-ca-u15-feedback-u15-i-imperative-2"
+  ],
+  "reusedEnglishBody": "чита́йте is the plural imperative form of the reading verb shown here, used for multiple addressees or polite address to one person. It extends the shown singular form with the plural/polite ending. чита́ть is the infinitive, not the inflected plural imperative requested. This identifies the supplied form, not every possible way to express a command.\n\nчита́й is the singular imperative form of the reading verb, used for one informal addressee. чита́ть is the infinitive, not that inflected imperative form. The cue shows the plural/polite form, while this question asks for the singular imperative table row.\n\nчита́й is the singular imperative form for one informal addressee. чита́йте is the plural imperative form and can also address one person politely. Both are imperative forms of the shown infinitive; the requested singular table row selects the informal form, rather than identifying the actual number of listeners from spelling alone.",
+  "provenanceTreatment": "Exact arrangement of existing independently authored feedback;existing original English constituent records remain. Remediation additionally includes unchanged separately CC BY-SA licensed cards/examples;no composite is reclassified as newly original English.",
+  "ordinaryMinimumPreserved": 6,
+  "unit16MinimumPreserved": 10,
+  "unit16Policy": "NOT_ACTIVATED",
+  "policiesUnchanged": true
+}

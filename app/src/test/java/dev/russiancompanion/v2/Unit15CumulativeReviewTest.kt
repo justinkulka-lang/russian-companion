@@ -102,7 +102,7 @@ class Unit15CumulativeReviewTest {
         }
     }
 
-    @Test fun schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot() {
+    @Test fun schema11RowsRemainStoredButChangedImperativeInstructionRequiresRepair() {
         val old = oldPack("bcd78c32ccd6aa87d9b1fb53f4e79b2a4bf2572a")
         val p = pack(); val name = "unit15-old-${System.nanoTime()}.db"
         try {
@@ -113,12 +113,14 @@ class Unit15CumulativeReviewTest {
                 s.v2SaveProfile(s.v2Profile().copy(currentUnitNumber = 16))
             }
             LocalStore.openNamed(context(), name).use { s ->
-                assertEquals((1..15).toSet(), currentCompletedUnitNumbers(p, s.v2LearnerView()))
-                assertTrue(canOpenUnit(unitState(p, p.unit(16)!!, s.v2LearnerView())))
+                assertEquals((1..14).toSet(), currentCompletedUnitNumbers(p, s.v2LearnerView()))
+                assertFalse(canOpenUnit(unitState(p, p.unit(16)!!, s.v2LearnerView())))
                 assertFalse(s.cumulativeReviewHistory().first.any { it.targetUnit == 15 })
                 assertFalse(advancementDecision(p, p.unit(15)!!, s.v2LearnerView()).allowed)
                 val oldAssignments = s.cumulativeReviewHistory().first
                 oldAssignments.forEach { assertTrue(reviewAssignmentCurrent(p, it)) }
+                assertTrue(s.governedLearnerDocument().unitCompletions.any { it.unitNumber == 15 })
+                ordinary(p, s, 15) // Repair changed instruction while retaining earlier assignment identities.
                 val before = s.governedLearnerFingerprint(); val a = open(p, s)
                 assertNotEquals(before, s.governedLearnerFingerprint())
                 answer(p, s, a, 0); answer(p, s, a, 1); assertTrue(advance(p, s))
@@ -154,9 +156,9 @@ class Unit15CumulativeReviewTest {
                     isolatedStore("case").use { target ->
                         assertEquals(GovernedReplaceOutcome.REPLACED, target.replaceGovernedLearner(read.backup.document, emptyList()))
                         assertEquals((1..10).toSet(), currentCompletedUnitNumbers(p, target.v2LearnerView()))
-                        // Unit15 own legacy instruction survives; fixed-point prerequisites reject stale Unit11/Unit14.
-                        assertTrue(ordinaryUnitRequirements(p, p.unit(15)!!, target.v2LearnerView()).allowed)
-                        assertTrue(historicalReviewCompletionCurrent(p, p.unit(15)!!, target.v2LearnerView()))
+                        // Raw Unit15 rows survive;changed Unit15 instruction and stale Unit11/Unit14 require repair.
+                        assertFalse(ordinaryUnitRequirements(p, p.unit(15)!!, target.v2LearnerView()).allowed)
+                        assertFalse(historicalReviewCompletionCurrent(p, p.unit(15)!!, target.v2LearnerView()))
                         assertFalse(canOpenUnit(unitState(p, p.unit(16)!!, target.v2LearnerView())))
                         assertTrue(target.governedLearnerDocument().unitCompletions.any { it.unitNumber == 15 })
                         assertFalse(11 in currentCompletedUnitNumbers(p, target.v2LearnerView()))
