@@ -11,12 +11,12 @@ Unit 19 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 4f5cb8024d3f68a37052fdf85b5755bffa2a0904
-- Unit content-review SHA-256: 5bec5c89d70f5928b6d7e03ab4ca35ad1b226451abe832e915b0f6f72f0e7907
+- Curriculum source commit: 49033e19f9a090793ff64f3f6e9d44bc4c0d5aac
+- Unit content-review SHA-256: 3096baba4cdc192ac7d701f6eedd3c8ca0be12c54ab64efa52b0c25fdbf83a5e
 - Mapping-package SHA-256: 56534b156e7412d1bd8e51bf493e8d80f4b58461446382483a8ed118681dd6b2
-- Pack content-review SHA-256: df8556d9786312890b5a8dfb2946cb734b165b7b02af0649ed1ec3501980d4ff
-- Review-package SHA-256: 02f61edc377dcca75d29dbb0100f36676ad7cf71eeb0af034544f42099603d23
-- Repository source SHA-256: 8aa936d21c6ad8d649fa6bcef3293db986ae949be38901aa4148c7f71dee0772
+- Pack content-review SHA-256: 697a4ff11559f17f4e36e7e4308518adb62c2b80312f150618f81a01c9dbcd6b
+- Review-package SHA-256: 4cb4932fb65bf7fc4c15df26a580f69cc4ac6b25930fc9e014de5f9f1ff74f65
+- Repository source SHA-256: b56bca3cd134adb8fbf7d14f512e566178c4d0b13e9722a38b3469681fbbdf80
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -96,13 +96,13 @@ estimatedMinutes=66
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 4abb3be838cbccf1b6d562d14b13b108e028e992d6e4b22e84e404e2b0a9d9b1
+- Content hash: ff9892c99d43f372a307dd7081cf2981d7be184270e504ecb7b1074f987124d5
 
 requireInstruction=true
 requireBookSelfAttestation=true
 requireAppChecks=true
 minimumDistinctChecks=2
-requireDueReview=false
+requireDueReview=true
 tutorOptional=true
 
 ### OBJECTIVE `obj-u19-prefix-caution`

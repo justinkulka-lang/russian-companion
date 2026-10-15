@@ -434,7 +434,7 @@ class Aud44CorrectionTest {
         val PRIOR_CONTENT_DIGESTS = mapOf(
             16 to "31893860b30df7c38248356c9014db1a361110f7a8a51ce53ae7ed6fd61bae87",
             18 to "603827ede7e8394cef33bf1af9fb4ef6217a80f0e6624f1bd385e4a0766b69ac",
-            19 to "5bec5c89d70f5928b6d7e03ab4ca35ad1b226451abe832e915b0f6f72f0e7907",
+            19 to "3096baba4cdc192ac7d701f6eedd3c8ca0be12c54ab64efa52b0c25fdbf83a5e",
             20 to "bb408265fb5239daeb86d43c007061bff330e02a0a9afc1aa677526ccf57302b",
         )
     }
