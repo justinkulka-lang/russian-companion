@@ -1344,7 +1344,7 @@ internal class LocalStore private constructor(
         }
         database.runInTransaction {
             val latest = readV2Learner()
-            if (unitNumber in 3..13 && pack == null) error("Unit $unitNumber requires verified cumulative-review evidence")
+            if (unitNumber in 3..14 && pack == null) error("Unit $unitNumber requires verified cumulative-review evidence")
             if (pack != null && (!canOpenUnit(unitState(pack, pack.unit(unitNumber) ?: error("missing unit"), latest)) ||
                 !advancementDecision(pack, pack.unit(unitNumber)!!, latest).allowed))
                 error("current advancement evidence is incomplete")
