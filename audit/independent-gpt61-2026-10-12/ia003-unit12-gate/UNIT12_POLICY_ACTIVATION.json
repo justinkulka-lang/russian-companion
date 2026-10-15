@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "baselineCommit": "c90f9d8d0be1ab7d417205f32cc27dab42033e07",
+  "status": "BOUNDED_ENGINEERING_ONLY_IA003_OPEN",
+  "targetUnit": 12,
+  "policyId": "unit12-prior-reading-past-gender-v1",
+  "owners": [
+    1,
+    11
+  ],
+  "beforeAdvancement": {
+    "requireInstruction": true,
+    "requireBookSelfAttestation": true,
+    "requireAppChecks": true,
+    "minimumDistinctChecks": 12,
+    "requireDueReview": false,
+    "tutorOptional": true
+  },
+  "afterAdvancement": {
+    "requireInstruction": true,
+    "requireBookSelfAttestation": true,
+    "requireAppChecks": true,
+    "minimumDistinctChecks": 12,
+    "requireDueReview": true,
+    "tutorOptional": true,
+    "cumulativeReviewPolicyId": "unit12-prior-reading-past-gender-v1"
+  },
+  "changedUnitFields": [
+    "advancement.requireDueReview",
+    "advancement.cumulativeReviewPolicyId"
+  ],
+  "ordinaryMinimumPreserved": 12,
+  "nativeScoredProvenanceAndOtherUnitsUnchanged": true,
+  "earlierPolicyDefinitionsUnchanged": true,
+  "privateReferenceCopied": false,
+  "releaseAuthorized": false,
+  "earlierPolicySourceHashes": {
+    "3": "5375c7c0fde0d156a7e64a97f3b5669b0690c8e2f8ab576fe225e6c84963ae70",
+    "4": "d881b5cfbea335be6e5ab2e869c64cd54598883d1cc60dc2a3942ee4e9979355",
+    "5": "6befdcee801a9815fdada5fb043372b962d443913c6197a4153da566345800cd",
+    "6": "f6132e00d70828fbe6792c134958b5a47c68d905023547091670acecb2ea0179",
+    "7": "7294cbaeaeea5a82f83dc05ff0c6ce6cfccf9ca87e0ea85ea2c4e07f37111ac7",
+    "8": "b2f1498ca1f846e21a502ea05bd65602ab537bab32622574b6c77f983f080a00",
+    "9": "da0b455f6313adba561973aabb57323a09c17ab2a6eef2608159727a41f57283",
+    "10": "eb0f05f2d74549a0a2dfa6e2e3cef67364fa57eaeeb067d91c84e8cd29b516b4",
+    "11": "b5e1d23edd2cd90c16b149e89286dcb1eebbbbb21d65c4e6f141f8e45e234b1e"
+  },
+  "initialFixtureCorrections": [
+    "Copied Unit10 teaching-card identifiers replaced by actual Unit11 gender identifiers;four complete-body assertions retained.",
+    "Historical direct-prerequisite access asserted explicitly;new advancement remains blocked without current Unit11 evidence. No transitive-access implementation change."
+  ]
+}

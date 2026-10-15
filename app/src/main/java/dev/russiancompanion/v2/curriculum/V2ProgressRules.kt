@@ -215,7 +215,7 @@ internal fun continueTarget(pack: V2CurriculumPack, learner: V2LearnerView): V2C
  * to the failed check.
  */
 internal fun reviewedGuidedPractice(pack: V2CurriculumPack, remediationStepId: String): List<String> {
-    val explicitReviewTeaching = listOfNotNull(cumulativeReviewPolicy(3), cumulativeReviewPolicy(4), cumulativeReviewPolicy(5), cumulativeReviewPolicy(6), cumulativeReviewPolicy(7), cumulativeReviewPolicy(8), cumulativeReviewPolicy(9), cumulativeReviewPolicy(10), cumulativeReviewPolicy(11))
+    val explicitReviewTeaching = listOfNotNull(cumulativeReviewPolicy(3), cumulativeReviewPolicy(4), cumulativeReviewPolicy(5), cumulativeReviewPolicy(6), cumulativeReviewPolicy(7), cumulativeReviewPolicy(8), cumulativeReviewPolicy(9), cumulativeReviewPolicy(10), cumulativeReviewPolicy(11), cumulativeReviewPolicy(12))
         .any { policy -> policy.pool.any { it.remediationStepId == remediationStepId } }
     val practiceIds = pack.units.flatMap { it.objectives }
         .filter { remediationStepId in it.remediationStepIds ||
