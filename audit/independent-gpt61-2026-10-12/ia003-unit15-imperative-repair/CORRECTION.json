@@ -620,7 +620,7 @@
           {
             "id": "u15-st-teach-imperative-contrast",
             "kind": "TEACH",
-            "title": "Distinguish the supplied imperative and infinitive forms",
+            "title": "Admitted instruction",
             "body": "чита́йте is the plural imperative form of the reading verb shown here, used for multiple addressees or polite address to one person. It extends the shown singular form with the plural/polite ending. чита́ть is the infinitive, not the inflected plural imperative requested. This identifies the supplied form, not every possible way to express a command.\n\nчита́й is the singular imperative form of the reading verb, used for one informal addressee. чита́ть is the infinitive, not that inflected imperative form. The cue shows the plural/polite form, while this question asks for the singular imperative table row.\n\nчита́й is the singular imperative form for one informal addressee. чита́йте is the plural imperative form and can also address one person politely. Both are imperative forms of the shown infinitive; the requested singular table row selects the informal form, rather than identifying the actual number of listeners from spelling alone.",
             "referenceIds": [
               "ref-u1115-attribution"
@@ -1020,7 +1020,7 @@
       {
         "id": "u15-st-teach-imperative-contrast",
         "kind": "TEACH",
-        "title": "Distinguish the supplied imperative and infinitive forms",
+        "title": "Admitted instruction",
         "body": "чита́йте is the plural imperative form of the reading verb shown here, used for multiple addressees or polite address to one person. It extends the shown singular form with the plural/polite ending. чита́ть is the infinitive, not the inflected plural imperative requested. This identifies the supplied form, not every possible way to express a command.\n\nчита́й is the singular imperative form of the reading verb, used for one informal addressee. чита́ть is the infinitive, not that inflected imperative form. The cue shows the plural/polite form, while this question asks for the singular imperative table row.\n\nчита́й is the singular imperative form for one informal addressee. чита́йте is the plural imperative form and can also address one person politely. Both are imperative forms of the shown infinitive; the requested singular table row selects the informal form, rather than identifying the actual number of listeners from spelling alone.",
         "referenceIds": [
           "ref-u1115-attribution"
@@ -1400,5 +1400,19 @@
     "app/src/test/java/dev/russiancompanion/v2/Units2630SourceIntakeTest.kt",
     "app/src/test/java/dev/russiancompanion/v2/V2RebuildTest.kt",
     "app/src/test/java/dev/russiancompanion/v2/audit/OwnerGovernanceDecisionTest.kt"
-  ]
+  ],
+  "headingCorrection": {
+    "initialTestedCommit": "29f7d6097d175b982e1ed710d3150124ee275d85",
+    "initialCounts": {
+      "tests": 32,
+      "failures": 3,
+      "errors": 0,
+      "skipped": 0
+    },
+    "initialHeading": "Distinguish the supplied imperative and infinitive forms",
+    "correctedHeading": "Admitted instruction",
+    "cause": "Existing English linguistic-claim admission guard treats the descriptive heading as a claim;it was not exempt UI text. Reuse neutral existing heading. Body/native/scored/provenance and validators unchanged.",
+    "evidence": "INITIAL_VERIFICATION.json",
+    "validationWeakened": false
+  }
 }
