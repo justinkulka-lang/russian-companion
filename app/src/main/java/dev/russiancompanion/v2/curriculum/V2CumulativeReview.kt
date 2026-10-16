@@ -9,6 +9,8 @@ internal const val CUMULATIVE_REVIEW_SCHEMA = 1
 internal const val UNIT3_RECENT_SELECTION_ASSIGNMENT_SCHEMA = 2
 // Separate extension: schema2 remains Unit3-only, schema3 allocates Units5/6.
 internal const val UNITS5_6_RECENT_SELECTION_ASSIGNMENT_SCHEMA = 3
+// New Unit6 v2 obligations only; legacy Unit6 schema1/3 meanings remain unchanged.
+internal const val UNIT6_WIDER_REVIEW_ASSIGNMENT_SCHEMA = 4
 internal const val CUMULATIVE_REVIEW_ROLE = "CUMULATIVE_REVIEW"
 
 @Serializable
@@ -92,6 +94,12 @@ internal object Unit6CumulativeReviewPolicy {
             listOf("u5-i-indecl-такси", "u5-i-indecl-метро", "u5-i-indecl-кино", "u5-i-decl-книга", "u5-i-decl-окно"),
             "u5-st-rem-indeclinable"),
     ))
+}
+
+/** Separate authored obligation; retain the v1 definition and all its saved tasks. */
+internal object Unit6WiderCumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit6-prior-reading-subject-noun-behavior-v2", 6,
+        Unit6CumulativeReviewPolicy.definition.pool + Unit5CumulativeReviewPolicy.definition.pool[1])
 }
 
 internal object Unit7CumulativeReviewPolicy {
@@ -291,7 +299,7 @@ internal fun cumulativeReviewPolicy(targetUnit: Int): CumulativeReviewPolicy? = 
     3 -> Unit3CumulativeReviewPolicy.definition
     4 -> Unit4CumulativeReviewPolicy.definition
     5 -> Unit5CumulativeReviewPolicy.definition
-    6 -> Unit6CumulativeReviewPolicy.definition
+    6 -> Unit6WiderCumulativeReviewPolicy.definition
     7 -> Unit7CumulativeReviewPolicy.definition
     8 -> Unit8CumulativeReviewPolicy.definition
     9 -> Unit9CumulativeReviewPolicy.definition
@@ -323,7 +331,7 @@ internal fun cumulativeReviewTitle(targetUnit: Int): String = when (targetUnit) 
     3 -> "Review earlier reading and letters"
     4 -> "Review earlier reading and noun genders"
     5 -> "Review earlier reading and supplied subjects"
-    6 -> "Review earlier reading and noun behavior"
+    6 -> "Review earlier reading and nouns"
     7 -> "Review earlier reading and supplied object forms"
     8 -> "Review earlier reading and supplied agreement"
     9 -> "Review earlier reading and supplied noun plurals"
@@ -379,15 +387,29 @@ private fun teachingDigest(pack: V2CurriculumPack, objective: V2Objective): Stri
 
 private fun newReviewAssignmentSchema(targetUnit: Int): Int = when (targetUnit) {
     3 -> UNIT3_RECENT_SELECTION_ASSIGNMENT_SCHEMA
-    5, 6 -> UNITS5_6_RECENT_SELECTION_ASSIGNMENT_SCHEMA
+    5 -> UNITS5_6_RECENT_SELECTION_ASSIGNMENT_SCHEMA
+    6 -> UNIT6_WIDER_REVIEW_ASSIGNMENT_SCHEMA
     else -> CUMULATIVE_REVIEW_SCHEMA
 }
 
 /** Preserve each version's target scope; unknown combinations cannot acquire credit. */
-private fun reviewAssignmentSchemaSupported(a: CumulativeReviewAssignment): Boolean =
-    a.schema == CUMULATIVE_REVIEW_SCHEMA ||
-        (a.schema == UNIT3_RECENT_SELECTION_ASSIGNMENT_SCHEMA && a.targetUnit == 3) ||
-        (a.schema == UNITS5_6_RECENT_SELECTION_ASSIGNMENT_SCHEMA && a.targetUnit in 5..6)
+private fun reviewAssignmentSchemaSupported(a: CumulativeReviewAssignment): Boolean = when (a.schema) {
+    CUMULATIVE_REVIEW_SCHEMA -> a.policyId != Unit6WiderCumulativeReviewPolicy.definition.id
+    UNIT3_RECENT_SELECTION_ASSIGNMENT_SCHEMA -> a.targetUnit == 3
+    UNITS5_6_RECENT_SELECTION_ASSIGNMENT_SCHEMA -> a.targetUnit == 5 ||
+        (a.targetUnit == 6 && a.policyId == Unit6CumulativeReviewPolicy.definition.id)
+    UNIT6_WIDER_REVIEW_ASSIGNMENT_SCHEMA -> a.targetUnit == 6 &&
+        a.policyId == Unit6WiderCumulativeReviewPolicy.definition.id
+    else -> false
+}
+
+/** Explicit history registry: an unknown policy/version never supplies current credit. */
+internal fun cumulativeReviewAssignmentPolicy(a: CumulativeReviewAssignment): CumulativeReviewPolicy? {
+    if (!reviewAssignmentSchemaSupported(a)) return null
+    val definitions = listOfNotNull(cumulativeReviewPolicy(a.targetUnit)) +
+        if (a.targetUnit == 6) listOf(Unit6CumulativeReviewPolicy.definition) else emptyList()
+    return definitions.singleOrNull { it.id == a.policyId && it.digest == a.policyDigest }
+}
 
 /** Allocation only: these attempts never supply assignment-bound due credit. */
 internal fun recentReviewCandidate(pack: V2CurriculumPack, learner: V2LearnerView,
@@ -421,25 +443,13 @@ internal fun createCumulativeReviewAssignment(pack: V2CurriculumPack, learner: V
     val assignmentSchema = newReviewAssignmentSchema(targetUnit)
     if (id.isBlank() || boundary < 0 || pack.schemaVersion != 1 ||
         !cumulativeReviewDeclarationValid(pack, targetUnit)) return null
-    V2PackIdentityIndex.warm(pack)
-    val target = pack.unit(targetUnit) ?: return null
-    if (!target.openable() || unmetCurrentPrerequisites(pack, target, learner).isNotEmpty()) return null
-    val taught = currentCompletedUnitNumbers(pack, learner)
-    val slots = policy.pool.map { (objectiveId, skill, candidates, remediationStepId) ->
-        val unit = pack.units.singleOrNull { u -> u.objectives.any { it.id == objectiveId } } ?: return null
-        val o = unit.objectives.single { it.id == objectiveId }
-        if (remediationStepId != null && (remediationStepId !in o.instructionStepIds + o.remediationStepIds ||
-            pack.step(remediationStepId) == null)) return null
-        if (unit.number !in taught || !unit.openable() || unit.number >= targetUnit || !o.gating ||
-            o.kind != "RECOGNITION" || o.instructionStepIds.isEmpty() || o.practiceStepIds.isEmpty() ||
-            (o.instructionStepIds + o.practiceStepIds).any { !completedStepCounts(pack, learner, it) } ||
-            objectiveState(o, learner, pack) != V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS) return null
-        val eligible = candidates.mapNotNull { pack.item(it) }.filter {
-            it.id in o.checkItemIds && it.objectiveId == o.id && it.options.size >= 2 && it.answer in it.options
-        }
+    val candidates = eligibleReviewCandidates(pack, learner, policy) ?: return null
+    val slots = policy.pool.zip(candidates).map { (spec, eligible) ->
         val item = (if (assignmentSchema != CUMULATIVE_REVIEW_SCHEMA) recentReviewCandidate(pack, learner, eligible)
             else eligible.firstOrNull()) ?: return null
-        CumulativeReviewSlot(o.id, skill.name, item.id, unit.number, V2Validator.checkItemContentDigest(item),
+        val unit = pack.units.single { u -> u.objectives.any { it.id == spec.objectiveId } }
+        val o = unit.objectives.single { it.id == spec.objectiveId }
+        CumulativeReviewSlot(o.id, spec.skill.name, item.id, unit.number, V2Validator.checkItemContentDigest(item),
             reviewUnitDigest(pack, unit.number), teachingDigest(pack, o))
     }
     val a = CumulativeReviewAssignment(id, targetUnit, policy.id,
@@ -448,8 +458,41 @@ internal fun createCumulativeReviewAssignment(pack: V2CurriculumPack, learner: V
     return a.copy(digest = reviewAssignmentDigest(a))
 }
 
+/** Shared taught eligibility, evaluated against the task's own registered obligation. */
+private fun eligibleReviewCandidates(pack: V2CurriculumPack, learner: V2LearnerView,
+                                     policy: CumulativeReviewPolicy): List<List<V2CheckItem>>? {
+    if (pack.schemaVersion != 1 || !cumulativeReviewDeclarationValid(pack, policy.targetUnit)) return null
+    V2PackIdentityIndex.warm(pack)
+    val target = pack.unit(policy.targetUnit) ?: return null
+    if (!target.openable() || unmetCurrentPrerequisites(pack, target, learner).isNotEmpty()) return null
+    val taught = currentCompletedUnitNumbers(pack, learner)
+    return policy.pool.map { (objectiveId, _, candidates, remediationStepId) ->
+        val unit = pack.units.singleOrNull { u -> u.objectives.any { it.id == objectiveId } } ?: return null
+        val o = unit.objectives.single { it.id == objectiveId }
+        if (remediationStepId != null && (remediationStepId !in o.instructionStepIds + o.remediationStepIds ||
+            pack.step(remediationStepId) == null)) return null
+        if (unit.number !in taught || !unit.openable() || unit.number >= policy.targetUnit || !o.gating ||
+            o.kind != "RECOGNITION" || o.instructionStepIds.isEmpty() || o.practiceStepIds.isEmpty() ||
+            (o.instructionStepIds + o.practiceStepIds).any { !completedStepCounts(pack, learner, it) } ||
+            objectiveState(o, learner, pack) != V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS) return null
+        val eligible = candidates.mapNotNull { pack.item(it) }.filter {
+            it.id in o.checkItemIds && it.objectiveId == o.id && it.options.size >= 2 && it.answer in it.options
+        }
+        if (eligible.isEmpty()) return null
+        eligible
+    }
+}
+
+internal fun reviewAssignmentEligible(pack: V2CurriculumPack, learner: V2LearnerView,
+                                      a: CumulativeReviewAssignment): Boolean {
+    if (!reviewAssignmentCurrent(pack, a)) return false
+    val policy = cumulativeReviewAssignmentPolicy(a) ?: return false
+    val eligible = eligibleReviewCandidates(pack, learner, policy) ?: return false
+    return a.slots.zip(eligible).all { (slot, items) -> items.any { it.id == slot.itemId } }
+}
+
 internal fun reviewAssignmentCurrent(pack: V2CurriculumPack, a: CumulativeReviewAssignment): Boolean {
-    val policy = cumulativeReviewPolicy(a.targetUnit) ?: return false
+    val policy = cumulativeReviewAssignmentPolicy(a) ?: return false
     if (!cumulativeReviewDeclarationValid(pack, a.targetUnit) || pack.schemaVersion != 1 ||
         !reviewAssignmentSchemaSupported(a) || a.id.isBlank() || a.boundary < 0 ||
         a.policyId != policy.id || a.policyDigest != policy.digest ||
@@ -464,7 +507,7 @@ internal fun reviewAssignmentCurrent(pack: V2CurriculumPack, a: CumulativeReview
             (spec.remediationStepId == null || spec.remediationStepId in o.instructionStepIds + o.remediationStepIds) &&
             s.itemId in o.checkItemIds && item.objectiveId == o.id &&
             s.itemDigest == V2Validator.checkItemContentDigest(item) &&
-            s.unitDigest == reviewUnitDigest(pack, s.ownerUnit) &&
+            currentOrPriorActiveReviewUnitIdentityMatches(pack, s.ownerUnit, s.unitDigest) &&
             s.teachingDigest == teachingDigest(pack, o)
     }
 }
@@ -518,13 +561,14 @@ internal fun currentUnit3Assignment(pack: V2CurriculumPack, learner: V2LearnerVi
 internal fun cumulativeReviewComplete(pack: V2CurriculumPack, learner: V2LearnerView, targetUnit: Int): Boolean {
     if (!cumulativeReviewDeclarationValid(pack, targetUnit)) return false
     val a = currentCumulativeAssignment(pack, learner, targetUnit) ?: return false
+    if (!reviewAssignmentEligible(pack, learner, a)) return false
     return completedReviewSlots(pack, a, learner.reviewAnswers).size == a.slots.size
 }
 internal fun unit3ReviewComplete(pack: V2CurriculumPack, learner: V2LearnerView): Boolean = cumulativeReviewComplete(pack, learner, 3)
 
 /** No learner/prerequisite recursion: validate only ordinary old proof or a recorded review snapshot. */
 internal fun historicalReviewCompletionCurrent(pack: V2CurriculumPack, unit: V2Unit, learner: V2LearnerView): Boolean {
-    val policy = cumulativeReviewPolicy(unit.number) ?: return true
+    if (cumulativeReviewPolicy(unit.number) == null) return true
     if (!cumulativeReviewDeclarationValid(pack, unit.number)) return false
     val record = learner.unitReviewCompletions[unit.number] ?: return false
     val emptyLink = record.policyDigest.isEmpty() && record.assignmentId.isEmpty() && record.completionOrder == 0L
@@ -537,8 +581,9 @@ internal fun historicalReviewCompletionCurrent(pack: V2CurriculumPack, unit: V2U
         })
         return ordinaryUnitRequirements(pack, unit, oldEvidence).allowed
     }
-    if (record.preActivation || record.policyDigest != policy.digest) return false
+    if (record.preActivation) return false
     val a = learner.reviewAssignments.singleOrNull { it.id == record.assignmentId } ?: return false
+    if (record.policyDigest != a.policyDigest) return false
     return a.targetUnit == unit.number && record.completionOrder > a.boundary &&
         completedReviewSlots(pack, a, learner.reviewAnswers.filter { it.acceptedOrder <= record.completionOrder }).size == a.slots.size
 }
@@ -546,10 +591,24 @@ internal fun historicalReviewCompletionCurrent(pack: V2CurriculumPack, unit: V2U
 /** Exact pre-activation rule identity, with every current item/source/teaching field retained. */
 private val preReviewUnitDigests = IdentityWeakCache<Map<Int, String>>()
 internal fun prescribedUnitIdentityMatches(pack: V2CurriculumPack, number: Int, recorded: String): Boolean {
-    val current = V2PackIdentityIndex.unitDigest(pack, number) ?: V2Validator.unitContentReviewDigest(pack, number)
-    if (recorded == current) return true
+    if (currentOrPriorActiveReviewUnitIdentityMatches(pack, number, recorded)) return true
     if (cumulativeReviewPolicy(number) == null || !cumulativeReviewDeclarationValid(pack, number)) return false
     return recorded == preReviewUnitDigest(pack, number)
+}
+
+/** Unlike prescribed work, review owner bindings do not accept pre-activation identities. */
+private fun currentOrPriorActiveReviewUnitIdentityMatches(pack: V2CurriculumPack, number: Int, recorded: String): Boolean {
+    val current = V2PackIdentityIndex.unitDigest(pack, number) ?: V2Validator.unitContentReviewDigest(pack, number)
+    if (recorded == current) return true
+    return number == 6 && cumulativeReviewDeclarationValid(pack, 6) && recorded == priorActiveUnit6Digest(pack)
+}
+
+private val priorActiveUnit6Digests = IdentityWeakCache<String>()
+private fun priorActiveUnit6Digest(pack: V2CurriculumPack): String = priorActiveUnit6Digests.get(pack) ?: run {
+    val old = pack.copy(units = pack.units.map { unit -> if (unit.number == 6) unit.copy(
+        advancement = unit.advancement!!.copy(requireDueReview = true,
+            cumulativeReviewPolicyId = Unit6CumulativeReviewPolicy.definition.id)) else unit })
+    V2Validator.unitContentReviewDigest(old, 6).also { priorActiveUnit6Digests.put(pack, it) }
 }
 
 private fun preReviewUnitDigest(pack: V2CurriculumPack, number: Int): String =

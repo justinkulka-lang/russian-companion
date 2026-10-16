@@ -1429,15 +1429,17 @@ internal class LocalStore private constructor(
         var result: CumulativeReviewAssignment? = null
         database.runInTransaction {
             val learner = readV2Learner()
+            val existing = readReviewAssignments().lastOrNull { it.targetUnit == targetUnit && reviewAssignmentCurrent(pack, it) }
+            if (existing != null) {
+                if (dev.russiancompanion.v2.curriculum.reviewAssignmentEligible(pack, learner, existing)) result = existing
+                return@runInTransaction
+            }
             val boundary = database.v2().maxReviewOrder()
             val candidate = createCumulativeReviewAssignment(pack, learner, targetUnit, java.util.UUID.randomUUID().toString(), boundary)
                 ?: return@runInTransaction
-            result = readReviewAssignments().lastOrNull { it.targetUnit == targetUnit && reviewAssignmentCurrent(pack, it) }
-            if (result == null) {
-                database.v2().insertReviewAssignment(V2ReviewAssignmentEntity(candidate.id, candidate.targetUnit,
-                    backupJson.encodeToString(CumulativeReviewAssignment.serializer(), candidate)))
-                result = candidate
-            }
+            database.v2().insertReviewAssignment(V2ReviewAssignmentEntity(candidate.id, candidate.targetUnit,
+                backupJson.encodeToString(CumulativeReviewAssignment.serializer(), candidate)))
+            result = candidate
         }
         result
     }
@@ -1450,7 +1452,7 @@ internal class LocalStore private constructor(
         database.runInTransaction {
             val a = readReviewAssignments().singleOrNull { it.id == assignmentId } ?: return@runInTransaction
             if (!reviewAssignmentCurrent(pack, a) || slotIndex !in a.slots.indices) return@runInTransaction
-            if (createCumulativeReviewAssignment(pack, readV2Learner(), a.targetUnit, a.id, a.boundary) == null) return@runInTransaction
+            if (!dev.russiancompanion.v2.curriculum.reviewAssignmentEligible(pack, readV2Learner(), a)) return@runInTransaction
             val item = pack.item(a.slots[slotIndex].itemId) ?: return@runInTransaction
             if (selected !in item.options) return@runInTransaction
             val latest = readReviewAnswers().lastOrNull { it.assignmentId == a.id && it.slotIndex == slotIndex }

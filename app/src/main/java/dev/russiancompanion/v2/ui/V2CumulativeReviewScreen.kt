@@ -17,9 +17,10 @@ internal fun V2CumulativeReviewScreen(pack: V2CurriculumPack, learner: V2Learner
     onGate: () -> Unit, onRemediate: (String) -> Unit) {
     val state = rememberGoverned(pack, learner, label = "cumulative-review") {
         val a = currentCumulativeAssignment(pack, learner, targetUnit)
-        val eligible = createCumulativeReviewAssignment(pack, learner, targetUnit, "eligibility-preview", 0) != null
+        val eligible = if (a != null) reviewAssignmentEligible(pack, learner, a) else
+            createCumulativeReviewAssignment(pack, learner, targetUnit, "eligibility-preview", 0) != null
         ReviewScreenState(a, eligible, a?.let { completedReviewSlots(pack, it, learner.reviewAnswers) }.orEmpty(),
-            a == null && learner.reviewAssignments.any { it.targetUnit == targetUnit }, cumulativeReviewPolicy(targetUnit)?.pool.orEmpty().mapNotNull { spec ->
+            a == null && learner.reviewAssignments.any { it.targetUnit == targetUnit }, (a?.let(::cumulativeReviewAssignmentPolicy) ?: cumulativeReviewPolicy(targetUnit))?.pool.orEmpty().mapNotNull { spec ->
                 pack.units.firstOrNull { u -> u.objectives.any { it.id == spec.objectiveId } }?.number
             }.distinct().filter { it !in currentCompletedUnitNumbers(pack, learner) })
     }
@@ -28,7 +29,9 @@ internal fun V2CumulativeReviewScreen(pack: V2CurriculumPack, learner: V2Learner
             3 -> "Review two earlier skills: reading and recognising printed letters. Use what you learned in Unit 1; complete both checks before continuing."
             4 -> "Review earlier print-pair decoding and noun-gender labels from Units 1 and 3. Complete both checks before continuing; these supplied choices do not demonstrate whole-word reading, speaking or writing."
             5 -> "Review earlier print-pair matching from Unit 1 and nominative subjects in supplied Unit 4 clauses. Complete both checks before continuing. These taught choices do not demonstrate unseen reading, productive grammar, speaking or writing."
-            6 -> "Review earlier print-pair matching from Unit 1 and the behavior of supplied Unit 5 nouns. Complete both checks before continuing. These taught choices do not demonstrate unseen reading, productive morphology, speaking or writing."
+            6 -> if (state.assignment?.policyId == Unit6CumulativeReviewPolicy.definition.id)
+                "Review earlier print-pair matching from Unit 1 and the behavior of supplied Unit 5 nouns. Complete both checks before continuing. These taught choices do not demonstrate unseen reading, productive morphology, speaking or writing."
+            else "Review earlier print-pair matching, supplied noun behavior from Unit 5 and subjects in supplied Unit 4 clauses. Complete all three checks before continuing. These taught choices do not demonstrate unseen reading, productive grammar, speaking or writing."
             7 -> "Review earlier print-pair matching from Unit 1 and the supplied inanimate direct object from Unit 6. Complete both checks before continuing. These taught choices do not demonstrate unseen reading, productive grammar, speaking or writing."
             8 -> "Review earlier print-pair matching and supplied feminine singular nominative agreement. For agreement repair, revisit the shown car phrase and related feminine object-phrase practice, then answer this nominative check again. These taught choices do not demonstrate unseen reading, productive grammar, speaking or writing."
             9 -> "Review earlier print-pair matching from Unit 1 and the supplied window nominative plural from Unit 8. Repair reviews all seven taught noun pairs; guided table practice does not complete the window check. Complete both review checks before continuing. These supplied choices do not demonstrate unseen reading, productive grammar, speaking or writing."
@@ -86,7 +89,7 @@ internal fun V2CumulativeReviewScreen(pack: V2CurriculumPack, learner: V2Learner
                 Text(if (index in state.completed) "Review answer recorded. ${item.feedback}" else "Not the reviewed answer. ${item.feedback}",
                     Modifier.semantics { testTag = "v2-review-feedback-$index" })
                 val objective = pack.unit(slot.ownerUnit)?.objectives?.firstOrNull { it.id == slot.objectiveId }
-                (cumulativeReviewPolicy(targetUnit)?.pool?.firstOrNull { it.objectiveId == slot.objectiveId }?.remediationStepId
+                (cumulativeReviewAssignmentPolicy(a)?.pool?.firstOrNull { it.objectiveId == slot.objectiveId }?.remediationStepId
                     ?: objective?.remediationStepIds?.firstOrNull())?.let { step ->
                     V2SecondaryButton("Return to this teaching", { onRemediate(step) }, tag = "v2-review-remediate-$index")
                 }
