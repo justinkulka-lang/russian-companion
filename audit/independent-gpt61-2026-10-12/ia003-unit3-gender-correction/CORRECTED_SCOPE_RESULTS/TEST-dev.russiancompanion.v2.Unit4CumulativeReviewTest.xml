@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit4CumulativeReviewTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-16T19:53:47.920Z" hostname="f5c5dd6b855f" time="189.164">
+  <properties/>
+  <testcase name="schema11OrdinaryLegacyRowsWithFalseActivationMarkerSurviveReopenWithoutSyntheticReview" classname="dev.russiancompanion.v2.Unit4CumulativeReviewTest" time="86.969"/>
+  <testcase name="placementWithTaughtUnit1ButUntaughtUnit3RepairsTheMissingOwnerInsteadOfUnit1" classname="dev.russiancompanion.v2.Unit4CumulativeReviewTest" time="15.464"/>
+  <testcase name="heldUnit4WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching" classname="dev.russiancompanion.v2.Unit4CumulativeReviewTest" time="8.916"/>
+  <testcase name="oldFormatOneAndTwoRestoreExactPrePolicyWorkWithoutAnyNewReviewCredit" classname="dev.russiancompanion.v2.Unit4CumulativeReviewTest" time="7.664"/>
+  <testcase name="ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup" classname="dev.russiancompanion.v2.Unit4CumulativeReviewTest" time="8.805"/>
+  <testcase name="optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion" classname="dev.russiancompanion.v2.Unit4CumulativeReviewTest" time="41.209"/>
+  <testcase name="actualUnit4ContinueGenderCueTeachingPracticeReturnAndAdvanceStayOnUnit4" classname="dev.russiancompanion.v2.Unit4CumulativeReviewTest" time="15.409"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call close. 
+]]></system-err>
+</testsuite>
