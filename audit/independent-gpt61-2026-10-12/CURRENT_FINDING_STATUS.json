@@ -1306,10 +1306,10 @@
     "findingStatus": "OPEN"
   },
   "currentEngineeringContinuation": {
-    "initialTestedCommit": "1edbedfa6d5eba9875843c8790f3b229cbd2c990",
-    "correctedTestedCommit": "86618dde26423d9cbd7de50cf65c3ab53cbb6c7e",
-    "checkpoint": "units5And6RecentSelectionCheckpoint",
-    "legacyLatestPointers": "Older top-level latest* pointers retained as historical;explicit current checkpoint supersedes recency,not their evidence."
+    "testedCommit": "0c774f18bd07dffb19e8599a17c5d947d3219386",
+    "checkpoint": "policyHistoryTransitionCheckpoint",
+    "priorSelectionCheckpoint": "units5And6RecentSelectionCheckpoint",
+    "legacyLatestPointers": "Older top-level latest* pointers remain historical; current checkpoint supersedes recency,not evidence."
   },
   "units5And6RecentSelectionCheckpoint": {
     "baselineCommit": "74eb8b655ebd0af388c4fba05a986d04e6ec02a8",
@@ -1348,6 +1348,26 @@
     "nextInstructions": "ia003-units5-6-recent-selection/NEXT_IA003_REVIEW.md",
     "staticCoverageInventory": "ia003-units5-6-recent-selection/CUMULATIVE_COVERAGE_INVENTORY.json",
     "qualifiedAcceptance": false,
+    "findingStatus": "OPEN"
+  },
+  "policyHistoryTransitionCheckpoint": {
+    "baselineCommit": "c6adbec66cde2d22b7f73289b6328a94a1d1a11d",
+    "testedCommit": "0c774f18bd07dffb19e8599a17c5d947d3219386",
+    "counts": {
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "captureRunsSeparateNotSummed": true,
+    "genuineLifecycleStates": 16,
+    "newPolicyImplemented": false,
+    "newPolicyActivated": false,
+    "allProductionAndCanonicalInputsUnchanged": true,
+    "manifest": "ia003-policy-history-transition/FINAL_VERIFICATION_MANIFEST.json",
+    "design": "ia003-policy-history-transition/DESIGN.md",
+    "next": "Implement explicit Unit6 v2 policy/history transition;preserve ordinary and downstream owner identities and assignment-policy-specific eligibility.",
+    "formalAcceptance": false,
     "findingStatus": "OPEN"
   }
 }
