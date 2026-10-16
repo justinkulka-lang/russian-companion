@@ -1,0 +1,7 @@
+{
+  "sourceCommit": "d93fa913",
+  "exitCode": 1,
+  "executedJUnitMethods": 0,
+  "cause": "New negative probe used completedSteps instead of actual completedStepIds;corrected test field only",
+  "command": "source /workspace/setup/android-env.sh; ./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*Unit9WiderPolicyTest' --max-workers=4 --console=plain"
+}

@@ -284,7 +284,8 @@ class Unit9WiderPolicyTest {
                 record(store, id, true)
             }
             val learner = store.v2LearnerView()
-            val withoutTeaching = learner.copy(completedSteps = learner.completedSteps - "u3-st-teach-gender-3")
+            val withoutTeaching = learner.copy(completedStepIds = learner.completedStepIds - "u3-st-teach-gender-3",
+                governedStepDigests = learner.governedStepDigests!! - "u3-st-teach-gender-3")
             assertNull(createCumulativeReviewAssignment(p, withoutTeaching, 9, "untaught", 0))
             val changed = p.copy(units = p.units.map { u -> if (u.number == 3) u.copy(sessions = u.sessions.map { se -> se.copy(steps = se.steps.map { st ->
                 if (st.id == "u3-st-teach-gender-3") st.copy(body = st.body + " changed") else st }) }) else u })
