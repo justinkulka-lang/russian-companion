@@ -1274,5 +1274,40 @@
     "manifest": "readiness-inventory-reconciliation/FINAL_VERIFICATION_MANIFEST.json",
     "qualifiedAcceptance": false,
     "productionBehaviorChanged": false
+  },
+  "unit3RecentSelectionCheckpoint": {
+    "baselineCommit": "2522c33406eae89f4bd92ee749a2086c765e4352",
+    "implementationCommit": "08510c1c05f54579e9a9b9aa515b5dcf34e6e747",
+    "testedCommit": "b9c2577dba4e419eeece0ee909d54fd0db2263d8",
+    "counts": {
+      "tests": 44,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "baselineCaptureCounts": {
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "scopesSummed": false,
+    "completeSuite": false,
+    "newAssignmentSchema": 2,
+    "activeSelectionTargets": [
+      3
+    ],
+    "otherTargetsRemainSchema1": true,
+    "oldAssignmentSchema1Preserved": true,
+    "v1PoliciesAndAllAssetBytesUnchanged": true,
+    "manifest": "ia003-recent-selection/FINAL_VERIFICATION_MANIFEST.json",
+    "nextInstructions": "ia003-recent-selection/NEXT_IA003_REVIEW.md",
+    "qualifiedAcceptance": false,
+    "findingStatus": "OPEN"
+  },
+  "currentEngineeringContinuation": {
+    "testedCommit": "b9c2577dba4e419eeece0ee909d54fd0db2263d8",
+    "checkpoint": "unit3RecentSelectionCheckpoint",
+    "legacyLatestPointers": "Older top-level latest* pointers retained as historical entries; this explicit current checkpoint supersedes their recency, not their evidence."
   }
 }

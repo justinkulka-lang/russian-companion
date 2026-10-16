@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.CumulativeReviewSelectionTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-16T13:32:44.109Z" hostname="f5c5dd6b855f" time="53.749">
+  <properties/>
+  <testcase name="genuineSchemaOneHistoryKeepsItsExactIdentityAndAcceptedCompletionSnapshot" classname="dev.russiancompanion.v2.CumulativeReviewSelectionTest" time="42.719"/>
+  <testcase name="newAssignmentIsRecentAwareImmutableAndRequiresFreshAnswersAcrossBackupAndEpoch" classname="dev.russiancompanion.v2.CumulativeReviewSelectionTest" time="4.425"/>
+  <testcase name="leastRecentAndUnknownHistoryUseAuthoredCandidateOrderRatherThanIdentifiers" classname="dev.russiancompanion.v2.CumulativeReviewSelectionTest" time="0.348"/>
+  <testcase name="optionalGuidedStaleUnorderedForgedAndWrongContextRowsDoNotRankCandidates" classname="dev.russiancompanion.v2.CumulativeReviewSelectionTest" time="0.491"/>
+  <testcase name="newestCurrentMissWinsAndLaterCorrectAnswerResolvesIt" classname="dev.russiancompanion.v2.CumulativeReviewSelectionTest" time="0.642"/>
+  <testcase name="unknownAssignmentVersionsFailClosedAndUntaughtOwnersStillCannotBeSelected" classname="dev.russiancompanion.v2.CumulativeReviewSelectionTest" time="1.139"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
