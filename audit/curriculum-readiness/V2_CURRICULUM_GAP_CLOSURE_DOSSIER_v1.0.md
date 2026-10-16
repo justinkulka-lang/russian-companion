@@ -6,8 +6,8 @@
 **Repository:** `justinkulka-lang/russian-companion`  
 **Repository baseline main:** `c153103a0048f69f8de339b83e77d93572ebddb7`  
 **Unit 23 unprepared correction:** `fd69bd03298d69669d09daafe8d364b0e576d033` (`Keep Unit 23 unprepared until completion over a period is admitted.`). That commit is an ancestor of the repository baseline. It is not the repository baseline main commit.  
-**Pack content-review digest:** `da3f9202e95f29b1c9d9e3945193a17ab5be4afc7d7c7518d8df4f2659888eaf`
-**Repository source digest:** `362a1fbc245d0564526378affdd114ffa4166a5814792a38224842cbe3cff66b`
+**Pack content-review digest:** `e2732ce1e2d7189913875fa95663c5da03757cda94e247e80459e59d63b5c9a5`
+**Repository source digest:** `9b5998205f72362175abe5ffc58f79dc76681f70d2ec484b9ea6fc3654034e07`
 **Public release:** **NOT_APPROVED**
 
 ## Purpose
@@ -76,7 +76,7 @@ Unacceptable shortcuts include keyword matches, mutable pages, dictionary-row gr
 | 27 | Participles: types and stress | CONTENT_COMPLETE_REVIEW_PENDING | NO | NONE | NONE | ACTIVATED | YES | Qualified linguistic review and owned-edition mapping; the pedagogical boundary is activated and is not qualified review |
 | 28 | Verbal adverbs | CONTENT_COMPLETE_REVIEW_PENDING | NO | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 29 | Bookish style, active participles, punctuation, and short-form adjectives | CONTENT_COMPLETE_REVIEW_PENDING | NO | NONE | NONE | ACTIVATED | YES | Qualified linguistic review and owned-edition mapping; the pedagogical boundary is activated and is not qualified review |
-| 30 | Abbreviations, names of Russian letters, and particles | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | ACTIVATED | YES | Qualified linguistic review and owned-edition mapping; the pedagogical boundary is activated and is not qualified review |
+| 30 | Abbreviations, names of Russian letters, and particles | CONTENT_COMPLETE_REVIEW_PENDING | NO | NONE | NONE | ACTIVATED | YES | Qualified linguistic review and owned-edition mapping; the pedagogical boundary is activated and is not qualified review |
 
 ## Source-research queue
 

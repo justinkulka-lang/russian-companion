@@ -218,6 +218,8 @@ class Unit30CumulativeReviewTest {
             compose.waitUntil(30000) { compose.waitForIdle(); s.governedLearnerDocument().unitCompletions.any { it.unitNumber == 30 && it.reviewAssignmentId == a.id } }
             assertEquals(30, s.v2Profile().currentUnitNumber)
             assertEquals(p.unit(30)!!.sessions.first().id, s.v2Profile().currentSessionId)
+            assertEquals(resumePositionDigest(p, p.unit(30)!!.sessions.first().id, 0), s.v2Profile().resumeContentDigest)
+            assertEquals(GOVERNED_IDENTITY_SCHEMA, s.v2Profile().resumeIdentitySchema)
             assertNull(p.unit(31))
             assertTrue(30 in currentCompletedUnitNumbers(p, s.v2LearnerView()))
         }
