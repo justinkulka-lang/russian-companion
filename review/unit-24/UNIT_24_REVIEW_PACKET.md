@@ -11,12 +11,12 @@ Unit 24 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: db323d1a07613846a088cd44cb9f2b72d24753c9
-- Unit content-review SHA-256: 0aadf91b5482f1036b5f57888de2744d1339cd7316f5725973f98a0fde693d17
+- Curriculum source commit: dc4aa918f6098e17f8ffb8b297b356770a0f10d3
+- Unit content-review SHA-256: d5cb2b37f1000c8728b529e4167f3ab06fb216cb12c7a6d317531f1b309c2e66
 - Mapping-package SHA-256: dc6f9ac41a8520dc647df90313e05e547245bfa31fe3b2e883821f3591a24248
-- Pack content-review SHA-256: ff714b7f3b57a0f1ff2cfad23e7c005f95e680a0a946045704439a23e2cacccd
-- Review-package SHA-256: 1758d551a515a381d7c790b67e10a0a9bb9e2ee99bb8e76ab736b027273bb5a2
-- Repository source SHA-256: 2b33391a02ff64c89250774cc5498e5bf21fa7a0c40f6b1d4ffaed2ac8a0ff4c
+- Pack content-review SHA-256: 46d63f4bb440368e31ae4ead2efe69f7965b25642fc7ae95aad631ebe4b7ef1e
+- Review-package SHA-256: ba85ebee376a139c9198c859bf5410a8db9f3bc6ce329207356f0ff28c92101f
+- Repository source SHA-256: 783ab0057158f47c29e517a2d2e14e1814a7d3f373139ca458ddc2c8d6b99598
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -96,13 +96,13 @@ estimatedMinutes=102
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c15357630e26574590ec8ec27a55cc6166724cb38887cdf365b8f487cd9cd7a5
+- Content hash: 0098625969f6b87f4f41d281c4c3e697d190f3b5b93fc487e5be080acf58e84c
 
 requireInstruction=true
 requireBookSelfAttestation=true
 requireAppChecks=true
 minimumDistinctChecks=6
-requireDueReview=false
+requireDueReview=true
 tutorOptional=true
 
 ### OBJECTIVE `obj-u24-verbal-ne`
