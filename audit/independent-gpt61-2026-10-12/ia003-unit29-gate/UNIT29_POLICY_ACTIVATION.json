@@ -1,0 +1,307 @@
+{
+  "schemaVersion": 1,
+  "baselineCommit": "30b992c551acc8cef3247311ebff8c7d1ba01c0a",
+  "status": "BOUNDED_ENGINEERING_ONLY_IA003_OPEN",
+  "targetUnit": 29,
+  "policyId": "unit29-prior-reading-relative-future-timing-v1",
+  "owners": [
+    1,
+    28
+  ],
+  "beforeAdvancement": {
+    "requireInstruction": true,
+    "requireBookSelfAttestation": true,
+    "requireAppChecks": true,
+    "minimumDistinctChecks": 8,
+    "requireDueReview": false,
+    "tutorOptional": true
+  },
+  "afterAdvancement": {
+    "requireInstruction": true,
+    "requireBookSelfAttestation": true,
+    "requireAppChecks": true,
+    "minimumDistinctChecks": 8,
+    "requireDueReview": true,
+    "tutorOptional": true,
+    "cumulativeReviewPolicyId": "unit29-prior-reading-relative-future-timing-v1"
+  },
+  "ordinaryMinimumPreserved": 8,
+  "changedUnitFields": [
+    "advancement.requireDueReview",
+    "advancement.cumulativeReviewPolicyId"
+  ],
+  "earlierPolicySourceHashes": {
+    "3": "5375c7c0fde0d156a7e64a97f3b5669b0690c8e2f8ab576fe225e6c84963ae70",
+    "4": "d881b5cfbea335be6e5ab2e869c64cd54598883d1cc60dc2a3942ee4e9979355",
+    "5": "6befdcee801a9815fdada5fb043372b962d443913c6197a4153da566345800cd",
+    "6": "f6132e00d70828fbe6792c134958b5a47c68d905023547091670acecb2ea0179",
+    "7": "7294cbaeaeea5a82f83dc05ff0c6ce6cfccf9ca87e0ea85ea2c4e07f37111ac7",
+    "8": "b2f1498ca1f846e21a502ea05bd65602ab537bab32622574b6c77f983f080a00",
+    "9": "da0b455f6313adba561973aabb57323a09c17ab2a6eef2608159727a41f57283",
+    "10": "eb0f05f2d74549a0a2dfa6e2e3cef67364fa57eaeeb067d91c84e8cd29b516b4",
+    "11": "b5e1d23edd2cd90c16b149e89286dcb1eebbbbb21d65c4e6f141f8e45e234b1e",
+    "12": "d1f4568d3c58e3a7decffd40f3a52157b8d50560d1639d2caf6099733075d993",
+    "13": "c358dae543e43a9fe1d78ecdaba01ec87f64793635462379f926cab397694da5",
+    "14": "71a72229f1b3936154f561ed56294f08932b094c0357cd4ccf992043d1e27753",
+    "15": "1ca9dcaa650cdb7d59392b6458104077362ae82c00b2e8b525754d555a081fe9",
+    "16": "4931d70fd950dca5b413eba87b5056776041c3a22ebb8a4539cf1e875c8f42a2",
+    "17": "482fa32dfc1f792ae1cb31b1e197e08d2cc29e1cabfb37a095a0013ac2124c9e",
+    "18": "d6fb25caf455709129717f073936d0a10528dfa1b8099bf2404d4a0bdc51bcf9",
+    "19": "28e2d9dc91594137f91231c6bd852355276d077421e13d7c77e6ecd6f12acdae",
+    "20": "4333ab40b6d1e6b6fa1ba9dde6c9cead258411ad6d10eecd15042f5f3051239b",
+    "21": "9077c5b74c5b3f98f9924d64158d7ed09b757aefebb0f1e93519a492b91d63a2",
+    "22": "08c469d3e3592b7db84d5e8f241d4a36bdf0f924e7e909db7e8273fedfb1013a",
+    "23": "02bb38b30230cb35cb74ff242517e81f7af61850b06813ffcc5f141c1df063b4",
+    "24": "2e351fd8859296599494d262130bb24dc8a00e876abd454f852b91433b65099a",
+    "25": "4fc89ed4d7bc118fa8173c43d084d008b57515ab3fd3c0b7e8f3a1d1a5b6ffbb",
+    "26": "e68422e00b2d99aad336ab1288bc952741a1f9a8bc1db87c0e114ae7f5969e88",
+    "27": "7c3ecba356a64b566685935f351e884556e10b12f13d098a940656a78df4280b",
+    "28": "844d36212bd3eaba0137396e8ced696a3f364c73ca3aed887c4fa7f639e06406"
+  },
+  "allOther29UnitsAndAllScoredNativeProvenanceRightsFieldsUnchanged": true,
+  "privateReferenceCopied": false,
+  "releaseAuthorized": false,
+  "newSourceMethods": 7,
+  "fixtureSetup": "Genuine governed teaching/check/due/advance history through28,restored into fresh isolated stores.Old packs separately prepared.No manufactured assignments or current credit.",
+  "sourceContextSha256": {
+    "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt": "e12312425b1ed50177c3549ac10026696fbb8733c089b748b183eecdaf8ace85",
+    "catalog/sources/units-26-30/wikipedia/copyrights-1369466282.txt": "79be61298fb5e458a485eb4ad72c68b73d5284de99807cf4561bcff9ace36210",
+    "catalog/sources/units-26-30/wikisource/vechera-5336197.txt": "af0a1b2a4a79796a3523bb8a35b708df450e5970a96af050230b42cf6f604517",
+    "catalog/sources/units-26-30/wikisource/pd-old-70-5691096.txt": "4a870dff55a234c8e9f96a538ae9af6eef735809ab15ab3ad4ae29c9cd4f4a36",
+    "catalog/sources/units-26-30/wikisource/author-5696210.txt": "22caa67898cc2eac8bed9403a78be547da0546396cfa7b17ed47116aee7eb15f",
+    "catalog/sources/units-3-5/openrussian/LICENSE": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297"
+  },
+  "selectedProvenanceTuple": [
+    {
+      "itemId": "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-8",
+      "unitNumber": 28,
+      "objectiveId": "obj-u28-perfective-adverb",
+      "recordType": "original-synthesis",
+      "sourceId": "src-content-audit-research",
+      "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-corrected-capability:cap-obj-u28-perfective-adverb",
+      "shippedText": "написав письмо, она отправит его завтра",
+      "transformation": "content-audit research synthesis",
+      "licenseId": "Original app text",
+      "licenseUrl": "urn:russian-companion:license:original-app-text",
+      "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+      "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+      "sourceHash": "7bac1b521a8bf51e48a25af9adf518bd844391d098723752e0e6b07ad5e7c3e8",
+      "contentHash": "2cc5503c228ef7606d1a7e02047d2070958add0a22cdd0ed69d8e3c21393a2c7",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "synthesis": {
+        "bibliography": "Retained Wikisource Вечера у княгини Старобельской oldid5336197, complete opening paragraph of ЗНАКОМСТВО С ДРУГОМ ПРИНЦЕССЫ КОРЛЕОНЕ with explicit actor Павел Сергеич Вязовский. Exact native clause selections with unchanged source punctuation and NBSP; no stress or actor inserted. Existing public-domain author/work/rights basis retained, qualified rights review pending. Frozen OpenRussian verbs.csv commit50e210c4803237779cb562bc1abcea529066031c identifies читать as imperfective and устать as perfective. Existing CC BY-SA4.0 attribution/rights apply to selected dictionary rows. Retained Russian grammar1369617627 complete Adverbial participle section supplies earlier/simultaneous relation; absolute usually-present/only-past labels are not adopted as sentence tense. Independent English,2026-10-13. Guided literary context also occurs in later reading; not unseen evidence or productive mastery. Original independent relative-time/shared-subject scored fields remain. No private Penguin text; source/rights/semantic review pending.",
+        "sourceDateOrVersion": "2026-10-08",
+        "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+        "objectiveOrClaimBinding": "obj-u28-perfective-adverb:perfective-verbal-adverb",
+        "applications": [
+          {
+            "cue": "написав письмо, она отправит его завтра",
+            "answer": "anterior to a future main action",
+            "distractors": [
+              "an absolute present label",
+              "a different subject from the main verb"
+            ]
+          },
+          {
+            "cue": "написав письмо, она отправит его завтра",
+            "answer": "the writer and sender are the same person",
+            "distractors": [
+              "two unrelated people perform the actions",
+              "the sentence omits its main subject"
+            ]
+          },
+          {
+            "cue": "устав писать ложился на диван",
+            "answer": "anterior to a past main action",
+            "distractors": [
+              "an absolute present label",
+              "a different subject from the main verb"
+            ]
+          }
+        ]
+      },
+      "originalSourceTextRef": "7bac1b521a8bf51e48a25af9adf518bd844391d098723752e0e6b07ad5e7c3e8"
+    },
+    {
+      "itemId": "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-9",
+      "unitNumber": 28,
+      "objectiveId": "obj-u28-perfective-adverb",
+      "recordType": "original-synthesis",
+      "sourceId": "src-content-audit-research",
+      "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-corrected-capability:cap-obj-u28-perfective-adverb",
+      "shippedText": "anterior to a future main action",
+      "transformation": "content-audit research synthesis",
+      "licenseId": "Original app text",
+      "licenseUrl": "urn:russian-companion:license:original-app-text",
+      "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+      "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+      "sourceHash": "7bac1b521a8bf51e48a25af9adf518bd844391d098723752e0e6b07ad5e7c3e8",
+      "contentHash": "16f42ab87a4149e77c6db7d24f32fcb2975c3b1712be311eefae55000430459c",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "synthesis": {
+        "bibliography": "Retained Wikisource Вечера у княгини Старобельской oldid5336197, complete opening paragraph of ЗНАКОМСТВО С ДРУГОМ ПРИНЦЕССЫ КОРЛЕОНЕ with explicit actor Павел Сергеич Вязовский. Exact native clause selections with unchanged source punctuation and NBSP; no stress or actor inserted. Existing public-domain author/work/rights basis retained, qualified rights review pending. Frozen OpenRussian verbs.csv commit50e210c4803237779cb562bc1abcea529066031c identifies читать as imperfective and устать as perfective. Existing CC BY-SA4.0 attribution/rights apply to selected dictionary rows. Retained Russian grammar1369617627 complete Adverbial participle section supplies earlier/simultaneous relation; absolute usually-present/only-past labels are not adopted as sentence tense. Independent English,2026-10-13. Guided literary context also occurs in later reading; not unseen evidence or productive mastery. Original independent relative-time/shared-subject scored fields remain. No private Penguin text; source/rights/semantic review pending.",
+        "sourceDateOrVersion": "2026-10-08",
+        "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+        "objectiveOrClaimBinding": "obj-u28-perfective-adverb:perfective-verbal-adverb",
+        "applications": [
+          {
+            "cue": "написав письмо, она отправит его завтра",
+            "answer": "anterior to a future main action",
+            "distractors": [
+              "an absolute present label",
+              "a different subject from the main verb"
+            ]
+          },
+          {
+            "cue": "написав письмо, она отправит его завтра",
+            "answer": "the writer and sender are the same person",
+            "distractors": [
+              "two unrelated people perform the actions",
+              "the sentence omits its main subject"
+            ]
+          },
+          {
+            "cue": "устав писать ложился на диван",
+            "answer": "anterior to a past main action",
+            "distractors": [
+              "an absolute present label",
+              "a different subject from the main verb"
+            ]
+          }
+        ]
+      },
+      "originalSourceTextRef": "7bac1b521a8bf51e48a25af9adf518bd844391d098723752e0e6b07ad5e7c3e8"
+    },
+    {
+      "itemId": "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-12",
+      "unitNumber": 28,
+      "objectiveId": "obj-u28-perfective-adverb",
+      "recordType": "original-synthesis",
+      "sourceId": "src-content-audit-research",
+      "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-corrected-capability:cap-obj-u28-perfective-adverb",
+      "shippedText": "an absolute present label",
+      "transformation": "content-audit research synthesis",
+      "licenseId": "Original app text",
+      "licenseUrl": "urn:russian-companion:license:original-app-text",
+      "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+      "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+      "sourceHash": "7bac1b521a8bf51e48a25af9adf518bd844391d098723752e0e6b07ad5e7c3e8",
+      "contentHash": "ad279813889fadf7a4ed0dbc52285ae58694133905dbf038f51fa7996807a8c7",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "synthesis": {
+        "bibliography": "Retained Wikisource Вечера у княгини Старобельской oldid5336197, complete opening paragraph of ЗНАКОМСТВО С ДРУГОМ ПРИНЦЕССЫ КОРЛЕОНЕ with explicit actor Павел Сергеич Вязовский. Exact native clause selections with unchanged source punctuation and NBSP; no stress or actor inserted. Existing public-domain author/work/rights basis retained, qualified rights review pending. Frozen OpenRussian verbs.csv commit50e210c4803237779cb562bc1abcea529066031c identifies читать as imperfective and устать as perfective. Existing CC BY-SA4.0 attribution/rights apply to selected dictionary rows. Retained Russian grammar1369617627 complete Adverbial participle section supplies earlier/simultaneous relation; absolute usually-present/only-past labels are not adopted as sentence tense. Independent English,2026-10-13. Guided literary context also occurs in later reading; not unseen evidence or productive mastery. Original independent relative-time/shared-subject scored fields remain. No private Penguin text; source/rights/semantic review pending.",
+        "sourceDateOrVersion": "2026-10-08",
+        "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+        "objectiveOrClaimBinding": "obj-u28-perfective-adverb:perfective-verbal-adverb",
+        "applications": [
+          {
+            "cue": "написав письмо, она отправит его завтра",
+            "answer": "anterior to a future main action",
+            "distractors": [
+              "an absolute present label",
+              "a different subject from the main verb"
+            ]
+          },
+          {
+            "cue": "написав письмо, она отправит его завтра",
+            "answer": "the writer and sender are the same person",
+            "distractors": [
+              "two unrelated people perform the actions",
+              "the sentence omits its main subject"
+            ]
+          },
+          {
+            "cue": "устав писать ложился на диван",
+            "answer": "anterior to a past main action",
+            "distractors": [
+              "an absolute present label",
+              "a different subject from the main verb"
+            ]
+          }
+        ]
+      },
+      "originalSourceTextRef": "7bac1b521a8bf51e48a25af9adf518bd844391d098723752e0e6b07ad5e7c3e8"
+    },
+    {
+      "itemId": "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-13",
+      "unitNumber": 28,
+      "objectiveId": "obj-u28-perfective-adverb",
+      "recordType": "original-synthesis",
+      "sourceId": "src-content-audit-research",
+      "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-corrected-capability:cap-obj-u28-perfective-adverb",
+      "shippedText": "a different subject from the main verb",
+      "transformation": "content-audit research synthesis",
+      "licenseId": "Original app text",
+      "licenseUrl": "urn:russian-companion:license:original-app-text",
+      "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+      "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+      "sourceHash": "7bac1b521a8bf51e48a25af9adf518bd844391d098723752e0e6b07ad5e7c3e8",
+      "contentHash": "5408a0a22e04436b148f7e5de1190e3cd11f8f8765104effe67bb7d662a08a7b",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "synthesis": {
+        "bibliography": "Retained Wikisource Вечера у княгини Старобельской oldid5336197, complete opening paragraph of ЗНАКОМСТВО С ДРУГОМ ПРИНЦЕССЫ КОРЛЕОНЕ with explicit actor Павел Сергеич Вязовский. Exact native clause selections with unchanged source punctuation and NBSP; no stress or actor inserted. Existing public-domain author/work/rights basis retained, qualified rights review pending. Frozen OpenRussian verbs.csv commit50e210c4803237779cb562bc1abcea529066031c identifies читать as imperfective and устать as perfective. Existing CC BY-SA4.0 attribution/rights apply to selected dictionary rows. Retained Russian grammar1369617627 complete Adverbial participle section supplies earlier/simultaneous relation; absolute usually-present/only-past labels are not adopted as sentence tense. Independent English,2026-10-13. Guided literary context also occurs in later reading; not unseen evidence or productive mastery. Original independent relative-time/shared-subject scored fields remain. No private Penguin text; source/rights/semantic review pending.",
+        "sourceDateOrVersion": "2026-10-08",
+        "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+        "objectiveOrClaimBinding": "obj-u28-perfective-adverb:perfective-verbal-adverb",
+        "applications": [
+          {
+            "cue": "написав письмо, она отправит его завтра",
+            "answer": "anterior to a future main action",
+            "distractors": [
+              "an absolute present label",
+              "a different subject from the main verb"
+            ]
+          },
+          {
+            "cue": "написав письмо, она отправит его завтра",
+            "answer": "the writer and sender are the same person",
+            "distractors": [
+              "two unrelated people perform the actions",
+              "the sentence omits its main subject"
+            ]
+          },
+          {
+            "cue": "устав писать ложился на диван",
+            "answer": "anterior to a past main action",
+            "distractors": [
+              "an absolute present label",
+              "a different subject from the main verb"
+            ]
+          }
+        ]
+      },
+      "originalSourceTextRef": "7bac1b521a8bf51e48a25af9adf518bd844391d098723752e0e6b07ad5e7c3e8"
+    }
+  ],
+  "resolvedNativeContext": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nProposed Unit 28 uses admitted imperfective and perfective adverbial lines and one admitted public-domain reading span. Qualified review is pending.\nRead the admitted examples on this card.\nA perfective verbal adverb is anterior to the main predicate. It can precede a past or a future main action. It is not limited to an absolute past.\nusually present, while perfective ones can only be past\nсказав\nperfective verbal adverb; normally anterior to its main action, which can itself be past or future\nнаучившись\nвойдя\nнаписав письмо, она отправит его завтра\nanterior to a future main action\nWhen is the perfective verbal adverb interpreted in this sentence?\nIn написав письмо, она отправит его завтра, anterior to a future main action describes написав: writing precedes the future sending, and the same person performs both actions.\nan absolute present label\na different subject from the main verb\nan absolute present label is not the time of a perfective verbal adverb.\na different subject from the main verb violates the shared-subject constraint.\nthe writer and sender are the same person\nWhich English description identifies the shared subject?\nIn написав письмо, она отправит его завтра, the writer and sender are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject.\nRetained Russian grammar revision 1369617627, existing hash-bound Unit28 contextual research applications, and retained public-domain Wikisource revision 5336197. Independently authored English explanation, 2026-10-12. No private book prose, new Russian, or general productive formation algorithm. Pending final linguistic audit.\nA perfective verbal adverb normally presents an action completed before the main action in this taught construction. Anterior means earlier relative to that action. The retained сказав and научившись illustrate these forms; their labels alone do not fix an absolute past tense. Read the accompanying main predicate to establish the sentence time.\nIn написав письмо, она отправит его завтра, she will send the letter tomorrow after writing it. The writing precedes the future sending: anterior to a future main action is the matching description. The sentence does not require the writing to have happened before the present moment. The pronoun she names the main subject, and the writer and sender are the same person. An absolute present label loses the relative timing; assigning a different subject loses the supplied construction.\nThe retained войдя illustrates another perfective verbal-adverb form with an action normally anterior to its main predicate. It does not by itself identify a main subject or an absolute sentence tense. Compare the supplied forms and read their complete contexts when available. This small example set supplies recognition practice, not a complete productive algorithm for unlisted verbs.\nA perfective verbal adverb normally presents an action completed before the main action in this taught construction. Anterior means earlier relative to that action. The retained сказав and научившись illustrate these forms; their labels alone do not fix an absolute past tense. Read the accompanying main predicate to establish the sentence time.\n\nIn написав письмо, она отправит его завтра, she will send the letter tomorrow after writing it. The writing precedes the future sending: anterior to a future main action is the matching description. The sentence does not require the writing to have happened before the present moment. The pronoun she names the main subject, and the writer and sender are the same person. An absolute present label loses the relative timing; assigning a different subject loses the supplied construction.\n\nThe retained войдя illustrates another perfective verbal-adverb form with an action normally anterior to its main predicate. It does not by itself identify a main subject or an absolute sentence tense. Compare the supplied forms and read their complete contexts when available. This small example set supplies recognition practice, not a complete productive algorithm for unlisted verbs.\n[{\"cue\": \"написав письмо, она отправит его завтра\", \"answer\": \"anterior to a future main action\", \"distractors\": [\"an absolute present label\", \"a different subject from the main verb\"]}, {\"cue\": \"написав письмо, она отправит его завтра\", \"answer\": \"the writer and sender are the same person\", \"distractors\": [\"two unrelated people perform the actions\", \"the sentence omits its main subject\"]}]\nRetained Wikisource Вечера у княгини Старобельской oldid5336197, complete opening paragraph of ЗНАКОМСТВО С ДРУГОМ ПРИНЦЕССЫ КОРЛЕОНЕ with explicit actor Павел Сергеич Вязовский. Exact native clause selections with unchanged source punctuation and NBSP; no stress or actor inserted. Existing public-domain author/work/rights basis retained, qualified rights review pending. Frozen OpenRussian verbs.csv commit50e210c4803237779cb562bc1abcea529066031c identifies читать as imperfective and устать as perfective. Existing CC BY-SA4.0 attribution/rights apply to selected dictionary rows. Retained Russian grammar1369617627 complete Adverbial participle section supplies earlier/simultaneous relation; absolute usually-present/only-past labels are not adopted as sentence tense. Independent English,2026-10-13. Guided literary context also occurs in later reading; not unseen evidence or productive mastery. Original independent relative-time/shared-subject scored fields remain. No private Penguin text; source/rights/semantic review pending.\nС 6 часов утра часов до 6 вечера в первый четверг декабря нынешней зимы Павел Сергеич Вязовский, человек лет пятидесяти пяти, давнишний житель двух из трех комнат старенького крошечного деревянного домика в одном из глухих углов Петербурга, проводил время по обыкновению: сидел за рабочим столом и писал, устав писать ложился на диван и отдыхал читая, потом опять садился писать, и урывками между этих занятий услышал утром голос старушки, хозяйки домика: «самовар принесла, Павел Сергеевич», сказал ей «благодарю, Анна Даниловна», выпил два стакана чаю с молоком, съел с чаем ломоть белого хлеба; опять услышал голос хозяйки: «принесла завтрак, Павел Сергеевич», опять поблагодарил ее, выпил стакан молока с черным хлебом, составлявший его завтрак, опять услышал голос хозяйки: «принесла обед, Павел Сергеич», опять поблагодарил ее, съел тарелку грешневой кашицы, составлявшую его ежедневный обед; опять услышал — это было, наверное часов в 6, по аккуратно соблюдаемому старушкой порядку, — голос ее «принесла самовар, Павел Сергеич!», опять сказал «благодарю вас, Анна Даниловна», — но тут произошло отступление от ежедневного порядка: встав положить чаю в чайник, и налить кипятком, Павел Сергеич увидел, что старушка не ушла, стоит, сложа руки и смотрит на один из локтей его пальто. Он вздохнул, подумав: «опять за то же», — и не ошибся: старушка сказала:\nустать\tуста'ть\tget tired, be tired\termüden; müde sein\tperfective\tуставать\tуста'нь\tуста'ньте\tуста'л\tуста'ла\tуста'ло\tуста'ли\tуста'ну\tуста'нешь\tуста'нет\tуста'нем\tуста'нете\tуста'нут\nWhich English description identifies the relative timing in this retained clause?\nIn устав писать ложился на диван, anterior to a past main action is the matching relative-time description. Becoming tired of writing precedes lying down; the same person performs both actions in this supplied episode. The main predicate is past; the verbal adverb does not independently label absolute sentence time.\n\nan absolute present label mistakes relative timing for an independent tense.\na different subject from the main verb is not the shared-actor reading supplied by this paragraph.\nThe retained paragraph introduces Павел Сергеич Вязовский as the actor. устав писать ложился на диван — Becoming tired of writing precedes lying down; the same person performs both actions in this supplied episode. The source marks устать as perfective. anterior to a past main action describes timing relative to the main predicate in this clause. The actor is supplied by the paragraph, not inserted into a new Russian sentence. This is an exact clause selection with source punctuation and spacing preserved. Compare the independent letter sentence already taught: it keeps its original relative-time and shared-subject reading. The same literary episode appears later in reading practice; this is not unseen evidence, a rule that fixes absolute tense, or unrestricted formation/production mastery.\nA perfective verbal adverb normally presents an action completed before the main action in this taught construction. Anterior means earlier relative to that action. The retained сказав and научившись illustrate these forms; their labels alone do not fix an absolute past tense. Read the accompanying main predicate to establish the sentence time.\n\nIn написав письмо, она отправит его завтра, she will send the letter tomorrow after writing it. The writing precedes the future sending: anterior to a future main action is the matching description. The sentence does not require the writing to have happened before the present moment. The pronoun she names the main subject, and the writer and sender are the same person. An absolute present label loses the relative timing; assigning a different subject loses the supplied construction.\n\nThe retained войдя illustrates another perfective verbal-adverb form with an action normally anterior to its main predicate. It does not by itself identify a main subject or an absolute sentence tense. Compare the supplied forms and read their complete contexts when available. This small example set supplies recognition practice, not a complete productive algorithm for unlisted verbs.\n\nThe retained paragraph introduces Павел Сергеич Вязовский as the actor. устав писать ложился на диван — Becoming tired of writing precedes lying down; the same person performs both actions in this supplied episode. The source marks устать as perfective. anterior to a past main action describes timing relative to the main predicate in this clause. The actor is supplied by the paragraph, not inserted into a new Russian sentence. This is an exact clause selection with source punctuation and spacing preserved. Compare the independent letter sentence already taught: it keeps its original relative-time and shared-subject reading. The same literary episode appears later in reading practice; this is not unseen evidence, a rule that fixes absolute tense, or unrestricted formation/production mastery.\n[{\"cue\": \"написав письмо, она отправит его завтра\", \"answer\": \"anterior to a future main action\", \"distractors\": [\"an absolute present label\", \"a different subject from the main verb\"]}, {\"cue\": \"написав письмо, она отправит его завтра\", \"answer\": \"the writer and sender are the same person\", \"distractors\": [\"two unrelated people perform the actions\", \"the sentence omits its main subject\"]}, {\"cue\": \"устав писать ложился на диван\", \"answer\": \"anterior to a past main action\", \"distractors\": [\"an absolute present label\", \"a different subject from the main verb\"]}]",
+  "plannedFocusedMethods": 66,
+  "all6914ProvenanceRecordsUnchanged": true,
+  "ownDeclarationAndScoredItemsEqualHistorical20a227BeforeActivation": true,
+  "completeUnitInspection": {
+    "sessions": 8,
+    "teachingCards": 19,
+    "assignedItems": 34,
+    "guided": 10,
+    "independent": 24,
+    "unassignedOptionalItems": 4
+  },
+  "directOwnerTimingMethods": 13,
+  "resolvedContextRefs": {
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-8": "7bac1b521a8bf51e48a25af9adf518bd844391d098723752e0e6b07ad5e7c3e8",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-9": "7bac1b521a8bf51e48a25af9adf518bd844391d098723752e0e6b07ad5e7c3e8",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-12": "7bac1b521a8bf51e48a25af9adf518bd844391d098723752e0e6b07ad5e7c3e8",
+    "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-13": "7bac1b521a8bf51e48a25af9adf518bd844391d098723752e0e6b07ad5e7c3e8",
+    "prov-u28-timing-guided-perfective-0": "7bac1b521a8bf51e48a25af9adf518bd844391d098723752e0e6b07ad5e7c3e8",
+    "prov-u28-timing-guided-perfective-1": "7bac1b521a8bf51e48a25af9adf518bd844391d098723752e0e6b07ad5e7c3e8",
+    "prov-u28-timing-guided-perfective-2": "7bac1b521a8bf51e48a25af9adf518bd844391d098723752e0e6b07ad5e7c3e8",
+    "prov-u28-timing-guided-perfective-3": "7bac1b521a8bf51e48a25af9adf518bd844391d098723752e0e6b07ad5e7c3e8"
+  }
+}

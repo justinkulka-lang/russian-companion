@@ -35,7 +35,7 @@ class Unit15ImperativeRemediationTest {
     @Test fun exactDeclaredUnitExceptionPreservesEveryQuestionRecordAndRequirement() {
         val p = pack(); val old = baseline()
         assertEquals(declaredAfterUnit(), p.unit(15))
-        assertEquals(old, p.copy(units = p.units.map { if (it.number == 15) old.unit(15)!! else if (it.number in 16..28) it.copy(advancement = old.unit(it.number)!!.advancement) else it }))
+        assertEquals(old, p.copy(units = p.units.map { if (it.number == 15) old.unit(15)!! else if (it.number in 16..29) it.copy(advancement = old.unit(it.number)!!.advancement) else it }))
         assertEquals(old.unit(15)!!.advancement, p.unit(15)!!.advancement)
         assertEquals(6, p.unit(15)!!.advancement!!.minimumDistinctChecks)
         assertEquals(10, p.unit(16)!!.advancement!!.minimumDistinctChecks)
@@ -52,7 +52,8 @@ class Unit15ImperativeRemediationTest {
         assertEquals(old.unit(26)!!.copy(advancement = old.unit(26)!!.advancement!!.copy(requireDueReview = true, cumulativeReviewPolicyId = Unit26CumulativeReviewPolicy.definition.id)), p.unit(26))
         assertEquals(old.unit(27)!!.copy(advancement = old.unit(27)!!.advancement!!.copy(requireDueReview = true, cumulativeReviewPolicyId = Unit27CumulativeReviewPolicy.definition.id)), p.unit(27))
         assertEquals(old.unit(28)!!.copy(advancement = old.unit(28)!!.advancement!!.copy(requireDueReview = true, cumulativeReviewPolicyId = Unit28CumulativeReviewPolicy.definition.id)), p.unit(28))
-        assertNull(cumulativeReviewPolicy(29))
+        assertEquals(old.unit(29)!!.copy(advancement = old.unit(29)!!.advancement!!.copy(requireDueReview = true, cumulativeReviewPolicyId = Unit29CumulativeReviewPolicy.definition.id)), p.unit(29))
+        assertNull(cumulativeReviewPolicy(30))
         val teaching = p.step("u15-st-teach-imperative-contrast")!!.second
         assertTrue("u15-st-teach-imperative-contrast" in p.unit(15)!!.objectives.single { it.id == "obj-u15-imperative" }.instructionStepIds)
         assertEquals(listOf("u15-g-imperative-0", "u15-i-imperative-1", "u15-i-imperative-2").joinToString("\n\n") { p.item(it)!!.feedback }, teaching.body)
