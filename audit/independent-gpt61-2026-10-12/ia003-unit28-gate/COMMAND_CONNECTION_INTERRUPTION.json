@@ -1,0 +1,13 @@
+{
+  "observedUtc": "2026-10-16T03:49:37.273731+00:00",
+  "event": "write_stdin failed to resume session30821:exec-server transport disconnected/recovery timeout",
+  "originalRunnerPid": 190965,
+  "originalExitCapturingShellPid": 190904,
+  "originalWorkers": [
+    191029,
+    191045
+  ],
+  "originalProcessesConfirmedAlive": true,
+  "testRunRestarted": false,
+  "monitoring": "Read the original log and exit file written by the still-running original shell;do not manufacture an exit status."
+}
