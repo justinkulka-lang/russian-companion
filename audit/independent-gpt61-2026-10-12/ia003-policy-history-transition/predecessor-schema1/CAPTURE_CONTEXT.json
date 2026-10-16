@@ -1,0 +1,32 @@
+{
+  "checkoutHead": "c6adbec66cde2d22b7f73289b6328a94a1d1a11d",
+  "productionCommit": "74eb8b655ebd0af388c4fba05a986d04e6ec02a8",
+  "productionState": "Exact predecessor app/src/main tree overlaid temporarily; current tests plus archived exporter. Not a full historical repository checkout or clean test commit.",
+  "runStartedUtc": "2026-10-16T14:50:14.707688+00:00",
+  "command": "source /workspace/setup/android-env.sh\n./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*PolicyHistoryPredecessorExportTest' --max-workers=4 --console=plain",
+  "sourceSha256": "4f3d311fcaa75f0811964795bf46c6c2f19a4c97c1444f2746a40342aa1ce265",
+  "restoreSourceSha256": "149e30d9318a6c33fdaa07421daf0375dae92c29a0d7112ac7ee07f28af5de1d",
+  "exporterSha256": "39088779930aa2cfcf1ef622e0fd6b2e2d0199f61dede721173e1f7ef975d943",
+  "productionTrees": {
+    "app/src/main": "efaa64e6164e46bb506191362f65e627f53e934d",
+    "app/schemas": "bf24044fda8ca836d62e24e94c537eea0aec8e83",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f"
+  },
+  "completeSuite": false,
+  "runnerExitCode": 0,
+  "currentSourceRestored": true,
+  "currentMainDiffEmpty": true,
+  "xml": {
+    "name": "dev.russiancompanion.v2.PolicyHistoryPredecessorExportTest",
+    "tests": "1",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-16T14:50:42.440Z",
+    "hostname": "f5c5dd6b855f",
+    "time": "27.687"
+  },
+  "methods": [
+    "captureGenuineV1LifecycleAndDownstreamOwnerIdentityBeforePolicyTransition"
+  ]
+}
