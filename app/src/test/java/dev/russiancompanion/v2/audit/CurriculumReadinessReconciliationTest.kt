@@ -84,10 +84,11 @@ class CurriculumReadinessReconciliationTest {
         assertEquals(0, model.knownPenguinTitleMarkerMatches)
         assertTrue(model.packagedExampleRecords == model.reachableExampleRecords + model.orphanedExampleRecords)
         assertTrue(model.packagedCheckItems == model.reachableCheckItems + model.orphanedCheckItems)
-        assertEquals("ex-u4-verb-знать, ex-u4-verb-работать", model.orphanedExampleIds)
-        assertEquals("NONE", model.orphanedCheckItemIds)
-        assertEquals(2, model.orphanedExampleRecords)
-        assertEquals(0, model.orphanedCheckItems)
+        // Retain original and later historical/optional records; these counts are not required checks.
+        assertEquals("ex-u11-past-aspect-0, ex-u11-past-aspect-1, ex-u30-letter-names-0, ex-u30-letter-names-1, ex-u4-verb-знать, ex-u4-verb-работать", model.orphanedExampleIds)
+        assertEquals("u17-g-clock-0, u17-i-clock-1, u17-i-clock-2, u24-g-word-order-contrast-0, u29-g-short-adjective-0, u29-i-punctuation-2, u29-i-short-adjective-1, u29-i-short-adjective-2, u30-g-abbrev-examples-0, u30-g-letter-names-0, u30-i-abbrev-examples-1, u30-i-abbrev-examples-2, u30-i-letter-names-1, u30-i-letter-names-2", model.orphanedCheckItemIds)
+        assertEquals(6, model.orphanedExampleRecords)
+        assertEquals(14, model.orphanedCheckItems)
         assertEquals(0, model.packagedAudioBoundToV2Units)
         assertEquals("NOT_APPROVED", model.publicRelease)
         assertFalse(model.candidateFrozen)
@@ -145,7 +146,10 @@ class CurriculumReadinessReconciliationTest {
         }
         val unit7 = model.units.first { it.unitNumber == 7 }
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", unit7.readiness)
-        assertTrue(unit7.advancementCanPresentlySucceed)
+        assertTrue(pack.unit(7)!!.advancement!!.requireDueReview)
+        assertFalse(unit7.advancementCanPresentlySucceed)
+        // Static reconciliation has ordinary work, but no assigned cumulative-review proof.
+        assertTrue(model.units.filter { it.unitNumber in 3..30 }.all { !it.advancementCanPresentlySucceed })
         assertFalse(unit7.finalDisposition.contains("INVALID_ADVANCEMENT_READINESS_INCONSISTENCY"))
         assertTrue((16..30).all { number -> model.units.first { it.unitNumber == number }.assetBlocker == "NONE" })
         listOf(16, 18, 20).forEach { number ->
