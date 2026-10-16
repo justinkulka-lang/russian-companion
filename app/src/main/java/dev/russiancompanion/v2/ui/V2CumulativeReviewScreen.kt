@@ -29,7 +29,7 @@ internal fun V2CumulativeReviewScreen(pack: V2CurriculumPack, learner: V2Learner
             3 -> "Review two earlier skills: reading and recognising printed letters. Use what you learned in Unit 1; complete both checks before continuing."
             4 -> "Review earlier print-pair decoding and noun-gender labels from Units 1 and 3. Complete both checks before continuing; these supplied choices do not demonstrate whole-word reading, speaking or writing."
             5 -> "Review earlier print-pair matching from Unit 1 and nominative subjects in supplied Unit 4 clauses. Complete both checks before continuing. These taught choices do not demonstrate unseen reading, productive grammar, speaking or writing."
-            6 -> if (state.assignment?.policyId == Unit6CumulativeReviewPolicy.definition.id)
+            6 -> if (state?.assignment?.policyId == Unit6CumulativeReviewPolicy.definition.id)
                 "Review earlier print-pair matching from Unit 1 and the behavior of supplied Unit 5 nouns. Complete both checks before continuing. These taught choices do not demonstrate unseen reading, productive morphology, speaking or writing."
             else "Review earlier print-pair matching, supplied noun behavior from Unit 5 and subjects in supplied Unit 4 clauses. Complete all three checks before continuing. These taught choices do not demonstrate unseen reading, productive grammar, speaking or writing."
             7 -> "Review earlier print-pair matching from Unit 1 and the supplied inanimate direct object from Unit 6. Complete both checks before continuing. These taught choices do not demonstrate unseen reading, productive grammar, speaking or writing."
