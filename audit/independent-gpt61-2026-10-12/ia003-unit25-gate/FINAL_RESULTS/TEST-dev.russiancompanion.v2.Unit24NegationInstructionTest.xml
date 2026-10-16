@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit24NegationInstructionTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-16T01:08:10.525Z" hostname="f5c5dd6b855f" time="12.482">
+  <properties/>
+  <testcase name="numberAbsenceConcordAndPersuasionContextHaveDistinctExplanations" classname="dev.russiancompanion.v2.Unit24NegationInstructionTest" time="1.006"/>
+  <testcase name="existingKeysStayBoundAndSourceAndReviewRestrictionsRemainClosed" classname="dev.russiancompanion.v2.Unit24NegationInstructionTest" time="10.886"/>
+  <testcase name="allNegationContrastsAreExplainedBeforePracticeAndRepeatedAfterAMiss" classname="dev.russiancompanion.v2.Unit24NegationInstructionTest" time="0.585"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[System.logW: A resource failed to call close. 
+]]></system-err>
+</testsuite>
