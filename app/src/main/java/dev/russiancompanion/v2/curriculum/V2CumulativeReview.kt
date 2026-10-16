@@ -3,7 +3,10 @@ package dev.russiancompanion.v2.curriculum
 import kotlinx.serialization.Serializable
 import java.security.MessageDigest
 
+// Keep schema1 defaults for decoding historical documents and for unchanged answers.
 internal const val CUMULATIVE_REVIEW_SCHEMA = 1
+// New Unit3 assignments use governed latest-miss/least-recent selection; pools stay v1.
+internal const val UNIT3_RECENT_SELECTION_ASSIGNMENT_SCHEMA = 2
 internal const val CUMULATIVE_REVIEW_ROLE = "CUMULATIVE_REVIEW"
 
 @Serializable
@@ -372,6 +375,31 @@ private fun teachingDigest(pack: V2CurriculumPack, objective: V2Objective): Stri
     },
 ))
 
+/** Schema2 is a bounded Unit3 selector; unknown versions cannot acquire credit. */
+private fun reviewAssignmentSchemaSupported(a: CumulativeReviewAssignment): Boolean =
+    a.schema == CUMULATIVE_REVIEW_SCHEMA ||
+        (a.schema == UNIT3_RECENT_SELECTION_ASSIGNMENT_SCHEMA && a.targetUnit == 3)
+
+/** Allocation only: these attempts never supply assignment-bound due credit. */
+internal fun recentReviewCandidate(pack: V2CurriculumPack, learner: V2LearnerView,
+                                  candidates: List<V2CheckItem>): V2CheckItem? {
+    val attempts = learner.governedAttempts.orEmpty()
+    // Malformed duplicate sequence numbers have no deterministic insertion order.
+    val ambiguous = attempts.groupingBy { it.acceptedOrder }.eachCount().filterValues { it > 1 }.keys
+    val ids = candidates.map { it.id }.toSet()
+    val latest = attempts.filter { a ->
+        a.itemId in ids && a.acceptedOrder > 0 && a.acceptedOrder !in ambiguous &&
+            pack.step(a.stepId)?.second?.kind == "CHECK" &&
+            attemptSuppliesStepSelection(a, pack, a.stepId) &&
+            pack.item(a.itemId)?.let { a.objectiveId == it.objectiveId && a.correct == (a.selected == it.answer) } == true
+    }.groupBy { it.itemId }.mapValues { (_, rows) -> rows.maxBy { it.acceptedOrder } }
+    return candidates.withIndex().minWithOrNull(compareBy<IndexedValue<V2CheckItem>>(
+        { if (latest[it.value.id]?.correct == false) 0 else 1 },
+        { latest[it.value.id]?.let { a -> if (a.correct) a.acceptedOrder else -a.acceptedOrder } ?: 0L },
+        { it.index },
+    ))?.value
+}
+
 /** Requires actual taught evidence; placement and bare historical completion are insufficient. */
 internal fun createUnit3ReviewAssignment(pack: V2CurriculumPack, learner: V2LearnerView,
                                        id: String, boundary: Long): CumulativeReviewAssignment? {
@@ -396,21 +424,24 @@ internal fun createCumulativeReviewAssignment(pack: V2CurriculumPack, learner: V
             o.kind != "RECOGNITION" || o.instructionStepIds.isEmpty() || o.practiceStepIds.isEmpty() ||
             (o.instructionStepIds + o.practiceStepIds).any { !completedStepCounts(pack, learner, it) } ||
             objectiveState(o, learner, pack) != V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS) return null
-        val item = candidates.mapNotNull { pack.item(it) }.firstOrNull {
+        val eligible = candidates.mapNotNull { pack.item(it) }.filter {
             it.id in o.checkItemIds && it.objectiveId == o.id && it.options.size >= 2 && it.answer in it.options
-        } ?: return null
+        }
+        val item = (if (targetUnit == 3) recentReviewCandidate(pack, learner, eligible)
+            else eligible.firstOrNull()) ?: return null
         CumulativeReviewSlot(o.id, skill.name, item.id, unit.number, V2Validator.checkItemContentDigest(item),
             reviewUnitDigest(pack, unit.number), teachingDigest(pack, o))
     }
     val a = CumulativeReviewAssignment(id, targetUnit, policy.id,
-        policy.digest, closedResponseRuleDigest(), boundary, slots, "")
+        policy.digest, closedResponseRuleDigest(), boundary, slots, "",
+        schema = if (targetUnit == 3) UNIT3_RECENT_SELECTION_ASSIGNMENT_SCHEMA else CUMULATIVE_REVIEW_SCHEMA)
     return a.copy(digest = reviewAssignmentDigest(a))
 }
 
 internal fun reviewAssignmentCurrent(pack: V2CurriculumPack, a: CumulativeReviewAssignment): Boolean {
     val policy = cumulativeReviewPolicy(a.targetUnit) ?: return false
     if (!cumulativeReviewDeclarationValid(pack, a.targetUnit) || pack.schemaVersion != 1 ||
-        a.schema != CUMULATIVE_REVIEW_SCHEMA || a.id.isBlank() || a.boundary < 0 ||
+        !reviewAssignmentSchemaSupported(a) || a.id.isBlank() || a.boundary < 0 ||
         a.policyId != policy.id || a.policyDigest != policy.digest ||
         a.responseRuleDigest != closedResponseRuleDigest() ||
         a.slots.size != policy.pool.size || a.digest != reviewAssignmentDigest(a)) return false
@@ -449,7 +480,7 @@ internal fun reviewHistoryDefects(assignments: List<CumulativeReviewAssignment>,
     val maximum = answers.maxOfOrNull { it.acceptedOrder } ?: 0
     val hashValid: (String) -> Boolean = { it.length == 64 && it.all { c -> c in '0'..'9' || c in 'a'..'f' } }
     for (a in assignments) {
-        if (a.schema != CUMULATIVE_REVIEW_SCHEMA || a.id.isBlank() || a.targetUnit !in 1..30 ||
+        if (!reviewAssignmentSchemaSupported(a) || a.id.isBlank() || a.targetUnit !in 1..30 ||
             a.boundary < 0 || a.boundary > maximum || a.policyId.isBlank() || !hashValid(a.policyDigest) || !hashValid(a.responseRuleDigest) || a.slots.size !in 2..6 || a.slots.map { it.objectiveId }.distinct().size != a.slots.size ||
             a.digest != reviewAssignmentDigest(a) || a.slots.any { it.ownerUnit !in 1 until a.targetUnit ||
                 !hashValid(it.itemDigest) || !hashValid(it.unitDigest) || !hashValid(it.teachingDigest) ||

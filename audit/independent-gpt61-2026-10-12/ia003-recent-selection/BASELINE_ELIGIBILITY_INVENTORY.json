@@ -1,0 +1,1455 @@
+{
+  "baselineCommit": "2522c33406eae89f4bd92ee749a2086c765e4352",
+  "assetSha256": "7d480aa307ba99b0cdeb2915116f9339788cd563573262d390cc8c04868c53c9",
+  "kernelSha256": "b03b0efade0c88e10ec91ff96047c410f41d14191aeaef13ba34040093d89d96",
+  "all6914ProvenanceSha256": "dd4ef76c8e43df68add8972aa57d88283e27736580e4b54a0dbcabc3442059f7",
+  "provenanceCount": 6914,
+  "newEligibility": false,
+  "items": [
+    {
+      "item": {
+        "id": "u1-i-decode-pair",
+        "kind": "PRINT_PAIR",
+        "language": "en",
+        "prompt": "Which line is one letter written in both print cases?",
+        "promptLetter": "А",
+        "options": [
+          "А / а",
+          "А / О",
+          "М / Т"
+        ],
+        "answer": "А / а",
+        "feedback": "А / а is one letter. The other lines are two different letters.",
+        "objectiveId": "obj-u1-decoding",
+        "sourceId": "src-app-english-v2",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false
+      },
+      "objective": {
+        "id": "obj-u1-decoding",
+        "unitNumber": 1,
+        "title": "Decode a printed letter pair",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u1-st-decoding"
+        ],
+        "exampleIds": [
+          "ex-print-letter-0410",
+          "ex-print-letter-041c"
+        ],
+        "practiceStepIds": [
+          "u1-st-guided-decoding",
+          "u1-st-decoding-check"
+        ],
+        "checkItemIds": [
+          "u1-i-decode-pair"
+        ],
+        "remediationStepIds": [
+          "u1-st-decoding"
+        ]
+      },
+      "teachingPracticeRepairSteps": [
+        {
+          "id": "u1-st-decoding",
+          "kind": "TEACH",
+          "title": "Decode print pairs",
+          "body": "Name the letter, then match its uppercase and lowercase print forms. This unit does not introduce words.",
+          "referenceIds": [
+            "ref-decoding"
+          ],
+          "exampleIds": [
+            "ex-print-letter-0410",
+            "ex-print-letter-041c"
+          ],
+          "bookDirection": "Use the elementary reading work in your Lesson 1 pages for anything beyond a single letter."
+        },
+        {
+          "id": "u1-st-guided-decoding",
+          "kind": "GUIDED",
+          "title": "Guided contrast",
+          "body": "Name the letter, then match its uppercase and lowercase print forms. This unit does not introduce words. Choose once with the explanation still in view. This is practice, not the independent check.",
+          "dominantAction": "Check",
+          "itemIds": [
+            "u1-g-guided-decoding"
+          ],
+          "exampleIds": [
+            "ex-print-letter-0410",
+            "ex-print-letter-041c"
+          ],
+          "bookDirection": "Use the elementary reading work in your Lesson 1 pages for anything beyond a single letter.",
+          "remediationStepId": "u1-st-decoding"
+        },
+        {
+          "id": "u1-st-decoding-check",
+          "kind": "CHECK",
+          "title": "One letter, two cases",
+          "body": "Choose the line that is a single letter.",
+          "itemIds": [
+            "u1-i-decode-pair"
+          ],
+          "exampleIds": [
+            "ex-print-letter-0410"
+          ],
+          "remediationStepId": "u1-st-decoding"
+        }
+      ],
+      "examples": [
+        {
+          "id": "ex-print-letter-0410",
+          "kind": "PRINT_PAIR",
+          "letterId": "letter-0410",
+          "display": "А / а",
+          "note": "А and а are the same letter in two print cases.",
+          "sourceId": "src-unicode-cyrillic",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "objectiveId": "obj-u1-print-forms"
+        },
+        {
+          "id": "ex-print-letter-041c",
+          "kind": "PRINT_PAIR",
+          "letterId": "letter-041c",
+          "display": "М / м",
+          "note": "М and м are the same letter in two print cases.",
+          "sourceId": "src-unicode-cyrillic",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "objectiveId": "obj-u1-print-forms"
+        }
+      ],
+      "source": {
+        "id": "src-app-english-v2",
+        "title": "Independently authored companion English",
+        "license": "Original app text",
+        "attribution": "Russian Companion project",
+        "modification": "Original"
+      },
+      "rights": [
+        {
+          "id": "rights-app-english-v2",
+          "sourceId": "src-app-english-v2",
+          "license": "Original app text",
+          "permitsAppUse": true
+        }
+      ]
+    },
+    {
+      "item": {
+        "id": "u1-i-р-not-p",
+        "kind": "CONFUSABLE",
+        "language": "en",
+        "prompt": "This letter looks like Latin P. What is it?",
+        "promptLetter": "Р",
+        "options": [
+          "The Latin letter P",
+          "The Cyrillic letter Р",
+          "The Cyrillic letter П"
+        ],
+        "answer": "The Cyrillic letter Р",
+        "feedback": "Shape overlap with Latin P is a recognition trap. This is Cyrillic Р, not English P.",
+        "objectiveId": "obj-u1-confusable",
+        "sourceId": "src-app-english-v2",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false
+      },
+      "objective": {
+        "id": "obj-u1-confusable",
+        "unitNumber": 1,
+        "title": "Separate Cyrillic letters from Latin look-alikes",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u1-st-confusable"
+        ],
+        "exampleIds": [
+          "ex-letter-0412",
+          "ex-letter-041d",
+          "ex-letter-0420",
+          "ex-letter-0421",
+          "ex-letter-0423",
+          "ex-letter-0425"
+        ],
+        "practiceStepIds": [
+          "u1-st-guided-confusable",
+          "u1-st-confusable-r",
+          "u1-st-confusable-n",
+          "u1-st-confusable-s",
+          "u1-st-confusable-rest"
+        ],
+        "checkItemIds": [
+          "u1-i-р-not-p",
+          "u1-i-н-not-h",
+          "u1-i-с-not-c",
+          "u1-i-в-not-b",
+          "u1-i-у-not-y",
+          "u1-i-х-not-x"
+        ],
+        "remediationStepIds": [
+          "u1-st-confusable"
+        ]
+      },
+      "teachingPracticeRepairSteps": [
+        {
+          "id": "u1-st-confusable",
+          "kind": "TEACH",
+          "title": "Shape traps",
+          "body": "These printed letters often fool Latin-alphabet readers: В, Н, Р, С, У, Х. Name the Cyrillic identity. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+          "referenceIds": [
+            "ref-confusable"
+          ],
+          "exampleIds": [
+            "ex-letter-0420",
+            "ex-letter-041d",
+            "ex-letter-0421"
+          ]
+        },
+        {
+          "id": "u1-st-guided-confusable",
+          "kind": "GUIDED",
+          "title": "Guided contrast",
+          "body": "These printed letters often fool Latin-alphabet readers: В, Н, Р, С, У, Х. Name the Cyrillic identity. Choose once with the explanation still in view. This is practice, not the independent check.",
+          "dominantAction": "Check",
+          "itemIds": [
+            "u1-g-guided-confusable"
+          ],
+          "exampleIds": [
+            "ex-letter-0420",
+            "ex-letter-041d",
+            "ex-letter-0421"
+          ],
+          "remediationStepId": "u1-st-confusable"
+        },
+        {
+          "id": "u1-st-confusable-r",
+          "kind": "CHECK",
+          "title": "Р is not P",
+          "body": "Identity check.",
+          "itemIds": [
+            "u1-i-р-not-p"
+          ],
+          "exampleIds": [
+            "ex-letter-0420"
+          ],
+          "remediationStepId": "u1-st-confusable"
+        },
+        {
+          "id": "u1-st-confusable-n",
+          "kind": "CHECK",
+          "title": "Н is not H",
+          "body": "Identity check.",
+          "itemIds": [
+            "u1-i-н-not-h"
+          ],
+          "exampleIds": [
+            "ex-letter-041d"
+          ],
+          "remediationStepId": "u1-st-confusable"
+        },
+        {
+          "id": "u1-st-confusable-s",
+          "kind": "CHECK",
+          "title": "С is not C",
+          "body": "Identity check.",
+          "itemIds": [
+            "u1-i-с-not-c"
+          ],
+          "exampleIds": [
+            "ex-letter-0421"
+          ],
+          "remediationStepId": "u1-st-confusable"
+        },
+        {
+          "id": "u1-st-confusable-rest",
+          "kind": "CHECK",
+          "title": "В, У, and Х",
+          "body": "Identity check for the remaining look-alikes.",
+          "itemIds": [
+            "u1-i-в-not-b",
+            "u1-i-у-not-y",
+            "u1-i-х-not-x"
+          ],
+          "exampleIds": [
+            "ex-letter-0412",
+            "ex-letter-0423",
+            "ex-letter-0425"
+          ],
+          "remediationStepId": "u1-st-confusable"
+        }
+      ],
+      "examples": [
+        {
+          "id": "ex-letter-0412",
+          "kind": "CONFUSABLE_PAIR",
+          "letterId": "letter-0412",
+          "display": "В / в",
+          "note": "Printed pair В в. Treat the Cyrillic identity, not a Latin look-alike.",
+          "sourceId": "src-unicode-cyrillic",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "objectiveId": "obj-u1-confusable"
+        },
+        {
+          "id": "ex-letter-041d",
+          "kind": "CONFUSABLE_PAIR",
+          "letterId": "letter-041d",
+          "display": "Н / н",
+          "note": "Printed pair Н н. Treat the Cyrillic identity, not a Latin look-alike.",
+          "sourceId": "src-unicode-cyrillic",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "objectiveId": "obj-u1-confusable"
+        },
+        {
+          "id": "ex-letter-0420",
+          "kind": "CONFUSABLE_PAIR",
+          "letterId": "letter-0420",
+          "display": "Р / р",
+          "note": "Printed pair Р р. Treat the Cyrillic identity, not a Latin look-alike.",
+          "sourceId": "src-unicode-cyrillic",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "objectiveId": "obj-u1-confusable"
+        },
+        {
+          "id": "ex-letter-0421",
+          "kind": "CONFUSABLE_PAIR",
+          "letterId": "letter-0421",
+          "display": "С / с",
+          "note": "Printed pair С с. Treat the Cyrillic identity, not a Latin look-alike.",
+          "sourceId": "src-unicode-cyrillic",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "objectiveId": "obj-u1-confusable"
+        },
+        {
+          "id": "ex-letter-0423",
+          "kind": "CONFUSABLE_PAIR",
+          "letterId": "letter-0423",
+          "display": "У / у",
+          "note": "Printed pair У у. Treat the Cyrillic identity, not a Latin look-alike.",
+          "sourceId": "src-unicode-cyrillic",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "objectiveId": "obj-u1-confusable"
+        },
+        {
+          "id": "ex-letter-0425",
+          "kind": "CONFUSABLE_PAIR",
+          "letterId": "letter-0425",
+          "display": "Х / х",
+          "note": "Printed pair Х х. Treat the Cyrillic identity, not a Latin look-alike.",
+          "sourceId": "src-unicode-cyrillic",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "objectiveId": "obj-u1-confusable"
+        }
+      ],
+      "source": {
+        "id": "src-app-english-v2",
+        "title": "Independently authored companion English",
+        "license": "Original app text",
+        "attribution": "Russian Companion project",
+        "modification": "Original"
+      },
+      "rights": [
+        {
+          "id": "rights-app-english-v2",
+          "sourceId": "src-app-english-v2",
+          "license": "Original app text",
+          "permitsAppUse": true
+        }
+      ]
+    },
+    {
+      "item": {
+        "id": "u1-i-н-not-h",
+        "kind": "CONFUSABLE",
+        "language": "en",
+        "prompt": "This letter looks like Latin H. What is it?",
+        "promptLetter": "Н",
+        "options": [
+          "Latin H",
+          "Cyrillic Н",
+          "Cyrillic И"
+        ],
+        "answer": "Cyrillic Н",
+        "feedback": "Do not read Н as English H. It is a Cyrillic letter.",
+        "objectiveId": "obj-u1-confusable",
+        "sourceId": "src-app-english-v2",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false
+      },
+      "objective": {
+        "id": "obj-u1-confusable",
+        "unitNumber": 1,
+        "title": "Separate Cyrillic letters from Latin look-alikes",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u1-st-confusable"
+        ],
+        "exampleIds": [
+          "ex-letter-0412",
+          "ex-letter-041d",
+          "ex-letter-0420",
+          "ex-letter-0421",
+          "ex-letter-0423",
+          "ex-letter-0425"
+        ],
+        "practiceStepIds": [
+          "u1-st-guided-confusable",
+          "u1-st-confusable-r",
+          "u1-st-confusable-n",
+          "u1-st-confusable-s",
+          "u1-st-confusable-rest"
+        ],
+        "checkItemIds": [
+          "u1-i-р-not-p",
+          "u1-i-н-not-h",
+          "u1-i-с-not-c",
+          "u1-i-в-not-b",
+          "u1-i-у-not-y",
+          "u1-i-х-not-x"
+        ],
+        "remediationStepIds": [
+          "u1-st-confusable"
+        ]
+      },
+      "teachingPracticeRepairSteps": [
+        {
+          "id": "u1-st-confusable",
+          "kind": "TEACH",
+          "title": "Shape traps",
+          "body": "These printed letters often fool Latin-alphabet readers: В, Н, Р, С, У, Х. Name the Cyrillic identity. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+          "referenceIds": [
+            "ref-confusable"
+          ],
+          "exampleIds": [
+            "ex-letter-0420",
+            "ex-letter-041d",
+            "ex-letter-0421"
+          ]
+        },
+        {
+          "id": "u1-st-guided-confusable",
+          "kind": "GUIDED",
+          "title": "Guided contrast",
+          "body": "These printed letters often fool Latin-alphabet readers: В, Н, Р, С, У, Х. Name the Cyrillic identity. Choose once with the explanation still in view. This is practice, not the independent check.",
+          "dominantAction": "Check",
+          "itemIds": [
+            "u1-g-guided-confusable"
+          ],
+          "exampleIds": [
+            "ex-letter-0420",
+            "ex-letter-041d",
+            "ex-letter-0421"
+          ],
+          "remediationStepId": "u1-st-confusable"
+        },
+        {
+          "id": "u1-st-confusable-r",
+          "kind": "CHECK",
+          "title": "Р is not P",
+          "body": "Identity check.",
+          "itemIds": [
+            "u1-i-р-not-p"
+          ],
+          "exampleIds": [
+            "ex-letter-0420"
+          ],
+          "remediationStepId": "u1-st-confusable"
+        },
+        {
+          "id": "u1-st-confusable-n",
+          "kind": "CHECK",
+          "title": "Н is not H",
+          "body": "Identity check.",
+          "itemIds": [
+            "u1-i-н-not-h"
+          ],
+          "exampleIds": [
+            "ex-letter-041d"
+          ],
+          "remediationStepId": "u1-st-confusable"
+        },
+        {
+          "id": "u1-st-confusable-s",
+          "kind": "CHECK",
+          "title": "С is not C",
+          "body": "Identity check.",
+          "itemIds": [
+            "u1-i-с-not-c"
+          ],
+          "exampleIds": [
+            "ex-letter-0421"
+          ],
+          "remediationStepId": "u1-st-confusable"
+        },
+        {
+          "id": "u1-st-confusable-rest",
+          "kind": "CHECK",
+          "title": "В, У, and Х",
+          "body": "Identity check for the remaining look-alikes.",
+          "itemIds": [
+            "u1-i-в-not-b",
+            "u1-i-у-not-y",
+            "u1-i-х-not-x"
+          ],
+          "exampleIds": [
+            "ex-letter-0412",
+            "ex-letter-0423",
+            "ex-letter-0425"
+          ],
+          "remediationStepId": "u1-st-confusable"
+        }
+      ],
+      "examples": [
+        {
+          "id": "ex-letter-0412",
+          "kind": "CONFUSABLE_PAIR",
+          "letterId": "letter-0412",
+          "display": "В / в",
+          "note": "Printed pair В в. Treat the Cyrillic identity, not a Latin look-alike.",
+          "sourceId": "src-unicode-cyrillic",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "objectiveId": "obj-u1-confusable"
+        },
+        {
+          "id": "ex-letter-041d",
+          "kind": "CONFUSABLE_PAIR",
+          "letterId": "letter-041d",
+          "display": "Н / н",
+          "note": "Printed pair Н н. Treat the Cyrillic identity, not a Latin look-alike.",
+          "sourceId": "src-unicode-cyrillic",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "objectiveId": "obj-u1-confusable"
+        },
+        {
+          "id": "ex-letter-0420",
+          "kind": "CONFUSABLE_PAIR",
+          "letterId": "letter-0420",
+          "display": "Р / р",
+          "note": "Printed pair Р р. Treat the Cyrillic identity, not a Latin look-alike.",
+          "sourceId": "src-unicode-cyrillic",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "objectiveId": "obj-u1-confusable"
+        },
+        {
+          "id": "ex-letter-0421",
+          "kind": "CONFUSABLE_PAIR",
+          "letterId": "letter-0421",
+          "display": "С / с",
+          "note": "Printed pair С с. Treat the Cyrillic identity, not a Latin look-alike.",
+          "sourceId": "src-unicode-cyrillic",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "objectiveId": "obj-u1-confusable"
+        },
+        {
+          "id": "ex-letter-0423",
+          "kind": "CONFUSABLE_PAIR",
+          "letterId": "letter-0423",
+          "display": "У / у",
+          "note": "Printed pair У у. Treat the Cyrillic identity, not a Latin look-alike.",
+          "sourceId": "src-unicode-cyrillic",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "objectiveId": "obj-u1-confusable"
+        },
+        {
+          "id": "ex-letter-0425",
+          "kind": "CONFUSABLE_PAIR",
+          "letterId": "letter-0425",
+          "display": "Х / х",
+          "note": "Printed pair Х х. Treat the Cyrillic identity, not a Latin look-alike.",
+          "sourceId": "src-unicode-cyrillic",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "objectiveId": "obj-u1-confusable"
+        }
+      ],
+      "source": {
+        "id": "src-app-english-v2",
+        "title": "Independently authored companion English",
+        "license": "Original app text",
+        "attribution": "Russian Companion project",
+        "modification": "Original"
+      },
+      "rights": [
+        {
+          "id": "rights-app-english-v2",
+          "sourceId": "src-app-english-v2",
+          "license": "Original app text",
+          "permitsAppUse": true
+        }
+      ]
+    },
+    {
+      "item": {
+        "id": "u1-i-с-not-c",
+        "kind": "CONFUSABLE",
+        "language": "en",
+        "prompt": "This letter looks like Latin C. What is it?",
+        "promptLetter": "С",
+        "options": [
+          "Latin C",
+          "Cyrillic С",
+          "Cyrillic К"
+        ],
+        "answer": "Cyrillic С",
+        "feedback": "С is a Cyrillic letter. Do not treat the Latin look-alike as the identity.",
+        "objectiveId": "obj-u1-confusable",
+        "sourceId": "src-app-english-v2",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false
+      },
+      "objective": {
+        "id": "obj-u1-confusable",
+        "unitNumber": 1,
+        "title": "Separate Cyrillic letters from Latin look-alikes",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u1-st-confusable"
+        ],
+        "exampleIds": [
+          "ex-letter-0412",
+          "ex-letter-041d",
+          "ex-letter-0420",
+          "ex-letter-0421",
+          "ex-letter-0423",
+          "ex-letter-0425"
+        ],
+        "practiceStepIds": [
+          "u1-st-guided-confusable",
+          "u1-st-confusable-r",
+          "u1-st-confusable-n",
+          "u1-st-confusable-s",
+          "u1-st-confusable-rest"
+        ],
+        "checkItemIds": [
+          "u1-i-р-not-p",
+          "u1-i-н-not-h",
+          "u1-i-с-not-c",
+          "u1-i-в-not-b",
+          "u1-i-у-not-y",
+          "u1-i-х-not-x"
+        ],
+        "remediationStepIds": [
+          "u1-st-confusable"
+        ]
+      },
+      "teachingPracticeRepairSteps": [
+        {
+          "id": "u1-st-confusable",
+          "kind": "TEACH",
+          "title": "Shape traps",
+          "body": "These printed letters often fool Latin-alphabet readers: В, Н, Р, С, У, Х. Name the Cyrillic identity. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+          "referenceIds": [
+            "ref-confusable"
+          ],
+          "exampleIds": [
+            "ex-letter-0420",
+            "ex-letter-041d",
+            "ex-letter-0421"
+          ]
+        },
+        {
+          "id": "u1-st-guided-confusable",
+          "kind": "GUIDED",
+          "title": "Guided contrast",
+          "body": "These printed letters often fool Latin-alphabet readers: В, Н, Р, С, У, Х. Name the Cyrillic identity. Choose once with the explanation still in view. This is practice, not the independent check.",
+          "dominantAction": "Check",
+          "itemIds": [
+            "u1-g-guided-confusable"
+          ],
+          "exampleIds": [
+            "ex-letter-0420",
+            "ex-letter-041d",
+            "ex-letter-0421"
+          ],
+          "remediationStepId": "u1-st-confusable"
+        },
+        {
+          "id": "u1-st-confusable-r",
+          "kind": "CHECK",
+          "title": "Р is not P",
+          "body": "Identity check.",
+          "itemIds": [
+            "u1-i-р-not-p"
+          ],
+          "exampleIds": [
+            "ex-letter-0420"
+          ],
+          "remediationStepId": "u1-st-confusable"
+        },
+        {
+          "id": "u1-st-confusable-n",
+          "kind": "CHECK",
+          "title": "Н is not H",
+          "body": "Identity check.",
+          "itemIds": [
+            "u1-i-н-not-h"
+          ],
+          "exampleIds": [
+            "ex-letter-041d"
+          ],
+          "remediationStepId": "u1-st-confusable"
+        },
+        {
+          "id": "u1-st-confusable-s",
+          "kind": "CHECK",
+          "title": "С is not C",
+          "body": "Identity check.",
+          "itemIds": [
+            "u1-i-с-not-c"
+          ],
+          "exampleIds": [
+            "ex-letter-0421"
+          ],
+          "remediationStepId": "u1-st-confusable"
+        },
+        {
+          "id": "u1-st-confusable-rest",
+          "kind": "CHECK",
+          "title": "В, У, and Х",
+          "body": "Identity check for the remaining look-alikes.",
+          "itemIds": [
+            "u1-i-в-not-b",
+            "u1-i-у-not-y",
+            "u1-i-х-not-x"
+          ],
+          "exampleIds": [
+            "ex-letter-0412",
+            "ex-letter-0423",
+            "ex-letter-0425"
+          ],
+          "remediationStepId": "u1-st-confusable"
+        }
+      ],
+      "examples": [
+        {
+          "id": "ex-letter-0412",
+          "kind": "CONFUSABLE_PAIR",
+          "letterId": "letter-0412",
+          "display": "В / в",
+          "note": "Printed pair В в. Treat the Cyrillic identity, not a Latin look-alike.",
+          "sourceId": "src-unicode-cyrillic",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "objectiveId": "obj-u1-confusable"
+        },
+        {
+          "id": "ex-letter-041d",
+          "kind": "CONFUSABLE_PAIR",
+          "letterId": "letter-041d",
+          "display": "Н / н",
+          "note": "Printed pair Н н. Treat the Cyrillic identity, not a Latin look-alike.",
+          "sourceId": "src-unicode-cyrillic",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "objectiveId": "obj-u1-confusable"
+        },
+        {
+          "id": "ex-letter-0420",
+          "kind": "CONFUSABLE_PAIR",
+          "letterId": "letter-0420",
+          "display": "Р / р",
+          "note": "Printed pair Р р. Treat the Cyrillic identity, not a Latin look-alike.",
+          "sourceId": "src-unicode-cyrillic",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "objectiveId": "obj-u1-confusable"
+        },
+        {
+          "id": "ex-letter-0421",
+          "kind": "CONFUSABLE_PAIR",
+          "letterId": "letter-0421",
+          "display": "С / с",
+          "note": "Printed pair С с. Treat the Cyrillic identity, not a Latin look-alike.",
+          "sourceId": "src-unicode-cyrillic",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "objectiveId": "obj-u1-confusable"
+        },
+        {
+          "id": "ex-letter-0423",
+          "kind": "CONFUSABLE_PAIR",
+          "letterId": "letter-0423",
+          "display": "У / у",
+          "note": "Printed pair У у. Treat the Cyrillic identity, not a Latin look-alike.",
+          "sourceId": "src-unicode-cyrillic",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "objectiveId": "obj-u1-confusable"
+        },
+        {
+          "id": "ex-letter-0425",
+          "kind": "CONFUSABLE_PAIR",
+          "letterId": "letter-0425",
+          "display": "Х / х",
+          "note": "Printed pair Х х. Treat the Cyrillic identity, not a Latin look-alike.",
+          "sourceId": "src-unicode-cyrillic",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "objectiveId": "obj-u1-confusable"
+        }
+      ],
+      "source": {
+        "id": "src-app-english-v2",
+        "title": "Independently authored companion English",
+        "license": "Original app text",
+        "attribution": "Russian Companion project",
+        "modification": "Original"
+      },
+      "rights": [
+        {
+          "id": "rights-app-english-v2",
+          "sourceId": "src-app-english-v2",
+          "license": "Original app text",
+          "permitsAppUse": true
+        }
+      ]
+    },
+    {
+      "item": {
+        "id": "u1-i-в-not-b",
+        "kind": "CONFUSABLE",
+        "language": "en",
+        "prompt": "This letter looks like Latin B. What is it?",
+        "promptLetter": "В",
+        "options": [
+          "Latin B",
+          "Cyrillic В",
+          "Cyrillic Б"
+        ],
+        "answer": "Cyrillic В",
+        "feedback": "В is not Latin B and it is not Cyrillic Б.",
+        "objectiveId": "obj-u1-confusable",
+        "sourceId": "src-app-english-v2",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false
+      },
+      "objective": {
+        "id": "obj-u1-confusable",
+        "unitNumber": 1,
+        "title": "Separate Cyrillic letters from Latin look-alikes",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u1-st-confusable"
+        ],
+        "exampleIds": [
+          "ex-letter-0412",
+          "ex-letter-041d",
+          "ex-letter-0420",
+          "ex-letter-0421",
+          "ex-letter-0423",
+          "ex-letter-0425"
+        ],
+        "practiceStepIds": [
+          "u1-st-guided-confusable",
+          "u1-st-confusable-r",
+          "u1-st-confusable-n",
+          "u1-st-confusable-s",
+          "u1-st-confusable-rest"
+        ],
+        "checkItemIds": [
+          "u1-i-р-not-p",
+          "u1-i-н-not-h",
+          "u1-i-с-not-c",
+          "u1-i-в-not-b",
+          "u1-i-у-not-y",
+          "u1-i-х-not-x"
+        ],
+        "remediationStepIds": [
+          "u1-st-confusable"
+        ]
+      },
+      "teachingPracticeRepairSteps": [
+        {
+          "id": "u1-st-confusable",
+          "kind": "TEACH",
+          "title": "Shape traps",
+          "body": "These printed letters often fool Latin-alphabet readers: В, Н, Р, С, У, Х. Name the Cyrillic identity. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+          "referenceIds": [
+            "ref-confusable"
+          ],
+          "exampleIds": [
+            "ex-letter-0420",
+            "ex-letter-041d",
+            "ex-letter-0421"
+          ]
+        },
+        {
+          "id": "u1-st-guided-confusable",
+          "kind": "GUIDED",
+          "title": "Guided contrast",
+          "body": "These printed letters often fool Latin-alphabet readers: В, Н, Р, С, У, Х. Name the Cyrillic identity. Choose once with the explanation still in view. This is practice, not the independent check.",
+          "dominantAction": "Check",
+          "itemIds": [
+            "u1-g-guided-confusable"
+          ],
+          "exampleIds": [
+            "ex-letter-0420",
+            "ex-letter-041d",
+            "ex-letter-0421"
+          ],
+          "remediationStepId": "u1-st-confusable"
+        },
+        {
+          "id": "u1-st-confusable-r",
+          "kind": "CHECK",
+          "title": "Р is not P",
+          "body": "Identity check.",
+          "itemIds": [
+            "u1-i-р-not-p"
+          ],
+          "exampleIds": [
+            "ex-letter-0420"
+          ],
+          "remediationStepId": "u1-st-confusable"
+        },
+        {
+          "id": "u1-st-confusable-n",
+          "kind": "CHECK",
+          "title": "Н is not H",
+          "body": "Identity check.",
+          "itemIds": [
+            "u1-i-н-not-h"
+          ],
+          "exampleIds": [
+            "ex-letter-041d"
+          ],
+          "remediationStepId": "u1-st-confusable"
+        },
+        {
+          "id": "u1-st-confusable-s",
+          "kind": "CHECK",
+          "title": "С is not C",
+          "body": "Identity check.",
+          "itemIds": [
+            "u1-i-с-not-c"
+          ],
+          "exampleIds": [
+            "ex-letter-0421"
+          ],
+          "remediationStepId": "u1-st-confusable"
+        },
+        {
+          "id": "u1-st-confusable-rest",
+          "kind": "CHECK",
+          "title": "В, У, and Х",
+          "body": "Identity check for the remaining look-alikes.",
+          "itemIds": [
+            "u1-i-в-not-b",
+            "u1-i-у-not-y",
+            "u1-i-х-not-x"
+          ],
+          "exampleIds": [
+            "ex-letter-0412",
+            "ex-letter-0423",
+            "ex-letter-0425"
+          ],
+          "remediationStepId": "u1-st-confusable"
+        }
+      ],
+      "examples": [
+        {
+          "id": "ex-letter-0412",
+          "kind": "CONFUSABLE_PAIR",
+          "letterId": "letter-0412",
+          "display": "В / в",
+          "note": "Printed pair В в. Treat the Cyrillic identity, not a Latin look-alike.",
+          "sourceId": "src-unicode-cyrillic",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "objectiveId": "obj-u1-confusable"
+        },
+        {
+          "id": "ex-letter-041d",
+          "kind": "CONFUSABLE_PAIR",
+          "letterId": "letter-041d",
+          "display": "Н / н",
+          "note": "Printed pair Н н. Treat the Cyrillic identity, not a Latin look-alike.",
+          "sourceId": "src-unicode-cyrillic",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "objectiveId": "obj-u1-confusable"
+        },
+        {
+          "id": "ex-letter-0420",
+          "kind": "CONFUSABLE_PAIR",
+          "letterId": "letter-0420",
+          "display": "Р / р",
+          "note": "Printed pair Р р. Treat the Cyrillic identity, not a Latin look-alike.",
+          "sourceId": "src-unicode-cyrillic",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "objectiveId": "obj-u1-confusable"
+        },
+        {
+          "id": "ex-letter-0421",
+          "kind": "CONFUSABLE_PAIR",
+          "letterId": "letter-0421",
+          "display": "С / с",
+          "note": "Printed pair С с. Treat the Cyrillic identity, not a Latin look-alike.",
+          "sourceId": "src-unicode-cyrillic",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "objectiveId": "obj-u1-confusable"
+        },
+        {
+          "id": "ex-letter-0423",
+          "kind": "CONFUSABLE_PAIR",
+          "letterId": "letter-0423",
+          "display": "У / у",
+          "note": "Printed pair У у. Treat the Cyrillic identity, not a Latin look-alike.",
+          "sourceId": "src-unicode-cyrillic",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "objectiveId": "obj-u1-confusable"
+        },
+        {
+          "id": "ex-letter-0425",
+          "kind": "CONFUSABLE_PAIR",
+          "letterId": "letter-0425",
+          "display": "Х / х",
+          "note": "Printed pair Х х. Treat the Cyrillic identity, not a Latin look-alike.",
+          "sourceId": "src-unicode-cyrillic",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "objectiveId": "obj-u1-confusable"
+        }
+      ],
+      "source": {
+        "id": "src-app-english-v2",
+        "title": "Independently authored companion English",
+        "license": "Original app text",
+        "attribution": "Russian Companion project",
+        "modification": "Original"
+      },
+      "rights": [
+        {
+          "id": "rights-app-english-v2",
+          "sourceId": "src-app-english-v2",
+          "license": "Original app text",
+          "permitsAppUse": true
+        }
+      ]
+    },
+    {
+      "item": {
+        "id": "u1-i-у-not-y",
+        "kind": "CONFUSABLE",
+        "language": "en",
+        "prompt": "This letter looks like Latin Y. What is it?",
+        "promptLetter": "У",
+        "options": [
+          "Latin Y",
+          "Cyrillic У",
+          "Cyrillic И"
+        ],
+        "answer": "Cyrillic У",
+        "feedback": "У is a Cyrillic vowel letter, not Latin Y.",
+        "objectiveId": "obj-u1-confusable",
+        "sourceId": "src-app-english-v2",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false
+      },
+      "objective": {
+        "id": "obj-u1-confusable",
+        "unitNumber": 1,
+        "title": "Separate Cyrillic letters from Latin look-alikes",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u1-st-confusable"
+        ],
+        "exampleIds": [
+          "ex-letter-0412",
+          "ex-letter-041d",
+          "ex-letter-0420",
+          "ex-letter-0421",
+          "ex-letter-0423",
+          "ex-letter-0425"
+        ],
+        "practiceStepIds": [
+          "u1-st-guided-confusable",
+          "u1-st-confusable-r",
+          "u1-st-confusable-n",
+          "u1-st-confusable-s",
+          "u1-st-confusable-rest"
+        ],
+        "checkItemIds": [
+          "u1-i-р-not-p",
+          "u1-i-н-not-h",
+          "u1-i-с-not-c",
+          "u1-i-в-not-b",
+          "u1-i-у-not-y",
+          "u1-i-х-not-x"
+        ],
+        "remediationStepIds": [
+          "u1-st-confusable"
+        ]
+      },
+      "teachingPracticeRepairSteps": [
+        {
+          "id": "u1-st-confusable",
+          "kind": "TEACH",
+          "title": "Shape traps",
+          "body": "These printed letters often fool Latin-alphabet readers: В, Н, Р, С, У, Х. Name the Cyrillic identity. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+          "referenceIds": [
+            "ref-confusable"
+          ],
+          "exampleIds": [
+            "ex-letter-0420",
+            "ex-letter-041d",
+            "ex-letter-0421"
+          ]
+        },
+        {
+          "id": "u1-st-guided-confusable",
+          "kind": "GUIDED",
+          "title": "Guided contrast",
+          "body": "These printed letters often fool Latin-alphabet readers: В, Н, Р, С, У, Х. Name the Cyrillic identity. Choose once with the explanation still in view. This is practice, not the independent check.",
+          "dominantAction": "Check",
+          "itemIds": [
+            "u1-g-guided-confusable"
+          ],
+          "exampleIds": [
+            "ex-letter-0420",
+            "ex-letter-041d",
+            "ex-letter-0421"
+          ],
+          "remediationStepId": "u1-st-confusable"
+        },
+        {
+          "id": "u1-st-confusable-r",
+          "kind": "CHECK",
+          "title": "Р is not P",
+          "body": "Identity check.",
+          "itemIds": [
+            "u1-i-р-not-p"
+          ],
+          "exampleIds": [
+            "ex-letter-0420"
+          ],
+          "remediationStepId": "u1-st-confusable"
+        },
+        {
+          "id": "u1-st-confusable-n",
+          "kind": "CHECK",
+          "title": "Н is not H",
+          "body": "Identity check.",
+          "itemIds": [
+            "u1-i-н-not-h"
+          ],
+          "exampleIds": [
+            "ex-letter-041d"
+          ],
+          "remediationStepId": "u1-st-confusable"
+        },
+        {
+          "id": "u1-st-confusable-s",
+          "kind": "CHECK",
+          "title": "С is not C",
+          "body": "Identity check.",
+          "itemIds": [
+            "u1-i-с-not-c"
+          ],
+          "exampleIds": [
+            "ex-letter-0421"
+          ],
+          "remediationStepId": "u1-st-confusable"
+        },
+        {
+          "id": "u1-st-confusable-rest",
+          "kind": "CHECK",
+          "title": "В, У, and Х",
+          "body": "Identity check for the remaining look-alikes.",
+          "itemIds": [
+            "u1-i-в-not-b",
+            "u1-i-у-not-y",
+            "u1-i-х-not-x"
+          ],
+          "exampleIds": [
+            "ex-letter-0412",
+            "ex-letter-0423",
+            "ex-letter-0425"
+          ],
+          "remediationStepId": "u1-st-confusable"
+        }
+      ],
+      "examples": [
+        {
+          "id": "ex-letter-0412",
+          "kind": "CONFUSABLE_PAIR",
+          "letterId": "letter-0412",
+          "display": "В / в",
+          "note": "Printed pair В в. Treat the Cyrillic identity, not a Latin look-alike.",
+          "sourceId": "src-unicode-cyrillic",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "objectiveId": "obj-u1-confusable"
+        },
+        {
+          "id": "ex-letter-041d",
+          "kind": "CONFUSABLE_PAIR",
+          "letterId": "letter-041d",
+          "display": "Н / н",
+          "note": "Printed pair Н н. Treat the Cyrillic identity, not a Latin look-alike.",
+          "sourceId": "src-unicode-cyrillic",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "objectiveId": "obj-u1-confusable"
+        },
+        {
+          "id": "ex-letter-0420",
+          "kind": "CONFUSABLE_PAIR",
+          "letterId": "letter-0420",
+          "display": "Р / р",
+          "note": "Printed pair Р р. Treat the Cyrillic identity, not a Latin look-alike.",
+          "sourceId": "src-unicode-cyrillic",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "objectiveId": "obj-u1-confusable"
+        },
+        {
+          "id": "ex-letter-0421",
+          "kind": "CONFUSABLE_PAIR",
+          "letterId": "letter-0421",
+          "display": "С / с",
+          "note": "Printed pair С с. Treat the Cyrillic identity, not a Latin look-alike.",
+          "sourceId": "src-unicode-cyrillic",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "objectiveId": "obj-u1-confusable"
+        },
+        {
+          "id": "ex-letter-0423",
+          "kind": "CONFUSABLE_PAIR",
+          "letterId": "letter-0423",
+          "display": "У / у",
+          "note": "Printed pair У у. Treat the Cyrillic identity, not a Latin look-alike.",
+          "sourceId": "src-unicode-cyrillic",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "objectiveId": "obj-u1-confusable"
+        },
+        {
+          "id": "ex-letter-0425",
+          "kind": "CONFUSABLE_PAIR",
+          "letterId": "letter-0425",
+          "display": "Х / х",
+          "note": "Printed pair Х х. Treat the Cyrillic identity, not a Latin look-alike.",
+          "sourceId": "src-unicode-cyrillic",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "objectiveId": "obj-u1-confusable"
+        }
+      ],
+      "source": {
+        "id": "src-app-english-v2",
+        "title": "Independently authored companion English",
+        "license": "Original app text",
+        "attribution": "Russian Companion project",
+        "modification": "Original"
+      },
+      "rights": [
+        {
+          "id": "rights-app-english-v2",
+          "sourceId": "src-app-english-v2",
+          "license": "Original app text",
+          "permitsAppUse": true
+        }
+      ]
+    },
+    {
+      "item": {
+        "id": "u1-i-х-not-x",
+        "kind": "CONFUSABLE",
+        "language": "en",
+        "prompt": "This letter looks like Latin X. What is it?",
+        "promptLetter": "Х",
+        "options": [
+          "Latin X",
+          "Cyrillic Х",
+          "Cyrillic К"
+        ],
+        "answer": "Cyrillic Х",
+        "feedback": "Х is a Cyrillic letter, not Latin X.",
+        "objectiveId": "obj-u1-confusable",
+        "sourceId": "src-app-english-v2",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "containsGeneratedRussian": false
+      },
+      "objective": {
+        "id": "obj-u1-confusable",
+        "unitNumber": 1,
+        "title": "Separate Cyrillic letters from Latin look-alikes",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u1-st-confusable"
+        ],
+        "exampleIds": [
+          "ex-letter-0412",
+          "ex-letter-041d",
+          "ex-letter-0420",
+          "ex-letter-0421",
+          "ex-letter-0423",
+          "ex-letter-0425"
+        ],
+        "practiceStepIds": [
+          "u1-st-guided-confusable",
+          "u1-st-confusable-r",
+          "u1-st-confusable-n",
+          "u1-st-confusable-s",
+          "u1-st-confusable-rest"
+        ],
+        "checkItemIds": [
+          "u1-i-р-not-p",
+          "u1-i-н-not-h",
+          "u1-i-с-not-c",
+          "u1-i-в-not-b",
+          "u1-i-у-not-y",
+          "u1-i-х-not-x"
+        ],
+        "remediationStepIds": [
+          "u1-st-confusable"
+        ]
+      },
+      "teachingPracticeRepairSteps": [
+        {
+          "id": "u1-st-confusable",
+          "kind": "TEACH",
+          "title": "Shape traps",
+          "body": "These printed letters often fool Latin-alphabet readers: В, Н, Р, С, У, Х. Name the Cyrillic identity. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+          "referenceIds": [
+            "ref-confusable"
+          ],
+          "exampleIds": [
+            "ex-letter-0420",
+            "ex-letter-041d",
+            "ex-letter-0421"
+          ]
+        },
+        {
+          "id": "u1-st-guided-confusable",
+          "kind": "GUIDED",
+          "title": "Guided contrast",
+          "body": "These printed letters often fool Latin-alphabet readers: В, Н, Р, С, У, Х. Name the Cyrillic identity. Choose once with the explanation still in view. This is practice, not the independent check.",
+          "dominantAction": "Check",
+          "itemIds": [
+            "u1-g-guided-confusable"
+          ],
+          "exampleIds": [
+            "ex-letter-0420",
+            "ex-letter-041d",
+            "ex-letter-0421"
+          ],
+          "remediationStepId": "u1-st-confusable"
+        },
+        {
+          "id": "u1-st-confusable-r",
+          "kind": "CHECK",
+          "title": "Р is not P",
+          "body": "Identity check.",
+          "itemIds": [
+            "u1-i-р-not-p"
+          ],
+          "exampleIds": [
+            "ex-letter-0420"
+          ],
+          "remediationStepId": "u1-st-confusable"
+        },
+        {
+          "id": "u1-st-confusable-n",
+          "kind": "CHECK",
+          "title": "Н is not H",
+          "body": "Identity check.",
+          "itemIds": [
+            "u1-i-н-not-h"
+          ],
+          "exampleIds": [
+            "ex-letter-041d"
+          ],
+          "remediationStepId": "u1-st-confusable"
+        },
+        {
+          "id": "u1-st-confusable-s",
+          "kind": "CHECK",
+          "title": "С is not C",
+          "body": "Identity check.",
+          "itemIds": [
+            "u1-i-с-not-c"
+          ],
+          "exampleIds": [
+            "ex-letter-0421"
+          ],
+          "remediationStepId": "u1-st-confusable"
+        },
+        {
+          "id": "u1-st-confusable-rest",
+          "kind": "CHECK",
+          "title": "В, У, and Х",
+          "body": "Identity check for the remaining look-alikes.",
+          "itemIds": [
+            "u1-i-в-not-b",
+            "u1-i-у-not-y",
+            "u1-i-х-not-x"
+          ],
+          "exampleIds": [
+            "ex-letter-0412",
+            "ex-letter-0423",
+            "ex-letter-0425"
+          ],
+          "remediationStepId": "u1-st-confusable"
+        }
+      ],
+      "examples": [
+        {
+          "id": "ex-letter-0412",
+          "kind": "CONFUSABLE_PAIR",
+          "letterId": "letter-0412",
+          "display": "В / в",
+          "note": "Printed pair В в. Treat the Cyrillic identity, not a Latin look-alike.",
+          "sourceId": "src-unicode-cyrillic",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "objectiveId": "obj-u1-confusable"
+        },
+        {
+          "id": "ex-letter-041d",
+          "kind": "CONFUSABLE_PAIR",
+          "letterId": "letter-041d",
+          "display": "Н / н",
+          "note": "Printed pair Н н. Treat the Cyrillic identity, not a Latin look-alike.",
+          "sourceId": "src-unicode-cyrillic",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "objectiveId": "obj-u1-confusable"
+        },
+        {
+          "id": "ex-letter-0420",
+          "kind": "CONFUSABLE_PAIR",
+          "letterId": "letter-0420",
+          "display": "Р / р",
+          "note": "Printed pair Р р. Treat the Cyrillic identity, not a Latin look-alike.",
+          "sourceId": "src-unicode-cyrillic",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "objectiveId": "obj-u1-confusable"
+        },
+        {
+          "id": "ex-letter-0421",
+          "kind": "CONFUSABLE_PAIR",
+          "letterId": "letter-0421",
+          "display": "С / с",
+          "note": "Printed pair С с. Treat the Cyrillic identity, not a Latin look-alike.",
+          "sourceId": "src-unicode-cyrillic",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "objectiveId": "obj-u1-confusable"
+        },
+        {
+          "id": "ex-letter-0423",
+          "kind": "CONFUSABLE_PAIR",
+          "letterId": "letter-0423",
+          "display": "У / у",
+          "note": "Printed pair У у. Treat the Cyrillic identity, not a Latin look-alike.",
+          "sourceId": "src-unicode-cyrillic",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "objectiveId": "obj-u1-confusable"
+        },
+        {
+          "id": "ex-letter-0425",
+          "kind": "CONFUSABLE_PAIR",
+          "letterId": "letter-0425",
+          "display": "Х / х",
+          "note": "Printed pair Х х. Treat the Cyrillic identity, not a Latin look-alike.",
+          "sourceId": "src-unicode-cyrillic",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "objectiveId": "obj-u1-confusable"
+        }
+      ],
+      "source": {
+        "id": "src-app-english-v2",
+        "title": "Independently authored companion English",
+        "license": "Original app text",
+        "attribution": "Russian Companion project",
+        "modification": "Original"
+      },
+      "rights": [
+        {
+          "id": "rights-app-english-v2",
+          "sourceId": "src-app-english-v2",
+          "license": "Original app text",
+          "permitsAppUse": true
+        }
+      ]
+    }
+  ]
+}
