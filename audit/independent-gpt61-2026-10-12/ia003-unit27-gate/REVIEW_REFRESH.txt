@@ -1,0 +1,57 @@
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:generateDebugBuildConfig UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:processDebugNavigationResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:generateDebugRFile UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:compileDebugNavigationResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:javaPreCompileDebugUnitTest UP-TO-DATE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets
+> Task :app:packageDebugUnitTestForUnitTest
+> Task :app:mergeDebugUnitTestManifest UP-TO-DATE
+> Task :app:processDebugUnitTestManifest UP-TO-DATE
+> Task :app:generateDebugUnitTestConfig
+> Task :app:kspDebugKotlin
+> Task :app:compileDebugKotlin
+> Task :app:compileDebugJavaWithJavac UP-TO-DATE
+> Task :app:processDebugJavaRes UP-TO-DATE
+> Task :app:bundleDebugClassesToRuntimeJar
+> Task :app:bundleDebugClassesToCompileJar
+> Task :app:kspDebugUnitTestKotlin
+
+> Task :app:compileDebugUnitTestKotlin
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/CumulativeReviewStorageTest.kt:111:124 Unnecessary non-null assertion (!!) on a non-null receiver of type 'CumulativeReviewAssignment'.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/CumulativeReviewStorageTest.kt:111:161 Unnecessary non-null assertion (!!) on a non-null receiver of type 'CumulativeReviewAssignment'.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/Unit11AgreementRemediationTest.kt:114:20 Redundant creation of Json format. Creating instances for each usage can be slow.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/Unit14ImpersonalRemediationTest.kt:138:20 Redundant creation of Json format. Creating instances for each usage can be slow.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/Unit15ImperativeRemediationTest.kt:134:20 Redundant creation of Json format. Creating instances for each usage can be slow.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/Unit15ImperativeRemediationTest.kt:138:20 Redundant creation of Json format. Creating instances for each usage can be slow.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/review/Unit1ReviewPackage.kt:2061:33 Only safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type 'String?'.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/review/Unit1ReviewPackage.kt:2070:34 Only safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type 'String?'.
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/review/Unit1ReviewPackage.kt:2071:33 Only safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type 'String?'.
+
+> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:processDebugUnitTestJavaRes UP-TO-DATE
+
+> Task :app:renderCheckpointArtifacts
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+30 pending unit packets rendered; pack=e7fc815590c325eb1ee69fa6140e8730b46a7499b62ce428660f0e5e16f4e5d8 source=22345755b98c6f35d151fff1e850dffd5cd7d50894e72b5e202b1b5e239c7e88
+
+BUILD SUCCESSFUL in 1m 14s
+33 actionable tasks: 10 executed, 23 up-to-date
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.6.0/userguide/configuration_cache_enabling.html

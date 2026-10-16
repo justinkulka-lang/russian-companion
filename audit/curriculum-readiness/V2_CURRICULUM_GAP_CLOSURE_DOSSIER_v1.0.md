@@ -6,8 +6,8 @@
 **Repository:** `justinkulka-lang/russian-companion`  
 **Repository baseline main:** `c153103a0048f69f8de339b83e77d93572ebddb7`  
 **Unit 23 unprepared correction:** `fd69bd03298d69669d09daafe8d364b0e576d033` (`Keep Unit 23 unprepared until completion over a period is admitted.`). That commit is an ancestor of the repository baseline. It is not the repository baseline main commit.  
-**Pack content-review digest:** `72a41795b48b762b85c52d28212f0efc43db574034f57704841316a7197a46ab`
-**Repository source digest:** `a146225d66cec69554fb854637235674932fc5e2f052a7c2d12d7620d403c01d`
+**Pack content-review digest:** `e7fc815590c325eb1ee69fa6140e8730b46a7499b62ce428660f0e5e16f4e5d8`
+**Repository source digest:** `22345755b98c6f35d151fff1e850dffd5cd7d50894e72b5e202b1b5e239c7e88`
 **Public release:** **NOT_APPROVED**
 
 ## Purpose
@@ -73,7 +73,7 @@ Unacceptable shortcuts include keyword matches, mutable pages, dictionary-row gr
 | 24 | Negation, case behavior under negation, negative pronouns or particles, and the position or scope of не | CONTENT_COMPLETE_REVIEW_PENDING | NO | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 25 | Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions | CONTENT_COMPLETE_REVIEW_PENDING | NO | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 26 | Indefinite pronouns, word order, and letter writing | CONTENT_COMPLETE_REVIEW_PENDING | NO | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
-| 27 | Participles: types and stress | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | ACTIVATED | YES | Qualified linguistic review and owned-edition mapping; the pedagogical boundary is activated and is not qualified review |
+| 27 | Participles: types and stress | CONTENT_COMPLETE_REVIEW_PENDING | NO | NONE | NONE | ACTIVATED | YES | Qualified linguistic review and owned-edition mapping; the pedagogical boundary is activated and is not qualified review |
 | 28 | Verbal adverbs | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | NOT_APPLICABLE | YES | Qualified linguistic review and owned-edition mapping |
 | 29 | Bookish style, active participles, punctuation, and short-form adjectives | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | ACTIVATED | YES | Qualified linguistic review and owned-edition mapping; the pedagogical boundary is activated and is not qualified review |
 | 30 | Abbreviations, names of Russian letters, and particles | CONTENT_COMPLETE_REVIEW_PENDING | YES | NONE | NONE | ACTIVATED | YES | Qualified linguistic review and owned-edition mapping; the pedagogical boundary is activated and is not qualified review |
