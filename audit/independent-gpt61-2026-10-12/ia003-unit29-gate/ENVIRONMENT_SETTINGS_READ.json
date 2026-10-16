@@ -1,0 +1,22 @@
+{
+  "readAtUtc": "2026-10-16T06:02:14.676Z",
+  "draftId": null,
+  "revision": null,
+  "baseVersionId": "13a458c1-0aec-4d7a-ab78-a70d382275e1~cecfgver_6acedb2102ec8196804d03e72c487901",
+  "configurationChanged": false,
+  "publication": {
+    "status": "USER_CONFIRMED",
+    "independentlyVerified": false,
+    "supportedPublicationOrStatusControlAvailable": false
+  },
+  "install_script": {
+    "saved": true,
+    "bytes": 3938
+  },
+  "start_skill": {
+    "saved": true,
+    "bytes": 3095
+  },
+  "priorHashEvidence": "../ia003-unit21-gate/ENVIRONMENT_SETTINGS_READ.json",
+  "scope": "Supported read confirms saved script presence at the same base version; no configuration update or publication action performed. No secrets copied."
+}

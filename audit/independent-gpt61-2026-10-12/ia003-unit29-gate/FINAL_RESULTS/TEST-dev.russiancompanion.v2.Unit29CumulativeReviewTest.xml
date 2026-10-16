@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit29CumulativeReviewTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-16T05:45:56.942Z" hostname="f5c5dd6b855f" time="1164.93">
+  <properties/>
+  <testcase name="actualUnit29ContinueRelativeFutureTimingCueTeachingPracticeReturnAndAdvanceStayOnUnit29" classname="dev.russiancompanion.v2.Unit29CumulativeReviewTest" time="424.823"/>
+  <testcase name="ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup" classname="dev.russiancompanion.v2.Unit29CumulativeReviewTest" time="95.708"/>
+  <testcase name="optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion" classname="dev.russiancompanion.v2.Unit29CumulativeReviewTest" time="79.994"/>
+  <testcase name="oldFormatOneAndTwoKeepRawUnit29HistoryWithoutInventingCreditOrRepairingUnit11" classname="dev.russiancompanion.v2.Unit29CumulativeReviewTest" time="135.575"/>
+  <testcase name="placementWithTaughtUnit1ButUntaughtUnit28RepairsTheMissingOwnerInsteadOfUnit1" classname="dev.russiancompanion.v2.Unit29CumulativeReviewTest" time="2.175"/>
+  <testcase name="schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot" classname="dev.russiancompanion.v2.Unit29CumulativeReviewTest" time="399.309"/>
+  <testcase name="heldUnit29WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching" classname="dev.russiancompanion.v2.Unit29CumulativeReviewTest" time="27.32"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call close. 
+]]></system-err>
+</testsuite>

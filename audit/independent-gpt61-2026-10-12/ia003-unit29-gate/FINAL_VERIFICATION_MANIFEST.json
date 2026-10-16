@@ -1,0 +1,1689 @@
+{
+  "repository": "justinkulka-lang/russian-companion",
+  "branch": "cursor/content-audit-corrections-964f",
+  "draftPR": 64,
+  "apk": {
+    "assembled": false,
+    "signed": false,
+    "configuredApplicationId": "dev.russiancompanion",
+    "configuredVersionName": "2.0.0-dev",
+    "configuredVersionCode": 5,
+    "currentArtifactIdentity": "NOT_RECORDED",
+    "currentApkSha256": "NOT_RECORDED",
+    "currentApkSignature": "NOT_RECORDED",
+    "historicalArtifacts": "Preserved; not this candidate"
+  },
+  "excludedScreenshotExporters": [
+    {
+      "class": "VisualReviewCaptureTest",
+      "methods": 2
+    },
+    {
+      "class": "Units35ChunkCaptureTest",
+      "methods": 2
+    },
+    {
+      "class": "Units610ChunkCaptureTest",
+      "methods": 10
+    },
+    {
+      "class": "Units1115GapCaptureTest",
+      "methods": 2
+    }
+  ],
+  "exclusionReason": "Exporters overwrite tracked screenshot evidence and write /opt/cursor; external cloud-validation init excludes them from environment setup verification. Current selectors additionally limit scope.",
+  "environment": {
+    "configurationChanged": false,
+    "installScriptAndStartSkill": "Saved; nonempty contents confirmed by prior supported settings read retained under ia003-unit12-gate; configuration unchanged this turn",
+    "priorPublication": "USER_CONFIRMED",
+    "laterNetworkOnlyDraftPublication": "NOT_INDEPENDENTLY_ESTABLISHED",
+    "supportedPublicationControlHere": "UNAVAILABLE",
+    "settingsRead": {
+      "draftId": null,
+      "revision": null,
+      "baseVersionId": "13a458c1-0aec-4d7a-ab78-a70d382275e1~cecfgver_6acedb2102ec8196804d03e72c487901",
+      "installScriptSaved": true,
+      "startSkillSaved": true,
+      "publication": "USER_CONFIRMED; no supported publication or status tool available",
+      "configurationChanged": false
+    },
+    "publicationIndependentlyVerified": false,
+    "settingsReadEvidence": "ENVIRONMENT_SETTINGS_READ.json; fresh supported read confirms saved install_script/start_skill at unchanged persisted base; no configuration changes",
+    "currentSettingsRead": {
+      "readAtUtc": "2026-10-15T20:36:11.410344+00:00",
+      "draftId": null,
+      "revision": null,
+      "baseVersionId": "13a458c1-0aec-4d7a-ab78-a70d382275e1~cecfgver_6acedb2102ec8196804d03e72c487901",
+      "configurationChanged": false,
+      "publication": "USER_CONFIRMED; not independently verified; no supported status/publication control",
+      "install_script": {
+        "saved": true,
+        "sha256": "a439863dd20b1248e05b3b0a8e5fb7f11833819cdfb89ce78d5a83cb3e8f228f",
+        "bytes": 3938
+      },
+      "start_skill": {
+        "saved": true,
+        "sha256": "c2127b1c5e95a5c192f4cf4d579ad60dd6bfe5219f09436bd8d175da506a33d9",
+        "bytes": 3095
+      }
+    },
+    "publication": "USER_CONFIRMED, independently unverified; no supported publication/status control"
+  },
+  "privateReference": "No private PDF read/copied into GitHub/assets/logs/packets/environment snapshot. Obtain privately using continuity SHA256 in durable instructions; historical expected hash remains unknown.",
+  "acceptance": {
+    "IA003": "OPEN:Units3\u201329 bounded policies active;Unit30,wider pools/recent scheduling and qualified assessment pending",
+    "independentComprehensiveAudit": "OUTSTANDING",
+    "physicalGalaxyS26UltraAirplaneModeAndReboot": "OUTSTANDING;LAST after final comprehensive audit",
+    "mergeFreezeSigningReleaseApproval": "NOT_AUTHORIZED_OR_PERFORMED"
+  },
+  "historicalCounts": {
+    "mainCommit": "ff539220645670fbf7a1abacaa6f71e828606b80",
+    "mainSourceAnnotations": 579,
+    "excludedMethods": 16,
+    "reportedTests": 563,
+    "passed": 562,
+    "skipped": 1,
+    "completeSuiteClaim": "NOT_PROVEN",
+    "pr64BaselineCommit": "420f41ff6c2a4417cd829fdee0179b6a3b797eff",
+    "pr64SourceAnnotations": 691,
+    "sourceDifference": 112,
+    "handoffExecution": "UNVERIFIED",
+    "currentDifference": "Current66 at bfd5b5b01f609e9204283f6c4984a344975b28e7 is focused Unit28 activation,not complete suite. Prior69/31 and main562-pass/one-skip/baseline691 source annotations concern other commits/scopes;handoff execution unverified."
+  },
+  "runStartedUtc": "2026-10-16T05:43:19.857704+00:00",
+  "allXmlSuiteTimestampsAfterRunStart": true,
+  "schemaVersion": 1,
+  "status": "UNITS3_TO29_ACTIVE_IA003_OPEN",
+  "baselineCommit": "30b992c551acc8cef3247311ebff8c7d1ba01c0a",
+  "implementationCommit": "08d94c67628ec1fede5cafd2aa310aae4cecd6e9",
+  "testedCommit": "bfd5b5b01f609e9204283f6c4984a344975b28e7",
+  "counts": {
+    "tests": 66,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "passed": 66,
+  "classes": [
+    {
+      "name": "dev.russiancompanion.release.ReleaseSourceDigestTest",
+      "timestamp": "2026-10-16T05:43:27.647Z",
+      "counts": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "committedCandidateRecordsTheCurrentSourceDigestAndIdentity",
+          "seconds": "41.563"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.release.ReleaseSourceDigestTest.xml",
+      "sha256": "5941bb72414249da884af2fc8866c0fc3b92eacd0ae3eecdca2b382070e18cbc"
+    },
+    {
+      "name": "dev.russiancompanion.v2.BatchECapabilityResearchTest",
+      "timestamp": "2026-10-16T05:43:27.191Z",
+      "counts": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "digestsGovernanceAndLaterUnitsStayUnchanged",
+          "seconds": "101.327"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.BatchECapabilityResearchTest.xml",
+      "sha256": "0bf0ca31364f6a8880ffff7341002c66773f360f54b546f1bcc152f7f6363aca"
+    },
+    {
+      "name": "dev.russiancompanion.v2.CumulativeReviewGateTest",
+      "timestamp": "2026-10-16T05:43:27.393Z",
+      "counts": {
+        "tests": 8,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "asynchronousReviewWriteCannotCrossActualLearnerReplacementAndBackRemainsResponsive",
+          "seconds": "40.426"
+        },
+        {
+          "name": "migratedVersionTenRetainsGenuineOldLessonCreditWithoutFabricatingReviewCompletion",
+          "seconds": "15.08"
+        },
+        {
+          "name": "actualContinueReviewAndGateUiRequireBothChoicesAndShowTargetedFeedback",
+          "seconds": "10.374"
+        },
+        {
+          "name": "completeOrdinaryWorkCannotAdvanceUntilBothAssignedObjectivesAreReviewed",
+          "seconds": "63.069"
+        },
+        {
+          "name": "versionThreeBackupPreservesCompletionSnapshotAndRejectsForgedActivationLinks",
+          "seconds": "3.17"
+        },
+        {
+          "name": "optionalAndPrescribedReplaysCannotCompleteReviewOrBypassTransactionalAdvance",
+          "seconds": "2.156"
+        },
+        {
+          "name": "completedHistoryKeepsItsAcceptedAnswerSnapshotAndTransactionFailureRollsBack",
+          "seconds": "2.74"
+        },
+        {
+          "name": "placementOnlyUiOffersRealEarlierTeachingAndNoEmptyReviewCompletion",
+          "seconds": "2.168"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.CumulativeReviewGateTest.xml",
+      "sha256": "33495766a2b55d4561a7f737a9500fe618591a70028c12bdfffd3d5c3ad7a122"
+    },
+    {
+      "name": "dev.russiancompanion.v2.CumulativeReviewStorageTest",
+      "timestamp": "2026-10-16T05:44:09.460Z",
+      "counts": {
+        "tests": 18,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "genericKernelPreservesTheOriginalUnit3PolicyAndAssignmentIdentity",
+          "seconds": "23.791"
+        },
+        {
+          "name": "prescribedAndOptionalAnswersNeverSupplyReviewOrGainExtraPrescribedCredit",
+          "seconds": "4.133"
+        },
+        {
+          "name": "completionMetadataCannotLinkAReviewToAnotherUnitDuringRestore",
+          "seconds": "2.284"
+        },
+        {
+          "name": "malformedRolePreBoundaryAndWrongAssignmentDigestNeverSupplyCompletion",
+          "seconds": "1.863"
+        },
+        {
+          "name": "disabledOrWrongPolicyRejectsOldAssignmentsAndAnswersWithoutMutation",
+          "seconds": "2.671"
+        },
+        {
+          "name": "immutableSlotsSpanTwoTaughtObjectivesAndRepeatedOpenDoesNotResample",
+          "seconds": "2.426"
+        },
+        {
+          "name": "staleEpochWrongAssignmentInvalidSlotAndOutOfOptionsAreRejectedWithoutWrites",
+          "seconds": "1.581"
+        },
+        {
+          "name": "forgedLinksOrdersRolesAndAssignmentHashCannotReplaceAnyLearnerRows",
+          "seconds": "1.349"
+        },
+        {
+          "name": "typedPoliciesRefuseEmptyRepeatedAndAmbiguousCandidatePools",
+          "seconds": "0.109"
+        },
+        {
+          "name": "latestAcceptedAnswerWinsAndDuplicateTapsDoNotAllocateExtraOrder",
+          "seconds": "2.208"
+        },
+        {
+          "name": "undeclaredTargetsAndFlagOnlyLaterGatesCannotCreateHistory",
+          "seconds": "23.983"
+        },
+        {
+          "name": "legacyDocumentWithoutNewFieldsDecodesWithNoSyntheticReviewRows",
+          "seconds": "0.257"
+        },
+        {
+          "name": "realVersionNineDatabaseMigratesWithoutRewritingHistoricalRowsOrInventingCredit",
+          "seconds": "0.339"
+        },
+        {
+          "name": "offlineCloseAndReopenRetainsExactAssignmentAnswersAndCurrentCompletion",
+          "seconds": "2.865"
+        },
+        {
+          "name": "newBackupRoundtripReplacesReviewHistoryAndRestoreFaultRollsItBack",
+          "seconds": "1.762"
+        },
+        {
+          "name": "placementAndBareLegacyCorrectIdsCannotCreateAssignments",
+          "seconds": "0.302"
+        },
+        {
+          "name": "changedKeyTeachingAndOwnerAvailabilityRejectCreditButUnrelatedUnitsDoNot",
+          "seconds": "1.868"
+        },
+        {
+          "name": "schemaOneBackupRestoresNoSyntheticReviewAndClearsReplacedLearnerHistory",
+          "seconds": "1.144"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.CumulativeReviewStorageTest.xml",
+      "sha256": "692c079e18b10bbb33b6c6666c1df4a91495f9d65d140f07ff753ff54635f295"
+    },
+    {
+      "name": "dev.russiancompanion.v2.Unit11AgreementRemediationTest",
+      "timestamp": "2026-10-16T05:45:09.186Z",
+      "counts": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException",
+          "seconds": "27.134"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.Unit11AgreementRemediationTest.xml",
+      "sha256": "b081e2b36ffeade11d41f8e91b60af32a37fa94f7b1a23898e849ae6efd0f109"
+    },
+    {
+      "name": "dev.russiancompanion.v2.Unit14ImpersonalRemediationTest",
+      "timestamp": "2026-10-16T05:45:28.510Z",
+      "counts": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException",
+          "seconds": "12.414"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.Unit14ImpersonalRemediationTest.xml",
+      "sha256": "63ef69b27363089d5865cc61463e74538e708ac2fa9401ec387779e54f26625f"
+    },
+    {
+      "name": "dev.russiancompanion.v2.Unit15ImperativeRemediationTest",
+      "timestamp": "2026-10-16T05:45:49.748Z",
+      "counts": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "exactDeclaredUnitExceptionPreservesEveryQuestionRecordAndRequirement",
+          "seconds": "6.956"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.Unit15ImperativeRemediationTest.xml",
+      "sha256": "73ac99eb72415243cbde6c07315be9f1b0ebd5ff3139611547fdc56bb4886ac3"
+    },
+    {
+      "name": "dev.russiancompanion.v2.Unit28CumulativeReviewTest",
+      "timestamp": "2026-10-16T05:45:39.713Z",
+      "counts": {
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+          "seconds": "399.661"
+        },
+        {
+          "name": "schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot",
+          "seconds": "349.094"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.Unit28CumulativeReviewTest.xml",
+      "sha256": "7c716242138d725ed2132a56c49eb4896ab3e266051f23f850233d959c8362b7"
+    },
+    {
+      "name": "dev.russiancompanion.v2.Unit28TimingTransferTest",
+      "timestamp": "2026-10-16T05:45:41.312Z",
+      "counts": {
+        "tests": 13,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "coordinatedGuidedKeyAndApplicationCannotReverseAnteriority",
+          "seconds": "12.25"
+        },
+        {
+          "name": "perfectiveTimingNeedsAnIndependentContextDifferentFromGuidedPractice",
+          "seconds": "0.698"
+        },
+        {
+          "name": "imperfectiveTimingNeedsAnIndependentContextDifferentFromGuidedPractice",
+          "seconds": "0.794"
+        },
+        {
+          "name": "originalSixGovernedAnswersCompleteBothTimingObjectives",
+          "seconds": "2.881"
+        },
+        {
+          "name": "allCardsPrecedePracticeAndFullRemediationRetainsRelativeFutureCoverage",
+          "seconds": "0.572"
+        },
+        {
+          "name": "coherentDictionaryAspectRowForgeryCannotReverseTheSourceClassification",
+          "seconds": "8.859"
+        },
+        {
+          "name": "originalIndependentScoredFieldsAndEveryExampleRemainUnchanged",
+          "seconds": "8.603"
+        },
+        {
+          "name": "playerRejectsAbsolutePresentInThePastGuidedClause",
+          "seconds": "5.102"
+        },
+        {
+          "name": "coherentCapabilitySpanAndHostHashRewriteCannotChangeTheFrozenIntake",
+          "seconds": "7.048"
+        },
+        {
+          "name": "guidedAnswersAloneCannotCompleteEitherObjective",
+          "seconds": "0.813"
+        },
+        {
+          "name": "coherentNativeHashForgeryCannotChangeSourceContext",
+          "seconds": "5.309"
+        },
+        {
+          "name": "originalRepeatedGuidedContextsCannotBeRestored",
+          "seconds": "8.762"
+        },
+        {
+          "name": "historicalSixAnswerCompletionStaysSavedButCannotCreditRenewedContent",
+          "seconds": "1.413"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.Unit28TimingTransferTest.xml",
+      "sha256": "4c31871d0ee6a3e46378b727de4d19e94446d0c03aedac7241d24f357a800dbb"
+    },
+    {
+      "name": "dev.russiancompanion.v2.Unit29CumulativeReviewTest",
+      "timestamp": "2026-10-16T05:45:56.942Z",
+      "counts": {
+        "tests": 7,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "actualUnit29ContinueRelativeFutureTimingCueTeachingPracticeReturnAndAdvanceStayOnUnit29",
+          "seconds": "424.823"
+        },
+        {
+          "name": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+          "seconds": "95.708"
+        },
+        {
+          "name": "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+          "seconds": "79.994"
+        },
+        {
+          "name": "oldFormatOneAndTwoKeepRawUnit29HistoryWithoutInventingCreditOrRepairingUnit11",
+          "seconds": "135.575"
+        },
+        {
+          "name": "placementWithTaughtUnit1ButUntaughtUnit28RepairsTheMissingOwnerInsteadOfUnit1",
+          "seconds": "2.175"
+        },
+        {
+          "name": "schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot",
+          "seconds": "399.309"
+        },
+        {
+          "name": "heldUnit29WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching",
+          "seconds": "27.32"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.Unit29CumulativeReviewTest.xml",
+      "sha256": "20d1a075e5f6d628d31834a01fc61abfb96a44fc9aa9e3a8f5f957ab4300eff3"
+    },
+    {
+      "name": "dev.russiancompanion.v2.Unit4NominativeRoleTest",
+      "timestamp": "2026-10-16T05:58:08.605Z",
+      "counts": {
+        "tests": 7,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "oldTranslationCompletionHistoryIsPreservedButStaleForTheNewConstruct",
+          "seconds": "1.855"
+        },
+        {
+          "name": "twoDistinctIndependentSubjectsAndFullTeachingAreRequired",
+          "seconds": "7.169"
+        },
+        {
+          "name": "correctGlossesStayOptionalAndCannotReplaceCaseRoleChecks",
+          "seconds": "1.59"
+        },
+        {
+          "name": "legacyGlossRestorationAndCoherentNativeForgeryCannotBypassTheRoleGuard",
+          "seconds": "9.412"
+        },
+        {
+          "name": "coordinatedRoleKeyAndCanonicalTupleHashReversalIsRejected",
+          "seconds": "11.207"
+        },
+        {
+          "name": "allPriorExamplesRecordsCapabilitiesAndOtherUnitsRemainWhole",
+          "seconds": "2.361"
+        },
+        {
+          "name": "wrongCaseRoleShowsTargetedFeedbackAndReturnsToEveryExample",
+          "seconds": "6.826"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.Unit4NominativeRoleTest.xml",
+      "sha256": "d4bae670b145d355470d77160f552adef7c41d4d5dc7ae91bc033ae6c2185bbe"
+    },
+    {
+      "name": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+      "timestamp": "2026-10-16T05:58:49.354Z",
+      "counts": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "generatedRussianPenguinAudioAndReleaseStayClosed",
+          "seconds": "24.362"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.Units2630SourceIntakeTest.xml",
+      "sha256": "214eac0df044f44c7b3b1f02c66e3f77c1a3e3a83a2210c9218d790e78a4fb33"
+    },
+    {
+      "name": "dev.russiancompanion.v2.V2RebuildTest",
+      "timestamp": "2026-10-16T06:05:22.109Z",
+      "counts": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "structuralMappingSafeguardsRejectIncompleteOrInventedRecords",
+          "seconds": "36.798"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.V2RebuildTest.xml",
+      "sha256": "8428f540aa03fafb2fbaeba9340da9ab96a80d5b4ea43bf1e265781dc9231d3d"
+    },
+    {
+      "name": "dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest",
+      "timestamp": "2026-10-16T05:46:44.790Z",
+      "counts": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "committedReportsMatchTheGeneratorAndStayByteIdentical",
+          "seconds": "42.177"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest.xml",
+      "sha256": "20d9fef879b9d79930e7546e8bbe060ac8ee3628d1a82a3ac7c161aa7fd43865"
+    },
+    {
+      "name": "dev.russiancompanion.v2.audit.GapClosureDossierTest",
+      "timestamp": "2026-10-16T05:43:28.582Z",
+      "counts": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease",
+          "seconds": "103.445"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.audit.GapClosureDossierTest.xml",
+      "sha256": "d69056a2298cd4e421cb9e91f2dacd000705ccc4d2077dff53e38d863e40f85b"
+    },
+    {
+      "name": "dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest",
+      "timestamp": "2026-10-16T05:59:13.739Z",
+      "counts": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "preparationManifestBindsFactsAndDoesNotPassAFinalAudit",
+          "seconds": "2.585"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest.xml",
+      "sha256": "6256d6a31cba330cc77290544eb7b7260d4a4d07053b05b02ccee87f0c09a154"
+    },
+    {
+      "name": "dev.russiancompanion.v2.review.UnitReviewPipelineTest",
+      "timestamp": "2026-10-16T06:05:58.955Z",
+      "counts": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        {
+          "name": "committedUnitPackagesMatchTheGenerator",
+          "seconds": "95.47"
+        }
+      ],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.review.UnitReviewPipelineTest.xml",
+      "sha256": "2d3e396d0215352378b9013a198b36c069915c339a943ccd1f3aa1fb680ebb20"
+    }
+  ],
+  "command": "bash audit/independent-gpt61-2026-10-12/ia003-unit29-gate/verify.sh",
+  "expandedScript": "#!/usr/bin/env bash\nset -euo pipefail\ncd /workspace/russian-companion\nsource /workspace/setup/android-env.sh\nchecks=(\n --tests '*Unit29CumulativeReviewTest'\n --tests '*CumulativeReviewGateTest'\n --tests '*CumulativeReviewStorageTest'\n --tests '*Unit28CumulativeReviewTest.ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup'\n --tests '*Unit28CumulativeReviewTest.schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot'\n --tests '*Unit4NominativeRoleTest'\n --tests '*Unit28TimingTransferTest'\n --tests '*Unit15ImperativeRemediationTest.exactDeclaredUnitExceptionPreservesEveryQuestionRecordAndRequirement'\n --tests '*Unit11AgreementRemediationTest.unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException'\n --tests '*Unit14ImpersonalRemediationTest.unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException'\n --tests '*UnitReviewPipelineTest.committedUnitPackagesMatchTheGenerator'\n --tests '*CurriculumReadinessReconciliationTest.committedReportsMatchTheGeneratorAndStayByteIdentical'\n --tests '*OwnerGovernanceDecisionTest.preparationManifestBindsFactsAndDoesNotPassAFinalAudit'\n --tests '*GapClosureDossierTest.dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease'\n --tests '*ReleaseSourceDigestTest.committedCandidateRecordsTheCurrentSourceDigestAndIdentity'\n --tests '*Units2630SourceIntakeTest.generatedRussianPenguinAudioAndReleaseStayClosed'\n --tests '*V2RebuildTest.structuralMappingSafeguardsRejectIncompleteOrInventedRecords'\n --tests '*BatchECapabilityResearchTest.digestsGovernanceAndLaterUnitsStayUnchanged'\n)\n./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest \"${checks[@]}\" compileDebugSources lintDebug verifyReleaseGateAttachment --max-workers=4 --console=plain\n",
+  "scriptSha256": "677a0ff5288b84363b1d8bdfb1eca0a871b4234629142d2badc59f1ed3a8cd3b",
+  "selectors": [
+    "*Unit29CumulativeReviewTest",
+    "*CumulativeReviewGateTest",
+    "*CumulativeReviewStorageTest",
+    "*Unit28CumulativeReviewTest.ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+    "*Unit28CumulativeReviewTest.schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot",
+    "*Unit4NominativeRoleTest",
+    "*Unit28TimingTransferTest",
+    "*Unit15ImperativeRemediationTest.exactDeclaredUnitExceptionPreservesEveryQuestionRecordAndRequirement",
+    "*Unit11AgreementRemediationTest.unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException",
+    "*Unit14ImpersonalRemediationTest.unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException",
+    "*UnitReviewPipelineTest.committedUnitPackagesMatchTheGenerator",
+    "*CurriculumReadinessReconciliationTest.committedReportsMatchTheGeneratorAndStayByteIdentical",
+    "*OwnerGovernanceDecisionTest.preparationManifestBindsFactsAndDoesNotPassAFinalAudit",
+    "*GapClosureDossierTest.dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease",
+    "*ReleaseSourceDigestTest.committedCandidateRecordsTheCurrentSourceDigestAndIdentity",
+    "*Units2630SourceIntakeTest.generatedRussianPenguinAudioAndReleaseStayClosed",
+    "*V2RebuildTest.structuralMappingSafeguardsRejectIncompleteOrInventedRecords",
+    "*BatchECapabilityResearchTest.digestsGovernanceAndLaterUnitsStayUnchanged"
+  ],
+  "allSelectorsExecuted": true,
+  "runnerExitCode": 0,
+  "scope": "66 focused methods/17 classes/18 selectors:7 new Unit29,8 kernel,18 storage,two prior Unit28 completion/history,7 whole-unit preservation,13 Unit28 timing transfer,prior Unit11/14/15 preservation and eight canonical bindings. NOT complete suite/human/device/qualified acceptance.",
+  "scopeLimitations": "Simulated governed teaching/book records. Cached immutable setup generated through actual operations;each case restores into fresh isolated named store. Old source packs prepared separately. Fresh due answers still required.",
+  "overlappingScopesSummed": false,
+  "lint": {
+    "fatal": 0,
+    "errors": 0,
+    "warnings": 20,
+    "hints": 1,
+    "xml": "FINAL_LINT.xml",
+    "result": "PASS",
+    "taskExecution": [
+      "> Task :app:generateDebugAndroidTestLintModel",
+      "> Task :app:generateDebugLintReportModel",
+      "> Task :app:generateDebugUnitTestLintModel",
+      "> Task :app:lintAnalyzeDebugAndroidTest",
+      "> Task :app:lintAnalyzeDebug",
+      "> Task :app:lintAnalyzeDebugUnitTest",
+      "> Task :app:lintReportDebug",
+      "> Task :app:lintDebug"
+    ]
+  },
+  "releaseGateAttachment": {
+    "task": "verifyReleaseGateAttachment",
+    "executed": true,
+    "result": "PASS",
+    "releaseAuthorization": false
+  },
+  "gradleTasks": [
+    "> Task :app:preBuild UP-TO-DATE",
+    "> Task :app:preDebugBuild UP-TO-DATE",
+    "> Task :app:generateDebugBuildConfig UP-TO-DATE",
+    "> Task :app:generateDebugResources UP-TO-DATE",
+    "> Task :app:packageDebugResources UP-TO-DATE",
+    "> Task :app:processDebugNavigationResources UP-TO-DATE",
+    "> Task :app:parseDebugLocalResources UP-TO-DATE",
+    "> Task :app:generateDebugRFile UP-TO-DATE",
+    "> Task :app:kspDebugKotlin UP-TO-DATE",
+    "> Task :app:compileDebugKotlin UP-TO-DATE",
+    "> Task :app:javaPreCompileDebug UP-TO-DATE",
+    "> Task :app:compileDebugJavaWithJavac UP-TO-DATE",
+    "> Task :app:checkDebugAarMetadata UP-TO-DATE",
+    "> Task :app:mapDebugSourceSetPaths UP-TO-DATE",
+    "> Task :app:compileDebugNavigationResources UP-TO-DATE",
+    "> Task :app:mergeDebugResources UP-TO-DATE",
+    "> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE",
+    "> Task :app:extractDeepLinksDebug UP-TO-DATE",
+    "> Task :app:processDebugMainManifest UP-TO-DATE",
+    "> Task :app:processDebugManifest UP-TO-DATE",
+    "> Task :app:processDebugManifestForPackage UP-TO-DATE",
+    "> Task :app:processDebugResources UP-TO-DATE",
+    "> Task :app:bundleDebugClassesToRuntimeJar UP-TO-DATE",
+    "> Task :app:bundleDebugClassesToCompileJar UP-TO-DATE",
+    "> Task :app:kspDebugUnitTestKotlin UP-TO-DATE",
+    "> Task :app:preDebugUnitTestBuild UP-TO-DATE",
+    "> Task :app:compileDebugUnitTestKotlin UP-TO-DATE",
+    "> Task :app:javaPreCompileDebugUnitTest UP-TO-DATE",
+    "> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE",
+    "> Task :app:generateDebugAssets UP-TO-DATE",
+    "> Task :app:mergeDebugAssets UP-TO-DATE",
+    "> Task :app:packageDebugUnitTestForUnitTest UP-TO-DATE",
+    "> Task :app:mergeDebugUnitTestManifest UP-TO-DATE",
+    "> Task :app:processDebugUnitTestManifest UP-TO-DATE",
+    "> Task :app:generateDebugUnitTestConfig UP-TO-DATE",
+    "> Task :app:processDebugJavaRes UP-TO-DATE",
+    "> Task :app:processDebugUnitTestJavaRes UP-TO-DATE",
+    "> Task :app:testDebugUnitTest",
+    "> Task :app:compileDebugSources UP-TO-DATE",
+    "> Task :app:preDebugAndroidTestBuild SKIPPED",
+    "> Task :app:generateDebugAndroidTestLintModel",
+    "> Task :app:extractProguardFiles UP-TO-DATE",
+    "> Task :app:generateDebugLintReportModel",
+    "> Task :app:generateDebugUnitTestLintModel",
+    "> Task :app:verifyReleaseGateAttachment",
+    "> Task :app:lintAnalyzeDebugAndroidTest",
+    "> Task :app:lintAnalyzeDebug",
+    "> Task :app:lintAnalyzeDebugUnitTest",
+    "> Task :app:lintReportDebug",
+    "> Task :app:lintDebug"
+  ],
+  "preservation": {
+    "schemaVersion": 1,
+    "baselineCommit": "30b992c551acc8cef3247311ebff8c7d1ba01c0a",
+    "status": "BOUNDED_ENGINEERING_ONLY_IA003_OPEN",
+    "targetUnit": 29,
+    "policyId": "unit29-prior-reading-relative-future-timing-v1",
+    "owners": [
+      1,
+      28
+    ],
+    "beforeAdvancement": {
+      "requireInstruction": true,
+      "requireBookSelfAttestation": true,
+      "requireAppChecks": true,
+      "minimumDistinctChecks": 8,
+      "requireDueReview": false,
+      "tutorOptional": true
+    },
+    "afterAdvancement": {
+      "requireInstruction": true,
+      "requireBookSelfAttestation": true,
+      "requireAppChecks": true,
+      "minimumDistinctChecks": 8,
+      "requireDueReview": true,
+      "tutorOptional": true,
+      "cumulativeReviewPolicyId": "unit29-prior-reading-relative-future-timing-v1"
+    },
+    "ordinaryMinimumPreserved": 8,
+    "changedUnitFields": [
+      "advancement.requireDueReview",
+      "advancement.cumulativeReviewPolicyId"
+    ],
+    "earlierPolicySourceHashes": {
+      "3": "5375c7c0fde0d156a7e64a97f3b5669b0690c8e2f8ab576fe225e6c84963ae70",
+      "4": "d881b5cfbea335be6e5ab2e869c64cd54598883d1cc60dc2a3942ee4e9979355",
+      "5": "6befdcee801a9815fdada5fb043372b962d443913c6197a4153da566345800cd",
+      "6": "f6132e00d70828fbe6792c134958b5a47c68d905023547091670acecb2ea0179",
+      "7": "7294cbaeaeea5a82f83dc05ff0c6ce6cfccf9ca87e0ea85ea2c4e07f37111ac7",
+      "8": "b2f1498ca1f846e21a502ea05bd65602ab537bab32622574b6c77f983f080a00",
+      "9": "da0b455f6313adba561973aabb57323a09c17ab2a6eef2608159727a41f57283",
+      "10": "eb0f05f2d74549a0a2dfa6e2e3cef67364fa57eaeeb067d91c84e8cd29b516b4",
+      "11": "b5e1d23edd2cd90c16b149e89286dcb1eebbbbb21d65c4e6f141f8e45e234b1e",
+      "12": "d1f4568d3c58e3a7decffd40f3a52157b8d50560d1639d2caf6099733075d993",
+      "13": "c358dae543e43a9fe1d78ecdaba01ec87f64793635462379f926cab397694da5",
+      "14": "71a72229f1b3936154f561ed56294f08932b094c0357cd4ccf992043d1e27753",
+      "15": "1ca9dcaa650cdb7d59392b6458104077362ae82c00b2e8b525754d555a081fe9",
+      "16": "4931d70fd950dca5b413eba87b5056776041c3a22ebb8a4539cf1e875c8f42a2",
+      "17": "482fa32dfc1f792ae1cb31b1e197e08d2cc29e1cabfb37a095a0013ac2124c9e",
+      "18": "d6fb25caf455709129717f073936d0a10528dfa1b8099bf2404d4a0bdc51bcf9",
+      "19": "28e2d9dc91594137f91231c6bd852355276d077421e13d7c77e6ecd6f12acdae",
+      "20": "4333ab40b6d1e6b6fa1ba9dde6c9cead258411ad6d10eecd15042f5f3051239b",
+      "21": "9077c5b74c5b3f98f9924d64158d7ed09b757aefebb0f1e93519a492b91d63a2",
+      "22": "08c469d3e3592b7db84d5e8f241d4a36bdf0f924e7e909db7e8273fedfb1013a",
+      "23": "02bb38b30230cb35cb74ff242517e81f7af61850b06813ffcc5f141c1df063b4",
+      "24": "2e351fd8859296599494d262130bb24dc8a00e876abd454f852b91433b65099a",
+      "25": "4fc89ed4d7bc118fa8173c43d084d008b57515ab3fd3c0b7e8f3a1d1a5b6ffbb",
+      "26": "e68422e00b2d99aad336ab1288bc952741a1f9a8bc1db87c0e114ae7f5969e88",
+      "27": "7c3ecba356a64b566685935f351e884556e10b12f13d098a940656a78df4280b",
+      "28": "844d36212bd3eaba0137396e8ced696a3f364c73ca3aed887c4fa7f639e06406"
+    },
+    "allOther29UnitsAndAllScoredNativeProvenanceRightsFieldsUnchanged": true,
+    "privateReferenceCopied": false,
+    "releaseAuthorized": false,
+    "newSourceMethods": 7,
+    "fixtureSetup": "Genuine governed teaching/check/due/advance history through28,restored into fresh isolated stores.Old packs separately prepared.No manufactured assignments or current credit.",
+    "sourceContextSha256": {
+      "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt": "e12312425b1ed50177c3549ac10026696fbb8733c089b748b183eecdaf8ace85",
+      "catalog/sources/units-26-30/wikipedia/copyrights-1369466282.txt": "79be61298fb5e458a485eb4ad72c68b73d5284de99807cf4561bcff9ace36210",
+      "catalog/sources/units-26-30/wikisource/vechera-5336197.txt": "af0a1b2a4a79796a3523bb8a35b708df450e5970a96af050230b42cf6f604517",
+      "catalog/sources/units-26-30/wikisource/pd-old-70-5691096.txt": "4a870dff55a234c8e9f96a538ae9af6eef735809ab15ab3ad4ae29c9cd4f4a36",
+      "catalog/sources/units-26-30/wikisource/author-5696210.txt": "22caa67898cc2eac8bed9403a78be547da0546396cfa7b17ed47116aee7eb15f",
+      "catalog/sources/units-3-5/openrussian/LICENSE": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297"
+    },
+    "selectedProvenanceTuple": [
+      {
+        "itemId": "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-8",
+        "unitNumber": 28,
+        "objectiveId": "obj-u28-perfective-adverb",
+        "recordType": "original-synthesis",
+        "sourceId": "src-content-audit-research",
+        "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+        "sourceRevision": "content-audit-2026-10-08",
+        "sourceRecordId": "ca-corrected-capability:cap-obj-u28-perfective-adverb",
+        "shippedText": "\u043d\u0430\u043f\u0438\u0441\u0430\u0432 \u043f\u0438\u0441\u044c\u043c\u043e, \u043e\u043d\u0430 \u043e\u0442\u043f\u0440\u0430\u0432\u0438\u0442 \u0435\u0433\u043e \u0437\u0430\u0432\u0442\u0440\u0430",
+        "transformation": "content-audit research synthesis",
+        "licenseId": "Original app text",
+        "licenseUrl": "urn:russian-companion:license:original-app-text",
+        "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+        "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+        "sourceHash": "7bac1b521a8bf51e48a25af9adf518bd844391d098723752e0e6b07ad5e7c3e8",
+        "contentHash": "2cc5503c228ef7606d1a7e02047d2070958add0a22cdd0ed69d8e3c21393a2c7",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "synthesis": {
+          "bibliography": "Retained Wikisource \u0412\u0435\u0447\u0435\u0440\u0430 \u0443 \u043a\u043d\u044f\u0433\u0438\u043d\u0438 \u0421\u0442\u0430\u0440\u043e\u0431\u0435\u043b\u044c\u0441\u043a\u043e\u0439 oldid5336197, complete opening paragraph of \u0417\u041d\u0410\u041a\u041e\u041c\u0421\u0422\u0412\u041e \u0421 \u0414\u0420\u0423\u0413\u041e\u041c \u041f\u0420\u0418\u041d\u0426\u0415\u0421\u0421\u042b \u041a\u041e\u0420\u041b\u0415\u041e\u041d\u0415 with explicit actor \u041f\u0430\u0432\u0435\u043b \u0421\u0435\u0440\u0433\u0435\u0438\u0447 \u0412\u044f\u0437\u043e\u0432\u0441\u043a\u0438\u0439. Exact native clause selections with unchanged source punctuation and NBSP; no stress or actor inserted. Existing public-domain author/work/rights basis retained, qualified rights review pending. Frozen OpenRussian verbs.csv commit50e210c4803237779cb562bc1abcea529066031c identifies \u0447\u0438\u0442\u0430\u0442\u044c as imperfective and \u0443\u0441\u0442\u0430\u0442\u044c as perfective. Existing CC BY-SA4.0 attribution/rights apply to selected dictionary rows. Retained Russian grammar1369617627 complete Adverbial participle section supplies earlier/simultaneous relation; absolute usually-present/only-past labels are not adopted as sentence tense. Independent English,2026-10-13. Guided literary context also occurs in later reading; not unseen evidence or productive mastery. Original independent relative-time/shared-subject scored fields remain. No private Penguin text; source/rights/semantic review pending.",
+          "sourceDateOrVersion": "2026-10-08",
+          "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+          "objectiveOrClaimBinding": "obj-u28-perfective-adverb:perfective-verbal-adverb",
+          "applications": [
+            {
+              "cue": "\u043d\u0430\u043f\u0438\u0441\u0430\u0432 \u043f\u0438\u0441\u044c\u043c\u043e, \u043e\u043d\u0430 \u043e\u0442\u043f\u0440\u0430\u0432\u0438\u0442 \u0435\u0433\u043e \u0437\u0430\u0432\u0442\u0440\u0430",
+              "answer": "anterior to a future main action",
+              "distractors": [
+                "an absolute present label",
+                "a different subject from the main verb"
+              ]
+            },
+            {
+              "cue": "\u043d\u0430\u043f\u0438\u0441\u0430\u0432 \u043f\u0438\u0441\u044c\u043c\u043e, \u043e\u043d\u0430 \u043e\u0442\u043f\u0440\u0430\u0432\u0438\u0442 \u0435\u0433\u043e \u0437\u0430\u0432\u0442\u0440\u0430",
+              "answer": "the writer and sender are the same person",
+              "distractors": [
+                "two unrelated people perform the actions",
+                "the sentence omits its main subject"
+              ]
+            },
+            {
+              "cue": "\u0443\u0441\u0442\u0430\u0432 \u043f\u0438\u0441\u0430\u0442\u044c \u043b\u043e\u0436\u0438\u043b\u0441\u044f \u043d\u0430\u00a0\u0434\u0438\u0432\u0430\u043d",
+              "answer": "anterior to a past main action",
+              "distractors": [
+                "an absolute present label",
+                "a different subject from the main verb"
+              ]
+            }
+          ]
+        },
+        "originalSourceTextRef": "7bac1b521a8bf51e48a25af9adf518bd844391d098723752e0e6b07ad5e7c3e8"
+      },
+      {
+        "itemId": "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-9",
+        "unitNumber": 28,
+        "objectiveId": "obj-u28-perfective-adverb",
+        "recordType": "original-synthesis",
+        "sourceId": "src-content-audit-research",
+        "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+        "sourceRevision": "content-audit-2026-10-08",
+        "sourceRecordId": "ca-corrected-capability:cap-obj-u28-perfective-adverb",
+        "shippedText": "anterior to a future main action",
+        "transformation": "content-audit research synthesis",
+        "licenseId": "Original app text",
+        "licenseUrl": "urn:russian-companion:license:original-app-text",
+        "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+        "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+        "sourceHash": "7bac1b521a8bf51e48a25af9adf518bd844391d098723752e0e6b07ad5e7c3e8",
+        "contentHash": "16f42ab87a4149e77c6db7d24f32fcb2975c3b1712be311eefae55000430459c",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "synthesis": {
+          "bibliography": "Retained Wikisource \u0412\u0435\u0447\u0435\u0440\u0430 \u0443 \u043a\u043d\u044f\u0433\u0438\u043d\u0438 \u0421\u0442\u0430\u0440\u043e\u0431\u0435\u043b\u044c\u0441\u043a\u043e\u0439 oldid5336197, complete opening paragraph of \u0417\u041d\u0410\u041a\u041e\u041c\u0421\u0422\u0412\u041e \u0421 \u0414\u0420\u0423\u0413\u041e\u041c \u041f\u0420\u0418\u041d\u0426\u0415\u0421\u0421\u042b \u041a\u041e\u0420\u041b\u0415\u041e\u041d\u0415 with explicit actor \u041f\u0430\u0432\u0435\u043b \u0421\u0435\u0440\u0433\u0435\u0438\u0447 \u0412\u044f\u0437\u043e\u0432\u0441\u043a\u0438\u0439. Exact native clause selections with unchanged source punctuation and NBSP; no stress or actor inserted. Existing public-domain author/work/rights basis retained, qualified rights review pending. Frozen OpenRussian verbs.csv commit50e210c4803237779cb562bc1abcea529066031c identifies \u0447\u0438\u0442\u0430\u0442\u044c as imperfective and \u0443\u0441\u0442\u0430\u0442\u044c as perfective. Existing CC BY-SA4.0 attribution/rights apply to selected dictionary rows. Retained Russian grammar1369617627 complete Adverbial participle section supplies earlier/simultaneous relation; absolute usually-present/only-past labels are not adopted as sentence tense. Independent English,2026-10-13. Guided literary context also occurs in later reading; not unseen evidence or productive mastery. Original independent relative-time/shared-subject scored fields remain. No private Penguin text; source/rights/semantic review pending.",
+          "sourceDateOrVersion": "2026-10-08",
+          "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+          "objectiveOrClaimBinding": "obj-u28-perfective-adverb:perfective-verbal-adverb",
+          "applications": [
+            {
+              "cue": "\u043d\u0430\u043f\u0438\u0441\u0430\u0432 \u043f\u0438\u0441\u044c\u043c\u043e, \u043e\u043d\u0430 \u043e\u0442\u043f\u0440\u0430\u0432\u0438\u0442 \u0435\u0433\u043e \u0437\u0430\u0432\u0442\u0440\u0430",
+              "answer": "anterior to a future main action",
+              "distractors": [
+                "an absolute present label",
+                "a different subject from the main verb"
+              ]
+            },
+            {
+              "cue": "\u043d\u0430\u043f\u0438\u0441\u0430\u0432 \u043f\u0438\u0441\u044c\u043c\u043e, \u043e\u043d\u0430 \u043e\u0442\u043f\u0440\u0430\u0432\u0438\u0442 \u0435\u0433\u043e \u0437\u0430\u0432\u0442\u0440\u0430",
+              "answer": "the writer and sender are the same person",
+              "distractors": [
+                "two unrelated people perform the actions",
+                "the sentence omits its main subject"
+              ]
+            },
+            {
+              "cue": "\u0443\u0441\u0442\u0430\u0432 \u043f\u0438\u0441\u0430\u0442\u044c \u043b\u043e\u0436\u0438\u043b\u0441\u044f \u043d\u0430\u00a0\u0434\u0438\u0432\u0430\u043d",
+              "answer": "anterior to a past main action",
+              "distractors": [
+                "an absolute present label",
+                "a different subject from the main verb"
+              ]
+            }
+          ]
+        },
+        "originalSourceTextRef": "7bac1b521a8bf51e48a25af9adf518bd844391d098723752e0e6b07ad5e7c3e8"
+      },
+      {
+        "itemId": "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-12",
+        "unitNumber": 28,
+        "objectiveId": "obj-u28-perfective-adverb",
+        "recordType": "original-synthesis",
+        "sourceId": "src-content-audit-research",
+        "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+        "sourceRevision": "content-audit-2026-10-08",
+        "sourceRecordId": "ca-corrected-capability:cap-obj-u28-perfective-adverb",
+        "shippedText": "an absolute present label",
+        "transformation": "content-audit research synthesis",
+        "licenseId": "Original app text",
+        "licenseUrl": "urn:russian-companion:license:original-app-text",
+        "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+        "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+        "sourceHash": "7bac1b521a8bf51e48a25af9adf518bd844391d098723752e0e6b07ad5e7c3e8",
+        "contentHash": "ad279813889fadf7a4ed0dbc52285ae58694133905dbf038f51fa7996807a8c7",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "synthesis": {
+          "bibliography": "Retained Wikisource \u0412\u0435\u0447\u0435\u0440\u0430 \u0443 \u043a\u043d\u044f\u0433\u0438\u043d\u0438 \u0421\u0442\u0430\u0440\u043e\u0431\u0435\u043b\u044c\u0441\u043a\u043e\u0439 oldid5336197, complete opening paragraph of \u0417\u041d\u0410\u041a\u041e\u041c\u0421\u0422\u0412\u041e \u0421 \u0414\u0420\u0423\u0413\u041e\u041c \u041f\u0420\u0418\u041d\u0426\u0415\u0421\u0421\u042b \u041a\u041e\u0420\u041b\u0415\u041e\u041d\u0415 with explicit actor \u041f\u0430\u0432\u0435\u043b \u0421\u0435\u0440\u0433\u0435\u0438\u0447 \u0412\u044f\u0437\u043e\u0432\u0441\u043a\u0438\u0439. Exact native clause selections with unchanged source punctuation and NBSP; no stress or actor inserted. Existing public-domain author/work/rights basis retained, qualified rights review pending. Frozen OpenRussian verbs.csv commit50e210c4803237779cb562bc1abcea529066031c identifies \u0447\u0438\u0442\u0430\u0442\u044c as imperfective and \u0443\u0441\u0442\u0430\u0442\u044c as perfective. Existing CC BY-SA4.0 attribution/rights apply to selected dictionary rows. Retained Russian grammar1369617627 complete Adverbial participle section supplies earlier/simultaneous relation; absolute usually-present/only-past labels are not adopted as sentence tense. Independent English,2026-10-13. Guided literary context also occurs in later reading; not unseen evidence or productive mastery. Original independent relative-time/shared-subject scored fields remain. No private Penguin text; source/rights/semantic review pending.",
+          "sourceDateOrVersion": "2026-10-08",
+          "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+          "objectiveOrClaimBinding": "obj-u28-perfective-adverb:perfective-verbal-adverb",
+          "applications": [
+            {
+              "cue": "\u043d\u0430\u043f\u0438\u0441\u0430\u0432 \u043f\u0438\u0441\u044c\u043c\u043e, \u043e\u043d\u0430 \u043e\u0442\u043f\u0440\u0430\u0432\u0438\u0442 \u0435\u0433\u043e \u0437\u0430\u0432\u0442\u0440\u0430",
+              "answer": "anterior to a future main action",
+              "distractors": [
+                "an absolute present label",
+                "a different subject from the main verb"
+              ]
+            },
+            {
+              "cue": "\u043d\u0430\u043f\u0438\u0441\u0430\u0432 \u043f\u0438\u0441\u044c\u043c\u043e, \u043e\u043d\u0430 \u043e\u0442\u043f\u0440\u0430\u0432\u0438\u0442 \u0435\u0433\u043e \u0437\u0430\u0432\u0442\u0440\u0430",
+              "answer": "the writer and sender are the same person",
+              "distractors": [
+                "two unrelated people perform the actions",
+                "the sentence omits its main subject"
+              ]
+            },
+            {
+              "cue": "\u0443\u0441\u0442\u0430\u0432 \u043f\u0438\u0441\u0430\u0442\u044c \u043b\u043e\u0436\u0438\u043b\u0441\u044f \u043d\u0430\u00a0\u0434\u0438\u0432\u0430\u043d",
+              "answer": "anterior to a past main action",
+              "distractors": [
+                "an absolute present label",
+                "a different subject from the main verb"
+              ]
+            }
+          ]
+        },
+        "originalSourceTextRef": "7bac1b521a8bf51e48a25af9adf518bd844391d098723752e0e6b07ad5e7c3e8"
+      },
+      {
+        "itemId": "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-13",
+        "unitNumber": 28,
+        "objectiveId": "obj-u28-perfective-adverb",
+        "recordType": "original-synthesis",
+        "sourceId": "src-content-audit-research",
+        "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+        "sourceRevision": "content-audit-2026-10-08",
+        "sourceRecordId": "ca-corrected-capability:cap-obj-u28-perfective-adverb",
+        "shippedText": "a different subject from the main verb",
+        "transformation": "content-audit research synthesis",
+        "licenseId": "Original app text",
+        "licenseUrl": "urn:russian-companion:license:original-app-text",
+        "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+        "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+        "sourceHash": "7bac1b521a8bf51e48a25af9adf518bd844391d098723752e0e6b07ad5e7c3e8",
+        "contentHash": "5408a0a22e04436b148f7e5de1190e3cd11f8f8765104effe67bb7d662a08a7b",
+        "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "synthesis": {
+          "bibliography": "Retained Wikisource \u0412\u0435\u0447\u0435\u0440\u0430 \u0443 \u043a\u043d\u044f\u0433\u0438\u043d\u0438 \u0421\u0442\u0430\u0440\u043e\u0431\u0435\u043b\u044c\u0441\u043a\u043e\u0439 oldid5336197, complete opening paragraph of \u0417\u041d\u0410\u041a\u041e\u041c\u0421\u0422\u0412\u041e \u0421 \u0414\u0420\u0423\u0413\u041e\u041c \u041f\u0420\u0418\u041d\u0426\u0415\u0421\u0421\u042b \u041a\u041e\u0420\u041b\u0415\u041e\u041d\u0415 with explicit actor \u041f\u0430\u0432\u0435\u043b \u0421\u0435\u0440\u0433\u0435\u0438\u0447 \u0412\u044f\u0437\u043e\u0432\u0441\u043a\u0438\u0439. Exact native clause selections with unchanged source punctuation and NBSP; no stress or actor inserted. Existing public-domain author/work/rights basis retained, qualified rights review pending. Frozen OpenRussian verbs.csv commit50e210c4803237779cb562bc1abcea529066031c identifies \u0447\u0438\u0442\u0430\u0442\u044c as imperfective and \u0443\u0441\u0442\u0430\u0442\u044c as perfective. Existing CC BY-SA4.0 attribution/rights apply to selected dictionary rows. Retained Russian grammar1369617627 complete Adverbial participle section supplies earlier/simultaneous relation; absolute usually-present/only-past labels are not adopted as sentence tense. Independent English,2026-10-13. Guided literary context also occurs in later reading; not unseen evidence or productive mastery. Original independent relative-time/shared-subject scored fields remain. No private Penguin text; source/rights/semantic review pending.",
+          "sourceDateOrVersion": "2026-10-08",
+          "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+          "objectiveOrClaimBinding": "obj-u28-perfective-adverb:perfective-verbal-adverb",
+          "applications": [
+            {
+              "cue": "\u043d\u0430\u043f\u0438\u0441\u0430\u0432 \u043f\u0438\u0441\u044c\u043c\u043e, \u043e\u043d\u0430 \u043e\u0442\u043f\u0440\u0430\u0432\u0438\u0442 \u0435\u0433\u043e \u0437\u0430\u0432\u0442\u0440\u0430",
+              "answer": "anterior to a future main action",
+              "distractors": [
+                "an absolute present label",
+                "a different subject from the main verb"
+              ]
+            },
+            {
+              "cue": "\u043d\u0430\u043f\u0438\u0441\u0430\u0432 \u043f\u0438\u0441\u044c\u043c\u043e, \u043e\u043d\u0430 \u043e\u0442\u043f\u0440\u0430\u0432\u0438\u0442 \u0435\u0433\u043e \u0437\u0430\u0432\u0442\u0440\u0430",
+              "answer": "the writer and sender are the same person",
+              "distractors": [
+                "two unrelated people perform the actions",
+                "the sentence omits its main subject"
+              ]
+            },
+            {
+              "cue": "\u0443\u0441\u0442\u0430\u0432 \u043f\u0438\u0441\u0430\u0442\u044c \u043b\u043e\u0436\u0438\u043b\u0441\u044f \u043d\u0430\u00a0\u0434\u0438\u0432\u0430\u043d",
+              "answer": "anterior to a past main action",
+              "distractors": [
+                "an absolute present label",
+                "a different subject from the main verb"
+              ]
+            }
+          ]
+        },
+        "originalSourceTextRef": "7bac1b521a8bf51e48a25af9adf518bd844391d098723752e0e6b07ad5e7c3e8"
+      }
+    ],
+    "resolvedNativeContext": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=\u0431\u044b\u0441\u0442\u0440\u044b\u0439&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nProposed Unit 28 uses admitted imperfective and perfective adverbial lines and one admitted public-domain reading span. Qualified review is pending.\nRead the admitted examples on this card.\nA perfective verbal adverb is anterior to the main predicate. It can precede a past or a future main action. It is not limited to an absolute past.\nusually present, while perfective ones can only be past\n\u0441\u043a\u0430\u0437\u0430\u0432\nperfective verbal adverb; normally anterior to its main action, which can itself be past or future\n\u043d\u0430\u0443\u0447\u0438\u0432\u0448\u0438\u0441\u044c\n\u0432\u043e\u0439\u0434\u044f\n\u043d\u0430\u043f\u0438\u0441\u0430\u0432 \u043f\u0438\u0441\u044c\u043c\u043e, \u043e\u043d\u0430 \u043e\u0442\u043f\u0440\u0430\u0432\u0438\u0442 \u0435\u0433\u043e \u0437\u0430\u0432\u0442\u0440\u0430\nanterior to a future main action\nWhen is the perfective verbal adverb interpreted in this sentence?\nIn \u043d\u0430\u043f\u0438\u0441\u0430\u0432 \u043f\u0438\u0441\u044c\u043c\u043e, \u043e\u043d\u0430 \u043e\u0442\u043f\u0440\u0430\u0432\u0438\u0442 \u0435\u0433\u043e \u0437\u0430\u0432\u0442\u0440\u0430, anterior to a future main action describes \u043d\u0430\u043f\u0438\u0441\u0430\u0432: writing precedes the future sending, and the same person performs both actions.\nan absolute present label\na different subject from the main verb\nan absolute present label is not the time of a perfective verbal adverb.\na different subject from the main verb violates the shared-subject constraint.\nthe writer and sender are the same person\nWhich English description identifies the shared subject?\nIn \u043d\u0430\u043f\u0438\u0441\u0430\u0432 \u043f\u0438\u0441\u044c\u043c\u043e, \u043e\u043d\u0430 \u043e\u0442\u043f\u0440\u0430\u0432\u0438\u0442 \u0435\u0433\u043e \u0437\u0430\u0432\u0442\u0440\u0430, the writer and sender are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject.\nRetained Russian grammar revision 1369617627, existing hash-bound Unit28 contextual research applications, and retained public-domain Wikisource revision 5336197. Independently authored English explanation, 2026-10-12. No private book prose, new Russian, or general productive formation algorithm. Pending final linguistic audit.\nA perfective verbal adverb normally presents an action completed before the main action in this taught construction. Anterior means earlier relative to that action. The retained \u0441\u043a\u0430\u0437\u0430\u0432 and \u043d\u0430\u0443\u0447\u0438\u0432\u0448\u0438\u0441\u044c illustrate these forms; their labels alone do not fix an absolute past tense. Read the accompanying main predicate to establish the sentence time.\nIn \u043d\u0430\u043f\u0438\u0441\u0430\u0432 \u043f\u0438\u0441\u044c\u043c\u043e, \u043e\u043d\u0430 \u043e\u0442\u043f\u0440\u0430\u0432\u0438\u0442 \u0435\u0433\u043e \u0437\u0430\u0432\u0442\u0440\u0430, she will send the letter tomorrow after writing it. The writing precedes the future sending: anterior to a future main action is the matching description. The sentence does not require the writing to have happened before the present moment. The pronoun she names the main subject, and the writer and sender are the same person. An absolute present label loses the relative timing; assigning a different subject loses the supplied construction.\nThe retained \u0432\u043e\u0439\u0434\u044f illustrates another perfective verbal-adverb form with an action normally anterior to its main predicate. It does not by itself identify a main subject or an absolute sentence tense. Compare the supplied forms and read their complete contexts when available. This small example set supplies recognition practice, not a complete productive algorithm for unlisted verbs.\nA perfective verbal adverb normally presents an action completed before the main action in this taught construction. Anterior means earlier relative to that action. The retained \u0441\u043a\u0430\u0437\u0430\u0432 and \u043d\u0430\u0443\u0447\u0438\u0432\u0448\u0438\u0441\u044c illustrate these forms; their labels alone do not fix an absolute past tense. Read the accompanying main predicate to establish the sentence time.\n\nIn \u043d\u0430\u043f\u0438\u0441\u0430\u0432 \u043f\u0438\u0441\u044c\u043c\u043e, \u043e\u043d\u0430 \u043e\u0442\u043f\u0440\u0430\u0432\u0438\u0442 \u0435\u0433\u043e \u0437\u0430\u0432\u0442\u0440\u0430, she will send the letter tomorrow after writing it. The writing precedes the future sending: anterior to a future main action is the matching description. The sentence does not require the writing to have happened before the present moment. The pronoun she names the main subject, and the writer and sender are the same person. An absolute present label loses the relative timing; assigning a different subject loses the supplied construction.\n\nThe retained \u0432\u043e\u0439\u0434\u044f illustrates another perfective verbal-adverb form with an action normally anterior to its main predicate. It does not by itself identify a main subject or an absolute sentence tense. Compare the supplied forms and read their complete contexts when available. This small example set supplies recognition practice, not a complete productive algorithm for unlisted verbs.\n[{\"cue\": \"\u043d\u0430\u043f\u0438\u0441\u0430\u0432 \u043f\u0438\u0441\u044c\u043c\u043e, \u043e\u043d\u0430 \u043e\u0442\u043f\u0440\u0430\u0432\u0438\u0442 \u0435\u0433\u043e \u0437\u0430\u0432\u0442\u0440\u0430\", \"answer\": \"anterior to a future main action\", \"distractors\": [\"an absolute present label\", \"a different subject from the main verb\"]}, {\"cue\": \"\u043d\u0430\u043f\u0438\u0441\u0430\u0432 \u043f\u0438\u0441\u044c\u043c\u043e, \u043e\u043d\u0430 \u043e\u0442\u043f\u0440\u0430\u0432\u0438\u0442 \u0435\u0433\u043e \u0437\u0430\u0432\u0442\u0440\u0430\", \"answer\": \"the writer and sender are the same person\", \"distractors\": [\"two unrelated people perform the actions\", \"the sentence omits its main subject\"]}]\nRetained Wikisource \u0412\u0435\u0447\u0435\u0440\u0430 \u0443 \u043a\u043d\u044f\u0433\u0438\u043d\u0438 \u0421\u0442\u0430\u0440\u043e\u0431\u0435\u043b\u044c\u0441\u043a\u043e\u0439 oldid5336197, complete opening paragraph of \u0417\u041d\u0410\u041a\u041e\u041c\u0421\u0422\u0412\u041e \u0421 \u0414\u0420\u0423\u0413\u041e\u041c \u041f\u0420\u0418\u041d\u0426\u0415\u0421\u0421\u042b \u041a\u041e\u0420\u041b\u0415\u041e\u041d\u0415 with explicit actor \u041f\u0430\u0432\u0435\u043b \u0421\u0435\u0440\u0433\u0435\u0438\u0447 \u0412\u044f\u0437\u043e\u0432\u0441\u043a\u0438\u0439. Exact native clause selections with unchanged source punctuation and NBSP; no stress or actor inserted. Existing public-domain author/work/rights basis retained, qualified rights review pending. Frozen OpenRussian verbs.csv commit50e210c4803237779cb562bc1abcea529066031c identifies \u0447\u0438\u0442\u0430\u0442\u044c as imperfective and \u0443\u0441\u0442\u0430\u0442\u044c as perfective. Existing CC BY-SA4.0 attribution/rights apply to selected dictionary rows. Retained Russian grammar1369617627 complete Adverbial participle section supplies earlier/simultaneous relation; absolute usually-present/only-past labels are not adopted as sentence tense. Independent English,2026-10-13. Guided literary context also occurs in later reading; not unseen evidence or productive mastery. Original independent relative-time/shared-subject scored fields remain. No private Penguin text; source/rights/semantic review pending.\n\u0421 6 \u0447\u0430\u0441\u043e\u0432 \u0443\u0442\u0440\u0430 \u0447\u0430\u0441\u043e\u0432 \u0434\u043e 6 \u0432\u0435\u0447\u0435\u0440\u0430 \u0432\u00a0\u043f\u0435\u0440\u0432\u044b\u0439 \u0447\u0435\u0442\u0432\u0435\u0440\u0433 \u0434\u0435\u043a\u0430\u0431\u0440\u044f \u043d\u044b\u043d\u0435\u0448\u043d\u0435\u0439 \u0437\u0438\u043c\u044b \u041f\u0430\u0432\u0435\u043b \u0421\u0435\u0440\u0433\u0435\u0438\u0447 \u0412\u044f\u0437\u043e\u0432\u0441\u043a\u0438\u0439, \u0447\u0435\u043b\u043e\u0432\u0435\u043a \u043b\u0435\u0442 \u043f\u044f\u0442\u0438\u0434\u0435\u0441\u044f\u0442\u0438 \u043f\u044f\u0442\u0438, \u0434\u0430\u0432\u043d\u0438\u0448\u043d\u0438\u0439 \u0436\u0438\u0442\u0435\u043b\u044c \u0434\u0432\u0443\u0445 \u0438\u0437\u00a0\u0442\u0440\u0435\u0445 \u043a\u043e\u043c\u043d\u0430\u0442 \u0441\u0442\u0430\u0440\u0435\u043d\u044c\u043a\u043e\u0433\u043e \u043a\u0440\u043e\u0448\u0435\u0447\u043d\u043e\u0433\u043e \u0434\u0435\u0440\u0435\u0432\u044f\u043d\u043d\u043e\u0433\u043e \u0434\u043e\u043c\u0438\u043a\u0430 \u0432\u00a0\u043e\u0434\u043d\u043e\u043c \u0438\u0437\u00a0\u0433\u043b\u0443\u0445\u0438\u0445 \u0443\u0433\u043b\u043e\u0432 \u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433\u0430, \u043f\u0440\u043e\u0432\u043e\u0434\u0438\u043b \u0432\u0440\u0435\u043c\u044f \u043f\u043e\u00a0\u043e\u0431\u044b\u043a\u043d\u043e\u0432\u0435\u043d\u0438\u044e: \u0441\u0438\u0434\u0435\u043b \u0437\u0430\u00a0\u0440\u0430\u0431\u043e\u0447\u0438\u043c \u0441\u0442\u043e\u043b\u043e\u043c \u0438\u00a0\u043f\u0438\u0441\u0430\u043b, \u0443\u0441\u0442\u0430\u0432 \u043f\u0438\u0441\u0430\u0442\u044c \u043b\u043e\u0436\u0438\u043b\u0441\u044f \u043d\u0430\u00a0\u0434\u0438\u0432\u0430\u043d \u0438\u00a0\u043e\u0442\u0434\u044b\u0445\u0430\u043b \u0447\u0438\u0442\u0430\u044f, \u043f\u043e\u0442\u043e\u043c \u043e\u043f\u044f\u0442\u044c \u0441\u0430\u0434\u0438\u043b\u0441\u044f \u043f\u0438\u0441\u0430\u0442\u044c, \u0438\u00a0\u0443\u0440\u044b\u0432\u043a\u0430\u043c\u0438 \u043c\u0435\u0436\u0434\u0443 \u044d\u0442\u0438\u0445 \u0437\u0430\u043d\u044f\u0442\u0438\u0439 \u0443\u0441\u043b\u044b\u0448\u0430\u043b \u0443\u0442\u0440\u043e\u043c \u0433\u043e\u043b\u043e\u0441 \u0441\u0442\u0430\u0440\u0443\u0448\u043a\u0438, \u0445\u043e\u0437\u044f\u0439\u043a\u0438 \u0434\u043e\u043c\u0438\u043a\u0430: \u00ab\u0441\u0430\u043c\u043e\u0432\u0430\u0440 \u043f\u0440\u0438\u043d\u0435\u0441\u043b\u0430, \u041f\u0430\u0432\u0435\u043b \u0421\u0435\u0440\u0433\u0435\u0435\u0432\u0438\u0447\u00bb, \u0441\u043a\u0430\u0437\u0430\u043b \u0435\u0439 \u00ab\u0431\u043b\u0430\u0433\u043e\u0434\u0430\u0440\u044e, \u0410\u043d\u043d\u0430 \u0414\u0430\u043d\u0438\u043b\u043e\u0432\u043d\u0430\u00bb, \u0432\u044b\u043f\u0438\u043b \u0434\u0432\u0430 \u0441\u0442\u0430\u043a\u0430\u043d\u0430 \u0447\u0430\u044e \u0441\u00a0\u043c\u043e\u043b\u043e\u043a\u043e\u043c, \u0441\u044a\u0435\u043b \u0441\u00a0\u0447\u0430\u0435\u043c \u043b\u043e\u043c\u043e\u0442\u044c \u0431\u0435\u043b\u043e\u0433\u043e \u0445\u043b\u0435\u0431\u0430; \u043e\u043f\u044f\u0442\u044c \u0443\u0441\u043b\u044b\u0448\u0430\u043b \u0433\u043e\u043b\u043e\u0441 \u0445\u043e\u0437\u044f\u0439\u043a\u0438: \u00ab\u043f\u0440\u0438\u043d\u0435\u0441\u043b\u0430 \u0437\u0430\u0432\u0442\u0440\u0430\u043a, \u041f\u0430\u0432\u0435\u043b \u0421\u0435\u0440\u0433\u0435\u0435\u0432\u0438\u0447\u00bb, \u043e\u043f\u044f\u0442\u044c \u043f\u043e\u0431\u043b\u0430\u0433\u043e\u0434\u0430\u0440\u0438\u043b \u0435\u0435, \u0432\u044b\u043f\u0438\u043b \u0441\u0442\u0430\u043a\u0430\u043d \u043c\u043e\u043b\u043e\u043a\u0430 \u0441\u00a0\u0447\u0435\u0440\u043d\u044b\u043c \u0445\u043b\u0435\u0431\u043e\u043c, \u0441\u043e\u0441\u0442\u0430\u0432\u043b\u044f\u0432\u0448\u0438\u0439 \u0435\u0433\u043e \u0437\u0430\u0432\u0442\u0440\u0430\u043a, \u043e\u043f\u044f\u0442\u044c \u0443\u0441\u043b\u044b\u0448\u0430\u043b \u0433\u043e\u043b\u043e\u0441 \u0445\u043e\u0437\u044f\u0439\u043a\u0438: \u00ab\u043f\u0440\u0438\u043d\u0435\u0441\u043b\u0430 \u043e\u0431\u0435\u0434, \u041f\u0430\u0432\u0435\u043b \u0421\u0435\u0440\u0433\u0435\u0438\u0447\u00bb, \u043e\u043f\u044f\u0442\u044c \u043f\u043e\u0431\u043b\u0430\u0433\u043e\u0434\u0430\u0440\u0438\u043b \u0435\u0435, \u0441\u044a\u0435\u043b \u0442\u0430\u0440\u0435\u043b\u043a\u0443 \u0433\u0440\u0435\u0448\u043d\u0435\u0432\u043e\u0439 \u043a\u0430\u0448\u0438\u0446\u044b, \u0441\u043e\u0441\u0442\u0430\u0432\u043b\u044f\u0432\u0448\u0443\u044e \u0435\u0433\u043e \u0435\u0436\u0435\u0434\u043d\u0435\u0432\u043d\u044b\u0439 \u043e\u0431\u0435\u0434; \u043e\u043f\u044f\u0442\u044c \u0443\u0441\u043b\u044b\u0448\u0430\u043b\u202f\u2014\u2009\u044d\u0442\u043e \u0431\u044b\u043b\u043e, \u043d\u0430\u0432\u0435\u0440\u043d\u043e\u0435 \u0447\u0430\u0441\u043e\u0432 \u0432 6, \u043f\u043e\u00a0\u0430\u043a\u043a\u0443\u0440\u0430\u0442\u043d\u043e \u0441\u043e\u0431\u043b\u044e\u0434\u0430\u0435\u043c\u043e\u043c\u0443 \u0441\u0442\u0430\u0440\u0443\u0448\u043a\u043e\u0439 \u043f\u043e\u0440\u044f\u0434\u043a\u0443,\u202f\u2014\u2009\u0433\u043e\u043b\u043e\u0441 \u0435\u0435 \u00ab\u043f\u0440\u0438\u043d\u0435\u0441\u043b\u0430 \u0441\u0430\u043c\u043e\u0432\u0430\u0440, \u041f\u0430\u0432\u0435\u043b \u0421\u0435\u0440\u0433\u0435\u0438\u0447!\u00bb, \u043e\u043f\u044f\u0442\u044c \u0441\u043a\u0430\u0437\u0430\u043b \u00ab\u0431\u043b\u0430\u0433\u043e\u0434\u0430\u0440\u044e \u0432\u0430\u0441, \u0410\u043d\u043d\u0430 \u0414\u0430\u043d\u0438\u043b\u043e\u0432\u043d\u0430\u00bb,\u202f\u2014\u2009\u043d\u043e\u00a0\u0442\u0443\u0442 \u043f\u0440\u043e\u0438\u0437\u043e\u0448\u043b\u043e \u043e\u0442\u0441\u0442\u0443\u043f\u043b\u0435\u043d\u0438\u0435 \u043e\u0442\u00a0\u0435\u0436\u0435\u0434\u043d\u0435\u0432\u043d\u043e\u0433\u043e \u043f\u043e\u0440\u044f\u0434\u043a\u0430: \u0432\u0441\u0442\u0430\u0432 \u043f\u043e\u043b\u043e\u0436\u0438\u0442\u044c \u0447\u0430\u044e \u0432\u00a0\u0447\u0430\u0439\u043d\u0438\u043a, \u0438\u00a0\u043d\u0430\u043b\u0438\u0442\u044c \u043a\u0438\u043f\u044f\u0442\u043a\u043e\u043c, \u041f\u0430\u0432\u0435\u043b \u0421\u0435\u0440\u0433\u0435\u0438\u0447 \u0443\u0432\u0438\u0434\u0435\u043b, \u0447\u0442\u043e\u00a0\u0441\u0442\u0430\u0440\u0443\u0448\u043a\u0430 \u043d\u0435\u00a0\u0443\u0448\u043b\u0430, \u0441\u0442\u043e\u0438\u0442, \u0441\u043b\u043e\u0436\u0430 \u0440\u0443\u043a\u0438 \u0438\u00a0\u0441\u043c\u043e\u0442\u0440\u0438\u0442 \u043d\u0430\u00a0\u043e\u0434\u0438\u043d \u0438\u0437\u00a0\u043b\u043e\u043a\u0442\u0435\u0439 \u0435\u0433\u043e \u043f\u0430\u043b\u044c\u0442\u043e. \u041e\u043d\u00a0\u0432\u0437\u0434\u043e\u0445\u043d\u0443\u043b, \u043f\u043e\u0434\u0443\u043c\u0430\u0432: \u00ab\u043e\u043f\u044f\u0442\u044c \u0437\u0430\u00a0\u0442\u043e\u00a0\u0436\u0435\u00bb,\u202f\u2014\u2009\u0438\u00a0\u043d\u0435 \u043e\u0448\u0438\u0431\u0441\u044f: \u0441\u0442\u0430\u0440\u0443\u0448\u043a\u0430 \u0441\u043a\u0430\u0437\u0430\u043b\u0430:\n\u0443\u0441\u0442\u0430\u0442\u044c\t\u0443\u0441\u0442\u0430'\u0442\u044c\tget tired, be tired\term\u00fcden; m\u00fcde sein\tperfective\t\u0443\u0441\u0442\u0430\u0432\u0430\u0442\u044c\t\u0443\u0441\u0442\u0430'\u043d\u044c\t\u0443\u0441\u0442\u0430'\u043d\u044c\u0442\u0435\t\u0443\u0441\u0442\u0430'\u043b\t\u0443\u0441\u0442\u0430'\u043b\u0430\t\u0443\u0441\u0442\u0430'\u043b\u043e\t\u0443\u0441\u0442\u0430'\u043b\u0438\t\u0443\u0441\u0442\u0430'\u043d\u0443\t\u0443\u0441\u0442\u0430'\u043d\u0435\u0448\u044c\t\u0443\u0441\u0442\u0430'\u043d\u0435\u0442\t\u0443\u0441\u0442\u0430'\u043d\u0435\u043c\t\u0443\u0441\u0442\u0430'\u043d\u0435\u0442\u0435\t\u0443\u0441\u0442\u0430'\u043d\u0443\u0442\nWhich English description identifies the relative timing in this retained clause?\nIn \u0443\u0441\u0442\u0430\u0432 \u043f\u0438\u0441\u0430\u0442\u044c \u043b\u043e\u0436\u0438\u043b\u0441\u044f \u043d\u0430\u00a0\u0434\u0438\u0432\u0430\u043d, anterior to a past main action is the matching relative-time description. Becoming tired of writing precedes lying down; the same person performs both actions in this supplied episode. The main predicate is past; the verbal adverb does not independently label absolute sentence time.\n\nan absolute present label mistakes relative timing for an independent tense.\na different subject from the main verb is not the shared-actor reading supplied by this paragraph.\nThe retained paragraph introduces \u041f\u0430\u0432\u0435\u043b \u0421\u0435\u0440\u0433\u0435\u0438\u0447 \u0412\u044f\u0437\u043e\u0432\u0441\u043a\u0438\u0439 as the actor. \u0443\u0441\u0442\u0430\u0432 \u043f\u0438\u0441\u0430\u0442\u044c \u043b\u043e\u0436\u0438\u043b\u0441\u044f \u043d\u0430\u00a0\u0434\u0438\u0432\u0430\u043d \u2014 Becoming tired of writing precedes lying down; the same person performs both actions in this supplied episode. The source marks \u0443\u0441\u0442\u0430\u0442\u044c as perfective. anterior to a past main action describes timing relative to the main predicate in this clause. The actor is supplied by the paragraph, not inserted into a new Russian sentence. This is an exact clause selection with source punctuation and spacing preserved. Compare the independent letter sentence already taught: it keeps its original relative-time and shared-subject reading. The same literary episode appears later in reading practice; this is not unseen evidence, a rule that fixes absolute tense, or unrestricted formation/production mastery.\nA perfective verbal adverb normally presents an action completed before the main action in this taught construction. Anterior means earlier relative to that action. The retained \u0441\u043a\u0430\u0437\u0430\u0432 and \u043d\u0430\u0443\u0447\u0438\u0432\u0448\u0438\u0441\u044c illustrate these forms; their labels alone do not fix an absolute past tense. Read the accompanying main predicate to establish the sentence time.\n\nIn \u043d\u0430\u043f\u0438\u0441\u0430\u0432 \u043f\u0438\u0441\u044c\u043c\u043e, \u043e\u043d\u0430 \u043e\u0442\u043f\u0440\u0430\u0432\u0438\u0442 \u0435\u0433\u043e \u0437\u0430\u0432\u0442\u0440\u0430, she will send the letter tomorrow after writing it. The writing precedes the future sending: anterior to a future main action is the matching description. The sentence does not require the writing to have happened before the present moment. The pronoun she names the main subject, and the writer and sender are the same person. An absolute present label loses the relative timing; assigning a different subject loses the supplied construction.\n\nThe retained \u0432\u043e\u0439\u0434\u044f illustrates another perfective verbal-adverb form with an action normally anterior to its main predicate. It does not by itself identify a main subject or an absolute sentence tense. Compare the supplied forms and read their complete contexts when available. This small example set supplies recognition practice, not a complete productive algorithm for unlisted verbs.\n\nThe retained paragraph introduces \u041f\u0430\u0432\u0435\u043b \u0421\u0435\u0440\u0433\u0435\u0438\u0447 \u0412\u044f\u0437\u043e\u0432\u0441\u043a\u0438\u0439 as the actor. \u0443\u0441\u0442\u0430\u0432 \u043f\u0438\u0441\u0430\u0442\u044c \u043b\u043e\u0436\u0438\u043b\u0441\u044f \u043d\u0430\u00a0\u0434\u0438\u0432\u0430\u043d \u2014 Becoming tired of writing precedes lying down; the same person performs both actions in this supplied episode. The source marks \u0443\u0441\u0442\u0430\u0442\u044c as perfective. anterior to a past main action describes timing relative to the main predicate in this clause. The actor is supplied by the paragraph, not inserted into a new Russian sentence. This is an exact clause selection with source punctuation and spacing preserved. Compare the independent letter sentence already taught: it keeps its original relative-time and shared-subject reading. The same literary episode appears later in reading practice; this is not unseen evidence, a rule that fixes absolute tense, or unrestricted formation/production mastery.\n[{\"cue\": \"\u043d\u0430\u043f\u0438\u0441\u0430\u0432 \u043f\u0438\u0441\u044c\u043c\u043e, \u043e\u043d\u0430 \u043e\u0442\u043f\u0440\u0430\u0432\u0438\u0442 \u0435\u0433\u043e \u0437\u0430\u0432\u0442\u0440\u0430\", \"answer\": \"anterior to a future main action\", \"distractors\": [\"an absolute present label\", \"a different subject from the main verb\"]}, {\"cue\": \"\u043d\u0430\u043f\u0438\u0441\u0430\u0432 \u043f\u0438\u0441\u044c\u043c\u043e, \u043e\u043d\u0430 \u043e\u0442\u043f\u0440\u0430\u0432\u0438\u0442 \u0435\u0433\u043e \u0437\u0430\u0432\u0442\u0440\u0430\", \"answer\": \"the writer and sender are the same person\", \"distractors\": [\"two unrelated people perform the actions\", \"the sentence omits its main subject\"]}, {\"cue\": \"\u0443\u0441\u0442\u0430\u0432 \u043f\u0438\u0441\u0430\u0442\u044c \u043b\u043e\u0436\u0438\u043b\u0441\u044f \u043d\u0430\u00a0\u0434\u0438\u0432\u0430\u043d\", \"answer\": \"anterior to a past main action\", \"distractors\": [\"an absolute present label\", \"a different subject from the main verb\"]}]",
+    "plannedFocusedMethods": 66,
+    "all6914ProvenanceRecordsUnchanged": true,
+    "ownDeclarationAndScoredItemsEqualHistorical20a227BeforeActivation": true,
+    "completeUnitInspection": {
+      "sessions": 8,
+      "teachingCards": 19,
+      "assignedItems": 34,
+      "guided": 10,
+      "independent": 24,
+      "unassignedOptionalItems": 4
+    },
+    "directOwnerTimingMethods": 13,
+    "resolvedContextRefs": {
+      "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-8": "7bac1b521a8bf51e48a25af9adf518bd844391d098723752e0e6b07ad5e7c3e8",
+      "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-9": "7bac1b521a8bf51e48a25af9adf518bd844391d098723752e0e6b07ad5e7c3e8",
+      "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-12": "7bac1b521a8bf51e48a25af9adf518bd844391d098723752e0e6b07ad5e7c3e8",
+      "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-13": "7bac1b521a8bf51e48a25af9adf518bd844391d098723752e0e6b07ad5e7c3e8",
+      "prov-u28-timing-guided-perfective-0": "7bac1b521a8bf51e48a25af9adf518bd844391d098723752e0e6b07ad5e7c3e8",
+      "prov-u28-timing-guided-perfective-1": "7bac1b521a8bf51e48a25af9adf518bd844391d098723752e0e6b07ad5e7c3e8",
+      "prov-u28-timing-guided-perfective-2": "7bac1b521a8bf51e48a25af9adf518bd844391d098723752e0e6b07ad5e7c3e8",
+      "prov-u28-timing-guided-perfective-3": "7bac1b521a8bf51e48a25af9adf518bd844391d098723752e0e6b07ad5e7c3e8"
+    },
+    "implementationCommit": "08d94c67628ec1fede5cafd2aa310aae4cecd6e9",
+    "newPackDigest": "da3f9202e95f29b1c9d9e3945193a17ab5be4afc7d7c7518d8df4f2659888eaf",
+    "newRepositorySourceDigest": "362a1fbc245d0564526378affdd114ffa4166a5814792a38224842cbe3cff66b",
+    "unitReviewBindings": [
+      {
+        "unitNumber": 1,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+        "mappingPackageDigest": "b85c056f7c940f045fcb9270edcfda31371ae36f7277c75b673158fcc52872d0"
+      },
+      {
+        "unitNumber": 2,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "4fd67bff0431a11416115de023e076c52b7879304fc4a98b508d871170703e9c",
+        "mappingPackageDigest": "def2280a90229cec52750f12cb7dc2f7564df8508c113a69cf6ed585cee1c0c6"
+      },
+      {
+        "unitNumber": 3,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "5480d8e87a1651d1bc16ad6c5a0856724f7bad1b746a62bbfab2bb60f3cc3e0b",
+        "mappingPackageDigest": "e40e0ce030f9221b6e2fceba66fe946d85ad172703c47bd34d795e77e43120b4"
+      },
+      {
+        "unitNumber": 4,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "1ebcde1ebabf867b08e137a96bf30f56cccbb0ea85cfd8ecb54cee463a79bf11",
+        "mappingPackageDigest": "889c15ed7bf5d3189af391210f35bae5c57a9fd9c9dc3b3a439e8ebc1143b6fd"
+      },
+      {
+        "unitNumber": 5,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "3c9149de87feeda96f64e195f3dab0428700049f3a7342e4ba764191a16db141",
+        "mappingPackageDigest": "2a08c3d25c46aa6820a3798cafb90e415a873dbaa13bb003c42f330d15fe40ec"
+      },
+      {
+        "unitNumber": 6,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "936f868f09c20b9cf58d7b4e06b3920c37d9acae153836522e4e5b9ef2cafa70",
+        "mappingPackageDigest": "f95e0c2f351ec7cba23cdb09b87274bb97f2e392dd783ad59c2978ed58f63b15"
+      },
+      {
+        "unitNumber": 7,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "3999906034a7cc8baca24f2aa063320bf6927663f5f62e19e8957167206f520a",
+        "mappingPackageDigest": "e39515585eea5b131797f0c93ce3508ee99b27206cc21070675d06aa975373c0"
+      },
+      {
+        "unitNumber": 8,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "96b3a661d0ad5edd55ed44e2890a88250081275a7881713c9daf37ed94d7f42a",
+        "mappingPackageDigest": "3e6c6b7d1ed5142212fe254e14d7d6ebb9ecdf862b9dce921a415ba8e45411f1"
+      },
+      {
+        "unitNumber": 9,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "db6599afa744df79762a78f3d56dc0190ec2ca886343a020afbc6c3816de7696",
+        "mappingPackageDigest": "44199859a34f129c83c22e0e058e305784913077a569025b871abdd1a6a707bf"
+      },
+      {
+        "unitNumber": 10,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "3ae5a3b41bc970ef43589ace5929e65818fa620c8660f0bd1c4de5275667cf84",
+        "mappingPackageDigest": "57676882eb615fb046a9a5e2429f1d97bf6fcf54010d7ae287cdfc456bcfca52"
+      },
+      {
+        "unitNumber": 11,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "35de2337c00321867e4c30871b048181738017a79babc4f0135ad4131e1b6c69",
+        "mappingPackageDigest": "61b1d9c77882225528ca0d0f68a44efa13c68605efdaed0e6abb8e1b519db587"
+      },
+      {
+        "unitNumber": 12,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97",
+        "mappingPackageDigest": "0747489371acaab80787db42f08f6d4f5479e6186a2c9415052df484324e37d3"
+      },
+      {
+        "unitNumber": 13,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "7385fdd118b5f5cb988ad00832614fa4f15835e26dbbb30cfbbf9379f2340d54",
+        "mappingPackageDigest": "e8ca3b0ba9b6a48acc54ea18e10a6e6fb1291698252fcbc35b02dbf2a820deb4"
+      },
+      {
+        "unitNumber": 14,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "9e136e9af2fe3611d6862fa46e3217f85ad45c8b23ad622eec6f36e48ab97f38",
+        "mappingPackageDigest": "d59ce00b8c97b8610770ad1409daa9584e520ddab3c53a0b539e46b4a0162367"
+      },
+      {
+        "unitNumber": 15,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "ea945a9c9cd01a30db3522794b9df36c5a4fc291092a153da0672bb4b8a9a6bd",
+        "mappingPackageDigest": "7228dd28cc3954cb8810a77b81ad72f55fa4e51a64d669fd691cd61a120d710c"
+      },
+      {
+        "unitNumber": 16,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "31893860b30df7c38248356c9014db1a361110f7a8a51ce53ae7ed6fd61bae87",
+        "mappingPackageDigest": "f74c6fa2206f8faad47ad15e91b8dce61f886293f64d9a3f2e47947b2d5db8e7"
+      },
+      {
+        "unitNumber": 17,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "415d0ecc0e4e8ce649dff17aef09851beddc39f191f6bedf783af07904481c62",
+        "mappingPackageDigest": "724a3220ec28b620687871fbca1639cc8e64b58fed7fcfe8ba1a29bdf39d6328"
+      },
+      {
+        "unitNumber": 18,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "603827ede7e8394cef33bf1af9fb4ef6217a80f0e6624f1bd385e4a0766b69ac",
+        "mappingPackageDigest": "f195680e986e1c1069418022707886a4b11b4fe9cf8410e9e8b78e71525008bb"
+      },
+      {
+        "unitNumber": 19,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "3096baba4cdc192ac7d701f6eedd3c8ca0be12c54ab64efa52b0c25fdbf83a5e",
+        "mappingPackageDigest": "56534b156e7412d1bd8e51bf493e8d80f4b58461446382483a8ed118681dd6b2"
+      },
+      {
+        "unitNumber": 20,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "6c11d3dd467846f5aabf034024f7d27d3ed9a5cc9eec4a8462cd8be3c54069eb",
+        "mappingPackageDigest": "f24f256481096bcc5f47bcb849f053bfda59fc67e670492c6b4e7a42b514a8c9"
+      },
+      {
+        "unitNumber": 21,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "987a27a7a3de52fa7965c6b81b5ef3ab74221b62d96f52b98e5b093c8e39ae56",
+        "mappingPackageDigest": "a81fd110700d8cef3f88b5c34642feb7792e0bc851b2e13f08acba87969eab0e"
+      },
+      {
+        "unitNumber": 22,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "886c572c8d1adf2e0e508fe20e872afd81c49510db28bf46d2c16823c5f83f08",
+        "mappingPackageDigest": "135262f03abc4c4ef1dad6c992bbbf53993657e3ce3af4fe789fadcbebbff021"
+      },
+      {
+        "unitNumber": 23,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "e7cf730b6ed8317979d7c9f59c23b360f28081d0461fe7a0864643a3d855f683",
+        "mappingPackageDigest": "968d763b963eb028d821bb426f6c906c079a6266184e4f89d79d21fa34699e95"
+      },
+      {
+        "unitNumber": 24,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "d5cb2b37f1000c8728b529e4167f3ab06fb216cb12c7a6d317531f1b309c2e66",
+        "mappingPackageDigest": "dc6f9ac41a8520dc647df90313e05e547245bfa31fe3b2e883821f3591a24248"
+      },
+      {
+        "unitNumber": 25,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "57470dadfa8a6184a38538a4bae84430e8e6d6ba2ad491d1e926690777050142",
+        "mappingPackageDigest": "239e966c5d5b4f00ea70616e8ec949d583bb9406407438ab7f04df9fc363bf31"
+      },
+      {
+        "unitNumber": 26,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "379cd55838be8daeac22805558909023411acbb1db37dc41c6090fd8425ae902",
+        "mappingPackageDigest": "c15db22cc82dcfa6c49d6d0e50beea0f90b16dfc4db90777623e99d540790489"
+      },
+      {
+        "unitNumber": 27,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "25a7461f907707d5c067a9ab9aac9fd604c988a4efefa545ac82e918b8f28693",
+        "mappingPackageDigest": "3924f3a8ac211579b4db3e387cb48632d27e9b41925e227b63b004bf652a3bc0"
+      },
+      {
+        "unitNumber": 28,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "02dcc55155d60b9b07cf78391d01b392bcd236c99b6c4729fe7fca6075b96ffb",
+        "mappingPackageDigest": "0fb9199bfef05acc54935be340710bd53e19fcd6066349300e09c29fb4b035e8"
+      },
+      {
+        "unitNumber": 29,
+        "changedFields": [
+          "contentReviewDigest",
+          "curriculumSourceCommit",
+          "packContentReviewDigest",
+          "records",
+          "repositorySourceDigest",
+          "reviewPackageDigest"
+        ],
+        "contentReviewDigest": "b08ed4ce32daa1c702e1844d43b52d8850eceeea90fe0c4501d0c8c8f0d41589",
+        "mappingPackageDigest": "a7ebe370698a0dffe4f0311ccfbfff6f217171ffab7dda232447d4b62e2b4071"
+      },
+      {
+        "unitNumber": 30,
+        "changedFields": [
+          "packContentReviewDigest",
+          "repositorySourceDigest"
+        ],
+        "contentReviewDigest": "9e453a1050dc3a25959271b300c68c64bb293ba9f34a40a9d76aaf3e0ce3f02e",
+        "mappingPackageDigest": "97f4c8beeb1d0e6827b94bedc1e379381c763c2c3522013890b75802630440a2"
+      }
+    ],
+    "oldUnit29Digest": "454026c94347703fa15b6e305bf4319edcc1542e6a9eb786709186b435753501",
+    "newUnit29Digest": "b08ed4ce32daa1c702e1844d43b52d8850eceeea90fe0c4501d0c8c8f0d41589",
+    "currentDigestFixtureFiles": [
+      "app/src/test/java/dev/russiancompanion/v2/BatchECapabilityResearchTest.kt",
+      "app/src/test/java/dev/russiancompanion/v2/V2RebuildTest.kt",
+      "app/src/test/java/dev/russiancompanion/v2/audit/OwnerGovernanceDecisionTest.kt"
+    ],
+    "oldUnit29ReviewPackageDigest": "2d3a8b3cdf53c88aab9cf389a8750cab1146ba02ca3d5ee47a4690ab8353446f",
+    "newUnit29ReviewPackageDigest": "ed3fe38fef3d30bcb4c85f2ac87ddc0ce19ddf69bd272316ddee4d262ce511dd",
+    "currentReviewPackageFixtureChange": {
+      "path": "app/src/test/java/dev/russiancompanion/v2/BatchECapabilityResearchTest.kt",
+      "field": "Unit29 reviewPackageDigest",
+      "assertionsPreserved": true
+    }
+  },
+  "externalInitFiles": [
+    {
+      "path": "/workspace/setup/cloud-validation.gradle",
+      "contents": "allprojects {\n    tasks.withType(Test).configureEach {\n        systemProperty 'user.home', '/workspace/java-user-home'\n        systemProperty 'maven.repo.local', '/workspace/.m2/repository' \n        // These screenshot exporters overwrite retained evidence and write to /opt/cursor.\n        exclude '**/VisualReviewCaptureTest*', '**/Units35ChunkCaptureTest*', '**/Units610ChunkCaptureTest*', '**/Units1115GapCaptureTest*'\n        systemProperty 'robolectric.dependency.repo.url', 'https://repo.maven.apache.org/maven2'\n        ['https.proxyHost','https.proxyPort','http.proxyHost','http.proxyPort','http.nonProxyHosts','javax.net.ssl.trustStore'].each { name ->\n            def value = System.getProperty(name)\n            if (value != null) systemProperty name, value\n        }\n    }\n}\n",
+      "sha256": "21c6a0ee2e97cf83c472513ac31c3d2d456e461185384e9b5e58c0fed298d123"
+    },
+    {
+      "path": "/workspace/setup/parallel-tests.gradle",
+      "contents": "allprojects {\n    tasks.withType(Test).configureEach {\n        maxParallelForks = 4\n        maxHeapSize = '1g'\n    }\n}\n",
+      "sha256": "2366eb867708f83db10b39080abff1b45d2e347bab15ce2ec1c95c3d31cf7ff3"
+    }
+  ],
+  "compile": {
+    "mainKotlin": "UP-TO-DATE",
+    "testKotlin": "UP-TO-DATE",
+    "compileDebugSources": "UP-TO-DATE"
+  },
+  "finalSourceInputsUnchangedAfterTesting": true,
+  "inputTrees": {
+    "app/src/main": "d2cd23dd08aabdc3887ae507870de4c2d53f69e0",
+    "app/src/test": "5f5e570a84a1b83624301ed3a45fa63a5641fec6",
+    "app/schemas": "bf24044fda8ca836d62e24e94c537eea0aec8e83",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "review": "aa2a1da0c35fe9c85ad225a4c9d7932a80ca47d8",
+    "release": "ee6951a6e9668ca6f462e3ad05ed22987885cfd8",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "audit/curriculum-readiness": "b7a2fd1e2c02ff63bae9e8e19f12eb381616c2c9",
+    "audit/owner-governance": "362bba837886eb298e92417adcc337456872977e"
+  },
+  "selectedTestSources": [
+    {
+      "path": "app/src/test/java/dev/russiancompanion/release/ReleaseSourceDigestTest.kt",
+      "sha256": "e4c1dd9ac6403d4255233b32737c2c45e457352b498cc24a4871207fab65e762"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/BatchECapabilityResearchTest.kt",
+      "sha256": "aa464eaa3578b12249578ca888657190a43ff94235282526351991d0fa5ff468"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit28TimingTransferTest.kt",
+      "sha256": "fef5d3e35be246cf960e579b6f35b7dae7ecf64272af0a32802eda8c4d06e191"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Units2630SourceIntakeTest.kt",
+      "sha256": "75d9bb386635214ab543311e3e3e971c3091b2f57c7742524957721dbf4a8acc"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/V2RebuildTest.kt",
+      "sha256": "3b58888ea7b7232baeaba8203ba51bbb026dd61d9593459c37a8fef55742fe9f"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit28CumulativeReviewTest.kt",
+      "sha256": "963cbc6bacac57749ba0f7be0a1d6572c911009c9414b6b6a609ee931ef4dc15"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit14ImpersonalRemediationTest.kt",
+      "sha256": "b3c5eb631895167755f494a22287759fe383ed414ad0a1c9dcef4dad2ec5e8d4"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit15ImperativeRemediationTest.kt",
+      "sha256": "7dd5bb9b21e30ce2a6a0c64d591a84a9cc8af438ed693e1759152691f8500846"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit4NominativeRoleTest.kt",
+      "sha256": "8ebc66cacdef1f6c2f3e718583c64da79be5b54bb7a9998a054b7dc0dc101f10"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/CumulativeReviewStorageTest.kt",
+      "sha256": "4f6dc78893719ee83ea136bd6c48362734cb6a9e551bf86504c5095b8aef80d9"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit11AgreementRemediationTest.kt",
+      "sha256": "5c6d4874462550806b8fca49afc07ca2931fab0a8bd48c8f126d84b91f602eac"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit29CumulativeReviewTest.kt",
+      "sha256": "8dd55b674897e3823b1e5ff85018756efaf9d8b58a6e918f7080cf7768072742"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/CumulativeReviewGateTest.kt",
+      "sha256": "b49df9f20bfd17f031cdae8ef8898831bad64d02f0c990912ef6a59b3cdb0876"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/audit/CurriculumReadinessReconciliationTest.kt",
+      "sha256": "687dd1b1712f614b5ea6d7b59d210198e285e55950abb108192e7232bdd6dc23"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/audit/GapClosureDossierTest.kt",
+      "sha256": "83b04ad8935be53116394836efc99da6078b1fe2064f41ee703bb78cdbc043fa"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/audit/OwnerGovernanceDecisionTest.kt",
+      "sha256": "3ed8a6ee70d955a8438cf995bcd7b28b0d2664a17595c24405e54531c3444de9"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/review/UnitReviewPipelineTest.kt",
+      "sha256": "930dc6ce893d75377ce5399fcde093ad0344c63e295fd4f4eda3fac9ccaf3666"
+    }
+  ],
+  "releaseDigestInputBlobs": {
+    "app/src/main": "d2cd23dd08aabdc3887ae507870de4c2d53f69e0",
+    "app/build.gradle.kts": "1a494652bd163a76fd847564847d64aa1384d5fb",
+    "app/schemas": "bf24044fda8ca836d62e24e94c537eea0aec8e83",
+    "build.gradle.kts": "20cac8dd56d320057e467e3e43f51dc9903d6e06",
+    "settings.gradle.kts": "004f7ffa26db733f856ef8f998010ac6e6afe609",
+    "gradle.properties": "af2ca6999c475b0ab49390e866a8b28c0904864d",
+    "gradle/libs.versions.toml": "e5f1d449046d4689870a78bd3142fe72ccaf5499",
+    "gradle/wrapper/gradle-wrapper.properties": "3b5cd2121c774bc6005cc3ca1eb4291c50614022",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs/governance": "0e68f42bb3ea70c6a65ad6ad3c63372a224a2d93",
+    "docs/design": "d0a8df3fbaaea4ef220ce889800b790ef5a8c9e3",
+    ".github/workflows": "9604ad5561d69a0a19d11588165a29090ebed22f",
+    "release/acceptance/DEVICE_ACCEPTANCE.md": "145546ee95a041aa163c961f26f43c7534092720",
+    "release/acceptance/templates": "ecabf45610d7f3e943482651f972b187b1590165"
+  },
+  "scopeDifference": "Current66 replaces prior56 three Unit27 past-instruction methods with thirteen Unit28 timing-transfer methods:ten more,different target/direct-owner/history scope. Earlier scopes are not all rerun and overlapping totals are not summed. Historical initial failures and narrower corrections remain separate.",
+  "scopeSelection": {
+    "newTargetMethods": 7,
+    "earlierPolicies": "All other29 units/earlier policy definitions unchanged;genuine history through28 generated. Two Unit28 completion/history methods rerun;other unchanged gate/backup/runtime methods retain prior receipts,not current passing claims.",
+    "directOwnerMethods": 13,
+    "sourceInventoryOnly": 1152,
+    "completeSuiteProven": false
+  },
+  "next": "Inspect actual Unit30 and complete prior Unit29 teaching/source/rights;repair selected prerequisite before activation when needed.",
+  "performanceObservation": "Each separately copied immutable mutation pack computes its genuine canonical identity index once using unchanged warm implementation;no base identities copied and assertions retained. Prior cold-path timing remains historical,not a production timing measurement.",
+  "legacyRestoreReliabilityFollowup": {
+    "originalFailure": "Expected REPLACED,got UNCHANGED",
+    "unchangedIsolatedPassed": true,
+    "fixtureIsolationAndObservableReplacementStrengthened": true,
+    "sharedJournalRootCauseProven": false,
+    "originalInteractionDisposition": "UNCONFIRMED;retain for independent audit",
+    "reconciliation": "LEGACY_FIXTURE_RECONCILIATION.md"
+  },
+  "unselectedStaticFollowup": "Older matrixUsesCanonicalDigestsReviewsAndDoesNotInventApproval still has stale orphan expectation;not run or claimed passed.",
+  "generationCommands": [
+    {
+      "mode": "reviews",
+      "command": "./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/checkpoint-tools.gradle -Dcheckpoint.mode=reviews renderCheckpointArtifacts --max-workers=4 --console=plain",
+      "log": "REVIEW_REFRESH.txt"
+    },
+    {
+      "mode": "readiness",
+      "command": "./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/checkpoint-tools.gradle -Dcheckpoint.mode=readiness renderCheckpointArtifacts --max-workers=4 --console=plain",
+      "log": "READINESS_REFRESH.txt"
+    }
+  ],
+  "originalDiagnosticFiles": [
+    {
+      "path": "received-results/AUDIT_SCOPE_AND_EVIDENCE.json",
+      "bytes": 64713,
+      "sha256": "ede9d04c1df26f2612f0210dfe0916a17dbe687ac9612f6858ee9c5025f20563",
+      "verifiedSha256": "ede9d04c1df26f2612f0210dfe0916a17dbe687ac9612f6858ee9c5025f20563"
+    },
+    {
+      "path": "received-results/CODEX_RETURN_HANDOFF.md",
+      "bytes": 6635,
+      "sha256": "a52afc6e6db45b10bceaca78034ba5697328e8b534f225de90fbb9c7b0b29fd0",
+      "verifiedSha256": "a52afc6e6db45b10bceaca78034ba5697328e8b534f225de90fbb9c7b0b29fd0"
+    },
+    {
+      "path": "received-results/FINDINGS.csv",
+      "bytes": 20729,
+      "sha256": "f8e6a593545a24f5f02702d59ac7d63ef3b7f796ec71dc0a06063fa491d21ace",
+      "verifiedSha256": "f8e6a593545a24f5f02702d59ac7d63ef3b7f796ec71dc0a06063fa491d21ace"
+    },
+    {
+      "path": "received-results/INDEPENDENT_AUDIT_REPORT.md",
+      "bytes": 31981,
+      "sha256": "fd9ad913e312e1f6b332cd5a21ab90a783a809c8443f11c486c99ab9f0b4ad40",
+      "verifiedSha256": "fd9ad913e312e1f6b332cd5a21ab90a783a809c8443f11c486c99ab9f0b4ad40"
+    },
+    {
+      "path": "received-results/ITEM_ASSESSMENT_AUDIT.csv",
+      "bytes": 372802,
+      "sha256": "2637ecf4f205610710dfa42ff9878ba592f0284a2f3fd46fbd6d297d32c37ddd",
+      "verifiedSha256": "2637ecf4f205610710dfa42ff9878ba592f0284a2f3fd46fbd6d297d32c37ddd"
+    },
+    {
+      "path": "received-results/REQUIREMENTS_MATRIX.csv",
+      "bytes": 81719,
+      "sha256": "3f0770ad922a99da67ea533b7e799a0a3951f91abaf528d70b0a9b1a1db52c1e",
+      "verifiedSha256": "3f0770ad922a99da67ea533b7e799a0a3951f91abaf528d70b0a9b1a1db52c1e"
+    },
+    {
+      "path": "received-results/SOURCE_AND_BINDING_REVIEW.json",
+      "bytes": 32046,
+      "sha256": "59d00b0b7163c741adff98ea884bc10972eabe258d4ebdc18d8e7aa22a6c3ad0",
+      "verifiedSha256": "59d00b0b7163c741adff98ea884bc10972eabe258d4ebdc18d8e7aa22a6c3ad0"
+    },
+    {
+      "path": "received-results/TARGET_75_DISPOSITIONS.csv",
+      "bytes": 32672,
+      "sha256": "76fa43dd958a3e9b6459601b0bd22c113b4b1b376af6cc8f6d772e18ef8a126d",
+      "verifiedSha256": "76fa43dd958a3e9b6459601b0bd22c113b4b1b376af6cc8f6d772e18ef8a126d"
+    },
+    {
+      "path": "received-results/UNIT_COVERAGE.csv",
+      "bytes": 27754,
+      "sha256": "794828fc9d6de4c5c5cc85df40630ba0bd4b136d98b107b795887999a04440bd",
+      "verifiedSha256": "794828fc9d6de4c5c5cc85df40630ba0bd4b136d98b107b795887999a04440bd"
+    }
+  ],
+  "generationHelperReconstruction": {
+    "readme": "../ia003-unit20-gate/GENERATION_SUPPORT/README.md",
+    "identities": {
+      "ReviewCheckpointTools.java": {
+        "sourcePath": "/workspace/setup/checkpoint-tools/ReviewCheckpointTools.java",
+        "sourceSha256": "de1bb1d8d8d00d67be258fb7a767c849795911eb3bb95cf1046d6149d9d45802",
+        "retainedSha256": "de1bb1d8d8d00d67be258fb7a767c849795911eb3bb95cf1046d6149d9d45802"
+      },
+      "checkpoint-tools.gradle": {
+        "sourcePath": "/workspace/setup/checkpoint-tools.gradle",
+        "sourceSha256": "9abea9908af292b57e25d0743d53a00be1443b2b61f473cef5e66d97dd724d67",
+        "retainedSha256": "9abea9908af292b57e25d0743d53a00be1443b2b61f473cef5e66d97dd724d67"
+      },
+      "reconstructionCompilation": {
+        "command": "source /workspace/setup/android-env.sh\nmkdir -p /workspace/setup/unit20-helper-rebuild\njavac -d /workspace/setup/unit20-helper-rebuild audit/independent-gpt61-2026-10-12/ia003-unit20-gate/GENERATION_SUPPORT/ReviewCheckpointTools.java",
+        "exitCode": 0,
+        "testedHelperClassSha256": "42b17a6c892e608eb83cb917c52287ac270fdf6fb0c566d0854571767f05734b",
+        "reconstructedClassSha256": "42b17a6c892e608eb83cb917c52287ac270fdf6fb0c566d0854571767f05734b",
+        "byteIdentical": true,
+        "generationRerunDuringTests": false
+      }
+    }
+  },
+  "generationWhitespaceObservation": "git diff --check before the tested binding commit reported trailing tabs on the generated Unit29 advancement TSV row. They preserve empty worksheet columns from the canonical generator;not stripped or manually edited. Final receipt-only diff check is separate.",
+  "verifiedSupportingProvenanceRecords": [
+    {
+      "itemId": "prov-u28-timing-native-perfective-clause",
+      "sourceId": "src-ruwikisource-vechera-5336197",
+      "sourceRevision": "5336197",
+      "sourceHash": "f5a8d1c819401c77eafb9cce88010acdfbee067ae3f9da640bc55ba464bb2c16",
+      "contentHash": "0144dd9e65cc85b506fec9e0a88c9ab6fc00d933aa21fd5b413977d6161cd316",
+      "originalSourceTextRef": "f5a8d1c819401c77eafb9cce88010acdfbee067ae3f9da640bc55ba464bb2c16",
+      "licenseId": "Public domain"
+    },
+    {
+      "itemId": "prov-u28-timing-native-perfective-aspect",
+      "sourceId": "src-openrussian-50e210c4",
+      "sourceRevision": "50e210c4803237779cb562bc1abcea529066031c",
+      "sourceHash": "4b77e66fd55de22edba1168e4be7de68d6222fbeeb2b789be1e39952aed0d225",
+      "contentHash": "11142462a3fd99fc462fd043af4dea0123fa5243f08ffb4feacfc0361179f5d8",
+      "originalSourceTextRef": "4b77e66fd55de22edba1168e4be7de68d6222fbeeb2b789be1e39952aed0d225",
+      "licenseId": "CC BY-SA 4.0"
+    }
+  ],
+  "selectedContextKind": "Existing original content-audit research synthesis with retained native context;not a Wikipedia or private-book quotation. Distinct source/rights routes remain qualified-review pending.",
+  "files": [
+    {
+      "path": "ENVIRONMENT_SETTINGS_READ.json",
+      "sha256": "88b52e90569e28e88f0ac86cde8531e164b1b21dbcd731f08b937d2785a15c1b",
+      "bytes": 734
+    },
+    {
+      "path": "FINAL_LINT.xml",
+      "sha256": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6",
+      "bytes": 31476
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.release.ReleaseSourceDigestTest.xml",
+      "sha256": "5941bb72414249da884af2fc8866c0fc3b92eacd0ae3eecdca2b382070e18cbc",
+      "bytes": 499
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.BatchECapabilityResearchTest.xml",
+      "sha256": "0bf0ca31364f6a8880ffff7341002c66773f360f54b546f1bcc152f7f6363aca",
+      "bytes": 487
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.CumulativeReviewGateTest.xml",
+      "sha256": "33495766a2b55d4561a7f737a9500fe618591a70028c12bdfffd3d5c3ad7a122",
+      "bytes": 2481
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.CumulativeReviewStorageTest.xml",
+      "sha256": "692c079e18b10bbb33b6c6666c1df4a91495f9d65d140f07ff753ff54635f295",
+      "bytes": 377105
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.Unit11AgreementRemediationTest.xml",
+      "sha256": "b081e2b36ffeade11d41f8e91b60af32a37fa94f7b1a23898e849ae6efd0f109",
+      "bytes": 517
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.Unit14ImpersonalRemediationTest.xml",
+      "sha256": "63ef69b27363089d5865cc61463e74538e708ac2fa9401ec387779e54f26625f",
+      "bytes": 118261
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.Unit15ImperativeRemediationTest.xml",
+      "sha256": "73ac99eb72415243cbde6c07315be9f1b0ebd5ff3139611547fdc56bb4886ac3",
+      "bytes": 655
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.Unit28CumulativeReviewTest.xml",
+      "sha256": "7c716242138d725ed2132a56c49eb4896ab3e266051f23f850233d959c8362b7",
+      "bytes": 35503
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.Unit28TimingTransferTest.xml",
+      "sha256": "4c31871d0ee6a3e46378b727de4d19e94446d0c03aedac7241d24f357a800dbb",
+      "bytes": 119378
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.Unit29CumulativeReviewTest.xml",
+      "sha256": "20d1a075e5f6d628d31834a01fc61abfb96a44fc9aa9e3a8f5f957ab4300eff3",
+      "bytes": 3889
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.Unit4NominativeRoleTest.xml",
+      "sha256": "d4bae670b145d355470d77160f552adef7c41d4d5dc7ae91bc033ae6c2185bbe",
+      "bytes": 150402
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.Units2630SourceIntakeTest.xml",
+      "sha256": "214eac0df044f44c7b3b1f02c66e3f77c1a3e3a83a2210c9218d790e78a4fb33",
+      "bytes": 484
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.V2RebuildTest.xml",
+      "sha256": "8428f540aa03fafb2fbaeba9340da9ab96a80d5b4ea43bf1e265781dc9231d3d",
+      "bytes": 519
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest.xml",
+      "sha256": "20d9fef879b9d79930e7546e8bbe060ac8ee3628d1a82a3ac7c161aa7fd43865",
+      "bytes": 964
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.audit.GapClosureDossierTest.xml",
+      "sha256": "d69056a2298cd4e421cb9e91f2dacd000705ccc4d2077dff53e38d863e40f85b",
+      "bytes": 495
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest.xml",
+      "sha256": "6256d6a31cba330cc77290544eb7b7260d4a4d07053b05b02ccee87f0c09a154",
+      "bytes": 504
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.review.UnitReviewPipelineTest.xml",
+      "sha256": "2d3e396d0215352378b9013a198b36c069915c339a943ccd1f3aa1fb680ebb20",
+      "bytes": 481
+    },
+    {
+      "path": "FINAL_RUN.txt",
+      "sha256": "5b1d2dbeaa94470bdb857bd5ede9a4c67ff6020c6ca8014005209d677d72be29",
+      "bytes": 3721
+    },
+    {
+      "path": "READINESS_REFRESH.txt",
+      "sha256": "057d4918b7a2adc6b812b4aac7a6242fac7db3b28d63287740eaa70d0924f4d8",
+      "bytes": 2492
+    },
+    {
+      "path": "REVIEW_REFRESH.txt",
+      "sha256": "9f8c521636b6c1b720dbe8192745d648f8e7975efd302efd36f35c8fff9f603c",
+      "bytes": 4420
+    },
+    {
+      "path": "SOURCE_REVIEW.md",
+      "sha256": "8a04c795797c14419ba2d7fb3840a50b176f0a796fa6fba9f5c1bd48876f855d",
+      "bytes": 5626
+    },
+    {
+      "path": "UNIT29_POLICY_ACTIVATION.json",
+      "sha256": "a0eebcee57ba170c680a91e0de46d673b2d1849385272831b0e58a3f4e92ea20",
+      "bytes": 57139
+    },
+    {
+      "path": "verify.sh",
+      "sha256": "677a0ff5288b84363b1d8bdfb1eca0a871b4234629142d2badc59f1ed3a8cd3b",
+      "bytes": 1837
+    }
+  ]
+}
