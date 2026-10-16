@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit23TimeInstructionTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-16T00:40:12.511Z" hostname="f5c5dd6b855f" time="18.681">
+  <properties/>
+  <testcase name="omittedContinueAndEmptyStepListsHaveIdenticalTypedMeaning" classname="dev.russiancompanion.v2.Unit23TimeInstructionTest" time="6.206"/>
+  <testcase name="checkedMeaningsKeepAdmittedRelationshipsAndWrongKeysStillFail" classname="dev.russiancompanion.v2.Unit23TimeInstructionTest" time="11.339"/>
+  <testcase name="eachTemporalContrastPrecedesPracticeAndReturnsInCompleteRemediation" classname="dev.russiancompanion.v2.Unit23TimeInstructionTest" time="0.622"/>
+  <testcase name="intervalCaseAndCompletionAreNotConfusedWithDurationOrNoncompletion" classname="dev.russiancompanion.v2.Unit23TimeInstructionTest" time="0.514"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
