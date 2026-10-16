@@ -1,0 +1,116 @@
+{
+  "sourceCommit": "057367e58751c4db86af05f5b84b463537ffa3c7",
+  "pendingChange": "Unit3 canonical ancestry pointer to057367e5",
+  "command": "source /workspace/setup/android-env.sh; ./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/gender-validator.gradle validateGenderPack --max-workers=4 --console=plain",
+  "exitCode": 1,
+  "failurePhase": "compileDebugUnitTestKotlin",
+  "appTestsExecuted": 0,
+  "packValidatorExecuted": false,
+  "cause": "An inline // explanation swallowed the same-line database-name declaration in mechanical historical-source edits. Replaced with a block comment;assertion logic unchanged.",
+  "fixedSites": [
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit24CumulativeReviewTest.kt",
+      "sites": 2
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit28CumulativeReviewTest.kt",
+      "sites": 2
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit20CumulativeReviewTest.kt",
+      "sites": 2
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit6CumulativeReviewTest.kt",
+      "sites": 2
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit23CumulativeReviewTest.kt",
+      "sites": 2
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit26CumulativeReviewTest.kt",
+      "sites": 2
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit22CumulativeReviewTest.kt",
+      "sites": 2
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit19CumulativeReviewTest.kt",
+      "sites": 2
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit25CumulativeReviewTest.kt",
+      "sites": 2
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit16CumulativeReviewTest.kt",
+      "sites": 2
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit12CumulativeReviewTest.kt",
+      "sites": 2
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit10CumulativeReviewTest.kt",
+      "sites": 2
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit29CumulativeReviewTest.kt",
+      "sites": 2
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit8CumulativeReviewTest.kt",
+      "sites": 2
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit27CumulativeReviewTest.kt",
+      "sites": 2
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit13CumulativeReviewTest.kt",
+      "sites": 2
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit30CumulativeReviewTest.kt",
+      "sites": 2
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit14CumulativeReviewTest.kt",
+      "sites": 2
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit7CumulativeReviewTest.kt",
+      "sites": 2
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit15CumulativeReviewTest.kt",
+      "sites": 2
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit5CumulativeReviewTest.kt",
+      "sites": 2
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit9CumulativeReviewTest.kt",
+      "sites": 2
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit21CumulativeReviewTest.kt",
+      "sites": 2
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit18CumulativeReviewTest.kt",
+      "sites": 2
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit11CumulativeReviewTest.kt",
+      "sites": 2
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit17CumulativeReviewTest.kt",
+      "sites": 2
+    }
+  ]
+}

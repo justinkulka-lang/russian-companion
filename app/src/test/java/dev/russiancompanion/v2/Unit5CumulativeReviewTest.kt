@@ -87,7 +87,7 @@ class Unit5CumulativeReviewTest {
 
     @Test fun schema11OrdinaryLegacyRowsWithFalseActivationMarkerSurviveReopenWithoutSyntheticReview() {
         val old = oldPack("1b7f2cc24905df96bc6e00cf8ab69687905076f8")
-        val p = Unit3GenderTeachingTest.preTeachingCorrectionPack() // Historical activation-only source; current changed-teaching refusal has separate coverage.; val name = "unit5-old-${System.nanoTime()}.db"
+        val p = Unit3GenderTeachingTest.preTeachingCorrectionPack() /* Historical activation-only source; current changed-teaching refusal has separate coverage. */; val name = "unit5-old-${System.nanoTime()}.db"
         try {
             LocalStore.openNamed(context(), name).use { s ->
                 prepare(old, s); s.v2CompleteUnit(5, "old-completion")
@@ -117,7 +117,7 @@ class Unit5CumulativeReviewTest {
     }
 
     @Test fun oldFormatOneAndTwoRestoreExactPrePolicyWorkWithoutAnyNewReviewCredit() {
-        val old = oldPack("20a227817562e3a8645488fd52db2e7589713a7a"); val p = Unit3GenderTeachingTest.preTeachingCorrectionPack() // Historical activation-only source; current changed-teaching refusal has separate coverage.
+        val old = oldPack("20a227817562e3a8645488fd52db2e7589713a7a"); val p = Unit3GenderTeachingTest.preTeachingCorrectionPack() /* Historical activation-only source; current changed-teaching refusal has separate coverage. */
         LocalStore.openInMemory(context()).use { source ->
             for (n in 1..5) { ordinary(old, source, n); source.v2CompleteUnit(n, "historical") }
             for (version in 1..2) {
