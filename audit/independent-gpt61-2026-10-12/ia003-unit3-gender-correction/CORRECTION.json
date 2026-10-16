@@ -1398,10 +1398,13 @@
     "prov-u3-gender-field-дверь",
     "prov-ca-u3-gender-u3-st-teach-gender-2-complete-v1",
     "prov-ca-u3-gender-u3-st-teach-gender-3-complete-v1",
-    "prov-ca-u3-gender-u3-st-rem-gender-complete-v1"
+    "prov-ca-u3-gender-u3-st-rem-gender-complete-v1",
+    "prov-ca-u3-gender-u3-st-teach-gender-2-heading-v1",
+    "prov-ca-u3-gender-u3-st-teach-gender-3-heading-v1",
+    "prov-ca-u3-gender-u3-st-rem-gender-heading-v1"
   ],
   "oldProvenanceCount": 6914,
-  "newProvenanceCount": 6919,
+  "newProvenanceCount": 6922,
   "originalProvenancePreserved": true,
   "allScoredItemsUnchanged": true,
   "allOtherUnitsUnchanged": true,

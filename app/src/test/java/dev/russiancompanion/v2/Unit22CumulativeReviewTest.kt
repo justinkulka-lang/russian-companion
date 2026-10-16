@@ -105,7 +105,7 @@ class Unit22CumulativeReviewTest {
 
     @Test fun schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot() {
         val old = oldPack("03c56547eff4e173e29a182912186fa96ace301d")
-        val p = pack(); val name = "unit22-old-${System.nanoTime()}.db"
+        val p = Unit3GenderTeachingTest.preTeachingCorrectionPack() // Historical activation-only source; current changed-teaching refusal has separate coverage.; val name = "unit22-old-${System.nanoTime()}.db"
         try {
             LocalStore.openNamed(context(), name).use { s ->
                 prepare(old, s); s.v2CompleteUnit(22, "old-completion")
@@ -141,7 +141,7 @@ class Unit22CumulativeReviewTest {
     }
 
     @Test fun oldFormatOneAndTwoKeepRawUnit22HistoryWithoutInventingCreditOrRepairingUnit11() {
-        val old = oldPack("20a227817562e3a8645488fd52db2e7589713a7a"); val p = pack()
+        val old = oldPack("20a227817562e3a8645488fd52db2e7589713a7a"); val p = Unit3GenderTeachingTest.preTeachingCorrectionPack() // Historical activation-only source; current changed-teaching refusal has separate coverage.
         isolatedStore("case").use { source ->
             for (n in 1..22) { ordinary(old, source, n); source.v2CompleteUnit(n, "historical") }
             for (version in 1..2) {

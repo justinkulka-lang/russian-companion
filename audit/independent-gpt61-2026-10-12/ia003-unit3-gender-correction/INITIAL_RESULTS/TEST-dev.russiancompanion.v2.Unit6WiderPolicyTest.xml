@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit6WiderPolicyTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-16T19:31:01.208Z" hostname="f5c5dd6b855f" time="414.421">
+  <properties/>
+  <testcase name="newSubjectUiRepairsFullTeachingAndRequiresAllThreeFreshAssignedAnswers" classname="dev.russiancompanion.v2.Unit6WiderPolicyTest" time="16.491"/>
+  <testcase name="genuineLegacyUiKeepsTwoChecksAndBoundNounRepairInsteadOfNewObligation" classname="dev.russiancompanion.v2.Unit6WiderPolicyTest" time="9.882"/>
+  <testcase name="currentAndDownstreamOldSnapshotsRejectChangedContentAndAcceptOnlyExactPriorDeclaration" classname="dev.russiancompanion.v2.Unit6WiderPolicyTest" time="376.241"/>
+  <testcase name="versionsRolesLinksEpochAndPacklessWritesFailClosedWithoutChangingHistory" classname="dev.russiancompanion.v2.Unit6WiderPolicyTest" time="0.628"/>
+  <testcase name="genuineOldPartialTasksUseOwnEligibilityAndActualLegacyPolicyOnAdvance" classname="dev.russiancompanion.v2.Unit6WiderPolicyTest" time="2.63"/>
+  <testcase name="genuinePriorPackDeclaresV1AndCannotAcceptFutureV2Tasks" classname="dev.russiancompanion.v2.Unit6WiderPolicyTest" time="1.989"/>
+  <testcase name="threeFreshSlotsUseBothNonFirstCandidatesAndRequireAllAnswersBeforeActualAdvance" classname="dev.russiancompanion.v2.Unit6WiderPolicyTest" time="6.541"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+]]></system-err>
+</testsuite>

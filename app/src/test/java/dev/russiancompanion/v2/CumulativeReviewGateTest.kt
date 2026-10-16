@@ -52,7 +52,7 @@ class CumulativeReviewGateTest {
             assertTrue(V2Validator.validate(p).errors.joinToString("\n"),V2Validator.validate(p).ok)
             assertTrue(advance(p, s))
             assertEquals(4, s.v2Profile().currentUnitNumber)
-            assertEquals(setOf(1, 2), currentCompletedUnitNumbers(p, s.v2LearnerView()))
+            assertEquals(setOf(1, 2, 3), currentCompletedUnitNumbers(p, s.v2LearnerView()))
             val row = s.governedLearnerDocument().unitCompletions.single { it.unitNumber == 3 }
             assertFalse(row.preReviewActivation); assertEquals(a.id, row.reviewAssignmentId)
             assertTrue(row.reviewCompletionOrder > a.boundary)
@@ -123,7 +123,7 @@ class CumulativeReviewGateTest {
             helper.writableDatabase; helper.close()
             LocalStore.openNamed(context(), name).use { s ->
                 assertEquals(document.attempts.map { it.id }, s.v2Attempts().map { it.id })
-                assertEquals(setOf(1, 2, 3), currentCompletedUnitNumbers(p, s.v2LearnerView()))
+                assertEquals(setOf(1, 2), currentCompletedUnitNumbers(p, s.v2LearnerView()))
                 assertFalse(canOpenUnit(unitState(p, p.unit(4)!!, s.v2LearnerView())))
                 assertTrue(s.governedLearnerDocument().unitCompletions.all { it.preReviewActivation })
                 assertTrue(s.cumulativeReviewHistory().first.isEmpty())

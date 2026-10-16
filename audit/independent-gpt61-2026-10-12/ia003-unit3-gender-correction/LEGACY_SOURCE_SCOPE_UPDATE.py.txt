@@ -1,0 +1,10 @@
+from pathlib import Path
+import re,json,hashlib
+r=Path('/workspace/russian-companion');d=r/'audit/independent-gpt61-2026-10-12/ia003-unit3-gender-correction';changes=[]
+for number in range(5,31):
+ f=r/f'app/src/test/java/dev/russiancompanion/v2/Unit{number}CumulativeReviewTest.kt';s=f.read_text();before=s;sections=list(re.finditer(r'@Test fun ((?:schema11|oldFormat)\w+)',s));assert len(sections)==2,(number,len(sections))
+ for match in reversed(sections):
+  a=match.start();b=s.find('@Test fun ',match.end());b=len(s) if b<0 else b;part=s[a:b];assert part.count('val p = pack()')==1,(number,match[1]);part=part.replace('val p = pack()','val p = Unit3GenderTeachingTest.preTeachingCorrectionPack() // Historical activation-only source; current changed-teaching refusal has separate coverage.',1);s=s[:a]+part+s[b:]
+ f.write_text(s);changes.append({'path':str(f.relative_to(r)),'methods':[m[1] for m in sections],'beforeSha256':hashlib.sha256(before.encode()).hexdigest(),'afterSha256':hashlib.sha256(s.encode()).hexdigest(),'assertionsUnchanged':True,'executionClaim':'NOT_EXECUTED_BY_THIS_MECHANICAL_UPDATE'})
+p=d/'HISTORY_TEST_SCOPE_CHANGES.json';j=json.loads(p.read_text());j['laterLegacySourceBindings']=changes;j['laterLegacyMethodsMechanicallyUpdated']=52;j['laterLegacyAssertionLogicUnchanged']=True;j['laterLegacyExecutionClaim']='Only selected methods listed in XML are executed; this52-method source maintenance is not a passing-test count.';p.write_text(json.dumps(j,indent=2)+'\n')
+print('Bound52 later activation-only legacy methods to exact archived teaching;assertions intact;not claimed executed')

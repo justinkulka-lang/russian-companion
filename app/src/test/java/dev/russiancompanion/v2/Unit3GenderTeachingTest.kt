@@ -43,11 +43,11 @@ class Unit3GenderTeachingTest {
     @Test fun correctionHasAnExactWhitelistAndNoScoredOrPolicyChanges() {
         val p = current; val old = previous
         assertEquals(declaredAfterUnit(), p.unit(3))
-        assertEquals(old, p.copy(units = old.units, examples = p.examples.dropLast(2), provenanceRecords = p.provenanceRecords.dropLast(5)))
+        assertEquals(old, p.copy(units = old.units, examples = p.examples.dropLast(2), provenanceRecords = p.provenanceRecords.dropLast(8)))
         assertEquals(old.units.filter { it.number != 3 }, p.units.filter { it.number != 3 })
         assertEquals(old.unit(3)!!.advancement, p.unit(3)!!.advancement)
         assertEquals(12, p.unit(3)!!.advancement!!.minimumDistinctChecks)
-        assertEquals(old.items, p.items); assertEquals(old.provenanceRecords, p.provenanceRecords.dropLast(5))
+        assertEquals(old.items, p.items); assertEquals(old.provenanceRecords, p.provenanceRecords.dropLast(8))
         assertEquals(listOf("masculine", "feminine"), p.provenanceRecords.filter { it.itemId.startsWith("prov-u3-gender-field-") }.map { it.shippedText })
         assertEquals(listOf("u3-i-gender-город"), Unit4CumulativeReviewPolicy.definition.pool[1].candidateItemIds)
         assertEquals("u3-st-teach-gender-2", Unit4CumulativeReviewPolicy.definition.pool[1].remediationStepId)
@@ -69,7 +69,7 @@ class Unit3GenderTeachingTest {
                 assertEquals(original.attempts, store.governedLearnerDocument().attempts)
                 assertEquals(setOf(1, 2), currentCompletedUnitNumbers(p, store.v2LearnerView()))
                 assertFalse(ordinaryUnitRequirements(p, p.unit(3)!!, store.v2LearnerView()).allowed)
-                assertNull(currentCumulativeAssignment(p, store.v2LearnerView(), 3))
+                assertEquals(original.reviewAssignments.singleOrNull { it.targetUnit == 3 }, currentCumulativeAssignment(p, store.v2LearnerView(), 3))
                 assertNull(currentCumulativeAssignment(p, store.v2LearnerView(), 4))
                 assertFalse(advancementDecision(p, p.unit(3)!!, store.v2LearnerView()).allowed)
                 if (label == "COMPLETED_UNIT4") assertEquals(setOf(1, 2, 3, 4), currentCompletedUnitNumbers(old, store.v2LearnerView()))
@@ -117,7 +117,8 @@ class Unit3GenderTeachingTest {
                 assertTrue(ordinaryUnitRequirements(p, p.unit(number)!!, store.v2LearnerView()).allowed)
                 assertFalse(advancementDecision(p, p.unit(number)!!, store.v2LearnerView()).allowed)
                 val assignment = store.openCumulativeReview(p, number, store.learnerMutationEpoch())!!
-                assertFalse(old.reviewAssignments.any { it.id == assignment.id })
+                if (number == 3) assertEquals(old.reviewAssignments.single { it.targetUnit == 3 }, assignment)
+                else assertFalse(old.reviewAssignments.any { it.id == assignment.id })
                 assertEquals(if (number == 3) 2 else 1, assignment.schema)
                 assertEquals(assignment, store.openCumulativeReview(p, number, store.learnerMutationEpoch()))
                 if (number == 4) assertEquals(V2Validator.unitContentReviewDigest(p, 3), assignment.slots[1].unitDigest)

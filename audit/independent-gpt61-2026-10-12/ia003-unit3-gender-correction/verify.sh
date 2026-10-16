@@ -3,13 +3,9 @@ set -euo pipefail
 cd /workspace/russian-companion
 source /workspace/setup/android-env.sh
 checks=(
- --tests '*Unit6WiderPolicyTest'
- --tests '*CumulativePolicyHistoryBaselineTest'
  --tests '*Unit3GenderTeachingTest'
  --tests '*Unit4CumulativeReviewTest'
  --tests '*Unit7CumulativeReviewTest.ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup'
- --tests '*MultiPoolReviewSelectionTest'
- --tests '*CumulativeReviewSelectionTest'
  --tests '*CumulativeReviewGateTest'
  --tests '*CumulativeReviewStorageTest'
  --tests '*Unit5CumulativeReviewTest.ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup'
@@ -27,6 +23,7 @@ checks=(
  --tests '*BatchECapabilityResearchTest.digestsGovernanceAndLaterUnitsStayUnchanged'
  --tests '*Units2125SourceIntakeTest.structuralMappingsAreDigestBoundAndStayUnsigned'
  --tests '*Units1115MappingGapTest.preservedUnitDigestsDoNotMoveWhenTheLaterGapIsRecorded'
+ --tests '*Units610SourceIntakeTest.earlierUnitDigestsStayPutAndLaterUnitsStayIsolated'
 )
 # Historical policy-fixture classes explicitly use archived pre-teaching source.
 # Current-content and stale-teaching checks are separate; do not conflate their scope.

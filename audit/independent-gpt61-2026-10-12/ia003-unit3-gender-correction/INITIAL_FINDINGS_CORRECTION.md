@@ -1,0 +1,11 @@
+# Preserve the failed run and correct the diagnosed causes
+
+Initial84 at5de1d0f3462c99de0a42ba60579725f57838196e is preserved with exact XML/log/exit/counts in INITIAL_VERIFICATION_MANIFEST.json. Do not replace it with corrected results or infer a pass from corrected source.
+
+The pack validator reported three new headings without admitted coverage. Add three explicit pending coverage records, with exact shipped headings/source text/hashes, rather than weakening the validator or classifying grammatical labels as exempt scaffolding. Existing6914 records and initialfive additions remain intact;current count6922. This changes Unit3/pack/source identities, so refresh bindings from actual correction ancestry and execute the affected scope again.
+
+Two new history expectations were wrong: Unit3's literacy assignment binds unchanged Unit1,not target Unit3 teaching. A saved exact task therefore remains current while changed ordinary Unit3 instruction/credit is stale. Replace null/new-ID expectations with exact original-assignment equality; retain all raw-history,stale ordinary-credit,downstream owner refusal and fresh completion assertions. Unit4's saved task binds changed owner3 and must be replaced by a genuinely new assignment requiring fresh linked answers. Do not change production identity logic to force unnecessary review invalidation.
+
+Initial failures and corrected run must remain separate. Additional current preservation guard Units610SourceIntakeTest.earlierUnitDigestsStayPutAndLaterUnitsStayIsolated is included in the corrected selection because its explicit Unit3 digest was also updated. Historical policy-only fixture scopes still use archived pre-teaching content with intact assertions;new current-content checks cover teaching,repair and changed-history behavior. Final comprehensive independent audit precedes physical acceptance;no release authority.
+
+The gate-test edit initially changed the first matching completion-set literal rather than the intended migration assertion. Correct both scoped sites: actual fresh current completion remains1,2,3; unchanged raw legacy teaching rows count only1,2 against changed content. No production logic changes. The fresh-path typo was masked by the earlier validator failure,not an additional observed runtime failure.
