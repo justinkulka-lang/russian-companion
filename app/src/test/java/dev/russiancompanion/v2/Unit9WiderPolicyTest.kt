@@ -205,11 +205,16 @@ class Unit9WiderPolicyTest {
             val body = p.step("u3-st-rem-gender")!!.second.body
             assertTrue(body.contains("дверь — door is feminine") && body.contains("дя́дя") && body.contains("мо́ре — sea"))
             waitTag("v2-review-practice"); compose.onNodeWithTag("v2-review-practice").performClick()
-            reviewedGuidedPractice(p, "u3-st-rem-gender").forEach { step -> p.step(step)!!.second.itemIds.forEach { id ->
-                val i = p.item(id)!!; waitTag("v2-option-$id-${i.answer}")
-                compose.onNodeWithTag("v2-option-$id-${i.answer}").performScrollTo().performClick()
-            } }
-            waitTag("v2-return-to-check"); compose.onNodeWithTag("v2-return-to-check").performClick()
+            val guides = reviewedGuidedPractice(p, "u3-st-rem-gender")
+            assertEquals(4, guides.size)
+            guides.forEachIndexed { index, step ->
+                p.step(step)!!.second.itemIds.forEach { id ->
+                    val i = p.item(id)!!; waitTag("v2-option-$id-${i.answer}")
+                    compose.onNodeWithTag("v2-option-$id-${i.answer}").performScrollTo().performClick()
+                }
+                val tag = if (index == guides.lastIndex) "v2-return-to-check" else "v2-next-practice"
+                waitTag(tag); compose.onNodeWithTag(tag).performClick()
+            }
             waitTag("v2-review-count"); assertEquals(a, open(s))
             assertTrue(completedReviewSlots(p, a, s.v2LearnerView().reviewAnswers).isEmpty())
             finishUi(s, a)

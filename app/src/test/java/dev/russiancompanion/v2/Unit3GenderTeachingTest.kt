@@ -41,7 +41,8 @@ class Unit3GenderTeachingTest {
     }
 
     @Test fun correctionHasAnExactWhitelistAndNoScoredOrPolicyChanges() {
-        val p = current; val old = previous
+        // Historical correction whitelist stays exact to its source; later Unit9 policy is tested separately.
+        val p = postTeachingCorrection; val old = previous
         assertEquals(declaredAfterUnit(), p.unit(3))
         assertEquals(old, p.copy(units = old.units, examples = p.examples.dropLast(2), provenanceRecords = p.provenanceRecords.dropLast(8)))
         assertEquals(old.units.filter { it.number != 3 }, p.units.filter { it.number != 3 })
@@ -193,6 +194,10 @@ class Unit3GenderTeachingTest {
         private val current by lazy { V2PackLoader.parse(File(root(), "app/src/main/assets/content/v2-curriculum.json").readText()).also { V2PackIdentityIndex.warm(it) } }
         private val previous by lazy {
             val command = ProcessBuilder("git", "show", "547457b63b317dea560e4bdc36083c1a4dce315e:app/src/main/assets/content/v2-curriculum.json").directory(root()).start()
+            V2PackLoader.parse(command.inputStream.bufferedReader().readText()).also { assertEquals(0, command.waitFor()); V2PackIdentityIndex.warm(it) }
+        }
+        private val postTeachingCorrection by lazy {
+            val command = ProcessBuilder("git", "show", "61c68cfcf20cd92a4b6c310c4abf8ff2284e36e5:app/src/main/assets/content/v2-curriculum.json").directory(root()).start()
             V2PackLoader.parse(command.inputStream.bufferedReader().readText()).also { assertEquals(0, command.waitFor()); V2PackIdentityIndex.warm(it) }
         }
         internal fun preTeachingCorrectionPack(): V2CurriculumPack = previous

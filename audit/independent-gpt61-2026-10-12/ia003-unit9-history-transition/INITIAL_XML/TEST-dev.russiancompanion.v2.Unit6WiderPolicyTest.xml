@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit6WiderPolicyTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-16T20:51:33.327Z" hostname="f5c5dd6b855f" time="10.655">
+  <properties/>
+  <testcase name="versionsRolesLinksEpochAndPacklessWritesFailClosedWithoutChangingHistory" classname="dev.russiancompanion.v2.Unit6WiderPolicyTest" time="3.82"/>
+  <testcase name="genuineOldPartialTasksUseOwnEligibilityAndActualLegacyPolicyOnAdvance" classname="dev.russiancompanion.v2.Unit6WiderPolicyTest" time="3.929"/>
+  <testcase name="genuinePriorPackDeclaresV1AndCannotAcceptFutureV2Tasks" classname="dev.russiancompanion.v2.Unit6WiderPolicyTest" time="2.854"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call close. 
+]]></system-err>
+</testsuite>
