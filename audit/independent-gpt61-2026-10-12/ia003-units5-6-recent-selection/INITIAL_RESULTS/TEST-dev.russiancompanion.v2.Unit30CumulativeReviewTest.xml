@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit30CumulativeReviewTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-16T14:21:53.783Z" hostname="f5c5dd6b855f" time="615.659">
+  <properties/>
+  <testcase name="ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup" classname="dev.russiancompanion.v2.Unit30CumulativeReviewTest" time="615.644"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[System.logW: A resource failed to call close. 
+]]></system-err>
+</testsuite>

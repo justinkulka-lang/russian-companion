@@ -86,8 +86,16 @@ class MultiPoolReviewSelectionTest {
             record(s, window, true)
             assertEquals(book, preview(s, 6).slots[1].itemId)
             ids.forEach { record(s, it, true) }
+            // Window was resolved first. Its identical correct tap is idempotent,
+            // so it remains least-recent until a changed selection is accepted.
+            assertEquals(window, preview(s, 6).slots[1].itemId)
+            val beforeDuplicate = s.v2Attempts()
+            record(s, window, true)
+            assertEquals(beforeDuplicate, s.v2Attempts())
+            assertEquals(window, preview(s, 6).slots[1].itemId)
+            record(s, window, false); record(s, window, true)
             assertEquals(ids.first(), preview(s, 6).slots[1].itemId)
-            record(s, ids.first(), true)
+            record(s, ids.first(), false); record(s, ids.first(), true)
             assertEquals(ids[1], preview(s, 6).slots[1].itemId)
             val radio = p.item("u5-i-indecl-радио")!!
             assertNotEquals(radio.answer, p.item(window)!!.answer)
