@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.GenderTeachingBaselineExportTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-16T19:19:02.247Z" hostname="f5c5dd6b855f" time="17.335">
+  <properties/>
+  <testcase name="captureGenuineUnit3AndOwnerBoundUnit4BeforeTeachingCorrection" classname="dev.russiancompanion.v2.GenderTeachingBaselineExportTest" time="16.311"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
