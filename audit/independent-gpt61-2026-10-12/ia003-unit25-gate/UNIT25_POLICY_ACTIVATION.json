@@ -72,8 +72,8 @@
       "sourceId": "src-wikibooks-russian-cc-by-sa",
       "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Verbs?oldid=4233876",
       "sourceRevision": "4233876",
-      "sourceRecordId": "verbs:To negate a verb, simply add '''не''' (''nye'') before the verb:\n:Are you speaki",
-      "shippedText": "Нет, не говорю́",
+      "sourceRecordId": "verbs:To negate a verb, simply add '''\u043d\u0435''' (''nye'') before the verb:\n:Are you speaki",
+      "shippedText": "\u041d\u0435\u0442, \u043d\u0435 \u0433\u043e\u0432\u043e\u0440\u044e\u0301",
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
@@ -92,8 +92,8 @@
       "sourceId": "src-wikibooks-russian-cc-by-sa",
       "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Verbs?oldid=4233876",
       "sourceRevision": "4233876",
-      "sourceRecordId": "verbs:To negate a verb, simply add '''не''' (''nye'') before the verb:\n:Are you speaki",
-      "shippedText": "не говорю́",
+      "sourceRecordId": "verbs:To negate a verb, simply add '''\u043d\u0435''' (''nye'') before the verb:\n:Are you speaki",
+      "shippedText": "\u043d\u0435 \u0433\u043e\u0432\u043e\u0440\u044e\u0301",
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
@@ -112,8 +112,8 @@
       "sourceId": "src-wikibooks-russian-cc-by-sa",
       "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Verbs?oldid=4233876",
       "sourceRevision": "4233876",
-      "sourceRecordId": "verbs:To negate a verb, simply add '''не''' (''nye'') before the verb:\n:Are you speaki",
-      "shippedText": "Борис не приходит",
+      "sourceRecordId": "verbs:To negate a verb, simply add '''\u043d\u0435''' (''nye'') before the verb:\n:Are you speaki",
+      "shippedText": "\u0411\u043e\u0440\u0438\u0441 \u043d\u0435 \u043f\u0440\u0438\u0445\u043e\u0434\u0438\u0442",
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
@@ -132,8 +132,8 @@
       "sourceId": "src-wikibooks-russian-cc-by-sa",
       "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Verbs?oldid=4233876",
       "sourceRevision": "4233876",
-      "sourceRecordId": "verbs:To negate a verb, simply add '''не''' (''nye'') before the verb:\n:Are you speaki",
-      "shippedText": "не студент",
+      "sourceRecordId": "verbs:To negate a verb, simply add '''\u043d\u0435''' (''nye'') before the verb:\n:Are you speaki",
+      "shippedText": "\u043d\u0435 \u0441\u0442\u0443\u0434\u0435\u043d\u0442",
       "transformation": "selection",
       "licenseId": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
@@ -145,5 +145,299 @@
       "originalSourceTextRef": "635720f5fd7588480e0b9503d8103e3d7c210d9bbd9884766c0eafe4b068c9c9"
     }
   ],
-  "resolvedNativeContext": "To negate a verb, simply add '''не''' (''nye'') before the verb:\n:Are you speaking? - '''Вы говори́те?''' - ''vi ga-vuh-<small>REE</small>-tye?''\n:Yes, I'm speaking - '''Да, говорю́''' - ''da, ga-vuh-<small>RYOO</small>''\n:No, I'm not speaking - '''Нет, не говорю́''' - ''nyet, nye ga-vuh-<small>RYOO</small>''\n:He's not a student - '''Он не студент''' - ''on nye stoo-<small>DYENT</small>'' - as '''быть''' is omitted in the present tense, that '''не''' is used on its own\n:Boris isn't coming - '''Борис не приходит''' - ''borees nye pree-KHO-<small>deet</small>''\n\nThe phrase '''У меня есть + ''nom''''' means 'I have...' (literally, 'by me exists...'), using the infinitive of the verb '''есть''' to mean 'exists'. To negate this and say 'I don't have...', we replace '''есть''' with '''нет''', and place the following object in the [[Russian/Grammar/Genitive case|''genitive case'']].  '''Нет''' is a contraction of '''не есть''', and has a different meaning from the '''нет''' that means 'no'."
+  "resolvedNativeContext": "To negate a verb, simply add '''\u043d\u0435''' (''nye'') before the verb:\n:Are you speaking? - '''\u0412\u044b \u0433\u043e\u0432\u043e\u0440\u0438\u0301\u0442\u0435?''' - ''vi ga-vuh-<small>REE</small>-tye?''\n:Yes, I'm speaking - '''\u0414\u0430, \u0433\u043e\u0432\u043e\u0440\u044e\u0301''' - ''da, ga-vuh-<small>RYOO</small>''\n:No, I'm not speaking - '''\u041d\u0435\u0442, \u043d\u0435 \u0433\u043e\u0432\u043e\u0440\u044e\u0301''' - ''nyet, nye ga-vuh-<small>RYOO</small>''\n:He's not a student - '''\u041e\u043d \u043d\u0435 \u0441\u0442\u0443\u0434\u0435\u043d\u0442''' - ''on nye stoo-<small>DYENT</small>'' - as '''\u0431\u044b\u0442\u044c''' is omitted in the present tense, that '''\u043d\u0435''' is used on its own\n:Boris isn't coming - '''\u0411\u043e\u0440\u0438\u0441 \u043d\u0435 \u043f\u0440\u0438\u0445\u043e\u0434\u0438\u0442''' - ''borees nye pree-KHO-<small>deet</small>''\n\nThe phrase '''\u0423 \u043c\u0435\u043d\u044f \u0435\u0441\u0442\u044c + ''nom''''' means 'I have...' (literally, 'by me exists...'), using the infinitive of the verb '''\u0435\u0441\u0442\u044c''' to mean 'exists'. To negate this and say 'I don't have...', we replace '''\u0435\u0441\u0442\u044c''' with '''\u043d\u0435\u0442''', and place the following object in the [[Russian/Grammar/Genitive case|''genitive case'']].  '''\u041d\u0435\u0442''' is a contraction of '''\u043d\u0435 \u0435\u0441\u0442\u044c''', and has a different meaning from the '''\u043d\u0435\u0442''' that means 'no'.",
+  "implementationCommit": "643faa96490c247d31e9080a32b274cc09a1df14",
+  "newPackDigest": "5b39a1bff84889114b3ec4cbcc2e94170beb26ec2ab5c40d0f3bfc2e060a9274",
+  "newRepositorySourceDigest": "707a3b28bdf0b05480b4e0d53981652c56326089ca3755a940ef352f6155ea21",
+  "unitReviewBindings": [
+    {
+      "unitNumber": 1,
+      "changedFields": [
+        "packContentReviewDigest",
+        "repositorySourceDigest"
+      ],
+      "contentReviewDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+      "mappingPackageDigest": "b85c056f7c940f045fcb9270edcfda31371ae36f7277c75b673158fcc52872d0"
+    },
+    {
+      "unitNumber": 2,
+      "changedFields": [
+        "packContentReviewDigest",
+        "repositorySourceDigest"
+      ],
+      "contentReviewDigest": "4fd67bff0431a11416115de023e076c52b7879304fc4a98b508d871170703e9c",
+      "mappingPackageDigest": "def2280a90229cec52750f12cb7dc2f7564df8508c113a69cf6ed585cee1c0c6"
+    },
+    {
+      "unitNumber": 3,
+      "changedFields": [
+        "packContentReviewDigest",
+        "repositorySourceDigest"
+      ],
+      "contentReviewDigest": "5480d8e87a1651d1bc16ad6c5a0856724f7bad1b746a62bbfab2bb60f3cc3e0b",
+      "mappingPackageDigest": "e40e0ce030f9221b6e2fceba66fe946d85ad172703c47bd34d795e77e43120b4"
+    },
+    {
+      "unitNumber": 4,
+      "changedFields": [
+        "packContentReviewDigest",
+        "repositorySourceDigest"
+      ],
+      "contentReviewDigest": "1ebcde1ebabf867b08e137a96bf30f56cccbb0ea85cfd8ecb54cee463a79bf11",
+      "mappingPackageDigest": "889c15ed7bf5d3189af391210f35bae5c57a9fd9c9dc3b3a439e8ebc1143b6fd"
+    },
+    {
+      "unitNumber": 5,
+      "changedFields": [
+        "packContentReviewDigest",
+        "repositorySourceDigest"
+      ],
+      "contentReviewDigest": "3c9149de87feeda96f64e195f3dab0428700049f3a7342e4ba764191a16db141",
+      "mappingPackageDigest": "2a08c3d25c46aa6820a3798cafb90e415a873dbaa13bb003c42f330d15fe40ec"
+    },
+    {
+      "unitNumber": 6,
+      "changedFields": [
+        "packContentReviewDigest",
+        "repositorySourceDigest"
+      ],
+      "contentReviewDigest": "936f868f09c20b9cf58d7b4e06b3920c37d9acae153836522e4e5b9ef2cafa70",
+      "mappingPackageDigest": "f95e0c2f351ec7cba23cdb09b87274bb97f2e392dd783ad59c2978ed58f63b15"
+    },
+    {
+      "unitNumber": 7,
+      "changedFields": [
+        "packContentReviewDigest",
+        "repositorySourceDigest"
+      ],
+      "contentReviewDigest": "3999906034a7cc8baca24f2aa063320bf6927663f5f62e19e8957167206f520a",
+      "mappingPackageDigest": "e39515585eea5b131797f0c93ce3508ee99b27206cc21070675d06aa975373c0"
+    },
+    {
+      "unitNumber": 8,
+      "changedFields": [
+        "packContentReviewDigest",
+        "repositorySourceDigest"
+      ],
+      "contentReviewDigest": "96b3a661d0ad5edd55ed44e2890a88250081275a7881713c9daf37ed94d7f42a",
+      "mappingPackageDigest": "3e6c6b7d1ed5142212fe254e14d7d6ebb9ecdf862b9dce921a415ba8e45411f1"
+    },
+    {
+      "unitNumber": 9,
+      "changedFields": [
+        "packContentReviewDigest",
+        "repositorySourceDigest"
+      ],
+      "contentReviewDigest": "db6599afa744df79762a78f3d56dc0190ec2ca886343a020afbc6c3816de7696",
+      "mappingPackageDigest": "44199859a34f129c83c22e0e058e305784913077a569025b871abdd1a6a707bf"
+    },
+    {
+      "unitNumber": 10,
+      "changedFields": [
+        "packContentReviewDigest",
+        "repositorySourceDigest"
+      ],
+      "contentReviewDigest": "3ae5a3b41bc970ef43589ace5929e65818fa620c8660f0bd1c4de5275667cf84",
+      "mappingPackageDigest": "57676882eb615fb046a9a5e2429f1d97bf6fcf54010d7ae287cdfc456bcfca52"
+    },
+    {
+      "unitNumber": 11,
+      "changedFields": [
+        "packContentReviewDigest",
+        "repositorySourceDigest"
+      ],
+      "contentReviewDigest": "35de2337c00321867e4c30871b048181738017a79babc4f0135ad4131e1b6c69",
+      "mappingPackageDigest": "61b1d9c77882225528ca0d0f68a44efa13c68605efdaed0e6abb8e1b519db587"
+    },
+    {
+      "unitNumber": 12,
+      "changedFields": [
+        "packContentReviewDigest",
+        "repositorySourceDigest"
+      ],
+      "contentReviewDigest": "1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97",
+      "mappingPackageDigest": "0747489371acaab80787db42f08f6d4f5479e6186a2c9415052df484324e37d3"
+    },
+    {
+      "unitNumber": 13,
+      "changedFields": [
+        "packContentReviewDigest",
+        "repositorySourceDigest"
+      ],
+      "contentReviewDigest": "7385fdd118b5f5cb988ad00832614fa4f15835e26dbbb30cfbbf9379f2340d54",
+      "mappingPackageDigest": "e8ca3b0ba9b6a48acc54ea18e10a6e6fb1291698252fcbc35b02dbf2a820deb4"
+    },
+    {
+      "unitNumber": 14,
+      "changedFields": [
+        "packContentReviewDigest",
+        "repositorySourceDigest"
+      ],
+      "contentReviewDigest": "9e136e9af2fe3611d6862fa46e3217f85ad45c8b23ad622eec6f36e48ab97f38",
+      "mappingPackageDigest": "d59ce00b8c97b8610770ad1409daa9584e520ddab3c53a0b539e46b4a0162367"
+    },
+    {
+      "unitNumber": 15,
+      "changedFields": [
+        "packContentReviewDigest",
+        "repositorySourceDigest"
+      ],
+      "contentReviewDigest": "ea945a9c9cd01a30db3522794b9df36c5a4fc291092a153da0672bb4b8a9a6bd",
+      "mappingPackageDigest": "7228dd28cc3954cb8810a77b81ad72f55fa4e51a64d669fd691cd61a120d710c"
+    },
+    {
+      "unitNumber": 16,
+      "changedFields": [
+        "packContentReviewDigest",
+        "repositorySourceDigest"
+      ],
+      "contentReviewDigest": "31893860b30df7c38248356c9014db1a361110f7a8a51ce53ae7ed6fd61bae87",
+      "mappingPackageDigest": "f74c6fa2206f8faad47ad15e91b8dce61f886293f64d9a3f2e47947b2d5db8e7"
+    },
+    {
+      "unitNumber": 17,
+      "changedFields": [
+        "packContentReviewDigest",
+        "repositorySourceDigest"
+      ],
+      "contentReviewDigest": "415d0ecc0e4e8ce649dff17aef09851beddc39f191f6bedf783af07904481c62",
+      "mappingPackageDigest": "724a3220ec28b620687871fbca1639cc8e64b58fed7fcfe8ba1a29bdf39d6328"
+    },
+    {
+      "unitNumber": 18,
+      "changedFields": [
+        "packContentReviewDigest",
+        "repositorySourceDigest"
+      ],
+      "contentReviewDigest": "603827ede7e8394cef33bf1af9fb4ef6217a80f0e6624f1bd385e4a0766b69ac",
+      "mappingPackageDigest": "f195680e986e1c1069418022707886a4b11b4fe9cf8410e9e8b78e71525008bb"
+    },
+    {
+      "unitNumber": 19,
+      "changedFields": [
+        "packContentReviewDigest",
+        "repositorySourceDigest"
+      ],
+      "contentReviewDigest": "3096baba4cdc192ac7d701f6eedd3c8ca0be12c54ab64efa52b0c25fdbf83a5e",
+      "mappingPackageDigest": "56534b156e7412d1bd8e51bf493e8d80f4b58461446382483a8ed118681dd6b2"
+    },
+    {
+      "unitNumber": 20,
+      "changedFields": [
+        "packContentReviewDigest",
+        "repositorySourceDigest"
+      ],
+      "contentReviewDigest": "6c11d3dd467846f5aabf034024f7d27d3ed9a5cc9eec4a8462cd8be3c54069eb",
+      "mappingPackageDigest": "f24f256481096bcc5f47bcb849f053bfda59fc67e670492c6b4e7a42b514a8c9"
+    },
+    {
+      "unitNumber": 21,
+      "changedFields": [
+        "packContentReviewDigest",
+        "repositorySourceDigest"
+      ],
+      "contentReviewDigest": "987a27a7a3de52fa7965c6b81b5ef3ab74221b62d96f52b98e5b093c8e39ae56",
+      "mappingPackageDigest": "a81fd110700d8cef3f88b5c34642feb7792e0bc851b2e13f08acba87969eab0e"
+    },
+    {
+      "unitNumber": 22,
+      "changedFields": [
+        "packContentReviewDigest",
+        "repositorySourceDigest"
+      ],
+      "contentReviewDigest": "886c572c8d1adf2e0e508fe20e872afd81c49510db28bf46d2c16823c5f83f08",
+      "mappingPackageDigest": "135262f03abc4c4ef1dad6c992bbbf53993657e3ce3af4fe789fadcbebbff021"
+    },
+    {
+      "unitNumber": 23,
+      "changedFields": [
+        "packContentReviewDigest",
+        "repositorySourceDigest"
+      ],
+      "contentReviewDigest": "e7cf730b6ed8317979d7c9f59c23b360f28081d0461fe7a0864643a3d855f683",
+      "mappingPackageDigest": "968d763b963eb028d821bb426f6c906c079a6266184e4f89d79d21fa34699e95"
+    },
+    {
+      "unitNumber": 24,
+      "changedFields": [
+        "packContentReviewDigest",
+        "repositorySourceDigest"
+      ],
+      "contentReviewDigest": "d5cb2b37f1000c8728b529e4167f3ab06fb216cb12c7a6d317531f1b309c2e66",
+      "mappingPackageDigest": "dc6f9ac41a8520dc647df90313e05e547245bfa31fe3b2e883821f3591a24248"
+    },
+    {
+      "unitNumber": 25,
+      "changedFields": [
+        "contentReviewDigest",
+        "curriculumSourceCommit",
+        "packContentReviewDigest",
+        "records",
+        "repositorySourceDigest",
+        "reviewPackageDigest"
+      ],
+      "contentReviewDigest": "57470dadfa8a6184a38538a4bae84430e8e6d6ba2ad491d1e926690777050142",
+      "mappingPackageDigest": "239e966c5d5b4f00ea70616e8ec949d583bb9406407438ab7f04df9fc363bf31"
+    },
+    {
+      "unitNumber": 26,
+      "changedFields": [
+        "packContentReviewDigest",
+        "repositorySourceDigest"
+      ],
+      "contentReviewDigest": "7870405b2810239e5e744706b0376877191d00afc337ac30e7a2249ad97fddab",
+      "mappingPackageDigest": "c15db22cc82dcfa6c49d6d0e50beea0f90b16dfc4db90777623e99d540790489"
+    },
+    {
+      "unitNumber": 27,
+      "changedFields": [
+        "packContentReviewDigest",
+        "repositorySourceDigest"
+      ],
+      "contentReviewDigest": "fb8a23246226a841df660cae2517b139cba2ff51ef5939792268d2c6cb50bc2e",
+      "mappingPackageDigest": "3924f3a8ac211579b4db3e387cb48632d27e9b41925e227b63b004bf652a3bc0"
+    },
+    {
+      "unitNumber": 28,
+      "changedFields": [
+        "packContentReviewDigest",
+        "repositorySourceDigest"
+      ],
+      "contentReviewDigest": "decfe657342b98c1c35277cd88e1a3e125df1233549f01872af8eae7c8fcbd82",
+      "mappingPackageDigest": "0fb9199bfef05acc54935be340710bd53e19fcd6066349300e09c29fb4b035e8"
+    },
+    {
+      "unitNumber": 29,
+      "changedFields": [
+        "packContentReviewDigest",
+        "repositorySourceDigest"
+      ],
+      "contentReviewDigest": "454026c94347703fa15b6e305bf4319edcc1542e6a9eb786709186b435753501",
+      "mappingPackageDigest": "a7ebe370698a0dffe4f0311ccfbfff6f217171ffab7dda232447d4b62e2b4071"
+    },
+    {
+      "unitNumber": 30,
+      "changedFields": [
+        "packContentReviewDigest",
+        "repositorySourceDigest"
+      ],
+      "contentReviewDigest": "9e453a1050dc3a25959271b300c68c64bb293ba9f34a40a9d76aaf3e0ce3f02e",
+      "mappingPackageDigest": "97f4c8beeb1d0e6827b94bedc1e379381c763c2c3522013890b75802630440a2"
+    }
+  ],
+  "oldUnit25Digest": "317881a1a5a77489ce03b939b567642725274c10c534e14be68007b199cde98d",
+  "newUnit25Digest": "57470dadfa8a6184a38538a4bae84430e8e6d6ba2ad491d1e926690777050142",
+  "currentDigestFixtureFiles": [
+    "app/src/test/java/dev/russiancompanion/v2/BatchECapabilityResearchTest.kt",
+    "app/src/test/java/dev/russiancompanion/v2/Units2630SourceIntakeTest.kt",
+    "app/src/test/java/dev/russiancompanion/v2/V2RebuildTest.kt",
+    "app/src/test/java/dev/russiancompanion/v2/audit/OwnerGovernanceDecisionTest.kt"
+  ],
+  "oldUnit25ReviewPackageDigest": "d09669e2175455dba996fed8df9d84a04651b3d09477a7834dd765a9b31fae59",
+  "newUnit25ReviewPackageDigest": "0aa1e793c0d42a3059fba3fd9e45aabcdcb7502833e7f30ab6e23c0f9945fc7f",
+  "currentReviewPackageFixtureChange": {
+    "path": "app/src/test/java/dev/russiancompanion/v2/BatchECapabilityResearchTest.kt",
+    "field": "Unit25 reviewPackageDigest",
+    "assertionsPreserved": true
+  }
 }
