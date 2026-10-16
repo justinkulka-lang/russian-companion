@@ -2,29 +2,6 @@
 set -euo pipefail
 cd /workspace/russian-companion
 source /workspace/setup/android-env.sh
-checks=(
- --tests '*Unit6WiderPolicyTest'
- --tests '*CumulativePolicyHistoryBaselineTest'
- --tests '*Unit7CumulativeReviewTest'
- --tests '*Unit6AnimacyTransferTest'
- --tests '*MultiPoolReviewSelectionTest'
- --tests '*CumulativeReviewSelectionTest'
- --tests '*CumulativeReviewGateTest'
- --tests '*CumulativeReviewStorageTest'
- --tests '*Unit5CumulativeReviewTest'
- --tests '*Unit6CumulativeReviewTest'
- --tests '*Unit4NominativeRoleTest'
- --tests '*IndeclinableCorrectionTest'
- --tests '*Unit30CumulativeReviewTest.ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup'
- --tests '*UnitReviewPipelineTest.committedUnitPackagesMatchTheGenerator'
- --tests '*CurriculumReadinessReconciliationTest.committedReportsMatchTheGeneratorAndStayByteIdentical'
- --tests '*CurriculumReadinessReconciliationTest.matrixUsesCanonicalDigestsReviewsAndDoesNotInventApproval'
- --tests '*OwnerGovernanceDecisionTest.preparationManifestBindsFactsAndDoesNotPassAFinalAudit'
- --tests '*GapClosureDossierTest.dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease'
- --tests '*ReleaseSourceDigestTest.committedCandidateRecordsTheCurrentSourceDigestAndIdentity'
- --tests '*Units2630SourceIntakeTest.generatedRussianPenguinAudioAndReleaseStayClosed'
- --tests '*V2RebuildTest.structuralMappingSafeguardsRejectIncompleteOrInventedRecords'
- --tests '*BatchECapabilityResearchTest.digestsGovernanceAndLaterUnitsStayUnchanged'
-)
-# cloud-validation.gradle excludes the four screenshot exporters (16 methods).
-./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest "${checks[@]}" compileDebugSources lintDebug verifyReleaseGateAttachment --max-workers=4 --console=plain
+# Only current digest references changed; initial97 result is preserved separately.
+# Four screenshot exporters/16 methods remain excluded by cloud-validation.gradle.
+./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*GapClosureDossierTest.dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease' --tests '*Units2630SourceIntakeTest.generatedRussianPenguinAudioAndReleaseStayClosed' --tests '*Units2125SourceIntakeTest.structuralMappingsAreDigestBoundAndStayUnsigned' --tests '*Units1115MappingGapTest.preservedUnitDigestsDoNotMoveWhenTheLaterGapIsRecorded' compileDebugSources lintDebug verifyReleaseGateAttachment --max-workers=4 --console=plain

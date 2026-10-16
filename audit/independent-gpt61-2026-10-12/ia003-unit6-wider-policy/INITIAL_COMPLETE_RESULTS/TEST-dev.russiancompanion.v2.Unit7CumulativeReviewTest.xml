@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit7CumulativeReviewTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-16T15:22:03.929Z" hostname="f5c5dd6b855f" time="494.35">
+  <properties/>
+  <testcase name="schema11OrdinaryLegacyRowsWithFalseActivationMarkerSurviveReopenWithoutSyntheticReview" classname="dev.russiancompanion.v2.Unit7CumulativeReviewTest" time="268.122"/>
+  <testcase name="oldFormatOneAndTwoRestoreExactPrePolicyWorkWithoutAnyNewReviewCredit" classname="dev.russiancompanion.v2.Unit7CumulativeReviewTest" time="10.159"/>
+  <testcase name="ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup" classname="dev.russiancompanion.v2.Unit7CumulativeReviewTest" time="24.396"/>
+  <testcase name="placementWithTaughtUnit1ButUntaughtUnit6RepairsTheMissingOwnerInsteadOfUnit1" classname="dev.russiancompanion.v2.Unit7CumulativeReviewTest" time="9.303"/>
+  <testcase name="actualUnit7ContinueInanimateCaseCueTeachingPracticeReturnAndAdvanceStayOnUnit7" classname="dev.russiancompanion.v2.Unit7CumulativeReviewTest" time="26.204"/>
+  <testcase name="optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion" classname="dev.russiancompanion.v2.Unit7CumulativeReviewTest" time="139.515"/>
+  <testcase name="heldUnit7WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching" classname="dev.russiancompanion.v2.Unit7CumulativeReviewTest" time="13.261"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+]]></system-err>
+</testsuite>

@@ -1,0 +1,10 @@
+{
+  "initialTestedCommit": "bc8bd0afbe1b72d2ded865da0e66939ae877c2dc",
+  "change": "One current pack-content digest field in living dossier. No production,test assertion,canonical generated binding or approval changes.",
+  "path": "audit/curriculum-readiness/V2_CURRICULUM_GAP_CLOSURE_DOSSIER_v1.0.md",
+  "beforeSha256": "c74ba605bdd31b4452fbaa15cb8be1cfde89921facfd2908c166d46c0390c36c",
+  "afterSha256": "c7c12ce4ffd715c6dca54d708dfbfcb30e43e0b2a4a699aa2861ba553f1edf61",
+  "beforePackDigest": "e2732ce1e2d7189913875fa95663c5da03757cda94e247e80459e59d63b5c9a5",
+  "afterPackDigest": "44df2c4ef30a664c4b9758f48509bbde3728c510edf1b34fc2ac2213b85cc71f",
+  "changedLines": 1
+}
