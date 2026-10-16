@@ -32,12 +32,13 @@ class Unit6CumulativeReviewTest {
             assertTrue(ordinaryUnitRequirements(p, p.unit(6)!!, s.v2LearnerView()).allowed)
             assertFalse(advancementDecision(p, p.unit(6)!!, s.v2LearnerView()).allowed)
             val a = open(p, s)
-            assertEquals(listOf("obj-u1-decoding", "obj-u5-indeclinable"), a.slots.map { it.objectiveId })
-            assertEquals(listOf("BOUNDED_READING", "SUPPLIED_NOUN_BEHAVIOR_RECOGNITION"), a.slots.map { it.skill })
+            assertEquals(listOf("obj-u1-decoding", "obj-u5-indeclinable", "obj-u4-nominative"), a.slots.map { it.objectiveId })
+            assertEquals(listOf("BOUNDED_READING", "SUPPLIED_NOUN_BEHAVIOR_RECOGNITION", "SUPPLIED_NOMINATIVE_SUBJECT_RECOGNITION"), a.slots.map { it.skill })
             assertEquals("u5-i-indecl-такси", a.slots[1].itemId)
             assertTrue(completedReviewSlots(p, a, s.cumulativeReviewHistory().second).isEmpty())
             answer(p, s, a, 0); assertFalse(advancementDecision(p, p.unit(6)!!, s.v2LearnerView()).allowed)
-            answer(p, s, a, 1); assertTrue(advancementDecision(p, p.unit(6)!!, s.v2LearnerView()).allowed)
+            answer(p, s, a, 1); assertFalse(advancementDecision(p, p.unit(6)!!, s.v2LearnerView()).allowed)
+            answer(p, s, a, 2); assertTrue(advancementDecision(p, p.unit(6)!!, s.v2LearnerView()).allowed)
             assertFalse(advancementDecision(p, p.unit(6)!!, s.v2LearnerView().copy(bookAttestedUnits = setOf(1, 2, 3, 4, 5))).allowed)
             assertTrue(advance(p, s)); assertEquals(7, s.v2Profile().currentUnitNumber)
             val row = s.governedLearnerDocument().unitCompletions.single { it.unitNumber == 6 }
@@ -69,7 +70,7 @@ class Unit6CumulativeReviewTest {
                 s.v2RecordGovernedAttempt(prepareGovernedAttempt(p, i.id, i.answer, OPTIONAL_PRACTICE, practiceStepId("mixed"), "replay")!!)
             }
             assertFalse(cumulativeReviewComplete(p, s.v2LearnerView(), 6))
-            answer(p, s, a, 0); answer(p, s, a, 1)
+            a.slots.indices.forEach { answer(p, s, a, it) }
             assertTrue(advancementDecision(p, p.unit(6)!!, s.v2LearnerView()).allowed)
             answer(p, s, a, 1, correct = false)
             assertTrue(runCatching { advance(p, s) }.isFailure)

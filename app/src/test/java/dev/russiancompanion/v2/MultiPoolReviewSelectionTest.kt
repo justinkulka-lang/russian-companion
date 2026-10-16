@@ -44,7 +44,9 @@ class MultiPoolReviewSelectionTest {
                 assertTrue(reviewAssignmentCurrent(p, old))
                 assertEquals(old, s.openCumulativeReview(p, n, s.learnerMutationEpoch()))
                 val fresh = createCumulativeReviewAssignment(p, s.v2LearnerView(), n, old.id, old.boundary)!!
-                assertEquals(3, fresh.schema); assertEquals(old.policyDigest, fresh.policyDigest)
+                assertEquals(if (n == 6) 4 else 3, fresh.schema)
+                if (n == 6) { assertNotEquals(old.policyDigest, fresh.policyDigest); assertEquals(3, fresh.slots.size) }
+                else assertEquals(old.policyDigest, fresh.policyDigest)
                 assertNotEquals(old.digest, fresh.digest)
                 answer(s, old, 1, false)
                 assertFalse(cumulativeReviewComplete(p, s.v2LearnerView(), n))
@@ -79,8 +81,8 @@ class MultiPoolReviewSelectionTest {
             for (id in ids) {
                 record(s, id, false)
                 val a = preview(s, 6)
-                assertEquals(3, a.schema); assertEquals(id, a.slots[1].itemId)
-                assertEquals(listOf(1, 5), a.slots.map { it.ownerUnit })
+                assertEquals(if (a.targetUnit == 6) 4 else 3, a.schema); assertEquals(id, a.slots[1].itemId)
+                assertEquals(listOf(1, 5, 4), a.slots.map { it.ownerUnit })
                 assertTrue(completedReviewSlots(p, a, s.cumulativeReviewHistory().second).isEmpty())
             }
             record(s, window, true)
@@ -107,13 +109,15 @@ class MultiPoolReviewSelectionTest {
         for ((n, id) in listOf(5 to student, 6 to window)) ready(n).use { s ->
             record(s, id, false)
             val a = s.openCumulativeReview(p, n, s.learnerMutationEpoch())!!
-            assertEquals(3, a.schema); assertEquals(id, a.slots[1].itemId)
+            assertEquals(if (a.targetUnit == 6) 4 else 3, a.schema); assertEquals(id, a.slots[1].itemId)
             assertFalse(advancementDecision(p, p.unit(n)!!, s.v2LearnerView()).allowed)
             record(s, id, true)
             assertEquals(a, s.openCumulativeReview(p, n, s.learnerMutationEpoch()))
             assertTrue(completedReviewSlots(p, a, s.cumulativeReviewHistory().second).isEmpty())
             answer(s, a, 0); assertFalse(advancementDecision(p, p.unit(n)!!, s.v2LearnerView()).allowed)
-            answer(s, a, 1); assertTrue(advance(s, n))
+            answer(s, a, 1)
+            if (n == 6) { assertFalse(advancementDecision(p, p.unit(n)!!, s.v2LearnerView()).allowed); answer(s, a, 2) }
+            assertTrue(advance(s, n))
             val row = s.governedLearnerDocument().unitCompletions.single { it.unitNumber == n }
             assertEquals(a.id, row.reviewAssignmentId); assertTrue(row.reviewCompletionOrder > a.boundary)
             val bytes = ByteArrayOutputStream()
@@ -145,7 +149,7 @@ class MultiPoolReviewSelectionTest {
     @Test fun versionScopesUntaughtOwnersAndChangedSourceCannotAcquireReviewCreditOrRewriteHistory() {
         for (n in 5..6) ready(n).use { s ->
             val a = preview(s, n); val learner = s.v2LearnerView(); val before = s.governedLearnerFingerprint()
-            for (bad in listOf(a.copy(schema = 2), a.copy(schema = 4), a.copy(targetUnit = 3), a.copy(targetUnit = 4), a.copy(targetUnit = 7))) {
+            for (bad in listOf(a.copy(schema = 2), a.copy(schema = 5), a.copy(targetUnit = 3), a.copy(targetUnit = 4), a.copy(targetUnit = 7))) {
                 val coherent = bad.copy(digest = reviewAssignmentDigest(bad))
                 assertFalse(reviewAssignmentCurrent(p, coherent))
                 assertNotNull(reviewHistoryDefects(listOf(coherent.copy(boundary = 0).let { it.copy(digest = reviewAssignmentDigest(it)) }), emptyList()))
@@ -172,7 +176,7 @@ class MultiPoolReviewSelectionTest {
             waitTag("v2-review-start"); compose.onNodeWithTag("v2-review-start").performScrollTo().performClick()
             waitTag("v2-review-count")
             val a = s.cumulativeReviewHistory().first.single { it.targetUnit == n }
-            assertEquals(3, a.schema); assertEquals(id, a.slots[1].itemId)
+            assertEquals(if (a.targetUnit == 6) 4 else 3, a.schema); assertEquals(id, a.slots[1].itemId)
             val item = p.item(id)!!
             compose.onNodeWithText(item.promptLetter!!).performScrollTo().assertIsDisplayed()
             val wrong = item.options.first { it != item.answer }

@@ -292,7 +292,7 @@ class Unit21CumulativeReviewTest {
         runBlocking { advanceFrom(p, s, 5) }
         ordinary(p, s, 6)
         val sixth = s.openCumulativeReview(p, 6, s.learnerMutationEpoch())!!
-        answer(p, s, sixth, 0); answer(p, s, sixth, 1)
+        sixth.slots.indices.forEach { answer(p, s, sixth, it) }
         runBlocking { advanceFrom(p, s, 6) }
         ordinary(p, s, 7)
         val seventh = s.openCumulativeReview(p, 7, s.learnerMutationEpoch())!!

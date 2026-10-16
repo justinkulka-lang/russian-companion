@@ -65,7 +65,7 @@ class CumulativePolicyHistoryBaselineTest {
                     }.orEmpty())
                     if (label != "BEFORE_UNIT6_WORK") {
                         val opened = s.openCumulativeReview(p, 6, s.learnerMutationEpoch())!!
-                        if (assignment != null) assertEquals(assignment, opened) else assertEquals(3, opened.schema)
+                        if (assignment != null) assertEquals(assignment, opened) else assertEquals(4, opened.schema)
                         if (6 !in completed) {
                             assertEquals(label == "ANSWERED_REVIEW", advancementDecision(p, p.unit(6)!!, s.v2LearnerView()).allowed)
                             opened.slots.forEachIndexed { index, slot ->
