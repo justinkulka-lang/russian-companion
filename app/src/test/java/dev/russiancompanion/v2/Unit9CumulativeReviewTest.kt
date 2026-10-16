@@ -32,12 +32,13 @@ class Unit9CumulativeReviewTest {
             assertTrue(ordinaryUnitRequirements(p, p.unit(9)!!, s.v2LearnerView()).allowed)
             assertFalse(advancementDecision(p, p.unit(9)!!, s.v2LearnerView()).allowed)
             val a = open(p, s)
-            assertEquals(listOf("obj-u1-decoding", "obj-u8-plural"), a.slots.map { it.objectiveId })
-            assertEquals(listOf("BOUNDED_READING", "SUPPLIED_NOMINATIVE_PLURAL_RECOGNITION"), a.slots.map { it.skill })
+            assertEquals(listOf("obj-u1-decoding", "obj-u8-plural", "obj-u3-gender"), a.slots.map { it.objectiveId })
+            assertEquals(listOf("BOUNDED_READING", "SUPPLIED_NOMINATIVE_PLURAL_RECOGNITION", "NOUN_GENDER_RECOGNITION"), a.slots.map { it.skill })
             assertEquals("u8-i-plural-2", a.slots[1].itemId)
             assertTrue(completedReviewSlots(p, a, s.cumulativeReviewHistory().second).isEmpty())
             answer(p, s, a, 0); assertFalse(advancementDecision(p, p.unit(9)!!, s.v2LearnerView()).allowed)
-            answer(p, s, a, 1); assertTrue(advancementDecision(p, p.unit(9)!!, s.v2LearnerView()).allowed)
+            answer(p, s, a, 1); assertFalse(advancementDecision(p, p.unit(9)!!, s.v2LearnerView()).allowed)
+            answer(p, s, a, 2); assertTrue(advancementDecision(p, p.unit(9)!!, s.v2LearnerView()).allowed)
             assertFalse(advancementDecision(p, p.unit(9)!!, s.v2LearnerView().copy(bookAttestedUnits = setOf(1, 2, 3, 4, 5, 6, 7, 8))).allowed)
             assertTrue(advance(p, s)); assertEquals(10, s.v2Profile().currentUnitNumber)
             val row = s.governedLearnerDocument().unitCompletions.single { it.unitNumber == 9 }
@@ -69,7 +70,7 @@ class Unit9CumulativeReviewTest {
                 s.v2RecordGovernedAttempt(prepareGovernedAttempt(p, i.id, i.answer, OPTIONAL_PRACTICE, practiceStepId("mixed"), "replay")!!)
             }
             assertFalse(cumulativeReviewComplete(p, s.v2LearnerView(), 9))
-            answer(p, s, a, 0); answer(p, s, a, 1)
+            a.slots.indices.forEach { answer(p, s, a, it) }
             assertTrue(advancementDecision(p, p.unit(9)!!, s.v2LearnerView()).allowed)
             answer(p, s, a, 1, correct = false)
             assertTrue(runCatching { advance(p, s) }.isFailure)

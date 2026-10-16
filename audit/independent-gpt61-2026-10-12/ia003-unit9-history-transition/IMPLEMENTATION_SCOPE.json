@@ -1,0 +1,17 @@
+{
+  "baselineCommit": "64b5ed659f6d888a579b3068506920244d5e6bbd",
+  "soleAssetChange": {
+    "unit": 9,
+    "field": "advancement.cumulativeReviewPolicyId",
+    "before": "unit9-prior-reading-nominative-plural-v1",
+    "after": "unit9-prior-reading-plural-gender-v2"
+  },
+  "allOtherAssetValuesUnchanged": true,
+  "provenanceCountUnchanged": 6922,
+  "newAssignmentSchema": 5,
+  "unchangedAnswerBackupDatabaseSchemas": [
+    1,
+    3,
+    11
+  ]
+}
