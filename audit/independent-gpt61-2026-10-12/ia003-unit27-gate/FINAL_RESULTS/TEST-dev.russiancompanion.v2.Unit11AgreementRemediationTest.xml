@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit11AgreementRemediationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-16T03:08:01.708Z" hostname="f5c5dd6b855f" time="24.407">
+  <properties/>
+  <testcase name="unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException" classname="dev.russiancompanion.v2.Unit11AgreementRemediationTest" time="21.887"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
