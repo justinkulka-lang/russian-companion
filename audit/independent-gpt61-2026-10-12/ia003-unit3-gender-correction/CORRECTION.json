@@ -712,7 +712,7 @@
           {
             "id": "u3-st-teach-gender-2",
             "kind": "TEACH",
-            "title": "Four records in the first group",
+            "title": "Recorded masculine nouns",
             "body": "These admitted records are listed as masculine. стол — table. дом — house. го́род — town. брат — brother. The admitted record for друг — friend is also masculine. Learn this recorded label; an ending is not a substitute for the record.",
             "referenceIds": [
               "ref-u35-attribution"
@@ -739,7 +739,7 @@
           {
             "id": "u3-st-teach-gender-3",
             "kind": "TEACH",
-            "title": "Four records in the second group",
+            "title": "Recorded feminine nouns",
             "body": "These admitted records are listed as feminine. кни́га — book. вода́ — water. шко́ла — school. рабо́та — work. The admitted record for дверь — door is feminine. Learn this recorded label; do not guess the gender of another word from its ending.",
             "referenceIds": [
               "ref-u35-attribution"
@@ -1233,7 +1233,7 @@
       {
         "id": "u3-st-teach-gender-2",
         "kind": "TEACH",
-        "title": "Four records in the first group",
+        "title": "Recorded masculine nouns",
         "body": "These admitted records are listed as masculine. стол — table. дом — house. го́род — town. брат — brother. The admitted record for друг — friend is also masculine. Learn this recorded label; an ending is not a substitute for the record.",
         "referenceIds": [
           "ref-u35-attribution"
@@ -1260,7 +1260,7 @@
       {
         "id": "u3-st-teach-gender-3",
         "kind": "TEACH",
-        "title": "Four records in the second group",
+        "title": "Recorded feminine nouns",
         "body": "These admitted records are listed as feminine. кни́га — book. вода́ — water. шко́ла — school. рабо́та — work. The admitted record for дверь — door is feminine. Learn this recorded label; do not guess the gender of another word from its ending.",
         "referenceIds": [
           "ref-u35-attribution"
