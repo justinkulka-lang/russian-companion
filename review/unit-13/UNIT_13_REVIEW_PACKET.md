@@ -14,9 +14,9 @@ Unit 13 remains in development. Its readiness is content-complete and review-pen
 - Curriculum source commit: 4433aca0323c2e6ae9ee8c7c44a6b6db6eadf076
 - Unit content-review SHA-256: 7385fdd118b5f5cb988ad00832614fa4f15835e26dbbb30cfbbf9379f2340d54
 - Mapping-package SHA-256: e8ca3b0ba9b6a48acc54ea18e10a6e6fb1291698252fcbc35b02dbf2a820deb4
-- Pack content-review SHA-256: 44df2c4ef30a664c4b9758f48509bbde3728c510edf1b34fc2ac2213b85cc71f
+- Pack content-review SHA-256: b2c6c265fa8a8d4f3b74782cc71901a2d00d33ccf3b5b4b221e20f29d62cf13d
 - Review-package SHA-256: 9b96a77e731c50e36434fa38140306d84cc016790a9a88367e204ed6d92e601b
-- Repository source SHA-256: 1b72a80d28bbdfb8ebed0b8a6fe6c1b0a6b998f10e4b82e72196d59fb6a1e66e
+- Repository source SHA-256: 3d5d5b9f9681b296423a9a99a59f6379c4d3218e9e6b07f09dd30865a1b78d86
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 

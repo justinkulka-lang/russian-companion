@@ -1,0 +1,32 @@
+from pathlib import Path
+import json,copy,hashlib,csv,io,subprocess
+r=Path('/workspace/russian-companion');f=r/'app/src/main/assets/content/v2-curriculum.json';raw=f.read_text();p=json.loads(raw);old=copy.deepcopy(p);d=r/'audit/independent-gpt61-2026-10-12/ia003-unit3-gender-correction'
+u=next(u for u in p['units'] if u['number']==3);o=next(o for o in u['objectives'] if o['id']=='obj-u3-gender');session=next(s for s in u['sessions'] if s['id']=='u3-s-gender');steps={s['id']:s for s in session['steps']}
+rows={row['bare']:row for row in csv.DictReader(io.StringIO((r/'catalog/sources/units-3-5/openrussian/nouns.csv').read_text()),delimiter='\t')}
+sha=lambda x:hashlib.sha256(x.encode()).hexdigest()
+added=[]
+for word,label in [('друг','masculine'),('дверь','feminine')]:
+ assert rows[word]['gender']=={'masculine':'m','feminine':'f'}[label]
+ example=copy.deepcopy(next(e for e in p['examples'] if e['id']=='ex-u3-город'));example.update(id='ex-u3-'+word,display=word,note=rows[word]['translations_en'].split(',')[0]);p['examples'].append(example);o['exampleIds'].append(example['id'])
+ record=copy.deepcopy(next(x for x in p['provenanceRecords'] if x['itemId']=='prov-u3-noun-'+word));record.update(itemId='prov-u3-gender-field-'+word,sourceRecordId='nouns.csv:'+word+'#gender',originalSourceText=rows[word]['gender'],shippedText=label,transformation='gender field label expansion',sourceHash=sha(rows[word]['gender']),contentHash=sha(label));p['provenanceRecords'].append(record);added.append(record['itemId'])
+steps['u3-st-teach-gender-2']['body']+='The admitted record for друг — friend is also masculine. Learn this recorded label; an ending is not a substitute for the record.'
+steps['u3-st-teach-gender-2']['exampleIds'].append('ex-u3-друг')
+steps['u3-st-teach-gender-3']['body']+='The admitted record for дверь — door is feminine. Learn this recorded label; do not guess the gender of another word from its ending.'
+steps['u3-st-teach-gender-3']['exampleIds'].append('ex-u3-дверь')
+teaching=[s for s in session['steps'] if s['kind']=='TEACH']
+rem=steps['u3-st-rem-gender'];rem['title']='Review the admitted noun genders';rem['body']='\n\n'.join(s['body'] for s in teaching);rem['exampleIds']=list(dict.fromkeys(e for s in teaching for e in s.get('exampleIds',[])))
+# Keep original records immutable; add explicit arrangement/synthesis coverage.
+for target in [steps['u3-st-teach-gender-2'],steps['u3-st-teach-gender-3'],rem]:
+ record=copy.deepcopy(next(x for x in p['provenanceRecords'] if x['itemId']=='prov-ca-3-346'));record.pop('originalSourceTextRef',None)
+ binding='obj-u3-gender:'+target['id']+':complete-recorded-contrast-v1'
+ bibliography='Frozen OpenRussian nouns.csv at50e210c4803237779cb562bc1abcea529066031c, bare/accented/translations_en/gender fields for the already-admitted Unit3 nouns; friend m and door f explicitly inspected. Frozen Wikibooks Russian/Grammar/Gender oldid4310736 complete context and Copyrights oldid4622060 inspected. Existing native/stress/gloss/quotation records retain their separate CC BY-SA4.0 route, contributor attribution, changes and share-alike notice. Uncle uses the explicit Wikibooks masculine exception, not the empty dictionary gender field. Arrangement of existing Unit3 teaching plus independently authored English record-label explanation dated2026-10-16. No universal ending rule, new Russian form, scored key, audio, private Penguin text or qualified approval.'
+ source=bibliography+'\n'+target['body'];record.update(itemId='prov-ca-u3-gender-'+target['id']+'-complete-v1',sourceRecordId='ca-coverage:'+binding,originalSourceText=source,shippedText=target['body'],sourceHash=sha(source),contentHash=sha(target['body']));record['synthesis'].update(bibliography=bibliography,objectiveOrClaimBinding=binding,authorshipDeclaration='Independently authored English explanation and arrangement on2026-10-16; existing native excerpts and dictionary fields retain separate attribution. No owned-book prose.');p['provenanceRecords'].append(record);added.append(record['itemId'])
+assert len(added)==5
+# Exact compact replacements avoid reformatting the 5MB asset.
+for key in ['units','examples','provenanceRecords']:
+ a=json.dumps(old[key],ensure_ascii=False,separators=(',',':'));b=json.dumps(p[key],ensure_ascii=False,separators=(',',':'));assert raw.count(a)==1;raw=raw.replace(a,b)
+assert json.loads(raw)==p;f.write_text(raw)
+restored=copy.deepcopy(p);restored['units']=old['units'];restored['examples']=restored['examples'][:-2];restored['provenanceRecords']=restored['provenanceRecords'][:-5];assert restored==old
+ledger={'baselineCommit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=r,text=True).strip(),'baselineAssetCommit':'547457b63b317dea560e4bdc36083c1a4dce315e','beforeUnit':old['units'][2],'afterUnit':u,'beforeSession':next(s for s in old['units'][2]['sessions'] if s['id']=='u3-s-gender'),'afterSession':session,'addedExamples':p['examples'][-2:],'addedProvenanceIds':added,'oldProvenanceCount':len(old['provenanceRecords']),'newProvenanceCount':len(p['provenanceRecords']),'originalProvenancePreserved':True,'allScoredItemsUnchanged':True,'allOtherUnitsUnchanged':True,'allAdvancementAndPolicyDefinitionsUnchanged':True,'sourceInputs':{name:hashlib.sha256((r/name).read_bytes()).hexdigest() for name in ['catalog/sources/units-3-5/openrussian/nouns.csv','catalog/sources/units-3-5/openrussian/LICENSE','catalog/sources/units-3-5/wikibooks/gender-4310736.txt','catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt']},'disposition':'ENGINEERING_CORRECTION_PENDING_QUALIFIED_REVIEW'}
+(d/'CORRECTION.json').write_text(json.dumps(ledger,ensure_ascii=False,indent=2)+'\n')
+print('Added two explicit teaching examples, complete five-card repair and five pending provenance records; all prior records and scored items preserved.')

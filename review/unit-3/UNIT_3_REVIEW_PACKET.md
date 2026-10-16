@@ -11,12 +11,12 @@ Unit 3 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 08510c1c05f54579e9a9b9aa515b5dcf34e6e747
-- Unit content-review SHA-256: 5480d8e87a1651d1bc16ad6c5a0856724f7bad1b746a62bbfab2bb60f3cc3e0b
+- Curriculum source commit: e827f85ae42d61d6b31d5985951578221caa5ddb
+- Unit content-review SHA-256: ca8c750f59bb71309cdc503ff566ae5431a19db90959011af1d2232310bf3f10
 - Mapping-package SHA-256: e40e0ce030f9221b6e2fceba66fe946d85ad172703c47bd34d795e77e43120b4
-- Pack content-review SHA-256: 44df2c4ef30a664c4b9758f48509bbde3728c510edf1b34fc2ac2213b85cc71f
-- Review-package SHA-256: cfee714c20ce395bf739e52f5321c05942bc2edea1ff43e9b4ede551b8f043d2
-- Repository source SHA-256: 1b72a80d28bbdfb8ebed0b8a6fe6c1b0a6b998f10e4b82e72196d59fb6a1e66e
+- Pack content-review SHA-256: b2c6c265fa8a8d4f3b74782cc71901a2d00d33ccf3b5b4b221e20f29d62cf13d
+- Review-package SHA-256: ad1dd7409b9d392547d4706654a36b8de040863981fadff6b5933b5abb87e9b2
+- Repository source SHA-256: 3d5d5b9f9681b296423a9a99a59f6379c4d3218e9e6b07f09dd30865a1b78d86
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -113,13 +113,13 @@ tutorOptional=true
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b7e91492357d4d233cbc604beaadaf3aec5cd04db1e2086cef3b0e56b6d2d06e
+- Content hash: 0bb46cc46981c44f7fa03b91015892184667311c5eb1935a0a1201d75e9cb09f
 
 title=Recognize admitted noun genders
 kind=RECOGNITION
 unitNumber=3
 instruction=u3-st-orient,u3-st-teach-gender-1,u3-st-teach-gender-2,u3-st-teach-gender-3,u3-st-teach-gender-4,u3-st-teach-gender-5
-examples=ex-u3-стол,ex-u3-дом,ex-u3-город,ex-u3-брат,ex-u3-книга,ex-u3-вода,ex-u3-школа,ex-u3-работа,ex-u3-окно,ex-u3-письмо,ex-u3-молоко,ex-u3-море,ex-u3-мужчина,ex-u3-дядя
+examples=ex-u3-стол,ex-u3-дом,ex-u3-город,ex-u3-брат,ex-u3-книга,ex-u3-вода,ex-u3-школа,ex-u3-работа,ex-u3-окно,ex-u3-письмо,ex-u3-молоко,ex-u3-море,ex-u3-мужчина,ex-u3-дядя,ex-u3-друг,ex-u3-дверь
 practice=u3-st-guided-gender-2,u3-st-guided-gender-3,u3-st-guided-gender-4,u3-st-guided-gender-5
 checks=u3-i-gender-город,u3-i-gender-друг,u3-i-gender-дверь,u3-i-gender-море,u3-i-gender-дядя
 remediation=u3-st-rem-gender
@@ -263,15 +263,15 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 1866eea25696819056a7e039893c56dfeecca62f5f13c1b113e68ed4c17d2d7a
+- Content hash: 381aeac9e390694b00a14aa3c753bed13c71b73dde3d53dffcc8e9eaed849e9b
 
 kind=TEACH
-title=Four records in the first group
-body=These admitted records are listed as masculine. стол — table. дом — house. го́род — town. брат — brother. 
+title=Recorded masculine nouns
+body=These admitted records are listed as masculine. стол — table. дом — house. го́род — town. брат — brother. The admitted record for друг — friend is also masculine. Learn this recorded label; an ending is not a substitute for the record.
 dominantAction=Continue
 references=ref-u35-attribution
 items=
-examples=ex-u3-стол,ex-u3-дом,ex-u3-город,ex-u3-брат
+examples=ex-u3-стол,ex-u3-дом,ex-u3-город,ex-u3-брат,ex-u3-друг
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -307,15 +307,15 @@ remediationStepId=u3-st-rem-gender
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: adcf124a83e0dbcaf1c2317ee31c5e984279ce59e8d5fc2aba323020a9925d4f
+- Content hash: b6735d51554908bd49d499174afeade90f957efd49db3afec9c39b92deffc635
 
 kind=TEACH
-title=Four records in the second group
-body=These admitted records are listed as feminine. кни́га — book. вода́ — water. шко́ла — school. рабо́та — work. 
+title=Recorded feminine nouns
+body=These admitted records are listed as feminine. кни́га — book. вода́ — water. шко́ла — school. рабо́та — work. The admitted record for дверь — door is feminine. Learn this recorded label; do not guess the gender of another word from its ending.
 dominantAction=Continue
 references=ref-u35-attribution
 items=
-examples=ex-u3-книга,ex-u3-вода,ex-u3-школа,ex-u3-работа
+examples=ex-u3-книга,ex-u3-вода,ex-u3-школа,ex-u3-работа,ex-u3-дверь
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -439,15 +439,23 @@ remediationStepId=u3-st-rem-gender
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 40f036ac502ce1f6586c1df6398fa68a37547e107ee68140311b75eb5ee79cfc
+- Content hash: 79c661f30b28926c92adcabcc2c22b5e35540d343d07c7b741ab119580aed1b6
 
 kind=REMEDIATE
-title=Remediation
-body=дя́дя and мужчи́на decline like nouns ending in -а, and they are masculine. Say decline for these nouns. Do not say they conjugate.
+title=Review the admitted noun genders
+body=The frozen page says: So, in Russian, nouns have an intrinsic property called 'gender', which comes in three types: masculine, feminine, and neuter. An ending is not a substitute for the admitted record.
+
+These admitted records are listed as masculine. стол — table. дом — house. го́род — town. брат — brother. The admitted record for друг — friend is also masculine. Learn this recorded label; an ending is not a substitute for the record.
+
+These admitted records are listed as feminine. кни́га — book. вода́ — water. шко́ла — school. рабо́та — work. The admitted record for дверь — door is feminine. Learn this recorded label; do not guess the gender of another word from its ending.
+
+These admitted records are listed as neuter. окно́ — window. письмо́ — letter. молоко́ — milk. мо́ре — sea. 
+
+дя́дя and мужчи́на decline like nouns ending in -а, and they are masculine. Say decline for these nouns. Do not say they conjugate.
 dominantAction=Continue
 references=
 items=
-examples=ex-u3-стол,ex-u3-дом
+examples=ex-u3-стол,ex-u3-дом,ex-u3-город,ex-u3-брат,ex-u3-друг,ex-u3-книга,ex-u3-вода,ex-u3-школа,ex-u3-работа,ex-u3-дверь,ex-u3-окно,ex-u3-письмо,ex-u3-молоко,ex-u3-море,ex-u3-мужчина,ex-u3-дядя
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1129,6 +1137,40 @@ kind=LEXICAL
 letterId=
 display=дя́дя
 note=uncle
+objectiveId=obj-u3-gender
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### EXAMPLE `ex-u3-друг`
+
+- Objectives: obj-u3-gender
+- Sessions: u3-s-gender
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 329a358b030e626f98d2c39eb655de6ff29fc28b9514432e0f94ad3f957652eb
+
+kind=LEXICAL
+letterId=
+display=друг
+note=friend
+objectiveId=obj-u3-gender
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### EXAMPLE `ex-u3-дверь`
+
+- Objectives: obj-u3-gender
+- Sessions: u3-s-gender
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ece602b60a463fbc06275e9eb8b9c5e530e94264ee0b1146c529131ec7e46140
+
+kind=LEXICAL
+letterId=
+display=дверь
+note=door
 objectiveId=obj-u3-gender
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
@@ -1882,6 +1924,112 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-ca-u3-gender-u3-st-rem-gender-complete-v1`
+
+- Objectives: obj-u3-gender
+- Sessions: u3-s-orient, u3-s-gender
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: eec8ff4fb1f31d41e07af5fad9d6972abc1d6a762f227fb052580b0e78cfa031
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u3-gender:u3-st-rem-gender:complete-recorded-contrast-v1
+originalSourceText=Frozen OpenRussian nouns.csv at50e210c4803237779cb562bc1abcea529066031c, bare/accented/translations_en/gender fields for the already-admitted Unit3 nouns; friend m and door f explicitly inspected. Frozen Wikibooks Russian/Grammar/Gender oldid4310736 complete context and Copyrights oldid4622060 inspected. Existing native/stress/gloss/quotation records retain their separate CC BY-SA4.0 route, contributor attribution, changes and share-alike notice. Uncle uses the explicit Wikibooks masculine exception, not the empty dictionary gender field. Arrangement of existing Unit3 teaching plus independently authored English record-label explanation dated2026-10-16. No universal ending rule, new Russian form, scored key, audio, private Penguin text or qualified approval.
+The frozen page says: So, in Russian, nouns have an intrinsic property called 'gender', which comes in three types: masculine, feminine, and neuter. An ending is not a substitute for the admitted record.
+
+These admitted records are listed as masculine. стол — table. дом — house. го́род — town. брат — brother. The admitted record for друг — friend is also masculine. Learn this recorded label; an ending is not a substitute for the record.
+
+These admitted records are listed as feminine. кни́га — book. вода́ — water. шко́ла — school. рабо́та — work. The admitted record for дверь — door is feminine. Learn this recorded label; do not guess the gender of another word from its ending.
+
+These admitted records are listed as neuter. окно́ — window. письмо́ — letter. молоко́ — milk. мо́ре — sea. 
+
+дя́дя and мужчи́на decline like nouns ending in -а, and they are masculine. Say decline for these nouns. Do not say they conjugate.
+shippedText=The frozen page says: So, in Russian, nouns have an intrinsic property called 'gender', which comes in three types: masculine, feminine, and neuter. An ending is not a substitute for the admitted record.
+
+These admitted records are listed as masculine. стол — table. дом — house. го́род — town. брат — brother. The admitted record for друг — friend is also masculine. Learn this recorded label; an ending is not a substitute for the record.
+
+These admitted records are listed as feminine. кни́га — book. вода́ — water. шко́ла — school. рабо́та — work. The admitted record for дверь — door is feminine. Learn this recorded label; do not guess the gender of another word from its ending.
+
+These admitted records are listed as neuter. окно́ — window. письмо́ — letter. молоко́ — milk. мо́ре — sea. 
+
+дя́дя and мужчи́на decline like nouns ending in -а, and they are masculine. Say decline for these nouns. Do not say they conjugate.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8409554ff1bd58cd26e7427b58363b08959141770aee4cba2da2241d265f70fd
+contentHash=50a917fb60bf244d3986689e787d06916920e17f4b5940c0cc9661293da0045c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u3-gender-u3-st-teach-gender-2-complete-v1`
+
+- Objectives: obj-u3-gender
+- Sessions: u3-s-orient, u3-s-gender
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f833361d0256c8a107ef62664c8bfe0db5ee8c3bc75dc34666af5ec552d4b07b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u3-gender:u3-st-teach-gender-2:complete-recorded-contrast-v1
+originalSourceText=Frozen OpenRussian nouns.csv at50e210c4803237779cb562bc1abcea529066031c, bare/accented/translations_en/gender fields for the already-admitted Unit3 nouns; friend m and door f explicitly inspected. Frozen Wikibooks Russian/Grammar/Gender oldid4310736 complete context and Copyrights oldid4622060 inspected. Existing native/stress/gloss/quotation records retain their separate CC BY-SA4.0 route, contributor attribution, changes and share-alike notice. Uncle uses the explicit Wikibooks masculine exception, not the empty dictionary gender field. Arrangement of existing Unit3 teaching plus independently authored English record-label explanation dated2026-10-16. No universal ending rule, new Russian form, scored key, audio, private Penguin text or qualified approval.
+These admitted records are listed as masculine. стол — table. дом — house. го́род — town. брат — brother. The admitted record for друг — friend is also masculine. Learn this recorded label; an ending is not a substitute for the record.
+shippedText=These admitted records are listed as masculine. стол — table. дом — house. го́род — town. брат — brother. The admitted record for друг — friend is also masculine. Learn this recorded label; an ending is not a substitute for the record.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=38ee3ab88dd3486fb22290ba00dae596ca3cfbb1f29238831954614683b2e65f
+contentHash=feb0c9e5d2499ec419fcfd505ca61192ef7096c1a1edd45ff7fc1734f5acf57f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u3-gender-u3-st-teach-gender-3-complete-v1`
+
+- Objectives: obj-u3-gender
+- Sessions: u3-s-orient, u3-s-gender
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1a0f64090996c52b3e183c141963db149dd1887242d70893f19d239c3105e0a8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u3-gender:u3-st-teach-gender-3:complete-recorded-contrast-v1
+originalSourceText=Frozen OpenRussian nouns.csv at50e210c4803237779cb562bc1abcea529066031c, bare/accented/translations_en/gender fields for the already-admitted Unit3 nouns; friend m and door f explicitly inspected. Frozen Wikibooks Russian/Grammar/Gender oldid4310736 complete context and Copyrights oldid4622060 inspected. Existing native/stress/gloss/quotation records retain their separate CC BY-SA4.0 route, contributor attribution, changes and share-alike notice. Uncle uses the explicit Wikibooks masculine exception, not the empty dictionary gender field. Arrangement of existing Unit3 teaching plus independently authored English record-label explanation dated2026-10-16. No universal ending rule, new Russian form, scored key, audio, private Penguin text or qualified approval.
+These admitted records are listed as feminine. кни́га — book. вода́ — water. шко́ла — school. рабо́та — work. The admitted record for дверь — door is feminine. Learn this recorded label; do not guess the gender of another word from its ending.
+shippedText=These admitted records are listed as feminine. кни́га — book. вода́ — water. шко́ла — school. рабо́та — work. The admitted record for дверь — door is feminine. Learn this recorded label; do not guess the gender of another word from its ending.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=26344347fb2404a8faa74db822cb90bc41cebbbb9249d314e63ec4ea0c10a2cd
+contentHash=5e6d0c97e1c1e2926876b4122cbde7a334788262d1fca8ad664b2b39016e2b37
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-u3-dyadya-note`
 
 - Objectives: obj-u3-gender
@@ -1905,6 +2053,64 @@ attribution=Wikibooks Russian grammar contributors, CC BY-SA 4.0. Page history f
 shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
 sourceHash=77ddf6906536584b1db04d17b6ea8729c4b27f518bb6ac0ae49e0f59fcc8fb9d
 contentHash=77ddf6906536584b1db04d17b6ea8729c4b27f518bb6ac0ae49e0f59fcc8fb9d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u3-gender-field-дверь`
+
+- Objectives: obj-u3-gender
+- Sessions: u3-s-orient, u3-s-gender
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9243a2312eababca1f44cc8dbca81abc02435738c631b2c9975fe50df6d9b8bb
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=nouns.csv:дверь#gender
+originalSourceText=f
+shippedText=feminine
+transformation=gender field label expansion
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=252f10c83610ebca1a059c0bae8255eba2f95be4d1d7bcfa89d7248a82d9f111
+contentHash=584a6898b0a5a6131f4ed1c8c80a773d6a717aabbe86dcd4a9c6af40d893f212
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-u3-gender-field-друг`
+
+- Objectives: obj-u3-gender
+- Sessions: u3-s-orient, u3-s-gender
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a0987e0497064fa0a64a3be523952150e3f61274124f4b636a2e951638146d66
+
+recordType=lexical record
+sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv
+sourceRevision=50e210c4803237779cb562bc1abcea529066031c
+sourceRecordId=nouns.csv:друг#gender
+originalSourceText=m
+shippedText=masculine
+transformation=gender field label expansion
+licenseId=CC BY-SA 4.0
+licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/
+attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0.
+shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.
+sourceHash=62c66a7a5dd70c3146618063c344e531e6d4b59e379808443ce962b3abd63c5a
+contentHash=b01cc7b0a6012d960af4357a1e27f2d14f5b605c42d1d1372b0f2d7f6f328087
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -4929,6 +5135,8 @@ permitsAppUse=true
 - `obj-u3-gender` EXAMPLE `ex-u3-море`
 - `obj-u3-gender` EXAMPLE `ex-u3-мужчина`
 - `obj-u3-gender` EXAMPLE `ex-u3-дядя`
+- `obj-u3-gender` EXAMPLE `ex-u3-друг`
+- `obj-u3-gender` EXAMPLE `ex-u3-дверь`
 - `obj-u3-gender` PRACTICE `u3-st-guided-gender-2`
 - `obj-u3-gender` PRACTICE `u3-st-guided-gender-3`
 - `obj-u3-gender` PRACTICE `u3-st-guided-gender-4`
@@ -4982,6 +5190,7 @@ permitsAppUse=true
 - `u3-st-teach-gender-2` EXAMPLE `ex-u3-дом`
 - `u3-st-teach-gender-2` EXAMPLE `ex-u3-город`
 - `u3-st-teach-gender-2` EXAMPLE `ex-u3-брат`
+- `u3-st-teach-gender-2` EXAMPLE `ex-u3-друг`
 - `u3-st-teach-gender-2` REFERENCE `ref-u35-attribution`
 - `u3-st-guided-gender-2` REMEDIATION `u3-st-rem-gender`
 - `u3-st-guided-gender-2` ITEM `u3-i-gender-стол`
@@ -4990,6 +5199,7 @@ permitsAppUse=true
 - `u3-st-teach-gender-3` EXAMPLE `ex-u3-вода`
 - `u3-st-teach-gender-3` EXAMPLE `ex-u3-школа`
 - `u3-st-teach-gender-3` EXAMPLE `ex-u3-работа`
+- `u3-st-teach-gender-3` EXAMPLE `ex-u3-дверь`
 - `u3-st-teach-gender-3` REFERENCE `ref-u35-attribution`
 - `u3-st-guided-gender-3` REMEDIATION `u3-st-rem-gender`
 - `u3-st-guided-gender-3` ITEM `u3-i-gender-книга`
@@ -5007,6 +5217,20 @@ permitsAppUse=true
 - `u3-st-guided-gender-5` ITEM `u3-i-gender-мужчина`
 - `u3-st-rem-gender` EXAMPLE `ex-u3-стол`
 - `u3-st-rem-gender` EXAMPLE `ex-u3-дом`
+- `u3-st-rem-gender` EXAMPLE `ex-u3-город`
+- `u3-st-rem-gender` EXAMPLE `ex-u3-брат`
+- `u3-st-rem-gender` EXAMPLE `ex-u3-друг`
+- `u3-st-rem-gender` EXAMPLE `ex-u3-книга`
+- `u3-st-rem-gender` EXAMPLE `ex-u3-вода`
+- `u3-st-rem-gender` EXAMPLE `ex-u3-школа`
+- `u3-st-rem-gender` EXAMPLE `ex-u3-работа`
+- `u3-st-rem-gender` EXAMPLE `ex-u3-дверь`
+- `u3-st-rem-gender` EXAMPLE `ex-u3-окно`
+- `u3-st-rem-gender` EXAMPLE `ex-u3-письмо`
+- `u3-st-rem-gender` EXAMPLE `ex-u3-молоко`
+- `u3-st-rem-gender` EXAMPLE `ex-u3-море`
+- `u3-st-rem-gender` EXAMPLE `ex-u3-мужчина`
+- `u3-st-rem-gender` EXAMPLE `ex-u3-дядя`
 - `u3-st-check-gender` REMEDIATION `u3-st-rem-gender`
 - `u3-st-check-gender` ITEM `u3-i-gender-город`
 - `u3-st-check-gender` ITEM `u3-i-gender-друг`
@@ -5056,7 +5280,12 @@ permitsAppUse=true
 - `obj-u3-gender` PROVENANCE `prov-ca-3-346`
 - `obj-u3-gender` PROVENANCE `prov-ca-3-347`
 - `obj-u3-gender` PROVENANCE `prov-ca-3-348`
+- `obj-u3-gender` PROVENANCE `prov-ca-u3-gender-u3-st-rem-gender-complete-v1`
+- `obj-u3-gender` PROVENANCE `prov-ca-u3-gender-u3-st-teach-gender-2-complete-v1`
+- `obj-u3-gender` PROVENANCE `prov-ca-u3-gender-u3-st-teach-gender-3-complete-v1`
 - `obj-u3-gender` PROVENANCE `prov-u3-dyadya-note`
+- `obj-u3-gender` PROVENANCE `prov-u3-gender-field-дверь`
+- `obj-u3-gender` PROVENANCE `prov-u3-gender-field-друг`
 - `obj-u3-gender` PROVENANCE `prov-u3-gender-sentence`
 - `obj-u3-gender` PROVENANCE `prov-u3-gloss-брат`
 - `obj-u3-gender` PROVENANCE `prov-u3-gloss-вода`
