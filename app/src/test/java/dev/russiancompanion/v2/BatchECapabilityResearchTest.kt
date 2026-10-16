@@ -316,7 +316,7 @@ class BatchECapabilityResearchTest {
         val pack = loadCurriculumPack(root)
         val model = reconcileCurriculumReadiness(root, pack)
         val candidate = readAcceptanceCandidate(root)
-        assertEquals("5b39a1bff84889114b3ec4cbcc2e94170beb26ec2ab5c40d0f3bfc2e060a9274", model.packContentReviewDigest)
+        assertEquals("72a41795b48b762b85c52d28212f0efc43db574034f57704841316a7197a46ab", model.packContentReviewDigest)
         assertEquals(candidate?.sourceDigest, model.repositorySourceDigest)
         assertEquals(model.repositorySourceDigest, computeReleaseSourceDigest(root))
         assertEquals("NOT_APPROVED", model.publicRelease)
@@ -341,7 +341,7 @@ class BatchECapabilityResearchTest {
             23 to "e7cf730b6ed8317979d7c9f59c23b360f28081d0461fe7a0864643a3d855f683",
             24 to "d5cb2b37f1000c8728b529e4167f3ab06fb216cb12c7a6d317531f1b309c2e66",
             25 to "57470dadfa8a6184a38538a4bae84430e8e6d6ba2ad491d1e926690777050142",
-            26 to "7870405b2810239e5e744706b0376877191d00afc337ac30e7a2249ad97fddab",
+            26 to "379cd55838be8daeac22805558909023411acbb1db37dc41c6090fd8425ae902",
             27 to "fb8a23246226a841df660cae2517b139cba2ff51ef5939792268d2c6cb50bc2e",
             28 to "decfe657342b98c1c35277cd88e1a3e125df1233549f01872af8eae7c8fcbd82",
             // Contextual punctuation supersedes historical b35528e0a8ca27fed0fe18541aab59755d6adcad90a7ccaae86c1f8318ab9374.
@@ -368,7 +368,7 @@ class BatchECapabilityResearchTest {
             23 to "234cdaf06edfbe6e93aba065e5b9cea8d7f68e23e2c062c3ea2b86e387c340b9",
             24 to "ba85ebee376a139c9198c859bf5410a8db9f3bc6ce329207356f0ff28c92101f",
             25 to "0aa1e793c0d42a3059fba3fd9e45aabcdcb7502833e7f30ab6e23c0f9945fc7f",
-            26 to "72034166355fc1ba567a4caa64db7c908d9c523ed7e2f3d618e45e9653a14e99",
+            26 to "d121effb0efa17413ade5b0b89abdece4832ccf4d362036269d75133b23d4e39",
             27 to "e1607fe23cb8f2e8bbc35c9a76a49b3895992b109075052c61b8daeab4e0e941",
             28 to "a35f13bcab8de9bbc9f2530ac07da48c7b3b6384fddcb7553c8caecb91dbb9c4",
             // Contextual punctuation supersedes historical 73eeb58d502dc27b52246f6c92bc52b4e8847ccce1c429806d28a18701d07639.
