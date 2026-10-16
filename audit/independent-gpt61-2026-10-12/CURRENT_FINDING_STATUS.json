@@ -1306,10 +1306,11 @@
     "findingStatus": "OPEN"
   },
   "currentEngineeringContinuation": {
-    "testedCommit": "0c774f18bd07dffb19e8599a17c5d947d3219386",
-    "checkpoint": "policyHistoryTransitionCheckpoint",
-    "priorSelectionCheckpoint": "units5And6RecentSelectionCheckpoint",
-    "legacyLatestPointers": "Older top-level latest* pointers remain historical; current checkpoint supersedes recency,not evidence."
+    "initialTestedCommit": "bc8bd0afbe1b72d2ded865da0e66939ae877c2dc",
+    "correctedTestedCommit": "d87c2476802502cf81e343e02e9348a163911a52",
+    "checkpoint": "unit6WiderPolicyCheckpoint",
+    "priorHistoryCheckpoint": "policyHistoryTransitionCheckpoint",
+    "legacyLatestPointers": "Earlier top-level latest* fields remain historical;explicit current checkpoint supersedes recency,not evidence."
   },
   "units5And6RecentSelectionCheckpoint": {
     "baselineCommit": "74eb8b655ebd0af388c4fba05a986d04e6ec02a8",
@@ -1368,6 +1369,42 @@
     "design": "ia003-policy-history-transition/DESIGN.md",
     "next": "Implement explicit Unit6 v2 policy/history transition;preserve ordinary and downstream owner identities and assignment-policy-specific eligibility.",
     "formalAcceptance": false,
+    "findingStatus": "OPEN"
+  },
+  "unit6WiderPolicyCheckpoint": {
+    "baselineCommit": "483f907242b0b0bfe7a9a52426469492beb45dc3",
+    "implementationCommit": "886732be191b5d897f0f57cfb266482562b7b2a2",
+    "initialTestedCommit": "bc8bd0afbe1b72d2ded865da0e66939ae877c2dc",
+    "initialCounts": {
+      "tests": 97,
+      "failures": 2,
+      "errors": 0,
+      "skipped": 0
+    },
+    "initialPassed": 95,
+    "correctedTestedCommit": "d87c2476802502cf81e343e02e9348a163911a52",
+    "correctedCounts": {
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "interruptedRun": "e6f12405c0a28ae8a72fa3243bcce3b19a66c69b",
+    "interruptedCounts": "UNAVAILABLE;not a completed96 result",
+    "overlappingScopesSummed": false,
+    "completeSuite": false,
+    "activePolicyId": "unit6-prior-reading-subject-noun-behavior-v2",
+    "newAssignmentSchema": 4,
+    "legacyUnit6Versions": [
+      1,
+      3
+    ],
+    "unit3Schema2ScopePreserved": true,
+    "onlyAssetChange": "Unit6 advancement.cumulativeReviewPolicyId",
+    "provenanceCount": 6914,
+    "manifest": "ia003-unit6-wider-policy/FINAL_VERIFICATION_MANIFEST.json",
+    "nextInstructions": "ia003-unit6-wider-policy/NEXT_IA003_REVIEW.md",
+    "qualifiedAcceptance": false,
     "findingStatus": "OPEN"
   }
 }
