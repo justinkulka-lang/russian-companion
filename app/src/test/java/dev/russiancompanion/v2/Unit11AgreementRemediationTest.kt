@@ -39,7 +39,7 @@ class Unit11AgreementRemediationTest {
         assertEquals(8, p.unit(11)!!.advancement!!.minimumDistinctChecks)
         assertEquals(old.items, p.items); assertEquals(old.examples, p.examples)
         assertEquals(old.provenanceRecords, p.provenanceRecords.dropLast(1))
-        assertNull(cumulativeReviewPolicy(28))
+        assertNull(cumulativeReviewPolicy(29))
     }
     @Test fun oldGuidePositionDoesNotResumeAsTheNewSecondTeachingCard() {
         val p = pack(); val old = baseline()

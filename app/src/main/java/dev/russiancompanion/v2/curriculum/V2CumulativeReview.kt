@@ -27,7 +27,7 @@ internal data class CumulativeReviewAnswer(
 )
 
 /** Skill labels describe only the bounded evidence supported by the authored checks. */
-internal enum class CumulativeReviewSkill { BOUNDED_READING, PRINTED_LETTER_RECOGNITION, NOUN_GENDER_RECOGNITION, SUPPLIED_NOMINATIVE_SUBJECT_RECOGNITION, SUPPLIED_NOUN_BEHAVIOR_RECOGNITION, SUPPLIED_INANIMATE_ACCUSATIVE_RECOGNITION, SUPPLIED_NOMINATIVE_AGREEMENT_RECOGNITION, SUPPLIED_NOMINATIVE_PLURAL_RECOGNITION, SUPPLIED_NUMERAL_GENDER_RECOGNITION, SUPPLIED_POSSESSION_ABSENCE_RECOGNITION, SUPPLIED_PAST_GENDER_RECOGNITION, SUPPLIED_ASPECT_PARTNER_RECOGNITION, SUPPLIED_REPORTED_FRAME_TIME_RECOGNITION, SUPPLIED_IMPERSONAL_STATE_RECOGNITION, SUPPLIED_IMPERATIVE_FORM_RECOGNITION, SUPPLIED_INSTRUMENTAL_PLURAL_RECOGNITION, SUPPLIED_QUESTION_INTERPRETATION, SUPPLIED_RELATIVE_CLAUSE_RECOGNITION, SUPPLIED_CONDITIONAL_AGREEMENT_RECOGNITION, SUPPLIED_MOTION_CONTEXT_RECOGNITION, SUPPLIED_REFLEXIVE_OBJECT_RECOGNITION, SUPPLIED_HALF_QUANTITY_PHRASE_RECOGNITION, SUPPLIED_PERIOD_POSITION_PHRASE_RECOGNITION, SUPPLIED_NEGATIVE_SENTENCE_RECOGNITION, SUPPLIED_NAME_REPLY_RECOGNITION, SUPPLIED_ADDRESS_COMPONENT_RECOGNITION }
+internal enum class CumulativeReviewSkill { BOUNDED_READING, PRINTED_LETTER_RECOGNITION, NOUN_GENDER_RECOGNITION, SUPPLIED_NOMINATIVE_SUBJECT_RECOGNITION, SUPPLIED_NOUN_BEHAVIOR_RECOGNITION, SUPPLIED_INANIMATE_ACCUSATIVE_RECOGNITION, SUPPLIED_NOMINATIVE_AGREEMENT_RECOGNITION, SUPPLIED_NOMINATIVE_PLURAL_RECOGNITION, SUPPLIED_NUMERAL_GENDER_RECOGNITION, SUPPLIED_POSSESSION_ABSENCE_RECOGNITION, SUPPLIED_PAST_GENDER_RECOGNITION, SUPPLIED_ASPECT_PARTNER_RECOGNITION, SUPPLIED_REPORTED_FRAME_TIME_RECOGNITION, SUPPLIED_IMPERSONAL_STATE_RECOGNITION, SUPPLIED_IMPERATIVE_FORM_RECOGNITION, SUPPLIED_INSTRUMENTAL_PLURAL_RECOGNITION, SUPPLIED_QUESTION_INTERPRETATION, SUPPLIED_RELATIVE_CLAUSE_RECOGNITION, SUPPLIED_CONDITIONAL_AGREEMENT_RECOGNITION, SUPPLIED_MOTION_CONTEXT_RECOGNITION, SUPPLIED_REFLEXIVE_OBJECT_RECOGNITION, SUPPLIED_HALF_QUANTITY_PHRASE_RECOGNITION, SUPPLIED_PERIOD_POSITION_PHRASE_RECOGNITION, SUPPLIED_NEGATIVE_SENTENCE_RECOGNITION, SUPPLIED_NAME_REPLY_RECOGNITION, SUPPLIED_ADDRESS_COMPONENT_RECOGNITION, SUPPLIED_PAST_PASSIVE_MEANING_RECOGNITION }
 
 internal data class CumulativeReviewObjectivePool(
     val objectiveId: String, val skill: CumulativeReviewSkill, val candidateItemIds: List<String>,
@@ -257,6 +257,14 @@ internal object Unit27CumulativeReviewPolicy {
     ))
 }
 
+internal object Unit28CumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit28-prior-reading-past-passive-meaning-v1", 28, listOf(
+        CumulativeReviewObjectivePool("obj-u1-decoding", CumulativeReviewSkill.BOUNDED_READING, listOf("u1-i-decode-pair")),
+        CumulativeReviewObjectivePool("obj-u27-passive", CumulativeReviewSkill.SUPPLIED_PAST_PASSIVE_MEANING_RECOGNITION,
+            listOf("u27-i-passive-1"), "u27-st-rem-passive"),
+    ))
+}
+
 /** Authored engineering slices only; every remaining target has no policy. */
 internal fun cumulativeReviewPolicy(targetUnit: Int): CumulativeReviewPolicy? = when (targetUnit) {
     3 -> Unit3CumulativeReviewPolicy.definition
@@ -284,6 +292,7 @@ internal fun cumulativeReviewPolicy(targetUnit: Int): CumulativeReviewPolicy? = 
     25 -> Unit25CumulativeReviewPolicy.definition
     26 -> Unit26CumulativeReviewPolicy.definition
     27 -> Unit27CumulativeReviewPolicy.definition
+    28 -> Unit28CumulativeReviewPolicy.definition
     else -> null
 }
 
@@ -313,6 +322,7 @@ internal fun cumulativeReviewTitle(targetUnit: Int): String = when (targetUnit) 
     25 -> "Review earlier reading and supplied negative sentences"
     26 -> "Review earlier reading and supplied conversation formulas"
     27 -> "Review earlier reading and supplied address components"
+    28 -> "Review earlier reading and supplied past passive meanings"
     else -> "Review earlier objectives"
 }
 
@@ -457,9 +467,9 @@ internal fun historicalReviewCompletionCurrent(pack: V2CurriculumPack, unit: V2U
     if (!cumulativeReviewDeclarationValid(pack, unit.number)) return false
     val record = learner.unitReviewCompletions[unit.number] ?: return false
     val emptyLink = record.policyDigest.isEmpty() && record.assignmentId.isEmpty() && record.completionOrder == 0L
-    // Schema11 already wrote ordinary Unit4–27 rows with preActivation=false before their activation.
+    // Schema11 already wrote ordinary Unit4–28 rows with preActivation=false before their activation.
     // Only exact pre-policy governed work may preserve them; current-source raw flags cannot.
-    if (emptyLink && (record.preActivation || unit.number in 4..27)) {
+    if (emptyLink && (record.preActivation || unit.number in 4..28)) {
         val legacy = preReviewUnitDigest(pack, unit.number)
         val oldEvidence = learner.copy(governedAttempts = learner.governedAttempts?.filter {
             it.unitNumber != unit.number || it.unitContentDigest == legacy
