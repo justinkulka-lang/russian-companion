@@ -1,0 +1,79 @@
+{
+  "baselineCommit": "74eb8b655ebd0af388c4fba05a986d04e6ec02a8",
+  "runStartedUtc": "2026-10-16T14:08:37.440170+00:00",
+  "command": "./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*MultiPoolBaselineExportTest' --max-workers=4 --console=plain",
+  "workingDirectory": "/workspace/russian-companion",
+  "initialization": "source /workspace/setup/android-env.sh",
+  "runnerExitCode": 0,
+  "xml": {
+    "name": "dev.russiancompanion.v2.MultiPoolBaselineExportTest",
+    "tests": "1",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-16T14:08:55.708Z",
+    "hostname": "f5c5dd6b855f",
+    "time": "19.633"
+  },
+  "sourceState": "Temporary untracked exporter archived as BASELINE_EXPORT.kt.txt;all production unchanged at baseline commit. Not a clean full-repository test-commit claim.",
+  "exporterSha256": "4cf71b403b457d612dbc4ab625e30bbe20d401dbae6aa27cb2a5099ec3b468a2",
+  "productionTrees": {
+    "app/src/main": "efaa64e6164e46bb506191362f65e627f53e934d",
+    "app/schemas": "bf24044fda8ca836d62e24e94c537eea0aec8e83",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f"
+  },
+  "fixtures": [
+    {
+      "path": "BASELINE_BEFORE_UNIT5.json",
+      "bytes": 91328,
+      "sha256": "20100bbcab6d3349c0e42d7d6c5fe3ceed8b19bf863170116712d6d6474b080c",
+      "assignmentSchemas": {
+        "4": 1,
+        "3": 2
+      },
+      "completedUnits": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "path": "BASELINE_BEFORE_UNIT6.json",
+      "bytes": 118591,
+      "sha256": "ae19392ce9c084c181406acebdeb7c81aa239f674685dad8e233e8d0172f77c8",
+      "assignmentSchemas": {
+        "4": 1,
+        "3": 2,
+        "5": 1
+      },
+      "completedUnits": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "path": "BASELINE_COMPLETED_UNIT6.json",
+      "bytes": 120548,
+      "sha256": "bad6f34a10ff14b691b8f7e79ddd65ab3ea0cbb52ba70f5df1aa967168b2b11b",
+      "assignmentSchemas": {
+        "4": 1,
+        "3": 2,
+        "5": 1,
+        "6": 1
+      },
+      "completedUnits": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  ],
+  "completeSuite": false
+}

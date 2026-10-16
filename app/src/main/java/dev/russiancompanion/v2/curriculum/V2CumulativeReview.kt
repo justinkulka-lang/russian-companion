@@ -7,6 +7,8 @@ import java.security.MessageDigest
 internal const val CUMULATIVE_REVIEW_SCHEMA = 1
 // New Unit3 assignments use governed latest-miss/least-recent selection; pools stay v1.
 internal const val UNIT3_RECENT_SELECTION_ASSIGNMENT_SCHEMA = 2
+// Separate extension: schema2 remains Unit3-only, schema3 allocates Units5/6.
+internal const val UNITS5_6_RECENT_SELECTION_ASSIGNMENT_SCHEMA = 3
 internal const val CUMULATIVE_REVIEW_ROLE = "CUMULATIVE_REVIEW"
 
 @Serializable
@@ -375,10 +377,17 @@ private fun teachingDigest(pack: V2CurriculumPack, objective: V2Objective): Stri
     },
 ))
 
-/** Schema2 is a bounded Unit3 selector; unknown versions cannot acquire credit. */
+private fun newReviewAssignmentSchema(targetUnit: Int): Int = when (targetUnit) {
+    3 -> UNIT3_RECENT_SELECTION_ASSIGNMENT_SCHEMA
+    5, 6 -> UNITS5_6_RECENT_SELECTION_ASSIGNMENT_SCHEMA
+    else -> CUMULATIVE_REVIEW_SCHEMA
+}
+
+/** Preserve each version's target scope; unknown combinations cannot acquire credit. */
 private fun reviewAssignmentSchemaSupported(a: CumulativeReviewAssignment): Boolean =
     a.schema == CUMULATIVE_REVIEW_SCHEMA ||
-        (a.schema == UNIT3_RECENT_SELECTION_ASSIGNMENT_SCHEMA && a.targetUnit == 3)
+        (a.schema == UNIT3_RECENT_SELECTION_ASSIGNMENT_SCHEMA && a.targetUnit == 3) ||
+        (a.schema == UNITS5_6_RECENT_SELECTION_ASSIGNMENT_SCHEMA && a.targetUnit in 5..6)
 
 /** Allocation only: these attempts never supply assignment-bound due credit. */
 internal fun recentReviewCandidate(pack: V2CurriculumPack, learner: V2LearnerView,
@@ -409,6 +418,7 @@ internal fun createUnit3ReviewAssignment(pack: V2CurriculumPack, learner: V2Lear
 internal fun createCumulativeReviewAssignment(pack: V2CurriculumPack, learner: V2LearnerView,
                                              targetUnit: Int, id: String, boundary: Long): CumulativeReviewAssignment? {
     val policy = cumulativeReviewPolicy(targetUnit) ?: return null
+    val assignmentSchema = newReviewAssignmentSchema(targetUnit)
     if (id.isBlank() || boundary < 0 || pack.schemaVersion != 1 ||
         !cumulativeReviewDeclarationValid(pack, targetUnit)) return null
     V2PackIdentityIndex.warm(pack)
@@ -427,14 +437,14 @@ internal fun createCumulativeReviewAssignment(pack: V2CurriculumPack, learner: V
         val eligible = candidates.mapNotNull { pack.item(it) }.filter {
             it.id in o.checkItemIds && it.objectiveId == o.id && it.options.size >= 2 && it.answer in it.options
         }
-        val item = (if (targetUnit == 3) recentReviewCandidate(pack, learner, eligible)
+        val item = (if (assignmentSchema != CUMULATIVE_REVIEW_SCHEMA) recentReviewCandidate(pack, learner, eligible)
             else eligible.firstOrNull()) ?: return null
         CumulativeReviewSlot(o.id, skill.name, item.id, unit.number, V2Validator.checkItemContentDigest(item),
             reviewUnitDigest(pack, unit.number), teachingDigest(pack, o))
     }
     val a = CumulativeReviewAssignment(id, targetUnit, policy.id,
         policy.digest, closedResponseRuleDigest(), boundary, slots, "",
-        schema = if (targetUnit == 3) UNIT3_RECENT_SELECTION_ASSIGNMENT_SCHEMA else CUMULATIVE_REVIEW_SCHEMA)
+        schema = assignmentSchema)
     return a.copy(digest = reviewAssignmentDigest(a))
 }
 

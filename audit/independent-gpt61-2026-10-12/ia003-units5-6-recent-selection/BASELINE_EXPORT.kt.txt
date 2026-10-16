@@ -1,0 +1,53 @@
+package dev.russiancompanion.v2
+import android.content.Context
+import androidx.test.core.app.ApplicationProvider
+import dev.russiancompanion.data.local.LocalStore
+import dev.russiancompanion.v2.curriculum.*
+import dev.russiancompanion.v2.backup.*
+import kotlinx.coroutines.runBlocking
+import org.junit.Assert.*
+import org.junit.Test
+import org.junit.runner.RunWith
+import org.robolectric.RobolectricTestRunner
+import org.robolectric.annotation.Config
+import java.io.File
+@RunWith(RobolectricTestRunner::class)
+@Config(sdk=[33])
+class MultiPoolBaselineExportTest {
+ @Test fun exportActualSchemaOneUnit5And6HistoryBeforeSelectionExtension() {
+  val p=V2PackLoader.parse(File(root(),"app/src/main/assets/content/v2-curriculum.json").readText());V2PackIdentityIndex.warm(p)
+  LocalStore.openInMemory(context()).use { s ->
+   for(n in 1..6) {
+    ordinary(p,s,n)
+    if(n<3) { s.v2CompleteUnit(n,"baseline");continue }
+    if(n in 5..6) save(s,"BASELINE_BEFORE_UNIT$n.json")
+    val a=s.openCumulativeReview(p,n,s.learnerMutationEpoch())!!
+    assertEquals(if(n==3)2 else 1,a.schema)
+    if(n==5)assertEquals("u4-i-nom-role-train",a.slots[1].itemId)
+    if(n==6)assertEquals("u5-i-indecl-такси",a.slots[1].itemId)
+    a.slots.forEachIndexed { index,slot -> assertTrue(s.answerCumulativeReview(p,a.id,index,p.item(slot.itemId)!!.answer,s.learnerMutationEpoch())) }
+    runBlocking { assertTrue(advanceFrom(p,s,n)) }
+   }
+   assertEquals((1..6).toSet(),currentCompletedUnitNumbers(p,s.v2LearnerView()))
+   save(s,"BASELINE_COMPLETED_UNIT6.json")
+  }
+ }
+ private fun save(s:LocalStore,name:String) {
+  File(root(),"audit/independent-gpt61-2026-10-12/ia003-units5-6-recent-selection/$name").writeText(backupJson.encodeToString(GovernedLearnerDocument.serializer(),s.governedLearnerDocument()))
+ }
+    private fun ordinary(p: V2CurriculumPack, s: LocalStore, n: Int) {
+        s.v2SaveProfile(s.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = n, currentSessionId = null))
+        for (step in p.unit(n)!!.sessions.flatMap { it.steps }) {
+            for (id in step.itemIds) s.v2RecordGovernedAttempt(prepareGovernedAttempt(p, id, p.item(id)!!.answer, PRESCRIBED_CHECK, step.id, "same-clock")!!)
+            s.v2CompleteGovernedStep(step.id, governedStepCompletionDigest(p, s.v2LearnerView(), step.id)!!, "same-clock")
+        }
+        s.v2AttestBook(n, "same-clock")
+    }
+    private suspend fun advanceFrom(p: V2CurriculumPack, s: LocalStore, n: Int): Boolean {
+        val session = p.unit(n + 1)!!.sessions.first().id
+        return s.v2AdvanceUnitIfCurrentAsync(s.learnerMutationEpoch(), n, "advance", n + 1, session, resumePositionDigest(p, session, 0)!!, GOVERNED_IDENTITY_SCHEMA, p)
+    }
+
+ private fun root()=File(if(File("app").isDirectory)"." else "..")
+ private fun context():Context=ApplicationProvider.getApplicationContext()
+}
