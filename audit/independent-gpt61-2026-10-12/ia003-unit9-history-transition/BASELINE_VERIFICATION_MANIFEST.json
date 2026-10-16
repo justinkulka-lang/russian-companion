@@ -1,0 +1,63 @@
+{
+  "baselineCommit": "61c68cfcf20cd92a4b6c310c4abf8ff2284e36e5",
+  "sourceScope": "Recorded production/test checkout plus exact archived temporary exporter;not a clean historical full-repository suite",
+  "command": "bash audit/independent-gpt61-2026-10-12/ia003-unit9-history-transition/capture-baseline.sh",
+  "exitCode": 0,
+  "tests": 1,
+  "passed": 1,
+  "failed": 0,
+  "errors": 0,
+  "skipped": 0,
+  "classes": 1,
+  "testcaseNames": [
+    "captureGenuineUnit9AndOwnerBoundUnit10BeforePolicyTransition"
+  ],
+  "xmlTimestamp": "2026-10-16T20:26:58.934Z",
+  "timeSeconds": "59.752",
+  "genuineLifecycleStates": 8,
+  "actualFormat3Backups": 8,
+  "decodeReplaceNamedReopenVerifiedForEach": true,
+  "syntheticLearnersAndAttestations": true,
+  "newPolicyActivated": false,
+  "lint": "NOT_RUN_THIS_SCOPE;prior Unit3 final result retained separately",
+  "releaseGateAttachment": "NOT_RUN_THIS_SCOPE;prior Unit3 final result retained separately",
+  "apk": {
+    "assembly": "NOT_RUN",
+    "identity": "configured dev.russiancompanion / 2.0.0-dev / code5",
+    "hash": "NOT_RECORDED",
+    "signature": "NOT_RECORDED"
+  },
+  "excludedScreenshotExporters": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  },
+  "files": {
+    "ANSWERED_REVIEW.json": "ae7dcbdb31c50957d50a7855a51a68a292dbad87b6ba2ff5e3035b932e34859e",
+    "ANSWERED_REVIEW.zip": "2cfe7f91827721625d598899447bb8a906e9c5ecafba34125c7ea36e03649c83",
+    "BASELINE_CONTEXT.json": "4103606e41b0cf7a56ec3154c621c34e8212e7545080547fe29b11db2a15e4e8",
+    "BASELINE_EXPORT.kt.txt": "099ec11a3cac7aa43847c4a057aaf8a7c1100f9534b3c6634556debbf0a84d16",
+    "BASELINE_RUN.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "BASELINE_RUN.log": "641c844eb650a706f15c83362ed24291cf9f7b0680f1c928a9f00a54a90bc049",
+    "BASELINE_TEST.xml": "86fd054ad085d3f505b70ff7a845175f78d5017c5cff9863474cbcec5a272f28",
+    "BEFORE_UNIT9_WORK.json": "35bc83a4c8596fe1ded6c6935618859fea46f48808f5a06f58a22767d9af4263",
+    "BEFORE_UNIT9_WORK.zip": "56f4abb7d682e7de425d1d3f2f0691bf8bf8c4776eaecdffac91463f7d5c0ce1",
+    "COMPLETED_UNIT10.json": "6fdf8c267c5f567706145cf67de82124cc48e2e347427363126fa7de9ac1c43d",
+    "COMPLETED_UNIT10.zip": "928f5be12db3b61f9f06f23d37a4dbe4368aeb255c830e55c327f493a7fbd5df",
+    "COMPLETED_UNIT9.json": "275e4be6463adbff234a34dec8a399056c5649abf48a47aa7648e4c753646dcb",
+    "COMPLETED_UNIT9.zip": "c64d2b49b0ce6123fd56640e3edc3cb42752a8025391de99db0994523a88fba4",
+    "DESIGN.md": "dc2c10ea8b0c07a58c22e1eb2ba0de8576e01c57f794b7b8ff224a95fd537d6e",
+    "ORDINARY_UNIT9.json": "9c60f2ebe673afed2b483c984f3724a29b7a3a25c717702b801b17acbecfa12f",
+    "ORDINARY_UNIT9.zip": "3fd490c3597741fa9620e2a0789c5586d37ec8e9e8e2223fc44e0209d044e3bb",
+    "PARTIAL_REVIEW.json": "73a6209b1ddf7c84eb9f9ef2f8d2f62c1bb4c48447fa1d022b5424088147d483",
+    "PARTIAL_REVIEW.zip": "76df6f6b8033382554c58d2b4a05c40edcd6f4b8822c2aa8dfac415e88b4427f",
+    "POST_COMPLETION_WRONG.json": "97ed2694c267cff006f6b9bc610b077cb274ffa5fb508e1ec87c06beb0599958",
+    "POST_COMPLETION_WRONG.zip": "753757f973c9eb83e1e951096942b4fbd4dfe3d714c0feceb5b40674be1d5441",
+    "UNSTARTED_REVIEW.json": "3445a13f4520738efde5baecc043f914db6d3d2d1153cb91f2488983f5f67b66",
+    "UNSTARTED_REVIEW.zip": "7ee179e012c1ec6f9e42ecfc76550bdda5cf9b823c8ec97b53bf2322b7b5222a",
+    "capture-baseline.sh": "b759c3d9cbc397a08c33543480df5167c4093812d724699df591398c22750db2"
+  },
+  "completeSuite": false,
+  "physicalDeviceAcceptance": "OUTSTANDING_LAST_AFTER_FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT"
+}
