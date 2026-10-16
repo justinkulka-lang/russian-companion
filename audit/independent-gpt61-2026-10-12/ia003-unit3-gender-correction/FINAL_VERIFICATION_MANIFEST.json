@@ -1,0 +1,1455 @@
+{
+  "schemaVersion": 1,
+  "repository": "justinkulka-lang/russian-companion",
+  "branch": "cursor/content-audit-corrections-964f",
+  "draftPR": 64,
+  "testedCommit": "692e9eddeaef4d8f4ca9e85bf352983e3526e47c",
+  "runStartedUtc": "2026-10-16T20:11:04.723418+00:00",
+  "recordedUtc": "2026-10-16T20:16:20.715519+00:00",
+  "command": "bash audit/independent-gpt61-2026-10-12/ia003-unit3-gender-correction/verify.sh",
+  "scriptSha256": "9ec8c563e019c6c197ee27fe970990351d10fc8f8d9424bf94d4a3349af432d6",
+  "expandedScript": "#!/usr/bin/env bash\nset -euo pipefail\ncd /workspace/russian-companion\nsource /workspace/setup/android-env.sh\n# Three current package references only;runtime/source63 result preserved separately.\n# Four screenshot exporters16methods remain excluded by cloud-validation.gradle.\n./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*Units610SourceIntakeTest.earlierUnitDigestsStayPutAndLaterUnitsStayIsolated' compileDebugSources lintDebug verifyReleaseGateAttachment --max-workers=4 --console=plain\n",
+  "runnerExitCode": 0,
+  "counts": {
+    "tests": 1,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "passed": 1,
+  "classes": [
+    {
+      "name": "dev.russiancompanion.v2.Units610SourceIntakeTest",
+      "timestamp": "2026-10-16T20:11:20.006Z",
+      "counts": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "methods": [
+        "earlierUnitDigestsStayPutAndLaterUnitsStayIsolated"
+      ],
+      "failures": [],
+      "xml": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.Units610SourceIntakeTest.xml",
+      "sha256": "2ef8303da1e1ab1e5b79dcf1a976e582b14ab27af381d48e134ce664672e6153"
+    }
+  ],
+  "selectors": [
+    "*Units610SourceIntakeTest.earlierUnitDigestsStayPutAndLaterUnitsStayIsolated"
+  ],
+  "allSelectorsExecuted": true,
+  "allXmlTimestampsAfterRunStart": true,
+  "completeSuiteProven": false,
+  "overlappingScopesSummed": false,
+  "historicalPolicyFixtureScope": {
+    "scope": "Historical policy-only compatibility keeps exact old teaching source;new current-teaching rejection covered in7newtests",
+    "archivedSourceCommit": "547457b63b317dea560e4bdc36083c1a4dce315e",
+    "historicalClasses": [
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/CumulativePolicyHistoryBaselineTest.kt",
+        "change": "Use exact archived pre-teaching source for genuine historical-policy fixtures;all assertions remain intact",
+        "beforeSha256": "7dd812a7809504df8b85b41ca2e6af88e22708e39705d86773166d9e11f1d7e9",
+        "afterSha256": "7aa29030791f504c6c6cb82448506ba6511f686cd447b771ef0033605eda82b2"
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit6WiderPolicyTest.kt",
+        "change": "Use exact archived pre-teaching source for genuine historical-policy fixtures;all assertions remain intact",
+        "beforeSha256": "623265bf2b9165b7aad851acf80a76ae0679fec3a3e3f6d42685d3ed114d4f0c",
+        "afterSha256": "c592ae6097e85763c36d99be80657047b36eda73434120e93791710a71326bde"
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/MultiPoolReviewSelectionTest.kt",
+        "change": "Use exact archived pre-teaching source for genuine historical-policy fixtures;all assertions remain intact",
+        "beforeSha256": "411d66dffe07e1fa92358898c03112d26aeae511828879fda79be1370e603fcc",
+        "afterSha256": "93d3024d147dcee95c83cefff8474c62c994d2d689065eb61da1d1dfc5b35703"
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/CumulativeReviewSelectionTest.kt",
+        "change": "Use exact archived pre-teaching source for genuine historical-policy fixtures;all assertions remain intact",
+        "beforeSha256": "4810964e511b1077bb344b64891a6b2ba8562055002b48c0a26a15769a33bb12",
+        "afterSha256": "9f59fdb12c39631fcece6ad0a9f13132e25ad1592d06501a56f5d3c2d0e675f2"
+      }
+    ],
+    "currentMigrationExpectation": "Actual version10 rows retain raw history but cannot credit changed Unit3 teaching;Unit4 remains closed",
+    "newCurrentRejectionCases": "8 fresh Unit3/4 backups plus16 prior genuine policy histories",
+    "runtimeOrAssertionWeakening": false,
+    "laterLegacySourceBindings": [
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit5CumulativeReviewTest.kt",
+        "methods": [
+          "schema11OrdinaryLegacyRowsWithFalseActivationMarkerSurviveReopenWithoutSyntheticReview",
+          "oldFormatOneAndTwoRestoreExactPrePolicyWorkWithoutAnyNewReviewCredit"
+        ],
+        "beforeSha256": "5376a7a2a45d7cca28637bb7156922fd0ace65bcaa9386d0fc6d31f45c668196",
+        "afterSha256": "e82282ba3e2e63ab0328e264db9e032140461cd2754b4dd20d2b21d2fd27dff5",
+        "assertionsUnchanged": true,
+        "executionClaim": "NOT_EXECUTED_BY_THIS_MECHANICAL_UPDATE"
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit6CumulativeReviewTest.kt",
+        "methods": [
+          "schema11OrdinaryLegacyRowsWithFalseActivationMarkerSurviveReopenWithoutSyntheticReview",
+          "oldFormatOneAndTwoRestoreExactPrePolicyWorkWithoutAnyNewReviewCredit"
+        ],
+        "beforeSha256": "6b0a921b673ecb6458d79cf5a35a7289a05e151ccf838130c591919e101070f8",
+        "afterSha256": "28d6b3e7d32031593de4affaa6a57757f69cb20755f272f3ed3d9a3e95e3603b",
+        "assertionsUnchanged": true,
+        "executionClaim": "NOT_EXECUTED_BY_THIS_MECHANICAL_UPDATE"
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit7CumulativeReviewTest.kt",
+        "methods": [
+          "schema11OrdinaryLegacyRowsWithFalseActivationMarkerSurviveReopenWithoutSyntheticReview",
+          "oldFormatOneAndTwoRestoreExactPrePolicyWorkWithoutAnyNewReviewCredit"
+        ],
+        "beforeSha256": "1e6fb4d1afc49f313e8c0d9922fcb665b9f7fd0255f849c44cdffd25e94fc6be",
+        "afterSha256": "c4fdf25371bb30f9a61e3aab7166d49516443b040fa76b06c9a078c64bfedc32",
+        "assertionsUnchanged": true,
+        "executionClaim": "NOT_EXECUTED_BY_THIS_MECHANICAL_UPDATE"
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit8CumulativeReviewTest.kt",
+        "methods": [
+          "schema11OrdinaryLegacyRowsWithFalseActivationMarkerSurviveReopenWithoutSyntheticReview",
+          "oldFormatOneAndTwoRestoreExactPrePolicyWorkWithoutAnyNewReviewCredit"
+        ],
+        "beforeSha256": "649914001199bedb84bf2c4f0cec9fa11fe178ead24de0113af1155ce4fd3547",
+        "afterSha256": "692a896d20c0020217853101984dd5cdd716e5227e31160e4f88565483ea3dd8",
+        "assertionsUnchanged": true,
+        "executionClaim": "NOT_EXECUTED_BY_THIS_MECHANICAL_UPDATE"
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit9CumulativeReviewTest.kt",
+        "methods": [
+          "schema11OrdinaryLegacyRowsWithFalseActivationMarkerSurviveReopenWithoutSyntheticReview",
+          "oldFormatOneAndTwoRestoreExactPrePolicyWorkWithoutAnyNewReviewCredit"
+        ],
+        "beforeSha256": "0af16a7309cb626dff559386ba41757c52c7b89205374490adb136106e9d2f4f",
+        "afterSha256": "334912ede9ef76efa1cc2fbb204dccca86ae39fb13ba38102d383e2c0ab8f562",
+        "assertionsUnchanged": true,
+        "executionClaim": "NOT_EXECUTED_BY_THIS_MECHANICAL_UPDATE"
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit10CumulativeReviewTest.kt",
+        "methods": [
+          "schema11OrdinaryLegacyRowsWithFalseActivationMarkerSurviveReopenWithoutSyntheticReview",
+          "oldFormatOneAndTwoRestoreExactPrePolicyWorkWithoutAnyNewReviewCredit"
+        ],
+        "beforeSha256": "6bea4819a7299c7a8570725455ae737fea78552a932db75ee3447d218ce6d511",
+        "afterSha256": "b1346152846e90900756bcc7548ed2297a619e8cd797eae797fa48ffe89bbe3b",
+        "assertionsUnchanged": true,
+        "executionClaim": "NOT_EXECUTED_BY_THIS_MECHANICAL_UPDATE"
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit11CumulativeReviewTest.kt",
+        "methods": [
+          "schema11LegacyRowsRemainStoredButChangedAgreementInstructionRequiresRepair",
+          "oldFormatOneAndTwoKeepHistoricalWorkWithoutCreditingChangedUnit11Instruction"
+        ],
+        "beforeSha256": "4baf0a875637a5cb87b48af84cd494409231c686e5582fef0d9b24947a0ee111",
+        "afterSha256": "f1672c0cef36dbf47a6b227f71528dbafe03899bffa2ffc65859f0ee242ae333",
+        "assertionsUnchanged": true,
+        "executionClaim": "NOT_EXECUTED_BY_THIS_MECHANICAL_UPDATE"
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit12CumulativeReviewTest.kt",
+        "methods": [
+          "schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot",
+          "oldFormatOneAndTwoKeepRawUnit12HistoryWithoutInventingCreditOrRepairingUnit11"
+        ],
+        "beforeSha256": "72cc0fe35139abd11804543aa7f089443d76ad83397c7eef42f2c48040e608be",
+        "afterSha256": "d88981eeaccb006c2a3edeb9635f03e90a9a3c6d2c0a4937bab24fcb7ee33c54",
+        "assertionsUnchanged": true,
+        "executionClaim": "NOT_EXECUTED_BY_THIS_MECHANICAL_UPDATE"
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit13CumulativeReviewTest.kt",
+        "methods": [
+          "schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot",
+          "oldFormatOneAndTwoKeepRawUnit13HistoryWithoutInventingCreditOrRepairingUnit11"
+        ],
+        "beforeSha256": "25986757da45680c0987fcc2e8095ea66f927d83a9fe52c07d7fb8caa8db0ed5",
+        "afterSha256": "f740c9e1b4713f54c092261a1122f2b128002c23fb328e5b6bc2ccd6bb7e4997",
+        "assertionsUnchanged": true,
+        "executionClaim": "NOT_EXECUTED_BY_THIS_MECHANICAL_UPDATE"
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit14CumulativeReviewTest.kt",
+        "methods": [
+          "schema11RowsRemainStoredButChangedImpersonalInstructionRequiresRepair",
+          "oldFormatOneAndTwoKeepRawUnit14HistoryWithoutInventingCreditOrRepairingUnit11"
+        ],
+        "beforeSha256": "baa6ea06e800a49839efbc2f7ff052553e946ad18c4f90bfcb712cf8d6d9f2cf",
+        "afterSha256": "dd7e2fdc0dc32634265230bec32431e61aff0c271e2464f6070d772675fc8489",
+        "assertionsUnchanged": true,
+        "executionClaim": "NOT_EXECUTED_BY_THIS_MECHANICAL_UPDATE"
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit15CumulativeReviewTest.kt",
+        "methods": [
+          "schema11RowsRemainStoredButChangedImperativeInstructionRequiresRepair",
+          "oldFormatOneAndTwoKeepRawUnit15HistoryWithoutInventingCreditOrRepairingUnit11"
+        ],
+        "beforeSha256": "a820fff4df56a037fd34a1a68c8c90a2b7094d2b1f8450a77beea747f9efe623",
+        "afterSha256": "b427a118a63c416d7749e0c047e075aebde024f42dd0053de2275461e4f49c5f",
+        "assertionsUnchanged": true,
+        "executionClaim": "NOT_EXECUTED_BY_THIS_MECHANICAL_UPDATE"
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit16CumulativeReviewTest.kt",
+        "methods": [
+          "schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot",
+          "oldFormatOneAndTwoKeepRawUnit16HistoryWithoutInventingCreditOrRepairingUnit11"
+        ],
+        "beforeSha256": "27f511900c1f158e4b88cb88d6582dd014b470e27f992361581a282d671e52e5",
+        "afterSha256": "f90f67531f1326db013e3dbaca4d1d9695ec9233ec13c51a1f1dc243f0d268df",
+        "assertionsUnchanged": true,
+        "executionClaim": "NOT_EXECUTED_BY_THIS_MECHANICAL_UPDATE"
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit17CumulativeReviewTest.kt",
+        "methods": [
+          "schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot",
+          "oldFormatOneAndTwoKeepRawUnit17HistoryWithoutInventingCreditOrRepairingUnit11"
+        ],
+        "beforeSha256": "15534d204e0d135eb35aa62b697e82c386e5630c5aa3ee34f20d8a1201423476",
+        "afterSha256": "7af883d94eabf977ad4ec5879e95b813f18a3d0e3b4a8c41695cde196a0bed59",
+        "assertionsUnchanged": true,
+        "executionClaim": "NOT_EXECUTED_BY_THIS_MECHANICAL_UPDATE"
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit18CumulativeReviewTest.kt",
+        "methods": [
+          "schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot",
+          "oldFormatOneAndTwoKeepRawUnit18HistoryWithoutInventingCreditOrRepairingUnit11"
+        ],
+        "beforeSha256": "544645855ada8a15bef62f2b0d7fe696a637f3deca0083f21aeabe7319387190",
+        "afterSha256": "9e26e2e61dec1a391aa585729fabbcf3bea91f2d1d4b8006d937e78de408293e",
+        "assertionsUnchanged": true,
+        "executionClaim": "NOT_EXECUTED_BY_THIS_MECHANICAL_UPDATE"
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit19CumulativeReviewTest.kt",
+        "methods": [
+          "schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot",
+          "oldFormatOneAndTwoKeepRawUnit19HistoryWithoutInventingCreditOrRepairingUnit11"
+        ],
+        "beforeSha256": "b128c56e0dfb5909a6a85e452ebc139da3d2256294897489d555200a8481933f",
+        "afterSha256": "706366b2654ad1f530f48bdd5b240ae11bd68155985ec2f5f09701521f42a6f9",
+        "assertionsUnchanged": true,
+        "executionClaim": "NOT_EXECUTED_BY_THIS_MECHANICAL_UPDATE"
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit20CumulativeReviewTest.kt",
+        "methods": [
+          "schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot",
+          "oldFormatOneAndTwoKeepRawUnit20HistoryWithoutInventingCreditOrRepairingUnit11"
+        ],
+        "beforeSha256": "9351d7b6b4e6d3087f38be10ae8697b553f379d4399555f5adf25b7edd1c00f6",
+        "afterSha256": "4e34c65a2a62efe09285de91915e4fa8200585715ebbcbdd612062713245eb91",
+        "assertionsUnchanged": true,
+        "executionClaim": "NOT_EXECUTED_BY_THIS_MECHANICAL_UPDATE"
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit21CumulativeReviewTest.kt",
+        "methods": [
+          "schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot",
+          "oldFormatOneAndTwoKeepRawUnit21HistoryWithoutInventingCreditOrRepairingUnit11"
+        ],
+        "beforeSha256": "d5c1215550efdb2b3de11cd0ddec2570654389ae0fde947f267ade9d184cba8e",
+        "afterSha256": "f3e50db968ef6026f705247f3a045633b67e86dcb49bd63e74fc0613fe984057",
+        "assertionsUnchanged": true,
+        "executionClaim": "NOT_EXECUTED_BY_THIS_MECHANICAL_UPDATE"
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit22CumulativeReviewTest.kt",
+        "methods": [
+          "schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot",
+          "oldFormatOneAndTwoKeepRawUnit22HistoryWithoutInventingCreditOrRepairingUnit11"
+        ],
+        "beforeSha256": "2b7319e3c3a3ec05cceebdf2ee3a564697c4d4342c2e005ee8b8f0484873fa0b",
+        "afterSha256": "a43745ff739629dbf1234d6d5b536662f3719c821ff21c8aa003211e50dbc6a7",
+        "assertionsUnchanged": true,
+        "executionClaim": "NOT_EXECUTED_BY_THIS_MECHANICAL_UPDATE"
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit23CumulativeReviewTest.kt",
+        "methods": [
+          "schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot",
+          "oldFormatOneAndTwoKeepRawUnit23HistoryWithoutInventingCreditOrRepairingUnit11"
+        ],
+        "beforeSha256": "5585fddebd741aad1f31e900988378c8abac8ee7533b46f6dd3cf15be1756475",
+        "afterSha256": "50fed7636cd4728ca9e142e10f30594cff32c6c3b2f91ebb3ac625e488ba04fc",
+        "assertionsUnchanged": true,
+        "executionClaim": "NOT_EXECUTED_BY_THIS_MECHANICAL_UPDATE"
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit24CumulativeReviewTest.kt",
+        "methods": [
+          "schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot",
+          "oldFormatOneAndTwoKeepRawUnit24HistoryWithoutInventingCreditOrRepairingUnit11"
+        ],
+        "beforeSha256": "46c5dc4ef58b6e16cf8b9cad36fb358012f587a40c226af3601da4a1016d4061",
+        "afterSha256": "ebee23d319bc20eff6433dfe578b44526442b4ceedb2e7f6a6129fa1b653e7d7",
+        "assertionsUnchanged": true,
+        "executionClaim": "NOT_EXECUTED_BY_THIS_MECHANICAL_UPDATE"
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit25CumulativeReviewTest.kt",
+        "methods": [
+          "schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot",
+          "oldFormatOneAndTwoKeepRawUnit25HistoryWithoutInventingCreditOrRepairingUnit11"
+        ],
+        "beforeSha256": "1d4804c052705f254a423416293b10ab1cc6bb229c0455b7e455cc51feff8094",
+        "afterSha256": "34795b3f99ee7a1dfd718d99e85632eb0d828db625191ebf51139c26666aa636",
+        "assertionsUnchanged": true,
+        "executionClaim": "NOT_EXECUTED_BY_THIS_MECHANICAL_UPDATE"
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit26CumulativeReviewTest.kt",
+        "methods": [
+          "schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot",
+          "oldFormatOneAndTwoKeepRawUnit26HistoryWithoutInventingCreditOrRepairingUnit11"
+        ],
+        "beforeSha256": "20af72258dbe2d0be44312c8fe691d748f2f880dc176c1667cee85cb0b34b66e",
+        "afterSha256": "c410959116461ceab73c4e20aba607118400b3fb52953edfc0cde6448a9a7df1",
+        "assertionsUnchanged": true,
+        "executionClaim": "NOT_EXECUTED_BY_THIS_MECHANICAL_UPDATE"
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit27CumulativeReviewTest.kt",
+        "methods": [
+          "schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot",
+          "oldFormatOneAndTwoKeepRawUnit27HistoryWithoutInventingCreditOrRepairingUnit11"
+        ],
+        "beforeSha256": "bc64339326fd932fe55058ee26ae7efeb30125f75581172fc828623bc929c571",
+        "afterSha256": "e6a9e8267f86dda854a21fdde6fb2e1ef952bb965e5a29c2ca01a8d13f7f90d5",
+        "assertionsUnchanged": true,
+        "executionClaim": "NOT_EXECUTED_BY_THIS_MECHANICAL_UPDATE"
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit28CumulativeReviewTest.kt",
+        "methods": [
+          "schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot",
+          "oldFormatOneAndTwoKeepRawUnit28HistoryWithoutInventingCreditOrRepairingUnit11"
+        ],
+        "beforeSha256": "bcdaf9a3f5856dc7c16c2a7937ab5b43aa9e762ecc9da8df66b77e0d279080a5",
+        "afterSha256": "3a6d27189e8276b655ac5b7632628ae4bbb5f2b2045c1b5111364391bff6c204",
+        "assertionsUnchanged": true,
+        "executionClaim": "NOT_EXECUTED_BY_THIS_MECHANICAL_UPDATE"
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit29CumulativeReviewTest.kt",
+        "methods": [
+          "schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot",
+          "oldFormatOneAndTwoKeepRawUnit29HistoryWithoutInventingCreditOrRepairingUnit11"
+        ],
+        "beforeSha256": "3ea60cbcd99577b4ca19fc7a8c266bac29d42ab265a17eb285b5e671eb93caaa",
+        "afterSha256": "5a087a5a5804bc0e635646a4bcb5f465b5e14568cf379787da89e5cfd068ec9c",
+        "assertionsUnchanged": true,
+        "executionClaim": "NOT_EXECUTED_BY_THIS_MECHANICAL_UPDATE"
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit30CumulativeReviewTest.kt",
+        "methods": [
+          "schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot",
+          "oldFormatOneAndTwoKeepRawUnit30HistoryWithoutInventingCreditOrRepairingUnit11"
+        ],
+        "beforeSha256": "69ea2af66bafe8183251603baaac50029bcda133d4a2428b9773b7f1fc21cb46",
+        "afterSha256": "f96258b138688065988608c20736afdad574ecdc3cc7c34f95e2a3811356edd6",
+        "assertionsUnchanged": true,
+        "executionClaim": "NOT_EXECUTED_BY_THIS_MECHANICAL_UPDATE"
+      }
+    ],
+    "laterLegacyMethodsMechanicallyUpdated": 52,
+    "laterLegacyAssertionLogicUnchanged": true,
+    "laterLegacyExecutionClaim": "Only selected methods listed in XML are executed; this52-method source maintenance is not a passing-test count.",
+    "commentCorrection": "Block comments preserve same-line database-name declarations;compilation failure retained separately."
+  },
+  "lint": {
+    "result": "PASS",
+    "fatal": 0,
+    "errors": 0,
+    "warnings": 20,
+    "hints": 0
+  },
+  "releaseGateAttachment": {
+    "task": "verifyReleaseGateAttachment",
+    "executed": true,
+    "result": "PASS",
+    "releaseAuthorization": false
+  },
+  "gradleTasks": [
+    "> Task :app:preBuild UP-TO-DATE",
+    "> Task :app:preDebugBuild UP-TO-DATE",
+    "> Task :app:generateDebugBuildConfig UP-TO-DATE",
+    "> Task :app:generateDebugResources UP-TO-DATE",
+    "> Task :app:packageDebugResources UP-TO-DATE",
+    "> Task :app:processDebugNavigationResources UP-TO-DATE",
+    "> Task :app:parseDebugLocalResources UP-TO-DATE",
+    "> Task :app:generateDebugRFile UP-TO-DATE",
+    "> Task :app:kspDebugKotlin UP-TO-DATE",
+    "> Task :app:compileDebugKotlin UP-TO-DATE",
+    "> Task :app:javaPreCompileDebug UP-TO-DATE",
+    "> Task :app:compileDebugJavaWithJavac UP-TO-DATE",
+    "> Task :app:checkDebugAarMetadata UP-TO-DATE",
+    "> Task :app:mapDebugSourceSetPaths UP-TO-DATE",
+    "> Task :app:compileDebugNavigationResources UP-TO-DATE",
+    "> Task :app:mergeDebugResources UP-TO-DATE",
+    "> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE",
+    "> Task :app:extractDeepLinksDebug UP-TO-DATE",
+    "> Task :app:processDebugMainManifest UP-TO-DATE",
+    "> Task :app:processDebugManifest UP-TO-DATE",
+    "> Task :app:processDebugManifestForPackage UP-TO-DATE",
+    "> Task :app:processDebugResources UP-TO-DATE",
+    "> Task :app:bundleDebugClassesToRuntimeJar UP-TO-DATE",
+    "> Task :app:bundleDebugClassesToCompileJar UP-TO-DATE",
+    "> Task :app:kspDebugUnitTestKotlin",
+    "> Task :app:preDebugUnitTestBuild UP-TO-DATE",
+    "> Task :app:javaPreCompileDebugUnitTest UP-TO-DATE",
+    "> Task :app:generateDebugAssets UP-TO-DATE",
+    "> Task :app:mergeDebugAssets UP-TO-DATE",
+    "> Task :app:packageDebugUnitTestForUnitTest UP-TO-DATE",
+    "> Task :app:mergeDebugUnitTestManifest UP-TO-DATE",
+    "> Task :app:processDebugUnitTestManifest UP-TO-DATE",
+    "> Task :app:generateDebugUnitTestConfig UP-TO-DATE",
+    "> Task :app:processDebugJavaRes UP-TO-DATE",
+    "> Task :app:compileDebugSources UP-TO-DATE",
+    "> Task :app:preDebugAndroidTestBuild SKIPPED",
+    "> Task :app:generateDebugAndroidTestLintModel UP-TO-DATE",
+    "> Task :app:extractProguardFiles UP-TO-DATE",
+    "> Task :app:generateDebugLintReportModel",
+    "> Task :app:generateDebugUnitTestLintModel",
+    "> Task :app:lintAnalyzeDebugAndroidTest UP-TO-DATE",
+    "> Task :app:verifyReleaseGateAttachment",
+    "> Task :app:compileDebugUnitTestKotlin",
+    "> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE",
+    "> Task :app:processDebugUnitTestJavaRes UP-TO-DATE",
+    "> Task :app:testDebugUnitTest",
+    "> Task :app:lintAnalyzeDebug",
+    "> Task :app:lintAnalyzeDebugUnitTest",
+    "> Task :app:lintReportDebug",
+    "> Task :app:lintDebug"
+  ],
+  "inputTrees": {
+    "app/src/main": "100fda43c38cd7b18c7c7c281fed2d7c758b1408",
+    "app/src/test": "bddaa43a81734c7e5a14d49ad38749748821a550",
+    "app/schemas": "bf24044fda8ca836d62e24e94c537eea0aec8e83",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "review": "23dbbfe1ac81ff8ca8933cc2ba1fee00c3217aa9",
+    "release": "8ed60b07a5f8417a8660ab2c2b1f2f847a98c1b2",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "audit/curriculum-readiness": "aa2dc9d7a6d4ef231563e6daad99bffa4f2ce937",
+    "audit/owner-governance": "08a32bc140775f43c334ffa92194a77df8e182b5",
+    ".github": "7d22af08723c1066771b5a63524a5ccd500601c5"
+  },
+  "sourceDigests": {
+    "pack": "cb7f09a1f6afc28cf5090783feff855125d7fa399f486796cddaaab0f04d87b6",
+    "source": "b011d28d859261b3c4894b6fc0120952d11c5b9b51a50206dfb51508d2112a48"
+  },
+  "provenance": {
+    "oldCount": 6914,
+    "newCount": 6922,
+    "allOriginalRecordsPreserved": true,
+    "addedIds": [
+      "prov-u3-gender-field-\u0434\u0440\u0443\u0433",
+      "prov-u3-gender-field-\u0434\u0432\u0435\u0440\u044c",
+      "prov-ca-u3-gender-u3-st-teach-gender-2-complete-v1",
+      "prov-ca-u3-gender-u3-st-teach-gender-3-complete-v1",
+      "prov-ca-u3-gender-u3-st-rem-gender-complete-v1",
+      "prov-ca-u3-gender-u3-st-teach-gender-2-heading-v1",
+      "prov-ca-u3-gender-u3-st-teach-gender-3-heading-v1",
+      "prov-ca-u3-gender-u3-st-rem-gender-heading-v1"
+    ]
+  },
+  "originalDiagnosticFiles": [
+    {
+      "path": "audit/independent-gpt61-2026-10-12/received-results/AUDIT_SCOPE_AND_EVIDENCE.json",
+      "sha256": "ede9d04c1df26f2612f0210dfe0916a17dbe687ac9612f6858ee9c5025f20563"
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/received-results/CODEX_RETURN_HANDOFF.md",
+      "sha256": "a52afc6e6db45b10bceaca78034ba5697328e8b534f225de90fbb9c7b0b29fd0"
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/received-results/FINDINGS.csv",
+      "sha256": "f8e6a593545a24f5f02702d59ac7d63ef3b7f796ec71dc0a06063fa491d21ace"
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/received-results/INDEPENDENT_AUDIT_REPORT.md",
+      "sha256": "fd9ad913e312e1f6b332cd5a21ab90a783a809c8443f11c486c99ab9f0b4ad40"
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/received-results/ITEM_ASSESSMENT_AUDIT.csv",
+      "sha256": "2637ecf4f205610710dfa42ff9878ba592f0284a2f3fd46fbd6d297d32c37ddd"
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/received-results/REQUIREMENTS_MATRIX.csv",
+      "sha256": "3f0770ad922a99da67ea533b7e799a0a3951f91abaf528d70b0a9b1a1db52c1e"
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/received-results/SOURCE_AND_BINDING_REVIEW.json",
+      "sha256": "59d00b0b7163c741adff98ea884bc10972eabe258d4ebdc18d8e7aa22a6c3ad0"
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/received-results/TARGET_75_DISPOSITIONS.csv",
+      "sha256": "76fa43dd958a3e9b6459601b0bd22c113b4b1b376af6cc8f6d772e18ef8a126d"
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/received-results/UNIT_COVERAGE.csv",
+      "sha256": "794828fc9d6de4c5c5cc85df40630ba0bd4b136d98b107b795887999a04440bd"
+    }
+  ],
+  "baselineCapture": {
+    "baselineCommit": "547457b63b317dea560e4bdc36083c1a4dce315e",
+    "inputSha256": {
+      "app/src/main/assets/content/v2-curriculum.json": "fd58ff7df1b04c253acbe92d38c5c3a8787882870feae163cc9de5dabc45889e",
+      "app/src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt": "537ae11da444ada5284e3e699f1ed61f84ec310452d2d95a43c6ad7b31bebed4"
+    },
+    "command": "source /workspace/setup/android-env.sh; ./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*GenderTeachingBaselineExportTest' --max-workers=4 --console=plain",
+    "excludedScreenshotExporters": {
+      "VisualReviewCaptureTest": 2,
+      "Units35ChunkCaptureTest": 2,
+      "Units610ChunkCaptureTest": 10,
+      "Units1115GapCaptureTest": 2
+    },
+    "exporterSha256": "59849f6074272220b243d853e9d30c1c87bdbee32c3e7ef3dd6012c1f7a92d4b",
+    "syntheticLearners": true,
+    "historicalRowsFabricated": false,
+    "counts": {
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "fixtures": {
+      "ANSWERED_REVIEW.json": "088fef4869291b780f00b98d1e9c1f8171a051cd8ec76e40464dc753f50f5748",
+      "ANSWERED_REVIEW.zip": "a4a239a2db274a81e9822091170403e8e22fd4ab94aaa66e374cb322a86bfb0e",
+      "BEFORE_UNIT3_WORK.json": "2b76fad8e41fd928a5e538a881d16f457e55d5332a1d32ec4728913e9a942817",
+      "BEFORE_UNIT3_WORK.zip": "8fea5af61fa4c8a40580e9a796c36581acb0d7090c073199c2c34838bd455088",
+      "COMPLETED_UNIT3.json": "b687c080843abd4e93d261bfc4da6fb158abcdcf7a076a6180c8334a08c2d95b",
+      "COMPLETED_UNIT3.zip": "b5067413bda2417daaa6ad8d38e772b9b6faf880e35f20d33414870d80891a30",
+      "COMPLETED_UNIT4.json": "c014afca662dd652a46e52926e61c264d3635a041295a7c6ca203dec3951c900",
+      "COMPLETED_UNIT4.zip": "85573676d0d15a58e20fa605262b0d22da8a36926a6bd2875091a4558464b973",
+      "ORDINARY_UNIT3.json": "434d3839a77c4f120c1f94128eaf92b38a43acc999479ba3fd51cbe1193fa486",
+      "ORDINARY_UNIT3.zip": "d254916ea5c6e5864a50d8460318327dd449785e44b3af1419e0aec1c3afd48a",
+      "PARTIAL_REVIEW.json": "a65bc00a501939c9fd0f0948d623404030bb294481f3e446c5a86c6cad113ac4",
+      "PARTIAL_REVIEW.zip": "53905fbffccb4a4ff9f273330128f7270715b9963581a058285323dfc0c108d9",
+      "POST_COMPLETION_WRONG.json": "a5f6de2889c665d42088dae645f0a82488ff1d0720e282fc5191b76c012e9bc8",
+      "POST_COMPLETION_WRONG.zip": "cc41045a8c451df74be14b911ec85d613ebd086e90a62974e0919814845cdfbc",
+      "UNSTARTED_REVIEW.json": "b602d7868debda3296416d21fa3461b80be62e3a2b8b32fdba600e77abcfb7a0",
+      "UNSTARTED_REVIEW.zip": "2eb317fca4daa0b3c0204dfb86205675bedbfaac6e552b43d2f91301b08db712"
+    }
+  },
+  "older16PolicyTransitionHistoriesVerifiedUnchanged": true,
+  "apk": {
+    "assembled": false,
+    "signed": false,
+    "configuredApplicationId": "dev.russiancompanion",
+    "configuredVersionName": "2.0.0-dev",
+    "configuredVersionCode": 5,
+    "currentArtifactIdentity": "NOT_RECORDED",
+    "currentApkSha256": "NOT_RECORDED",
+    "currentApkSignature": "NOT_RECORDED",
+    "historicalArtifacts": "Preserved; not this candidate"
+  },
+  "environment": {
+    "readAtUtc": "2026-10-16T14:16:24.614Z",
+    "draftId": null,
+    "revision": null,
+    "baseVersionId": "13a458c1-0aec-4d7a-ab78-a70d382275e1~cecfgver_6acedb2102ec8196804d03e72c487901",
+    "installScriptSaved": true,
+    "startSkillSaved": true,
+    "configurationChanged": false,
+    "savedAgain": false,
+    "publication": "USER_CONFIRMED; not independently verified; no supported publication/status control",
+    "savedContentHashes": {
+      "install_script": {
+        "bytes": 3938,
+        "sha256": "a439863dd20b1248e05b3b0a8e5fb7f11833819cdfb89ce78d5a83cb3e8f228f"
+      },
+      "start_skill": {
+        "bytes": 3095,
+        "sha256": "c2127b1c5e95a5c192f4cf4d579ad60dd6bfe5219f09436bd8d175da506a33d9"
+      }
+    },
+    "matchesPriorVerifiedSettings": true
+  },
+  "excludedScreenshotExporters": [
+    {
+      "class": "VisualReviewCaptureTest",
+      "methods": 2
+    },
+    {
+      "class": "Units35ChunkCaptureTest",
+      "methods": 2
+    },
+    {
+      "class": "Units610ChunkCaptureTest",
+      "methods": 10
+    },
+    {
+      "class": "Units1115GapCaptureTest",
+      "methods": 2
+    }
+  ],
+  "exclusionReason": "Exporters overwrite tracked screenshot evidence and write /opt/cursor; external cloud-validation init excludes them from environment setup verification. Current selectors additionally limit scope.",
+  "historicalCounts": {
+    "mainCommit": "ff539220645670fbf7a1abacaa6f71e828606b80",
+    "mainSourceAnnotations": 579,
+    "excludedMethods": 16,
+    "reportedTests": 563,
+    "passed": 562,
+    "skipped": 1,
+    "completeSuiteClaim": "NOT_PROVEN",
+    "pr64BaselineCommit": "420f41ff6c2a4417cd829fdee0179b6a3b797eff",
+    "pr64SourceAnnotations": 691,
+    "sourceDifference": 112,
+    "handoffExecution": "UNVERIFIED",
+    "currentDifference": "Initial97 at bc8bd0afbe1b72d2ded865da0e66939ae877c2dc completed95passes/2failures/0errors/skips. Corrected4 at d87c2476802502cf81e343e02e9348a163911a52 separately pass;not fresh97 or complete suite. Earlier interrupted96 selection exited143 before complete results,actual total counts unavailable;matching Unit7 migration failure retained. Initial compiler failure executed no tests. All prior scopes remain separate.",
+    "unit3CorrectionScopes": {
+      "initial84": {
+        "testedCommit": "5de1d0f3462c99de0a42ba60579725f57838196e",
+        "counts": {
+          "tests": 84,
+          "failures": 7,
+          "errors": 0,
+          "skipped": 0
+        }
+      },
+      "intermediate63": {
+        "testedCommit": "b17b477776ae3ad34b26a8833f2c2c84ef0189ec",
+        "counts": {
+          "tests": 63,
+          "failures": 1,
+          "errors": 0,
+          "skipped": 0
+        },
+        "passed": 62,
+        "manifestSha256": "97fc5a35319bda52dcff07f9cd632f7c5b73ebbbe337333f4dcb7f1dba826a3b"
+      },
+      "final1": {
+        "testedCommit": "692e9eddeaef4d8f4ca9e85bf352983e3526e47c",
+        "counts": {
+          "tests": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      },
+      "completeSuiteProven": false,
+      "overlappingScopesSummed": false
+    }
+  },
+  "privateReference": "No private PDF read/copied into GitHub/assets/logs/packets/environment snapshot. Obtain privately using continuity SHA256 in durable instructions; historical expected hash remains unknown.",
+  "sourceAnnotationInventory": 1188,
+  "annotationInventoryIsNotExecution": true,
+  "baselineExporterCountsSeparateNotSummed": true,
+  "externalInitFiles": {
+    "/workspace/setup/android-env.sh": "7b43d8cc2eb67096aa87a50863a7fcf3f91fa644ceed87fbd2f7b377b35a1182",
+    "/workspace/setup/cloud-validation.gradle": "21c6a0ee2e97cf83c472513ac31c3d2d456e461185384e9b5e58c0fed298d123",
+    "/workspace/setup/parallel-tests.gradle": "2366eb867708f83db10b39080abff1b45d2e347bab15ce2ec1c95c3d31cf7ff3"
+  },
+  "IA003": "OPEN",
+  "formalAcceptance": false,
+  "releaseAuthorization": false,
+  "initialCompleteRun": {
+    "testedCommit": "5de1d0f3462c99de0a42ba60579725f57838196e",
+    "counts": {
+      "tests": 84,
+      "failures": 7,
+      "errors": 0,
+      "skipped": 0
+    },
+    "manifestSha256": "72340d6477dc6e3ad61cd6bea892d72a48680180ae44ba24ec7341a4d439ccd3"
+  },
+  "preflight": {
+    "command": "source /workspace/setup/android-env.sh; ./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/gender-validator.gradle validateGenderPack --max-workers=4 --console=plain",
+    "result": "PASS",
+    "errors": 0,
+    "JUnitMethodsExecuted": 0,
+    "initialCompilationFailureRetained": true
+  },
+  "preflightCompilationFailure": {
+    "sourceCommit": "057367e58751c4db86af05f5b84b463537ffa3c7",
+    "pendingChange": "Unit3 canonical ancestry pointer to057367e5",
+    "command": "source /workspace/setup/android-env.sh; ./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/gender-validator.gradle validateGenderPack --max-workers=4 --console=plain",
+    "exitCode": 1,
+    "failurePhase": "compileDebugUnitTestKotlin",
+    "appTestsExecuted": 0,
+    "packValidatorExecuted": false,
+    "cause": "An inline // explanation swallowed the same-line database-name declaration in mechanical historical-source edits. Replaced with a block comment;assertion logic unchanged.",
+    "fixedSites": [
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit24CumulativeReviewTest.kt",
+        "sites": 2
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit28CumulativeReviewTest.kt",
+        "sites": 2
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit20CumulativeReviewTest.kt",
+        "sites": 2
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit6CumulativeReviewTest.kt",
+        "sites": 2
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit23CumulativeReviewTest.kt",
+        "sites": 2
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit26CumulativeReviewTest.kt",
+        "sites": 2
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit22CumulativeReviewTest.kt",
+        "sites": 2
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit19CumulativeReviewTest.kt",
+        "sites": 2
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit25CumulativeReviewTest.kt",
+        "sites": 2
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit16CumulativeReviewTest.kt",
+        "sites": 2
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit12CumulativeReviewTest.kt",
+        "sites": 2
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit10CumulativeReviewTest.kt",
+        "sites": 2
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit29CumulativeReviewTest.kt",
+        "sites": 2
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit8CumulativeReviewTest.kt",
+        "sites": 2
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit27CumulativeReviewTest.kt",
+        "sites": 2
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit13CumulativeReviewTest.kt",
+        "sites": 2
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit30CumulativeReviewTest.kt",
+        "sites": 2
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit14CumulativeReviewTest.kt",
+        "sites": 2
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit7CumulativeReviewTest.kt",
+        "sites": 2
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit15CumulativeReviewTest.kt",
+        "sites": 2
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit5CumulativeReviewTest.kt",
+        "sites": 2
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit9CumulativeReviewTest.kt",
+        "sites": 2
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit21CumulativeReviewTest.kt",
+        "sites": 2
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit18CumulativeReviewTest.kt",
+        "sites": 2
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit11CumulativeReviewTest.kt",
+        "sites": 2
+      },
+      {
+        "path": "app/src/test/java/dev/russiancompanion/v2/Unit17CumulativeReviewTest.kt",
+        "sites": 2
+      }
+    ]
+  },
+  "implementationCommit": "057367e58751c4db86af05f5b84b463537ffa3c7",
+  "inputHashResolution": "Input trees/files resolve against the exact testedCommit; raw logs, exits and XML are retained as distinct execution outputs. Later corrections do not retroactively replace initial inputs.",
+  "productionKotlinSchemaAndCatalogPreservation": {
+    "app/src/main/java": true,
+    "app/schemas": true,
+    "catalog": true
+  },
+  "intermediateCompleteRun": {
+    "testedCommit": "b17b477776ae3ad34b26a8833f2c2c84ef0189ec",
+    "counts": {
+      "tests": 63,
+      "failures": 1,
+      "errors": 0,
+      "skipped": 0
+    },
+    "passed": 62,
+    "manifestSha256": "97fc5a35319bda52dcff07f9cd632f7c5b73ebbbe337333f4dcb7f1dba826a3b"
+  },
+  "currentPackageFixtureFix": {
+    "testedFailureCommit": "b17b477776ae3ad34b26a8833f2c2c84ef0189ec",
+    "observedFailureMethod": "Units610SourceIntakeTest.earlierUnitDigestsStayPutAndLaterUnitsStayIsolated",
+    "observedFailureLine": 77,
+    "changes": [
+      {
+        "unit": 3,
+        "oldExpected": "7b2586eda3545aa801e63f622718cdc57b981557a5f0ff0526120a450be4b260",
+        "currentExpected": "0e2985b1929cf4286ea10dfa93e654cd107e3720d7eb00e3eff76c80010a94fe",
+        "baselinePackageDigest": "cfee714c20ce395bf739e52f5321c05942bc2edea1ff43e9b4ede551b8f043d2",
+        "currentPackageDigest": "0e2985b1929cf4286ea10dfa93e654cd107e3720d7eb00e3eff76c80010a94fe",
+        "observedFailure": true,
+        "otherStaleFieldsFoundByCanonicalComparison": false
+      },
+      {
+        "unit": 4,
+        "oldExpected": "40496a59d86c1880a1e76639dacf42f6ede60115c93e4c8b3e2e5084c1a04d97",
+        "currentExpected": "8494a75026860015f3f250707e15f0c61c1b2fb3b3fb64cd03d5b75c425a4ca5",
+        "baselinePackageDigest": "8494a75026860015f3f250707e15f0c61c1b2fb3b3fb64cd03d5b75c425a4ca5",
+        "currentPackageDigest": "8494a75026860015f3f250707e15f0c61c1b2fb3b3fb64cd03d5b75c425a4ca5",
+        "observedFailure": false,
+        "otherStaleFieldsFoundByCanonicalComparison": true
+      },
+      {
+        "unit": 5,
+        "oldExpected": "33524ffeef0069e16031da2a590c2a4bfed01738ec9e9eb154ebcb38b901b3a9",
+        "currentExpected": "d2df163c73c5b0be1de85e58a69f8c2cf50554198419205463b614931f08628c",
+        "baselinePackageDigest": "d2df163c73c5b0be1de85e58a69f8c2cf50554198419205463b614931f08628c",
+        "currentPackageDigest": "d2df163c73c5b0be1de85e58a69f8c2cf50554198419205463b614931f08628c",
+        "observedFailure": false,
+        "otherStaleFieldsFoundByCanonicalComparison": true
+      }
+    ],
+    "beforeSha256": "4a56fedfb7296199255ff185c8fd324d9a1ee1a2b99d4a7620ffa990ffd882e1",
+    "afterSha256": "36887c834e0e89fea45d960dcf0d40489e5d4439288a0f1a42bbafb421109a4d",
+    "onlyThreeCurrentPackageDigestLiteralsChanged": true,
+    "assertionLogicAndAllOtherExpectedDigestsUnchanged": true,
+    "productionAndCanonicalBindingsChanged": false,
+    "units4And5PackageDigestsUnchangedSinceBaseline": true
+  },
+  "productionAndCanonicalTreesUnchangedAfterIntermediate63": true,
+  "onlyThreeFixtureLiteralsChangedAfterIntermediate63": true,
+  "scopeLimitations": [
+    "Initial84 completed77pass/7fail at5de1d0f3;intermediate63 completed62pass/1stale package-reference failure atb17b4777. Final1guard is separate,not fresh63/84 or complete suite;overlaps not summed.",
+    "All seven new Unit3 cases passed only in the intermediate63 scope;source/bindings unchanged afterward.",
+    "22 archived-policy fixture methods belong to initial84,not fresh current-content acceptance;52 mechanical legacy method edits are not executed-test counts.",
+    "Final comprehensive independent audit FIRST;actualGalaxyS26Ultraairplane-mode/reboot LAST/outstanding."
+  ],
+  "files": [
+    {
+      "path": "ANSWERED_REVIEW.json",
+      "bytes": 50479,
+      "sha256": "088fef4869291b780f00b98d1e9c1f8171a051cd8ec76e40464dc753f50f5748"
+    },
+    {
+      "path": "ANSWERED_REVIEW.zip",
+      "bytes": 10174,
+      "sha256": "a4a239a2db274a81e9822091170403e8e22fd4ab94aaa66e374cb322a86bfb0e"
+    },
+    {
+      "path": "BASELINE_CONTEXT.json",
+      "bytes": 2589,
+      "sha256": "2e42476da838fb8f99e149b9052358405dc129b0d6b03f574d73190dbd96529e"
+    },
+    {
+      "path": "BASELINE_EXIT.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "BASELINE_EXPORT.kt.txt",
+      "bytes": 7475,
+      "sha256": "59849f6074272220b243d853e9d30c1c87bdbee32c3e7ef3dd6012c1f7a92d4b"
+    },
+    {
+      "path": "BASELINE_RESULT.xml",
+      "bytes": 511,
+      "sha256": "fe0443a08bd6a846c886f7686cfe8f0dd71a9e81250b3b7a21107c1abd2c5330"
+    },
+    {
+      "path": "BASELINE_RUN.txt",
+      "bytes": 3033,
+      "sha256": "7ff88022b379c373701172a8936744e735efb6156c5113feaa690715e6e25447"
+    },
+    {
+      "path": "BEFORE_UNIT3_WORK.json",
+      "bytes": 31941,
+      "sha256": "2b76fad8e41fd928a5e538a881d16f457e55d5332a1d32ec4728913e9a942817"
+    },
+    {
+      "path": "BEFORE_UNIT3_WORK.zip",
+      "bytes": 6562,
+      "sha256": "8fea5af61fa4c8a40580e9a796c36581acb0d7090c073199c2c34838bd455088"
+    },
+    {
+      "path": "BINDING_LEDGER.json",
+      "bytes": 14545,
+      "sha256": "6e8773a2d07a2f88734558b35327f508f08f2ca8c7cf732baf48a669be8d2e96"
+    },
+    {
+      "path": "BINDING_SCRIPT.py.txt",
+      "bytes": 2902,
+      "sha256": "37b70b6b7da3244e9d306a5af63b4225f7a6deeee5c89a30fdd656ce7378aa49"
+    },
+    {
+      "path": "COLLECTION_SCRIPT.py.txt",
+      "bytes": 9577,
+      "sha256": "393d649847b8d5c29e698db37e00a0cd06fa80a54d9dac4b0d6fd139f9a951ba"
+    },
+    {
+      "path": "COMPLETED_UNIT3.json",
+      "bytes": 50799,
+      "sha256": "b687c080843abd4e93d261bfc4da6fb158abcdcf7a076a6180c8334a08c2d95b"
+    },
+    {
+      "path": "COMPLETED_UNIT3.zip",
+      "bytes": 10235,
+      "sha256": "b5067413bda2417daaa6ad8d38e772b9b6faf880e35f20d33414870d80891a30"
+    },
+    {
+      "path": "COMPLETED_UNIT4.json",
+      "bytes": 72807,
+      "sha256": "c014afca662dd652a46e52926e61c264d3635a041295a7c6ca203dec3951c900"
+    },
+    {
+      "path": "COMPLETED_UNIT4.zip",
+      "bytes": 14336,
+      "sha256": "85573676d0d15a58e20fa605262b0d22da8a36926a6bd2875091a4558464b973"
+    },
+    {
+      "path": "CORRECTED_SCOPE_EXIT.txt",
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    },
+    {
+      "path": "CORRECTED_SCOPE_RESULTS/TEST-dev.russiancompanion.release.ReleaseSourceDigestTest.xml",
+      "bytes": 499,
+      "sha256": "f85ea5c777cc7e598182e5fb9196c9bbb46ef329328af417c0f15f69bc5a4928"
+    },
+    {
+      "path": "CORRECTED_SCOPE_RESULTS/TEST-dev.russiancompanion.v2.BatchECapabilityResearchTest.xml",
+      "bytes": 532,
+      "sha256": "9a1ec14574257bf78cac85a624766031840c55706e5c442de89652263caca975"
+    },
+    {
+      "path": "CORRECTED_SCOPE_RESULTS/TEST-dev.russiancompanion.v2.CumulativeReviewGateTest.xml",
+      "bytes": 2528,
+      "sha256": "ee22edd6c0c680f025e0465c88bda11f1ce171565009bcd612253990d2b671be"
+    },
+    {
+      "path": "CORRECTED_SCOPE_RESULTS/TEST-dev.russiancompanion.v2.CumulativeReviewStorageTest.xml",
+      "bytes": 5926,
+      "sha256": "b07943bd18ea49934a8bcd52447a5dad4f09d98a80c60a7e7720705b4a03d8b6"
+    },
+    {
+      "path": "CORRECTED_SCOPE_RESULTS/TEST-dev.russiancompanion.v2.Unit30CumulativeReviewTest.xml",
+      "bytes": 2978,
+      "sha256": "7132c26bc5d979619ab4e3bb60e1afe35ab023dd9256d111b82672f8f30ae077"
+    },
+    {
+      "path": "CORRECTED_SCOPE_RESULTS/TEST-dev.russiancompanion.v2.Unit3GenderTeachingTest.xml",
+      "bytes": 64822,
+      "sha256": "84aa5286b2dc4d2ddcb3644a2d3b24b58a6b13053b5db3d63dfc9d8f6e589b5f"
+    },
+    {
+      "path": "CORRECTED_SCOPE_RESULTS/TEST-dev.russiancompanion.v2.Unit4CumulativeReviewTest.xml",
+      "bytes": 2102,
+      "sha256": "073b106f081d3156372c8e9ef3f7f1ddcd0f8e90e20e7dc4d5b64474a5a6ad8a"
+    },
+    {
+      "path": "CORRECTED_SCOPE_RESULTS/TEST-dev.russiancompanion.v2.Unit4NominativeRoleTest.xml",
+      "bytes": 83510,
+      "sha256": "1ea28a7a7f05b29e6bc37ccb2c64315a8572e94113abbaf0992672173c3fbdc6"
+    },
+    {
+      "path": "CORRECTED_SCOPE_RESULTS/TEST-dev.russiancompanion.v2.Unit5CumulativeReviewTest.xml",
+      "bytes": 722,
+      "sha256": "9e0b2e775965b153d04a63edc20d4c5f010e9b4ceb75bca2398619bc668999ca"
+    },
+    {
+      "path": "CORRECTED_SCOPE_RESULTS/TEST-dev.russiancompanion.v2.Unit6CumulativeReviewTest.xml",
+      "bytes": 528,
+      "sha256": "f0f3f20b5cc2d32d9f5a09d258a4acae2bb1caea1f65d134b088a6dd8e63ddfd"
+    },
+    {
+      "path": "CORRECTED_SCOPE_RESULTS/TEST-dev.russiancompanion.v2.Unit7CumulativeReviewTest.xml",
+      "bytes": 770,
+      "sha256": "775b07d1de10aa630fd6134a551a9dee31b3dae3694c5912eb99cae04903af97"
+    },
+    {
+      "path": "CORRECTED_SCOPE_RESULTS/TEST-dev.russiancompanion.v2.Units1115MappingGapTest.xml",
+      "bytes": 484,
+      "sha256": "9087bbd785a99fb92d5000f952ad76a02a42ef68411b214da4c517e6a7cec94c"
+    },
+    {
+      "path": "CORRECTED_SCOPE_RESULTS/TEST-dev.russiancompanion.v2.Units2125SourceIntakeTest.xml",
+      "bytes": 482,
+      "sha256": "0e3e29704814ec0bf982c85cb4ccf96b339de1f3542c4357ffe3228623e2b006"
+    },
+    {
+      "path": "CORRECTED_SCOPE_RESULTS/TEST-dev.russiancompanion.v2.Units2630SourceIntakeTest.xml",
+      "bytes": 531,
+      "sha256": "1ebe3ccfbc92f3f8d6b0036656526c37aa65ba1552c7c2dd05e898063ae56ac7"
+    },
+    {
+      "path": "CORRECTED_SCOPE_RESULTS/TEST-dev.russiancompanion.v2.Units610SourceIntakeTest.xml",
+      "bytes": 4934,
+      "sha256": "a045e61e6f8ec3416463cb3ed605a6c72c12e9f35f535768659e569b7769f55d"
+    },
+    {
+      "path": "CORRECTED_SCOPE_RESULTS/TEST-dev.russiancompanion.v2.V2RebuildTest.xml",
+      "bytes": 566,
+      "sha256": "ddf26b461c51e860638878584b1f029c27e3d12628fb5226fca6ad01d7d206a5"
+    },
+    {
+      "path": "CORRECTED_SCOPE_RESULTS/TEST-dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest.xml",
+      "bytes": 699,
+      "sha256": "62ec4e732ed05588a656cc58a5baef5cde8e0cc65c5e1df7855586b52b2ce217"
+    },
+    {
+      "path": "CORRECTED_SCOPE_RESULTS/TEST-dev.russiancompanion.v2.audit.GapClosureDossierTest.xml",
+      "bytes": 495,
+      "sha256": "20840dc2e5f22580004123834862336c30040965b941675af9451fb246bd10fc"
+    },
+    {
+      "path": "CORRECTED_SCOPE_RESULTS/TEST-dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest.xml",
+      "bytes": 504,
+      "sha256": "0a7aa500b896f801f300cd72e3808ecffd85b19d0bfe98abb69d5b50beba9e54"
+    },
+    {
+      "path": "CORRECTED_SCOPE_RESULTS/TEST-dev.russiancompanion.v2.review.UnitReviewPipelineTest.xml",
+      "bytes": 483,
+      "sha256": "0c0ea2ebea28bfe2bce8784b347cd547e47f92c4ef8957a970932b164e8a49f2"
+    },
+    {
+      "path": "CORRECTED_SCOPE_RUN.txt",
+      "bytes": 3478,
+      "sha256": "bd62d96f96e8d654bad9f318d76a4087b04cbe25e103bd60ddacf0d636c42456"
+    },
+    {
+      "path": "CORRECTED_SCOPE_VERIFICATION_MANIFEST.json",
+      "bytes": 77308,
+      "sha256": "97fc5a35319bda52dcff07f9cd632f7c5b73ebbbe337333f4dcb7f1dba826a3b"
+    },
+    {
+      "path": "CORRECTION.json",
+      "bytes": 58567,
+      "sha256": "8c1f7ab9e1eda2d5b0d75ef7a2d6036849fe45f643abcce1c7333d2ac608b2d1"
+    },
+    {
+      "path": "CORRECTION_SCRIPT.py.txt",
+      "bytes": 5851,
+      "sha256": "d9180b4a76127ddf953b87942b56977a746763a0343d0bec274adfbef163a816"
+    },
+    {
+      "path": "CURRENT_PACKAGE_FIXTURE_FIX.py.txt",
+      "bytes": 5726,
+      "sha256": "672fe0a8b147d55cd53bb55179341028450be44733a0d9c55826103140dafb44"
+    },
+    {
+      "path": "CURRENT_PACKAGE_FIXTURE_LEDGER.json",
+      "bytes": 2116,
+      "sha256": "84bec13de57fd88c276419f7a41578e80aaa92075efb1cfd010a608a5effd0ba"
+    },
+    {
+      "path": "FINAL_EXIT.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "FINAL_LINT.xml",
+      "bytes": 31476,
+      "sha256": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6"
+    },
+    {
+      "path": "FINAL_RESULTS/TEST-dev.russiancompanion.v2.Units610SourceIntakeTest.xml",
+      "bytes": 484,
+      "sha256": "2ef8303da1e1ab1e5b79dcf1a976e582b14ab27af381d48e134ce664672e6153"
+    },
+    {
+      "path": "FINAL_RUN.txt",
+      "bytes": 3720,
+      "sha256": "fc3d86db4cdb848a691bdf4225f51190459fbef535f336380510feb6a22c1353"
+    },
+    {
+      "path": "FINAL_RUN_CONTEXT.json",
+      "bytes": 120,
+      "sha256": "ed7172f10a4fd5aab21741b0060e63f659e0e0e269ef576fd63d5b7ff65d6053"
+    },
+    {
+      "path": "HISTORY_TEST_SCOPE_CHANGES.json",
+      "bytes": 17774,
+      "sha256": "f8d2492bf1628a84d43ee351127ed44975d9e4cda53db88b15cd9578a02cc3b0"
+    },
+    {
+      "path": "INITIAL_EXIT.txt",
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    },
+    {
+      "path": "INITIAL_FINDINGS_CORRECTION.md",
+      "bytes": 3382,
+      "sha256": "7898d13972d8f218da2a945854e7cceccd6b1573bd3934328363100162462c00"
+    },
+    {
+      "path": "INITIAL_FINDINGS_FIX.py.txt",
+      "bytes": 6747,
+      "sha256": "d466be3d7a68de150bd31de98f50d0174e893d7bccf78a7e138c0867dcf2f82f"
+    },
+    {
+      "path": "INITIAL_READINESS_REFRESH.txt",
+      "bytes": 3740,
+      "sha256": "136f02b3523b49afe6fa3f5f063a7cfeab8e1f3e8466f1a07f40a755b914a175"
+    },
+    {
+      "path": "INITIAL_READINESS_REFRESH_EXIT.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "INITIAL_RESULTS/TEST-dev.russiancompanion.release.ReleaseSourceDigestTest.xml",
+      "bytes": 500,
+      "sha256": "32c5cc9ffe104ad522ea422ea31f9d95f93a93e403b4f3de0e4c9aeaa31828c2"
+    },
+    {
+      "path": "INITIAL_RESULTS/TEST-dev.russiancompanion.v2.BatchECapabilityResearchTest.xml",
+      "bytes": 485,
+      "sha256": "4aa0b445a594f6f4bc24ba963c62d9b2b3f39a56f05b941267f57db88b53a97b"
+    },
+    {
+      "path": "INITIAL_RESULTS/TEST-dev.russiancompanion.v2.CumulativePolicyHistoryBaselineTest.xml",
+      "bytes": 29277,
+      "sha256": "b489f1f9d1e7ef17be392584174619928cc28c450de1c913654accc1ca24f304"
+    },
+    {
+      "path": "INITIAL_RESULTS/TEST-dev.russiancompanion.v2.CumulativeReviewGateTest.xml",
+      "bytes": 14626,
+      "sha256": "428b95b054cb1eea0b5daea922ece6108a1caccaa0f228d75f69a78743ac0bd6"
+    },
+    {
+      "path": "INITIAL_RESULTS/TEST-dev.russiancompanion.v2.CumulativeReviewSelectionTest.xml",
+      "bytes": 1371,
+      "sha256": "a2d95bb462a0782cc647d2f5760e0c622b9f556819b1c1effa930c72b308f40c"
+    },
+    {
+      "path": "INITIAL_RESULTS/TEST-dev.russiancompanion.v2.CumulativeReviewStorageTest.xml",
+      "bytes": 285217,
+      "sha256": "df49f30d8c61b242af7f157278d08e1092191cdbb21e957e0d8196557b3e74f7"
+    },
+    {
+      "path": "INITIAL_RESULTS/TEST-dev.russiancompanion.v2.MultiPoolReviewSelectionTest.xml",
+      "bytes": 145121,
+      "sha256": "77623fbb6e61f888de245c5a344b3be5611bc8153382141f3dd48713c45b0ec6"
+    },
+    {
+      "path": "INITIAL_RESULTS/TEST-dev.russiancompanion.v2.Unit30CumulativeReviewTest.xml",
+      "bytes": 775,
+      "sha256": "94780c855c8842eb42f867988d50100e6c45e9139658fdcb8eda07fe86c0d371"
+    },
+    {
+      "path": "INITIAL_RESULTS/TEST-dev.russiancompanion.v2.Unit3GenderTeachingTest.xml",
+      "bytes": 199255,
+      "sha256": "0b81d7fff0a059cefb31851898b60a5acf3a1f2a772bb6a9f93674a698b265b4"
+    },
+    {
+      "path": "INITIAL_RESULTS/TEST-dev.russiancompanion.v2.Unit4CumulativeReviewTest.xml",
+      "bytes": 3024,
+      "sha256": "40acd8fb3bfc02090c8c4d684d7f6e1969617c72512472d757d57dda53c84d01"
+    },
+    {
+      "path": "INITIAL_RESULTS/TEST-dev.russiancompanion.v2.Unit4NominativeRoleTest.xml",
+      "bytes": 67384,
+      "sha256": "d41f1e4eec3777864e0007824e57e77471f9284de4f35c894fc8b9b649952665"
+    },
+    {
+      "path": "INITIAL_RESULTS/TEST-dev.russiancompanion.v2.Unit5CumulativeReviewTest.xml",
+      "bytes": 1210,
+      "sha256": "2deb5a703de429f5f0669cc73da8bc82e48c71ed3764f5da577244bad929dc44"
+    },
+    {
+      "path": "INITIAL_RESULTS/TEST-dev.russiancompanion.v2.Unit6CumulativeReviewTest.xml",
+      "bytes": 818,
+      "sha256": "700addc4b72d1f6b4f82e1ab1c5735985999c7678c0d1284a81d4b37cb2505a9"
+    },
+    {
+      "path": "INITIAL_RESULTS/TEST-dev.russiancompanion.v2.Unit6WiderPolicyTest.xml",
+      "bytes": 2937,
+      "sha256": "07d1af73a7b4a807532ff0982f09af8dae4783708b1ed225a48af1bfdbdee0cb"
+    },
+    {
+      "path": "INITIAL_RESULTS/TEST-dev.russiancompanion.v2.Unit7CumulativeReviewTest.xml",
+      "bytes": 621,
+      "sha256": "10a1450e71a3b010f9205a374dd36f8bc73b995e76f8cf86a62f5c995ee36bd1"
+    },
+    {
+      "path": "INITIAL_RESULTS/TEST-dev.russiancompanion.v2.Units1115MappingGapTest.xml",
+      "bytes": 679,
+      "sha256": "a082b0115d1acdb130d51963470ad955cb532034de69b595aa6578c84305998c"
+    },
+    {
+      "path": "INITIAL_RESULTS/TEST-dev.russiancompanion.v2.Units2125SourceIntakeTest.xml",
+      "bytes": 5038,
+      "sha256": "a76b8c7debed34c13a94fd41a5e1117749b013e3570ef5d5f5bd320d3095e6e7"
+    },
+    {
+      "path": "INITIAL_RESULTS/TEST-dev.russiancompanion.v2.Units2630SourceIntakeTest.xml",
+      "bytes": 923,
+      "sha256": "5997dd7312a9d96dffa7b90939d4b6fb36686a1ac5cc53ce1962576b026b3a8a"
+    },
+    {
+      "path": "INITIAL_RESULTS/TEST-dev.russiancompanion.v2.V2RebuildTest.xml",
+      "bytes": 517,
+      "sha256": "4e705289784f5580864654f0b909bcd72d5355964547d28c5914a3b69183e002"
+    },
+    {
+      "path": "INITIAL_RESULTS/TEST-dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest.xml",
+      "bytes": 894,
+      "sha256": "3dc896243cc5d0bd0292f346080c791f64e2575b65474e2f377af28eafe555f9"
+    },
+    {
+      "path": "INITIAL_RESULTS/TEST-dev.russiancompanion.v2.audit.GapClosureDossierTest.xml",
+      "bytes": 491,
+      "sha256": "03152cd890394bcce2f4a404f8a76538a05fffb00b87595e6ea4920d750cc846"
+    },
+    {
+      "path": "INITIAL_RESULTS/TEST-dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest.xml",
+      "bytes": 504,
+      "sha256": "da15f70ba269d0be4b0355e2d76ce4e7a375abee8d756da2f37ad68b78208397"
+    },
+    {
+      "path": "INITIAL_RESULTS/TEST-dev.russiancompanion.v2.review.UnitReviewPipelineTest.xml",
+      "bytes": 484,
+      "sha256": "8ae39af9aac5366b0dbb512bcd0e04bbe2de0b87cf8b225a6f6821197b42355c"
+    },
+    {
+      "path": "INITIAL_REVIEW_REFRESH.txt",
+      "bytes": 3404,
+      "sha256": "71e3a1ae59949458d025517df213e5a9c626aaae2d48ff415243ca2f8c7f094f"
+    },
+    {
+      "path": "INITIAL_REVIEW_REFRESH_EXIT.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "INITIAL_RUN.txt",
+      "bytes": 4483,
+      "sha256": "fe55958f964f25649a473d8169a2072835b0eeef4f4a2f9dd8ee58aae31d6a4e"
+    },
+    {
+      "path": "INITIAL_VERIFICATION_MANIFEST.json",
+      "bytes": 92143,
+      "sha256": "72340d6477dc6e3ad61cd6bea892d72a48680180ae44ba24ec7341a4d439ccd3"
+    },
+    {
+      "path": "LEGACY_SOURCE_SCOPE_UPDATE.py.txt",
+      "bytes": 1616,
+      "sha256": "c6943b7c7719466b933a0edde39b4ef9815ba90afa90aee95ca1f48d2d6bd61d"
+    },
+    {
+      "path": "LEGACY_SOURCE_SCOPE_UPDATE_CORRECTED.py.txt",
+      "bytes": 1619,
+      "sha256": "5eabd4bcf88af0b15f308744e6f18188d770a2fd9cc61ba05397fb6beda9bff5"
+    },
+    {
+      "path": "NEXT_CANDIDATE_INVENTORY.json",
+      "bytes": 14412,
+      "sha256": "43ce9cb947b08655b50cf009979fde5d568d7bedd6554de0c7023c77cfb76571"
+    },
+    {
+      "path": "NEXT_REVIEW.md",
+      "bytes": 2130,
+      "sha256": "3e5d85e964c6312263ad5ca469e56e30198144302353322ae5546542915e0b52"
+    },
+    {
+      "path": "ORDINARY_UNIT3.json",
+      "bytes": 48566,
+      "sha256": "434d3839a77c4f120c1f94128eaf92b38a43acc999479ba3fd51cbe1193fa486"
+    },
+    {
+      "path": "ORDINARY_UNIT3.zip",
+      "bytes": 9635,
+      "sha256": "d254916ea5c6e5864a50d8460318327dd449785e44b3af1419e0aec1c3afd48a"
+    },
+    {
+      "path": "PARTIAL_REVIEW.json",
+      "bytes": 50198,
+      "sha256": "a65bc00a501939c9fd0f0948d623404030bb294481f3e446c5a86c6cad113ac4"
+    },
+    {
+      "path": "PARTIAL_REVIEW.zip",
+      "bytes": 10135,
+      "sha256": "53905fbffccb4a4ff9f273330128f7270715b9963581a058285323dfc0c108d9"
+    },
+    {
+      "path": "POST_COMPLETION_WRONG.json",
+      "bytes": 51076,
+      "sha256": "a5f6de2889c665d42088dae645f0a82488ff1d0720e282fc5191b76c012e9bc8"
+    },
+    {
+      "path": "POST_COMPLETION_WRONG.zip",
+      "bytes": 10268,
+      "sha256": "cc41045a8c451df74be14b911ec85d613ebd086e90a62974e0919814845cdfbc"
+    },
+    {
+      "path": "PREFLIGHT.txt",
+      "bytes": 3315,
+      "sha256": "2da1950b2580bea897c308ea90692f27e81cfc06c9bb5ac1eb95b9cbd0e7fbe2"
+    },
+    {
+      "path": "PREFLIGHT_COMPILATION_CONTEXT.json",
+      "bytes": 3756,
+      "sha256": "1a73b45f3c5f0a5ec4343642a318ac59f92e327cb54f65f3a77e34c8bc1bd588"
+    },
+    {
+      "path": "PREFLIGHT_COMPILATION_EXIT.txt",
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    },
+    {
+      "path": "PREFLIGHT_COMPILATION_FAILURE.txt",
+      "bytes": 13947,
+      "sha256": "3f302b7101ecb8654d9a94b3f83b693bb450ae1c40f4d7135dfdf971fa3a42ca"
+    },
+    {
+      "path": "PREFLIGHT_EXIT.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "PREFLIGHT_INIT.gradle.txt",
+      "bytes": 375,
+      "sha256": "5d51b6a3116cd663c56022df6ad845f9bd561d3c665881dc3b47e90d73911715"
+    },
+    {
+      "path": "PREFLIGHT_TOOL.java.txt",
+      "bytes": 948,
+      "sha256": "f98c1e8abd34d57d8f1628727ad6bf7af8e5543909b2e55e57abfb25f5037a43"
+    },
+    {
+      "path": "PRE_HEADING_BINDING_LEDGER.json",
+      "bytes": 14204,
+      "sha256": "174a8716b6cc7d3de4d44c585f9eface0b245200c2bcefeda590ad740f9d1c5c"
+    },
+    {
+      "path": "PRE_HEADING_READINESS_REFRESH.txt",
+      "bytes": 3740,
+      "sha256": "9dacc18c7d3d813c249163494a47e1ed478f604f03c5f7edc3d4630991048aeb"
+    },
+    {
+      "path": "PRE_HEADING_READINESS_REFRESH_EXIT.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "PRE_HEADING_REVIEW_REFRESH.txt",
+      "bytes": 3404,
+      "sha256": "39952a47ad08d01e189eeea2a74b1124b079775d85c06f337abb69e0eeff4263"
+    },
+    {
+      "path": "PRE_HEADING_REVIEW_REFRESH_EXIT.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "READINESS_REFRESH.txt",
+      "bytes": 3740,
+      "sha256": "27fa0287dafcd630419149ef78fcb334bb7aed3ec1c2ea2ced52f383005d2fcb"
+    },
+    {
+      "path": "READINESS_REFRESH_EXIT.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "REVIEW_REFRESH.txt",
+      "bytes": 2602,
+      "sha256": "7e2fbfde156deccedb03d0017744570c58f6aefc93ce2d0edc569bb3ffdbe9d9"
+    },
+    {
+      "path": "REVIEW_REFRESH_EXIT.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "SOURCE_AND_SCOPE.md",
+      "bytes": 6185,
+      "sha256": "cd725c0958d6a1658ee2acce4771256c56b042598848d4e5b90adaf5a67c59ab"
+    },
+    {
+      "path": "UNSTARTED_REVIEW.json",
+      "bytes": 49645,
+      "sha256": "b602d7868debda3296416d21fa3461b80be62e3a2b8b32fdba600e77abcfb7a0"
+    },
+    {
+      "path": "UNSTARTED_REVIEW.zip",
+      "bytes": 10005,
+      "sha256": "2eb317fca4daa0b3c0204dfb86205675bedbfaac6e552b43d2f91301b08db712"
+    },
+    {
+      "path": "candidate_inventory.py",
+      "bytes": 5265,
+      "sha256": "6eb953849f79b55a31ac61e9b6ca8ac73cfc4596532e2aee642b709362bb8ee8"
+    },
+    {
+      "path": "verify-initial.sh",
+      "bytes": 2462,
+      "sha256": "5aa857515bc2b6782d373b0bbc6ca471240702a738cd8ac7325dcd0f7c80061b"
+    },
+    {
+      "path": "verify-intermediate.sh",
+      "bytes": 2386,
+      "sha256": "9f4550616585e3f558f59e4ae0ef439d61744bcd62d4a17d7aa43b9776b434fa"
+    },
+    {
+      "path": "verify.sh",
+      "bytes": 567,
+      "sha256": "9ec8c563e019c6c197ee27fe970990351d10fc8f8d9424bf94d4a3349af432d6"
+    }
+  ],
+  "durableInstructions": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "e4583ce559ca7f1b05437466b788badad4ce3d00f812152756ca0d8864a0949b"
+    },
+    {
+      "path": "audit/content-corrections/CODEX_ENGINEERING_CONTINUATION.md",
+      "sha256": "378f1b013a51e9c692b72afeba3c033b13fbfa4540fbdc70025f4f14100eba4c"
+    },
+    {
+      "path": "audit/content-corrections/CODEX_CHECKPOINT_2026-10-12.md",
+      "sha256": "eb321709d03243389981ff7b79852e125e41df2486c6e01709257a50f473d3b2"
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/CURRENT_FINDING_STATUS.json",
+      "sha256": "051581a2ecd615e6a40798a3f71497282eb0d133bf3d33c61881f90933c43683"
+    }
+  ],
+  "candidateInventory": {
+    "path": "NEXT_CANDIDATE_INVENTORY.json",
+    "script": "candidate_inventory.py",
+    "result": "RECORDED_STATIC_INVENTORY_REPRODUCED",
+    "appTestsExecuted": 0,
+    "newPolicyActivated": false,
+    "qualifiedAcceptance": false
+  },
+  "trackedScreenshotAndPriorPrerequisiteInventoryTreesUnchanged": true
+}

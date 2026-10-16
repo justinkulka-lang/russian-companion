@@ -1,0 +1,399 @@
+{
+  "kind": "RECORDED_STATIC_CANDIDATE_NOT_ACTIVATION_OR_QUALIFIED_APPROVAL",
+  "inspectedCommit": "b17b477776ae3ad34b26a8833f2c2c84ef0189ec",
+  "objectHashEncoding": "SHA256 of sorted-key UTF8 compact JSON;not the app governed identity algorithm",
+  "inputSha256": {
+    "app/src/main/assets/content/v2-curriculum.json": "00d2d994d3de47e9cd261967ce32b1719aef83f543fb2589c69cc1b287d5e2cb",
+    "app/src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt": "537ae11da444ada5284e3e699f1ed61f84ec310452d2d95a43c6ad7b31bebed4",
+    "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt": "dcb20ca815c1dce735cfe57de68dc90baa0bc645489837ec50f3ec520f0a44ca",
+    "catalog/sources/units-6-10/wikibooks/numbers-4371358.revision.json": "8f2d7afa56ea696659b2a4df066bb31b0964473dc5f413508daf66b48523a142",
+    "catalog/sources/units-3-5/wikibooks/gender-4310736.txt": "adb1ade8121640064054e67656112a93b30c47fd4682f9f04aef9278c3c2f3ce",
+    "catalog/sources/units-3-5/openrussian/nouns.csv": "c388f9e6dde51932832be8d7e9afdbe9f0acee72fcf70677f0fe25ea61293c84",
+    "catalog/sources/units-3-5/openrussian/LICENSE": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+    "catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt": "95447e1048fcc0094d2e96f1b796b8cc65a595a6fbcd385430a97dc2631b6b40"
+  },
+  "candidateTarget": 9,
+  "instructionalReason": "Supplied one/two constructions explicitly distinguish masculine/feminine/neuter and plural-form agreement. This provides a context to revisit earlier supplied lexical gender together with existing supplied plural review;not numeric milestone spacing.",
+  "earlierGender": {
+    "id": "obj-u3-gender",
+    "ownerUnit": 3,
+    "objectiveSha256": "24393175ce0c1237cc106455107cd44cbd0caa7ab64ea0e1171ebd2fc105a96a",
+    "teaching": [
+      {
+        "id": "u3-st-teach-gender-1",
+        "sha256": "fc9736cd393ce9c177e75ec34aaf1ef6757541d97796371f256b98aabfa0f545",
+        "exampleIds": []
+      },
+      {
+        "id": "u3-st-teach-gender-2",
+        "sha256": "7d458de10328d70bd5819a792992e6b52e885996aaaab7e70eed9af50b740a2b",
+        "exampleIds": [
+          "ex-u3-стол",
+          "ex-u3-дом",
+          "ex-u3-город",
+          "ex-u3-брат",
+          "ex-u3-друг"
+        ]
+      },
+      {
+        "id": "u3-st-teach-gender-3",
+        "sha256": "4637508888c5c72a43f9f5710d5486f04ebb6d471f7711e7fffe847e4162f08c",
+        "exampleIds": [
+          "ex-u3-книга",
+          "ex-u3-вода",
+          "ex-u3-школа",
+          "ex-u3-работа",
+          "ex-u3-дверь"
+        ]
+      },
+      {
+        "id": "u3-st-teach-gender-4",
+        "sha256": "e72d4e0aeb5a0e8d577825beeb2c0c166e7b981081090abbe41f66020e7fa5a6",
+        "exampleIds": [
+          "ex-u3-окно",
+          "ex-u3-письмо",
+          "ex-u3-молоко",
+          "ex-u3-море"
+        ]
+      },
+      {
+        "id": "u3-st-teach-gender-5",
+        "sha256": "f366f41271c9ea8a9d3d3a43c0750d8756f4ba0d180e49f7c90468f15b2ba620",
+        "exampleIds": [
+          "ex-u3-мужчина",
+          "ex-u3-дядя"
+        ]
+      }
+    ],
+    "guidedSteps": [
+      "u3-st-guided-gender-2",
+      "u3-st-guided-gender-3",
+      "u3-st-guided-gender-4",
+      "u3-st-guided-gender-5"
+    ],
+    "independentItems": [
+      {
+        "id": "u3-i-gender-город",
+        "sha256": "22af42af95d8b98b79512ba7958f1a5f1f02c3b93abf8e1aed5fc1da3d8002f8",
+        "key": "masculine",
+        "sourceId": "src-openrussian-50e210c4"
+      },
+      {
+        "id": "u3-i-gender-друг",
+        "sha256": "af4c7545f8df0ba3dc8b89a623e5482b9bde674c11a19b6f40eb8189d9cfeb47",
+        "key": "masculine",
+        "sourceId": "src-openrussian-50e210c4"
+      },
+      {
+        "id": "u3-i-gender-дверь",
+        "sha256": "2a54ff3e3fe6c75f64703b141f7cd2d781e8887b5d278d5632ceca8fd91b5e82",
+        "key": "feminine",
+        "sourceId": "src-openrussian-50e210c4"
+      },
+      {
+        "id": "u3-i-gender-море",
+        "sha256": "6171eaac55f5ee9202d3a75198efa0cfe8995433ed25b47578439dee0b2bd984",
+        "key": "neuter",
+        "sourceId": "src-openrussian-50e210c4"
+      },
+      {
+        "id": "u3-i-gender-дядя",
+        "sha256": "6cfb1d9fa7b72442ab5aeacbcad45626805ba258238492ad0701ea85f8fc31ea",
+        "key": "masculine",
+        "sourceId": "src-wikibooks-russian-cc-by-sa"
+      }
+    ],
+    "repair": [
+      {
+        "id": "u3-st-rem-gender",
+        "sha256": "0346baf801ba8f16396eb3cbec8dc7c179dee38d0b87c6cc9845ee792594b1d0",
+        "bodyEqualsCompleteTeaching": true,
+        "exampleIds": [
+          "ex-u3-стол",
+          "ex-u3-дом",
+          "ex-u3-город",
+          "ex-u3-брат",
+          "ex-u3-друг",
+          "ex-u3-книга",
+          "ex-u3-вода",
+          "ex-u3-школа",
+          "ex-u3-работа",
+          "ex-u3-дверь",
+          "ex-u3-окно",
+          "ex-u3-письмо",
+          "ex-u3-молоко",
+          "ex-u3-море",
+          "ex-u3-мужчина",
+          "ex-u3-дядя"
+        ]
+      }
+    ]
+  },
+  "existingPlural": {
+    "id": "obj-u8-plural",
+    "ownerUnit": 8,
+    "objectiveSha256": "72f177c8552090231d5f7fa960f104f9d4a5f9f243850a9dd563992edfa441f8",
+    "teaching": [
+      {
+        "id": "u8-st-teach-plural-1",
+        "sha256": "ed10bc763f3f36ed77551b251aceca2c6b8aa3fabf41e0709449509103f8374d",
+        "exampleIds": [
+          "ex-or-u8-plural-0",
+          "ex-or-u8-plural-1"
+        ]
+      },
+      {
+        "id": "u8-st-teach-plural-2",
+        "sha256": "b076799d1b7c8cac224f5fe4727156e4e10cda2165bacebf9602bed139bbd6fe",
+        "exampleIds": []
+      },
+      {
+        "id": "u8-st-teach-plural-3",
+        "sha256": "8fb786a6d456774c54e972c464b9e01951a232ad48a73b7f09b1bc4364b5f9a6",
+        "exampleIds": [
+          "ex-or-u8-plural-2",
+          "ex-or-u8-plural-3"
+        ]
+      },
+      {
+        "id": "u8-st-teach-plural-4",
+        "sha256": "fe8610cac33a4656e37a6219d6a3fae0e2a57e98fd53ba85a1efee142f53241c",
+        "exampleIds": [
+          "ex-or-u8-plural-4",
+          "ex-or-u8-plural-5"
+        ]
+      },
+      {
+        "id": "u8-st-teach-plural-5",
+        "sha256": "a042be4b59964452b79cdbf75f566edda0c0c28217820775692f2583bf17880e",
+        "exampleIds": [
+          "ex-or-u8-plural-6",
+          "ex-or-u8-plural-7"
+        ]
+      },
+      {
+        "id": "u8-st-teach-plural-6",
+        "sha256": "729b4462ca55a672a0b780c23a26bce5112312e13980b27225ea615a7e796bbb",
+        "exampleIds": [
+          "ex-or-u8-plural-8",
+          "ex-or-u8-plural-9"
+        ]
+      },
+      {
+        "id": "u8-st-teach-plural-7",
+        "sha256": "fd85e14a37bc6aa3a98a4b5abca547f0976f5a73d707a9f25846ea211706bae8",
+        "exampleIds": [
+          "ex-or-u8-plural-10",
+          "ex-or-u8-plural-11"
+        ]
+      },
+      {
+        "id": "u8-st-teach-plural-8",
+        "sha256": "644c224fb9f46e1ebfca5eb2bd1f0805f75baaaf15ba5a1b3e8de8eba165f7ed",
+        "exampleIds": [
+          "ex-or-u8-plural-12",
+          "ex-or-u8-plural-13"
+        ]
+      }
+    ],
+    "guidedSteps": [
+      "u8-st-guided-plural-1"
+    ],
+    "independentItems": [
+      {
+        "id": "u8-i-plural-1",
+        "sha256": "9734cb0e17644959a7b943e3e2ca857d10e48aa9d291bd57620d358ba4a9bcf2",
+        "key": "города́",
+        "sourceId": "src-openrussian-50e210c4"
+      },
+      {
+        "id": "u8-i-plural-2",
+        "sha256": "6a394d90b9b5399ffd42dc1fe7f5fd1740750b9aef5c34e08e66b4f7c477ae50",
+        "key": "о́кна",
+        "sourceId": "src-openrussian-50e210c4"
+      },
+      {
+        "id": "u8-i-plural-3",
+        "sha256": "e23356ec47647b5b164da9e8f45123e4c1f34f6ae24fad0df0862b3a89d869a6",
+        "key": "ма́мы",
+        "sourceId": "src-openrussian-50e210c4"
+      },
+      {
+        "id": "u8-i-plural-4",
+        "sha256": "25cedb6ee19d56e3af74ef1925ef1d230a4ea3e3129e4893050e6b486247317e",
+        "key": "дома́",
+        "sourceId": "src-openrussian-50e210c4"
+      },
+      {
+        "id": "u8-i-plural-5",
+        "sha256": "19abcf242a7868201c651b8166f2b93be5e1d005f2aaaffb5385146ffa3d55a7",
+        "key": "слова́",
+        "sourceId": "src-openrussian-50e210c4"
+      },
+      {
+        "id": "u8-i-plural-6",
+        "sha256": "949b54f8f026957c862ee518bbcfe64a4e197bbf83f7e5309f9316d01ab78ed5",
+        "key": "кни́ги",
+        "sourceId": "src-openrussian-50e210c4"
+      }
+    ],
+    "repair": [
+      {
+        "id": "u8-st-rem-plural",
+        "sha256": "636d7937c9ea6e67981eb973eb0837566c590cf12b6f390131fbb21aa79604d9",
+        "bodyEqualsCompleteTeaching": true,
+        "exampleIds": [
+          "ex-or-u8-plural-0",
+          "ex-or-u8-plural-1",
+          "ex-or-u8-plural-2",
+          "ex-or-u8-plural-3",
+          "ex-or-u8-plural-4",
+          "ex-or-u8-plural-5",
+          "ex-or-u8-plural-6",
+          "ex-or-u8-plural-7",
+          "ex-or-u8-plural-8",
+          "ex-or-u8-plural-9",
+          "ex-or-u8-plural-10",
+          "ex-or-u8-plural-11",
+          "ex-or-u8-plural-12",
+          "ex-or-u8-plural-13"
+        ]
+      }
+    ]
+  },
+  "targetNumeralContext": {
+    "id": "obj-u9-odindva",
+    "ownerUnit": 9,
+    "objectiveSha256": "04b1728094beba36f66e58417fe7d0873d578d8a050e1ecb24ae527a6b5222e3",
+    "teaching": [
+      {
+        "id": "u9-st-teach-odindva-1",
+        "sha256": "625aa45c787c214a54125389cafd9707439c03698a6e92a8c54822966c454c70",
+        "exampleIds": [
+          "ex-u9-odindva-0",
+          "ex-u9-odindva-1"
+        ]
+      },
+      {
+        "id": "u9-st-teach-odindva-2",
+        "sha256": "3e29af5a193e9267760d62d9a718a56db91336ec2a9e14fe71383b3081764caa",
+        "exampleIds": []
+      },
+      {
+        "id": "u9-st-teach-odindva-3",
+        "sha256": "5ec7a9514f7306fe699b91f07e497c5914f4755fdaacc25f7225484f9ef5e2ef",
+        "exampleIds": [
+          "ex-u9-odindva-2",
+          "ex-u9-odindva-3"
+        ]
+      },
+      {
+        "id": "u9-st-teach-odindva-4",
+        "sha256": "5cf5e854d5d2a16e6c8a5cbe7558d0e8a760596c246aeeb565b6bfd3f5e06d9b",
+        "exampleIds": [
+          "ex-u9-odindva-4",
+          "ex-u9-odindva-5"
+        ]
+      },
+      {
+        "id": "u9-st-teach-odindva-5",
+        "sha256": "5157c35b7f8609d927daea8714787bf5682ea40532a6f2aaa75fcf80f5eb7f41",
+        "exampleIds": [
+          "ex-u9-odindva-6",
+          "ex-u9-odindva-7"
+        ]
+      },
+      {
+        "id": "u9-st-teach-odindva-6",
+        "sha256": "2c7d2b8127420bfc7fe7ecd5af8599b11e04a951fbdf2fa6dd09a7bbe119cd07",
+        "exampleIds": [
+          "ex-or-u9-odindva-8",
+          "ex-or-u9-odindva-9"
+        ]
+      }
+    ],
+    "guidedSteps": [
+      "u9-st-guided-odindva-1"
+    ],
+    "independentItems": [
+      {
+        "id": "u9-i-odindva-1",
+        "sha256": "18546c93eb61f23b906cbdb2e0efc00dced516b26587a322b5e32e6c87c63e17",
+        "key": "одна",
+        "sourceId": "src-wikibooks-russian-cc-by-sa"
+      },
+      {
+        "id": "u9-i-odindva-2",
+        "sha256": "e64f28fcb00f5e46107bd45a405483dbe92657821b9fd0fe48470f253ec2b04b",
+        "key": "одно",
+        "sourceId": "src-wikibooks-russian-cc-by-sa"
+      },
+      {
+        "id": "u9-i-odindva-3",
+        "sha256": "7a2d57cacc80bf4da00854ddee970fb73ab3b9cc0085b0efb81d6f11a8d96f86",
+        "key": "одни",
+        "sourceId": "src-wikibooks-russian-cc-by-sa"
+      },
+      {
+        "id": "u9-i-odindva-4",
+        "sha256": "a72bf037bf2b383fe94b095bae6b750fc211c73cebbcdafb8da15bd4e4b7e5bb",
+        "key": "один",
+        "sourceId": "src-content-audit-research"
+      },
+      {
+        "id": "u9-i-odindva-5",
+        "sha256": "f5d95aa5a8e5dfc8e82a467e5cfe0317ded1ed4f4fd5648c7175d041093685d5",
+        "key": "две",
+        "sourceId": "src-wikibooks-russian-cc-by-sa"
+      }
+    ],
+    "repair": [
+      {
+        "id": "u9-st-rem-odindva",
+        "sha256": "a619e74b60c3f4feb7e3722a12d0d1d901ff02e01a08c33755fde382edb4abde",
+        "bodyEqualsCompleteTeaching": true,
+        "exampleIds": [
+          "ex-u9-odindva-0",
+          "ex-u9-odindva-1",
+          "ex-u9-odindva-2",
+          "ex-u9-odindva-3",
+          "ex-u9-odindva-4",
+          "ex-u9-odindva-5",
+          "ex-u9-odindva-6",
+          "ex-u9-odindva-7",
+          "ex-or-u9-odindva-8",
+          "ex-or-u9-odindva-9"
+        ]
+      }
+    ]
+  },
+  "candidateObjectiveIds": [
+    "obj-u1-decoding",
+    "obj-u8-plural",
+    "obj-u3-gender"
+  ],
+  "existingPolicyId": "unit9-prior-reading-nominative-plural-v1",
+  "existingPolicyUnchanged": true,
+  "newPolicyId": null,
+  "newSchemaActivated": false,
+  "sourceInterpretationLimits": [
+    "Use complete retained numeral context;do not re-admit the source simplified compound-number last-digit rule or its uncommon-oblique-case claim.",
+    "Noun gender recognition does not demonstrate productive numeral agreement or all declined cases.",
+    "Plural grammatical agreement is not nouns losing lexical gender;one pair of jeans is not multiple pairs.",
+    "All five owner3 candidates need genuine current teaching/guided/independent completion;dictionary labels alone do not establish eligibility.",
+    "Prior source/rights reviews and current engineering inspection are not qualified acceptance."
+  ],
+  "requiredBeforeImplementation": [
+    "Author explicit bounded obligation and source/rights disposition;do not mutate Unit9 v1.",
+    "Capture genuine current-corrected-source Unit9 and downstream Unit10 lifecycle histories/backups using real APIs;earlier pre-Unit3-correction histories are historical only.",
+    "Define a new scoped assignment version if needed;do not extend target6/schema4 or change schema1 legacy meaning.",
+    "Preserve exact registered old9 declarations and ordinary/owner9 identities only across that policy-ID transition;never accept changed teaching/source under a compatibility projection.",
+    "Retain fresh assigned answer boundaries,accepted-order/cutoff,backup/reopen/replacement/rollback/packless refusal and full repair return.",
+    "Refresh canonical ancestry only after actual implementation;record exact selected tests,all failures,lint/attachment and exclusions."
+  ],
+  "JUnitMethodsExecuted": 0,
+  "formalAcceptance": false,
+  "IA003": "OPEN",
+  "physicalAcceptance": "LAST_AFTER_FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT_OUTSTANDING",
+  "releaseAuthorization": false
+}

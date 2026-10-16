@@ -1306,13 +1306,18 @@
     "findingStatus": "OPEN"
   },
   "currentEngineeringContinuation": {
-    "initialTestedCommit": "bc8bd0afbe1b72d2ded865da0e66939ae877c2dc",
-    "correctedTestedCommit": "d87c2476802502cf81e343e02e9348a163911a52",
-    "checkpoint": "unit6WiderPolicyCheckpoint",
-    "priorHistoryCheckpoint": "policyHistoryTransitionCheckpoint",
-    "legacyLatestPointers": "Earlier top-level latest* fields remain historical;explicit current checkpoint supersedes recency,not evidence.",
-    "nextInventory": "unit3GenderReadinessInventory",
-    "nextAction": "Repair Unit3 explicit gender teaching and complete ordinary repair before widening gender review; follow ia003-unit3-gender-readiness/FINDINGS_AND_NEXT_CORRECTION.md. Preserve earlier Unit6 verification scopes and genuine histories; final comprehensive independent audit before physical device acceptance."
+    "checkpoint": "unit3GenderTeachingCorrectionCheckpoint",
+    "priorContinuation": {
+      "initialTestedCommit": "bc8bd0afbe1b72d2ded865da0e66939ae877c2dc",
+      "correctedTestedCommit": "d87c2476802502cf81e343e02e9348a163911a52",
+      "checkpoint": "unit6WiderPolicyCheckpoint",
+      "priorHistoryCheckpoint": "policyHistoryTransitionCheckpoint",
+      "legacyLatestPointers": "Earlier top-level latest* fields remain historical;explicit current checkpoint supersedes recency,not evidence.",
+      "nextInventory": "unit3GenderReadinessInventory",
+      "nextAction": "Repair Unit3 explicit gender teaching and complete ordinary repair before widening gender review; follow ia003-unit3-gender-readiness/FINDINGS_AND_NEXT_CORRECTION.md. Preserve earlier Unit6 verification scopes and genuine histories; final comprehensive independent audit before physical device acceptance."
+    },
+    "next": "Source-reviewed wider recurrence;supplied numeral gender is a candidate,not active. Final comprehensive independent audit before physical acceptance.",
+    "legacyLatestPointers": "Earlier latest* fields/prerequisite inventory remain historical,not current readiness claims."
   },
   "units5And6RecentSelectionCheckpoint": {
     "baselineCommit": "74eb8b655ebd0af388c4fba05a986d04e6ec02a8",
@@ -1422,5 +1427,46 @@
     "currentCityOnlyDueReview": "MATCHING_TEACHING_PRESENT",
     "widerGenderPool": "DEFERRED_PENDING_TAUGHT_PATH_CORRECTION",
     "qualifiedAcceptance": false
+  },
+  "unit3GenderTeachingCorrectionCheckpoint": {
+    "baselineCommit": "547457b63b317dea560e4bdc36083c1a4dce315e",
+    "implementationCommit": "057367e58751c4db86af05f5b84b463537ffa3c7",
+    "initialTestedCommit": "5de1d0f3462c99de0a42ba60579725f57838196e",
+    "initialCounts": {
+      "tests": 84,
+      "failures": 7,
+      "errors": 0,
+      "skipped": 0
+    },
+    "initialPassed": 77,
+    "intermediateTestedCommit": "b17b477776ae3ad34b26a8833f2c2c84ef0189ec",
+    "intermediateCounts": {
+      "tests": 63,
+      "failures": 1,
+      "errors": 0,
+      "skipped": 0
+    },
+    "intermediatePassed": 62,
+    "newUnit3MethodsPassedWithinIntermediateScope": 7,
+    "finalTestedCommit": "692e9eddeaef4d8f4ca9e85bf352983e3526e47c",
+    "finalCounts": {
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "manifest": "ia003-unit3-gender-correction/FINAL_VERIFICATION_MANIFEST.json",
+    "scope": "ia003-unit3-gender-correction/SOURCE_AND_SCOPE.md",
+    "genuineCapturedStates": 8,
+    "originalProvenancePreserved": 6914,
+    "currentProvenanceCount": 6922,
+    "allScoredItemsAndPoliciesUnchanged": true,
+    "unit3UnchangedUnit1TaskRetained": true,
+    "changedOrdinaryTeachingCreditRefused": true,
+    "laterLegacyMethodsUpdatedNotExecution": 52,
+    "completeSuite": false,
+    "overlappingScopesSummed": false,
+    "qualifiedAcceptance": false,
+    "findingStatus": "OPEN"
   }
 }
