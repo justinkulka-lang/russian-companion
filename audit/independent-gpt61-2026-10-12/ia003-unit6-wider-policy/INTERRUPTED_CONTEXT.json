@@ -1,0 +1,13 @@
+{
+  "testedCommit": "e6f12405c0a28ae8a72fa3243bcce3b19a66c69b",
+  "runStartedUtc": "2026-10-16T15:09:55.879569+00:00",
+  "command": "bash audit/independent-gpt61-2026-10-12/ia003-unit6-wider-policy/verify.sh",
+  "runnerExitCode": 143,
+  "completeRun": false,
+  "plannedMethods": 96,
+  "actualTotalCounts": "UNAVAILABLE: run interrupted before final XML;do not infer zero tests or passing scope",
+  "knownObservedFailure": "Unit7CumulativeReviewTest.schema11OrdinaryLegacyRowsWithFalseActivationMarkerSurviveReopenWithoutSyntheticReview;NullPointerException Unit7CumulativeReviewTest.kt:246,older pack target6 v1 declaration rejected by active-only lookup.",
+  "reasonForInterruption": "Static trace proved old-pack incompatibility;stopped costly run early. Log also contains the matching observed migration failure. Preserve source and raw exit143;no full96 result or pass claim.",
+  "lintReached": false,
+  "attachmentReached": false
+}

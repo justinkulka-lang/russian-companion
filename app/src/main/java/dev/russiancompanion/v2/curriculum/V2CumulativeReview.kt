@@ -359,12 +359,21 @@ internal fun cumulativeReviewTitle(targetUnit: Int): String = when (targetUnit) 
     else -> "Review earlier objectives"
 }
 
-internal fun cumulativeReviewDeclarationValid(pack: V2CurriculumPack, targetUnit: Int): Boolean {
-    val policy = cumulativeReviewPolicy(targetUnit) ?: return false
-    return pack.unit(targetUnit)?.advancement?.let {
-        it.requireDueReview && it.cumulativeReviewPolicyId == policy.id
-    } == true
+/** Explicit supported declarations, including genuine prior source packs. */
+internal fun cumulativeReviewDeclaredPolicy(pack: V2CurriculumPack, targetUnit: Int): CumulativeReviewPolicy? {
+    val rule = pack.unit(targetUnit)?.advancement ?: return null
+    if (!rule.requireDueReview) return null
+    val active = cumulativeReviewPolicy(targetUnit) ?: return null
+    return when {
+        rule.cumulativeReviewPolicyId == active.id -> active
+        targetUnit == 6 && rule.cumulativeReviewPolicyId == Unit6CumulativeReviewPolicy.definition.id ->
+            Unit6CumulativeReviewPolicy.definition
+        else -> null
+    }
 }
+
+internal fun cumulativeReviewDeclarationValid(pack: V2CurriculumPack, targetUnit: Int): Boolean =
+    cumulativeReviewDeclaredPolicy(pack, targetUnit) != null
 
 internal fun reviewHash(text: String): String = MessageDigest.getInstance("SHA-256")
     .digest(text.toByteArray()).joinToString("") { "%02x".format(it.toInt() and 255) }
@@ -385,10 +394,11 @@ private fun teachingDigest(pack: V2CurriculumPack, objective: V2Objective): Stri
     },
 ))
 
-private fun newReviewAssignmentSchema(targetUnit: Int): Int = when (targetUnit) {
+private fun newReviewAssignmentSchema(policy: CumulativeReviewPolicy): Int = when (policy.targetUnit) {
     3 -> UNIT3_RECENT_SELECTION_ASSIGNMENT_SCHEMA
     5 -> UNITS5_6_RECENT_SELECTION_ASSIGNMENT_SCHEMA
-    6 -> UNIT6_WIDER_REVIEW_ASSIGNMENT_SCHEMA
+    6 -> if (policy.id == Unit6WiderCumulativeReviewPolicy.definition.id) UNIT6_WIDER_REVIEW_ASSIGNMENT_SCHEMA
+        else UNITS5_6_RECENT_SELECTION_ASSIGNMENT_SCHEMA
     else -> CUMULATIVE_REVIEW_SCHEMA
 }
 
@@ -439,8 +449,8 @@ internal fun createUnit3ReviewAssignment(pack: V2CurriculumPack, learner: V2Lear
 
 internal fun createCumulativeReviewAssignment(pack: V2CurriculumPack, learner: V2LearnerView,
                                              targetUnit: Int, id: String, boundary: Long): CumulativeReviewAssignment? {
-    val policy = cumulativeReviewPolicy(targetUnit) ?: return null
-    val assignmentSchema = newReviewAssignmentSchema(targetUnit)
+    val policy = cumulativeReviewDeclaredPolicy(pack, targetUnit) ?: return null
+    val assignmentSchema = newReviewAssignmentSchema(policy)
     if (id.isBlank() || boundary < 0 || pack.schemaVersion != 1 ||
         !cumulativeReviewDeclarationValid(pack, targetUnit)) return null
     val candidates = eligibleReviewCandidates(pack, learner, policy) ?: return null
@@ -493,6 +503,9 @@ internal fun reviewAssignmentEligible(pack: V2CurriculumPack, learner: V2Learner
 
 internal fun reviewAssignmentCurrent(pack: V2CurriculumPack, a: CumulativeReviewAssignment): Boolean {
     val policy = cumulativeReviewAssignmentPolicy(a) ?: return false
+    val declared = cumulativeReviewDeclaredPolicy(pack, a.targetUnit) ?: return false
+    if (policy.id != declared.id && !(a.targetUnit == 6 &&
+        declared.id == Unit6WiderCumulativeReviewPolicy.definition.id && policy.id == Unit6CumulativeReviewPolicy.definition.id)) return false
     if (!cumulativeReviewDeclarationValid(pack, a.targetUnit) || pack.schemaVersion != 1 ||
         !reviewAssignmentSchemaSupported(a) || a.id.isBlank() || a.boundary < 0 ||
         a.policyId != policy.id || a.policyDigest != policy.digest ||
