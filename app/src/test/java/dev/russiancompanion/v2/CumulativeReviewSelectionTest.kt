@@ -16,6 +16,8 @@ import org.json.JSONObject
 
 @RunWith(RobolectricTestRunner::class)
 @Config(sdk = [33])
+/** Historical policy-transition regressions on the exact pre-teaching-change source.
+ * Current changed-teaching rejection is covered separately by Unit3GenderTeachingTest. */
 class CumulativeReviewSelectionTest {
     @Test fun newestCurrentMissWinsAndLaterCorrectAnswerResolvesIt() = withBaseline { s ->
         val learner = s.v2LearnerView()
@@ -165,7 +167,6 @@ class CumulativeReviewSelectionTest {
         private const val r = "u1-i-р-not-p"
         private const val n = "u1-i-н-not-h"
         private const val c = "u1-i-с-not-c"
-        private val p by lazy { V2PackLoader.parse(File(if (File("app").isDirectory) "." else "..",
-            "app/src/main/assets/content/v2-curriculum.json").readText()).also { V2PackIdentityIndex.warm(it) } }
+        private val p by lazy { Unit3GenderTeachingTest.preTeachingCorrectionPack() }
     }
 }

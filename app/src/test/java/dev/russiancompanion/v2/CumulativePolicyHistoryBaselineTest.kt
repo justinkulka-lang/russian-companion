@@ -15,13 +15,15 @@ import java.io.File
 
 @RunWith(RobolectricTestRunner::class)
 @Config(sdk = [33])
+/** Historical policy-transition regressions on the exact pre-teaching-change source.
+ * Current changed-teaching rejection is covered separately by Unit3GenderTeachingTest. */
 class CumulativePolicyHistoryBaselineTest {
     @Test fun genuineSchemaThreeLifecycleRestoresReopensAndContinuesWithoutErasingAcceptedSnapshots() = lifecycle("")
 
     @Test fun genuinePredecessorSchemaOneLifecycleRestoresReopensAndContinuesWithoutRelabelling() = lifecycle("predecessor-schema1/")
 
     private fun lifecycle(prefix: String) {
-        val p = V2PackLoader.parse(File(root(), "app/src/main/assets/content/v2-curriculum.json").readText())
+        val p = Unit3GenderTeachingTest.preTeachingCorrectionPack()
         V2PackIdentityIndex.warm(p)
         val sourceSchema = if (prefix.isEmpty()) 3 else 1
         for (label in listOf("BEFORE_UNIT6_WORK", "ORDINARY_UNIT6", "UNSTARTED_REVIEW", "PARTIAL_REVIEW",

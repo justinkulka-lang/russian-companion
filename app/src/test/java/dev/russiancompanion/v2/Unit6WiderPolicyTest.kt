@@ -21,6 +21,8 @@ import java.io.File
 
 @RunWith(RobolectricTestRunner::class)
 @Config(sdk = [33])
+/** Historical policy-transition regressions on the exact pre-teaching-change source.
+ * Current changed-teaching rejection is covered separately by Unit3GenderTeachingTest. */
 class Unit6WiderPolicyTest {
     @get:Rule val compose = createComposeRule()
     private val names = mutableListOf<String>()
@@ -281,7 +283,6 @@ class Unit6WiderPolicyTest {
     companion object {
         private const val student = "u4-i-nom-role-student"
         private const val window = "u5-i-decl-окно"
-        private val p by lazy { V2PackLoader.parse(File(if (File("app").isDirectory) "." else "..",
-            "app/src/main/assets/content/v2-curriculum.json").readText()).also { V2PackIdentityIndex.warm(it) } }
+        private val p by lazy { Unit3GenderTeachingTest.preTeachingCorrectionPack() }
     }
 }

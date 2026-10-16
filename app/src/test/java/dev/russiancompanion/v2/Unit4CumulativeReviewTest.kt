@@ -87,7 +87,7 @@ class Unit4CumulativeReviewTest {
 
     @Test fun schema11OrdinaryLegacyRowsWithFalseActivationMarkerSurviveReopenWithoutSyntheticReview() {
         val old = oldPack("73a8f9ad447fe86ed334671277a86be0d790ec2f")
-        val p = pack(); val name = "unit4-old-${System.nanoTime()}.db"
+        val p = Unit3GenderTeachingTest.preTeachingCorrectionPack(); val name = "unit4-old-${System.nanoTime()}.db"
         try {
             LocalStore.openNamed(context(), name).use { s ->
                 prepare(old, s); s.v2CompleteUnit(4, "old-completion")
@@ -117,7 +117,7 @@ class Unit4CumulativeReviewTest {
     }
 
     @Test fun oldFormatOneAndTwoRestoreExactPrePolicyWorkWithoutAnyNewReviewCredit() {
-        val old = oldPack("20a227817562e3a8645488fd52db2e7589713a7a"); val p = pack()
+        val old = oldPack("20a227817562e3a8645488fd52db2e7589713a7a"); val p = Unit3GenderTeachingTest.preTeachingCorrectionPack()
         LocalStore.openInMemory(context()).use { source ->
             for (n in 1..4) { ordinary(old, source, n); source.v2CompleteUnit(n, "historical") }
             for (version in 1..2) {

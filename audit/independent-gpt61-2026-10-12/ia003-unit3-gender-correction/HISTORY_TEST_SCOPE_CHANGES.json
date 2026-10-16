@@ -1,0 +1,33 @@
+{
+  "scope": "Historical policy-only compatibility keeps exact old teaching source;new current-teaching rejection covered in7newtests",
+  "archivedSourceCommit": "547457b63b317dea560e4bdc36083c1a4dce315e",
+  "historicalClasses": [
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/CumulativePolicyHistoryBaselineTest.kt",
+      "change": "Use exact archived pre-teaching source for genuine historical-policy fixtures;all assertions remain intact",
+      "beforeSha256": "7dd812a7809504df8b85b41ca2e6af88e22708e39705d86773166d9e11f1d7e9",
+      "afterSha256": "7aa29030791f504c6c6cb82448506ba6511f686cd447b771ef0033605eda82b2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit6WiderPolicyTest.kt",
+      "change": "Use exact archived pre-teaching source for genuine historical-policy fixtures;all assertions remain intact",
+      "beforeSha256": "623265bf2b9165b7aad851acf80a76ae0679fec3a3e3f6d42685d3ed114d4f0c",
+      "afterSha256": "c592ae6097e85763c36d99be80657047b36eda73434120e93791710a71326bde"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/MultiPoolReviewSelectionTest.kt",
+      "change": "Use exact archived pre-teaching source for genuine historical-policy fixtures;all assertions remain intact",
+      "beforeSha256": "411d66dffe07e1fa92358898c03112d26aeae511828879fda79be1370e603fcc",
+      "afterSha256": "93d3024d147dcee95c83cefff8474c62c994d2d689065eb61da1d1dfc5b35703"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/CumulativeReviewSelectionTest.kt",
+      "change": "Use exact archived pre-teaching source for genuine historical-policy fixtures;all assertions remain intact",
+      "beforeSha256": "4810964e511b1077bb344b64891a6b2ba8562055002b48c0a26a15769a33bb12",
+      "afterSha256": "9f59fdb12c39631fcece6ad0a9f13132e25ad1592d06501a56f5d3c2d0e675f2"
+    }
+  ],
+  "currentMigrationExpectation": "Actual version10 rows retain raw history but cannot credit changed Unit3 teaching;Unit4 remains closed",
+  "newCurrentRejectionCases": "8 fresh Unit3/4 backups plus16 prior genuine policy histories",
+  "runtimeOrAssertionWeakening": false
+}

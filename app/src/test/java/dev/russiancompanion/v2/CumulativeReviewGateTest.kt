@@ -52,7 +52,7 @@ class CumulativeReviewGateTest {
             assertTrue(V2Validator.validate(p).errors.joinToString("\n"),V2Validator.validate(p).ok)
             assertTrue(advance(p, s))
             assertEquals(4, s.v2Profile().currentUnitNumber)
-            assertEquals(setOf(1, 2, 3), currentCompletedUnitNumbers(p, s.v2LearnerView()))
+            assertEquals(setOf(1, 2), currentCompletedUnitNumbers(p, s.v2LearnerView()))
             val row = s.governedLearnerDocument().unitCompletions.single { it.unitNumber == 3 }
             assertFalse(row.preReviewActivation); assertEquals(a.id, row.reviewAssignmentId)
             assertTrue(row.reviewCompletionOrder > a.boundary)
@@ -95,7 +95,7 @@ class CumulativeReviewGateTest {
         }
     }
 
-    @Test fun migratedVersionTenRetainsGenuineOldLessonCreditWithoutFabricatingReviewCompletion() {
+    @Test fun migratedVersionTenKeepsRawHistoryButChangedGenderTeachingRejectsOldLessonCredit() {
         val p = pack(); val old = legacyPack(); val name = "review-activation-${System.nanoTime()}.db"
         val schema = JSONObject(File(root(), "app/schemas/dev.russiancompanion.data.local.AppDatabase/10.json").readText()).getJSONObject("database")
         val document = ready(old).use { s -> s.v2CompleteUnit(3, "historical-completion"); s.governedLearnerDocument() }
@@ -124,7 +124,7 @@ class CumulativeReviewGateTest {
             LocalStore.openNamed(context(), name).use { s ->
                 assertEquals(document.attempts.map { it.id }, s.v2Attempts().map { it.id })
                 assertEquals(setOf(1, 2, 3), currentCompletedUnitNumbers(p, s.v2LearnerView()))
-                assertEquals(V2UnitState.CURRENT, unitState(p, p.unit(4)!!, s.v2LearnerView()))
+                assertFalse(canOpenUnit(unitState(p, p.unit(4)!!, s.v2LearnerView())))
                 assertTrue(s.governedLearnerDocument().unitCompletions.all { it.preReviewActivation })
                 assertTrue(s.cumulativeReviewHistory().first.isEmpty())
                 assertFalse(unit3ReviewComplete(p, s.v2LearnerView()))

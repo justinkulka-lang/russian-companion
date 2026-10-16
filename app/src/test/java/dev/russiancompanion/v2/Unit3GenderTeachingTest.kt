@@ -86,6 +86,25 @@ class Unit3GenderTeachingTest {
         }
     }
 
+    @Test fun olderPolicyHistoriesRemainRawButCannotBypassChangedUnit3Teaching() {
+        for (prefix in listOf("", "predecessor-schema1/")) {
+            for (label in listOf("BEFORE_UNIT6_WORK", "ORDINARY_UNIT6", "UNSTARTED_REVIEW", "PARTIAL_REVIEW", "ANSWERED_REVIEW", "COMPLETED_UNIT6", "POST_COMPLETION_WRONG", "COMPLETED_UNIT7")) {
+                val file = File(root(), "audit/independent-gpt61-2026-10-12/ia003-policy-history-transition/$prefix$label.json")
+                val old = backupJson.decodeFromString(GovernedLearnerDocument.serializer(), file.readText())
+                LocalStore.openInMemory(context()).use { store ->
+                    store.openLearnerReplacement()
+                    try { assertEquals(GovernedReplaceOutcome.REPLACED, store.replaceGovernedLearner(old, emptyList())) }
+                    finally { store.closeLearnerReplacement() }
+                    assertEquals(old.reviewAssignments to old.reviewAnswers, store.cumulativeReviewHistory())
+                    assertEquals(old.unitCompletions, store.governedLearnerDocument().unitCompletions)
+                    assertEquals(setOf(1, 2), currentCompletedUnitNumbers(current, store.v2LearnerView()))
+                    assertFalse(ordinaryUnitRequirements(current, current.unit(3)!!, store.v2LearnerView()).allowed)
+                    assertNull(store.openCumulativeReview(current, 6, store.learnerMutationEpoch()))
+                }
+            }
+        }
+    }
+
     @Test fun freshTeachingAndAnswersReestablishCompletionWithoutRelabellingOldAssignments() {
         val p = current
         val old = backupJson.decodeFromString(GovernedLearnerDocument.serializer(), File(evidence(), "COMPLETED_UNIT4.json").readText())
@@ -175,6 +194,7 @@ class Unit3GenderTeachingTest {
             val command = ProcessBuilder("git", "show", "547457b63b317dea560e4bdc36083c1a4dce315e:app/src/main/assets/content/v2-curriculum.json").directory(root()).start()
             V2PackLoader.parse(command.inputStream.bufferedReader().readText()).also { assertEquals(0, command.waitFor()); V2PackIdentityIndex.warm(it) }
         }
+        internal fun preTeachingCorrectionPack(): V2CurriculumPack = previous
         internal fun declaredAfterUnit(): V2Unit {
             val ledger = Json.parseToJsonElement(File(evidence(), "CORRECTION.json").readText()).jsonObject
             return Json { ignoreUnknownKeys = true }.decodeFromJsonElement<V2Unit>(ledger.getValue("afterUnit"))
