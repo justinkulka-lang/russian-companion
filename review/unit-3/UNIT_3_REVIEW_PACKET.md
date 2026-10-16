@@ -11,12 +11,12 @@ Unit 3 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: e827f85ae42d61d6b31d5985951578221caa5ddb
-- Unit content-review SHA-256: ca8c750f59bb71309cdc503ff566ae5431a19db90959011af1d2232310bf3f10
+- Curriculum source commit: 057367e58751c4db86af05f5b84b463537ffa3c7
+- Unit content-review SHA-256: 28aa1c4770ecd53891d2313a0026f8876594ad623813c4a74a9a381d36e69300
 - Mapping-package SHA-256: e40e0ce030f9221b6e2fceba66fe946d85ad172703c47bd34d795e77e43120b4
-- Pack content-review SHA-256: b2c6c265fa8a8d4f3b74782cc71901a2d00d33ccf3b5b4b221e20f29d62cf13d
-- Review-package SHA-256: ad1dd7409b9d392547d4706654a36b8de040863981fadff6b5933b5abb87e9b2
-- Repository source SHA-256: 3d5d5b9f9681b296423a9a99a59f6379c4d3218e9e6b07f09dd30865a1b78d86
+- Pack content-review SHA-256: cb7f09a1f6afc28cf5090783feff855125d7fa399f486796cddaaab0f04d87b6
+- Review-package SHA-256: 0e2985b1929cf4286ea10dfa93e654cd107e3720d7eb00e3eff76c80010a94fe
+- Repository source SHA-256: b011d28d859261b3c4894b6fc0120952d11c5b9b51a50206dfb51508d2112a48
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -1970,6 +1970,36 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-ca-u3-gender-u3-st-rem-gender-heading-v1`
+
+- Objectives: obj-u3-gender
+- Sessions: u3-s-orient, u3-s-gender
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0120b4ae9670d027a30095f71cd95bda40795dbc12c317a8c0ebb23aa5053e55
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u3-gender:u3-st-rem-gender:heading-v1
+originalSourceText=Frozen OpenRussian nouns.csv at50e210c4803237779cb562bc1abcea529066031c, bare/accented/translations_en/gender fields for the already-admitted Unit3 nouns; friend m and door f explicitly inspected. Frozen Wikibooks Russian/Grammar/Gender oldid4310736 complete context and Copyrights oldid4622060 inspected. Existing native/stress/gloss/quotation records retain their separate CC BY-SA4.0 route, contributor attribution, changes and share-alike notice. Uncle uses the explicit Wikibooks masculine exception, not the empty dictionary gender field. Arrangement of existing Unit3 teaching plus independently authored English record-label explanation dated2026-10-16. No universal ending rule, new Russian form, scored key, audio, private Penguin text or qualified approval.
+Review the admitted noun genders
+shippedText=Review the admitted noun genders
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5957cc796e4139df226b6cd10456082a02333fb30275d32ff8e3e1a484b4cf6d
+contentHash=ed08e5dca19f53625817df5610e8b0a4c2c616078f076d1cc2fd06729442913a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-ca-u3-gender-u3-st-teach-gender-2-complete-v1`
 
 - Objectives: obj-u3-gender
@@ -2000,6 +2030,36 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-ca-u3-gender-u3-st-teach-gender-2-heading-v1`
+
+- Objectives: obj-u3-gender
+- Sessions: u3-s-orient, u3-s-gender
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7a01ae74c8139b5d6f2889c6b88dee4fccc80dc55e9b8de27033a13de2a0f430
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u3-gender:u3-st-teach-gender-2:heading-v1
+originalSourceText=Frozen OpenRussian nouns.csv at50e210c4803237779cb562bc1abcea529066031c, bare/accented/translations_en/gender fields for the already-admitted Unit3 nouns; friend m and door f explicitly inspected. Frozen Wikibooks Russian/Grammar/Gender oldid4310736 complete context and Copyrights oldid4622060 inspected. Existing native/stress/gloss/quotation records retain their separate CC BY-SA4.0 route, contributor attribution, changes and share-alike notice. Uncle uses the explicit Wikibooks masculine exception, not the empty dictionary gender field. Arrangement of existing Unit3 teaching plus independently authored English record-label explanation dated2026-10-16. No universal ending rule, new Russian form, scored key, audio, private Penguin text or qualified approval.
+Recorded masculine nouns
+shippedText=Recorded masculine nouns
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f47d5b9ffcf5de2ef55d78f403ca4221854319030e905953f94c201f5a5a8391
+contentHash=bd87142671092cbdc16a36b5572231dfaf2fac80f0b9a461e727246362e38d67
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-ca-u3-gender-u3-st-teach-gender-3-complete-v1`
 
 - Objectives: obj-u3-gender
@@ -2024,6 +2084,36 @@ attribution=Russian Companion content-audit research synthesis, content-audit-20
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
 sourceHash=26344347fb2404a8faa74db822cb90bc41cebbbb9249d314e63ec4ea0c10a2cd
 contentHash=5e6d0c97e1c1e2926876b4122cbde7a334788262d1fca8ad664b2b39016e2b37
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u3-gender-u3-st-teach-gender-3-heading-v1`
+
+- Objectives: obj-u3-gender
+- Sessions: u3-s-orient, u3-s-gender
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 87e5509d798f1b5251a6c6984f5686ba43bc27dfd4fd2e21ca53e29cf60632f4
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u3-gender:u3-st-teach-gender-3:heading-v1
+originalSourceText=Frozen OpenRussian nouns.csv at50e210c4803237779cb562bc1abcea529066031c, bare/accented/translations_en/gender fields for the already-admitted Unit3 nouns; friend m and door f explicitly inspected. Frozen Wikibooks Russian/Grammar/Gender oldid4310736 complete context and Copyrights oldid4622060 inspected. Existing native/stress/gloss/quotation records retain their separate CC BY-SA4.0 route, contributor attribution, changes and share-alike notice. Uncle uses the explicit Wikibooks masculine exception, not the empty dictionary gender field. Arrangement of existing Unit3 teaching plus independently authored English record-label explanation dated2026-10-16. No universal ending rule, new Russian form, scored key, audio, private Penguin text or qualified approval.
+Recorded feminine nouns
+shippedText=Recorded feminine nouns
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1fbf7397277cf550f07193fb4edeb49465313e1641d48e794e3b9bcd14869166
+contentHash=0657ba96b6e572d668bac29bda63fbad60331a52f32bfea2baab3ca35d772dc7
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -5281,8 +5371,11 @@ permitsAppUse=true
 - `obj-u3-gender` PROVENANCE `prov-ca-3-347`
 - `obj-u3-gender` PROVENANCE `prov-ca-3-348`
 - `obj-u3-gender` PROVENANCE `prov-ca-u3-gender-u3-st-rem-gender-complete-v1`
+- `obj-u3-gender` PROVENANCE `prov-ca-u3-gender-u3-st-rem-gender-heading-v1`
 - `obj-u3-gender` PROVENANCE `prov-ca-u3-gender-u3-st-teach-gender-2-complete-v1`
+- `obj-u3-gender` PROVENANCE `prov-ca-u3-gender-u3-st-teach-gender-2-heading-v1`
 - `obj-u3-gender` PROVENANCE `prov-ca-u3-gender-u3-st-teach-gender-3-complete-v1`
+- `obj-u3-gender` PROVENANCE `prov-ca-u3-gender-u3-st-teach-gender-3-heading-v1`
 - `obj-u3-gender` PROVENANCE `prov-u3-dyadya-note`
 - `obj-u3-gender` PROVENANCE `prov-u3-gender-field-дверь`
 - `obj-u3-gender` PROVENANCE `prov-u3-gender-field-друг`

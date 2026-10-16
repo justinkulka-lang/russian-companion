@@ -49,6 +49,6 @@ w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2
 Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
 Source readiness and pending final-audit preparation regenerated; no acceptance recorded.
 
-BUILD SUCCESSFUL in 56s
+BUILD SUCCESSFUL in 53s
 33 actionable tasks: 3 executed, 30 up-to-date
 Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.6.0/userguide/configuration_cache_enabling.html

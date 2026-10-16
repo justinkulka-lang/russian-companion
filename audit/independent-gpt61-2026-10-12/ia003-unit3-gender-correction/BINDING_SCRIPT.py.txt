@@ -5,7 +5,7 @@ for n in range(1,31):
  path=f'review/unit-{n}/UNIT_{n}_REVIEW_MANIFEST.json';a=old(path);b=json.loads((r/path).read_text());changes=sorted(k for k in a.keys()|b.keys() if a.get(k)!=b.get(k));assert a['mappingPackageDigest']==b['mappingPackageDigest']
  if n!=3:assert a['contentReviewDigest']==b['contentReviewDigest']
  else:
-  assert a['contentReviewDigest']!=b['contentReviewDigest'];assert b['curriculumSourceCommit']=='e827f85ae42d61d6b31d5985951578221caa5ddb';replacements[a['reviewPackageDigest']]=b['reviewPackageDigest'];replacements[a['contentReviewDigest']]=b['contentReviewDigest']
+  assert a['contentReviewDigest']!=b['contentReviewDigest'];assert b['curriculumSourceCommit']=='057367e58751c4db86af05f5b84b463537ffa3c7';replacements[a['reviewPackageDigest']]=b['reviewPackageDigest'];replacements[a['contentReviewDigest']]=b['contentReviewDigest']
  units.append({'unit':n,'changedFields':changes,'contentReviewDigest':b['contentReviewDigest'],'mappingPackageDigest':b['mappingPackageDigest']})
 oldpack=old('review/unit-3/UNIT_3_REVIEW_MANIFEST.json')['packContentReviewDigest'];replacements[oldpack]=ds['pack']
 middle=json.loads(Path('/workspace/setup/gender-intermediatebindings.json').read_text());final=json.loads((r/'review/unit-3/UNIT_3_REVIEW_MANIFEST.json').read_text())
@@ -17,7 +17,7 @@ for f in (r/'app/src/test').rglob('*.kt'):
  if s!=before:fixtures.append({'path':str(f.relative_to(r)),'beforeSha256':hashlib.sha256(before.encode()).hexdigest(),'afterSha256':hashlib.sha256(s.encode()).hexdigest()});f.write_text(s)
 f=r/'release/acceptance/candidate.json';s=f.read_text();s=s.replace(json.loads(s)['sourceDigest'],ds['source']);f.write_text(s)
 f=r/'audit/curriculum-readiness/V2_CURRICULUM_GAP_CLOSURE_DOSSIER_v1.0.md';s,n=re.subn(r'(\*\*Repository source digest:\*\* `)[a-f0-9]{64}(`)',lambda x:x[1]+ds['source']+x[2],f.read_text());assert n==1;s=s.replace(oldpack,ds['pack']).replace(middle['packContentReviewDigest'],ds['pack']);f.write_text(s)
-ledger={'baselineCommit':base,'implementationCommit':'e827f85ae42d61d6b31d5985951578221caa5ddb','digests':ds,'units':units,'digestReplacements':replacements,'fixtureDigestLiteralChanges':fixtures,'all30MappingDigestsUnchanged':True,'other29ContentDigestsUnchanged':True,'qualifiedAcceptance':False}
+ledger={'baselineCommit':base,'implementationCommit':'057367e58751c4db86af05f5b84b463537ffa3c7','digests':ds,'units':units,'digestReplacements':replacements,'fixtureDigestLiteralChanges':fixtures,'all30MappingDigestsUnchanged':True,'other29ContentDigestsUnchanged':True,'qualifiedAcceptance':False}
 (d/'BINDING_LEDGER.json').write_text(json.dumps(ledger,indent=2)+'\n')
 for a,b in [('gender-reviews.log','REVIEW_REFRESH.txt'),('gender-reviews.exit','REVIEW_REFRESH_EXIT.txt')]:shutil.copy2('/workspace/setup/'+a,d/b)
 print(json.dumps({'digests':ds,'fixtureFiles':len(fixtures),'unit3':units[2]}))

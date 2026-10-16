@@ -23,30 +23,24 @@ Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dht
 > Task :app:processDebugResources UP-TO-DATE
 > Task :app:bundleDebugClassesToRuntimeJar UP-TO-DATE
 > Task :app:bundleDebugClassesToCompileJar UP-TO-DATE
-> Task :app:kspDebugUnitTestKotlin
+> Task :app:kspDebugUnitTestKotlin UP-TO-DATE
 > Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:compileDebugUnitTestKotlin UP-TO-DATE
 > Task :app:javaPreCompileDebugUnitTest UP-TO-DATE
+> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
 > Task :app:generateDebugAssets UP-TO-DATE
-> Task :app:mergeDebugAssets
-> Task :app:packageDebugUnitTestForUnitTest
+> Task :app:mergeDebugAssets UP-TO-DATE
+> Task :app:packageDebugUnitTestForUnitTest UP-TO-DATE
 > Task :app:mergeDebugUnitTestManifest UP-TO-DATE
 > Task :app:processDebugUnitTestManifest UP-TO-DATE
-> Task :app:generateDebugUnitTestConfig
+> Task :app:generateDebugUnitTestConfig UP-TO-DATE
 > Task :app:processDebugJavaRes UP-TO-DATE
-
-> Task :app:compileDebugUnitTestKotlin
-w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/Unit3GenderTeachingTest.kt:200:20 Redundant creation of Json format. Creating instances for each usage can be slow.
-w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/review/Unit1ReviewPackage.kt:2073:33 Only safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type 'String?'.
-w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/review/Unit1ReviewPackage.kt:2082:34 Only safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type 'String?'.
-w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/review/Unit1ReviewPackage.kt:2083:33 Only safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type 'String?'.
-
-> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
 > Task :app:processDebugUnitTestJavaRes UP-TO-DATE
 
 > Task :app:renderCheckpointArtifacts
 Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
-30 pending unit packets rendered; pack=b2c6c265fa8a8d4f3b74782cc71901a2d00d33ccf3b5b4b221e20f29d62cf13d source=3d5d5b9f9681b296423a9a99a59f6379c4d3218e9e6b07f09dd30865a1b78d86
+30 pending unit packets rendered; pack=cb7f09a1f6afc28cf5090783feff855125d7fa399f486796cddaaab0f04d87b6 source=b011d28d859261b3c4894b6fc0120952d11c5b9b51a50206dfb51508d2112a48
 
-BUILD SUCCESSFUL in 47s
-33 actionable tasks: 6 executed, 27 up-to-date
+BUILD SUCCESSFUL in 1m 1s
+33 actionable tasks: 1 executed, 32 up-to-date
 Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.6.0/userguide/configuration_cache_enabling.html
