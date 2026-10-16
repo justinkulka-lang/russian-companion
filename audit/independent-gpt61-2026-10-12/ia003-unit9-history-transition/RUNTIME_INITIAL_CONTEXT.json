@@ -1,0 +1,22 @@
+{
+  "sourceCommit": "0cd049572d3d67a186c8f5095b55a48d1f008a83",
+  "selected": [
+    "*Unit9WiderPolicyTest"
+  ],
+  "command": "source /workspace/setup/android-env.sh; ./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle testDebugUnitTest --tests '*Unit9WiderPolicyTest' --max-workers=4 --console=plain",
+  "inputs": {
+    "app/src/main/assets/content/v2-curriculum.json": "537441f3d5d695fad959f1791a54878adbb315eb62c92560ca68dc98467025c6",
+    "app/src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt": "3dbb0275611370b31bce733672010a3cc296626d5f05f12fa0bce5606d240abe",
+    "app/src/main/java/dev/russiancompanion/v2/ui/V2CumulativeReviewScreen.kt": "8f23d7e2ade2c2fb0d38379ac3220bc1cd9dc0d32ae6e5241e4e6d26a7afa4b7",
+    "app/src/test/java/dev/russiancompanion/v2/Unit9WiderPolicyTest.kt": "3b84bd31f9f8e5960966e3d48245eb1dcc5e14d9537f11020b9f5f1dc2b65717",
+    "/workspace/setup/cloud-validation.gradle": "21c6a0ee2e97cf83c472513ac31c3d2d456e461185384e9b5e58c0fed298d123",
+    "/workspace/setup/parallel-tests.gradle": "2366eb867708f83db10b39080abff1b45d2e347bab15ce2ec1c95c3d31cf7ff3"
+  },
+  "excludedScreenshotExporters": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  },
+  "generatedBindingsNotYetFinal": true
+}

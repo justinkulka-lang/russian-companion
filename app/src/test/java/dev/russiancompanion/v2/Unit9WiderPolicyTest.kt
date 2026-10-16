@@ -147,8 +147,10 @@ class Unit9WiderPolicyTest {
             }
             val unknown = p.copy(units = p.units.map { u -> if (u.number == 9) u.copy(
                 advancement = u.advancement!!.copy(cumulativeReviewPolicyId = "invented-v1")) else u })
+            V2PackIdentityIndex.warm(unknown)
             assertFalse(9 in currentCompletedUnitNumbers(unknown, learner))
             val unrelated = p.copy(units = p.units.map { u -> if (u.number == 30) u.copy(title = u.title + " changed") else u })
+            V2PackIdentityIndex.warm(unrelated)
             assertEquals((1..10).toSet(), currentCompletedUnitNumbers(unrelated, learner))
         }
     }

@@ -260,7 +260,7 @@ class Unit10CumulativeReviewTest {
         runBlocking { advanceFrom(p, s, 8) }
         ordinary(p, s, 9)
         val ninth = s.openCumulativeReview(p, 9, s.learnerMutationEpoch())!!
-        answer(p, s, ninth, 0); answer(p, s, ninth, 1)
+        ninth.slots.indices.forEach { answer(p, s, ninth, it) }
         runBlocking { advanceFrom(p, s, 9) }
         ordinary(p, s, 10)
         assertEquals(setOf(1, 2, 3, 4, 5, 6, 7, 8, 9), currentCompletedUnitNumbers(p, s.v2LearnerView()))
