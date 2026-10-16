@@ -796,6 +796,52 @@
         "qualifiedAcceptance": false,
         "remaining": "Unit30,wider pools/recent scheduling and qualified assessment",
         "legacyRestoreOriginalCause": "UNCONFIRMED"
+      },
+      "unit30EngineeringCheckpoint": {
+        "implementationCommit": "96242a17a87cc2ec0f5d7418cd98a9d3220a9e99",
+        "testedCommit": "a4be2d0b8d5e6435560437079bf49ce35b94e31a",
+        "counts": {
+          "tests": 57,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "completeSuite": false,
+        "activeEngineeringUnits": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "manifest": "ia003-unit30-gate/FINAL_VERIFICATION_MANIFEST.json",
+        "qualifiedAcceptance": false,
+        "remaining": "Wider eligible pools/recent scheduling and qualified assessment;broader findings remain open",
+        "legacyRestoreOriginalCause": "UNCONFIRMED",
+        "terminalCompletion": "Actual assignment-bound saved row with verified resume at Unit30;no Unit31 or acceptance invented"
       }
     },
     {
