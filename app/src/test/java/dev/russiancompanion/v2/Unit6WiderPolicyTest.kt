@@ -103,6 +103,26 @@ class Unit6WiderPolicyTest {
         }
     }
 
+    @Test fun genuinePriorPackDeclaresV1AndCannotAcceptFutureV2Tasks() {
+        val process = ProcessBuilder("git", "show",
+            "483f907242b0b0bfe7a9a52426469492beb45dc3:app/src/main/assets/content/v2-curriculum.json").directory(root()).start()
+        val old = V2PackLoader.parse(process.inputStream.bufferedReader().readText())
+        assertEquals(0, process.waitFor()); V2PackIdentityIndex.warm(old)
+        assertEquals(Unit6CumulativeReviewPolicy.definition, cumulativeReviewDeclaredPolicy(old, 6))
+        restored(document("ORDINARY_UNIT6")).use { s ->
+            val prior = s.openCumulativeReview(old, 6, s.learnerMutationEpoch())!!
+            assertEquals(3, prior.schema)
+            assertEquals(Unit6CumulativeReviewPolicy.definition.id, prior.policyId)
+            assertEquals(2, prior.slots.size)
+            assertTrue(reviewAssignmentCurrent(p, prior))
+            assertEquals(prior, open(s))
+            val future = createCumulativeReviewAssignment(p, s.v2LearnerView(), 6, "future-v2", prior.boundary)!!
+            assertEquals(4, future.schema); assertEquals(3, future.slots.size)
+            assertFalse(reviewAssignmentCurrent(old, future))
+            assertFalse(reviewAssignmentEligible(old, s.v2LearnerView(), future))
+        }
+    }
+
     @Test fun currentAndDownstreamOldSnapshotsRejectChangedContentAndAcceptOnlyExactPriorDeclaration() {
         for (prefix in listOf("", "predecessor-schema1/")) restored(document(prefix + "COMPLETED_UNIT7")).use { s ->
             val learner = s.v2LearnerView()

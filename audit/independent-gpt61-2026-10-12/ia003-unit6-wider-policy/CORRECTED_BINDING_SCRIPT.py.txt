@@ -1,0 +1,28 @@
+from pathlib import Path
+import json,subprocess,re,hashlib,shutil
+r=Path('/workspace/russian-companion');d=r/'audit/independent-gpt61-2026-10-12/ia003-unit6-wider-policy';base='483f907242b0b0bfe7a9a52426469492beb45dc3';old=lambda p:json.loads(subprocess.check_output(['git','show',base+':'+p],cwd=r,text=True));ds=json.loads(Path('/workspace/setup/u27-digests.json').read_text());ledger={'baselineCommit':base,'implementationCommit':Path('/workspace/setup/unit6-v2-final-implementation.txt').read_text().strip(),'initialImplementationCommit':'f81c23e8','digests':ds,'units':[],'fixtureChanges':[]}
+replacements={}
+for n in range(1,31):
+ p=f'review/unit-{n}/UNIT_{n}_REVIEW_MANIFEST.json';a=old(p);b=json.loads((r/p).read_text());changes=sorted(k for k in a.keys()|b.keys() if a.get(k)!=b.get(k));assert a['mappingPackageDigest']==b['mappingPackageDigest']
+ if n!=6:assert a['contentReviewDigest']==b['contentReviewDigest']
+ else:
+  assert a['contentReviewDigest']!=b['contentReviewDigest'];assert b['curriculumSourceCommit']==ledger['implementationCommit'];replacements[a['reviewPackageDigest']]=b['reviewPackageDigest']
+ ledger['units'].append({'unit':n,'changedFields':changes,'contentReviewDigest':b['contentReviewDigest'],'mappingPackageDigest':b['mappingPackageDigest']})
+oldpack=old('review/unit-6/UNIT_6_REVIEW_MANIFEST.json')['packContentReviewDigest'];replacements[oldpack]=ds['pack']
+f=r/'release/acceptance/candidate.json';f.write_text(f.read_text().replace(json.loads(f.read_text())['sourceDigest'],ds['source']))
+for f in (r/'app/src/test').rglob('*.kt'):
+ s=f.read_text();before=s
+ for a,b in replacements.items():s=s.replace(a,b)
+ if s!=before:ledger['fixtureChanges'].append({'path':str(f.relative_to(r)),'beforeSha256':hashlib.sha256(before.encode()).hexdigest(),'afterSha256':hashlib.sha256(s.encode()).hexdigest()});f.write_text(s)
+f=r/'audit/curriculum-readiness/V2_CURRICULUM_GAP_CLOSURE_DOSSIER_v1.0.md';s,n=re.subn(r'(\*\*Repository source digest:\*\* `)[a-f0-9]{64}(`)',lambda x:x[1]+ds['source']+x[2],f.read_text());assert n==1;f.write_text(s)
+p='app/src/main/assets/content/v2-curriculum.json';a=old(p);b=json.loads((r/p).read_text());patched=json.loads(json.dumps(b));next(u for u in patched['units'] if u['number']==6)['advancement']['cumulativeReviewPolicyId']='unit6-prior-reading-noun-behavior-v1';assert patched==a
+for field in ['provenanceRecords','sourceCapabilities','sources','rights','items','examples','authoredEnglishRecords','audioAssets','handwritingAssets']:assert b[field]==a[field]
+p='app/src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt';prior=subprocess.check_output(['git','show',base+':'+p],cwd=r,text=True);cur=(r/p).read_text()
+for n in range(3,31):
+ pat=r'internal object Unit'+str(n)+r'CumulativeReviewPolicy \{.*?\n\}'
+ assert re.search(pat,prior,re.S)[0]==re.search(pat,cur,re.S)[0]
+for lo,hi in [('internal fun recentReviewCandidate','/** Requires actual taught evidence;'),('internal fun reviewAssignmentDigest','private fun reviewUnitDigest')]:assert cur[cur.index(lo):cur.index(hi)]==prior[prior.index(lo):prior.index(hi)]
+ledger['preservation']={'onlyAssetChange':'Unit6 advancement.cumulativeReviewPolicyId','allOtherAssetValuesExact':True,'allV1PolicyDefinitionsByteIdentical':True,'selectorAndAssignmentHashAlgorithmsByteIdentical':True,'all30MappingDigestsUnchanged':True,'other29ContentDigestsUnchanged':True,'provenanceCount':len(b['provenanceRecords']),'noNativeScoredTeachingSourceRightsCapabilityChanges':True}
+ledger['updatedPreparationHelpers']=json.loads(Path('/workspace/setup/unit6-v2-test-edits.json').read_text())
+(d/'CORRECTED_BINDING_LEDGER.json').write_text(json.dumps(ledger,indent=2)+'\n');shutil.copy2('/workspace/setup/unit6-v2-final-reviews.log',d/'CORRECTED_REVIEW_REFRESH.txt');shutil.copy2('/workspace/setup/unit6-v2-final-reviews.exit',d/'CORRECTED_REVIEW_REFRESH_EXIT.txt')
+print(json.dumps({'digests':ds,'unit6':ledger['units'][5],'otherUnitSample':ledger['units'][0],'fixtureFiles':ledger['fixtureChanges']}))
